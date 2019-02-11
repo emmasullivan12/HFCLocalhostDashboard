@@ -1,0 +1,43 @@
+.UserCardContainer {
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 350px;
+  width: 300px;
+  margin: 15px;
+  vertical-align: top;
+}
+
+.UserCardName{
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.UserCardID{
+  text-align: center;
+  font-weight: 400;
+  color: #3c3cca;
+}
+
+.UserCardDetail{
+  font-size: 12px;
+}
+
+.ModalButtons{
+  text-align: center;
+}
+
+.UserCardContainer-passed{
+  z-index: 1000;
+  background-color: #3f3f3f;
+  opacity: 0.2;
+}
+
+.MentorCard-waiting{
+  z-index: 1000;
+  background-color: #3f3f3f;
+  opacity: 0.2;
+}

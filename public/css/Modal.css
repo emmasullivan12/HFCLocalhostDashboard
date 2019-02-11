@@ -1,0 +1,142 @@
+.ModalOpenBtn {
+  padding: .1em .5em;
+  color: #4285f4;
+  background: #e2edff;
+  border: 2px solid #bad2fa;
+  border-radius: 1em;
+  cursor: pointer;
+  outline: none;
+  transition: background .15s ease-out;
+}
+
+.ModalOpenBtn:hover {
+  background: #cbddfb;
+}
+
+.ModalOpenBtn:focus {
+  outline: 0;
+  box-shadow: 0 0 4px currentColor;
+}
+
+.ModalOpenBtn-RequestChat {
+  color: #397a4e;
+  background: #a4e8ba;
+  border: 2px solid #82ba94;
+}
+
+.ModalOpenBtn-FullSignUp {
+  color: #e85151;
+  background: #efb3b3;
+  border: 2px solid #c48585;
+}
+
+.ModalOpenBtn-PassBtn {
+  background-color: #ffffff;
+  border: none;
+  color: #3f3f3f;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  transform: translateZ(0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  padding: 2.5em 1.5em 1.5em 1.5em;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  cursor: default;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 500px) {
+  .modal-container {
+    left: 50%;
+    top: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    max-width: 30em;
+    max-height: calc(100% - 1em);
+  }
+}
+
+.modal-title{
+  font-size: 20px;
+  line-height: 1.36363636;
+  color: #2c2d30;
+  font-weight: 900;
+  margin: 0;
+  width: 100%;
+}
+
+.request-mentor-name{
+  font-size: 20px;
+  line-height: 1.36363636;
+  color: #8C8BE1;
+  font-weight: normal;
+  margin: 0;
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  line-height: 1;
+  background: #f6f6f7;
+  border: 0;
+  box-shadow: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-close-icon {
+  width: 25px;
+  height: 25px;
+  fill: transparent;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+/* Hides the text within the close button (we don't need to see it, */
+/* but this way screen readers will still be able to pick up on it) */
+.u-hide-visually {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* Lock the scroll position by adding this class to the `<html>` element.*/
+.u-lock-scroll {
+  overflow: hidden !important;
+}
+
+.modal-content {
+  padding-top: .25em;
+}

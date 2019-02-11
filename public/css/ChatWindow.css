@@ -1,0 +1,139 @@
+.chat-container {
+  position: relative;
+  display: flex;
+  flex-direction: row; // this is the one to play with
+  flex-grow: 1;
+  min-width: 1px;
+  background: #f2f2f2;
+}
+
+.chat-header {
+  display:flex;
+  -webkit-box-flex:0;
+  flex: none;
+  flex-basis: 53px;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  align-items:center;
+  -webkit-box-align:center;
+  border-bottom: 1px solid #dae1e7;
+  box-sizing:inherit;
+  background: #f2f2f2;
+}
+
+.chat-title {
+  color:#3f3f3f;
+  font-weight:600;
+  margin:0;
+  display:block;
+  font-size:1.17rem;
+}
+
+.flex-container-overlay{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  width: 24rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.chat-content-container{
+  overflow:hidden;
+  display:flex;
+  flex:1;
+  margin-left: 0;
+  position:relative;
+  flex-direction: column;
+  min-width: 1px;
+  background: #fff;
+}
+
+.messages-panel{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow-y:auto;
+  position:relative;
+  flex:1;
+  -webkit-box-flex:1;
+  box-sizing: inherit;
+  display:flex;
+  outline:0;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+}
+
+.block-container {
+  display:block;
+}
+
+.block-container:hover {
+  background-color: #f9f9f9;
+}
+
+.message-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 15px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  display: flex;
+  flex-wrap:nowrap;
+  box-sizing: inherit;
+  height:auto;
+
+}
+
+.msg-thumb-container {
+  width: 2.5rem;
+  height:100%;
+  padding-right: 8px;
+  box-sizing: content-box;
+}
+
+.msg-thumb {
+  Width:2.5rem;
+  Margin-right:.75rem;
+  Height:2.5rem;
+  Border-style:none;
+  background-size: cover;
+}
+
+.img-square {
+  border-radius: .25rem;
+}
+
+.message-content-box {
+  overflow: hidden;
+}
+
+.sender-name {
+  font-weight: 700;
+  box-sizing: inherit;
+  font-size: 15px;
+}
+
+.msg-sent-time {
+  font-size: .75rem;
+  color: #b8c2cc;
+  box-sizing: inherit;
+}
+
+.message-content {
+  color:#3f3f3f;
+  line-height: 1.5;
+  margin:6px 0 -4px;
+  box-sizing: inherit;
+  display: inline-block;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 15px;
+  letter-spacing: 0.275px;
+}

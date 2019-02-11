@@ -1,0 +1,14 @@
+.typeform-title {
+  color: #3f3f3f;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.typeform-subheader {
+  color: #909293;
+}
+
+.embedded-typeform{
+  height: 600px;
+  width: 600px;
+}

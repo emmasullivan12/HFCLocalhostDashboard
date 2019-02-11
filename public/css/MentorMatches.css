@@ -1,0 +1,11 @@
+.waitingForMatches-container{
+  z-index: 1000;
+  background-color: #3f3f3f;
+  opacity: 0.2;
+}
+
+.waitingForMatches-title{
+  z-index: 1001;
+  color: #3f3f3f;
+  text-align: center;
+}
