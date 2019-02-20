@@ -15,7 +15,13 @@ class SubmitMatchContent extends Component {
   }
 
   handleMessageChange = (evt) => {
-    this.setState({ MatchReasonMessage: evt.target.value });
+    this.setState({
+      MatchReasonMessage: evt.target.value,
+      MenteeID: evt.target.value,
+      MentorID: evt.target.value,
+      MatchReason1: evt.target.value,
+      MatchReason2: evt.target.value 
+    });
   }
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
