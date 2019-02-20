@@ -36,6 +36,7 @@ class ChatMenu extends Component {
           <li><NavLink to="/messages/Prospela">Prospela Bot</NavLink></li>
           <li><NavLink to="/messages/chat1">Chat with Mentor 1</NavLink></li>
           <li><NavLink to="/messages/chat2">Chat with Mentor 2</NavLink></li>
+          <li><NavLink to="/prospelahomepage">Prospela Homepage</NavLink></li>
         </ul>
         <ul className="chatMenu">
           {chats}

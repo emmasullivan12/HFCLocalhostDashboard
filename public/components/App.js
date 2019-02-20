@@ -22,6 +22,7 @@ import MenteeProfile from "./MenteeProfile";
 import ProspelaBot from "./ProspelaBot";
 import ProtectedChats from "./ProtectedChats";
 import ProtectedRoute from "./ProtectedRoute";
+import SubmitMatch from './PrSubmitMatches.js';
 import Teams from "./Teams";
 import Todo from "./Todo";
 import TypeformSignUp from "./TypeformSignUp";
@@ -53,6 +54,7 @@ class Dashboard extends Component{
               <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
               <ProtectedRoute path="/mentorhomepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
               <Route path="/messages/Prospela" component={ProspelaBot}/>
+              <Route path="/prospelahomepage" component={SubmitMatch}/>
               <ProtectedChats chats={DUMMY_CHAT_LIST}/>
               <Route component={NotFound}/>
             </Switch>

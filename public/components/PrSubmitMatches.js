@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../css/MentorCard.css";
 import Modal from './Modal.js';
-import SubmitMatchContent from './RequestChatContent.js';
+import SubmitMatchContent from './SubmitMatchContent.js';
 
 //This includes props and title to be passed to RequestChatModal
 const SubmitMatchModalProps = {

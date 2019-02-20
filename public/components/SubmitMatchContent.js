@@ -15,13 +15,7 @@ class SubmitMatchContent extends Component {
   }
 
   handleMessageChange = (evt) => {
-    this.setState({
-      MatchReasonMessage: evt.target.value,
-      MenteeID: evt.target.value,
-      MentorID: evt.target.value,
-      MatchReason1: evt.target.value,
-      MatchReason2: evt.target.value 
-    });
+    this.setState({ [evt.target.name]: evt.target.value });
   }
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
@@ -37,9 +31,7 @@ class SubmitMatchContent extends Component {
   canBeSubmitted() {
     const { MatchReasonMessage, MenteeID, MentorID } = this.state;
     return (
-      MatchReasonMessage.length > 0,
-      MenteeID.length > 0,
-      MentorID.length > 0
+      MatchReasonMessage.length > 0 && MenteeID.length > 0 && MentorID.length > 0
     );
   }
 
@@ -51,6 +43,7 @@ class SubmitMatchContent extends Component {
         <form>
           <input
             type="text"
+            name="MenteeID"
             className="SubmitMatch-input"
             placeholder="Enter MenteeID..."
             value={this.state.MenteeID}
@@ -58,6 +51,7 @@ class SubmitMatchContent extends Component {
           />
           <input
             type="text"
+            name="MentorID"
             className="SubmitMatch-input"
             placeholder="Enter MentorID..."
             value={this.state.MentorID}
@@ -66,6 +60,7 @@ class SubmitMatchContent extends Component {
           <div>Matched by skill?</div>
           <input
             type="checkbox"
+            name="MatchReason1"
             className="SubmitMatch-input"
             value={this.state.MatchReason1}
             onChange={this.handleMessageChange}
@@ -73,12 +68,14 @@ class SubmitMatchContent extends Component {
           <div>Matched by industry?</div>
           <input
             type="checkbox"
+            name="MatchReason2"
             className="SubmitMatch-input"
             value={this.state.MatchReason2}
             onChange={this.handleMessageChange}
           />
           <input
             type="text"
+            name="MatchReasonMessage"
             className="SubmitMatch-input"
             placeholder="Let mentee know how they've been matched..."
             value={this.state.MatchReasonMessage}
