@@ -63,10 +63,8 @@ class Dashboard extends Component{
                 </div>
               </div>
               <MainMenu />
+              <div className="menuBreak"/>
               <ChatMenu chats={DUMMY_CHAT_LIST} />
-              <ul className="logout">
-                <li><a href="/logout">Logout</a></li>
-              </ul>
             </div>
             <div className="clientWindowContainer">
               <Switch>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../css/ChatMenu.css";
 import {
   Route,
   NavLink
@@ -10,7 +11,12 @@ class ChatListItem extends Component {
     const chat = this.props.chat;
 
     return(
-      <li><NavLink to={this.props.navlink}>{chat.mentor}</NavLink></li>
+      <div className="chatMenuItem">
+        <div className="presenceContainer">
+          <i className="fa fa-circle" />
+        </div>
+        <NavLink to={this.props.navlink} className="chatMenuLink overflow-ellipsis">{chat.mentor}</NavLink>
+      </div>
     )
   }
 }
@@ -31,17 +37,21 @@ class ChatMenu extends Component {
     });
 
     return (
-      <div>
-        <ul className="chatMenu">
-          <li><NavLink to="/messages/Prospela">Prospela Bot</NavLink></li>
-          <li><NavLink to="/messages/chat1">Chat with Mentor 1</NavLink></li>
-          <li><NavLink to="/messages/chat2">Chat with Mentor 2</NavLink></li>
-          <li><NavLink to="/prospelahomepage">Prospela Homepage</NavLink></li>
-        </ul>
-        <ul className="chatMenu">
+      <React.Fragment>
+        <div className="chatMenu">
+          <div className="chatMenu-header">Direct Messages</div>
+          <div className="chatMenuItem">
+            <div className="presenceContainer">
+              <i className="fa fa-heart" />
+            </div>
+            <NavLink to="/messages/Prospela" className="chatMenuLink">Prospela Bot</NavLink>
+          </div>
           {chats}
-        </ul>
-      </div>
+          <div className="chatMenuItem"><NavLink to="/messages/chat1" className="chatMenuLink">Chat with Mentor 1</NavLink></div>
+          <div className="chatMenuItem"><NavLink to="/messages/chat2" className="chatMenuLink">Chat with Mentor 2</NavLink></div>
+          <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink">Prospela Homepage</NavLink></div>
+        </div>
+      </React.Fragment>
     );
   }
 }

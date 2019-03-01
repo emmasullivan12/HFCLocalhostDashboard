@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../css/MainMenu.css";
 import {
   Route,
   NavLink
@@ -13,21 +14,21 @@ class MainMenu extends Component {
   render() {
     if(this.props.isMentor === true) {
       return (
-          <ul className="mainMenu-mentor">
-            <li><NavLink to="/1">Menu Item 1</NavLink></li>
-            <li><NavLink to="/2">Menu Item 2</NavLink></li>
-            <li><NavLink to="/3">Menu Item 3</NavLink></li>
-            <li><NavLink to="/4">Menu Item 4</NavLink></li>
-          </ul>
+          <div>
+            <div className="mainMenuItem"><NavLink to="/1" className="mainMenuLink">Menu Item 1</NavLink></div>
+            <div className="mainMenuItem"><NavLink to="/2" className="mainMenuLink">Menu Item 2</NavLink></div>
+            <div className="mainMenuItem"><NavLink to="/3" className="mainMenuLink">Menu Item 3</NavLink></div>
+            <div className="mainMenuItem"><NavLink to="/4" className="mainMenuLink">Menu Item 4</NavLink></div>
+          </div>
         );
       } else {
       return (
-        <ul className="mainMenu-student">
-          <li><NavLink to="/">Latest Advice</NavLink></li>
-          <li><NavLink to="/mentee-profile">My Profile</NavLink></li>
-          <li><NavLink to="/to-do-list">To Do List</NavLink></li>
-          <li><NavLink to="/teams">Create a Team</NavLink></li>
-        </ul>
+        <div>
+          <div className="mainMenuItem"><NavLink to="/" className="mainMenuLink">Latest Advice</NavLink></div>
+          <div className="mainMenuItem"><NavLink to="/mentee-profile" className="mainMenuLink">My Profile</NavLink></div>
+          <div className="mainMenuItem"><NavLink to="/to-do-list" className="mainMenuLink">To Do List</NavLink></div>
+          <div className="mainMenuItem"><NavLink to="/teams" className="mainMenuLink">Create a Team</NavLink></div>
+        </div>
       );
     }
   }

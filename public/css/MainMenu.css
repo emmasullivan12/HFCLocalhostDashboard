@@ -1,0 +1,18 @@
+.mainMenuItem {
+  height: 50px;
+  padding: 1.2rem 1.7rem 1rem 1.7rem;
+}
+
+.mainMenuItem:hover {
+  background-color: #9f9ee7;
+}
+
+.mainMenuItem:hover .mainMenuLink {
+  color: #fff;
+}
+
+.mainMenuLink {
+  color: #d8d7f5;
+  text-decoration: none;
+  font-size: 16px;
+}

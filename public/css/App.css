@@ -99,16 +99,29 @@ input[type=text]:focus {
 }
 
 .userMenu {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 900;
-  padding: 0 2rem;
+  padding: 1.75rem 2rem 1rem 2rem;
   color: #fff;
   position: relative;
   flex-basis: 61px;
   flex-shrink: 0;
   margin-bottom: -2px;
-  margin-top: 4.5rem!important;
+  margin-top: 2.3rem!important;
   line-height: 1.075rem;
+  cursor: pointer;
+}
+
+.userMenu:hover {
+  background-color: #58d2bb;
+}
+
+.userMenu:hover .badgeName {
+  color: #ffdf85;
+}
+
+.userMenu:hover .down-arrow-icon {
+  color: #fff;
 }
 
 .userContainer {
@@ -177,16 +190,16 @@ input[type=text]:focus {
   margin-left: -5px;
   margin-right: 8px;
   width: 20px;
-  height: 1.3125rem;
+  height: 1.75rem;
   text-align: center;
   color: #ffd211;
-  font-size: 20px;
+  font-size: 22px;
   opacity: 0.95;
 }
 
 .badgeName{
-    font-size: .75rem;
-    padding-top: 7px;
+  font-size: .7rem;
+  padding-top: 8px;
 }
 
 .overflow-ellipsis{
@@ -194,4 +207,9 @@ input[type=text]:focus {
   display: block;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.menuBreak{
+  height: 15px;
+  flex-shrink: 0;
 }
