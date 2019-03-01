@@ -18,7 +18,7 @@ import MentorHomePage from './MentorHomePage.js';
 import LatestAdvice from "./LatestAdvice";
 import MainMenu from "./MainMenu";
 import NotFound from "./NotFound";
-import MenteeProfile from "./MenteeProfile";
+import LgdInUsrProfile from "./LgdInUsrProfile";
 import ProspelaBot from "./ProspelaBot";
 import ProtectedChats from "./ProtectedChats";
 import ProtectedRoute from "./ProtectedRoute";
@@ -34,30 +34,57 @@ class Dashboard extends Component{
     return(
       <BrowserRouter>
         <div className="clientUI">
-          <div className="clientMenuContainer">
-            <h1>Prospela Dashboard</h1>
-            <MainMenu />
-            <ChatMenu chats={DUMMY_CHAT_LIST} />
-            <ul className="logout">
-              <li><a href="/logout">Logout</a></li>
-            </ul>
-          </div>
-          <div className="clientWindowContainer">
-            <Switch>
-              {{
-                ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
-                ['mentor']: <Redirect exact from="/" to="/mentorhomepage" />,
-              }[userRole]}
-              <ProtectedRoute path="/latest-advice" roleAllowed="mentor" userRole="mentor" component={LatestAdvice}/>,
-              <ProtectedRoute path="/mentee-profile" roleAllowed="mentor" userRole="mentor" component={MenteeProfile}/>,
-              <ProtectedRoute path="/to-do-list" roleAllowed="mentor" userRole="mentor" component={Todo}/>,
-              <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
-              <ProtectedRoute path="/mentorhomepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
-              <Route path="/messages/Prospela" component={ProspelaBot}/>
-              <Route path="/prospelahomepage" component={SubmitMatch}/>
-              <ProtectedChats chats={DUMMY_CHAT_LIST}/>
-              <Route component={NotFound}/>
-            </Switch>
+          <div className="clientContainer">
+            <div className="clientMenuContainer">
+              <span className="notificationBell">
+                <button className="button-unstyled bell-icon" type="button">
+                  <i className="fa fa-bell" />
+                </button>
+              </span>
+              <div className="userMenu">
+                <div className="userContainer">
+                  <div className="presenceContainer">
+                    <i className="fa fa-circle" />
+                  </div>
+                  <button className="button-unstyled down-arrow-icon" type="button">
+                    <i className="fa fa-angle-down" />
+                  </button>
+                  <div className="userName overflow-ellipsis">
+                    fname
+                  </div>
+                </div>
+                <div className="userBadgesContainer">
+                  <div className="trophyContainer">
+                    <i className="fa fa-trophy" />
+                  </div>
+                  <div className="badgeName">
+                    Beginner
+                  </div>
+                </div>
+              </div>
+              <MainMenu />
+              <ChatMenu chats={DUMMY_CHAT_LIST} />
+              <ul className="logout">
+                <li><a href="/logout">Logout</a></li>
+              </ul>
+            </div>
+            <div className="clientWindowContainer">
+              <Switch>
+                {{
+                  ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
+                  ['mentor']: <Redirect exact from="/" to="/mentorhomepage" />,
+                }[userRole]}
+                <ProtectedRoute path="/latest-advice" roleAllowed="mentor" userRole="mentor" component={LatestAdvice}/>,
+                <ProtectedRoute path="/mentee-profile" roleAllowed="mentor" userRole="mentor" component={LgdInUsrProfile}/>,
+                <ProtectedRoute path="/to-do-list" roleAllowed="mentor" userRole="mentor" component={Todo}/>,
+                <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
+                <ProtectedRoute path="/mentorhomepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
+                <Route path="/messages/Prospela" component={ProspelaBot}/>
+                <Route path="/prospelahomepage" component={SubmitMatch}/>
+                <ProtectedChats chats={DUMMY_CHAT_LIST}/>
+                <Route component={NotFound}/>
+              </Switch>
+            </div>
           </div>
         </div>
       </BrowserRouter>
@@ -72,7 +99,7 @@ class App extends Component{
   render() {
     const userRole = 'mentor' /*this.props.users.role*/;
     return (
-      <div>
+      <div className="App">
         {{
           ['mentee']: <MenteeSteps userRole={userRole}/>,
           ['mentor']: <MentorSteps userRole={userRole}/>,

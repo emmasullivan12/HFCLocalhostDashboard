@@ -9,6 +9,13 @@
   vertical-align: top;
 }
 
+/* not yet used
+.UserCardContainer-passed{
+  z-index: 1000;
+  background-color: #3f3f3f;
+  opacity: 0.2;
+}*/
+
 .UserCardName{
   text-align: center;
   font-weight: 800;
@@ -28,12 +35,6 @@
 
 .ModalButtons{
   text-align: center;
-}
-
-.UserCardContainer-passed{
-  z-index: 1000;
-  background-color: #3f3f3f;
-  opacity: 0.2;
 }
 
 .MentorCard-waiting{

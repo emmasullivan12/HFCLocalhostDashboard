@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import ChatWindow from './ChatWindow.js';
-import MenteeProfile from './MenteeProfile.js';
+import MtchdUsrProfile from './MtchdUsrProfile.js';
 
 const matchesProfile = (
-  <MenteeProfile />
+  <MtchdUsrProfile />
 )
 
 class ProspelaBot extends Component {

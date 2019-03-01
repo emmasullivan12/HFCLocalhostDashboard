@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class MenteeProfile extends Component {
+class LgdInUsrProfile extends Component {
   render() {
     return (
       <div>
@@ -18,4 +18,4 @@ class MenteeProfile extends Component {
   }
 }
 
-export default MenteeProfile;
+export default LgdInUsrProfile;
