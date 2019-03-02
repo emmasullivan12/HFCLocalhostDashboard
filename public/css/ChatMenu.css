@@ -7,6 +7,7 @@
 .chatMenuItem {
   height: 30px;
   padding: 0.5rem 1.7rem 0.5rem 1.7rem;
+  display: flex;
 }
 
 .chatMenuItem:hover {
@@ -33,6 +34,23 @@
   color: #00ffb7;
   font-size: 13px;
   opacity: 0.95;
+}
+
+.notificationNum{
+  background: #e22e48;
+  border-radius: 16px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 18px;
+  line-height: 18px;
+  margin-left: 4px;
+  margin-top: -2px;
+  margin-right: -7px;
+  padding: 0 9px;
+  position: absolute;
+  right: 16px;
 }
 
 .overflow-ellipsis{

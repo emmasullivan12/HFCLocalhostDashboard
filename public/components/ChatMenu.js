@@ -16,6 +16,7 @@ class ChatListItem extends Component {
           <i className="fa fa-circle" />
         </div>
         <NavLink to={this.props.navlink} className="chatMenuLink overflow-ellipsis">{chat.mentor}</NavLink>
+        <span className="notificationNum">xx</span>
       </div>
     )
   }
@@ -45,6 +46,7 @@ class ChatMenu extends Component {
               <i className="fa fa-heart" />
             </div>
             <NavLink to="/messages/Prospela" className="chatMenuLink">Prospela Bot</NavLink>
+            <span className="notificationNum">xx</span>
           </div>
           {chats}
           <div className="chatMenuItem"><NavLink to="/messages/chat1" className="chatMenuLink">Chat with Mentor 1</NavLink></div>

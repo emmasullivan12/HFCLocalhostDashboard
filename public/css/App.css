@@ -99,7 +99,7 @@ input[type=text]:focus {
 }
 
 .userMenu {
-  font-size: 1.15rem;
+  font-size: 1.10rem;
   font-weight: 900;
   padding: 1.75rem 2rem 1rem 2rem;
   color: #fff;
@@ -209,7 +209,67 @@ input[type=text]:focus {
   overflow: hidden;
 }
 
+.scrollArea{
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  outline: none;
+  transform: translateZ(0);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+  overflow: overlay;
+  right: 2px;
+  top:0;
+  bottom:0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255,255,255,0.45);
+  border-radius: 8px;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d8d7f5;
+  overflow: overlay;
+}
+
 .menuBreak{
   height: 15px;
   flex-shrink: 0;
+}
+
+.prLogoArea{
+  color: #fff;
+  height: 100%;
+  position: relative;
+  min-height: 61px;
+}
+
+.prLogoContainer{
+  height: 30px;
+  line-height: 30px;
+  width: 69px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+}
+
+.prLogoImg{
+  display: block;
+  height: 100%!important;
+  width: 100%!important;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
 }

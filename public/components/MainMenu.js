@@ -14,7 +14,7 @@ class MainMenu extends Component {
   render() {
     if(this.props.isMentor === true) {
       return (
-          <div>
+          <div className="mainMenu">
             <div className="mainMenuItem"><NavLink to="/1" className="mainMenuLink">Menu Item 1</NavLink></div>
             <div className="mainMenuItem"><NavLink to="/2" className="mainMenuLink">Menu Item 2</NavLink></div>
             <div className="mainMenuItem"><NavLink to="/3" className="mainMenuLink">Menu Item 3</NavLink></div>
@@ -23,7 +23,7 @@ class MainMenu extends Component {
         );
       } else {
       return (
-        <div>
+        <div className="mainMenu">
           <div className="mainMenuItem"><NavLink to="/" className="mainMenuLink">Latest Advice</NavLink></div>
           <div className="mainMenuItem"><NavLink to="/mentee-profile" className="mainMenuLink">My Profile</NavLink></div>
           <div className="mainMenuItem"><NavLink to="/to-do-list" className="mainMenuLink">To Do List</NavLink></div>

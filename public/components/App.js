@@ -62,9 +62,17 @@ class Dashboard extends Component{
                   </div>
                 </div>
               </div>
-              <MainMenu />
-              <div className="menuBreak"/>
-              <ChatMenu chats={DUMMY_CHAT_LIST} />
+              <div className="scrollArea">
+                <MainMenu />
+                <div className="menuBreak"/>
+                <ChatMenu chats={DUMMY_CHAT_LIST} />
+                <div className="menuBreak"/>
+                <div className="prLogoArea">
+                  <div className="prLogoContainer">
+                    <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="clientWindowContainer">
               <Switch>
