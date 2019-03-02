@@ -174,10 +174,6 @@ const DUMMY_CHAT_LIST = [
   {chatID: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
   {chatID: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
   {chatID: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
-  {chatID: '10003', studentId: '12345', mentor: 'Peter', matchedTimestamp: '20181219', status: 'active'},
-  {chatID: '10004', studentId: '12345', mentor: 'Jane', matchedTimestamp: '20181219', status: 'active'},
-  {chatID: '10005', studentId: '12345', mentor: 'Sally', matchedTimestamp: '20181219', status: 'ended'},
-  {chatID: '10006', studentId: '12345', mentor: 'Paul', matchedTimestamp: '20181219', status: 'ended'}
 ];
 
 /* App.propTypes = {

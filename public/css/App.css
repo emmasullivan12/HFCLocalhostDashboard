@@ -239,7 +239,7 @@ input[type=text]:focus {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #d8d7f5;
+  background: rgb(216, 215, 245, 0.45);
   overflow: overlay;
 }
 
