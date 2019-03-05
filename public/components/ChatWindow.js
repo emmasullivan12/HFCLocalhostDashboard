@@ -86,6 +86,7 @@ const FlexContainerContent = ({
   );
 }
 
+//To do
 // This is a container for all messages in the chat
 class ChatWindow extends Component {
   constructor () {
