@@ -21,6 +21,7 @@ const DUMMY_CHAT_MESSAGES = [
   {
     chatId: '100001',
     chatTitle: 'emma-and-david',
+    type: 'message',
     messageID: '000001',
     sender: {
       id: '12345',
@@ -33,6 +34,7 @@ const DUMMY_CHAT_MESSAGES = [
   {
     chatId: '100001',
     chatTitle: 'emma-and-david',
+    type: 'message',
     messageID: '000002',
     sender: {
       id: '54321',
@@ -45,6 +47,7 @@ const DUMMY_CHAT_MESSAGES = [
   {
     chatId: '100001',
     chatTitle: 'emma-and-david',
+    type: 'mentorReq',
     messageID: '000003',
     sender: {
       id: '12345',
@@ -52,11 +55,12 @@ const DUMMY_CHAT_MESSAGES = [
       avatarUrl: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
     },
     msgSentTime: '12:12pm',
-    messageContent: 'No, this is my message'
+    messageContent: 'You have a new mentee request!!'
   },
   {
     chatId: '100001',
     chatTitle: 'emma-and-david',
+    type: 'message',
     messageID: '000004',
     sender: {
       id: '12345',

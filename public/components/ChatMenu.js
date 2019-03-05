@@ -15,8 +15,10 @@ class ChatListItem extends Component {
         <div className="presenceContainer">
           <i className="fa fa-circle" />
         </div>
-        <NavLink to={this.props.navlink} className="chatMenuLink overflow-ellipsis">{chat.mentor}</NavLink>
-        <span className="notificationNum">xx</span>
+        <div className="chatItemFlexContainer">
+          <NavLink to={this.props.navlink} className="chatMenuLink overflow-ellipsis">{chat.mentor}</NavLink>
+          <span className="notificationNum">xx</span>
+        </div>
       </div>
     )
   }
@@ -40,18 +42,18 @@ class ChatMenu extends Component {
     return (
       <React.Fragment>
         <div className="chatMenu">
-          <div className="chatMenu-header">Direct Messages</div>
+          <div className="chatMenu-header overflow-ellipsis">Direct Messages</div>
           <div className="chatMenuItem">
             <div className="presenceContainer">
               <i className="fa fa-heart" />
             </div>
-            <NavLink to="/messages/Prospela" className="chatMenuLink">Prospela Bot</NavLink>
+            <NavLink to="/messages/Prospela" className="chatMenuLink overflow-ellipsis">Prospela Bot</NavLink>
             <span className="notificationNum">xx</span>
           </div>
           {chats}
-          <div className="chatMenuItem"><NavLink to="/messages/chat1" className="chatMenuLink">Chat with Mentor 1</NavLink></div>
-          <div className="chatMenuItem"><NavLink to="/messages/chat2" className="chatMenuLink">Chat with Mentor 2</NavLink></div>
-          <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink">Prospela Homepage</NavLink></div>
+          <div className="chatMenuItem"><NavLink to="/messages/chat1" className="chatMenuLink overflow-ellipsis">Chat with Mentor 1</NavLink></div>
+          <div className="chatMenuItem"><NavLink to="/messages/chat2" className="chatMenuLink overflow-ellipsis">Chat with Mentor 2</NavLink></div>
+          <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink></div>
         </div>
       </React.Fragment>
     );

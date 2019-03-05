@@ -24,10 +24,10 @@ class MainMenu extends Component {
       } else {
       return (
         <div className="mainMenu">
-          <div className="mainMenuItem"><NavLink to="/" className="mainMenuLink">Latest Advice</NavLink></div>
-          <div className="mainMenuItem"><NavLink to="/mentee-profile" className="mainMenuLink">My Profile</NavLink></div>
-          <div className="mainMenuItem"><NavLink to="/to-do-list" className="mainMenuLink">To Do List</NavLink></div>
-          <div className="mainMenuItem"><NavLink to="/teams" className="mainMenuLink">Create a Team</NavLink></div>
+          <div className="mainMenuItem"><NavLink to="/" className="mainMenuLink overflow-ellipsis">Latest Advice</NavLink></div>
+          <div className="mainMenuItem"><NavLink to="/mentee-profile" className="mainMenuLink overflow-ellipsis">My Profile</NavLink></div>
+          <div className="mainMenuItem"><NavLink to="/to-do-list" className="mainMenuLink overflow-ellipsis">To Do List</NavLink></div>
+          <div className="mainMenuItem"><NavLink to="/teams" className="mainMenuLink overflow-ellipsis">Create a Team</NavLink></div>
         </div>
       );
     }

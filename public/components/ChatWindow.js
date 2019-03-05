@@ -15,28 +15,55 @@ function Avatar(props) {
   );
 }
 
+function MenteeReq(props) {
+  return (
+    <div className="prospela-auto-msg-container">
+      <div>
+        {props.message.messageContent}
+      </div>
+    </div>
+  )
+}
+
+function StdMessage(props) {
+  return (
+    <React.Fragment>
+      <div className="block-container">
+        <div className="message-container">
+          <Avatar sender={props.message.sender}/>
+          <div className="message-content-box">
+            <div className="sent-msg-info">
+              <span className="sender-name">{props.message.sender.name}</span>
+              <span className="msg-sent-time">{props.message.msgSentTime}</span>
+            </div>
+            <p className="message-content">
+              {props.message.messageContent}
+            </p>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  )
+}
+
 // This shows the sender name, timestamp & message content
 class MessageContent extends Component {
   render() {
     const message = this.props.message;
 
-    return(
-      <React.Fragment>
-        <div className="block-container">
-          <div className="message-container">
-            <Avatar sender={message.sender}/>
-            <div className="message-content-box">
-              <div className="sent-msg-info">
-                <span className="sender-name">{message.sender.name}</span>
-                <span className="msg-sent-time">{message.msgSentTime}</span>
-              </div>
-              <p className="message-content">
-                {message.messageContent}
-              </p>
-            </div>
-          </div>
-        </div>
-      </React.Fragment>
+    return (
+      <div>
+        {message.type === "message" && (
+          <StdMessage
+            message={message}
+          />
+        )}
+        {message.type === "menteeReq" && (
+          <MenteeReq
+            message={message}
+          />
+        )}
+      </div>
     )
   }
 }

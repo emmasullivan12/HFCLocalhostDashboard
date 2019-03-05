@@ -137,3 +137,10 @@
   font-size: 15px;
   letter-spacing: 0.275px;
 }
+
+.prospela-auto-msg-container{
+  width: 100%;
+  background-color: #d8d7f5;
+  text-align: center;
+  min-height: 30px;
+}

@@ -211,13 +211,19 @@ input[type=text]:focus {
 
 .scrollArea{
   position: relative;
-  overflow-y: scroll;
+  overflow-y: visible;
   overflow-x: hidden;
   outline: none;
   transform: translateZ(0);
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  visibility: hidden;
+}
+
+.scrollArea:hover{
+  visibility: visible;
+  // overflow-y: visible;
 }
 
 ::-webkit-scrollbar {
@@ -241,6 +247,14 @@ input[type=text]:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(216, 215, 245, 0.45);
   overflow: overlay;
+}
+
+.menuContainer{
+  visibility: visible;
+  overflow-y: scroll;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .menuBreak{
