@@ -15,19 +15,19 @@ class MainMenu extends Component {
     if(this.props.isMentor === true) {
       return (
           <div className="mainMenu">
-            <div className="mainMenuItem"><NavLink to="/1" className="mainMenuLink">Menu Item 1</NavLink></div>
-            <div className="mainMenuItem"><NavLink to="/2" className="mainMenuLink">Menu Item 2</NavLink></div>
-            <div className="mainMenuItem"><NavLink to="/3" className="mainMenuLink">Menu Item 3</NavLink></div>
-            <div className="mainMenuItem"><NavLink to="/4" className="mainMenuLink">Menu Item 4</NavLink></div>
+            <NavLink to="/1" className="mainMenuItem">Menu Item 1</NavLink>
+            <NavLink to="/2" className="mainMenuItem">Menu Item 2</NavLink>
+            <NavLink to="/3" className="mainMenuItem">Menu Item 3</NavLink>
+            <NavLink to="/4" className="mainMenuItem">Menu Item 4</NavLink>
           </div>
         );
       } else {
       return (
         <div className="mainMenu">
-          <div className="mainMenuItem"><NavLink to="/" className="mainMenuLink overflow-ellipsis">Latest Advice</NavLink></div>
-          <div className="mainMenuItem"><NavLink to="/mentee-profile" className="mainMenuLink overflow-ellipsis">My Profile</NavLink></div>
-          <div className="mainMenuItem"><NavLink to="/to-do-list" className="mainMenuLink overflow-ellipsis">To Do List</NavLink></div>
-          <div className="mainMenuItem"><NavLink to="/teams" className="mainMenuLink overflow-ellipsis">Create a Team</NavLink></div>
+          <NavLink to="/" className="mainMenuItem overflow-ellipsis">Latest Advice</NavLink>
+          <NavLink to="/mentee-profile" className="mainMenuItem overflow-ellipsis">My Profile</NavLink>
+          <NavLink to="/to-do-list" className="mainMenuItem overflow-ellipsis">To Do List</NavLink>
+          <NavLink to="/teams" className="mainMenuItem overflow-ellipsis">Create a Team</NavLink>
         </div>
       );
     }

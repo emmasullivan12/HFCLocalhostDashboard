@@ -1,72 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import PrMessagesList from "./PrMessagesList";
+import PrAddMessage from "./PrAddMessage";
 import "../css/ChatWindow.css";
 
-// This shows the user thumbnail picture
-function Avatar(props) {
-  return (
-    <div className="msg-thumb-container">
-      <img
-        className="msg-thumb img-square"
-        src={props.sender.avatarUrl}
-        alt={props.sender.name}
-      />
-    </div>
-  );
-}
-
-function MenteeReq(props) {
-  return (
-    <div className="prospela-auto-msg-container">
-      <div>
-        {props.message.messageContent}
-      </div>
-    </div>
-  )
-}
-
-function StdMessage(props) {
-  return (
-    <React.Fragment>
-      <div className="block-container">
-        <div className="message-container">
-          <Avatar sender={props.message.sender}/>
-          <div className="message-content-box">
-            <div className="sent-msg-info">
-              <span className="sender-name">{props.message.sender.name}</span>
-              <span className="msg-sent-time">{props.message.msgSentTime}</span>
-            </div>
-            <p className="message-content">
-              {props.message.messageContent}
-            </p>
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
-  )
-}
-
-// This shows the sender name, timestamp & message content
-class MessageContent extends Component {
-  render() {
-    const message = this.props.message;
-
-    return (
-      <div>
-        {message.type === "message" && (
-          <StdMessage
-            message={message}
-          />
-        )}
-        {message.type === "menteeReq" && (
-          <MenteeReq
-            message={message}
-          />
-        )}
-      </div>
-    )
-  }
-}
 
 // FlexContainerContent provides all of the Content within FlexContainer
 const FlexContainerContent = ({
@@ -105,16 +42,6 @@ class ChatWindow extends Component {
   render() {
   const {isFlexContainerOpen} = this.state;
   const {flexContent} = this.props;
-  const messages = [];
-
-  this.props.messages.forEach((message) => {
-    messages.push(
-      <MessageContent
-        message={message}
-        key={message.messageID}
-      />
-    );
-  });
 
     return (
       <div className="chat-container">
@@ -122,7 +49,7 @@ class ChatWindow extends Component {
           <div className="chat-header">
             <div className="chat-detail-container">
               <div className="chat-title">
-                {this.props.messages[0].chatTitle}
+                Chat name
               </div>
             </div>
             <div className="more-info-container">
@@ -132,7 +59,8 @@ class ChatWindow extends Component {
             </div>
           </div>
           <div className="messages-panel">
-            {messages}
+            <PrMessagesList messages={DUMMY_CHAT_MESSAGES}/>
+            <PrAddMessage />
           </div>
         </div>
         {isFlexContainerOpen && (
@@ -144,4 +72,53 @@ class ChatWindow extends Component {
     );
   }
 }
+
+const DUMMY_CHAT_MESSAGES = [
+  {
+    id: '100001',
+    uid: '12345',
+    type: 'message',
+    subtype: 'std',
+    author: 'dexter',
+    time: '12:10pm',
+    text: 'This is my message'
+  },
+  {
+    id: '100002',
+    uid: '12345',
+    type: 'message',
+    subtype: 'std',
+    author: 'dexter',
+    time: '12:10pm',
+    text: 'This is my message'
+  },
+  {
+    id: '100003',
+    uid: '23456',
+    type: 'message',
+    subtype: 'std',
+    author: 'emma-student',
+    time: '12:10pm',
+    text: 'This is my message'
+  },
+  {
+    id: '100004',
+    uid: '23456',
+    type: 'message',
+    subtype: 'mentorReq',
+    author: 'emma-student',
+    time: '12:10pm',
+    text: 'This is a request for a mentor woohoo!'
+  },
+  {
+    id: '100005',
+    uid: '12345',
+    type: 'message',
+    subtype: 'std',
+    author: 'dexter',
+    time: '12:10pm',
+    text: 'This is my message'
+  }
+]
+
 export default ChatWindow;

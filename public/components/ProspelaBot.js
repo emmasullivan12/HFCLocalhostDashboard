@@ -10,12 +10,13 @@ class ProspelaBot extends Component {
   render() {
     return (
       <React.Fragment>
-        <ChatWindow messages={DUMMY_CHAT_MESSAGES} flexContent={matchesProfile} />
+        <ChatWindow flexContent={matchesProfile} />
       </React.Fragment>
     );
   }
 }
 
+/*
 // Dummy mentor data (this will eventually come from Postgres)
 const DUMMY_CHAT_MESSAGES = [
   {
@@ -71,5 +72,5 @@ const DUMMY_CHAT_MESSAGES = [
     messageContent: 'Yeah bru'
   }
 ]
-
+*/
 export default ProspelaBot;

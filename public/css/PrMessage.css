@@ -1,0 +1,74 @@
+.msg-thumb-container {
+  width: 2.5rem;
+  height:100%;
+  padding-right: 8px;
+  box-sizing: content-box;
+}
+
+.msg-thumb {
+  Width:2.5rem;
+  Margin-right:.75rem;
+  Height:2.5rem;
+  Border-style:none;
+  background-size: cover;
+}
+
+.img-square {
+  border-radius: .25rem;
+}
+
+.block-container {
+  display:block;
+}
+
+.block-container:hover {
+  background-color: #f9f9f9;
+}
+
+.message-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 15px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  display: flex;
+  flex-wrap:nowrap;
+  box-sizing: inherit;
+  height:auto;
+}
+
+.message-content-box {
+  overflow: hidden;
+}
+
+.sender-name {
+  font-weight: 700;
+  box-sizing: inherit;
+  font-size: 15px;
+}
+
+.msg-sent-time {
+  font-size: .75rem;
+  color: #b8c2cc;
+  box-sizing: inherit;
+}
+
+.message-content {
+  color:#3f3f3f;
+  line-height: 1.5;
+  margin:6px 0 -4px;
+  box-sizing: inherit;
+  display: inline-block;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 15px;
+  letter-spacing: 0.275px;
+}
+
+.prospela-auto-msg-container{
+  width: 100%;
+  background-color: #d8d7f5;
+  text-align: center;
+  min-height: 30px;
+}
