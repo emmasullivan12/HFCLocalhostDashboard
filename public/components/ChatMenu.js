@@ -9,16 +9,19 @@ import {
 class ChatListItem extends Component {
   render() {
     const chat = this.props.chat;
+    const isOnline = false;
 
     return(
       <div className="chatMenuItem">
-        <div className="presenceContainer">
-          <i className="fa fa-circle" />
-        </div>
-        <div className="chatItemFlexContainer">
-          <NavLink to={this.props.navlink} className="chatMenuLink overflow-ellipsis">{chat.mentor}</NavLink>
-          <span className="notificationNum">xx</span>
-        </div>
+        <NavLink to={this.props.navlink} className="link">
+          <div className="presenceContainer">
+            <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
+          </div>
+          <div className="chatItemFlexContainer">
+            <span className="chatMenuLink overflow-ellipsis">{chat.mentor}</span>
+            <span className="notificationNum">xx</span>
+          </div>
+        </NavLink>
       </div>
     )
   }
@@ -44,11 +47,15 @@ class ChatMenu extends Component {
         <div className="chatMenu">
           <div className="chatMenu-header overflow-ellipsis">Direct Messages</div>
           <div className="chatMenuItem">
-            <div className="presenceContainer">
-              <i className="fa fa-heart" />
-            </div>
-            <NavLink to="/messages/Prospela" className="chatMenuLink overflow-ellipsis">Prospela Bot</NavLink>
-            <span className="notificationNum">xx</span>
+            <NavLink to="/messages/Prospela" className="link">
+              <div className="presenceContainer">
+                <i className="fas fa-heart" />
+              </div>
+              <div className="chatItemFlexContainer">
+                <span className="chatMenuLink overflow-ellipsis">Prospela Bot</span>
+                <span className="notificationNum">xx</span>
+              </div>
+            </NavLink>
           </div>
           {chats}
           <div className="chatMenuItem"><NavLink to="/messages/chat1" className="chatMenuLink overflow-ellipsis">Chat with Mentor 1</NavLink></div>

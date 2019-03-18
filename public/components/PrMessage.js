@@ -79,17 +79,9 @@ class PrMessage extends Component {
 
     switch (message.subtype) {
       case 'std':
-        return (
-          <StdMessage
-            message={message}
-          />
-        );
+        return <StdMessage message={message} />
       case 'menteeReq':
-        return (
-          <MenteeReq
-            message={message}
-          />
-        );
+        return <MenteeReq message={message} />
     }
   }
 }
