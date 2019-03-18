@@ -16,10 +16,6 @@
   background-color: transparent;
 }
 
-.userMenu:hover {
-  background-color: #111111;
-}
-
 .userMenu:hover .badgeName {
   color: #ffdf85;
 }
@@ -38,10 +34,6 @@
 
 .userMenu:active .down-arrow-icon {
   color: #fff;
-}
-
-.userMenu:focus {
-  background-color: #111111; /* #ffebb3 is orange / #9f9ee7 is purple */
 }
 
 .userMenu:focus .badgeName {
@@ -130,14 +122,13 @@
   z-index: 1000;
   display: inline-block;
   vertical-align: top;
-  min-width: 240px;
-  max-width: 360px;
+  width: 300px;
   color: #3f3f3f;
   background-color: #FFFFFF;
   border-radius: 6px;
   box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
   overflow: hidden;
-  top: 75px;
+  top: 80px;
   left: 10px;
   cursor: default;
   -webkit-overflow-scrolling: touch;
@@ -161,11 +152,10 @@
   right: 0;
   padding: .5em;
   line-height: 1;
-  background: #f6f6f7;
   border: 0;
+  background-color: #fff;
   box-shadow: 0;
   outline: none;
-  cursor: pointer;
 }
 
 .menuModal-close-icon {
@@ -176,16 +166,6 @@
   stroke-linecap: round;
   stroke-width: 2;
 }
-
-.menuModal-title{
-  font-size: 20px;
-  line-height: 1.36363636;
-  color: #2c2d30;
-  font-weight: 900;
-  margin: 0;
-  width: 100%;
-}
-
 
 /* Hides the text within the close button (we don't need to see it, */
 /* but this way screen readers will still be able to pick up on it) */

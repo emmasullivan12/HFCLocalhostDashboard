@@ -42,3 +42,89 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(216, 215, 245, 0.45);
 }
+
+.userMenu-you{
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  clear: both;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.userMenu-header{
+  height: 40px;
+  margin: 16px 24px 8px;
+}
+
+.userMenu-thumb{
+  background-image: url(https://media.licdn.com/dms/image/C5603AQHsHypCoue1Yg/profile-displayphoto-shrink_200_200/0?e=1558569600&v=beta&t=8-Ah27MuV2gKokbrTVsVOLe34vVw0ngJ4Xlj6mt7qv8);
+  float: left;
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: .2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.userMenu-name{
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  user-select: text;
+  transform: translateY(-.1875rem);
+  cursor: text;
+}
+
+.userMenu-preferred-name{
+  font-size: .9375rem;
+  line-height: 1.125rem;
+  color: #868686;
+  font-weight: 500;
+  user-select: auto;
+  transform: translateY(-.3125rem);
+  cursor: text;
+}
+
+.overflow-ellipsis{
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.userMenu-list{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  border-radius: 6px;
+  list-style-type: none;
+}
+
+.userMenu-list-item{
+  line-height: 32px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.userMenu-link{
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 0 24px;
+  margin: 0;
+  white-space: nowrap;
+  outline: 0;
+  background: 0 0;
+  color: #3f3f3f;
+  cursor: pointer;
+}
+
+.userMenuLabel{
+  position: relative;
+  top: -1px;
+}

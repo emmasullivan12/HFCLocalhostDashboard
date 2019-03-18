@@ -48,15 +48,9 @@ const MenuContent = ({
   return ReactDOM.createPortal(
     <aside className="menuModal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onClick={onClickAway}>
       <div className="menuModal-container" ref={menuRef}>
-        <div className="menuModal-header">
-          <div className="menuModal-title">
-            Menu Modal
-          </div>
-          <button type="button" className="menuModal-close" aria-labelledby="Close Modal" onClick={onClose} ref={menuButtonRef}>
-            <span id="close-modal" className="u-hide-visually">Close</span>
-            <svg className="menuModal-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
-          </button>
-        </div>
+        <button type="button" className="menuModal-close" aria-labelledby="Close Modal" onClick={onClose} ref={menuButtonRef}>
+          <span id="close-modal" className="u-hide-visually">Close</span>
+        </button>
         <div className="menuModal-content">
           {content}
         </div>

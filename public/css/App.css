@@ -33,6 +33,14 @@ html {
   box-sizing: border-box;
 }
 
+h2{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
+  color: #3f3f3f;
+  -webkit-font-smoothing: antialiased;
+}
+
 /*
 input[type=text] {
   cursor: text;
