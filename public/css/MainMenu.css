@@ -14,11 +14,11 @@
 }
 
 .mainMenuItem:hover {
-  background-color: #9f9ee7;
+  background-color: #111111;
   color: #fff;
 }
 
 .mainMenuItem:focus {
-  background-color: #ffebb3;
-  color: #d8a40f;
+  background-color: #9f9ee7; /* #ffebb3 is orange / #9f9ee7 is purple */
+  color: #fff; /* #d8a40f is orange text */
 }

@@ -1,0 +1,214 @@
+.userMenu {
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-family: Roboto;
+  padding: 1.75rem 2rem 1rem 2rem;
+  color: #fff;
+  position: relative;
+  flex-basis: 61px;
+  flex-shrink: 0;
+  margin-bottom: -2px;
+  margin-top: 2.3rem!important;
+  line-height: 1.075rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.userMenu:hover {
+  background-color: #111111;
+}
+
+.userMenu:hover .badgeName {
+  color: #ffdf85;
+}
+
+.userMenu:hover .down-arrow-icon {
+  color: #fff;
+}
+
+.userMenu:active {
+  background-color: #111111; /* #ffebb3 is orange / #9f9ee7 is purple */
+}
+
+.userMenu:active .badgeName {
+  color: #ffdf85;
+}
+
+.userMenu:active .down-arrow-icon {
+  color: #fff;
+}
+
+.userMenu:focus {
+  background-color: #111111; /* #ffebb3 is orange / #9f9ee7 is purple */
+}
+
+.userMenu:focus .badgeName {
+  color: #ffdf85;
+}
+
+.userMenu:focus .down-arrow-icon {
+  color: #fff;
+}
+
+.userContainer {
+  display: flex;
+}
+
+.presenceContainer{
+  float: left;
+  margin-left: -5px;
+  margin-right: 4px;
+  width: 20px;
+  height: 1.3125rem;
+  text-align: center;
+  color: #00ffb7;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+.userName{
+  order: 1;
+  max-width: 9.12rem;
+}
+
+.button-unstyled {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: inherit;
+  overflow: inherit;
+  padding: 0;
+  text-align: initial;
+  vertical-align: initial;
+  cursor: pointer;
+  opacity: .6;
+}
+
+.userBadgesContainer{
+  position: relative;
+  margin-top: -4px;
+  color: #d0a800;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.trophyContainer{
+  float: left;
+  margin-left: -5px;
+  margin-right: 8px;
+  width: 20px;
+  height: 1.75rem;
+  text-align: center;
+  color: #ffd211;
+  font-size: 20px;
+  opacity: 0.89;
+}
+
+.badgeName{
+  font-size: .7rem;
+  padding-top: 8px;
+  font-family: Roboto;
+  text-align: left;
+}
+
+.menuModal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.menuModal-container {
+  position: absolute;
+  z-index: 1000;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 240px;
+  max-width: 360px;
+  color: #3f3f3f;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  overflow: hidden;
+  top: 75px;
+  left: 10px;
+  cursor: default;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* @media screen and (min-width: 500px) {
+  .modal-container {
+    left: 50%;
+    top: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    max-width: 30em;
+    max-height: calc(100% - 1em);
+  }
+}
+*/
+
+.menuModal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  line-height: 1;
+  background: #f6f6f7;
+  border: 0;
+  box-shadow: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.menuModal-close-icon {
+  width: 25px;
+  height: 25px;
+  fill: transparent;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.menuModal-title{
+  font-size: 20px;
+  line-height: 1.36363636;
+  color: #2c2d30;
+  font-weight: 900;
+  margin: 0;
+  width: 100%;
+}
+
+
+/* Hides the text within the close button (we don't need to see it, */
+/* but this way screen readers will still be able to pick up on it) */
+.u-hide-visually {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* Lock the scroll position by adding this class to the `<html>` element.*/
+.u-lock-scroll {
+  overflow: hidden !important;
+}
+
+.menuModal-content {
+  background: #fff;
+  position: relative;
+  z-index: 1001;
+  overflow: hidden;
+}

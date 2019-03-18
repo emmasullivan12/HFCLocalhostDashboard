@@ -92,60 +92,6 @@ input[type=text]:focus {
   background: #fff;
 }
 
-.notificationBell {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
-.userMenu {
-  font-size: 1.25rem;
-  font-weight: 900;
-  padding: 1.75rem 2rem 1rem 2rem;
-  color: #fff;
-  position: relative;
-  flex-basis: 61px;
-  flex-shrink: 0;
-  margin-bottom: -2px;
-  margin-top: 2.3rem!important;
-  line-height: 1.075rem;
-  cursor: pointer;
-}
-
-.userMenu:hover {
-  background-color: #58d2bb;
-}
-
-.userMenu:hover .badgeName {
-  color: #ffdf85;
-}
-
-.userMenu:hover .down-arrow-icon {
-  color: #fff;
-}
-
-.userContainer {
-  display: flex;
-}
-
-.presenceContainer{
-  float: left;
-  margin-left: -5px;
-  margin-right: 4px;
-  width: 20px;
-  height: 1.3125rem;
-  text-align: center;
-  color: #00ffb7;
-  font-size: 13px;
-  opacity: 0.95;
-}
-
-.userName{
-  order: 1;
-  max-width: 9.12rem;
-}
-
 .button-unstyled {
   background: none;
   border: 0;
@@ -162,6 +108,13 @@ input[type=text]:focus {
   opacity: .6;
 }
 
+.notificationBell {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
 .bell-icon {
   font-size: 20px;
   color: #d8d7f5;
@@ -175,32 +128,6 @@ input[type=text]:focus {
   order: 2;
   margin-left: 6px;
   margin-top: -2px;
-}
-
-.userBadgesContainer{
-  position: relative;
-  margin-top: -4px;
-  color: #d0a800;
-  font-size: .875rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.trophyContainer{
-  float: left;
-  margin-left: -5px;
-  margin-right: 8px;
-  width: 20px;
-  height: 1.75rem;
-  text-align: center;
-  color: #ffd211;
-  font-size: 22px;
-  opacity: 0.95;
-}
-
-.badgeName{
-  font-size: .7rem;
-  padding-top: 8px;
 }
 
 .overflow-ellipsis{

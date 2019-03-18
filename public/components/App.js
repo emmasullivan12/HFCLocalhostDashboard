@@ -17,6 +17,8 @@ import ChatMenu from "./ChatMenu";
 import MentorHomePage from './MentorHomePage.js';
 import LatestAdvice from "./LatestAdvice";
 import MainMenu from "./MainMenu";
+import MenuModal from "./MenuModal";
+import UserMenuContent from "./UserMenuContent";
 import NotFound from "./NotFound";
 import LgdInUsrProfile from "./LgdInUsrProfile";
 import ProspelaBot from "./ProspelaBot";
@@ -27,6 +29,11 @@ import Teams from "./Teams";
 import Todo from "./Todo";
 import TypeformSignUp from "./TypeformSignUp";
 import VerifyEmail from "./VerifyEmail";
+
+const MenuModalContent = (
+  <UserMenuContent />
+)
+
 
 class Dashboard extends Component{
   render(){
@@ -41,27 +48,7 @@ class Dashboard extends Component{
                   <i className="fa fa-bell" />
                 </button>
               </span>
-              <div className="userMenu">
-                <div className="userContainer">
-                  <div className="presenceContainer">
-                    <i className="fa fa-circle" />
-                  </div>
-                  <button className="button-unstyled down-arrow-icon" type="button">
-                    <i className="fa fa-angle-down" />
-                  </button>
-                  <div className="userName overflow-ellipsis">
-                    fname
-                  </div>
-                </div>
-                <div className="userBadgesContainer">
-                  <div className="trophyContainer">
-                    <i className="fa fa-trophy" />
-                  </div>
-                  <div className="badgeName">
-                    Beginner
-                  </div>
-                </div>
-              </div>
+              <MenuModal >{MenuModalContent}</MenuModal>
               <div className="scrollArea">
                 <div className="menuContainer">
                   <MainMenu />
