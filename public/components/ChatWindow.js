@@ -44,81 +44,35 @@ class ChatWindow extends Component {
   const {flexContent} = this.props;
 
     return (
-      <div className="chat-container">
-        <div className="chat-content-container">
-          <div className="chat-header">
-            <div className="chat-detail-container">
-              <div className="chat-title">
-                Chat name
+      <React.Fragment>
+        <div className="chat-container">
+          <div className="chat-content-container">
+            <div className="chat-header">
+              <div className="chat-detail-container">
+                <div className="chat-title">
+                  Chat name
+                </div>
+              </div>
+              <div className="more-info-container">
+                <button type="button" className="other-user-profile" onClick={this.toggleFlexContainer}>
+                  <span className="see-matchs-profile">See your Mentor&apos;s Profile </span>
+                </button>
               </div>
             </div>
-            <div className="more-info-container">
-              <button type="button" className="other-user-profile" onClick={this.toggleFlexContainer}>
-                <span className="see-matchs-profile">See your Mentor&apos;s Profile </span>
-              </button>
+            <div className="messages-panel">
+              <PrMessagesList />
+              <PrAddMessage />
             </div>
           </div>
-          <div className="messages-panel">
-            <PrMessagesList messages={DUMMY_CHAT_MESSAGES}/>
-            <PrAddMessage />
-          </div>
+          {isFlexContainerOpen && (
+            <FlexContainerContent
+              content={flexContent}
+            />
+          )}
         </div>
-        {isFlexContainerOpen && (
-          <FlexContainerContent
-            content={flexContent}
-          />
-        )}
-      </div>
+      </React.Fragment>
     );
   }
 }
-
-const DUMMY_CHAT_MESSAGES = [
-  {
-    id: '100001',
-    uid: '12345',
-    type: 'message',
-    subtype: 'std',
-    author: 'dexter',
-    time: '12:10pm',
-    text: 'This is my message'
-  },
-  {
-    id: '100002',
-    uid: '12345',
-    type: 'message',
-    subtype: 'std',
-    author: 'dexter',
-    time: '12:10pm',
-    text: 'This is my message'
-  },
-  {
-    id: '100003',
-    uid: '23456',
-    type: 'message',
-    subtype: 'std',
-    author: 'emma-student',
-    time: '12:10pm',
-    text: 'This is my message'
-  },
-  {
-    id: '100004',
-    uid: '23456',
-    type: 'message',
-    subtype: 'mentorReq',
-    author: 'emma-student',
-    time: '12:10pm',
-    text: 'This is a request for a mentor woohoo!'
-  },
-  {
-    id: '100005',
-    uid: '12345',
-    type: 'message',
-    subtype: 'std',
-    author: 'dexter',
-    time: '12:10pm',
-    text: 'This is my message'
-  }
-]
 
 export default ChatWindow;

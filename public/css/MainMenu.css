@@ -8,7 +8,7 @@
 .mainMenuItem {
   height: 50px;
   padding: 1.2rem 1.7rem 1rem 1.7rem;
-  color: #d8d7f5;
+  color: rgb(255,255,255,0.8); /* #d8d7f5 is purple */
   text-decoration: none;
   font-size: 16px;
 }

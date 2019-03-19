@@ -1,21 +1,3 @@
-.menuModal-scrollArea{
-  position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  outline: none;
-  transform: translateZ(0);
-  height: 100%;
-  width: 100%;
-  // display: flex;
-  // flex-direction: column;
-  visibility: hidden;
-}
-
-.menuModalscrollArea:hover{
-  visibility: visible;
-  // overflow-y: visible;
-}
-
 .userMenuContainer{
   visibility: visible;
   overflow: visible;
@@ -24,31 +6,13 @@
   flex-direction: column;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  right: 12px;
-  top:0;
-  bottom:0;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(255,255,255,0.45);
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(216, 215, 245, 0.45);
-}
-
 .userMenu-you{
   position: relative;
   padding-top: 8px;
   padding-bottom: 8px;
   clear: both;
-  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;;
   margin: 0;
   width: 100%;
   display: block;
@@ -111,6 +75,19 @@
   cursor: pointer;
 }
 
+.userMenu-list-item:hover{
+  background-color: #e0f2f0;
+}
+
+.userMenu-list-item:hover .userMenuLabel {
+  color: #1dba86;
+}
+
+.userMenu-list-item-nohover{
+  line-height: 32px;
+  margin: 0;
+}
+
 .userMenu-link{
   text-decoration: none;
   font-size: 15px;
@@ -127,4 +104,68 @@
 .userMenuLabel{
   position: relative;
   top: -1px;
+}
+
+.userMenu-eduInst{
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  clear: both;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  width: 100%;
+  display: block;
+  border-top: 1px solid rgba(0,0,0,.05);
+  opacity: .9;
+}
+
+.userMenu-eduInstThumb{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/03/Lock-Icon.png);
+  float: left;
+  margin-right: 10px;
+  width: 26px;
+  height: 36px;
+  border-radius: .2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.userMenu-eduInstDetail{
+  padding: 8px 24px;
+  white-space: normal;
+  position: relative;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0;
+  user-select: none;
+}
+
+.userMenu-inline-link{
+  text-decoration: none;
+  color: #1264a3;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.userMenu-inline-link:hover {
+  text-decoration: underline;
+  color: #0b4c8c;
+  outline: 0;
+  cursor: pointer;
+}
+
+.userMenu-settings{
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  clear: both;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  width: 100%;
+  display: block;
+  border-top: 1px solid rgba(0,0,0,.05);
 }

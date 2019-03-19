@@ -1,3 +1,48 @@
+.menuModal-container {
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  max-height: calc(100vh - 99px);
+  color: #3f3f3f;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  /* overflow: hidden;*/
+  top: 80px;
+  left: 20px;
+  cursor: default;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menuModal-scrollArea{
+  position: relative;
+  outline: none;
+  transform: translateZ(0);
+  height: 100%;
+  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  right: 12px;
+  top:0;
+  bottom:0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(63,63,63, 0.45);
+  border-radius: 8px;
+}
+
 .userMenu {
   font-size: 1.25rem;
   font-weight: 900;
@@ -117,23 +162,6 @@
   height: 100%;
 }
 
-.menuModal-container {
-  position: absolute;
-  z-index: 1000;
-  display: inline-block;
-  vertical-align: top;
-  width: 300px;
-  color: #3f3f3f;
-  background-color: #FFFFFF;
-  border-radius: 6px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
-  overflow: hidden;
-  top: 80px;
-  left: 10px;
-  cursor: default;
-  -webkit-overflow-scrolling: touch;
-}
-
 /* @media screen and (min-width: 500px) {
   .modal-container {
     left: 50%;
@@ -184,11 +212,4 @@
 /* Lock the scroll position by adding this class to the `<html>` element.*/
 .u-lock-scroll {
   overflow: hidden !important;
-}
-
-.menuModal-content {
-  background: #fff;
-  position: relative;
-  z-index: 1001;
-  overflow: hidden;
 }

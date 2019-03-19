@@ -75,13 +75,13 @@ function MenteeReq(props) {
 
 class PrMessage extends Component {
   render() {
-    const message = this.props.message;
-
-    switch (message.subtype) {
-      case 'std':
-        return <StdMessage message={message} />
-      case 'menteeReq':
-        return <MenteeReq message={message} />
+    switch (this.props.message.subtype) {
+      case "std":
+        return <StdMessage message={this.props.message} />
+      case "menteeReq":
+        return <MenteeReq message={this.props.message} />
+      default:
+        return <MenteeReq message={this.props.message} />
     }
   }
 }

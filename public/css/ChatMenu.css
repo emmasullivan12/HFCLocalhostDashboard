@@ -1,7 +1,9 @@
-c
+.link{
+  text-decoration: none;
+}
 
 .chatMenu-header{
-  color: #d8d7f5;
+  color: rgb(255,255,255,0.835);
   font-size: 16px;
   padding: 1rem 1.7rem 0.25rem 1.7rem;
 }
@@ -13,6 +15,7 @@ c
 
 .chatMenuItem {
   height: 30px;
+  text-decoration: none;
   padding: 0.5rem 1.7rem 0.5rem 1.7rem;
 }
 
@@ -33,7 +36,7 @@ c
 }
 
 .chatMenuLink {
-  color: #d8d7f5;
+  color: rgb(255,255,255,0.835);
   text-decoration: none;
   font-size: 16px;
   margin-right: 10px;
