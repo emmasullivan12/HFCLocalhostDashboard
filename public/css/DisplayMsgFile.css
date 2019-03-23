@@ -1,0 +1,66 @@
+.display-file-container{
+  margin-bottom: 8px;
+  position: relative;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+.file-name{
+    margin-bottom: 8px;
+}
+
+.file-title-container{
+  color: rgba(29,28,29,.7);
+  margin-top: -4px;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.file-title{
+  font-size: 12px;
+}
+
+.down-arrow-icon{
+  font-size: 15px;
+  color: rgba(29,28,29,.7);
+  opacity: 1;
+  order: 2;
+  margin-left: 6px;
+  margin-top: -2px;
+}
+
+.msg-img-container{
+  max-width: 100%;
+}
+
+.msg-img-content{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.msg-img{
+  cursor: zoom-in;
+  display: block;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+.button-unstyled {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: inherit;
+  overflow: inherit;
+  padding: 0;
+  text-align: initial;
+  vertical-align: initial;
+  cursor: pointer;
+  opacity: .6;
+}

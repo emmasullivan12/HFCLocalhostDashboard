@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Modal from './Modal.js';
+import DisplayMsgFile from './DisplayMsgFile.js';
 import AcceptMenteeContent from './AcceptMenteeContent.js';
 import PassMenteeContent from './PassMenteeContent.js';
 import "../css/PrMessage.css";
@@ -38,35 +39,6 @@ function Avatar(props) {
   );
 }
 
-const DisplayFile = ({
-  file
-}) => {
-  return (
-    <div className="display-file-container">
-      <div className="file-name">
-        {file.title}
-      </div>
-      <div className="file-title-container">
-        <span className="file-title">
-          {file.name}
-        </span>
-        <span className="down-arrow-icon">
-          <i className="fas fa-caret-down" />
-        </span>
-      </div>
-      <div className="msg-img-container">
-        <div className="msg-img-content">
-          <img
-            className="msg-img"
-            src={file.imgurl}
-            alt={file.name}
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function StdMessage(props) {
   return (
     <React.Fragment>
@@ -83,7 +55,7 @@ function StdMessage(props) {
             </div>
             {props.message.file && (
               <div className="extra-content-container">
-                <DisplayFile
+                <DisplayMsgFile
                   file={props.message.file}
                 />
               </div>
