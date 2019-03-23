@@ -29,7 +29,14 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma-student',
         time: '12:10pm',
-        text: 'This is my message'
+        text: 'Emma sent you a picture',
+        file: {
+          id: '99999',
+          name: 'Image uploaded from iOS',
+          title: 'Here is a pic of my office at lunchtime!',
+          uid: '23456',
+          imgurl: 'https://prospela.com/wp-content/uploads/2019/02/Harj-1.jpeg'
+        }
       },
       {
         id: '100004',

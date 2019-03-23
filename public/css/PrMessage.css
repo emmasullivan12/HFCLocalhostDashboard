@@ -40,6 +40,7 @@
 
 .message-content-box {
   overflow: hidden;
+  width: 100%;
 }
 
 .sender-name {
@@ -71,4 +72,63 @@
   background-color: #d8d7f5;
   text-align: center;
   min-height: 30px;
+}
+
+.extra-content-container{
+  margin-top: 8px;
+  margin-bottom: -8px;
+  line-height: 1.46668;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.display-file-container{
+  margin-bottom: 8px;
+  position: relative;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+.file-name{
+    margin-bottom: 8px;
+}
+
+.file-title-container{
+  color: rgba(29,28,29,.7);
+  margin-top: -4px;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.file-title{
+  font-size: 12px;
+}
+
+.down-arrow-icon{
+  font-size: 15px;
+  color: rgba(29,28,29,.7);
+  opacity: 1;
+  order: 2;
+  margin-left: 6px;
+  margin-top: -2px;
+}
+
+.msg-img-container{
+  max-width: 100%;
+}
+
+.msg-img-content{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.msg-img{
+  cursor: zoom-in;
+  display: block;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
 }
