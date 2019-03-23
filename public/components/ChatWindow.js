@@ -49,12 +49,12 @@ class ChatWindow extends Component {
           <div className="chat-content-container">
             <div className="chat-header">
               <div className="chat-detail-container">
-                <div className="chat-title">
+                <div className="chat-title overflow-ellipsis">
                   Chat name
                 </div>
               </div>
               <div className="more-info-container">
-                <button type="button" className="other-user-profile" onClick={this.toggleFlexContainer}>
+                <button type="button" className="other-user-profile button-unstyled" onClick={this.toggleFlexContainer}>
                   <span className="see-matchs-profile">See your Mentor&apos;s Profile </span>
                 </button>
               </div>

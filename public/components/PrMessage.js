@@ -53,13 +53,31 @@ function StdMessage(props) {
             <div className="message-content">
               {props.message.text}
             </div>
-            {props.message.file && (
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function DisplayFile(props) {
+  return (
+    <React.Fragment>
+      <div className="block-container">
+        <div className="message-container">
+          <Avatar senderID={props.message.uid} senderName={props.message.author}/>
+          <div className="message-content-box">
+            <div className="sent-msg-info">
+              <span className="sender-name">{props.message.author}</span>
+              <span className="msg-sent-time">{props.message.time}</span>
+            </div>
+            <div className="message-content">
               <div className="extra-content-container">
                 <DisplayMsgFile
                   file={props.message.file}
                 />
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>
@@ -86,6 +104,8 @@ class PrMessage extends Component {
     switch (this.props.message.subtype) {
       case "std":
         return <StdMessage message={this.props.message} />
+      case "file":
+        return <DisplayFile message={this.props.message} />
       case "menteeReq":
         return <MenteeReq message={this.props.message} />
       default:

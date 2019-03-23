@@ -26,7 +26,7 @@ class PrMessagesList extends Component {
         id: '100003',
         uid: '23456',
         type: 'message',
-        subtype: 'std',
+        subtype: 'file',
         author: 'emma-student',
         time: '12:10pm',
         text: 'Emma sent you a picture',

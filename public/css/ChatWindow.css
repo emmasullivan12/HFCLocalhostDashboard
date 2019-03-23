@@ -1,17 +1,33 @@
+..button-unstyled {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: inherit;
+  overflow: inherit;
+  padding: 0;
+  text-align: initial;
+  vertical-align: initial;
+  cursor: pointer;
+  opacity: .6;
+}
+
 .chat-container {
   position: relative;
   display: flex;
   flex-direction: row; // this is the one to play with
   flex-grow: 1;
-  min-width: 1px;
+  min-width: 320px;
+  height: 100%;
   background: #f2f2f2;
 }
 
 .chat-header {
   display:flex;
-  -webkit-box-flex:0;
-  flex: none;
-  flex-basis: 53px;
+  flex-direction: row;
+  height: 53px;
   padding-left:1.5rem;
   padding-right:1.5rem;
   padding-top:.5rem;
@@ -23,12 +39,28 @@
   background: #f2f2f2;
 }
 
+.overflow-ellipsis{
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.chat-detail-container{
+  margin-right: 10px;
+}
+
 .chat-title {
   color:#3f3f3f;
   font-weight:600;
   margin:0;
   display:block;
   font-size:1.17rem;
+}
+
+.more-info-container{
+  position: absolute;
+  right: 16px;
 }
 
 .flex-container-overlay{
@@ -52,6 +84,7 @@
   flex-direction: column;
   min-width: 1px;
   background: #fff;
+  min-width: 320px;
 }
 
 .messages-panel{
@@ -67,4 +100,26 @@
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
   flex-direction:column;
+}
+
+.other-user-profile{
+  padding: 0 10px;
+  margin: 2px 8px 2px 0;
+  vertical-align: middle;
+  font-size: 13px;
+  height: 28px;
+  width: 180px;
+  text-align: center;
+  transition: all 80ms linear;
+  background: #9f9ee7;
+  border: 1px solid rgba(29,28,29,.3);
+  background-clip: padding-box;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.other-user-profile:hover{
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  background: #8d8cce;
 }

@@ -53,6 +53,7 @@
   font-size: .75rem;
   color: #b8c2cc;
   box-sizing: inherit;
+  margin-left: 4px;
 }
 
 .message-content {
@@ -75,8 +76,6 @@
 }
 
 .extra-content-container{
-  margin-top: 8px;
-  margin-bottom: -8px;
   line-height: 1.46668;
   font-size: 15px;
   font-weight: 400;
