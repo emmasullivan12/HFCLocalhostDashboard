@@ -13,14 +13,12 @@ import {
 import { usersFetchData } from "../actions/Users";*/
 
 import ChatMenu from "./ChatMenu";
-//import Home from "./Home";
-import MentorHomePage from './MentorHomePage.js';
 import LatestAdvice from "./LatestAdvice";
-import MainMenu from "./MainMenu";
-import MenuModal from "./MenuModal";
-import UserMenuContent from "./UserMenuContent";
-import NotFound from "./NotFound";
 import LgdInUsrProfile from "./LgdInUsrProfile";
+import MainMenu from "./MainMenu";
+import MentorHomePage from './MentorHomePage.js';
+import MenuModal from "./MenuModal";
+import NotFound from "./NotFound";
 import ProspelaBot from "./ProspelaBot";
 import ProtectedChats from "./ProtectedChats";
 import ProtectedRoute from "./ProtectedRoute";
@@ -28,6 +26,7 @@ import SubmitMatch from './PrSubmitMatches.js';
 import Teams from "./Teams";
 import Todo from "./Todo";
 import TypeformSignUp from "./TypeformSignUp";
+import UserMenuContent from "./UserMenuContent";
 import VerifyEmail from "./VerifyEmail";
 
 const MenuModalContent = (
@@ -76,7 +75,7 @@ class Dashboard extends Component{
                 <ProtectedRoute path="/mentorhomepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/prospelahomepage" component={SubmitMatch}/>
-                <ProtectedChats chats={DUMMY_CHAT_LIST}/>
+                <ProtectedChats chats={DUMMY_CHAT_LIST} />
                 <Route component={NotFound}/>
               </Switch>
             </div>

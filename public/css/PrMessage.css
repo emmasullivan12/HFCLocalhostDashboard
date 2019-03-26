@@ -22,7 +22,7 @@
 }
 
 .block-container:hover {
-  background-color: #f9f9f9;
+  background-color: rgb(242, 242, 242, 0.5);
 }
 
 .message-container {

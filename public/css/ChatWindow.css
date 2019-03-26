@@ -1,4 +1,4 @@
-..button-unstyled {
+.button-unstyled {
   background: none;
   border: 0;
   outline: none;
@@ -17,7 +17,7 @@
 .chat-container {
   position: relative;
   display: flex;
-  flex-direction: row; // this is the one to play with
+  flex-direction: row;
   flex-grow: 1;
   min-width: 320px;
   height: 100%;
@@ -100,6 +100,8 @@
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
   flex-direction:column;
+  background-image: url(https://prospela.com/wp-content/uploads/2019/03/Chat-Background.png);
+  background-size: 130px;
 }
 
 .other-user-profile{

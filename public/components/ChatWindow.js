@@ -61,8 +61,8 @@ class ChatWindow extends Component {
             </div>
             <div className="messages-panel">
               <PrMessagesList />
-              <PrAddMessage />
             </div>
+            <PrAddMessage />
           </div>
           {isFlexContainerOpen && (
             <FlexContainerContent

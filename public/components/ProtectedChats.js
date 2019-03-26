@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import ProspelaBot from "./ProspelaBot";
+import "../css/ProtectedChats.css";
 
 // This shows the content within an individual row in the ChatMenu
 class ChatListItem extends Component {
@@ -33,7 +34,7 @@ class ProtectedChats extends Component {
     });
 
     return (
-      <div>
+      <div className="protectedChats-container">
         {chats}
       </div>
     );
