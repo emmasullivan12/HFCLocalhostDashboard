@@ -86,28 +86,6 @@
   white-space: nowrap;
 }
 
-.attachmentContainer {
-  margin-left: 10px;
-  width: 30px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #3f3f3f;
-  font-size: 20px;
-  opacity: 0.95;
-  padding: 0;
-  top: auto;
-  right: 54px;
-  bottom: 28px;
-  position: absolute;
-  cursor: pointer;
-  background: none;
-  border: 0;
-  outline: none;
-  display: inline-block;
-  transition: all 50ms ease-out 0s;
-}
-
 .picContainer {
   margin-right: 0;
   margin-left: 10px;
@@ -157,11 +135,6 @@
 .emojiContainer:hover {
   transform: scale(1.25);
   color: #f2c744;
-}
-
-.attachmentContainer:hover {
-  transform: scale(1.25);
-  color: #8e8e8e;
 }
 
 .picContainer:hover {

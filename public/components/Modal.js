@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import ButtonContent from './ButtonContent.js';
 import "../css/Modal.css";
 
 // ModalTrigger is the button that will open the Modal
@@ -8,7 +9,11 @@ const ModalTrigger = ({
   onOpen,
   text,
   usedFor
-}) => <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef}>{text}</button>;
+}) => (
+  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef}>
+    <ButtonContent usedFor={usedFor} text={text}/>
+  </button>
+)
 
 // ModalContent provides all of the Content within Modal
 const ModalContent = ({
