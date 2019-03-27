@@ -58,14 +58,13 @@
   cursor: pointer;
   background: none;
   border: 0;
-  outline: none;
+  outline: none!important;
+  box-shadow: none!important;
   display: inline-block;
-  transition: all 50ms ease-out 0s;
 }
 
-.ModalOpenBtn-attachmentContainer:hover {
-  transform: scale(1.25);
-  color: #8e8e8e;
+.ModalOpenBtn-attachmentContainer:hover{
+  background: none!important;
 }
 
 .modal-overlay {

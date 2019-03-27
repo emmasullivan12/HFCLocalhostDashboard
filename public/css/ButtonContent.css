@@ -1,5 +1,4 @@
 .attachmentContainer {
-  margin-left: 10px;
   width: 30px;
   height: 40px;
   line-height: 40px;
@@ -8,10 +7,6 @@
   font-size: 20px;
   opacity: 0.95;
   padding: 0;
-  top: auto;
-  right: 54px;
-  bottom: 28px;
-  position: absolute;
   cursor: pointer;
   background: none;
   border: 0;

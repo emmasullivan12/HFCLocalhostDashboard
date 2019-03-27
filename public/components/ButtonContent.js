@@ -9,9 +9,9 @@ function ButtonContent(props) {
   switch (usedFor) {
     case 'attachmentContainer':
       return (
-        <button type="button" className="attachmentContainer">
+        <div type="button" className="attachmentContainer">
           <i className="fas fa-paperclip" />
-        </button>
+        </div>
       );
     default:
       return <div>{text}</div>
