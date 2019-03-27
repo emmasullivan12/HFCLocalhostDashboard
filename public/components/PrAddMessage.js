@@ -3,6 +3,15 @@ import "../css/PrAddMessage.css";
 import 'emoji-mart/css/emoji-mart.css'
 import { NimblePicker } from 'emoji-mart'
 import data from 'emoji-mart/data/emojione.json'
+import Modal from './Modal.js';
+import FileUploadContent from './FileUploadContent.js';
+
+// This includes props and title to be passed to FileUploadModal
+const FileUploadModalProps = {
+  ariaLabel: 'Uploading file',
+  title: 'Upload a file',
+  usedFor: 'attachmentContainer'
+}
 
 class PrAddMessage extends Component {
   constructor(props) {
@@ -76,9 +85,9 @@ class PrAddMessage extends Component {
                     onChange={this.handleMessageChange}
                   />
                 </form>
-                <button type="button" className="attachmentContainer">
-                  <i className="fas fa-paperclip" />
-                </button>
+                <Modal {...FileUploadModalProps}>
+                  <FileUploadContent/>
+                </Modal>
                 <button type="button" className="picContainer">
                   <i className="far fa-image" />
                 </button>

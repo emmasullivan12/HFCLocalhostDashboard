@@ -29,9 +29,34 @@ class ChatWindow extends Component {
   constructor () {
     super();
     this.state = {
-      isFlexContainerOpen: false
+      isFlexContainerOpen: false,
+      dragover: '',
     }
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
+    this.handleDragEnter = this.handleDragEnter.bind(this);
+    this.handleDragOver = this.handleDragOver.bind(this);
+    this.handleDragLeave = this.handleDragLeave.bind(this);
+  }
+
+  // FILE DROP ACTIVITY
+
+  handleDragEnter(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    this.setState({dragover: 'dragover'});
+  }
+
+  handleDragLeave(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    this.setState({dragover: ''});
+  }
+
+  handleDragOver(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy'; // changes the mouse cursor to a "+" to show user it's a copy action and active
+    this.setState({dragover: 'dragover'});
   }
 
   toggleFlexContainer() {
@@ -59,10 +84,21 @@ class ChatWindow extends Component {
                 </button>
               </div>
             </div>
-            <div className="messages-panel">
-              <PrMessagesList />
+            <div id="drop-zone" className={"messages-panel messages-panel-" +this.state.dragover} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave}>
+              <div>
+                <PrMessagesList />
+              </div>
             </div>
             <PrAddMessage />
+            <form onSubmit={this.handleFileSelect} encType="multipart/form-data">
+              <input
+                type="file"
+                name="selectedFiles"
+                onChange={this.onChange}
+                multiple
+              />
+              <button type="submit">Upload</button>
+            </form>
           </div>
           {isFlexContainerOpen && (
             <FlexContainerContent

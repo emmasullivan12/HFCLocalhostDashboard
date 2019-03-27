@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import Modal from './Modal.js';
-import DisplayMsgFile from './DisplayMsgFile.js';
+
 import AcceptMenteeContent from './AcceptMenteeContent.js';
+import DisplayMsgFile from './DisplayMsgFile.js';
+import Modal from './Modal.js';
 import PassMenteeContent from './PassMenteeContent.js';
+
 import "../css/PrMessage.css";
 
 const AcceptMenteeModalProps = {
@@ -12,20 +14,12 @@ const AcceptMenteeModalProps = {
   usedFor: 'AcceptChat'
 }
 
-const AcceptMenteeModalContent = (
-  <AcceptMenteeContent />
-)
-
 const PassMenteeModalProps = {
   ariaLabel: 'Pass on Mentee',
   title: 'Why did you pass? Help us match you better',
   triggerText: 'Pass on Mentee',
   usedFor: 'PassBtn'
 }
-
-const PassMenteeModalContent = (
-  <PassMenteeContent />
-)
 
 function Avatar(props) {
   return (
@@ -92,8 +86,23 @@ function MenteeReq(props) {
         {props.message.text}
       </div>
       <div className="ModalButtons">
-        <Modal {...PassMenteeModalProps}>{PassMenteeModalContent}</Modal>
-        <Modal {...AcceptMenteeModalProps}>{AcceptMenteeModalContent}</Modal>
+        <Modal {...PassMenteeModalProps}>
+          <PassMenteeContent />
+        </Modal>
+        <Modal {...AcceptMenteeModalProps}>
+          <AcceptMenteeContent />
+        </Modal>
+      </div>
+    </div>
+  );
+}
+
+function PrAuto(props) {
+  return (
+    <div className="prospela-auto-msg-container">
+      <div>
+        {props.message.text}
+        {props.message.time}
       </div>
     </div>
   );
@@ -103,9 +112,12 @@ class PrMessage extends Component {
   render() {
     switch (this.props.message.subtype) {
       case "std":
+      case 'mentorAcc':
         return <StdMessage message={this.props.message} />
       case "file":
         return <DisplayFile message={this.props.message} />
+      case "prAuto":
+        return <PrAuto message={this.props.message} />
       case "menteeReq":
         return <MenteeReq message={this.props.message} />
       default:

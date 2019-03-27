@@ -12,7 +12,7 @@ class PassMentorContent extends Component {
     this.updateClassname = this.updateClassname.bind(this);
   }
 
-    handleMessageChange = (evt) => {
+  handleMessageChange = (evt) => {
     this.setState({ PassReasonMessage: evt.target.value });
   }
 
@@ -45,17 +45,51 @@ class PassMentorContent extends Component {
     return (
       <React.Fragment>
         <form>
+          <div>Not the role I would like to explore</div>
+          <input
+            type="radio"
+            name="Role"
+            className="SubmitMatch-input"
+            value="t"
+            onClick={this.handleMessageChange}
+          />
+          <div>Not the industry I would like to explore</div>
+          <input
+            type="radio"
+            name="Industry"
+            className="SubmitMatch-input"
+            value="t"
+            onClick={this.handleMessageChange}
+          />
+          <div>We dont have enough personal interests that relate</div>
+          <input
+            type="radio"
+            name="Interests"
+            className="SubmitMatch-input"
+            value="t"
+            onClick={this.handleMessageChange}
+          />
+          <div>I dont think they know enough about the skills I want to develop</div>
+          <input
+            type="radio"
+            name="Skills"
+            className="SubmitMatch-input"
+            value="t"
+            onClick={this.handleMessageChange}
+          />
+          <div>Any other comments to note?</div>
           <input
             type="text"
+            name="PassReasonMessage"
             className="PassReasonMessage-Form"
             placeholder="Tell us why this isn't a great match for you..."
             value={this.state.PassReasonMessage}
             onChange={this.handleMessageChange}
           />
+          <button type="submit" disabled={!isEnabled} className="PassMentorSubmit-btn" onClick={this.updateClassname}>
+            Pass
+          </button>
         </form>
-        <button type="button" disabled={!isEnabled} className="PassMentorSubmit-btn" onClick={this.updateClassname} onSubmit={this.handleSubmit}>
-          Pass
-        </button>
       </React.Fragment>
     );
   }

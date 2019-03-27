@@ -16,11 +16,6 @@ const RequestChatModalProps = {
   usedFor: 'RequestChat'
 }
 
-// This includes all content to appear below Modal's title for the RequestChatModal
-const RequestChatModalContent = (
-  <RequestChatContent />
-)
-
 // This includes props and title to be passed to PassMentorModal
 const PassModalProps = {
   ariaLabel: 'Pass on matched E-Mentor',
@@ -28,11 +23,6 @@ const PassModalProps = {
   triggerText: 'Pass',
   usedFor: 'PassBtn'
 }
-
-// This includes all content to appear below Modal's title for the PassMentorModal
-const PassModalContent = (
-  <PassMentorContent />
-)
 
 // Content for MentorCards using props passed from database
 class MentorCardContent extends Component {
@@ -69,10 +59,18 @@ class MentorCardContent extends Component {
               <strong> Learning: </strong>
               <div>{mentor.learning}</div>
             </li>
+            <li>
+              <strong> Reasons we matched you: </strong>
+              <div>{mentor.prospela_match_comments}</div>
+            </li>
           </ul>
           <div className="ModalButtons">
-            <Modal {...PassModalProps}>{PassModalContent}</Modal>
-            <Modal {...RequestChatModalProps}>{RequestChatModalContent}</Modal>
+            <Modal {...PassModalProps}>
+              <PassMentorContent />
+            </Modal>
+            <Modal {...RequestChatModalProps}>
+              <RequestChatContent />
+            </Modal>
           </div>
         </div>
       </React.Fragment>
@@ -150,7 +148,8 @@ const DUMMY_MENTOR_DATA = [
     interests: "Politics, Remaining",
     role: "Prime Minister",
     company: "UK Government",
-    learning: "Employee retention, negotiating skills e.g. BATNA"
+    learning: "Employee retention, negotiating skills e.g. BATNA",
+    prospela_match_comments: "Hi soandso, Theresa is a great match for you because of XYZ."
   },
   {
     mentorName: "Boris Johnson",
@@ -159,7 +158,8 @@ const DUMMY_MENTOR_DATA = [
     interests: "Undermining people, Being the class clown, becoming PM",
     role: "MP",
     company: "UK Government",
-    learning: "I'm not cut out for the job"
+    learning: "I'm not cut out for the job",
+        prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ."
   },
   {
     mentorName: "Jacob Rees-Mogg",
@@ -168,7 +168,8 @@ const DUMMY_MENTOR_DATA = [
     interests: "Ousting our PM, Becoming PM, No-deal Brexit",
     role: "MP & Head of ERG",
     company: "UK Government",
-    learning: "Mysogyny is bad, teamwork is key"
+    learning: "Mysogyny is bad, teamwork is key",
+        prospela_match_comments: "Hi soandso, Jacob is a great match for you because of XYZ."
   }
 ]
 

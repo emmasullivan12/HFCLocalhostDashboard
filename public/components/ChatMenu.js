@@ -58,8 +58,6 @@ class ChatMenu extends Component {
             </NavLink>
           </div>
           {chats}
-          <div className="chatMenuItem"><NavLink to="/messages/chat1" className="chatMenuLink overflow-ellipsis">Chat with Mentor 1</NavLink></div>
-          <div className="chatMenuItem"><NavLink to="/messages/chat2" className="chatMenuLink overflow-ellipsis">Chat with Mentor 2</NavLink></div>
           <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink></div>
         </div>
       </React.Fragment>

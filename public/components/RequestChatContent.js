@@ -44,6 +44,9 @@ class RequestChatContent extends Component {
             value={this.state.requestChatMessage}
             onChange={this.handleMessageChange}
           />
+          <button type="button" disabled={!isEnabled} className="RequestChat-btn" onSubmit={this.handleSubmit}>
+            Request
+          </button>
         </form>
         <div>
           <div className="needIdeas-Title">
@@ -56,9 +59,7 @@ class RequestChatContent extends Component {
             <li><span className="bold">Why this mentor</span> (what would you like them to help you with)sss</li>
           </ul>
         </div>
-        <button type="button" disabled={!isEnabled} className="RequestChat-btn" onSubmit={this.handleSubmit}>
-          Request
-        </button>
+
       </React.Fragment>
     );
   }

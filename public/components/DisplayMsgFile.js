@@ -31,7 +31,7 @@ class DisplayMsgFile extends Component {
             <span className="file-title">
               {file.name}
             </span>
-            <span className="down-arrow-icon">
+            <span className="down-arrow-img-icon">
               <i className="fas fa-caret-down" />
             </span>
           </button>

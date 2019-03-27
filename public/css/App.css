@@ -44,11 +44,9 @@ h2{
 input[type=text] {
   cursor: text;
 }
-
 input[type=text]:focus {
   border: 1px solid #3f3f3f;
 }
-
 .bold{
   font-weight: bold;
 }

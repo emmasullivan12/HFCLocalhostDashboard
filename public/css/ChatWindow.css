@@ -104,6 +104,10 @@
   background-size: 130px;
 }
 
+.messages-panel-dragover{
+  background-color: orange;
+}
+
 .other-user-profile{
   padding: 0 10px;
   margin: 2px 8px 2px 0;
