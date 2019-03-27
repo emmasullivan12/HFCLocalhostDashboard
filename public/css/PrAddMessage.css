@@ -131,6 +131,34 @@
   transition: all 50ms ease-out 0s;
 }
 
+.emojiContainer {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  color: #3f3f3f;
+  font-size: 20px;
+  opacity: 0.95;
+  padding: 0;
+  top: auto;
+  left: 1.5rem;
+  bottom: 28px;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  outline: none;
+  transition: all 50ms ease-out 0s;
+}
+
+.emojiContainer:hover {
+  transform: scale(1.25);
+  color: #f2c744;
+}
+
 .attachmentContainer:hover {
   transform: scale(1.25);
   color: #8e8e8e;
@@ -141,6 +169,11 @@
   color: #4daf5b;
 }
 
+.emojiPickerContainer{
+  position: absolute;
+  bottom: 66px;
+  left: 10px;
+}
 /*
 display: inline-block;
 margin-left: 4px;
