@@ -85,9 +85,7 @@ class ChatWindow extends Component {
               </div>
             </div>
             <div id="drop-zone" className={"messages-panel messages-panel-" +this.state.dragover} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave}>
-              <div>
-                <PrMessagesList />
-              </div>
+              <PrMessagesList />
             </div>
             <PrAddMessage />
             <form onSubmit={this.handleFileSelect} encType="multipart/form-data">

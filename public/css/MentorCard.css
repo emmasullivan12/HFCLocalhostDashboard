@@ -1,12 +1,98 @@
+.mentor-matches-container{
+  width: 100%;
+  background-color: #f5f4ff;
+  padding: 0 1rem 0 1rem;
+}
+
+.exclamation-icon-container{
+  position: relative;
+  margin-bottom: 5px;
+  color: #7f7ebf;
+  font-size: 20px;
+}
+
+.choose-match-title-container{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.choose-match-title{
+  color: #7f7ebf;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.choose-match-detail{
+  color: #9f9ee7;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.cards-container{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recd-match{
+  color: #7f7ebf;
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: -15px;
+}
+
 .UserCardContainer {
   background-color: #ffffff;
-  border: 2px solid #f2f2f2;
+  border-radius: .5rem;
   display: inline-block;
   box-sizing: border-box;
+  box-shadow: 0 1px 40px 0 rgba(0,0,0,.08);
   height: 350px;
-  width: 300px;
+  width: 280px;
   margin: 15px;
   vertical-align: top;
+  text-align: left;
+}
+
+.user-card-header{
+  height: 30px;
+  background-color: #f2f2f2;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  margin-bottom: 35px;
+}
+
+/* CSS for top match only */
+.user-card-header-t{
+  background-color: #7f7ebf;
+}
+
+.match-time-left{
+  text-align: right;
+  padding-top: 35px;
+  padding-right: 10px;
+  font-size: 12px;
+  color: #22bd91;
+}
+
+.match-avatar-container{
+  text-align: center;
+  margin-top: -35px;
+}
+
+.match-thumb {
+  width:2.5rem;
+  height:2.5rem;
+  border-style:none;
+  background-size: cover;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 /* not yet used
@@ -19,18 +105,86 @@
 .UserCardName{
   text-align: center;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 16px;
   color: #3f3f3f;
 }
 
-.UserCardID{
+.UserCardRole{
   text-align: center;
   font-weight: 400;
-  color: #3c3cca;
+  font-size: 13px;
+  color: #3f3f3f;
 }
 
-.UserCardDetail{
+.match-see-profile{
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: #3c3cca;
+  margin-top: 18px;
+}
+
+.how-mtchd-container{
+  padding: 20px 40px 10px 40px;
+  height: 83px;
+}
+
+.match-reason-li{
+  display: flex;
+  flex-direction: row;
   font-size: 12px;
+}
+
+.tickIconContainer{
+  float: left;
+  margin-left: 0;
+  margin-right: 4px;
+  width: 15px;
+  height: 1.3125rem;
+  text-align: left;
+  color: #22bd91;
+  font-size: 13px;
+  opacity: 0.95;
+  left: 0;
+}
+
+.match-reason{
+  display: flex;
+  width: 100%;
+}
+
+.pr-match-msg-container{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  padding: 10px 40px 0 40px;
+}
+
+.msgIconContainer{
+  float: left;
+  margin-left: 0;
+  margin-right: 4px;
+  width: 15px;
+  height: 1.3125rem;
+  text-align: left;
+  color: #7f7ebf;
+  font-size: 13px;
+  opacity: 0.95;
+  left: 0;
+}
+
+.pr-match-msg-title{
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  color: #7f7ebf;
+}
+
+.pr-match-reason{
+    padding: 0 40px 10px 40px;
+    color: #7f7ebf;
+    margin-top: -3px;
+    font-size: 13px;
 }
 
 .ModalButtons{

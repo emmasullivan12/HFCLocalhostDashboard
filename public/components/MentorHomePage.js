@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
 import TypeformFullSignUp from './TypeformFullSignUp';
 import MentorMatches from './MentorMatches';
+import "../css/MentorHomePage.css";
 
 class MentorHomePage extends Component {
   render(){
     return (
-      <div>
-        <h1>This is where all the cool mentoring stuff happens ;)</h1>
-        <MentorMatches />
-        <TypeformFullSignUp />
-      </div>
+      <React.Fragment>
+        <div className="page-header">
+          <div className="page-detail-container">
+            <div className="page-title overflow-ellipsis">
+              Latest Advice
+            </div>
+            <div className="page-detail overflow-ellipsis">
+              Explore the latest from your Prospela network, based on your skills & interests
+            </div>
+          </div>
+        </div>
+        <div className="page-panel">
+          <MentorMatches />
+          <TypeformFullSignUp />
+        </div>
+      </React.Fragment>
     );
   }
 }

@@ -32,38 +32,75 @@ class MentorCardContent extends Component {
     return(
       <React.Fragment>
         <div className="UserCardContainer">
-          <h1 className="UserCardName" >
+          {mentor.pr_top_match==='t' && (
+            <div className="recd-match">
+              Top match for you
+              </div>
+          )}
+          <div className={"user-card-header user-card-header-" + mentor.pr_top_match}>
+            <div className="match-time-left">
+              7 days left
+            </div>
+            <div className="match-avatar-container">
+              <img
+                className="match-thumb img-circle"
+                src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                alt={mentor.mentorName}
+              />
+            </div>
+          </div>
+          <div className="UserCardName" >
             {mentor.mentorName}
-          </h1>
-          <p className="UserCardID">
-            <strong>ID: </strong>{mentor.id}
-          </p>
-          <ul className="UserCardDetail">
-            <li>
-              <strong> Skills: </strong>
-              <div>{mentor.skills}</div>
-            </li>
-            <li>
-              <strong> Interests: </strong>
-              <div>{mentor.interests}</div>
-            </li>
-            <li>
-              <strong> Role: </strong>
-              <div>{mentor.role}</div>
-            </li>
-            <li>
-              <strong> Company: </strong>
-              <div>{mentor.company}</div>
-            </li>
-            <li>
-              <strong> Learning: </strong>
-              <div>{mentor.learning}</div>
-            </li>
-            <li>
-              <strong> Reasons we matched you: </strong>
-              <div>{mentor.prospela_match_comments}</div>
-            </li>
-          </ul>
+          </div>
+          <div className="UserCardRole" >
+            {mentor.role} &#64; {mentor.company}
+          </div>
+          <div className="match-see-profile" >
+            See full profile
+          </div>
+          <div className="how-mtchd-container">
+            {(mentor.role_vs_role_desired==='t' || mentor.industry_pref==='t') && (
+              <div className="match-reason-li">
+                <div className="tickIconContainer">
+                  <i className="fas fa-check" />
+                </div>
+                <div className="match-reason">
+                  In the role / industry you want
+                </div>
+              </div>
+            )}
+            {mentor.hobbies_and_interests==='t' && (
+              <div className="match-reason-li">
+                <div className="tickIconContainer">
+                  <i className="fas fa-check" />
+                </div>
+                <div className="match-reason">
+                  Similar hobbies and interests
+                </div>
+              </div>
+            )}
+            {(mentor.skills_want_to_develop==='t' || mentor.latest_actions_on_student_todo_list==='t') && (
+              <div className="match-reason-li">
+                <div className="tickIconContainer">
+                  <i className="fas fa-check" />
+                </div>
+                <div className="match-reason">
+                  Has skills you want to develop
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="pr-match-msg-container">
+            <div className="msgIconContainer">
+              <i className="far fa-comment-dots" />
+            </div>
+            <div className="pr-match-msg-title">
+              Message from Prospela:
+            </div>
+          </div>
+          <div className="pr-match-reason">
+            {mentor.prospela_match_comments}
+          </div>
           <div className="ModalButtons">
             <Modal {...PassModalProps}>
               <PassMentorContent />
@@ -93,9 +130,9 @@ class MentorCard extends Component {
     });
 
     return (
-      <div>
+      <React.Fragment>
         {cards}
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -130,14 +167,26 @@ class MentorCardMatches extends Component {
     // const className = this.props.PassedOnMentor ? 'UserCardContainer-passed' : 'UserCardContainer';
     return (
       // <div className={className}>
-      <React.Fragment>
-        <div>
+      <div className="mentor-matches-container">
+        <div className="choose-match-title-container">
+          <div className="exclamation-icon-container">
+            <i className="fas fa-exclamation-circle" />
+          </div>
+          <div className="choose-match-title">
+            Choose your real employee match
+          </div>
+          <div className="choose-match-detail">
+            Build your network & get presonalised insider insights for 3 months (& beyond!)
+          </div>
+        </div>
+        <div className="cards-container">
           <MentorCard mentors={DUMMY_MENTOR_DATA} />
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
+
 
 // Dummy mentor data (this will eventually come from Postgres)
 const DUMMY_MENTOR_DATA = [
@@ -149,17 +198,29 @@ const DUMMY_MENTOR_DATA = [
     role: "Prime Minister",
     company: "UK Government",
     learning: "Employee retention, negotiating skills e.g. BATNA",
+    pr_top_match: 't',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: 't',
+    skills_want_to_develop: 't',
+    industry_pref: 't',
+    latest_actions_on_student_todo_list: 't',
     prospela_match_comments: "Hi soandso, Theresa is a great match for you because of XYZ."
   },
   {
-    mentorName: "Boris Johnson",
+    mentorName: "Sally Sausage",
     id: "34567",
     skills: "Making a fool of myself, speaking with a plum in my mouth",
     interests: "Undermining people, Being the class clown, becoming PM",
-    role: "MP",
-    company: "UK Government",
+    role: "Finance Marketing Manager",
+    company: "Pladis",
     learning: "I'm not cut out for the job",
-        prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ."
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: '',
+    skills_want_to_develop: 't',
+    industry_pref: '',
+    latest_actions_on_student_todo_list: 't',
+    prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to emphasize how good a match they really are especially because you said you loved ABC!!"
   },
   {
     mentorName: "Jacob Rees-Mogg",
@@ -169,7 +230,13 @@ const DUMMY_MENTOR_DATA = [
     role: "MP & Head of ERG",
     company: "UK Government",
     learning: "Mysogyny is bad, teamwork is key",
-        prospela_match_comments: "Hi soandso, Jacob is a great match for you because of XYZ."
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: 't',
+    skills_want_to_develop: '',
+    industry_pref: 't',
+    latest_actions_on_student_todo_list: '',
+    prospela_match_comments: "Hi soandso, Jacob is a great match for you because of XYZ."
   }
 ]
 

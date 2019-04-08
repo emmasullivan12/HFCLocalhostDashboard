@@ -60,15 +60,13 @@ class PrMessagesList extends Component {
 
     return (
       <React.Fragment>
-        <div>
-          <div className="messages-container">
-          {messages.map(message => (
-            <PrMessage
-              message={message}
-              key={message.id}
-            />
-          ))}
-          </div>
+        <div className="messages-container">
+        {messages.map(message => (
+          <PrMessage
+            message={message}
+            key={message.id}
+          />
+        ))}
         </div>
       </React.Fragment>
     );

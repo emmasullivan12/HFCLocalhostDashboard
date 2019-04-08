@@ -1,0 +1,54 @@
+.page-header {
+  display:flex;
+  flex-direction: row;
+  height: 53px;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  align-items:center;
+  -webkit-box-align:center;
+  border-bottom: 1px solid #dae1e7;
+  box-sizing:inherit;
+  background: #f2f2f2;
+}
+
+.overflow-ellipsis{
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.page-detail-container{
+  margin-right: 10px;
+}
+
+.page-title {
+  color:#3f3f3f;
+  font-weight:600;
+  margin:0;
+  display:block;
+  font-size:1rem;
+}
+
+.page-detail {
+  color:#3f3f3f;
+  font-weight:400;
+  margin:0;
+  display:block;
+  font-size:.75rem;
+}
+
+.page-panel{
+  overflow-y:auto;
+  position:relative;
+  flex:1;
+  -webkit-box-flex:1;
+  box-sizing: inherit;
+  display:flex;
+  flex-direction:column;
+  outline:0;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+}

@@ -17,13 +17,9 @@ class MentorMatches extends Component {
         );
       case 2:
         return (
-          <div>
-            <h3>Your Mentor Matches</h3>
-            <p>Click to launch chat</p>
-            <div>
-              <MentorCardMatches />
-            </div>
-          </div>
+          <React.Fragment>
+            <MentorCardMatches />
+          </React.Fragment>
         );
       case 3:
         return <div> We will get back to you shortly on another mentor we think you might like :) </div>

@@ -76,7 +76,7 @@ class PrAddMessage extends Component {
                 </div>
               )}
               <div className="input-flexContainer">
-                <form>
+                <form className="input-box-container">
                   <input
                     className="input-box"
                     placeholder="Type message..."
