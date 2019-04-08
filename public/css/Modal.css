@@ -7,6 +7,7 @@
   cursor: pointer;
   outline: none;
   transition: background .15s ease-out;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
 .ModalOpenBtn:hover {
@@ -19,9 +20,27 @@
 }
 
 .ModalOpenBtn-RequestChat {
-  color: #397a4e;
-  background: #a4e8ba;
-  border: 2px solid #82ba94;
+  color: #58d2bb;
+  font-weight: 600;
+  background: #d8f4ef;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  height: 40px;
+  min-width: 180px;
+  padding: 0;
+}
+
+.ModalOpenBtn-RequestChat:hover {
+  color: #fff;
+  background: #58d2bb;
+}
+
+.ModalOpenBtn-RequestChat:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 .ModalOpenBtn-FullSignUp {
@@ -33,12 +52,20 @@
 .ModalOpenBtn-PassBtn {
   background-color: #ffffff;
   border: none;
-  color: #3f3f3f;
+  color: #c7c7c7;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 11px;
-  margin: 4px 2px;
+  width: 100px;
+}
+
+.ModalOpenBtn-PassBtn:hover {
+  background: none;
+}
+
+.ModalOpenBtn-PassBtn:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 .ModalOpenBtn-attachmentContainer {

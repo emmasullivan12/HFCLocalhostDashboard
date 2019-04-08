@@ -204,7 +204,7 @@ const DUMMY_MENTOR_DATA = [
     skills_want_to_develop: 't',
     industry_pref: 't',
     latest_actions_on_student_todo_list: 't',
-    prospela_match_comments: "Hi soandso, Theresa is a great match for you because of XYZ."
+    prospela_match_comments: "Hi soandso, Theresa is a great match for you because of XYZ. They've also had experience working with and give presentations regularly to senior clients!"
   },
   {
     mentorName: "Sally Sausage",
@@ -236,7 +236,7 @@ const DUMMY_MENTOR_DATA = [
     skills_want_to_develop: '',
     industry_pref: 't',
     latest_actions_on_student_todo_list: '',
-    prospela_match_comments: "Hi soandso, Jacob is a great match for you because of XYZ."
+    prospela_match_comments: "Hi soandso, Jacob is a great match for you because of XYZ. You mentioned you wanted to learn 3D Animation, and he has a lot of recent experience in it."
   }
 ]
 

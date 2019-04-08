@@ -19,3 +19,27 @@
   transform: scale(1.25);
   color: #8e8e8e;
 }
+
+.RequestChatBtnContainer{
+  height: 30px;
+  text-decoration: none;
+  padding: 0.5rem 1.7rem 0.5rem 1.7rem;
+}
+
+.RequestChatIcon{
+  float: left;
+  margin-left: 0;
+  margin-right: 4px;
+  width: 15px;
+  height: 1.3125rem;
+  text-align: left;
+  color: #00ffb7;
+  font-size: 13px;
+  opacity: 0.95;
+  left: 0;
+}
+
+.RequestChatBtnTxt{
+  text-decoration: none;
+  font-size: 14px;
+}
