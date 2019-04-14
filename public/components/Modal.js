@@ -70,7 +70,7 @@ class Modal extends React.Component {
 
   onClose() {
     this.setState({ isOpen: false });
-    this.openButtonNode.focus();
+    this.openButtonNode.focus()
     this.toggleScrollLock();
   }
 

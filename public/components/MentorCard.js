@@ -176,11 +176,11 @@ class MentorCardMatches extends Component {
             Choose your real employee match
           </div>
           <div className="choose-match-detail">
-            Build your network & get presonalised insider insights for 3 months (& beyond!)
+            Build your network & get personalised insider insights for 3 months (& beyond!)
           </div>
         </div>
         <div className="cards-container">
-          <MentorCard mentors={DUMMY_MENTOR_DATA} />
+            <MentorCard mentors={DUMMY_MENTOR_DATA} />
         </div>
       </div>
     );
@@ -221,8 +221,10 @@ const DUMMY_MENTOR_DATA = [
     industry_pref: '',
     latest_actions_on_student_todo_list: 't',
     prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to emphasize how good a match they really are especially because you said you loved ABC!!"
-  },
-  {
+  }
+]
+
+/*  {
     mentorName: "Jacob Rees-Mogg",
     id: "54321",
     skills: "Debating, Mysogynism",
@@ -238,7 +240,7 @@ const DUMMY_MENTOR_DATA = [
     latest_actions_on_student_todo_list: '',
     prospela_match_comments: "Hi soandso, Jacob is a great match for you because of XYZ. You mentioned you wanted to learn 3D Animation, and he has a lot of recent experience in it."
   }
-]
+  */
 
 export {
   MentorCardWaiting,

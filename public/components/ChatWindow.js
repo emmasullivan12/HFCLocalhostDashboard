@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import PrMessagesList from "./PrMessagesList";
 import PrAddMessage from "./PrAddMessage";
+import Modal from "./Modal";
+import FileUploadContent from "./FileUploadContent";
 import "../css/ChatWindow.css";
 
 
@@ -23,6 +25,13 @@ const FlexContainerContent = ({
   );
 }
 
+/* const FileDropModalProps = {
+  ariaLabel: 'Uploading file',
+  title: 'Upload a file',
+  usedFor: 'attachmentDropContainer',
+  dropOpen: true,
+}
+*/
 //To do
 // This is a container for all messages in the chat
 class ChatWindow extends Component {
@@ -31,11 +40,13 @@ class ChatWindow extends Component {
     this.state = {
       isFlexContainerOpen: false,
       dragover: '',
+      /* dragFiles: '', */
     }
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
     this.handleDragEnter = this.handleDragEnter.bind(this);
     this.handleDragOver = this.handleDragOver.bind(this);
     this.handleDragLeave = this.handleDragLeave.bind(this);
+    /* this.handleFileDrop = this.handleFileDrop.bind(this);*/
   }
 
   // FILE DROP ACTIVITY
@@ -59,6 +70,12 @@ class ChatWindow extends Component {
     this.setState({dragover: 'dragover'});
   }
 
+  /* handleFileDrop(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    this.setState({dragover: '', dragFiles: e.dataTransfer.files});
+  } */
+
   toggleFlexContainer() {
     const currentState = this.state.isFlexContainerOpen;
     this.setState({ isFlexContainerOpen: !currentState });
@@ -67,6 +84,13 @@ class ChatWindow extends Component {
   render() {
   const {isFlexContainerOpen} = this.state;
   const {flexContent} = this.props;
+
+  /*        {dragFiles != '' && (
+              <Modal {...FileDropModalProps}>
+                <FileUploadContent selectedFiles={dragFiles} />
+              </Modal>
+            )}
+  */
 
     return (
       <React.Fragment>
@@ -84,7 +108,7 @@ class ChatWindow extends Component {
                 </button>
               </div>
             </div>
-            <div id="drop-zone" className={"messages-panel messages-panel-" +this.state.dragover} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave}>
+            <div id="drop-zone" className={"messages-panel messages-panel-" +this.state.dragover} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
               <PrMessagesList />
             </div>
             <PrAddMessage />
