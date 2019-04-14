@@ -34,7 +34,6 @@ const ModalContent = ({
         <div className="modal-header">
           <div className="modal-title">
             {title}
-            <span className="request-mentor-name">{mentorName}</span>
           </div>
           <button type="button" className="modal-close" aria-labelledby="Close Modal" onClick={onClose} ref={buttonRef}>
             <span id="close-modal" className="u-hide-visually">Close</span>

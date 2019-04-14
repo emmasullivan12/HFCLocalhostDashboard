@@ -14,9 +14,6 @@ const FlexContainerContent = ({
   return (
     <div className="flex-container-overlay">
       <div className="flex-container-container">
-        <div className="flex-container-header">
-          Title goes here
-        </div>
         <div className="flex-container-content">
           {content}
         </div>
@@ -27,7 +24,6 @@ const FlexContainerContent = ({
 
 /* const FileDropModalProps = {
   ariaLabel: 'Uploading file',
-  title: 'Upload a file',
   usedFor: 'attachmentDropContainer',
   dropOpen: true,
 }

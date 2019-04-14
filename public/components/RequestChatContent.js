@@ -36,30 +36,45 @@ class RequestChatContent extends Component {
     const isEnabled = this.canBeSubmitted();
     return (
       <React.Fragment>
+        <div className="modal-title">
+          Send a chat request to <span className="request-mentor-name">{this.props.mentorName}</span>
+        </div>
         <form>
           <input
             type="text"
             className="requestChatMessage-Form"
-            placeholder="Type your message"
+            placeholder="Type your message..."
             value={this.state.requestChatMessage}
             onChange={this.handleMessageChange}
           />
-          <button type="button" disabled={!isEnabled} className="RequestChat-btn" onSubmit={this.handleSubmit}>
-            Request
-          </button>
-        </form>
-        <div>
-          <div className="needIdeas-Title">
-            Need ideas for what to say?
+          <div className="need-ideas-container">
+            <div className="ideas-icon-container">
+              <i className="far fa-lightbulb" />
+            </div>
+            <div className="ideas-Title">
+              Need ideas for what to say?
+            </div>
+            <ul className="ideas-list">
+              <li className="ideas-list-item">
+                <div className="wave-emoji-icon" />
+                <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re studying, your hobbies)</div>
+              </li>
+              <li className="ideas-list-item">
+                <div className="heart-emoji-icon" />
+                <div className="idea-item-text"><strong>Your career preferences</strong> (what role, industries interest you)</div>
+              </li>
+              <li className="ideas-list-item">
+                <div className="sunglasses-emoji-icon" />
+                <div className="idea-item-text"><strong>Why this mentor</strong> (what would you like them to help you with)</div>
+              </li>
+            </ul>
           </div>
-          <div><NavLink to="/teams">Link to Teams</NavLink></div>
-          <ul>
-            <li><span className="bold">Introduce yourself</span> (your name, what you’re studying, your hobbies)</li>
-            <li><span className="bold">Your career preferences</span> (what role, industries interest you)</li>
-            <li><span className="bold">Why this mentor</span> (what would you like them to help you with)sss</li>
-          </ul>
-        </div>
-
+          <div className="request-btn-container">
+            <button type="button" disabled={!isEnabled} className="RequestChat-btn" onSubmit={this.handleSubmit}>
+              Request
+            </button>
+          </div>
+        </form>
       </React.Fragment>
     );
   }

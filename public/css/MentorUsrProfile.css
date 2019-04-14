@@ -1,0 +1,16 @@
+.mtchd-usr-container{}
+.mtch-usr-name{}
+
+.mtch-avatar-container{
+  text-align: center;
+  margin-top: 35px;
+}
+
+.mtch-thumb{
+  width:2.5rem;
+  height:2.5rem;
+  border-style:none;
+  background-size: cover;
+}
+
+.mtch-role-empl{}

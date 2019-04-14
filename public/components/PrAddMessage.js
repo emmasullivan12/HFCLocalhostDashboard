@@ -9,7 +9,6 @@ import FileUploadContent from './FileUploadContent.js';
 // This includes props and title to be passed to FileUploadModal
 const FileUploadModalProps = {
   ariaLabel: 'Uploading file',
-  title: 'Upload a file',
   usedFor: 'attachmentContainer'
 }
 

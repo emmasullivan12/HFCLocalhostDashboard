@@ -34,6 +34,9 @@ class PassMenteeContent extends Component {
 //    const { onSubmit } = this.props;
     return (
       <React.Fragment>
+        <div className="modal-title">
+          Help us match you better: Why do you want to pass?
+        </div>
         <form>
           <div>Their career desires are not relevant to my role</div>
           <input

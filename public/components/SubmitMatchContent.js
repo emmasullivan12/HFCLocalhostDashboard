@@ -40,6 +40,9 @@ class SubmitMatchContent extends Component {
     const isEnabled = this.canBeSubmitted();
     return (
       <React.Fragment>
+        <div className="modal-title">
+          Submit user match info
+        </div>
         <form>
           <input
             type="text"

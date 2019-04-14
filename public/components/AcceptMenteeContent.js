@@ -25,6 +25,9 @@ class AcceptMenteeContent extends Component {
     const isEnabled = this.canBeSubmitted();
     return (
       <React.Fragment>
+        <div className="modal-title">
+          Accept chat request
+        </div>
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"

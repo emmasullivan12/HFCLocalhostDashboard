@@ -10,8 +10,6 @@ import PassMentorContent from './PassMentorContent.js';
 //This includes props and title to be passed to RequestChatModal
 const RequestChatModalProps = {
   ariaLabel: 'Popup to request chat with matched E-Mentor',
-  mentorName: 'David',
-  title: 'Send a chat request to ',
   triggerText: 'Start Chatting',
   usedFor: 'RequestChat'
 }
@@ -19,7 +17,6 @@ const RequestChatModalProps = {
 // This includes props and title to be passed to PassMentorModal
 const PassModalProps = {
   ariaLabel: 'Pass on matched E-Mentor',
-  title: 'Why did you pass? Help us match you better',
   triggerText: 'Pass',
   usedFor: 'PassBtn'
 }
@@ -106,7 +103,7 @@ class MentorCardContent extends Component {
               <PassMentorContent />
             </Modal>
             <Modal {...RequestChatModalProps}>
-              <RequestChatContent />
+              <RequestChatContent mentorName={mentor.mentorName}/>
             </Modal>
           </div>
         </div>

@@ -19,6 +19,9 @@ class FileUploadContent extends Component {
     const { fileUploadDescription } = this.state;
     return (
       <React.Fragment>
+        <div className="modal-title">
+          Upload a file
+        </div>
         <form>
           <input
             type="text"

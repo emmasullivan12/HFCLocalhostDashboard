@@ -22,7 +22,8 @@
 .ModalOpenBtn-RequestChat {
   color: #58d2bb;
   font-weight: 600;
-  background: #d8f4ef;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  background: #d8f4efab;
   border-bottom-right-radius: .5rem;
   border-bottom-left-radius: .5rem;
   border-top-left-radius: 0;
@@ -47,20 +48,24 @@
   color: #e85151;
   background: #efb3b3;
   border: 2px solid #c48585;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
 .ModalOpenBtn-PassBtn {
-  background-color: #ffffff;
+  background: none;
   border: none;
   color: #c7c7c7;
   text-align: center;
   text-decoration: none;
   font-size: 11px;
   width: 100px;
+  height: 40px;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
 .ModalOpenBtn-PassBtn:hover {
   background: none;
+  color: #3f3f3fb3;
 }
 
 .ModalOpenBtn-PassBtn:focus {
@@ -88,6 +93,7 @@
   outline: none!important;
   box-shadow: none!important;
   display: inline-block;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
 .ModalOpenBtn-attachmentContainer:hover{
@@ -138,15 +144,7 @@
   font-weight: 900;
   margin: 0;
   width: 100%;
-}
-
-.request-mentor-name{
-  font-size: 20px;
-  line-height: 1.36363636;
-  color: #8C8BE1;
-  font-weight: normal;
-  margin: 0;
-  width: 100%;
+  text-align: center;
 }
 
 .modal-close {

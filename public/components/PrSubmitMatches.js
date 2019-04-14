@@ -6,7 +6,6 @@ import SubmitMatchContent from './SubmitMatchContent.js';
 //This includes props and title to be passed to RequestChatModal
 const SubmitMatchModalProps = {
   ariaLabel: 'Popup for Prospela to submit mentor matches',
-  title: 'Submit user match info',
   triggerText: 'Submit new match',
   usedFor: 'SubmitMatch'
 }

@@ -9,14 +9,12 @@ import "../css/PrMessage.css";
 
 const AcceptMenteeModalProps = {
   ariaLabel: 'Popup to accept chat with matched Mentee',
-  title: 'Accept chat request',
   triggerText: 'Start Chatting',
   usedFor: 'AcceptChat'
 }
 
 const PassMenteeModalProps = {
   ariaLabel: 'Pass on Mentee',
-  title: 'Why did you pass? Help us match you better',
   triggerText: 'Pass on Mentee',
   usedFor: 'PassBtn'
 }

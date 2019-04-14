@@ -44,40 +44,53 @@ class PassMentorContent extends Component {
     const isEnabled = this.canBeSubmitted();
     return (
       <React.Fragment>
-        <form>
-          <div>Not the role I would like to explore</div>
-          <input
-            type="radio"
-            name="Role"
-            className="SubmitMatch-input"
-            value="t"
-            onClick={this.handleMessageChange}
-          />
-          <div>Not the industry I would like to explore</div>
-          <input
-            type="radio"
-            name="Industry"
-            className="SubmitMatch-input"
-            value="t"
-            onClick={this.handleMessageChange}
-          />
-          <div>We dont have enough personal interests that relate</div>
-          <input
-            type="radio"
-            name="Interests"
-            className="SubmitMatch-input"
-            value="t"
-            onClick={this.handleMessageChange}
-          />
-          <div>I dont think they know enough about the skills I want to develop</div>
-          <input
-            type="radio"
-            name="Skills"
-            className="SubmitMatch-input"
-            value="t"
-            onClick={this.handleMessageChange}
-          />
-          <div>Any other comments to note?</div>
+        <div className="modal-title">
+          Help us match you better: Why do you want to pass?
+        </div>
+        <form className="pass-form">
+          <label className="checkbox-container">Doesn&apos;t have a <strong>role</strong> I&apos;d like to explore
+            <input
+              type="checkbox"
+              name="Role"
+              className="SubmitMatch-input"
+              value="t"
+              onClick={this.handleMessageChange}
+            />
+            <span className="checkmark" />
+          </label>
+          <label className="checkbox-container">Isn&apos;t in an <strong>industry</strong> I&apos;m interested in
+            <input
+              type="checkbox"
+              name="Industry"
+              className="SubmitMatch-input"
+              value="t"
+              onClick={this.handleMessageChange}
+            />
+            <span className="checkmark" />
+          </label>
+          <label className="checkbox-container">Limited similar <strong>personal interests</strong> to me
+            <input
+              type="checkbox"
+              name="Interests"
+              className="SubmitMatch-input"
+              value="t"
+              onClick={this.handleMessageChange}
+            />
+            <span className="checkmark" />
+          </label>
+          <label className="checkbox-container">Doesn&apos;t have any of the <strong>skills</strong> I want to develop
+            <input
+              type="checkbox"
+              name="Skills"
+              className="SubmitMatch-input"
+              value="t"
+              onClick={this.handleMessageChange}
+            />
+            <span className="checkmark" />
+          </label>
+          <div className="modal-textbox-title">
+            Please comment:
+          </div>
           <input
             type="text"
             name="PassReasonMessage"
@@ -86,9 +99,11 @@ class PassMentorContent extends Component {
             value={this.state.PassReasonMessage}
             onChange={this.handleMessageChange}
           />
-          <button type="submit" disabled={!isEnabled} className="PassMentorSubmit-btn" onClick={this.updateClassname}>
-            Pass
-          </button>
+          <div className="pass-btn-container">
+            <button type="submit" disabled={!isEnabled} className="PassMentorSubmit-btn" onClick={this.updateClassname}>
+              Pass
+            </button>
+          </div>
         </form>
       </React.Fragment>
     );
