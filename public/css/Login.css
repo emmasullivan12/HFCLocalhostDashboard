@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: #fff;
+  font-size: 100%;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  display: block;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1rem;
+  height: 100%;
+  background: #fff;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  user-select: none;
+}
+
+h1{
+  color: #351c75;
+  font size: 2.2em;
+  font-weight: 800;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  margin: 0 0 0.7rem;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+a {
+  color: #8f8fe5;
+}
+
+/* unvisited link */
+a:link {
+  color: #8f8fe5;
+}
+
+/* visited link */
+a:visited {
+  color: #8f8fe5;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7e7ec9;
+}
+
+/* selected link */
+a:active {
+  color: #8f8fe5;
+}
+
+.alignLeft{
+  float:left;
+}
+
+.alignRight{
+  float: right;
+}
+
+.button-unstyled {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: inherit;
+  overflow: inherit;
+  padding: 0;
+  text-align: initial;
+  vertical-align: initial;
+  cursor: pointer;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+/* For Extra small devices (phones, 600px and down): */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 759px and up) */
+@media only screen and (min-width: 759px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...} */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  height: 100%;
+}
+
+@media screen and (max-width: 759px) {
+  .login-pic {
+    display: none;
+  }
+}
+
+.prLogoArea{
+  color: #fff;
+  position: relative;
+  min-height: 61px;
+}
+
+.prLogoContainer{
+  height: 30px;
+  width: 69px;
+  flex-shrink: 0;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+.prLogoImg{
+  display: block;
+  height: 100%!important;
+  width: 100%!important;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+
+.centerContainer{
+  text-align: center;
+  height: 100%;
+}
+
+.loginContainer{
+  padding: 60px 85px 0;
+  max-width: 518px;
+  display: inline-block;
+}
+
+.header-descriptor{
+  color: #595959;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-family: Lato;
+}
+
+.descriptor{
+  color: #595959;
+  font-size: 0.85rem;
+  text-align: left;
+  font-family: Lato;
+  margin-bottom: 0.2rem;
+}
+
+.form-control{
+  width: 100%;
+  font-size: 1.15rem;
+  font-family: inherit;
+  line-height: normal;
+  padding: 10px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: .25rem;
+  -webkit-appearance: none;
+  outline: 0;
+  color: #351c75;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 1.5rem;
+  transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
+  box-shadow: none;
+  height: auto;
+}
+
+.form-control:hover{
+  border-color: #c6c6c6;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 1.2px #4e4ed6;
+  border: 3px solid rgba(122,80,199,.1);
+  padding: 8px 13px;
+}
+
+.btn-general{
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  background: #6fc3b3;
+  border-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 45px;
+  min-width: 180px;
+  text-align: center;
+  padding: 0;
+  margin 0.8rem 0;
+  transition: background .15s ease-out;
+}
+
+.btn-general:hover{
+  box-shadow: 0 1px 4px rgba(29,28,29,.3);
+}
+
+.btn-general:active{
+  background: #60a89a;
+  box-shadow: none;
+}
+
+.btn-general:disabled{
+  background: #d9d9d9;
+  box-shadow: none;
+  color: #3f3f3f;
+  cursor: initial;
+}
+
+.legalSection{
+  margin-top: 1rem;
+  color: #cacaca;
+  font-size: 0.7rem;
+}
+
+.legal-href{
+  color: #cacaca!important;
+}
+
+.login-pic{
+  height: 100%;
+}
+
+.login-picContainer{
+  max-height: 200px;
+  max-width: 360px;
+  flex-shrink: 0;
+  float: right;
+  margin-right: -10px;
+  position: relative;
+  transform: translatey(10%);
+}
+
+.prPlatformImg{
+  display: block;
+  height: 100%!important;
+  width: 100%!important;
+  max-width: 100%;
+  border: 0;
+}
+
+.login-error-msg{
+  margin-top: .8rem;
+  color: red;
+  font-size: 0.85rem;
+  text-align: left;
+}
