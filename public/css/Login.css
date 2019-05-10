@@ -66,6 +66,10 @@ a:active {
   float: right;
 }
 
+.bold{
+  font-weight: 600;
+}
+
 .button-unstyled {
   background: none;
   border: 0;
@@ -88,6 +92,10 @@ a:active {
 /* For Extra small devices (phones, 600px and down): */
 [class*="col-"] {
   width: 100%;
+}
+
+input[type=text]:disabled{
+  background: #dddddd;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -192,6 +200,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
   margin-bottom: 0.2rem;
 }
 
+.descriptor.text-disabled{
+  color: #cfcccc;
+}
 .form-control{
   width: 100%;
   font-size: 1.15rem;
@@ -256,12 +267,16 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .legalSection{
   margin-top: 1rem;
-  color: #cacaca;
+  color: #cacaca!important;
   font-size: 0.7rem;
 }
 
 .legal-href{
   color: #cacaca!important;
+}
+
+.error-href{
+  color: red!important;
 }
 
 .login-pic{
