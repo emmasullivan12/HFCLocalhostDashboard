@@ -234,7 +234,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .btn-general{
   width: 100%;
-  color: #fff;
+  color: #fff!important;
   font-weight: 600;
   background: #6fc3b3;
   border-radius: .5rem;
@@ -245,8 +245,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
   min-width: 180px;
   text-align: center;
   padding: 0;
-  margin 0.8rem 0;
+  margin: 0.8rem 0;
   transition: background .15s ease-out;
+  text-decoration: none;
 }
 
 .btn-general:hover{

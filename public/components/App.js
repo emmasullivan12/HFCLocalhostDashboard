@@ -15,6 +15,8 @@ import { usersFetchData } from "../actions/Users";*/
 import ChatMenu from "./ChatMenu";
 import LatestAdvice from "./LatestAdvice";
 import LgdInUsrProfile from "./LgdInUsrProfile";
+import LoginContent from "./LoginContent.js";
+import LoginSUTemplate from "./LoginSUTemplate";
 import MainMenu from "./MainMenu";
 import MentorHomePage from './MentorHomePage.js';
 import MenuModal from "./MenuModal";
@@ -33,6 +35,9 @@ const MenuModalContent = (
   <UserMenuContent />
 )
 
+const SUContent = ('mentor or mentee?')
+const MenteeSUContent = ('mentee SU')
+const MentorSUContent = ('mentor SU')
 
 class Dashboard extends Component{
   render(){
@@ -92,19 +97,49 @@ class App extends Component{
   } */
   render() {
     const userRole = 'mentor' /*this.props.users.role*/;
-    return (
-      <div className="App">
-        {{
-          ['mentee']: <MenteeSteps userRole={userRole}/>,
-          ['mentor']: <MentorSteps userRole={userRole}/>,
-        }[userRole]}
-      </div>
-    );
+    const loginServer = true;
+    const loginSU = 'L';
+    switch (loginServer) {
+      case true:
+        return (
+          <div className="App">
+            {{
+              ['L']: <Login/>,
+              ['SU']: <SignUp/>,
+            }[loginSU]}
+          </div>
+        );
+      case false:
+        return (
+          <div className="App">
+            {{
+              ['mentee']: <MenteeSteps userRole={userRole}/>,
+              ['mentor']: <MentorSteps userRole={userRole}/>,
+            }[userRole]}
+          </div>
+        );
+    }
   }
 }
 
+function SignUp() {
+  return (
+    <LoginSUTemplate>
+      <SUContent />
+    </LoginSUTemplate>
+  );
+}
+
+function Login() {
+  return (
+    <LoginSUTemplate>
+      <LoginContent />
+    </LoginSUTemplate>
+  );
+}
+
 function MenteeSteps({userRole}) {
-  const step = 3;
+  const step = 1;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
@@ -131,7 +166,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 3;
+  const step = 1;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
