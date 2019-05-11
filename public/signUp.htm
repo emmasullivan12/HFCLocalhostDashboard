@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/Login.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <title>Prospela &#124; Sign Up for your Prospela Account</title>
+</head>
+
+<body>
+  <div class="prLogoArea row">
+    <div class="prLogoContainer col-12">
+      <img class="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-7 col-s-12 centerContainer">
+      <div class="loginContainer">
+        <div>
+          <h1>Get Started</h1>
+          <div class="header-descriptor">or <a href="https://test.prospela.com/login">login to your Prospela account</a></div>
+        </div>
+        <form method="POST" action="/signup">
+          <div className="buttonContainer">
+            <button type="button" id="mentee-btn" class="btn-left button-unstyled">Mentee</button>
+            <button type="button" id="mentor-btn" class="btn-right button-unstyled">Mentor</button>
+          </div>
+          <div id="menteeForm">
+            <div class="inlineForm">
+              <div class="form-group inlineLeft">
+                <div class="descriptor">First Name</div>
+                <input type="text" name="email" id="email" autofocus class="form-control">
+              </div>
+              <div class="form-group inlineRight">
+                <div class="descriptor">Last Name</div>
+                <input type="text" name="email" id="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <div class="alignLeft descriptor">Work Email</div>
+                <div><a class="alignRight descriptor no-href">Why do I need to provide this?</a></div>
+              </div>
+              <input type="text" name="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="descriptor">Password</div>
+              <input type="password" name="password" id="password" class="form-control">
+            </div>
+            <div class="eqWrap">
+              <div class="reqs" id="numReq"><span class="crl" id="numReq-crl">&#9899;</span>One number</div>
+              <div class="reqs" id="upCharReq"><span class="crl" id="upCharReq-crl">&#9899;</span>One uppercase character</div>
+              <div class="reqs" id="specCharReq"><span class="crl" id="specCharReq-crl">&#9899;</span>One special character</div>
+              <div class="reqs" id="noCharReq"><span class="crl" id="noCharReq-crl">&#9899;</span>8 characters minimum</div>
+            </div>
+            <div class="descriptor"><span class="crl" id="numReq-crl">&#9899;</span>I have read and agree to Prospela's <a href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms & Safeguarding Policy</a> and confirm that I am over 13 years of age</div>
+            <button type="submit" id="login-btn" class="btn-general button-unstyled">Get Started</button>
+          </div>
+          <div id="mentorForm">
+            <div>Mentor Form</div>
+          </div>
+        </form>
+        <div class="login-error-msg">The email and/or password entered were not recognised. Please try again</div>
+        <div class="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
+      </div>
+    </div>
+    <div class="col-5 login-pic">
+      <div class="login-picContainer">
+        <img class="prPlatformImg" alt="Prospela Platform Cartoon" src="https://prospela.com/wp-content/uploads/2019/05/Platform-picture.png" />
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="./signUp.js"></script>
+</body>
+
+</html>

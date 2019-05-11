@@ -9,7 +9,7 @@
   <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-  <title>Prospela Login</title>
+  <title>Prospela &#124; Login</title>
 </head>
 
 <body>
@@ -28,16 +28,16 @@
         <form method="POST" action="/login">
           <div class="form-group">
             <div class="descriptor">Email</div>
-            <input type="text" name="email" class="form-control">
+            <input type="text" name="email" id="email" autofocus class="form-control">
           </div>
           <div class="form-group">
             <div>
               <div class="alignLeft descriptor">Password</div>
               <div><a class="alignRight descriptor" href="https://test.prospela.com/login/forgotpassword">Forgot Password?</a></div>
             </div>
-            <input type="password" name="password" class="form-control">
+            <input type="password" name="password" id="password" class="form-control">
           </div>
-          <button type="submit" class="btn-general button-unstyled">Log in</button>
+          <button type="submit" id="login-btn" class="btn-general button-unstyled">Log in</button>
         </form>
         <div class="login-error-msg">The email and/or password entered were not recognised. Please try again</div>
         <div class="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
@@ -49,6 +49,7 @@
       </div>
     </div>
   </div>
+<script type="text/javascript" src="./login.js"></script>
 </body>
 
 </html>

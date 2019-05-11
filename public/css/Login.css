@@ -200,9 +200,19 @@ Extra large devices (large laptops and desktops, 1200px and up)
   margin-bottom: 0.2rem;
 }
 
+.descriptor.no-href,
 .descriptor.text-disabled{
   color: #cfcccc;
 }
+
+.descriptor.no-href:hover{
+  color: #a3a3a3;
+}
+
+.inlineForm{
+  display: flex;
+}
+
 .form-control{
   width: 100%;
   font-size: 1.15rem;
@@ -222,6 +232,14 @@ Extra large devices (large laptops and desktops, 1200px and up)
   height: auto;
 }
 
+.form-group.inlineLeft{
+  margin-right: 7px;
+}
+
+.form-group.inlineRight{
+  margin-left: 7px;
+}
+
 .form-control:hover{
   border-color: #c6c6c6;
 }
@@ -230,6 +248,24 @@ Extra large devices (large laptops and desktops, 1200px and up)
   box-shadow: 0 0 0 1.2px #4e4ed6;
   border: 3px solid rgba(122,80,199,.1);
   padding: 8px 13px;
+}
+
+.eqWrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reqs{
+  width: 48%;
+  margin-bottom: 2%;
+  text-align: left;
+  font-size: 0.65rem;
+  font-family: Lato;
+}
+
+.crl{
+  margin-right: 2%;
 }
 
 .btn-general{
@@ -264,6 +300,55 @@ Extra large devices (large laptops and desktops, 1200px and up)
   box-shadow: none;
   color: #3f3f3f;
   cursor: initial;
+}
+
+.buttonContainer{
+  display: flex;
+}
+
+.btn-left{
+  width: 100px;
+  color: #3baf99;
+  font-weight: 600;
+  background: #fff;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #6fc3b3;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0.8rem 0;
+  margin-right: -3px;
+  transition: background .15s ease-out;
+  text-decoration: none;
+}
+
+.btn-right{
+  width: 100px;
+  color: #3baf99;
+  font-weight: 600;
+  background: #fff;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #6fc3b3;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0.8rem 0;
+  margin-left: -3px;
+  transition: background .15s ease-out;
+  text-decoration: none;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+  background-color: #e9f9f6;
+  color: #39a28e;
+  border-style: solid;
 }
 
 .legalSection{
