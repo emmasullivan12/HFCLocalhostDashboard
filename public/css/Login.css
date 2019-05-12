@@ -258,6 +258,12 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .container input:checked ~ .checkmark {
   background-color: #4e4ed6c9;
+  border:none;
+}
+
+.checkmark.error{
+  background-color: #fff;
+  border: 1px solid red;
 }
 
 .checkmark:after {
@@ -268,6 +274,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .container input:checked ~ .checkmark:after {
   display: block;
+}
+
+.container input:checked  {
+  color: #a3a3a3!important;
 }
 
 .container .checkmark:after {
@@ -288,6 +298,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
   cursor: pointer;
   height: 0;
   width: 0;
+}
+
+.container.error{
+  color: red;
 }
 
 .checkmark {
@@ -399,7 +413,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .btn-general:disabled{
   background: #d9d9d9;
   box-shadow: none;
-  color: #3f3f3f;
+  color: #3f3f3f!important;
   cursor: initial;
 }
 

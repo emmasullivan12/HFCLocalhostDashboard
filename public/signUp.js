@@ -1,5 +1,9 @@
 var formControlStd = document.getElementsByClassName("form-control-std");
 
+var tncCheckbox = document.getElementById("tncCheckbox");
+var tncStyle = document.getElementById("tncStyle");
+var tncText = document.getElementById("tncText");
+
 var menteebtn = document.getElementById("mentee-btn");
 var mentorbtn = document.getElementById("mentor-btn");
 var menteeForm = document.getElementById("menteeForm");
@@ -85,6 +89,18 @@ for(let input of formControlStd) {
 pwd.addEventListener('invalid', function(event) {
   pwd.classList.add('error');
 }, false);
+
+tncCheckbox.addEventListener('invalid', function(event) {
+  tncText.classList.add('error');
+  tncStyle.classList.add('error');
+}, false);
+
+tncCheckbox.addEventListener('change', function(event) {
+  if(tncCheckbox.checkValidity()) {
+    tncText.classList.remove('error');
+    tncStyle.classList.remove('error');
+ }
+})
 
 // Check validity onblur (i.e. click away)
 pwd.addEventListener('blur', function(event) {
