@@ -205,9 +205,74 @@ Extra large devices (large laptops and desktops, 1200px and up)
   color: #cfcccc;
 }
 
+.descriptor.prompt{
+  color: #4e4ed6;
+  height: 1.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
 .descriptor.no-href:hover{
   color: #a3a3a3;
 }
+
+.container{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: .25rem;
+  margin-top: .75rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #a3a3a3;
+  font-size: 0.85rem;
+  text-align: left;
+  font-family: Lato;
+}
+.container:hover input ~ .checkmark {
+  background-color: #4e4ed64a;
+}
+.container input:checked ~ .checkmark {
+  background-color: #4e4ed6c9;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #4e4ed61c;
+}
+
 
 .inlineForm{
   display: flex;
@@ -232,6 +297,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
   height: auto;
 }
 
+.form-control.prompt{
+  margin-bottom: 0;
+}
+
 .form-group.inlineLeft{
   margin-right: 7px;
 }
@@ -254,10 +323,12 @@ Extra large devices (large laptops and desktops, 1200px and up)
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .reqs{
-  width: 48%;
+  width: 50%;
   margin-bottom: 2%;
   text-align: left;
   font-size: 0.65rem;
@@ -266,6 +337,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .crl{
   margin-right: 2%;
+  font-size: .75rem;
 }
 
 .btn-general{

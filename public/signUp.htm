@@ -34,11 +34,11 @@
             <div class="inlineForm">
               <div class="form-group inlineLeft">
                 <div class="descriptor">First Name</div>
-                <input type="text" name="email" id="email" autofocus class="form-control">
+                <input type="text" name="email" autofocus class="form-control">
               </div>
               <div class="form-group inlineRight">
                 <div class="descriptor">Last Name</div>
-                <input type="text" name="email" id="email" class="form-control">
+                <input type="text" name="email" class="form-control">
               </div>
             </div>
             <div class="form-group">
@@ -46,19 +46,20 @@
                 <div class="alignLeft descriptor">Work Email</div>
                 <div><a class="alignRight descriptor no-href">Why do I need to provide this?</a></div>
               </div>
-              <input type="text" name="email" id="email" class="form-control">
+              <input type="text" name="email" id="email" class="form-control prompt">
+              <div class="descriptor prompt" id="emailPrompt">This must be your work email address</div>
             </div>
             <div class="form-group">
               <div class="descriptor">Password</div>
-              <input type="password" name="password" id="password" class="form-control">
+              <input type="password" name="password" id="password" class="form-control prompt">
+              <div class="eqWrap">
+                <div class="reqs" id="numReq"><span class="crl" id="numReq-crl">&#9899;</span>One number</div>
+                <div class="reqs" id="upCharReq"><span class="crl" id="upCharReq-crl">&#9899;</span>One uppercase character</div>
+                <div class="reqs" id="specCharReq"><span class="crl" id="specCharReq-crl">&#9899;</span>One special character</div>
+                <div class="reqs" id="numCharReq"><span class="crl" id="numCharReq-crl">&#9899;</span>8 characters minimum</div>
+              </div>
             </div>
-            <div class="eqWrap">
-              <div class="reqs" id="numReq"><span class="crl" id="numReq-crl">&#9899;</span>One number</div>
-              <div class="reqs" id="upCharReq"><span class="crl" id="upCharReq-crl">&#9899;</span>One uppercase character</div>
-              <div class="reqs" id="specCharReq"><span class="crl" id="specCharReq-crl">&#9899;</span>One special character</div>
-              <div class="reqs" id="noCharReq"><span class="crl" id="noCharReq-crl">&#9899;</span>8 characters minimum</div>
-            </div>
-            <div class="descriptor"><span class="crl" id="numReq-crl">&#9899;</span>I have read and agree to Prospela's <a href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms & Safeguarding Policy</a> and confirm that I am over 13 years of age</div>
+            <label class="container">I have read and agree to Prospela's <a href="https://prospela.com/terms-of-use-safeguarding-policy/" target="_blank">Terms & Safeguarding Policy</a> and confirm that I am over 13 years of age<input type="checkbox"><span class="checkmark"></span></label>
             <button type="submit" id="login-btn" class="btn-general button-unstyled">Get Started</button>
           </div>
           <div id="mentorForm">
