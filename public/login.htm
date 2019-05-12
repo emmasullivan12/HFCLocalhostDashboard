@@ -28,14 +28,14 @@
         <form method="POST" action="/login">
           <div class="form-group">
             <div class="descriptor">Email</div>
-            <input type="text" name="email" id="email" autofocus class="form-control">
+            <input type="email" name="email" id="email" autofocus class="form-control" required>
           </div>
           <div class="form-group">
             <div>
               <div class="alignLeft descriptor">Password</div>
               <div><a class="alignRight descriptor" href="https://test.prospela.com/login/forgotpassword">Forgot Password?</a></div>
             </div>
-            <input type="password" name="password" id="password" class="form-control">
+            <input type="password" name="password" id="password" class="form-control" required>
           </div>
           <button type="submit" id="login-btn" class="btn-general button-unstyled">Log in</button>
         </form>

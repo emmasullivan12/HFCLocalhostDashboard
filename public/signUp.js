@@ -1,8 +1,12 @@
+var formControlStd = document.getElementsByClassName("form-control-std");
+
 var menteebtn = document.getElementById("mentee-btn");
 var mentorbtn = document.getElementById("mentor-btn");
 var menteeForm = document.getElementById("menteeForm");
 var mentorForm = document.getElementById("mentorForm");
 
+var fname = document.getElementById("fname");
+var lname = document.getElementById("lname");
 var email = document.getElementById("email");
 var pwd = document.getElementById("password");
 
@@ -63,15 +67,43 @@ email.addEventListener('blur', function(event) {
   emailPrompt.style.visibility = 'hidden';
 });
 
+
+// check validity of inputs when submit & onBlur i.e. after clicing away
+for(let input of formControlStd) {
+  input.addEventListener('invalid', function(event) {
+    input.classList.add('error');
+  }, false);
+
+  // Check validity onblur (i.e. click away)
+  input.addEventListener('blur', function(event) {
+    if(input.checkValidity()) {
+     input.classList.remove('error');
+   }
+  })
+}
+
+pwd.addEventListener('invalid', function(event) {
+  pwd.classList.add('error');
+}, false);
+
+// Check validity onblur (i.e. click away)
+pwd.addEventListener('blur', function(event) {
+  if(pwd.checkValidity() && this.value.length > 7 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[!@#$%^&*()_+]/) != -1) {
+   pwd.classList.remove('error');
+ }
+})
+
 pwd.addEventListener('input', function(event) {
   if( this.value.length > 7 ){
     numCharReqCrl.style.color = 'transparent';
     numCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
     numCharReq.style.color = '#595959';
+    // pwd.classList.remove('error');
   }else{
     numCharReqCrl.style.color = 'transparent';
     numCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
     numCharReq.style.color = '#a3a3a3';
+    pwd.classList.add('error');
   }
 });
 
@@ -80,10 +112,12 @@ pwd.addEventListener('input', function(event) {
     numReqCrl.style.color = 'transparent';
     numReqCrl.style.textShadow = '0 0 0 #a3a3a3';
     numReq.style.color = '#a3a3a3';
+    pwd.classList.add('error');
   }else{
     numReqCrl.style.color = 'transparent';
     numReqCrl.style.textShadow = '0 0 0 #7e7ec9';
     numReq.style.color = '#595959';
+    // pwd.classList.remove('error');
   }
 });
 
@@ -92,10 +126,12 @@ pwd.addEventListener('input', function(event) {
     upCharReqCrl.style.color = 'transparent';
     upCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
     upCharReq.style.color = '#a3a3a3';
+    pwd.classList.add('error');
   }else{
     upCharReqCrl.style.color = 'transparent';
     upCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
     upCharReq.style.color = '#595959';
+    //pwd.classList.remove('error');
   }
 });
 
@@ -104,9 +140,11 @@ pwd.addEventListener('input', function(event) {
     specCharReqCrl.style.color = 'transparent';
     specCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
     specCharReq.style.color = '#595959';
+    //pwd.classList.remove('error');
   }else{
     specCharReqCrl.style.color = 'transparent';
     specCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
     specCharReq.style.color = '#a3a3a3';
+    pwd.classList.add('error');
   }
 });
