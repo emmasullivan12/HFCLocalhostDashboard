@@ -34,15 +34,15 @@ upCharReqCrl.style.color = 'transparent';
 specCharReqCrl.style.color = 'transparent';
 numCharReqCrl.style.color = 'transparent';
 
-numReqCrl.style.textShadow = '0 0 0 #a3a3a3';
-upCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
-specCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
-numCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
+numReqCrl.style.textShadow = '0 0 0 #cbcaca';
+upCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+specCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+numCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
 
-numReq.style.color = '#a3a3a3';
-upCharReq.style.color = '#a3a3a3';
-specCharReq.style.color = '#a3a3a3';
-numCharReq.style.color = '#a3a3a3';
+numReq.style.color = '#cbcaca';
+upCharReq.style.color = '#cbcaca';
+specCharReq.style.color = '#cbcaca';
+numCharReq.style.color = '#cbcaca';
 
 // add event listeners
 menteebtn.addEventListener('click', function(event) {
@@ -81,9 +81,15 @@ for(let input of formControlStd) {
   // Check validity onblur (i.e. click away)
   input.addEventListener('blur', function(event) {
     if(input.checkValidity()) {
-     input.classList.remove('error');
+      input.classList.remove('error');
+    }
+ });
+/*
+  input.addEventListener('change', function(event) {
+   if(input.checkValidity()) {
+    input.classList.remove('error');
    }
-  })
+ })*/
 }
 
 pwd.addEventListener('invalid', function(event) {
@@ -117,8 +123,8 @@ pwd.addEventListener('input', function(event) {
     // pwd.classList.remove('error');
   }else{
     numCharReqCrl.style.color = 'transparent';
-    numCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
-    numCharReq.style.color = '#a3a3a3';
+    numCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+    numCharReq.style.color = '#cbcaca';
     pwd.classList.add('error');
   }
 });
@@ -126,8 +132,8 @@ pwd.addEventListener('input', function(event) {
 pwd.addEventListener('input', function(event) {
   if( this.value.search(/\d/) == -1){
     numReqCrl.style.color = 'transparent';
-    numReqCrl.style.textShadow = '0 0 0 #a3a3a3';
-    numReq.style.color = '#a3a3a3';
+    numReqCrl.style.textShadow = '0 0 0 #cbcaca';
+    numReq.style.color = '#cbcaca';
     pwd.classList.add('error');
   }else{
     numReqCrl.style.color = 'transparent';
@@ -140,8 +146,8 @@ pwd.addEventListener('input', function(event) {
 pwd.addEventListener('input', function(event) {
   if( this.value.search(/[A-Z]/) == -1){
     upCharReqCrl.style.color = 'transparent';
-    upCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
-    upCharReq.style.color = '#a3a3a3';
+    upCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+    upCharReq.style.color = '#cbcaca';
     pwd.classList.add('error');
   }else{
     upCharReqCrl.style.color = 'transparent';
@@ -159,8 +165,8 @@ pwd.addEventListener('input', function(event) {
     //pwd.classList.remove('error');
   }else{
     specCharReqCrl.style.color = 'transparent';
-    specCharReqCrl.style.textShadow = '0 0 0 #a3a3a3';
-    specCharReq.style.color = '#a3a3a3';
+    specCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+    specCharReq.style.color = '#cbcaca';
     pwd.classList.add('error');
   }
 });

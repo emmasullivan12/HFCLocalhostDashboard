@@ -4,6 +4,10 @@ var forgotpwdbtn = document.getElementById("forgotpwd-btn");
 // Disable the button on initial page load
 forgotpwdbtn.disabled = true;
 
+email.addEventListener('invalid', function(event) {
+  email.classList.add('error');
+}, false);
+
 // add event listener
 email.addEventListener('input', function(event) {
   if( this.value.length > 0 ){

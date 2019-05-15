@@ -107,7 +107,7 @@ input[type=text]:disabled{
   border: 1px solid #d9d9d9;
 }
 
-.form-control-std:hover:valid{
+.form-control-std:hover:valid:not(:focus){
   border-color: #c6c6c6;
 }
 
@@ -385,7 +385,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .btn-general{
   width: 100%;
-  color: #fff!important;
+  color: #fff;
   font-weight: 600;
   background: #6fc3b3;
   border-radius: .5rem;
@@ -413,7 +413,15 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .btn-general:disabled{
   background: #d9d9d9;
   box-shadow: none;
-  color: #3f3f3f!important;
+  color: #3f3f3f;
+  cursor: initial;
+}
+
+
+.btn-general.error{
+  background: #d9d9d9;
+  box-shadow: none;
+  color: #3f3f3f;
   cursor: initial;
 }
 
