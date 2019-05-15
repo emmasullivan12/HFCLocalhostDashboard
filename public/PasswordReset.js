@@ -49,9 +49,10 @@ resetcode.addEventListener('input', function(event) {
 })
 
 resetcode.addEventListener('input', function(event) {
-  if( this.value.length > 5 ){
+  if( this.value.length === 6 ){
     pwd.disabled = false;
     newPwdText.style.color = '#595959';
+    pwd.focus();
   }else{
     resetcode.classList.add('error');
     pwd.disabled = true;

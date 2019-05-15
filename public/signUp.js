@@ -6,15 +6,21 @@ var tncText = document.getElementById("tncText");
 
 var menteebtn = document.getElementById("mentee-btn");
 var mentorbtn = document.getElementById("mentor-btn");
-var menteeForm = document.getElementById("menteeForm");
-var mentorForm = document.getElementById("mentorForm");
+
+var names = document.getElementById("names");
+var workEmail = document.getElementById("workEmail");
+var schEmail = document.getElementById("schEmail");
+var pwdContainer = document.getElementById("pwdContainer");
+var submitbtn = document.getElementById("submit-btn");
 
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
-var email = document.getElementById("email");
+var wEmail = document.getElementById("wEmail");
+var sEmail = document.getElementById("sEmail");
 var pwd = document.getElementById("password");
 
-var emailPrompt = document.getElementById("emailPrompt");
+var wEmailPrompt = document.getElementById("wEmailPrompt");
+var sEmailPrompt = document.getElementById("sEmailPrompt");
 var numReqCrl = document.getElementById("numReq-crl");
 var upCharReqCrl = document.getElementById("upCharReq-crl");
 var specCharReqCrl = document.getElementById("specCharReq-crl");
@@ -25,9 +31,14 @@ var specCharReq = document.getElementById("specCharReq");
 var numCharReq = document.getElementById("numCharReq");
 
 // hide on intiial page load
-mentorForm.style.display = 'none';
-menteeForm.style.display = 'none';
-emailPrompt.style.visibility = 'hidden';
+names.style.display = 'none';
+workEmail.style.display = 'none';
+schEmail.style.display = 'none';
+pwdContainer.style.display = 'none';
+tncText.style.display = 'none';
+submitbtn.style.display = 'none';
+wEmailPrompt.style.visibility = 'hidden';
+sEmailPrompt.style.visibility = 'hidden';
 
 numReqCrl.style.color = 'transparent';
 upCharReqCrl.style.color = 'transparent';
@@ -50,8 +61,18 @@ menteebtn.addEventListener('click', function(event) {
   menteebtn.style.color = '#fff';
   mentorbtn.style.backgroundColor = '#fff';
   mentorbtn.style.color = '#3baf99';
-  menteeForm.style.display = 'block';
-  mentorForm.style.display = 'none';
+  names.style.display = 'flex';
+  workEmail.style.display = 'none';
+  schEmail.style.display = 'block';
+  wEmail.required = false;
+  sEmail.required = true;
+  pwdContainer.style.display = 'block';
+  tncText.style.display = 'block';
+  submitbtn.style.display = 'block';
+  fname.focus();
+  for(let input of formControlStd) {
+    input.classList.remove('error');
+  }
 });
 
 mentorbtn.addEventListener('click', function(event) {
@@ -59,16 +80,34 @@ mentorbtn.addEventListener('click', function(event) {
   mentorbtn.style.color = '#fff';
   menteebtn.style.backgroundColor = '#fff';
   menteebtn.style.color = '#3baf99';
-  mentorForm.style.display = 'block';
-  menteeForm.style.display = 'none';
+  names.style.display = 'flex';
+  workEmail.style.display = 'block';
+  wEmail.required = true;
+  sEmail.required = false;
+  schEmail.style.display = 'none';
+  pwdContainer.style.display = 'block';
+  tncText.style.display = 'block';
+  submitbtn.style.display = 'block';
+  fname.focus();
+  for(let input of formControlStd) {
+    input.classList.remove('error');
+  }
 });
 
-email.addEventListener('focus', function(event) {
-  emailPrompt.style.visibility = 'visible';
+wEmail.addEventListener('focus', function(event) {
+  wEmailPrompt.style.visibility = 'visible';
 },true);
 
-email.addEventListener('blur', function(event) {
-  emailPrompt.style.visibility = 'hidden';
+wEmail.addEventListener('blur', function(event) {
+  wEmailPrompt.style.visibility = 'hidden';
+});
+
+sEmail.addEventListener('focus', function(event) {
+  sEmailPrompt.style.visibility = 'visible';
+},true);
+
+sEmail.addEventListener('blur', function(event) {
+  sEmailPrompt.style.visibility = 'hidden';
 });
 
 

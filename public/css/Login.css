@@ -20,7 +20,6 @@ body {
   background: #fff;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
   user-select: none;
 }
 
@@ -56,6 +55,12 @@ a:hover {
 /* selected link */
 a:active {
   color: #8f8fe5;
+}
+
+.mainContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .alignLeft{
@@ -96,6 +101,46 @@ a:active {
 
 input[type=text]:disabled{
   background: #dddddd;
+}
+
+.tooltip{
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #3f3f3f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: .8rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+  opacity: 1;
 }
 
 .form-control-std.error,
@@ -155,6 +200,11 @@ input[type=text]:disabled{
 Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...} */
 
+.row{
+  height: 100%;
+  display: flex;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -198,7 +248,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 }
 
 .loginContainer{
-  padding: 60px 85px 0;
+  padding: 60px 85px;
   max-width: 518px;
   display: inline-block;
 }
@@ -247,7 +297,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   -ms-user-select: none;
   user-select: none;
   color: #a3a3a3;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-align: left;
   font-family: Lato;
 }
@@ -499,7 +549,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   float: right;
   margin-right: -10px;
   position: relative;
-  transform: translatey(10%);
+  transform: translatey(25%);
 }
 
 .prPlatformImg{

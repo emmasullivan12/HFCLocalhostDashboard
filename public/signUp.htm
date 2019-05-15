@@ -13,25 +13,25 @@
 </head>
 
 <body>
-  <div class="prLogoArea row">
-    <div class="prLogoContainer col-12">
-      <img class="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
+  <div class="mainContainer">
+    <div class="prLogoArea col-12">
+      <div class="prLogoContainer col-12">
+        <img class="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-7 col-s-12 centerContainer">
-      <div class="loginContainer">
-        <div>
-          <h1>Get Started</h1>
-          <div class="header-descriptor">or <a href="https://test.prospela.com/login">login to your Prospela account</a></div>
-        </div>
-        <form method="POST" action="/signup">
-          <div className="buttonContainer">
-            <button type="button" id="mentee-btn" class="btn-left button-unstyled">Mentee</button>
-            <button type="button" id="mentor-btn" class="btn-right button-unstyled">Mentor</button>
+    <div class="row">
+      <div class="col-7 col-s-12 centerContainer">
+        <div class="loginContainer">
+          <div>
+            <h1>Get Started</h1>
+            <div class="header-descriptor">or <a href="https://test.prospela.com/login">login to your Prospela account</a></div>
           </div>
-          <div id="menteeForm">
-            <div class="inlineForm">
+          <form method="POST" action="/signup">
+            <div className="buttonContainer">
+              <button type="button" id="mentor-btn" class="btn-left button-unstyled">Mentor</button>
+              <button type="button" id="mentee-btn" class="btn-right button-unstyled">Mentee</button>
+            </div>
+            <div class="inlineForm" id="names">
               <div class="form-group inlineLeft">
                 <div class="descriptor">First Name</div>
                 <input type="text" name="fname" id="fname" autofocus class="form-control-std" required>
@@ -41,15 +41,27 @@
                 <input type="text" name="lanme" id="lname" class="form-control-std" required>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="workEmail">
               <div>
                 <div class="alignLeft descriptor">Work Email</div>
-                <div><a class="alignRight descriptor no-href">Why do I need to provide this?</a></div>
+                <div class="tooltip alignRight descriptor no-href">Why do I need to provide this?
+                  <span class="tooltiptext">This helps us maintain a safeguarded environment</span>
+                </div>
               </div>
-              <input type="email" name="email" id="email" class="form-control-std prompt" required>
-              <div class="descriptor prompt" id="emailPrompt">This must be your work email address</div>
+              <input type="email" name="email" id="wEmail" class="form-control-std prompt">
+              <div class="descriptor prompt" id="wEmailPrompt">This must be your work email address</div>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="schEmail">
+              <div>
+                <div class="alignLeft descriptor">School or University Email</div>
+                <div class="tooltip alignRight descriptor no-href">Why do I need to provide this?
+                  <span class="tooltiptext">This helps us maintain a safeguarded environment</span>
+                </div>
+              </div>
+              <input type="email" name="email" id="sEmail" class="form-control-std prompt">
+              <div class="descriptor prompt" id="sEmailPrompt">This must be your school or university email address</div>
+            </div>
+            <div class="form-group" id="pwdContainer">
               <div class="descriptor">Password</div>
               <input type="password" name="password" id="password" class="form-control-pwd prompt" required>
               <div class="eqWrap">
@@ -59,20 +71,17 @@
                 <div class="reqs" id="numCharReq"><span class="crl" id="numCharReq-crl">&#9899;</span>8 characters minimum</div>
               </div>
             </div>
-            <label class="container" id="tncText">I have read and agree to Prospela's <a href="https://prospela.com/terms-of-use-safeguarding-policy/" target="_blank">Terms & Safeguarding Policy</a> and confirm that I am over 13 years of age<input type="checkbox" id="tncCheckbox" required><span class="checkmark" id="tncStyle"></span></label>
+            <label class="container" id="tncText">I have read and agree to Prospela's <a href="https://prospela.com/terms-of-use-safeguarding-policy/" target="_blank">Terms & Safeguarding Policy</a> and <a href="https://prospela.com/privacy-policy/" target="_blank">Privacy Policy</a> and confirm that I am over 13 years of age<input type="checkbox" id="tncCheckbox" required><span class="checkmark" id="tncStyle"></span></label>
             <button type="submit" id="submit-btn" class="btn-general button-unstyled">Get Started</button>
-          </div>
-          <div id="mentorForm">
-            <div>Mentor Form</div>
-          </div>
-        </form>
-        <div class="login-error-msg">The email and/or password entered were not recognised. Please try again</div>
-        <div class="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
+          </form>
+          <div class="login-error-msg">The email and/or password entered were not recognised. Please try again</div>
+          <div class="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
+        </div>
       </div>
-    </div>
-    <div class="col-5 login-pic">
-      <div class="login-picContainer">
-        <img class="prPlatformImg" alt="Prospela Platform Cartoon" src="https://prospela.com/wp-content/uploads/2019/05/Platform-picture.png" />
+      <div class="col-5 login-pic">
+        <div class="login-picContainer">
+          <img class="prPlatformImg" alt="Prospela Platform Cartoon" src="https://prospela.com/wp-content/uploads/2019/05/Platform-picture.png" />
+        </div>
       </div>
     </div>
   </div>
