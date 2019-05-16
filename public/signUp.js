@@ -1,5 +1,4 @@
-// Dex last merged this code on 16th May 2019
-
+/* Dex last merged this code on 16th May 2019*/
 var formControlStd = document.getElementsByClassName("form-control-std");
 
 var tncCheckbox = document.getElementById("tncCheckbox");
@@ -11,7 +10,6 @@ var mentorbtn = document.getElementById("mentor-btn");
 var menteeradio = document.getElementById("menteeradio");
 var mentorradio = document.getElementById("mentorradio");
 
-
 var names = document.getElementById("names");
 var emailContainer = document.getElementById("emailContainer");
 var pwdContainer = document.getElementById("pwdContainer");
@@ -21,6 +19,10 @@ var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
 var email = document.getElementById("email");
 var emailText = document.getElementById("emailText");
+var dob = document.getElementById("dob");
+var dDOB = document.getElementById("dDOB");
+var mDOB = document.getElementById("mDOB");
+var yDOB = document.getElementById("yDOB");
 var pwd = document.getElementById("password");
 
 var emailPrompt = document.getElementById("emailPrompt");
@@ -36,6 +38,7 @@ var numCharReq = document.getElementById("numCharReq");
 // hide on intiial page load
 names.style.display = 'none';
 emailContainer.style.display = 'none';
+dob.style.display = 'none';
 pwdContainer.style.display = 'none';
 tncText.style.display = 'none';
 submitbtn.style.display = 'none';
@@ -69,6 +72,7 @@ menteebtn.addEventListener('click', function(event) {
   mentorradio.checked = false;
   names.style.display = 'flex';
   emailContainer.style.display = 'block';
+  dob.style.display = 'block';
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   submitbtn.style.display = 'block';
@@ -89,6 +93,7 @@ mentorbtn.addEventListener('click', function(event) {
   mentorradio.checked = true;
   names.style.display = 'flex';
   emailContainer.style.display = 'block';
+  dob.style.display = 'block';
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   submitbtn.style.display = 'block';
@@ -120,13 +125,19 @@ for(let input of formControlStd) {
       input.classList.remove('error');
     }
  });
-/*
-  input.addEventListener('change', function(event) {
-   if(input.checkValidity()) {
-    input.classList.remove('error');
-   }
- })*/
 }
+
+dDOB.addEventListener('invalid', function(event) {
+  dDOB.classList.add('error');
+}, false);
+
+mDOB.addEventListener('invalid', function(event) {
+  mDOB.classList.add('error');
+}, false);
+
+yDOB.addEventListener('invalid', function(event) {
+  yDOB.classList.add('error');
+}, false);
 
 pwd.addEventListener('invalid', function(event) {
   pwd.classList.add('error');
@@ -141,6 +152,42 @@ tncCheckbox.addEventListener('change', function(event) {
   if(tncCheckbox.checkValidity()) {
     tncText.classList.remove('error');
     tncStyle.classList.remove('error');
+ }
+})
+
+function validateDate() {
+  var d = dDOB.value;
+  var m = mDOB.value;
+  var y = yDOB.value;
+
+  if((m == 4 || m == 6 || m == 9 || m == 11) && d > 30) {
+    return false;
+    }
+  if(m == 2 && d > 29 && (y%4 == 0)) {
+    return false;
+    }
+  if((m == 2) && d > 28) {
+    return false;
+    }
+  return true;
+}
+
+dDOB.addEventListener('blur', function(event) {
+  if(dDOB.checkValidity() && validateDate()) {
+   dDOB.classList.remove('error');
+ }
+})
+
+mDOB.addEventListener('blur', function(event) {
+  if(mDOB.checkValidity()) {
+   mDOB.classList.remove('error');
+ }
+})
+
+yDOB.addEventListener('blur', function(event) {
+  var currentTime = new Date()
+  if(yDOB.checkValidity() && (yDOB.value <= currentTime.getFullYear())) {
+   yDOB.classList.remove('error');
  }
 })
 

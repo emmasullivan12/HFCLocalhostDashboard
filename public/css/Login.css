@@ -144,6 +144,7 @@ input[type=text]:disabled{
 }
 
 .form-control-std.error,
+.form-control-dob.error,
 .form-control-pwd.error {
   border-bottom: 2px solid red;
 }
@@ -160,6 +161,11 @@ input[type=text]:disabled{
   box-shadow: 0 0 0 1.2px #4e4ed6;
   border: 3px solid rgba(122,80,199,.1);
   padding: 8px 13px;
+}
+
+.form-control-std.dob{
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -199,6 +205,19 @@ input[type=text]:disabled{
 
 Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...} */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d9d9d9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #d9d9d9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #d9d9d9;
+}
 
 .row{
   height: 100%;
@@ -267,6 +286,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
   text-align: left;
   font-family: Lato;
   margin-bottom: 0.2rem;
+}
+
+.descriptor.dob{
+  float: left;
+  width: 100%;
 }
 
 .descriptor.no-href,
@@ -365,9 +389,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .inlineForm{
   display: flex;
+  width: 100%;
 }
 
 .form-control-std,
+.form-control-dob,
 .form-control-pwd{
   width: 100%;
   font-size: 1.15rem;
@@ -388,6 +414,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 }
 
 .form-control-std.prompt,
+.form-control-dob.prompt,
 .form-control-pwd.prompt{
   margin-bottom: 0;
 }
@@ -396,16 +423,34 @@ Extra large devices (large laptops and desktops, 1200px and up)
   margin-right: 7px;
 }
 
+.form-group.inlineMiddle{
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
 .form-group.inlineRight{
   margin-left: 7px;
 }
 
+
+.form-group.inlineLeft.dob,
+.form-group.inlineMiddle.dob
+{
+  flex-basis: 110px;
+}
+
+.form-group.inlineRight.dob{
+  flex-basis: 180px;
+}
+
 .form-control-std:hover,
+.form-control-dob:hover,
 .form-control-pwd:hover{
   border-color: #c6c6c6;
 }
 
 .form-control-std:focus,
+.form-control-dob:focus,
 .form-control-pwd:focus{
   box-shadow: 0 0 0 1.2px #4e4ed6;
   border: 3px solid rgba(122,80,199,.1);

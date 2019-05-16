@@ -55,6 +55,20 @@
               <input type="email" name="email" id="email" class="form-control-std prompt" required>
               <div class="descriptor prompt" id="emailPrompt">This must be your work email address</div>
             </div>
+            <div class="form-group" id="dob">
+              <label class="descriptor dob">Enter your DOB</label>
+              <div class="inlineForm">
+                <div class="form-group inlineLeft dob">
+                  <input type="number" name="day" id="dDOB" min="1" max="31" maxlength="2" placeholder="dd" class="form-control-dob dob" required>
+                </div>
+                <div class="form-group inlineMiddle dob">
+                  <input type="number" name="month" id="mDOB" min="1" max="12" maxlength="2" placeholder="mm" class="form-control-dob dob" required>
+                </div>
+                <div class="form-group inlineRight dob">
+                  <input type="number" name="year" id="yDOB" min="1910" max="2050" minlength="4" maxlength="4" placeholder="yyyy" class="form-control-dob dob" required>
+                </div>
+              </div>
+            </div>
             <div class="form-group" id="pwdContainer">
               <div class="descriptor">Password</div>
               <input type="password" name="password" id="password" class="form-control-pwd prompt" required>
