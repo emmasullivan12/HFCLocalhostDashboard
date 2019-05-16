@@ -8,19 +8,17 @@ var menteebtn = document.getElementById("mentee-btn");
 var mentorbtn = document.getElementById("mentor-btn");
 
 var names = document.getElementById("names");
-var workEmail = document.getElementById("workEmail");
-var schEmail = document.getElementById("schEmail");
+var emailContainer = document.getElementById("emailContainer");
 var pwdContainer = document.getElementById("pwdContainer");
 var submitbtn = document.getElementById("submit-btn");
 
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
-var wEmail = document.getElementById("wEmail");
-var sEmail = document.getElementById("sEmail");
+var email = document.getElementById("email");
+var emailText = document.getElementById("emailText");
 var pwd = document.getElementById("password");
 
-var wEmailPrompt = document.getElementById("wEmailPrompt");
-var sEmailPrompt = document.getElementById("sEmailPrompt");
+var emailPrompt = document.getElementById("emailPrompt");
 var numReqCrl = document.getElementById("numReq-crl");
 var upCharReqCrl = document.getElementById("upCharReq-crl");
 var specCharReqCrl = document.getElementById("specCharReq-crl");
@@ -32,13 +30,11 @@ var numCharReq = document.getElementById("numCharReq");
 
 // hide on intiial page load
 names.style.display = 'none';
-workEmail.style.display = 'none';
-schEmail.style.display = 'none';
+emailContainer.style.display = 'none';
 pwdContainer.style.display = 'none';
 tncText.style.display = 'none';
 submitbtn.style.display = 'none';
-wEmailPrompt.style.visibility = 'hidden';
-sEmailPrompt.style.visibility = 'hidden';
+emailPrompt.style.visibility = 'hidden';
 
 numReqCrl.style.color = 'transparent';
 upCharReqCrl.style.color = 'transparent';
@@ -62,13 +58,12 @@ menteebtn.addEventListener('click', function(event) {
   mentorbtn.style.backgroundColor = '#fff';
   mentorbtn.style.color = '#3baf99';
   names.style.display = 'flex';
-  workEmail.style.display = 'none';
-  schEmail.style.display = 'block';
-  wEmail.required = false;
-  sEmail.required = true;
+  emailContainer.style.display = 'block';
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   submitbtn.style.display = 'block';
+  emailText.innerHTML = 'School or University Email';
+  emailPrompt.innerHTML = 'This must be your school or university email address';
   fname.focus();
   for(let input of formControlStd) {
     input.classList.remove('error');
@@ -81,35 +76,25 @@ mentorbtn.addEventListener('click', function(event) {
   menteebtn.style.backgroundColor = '#fff';
   menteebtn.style.color = '#3baf99';
   names.style.display = 'flex';
-  workEmail.style.display = 'block';
-  wEmail.required = true;
-  sEmail.required = false;
-  schEmail.style.display = 'none';
+  emailContainer.style.display = 'block';
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   submitbtn.style.display = 'block';
+  emailText.innerHTML = 'Work Email';
+  emailPrompt.innerHTML = 'This must be your work email address';
   fname.focus();
   for(let input of formControlStd) {
     input.classList.remove('error');
   }
 });
 
-wEmail.addEventListener('focus', function(event) {
-  wEmailPrompt.style.visibility = 'visible';
+email.addEventListener('focus', function(event) {
+  emailPrompt.style.visibility = 'visible';
 },true);
 
-wEmail.addEventListener('blur', function(event) {
-  wEmailPrompt.style.visibility = 'hidden';
+email.addEventListener('blur', function(event) {
+  emailPrompt.style.visibility = 'hidden';
 });
-
-sEmail.addEventListener('focus', function(event) {
-  sEmailPrompt.style.visibility = 'visible';
-},true);
-
-sEmail.addEventListener('blur', function(event) {
-  sEmailPrompt.style.visibility = 'hidden';
-});
-
 
 // check validity of inputs when submit & onBlur i.e. after clicing away
 for(let input of formControlStd) {
