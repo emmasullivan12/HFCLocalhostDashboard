@@ -6,6 +6,9 @@ var tncText = document.getElementById("tncText");
 
 var menteebtn = document.getElementById("mentee-btn");
 var mentorbtn = document.getElementById("mentor-btn");
+var menteeradio = document.getElementById("menteeradio");
+var mentorradio = document.getElementById("mentorradio");
+
 
 var names = document.getElementById("names");
 var emailContainer = document.getElementById("emailContainer");
@@ -36,6 +39,9 @@ tncText.style.display = 'none';
 submitbtn.style.display = 'none';
 emailPrompt.style.visibility = 'hidden';
 
+menteeradio.checked = false;
+mentorradio.checked = false;
+
 numReqCrl.style.color = 'transparent';
 upCharReqCrl.style.color = 'transparent';
 specCharReqCrl.style.color = 'transparent';
@@ -57,6 +63,8 @@ menteebtn.addEventListener('click', function(event) {
   menteebtn.style.color = '#fff';
   mentorbtn.style.backgroundColor = '#fff';
   mentorbtn.style.color = '#3baf99';
+  menteeradio.checked = true;
+  mentorradio.checked = false;
   names.style.display = 'flex';
   emailContainer.style.display = 'block';
   pwdContainer.style.display = 'block';
@@ -75,6 +83,8 @@ mentorbtn.addEventListener('click', function(event) {
   mentorbtn.style.color = '#fff';
   menteebtn.style.backgroundColor = '#fff';
   menteebtn.style.color = '#3baf99';
+  menteeradio.checked = false;
+  mentorradio.checked = true;
   names.style.display = 'flex';
   emailContainer.style.display = 'block';
   pwdContainer.style.display = 'block';

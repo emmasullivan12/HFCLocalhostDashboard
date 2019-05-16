@@ -28,8 +28,10 @@
           </div>
           <form method="POST" action="/signup">
             <div className="buttonContainer">
-              <input type="button" id="mentor-btn" value="Mentor" class="btn-left button-unstyled"/>
-              <input type="button" id="mentee-btn" value="Mentee" class="btn-right button-unstyled"/>
+              <input type="radio" class="hiddenRadio" value="mentor" name="role" id="mentorradio">
+              <input type="radio" class="hiddenRadio" value="mentee" name="role" id="menteeradio">
+              <button type="button" id="mentor-btn" name="role" class="btn-left button-unstyled">Mentor</button>
+              <button type="button" id="mentee-btn" name="role" class="btn-right button-unstyled">Mentee</button>
             </div>
             <div class="inlineForm" id="names">
               <div class="form-group inlineLeft">
