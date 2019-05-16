@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "../css/Login.css";
 
@@ -28,4 +28,4 @@ class LoginSUTemplate extends React.Component {
   }
 }
 
-export default LoginSUTemplate;
+export default LoginSUTemplate;*/

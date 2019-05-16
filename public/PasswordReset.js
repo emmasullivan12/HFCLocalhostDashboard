@@ -1,3 +1,5 @@
+// Dex last merged this code on 16th May 2019
+
 var resetcode = document.getElementById("resetcode");
 var pwd = document.getElementById("password");
 var resetPwdBtn = document.getElementById("resetpwd-btn");

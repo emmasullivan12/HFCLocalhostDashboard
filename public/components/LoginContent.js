@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "../css/Login.css";
 
@@ -47,4 +47,4 @@ class LoginContent extends React.Component {
   }
 }
 
-export default LoginContent;
+export default LoginContent;*/

@@ -523,6 +523,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
   border-style: solid;
 }
 
+.hiddenRadio{
+  display: none;
+}
+
 .legalSection{
   margin-top: 1rem;
   color: #cacaca!important;

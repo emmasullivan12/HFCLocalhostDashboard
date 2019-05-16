@@ -1,3 +1,5 @@
+/* Dex last merged this code on 16th May 2019 */
+
 var password = document.getElementById("password");
 var email = document.getElementById("email");
 var loginbtn = document.getElementById("login-btn");
