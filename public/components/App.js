@@ -140,7 +140,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 1;
+  const step = 2;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
@@ -167,7 +167,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 3;
+  const step = 2;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
