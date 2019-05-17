@@ -26,6 +26,8 @@ var yDOB = document.getElementById("yDOB");
 var pwd = document.getElementById("password");
 
 var emailPrompt = document.getElementById("emailPrompt");
+var dobPrompt = document.getElementById("dobPrompt");
+
 var numReqCrl = document.getElementById("numReq-crl");
 var upCharReqCrl = document.getElementById("upCharReq-crl");
 var specCharReqCrl = document.getElementById("specCharReq-crl");
@@ -43,6 +45,7 @@ pwdContainer.style.display = 'none';
 tncText.style.display = 'none';
 submitbtn.style.display = 'none';
 emailPrompt.style.visibility = 'hidden';
+dobPrompt.style.visibility = 'hidden';
 
 menteeradio.checked = false;
 mentorradio.checked = false;
@@ -155,40 +158,126 @@ tncCheckbox.addEventListener('change', function(event) {
  }
 })
 
-function validateDate() {
+function validateDay() {
   var d = dDOB.value;
   var m = mDOB.value;
   var y = yDOB.value;
+  var gapyr = (y%4) === 0;
 
   if((m == 4 || m == 6 || m == 9 || m == 11) && d > 30) {
     return false;
     }
-  if(m == 2 && d > 29 && (y%4 == 0)) {
+  if(m == 2 && !gapyr && d > 28) {
     return false;
-    }
-  if((m == 2) && d > 28) {
+  }
+  if(m == 2 && gapyr && d > 29) {
     return false;
-    }
+  }
+  return true;
+}
+
+function checkAge() {
+  var today = new Date();
+  var d = dDOB.value;
+  var m = mDOB.value-1;
+  var y = yDOB.value;
+  var birthDate = new Date(y,m,d);
+  /*var birthDate = new Date().setFullYear(y,m,d);*/
+
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var mth = today.getMonth() - birthDate.getMonth();
+
+  if (mth < 0 || (mth === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  if (age < 13) {
+    return false;
+  }
   return true;
 }
 
 dDOB.addEventListener('blur', function(event) {
-  if(dDOB.checkValidity() && validateDate()) {
+  if(dDOB.checkValidity() && validateDay()) {
    dDOB.classList.remove('error');
+  }
+  if(yDOB.checkValidity()) {
+   yDOB.classList.remove('error');
+  }
+  if(mDOB.checkValidity()) {
+   mDOB.classList.remove('error');
+  }
+  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity()) {
+   dDOB.classList.remove('error');
+   if(checkAge()){
+     dDOB.classList.remove('error');
+     mDOB.classList.remove('error');
+     yDOB.classList.remove('error');
+     dobPrompt.style.visibility = 'hidden';
+   }else{
+     dDOB.classList.add('error');
+     mDOB.classList.add('error');
+     yDOB.classList.add('error');
+     dobPrompt.style.visibility = 'visible';
+   }
+  /*}else{
+    dDOB.classList.add('error');*/
  }
 })
 
 mDOB.addEventListener('blur', function(event) {
   if(mDOB.checkValidity()) {
    mDOB.classList.remove('error');
- }
+  }
+  if(yDOB.checkValidity()) {
+   yDOB.classList.remove('error');
+  }
+  if(dDOB.checkValidity()) {
+   dDOB.classList.remove('error');
+  }
+  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
+   dDOB.classList.remove('error');
+   if(checkAge()){
+     dDOB.classList.remove('error');
+     mDOB.classList.remove('error');
+     yDOB.classList.remove('error');
+     dobPrompt.style.visibility = 'hidden';
+   }else{
+     dDOB.classList.add('error');
+     mDOB.classList.add('error');
+     yDOB.classList.add('error');
+     dobPrompt.style.visibility = 'visible';
+   }
+  /*}else{
+   mDOB.classList.add('error');*/
+  }
 })
 
 yDOB.addEventListener('blur', function(event) {
-  var currentTime = new Date()
-  if(yDOB.checkValidity() && (yDOB.value <= currentTime.getFullYear())) {
+  if(yDOB.checkValidity()) {
    yDOB.classList.remove('error');
- }
+  }
+  if(mDOB.checkValidity()) {
+   mDOB.classList.remove('error');
+  }
+  if(dDOB.checkValidity()) {
+   dDOB.classList.remove('error');
+  }
+  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
+   dDOB.classList.remove('error');
+   if(checkAge()){
+     dDOB.classList.remove('error');
+     mDOB.classList.remove('error');
+     yDOB.classList.remove('error');
+     dobPrompt.style.visibility = 'hidden';
+   }else{
+     dDOB.classList.add('error');
+     mDOB.classList.add('error');
+     yDOB.classList.add('error');
+     dobPrompt.style.visibility = 'visible';
+   }
+  /*}else{
+   yDOB.classList.add('error');*/
+  }
 })
 
 // Check validity onblur (i.e. click away)

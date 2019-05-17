@@ -59,15 +59,16 @@
               <label class="descriptor dob">Enter your DOB</label>
               <div class="inlineForm">
                 <div class="form-group inlineLeft dob">
-                  <input type="number" name="day" id="dDOB" min="1" max="31" maxlength="2" placeholder="dd" class="form-control-dob dob" required>
+                  <input type="number" name="day" id="dDOB" min="1" max="31" maxlength="2" placeholder="dd" class="form-control-dob prompt dob" required>
                 </div>
                 <div class="form-group inlineMiddle dob">
-                  <input type="number" name="month" id="mDOB" min="1" max="12" maxlength="2" placeholder="mm" class="form-control-dob dob" required>
+                  <input type="number" name="month" id="mDOB" min="1" max="12" maxlength="2" placeholder="mm" class="form-control-dob prompt dob" required>
                 </div>
                 <div class="form-group inlineRight dob">
-                  <input type="number" name="year" id="yDOB" min="1910" max="2050" minlength="4" maxlength="4" placeholder="yyyy" class="form-control-dob dob" required>
+                  <input type="number" name="year" id="yDOB" min="1910" max="2050" minlength="4" maxlength="4" placeholder="yyyy" class="form-control-dob prompt dob" required>
                 </div>
               </div>
+              <div class="descriptor prompt" id="dobPrompt">You must be 13 or older to use Prospela</div>
             </div>
             <div class="form-group" id="pwdContainer">
               <div class="descriptor">Password</div>
