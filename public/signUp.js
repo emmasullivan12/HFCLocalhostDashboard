@@ -287,7 +287,7 @@ yDOB.addEventListener('blur', function(event) {
 
 // Check validity onblur (i.e. click away)
 pwd.addEventListener('blur', function(event) {
-  if(pwd.checkValidity() && this.value.length > 7 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#$%^&*()_+]/) != -1) {
+  if(pwd.checkValidity() && this.value.length > 7 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#£$%^&*()_+]/) != -1) {
    pwd.classList.remove('error');
  }
 })
@@ -349,7 +349,7 @@ pwd.addEventListener('input', function(event) {
 });
 
 pwd.addEventListener('input', function(event) {
-  if( this.value.search(/[!@#$%^&*()_+]/) != -1){
+  if( this.value.search(/[!@#£$%^&*()_+]/) != -1){
     specCharReqCrl.style.color = 'transparent';
     specCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
     specCharReq.style.color = '#595959';
