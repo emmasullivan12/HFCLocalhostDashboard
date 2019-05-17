@@ -204,6 +204,8 @@ function checkAge() {
 dDOB.addEventListener('blur', function(event) {
   if(dDOB.checkValidity() && validateDay()) {
    dDOB.classList.remove('error');
+  }else{
+    dDOB.classList.add('error');
   }
   if(yDOB.checkValidity()) {
    yDOB.classList.remove('error');
@@ -211,7 +213,7 @@ dDOB.addEventListener('blur', function(event) {
   if(mDOB.checkValidity()) {
    mDOB.classList.remove('error');
   }
-  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity()) {
+  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
    dDOB.classList.remove('error');
    if(checkAge()){
      dDOB.classList.remove('error');
@@ -224,8 +226,8 @@ dDOB.addEventListener('blur', function(event) {
      yDOB.classList.add('error');
      dobPrompt.style.visibility = 'visible';
    }
-  /*}else{
-    dDOB.classList.add('error');*/
+  }else{
+    dDOB.classList.add('error');
  }
 })
 
@@ -236,12 +238,14 @@ mDOB.addEventListener('blur', function(event) {
   if(yDOB.checkValidity()) {
    yDOB.classList.remove('error');
   }
-  if(dDOB.checkValidity()) {
+  if(dDOB.checkValidity() && validateDay()) {
    dDOB.classList.remove('error');
+  }else{
+    dDOB.classList.add('error');
   }
   if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
    dDOB.classList.remove('error');
-   if(checkAge()){
+   if(checkAge() && validateDay()){
      dDOB.classList.remove('error');
      mDOB.classList.remove('error');
      yDOB.classList.remove('error');
@@ -264,7 +268,7 @@ yDOB.addEventListener('blur', function(event) {
   if(mDOB.checkValidity()) {
    mDOB.classList.remove('error');
   }
-  if(dDOB.checkValidity()) {
+  if(dDOB.checkValidity() && validateDay()) {
    dDOB.classList.remove('error');
   }
   if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
