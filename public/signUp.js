@@ -30,10 +30,12 @@ var dobPrompt = document.getElementById("dobPrompt");
 
 var numReqCrl = document.getElementById("numReq-crl");
 var upCharReqCrl = document.getElementById("upCharReq-crl");
+var lowCharReqCrl = document.getElementById("lowCharReq-crl");
 var specCharReqCrl = document.getElementById("specCharReq-crl");
 var numCharReqCrl = document.getElementById("numCharReq-crl");
 var numReq = document.getElementById("numReq");
 var upCharReq = document.getElementById("upCharReq");
+var lowCharReq = document.getElementById("lowCharReq");
 var specCharReq = document.getElementById("specCharReq");
 var numCharReq = document.getElementById("numCharReq");
 
@@ -52,16 +54,19 @@ mentorradio.checked = false;
 
 numReqCrl.style.color = 'transparent';
 upCharReqCrl.style.color = 'transparent';
+lowCharReqCrl.style.color = 'transparent';
 specCharReqCrl.style.color = 'transparent';
 numCharReqCrl.style.color = 'transparent';
 
 numReqCrl.style.textShadow = '0 0 0 #cbcaca';
 upCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+lowCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
 specCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
 numCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
 
 numReq.style.color = '#cbcaca';
 upCharReq.style.color = '#cbcaca';
+lowCharReq.style.color = '#cbcaca';
 specCharReq.style.color = '#cbcaca';
 numCharReq.style.color = '#cbcaca';
 
@@ -282,7 +287,7 @@ yDOB.addEventListener('blur', function(event) {
 
 // Check validity onblur (i.e. click away)
 pwd.addEventListener('blur', function(event) {
-  if(pwd.checkValidity() && this.value.length > 7 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[!@#$%^&*()_+]/) != -1) {
+  if(pwd.checkValidity() && this.value.length > 7 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#$%^&*()_+]/) != -1) {
    pwd.classList.remove('error');
  }
 })
@@ -325,6 +330,20 @@ pwd.addEventListener('input', function(event) {
     upCharReqCrl.style.color = 'transparent';
     upCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
     upCharReq.style.color = '#595959';
+    //pwd.classList.remove('error');
+  }
+});
+
+pwd.addEventListener('input', function(event) {
+  if( this.value.search(/[a-z]/) == -1){
+    lowCharReqCrl.style.color = 'transparent';
+    lowCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+    lowCharReq.style.color = '#cbcaca';
+    pwd.classList.add('error');
+  }else{
+    lowCharReqCrl.style.color = 'transparent';
+    lowCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
+    lowCharReq.style.color = '#595959';
     //pwd.classList.remove('error');
   }
 });
