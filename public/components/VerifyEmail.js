@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th May 2019
+// Dex last merged this code on 19th May 2019
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -9,7 +9,7 @@ class VerifyEmail extends React.Component {
     super();
     this.state = {
       isContainerOpen: false,
-      verifCode: ''
+      verificationCode: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.toggleContainer = this.toggleContainer.bind(this);
@@ -21,9 +21,9 @@ class VerifyEmail extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const { verifCode } = this.state;
+    const { verificationCode } = this.state;
     const submission = {
-      token: verifCode
+      token: verificationCode
     };
     console.log(submission);
 //    this.props.verifyEmail(submission);
@@ -37,9 +37,9 @@ class VerifyEmail extends React.Component {
   }
 
   canBeSubmitted() {
-    const { verifCode } = this.state;
+    const { verificationCode } = this.state;
     return (
-      verifCode.length > 0
+      verificationCode.length > 0
     );
   }
 
@@ -50,7 +50,7 @@ class VerifyEmail extends React.Component {
 
   render() {
   const isEnabled = this.canBeSubmitted();
-  const {isContainerOpen, verifCode} = this.state;
+  const {isContainerOpen, verificationCode} = this.state;
 
     return (
       <React.Fragment>
@@ -75,7 +75,7 @@ class VerifyEmail extends React.Component {
                       name="verificationCode"
                       className="form-control-pwd"
                       id="emailverifcode"
-                      value={this.state.verifCode}
+                      value={this.state.verificationCode}
                       onChange={this.handleChange}
                       required
                       autoFocus
@@ -87,7 +87,7 @@ class VerifyEmail extends React.Component {
                     Verify Email
                   </button>
                 </form>
-                <div className="login-error-msg">The email verification code does not exist. Please check and try again, or <a className="error-href" href="https://test.prospela.com/resendemailverificationcode">try re-entering your email</a></div>
+                <div className="login-error-msg">The email verification code does not exist. Please check and try again</div>
                 <button type="button" className="btnDescriptor button-unstyled alignLeft" onClick={this.toggleContainer}>
                   <span >Can&#39;t see the email? </span>
                   <span className="exclamation-icon-container">
