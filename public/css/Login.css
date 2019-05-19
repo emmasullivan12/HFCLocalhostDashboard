@@ -243,6 +243,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   color: #fff;
   position: relative;
   min-height: 61px;
+  max-height: 10%;
 }
 
 .prLogoContainer{
@@ -288,6 +289,16 @@ Extra large devices (large laptops and desktops, 1200px and up)
   text-align: left;
   font-family: Lato;
   margin-bottom: 0.2rem;
+}
+
+.btnDescriptor{
+  color: #595959;
+  font-size: 0.85rem;
+  text-align: left;
+  font-family: Lato;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  width: 100%;
 }
 
 .descriptor.dob{
@@ -496,6 +507,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   margin: 0.8rem 0;
   transition: background .15s ease-out;
   text-decoration: none;
+  opacity: 1;
 }
 
 .btn-general:hover{
