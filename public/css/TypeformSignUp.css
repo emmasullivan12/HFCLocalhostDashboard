@@ -1,0 +1,30 @@
+/* Dex last merged this code on 16th May 2019 */
+
+.progress-circles-container{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.thisStep{
+  display: inline-block;
+  margin-right: 4px;
+  width: 15px;
+  height: 1.3125rem;
+  text-align: left;
+  color: #351c75;
+  font-size: 13px;
+  opacity: 0.95;
+  left: 0;
+}
+
+.nxtStep{
+  display: inline-block;
+  margin-right: 4px;
+  width: 15px;
+  height: 1.3125rem;
+  text-align: left;
+  color: #e4e4e4;
+  font-size: 13px;
+  opacity: 0.95;
+  left: 0;
+}

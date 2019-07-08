@@ -20,7 +20,7 @@ class TypeformFullPage extends Component {
         mode: 'popup',
         autoOpen: false,
         autoClose: 350,
-        hideFooter: true,
+        hideFooter: false,
         hideHeaders: true,
         hideScrollbars: true,
         onSubmit: function () {

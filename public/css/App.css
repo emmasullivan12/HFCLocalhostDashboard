@@ -174,12 +174,12 @@ input[type=text]:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(255,255,255,0.45);
+  background: rgb(63,63,63,0.45);
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(216, 215, 245, 0.45);
+  background: rgb(63,63,635, 0.45);
 }
 
 .menuContainer{

@@ -11,9 +11,11 @@ import {
 class ProtectedRoute extends Component {
   render() {
     const userRole = this.props.userRole;
+    const step = this.props.step;
     const roleAllowed = this.props.roleAllowed;
     const isAllowed = (userRole === roleAllowed) ? true : false;
     const { component: Component, ...rest } = this.props;
+
     return (
       <Route
         {...rest}

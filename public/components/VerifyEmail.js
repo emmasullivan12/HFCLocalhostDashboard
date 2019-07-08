@@ -95,10 +95,10 @@ class VerifyEmail extends React.Component {
                   </span>
                 </button>
                 {isContainerOpen && (
-                  <div>
+                  <div className="descriptor subheader">
                     <ol>
                       <li>Check your junk email folder</li>
-                      <li>Check you entered your email address correctly (USER EMAIL). If not, <a href="https://test.prospela.com/signup">try signing up again</a></li>
+                      <li>Did you enter your email address correctly (USER EMAIL)? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
                       <li>Wait a few minutes or alternatively click to resend below</li>
                       <button type="submit" className="btn-general button-unstyled alignLeft" onClick={this.handleResendSubmit}>
                         <span >Resend code</span>

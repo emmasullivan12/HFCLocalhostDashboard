@@ -140,7 +140,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 2;
+  const step = 1;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
@@ -148,7 +148,7 @@ function MenteeSteps({userRole}) {
             <BrowserRouter>
               <Switch>
                 <Redirect exact from="/" to="/mentee-signup" />
-                <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" component={TypeformSignUp} />
+                <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
               </Switch>
             </BrowserRouter>
           );
@@ -157,7 +157,7 @@ function MenteeSteps({userRole}) {
             <BrowserRouter>
               <Switch>
                 <Redirect exact from="/" to="/verify-email" />
-                <Route path="/verify-email" component={VerifyEmail} />
+                <Route path="/verify-email" component={VerifyEmail} step={step} />
               </Switch>
             </BrowserRouter>
           );
@@ -167,7 +167,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 2;
+  const step = 1;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
@@ -175,20 +175,29 @@ function MentorSteps({userRole}) {
             <BrowserRouter>
               <Switch>
                 <Redirect exact from="/" to="/mentor-signup" />
-                <Route path="/mentor-signup" component={TypeformSignUp} />
+                <Route path="/mentor-signup" component={TypeformSignUp} step={step} />
               </Switch>
             </BrowserRouter>
           );
-        case 2:
+        /*case 2:
+          return (
+            <BrowserRouter>
+              <Switch>
+                <Redirect exact from="/" to="/mentor-training" />
+                <Route path="/mentor-training" component={TypeformSignUp} step={step} />
+              </Switch>
+            </BrowserRouter>
+          );*/
+        case 3:
           return (
             <BrowserRouter>
               <Switch>
                 <Redirect exact from="/" to="/verify-email" />
-                <Route path="/verify-email" component={VerifyEmail} />
+                <Route path="/verify-email" component={VerifyEmail} step={step} />
               </Switch>
             </BrowserRouter>
           );
-        case 3:
+        case 4:
           return <Dashboard userRole={userRole}/>
       }
 }

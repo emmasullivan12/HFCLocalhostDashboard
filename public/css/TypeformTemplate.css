@@ -1,16 +1,16 @@
 /* Dex last merged this code on 16th May 2019 */
 
-.typeform-title {
-  color: #3f3f3f;
-  font-size: 1.17em;
-  font-weight: bold;
+.typeformContainer{
+  padding: 100px 85px;
+  max-width: 618px;
+  display: inline-block;
 }
 
-.typeform-subheader {
-  color: #909293;
+.typeform-content{
+  padding-bottom: 40px;
 }
 
 .embedded-typeform{
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 100%;
 }
