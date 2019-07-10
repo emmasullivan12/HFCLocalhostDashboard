@@ -28,3 +28,10 @@
   opacity: 0.95;
   left: 0;
 }
+
+.skipText{
+  margin-top: 1rem;
+  color: #cacaca!important;
+  font-size: 0.8rem;
+  text-decoration: none;
+}

@@ -636,16 +636,18 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 .login-pic{
   height: 100%;
+  position: relative;
 }
 
 .login-picContainer{
-  max-height: 200px;
   max-width: 360px;
   flex-shrink: 0;
   float: right;
   margin-right: -10px;
   position: relative;
-  transform: translatey(50%);
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  top: 50%;
 }
 
 .prPlatformImg{

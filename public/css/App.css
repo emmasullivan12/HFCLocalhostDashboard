@@ -61,6 +61,13 @@ input[type=text]:focus {
   margin: 2em auto;
 }
 */
+.mainContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: scroll;*/
+  overflow-x: hidden;
+}
 
 .clientUI{
   display: flex;
@@ -90,6 +97,28 @@ input[type=text]:focus {
   visibility: visible;
 }
 
+.loadingMenuContainer{
+  position: absolute;
+  display: table;
+  width: 220px;
+  height: 100%;
+  top: 0;
+  z-index: 100;
+  background-image: url("https://prospela.com/wp-content/uploads/2019/03/Dashboard-Background.jpg");
+  background-size: cover;
+  background-color: #3f3f3f;
+}
+
+#loading-menu{
+  display: table-cell;
+  vertical-align: bottom;
+  background-image: url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/Placeholder-Text.png");
+  background-position: 21px 16px;
+  background-repeat: no-repeat;
+  background-size: 185px 200px;
+  opacity: 0.6;
+}
+
 .clientWindowContainer{
   position: relative;
   display: flex;
@@ -97,6 +126,132 @@ input[type=text]:focus {
   flex-grow: 1;
   min-width: 1px;
   background: #fff;
+}
+
+.loadingContainer{
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 220px;
+  z-index: 100;
+  background: #fff;
+}
+
+#loading-welcome{
+  display: table-cell;
+  vertical-align: middle;
+  background-image: url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatName.png"), url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatActions.png");
+  background-position: 21px 16px, right 235px top 16px;
+  background-repeat: no-repeat;
+  background-size: 200px 29px, 225px 13px;
+}
+
+.loadingMsg{
+  text-align: center;
+  margin-left: -220px;
+}
+
+.loadingWelcomeMsg{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+//Loading spinner
+.infiniteSpinner-medium{
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+.eczmJS {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.ebrxGH {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.iKvkDg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.dtuFiT svg {
+  display: block;
+}
+:not(svg) {
+  transform-origin: 0px 0px;
+}
+.dtuFiT rect {
+  fill: currentcolor;
+  opacity: 0.2;
+  animation: 0.8s ease 0s infinite normal none running biZQmF;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(9) {
+  animation-delay: 0.45s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(10) {
+  animation-delay: 0.5s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(11) {
+  animation-delay: 0.55s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(12) {
+  animation-delay: 0.6s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(13) {
+  animation-delay: 0.65s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(14) {
+  animation-delay: 0.7s;
+}
+.dtuFiT rect, .dtuFiT rect:nth-child(15) {
+  animation-delay: 0.75s;
+}
+@keyframes biZQmF {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.2;
+  }
 }
 
 .button-unstyled {
@@ -209,9 +364,9 @@ input[type=text]:focus {
   line-height: 30px;
   width: 69px;
   flex-shrink: 0;
-  position: absolute;
-  bottom: 20px;
-  right: 16px;
+  position: absolute!important;
+  bottom: 20px!important;
+  right: 16px!important;
 }
 
 .prLogoImg{

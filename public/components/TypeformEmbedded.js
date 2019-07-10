@@ -20,7 +20,7 @@ class TypeformEmbedded extends Component {
       embedElement,
       tflink,
       {
-        hideFooter: true,
+        hideFooter: false,
         hideHeaders: true,
         opacity: 0,
         hideScrollbars: true,

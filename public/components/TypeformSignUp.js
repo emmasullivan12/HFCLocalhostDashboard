@@ -25,9 +25,6 @@ const MenteeTypeformSignUpContent  = ({tflink, step}) => (
       <div className={(step==2) ? "thisStep" : "nxtStep"}>
         <i className="fas fa-circle"  />
       </div>
-      <div className={(step==3) ? "thisStep" : "nxtStep"}>
-        <i className="fas fa-circle"  />
-      </div>
     </div>
     <div className='embedded-typeform'>
       <TypeformEmbedded
@@ -39,8 +36,14 @@ const MenteeTypeformSignUpContent  = ({tflink, step}) => (
 
 //This includes props and title to be passed to TypeformTemplate if Student is signing up
 const MentorTypeformSignUpProps = {
-  subheader: 'This will take about 10 min, but we’ll be better able to match you to students based on your skills, interests, interests and personality … which makes for more successful mentoring!',
+  subheader: 'This will help us better match you to students based on your skills, interests, interests and personality … which makes for more successful mentoring!',
   title: 'Set up your profile'
+}
+
+//This includes props and title to be passed to TypeformTemplate if Student is signing up
+const MentorTypeformTrainingProps = {
+  subheader: 'This will take about 10 min and will help you feel at home being an E-mentor with Prospela. Training is mandatory before we introduce you with your student matches.',
+  title: 'Complete your Training'
 }
 
 // This includes all content to appear below TypeformTemplate title for the Student Sign Up flow
@@ -53,27 +56,28 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
       <div className={step===2 ? "thisStep" : "nxtStep"}>
         <i className="fas fa-circle" />
       </div>
-      <div className={step===3 ? "thisStep" : "nxtStep"}>
-        <i className="fas fa-circle" />
-      </div>
     </div>
     <div className='embedded-typeform'>
       <TypeformEmbedded
         tflink={tflink}
       />
     </div>
+    {step===2 && (
+      <a className="skipText" href="www.prospela.com">
+        Short on time? Skip ahead and complete later.
+      </a>
+    )}
   </div>
 )
 // Content for Typeform Template being used for Sign Ups
 class TypeformSignUp extends Component {
   render() {
     const userRole = this.props.userRole;
-    const step = 1;
+    const step = 2;
     const fname = 'Emma';
     const id = '12345';
-    const mentortflink = 'https://prospela.typeform.com/to/miX7CZ?fname='+fname+'&uid='+id;
+    const mentortflink = step===1 ? 'https://prospela.typeform.com/to/miX7CZ?fname='+fname+'&uid='+id : 'https://prospela.typeform.com/to/s5nFr9?fname='+fname+'&uid='+id;
     const menteetflink = 'https://prospela.typeform.com/to/cOQ1a0?fname='+fname+'&uid='+id;
-    console.log(step);
 
     if(userRole === 'mentee') {
       return (
@@ -86,15 +90,28 @@ class TypeformSignUp extends Component {
         </React.Fragment>
       );
     } else {
-      return (
-      	<React.Fragment>
-          {fname && (
-            <TypeformTemplate {...MentorTypeformSignUpProps}>
-      	      <MentorTypeformSignUpContent tflink={mentortflink} step={step}/>
-            </TypeformTemplate>
-          )}
-	      </React.Fragment>
-      );
+      switch (step) {
+        case 1:
+          return (
+            <React.Fragment>
+              {fname && (
+                <TypeformTemplate {...MentorTypeformSignUpProps}>
+          	      <MentorTypeformSignUpContent tflink={mentortflink} step={step}/>
+                </TypeformTemplate>
+              )}
+    	      </React.Fragment>
+          );
+        case 2:
+          return (
+            <React.Fragment>
+              {fname && (
+                <TypeformTemplate {...MentorTypeformTrainingProps}>
+          	      <MentorTypeformSignUpContent tflink={mentortflink} step={step}/>
+                </TypeformTemplate>
+              )}
+    	      </React.Fragment>
+          );
+      }
     }
   }
 }

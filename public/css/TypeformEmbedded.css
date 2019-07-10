@@ -1,22 +1,13 @@
 /* Dex last merged this code on 16th May 2019 */
 
-/* Removing Typeform default scrollbar formatting
-.brWDeN
-.ayhXL
-
-.sc-jzJRlG.ayhXL::-webkit-scrollbar {
-  width: 8px;
+/* Removing Typeform default scrollbar formatting */
+.css-w5pcnp.e12baen61{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
-.sc-jzJRlG.ayhXL::-webkit-scrollbar-track {
-  right: 12px;
-  top:0;
-  bottom:0;
+iframe{
+  border: 0px;
+  width: 103.7%;
+  overflow: scroll;
 }
-.sc-jzJRlG.ayhXL::-webkit-scrollbar-thumb {
-  background: rgb(63,63,63,0.45);
-  border-radius: 8px;
-}
-.sc-jzJRlG.ayhXL::-webkit-scrollbar-thumb:hover {
-  background: rgb(63,63,635, 0.45);
-}
-*/
