@@ -1,0 +1,367 @@
+/* General CSS styles to add to any individual element anywhere in the app */
+
+/* SCREEN SIZING ADJUSTMENTS */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+/* Medium devices (landscape tablets, 759px and up) */
+@media only screen and (min-width: 759px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...} */
+[class*="col-"] {
+  float: left;
+}
+/* For Extra small devices (phones, 600px and down): */
+[class*="col-"] {
+  width: 100%;
+}
+@media screen and (max-width: 759px) {
+  .loadingContainer {
+    left: 0!important;
+  }
+  .loadingMsg {
+    margin-left: 0px!important;
+  }
+  #loading-welcome {
+    background-position: 21px 16px, right 15px top 16px!important;
+  }
+  .login-pic {
+    display: none;
+  }
+}
+
+/* FONT */
+.bold{
+  font-weight: 600;
+}
+.greenText{
+  color: #14bd14;
+  font-size: 13px;
+}
+.neutralText{
+  color: #c7c7c7;
+  font-size: 13px;
+}
+.neutralText-large{
+  color: #b1b1b1;
+  font-size: 18px;
+  font-weight: 600;
+}
+.neutralText-small{
+  color: #c7c7c7;
+  font-size: 12px;
+}
+.redText{
+  color: #da0b0b;
+  font-size: 13px;
+}
+
+/* POSITIONING */
+.alignCenter{
+  text-align: center;
+}
+.alignLeft{
+  float:left;
+}
+.alignRight{
+  float: right;
+}
+
+.button-unstyled {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: inherit;
+  overflow: inherit;
+  padding: 0;
+  text-align: initial;
+  vertical-align: initial;
+  cursor: pointer;
+  opacity: .6;
+}
+.descriptor{
+  color: #595959;
+  font-size: 0.85rem;
+  text-align: left;
+  font-family: Lato;
+  margin-bottom: 0.2rem;
+}
+.descriptor-br{
+  text-align: right;
+  font-size: 13px;
+  color: #c7c7c7;
+  margin: 0.25rem 0 1.5rem;
+}
+.noPadding{
+  padding-left: 0!important;
+  padding-right: 0!important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.overflow-ellipsis{
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.tooltip{
+  position: relative;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #3f3f3f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: .8rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* BUTTONS */
+/* ModalTrigger Buttons */
+
+/* Modal Content Buttons */
+.Submit-btn{
+  color: #fff;
+  font-weight: 600;
+  background: #58d2bb;
+  border-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 40px;
+  min-width: 180px;
+  text-align: center;
+  padding: 0;
+  transition: background .15s ease-out;
+}
+.Submit-btn:hover{
+  background: #06bf9c; /* #58d2bbd9; */
+  color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.Submit-btn:disabled{
+  color: #9f9fa0;
+  background: #e0e1e2;
+  cursor: default;
+  box-shadow: none;
+}
+.Submit-btn:active{
+  background: #58d2bb;
+}
+
+/* In-chat Buttons */
+
+
+/* CHECKBOXES */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 95px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 25px;
+  width: 25px;
+  background-color: #4e4ed61c;
+}
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #4e4ed64a;
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #4e4ed6c9;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* LINKS */
+a {
+  color: #8f8fe5;
+}
+/* unvisited link */
+a:link {
+  color: #8f8fe5;
+}
+/* visited link */
+a:visited {
+  color: #8f8fe5;
+}
+/* mouse over link */
+a:hover {
+  color: #7e7ec9;
+}
+/* selected link */
+a:active {
+  color: #8f8fe5;
+}
+.legal-href{
+  color: #cacaca!important;
+}
+.error-href{
+  color: red!important;
+}
+.link{
+  text-decoration: none;
+}
+.inline-link{
+  text-decoration: none;
+  color: #1264a3;
+  font-weight: 700;
+  cursor: pointer;
+}
+.inline-link:hover {
+  text-decoration: underline;
+  color: #0b4c8c;
+  outline: 0;
+  cursor: pointer;
+}
+
+/* IMAGES */
+.img-circle {
+  border-radius: 50%;
+}
+.img-square {
+  border-radius: .25rem;
+}
+
+
+/* ICONS */
+.down-arrow-img-icon{
+  font-size: 15px;
+  color: rgba(29,28,29,.7);
+  opacity: 1;
+  order: 2;
+  margin-left: 6px;
+  margin-top: -2px;
+}
+.presenceContainer{
+  float: left;
+  margin-left: -5px;
+  margin-right: 4px;
+  width: 20px;
+  height: 1.3125rem;
+  text-align: center;
+  color: #00ffb7;
+  font-size: 13px;
+  opacity: 0.95;
+}
+.trophyContainer{
+  float: left;
+  margin-left: -5px;
+  margin-right: 8px;
+  width: 20px;
+  height: 1.75rem;
+  text-align: center;
+  color: #ffd211;
+  font-size: 20px;
+  opacity: 0.89;
+}
+
+/* MODALS */
+/* Hides the text within the close button (we don't need to see it, */
+/* but this way screen readers will still be able to pick up on it) */
+.u-hide-visually {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* Lock the scroll position by adding this class to the `<html>` element.*/
+.u-lock-scroll {
+  overflow: hidden !important;
+}

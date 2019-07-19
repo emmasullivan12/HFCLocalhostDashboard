@@ -2,6 +2,8 @@
 
 import React, { Component } from "react";
 import "../css/RequestChatContent.css";
+import "../css/Emoji.css";
+import "../css/General.css";
 
 class AcceptMenteeContent extends Component {
   constructor(props) {
@@ -49,7 +51,7 @@ class AcceptMenteeContent extends Component {
             onChange={this.handleMessageChange}
             required
           />
-          <div className="textInputDetail">
+          <div className="descriptor-br">
             (Minimum 50 characters)
           </div>
           <div className="need-ideas-container">
@@ -61,21 +63,21 @@ class AcceptMenteeContent extends Component {
             </div>
             <ul className="ideas-list">
               <li className="ideas-list-item">
-                <div className="wave-emoji-icon" />
+                <div className="emoji-icon wave-emoji" />
                 <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re working on, your hobbies)</div>
               </li>
               <li className="ideas-list-item">
-                <div className="heart-emoji-icon" />
+                <div className="emoji-icon heart-emoji" />
                 <div className="idea-item-text"><strong>Your career path</strong> (what role / industries you have experience in)</div>
               </li>
               <li className="ideas-list-item">
-                <div className="sunglasses-emoji-icon" />
+                <div className="emoji-icon sunglasses-emoji" />
                 <div className="idea-item-text"><strong>Why this mentee</strong> (what you think you can help them with)</div>
               </li>
             </ul>
           </div>
           <div className="request-btn-container">
-            <button type="submit" disabled={!isEnabled} className="RequestChat-btn" onSubmit={this.handleSubmit}>
+            <button type="submit" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
               Accept
             </button>
           </div>

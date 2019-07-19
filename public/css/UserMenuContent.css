@@ -56,13 +56,6 @@
   cursor: text;
 }
 
-.overflow-ellipsis{
-  white-space: nowrap;
-  display: block;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 .userMenu-list{
   margin: 0;
   padding: 0;
@@ -143,20 +136,6 @@
   line-height: 22px;
   margin: 0;
   user-select: none;
-}
-
-.userMenu-inline-link{
-  text-decoration: none;
-  color: #1264a3;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.userMenu-inline-link:hover {
-  text-decoration: underline;
-  color: #0b4c8c;
-  outline: 0;
-  cursor: pointer;
 }
 
 .userMenu-settings{

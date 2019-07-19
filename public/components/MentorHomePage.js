@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import TypeformFullSignUp from './TypeformFullSignUp';
 import MentorMatches from './MentorMatches';
 import "../css/MentorHomePage.css";
+import "../css/General.css";
 
 class MentorHomePage extends Component {
   render(){

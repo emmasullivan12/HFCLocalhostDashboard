@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "../css/DisplayMsgFile.css";
+import "../css/General.css";
 
 // This is a container for all messages in the chat
 class DisplayMsgFile extends Component {

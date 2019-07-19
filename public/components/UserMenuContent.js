@@ -5,6 +5,7 @@ import {
   NavLink
 } from "react-router-dom";
 import "../css/UserMenuContent.css";
+import "../css/General.css";
 
 class UserMenuContent extends Component {
   render() {
@@ -54,7 +55,7 @@ class UserMenuContent extends Component {
             <ul className="userMenu-list">
               <li className="userMenu-list-item-nohover">
                 <span className="userMenu-eduInstDetail overflow-ellipsis">
-                  Sign up your school to access real employee e-mentors. <NavLink to="/invite" className="userMenu-inline-link">Learn more</NavLink>
+                  Sign up your school to access real employee e-mentors. <NavLink to="/invite" className="inline-link">Learn more</NavLink>
                 </span>
               </li>
             </ul>

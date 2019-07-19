@@ -1,5 +1,12 @@
 /* Dex last merged this code on 16th May 2019 */
 
+/* SCREEN SIZING ADJUSTMENTS */
+@media screen and (max-width: 1178px) {
+  .cards-container {
+    justify-content: flex-start;
+  }
+}
+
 .mentor-matches-container{
   width: 100%;
   background-color: #f5f4ff;
@@ -40,12 +47,6 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-}
-
-@media screen and (max-width: 1178px) {
-  .cards-container {
-    justify-content: flex-start;
-  }
 }
 
 .recd-match{
@@ -100,10 +101,6 @@
   height:2.5rem;
   border-style:none;
   background-size: cover;
-}
-
-.img-circle {
-  border-radius: 50%;
 }
 
 /* not yet used

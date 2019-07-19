@@ -170,6 +170,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* SCREEN SIZING ADJUSTMENTS */
 @media screen and (min-width: 500px) {
   .modal-container {
     left: 50%;
@@ -187,6 +188,23 @@
   color: #2c2d30;
   font-weight: 900;
   margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.modal-preTitle{
+  font-size: 16px;
+  line-height: 1.36363636;
+  color: #2c2d30;
+  font-weight: 900;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.modal-subtitle{
+  font-size: 22px;
+  color: #4e4ed6;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
   width: 100%;
   text-align: center;
 }
@@ -211,25 +229,6 @@
   stroke: black;
   stroke-linecap: round;
   stroke-width: 2;
-}
-
-/* Hides the text within the close button (we don't need to see it, */
-/* but this way screen readers will still be able to pick up on it) */
-.u-hide-visually {
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
-}
-
-/* Lock the scroll position by adding this class to the `<html>` element.*/
-.u-lock-scroll {
-  overflow: hidden !important;
 }
 
 .modal-content {

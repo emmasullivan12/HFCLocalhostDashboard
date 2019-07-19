@@ -2,24 +2,15 @@
 
 import React, { Component } from "react";
 
-import AcceptMenteeContent from './AcceptMenteeContent.js';
+import AcceptCTA from './AcceptCTA.js';
+import AudioCTA from './AudioCTA.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
+import FeedbkCTA from './FeedbkCTA.js';
 import Modal from './Modal.js';
-import PassMenteeContent from './PassMenteeContent.js';
 
+import "../css/Emoji.css";
+import "../css/General.css";
 import "../css/PrMessage.css";
-
-const AcceptMenteeModalProps = {
-  ariaLabel: 'Popup to accept chat with matched Mentee',
-  triggerText: 'Accept Mentee',
-  usedFor: 'msgExtras-accept'
-}
-
-const PassMenteeModalProps = {
-  ariaLabel: 'Pass on Mentee',
-  triggerText: 'Pass',
-  usedFor: 'msgExtras-pass'
-}
 
 function Avatar(props) {
   return (
@@ -79,51 +70,13 @@ function DisplayFile(props) {
   );
 }
 
-class MsgExtrasCTA extends Component {
-  constructor () {
-    super();
-    this.state = {
-      CTAcompleted: false,
-      accepted: false
-    }
-  }
-
-  render() {
-    const {CTAcompleted, accepted} = this.state;
-
-    switch (CTAcompleted) {
-      case true:
-        return (
-          <div className="msg-extras-btns">
-            {accepted ? (
-              <div className="acceptText">&#10004; You Accepted</div>
-            ) : (
-              <div className="passedText">&#10008; You Passed</div>
-            )}
-          </div>
-        );
-      case false:
-        return (
-          <div className="msg-extras-btns">
-            <Modal {...AcceptMenteeModalProps}>
-              <AcceptMenteeContent />
-            </Modal>
-            <Modal {...PassMenteeModalProps}>
-              <PassMenteeContent />
-            </Modal>
-          </div>
-        );
-    }
-  }
-}
-
 function MenteeReq(props) {
   return (
     <React.Fragment>
-      <div className="prospela-auto-msg-container">
+      <div className="prauto-msg-container">
         <div className="msg-title-container">
             <div className="title-emoji-container">
-              <i className="tada-emoji-icon" />
+              <i className="emoji-icon tada-emoji" />
             </div>
             <div className="message-content-box msgTitle">
               <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; {props.message.text}</span>
@@ -149,21 +102,50 @@ function MenteeReq(props) {
             </div>
           </div>
         </div>
-        <MsgExtrasCTA />
+        <AcceptCTA />
       </div>
     </React.Fragment>
   );
 }
 
 function PrAuto(props) {
-  return (
-    <div className="prospela-auto-msg-container">
-      <div>
-        {props.message.text}
-        {props.message.time}
-      </div>
-    </div>
-  );
+  switch (props.message.prAuto.title) {
+    case 'prompt':
+      return (
+        <div className="prauto-msg-container">
+          Reminder to reply to message
+        </div>
+      );
+    case 'ending':
+      return (
+        <div className="prauto-msg-container">
+          <div className="msg-title-container">
+              <div className="title-emoji-container">
+                <i className="emoji-icon timer-emoji" />
+                <i className="emoji-icon sad-emoji" />
+              </div>
+              <div className="message-content-box msgTitle">
+                <span className="prAutoMsgTitle">Your mentoring match is coming to an end soon</span>
+              </div>
+          </div>
+          <AudioCTA />
+        </div>
+      );
+    case 'ended':
+      return (
+        <div className="prauto-final-msg-container">
+          <div className="msg-title-container">
+              <div className="title-emoji-container">
+                <i className="emoji-icon timesup-emoji" />
+              </div>
+              <div className="message-content-box msgTitle">
+                <span className="prAutoMsgTitle">Your 3-month match ended</span>
+              </div>
+          </div>
+          <FeedbkCTA />
+        </div>
+      );
+  }
 }
 
 class PrMessage extends Component {

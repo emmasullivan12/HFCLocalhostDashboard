@@ -95,37 +95,9 @@
   display: flex;
 }
 
-.presenceContainer{
-  float: left;
-  margin-left: -5px;
-  margin-right: 4px;
-  width: 20px;
-  height: 1.3125rem;
-  text-align: center;
-  color: #00ffb7;
-  font-size: 13px;
-  opacity: 0.95;
-}
-
 .userName{
   order: 1;
   max-width: 9.12rem;
-}
-
-.button-unstyled {
-  background: none;
-  border: 0;
-  outline: none;
-  color: inherit;
-  font: inherit;
-  margin: 0;
-  line-height: inherit;
-  overflow: inherit;
-  padding: 0;
-  text-align: initial;
-  vertical-align: initial;
-  cursor: pointer;
-  opacity: .6;
 }
 
 .userBadgesContainer{
@@ -135,18 +107,6 @@
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.trophyContainer{
-  float: left;
-  margin-left: -5px;
-  margin-right: 8px;
-  width: 20px;
-  height: 1.75rem;
-  text-align: center;
-  color: #ffd211;
-  font-size: 20px;
-  opacity: 0.89;
 }
 
 .badgeName{
@@ -195,23 +155,4 @@
   stroke: black;
   stroke-linecap: round;
   stroke-width: 2;
-}
-
-/* Hides the text within the close button (we don't need to see it, */
-/* but this way screen readers will still be able to pick up on it) */
-.u-hide-visually {
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
-}
-
-/* Lock the scroll position by adding this class to the `<html>` element.*/
-.u-lock-scroll {
-  overflow: hidden !important;
 }

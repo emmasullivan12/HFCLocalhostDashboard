@@ -15,13 +15,6 @@
   background: #fff;
 }
 
-.overflow-ellipsis{
-  white-space: nowrap;
-  display: block;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 .page-detail-container{
   margin-right: 10px;
 }

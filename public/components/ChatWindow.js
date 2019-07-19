@@ -7,6 +7,7 @@ import PrAddMessage from "./PrAddMessage";
 import Modal from "./Modal";
 import FileUploadContent from "./FileUploadContent";
 import "../css/ChatWindow.css";
+import "../css/General.css";
 
 
 // FlexContainerContent provides all of the Content within FlexContainer

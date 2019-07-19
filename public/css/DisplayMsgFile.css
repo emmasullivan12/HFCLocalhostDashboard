@@ -22,15 +22,6 @@
   font-size: 12px;
 }
 
-.down-arrow-img-icon{
-  font-size: 15px;
-  color: rgba(29,28,29,.7);
-  opacity: 1;
-  order: 2;
-  margin-left: 6px;
-  margin-top: -2px;
-}
-
 .msg-img-container{
   max-width: 100%;
 }
@@ -51,20 +42,4 @@
   max-width: 100%;
   vertical-align: middle;
   border: 0;
-}
-
-.button-unstyled {
-  background: none;
-  border: 0;
-  outline: none;
-  color: inherit;
-  font: inherit;
-  margin: 0;
-  line-height: inherit;
-  overflow: inherit;
-  padding: 0;
-  text-align: initial;
-  vertical-align: initial;
-  cursor: pointer;
-  opacity: .6;
 }

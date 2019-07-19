@@ -1,9 +1,5 @@
 /* Dex last merged this code on 16th May 2019 */
 
-.link{
-  text-decoration: none;
-}
-
 .chatMenu-header{
   color: rgb(255,255,255,0.835);
   font-size: 16px;
@@ -42,13 +38,6 @@
   text-decoration: none;
   font-size: 16px;
   margin-right: 15px;
-}
-
-.overflow-ellipsis{
-  white-space: nowrap;
-  display: block;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .presenceContainer{

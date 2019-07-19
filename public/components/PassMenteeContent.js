@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import "../css/PassMatchContent.css";
+import "../css/General.css";
 
 class PassMenteeContent extends Component {
   constructor(props) {
@@ -93,7 +94,7 @@ class PassMenteeContent extends Component {
             />
             <span className="checkmark" />
           </label>
-          <div className="modal-textbox-title">
+          <div className="descriptor bold">
             How could we better match you?
           </div>
           <input

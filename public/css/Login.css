@@ -35,30 +35,6 @@ h1{
   text-align: left;
 }
 
-a {
-  color: #8f8fe5;
-}
-
-/* unvisited link */
-a:link {
-  color: #8f8fe5;
-}
-
-/* visited link */
-a:visited {
-  color: #8f8fe5;
-}
-
-/* mouse over link */
-a:hover {
-  color: #7e7ec9;
-}
-
-/* selected link */
-a:active {
-  color: #8f8fe5;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -86,18 +62,6 @@ a:active {
   overflow-x: hidden;
 }
 
-.alignLeft{
-  float:left;
-}
-
-.alignRight{
-  float: right;
-}
-
-.bold{
-  font-weight: 600;
-}
-
 .button-unstyled {
   background: none;
   border: 0;
@@ -113,57 +77,8 @@ a:active {
   cursor: pointer;
 }
 
-[class*="col-"] {
-  float: left;
-}
-
-/* For Extra small devices (phones, 600px and down): */
-[class*="col-"] {
-  width: 100%;
-}
-
 input[type=text]:disabled{
   background: #dddddd;
-}
-
-.tooltip{
-  position: relative;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 180px;
-  background-color: #3f3f3f;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  font-size: .8rem;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext{
-  visibility: visible;
-  opacity: 1;
 }
 
 .form-control-std.error,
@@ -191,44 +106,6 @@ input[type=text]:disabled{
   -moz-appearance: none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-/* Medium devices (landscape tablets, 759px and up) */
-@media only screen and (min-width: 759px) {
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-/* Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}
-
-Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...} */
-
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #d9d9d9;
   opacity: 1; /* Firefox */
@@ -254,20 +131,13 @@ Extra large devices (large laptops and desktops, 1200px and up)
   height: 100%;
 }
 
-@media screen and (max-width: 759px) {
-  .login-pic {
-    display: none;
-  }
-}
-
 .prLogoArea{
   color: #fff;
   position: relative;
   min-height: 61px;
 }
 
-/*
-.prLogoContainer{
+.prLogoLoginContainer{
   height: 30px;
   width: 69px;
   flex-shrink: 0;
@@ -275,7 +145,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
   top: 20px;
   left: 30px;
 }
-*/
 
 .prLogoImg{
   display: block;
@@ -305,14 +174,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   font-family: Lato;
 }
 
-.descriptor{
-  color: #595959;
-  font-size: 0.85rem;
-  text-align: left;
-  font-family: Lato;
-  margin-bottom: 0.2rem;
-}
-
+/*
 .btnDescriptor{
   color: #595959;
   font-size: 0.85rem;
@@ -331,6 +193,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .btnDescriptor:focus{
   opacity: 0.8;
 }
+*/
 
 .descriptor.dob{
   float: left;
@@ -627,14 +490,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
   margin-top: 1rem;
   color: #cacaca!important;
   font-size: 0.7rem;
-}
-
-.legal-href{
-  color: #cacaca!important;
-}
-
-.error-href{
-  color: red!important;
 }
 
 .login-pic{

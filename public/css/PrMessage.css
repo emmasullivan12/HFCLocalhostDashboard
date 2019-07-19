@@ -9,12 +9,13 @@
 
 .title-emoji-container {
   margin-left: 0;
-  margin-right: 4px;
+  margin-right: 10px;
   float: left;
   font-size: 13px;
-  width: 2.5rem;
+  width: auto;
   height: 1.3125rem;
   box-sizing: content-box;
+  display: flex;
 }
 
 .msg-thumb {
@@ -23,10 +24,6 @@
   Height:2.5rem;
   Border-style:none;
   background-size: cover;
-}
-
-.img-square {
-  border-radius: .25rem;
 }
 
 .block-container {
@@ -48,13 +45,6 @@
   flex-wrap:nowrap;
   box-sizing: inherit;
   height:auto;
-}
-
-.noPadding{
-  padding-left: 0!important;
-  padding-right: 0!important;
-  padding-top: 0!important;
-  padding-bottom: 0!important;
 }
 
 .message-content-box {
@@ -119,9 +109,18 @@
   letter-spacing: 0.275px;
 }
 
-.prospela-auto-msg-container{
+.prauto-msg-container{
   width: 100%;
-  background-color: #e9e8f7;
+  background-color: #eeedfb;
+  text-align: center;
+  min-height: 30px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.prauto-final-msg-container{
+  width: 100%;
+  background-color: #fff;
   text-align: center;
   min-height: 30px;
   padding-top: 1rem;
@@ -164,38 +163,4 @@
   width: 6px;
   background-color: #4e4ed6;;
   border-radius: 8px;
-}
-
-.wave-emoji-icon{
-  float: left;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png");
-  background-size: 5200% 5200%;
-  background-position: 27.451% 72.549%;
-}
-
-.tada-emoji-icon{
-  float: left;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png");
-  background-size: 5200% 5200%;
-  background-position: 15.6863% 54.902%;
-}
-
-.acceptText{
-  color: #14bd14;
-  font-size: 13px;
-}
-
-.passedText{
-  color: #da0b0b;
-  font-size: 13px;
 }

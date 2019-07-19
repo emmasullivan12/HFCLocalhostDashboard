@@ -1,28 +1,5 @@
 /* Dex last merged this code on 16th May 2019 */
 
-.SubmitMatch-btn{
-  padding: .1em .5em;
-  color: #4285f4;
-  background: #e2edff;
-  border: 2px solid #bad2fa;
-  border-radius: 1em;
-  cursor: pointer;
-  outline: none;
-  text-align: center;
-  transition: background .15s ease-out;
-}
-
-.SubmitMatch-btn:disabled{
-  padding: .1em .5em;
-  color: #9f9fa0;
-  background: #e0e1e2;
-  border: 2px solid #c2c4c6;
-  border-radius: 1em;
-  cursor: none;
-  outline: none;
-  transition: background .15s ease-out;
-}
-
 .SubmitMatch-input{
   display: block;
   width: 100%;

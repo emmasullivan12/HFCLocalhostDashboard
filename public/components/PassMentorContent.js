@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import "../css/PassMatchContent.css";
+import "../css/General.css";
 
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class PassMentorContent extends Component {
@@ -93,7 +94,7 @@ class PassMentorContent extends Component {
             />
             <span className="checkmark" />
           </label>
-          <div className="modal-textbox-title">
+          <div className="descriptor bold">
             Please comment:
           </div>
           <input

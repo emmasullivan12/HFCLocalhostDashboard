@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "../css/Login.css";
+import "../css/General.css";
 
 class VerifyEmail extends React.Component {
   constructor () {

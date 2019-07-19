@@ -1,0 +1,42 @@
+/* Dex last merged this code on 16th May 2019 */
+
+.emoji-icon{
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  background-image: url("https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png");
+  background-size: 5200% 5200%;
+}
+
+.footprints-emoji{
+  background-position: 29.4118% 76.4706%;
+}
+.heart-emoji{
+  background-position: 49.0196% 3.92157%;
+}
+.ok-emoji{
+  background-position: 27.451% 84.3137%;
+}
+.sad-emoji{
+  background-position: 58.8235% 86.2745%;
+}
+.sunglasses-emoji{
+  background-position: 58.8235% 74.5098%;
+}
+.tada-emoji{
+  background-position: 15.6863% 54.902%;
+}
+.timer-emoji{
+  background-position: 92.1569% 0%;
+}
+.timesup-emoji{
+  background-position: 90.1961% 82.3529%;
+}
+.typing-emoji{
+  background-position: 49.0196% 45.098%;
+}
+.wave-emoji{
+  background-position: 27.451% 72.549%;
+}

@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import "../css/MentorCard.css";
+import "../css/General.css";
 import Modal from './Modal.js';
 import RequestChatContent from './RequestChatContent.js';
 import PassMentorContent from './PassMentorContent.js';

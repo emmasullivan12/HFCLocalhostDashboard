@@ -1,14 +1,5 @@
 /* Dex last merged this code on 16th May 2019 */
 
-.modal-title{
-  font-size: 20px;
-  line-height: 1.36363636;
-  color: #2c2d30;
-  font-weight: 900;
-  margin-bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
 
 .request-mentor-name{
   font-size: 20px;
@@ -23,45 +14,6 @@
   display: flex;
   width: 100%;
   justify-content: center;
-}
-
-.RequestChat-btn{
-  color: #fff;
-  font-weight: 600;
-  background: #58d2bb;
-  border-radius: .5rem;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  height: 40px;
-  min-width: 180px;
-  text-align: center;
-  padding: 0;
-  transition: background .15s ease-out;
-}
-
-.RequestChat-btn:hover{
-  background: #58d2bbd9;
-  color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
-}
-
-.RequestChat-btn:disabled{
-  color: #9f9fa0;
-  background: #e0e1e2;
-  cursor: default;
-  box-shadow: none;
-}
-
-.RequestChat-btn:active{
-  background: #58d2bb;
-}
-
-.textInputDetail{
-  text-align: right;
-  font-size: 13px;
-  color: #c7c7c7;
-  margin: 0.25rem 0 1.5rem;
 }
 
 .requestChatMessage-Form{
@@ -109,42 +61,6 @@
 
 .ideas-list-item{
   margin-bottom: 15px;
-}
-
-.wave-emoji-icon{
-  float: left;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png");
-  background-size: 5200% 5200%;
-  background-position: 27.451% 72.549%;
-}
-
-.heart-emoji-icon{
-  float: left;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url(https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png);
-  background-size: 5200% 5200%;
-  background-position: 49.0196% 3.92157%;
-}
-
-.sunglasses-emoji-icon{
-  float: left;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url(https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png);
-  background-size: 5200% 5200%;
-  background-position: 58.8235% 74.5098%;
 }
 
 .idea-item-text{

@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import "../css/MainMenu.css";
+import "../css/General.css";
 import {
   Route,
   NavLink

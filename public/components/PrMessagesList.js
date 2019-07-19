@@ -85,9 +85,22 @@ class PrMessagesList extends Component {
         uid: '12345',
         type: 'message',
         subtype: 'prAuto',
-        author: 'dexter',
+        author: 'prospela',
         time: '12:10pm',
-        text: 'This is my message'
+        prAuto: {
+          title: 'ending'
+        }
+      },
+      {
+        id: '100002',
+        uid: '12345',
+        type: 'message',
+        subtype: 'prAuto',
+        author: 'prospela',
+        time: '12:10pm',
+        prAuto: {
+          title: 'ended'
+        }
       }
     ];
 

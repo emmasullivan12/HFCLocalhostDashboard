@@ -87,7 +87,7 @@ class SubmitMatchContent extends Component {
             onChange={this.handleMessageChange}
           />
         </form>
-        <button type="button" disabled={!isEnabled} className="SubmitMatch-btn" onSubmit={this.handleSubmit}>
+        <button type="button" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
           Submit Match
         </button>
       </React.Fragment>
