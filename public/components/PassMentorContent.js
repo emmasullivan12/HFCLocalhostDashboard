@@ -1,7 +1,7 @@
 // Dex last merged this code on 16th May 2019
 
 import React, { Component } from "react";
-import "../css/PassMentorContent.css";
+import "../css/PassMatchContent.css";
 
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class PassMentorContent extends Component {
@@ -46,8 +46,11 @@ class PassMentorContent extends Component {
     const isEnabled = this.canBeSubmitted();
     return (
       <React.Fragment>
-        <div className="modal-title">
-          Help us match you better: Why do you want to pass?
+        <div className="modal-preTitle">
+          Help us match you better
+        </div>
+        <div className="modal-subtitle">
+          Why do you want to pass?
         </div>
         <form className="pass-form">
           <label className="checkbox-container">Doesn&apos;t have a <strong>role</strong> I&apos;d like to explore
@@ -100,9 +103,10 @@ class PassMentorContent extends Component {
             placeholder="Tell us why this isn't a great match for you..."
             value={this.state.PassReasonMessage}
             onChange={this.handleMessageChange}
+            required
           />
           <div className="pass-btn-container">
-            <button type="submit" disabled={!isEnabled} className="PassMentorSubmit-btn" onClick={this.updateClassname}>
+            <button type="submit" disabled={!isEnabled} className="Submit-btn" onClick={this.updateClassname}>
               Pass
             </button>
           </div>

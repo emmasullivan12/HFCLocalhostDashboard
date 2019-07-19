@@ -11,14 +11,14 @@ import "../css/PrMessage.css";
 
 const AcceptMenteeModalProps = {
   ariaLabel: 'Popup to accept chat with matched Mentee',
-  triggerText: 'Start Chatting',
-  usedFor: 'AcceptChat'
+  triggerText: 'Accept Mentee',
+  usedFor: 'msgExtras-accept'
 }
 
 const PassMenteeModalProps = {
   ariaLabel: 'Pass on Mentee',
-  triggerText: 'Pass on Mentee',
-  usedFor: 'PassBtn'
+  triggerText: 'Pass',
+  usedFor: 'msgExtras-pass'
 }
 
 function Avatar(props) {
@@ -79,21 +79,79 @@ function DisplayFile(props) {
   );
 }
 
+class MsgExtrasCTA extends Component {
+  constructor () {
+    super();
+    this.state = {
+      CTAcompleted: false,
+      accepted: false
+    }
+  }
+
+  render() {
+    const {CTAcompleted, accepted} = this.state;
+
+    switch (CTAcompleted) {
+      case true:
+        return (
+          <div className="msg-extras-btns">
+            {accepted ? (
+              <div className="acceptText">&#10004; You Accepted</div>
+            ) : (
+              <div className="passedText">&#10008; You Passed</div>
+            )}
+          </div>
+        );
+      case false:
+        return (
+          <div className="msg-extras-btns">
+            <Modal {...AcceptMenteeModalProps}>
+              <AcceptMenteeContent />
+            </Modal>
+            <Modal {...PassMenteeModalProps}>
+              <PassMenteeContent />
+            </Modal>
+          </div>
+        );
+    }
+  }
+}
+
 function MenteeReq(props) {
   return (
-    <div className="prospela-auto-msg-container">
-      <div>
-        {props.message.text}
+    <React.Fragment>
+      <div className="prospela-auto-msg-container">
+        <div className="msg-title-container">
+            <div className="title-emoji-container">
+              <i className="tada-emoji-icon" />
+            </div>
+            <div className="message-content-box msgTitle">
+              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; {props.message.text}</span>
+            </div>
+        </div>
+        <div className="message-extras-container">
+          <div className="message-extras-border" />
+          <div className="msg-extras">
+            <div className="message-container noPadding">
+              <Avatar senderID={props.message.uid} senderName={props.message.author}/>
+              <div className="message-content-box">
+                <div className="sent-msg-info">
+                  <span className="sender-name">{props.message.author}</span>
+                  <span className="msg-sent-time">{props.message.time}</span>
+                </div>
+                <div className="message-content">
+                  {props.message.chatReq.reqMsg}
+                </div>
+              </div>
+            </div>
+            <div className="msg-extras-ctaTxt">
+              See Full Profile...
+            </div>
+          </div>
+        </div>
+        <MsgExtrasCTA />
       </div>
-      <div className="ModalButtons">
-        <Modal {...PassMenteeModalProps}>
-          <PassMenteeContent />
-        </Modal>
-        <Modal {...AcceptMenteeModalProps}>
-          <AcceptMenteeContent />
-        </Modal>
-      </div>
-    </div>
+    </React.Fragment>
   );
 }
 

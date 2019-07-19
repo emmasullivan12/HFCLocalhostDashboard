@@ -10,6 +10,25 @@
   text-align: center;
 }
 
+.modal-preTitle{
+  font-size: 16px;
+  line-height: 1.36363636;
+  color: #2c2d30;
+  font-weight: 900;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-subtitle{
+  font-size: 22px;
+  color: #4e4ed6;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
 .pass-form{
   margin-top: 20px;
 }
@@ -20,6 +39,7 @@
   padding-left: 95px;
   padding-top: 5px;
   margin-bottom: 20px;
+  margin-right: 1rem;
   cursor: pointer;
   font-size: 14px;
   -webkit-user-select: none;
@@ -39,7 +59,7 @@
 .checkmark {
   position: absolute;
   top: 0;
-  left: 60px;
+  left: 10%;
   height: 25px;
   width: 25px;
   background-color: #4e4ed61c;
@@ -78,6 +98,7 @@
 .modal-textbox-title{
   font-size: 14px;
   font-weight: 600;
+  padding-top: 1rem;
 }
 
 .pass-btn-container{
@@ -86,7 +107,7 @@
   justify-content: center;
 }
 
-.PassMentorSubmit-btn{
+.Submit-btn{
   color: #fff;
   font-weight: 600;
   background: #58d2bb;
@@ -101,20 +122,20 @@
   transition: background .15s ease-out;
 }
 
-.PassMentorSubmit-btn:hover{
-  background: #58d2bbd9;
+.Submit-btn:hover{
+  background: #06bf9c;
   color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 
-.PassMentorSubmit-btn:disabled{
+.Submit-btn:disabled{
   color: #9f9fa0;
   background: #e0e1e2;
   cursor: default;
   box-shadow: none;
 }
 
-.PassMentorSubmit-btn:active{
+.Submit-btn:active{
   background: #58d2bb;
 }
 

@@ -58,7 +58,7 @@ class Loading extends Component{
                 </div>
               </div>
             </div>
-            <div className="loadingContainer">
+            <div className="loadingContainer col-s-12">
               <div id="loading-welcome">
                 <div className="loadingMsg">
                   <p className="loadingWelcomeMsg">
@@ -261,9 +261,9 @@ function MentorSteps({userRole}) {
             </BrowserRouter>
           );
         case 4:
-          return <Dashboard userRole={userRole}/>
-        case 5:
           return <Loading userRole={userRole}/>
+        case 5:
+          return <Dashboard userRole={userRole}/>
       }
 }
 

@@ -1,24 +1,40 @@
 /* Dex last merged this code on 16th May 2019 */
 
 .ModalOpenBtn {
-  padding: .1em .5em;
-  color: #4285f4;
-  background: #e2edff;
-  border: 2px solid #bad2fa;
-  border-radius: 1em;
+  padding: .5em 1.5em;
+  color: #fff;
+  background: #58d2bb;
+  border: none;
+  border-radius: .5rem;
   cursor: pointer;
   outline: none;
   transition: background .15s ease-out;
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  height: 30px;
 }
 
 .ModalOpenBtn:hover {
-  background: #cbddfb;
+  background: #06bf9c;
+  color: #fff;
+  /*box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);*/
+}
+
+.ModalOpenBtn:disabled{
+  color: #9f9fa0;
+  background: #e0e1e2;
+  cursor: default;
+  box-shadow: none;
+}
+
+.ModalOpenBtn:active{
+  background: #58d2bb;
 }
 
 .ModalOpenBtn:focus {
   outline: 0;
-  box-shadow: 0 0 4px currentColor;
+  /*box-shadow: 0 0 4px currentColor;*/
 }
 
 .ModalOpenBtn-RequestChat {
@@ -73,6 +89,32 @@
 .ModalOpenBtn-PassBtn:focus {
   outline: 0;
   box-shadow: none;
+}
+
+.ModalOpenBtn-msgExtras-accept{
+  min-width: 150px;
+}
+.ModalOpenBtn-msgExtras-accept:hover{
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.ModalOpenBtn-msgExtras-accept:active{
+  background: #58d2bb;
+}
+
+.ModalOpenBtn-msgExtras-pass{
+  background: none;
+  color: #b7b7b7;
+  text-align: center;
+  font-size: 11px;
+}
+.ModalOpenBtn-msgExtras-pass:hover{
+  color: #3f3f3fb3;
+  background: none;
+}
+.ModalOpenBtn-msgExtras-pass:active{
+  outline: 0;
+  box-shadow: none;
+  background: none;
 }
 
 .ModalOpenBtn-attachmentContainer {

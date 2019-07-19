@@ -29,7 +29,7 @@ class RequestChatContent extends Component {
   canBeSubmitted() {
     const {requestChatMessage} = this.state;
     return (
-      requestChatMessage.length > 0
+      requestChatMessage.length > 50
     );
   }
 
@@ -48,7 +48,11 @@ class RequestChatContent extends Component {
             placeholder="Type your message..."
             value={this.state.requestChatMessage}
             onChange={this.handleMessageChange}
+            required
           />
+          <div className="textInputDetail">
+            (Minimum 50 characters)
+          </div>
           <div className="need-ideas-container">
             <div className="ideas-icon-container">
               <i className="far fa-lightbulb" />

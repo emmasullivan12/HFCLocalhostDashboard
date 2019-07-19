@@ -47,13 +47,44 @@ class PrMessagesList extends Component {
         subtype: 'menteeReq',
         author: 'emma-student',
         time: '12:10pm',
-        text: 'This is a request for a mentor woohoo!'
+        text: 'You have a new student who would really appreciate your mentorship!',
+        chatReq: {
+          chatID: '12345',
+          reqMsg: 'Hi Im Emma studying Business, Maths and English. I’m interested in learning more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
+        }
       },
       {
         id: '100005',
         uid: '12345',
         type: 'message',
         subtype: 'std',
+        author: 'dexter',
+        time: '12:10pm',
+        text: 'This is my message'
+      },
+      {
+        id: '100002',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '12:10pm',
+        text: 'This is my message'
+      },
+      {
+        id: '100002',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '12:10pm',
+        text: 'This is my message'
+      },
+      {
+        id: '100002',
+        uid: '12345',
+        type: 'message',
+        subtype: 'prAuto',
         author: 'dexter',
         time: '12:10pm',
         text: 'This is my message'

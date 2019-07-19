@@ -7,6 +7,16 @@
   box-sizing: content-box;
 }
 
+.title-emoji-container {
+  margin-left: 0;
+  margin-right: 4px;
+  float: left;
+  font-size: 13px;
+  width: 2.5rem;
+  height: 1.3125rem;
+  box-sizing: content-box;
+}
+
 .msg-thumb {
   Width:2.5rem;
   Margin-right:.75rem;
@@ -30,9 +40,9 @@
 .message-container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-size: 15px;
   padding-top: 6px;
   padding-bottom: 6px;
+  font-size: 15px;
   vertical-align: top;
   display: flex;
   flex-wrap:nowrap;
@@ -40,9 +50,48 @@
   height:auto;
 }
 
+.noPadding{
+  padding-left: 0!important;
+  padding-right: 0!important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
 .message-content-box {
   overflow: hidden;
   width: 100%;
+  text-align: left;
+  /*  display: flex;
+  flex-direction: row;*/
+}
+
+.msg-title-container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: flex;
+  font-size: 30px;
+/*  font-size: 15px;
+  vertical-align: top;
+  flex-wrap:nowrap;
+  box-sizing: inherit;
+  height:auto;*/
+}
+
+.msg-extras-btns{
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: left;
+}
+
+.prAutoMsgTitle{
+  color: #4e4ed6;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 15px;
 }
 
 .sender-name {
@@ -60,7 +109,7 @@
 
 .message-content {
   color:#3f3f3f;
-  line-height: 1.5;
+  line-height: 1.3;
   margin:6px 0 -4px;
   box-sizing: inherit;
   display: inline-block;
@@ -72,13 +121,81 @@
 
 .prospela-auto-msg-container{
   width: 100%;
-  background-color: #d8d7f5;
+  background-color: #e9e8f7;
   text-align: center;
   min-height: 30px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .extra-content-container{
   line-height: 1.46668;
   font-size: 15px;
   font-weight: 400;
+}
+
+.message-extras-container{
+  padding-left: 1.7rem;
+  padding-right: 1.5rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  display: flex;
+}
+
+.msg-extras{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.msg-extras-ctaTxt{
+  font-size: 0.8rem;
+  color: #4e4ed6;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  cursor: pointer;
+}
+
+.message-extras-border{
+  flex-shrink: 0;
+  width: 6px;
+  background-color: #4e4ed6;;
+  border-radius: 8px;
+}
+
+.wave-emoji-icon{
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png");
+  background-size: 5200% 5200%;
+  background-position: 27.451% 72.549%;
+}
+
+.tada-emoji-icon{
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png");
+  background-size: 5200% 5200%;
+  background-position: 15.6863% 54.902%;
+}
+
+.acceptText{
+  color: #14bd14;
+  font-size: 13px;
+}
+
+.passedText{
+  color: #da0b0b;
+  font-size: 13px;
 }
