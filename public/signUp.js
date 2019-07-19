@@ -13,7 +13,7 @@ var mentorradio = document.getElementById("mentorradio");
 var names = document.getElementById("names");
 var emailContainer = document.getElementById("emailContainer");
 var pwdContainer = document.getElementById("pwdContainer");
-var submitbtn = document.getElementById("submit-btn");
+var getStartedbtn = document.getElementById("getStarted-btn");
 
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
@@ -45,7 +45,7 @@ emailContainer.style.display = 'none';
 dob.style.display = 'none';
 pwdContainer.style.display = 'none';
 tncText.style.display = 'none';
-submitbtn.style.display = 'none';
+getStartedbtn.style.display = 'none';
 emailPrompt.style.visibility = 'hidden';
 dobPrompt.style.visibility = 'hidden';
 
@@ -83,7 +83,7 @@ menteebtn.addEventListener('click', function(event) {
   dob.style.display = 'block';
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
-  submitbtn.style.display = 'block';
+  getStartedbtn.style.display = 'block';
   emailText.innerHTML = 'School or University Email';
   emailPrompt.innerHTML = 'This must be your school or university email address';
   fname.focus();
@@ -104,7 +104,7 @@ mentorbtn.addEventListener('click', function(event) {
   dob.style.display = 'block';
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
-  submitbtn.style.display = 'block';
+  getStartedbtn.style.display = 'block';
   emailText.innerHTML = 'Work Email';
   emailPrompt.innerHTML = 'This must be your work email address';
   fname.focus();

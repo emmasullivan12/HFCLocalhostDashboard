@@ -1,6 +1,13 @@
 /* General CSS styles to add to any individual element anywhere in the app */
 
 /* SCREEN SIZING ADJUSTMENTS */
+/* For Extra small devices (phones, 600px and down): */
+[class*="col-"] {
+  width: 100%;
+}
+[class*="col-"] {
+  float: left;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .col-s-1 {width: 8.33%;}
@@ -35,13 +42,8 @@
 @media only screen and (min-width: 992px) {...}
 Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...} */
-[class*="col-"] {
-  float: left;
-}
-/* For Extra small devices (phones, 600px and down): */
-[class*="col-"] {
-  width: 100%;
-}
+
+
 @media screen and (max-width: 759px) {
   .loadingContainer {
     left: 0!important;
@@ -56,6 +58,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     display: none;
   }
 }
+
 
 /* FONT */
 .bold{
@@ -93,7 +96,12 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .alignRight{
   float: right;
 }
-
+.left{
+  left: 0!important;
+}
+.right{
+  right: 0!important;
+}
 .button-unstyled {
   background: none;
   border: 0;
@@ -121,6 +129,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
   font-size: 13px;
   color: #c7c7c7;
   margin: 0.25rem 0 1.5rem;
+}
+.fullWidth{
+  width: 100%;
 }
 .noPadding{
   padding-left: 0!important;
@@ -177,6 +188,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 /* Modal Content Buttons */
 .Submit-btn{
   color: #fff;
+  font: inherit;
   font-weight: 600;
   background: #58d2bb;
   border-radius: .5rem;
@@ -203,7 +215,50 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .Submit-btn:active{
   background: #58d2bb;
 }
-
+.btn-left{
+  width: 100px;
+  color: #3baf99;
+  font-weight: 600;
+  background: #fff;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #6fc3b3;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0.8rem 0;
+  margin-right: -3px;
+  transition: background .15s ease-out;
+  text-decoration: none;
+  font:inherit;
+}
+.btn-right{
+  width: 100px;
+  color: #3baf99;
+  font-weight: 600;
+  background: #fff;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #6fc3b3;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0.8rem 0;
+  margin-left: -3px;
+  transition: background .15s ease-out;
+  text-decoration: none;
+  font:inherit;
+}
+.btn-left:hover,
+.btn-right:hover{
+  background-color: #e9f9f6;
+  color: #39a28e;
+  border-style: solid;
+}
 /* In-chat Buttons */
 
 
@@ -211,9 +266,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .checkbox-container {
   display: block;
   position: relative;
-  padding-left: 95px;
-  padding-top: 5px;
-  margin-bottom: 20px;
+  padding-left: 4rem;
+  padding-top: .25rem;
+  margin-bottom: 1.25rem;
   margin-right: 1rem;
   cursor: pointer;
   font-size: 14px;
@@ -222,6 +277,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   -ms-user-select: none;
   user-select: none;
 }
+.checkbox-container-login input,
 .checkbox-container input {
   position: absolute;
   opacity: 0;
@@ -232,14 +288,16 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .checkmark {
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 1rem;
   height: 25px;
   width: 25px;
   background-color: #4e4ed61c;
 }
+.checkbox-container-login:hover input ~ .checkmark,
 .checkbox-container:hover input ~ .checkmark {
   background-color: #4e4ed64a;
 }
+.checkbox-container-login input:checked ~ .checkmark,
 .checkbox-container input:checked ~ .checkmark {
   background-color: #4e4ed6c9;
 }
@@ -248,9 +306,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
   position: absolute;
   display: none;
 }
+.checkbox-container-login input:checked ~ .checkmark:after,
 .checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
+.checkbox-container-login .checkmark:after,
 .checkbox-container .checkmark:after {
   left: 9px;
   top: 5px;

@@ -139,7 +139,7 @@ input[type=text]:disabled{
 
 .prLogoLoginContainer{
   height: 30px;
-  width: 69px;
+  width: 69px!important;
   flex-shrink: 0;
   position: relative;
   top: 20px;
@@ -220,7 +220,7 @@ input[type=text]:disabled{
   opacity: 0.8;
 }
 
-.container{
+.checkbox-container-login{
   display: block;
   position: relative;
   padding-left: 35px;
@@ -435,51 +435,6 @@ input[type=text]:disabled{
 
 .buttonContainer{
   display: flex;
-}
-
-.btn-left{
-  width: 100px;
-  color: #3baf99;
-  font-weight: 600;
-  background: #fff;
-  border-top-left-radius: .5rem;
-  border-bottom-left-radius: .5rem;
-  cursor: pointer;
-  outline: none;
-  border: 2px solid #6fc3b3;
-  height: 40px;
-  text-align: center;
-  padding: 0;
-  margin: 0.8rem 0;
-  margin-right: -3px;
-  transition: background .15s ease-out;
-  text-decoration: none;
-}
-
-.btn-right{
-  width: 100px;
-  color: #3baf99;
-  font-weight: 600;
-  background: #fff;
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  cursor: pointer;
-  outline: none;
-  border: 2px solid #6fc3b3;
-  height: 40px;
-  text-align: center;
-  padding: 0;
-  margin: 0.8rem 0;
-  margin-left: -3px;
-  transition: background .15s ease-out;
-  text-decoration: none;
-}
-
-.btn-left:hover,
-.btn-right:hover{
-  background-color: #e9f9f6;
-  color: #39a28e;
-  border-style: solid;
 }
 
 .hiddenRadio{
