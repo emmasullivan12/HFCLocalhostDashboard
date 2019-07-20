@@ -7,12 +7,66 @@ class PrMessagesList extends Component {
   render() {
     const messages = [
       {
-        id: '100001',
+        id: '99995',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '09:10am',
+        text: 'This is my message'
+      },
+      {
+        id: '99996',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '10:10am',
+        text: 'This is my message'
+      },
+      {
+        id: '99997',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '11:10am',
+        text: 'This is my message'
+      },
+      {
+        id: '99998',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '11:50am',
+        text: 'This is my message'
+      },
+      {
+        id: '99999',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '11:59am',
+        text: 'This is my message'
+      },
+      {
+        id: '100000',
         uid: '12345',
         type: 'message',
         subtype: 'std',
         author: 'dexter',
         time: '12:10pm',
+        text: 'This is my message'
+      },
+      {
+        id: '100001',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '13:10pm',
         text: 'This is my message'
       },
       {
@@ -21,7 +75,25 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '12:10pm',
+        time: '14:10pm',
+        text: 'This is my message'
+      },
+      {
+        id: '100001',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '15:10pm',
+        text: 'This is my message'
+      },
+      {
+        id: '100002',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        time: '16:10pm',
         text: 'This is my message'
       },
       {
@@ -30,7 +102,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'file',
         author: 'emma-student',
-        time: '12:10pm',
+        time: '17:10pm',
         text: 'Emma sent you a picture',
         file: {
           id: '99999',
@@ -46,7 +118,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'menteeReq',
         author: 'emma-student',
-        time: '12:10pm',
+        time: '18:10pm',
         text: 'You have a new student who would really appreciate your mentorship!',
         chatReq: {
           chatID: '12345',
@@ -59,7 +131,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '12:10pm',
+        time: '19:10pm',
         text: 'This is my message'
       },
       {
@@ -68,7 +140,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '12:10pm',
+        time: '20:10pm',
         text: 'This is my message'
       },
       {
@@ -77,7 +149,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '12:10pm',
+        time: '21:10pm',
         text: 'This is my message'
       },
       {
@@ -86,7 +158,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: '12:10pm',
+        time: '22:10pm',
         prAuto: {
           title: 'ending'
         }
@@ -97,7 +169,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: '12:10pm',
+        time: '23:10pm',
         prAuto: {
           title: 'ended'
         }
