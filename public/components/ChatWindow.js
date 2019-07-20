@@ -102,15 +102,32 @@ class ChatWindow extends Component {
                 </div>
               </div>
               <div className="more-info-container">
-                <button type="button" className="other-user-profile button-unstyled" onClick={this.toggleFlexContainer}>
-                  <span className="see-matchs-profile">See your Mentor&apos;s Profile </span>
+                <button type="button" className="more-info-btn" onClick={this.toggleFlexContainer}>
+                  {isFlexContainerOpen===false ? (
+                    <span className="more-info-btn-txt">See USERID&#39;s Profile &#62;&#62;</span>
+                  ) : (
+                    <span className="more-info-btn-txt">&#60;&#60; Hide USERID&#39;s Profile</span>
+                  )}
                 </button>
               </div>
             </div>
-            <div id="drop-zone" className={"messages-panel messages-panel-" +this.state.dragover} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
+            <div id="drop-zone" className="messages-panel" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
               <PrMessagesList />
             </div>
             <PrAddMessage />
+            <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
+              <div className="animate">
+                <div className='topbottom'/>
+                <div className='leftright'/>
+              </div>
+              <div className="dragover-pane-overlay-info">
+                <div className="dragover-pane-overlay-pic">
+                  <div className="dragover-pane-overlay-picFile"/>
+                </div>
+                <div className="dragover-pane-overlay-title">Upload to Chat Name</div>
+                <div className="dragover-pane-overlay-subtitle">Drop file here to share</div>
+              </div>
+            </div>
             <form onSubmit={this.handleFileSelect} encType="multipart/form-data">
               <input
                 type="file"

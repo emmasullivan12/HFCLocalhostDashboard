@@ -63,7 +63,7 @@ class PrMessagesList extends Component {
         text: 'This is my message'
       },
       {
-        id: '100002',
+        id: '100006',
         uid: '12345',
         type: 'message',
         subtype: 'std',
@@ -72,7 +72,7 @@ class PrMessagesList extends Component {
         text: 'This is my message'
       },
       {
-        id: '100002',
+        id: '100007',
         uid: '12345',
         type: 'message',
         subtype: 'std',
@@ -81,7 +81,7 @@ class PrMessagesList extends Component {
         text: 'This is my message'
       },
       {
-        id: '100002',
+        id: '100008',
         uid: '12345',
         type: 'message',
         subtype: 'prAuto',
@@ -92,7 +92,7 @@ class PrMessagesList extends Component {
         }
       },
       {
-        id: '100002',
+        id: '100009',
         uid: '12345',
         type: 'message',
         subtype: 'prAuto',

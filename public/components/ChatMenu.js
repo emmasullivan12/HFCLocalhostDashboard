@@ -15,17 +15,15 @@ class ChatListItem extends Component {
     const isOnline = false;
 
     return(
-      <div className="chatMenuItem">
-        <NavLink to={this.props.navlink} className="link">
-          <div className="presenceContainer">
-            <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
-          </div>
-          <div className="chatItemFlexContainer">
-            <span className="chatMenuLink overflow-ellipsis">{chat.mentor}</span>
-            <span className="notificationNum">xx</span>
-          </div>
-        </NavLink>
-      </div>
+      <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link">
+        <div className="presenceContainer">
+          <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
+        </div>
+        <div className="chatItemFlexContainer">
+          <span className="chatMenuLink overflow-ellipsis">{chat.mentor}</span>
+          <span className="notificationNum">xx</span>
+        </div>
+      </NavLink>
     )
   }
 }
@@ -49,17 +47,15 @@ class ChatMenu extends Component {
       <React.Fragment>
         <div className="chatMenu">
           <div className="chatMenu-header overflow-ellipsis">Direct Messages</div>
-          <div className="chatMenuItem">
-            <NavLink to="/messages/Prospela" className="link">
-              <div className="presenceContainer">
-                <i className="fas fa-heart" />
-              </div>
-              <div className="chatItemFlexContainer">
-                <span className="chatMenuLink overflow-ellipsis">Prospela Bot</span>
-                <span className="notificationNum">xx</span>
-              </div>
-            </NavLink>
-          </div>
+          <NavLink to="/messages/Prospela" activeClassName="is-active" className="chatMenuItem link">
+            <div className="presenceContainer">
+              <i className="fas fa-heart" />
+            </div>
+            <div className="chatItemFlexContainer">
+              <span className="chatMenuLink overflow-ellipsis">Prospela Bot</span>
+              <span className="notificationNum">xx</span>
+            </div>
+          </NavLink>
           {chats}
           <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink></div>
         </div>

@@ -3,17 +3,26 @@
 .mainMenuItem {
   height: 50px;
   padding: 1.2rem 1.7rem 1rem 1.7rem;
-  color: rgb(255,255,255,0.8); /* #d8d7f5 is purple */
+  color: rgb(255,255,255,0.8)!important; /* #d8d7f5 is purple */
   text-decoration: none;
   font-size: 16px;
 }
 
 .mainMenuItem:hover {
-  background-color: #111111;
-  color: #fff;
+  background-color: #111111!important;
+  color: #fff!important;
 }
 
 .mainMenuItem:focus {
-  background-color: #9f9ee7; /* #ffebb3 is orange / #9f9ee7 is purple */
-  color: #fff; /* #d8a40f is orange text */
+  background-color: #9f9ee7!important; /* #ffebb3 is orange / #9f9ee7 is purple */
+  color: #fff!important; /* #d8a40f is orange text */
+  text-decoration: none;
+  outline: none;
+}
+
+.mainMenuItem.is-active{
+  background-color: #9f9ee7!important;
+  color: #fff!important;
+  text-decoration: none;
+  outline: none;
 }

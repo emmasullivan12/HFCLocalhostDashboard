@@ -83,11 +83,90 @@
   background-size: 130px;
 }
 
+/*
 .messages-panel-dragover{
   background-color: orange;
 }
+*/
+.dragover-pane-overlay{
+  display: none;
+}
 
-.other-user-profile{
+.dragover-pane-overlay-dragover{
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsla(0,0%,100%,.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  /*outline: 5px dashed #c7c7c7;
+  outline-offset: -1.5rem;*/
+}
+
+.dragover-pane-overlay-info{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.dragover-pane-overlay-pic{
+  width: 200px;
+  height: 150px;
+  position: relative;
+}
+.dragover-pane-overlay-picFile{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-duration: 0.12s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: fileUpload;
+  background-image: url(https://prospela.com/wp-content/uploads/2019/07/File-Upload.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes FileUpload
+{
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.dragover-pane-overlay-title{
+  font-size: 28px;
+  line-height: 1.2143;
+  font-weight: 900;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.dragover-pane-overlay-subtitle{
+  font-size: 15px;
+  line-height: 1.46668;
+  font-weight: 400;
+  color: #616061;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.more-info-btn{
   padding: 0 10px;
   margin: 2px 8px 2px 0;
   vertical-align: middle;
@@ -102,9 +181,130 @@
   color: #fff;
   font-weight: 700;
   border-radius: 4px;
+  cursor: pointer;
+  outline: none;
 }
 
-.other-user-profile:hover{
+.more-info-btn:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   background: #8d8cce;
+}
+
+
+/* DRAGOVER ANIMATION */
+@keyframes move-top
+{
+  0% {
+   background-position: 0 0;
+ }
+ 100% {
+   background-position: 10px 0px;
+ }
+}
+@keyframes move-bottom
+{
+  0% {
+   background-position: 0 0;
+ }
+ 100% {
+   background-position: -10px 0px;
+ }
+}
+@keyframes move-left
+{
+  0% {
+   background-position: 0 0;
+ }
+ 100% {
+   background-position: 0px -10px;
+ }
+}
+@keyframes move-right
+{
+  0% {
+   background-position: 0 0;
+ }
+ 100% {
+   background-position: 0px 10px;
+ }
+}
+.animate .leftright:after {
+    animation: move-left 1s linear infinite;
+    background-image: linear-gradient(to top, #c7c7c7 70%, rgba(255, 255, 255, 0) 0%);
+}
+.animate .leftright:before {
+    animation: move-right 1s linear infinite;
+    background-image: linear-gradient(to top, #c7c7c7 70%, rgba(255, 255, 255, 0) 0%);
+}
+
+.animate .topbottom:after {
+    animation: move-top 1s linear infinite;
+    background-image: linear-gradient(to right, #c7c7c7 70%, rgba(255, 255, 255, 0) 0%);
+}
+.animate .topbottom:before {
+    animation: move-bottom 1s linear infinite;
+    background-image: linear-gradient(to right, #c7c7c7 70%, rgba(255, 255, 255, 0) 0%);
+}
+.topbottom,
+.leftright
+{
+  width:100%;
+  height:100%;
+}
+.leftright:after
+{
+  content:'';
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  top:20px;
+  right:2px;
+  height:auto;
+  width:5px;
+  background-image: linear-gradient(to top, #7f7f7f 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 5px 11px;
+  background-repeat: repeat-y;
+}
+.leftright:before
+{
+  content:'';
+  position:absolute;
+  bottom:20px;
+  top:20px;
+  right:20px;
+  height:auto;
+  width:5px;
+  background-image: linear-gradient(to top, #7f7f7f 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 5px 11px;
+  background-repeat: repeat-y;
+}
+.topbottom:before
+{
+  content:'';
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  right:20px;
+  height:5px;
+  width:auto;
+  background-image: linear-gradient(to right, #7f7f7f 71%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 11px 5px;
+  background-repeat: repeat-x;
+}
+.topbottom:after
+{
+  content:'';
+  position:absolute;
+  top:20px;
+  left:20px;
+  right:20px;
+  height:5px;
+  width:auto;
+  background-image: linear-gradient(to right, #7f7f7f 71%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 11px 5px;
+  background-repeat: repeat-x;
 }

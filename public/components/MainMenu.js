@@ -27,10 +27,10 @@ class MainMenu extends Component {
       } else {
       return (
         <div className="mainMenu">
-          <NavLink to="/" className="mainMenuItem overflow-ellipsis">Latest Advice</NavLink>
-          <NavLink to="/mentee-profile" className="mainMenuItem overflow-ellipsis">My Profile</NavLink>
-          <NavLink to="/to-do-list" className="mainMenuItem overflow-ellipsis">To Do List</NavLink>
-          <NavLink to="/teams" className="mainMenuItem overflow-ellipsis">Create a Team</NavLink>
+          <NavLink exact to="/" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">Latest Advice</NavLink>
+          <NavLink to="/mentee-profile" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">My Profile</NavLink>
+          <NavLink to="/to-do-list" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">To Do List</NavLink>
+          <NavLink to="/teams" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">Create a Team</NavLink>
         </div>
       );
     }

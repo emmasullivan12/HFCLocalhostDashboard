@@ -41,7 +41,7 @@ class ChatEndAudioContent extends Component {
             <ul className="ideas-list">
               <li className="ideas-list-item">
                 <div className="emoji-icon ok-emoji" />
-                <div className="idea-item-text"><strong>Say thanks!</strong> Was there anything in particular you found useful? Did they make you think differently?</div>
+                <div className="idea-item-text"><strong>Say thanks!</strong> Was there anything in particular you found useful or made you think differently?</div>
               </li>
               <li className="ideas-list-item">
                 <div className="emoji-icon footprints-emoji" />

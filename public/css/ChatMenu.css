@@ -14,6 +14,7 @@
 .chatMenuItem {
   height: 30px;
   text-decoration: none;
+  display: block;
   padding: 0.5rem 1.7rem 0.5rem 1.7rem;
 }
 
@@ -25,11 +26,19 @@
   color: #fff;
 }
 
-.chatMenuItem:focus-within {
+.chatMenuItem:focus {
   background-color: #9f9ee7; /* #ffebb3 is orange / #9f9ee7 is purple */
 }
 
-.chatMenuItem:focus-within .chatMenuLink {
+.chatMenuItem:focus .chatMenuLink {
+  color: #fff; /* #d8a40f is orange text */
+}
+
+.chatMenuItem.is-active {
+  background-color: #9f9ee7; /* #ffebb3 is orange / #9f9ee7 is purple */
+}
+
+.chatMenuItem.is-active .chatMenuLink {
   color: #fff; /* #d8a40f is orange text */
 }
 

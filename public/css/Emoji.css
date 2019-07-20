@@ -4,6 +4,7 @@
   float: left;
   width: 30px;
   height: 30px;
+  margin-right: .5rem;
   text-align: center;
   display: inline-block;
   background-image: url("https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png");

@@ -3,7 +3,7 @@
 /* SCREEN SIZING ADJUSTMENTS */
 @media screen and (max-width: 1178px) {
   .cards-container {
-    justify-content: flex-start;
+    justify-content: flex-start!important;
   }
 }
 

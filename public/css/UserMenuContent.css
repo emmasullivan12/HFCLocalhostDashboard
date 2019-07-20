@@ -92,7 +92,7 @@
   white-space: nowrap;
   outline: 0;
   background: 0 0;
-  color: #3f3f3f;
+  color: #3f3f3f!important;
   cursor: pointer;
 }
 
