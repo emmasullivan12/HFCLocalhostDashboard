@@ -1,0 +1,113 @@
+/* Dex last merged this code on 19th May 2019 */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: #fff;
+  font-size: 100%;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  display: block;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1rem;
+  min-height: 100vh;
+  max-width: 100%;
+  background: #red;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+}
+
+.pwdByMain{
+  background:linear-gradient(0deg,rgba(94,19,167),rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.pwdByNav{
+  width: 100%;
+  padding: 0;
+  height: 71px;
+  background-color: transparent;
+  z-index: 1000;
+  overflow: hidden;
+  top: 0;
+  position: absolute;
+  border-bottom: none;
+}
+
+.pwdByNav.is-fixed {
+  position: fixed;
+  border-bottom: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15);
+  background-color: #5e13a7!important;
+  transition: background-color 200ms linear;
+  animation: slide-in--down 420ms cubic-bezier(.165,.84,.44,1);
+}
+
+.pwdByPrLogoContainer{
+  height: 50px;
+  width: 120px!important;
+  flex-shrink: 0;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+.sectionMain{
+  top: 25%;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionMainContainer{
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
+.initiativeHeader{
+  font-weight: 700;
+  line-height: 1.1875;
+  letter-spacing: -.8px;
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.initiativeSubHeader{
+  font-weight: 400;
+  line-height: 1.44444444;
+  letter-spacing: normal;
+}
+
+.initiativeLogoContainer{
+  height: 50px;
+  width: 120px!important;
+  flex-shrink: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.initiativeLogoImg{
+  display: block;
+  height: 100%!important;
+  width: 100%!important;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
