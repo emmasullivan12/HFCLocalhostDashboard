@@ -35,13 +35,28 @@ main {
   background:linear-gradient(0deg,rgba(94,19,167),rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100%;
+  background-position: center;
+  min-height: 91%;
+  overflow:hidden;
+  position: relative;
+}
+@media only screen and (max-height: 650px) {
+  .pwdByMain{
+    min-height: 650px;
+    max-height: 1100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pwdByMain{
+    min-height: 800px;
+    max-height: 1100px;
+  }
 }
 
 .pwdByNav{
   width: 100%;
   padding: 0;
-  height: 71px;
+  height: 100px;
   background-color: transparent;
   z-index: 1000;
   overflow: hidden;
@@ -55,8 +70,14 @@ main {
   border-bottom: none;
   box-shadow: 0 1px 1px rgba(0,0,0,.15);
   background-color: #5e13a7!important;
+  height: 71px;
   transition: background-color 200ms linear;
   animation: slide-in--down 420ms cubic-bezier(.165,.84,.44,1);
+}
+
+.pwdByNav.is-fixed .pwdByPrLogoContainer{
+  top: 20px;
+  left: 30px;
 }
 
 .pwdByPrLogoContainer{
@@ -64,19 +85,22 @@ main {
   width: 120px!important;
   flex-shrink: 0;
   position: relative;
-  top: 20px;
-  left: 30px;
+  top: 3rem;
+  left: 3rem;
 }
 
 .sectionMain{
-  top: 25%;
-  position: relative;
+  position: absolute;
   display: inline-block;
+  margin-bottom: 15px;
+  top: 22%;
 }
 
 .sectionMainContainer{
   padding: 0 5rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .initiativeHeader{
@@ -84,25 +108,36 @@ main {
   line-height: 1.1875;
   letter-spacing: -.8px;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .initiativeSubHeader{
   font-weight: 400;
   line-height: 1.44444444;
   letter-spacing: normal;
+  color: #fff;
 }
 
+.initiativeTextDetail{
+  color: #fffdfd9c;
+  font-size: .75rem;
+}
+.sponsoredByText{
+  color: #000;
+  font-size: .75rem;
+  margin-bottom: 0.15rem;
+}
 .initiativeLogoContainer{
-  height: 50px;
+  height: 60px;
   width: 120px!important;
   flex-shrink: 0;
   position: relative;
   top: 0;
   left: 0;
+  margin-bottom: 1rem;
 }
-
 .initiativeLogoImg{
   display: block;
   height: 100%!important;
@@ -110,4 +145,135 @@ main {
   max-width: 100%;
   vertical-align: middle;
   border: 0;
+}
+.sponsoredByLogoContainer{
+  height: 30px;
+  width: 100px!important;
+  flex-shrink: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 1rem;
+}
+.sponsoredByLogoImg{
+  display: block;
+  height: 100%!important;
+  width: 100%!important;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.initiative-inline-link{
+  text-decoration: underline;
+  color: #dcdcdcba;
+  cursor: pointer;
+}
+.initiative-inline-link:hover {
+  text-decoration: underline;
+  color: #7e7ec9; /* #8f8fe5*/
+  outline: 0;
+  cursor: pointer;
+}
+.initiativeCheckboxContainer{
+  padding-bottom: 1rem;
+}
+.initiative-tncText{
+  color: #dcdcdcba!important;
+  padding-top: .25rem;
+}
+
+.initiativeVFXbtn-student{
+  color: #5e13a7;
+  background: #aafd60;
+  border-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 50px;
+  min-width: 210px;
+  text-align: center;
+  padding: 0;
+  transition: background .15s ease-out;
+  font: inherit;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+.initiativeVFXbtn-student:hover{
+  background: #aafd60d6;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.initiativeVFXbtn-student:active{
+  background: #aafd60;
+}
+.initiativeVFXbtn-mentor{
+  color: #f82992;
+  background: transparent;
+  border-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: 1.5px solid #f82992;
+  height: 50px;
+  min-width: 210px;
+  text-align: center;
+  padding: 0;
+  transition: background .15s ease-out;
+  font: inherit;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+.initiativeVFXbtn-mentor:hover{
+  background: #f8299236;
+  color: #e2e2e2fa;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.initiativeVFXbtn-msentor:active{
+  background: transparent;
+}
+.learnMoreText{
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  color: #fffdfd9c;
+}
+.learnMoreText:hover{
+  color: #fff;
+  cursor: pointer;
+}
+.initiativeKeyPoints{
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  padding: 1rem 5rem;
+  font-size: .75rem;
+  flex-basis: 50px;
+  background-color: rgba(94,19,167);
+}
+@media only screen and (max-width: 600px) {
+  .initiativeKeyPoints{
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .initiativeKeyPoints{
+    font-size: 1.25rem;
+  }
+}
+.keyPointsContainer{
+  padding-left: .5rem;
+  padding-right: .5rem;
+  height: 50px;
+  display: flex;
+}
+.keyPointsImg{
+  padding-right: 10px;
+  height: 50px;
+  font-size: 18px;
+}
+
+@keyframes slide-in--down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

@@ -8,6 +8,7 @@
 [class*="col-"] {
   float: left;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .col-s-1 {width: 8.33%;}
@@ -293,13 +294,25 @@ Extra large devices (large laptops and desktops, 1200px and up)
   width: 25px;
   background-color: #4e4ed61c;
 }
+.initiativeCheckmark {
+  background-color: #f7f7f7a3!important;
+}
 .checkbox-container-login:hover input ~ .checkmark,
 .checkbox-container:hover input ~ .checkmark {
   background-color: #4e4ed64a;
 }
+.checkbox-container-login:hover input ~ .initiativeCheckmark {
+  background-color: #f7f7f7d9!important;
+}
+.checkbox-container-login:hover .initiative-tncText {
+  color: #dcdcdcfa!important;
+}
 .checkbox-container-login input:checked ~ .checkmark,
 .checkbox-container input:checked ~ .checkmark {
   background-color: #4e4ed6c9;
+}
+.checkbox-container-login input:checked ~ .initiativeCheckmark {
+  background-color: #b5b5ffbd!important;
 }
 .checkmark:after {
   content: "";

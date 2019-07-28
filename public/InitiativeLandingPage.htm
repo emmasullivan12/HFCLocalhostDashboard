@@ -13,6 +13,7 @@
   <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <title>Prospela &#124; Sign Up for your Prospela Account</title>
 </head>
 
@@ -35,22 +36,62 @@
           <p class="initiativeSubHeader">
             E-Mentoring programme to encourage diverse students to get into industry. Bit more insight to what it is..
           </p>
+          <form method="POST" action="/signup">
+            <div class="initiativeCheckboxContainer">
+              <label class="checkbox-container-login initiative-tncText" id="tncText">I have read and agree to Prospela's <a href="" class="initiative-inline-link">Information Collection Statement</a><input type="checkbox" id="tncCheckbox" name="tanp" required><span class="checkmark initiativeCheckmark left" id="tncStyle"></span></label>
+            </div>
+            <button type="submit" class="initiativeVFXbtn-student">Sign up as a Student &#62;</button>
+            <button type="submit" class="initiativeVFXbtn-mentor">Apply as a Mentor &#62;</button>
+          </form>
+          <p class="sponsoredByText">
+            Sponsored By
+          </p>
+          <div class="sponsoredByLogoContainer">
+            <img class="sponsoredByLogoImg" alt="Sponsored by Logo" src="https://prospela.com/wp-content/uploads/2019/07/The_Foundry_logo_black.svg_.png" />
+          </div>
+          <div class="learnMoreText">
+            <span class="">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+            Learn More
+          </div>
         </div>
       </div>
     </section>
   </header>
   <main class="col-12">
-
-
+    <div class="initiativeKeyPoints">
+      <div class="col-3 col-s-3 keyPointsContainer">
+        <div class="keyPointsImg"><i class="fas fa-grin-hearts"></i></div>
+        <div>
+          This mentoring initiative is <strong>free</strong> to join
+        </div>
+      </div>
+      <div class="col-3 col-s-3 keyPointsContainer">
+        <div class="keyPointsImg"><i class="fas fa-wifi"></i></div>
+        <div>
+          <strong>Anytime, anywhere</strong> online access
+        </div>
+      </div>
+      <div class="col-3 col-s-3 keyPointsContainer">
+        <div class="keyPointsImg"><i class="fas fa-search"></i></div>
+        <div>
+          <strong>Real employees</strong> share the latest insights
+        </div>
+      </div>
+      <div class="col-3 col-s-3 keyPointsContainer">
+        <div class="keyPointsImg"><i class="fab fa-telegram-plane"></i></div>
+        <div>
+          Get <strong>actionable advice</strong> & build your network!
+        </div>
+      </div>
+    </div>
     <div class="loginContainer">
       <div>
         <h1>Get Started</h1>
         <div class="header-descriptor">or <a href="https://test.prospela.com/login">login to your Prospela account</a></div>
       </div>
-      <form method="POST" action="/signup">
-        <label class="checkbox-container-login" id="tncText">I have read and agree to Prospela's <span className="link">Information Collection Statement</span><input type="checkbox" id="tncCheckbox" name="tanp" required><span class="checkmark left" id="tncStyle"></span></label>
-        <button type="submit" class="Submit-btn fullWidth">Get Started</button>
-      </form>
+
     </div>
   </main>
 <script type="text/javascript" src="./InitiativeLandingPage.js"></script>
