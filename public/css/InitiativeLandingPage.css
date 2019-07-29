@@ -275,6 +275,115 @@ main {
   font-size: 18px;
 }
 
+.section-header{
+  height:200px;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#why-join{
+  position: relative;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+#why-join ul.why-join-nav {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: -100px;
+}
+#why-join ul.why-join-nav li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #f2f2f2;
+  transition: background-color .2s;
+}
+#why-join ul.why-join-nav li:hover {
+  background-color: #e2e3e2;
+}
+#why-join ul.why-join-nav li h4 {
+  font-weight: 600;
+  margin: 20px 0 20px 20px;
+}
+#why-join ul.why-join-nav li.active {
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+  position: relative;
+}
+#why-join ul.why-join-nav li.active a[id="mentee-click"]:before {
+  background-color: #aafd60;
+}
+#why-join ul.why-join-nav li.active a[id="mentor-click"]:before {
+  background-color: #f82992;
+}
+#why-join ul.why-join-nav li.active a:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+}
+#why-join ul.why-join-nav li.active a:after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: -5%;
+  width: 110%;
+  height: 12px;
+  background-color: #fff;
+}
+#why-join ul.why-join-nav li a {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #3d3d3d;
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+}
+#why-join .img img {
+  max-height: 300px;
+  margin-bottom: -50px;
+  float: right;
+}
+.img-response{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#why-join .tab-content{
+  padding: 100px 0;
+  margin-bottom: 30px;
+}
+
+.tab-content>.tab-pane{
+  display: none;
+}
+.tab-content>.active{
+  display: block;
+}
+
+.whyJoinContainer{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @keyframes slide-in--down {
   0% {
     transform: translateY(-100%);
