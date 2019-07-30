@@ -27,10 +27,6 @@ body {
   flex-direction: column;
 }
 
-main {
-  height: 100%;
-}
-
 .pwdByMain{
   background:linear-gradient(0deg,rgba(94,19,167),rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
   background-repeat: no-repeat;
@@ -87,6 +83,20 @@ main {
   position: relative;
   top: 3rem;
   left: 3rem;
+}
+.pwdByPrLogoFooter{
+  height: 50px;
+  width: 120px!important;
+  flex-shrink: 0;
+  position: relative;
+  opacity: 0.7;
+  margin-left: -14px;
+}
+@media only screen and (max-width: 650px) {
+  .pwdByPrLogoFooter{
+    margin-left: 0;
+    left: 38%;
+  }
 }
 
 .sectionMain{
@@ -521,6 +531,61 @@ main {
 
 .bottomSignUp{
   background-color: #5e13a7;
+}
+
+#footer{
+  position: relative;
+  padding: 48px 0 0;
+  background-color: #333;
+  color: #999;
+  min-height: 300px;
+}
+@media only screen and (max-width: 650px) {
+  #footer{
+    min-height: 400px;
+  }
+}
+.copyright{
+  margin: 0 auto;
+  text-align: center;
+  float: none!important;
+  padding: 40px 0;
+  line-height: 1.9em;
+  font-size: 13px;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+.footerLeft{
+  text-align: left;
+  float: left;
+}
+.footerRight{
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 650px) {
+  .footerLeft{
+    float: none;
+    text-align: center;
+  }
+  .footerRight{
+    float: none;
+    text-align: center;
+  }
+}
+
+.legalLinks{
+  color: #808080!important;
+  text-decoration: none!important;
+  cursor: pointer;
+}
+.legalLinks:hover{
+  color: #7e7ec9!important;
+}
+
+.footer-links{
+  margin: 0 auto;
+  text-align: center;
+  float: none;
 }
 
 @keyframes slide-in--down {

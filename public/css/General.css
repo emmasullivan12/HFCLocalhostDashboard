@@ -124,6 +124,12 @@ hr{
 .alignRight{
   float: right;
 }
+.textLeft{
+  text-align: left;
+}
+.textRight{
+  text-align: right;
+}
 .left{
   left: 0!important;
 }
@@ -160,6 +166,12 @@ hr{
 }
 .fullWidth{
   width: 100%;
+}
+.noMarginBlockEnd{
+  margin-block-end: 0;
+}
+.noMarginBlockStart{
+  margin-block-start: 0;
 }
 .noPadding{
   padding-left: 0!important;
