@@ -416,6 +416,12 @@ body {
   padding: 5rem 2rem;
   display: block!important;
 }
+@media only screen and (max-width: 600px) {
+  .mainContent{
+    padding: 5rem 0rem;
+  }
+}
+
 .whyJoinContainer{
   margin-right: auto;
   margin-left: auto;
@@ -432,7 +438,7 @@ body {
 }
 
 .joinSteps{
-  background-color: #e4e8f7;
+  background-color: #5e13a714;
 }
 .stepsLists{
   margin-bottom: 20px;
@@ -447,7 +453,7 @@ body {
   padding-left: 30px;
 }
 #joinSteps ul.stepsList li {
-  border-left: 2px dotted #3b66f1;
+  border-left: 2px dotted #5e13a7;
   list-style-type: none;
   padding-left: 4rem;
   min-height: 8.5rem;
@@ -457,7 +463,7 @@ body {
   padding-bottom: 50px;
 }
 #joinSteps ul.stepsList li:hover{
-  border-left: 2px solid #3b66f1;
+  border-left: 2px solid #5e13a7;
 }
 .stepCrcl{
   position: absolute;
@@ -466,14 +472,14 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid #3b66f1;
+  border: 2px solid #5e13a7;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   font-weight: 700;
   color: #fff;
-  background-color: #3b66f1;
+  background-color: #5e13a7;
 }
 .stepTitle{
   font-size: 20px;
@@ -514,6 +520,7 @@ body {
   align-items: center;
   position: relative;
   border-top: 12px solid;
+  transition: transform 420ms cubic-bezier(.165,.84,.44,1);
 }
 #quotes li.quote-box:before {
   position: absolute;
@@ -540,6 +547,10 @@ body {
 }
 #quotes li.quote-box:nth-child(3):before {
   color: #79feed;
+}
+#quotes li.quote-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2rem rgba(0,0,0,.2);
 }
 #quotes li.quote-box span {
   display: block;

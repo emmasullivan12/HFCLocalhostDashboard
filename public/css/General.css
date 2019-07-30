@@ -173,6 +173,9 @@ hr{
 .noMarginBlockStart{
   margin-block-start: 0;
 }
+.paddingBtm{
+  padding-bottom: 10px;
+}
 .noPadding{
   padding-left: 0!important;
   padding-right: 0!important;
