@@ -117,7 +117,7 @@ body {
   font-weight: 700;
   line-height: 1.1875;
   letter-spacing: -.8px;
-  margin-top: 0;
+  margin-top: 1rem;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #fff;
@@ -381,13 +381,28 @@ body {
   margin-bottom: -50px;
   float: right;
 }
+.menteeIcon{
+  height: 35px;
+}
+.mentorIcon{
+  height: 60px;
+}
+.mainHeaders{
+  font-size: 2.53rem;
+  line-height: 1.1;
+  font-weight: 900;
+}
+.mainSubTxt{
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
 .img-responsive{
   display: block;
   max-width: 100%;
   height: auto;
 }
 #why-join .tab-content{
-  padding: 100px 0;
+  padding: 50px 0;
   margin-bottom: 30px;
 }
 
@@ -397,11 +412,23 @@ body {
 .tab-content>.active{
   display: block;
 }
-
+.mainContent{
+  padding: 5rem 2rem;
+  display: block!important;
+}
 .whyJoinContainer{
   margin-right: auto;
   margin-left: auto;
   padding: 0 5rem;
+}
+.whyJoinImg{
+  max-height: 300px;
+}
+.bottomSignUpDisplay{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 5rem;
+  display: block!important;
 }
 
 .joinSteps{
@@ -464,10 +491,7 @@ body {
 #quotes ul.quote-list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 60px 0 45px;
+  margin: 0 0 45px;
 }
 
 @media only screen and (max-width: 759px) {
@@ -495,6 +519,7 @@ body {
   position: absolute;
   content: "“";
   font-size: 90px;
+  font-family: Walsheim,sans-serif;
   top: 56px;
   left: 30px;
 }
@@ -521,6 +546,26 @@ body {
 }
 #quotes li.quote-box span.name {
   font-weight: 700;
+  color: #9c9b9b;
+  font-size: .8rem;
+}
+#quotes li.quote-box span.role {
+  color: #9c9b9b;
+  font-size: .8rem;
+}
+#quotes li.quote-box .quoteLogo {
+  margin-top: 20px;
+  width: 80px;
+}
+#quotes li.quote-box .quoteLogo.pearson {
+  margin-left: -15px;
+}
+.quote-list{
+  display: none;
+}
+.quote-list.active{
+  display: flex;
+  display: -ms-flexbox;
 }
 
 .bottomSignUpContainer{
@@ -528,7 +573,23 @@ body {
   flex-direction: column;
   margin: 2rem 0;
 }
-
+.bottomSignUpImgContainer{
+  margin: 2rem 0;
+  margin-top: 15%;
+}
+@media only screen and (max-width: 600px) {
+  .bottomSignUpImgContainer{
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 759px) {
+  .bottomSignUpImgContainer{
+    margin-top: 15%;
+  }
+}
+.bottomSignUpImg{
+  max-height: 200px;
+}
 .bottomSignUp{
   background-color: #5e13a7;
 }
