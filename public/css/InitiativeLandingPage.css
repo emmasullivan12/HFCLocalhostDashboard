@@ -8,18 +8,19 @@ html {
   height: 100%;
   background: #fff;
   font-size: 100%;
-  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  font-family: Nunito, Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif!important;
   display: block;
   margin: 0px;
 }
 
 body {
   margin: 0;
-  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  font-family: Nunito, Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif!important;
   font-size: 16px;
   line-height: 1rem;
   min-height: 100vh;
   max-width: 100%;
+  height: auto!important;
   padding: 0;
   overflow-x: hidden;
   display: -ms-flexbox;
@@ -28,16 +29,28 @@ body {
   flex-direction: column;
 }
 
+h1{
+  font-family: Nunito, Lato, Arial, Helvetica, sans-serif!important;
+}
+
+h2{
+  font-family: Nunito, Lato, Arial, Helvetica, sans-serif!important;
+}
+
+header, nav, article, section, aside, footer {
+  display: block;
+}
+
 .pwdByMain{
   background-image: url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:linear-gradient(0deg,rgba(94,19,167),rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:-moz-linear-gradient(0deg,rgba(94,19,167),rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:-webkit-linear-gradient(90deg,rgba(94,19,167),rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:-o-linear-gradient(0deg,rgba(94,19,167),rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
+  background-image:linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
+  background-image:-moz-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
+  background-image:-webkit-linear-gradient(90deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
+  background-image:-o-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 91%;
+  min-height: 91vh;
   overflow:hidden;
   position: relative;
 }
@@ -47,9 +60,21 @@ body {
     max-height: 1100px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
   .pwdByMain{
-    min-height: 800px;
+    min-height: 1100px;
+    max-height: 1100px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 400px) {
+  .pwdByMain{
+    min-height: 1000px;
+    max-height: 1100px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .pwdByMain{
+    min-height: 900px;
     max-height: 1100px;
   }
 }
@@ -70,7 +95,7 @@ body {
   position: fixed;
   border-bottom: none;
   box-shadow: 0 1px 1px rgba(0,0,0,.15);
-  background-color: #5e13a7!important;
+  background-color: #443f8e!important;
   height: 71px;
   -webkit-transition: background-color 200ms linear;
   -moz-transition: background-color 200ms linear;
@@ -97,6 +122,11 @@ body {
   top: 3rem;
   left: 3rem;
 }
+@media only screen and (max-width: 600px) {
+  .pwdByPrLogoContainer{
+    left: 2rem;
+  }
+}
 .pwdByPrLogoFooter{
   height: 50px;
   width: 120px!important;
@@ -105,7 +135,13 @@ body {
   opacity: 0.7;
   margin-left: -14px;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 456px) {
+  .pwdByPrLogoFooter{
+    margin-left: 0;
+    left: 34%;
+  }
+}
+@media only screen and (min-width: 456px) and (max-width: 650px) {
   .pwdByPrLogoFooter{
     margin-left: 0;
     left: 38%;
@@ -127,6 +163,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 600px) {
+  .sectionMainContainer{
+    padding: 0 2.5rem;
+  }
+}
 
 .initiativeHeader{
   font-weight: 700;
@@ -136,6 +177,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #fff;
+  max-width: 100vw;
 }
 
 .initiativeSubHeader{
@@ -143,10 +185,11 @@ body {
   line-height: 1.44444444;
   letter-spacing: normal;
   color: #fff;
+  max-width: 100vw;
 }
 
 .initiativeTextDetail{
-  color: #fffdfd9c;
+  color: rgba(255, 253, 253,0.6); /*#fffdfd9c;*/
   font-size: .75rem;
 }
 .sponsoredByText{
@@ -208,8 +251,8 @@ body {
 }
 
 .initiativeVFXbtn-student{
-  color: #5e13a7;
-  background: #aafd60;
+  color: #443f8e;
+  background: #a8ff54;
   border-radius: .5rem;
   cursor: pointer;
   outline: none;
@@ -228,19 +271,19 @@ body {
   margin-bottom: .5rem;
 }
 .initiativeVFXbtn-student:hover{
-  background: #aafd60d6;
+  background: rgba(170, 253, 96,0.9); /*#aafd60d6;*/
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeVFXbtn-student:active{
-  background: #aafd60;
+  background: #a8ff54;
 }
 .initiativeVFXbtn-mentor{
-  color: #f82992;
+  color: #fb1f92;
   background: transparent;
   border-radius: .5rem;
   cursor: pointer;
   outline: none;
-  border: 1.5px solid #f82992;
+  border: 1.5px solid #fb1f92;
   height: 50px;
   min-width: 210px;
   text-align: center;
@@ -255,8 +298,8 @@ body {
   margin-bottom: .5rem;
 }
 .initiativeVFXbtn-mentor:hover{
-  background: #f8299236;
-  color: #e2e2e2fa;
+  background-color: rgba(248, 41, 146,0.2); /*#f8299236;*/
+  color: rgba(226,226,226,0.9); /* #e2e2e2fa;*/
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeVFXbtn-msentor:active{
@@ -278,12 +321,12 @@ body {
   padding: 1rem 5rem;
   font-size: .85rem;
   flex-basis: 50px;
-  background-color: rgb(94,19,167);
-  background-color: rgba(94,19,167);
+  background-color: #443f8e;
 }
 @media only screen and (max-width: 600px) {
   .initiativeKeyPoints{
     height: 250px;
+    padding: 1rem 2rem;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 725px) {
@@ -342,7 +385,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -80px;
 }
 #why-join ul.why-join-nav li {
   display: -ms-flexbox;
@@ -355,6 +398,7 @@ body {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  max-height: 80px;
 /*  -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1; */
@@ -379,10 +423,10 @@ body {
   position: relative;
 }
 #why-join ul.why-join-nav li.active a[id="mentee-click"]:before {
-  background-color: #aafd60;
+  background-color: #a8ff54;
 }
 #why-join ul.why-join-nav li.active a[id="mentor-click"]:before {
-  background-color: #f82992;
+  background-color: #fb1f92;
 }
 #why-join ul.why-join-nav li.active a:before {
   position: absolute;
@@ -428,6 +472,21 @@ body {
 .mentorIcon{
   height: 60px;
 }
+@media only screen and (max-width: 454px) {
+  #why-join ul.why-join-nav li {
+    max-width: 120px;
+  }
+  .menteeIcon{
+    height: 20px;
+  }
+  .mentorIcon{
+    height: 40px;
+  }
+  #why-join ul.why-join-nav li h4 {
+    margin: 0;
+    font-size: 13px;
+  }
+}
 .mainHeaders{
   font-size: 2.53rem;
   line-height: 1.1;
@@ -468,6 +527,12 @@ body {
   margin-left: auto;
   padding: 0 5rem;
 }
+@media only screen and (max-width: 600px) {
+  .whyJoinContainer{
+    padding: 0 2.5rem;
+  }
+}
+
 .whyJoinImg{
   max-height: 300px;
 }
@@ -477,10 +542,22 @@ body {
   padding: 0 5rem;
   display: block!important;
 }
+@media only screen and (max-width: 600px) {
+  .bottomSignUpDisplay{
+    padding: 0 2.5rem;
+  }
+}
 
 .joinSteps{
-  background-color: rgb(246, 237, 255); /* Fallback */
-  background-color: rgba(94, 19, 167, 0.1);
+  background-image: url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:linear-gradient(0deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-moz-linear-gradient(0deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-webkit-linear-gradient(90deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-o-linear-gradient(0deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+}
+
+#stepsTitle{
+  color: #fff;
 }
 .stepsLists{
   margin-bottom: 20px;
@@ -495,7 +572,7 @@ body {
   padding-left: 30px;
 }
 #joinSteps ul.stepsList li {
-  border-left: 2px dotted #5e13a7;
+  border-left: 2px dotted #fff;
   list-style-type: none;
   padding-left: 4rem;
   min-height: 8.5rem;
@@ -503,9 +580,10 @@ body {
   font-size: 16px;
   line-height: 26px;
   padding-bottom: 50px;
+  color: #fff;
 }
 #joinSteps ul.stepsList li:hover{
-  border-left: 2px solid #5e13a7;
+  border-left: 2px solid #fff;
 }
 .stepCrcl{
   position: absolute;
@@ -514,7 +592,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid #5e13a7;
+  border: 2px solid #fff;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -528,7 +606,11 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
-  background-color: #5e13a7;
+  background-color: #443f8e;
+}
+#joinSteps ul.stepsList li:hover .stepCrcl{
+  background-color: #fff;
+  color: #433f90;
 }
 .stepTitle{
   font-size: 20px;
@@ -538,11 +620,28 @@ body {
 .stepDetail{
   font-size: 15px;
 }
+@media only screen and (max-width: 479px) {
+  .stepsLists>.active{
+    margin-top: 2rem;
+  }
+  #joinSteps ul.stepsList li {
+    padding-left: 2rem;
+  }
+  .stepCrcl{
+    left: -22px;
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .quotesSection{
   background-color: #f2f2f2;
 }
-
+@media only screen and (max-width: 532px) {
+  #quotesTitle {
+    margin-bottom: 3rem;
+  }
+}
 #quotes ul.quote-list {
   list-style: none;
   padding: 0;
@@ -587,16 +686,16 @@ body {
   left: 30px;
 }
 #quotes li.quote-box:nth-child(1) {
-  border-color: #f82992;
+  border-color: #fb1f92;
 }
 #quotes li.quote-box:nth-child(1):before {
-  color: #f82992;
+  color: #fb1f92;
 }
 #quotes li.quote-box:nth-child(2) {
-  border-color: #5e13a7;
+  border-color: #443f8e;
 }
 #quotes li.quote-box:nth-child(2):before {
-  color: #5e13a7;
+  color: #443f8e;
 }
 #quotes li.quote-box:nth-child(3) {
   border-color: #79feed;
@@ -663,7 +762,9 @@ body {
   max-height: 200px;
 }
 .bottomSignUp{
-  background-color: #5e13a7;
+  background-image: url(https://prospela.com/wp-content/uploads/2019/07/AVFX_Wallpaper_1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #footer{
