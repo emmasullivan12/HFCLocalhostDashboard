@@ -1,5 +1,7 @@
 /* Dex last merged this code on 19th May 2019*/
 
+var cookiesBanner = document.getElementById("cookies-banner");
+var cookiesYes = document.getElementById("cookies-yes");
 var pwdByNav = document.getElementById("pwdByNav");
 var menteeClick = document.getElementById("mentee-click");
 var mentorClick = document.getElementById("mentor-click");
@@ -20,6 +22,14 @@ var tncTextFooter = document.getElementById("tncTextFooter");
 var tncStyleFooter = document.getElementById("tncStyleFooter");
 var tncCheckboxFooter = document.getElementById("tncCheckboxFooter");
 
+window.addEventListener("hashchange", function () {
+    window.scrollTo({
+      top: window.scrollY - 80,
+      left: window.scrollX,
+      behavior: 'smooth'
+    });
+});
+
 window.onscroll = function () {
     if (window.pageYOffset >= 450 ) {
       pwdByNav.classList.add("is-fixed");
@@ -30,6 +40,10 @@ window.onscroll = function () {
 };
 
 // Add event listenres
+cookiesYes.addEventListener('click', function(event) {
+  cookiesBanner.style.display = 'none';
+});
+
 menteeClick.addEventListener('click', function(event) {
   mentorInfo.classList.remove("active");
   mentorBtn.classList.remove("active");
@@ -53,7 +67,7 @@ mentorClick.addEventListener('click', function(event) {
   stepsTitle.innerHTML = 'Steps to joining as an E-Mentor';
 });
 
-tncCheckbox.addEventListener('invalid', function(event) {
+/*tncCheckbox.addEventListener('invalid', function(event) {
   tncText.classList.add('error');
   tncStyle.classList.add('error');
 }, false);
@@ -75,4 +89,4 @@ tncCheckboxFooter.addEventListener('change', function(event) {
     tncTextFooter.classList.remove('error');
     tncStyleFooter.classList.remove('error');
  }
-})
+})*/
