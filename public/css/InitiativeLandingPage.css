@@ -90,11 +90,11 @@ header, nav, article, section, aside, footer {
 }
 
 .pwdByMain{
-  background-image: url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:-moz-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:-webkit-linear-gradient(90deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
-  background-image:-o-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(http://www.accessvfx.org/static/media/uimages/paddington01.jpg);
+  background-image: url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-moz-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-webkit-linear-gradient(90deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-o-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
