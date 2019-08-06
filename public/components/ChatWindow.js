@@ -83,6 +83,7 @@ class ChatWindow extends Component {
   render() {
   const {isFlexContainerOpen} = this.state;
   const {flexContent} = this.props;
+  const isOffline = true;
 
   /*        {dragFiles != '' && (
               <Modal {...FileDropModalProps}>
@@ -111,6 +112,15 @@ class ChatWindow extends Component {
                 </button>
               </div>
             </div>
+            {isOffline && (
+              <div className="chatTopBanners">
+                <div className="offlineBanner">
+                  <div className="bannerMsg">
+                    It seems like you&#39;re offline. Messages will be sent when you&#39;re connected again.
+                  </div>
+                </div>
+              </div>
+            )}
             <div id="drop-zone" className="messages-panel" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
               <PrMessagesList />
             </div>

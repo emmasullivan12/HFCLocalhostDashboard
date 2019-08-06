@@ -38,6 +38,9 @@ function StdMessage(props) {
             <div className="message-content">
               {props.message.text}
             </div>
+            <div className="msgReadStatus">
+              &#10003; Seen
+            </div>
           </div>
         </div>
       </div>

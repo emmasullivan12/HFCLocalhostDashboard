@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import "../css/General.css";
 import "../css/FileUploadContent.css";
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
@@ -24,16 +25,19 @@ class FileUploadContent extends Component {
         <div className="modal-title">
           Upload a file
         </div>
-        <form>
+        <form className="fileUploadForm">
           <input
             type="text"
             name="fileUploadDescription"
-            className="fileUploadDescription-Form"
+            className="textInputBox passTxtBox"
             placeholder="Type your description..."
             value={this.state.fileUploadDescription}
             onChange={this.handleDescriptionChange}
           />
-          <button type="submit" className="FileUpload-btn">
+          <button type="button" className="Submit-btn BlankBtn">
+            Choose Files
+          </button>
+          <button type="submit" className="Submit-btn">
             Upload
           </button>
         </form>

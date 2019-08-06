@@ -109,6 +109,12 @@
   letter-spacing: 0.275px;
 }
 
+.msgReadStatus{
+  color: #b9b9b9;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
 .prauto-msg-container{
   width: 100%;
   background-color: #eeedfb;

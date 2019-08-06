@@ -46,7 +46,7 @@ class RequestChatContent extends Component {
         <form>
           <input
             type="text"
-            className="requestChatMessage-Form"
+            className="textInputBox"
             placeholder="Type your message..."
             value={this.state.requestChatMessage}
             onChange={this.handleMessageChange}

@@ -45,7 +45,7 @@ class AcceptMenteeContent extends Component {
           <input
             type="text"
             name="acceptMenteeMessage"
-            className="requestChatMessage-Form"
+            className="textInputBox"
             placeholder="Type your message"
             value={this.state.acceptMenteeMessage}
             onChange={this.handleMessageChange}

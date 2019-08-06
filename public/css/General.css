@@ -233,6 +233,26 @@ hr{
 /* ModalTrigger Buttons */
 
 /* Modal Content Buttons */
+.textInputBox{
+  display: block;
+  width: 100%;
+  padding: 0 .75rem;
+  margin: 1rem 0 0rem;
+  border: 1px solid #C5C5C5;
+  border-radius: .25rem;
+  height: 75px;
+  line-height: 40px;
+  vertical-align: top;
+  resize: none;
+  outline: none;
+}
+.textInputBox.passTxtBox{
+  margin: 0 0 1rem 0;
+}
+.textInputBox.passTxtBox:focus,
+.textInputBox:focus{
+  border: 2px solid #3f3f3f;
+}
 .Submit-btn{
   color: #fff;
   font: inherit;
@@ -252,10 +272,22 @@ hr{
   -o-transition: background .15s ease-out;
   transition: background .15s ease-out;
 }
+.Submit-btn.BlankBtn{
+  color: #58d2bb;
+  background: #fff;
+  margin: 0;
+  min-width: 120px;
+  font-weight: 400;
+}
 .Submit-btn:hover{
   background: #06bf9c; /* #58d2bbd9; */
   color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.Submit-btn.BlankBtn:hover{
+  color: #43a08f;
+  background: #fff;
+  box-shadow: none;
 }
 .Submit-btn:disabled{
   color: #9f9fa0;

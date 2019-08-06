@@ -94,13 +94,13 @@ class PassMenteeContent extends Component {
             />
             <span className="checkmark" />
           </label>
-          <div className="descriptor bold">
+          <div className="descriptor bold passDescriptor">
             How could we better match you?
           </div>
           <input
             type="text"
             name="PassReasonMessage"
-            className="PassReasonMessage-Form"
+            className="textInputBox passTxtBox"
             placeholder="Tell us why this isn't a great match for you..."
             value={this.state.PassReasonMessage}
             onChange={this.handleMessageChange}

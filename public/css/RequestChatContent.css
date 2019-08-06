@@ -15,7 +15,7 @@
   width: 100%;
   justify-content: center;
 }
-
+/*
 .requestChatMessage-Form{
   display: block;
   width: 100%;
@@ -32,7 +32,7 @@
 
 .requestChatMessage-Form:focus{
   border: 2px solid #3f3f3f;
-}
+}*/
 
 .need-ideas-container{
   margin-top: 20px;

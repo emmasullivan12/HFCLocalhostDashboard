@@ -135,12 +135,12 @@
 }
 
 .emojiContainer:hover {
-  transform: scale(1.25);
+  transform: scale(1.05);
   color: #f2c744;
 }
 
 .picContainer:hover {
-  transform: scale(1.25);
+  transform: scale(1.05);
   color: #4daf5b;
 }
 
