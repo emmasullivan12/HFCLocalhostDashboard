@@ -119,6 +119,7 @@
 
 .ModalOpenBtn-attachmentContainer {
   margin-left: 10px;
+  margin-right: 10px;
   width: 30px;
   height: 40px;
   line-height: 40px;
@@ -141,6 +142,33 @@
 }
 
 .ModalOpenBtn-attachmentContainer:hover{
+  background: none!important;
+}
+
+.ModalOpenBtn-picContainer {
+  margin-left: 10px;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #3f3f3f;
+  font-size: 20px;
+  opacity: 0.95;
+  padding: 0;
+  top: auto;
+  right: 5px;
+  bottom: 0px;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  outline: none!important;
+  box-shadow: none!important;
+  display: inline-block;
+  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+}
+
+.ModalOpenBtn-picContainer:hover{
   background: none!important;
 }
 

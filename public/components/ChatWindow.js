@@ -116,7 +116,7 @@ class ChatWindow extends Component {
               <div className="chatTopBanners">
                 <div className="offlineBanner">
                   <div className="bannerMsg">
-                    It seems like you&#39;re offline. Messages will be sent when you&#39;re connected again.
+                    It seems like you&#39;re offline. Please try sending your messages again when you&#39;re reconnected.
                   </div>
                 </div>
               </div>

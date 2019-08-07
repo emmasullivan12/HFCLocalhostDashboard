@@ -9,6 +9,12 @@ function ButtonContent(props) {
   const text = props.text;
 
   switch (usedFor) {
+    case 'picContainer':
+      return (
+        <div type="button" className="picContainer">
+          <i className="far fa-image" />
+        </div>
+      );
     case 'attachmentContainer':
       return (
         <div type="button" className="attachmentContainer">

@@ -24,6 +24,18 @@ function Avatar(props) {
   );
 }
 
+function TimeCalc(props) {
+  var ts = new Date(props.time * 1000);
+  var hour = ts.getHours();
+  var min = ts.getMinutes();
+  var ampm = hour >= 12 ? 'pm' : 'am';
+  hour = hour % 12;
+  hour = hour ? hour : 12; // the hour '0' should be '12'
+  min = min > 0 && min < 10 ? '0'+min : min;
+  var timeTxt = hour + ':' + min + ' ' + ampm;
+  return timeTxt;
+}
+
 function StdMessage(props) {
   return (
     <React.Fragment>
@@ -33,7 +45,7 @@ function StdMessage(props) {
           <div className="message-content-box">
             <div className="sent-msg-info">
               <span className="sender-name">{props.message.author}</span>
-              <span className="msg-sent-time">{props.message.time}</span>
+              <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
             </div>
             <div className="message-content">
               {props.message.text}
@@ -57,7 +69,7 @@ function DisplayFile(props) {
           <div className="message-content-box">
             <div className="sent-msg-info">
               <span className="sender-name">{props.message.author}</span>
-              <span className="msg-sent-time">{props.message.time}</span>
+              <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
             </div>
             <div className="message-content">
               <div className="extra-content-container">
@@ -93,7 +105,7 @@ function MenteeReq(props) {
               <div className="message-content-box">
                 <div className="sent-msg-info">
                   <span className="sender-name">{props.message.author}</span>
-                  <span className="msg-sent-time">{props.message.time}</span>
+                  <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
                 </div>
                 <div className="message-content">
                   {props.message.chatReq.reqMsg}
@@ -151,7 +163,61 @@ function PrAuto(props) {
   }
 }
 
+function nthCalc(date) {
+  if (date > 3 && date < 21) return 'th';
+  switch (date % 10) {
+    case 1:  return "st";
+    case 2:  return "nd";
+    case 3:  return "rd";
+    default: return "th";
+  }
+}
+
+function DateCalc(props) {
+  var ts = new Date(props.time * 1000);
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  var year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
+  var month = months[ts.getMonth()];
+  var day = days[ts.getDay()];
+  var date = ts.getDate();
+  var nth = nthCalc(date);
+  var time = day + ', ' + month + ' ' + date + nth + year
+  return time;
+}
+
 class PrMessage extends Component {
+  render() {
+  const {message} = this.props;
+    return (
+      <React.Fragment>
+        {message.id==='100001' && (
+          <div className="block-container" id="dateHeader">
+            <div className="date-separator">
+              <hr className="separator__hr" />
+              <div className="separator__text">
+                <span><DateCalc time={message.time} /></span>
+              </div>
+            </div>
+          </div>
+        )}
+        {message.id==='100005' && (
+          <div className="block-container" id="newMsgs">
+            <div className="unread-separator">
+              <hr className="unreadSeparator__hr" />
+              <div className="unreadSeparator__text">
+                <span>new messages</span>
+              </div>
+            </div>
+          </div>
+        )}
+        <PrMessageContents message={message} />
+      </React.Fragment>
+    )
+  }
+}
+
+class PrMessageContents extends Component {
   render() {
     switch (this.props.message.subtype) {
       case "std":

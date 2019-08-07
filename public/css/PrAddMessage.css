@@ -88,29 +88,6 @@
   white-space: nowrap;
 }
 
-.picContainer {
-  margin-right: 0;
-  margin-left: 10px;
-  width: 30px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #3f3f3f;
-  font-size: 20px;
-  opacity: 0.95;
-  padding: 0;
-  top: auto;
-  right: 1.25rem;
-  bottom: 28px;
-  position: absolute;
-  cursor: pointer;
-  background: none;
-  border: 0;
-  outline: none;
-  display: inline-block;
-  transition: all 50ms ease-out 0s;
-}
-
 .emojiContainer {
   float: left;
   margin-right: 0;

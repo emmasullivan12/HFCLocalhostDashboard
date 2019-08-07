@@ -12,7 +12,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '09:10am',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -21,7 +21,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '10:10am',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -30,7 +30,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '11:10am',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -39,7 +39,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '11:50am',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -48,7 +48,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '11:59am',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -57,7 +57,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '12:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -66,7 +66,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '13:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -75,7 +75,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '14:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -84,7 +84,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '15:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -93,7 +93,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '16:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -102,7 +102,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'file',
         author: 'emma-student',
-        time: '17:10pm',
+        time: 1565209202,
         text: 'Emma sent you a picture',
         file: {
           id: '99999',
@@ -118,7 +118,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'menteeReq',
         author: 'emma-student',
-        time: '18:10pm',
+        time: 1565209202,
         text: 'You have a new student who would really appreciate your mentorship!',
         chatReq: {
           chatID: '12345',
@@ -131,7 +131,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '19:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -140,7 +140,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '20:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -149,7 +149,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: '21:10pm',
+        time: 1565209202,
         text: 'This is my message'
       },
       {
@@ -158,7 +158,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: '22:10pm',
+        time: 1565209202,
         prAuto: {
           title: 'ending'
         }
@@ -169,7 +169,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: '23:10pm',
+        time: 1565209202,
         prAuto: {
           title: 'ended'
         }
