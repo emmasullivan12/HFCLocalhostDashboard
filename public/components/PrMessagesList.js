@@ -12,7 +12,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1525209202,
         text: 'This is my message'
       },
       {
@@ -21,7 +21,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1525209202,
         text: 'This is my message'
       },
       {
@@ -30,7 +30,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1535209202,
         text: 'This is my message'
       },
       {
@@ -39,7 +39,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1535209202,
         text: 'This is my message'
       },
       {
@@ -48,7 +48,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1545209202,
         text: 'This is my message'
       },
       {
@@ -57,7 +57,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1545209202,
         text: 'This is my message'
       },
       {
@@ -131,7 +131,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1555206202,
         text: 'This is my message'
       },
       {
@@ -149,7 +149,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
+        time: 1565136000,
         text: 'This is my message'
       },
       {
@@ -158,7 +158,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: 1565209202,
+        time: 1565136000,
         prAuto: {
           title: 'ending'
         }
@@ -169,7 +169,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: 1565209202,
+        time: 1565136000,
         prAuto: {
           title: 'ended'
         }
@@ -179,10 +179,11 @@ class PrMessagesList extends Component {
     return (
       <React.Fragment>
         <div className="messages-container">
-        {messages.map(message => (
+        {messages.map((message,i) => (
           <PrMessage
             message={message}
             key={message.id}
+            index={i}
           />
         ))}
         </div>

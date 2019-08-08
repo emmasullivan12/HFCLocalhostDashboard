@@ -31,7 +31,7 @@ function TimeCalc(props) {
   var ampm = hour >= 12 ? 'pm' : 'am';
   hour = hour % 12;
   hour = hour ? hour : 12; // the hour '0' should be '12'
-  min = min > 0 && min < 10 ? '0'+min : min;
+  min = min >= 0 && min < 10 ? '0'+min : min;
   var timeTxt = hour + ':' + min + ' ' + ampm;
   return timeTxt;
 }
@@ -175,6 +175,13 @@ function nthCalc(date) {
 
 function DateCalc(props) {
   var ts = new Date(props.time * 1000);
+  var today = new Date();
+  var isToday = ts.toDateString() == today.toDateString();
+  if (isToday) {
+    return "Today"
+  } else if(ts.toDateString() == new Date((today.setDate(today.getDate()-1))).toDateString()) {
+    return "Yesterday"
+  } else {
   var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
   var year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
@@ -184,23 +191,14 @@ function DateCalc(props) {
   var nth = nthCalc(date);
   var time = day + ', ' + month + ' ' + date + nth + year
   return time;
+  }
 }
 
 class PrMessage extends Component {
   render() {
-  const {message} = this.props;
+  const {message,index} = this.props;
     return (
       <React.Fragment>
-        {message.id==='100001' && (
-          <div className="block-container" id="dateHeader">
-            <div className="date-separator">
-              <hr className="separator__hr" />
-              <div className="separator__text">
-                <span><DateCalc time={message.time} /></span>
-              </div>
-            </div>
-          </div>
-        )}
         {message.id==='100005' && (
           <div className="block-container" id="newMsgs">
             <div className="unread-separator">
@@ -211,7 +209,17 @@ class PrMessage extends Component {
             </div>
           </div>
         )}
-        <PrMessageContents message={message} />
+        {index===0 && (
+          <div className="block-container" id="dateHeader">
+            <div className="date-separator">
+              <hr className="separator__hr" />
+              <div className="separator__text">
+                <span><DateCalc time={message.time} /></span>
+              </div>
+            </div>
+          </div>
+        )}
+        <PrMessageContents message={message}/>
       </React.Fragment>
     )
   }
@@ -222,7 +230,7 @@ class PrMessageContents extends Component {
     switch (this.props.message.subtype) {
       case "std":
       case 'mentorAcc':
-        return <StdMessage message={this.props.message} />
+        return <StdMessage message={this.props.message}/>
       case "file":
         return <DisplayFile message={this.props.message} />
       case "prAuto":
