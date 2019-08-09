@@ -3,26 +3,56 @@
 import React, { Component } from "react";
 import PrMessage from "./PrMessage";
 
+function isNewDay(prevMsg, message) {
+  var prevMsgDate = new Date(prevMsg.time * 1000);
+  var msgDate = new Date(message.time * 1000);
+  msgDate.setHours(0);
+  msgDate.setMinutes(0);
+  msgDate.setSeconds(0);
+  if (prevMsgDate < msgDate) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function shouldShowDateHeader(prevMsg, message) {
+//  var showDateHeader;
+  if (isNewDay(prevMsg,message)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function checkIsAdjacent(prevMsg, message) {
+  if (prevMsg.uid != message.uid) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 class PrMessagesList extends Component {
   render() {
     const messages = [
       {
         id: '99995',
-        uid: '12345',
+        uid: '23456',
         type: 'message',
         subtype: 'std',
-        author: 'dexter',
+        author: 'emma',
         time: 1525209202,
-        text: 'This is my message'
+        text: 'This is emmas message'
       },
       {
         id: '99996',
-        uid: '12345',
+        uid: '23456',
         type: 'message',
         subtype: 'std',
-        author: 'dexter',
+        author: 'emma',
         time: 1525209202,
-        text: 'This is my message'
+        text: 'This is emmas message'
       },
       {
         id: '99997',
@@ -31,7 +61,7 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'dexter',
         time: 1535209202,
-        text: 'This is my message'
+        text: 'This is dex message'
       },
       {
         id: '99998',
@@ -40,16 +70,16 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'dexter',
         time: 1535209202,
-        text: 'This is my message'
+        text: 'This is dex message'
       },
       {
         id: '99999',
-        uid: '12345',
+        uid: '23456',
         type: 'message',
         subtype: 'std',
-        author: 'dexter',
+        author: 'emma',
         time: 1545209202,
-        text: 'This is my message'
+        text: 'This is emmas message'
       },
       {
         id: '100000',
@@ -58,7 +88,7 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'dexter',
         time: 1545209202,
-        text: 'This is my message'
+        text: 'This is dex message'
       },
       {
         id: '100001',
@@ -67,16 +97,16 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'dexter',
         time: 1565209202,
-        text: 'This is my message'
+        text: 'This is dex message'
       },
       {
         id: '100002',
-        uid: '12345',
+        uid: '23456',
         type: 'message',
         subtype: 'std',
-        author: 'dexter',
+        author: 'emma',
         time: 1565209202,
-        text: 'This is my message'
+        text: 'This is emmas message'
       },
       {
         id: '100003',
@@ -85,16 +115,16 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'dexter',
         time: 1565209202,
-        text: 'This is my message'
+        text: 'This is dex message'
       },
       {
         id: '100004',
-        uid: '12345',
+        uid: '23456',
         type: 'message',
         subtype: 'std',
-        author: 'dexter',
+        author: 'emma',
         time: 1565209202,
-        text: 'This is my message'
+        text: 'This is emmas message'
       },
       {
         id: '100005',
@@ -119,11 +149,7 @@ class PrMessagesList extends Component {
         subtype: 'menteeReq',
         author: 'emma-student',
         time: 1565209202,
-        text: 'You have a new student who would really appreciate your mentorship!',
-        chatReq: {
-          chatID: '12345',
-          reqMsg: 'Hi Im Emma studying Business, Maths and English. I’m interested in learning more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
-        }
+        text: 'Hi Im Emma studying Business, Maths and English. I’m interested in learning more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
       },
       {
         id: '100007',
@@ -131,8 +157,8 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1555206202,
-        text: 'This is my message'
+        time: 1565367993,
+        text: 'This is dex message'
       },
       {
         id: '100008',
@@ -140,8 +166,8 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565209202,
-        text: 'This is my message'
+        time: 1565367993,
+        text: 'This is dex message'
       },
       {
         id: '100009',
@@ -149,8 +175,8 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        time: 1565136000,
-        text: 'This is my message'
+        time: 1565367993,
+        text: 'This is dex message'
       },
       {
         id: '100010',
@@ -158,7 +184,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: 1565136000,
+        time: 1565367993,
         prAuto: {
           title: 'ending'
         }
@@ -169,23 +195,30 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        time: 1565136000,
+        time: 1565367993,
         prAuto: {
           title: 'ended'
         }
       }
     ];
+    var prevMsg = {};
 
     return (
       <React.Fragment>
         <div className="messages-container">
-        {messages.map((message,i) => (
-          <PrMessage
-            message={message}
-            key={message.id}
-            index={i}
-          />
-        ))}
+        {messages.map((message, index) => {
+        const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
+        const isAdjacent = (index===0 || showDateHeader===true ? false : checkIsAdjacent(prevMsg, message));
+        prevMsg = message;
+          return (
+            <PrMessage
+              message={message}
+              key={message.id}
+              showDateHeader={showDateHeader}
+              isAdjacent={isAdjacent}
+            />
+          )
+        })}
         </div>
       </React.Fragment>
     );

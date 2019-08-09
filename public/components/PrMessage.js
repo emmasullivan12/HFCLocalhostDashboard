@@ -40,21 +40,48 @@ function StdMessage(props) {
   return (
     <React.Fragment>
       <div className="block-container">
-        <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author}/>
-          <div className="message-content-box">
-            <div className="sent-msg-info">
-              <span className="sender-name">{props.message.author}</span>
-              <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
+      {
+        props.isAdjacent === true
+        ? (
+          <div className="message-container adjacent">
+            <div className="messageGutter">
+              <div className="msg-sent-time adjacent">
+                <TimeCalc time={props.message.time} />
+              </div>
             </div>
-            <div className="message-content">
-              {props.message.text}
-            </div>
-            <div className="msgReadStatus">
-              &#10003; Seen
+            <div className="message-content-box">
+              <div className="message-content">
+                {props.message.text}
+              </div>
+              <div className="msgStatus read">
+                &#10003; Seen
+              </div>
+              <div className="msgStatus error">
+                &#10007; Error sending message. Please try again
+              </div>
             </div>
           </div>
-        </div>
+        ):(
+          <div className="message-container">
+            <Avatar senderID={props.message.uid} senderName={props.message.author}/>
+            <div className="message-content-box">
+              <div className="sent-msg-info">
+                <span className="sender-name">{props.message.author}</span>
+                <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
+              </div>
+              <div className="message-content">
+                {props.message.text}
+              </div>
+              <div className="msgStatus read">
+                &#10003; Seen
+              </div>
+              <div className="msgStatus error">
+                &#10007; Error sending message. Please try again
+              </div>
+            </div>
+          </div>
+        )
+      }
       </div>
     </React.Fragment>
   );
@@ -78,6 +105,12 @@ function DisplayFile(props) {
                 />
               </div>
             </div>
+            <div className="msgStatus read">
+              &#10003; Seen
+            </div>
+            <div className="msgStatus error">
+              &#10007; Error sending message. Please try again
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +127,7 @@ function MenteeReq(props) {
               <i className="emoji-icon tada-emoji" />
             </div>
             <div className="message-content-box msgTitle">
-              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; {props.message.text}</span>
+              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a new student who would really appreciate your mentorship!</span>
             </div>
         </div>
         <div className="message-extras-container">
@@ -108,7 +141,7 @@ function MenteeReq(props) {
                   <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
                 </div>
                 <div className="message-content">
-                  {props.message.chatReq.reqMsg}
+                  {props.message.text}
                 </div>
               </div>
             </div>
@@ -196,10 +229,10 @@ function DateCalc(props) {
 
 class PrMessage extends Component {
   render() {
-  const {message,index} = this.props;
+  const {message,showDateHeader,isAdjacent} = this.props;
     return (
       <React.Fragment>
-        {message.id==='100005' && (
+        {message.id==='100004' && (
           <div className="block-container" id="newMsgs">
             <div className="unread-separator">
               <hr className="unreadSeparator__hr" />
@@ -209,7 +242,7 @@ class PrMessage extends Component {
             </div>
           </div>
         )}
-        {index===0 && (
+        {showDateHeader && (
           <div className="block-container" id="dateHeader">
             <div className="date-separator">
               <hr className="separator__hr" />
@@ -219,7 +252,7 @@ class PrMessage extends Component {
             </div>
           </div>
         )}
-        <PrMessageContents message={message}/>
+        <PrMessageContents message={message} isAdjacent={isAdjacent}/>
       </React.Fragment>
     )
   }
@@ -230,7 +263,7 @@ class PrMessageContents extends Component {
     switch (this.props.message.subtype) {
       case "std":
       case 'mentorAcc':
-        return <StdMessage message={this.props.message}/>
+        return <StdMessage message={this.props.message} isAdjacent={this.props.isAdjacent}/>
       case "file":
         return <DisplayFile message={this.props.message} />
       case "prAuto":
