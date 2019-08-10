@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th May 2019
+// Dex last merged this code on 10th August 2019
 
 import React, { Component } from "react";
 
@@ -46,7 +46,7 @@ function StdMessage(props) {
           <div className="message-container adjacent">
             <div className="messageGutter">
               <div className="msg-sent-time adjacent">
-                <TimeCalc time={props.message.time} />
+                <TimeCalc time={props.message.ts} />
               </div>
             </div>
             <div className="message-content-box">
@@ -67,7 +67,7 @@ function StdMessage(props) {
             <div className="message-content-box">
               <div className="sent-msg-info">
                 <span className="sender-name">{props.message.author}</span>
-                <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
+                <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
               </div>
               <div className="message-content">
                 {props.message.text}
@@ -96,7 +96,7 @@ function DisplayFile(props) {
           <div className="message-content-box">
             <div className="sent-msg-info">
               <span className="sender-name">{props.message.author}</span>
-              <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
+              <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
               <div className="extra-content-container">
@@ -127,7 +127,7 @@ function MenteeReq(props) {
               <i className="emoji-icon tada-emoji" />
             </div>
             <div className="message-content-box msgTitle">
-              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a new student who would really appreciate your mentorship!</span>
+              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a message from Dexter, a mentee who would really appreciate your mentorship!</span>
             </div>
         </div>
         <div className="message-extras-container">
@@ -138,7 +138,7 @@ function MenteeReq(props) {
               <div className="message-content-box">
                 <div className="sent-msg-info">
                   <span className="sender-name">{props.message.author}</span>
-                  <span className="msg-sent-time"><TimeCalc time={props.message.time} /></span>
+                  <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                 </div>
                 <div className="message-content">
                   {props.message.text}
@@ -230,6 +230,7 @@ function DateCalc(props) {
 class PrMessage extends Component {
   render() {
   const {message,showDateHeader,isAdjacent} = this.props;
+
     return (
       <React.Fragment>
         {message.id==='100004' && (
@@ -247,7 +248,7 @@ class PrMessage extends Component {
             <div className="date-separator">
               <hr className="separator__hr" />
               <div className="separator__text">
-                <span><DateCalc time={message.time} /></span>
+                <span><DateCalc time={message.ts} /></span>
               </div>
             </div>
           </div>

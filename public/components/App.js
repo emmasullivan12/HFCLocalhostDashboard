@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th May 2019
+// Dex last merged this code on 10th Aug 2019
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -18,8 +18,6 @@ import { usersFetchData } from "../actions/Users";*/
 import ChatMenu from "./ChatMenu";
 import LatestAdvice from "./LatestAdvice";
 import LgdInUsrProfile from "./LgdInUsrProfile";
-/*import LoginContent from "./LoginContent.js";
-import LoginSUTemplate from "./LoginSUTemplate";*/
 import MainMenu from "./MainMenu";
 import MentorHomePage from './MentorHomePage.js';
 import MenuModal from "./MenuModal";

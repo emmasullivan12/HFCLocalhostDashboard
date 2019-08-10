@@ -1,3 +1,5 @@
+// Dex last merged this code on 10th Aug 2019
+
 import React, { Component } from "react";
 import Camera from './Camera.js';
 import Photo from './Photo.js';

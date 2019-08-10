@@ -1,3 +1,5 @@
+// Dex last merged this code on 10th Aug 2019
+
 import React from "react";
 import ReactDOM from "react-dom";
 import '../css/Camera.css';

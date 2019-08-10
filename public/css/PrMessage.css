@@ -1,4 +1,4 @@
-/* Dex last merged this code on 16th May 2019 */
+/* Dex last merged this code on 10th August 2019 */
 
 .msg-thumb-container {
   width: 2.5rem;
@@ -37,6 +37,11 @@
 #dateHeader:hover,
 #newMsgs:hover{
   background-color: transparent;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
 }
 
 .message-container {
