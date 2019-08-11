@@ -278,7 +278,7 @@ hr{
 }
 .Submit-btn.HollowBtn{
   color: #58d2bb;
-  border: 2px dashed #58d2bb;
+  border: 2px solid #58d2bb;
   background: #fff;
   margin: 0;
   min-width: 120px;
@@ -292,7 +292,7 @@ hr{
   font-weight: 400;
 }
 .uploadPicBtn{
-  margin-top: 10px!important;
+  margin-top: 25px!important;
 }
 .Submit-btn:hover{
   background: #06bf9c; /* #58d2bbd9; */
@@ -319,9 +319,6 @@ hr{
 }
 .Submit-btn:active{
   background: #58d2bb;
-}
-.uploadPicBtn{
-  margin-top: 10px;
 }
 .btn-left{
   width: 100px;

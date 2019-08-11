@@ -10,7 +10,7 @@ const Camera = (props) => (
     <video id="video" width="350" autoPlay>
       <track kind="captions" />
     </video>
-    <button type="submit" id="startButton" className="Submit-btn">Take photo</button>
+    <button type="submit" id="startButton" className="Submit-btn HollowBtn">Take photo</button>
   </div>
 );
 

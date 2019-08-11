@@ -3,4 +3,5 @@
 .photoOutput{
   text-align: center;
   margin: 10px 0;
+  display: none;
 }

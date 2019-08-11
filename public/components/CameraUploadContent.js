@@ -8,7 +8,10 @@ import '../css/CameraUploadContent.css';
 
 class CameraUploadContent extends Component {
 
+// Add to takePicture function: photo.style.display = 'block';
+
   render() {
+    const isEnabled = false;
     return (
       <React.Fragment>
         <div className="capture">
@@ -27,7 +30,7 @@ class CameraUploadContent extends Component {
               className="textInputBox"
               placeholder="Type your message..."
             />
-            <button type="submit" className="Submit-btn HollowBtn uploadPicBtn" id="saveButton">Upload photo</button>
+            <button type="submit" disabled={!isEnabled} className="Submit-btn uploadPicBtn" id="saveButton">Upload photo</button>
           </form>
         </div>
       </React.Fragment>

@@ -51,16 +51,15 @@ class ChatWindow extends Component {
     /* this.handleFileDrop = this.handleFileDrop.bind(this);*/
   }
 
-  // FILE DROP ACTIVITY
-
   onScroll = () => {
     const { scrollRef } = this;
     const scrollTop = this.scrollRef.current.scrollTop;
-    if (scrollTop === 0) {
+    if (scrollTop < 250) {
       this.setState({isLoadingMsgs: true});
     }
   };
 
+  // FILE DROP ACTIVITY
   handleDragEnter(e) {
     e.stopPropagation();
     e.preventDefault();

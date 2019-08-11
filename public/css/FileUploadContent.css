@@ -3,3 +3,43 @@
 .fileUploadForm{
   text-align: center;
 }
+.inputFile{
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputFile + label{
+  max-width: 80%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  color: #58d2bb;
+  margin-top: 1rem;
+}
+.inputfile:focus + label,
+label:hover {
+  color: #43a08f;
+}
+.inputFile + label svg{
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  margin-right: 0.25em;
+}
+.fileNamesContainer{
+  margin: 1rem 0;
+}
+.fileNamesHeader{
+  font-weight: 700;
+  margin-bottom: .5rem;
+}

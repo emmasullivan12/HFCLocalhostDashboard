@@ -41,11 +41,13 @@ class DisplayMsgFile extends Component {
           {isFlexContainerOpen && (
             <div className="msg-img-container">
               <div className="msg-img-content">
-                <img
-                  className="msg-img"
-                  src={file.imgurl}
-                  alt={file.name}
-                />
+                <a href='www.prospela.com' target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="msg-img"
+                    src={file.imgurl}
+                    alt={file.name}
+                  />
+                </a>
               </div>
             </div>
           )}
