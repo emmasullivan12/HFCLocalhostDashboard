@@ -34,10 +34,13 @@ const FlexContainerContent = ({
 //To do
 // This is a container for all messages in the chat
 class ChatWindow extends Component {
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
+    this.scrollRef = React.createRef();
     this.state = {
       isFlexContainerOpen: false,
+      isLoadingMsgs: false,
+      isNoMoreMsgs: false,
       dragover: '',
       /* dragFiles: '', */
     }
@@ -45,10 +48,20 @@ class ChatWindow extends Component {
     this.handleDragEnter = this.handleDragEnter.bind(this);
     this.handleDragOver = this.handleDragOver.bind(this);
     this.handleDragLeave = this.handleDragLeave.bind(this);
+    this.onScroll = this.onScroll.bind(this);
     /* this.handleFileDrop = this.handleFileDrop.bind(this);*/
   }
 
   // FILE DROP ACTIVITY
+
+  onScroll = () => {
+    const { scrollRef } = this;
+    const scrollTop = this.scrollRef.current.scrollTop;
+    if (scrollTop === 0) {
+      this.setState({isLoadingMsgs: true});
+      this.setState({isNoMoreMsgs: true});
+    }
+  };
 
   handleDragEnter(e) {
     e.stopPropagation();
@@ -81,9 +94,10 @@ class ChatWindow extends Component {
   }
 
   render() {
-  const {isFlexContainerOpen} = this.state;
+  const {isFlexContainerOpen,isLoadingMsgs, isNoMoreMsgs} = this.state;
   const {flexContent} = this.props;
-  const isOffline = true;
+  const {onScroll} = this;
+  const isOffline = false;
 
   /*        {dragFiles != '' && (
               <Modal {...FileDropModalProps}>
@@ -114,15 +128,24 @@ class ChatWindow extends Component {
             </div>
             {isOffline && (
               <div className="chatTopBanners">
-                <div className="offlineBanner">
+                <div className="banner offlineBanner">
                   <div className="bannerMsg">
                     It seems like you&#39;re offline. Please try sending your messages again when you&#39;re reconnected.
                   </div>
                 </div>
               </div>
             )}
-            <div id="drop-zone" className="messages-panel" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-              <PrMessagesList />
+            {isLoadingMsgs && (
+              <div className="chatTopBanners">
+                <div className="banner loadingMsgsBanner">
+                  <div className="bannerMsg">
+                    Loading messages...
+                  </div>
+                </div>
+              </div>
+            )}
+            <div id="drop-zone" className="messages-panel" ref={this.scrollRef} onScroll={onScroll} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
+              <PrMessagesList isNoMoreMsgs={isNoMoreMsgs}/>
             </div>
             <PrAddMessage />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >

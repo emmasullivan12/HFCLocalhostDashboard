@@ -34,6 +34,11 @@
   background-color: rgb(242, 242, 242, 0.5);
 }
 
+#newMsgs {
+  padding-top: 12rem;
+  margin-top: -12rem;
+}
+
 #dateHeader:hover,
 #newMsgs:hover{
   background-color: transparent;
