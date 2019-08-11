@@ -35,7 +35,6 @@ function checkIsAdjacent(prevMsg, message) {
 
 class PrMessagesList extends Component {
   render() {
-    const {isNoMoreMsgs} = this.props;
     const messages = [
       {
         id: '99995',
@@ -206,11 +205,6 @@ class PrMessagesList extends Component {
 
     return (
       <React.Fragment>
-        {isNoMoreMsgs && (
-          <div >
-            No more messages to load.
-          </div>
-        )}
         <div className="messages-container">
         {messages.map((message, index) => {
         const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));

@@ -1,4 +1,4 @@
-// Dex last merged this code on 10th August 2019
+// Dex last merged this code on 11th August 2019
 
 import React, { Component } from "react";
 
@@ -158,6 +158,12 @@ function MenteeReq(props) {
 
 function PrAuto(props) {
   switch (props.message.prAuto.title) {
+    case 'start':
+      return (
+        <div className="prauto-msg-container">
+          This is the start of your chat with USERID
+        </div>
+      );
     case 'prompt':
       return (
         <div className="prauto-msg-container">

@@ -1,4 +1,4 @@
-// Dex last merged this code on 10th Aug 2019
+// Dex last merged this code on 11th Aug 2019
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -40,7 +40,6 @@ class ChatWindow extends Component {
     this.state = {
       isFlexContainerOpen: false,
       isLoadingMsgs: false,
-      isNoMoreMsgs: false,
       dragover: '',
       /* dragFiles: '', */
     }
@@ -59,7 +58,6 @@ class ChatWindow extends Component {
     const scrollTop = this.scrollRef.current.scrollTop;
     if (scrollTop === 0) {
       this.setState({isLoadingMsgs: true});
-      this.setState({isNoMoreMsgs: true});
     }
   };
 
@@ -94,7 +92,7 @@ class ChatWindow extends Component {
   }
 
   render() {
-  const {isFlexContainerOpen,isLoadingMsgs, isNoMoreMsgs} = this.state;
+  const {isFlexContainerOpen,isLoadingMsgs} = this.state;
   const {flexContent} = this.props;
   const {onScroll} = this;
   const isOffline = false;
@@ -145,7 +143,7 @@ class ChatWindow extends Component {
               </div>
             )}
             <div id="drop-zone" className="messages-panel" ref={this.scrollRef} onScroll={onScroll} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-              <PrMessagesList isNoMoreMsgs={isNoMoreMsgs}/>
+              <PrMessagesList/>
             </div>
             <PrAddMessage />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
