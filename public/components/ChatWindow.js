@@ -124,7 +124,7 @@ class ChatWindow extends Component {
               </div>
             </div>
             {isOffline && (
-              <div className="chatTopBanners">
+              <div className="chatTopBanners priorityBanner">
                 <div className="banner offlineBanner">
                   <div className="bannerMsg">
                     It seems like you&#39;re offline. Please try sending your messages again when you&#39;re reconnected.

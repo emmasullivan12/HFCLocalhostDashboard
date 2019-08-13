@@ -114,6 +114,9 @@ hr{
   color: #da0b0b;
   font-size: 13px;
 }
+.inheritFontSize{
+  font-size: inherit;
+}
 
 /* POSITIONING */
 .alignCenter{
@@ -284,6 +287,12 @@ hr{
   min-width: 120px;
   font-weight: 400;
 }
+.Submit-btn.HollowBtn.Edit{
+  min-width: 80px;
+  margin-right: 20px;
+  max-height: 30px;
+  display: inline-block;
+}
 .Submit-btn.BlankBtn{
   color: #58d2bb;
   background: #fff;
@@ -452,15 +461,88 @@ hr{
   transform: rotate(45deg);
 }
 
+/* RADIO BUTTONS */
+.radioContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.setPrimary{
+  right: 0;
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+}
+.radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.radioCheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #4e4ed61c;
+  border-radius: 50%;
+}
+.radioContainer:hover input ~ .radioCheckmark {
+  background-color: #4e4ed64a;
+}
+.radioContainer input:checked ~ .radioCheckmark {
+  background-color: #4e4ed6c9;
+}
+.radioCheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radioContainer input:checked ~ .radioCheckmark:after {
+  display: block;
+}
+.radioContainer .radioCheckmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
 /* TOGGLES / SLIDERS */
 .notifToggleContainer{
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+.notifToggleContainer.email{
+  display: inline-block;
+  width: 100%;
 }
 .notifToggleTxt{
   display: flex;
   width: 85%;
+  line-height: 2;
+}
+.emailToggleTxt{
+  color: #1b9aff;
+  font-size: 14px;
+  width: 55%;
+  display: inline-block;
+}
+.emailBtns{
+  display: inline-block;
+  float: right;
+  right: 0;
 }
 .switch {
   position: relative;
@@ -501,6 +583,13 @@ hr{
 
 input:checked + .slider {
   background-color: #351c75;
+}
+
+input:disabled + .slider {
+  background-color: rgba(53, 28, 117, 0.4);
+}
+input:disabled:checked + .slider {
+  background-color: rgba(53, 28, 117, 0.4)!important;
 }
 
 input:focus + .slider {
@@ -575,6 +664,10 @@ a:active {
 
 
 /* ICONS */
+.buttonIcon{
+  padding-right: .5rem;
+}
+
 .down-arrow-img-icon{
   font-size: 15px;
   color: rgba(29,28,29,.7);

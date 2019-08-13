@@ -16,6 +16,9 @@
   left: 10px;
   right: 14px;
 }
+.priorityBanner{
+  z-index: 202;
+}
 .banner{
   border-radius: 6px;
   z-index: 200;

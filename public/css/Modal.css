@@ -267,6 +267,7 @@
   color: #9a9a9a;
   background: none;
   padding: 2rem 2rem;
+  font-family:  Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 .modal-close.fullPage:hover {
   color: #000!important;
