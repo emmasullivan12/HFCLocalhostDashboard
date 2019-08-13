@@ -8,6 +8,16 @@ import {
   NavLink
 } from "react-router-dom";
 
+import FullPageModal from './FullPageModal.js';
+import SettingsContent from './SettingsContent.js';
+import "../css/Modal.css";
+
+const SettingsModalProps = {
+  ariaLabel: 'Popup to manage your preferences and settings',
+  triggerText: 'Preferences & Settings',
+  usedFor: 'settings'
+}
+
 // This shows the content within an individual row in the ChatMenu
 class ChatListItem extends Component {
   render() {
@@ -58,6 +68,9 @@ class ChatMenu extends Component {
           </NavLink>
           {chats}
           <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink></div>
+          <FullPageModal {...SettingsModalProps}>
+            <SettingsContent />
+          </FullPageModal>
         </div>
       </React.Fragment>
     );

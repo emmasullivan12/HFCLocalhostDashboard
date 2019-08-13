@@ -4,11 +4,21 @@ import React, { Component } from "react";
 import {
   NavLink
 } from "react-router-dom";
+import FullPageModal from './FullPageModal.js';
+import SettingsContent from './SettingsContent.js';
 import "../css/UserMenuContent.css";
 import "../css/General.css";
+import "../css/Modal.css";
+
+const SettingsModalProps = {
+  ariaLabel: 'Popup to manage your preferences and settings',
+  triggerText: 'Preferences & Settings',
+  usedFor: 'settings'
+}
 
 class UserMenuContent extends Component {
   render() {
+    const {onClose, onKeyDown} = this.props;
     return (
       <React.Fragment>
         <div className="userMenuContainer">
@@ -19,12 +29,12 @@ class UserMenuContent extends Component {
               <span className="userMenu-preferred-name overflow-ellipsis">fname</span>
             </h2>
             <ul className="userMenu-list">
-              <li className="userMenu-list-item">
-                <NavLink to="/profile/set-status" className="userMenu-link">
+              <li className="userMenu-list-item" role="menuitem" onClick={onClose} onKeyDown={onKeyDown}>
+                <NavLink to="/profile/set-status" className="userMenu-link" >
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
                 </NavLink>
               </li>
-              <li className="userMenu-list-item">
+              <li className="userMenu-list-item" >
                 <NavLink to="/profile" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Profile</span>
                 </NavLink>
@@ -63,9 +73,11 @@ class UserMenuContent extends Component {
           <section className="userMenu-settings">
             <ul className="userMenu-list">
               <li className="userMenu-list-item">
-                <NavLink to="/preferences-settings" className="userMenu-link">
-                  <span className="userMenuLabel overflow-ellipsis">Preferences & Settings</span>
-                </NavLink>
+                <span className="userMenuLabel overflow-ellipsis">
+                  <FullPageModal {...SettingsModalProps}>
+                    <SettingsContent />
+                  </FullPageModal>
+                </span>
               </li>
               <li className="userMenu-list-item">
                 <NavLink to="/help-and-feedback" className="userMenu-link">

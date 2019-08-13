@@ -291,6 +291,10 @@ hr{
   min-width: 120px;
   font-weight: 400;
 }
+.Submit-btn.enableNotif{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .uploadPicBtn{
   margin-top: 25px!important;
 }
@@ -446,6 +450,76 @@ hr{
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* TOGGLES / SLIDERS */
+.notifToggleContainer{
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.notifToggleTxt{
+  display: flex;
+  width: 85%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f6f5f9;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:checked + .slider {
+  background-color: #351c75;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* LINKS */

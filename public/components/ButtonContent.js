@@ -21,6 +21,12 @@ function ButtonContent(props) {
           <i className="fas fa-paperclip" />
         </div>
       );
+    case 'settings':
+      return (
+        <div className="settings-Btn-txt">
+          {text}
+        </div>
+      );
     case 'RequestChat':
       return (
         <div type="button" className="RequestChatBtnContainer">
