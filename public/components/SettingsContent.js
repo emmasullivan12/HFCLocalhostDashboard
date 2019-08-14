@@ -6,17 +6,66 @@ import "../css/Article.css";
 import "../css/General.css";
 
 class SettingsContent extends Component {
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
     this.state = {
-      desktopNotifsOn: false
+      desktopNotifsOn: false,
+      isEditPhoneNo: false,
+      isEditFormalEmail: false,
+      isEditPersonalEmail: false,
+      phoneNo: '+44 7854 191 949',
+      formalEmail: 'emma@work.com',
+      personalEmail: 'emmapersonal@gmail.com',
+      isRemoved: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleRemoveNo = this.handleRemoveNo.bind(this);
+    this.editPhoneNo = this.editPhoneNo.bind(this);
+    this.editFormalEmail = this.editFormalEmail.bind(this);
+    this.editPersonalEmail = this.editPersonalEmail.bind(this);
     this.toggleDesktopNotifs = this.toggleDesktopNotifs.bind(this);
+  }
+
+  handleChange = (evt) => {
+    this.setState({ [evt.target.name]: evt.target.value });
+  }
+
+  handlePhoneNoSave = (evt) => {
+    evt.preventDefault();
+    this.setState({ isEditPhoneNo: false });
+    this.setState({ isRemoved: false });
+    this.setState({ [evt.target.name]: evt.target.value });
+    alert('saved phone no');
+  }
+
+  handleEmailSave = (evt) => {
+    evt.preventDefault();
+    this.setState({ isEditFormalEmail: false });
+    this.setState({ isEditPersonalEmail: false });
+    this.setState({ [evt.target.name]: evt.target.value });
+    alert('saved formal email');
   }
 
   handleSubmit() {
     alert('Your preferences have been saved!');
+  }
+
+  handleRemoveNo() {
+    //const currentState = this.state.isRemoved;
+    this.setState({ isRemoved: true });
+    this.setState({ phoneNo: '' });
+  }
+
+  editPhoneNo() {
+    this.setState({ isEditPhoneNo: true });
+  }
+
+  editFormalEmail() {
+    this.setState({ isEditFormalEmail: true });
+  }
+
+  editPersonalEmail() {
+    this.setState({ isEditPersonalEmail: true });
   }
 
   toggleDesktopNotifs() {
@@ -26,7 +75,7 @@ class SettingsContent extends Component {
   }
 
   render() {
-    const {desktopNotifsOn} = this.state;
+    const {desktopNotifsOn, isEditPhoneNo, phoneNo, isRemoved, formalEmail, personalEmail, isEditFormalEmail, isEditPersonalEmail} = this.state;
     return (
       <React.Fragment>
         <div className="article-page">
@@ -154,23 +203,53 @@ class SettingsContent extends Component {
                 <p>
                   If you would prefer to make your personal email your primary email (i.e. to receive notifications, etc.), you can do so below.
                 </p>
-                <form onChange={this.handleSubmit}>
-                  <div className="notifToggleContainer email">
-                    <div className="emailToggleTxt overflow-ellipsis">[SCHOOL/WORK EMAIL GOES HERE]</div>
+                <form >
+                  <div className="notifToggleContainer contact">
+                    {isEditFormalEmail===false ?
+                      <div className="contactToggleTxt overflow-ellipsis">{formalEmail}</div>
+                    : (
+                      <input
+                        type="email"
+                        name="formalEmail"
+                        placeholder={formalEmail}
+                        value={formalEmail}
+                        onChange={this.handleChange}
+                      />
+                      )
+                    }
                     <div className="emailBtns">
-                      <button type="button" className="Submit-btn HollowBtn Edit">Edit</button>
+                      {isEditFormalEmail===false ?
+                        <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editFormalEmail}>Edit</button>
+                      :
+                        <button type="submit" className="Submit-btn HollowBtn Edit" onSubmit={this.handleEmailSave}>Save</button>
+                      }
                       <label className="radioContainer neutralText setPrimary" htmlFor="notif-formal-email">Primary
-                        <input type="radio" id="notif-formal-email" checked="checked" name="radio" />
+                        <input type="radio" id="notif-formal-email" checked name="radio"/>
                         <span className="radioCheckmark"/>
                       </label>
                     </div>
                   </div>
-                  <div className="notifToggleContainer email">
-                    <div className="emailToggleTxt overflow-ellipsis">[PERSONAL EMAIL GOES HERE]</div>
+                  <div className="notifToggleContainer contact">
+                    {isEditPersonalEmail===false ?
+                      <div className="contactToggleTxt overflow-ellipsis">{personalEmail}</div>
+                    : (
+                      <input
+                        type="email"
+                        name="personalEmail"
+                        placeholder={personalEmail}
+                        value={personalEmail}
+                        onChange={this.handleChange}
+                      />
+                      )
+                    }
                     <div className="emailBtns">
-                      <button type="button" className="Submit-btn HollowBtn Edit">Edit</button>
+                      {isEditPersonalEmail===false ?
+                        <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editPersonalEmail}>Edit</button>
+                      :
+                        <button type="submit" className="Submit-btn HollowBtn Edit" onSubmit={this.handleEmailSave}>Save</button>
+                      }
                       <label className="radioContainer neutralText setPrimary" htmlFor="notif-personal-email">Primary
-                        <input type="radio" id="notif-personal-email" name="radio" />
+                        <input type="radio" id="notif-personal-email" name="radio"/>
                         <span className="radioCheckmark"/>
                       </label>
                     </div>
@@ -179,16 +258,30 @@ class SettingsContent extends Component {
                 <h2>
                   Phone Numbers:
                 </h2>
-                <form onChange={this.handleSubmit}>
-                  <div className="notifToggleContainer">
-                    <span className="notifToggleTxt">+44 7854 191 949</span>
-                    <span>
-                      <button type="button" className="Submit-btn BlankBtn neutralText">Remove</button>
-                    </span>
+                <form onSubmit={this.handlePhoneNoSave}>
+                  <div className="notifToggleContainer contact">
+                    {isEditPhoneNo===false ?
+                      !isRemoved && <span className="contactToggleTxt" id="existingPhoneNo">{phoneNo}</span>
+                    : (
+                      <input
+                        type="tel"
+                        name="phoneNo"
+                        pattern="^[0-9-+\s()]*$"
+                        placeholder={phoneNo}
+                        value={phoneNo}
+                        onChange={this.handleChange}
+                      />
+                      )
+                    }
+                    <div className="emailBtns">
+                      {isEditPhoneNo===false ?
+                        !isRemoved && <button type="button" className="Submit-btn BlankBtn neutralText smallCTA" onClick={this.handleRemoveNo}>Remove</button>
+                      :
+                        <button type="submit" className="Submit-btn BlankBtn greenText">Save</button>
+                      }
+                    </div>
                   </div>
-                  <div>
-                    Add a phone Number
-                  </div>
+                  <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editPhoneNo}>Add / edit a phone Number</button>
                 </form>
               </div>
             </div>
