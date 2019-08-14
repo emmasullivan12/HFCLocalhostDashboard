@@ -209,6 +209,7 @@
   overflow-y: auto;
   cursor: default;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 /* SCREEN SIZING ADJUSTMENTS */
 @media screen and (min-width: 500px) {

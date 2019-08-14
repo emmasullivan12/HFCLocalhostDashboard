@@ -4,10 +4,12 @@ import React, { Component } from "react";
 
 import "../css/Article.css";
 import "../css/General.css";
+import "../css/Login.css"; // Put input boxes from this file into General
 
 class SettingsContent extends Component {
   constructor (props) {
     super(props);
+    this.scrollNavRef = React.createRef();
     this.state = {
       desktopNotifsOn: false,
       isEditPhoneNo: false,
@@ -18,6 +20,7 @@ class SettingsContent extends Component {
       personalEmail: 'emmapersonal@gmail.com',
       isRemoved: false
     }
+    this.onScrollNav = this.onScrollNav.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRemoveNo = this.handleRemoveNo.bind(this);
     this.editPhoneNo = this.editPhoneNo.bind(this);
@@ -26,6 +29,32 @@ class SettingsContent extends Component {
     this.toggleDesktopNotifs = this.toggleDesktopNotifs.bind(this);
   }
 
+  onScrollNav = () => {
+    const {scrollNavRef} = this;
+    let mainNavLinks = document.getElementsByClassName("scroll-anchor");
+    const scrollTop = this.scrollNavRef.current.scrollTop;
+    let fromTop = this.scrollNavRef.current.scrollY;
+    mainNavLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  };
+/*
+  onScroll = () => {
+    const { scrollNavRef } = this;
+    const scrollTop = this.scrollNavRef.current.scrollTop;
+    if (scrollTop < 250) {
+      this.setState({isLoadingMsgs: true});
+    }
+  };
+*/
   handleChange = (evt) => {
     this.setState({ [evt.target.name]: evt.target.value });
   }
@@ -35,7 +64,6 @@ class SettingsContent extends Component {
     this.setState({ isEditPhoneNo: false });
     this.setState({ isRemoved: false });
     this.setState({ [evt.target.name]: evt.target.value });
-    alert('saved phone no');
   }
 
   handleEmailSave = (evt) => {
@@ -43,7 +71,10 @@ class SettingsContent extends Component {
     this.setState({ isEditFormalEmail: false });
     this.setState({ isEditPersonalEmail: false });
     this.setState({ [evt.target.name]: evt.target.value });
-    alert('saved formal email');
+  }
+
+  handleMakePrimary = (evt) => {
+    alert('made primary');
   }
 
   handleSubmit() {
@@ -76,9 +107,10 @@ class SettingsContent extends Component {
 
   render() {
     const {desktopNotifsOn, isEditPhoneNo, phoneNo, isRemoved, formalEmail, personalEmail, isEditFormalEmail, isEditPersonalEmail} = this.state;
+    const {onScrollNav} = this;
     return (
       <React.Fragment>
-        <div className="article-page">
+        <div className="article-page" ref={this.scrollNavRef} onScroll={onScrollNav}>
           <div className="article-header">
             <h1 className="article-title">Your Preferences & Settings</h1>
             <p className="article-desc">Customize your Prospela by setting your preferences for notifications, privacy, and your contact details</p>
@@ -86,7 +118,7 @@ class SettingsContent extends Component {
           <div className="article-container">
           <div className="content-col">
               <div className="article-body">
-                <a className="scroll-anchor" id="notif-settings" name="notif-settings" prettyslug="notification-settings"/>
+                <a className="scroll-anchor" id="notification-settings" name="notif-settings"/>
                 <h1 className="anchor">
                   <br/>
                   Notifications
@@ -189,7 +221,7 @@ class SettingsContent extends Component {
                     </label>
                   </div>
                 </form>
-                <a className="scroll-anchor" id="contact-info" name="contact-info" prettyslug="contact-info"/>
+                <a className="scroll-anchor" id="contact-info" name="contact-info"/>
                 <h1 className="anchor">
                   <br/>
                   Your Contact Info <i className="fas fa-lock"/>
@@ -203,7 +235,7 @@ class SettingsContent extends Component {
                 <p>
                   If you would prefer to make your personal email your primary email (i.e. to receive notifications, etc.), you can do so below.
                 </p>
-                <form >
+                <form onSubmit={this.handleEmailSave}>
                   <div className="notifToggleContainer contact">
                     {isEditFormalEmail===false ?
                       <div className="contactToggleTxt overflow-ellipsis">{formalEmail}</div>
@@ -211,6 +243,7 @@ class SettingsContent extends Component {
                       <input
                         type="email"
                         name="formalEmail"
+                        className="form-control-std contactInput"
                         placeholder={formalEmail}
                         value={formalEmail}
                         onChange={this.handleChange}
@@ -218,13 +251,10 @@ class SettingsContent extends Component {
                       )
                     }
                     <div className="emailBtns">
-                      {isEditFormalEmail===false ?
-                        <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editFormalEmail}>Edit</button>
-                      :
-                        <button type="submit" className="Submit-btn HollowBtn Edit" onSubmit={this.handleEmailSave}>Save</button>
-                      }
+                      {isEditFormalEmail===false && <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editFormalEmail}>Edit</button>}
+                      {isEditFormalEmail===true && <button type="submit" name="formalEmail" className="Submit-btn BlankBtn">Save</button>}
                       <label className="radioContainer neutralText setPrimary" htmlFor="notif-formal-email">Primary
-                        <input type="radio" id="notif-formal-email" checked name="radio"/>
+                        <input type="radio" id="notif-formal-email" defaultChecked name="radio"/>
                         <span className="radioCheckmark"/>
                       </label>
                     </div>
@@ -236,6 +266,7 @@ class SettingsContent extends Component {
                       <input
                         type="email"
                         name="personalEmail"
+                        className="form-control-std contactInput"
                         placeholder={personalEmail}
                         value={personalEmail}
                         onChange={this.handleChange}
@@ -243,11 +274,8 @@ class SettingsContent extends Component {
                       )
                     }
                     <div className="emailBtns">
-                      {isEditPersonalEmail===false ?
-                        <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editPersonalEmail}>Edit</button>
-                      :
-                        <button type="submit" className="Submit-btn HollowBtn Edit" onSubmit={this.handleEmailSave}>Save</button>
-                      }
+                      {isEditPersonalEmail===false && <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editPersonalEmail}>Edit</button>}
+                      {isEditPersonalEmail===true && <button type="submit" name="personalEmail" className="Submit-btn BlankBtn">Save</button>}
                       <label className="radioContainer neutralText setPrimary" htmlFor="notif-personal-email">Primary
                         <input type="radio" id="notif-personal-email" name="radio"/>
                         <span className="radioCheckmark"/>
@@ -267,6 +295,7 @@ class SettingsContent extends Component {
                         type="tel"
                         name="phoneNo"
                         pattern="^[0-9-+\s()]*$"
+                        className="form-control-std contactInput"
                         placeholder={phoneNo}
                         value={phoneNo}
                         onChange={this.handleChange}
@@ -277,7 +306,7 @@ class SettingsContent extends Component {
                       {isEditPhoneNo===false ?
                         !isRemoved && <button type="button" className="Submit-btn BlankBtn neutralText smallCTA" onClick={this.handleRemoveNo}>Remove</button>
                       :
-                        <button type="submit" className="Submit-btn BlankBtn greenText">Save</button>
+                        <button type="submit" className="Submit-btn BlankBtn greenText Edit">Save</button>
                       }
                     </div>
                   </div>
@@ -288,10 +317,10 @@ class SettingsContent extends Component {
             <div className="category-list" id="nav-holder">
               <ul className="section-list sticky" id="nav-list">
                 <li>
-                  <a href="#notif-settings" className="active" prettyslug="notification-settings">Notifications</a>
+                  <a href="#notification-settings" className="active" >Notifications</a>
                 </li>
                 <li>
-                  <a href="#contact-info" prettyslug="contatc-info">Your Contact Info</a>
+                  <a href="#contact-info" >Your Contact Info</a>
                 </li>
               </ul>
             </div>

@@ -11,6 +11,7 @@ html {
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
   display: block;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +70,10 @@ body {
 
 input[type=text]:disabled{
   background: #dddddd;
+}
+
+.contactInput{
+  width: 55%!important;
 }
 
 .form-control-std.error,

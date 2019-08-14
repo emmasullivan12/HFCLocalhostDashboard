@@ -63,6 +63,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 
 /* FONT */
+html{
+  scroll-behavior: smooth;
+}
 h1{
   color: #351c75;
   font size: 2.2em;
