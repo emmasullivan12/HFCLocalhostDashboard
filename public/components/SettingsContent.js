@@ -143,14 +143,14 @@ class SettingsContent extends Component {
                   <div className="notifToggleContainer">
                     <span className="notifToggleTxt">By Email</span>
                     <label className="switch" htmlFor="notif-msgs-email" >
-                      <input type="checkbox" id="notif-msgs-email" checked />
+                      <input type="checkbox" id="notif-msgs-email" defaultChecked />
                       <span className="slider round"/>
                     </label>
                   </div>
                   <div className="notifToggleContainer">
                     <span className="notifToggleTxt">By SMS / Text Message</span>
                     <label className="switch" htmlFor="notif-msgs-sms" >
-                      <input type="checkbox" id="notif-msgs-sms" checked />
+                      <input type="checkbox" id="notif-msgs-sms" defaultChecked />
                       <span className="slider round"/>
                     </label>
                   </div>
@@ -165,7 +165,7 @@ class SettingsContent extends Component {
                   <div className="notifToggleContainer">
                     <span className="notifToggleTxt">By Email</span>
                     <label className="switch" htmlFor="notif-reminders-email" >
-                      <input type="checkbox" id="notif-reminders-email" checked />
+                      <input type="checkbox" id="notif-reminders-email" defaultChecked />
                       <span className="slider round"/>
                     </label>
                   </div>
@@ -209,7 +209,7 @@ class SettingsContent extends Component {
                   <div className="notifToggleContainer">
                     <span className="notifToggleTxt">By Email</span>
                     <label className="switch" htmlFor="notif-support-email" >
-                      <input type="checkbox" id="notif-support-email" checked disabled/>
+                      <input type="checkbox" id="notif-support-email" defaultChecked disabled/>
                       <span className="slider round"/>
                     </label>
                   </div>
