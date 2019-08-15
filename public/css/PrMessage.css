@@ -160,8 +160,15 @@
   min-height: 30px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: .6rem;
 }
-
+.prauto-start-msg-container{
+  width: 100%;
+  text-align: center;
+  min-height: 10px;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
 .prauto-final-msg-container{
   width: 100%;
   background-color: #fff;
@@ -201,7 +208,9 @@
   padding-bottom: 0rem;
   cursor: pointer;
 }
-
+.msg-extras-ctaTxt:hover{
+  color: #0303f5;
+}
 .message-extras-border{
   flex-shrink: 0;
   width: 6px;

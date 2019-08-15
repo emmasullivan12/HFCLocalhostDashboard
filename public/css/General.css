@@ -123,7 +123,7 @@ hr{
 
 /* POSITIONING */
 .alignCenter{
-  text-align: center;
+  text-align: center!important;
 }
 .alignLeft{
   float:left;

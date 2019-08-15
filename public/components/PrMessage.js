@@ -160,14 +160,45 @@ function PrAuto(props) {
   switch (props.message.prAuto.title) {
     case 'start':
       return (
-        <div className="prauto-msg-container">
-          This is the start of your chat with USERID
+        <div className="prauto-start-msg-container">
+          <div className="msg-title-container">
+              <div className="message-content-box msgTitle alignCenter">
+                <span className="prAutoMsgTitle">This is the start of your chat!</span>
+              </div>
+          </div>
         </div>
       );
     case 'prompt':
       return (
         <div className="prauto-msg-container">
-          Reminder to reply to message
+          <div className="msg-title-container">
+              <div className="title-emoji-container">
+                <i className="emoji-icon crossed-fingers-emoji" />
+              </div>
+              <div className="message-content-box msgTitle">
+                <span className="prAutoMsgTitle">&#91;A Little Reminder&#93; Your mentee Dexter sent you a message, but you haven&#39;t replied yet</span>
+              </div>
+          </div>
+          <div className="message-extras-container">
+            <div className="message-extras-border" />
+            <div className="msg-extras">
+              <div className="message-container noPadding">
+                <Avatar senderID={props.message.uid} senderName={props.message.author}/>
+                <div className="message-content-box">
+                  <div className="sent-msg-info">
+                    <span className="sender-name">{props.message.author}</span>
+                    <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+                  </div>
+                  <div className="message-content">
+                    {props.message.text}
+                  </div>
+                </div>
+              </div>
+              <div className="msg-extras-ctaTxt">
+                Take me to chat &#62;&#62;
+              </div>
+            </div>
+          </div>
         </div>
       );
     case 'ending':

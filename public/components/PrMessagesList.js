@@ -38,7 +38,7 @@ class PrMessagesList extends Component {
     const messages = [
       {
         id: '99990',
-        uid: '23456',
+        uid: '11111',
         type: 'message',
         subtype: 'prAuto',
         author: 'emma',
@@ -59,7 +59,7 @@ class PrMessagesList extends Component {
       },
       {
         id: '99992',
-        uid: '23456',
+        uid: '11111',
         type: 'message',
         subtype: 'std',
         author: 'emma',
