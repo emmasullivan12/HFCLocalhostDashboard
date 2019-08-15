@@ -37,6 +37,57 @@ class PrMessagesList extends Component {
   render() {
     const messages = [
       {
+        id: '99990',
+        uid: '23456',
+        type: 'message',
+        subtype: 'prAuto',
+        author: 'emma',
+        ts: 1525209202,
+        text: 'This is the start of your chat!',
+        prAuto: {
+          title: 'start'
+        }
+      },
+      {
+        id: '99991',
+        uid: '23456',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma',
+        ts: 1525209202,
+        text: 'This is emmas message'
+      },
+      {
+        id: '99992',
+        uid: '23456',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma',
+        ts: 1525209202,
+        text: 'This is emmas message'
+      },
+      {
+        id: '99993',
+        uid: '23456',
+        type: 'message',
+        subtype: 'prAuto',
+        author: 'emma',
+        ts: 1525209202,
+        text: 'This is emmas message',
+        prAuto: {
+          title: 'prompt'
+        }
+      },
+      {
+        id: '99994',
+        uid: '23456',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma',
+        ts: 1525209202,
+        text: 'This is emmas message'
+      },
+      {
         id: '99995',
         uid: '23456',
         type: 'message',

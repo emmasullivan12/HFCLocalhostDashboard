@@ -54,7 +54,7 @@ const MenuContent = ({
         <button type="button" className="menuModal-close" aria-labelledby="Close Modal" onClick={onClose} ref={menuButtonRef}>
           <span id="close-modal" className="u-hide-visually">Close</span>
         </button>
-        <div className="menuModal-scrollArea" onClick={onClose} onKeyDown={onKeyDown}>
+        <div className="menuModal-scrollArea" onKeyDown={onKeyDown}>
           {content}
         </div>
       </div>

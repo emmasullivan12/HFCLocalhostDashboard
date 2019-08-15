@@ -74,7 +74,8 @@
   background-color: #e0f2f0;
 }
 
-.userMenu-list-item:hover .userMenuLabel {
+.userMenu-list-item:hover .userMenuLabel,
+.userMenu-list-item:hover .settings-Btn-txt {
   color: #1dba86;
 }
 
