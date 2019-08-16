@@ -20,6 +20,7 @@ const FullPageModalTrigger = ({
 // ModalContent provides all of the Content within Modal
 const FullPageModalContent = ({
   ariaLabel,
+  backBtn,
   buttonFPRef,
   content,
   handleNavScroll,
@@ -35,7 +36,12 @@ const FullPageModalContent = ({
       <div className="fullpage-modal-container" ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
           <button type="button" className="modal-close fullPage" aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
-            <span id="close-modal">&#60;&#60; Back to Prospela</span>
+            { backBtn==='bk2Pr' && (
+              <span id="close-modal">&#60;&#60; Back to Prospela</span>
+            )}
+            { backBtn==='arrow' && (
+              <span id="close-modal"><i className="fas fa-arrow-left"/></span>
+            )}
           </button>
         </div>
         <div className="modal-content">
@@ -118,7 +124,7 @@ class FullPageModal extends React.Component {
     render() {
     const {handleNavScroll} = this;
     const {isOpen} = this.state;
-    const {ariaLabel, children, mentorName, title, triggerText, usedFor, role} = this.props;
+    const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role} = this.props;
     return (
       <React.Fragment>
         <FullPageModalTrigger
@@ -130,6 +136,7 @@ class FullPageModal extends React.Component {
         {isOpen && (
           <FullPageModalContent
             ariaLabel={ariaLabel}
+            backBtn={backBtn}
             buttonFPRef={n => this.closeButtonFPNode = n}
             mentorName={mentorName}
             modalFPRef={this.modalFPRef}

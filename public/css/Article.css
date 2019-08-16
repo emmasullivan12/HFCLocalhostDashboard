@@ -2,20 +2,10 @@
   position: relative;
   padding-bottom: 50px;
 }
-.article-page .article-container .category-list {
-  display: none;
+.article-page.profile{
+  margin-top: -60px;
 }
-@media screen and (min-width: 750px) {
-  .article_page .article-container .category-list {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 320px;
-    display: table-cell;
-    padding-top: 10px;
-    padding-left: 48px;
-    vertical-align: top;
-  }
-}
+
 .article-page .article-container {
   max-width: 960px;
   margin-top: 2rem;
@@ -37,6 +27,31 @@
     max-width: 960px;
   }
 }
+.article-page .article-container .category-list {
+  padding-right: 10px;
+  width: 320px;
+  display: table-cell;
+  padding-top: 10px;
+  padding-left: 48px;
+  vertical-align: top;
+}
+
+.article-page .article-container .category-list .section-list{
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .article-page .article-container .category-list .section-list{
+    display: block;
+  }
+}
+
+.article-page .article-container .category-list.sticky{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
 @media screen and (min-width: 750px) {
   .article-page .article-container .content-col {
     display: table-cell;
@@ -45,20 +60,6 @@
 @media screen and (min-width: 961px) {
   .article-page .content-col {
     min-width: 640px;
-  }
-}
-.article-page .article-container .category-list {
-  display: none;
-}
-@media screen and (min-width: 750px) {
-  .article-page .article-container .category-list {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 320px;
-    display: table-cell;
-    padding-top: 10px;
-    padding-left: 48px;
-    vertical-align: top;
   }
 }
 .article-page .article-header{
@@ -153,17 +154,17 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 .section-list.sticky{
-/*  position: fixed;
-  flex: none;
-  min-width: 242px;
-  max-height: 75vh;
-  overflow-y: auto;*/
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }
+.section-list.left{
+  padding-left: 0;
+  padding-right: 40px;
+}
 @media screen and (min-width: 801px) {
-  .section-list.stick {
+  .section-list,
+  .section-list.sticky {
     max-width: 242px;
   }
 }

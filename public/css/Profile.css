@@ -1,0 +1,26 @@
+.profile-thumb-container{
+  width: 5rem;
+  height: 100%;
+  padding-right: 8px;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.profile-thumb{
+  width: 10rem;
+  margin-right: .75rem;
+  height: 10rem;
+  border-style: none;
+  background-size: cover;
+}
+
+.pr-certified{
+  background-color: #6228da;
+  width: 2rem;
+  height: 2rem;
+  padding-top: -20px;
+  bottom: 45px;
+  left: 125px;
+  border-style: none;
+  position: relative;
+}

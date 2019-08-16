@@ -78,10 +78,9 @@ class SettingsContent extends Component {
 
   render() {
     const {desktopNotifsOn, isEditPhoneNo, phoneNo, isRemoved, formalEmail, personalEmail, isEditFormalEmail, isEditPersonalEmail} = this.state;
-    const {onScrollNav} = this;
     return (
       <React.Fragment>
-        <div className="article-page" ref={this.scrollNavRef} onScroll={onScrollNav}>
+        <div className="article-page">
           <div className="article-header">
             <h1 className="article-title">Your Preferences & Settings</h1>
             <p className="article-desc">Customize your Prospela by setting your preferences for notifications, privacy, and your contact details</p>

@@ -9,13 +9,14 @@ import {
 } from "react-router-dom";
 
 import FullPageModal from './FullPageModal.js';
-import SettingsContent from './SettingsContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import "../css/Modal.css";
 
-const SettingsModalProps = {
-  ariaLabel: 'Popup to manage your preferences and settings',
-  triggerText: 'Preferences & Settings',
-  usedFor: 'settings'
+const MentorProfileModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  triggerText: 'View Mentor Profile',
+  usedFor: 'mentor-profile',
+  backBtn: 'arrow'
 }
 
 // This shows the content within an individual row in the ChatMenu
@@ -68,9 +69,9 @@ class ChatMenu extends Component {
           </NavLink>
           {chats}
           <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink></div>
-          <FullPageModal {...SettingsModalProps}>
-            <SettingsContent />
-          </FullPageModal>
+            <FullPageModal {...MentorProfileModalProps}>
+              <MentorProfileContent />
+            </FullPageModal>
         </div>
       </React.Fragment>
     );

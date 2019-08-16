@@ -13,7 +13,8 @@ import "../css/Modal.css";
 const SettingsModalProps = {
   ariaLabel: 'Popup to manage your preferences and settings',
   triggerText: 'Preferences & Settings',
-  usedFor: 'settings'
+  usedFor: 'settings',
+  backBtn: 'bk2Pr'
 }
 
 class UserMenuContent extends Component {
