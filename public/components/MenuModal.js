@@ -35,8 +35,6 @@ const MenuTrigger = ({
   </button>
 );
 
-// <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef}>{text}</button>;
-
 // ModalContent provides all of the Content within Modal
 const MenuContent = ({
   ariaLabel,
@@ -44,14 +42,14 @@ const MenuContent = ({
   content,
   menuRef,
   onClickAway,
-  onClose,
+  onMenuClose,
   onKeyDown,
   role = 'dialog'
 }) => {
   return ReactDOM.createPortal(
     <aside className="menuModal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onClick={onClickAway}>
       <div className="menuModal-container" ref={menuRef}>
-        <button type="button" className="menuModal-close" aria-labelledby="Close Modal" onClick={onClose} ref={menuButtonRef}>
+        <button type="button" className="menuModal-close" aria-labelledby="Close Modal" onClick={onMenuClose} ref={menuButtonRef}>
           <span id="close-modal" className="u-hide-visually">Close</span>
         </button>
         <div className="menuModal-scrollArea" onKeyDown={onKeyDown}>
@@ -68,21 +66,21 @@ class MenuModal extends React.Component {
   constructor () {
     super();
     this.state = {
-      isOpen: false
+      isMenuOpen: false
     }
     this.onOpen = this.onOpen.bind(this);
-    this.onClose = this.onClose.bind(this);
+    this.onMenuClose = this.onMenuClose.bind(this);
   }
 
   onOpen() {
-    this.setState({ isOpen: true }, () => {
+    this.setState({ isMenuOpen: true }, () => {
       this.closeButtonNode.focus();
     });
     this.toggleScrollLock();
   }
 
-  onClose() {
-    this.setState({ isOpen: false });
+  onMenuClose() {
+    this.setState({ isMenuOpen: false });
     this.openButtonNode.focus();
     this.toggleScrollLock();
   }
@@ -91,16 +89,16 @@ class MenuModal extends React.Component {
   toggleScrollLock = () => document.querySelector('html').classList.toggle('u-lock-scroll');
 
   // Close modal using Escape key on keyboard
-  onKeyDown = ({keyCode}) => keyCode === 27 && this.onClose();
+  onKeyDown = ({keyCode}) => keyCode === 27 && this.onMenuClose();
 
   // Close modal by clicking outside of Modal
   onClickAway = (e) => {
     if (this.menuNode && this.menuNode.contains(e.target)) return;
-    this.onClose();
+    this.onMenuClose();
   }
 
     render() {
-    const {isOpen} = this.state;
+    const {isMenuOpen} = this.state;
     const {ariaLabel, children, role} = this.props;
     return (
       <React.Fragment>
@@ -108,14 +106,14 @@ class MenuModal extends React.Component {
           onOpen={this.onOpen}
           menuButtonRef={n => this.openButtonNode = n}
         />
-        {isOpen && (
+        {isMenuOpen && (
           <MenuContent
             ariaLabel={ariaLabel}
             menuButtonRef={n => this.closeButtonNode = n}
             menuRef={n => this.menuNode = n}
             content={children}
             onClickAway={this.onClickAway}
-            onClose={this.onClose}
+            onMenuClose={this.onMenuClose}
             onKeyDown={this.onKeyDown}
             role={role}
           />

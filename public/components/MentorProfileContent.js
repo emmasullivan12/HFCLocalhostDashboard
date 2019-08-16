@@ -14,8 +14,8 @@ class MentorProfileContent extends Component {
     return (
       <React.Fragment>
         <div className="article-page profile">
-        <div className="article-container">
-          <div className="category-list" id="nav-holder">
+        <div className="row article-container">
+          <div className="col-4 col-s-12 category-list profile">
             <div className="profile-thumb-container">
               <img
                 className="profile-thumb img-circle"
@@ -29,7 +29,7 @@ class MentorProfileContent extends Component {
             <div>Pladis</div>
             <div>Industry</div>
             <button type="button" className="Submit-btn">FOLLOW BUTTON</button>
-            <ul className="section-list sticky left" id="nav-list">
+            <ul className="section-list left">
               <li>
                 <a href="#expertise-and-career" className="active">Expertise & Career</a>
               </li>
@@ -44,7 +44,7 @@ class MentorProfileContent extends Component {
               </li>
             </ul>
           </div>
-          <div className="content-col">
+          <div className="col-8 col-s-12 content-col">
               <div className="article-body">
                 <section className="scroll-anchor" id="expertise-and-career" name="expertise-and-career">
                   <h1 className="anchor">

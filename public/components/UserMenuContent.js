@@ -19,7 +19,7 @@ const SettingsModalProps = {
 
 class UserMenuContent extends Component {
   render() {
-    const {onClose, onKeyDown} = this.props;
+    const {onMenuClose, onKeyDown} = this.props;
     return (
       <React.Fragment>
         <div className="userMenuContainer">
@@ -30,7 +30,7 @@ class UserMenuContent extends Component {
               <span className="userMenu-preferred-name overflow-ellipsis">fname</span>
             </h2>
             <ul className="userMenu-list">
-              <li className="userMenu-list-item" role="menuitem" onClick={onClose} onKeyDown={onKeyDown}>
+              <li className="userMenu-list-item" role="menuitem">
                 <NavLink to="/profile/set-status" className="userMenu-link" >
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
                 </NavLink>

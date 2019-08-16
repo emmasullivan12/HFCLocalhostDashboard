@@ -85,8 +85,8 @@ class SettingsContent extends Component {
             <h1 className="article-title">Your Preferences & Settings</h1>
             <p className="article-desc">Customize your Prospela by setting your preferences for notifications, privacy, and your contact details</p>
           </div>
-          <div className="article-container">
-          <div className="content-col">
+          <div className="row article-container">
+          <div className="col-8 col-s-12 content-col">
               <div className="article-body">
                 <section className="scroll-anchor" id="notification-settings" name="notif-settings">
                   <h1 className="anchor">
@@ -286,10 +286,10 @@ class SettingsContent extends Component {
                 </section>
               </div>
             </div>
-            <div className="category-list" id="nav-holder">
-              <ul className="section-list sticky" id="nav-list">
+            <div className="col-4 col-s-12 category-list">
+              <ul className="section-list">
                 <li>
-                  <a href="#notification-settings" className="active" >Notifications</a>
+                  <a href="#notification-settings" className="active">Notifications</a>
                 </li>
                 <li>
                   <a href="#contact-info">Your Contact Info</a>
