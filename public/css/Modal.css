@@ -39,7 +39,7 @@
 .ModalOpenBtn-settings{
   background: none!important;
   color: #3f3f3f!important;
-  padding: 0;
+  padding: 0 24px;
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;
