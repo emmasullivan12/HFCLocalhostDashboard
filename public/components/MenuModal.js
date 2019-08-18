@@ -47,13 +47,13 @@ const MenuContent = ({
   role = 'dialog'
 }) => {
   return ReactDOM.createPortal(
-    <aside className="menuModal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onClick={onClickAway}>
+    <aside className="menuModal-overlay" id="menuModalOverlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onClick={onClickAway}>
       <div className="menuModal-container" ref={menuRef}>
         <button type="button" className="menuModal-close" aria-labelledby="Close Modal" onClick={onMenuClose} ref={menuButtonRef}>
           <span id="close-modal" className="u-hide-visually">Close</span>
         </button>
-        <div className="menuModal-scrollArea" onKeyDown={onKeyDown}>
-          {content}
+        <div className="menuModal-scrollArea">
+          {React.Children.map(content, child => React.cloneElement(child, {onMenuClose, onKeyDown}))}
         </div>
       </div>
     </aside>,
@@ -91,10 +91,25 @@ class MenuModal extends React.Component {
   // Close modal using Escape key on keyboard
   onKeyDown = ({keyCode}) => keyCode === 27 && this.onMenuClose();
 
+  /* Close modal by clicking on item inside modal
+  onClickItem = (e) => {
+    if (this.menuNode && this.menuNode.contains(e.target)) {
+      this.onMenuClose();
+    } else {
+      return;
+    }
+  }
+*/
   // Close modal by clicking outside of Modal
   onClickAway = (e) => {
-    if (this.menuNode && this.menuNode.contains(e.target)) return;
-    this.onMenuClose();
+    var menuModalOverlay = document.getElementById('menuModalOverlay');
+    if ((e.target) == menuModalOverlay) {
+      this.onMenuClose();
+    } else {
+      return;
+    }
+//    if (this.meenuNode && this.menuNode.contains(e.target)) return;
+//    this.onMenuClose();
   }
 
     render() {

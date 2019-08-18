@@ -39,7 +39,7 @@
 .ModalOpenBtn-settings{
   background: none!important;
   color: #3f3f3f!important;
-  padding: 0 24px;
+  padding: 0;
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;
@@ -280,6 +280,18 @@
   background: none;
   padding: 2rem 2rem;
   font-family:  Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+}
+.modal-close.fullPage.bkArrow {
+  font-size: 25px;
+  border-radius: 50%;
+  padding: .5em;
+  margin-left: 50px;
+  top: 40px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.modal-close.fullPage.bkArrow:hover {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
 }
 .modal-close.fullPage:hover {
   color: #000!important;

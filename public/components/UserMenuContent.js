@@ -30,27 +30,27 @@ class UserMenuContent extends Component {
               <span className="userMenu-preferred-name overflow-ellipsis">fname</span>
             </h2>
             <ul className="userMenu-list">
-              <li className="userMenu-list-item" role="menuitem">
+              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile/set-status" className="userMenu-link" >
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
                 </NavLink>
               </li>
-              <li className="userMenu-list-item" >
+              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Profile</span>
                 </NavLink>
               </li>
-              <li className="userMenu-list-item">
+              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile/saved-highlights" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">My Highlights</span>
                 </NavLink>
               </li>
-              <li className="userMenu-list-item">
+              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile/influencer-stats" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Influencer Stats</span>
                 </NavLink>
               </li>
-              <li className="userMenu-list-item">
+              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/invite" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Invite Codes</span>
                 </NavLink>
@@ -64,7 +64,7 @@ class UserMenuContent extends Component {
               <span className="userMenu-preferred-name overflow-ellipsis">Not yet signed up</span>
             </h2>
             <ul className="userMenu-list">
-              <li className="userMenu-list-item-nohover">
+              <li className="userMenu-list-item-nohover" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <span className="userMenu-eduInstDetail overflow-ellipsis">
                   Sign up your school to access real employee e-mentors. <NavLink to="/invite" className="inline-link">Learn more</NavLink>
                 </span>
@@ -74,18 +74,20 @@ class UserMenuContent extends Component {
           <section className="userMenu-settings">
             <ul className="userMenu-list">
               <li className="userMenu-list-item">
-                <span className="userMenuLabel overflow-ellipsis">
-                  <FullPageModal {...SettingsModalProps}>
-                    <SettingsContent />
-                  </FullPageModal>
-                </span>
+    {/*            <NavLink to="/settings" className="userMenu-link"> */}
+                  <span className="userMenuLabel overflow-ellipsis">
+                    <FullPageModal {...SettingsModalProps}>
+                      <SettingsContent />
+                    </FullPageModal>
+                  </span>
+      {/*          </NavLink>*/}
               </li>
-              <li className="userMenu-list-item">
+              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/help-and-feedback" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Help & Feedback</span>
                 </NavLink>
               </li>
-              <li className="userMenu-list-item">
+              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/logout" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Sign out</span>
                 </NavLink>

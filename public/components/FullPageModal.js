@@ -35,7 +35,7 @@ const FullPageModalContent = ({
     <aside className="modal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
       <div className="fullpage-modal-container" ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
-          <button type="button" className="modal-close fullPage" aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
+          <button type="button" className={"modal-close fullPage " + (backBtn==='arrow' ? 'bkArrow' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
             { backBtn==='bk2Pr' && (
               <span id="close-modal">&#60;&#60; Back to Prospela</span>
             )}
@@ -59,7 +59,7 @@ class FullPageModal extends React.Component {
     super(props);
     this.modalFPRef = React.createRef();
     this.state = {
-      isOpen: false
+      isFPOpen: false
     }
     this.onOpen = this.onOpen.bind(this);
     this.onClose = this.onClose.bind(this);
@@ -75,14 +75,14 @@ class FullPageModal extends React.Component {
   }
 
   onOpen() {
-    this.setState({ isOpen: true }, () => {
+    this.setState({ isFPOpen: true }, () => {
       this.closeButtonFPNode.focus();
     });
     this.toggleScrollLock();
   }
 
   onClose() {
-    this.setState({ isOpen: false });
+    this.setState({ isFPOpen: false });
     this.openButtonFPNode.focus()
     this.toggleScrollLock();
   }
@@ -123,7 +123,7 @@ class FullPageModal extends React.Component {
 
     render() {
     const {handleNavScroll} = this;
-    const {isOpen} = this.state;
+    const {isFPOpen} = this.state;
     const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role} = this.props;
     return (
       <React.Fragment>
@@ -133,7 +133,7 @@ class FullPageModal extends React.Component {
           text={triggerText}
           usedFor={usedFor}
         />
-        {isOpen && (
+        {isFPOpen && (
           <FullPageModalContent
             ariaLabel={ariaLabel}
             backBtn={backBtn}
