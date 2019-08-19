@@ -23,6 +23,23 @@ function userFlagEmoji(userCountry) {
   }
 }
 
+function isNightDay(userCurrentTime) {
+  var hour = new Date(userCurrentTime).getHours();
+  if (hour >= 7 && hour <= 19) {
+    return 'day'
+  } else {
+    return 'night'
+  }
+}
+
+function profileTimeZone(userTimeZone) {
+  var now = new Date();
+  console.log('now');
+  console.log('userTimeZone');
+  var options = { timeZone: 'UTC', timeZoneName: 'short' };
+  return now.toLocaleTimeString('en-US', options);
+}
+
 class MentorProfileContent extends Component {
   constructor (props) {
     super(props);
@@ -38,9 +55,13 @@ class MentorProfileContent extends Component {
   }
 
   render() {
-    const userCountry = 'UK'
-    const userCity = 'London'
     const {followStatus} = this.state;
+    const userCountry = 'UK'
+    const userTimeZone = 'UTC'
+    const userCity = 'London'
+    const userAvail = 1
+    const userCurrentTime = profileTimeZone(userTimeZone);
+    const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(userCountry)
     return (
       <React.Fragment>
@@ -60,7 +81,7 @@ class MentorProfileContent extends Component {
               <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> Pladis</a>
               <div className="profileIndustryTag">#food&beverage</div>
               <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
-                {followStatus===false ? 'Follow' : 'Following'}
+                {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
               </button>
               <ul className="section-list left">
                 <li>
@@ -184,10 +205,34 @@ class MentorProfileContent extends Component {
                 </p>
               </div>
               <div className="profileUserCTA">
-                This is the bottom section
+                <button type="button" className="profileBtn availability">
+                  {userAvail === 1 || userAvail === 2 ? <span>&#10003;</span> : <span>&#10007;</span> }
+                </button>
+                <button type="button" className="profileBtn save4Later">
+                  <i className="far fa-bookmark"/>
+                </button>
+                {isDayNight==='day' ? (
+                  <button type="button" className="profileBtn dayTime">
+                    <i className="fas fa-sun"/>
+                  </button>
+                  )
+                : (
+                  <button type="button" className="profileBtn nightTime">
+                    <i className="fas fa-moon"/>
+                  </button>
+                  )
+                }
+                <div className="TimeZoneContainer">
+                  <div className={"UserLocalTime " + isDayNight}>{userCurrentTime}</div>
+                  <div className={"UserTimeZone " + isDayNight}>{userCountry}</div>
+                </div>
               </div>
             </div>
-            <div className={"mapImg " + userCity} />
+            <div className={"mapImg " + userCity}>
+              <div className="mapAttribution">
+                &#169; <a href="https://www.openstreetmap.org/copyright" className="link map">OpenStreetMap</a> contributors
+              </div>
+            </div>
           </div>
         </div>
       </React.Fragment>
