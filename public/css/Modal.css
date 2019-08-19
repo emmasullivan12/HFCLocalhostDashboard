@@ -222,6 +222,11 @@
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+.fullpage-modal-container.mentor-profile{
+  background-color: #f9f9f9;
+  padding-bottom: 0;
+}
+
 /* SCREEN SIZING ADJUSTMENTS */
 @media screen and (min-width: 500px) {
   .modal-container {
@@ -285,7 +290,7 @@
   font-size: 25px;
   border-radius: 50%;
   padding: .5em;
-  margin-left: 50px;
+  margin-left: 3rem;
   top: 40px;
   cursor: pointer;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);

@@ -4,6 +4,16 @@
 }
 .article-page.profile{
   margin-top: -60px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 759px) {
+  .article-page.profile{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 .article-page .article-container {
@@ -19,16 +29,22 @@
   font-size: 17.1px;
   line-height: 26px;
 }
-
+.article-page .article-container.profile{
+  padding: 0;
+}
 .article-page .article-container .category-list {
   padding-right: 10px;
   padding-top: 10px;
   vertical-align: top;
 }
 .article-page .article-container .category-list.profile {
-  padding-left: 48px;
+  padding-top: 2rem;
 }
-
+@media screen and (min-width: 759px) {
+  .article-page .article-container .category-list.profile {
+    padding-left: 3rem;
+  }
+}
 .article-page .article-container .category-list .section-list,
 .article-page .article-container .category-list .section-list.left{
   display: none;
@@ -39,10 +55,19 @@
     width: 100%;
     max-width: 960px;
   }
-  .article-page .article-container .category-list{
+  .article-page .article-container.profile{
+    max-width: none;
+  }
+  .article-page .article-container .category-list,
+  .article-page .article-container .category-list.profile,
+  .article-page .article-container .article-extras{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+  }
+  .article-page .article-container .article-extras{
+    padding-right: 3rem;
+    max-height: 100vh;
   }
   .article-page .article-container .category-list .section-list,
   .article-page .article-container .category-list .section-list.left{
@@ -83,6 +108,16 @@
   padding-right: 10px;
   padding-bottom: 50px;
 }
+.article-page .article-body.profile {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 759px) {
+  .article-page .article-body.profile {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .article-page .article-body h1 {
   font-weight: 700;
   font-size: 22px;
@@ -102,7 +137,21 @@
   margin-bottom: 20px;
   margin-top: 35px;
 }
-.article-page .article-body p {
+.article-page .article-extras h2 {
+  font-weight: 700;
+  font-size: 13px;
+  color: #aba9a9;
+  line-height: 25px;
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 1rem;
+}
+.article-page .article-extras h2:first-child {
+  margin-top: 2.5rem!important;
+}
+
+.article-page .article-body p,
+.article-page .article-extras p {
   margin-bottom: 12px;
   margin-top: 0;
 }
@@ -116,6 +165,7 @@
   list-style: none;
   font-size: 16px;
   line-height: 26px;
+  min-width: 145px;
 }
 .section-list li a {
   border-radius: 4px;

@@ -321,6 +321,23 @@ hr{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.Submit-btn.notFollowing{
+  width: 100px;
+  min-width: max-content;
+  height: 35px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+.Submit-btn.Following{
+  width: 100px;
+  min-width: max-content;
+  height: 35px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  background: #fff;
+  color: #7f7f7f;
+  border: 1px solid #f2f2f2;
+}
 .uploadPicBtn{
   margin-top: 25px!important;
 }

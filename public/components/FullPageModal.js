@@ -29,11 +29,12 @@ const FullPageModalContent = ({
   onClose,
   onKeyDown,
   role = 'dialog',
-  title
+  title,
+  usedFor
 }) => {
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
-      <div className="fullpage-modal-container" ref={modalFPRef} onScroll={handleNavScroll}>
+      <div className={"fullpage-modal-container " + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
           <button type="button" className={"modal-close fullPage " + (backBtn==='arrow' ? 'bkArrow' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
             { backBtn==='bk2Pr' && (
@@ -138,14 +139,15 @@ class FullPageModal extends React.Component {
             ariaLabel={ariaLabel}
             backBtn={backBtn}
             buttonFPRef={n => this.closeButtonFPNode = n}
+            content={children}
+            handleNavScroll={this.handleNavScroll}
             mentorName={mentorName}
             modalFPRef={this.modalFPRef}
-            content={children}
             onClose={this.onClose}
             onKeyDown={this.onKeyDown}
             role={role}
             title={title}
-            handleNavScroll={this.handleNavScroll}
+            usedFor={usedFor}
           />
         )}
       </React.Fragment>

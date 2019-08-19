@@ -11,6 +11,11 @@
   background-size: 5200% 5200%;
 }
 
+.CdaFlag-emoji{
+  background-position: 1.96078% 33.3333%;
+  width: 24px;
+  height: 24px;
+}
 .crossed-fingers-emoji{
   background-position: 74.5098% 21.5686%;
 }
@@ -40,6 +45,16 @@
 }
 .typing-emoji{
   background-position: 49.0196% 45.098%;
+}
+.UKFlag-emoji{
+  background-position: 3.92157% 15.6863%;
+  width: 24px;
+  height: 24px;
+}
+.USFlag-emoji{
+  background-position: 9.80392% 21.5686%;
+  width: 24px;
+  height: 24px;
 }
 .wave-emoji{
   background-position: 27.451% 72.549%;
