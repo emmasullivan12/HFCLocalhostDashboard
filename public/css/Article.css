@@ -67,7 +67,7 @@
   }
   .article-page .article-container .article-extras{
     padding-right: 3rem;
-    max-height: 100vh;
+    height: 100vh;
   }
   .article-page .article-container .category-list .section-list,
   .article-page .article-container .category-list .section-list.left{

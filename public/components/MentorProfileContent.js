@@ -34,9 +34,7 @@ function isNightDay(userCurrentTime) {
 
 function profileTimeZone(userTimeZone) {
   var now = new Date();
-  console.log('now');
-  console.log('userTimeZone');
-  var options = { timeZone: 'UTC', timeZoneName: 'short' };
+  var options = { hour: 'numeric', minute: '2-digit', timeZone: 'UTC', timeZoneName: 'short' };
   return now.toLocaleTimeString('en-US', options);
 }
 
@@ -44,9 +42,15 @@ class MentorProfileContent extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      followStatus: false
+      followStatus: false,
+      save4LaterClicked: false,
+      availabilityClicked: true,
+      saved4later: false
     }
     this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
+    this.handleAvailabilityClick = this.handleAvailabilityClick.bind(this);
+    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
+    this.availabilityMsg = this.availabilityMsg.bind(this);
   }
 
   toggleFollowStatus() {
@@ -54,8 +58,33 @@ class MentorProfileContent extends Component {
     this.setState({ followStatus: !currentState });
   }
 
+  handleAvailabilityClick() {
+    this.setState({ availabilityClicked: true });
+    this.setState({ save4LaterClicked: false });
+  }
+
+  toggleSave4LaterClick() {
+    const saved = this.state.saved4later;
+    this.setState({ save4LaterClicked: true });
+    this.setState({ saved4later: !saved });
+    this.setState({ availabilityClicked: false });
+  }
+
+  availabilityMsg(userAvail) {
+    if (userAvail === 1) {
+      return <span>Available for <strong className="greenText">long-term</strong> and <strong className="greenText">short-term</strong> mentorship</span>
+    } else if (userAvail === 2) {
+      return <span>Available to offer <strong className="greenText">long-term</strong> mentorship</span>
+    } else if (userAvail === 3) {
+      return <span>Available to offer <strong className="greenText">short-term</strong> mentor support</span>
+    } else if (userAvail === 4) {
+      return <span><span className="redText">Not currently available</span> for mentorship</span>
+    }
+  }
+
   render() {
-    const {followStatus} = this.state;
+    const {followStatus, availabilityClicked, save4LaterClicked, saved4later, availabilityMsg} = this.state;
+    const mentorName = 'Emma'
     const userCountry = 'UK'
     const userTimeZone = 'UTC'
     const userCity = 'London'
@@ -76,7 +105,7 @@ class MentorProfileContent extends Component {
                 />
                 <div className="pr-certified img-circle" />
               </div>
-              <div className="profileName">Emma</div>
+              <div className="profileName">{mentorName}</div>
               <div className="profilePosition">Head of Marketing</div>
               <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> Pladis</a>
               <div className="profileIndustryTag">#food&beverage</div>
@@ -204,27 +233,50 @@ class MentorProfileContent extends Component {
                   London, UK
                 </p>
               </div>
-              <div className="profileUserCTA">
-                <button type="button" className="profileBtn availability">
-                  {userAvail === 1 || userAvail === 2 ? <span>&#10003;</span> : <span>&#10007;</span> }
-                </button>
-                <button type="button" className="profileBtn save4Later">
-                  <i className="far fa-bookmark"/>
-                </button>
-                {isDayNight==='day' ? (
-                  <button type="button" className="profileBtn dayTime">
-                    <i className="fas fa-sun"/>
-                  </button>
+              <div className="profileCTAContainer">
+                {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
+                  <div className="profileBtnToolTip avail">
+                    {this.availabilityMsg(userAvail)}
+                  </div>
                   )
                 : (
-                  <button type="button" className="profileBtn nightTime">
-                    <i className="fas fa-moon"/>
-                  </button>
+                  <div className="profileBtnToolTip save">
+                    <span>Saved as a potential future mentor!</span>
+                  </div>
                   )
                 }
-                <div className="TimeZoneContainer">
-                  <div className={"UserLocalTime " + isDayNight}>{userCurrentTime}</div>
-                  <div className={"UserTimeZone " + isDayNight}>{userCountry}</div>
+                <div className="profileUserCTA">
+                  {userAvail === 1 || userAvail === 2 || userAvail === 3 ? (
+                    <button type="button" className="profileBtn" onClick={this.handleAvailabilityClick}>
+                      <span>&#10003;</span>
+                    </button>
+                    )
+                  : (
+                    <button type="button" className="profileBtn redTextBorderBkgnd">
+                      <span>&#10007;</span>
+                    </button>
+                    )
+                  }
+                  <button type="button" className={"profileBtn save4Later " + (saved4later===true && "greenTextBorderBkgnd")} id="save4LaterBtn" onClick={this.toggleSave4LaterClick}>
+                    <i className="far fa-bookmark"/>
+                  </button>
+                  <div className="timeContainer">
+                    {isDayNight==='day' ? (
+                      <button type="button" className="profileBtn dayTime">
+                        <i className="fas fa-sun"/>
+                      </button>
+                      )
+                    : (
+                      <button type="button" className="profileBtn nightTime">
+                        <i className="fas fa-moon"/>
+                      </button>
+                      )
+                    }
+                    <div className="TimeZoneContainer">
+                      <div className={"UserLocalTime " + isDayNight}>{userCurrentTime}</div>
+                      <div className={"UserTimeZone " + isDayNight}>{userCountry}</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

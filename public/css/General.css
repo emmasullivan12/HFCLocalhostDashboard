@@ -100,6 +100,11 @@ hr{
   color: #14bd14;
   font-size: 13px;
 }
+.greenTextBorderBkgnd{
+  background: #edf9ed!important;
+  border: 1px solid #9ce39c!important;
+  color: #14bd14!important;
+}
 .neutralText{
   color: #c7c7c7!important;
   font-size: 13px!important;
@@ -116,6 +121,11 @@ hr{
 .redText{
   color: #da0b0b;
   font-size: 13px;
+}
+.redTextBorderBkgnd{
+  background: #fff0f0!important;
+  border: 1px solid #e0a7a7!important;
+  color: #da0b0b!important;
 }
 .inheritFontSize{
   font-size: inherit;
