@@ -261,6 +261,9 @@ class MentorProfileContent extends Component {
                   <button type="button" className={"profileBtn save4Later " + (saved4later===true && "greenTextBorderBkgnd")} id="save4LaterBtn" onClick={this.toggleSave4LaterClick}>
                     <i className="far fa-bookmark"/>
                   </button>
+                  <button type="button" className="profileBtn">
+                    <i className="fas fa-share-alt"/>
+                  </button>
                   <div className="timeContainer">
                     {isDayNight==='day' ? (
                       <button type="button" className="profileBtn dayTime">
