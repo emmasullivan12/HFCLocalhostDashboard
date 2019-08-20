@@ -26,7 +26,7 @@
 }
 
 .prLogoContainer.profile{
-  top: -30px;
+  top: 30px;
   left: 50%;
   right: 50%!important;
 }
@@ -103,17 +103,17 @@
 }
 .profileCTAContainer{
   margin-bottom: 1rem;
-  width: 90%;
 }
 @media screen and (min-width: 759px) {
   .profileCTAContainer{
     position: absolute;
-    bottom: 80px;
+    bottom: 30px;
     padding-right: 20px;
   }
 }
 .profileBtnToolTip{
   width: 100%;
+  max-width: 400px;
   height: 40px;
   border-radius: 1.5rem;
   border: 1px solid #efefef;

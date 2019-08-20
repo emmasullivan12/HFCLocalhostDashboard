@@ -96,7 +96,7 @@ class MentorProfileContent extends Component {
       <React.Fragment>
         <div className="article-page profile">
           <div className="row article-container profile">
-            <div className="col-3 col-s-12 category-list profile">
+            <div className="col-3 col-s-12 article-extras profile">
               <div className="profile-thumb-container">
                 <img
                   className="profile-thumb img-circle"
@@ -112,22 +112,26 @@ class MentorProfileContent extends Component {
               <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
                 {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
               </button>
-              <ul className="section-list left">
-                <li>
-                  <a href="#expertise-and-career" className="active">Expertise & Career</a>
-                </li>
-                <li>
-                  <a href="#education">Education</a>
-                </li>
-                <li>
-                  <a href="#hobbies-interests">Outside of work</a>
-                </li>
-                <li>
-                  <a href="#recent-activity">Recent activity</a>
-                </li>
-              </ul>
+              <div>
+                <h2>
+                  I&#39;m interested in being a mentor because:
+                </h2>
+                <p>
+                  I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.
+                </p>
+                <h2>
+                  Location
+                </h2>
+                <p>
+                  <span>
+                    <i className={"emoji-icon " + flagEmoji}/>
+                  </span>
+                  London, UK
+                </p>
+              </div>
+
             </div>
-            <div className="col-6 col-s-12 content-col">
+            <div className="col-6 col-s-12 content-col profile">
               <div className="prLogoContainer profile">
                 <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
               </div>
@@ -215,24 +219,21 @@ class MentorProfileContent extends Component {
                 </section>
               </div>
             </div>
-            <div className="col-3 col-s-12 article-extras">
-              <div>
-                <h2>
-                  I&#39;m interested in being a mentor because:
-                </h2>
-                <p>
-                  I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.
-                </p>
-                <h2>
-                  Location
-                </h2>
-                <p>
-                  <span>
-                    <i className={"emoji-icon " + flagEmoji}/>
-                  </span>
-                  London, UK
-                </p>
-              </div>
+            <div className="col-3 col-s-12 category-list profile">
+              <ul className="section-list left">
+                <li>
+                  <a href="#expertise-and-career" className="active">Expertise & Career</a>
+                </li>
+                <li>
+                  <a href="#education">Education</a>
+                </li>
+                <li>
+                  <a href="#hobbies-interests">Outside of work</a>
+                </li>
+                <li>
+                  <a href="#recent-activity">Recent activity</a>
+                </li>
+              </ul>
               <div className="profileCTAContainer">
                 {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
                   <div className="profileBtnToolTip avail">
