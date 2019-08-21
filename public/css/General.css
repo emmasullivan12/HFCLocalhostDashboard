@@ -719,6 +719,15 @@ a:active {
   border-radius: .25rem;
 }
 
+/* BOXES */
+.contentBox{
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  padding: .5rem 1rem .5rem 1rem;
+  margin-bottom: 1rem;
+}
 
 /* ICONS */
 .buttonIcon{

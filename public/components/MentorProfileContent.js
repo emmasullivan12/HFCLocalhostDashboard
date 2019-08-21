@@ -5,6 +5,10 @@ import {
   NavLink
 } from "react-router-dom";
 
+import MentorActivity from './MentorActivity.js';
+import MentorReads from './MentorReads.js';
+import MentorQuotes from './MentorQuotes.js';
+
 import "../css/General.css";
 import "../css/Article.css";
 import "../css/Emoji.css";
@@ -19,8 +23,36 @@ function userFlagEmoji(userCountry) {
     case 'Canada':
       return 'CdaFlag-emoji';
     default:
-      return '';
+      return 'globe-emoji';
   }
+}
+
+function eduSubjects(userCountry) {
+  switch (userCountry) {
+    case 'UK':
+      return 'A-Level (or equivalent) subjects';
+    case 'US':
+      return 'Subjects I specialised in at school';
+    case 'Canada':
+      return 'Subjects I specialised in at school';
+    default:
+      return 'Subjects I specialised in at school';
+  }
+}
+
+function timeSince(lastActiveDate) {
+  var now = new Date();
+  var then = new Date(lastActiveDate * 1000);
+  var diff = now.getTime() - then.getTime();
+  var diffDays = diff / (1000 * 3600 * 24);
+  let diffTxt;
+  if (diffDays > 1) {
+    diffTxt = ' days ago';
+  } else {
+    diffTxt = ' day ago'
+  }
+  diffDays = Math.floor(diffDays);
+  return diffDays + diffTxt
 }
 
 function isNightDay(userCurrentTime) {
@@ -84,14 +116,94 @@ class MentorProfileContent extends Component {
 
   render() {
     const {followStatus, availabilityClicked, save4LaterClicked, saved4later, availabilityMsg} = this.state;
-    const mentorName = 'Emma'
-    const userCountry = 'UK'
-    const userTimeZone = 'UTC'
-    const userCity = 'London'
-    const userAvail = 1
-    const userCurrentTime = profileTimeZone(userTimeZone);
+    const mentor = {
+      fname: 'Emma',
+      city: 'London',
+      country: 'UK',
+      timeZone: 'UTC',
+      avail: 1,
+      activeMentees: 2,
+      views: 200,
+      compTraining: 1,
+      lastActiveDate: '1556389526',
+      yrsExp: 7,
+      uni: 1,
+      degree: 'BSc (Hons) Business Administration',
+      uniName: 'Bath University',
+      subjects: 'Business, Art, English Literature & Language',
+      currRole: 'Head of Marketing',
+      currCo: 'Pladis',
+      currInd: '#food&beverage',
+      expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
+      learning: 'leadership, negotiations, excel, programming, python, mySQL',
+      hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+      groupDisabilities: 1,
+      groupLGB: 1,
+      groupBAME: 1,
+      groupWomen: 1,
+      groupParents: 1,
+      groupSingle: 1,
+      whyJoin: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
+      helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
+      roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+    }
+    const mentorReads = [
+      {
+        id: '11111',
+        type: 'book',
+        text: 'Bookname by Book Author',
+        link: ''
+      },
+      {
+        id: '11112',
+        type: 'link',
+        text: 'Great video about XYZ',
+        link: 'www.youtube.com'
+      }
+    ]
+    const mentorQuotes = [
+      {
+        id: '11113',
+        author: 'Josh Bridges',
+        text: 'Success is not owed. It is leased, and rent is due every day. Pay the man.'
+      },
+      {
+        id: '11114',
+        author: 'Nietsche',
+        text: 'Those who were seen dancing were thought insane by those who could not hear the music'
+      }
+    ]
+    const mentorActivity = [
+      {
+        id: '11117',
+        type: 'newRead',
+        ts: 'yesterday',
+        text: ' has just added a new <strong>recommended read</strong>'
+      },
+      {
+        id: '11118',
+        type: 'newQuote',
+        ts: 'yesterday',
+        text: ' has just added a new <strong>quote</strong>'
+      },
+      {
+        id: '11119',
+        type: 'highlight',
+        ts: 'yesterday',
+        text: ' just had their advice <strong>highlighted</strong>'
+      },
+      {
+        id: '11120',
+        type: 'newMatch',
+        ts: 'yesterday',
+        text: ' just took on a new mentee'
+      }
+    ]
+    const lastActive = timeSince(mentor.lastActiveDate);
+    const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
-    const flagEmoji = userFlagEmoji(userCountry)
+    const flagEmoji = userFlagEmoji(mentor.country);
+
     return (
       <React.Fragment>
         <div className="article-page profile">
@@ -103,12 +215,17 @@ class MentorProfileContent extends Component {
                   src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
                   alt="User profile pic"
                 />
-                <div className="pr-certified img-circle" />
+                {mentor.compTraining === 1 && (
+                  <div className="pr-certified img-circle tooltip">
+                    <span>&#10003;</span>
+                    <span className="tooltiptext">Prospela Certified Mentor: Employee has completed Prospela&#39;s mentoring training</span>
+                  </div>
+                )}
               </div>
-              <div className="profileName">{mentorName}</div>
-              <div className="profilePosition">Head of Marketing</div>
-              <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> Pladis</a>
-              <div className="profileIndustryTag">#food&beverage</div>
+              <h1 className="profileName">{mentor.fname}</h1>
+              <div className="profilePosition">{mentor.currRole}</div>
+              <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> {mentor.currCo}</a>
+              <div className="profileIndustryTag">{mentor.currInd}</div>
               <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
                 {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
               </button>
@@ -117,7 +234,7 @@ class MentorProfileContent extends Component {
                   I&#39;m interested in being a mentor because:
                 </h2>
                 <p>
-                  I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.
+                  {mentor.whyJoin}
                 </p>
                 <h2>
                   Location
@@ -126,10 +243,9 @@ class MentorProfileContent extends Component {
                   <span>
                     <i className={"emoji-icon " + flagEmoji}/>
                   </span>
-                  London, UK
+                  {mentor.city}, {mentor.country}
                 </p>
               </div>
-
             </div>
             <div className="col-6 col-s-12 content-col profile">
               <div className="prLogoContainer profile">
@@ -137,85 +253,133 @@ class MentorProfileContent extends Component {
               </div>
               <div className="article-body profile">
                 <section className="scroll-anchor" id="expertise-and-career" name="expertise-and-career">
-                  <h1 className="anchor">
+                  <div className="contentBox">
+                    <h2>Credentials & Highlights</h2>
+                    <div className="credTxtContainer">
+                      <p><div className="credNum">{mentor.yrsExp}</div>years experience</p>
+                      <p><div className="credNum">{mentor.activeMentees}</div># active mentees</p>
+                      <p><div className="credNum">{mentor.views}</div># content views / reach</p>
+                      <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>
+                    </div>
+                  </div>
+                  <h1 >
                     <br/>
-                    Expertise & Career
+                    <i className="emoji-icon suitcase-emoji"/>Expertise & Career
                   </h1>
                   <h2>
-                    Desktop notifications are currently enabled
+                    Currently: {mentor.currRole} @ {mentor.currCo}
                   </h2>
                   <p>
-                    We strongly recommend enabling notifications so that you’ll know when important activity happens in your Prospela space e.g. when your E-Mentor sends you a direct message
+                    {mentor.roleDesc}
                   </p>
                   <h2>
-                    Messages
+                    Areas of expertise
                   </h2>
                   <p>
-                    Receive messages from E-Mentors and other students in your teams, including 1:1 careers advice personalised to you.
+                    {mentor.expertise}
                   </p>
                   <h2>
-                    Reminders
+                    Skills I&#39;m currently trying to build
                   </h2>
                   <p>
-                    Receive requests to give & receive a review, chat reminders, and other reminders related to your activities on Prospela.
+                    {mentor.learning}
                   </p>
                   <h2>
-                    Promotions and tips
+                    I can help you with
                   </h2>
                   <p>
-                    Receive inspiration, career opportunities, promotions, surveys, and product updates from Prospela and our partners.
-                  </p>
-                  <h2>
-                    Account support
-                  </h2>
-                  <p>
-                    We may need to send you messages regarding your account, your mentoring relationships, legal notifications, security, privacy and safeguarding matters, and customer support requests. <strong>For your security you cannot disable email notifications</strong> and we may contact you by phone or other means if needed.
+                    {mentor.helpFocus}
                   </p>
                 </section>
                 <section className="scroll-anchor" id="education" name="education">
-                  <h1 className="anchor">
+                  <h1 >
                     <br/>
                     Education
                   </h1>
-                  <p>
-                    We will not share your private information with other Prospela users.
-                  </p>
                   <h2>
-                    Email Addresses:
+                    University Degree:
                   </h2>
                   <p>
-                    If you would prefer to make your personal email your primary email (i.e. to receive notifications, etc.), you can do so below.
+                    {mentor.uni != null ? mentor.degree + ' @ ' + mentor.uniName : 'I didn&#39;t go to University'}
+                  </p>
+                  <h2>
+                    {eduSubjects(mentor.country)}
+                  </h2>
+                  <p>
+                    {mentor.subjects}
                   </p>
                 </section>
                 <section className="scroll-anchor" id="hobbies-interests" name="hobbies-interests">
-                  <h1 className="anchor">
+                  <h1 >
                     <br/>
                     Outside of work
                   </h1>
-                  <p>
-                    We will not share your private information with other Prospela users.
-                  </p>
                   <h2>
-                    Email Addresses:
+                    When I&#39;m not working, you&#39;ll find me
                   </h2>
                   <p>
-                    If you would prefer to make your personal email your primary email (i.e. to receive notifications, etc.), you can do so below.
+                    {mentor.hobbies}
+                  </p>
+                  <h2>
+                    Groups I&#39;m passionate about supporting
+                  </h2>
+                  <p>
+                    {mentor.groupDisabilities === 1 && <div>People with disabilities</div>}
+                    {mentor.groupLGB === 1 && <div>LGBTQI+</div>}
+                    {mentor.groupBAME === 1 && <div>Black, Asian, Minority Ethnic (BAME)</div>}
+                    {mentor.groupWomen === 1 && <div>Women in the workforce</div>}
+                    {mentor.groupParents === 1 && <div>Working parents</div>}
+                    {mentor.groupSingle === 1 && <div>Single parents</div>}
                   </p>
                 </section>
                 <section className="scroll-anchor" id="recent-activity" name="recent-activity">
-                  <h1 className="anchor">
-                    <br/>
-                    Recent activity
-                  </h1>
-                  <p>
-                    We will not share your private information with other Prospela users.
-                  </p>
-                  <h2>
-                    Email Addresses:
-                  </h2>
-                  <p>
-                    If you would prefer to make your personal email your primary email (i.e. to receive notifications, etc.), you can do so below.
-                  </p>
+                  <div className="contentBox">
+                    <h1 >
+                      <br/>
+                      Recent activity / highlights
+                    </h1>
+                    <p>
+                      {mentorActivity.map((activity, index) => {
+                        return (
+                          <MentorActivity
+                            activity={activity}
+                            key={activity.id}
+                            fname={mentor.fname}
+                          />
+                        )
+                      })}
+                    </p>
+                  </div>
+                  <div className="contentBox">
+                    <h2>
+                      Good reads / links
+                    </h2>
+                    <p>
+                      {mentorReads.map((reads, index) => {
+                        return (
+                          <MentorReads
+                            reads={reads}
+                            key={reads.id}
+                          />
+                        )
+                      })}
+                    </p>
+                  </div>
+                  <div className="contentBox">
+                    <h2>
+                      Quotes that inspire me
+                    </h2>
+                    <p>
+                      {mentorQuotes.map((quotes, index) => {
+                        return (
+                          <MentorQuotes
+                            quotes={quotes}
+                            key={quotes.id}
+                          />
+                        )
+                      })}
+                    </p>
+                  </div>
                 </section>
               </div>
             </div>
@@ -237,7 +401,7 @@ class MentorProfileContent extends Component {
               <div className="profileCTAContainer">
                 {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
                   <div className="profileBtnToolTip avail">
-                    {this.availabilityMsg(userAvail)}
+                    {this.availabilityMsg(mentor.avail)}
                   </div>
                   )
                 : (
@@ -247,7 +411,7 @@ class MentorProfileContent extends Component {
                   )
                 }
                 <div className="profileUserCTA">
-                  {userAvail === 1 || userAvail === 2 || userAvail === 3 ? (
+                  {mentor.avail === 1 || mentor.avail === 2 || mentor.avail === 3 ? (
                     <button type="button" className="profileBtn" onClick={this.handleAvailabilityClick}>
                       <span>&#10003;</span>
                     </button>
@@ -278,13 +442,13 @@ class MentorProfileContent extends Component {
                     }
                     <div className="TimeZoneContainer">
                       <div className={"UserLocalTime " + isDayNight}>{userCurrentTime}</div>
-                      <div className={"UserTimeZone " + isDayNight}>{userCountry}</div>
+                      <div className={"UserTimeZone " + isDayNight}>{mentor.country}</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className={"mapImg " + userCity}>
+            <div className={"mapImg " + mentor.city}>
               <div className="mapAttribution">
                 &#169; <a href="https://www.openstreetmap.org/copyright" className="link map">OpenStreetMap</a> contributors
               </div>

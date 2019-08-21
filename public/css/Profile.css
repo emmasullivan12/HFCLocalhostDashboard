@@ -23,6 +23,10 @@
   left: 125px;
   border-style: none;
   position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  padding-top: 3px;
 }
 
 .prLogoContainer.profile{
@@ -135,6 +139,10 @@
   border-style: solid;
   border-color: #fff transparent transparent transparent;
 }
+.profileBtnToolTip.save{
+  background-color: #edf9ed;
+  border: 1px solid #9ee39e;
+}
 .profileBtnToolTip.save::after{
   content: "";
   position: absolute;
@@ -142,7 +150,7 @@
   left: 56px;
   border-width: 7px;
   border-style: solid;
-  border-color: #fff transparent transparent transparent;
+  border-color: #27c227 transparent transparent transparent;
 }
 .profileBtn{
   color: #919191;
@@ -204,4 +212,25 @@
 }
 .UserTimeZone.day{
   color: #efba1e;
+}
+
+.credTxtContainer{
+  font-size: 13.5px;
+  line-height: 20px;
+}
+.article-page .article-body .credTxtContainer p {
+  margin-bottom: 5px;
+}
+.article-page .article-body .credTxtContainer p:last-child {
+  margin-bottom: 12px;
+}
+.credNum{
+  width: 30px;
+  display: inline-block;
+  color: #4d0cf3;
+  font-weight: 700;
+}
+.lastActiveTxt{
+  font-size: 11px;
+  margin-top: 12px;
 }

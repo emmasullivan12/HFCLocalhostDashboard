@@ -16,17 +16,34 @@
   width: 24px;
   height: 24px;
 }
+.book-emoji{
+  background-position: 50.9804% 25.4902%;
+}
+.chat-emoji{
+  background-position: 49.0196% 45.098%;
+}
 .crossed-fingers-emoji{
   background-position: 74.5098% 21.5686%;
 }
 .footprints-emoji{
   background-position: 29.4118% 76.4706%;
 }
+.globe-emoji{
+  background-position: 11.7647% 9.80392%;
+  width: 24px;
+  height: 24px;
+}
 .heart-emoji{
   background-position: 49.0196% 3.92157%;
 }
+.link-emoji{
+  background-position: 52.9412% 49.0196%;
+}
 .ok-emoji{
   background-position: 27.451% 84.3137%;
+}
+.purpleHeart-emoji{
+  background-position: 49.0196% 3.92157%;
 }
 .sad-emoji{
   background-position: 58.8235% 86.2745%;
