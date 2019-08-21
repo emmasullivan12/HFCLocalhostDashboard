@@ -141,7 +141,7 @@
 .article-page .article-body h2 {
   font-weight: 700;
   font-size: 18px;
-  color: #797979;
+  color: #b7b7b7;
   line-height: 25px;
   display: block;
   margin-bottom: 20px;
@@ -161,6 +161,10 @@
 }
 .article-page .content-col.profile h2:first-child {
   margin-top: .5rem!important;
+}
+
+.article-page .article-body section{
+  margin-bottom: 2rem;
 }
 
 .article-page .article-body p {

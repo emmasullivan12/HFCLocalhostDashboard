@@ -137,6 +137,10 @@ class MentorProfileContent extends Component {
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
       learning: 'leadership, negotiations, excel, programming, python, mySQL',
       hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+      activityPublic: 1,
+      groupsSet: 1,
+      readsSet: 1,
+      quotesSet: 1,
       groupDisabilities: 1,
       groupLGB: 1,
       groupBAME: 1,
@@ -218,7 +222,7 @@ class MentorProfileContent extends Component {
                 {mentor.compTraining === 1 && (
                   <div className="pr-certified img-circle tooltip">
                     <span>&#10003;</span>
-                    <span className="tooltiptext">Prospela Certified Mentor: Employee has completed Prospela&#39;s mentoring training</span>
+                    <span className="tooltiptext profile">Prospela Certified Mentor: Employee has completed Prospela&#39;s mentoring training</span>
                   </div>
                 )}
               </div>
@@ -264,14 +268,16 @@ class MentorProfileContent extends Component {
                   </div>
                   <h1 >
                     <br/>
-                    <i className="emoji-icon suitcase-emoji"/>Expertise & Career
+                    <i className="emoji-icon suitcase-emoji"/> Expertise & Career
                   </h1>
                   <h2>
-                    Currently: {mentor.currRole} @ {mentor.currCo}
+                    My current role: <span className="noBold">{mentor.currRole} @ {mentor.currCo}</span>
                   </h2>
-                  <p>
-                    {mentor.roleDesc}
-                  </p>
+                  {mentor.roleDesc != null && (
+                    <p>
+                      {mentor.roleDesc}
+                    </p>
+                  )}
                   <h2>
                     Areas of expertise
                   </h2>
@@ -284,17 +290,21 @@ class MentorProfileContent extends Component {
                   <p>
                     {mentor.learning}
                   </p>
-                  <h2>
-                    I can help you with
-                  </h2>
-                  <p>
-                    {mentor.helpFocus}
-                  </p>
+                  {mentor.helpFocus != null && (
+                    <React.Fragment>
+                      <h2>
+                        I&#39;m might be good for helping you with
+                      </h2>
+                      <p>
+                        {mentor.helpFocus}
+                      </p>
+                    </React.Fragment>
+                  )}
                 </section>
                 <section className="scroll-anchor" id="education" name="education">
                   <h1 >
                     <br/>
-                    Education
+                    <i className="emoji-icon schoolHat-emoji"/> Education
                   </h1>
                   <h2>
                     University Degree:
@@ -312,7 +322,7 @@ class MentorProfileContent extends Component {
                 <section className="scroll-anchor" id="hobbies-interests" name="hobbies-interests">
                   <h1 >
                     <br/>
-                    Outside of work
+                    <i className="emoji-icon rockOn-emoji"/> Outside of work
                   </h1>
                   <h2>
                     When I&#39;m not working, you&#39;ll find me
@@ -320,67 +330,79 @@ class MentorProfileContent extends Component {
                   <p>
                     {mentor.hobbies}
                   </p>
-                  <h2>
-                    Groups I&#39;m passionate about supporting
-                  </h2>
-                  <p>
-                    {mentor.groupDisabilities === 1 && <div>People with disabilities</div>}
-                    {mentor.groupLGB === 1 && <div>LGBTQI+</div>}
-                    {mentor.groupBAME === 1 && <div>Black, Asian, Minority Ethnic (BAME)</div>}
-                    {mentor.groupWomen === 1 && <div>Women in the workforce</div>}
-                    {mentor.groupParents === 1 && <div>Working parents</div>}
-                    {mentor.groupSingle === 1 && <div>Single parents</div>}
-                  </p>
+                  {mentor.groupsSet === 1 && (
+                    <React.Fragment>
+                      <h2>
+                        Groups I&#39;m passionate about supporting
+                      </h2>
+                      <div className="bubbleContainer">
+                        {mentor.groupDisabilities === 1 && <div className="bubble">People with disabilities</div>}
+                        {mentor.groupLGB === 1 && <div className="bubble">LGBTQI+</div>}
+                        {mentor.groupBAME === 1 && <div className="bubble">Black, Asian, Minority Ethnic (BAME)</div>}
+                        {mentor.groupWomen === 1 && <div className="bubble">Women in the workforce</div>}
+                        {mentor.groupParents === 1 && <div className="bubble">Working parents</div>}
+                        {mentor.groupSingle === 1 && <div className="bubble">Single parents</div>}
+                      </div>
+                    </React.Fragment>
+                  )}
                 </section>
-                <section className="scroll-anchor" id="recent-activity" name="recent-activity">
-                  <div className="contentBox">
-                    <h1 >
-                      <br/>
-                      Recent activity / highlights
-                    </h1>
-                    <p>
-                      {mentorActivity.map((activity, index) => {
-                        return (
-                          <MentorActivity
-                            activity={activity}
-                            key={activity.id}
-                            fname={mentor.fname}
-                          />
-                        )
-                      })}
-                    </p>
-                  </div>
-                  <div className="contentBox">
-                    <h2>
-                      Good reads / links
-                    </h2>
-                    <p>
-                      {mentorReads.map((reads, index) => {
-                        return (
-                          <MentorReads
-                            reads={reads}
-                            key={reads.id}
-                          />
-                        )
-                      })}
-                    </p>
-                  </div>
-                  <div className="contentBox">
-                    <h2>
-                      Quotes that inspire me
-                    </h2>
-                    <p>
-                      {mentorQuotes.map((quotes, index) => {
-                        return (
-                          <MentorQuotes
-                            quotes={quotes}
-                            key={quotes.id}
-                          />
-                        )
-                      })}
-                    </p>
-                  </div>
-                </section>
+                {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
+                  <section className="scroll-anchor" id="recent-activity" name="recent-activity">
+                    {mentor.activityPublic === 1 && (
+                      <div className="contentBox">
+                        <h1 >
+                          <br/>
+                          <i className="emoji-icon chat-emoji"/> Recent activity / highlights
+                        </h1>
+                        <p>
+                          {mentorActivity.map((activity, index) => {
+                            return (
+                              <MentorActivity
+                                activity={activity}
+                                key={activity.id}
+                                fname={mentor.fname}
+                              />
+                            )
+                          })}
+                        </p>
+                      </div>
+                    )}
+                    {mentor.readsSet === 1 && (
+                      <div className="contentBox">
+                        <h2>
+                          Good reads / links
+                        </h2>
+                        <p>
+                          {mentorReads.map((reads, index) => {
+                            return (
+                              <MentorReads
+                                reads={reads}
+                                key={reads.id}
+                              />
+                            )
+                          })}
+                        </p>
+                      </div>
+                    )}
+                    {mentor.quotesSet === 1 && (
+                      <div className="contentBox">
+                        <h2>
+                          Quotes that inspire me
+                        </h2>
+                        <p>
+                          {mentorQuotes.map((quotes, index) => {
+                            return (
+                              <MentorQuotes
+                                quotes={quotes}
+                                key={quotes.id}
+                              />
+                            )
+                          })}
+                        </p>
+                      </div>
+                    )}
+                  </section>
+                )}
               </div>
             </div>
             <div className="col-3 col-s-12 category-list profile">
@@ -394,9 +416,11 @@ class MentorProfileContent extends Component {
                 <li>
                   <a href="#hobbies-interests">Outside of work</a>
                 </li>
-                <li>
-                  <a href="#recent-activity">Recent activity</a>
-                </li>
+                {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
+                  <li>
+                    <a href="#recent-activity">Recent activity</a>
+                  </li>
+                )}
               </ul>
               <div className="profileCTAContainer">
                 {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
