@@ -10,12 +10,20 @@ import {
 
 import FullPageModal from './FullPageModal.js';
 import MentorProfileContent from './MentorProfileContent.js';
+import MenteeProfileContent from './MenteeProfileContent.js';
 import "../css/Modal.css";
 
 const MentorProfileModalProps = {
   ariaLabel: 'View Mentor Profile',
   triggerText: 'View Mentor Profile',
   usedFor: 'mentor-profile',
+  backBtn: 'arrow'
+}
+
+const MenteeProfileModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  triggerText: 'View Mentee Profile',
+  usedFor: 'mentee-profile',
   backBtn: 'arrow'
 }
 
@@ -71,6 +79,9 @@ class ChatMenu extends Component {
           <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink></div>
             <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
+            </FullPageModal>
+            <FullPageModal {...MenteeProfileModalProps}>
+              <MenteeProfileContent />
             </FullPageModal>
         </div>
       </React.Fragment>

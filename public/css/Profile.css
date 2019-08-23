@@ -47,6 +47,7 @@
 .profileInstitution{
   font-size: 14px;
   line-height: 10px;
+  margin-bottom: 2rem;
 }
 .profileIndustryTag{
   margin-bottom: 1rem;
@@ -102,6 +103,20 @@
     display: block;
   }
   .timeContainer{
+    margin-top: .3rem;
+  }
+  .profileUserCTA.small{
+    display: flex;
+  }
+  .timeContainer.small{
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 759px) and (max-width: 1033px) {
+  .profileUserCTA.small{
+    display: block;
+  }
+  .timeContainer.small{
     margin-top: .3rem;
   }
 }
@@ -218,10 +233,10 @@
   font-size: 13.5px;
   line-height: 20px;
 }
-.article-page .article-body .credTxtContainer p {
+.article-page .article-body .credTxtContainer div {
   margin-bottom: 5px;
 }
-.article-page .article-body .credTxtContainer p:last-child {
+.article-page .article-body .credTxtContainer div:last-child {
   margin-bottom: 12px;
 }
 .credNum{

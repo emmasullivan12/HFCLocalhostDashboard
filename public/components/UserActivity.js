@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 import "../css/Emoji.css";
 
-class MentorActivity extends Component {
+class UserActivity extends Component {
   render() {
   const {activity, fname} = this.props;
 
@@ -30,4 +30,4 @@ class MentorActivity extends Component {
   }
 }
 
-export default MentorActivity;
+export default UserActivity;

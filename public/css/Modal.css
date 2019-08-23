@@ -222,6 +222,7 @@
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+.fullpage-modal-container.mentee-profile,
 .fullpage-modal-container.mentor-profile{
   background-color: #f9f9f9;
   padding-bottom: 0;

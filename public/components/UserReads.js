@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 import "../css/Emoji.css";
 
-class MentorReads extends Component {
+class UserReads extends Component {
   render() {
   const {reads} = this.props;
 
@@ -30,4 +30,4 @@ class MentorReads extends Component {
   }
 }
 
-export default MentorReads;
+export default UserReads;
