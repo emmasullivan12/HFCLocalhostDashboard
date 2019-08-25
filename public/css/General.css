@@ -135,6 +135,9 @@ hr{
 }
 
 /* POSITIONING */
+.dispBlock{
+  display: block;
+}
 .alignCenter{
   text-align: center!important;
 }

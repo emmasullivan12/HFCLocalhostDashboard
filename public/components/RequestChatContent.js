@@ -12,6 +12,7 @@ class RequestChatContent extends Component {
     super();
     this.state = {
       requestChatMessage: '',
+      messageFromServer: 'blah',
     };
   }
 
@@ -25,7 +26,7 @@ class RequestChatContent extends Component {
       evt.preventDefault ();
       return;
     }
-    alert('Chat request sent!');
+    this.setState({ messageFromServer: 'Request sent server says' });
   }
 
   canBeSubmitted() {
@@ -36,55 +37,75 @@ class RequestChatContent extends Component {
   }
 
   render() {
-    const { requestChatMessage } = this.state;
+    const { requestChatMessage, messageFromServer } = this.state;
     const isEnabled = this.canBeSubmitted();
-    return (
-      <React.Fragment>
-        <div className="modal-title">
-          Send a chat request to <span className="request-mentor-name">{this.props.mentorName}</span>
-        </div>
-        <form>
-          <input
-            type="text"
-            className="textInputBox"
-            placeholder="Type your message..."
-            value={this.state.requestChatMessage}
-            onChange={this.handleMessageChange}
-            required
-          />
-          <div className="descriptor-br">
-            (Minimum 50 characters)
+    if(messageFromServer == '') {
+      return (
+        <React.Fragment>
+          <div className="modal-title">
+            Send a chat request to <span className="request-mentor-name">{this.props.mentorName}</span>
           </div>
-          <div className="need-ideas-container">
+          <form>
+            <input
+              type="text"
+              className="textInputBox"
+              placeholder="Type your message..."
+              value={this.state.requestChatMessage}
+              onChange={this.handleMessageChange}
+              required
+            />
+            <div className="descriptor-br">
+              (Minimum 50 characters)
+            </div>
+            <div className="need-ideas-container">
+              <div className="ideas-icon-container">
+                <i className="far fa-lightbulb" />
+              </div>
+              <div className="ideas-Title">
+                Need ideas for what to say?
+              </div>
+              <ul className="ideas-list">
+                <li className="ideas-list-item">
+                  <div className="emoji-icon wave-emoji" />
+                  <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re studying, your hobbies)</div>
+                </li>
+                <li className="ideas-list-item">
+                  <div className="emoji-icon heart-emoji" />
+                  <div className="idea-item-text"><strong>Your career preferences</strong> (what role, industries interest you)</div>
+                </li>
+                <li className="ideas-list-item">
+                  <div className="emoji-icon sunglasses-emoji" />
+                  <div className="idea-item-text"><strong>Why this mentor</strong> (what would you like them to help you with)</div>
+                </li>
+              </ul>
+            </div>
+            <div className="request-btn-container">
+              <button type="button" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
+                Request
+              </button>
+            </div>
+          </form>
+        </React.Fragment>
+      );
+    } else {
+      return (
+        <React.Fragment>
+          <div className="modal-title">
             <div className="ideas-icon-container">
-              <i className="far fa-lightbulb" />
+              <i className="fas fa-paper-plane" />
             </div>
+            Request Sent!
+          </div>
+          <div className="success-container">
             <div className="ideas-Title">
-              Need ideas for what to say?
+              You&#39;ll hear from us soon. For now, sit back, and if they accept you&#39;ll be able to chat to your E-Mentor soon from your Direct Messages.
             </div>
-            <ul className="ideas-list">
-              <li className="ideas-list-item">
-                <div className="emoji-icon wave-emoji" />
-                <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re studying, your hobbies)</div>
-              </li>
-              <li className="ideas-list-item">
-                <div className="emoji-icon heart-emoji" />
-                <div className="idea-item-text"><strong>Your career preferences</strong> (what role, industries interest you)</div>
-              </li>
-              <li className="ideas-list-item">
-                <div className="emoji-icon sunglasses-emoji" />
-                <div className="idea-item-text"><strong>Why this mentor</strong> (what would you like them to help you with)</div>
-              </li>
-            </ul>
+            <div className="emoji-icon ok-emoji successBox" />
+            <div className="showDMPic"/>
           </div>
-          <div className="request-btn-container">
-            <button type="button" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
-              Request
-            </button>
-          </div>
-        </form>
-      </React.Fragment>
-    );
+        </React.Fragment>
+      )
+    }
   }
 }
 

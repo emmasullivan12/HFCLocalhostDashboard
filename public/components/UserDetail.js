@@ -1,5 +1,43 @@
 import React, { Component } from "react";
 
+function availabilityMsg(userAvail) {
+  if (userAvail === 1) {
+    return <span>Hoping for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
+  } else if (userAvail === 2) {
+    return <span>Hoping for a <strong className="greenText">long-term</strong> mentorship</span>
+  } else if (userAvail === 3) {
+    return <span>Hoping for <strong className="greenText">short-term</strong> mentor support</span>
+  } else if (userAvail === 4) {
+    return <span><span className="redText">Not currently looking</span> for mentorship</span>
+  }
+}
+
+function eetStatus(eetStatus, schYrGrp, uniYrGrp) {
+  if (eetStatus === 0) {
+    return <span>{schYrGrp} Student</span>
+  } else if (eetStatus === 1) {
+    return <span>{uniYrGrp} Student</span>
+  } else if (eetStatus === 2) {
+    return <span>Currently in Employment</span>
+  } else if (eetStatus === 3) {
+    return <span>Currently in Training</span>
+  } else if (eetStatus === 4) {
+    return <span>Currently not in education, employment or training</span>
+  }
+}
+
+function planningUni(planningUni) {
+  if (planningUni === 0) {
+    return <span>No</span>
+  } else if (planningUni === 1) {
+    return <span>Yes</span>
+  } else if (planningUni === 2) {
+    return <span>Maybe</span>
+  } else if (planningUni === 3) {
+    return <span>Not sure</span>
+  }
+}
+
 function userFlagEmoji(userCountry) {
   switch (userCountry) {
     case 'UK':
@@ -56,4 +94,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {userFlagEmoji, eduSubjects, timeSince, isNightDay, profileTimeZone};
+export {availabilityMsg, userFlagEmoji, eetStatus, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone};

@@ -72,7 +72,7 @@ class MentorProfileContent extends Component {
       compTraining: 1,
       lastActiveDate: '1556389526',
       yrsExp: 7,
-      uni: 1,
+      uni: 0,
       degree: 'BSc (Hons) Business Administration',
       uniName: 'Bath University',
       subjects: 'Business, Art, English Literature & Language',
@@ -255,7 +255,7 @@ class MentorProfileContent extends Component {
                     University Degree:
                   </h2>
                   <p>
-                    {mentor.uni != null ? mentor.degree + ' @ ' + mentor.uniName : 'I didn&#39;t go to University'}
+                    {mentor.uni != 0 ? mentor.degree + ' @ ' + mentor.uniName : 'I didn\'t go to University'}
                   </p>
                   <h2>
                     {eduSubjects(mentor.country)}
@@ -299,17 +299,15 @@ class MentorProfileContent extends Component {
                           <br/>
                           <i className="emoji-icon chat-emoji"/> Recent activity / highlights
                         </h1>
-                        <p>
-                          {userActivity.map((activity, index) => {
-                            return (
-                              <UserActivity
-                                activity={activity}
-                                key={activity.id}
-                                fname={mentor.fname}
-                              />
-                            )
-                          })}
-                        </p>
+                        {userActivity.map((activity, index) => {
+                          return (
+                            <UserActivity
+                              activity={activity}
+                              key={activity.id}
+                              fname={mentor.fname}
+                            />
+                          )
+                        })}
                       </div>
                     )}
                     {mentor.readsSet === 1 && (
@@ -317,16 +315,14 @@ class MentorProfileContent extends Component {
                         <h2>
                           Good reads / links
                         </h2>
-                        <p>
-                          {userReads.map((reads, index) => {
-                            return (
-                              <UserReads
-                                reads={reads}
-                                key={reads.id}
-                              />
-                            )
-                          })}
-                        </p>
+                        {userReads.map((reads, index) => {
+                          return (
+                            <UserReads
+                              reads={reads}
+                              key={reads.id}
+                            />
+                          )
+                        })}
                       </div>
                     )}
                     {mentor.quotesSet === 1 && (
@@ -334,16 +330,14 @@ class MentorProfileContent extends Component {
                         <h2>
                           Quotes that inspire me
                         </h2>
-                        <p>
-                          {userQuotes.map((quotes, index) => {
-                            return (
-                              <UserQuotes
-                                quotes={quotes}
-                                key={quotes.id}
-                              />
-                            )
-                          })}
-                        </p>
+                        {userQuotes.map((quotes, index) => {
+                          return (
+                            <UserQuotes
+                              quotes={quotes}
+                              key={quotes.id}
+                            />
+                          )
+                        })}
                       </div>
                     )}
                   </section>

@@ -8,7 +8,7 @@ import {
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {userFlagEmoji, eduSubjects, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {availabilityMsg, userFlagEmoji, eetStatus, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -18,19 +18,6 @@ import "../css/Profile.css";
 class MenteeProfileContent extends Component {
   constructor (props) {
     super(props);
-    this.availabilityMsg = this.availabilityMsg.bind(this);
-  }
-
-  availabilityMsg(userAvail) {
-    if (userAvail === 1) {
-      return <span>Hoping for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
-    } else if (userAvail === 2) {
-      return <span>Hoping for a <strong className="greenText">long-term</strong> mentorship</span>
-    } else if (userAvail === 3) {
-      return <span>Hoping for <strong className="greenText">short-term</strong> mentor support</span>
-    } else if (userAvail === 4) {
-      return <span><span className="redText">Not currently looking</span> for mentorship</span>
-    }
   }
 
   render() {
@@ -47,36 +34,29 @@ class MenteeProfileContent extends Component {
       certainty: 10,
       knowNextSteps: 4,
       knowSkills: 2,
-
-
-      inEdu: 1,
-      inTraining: 0,
-      inEmployment: 0,
-      isNEET: 0,
-      planningUni: 2, // 0=no, 1=yes, 2=maybe
-
-      age: 16, // or DOB better?
-      yrGrp: 12, // What about US/Canada?
+      eetStatus: 1, // 0=school, 1=uni, 2=employment, 3=training, 4=NEET
+      schYrGrp: 'Year 12 (USA/Canada Grade 11)',
+      uniYrGrp: 'Second Year',
+      planningUni: 2, // 0=no, 1=yes, 2=maybe, 3=not sure
       eduName: 'Bath University',
-      instName: 'JD Sports',
       degree: 'BSc (Hons) Business Administration',
-      subjects: 'Business, Art, English Literature & Language',
+      graduYr: '2020',
       currRole: 'Head of Marketing',
       currCo: 'Pladis',
-      currInd: '#food&beverage',
-
+      currTraining: 'Apprenticeship learning plumbing',
+      subjects: 'Business, Art, English Literature & Language',
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
       hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
       activityPublic: 1,
       groupsSet: 1,
       readsSet: 1,
       quotesSet: 1,
-      groupDisabilities: 1,
+      groupDisabilities: 0,
       groupLGB: 1,
       groupBAME: 1,
       groupWomen: 1,
-      groupParents: 1,
-      groupSingle: 1,
+      groupParents: 0,
+      groupSingle: 0,
       whyJoin: 'I want help in starting my career. I\'d love to get advice from those in the know and see work life insights.',
       careerInterest: 'Doing VFX in the movie industry and would like to become a Producer one day',
       lifestyle: 'Not long hours. Working 9-5pm to spend time with my family and friends. Wliling to work hard.',
@@ -152,9 +132,9 @@ class MenteeProfileContent extends Component {
                 />
               </div>
               <h1 className="profileName">{mentee.fname}</h1>
-              <div className="profilePosition">{mentee.currRole}</div>
+              <div className="profilePosition student">{eetStatus(mentee.eetStatus, mentee.schYrGrp, mentee.uniYrGrp)}</div>
               {mentee.is18plus === 1 && (
-                <div className="profileInstitution"><span className="neutralText">&#64;</span> {mentee.currCo}</div>
+                <div className="profileInstitution"><span className="neutralText">&#64;</span> <strong>{mentee.eetStatus===0 || mentee.eetStatus===1 ? mentee.eduName : mentee.currCo}</strong></div>
               )}
               <div>
                 <h2>
@@ -211,16 +191,19 @@ class MenteeProfileContent extends Component {
                     {mentee.expertise}
                   </p>
                   <h2>
-                    My career journey
+                    Self-ratings
                   </h2>
                   <p>
-                    <span>{mentee.certainty}</span><span> out of 10: </span>How sure I am of what I want to do for my career
+                    <span className="impactTxt">I know what I want to do for my career:</span>
+                    <span className="impactRating">{mentee.certainty}</span><span className="neutralText"> / 10</span>
                   </p>
                   <p>
-                    <span>{mentee.knowNextSteps}</span><span> out of 10: </span>How sure I am of what I need to do next to get down my preferred career path
+                    <span className="impactTxt">I know what I need to do next to get down my preferred career path:</span>
+                    <span className="impactRating">{mentee.knowNextSteps}</span><span className="neutralText"> / 10</span>
                   </p>
                   <p>
-                    <span>{mentee.knowSkills}</span><span> out of 10: </span>How sure I am about the skills employers are looking for
+                    <span className="impactTxt">I know what skills employers are looking for:</span>
+                    <span className="impactRating">{mentee.knowSkills}</span><span className="neutralText"> / 10 </span>
                   </p>
                   <h2>
                     Things I&#39;m currently working on to support my career next steps
@@ -234,18 +217,57 @@ class MenteeProfileContent extends Component {
                     <br/>
                     <i className="emoji-icon schoolHat-emoji"/> Education & Work Experience
                   </h1>
-                  <h2>
-                    University Degree:
-                  </h2>
-                  <p>
-                    {mentee.uni != null ? mentee.degree + ' @ ' + mentee.uniName : 'I didn&#39;t go to University'}
-                  </p>
-                  <h2>
-                    {eduSubjects(mentee.country)}
-                  </h2>
-                  <p>
-                    {mentee.subjects}
-                  </p>
+                  {mentee.eetStatus === 1 && (
+                    <React.Fragment>
+                      <h2>
+                        University Degree:
+                      </h2>
+                      <p>
+                        {mentee.degree + ' @ ' + mentee.eduName}
+                        <span className="neutralText dispBlock">(Class of {mentee.graduYr})</span>
+                      </p>
+                    </React.Fragment>
+                  )}
+                  {mentee.eetStatus === 0 && (
+                    <React.Fragment>
+                      <h2>
+                        {eduSubjects(mentee.country)}
+                      </h2>
+                      <p>
+                        {mentee.subjects}
+                      </p>
+                    </React.Fragment>
+                  )}
+                  {mentee.eetStatus === 2 && (
+                    <React.Fragment>
+                      <h2>
+                        Current Employment
+                      </h2>
+                      <p>
+                        {mentee.currRole} @ {mentee.currCo}
+                      </p>
+                    </React.Fragment>
+                  )}
+                  {mentee.eetStatus === 3 && (
+                    <React.Fragment>
+                      <h2>
+                        Currently in Training
+                      </h2>
+                      <p>
+                        {mentee.currTraining}
+                      </p>
+                    </React.Fragment>
+                  )}
+                  {mentee.eetStatus != 1 && (
+                    <React.Fragment>
+                      <h2>
+                        Planning on going to University?
+                      </h2>
+                      <p>
+                        {planningUni(mentee.planningUni)}
+                      </p>
+                    </React.Fragment>
+                  )}
                 </section>
                 <section className="scroll-anchor" id="hobbies-interests" name="hobbies-interests">
                   <h1 >
@@ -282,17 +304,15 @@ class MenteeProfileContent extends Component {
                           <br/>
                           <i className="emoji-icon chat-emoji"/> Recent activity / highlights
                         </h1>
-                        <p>
-                          {userActivity.map((activity, index) => {
-                            return (
-                              <UserActivity
-                                activity={activity}
-                                key={activity.id}
-                                fname={mentee.fname}
-                              />
-                            )
-                          })}
-                        </p>
+                        {userActivity.map((activity, index) => {
+                          return (
+                            <UserActivity
+                              activity={activity}
+                              key={activity.id}
+                              fname={mentee.fname}
+                            />
+                          )
+                        })}
                       </div>
                     )}
                     {mentee.readsSet === 1 && (
@@ -300,16 +320,14 @@ class MenteeProfileContent extends Component {
                         <h2>
                           Good reads / links
                         </h2>
-                        <p>
-                          {userReads.map((reads, index) => {
-                            return (
-                              <UserReads
-                                reads={reads}
-                                key={reads.id}
-                              />
-                            )
-                          })}
-                        </p>
+                        {userReads.map((reads, index) => {
+                          return (
+                            <UserReads
+                              reads={reads}
+                              key={reads.id}
+                            />
+                          )
+                        })}
                       </div>
                     )}
                     {mentee.quotesSet === 1 && (
@@ -317,16 +335,14 @@ class MenteeProfileContent extends Component {
                         <h2>
                           Quotes that inspire me
                         </h2>
-                        <p>
-                          {userQuotes.map((quotes, index) => {
-                            return (
-                              <UserQuotes
-                                quotes={quotes}
-                                key={quotes.id}
-                              />
-                            )
-                          })}
-                        </p>
+                        {userQuotes.map((quotes, index) => {
+                          return (
+                            <UserQuotes
+                              quotes={quotes}
+                              key={quotes.id}
+                            />
+                          )
+                        })}
                       </div>
                     )}
                   </section>
@@ -352,7 +368,7 @@ class MenteeProfileContent extends Component {
               </ul>
               <div className="profileCTAContainer">
                 <div className="profileBtnToolTip avail">
-                  {this.availabilityMsg(mentee.avail)}
+                  {availabilityMsg(mentee.avail)}
                 </div>
                 <div className="profileUserCTA small">
                   {mentee.avail === 1 || mentee.avail === 2 || mentee.avail === 3 ? (

@@ -44,6 +44,9 @@
   font-size: 14px;
   line-height: 10px;
 }
+.profilePosition.student{
+  margin-bottom: .5rem;
+}
 .profileInstitution{
   font-size: 14px;
   line-height: 10px;
@@ -80,7 +83,7 @@
   }
 }
 .mapImg.London{
-  background-image: -webkit-linear-gradient(120deg,rgba(249,249,249, 0.2),rgb(249,249,249,0.8),rgb(249,249,249,0.9),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+  background-image: -webkit-linear-gradient(120deg,rgba(249,249,249, 0.2),rgb(249,249,249,0.85),rgb(249,249,249,0.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
 }
 .mapAttribution{
   position: absolute;
@@ -144,6 +147,11 @@
   text-align: left;
   padding: .4rem .8rem .4rem .8rem;
   position: relative;
+}
+@media screen and (min-width: 759px) and (max-width: 846px) {
+  .profileBtnToolTip{
+    font-size: 10px;
+  }
 }
 .profileBtnToolTip.avail::after{
   content: "";
@@ -244,6 +252,15 @@
   display: inline-block;
   color: #4d0cf3;
   font-weight: 700;
+}
+.impactRating{
+  display: inline-block;
+  color: #4d0cf3;
+  font-weight: 700;
+  margin-right: 4px;
+}
+.impactTxt{
+  display: block;
 }
 .lastActiveTxt{
   font-size: 11px;

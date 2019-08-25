@@ -315,4 +315,9 @@
 
 .modal-content {
   padding-top: 1.5em;
+  margin-bottom: 1rem;
+}
+.success-container{
+  width: 60%;
+  margin: auto;
 }
