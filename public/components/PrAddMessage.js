@@ -42,7 +42,7 @@ class PrAddMessage extends Component {
 
   handleMessageChange = (evt) => {
     this.setState({ text: evt.target.value });
-    evt.target.style.height = '21px';
+    evt.target.style.height = '20px';
     evt.target.style.height = (evt.target.scrollHeight) + 'px';
     evt.target.style.overflowY = "scroll";
   }
@@ -93,7 +93,7 @@ class PrAddMessage extends Component {
                     value={this.state.text}
                     onChange={this.handleMessageChange}
                     placeholder="Type message..."
-                    autofocus
+                    autoFocus
                   />
                 </form>
                 <Modal {...FileUploadModalProps}>
