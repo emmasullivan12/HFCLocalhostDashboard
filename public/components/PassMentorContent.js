@@ -16,6 +16,11 @@ class PassMentorContent extends Component {
     this.updateClassname = this.updateClassname.bind(this);
   }
 
+  handleInput = (evt) => {
+    evt.target.style.height = (evt.target.scrollHeight) + 'px';
+    this.setState({ [evt.target.name]: evt.target.value });
+  }
+
   handleMessageChange = (evt) => {
     this.setState({ PassReasonMessage: evt.target.value });
   }
@@ -55,7 +60,7 @@ class PassMentorContent extends Component {
           <div className="modal-subtitle">
             Why do you want to pass?
           </div>
-          <form className="pass-form">
+          <form className="pass-form" id="passMentorForm">
             <label className="checkbox-container">Doesn&apos;t have a <strong>role</strong> I&apos;d like to explore
               <input
                 type="checkbox"
@@ -99,13 +104,13 @@ class PassMentorContent extends Component {
             <div className="descriptor bold passDescriptor">
               Please comment:
             </div>
-            <input
-              type="text"
+            <textarea
               name="PassReasonMessage"
               className="textInputBox passTxtBox"
-              placeholder="Tell us why this isn't a great match for you..."
+              form="passMentorForm"
               value={this.state.PassReasonMessage}
-              onChange={this.handleMessageChange}
+              onChange={this.handleInput}
+              placeholder="Tell us why this isn't a great match for you..."
               required
             />
             <div className="pass-btn-container">

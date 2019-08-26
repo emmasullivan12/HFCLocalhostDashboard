@@ -4,6 +4,12 @@ import React, { Component } from "react";
 import "../css/PassMatchContent.css";
 import "../css/General.css";
 
+
+// Format all multi-line textarea elements
+
+
+
+
 class PassMenteeContent extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +19,11 @@ class PassMenteeContent extends Component {
       messageFromServer: ''
     };
     this.updateClassname = this.updateClassname.bind(this);
+  }
+
+  handleInput = (evt) => {
+    evt.target.style.height = (evt.target.scrollHeight) + 'px';
+    this.setState({ [evt.target.name]: evt.target.value });
   }
 
   handleMessageChange = (evt) => {
@@ -45,7 +56,7 @@ class PassMenteeContent extends Component {
           <div className="modal-subtitle">
             Why do you want to pass?
           </div>
-          <form className="pass-form">
+          <form className="pass-form" id="passMenteeForm">
             <label className="checkbox-container">Their career aspirations are <strong>not relevant</strong> to my role
               <input
                 type="checkbox"
@@ -99,13 +110,13 @@ class PassMenteeContent extends Component {
             <div className="descriptor bold passDescriptor">
               How could we better match you?
             </div>
-            <input
-              type="text"
+            <textarea
               name="PassReasonMessage"
               className="textInputBox passTxtBox"
-              placeholder="Tell us why this isn't a great match for you..."
+              form="passMenteeForm"
               value={this.state.PassReasonMessage}
-              onChange={this.handleMessageChange}
+              onChange={this.handleInput}
+              placeholder="Tell us why this isn't a great match for you..."
               required
             />
             <div className="pass-btn-container">

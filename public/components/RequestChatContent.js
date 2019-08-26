@@ -12,11 +12,12 @@ class RequestChatContent extends Component {
     super();
     this.state = {
       requestChatMessage: '',
-      messageFromServer: 'blah',
+      messageFromServer: '',
     };
   }
 
-  handleMessageChange = (evt) => {
+  handleInput = (evt) => {
+    evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ requestChatMessage: evt.target.value });
   }
 
@@ -45,13 +46,14 @@ class RequestChatContent extends Component {
           <div className="modal-title">
             Send a chat request to <span className="request-mentor-name">{this.props.mentorName}</span>
           </div>
-          <form>
-            <input
-              type="text"
+          <form id="reqMentorForm">
+            <textarea
+              name="acceptMenteeMessage"
               className="textInputBox"
-              placeholder="Type your message..."
+              form="reqMentorForm"
               value={this.state.requestChatMessage}
-              onChange={this.handleMessageChange}
+              onChange={this.handleInput}
+              placeholder="Type your message..."
               required
             />
             <div className="descriptor-br">

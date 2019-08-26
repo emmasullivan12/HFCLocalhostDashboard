@@ -14,7 +14,8 @@ class AcceptMenteeContent extends Component {
     };
   }
 
-  handleMessageChange = (evt) => {
+  handleInput = (evt) => {
+    evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ [evt.target.name]: evt.target.value });
   }
 
@@ -43,14 +44,14 @@ class AcceptMenteeContent extends Component {
           <div className="modal-title">
             Accept chat request
           </div>
-          <form>
-            <input
-              type="text"
+          <form id="acceptMenteeForm">
+            <textarea
               name="acceptMenteeMessage"
               className="textInputBox"
-              placeholder="Type your message"
+              form="acceptMenteeForm"
               value={this.state.acceptMenteeMessage}
-              onChange={this.handleMessageChange}
+              onChange={this.handleInput}
+              placeholder="Type your message..."
               required
             />
             <div className="descriptor-br">
