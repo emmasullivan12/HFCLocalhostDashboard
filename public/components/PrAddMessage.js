@@ -41,7 +41,10 @@ class PrAddMessage extends Component {
   }
 
   handleMessageChange = (evt) => {
-    this.setState({ [evt.target.name]: evt.target.value });
+    this.setState({ text: evt.target.value });
+    evt.target.style.height = '21px';
+    evt.target.style.height = (evt.target.scrollHeight) + 'px';
+    evt.target.style.overflowY = "scroll";
   }
 
   showEmojis = (e) => {
@@ -83,13 +86,14 @@ class PrAddMessage extends Component {
                 </div>
               )}
               <div className="input-flexContainer">
-                <form className="input-box-container">
-                  <input
+                <form className="textInput-container" id="chatMessageForm">
+                  <textarea
                     className="input-box"
-                    placeholder="Type message..."
-                    type="text"
+                    form="chatMessageForm"
                     value={this.state.text}
                     onChange={this.handleMessageChange}
+                    placeholder="Type message..."
+                    autofocus
                   />
                 </form>
                 <Modal {...FileUploadModalProps}>
