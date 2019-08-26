@@ -30,21 +30,6 @@
   // flex-direction: column;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  right: 12px;
-  top:0;
-  bottom:0;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(63,63,63, 0.45);
-  border-radius: 8px;
-}
-
 .userMenu {
   font-size: 1.25rem;
   font-weight: 900;

@@ -42,7 +42,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(63,63,635, 0.45);
+  background: rgb(63,63,635,0.45);
 }
 
 .mainContainer{

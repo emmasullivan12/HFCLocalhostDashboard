@@ -105,8 +105,87 @@ class Loading extends Component{
 }
 
 class Dashboard extends Component{
+  constructor(props) {
+    super(props);
+    this.scrollBarRef = React.createRef();
+    this.state = {
+      scrollerBeingDragged: false,
+      contentPosition: 0,
+    }
+    this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
+    this.createScroller = this.createScroller.bind(this);
+  }
+
+  componentDidMount() {
+    this.createScroller();
+  }
+
+  moveScroller = (e) => {
+    var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
+    var scrollContainer = document.querySelector('.c-scrollbar');
+    var scroller = document.querySelector('.scroller');
+
+    var scrollPercentage = e.target.scrollTop / scrollContentWrapper.scrollHeight;
+    let topPosition;
+
+    topPosition = scrollPercentage * (scrollContainer.offsetHeight - 5); // 5px arbitrary offset so scroll bar doesn't move too far beyond content wrapper bounding box
+    scroller.style.top = topPosition + 'px';
+  }
+
+  startDrag = (e) => {
+    var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
+    var normalizedPosition = e.pageY;
+    this.setState({contentPosition: scrollContentWrapper.scrollTop});
+    this.setState({scrollerBeingDragged: true});
+  }
+
+  stopDrag = (e) => {
+    this.setState({scrollerBeingDragged: false});
+  }
+
+  scrollBarScroll = (e) => {
+    var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
+    var scrollContainer = document.querySelector('.c-scrollbar');
+    var normalizedPosition = e.pageY;
+    if (this.state.scrollerBeingDragged === true) {
+      var mouseDifferential = e.pageY - normalizedPosition;
+      var scrollEquivalent = mouseDifferential * (scrollContentWrapper.scrollHeight / scrollContainer.offsetHeight);
+      scrollContentWrapper.scrollTop = this.state.contentPosition + scrollEquivalent;
+    }
+  }
+
+  calculateScrollerHeight() {
+    var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
+    var scrollContainer = document.querySelector('.c-scrollbar');
+    var visibleRatio = scrollContainer.offsetHeight / scrollContentWrapper.scrollHeight;
+    return visibleRatio * scrollContainer.offsetHeight;
+  }
+
+  createScroller() {
+    var scrollContainer = document.querySelector('.c-scrollbar');
+    var scroller = document.querySelector('.scroller');
+
+    // determine how big scroller should be based on content
+    var scrollerHeight = this.calculateScrollerHeight();
+
+    if (scrollerHeight / scrollContainer.offsetHeight < 1){
+      // *If there is a need to have scroll bar based on content size
+      scroller.style.height = scrollerHeight + 'px';
+
+      // show scroll path divot
+      scroller.classList.add('showScroll');
+      scrollContainer.classList.add('showScroll');
+
+      // attach related draggable listeners
+      scroller.addEventListener('mousedown', this.startDrag);
+      window.addEventListener('mouseup', this.stopDrag);
+      window.addEventListener('mousemove', this.scrollBarScroll);
+    }
+  }
+
   render(){
     const userRole = this.props.userRole;
+    const {moveScroller} = this;
     return(
       <BrowserRouter>
         <div className="clientUI">
@@ -118,18 +197,24 @@ class Dashboard extends Component{
                 </button>
               </span>
               <MenuModal >{MenuModalContent}</MenuModal>
-              <div className="scrollArea">
-                <div className="menuContainer">
-                  <MainMenu />
-                  <div className="menuBreak"/>
-                  <ChatMenu chats={DUMMY_CHAT_LIST} />
-                  <div className="menuBreak"/>
-                  <div className="prLogoArea">
-                    <div className="prLogoContainer">
-                      <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />
+              <div className="c-scrollbar">
+                <div className="c-scrollbar__hider scrollArea" ref={this.scrollBarRef} onScroll={moveScroller}>
+                  <div className="menuContainer">
+                    <MainMenu />
+                    <div className="menuBreak"/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} />
+                    <div className="menuBreak"/>
+                    <div className="prLogoArea">
+                      <div className="prLogoContainer">
+                        <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div className="scroller"/>
+              {/*  <div className="c-scrollbar__track">
+                  <div className="c-scrollbar__bar"/>
+                </div> */}
               </div>
             </div>
             <div className="clientWindowContainer">
