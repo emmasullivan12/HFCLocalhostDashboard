@@ -1,4 +1,4 @@
-// Dex last merged this code on 10th August 2019
+// Dex last merged this code on 27th August 2019
 
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
@@ -48,7 +48,7 @@ class RequestChatContent extends Component {
           </div>
           <form id="reqMentorForm">
             <textarea
-              name="acceptMenteeMessage"
+              name="requestChatMessage"
               className="textInputBox"
               form="reqMentorForm"
               value={this.state.requestChatMessage}

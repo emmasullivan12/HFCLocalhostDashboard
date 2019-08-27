@@ -1,4 +1,4 @@
-// Dex last merged this code on 10th Aug 2019
+// Dex last merged this code on 27th Aug 2019
 
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
@@ -43,7 +43,7 @@ class PrAddMessage extends Component {
   handleMessageChange = (evt) => {
     this.setState({ text: evt.target.value });
     var msgInsights = document.getElementById('msgInsights-bar-right');
-    console.log(evt.target.value.length);
+
     if (evt.target.value.length > 0) {
       msgInsights.classList.add("show");
     } else {
