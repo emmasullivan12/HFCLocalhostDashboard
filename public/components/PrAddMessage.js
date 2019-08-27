@@ -43,7 +43,8 @@ class PrAddMessage extends Component {
   handleMessageChange = (evt) => {
     this.setState({ text: evt.target.value });
     var msgInsights = document.getElementById('msgInsights-bar-right');
-    if (this.state.text.length > 0) {
+    console.log(evt.target.value.length);
+    if (evt.target.value.length > 0) {
       msgInsights.classList.add("show");
     } else {
       msgInsights.classList.remove("show");
@@ -123,10 +124,10 @@ class PrAddMessage extends Component {
                     form="chatMessageForm"
                     value={this.state.text}
                     onChange={this.handleMessageChange}
+                    onSubmit={this.handleMessageSubmit}
                     placeholder="Type message..."
                     autoFocus
                   />
-                  <button type="button" onClick={this.handleMessageSubmit}>change to bold</button>
                 </form>
                 <Modal {...FileUploadModalProps}>
                   <FileUploadContent/>
