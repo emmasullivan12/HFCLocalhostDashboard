@@ -42,9 +42,39 @@ class PrAddMessage extends Component {
 
   handleMessageChange = (evt) => {
     this.setState({ text: evt.target.value });
+    var msgInsights = document.getElementById('msgInsights-bar-right');
+    if (this.state.text.length > 0) {
+      msgInsights.classList.add("show");
+    } else {
+      msgInsights.classList.remove("show");
+    }
     evt.target.style.height = '20px';
     evt.target.style.height = (evt.target.scrollHeight) + 'px';
     evt.target.style.overflowY = "scroll";
+  }
+
+  convertBoldItalics = () => {
+    var txt = document.getElementById('txtInput-box').value
+    var result = document.getElementById('isTyping')
+    {txt.match(/\*([\w\s\d]+)?\*/g) != null && (
+      txt.match(/\*([\w\s\d]+)?\*/g).forEach(function(match) {
+        var str = match.substring(1, match.length - 1);
+        txt = txt.replace(match, "<b>" + str + "</b>");
+      })
+    )}
+    {txt.match(/_([\w\s\d]+)?_/g) != null && (
+      txt.match(/_([\w\s\d]+)?_/g).forEach(function(match) {
+        var str = match.substring(1, match.length - 1);
+        txt = txt.replace(match, "<i>" + str + "</i>");
+      })
+    )}
+    result.innerHTML = txt;
+  }
+
+  handleMessageSubmit = (evt) => {
+    this.convertBoldItalics();
+    var msgInsights = document.getElementById('msgInsights-bar-right');
+    msgInsights.classList.remove("show");
   }
 
   showEmojis = (e) => {
@@ -89,12 +119,14 @@ class PrAddMessage extends Component {
                 <form className="textInput-container" id="chatMessageForm">
                   <textarea
                     className="input-box"
+                    id="txtInput-box"
                     form="chatMessageForm"
                     value={this.state.text}
                     onChange={this.handleMessageChange}
                     placeholder="Type message..."
                     autoFocus
                   />
+                  <button type="button" onClick={this.handleMessageSubmit}>change to bold</button>
                 </form>
                 <Modal {...FileUploadModalProps}>
                   <FileUploadContent/>
@@ -105,11 +137,11 @@ class PrAddMessage extends Component {
               </div>
             </div>
             <div className="msgInsights-bar">
-              <div className="msgInsights-bar-left">
+              <div className="msgInsights-bar-left" id="isTyping">
                 Dexter is Typing...
               </div>
-              <div className="msgInsights-bar-right">
-                <b>*bold*</b>
+              <div className="msgInsights-bar-right" id="msgInsights-bar-right">
+                <b>*bold*</b> <i>_italics_</i>
               </div>
             </div>
           </div>

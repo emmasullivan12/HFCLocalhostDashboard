@@ -107,18 +107,16 @@ class Loading extends Component{
 class Dashboard extends Component{
   constructor(props) {
     super(props);
+    this.state = {
+      scrollerBeingDragged: false,
+      normalizedPosition: 0,
+      contentPosition: 0
+    }
     this.scrollBarRef = React.createRef();
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
   }
 
-  /*  this.state = {
-      contentPosition: 0,
-      scrollerBeingDragged: false,
-    }
-
-  }
-*/
   componentDidMount() {
     this.createScroller();
     window.addEventListener('resize', this.createScroller);
@@ -140,29 +138,36 @@ class Dashboard extends Component{
     scroller.style.transform = 'translateY(' + topPosition + 'px)';
   }
 
-/*
   startDrag = (e) => {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
-    var normalizedPosition = e.pageY;
-    this.setState({contentPosition: scrollContentWrapper.scrollTop});
-    this.setState({scrollerBeingDragged: true});
+  //  contentPosition =  scrollContentWrapper.scrollTop;
+    this.setState({
+      scrollerBeingDragged: true,
+      normalizedPosition: e.pageY,
+      contentPosition: scrollContentWrapper.scrollTop
+    });
+    window.addEventListener('mouseup', this.stopDrag);
+    window.addEventListener('mousemove', this.scrollBarScroll);
   }
 
   stopDrag = (e) => {
-    this.setState({scrollerBeingDragged: false});
+    this.setState({
+      scrollerBeingDragged: false,
+    });
+    window.removeEventListener('mouseup', this.stopDrag);
+    window.removeEventListener('mousemove', this.scrollBarScroll);
   }
 
   scrollBarScroll = (e) => {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
-    var normalizedPosition = e.pageY;
     if (this.state.scrollerBeingDragged === true) {
-      var mouseDifferential = e.pageY - normalizedPosition;
+      var mouseDifferential = e.pageY - this.state.normalizedPosition;
       var scrollEquivalent = mouseDifferential * (scrollContentWrapper.scrollHeight / scrollContainer.offsetHeight);
       scrollContentWrapper.scrollTop = this.state.contentPosition + scrollEquivalent;
     }
   }
-*/
+
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
@@ -186,17 +191,16 @@ class Dashboard extends Component{
       scrollTrack.style.visibility = 'visible';
 
       // attach related draggable listeners
-  //    scroller.addEventListener('mousedown', this.startDrag);
-  //    window.addEventListener('mouseup', this.stopDrag);
-  //    window.addEventListener('mousemove', this.scrollBarScroll);
+      scroller.addEventListener('mousedown', this.startDrag);
     } else {
       scrollTrack.style.visibility = 'hidden';
+      scroller.removeEventListener('mousedown', this.startDrag);
     }
   }
 
   render(){
     const userRole = this.props.userRole;
-    const {moveScroller} = this;
+    const {moveScroller, startDrag} = this;
     return(
       <BrowserRouter>
         <div className="clientUI">
