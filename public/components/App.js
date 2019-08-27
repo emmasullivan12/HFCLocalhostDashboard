@@ -108,30 +108,39 @@ class Dashboard extends Component{
   constructor(props) {
     super(props);
     this.scrollBarRef = React.createRef();
-    this.state = {
-      scrollerBeingDragged: false,
-      contentPosition: 0,
-    }
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
   }
 
+  /*  this.state = {
+      contentPosition: 0,
+      scrollerBeingDragged: false,
+    }
+
+  }
+*/
   componentDidMount() {
     this.createScroller();
+    window.addEventListener('resize', this.createScroller);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.createScroller);
   }
 
   moveScroller = (e) => {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
-    var scroller = document.querySelector('.scroller');
+    var scroller = document.querySelector('.c-scrollbar__bar');
 
     var scrollPercentage = e.target.scrollTop / scrollContentWrapper.scrollHeight;
     let topPosition;
 
     topPosition = scrollPercentage * (scrollContainer.offsetHeight - 5); // 5px arbitrary offset so scroll bar doesn't move too far beyond content wrapper bounding box
-    scroller.style.top = topPosition + 'px';
+    scroller.style.transform = 'translateY(' + topPosition + 'px)';
   }
 
+/*
   startDrag = (e) => {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var normalizedPosition = e.pageY;
@@ -153,33 +162,40 @@ class Dashboard extends Component{
       scrollContentWrapper.scrollTop = this.state.contentPosition + scrollEquivalent;
     }
   }
-
+*/
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
+    console.log('scrollContainer.offsetHeight:' + scrollContainer.offsetHeight);
+    console.log('scrollContentWrapper.scrollHeight:' + scrollContentWrapper.scrollHeight);
     var visibleRatio = scrollContainer.offsetHeight / scrollContentWrapper.scrollHeight;
+    console.log('calculateScrollerHeight:' + (visibleRatio * scrollContainer.offsetHeight));
     return visibleRatio * scrollContainer.offsetHeight;
   }
 
   createScroller() {
     var scrollContainer = document.querySelector('.c-scrollbar');
-    var scroller = document.querySelector('.scroller');
+    var scrollTrack = document.querySelector('.c-scrollbar__track');
+    var scroller = document.querySelector('.c-scrollbar__bar');
 
     // determine how big scroller should be based on content
-    var scrollerHeight = this.calculateScrollerHeight();
-
+    var scrollerHeight =  this.calculateScrollerHeight();
+    console.log('scrollerHeight:' + scrollerHeight);
+    console.log('scrollContainer.offsetHeight:' + scrollContainer.offsetHeight);
+    console.log(scrollerHeight / scrollContainer.offsetHeight < 1);
     if (scrollerHeight / scrollContainer.offsetHeight < 1){
       // *If there is a need to have scroll bar based on content size
       scroller.style.height = scrollerHeight + 'px';
 
       // show scroll path divot
-      scroller.classList.add('showScroll');
-      scrollContainer.classList.add('showScroll');
+      scrollTrack.style.visibility = 'visible';
 
       // attach related draggable listeners
-      scroller.addEventListener('mousedown', this.startDrag);
-      window.addEventListener('mouseup', this.stopDrag);
-      window.addEventListener('mousemove', this.scrollBarScroll);
+  //    scroller.addEventListener('mousedown', this.startDrag);
+  //    window.addEventListener('mouseup', this.stopDrag);
+  //    window.addEventListener('mousemove', this.scrollBarScroll);
+    } else {
+      scrollTrack.style.visibility = 'hidden';
     }
   }
 
@@ -198,7 +214,7 @@ class Dashboard extends Component{
               </span>
               <MenuModal >{MenuModalContent}</MenuModal>
               <div className="c-scrollbar">
-                <div className="c-scrollbar__hider scrollArea" ref={this.scrollBarRef} onScroll={moveScroller}>
+                <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
                     <MainMenu />
                     <div className="menuBreak"/>
@@ -211,10 +227,10 @@ class Dashboard extends Component{
                     </div>
                   </div>
                 </div>
-                <div className="scroller"/>
-              {/*  <div className="c-scrollbar__track">
+              {/*  <div className="scroller"/>*/}
+                <div className="c-scrollbar__track">
                   <div className="c-scrollbar__bar"/>
-                </div> */}
+                </div>
               </div>
             </div>
             <div className="clientWindowContainer">

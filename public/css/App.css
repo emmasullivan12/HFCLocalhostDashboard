@@ -293,7 +293,7 @@ svg:not(:root) {
   height: 100%;
   transform: translateZ(0);
 }
-
+/*
 .c-scrollbar.showScroll::after {
   position: absolute;
   content: '';
@@ -302,8 +302,8 @@ svg:not(:root) {
   bottom: 4px;
   width: 8px;
   background: transparent;
-}
-
+}*/
+/*
 .scroller.showScroll {
   z-index: 5;
   cursor: pointer;
@@ -318,18 +318,18 @@ svg:not(:root) {
   -ms-transition: top .08s;
   -o-transition: top .08s;
   transition: top .08s;
-}
-/*
+}*/
+
 .c-scrollbar__track{
   position: absolute;
   right: 4px;
   top: 4px;
   bottom: 4px;
   width: 8px;
-  background-color: transparent;
+  background-color: red;
+  visibility: hidden;
 }
-*/
-/*
+
 .c-scrollbar__track:before {
   content: "";
   position: absolute;
@@ -341,17 +341,17 @@ svg:not(:root) {
 }
 
 .c-scrollbar__bar{
-  /*position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 50px;
   border-radius: 4px;
-  background: rgba(255,255,255,0.45);
-  opacity: 0;
+  background: blue;
   cursor: pointer;
   outline: none;
   z-index: 5;
-  will-change: transform;*/
+  will-change: transform;
 /*
   z-index: 5;
   cursor: pointer;
@@ -366,10 +366,10 @@ svg:not(:root) {
   -moz-transition: top .08s;
   -ms-transition: top .08s;
   -o-transition: top .08s;
-  transition: top .08s;
-}*/
-
-/*.scrollArea{
+  transition: top .08s; */
+}
+/*
+.scrollArea{
   position: relative;
   /*overflow-y: scroll;*/
 /*  overflow-y: visible;
@@ -385,10 +385,11 @@ svg:not(:root) {
   /*visibility: visible;*/
   /*padding-right: calc(100vw - 100%);*/
 /*}
+*/
 
-.scrollArea:hover{
+/*
+.c-scrollbar__hider:hover ~ .c-scrollbar__track{
   visibility: visible;
-  overflow-y: visible;
 }
 */
 ::-webkit-scrollbar {
