@@ -166,10 +166,7 @@ class Dashboard extends Component{
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
-    console.log('scrollContainer.offsetHeight:' + scrollContainer.offsetHeight);
-    console.log('scrollContentWrapper.scrollHeight:' + scrollContentWrapper.scrollHeight);
     var visibleRatio = scrollContainer.offsetHeight / scrollContentWrapper.scrollHeight;
-    console.log('calculateScrollerHeight:' + (visibleRatio * scrollContainer.offsetHeight));
     return visibleRatio * scrollContainer.offsetHeight;
   }
 
@@ -180,9 +177,7 @@ class Dashboard extends Component{
 
     // determine how big scroller should be based on content
     var scrollerHeight =  this.calculateScrollerHeight();
-    console.log('scrollerHeight:' + scrollerHeight);
-    console.log('scrollContainer.offsetHeight:' + scrollContainer.offsetHeight);
-    console.log(scrollerHeight / scrollContainer.offsetHeight < 1);
+
     if (scrollerHeight / scrollContainer.offsetHeight < 1){
       // *If there is a need to have scroll bar based on content size
       scroller.style.height = scrollerHeight + 'px';
