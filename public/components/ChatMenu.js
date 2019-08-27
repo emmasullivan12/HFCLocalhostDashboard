@@ -76,13 +76,15 @@ class ChatMenu extends Component {
             </div>
           </NavLink>
           {chats}
-          <div className="chatMenuItem"><NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink></div>
-            <FullPageModal {...MentorProfileModalProps}>
-              <MentorProfileContent />
-            </FullPageModal>
-            <FullPageModal {...MenteeProfileModalProps}>
-              <MenteeProfileContent />
-            </FullPageModal>
+          <div className="chatMenuItem">
+            <NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink>
+          </div>
+          <FullPageModal {...MentorProfileModalProps}>
+            <MentorProfileContent />
+          </FullPageModal>
+          <FullPageModal {...MenteeProfileModalProps}>
+            <MenteeProfileContent />
+          </FullPageModal>
         </div>
       </React.Fragment>
     );

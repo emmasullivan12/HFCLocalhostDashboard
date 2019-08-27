@@ -72,8 +72,18 @@ class PrAddMessage extends Component {
     result.innerHTML = txt;
   }
 
-  handleMessageSubmit = (evt) => {
+  onEnterPress = (e) => {
+    if(e.keyCode === 13 && e.shiftKey === false) {
+      e.preventDefault();
+      this.handleMessageSubmit();
+    } else {
+      return;
+    }
+  }
+
+  handleMessageSubmit = () => {
     this.convertBoldItalics();
+    alert('message submitted!');
     var msgInsights = document.getElementById('msgInsights-bar-right');
     msgInsights.classList.remove("show");
   }
@@ -124,7 +134,7 @@ class PrAddMessage extends Component {
                     form="chatMessageForm"
                     value={this.state.text}
                     onChange={this.handleMessageChange}
-                    onSubmit={this.handleMessageSubmit}
+                    onKeyDown={this.onEnterPress}
                     placeholder="Type message..."
                     autoFocus
                   />
