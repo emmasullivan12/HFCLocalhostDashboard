@@ -27,6 +27,12 @@ function ButtonContent(props) {
           {text}
         </div>
       );
+    case 'addPrDM':
+      return (
+        <div>
+          &#10010;
+        </div>
+      );
     case 'RequestChat':
       return (
         <div type="button" className="RequestChatBtnContainer">

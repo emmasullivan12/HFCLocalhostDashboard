@@ -23,9 +23,9 @@ import MentorHomePage from './MentorHomePage.js';
 import MenuModal from "./MenuModal";
 import NotFound from "./NotFound";
 import ProspelaBot from "./ProspelaBot";
+import ProspelaDashboard from "./ProspelaDashboard";
 import ProtectedChats from "./ProtectedChats";
 import ProtectedRoute from "./ProtectedRoute";
-import SubmitMatch from './PrSubmitMatches.js';
 import Teams from "./Teams";
 import Todo from "./Todo";
 import TypeformSignUp from "./TypeformSignUp";
@@ -211,13 +211,13 @@ class Dashboard extends Component{
                   <i className="fa fa-bell" />
                 </button>
               </span>
-              <MenuModal >{MenuModalContent}</MenuModal>
+              <MenuModal>{MenuModalContent}</MenuModal>
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
                     <MainMenu />
                     <div className="menuBreak"/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} />
+                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages'/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea">
                       <div className="prLogoContainer">
@@ -244,7 +244,6 @@ class Dashboard extends Component{
                 <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
                 <ProtectedRoute path="/mentorhomepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
-                <Route path="/prospelahomepage" component={SubmitMatch}/>
                 <ProtectedChats chats={DUMMY_CHAT_LIST} />
                 <Route component={NotFound}/>
               </Switch>
@@ -261,7 +260,7 @@ class App extends Component{
     this.props.fetchData();
   } */
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
+    const userRole = 'prospela' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -278,6 +277,7 @@ class App extends Component{
           {{
             ['mentee']: <MenteeSteps userRole={userRole}/>,
             ['mentor']: <MentorSteps userRole={userRole}/>,
+            ['prospela']: <ProspelaDashboard userRole={userRole}/>,
           }[userRole]}
         </div>
       );

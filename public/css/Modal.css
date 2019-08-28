@@ -36,6 +36,20 @@
   outline: 0;
   /*box-shadow: 0 0 4px currentColor;*/
 }
+.ModalOpenBtn-addPrDM{
+  margin-left: 49px;
+  background: rgb(242,242,242,.55);
+  border: 1px solid #3f3f3f;
+  border-radius: 50%;
+  width: 30px;
+  padding: .5em;
+  color: #3f3f3f;
+}
+.ModalOpenBtn-addPrDM:hover{
+  background: rgb(242,242,242.85);
+  color: #3f3f3f;
+}
+
 .ModalOpenBtn-settings{
   background: none!important;
   color: #3f3f3f!important;
