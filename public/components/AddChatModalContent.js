@@ -6,6 +6,19 @@ import React, { Component } from "react";
 class AddChatModalContent extends Component {
   constructor() {
     super();
+    this.state = {
+      FirstPrMessage: '',
+      UserID: ''
+    }
+  }
+
+  handleInput = (evt) => {
+    evt.target.style.height = (evt.target.scrollHeight) + 'px';
+    this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
+  }
+
+  handleMessageChange = (evt) => {
+    this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
   }
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
@@ -32,9 +45,29 @@ class AddChatModalContent extends Component {
         <div className="modal-title">
           Start a new Direct Message chat
         </div>
-        <button type="button" className="Submit-btn" >
-          Send Notification
-        </button>
+        <form id="newDMForm">
+          <div>User ID</div>
+          <input
+            type="text"
+            name="UserID"
+            className="textInputBox small"
+            placeholder="Enter UserID to send a message to..."
+            value={this.state.UserID}
+            onChange={this.handleMessageChange}
+          />
+          <textarea
+            name="FirstPrMessage"
+            className="textInputBox"
+            form="newDMForm"
+            value={this.state.FirstPrMessage}
+            onChange={this.handleInput}
+            placeholder="Send message to user..."
+            required
+          />
+          <button type="submit" className="Submit-btn">
+            Send Message
+          </button>
+        </form>
       </React.Fragment>
     );
   }

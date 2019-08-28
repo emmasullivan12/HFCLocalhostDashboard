@@ -6,6 +6,19 @@ import React, { Component } from "react";
 class SendNotifModalContent extends Component {
   constructor() {
     super();
+    this.state = {
+      PrNotifMessage: '',
+      UserID: '',
+    };
+  }
+
+  handleInput = (evt) => {
+    evt.target.style.height = (evt.target.scrollHeight) + 'px';
+    this.setState({ PrNotifMessage: evt.target.value });
+  }
+
+  handleMessageChange = (evt) => {
+    this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
   }
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
@@ -27,14 +40,74 @@ class SendNotifModalContent extends Component {
 
   render() {
 //    const isEnabled = this.canBeSubmitted();
+    const { PrNotifMessage, UserID } = this.state;
     return (
       <React.Fragment>
         <div className="modal-title">
           Send Notification to users
         </div>
-        <button type="button" className="Submit-btn" >
-          Send Notification
-        </button>
+        <form id="sendNotifForm">
+          <div className="notifToggleContainer">
+            <span className="notifToggleTxt">Send to All Users?</span>
+            <label className="switch" htmlFor="sendAll" >
+              <input
+                type="checkbox"
+                id="sendAll"
+                name="SendAll"
+                value="t"
+                onClick={this.handleMessageChange}
+              />
+              <span className="slider round"/>
+            </label>
+          </div>
+          <div className="notifToggleContainer">
+            <span className="notifToggleTxt">Send to Mentees only?</span>
+            <label className="switch" htmlFor="sendMentees" >
+              <input
+                type="checkbox"
+                id="sendMentees"
+                name="sendMentees"
+                value="t"
+                onClick={this.handleMessageChange}
+              />
+              <span className="slider round"/>
+            </label>
+          </div>
+          <div className="notifToggleContainer">
+            <span className="notifToggleTxt">Send to Mentors only?</span>
+            <label className="switch" htmlFor="sendMentors" >
+              <input
+                type="checkbox"
+                id="sendMentors"
+                name="sendMentors"
+                value="t"
+                onClick={this.handleMessageChange}
+              />
+              <span className="slider round"/>
+            </label>
+          </div>
+          <div>Or Type User IDs</div>
+          <input
+            type="text"
+            name="UserIDs"
+            className="textInputBox small"
+            placeholder="Enter UserIDs..."
+            value={this.state.UserID}
+            onChange={this.handleMessageChange}
+          />
+          <textarea
+            name="NewNotif"
+            className="textInputBox"
+            form="sendNotifForm"
+            value={this.state.PrNotifMessage}
+            onChange={this.handleInput}
+            placeholder="Type message to send as notification..."
+            required
+          />
+          <button type="submit" className="Submit-btn">
+            Send Notification
+          </button>
+        </form>
       </React.Fragment>
     );
   }
