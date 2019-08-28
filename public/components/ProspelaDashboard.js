@@ -155,11 +155,11 @@ class ProspelaDashboard extends Component{
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
-                    <Modal {...SendNotifModalProps}>
-                      <SendNotifModalContent />
-                    </Modal>
                     <Modal {...SubmitMatchModalProps}>
                       <SubmitMatchContent />
+                    </Modal>
+                    <Modal {...SendNotifModalProps}>
+                      <SendNotifModalContent />
                     </Modal>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs'/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor'/>

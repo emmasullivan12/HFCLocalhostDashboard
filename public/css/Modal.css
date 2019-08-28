@@ -44,6 +44,7 @@
   width: 30px;
   padding: .5em;
   color: #3f3f3f;
+  font-size: 12px;
 }
 .ModalOpenBtn-addPrDM:hover{
   background: rgb(242,242,242.85);
