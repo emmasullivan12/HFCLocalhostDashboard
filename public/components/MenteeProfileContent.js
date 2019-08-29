@@ -44,6 +44,7 @@ class MenteeProfileContent extends Component {
       currRole: 'Head of Marketing',
       currCo: 'Pladis',
       currTraining: 'Apprenticeship learning plumbing',
+      currTrainingProvider: 'NextGenSkills Academy',
       subjects: 'Business, Art, English Literature & Language',
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
       hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
@@ -254,7 +255,7 @@ class MenteeProfileContent extends Component {
                         Currently in Training
                       </h2>
                       <p>
-                        {mentee.currTraining}
+                        {mentee.currTraining} with <strong>{mentee.currTrainingProvider}</strong>
                       </p>
                     </React.Fragment>
                   )}
