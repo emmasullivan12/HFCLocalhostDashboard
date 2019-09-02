@@ -19,6 +19,13 @@ var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
 var email = document.getElementById("email");
 var emailText = document.getElementById("emailText");
+
+var workEmailTooltip = document.getElementById("workEmailTooltip");
+var codeTooltip = document.getElementById("codeTooltip");
+var noCodeTooltip = document.getElementById("noCodeTooltip");
+var codeInput = document.getElementById("codeInput");
+var inviteCode = document.getElementById("inviteCode");
+
 var dob = document.getElementById("dob");
 var dDOB = document.getElementById("dDOB");
 var mDOB = document.getElementById("mDOB");
@@ -48,6 +55,7 @@ tncText.style.display = 'none';
 getStartedbtn.style.display = 'none';
 emailPrompt.style.visibility = 'hidden';
 dobPrompt.style.visibility = 'hidden';
+codeInput.style.display = 'none';
 
 menteeradio.checked = false;
 mentorradio.checked = false;
@@ -84,8 +92,9 @@ menteebtn.addEventListener('click', function(event) {
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   getStartedbtn.style.display = 'block';
+  workEmailTooltip.style.display = 'none';
   emailText.innerHTML = 'School or University Email';
-  emailPrompt.innerHTML = 'This must be your school or university email address';
+  emailPrompt.innerHTML = 'You\'ll need to verify your school or university email address';
   fname.focus();
   for(let input of formControlStd) {
     input.classList.remove('error');
@@ -105,6 +114,7 @@ mentorbtn.addEventListener('click', function(event) {
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   getStartedbtn.style.display = 'block';
+  workEmailTooltip.style.display = 'block';
   emailText.innerHTML = 'Work Email';
   emailPrompt.innerHTML = 'This must be your work email address';
   fname.focus();
@@ -113,8 +123,26 @@ mentorbtn.addEventListener('click', function(event) {
   }
 });
 
+codeTooltip.addEventListener('click', function(event) {
+  emailText.innerHTML = 'Personal Email';
+  codeTooltip.style.display = 'none';
+  codeInput.style.display = 'block';
+  inviteCode.focus();
+});
+
+noCodeTooltip.addEventListener('click', function(event) {
+  emailText.innerHTML = 'School or University Email';
+  codeTooltip.style.display = 'block';
+  codeTooltip.innerHTML = 'Don\'t have a School email?';
+  codeInput.style.display = 'none';
+});
+
 email.addEventListener('focus', function(event) {
-  emailPrompt.style.visibility = 'visible';
+  if (emailText.innerHTML === 'School or University Email') {
+    emailPrompt.style.visibility = 'visible';
+  } else {
+    emailPrompt.style.visibility = 'hidden';
+  }
 },true);
 
 email.addEventListener('blur', function(event) {
@@ -290,6 +318,14 @@ yDOB.addEventListener('blur', function(event) {
 })
 
 // Check validity onblur (i.e. click away)
+inviteCode.addEventListener('input', function(event) {
+  if(inviteCode.checkValidity()) {
+    inviteCode.classList.remove('error');
+  } else {
+    inviteCode.classList.add('error');
+  }
+})
+
 pwd.addEventListener('blur', function(event) {
   if(pwd.checkValidity() && this.value.length > 7 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#£$%^&*()_+]/) != -1) {
    pwd.classList.remove('error');
