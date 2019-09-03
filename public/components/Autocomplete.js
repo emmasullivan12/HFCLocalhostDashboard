@@ -46,7 +46,6 @@ class Autocomplete extends React.Component {
       showSuggestions: false,
       userInput: e.currentTarget.innerText
     });
-
   };
 
   onKeyDown = e => {
@@ -83,7 +82,7 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onKeyDown } = this;
-    const { name, placeholder } = this.props;
+    const { name, placeholder, handleBlur } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
 
     let suggestionsListComponent;
@@ -126,6 +125,7 @@ class Autocomplete extends React.Component {
           onChange={onChange}
           onKeyDown={onKeyDown}
           value={userInput}
+          onBlur={handleBlur}
           required
         />
         {suggestionsListComponent}

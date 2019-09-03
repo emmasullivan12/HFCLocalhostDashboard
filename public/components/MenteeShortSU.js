@@ -19,6 +19,15 @@ class MenteeShortSU extends React.Component {
     this.handleCountryChange = this.handleCountryChange.bind(this);
     this.handleStateChange = this.handleStateChange.bind(this);
     this.handleCityChange = this.handleCityChange.bind(this);
+    this.onBlur = this.onBlur.bind(this);
+  }
+
+  onBlur(e) {
+    if(e.target.checkValidity()) {
+      e.target.classList.remove('error');
+    } else {
+      e.target.classList.add('error');
+    }
   }
 
   handleCountryChange(userInput) {
@@ -29,8 +38,8 @@ class MenteeShortSU extends React.Component {
     this.setState({ state: userInput });
   }
 
-  handleCityChange(userInput) {
-    this.setState({ city: userInput });
+  handleCityChange(e) {
+    this.setState({ city: e.target.value });
   }
 
   canBeSubmitted() {
@@ -77,6 +86,7 @@ class MenteeShortSU extends React.Component {
                     name='country'
                     placeholder='Country'
                     handleChange={this.handleCountryChange}
+                    handleBlur={this.onBlur}
                   />
                 </div>
               </div>
@@ -89,6 +99,7 @@ class MenteeShortSU extends React.Component {
                       name='stateprovince'
                       placeholder='State'
                       handleChange={this.handleStateChange}
+                      handleBlur={this.onBlur}
                     />
                   </div>
                 </div>
@@ -102,6 +113,7 @@ class MenteeShortSU extends React.Component {
                       name='stateprovince'
                       placeholder='Province'
                       handleChange={this.handleStateChange}
+                      handleBlur={this.onBlur}
                     />
                   </div>
                 </div>
@@ -109,7 +121,16 @@ class MenteeShortSU extends React.Component {
               {country != '' && (
                 <div className="form-group" id="userCity">
                   <label className="descriptor alignLeft">Which City?</label>
-                  <input type="text" name="city" onChange={this.handleCityChange} className="form-control-std" required  />
+                  <input
+                    type="text"
+                    name="city"
+                    value={this.state.city}
+                    onChange={this.handleCityChange}
+                    onBlur={this.onBlur}
+                    className="form-control-std"
+                    placeholder="City"
+                    required
+                  />
                 </div>
               )}
               <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth">
