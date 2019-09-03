@@ -333,6 +333,7 @@ input[type=text]:disabled{
   transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
   box-shadow: none;
   height: auto;
+  cursor: text;
 }
 
 .form-control-std.prompt,

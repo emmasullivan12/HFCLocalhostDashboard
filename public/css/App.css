@@ -432,9 +432,11 @@ svg:not(:root) {
 
 .prLogoArea{
   color: #fff;
-  height: 100%;
   position: relative;
   min-height: 61px;
+}
+.prLogoArea.notLogin{
+  height: 100%;
 }
 
 .prLogoContainer{

@@ -159,6 +159,38 @@ hr{
 .right{
   right: 0!important;
 }
+.autocompleter{
+  position: relative;
+  display: block;
+}
+.autocompleter-items{
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocompleter-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocompleter-items div:hover {
+  background-color: #e9e9e9;
+}
+.autocompleter-active {
+  background-color: #351c75 !important;
+  color: #ffffff;
+}
+.no-suggestions{
+  color: #adadad;
+  margin-top: -1.2rem;
+  margin-bottom: 1rem;
+}
 .button-unstyled {
   background: none;
   border: 0;

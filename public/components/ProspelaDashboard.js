@@ -165,7 +165,7 @@ class ProspelaDashboard extends Component{
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor'/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor'/>
                     <div className="menuBreak"/>
-                    <div className="prLogoArea">
+                    <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
                         <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />
                       </div>

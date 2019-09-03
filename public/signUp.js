@@ -94,6 +94,7 @@ menteebtn.addEventListener('click', function(event) {
   getStartedbtn.style.display = 'block';
   workEmailTooltip.style.display = 'none';
   emailText.innerHTML = 'School or University Email';
+  codeTooltip.style.display = 'block';
   emailPrompt.innerHTML = 'You\'ll need to verify your school or university email address';
   fname.focus();
   for(let input of formControlStd) {
@@ -116,6 +117,7 @@ mentorbtn.addEventListener('click', function(event) {
   getStartedbtn.style.display = 'block';
   workEmailTooltip.style.display = 'block';
   emailText.innerHTML = 'Work Email';
+  codeTooltip.style.display = 'none';
   emailPrompt.innerHTML = 'This must be your work email address';
   fname.focus();
   for(let input of formControlStd) {
