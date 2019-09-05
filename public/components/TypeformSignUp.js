@@ -13,15 +13,36 @@ import TypeformEmbedded from './TypeformEmbedded.js';
 
 //This includes props and title to be passed to TypeformTemplate if Student is signing up
 const MenteeShortSUProps = {
-  subheader: 'blah blah',
-  title: 'First step'
+  subheader: 'Personalise your Prospela expertience',
+  title: 'Let\'s get you set up'
 }
 
 //This includes props and title to be passed to TypeformTemplate if Student is signing up
 const MenteeTypeformSignUpProps = {
-  subheader: 'We will be able to match you with better career advice and insights if we know where you are trying to get to!',
-  title: 'Set up your profile'
+  subheader: 'By understanding where you\'re starting from and where you\'re trying to get to, we\'re better able to support you!',
+  title: 'Help us help you'
 }
+
+// This includes all content to appear below TypeformTemplate title for the Student Sign Up flow
+const MenteeTypeformSignUpContent = ({tflink, step}) => (
+  <div>
+    <div className='progress-circles-container'>
+      <div className={step===1 ? "thisStep" : "nxtStep"}>
+        <i className="fas fa-circle" />
+      </div>
+      <div className={step===2 ? "thisStep" : "nxtStep"}>
+        <i className="fas fa-circle" />
+      </div>
+    </div>
+    <div className='embedded-typeform'>
+      <TypeformEmbedded
+        tflink={tflink}
+      />
+    </div>
+  </div>
+)
+
+
 
 //This includes props and title to be passed to TypeformTemplate if Student is signing up
 const MentorTypeformSignUpProps = {
@@ -62,11 +83,12 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 class TypeformSignUp extends Component {
   render() {
     const userRole = 'mentee';
-    const step = 1;
+    const step = 2;
     const fname = 'Emma';
     const id = '12345';
     const mentortflink = step===1 ? 'https://prospela.typeform.com/to/miX7CZ?fname='+fname+'&uid='+id : 'https://prospela.typeform.com/to/s5nFr9?fname='+fname+'&uid='+id;
     const menteetflink = 'https://prospela.typeform.com/to/cOQ1a0?fname='+fname+'&uid='+id;
+    const menteetftraininglink = 'https://prospela.typeform.com/to/miX7CZ?fname='+fname+'&uid='+id;
 
     if(userRole === 'mentee') {
       switch (step) {
@@ -85,7 +107,7 @@ class TypeformSignUp extends Component {
             <React.Fragment>
               {fname && (
                 <TypeformTemplate {...MenteeTypeformSignUpProps}>
-                  <MenteeShortSU tflink={menteetflink} step={step}/>
+                  <MenteeTypeformSignUpContent tflink={menteetflink} step={step}/>
                 </TypeformTemplate>
               )}
             </React.Fragment>

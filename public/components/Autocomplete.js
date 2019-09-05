@@ -21,7 +21,7 @@ class Autocomplete extends React.Component {
   }
 
   onChange = (e) => {
-    const { suggestions } = this.props;
+    const { suggestions, handleChange } = this.props;
     const userInput = e.currentTarget.value;
 
     const filteredSuggestions = suggestions.filter(
@@ -35,17 +35,18 @@ class Autocomplete extends React.Component {
       showSuggestions: true,
       userInput: e.currentTarget.value
     });
+    handleChange(e.currentTarget.value);
   };
 
   onClick = (e) => {
     const { handleChange, name } = this.props;
-    handleChange(e.currentTarget.innerText);
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: [],
       showSuggestions: false,
       userInput: e.currentTarget.innerText
     });
+    handleChange(e.currentTarget.innerText);
   };
 
   onKeyDown = e => {
@@ -54,13 +55,12 @@ class Autocomplete extends React.Component {
 
     // User pressed the enter key
     if (e.keyCode === 13 || e.keyCode === 9) {
-      handleChange(filteredSuggestions[activeSuggestion]);
       this.setState({
         activeSuggestion: 0,
         showSuggestions: false,
         userInput: filteredSuggestions[activeSuggestion]
       });
-//      this.props.handleChange(this.state.userInput);
+      handleChange(filteredSuggestions[activeSuggestion]);
     }
     // User pressed the up arrow
     else if (e.keyCode === 38) {
@@ -82,7 +82,7 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onKeyDown } = this;
-    const { name, placeholder, handleBlur } = this.props;
+    const { name, placeholder, handleBlur, handleChange } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
 
     let suggestionsListComponent;
