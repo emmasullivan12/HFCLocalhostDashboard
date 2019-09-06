@@ -12,6 +12,7 @@ class VerifyEmail extends React.Component {
       isContainerOpen: false,
       verificationCode: ''
     }
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.toggleContainer = this.toggleContainer.bind(this);
   }
@@ -40,7 +41,7 @@ class VerifyEmail extends React.Component {
   canBeSubmitted() {
     const { verificationCode } = this.state;
     return (
-      verificationCode.length > 0
+      verificationCode.length = 6
     );
   }
 
@@ -57,7 +58,7 @@ class VerifyEmail extends React.Component {
       <React.Fragment>
         <div className="mainContainer">
           <div className="prLogoArea col-12">
-            <div className="prLogoContainer col-12">
+            <div className="prLogoLoginContainer col-12">
               <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
             </div>
           </div>
@@ -65,8 +66,8 @@ class VerifyEmail extends React.Component {
             <div className="col-7 col-s-12 centerContainer">
               <div className="loginContainer">
                 <div>
-                  <h1>Hey USER NAME!</h1>
-                  <div className="header-descriptor">We&#39;ve sent an email verification code to USER EMAIL. Please enter it below. Note: code only <span className="bold">valid for the next 24 hours.</span></div>
+                  <h1>Verify your email</h1>
+                  <div className="header-descriptor">We&#39;ve sent a verification code to USER EMAIL. Please enter it below. Note: code only <span className="bold">valid for the next 24 hours.</span></div>
                 </div>
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group">

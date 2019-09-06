@@ -76,9 +76,6 @@ class MenteeShortSU extends React.Component {
             <div className={(step==2) ? "thisStep" : "nxtStep"}>
               <i className="fas fa-circle"  />
             </div>
-            <div className={step===3 ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle" />
-            </div>
           </div>
           <div className='embedded-typeform'>
             <form autoComplete="off">

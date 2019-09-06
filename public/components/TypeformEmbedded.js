@@ -5,8 +5,6 @@ import ReactDOM from "react-dom";
 //import { connect } from "react-redux";
 import * as typeformEmbed from '@typeform/embed';
 import "../css/TypeformEmbedded.css";
-//import PropTypes from "prop-types";
-//import TypeformTemplate from './TypeformTemplate.js';
 
 // Launches Embedded Typeform for User to complete initial sign up
 class TypeformEmbedded extends Component {

@@ -238,9 +238,9 @@ class Dashboard extends Component{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
                   ['mentor']: <Redirect exact from="/" to="/mentorhomepage" />,
                 }[userRole]}
-                <ProtectedRoute path="/latest-advice" roleAllowed="mentor" userRole="mentor" component={LatestAdvice}/>,
-                <ProtectedRoute path="/mentee-profile" roleAllowed="mentor" userRole="mentor" component={LgdInUsrProfile}/>,
-                <ProtectedRoute path="/to-do-list" roleAllowed="mentor" userRole="mentor" component={Todo}/>,
+                <ProtectedRoute path="/latest-advice" roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,
+                <ProtectedRoute path="/mentee-profile" roleAllowed="mentee" userRole="mentee" component={LgdInUsrProfile}/>,
+                <ProtectedRoute path="/to-do-list" roleAllowed="mentee" userRole="mentee" component={Todo}/>,
                 <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
                 <ProtectedRoute path="/mentorhomepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
@@ -302,15 +302,15 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 1;
+  const step = 2;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
           return (
             <BrowserRouter>
               <Switch>
-                <Redirect exact from="/" to="/mentee-signup" />
-                <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
+                <Redirect exact from="/" to="/verify-email" />
+                <Route path="/verify-email" component={VerifyEmail} step={step} />
               </Switch>
             </BrowserRouter>
           );
@@ -318,8 +318,8 @@ function MenteeSteps({userRole}) {
           return (
             <BrowserRouter>
               <Switch>
-                <Redirect exact from="/" to="/verify-email" />
-                <Route path="/verify-email" component={VerifyEmail} step={step} />
+                <Redirect exact from="/" to="/mentee-signup" />
+                <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
               </Switch>
             </BrowserRouter>
           );

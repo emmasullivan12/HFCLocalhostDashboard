@@ -6,11 +6,14 @@
   display: inline-block;
 }
 
+.typeformContainer.fullWidth{
+  max-width: 918px;
+}
 .typeform-content{
   padding-bottom: 40px;
 }
 
 .embedded-typeform{
-  height: 400px;
+  height: 500px;
   width: 100%;
 }

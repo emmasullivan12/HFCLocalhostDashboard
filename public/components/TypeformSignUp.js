@@ -7,23 +7,25 @@ import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
 import "../css/TypeformSignUp.css";
 import MenteeShortSU from './MenteeShortSU.js';
-import TypeformTemplate from './TypeformTemplate.js';
+import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 
 
-//This includes props and title to be passed to TypeformTemplate if Student is signing up
+//This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
 const MenteeShortSUProps = {
   subheader: 'Personalise your Prospela expertience',
-  title: 'Let\'s get you set up'
+  title: 'Let\'s get you set up',
+  fullWidth: false
 }
 
-//This includes props and title to be passed to TypeformTemplate if Student is signing up
+//This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
 const MenteeTypeformSignUpProps = {
   subheader: 'By understanding where you\'re starting from and where you\'re trying to get to, we\'re better able to support you!',
-  title: 'Help us help you'
+  title: 'Help us help you',
+  fullWidth: true
 }
 
-// This includes all content to appear below TypeformTemplate title for the Student Sign Up flow
+// This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
 const MenteeTypeformSignUpContent = ({tflink, step}) => (
   <div>
     <div className='progress-circles-container'>
@@ -44,19 +46,19 @@ const MenteeTypeformSignUpContent = ({tflink, step}) => (
 
 
 
-//This includes props and title to be passed to TypeformTemplate if Student is signing up
+//This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
 const MentorTypeformSignUpProps = {
   subheader: 'This will help us better match you to students based on your skills, interests, interests and personality … which makes for more successful mentoring!',
   title: 'Set up your profile'
 }
 
-//This includes props and title to be passed to TypeformTemplate if Student is signing up
+//This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
 const MentorTypeformTrainingProps = {
   subheader: 'This will take about 10 min and will help you feel at home being an E-mentor with Prospela. Training is mandatory before we introduce you with your student matches.',
   title: 'Complete your Training'
 }
 
-// This includes all content to appear below TypeformTemplate title for the Student Sign Up flow
+// This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
 const MentorTypeformSignUpContent = ({tflink, step}) => (
   <div>
     <div className='progress-circles-container'>
@@ -86,9 +88,9 @@ class TypeformSignUp extends Component {
     const step = 2;
     const fname = 'Emma';
     const id = '12345';
+    const country = 'needs to be linked to data user submits within MenteeShortSU';
     const mentortflink = step===1 ? 'https://prospela.typeform.com/to/miX7CZ?fname='+fname+'&uid='+id : 'https://prospela.typeform.com/to/s5nFr9?fname='+fname+'&uid='+id;
-    const menteetflink = 'https://prospela.typeform.com/to/cOQ1a0?fname='+fname+'&uid='+id;
-    const menteetftraininglink = 'https://prospela.typeform.com/to/miX7CZ?fname='+fname+'&uid='+id;
+    const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?country='+country+'&fname='+fname+'&uid='+id; // actual typeform to be used
 
     if(userRole === 'mentee') {
       switch (step) {
@@ -96,9 +98,9 @@ class TypeformSignUp extends Component {
           return (
             <React.Fragment>
               {fname && (
-                <TypeformTemplate {...MenteeShortSUProps}>
+                <SignUpScreenTemplate {...MenteeShortSUProps}>
                   <MenteeShortSU step={step}/>
-                </TypeformTemplate>
+                </SignUpScreenTemplate>
               )}
             </React.Fragment>
           );
@@ -106,9 +108,9 @@ class TypeformSignUp extends Component {
           return (
             <React.Fragment>
               {fname && (
-                <TypeformTemplate {...MenteeTypeformSignUpProps}>
+                <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
                   <MenteeTypeformSignUpContent tflink={menteetflink} step={step}/>
-                </TypeformTemplate>
+                </SignUpScreenTemplate>
               )}
             </React.Fragment>
           );
@@ -119,9 +121,9 @@ class TypeformSignUp extends Component {
           return (
             <React.Fragment>
               {fname && (
-                <TypeformTemplate {...MentorTypeformSignUpProps}>
+                <SignUpScreenTemplate {...MentorTypeformSignUpProps}>
           	      <MentorTypeformSignUpContent tflink={mentortflink} step={step}/>
-                </TypeformTemplate>
+                </SignUpScreenTemplate>
               )}
     	      </React.Fragment>
           );
@@ -129,9 +131,9 @@ class TypeformSignUp extends Component {
           return (
             <React.Fragment>
               {fname && (
-                <TypeformTemplate {...MentorTypeformTrainingProps}>
+                <SignUpScreenTemplate {...MentorTypeformTrainingProps}>
           	      <MentorTypeformSignUpContent tflink={mentortflink} step={step}/>
-                </TypeformTemplate>
+                </SignUpScreenTemplate>
               )}
     	      </React.Fragment>
           );
