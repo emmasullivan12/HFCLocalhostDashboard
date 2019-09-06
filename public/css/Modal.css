@@ -36,6 +36,23 @@
   outline: 0;
   /*box-shadow: 0 0 4px currentColor;*/
 }
+.ModalOpenBtn-joinProg,
+.ModalOpenBtn-joinProgSml{
+  background: none;
+  font-weight: 400;
+  padding: 0;
+}
+.ModalOpenBtn-joinProgSml{
+  height: 16px;
+}
+.ModalOpenBtn-joinProg:hover,
+.ModalOpenBtn-joinProgSml:hover{
+  background: none;
+}
+.menuCTAContainer{
+  display: inline-block;
+}
+
 .ModalOpenBtn-addPrDM{
   margin-left: 49px;
   background: rgb(242,242,242,.55);
@@ -266,6 +283,7 @@
   text-align: center;
   padding-bottom: 10px;
 }
+
 .modal-preTitle{
   font-size: 16px;
   line-height: 1.36363636;
@@ -282,6 +300,11 @@
   margin-bottom: 2.5rem;
   width: 100%;
   text-align: center;
+}
+.modalDesc{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #676767;
 }
 
 .modal-close {

@@ -44,7 +44,24 @@
   display: inline-block;
   transition: all 50ms ease-out 0s;
 }
+.addContainer{
+  border-radius: 50%;
+  background-color: rgb(242,242,242,.3);
+  border: 1px solid #3f3f3f;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  margin-top: -.9rem;
+  right: 56px;
+  padding-top: 4px;
+  font-size: 16px;
+}
 
+.addContainer:hover{
+  background-color: rgb(242,242,242,.45);
+}
 .RequestChatBtnContainer{
   height: 30px;
   text-decoration: none;
@@ -67,4 +84,9 @@
 .RequestChatBtnTxt{
   text-decoration: none;
   font-size: 14px;
+}
+
+.menuCTA{
+  color: #58d2bb;
+  font-size: 16px;
 }

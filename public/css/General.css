@@ -159,6 +159,9 @@ hr{
 .right{
   right: 0!important;
 }
+.leftRightPad{
+  padding: 0 2rem 0 2rem;
+}
 .autocompleter{
   position: relative;
   display: block;

@@ -16,6 +16,7 @@ import {
 import { usersFetchData } from "../actions/Users";*/
 
 import ChatMenu from "./ChatMenu";
+import GroupsMenu from "./GroupsMenu";
 import LatestAdvice from "./LatestAdvice";
 import LgdInUsrProfile from "./LgdInUsrProfile";
 import MainMenu from "./MainMenu";
@@ -200,6 +201,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
+    const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     return(
       <BrowserRouter>
@@ -219,7 +221,9 @@ class Dashboard extends Component{
                     <div className="menuBreak"/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages'/>
                     <div className="menuBreak"/>
-                    <div className="prLogoArea">
+                    <GroupsMenu groups={DUMMY_GROUP_LIST}/>
+                    <div className="menuBreak"/>
+                    <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
                         <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />
                       </div>
@@ -302,7 +306,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 2;
+  const step = 3;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:
@@ -371,6 +375,10 @@ const DUMMY_CHAT_LIST = [
   {chatID: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
   {chatID: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
   {chatID: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
+];
+
+const DUMMY_GROUP_LIST = [
+//  {groupID: '10000', name: 'Villiers', status: 'active'},
 ];
 
 /* App.propTypes = {

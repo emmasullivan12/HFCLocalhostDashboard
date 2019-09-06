@@ -70,7 +70,7 @@ class ChatMenu extends Component {
         />
       );
     });
-    
+
     return (
       <React.Fragment>
         <div className="chatMenu">

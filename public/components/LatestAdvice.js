@@ -4,26 +4,49 @@ import React, { Component } from "react";
 import MentorMatches from './MentorMatches';
 import TypeformFullSignUp from './TypeformFullSignUp.js';
 
-// Depending on whether user has completed Full Sign Up, will display option to complete full sign up or Mentor Matches
-const didFullSignUp = true;
-
 // Will prompt user to complete full sign up (if not completed), otherwise  shows MentorMatch status (i.e. waiting or matches made)
 class LatestAdvice extends Component {
   render() {
-    if(this.props.didFullSignUp === false) {
-      return (
-        <div>
-          <p>Complete Full Sign up</p>
-          <TypeformFullSignUp userRole="mentor"/>
-        </div>
-      );
-    } else {
-      return (
-        <React.Fragment>
-          <MentorMatches />
-          <TypeformFullSignUp userRole="mentor"/>
-        </React.Fragment>
-      );
+    const fullsustep = 2;
+    switch (fullsustep) {
+      case 1:
+        return (
+          <React.Fragment>
+            <div className="page-header">
+              <div className="page-detail-container">
+                <div className="page-title overflow-ellipsis">
+                  Latest Advice
+                </div>
+                <div className="page-detail overflow-ellipsis">
+                  Explore the latest from your Prospela network, based on your skills & interests
+                </div>
+              </div>
+            </div>
+            <div className="page-panel">
+              <TypeformFullSignUp />
+            </div>
+          </React.Fragment>
+        );
+      case 2:
+        return (
+          <React.Fragment>
+            <div className="page-header">
+              <div className="page-detail-container">
+                <div className="page-title overflow-ellipsis">
+                  Latest Advice
+                </div>
+                <div className="page-detail overflow-ellipsis">
+                  Explore the latest from your Prospela network, based on your skills & interests
+                </div>
+              </div>
+            </div>
+            <div className="page-panel">
+              <MentorMatches />
+            </div>
+          </React.Fragment>
+        );
+      default:
+        return <div> Loading </div>
     }
   }
 }
