@@ -167,7 +167,7 @@ class MentorCardMatches extends Component {
     // const className = this.props.PassedOnMentor ? 'UserCardContainer-passed' : 'UserCardContainer';
     return (
       // <div className={className}>
-      <div className="mentor-matches-container">
+      <div className="landingCTA-container">
         <div className="choose-match-title-container">
           <div className="exclamation-icon-container">
             <i className="fas fa-exclamation-circle" />

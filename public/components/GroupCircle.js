@@ -17,9 +17,9 @@ class GroupCircle extends Component {
     const {group} = this.props;
     var string = group.name;
     return (
-      <button type="button" className="groupBtn">
-        <span>{string.charAt(0)}</span>
-      </button>
+        <button type="button" className="groupBtn">
+          <span>{string.charAt(0)}</span>
+        </button>
     );
   }
 }

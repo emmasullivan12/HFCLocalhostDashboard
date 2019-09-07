@@ -1,11 +1,18 @@
 // Dex last merged this code on 10th Aug 2019
 
 import React, { Component } from "react";
-import { MentorCardWaiting, MentorCardMatches } from "./MentorCard";
+
+import MentorMatches from './MentorMatches';
+import TypeformFullSignUp from './TypeformFullSignUp.js';
 import GroupCircle from "./GroupCircle";
+
+import "../css/General.css";
+import "../css/HomepageCTAContainer.css";
 
 class HomepageCTAContainer extends Component {
   render() {
+    const fullsustep = 'shortSUonly'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
+    const matchstatus = 'isMatched';
     const groups = [];
 
     this.props.groups.forEach((group) => {
@@ -20,9 +27,9 @@ class HomepageCTAContainer extends Component {
 
     return (
       // <div className={className}>
-      <div className="mentor-matches-container">
+      <div className="landingCTA-container">
         <div className="membershipsContainer">
-          <div>My Memberships</div>
+          <div className="memberships-title">My Memberships</div>
           <div className="groupsContainer">
             {groups}
             <button type="button" className="groupBtn">
@@ -30,6 +37,32 @@ class HomepageCTAContainer extends Component {
             </button>
           </div>
         </div>
+        {fullsustep === 'shortSUonly' && (
+          <section>
+            <div className="landingCTABtnContainer">
+              <button type="button" className="Submit-btn landingCTA hollow">
+                Invite a teacher
+              </button>
+              <button type="button" className="Submit-btn landingCTA">
+                Join a live Programme +
+              </button>
+            </div>
+            <div className="contentBox">
+              box goes here
+            </div>
+          </section>
+        )}
+        {fullsustep === 'joinedProg' && (
+          <TypeformFullSignUp />
+        )}
+        {fullsustep === 'fullSUtf' && (
+          'Training CTA goes here'
+        )}
+        {fullsustep === 'fullSUTrain' && (
+          <MentorMatches />
+        )}
+
+
         <div className="choose-match-title-container">
           <div className="exclamation-icon-container">
             <i className="fas fa-exclamation-circle" />

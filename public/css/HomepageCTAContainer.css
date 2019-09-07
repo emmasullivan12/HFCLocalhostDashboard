@@ -1,0 +1,67 @@
+.membershipsContainer{
+  padding-top: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.memberships-title{
+  color: #534ed6;
+  font-weight: 400;
+  margin-bottom: .25rem;
+
+}
+.groupsContainer button:nth-of-type(5n+0){
+  border: 1px solid #ad8105;
+  color: #fff;
+  background-color: #eeb000; /*orange*/
+}
+.groupsContainer button:nth-of-type(5n+1){
+  border: 1px solid #666698;
+  color: #fff;
+  background-color: #9999e7; /*purple*/
+}
+.groupsContainer button:nth-of-type(5n+2) {
+  border: 1px solid #3f9686;
+  color: #fff;
+  background-color: #58d2bb; /*green*/
+}
+.groupsContainer button:nth-of-type(5n+3) {
+  border: 1px solid #bd293e;
+  color: #fff;
+  background-color: #fb6c81; /*red*/
+}
+.groupsContainer button:nth-of-type(5n+4) {
+  border: 1px solid #5498a2;
+  color: #fff;
+  background-color: #65c8d8; /*blue*/
+}
+
+.groupsContainer button:nth-of-type(5n+0):hover{
+  background-color: #dea401; /*orange*/
+}
+.groupsContainer button:nth-of-type(5n+1):hover{
+  background-color: #8484c5; /*purple*/
+}
+.groupsContainer button:nth-of-type(5n+2):hover {
+  background-color: #3ec1a8; /*green*/
+}
+.groupsContainer button:nth-of-type(5n+3):hover {
+  background-color: #e65066; /*red*/
+}
+.groupsContainer button:nth-of-type(5n+4):hover {
+  background-color: #4bb1c1; /*blue*/
+}
+
+.groupsContainer button:nth-last-of-type(1){
+  color: #919191;
+  background: rgba(0,0,0,.07);
+  border: 1px solid #e4e2e2;
+}
+
+.groupsContainer button:nth-last-of-type(1):hover{
+  background-color: rgba(212,212,212,0.2095);
+}
+
+.landingCTABtnContainer{
+  text-align: right;
+  margin-bottom: .5rem;
+}
