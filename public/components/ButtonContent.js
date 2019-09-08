@@ -21,6 +21,10 @@ function ButtonContent(props) {
           <i className="fas fa-paperclip" />
         </div>
       );
+    case 'joinProgLrg':
+      return (
+        <div>Join a live Programme +</div>
+      )
     case 'joinProg':
       return (
         <div className="chatMenuItem menuCTA">

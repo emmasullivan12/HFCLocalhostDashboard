@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import "../css/Modal.css";
+import "../css/Emoji.css";
 import "../css/General.css";
 
 class JoinProgrammeModalContent extends Component {
@@ -41,10 +42,12 @@ class JoinProgrammeModalContent extends Component {
       return (
         <React.Fragment>
           <div className="modal-title">
-            Join a live Programme
+            <span className="emoji-icon sparkle-emoji titleLeft" />
+            <span>Join a live Programme</span>
+            <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <p className="modalDesc alignCenter">
-            To join a programme enter an invite code from your teacher or Prospela Partner below (or click the link if they&#39;ve sent you an invite email):
+            Enter an invite code from your teacher or Prospela Partner below (or click the link if they&#39;ve sent you an invite email):
           </p>
           <form className="leftRightPad">
             <input

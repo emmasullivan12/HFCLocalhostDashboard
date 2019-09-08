@@ -66,6 +66,20 @@
   background-position: 15.6863% 74.5098%;
   margin-top: -4px;
 }
+.sparkle-emoji{
+  background-position: 96.0784% 94.1176%;
+}
+.sparkle-emoji.titleLeft{
+  float: none;
+  height: 24px;
+  width: 24px;
+}
+.sparkle-emoji.titleRight{
+  float: none;
+  height: 24px;
+  width: 24px;
+  margin-left: .5rem;
+}
 .suitcase-emoji{
   background-position: 49.0196% 76.4706%;
 }

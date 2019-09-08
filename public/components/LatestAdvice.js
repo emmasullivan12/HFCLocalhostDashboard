@@ -6,10 +6,10 @@ import HomepageCTAContainer from './HomepageCTAContainer.js';
 
 const DUMMY_GROUP_LIST = [
   {groupID: '10000', name: 'Villiers', status: 'active'},
-  {groupID: '10000', name: 'AVFX', status: 'active'},
-  {groupID: '10000', name: 'EY', status: 'active'},
-  {groupID: '10000', name: 'GE', status: 'active'},
-  {groupID: '10000', name: 'Pladis', status: 'active'},
+  {groupID: '10001', name: 'AVFX', status: 'active'},
+  {groupID: '10002', name: 'EY', status: 'active'},
+  {groupID: '10003', name: 'GE', status: 'active'},
+  {groupID: '10004', name: 'Pladis', status: 'active'},
 ];
 
 // Will prompt user to complete full sign up (if not completed), otherwise  shows MentorMatch status (i.e. waiting or matches made)

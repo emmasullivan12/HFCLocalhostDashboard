@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import MentorMatches from './MentorMatches';
 import TypeformFullSignUp from './TypeformFullSignUp.js';
 import GroupCircle from "./GroupCircle";
+import JoinProgPrompt from "./JoinProgPrompt";
 
 import "../css/General.css";
 import "../css/HomepageCTAContainer.css";
@@ -38,19 +39,7 @@ class HomepageCTAContainer extends Component {
           </div>
         </div>
         {fullsustep === 'shortSUonly' && (
-          <section>
-            <div className="landingCTABtnContainer">
-              <button type="button" className="Submit-btn landingCTA hollow">
-                Invite a teacher
-              </button>
-              <button type="button" className="Submit-btn landingCTA">
-                Join a live Programme +
-              </button>
-            </div>
-            <div className="contentBox">
-              box goes here
-            </div>
-          </section>
+          <JoinProgPrompt />
         )}
         {fullsustep === 'joinedProg' && (
           <TypeformFullSignUp />

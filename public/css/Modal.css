@@ -36,6 +36,19 @@
   outline: 0;
   /*box-shadow: 0 0 4px currentColor;*/
 }
+
+.ModalOpenBtn-joinProgLrg{
+  background-color: #351c75;
+  min-width: 210px;
+  margin-left: .5rem;
+  font-size: 16px;
+  padding: 0;
+  height: 40px;
+}
+.ModalOpenBtn-joinProgLrg:hover{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.08);
+  background-color: #351c75;
+}
 .ModalOpenBtn-joinProg,
 .ModalOpenBtn-joinProgSml{
   background: none;
