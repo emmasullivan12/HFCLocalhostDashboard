@@ -14,13 +14,15 @@ const JoinProgrammeModalProps = {
 
 class JoinProgPrompt extends Component {
   render() {
-
+    const nonPartnerSch = true; /// check school email (or prog code if signed up with personal email) for school partnership
     return (
       <section>
         <div className="landingCTABtnContainer">
-          <button type="button" className="Submit-btn landingCTA hollow">
-            Invite a teacher
-          </button>
+          {nonPartnerSch && (
+            <button type="button" className="Submit-btn landingCTA hollow">
+              Invite a teacher
+            </button>
+          )}
           <Modal {...JoinProgrammeModalProps}>
             <JoinProgrammeModalContent />
           </Modal>

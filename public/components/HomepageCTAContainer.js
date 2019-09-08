@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 
 import MentorMatches from './MentorMatches';
-import TypeformFullSignUp from './TypeformFullSignUp.js';
+import MenteeFullSignUp from './MenteeFullSignUp.js';
 import GroupCircle from "./GroupCircle";
 import JoinProgPrompt from "./JoinProgPrompt";
 
@@ -12,7 +12,7 @@ import "../css/HomepageCTAContainer.css";
 
 class HomepageCTAContainer extends Component {
   render() {
-    const fullsustep = 'shortSUonly'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
+    const fullsustep = 'joinedProg'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
     const matchstatus = 'isMatched';
     const groups = [];
 
@@ -42,7 +42,7 @@ class HomepageCTAContainer extends Component {
           <JoinProgPrompt />
         )}
         {fullsustep === 'joinedProg' && (
-          <TypeformFullSignUp />
+          <MenteeFullSignUp />
         )}
         {fullsustep === 'fullSUtf' && (
           'Training CTA goes here'

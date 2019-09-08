@@ -7,8 +7,11 @@ import * as typeformEmbed from '@typeform/embed';
 const TypeformTrigger = ({
   text,
   usedFor
-}) => <button type="button" id="typeform-popup" className={"tfOpenBtn tfOpenBtn-" + usedFor}>{text}</button>
-
+}) => (
+  <button type="button" id="typeform-popup" className="Submit-btn">
+    {text}
+  </button>
+);
 // Launches Full page Typeform Modal to complete full sign up (will need to copy our Typeform URL below)
 class TypeformFullPage extends Component {
 
@@ -36,12 +39,12 @@ class TypeformFullPage extends Component {
   render(){
     const {triggerText, usedFor} = this.props;
     return(
-      <div>
+      <React.Fragment>
         <TypeformTrigger
           text={triggerText}
           usedFor={usedFor}
         />
-      </div>
+      </React.Fragment>
     );
   }
 }

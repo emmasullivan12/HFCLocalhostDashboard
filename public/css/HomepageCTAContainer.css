@@ -12,45 +12,44 @@
   margin-bottom: .5rem;
 }
 .groupsContainer button:nth-of-type(5n+0){
-  border: 1px solid #ad8105;
+  border: 1px solid rgb(173,129,5,.3);
   color: #fff;
-  background-color: #eeb000; /*orange*/
+  background-color: rgb(238,176,0,.5); /*orange*/
 }
 .groupsContainer button:nth-of-type(5n+1){
-  border: 1px solid #666698;
+  border: 1px solid rgb(102,102,152,.3);
   color: #fff;
-  background-color: #9999e7; /*purple*/
+  background-color: rgb(153,153,231,.5); /*purple*/
 }
 .groupsContainer button:nth-of-type(5n+2) {
-  border: 1px solid #3f9686;
+  border: 1px solidrgb(63,150,134,.3);
   color: #fff;
-  background-color: #58d2bb; /*green*/
+  background-color: rgb(88,210,187,.5); /*green*/
 }
 .groupsContainer button:nth-of-type(5n+3) {
-  border: 1px solid #bd293e;
+  border: 1px solid rgb(189,41,62,.3);
   color: #fff;
-  background-color: #fb6c81; /*red*/
+  background-color: rgb(251,108,129,.5); /*red*/
 }
 .groupsContainer button:nth-of-type(5n+4) {
-  border: 1px solid #5498a2;
+  border: 1px solid rgb(84,152,162,.3);
   color: #fff;
-  background-color: #65c8d8; /*blue*/
+  background-color: rgb(101,200,216,.5); /*blue*/
 }
-
 .groupsContainer button:nth-of-type(5n+0):hover{
-  background-color: #dea401; /*orange*/
+  background-color: rgb(238,176,0,.9); /*orange*/
 }
 .groupsContainer button:nth-of-type(5n+1):hover{
-  background-color: #8484c5; /*purple*/
+  background-color: rgb(153,153,231,.9); /*purple*/
 }
 .groupsContainer button:nth-of-type(5n+2):hover {
-  background-color: #3ec1a8; /*green*/
+  background-color: rgb(88,210,187,.9); /*green*/
 }
 .groupsContainer button:nth-of-type(5n+3):hover {
-  background-color: #e65066; /*red*/
+  background-color: rgb(251,108,129,.9); /*red*/
 }
 .groupsContainer button:nth-of-type(5n+4):hover {
-  background-color: #4bb1c1; /*blue*/
+  background-color: rgb(101,200,216,.9); /*blue*/
 }
 
 .groupsContainer button:nth-last-of-type(1){
@@ -65,31 +64,45 @@
 
 .landingCTABtnContainer{
   text-align: right;
-  margin-bottom: .5rem;
+  margin-bottom: -1rem;
 }
 .contentBox.landingCTA{
   padding-top: 3rem;
   padding-bottom: 4rem;
+  text-align: center;
+  margin-top: 1.5rem;
 }
+#typeform-popup{
+  min-width: 210px;
+}
+
 .placeholderPic{
   width: auto;
   min-height: 100px;
   max-height: 150px;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-.mentorMatches{
+.placeholderPic.mentorMatches{
   background-repeat: no-repeat;
   background-image: url('https://prospela.com/wp-content/uploads/2019/09/MentorMatches.png');
   background-size: contain;
   background-position: center;
 }
 
+.placeholderPic.completeFullSU{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteFullSignUp.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
 .landingCTATitle{
   color: #4e4ed6;
   font-weight: 600;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 17px;
   max-width: 28rem;
   line-height: 20px;
   margin-left: auto;
