@@ -22,7 +22,7 @@
   background-color: rgb(153,153,231,.5); /*purple*/
 }
 .groupsContainer button:nth-of-type(5n+2) {
-  border: 1px solidrgb(63,150,134,.3);
+  border: 1px solid rgb(63,150,134,.3);
   color: #fff;
   background-color: rgb(88,210,187,.5); /*green*/
 }
@@ -98,6 +98,15 @@
   background-position: center;
   min-height: 80px;
 }
+
+.placeholderPic.completeMenteeTrain{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteMenteeTraining.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
+
 .landingCTATitle{
   color: #4e4ed6;
   font-weight: 600;

@@ -4,6 +4,7 @@ import React, { Component } from "react";
 
 import MentorMatches from './MentorMatches';
 import MenteeFullSignUp from './MenteeFullSignUp.js';
+import MenteeTraining from './MenteeTraining.js';
 import GroupCircle from "./GroupCircle";
 import JoinProgPrompt from "./JoinProgPrompt";
 
@@ -12,7 +13,7 @@ import "../css/HomepageCTAContainer.css";
 
 class HomepageCTAContainer extends Component {
   render() {
-    const fullsustep = 'joinedProg'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
+    const fullsustep = 'fullSUtf'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
     const matchstatus = 'isMatched';
     const groups = [];
 
@@ -45,7 +46,7 @@ class HomepageCTAContainer extends Component {
           <MenteeFullSignUp />
         )}
         {fullsustep === 'fullSUtf' && (
-          'Training CTA goes here'
+          <MenteeTraining />
         )}
         {fullsustep === 'fullSUTrain' && (
           <MentorMatches />

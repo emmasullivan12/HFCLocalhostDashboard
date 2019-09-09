@@ -7,19 +7,18 @@ import * as typeformEmbed from '@typeform/embed';
 import TypeformFullPage from './TypeformFullPage.js';
 
 // This includes props to be passed to Typeform
-const MenteeFullSignUpProps = {
-  triggerText: 'Complete Full Sign Up >>',
-  usedFor: 'menteeFullSignUp'
+const MenteeTrainingProps = {
+  triggerText: 'Complete 5-min Training >>',
+  usedFor: 'menteeTrain'
 }
 
-
 // Passes Typeform links to full sign up (mentee) or training (mentors)
-class MenteeFullSignUp extends Component {
+class MenteeTraining extends Component {
   render() {
     const fname = 'Emma';
     const id = '12345'
     const nonPartnerSch = true;
-    const menteetflink = 'https://prospela.typeform.com/to/cOQ1a0?fname='+fname+'&uid='+id;
+    const menteetflink = 'https://prospela.typeform.com/to/GqAe1k?fname='+fname+'&uid='+id;
 
     return (
       <section>
@@ -31,14 +30,14 @@ class MenteeFullSignUp extends Component {
           )}
         </div>
         <div className="contentBox landingCTA">
-          <div className="placeholderPic completeFullSU"/>
+          <div className="placeholderPic completeMenteeTrain"/>
           <h2 className="landingCTATitle">
-            Complete your full sign up to join this programme
+            Complete your 5-min Prospela training
           </h2>
           <p className="landingCTADesc">
-            We need to know more about what help you need to determine the best mentor matches for you
+            Become a <strong>&#34;Certified Prospela Mentee&#34;</strong> by completing our short (and sweet) online training. It will help you feel fully equipped to make the most of your new network, incl. learning how to build a professional relationship online, and more.
           </p>
-          <TypeformFullPage tflink={menteetflink} {...MenteeFullSignUpProps}/>
+          <TypeformFullPage tflink={menteetflink} {...MenteeTrainingProps}/>
         </div>
       </section>
     );
@@ -55,4 +54,4 @@ const mapStateToProps = (state) => {
   };
 };
 */
-export default MenteeFullSignUp;
+export default MenteeTraining;
