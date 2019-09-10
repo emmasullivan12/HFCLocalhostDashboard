@@ -49,13 +49,14 @@ var numCharReq = document.getElementById("numCharReq");
 // hide on intiial page load
 names.style.display = 'none';
 emailContainer.style.display = 'none';
+codeInput.style.display = 'none';
 dob.style.display = 'none';
 pwdContainer.style.display = 'none';
 tncText.style.display = 'none';
 getStartedbtn.style.display = 'none';
 emailPrompt.style.visibility = 'hidden';
 dobPrompt.style.visibility = 'hidden';
-codeInput.style.display = 'none';
+
 
 menteeradio.checked = false;
 mentorradio.checked = false;
@@ -117,6 +118,7 @@ mentorbtn.addEventListener('click', function(event) {
   getStartedbtn.style.display = 'block';
   workEmailTooltip.style.display = 'block';
   emailText.innerHTML = 'Work Email';
+  codeInput.style.display = 'none';
   codeTooltip.style.display = 'none';
   emailPrompt.innerHTML = 'This must be your work email address';
   fname.focus();
