@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import MentorFullSignUp from './MentorFullSignUp';
 import MentorMatches from './MentorMatches';
-import "../css/MentorHomePage.css";
+import "../css/HomePage.css";
 import "../css/General.css";
 
 class MentorHomePage extends Component {

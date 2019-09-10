@@ -1,4 +1,4 @@
-// Dex last merged this code on 27th Aug 2019
+// Dex last merged this code on 10th Sept 2019
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -201,7 +201,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
-    const fullsustep = 'justjoined';
+  //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     return(
       <BrowserRouter>

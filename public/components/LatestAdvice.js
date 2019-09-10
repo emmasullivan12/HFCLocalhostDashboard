@@ -1,8 +1,9 @@
-// Dex last merged this code on 16th May 2019
+// Dex last merged this code on 10th Sept 2019
 
 import React, { Component } from "react";
 
 import HomepageCTAContainer from './HomepageCTAContainer.js';
+import "../css/HomePage.css";
 
 const DUMMY_GROUP_LIST = [
   {groupID: '10000', name: 'Villiers', status: 'active'},
