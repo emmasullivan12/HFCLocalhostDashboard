@@ -1,4 +1,4 @@
-/* Dex last merged this code on 20th Sept 2019 */
+/* Dex last merged this code on 10th Sept 2019 */
 
 .pwdByMain.villiers{
   background-image: url(https://prospela.com/wp-content/uploads/2019/09/Villiers-Landing-Page.jpg);
@@ -12,7 +12,10 @@
   height: 40px;
   width: 170px!important;
 }
-
+.sponsoredByText.villiers{
+  color: #b3a4a4;
+  margin-bottom: 1rem;
+}
 .initiativeKeyPoints.villiers{
   background-color: #132460;
 }
