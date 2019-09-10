@@ -137,29 +137,6 @@ class MentorCard extends Component {
   }
 }
 
-// Placeholder User Card for when Student still hasn't been matched
-class MentorCardWaiting extends Component {
-  render() {
-    return (
-      <div className='MentorCard-waiting'>
-        <h1 className='MentorCardName-waiting'>
-          Dexter-SAMPLE
-        </h1>
-        <h1 className='MentorCardRole-waiting'>
-          Marketing Finance-SAMPLE
-        </h1>
-        <ul>
-          <li>Skills: Excel, React, JavaScript</li>
-          <li>Interests: Football, Rugby, Bikram Yoga</li>
-          <li>Role: Biscuit Taster</li>
-          <li>Company: Pladis</li>
-          <li>Tabs or Spaces: Tabs</li>
-        </ul>
-      </div>
-    )
-  }
-}
-
 // Renders content for UserCards, incl. container which is overlaid if Student passes on matched mentor
 
 class MentorCardMatches extends Component {
@@ -242,7 +219,4 @@ const DUMMY_MENTOR_DATA = [
   }
   */
 
-export {
-  MentorCardWaiting,
-  MentorCardMatches
-}
+export default MentorCardMatches;

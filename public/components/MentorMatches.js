@@ -1,21 +1,27 @@
 // Dex last merged this code on 10th Aug 2019
 
 import React, { Component } from "react";
-import { MentorCardWaiting, MentorCardMatches } from "./MentorCard";
+import MentorCardMatches from "./MentorCard";
 
 class MentorMatches extends Component {
   render() {
-    const matchstatus = 2;
+    const matchstatus = 1;
 
     switch (matchstatus) {
       case 1:
         return (
-          <div className="waitingForMatches-container">
-            <p className="waitingForMatches-title">We&#39;ll message you when you&#39;re matched!</p>
-            <MentorCardWaiting />
-            <MentorCardWaiting />
-            <MentorCardWaiting />
-          </div>
+          <section>
+            <div className="contentBox landingCTA">
+              <div className="placeholderPic mentorMatches"/>
+              <h2 className="landingCTATitle">
+                <span className="emoji-icon stopwatch-emoji titleLeft" />
+                Your matches are on their way!
+              </h2>
+              <p className="landingCTADesc">
+                Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us. We&#39;ll notify you as soon as possible, so make sure your notification settings are switched on.
+              </p>
+            </div>
+          </section>
         );
       case 2:
         return (

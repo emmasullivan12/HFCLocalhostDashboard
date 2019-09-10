@@ -13,7 +13,7 @@ import "../css/HomepageCTAContainer.css";
 
 class HomepageCTAContainer extends Component {
   render() {
-    const fullsustep = 'fullSUtf'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
+    const fullsustep = 'fullSUTrain'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
     const matchstatus = 'isMatched';
     const groups = [];
 

@@ -90,17 +90,26 @@ header, nav, article, section, aside, footer {
 }
 
 .pwdByMain{
-  background-image: url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
-  background-image:linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
-  background-image:-moz-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
-  background-image:-webkit-linear-gradient(90deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
-  background-image:-o-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 91vh;
   overflow:hidden;
   position: relative;
+}
+.pwdByMain.avfx{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-moz-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-webkit-linear-gradient(90deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-o-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+}
+.pwdByMain.villiers{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-moz-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-webkit-linear-gradient(90deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-o-linear-gradient(0deg,#443f8e,rgba(94,19,167,0.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
 }
 @media only screen and (max-height: 650px) {
   .pwdByMain{
@@ -143,7 +152,6 @@ header, nav, article, section, aside, footer {
   position: fixed;
   border-bottom: none;
   box-shadow: 0 1px 1px rgba(0,0,0,.15);
-  background-color: #443f8e!important;
   height: 71px;
   -webkit-transition: background-color 200ms linear;
   -moz-transition: background-color 200ms linear;
@@ -238,6 +246,7 @@ header, nav, article, section, aside, footer {
 
 .initiativeBtnContainer{
   max-width: 85vw;
+  margin-bottom: 1rem;
 }
 
 .initiativeTextDetail{
@@ -251,12 +260,16 @@ header, nav, article, section, aside, footer {
 }
 .initiativeLogoContainer{
   height: 60px;
-  width: 120px!important;
+  width: 120px;
   flex-shrink: 0;
   position: relative;
   top: 0;
   left: 0;
   margin-bottom: 1rem;
+}
+.initiativeLogoContainer.villiers{
+  height: 40px;
+  width: 170px!important;
 }
 .initiativeLogoImg{
   display: block;
@@ -301,10 +314,7 @@ header, nav, article, section, aside, footer {
   color: #dcdcdcba!important;
   padding-top: .25rem;
 }
-
-.initiativeVFXbtn-student{
-  color: #443f8e;
-  background: #a8ff54;
+.initiativeBtn-student{
   border-radius: .5rem;
   cursor: pointer;
   outline: none;
@@ -322,20 +332,10 @@ header, nav, article, section, aside, footer {
   font-weight: 600;
   margin-bottom: .5rem;
 }
-.initiativeVFXbtn-student:hover{
-  background: rgba(170, 253, 96,0.9); /*#aafd60d6;*/
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
-}
-.initiativeVFXbtn-student:active{
-  background: #a8ff54;
-}
-.initiativeVFXbtn-mentor{
-  color: #fb1f92;
-  background: transparent;
+.initiativeBtn-mentor{
   border-radius: .5rem;
   cursor: pointer;
   outline: none;
-  border: 1.5px solid #fb1f92;
   height: 50px;
   min-width: 210px;
   text-align: center;
@@ -348,14 +348,6 @@ header, nav, article, section, aside, footer {
   font: inherit;
   font-weight: 600;
   margin-bottom: .5rem;
-}
-.initiativeVFXbtn-mentor:hover{
-  background-color: rgba(248, 41, 146,0.2); /*#f8299236;*/
-  color: rgba(226,226,226,0.9); /* #e2e2e2fa;*/
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
-}
-.initiativeVFXbtn-msentor:active{
-  background: transparent;
 }
 .learnMoreText{
   font-size: 1.5rem;
@@ -373,8 +365,8 @@ header, nav, article, section, aside, footer {
   padding: 1rem 5rem;
   font-size: .85rem;
   flex-basis: 50px;
-  background-color: #443f8e;
 }
+
 @media only screen and (max-width: 600px) {
   .initiativeKeyPoints{
     height: 250px;
@@ -473,12 +465,6 @@ header, nav, article, section, aside, footer {
   background-color: #fff;
   box-shadow: 0 0 10px 0 #ccc;
   position: relative;
-}
-#why-join ul.why-join-nav li.active a[id="mentee-click"]:before {
-  background-color: #a8ff54;
-}
-#why-join ul.why-join-nav li.active a[id="mentor-click"]:before {
-  background-color: #fb1f92;
 }
 #why-join ul.why-join-nav li.active a:before {
   position: absolute;
@@ -600,14 +586,6 @@ header, nav, article, section, aside, footer {
   .bottomSignUpDisplay{
     padding: 0 2.5rem;
   }
-}
-
-.joinSteps{
-  background-image: url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image:linear-gradient(0deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image:-moz-linear-gradient(0deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image:-webkit-linear-gradient(90deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image:-o-linear-gradient(0deg,rgba(68, 63, 142, 0.8),rgba(68, 63, 142, 0.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
 }
 
 #stepsTitle{
@@ -741,24 +719,7 @@ header, nav, article, section, aside, footer {
   top: 56px;
   left: 30px;
 }
-#quotes li.quote-box:nth-child(1) {
-  border-color: #fb1f92;
-}
-#quotes li.quote-box:nth-child(1):before {
-  color: #fb1f92;
-}
-#quotes li.quote-box:nth-child(2) {
-  border-color: #443f8e;
-}
-#quotes li.quote-box:nth-child(2):before {
-  color: #443f8e;
-}
-#quotes li.quote-box:nth-child(3) {
-  border-color: #79feed;
-}
-#quotes li.quote-box:nth-child(3):before {
-  color: #79feed;
-}
+
 #quotes li.quote-box:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -816,11 +777,6 @@ header, nav, article, section, aside, footer {
 }
 .bottomSignUpImg{
   max-height: 200px;
-}
-.bottomSignUp{
-  background-image: url(https://prospela.com/wp-content/uploads/2019/07/AVFX_Wallpaper_1080.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #footer{
