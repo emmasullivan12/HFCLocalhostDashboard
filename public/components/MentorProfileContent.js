@@ -1,4 +1,4 @@
-// Dex last merged this code on 27th August 2019
+// Dex last merged this code on 12th Sept 2019
 
 import React, { Component } from "react";
 import {
@@ -152,7 +152,7 @@ class MentorProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
-    const isPicSet = true;
+    const isPicSet = false;
 
     return (
       <React.Fragment>
