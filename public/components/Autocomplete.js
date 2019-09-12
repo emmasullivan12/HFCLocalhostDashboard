@@ -126,6 +126,9 @@ class Autocomplete extends React.Component {
           onKeyDown={onKeyDown}
           value={userInput}
           onBlur={handleBlur}
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="off"
           required
         />
         {suggestionsListComponent}

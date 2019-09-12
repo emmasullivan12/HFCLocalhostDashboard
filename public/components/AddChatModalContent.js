@@ -54,6 +54,9 @@ class AddChatModalContent extends Component {
             placeholder="Enter UserID to send a message to..."
             value={this.state.UserID}
             onChange={this.handleMessageChange}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
           />
           <textarea
             name="FirstPrMessage"
@@ -62,6 +65,9 @@ class AddChatModalContent extends Component {
             value={this.state.FirstPrMessage}
             onChange={this.handleInput}
             placeholder="Send message to user..."
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
             required
           />
           <button type="submit" className="Submit-btn">

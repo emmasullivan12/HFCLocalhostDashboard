@@ -218,6 +218,9 @@ class SettingsContent extends Component {
                           placeholder={formalEmail}
                           value={formalEmail}
                           onChange={this.handleChange}
+                          autoComplete="off"
+                          autoCorrect="off"
+                          spellCheck="off"
                         />
                         )
                       }
@@ -241,6 +244,9 @@ class SettingsContent extends Component {
                           placeholder={personalEmail}
                           value={personalEmail}
                           onChange={this.handleChange}
+                          autoComplete="off"
+                          autoCorrect="off"
+                          spellCheck="off"
                         />
                         )
                       }
@@ -270,6 +276,9 @@ class SettingsContent extends Component {
                           placeholder={phoneNo}
                           value={phoneNo}
                           onChange={this.handleChange}
+                          autoComplete="off"
+                          autoCorrect="off"
+                          spellCheck="off"
                         />
                         )
                       }

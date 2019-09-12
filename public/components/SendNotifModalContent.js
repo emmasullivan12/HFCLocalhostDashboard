@@ -94,6 +94,9 @@ class SendNotifModalContent extends Component {
             placeholder="Enter UserIDs..."
             value={this.state.UserID}
             onChange={this.handleMessageChange}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
           />
           <textarea
             name="NewNotif"
@@ -102,6 +105,9 @@ class SendNotifModalContent extends Component {
             value={this.state.PrNotifMessage}
             onChange={this.handleInput}
             placeholder="Type message to send as notification..."
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
             required
           />
           <button type="submit" className="Submit-btn">

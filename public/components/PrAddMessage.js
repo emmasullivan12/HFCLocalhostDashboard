@@ -136,6 +136,9 @@ class PrAddMessage extends Component {
                     onChange={this.handleMessageChange}
                     onKeyDown={this.onEnterPress}
                     placeholder="Type message..."
+                    autoComplete="off"
+                    autoCorrect="off"
+                    spellCheck="off"
                     autoFocus
                   />
                 </form>

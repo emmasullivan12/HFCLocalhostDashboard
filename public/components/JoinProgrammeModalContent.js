@@ -93,6 +93,9 @@ class JoinProgrammeModalContent extends Component {
               required
               minLength="6"
               maxLength="6"
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
             />
             {isError && (
               <div className="redText">

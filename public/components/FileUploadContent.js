@@ -53,6 +53,9 @@ class FileUploadContent extends Component {
             placeholder="Type your description..."
             value={this.state.fileUploadDescription}
             onChange={this.handleDescriptionChange}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
           />
           { selectedFiles && (
             <div className="fileNamesContainer">

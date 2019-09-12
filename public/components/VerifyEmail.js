@@ -83,6 +83,9 @@ class VerifyEmail extends React.Component {
                       autoFocus
                       minLength="6"
                       maxLength="6"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      spellCheck="off"
                     />
                   </div>
                   <button type="submit" disabled={!isEnabled} className="btn-general button-unstyled" id="emailverif-btn">

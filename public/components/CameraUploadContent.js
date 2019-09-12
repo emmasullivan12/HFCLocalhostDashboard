@@ -23,12 +23,18 @@ class CameraUploadContent extends Component {
               name="cameraUploadName"
               className="textInputBox inputTitle"
               placeholder="Type picture name..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
             />
             <input
               type="text"
               name="cameraUploadDescription"
               className="textInputBox"
               placeholder="Type your message..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
             />
             <button type="submit" disabled={!isEnabled} className="Submit-btn uploadPicBtn" id="saveButton">Upload photo</button>
           </form>

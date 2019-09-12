@@ -117,6 +117,9 @@ class PassMenteeContent extends Component {
               value={this.state.PassReasonMessage}
               onChange={this.handleInput}
               placeholder="Tell us why this isn't a great match for you..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
               required
             />
             <div className="pass-btn-container">

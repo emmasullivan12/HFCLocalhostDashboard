@@ -68,6 +68,9 @@ class SubmitMatchContent extends Component {
             placeholder="Enter MenteeID..."
             value={this.state.MenteeID}
             onChange={this.handleMessageChange}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
           />
           <div>Mentor ID</div>
           <input
@@ -77,6 +80,9 @@ class SubmitMatchContent extends Component {
             placeholder="Enter MentorID..."
             value={this.state.MentorID}
             onChange={this.handleMessageChange}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
           />
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Gender Pref?</span>
@@ -222,6 +228,9 @@ class SubmitMatchContent extends Component {
             value={this.state.MatchReasonMessage}
             onChange={this.handleInput}
             placeholder="Let mentee know how they've been matched..."
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
             required
           />
           <button type="submit" disabled={!isEnabled} className="Submit-btn">

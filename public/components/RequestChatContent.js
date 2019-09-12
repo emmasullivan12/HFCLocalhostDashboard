@@ -54,6 +54,9 @@ class RequestChatContent extends Component {
               value={this.state.requestChatMessage}
               onChange={this.handleInput}
               placeholder="Type your message..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
               required
             />
             <div className="descriptor-br">

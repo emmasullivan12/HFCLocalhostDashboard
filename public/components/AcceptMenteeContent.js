@@ -52,6 +52,9 @@ class AcceptMenteeContent extends Component {
               value={this.state.acceptMenteeMessage}
               onChange={this.handleInput}
               placeholder="Type your message..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
               required
             />
             <div className="descriptor-br">

@@ -130,6 +130,9 @@ class MenteeShortSU extends React.Component {
                     onBlur={this.onBlur}
                     className="form-control-std"
                     placeholder="City"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    spellCheck="off"
                     required
                   />
                 </div>
