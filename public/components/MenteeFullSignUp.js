@@ -18,11 +18,9 @@ class MenteeFullSignUp extends Component {
   render() {
     const fname = 'Emma';
     const id = '12345';
-    const certainty = '8';
-    const knowSkills = '7';
-    const planningUni = true;
+    const hasSetMobNo = true;
     const nonPartnerSch = true;
-    const menteetflink = 'https://prospela.typeform.com/to/bszCn1?fname='+fname+'&uid='+id+'&certainty='+certainty+'&knowskills='+knowSkills+'&planninguni='+planningUni;
+    const menteetflink = 'https://prospela.typeform.com/to/bszCn1?fname='+fname+'&uid='+id+'&hasSetMobNo='+hasSetMobNo;
 
     return (
       <section>

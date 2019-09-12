@@ -519,6 +519,25 @@ hr{
   -ms-user-select: none;
   user-select: none;
 }
+.checkbox-container-login{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 1.25rem;
+  margin-top: .75rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #a3a3a3;
+  font-size: 0.75rem;
+  text-align: left;
+  font-family: Lato;
+}
+.checkbox-container-login.error{
+  color: #f9b1b1ba!important;
+}
 .checkbox-container-login input,
 .checkbox-container input {
   position: absolute;

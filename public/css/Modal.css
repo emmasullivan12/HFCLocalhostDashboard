@@ -49,6 +49,68 @@
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.08);
   background-color: #351c75;
 }
+
+.ModalOpenBtn-mentee-profile{
+  height: 50px;
+  padding: 1.2rem 1.7rem 1rem 1.7rem;
+  color: rgb(255,255,255,0.8)!important; /* #d8d7f5 is purple */
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+}
+
+.ModalOpenBtn-mentee-profile:hover {
+  background-color: #111111!important;
+  color: #fff!important;
+}
+
+/*.ModalOpenBtn-mentee-profile:focus {
+  background-color: #9f9ee7!important; /* #ffebb3 is orange / #9f9ee7 is purple */
+/*  color: #fff!important; /* #d8a40f is orange text */
+/*  text-decoration: none;
+  outline: none;
+  border-radius: 0%;
+}
+*/
+
+.ModalOpenBtn-mentee-profile.is-active{
+  background-color: #9f9ee7!important;
+  color: #fff!important;
+  text-decoration: none;
+  outline: none;
+}
+
+.ModalOpenBtn-menu-mentee-profile{
+  line-height: 32px;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 0 24px;
+  margin: 0;
+  white-space: nowrap;
+  outline: 0;
+  background: 0 0;
+  color: #3f3f3f!important;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+  top: -1px;
+  width: 100%;
+  text-align: left;
+  border-radius: 0;
+}
+.ModalOpenBtn-menu-mentee-profile:hover{
+  background-color: #e0f2f0;
+  border-radius: 0;
+}
+.ModalOpenBtn-menu-mentee-profile:hover div {
+  color: #1dba86;
+}
 .ModalOpenBtn-joinProg,
 .ModalOpenBtn-joinProgSml{
   background: none;
@@ -61,6 +123,18 @@
 .ModalOpenBtn-joinProg:hover,
 .ModalOpenBtn-joinProgSml:hover{
   background: none;
+}
+.ModalOpenBtn-joinProgSmlHome{
+  font: inherit;
+  font-weight: 600;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  height: 30px;
+  min-width: 30px;
+  text-align: center;
+  padding: 0;
+  margin-right: 5px;
 }
 .menuCTAContainer{
   display: inline-block;
@@ -267,6 +341,7 @@
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+.fullpage-modal-container.menu-mentee-profile,
 .fullpage-modal-container.mentee-profile,
 .fullpage-modal-container.mentor-profile{
   background-color: #f9f9f9;

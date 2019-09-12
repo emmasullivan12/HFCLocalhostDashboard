@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import {
   NavLink
 } from "react-router-dom";
+import MenteeProfileContent from './MenteeProfileContent.js';
 import FullPageModal from './FullPageModal.js';
 import SettingsContent from './SettingsContent.js';
 import "../css/UserMenuContent.css";
@@ -17,15 +18,38 @@ const SettingsModalProps = {
   backBtn: 'bk2Pr'
 }
 
+const MenteeProfileModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  triggerText: 'Profile',
+  usedFor: 'menu-mentee-profile',
+  backBtn: 'arrow'
+}
+
 class UserMenuContent extends Component {
   render() {
     const {onMenuClose, onKeyDown} = this.props;
+    const userRole = mentee;
+    const mentee = {
+      fname: 'Dexter',
+    };
+    const isPicSet = true;
     return (
       <React.Fragment>
         <div className="userMenuContainer">
           <section className="userMenu-you">
             <h2 className="userMenu-header">
-              <div className="userMenu-thumb" />
+              <div className="userMenu-thumb-container">
+                {isPicSet ? (
+                  <img
+                    className="userMenu-thumb"
+                    src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                    alt="User profile pic"
+                  />
+                  )
+                : (
+                  <div className={"userMenu-thumb noPic "+userRole}>{mentee.fname.charAt(0).toUpperCase()}</div>
+                )}
+              </div>
               <span className="userMenu-name overflow-ellipsis">fname lname</span>
               <span className="userMenu-preferred-name overflow-ellipsis">fname</span>
             </h2>
@@ -35,11 +59,9 @@ class UserMenuContent extends Component {
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
                 </NavLink>
               </li>
-              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <NavLink to="/profile" className="userMenu-link">
-                  <span className="userMenuLabel overflow-ellipsis">Profile</span>
-                </NavLink>
-              </li>
+              <FullPageModal {...MenteeProfileModalProps} role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                <MenteeProfileContent />
+              </FullPageModal>
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile/saved-highlights" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">My Highlights</span>

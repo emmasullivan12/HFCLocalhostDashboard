@@ -14,6 +14,38 @@ class JoinProgrammeModalContent extends Component {
     };
   }
 
+  componentDidMount() {
+    var tncCheckbox = document.getElementById("tncCheckbox");
+    var tncStyle = document.getElementById("tncStyle");
+    var tncText = document.getElementById("tncText");
+    tncCheckbox.addEventListener('invalid', function(event) {
+      tncText.classList.add('error');
+      tncStyle.classList.add('error');
+    }, false);
+    tncCheckbox.addEventListener('change', function(event) {
+      if(tncCheckbox.checkValidity()) {
+        tncText.classList.remove('error');
+        tncStyle.classList.remove('error');
+     }
+    })
+  }
+
+  componentWillUnmount() {
+    var tncCheckbox = document.getElementById("tncCheckbox");
+    var tncStyle = document.getElementById("tncStyle");
+    var tncText = document.getElementById("tncText");
+    tncCheckbox.removeEventListener('invalid', function(event) {
+      tncText.classList.add('error');
+      tncStyle.classList.add('error');
+    }, false);
+    tncCheckbox.removeEventListener('change', function(event) {
+      if(tncCheckbox.checkValidity()) {
+        tncText.classList.remove('error');
+        tncStyle.classList.remove('error');
+     }
+    })
+  }
+
   handleInput = (evt) => {
     this.setState({ [evt.target.name]: evt.target.value });
   }
@@ -67,6 +99,11 @@ class JoinProgrammeModalContent extends Component {
                 Sorry, that programme doesn&#39;t exist. Make sure you have the correct code.
               </div>
             )}
+            <label className="checkbox-container-login" id="tncText">
+              I agree to share my Prospela profile with the programme admin for the purposes of providing me career advice & support
+              <input type="checkbox" id="tncCheckbox" name="tanp" required />
+              <span className="checkmark left" id="tncStyle"/>
+            </label>
             <div className="request-btn-container">
               <button type="submit" className="Submit-btn" onSubmit={this.handleSubmit}>
                 Join Programme

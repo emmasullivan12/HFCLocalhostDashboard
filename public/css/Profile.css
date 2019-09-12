@@ -1,11 +1,12 @@
 /* Dex last merged this code on 27th August 2019 */
 
 .profile-thumb-container{
-  width: 5rem;
+  width: 10rem;
   height: 10rem;
-  padding-right: 8px;
+  margin-right: .75rem;
   box-sizing: content-box;
   text-align: center;
+  border-radius: 50%;
 }
 
 .profile-thumb{
@@ -15,7 +16,18 @@
   border-style: none;
   background-size: cover;
 }
-
+.profile-thumb.noPic{
+  font-size: 80px;
+  padding-top: 42%;
+  color: #fff;
+}
+.profile-thumb.noPic.mentee{
+  background-color: #e6ddfd;
+}
+.profile-thumb.noPic.mentor{
+  background-color: rgb(53,28,117);
+  background-color: rgb(53,28,117,.5)
+}
 .pr-certified{
   background-color: #6228da;
   width: 2rem;

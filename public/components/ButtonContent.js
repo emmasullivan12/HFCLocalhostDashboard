@@ -1,6 +1,10 @@
 // Dex last merged this code on 10th Sept 2019
 
 import React, { Component } from "react";
+import {
+  Route,
+  NavLink
+} from "react-router-dom";
 import ReactDOM from "react-dom";
 import "../css/ButtonContent.css";
 
@@ -36,6 +40,10 @@ function ButtonContent(props) {
         <div className="addContainer">
           <i className="fas fa-plus" />
         </div>
+      )
+    case 'joinProgSmlHome':
+      return (
+        <i className="fas fa-plus" />
       )
     case 'settings':
       return (

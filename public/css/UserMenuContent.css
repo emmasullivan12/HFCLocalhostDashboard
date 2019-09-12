@@ -26,7 +26,6 @@
 }
 
 .userMenu-thumb{
-  background-image: url(https://media.licdn.com/dms/image/C5603AQHsHypCoue1Yg/profile-displayphoto-shrink_200_200/0?e=1558569600&v=beta&t=8-Ah27MuV2gKokbrTVsVOLe34vVw0ngJ4Xlj6mt7qv8);
   float: left;
   margin-right: 10px;
   width: 36px;
@@ -37,7 +36,18 @@
   display: inline-block;
   position: relative;
 }
-
+.userMenu-thumb.noPic{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.userMenu-thumb.noPic.mentee{
+  background-color: #e6ddfd;
+}
+.userMenu-thumb.noPic.mentor{
+  background-color: rgb(53,28,117);
+  background-color: rgb(53,28,117,.5);
+}
 .userMenu-name{
   font-size: 1.125rem;
   line-height: 1.5rem;

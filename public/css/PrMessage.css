@@ -26,6 +26,20 @@
   background-size: cover;
 }
 
+.msg-thumb.noPic{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding-top: .7rem;
+}
+.msg-thumb.noPic.isMe{
+  background-color: #e6ddfd;
+}
+.msg-thumb.noPic.isntMe{
+  background-color: rgb(53,28,117);
+  background-color: rgb(53,28,117,.5);
+}
+
 .block-container {
   display:block;
 }

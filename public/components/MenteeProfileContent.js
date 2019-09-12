@@ -115,6 +115,7 @@ class MenteeProfileContent extends Component {
         text: ' just took on a new mentee'
       }
     ]
+    const isPicSet = false; // Has user added a profile pic? If not, show placeholder pic
     const lastActive = timeSince(mentee.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentee.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
@@ -126,11 +127,16 @@ class MenteeProfileContent extends Component {
           <div className="row article-container profile">
             <div className="col-3 col-s-12 article-extras profile">
               <div className="profile-thumb-container">
-                <img
-                  className="profile-thumb img-circle"
-                  src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
-                  alt="User profile pic"
-                />
+                {isPicSet ? (
+                  <img
+                    className="profile-thumb img-circle"
+                    src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                    alt="User profile pic"
+                  />
+                  )
+                : (
+                  <div className="profile-thumb img-circle noPic mentee">{mentee.fname.charAt(0).toUpperCase()}</div>
+                )}
               </div>
               <h1 className="profileName">{mentee.fname}</h1>
               <div className="profilePosition student">{eetStatus(mentee.eetStatus, mentee.schYrGrp, mentee.uniYrGrp)}</div>

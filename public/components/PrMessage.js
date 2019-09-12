@@ -13,13 +13,21 @@ import "../css/General.css";
 import "../css/PrMessage.css";
 
 function Avatar(props) {
+  const isPicSet = false; // check if author who sent message has avatar pic set
+  const myID = props.senderID;
+  const isMe = (props.senderID === myID) ? 'isMe' : 'isntMe';
   return (
     <div className="msg-thumb-container">
-      <img
-        className="msg-thumb img-square"
-        src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
-        alt={props.senderName}
-      />
+      {isPicSet ? (
+        <img
+          className="msg-thumb img-square"
+          src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+          alt={props.senderName}
+        />
+        )
+      : (
+        <div className={"msg-thumb img-square noPic "+isMe}>{props.senderName.charAt(0).toUpperCase()}</div>
+      )}
     </div>
   );
 }

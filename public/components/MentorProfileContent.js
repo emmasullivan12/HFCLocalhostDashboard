@@ -152,6 +152,7 @@ class MentorProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
+    const isPicSet = true;
 
     return (
       <React.Fragment>
@@ -159,11 +160,16 @@ class MentorProfileContent extends Component {
           <div className="row article-container profile">
             <div className="col-3 col-s-12 article-extras profile">
               <div className="profile-thumb-container">
-                <img
-                  className="profile-thumb img-circle"
-                  src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
-                  alt="User profile pic"
-                />
+                {isPicSet ? (
+                  <img
+                    className="profile-thumb img-circle"
+                    src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                    alt="User profile pic"
+                  />
+                  )
+                : (
+                  <div className="profile-thumb img-circle noPic mentor">{mentor.fname.charAt(0).toUpperCase()}</div>
+                )}
                 {mentor.compTraining === 1 && (
                   <div className="pr-certified img-circle tooltip">
                     <span>&#10003;</span>

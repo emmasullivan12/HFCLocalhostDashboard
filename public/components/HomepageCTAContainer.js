@@ -2,18 +2,27 @@
 
 import React, { Component } from "react";
 
+import GroupCircle from "./GroupCircle";
+import JoinProgPrompt from "./JoinProgPrompt";
+import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import MentorMatches from './MentorMatches';
 import MenteeFullSignUp from './MenteeFullSignUp.js';
 import MenteeTraining from './MenteeTraining.js';
-import GroupCircle from "./GroupCircle";
-import JoinProgPrompt from "./JoinProgPrompt";
+import Modal from './Modal';
+
 
 import "../css/General.css";
 import "../css/HomepageCTAContainer.css";
 
+const JoinProgrammePlusModalProps = {
+  ariaLabel: 'Join a live Programme',
+  triggerText: 'Join a Programme',
+  usedFor: 'joinProgSmlHome',
+}
+
 class HomepageCTAContainer extends Component {
   render() {
-    const fullsustep = 'fullSUTrain'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
+    const fullsustep = 'joinedProg'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
     const matchstatus = 'isMatched';
     const groups = [];
 
@@ -34,9 +43,9 @@ class HomepageCTAContainer extends Component {
           <div className="memberships-title">My Memberships</div>
           <div className="groupsContainer">
             {groups}
-            <button type="button" className="groupBtn">
-              <i className="fas fa-plus" />
-            </button>
+            <Modal {...JoinProgrammePlusModalProps}>
+              <JoinProgrammeModalContent />
+            </Modal>
           </div>
         </div>
         {fullsustep === 'shortSUonly' && (

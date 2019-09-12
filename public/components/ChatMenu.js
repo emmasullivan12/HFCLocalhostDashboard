@@ -11,28 +11,20 @@ import {
 import FullPageModal from './FullPageModal.js';
 import Modal from './Modal.js';
 import MentorProfileContent from './MentorProfileContent.js';
-import MenteeProfileContent from './MenteeProfileContent.js';
 import AddChatModalContent from './AddChatModalContent.js';
 import "../css/Modal.css";
+
+const AddChatModalProps = {
+  ariaLabel: 'Start a new DM with a specific user',
+  triggerText: 'Start a DM',
+  usedFor: 'addPrDM',
+}
 
 const MentorProfileModalProps = {
   ariaLabel: 'View Mentor Profile',
   triggerText: 'View Mentor Profile',
   usedFor: 'mentor-profile',
   backBtn: 'arrow'
-}
-
-const MenteeProfileModalProps = {
-  ariaLabel: 'View Mentee Profile',
-  triggerText: 'View Mentee Profile',
-  usedFor: 'mentee-profile',
-  backBtn: 'arrow'
-}
-
-const AddChatModalProps = {
-  ariaLabel: 'Start a new DM with a specific user',
-  triggerText: 'Start a DM',
-  usedFor: 'addPrDM',
 }
 
 // This shows the content within an individual row in the ChatMenu
@@ -90,9 +82,6 @@ class ChatMenu extends Component {
               </div>
               <FullPageModal {...MentorProfileModalProps}>
                 <MentorProfileContent />
-              </FullPageModal>
-              <FullPageModal {...MenteeProfileModalProps}>
-                <MenteeProfileContent />
               </FullPageModal>
             </React.Fragment>
           )}
