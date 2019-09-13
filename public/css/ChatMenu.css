@@ -7,8 +7,12 @@
 }
 
 .chatItemFlexContainer{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
 }
 
 .chatMenuItem {
@@ -19,7 +23,7 @@
 }
 
 .chatMenuItem:hover {
-  background-color: #111111; /* #ffebb3 is orange / #9f9ee7 is purple */
+  background-color: #111111;
 }
 
 .chatMenuItem.menuCTA:hover{
@@ -34,19 +38,19 @@
 }
 
 .chatMenuItem:focus {
-  background-color: #9f9ee7; /* #ffebb3 is orange / #9f9ee7 is purple */
+  background-color: #9f9ee7;
 }
 
 .chatMenuItem:focus .chatMenuLink {
-  color: #fff; /* #d8a40f is orange text */
+  color: #fff;
 }
 
 .chatMenuItem.is-active {
-  background-color: #9f9ee7; /* #ffebb3 is orange / #9f9ee7 is purple */
+  background-color: #9f9ee7;
 }
 
 .chatMenuItem.is-active .chatMenuLink {
-  color: #fff; /* #d8a40f is orange text */
+  color: #fff;
 }
 
 .chatMenuLink {
@@ -72,6 +76,10 @@
 .notificationNum{
   background: #e22e48;
   border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
   color: #fff;
   display: inline-block;
   font-size: 12px;

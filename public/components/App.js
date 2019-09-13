@@ -306,10 +306,10 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 3;
+  const step = 'didTrain';
 //    const step = this.props.users.step;
       switch (step) {
-        case 1:
+        case 'IFSTATEMENT':
           return (
             <BrowserRouter>
               <Switch>
@@ -318,17 +318,22 @@ function MenteeSteps({userRole}) {
               </Switch>
             </BrowserRouter>
           );
-        case 2:
-          return (
-            <BrowserRouter>
-              <Switch>
-                <Redirect exact from="/" to="/mentee-signup" />
-                <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
-              </Switch>
-            </BrowserRouter>
-          );
-        case 3:
-          return <Dashboard userRole={userRole}/>
+          case 'didEmailVerif':
+          case 'didCountry':
+            return (
+              <BrowserRouter>
+                <Switch>
+                  <Redirect exact from="/" to="/mentee-signup" />
+                  <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
+                </Switch>
+              </BrowserRouter>
+            );
+          case 'didShortSU':
+          case 'autoEnroll':
+          case 'joinedProg':
+          case 'didFullSUtf':
+          case 'didTrain':
+            return <Dashboard userRole={userRole}/>
       }
 }
 

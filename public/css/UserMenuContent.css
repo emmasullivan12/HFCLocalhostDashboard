@@ -4,8 +4,12 @@
   visibility: visible;
   overflow: visible;
   height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
 }
 
 .userMenu-you{
@@ -14,7 +18,7 @@
   padding-bottom: 8px;
   clear: both;
   padding-top: 8px;
-  padding-bottom: 8px;;
+  padding-bottom: 8px;
   margin: 0;
   width: 100%;
   display: block;
@@ -31,6 +35,10 @@
   width: 36px;
   height: 36px;
   border-radius: .2rem;
+  -webkit-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  -ms-border-radius: .2rem;
+  -o-border-radius: .2rem;
   background-size: 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -52,7 +60,14 @@
   font-size: 1.125rem;
   line-height: 1.5rem;
   user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
   transform: translateY(-.1875rem);
+  -webkit-transform: translateY(-.1875rem);
+  -moz-transform: translateY(-.1875rem);
+  -ms-transform: translateY(-.1875rem);
+  -o-transform: translateY(-.1875rem);
   cursor: text;
 }
 
@@ -62,7 +77,14 @@
   color: #868686;
   font-weight: 500;
   user-select: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
   transform: translateY(-.3125rem);
+  -webkit-transform: translateY(-.3125rem);
+  -moz-transform: translateY(-.3125rem);
+  -ms-transform: translateY(-.3125rem);
+  -o-transform: translateY(-.3125rem);
   cursor: text;
 }
 
@@ -70,7 +92,14 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   list-style-type: none;
 }
 
@@ -133,6 +162,10 @@
   width: 26px;
   height: 36px;
   border-radius: .2rem;
+  -webkit-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  -ms-border-radius: .2rem;
+  -o-border-radius: .2rem;
   background-size: 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -147,6 +180,9 @@
   line-height: 22px;
   margin: 0;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .userMenu-settings{

@@ -12,8 +12,11 @@
   color: #3f3f3f;
   background-color: #FFFFFF;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
-  /* overflow: hidden;*/
   top: 80px;
   left: 20px;
   cursor: default;
@@ -24,10 +27,12 @@
   position: relative;
   outline: none;
   transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
   height: 100%;
   width: 100%;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .userMenu {
@@ -38,7 +43,11 @@
   color: #fff;
   position: relative;
   flex-basis: 61px;
+  -webkit-flex-basis: 61px;
+  -moz-flex-basis: 61px;
   flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
   margin-bottom: -2px;
   margin-top: 2.3rem!important;
   line-height: 1.075rem;
@@ -57,7 +66,7 @@
 }
 
 .userMenu:active {
-  background-color: #111111; /* #ffebb3 is orange / #9f9ee7 is purple */
+  background-color: #111111;
 }
 
 .userMenu:active .badgeName {
@@ -77,11 +86,15 @@
 }
 
 .userContainer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
 .userName{
   order: 1;
+  -webkit-order: 1;
+  -moz-order: 1;
   max-width: 9.12rem;
 }
 
@@ -108,18 +121,6 @@
   width: 100%;
   height: 100%;
 }
-
-/* @media screen and (min-width: 500px) {
-  .modal-container {
-    left: 50%;
-    top: 50%;
-    height: auto;
-    transform: translate(-50%, -50%);
-    max-width: 30em;
-    max-height: calc(100% - 1em);
-  }
-}
-*/
 
 .menuModal-close {
   position: absolute;

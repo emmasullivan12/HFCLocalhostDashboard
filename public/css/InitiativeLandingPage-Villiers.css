@@ -28,7 +28,7 @@
   background: #f73333;
 }
 .initiativeBtn-student.villiers:hover{
-  background: rgba(145,8,8,0.9); /*#aafd60d6;*/
+  background: rgba(145,8,8,0.9); 
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-student.villiers:active{

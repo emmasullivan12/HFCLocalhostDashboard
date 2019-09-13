@@ -6,9 +6,17 @@
   background: #58d2bb;
   border: none;
   border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
   cursor: pointer;
   outline: none;
   transition: background .15s ease-out;
+  -webkit-transition: background .15s ease-out;
+  -moz-transition: background .15s ease-out;
+  -ms-transition: background .15s ease-out;
+  -o-transition: background .15s ease-out;
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-align: center;
@@ -18,7 +26,6 @@
 .ModalOpenBtn:hover {
   background: #06bf9c;
   color: #fff;
-  /*box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);*/
 }
 
 .ModalOpenBtn:disabled{
@@ -34,7 +41,6 @@
 
 .ModalOpenBtn:focus {
   outline: 0;
-  /*box-shadow: 0 0 4px currentColor;*/
 }
 
 .ModalOpenBtn-joinProgLrg{
@@ -53,7 +59,7 @@
 .ModalOpenBtn-mentee-profile{
   height: 50px;
   padding: 1.2rem 1.7rem 1rem 1.7rem;
-  color: rgb(255,255,255,0.8)!important; /* #d8d7f5 is purple */
+  color: rgb(255,255,255,0.8)!important;
   text-decoration: none;
   font-size: 16px;
   background: none;
@@ -66,15 +72,6 @@
   background-color: #111111!important;
   color: #fff!important;
 }
-
-/*.ModalOpenBtn-mentee-profile:focus {
-  background-color: #9f9ee7!important; /* #ffebb3 is orange / #9f9ee7 is purple */
-/*  color: #fff!important; /* #d8a40f is orange text */
-/*  text-decoration: none;
-  outline: none;
-  border-radius: 0%;
-}
-*/
 
 .ModalOpenBtn-mentee-profile.is-active{
   background-color: #9f9ee7!important;
@@ -103,10 +100,18 @@
   width: 100%;
   text-align: left;
   border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .ModalOpenBtn-menu-mentee-profile:hover{
   background-color: #e0f2f0;
   border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .ModalOpenBtn-menu-mentee-profile:hover div {
   color: #1dba86;
@@ -128,6 +133,10 @@
   font: inherit;
   font-weight: 600;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   cursor: pointer;
   outline: none;
   height: 30px;
@@ -145,6 +154,10 @@
   background: rgb(242,242,242,.55);
   border: 1px solid #3f3f3f;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   width: 30px;
   padding: .5em;
   color: #3f3f3f;
@@ -171,7 +184,7 @@
   color: #58d2bb;
   font-weight: 600;
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
-  background: #d8f4efab;
+  background: rgba(216,244,239,.67);
   border-bottom-right-radius: .5rem;
   border-bottom-left-radius: .5rem;
   border-top-left-radius: 0;
@@ -213,7 +226,7 @@
 
 .ModalOpenBtn-PassBtn:hover {
   background: none;
-  color: #3f3f3fb3;
+  color: rgba(63,63,63,.7);
 }
 
 .ModalOpenBtn-PassBtn:focus {
@@ -238,7 +251,7 @@
   font-size: 11px;
 }
 .ModalOpenBtn-msgExtras-pass:hover{
-  color: #3f3f3fb3;
+  color: rgba(63,63,63,.7);
   background: none;
 }
 .ModalOpenBtn-msgExtras-pass:active{
@@ -310,6 +323,10 @@
   height: 100%;
   z-index: 9999;
   transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
   background-color: rgba(0,0,0,0.4);
 }
 
@@ -320,6 +337,10 @@
   width: 100%;
   height: 100%;
   border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
   padding: 2.5em 1.5em 1.5em 1.5em;
   background-color: #FFFFFF;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
@@ -356,6 +377,10 @@
     top: 50%;
     height: auto;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     max-width: 30em;
     max-height: calc(100% - 1em);
   }
@@ -417,6 +442,10 @@
 .modal-close.fullPage.bkArrow {
   font-size: 25px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   padding: .5em;
   margin-left: 3rem;
   top: 40px;

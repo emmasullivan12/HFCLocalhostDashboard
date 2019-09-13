@@ -4,6 +4,8 @@
 @media screen and (max-width: 1178px) {
   .cards-container {
     justify-content: flex-start!important;
+    -webkit-justify-content: flex-start!important;
+    -moz-justify-content: flex-start!important;
   }
 }
 
@@ -24,8 +26,12 @@
   margin-top: 40px;
   margin-bottom: 20px;
   text-align: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
   width: 100%;
 }
 
@@ -44,9 +50,15 @@
 .cards-container{
   width: 100%;
   margin-bottom: 40px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
   justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
 }
 
 .recd-match{
@@ -59,6 +71,10 @@
 .UserCardContainer {
   background-color: #ffffff;
   border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
   display: inline-block;
   box-sizing: border-box;
   box-shadow: 0 1px 40px 0 rgba(0,0,0,.08);
@@ -80,7 +96,7 @@
 
 /* CSS for top match only */
 .user-card-header-t{
-  background-color: #4e4ed6c9;
+  background-color: rgba(78,78,214,.79);
 }
 
 .match-time-left{
@@ -102,13 +118,6 @@
   border-style:none;
   background-size: cover;
 }
-
-/* not yet used
-.UserCardContainer-passed{
-  z-index: 1000;
-  background-color: #3f3f3f;
-  opacity: 0.2;
-}*/
 
 .UserCardName{
   text-align: center;
@@ -143,8 +152,12 @@
 }
 
 .match-reason-li{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   font-size: 12px;
   margin-top: -3px;
 }
@@ -163,13 +176,19 @@
 }
 
 .match-reason{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   width: 100%;
 }
 
 .pr-match-msg-container{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   font-size: 12px;
   padding: 10px 40px 0 40px;
 }
@@ -188,6 +207,8 @@
 }
 
 .pr-match-msg-title{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   width: 100%;
   font-weight: 600;

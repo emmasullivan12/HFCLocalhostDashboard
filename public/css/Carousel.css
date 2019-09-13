@@ -4,8 +4,11 @@
 --number-of-slides: 10;
 
 .carousel-container{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
 }
 .carousel{
   min-width: 1010px;
@@ -21,7 +24,10 @@
 .carousel__controls {
   display: none;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
   position: absolute;
   top: 0;
   right: 16px;
@@ -30,87 +36,168 @@
 }
 .carousel__controls:first-of-type {
   justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
 }
 .carousel__controls:last-of-type {
   justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
 }
 .carousel__control {
   cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
   background-color: #fff;
   color: #3d414a;
   border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
   box-shadow: 0 2px 10px 0 rgba(33,34,36,0.3);
   font-size: 24px;
   height: 48px;
   justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
   width: 48px;
   z-index: 1;
 }
 .carousel__control:hover {
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(1):checked ~ .carousel__screen .carousel__track {
   transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
 }
 .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(2):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
 }
 .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(3):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
 }
 .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(4):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-300%);
+  -webkit-transform: translateX(-300%);
+  -moz-transform: translateX(-300%);
+  -ms-transform: translateX(0-300%);
+  -o-transform: translateX(-300%);
 }
 .carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(5):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-400%);
+  -webkit-transform: translateX(-400%);
+  -moz-transform: translateX(-400%);
+  -ms-transform: translateX(-400%);
+  -o-transform: translateX(-400%);
 }
 .carousel__activator:nth-of-type(6):checked ~ .carousel__controls:nth-of-type(6) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(6):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-500%);
+  -webkit-transform: translateX(-500%);
+  -moz-transform: translateX(-500%);
+  -ms-transform: translateX(-500%);
+  -o-transform: translateX(-500%);
 }
 .carousel__activator:nth-of-type(7):checked ~ .carousel__controls:nth-of-type(7) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(7):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-600%);
+  -webkit-transform: translateX(-600%);
+  -moz-transform: translateX(-600%);
+  -ms-transform: translateX(-600%);
+  -o-transform: translateX(-600%);
 }
 .carousel__activator:nth-of-type(8):checked ~ .carousel__controls:nth-of-type(8) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(8):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-700%);
+  -webkit-transform: translateX(-700%);
+  -moz-transform: translateX(-700%);
+  -ms-transform: translateX(-700%);
+  -o-transform: translateX(-700%);
 }
 .carousel__activator:nth-of-type(9):checked ~ .carousel__controls:nth-of-type(9) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(9):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-800%);
+  -webkit-transform: translateX(-800%);
+  -moz-transform: translateX(-800%);
+  -ms-transform: translateX(-800%);
+  -o-transform: translateX(-800%);
 }
 .carousel__activator:nth-of-type(10):checked ~ .carousel__controls:nth-of-type(10) {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .carousel__activator:nth-of-type(10):checked ~ .carousel__screen .carousel__track {
   transform: translateX(-900%);
+  -webkit-transform: translateX(-900%);
+  -moz-transform: translateX(-900%);
+  -ms-transform: translateX(-900%);
+  -o-transform: translateX(-900%);
 }
 .carousel__screen {
   overflow: hidden;
@@ -120,11 +207,17 @@
 .carousel__track {
   font-size: 0;
   transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
 .carousel__item {
   display: inline-flex;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   padding-left: 16px;
   padding-right: 16px;
   vertical-align: top;
@@ -162,47 +255,11 @@
   }
 }
 
-/* SCSS format needs compiling:
-@media screen and (max-width: 1023px) {
-  .carousel {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .carousel__activator:nth-of-type(n):checked {
-    ~ .carousel__controls:nth-of-type(n) {
-      display: none;
-    }
-
-    ~ .carousel__screen .carousel__track {
-      transform: none;
-    }
-  }
-
-  .carousel__screen {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .carousel__track {
-    overflow-x: auto;
-    width: auto;
-    padding-left: 48px;
-    padding-right: 48px;
-  }
-
-  // tablet can have up to 3 items per slide
-  @for $i from 1 through 3 {
-    .carousel__item--tablet-in-#{$i} {
-      // 90% instead of 100% so the next slide appears on the right side
-      width: #{90% / $i};
-    }
-  }
-}
-*/
-
 .demo-content{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
   width: 100%;
 }

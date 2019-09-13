@@ -15,10 +15,18 @@
   outline: none;
   display: inline-block;
   transition: all 50ms ease-out 0s;
+  -webkit-transition: all 50ms ease-out 0s;
+  -moz-transition: all 50ms ease-out 0s;
+  -ms-transition: all 50ms ease-out 0s;
+  -o-transition: all 50ms ease-out 0s;
 }
 
 .attachmentContainer:hover {
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   color: #8e8e8e;
 }
 
@@ -43,9 +51,17 @@
   outline: none;
   display: inline-block;
   transition: all 50ms ease-out 0s;
+  -webkit-transition: all 50ms ease-out 0s;
+  -moz-transition: all 50ms ease-out 0s;
+  -ms-transition: all 50ms ease-out 0s;
+  -o-transition: all 50ms ease-out 0s;
 }
 .addContainer{
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   background-color: rgb(242,242,242,.3);
   border: 1px solid #3f3f3f;
   width: 30px;

@@ -16,42 +16,42 @@
 .groupsContainer button:nth-of-type(5n+0){
   border: 1px solid rgb(173,129,5,.3);
   color: #fff;
-  background-color: rgb(238,176,0,.5); /*orange*/
+  background-color: rgb(238,176,0,.5);
 }
 .groupsContainer button:nth-of-type(5n+1){
   border: 1px solid rgb(102,102,152,.3);
   color: #fff;
-  background-color: rgb(153,153,231,.5); /*purple*/
+  background-color: rgb(153,153,231,.5);
 }
 .groupsContainer button:nth-of-type(5n+2) {
   border: 1px solid rgb(63,150,134,.3);
   color: #fff;
-  background-color: rgb(88,210,187,.5); /*green*/
+  background-color: rgb(88,210,187,.5);
 }
 .groupsContainer button:nth-of-type(5n+3) {
   border: 1px solid rgb(189,41,62,.3);
   color: #fff;
-  background-color: rgb(251,108,129,.5); /*red*/
+  background-color: rgb(251,108,129,.5);
 }
 .groupsContainer button:nth-of-type(5n+4) {
   border: 1px solid rgb(84,152,162,.3);
   color: #fff;
-  background-color: rgb(101,200,216,.5); /*blue*/
+  background-color: rgb(101,200,216,.5);
 }
 .groupsContainer button:nth-of-type(5n+0):hover{
-  background-color: rgb(238,176,0,.9); /*orange*/
+  background-color: rgb(238,176,0,.9);
 }
 .groupsContainer button:nth-of-type(5n+1):hover{
-  background-color: rgb(153,153,231,.9); /*purple*/
+  background-color: rgb(153,153,231,.9);
 }
 .groupsContainer button:nth-of-type(5n+2):hover {
-  background-color: rgb(88,210,187,.9); /*green*/
+  background-color: rgb(88,210,187,.9);
 }
 .groupsContainer button:nth-of-type(5n+3):hover {
-  background-color: rgb(251,108,129,.9); /*red*/
+  background-color: rgb(251,108,129,.9);
 }
 .groupsContainer button:nth-of-type(5n+4):hover {
-  background-color: rgb(101,200,216,.9); /*blue*/
+  background-color: rgb(101,200,216,.9);
 }
 
 .groupsContainer button:nth-last-of-type(1){
@@ -83,6 +83,8 @@
   min-height: 100px;
   max-height: 150px;
   justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }

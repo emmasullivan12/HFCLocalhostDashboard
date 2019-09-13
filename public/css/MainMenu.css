@@ -3,7 +3,7 @@
 .mainMenuItem {
   height: 50px;
   padding: 1.2rem 1.7rem 1rem 1.7rem;
-  color: rgb(255,255,255,0.8)!important; /* #d8d7f5 is purple */
+  color: rgb(255,255,255,0.8)!important;
   text-decoration: none;
   font-size: 16px;
 }
@@ -14,8 +14,8 @@
 }
 
 .mainMenuItem:focus {
-  background-color: #9f9ee7!important; /* #ffebb3 is orange / #9f9ee7 is purple */
-  color: #fff!important; /* #d8a40f is orange text */
+  background-color: #9f9ee7!important;
+  color: #fff!important; 
   text-decoration: none;
   outline: none;
 }

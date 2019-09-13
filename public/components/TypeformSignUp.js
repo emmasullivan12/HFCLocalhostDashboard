@@ -94,7 +94,7 @@ class TypeformSignUp extends Component {
 
     if(userRole === 'mentee') {
       switch (step) {
-        case 1:
+        case 2:
           return (
             <React.Fragment>
               {fname && (
@@ -104,7 +104,7 @@ class TypeformSignUp extends Component {
               )}
             </React.Fragment>
           );
-        case 2:
+        case 3:
           return (
             <React.Fragment>
               {fname && (

@@ -5,9 +5,13 @@
 }
 
 .pass-btn-container{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   width: 100%;
   justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
 }
 
 .passDescriptor{

@@ -22,7 +22,8 @@ const JoinProgrammePlusModalProps = {
 
 class HomepageCTAContainer extends Component {
   render() {
-    const fullsustep = 'joinedProg'; // 'shortSUonly', 'joinedProg', 'fullSUtf', 'fullSUTrain'
+    const step = 'joinedProg'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const hasInvite = true;
     const matchstatus = 'isMatched';
     const groups = [];
 
@@ -48,19 +49,25 @@ class HomepageCTAContainer extends Component {
             </Modal>
           </div>
         </div>
-        {fullsustep === 'shortSUonly' && (
+        {step === 'didShortSU' && (
           <JoinProgPrompt />
         )}
-        {fullsustep === 'joinedProg' && (
+        {step === 'autoEnroll' && (
+          <div>autoenrollcomponent</div>
+        )}
+        {step === 'joinedProg' && (
           <MenteeFullSignUp />
         )}
-        {fullsustep === 'fullSUtf' && (
+        {step === 'didFullSUtf' && (
           <MenteeTraining />
         )}
-        {fullsustep === 'fullSUTrain' && (
+        {step === 'didTrain' && (
           <MentorMatches />
         )}
 
+        {step === 'fullSUTrain' && hasInvite===true(
+          <div>autoenrollcomponent</div>
+        )}
 
         <div className="choose-match-title-container">
           <div className="exclamation-icon-container">
