@@ -13,7 +13,7 @@ import TypeformEmbedded from './TypeformEmbedded.js';
 
 //This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
 const MenteeShortSUProps = {
-  subheader: 'Personalise your Prospela expertience',
+  subheader: 'Personalise your Prospela experience',
   title: 'Let\'s get you set up',
   fullWidth: false
 }
@@ -85,7 +85,7 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 class TypeformSignUp extends Component {
   render() {
     const userRole = 'mentee';
-    const step = 2;
+    const step = 3;
     const fname = 'Emma';
     const id = '12345';
     const country = 'needs to be linked to data user submits within MenteeShortSU';

@@ -34,6 +34,34 @@ function checkIsAdjacent(prevMsg, message) {
 }
 
 class PrMessagesList extends Component {
+  constructor (props) {
+    super(props);
+  //  this.scrollToBottom = this.scrollToBottom.bind(this);
+  }
+
+/*  componentDidMount() {
+  //  console.log('CDM'+this.messagesEnd);
+    this.scrollToBottom();
+  }
+
+  componentDidUpdate() {
+//    console.log(this.messagesEnd);
+    this.scrollToBottom();
+  }
+
+  scrollToBottom = () => {
+//    var msgContainer = this.messagesEnd;
+    var msgContainer = document.getElementById('messages-container');
+    console.log(msgContainer);
+//    msgContainer.scrollTop = msgContainer.offsetHeight;
+  //  msgContainer.scrollTop = msgContainer.scrollHeight;
+  //  const { bottomRef } = this;
+    msgContainer.scrollIntoView({ block: "end", behavior: "smooth" });
+//    if (this.bottomRef) {
+//     this.bottomRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+  //  }
+  }
+*/
   render() {
     const messages = [
       {
@@ -256,7 +284,7 @@ class PrMessagesList extends Component {
 
     return (
       <React.Fragment>
-        <div className="messages-container">
+        <div className="messages-container" >
         {messages.map((message, index) => {
         const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
         const isAdjacent = (index===0 || showDateHeader===true ? false : checkIsAdjacent(prevMsg, message));

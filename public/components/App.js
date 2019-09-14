@@ -116,6 +116,7 @@ class Dashboard extends Component{
     this.scrollBarRef = React.createRef();
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   componentDidMount() {
@@ -199,6 +200,13 @@ class Dashboard extends Component{
     }
   }
 
+  closeMenu() {
+//    document.getElementById("clientMenu").style.width = "0px";
+    document.getElementById("clientMenu").style.left = "-220px";
+    document.getElementById("clientMenu").style.zIndex = "0";
+  //  this.openMenuRef.focus();
+  }
+
   render(){
     const userRole = this.props.userRole;
   //  const fullsustep = 'justjoined';
@@ -207,12 +215,11 @@ class Dashboard extends Component{
       <BrowserRouter>
         <div className="clientUI">
           <div className="clientContainer">
-            <div className="clientMenuContainer">
-              <span className="notificationBell">
-                <button className="button-unstyled bell-icon" type="button">
-                  <i className="fa fa-bell" />
-                </button>
-              </span>
+            <div className="clientMenuContainer" id="clientMenu">
+              <button type="button" className="close-menu" aria-labelledby="Close Modal" onClick={this.closeMenu}>
+                <span id="close-modal" className="u-hide-visually">Close</span>
+                <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+              </button>
               <MenuModal>{MenuModalContent}</MenuModal>
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
@@ -236,7 +243,7 @@ class Dashboard extends Component{
                 </div>
               </div>
             </div>
-            <div className="clientWindowContainer">
+            <div className="clientWindowContainer col-s-12">
               <Switch>
                 {{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
@@ -306,7 +313,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'didTrain';
+  const step = 'didShortSU';
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':
@@ -338,7 +345,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 5;
+  const step = 4;
 //    const step = this.props.users.step;
       switch (step) {
         case 1:

@@ -46,19 +46,42 @@
 Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...} */
 
-
+@media screen and (min-width: 760px) {
+  .clientWindowContainer {
+    width: calc(100% - 220px);
+  }
+  .close-menu{
+    display: none;
+  }
+  .viewMenu{
+    display: none;
+  }
+  #clientMenu{
+    left: 0px!important;
+  }
+}
 @media screen and (max-width: 759px) {
-  .loadingContainer {
+  .loadingContainer,
+  .clientWindowContainer {
     left: 0!important;
   }
   .loadingMsg {
     margin-left: 0px!important;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   #loading-welcome {
     background-position: 21px 16px, right 15px top 16px!important;
   }
+  #clientMenu{
+    z-index: 0;
+    left: -220px;
+  }
   .login-pic {
     display: none;
+  }
+  .viewMenu{
+    display: block;
   }
 }
 

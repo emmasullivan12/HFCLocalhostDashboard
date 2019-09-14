@@ -127,13 +127,53 @@ input[type=text]:disabled{
   color: #d9d9d9;
   opacity: 1; /* Firefox */
 }
+.dob::placeholder{
+  font-size: .85em;
+}
+
+:-moz-input-placeholder { /* Internet Explorer 10-11 */
+  color: #d9d9d9;
+}
+.dob:-moz-input-placeholder{
+  font-size: .85em;
+}
+
+::-moz-input-placeholder { /* Microsoft Edge */
+  color: #d9d9d9;
+}
+.dob::-moz-input-placeholder{
+  font-size: .85em;
+}
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #d9d9d9;
 }
+.dob:-ms-input-placeholder{
+  font-size: .85em;
+}
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #d9d9d9;
+}
+.dob::-ms-input-placeholder{
+  font-size: .85em;
+}
+
+::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+.dob::-webkit-input-placeholder{
+  font-size: .85em;
+}
+
+
+.dob::-webkit-inner-spin-button,
+.dob::-webkit-outer-spin-button,
+.dob::-moz-inner-spin-button,
+.dob::-moz-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance:textfield !important;
 }
 
 .row{
@@ -187,6 +227,25 @@ input[type=text]:disabled{
   display: inline-block;
 }
 
+.loginContainer h1 {
+  line-height: 1em;
+}
+@media only screen and (max-width: 320px) {
+  .loginContainer{
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 400px) {
+  .loginContainer{
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .loginContainer{
+    padding: 3rem 4rem;
+  }
+}
+
 .header-descriptor{
   color: #595959;
   font-size: 0.85rem;
@@ -218,6 +277,7 @@ input[type=text]:disabled{
 
 .descriptor.subheader{
   opacity: 0.8;
+  margin-top: 3rem;
 }
 
 .checkmark.error{
@@ -341,6 +401,19 @@ input[type=text]:disabled{
   font-size: .75rem;
 }
 
+.btnDescriptor{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.descListItem{
+  padding-bottom: .5rem;
+}
+.Submit-btn.emailVerif,
+.Submit-btn.resendCode{
+  width: 100%;
+  margin-bottom: 1rem;
+}
 .btn-general{
   width: 100%;
   color: #fff;

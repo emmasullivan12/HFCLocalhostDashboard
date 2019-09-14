@@ -17,6 +17,10 @@
   background: #fff;
 }
 
+.viewMenu{
+  margin-right: 1rem!important;
+}
+
 .page-detail-container{
   margin-right: 10px;
 }

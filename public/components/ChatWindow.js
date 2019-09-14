@@ -48,7 +48,17 @@ class ChatWindow extends Component {
     this.handleDragOver = this.handleDragOver.bind(this);
     this.handleDragLeave = this.handleDragLeave.bind(this);
     this.onScroll = this.onScroll.bind(this);
+    this.scrollToBottom = this.scrollToBottom.bind(this);
     /* this.handleFileDrop = this.handleFileDrop.bind(this);*/
+  }
+
+  componentDidMount() {
+    this.scrollToBottom();
+  }
+
+  scrollToBottom = () => {
+    var div = document.getElementById("drop-zone");
+    div.scrollTop = div.scrollHeight;
   }
 
   onScroll = () => {

@@ -41,7 +41,7 @@ class VerifyEmail extends React.Component {
   canBeSubmitted() {
     const { verificationCode } = this.state;
     return (
-      verificationCode.length = 6
+      verificationCode.length === 6
     );
   }
 
@@ -88,7 +88,7 @@ class VerifyEmail extends React.Component {
                       spellCheck="off"
                     />
                   </div>
-                  <button type="submit" disabled={!isEnabled} className="btn-general button-unstyled" id="emailverif-btn">
+                  <button type="submit" disabled={!isEnabled} className="Submit-btn emailVerif" id="emailverif-btn">
                     Verify Email
                   </button>
                 </form>
@@ -102,14 +102,14 @@ class VerifyEmail extends React.Component {
                 {isContainerOpen && (
                   <div className="descriptor subheader">
                     <ol>
-                      <li>Check your junk email folder</li>
-                      <li>Did you enter your email address correctly (USER EMAIL)? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
-                      <li>Wait a few minutes or alternatively click to resend below</li>
-                      <button type="submit" className="btn-general button-unstyled alignLeft" onClick={this.handleResendSubmit}>
+                      <li className="descListItem">Check your junk email folder</li>
+                      <li className="descListItem">Did you enter your email address correctly (USER EMAIL)? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
+                      <li className="descListItem">Wait a few minutes or alternatively click to resend below</li>
+                      <button type="submit" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
                         <span >Resend code</span>
                       </button>
-                      <div> Something went wrong. Looks like this user has already been verified. Please try and log in</div>
-                      <div> Successfully resent. Please also check your junk mail.</div>
+                      <div className="redText"> Something went wrong. Looks like this user has already been verified. Please try and log in</div>
+                      <div className="greenText"> Successfully resent. Please also check your junk mail.</div>
                     </ol>
                   </div>
                 )}

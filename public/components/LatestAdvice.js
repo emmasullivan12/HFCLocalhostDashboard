@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 
 import HomepageCTAContainer from './HomepageCTAContainer.js';
+import MenuNav from './MenuNav.js';
 import "../css/HomePage.css";
 
 const DUMMY_GROUP_LIST = [
@@ -20,6 +21,7 @@ class LatestAdvice extends Component {
     return (
       <React.Fragment>
         <div className="page-header">
+          <MenuNav />
           <div className="page-detail-container">
             <div className="page-title overflow-ellipsis">
               Latest Advice

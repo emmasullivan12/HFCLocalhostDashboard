@@ -162,10 +162,10 @@
   -ms-flex: 1;
   box-sizing: inherit;
   display:flex;
-  flex-direction:column-reverse;
+/*  flex-direction:column-reverse;
   -webkit-flex-direction: column-reverse;
   -moz-flex-direction: column-reverse;
-  outline:0;
+*/  outline:0;
   background-image: url(https://prospela.com/wp-content/uploads/2019/03/Chat-Background.png);
   background-size: 130px;
 }

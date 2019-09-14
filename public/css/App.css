@@ -82,12 +82,45 @@ h2{
   overflow: hidden;
 }
 
+#clientMenu{
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.close-menu{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+  padding: .5em;
+  line-height: 1;
+  background: transparent;
+  border: 0;
+  box-shadow: 0;
+  outline: none;
+  cursor: pointer;
+}
+.menu-close-icon {
+  width: 25px;
+  height: 25px;
+  fill: transparent;
+  stroke: rgba(255,255,255,.8);
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+.close-menu:hover .menu-close-icon{
+  stroke: #fff;
+  stroke-width: 4;
+}
 .clientMenuContainer{
-  position: relative;
-  display: -ms-flexbox;
+  position: absolute;
+/*  display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
+*/  display: table;
+/*  flex-direction: column;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   flex-basis: 220px;
@@ -99,6 +132,9 @@ h2{
   min-width: 1px;
   max-width: 260px;
   box-sizing: content-box;
+*/
+  width: 220px;
+  height: 100%;
   background-image: url("https://prospela.com/wp-content/uploads/2019/03/Dashboard-Background.jpg");
   background-size: cover;
   background-color: #3f3f3f;
@@ -128,11 +164,11 @@ h2{
 }
 
 .clientWindowContainer{
-  position: relative;
-  display: -ms-flexbox;
+  position: absolute;
+/*  display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
+*/  display: table;
+/*  flex-direction: column;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   flex-grow: 1;
@@ -140,7 +176,10 @@ h2{
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
   min-width: 1px;
-  background: #fff;
+*/  background: #fff;
+  left: 220px;
+  height: 100%;
+
 }
 
 .loadingContainer{
@@ -171,6 +210,7 @@ h2{
 .loadingWelcomeMsg{
   font-size: 1.25rem;
   font-weight: 600;
+  line-height: 1em;
 }
 
 //Loading spinner

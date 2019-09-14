@@ -9,3 +9,11 @@ onNavClick = (evt) => {
   });
 }
 */
+
+/* Notification bell in clientMenu
+<span className="notificationBell">
+  <button className="button-unstyled bell-icon" type="button">
+    <i className="fa fa-bell" />
+  </button>
+</span>
+*/
