@@ -132,6 +132,7 @@ codeTooltip.addEventListener('click', function(event) {
   codeTooltip.style.display = 'none';
   codeInput.style.display = 'block';
   inviteCode.focus();
+  inviteCode.required = true;
 });
 
 noCodeTooltip.addEventListener('click', function(event) {
@@ -139,6 +140,7 @@ noCodeTooltip.addEventListener('click', function(event) {
   codeTooltip.style.display = 'block';
   codeTooltip.innerHTML = 'Don\'t have a School email?';
   codeInput.style.display = 'none';
+  inviteCode.required = false;
 });
 
 email.addEventListener('focus', function(event) {

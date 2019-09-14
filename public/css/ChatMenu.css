@@ -1,7 +1,7 @@
 /* Dex last merged this code on 10th Sept 2019 */
 
 .chatMenu-header{
-  color: rgb(255,255,255,0.835);
+  color: rgba(255,255,255,.835);
   font-size: 16px;
   padding: 1rem 1.7rem 0.25rem 1.7rem;
 }
@@ -54,7 +54,7 @@
 }
 
 .chatMenuLink {
-  color: rgb(255,255,255,0.835);
+  color: rgba(255,255,255,.835);
   text-decoration: none;
   font-size: 16px;
   margin-right: 15px;

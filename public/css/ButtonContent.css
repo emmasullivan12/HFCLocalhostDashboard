@@ -62,7 +62,7 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: rgb(242,242,242,.3);
+  background-color: rgba(242,242,242,.3);
   border: 1px solid #3f3f3f;
   width: 30px;
   height: 30px;
@@ -76,7 +76,7 @@
 }
 
 .addContainer:hover{
-  background-color: rgb(242,242,242,.45);
+  background-color: rgba(242,242,242,.45);
 }
 .RequestChatBtnContainer{
   height: 30px;

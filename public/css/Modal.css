@@ -59,7 +59,7 @@
 .ModalOpenBtn-mentee-profile{
   height: 50px;
   padding: 1.2rem 1.7rem 1rem 1.7rem;
-  color: rgb(255,255,255,0.8)!important;
+  color: rgba(255,255,255,.8)!important;
   text-decoration: none;
   font-size: 16px;
   background: none;
@@ -151,7 +151,7 @@
 
 .ModalOpenBtn-addPrDM{
   margin-left: 49px;
-  background: rgb(242,242,242,.55);
+  background: rgba(242,242,242,.55);
   border: 1px solid #3f3f3f;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -327,7 +327,7 @@
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,.4);
 }
 
 .modal-container {
@@ -343,7 +343,7 @@
   -o-border-radius: .5rem;
   padding: 2.5em 1.5em 1.5em 1.5em;
   background-color: #FFFFFF;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0,.1);
   overflow-y: auto;
   cursor: default;
   -webkit-overflow-scrolling: touch;
@@ -356,7 +356,7 @@
   height: 100%;
   padding: 4.5em 0 1.5em 0;
   background-color: #FFFFFF;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0,.1);
   overflow-y: auto;
   cursor: default;
   -webkit-overflow-scrolling: touch;

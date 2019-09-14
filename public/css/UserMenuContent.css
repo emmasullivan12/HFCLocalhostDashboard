@@ -54,7 +54,7 @@
 }
 .userMenu-thumb.noPic.mentor{
   background-color: rgb(53,28,117);
-  background-color: rgb(53,28,117,.5);
+  background-color: rgba(53,28,117,.5);
 }
 .userMenu-name{
   font-size: 1.125rem;

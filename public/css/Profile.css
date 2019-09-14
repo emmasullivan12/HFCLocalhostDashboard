@@ -30,7 +30,7 @@
 }
 .profile-thumb.noPic.mentor{
   background-color: rgb(53,28,117);
-  background-color: rgb(53,28,117,.5)
+  background-color: rgba(53,28,117,.5)
 }
 .pr-certified{
   background-color: #6228da;
@@ -102,10 +102,10 @@
 }
 .mapImg.London{
   background-image: url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-  background-image: linear-gradient(120deg,rgba(249,249,249, 0.2),rgb(249,249,249,0.85),rgb(249,249,249,0.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-  background-image: -moz-linear-gradient(120deg,rgba(249,249,249, 0.2),rgb(249,249,249,0.85),rgb(249,249,249,0.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-  background-image: -webkit-linear-gradient(120deg,rgba(249,249,249, 0.2),rgb(249,249,249,0.85),rgb(249,249,249,0.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-  background-image: -o-linear-gradient(120deg,rgba(249,249,249, 0.2),rgb(249,249,249,0.85),rgb(249,249,249,0.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+  background-image: linear-gradient(120deg,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+  background-image: -moz-linear-gradient(120deg,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+  background-image: -webkit-linear-gradient(120deg,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+  background-image: -o-linear-gradient(120deg,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
 }
 .mapAttribution{
   position: absolute;

@@ -185,11 +185,9 @@ h2{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   -webkit-align-items: center;
 }
@@ -197,7 +195,6 @@ h2{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
@@ -227,11 +224,11 @@ svg:not(:root) {
 .dtuFiT rect {
   fill: currentcolor;
   opacity: 0.2;
-  animation: 0.8s ease 0s infinite normal none running biZQmF;
-  -webkit-animation: 0.8s ease 0s infinite normal none running biZQmF;
-  -moz-animation: 0.8s ease 0s infinite normal none running biZQmF;
-  -ms-animation: 0.8s ease 0s infinite normal none running biZQmF;
-  -o-animation: 0.8s ease 0s infinite normal none running biZQmF;
+  animation: 0.8s ease 0s infinite normal none biZQmF;
+  -webkit-animation: 0.8s ease 0s infinite normal none biZQmF;
+  -moz-animation: 0.8s ease 0s infinite normal none biZQmF;
+  -ms-animation: 0.8s ease 0s infinite normal none biZQmF;
+  -o-animation: 0.8s ease 0s infinite normal none biZQmF;
 }
 .dtuFiT rect, .dtuFiT rect:nth-child(1) {
   animation-delay: 0.05s;
@@ -461,7 +458,7 @@ svg:not(:root) {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  background: rgb(242, 242, 242,.4);
+  background: rgba(242, 242, 242,.4);
   cursor: pointer;
   outline: none;
   z-index: 5;
@@ -485,7 +482,7 @@ svg:not(:root) {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(63,63,63,0.45);
+  background: rgba(63,63,63,.45);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -494,7 +491,7 @@ svg:not(:root) {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(63,63,635, 0.45);
+  background: rgba(63,63,635,.45);
 }
 
 .menuContainer{

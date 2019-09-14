@@ -87,7 +87,7 @@
 .article-page .article-header{
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background: rgb(53,28,117,0.08);
+  background: rgba(53,28,117,.08);
   background-image: url(https://prospela.com/wp-content/uploads/2019/03/Chat-Background.png);
 }
 .article-page .article-title{
@@ -222,13 +222,14 @@
   line-height: 22px;
   border: 1px solid transparent;
   font-weight: bold;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 rgba(0, 0, 0,.1);
 }
+/*
 .section-list.sticky{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
+}*/
 .section-list.left{
   padding-left: 0;
   padding-right: 40px;

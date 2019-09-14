@@ -755,10 +755,10 @@ input:checked + .slider {
 }
 
 input:disabled + .slider {
-  background-color: rgba(53, 28, 117, 0.4);
+  background-color: rgba(53, 28, 117,.4);
 }
 input:disabled:checked + .slider {
-  background-color: rgba(53, 28, 117, 0.4)!important;
+  background-color: rgba(53, 28, 117,.4)!important;
 }
 
 input:focus + .slider {

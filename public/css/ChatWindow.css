@@ -96,7 +96,6 @@
   padding-bottom:.5rem;
   align-items:center;
   -webkit-align-items: center;
-  -webkit-box-align:center;
   border-bottom: 1px solid #dae1e7;
   box-sizing:inherit;
   background: #f2f2f2;
@@ -132,7 +131,7 @@
   padding: 0;
   overflow-y: auto;
   width: 24rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, .1);
 }
 
 .chat-content-container{
@@ -161,15 +160,12 @@
   -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
-  -webkit-box-flex:1;
   box-sizing: inherit;
   display:flex;
   flex-direction:column-reverse;
   -webkit-flex-direction: column-reverse;
   -moz-flex-direction: column-reverse;
   outline:0;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
   background-image: url(https://prospela.com/wp-content/uploads/2019/03/Chat-Background.png);
   background-size: 130px;
 }
