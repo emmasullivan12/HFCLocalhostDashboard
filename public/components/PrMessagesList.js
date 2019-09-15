@@ -1,4 +1,4 @@
-// Dex last merged this code on 27th August 2019
+// Dex last merged this code on 15th Sept 2019
 
 import React, { Component } from "react";
 import PrMessage from "./PrMessage";
@@ -36,32 +36,8 @@ function checkIsAdjacent(prevMsg, message) {
 class PrMessagesList extends Component {
   constructor (props) {
     super(props);
-  //  this.scrollToBottom = this.scrollToBottom.bind(this);
   }
 
-/*  componentDidMount() {
-  //  console.log('CDM'+this.messagesEnd);
-    this.scrollToBottom();
-  }
-
-  componentDidUpdate() {
-//    console.log(this.messagesEnd);
-    this.scrollToBottom();
-  }
-
-  scrollToBottom = () => {
-//    var msgContainer = this.messagesEnd;
-    var msgContainer = document.getElementById('messages-container');
-    console.log(msgContainer);
-//    msgContainer.scrollTop = msgContainer.offsetHeight;
-  //  msgContainer.scrollTop = msgContainer.scrollHeight;
-  //  const { bottomRef } = this;
-    msgContainer.scrollIntoView({ block: "end", behavior: "smooth" });
-//    if (this.bottomRef) {
-//     this.bottomRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
-  //  }
-  }
-*/
   render() {
     const messages = [
       {
