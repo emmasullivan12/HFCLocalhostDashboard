@@ -25,6 +25,12 @@ const MenteeTypeformSignUpProps = {
   fullWidth: true
 }
 
+const MenteeTypeformFullSignUpProps = {
+  subheader: 'We need to know a little more about your future ambitions and what help you might need to help determine the best matches for you!',
+  title: 'Complete your full sign up',
+  fullWidth: true
+}
+
 // This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
 const MenteeTypeformSignUpContent = ({tflink, step}) => (
   <div>
@@ -33,6 +39,9 @@ const MenteeTypeformSignUpContent = ({tflink, step}) => (
         <i className="fas fa-circle" />
       </div>
       <div className={step===2 ? "thisStep" : "nxtStep"}>
+        <i className="fas fa-circle" />
+      </div>
+      <div className={step===3 ? "thisStep" : "nxtStep"}>
         <i className="fas fa-circle" />
       </div>
     </div>
@@ -85,16 +94,18 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 class TypeformSignUp extends Component {
   render() {
     const userRole = 'mentee';
-    const step = 3;
+    const step = 1;
     const fname = 'Emma';
     const id = '12345';
+    const hasSetMobNo = false;
     const country = 'needs to be linked to data user submits within MenteeShortSU';
     const mentortflink = step===1 ? 'https://prospela.typeform.com/to/miX7CZ?fname='+fname+'&uid='+id : 'https://prospela.typeform.com/to/s5nFr9?fname='+fname+'&uid='+id;
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?country='+country+'&fname='+fname+'&uid='+id; // actual typeform to be used
+    const menteeFulltflink = 'https://prospela.typeform.com/to/bszCn1?fname='+fname+'&uid='+id+'&hasSetMobNo='+hasSetMobNo;
 
     if(userRole === 'mentee') {
       switch (step) {
-        case 2:
+        case 1:
           return (
             <React.Fragment>
               {fname && (
@@ -104,12 +115,22 @@ class TypeformSignUp extends Component {
               )}
             </React.Fragment>
           );
-        case 3:
+        case 2:
           return (
             <React.Fragment>
               {fname && (
                 <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
                   <MenteeTypeformSignUpContent tflink={menteetflink} step={step}/>
+                </SignUpScreenTemplate>
+              )}
+            </React.Fragment>
+          );
+        case 3:
+          return (
+            <React.Fragment>
+              {fname && (
+                <SignUpScreenTemplate {...MenteeTypeformFullSignUpProps}>
+                  <MenteeTypeformSignUpContent tflink={menteeFulltflink} step={step}/>
                 </SignUpScreenTemplate>
               )}
             </React.Fragment>
