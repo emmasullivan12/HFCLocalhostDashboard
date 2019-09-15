@@ -1,4 +1,4 @@
-/* Dex last merged this code on 27th Aug 2019 */
+/* Dex last merged this code on 15th Sept 2019 */
 
 .chatWindow-footer{
   flex-shrink: 0;
@@ -95,7 +95,7 @@
   margin-left: 10px;
   height: 1.375rem;
   align-items: center;
-  -webkit-align-items: center; 
+  -webkit-align-items: center;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
