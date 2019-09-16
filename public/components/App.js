@@ -327,8 +327,7 @@ function MenteeSteps({userRole}) {
           );
           case 'didEmailVerif':
           case 'didCountry':
-          case 'didShortSU':
-          case 'didFullSUtf':
+
             return (
               <BrowserRouter>
                 <Switch>
@@ -337,8 +336,10 @@ function MenteeSteps({userRole}) {
                 </Switch>
               </BrowserRouter>
             );
+          case 'didShortSU':
           case 'autoEnroll':
           case 'joinedProg':
+          case 'didFullSUtf':
           case 'didTrain':
             return <Dashboard userRole={userRole}/>
       }

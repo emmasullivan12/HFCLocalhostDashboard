@@ -28,6 +28,14 @@ function eetStatus(eetStatus, schYrGrp, uniYrGrp) {
   }
 }
 
+function eduName(schName, uniName) {
+  if (uniName != '') {
+    return uniName
+  } else if (schName != '') {
+    return schName
+  }
+}
+
 function planningUni(planningUni) {
   if (planningUni === 0) {
     return <span>No</span>
@@ -96,4 +104,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {availabilityMsg, userFlagEmoji, eetStatus, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone};
+export {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone};

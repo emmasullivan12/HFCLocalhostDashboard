@@ -8,7 +8,7 @@ import {
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {availabilityMsg, userFlagEmoji, eetStatus, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -38,7 +38,8 @@ class MenteeProfileContent extends Component {
       schYrGrp: 'Year 12 (USA/Canada Grade 11)',
       uniYrGrp: 'Second Year',
       planningUni: 2, // 0=no, 1=yes, 2=maybe, 3=not sure
-      eduName: 'Bath University',
+      schName: '',
+      uniName: 'Bath University',
       degree: 'BSc (Hons) Business Administration',
       graduYr: '2020',
       currRole: 'Head of Marketing',
@@ -120,6 +121,7 @@ class MenteeProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentee.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentee.country);
+    const eduInstName = eduName(mentee.schName, mentee.uniName);
 
     return (
       <React.Fragment>
@@ -141,7 +143,9 @@ class MenteeProfileContent extends Component {
               <h1 className="profileName">{mentee.fname}</h1>
               <div className="profilePosition student">{eetStatus(mentee.eetStatus, mentee.schYrGrp, mentee.uniYrGrp)}</div>
               {mentee.is18plus === 1 && (
-                <div className="profileInstitution"><span className="neutralText">&#64;</span> <strong>{mentee.eetStatus===0 || mentee.eetStatus===1 ? mentee.eduName : mentee.currCo}</strong></div>
+                <div className="profileInstitution">
+                  <span className="neutralText">&#64;</span> <strong>{mentee.eetStatus===0 || mentee.eetStatus===1 ? eduInstName : (mentee.currCo)}</strong>
+                </div>
               )}
               <div>
                 <h2>
