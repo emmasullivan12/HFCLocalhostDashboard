@@ -35,7 +35,7 @@ class MenteeTraining extends Component {
             Complete your 5-min Prospela training
           </h2>
           <p className="landingCTADesc">
-            Become a <strong>&#34;Certified Prospela Mentee&#34;</strong> by completing our short (and sweet) online training. It will help you feel fully equipped to make the most of your new network, incl. learning how to build a professional relationship online, and more.
+            The last step before becoming a <strong>&#34;Certified Prospela Mentee&#34;</strong> is completing our short (and sweet) online training. It will help you feel fully equipped to make the most of your new network, incl. learning how to build a professional relationship online, and more.
           </p>
           <TypeformFullPage tflink={menteetflink} {...MenteeTrainingProps}/>
         </div>

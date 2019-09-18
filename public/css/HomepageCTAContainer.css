@@ -133,3 +133,18 @@
   font-weight: 400;
   font-size: 0.9rem;
 }
+
+.showProgsPic{
+  height: 130px;
+  width: 200px;
+  margin: auto;
+  margin-top: .5rem;
+  border: 2px solid #5555d1;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  background-size: cover;
+  background-image: url(https://prospela.com/wp-content/uploads/2019/09/Memberships.png);
+}

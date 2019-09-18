@@ -44,6 +44,11 @@
 }
 
 .ModalOpenBtn-joinProgLrg{
+  width: 110px;
+  margin-top: -50px;
+}
+
+.ModalOpenBtn-joinProgLrg{
   background-color: #351c75;
   min-width: 210px;
   margin-left: .5rem;

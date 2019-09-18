@@ -4,46 +4,16 @@ import React, { Component } from "react";
 import "../css/Modal.css";
 import "../css/Emoji.css";
 import "../css/General.css";
+import "../css/HomepageCTAContainer.css";
 
 class JoinProgrammeModalContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
       progCode: '',
-      messageFromServer: ''
+      progName: '',
+      messageFromServer: 'sdfsd'
     };
-  }
-
-  componentDidMount() {
-    var tncCheckbox = document.getElementById("tncCheckbox");
-    var tncStyle = document.getElementById("tncStyle");
-    var tncText = document.getElementById("tncText");
-    tncCheckbox.addEventListener('invalid', function(event) {
-      tncText.classList.add('error');
-      tncStyle.classList.add('error');
-    }, false);
-    tncCheckbox.addEventListener('change', function(event) {
-      if(tncCheckbox.checkValidity()) {
-        tncText.classList.remove('error');
-        tncStyle.classList.remove('error');
-     }
-    })
-  }
-
-  componentWillUnmount() {
-    var tncCheckbox = document.getElementById("tncCheckbox");
-    var tncStyle = document.getElementById("tncStyle");
-    var tncText = document.getElementById("tncText");
-    tncCheckbox.removeEventListener('invalid', function(event) {
-      tncText.classList.add('error');
-      tncStyle.classList.add('error');
-    }, false);
-    tncCheckbox.removeEventListener('change', function(event) {
-      if(tncCheckbox.checkValidity()) {
-        tncText.classList.remove('error');
-        tncStyle.classList.remove('error');
-     }
-    })
   }
 
   handleInput = (evt) => {
@@ -57,18 +27,20 @@ class JoinProgrammeModalContent extends Component {
       return;
     }
     this.setState({ messageFromServer: 'Programme code sent' });
+    this.setState({ progName: 'AVFX' }); //NEED TO UPDATE WITH ACTUALLY PROGRAMME NAME
   }
 
   canBeSubmitted() {
-    const {progCode} = this.state;
+    const {progCode, progName} = this.state;
     return (
       progCode.length === 6
     );
   }
 
   render() {
-    const { progCode, messageFromServer } = this.state;
+    const { progCode, progName, messageFromServer } = this.state;
     const isError = false;
+    const nonPartnerSch = true; /// check school email (or prog code if signed up with personal email) for school partnership
     //const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
@@ -113,9 +85,11 @@ class JoinProgrammeModalContent extends Component {
               </button>
             </div>
           </form>
-          <div className="neutralText alignCenter">
-            Don&#39;t have a code? Click to get your school to pay ;)
-          </div>
+          {nonPartnerSch && (
+            <div className="neutralText alignCenter">
+              Don&#39;t have a code? Click to get your school to pay ;)
+            </div>
+          )}
         </React.Fragment>
       );
     } else {
@@ -127,9 +101,12 @@ class JoinProgrammeModalContent extends Component {
           </div>
           <div className="success-container">
             <div className="ideas-Title">
-              You&#39;re now a member of [LIVE PROGRAMME NAME]. You can now access your memberships within &#39;My Memberships&#39;.
+              You&#39;re now a member of {progName}.
             </div>
-            <div className="showDMPic"/>
+            <p className="landingCTADesc">
+              You can access all of your memberships within &#39;My Memberships&#39;
+            </p>
+            <div className="showProgsPic"/>
           </div>
         </React.Fragment>
       )

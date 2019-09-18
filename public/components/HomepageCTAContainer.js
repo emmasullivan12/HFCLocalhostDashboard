@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 
+import AutoEnrollPrompt from "./AutoEnrollPrompt";
 import GroupCircle from "./GroupCircle";
 import JoinProgPrompt from "./JoinProgPrompt";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
@@ -22,7 +23,7 @@ const JoinProgrammePlusModalProps = {
 
 class HomepageCTAContainer extends Component {
   render() {
-    const step = 'didShortSU'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const step = 'didTrain'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = true;
     const matchstatus = 'isMatched';
     const groups = [];
@@ -53,7 +54,7 @@ class HomepageCTAContainer extends Component {
           <JoinProgPrompt />
         )}
         {step === 'autoEnroll' && (
-          <div>autoenrollcomponent</div>
+          <AutoEnrollPrompt />
         )}
         {step === 'joinedProg' && (
           <MenteeFullSignUp />
@@ -64,25 +65,9 @@ class HomepageCTAContainer extends Component {
         {step === 'didTrain' && (
           <MentorMatches />
         )}
-
         {step === 'fullSUTrain' && hasInvite===true(
-          <div>autoenrollcomponent</div>
+          <AutoEnrollPrompt />
         )}
-
-        <div className="choose-match-title-container">
-          <div className="exclamation-icon-container">
-            <i className="fas fa-exclamation-circle" />
-          </div>
-          <div className="choose-match-title">
-            Choose your real employee match
-          </div>
-          <div className="choose-match-detail">
-            Build your network & get personalised insider insights for 3 months (& beyond!)
-          </div>
-        </div>
-        <div className="cards-container">
-            blahhh
-        </div>
       </div>
     );
   }

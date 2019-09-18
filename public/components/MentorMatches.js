@@ -4,8 +4,20 @@ import React, { Component } from "react";
 import MentorCardMatches from "./MentorCard";
 
 class MentorMatches extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      matchstatus: 3
+    }
+    this.requestNewMatches = this.requestNewMatches.bind(this);
+  }
+
+  requestNewMatches() {
+    this.setState({matchstatus: 1});
+  }
+
   render() {
-    const matchstatus = 1;
+    const {matchstatus} = this.state;
 
     switch (matchstatus) {
       case 1:
@@ -30,7 +42,23 @@ class MentorMatches extends Component {
           </React.Fragment>
         );
       case 3:
-        return <div> We will get back to you shortly on another mentor we think you might like :) </div>
+        return (
+          <section>
+            <div className="contentBox landingCTA">
+              <div className="placeholderPic mentorMatches"/>
+              <h2 className="landingCTATitle">
+                <span className="emoji-icon stopwatch-emoji titleLeft" />
+                You passed! New matches coming soon
+              </h2>
+              <p className="landingCTADesc">
+                It&#39;s a shame you didn&#39;t think those employees were a good fit for you. Click below and we&#39;ll use your feedback to try and find better matches for you.
+              </p>
+              <button type="button" className="Submit-btn" onClick={this.requestNewMatches}>
+                Request more Matches
+              </button>
+            </div>
+          </section>
+        );
       case 4:
         return <div> Awesome! We are now just waiting to her from your potential mentor!</div>
       case 5:

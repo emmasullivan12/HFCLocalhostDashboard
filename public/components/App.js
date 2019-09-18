@@ -391,7 +391,7 @@ const DUMMY_CHAT_LIST = [
 ];
 
 const DUMMY_GROUP_LIST = [
-//  {groupID: '10000', name: 'Villiers', status: 'active'},
+  {groupID: '10000', name: 'Villiers High School', status: 'active'},
 ];
 
 /* App.propTypes = {

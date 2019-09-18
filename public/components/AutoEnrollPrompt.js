@@ -2,18 +2,19 @@
 
 import React, { Component } from "react";
 import Modal from './Modal.js';
-import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
+import AutoEnrollProgModalContent from './AutoEnrollProgModalContent.js';
 
 import "../css/General.css";
 
-const JoinProgrammeModalProps = {
-  ariaLabel: 'Join a live Programme',
-  triggerText: 'Join a Programme',
-  usedFor: 'joinProgLrg',
+const AutoEnrollModalProps = {
+  ariaLabel: 'Join programme from invite',
+  triggerText: 'Join',
+  usedFor: 'joinProgAuto',
 }
 
-class JoinProgPrompt extends Component {
+class AutoEnrollPrompt extends Component {
   render() {
+    const autoEnrollProgName = 'Villiers';
     const nonPartnerSch = true; /// check school email (or prog code if signed up with personal email) for school partnership
     return (
       <section>
@@ -23,28 +24,22 @@ class JoinProgPrompt extends Component {
               Invite a teacher
             </button>
           )}
-          <Modal {...JoinProgrammeModalProps}>
-            <JoinProgrammeModalContent />
-          </Modal>
         </div>
         <div className="contentBox landingCTA">
           <div className="placeholderPic mentorMatches"/>
           <h2 className="landingCTATitle">
-            Join a live programme to see your mentor matches!
+            You&#39;ve been invited to join the {autoEnrollProgName} programme
           </h2>
           <p className="landingCTADesc">
-            It looks like you aren&#39;t part of any live programmes yet. Get a programme code or invite link from your teacher or Prospela Partner to get access to personalised mentoring
+            Click below to get access
           </p>
-
-          {nonPartnerSch && (
-            <div className="neutralText alignCenter">
-              Don&#39;t have a code? Click to get your school to pay ;)
-            </div>
-          )}
+          <Modal {...AutoEnrollModalProps}>
+            <AutoEnrollProgModalContent autoEnrollProgName={autoEnrollProgName}/>
+          </Modal>
         </div>
       </section>
     );
   }
 }
 
-export default JoinProgPrompt;
+export default AutoEnrollPrompt;
