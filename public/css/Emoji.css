@@ -30,6 +30,9 @@
 .chat-emoji{
   background-position: 49.0196% 45.098%;
 }
+.cross-emoji{
+  /* background-position: ; */
+}
 .crossed-fingers-emoji{
   background-position: 74.5098% 21.5686%;
 }
@@ -96,6 +99,9 @@
 }
 .tada-emoji{
   background-position: 15.6863% 54.902%;
+}
+.tick-emoji{
+  /* background-position: ; */
 }
 .timer-emoji{
   background-position: 92.1569% 0%;

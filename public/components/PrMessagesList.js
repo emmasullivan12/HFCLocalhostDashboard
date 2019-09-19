@@ -56,7 +56,7 @@ class PrMessagesList extends Component {
         id: '99991',
         uid: '23456',
         type: 'message',
-        subtype: 'std',
+        subtype: 'mentorAcc',
         author: 'emma',
         ts: 1525209202,
         text: 'This is emmas message'
@@ -65,7 +65,7 @@ class PrMessagesList extends Component {
         id: '99992',
         uid: '11111',
         type: 'message',
-        subtype: 'std',
+        subtype: 'mentorRej',
         author: 'emma',
         ts: 1525209202,
         text: 'This is emmas message'

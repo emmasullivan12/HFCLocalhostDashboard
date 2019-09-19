@@ -148,6 +148,9 @@ class MentorProfileContent extends Component {
         text: ' just took on a new mentee'
       }
     ]
+    const profShareSettings = {
+      groups: false
+    };
     const lastActive = timeSince(mentor.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
@@ -281,7 +284,7 @@ class MentorProfileContent extends Component {
                   <p>
                     {mentor.hobbies}
                   </p>
-                  {mentor.groupsSet === 1 && (
+                  {mentor.groupsSet === 1 && profShareSettings.groups === true && (
                     <React.Fragment>
                       <h2>
                         Groups I&#39;m passionate about supporting

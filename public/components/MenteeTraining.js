@@ -22,13 +22,6 @@ class MenteeTraining extends Component {
 
     return (
       <section>
-        <div className="landingCTABtnContainer">
-          {nonPartnerSch && (
-            <button type="button" className="Submit-btn landingCTA hollow">
-              Invite a teacher
-            </button>
-          )}
-        </div>
         <div className="contentBox landingCTA">
           <div className="placeholderPic completeMenteeTrain"/>
           <h2 className="landingCTATitle">

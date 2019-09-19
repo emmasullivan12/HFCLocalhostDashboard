@@ -164,6 +164,46 @@ function MenteeReq(props) {
   );
 }
 
+function MentorReply(props) {
+  const subtype = props.message.subtype;
+  return (
+    <React.Fragment>
+      <div className="prauto-msg-container">
+        <div className="msg-title-container">
+            <div className="title-emoji-container">
+              {subtype === "mentorAcc" ? <i className="emoji-icon tick-emoji" /> : <i className="emoji-icon cross-emoji" />}
+            </div>
+            <div className="message-content-box msgTitle">
+              {subtype === "mentorAcc" ? (
+                <span className="prAutoMsgTitle">Your request was accepted!</span>
+                )
+              : (
+                <span className="prAutoMsgTitle">Unfortunately, that employee couldn&#39;t accept your request!</span>
+                )
+              }
+            </div>
+        </div>
+        <div className="message-extras-container">
+          <div className="message-extras-border" />
+          <div className="msg-extras">
+            {subtype === "mentorAcc" ? (
+              <a href="/messages/chatID" className="link msg-extras-ctaTxt">
+                Click to see their reply &#62;&#62;
+              </a>
+              )
+            : (
+              <a href="/latest-advice" className="link msg-extras-ctaTxt">
+                Request new matches &#62;&#62;
+              </a>
+              )
+            }
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+}
+
 function PrAuto(props) {
   switch (props.message.prAuto.title) {
     case 'start':
@@ -202,9 +242,9 @@ function PrAuto(props) {
                   </div>
                 </div>
               </div>
-              <div className="msg-extras-ctaTxt">
+              <a href="/messages/chatID" className="link msg-extras-ctaTxt">
                 Take me to chat &#62;&#62;
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -308,7 +348,6 @@ class PrMessageContents extends Component {
   render() {
     switch (this.props.message.subtype) {
       case "std":
-      case 'mentorAcc':
         return <StdMessage message={this.props.message} isAdjacent={this.props.isAdjacent}/>
       case "file":
         return <DisplayFile message={this.props.message} />
@@ -316,6 +355,9 @@ class PrMessageContents extends Component {
         return <PrAuto message={this.props.message} />
       case "menteeReq":
         return <MenteeReq message={this.props.message} />
+      case "mentorAcc":
+      case "mentorRej":
+        return <MentorReply message={this.props.message} />
       default:
         return <MenteeReq message={this.props.message} />
     }

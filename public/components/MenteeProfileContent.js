@@ -117,6 +117,9 @@ class MenteeProfileContent extends Component {
       }
     ]
     const isPicSet = false; // Has user added a profile pic? If not, show placeholder pic
+    const profShareSettings = {
+      groups: false
+    };
     const lastActive = timeSince(mentee.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentee.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
@@ -291,7 +294,7 @@ class MenteeProfileContent extends Component {
                   <p>
                     {mentee.hobbies}
                   </p>
-                  {mentee.groupsSet === 1 && (
+                  {mentee.groupsSet === 1 && profShareSettings.groups === true && (
                     <React.Fragment>
                       <h2>
                         Groups I&#39;m passionate about supporting

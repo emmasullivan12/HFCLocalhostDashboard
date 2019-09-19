@@ -15,18 +15,11 @@ const AutoEnrollModalProps = {
 class AutoEnrollPrompt extends Component {
   render() {
     const autoEnrollProgName = 'Villiers';
-    const nonPartnerSch = true; /// check school email (or prog code if signed up with personal email) for school partnership
+    const nonPartnerSch = false; /// check school email (or prog code if signed up with personal email) for school partnership
     return (
       <section>
-        <div className="landingCTABtnContainer">
-          {nonPartnerSch && (
-            <button type="button" className="Submit-btn landingCTA hollow">
-              Invite a teacher
-            </button>
-          )}
-        </div>
         <div className="contentBox landingCTA">
-          <div className="placeholderPic mentorMatches"/>
+          <div className="placeholderPic openEnvelope"/>
           <h2 className="landingCTATitle">
             You&#39;ve been invited to join the {autoEnrollProgName} programme
           </h2>

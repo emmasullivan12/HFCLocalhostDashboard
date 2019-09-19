@@ -157,7 +157,7 @@ class MentorCardMatches extends Component {
           </div>
         </div>
         <div className="cards-container">
-            <MentorCard mentors={DUMMY_MENTOR_DATA} />
+          <MentorCard mentors={DUMMY_MENTOR_DATA} />
         </div>
       </div>
     );

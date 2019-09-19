@@ -94,6 +94,26 @@
   background-size: contain;
   background-position: center;
 }
+.placeholderPic.openEnvelope{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/Invite-Icon.png');
+  background-size: contain;
+  background-position: center;
+}
+.placeholderPic.cross{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/Cross-Icon.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 50px;
+}
+.placeholderPic.tick{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/Tick-Icon.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 50px;
+}
 
 .placeholderPic.completeFullSU{
   background-repeat: no-repeat;
