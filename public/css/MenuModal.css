@@ -42,14 +42,10 @@
   padding: 1.75rem 2rem 1rem 2rem;
   color: #fff;
   position: relative;
-  flex-basis: 61px;
-  -webkit-flex-basis: 61px;
-  -moz-flex-basis: 61px;
-  flex-shrink: 0;
-  -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
+  height: 81px;
+  width: 100%;
   margin-bottom: -2px;
-  margin-top: 2.3rem!important;
+  margin-top: 35px!important;
   line-height: 1.075rem;
   cursor: pointer;
   border: none;

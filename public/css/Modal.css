@@ -61,7 +61,8 @@
   background-color: #351c75;
 }
 
-.ModalOpenBtn-mentee-profile{
+.ModalOpenBtn-mentee-profile,
+.ModalOpenBtn-mentor-profile{
   height: 50px;
   padding: 1.2rem 1.7rem 1rem 1.7rem;
   color: rgba(255,255,255,.8)!important;
@@ -73,19 +74,22 @@
   text-align: left;
 }
 
-.ModalOpenBtn-mentee-profile:hover {
+.ModalOpenBtn-mentee-profile:hover,
+.ModalOpenBtn-mentor-profile:hover {
   background-color: #111111!important;
   color: #fff!important;
 }
 
-.ModalOpenBtn-mentee-profile.is-active{
+.ModalOpenBtn-mentee-profile.is-active,
+.ModalOpenBtn-mentor-profile.is-active{
   background-color: #9f9ee7!important;
   color: #fff!important;
   text-decoration: none;
   outline: none;
 }
 
-.ModalOpenBtn-menu-mentee-profile{
+.ModalOpenBtn-menu-mentee-profile,
+.ModalOpenBtn-menu-mentor-profile{
   line-height: 32px;
   margin: 0;
   cursor: pointer;
@@ -110,7 +114,8 @@
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
-.ModalOpenBtn-menu-mentee-profile:hover{
+.ModalOpenBtn-menu-mentee-profile:hover,
+.ModalOpenBtn-menu-mentor-profile:hover{
   background-color: #e0f2f0;
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -118,7 +123,8 @@
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
-.ModalOpenBtn-menu-mentee-profile:hover div {
+.ModalOpenBtn-menu-mentee-profile:hover div,
+.ModalOpenBtn-menu-mentor-profile:hover div {
   color: #1dba86;
 }
 .ModalOpenBtn-joinProg,
@@ -368,6 +374,7 @@
   scroll-behavior: smooth;
 }
 .fullpage-modal-container.menu-mentee-profile,
+.fullpage-modal-container.menu-mentor-profile,
 .fullpage-modal-container.mentee-profile,
 .fullpage-modal-container.mentor-profile{
   background-color: #f9f9f9;
@@ -454,6 +461,7 @@
   padding: .5em;
   margin-left: 3rem;
   top: 40px;
+  max-width: 50px;
   cursor: pointer;
   z-index: 1000;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
@@ -476,6 +484,9 @@
 .modal-content {
   padding-top: 1.5em;
   margin-bottom: 1rem;
+}
+.fpModal-content{
+  padding-top: 1.5em;
 }
 .success-container{
   width: 60%;

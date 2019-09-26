@@ -261,7 +261,7 @@
   -moz-flex-direction: column;
 }
 .UserLocalTime{
-  font-size: 22px;
+  font-size: 20px;
   line-height: 25px;
 }
 .UserLocalTime.night{

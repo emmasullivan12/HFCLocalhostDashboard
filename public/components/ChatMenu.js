@@ -8,9 +8,7 @@ import {
   NavLink
 } from "react-router-dom";
 
-import FullPageModal from './FullPageModal.js';
 import Modal from './Modal.js';
-import MentorProfileContent from './MentorProfileContent.js';
 import AddChatModalContent from './AddChatModalContent.js';
 import "../css/Modal.css";
 
@@ -18,13 +16,6 @@ const AddChatModalProps = {
   ariaLabel: 'Start a new DM with a specific user',
   triggerText: 'Start a DM',
   usedFor: 'addPrDM',
-}
-
-const MentorProfileModalProps = {
-  ariaLabel: 'View Mentor Profile',
-  triggerText: 'View Mentor Profile',
-  usedFor: 'mentor-profile',
-  backBtn: 'arrow'
 }
 
 // This shows the content within an individual row in the ChatMenu
@@ -80,9 +71,6 @@ class ChatMenu extends Component {
               <div className="chatMenuItem">
                 <NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis">Prospela Homepage</NavLink>
               </div>
-              <FullPageModal {...MentorProfileModalProps}>
-                <MentorProfileContent />
-              </FullPageModal>
             </React.Fragment>
           )}
         </div>

@@ -12,7 +12,7 @@ class JoinProgrammeModalContent extends Component {
     this.state = {
       progCode: '',
       progName: '',
-      messageFromServer: 'sdfsd'
+      messageFromServer: ''
     };
   }
 

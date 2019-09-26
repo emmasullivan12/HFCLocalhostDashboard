@@ -41,7 +41,7 @@ class PrMessagesList extends Component {
   render() {
     const messages = [
       {
-        id: '99990',
+        id: '99989',
         uid: '11111',
         type: 'message',
         subtype: 'prAuto',
@@ -53,7 +53,7 @@ class PrMessagesList extends Component {
         }
       },
       {
-        id: '99991',
+        id: '99990',
         uid: '23456',
         type: 'message',
         subtype: 'mentorAcc',
@@ -62,7 +62,7 @@ class PrMessagesList extends Component {
         text: 'This is emmas message'
       },
       {
-        id: '99992',
+        id: '99991',
         uid: '11111',
         type: 'message',
         subtype: 'mentorRej',
@@ -71,7 +71,7 @@ class PrMessagesList extends Component {
         text: 'This is emmas message'
       },
       {
-        id: '99993',
+        id: '99992',
         uid: '23456',
         type: 'message',
         subtype: 'prAuto',
@@ -81,6 +81,15 @@ class PrMessagesList extends Component {
         prAuto: {
           title: 'prompt'
         }
+      },
+      {
+        id: '99993',
+        uid: '23456',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma',
+        ts: 1525209202,
+        text: 'This is emmas message'
       },
       {
         id: '99994',
@@ -102,12 +111,12 @@ class PrMessagesList extends Component {
       },
       {
         id: '99996',
-        uid: '23456',
+        uid: '12345',
         type: 'message',
         subtype: 'std',
-        author: 'emma',
-        ts: 1525209202,
-        text: 'This is emmas message'
+        author: 'dexter',
+        ts: 1535209202,
+        text: 'This is dex message'
       },
       {
         id: '99997',
@@ -120,21 +129,21 @@ class PrMessagesList extends Component {
       },
       {
         id: '99998',
-        uid: '12345',
-        type: 'message',
-        subtype: 'std',
-        author: 'dexter',
-        ts: 1535209202,
-        text: 'This is dex message'
-      },
-      {
-        id: '99999',
         uid: '23456',
         type: 'message',
         subtype: 'std',
         author: 'emma',
         ts: 1545209202,
         text: 'This is emmas message'
+      },
+      {
+        id: '99999',
+        uid: '12345',
+        type: 'message',
+        subtype: 'std',
+        author: 'dexter',
+        ts: 1545209202,
+        text: 'This is dex message'
       },
       {
         id: '100000',
@@ -142,20 +151,11 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1545209202,
-        text: 'This is dex message'
-      },
-      {
-        id: '100001',
-        uid: '12345',
-        type: 'message',
-        subtype: 'std',
-        author: 'dexter',
         ts: 1565209202,
         text: 'This is dex message'
       },
       {
-        id: '100002',
+        id: '100001',
         uid: '23456',
         type: 'message',
         subtype: 'std',
@@ -164,28 +164,44 @@ class PrMessagesList extends Component {
         text: 'This is emmas message'
       },
       {
-        id: '100003',
+        id: '100002',
         uid: '12345',
         type: 'message',
-        subtype: 'std',
+        subtype: 'notSent',
         author: 'dexter',
         ts: 1565209202,
         text: 'This is dex message'
+      },
+      {
+        id: '100003',
+        uid: '23456',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma',
+        ts: 1565209202,
+        text: 'This is emmas message'
       },
       {
         id: '100004',
         uid: '23456',
         type: 'message',
-        subtype: 'std',
-        author: 'emma',
+        subtype: 'file',
+        author: 'emma-student',
         ts: 1565209202,
-        text: 'This is emmas message'
+        text: 'Emma sent you a picture',
+        file: {
+          id: '99999',
+          name: 'Image uploaded from iOS',
+          title: 'Here is a pic of my office at lunchtime!',
+          uid: '23456',
+          imgurl: 'https://prospela.com/wp-content/uploads/2019/02/Harj-1.jpeg'
+        }
       },
       {
         id: '100005',
         uid: '23456',
         type: 'message',
-        subtype: 'file',
+        subtype: 'uploadNotSent',
         author: 'emma-student',
         ts: 1565209202,
         text: 'Emma sent you a picture',
@@ -246,6 +262,18 @@ class PrMessagesList extends Component {
       },
       {
         id: '100011',
+        uid: '12345',
+        type: 'message',
+        subtype: 'prAuto',
+        author: 'prospela',
+        ts: 1565367993,
+        text: 'This is dex message',
+        prAuto: {
+          title: 'match'
+        }
+      },
+      {
+        id: '100012',
         uid: '12345',
         type: 'message',
         subtype: 'prAuto',

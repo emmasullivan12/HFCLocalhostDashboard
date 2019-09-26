@@ -8,7 +8,7 @@ import "../css/General.css";
 import TypeformEmbedded from './TypeformEmbedded.js';
 import Autocomplete from './Autocomplete.js';
 
-class MenteeShortSU extends React.Component {
+class CountryShortSU extends React.Component {
   constructor () {
     super();
     this.state = {
@@ -148,4 +148,4 @@ class MenteeShortSU extends React.Component {
   }
 }
 
-export default MenteeShortSU;
+export default CountryShortSU;

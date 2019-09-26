@@ -1,8 +1,7 @@
 // Dex last merged this code on 10th Aug 2019
 
 import React, { Component } from 'react';
-import MentorFullSignUp from './MentorFullSignUp';
-import MentorMatches from './MentorMatches';
+import MenteeMatches from './MenteeMatches';
 import "../css/HomePage.css";
 import "../css/General.css";
 
@@ -21,8 +20,7 @@ class MentorHomePage extends Component {
           </div>
         </div>
         <div className="page-panel">
-          <MentorMatches />
-          <MentorFullSignUp />
+          <MenteeMatches />
         </div>
       </React.Fragment>
     );

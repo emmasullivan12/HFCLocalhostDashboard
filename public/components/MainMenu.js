@@ -6,6 +6,7 @@ import {
   NavLink
 } from "react-router-dom";
 import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import FullPageModal from './FullPageModal.js';
 
 import "../css/MainMenu.css";
@@ -18,19 +19,26 @@ const MenteeProfileModalProps = {
   backBtn: 'arrow'
 }
 
+const MentorProfileModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  triggerText: 'Profile',
+  usedFor: 'mentor-profile',
+  backBtn: 'arrow'
+}
+
 // This is main menu (top left) on dashboard.
 // Depending on whether user is Mentor or Student, will display different Main Menu
 class MainMenu extends Component {
-
   render() {
-  const userRole = 'mentee';
+  const {userRole} = this.props;
+
     if(userRole === 'mentor') {
       return (
           <div className="mainMenu">
-            <NavLink to="/1" className="mainMenuItem">Menu Item 1</NavLink>
-            <NavLink to="/2" className="mainMenuItem">Menu Item 2</NavLink>
-            <NavLink to="/3" className="mainMenuItem">Menu Item 3</NavLink>
-            <NavLink to="/4" className="mainMenuItem">Menu Item 4</NavLink>
+            <NavLink exact to="/" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">Dashboard</NavLink>
+            <FullPageModal {...MentorProfileModalProps}>
+              <MentorProfileContent />
+            </FullPageModal>
           </div>
         );
       } else {

@@ -5,8 +5,10 @@ import {
   NavLink
 } from "react-router-dom";
 import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import FullPageModal from './FullPageModal.js';
 import SettingsContent from './SettingsContent.js';
+import {eduName} from './UserDetail.js';
 import "../css/UserMenuContent.css";
 import "../css/General.css";
 import "../css/Modal.css";
@@ -25,14 +27,27 @@ const MenteeProfileModalProps = {
   backBtn: 'arrow'
 }
 
+const MentorProfileModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  triggerText: 'Profile',
+  usedFor: 'menu-mentor-profile',
+  backBtn: 'arrow'
+}
+
 class UserMenuContent extends Component {
   render() {
     const {onMenuClose, onKeyDown} = this.props;
-    const userRole = mentee;
-    const mentee = {
+    const userRole = 'mentor';
+    const user = {
       fname: 'Dexter',
+      lname: 'Boyce',
+      schName: 'Villiers High School',
+      uniName: '',
+      currCo: 'Pladis',
+      eetStatus: 1,
     };
     const isPicSet = false;
+    const eduInstName = eduName(user.schName, user.uniName);
     return (
       <React.Fragment>
         <div className="userMenuContainer">
@@ -47,11 +62,11 @@ class UserMenuContent extends Component {
                   />
                   )
                 : (
-                  <div className={"userMenu-thumb noPic "+userRole}>{mentee.fname.charAt(0).toUpperCase()}</div>
+                  <div className={"userMenu-thumb noPic "+userRole}>{user.fname.charAt(0).toUpperCase()}</div>
                 )}
               </div>
-              <span className="userMenu-name overflow-ellipsis">fname lname</span>
-              <span className="userMenu-preferred-name overflow-ellipsis">fname</span>
+              <span className="userMenu-name overflow-ellipsis">{user.fname} {user.lname}</span>
+              <span className="userMenu-preferred-name overflow-ellipsis">{user.fname}</span>
             </h2>
             <ul className="userMenu-list">
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
@@ -59,14 +74,23 @@ class UserMenuContent extends Component {
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
                 </NavLink>
               </li>
-              <FullPageModal {...MenteeProfileModalProps} role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <MenteeProfileContent />
-              </FullPageModal>
-              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <NavLink to="/profile/saved-highlights" className="userMenu-link">
-                  <span className="userMenuLabel overflow-ellipsis">My Highlights</span>
-                </NavLink>
-              </li>
+              {userRole === 'mentee' && (
+                <FullPageModal {...MenteeProfileModalProps} role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                  <MenteeProfileContent />
+                </FullPageModal>
+              )}
+              {userRole === 'mentor' && (
+                <FullPageModal {...MentorProfileModalProps} role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                  <MentorProfileContent />
+                </FullPageModal>
+              )}
+              {userRole === 'mentee' && (
+                <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                  <NavLink to="/profile/saved-highlights" className="userMenu-link">
+                    <span className="userMenuLabel overflow-ellipsis">My Highlights</span>
+                  </NavLink>
+                </li>
+              )}
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile/influencer-stats" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Influencer Stats</span>
@@ -79,30 +103,46 @@ class UserMenuContent extends Component {
               </li>
             </ul>
           </section>
-          <section className="userMenu-eduInst">
-            <h2 className="userMenu-header">
-              <div className="userMenu-eduInstThumb" />
-              <span className="userMenu-name overflow-ellipsis">Villiers High School</span>
-              <span className="userMenu-preferred-name overflow-ellipsis">Not yet signed up</span>
-            </h2>
-            <ul className="userMenu-list">
-              <li className="userMenu-list-item-nohover" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <span className="userMenu-eduInstDetail overflow-ellipsis">
-                  Sign up your school to access real employee e-mentors. <NavLink to="/invite" className="inline-link">Learn more</NavLink>
-                </span>
-              </li>
-            </ul>
-          </section>
+          {userRole === 'mentee' && (
+            <section className="userMenu-eduInst">
+              <h2 className="userMenu-header">
+                <div className="userMenu-eduInstThumb" />
+                <span className="userMenu-name overflow-ellipsis">{user.eetStatus===0 || user.eetStatus===1 ? eduInstName : (user.currCo)}</span>
+                <span className="userMenu-preferred-name overflow-ellipsis">Not yet signed up</span>
+              </h2>
+              <ul className="userMenu-list">
+                <li className="userMenu-list-item-nohover" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                  <span className="userMenu-eduInstDetail overflow-ellipsis">
+                    Sign up your school to access real employee e-mentors. <NavLink to="/invite" className="inline-link">Learn more</NavLink>
+                  </span>
+                </li>
+              </ul>
+            </section>
+          )}
+          {userRole === 'mentor' && (
+            <section className="userMenu-eduInst">
+              <h2 className="userMenu-header">
+                <div className="userMenu-eduInstThumb" />
+                <span className="userMenu-name overflow-ellipsis">{user.currCo}</span>
+                <span className="userMenu-preferred-name overflow-ellipsis">Not yet signed up</span>
+              </h2>
+              <ul className="userMenu-list">
+                <li className="userMenu-list-item-nohover" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                  <span className="userMenu-eduInstDetail overflow-ellipsis">
+                    Invite your colleagues to increase your company&#39;s collective impact. <NavLink to="/invite" className="inline-link">Learn more</NavLink>
+                  </span>
+                </li>
+              </ul>
+            </section>
+          )}
           <section className="userMenu-settings">
             <ul className="userMenu-list">
               <li className="userMenu-list-item">
-    {/*            <NavLink to="/settings" className="userMenu-link"> */}
-                  <span className="userMenuLabel overflow-ellipsis">
-                    <FullPageModal {...SettingsModalProps}>
-                      <SettingsContent />
-                    </FullPageModal>
-                  </span>
-      {/*          </NavLink>*/}
+                <span className="userMenuLabel overflow-ellipsis">
+                  <FullPageModal {...SettingsModalProps}>
+                    <SettingsContent userRole={userRole}/>
+                  </FullPageModal>
+                </span>
               </li>
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/help-and-feedback" className="userMenu-link">

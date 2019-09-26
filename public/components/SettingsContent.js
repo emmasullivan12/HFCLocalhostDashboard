@@ -78,6 +78,7 @@ class SettingsContent extends Component {
 
   render() {
     const {desktopNotifsOn, isEditPhoneNo, phoneNo, isRemoved, formalEmail, personalEmail, isEditFormalEmail, isEditPersonalEmail} = this.state;
+    const {userRole} = this.props;
     return (
       <React.Fragment>
         <div className="article-page">
@@ -97,7 +98,7 @@ class SettingsContent extends Component {
                     Desktop notifications are currently {desktopNotifsOn===false ? <span className="redText inheritFontSize">disabled</span> : <span className="greenText inheritFontSize">enabled</span>}
                   </h2>
                   <p>
-                    We strongly recommend enabling notifications so that you’ll know when important activity happens in your Prospela space e.g. when your E-Mentor sends you a direct message
+                    We strongly recommend enabling notifications so that you’ll know when important activity happens in your Prospela space e.g. when your {userRole === 'mentee' ? 'E-Mentor' : 'Mentee'} sends you a direct message
                   </p>
                   <button type="button" className="Submit-btn enableNotif" onClick={this.toggleDesktopNotifs}>
                     <i className="fa fa-bell buttonIcon" />
@@ -107,7 +108,7 @@ class SettingsContent extends Component {
                     Messages
                   </h2>
                   <p>
-                    Receive messages from E-Mentors and other students in your teams, including 1:1 careers advice personalised to you.
+                    Receive messages from {userRole === 'mentee' ? 'E-Mentors and other students in your groups, including 1:1 careers advice personalised to you' : 'Mentees and other employees in your groups'}.
                   </p>
                   <form onChange={this.handleSubmit}>
                     <div className="notifToggleContainer">
@@ -151,7 +152,7 @@ class SettingsContent extends Component {
                     Promotions and tips
                   </h2>
                   <p>
-                    Receive inspiration, career opportunities, promotions, surveys, and product updates from Prospela and our partners.
+                    Receive inspiration, {userRole === 'mentee' ? 'career opportunities,' : 'ongoing support,'} promotions, surveys, and product updates from Prospela and our partners.
                   </p>
                   <form onChange={this.handleSubmit}>
                     <div className="notifToggleContainer">

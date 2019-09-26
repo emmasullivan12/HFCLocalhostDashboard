@@ -126,6 +126,59 @@ function DisplayFile(props) {
   );
 }
 
+function MessageNotSent(props) {
+  return (
+    <React.Fragment>
+      <div className="block-container">
+        <div className="message-container">
+          <Avatar senderID={props.message.uid} senderName={props.message.author} />
+          <div className="message-content-box">
+            <div className="sent-msg-info">
+              <span className="sender-name">{props.message.author}</span>
+              <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+            </div>
+            <div className="message-content">
+              {props.message.text}
+            </div>
+            <div className="msgStatus error">
+              &#10007; Error sending message. Please check your connection and try again
+            </div>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function UploadNotSent(props) {
+  return (
+    <React.Fragment>
+      <div className="block-container">
+        <div className="message-container">
+          <Avatar senderID={props.message.uid} senderName={props.message.author} />
+          <div className="message-content-box">
+            <div className="sent-msg-info">
+              <span className="sender-name">{props.message.author}</span>
+              <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+            </div>
+            <div className="message-content">
+              <div className="extra-content-container">
+                <DisplayMsgFile
+                  file={props.message.file}
+                  error="error"
+                />
+              </div>
+              <div className="msgStatus error">
+                &#10007; Error sending message. Please check your connection and try again
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+}
+
 function MenteeReq(props) {
   return (
     <React.Fragment>
@@ -178,7 +231,7 @@ function MentorReply(props) {
                 <span className="prAutoMsgTitle">Your request was accepted!</span>
                 )
               : (
-                <span className="prAutoMsgTitle">Unfortunately, that employee couldn&#39;t accept your request!</span>
+                <span className="prAutoMsgTitle">Unfortunately, that employee couldn&#39;t accept your request</span>
                 )
               }
             </div>
@@ -192,9 +245,11 @@ function MentorReply(props) {
               </a>
               )
             : (
-              <a href="/latest-advice" className="link msg-extras-ctaTxt">
-                Request new matches &#62;&#62;
-              </a>
+              <form action="/latest-advice">
+                <button type="submit" className="Submit-btn chatCTA">
+                  Request new matches &#62;&#62;
+                </button>
+              </form>
               )
             }
           </div>
@@ -205,6 +260,7 @@ function MentorReply(props) {
 }
 
 function PrAuto(props) {
+  const actioned = false;
   switch (props.message.prAuto.title) {
     case 'start':
       return (
@@ -249,6 +305,30 @@ function PrAuto(props) {
           </div>
         </div>
       );
+    case 'match':
+     return (
+       <div className="prauto-msg-container">
+         <div className="msg-title-container">
+             <div className="title-emoji-container">
+               <i className="emoji-icon tada-emoji" />
+             </div>
+             <div className="message-content-box msgTitle">
+               <span className="prAutoMsgTitle">&#91;NEW MATCH&#93; Prospela has a new mentoring match for you!</span>
+             </div>
+         </div>
+         <div className="msg-extras textLeft">
+           {actioned ? (
+             <div className="greenText">&#10004; You have already seen the match</div>
+           ) : (
+             <form action="/latest-advice">
+               <button type="submit" className="Submit-btn chatCTA">
+                 See Matches &#62;&#62;
+               </button>
+             </form>
+           )}
+          </div>
+       </div>
+     );
     case 'ending':
       return (
         <div className="prauto-msg-container">
@@ -353,6 +433,10 @@ class PrMessageContents extends Component {
         return <DisplayFile message={this.props.message} />
       case "prAuto":
         return <PrAuto message={this.props.message} />
+      case 'notSent':
+        return <MessageNotSent message={this.props.message}/>
+      case 'uploadNotSent':
+        return <UploadNotSent message={this.props.message} />
       case "menteeReq":
         return <MenteeReq message={this.props.message} />
       case "mentorAcc":

@@ -33,10 +33,6 @@ import TypeformSignUp from "./TypeformSignUp";
 import UserMenuContent from "./UserMenuContent";
 import VerifyEmail from "./VerifyEmail";
 
-const MenuModalContent = (
-  <UserMenuContent />
-)
-
 /*
 const SUContent = ('mentor or mentee?')
 const MenteeSUContent = ('mentee SU')
@@ -220,11 +216,13 @@ class Dashboard extends Component{
                 <span id="close-modal" className="u-hide-visually">Close</span>
                 <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
               </button>
-              <MenuModal>{MenuModalContent}</MenuModal>
+              <MenuModal>
+                <UserMenuContent userRole={userRole}/>
+              </MenuModal>
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
-                    <MainMenu />
+                    <MainMenu userRole={userRole}/>
                     <div className="menuBreak"/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages'/>
                     <div className="menuBreak"/>
@@ -237,7 +235,6 @@ class Dashboard extends Component{
                     </div>
                   </div>
                 </div>
-              {/*  <div className="scroller"/>*/}
                 <div className="c-scrollbar__track">
                   <div className="c-scrollbar__bar"/>
                 </div>
@@ -247,13 +244,13 @@ class Dashboard extends Component{
               <Switch>
                 {{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
-                  ['mentor']: <Redirect exact from="/" to="/mentorhomepage" />,
+                  ['mentor']: <Redirect exact from="/" to="/mentor-homepage" />,
                 }[userRole]}
                 <ProtectedRoute path="/latest-advice" roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,
                 <ProtectedRoute path="/mentee-profile" roleAllowed="mentee" userRole="mentee" component={LgdInUsrProfile}/>,
                 <ProtectedRoute path="/to-do-list" roleAllowed="mentee" userRole="mentee" component={Todo}/>,
                 <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
-                <ProtectedRoute path="/mentorhomepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
+                <ProtectedRoute path="/mentor-homepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <ProtectedChats chats={DUMMY_CHAT_LIST} />
                 <Route component={NotFound}/>
@@ -271,7 +268,7 @@ class App extends Component{
     this.props.fetchData();
   } */
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -327,7 +324,6 @@ function MenteeSteps({userRole}) {
           );
           case 'didEmailVerif':
           case 'didCountry':
-
             return (
               <BrowserRouter>
                 <Switch>
@@ -346,28 +342,10 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 4;
+  const step = 'skippedTrain';
 //    const step = this.props.users.step;
       switch (step) {
-        case 1:
-          return (
-            <BrowserRouter>
-              <Switch>
-                <Redirect exact from="/" to="/mentor-signup" />
-                <Route path="/mentor-signup" component={TypeformSignUp} step={step} />
-              </Switch>
-            </BrowserRouter>
-          );
-        case 2:
-          return (
-            <BrowserRouter>
-              <Switch>
-                <Redirect exact from="/" to="/mentor-training" />
-                <Route path="/mentor-training" component={TypeformSignUp} step={step} />
-              </Switch>
-            </BrowserRouter>
-          );
-        case 3:
+        case 'IFSTATEMENT':
           return (
             <BrowserRouter>
               <Switch>
@@ -376,11 +354,33 @@ function MentorSteps({userRole}) {
               </Switch>
             </BrowserRouter>
           );
-        case 4:
-          return <Loading userRole={userRole}/>
-        case 5:
-          return <Dashboard userRole={userRole}/>
-      }
+          case 'didEmailVerif':
+          case 'didCountry':
+          case 'didSUtf':
+          case 'didU18tf':
+            return (
+              <BrowserRouter>
+                <Switch>
+                  <Redirect exact from="/" to="/mentor-signup" />
+                  <Route path="/mentor-signup" component={TypeformSignUp} step={step} />
+                </Switch>
+              </BrowserRouter>
+            );
+          case 'didU18pref':
+            return (
+              <BrowserRouter>
+                <Switch>
+                  <Redirect exact from="/" to="/training" />
+                  <Route path="/mentor-training" component={TypeformSignUp} step={step} />
+                </Switch>
+              </BrowserRouter>
+            );
+          case 5:
+            return <Loading userRole={userRole}/>
+          case 'skippedTrain':
+          case 'didTrain':
+            return <Dashboard userRole={userRole} step={step}/>
+        }
 }
 
 // Dummy chat list data (this will eventually come from Postgres)

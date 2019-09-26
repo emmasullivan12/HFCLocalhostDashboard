@@ -392,6 +392,10 @@ hr{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   background: #fff;
 }
+.Submit-btn.chatCTA{
+  height: 30px;
+  font-size: 14px;
+}
 .Submit-btn.HollowBtn{
   color: #58d2bb;
   border: 2px solid #58d2bb;
@@ -536,6 +540,12 @@ hr{
   color: #39a28e;
   border-style: solid;
 }
+.btn-left.active,
+.btn-right.active{
+  background-color: rgb(111, 195, 179);
+  color: #fff;
+}
+
 /* In-chat Buttons */
 
 

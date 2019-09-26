@@ -447,7 +447,7 @@ svg:not(:root) {
 .c-scrollbar{
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: calc(100% - 81px - 35px);
 }
 .c-scrollbar__hider{
   overflow-y: scroll;

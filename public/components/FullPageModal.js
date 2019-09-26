@@ -45,7 +45,7 @@ const FullPageModalContent = ({
             )}
           </button>
         </div>
-        <div className="modal-content">
+        <div className="fpModal-content">
           {content}
         </div>
       </div>

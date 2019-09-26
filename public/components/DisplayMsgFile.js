@@ -22,7 +22,7 @@ class DisplayMsgFile extends Component {
 
   render() {
   const {isFlexContainerOpen} = this.state;
-  const {file} = this.props;
+  const {file, error} = this.props;
 
     return (
       <React.Fragment>
@@ -47,6 +47,9 @@ class DisplayMsgFile extends Component {
                     src={file.imgurl}
                     alt={file.name}
                   />
+                  {error && (
+                    <div className="msg-img-overlay" />
+                  )}
                 </a>
               </div>
             </div>
