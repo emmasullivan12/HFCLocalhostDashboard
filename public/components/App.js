@@ -342,7 +342,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 'skippedTrain';
+  const step = 'didShortSUtf';
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':
@@ -356,8 +356,6 @@ function MentorSteps({userRole}) {
           );
           case 'didEmailVerif':
           case 'didCountry':
-          case 'didSUtf':
-          case 'didU18tf':
             return (
               <BrowserRouter>
                 <Switch>
@@ -366,19 +364,14 @@ function MentorSteps({userRole}) {
                 </Switch>
               </BrowserRouter>
             );
-          case 'didU18pref':
-            return (
-              <BrowserRouter>
-                <Switch>
-                  <Redirect exact from="/" to="/training" />
-                  <Route path="/mentor-training" component={TypeformSignUp} step={step} />
-                </Switch>
-              </BrowserRouter>
-            );
           case 5:
             return <Loading userRole={userRole}/>
-          case 'skippedTrain':
+          case 'didShortSUtf':
+          case 'didFullSUtf':
           case 'didTrain':
+          case 'didU18tf':
+          case 'fullSUTrain':
+          case 'fullSUidTrain':
             return <Dashboard userRole={userRole} step={step}/>
         }
 }

@@ -1,26 +1,37 @@
 // Dex last merged this code on 10th Aug 2019
 
 import React, { Component } from 'react';
-import MenteeMatches from './MenteeMatches';
+
+import MentorHomepageCTAContainer from './HomepageCTAContainer.js';
+import MenuNav from './MenuNav.js';
 import "../css/HomePage.css";
 import "../css/General.css";
+
+const DUMMY_GROUP_LIST = [
+  {groupID: '10000', name: 'Villiers', status: 'active'},
+  {groupID: '10001', name: 'AVFX', status: 'active'},
+  {groupID: '10002', name: 'EY', status: 'active'},
+  {groupID: '10003', name: 'GE', status: 'active'},
+  {groupID: '10004', name: 'Pladis', status: 'active'},
+];
 
 class MentorHomePage extends Component {
   render(){
     return (
       <React.Fragment>
         <div className="page-header">
+          <MenuNav />
           <div className="page-detail-container">
             <div className="page-title overflow-ellipsis">
-              Latest Advice
+              Dashboard
             </div>
             <div className="page-detail overflow-ellipsis">
-              Explore the latest from your Prospela network, based on your skills & interests
+              Visualise your impact and explore the latest from your Prospela network
             </div>
           </div>
         </div>
         <div className="page-panel">
-          <MenteeMatches />
+          <MentorHomepageCTAContainer groups={DUMMY_GROUP_LIST}/>
         </div>
       </React.Fragment>
     );

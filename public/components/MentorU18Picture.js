@@ -14,7 +14,7 @@ import "../css/Login.css";
 
 const U18CameraUploadModalProps = {
   ariaLabel: 'Upload a picture',
-  triggerText: 'Take Picture',
+  triggerText: 'Take Selfie with Photo ID',
   usedFor: 'U18picContainer'
 }
 
@@ -23,29 +23,20 @@ class MentorU18Picture extends Component {
     const {step} = this.props;
 
     return (
-      <React.Fragment>
-        <div>
-          <div className='progress-circles-container'>
-            <div className={step==='1' ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle" />
-            </div>
-            <div className={step==='2' ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle" />
-            </div>
-            <div className={step==='3' ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle" />
-            </div>
-            <div className={step==='4' ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle" />
-            </div>
-          </div>
-          <form method="POST" action="/U18PhotoID" className="U18PhotoForm">
-            <Modal {...U18CameraUploadModalProps}>
-              <U18CameraUploadContent/>
-            </Modal>
-          </form>
+      <section>
+        <div className="contentBox landingCTA">
+          <div className="placeholderPic completeFullSU"/>
+          <h2 className="landingCTATitle">
+            Upload a selfie with your Photo ID
+          </h2>
+          <p className="landingCTADesc">
+            Please make sure you upload a clear photo of you holding a valid piece of government-issued photo ID (e.g. Passport, Drivers Licence).
+          </p>
+          <Modal {...U18CameraUploadModalProps}>
+            <U18CameraUploadContent/>
+          </Modal>
         </div>
-      </React.Fragment>
+      </section>
     );
   }
 }
