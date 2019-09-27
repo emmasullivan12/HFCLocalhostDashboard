@@ -387,6 +387,8 @@ hr{
   border: 1px solid #351c75;
   background: #fff;
   color: #351c75;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .Submit-btn.landingCTA.hollow:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);

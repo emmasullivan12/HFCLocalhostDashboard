@@ -51,7 +51,7 @@ class HomepageCTAContainer extends Component {
           </div>
         </div>
         {step === 'didShortSU' && (
-          <JoinProgPrompt />
+          <JoinProgPrompt userRole='mentee'/>
         )}
         {step === 'autoEnroll' && (
           <AutoEnrollPrompt />

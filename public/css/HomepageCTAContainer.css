@@ -123,9 +123,33 @@
   min-height: 80px;
 }
 
+.placeholderPic.completeFullSUMentor{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteFullSignUpMentor.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
+
 .placeholderPic.completeMenteeTrain{
   background-repeat: no-repeat;
   background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteMenteeTraining.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
+
+.placeholderPic.completeMentorTrain{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteMentorTraining.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
+
+.placeholderPic.uploadSelfieID{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2019/09/PhotoID.png');
   background-size: contain;
   background-position: center;
   min-height: 80px;

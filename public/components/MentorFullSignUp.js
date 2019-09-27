@@ -21,7 +21,7 @@ class MentorFullSignUp extends Component {
     return (
       <section>
         <div className="contentBox landingCTA">
-          <div className="placeholderPic completeFullSU"/>
+          <div className="placeholderPic completeFullSUMentor"/>
           <h2 className="landingCTATitle">
             Complete your full sign up
           </h2>

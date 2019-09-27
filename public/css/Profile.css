@@ -1,8 +1,8 @@
 /* Dex last merged this code on 15th Sept 2019 */
 
 .profile-thumb-container{
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   margin-right: .75rem;
   box-sizing: content-box;
   text-align: center;
@@ -14,14 +14,14 @@
 }
 
 .profile-thumb{
-  width: 10rem;
+  width: 8rem;
   margin-right: .75rem;
-  height: 10rem;
+  height: 8rem;
   border-style: none;
   background-size: cover;
 }
 .profile-thumb.noPic{
-  font-size: 80px;
+  font-size: 60px;
   padding-top: 42%;
   color: #fff;
 }
@@ -38,7 +38,7 @@
   height: 2rem;
   padding-top: -20px;
   bottom: 45px;
-  left: 125px;
+  left: 100px;
   border-style: none;
   position: relative;
   color: #fff;

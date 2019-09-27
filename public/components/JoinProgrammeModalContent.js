@@ -39,8 +39,9 @@ class JoinProgrammeModalContent extends Component {
 
   render() {
     const { progCode, progName, messageFromServer } = this.state;
+    const {userRole} = this.props;
     const isError = false;
-    const nonPartnerSch = true; /// check school email (or prog code if signed up with personal email) for school partnership
+    const nonPartnerInst = true; /// check school email (or prog code if signed up with personal email) for school partnership
     //const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
@@ -51,7 +52,7 @@ class JoinProgrammeModalContent extends Component {
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <p className="modalDesc alignCenter">
-            Enter an invite code from your teacher or Prospela Partner below (or click the link if they&#39;ve sent you an invite email):
+            {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they&#39;ve sent you an invite email):' : 'Get a programme code or invite link from your Employer to increase your company\'s collective impact'}
           </p>
           <form className="leftRightPad">
             <input
@@ -75,7 +76,7 @@ class JoinProgrammeModalContent extends Component {
               </div>
             )}
             <label className="checkbox-container-login" id="tncText">
-              I agree to share my Prospela profile with the programme admin for the purposes of providing me career advice & support
+              I agree to share my Prospela profile with the programme admin for the purposes of {userRole === 'mentee' ? 'providing me career advice & support' : 'providing effective career advice & support to young people'}
               <input type="checkbox" id="tncCheckbox" name="tanp" />
               <span className="checkmark left" id="tncStyle"/>
             </label>
@@ -85,9 +86,14 @@ class JoinProgrammeModalContent extends Component {
               </button>
             </div>
           </form>
-          {nonPartnerSch && (
+          {nonPartnerInst && userRole === 'mentee' && (
             <div className="neutralText alignCenter">
               Don&#39;t have a code? Click to get your school to pay ;)
+            </div>
+          )}
+          {nonPartnerInst && userRole === 'mentor' && (
+            <div className="neutralText alignCenter">
+              Don&#39;t have a code? Click to invite your company&#39;s Social Impact Lead
             </div>
           )}
         </React.Fragment>

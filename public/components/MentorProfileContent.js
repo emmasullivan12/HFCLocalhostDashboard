@@ -68,8 +68,9 @@ class MentorProfileContent extends Component {
       timeZone: 'UTC',
       avail: 1,
       activeMentees: 2,
+      allMentees: 5,
       views: 200,
-      compTraining: 1,
+      didTrain: 1,
       lastActiveDate: '1556389526',
       yrsExp: 7,
       uni: 0,
@@ -173,7 +174,7 @@ class MentorProfileContent extends Component {
                 : (
                   <div className="profile-thumb img-circle noPic mentor">{mentor.fname.charAt(0).toUpperCase()}</div>
                 )}
-                {mentor.compTraining === 1 && (
+                {mentor.didTrain === 1 && (
                   <div className="pr-certified img-circle tooltip">
                     <span>&#10003;</span>
                     <span className="tooltiptext profile">Prospela Certified Mentor: Employee has completed Prospela&#39;s mentoring training</span>
@@ -216,7 +217,10 @@ class MentorProfileContent extends Component {
                     <div className="credTxtContainer">
                       <div><span className="credNum">{mentor.yrsExp}</span>years experience</div>
                       <div><span className="credNum">{mentor.activeMentees}</span># active mentees</div>
-                      <div><span className="credNum">{mentor.views}</span># content views / reach</div>
+                      <div><span className="credNum">{mentor.allMentees}</span># total mentees supported</div>
+                      {mentor.views != null && (
+                        <div><span className="credNum">{mentor.views}</span># content views / reach</div>
+                      )}
                       <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>
                     </div>
                   </div>
@@ -247,7 +251,7 @@ class MentorProfileContent extends Component {
                   {mentor.helpFocus != null && (
                     <React.Fragment>
                       <h2>
-                        I&#39;m might be good for helping you with
+                        I might be good for helping you with
                       </h2>
                       <p>
                         {mentor.helpFocus}

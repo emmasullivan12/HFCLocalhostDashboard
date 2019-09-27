@@ -25,12 +25,12 @@ class MentorU18Picture extends Component {
     return (
       <section>
         <div className="contentBox landingCTA">
-          <div className="placeholderPic completeFullSU"/>
+          <div className="placeholderPic uploadSelfieID"/>
           <h2 className="landingCTATitle">
             Upload a selfie with your Photo ID
           </h2>
           <p className="landingCTADesc">
-            Please make sure you upload a clear photo of you holding a valid piece of government-issued photo ID (e.g. Passport, Drivers Licence).
+            To verify your identify, please upload a clear photo of yourself with your valid government-issued photo ID (e.g. Passport, Drivers Licence). We&#39;re so grateful that you&#39;d like to support under-18s!
           </p>
           <Modal {...U18CameraUploadModalProps}>
             <U18CameraUploadContent/>

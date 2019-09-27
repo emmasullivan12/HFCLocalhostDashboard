@@ -2,16 +2,14 @@
 
 import React, { Component } from 'react';
 
-import MentorHomepageCTAContainer from './HomepageCTAContainer.js';
+import MentorHomepageCTAContainer from './MentorHomepageCTAContainer.js';
 import MenuNav from './MenuNav.js';
 import "../css/HomePage.css";
 import "../css/General.css";
 
 const DUMMY_GROUP_LIST = [
-  {groupID: '10000', name: 'Villiers', status: 'active'},
   {groupID: '10001', name: 'AVFX', status: 'active'},
   {groupID: '10002', name: 'EY', status: 'active'},
-  {groupID: '10003', name: 'GE', status: 'active'},
   {groupID: '10004', name: 'Pladis', status: 'active'},
 ];
 

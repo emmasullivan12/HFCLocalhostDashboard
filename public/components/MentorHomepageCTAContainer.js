@@ -22,8 +22,8 @@ const JoinProgrammePlusModalProps = {
 
 class MentorHomepageCTAContainer extends Component {
   render() {
-    const step = 'didShortSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
-    const hasInvite = true;
+    const step = 'fullSUTrain'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const hasInvite = false;
     const groups = [];
 
     this.props.groups.forEach((group) => {
@@ -57,11 +57,11 @@ class MentorHomepageCTAContainer extends Component {
         {step === 'didFullSUtf' && (
           <MentorTraining /> // If completed this but didnt want to do U18 then update to 'fullSUTrain', otherwise 'fullSUidTrain'
         )}
-        {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===true(
+        {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===true && (
           <AutoEnrollPrompt /> // to do
         )}
-        {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===false(
-          <JoinProgPrompt /> // to do
+        {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===false && (
+          <JoinProgPrompt userRole='mentor' /> // to do
         )}
       </div>
     );
