@@ -6,6 +6,8 @@ import "../css/General.css";
 import Modal from './Modal.js';
 import RequestChatContent from './RequestChatContent.js';
 import PassMentorContent from './PassMentorContent.js';
+import FullPageModal from './FullPageModal.js';
+import MentorProfileContent from './MentorProfileContent.js';
 
 // Cards must show different contents if waiting for match vs prospela already matched
 // Cards must have different:- Mentor names / ID / content / button does different action
@@ -24,14 +26,43 @@ const PassModalProps = {
   usedFor: 'PassBtn'
 }
 
+const MentorProfileModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  triggerText: 'See full profile',
+  usedFor: 'card-mentor-profile',
+  backBtn: 'arrow'
+}
+
 // Content for MentorCards using props passed from database
 class MentorCardContent extends Component {
+  constructor () {
+    super();
+    this.state = {
+      isOverflowOpen: false
+    }
+    this.toggleOverflow = this.toggleOverflow.bind(this);
+  }
+
+  toggleOverflow() {
+    const currentState = this.state.isOverflowOpen;
+    this.setState({ isOverflowOpen: !currentState });
+    const matchReason = document.getElementById('pr-match-reason')
+    const userCardContainer = document.getElementById('UserCardContainer')
+    if (this.state.isOverflowOpen === true) {
+      matchReason.style.maxHeight = 'none';
+      userCardContainer.style.height = '500px';
+    } else {
+      matchReason.style.maxHeight = '80px';
+      userCardContainer.style.height = '450px';
+    }
+  }
+
   render() {
     const mentor = this.props.mentor;
 
     return(
       <React.Fragment>
-        <div className="UserCardContainer">
+        <div className="UserCardContainer" id="UserCardContainer">
           {mentor.pr_top_match==='t' && (
             <div className="recd-match">
               Top match for you
@@ -55,9 +86,9 @@ class MentorCardContent extends Component {
           <div className="UserCardRole" >
             {mentor.role} &#64; {mentor.company}
           </div>
-          <div className="match-see-profile" >
-            See full profile
-          </div>
+          <FullPageModal {...MentorProfileModalProps}>
+            <MentorProfileContent />
+          </FullPageModal>
           <div className="how-mtchd-container">
             {(mentor.role_vs_role_desired==='t' || mentor.industry_pref==='t') && (
               <div className="match-reason-li">
@@ -98,15 +129,18 @@ class MentorCardContent extends Component {
               Message from Prospela:
             </div>
           </div>
-          <div className="pr-match-reason">
+          <div className="pr-match-reason" id="pr-match-reason">
             {mentor.prospela_match_comments}
           </div>
+          <button type="button" className="multilineOverflowBtn" onClick={this.toggleOverflow}>
+            See more...
+          </button>
           <div className="ModalButtons">
-            <Modal {...PassModalProps}>
-              <PassMentorContent />
-            </Modal>
             <Modal {...RequestChatModalProps}>
               <RequestChatContent mentorName={mentor.mentorName}/>
+            </Modal>
+            <Modal {...PassModalProps}>
+              <PassMentorContent />
             </Modal>
           </div>
         </div>

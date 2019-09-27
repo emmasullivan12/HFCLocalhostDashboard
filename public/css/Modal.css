@@ -61,6 +61,28 @@
   background-color: #351c75;
 }
 
+
+.ModalOpenBtn-card-mentor-profile{
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: #4e4ed6;
+  margin-top: 18px;
+  background: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.ModalOpenBtn-card-mentor-profile:hover{
+  color: #3c3cca;
+  background: none;
+  cursor: pointer;
+}
+.ModalOpenBtn-card-mentor-profile:active{
+  background: none;
+}
+
 .ModalOpenBtn-mentee-profile,
 .ModalOpenBtn-mentor-profile{
   height: 50px;
@@ -192,23 +214,10 @@
 }
 
 .ModalOpenBtn-RequestChat {
-  color: #58d2bb;
-  font-weight: 600;
-  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
-  background: rgba(216,244,239,.67);
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border: none;
+  min-width: 140px;
   height: 40px;
-  min-width: 180px;
-  padding: 0;
-}
-
-.ModalOpenBtn-RequestChat:hover {
-  color: #fff;
-  background: #58d2bb;
+  display: block;
+  margin: auto;
 }
 
 .ModalOpenBtn-RequestChat:focus {
@@ -230,6 +239,9 @@
   text-align: center;
   text-decoration: none;
   font-size: 11px;
+  font-weight: 400;
+  display: block;
+  margin: auto;
   width: 100px;
   height: 40px;
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
@@ -373,6 +385,7 @@
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+.fullpage-modal-container.card-mentor-profile,
 .fullpage-modal-container.menu-mentee-profile,
 .fullpage-modal-container.menu-mentor-profile,
 .fullpage-modal-container.mentee-profile,

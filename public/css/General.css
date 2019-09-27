@@ -490,6 +490,19 @@ hr{
 .Submit-btn:active{
   background: #58d2bb;
 }
+.multilineOverflowBtn{
+  border: 0;
+  outline: none;
+  color: #58d2bb;
+  background-color: #fff;
+  font-size: 13px;
+  padding: 0 0 10px 0;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  width: 200px;
+  text-align: left;
+}
 .btn-left{
   width: 100px;
   color: #3baf99;

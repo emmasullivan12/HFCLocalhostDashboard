@@ -7,7 +7,7 @@ class MentorMatches extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      matchstatus: 8
+      matchstatus: 2
     }
     this.requestNewMatches = this.requestNewMatches.bind(this);
   }

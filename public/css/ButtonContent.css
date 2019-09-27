@@ -80,8 +80,9 @@
 }
 .RequestChatBtnContainer{
   height: 30px;
+  min-width: 160px;
   text-decoration: none;
-  padding: 0.5rem 1.7rem 0.5rem 1.7rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .RequestChatIcon{
