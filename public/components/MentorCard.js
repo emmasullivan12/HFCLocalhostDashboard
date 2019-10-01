@@ -37,24 +37,13 @@ const MentorProfileModalProps = {
 class MentorCardContent extends Component {
   constructor () {
     super();
-    this.state = {
-      isOverflowOpen: false
-    }
-    this.toggleOverflow = this.toggleOverflow.bind(this);
+    this.openOverflow = this.openOverflow.bind(this);
   }
 
-  toggleOverflow() {
-    const currentState = this.state.isOverflowOpen;
-    this.setState({ isOverflowOpen: !currentState });
-    const matchReason = document.getElementById('pr-match-reason')
-    const userCardContainer = document.getElementById('UserCardContainer')
-    if (this.state.isOverflowOpen === true) {
-      matchReason.style.maxHeight = 'none';
-      userCardContainer.style.height = '500px';
-    } else {
-      matchReason.style.maxHeight = '80px';
-      userCardContainer.style.height = '450px';
-    }
+  openOverflow(e) {
+    e.currentTarget.previousSibling.style.height = '150px';
+    e.currentTarget.parentNode.style.height = '500px';
+    e.currentTarget.innerHTML = '';
   }
 
   render() {
@@ -62,7 +51,7 @@ class MentorCardContent extends Component {
 
     return(
       <React.Fragment>
-        <div className="UserCardContainer" id="UserCardContainer">
+        <div className="UserCardContainer">
           {mentor.pr_top_match==='t' && (
             <div className="recd-match">
               Top match for you
@@ -129,10 +118,10 @@ class MentorCardContent extends Component {
               Message from Prospela:
             </div>
           </div>
-          <div className="pr-match-reason" id="pr-match-reason">
+          <div className="pr-match-reason">
             {mentor.prospela_match_comments}
           </div>
-          <button type="button" className="multilineOverflowBtn" onClick={this.toggleOverflow}>
+          <button type="button" className="multilineOverflowBtn" onClick={this.openOverflow}>
             See more...
           </button>
           <div className="ModalButtons">
@@ -232,6 +221,38 @@ const DUMMY_MENTOR_DATA = [
     industry_pref: '',
     latest_actions_on_student_todo_list: 't',
     prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to emphasize how good a match they really are especially because you said you loved ABC!!"
+  },
+  {
+    mentorName: "Sally Sausage",
+    id: "34569",
+    skills: "Making a fool of myself, speaking with a plum in my mouth",
+    interests: "Undermining people, Being the class clown, becoming PM",
+    role: "Finance Marketing Manager",
+    company: "Pladis",
+    learning: "I'm not cut out for the job",
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: '',
+    skills_want_to_develop: 't',
+    industry_pref: '',
+    latest_actions_on_student_todo_list: 't',
+    prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ."
+  },
+  {
+    mentorName: "Sally Sausage",
+    id: "34455",
+    skills: "Making a fool of myself, speaking with a plum in my mouth",
+    interests: "Undermining people, Being the class clown, becoming PM",
+    role: "Finance Marketing Manager",
+    company: "Pladis",
+    learning: "I'm not cut out for the job",
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: '',
+    skills_want_to_develop: 't',
+    industry_pref: '',
+    latest_actions_on_student_todo_list: 't',
+    prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
   }
 ]
 
