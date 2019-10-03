@@ -1,5 +1,18 @@
 /* Dex last merged this code on 15th Sept 2019 */
 
+.contentContainer{
+  overflow-y: auto;
+  height: 100%;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+@media screen and (min-width: 760px) {
+  .contentContainer{
+    width: calc(100vw - 220px);
+  }
+}
+
 .page-header {
   display:flex;
   flex-direction: row;
@@ -42,7 +55,6 @@
 }
 
 .page-panel{
-  overflow-y:auto;
   position:relative;
   flex:1;
   -webkit-flex: 1;

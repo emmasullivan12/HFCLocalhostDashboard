@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import "../css/MentorCard.css";
 import "../css/General.css";
+import Carousel from './Carousel.js';
 import Modal from './Modal.js';
 import RequestChatContent from './RequestChatContent.js';
 import PassMentorContent from './PassMentorContent.js';
@@ -51,7 +52,7 @@ class MentorCardContent extends Component {
 
     return(
       <React.Fragment>
-        <div className="UserCardContainer">
+        <div className="UserCardContainer" data-target="card">
           {mentor.pr_top_match==='t' && (
             <div className="recd-match">
               Top match for you
@@ -180,7 +181,9 @@ class MentorCardMatches extends Component {
           </div>
         </div>
         <div className="cards-container">
-          <MentorCard mentors={DUMMY_MENTOR_DATA} />
+          <Carousel>
+            <MentorCard mentors={DUMMY_MENTOR_DATA} />
+          </Carousel>
         </div>
       </div>
     );
@@ -253,7 +256,71 @@ const DUMMY_MENTOR_DATA = [
     industry_pref: '',
     latest_actions_on_student_todo_list: 't',
     prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
-  }
+  }/*,
+  {
+    mentorName: "Sally Sausage",
+    id: "34456",
+    skills: "Making a fool of myself, speaking with a plum in my mouth",
+    interests: "Undermining people, Being the class clown, becoming PM",
+    role: "Finance Marketing Manager",
+    company: "Pladis",
+    learning: "I'm not cut out for the job",
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: '',
+    skills_want_to_develop: 't',
+    industry_pref: '',
+    latest_actions_on_student_todo_list: 't',
+    prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
+  },
+  {
+    mentorName: "Sally Sausage",
+    id: "34457",
+    skills: "Making a fool of myself, speaking with a plum in my mouth",
+    interests: "Undermining people, Being the class clown, becoming PM",
+    role: "Finance Marketing Manager",
+    company: "Pladis",
+    learning: "I'm not cut out for the job",
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: '',
+    skills_want_to_develop: 't',
+    industry_pref: '',
+    latest_actions_on_student_todo_list: 't',
+    prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
+  },
+  {
+    mentorName: "Sally Sausage",
+    id: "34458",
+    skills: "Making a fool of myself, speaking with a plum in my mouth",
+    interests: "Undermining people, Being the class clown, becoming PM",
+    role: "Finance Marketing Manager",
+    company: "Pladis",
+    learning: "I'm not cut out for the job",
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: '',
+    skills_want_to_develop: 't',
+    industry_pref: '',
+    latest_actions_on_student_todo_list: 't',
+    prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
+  },
+  {
+    mentorName: "Sally Sausage",
+    id: "34459",
+    skills: "Making a fool of myself, speaking with a plum in my mouth",
+    interests: "Undermining people, Being the class clown, becoming PM",
+    role: "Finance Marketing Manager",
+    company: "Pladis",
+    learning: "I'm not cut out for the job",
+    pr_top_match: '',
+    role_vs_role_desired: 't',
+    hobbies_and_interests: '',
+    skills_want_to_develop: 't',
+    industry_pref: '',
+    latest_actions_on_student_todo_list: 't',
+    prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
+  }*/
 ]
 
 /*  {

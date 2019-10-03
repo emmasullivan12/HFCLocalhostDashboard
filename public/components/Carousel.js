@@ -3,47 +3,91 @@
 import React, { Component } from "react";
 import "../css/Carousel.css";
 
-class Carousel extends Component {
+class CarouselTwo extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      offset: 0
+    }
+    this.carouselWidth = this.carouselWidth.bind(this);
+    this.cardMarginRight = this.cardMarginRight.bind(this);
+    this.handleCardLeft = this.handleCardLeft.bind(this);
+    this.handleCardRight = this.handleCardRight.bind(this);
+  }
+
+  carouselWidth = () => {
+    const carousel = document.querySelector("[data-target='carousel']");
+    const carouselWidth = carousel.offsetWidth;
+    return carouselWidth;
+  }
+
+  cardWidth = () => {
+    const carousel = document.querySelector("[data-target='carousel']");
+    const card = carousel.querySelector("[data-target='card']");
+    const cardStyle = card.currentStyle || window.getComputedStyle(card)
+    const cardWidth = Number(cardStyle.width.match(/\d+/g)[0]);
+    return cardWidth;
+  }
+
+  cardMarginRight = () => {
+    const carousel = document.querySelector("[data-target='carousel']");
+    const card = carousel.querySelector("[data-target='card']");
+    const cardStyle = card.currentStyle || window.getComputedStyle(card)
+    const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
+    return cardMarginRight;
+  }
+
+  handleCardLeft = () => {
+    const currentState = this.state.offset;
+    if (currentState === 0) {
+      return;
+    } else {
+      const carousel = document.querySelector("[data-target='carousel']");
+      this.setState({ offset: currentState + this.cardWidth() + this.cardMarginRight() }, () => {
+        carousel.style.transform = `translateX(${this.state.offset}px)`;
+      });
+    }
+  }
+
+  handleCardRight = () => {
+    const currentState = this.state.offset;
+    const carousel = document.querySelector("[data-target='carousel']");
+    const cardCount = carousel.querySelectorAll("[data-target='card']").length;
+    const maxX = -((cardCount / 3) * this.carouselWidth() +
+                   (this.cardMarginRight() * (cardCount / 3)) -
+                   this.carouselWidth() - this.cardMarginRight());
+    if (currentState <= maxX) {
+      return;
+    } else {
+      this.setState({ offset: currentState - this.cardWidth() - this.cardMarginRight() }, () => {
+        carousel.style.transform = `translateX(${this.state.offset}px)`;
+      });
+    }
+  }
+
   render() {
-    // const className = this.props.PassedOnMentor ? 'UserCardContainer-passed' : 'UserCardContainer';
     const {children} = this.props;
+    const {offset} = this.state;
+    const {handleCardLeft, handleCardRight} = this;
+
     return (
-      <div className="carousel-container">
-        <div className="carousel">
-          <input className='carousel__activator' type="radio" name="carousel" id="carousel-slide-activator-1" checked="checked"/>
-          <input className='carousel__activator' type="radio" name="carousel" id="carousel-slide-activator-2"/>
-          <input className='carousel__activator' type="radio" name="carousel" id="carousel-slide-activator-3"/>
-          <div className='carousel__controls'>
-            <label className='carousel__control carousel__control--forward' htmlFor="carousel-slide-activator-2">
-              fwd
-            </label>
-          </div>
-          <div className='carousel__controls'>
-            <label className='carousel__control carousel__control--backward' htmlFor="carousel-slide-activator-1">
-              back
-            </label>
-            <label className='carousel__control carousel__control--forward' htmlFor="carousel-slide-activator-3">
-              fwd
-            </label>
-          </div>
-          <div className='carousel__controls'>
-            <label className='carousel__control carousel__control--backward' htmlFor="carousel-slide-activator-2">
-              back
-            </label>
-          </div>
-          <div className="carousel__screen">
-            <div className="carousel__track">
-              <div className="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                <div className="demo-content">
-                  {children}
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="wrapper">
+        <ul className="carousel" data-target="carousel">
+          {children}
+        </ul>
+        <div>
+          {offset !== 0 && (
+            <button type="button" className="arrowBtn left" id="slideLeft" data-action="slideLeft" onClick={this.handleCardLeft}>
+              <span><i className="fas fa-arrow-left"/></span>
+            </button>
+          )}
+          <button type="button" className="arrowBtn right" id="slideRight" data-action="slideRight" onClick={this.handleCardRight}>
+            <span><i className="fas fa-arrow-right"/></span>
+          </button>
         </div>
       </div>
     );
   }
 }
 
-export default Carousel;
+export default CarouselTwo;

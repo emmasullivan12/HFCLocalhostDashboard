@@ -19,7 +19,7 @@ class LatestAdvice extends Component {
   render() {
 
     return (
-      <React.Fragment>
+      <div className="contentContainer">
         <div className="page-header">
           <MenuNav />
           <div className="page-detail-container">
@@ -34,7 +34,7 @@ class LatestAdvice extends Component {
         <div className="page-panel">
           <HomepageCTAContainer groups={DUMMY_GROUP_LIST}/>
         </div>
-      </React.Fragment>
+      </div>
     )
   }
 }
