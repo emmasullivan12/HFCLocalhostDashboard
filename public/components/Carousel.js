@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import "../css/Carousel.css";
 
-class CarouselTwo extends Component {
+class Carousel extends Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -90,4 +90,4 @@ class CarouselTwo extends Component {
   }
 }
 
-export default CarouselTwo;
+export default Carousel;
