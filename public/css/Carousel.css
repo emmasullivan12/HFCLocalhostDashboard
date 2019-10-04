@@ -1,9 +1,10 @@
 .wrapper {
-  height: 550px;
-  width: 900px;
+  height: 600px;
+  width: 760px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  padding: 30px 30px;
 }
 
 .carousel {
@@ -33,18 +34,20 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: 1000;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
 }
 .arrowBtn.left {
-  left: 0;
   position: absolute;
+  top: 135px;
+  left: 10px!important;
 }
 
 .arrowBtn.right {
-  right: 0;
   position: absolute;
+  top: 135px;
+  right: 10px!important;
 }
 
 .arrowBtn:hover {
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.28);
 }
