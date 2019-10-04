@@ -213,6 +213,7 @@
   min-height: 80px;
   height: 80px;
   overflow-y: hidden;
+  margin-bottom: 24px;
 }
 
 .ModalButtons{

@@ -499,6 +499,7 @@ hr{
   padding: 0 0 10px 0;
   display: block;
   margin: auto;
+  margin-top: -24px;
   cursor: pointer;
   width: 200px;
   text-align: left;

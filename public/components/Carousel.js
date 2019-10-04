@@ -7,7 +7,8 @@ class Carousel extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      offset: 0
+      offset: 0,
+      atEnd: false
     }
     this.carouselWidth = this.carouselWidth.bind(this);
     this.cardWidth = this.cardWidth.bind(this);
@@ -20,7 +21,6 @@ class Carousel extends Component {
   carouselWidth = () => {
     const carousel = document.querySelector("[data-target='carousel']");
     const carouselWidth = carousel.offsetWidth;
-    console.log('carouselWidth: '+carouselWidth);
     return carouselWidth;
   }
 
@@ -29,7 +29,6 @@ class Carousel extends Component {
     const card = carousel.querySelector("[data-target='card']");
     const cardStyle = card.currentStyle || window.getComputedStyle(card)
     const cardWidth = Number(cardStyle.width.match(/\d+/g)[0]);
-    console.log('cardWidth: '+cardWidth);
     return cardWidth;
   }
 
@@ -38,7 +37,6 @@ class Carousel extends Component {
     const card = carousel.querySelector("[data-target='card']");
     const cardStyle = card.currentStyle || window.getComputedStyle(card)
     const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
-    console.log('cardMargin: '+cardMarginRight);
     return cardMarginRight;
   }
 
@@ -53,8 +51,8 @@ class Carousel extends Component {
       return;
     } else {
       const carousel = document.querySelector("[data-target='carousel']");
+      this.setState({ atEnd: false });
       this.setState({ offset: currentState + this.cardWidth() + this.cardMarginRight() }, () => {
-        console.log('offsetLeft: '+this.state.offset);
         carousel.style.transform = `translateX(${this.state.offset}px)`;
       });
     }
@@ -67,13 +65,10 @@ class Carousel extends Component {
     const maxX = -((cardCount / this.cardsShown()) * this.carouselWidth() +
                    (this.cardMarginRight() * (cardCount / this.cardsShown())) -
                    this.carouselWidth() - this.cardMarginRight());
-    console.log('maxX: '+maxX);
-    console.log('currentStateRight: '+currentState);
     if (currentState <= maxX) {
-      return;
+      this.setState({ atEnd: true });
     } else {
       this.setState({ offset: currentState - this.cardWidth() - this.cardMarginRight() }, () => {
-        console.log('offsetRight: '+this.state.offset);
         carousel.style.transform = `translateX(${this.state.offset}px)`;
       });
     }
@@ -81,7 +76,7 @@ class Carousel extends Component {
 
   render() {
     const {children} = this.props;
-    const {offset} = this.state;
+    const {offset, atEnd} = this.state;
     const {handleCardLeft, handleCardRight} = this;
 
     return (
@@ -95,9 +90,11 @@ class Carousel extends Component {
               <span><i className="fas fa-arrow-left"/></span>
             </button>
           )}
-          <button type="button" className="arrowBtn right" id="slideRight" data-action="slideRight" onClick={this.handleCardRight}>
-            <span><i className="fas fa-arrow-right"/></span>
-          </button>
+          {atEnd != true && (
+            <button type="button" className="arrowBtn right" id="slideRight" data-action="slideRight" onClick={this.handleCardRight}>
+              <span><i className="fas fa-arrow-right"/></span>
+              </button>
+          )}
         </div>
       </div>
     );

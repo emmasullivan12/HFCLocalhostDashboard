@@ -39,6 +39,14 @@ class MentorCardContent extends Component {
   constructor () {
     super();
     this.openOverflow = this.openOverflow.bind(this);
+    this.isOverflow = this.isOverflow.bind(this);
+  }
+
+  isOverflow = () => {
+    const matchReason = document.querySelector(".pr-match-reason");
+    const isOverflow = matchReason.offsetHeight < matchReason.scrollHeight;
+    console.log('isOverflow: '+isOverflow);
+    return isOverflow;
   }
 
   openOverflow(e) {
@@ -49,6 +57,7 @@ class MentorCardContent extends Component {
 
   render() {
     const mentor = this.props.mentor;
+    const {isOverflow} = this;
 
     return(
       <React.Fragment>
@@ -122,9 +131,11 @@ class MentorCardContent extends Component {
           <div className="pr-match-reason">
             {mentor.prospela_match_comments}
           </div>
-          <button type="button" className="multilineOverflowBtn" onClick={this.openOverflow}>
-            See more...
-          </button>
+          {this.isOverflow && (
+            <button type="button" className="multilineOverflowBtn" onClick={this.openOverflow}>
+              See more...
+            </button>
+          )}
           <div className="ModalButtons">
             <Modal {...RequestChatModalProps}>
               <RequestChatContent mentorName={mentor.mentorName}/>
