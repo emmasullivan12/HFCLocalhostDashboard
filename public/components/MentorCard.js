@@ -38,17 +38,22 @@ const MentorProfileModalProps = {
 class MentorCardContent extends Component {
   constructor () {
     super();
+    this.state = {
+      isOverflow: false
+    }
     this.openOverflow = this.openOverflow.bind(this);
-    this.isOverflow = this.isOverflow.bind(this);
+//    this.checkOverflow = this.checkOverflow.bind(this);
   }
 
-  isOverflow = () => {
+/*  checkOverflow = () => {
     const matchReason = document.querySelector(".pr-match-reason");
-    const isOverflow = matchReason.offsetHeight < matchReason.scrollHeight;
-    console.log('isOverflow: '+isOverflow);
-    return isOverflow;
+    console.log('matchReason.offsetHeight: '+matchReason.offsetHeight);
+    console.log('matchReason.scrollHeight: '+matchReason.scrollHeight);
+    const checkOverflow = matchReason.offsetHeight < matchReason.scrollHeight;
+    console.log('isOverflow: '+checkOverflow);
+    this.setState({ isOverflow: checkOverflow });
   }
-
+*/
   openOverflow(e) {
     e.currentTarget.previousSibling.style.height = '150px';
     e.currentTarget.parentNode.style.height = '500px';
@@ -57,7 +62,7 @@ class MentorCardContent extends Component {
 
   render() {
     const mentor = this.props.mentor;
-    const {isOverflow} = this;
+    const {isOverflow} = this.state;
 
     return(
       <React.Fragment>
@@ -131,7 +136,7 @@ class MentorCardContent extends Component {
           <div className="pr-match-reason">
             {mentor.prospela_match_comments}
           </div>
-          {this.isOverflow && (
+          {mentor.prospela_match_comments.length >  150 && (
             <button type="button" className="multilineOverflowBtn" onClick={this.openOverflow}>
               See more...
             </button>
@@ -267,7 +272,7 @@ const DUMMY_MENTOR_DATA = [
     industry_pref: '',
     latest_actions_on_student_todo_list: 't',
     prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
-  }/*,
+  },
   {
     mentorName: "Sally Sausage",
     id: "34456",
@@ -331,7 +336,7 @@ const DUMMY_MENTOR_DATA = [
     industry_pref: '',
     latest_actions_on_student_todo_list: 't',
     prospela_match_comments: "Hi soandso, Boris is a great match for you because of XYZ. I wanted to send a really long personal message here to "
-  }*/
+  }
 ]
 
 /*  {

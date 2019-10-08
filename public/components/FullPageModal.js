@@ -94,14 +94,19 @@ class FullPageModal extends React.Component {
   //  let mainSections = document.querySelectorAll(".scroll-anchor");
   //  let lastId;
   //  let cur = [];
+    const mainNavLinksLength = mainNavLinks.length;
     const scrollTop = this.modalFPRef.current.scrollTop;
+    const offsetHeight = this.modalFPRef.current.offsetHeight;
+    const maxHeight = this.modalFPRef.current.scrollHeight;
     mainNavLinks.forEach((link, index) => {
       const isFirstSection = (index===0 ? true : false);
+      const isLastSection = (index===(mainNavLinksLength-1) ? true : false);
       let section = document.querySelector(link.hash);
       if (
         isFirstSection && section.offsetTop > scrollTop ||
-        section.offsetTop <= scrollTop &&
-        section.offsetTop + section.offsetHeight > scrollTop
+        isLastSection && (scrollTop === (maxHeight - offsetHeight)) ||
+        (section.offsetTop-4) <= scrollTop && (scrollTop != (maxHeight - offsetHeight)) &&
+        ((section.offsetTop-4) + section.offsetHeight) > scrollTop
       ) {
         link.classList.add("active");
       } else {
