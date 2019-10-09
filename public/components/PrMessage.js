@@ -23,7 +23,6 @@ function Avatar(props) {
   const isPicSet = false; // check if author who sent message has avatar pic set
   const myID = '12345';
   const isMe = (props.senderID === myID) ? 'isMe' : 'isntMe';
-  console.log('isMe: '+isMe);
   return (
     <div className="msg-thumb-container">
       {isPicSet ? (

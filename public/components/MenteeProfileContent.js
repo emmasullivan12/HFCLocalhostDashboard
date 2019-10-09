@@ -31,6 +31,7 @@ class MenteeProfileContent extends Component {
   render() {
     const mentee = {
       fname: 'Dexter',
+      profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       is18plus: 1,
       city: 'London',
       country: 'UK',
@@ -124,8 +125,8 @@ class MenteeProfileContent extends Component {
         text: ' just took on a new mentee'
       }
     ]
-    const isPicSet = false; // Has user added a profile pic? If not, show placeholder pic
-    const userRole = 'mentee';
+    const isPicSet = mentee.profPicSrc != ''; // Has user added a profile pic? If not, show placeholder pic
+    const userRole = 'mentor';
     const isMe = userRole === 'mentee' ? 'isMe' : 'isntMe';
     const profShareSettings = {
       groups: false
@@ -135,6 +136,7 @@ class MenteeProfileContent extends Component {
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentee.country);
     const eduInstName = eduName(mentee.schName, mentee.uniName);
+    const userInitial = mentee.fname.charAt(0).toUpperCase();
 
     return (
       <React.Fragment>
@@ -146,11 +148,11 @@ class MenteeProfileContent extends Component {
                   <div className={"profile-thumb img-circle allowAddPic "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent />
+                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentee.profPicSrc} userRole={userRole}/>
                       </Modal>
                     )}
                     <img
-                      src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                      src={mentee.profPicSrc}
                       alt="User profile pic"
                     />
                   </div>
@@ -159,11 +161,11 @@ class MenteeProfileContent extends Component {
                   <div className={"profile-thumb img-circle allowAddPic noPic mentee "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent />
+                        <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} userRole={userRole}/>
                       </Modal>
                     )}
                     <div className="userInitial">
-                      {mentee.fname.charAt(0).toUpperCase()}
+                      {userInitial}
                     </div>
                   </div>
                 )}

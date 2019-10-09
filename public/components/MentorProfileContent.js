@@ -71,6 +71,7 @@ class MentorProfileContent extends Component {
     const {followStatus, availabilityClicked, save4LaterClicked, saved4later} = this.state;
     const mentor = {
       fname: 'Emma',
+      profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       city: 'London',
       country: 'UK',
       timeZone: 'UTC',
@@ -164,9 +165,10 @@ class MentorProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
-    const isPicSet = false;
-    const userRole = 'mentee';
+    const isPicSet = mentor.profPicSrc != '';
+    const userRole = 'mentor';
     const isMe = userRole === 'mentor' ? 'isMe' : 'isntMe';
+    const userInitial = mentor.fname.charAt(0).toUpperCase();
 
     return (
       <React.Fragment>
@@ -178,11 +180,11 @@ class MentorProfileContent extends Component {
                   <div className={"profile-thumb img-circle allowAddPic "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent />
+                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentor.profPicSrc} userRole={userRole} />
                       </Modal>
                     )}
                     <img
-                      src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                      src={mentor.profPicSrc}
                       alt="User profile pic"
                     />
                   </div>
@@ -191,11 +193,11 @@ class MentorProfileContent extends Component {
                   <div className={"profile-thumb img-circle allowAddPic noPic mentor "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent />
+                        <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} userRole={userRole}/>
                       </Modal>
                     )}
                     <div className="userInitial">
-                      {mentor.fname.charAt(0).toUpperCase()}
+                      {userInitial}
                     </div>
                   </div>
                 )}
