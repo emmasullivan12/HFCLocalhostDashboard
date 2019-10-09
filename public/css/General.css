@@ -301,6 +301,9 @@ hr{
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
+.tooltiptext.groups {
+  width: 120px;
+}
 .tooltip .tooltiptext.profile {
   left: -46%;
 }

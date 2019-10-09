@@ -82,9 +82,14 @@
   background:rgba(6,191,156,0.6);
   color: #fff;
 }
-.ModalOpenBtn-joinProgAuto{
-  width: 110px;
-  margin-top: -50px;
+.ModalOpenBtn-mentee-prauto-profile{
+  background: none;
+  padding: 0;
+}
+.ModalOpenBtn-mentee-prauto-profile:hover,
+.ModalOpenBtn-mentee-prauto-profile:active{
+  background: none;
+  cursor: pointer;
 }
 
 .ModalOpenBtn-joinProgLrg{
@@ -99,7 +104,6 @@
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.08);
   background-color: #351c75;
 }
-
 
 .ModalOpenBtn-card-mentor-profile{
   text-align: center;
@@ -427,6 +431,7 @@
 .fullpage-modal-container.card-mentor-profile,
 .fullpage-modal-container.menu-mentee-profile,
 .fullpage-modal-container.menu-mentor-profile,
+.fullpage-modal-container.mentee-prauto-profile,
 .fullpage-modal-container.mentee-profile,
 .fullpage-modal-container.mentor-profile{
   background-color: #f9f9f9;

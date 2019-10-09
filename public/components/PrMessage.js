@@ -6,12 +6,21 @@ import AcceptCTA from './AcceptCTA.js';
 import AudioCTA from './AudioCTA.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
+import FullPageModal from './FullPageModal.js';
+import MenteeProfileContent from './MenteeProfileContent.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 
 import "../css/Emoji.css";
 import "../css/General.css";
 import "../css/PrMessage.css";
+
+const MenteeProfileModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  triggerText: 'View Mentee Profile',
+  usedFor: 'mentee-prauto-profile',
+  backBtn: 'arrow'
+}
 
 const UploadProfPicProps = {
   ariaLabel: 'Add or Edit Profile Picture',
@@ -228,9 +237,9 @@ function MenteeReq(props) {
                 </div>
               </div>
             </div>
-            <div className="msg-extras-ctaTxt">
-              See Full Profile...
-            </div>
+            <FullPageModal {...MenteeProfileModalProps}>
+              <MenteeProfileContent />
+            </FullPageModal>
           </div>
         </div>
         <AcceptCTA />

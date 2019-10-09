@@ -71,6 +71,12 @@ function ButtonContent(props) {
           </div>
         </div>
       );
+    case 'mentee-prauto-profile':
+      return (
+        <div className="msg-extras-ctaTxt">
+          See Full Profile...
+        </div>
+      );
     default:
       return <div>{text}</div>
   }

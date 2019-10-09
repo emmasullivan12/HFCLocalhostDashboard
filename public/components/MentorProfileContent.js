@@ -166,7 +166,7 @@ class MentorProfileContent extends Component {
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
     const isPicSet = mentor.profPicSrc != '';
-    const userRole = 'mentor';
+    const userRole = 'mentee';
     const isMe = userRole === 'mentor' ? 'isMe' : 'isntMe';
     const userInitial = mentor.fname.charAt(0).toUpperCase();
 

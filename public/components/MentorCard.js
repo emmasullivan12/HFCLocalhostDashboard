@@ -42,18 +42,8 @@ class MentorCardContent extends Component {
       isOverflow: false
     }
     this.openOverflow = this.openOverflow.bind(this);
-//    this.checkOverflow = this.checkOverflow.bind(this);
   }
 
-/*  checkOverflow = () => {
-    const matchReason = document.querySelector(".pr-match-reason");
-    console.log('matchReason.offsetHeight: '+matchReason.offsetHeight);
-    console.log('matchReason.scrollHeight: '+matchReason.scrollHeight);
-    const checkOverflow = matchReason.offsetHeight < matchReason.scrollHeight;
-    console.log('isOverflow: '+checkOverflow);
-    this.setState({ isOverflow: checkOverflow });
-  }
-*/
   openOverflow(e) {
     e.currentTarget.previousSibling.style.height = '150px';
     e.currentTarget.parentNode.style.height = '500px';

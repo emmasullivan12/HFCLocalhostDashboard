@@ -126,7 +126,7 @@ class MenteeProfileContent extends Component {
       }
     ]
     const isPicSet = mentee.profPicSrc != ''; // Has user added a profile pic? If not, show placeholder pic
-    const userRole = 'mentor';
+    const userRole = 'mentee';
     const isMe = userRole === 'mentee' ? 'isMe' : 'isntMe';
     const profShareSettings = {
       groups: false
