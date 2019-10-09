@@ -19,12 +19,35 @@
   height: 8rem;
   border-style: none;
   background-size: cover;
+  position: relative;
 }
-.profile-thumb.noPic{
+.userInitial{
   font-size: 60px;
-  padding-top: 42%;
   color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  z-index: 1;
 }
+.userInitial.userMenu-thumb{
+  font-size: 20px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.userInitial.msg-thumb{
+  font-size: 25px;
+  height: inherit;
+  position: relative;
+  top: -40px;
+  left: 0;
+  padding-top: 11px;
+}
+.userInitial.msg-thumb.isntMe{
+  top: 0;
+}
+
 .profile-thumb.noPic.mentee{
   background-color: #e6ddfd;
 }

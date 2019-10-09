@@ -6,8 +6,10 @@ import {
 } from "react-router-dom";
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
+import Modal from './Modal.js';
 import FullPageModal from './FullPageModal.js';
 import SettingsContent from './SettingsContent.js';
+import UploadProfPicContent from './UploadProfPicContent.js';
 import {eduName} from './UserDetail.js';
 import "../css/UserMenuContent.css";
 import "../css/General.css";
@@ -34,10 +36,16 @@ const MentorProfileModalProps = {
   backBtn: 'arrow'
 }
 
+const UploadProfPicProps = {
+  ariaLabel: 'Add or Edit Profile Picture',
+  triggerText: 'Add/Edit Profile pic',
+  usedFor: 'addPicBtn userMenu-thumb'
+}
+
 class UserMenuContent extends Component {
   render() {
     const {onMenuClose, onKeyDown} = this.props;
-    const userRole = 'mentor';
+    const userRole = 'mentee';
     const user = {
       fname: 'Dexter',
       lname: 'Boyce',
@@ -55,14 +63,25 @@ class UserMenuContent extends Component {
             <h2 className="userMenu-header">
               <div className="userMenu-thumb-container">
                 {isPicSet ? (
-                  <img
-                    className="userMenu-thumb"
-                    src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
-                    alt="User profile pic"
-                  />
+                  <div className="userMenu-thumb allowAddPic">
+                    <Modal {...UploadProfPicProps}>
+                      <UploadProfPicContent />
+                    </Modal>
+                    <img
+                      src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                      alt="User profile pic"
+                    />
+                  </div>
                   )
                 : (
-                  <div className={"userMenu-thumb noPic "+userRole}>{user.fname.charAt(0).toUpperCase()}</div>
+                  <div className={"userMenu-thumb allowAddPic noPic "+userRole}>
+                    <Modal {...UploadProfPicProps}>
+                      <UploadProfPicContent />
+                    </Modal>
+                    <div className="userInitial userMenu-thumb">
+                      {user.fname.charAt(0).toUpperCase()}
+                    </div>
+                  </div>
                 )}
               </div>
               <span className="userMenu-name overflow-ellipsis">{user.fname} {user.lname}</span>

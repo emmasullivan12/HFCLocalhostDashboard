@@ -335,7 +335,7 @@ hr{
   -moz-border-radius: .25rem;
   -ms-border-radius: .25rem;
   -o-border-radius: .25rem;
-  min-height: 90px;
+  min-height: 97px;
   max-height: calc(40vh - 200px);
   line-height: 20px;
   vertical-align: top;
@@ -354,6 +354,7 @@ hr{
   margin: 0 0 1rem 0;
 }
 .textInputBox.inputTitle{
+  min-height: 20px;
   height: 40px;
 }
 .textInputBox.passTxtBox:focus,
@@ -896,6 +897,42 @@ a:active {
   -moz-border-radius: .25rem;
   -ms-border-radius: .25rem;
   -o-border-radius: .25rem;
+}
+
+.userMenu-thumb img,
+.img-circle img,
+.img-square img{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+}
+.userMenu-thumb img{
+  position: absolute;
+}
+.msg-thumb img{
+  position: relative;
+  top: -2.5rem;
+}
+.userMenu-thumb.allowAddPic:hover > *,
+.img-circle.allowAddPic:hover > *,
+.img-square.allowAddPic:hover > *{
+  opacity: 0.4;
+}
+
+.img-circle.allowAddPic.isntMe:hover > *,
+.img-square.allowAddPic.isntMe:hover > *{
+  opacity: 1;
+}
+
+.userMenu-thumb.allowAddPic:hover .ModalOpenBtn-addPicBtn,
+.img-circle.allowAddPic:hover .ModalOpenBtn-addPicBtn,
+.img-square.allowAddPic:hover .ModalOpenBtn-addPicBtn{
+  opacity: 1;
 }
 
 /* BOXES */

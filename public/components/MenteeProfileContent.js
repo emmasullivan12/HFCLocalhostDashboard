@@ -5,6 +5,8 @@ import {
   NavLink
 } from "react-router-dom";
 
+import Modal from './Modal.js';
+import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
@@ -14,6 +16,12 @@ import "../css/General.css";
 import "../css/Article.css";
 import "../css/Emoji.css";
 import "../css/Profile.css";
+
+const UploadProfPicProps = {
+  ariaLabel: 'Add or Edit Profile Picture',
+  triggerText: 'Add/Edit Profile pic',
+  usedFor: 'addPicBtn'
+}
 
 class MenteeProfileContent extends Component {
   constructor (props) {
@@ -117,6 +125,8 @@ class MenteeProfileContent extends Component {
       }
     ]
     const isPicSet = false; // Has user added a profile pic? If not, show placeholder pic
+    const userRole = 'mentee';
+    const isMe = userRole === 'mentee' ? 'isMe' : 'isntMe';
     const profShareSettings = {
       groups: false
     };
@@ -133,14 +143,29 @@ class MenteeProfileContent extends Component {
             <div className="col-3 col-s-12 article-extras profile">
               <div className="profile-thumb-container">
                 {isPicSet ? (
-                  <img
-                    className="profile-thumb img-circle"
-                    src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
-                    alt="User profile pic"
-                  />
+                  <div className={"profile-thumb img-circle allowAddPic "+isMe}>
+                    {isMe === 'isMe' && (
+                      <Modal {...UploadProfPicProps}>
+                        <UploadProfPicContent />
+                      </Modal>
+                    )}
+                    <img
+                      src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                      alt="User profile pic"
+                    />
+                  </div>
                   )
                 : (
-                  <div className="profile-thumb img-circle noPic mentee">{mentee.fname.charAt(0).toUpperCase()}</div>
+                  <div className={"profile-thumb img-circle allowAddPic noPic mentee "+isMe}>
+                    {isMe === 'isMe' && (
+                      <Modal {...UploadProfPicProps}>
+                        <UploadProfPicContent />
+                      </Modal>
+                    )}
+                    <div className="userInitial">
+                      {mentee.fname.charAt(0).toUpperCase()}
+                    </div>
+                  </div>
                 )}
               </div>
               <h1 className="profileName">{mentee.fname}</h1>

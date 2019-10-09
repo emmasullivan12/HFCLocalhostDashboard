@@ -43,6 +43,45 @@
   outline: 0;
 }
 
+.ModalOpenBtn-addPicBtn{
+  width: inherit;
+  height: inherit;
+  color: #fff;
+  font-size: 35px;
+  background:rgba(6,191,156,0.6);;
+  opacity: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+}
+.ModalOpenBtn-addPicBtn.userMenu-thumb{
+  font-size: 20px;
+}
+.ModalOpenBtn-addPicBtn.msg-thumb{
+  font-size: 25px;
+  top: unset;
+  left: unset;
+  position: relative;
+}
+.ModalOpenBtn-addPicBtn:hover{
+  background:rgba(6,191,156,0.6);
+  color: #fff;
+}
 .ModalOpenBtn-joinProgAuto{
   width: 110px;
   margin-top: -50px;
@@ -471,6 +510,7 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  position: fixed;
   padding: .5em;
   margin-left: 3rem;
   top: 40px;

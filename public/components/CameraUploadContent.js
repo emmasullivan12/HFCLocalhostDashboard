@@ -16,7 +16,7 @@ class CameraUploadContent extends Component {
       <React.Fragment>
         <div className="capture">
           <Camera  />
-          <form className="uploadPhotoForm">
+          <form className="uploadPhotoForm" id="uploadPhotoForm">
             <Photo  />
             <input
               type="text"
@@ -27,10 +27,10 @@ class CameraUploadContent extends Component {
               autoCorrect="off"
               spellCheck="off"
             />
-            <input
-              type="text"
+            <textarea
               name="cameraUploadDescription"
               className="textInputBox"
+              form="uploadPhotoForm"
               placeholder="Type your message..."
               autoComplete="off"
               autoCorrect="off"

@@ -7,26 +7,49 @@ import AudioCTA from './AudioCTA.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import Modal from './Modal.js';
+import UploadProfPicContent from './UploadProfPicContent.js';
 
 import "../css/Emoji.css";
 import "../css/General.css";
 import "../css/PrMessage.css";
 
+const UploadProfPicProps = {
+  ariaLabel: 'Add or Edit Profile Picture',
+  triggerText: 'Add/Edit Profile pic',
+  usedFor: 'addPicBtn msg-thumb'
+}
+
 function Avatar(props) {
   const isPicSet = false; // check if author who sent message has avatar pic set
-  const myID = props.senderID;
+  const myID = '12345';
   const isMe = (props.senderID === myID) ? 'isMe' : 'isntMe';
+  console.log('isMe: '+isMe);
   return (
     <div className="msg-thumb-container">
       {isPicSet ? (
-        <img
-          className="msg-thumb img-square"
-          src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
-          alt={props.senderName}
-        />
+        <div className={"msg-thumb img-square allowAddPic "+isMe}>
+          {isMe==="isMe" && (
+            <Modal {...UploadProfPicProps}>
+              <UploadProfPicContent />
+            </Modal>
+          )}
+          <img
+            src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+            alt={props.senderName}
+          />
+        </div>
         )
       : (
-        <div className={"msg-thumb img-square noPic "+isMe}>{props.senderName.charAt(0).toUpperCase()}</div>
+        <div className={"msg-thumb img-square allowAddPic noPic "+isMe}>
+          {isMe==="isMe" && (
+            <Modal {...UploadProfPicProps}>
+              <UploadProfPicContent />
+            </Modal>
+          )}
+          <div className={"userInitial msg-thumb "+isMe}>
+            {props.senderName.charAt(0).toUpperCase()}
+          </div>
+        </div>
       )}
     </div>
   );

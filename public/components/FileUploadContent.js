@@ -27,7 +27,7 @@ class FileUploadContent extends Component {
         <div className="modal-title">
           Upload
         </div>
-        <form className="fileUploadForm">
+        <form className="fileUploadForm" id="fileUploadForm">
           <input
             type="file"
             id="fileSelect"
@@ -46,13 +46,13 @@ class FileUploadContent extends Component {
             </svg>
             <span>Choose a file...</span>
           </label>
-          <input
-            type="text"
+          <textarea
             name="fileUploadDescription"
             className="textInputBox passTxtBox"
-            placeholder="Type your description..."
+            form="fileUploadForm"
             value={this.state.fileUploadDescription}
             onChange={this.handleDescriptionChange}
+            placeholder="Type your description..."
             autoComplete="off"
             autoCorrect="off"
             spellCheck="off"
