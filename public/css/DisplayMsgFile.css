@@ -33,6 +33,10 @@
   top: 0;
   left: 0;
   height: 100%;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+  max-width: -webkit-fit-content;
+  max-width: -ms-fit-content;
 }
 
 .msg-img{
