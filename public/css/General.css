@@ -258,10 +258,16 @@ hr{
 .paddingBtm{
   padding-bottom: 10px;
 }
-.noPadding{
+.noPaddingL{
   padding-left: 0!important;
+}
+.noPaddingR{
   padding-right: 0!important;
+}
+.noPaddingT{
   padding-top: 0!important;
+}
+.noPaddingB{
   padding-bottom: 0!important;
 }
 .overflow-ellipsis{

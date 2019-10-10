@@ -24,7 +24,7 @@ class UploadProfPicContent extends Component {
 
   render() {
     const { fileUploadDescription } = this.state;
-    const {profPicSrc, isPicSet, userInitial, userRole} = this.props;
+    const {profPicSrc, isPicSet, userInitial, isMe} = this.props;
     const selectedFiles = true;
     const isEnabled = false;
     return (
@@ -52,7 +52,7 @@ class UploadProfPicContent extends Component {
               </svg>
               <span>or Choose a file...</span>
             </label>
-            <Photo isProfPic='isProfPic' isPicSet={isPicSet} profPicSrc={profPicSrc} userInitial={userInitial} userRole={userRole}/>
+            <Photo isProfPic='isProfPic' isPicSet={isPicSet} profPicSrc={profPicSrc} userInitial={userInitial} isMe={isMe}/>
             <button type="submit" disabled={!isEnabled} className="Submit-btn uploadPicBtn" id="saveButton">Upload photo</button>
           </div>
         </form>

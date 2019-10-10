@@ -43,7 +43,11 @@
   outline: 0;
 }
 
-.ModalOpenBtn-addPicBtn{
+.ModalOpenBtn-addPicBtn,
+.ModalOpenBtn-mentor-msgBtn-profile,
+.ModalOpenBtn-mentee-msgBtn-profile,
+.ModalOpenBtn-mentee-usrName-profile,
+.ModalOpenBtn-mentor-usrName-profile{
   width: inherit;
   height: inherit;
   color: #fff;
@@ -72,24 +76,47 @@
 .ModalOpenBtn-addPicBtn.userMenu-thumb{
   font-size: 20px;
 }
-.ModalOpenBtn-addPicBtn.msg-thumb{
+.ModalOpenBtn-addPicBtn.msg-thumb,
+.ModalOpenBtn-mentor-msgBtn-profile,
+.ModalOpenBtn-mentee-msgBtn-profile,
+.ModalOpenBtn-mentee-usrName-profile,
+.ModalOpenBtn-mentor-usrName-profile{
   font-size: 25px;
   top: unset;
   left: unset;
   position: relative;
 }
 .ModalOpenBtn-addPicBtn:hover{
+  background:rgba(0,0,0,0.2);
+  color: #fff;
+}
+.ModalOpenBtn-mentor-msgBtn-profile:hover,
+.ModalOpenBtn-mentee-msgBtn-profile:hover,
+.ModalOpenBtn-mentor-msgBtn-profile:active,
+.ModalOpenBtn-mentee-msgBtn-profile:active{
   background:rgba(6,191,156,0.6);
   color: #fff;
+}
+.ModalOpenBtn-mentee-usrName-profile,
+.ModalOpenBtn-mentor-usrName-profile{
+  font-size: inherit;
+  color: #3f3f3f;
+  opacity: 1;
+  background: none;
 }
 .ModalOpenBtn-mentee-prauto-profile{
   background: none;
   padding: 0;
 }
 .ModalOpenBtn-mentee-prauto-profile:hover,
-.ModalOpenBtn-mentee-prauto-profile:active{
+.ModalOpenBtn-mentee-prauto-profile:active,
+.ModalOpenBtn-mentee-usrName-profile:hover,
+.ModalOpenBtn-mentor-usrName-profile:hover,
+.ModalOpenBtn-mentee-usrName-profile:active,
+.ModalOpenBtn-mentor-usrName-profile:active{
   background: none;
   cursor: pointer;
+  color: unset;
 }
 
 .ModalOpenBtn-joinProgLrg{
@@ -428,6 +455,10 @@
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+.fullpage-modal-container.mentee-usrName-profile,
+.fullpage-modal-container.mentor-usrName-profile,
+.fullpage-modal-container.mentor-msgBtn-profile,
+.fullpage-modal-container.mentee-msgBtn-profile,
 .fullpage-modal-container.card-mentor-profile,
 .fullpage-modal-container.menu-mentee-profile,
 .fullpage-modal-container.menu-mentor-profile,

@@ -30,6 +30,7 @@ class MenteeProfileContent extends Component {
 
   render() {
     const mentee = {
+      uid: '23456',
       fname: 'Dexter',
       profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       is18plus: 1,
@@ -126,8 +127,9 @@ class MenteeProfileContent extends Component {
       }
     ]
     const isPicSet = mentee.profPicSrc != ''; // Has user added a profile pic? If not, show placeholder pic
-    const userRole = 'mentee';
-    const isMe = userRole === 'mentee' ? 'isMe' : 'isntMe';
+//    const isPicSet = false;
+    const uid = '23456';
+    const isMe = uid === mentee.uid ? 'isMe' : 'isntMe';
     const profShareSettings = {
       groups: false
     };
@@ -145,10 +147,10 @@ class MenteeProfileContent extends Component {
             <div className="col-3 col-s-12 article-extras profile">
               <div className="profile-thumb-container">
                 {isPicSet ? (
-                  <div className={"profile-thumb img-circle allowAddPic "+isMe}>
+                  <div className="profile-thumb img-circle allowAddPic">
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentee.profPicSrc} userRole={userRole}/>
+                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentee.profPicSrc} isMe={isMe}/>
                       </Modal>
                     )}
                     <img
@@ -158,10 +160,10 @@ class MenteeProfileContent extends Component {
                   </div>
                   )
                 : (
-                  <div className={"profile-thumb img-circle allowAddPic noPic mentee "+isMe}>
+                  <div className={"profile-thumb img-circle allowAddPic noPic "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} userRole={userRole}/>
+                        <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
                       </Modal>
                     )}
                     <div className="userInitial">

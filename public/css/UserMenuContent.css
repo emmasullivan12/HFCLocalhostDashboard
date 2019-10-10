@@ -49,10 +49,10 @@
   text-align: center;
   color: #fff;
 }
-.userMenu-thumb.noPic.mentee{
+.userMenu-thumb.noPic.isMe{
   background-color: #e6ddfd;
 }
-.userMenu-thumb.noPic.mentor{
+.userMenu-thumb.noPic.isntMe{
   background-color: rgb(53,28,117);
   background-color: rgba(53,28,117,.5);
 }

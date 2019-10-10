@@ -8,19 +8,36 @@ import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
+import UserName from './UserName.js';
 
 import "../css/Emoji.css";
 import "../css/General.css";
 import "../css/PrMessage.css";
 
-const MenteeProfileModalProps = {
+const MenteeProfilePrautoModalProps = {
   ariaLabel: 'View Mentee Profile',
   triggerText: 'View Mentee Profile',
   usedFor: 'mentee-prauto-profile',
   backBtn: 'arrow'
 }
+
+const MenteeProfileMsgBtnModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  triggerText: 'Profile',
+  usedFor: 'mentee-msgBtn-profile',
+  backBtn: 'arrow'
+}
+
+const MentorProfileMsgBtnModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  triggerText: 'View Mentor Profile',
+  usedFor: 'mentor-msgBtn-profile',
+  backBtn: 'arrow'
+}
+
 
 const UploadProfPicProps = {
   ariaLabel: 'Add or Edit Profile Picture',
@@ -29,33 +46,61 @@ const UploadProfPicProps = {
 }
 
 function Avatar(props) {
-  const isPicSet = false; // check if author who sent message has avatar pic set
+  const profPicSrc = "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000" // looks up profpic URL of UID
+//  const isPicSet = profPicSrc != ''; // check if author who sent message has avatar pic set
+  const isPicSet = false;
+  const userInitial = props.senderName.charAt(0).toUpperCase();
   const myID = '12345';
   const isMe = (props.senderID === myID) ? 'isMe' : 'isntMe';
+  const senderRole = 'mentor'; // will need to check senderUID for role (when opening profile)
   return (
     <div className="msg-thumb-container">
       {isPicSet ? (
         <div className={"msg-thumb img-square allowAddPic "+isMe}>
-          {isMe==="isMe" && (
+          {isMe==="isMe" ? (
             <Modal {...UploadProfPicProps}>
-              <UploadProfPicContent />
+              <UploadProfPicContent isPicSet={isPicSet} profPicSrc={profPicSrc} isMe={isMe}/>
             </Modal>
+            )
+          : (
+            senderRole === 'mentee' ? (
+              <FullPageModal {...MenteeProfileMsgBtnModalProps}>
+                <MenteeProfileContent />
+              </FullPageModal>
+              )
+            : (
+              <FullPageModal {...MentorProfileMsgBtnModalProps}>
+                <MentorProfileContent />
+              </FullPageModal>
+            )
           )}
           <img
-            src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+            src={profPicSrc}
             alt={props.senderName}
           />
         </div>
         )
       : (
         <div className={"msg-thumb img-square allowAddPic noPic "+isMe}>
-          {isMe==="isMe" && (
+          {isMe==="isMe" ? (
             <Modal {...UploadProfPicProps}>
-              <UploadProfPicContent />
+              <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
             </Modal>
+            )
+          : (
+            senderRole === 'mentee' ? (
+              <FullPageModal {...MenteeProfileMsgBtnModalProps}>
+                <MenteeProfileContent />
+              </FullPageModal>
+              )
+            : (
+              <FullPageModal {...MentorProfileMsgBtnModalProps}>
+                <MentorProfileContent />
+              </FullPageModal>
+            )
           )}
-          <div className={"userInitial msg-thumb "+isMe}>
-            {props.senderName.charAt(0).toUpperCase()}
+          <div className="userInitial msg-thumb">
+            {userInitial}
           </div>
         </div>
       )}
@@ -105,7 +150,7 @@ function StdMessage(props) {
             <Avatar senderID={props.message.uid} senderName={props.message.author}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <span className="sender-name">{props.message.author}</span>
+                <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
                 <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
               </div>
               <div className="message-content">
@@ -134,7 +179,7 @@ function DisplayFile(props) {
           <Avatar senderID={props.message.uid} senderName={props.message.author}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <span className="sender-name">{props.message.author}</span>
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -165,7 +210,7 @@ function MessageNotSent(props) {
           <Avatar senderID={props.message.uid} senderName={props.message.author} />
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <span className="sender-name">{props.message.author}</span>
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -189,7 +234,7 @@ function UploadNotSent(props) {
           <Avatar senderID={props.message.uid} senderName={props.message.author} />
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <span className="sender-name">{props.message.author}</span>
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -225,11 +270,11 @@ function MenteeReq(props) {
         <div className="message-extras-container">
           <div className="message-extras-border" />
           <div className="msg-extras">
-            <div className="message-container noPadding">
+            <div className="message-container noPaddingL noPaddingR noPaddingT">
               <Avatar senderID={props.message.uid} senderName={props.message.author}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <span className="sender-name">{props.message.author}</span>
+                  <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
                   <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                 </div>
                 <div className="message-content">
@@ -237,7 +282,7 @@ function MenteeReq(props) {
                 </div>
               </div>
             </div>
-            <FullPageModal {...MenteeProfileModalProps}>
+            <FullPageModal {...MenteeProfilePrautoModalProps}>
               <MenteeProfileContent />
             </FullPageModal>
           </div>
@@ -317,11 +362,11 @@ function PrAuto(props) {
           <div className="message-extras-container">
             <div className="message-extras-border" />
             <div className="msg-extras">
-              <div className="message-container noPadding">
+              <div className="message-container noPaddingL noPaddingR noPaddingT">
                 <Avatar senderID={props.message.uid} senderName={props.message.author}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <span className="sender-name">{props.message.author}</span>
+                    <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
                     <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                   </div>
                   <div className="message-content">

@@ -18,7 +18,7 @@ const Photo = (props) => (
         />
         )
       : (
-        <div className={"profile-thumb img-circle noPic "+props.userRole}>
+        <div className={"profile-thumb img-circle noPic "+props.isMe}>
           <div className="userInitial uploadPic">
             {props.userInitial}
           </div>

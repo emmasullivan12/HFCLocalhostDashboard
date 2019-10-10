@@ -70,6 +70,7 @@ class MentorProfileContent extends Component {
   render() {
     const {followStatus, availabilityClicked, save4LaterClicked, saved4later} = this.state;
     const mentor = {
+      uid: '12345',
       fname: 'Emma',
       profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       city: 'London',
@@ -166,8 +167,9 @@ class MentorProfileContent extends Component {
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
     const isPicSet = mentor.profPicSrc != '';
-    const userRole = 'mentee';
-    const isMe = userRole === 'mentor' ? 'isMe' : 'isntMe';
+//    const isPicSet = false;
+    const uid = '23456';
+    const isMe = uid === mentor.uid ? 'isMe' : 'isntMe';
     const userInitial = mentor.fname.charAt(0).toUpperCase();
 
     return (
@@ -180,7 +182,7 @@ class MentorProfileContent extends Component {
                   <div className={"profile-thumb img-circle allowAddPic "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentor.profPicSrc} userRole={userRole} />
+                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentor.profPicSrc} isMe={isMe} />
                       </Modal>
                     )}
                     <img
@@ -190,10 +192,10 @@ class MentorProfileContent extends Component {
                   </div>
                   )
                 : (
-                  <div className={"profile-thumb img-circle allowAddPic noPic mentor "+isMe}>
+                  <div className={"profile-thumb img-circle allowAddPic noPic "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} userRole={userRole}/>
+                        <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
                       </Modal>
                     )}
                     <div className="userInitial">

@@ -47,14 +47,18 @@ class UserMenuContent extends Component {
     const {onMenuClose, onKeyDown} = this.props;
     const userRole = 'mentee';
     const user = {
+      uid: '23456',
       fname: 'Dexter',
       lname: 'Boyce',
+      profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       schName: 'Villiers High School',
       uniName: '',
       currCo: 'Pladis',
       eetStatus: 1,
     };
-    const isPicSet = false;
+    const isPicSet = user.profPicSrc != ''; // check if author who sent message has avatar pic set
+//    const isPicSet = false;
+    const userInitial = user.fname.charAt(0).toUpperCase();
     const eduInstName = eduName(user.schName, user.uniName);
     return (
       <React.Fragment>
@@ -65,18 +69,18 @@ class UserMenuContent extends Component {
                 {isPicSet ? (
                   <div className="userMenu-thumb allowAddPic">
                     <Modal {...UploadProfPicProps}>
-                      <UploadProfPicContent />
+                      <UploadProfPicContent isPicSet={isPicSet} profPicSrc={user.profPicSrc} isMe='isMe' />
                     </Modal>
                     <img
-                      src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+                      src={user.profPicSrc}
                       alt="User profile pic"
                     />
                   </div>
                   )
                 : (
-                  <div className={"userMenu-thumb allowAddPic noPic "+userRole}>
+                  <div className="userMenu-thumb allowAddPic noPic isMe">
                     <Modal {...UploadProfPicProps}>
-                      <UploadProfPicContent />
+                      <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe='isMe'/>
                     </Modal>
                     <div className="userInitial userMenu-thumb">
                       {user.fname.charAt(0).toUpperCase()}
@@ -93,22 +97,22 @@ class UserMenuContent extends Component {
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
                 </NavLink>
               </li>
-              {userRole === 'mentee' && (
-                <FullPageModal {...MenteeProfileModalProps} role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                  <MenteeProfileContent />
-                </FullPageModal>
-              )}
-              {userRole === 'mentor' && (
+              {userRole === 'mentee' ? (
+                <React.Fragment>
+                  <FullPageModal {...MenteeProfileModalProps} role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                    <MenteeProfileContent />
+                  </FullPageModal>
+                  <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+                    <NavLink to="/profile/saved-highlights" className="userMenu-link">
+                      <span className="userMenuLabel overflow-ellipsis">My Highlights</span>
+                    </NavLink>
+                  </li>
+                </React.Fragment>
+                )
+              : (
                 <FullPageModal {...MentorProfileModalProps} role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                   <MentorProfileContent />
                 </FullPageModal>
-              )}
-              {userRole === 'mentee' && (
-                <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                  <NavLink to="/profile/saved-highlights" className="userMenu-link">
-                    <span className="userMenuLabel overflow-ellipsis">My Highlights</span>
-                  </NavLink>
-                </li>
               )}
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile/influencer-stats" className="userMenu-link">

@@ -48,6 +48,16 @@ function ButtonContent(props) {
       return (
         <i className="fas fa-plus" />
       )
+    case 'mentor-msgBtn-profile':
+    case 'mentee-msgBtn-profile':
+      return (
+        <i className="fas fa-user" />
+      )
+    case 'mentor-usrName-profile':
+    case 'mentee-usrName-profile':
+      return (
+        <span className="sender-name">{text}</span>
+      )
     case 'settings':
       return (
         <div className="settings-Btn-txt">
