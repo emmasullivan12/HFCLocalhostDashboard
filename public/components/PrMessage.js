@@ -9,6 +9,7 @@ import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
+import MessageActions from './MessageActions.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserName from './UserName.js';
@@ -144,6 +145,7 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
+            <MessageActions />
           </div>
         ):(
           <div className="message-container">
@@ -163,6 +165,7 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
+            <MessageActions />
           </div>
         )
       }

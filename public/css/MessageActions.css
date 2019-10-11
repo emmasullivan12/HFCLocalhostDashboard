@@ -1,0 +1,130 @@
+.msgActions-container{
+  display: none;
+  background: #fff;
+  border: .0625rem solid #f2f2f2;
+  border-radius: .375em;
+  transition: all 50ms ease-in;
+  transition-property: border-color,box-shadow;
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  z-index: 1;
+  height: 28px;
+  width: 106px;
+}
+
+.msgActions-container .msgActions-btn:first-of-type{
+  border-top-left-radius: .375em;
+  border-bottom-left-radius: .375em;
+}
+
+.msgActions-container .msgActions-btn:last-of-type{
+  border-right: none;
+  border-top-right-radius: .375em;
+  border-bottom-right-radius: .375em;
+}
+
+.msgActions-btn{
+  padding: 3px 7px;
+  color: #3f3f3f;
+  border: none;
+  border-right: 1px solid #f2f2f2;
+  transition: all 50ms ease-in;
+  transition-property: background,border,opacity;
+  background: none;
+  font: inherit;
+  margin: 0;
+  line-height: inherit;
+  overflow: initial;
+  text-align: initial;
+  vertical-align: initial;
+  cursor: pointer;
+  outline: none;
+}
+.msgActions-btn:hover{
+  color: rgba(18,100,163);
+  outline: none;
+}
+.msgActions-btn:active{
+  background: rgba(248,248,248);
+}
+
+.msgAction-icon{
+  position: relative;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.msgAction-icon:hover{
+  color: #4e4ed6;
+}
+.msgAction-icon:before{
+  display: inline-block;
+  font-family: Slack v2;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+#msgAction-star.clicked{
+  color: #ffd004;
+}
+
+.moreActionsContainer{
+  position: absolute;
+  right: 0;
+  height: 200px;
+  background: red;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 300px;
+  max-height: calc(100vh - 99px);
+  color: #3f3f3f;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  cursor: default;
+}
+
+.moreActions-scrollArea{
+  position: relative;
+  outline: none;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  height: 100%;
+  width: 100%;
+}
+
+.moreActionsList{
+  visibility: visible;
+  overflow: visible;
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.moreActionsListItem{
+  line-height: 32px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.moreActionsLabel{
+  position: relative;
+  top: -1px;
+}

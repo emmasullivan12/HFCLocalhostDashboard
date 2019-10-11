@@ -307,8 +307,12 @@ hr{
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
+.tooltip .tooltiptext.last {
+  left: -25px;
+}
 .tooltiptext.groups {
   width: 120px;
+  font-weight: 600;
 }
 .tooltip .tooltiptext.profile {
   left: -46%;
@@ -322,6 +326,10 @@ hr{
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+}
+.tooltip .tooltiptext.last::after {
+  left: unset;
+  right: 13px;
 }
 .tooltip:hover .tooltiptext{
   visibility: visible;
