@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th Sept 2019
+// Dex last merged this code on 28th Oct 2019
 
 import React, { Component } from "react";
 
@@ -10,7 +10,6 @@ import MentorMatches from './MentorMatches';
 import MenteeFullSignUp from './MenteeFullSignUp.js';
 import MenteeTraining from './MenteeTraining.js';
 import Modal from './Modal';
-
 
 import "../css/General.css";
 import "../css/HomepageCTAContainer.css";
@@ -39,7 +38,6 @@ class HomepageCTAContainer extends Component {
     });
 
     return (
-      // <div className={className}>
       <div className="landingCTA-container">
         <div className="membershipsContainer">
           <div className="memberships-title">My Memberships</div>
