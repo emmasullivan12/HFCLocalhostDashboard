@@ -6,7 +6,7 @@ import Modal from './Modal.js';
 import ReportModalContent from './ReportModalContent.js';
 import "../css/MessageActions.css";
 
-const ReportModalProps = { 
+const ReportModalProps = {
   ariaLabel: 'Report message to Prospela',
   triggerText: 'Report',
   usedFor: 'ReportMsg'
@@ -32,14 +32,14 @@ class MessageActions extends Component {
   showMoreActions(e) {
     this.setState({
       showMoreActions: true
-    }, () => document.addEventListener('click', this.closeMoreActions))
+    })
   }
 
   closeMoreActions(e) {
     if (this.moreActions !== null && !this.moreActions.contains(e.target)) {
       this.setState({
         showMoreActions: false
-      }, () => document.removeEventListener('click', this.closeMoreActions))
+      })
     }
   }
 
@@ -84,7 +84,7 @@ class MessageActions extends Component {
                 <ul className="moreActionsList">
                   <li className="moreActionsListItem">
                     <span className="moreActionsLabel overflow-ellipsis">
-                      <Modal {...ReportModalProps}>
+                      <Modal {...ReportModalProps} onClick={this.closeMoreActions}>
                         <ReportModalContent />
                       </Modal>
                     </span>

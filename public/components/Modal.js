@@ -43,7 +43,7 @@ const ModalContent = ({
           </button>
         </div>
         <div className="modal-content">
-          {content}
+          {React.Children.map(content, child => React.cloneElement(child, {onClose, onKeyDown}))}
         </div>
       </div>
     </aside>,

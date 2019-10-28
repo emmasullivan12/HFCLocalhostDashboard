@@ -199,6 +199,7 @@ function DisplayFile(props) {
               &#10007; Error sending message. Please try again
             </div>
           </div>
+          <MessageActions />
         </div>
       </div>
     </React.Fragment>
