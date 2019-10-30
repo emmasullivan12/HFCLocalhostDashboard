@@ -99,8 +99,14 @@ function isNightDay(userCurrentTime) {
 }
 
 function profileTimeZone(userTimeZone) {
+  console.log(userTimeZone);
+
   var now = new Date();
-  var options = { hour: 'numeric', minute: '2-digit', timeZone: 'UTC', timeZoneName: 'short' };
+  var options = {
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZone: userTimeZone,
+    timeZoneName: 'short' };
   return now.toLocaleTimeString('en-US', options);
 }
 

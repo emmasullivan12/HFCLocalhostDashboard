@@ -54,21 +54,34 @@ class PrAddMessage extends Component {
     evt.target.style.overflowY = "scroll";
   }
 
-  convertBoldItalics = () => {
+  convertBoldItalicsLinks = () => {
     var txt = document.getElementById('txtInput-box').value
     var result = document.getElementById('isTyping')
+
+    //bold
     {txt.match(/\*([\w\s\d]+)?\*/g) != null && (
       txt.match(/\*([\w\s\d]+)?\*/g).forEach(function(match) {
         var str = match.substring(1, match.length - 1);
         txt = txt.replace(match, "<b>" + str + "</b>");
       })
     )}
+
+    //italics
     {txt.match(/_([\w\s\d]+)?_/g) != null && (
       txt.match(/_([\w\s\d]+)?_/g).forEach(function(match) {
         var str = match.substring(1, match.length - 1);
         txt = txt.replace(match, "<i>" + str + "</i>");
       })
     )}
+
+    //links
+    {txt.match(/(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])/igm) != null && (
+      txt.match(/(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])/igm).forEach(function(match) {
+        var url = match.substring(0, match.length);
+        txt = txt.replace(match, "<a rel={'external'} target=\"_blank\" href={http://" + url + "}>" + url + "</a>");
+      })
+    )}
+
     result.innerHTML = txt;
   }
 
@@ -82,7 +95,7 @@ class PrAddMessage extends Component {
   }
 
   handleMessageSubmit = () => {
-    this.convertBoldItalics();
+    this.convertBoldItalicsLinks();
     alert('message submitted!');
     var msgInsights = document.getElementById('msgInsights-bar-right');
     msgInsights.classList.remove("show");

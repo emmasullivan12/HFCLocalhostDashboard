@@ -34,9 +34,9 @@ class MenteeProfileContent extends Component {
       fname: 'Dexter',
       profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       is18plus: 1,
-      city: 'London',
-      country: 'UK',
-      timeZone: 'UTC',
+      city: 'LA',
+      country: 'Ireland',
+      timeZone: "Europe/London",
       avail: 1,
       prevMentors: 1,
       highlights: 10,
@@ -445,7 +445,7 @@ class MenteeProfileContent extends Component {
                 </div>
               </div>
             </div>
-            <div className={"mapImg " + mentee.city}>
+            <div className={"mapImg " + mentee.country + " " + mentee.city}>
               <div className="mapAttribution">
                 &#169; <a href="https://www.openstreetmap.org/copyright" className="link map">OpenStreetMap</a> contributors
               </div>
