@@ -930,6 +930,7 @@ a:active {
 }
 .userMenu-thumb img{
   position: absolute;
+  margin-left: -46px;
 }
 .msg-thumb img{
   position: relative;

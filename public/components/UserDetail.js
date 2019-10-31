@@ -99,13 +99,14 @@ function isNightDay(userCurrentTime) {
 }
 
 function profileTimeZone(userTimeZone) {
-  console.log(userTimeZone);
-
+  // Check if is Internet Explorer 6-11 because does not recognise toLocaleTimeString()
+  const isIE = /*@cc_on!@*/false || !!document.documentMode;
+  const timeZone = isIE ? 'UTC' : userTimeZone;
   var now = new Date();
   var options = {
     hour: 'numeric',
     minute: '2-digit',
-    timeZone: userTimeZone,
+    timeZone: timeZone,
     timeZoneName: 'short' };
   return now.toLocaleTimeString('en-US', options);
 }

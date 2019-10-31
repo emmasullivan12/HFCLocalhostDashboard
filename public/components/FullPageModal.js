@@ -90,10 +90,7 @@ class FullPageModal extends React.Component {
 
   handleNavScroll = () => {
     const { modalFPRef } = this;
-    let mainNavLinks = document.querySelectorAll(".section-list li a");
-  //  let mainSections = document.querySelectorAll(".scroll-anchor");
-  //  let lastId;
-  //  let cur = [];
+    let mainNavLinks = Array.prototype.slice.call(document.querySelectorAll(".section-list li a"), 0);
     const mainNavLinksLength = mainNavLinks.length;
     const scrollTop = this.modalFPRef.current.scrollTop;
     const offsetHeight = this.modalFPRef.current.offsetHeight;
@@ -105,8 +102,8 @@ class FullPageModal extends React.Component {
       if (
         isFirstSection && section.offsetTop > scrollTop ||
         isLastSection && (scrollTop === (maxHeight - offsetHeight)) ||
-        (section.offsetTop-4) <= scrollTop && (scrollTop != (maxHeight - offsetHeight)) &&
-        ((section.offsetTop-4) + section.offsetHeight) > scrollTop
+        (section.offsetTop-6) <= scrollTop && (scrollTop != (maxHeight - offsetHeight)) &&
+        ((section.offsetTop-6) + section.offsetHeight) > scrollTop
       ) {
         link.classList.add("active");
       } else {

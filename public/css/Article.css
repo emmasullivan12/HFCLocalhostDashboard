@@ -74,6 +74,48 @@
     position: sticky;
     top: 0;
   }
+    /* IE 11 */
+  _:-ms-fullscreen, :root .article-page .article-container .content-col.profile {
+    position: absolute;
+    left: 25vw;
+  }
+  _:-ms-fullscreen, :root .article-page .article-container .category-list.profile{
+    position: fixed;
+    right: 0;
+  }
+  _:-ms-fullscreen, :root .article-page .article-container .article-extras{
+    position: fixed;
+  }
+  /* EDGE < 15 */
+  @supports (-ms-accelerator:true) {
+    .article-page .article-container .content-col.profile {
+      position: absolute;
+      left: 25vw;
+    }
+    .article-page .article-container .category-list.profile{
+      position: fixed;
+      right: 0;
+    }
+    .article-page .article-container .article-extras{
+      position: fixed;
+    }
+  }
+  /* EDGE 15+ */
+  _:-ms-lang(x), _:-webkit-full-screen, .article-page .article-container .content-col.profile
+  {
+    position: absolute;
+    left: 25vw;
+  }
+  _:-ms-lang(x), _:-webkit-full-screen, .article-page .article-container .category-list.profile
+  {
+    position: fixed;
+    right: 0;
+  }
+  _:-ms-lang(x), _:-webkit-full-screen, .article-page .article-container .article-extras
+  {
+    position: fixed;
+  }
+
   .article-page .article-container .category-list.profile{
     padding-right: 3rem;
     height: 100vh;
@@ -224,12 +266,6 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0,.1);
 }
-/*
-.section-list.sticky{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}*/
 .section-list.left{
   padding-left: 0;
   padding-right: 40px;
