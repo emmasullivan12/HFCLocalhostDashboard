@@ -78,6 +78,8 @@
   width: 100%;
   line-height: 22px;
   height: 25px;
+  max-height: -webkit-calc(60vh - 100px);
+  max-height: -moz-calc(60vh - 100px);
   max-height: calc(60vh - 100px);
   overflow-y: hidden;
   vertical-align: middle;
@@ -100,6 +102,8 @@
   display: -webkit-flex;
   display: flex;
   margin-right: 12px;
+  width: -webkit-calc(100%-10px);
+  width: -moz-calc(100%-10px);
   width: calc(100%-10px);
 }
 

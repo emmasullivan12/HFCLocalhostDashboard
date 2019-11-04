@@ -39,7 +39,6 @@ const MentorProfileMsgBtnModalProps = {
   backBtn: 'arrow'
 }
 
-
 const UploadProfPicProps = {
   ariaLabel: 'Add or Edit Profile Picture',
   triggerText: 'Add/Edit Profile pic',
@@ -121,10 +120,18 @@ function TimeCalc(props) {
   return timeTxt;
 }
 
+function toggleMoreActionsBlur(e) {
+  if(e.target.className === 'msgActions-btn tooltip moreActions' && (e.relatedTarget == null || e.relatedTarget.className != 'ModalOpenBtn ModalOpenBtn-ReportMsg')) {
+    e.target.nextSibling.classList.toggle('active');
+  }
+}
+
+//onMouseLeave={ToggleMoreActions2}
+
 function StdMessage(props) {
   return (
     <React.Fragment>
-      <div className="block-container">
+      <div className="block-container" onBlur={toggleMoreActionsBlur} >
       {
         props.isAdjacent === true
         ? (

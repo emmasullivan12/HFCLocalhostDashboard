@@ -20,7 +20,7 @@ class MessageActions extends Component {
       showMoreActions: false
     }
     this.toggleStarClicked = this.toggleStarClicked.bind(this);
-    this.showMoreActions = this.showMoreActions.bind(this);
+    this.toggleMoreActions = this.toggleMoreActions.bind(this);
     this.closeMoreActions = this.closeMoreActions.bind(this);
   }
 
@@ -29,17 +29,13 @@ class MessageActions extends Component {
     this.setState({ starClicked: !currentState });
   }
 
-  showMoreActions(e) {
-    this.setState({
-      showMoreActions: true
-    })
+  toggleMoreActions(e) {
+    this.moreActions.classList.toggle('active');
   }
 
   closeMoreActions(e) {
     if (this.moreActions !== null && !this.moreActions.contains(e.target)) {
-      this.setState({
-        showMoreActions: false
-      })
+      this.moreActions.classList.remove('active');
     }
   }
 
@@ -48,7 +44,7 @@ class MessageActions extends Component {
     return (
       <React.Fragment>
         <div className="msgActions-container">
-          <button type="button" className="msgActions-btn tooltip" onClick={this.toggleStarClicked}>
+          <button type="button" className="msgActions-btn tooltip" onMouseDown={this.toggleStarClicked}>
             {starClicked ? (
               <React.Fragment>
                 <div className="msgAction-icon clicked" id="msgAction-star">
@@ -72,19 +68,19 @@ class MessageActions extends Component {
             </div>
             <span className="tooltiptext last groups">Share post</span>
           </button>
-          <button type="button" className="msgActions-btn tooltip" onClick={this.showMoreActions}>
+          <button type="button" className="msgActions-btn tooltip moreActions" onMouseDown={this.toggleMoreActions}>
             <div className="msgAction-icon">
               <i className="fas fa-ellipsis-h" />
             </div>
             <span className="tooltiptext last groups">More actions</span>
           </button>
-          {showMoreActions && (
-            <div className="moreActionsContainer" ref={el => (this.moreActions = el)}>
+
+            <div className="moreActionsContainer" ref={el => (this.moreActions = el)} onClick={this.closeMoreActions}>
               <div className="moreActions-scrollArea">
                 <ul className="moreActionsList">
-                  <li className="moreActionsListItem">
+                  <li className="moreActionsListItem" >
                     <span className="moreActionsLabel overflow-ellipsis">
-                      <Modal {...ReportModalProps} onClick={this.closeMoreActions}>
+                      <Modal {...ReportModalProps} tabIndex="0">
                         <ReportModalContent />
                       </Modal>
                     </span>
@@ -92,7 +88,7 @@ class MessageActions extends Component {
                 </ul>
               </div>
             </div>
-          )}
+
         </div>
       </React.Fragment>
     );

@@ -49,6 +49,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
 @media screen and (min-width: 760px) {
   .clientWindowContainer {
     width: calc(100% - 220px);
+    width: -webkit-calc(100% - 220px);
+    width: -moz-calc(100% - 220px);
   }
   .close-menu{
     display: none;
@@ -353,6 +355,8 @@ hr{
   -ms-border-radius: .25rem;
   -o-border-radius: .25rem;
   min-height: 97px;
+  max-height: -webkit-calc(40vh - 200px);
+  max-height: -moz-calc(40vh - 200px);
   max-height: calc(40vh - 200px);
   line-height: 20px;
   vertical-align: top;

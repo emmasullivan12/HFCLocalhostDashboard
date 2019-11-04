@@ -8,6 +8,8 @@
   display: inline-block;
   vertical-align: top;
   width: 300px;
+  max-height: -webkit-calc(100vh - 99px);
+  max-height: -moz-calc(100vh - 99px);
   max-height: calc(100vh - 99px);
   color: #3f3f3f;
   background-color: #FFFFFF;

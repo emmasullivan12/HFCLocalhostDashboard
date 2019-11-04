@@ -9,6 +9,8 @@
 
 @media screen and (min-width: 760px) {
   .contentContainer{
+    width: -webkit-calc(100vw - 220px);
+    width: -moz-calc(100vw - 220px);
     width: calc(100vw - 220px);
   }
 }

@@ -52,7 +52,11 @@
 .block-container:hover .msgActions-container{
   display:block;
 }
-
+/*
+.block-container:hover .moreActionsContainer{
+  display:none;
+}
+*/
 #newMsgs {
   padding-top: 12rem;
   margin-top: -12rem;
