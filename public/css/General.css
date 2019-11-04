@@ -374,6 +374,9 @@ hr{
 .textInputBox.passTxtBox{
   margin: 0 0 1rem 0;
 }
+.textInputBox.passTxtBox:invalid{
+  box-shadow: none;
+}
 .textInputBox.inputTitle{
   min-height: 20px;
   height: 40px;

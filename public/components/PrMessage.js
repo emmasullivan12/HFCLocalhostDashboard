@@ -184,7 +184,7 @@ function StdMessage(props) {
 function DisplayFile(props) {
   return (
     <React.Fragment>
-      <div className="block-container">
+      <div className="block-container" onBlur={toggleMoreActionsBlur}>
         <div className="message-container">
           <Avatar senderID={props.message.uid} senderName={props.message.author}/>
           <div className="message-content-box">
