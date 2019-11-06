@@ -105,6 +105,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   width: 250px;
+  min-height: 30px;
   max-height: -webkit-calc(100vh - 99px);
   max-height: -moz-calc(100vh - 99px);
   max-height: calc(100vh - 99px);
@@ -153,9 +154,11 @@
 .moreActionsListItem{
   margin: 0;
   cursor: pointer;
+  line-height: 0;
 }
 
 .moreActionsLabel{
   position: relative;
   top: 0px;
+  line-height: 32px;
 }

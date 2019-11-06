@@ -209,6 +209,7 @@
 }
 .ModalOpenBtn-ReportMsg{
   top: 0px;
+  height: 32px;
 }
 .ModalOpenBtn-ReportMsg:hover,
 .ModalOpenBtn-menu-mentee-profile:hover,

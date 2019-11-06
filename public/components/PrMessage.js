@@ -120,13 +120,24 @@ function TimeCalc(props) {
   return timeTxt;
 }
 
-function toggleMoreActionsBlur(e) {
-  if(e.target.className === 'msgActions-btn tooltip moreActions' && (e.relatedTarget == null || e.relatedTarget.className != 'ModalOpenBtn ModalOpenBtn-ReportMsg')) {
-    e.target.nextSibling.classList.toggle('active');
+function isIE() {
+  var ua = window.navigator.userAgent;
+  var msie = ua.indexOf("MSIE ");
+  if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
+    return true;
+  } else {
+    return false;
   }
 }
 
-//onMouseLeave={ToggleMoreActions2}
+function toggleMoreActionsBlur(e) {
+  const newTargetElement = isIE() ? document.activeElement : e.relatedTarget;
+  if(e.target.className === 'msgActions-btn tooltip moreActions' && (newTargetElement == null || newTargetElement.className != 'ModalOpenBtn ModalOpenBtn-ReportMsg')) {
+    e.target.nextSibling.classList.remove('active');
+  }
+}
+
+//onFocusOut={toggleMoreActionsBlur}
 
 function StdMessage(props) {
   return (
