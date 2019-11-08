@@ -11,11 +11,13 @@
   color: #ebfeff;
 }
 .pwdByMain.vga{
-  background-image: url(https://prospela.com/wp-content/uploads/2019/11/GaymJam.jpg);
-  background-image:linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/GaymJam.jpg);
-  background-image:-moz-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/GaymJam.jpg);
-  background-image:-webkit-linear-gradient(90deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/GaymJam.jpg);
-  background-image:-o-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/GaymJam.jpg);
+  background-size: contain;
+  background-position: top;
+  background-image: url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
+  background-image:linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
+  background-image:-moz-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
+  background-image:-webkit-linear-gradient(90deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
+  background-image:-o-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
 }
 .initiativeLogoContainer.vga{
   width: 150px;
@@ -134,4 +136,10 @@
 }
 #quotes li.quote-box.vga:nth-child(3):before {
   color: #2edb74;
+}
+
+@media only screen and (min-width: 1180px) {
+  .pwdByMain.vga{
+    background-size: cover;
+  }
 }

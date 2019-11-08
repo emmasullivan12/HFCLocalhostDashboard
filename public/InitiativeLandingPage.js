@@ -44,29 +44,32 @@ cookiesYes.addEventListener('click', function(event) {
   cookiesBanner.style.display = 'none';
 });
 
-menteeClick.addEventListener('click', function(event) {
-  mentorInfo.classList.remove("active");
-  mentorBtn.classList.remove("active");
-  mentorStepsList.classList.remove("active");
-  mentorQuotes.classList.remove("active");
-  menteeQuotes.classList.add("active");
-  menteeStepsList.classList.add("active");
-  menteeInfo.classList.add("active");
-  menteeBtn.classList.add("active");
-  stepsTitle.innerHTML = 'Steps to joining as a Mentee';
-});
-mentorClick.addEventListener('click', function(event) {
-  menteeInfo.classList.remove("active");
-  menteeBtn.classList.remove("active");
-  menteeStepsList.classList.remove("active");
-  menteeQuotes.classList.remove("active");
-  mentorQuotes.classList.add("active");
-  mentorStepsList.classList.add("active");
-  mentorInfo.classList.add("active");
-  mentorBtn.classList.add("active");
-  stepsTitle.innerHTML = 'Steps to joining as an E-Mentor';
-});
-
+if(menteeClick != null) {
+  menteeClick.addEventListener('click', function(event) {
+    mentorInfo.classList.remove("active");
+    mentorBtn.classList.remove("active");
+    mentorStepsList.classList.remove("active");
+    mentorQuotes.classList.remove("active");
+    menteeQuotes.classList.add("active");
+    menteeStepsList.classList.add("active");
+    menteeInfo.classList.add("active");
+    menteeBtn.classList.add("active");
+    stepsTitle.innerHTML = 'Steps to joining as a Mentee';
+  });
+}
+if(mentorClick != null) {
+  mentorClick.addEventListener('click', function(event) {
+    menteeInfo.classList.remove("active");
+    menteeBtn.classList.remove("active");
+    menteeStepsList.classList.remove("active");
+    menteeQuotes.classList.remove("active");
+    mentorQuotes.classList.add("active");
+    mentorStepsList.classList.add("active");
+    mentorInfo.classList.add("active");
+    mentorBtn.classList.add("active");
+    stepsTitle.innerHTML = 'Steps to joining as an E-Mentor';
+  });
+}
 /*tncCheckbox.addEventListener('invalid', function(event) {
   tncText.classList.add('error');
   tncStyle.classList.add('error');
