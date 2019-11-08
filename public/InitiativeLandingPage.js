@@ -2,6 +2,8 @@
 
 var cookiesBanner = document.getElementById("cookies-banner");
 var cookiesYes = document.getElementById("cookies-yes");
+var pwdByLogo = document.getElementById("prLogoImg-switch");
+var pwdByLogoContainer = document.getElementById("pwdByContainer");
 var pwdByNav = document.getElementById("pwdByNav");
 var menteeClick = document.getElementById("mentee-click");
 var mentorClick = document.getElementById("mentor-click");
@@ -33,9 +35,17 @@ window.addEventListener("hashchange", function () {
 window.onscroll = function () {
     if (window.pageYOffset >= 450 ) {
       pwdByNav.classList.add("is-fixed");
+      if(pwdByLogo != null) {
+        pwdByLogo.src = 'https://prospela.com/wp-content/uploads/2019/07/Powered-by-Prospela-Vertical_Logo_White.png';
+        pwdByLogoContainer.style.cssText += ';width:120px !important;';
+      }
     }
     else {
       pwdByNav.classList.remove("is-fixed");
+      if(pwdByLogo != null) {
+        pwdByLogo.src = 'https://prospela.com/wp-content/uploads/2019/11/Powered-by-Prospela-Vertical_Logo_Colour.png';
+        pwdByLogoContainer.style.cssText += ';width:150px !important;';
+      }
     }
 };
 
@@ -46,10 +56,12 @@ cookiesYes.addEventListener('click', function(event) {
 
 if(menteeClick != null) {
   menteeClick.addEventListener('click', function(event) {
-    mentorInfo.classList.remove("active");
-    mentorBtn.classList.remove("active");
-    mentorStepsList.classList.remove("active");
-    mentorQuotes.classList.remove("active");
+    if(mentorClick != null) {
+      mentorInfo.classList.remove("active");
+      mentorBtn.classList.remove("active");
+      mentorStepsList.classList.remove("active");
+      mentorQuotes.classList.remove("active");
+    }
     menteeQuotes.classList.add("active");
     menteeStepsList.classList.add("active");
     menteeInfo.classList.add("active");
@@ -59,10 +71,12 @@ if(menteeClick != null) {
 }
 if(mentorClick != null) {
   mentorClick.addEventListener('click', function(event) {
-    menteeInfo.classList.remove("active");
-    menteeBtn.classList.remove("active");
-    menteeStepsList.classList.remove("active");
-    menteeQuotes.classList.remove("active");
+    if(menteeClick != null) {
+      menteeInfo.classList.remove("active");
+      menteeBtn.classList.remove("active");
+      menteeStepsList.classList.remove("active");
+      menteeQuotes.classList.remove("active");
+    }
     mentorQuotes.classList.add("active");
     mentorStepsList.classList.add("active");
     mentorInfo.classList.add("active");

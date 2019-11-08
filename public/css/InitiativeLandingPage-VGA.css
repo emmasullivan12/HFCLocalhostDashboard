@@ -10,29 +10,27 @@
 .gdpr-btn.vga:hover{
   color: #ebfeff;
 }
+.pwdByPrLogoContainer.vga{
+  width: 140px!important;
+}
 .pwdByMain.vga{
   background-size: contain;
   background-position: top;
   background-image: url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
-  background-image:linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
-  background-image:-moz-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
-  background-image:-webkit-linear-gradient(90deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
-  background-image:-o-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
 }
 .initiativeLogoContainer.vga{
-  width: 150px;
+  height: 85px;
 }
 .initiativeHeader.vga,
 .mainHeaders.vga,
 .section-header.vga,
 .section-header.tabHeader.vga{
   font-family: Poppins, Raleway, Lato, Arial, Helvetica, sans-serif!important;
-}
-
-.section-header.vga,
-.mainHeaders.vga,
-.section-header.tabHeader.vga{
   color: #0b494c;
+}
+.section-header.tabHeader.vga{
+  background-color: #e5ecec;
+  margin: 0;
 }
 
 .initiativeSubHeader.vga,
@@ -42,8 +40,17 @@
 #quotes li.quote-box.vga{
   font-family: Raleway, Lato, Arial, Helvetica, sans-serif;
 }
+.initiativeSubHeader.vga,
+.initiativeHeader.vga,
+.initiativeTextDetail.vga{
+  color: #0b494c;
+}
+.learnMoreText.vga.link:hover{
+  color: #0b494c!important;
+}
 .initiativeKeyPoints.vga{
-  background-color: #0b494c;
+  background-color: #fff;
+  color: #0b494c;
   font-family: Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 .pwdByNav.is-fixed.vga {
@@ -70,11 +77,11 @@
   font: inherit;
   font-weight: 600;
   margin-bottom: .5rem;
-  color: #0b494c;
-  background: #ff5622;
+  color: #fff;
+  background: #0b494c;
 }
 .initiativeBtn-mentor.vga:hover{
-  background: rgba(255,86,34,.9);
+  background: #ff5622;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-mentor.vga:active{
@@ -107,13 +114,10 @@
   background-color: #0b494c;
 }
 .bottomSignUp.vga{
-  background-image: url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image: linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image: -moz-linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image: -webkit-linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
-  background-image: -o-linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image: url(https://prospela.com/wp-content/uploads/2019/11/VGA-Landing-Background.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
 }
 .mentor-click-vga:before {
   background-color: #ff5622;
