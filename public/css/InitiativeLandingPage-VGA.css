@@ -1,0 +1,122 @@
+/* Dex last merged this code on 15th Sept 2019 */
+
+.link.vga{
+  color: #14b2ae;
+}
+.gdpr-btn.vga{
+  background: #0b494c;
+  color: #fff;
+}
+.gdpr-btn.vga:hover{
+  color: #ebfeff;
+}
+.pwdByMain.vga{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-moz-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-webkit-linear-gradient(90deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+  background-image:-o-linear-gradient(0deg,#0b494c,rgba(20,178,174,.3)),url(https://prospela.com/wp-content/uploads/2019/08/AVFX-Paddington.jpg);
+}
+.initiativeLogoContainer.vga{
+  width: 150px;
+}
+.initiativeKeyPoints.vga{
+  background-color: #0b494c;
+}
+.pwdByNav.is-fixed.vga {
+  background-color: #0b494c!important;
+}
+.initiativeBtn-mentor.vga{
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 50px;
+  min-width: 210px;
+  text-align: center;
+  padding: 0;
+  -webkit-transition: background .15s ease-out;
+  -moz-transition: background .15s ease-out;
+  -ms-transition: background .15s ease-out;
+  -o-transition: background .15s ease-out;
+  transition: background .15s ease-out;
+  font: inherit;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  color: #0b494c;
+  background: #ff5622;
+}
+.initiativeBtn-mentor.vga:hover{
+  background: rgba(255,86,34,.9);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.initiativeBtn-mentor.vga:active{
+  background: #ff5622;
+}
+/*
+.initiativeBtn-mentor.vga{
+  color: #14b2ae;
+  background: transparent;
+  border: 1.5px solid #14b2ae;
+}
+.initiativeBtn-mentor.vga:hover{
+  background-color: rgba(20,178,174,.2);
+  color: rgba(255,252,251,.9);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.initiativeBtn-mentor.vga:active{
+  background: transparent;
+}
+*/
+.section-header.vga,
+.mainHeaders.vga,
+.section-header.tabHeader.vga{
+  color: #0b494c;
+}
+.joinSteps.vga{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:linear-gradient(0deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-moz-linear-gradient(0deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-webkit-linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-o-linear-gradient(0deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+}
+.stepCrcl.vga{
+  background-color: #0b494c;
+}
+.bottomSignUp.vga{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image: linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image: -moz-linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image: -webkit-linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image: -o-linear-gradient(90deg,rgba(11, 73, 76,.8),rgba(11, 73, 76,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mentee-click-vga:before {
+  background-color: #a8ff54;
+}
+.mentor-click-vga:before {
+  background-color: #fb1f92;
+}
+#quotes li.quote-box.vga:nth-child(1) {
+  border-color: #ff5622;
+}
+#quotes li.quote-box.vga:nth-child(1):before {
+  color: #ff5622;
+}
+#quotes li.quote-box.vga:nth-child(2) {
+  border-color: #14b2ae;
+}
+#quotes li.quote-box.vga:nth-child(2):before {
+  color: #14b2ae;
+}
+#quotes li.quote-box.vga:nth-child(3) {
+  border-color: #2edb74;
+}
+#quotes li.quote-box.vga:nth-child(3):before {
+  color: #2edb74;
+}
