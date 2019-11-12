@@ -115,17 +115,11 @@ class FullPageModal extends React.Component {
     });
 
     const menu = document.getElementById('articleMenu');
-    console.log('scrollTop: '+scrollTop);
     if (menu != null && (isEdge() || isIE())) {
       const menuoffsetTop = menu.offsetTop;
-      console.log('menuoffsetTop: '+menuoffsetTop);
-      console.log('menuoffsetHeight: '+menu.offsetHeight);
-      console.log('should be sticky: '+(scrollTop >= menuoffsetTop));
       if (scrollTop >= menuoffsetTop) {
-        //menu.style.marginTop = menu.offsetHeight + 'px';
         menu.classList.add("sticky");
       } else {
-        //menu.style.marginTop = 0;
         menu.classList.remove("sticky");
       }
     } else return;

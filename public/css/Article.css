@@ -43,11 +43,24 @@
   padding-right: 10px;
   padding-top: 10px;
   vertical-align: top;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 .article-page .article-container .category-list.sticky {
   position: fixed;
-  right: 0;
   top: 4.5em;
+}
+@media only screen and (min-width: 759px) {
+  .article-page .article-container .category-list.sticky {
+    margin-left: 0px;
+    right: 13px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .article-page .article-container .category-list.sticky {
+    margin-left: 629.36px; /* calculated by: max-width of 960px * 66.6% i.e. col-8 minus 10px margin-right */
+    right: auto;
+  }
 }
 .article-page .article-container .category-list.profile,
 .article-page .article-container .article-extras.profile {
