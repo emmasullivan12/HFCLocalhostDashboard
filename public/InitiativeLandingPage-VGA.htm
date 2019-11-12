@@ -56,13 +56,13 @@
   <nav class="pwdByNav vga col-12" id="pwdByNav">
     <div class="pwdByPrLogoContainer vga" id="pwdByContainer">
       <a href="https://prospela.com" target="_blank">
-        <img class="prLogoImg" id="prLogoImg-switch" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/11/Powered-by-Prospela-Vertical_Logo_Colour.png" />
+        <img class="prLogoImg" id="prLogoImg-switch" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/11/Powered-by-Prospela-Vertical_Logo_Purple.png" />
       </a>
     </div>
   </nav>
   <header class="pwdByMain vga col-12">
     <section class="sectionMain">
-      <div class="sectionMainContainer">
+      <div class="sectionMainContainer vga">
         <div>
           <div class="initiativeLogoContainer vga">
             <img class="initiativeLogoImg" alt="Initiative Logo" src="https://prospela.com/wp-content/uploads/2019/11/VGA-Logo-Text.png" />
@@ -78,6 +78,7 @@
               <label class="checkbox-container-login initiative-tncText" id="tncText">I have read and agree to Prospela's <a href="" class="initiative-inline-link">Information Collection Statement</a><input type="checkbox" id="tncCheckbox" name="tanp" required><span class="checkmark initiativeCheckmark left" id="tncStyle"></span></label>
             </div> -->
             <button type="button" class="initiativeBtn-mentor vga" onclick=" window.open('https://prospela.typeform.com/to/Y1M294?source=intogames','_blank')">Apply as an E-Mentor &#62;</button>
+            <button type="button" class="initiativeBtn-student vga" onclick=" window.open('https://prospela.typeform.com/to/sQEHOP?source=intogames','_blank')">Sign up as a Student &#62;</button>
           </form>
           <a class="learnMoreText vga link" href="#learnMore">
             <span class="">
@@ -106,13 +107,13 @@
       <div class="col-3 col-s-3 keyPointsContainer">
         <div class="keyPointsImg"><i class="fas fa-search"></i></div>
         <div>
-          Share <strong>work-life</strong> & the latest insights
+          <strong>Real employees</strong> share the latest insights
         </div>
       </div>
       <div class="col-3 col-s-3 keyPointsContainer">
         <div class="keyPointsImg"><i class="fab fa-telegram-plane"></i></div>
         <div>
-          Give <strong>actionable advice</strong> & help students build their network!
+          Helping students build their network & get <strong>actionable advice</strong>!
         </div>
       </div>
     </section>
@@ -122,12 +123,19 @@
         <div class="row whyJoinContainer">
           <ul class="why-join-nav" role="tablist">
             <li id="mentor-btn" class="active">
-              <a id="mentor-click" class="mentor-click-vga" data-toggle="tab">
+              <a id="mentor-click" class="mentor-click-vga link" data-toggle="tab">
                 <img src="https://prospela.com/wp-content/uploads/2019/11/Mentor-VGA.png" class="mentorIcon" alt="mentor"/>
                 <h4>As an E-Mentor</h4>
               </a>
             </li>
+            <li id="mentee-btn">
+              <a id="mentee-click" class="mentee-click-vga link" data-toggle="tab">
+                <img src="https://prospela.com/wp-content/uploads/2019/11/Student-VGA.png" class="menteeIcon" alt="mentee"/>
+                <h4>As a Student</h4>
+              </a>
+            </li>
           </ul>
+
         </div>
         <div class="row whyJoinContainer">
           <div class="tab-content">
@@ -169,6 +177,44 @@
                 </div>
               </div>
             </div>
+            <div class="tab-pane" id="mentee-info" role="tabpanel">
+              <div class="row mainContent">
+                <div class="col-6 col-s-12">
+                  <h2 class="mainHeaders vga">Regular, live insights from real employees</h2>
+                  <p class="mainSubTxt vga">Get inspired and see what work-life reality is really like, directly from employees in your chosen industry as they go about their working day</p>
+                </div>
+                <div class="col-6 col-s-12">
+                  <img class="img-responsive whyJoinImg" src="https://prospela.com/wp-content/uploads/2019/07/Real-employee-insights.png" alt="speak to real employees">
+                </div>
+              </div>
+              <div class="row mainContent">
+                <div class="col-6 col-s-12">
+                  <img class="img-responsive whyJoinImg alignRight" src="https://prospela.com/wp-content/uploads/2019/07/Career-plan-support.png" alt="speak to real employees">
+                </div>
+                <div class="col-6 col-s-12">
+                  <h2 class="mainHeaders vga">Get support developing a career plan that is grounded in reality</h2>
+                  <p class="mainSubTxt vga">Get expert insights to know how best to focus your energy and develop the skills employers are looking for</p>
+                </div>
+              </div>
+              <div class="row mainContent">
+                <div class="col-6 col-s-12">
+                  <h2 class="mainHeaders vga">Personalised online advice anytime, anywhere</h2>
+                  <p class="mainSubTxt vga">1:1 chat with real professionals to get your burning questions answered, and tap insider hints & tips tailored to your career path</p>
+                </div>
+                <div class="col-6 col-s-12">
+                  <img class="img-responsive whyJoinImg" src="https://prospela.com/wp-content/uploads/2019/07/Anytime-anywhere.png" alt="speak to real employees">
+                </div>
+              </div>
+              <div class="row mainContent">
+                <div class="col-6 col-s-12">
+                  <img class="img-responsive whyJoinImg alignRight" src="https://prospela.com/wp-content/uploads/2019/07/Build-your-network.png" alt="speak to real employees">
+                </div>
+                <div class="col-6 col-s-12">
+                  <h2 class="mainHeaders vga">Start building your first professional network</h2>
+                  <p class="mainSubTxt vga">Gain access to people you might not have met otherwise and get your foot in the door to a range of award-winning employers across multiple industries.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -197,6 +243,28 @@
               <div class="stepCrcl vga">4</div>
               <div class="stepTitle vga">Enjoy ongoing support & advice from Prospela</div>
               <div class="stepDetail vga">The Prospela team (and your fellow VGA Ambassadors!) are on-hand to support you as your mentoring relationships progress and whenever you need us!</div>
+            </li>
+          </ul>
+          <ul class="stepsList" id="menteeStepsList">
+            <li>
+              <div class="stepCrcl vga">1</div>
+              <div class="stepTitle vga">Sign up as a Mentee here at Prospela</div>
+              <div class="stepDetail vga">Complete our 5-min sign-up form, which will help us match you with real employees</div>
+            </li>
+            <li>
+              <div class="stepCrcl vga">2</div>
+              <div class="stepTitle vga">Complete your online training</div>
+              <div class="stepDetail vga">It takes just 5 min and you'll learn the fundamentals of mentoring, how to build your professional network and make the most your new connections!</div>
+            </li>
+            <li>
+              <div class="stepCrcl vga">3</div>
+              <div class="stepTitle vga">Get introduced to your E-Mentor!</div>
+              <div class="stepDetail vga">You'll receive your E-Mentor's profile. We'll prep you and help you nail your introduction to get started!</div>
+            </li>
+            <li>
+              <div class="stepCrcl vga">4</div>
+              <div class="stepTitle vga">Enjoy ongoing support & advice from Prospela</div>
+              <div class="stepDetail vga">It's not just your E-Mentor who'll be with you along the way. The Prospela team are on-hand to support you as you progress!</div>
             </li>
           </ul>
         </div>
@@ -231,10 +299,33 @@
             </div>
           </li>
         </ul>
+        <ul class="quote-list" id="menteeQuotes">
+          <li class="quote-box vga">
+            <div>
+              <p>It brightens up my day when I see my Prospela messages!</p>
+              <span class="name">Sophie</span>
+              <span class="role">Aspiring Animator, Portsmouth</span>
+            </div>
+          </li>
+          <li class="quote-box vga">
+            <div>
+              <p>It&#39;s been fantastic adding an extra experienced set of eyes to my MA work. I&#39;ve been able to ask <strong>questions I wouldn&#39;t feel comfortable asking</strong> in the usual setting when you meet industry professionals.</p>
+              <span class="name">Tom</span>
+              <span class="role">Student & Aspiring Designer, Wales</span>
+            </div>
+          </li>
+          <li class="quote-box vga">
+            <div>
+              <p>My mentor is so supportive. She&#39;s been setting targets with me and has recommended techniques to deal with stress and how to prioritise my important work. I'm on top of things and I&#39;ve honestly got the most support from Prospela. I would definitely recommend this mentor network to others.</p>
+              <span class="name">Halima</span>
+              <span class="role">Student & Aspiring Architect</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="bottomSignUp vga">
-      <div class="row bottomSignUpDisplay">
+      <div class="row bottomSignUpDisplay vga">
         <div class="col-7 col-s-7 bottomSignUpContainer">
           <div class="initiativeHeader vga">
             Get involved now!
@@ -244,9 +335,10 @@
               <label class="checkbox-container-login initiative-tncText" id="tncTextFooter">I have read and agree to Prospela's <a href="" class="initiative-inline-link">Information Collection Statement</a><input type="checkbox" id="tncCheckboxFooter" name="tanp" required><span class="checkmark initiativeCheckmark left" id="tncStyleFooter"></span></label>
             </div> -->
             <button type="button" class="initiativeBtn-mentor vga" onclick=" window.open('https://prospela.typeform.com/to/Y1M294?source=intogames','_blank')">Apply as an E-Mentor &#62;</button>
+            <button type="button" class="initiativeBtn-student vga" onclick=" window.open('https://prospela.typeform.com/to/sQEHOP?source=intogames','_blank')">Sign up as a Student &#62;</button>
           </form>
           <p class="initiativeTextDetail vga">
-            This initiative is <strong>free</strong> for VGA Ambassadors to join
+            This initiative is <strong>free</strong> to join
           </p>
         </div>
       </div>

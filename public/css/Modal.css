@@ -544,6 +544,7 @@
 }
 .modal-close.fullPage {
   left: 0!important;
+  right: auto;
   color: #9a9a9a;
   background: none;
   padding: 2rem 2rem;

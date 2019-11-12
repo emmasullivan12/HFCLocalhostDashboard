@@ -296,7 +296,7 @@ class SettingsContent extends Component {
                 </section>
               </div>
             </div>
-            <div className="col-4 col-s-12 category-list">
+            <div className="col-4 col-s-12 category-list" id="articleMenu">
               <ul className="section-list">
                 <li>
                   <a href="#notification-settings" className="active">Notifications</a>

@@ -37,14 +37,14 @@ window.onscroll = function () {
       pwdByNav.classList.add("is-fixed");
       if(pwdByLogo != null) {
         pwdByLogo.src = 'https://prospela.com/wp-content/uploads/2019/07/Powered-by-Prospela-Vertical_Logo_White.png';
-        pwdByLogoContainer.style.cssText += ';width:120px !important;';
+        pwdByLogoContainer.style.cssText += ';height:50px !important;';
       }
     }
     else {
       pwdByNav.classList.remove("is-fixed");
       if(pwdByLogo != null) {
-        pwdByLogo.src = 'https://prospela.com/wp-content/uploads/2019/11/Powered-by-Prospela-Vertical_Logo_Colour.png';
-        pwdByLogoContainer.style.cssText += ';width:150px !important;';
+        pwdByLogo.src = 'https://prospela.com/wp-content/uploads/2019/11/Powered-by-Prospela-Vertical_Logo_Purple.png';
+        pwdByLogoContainer.style.cssText += ';height:38px !important;';
       }
     }
 };

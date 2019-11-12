@@ -44,6 +44,11 @@
   padding-top: 10px;
   vertical-align: top;
 }
+.article-page .article-container .category-list.sticky {
+  position: fixed;
+  right: 0;
+  top: 4.5em;
+}
 .article-page .article-container .category-list.profile,
 .article-page .article-container .article-extras.profile {
   padding-top: 5.5rem;

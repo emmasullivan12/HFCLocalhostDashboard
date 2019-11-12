@@ -7,6 +7,7 @@ import AudioCTA from './AudioCTA.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
+import {isIE} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
@@ -118,16 +119,6 @@ function TimeCalc(props) {
   min = min >= 0 && min < 10 ? '0'+min : min;
   var timeTxt = hour + ':' + min + ' ' + ampm;
   return timeTxt;
-}
-
-function isIE() {
-  var ua = window.navigator.userAgent;
-  var msie = ua.indexOf("MSIE ");
-  if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
-    return true;
-  } else {
-    return false;
-  }
 }
 
 function toggleMoreActionsBlur(e) {

@@ -167,7 +167,7 @@ h2{
   position: absolute;
 /*  display: -ms-flexbox;
   display: -webkit-flex;
-*/  display: table;
+*/  display: inline-block;
 /*  flex-direction: column;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
