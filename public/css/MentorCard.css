@@ -56,9 +56,9 @@
   flex-wrap: nowrap;
   -webkit-flex-wrap: nowrap;
   -moz-flex-wrap: nowrap;
-  justify-content: center;
+/*  justify-content: center;
   -webkit-justify-content: center;
-  -moz-justify-content: center;
+  -moz-justify-content: center;*/
 }
 
 .recd-match{
