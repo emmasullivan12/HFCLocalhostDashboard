@@ -92,16 +92,16 @@
     position: sticky;
     top: 0;
   }
-    /* IE 11 */
-  _:-ms-fullscreen, :root .article-page .article-container .content-col.profile {
+    /* IE 10+ */
+  _:-ms-lang(x), :root .article-page .article-container .content-col.profile {
     position: absolute;
     left: 25vw;
   }
-  _:-ms-fullscreen, :root .article-page .article-container .category-list.profile{
+  _:-ms-lang(x), :root .article-page .article-container .category-list.profile{
     position: fixed;
     right: 0;
   }
-  _:-ms-fullscreen, :root .article-page .article-container .article-extras{
+  _:-ms-lang(x), :root .article-page .article-container .article-extras{
     position: fixed;
   }
   /* EDGE < 15 */

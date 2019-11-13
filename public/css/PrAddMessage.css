@@ -196,4 +196,5 @@
   position: absolute;
   bottom: 66px;
   left: 10px;
+  z-index: 3;
 }

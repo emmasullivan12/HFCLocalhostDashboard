@@ -178,6 +178,7 @@
 }
 .msgStatus.error{
   color: #d82f2f;
+  clear: both;
 }
 
 .prauto-msg-container{
