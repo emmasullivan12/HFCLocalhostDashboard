@@ -1,3 +1,5 @@
+// Dex last merged this code on 14th Nov 2019
+
 import React, { Component } from "react";
 
 function isIE() {

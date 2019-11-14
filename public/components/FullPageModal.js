@@ -1,4 +1,4 @@
-// Dex last merged this code on 28th Oct 2019
+// Dex last merged this code on 14th Nov 2019
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -92,7 +92,7 @@ class FullPageModal extends React.Component {
   }
 
   handleNavScroll = () => {
-    const { modalFPRef, articleMenuRef } = this;
+    const { modalFPRef } = this;
     let mainNavLinks = Array.prototype.slice.call(document.querySelectorAll(".section-list li a"), 0);
     const mainNavLinksLength = mainNavLinks.length;
     const scrollTop = this.modalFPRef.current.scrollTop;
