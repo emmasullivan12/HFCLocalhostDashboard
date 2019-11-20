@@ -1,4 +1,4 @@
-/* Dex last merged this code on 19th May 2019*/
+/* Dex last merged this code on 14th Nov 2019*/
 
 var cookiesBanner = document.getElementById("cookies-banner");
 var cookiesYes = document.getElementById("cookies-yes");
