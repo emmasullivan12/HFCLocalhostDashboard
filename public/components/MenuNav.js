@@ -15,7 +15,7 @@ class MenuNav extends Component {
   openMenu() {
   //  document.getElementById("clientMenu").style.width = "220px";
     document.getElementById("clientMenu").style.left = "0";
-    document.getElementById("clientMenu").style.zIndex = "1";
+    document.getElementById("clientMenu").style.zIndex = "202";
   //  this.closeMenuRef.focus();
   }
 

@@ -74,21 +74,19 @@ class MessageActions extends Component {
             </div>
             <span className="tooltiptext last groups">More actions</span>
           </button>
-
-            <div className="moreActionsContainer" ref={el => (this.moreActions = el)} onClick={this.closeMoreActions}>
-              <div className="moreActions-scrollArea">
-                <ul className="moreActionsList">
-                  <li className="moreActionsListItem" >
-                    <span className="moreActionsLabel overflow-ellipsis">
-                      <Modal {...ReportModalProps} tabIndex="0">
-                        <ReportModalContent />
-                      </Modal>
-                    </span>
-                  </li>
-                </ul>
-              </div>
+          <div className="moreActionsContainer" ref={el => (this.moreActions = el)} onClick={this.closeMoreActions}>
+            <div className="moreActions-scrollArea">
+              <ul className="moreActionsList">
+                <li className="moreActionsListItem" >
+                  <span className="moreActionsLabel overflow-ellipsis">
+                    <Modal {...ReportModalProps} tabIndex="0">
+                      <ReportModalContent />
+                    </Modal>
+                  </span>
+                </li>
+              </ul>
             </div>
-
+          </div>
         </div>
       </React.Fragment>
     );

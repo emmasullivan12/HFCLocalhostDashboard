@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 
 import MentorHomepageCTAContainer from './MentorHomepageCTAContainer.js';
-import MenuNav from './MenuNav.js';
+import PageHeader from './PageHeader.js';
 import "../css/HomePage.css";
 import "../css/General.css";
 
@@ -13,21 +13,17 @@ const DUMMY_GROUP_LIST = [
   {groupID: '10004', name: 'Pladis', status: 'active'},
 ];
 
+const PageHeaderProps = {
+  ariaLabel: 'Page Header',
+  title: 'Dashboard',
+  subHeader: 'Visualise your impact and explore the latest from your Prospela network'
+}
+
 class MentorHomePage extends Component {
   render(){
     return (
       <React.Fragment>
-        <div className="page-header">
-          <MenuNav />
-          <div className="page-detail-container">
-            <div className="page-title overflow-ellipsis">
-              Dashboard
-            </div>
-            <div className="page-detail overflow-ellipsis">
-              Visualise your impact and explore the latest from your Prospela network
-            </div>
-          </div>
-        </div>
+        <PageHeader {...PageHeaderProps} />
         <div className="page-panel">
           <MentorHomepageCTAContainer groups={DUMMY_GROUP_LIST}/>
         </div>

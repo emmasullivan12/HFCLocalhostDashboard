@@ -196,11 +196,15 @@ class Dashboard extends Component{
     }
   }
 
-  closeMenu() {
-//    document.getElementById("clientMenu").style.width = "0px";
-    document.getElementById("clientMenu").style.left = "-220px";
-    document.getElementById("clientMenu").style.zIndex = "0";
-  //  this.openMenuRef.focus();
+  closeMenu(e) {
+    const clientMenu = document.getElementById("clientMenu");
+    const clientMenuBtn = document.getElementById("nav-mainMenu");
+    console.log('clientMenu.style.left: '+clientMenu.style.left);
+    console.log('e.target: '+e.target);
+    if (window.innerWidth < 760 && clientMenu.style.left != "-220px" && !clientMenuBtn.contains(e.target)) {
+      clientMenu.style.left = "-220px";
+      clientMenu.style.zIndex = "0";
+    }
   }
 
   render(){
@@ -240,7 +244,7 @@ class Dashboard extends Component{
                 </div>
               </div>
             </div>
-            <div className="clientWindowContainer col-s-12">
+            <div className="clientWindowContainer col-s-12" onClick={this.closeMenu}>
               <Switch>
                 {{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,

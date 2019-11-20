@@ -138,7 +138,31 @@
   float: left;
   padding-right: 8px;
   text-align: right;
-  width: 4.9rem;
+  width: 5.6rem;
+}
+
+@media only screen and (min-width: 400px) {
+  .messageGutter{
+    width: 5.5rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .messageGutter{
+    width: 5.2rem;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .messageGutter{
+    width: 4.9rem;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .messageGutter{
+    width: 4.7rem;
+  }
 }
 .msg-sent-time {
   font-size: .75rem;

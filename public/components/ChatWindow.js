@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import PrMessagesList from "./PrMessagesList";
 import PrAddMessage from "./PrAddMessage";
+import MenuNav from './MenuNav.js';
 import Modal from "./Modal";
 import FileUploadContent from "./FileUploadContent";
 import "../css/ChatWindow.css";
@@ -118,6 +119,7 @@ class ChatWindow extends Component {
         <div className="chat-container">
           <div className="chat-content-container">
             <div className="chat-header">
+              <MenuNav />
               <div className="chat-detail-container">
                 <div className="chat-title overflow-ellipsis">
                   Chat name
