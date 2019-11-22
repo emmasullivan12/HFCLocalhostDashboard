@@ -12,7 +12,7 @@ const Photo = (props) => (
       )
     : props.isPicSet ? (
         <img
-          id="photo"
+          id="profPic"
           alt="Take snapshot"
           src={props.profPicSrc}
         />

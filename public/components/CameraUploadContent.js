@@ -15,9 +15,9 @@ class CameraUploadContent extends Component {
     return (
       <React.Fragment>
         <div className="capture">
-          <Camera  />
+          <Camera />
           <form className="uploadPhotoForm" id="uploadPhotoForm">
-            <Photo  />
+            <Photo />
             <input
               type="text"
               name="cameraUploadName"

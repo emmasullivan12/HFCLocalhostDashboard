@@ -2,4 +2,11 @@
 
 .uploadPhotoForm{
   text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#canvas{
+  margin: auto;
+  margin-top: 20px;
 }
