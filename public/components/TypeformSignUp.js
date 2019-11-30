@@ -75,7 +75,7 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 
 class TypeformSignUp extends Component {
   render() {
-    const userRole = 'mentor';
+    const userRole = 'mentee';
     const step = 'didCountry';
     const fname = 'Emma';
     const id = '12345';
@@ -85,13 +85,19 @@ class TypeformSignUp extends Component {
 
     if(userRole === 'mentee') {
       switch (step) {
-        case 'didEmailVerif':
+        case 'did1stSU':
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
               <CountryShortSU step={step}/>
             </SignUpScreenTemplate>
           );
         case 'didCountry':
+          return (
+            <SignUpScreenTemplate {...MenteeShortSUProps}>
+              School status component goes here
+            </SignUpScreenTemplate>
+          );
+        case 'didEdu':
           return (
             <React.Fragment>
               {fname && (
@@ -101,10 +107,16 @@ class TypeformSignUp extends Component {
               )}
             </React.Fragment>
           );
+        case 'didShortSU':
+          return (
+            <SignUpScreenTemplate {...MenteeShortSUProps}>
+              Confirm youre a student input email address goes here
+            </SignUpScreenTemplate>
+          );
       }
     } else {
       switch (step) {
-        case 'didEmailVerif':
+        case 'did1stSU':
           return (
             <React.Fragment>
               {fname && (

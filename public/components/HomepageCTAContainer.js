@@ -22,8 +22,9 @@ const JoinProgrammePlusModalProps = {
 
 class HomepageCTAContainer extends Component {
   render() {
-    const step = 'didTrain'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const step = 'fullSUTrain'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = true;
+    const is18plus = 1;
     const matchstatus = 'isMatched';
     const groups = [];
 
@@ -48,7 +49,7 @@ class HomepageCTAContainer extends Component {
             </Modal>
           </div>
         </div>
-        {step === 'didShortSU' && (
+        {step === 'didEmailVerif' && (
           <JoinProgPrompt userRole='mentee'/>
         )}
         {step === 'autoEnroll' && (
@@ -57,13 +58,16 @@ class HomepageCTAContainer extends Component {
         {step === 'joinedProg' && (
           <MenteeFullSignUp />
         )}
-        {step === 'didFullSUtf' && (
+        {is18plus != 1 && step === 'didFullSUtf' && (
           <MenteeTraining />
+        )}
+        {is18plus === 1 && step === 'didFullSUtf' && (
+          <MentorMatches />
         )}
         {step === 'didTrain' && (
           <MentorMatches />
         )}
-        {step === 'fullSUTrain' && hasInvite===true(
+        {(is18plus != 1 && step === 'fullSUTrain') || (is18plus === 1 && step === 'didFullSUtf') && hasInvite === true (
           <AutoEnrollPrompt />
         )}
       </div>

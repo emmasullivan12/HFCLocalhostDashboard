@@ -314,34 +314,36 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'didFullSUtf';
+  const step = 'didShortSU';
 //    const step = this.props.users.step;
       switch (step) {
-        case 'IFSTATEMENT':
+        case 'did1stSU':
+        case 'didCountry':
+        case 'didEdu':
+        case 'didShortSU':
           return (
             <BrowserRouter>
               <Switch>
-                <Redirect exact from="/" to="/verify-email" />
-                <Route path="/verify-email" component={VerifyEmail} step={step} />
+                <Redirect exact from="/" to="/mentee-signup" />
+                <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
               </Switch>
             </BrowserRouter>
           );
-          case 'didEmailVerif':
-          case 'didCountry':
-            return (
-              <BrowserRouter>
-                <Switch>
-                  <Redirect exact from="/" to="/mentee-signup" />
-                  <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
-                </Switch>
-              </BrowserRouter>
-            );
-          case 'didShortSU':
-          case 'autoEnroll':
-          case 'joinedProg':
-          case 'didFullSUtf':
-          case 'didTrain':
-            return <Dashboard userRole={userRole}/>
+        case 'didEduEmail':
+        return (
+          <BrowserRouter>
+            <Switch>
+              <Redirect exact from="/" to="/verify-email" />
+              <Route path="/verify-email" component={VerifyEmail} step={step} />
+            </Switch>
+          </BrowserRouter>
+        );
+        case 'didEmailVerif':
+        case 'autoEnroll':
+        case 'joinedProg':
+        case 'didFullSUtf':
+        case 'didTrain': // only required for under 18s
+          return <Dashboard userRole={userRole}/>
       }
 }
 
