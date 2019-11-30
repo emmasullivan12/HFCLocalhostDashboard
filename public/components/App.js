@@ -338,11 +338,12 @@ function MenteeSteps({userRole}) {
             </Switch>
           </BrowserRouter>
         );
-        case 'didEmailVerif':
+        case 'didEduEmailVerif':
+        case 'didReviewVerif':
         case 'autoEnroll':
         case 'joinedProg':
         case 'didFullSUtf':
-        case 'didTrain': // only required for under 18s
+        case 'didSafeG': // only required for under 18s
           return <Dashboard userRole={userRole}/>
       }
 }

@@ -49,7 +49,7 @@ class HomepageCTAContainer extends Component {
             </Modal>
           </div>
         </div>
-        {step === 'didEmailVerif' && (
+        {step === 'didEduEmailVerif' || step === 'didReviewVerif' && (
           <JoinProgPrompt userRole='mentee'/>
         )}
         {step === 'autoEnroll' && (
@@ -64,10 +64,10 @@ class HomepageCTAContainer extends Component {
         {is18plus === 1 && step === 'didFullSUtf' && (
           <MentorMatches />
         )}
-        {step === 'didTrain' && (
+        {step === 'didSafeG' && (
           <MentorMatches />
         )}
-        {(is18plus != 1 && step === 'fullSUTrain') || (is18plus === 1 && step === 'didFullSUtf') && hasInvite === true (
+        {(is18plus != 1 && step === 'didSafeG') || (is18plus === 1 && step === 'didFullSUtf') && hasInvite === true (
           <AutoEnrollPrompt />
         )}
       </div>
