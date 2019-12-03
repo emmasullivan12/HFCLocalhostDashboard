@@ -10,7 +10,7 @@ import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -45,7 +45,7 @@ class MenteeProfileContent extends Component {
       knowNextSteps: 4,
       knowSkills: 2,
       eetStatus: 1, // 0=school, 1=uni, 2=employment, 3=training, 4=NEET
-      schYrGrp: 'Year 12 (USA/Canada Grade 11)',
+      schYrGrp: 'Year 13 (Sixth Form Yr 2)',
       uniYrGrp: 'Second Year',
       planningUni: 2, // 0=no, 1=yes, 2=maybe, 3=not sure
       schName: '',
@@ -140,6 +140,7 @@ class MenteeProfileContent extends Component {
     const flagEmoji = userFlagEmoji(mentee.country);
     const eduInstName = eduName(mentee.schName, mentee.uniName);
     const userInitial = mentee.fname.charAt(0).toUpperCase();
+    const testingGraduYr = setSchGraduYr(mentee.schYrGrp);
 
     return (
       <React.Fragment>
@@ -184,6 +185,9 @@ class MenteeProfileContent extends Component {
                 <h2>
                   I&#39;m interested in getting a mentor because:
                 </h2>
+                <p>
+                  {testingGraduYr}
+                </p>
                 <p>
                   {mentee.whyJoin}
                 </p>

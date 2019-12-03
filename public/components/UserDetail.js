@@ -2,6 +2,43 @@
 
 import React, { Component } from "react";
 
+function setSchGraduYr(currYrGrp) {
+  var d = new Date();
+  var year = d.getFullYear();
+  var month = d.getMonth();
+  let schGraduYr;
+
+  switch(currYrGrp) {
+    case "Year 8":
+      schGraduYr = year + 6;
+      break;
+    case "Year 9":
+      schGraduYr = year + 5;
+      break;
+    case "Year 10":
+      schGraduYr = year + 4;
+      break;
+    case 'Year 11':
+      schGraduYr = year + 3;
+      break;
+    case 'Year 12 (Sixth Form Yr 1)':
+      schGraduYr = year + 2;
+      break;
+    case "Year 13 (Sixth Form Yr 2)":
+      schGraduYr = year + 1;
+      break;
+    case "Finished School / Sixth Form / College":
+      schGraduYr = year;
+      break;
+  }
+
+  if (month <= 7) {
+    return schGraduYr - 1;
+  } else {
+    return schGraduYr;
+  }
+}
+
 function availabilityMsg(userAvail) {
   if (userAvail === 1) {
     return <span>Hoping for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
@@ -111,4 +148,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone};
+export {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr};
