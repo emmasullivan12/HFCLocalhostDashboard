@@ -140,7 +140,6 @@ class MenteeProfileContent extends Component {
     const flagEmoji = userFlagEmoji(mentee.country);
     const eduInstName = eduName(mentee.schName, mentee.uniName);
     const userInitial = mentee.fname.charAt(0).toUpperCase();
-    const testingGraduYr = setSchGraduYr(mentee.schYrGrp);
 
     return (
       <React.Fragment>
@@ -185,9 +184,6 @@ class MenteeProfileContent extends Component {
                 <h2>
                   I&#39;m interested in getting a mentor because:
                 </h2>
-                <p>
-                  {testingGraduYr}
-                </p>
                 <p>
                   {mentee.whyJoin}
                 </p>

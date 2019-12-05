@@ -7,6 +7,7 @@ import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
 import "../css/TypeformSignUp.css";
 import CountryShortSU from './CountryShortSU.js';
+import EduShortSU from './EduShortSU.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 
@@ -79,7 +80,7 @@ class TypeformSignUp extends Component {
     const step = 'didCountry';
     const fname = 'Emma';
     const id = '12345';
-    const country = 'United States';
+    const country = 'United Kingdom';
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?country='+country+'&fname='+fname+'&uid='+id; // actual typeform to be used
 
@@ -91,10 +92,10 @@ class TypeformSignUp extends Component {
               <CountryShortSU step={step}/>
             </SignUpScreenTemplate>
           );
-        case 'didCountry':
+        case 'didCountry': // School status component goes here
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
-              School status component goes here
+              <EduShortSU step={step} country={country}/>
             </SignUpScreenTemplate>
           );
         case 'didEdu':

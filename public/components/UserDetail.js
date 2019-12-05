@@ -10,24 +10,31 @@ function setSchGraduYr(currYrGrp) {
 
   switch(currYrGrp) {
     case "Year 8":
+    case "7th Grade":
       schGraduYr = year + 6;
       break;
     case "Year 9":
+    case "8th Grade":
       schGraduYr = year + 5;
       break;
     case "Year 10":
+    case "9th Grade":
       schGraduYr = year + 4;
       break;
     case 'Year 11':
+    case "10th Grade":
       schGraduYr = year + 3;
       break;
     case 'Year 12 (Sixth Form Yr 1)':
+    case "11th Grade":
       schGraduYr = year + 2;
       break;
     case "Year 13 (Sixth Form Yr 2)":
+    case "12th Grade":
       schGraduYr = year + 1;
       break;
     case "Finished School / Sixth Form / College":
+    case "Finished High School":
       schGraduYr = year;
       break;
   }

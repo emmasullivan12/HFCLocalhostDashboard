@@ -111,12 +111,14 @@ input[type=text]:disabled{
   -moz-appearance: none;
 }
 
+/*
 #noCodeTooltip{
   margin-top: -1.5rem;
   cursor: pointer;
   color: #8f8fe5;
   font-size: 13px;
 }
+*/
 #codeTooltip{
   cursor: pointer;
   color: #8f8fe5;
@@ -270,6 +272,10 @@ input[type=text]:disabled{
   height: 1.5rem;
   font-weight: 600;
   font-size: 0.8rem;
+}
+
+.descriptor.prompt.error{
+  color: red;
 }
 
 .descriptor.no-href:hover{
