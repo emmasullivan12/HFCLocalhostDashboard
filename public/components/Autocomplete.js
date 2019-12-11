@@ -22,16 +22,36 @@ class Autocomplete extends React.Component {
 
   onChange = (e) => {
     const { suggestions, handleChange } = this.props;
+  //  console.log('objectkeys: ' + Object.keys(suggestions[0]));
+  //  const hasMultipleAttributes = Object.keys(suggestions[0]).length > 1;
+//    const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
     const userInput = e.currentTarget.value;
 
-    const filteredSuggestions = suggestions.filter(
-      suggestion =>
-        suggestion.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
-    );
+    function filteredSuggestions() {
+      const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
+      let filteredSuggestions;
+
+      if (hasMultipleAttributes) {
+        filteredSuggestions = suggestions.filter(
+          suggestion =>
+            suggestion.value.toLowerCase().indexOf(userInput.toLowerCase()) != -1
+          //  suggestion.value.toLowerCase().includes(userInput.toLowerCase())
+            // suggestion.value.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
+        );
+      } else {
+        filteredSuggestions = suggestions.filter(
+          suggestion =>
+            suggestion.toLowerCase().indexOf(userInput.toLowerCase()) != -1
+          //  suggestion.toLowerCase().includes(userInput.toLowerCase())
+            // suggestion.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
+        );
+      }
+      return filteredSuggestions;
+    }
 
     this.setState({
       activeSuggestion: 0,
-      filteredSuggestions,
+      filteredSuggestions: filteredSuggestions(),
       showSuggestions: true,
       userInput: e.currentTarget.value
     });
@@ -51,16 +71,17 @@ class Autocomplete extends React.Component {
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions } = this.state;
-    const { handleChange, name } = this.props;
+    const { handleChange, name, valueToShow } = this.props;
 
     // User pressed the enter key
     if (e.keyCode === 13 || e.keyCode === 9) {
+      const isntValueToShow = valueToShow == undefined
       this.setState({
         activeSuggestion: 0,
         showSuggestions: false,
-        userInput: filteredSuggestions[activeSuggestion]
+        userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
       });
-      handleChange(filteredSuggestions[activeSuggestion]);
+      valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion]) : handleChange(filteredSuggestions[activeSuggestion][valueToShow]);
     }
     // User pressed the up arrow
     else if (e.keyCode === 38) {
@@ -82,8 +103,9 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onKeyDown } = this;
-    const { name, placeholder, handleBlur, handleChange } = this.props;
+    const { name, placeholder, handleBlur, handleChange, suggestions, valueToShow } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
+    const hasMultipleAttributes = (suggestions[0].value != undefined || suggestions[0].value != null);
 
     let suggestionsListComponent;
     if (showSuggestions && userInput) {
@@ -97,11 +119,19 @@ class Autocomplete extends React.Component {
               if (index === activeSuggestion) {
                 className = "autocompleter-active";
               }
-
+              const content = valueToShow == undefined ? suggestion : suggestion[valueToShow];
+              const key = valueToShow == undefined ? suggestion : suggestion[valueToShow];
               return (
-                <div className={className} key={suggestion} onClick={onClick}>
-                  {suggestion}
-                </div>
+    //            {hasMultipleAttributes === true && (
+    //              <div className={className} key={suggestion.value} onClick={onClick}>
+    //                {suggestion.value}
+  //                </div>
+  //              ) : (
+        //          <div className={className} key={hasMultipleAttributes === true ? suggestion.value : suggestion} onClick={onClick}>
+                  <div className={className} key={key} onClick={onClick}>
+                    {content}
+                  </div>
+    //            )}
               );
             })}
           </div>

@@ -6,6 +6,7 @@ import ReactDOM from "react-dom";
 import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
 import "../css/TypeformSignUp.css";
+import ConfirmStudent from './ConfirmStudent.js';
 import CountryShortSU from './CountryShortSU.js';
 import EduShortSU from './EduShortSU.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
@@ -16,6 +17,30 @@ const MenteeShortSUProps = {
   subheader: 'Personalise your Prospela experience',
   title: 'Let\'s get you set up',
   fullWidth: false
+}
+
+function MenteeVerifyStudentProps(eetStatus, schName, uniName) {
+  let confirmStudentProps = {};
+  switch (eetStatus) {
+    case 'sch':
+      confirmStudentProps = {
+        subheader: 'Tell us your personal ' + schName + ' email address so we can send you a verification code',
+        title: 'Verify your account',
+        fullWidth: false
+      }
+      return confirmStudentProps;
+    case 'uni':
+      confirmStudentProps = {
+        subheader: 'Tell us your personal ' + uniName + ' email address so we can send you a verification code',
+        title: 'Verify your account',
+        fullWidth: false
+      }
+      return confirmStudentProps;
+    case 'job':
+    case 'train':
+    case 'none':
+      return 'EM & DEX TO DECIDE WHAT TO REQUEST FROM JOB/TRAIN/NONE PEOPLE';
+  }
 }
 
 //This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
@@ -81,15 +106,18 @@ class TypeformSignUp extends Component {
     const fname = 'Emma';
     const id = '12345';
     const country = 'United Kingdom';
+    const eetStatus = 'uni';
+    const schName = '';
+    const uniName = 'Bath University';
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
-    const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?country='+country+'&fname='+fname+'&uid='+id; // actual typeform to be used
+    const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
 
     if(userRole === 'mentee') {
       switch (step) {
         case 'did1stSU':
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
-              <CountryShortSU step={step}/>
+              <CountryShortSU step={step} />
             </SignUpScreenTemplate>
           );
         case 'didCountry': // School status component goes here
@@ -110,8 +138,8 @@ class TypeformSignUp extends Component {
           );
         case 'didShortSU':
           return (
-            <SignUpScreenTemplate {...MenteeShortSUProps}>
-              Confirm youre a student input email address goes here
+            <SignUpScreenTemplate {...MenteeVerifyStudentProps(eetStatus, schName, uniName)}>
+              <ConfirmStudent step={step}/>
             </SignUpScreenTemplate>
           );
       }

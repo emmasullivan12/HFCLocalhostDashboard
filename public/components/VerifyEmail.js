@@ -53,6 +53,7 @@ class VerifyEmail extends React.Component {
   render() {
   const isEnabled = this.canBeSubmitted();
   const {isContainerOpen, verificationCode} = this.state;
+  const userEmail = 'USER EMAIL GOES HERE';
 
     return (
       <React.Fragment>
@@ -67,7 +68,7 @@ class VerifyEmail extends React.Component {
               <div className="loginContainer">
                 <div>
                   <h1>Verify your email</h1>
-                  <div className="header-descriptor">We&#39;ve sent a verification code to USER EMAIL. Please enter it below. Note: code only <span className="bold">valid for the next 24 hours.</span></div>
+                  <div className="header-descriptor">We&#39;ve sent a verification code to {userEmail}. Please enter it below. Note: code only <span className="bold">valid for the next 24 hours.</span></div>
                 </div>
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
@@ -103,7 +104,7 @@ class VerifyEmail extends React.Component {
                   <div className="descriptor subheader">
                     <ol>
                       <li className="descListItem">Check your junk email folder</li>
-                      <li className="descListItem">Did you enter your email address correctly (USER EMAIL)? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
+                      <li className="descListItem">Did you enter your email address correctly ({userEmail})? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
                       <li className="descListItem">Wait a few minutes or alternatively click to resend below</li>
                       <button type="submit" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
                         <span >Resend code</span>

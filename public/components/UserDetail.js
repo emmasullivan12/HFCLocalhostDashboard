@@ -46,6 +46,24 @@ function setSchGraduYr(currYrGrp) {
   }
 }
 
+function setUniGraduYr(currYr, courseLength) {
+  var d = new Date();
+  var year = d.getFullYear();
+  var month = d.getMonth();
+  let uniGraduYr;
+  if(currYr === 'pg') {
+    uniGraduYr = courseLength + year
+  } else {
+    uniGraduYr = (courseLength - currYr) + year
+  }
+  if (month <= 7) {
+    return uniGraduYr;
+  } else {
+    return uniGraduYr + 1;
+  }
+}
+
+
 function availabilityMsg(userAvail) {
   if (userAvail === 1) {
     return <span>Hoping for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
@@ -59,15 +77,15 @@ function availabilityMsg(userAvail) {
 }
 
 function eetStatus(eetStatus, schYrGrp, uniYrGrp) {
-  if (eetStatus === 0) {
+  if (eetStatus === 'sch') {
     return <span>{schYrGrp} Student</span>
-  } else if (eetStatus === 1) {
+  } else if (eetStatus === 'uni') {
     return <span>{uniYrGrp} Student</span>
-  } else if (eetStatus === 2) {
+  } else if (eetStatus === 'job') {
     return <span>Currently in Employment</span>
-  } else if (eetStatus === 3) {
+  } else if (eetStatus === 'train') {
     return <span>Currently in Training</span>
-  } else if (eetStatus === 4) {
+  } else if (eetStatus === 'none') {
     return <span>Currently not in education, employment or training</span>
   }
 }
@@ -155,4 +173,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr};
+export {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

@@ -44,7 +44,7 @@ class MenteeProfileContent extends Component {
       certainty: 10,
       knowNextSteps: 4,
       knowSkills: 2,
-      eetStatus: 1, // 0=school, 1=uni, 2=employment, 3=training, 4=NEET
+      eetStatus: 'sch', // 'sch', 'uni', 'job', 'train', 'none'
       schYrGrp: 'Year 13 (Sixth Form Yr 2)',
       uniYrGrp: 'Second Year',
       planningUni: 2, // 0=no, 1=yes, 2=maybe, 3=not sure
@@ -53,6 +53,7 @@ class MenteeProfileContent extends Component {
       degree: 'BSc (Hons) Business Administration',
       schGraduYr: '',
       uniGraduYr: '2020',
+      gradeType: '',
       currRole: 'Head of Marketing',
       currCo: 'Pladis',
       currTraining: 'Apprenticeship learning plumbing',
@@ -177,7 +178,7 @@ class MenteeProfileContent extends Component {
               <div className="profilePosition student">{eetStatus(mentee.eetStatus, mentee.schYrGrp, mentee.uniYrGrp)}</div>
               {mentee.is18plus === 1 && (
                 <div className="profileInstitution">
-                  <span className="neutralText">&#64;</span> <strong>{mentee.eetStatus===0 || mentee.eetStatus===1 ? eduInstName : (mentee.currCo)}</strong>
+                  <span className="neutralText">&#64;</span> <strong>{mentee.eetStatus==='sch' || mentee.eetStatus==='uni' ? eduInstName : (mentee.currCo)}</strong>
                 </div>
               )}
               <div>
@@ -261,7 +262,7 @@ class MenteeProfileContent extends Component {
                     <br/>
                     <i className="emoji-icon schoolHat-emoji"/> Education & Work Experience
                   </h1>
-                  {mentee.eetStatus === 1 && (
+                  {mentee.eetStatus === 'uni' && (
                     <React.Fragment>
                       <h2>
                         University Degree:
@@ -270,9 +271,12 @@ class MenteeProfileContent extends Component {
                         {mentee.degree + ' @ ' + mentee.eduName}
                         <span className="neutralText dispBlock">(Class of {mentee.graduYr})</span>
                       </p>
+                      <p>
+                        I&#39;d consider myself to be a {mentee.gradeType} student
+                      </p>
                     </React.Fragment>
                   )}
-                  {mentee.eetStatus === 0 && (
+                  {mentee.eetStatus === 'sch' && (
                     <React.Fragment>
                       <h2>
                         {eduSubjects(mentee.country)}
@@ -280,9 +284,12 @@ class MenteeProfileContent extends Component {
                       <p>
                         {mentee.subjects}
                       </p>
+                      <p>
+                        I&#39;d consider myself to be a {mentee.gradeType} student
+                      </p>
                     </React.Fragment>
                   )}
-                  {mentee.eetStatus === 2 && (
+                  {mentee.eetStatus === 'job' && (
                     <React.Fragment>
                       <h2>
                         Current Employment
@@ -292,17 +299,17 @@ class MenteeProfileContent extends Component {
                       </p>
                     </React.Fragment>
                   )}
-                  {mentee.eetStatus === 3 && (
+                  {mentee.eetStatus === 'train' && (
                     <React.Fragment>
                       <h2>
                         Currently in Training
                       </h2>
                       <p>
-                        {mentee.currTraining} with <strong>{mentee.currTrainingProvider}</strong>
+                        {mentee.currTraining} @ <strong>{mentee.currTrainingProvider}</strong>
                       </p>
                     </React.Fragment>
                   )}
-                  {mentee.eetStatus != 1 && (
+                  {mentee.eetStatus != 'uni' && (
                     <React.Fragment>
                       <h2>
                         Planning on going to University?

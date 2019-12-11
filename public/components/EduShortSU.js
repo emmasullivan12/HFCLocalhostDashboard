@@ -7,7 +7,7 @@ import "../css/General.css";
 
 import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
-import {setSchGraduYr} from './UserDetail.js';
+import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
 
 
 class EduShortSU extends React.Component {
@@ -19,10 +19,16 @@ class EduShortSU extends React.Component {
       uniName: '',
       schYrGrp: '',
       uniYrGrp: '',
+      courseLength: '',
       schGraduYr: '',
       uniGraduYr: ''
     }
     this.handleEetStatusChange = this.handleEetStatusChange.bind(this);
+    this.handleUKSchChange = this.handleUKSchChange.bind(this);
+    this.handleSchYrChange = this.handleSchYrChange.bind(this);
+    this.handleUKUniChange = this.handleUKUniChange.bind(this);
+    this.handleUniYrChange = this.handleUniYrChange.bind(this);
+    this.handleUniGradYrChange = this.handleUniGradYrChange.bind(this);
     this.onBlur = this.onBlur.bind(this);
   }
 
@@ -53,16 +59,20 @@ class EduShortSU extends React.Component {
     this.setState({ uniName: userInput });
   }
 
-  handleUniChange(userInput) {
-    this.setState({ uniName: userInput });
-  }
-
   handleUniYrChange(userInput) {
-    this.setState({ uniYrGrp: userInput });
+    const courseLength = this.state.courseLength;
+    this.setState({
+      uniYrGrp: userInput,
+      uniGraduYr: setUniGraduYr(userInput, courseLength)
+    });
   }
 
   handleUniGradYrChange(userInput) {
-    this.setState({ uniGraduYr: userInput });
+    const uniYrGrp = this.state.uniYrGrp;
+    this.setState({
+      courseLength: userInput,
+      uniGraduYr: setUniGraduYr(uniYrGrp, userInput)
+    });
   }
 
 /*  canBeSubmitted(countries, ukCounties) {
@@ -109,26 +119,51 @@ class EduShortSU extends React.Component {
 //    {value: 'Thamesmead School', location: 'Shepperton, Surrey'},
 //    {value: 'Sunbury Manor', location: 'Sunbury, Middx'},
   ];
-  const ukSchYrs = ['Select:','Year 8','Year 9','Year 10','Year 11','Year 12 (Sixth Form Yr 1)','Year 13 (Sixth Form Yr 2)', 'Finished School / Sixth Form / College']
-  const nonUKSchYrs = ['Select:','7th Grade','8th Grade','9th Grade','10th Grade','11th Grade','12th Grade', 'Finished High School'];
-  const uniYrs = ['Select:','1st Year','2nd Year','3rd Year','4th Year','Studying Post-grad']
+  const ukSchYrs = [
+    {value: 'Select', label: 'Select:'},
+    {value: 'yr8', label: 'Year 8'},
+    {value: 'yr9', label: 'Year 9'},
+    {value: 'yr10', label: 'Year 10'},
+    {value: 'yr11', label: 'Year 11'},
+    {value: 'yr12', label: 'Year 12 (Sixth Form Yr 1)'},
+    {value: 'yr13', label: 'Year 13 (Sixth Form Yr 2)'},
+    {value: 'finSch', label: 'Finished School / Sixth Form / College'}
+  ]
+  const nonUKSchYrs = [
+    {value: 'Select', label: 'Select:'},
+    {value: 'yr8', label: '7th Grade'},
+    {value: 'yr9', label: '8th Grade'},
+    {value: 'yr10', label: '9th Grade'},
+    {value: 'yr11', label: '10th Grade'},
+    {value: 'yr12', label: '11th Grade'},
+    {value: 'yr13', label: '12th Grade'},
+    {value: 'finSch', label: 'Finished High School'}
+  ]
+  const uniYrs = [
+    {value: 'Select', label: 'Select:'},
+    {value: '1', label: '1st Year'},
+    {value: '2', label: '2nd Year'},
+    {value: '3', label: '3rd Year'},
+    {value: '4', label: '4th Year'},
+    {value: 'pg', label: 'Studying Post-grad'},
+  ]
+  const uniLength = [
+    {value: 'Select', label: 'Select:'},
+    {value: '1', label: '1 year'},
+    {value: '2', label: '2 years'},
+    {value: '3', label: '3 years'},
+    {value: '4', label: '4 years'},
+    {value: '5', label: '5 years'},
+    {value: '6', label: '6 years'},
+    {value: '7', label: '7 years'},
+    {value: '8', label: '8 years'},
+  ]
   const ukUnis = [
     {value: 'University of Bath', location: 'Bath, UK'},
     {value: 'University of Bristol', location: 'Bristol, UK'},
+    {value: 'University of Cambridge', location: 'Cambridge, UK'},
+    {value: 'St Andrews', location: 'St Andrews, Scotland, UK'},
   ];
-  function uniGraduYrs() {
-    var d = new Date();
-    var year = d.getFullYear();
-    var graduYrs = []
-    graduYrs[0] = {value: 'Select', label: 'Select Year:'};
-    graduYrs[1] = {value: year, label: 'Class of ' + year};
-    graduYrs[2] = {value: year + 1, label: 'Class of ' + (year+1)};
-    graduYrs[3] = {value: year + 2, label: 'Class of ' + (year+2)};
-    graduYrs[4] = {value: year + 3, label: 'Class of ' + (year+3)};
-    graduYrs[5] = {value: year + 4, label: 'Class of ' + (year+4)};
-    graduYrs[6] = {value: year + 5, label: 'Class of ' + (year+5)};
-    return graduYrs;
-  }
 
 //  const isEnabled = this.canBeSubmitted(countries, ukCounties);
 
@@ -143,6 +178,9 @@ class EduShortSU extends React.Component {
               <i className="fas fa-circle"  />
             </div>
             <div className={(step==3) ? "thisStep" : "nxtStep"}>
+              <i className="fas fa-circle"  />
+            </div>
+            <div className={(step==4) ? "thisStep" : "nxtStep"}>
               <i className="fas fa-circle"  />
             </div>
           </div>
@@ -164,7 +202,7 @@ class EduShortSU extends React.Component {
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukSchs}
-                      name='ukSchs'
+                      name='eduName'
                       placeholder='School or College'
                       handleChange={this.handleUKSchChange}
                       handleBlur={this.onBlur}
@@ -177,12 +215,10 @@ class EduShortSU extends React.Component {
                   <label className="descriptor alignLeft">What&#39;s the name of your High School?</label>
                   <input
                     type="text"
-                    name="uniName"
-                    value={this.state.uniName}
-                    onChange={this.handleUniChange}
+                    name="eduName"
                     onBlur={this.onBlur}
                     className="form-control-std"
-                    placeholder="University"
+                    placeholder="High School"
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
@@ -215,6 +251,7 @@ class EduShortSU extends React.Component {
                       placeholder='University'
                       handleChange={this.handleUKUniChange}
                       handleBlur={this.onBlur}
+                      valueToShow='value'
                     />
                   </div>
                 </div>
@@ -225,8 +262,6 @@ class EduShortSU extends React.Component {
                   <input
                     type="text"
                     name="uniName"
-                    value={this.state.uniName}
-                    onChange={this.handleUniChange}
                     onBlur={this.onBlur}
                     className="form-control-std"
                     placeholder="University"
@@ -253,19 +288,51 @@ class EduShortSU extends React.Component {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label className="descriptor alignLeft">And which year are you due to graduate?</label>
+                    <label className="descriptor alignLeft">And how long is your course?</label>
                     <div className="autocompleter">
                       <SelectBox
-                        options={uniGraduYrs()}
+                        options={uniLength}
                         required='required'
-                        name='uniGraduYr'
-                        placeholder='University Graduation Year'
+                        name='uniLength'
+                        placeholder='University Course Length'
                         handleChange={this.handleUniGradYrChange}
                         handleBlur={this.onBlur}
                       />
                     </div>
                   </div>
                 </React.Fragment>
+              )}
+              {eetStatus === 'job' && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft">Who do you currently work for?</label>
+                  <input
+                    type="text"
+                    name="currCo"
+                    onBlur={this.onBlur}
+                    className="form-control-std"
+                    placeholder="Company"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    spellCheck="off"
+                    required
+                  />
+                </div>
+              )}
+              {eetStatus === 'train' && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft">Who is your training provider?</label>
+                  <input
+                    type="text"
+                    name="currTrainingProvider"
+                    onBlur={this.onBlur}
+                    className="form-control-std"
+                    placeholder="Training Provider"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    spellCheck="off"
+                    required
+                  />
+                </div>
               )}
 
     {/*          <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth"> */}

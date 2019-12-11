@@ -19,8 +19,13 @@ class MenteeFullSignUp extends Component {
     const fname = 'Emma';
     const id = '12345';
     const hasSetMobNo = true;
+    const hasSetSchSubjects = true;
+    const hasSetDegree = false;
+    const hasSetRole = false;
+    const hasSetTrain = false;
     const nonPartnerSch = true;
-    const menteetflink = 'https://prospela.typeform.com/to/bszCn1?fname='+fname+'&uid='+id+'&hasSetMobNo='+hasSetMobNo;
+    const eetStatus = 'sch';
+    const menteetflink = 'https://prospela.typeform.com/to/bszCn1?fname='+fname+'&uid='+id+'&hasSetMobNo='+hasSetMobNo+'&eetStatus='+eetStatus+'&hasSetSchSubjects='+hasSetSchSubjects+'&hasSetDegree='+hasSetDegree+'&hasSetRolee='+hasSetRole+'&hasSetTrain='+hasSetTrain;
 
     return (
       <section>
