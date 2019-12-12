@@ -1,4 +1,4 @@
-/* Dex last merged this code on 14th Sept 2019*/
+/* Dex last merged this code on 12th Dec 2019*/
 var formControlStd = document.getElementsByClassName("form-control-std");
 
 var tncCheckbox = document.getElementById("tncCheckbox");
