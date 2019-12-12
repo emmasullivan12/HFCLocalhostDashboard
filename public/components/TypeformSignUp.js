@@ -1,4 +1,4 @@
-// Dex last merged this code on 28th Oct 2019
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -145,7 +145,7 @@ class TypeformSignUp extends Component {
       }
     } else {
       switch (step) {
-        case 'did1stSU':
+        case '':
           return (
             <React.Fragment>
               {fname && (
