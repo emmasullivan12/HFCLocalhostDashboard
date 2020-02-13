@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -272,7 +272,7 @@ class App extends Component{
     this.props.fetchData();
   } */
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -314,7 +314,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'did1stSU';
+  const step = 'didEduEmailVerif';
 //    const step = this.props.users.step;
       switch (step) {
         case 'did1stSU':
@@ -349,7 +349,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 'didShortSUtf';
+  const step = 'didEmailVerif';
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':

@@ -75,7 +75,7 @@ class MentorProfileContent extends Component {
       profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       city: 'London',
       country: 'UK',
-      timeZone: 'UTC',
+      timeZone: 'Europe/London',
       avail: 1,
       activeMentees: 2,
       allMentees: 5,

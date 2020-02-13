@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -26,6 +26,7 @@ class Autocomplete extends React.Component {
   //  const hasMultipleAttributes = Object.keys(suggestions[0]).length > 1;
 //    const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
     const userInput = e.currentTarget.value;
+    const { valueToShow } = this.props;
 
     function filteredSuggestions() {
       const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
@@ -34,7 +35,7 @@ class Autocomplete extends React.Component {
       if (hasMultipleAttributes) {
         filteredSuggestions = suggestions.filter(
           suggestion =>
-            suggestion.value.toLowerCase().indexOf(userInput.toLowerCase()) != -1
+            suggestion[valueToShow].toLowerCase().indexOf(userInput.toLowerCase()) != -1
           //  suggestion.value.toLowerCase().includes(userInput.toLowerCase())
             // suggestion.value.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
         );

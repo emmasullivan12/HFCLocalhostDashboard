@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -251,7 +251,7 @@ class EduShortSU extends React.Component {
                       placeholder='University'
                       handleChange={this.handleUKUniChange}
                       handleBlur={this.onBlur}
-                      valueToShow='value'
+                      valueToShow='value' // This is the attribute of the array/object to be displayed to user
                     />
                   </div>
                 </div>

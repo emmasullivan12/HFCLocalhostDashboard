@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -101,8 +101,8 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 
 class TypeformSignUp extends Component {
   render() {
-    const userRole = 'mentee';
-    const step = 'didCountry';
+    const userRole = 'mentor';
+    const step = 'didEmailVerif';
     const fname = 'Emma';
     const id = '12345';
     const country = 'United Kingdom';
@@ -145,7 +145,7 @@ class TypeformSignUp extends Component {
       }
     } else {
       switch (step) {
-        case '':
+        case 'didEmailVerif':
           return (
             <React.Fragment>
               {fname && (

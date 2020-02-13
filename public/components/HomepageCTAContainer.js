@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 
@@ -22,8 +22,8 @@ const JoinProgrammePlusModalProps = {
 
 class HomepageCTAContainer extends Component {
   render() {
-    const step = 'didSafeG'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
-    const hasInvite = true;
+    const step = 'didFullSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const hasInvite = false;
     const is18plus = 1;
     const matchstatus = 'isMatched';
     const groups = [];
@@ -61,13 +61,13 @@ class HomepageCTAContainer extends Component {
         {is18plus != 1 && step === 'didFullSUtf' && (
           <MenteeTraining />
         )}
-        {is18plus === 1 && step === 'didFullSUtf' && (
+        {is18plus === 1 && step === 'didFullSUtf' && hasInvite === false && (
           <MentorMatches />
         )}
-        {step === 'didSafeG' && (
+        {step === 'didSafeG' && hasInvite === false && (
           <MentorMatches />
         )}
-        {(is18plus != 1 && step === 'didSafeG') || (is18plus === 1 && step === 'didFullSUtf') && hasInvite === true (
+        {(is18plus != 1 && step === 'didSafeG') || (is18plus === 1 && step === 'didFullSUtf') && hasInvite === true && (
           <AutoEnrollPrompt />
         )}
       </div>

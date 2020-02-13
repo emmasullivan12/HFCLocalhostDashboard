@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 import MentorCardMatches from "./MentorCard";
@@ -7,7 +7,7 @@ class MentorMatches extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      matchstatus: 1
+      matchstatus: 6
     }
     this.requestNewMatches = this.requestNewMatches.bind(this);
   }
@@ -19,7 +19,7 @@ class MentorMatches extends Component {
 
   render() {
     const {matchstatus} = this.state;
-    const prevMatchesAvail = false; // Need to check if matches given before are still available / mentee didn't pass on them and will show them
+    const prevMatchesAvail = true; // Need to check if matches given before are still available / mentee didn't pass on them and will show them
 
     switch (matchstatus) {
       case 1:
