@@ -75,7 +75,7 @@ class Autocomplete extends React.Component {
     const { handleChange, name, valueToShow } = this.props;
 
     // User pressed the enter key
-    if (e.keyCode === 13 || e.keyCode === 9) {
+    if (e.keyCode === 13) {
       const isntValueToShow = valueToShow == undefined
       this.setState({
         activeSuggestion: 0,
@@ -84,6 +84,22 @@ class Autocomplete extends React.Component {
       });
       valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion]) : handleChange(filteredSuggestions[activeSuggestion][valueToShow]);
     }
+
+    // User pressed the tab key - maybe close box and set userInput back to empty
+    if (e.keyCode === 9) {
+      const isntValueToShow = valueToShow == undefined
+      if (this.state.showSuggestions === false) {
+        return;
+      } else {
+        this.setState({
+  //        activeSuggestion: 0,
+          showSuggestions: false,
+          userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
+        });
+        valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion]) : handleChange(filteredSuggestions[activeSuggestion][valueToShow]);
+      }
+    }
+
     // User pressed the up arrow
     else if (e.keyCode === 38) {
       if (activeSuggestion === 0) {
