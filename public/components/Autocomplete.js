@@ -22,9 +22,6 @@ class Autocomplete extends React.Component {
 
   onChange = (e) => {
     const { suggestions, handleChange } = this.props;
-  //  console.log('objectkeys: ' + Object.keys(suggestions[0]));
-  //  const hasMultipleAttributes = Object.keys(suggestions[0]).length > 1;
-//    const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
     const userInput = e.currentTarget.value;
     const { valueToShow } = this.props;
 
@@ -56,6 +53,7 @@ class Autocomplete extends React.Component {
       showSuggestions: true,
       userInput: e.currentTarget.value
     });
+    console.log("activeSuggestionOnType: "+this.state.activeSuggestion);
     handleChange(e.currentTarget.value);
   };
 
@@ -102,6 +100,7 @@ class Autocomplete extends React.Component {
 
     // User pressed the up arrow
     else if (e.keyCode === 38) {
+      console.log("activeSuggestionUP: "+activeSuggestion);
       if (activeSuggestion === 0) {
         return;
       }
@@ -110,7 +109,9 @@ class Autocomplete extends React.Component {
     }
     // User pressed the down arrow
     else if (e.keyCode === 40) {
-      if (activeSuggestion - 1 === filteredSuggestions.length) {
+      console.log("filteredSuggestionsLength: "+filteredSuggestions.length);
+      console.log("activeSuggestionDOWN: "+activeSuggestion);
+      if (activeSuggestion + 1 === filteredSuggestions.length) {
         return;
       }
 
@@ -120,7 +121,7 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onKeyDown } = this;
-    const { name, placeholder, handleBlur, handleChange, required, suggestions, valueToShow } = this.props;
+    const { name, detailToShow, placeholder, handleBlur, handleChange, required, showDetail, suggestions, valueToShow } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = (suggestions[0].value != undefined || suggestions[0].value != null);
 
@@ -134,10 +135,13 @@ class Autocomplete extends React.Component {
 
               // Flag the active suggestion with a class
               if (index === activeSuggestion) {
-                className = "autocompleter-active";
+                className = "autocompleter-active" + (showDetail===true ? ' showDetail' : ' noDetail');
+              } else {
+                className="autocompleter-item" + (showDetail===true ? ' showDetail' : ' noDetail');
               }
               const content = valueToShow == undefined ? suggestion : suggestion[valueToShow];
               const key = valueToShow == undefined ? suggestion : suggestion[valueToShow];
+              const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
               return (
     //            {hasMultipleAttributes === true && (
     //              <div className={className} key={suggestion.value} onClick={onClick}>
@@ -147,6 +151,11 @@ class Autocomplete extends React.Component {
         //          <div className={className} key={hasMultipleAttributes === true ? suggestion.value : suggestion} onClick={onClick}>
                   <div className={className} key={key} onClick={onClick}>
                     {content}
+                    {showDetail===true && (
+                      <div className="autocompleter-item-detail">
+                        {detail}
+                      </div>
+                    )}
                   </div>
     //            )}
               );
