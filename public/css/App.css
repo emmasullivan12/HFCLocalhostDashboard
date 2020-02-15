@@ -1,4 +1,4 @@
-/* Dex last merged this code on 12th Dec 2019 */ 
+/* Dex last merged this code on 12th Dec 2019 */
 
 #root {
   height: 100%;
@@ -116,7 +116,8 @@ h2{
   stroke-linecap: round;
   stroke-width: 3;
 }
-.close-menu:hover .menu-close-icon{
+.close-menu:hover .menu-close-icon,
+.close-menu:focus .menu-close-icon{
   stroke: #fff;
   stroke-width: 4;
 }

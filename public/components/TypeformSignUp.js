@@ -101,14 +101,14 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 
 class TypeformSignUp extends Component {
   render() {
-    const userRole = 'mentor';
-    const step = 'didEmailVerif';
+    const userRole = 'mentee';
+    const step = 'didCountry';
     const fname = 'Emma';
     const id = '12345';
-    const country = 'United Kingdom';
+    const country = 'GBR';
     const eetStatus = 'uni';
     const schName = '';
-    const uniName = 'Bath University';
+    const uniName = 'Bath University'; // shall we save down uni name or the number?
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
 

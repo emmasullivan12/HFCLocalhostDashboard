@@ -73,8 +73,8 @@ class MentorProfileContent extends Component {
       uid: '12345',
       fname: 'Emma',
       profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
-      city: 'London',
-      country: 'UK',
+      city: 'LA',
+      country: 'USA',
       timeZone: 'Europe/London',
       avail: 1,
       activeMentees: 2,
@@ -453,7 +453,7 @@ class MentorProfileContent extends Component {
                 </div>
               </div>
             </div>
-            <div className={"mapImg " + mentor.city}>
+            <div className={"mapImg " + mentor.country + " " + mentor.city}>
               <div className="mapAttribution">
                 &#169; <a href="https://www.openstreetmap.org/copyright" className="link map">OpenStreetMap</a> contributors
               </div>

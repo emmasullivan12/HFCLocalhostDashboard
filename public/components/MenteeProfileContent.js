@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 import {
@@ -34,8 +34,8 @@ class MenteeProfileContent extends Component {
       fname: 'Dexter',
       profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
       is18plus: 1,
-      city: 'LA',
-      country: 'Ireland',
+      city: 'London',
+      country: 'GBR',
       timeZone: "Europe/London",
       avail: 1,
       prevMentors: 1,

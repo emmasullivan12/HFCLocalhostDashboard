@@ -22,14 +22,16 @@
   padding: 0.5rem 1.7rem 0.5rem 1.7rem;
 }
 
-.chatMenuItem:hover {
+.chatMenuItem:hover{
   background-color: #111111;
 }
 
-.chatMenuItem.menuCTA:hover{
+.chatMenuItem.menuCTA:hover,
+.chatMenuItem.menuCTA:focus{
   background: none;
 }
-.chatMenuItem.menuCTA:hover .menuCTA{
+.chatMenuItem.menuCTA:hover .menuCTA,
+.chatMenuItem.menuCTA:focus .menuCTA{
   color: #0cf7ca;
 }
 

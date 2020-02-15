@@ -415,7 +415,8 @@ hr{
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.Submit-btn.landingCTA.hollow:hover{
+.Submit-btn.landingCTA.hollow:hover,
+.Submit-btn.landingCTA.hollow:focus{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   background: #fff;
 }
@@ -439,7 +440,8 @@ hr{
   border: none;
   color: #7373df;
 }
-.Submit-btn.HollowBtn.Edit:hover{
+.Submit-btn.HollowBtn.Edit:hover,
+.Submit-btn.HollowBtn.Edit:focus{
   box-shadow: none;
   background: none;
   color: #351c75;
@@ -479,7 +481,8 @@ hr{
   color: #7f7f7f;
   border: 1px solid #a0a0a0;
 }
-.Submit-btn.Following:hover{
+.Submit-btn.Following:hover,
+.Submit-btn.Following:focus{
   background: #fff;
   border: 1px solid #a0a0a0;
   color: #7f7f7f;
@@ -489,17 +492,20 @@ hr{
 .uploadPicBtn{
   margin-top: 25px!important;
 }
-.Submit-btn:hover{
+.Submit-btn:hover,
+.Submit-btn:focus {
   background: #06bf9c;
   color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
-.Submit-btn.BlankBtn:hover{
+.Submit-btn.BlankBtn:hover,
+.Submit-btn.BlankBtn:focus{
   color: #43a08f;
   background: #fff;
   box-shadow: none;
 }
-.Submit-btn.HollowBtn:hover{
+.Submit-btn.HollowBtn:hover,
+.Submit-btn.HollowBtn:focus{
   color: #43a08f;
   background: #fff;
   border: 2px solid #58d2bb;
@@ -576,7 +582,9 @@ hr{
   font:inherit;
 }
 .btn-left:hover,
-.btn-right:hover{
+.btn-left:focus,
+.btn-right:hover,
+.btn-right:focus{
   background-color: #e9f9f6;
   color: #39a28e;
   border-style: solid;
@@ -644,13 +652,17 @@ hr{
   background-color: rgba(247,247,247,.64)!important;
 }
 .checkbox-container-login:hover input ~ .checkmark,
-.checkbox-container:hover input ~ .checkmark {
+.checkbox-container:hover input ~ .checkmark,
+.checkbox-container-login:focus input ~ .checkmark,
+.checkbox-container:focus input ~ .checkmark {
   background-color: rgba(78,78,214,.29);
 }
-.checkbox-container-login:hover input ~ .initiativeCheckmark {
+.checkbox-container-login:hover input ~ .initiativeCheckmark,
+.checkbox-container-login:focus input ~ .initiativeCheckmark {
   background-color: rgba(247,247,247,.85)!important;
 }
-.checkbox-container-login:hover .initiative-tncText {
+.checkbox-container-login:hover .initiative-tncText,
+.checkbox-container-login:focus .initiative-tncText {
   color: rgba(220,220,220,.98)!important;
 }
 .checkbox-container-login input:checked ~ .checkmark,
@@ -721,7 +733,8 @@ hr{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.radioContainer:hover input ~ .radioCheckmark {
+.radioContainer:hover input ~ .radioCheckmark,
+.radioContainer:focus input ~ .radioCheckmark {
   background-color: rgba(78,78,214,.29);
 }
 .radioContainer input:checked ~ .radioCheckmark {
@@ -900,7 +913,8 @@ a:active {
   font-weight: 700;
   cursor: pointer;
 }
-.inline-link:hover {
+.inline-link:hover,
+.inline-link:focus {
   text-decoration: underline;
   color: #0b4c8c;
   outline: 0;
@@ -945,18 +959,26 @@ a:active {
 }
 .userMenu-thumb.allowAddPic:hover > *,
 .img-circle.allowAddPic:hover > *,
-.img-square.allowAddPic:hover > *{
+.img-square.allowAddPic:hover > *,
+.userMenu-thumb.allowAddPic:focus > *,
+.img-circle.allowAddPic:focus > *,
+.img-square.allowAddPic:focus > *{
   opacity: 0.4;
 }
 
 .img-circle.allowAddPic.isntMe:hover > *,
-.img-square.allowAddPic.isntMe:hover > *{
+.img-square.allowAddPic.isntMe:hover > *,
+.img-circle.allowAddPic.isntMe:focus > *,
+.img-square.allowAddPic.isntMe:focus > *{
   opacity: 1;
 }
 
 .userMenu-thumb.allowAddPic:hover .ModalOpenBtn-addPicBtn,
 .img-circle.allowAddPic:hover .ModalOpenBtn-addPicBtn,
-.img-square.allowAddPic:hover .ModalOpenBtn-addPicBtn{
+.img-square.allowAddPic:hover .ModalOpenBtn-addPicBtn,
+.userMenu-thumb.allowAddPic:focus .ModalOpenBtn-addPicBtn,
+.img-circle.allowAddPic:focus .ModalOpenBtn-addPicBtn,
+.img-square.allowAddPic:focus .ModalOpenBtn-addPicBtn{
   opacity: 1;
 }
 

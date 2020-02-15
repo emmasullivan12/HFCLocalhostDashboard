@@ -272,7 +272,7 @@ class App extends Component{
     this.props.fetchData();
   } */
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -314,7 +314,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'didEduEmailVerif';
+  const step = 'didCountry';
 //    const step = this.props.users.step;
       switch (step) {
         case 'did1stSU':

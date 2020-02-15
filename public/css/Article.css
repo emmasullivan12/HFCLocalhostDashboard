@@ -271,7 +271,8 @@
   line-height: 22px;
   border: 1px solid transparent;
 }
-.section-list li a:hover {
+.section-list li a:hover,
+.section-list li a:focus {
   background-color: #f6f5f9;
   border: 1px solid #efebf9;
 }

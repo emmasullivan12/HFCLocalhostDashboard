@@ -19,7 +19,7 @@
   display: block;
 }
 
-.CdaFlag-emoji{
+.CANFlag-emoji{
   background-position: 1.96078% 33.3333%;
   width: 24px;
   height: 24px;
@@ -39,6 +39,11 @@
 .footprints-emoji{
   background-position: 29.4118% 76.4706%;
 }
+.GBRFlag-emoji{
+  background-position: 3.92157% 15.6863%;
+  width: 24px;
+  height: 24px;
+}
 .globe-emoji{
   background-position: 11.7647% 9.80392%;
   width: 24px;
@@ -46,6 +51,11 @@
 }
 .heart-emoji{
   background-position: 49.0196% 3.92157%;
+}
+.IREFlag-emoji{
+  background-position: 3.92157% 66.6667%;
+  width: 24px;
+  height: 24px;
 }
 .link-emoji{
   background-position: 52.9412% 49.0196%;
@@ -112,12 +122,7 @@
 .typing-emoji{
   background-position: 49.0196% 45.098%;
 }
-.UKFlag-emoji{
-  background-position: 3.92157% 15.6863%;
-  width: 24px;
-  height: 24px;
-}
-.USFlag-emoji{
+.USAFlag-emoji{
   background-position: 9.80392% 21.5686%;
   width: 24px;
   height: 24px;

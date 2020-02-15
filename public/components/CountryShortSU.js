@@ -50,10 +50,33 @@ class CountryShortSU extends React.Component {
 
   canBeSubmitted(countries, states, provinces, ukCounties, ieCounties) {
     const {country, stateProv, city} = this.state;
-    if (country != '' && countries.indexOf(country) != -1 && city != '') {
-      if (country === 'United States of America' || country === 'Canada') {
-        if (stateProv != '' && (states.indexOf(stateProv) != -1 || provinces.indexOf(stateProv) != -1 || ukCounties.indexOf(stateProv) != -1 || ieCounties.indexOf(stateProv) != -1)) {
-          return true;
+    var isCountryOK = countries.map((el) => el.label).indexOf(country) != -1;
+      if (country != '' && isCountryOK && city != '') {
+        if (country === 'United Kingdom') {
+          var isUKCountyOK = ukCounties.map((el) => el.label).indexOf(stateProv) != -1;
+          if (stateProv != '' && isUKCountyOK) {
+            return true;
+          } else {
+            return false;
+          }
+        } else if (country === 'Ireland') {
+          var isIECountryOK = ieCounties.indexOf(stateProv) != -1;
+          if (stateProv != '' && isIECountryOK) {
+            return true;
+          } else {
+            return false;
+          }
+        } else if (country === 'United States of America') {
+          var isStateOK = states.map((el) => el.label).indexOf(stateProv) != -1;
+          if (stateProv != '' && isStateOK) {
+            return true;
+          } else {
+            return false;
+          }
+        } else if (country === 'Canada') {
+          var isProvOK = provinces.map((el) => el.label).indexOf(stateProv) != -1;
+          if (stateProv != '' && isProvOK) {
+            return true;
         } else {
           return false;
         }
@@ -112,6 +135,7 @@ class CountryShortSU extends React.Component {
                     handleChange={this.handleCountryChange}
                     handleBlur={this.onBlur}
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                    required
                   />
                 </div>
               </div>
@@ -126,6 +150,7 @@ class CountryShortSU extends React.Component {
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
                     />
                   </div>
                 </div>
@@ -141,6 +166,7 @@ class CountryShortSU extends React.Component {
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
                     />
                   </div>
                 </div>
@@ -156,6 +182,7 @@ class CountryShortSU extends React.Component {
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
                     />
                   </div>
                 </div>
@@ -170,6 +197,7 @@ class CountryShortSU extends React.Component {
                       placeholder='County'
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
+                      required
                     />
                   </div>
                 </div>

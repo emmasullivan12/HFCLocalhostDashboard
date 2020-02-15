@@ -120,7 +120,7 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onKeyDown } = this;
-    const { name, placeholder, handleBlur, handleChange, suggestions, valueToShow } = this.props;
+    const { name, placeholder, handleBlur, handleChange, required, suggestions, valueToShow } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = (suggestions[0].value != undefined || suggestions[0].value != null);
 
@@ -176,7 +176,7 @@ class Autocomplete extends React.Component {
           autoComplete="off"
           autoCorrect="off"
           spellCheck="off"
-          required
+          required={required}
         />
         {suggestionsListComponent}
       </React.Fragment>

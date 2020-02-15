@@ -1,4 +1,4 @@
-/* Dex last merged this code on 12th Dec 2019 */ 
+/* Dex last merged this code on 12th Dec 2019 */
 
 * {
   box-sizing: border-box;
@@ -278,7 +278,8 @@ input[type=text]:disabled{
   color: red;
 }
 
-.descriptor.no-href:hover{
+.descriptor.no-href:hover,
+.descriptor.no-href:focus{
   color: #a3a3a3;
 }
 
@@ -448,7 +449,8 @@ input[type=text]:disabled{
   opacity: 1;
 }
 
-.btn-general:hover{
+.btn-general:hover,
+.btn-general:focus{
   box-shadow: 0 1px 4px rgba(29,28,29,.3);
 }
 

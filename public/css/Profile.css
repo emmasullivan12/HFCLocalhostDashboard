@@ -151,7 +151,7 @@
   }
 }
 
-.mapImg.UK{
+.mapImg.GBR{
   background-image: url(https://prospela.com/wp-content/uploads/2019/11/Map-of-UKI-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/11/Map-of-UKI-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/11/Map-of-UKI-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
@@ -165,7 +165,7 @@
   background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-USA-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-USA-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
 }
-.mapImg.Canada{
+.mapImg.CAN{
   height: 500px;
   background-image: url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Canada-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Canada-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
@@ -173,7 +173,7 @@
   background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Canada-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Canada-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
 }
-.mapImg.UK.London{
+.mapImg.GBR.London{
   height: 500px;
   background-image: url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
@@ -181,14 +181,16 @@
   background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/08/Map-of-London-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
 }
-.mapImg.Canada.Montreal{
+.mapImg.CAN.Montreal{
   background-image: url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Montreal-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Montreal-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Montreal-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Montreal-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Montreal-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
 }
-.mapImg.USA.NYC{
+.mapImg.USA.NYC,
+.mapImg.USA.New.York,
+.mapImg.USA.New.York.City {
   height: 500px;
   background-image: url(https://prospela.com/wp-content/uploads/2019/10/Map-of-NYC-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-NYC-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
@@ -203,7 +205,8 @@
   background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Chicago-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Chicago-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
 }
-.mapImg.USA.LA{
+.mapImg.USA.LA,
+.mapImg.USA.Los.Angeles {
   background-image: url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Los-Angeles-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Los-Angeles-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://prospela.com/wp-content/uploads/2019/10/Map-of-Los-Angeles-©-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);

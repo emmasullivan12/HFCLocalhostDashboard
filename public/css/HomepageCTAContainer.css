@@ -38,19 +38,24 @@
   color: #fff;
   background-color: rgba(101,200,216,.5);
 }
-.groupsContainer button:nth-of-type(5n+0):hover{
+.groupsContainer button:nth-of-type(5n+0):hover,
+.groupsContainer button:nth-of-type(5n+0):focus{
   background-color: rgba(238,176,0,.9);
 }
-.groupsContainer button:nth-of-type(5n+1):hover{
+.groupsContainer button:nth-of-type(5n+1):hover,
+.groupsContainer button:nth-of-type(5n+1):focus{
   background-color: rgba(153,153,231,.9);
 }
-.groupsContainer button:nth-of-type(5n+2):hover {
+.groupsContainer button:nth-of-type(5n+2):hover,
+.groupsContainer button:nth-of-type(5n+2):focus {
   background-color: rgba(88,210,187,.9);
 }
-.groupsContainer button:nth-of-type(5n+3):hover {
+.groupsContainer button:nth-of-type(5n+3):hover,
+.groupsContainer button:nth-of-type(5n+3):focus {
   background-color: rgba(251,108,129,.9);
 }
-.groupsContainer button:nth-of-type(5n+4):hover {
+.groupsContainer button:nth-of-type(5n+4):hover,
+.groupsContainer button:nth-of-type(5n+4):focus {
   background-color: rgba(101,200,216,.9);
 }
 
@@ -60,7 +65,8 @@
   border: 1px solid #e4e2e2;
 }
 
-.groupsContainer button:nth-last-of-type(1):hover{
+.groupsContainer button:nth-last-of-type(1):hover,
+.groupsContainer button:nth-last-of-type(1):focus {
   background-color: rgba(212,212,212,.2095);
 }
 

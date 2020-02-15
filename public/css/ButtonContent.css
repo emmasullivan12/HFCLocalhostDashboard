@@ -75,7 +75,8 @@
   font-size: 16px;
 }
 
-.addContainer:hover{
+.addContainer:hover,
+.addContainer:focus{
   background-color: rgba(242,242,242,.45);
 }
 .RequestChatBtnContainer{

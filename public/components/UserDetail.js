@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 
@@ -112,12 +112,14 @@ function planningUni(planningUni) {
 
 function userFlagEmoji(userCountry) {
   switch (userCountry) {
-    case 'UK':
-      return 'UKFlag-emoji';
-    case 'US':
-      return 'USFlag-emoji';
-    case 'Canada':
-      return 'CdaFlag-emoji';
+    case 'GBR':
+      return 'GBRFlag-emoji';
+    case 'IRE':
+      return 'IREFlag-emoji';
+    case 'USA':
+      return 'USAFlag-emoji';
+    case 'CAN':
+      return 'CANFlag-emoji';
     default:
       return 'globe-emoji';
   }
@@ -125,11 +127,10 @@ function userFlagEmoji(userCountry) {
 
 function eduSubjects(userCountry) {
   switch (userCountry) {
-    case 'UK':
+    case 'GBR':
       return 'A-Level (or equivalent) subjects';
-    case 'US':
-      return 'Subjects I specialised in at school';
-    case 'Canada':
+    case 'USA':
+    case 'CAN':
       return 'Subjects I specialised in at school';
     default:
       return 'Subjects I specialised in at school';
