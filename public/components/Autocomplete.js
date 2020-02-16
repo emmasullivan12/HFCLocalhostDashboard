@@ -53,7 +53,6 @@ class Autocomplete extends React.Component {
       showSuggestions: true,
       userInput: e.currentTarget.value
     });
-    console.log("activeSuggestionOnType: "+this.state.activeSuggestion);
     handleChange(e.currentTarget.value);
   };
 
@@ -100,7 +99,6 @@ class Autocomplete extends React.Component {
 
     // User pressed the up arrow
     else if (e.keyCode === 38) {
-      console.log("activeSuggestionUP: "+activeSuggestion);
       if (activeSuggestion === 0) {
         return;
       }
@@ -109,8 +107,6 @@ class Autocomplete extends React.Component {
     }
     // User pressed the down arrow
     else if (e.keyCode === 40) {
-      console.log("filteredSuggestionsLength: "+filteredSuggestions.length);
-      console.log("activeSuggestionDOWN: "+activeSuggestion);
       if (activeSuggestion + 1 === filteredSuggestions.length) {
         return;
       }

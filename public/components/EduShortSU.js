@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import "../css/Login.css";
 import "../css/General.css";
 
-import SelectBox from './Select.js';
+import SelectBox from './SelectTest.js';
 import Autocomplete from './Autocomplete.js';
 import {ukUnis} from './UKUnis.js';
 import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
@@ -101,7 +101,7 @@ class EduShortSU extends React.Component {
   const { country, tflink, step } = this.props;
 
   const eetStatusUKOptions = [
-    {value: 'Select', label: 'Select an option:'},
+    {value: '', label: 'Select an option:'},
     {value: 'sch', label: 'I\'m at School / Sixth Form / College'},
     {value: 'uni', label: 'I\'m at University'},
     {value: 'job', label: 'I\'m in full-time employment'},
@@ -109,7 +109,7 @@ class EduShortSU extends React.Component {
     {value: 'none', label: 'None'}
   ];
   const eetStatusNonUKOptions = [
-    {value: 'Select', label: 'Select an option:'},
+    {value: '', label: 'Select an option:'},
     {value: 'sch', label: 'I\'m at High School'},
     {value: 'uni', label: 'I\'m at University / College'},
     {value: 'job', label: 'I\'m in full-time employment'},
@@ -121,7 +121,7 @@ class EduShortSU extends React.Component {
 //    {value: 'Sunbury Manor', location: 'Sunbury, Middx'},
   ];
   const ukSchYrs = [
-    {value: 'Select', label: 'Select:'},
+    {value: '', label: 'Select:'},
     {value: 'yr8', label: 'Year 8'},
     {value: 'yr9', label: 'Year 9'},
     {value: 'yr10', label: 'Year 10'},
@@ -131,7 +131,7 @@ class EduShortSU extends React.Component {
     {value: 'finSch', label: 'Finished School / Sixth Form / College'}
   ]
   const nonUKSchYrs = [
-    {value: 'Select', label: 'Select:'},
+    {value: '', label: 'Select:'},
     {value: 'yr8', label: '7th Grade'},
     {value: 'yr9', label: '8th Grade'},
     {value: 'yr10', label: '9th Grade'},
@@ -141,7 +141,7 @@ class EduShortSU extends React.Component {
     {value: 'finSch', label: 'Finished High School'}
   ]
   const uniYrs = [
-    {value: 'Select', label: 'Select:'},
+    {value: '', label: 'Select:'},
     {value: '1', label: '1st Year'},
     {value: '2', label: '2nd Year'},
     {value: '3', label: '3rd Year'},
@@ -149,7 +149,7 @@ class EduShortSU extends React.Component {
     {value: 'pg', label: 'Studying Post-grad'},
   ]
   const uniLength = [
-    {value: 'Select', label: 'Select:'},
+    {value: '', label: 'Select:'},
     {value: '1', label: '1 year'},
     {value: '2', label: '2 years'},
     {value: '3', label: '3 years'},
@@ -184,10 +184,12 @@ class EduShortSU extends React.Component {
                 <label className="descriptor alignLeft">Are you currently in Education, Employment or Training?</label>
                 <SelectBox
                   options={country === 'GBR' ? eetStatusUKOptions : eetStatusNonUKOptions}
-                  required='required'
+                  placeholder="Select one:"
                   name='eetStatus'
                   handleChange={this.handleEetStatusChange}
                   handleBlur={this.onBlur}
+                  valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  required
                 />
               </div>
               {country === 'GBR' && eetStatus === 'sch' && (
