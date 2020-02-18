@@ -188,58 +188,6 @@ hr{
 .leftRightPad{
   padding: 0 2rem 0 2rem;
 }
-.autocompleter{
-  position: relative;
-  display: block;
-}
-.autocompleter-items{
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  top: 100%;
-  left: 0;
-  right: 0;
-}
-.autocompleter-item,
-.autocompleter-item.noDetail,
-.autocompleter-active.noDetail {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
-}
-.autocompleter-item.showDetail,
-.autocompleter-active.showDetail {
-  height: 50px;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-.autocompleter-item-detail{
-  color: #a0a0a0;
-  text-align: left;
-  background-color: inherit;
-  font-size: 0.8em;
-    padding-top: 3px;
-}
-.autocompleter-item:hover {
-  background-color: #e9e9e9;
-}
-
-.autocompleter-active {
-  background-color: #351c75 !important;
-  color: #ffffff;
-  cursor: pointer;
-}
-.no-suggestions{
-  color: #adadad;
-  margin-top: -1.2rem;
-  margin-bottom: 1rem;
-}
 .button-unstyled {
   background: none;
   border: 0;

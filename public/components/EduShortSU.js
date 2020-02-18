@@ -242,6 +242,7 @@ class EduShortSU extends React.Component {
                       placeholder='University'
                       handleChange={this.handleUKUniChange}
                       handleBlur={this.onBlur}
+                      idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       showDetail
                       detailToShow='location'

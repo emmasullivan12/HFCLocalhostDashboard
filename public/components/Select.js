@@ -38,7 +38,7 @@ class SelectBox extends React.Component {
       const { values } = prevState
       const value = values[0];
       let focusedValue = -1
-      
+
       if (value) {
         focusedValue = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
       }
@@ -58,13 +58,12 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
-  //  const { name } = this.props;
     this.setState(prevState => ({
       isOpen: !prevState.isOpen
     }))
   };
 
-  onHoverOption = (e) => {
+/*  onHoverOption = (e) => {
     const { options, valueToShow } = this.props;
     const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
     const value = hasMultipleAttributes ? e.currentTarget.dataset.text : e.currentTarget.dataset;
@@ -73,14 +72,17 @@ class SelectBox extends React.Component {
       focusedValue: index
     })
   }
-
+*/
   onClickOption = (e) => {
-    const { options, handleChange } = this.props;
+    const { options, handleChange, valueToShow } = this.props;
     const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
     const value = hasMultipleAttributes ? e.currentTarget.dataset.text : e.currentTarget.dataset;
+    const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
+    console.log('isOpenonclick: '+this.state.isOpen);
     this.setState(prevState => {
       return {
         values: [ value ],
+        focusedValue: index,
         isOpen: false
       }
     });
@@ -89,7 +91,8 @@ class SelectBox extends React.Component {
 
   onKeyDown = e => {
     const { isOpen } = this.state;
-    const { handleChange, options } = this.props;
+    const { handleChange, options, valueToShow } = this.props;
+    const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
 
   //  case 'Escape':
     //      case 'Tab':
@@ -102,44 +105,80 @@ class SelectBox extends React.Component {
 
     // User pressed the enter key
     if (e.keyCode === 13) {
-      this.setState(prevState => ({
-        isOpen: !prevState.isOpen
-      }))
+
+      this.setState(prevState => {
+        let { focusedValue } = prevState
+
+        if (!isOpen) {
+          return {
+            isOpen: true
+          }
+        } else {
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue].value;
+          const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value);
+          handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+
+          return {
+            values: [ value ],
+            focusedValue: index,
+            isOpen: false
+          }
+        }
+      })
+    }
+
+    // User pressed the escape key
+    else if (e.keyCode === 27) {
+      if (isOpen) {
+//        e.preventDefault()
+        this.setState({
+          isOpen: false,
+//          focusedValue: -1,
+        })
+      }
     }
 
     // User pressed the up arrow
-  /*  else if (e.keyCode === 38) {
-      e.preventDefault()
+    else if (e.keyCode === 38) {
+      e.preventDefault();
       this.setState(prevState => {
         let { focusedValue } = prevState
 
         if (focusedValue > 0) {
           focusedValue--
 
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue].value;
+
           return {
-            values: [ options[focusedValue].value ],
+            values: [ value ],
             focusedValue
           }
         }
       })
     }
+
     // User pressed the down arrow
     else if (e.keyCode === 40) {
       e.preventDefault()
       this.setState(prevState => {
         let { focusedValue } = prevState
 
-        if (focusedValue < options.length - 1) {
+
+        if (focusedValue === options.length -1) {
+          return;
+        } else {
           focusedValue++
 
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue].value;
+
           return {
-            values: [ options[focusedValue].value ],
+            values: [ value ],
             focusedValue
           }
         }
       })
     }
-*/
+
   };
 
 /*  stopPropagation = (e) => {
@@ -152,7 +191,7 @@ class SelectBox extends React.Component {
 
     if (values.length === 0) {
       return (
-        <div>
+        <div className="select-placeholder">
           { placeholder }
         </div>
       )
@@ -191,8 +230,8 @@ class SelectBox extends React.Component {
               data-id={hasMultipleAttributes === true ? option.value : option}
               data-text={value}
               className={className}
-              onFocus={this.onHoverOption} // placeholder as was erroring without this
-              onMouseOver={this.onHoverOption}
+        //      onFocus={this.onHoverOption} // placeholder as was erroring without this
+        //      onMouseOver={this.onHoverOption}
               onClick={this.onClickOption}
             >
               {value}
@@ -217,8 +256,9 @@ class SelectBox extends React.Component {
           onBlur={this.onBlur}
           onKeyDown={this.onKeyDown}
           required={required}
+          onClick={this.onClick}
         >
-          <div onClick={this.onClick}>
+          <div className="selectContainer">
             { this.renderValues() }
             <span className="arrow">
               { isOpen ? <ChevronUp /> : <ChevronDown /> }
