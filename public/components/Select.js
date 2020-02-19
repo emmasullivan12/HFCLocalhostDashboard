@@ -34,6 +34,7 @@ class SelectBox extends React.Component {
   onBlur = (e) => {
     const { options, handleBlur, valueToShow, required } = this.props
     const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
+
     this.setState(prevState => {
       const { values } = prevState
       const value = values[0];
@@ -58,9 +59,9 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen
-    }))
+    const currentState = this.state.isOpen;
+    this.setState({ isOpen: !currentState });
+
   };
 
 /*  onHoverOption = (e) => {
@@ -76,9 +77,8 @@ class SelectBox extends React.Component {
   onClickOption = (e) => {
     const { options, handleChange, valueToShow } = this.props;
     const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
-    const value = hasMultipleAttributes ? e.currentTarget.dataset.text : e.currentTarget.dataset;
-    const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
-    console.log('isOpenonclick: '+this.state.isOpen);
+    const value = e.currentTarget.dataset.text;
+    const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value);
     this.setState(prevState => {
       return {
         values: [ value ],
@@ -86,14 +86,13 @@ class SelectBox extends React.Component {
         isOpen: false
       }
     });
-    handleChange(hasMultipleAttributes ? e.currentTarget.dataset.id : e.currentTarget.dataset);
+    handleChange(e.currentTarget.dataset.id);
   }
 
   onKeyDown = e => {
     const { isOpen } = this.state;
     const { handleChange, options, valueToShow } = this.props;
     const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
-
   //  case 'Escape':
     //      case 'Tab':
   //          if (isOpen) {
@@ -114,10 +113,9 @@ class SelectBox extends React.Component {
             isOpen: true
           }
         } else {
-          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue].value;
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
           const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value);
           handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-
           return {
             values: [ value ],
             focusedValue: index,
@@ -147,7 +145,7 @@ class SelectBox extends React.Component {
         if (focusedValue > 0) {
           focusedValue--
 
-          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue].value;
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
           return {
             values: [ value ],
@@ -169,7 +167,7 @@ class SelectBox extends React.Component {
         } else {
           focusedValue++
 
-          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue].value;
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
           return {
             values: [ value ],

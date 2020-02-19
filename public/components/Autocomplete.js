@@ -80,7 +80,7 @@ class Autocomplete extends React.Component {
       showSuggestions: true,
       userInput: e.currentTarget.value
     });
-    handleChange(e.currentTarget.dataset.id);
+  //  handleChange(e.currentTarget.dataset.id);
   };
 
   onClick = (e) => {
@@ -93,6 +93,7 @@ class Autocomplete extends React.Component {
       userInput: e.currentTarget.dataset.text
     });
     handleChange(e.currentTarget.dataset.id);
+    console.log("tobesavedONCLICK"+e.currentTarget.dataset.id);
   };
 
   onKeyDown = e => {
@@ -108,6 +109,8 @@ class Autocomplete extends React.Component {
         userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
       });
       valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion]) : handleChange(filteredSuggestions[activeSuggestion][idValue]);
+      console.log("tobesavedONCLICKifHASMULTIPLE"+filteredSuggestions[activeSuggestion][idValue]);
+      console.log("tobesavedONCLICKifSINGLE"+filteredSuggestions[activeSuggestion]);
     }
 
     // User pressed the tab key - maybe close box and set userInput back to empty
@@ -205,6 +208,7 @@ class Autocomplete extends React.Component {
     return (
       <React.Fragment>
         <input
+          tabIndex="0"
           type="text"
           name={name}
           className="form-control-std autocompleter"

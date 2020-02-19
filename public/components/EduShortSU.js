@@ -182,6 +182,7 @@ class EduShortSU extends React.Component {
                   name='eetStatus'
                   handleChange={this.handleEetStatusChange}
                   handleBlur={this.onBlur}
+                  //tabIndex='0'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   required
                 />
@@ -196,6 +197,7 @@ class EduShortSU extends React.Component {
                       placeholder='School or College'
                       handleChange={this.handleUKSchChange}
                       handleBlur={this.onBlur}
+                      //tabIndex='1'
                     />
                   </div>
                 </div>
@@ -204,6 +206,7 @@ class EduShortSU extends React.Component {
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your High School?</label>
                   <input
+                    //tabIndex='1'
                     type="text"
                     name="eduName"
                     onBlur={this.onBlur}
@@ -219,17 +222,16 @@ class EduShortSU extends React.Component {
               {eetStatus === 'sch' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">And which {country === 'GBR' ? 'year group' : 'grade / year group'} are you in?</label>
-                  <div className="autocompleter">
-                    <SelectBox
-                      options={country === 'GBR' ? ukSchYrs : nonUKSchYrs}
-                      placeholder="Select Year Group:"
-                      name='schYrGrp'
-                      handleChange={this.handleSchYrChange}
-                      handleBlur={this.onBlur}
-                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                      required
-                    />
-                  </div>
+                  <SelectBox
+                    options={country === 'GBR' ? ukSchYrs : nonUKSchYrs}
+                    placeholder="Select Year Group:"
+                    name='schYrGrp'
+                    handleChange={this.handleSchYrChange}
+                    handleBlur={this.onBlur}
+                    //tabIndex='1'
+                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                    required
+                  />
                 </div>
               )}
               {country === 'GBR' && eetStatus === 'uni' && (
@@ -246,6 +248,7 @@ class EduShortSU extends React.Component {
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       showDetail
                       detailToShow='location'
+                      //tabIndex='1'
                       required
                     />
                   </div>
@@ -263,6 +266,7 @@ class EduShortSU extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    //tabIndex='1'
                     required
                   />
                 </div>
@@ -271,31 +275,29 @@ class EduShortSU extends React.Component {
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft">And which year group are you in?</label>
-                    <div className="autocompleter">
-                      <SelectBox
-                        options={uniYrs}
-                        name='uniYrGrp'
-                        placeholder='Select Year Group:'
-                        handleChange={this.handleUniYrChange}
-                        handleBlur={this.onBlur}
-                        valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                        required
-                      />
-                    </div>
+                    <SelectBox
+                      options={uniYrs}
+                      name='uniYrGrp'
+                      placeholder='Select Year Group:'
+                      handleChange={this.handleUniYrChange}
+                      handleBlur={this.onBlur}
+                      //tabIndex='2'
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
+                    />
                   </div>
                   <div className="form-group">
                     <label className="descriptor alignLeft">And how long is your course?</label>
-                    <div className="autocompleter">
-                      <SelectBox
-                        options={uniLength}
-                        name='uniLength'
-                        placeholder='Select Course Length:'
-                        handleChange={this.handleUniGradYrChange}
-                        handleBlur={this.onBlur}
-                        valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                        required
-                      />
-                    </div>
+                    <SelectBox
+                      options={uniLength}
+                      name='uniLength'
+                      placeholder='Select Course Length:'
+                      handleChange={this.handleUniGradYrChange}
+                      handleBlur={this.onBlur}
+                      //tabIndex='3'
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
+                    />
                   </div>
                 </React.Fragment>
               )}
@@ -303,6 +305,7 @@ class EduShortSU extends React.Component {
                 <div className="form-group">
                   <label className="descriptor alignLeft">Who do you currently work for?</label>
                   <input
+                    //tabIndex='1'
                     type="text"
                     name="currCo"
                     onBlur={this.onBlur}
@@ -319,6 +322,7 @@ class EduShortSU extends React.Component {
                 <div className="form-group">
                   <label className="descriptor alignLeft">Who is your training provider?</label>
                   <input
+                    //tabIndex='1'
                     type="text"
                     name="currTrainingProvider"
                     onBlur={this.onBlur}
