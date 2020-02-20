@@ -23,7 +23,8 @@ class CountryShortSU extends React.Component {
     this.onBlur = this.onBlur.bind(this);
   }
 
-  onBlur(e) {
+  onBlur(e, elName) {
+//    const input = elName ? e.currentTarget.closest(elName) : e.target;
     if(e.target.checkValidity()) {
       e.target.classList.remove('error');
     } else {
@@ -52,28 +53,28 @@ class CountryShortSU extends React.Component {
     const {country, stateProv, city} = this.state;
     var isCountryOK = countries.map((el) => el.label).indexOf(country) != -1;
       if (country != '' && isCountryOK && city != '') {
-        if (country === 'United Kingdom') {
+        if (country === 'GBR') {
           var isUKCountyOK = ukCounties.map((el) => el.label).indexOf(stateProv) != -1;
           if (stateProv != '' && isUKCountyOK) {
             return true;
           } else {
             return false;
           }
-        } else if (country === 'Ireland') {
+        } else if (country === 'IRE') {
           var isIECountryOK = ieCounties.indexOf(stateProv) != -1;
           if (stateProv != '' && isIECountryOK) {
             return true;
           } else {
             return false;
           }
-        } else if (country === 'United States of America') {
+        } else if (country === 'USA') {
           var isStateOK = states.map((el) => el.label).indexOf(stateProv) != -1;
           if (stateProv != '' && isStateOK) {
             return true;
           } else {
             return false;
           }
-        } else if (country === 'Canada') {
+        } else if (country === 'CAN') {
           var isProvOK = provinces.map((el) => el.label).indexOf(stateProv) != -1;
           if (stateProv != '' && isProvOK) {
             return true;
@@ -134,12 +135,14 @@ class CountryShortSU extends React.Component {
                     placeholder='Country'
                     handleChange={this.handleCountryChange}
                     handleBlur={this.onBlur}
+                    focusOnLoad
+                    idValue='value'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
                   />
                 </div>
               </div>
-              {country === 'United States of America' && (
+              {country === 'USA' && (
                 <div className="form-group" id="userState">
                   <label className="descriptor alignLeft">What State?</label>
                   <div className="autocompleter">
@@ -149,13 +152,15 @@ class CountryShortSU extends React.Component {
                       placeholder='State'
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
+                      focusOnLoad
+                      idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
                   </div>
                 </div>
               )}
-              {country === 'Canada' && (
+              {country === 'CAN' && (
                 <div className="form-group" id="userProvince">
                   <label className="descriptor alignLeft">What Province?</label>
                   <div className="autocompleter">
@@ -165,13 +170,15 @@ class CountryShortSU extends React.Component {
                       placeholder='Province'
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
+                      focusOnLoad
+                      idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
                   </div>
                 </div>
               )}
-              {country === 'United Kingdom' && (
+              {country === 'GBR' && (
                 <div className="form-group" id="userUKCounty">
                   <label className="descriptor alignLeft">What County?</label>
                   <div className="autocompleter">
@@ -181,13 +188,15 @@ class CountryShortSU extends React.Component {
                       placeholder='County'
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
+                      focusOnLoad
+                      idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
                   </div>
                 </div>
               )}
-              {country === 'Ireland' && (
+              {country === 'IRE' && (
                 <div className="form-group" id="userIECounty">
                   <label className="descriptor alignLeft">What County?</label>
                   <div className="autocompleter">
@@ -197,6 +206,7 @@ class CountryShortSU extends React.Component {
                       placeholder='County'
                       handleChange={this.handleStateChange}
                       handleBlur={this.onBlur}
+                      focusOnLoad
                       required
                     />
                   </div>
@@ -204,7 +214,7 @@ class CountryShortSU extends React.Component {
               )}
               {country != '' && (
                 <div className="form-group" id="userCity">
-                  <label className="descriptor alignLeft">{country != 'United Kingdom' && country != 'Ireland' ? 'Which City?' : 'Which Town/City?'}</label>
+                  <label className="descriptor alignLeft">{country != 'GBR' && country != 'IRE' ? 'Which City?' : 'Which Town/City?'}</label>
                   <input
                     type="text"
                     name="city"
@@ -216,6 +226,7 @@ class CountryShortSU extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    autoFocus={country != 'GBR' && country != 'IRE' && country != 'USA' && country != 'CAN' ? true : false}
                     required
                   />
                 </div>

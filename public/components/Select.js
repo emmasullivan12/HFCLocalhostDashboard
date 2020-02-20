@@ -25,6 +25,13 @@ class SelectBox extends React.Component {
     };
   }
 
+  componentDidMount(){
+    const { focusOnLoad } = this.props
+    if (focusOnLoad) {
+      document.getElementById("selectBox").focus();
+    }
+  }
+
   onFocus = (e) => {
     this.setState({
       isFocused: true

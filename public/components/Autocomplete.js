@@ -21,16 +21,23 @@ class Autocomplete extends React.Component {
     };
   }
 
+  componentDidMount(){
+    const { focusOnLoad, name } = this.props
+    if (focusOnLoad) {
+      document.getElementById("autocompleteBox-"+name).focus();
+    }
+  }
+
   onMouseDown = (e) => {
     e.preventDefault();
   }
 
   onBlur = (e) => {
-    const { suggestions, handleBlur, valueToShow, required } = this.props;
+    const { suggestions, handleBlur, valueToShow, required, name } = this.props;
     const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
     const userInput = this.state.userInput;
     const isValid = userInput ? (suggestions.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === userInput) != -1) : (required ? false : true);
-
+//    handleBlur(e, ".autocompleter");
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: [],
@@ -40,11 +47,10 @@ class Autocomplete extends React.Component {
 
   //  if(!required && userInput == null || !required && userInput != null && isValid || required && userInput != null && isValid) {
     if(isValid) {
-      document.getElementById("autocompleteBox").classList.remove('error');
+      document.getElementById("autocompleteBox-"+name).classList.remove('error');
     } else {
-      document.getElementById("autocompleteBox").classList.add('error');
+      document.getElementById("autocompleteBox-"+name).classList.add('error');
     }
-  //  handleBlur(e);
   }
 
   onChange = (e) => {
@@ -93,7 +99,6 @@ class Autocomplete extends React.Component {
       userInput: e.currentTarget.dataset.text
     });
     handleChange(e.currentTarget.dataset.id);
-    console.log("tobesavedONCLICK"+e.currentTarget.dataset.id);
   };
 
   onKeyDown = e => {
@@ -109,8 +114,6 @@ class Autocomplete extends React.Component {
         userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
       });
       valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion]) : handleChange(filteredSuggestions[activeSuggestion][idValue]);
-      console.log("tobesavedONCLICKifHASMULTIPLE"+filteredSuggestions[activeSuggestion][idValue]);
-      console.log("tobesavedONCLICKifSINGLE"+filteredSuggestions[activeSuggestion]);
     }
 
     // User pressed the tab key - maybe close box and set userInput back to empty
@@ -212,7 +215,7 @@ class Autocomplete extends React.Component {
           type="text"
           name={name}
           className="form-control-std autocompleter"
-          id="autocompleteBox"
+          id={"autocompleteBox-"+name}
           placeholder={placeholder}
           onChange={onChange}
           onKeyDown={onKeyDown}

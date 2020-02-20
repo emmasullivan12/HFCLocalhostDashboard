@@ -182,6 +182,7 @@ class EduShortSU extends React.Component {
                   name='eetStatus'
                   handleChange={this.handleEetStatusChange}
                   handleBlur={this.onBlur}
+                  focusOnLoad
                   //tabIndex='0'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   required
@@ -197,6 +198,7 @@ class EduShortSU extends React.Component {
                       placeholder='School or College'
                       handleChange={this.handleUKSchChange}
                       handleBlur={this.onBlur}
+                      focusOnLoad
                       //tabIndex='1'
                     />
                   </div>
@@ -215,6 +217,7 @@ class EduShortSU extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    autoFocus
                     required
                   />
                 </div>
@@ -248,6 +251,7 @@ class EduShortSU extends React.Component {
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       showDetail
                       detailToShow='location'
+                      focusOnLoad
                       //tabIndex='1'
                       required
                     />
@@ -314,6 +318,7 @@ class EduShortSU extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    autoFocus
                     required
                   />
                 </div>
@@ -331,6 +336,7 @@ class EduShortSU extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    autoFocus
                     required
                   />
                 </div>

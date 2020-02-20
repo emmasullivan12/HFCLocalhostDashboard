@@ -102,7 +102,7 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 class TypeformSignUp extends Component {
   render() {
     const userRole = 'mentee';
-    const step = 'didCountry';
+    const step = 'did1stSU';
     const fname = 'Emma';
     const id = '12345';
     const country = 'GBR';
