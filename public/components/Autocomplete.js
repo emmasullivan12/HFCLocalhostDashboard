@@ -22,10 +22,11 @@ class Autocomplete extends React.Component {
   }
 
   componentDidMount(){
-    const { focusOnLoad, name } = this.props
+    const { focusOnLoad, handleTabPress, name } = this.props
     if (focusOnLoad) {
       document.getElementById("autocompleteBox-"+name).focus();
     }
+    handleTabPress(false);
   }
 
   onMouseDown = (e) => {
@@ -33,11 +34,11 @@ class Autocomplete extends React.Component {
   }
 
   onBlur = (e) => {
-    const { suggestions, handleBlur, valueToShow, required, name } = this.props;
-    const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
+    const { suggestions, valueToShow, required, name } = this.props;
+    const hasMultipleAttributes = this.checkMultipleAttributes();
     const userInput = this.state.userInput;
-    const isValid = userInput ? (suggestions.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === userInput) != -1) : (required ? false : true);
-//    handleBlur(e, ".autocompleter");
+    const isValid = this.checkUserInputExists(userInput);
+
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: [],
@@ -54,12 +55,12 @@ class Autocomplete extends React.Component {
   }
 
   onChange = (e) => {
-    const { suggestions, handleChange } = this.props;
+    const { suggestions, handleChange, valueToShow, required } = this.props;
     const userInput = e.currentTarget.value;
-    const { valueToShow } = this.props;
+    const hasMultipleAttributes = this.checkMultipleAttributes();
 
     function filteredSuggestions() {
-      const hasMultipleAttributes = (suggestions[0].value != undefined) || (suggestions[0].value != null);
+
       let filteredSuggestions;
 
       if (hasMultipleAttributes) {
@@ -86,11 +87,12 @@ class Autocomplete extends React.Component {
       showSuggestions: true,
       userInput: e.currentTarget.value
     });
-  //  handleChange(e.currentTarget.dataset.id);
+    const isValid = this.checkExists(e.currentTarget.value);
+    handleChange(e.currentTarget.value, isValid);
   };
 
   onClick = (e) => {
-    const { handleChange, name } = this.props;
+    const { suggestions, handleChange, name, valueToShow, required } = this.props;
 
     this.setState({
       activeSuggestion: 0,
@@ -98,12 +100,13 @@ class Autocomplete extends React.Component {
       showSuggestions: false,
       userInput: e.currentTarget.dataset.text
     });
-    handleChange(e.currentTarget.dataset.id);
+    const isValid = this.checkExists(e.currentTarget.dataset.id);
+    handleChange(e.currentTarget.dataset.id, isValid);
   };
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions } = this.state;
-    const { handleChange, idValue, name, valueToShow } = this.props;
+    const { handleChange, handleTabPress, idValue, name, valueToShow } = this.props;
 
     // User pressed the enter key
     if (e.keyCode === 13) {
@@ -113,10 +116,11 @@ class Autocomplete extends React.Component {
         showSuggestions: false,
         userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
       });
-      valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion]) : handleChange(filteredSuggestions[activeSuggestion][idValue]);
+      const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
+      valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
     }
 
-    // User pressed the tab key - maybe close box and set userInput back to empty
+    // User pressed the tab key
     if (e.keyCode === 9) {
       const isntValueToShow = valueToShow == undefined
       if (this.state.showSuggestions === false) {
@@ -127,7 +131,9 @@ class Autocomplete extends React.Component {
           showSuggestions: false,
           userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
         });
-        valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion]) : handleChange(filteredSuggestions[activeSuggestion][idValue]);
+        const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
+        valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+        handleTabPress(true);
       }
     }
 
@@ -149,11 +155,36 @@ class Autocomplete extends React.Component {
     }
   };
 
+  checkExists(inputToCheck) {
+    const { suggestions, required, valueToShow } = this.props;
+    const hasMultipleAttributes = this.checkMultipleAttributes();
+    const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option.value : option[valueToShow]) === inputToCheck) != -1) : (required ? false : true);
+    console.log("isValidCHECKINAUTOCOMPLETE: "+isValid);
+    return isValid;
+  }
+
+  checkUserInputExists(inputToCheck) {
+    const { suggestions, required, valueToShow } = this.props;
+    const hasMultipleAttributes = this.checkMultipleAttributes();
+    const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value ) === inputToCheck) != -1) : (required ? false : true);
+    console.log("isValidUSERINPUTEXISTSCHECKINAUTOCOMPLETE: "+isValid);
+    return isValid;
+  }
+
+  checkMultipleAttributes() {
+    const { suggestions } = this.props;
+    if (suggestions[0].value != undefined || suggestions[0].value != null) {
+      return true
+    } else {
+      return false
+    }
+  }
+
   render() {
     const { onChange, onClick, onMouseDown, onKeyDown } = this;
-    const { name, detailToShow, placeholder, handleBlur, handleChange, idValue, required, showDetail, suggestions, valueToShow } = this.props;
+    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
-    const hasMultipleAttributes = (suggestions[0].value != undefined || suggestions[0].value != null);
+    const hasMultipleAttributes = this.checkMultipleAttributes();
 
     let suggestionsListComponent;
     if (showSuggestions && userInput) {
@@ -211,7 +242,6 @@ class Autocomplete extends React.Component {
     return (
       <React.Fragment>
         <input
-          tabIndex="0"
           type="text"
           name={name}
           className="form-control-std autocompleter"

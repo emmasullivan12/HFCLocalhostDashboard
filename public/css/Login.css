@@ -89,7 +89,7 @@ input[type=text]:disabled{
 .form-control-std.error,
 .form-control-dob.error,
 .form-control-pwd.error {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid red!important;
 }
 
 .form-control-std.error:valid {
