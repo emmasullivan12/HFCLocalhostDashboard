@@ -110,6 +110,7 @@ class Autocomplete extends React.Component {
 
     // User pressed the enter key
     if (e.keyCode === 13) {
+      e.preventDefault();
       const isntValueToShow = valueToShow == undefined
       this.setState({
         activeSuggestion: 0,
@@ -158,16 +159,14 @@ class Autocomplete extends React.Component {
   checkExists(inputToCheck) {
     const { suggestions, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option.value : option[valueToShow]) === inputToCheck) != -1) : (required ? false : true);
-    console.log("isValidCHECKINAUTOCOMPLETE: "+isValid);
+    const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option.value : (valueToShow === undefined ? option : option[valueToShow])) === inputToCheck) != -1) : (required ? false : true);
     return isValid;
   }
 
   checkUserInputExists(inputToCheck) {
     const { suggestions, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value ) === inputToCheck) != -1) : (required ? false : true);
-    console.log("isValidUSERINPUTEXISTSCHECKINAUTOCOMPLETE: "+isValid);
+    const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === inputToCheck) != -1) : (required ? false : true);
     return isValid;
   }
 

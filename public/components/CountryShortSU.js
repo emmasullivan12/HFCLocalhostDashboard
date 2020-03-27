@@ -37,12 +37,9 @@ class CountryShortSU extends React.Component {
   }
 
   handleCountryChange(userInput, isValid) {
-    console.log("isValidINHANDLECOUNTRYCHANGE: "+isValid)
     this.setState({
       country: userInput,
       countryIsValid: isValid
-    }, () => {
-     console.log("this.state.countryIsValid: "+this.state.countryIsValid);
     })
   }
 
@@ -53,26 +50,15 @@ class CountryShortSU extends React.Component {
     }, () => {
      console.log("this.state.stateProvIsValid: "+this.state.stateProvIsValid);
     })
-//    document.getElementById("cityTextBox").focus();
   }
 
   handleCityChange(e) {
-    console.log("e.target.value: "+e.target.value);
-  //  console.log("userInput: "+userInput);
     this.setState({ city: e.target.value });
-//    document.getElementById("cityTextBox").focus();
   }
 
   handleTabPress(tabPressed) {
     this.setState({ tabPressed: tabPressed });
   }
-
-/*  handleFocusOnTxtBox(selection) {
-    console.log("selection: "+selection);
-    if (selection != 'GBR' && selection != 'IRL' && selection != 'USA' && selection != 'CAN') {
-      document.getElementById("cityTextBox").focus();
-    }
-  }*/
 
   // Dex to use save this down for individual's profile i.e. user/mentor/mentee.timeZone
   handleSubmit(e) {

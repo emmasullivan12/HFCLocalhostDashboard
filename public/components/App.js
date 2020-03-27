@@ -314,7 +314,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'did1stSU';
+  const step = 'didCountry';
 //    const step = this.props.users.step;
       switch (step) {
         case 'did1stSU':

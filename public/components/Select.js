@@ -26,10 +26,11 @@ class SelectBox extends React.Component {
   }
 
   componentDidMount(){
-    const { focusOnLoad } = this.props
+    const { focusOnLoad, handleTabPress, name } = this.props;
     if (focusOnLoad) {
-      document.getElementById("selectBox").focus();
+      document.getElementById("selectBox-"+name).focus();
     }
+    handleTabPress(false);
   }
 
   onFocus = (e) => {
@@ -39,8 +40,8 @@ class SelectBox extends React.Component {
   }
 
   onBlur = (e) => {
-    const { options, handleBlur, valueToShow, required } = this.props
-    const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
+    const { options, handleBlur, valueToShow, name, required } = this.props
+    const hasMultipleAttributes = this.checkMultipleAttributes();
 
     this.setState(prevState => {
       const { values } = prevState
@@ -52,9 +53,9 @@ class SelectBox extends React.Component {
       }
 
       if(!required || required && value != null) {
-        document.getElementById("selectBox").classList.remove('error');
+        document.getElementById("selectBox-"+name).classList.remove('error');
       } else {
-        document.getElementById("selectBox").classList.add('error');
+        document.getElementById("selectBox-"+name).classList.add('error');
       }
 
       return {
@@ -68,7 +69,6 @@ class SelectBox extends React.Component {
   onClick = (e) => {
     const currentState = this.state.isOpen;
     this.setState({ isOpen: !currentState });
-
   };
 
 /*  onHoverOption = (e) => {
@@ -83,7 +83,7 @@ class SelectBox extends React.Component {
 */
   onClickOption = (e) => {
     const { options, handleChange, valueToShow } = this.props;
-    const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
+    const hasMultipleAttributes = this.checkMultipleAttributes();
     const value = e.currentTarget.dataset.text;
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value);
     this.setState(prevState => {
@@ -93,25 +93,18 @@ class SelectBox extends React.Component {
         isOpen: false
       }
     });
-    handleChange(e.currentTarget.dataset.id);
+    const isValid = this.checkExists(e.currentTarget.dataset.id);
+    handleChange(e.currentTarget.dataset.id, isValid);
   }
 
   onKeyDown = e => {
     const { isOpen } = this.state;
-    const { handleChange, options, valueToShow } = this.props;
-    const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
-  //  case 'Escape':
-    //      case 'Tab':
-  //          if (isOpen) {
-  //            e.preventDefault()
-  //            this.setState({
-  //              isOpen: false
-  //            })
-  //          }
+    const { handleChange, handleTabPress, options, valueToShow } = this.props;
+    const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key
     if (e.keyCode === 13) {
-
+      e.preventDefault();
       this.setState(prevState => {
         let { focusedValue } = prevState
 
@@ -121,8 +114,32 @@ class SelectBox extends React.Component {
           }
         } else {
           const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
-          const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value);
+          const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
+        //  const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
           handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+          return {
+            values: [ value ],
+            focusedValue: index,
+            isOpen: false
+          }
+        }
+      })
+    }
+
+    // User pressed the tab key
+    else if (e.keyCode === 9) {
+      this.setState(prevState => {
+        let { focusedValue } = prevState
+
+        if (!isOpen) {
+          return
+        } else {
+      //    e.preventDefault();
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+          const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
+    //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+          handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+          handleTabPress(true);
           return {
             values: [ value ],
             focusedValue: index,
@@ -190,6 +207,33 @@ class SelectBox extends React.Component {
     e.stopPropagation()
   }
 */
+
+  checkExists(inputToCheck) {
+    const { options, required, valueToShow } = this.props;
+    console.log("inputToCheck: "+inputToCheck);
+    const hasMultipleAttributes = this.checkMultipleAttributes();
+    const isValid = inputToCheck ? (options.findIndex(option => (hasMultipleAttributes ? option.value : (valueToShow === undefined ? option : option[valueToShow])) === inputToCheck) != -1) : (required ? false : true);
+    console.log("isValidCHECKINSELECT: "+isValid);
+    return isValid;
+  }
+
+  checkUserInputExists(inputToCheck) {
+    const { options, required, valueToShow } = this.props;
+    const hasMultipleAttributes = this.checkMultipleAttributes();
+    const isValid = inputToCheck ? (options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === inputToCheck) != -1) : (required ? false : true);
+    console.log("isValidCHECKUSERINPUTINSELECT: "+isValid);
+    return isValid;
+  }
+
+  checkMultipleAttributes() {
+    const { options } = this.props;
+    if (options[0].value != undefined || options[0].value != null) {
+      return true
+    } else {
+      return false
+    }
+  }
+
   renderValues() {
     const { placeholder } = this.props
     const { values } = this.state
@@ -221,7 +265,7 @@ class SelectBox extends React.Component {
     return (
       <div className="options">
         {options.map((option, index) => {
-          const hasMultipleAttributes = (option.value != undefined) || (option.value != null);
+          const hasMultipleAttributes = this.checkMultipleAttributes();
           const value = hasMultipleAttributes === true ? option[valueToShow] : option;
           const selected = values.includes(value)
 
@@ -248,7 +292,7 @@ class SelectBox extends React.Component {
   }
 
   render() {
-    const { handleChange, required } = this.props;
+    const { handleChange, required, name } = this.props;
     const { isOpen, isFocused } = this.state;
 
     return (
@@ -256,7 +300,7 @@ class SelectBox extends React.Component {
         <div
           tabIndex="0"
           className="select form-control-std"
-          id="selectBox"
+          id={"selectBox-"+name}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
           onKeyDown={this.onKeyDown}

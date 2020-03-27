@@ -7,6 +7,7 @@ import "../css/General.css";
 
 import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
+import TextInput from './TextInput.js';
 import {ukUnis} from './UKUnis.js';
 import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
 
@@ -17,19 +18,25 @@ class EduShortSU extends React.Component {
     this.state = {
       eetStatus: '',
       schName: '',
+      schNameIsValid: '',
       uniName: '',
+      uniNameIsValid: '',
       schYrGrp: '',
       uniYrGrp: '',
       courseLength: '',
       schGraduYr: '',
-      uniGraduYr: ''
+      uniGraduYr: '',
+      tabPressed: '',
     }
     this.handleEetStatusChange = this.handleEetStatusChange.bind(this);
     this.handleUKSchChange = this.handleUKSchChange.bind(this);
+    this.handleSchChange = this.handleSchChange.bind(this);
     this.handleSchYrChange = this.handleSchYrChange.bind(this);
     this.handleUKUniChange = this.handleUKUniChange.bind(this);
+    this.handleUniChange = this.handleUniChange.bind(this);
     this.handleUniYrChange = this.handleUniYrChange.bind(this);
     this.handleUniGradYrChange = this.handleUniGradYrChange.bind(this);
+    this.handleTabPress = this.handleTabPress.bind(this);
     this.onBlur = this.onBlur.bind(this);
   }
 
@@ -42,11 +49,53 @@ class EduShortSU extends React.Component {
   }
 
   handleEetStatusChange(userInput) {
-    this.setState({ eetStatus: userInput });
+    this.setState({
+      eetStatus: userInput,
+  //    eetStatusIsValid: isValid,
+      schName: '',
+      schNameIsValid: '',
+      uniName: '',
+      uniNameIsValid: '',
+      schYrGrp: '',
+      uniYrGrp: '',
+      courseLength: '',
+      schGraduYr: '',
+      uniGraduYr: '',
+      currCo: '',
+      currTrainingProvider: '',
+      tabPressed: '',
+    });
   }
 
-  handleUKSchChange(userInput) {
-    this.setState({ schName: userInput });
+  handleUKSchChange(userInput, isValid) {
+    console.log("isValid: "+isValid);
+    if (!isValid) {
+      this.setState({
+        schYrGrp: '',
+        schGraduYr: ''
+      });
+    }
+    this.setState({
+      schName: userInput,
+      schNameIsValid: isValid
+    }, () => {
+     console.log("this.state.schNameIsValid: "+this.state.schNameIsValid);
+    })
+  }
+
+  handleSchChange(e) {
+    const userInput = e.currentTarget.value;
+    const isValid = userInput.length > 3;
+    if (!isValid) {
+      this.setState({
+        schYrGrp: '',
+        schGraduYr: ''
+      });
+    }
+    this.setState({
+      schName: userInput,
+      schNameIsValid: isValid,
+    });
   }
 
   handleSchYrChange(userInput) {
@@ -56,8 +105,34 @@ class EduShortSU extends React.Component {
     });
   }
 
-  handleUKUniChange(userInput) {
-    this.setState({ uniName: userInput });
+  handleUKUniChange(userInput, isValid) {
+    if (!isValid) {
+      this.setState({
+        uniYrGrp: '',
+        uniGraduYr: ''
+      });
+    }
+    this.setState({
+      uniName: userInput,
+      uniNameIsValid: isValid
+    }, () => {
+     console.log("this.state.uniNameIsValid: "+this.state.uniNameIsValid);
+    })
+  }
+
+  handleUniChange(e) {
+    const userInput = e.currentTarget.value;
+    const isValid = userInput.length > 3;
+    if (!isValid) {
+      this.setState({
+        uniYrGrp: '',
+        uniGraduYr: ''
+      });
+    }
+    this.setState({
+      uniName: userInput,
+      uniNameIsValid: isValid
+    });
   }
 
   handleUniYrChange(userInput) {
@@ -76,6 +151,60 @@ class EduShortSU extends React.Component {
     });
   }
 
+  handleJobChange(e) {
+    this.setState({ currCo: e.target.value });
+  }
+
+  handleTrainChange(e) {
+    this.setState({ currTrainingProvider: e.target.value });
+  }
+
+  handleTabPress(tabPressed) {
+    this.setState({ tabPressed: tabPressed });
+  }
+
+  canBeSubmitted() {
+    const {eetStatus, schName, schNameIsValid, uniName, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, currCo, currTrainingProvider } = this.state;
+
+      if (eetStatus != '') {
+
+        if (eetStatus === 'sch') {
+          if (schName != '' && schNameIsValid && schYrGrp != '') {
+            return true;
+          } else {
+            return false;
+          }
+
+        } else if (eetStatus === 'uni') {
+          if (uniName != '' && uniNameIsValid && uniYrGrp != '' && courseLength != '') {
+            return true;
+          } else {
+            return false;
+          }
+
+        } else if (eetStatus === 'job') {
+          if (currCo != '') {
+            return true;
+          } else {
+            return false;
+          }
+
+        } else if (eetStatus === 'train') {
+          if (currTrainingProvider != '') {
+            return true;
+          } else {
+            return false;
+          }
+
+        } else if (eetStatus === 'none') {
+          return true;
+
+
+      } else {
+        return true;
+      }
+    }
+  }
 /*  canBeSubmitted(countries, ukCounties) {
     const {country, stateProv, city} = this.state;
 
@@ -97,7 +226,7 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { eetStatus, schName, uniName, schYrGrp, uniYrGrp, schGraduYr, uniGraduYr} = this.state;
+  const { eetStatus, schName, schNameIsValid, uniName, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr} = this.state;
   const { country, tflink, step } = this.props;
 
   const eetStatusUKOptions = [
@@ -154,7 +283,8 @@ class EduShortSU extends React.Component {
     {value: '8', label: '8 years'},
   ]
 
-//  const isEnabled = this.canBeSubmitted(countries, ukCounties);
+  const isEnabled = this.canBeSubmitted();
+
     return (
       <React.Fragment>
         <div>
@@ -182,6 +312,7 @@ class EduShortSU extends React.Component {
                   name='eetStatus'
                   handleChange={this.handleEetStatusChange}
                   handleBlur={this.onBlur}
+                  handleTabPress={this.handleTabPress}
                   focusOnLoad
                   //tabIndex='0'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -198,7 +329,8 @@ class EduShortSU extends React.Component {
                       placeholder='School or College'
                       handleChange={this.handleUKSchChange}
                       handleBlur={this.onBlur}
-                      focusOnLoad
+                      handleTabPress={this.handleTabPress}
+                      focusOnLoad={tabPressed ? false : true}
                       //tabIndex='1'
                     />
                   </div>
@@ -207,22 +339,20 @@ class EduShortSU extends React.Component {
               {country != 'GBR' && eetStatus === 'sch' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your High School?</label>
-                  <input
-                    //tabIndex='1'
-                    type="text"
+                  <TextInput
                     name="eduName"
-                    onBlur={this.onBlur}
-                    className="form-control-std"
+                    id="cityTextBox"
                     placeholder="High School"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    spellCheck="off"
-                    autoFocus
+                    className="form-control-std"
                     required
+                    handleChange={this.handleSchChange}
+                    handleTabPress={this.handleTabPress}
+                    onBlur={this.onBlur}
+                    focusOnLoad={tabPressed ? false : true}
                   />
                 </div>
               )}
-              {eetStatus === 'sch' && (
+              {eetStatus === 'sch' && schNameIsValid === true && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">And which {country === 'GBR' ? 'year group' : 'grade / year group'} are you in?</label>
                   <SelectBox
@@ -230,7 +360,9 @@ class EduShortSU extends React.Component {
                     placeholder="Select Year Group:"
                     name='schYrGrp'
                     handleChange={this.handleSchYrChange}
+                    handleTabPress={this.handleTabPress}
                     handleBlur={this.onBlur}
+                    focusOnLoad={schNameIsValid === true && !tabPressed && country === 'GBR' ? true : false}
                     //tabIndex='1'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
@@ -247,11 +379,12 @@ class EduShortSU extends React.Component {
                       placeholder='University'
                       handleChange={this.handleUKUniChange}
                       handleBlur={this.onBlur}
+                      handleTabPress={this.handleTabPress}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       showDetail
                       detailToShow='location'
-                      focusOnLoad
+                      focusOnLoad={tabPressed ? false : true}
                       //tabIndex='1'
                       required
                     />
@@ -261,21 +394,20 @@ class EduShortSU extends React.Component {
               {country != 'GBR' && eetStatus === 'uni' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your University?</label>
-                  <input
-                    type="text"
+                  <TextInput
                     name="uniName"
-                    onBlur={this.onBlur}
-                    className="form-control-std"
+                    id="cityTextBox"
                     placeholder="University"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    spellCheck="off"
-                    //tabIndex='1'
+                    className="form-control-std"
                     required
+                    handleChange={this.handleUniChange}
+                    handleTabPress={this.handleTabPress}
+                    onBlur={this.onBlur}
+                    focusOnLoad={tabPressed ? false : true}
                   />
                 </div>
               )}
-              {eetStatus === 'uni' && (
+              {eetStatus === 'uni' && uniNameIsValid === true && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft">And which year group are you in?</label>
@@ -284,12 +416,18 @@ class EduShortSU extends React.Component {
                       name='uniYrGrp'
                       placeholder='Select Year Group:'
                       handleChange={this.handleUniYrChange}
+                      handleTabPress={this.handleTabPress}
                       handleBlur={this.onBlur}
+                      focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed && country === 'GBR' ? true : false}
                       //tabIndex='2'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
                   </div>
+                </React.Fragment>
+              )}
+              {eetStatus === 'uni' && uniNameIsValid === true && uniYrGrp != '' && (
+                <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft">And how long is your course?</label>
                     <SelectBox
@@ -297,7 +435,9 @@ class EduShortSU extends React.Component {
                       name='uniLength'
                       placeholder='Select Course Length:'
                       handleChange={this.handleUniGradYrChange}
+                      handleTabPress={this.handleTabPress}
                       handleBlur={this.onBlur}
+                      focusOnLoad={uniNameIsValid === true && uniYrGrp != '' && !tabPressed ? true : false}
                       //tabIndex='3'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
@@ -313,6 +453,7 @@ class EduShortSU extends React.Component {
                     type="text"
                     name="currCo"
                     onBlur={this.onBlur}
+                    onChange={this.handleJobChange}
                     className="form-control-std"
                     placeholder="Company"
                     autoComplete="off"
@@ -331,6 +472,7 @@ class EduShortSU extends React.Component {
                     type="text"
                     name="currTrainingProvider"
                     onBlur={this.onBlur}
+                    onChange={this.handleTrainChange}
                     className="form-control-std"
                     placeholder="Training Provider"
                     autoComplete="off"
@@ -343,7 +485,7 @@ class EduShortSU extends React.Component {
               )}
 
     {/*          <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth"> */}
-              <button type="submit" className="Submit-btn fullWidth">
+              <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth">
                 Next
               </button>
             </form>

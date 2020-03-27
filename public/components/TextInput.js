@@ -13,13 +13,9 @@ class TextInput extends React.Component {
 
   componentDidMount(){
     const { focusOnLoad, id } = this.props
-    console.log("elementId: "+id);
-    console.log("focusOnLoad: "+focusOnLoad);
-  //  console.log("handleTabPress: "+handleTabPress);
     if (focusOnLoad) {
       document.getElementById(id).focus();
     }
-  //  handleTabPress(false);
   }
 
   render() {

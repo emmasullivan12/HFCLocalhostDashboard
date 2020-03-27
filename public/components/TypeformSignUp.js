@@ -102,10 +102,10 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 class TypeformSignUp extends Component {
   render() {
     const userRole = 'mentee';
-    const step = 'did1stSU';
+    const step = 'didCountry';
     const fname = 'Emma';
     const id = '12345';
-    const country = 'GBR';
+    const country = 'CAN';
     const eetStatus = 'uni';
     const schName = '';
     const uniName = 'Bath University'; // shall we save down uni name or the number?
