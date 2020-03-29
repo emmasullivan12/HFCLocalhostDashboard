@@ -22,6 +22,7 @@ class SelectBox extends React.Component {
       focusedValue: -1,
       isFocused: false,
       isOpen: false,
+  //    elementIdFocused: ''
     };
   }
 
@@ -34,13 +35,21 @@ class SelectBox extends React.Component {
   }
 
   onFocus = (e) => {
+  //  console.log("document.activeElement.idONFOCUS: "+document.activeElement.id);
+    const { handleFocus } = this.props;
+    console.log("document.activeElement.idONFOCUS: "+document.activeElement.id);
+    if (handleFocus) {
+      handleFocus(document.activeElement.id)
+    }
     this.setState({
-      isFocused: true
+      isFocused: true,
+//      elementIdFocused: document.activeElement.id
     })
   }
 
   onBlur = (e) => {
-    const { options, handleBlur, valueToShow, name, required } = this.props
+    const { options, valueToShow, name, required, otherValidityChecks } = this.props
+  //  const { elementIdFocused } = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     this.setState(prevState => {
@@ -50,6 +59,11 @@ class SelectBox extends React.Component {
 
       if (value) {
         focusedValue = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
+      }
+
+      if (otherValidityChecks) {
+        console.log("otherValidiyChecks triggered onBlur");
+        otherValidityChecks();
       }
 
       if(!required || required && value != null) {
@@ -67,8 +81,17 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
+    const { handleFocus } = this.props;
     const currentState = this.state.isOpen;
-    this.setState({ isOpen: !currentState });
+
+    this.setState({
+      isOpen: !currentState,
+//      elementIdFocused: document.activeElement.id
+    })
+    console.log("document.activeElement.idONCLICK: "+document.activeElement.id);
+    if (handleFocus) {
+      handleFocus(document.activeElement.id)
+    }
   };
 
 /*  onHoverOption = (e) => {
@@ -82,10 +105,15 @@ class SelectBox extends React.Component {
   }
 */
   onClickOption = (e) => {
-    const { options, handleChange, valueToShow } = this.props;
+    const { options, handleChange, valueToShow, otherValidityChecks } = this.props;
+  //  const {elementIdFocused} = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const value = e.currentTarget.dataset.text;
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value);
+    if (otherValidityChecks) {
+      console.log("otherValidiyChecks triggered onClickOption");
+      otherValidityChecks();
+    }
     this.setState(prevState => {
       return {
         values: [ value ],
@@ -93,6 +121,7 @@ class SelectBox extends React.Component {
         isOpen: false
       }
     });
+
     const isValid = this.checkExists(e.currentTarget.dataset.id);
     handleChange(e.currentTarget.dataset.id, isValid);
   }
@@ -162,43 +191,51 @@ class SelectBox extends React.Component {
 
     // User pressed the up arrow
     else if (e.keyCode === 38) {
-      e.preventDefault();
-      this.setState(prevState => {
-        let { focusedValue } = prevState
+      if (isOpen) {
+        e.preventDefault();
+        this.setState(prevState => {
+          let { focusedValue } = prevState
 
-        if (focusedValue > 0) {
-          focusedValue--
+          if (focusedValue > 0) {
+            focusedValue--
 
-          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+            const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
-          return {
-            values: [ value ],
-            focusedValue
+            return {
+              values: [ value ],
+              focusedValue
+            }
           }
-        }
-      })
+        })
+      } else {
+        e.preventDefault();
+      }
     }
 
     // User pressed the down arrow
     else if (e.keyCode === 40) {
-      e.preventDefault()
-      this.setState(prevState => {
-        let { focusedValue } = prevState
+      if (isOpen) {
+        e.preventDefault()
+        this.setState(prevState => {
+          let { focusedValue } = prevState
 
 
-        if (focusedValue === options.length -1) {
-          return;
-        } else {
-          focusedValue++
+          if (focusedValue === options.length -1) {
+            return;
+          } else {
+            focusedValue++
 
-          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+            const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
-          return {
-            values: [ value ],
-            focusedValue
+            return {
+              values: [ value ],
+              focusedValue
+            }
           }
-        }
-      })
+        })
+      } else {
+        e.preventDefault();
+      }
     }
 
   };
@@ -210,10 +247,8 @@ class SelectBox extends React.Component {
 
   checkExists(inputToCheck) {
     const { options, required, valueToShow } = this.props;
-    console.log("inputToCheck: "+inputToCheck);
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const isValid = inputToCheck ? (options.findIndex(option => (hasMultipleAttributes ? option.value : (valueToShow === undefined ? option : option[valueToShow])) === inputToCheck) != -1) : (required ? false : true);
-    console.log("isValidCHECKINSELECT: "+isValid);
     return isValid;
   }
 
@@ -221,7 +256,6 @@ class SelectBox extends React.Component {
     const { options, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const isValid = inputToCheck ? (options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === inputToCheck) != -1) : (required ? false : true);
-    console.log("isValidCHECKUSERINPUTINSELECT: "+isValid);
     return isValid;
   }
 

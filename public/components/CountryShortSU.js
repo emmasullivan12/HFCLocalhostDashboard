@@ -37,6 +37,13 @@ class CountryShortSU extends React.Component {
   }
 
   handleCountryChange(userInput, isValid) {
+    if (!isValid) {
+      this.setState({
+        stateProv: '',
+        stateProvIsValid: '',
+        city: '',
+      });
+    }
     this.setState({
       country: userInput,
       countryIsValid: isValid
@@ -44,6 +51,11 @@ class CountryShortSU extends React.Component {
   }
 
   handleStateChange(userInput, isValid) {
+    if (!isValid) {
+      this.setState({
+        city: '',
+      });
+    }
     this.setState({
       stateProv: userInput,
       stateProvIsValid: isValid

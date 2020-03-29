@@ -277,6 +277,9 @@ input[type=text]:disabled{
 .descriptor.prompt.error{
   color: red;
 }
+.descriptor.prompt.error.signUpForm{
+  margin-top: -1.5rem;
+}
 
 .descriptor.no-href:hover,
 .descriptor.no-href:focus{
