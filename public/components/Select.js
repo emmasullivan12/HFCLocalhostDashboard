@@ -38,7 +38,9 @@ class SelectBox extends React.Component {
   //  console.log("document.activeElement.idONFOCUS: "+document.activeElement.id);
     const { handleFocus } = this.props;
     console.log("document.activeElement.idONFOCUS: "+document.activeElement.id);
+    console.log("handleFocus: "+handleFocus);
     if (handleFocus) {
+      console.log("handleFocus triggered");
       handleFocus(document.activeElement.id)
     }
     this.setState({
@@ -84,14 +86,17 @@ class SelectBox extends React.Component {
     const { handleFocus } = this.props;
     const currentState = this.state.isOpen;
 
+    if (currentState === false) {
+      if (handleFocus) {
+        console.log("document.activeElement.idONCLICK: "+document.activeElement.id);
+        handleFocus(document.activeElement.id);
+      }
+    }
+
     this.setState({
       isOpen: !currentState,
 //      elementIdFocused: document.activeElement.id
     })
-    console.log("document.activeElement.idONCLICK: "+document.activeElement.id);
-    if (handleFocus) {
-      handleFocus(document.activeElement.id)
-    }
   };
 
 /*  onHoverOption = (e) => {

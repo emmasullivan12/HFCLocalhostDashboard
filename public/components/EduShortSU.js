@@ -171,13 +171,12 @@ class EduShortSU extends React.Component {
   }
 
   handleFocus(selectBoxFocused) {
-    console.log("handleFocus function triggered");
-    console.log("selectBoxFocused: "+selectBoxFocused);
+    console.log("selectBoxFocused in handleFocus function: "+selectBoxFocused);
     this.setState({ selectBoxFocused: selectBoxFocused });
   }
 
   // Passed on to be used within Select.js onBlur event
-  otherValidityChecks(elementIdLoaded) {
+  otherValidityChecks() {
     const { selectBoxFocused } = this.state;
     console.log("selectBoxFocused: "+selectBoxFocused);
   //  console.log("elementIdLoadedINEDUSHORTSU: "+elementIdLoaded);
@@ -448,6 +447,7 @@ class EduShortSU extends React.Component {
                       placeholder='Select Year Group:'
                       handleChange={this.handleUniYrChange}
                       handleTabPress={this.handleTabPress}
+                      handleFocus={this.handleFocus}
                     //  handleBlur={this.onBlur}
                       otherValidityChecks={this.otherValidityChecks}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed && country === 'GBR' ? true : false}
@@ -471,6 +471,7 @@ class EduShortSU extends React.Component {
                       placeholder='Select Course Length:'
                       handleChange={this.handleUniGradYrChange}
                       handleTabPress={this.handleTabPress}
+                      handleFocus={this.handleFocus}
                   //    handleBlur={this.onBlur}
                       otherValidityChecks={this.otherValidityChecks}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp != '' && !tabPressed ? true : false}
