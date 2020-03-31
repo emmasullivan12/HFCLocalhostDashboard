@@ -105,7 +105,7 @@ class TypeformSignUp extends Component {
     const step = 'didCountry';
     const fname = 'Emma';
     const id = '12345';
-    const country = 'USA';
+    const country = 'GBR';
     const eetStatus = 'uni';
     const schName = '';
     const uniName = 'Bath University'; // shall we save down uni name or the number?

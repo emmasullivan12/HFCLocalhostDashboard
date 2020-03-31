@@ -47,7 +47,6 @@ class EduShortSU extends React.Component {
   }
 
   onBlur(e) {
-    console.log("onblur in edushortSU triggered");
     if(e.target.checkValidity()) {
       e.target.classList.remove('error');
     } else {
@@ -140,7 +139,7 @@ class EduShortSU extends React.Component {
 
   handleUniYrChange(userInput) {
     const courseLength = this.state.courseLength;
-    const isValid = courseLength >= userInput ? true : false;
+    const isValid = (userInput === 'pg' || courseLength >= userInput) ? true : false;
     this.setState({
       uniYrGrp: userInput,
       uniGraduYr: setUniGraduYr(userInput, courseLength),
@@ -150,7 +149,7 @@ class EduShortSU extends React.Component {
 
   handleUniGradYrChange(userInput) {
     const uniYrGrp = this.state.uniYrGrp;
-    const isValid = userInput >= uniYrGrp ? true : false;
+    const isValid = (uniYrGrp === 'pg' || userInput >= uniYrGrp) ? true : false;
     this.setState({
       courseLength: userInput,
       uniGraduYr: setUniGraduYr(uniYrGrp, userInput),
@@ -171,22 +170,21 @@ class EduShortSU extends React.Component {
   }
 
   handleFocus(selectBoxFocused) {
-    console.log("selectBoxFocused in handleFocus function: "+selectBoxFocused);
     this.setState({ selectBoxFocused: selectBoxFocused });
   }
 
-  // Passed on to be used within Select.js onBlur event
+  // Passed on to be used within Select.js onBlur & onClickOption events
   otherValidityChecks() {
-    const { selectBoxFocused } = this.state;
-    console.log("selectBoxFocused: "+selectBoxFocused);
-  //  console.log("elementIdLoadedINEDUSHORTSU: "+elementIdLoaded);
+    const { selectBoxFocused, courseLength } = this.state;
     if (selectBoxFocused === "selectBox-uniYrGrp" || selectBoxFocused === "selectBox-uniLength") {
-      console.log("this.state.uniGraduYrIsValid: "+this.state.uniGraduYrIsValid);
-      if (this.state.uniGraduYrIsValid === true) {
+      if (courseLength === '') {
         document.getElementById("selectBox-uniYrGrp").classList.remove('error');
       } else {
-        console.log("error added to class");
-        document.getElementById("selectBox-uniYrGrp").classList.add('error');
+        if (this.state.uniGraduYrIsValid === true) {
+          document.getElementById("selectBox-uniYrGrp").classList.remove('error');
+        } else {
+          document.getElementById("selectBox-uniYrGrp").classList.add('error');
+        }
       }
     } else {
       return;
@@ -235,24 +233,6 @@ class EduShortSU extends React.Component {
       }
     }
   }
-/*  canBeSubmitted(countries, ukCounties) {
-    const {country, stateProv, city} = this.state;
-
-    CHECK IS NOT "SELECT" OPTION
-
-    if (country != '' && countries.indexOf(country) != -1 && city != '') {
-      if (country === 'United States of America' || country === 'Canada') {
-        if (stateProv != '' && ukCounties.indexOf(stateProv) != -1 ) {
-          return true;
-        } else {
-          return false;
-        }
-      } else {
-        return true;
-      }
-    }
-  }
-*/
 
   render() {
 
@@ -341,10 +321,8 @@ class EduShortSU extends React.Component {
                   placeholder="Select one:"
                   name='eetStatus'
                   handleChange={this.handleEetStatusChange}
-                //  handleBlur={this.onBlur}
                   handleTabPress={this.handleTabPress}
                   focusOnLoad
-                  //tabIndex='0'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   required
                 />
@@ -358,10 +336,8 @@ class EduShortSU extends React.Component {
                       name='eduName'
                       placeholder='School or College'
                       handleChange={this.handleUKSchChange}
-                    //  handleBlur={this.onBlur}
                       handleTabPress={this.handleTabPress}
                       focusOnLoad={tabPressed ? false : true}
-                      //tabIndex='1'
                     />
                   </div>
                 </div>
@@ -391,9 +367,7 @@ class EduShortSU extends React.Component {
                     name='schYrGrp'
                     handleChange={this.handleSchYrChange}
                     handleTabPress={this.handleTabPress}
-                  //  handleBlur={this.onBlur}
                     focusOnLoad={schNameIsValid === true && !tabPressed && country === 'GBR' ? true : false}
-                    //tabIndex='1'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
                   />
@@ -408,7 +382,6 @@ class EduShortSU extends React.Component {
                       name='uniName'
                       placeholder='University'
                       handleChange={this.handleUKUniChange}
-                  //    handleBlur={this.onBlur}
                       handleTabPress={this.handleTabPress}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -448,10 +421,8 @@ class EduShortSU extends React.Component {
                       handleChange={this.handleUniYrChange}
                       handleTabPress={this.handleTabPress}
                       handleFocus={this.handleFocus}
-                    //  handleBlur={this.onBlur}
                       otherValidityChecks={this.otherValidityChecks}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed && country === 'GBR' ? true : false}
-                      //tabIndex='2'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
@@ -472,10 +443,8 @@ class EduShortSU extends React.Component {
                       handleChange={this.handleUniGradYrChange}
                       handleTabPress={this.handleTabPress}
                       handleFocus={this.handleFocus}
-                  //    handleBlur={this.onBlur}
                       otherValidityChecks={this.otherValidityChecks}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp != '' && !tabPressed ? true : false}
-                      //tabIndex='3'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
