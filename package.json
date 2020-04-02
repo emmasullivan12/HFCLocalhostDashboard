@@ -12,10 +12,11 @@
   "author": "Prospela Group Ltd",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
-    "@babel/node": "^7.0.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
@@ -26,7 +27,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
-    "webpack": "^4.26.1",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {

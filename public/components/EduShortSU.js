@@ -9,6 +9,7 @@ import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import TextInput from './TextInput.js';
 import {ukUnis} from './UKUnis.js';
+import {ukSchs} from './UKSchs.js';
 import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
 
 
@@ -18,6 +19,7 @@ class EduShortSU extends React.Component {
     this.state = {
       eetStatus: '',
       schName: '',
+  //    ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
       uniNameIsValid: '',
@@ -59,6 +61,7 @@ class EduShortSU extends React.Component {
       eetStatus: userInput,
   //    eetStatusIsValid: isValid,
       schName: '',
+    //  ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
       uniNameIsValid: '',
@@ -253,10 +256,10 @@ class EduShortSU extends React.Component {
     {value: 'train', label: 'I\'m in Training'},
     {value: 'none', label: 'None'}
   ];
-  const ukSchs = ['Thamesmead School','Sunbury Manor','Thameswood College'
+/*  const ukSchs = ['Thamesmead School','Sunbury Manor','Thameswood College'
 //    {value: 'Thamesmead School', location: 'Shepperton, Surrey'},
 //    {value: 'Sunbury Manor', location: 'Sunbury, Middx'},
-  ];
+];*/
   const ukSchYrs = [
     {value: 'yr8', label: 'Year 8'},
     {value: 'yr9', label: 'Year 9'},
@@ -328,19 +331,31 @@ class EduShortSU extends React.Component {
                 />
               </div>
               {country === 'GBR' && eetStatus === 'sch' && (
-                <div className="form-group">
-                  <label className="descriptor alignLeft">What&#39;s the name of your School / College?</label>
-                  <div className="autocompleter">
-                    <Autocomplete
-                      suggestions={ukSchs}
-                      name='eduName'
-                      placeholder='School or College'
-                      handleChange={this.handleUKSchChange}
-                      handleTabPress={this.handleTabPress}
-                      focusOnLoad={tabPressed ? false : true}
-                    />
-                  </div>
-                </div>
+    /*            import('./UKSchs.js')
+                  .then(ukSchs => {
+                    this.state({
+                      ukSchsList: ukSchs.ukSchs
+                    })
+                  */
+                    <div className="form-group">
+                      <label className="descriptor alignLeft">What&#39;s the name of your School / College?</label>
+                      <div className="autocompleter">
+                        <Autocomplete
+                          suggestions={ukSchs}
+                          name='eduName'
+                          placeholder='School or College'
+                          handleChange={this.handleUKSchChange}
+                          handleTabPress={this.handleTabPress}
+                          focusOnLoad={tabPressed ? false : true}
+                          idValue='value'
+                          valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                          showDetail
+                          detailToShow='location'
+                          required
+                        />
+                      </div>
+                    </div>
+                  //})
               )}
               {country != 'GBR' && eetStatus === 'sch' && (
                 <div className="form-group">

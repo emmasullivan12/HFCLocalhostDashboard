@@ -16,7 +16,7 @@ class Autocomplete extends React.Component {
     this.state = {
       activeSuggestion: 0,
       filteredSuggestions: [],
-      showSuggestions: false,
+      showSuggestions: true,
       userInput: ''
     };
   }
@@ -195,9 +195,9 @@ class Autocomplete extends React.Component {
 
               // Flag the active suggestion with a class
               if (index === activeSuggestion) {
-                className = "autocompleter-active" + (showDetail===true ? ' showDetail' : ' noDetail');
+                className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
               } else {
-                className="autocompleter-item" + (showDetail===true ? ' showDetail' : ' noDetail');
+                className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
               }
               const content = valueToShow == undefined ? suggestion : suggestion[valueToShow];
               const key = valueToShow == undefined ? suggestion : suggestion[idValue];
