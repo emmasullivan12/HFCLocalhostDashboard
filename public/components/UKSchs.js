@@ -6394,4 +6394,4 @@ const ukSchs = [
   {value: '144369', label: 'Huntercombe Hospital School Watcombe', location: 'Torquay, Devon, UK'},
 ]
 
-export {ukSchs};
+export default ukSchs;

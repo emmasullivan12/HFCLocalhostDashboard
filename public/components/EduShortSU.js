@@ -8,7 +8,7 @@ import "../css/General.css";
 import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import TextInput from './TextInput.js';
-import {ukUnis} from './UKUnis.js';
+//import {ukUnis} from './UKUnis.js';
 //import {ukSchs} from './UKSchs.js';
 import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
 
@@ -22,6 +22,7 @@ class EduShortSU extends React.Component {
       ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
+      ukUnisList: [],
       uniNameIsValid: '',
       schYrGrp: '',
       uniYrGrp: '',
@@ -65,6 +66,7 @@ class EduShortSU extends React.Component {
       ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
+      ukUnisList: [],
       uniNameIsValid: '',
       schYrGrp: '',
       uniYrGrp: '',
@@ -237,32 +239,28 @@ class EduShortSU extends React.Component {
       }
     }
   }
-/*
-  renderComponents(fileToRender, componentToRender, componentUpdatesState) {
-    console.log("renderComponents function triggered");
-    console.log("fileToRender: "+fileToRender);
-    const filePath = "'./"+fileToRender+".js'";
-    console.log("filePath: "+filePath);
-    import(filePath).then(component => {
-      console.log("component.componentToRender: "+component.componentToRender);
-      console.log(component.componentToRender);
+
+  renderComponents(fileToRender, componentUpdatesState) {
+    import(`./${fileToRender}.js`).then(component => {
       this.setState({
-        [componentUpdatesState]: component.componentToRender
+        [componentUpdatesState]: component.default
       })
     })
   }
-*/
-  renderComponents() {
+
+//[object Module].ukSchs
+/*  renderComponents() {
     import('./UKSchs.js').then(UKSchs => {
+      console.log("UKSchs.ukSchs: "+UKSchs.ukSchs);
       this.setState({
         ukSchsList: UKSchs.ukSchs
       })
     })
   }
-
+*/
   render() {
 
-  const { eetStatus, schName, ukSchsList, schNameIsValid, uniName, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
+  const { eetStatus, schName, ukSchsList, schNameIsValid, uniName, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
   const { country, tflink, step } = this.props;
 
   const eetStatusUKOptions = [
@@ -364,9 +362,8 @@ class EduShortSU extends React.Component {
                       handleChange={this.handleUKSchChange}
                       handleTabPress={this.handleTabPress}
                       renderComponents={this.renderComponents}
-                    //  fileToRender="UKSchs"
-                    //  componentToRender="ukSchs"
-                    //  componentUpdatesState="ukSchsList"
+                      fileToRender="UKSchs"
+                      componentUpdatesState="ukSchsList"
                       focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -413,11 +410,14 @@ class EduShortSU extends React.Component {
                   <label className="descriptor alignLeft">What&#39;s the name of your University?</label>
                   <div className="autocompleter">
                     <Autocomplete
-                      suggestions={ukUnis}
+                      suggestions={ukUnisList ? ukUnisList : undefined}
                       name='uniName'
                       placeholder='University'
                       handleChange={this.handleUKUniChange}
                       handleTabPress={this.handleTabPress}
+                      renderComponents={this.renderComponents}
+                      fileToRender="UKUnis"
+                      componentUpdatesState="ukUnisList"
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       showDetail
