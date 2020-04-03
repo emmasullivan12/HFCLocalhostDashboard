@@ -22,9 +22,16 @@ class Autocomplete extends React.Component {
   }
 
   componentDidMount(){
-    const { focusOnLoad, handleTabPress, name } = this.props
+    const { focusOnLoad, handleTabPress, renderComponents, fileToRender, componentToRender, componentUpdatesState, name } = this.props
+
     if (focusOnLoad) {
       document.getElementById("autocompleteBox-"+name).focus();
+    }
+    console.log("about to renderComponants function");
+    console.log("renderComponents"+renderComponents);
+    console.log(renderComponents);
+    if (renderComponents) {
+      renderComponents(fileToRender, componentToRender, componentUpdatesState)
     }
     handleTabPress(false);
   }
@@ -172,10 +179,16 @@ class Autocomplete extends React.Component {
 
   checkMultipleAttributes() {
     const { suggestions } = this.props;
-    if (suggestions[0].value != undefined || suggestions[0].value != null) {
-      return true
-    } else {
+    console.log("suggestionsPRE DYNAMIC IMPORT: "+suggestions);
+    console.log("suggestions[0]PRE DYNAMIC IMPORT: "+suggestions[0]);
+    if (suggestions[0] === undefined) {
       return false
+    } else {
+      if (suggestions[0].value != undefined || suggestions[0].value != null) {
+        return true
+      } else {
+        return false
+      }
     }
   }
 

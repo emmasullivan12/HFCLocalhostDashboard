@@ -9,7 +9,7 @@ import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import TextInput from './TextInput.js';
 import {ukUnis} from './UKUnis.js';
-import {ukSchs} from './UKSchs.js';
+//import {ukSchs} from './UKSchs.js';
 import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
 
 
@@ -19,7 +19,7 @@ class EduShortSU extends React.Component {
     this.state = {
       eetStatus: '',
       schName: '',
-  //    ukSchsList: [],
+      ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
       uniNameIsValid: '',
@@ -45,6 +45,7 @@ class EduShortSU extends React.Component {
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
     this.otherValidityChecks = this.otherValidityChecks.bind(this);
+    this.renderComponents = this.renderComponents.bind(this);
     this.onBlur = this.onBlur.bind(this);
   }
 
@@ -61,7 +62,7 @@ class EduShortSU extends React.Component {
       eetStatus: userInput,
   //    eetStatusIsValid: isValid,
       schName: '',
-    //  ukSchsList: [],
+      ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
       uniNameIsValid: '',
@@ -236,10 +237,32 @@ class EduShortSU extends React.Component {
       }
     }
   }
+/*
+  renderComponents(fileToRender, componentToRender, componentUpdatesState) {
+    console.log("renderComponents function triggered");
+    console.log("fileToRender: "+fileToRender);
+    const filePath = "'./"+fileToRender+".js'";
+    console.log("filePath: "+filePath);
+    import(filePath).then(component => {
+      console.log("component.componentToRender: "+component.componentToRender);
+      console.log(component.componentToRender);
+      this.setState({
+        [componentUpdatesState]: component.componentToRender
+      })
+    })
+  }
+*/
+  renderComponents() {
+    import('./UKSchs.js').then(UKSchs => {
+      this.setState({
+        ukSchsList: UKSchs.ukSchs
+      })
+    })
+  }
 
   render() {
 
-  const { eetStatus, schName, schNameIsValid, uniName, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
+  const { eetStatus, schName, ukSchsList, schNameIsValid, uniName, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
   const { country, tflink, step } = this.props;
 
   const eetStatusUKOptions = [
@@ -331,31 +354,28 @@ class EduShortSU extends React.Component {
                 />
               </div>
               {country === 'GBR' && eetStatus === 'sch' && (
-    /*            import('./UKSchs.js')
-                  .then(ukSchs => {
-                    this.state({
-                      ukSchsList: ukSchs.ukSchs
-                    })
-                  */
-                    <div className="form-group">
-                      <label className="descriptor alignLeft">What&#39;s the name of your School / College?</label>
-                      <div className="autocompleter">
-                        <Autocomplete
-                          suggestions={ukSchs}
-                          name='eduName'
-                          placeholder='School or College'
-                          handleChange={this.handleUKSchChange}
-                          handleTabPress={this.handleTabPress}
-                          focusOnLoad={tabPressed ? false : true}
-                          idValue='value'
-                          valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                          showDetail
-                          detailToShow='location'
-                          required
-                        />
-                      </div>
-                    </div>
-                  //})
+                <div className="form-group">
+                  <label className="descriptor alignLeft">What&#39;s the name of your School / College?</label>
+                  <div className="autocompleter">
+                    <Autocomplete
+                      suggestions={ukSchsList ? ukSchsList : undefined}
+                      name='eduName'
+                      placeholder='School or College'
+                      handleChange={this.handleUKSchChange}
+                      handleTabPress={this.handleTabPress}
+                      renderComponents={this.renderComponents}
+                    //  fileToRender="UKSchs"
+                    //  componentToRender="ukSchs"
+                    //  componentUpdatesState="ukSchsList"
+                      focusOnLoad={tabPressed ? false : true}
+                      idValue='value'
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      showDetail
+                      detailToShow='location'
+                      required
+                    />
+                  </div>
+                </div>
               )}
               {country != 'GBR' && eetStatus === 'sch' && (
                 <div className="form-group">
