@@ -8,14 +8,13 @@
 .autocompleter-items{
   position: absolute;
   border: 1px solid #d4d4d4;
-  border-bottom: none;
   border-top: none;
   z-index: 99;
   top: 100%;
   left: 0;
   right: 0;
   max-height: 250px;
-  overflow: overlay;
+  overflow: auto;
 }
 .autocompleter-items::-webkit-scrollbar-track {
   background-color: #fff!important;
@@ -28,6 +27,11 @@
   background-color: #fff;
   border-bottom: 1px solid #d4d4d4;
 }
+
+.autocompleter-item.lastItem {
+  border-bottom: none;
+}
+
 .autocompleter-item.showDetail,
 .autocompleter-active.showDetail {
   height: 50px;

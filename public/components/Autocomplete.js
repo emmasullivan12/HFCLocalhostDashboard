@@ -144,21 +144,45 @@ class Autocomplete extends React.Component {
 
     // User pressed the up arrow
     else if (e.keyCode === 38) {
+      e.preventDefault();
       if (activeSuggestion === 0) {
         return;
+      } else {
+        this.handleMoveUp();
       }
-
       this.setState({ activeSuggestion: activeSuggestion - 1 });
     }
     // User pressed the down arrow
     else if (e.keyCode === 40) {
+
+      var container = document.getElementById("autocompleter-items-container");
+
       if (activeSuggestion + 1 === filteredSuggestions.length) {
         return;
+      } else {
+        this.handleMoveDown();
       }
-
       this.setState({ activeSuggestion: activeSuggestion + 1 });
     }
   };
+
+  handleMoveUp = () => {
+    const { activeSuggestion, filteredSuggestions } = this.state;
+    const parent = document.getElementById("autocompleter-items");
+    if (activeSuggestion < (filteredSuggestions.length - 4)) {
+      parent.scrollTop -= 50
+    }
+  }
+
+  handleMoveDown = () => {
+    const { activeSuggestion } = this.state;
+    const parent = document.getElementById("autocompleter-items");
+
+    // i.e. 4 = 5th box ... also 50 = 50px
+    if (activeSuggestion >= 4) {
+      parent.scrollTop += 50
+    }
+  }
 
   checkExists(inputToCheck) {
     const { suggestions, required, valueToShow } = this.props;
@@ -176,7 +200,6 @@ class Autocomplete extends React.Component {
 
   checkMultipleAttributes() {
     const { suggestions } = this.props;
-    console.log("suggestionsPRE DYNAMIC IMPORT: "+suggestions);
     if (suggestions[0] === undefined) {
       return false
     } else {
@@ -198,26 +221,23 @@ class Autocomplete extends React.Component {
     if (showSuggestions && userInput) {
       if (filteredSuggestions.length) {
         suggestionsListComponent = (
-          <div className="autocompleter-items">
-            {filteredSuggestions.map((suggestion, index) => {
-              let className;
+          <div className="autocompleter-items" id="autocompleter-items">
+              {filteredSuggestions.map((suggestion, index) => {
+                let className;
+                let dataTarget;
 
-              // Flag the active suggestion with a class
-              if (index === activeSuggestion) {
-                className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
-              } else {
-                className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
-              }
-              const content = valueToShow == undefined ? suggestion : suggestion[valueToShow];
-              const key = valueToShow == undefined ? suggestion : suggestion[idValue];
-              const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
-              return (
-    //            {hasMultipleAttributes === true && (
-    //              <div className={className} key={suggestion.value} onClick={onClick}>
-    //                {suggestion.value}
-  //                </div>
-  //              ) : (
-        //          <div className={className} key={hasMultipleAttributes === true ? suggestion.value : suggestion} onClick={onClick}>
+                // Flag the active suggestion with a class
+                if (index === activeSuggestion) {
+                  className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+                  dataTarget = "autoCompleteItem";
+                } else {
+                  className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
+                  dataTarget = "autoCompleteItem";
+                }
+                const content = valueToShow == undefined ? suggestion : suggestion[valueToShow];
+                const key = valueToShow == undefined ? suggestion : suggestion[idValue];
+                const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
+                return (
                   <div
                     className={className}
                     key={key}
@@ -225,6 +245,7 @@ class Autocomplete extends React.Component {
                     onMouseDown={onMouseDown}
                     data-id={key}
                     data-text={content}
+                    data-target={dataTarget}
                   >
                     {content}
                     {showDetail===true && (
@@ -233,9 +254,8 @@ class Autocomplete extends React.Component {
                       </div>
                     )}
                   </div>
-    //            )}
-              );
-            })}
+                );
+              })}
           </div>
         );
       } else {
