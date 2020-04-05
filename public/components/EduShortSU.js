@@ -7,6 +7,7 @@ import "../css/General.css";
 
 import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
+import ProgressCircles from './ProgressCircles.js';
 import TextInput from './TextInput.js';
 //import {ukUnis} from './UKUnis.js';
 //import {ukSchs} from './UKSchs.js';
@@ -261,7 +262,7 @@ class EduShortSU extends React.Component {
   render() {
 
   const { eetStatus, schName, ukSchsList, schNameIsValid, uniName, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
-  const { country, tflink, step } = this.props;
+  const { country, tflink, step, currentStep, totalMenteeSteps } = this.props;
 
   const eetStatusUKOptions = [
     {value: 'sch', label: 'I\'m at School / Sixth Form / College'},
@@ -322,20 +323,10 @@ class EduShortSU extends React.Component {
     return (
       <React.Fragment>
         <div>
-          <div className='progress-circles-container'>
-            <div className={(step==1) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle" />
-            </div>
-            <div className={(step==2) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle"  />
-            </div>
-            <div className={(step==3) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle"  />
-            </div>
-            <div className={(step==4) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle"  />
-            </div>
-          </div>
+          <ProgressCircles
+            totalSteps={totalMenteeSteps}
+            currentStep={currentStep}
+          />
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group">

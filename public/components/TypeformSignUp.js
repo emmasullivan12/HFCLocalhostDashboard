@@ -9,6 +9,7 @@ import "../css/TypeformSignUp.css";
 import ConfirmStudent from './ConfirmStudent.js';
 import CountryShortSU from './CountryShortSU.js';
 import EduShortSU from './EduShortSU.js';
+import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 
@@ -51,16 +52,12 @@ const MenteeTypeformSignUpProps = {
 }
 
 // This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
-const MenteeTypeformSignUpContent = ({tflink, step}) => (
+const MenteeTypeformSignUpContent = ({tflink, step, currentStep, totalMenteeSteps}) => (
   <div>
-    <div className='progress-circles-container'>
-      <div className={step===1 ? "thisStep" : "nxtStep"}>
-        <i className="fas fa-circle" />
-      </div>
-      <div className={step===2 ? "thisStep" : "nxtStep"}>
-        <i className="fas fa-circle" />
-      </div>
-    </div>
+    <ProgressCircles
+      totalSteps={totalMenteeSteps}
+      currentStep={currentStep}
+    />
     <div className='embedded-typeform'>
       <TypeformEmbedded
         tflink={tflink}
@@ -81,16 +78,12 @@ const MentorTypeformSignUpProps = {
   fullWidth: true
 }
 
-const MentorTypeformSignUpContent = ({tflink, step}) => (
+const MentorTypeformSignUpContent = ({tflink, step, currentStep, totalMentorSteps}) => (
   <div>
-    <div className='progress-circles-container'>
-      <div className={step==='1' ? "thisStep" : "nxtStep"}>
-        <i className="fas fa-circle" />
-      </div>
-      <div className={step==='2' ? "thisStep" : "nxtStep"}>
-        <i className="fas fa-circle" />
-      </div>
-    </div>
+    <ProgressCircles
+      totalSteps={totalMentorSteps}
+      currentStep={currentStep}
+    />
     <div className='embedded-typeform'>
       <TypeformEmbedded
         tflink={tflink}
@@ -102,7 +95,9 @@ const MentorTypeformSignUpContent = ({tflink, step}) => (
 class TypeformSignUp extends Component {
   render() {
     const userRole = 'mentee';
-    const step = 'did1stSU';
+    const step = 'didCountry';
+    const totalMenteeSteps = 4;
+    const totalMentorSteps = 2;
     const fname = 'Emma';
     const id = '12345';
     const country = 'GBR';
@@ -117,13 +112,13 @@ class TypeformSignUp extends Component {
         case 'did1stSU':
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
-              <CountryShortSU step={step} />
+              <CountryShortSU step={step} userRole={userRole} currentStep="1" totalMenteeSteps={totalMenteeSteps}/>
             </SignUpScreenTemplate>
           );
         case 'didCountry': // School status component goes here
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
-              <EduShortSU step={step} country={country}/>
+              <EduShortSU step={step} country={country} currentStep="2" totalMenteeSteps={totalMenteeSteps}/>
             </SignUpScreenTemplate>
           );
         case 'didEdu':
@@ -131,7 +126,7 @@ class TypeformSignUp extends Component {
             <React.Fragment>
               {fname && (
                 <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
-                  <MenteeTypeformSignUpContent tflink={menteetflink} step={step}/>
+                  <MenteeTypeformSignUpContent tflink={menteetflink} step={step} currentStep="3" totalMenteeSteps={totalMenteeSteps}/>
                 </SignUpScreenTemplate>
               )}
             </React.Fragment>
@@ -139,7 +134,7 @@ class TypeformSignUp extends Component {
         case 'didShortSU':
           return (
             <SignUpScreenTemplate {...MenteeVerifyStudentProps(eetStatus, schName, uniName)}>
-              <ConfirmStudent step={step}/>
+              <ConfirmStudent step={step} currentStep="4" totalMenteeSteps={totalMenteeSteps}/>
             </SignUpScreenTemplate>
           );
       }
@@ -150,7 +145,7 @@ class TypeformSignUp extends Component {
             <React.Fragment>
               {fname && (
                 <SignUpScreenTemplate {...MentorCountryShortSUProps}>
-                  <CountryShortSU step='1'/>
+                  <CountryShortSU step={step} userRole={userRole} currentStep="1" totalMenteeSteps={totalMentorSteps}/>
                 </SignUpScreenTemplate>
               )}
             </React.Fragment>
@@ -160,7 +155,7 @@ class TypeformSignUp extends Component {
             <React.Fragment>
               {fname && (
                 <SignUpScreenTemplate {...MentorTypeformSignUpProps}>
-                  <MentorTypeformSignUpContent tflink={mentortflink} step='2'/>
+                  <MentorTypeformSignUpContent tflink={mentortflink} step={step} currentStep="2" totalMenteeSteps={totalMentorSteps}/>
                 </SignUpScreenTemplate>
               )}
     	      </React.Fragment>

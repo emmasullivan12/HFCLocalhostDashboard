@@ -13,8 +13,14 @@
   top: 100%;
   left: 0;
   right: 0;
-  max-height: 250px;
+  /* max-height: 250px; */
   overflow: auto;
+}
+.autocompleter-items.showDetail{
+  max-height: calc(5 * 50px);
+}
+.autocompleter-items.noDetail{
+  max-height: calc(5 * 37px);
 }
 .autocompleter-items::-webkit-scrollbar-track {
   background-color: #fff!important;
@@ -23,6 +29,7 @@
 .autocompleter-item.noDetail,
 .autocompleter-active.noDetail {
   padding: 10px;
+  height: 37px;
   cursor: pointer;
   background-color: #fff;
   border-bottom: 1px solid #d4d4d4;

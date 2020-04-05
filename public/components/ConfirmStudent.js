@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import "../css/Login.css";
 import "../css/General.css";
 
+import ProgressCircles from './ProgressCircles.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 import Autocomplete from './Autocomplete.js';
 
@@ -24,26 +25,16 @@ class ConfirmStudent extends React.Component {
 
   render() {
 
-  const {tflink, step} = this.props;
+  const {tflink, step, currentStep, totalMenteeSteps} = this.props;
 //  const isEnabled = this.canBeSubmitted(countries, states, provinces, ukCounties, ieCounties);
 
     return (
       <React.Fragment>
         <div>
-          <div className='progress-circles-container'>
-            <div className={(step==1) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle" />
-            </div>
-            <div className={(step==2) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle"  />
-            </div>
-            <div className={(step==3) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle"  />
-            </div>
-            <div className={(step==4) ? "thisStep" : "nxtStep"}>
-              <i className="fas fa-circle"  />
-            </div>
-          </div>
+          <ProgressCircles
+            totalSteps={totalMenteeSteps}
+            currentStep={currentStep}
+          />
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group">

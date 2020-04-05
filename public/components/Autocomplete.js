@@ -154,9 +154,6 @@ class Autocomplete extends React.Component {
     }
     // User pressed the down arrow
     else if (e.keyCode === 40) {
-
-      var container = document.getElementById("autocompleter-items-container");
-
       if (activeSuggestion + 1 === filteredSuggestions.length) {
         return;
       } else {
@@ -169,18 +166,19 @@ class Autocomplete extends React.Component {
   handleMoveUp = () => {
     const { activeSuggestion, filteredSuggestions } = this.state;
     const parent = document.getElementById("autocompleter-items");
+    const item = document.getElementsByClassName("autocompleter-item");
     if (activeSuggestion < (filteredSuggestions.length - 4)) {
-      parent.scrollTop -= 50
+      parent.scrollTop -= item[0].offsetHeight
     }
   }
 
   handleMoveDown = () => {
     const { activeSuggestion } = this.state;
     const parent = document.getElementById("autocompleter-items");
-
-    // i.e. 4 = 5th box ... also 50 = 50px
+    const item = document.getElementsByClassName("autocompleter-item");
+    // i.e. 4 = 5th box
     if (activeSuggestion >= 4) {
-      parent.scrollTop += 50
+      parent.scrollTop += item[0].offsetHeight
     }
   }
 
@@ -221,7 +219,7 @@ class Autocomplete extends React.Component {
     if (showSuggestions && userInput) {
       if (filteredSuggestions.length) {
         suggestionsListComponent = (
-          <div className="autocompleter-items" id="autocompleter-items">
+          <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
               {filteredSuggestions.map((suggestion, index) => {
                 let className;
                 let dataTarget;
@@ -234,6 +232,7 @@ class Autocomplete extends React.Component {
                   className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
                   dataTarget = "autoCompleteItem";
                 }
+
                 const content = valueToShow == undefined ? suggestion : suggestion[valueToShow];
                 const key = valueToShow == undefined ? suggestion : suggestion[idValue];
                 const detail = detailToShow == undefined ? '' : suggestion[detailToShow];

@@ -6,7 +6,7 @@
   margin-bottom: .5rem;
 }
 
-.thisStep{
+.completedStep{
   display: inline-block;
   margin-right: 4px;
   width: 15px;
@@ -18,7 +18,7 @@
   left: 0;
 }
 
-.nxtStep{
+.nextStep{
   display: inline-block;
   margin-right: 4px;
   width: 15px;
