@@ -20,19 +20,22 @@ const MenteeShortSUProps = {
   fullWidth: false
 }
 
-function MenteeVerifyStudentProps(eetStatus, schName, uniName) {
+function MenteeVerifyStudentProps(eetStatus, schName, schNameFreeText, uniName, uniNameFreeText) {
   let confirmStudentProps = {};
+  const userSch = schName != '' ? schName : schNameFreeText;
+  console.log("userSch: "+userSch);
+  const userUni = uniName != '' ? uniName : uniNameFreeText;
   switch (eetStatus) {
     case 'sch':
       confirmStudentProps = {
-        subheader: 'Tell us your personal ' + schName + ' email address so we can send you a verification code',
+        subheader: 'Tell us your personal ' + userSch + ' email address so we can send you a verification code',
         title: 'Verify your account',
         fullWidth: false
       }
       return confirmStudentProps;
     case 'uni':
       confirmStudentProps = {
-        subheader: 'Tell us your personal ' + uniName + ' email address so we can send you a verification code',
+        subheader: 'Tell us your personal ' + userUni + ' email address so we can send you a verification code',
         title: 'Verify your account',
         fullWidth: false
       }
@@ -95,18 +98,21 @@ const MentorTypeformSignUpContent = ({tflink, step, currentStep, totalMentorStep
 class TypeformSignUp extends Component {
   render() {
     const userRole = 'mentee';
-    const step = 'didCountry';
+    const step = 'didShortSU';
     const totalMenteeSteps = 4;
     const totalMentorSteps = 2;
     const fname = 'Emma';
     const id = '12345';
     const country = 'GBR';
-    const eetStatus = 'uni';
+    const eetStatus = 'sch';
     const schName = '';
-    const schNameFreeText = 'villierzzzzzz';
+    const schNameFreeText = '';
     const uniName = 'Bath University'; // shall we save down uni name or the number?
+    const uniNameFreeText = '';
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
+    const userSch = schName != '' ? schName : schNameFreeText;
+    const userUni = uniName != '' ? uniName : uniNameFreeText;
 
     if(userRole === 'mentee') {
       switch (step) {
@@ -134,8 +140,8 @@ class TypeformSignUp extends Component {
           );
         case 'didShortSU':
           return (
-            <SignUpScreenTemplate {...MenteeVerifyStudentProps(eetStatus, schName, uniName)}>
-              <ConfirmStudent step={step} currentStep="4" totalMenteeSteps={totalMenteeSteps}/>
+            <SignUpScreenTemplate {...MenteeVerifyStudentProps(eetStatus, schName, schNameFreeText, uniName, uniNameFreeText)}>
+              <ConfirmStudent step={step} currentStep="4" totalMenteeSteps={totalMenteeSteps} userEduName={userUni != '' ? userUni : userSch}/>
             </SignUpScreenTemplate>
           );
       }

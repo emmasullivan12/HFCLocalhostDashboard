@@ -12,7 +12,12 @@ import Autocomplete from './Autocomplete.js';
 class ConfirmStudent extends React.Component {
   constructor () {
     super();
+    this.state = {
+      userInput: '',
+      eduEmailIsValid: ''
+    }
     this.onBlur = this.onBlur.bind(this);
+  //  this.handleEduEmailChange = this.handleEduEmailChange.bind(this);
   }
 
   onBlur(e) {
@@ -23,9 +28,18 @@ class ConfirmStudent extends React.Component {
     }
   }
 
-  render() {
+  onChange = (e) => {
+    const isValid = this.checkEduEmail(e.currentTarget.value);
+    this.setState({
+      userInput: e.currentTarget.value,
+      eduEmailIsValid: isValid
+    });
+  }
 
-  const {tflink, step, currentStep, totalMenteeSteps} = this.props;
+  render() {
+    const { onChange } = this;
+    const { tflink, step, currentStep, totalMenteeSteps, userEduName } = this.props;
+    const { eduEmailIsValid, userInput } = this.state;
 //  const isEnabled = this.canBeSubmitted(countries, states, provinces, ukCounties, ieCounties);
 
     return (
@@ -38,13 +52,15 @@ class ConfirmStudent extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group">
-                <label className="descriptor alignLeft">Your personal institution Email Address</label>
+                <label className="descriptor alignLeft">Your {userEduName} Email Address</label>
                 <input
                   type="email"
                   name="schEmail"
                   onBlur={this.onBlur}
+                  onChange={onChange}
+                  value={userInput}
                   className="form-control-std"
-                  placeholder="Personal institution email address"
+                  placeholder={"Your " + userEduName + " email address"}
                   autoComplete="off"
                   autoCorrect="off"
                   spellCheck="off"
@@ -52,6 +68,9 @@ class ConfirmStudent extends React.Component {
                   required
                 />
               </div>
+              {eduEmailIsValid === false && (
+                <div className="descriptor prompt error signUpForm alignLeft">This must be a valid {userEduName} email address</div>
+              )}
   {/*            <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth"> */}
               <button type="submit" className="Submit-btn fullWidth">
                 Next
