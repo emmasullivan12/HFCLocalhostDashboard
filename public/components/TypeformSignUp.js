@@ -103,6 +103,7 @@ class TypeformSignUp extends Component {
     const country = 'GBR';
     const eetStatus = 'uni';
     const schName = '';
+    const schNameFreeText = 'villierzzzzzz';
     const uniName = 'Bath University'; // shall we save down uni name or the number?
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used

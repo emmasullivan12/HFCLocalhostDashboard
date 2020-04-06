@@ -348,7 +348,7 @@ class EduShortSU extends React.Component {
                       noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
                     >
-                      <EduNotOnListCTA />
+                      <EduNotOnListCTA country={country} eetStatus={eetStatus}/>
                     </Autocomplete>
                   </div>
                 </div>
@@ -405,7 +405,7 @@ class EduShortSU extends React.Component {
                       noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
                     >
-                      <EduNotOnListCTA />
+                      <EduNotOnListCTA country={country} eetStatus={eetStatus}/>
                     </Autocomplete>
                   </div>
                 </div>

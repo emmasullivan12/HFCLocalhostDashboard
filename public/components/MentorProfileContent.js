@@ -86,6 +86,7 @@ class MentorProfileContent extends Component {
       uni: 0,
       degree: 'BSc (Hons) Business Administration',
       uniName: 'Bath University',
+      uniNameFreeText: '', // If their school wasn't on the list
       subjects: 'Business, Art, English Literature & Language',
       currRole: 'Head of Marketing',
       currCo: 'Pladis',
