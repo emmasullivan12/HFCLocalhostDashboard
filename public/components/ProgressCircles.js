@@ -10,9 +10,6 @@ class ProgressCircles extends React.Component {
     const {currentStep, totalSteps} = this.props;
     var circles = [];
     for (var i = 0; i < totalSteps; i++) {
-      console.log("currentStep: "+currentStep);
-      console.log("totalSteps: "+totalSteps);
-      console.log("i: "+i);
       circles.push(
         <div className={(i < currentStep) ? "completedStep" : "nextStep"} key={i}>
           <i className="fas fa-circle" />

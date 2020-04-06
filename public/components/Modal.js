@@ -62,7 +62,7 @@ class Modal extends React.Component {
     this.onClose = this.onClose.bind(this);
   }
 
-  onOpen() {
+  onOpen(e) {
     this.setState({ isOpen: true }, () => {
       this.closeButtonNode.focus();
     });

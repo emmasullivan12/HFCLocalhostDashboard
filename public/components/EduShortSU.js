@@ -5,12 +5,11 @@ import ReactDOM from "react-dom";
 import "../css/Login.css";
 import "../css/General.css";
 
+import EduNotOnListCTA from './EduNotOnListCTA';
 import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import ProgressCircles from './ProgressCircles.js';
 import TextInput from './TextInput.js';
-//import {ukUnis} from './UKUnis.js';
-//import {ukSchs} from './UKSchs.js';
 import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
 
 
@@ -249,16 +248,6 @@ class EduShortSU extends React.Component {
     })
   }
 
-//[object Module].ukSchs
-/*  renderComponents() {
-    import('./UKSchs.js').then(UKSchs => {
-      console.log("UKSchs.ukSchs: "+UKSchs.ukSchs);
-      this.setState({
-        ukSchsList: UKSchs.ukSchs
-      })
-    })
-  }
-*/
   render() {
 
   const { eetStatus, schName, ukSchsList, schNameIsValid, uniName, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
@@ -278,10 +267,6 @@ class EduShortSU extends React.Component {
     {value: 'train', label: 'I\'m in Training'},
     {value: 'none', label: 'None'}
   ];
-/*  const ukSchs = ['Thamesmead School','Sunbury Manor','Thameswood College'
-//    {value: 'Thamesmead School', location: 'Shepperton, Surrey'},
-//    {value: 'Sunbury Manor', location: 'Sunbury, Middx'},
-];*/
   const ukSchYrs = [
     {value: 'yr8', label: 'Year 8'},
     {value: 'yr9', label: 'Year 9'},
@@ -360,8 +345,11 @@ class EduShortSU extends React.Component {
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       showDetail
                       detailToShow='location'
+                      noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
-                    />
+                    >
+                      <EduNotOnListCTA />
+                    </Autocomplete>
                   </div>
                 </div>
               )}
@@ -414,9 +402,11 @@ class EduShortSU extends React.Component {
                       showDetail
                       detailToShow='location'
                       focusOnLoad={tabPressed ? false : true}
-                      //tabIndex='1'
+                      noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
-                    />
+                    >
+                      <EduNotOnListCTA />
+                    </Autocomplete>
                   </div>
                 </div>
               )}

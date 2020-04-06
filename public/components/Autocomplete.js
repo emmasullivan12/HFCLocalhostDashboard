@@ -35,26 +35,33 @@ class Autocomplete extends React.Component {
 
   onMouseDown = (e) => {
     e.preventDefault();
+    console.log("onMouseDown triggered");
+    console.log("document.activeElementINMOUSEDOWN: "+document.activeElement);
+    console.log("document.relatedTargetINMOUSEDOWN: "+e.relatedTarget);
   }
 
   onBlur = (e) => {
-    const { suggestions, valueToShow, required, name } = this.props;
+    const { suggestions, valueToShow, required, name, noSuggestionsCTAclass } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const userInput = this.state.userInput;
     const isValid = this.checkUserInputExists(userInput);
-
-    this.setState({
-      activeSuggestion: 0,
-      filteredSuggestions: [],
-      showSuggestions: false,
-      userInput: e.currentTarget.value
-    });
-
-  //  if(!required && userInput == null || !required && userInput != null && isValid || required && userInput != null && isValid) {
-    if(isValid) {
-      document.getElementById("autocompleteBox-"+name).classList.remove('error');
+    console.log("noSuggestionsCTAclass: "+noSuggestionsCTAclass);
+    console.log("e.relatedTarget: "+e.relatedTarget);
+    if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
+      return;
     } else {
-      document.getElementById("autocompleteBox-"+name).classList.add('error');
+      this.setState({
+        activeSuggestion: 0,
+        filteredSuggestions: [],
+        showSuggestions: false,
+        userInput: e.currentTarget.value
+      });
+
+      if(isValid) {
+        document.getElementById("autocompleteBox-"+name).classList.remove('error');
+      } else {
+        document.getElementById("autocompleteBox-"+name).classList.add('error');
+      }
     }
   }
 
@@ -97,7 +104,7 @@ class Autocomplete extends React.Component {
 
   onClick = (e) => {
     const { suggestions, handleChange, name, valueToShow, required } = this.props;
-
+    console.log("onclick in autocomplete triggered");
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: [],
@@ -202,7 +209,7 @@ class Autocomplete extends React.Component {
       return false
     } else {
       if (suggestions[0].value != undefined || suggestions[0].value != null) {
-        return true
+          return true
       } else {
         return false
       }
@@ -211,7 +218,7 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onMouseDown, onKeyDown } = this;
-    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow } = this.props;
+    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow, children } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -233,7 +240,7 @@ class Autocomplete extends React.Component {
                   dataTarget = "autoCompleteItem";
                 }
 
-                const content = valueToShow == undefined ? suggestion : suggestion[valueToShow];
+                const suggestionText = valueToShow == undefined ? suggestion : suggestion[valueToShow];
                 const key = valueToShow == undefined ? suggestion : suggestion[idValue];
                 const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
                 return (
@@ -243,10 +250,10 @@ class Autocomplete extends React.Component {
                     onClick={onClick}
                     onMouseDown={onMouseDown}
                     data-id={key}
-                    data-text={content}
+                    data-text={suggestionText}
                     data-target={dataTarget}
                   >
-                    {content}
+                    {suggestionText}
                     {showDetail===true && (
                       <div className="autocompleter-item-detail">
                         {detail}
@@ -259,8 +266,9 @@ class Autocomplete extends React.Component {
         );
       } else {
         suggestionsListComponent = (
-          <div className="no-suggestions">
+          <div className="no-suggestions" id="noSuggestionsCTA">
             <em>No suggestions</em>
+            {children}
           </div>
         );
       }

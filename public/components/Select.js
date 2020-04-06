@@ -293,9 +293,8 @@ class SelectBox extends React.Component {
     const { options, valueToShow } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
-
     if (!isOpen) {
-      return null
+      return;
     }
 
     return (
