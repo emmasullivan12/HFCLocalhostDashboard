@@ -87,6 +87,7 @@ class EduShortSU extends React.Component {
         schGraduYr: ''
       });
     }
+    console.log("schNameBEINGSAVEDDOWN: "+userInput);
     this.setState({
       schName: userInput,
       schNameIsValid: isValid
@@ -122,6 +123,7 @@ class EduShortSU extends React.Component {
         uniGraduYr: ''
       });
     }
+    console.log("uniNameBEINGSAVEDDOWN: "+userInput);
     this.setState({
       uniName: userInput,
       uniNameIsValid: isValid
@@ -444,7 +446,7 @@ class EduShortSU extends React.Component {
                     />
                   </div>
                   {uniGraduYrIsValid === false && courseLength != '' && (
-                    <div className="descriptor prompt error signUpForm alignLeft">Year group can&#39;t be greater than course length</div>
+                    <div className="descriptor prompt error eduForm alignLeft">Year group can&#39;t be greater than course length</div>
                   )}
                 </React.Fragment>
               )}

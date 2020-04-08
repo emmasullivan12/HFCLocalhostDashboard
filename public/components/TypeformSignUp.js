@@ -12,32 +12,25 @@ import EduShortSU from './EduShortSU.js';
 import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
+import {lookupUKSchUnis} from './UserDetail.js';
+//import VerifyStudentProps from './VerifyStudentProps.js';
 
-//This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
-const MenteeShortSUProps = {
-  subheader: 'Personalise your Prospela experience',
-  title: 'Let\'s get you set up',
-  fullWidth: false
-}
-
-function MenteeVerifyStudentProps(eetStatus, schName, schNameFreeText, uniName, uniNameFreeText) {
+function VerifyStudentProps(eetStatus, userEduName) {
   let confirmStudentProps = {};
-  const userSch = schName != '' ? schName : schNameFreeText;
-  console.log("userSch: "+userSch);
-  const userUni = uniName != '' ? uniName : uniNameFreeText;
+
   switch (eetStatus) {
     case 'sch':
       confirmStudentProps = {
-        subheader: 'Tell us your personal ' + userSch + ' email address so we can send you a verification code',
+        subheader: 'Tell us your personal ' + userEduName + ' email address so we can send you a verification code',
         title: 'Verify your account',
-        fullWidth: false
+        fullWidth: false,
       }
       return confirmStudentProps;
     case 'uni':
       confirmStudentProps = {
-        subheader: 'Tell us your personal ' + userUni + ' email address so we can send you a verification code',
+        subheader: 'Tell us your personal ' + userEduName + ' email address so we can send you a verification code',
         title: 'Verify your account',
-        fullWidth: false
+        fullWidth: false,
       }
       return confirmStudentProps;
     case 'job':
@@ -45,6 +38,13 @@ function MenteeVerifyStudentProps(eetStatus, schName, schNameFreeText, uniName, 
     case 'none':
       return 'EM & DEX TO DECIDE WHAT TO REQUEST FROM JOB/TRAIN/NONE PEOPLE';
   }
+}
+
+//This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
+const MenteeShortSUProps = {
+  subheader: 'Personalise your Prospela experience',
+  title: 'Let\'s get you set up',
+  fullWidth: false
 }
 
 //This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
@@ -96,23 +96,91 @@ const MentorTypeformSignUpContent = ({tflink, step, currentStep, totalMentorStep
 )
 
 class TypeformSignUp extends Component {
-  render() {
-    const userRole = 'mentee';
+  constructor () {
+    super();
+    this.state = {
+      isLoading: true,
+      userEduName: ''
+    }
+  }
+
+  componentDidMount() {
     const step = 'didShortSU';
+    const country = 'GBR';
+    const eetStatus = 'uni';
+    const schName = '0'; // if from UK then save down sch number, not name
+    const schNameFreeText = '';
+    const uniName = '75'; // if from UK then save down uni number, not name
+    const uniNameFreeText = ''; // save down free text i.e. uniName as not
+
+    if (step === 'didShortSU') {
+      if (eetStatus === 'sch') {
+        if (country === 'GBR') {
+
+          if (schName != '') {
+            return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)]).then(sch => {
+              this.setState({
+                isLoading: false,
+                userEduName: sch
+              })
+            });
+          } else {
+            this.setState({
+              isLoading: false,
+              userEduName: schNameFreeText
+            })
+          }
+
+        } else {
+          this.setState({
+            isLoading: false,
+            userEduName: schNameFreeText
+          })
+        }
+
+      } else if (eetStatus === 'uni') {
+        if (country === 'GBR') {
+
+          if (uniName != '') {
+            return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)]).then(uni => {
+              this.setState({
+                isLoading: false,
+                userEduName: uni
+              })
+            });
+          } else {
+            this.setState({
+              isLoading: false,
+              userEduName: uniNameFreeText
+            })
+          }
+
+        } else {
+          this.setState({
+            isLoading: false,
+            userEduName: uniNameFreeText
+          })
+        }
+      }
+    }
+  }
+
+  render() {
+    const {isLoading, userEduName} = this.state;
+    const userRole = 'mentee';
+    const step = 'didCountry';
     const totalMenteeSteps = 4;
     const totalMentorSteps = 2;
     const fname = 'Emma';
     const id = '12345';
     const country = 'GBR';
-    const eetStatus = 'sch';
-    const schName = '';
+    const eetStatus = 'uni';
+    const schName = '0'; // if from UK then save down sch number, not name
     const schNameFreeText = '';
-    const uniName = 'Bath University'; // shall we save down uni name or the number?
-    const uniNameFreeText = '';
+    const uniName = ''; // if from UK then save down uni number, not name
+    const uniNameFreeText = 'sdfsdfsdf'; // save down free text i.e. uniName as not
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
-    const userSch = schName != '' ? schName : schNameFreeText;
-    const userUni = uniName != '' ? uniName : uniNameFreeText;
 
     if(userRole === 'mentee') {
       switch (step) {
@@ -140,9 +208,23 @@ class TypeformSignUp extends Component {
           );
         case 'didShortSU':
           return (
-            <SignUpScreenTemplate {...MenteeVerifyStudentProps(eetStatus, schName, schNameFreeText, uniName, uniNameFreeText)}>
-              <ConfirmStudent step={step} currentStep="4" totalMenteeSteps={totalMenteeSteps} userEduName={userUni != '' ? userUni : userSch}/>
-            </SignUpScreenTemplate>
+            //<SignUpScreenTemplate {...VerifyStudentProps(eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, country)}>
+            !isLoading && (
+              <SignUpScreenTemplate {...VerifyStudentProps(eetStatus, userEduName)}>
+                <ConfirmStudent
+                  step={step}
+                  currentStep="4"
+                  totalMenteeSteps={totalMenteeSteps}
+                  schName={schName}
+                  schNameFreeText={schNameFreeText}
+                  uniName={uniName}
+                  uniNameFreeText={uniNameFreeText}
+                  eetStatus={eetStatus}
+                  country={country}
+                  userEduName={userEduName}
+                />
+              </SignUpScreenTemplate>
+            )
           );
       }
     } else {

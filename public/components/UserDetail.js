@@ -2,6 +2,34 @@
 
 import React, { Component } from "react";
 
+function lookupUKSchUnis(i, valueToGet, eetStatus) {
+  console.log("starting to look up uni details...");
+
+  if (eetStatus === 'uni') {
+    const fileToRender = valueToGet === 'emailFormat' ? 'UKUniEmails' : 'UKUnis' ;
+    let uniDetail;
+
+    //IMPORT UNI list
+    return import(`./${fileToRender}.js`).then(component => {
+      //LOOK UP VALUETOGET BASED ON ID NUMBER
+      uniDetail = component.default[i][valueToGet];
+      return uniDetail;
+    })
+
+  } else if (eetStatus === 'sch') {
+    const fileToRender = valueToGet === 'emailFormat' ? 'UKSchEmails' : 'UKSchs' ;
+    let schDetail;
+
+    //IMPORT SCH list
+    return import(`./${fileToRender}.js`).then(component => {
+      //LOOK UP VALUETOGET BASED ON ID NUMBER
+      schDetail = component.default[i][valueToGet]
+      return schDetail;
+    })
+
+  }
+}
+
 function setSchGraduYr(currYrGrp) {
   console.log("currYrGrp: "+currYrGrp);
   var d = new Date();
@@ -70,7 +98,6 @@ function setUniGraduYr(currYr, courseLength) {
     return uniGraduYr + 1;
   }
 }
-
 
 function availabilityMsg(userAvail) {
   if (userAvail === 1) {
@@ -182,4 +209,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {lookupUKSchUnis, availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
