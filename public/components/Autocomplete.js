@@ -35,9 +35,6 @@ class Autocomplete extends React.Component {
 
   onMouseDown = (e) => {
     e.preventDefault();
-    console.log("onMouseDown triggered");
-    console.log("document.activeElementINMOUSEDOWN: "+document.activeElement);
-    console.log("document.relatedTargetINMOUSEDOWN: "+e.relatedTarget);
   }
 
   onBlur = (e) => {
@@ -102,7 +99,6 @@ class Autocomplete extends React.Component {
 
   onClick = (e) => {
     const { suggestions, handleChange, name, valueToShow, required } = this.props;
-    console.log("onclick in autocomplete triggered");
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: [],

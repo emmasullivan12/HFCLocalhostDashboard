@@ -12,13 +12,28 @@ class SendNotifModalContent extends Component {
     };
   }
 
-  handleInput = (evt) => {
-    evt.target.style.height = (evt.target.scrollHeight) + 'px';
-    this.setState({ PrNotifMessage: evt.target.value });
+  handleInput = (e) => {
+    e.target.style.height = (e.target.scrollHeight) + 'px';
+    this.setState({ PrNotifMessage: e.target.value });
   }
 
-  handleMessageChange = (evt) => {
-    this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
+  handleTextChange = (e) => {
+    this.setState({ [e.target.name]: e.target.type === 'number' ? parseInt(e.target.value) : e.target.value });
+  }
+
+  handleMessageChange = (e) => {
+    const currentState = this.state[e.target.name];
+
+    if (currentState === '1') {
+      this.setState({
+        [e.target.name]: ''
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: e.target.value
+      });
+    }
   }
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
@@ -54,7 +69,7 @@ class SendNotifModalContent extends Component {
                 type="checkbox"
                 id="sendAll"
                 name="SendAll"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="slider round"/>
@@ -67,7 +82,7 @@ class SendNotifModalContent extends Component {
                 type="checkbox"
                 id="sendMentees"
                 name="sendMentees"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="slider round"/>
@@ -80,7 +95,7 @@ class SendNotifModalContent extends Component {
                 type="checkbox"
                 id="sendMentors"
                 name="sendMentors"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="slider round"/>
@@ -93,7 +108,7 @@ class SendNotifModalContent extends Component {
             className="textInputBox small"
             placeholder="Enter UserIDs..."
             value={this.state.UserID}
-            onChange={this.handleMessageChange}
+            onChange={this.handleTextChange}
             autoComplete="off"
             autoCorrect="off"
             spellCheck="off"

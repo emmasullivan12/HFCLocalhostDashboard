@@ -30,7 +30,6 @@ class PrAddMessage extends Component {
   }
 
   handleEmojiClick = (evt) => {
-    console.log(evt.unified)
     let sym = evt.unified.split('-')
     let codesArray = []
     sym.forEach(el => codesArray.push('0x' + el))
@@ -108,7 +107,6 @@ class PrAddMessage extends Component {
   }
 
   closeMenu = (e) => {
-    console.log(this.emojiPicker)
     if (this.emojiPicker !== null && !this.emojiPicker.contains(e.target)) {
       this.setState({
         showEmojis: false

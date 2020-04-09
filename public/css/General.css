@@ -428,6 +428,9 @@ hr{
   min-width: 120px;
   font-weight: 400;
 }
+.Submit-btn.BlankBtn.Grey{
+  color: #bfbebe;
+}
 .Submit-btn.enableNotif{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -471,6 +474,10 @@ hr{
   color: #43a08f;
   background: #fff;
   box-shadow: none;
+}
+.Submit-btn.BlankBtn.Grey:hover,
+.Submit-btn.BlankBtn.Grey:focus{
+  color: #8e8e8e;
 }
 .Submit-btn.HollowBtn:hover,
 .Submit-btn.HollowBtn:focus{

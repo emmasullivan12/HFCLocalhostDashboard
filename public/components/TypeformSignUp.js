@@ -108,10 +108,10 @@ class TypeformSignUp extends Component {
     const step = 'didShortSU';
     const country = 'GBR';
     const eetStatus = 'uni';
-    const schName = '0'; // if from UK then save down sch number, not name
-    const schNameFreeText = '';
+    const schName = ''; // if from UK then save down sch number, not name
+    const schNameFreeText = 'usaschoolname';
     const uniName = '75'; // if from UK then save down uni number, not name
-    const uniNameFreeText = ''; // save down free text i.e. uniName as not
+    const uniNameFreeText = 'sdfsdfds'; // save down free text i.e. uniName as not
 
     if (step === 'didShortSU') {
       if (eetStatus === 'sch') {
@@ -168,16 +168,16 @@ class TypeformSignUp extends Component {
   render() {
     const {isLoading, userEduName} = this.state;
     const userRole = 'mentee';
-    const step = 'didCountry';
+    const step = 'didShortSU';
     const totalMenteeSteps = 4;
     const totalMentorSteps = 2;
     const fname = 'Emma';
     const id = '12345';
     const country = 'GBR';
     const eetStatus = 'uni';
-    const schName = '0'; // if from UK then save down sch number, not name
-    const schNameFreeText = '';
-    const uniName = ''; // if from UK then save down uni number, not name
+    const schName = ''; // if from UK then save down sch number, not name
+    const schNameFreeText = 'usaschoolname';
+    const uniName = '75'; // if from UK then save down uni number, not name
     const uniNameFreeText = 'sdfsdfsdf'; // save down free text i.e. uniName as not
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used

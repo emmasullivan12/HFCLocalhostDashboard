@@ -77,7 +77,7 @@ class JoinProgrammeModalContent extends Component {
             )}
             <label className="checkbox-container-login" id="tncText">
               I agree to share my Prospela profile with the programme admin for the purposes of {userRole === 'mentee' ? 'providing me career advice & support' : 'providing effective career advice & support to young people'}
-              <input type="checkbox" id="tncCheckbox" name="tanp" />
+              <input type="checkbox" id="tncCheckbox" name="tanp" value='1' />
               <span className="checkmark left" id="tncStyle"/>
             </label>
             <div className="request-btn-container">

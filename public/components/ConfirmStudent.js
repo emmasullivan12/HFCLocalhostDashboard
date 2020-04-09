@@ -11,21 +11,20 @@ import Autocomplete from './Autocomplete.js';
 import {lookupUKSchUnis} from './UserDetail.js';
 
 class ConfirmStudent extends React.Component {
-/*  static defaultProperty={
-    eduNameText: ''
-  };*/
-
   constructor () {
     super();
     this.state = {
       userInput: '',
       eduEmailIsValid: '',
       isPersonalEmail: '',
+      hasTextBeforeAt: '',
       emailFormat: '',
-      sentForReview: ''
+      sentForReview: '',
+      timeout: 0
     }
     this.onBlur = this.onBlur.bind(this);
     this.checkEduEmail = this.checkEduEmail.bind(this);
+    this.handleKeyUp = this.handleKeyUp.bind(this);
   }
 
   componentDidMount() {
@@ -33,14 +32,12 @@ class ConfirmStudent extends React.Component {
     if (country === 'GBR') {
       if (eetStatus === 'sch' && schName != '') {
         return Promise.all([lookupUKSchUnis(schName, 'emailFormat', eetStatus)]).then(email => {
-          console.log("schemail: "+email);
           this.setState({
             emailFormat: email
           })
         });
       } else if (eetStatus === 'uni' && uniName != '') {
         return Promise.all([lookupUKSchUnis(uniName, 'emailFormat', eetStatus)]).then(email => {
-          console.log("uniemail: "+email);
           this.setState({
             emailFormat: email
           })
@@ -50,7 +47,8 @@ class ConfirmStudent extends React.Component {
   }
 
   onBlur(e) {
-    if(e.target.checkValidity()) {
+    const {eduEmailIsValid} = this.state;
+    if(e.target.checkValidity() && eduEmailIsValid) {
       e.target.classList.remove('error');
     } else {
       e.target.classList.add('error');
@@ -60,11 +58,41 @@ class ConfirmStudent extends React.Component {
   onChange = (e) => {
     this.setState({
       userInput: e.currentTarget.value
-    }, () => {
+  /*  }, () => {
       if (this.state.userInput.includes("@") && this.state.userInput.includes(".")) {
         this.checkEduEmail();
-      }
+      }*/
     })
+  }
+
+  handleMessageChange = (e) => {
+    const currentState = this.state[e.target.name];
+
+    if (currentState === '1') {
+      this.setState({
+        [e.target.name]: ''
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: e.target.value
+      });
+    }
+  }
+
+  handleKeyUp(e) {
+    const {userInput, timeout, eduEmailIsValid} = this.state;
+
+    clearTimeout(timeout);
+
+    this.setState({
+      timeout: setTimeout(()=>{
+        if (userInput.includes("@") && userInput.includes(".")) {
+          this.checkEduEmail();
+        }
+      }, 500)
+    })
+
   }
 
   checkEduEmail() {
@@ -80,6 +108,13 @@ class ConfirmStudent extends React.Component {
         eduEmailIsValid: false,
         isPersonalEmail: true
       });
+    } else if (userInput.indexOf("@") === 0) {
+      console.log("userInput.indexOf(@): "+userInput.indexOf("@"))
+      this.setState({
+        eduEmailIsValid: false,
+        hasTextBeforeAt: false,
+        isPersonalEmail: false
+      });
     } else if (country === 'GBR') {
       if (eetStatus === 'sch') {
 
@@ -89,25 +124,28 @@ class ConfirmStudent extends React.Component {
 
           // This sch does not have .sch.uk format
           if (schName === '6000') {
-            const isValid = emailFormat[0] === freeEmail;
+            const isValid = emailFormat[0] === freeEmail && userInput.indexOf("@") > 0;
             this.setState({
               eduEmailIsValid: isValid,
-              isPersonalEmail: false
+              isPersonalEmail: false,
+              hasTextBeforeAt: true
             });
           } else {
-            const isValid = (freeEmail === emailFormat + ".sch.uk");
+            const isValid = (freeEmail === emailFormat + ".sch.uk" && userInput.indexOf("@") > 0);
             this.setState({
               eduEmailIsValid: isValid,
-              isPersonalEmail: false
+              isPersonalEmail: false,
+              hasTextBeforeAt: true
             });
           }
 
         // if sch doesnt have specific format or user freetyped in sch name then do general check
         } else {
-          const isValid = freeEmail.includes(".sch.uk") || freeEmail.includes(".gov.uk");
+          const isValid = (freeEmail.includes(".sch.uk") || freeEmail.includes(".gov.uk")) && userInput.indexOf("@") > 0;
           this.setState({
             eduEmailIsValid: isValid,
-            isPersonalEmail: false
+            isPersonalEmail: false,
+            hasTextBeforeAt: true
           });
         }
 
@@ -118,57 +156,74 @@ class ConfirmStudent extends React.Component {
 
           // This University does not have .ac.uk format
           if (uniName === '69') {
-            const isValid = emailFormat[0] === freeEmail;
+            const isValid = emailFormat[0] === freeEmail && userInput.indexOf("@") > 0;
             this.setState({
               eduEmailIsValid: isValid,
-              isPersonalEmail: false
+              isPersonalEmail: false,
+              hasTextBeforeAt: true
             });
           } else {
-            const isValid = freeEmail === emailFormat + ".ac.uk";
+            const isValid = freeEmail === emailFormat + ".ac.uk" && userInput.indexOf("@") > 0;
             this.setState({
               eduEmailIsValid: isValid,
-              isPersonalEmail: false
+              isPersonalEmail: false,
+              hasTextBeforeAt: true
             });
           }
 
         // if uni doesnt have specific format or user freetyped in uni name then do general check .ac.uk
         } else {
-          const isValid = freeEmail.includes(".ac.uk");
+          const isValid = freeEmail.includes(".ac.uk") && userInput.indexOf("@") > 0;
           this.setState({
             eduEmailIsValid: isValid,
-            isPersonalEmail: false
+            isPersonalEmail: false,
+            hasTextBeforeAt: true
           });
         }
       }
     } else if (country === 'USA') {
-      //will be freetext
-      //check against USA format e.g. .edu
-    } else if (country === 'CAN') {
-      console.log("canada email format check goes here")
-      //will be freetext
-      //check against CAN format e.g. .edu
-    } else if (country === 'IRE') {
-      //will be freetext
-      //check against IRE format e.g. .edu
+      if (eetStatus === 'uni') {
+        const isValid = freeEmail.includes(".edu") && userInput.indexOf("@") > 0;
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          hasTextBeforeAt: true
+        });
+
+      } else if (eetStatus === 'sch') {
+        // saying email is valid as don't know format of sch emails, but Prospela to approve before get access
+        const isValid = userInput.indexOf("@") > 0
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          hasTextBeforeAt: true
+        });
+      }
+
     } else {
       //don't do a check (as dont know format for every country) just get them to verify
-      //and then come to prospela for approval
+      //and then come to prospela for approval before going to dashboard
+      this.setState({
+        eduEmailIsValid: true,
+        isPersonalEmail: false,
+        hasTextBeforeAt: true
+      });
     }
   }
 
   canBeSubmitted() {
-    const {userInput, eduEmailIsValid, isPersonalEmail, sentForReview} = this.state;
+    const {userInput, eduEmailIsValid, isPersonalEmail, hasTextBeforeAt, sentForReview} = this.state;
     const {eetStatus} = this.props;
 
     if (eetStatus === 'sch' || eetStatus === 'uni') {
-      if (userInput != '' && eduEmailIsValid && !isPersonalEmail) {
+      if (userInput != '' && (eduEmailIsValid || sentForReview != '') && !isPersonalEmail && hasTextBeforeAt) {
         return true;
       } else {
         return false;
       }
 
     } else if (eetStatus === 'job' || eetStatus === 'train' || eetStatus === 'none') {
-      if (sentForReview) {
+      if (sentForReview != '' && hasTextBeforeAt) {
         return true;
       } else {
         return false;
@@ -178,10 +233,11 @@ class ConfirmStudent extends React.Component {
   }
 
   render() {
-    const { onChange } = this;
+    const { onChange, handleKeyUp } = this;
     const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName } = this.props;
-    const { eduEmailIsValid, userInput, isPersonalEmail } = this.state;
+    const { eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt } = this.state;
     const isEnabled = this.canBeSubmitted();
+
 
     return (
       <React.Fragment>
@@ -199,6 +255,7 @@ class ConfirmStudent extends React.Component {
                   name="schEmail"
                   onBlur={this.onBlur}
                   onChange={onChange}
+                  onKeyUp={handleKeyUp}
                   value={userInput}
                   className="form-control-std verifyForm"
                   placeholder={"Your " + userEduName + " email address"}
@@ -210,13 +267,33 @@ class ConfirmStudent extends React.Component {
                 />
               </div>
               {eduEmailIsValid === false && isPersonalEmail === false && (
-                <div className="descriptor prompt error verifyForm alignLeft">This must be a valid {userEduName} email address</div>
+                <React.Fragment>
+                  <div className="descriptor prompt error verifyForm alignLeft">
+                    This must be a valid {userEduName} email address
+                  </div>
+                  {hasTextBeforeAt && (
+                    <label className="checkbox-container alignLeft textLeft">This is a valid {userEduName} email. Submit for review
+                      <input
+                        type="checkbox"
+                        name="sentForReview"
+                        className="SubmitMatch-input"
+                        value="1"
+                        onClick={this.handleMessageChange}
+                        required
+                      />
+                      <span className="checkmark" />
+                    </label>
+                  )}
+                </React.Fragment>
               )}
               {isPersonalEmail === true && (
-                <div className="descriptor prompt error verifyForm alignLeft">This can&#39;t be a personal email address</div>
+                <div className="descriptor prompt error verifyForm alignLeft textLeft">This can&#39;t be a personal email address</div>
               )}
               <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth">
                 Next
+              </button>
+              <button type="button" className="Submit-btn BlankBtn Grey fullWidth">
+                or Change {eetStatus === 'uni' ? 'University' : country === 'GBR' ? 'School/College' : 'High School'}
               </button>
             </form>
           </div>

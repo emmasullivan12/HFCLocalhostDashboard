@@ -35,7 +35,6 @@ class SelectBox extends React.Component {
   }
 
   onFocus = (e) => {
-  //  console.log("document.activeElement.idONFOCUS: "+document.activeElement.id);
     const { handleFocus } = this.props;
     if (handleFocus) {
       handleFocus(document.activeElement.id)

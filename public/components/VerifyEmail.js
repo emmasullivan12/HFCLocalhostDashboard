@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -27,9 +27,6 @@ class VerifyEmail extends React.Component {
     const submission = {
       token: verificationCode
     };
-    console.log(submission);
-//    this.props.verifyEmail(submission);
-//    window.location.assign('https://test.prospela.com');
   }
 
   handleResendSubmit(e) {

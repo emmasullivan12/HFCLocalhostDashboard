@@ -51,15 +51,17 @@ class UserMenuContent extends Component {
       fname: 'Dexter',
       lname: 'Boyce',
       profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
-      schName: 'Villiers High School',
+      schName: '',
+      schNameFreeText: '',
       uniName: '',
+      uniNameFreeText: '',
       currCo: 'Pladis',
       eetStatus: 1,
     };
     const isPicSet = user.profPicSrc != ''; // check if author who sent message has avatar pic set
 //    const isPicSet = false;
     const userInitial = user.fname.charAt(0).toUpperCase();
-    const eduInstName = eduName(user.schName, user.uniName);
+    const eduInstName = eduName(user.schName, user.schNameFreeText, user.uniName, user.uniNameFreeText, user.eetStatus);
     return (
       <React.Fragment>
         <div className="userMenuContainer">

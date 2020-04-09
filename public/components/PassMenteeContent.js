@@ -21,13 +21,25 @@ class PassMenteeContent extends Component {
     this.updateClassname = this.updateClassname.bind(this);
   }
 
-  handleInput = (evt) => {
-    evt.target.style.height = (evt.target.scrollHeight) + 'px';
-    this.setState({ [evt.target.name]: evt.target.value });
+  handleInput = (e) => {
+    e.target.style.height = (e.target.scrollHeight) + 'px';
+    this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleMessageChange = (evt) => {
-    this.setState({ [evt.target.name]: evt.target.value });
+  handleMessageChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+    const currentState = this.state[e.target.name];
+
+    if (currentState === '1') {
+      this.setState({
+        [e.target.name]: ''
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: e.target.value
+      });
+    }
   }
 
   updateClassname() {
@@ -62,7 +74,7 @@ class PassMenteeContent extends Component {
                 type="checkbox"
                 name="Role"
                 className="SubmitMatch-input"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="checkmark" />
@@ -72,7 +84,7 @@ class PassMenteeContent extends Component {
                 type="checkbox"
                 name="Industry"
                 className="SubmitMatch-input"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="checkmark" />
@@ -82,7 +94,7 @@ class PassMenteeContent extends Component {
                 type="checkbox"
                 name="Interests"
                 className="SubmitMatch-input"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="checkmark" />
@@ -92,7 +104,7 @@ class PassMenteeContent extends Component {
                 type="checkbox"
                 name="Skills"
                 className="SubmitMatch-input"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="checkmark" />
@@ -102,7 +114,7 @@ class PassMenteeContent extends Component {
                 type="checkbox"
                 name="Busy"
                 className="SubmitMatch-input"
-                value="t"
+                value="1"
                 onClick={this.handleMessageChange}
               />
               <span className="checkmark" />

@@ -60,8 +60,6 @@ class CountryShortSU extends React.Component {
     this.setState({
       stateProv: userInput,
       stateProvIsValid: isValid
-    }, () => {
-     console.log("this.state.stateProvIsValid: "+this.state.stateProvIsValid);
     })
   }
 
@@ -126,8 +124,6 @@ class CountryShortSU extends React.Component {
   render() {
 
   const { country, countryIsValid, stateProv, stateProvIsValid, city, tabPressed, timeZone } = this.state;
-//  const autoFocus = (country != 'GBR' && country != 'IRL' && country != 'USA' && country != 'CAN') ? true : false;
-//  console.log('autoFocus: '+autoFocus);
   const {tflink, step, currentStep, totalMenteeSteps, totalMentorSteps, userRole} = this.props;
 
   var countries = [

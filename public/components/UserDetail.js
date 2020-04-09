@@ -3,7 +3,6 @@
 import React, { Component } from "react";
 
 function lookupUKSchUnis(i, valueToGet, eetStatus) {
-  console.log("starting to look up uni details...");
 
   if (eetStatus === 'uni') {
     const fileToRender = valueToGet === 'emailFormat' ? 'UKUniEmails' : 'UKUnis' ;
@@ -31,7 +30,6 @@ function lookupUKSchUnis(i, valueToGet, eetStatus) {
 }
 
 function setSchGraduYr(currYrGrp) {
-  console.log("currYrGrp: "+currYrGrp);
   var d = new Date();
   var year = d.getFullYear();
   var month = d.getMonth();
@@ -125,11 +123,30 @@ function eetStatus(eetStatus, schYrGrp, uniYrGrp) {
   }
 }
 
-function eduName(schName, uniName) {
-  if (uniName != '') {
-    return uniName
-  } else if (schName != '') {
-    return schName
+function eduName(schName, schNameFreeText, uniName, uniNameFreeText, eetStatus) {
+  if (eetStatus === 'uni') {
+
+    if (uniName != '') {
+      return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)]).then(uni => {
+        this.setState({
+          isLoading: false,
+          userEduName: uni
+        })
+      });
+
+    } else return uniNameFreeText;
+
+  } else if (eetStatus === 'sch') {
+
+    if (schName != '') {
+      return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)]).then(sch => {
+        this.setState({
+          isLoading: false,
+          userEduName: sch
+        })
+      });
+
+    } else return schNameFreeText;
   }
 }
 
@@ -188,7 +205,8 @@ function timeSince(lastActiveDate) {
 }
 
 function isNightDay(userCurrentTime) {
-  var hour = new Date(userCurrentTime).getHours();
+  var n = userCurrentTime.indexOf(":");
+  var hour = userCurrentTime.slice(0,n);//find : and then bring back digits to left of it
   if (hour >= 7 && hour <= 19) {
     return 'day'
   } else {

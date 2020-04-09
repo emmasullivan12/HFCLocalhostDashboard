@@ -10,7 +10,7 @@ import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {userFlagEmoji, eduSubjects, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -85,7 +85,9 @@ class MentorProfileContent extends Component {
       yrsExp: 7,
       uni: 0,
       degree: 'BSc (Hons) Business Administration',
-      uniName: 'Bath University',
+      schName: '',
+      schNameFreeText: '', // If their school wasn't on the list
+      uniName: '',
       uniNameFreeText: '', // If their school wasn't on the list
       subjects: 'Business, Art, English Literature & Language',
       currRole: 'Head of Marketing',
@@ -167,6 +169,7 @@ class MentorProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
+    const eduInstName = eduName(mentor.schName, mentor.schNameFreeText, mentor.uniName, mentor.uniNameFreeText, mentor.eetStatus);
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
     const uid = '23456';
@@ -298,7 +301,7 @@ class MentorProfileContent extends Component {
                     University Degree:
                   </h2>
                   <p>
-                    {mentor.uni != 0 ? mentor.degree + ' @ ' + mentor.uniName : 'I didn\'t go to University'}
+                    {mentor.uni != 0 ? mentor.degree + ' @ ' + eduInstName : 'I didn\'t go to University'}
                   </p>
                   <h2>
                     {eduSubjects(mentor.country)}

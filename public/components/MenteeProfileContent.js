@@ -50,6 +50,7 @@ class MenteeProfileContent extends Component {
       planningUni: 2, // 0=no, 1=yes, 2=maybe, 3=not sure
       schName: '',
       uniName: 'Bath University',
+      uniNameFreeText: '',
       degree: 'BSc (Hons) Business Administration',
       schGraduYr: '',
       uniGraduYr: '2020',
@@ -139,7 +140,7 @@ class MenteeProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentee.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentee.country);
-    const eduInstName = eduName(mentee.schName, mentee.uniName);
+    const eduInstName = eduName(mentee.schName, mentee.schNameFreeText, mentee.uniName, mentee.uniNameFreeText, mentee.eetStatus);
     const userInitial = mentee.fname.charAt(0).toUpperCase();
 
     return (
@@ -268,7 +269,7 @@ class MenteeProfileContent extends Component {
                         University Degree:
                       </h2>
                       <p>
-                        {mentee.degree + ' @ ' + mentee.eduName}
+                        {mentee.degree + ' @ ' + eduInstName}
                         <span className="neutralText dispBlock">(Class of {mentee.graduYr})</span>
                       </p>
                       <p>

@@ -34,6 +34,22 @@ class SubmitMatchContent extends Component {
     this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
   }
 
+  handleCheckboxChange = (e) => {
+    const currentState = this.state[e.target.name];
+
+    if (currentState === '1') {
+      this.setState({
+        [e.target.name]: ''
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: e.target.value
+      });
+    }
+  }
+
+
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
     if (!this.canBeSubmitted()) {
@@ -91,8 +107,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByGender"
                 name="Gender"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -104,8 +120,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByEthnicity"
                 name="Ethnicity"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -117,8 +133,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByLGBQT"
                 name="LGBQT"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -130,8 +146,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByFSM"
                 name="FSM"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -143,8 +159,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByRole"
                 name="Role"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -156,8 +172,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByHobbies"
                 name="Hobbies"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -169,8 +185,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchBySkills"
                 name="Skills"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -182,8 +198,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByIndustry"
                 name="Industry"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -195,8 +211,8 @@ class SubmitMatchContent extends Component {
                 type="checkbox"
                 id="matchByToDoList"
                 name="ToDoList"
-                value="t"
-                onClick={this.handleMessageChange}
+                value="1"
+                onClick={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>

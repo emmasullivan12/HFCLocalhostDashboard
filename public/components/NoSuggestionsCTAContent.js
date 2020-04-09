@@ -74,7 +74,7 @@ class NoSuggestionsCTAContent extends Component {
             />
             <div className="pass-btn-container">
               <button type="submit" disabled={!isEnabled} className="Submit-btn">
-                Submit
+                Submit for Review
               </button>
             </div>
           </form>
@@ -85,11 +85,11 @@ class NoSuggestionsCTAContent extends Component {
         <React.Fragment>
           <div className="modal-title">
             <div className="emoji-icon peace-emoji successBox" />
-            You passed
+            Education institution submitted
           </div>
           <div className="success-container">
             <div className="ideas-Title">
-              Thanks for letting us know why this wasn&#39;t such a great match for you. It will help us do better next time.
+              We&#39;ll review as soon as we can. For now, feel free to continue your sign up!
             </div>
           </div>
         </React.Fragment>

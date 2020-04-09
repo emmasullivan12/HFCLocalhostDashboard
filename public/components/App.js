@@ -199,8 +199,7 @@ class Dashboard extends Component{
   closeMenu(e) {
     const clientMenu = document.getElementById("clientMenu");
     const clientMenuBtn = document.getElementById("nav-mainMenu");
-    console.log('clientMenu.style.left: '+clientMenu.style.left);
-    console.log('e.target: '+e.target);
+    
     if (window.innerWidth < 760 && clientMenu.style.left != "-220px" && !clientMenuBtn.contains(e.target)) {
       clientMenu.style.left = "-220px";
       clientMenu.style.zIndex = "0";
@@ -314,7 +313,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'did1stSU';
+  const step = 'didShortSU';
 //    const step = this.props.users.step;
       switch (step) {
         case 'did1stSU':

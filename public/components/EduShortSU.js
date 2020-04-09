@@ -19,9 +19,11 @@ class EduShortSU extends React.Component {
     this.state = {
       eetStatus: '',
       schName: '',
+      schNameFreeText: '',
       ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
+      uniNameFreeText: '',
       ukUnisList: [],
       uniNameIsValid: '',
       schYrGrp: '',
@@ -63,9 +65,11 @@ class EduShortSU extends React.Component {
       eetStatus: userInput,
   //    eetStatusIsValid: isValid,
       schName: '',
+      schNameFreeText: '',
       ukSchsList: [],
       schNameIsValid: '',
       uniName: '',
+      uniNameFreeText: '',
       ukUnisList: [],
       uniNameIsValid: '',
       schYrGrp: '',
@@ -87,7 +91,6 @@ class EduShortSU extends React.Component {
         schGraduYr: ''
       });
     }
-    console.log("schNameBEINGSAVEDDOWN: "+userInput);
     this.setState({
       schName: userInput,
       schNameIsValid: isValid
@@ -104,7 +107,7 @@ class EduShortSU extends React.Component {
       });
     }
     this.setState({
-      schName: userInput,
+      schNameFreeText: userInput,
       schNameIsValid: isValid,
     });
   }
@@ -123,7 +126,6 @@ class EduShortSU extends React.Component {
         uniGraduYr: ''
       });
     }
-    console.log("uniNameBEINGSAVEDDOWN: "+userInput);
     this.setState({
       uniName: userInput,
       uniNameIsValid: isValid
@@ -140,7 +142,7 @@ class EduShortSU extends React.Component {
       });
     }
     this.setState({
-      uniName: userInput,
+      uniNameFreeText: userInput,
       uniNameIsValid: isValid
     });
   }
@@ -200,19 +202,19 @@ class EduShortSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {eetStatus, schName, schNameIsValid, uniName, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCo, currTrainingProvider } = this.state;
+    const {eetStatus, schName, schNameFreeText, schNameIsValid, uniName, uniNameFreeText, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCo, currTrainingProvider } = this.state;
 
       if (eetStatus != '') {
 
         if (eetStatus === 'sch') {
-          if (schName != '' && schNameIsValid && schYrGrp != '') {
+          if ((schName != '' || schNameFreeText != '') && schNameIsValid && schYrGrp != '') {
             return true;
           } else {
             return false;
           }
 
         } else if (eetStatus === 'uni') {
-          if (uniName != '' && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
+          if ((uniName != '' || uniNameFreeText != '') && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
             return true;
           } else {
             return false;
@@ -335,7 +337,7 @@ class EduShortSU extends React.Component {
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukSchsList ? ukSchsList : undefined}
-                      name='eduName'
+                      name='schName'
                       placeholder='School or College'
                       handleChange={this.handleUKSchChange}
                       handleTabPress={this.handleTabPress}
@@ -359,7 +361,7 @@ class EduShortSU extends React.Component {
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your High School?</label>
                   <TextInput
-                    name="eduName"
+                    name="schNameFreeText"
                     id="schNameTextBox"
                     placeholder="High School"
                     className="form-control-std"
@@ -416,7 +418,7 @@ class EduShortSU extends React.Component {
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your University?</label>
                   <TextInput
-                    name="uniName"
+                    name="uniNameFreeText"
                     id="uniNameTextBox"
                     placeholder="University"
                     className="form-control-std"
