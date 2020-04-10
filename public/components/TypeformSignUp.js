@@ -107,9 +107,9 @@ class TypeformSignUp extends Component {
   componentDidMount() {
     const step = 'didShortSU';
     const country = 'GBR';
-    const eetStatus = 'uni';
-    const schName = ''; // if from UK then save down sch number, not name
-    const schNameFreeText = 'usaschoolname';
+    const eetStatus = 'sch';
+    const schName = '2'; // if from UK then save down sch number, not name
+    const schNameFreeText = '';
     const uniName = '75'; // if from UK then save down uni number, not name
     const uniNameFreeText = 'sdfsdfds'; // save down free text i.e. uniName as not
 
@@ -121,7 +121,7 @@ class TypeformSignUp extends Component {
             return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)]).then(sch => {
               this.setState({
                 isLoading: false,
-                userEduName: sch
+                userEduName: sch[0].label
               })
             });
           } else {
@@ -145,7 +145,7 @@ class TypeformSignUp extends Component {
             return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)]).then(uni => {
               this.setState({
                 isLoading: false,
-                userEduName: uni
+                userEduName: uni[0].label
               })
             });
           } else {
@@ -174,9 +174,9 @@ class TypeformSignUp extends Component {
     const fname = 'Emma';
     const id = '12345';
     const country = 'GBR';
-    const eetStatus = 'uni';
-    const schName = ''; // if from UK then save down sch number, not name
-    const schNameFreeText = 'usaschoolname';
+    const eetStatus = 'sch';
+    const schName = '2'; // if from UK then save down sch number, not name
+    const schNameFreeText = '';
     const uniName = '75'; // if from UK then save down uni number, not name
     const uniNameFreeText = 'sdfsdfsdf'; // save down free text i.e. uniName as not
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used

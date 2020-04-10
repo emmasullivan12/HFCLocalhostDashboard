@@ -11,7 +11,7 @@ function lookupUKSchUnis(i, valueToGet, eetStatus) {
     //IMPORT UNI list
     return import(`./${fileToRender}.js`).then(component => {
       //LOOK UP VALUETOGET BASED ON ID NUMBER
-      uniDetail = component.default[i][valueToGet];
+      uniDetail = component.default[i];
       return uniDetail;
     })
 
@@ -22,7 +22,7 @@ function lookupUKSchUnis(i, valueToGet, eetStatus) {
     //IMPORT SCH list
     return import(`./${fileToRender}.js`).then(component => {
       //LOOK UP VALUETOGET BASED ON ID NUMBER
-      schDetail = component.default[i][valueToGet]
+      schDetail = component.default[i]
       return schDetail;
     })
 
