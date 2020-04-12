@@ -100,18 +100,29 @@ class TypeformSignUp extends Component {
     super();
     this.state = {
       isLoading: true,
-      userEduName: ''
+      userEduName: '',
+      country: '',
+      eetStatus: '',
+      schName: '',
+      schNameFreeText: '',
+      uniName: '',
+      uniNameFreeText: '',
+      currCo: '',
+      currTrainingProvider: ''
     }
+    this.updateCountry = this.updateCountry.bind(this);
+    this.updateEetStatus = this.updateEetStatus.bind(this);
+    this.updateUKSch = this.updateUKSch.bind(this);
+    this.updateSchFreeText = this.updateSchFreeText.bind(this);
+    this.updateUKUni = this.updateUKUni.bind(this);
+    this.updateUniFreeText = this.updateUniFreeText.bind(this);
+    this.updateCurrCo = this.updateCurrCo.bind(this);
+    this.updateCurrTrainingProv = this.updateCurrTrainingProv.bind(this);
   }
 
   componentDidMount() {
-    const step = 'didShortSU';
-    const country = 'GBR';
-    const eetStatus = 'sch';
-    const schName = '2'; // if from UK then save down sch number, not name
-    const schNameFreeText = '';
-    const uniName = '75'; // if from UK then save down uni number, not name
-    const uniNameFreeText = 'sdfsdfds'; // save down free text i.e. uniName as not
+    const {country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
+    const step = 'didCountry';
 
     if (step === 'didShortSU') {
       if (eetStatus === 'sch') {
@@ -165,20 +176,68 @@ class TypeformSignUp extends Component {
     }
   }
 
+  updateCountry(userInput) {
+    this.setState({
+      country: userInput
+    })
+  }
+
+  updateEetStatus(userInput) {
+    this.setState({
+      eetStatus: userInput,
+      schName: '',
+      schNameFreeText: '',
+      uniName: '',
+      uniNameFreeText: '',
+      currCo: '',
+      currTrainingProvider: ''
+    })
+  }
+
+  updateUKSch(userInput) {
+    this.setState({
+      schName: userInput
+    })
+  }
+
+  updateSchFreeText(userInput) {
+    this.setState({
+      schNameFreeText: userInput
+    })
+  }
+
+  updateUKUni(userInput) {
+    this.setState({
+      uniName: userInput
+    })
+  }
+
+  updateUniFreeText(userInput) {
+    this.setState({
+      uniNameFreeText: userInput
+    })
+  }
+
+  updateCurrCo(userInput) {
+    this.setState({
+      currCo: userInput
+    })
+  }
+
+  updateCurrTrainingProv(userInput) {
+    this.setState({
+      currTrainingProvider: userInput
+    })
+  }
+
   render() {
-    const {isLoading, userEduName} = this.state;
+    const {isLoading, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider} = this.state;
     const userRole = 'mentee';
-    const step = 'didShortSU';
+    const step = 'didCountry';
     const totalMenteeSteps = 4;
     const totalMentorSteps = 2;
     const fname = 'Emma';
     const id = '12345';
-    const country = 'GBR';
-    const eetStatus = 'sch';
-    const schName = '2'; // if from UK then save down sch number, not name
-    const schNameFreeText = '';
-    const uniName = '75'; // if from UK then save down uni number, not name
-    const uniNameFreeText = 'sdfsdfsdf'; // save down free text i.e. uniName as not
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
 
@@ -187,13 +246,31 @@ class TypeformSignUp extends Component {
         case 'did1stSU':
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
-              <CountryShortSU step={step} userRole={userRole} currentStep="1" totalMenteeSteps={totalMenteeSteps}/>
+              <CountryShortSU
+                step={step}
+                userRole={userRole}
+                currentStep="1"
+                totalMenteeSteps={totalMenteeSteps}
+                updateCountry={this.updateCountry}
+              />
             </SignUpScreenTemplate>
           );
         case 'didCountry': // School status component goes here
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
-              <EduShortSU step={step} country={country} currentStep="2" totalMenteeSteps={totalMenteeSteps}/>
+              <EduShortSU
+                step={step}
+                country={country}
+                currentStep="2"
+                totalMenteeSteps={totalMenteeSteps}
+                updateEetStatus={this.updateEetStatus}
+                updateUKSch={this.updateUKSch}
+                updateSchFreeText={this.updateSchFreeText}
+                updateUKUni={this.updateUKUni}
+                updateUniFreeText={this.updateUniFreeText}
+                updateCurrCo={this.updateCurrCo}
+                updateCurrTrainingProv={this.updateCurrTrainingProv}
+              />
             </SignUpScreenTemplate>
           );
         case 'didEdu':
@@ -201,14 +278,18 @@ class TypeformSignUp extends Component {
             <React.Fragment>
               {fname && (
                 <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
-                  <MenteeTypeformSignUpContent tflink={menteetflink} step={step} currentStep="3" totalMenteeSteps={totalMenteeSteps}/>
+                  <MenteeTypeformSignUpContent
+                    tflink={menteetflink}
+                    step={step}
+                    currentStep="3"
+                    totalMenteeSteps={totalMenteeSteps}
+                  />
                 </SignUpScreenTemplate>
               )}
             </React.Fragment>
           );
         case 'didShortSU':
           return (
-            //<SignUpScreenTemplate {...VerifyStudentProps(eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, country)}>
             !isLoading && (
               <SignUpScreenTemplate {...VerifyStudentProps(eetStatus, userEduName)}>
                 <ConfirmStudent

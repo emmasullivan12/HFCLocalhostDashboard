@@ -14,7 +14,7 @@ class CountryShortSU extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      country: '',
+      countryLocal: '', // dont need to save this down as country is in TypeformSignUp parent
       countryIsValid: '',
       stateProv: '',
       stateProvIsValid: '',
@@ -46,7 +46,7 @@ class CountryShortSU extends React.Component {
       });
     }
     this.setState({
-      country: userInput,
+      countryLocal: userInput,
       countryIsValid: isValid
     })
   }
@@ -73,17 +73,21 @@ class CountryShortSU extends React.Component {
 
   // Dex to use save this down for individual's profile i.e. user/mentor/mentee.timeZone
   handleSubmit(e) {
+    console.log("handlesubmit function triggered")
     var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const {updateCountry} = this.props;
+    const {countryLocal} = this.state;
+    updateCountry(countryLocal);
   }
 
   canBeSubmitted(countries, states, provinces, ukCounties, ieCounties) {
-    const {country, stateProv, city} = this.state;
+    const {countryLocal, stateProv, city} = this.state;
 
-    var isCountryOK = countries.map((el) => el.value).indexOf(country) != -1;
+    var isCountryOK = countries.map((el) => el.value).indexOf(countryLocal) != -1;
 
-      if (country != '' && isCountryOK && city != '') {
+      if (countryLocal != '' && isCountryOK && city != '') {
 
-        if (country === 'GBR') {
+        if (countryLocal === 'GBR') {
           var isUKCountyOK = ukCounties.map((el) => el.value).indexOf(stateProv) != -1;
           if (stateProv != '' && isUKCountyOK) {
             return true;
@@ -91,7 +95,7 @@ class CountryShortSU extends React.Component {
             return false;
           }
 
-        } else if (country === 'IRL') {
+        } else if (countryLocal === 'IRL') {
           var isIECountyOK = ieCounties.indexOf(stateProv) != -1;
           if (stateProv != '' && isIECountyOK) {
             return true;
@@ -99,7 +103,7 @@ class CountryShortSU extends React.Component {
             return false;
           }
 
-        } else if (country === 'USA') {
+        } else if (countryLocal === 'USA') {
           var isStateOK = states.map((el) => el.value).indexOf(stateProv) != -1;
           if (stateProv != '' && isStateOK) {
             return true;
@@ -107,7 +111,7 @@ class CountryShortSU extends React.Component {
             return false;
           }
 
-        } else if (country === 'CAN') {
+        } else if (countryLocal === 'CAN') {
           var isProvOK = provinces.map((el) => el.value).indexOf(stateProv) != -1;
           if (stateProv != '' && isProvOK) {
             return true;
@@ -123,7 +127,7 @@ class CountryShortSU extends React.Component {
 
   render() {
 
-  const { country, countryIsValid, stateProv, stateProvIsValid, city, tabPressed, timeZone } = this.state;
+  const { countryLocal, countryIsValid, stateProv, stateProvIsValid, city, tabPressed, timeZone } = this.state;
   const {tflink, step, currentStep, totalMenteeSteps, totalMentorSteps, userRole} = this.props;
 
   var countries = [
@@ -167,7 +171,7 @@ class CountryShortSU extends React.Component {
                   />
                 </div>
               </div>
-              {country === 'USA' && (
+              {countryLocal === 'USA' && (
                 <div className="form-group" id="userState">
                   <label className="descriptor alignLeft">What State?</label>
                   <div className="autocompleter">
@@ -185,7 +189,7 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {country === 'CAN' && (
+              {countryLocal === 'CAN' && (
                 <div className="form-group" id="userProvince">
                   <label className="descriptor alignLeft">What Province?</label>
                   <div className="autocompleter">
@@ -203,7 +207,7 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {country === 'GBR' && (
+              {countryLocal === 'GBR' && (
                 <div className="form-group" id="userUKCounty">
                   <label className="descriptor alignLeft">What County?</label>
                   <div className="autocompleter">
@@ -221,7 +225,7 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {country === 'IRL' && (
+              {countryLocal === 'IRL' && (
                 <div className="form-group" id="userIECounty">
                   <label className="descriptor alignLeft">What County?</label>
                   <div className="autocompleter">
@@ -237,10 +241,9 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {country != '' && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (country != 'GBR' && country != 'IRL' && country != 'USA' && country != 'CAN')) && (
-            //  {country != '' && (stateProv != '' || (country != 'GBR' && country != 'IRL' && country != 'USA' && country != 'CAN')) && (
+              {countryLocal != '' && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'IRL' && countryLocal != 'USA' && countryLocal != 'CAN')) && (
                 <div className="form-group" id="userCity">
-                  <label className="descriptor alignLeft">{country != 'GBR' && country != 'IRL' ? 'Which City?' : 'Which Town/City?'}</label>
+                  <label className="descriptor alignLeft">{countryLocal != 'GBR' && countryLocal != 'IRL' ? 'Which City?' : 'Which Town/City?'}</label>
                   <TextInput
                     name="city"
                     id="cityTextBox"
@@ -251,12 +254,10 @@ class CountryShortSU extends React.Component {
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onBlur}
                     focusOnLoad={countryIsValid === true && !tabPressed ? true : false}
-                  //  focusOnLoad={countryIsValid && ((stateProv != '' && stateProvIsValid) || (country != 'GBR' && country != 'IRL' && country != 'USA' && country != 'CAN')) ? true : false}
                   />
                 </div>
               )}
-  {/*            <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth"> */}
-              <button type="submit" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
                 Next
               </button>
             </form>

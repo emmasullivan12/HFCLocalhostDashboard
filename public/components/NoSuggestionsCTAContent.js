@@ -15,12 +15,12 @@ class NoSuggestionsCTAContent extends Component {
 
   handleChange = (evt) => {
     const { schNameFreeText, uniNameFreeText } = this.state;
-    const { eetStatus } = this.props;
-    if (eetStatus === "sch") {
+    const { eetStatusLocal } = this.props;
+    if (eetStatusLocal === "sch") {
       this.setState({
         schNameFreeText: evt.target.value
       });
-    } else if (eetStatus === "uni") {
+    } else if (eetStatusLocal === "uni") {
       this.setState({
         uniNameFreeText: evt.target.value
       });
@@ -48,7 +48,7 @@ class NoSuggestionsCTAContent extends Component {
 
   render() {
     const { schNameFreeText, uniNameFreeText, messageFromServer } = this.state;
-    const { country, eetStatus } = this.props;
+    const { country, eetStatusLocal } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
@@ -57,14 +57,14 @@ class NoSuggestionsCTAContent extends Component {
             Sorry about that...
           </div>
           <div className="modal-subtitle">
-            What&#39;s your {eetStatus === 'uni' ? 'University' : (country === 'GBR' ? 'School' : 'High School')} name?
+            What&#39;s your {eetStatusLocal === 'uni' ? 'University' : (country === 'GBR' ? 'School' : 'High School')} name?
           </div>
           <form className="eduFreeText-form" id="eduFreeTextForm">
             <input
               name="eduNameFreeText"
               className="form-control-std"
               form="eduFreeTextForm"
-              value={eetStatus === "sch" ? schNameFreeText : uniNameFreeText}
+              value={eetStatusLocal === "sch" ? schNameFreeText : uniNameFreeText}
               onChange={this.handleChange}
               placeholder={country === 'GBR' ? "School or College" : "High School"}
               autoComplete="off"

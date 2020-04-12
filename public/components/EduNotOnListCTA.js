@@ -17,11 +17,11 @@ const noSuggestionsCTAModalProps = {
 class EduNotOnListCTA extends Component {
 
   render() {
-    const { country, eetStatus } = this.props;
+    const { country, eetStatusLocal } = this.props;
     return(
       <React.Fragment>
         <Modal {...noSuggestionsCTAModalProps}>
-          <NoSuggestionsCTAContent country={country} eetStatus={eetStatus}/>
+          <NoSuggestionsCTAContent country={country} eetStatusLocal={eetStatusLocal}/>
         </Modal>
       </React.Fragment>
     )

@@ -17,13 +17,17 @@ class EduShortSU extends React.Component {
   constructor () {
     super();
     this.state = {
-      eetStatus: '',
-      schName: '',
-      schNameFreeText: '',
+      eetStatusLocal: '', // does not need to be saved here as state is also in TypeformSignUp parent
+      schNameLocal: '',
+      schNameUpdated: '',
+      schNameFreeTextLocal: '',
+      schNameFreeTextUpdated: '',
       ukSchsList: [],
       schNameIsValid: '',
-      uniName: '',
-      uniNameFreeText: '',
+      uniNameLocal: '',
+      uniNameUpdated: '',
+      uniNameFreeTextLocal: '',
+      uniNameFreeTextUpdated: '',
       ukUnisList: [],
       uniNameIsValid: '',
       schYrGrp: '',
@@ -32,6 +36,8 @@ class EduShortSU extends React.Component {
       schGraduYr: '',
       uniGraduYr: '',
       uniGraduYrIsValid: '',
+      currCoLocal: '',
+      currTrainingProviderLocal: '',
       tabPressed: '',
       selectBoxFocused: '',
     }
@@ -47,6 +53,7 @@ class EduShortSU extends React.Component {
     this.handleTrainChange = this.handleTrainChange.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.otherValidityChecks = this.otherValidityChecks.bind(this);
     this.renderComponents = this.renderComponents.bind(this);
     this.onBlur = this.onBlur.bind(this);
@@ -62,14 +69,17 @@ class EduShortSU extends React.Component {
 
   handleEetStatusChange(userInput) {
     this.setState({
-      eetStatus: userInput,
-  //    eetStatusIsValid: isValid,
-      schName: '',
-      schNameFreeText: '',
+      eetStatusLocal: userInput,
       ukSchsList: [],
+      schNameLocal: '',
+      schNameUpdated: '',
       schNameIsValid: '',
-      uniName: '',
-      uniNameFreeText: '',
+      schNameFreeTextLocal: '',
+      schNameFreeTextUpdated: '',
+      uniNameLocal: '',
+      uniNameUpdated: '',
+      uniNameFreeTextLocal: '',
+      uniNameFreeTextUpdated: '',
       ukUnisList: [],
       uniNameIsValid: '',
       schYrGrp: '',
@@ -78,10 +88,10 @@ class EduShortSU extends React.Component {
       schGraduYr: '',
       uniGraduYr: '',
       uniGraduYrIsValid: '',
-      currCo: '',
-      currTrainingProvider: '',
+      currCoLocal: '',
+      currTrainingProviderLocal: '',
       tabPressed: '',
-    });
+    })
   }
 
   handleUKSchChange(userInput, isValid) {
@@ -92,14 +102,15 @@ class EduShortSU extends React.Component {
       });
     }
     this.setState({
-      schName: userInput,
+      schNameLocal: userInput,
+      schNameUpdated: true,
       schNameIsValid: isValid
     })
   }
 
   handleSchChange(e) {
     const userInput = e.currentTarget.value;
-    const isValid = userInput.length > 3;
+    const isValid = userInput.length >= 3;
     if (!isValid) {
       this.setState({
         schYrGrp: '',
@@ -107,9 +118,10 @@ class EduShortSU extends React.Component {
       });
     }
     this.setState({
-      schNameFreeText: userInput,
+      schNameFreeTextLocal: userInput,
+      schNameFreeTextUpdated: true,
       schNameIsValid: isValid,
-    });
+    })
   }
 
   handleSchYrChange(userInput) {
@@ -127,14 +139,15 @@ class EduShortSU extends React.Component {
       });
     }
     this.setState({
-      uniName: userInput,
+      uniNameLocal: userInput,
+      uniNameUpdated: true,
       uniNameIsValid: isValid
     })
   }
 
   handleUniChange(e) {
     const userInput = e.currentTarget.value;
-    const isValid = userInput.length > 3;
+    const isValid = userInput.length >= 3;
     if (!isValid) {
       this.setState({
         uniYrGrp: '',
@@ -142,9 +155,10 @@ class EduShortSU extends React.Component {
       });
     }
     this.setState({
-      uniNameFreeText: userInput,
+      uniNameFreeTextLocal: userInput,
+      uniNameFreeTextUpdated: true,
       uniNameIsValid: isValid
-    });
+    })
   }
 
   handleUniYrChange(userInput) {
@@ -168,11 +182,15 @@ class EduShortSU extends React.Component {
   }
 
   handleJobChange(e) {
-    this.setState({ currCo: e.currentTarget.value });
+    this.setState({
+      currCoLocal: e.currentTarget.value
+    })
   }
 
   handleTrainChange(e) {
-    this.setState({ currTrainingProvider: e.currentTarget.value });
+    this.setState({
+      currTrainingProviderLocal: e.currentTarget.value
+    });
   }
 
   handleTabPress(tabPressed) {
@@ -201,40 +219,53 @@ class EduShortSU extends React.Component {
     }
   }
 
+  handleSubmit(e) {
+    console.log("handlesubmit functinon triggered")
+    const {updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv} = this.props;
+    const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal} = this.state;
+    updateEetStatus(eetStatusLocal);
+    updateUKSch(schNameLocal);
+    updateSchFreeText(schNameFreeTextLocal);
+    updateUKUni(uniNameLocal);
+    updateUniFreeText(uniNameFreeTextLocal);
+    updateCurrCo(currCoLocal);
+    updateCurrTrainingProv(currTrainingProviderLocal);
+  }
+
   canBeSubmitted() {
-    const {eetStatus, schName, schNameFreeText, schNameIsValid, uniName, uniNameFreeText, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCo, currTrainingProvider } = this.state;
+    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCo, currTrainingProvider } = this.state;
 
-      if (eetStatus != '') {
+      if (eetStatusLocal != '') {
 
-        if (eetStatus === 'sch') {
-          if ((schName != '' || schNameFreeText != '') && schNameIsValid && schYrGrp != '') {
+        if (eetStatusLocal === 'sch') {
+          if ((schNameUpdated === true || schNameFreeTextUpdated === true) && schNameIsValid && schYrGrp != '') {
             return true;
           } else {
             return false;
           }
 
-        } else if (eetStatus === 'uni') {
-          if ((uniName != '' || uniNameFreeText != '') && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
+        } else if (eetStatusLocal === 'uni') {
+          if ((uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
             return true;
           } else {
             return false;
           }
 
-        } else if (eetStatus === 'job') {
+        } else if (eetStatusLocal === 'job') {
           if (currCo != '') {
             return true;
           } else {
             return false;
           }
 
-        } else if (eetStatus === 'train') {
+        } else if (eetStatusLocal === 'train') {
           if (currTrainingProvider != '') {
             return true;
           } else {
             return false;
           }
 
-        } else if (eetStatus === 'none') {
+        } else if (eetStatusLocal === 'none') {
           return true;
 
 
@@ -254,7 +285,7 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { eetStatus, schName, ukSchsList, schNameIsValid, uniName, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
+  const { eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
   const { country, tflink, step, currentStep, totalMenteeSteps } = this.props;
 
   const eetStatusUKOptions = [
@@ -331,7 +362,7 @@ class EduShortSU extends React.Component {
                   required
                 />
               </div>
-              {country === 'GBR' && eetStatus === 'sch' && (
+              {country === 'GBR' && eetStatusLocal === 'sch' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your School / College?</label>
                   <div className="autocompleter">
@@ -352,12 +383,12 @@ class EduShortSU extends React.Component {
                       noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
                     >
-                      <EduNotOnListCTA country={country} eetStatus={eetStatus}/>
+                      <EduNotOnListCTA country={country} eetStatusLocal={eetStatusLocal}/>
                     </Autocomplete>
                   </div>
                 </div>
               )}
-              {country != 'GBR' && eetStatus === 'sch' && (
+              {country != 'GBR' && eetStatusLocal === 'sch' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your High School?</label>
                   <TextInput
@@ -373,7 +404,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {eetStatus === 'sch' && schNameIsValid === true && (
+              {eetStatusLocal === 'sch' && schNameIsValid === true && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">And which {country === 'GBR' ? 'year group' : 'grade / year group'} are you in?</label>
                   <SelectBox
@@ -388,7 +419,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {country === 'GBR' && eetStatus === 'uni' && (
+              {country === 'GBR' && eetStatusLocal === 'uni' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your University?</label>
                   <div className="autocompleter">
@@ -409,12 +440,12 @@ class EduShortSU extends React.Component {
                       noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
                     >
-                      <EduNotOnListCTA country={country} eetStatus={eetStatus}/>
+                      <EduNotOnListCTA country={country} eetStatusLocal={eetStatusLocal}/>
                     </Autocomplete>
                   </div>
                 </div>
               )}
-              {country != 'GBR' && eetStatus === 'uni' && (
+              {country != 'GBR' && eetStatusLocal === 'uni' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your University?</label>
                   <TextInput
@@ -430,7 +461,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {eetStatus === 'uni' && uniNameIsValid === true && (
+              {eetStatusLocal === 'uni' && uniNameIsValid === true && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft">And which year group are you in?</label>
@@ -452,7 +483,7 @@ class EduShortSU extends React.Component {
                   )}
                 </React.Fragment>
               )}
-              {eetStatus === 'uni' && uniNameIsValid === true && uniYrGrp != '' && (
+              {eetStatusLocal === 'uni' && uniNameIsValid === true && uniYrGrp != '' && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft">And how long is your course?</label>
@@ -471,7 +502,7 @@ class EduShortSU extends React.Component {
                   </div>
                 </React.Fragment>
               )}
-              {eetStatus === 'job' && (
+              {eetStatusLocal === 'job' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">Who do you currently work for?</label>
                   <input
@@ -490,7 +521,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {eetStatus === 'train' && (
+              {eetStatusLocal === 'train' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">Who is your training provider?</label>
                   <input
@@ -509,9 +540,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-
-    {/*          <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth"> */}
-              <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
                 Next
               </button>
             </form>
