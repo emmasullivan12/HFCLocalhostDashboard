@@ -327,7 +327,7 @@
 
 .ModalOpenBtn-noSuggestionsCTABtn,
 .ModalOpenBtn-eduFreeTextBtn {
-  background: none;
+  background: none!important;
   border: none;
   color: #c7c7c7;
   text-align: center;
@@ -361,6 +361,7 @@
 .ModalOpenBtn-eduFreeTextBtn:focus {
   outline: 0;
   box-shadow: none;
+  color: rgba(63,63,63,.7);
 }
 
 .ModalOpenBtn-msgExtras-accept{

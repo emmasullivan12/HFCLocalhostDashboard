@@ -13,6 +13,13 @@ class NoSuggestionsCTAContent extends Component {
     };
   }
 
+  componentDidMount(){
+    console.log("componentdidmount")
+    console.log("document.getElementById(eduNameFreeTextModal)"+document.getElementById("eduNameFreeTextModal"))
+    console.log(document.getElementById("eduNameFreeTextModal"))
+    document.getElementById("eduNameFreeTextModal").focus();
+  }
+
   handleChange = (e) => {
     const { eetStatusLocal } = this.props;
 
@@ -64,18 +71,21 @@ class NoSuggestionsCTAContent extends Component {
 
     // User pressed the enter key
     if (e.keyCode === 13) {
-      console.log("onkeydown triggered")
-      e.preventDefault();
-      this.handleSubmit;
+      if (!this.canBeSubmitted()) {
+        e.preventDefault ();
+        return;
+      } else {
+        console.log("onkeydown triggered")
+        this.handleSubmit();
+      }
     }
-
   };
 
   // This ensures user cannot press Enter on keyboard to submit without completing form first
   canBeSubmitted() {
     const {schNameFreeTextModal, uniNameFreeTextModal} = this.state;
     return (
-      schNameFreeTextModal.length > 0 || uniNameFreeTextModal.length > 0
+      schNameFreeTextModal.length >= 2 || uniNameFreeTextModal.length >= 2
     );
   }
 
@@ -96,6 +106,7 @@ class NoSuggestionsCTAContent extends Component {
           <form className="eduFreeText-form" id="eduFreeTextForm">
             <input
               name="eduNameFreeText"
+              id="eduNameFreeTextModal"
               className="form-control-std"
               form="eduFreeTextForm"
               value={eetStatusLocal === "sch" ? schNameFreeTextModal : uniNameFreeTextModal}

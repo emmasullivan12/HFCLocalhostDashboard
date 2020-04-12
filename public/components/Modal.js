@@ -83,6 +83,13 @@ class Modal extends React.Component {
 
   // Close modal by clicking outside of Modal
   onClickAway = (e) => {
+    console.log("e.target: "+e.target)
+    console.log(e.target)
+    console.log("e.currentTarget: "+e.currentTarget)
+    console.log(e.target)
+    console.log("this.modalNode: "+this.modalNode)
+    console.log(this.modalNode)
+    console.log("this.modalNode.contains(e.target): "+this.modalNode.contains(e.target))
     if (this.modalNode && this.modalNode.contains(e.target)) return;
     this.onClose();
   }

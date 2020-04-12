@@ -354,6 +354,7 @@ input[type=text]:disabled{
 .form-group.eduName{
   margin: 0 0 1.5rem;
   display: block;
+  height: 1rem;
 }
 
 .form-group.inlineLeft{
