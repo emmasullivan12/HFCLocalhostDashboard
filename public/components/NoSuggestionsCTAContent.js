@@ -7,22 +7,22 @@ class NoSuggestionsCTAContent extends Component {
   constructor() {
     super();
     this.state = {
-      schNameFreeText: '',
-      uniNameFreeText: '',
+      schNameFreeTextModal: '',
+      uniNameFreeTextModal: '',
       messageFromServer: ''
     };
   }
 
-  handleChange = (evt) => {
-    const { schNameFreeText, uniNameFreeText } = this.state;
+  handleChange = (e) => {
     const { eetStatusLocal } = this.props;
+
     if (eetStatusLocal === "sch") {
       this.setState({
-        schNameFreeText: evt.target.value
+        schNameFreeTextModal: e.target.value
       });
     } else if (eetStatusLocal === "uni") {
       this.setState({
-        uniNameFreeText: evt.target.value
+        uniNameFreeTextModal: e.target.value
       });
     } else {
       return; // not currently using Autocomplete for anything other than sch & uni
@@ -30,27 +30,61 @@ class NoSuggestionsCTAContent extends Component {
   }
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
-  handleSubmit = (evt) => {
+  handleSubmit = (e) => {
     if (!this.canBeSubmitted()) {
-      evt.preventDefault ();
+      e.preventDefault ();
       return;
+    } else {
+      const { eetStatusLocal, handleSchChange, handleUniChange } = this.props;
+      const { schNameFreeTextModal, uniNameFreeTextModal } = this.state;
+
+      if (eetStatusLocal === "sch") {
+        console.log("IN MODAL: schNameFreeTextModal: "+schNameFreeTextModal);
+        this.setState({
+          messageFromServer: 'We are saving down your school name in free text!'
+        }, () => {
+          console.log("messageFromServer: "+this.state.messageFromServer);
+          handleSchChange(schNameFreeTextModal);
+        });
+
+      } else if (eetStatusLocal === "uni") {
+        console.log("IN MODAL: uniNameFreeTextModal: "+uniNameFreeTextModal);
+        this.setState({
+          messageFromServer: 'We are saving down your uni name in free text!'
+        }, () => {
+          handleUniChange(uniNameFreeTextModal);
+        });
+      } else {
+        return; // not currently using Autocomplete for anything other than sch & uni
+      }
     }
-    this.setState({ messageFromServer: 'We are saving down your school name in free text!' });
   }
+
+  onKeyDown = e => {
+
+    // User pressed the enter key
+    if (e.keyCode === 13) {
+      console.log("onkeydown triggered")
+      e.preventDefault();
+      this.handleSubmit;
+    }
+
+  };
 
   // This ensures user cannot press Enter on keyboard to submit without completing form first
   canBeSubmitted() {
-    const {schNameFreeText, uniNameFreeText} = this.state;
+    const {schNameFreeTextModal, uniNameFreeTextModal} = this.state;
     return (
-      schNameFreeText.length > 0 || uniNameFreeText.length > 0
+      schNameFreeTextModal.length > 0 || uniNameFreeTextModal.length > 0
     );
   }
 
   render() {
-    const { schNameFreeText, uniNameFreeText, messageFromServer } = this.state;
+    const {onKeyDown } = this;
+    const { schNameFreeTextModal, uniNameFreeTextModal, messageFromServer } = this.state;
     const { country, eetStatusLocal } = this.props;
     const isEnabled = this.canBeSubmitted();
-    if(messageFromServer == '') {
+    if(messageFromServer === '') {
       return (
         <React.Fragment>
           <div className="modal-preTitle">
@@ -64,8 +98,9 @@ class NoSuggestionsCTAContent extends Component {
               name="eduNameFreeText"
               className="form-control-std"
               form="eduFreeTextForm"
-              value={eetStatusLocal === "sch" ? schNameFreeText : uniNameFreeText}
+              value={eetStatusLocal === "sch" ? schNameFreeTextModal : uniNameFreeTextModal}
               onChange={this.handleChange}
+              onKeyDown={this.onKeyDown}
               placeholder={country === 'GBR' ? "School or College" : "High School"}
               autoComplete="off"
               autoCorrect="off"
@@ -73,7 +108,7 @@ class NoSuggestionsCTAContent extends Component {
               required
             />
             <div className="pass-btn-container">
-              <button type="submit" disabled={!isEnabled} className="Submit-btn">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn">
                 Submit for Review
               </button>
             </div>

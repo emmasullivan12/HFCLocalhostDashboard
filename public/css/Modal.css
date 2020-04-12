@@ -325,7 +325,8 @@
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
-.ModalOpenBtn-noSuggestionsCTABtn {
+.ModalOpenBtn-noSuggestionsCTABtn,
+.ModalOpenBtn-eduFreeTextBtn {
   background: none;
   border: none;
   color: #c7c7c7;
@@ -340,14 +341,23 @@
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
+.ModalOpenBtn-eduFreeTextBtn {
+  width: auto;
+  float: right;
+  height: auto;
+  padding: .3em 0 0 0;
+}
+
 .ModalOpenBtn-PassBtn:hover,
-.ModalOpenBtn-noSuggestionsCTABtn:hover {
+.ModalOpenBtn-noSuggestionsCTABtn:hover,
+.ModalOpenBtn-eduFreeTextBtn:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
 
 .ModalOpenBtn-PassBtn:focus,
-.ModalOpenBtn-noSuggestionsCTABtn:focus {
+.ModalOpenBtn-noSuggestionsCTABtn:focus,
+.ModalOpenBtn-eduFreeTextBtn:focus {
   outline: 0;
   box-shadow: none;
 }

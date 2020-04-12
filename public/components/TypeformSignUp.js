@@ -101,7 +101,7 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       userEduName: '',
-      country: '',
+      country: 'GBR',
       eetStatus: '',
       schName: '',
       schNameFreeText: '',

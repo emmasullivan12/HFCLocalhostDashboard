@@ -351,6 +351,12 @@ input[type=text]:disabled{
   margin-bottom: 0;
 }
 
+.form-group.eduName{
+  margin: 0 0 1.5rem;
+  display: block;
+  height: 0.85rem;
+}
+
 .form-group.inlineLeft{
   margin-right: 7px;
 }

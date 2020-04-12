@@ -8,13 +8,13 @@ import NoSuggestionsCTAContent from './NoSuggestionsCTAContent.js';
 
 // This includes props and title to be passed to PassMentorModal
 const noSuggestionsCTAModalProps = {
-  ariaLabel: 'School or Uni not on list',
-  triggerText: 'School or Uni not on list?',
-  usedFor: 'noSuggestionsCTABtn'
+  ariaLabel: 'Edit school or uni',
+  triggerText: 'Edit',
+  usedFor: 'eduFreeTextBtn'
 }
 
 // Content for MentorCards using props passed from database
-class EduNotOnListCTA extends Component {
+class EditEduFreeText extends Component {
 
   render() {
     const { country, eetStatusLocal, handleSchChange, handleUniChange } = this.props;
@@ -33,4 +33,4 @@ class EduNotOnListCTA extends Component {
   }
 }
 
-export default EduNotOnListCTA;
+export default EditEduFreeText;

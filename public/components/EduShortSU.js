@@ -6,6 +6,7 @@ import "../css/Login.css";
 import "../css/General.css";
 
 import EduNotOnListCTA from './EduNotOnListCTA';
+import EditEduFreeText from './EditEduFreeText';
 import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import ProgressCircles from './ProgressCircles.js';
@@ -103,13 +104,15 @@ class EduShortSU extends React.Component {
     }
     this.setState({
       schNameLocal: userInput,
+      schNameFreeTextLocal: '',
       schNameUpdated: true,
       schNameIsValid: isValid
     })
   }
 
   handleSchChange(e) {
-    const userInput = e.currentTarget.value;
+    console.log("IN EDUSHORTSU (e): "+e);
+    const userInput = e.currentTarget != undefined ? e.currentTarget.value : e;
     const isValid = userInput.length >= 3;
     if (!isValid) {
       this.setState({
@@ -119,6 +122,7 @@ class EduShortSU extends React.Component {
     }
     this.setState({
       schNameFreeTextLocal: userInput,
+      schNameLocal: '',
       schNameFreeTextUpdated: true,
       schNameIsValid: isValid,
     })
@@ -140,13 +144,14 @@ class EduShortSU extends React.Component {
     }
     this.setState({
       uniNameLocal: userInput,
+      uniNameFreeTextLocal: '',
       uniNameUpdated: true,
       uniNameIsValid: isValid
     })
   }
 
   handleUniChange(e) {
-    const userInput = e.currentTarget.value;
+    const userInput = e.currentTarget != undefined ? e.currentTarget.value : e;
     const isValid = userInput.length >= 3;
     if (!isValid) {
       this.setState({
@@ -156,6 +161,7 @@ class EduShortSU extends React.Component {
     }
     this.setState({
       uniNameFreeTextLocal: userInput,
+      uniNameLocal: '',
       uniNameFreeTextUpdated: true,
       uniNameIsValid: isValid
     })
@@ -285,7 +291,7 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
+  const { eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
   const { country, tflink, step, currentStep, totalMenteeSteps } = this.props;
 
   const eetStatusUKOptions = [
@@ -362,7 +368,7 @@ class EduShortSU extends React.Component {
                   required
                 />
               </div>
-              {country === 'GBR' && eetStatusLocal === 'sch' && (
+              {country === 'GBR' && eetStatusLocal === 'sch' && schNameFreeTextLocal === '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your School / College?</label>
                   <div className="autocompleter">
@@ -383,9 +389,25 @@ class EduShortSU extends React.Component {
                       noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
                     >
-                      <EduNotOnListCTA country={country} eetStatusLocal={eetStatusLocal}/>
+                      <EduNotOnListCTA
+                        country={country}
+                        eetStatusLocal={eetStatusLocal}
+                        handleSchChange={this.handleSchChange}
+                      />
                     </Autocomplete>
                   </div>
+                </div>
+              )}
+              {country === 'GBR' && schNameFreeTextLocal != '' && (
+                <div className="form-group eduName">
+                  <div className="descriptor alignLeft">
+                    School name: <strong>{schNameFreeTextLocal}</strong>
+                  </div>
+                  <EditEduFreeText
+                    country={country}
+                    eetStatusLocal={eetStatusLocal}
+                    handleSchChange={this.handleSchChange}
+                  />
                 </div>
               )}
               {country != 'GBR' && eetStatusLocal === 'sch' && (
@@ -419,7 +441,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {country === 'GBR' && eetStatusLocal === 'uni' && (
+              {country === 'GBR' && eetStatusLocal === 'uni' && uniNameFreeTextLocal === '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft">What&#39;s the name of your University?</label>
                   <div className="autocompleter">
@@ -440,9 +462,25 @@ class EduShortSU extends React.Component {
                       noSuggestionsCTAclass="ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn"
                       required
                     >
-                      <EduNotOnListCTA country={country} eetStatusLocal={eetStatusLocal}/>
+                      <EduNotOnListCTA
+                        country={country}
+                        eetStatusLocal={eetStatusLocal}
+                        handleUniChange={this.handleUniChange}
+                      />
                     </Autocomplete>
                   </div>
+                </div>
+              )}
+              {country === 'GBR' && uniNameFreeTextLocal != '' && (
+                <div className="form-group eduName">
+                  <div className="descriptor alignLeft">
+                    University name: <strong>{uniNameFreeTextLocal}</strong>
+                  </div>
+                  <EditEduFreeText
+                    country={country}
+                    eetStatusLocal={eetStatusLocal}
+                    handleUniChange={this.handleUniChange}
+                  />
                 </div>
               )}
               {country != 'GBR' && eetStatusLocal === 'uni' && (
