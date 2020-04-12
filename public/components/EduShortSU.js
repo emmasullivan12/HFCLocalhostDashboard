@@ -400,7 +400,7 @@ class EduShortSU extends React.Component {
               )}
               {country === 'GBR' && schNameFreeTextLocal != '' && (
                 <div className="form-group eduName">
-                  <div className="descriptor alignLeft">
+                  <div className="descriptor alignLeft overflow-ellipsis">
                     School name: <strong>{schNameFreeTextLocal}</strong>
                   </div>
                   <EditEduFreeText

@@ -345,7 +345,8 @@
   width: auto;
   float: right;
   height: auto;
-  padding: .3em 0 0 0;
+  padding: 0;
+  margin-right: 0;
 }
 
 .ModalOpenBtn-PassBtn:hover,
