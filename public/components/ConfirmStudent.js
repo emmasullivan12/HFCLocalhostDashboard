@@ -8,6 +8,7 @@ import "../css/General.css";
 import ProgressCircles from './ProgressCircles.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 import Autocomplete from './Autocomplete.js';
+import NoEduEmail from './NoEduEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';
 
 class ConfirmStudent extends React.Component {
@@ -18,6 +19,8 @@ class ConfirmStudent extends React.Component {
       eduEmailIsValid: '',
       isPersonalEmail: '',
       hasTextBeforeAt: '',
+      hasTextAfterAt: '',
+      endsWithSymbol: '',
       emailFormat: '',
       dm: '',
       sentForReview: '',
@@ -25,11 +28,15 @@ class ConfirmStudent extends React.Component {
     }
     this.onBlur = this.onBlur.bind(this);
     this.checkEduEmail = this.checkEduEmail.bind(this);
+    this.handleNoEduEmail = this.handleNoEduEmail.bind(this);
     this.handleKeyUp = this.handleKeyUp.bind(this);
+    this.handleUpdateEdu = this.handleUpdateEdu.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount() {
     const {country, schName, uniName, eetStatus} = this.props;
+
     if (country === 'GBR') {
       if (eetStatus === 'sch' && schName != '') {
         return Promise.all([lookupUKSchUnis(schName, 'emailFormat', eetStatus)]).then(email => {
@@ -60,10 +67,6 @@ class ConfirmStudent extends React.Component {
   onChange = (e) => {
     this.setState({
       userInput: e.currentTarget.value
-    }, () => {
-      if (this.state.userInput.includes("@") && this.state.userInput.includes(".")) {
-        this.checkEduEmail();
-      }
     })
   }
 
@@ -82,24 +85,36 @@ class ConfirmStudent extends React.Component {
     }
   }
 
+  handleUpdateEdu() {
+    const {updateStep} = this.props;
+    updateStep('didEduEmail', true)
+  }
+
+  handleNoEduEmail() {
+    console.log("handlenoeduemail function goes here")
+  }
+
+  handleSubmit(e) {
+    const {updateStep} = this.props;
+    updateStep('didEduEmail', false)
+
+    // Update status in Typeform sign up to be "emailNeedsPrVerif" and/or "eduNeedsPrVerif" ... this will be used
+    // to render page AFTER email verifcode page and BEFORE dashboard
+
+  }
+
   handleKeyUp(e) {
-    const {userInput, timeout, eduEmailIsValid} = this.state;
+    const {userInput, timeout} = this.state;
 
     clearTimeout(timeout);
 
     this.setState({
       timeout: setTimeout(()=>{
-        if (userInput.includes("@") && userInput.includes(".")) {
-          console.log("checkeduemail function called")
+      //  if (userInput.includes("@") && userInput.includes(".")) {
           this.checkEduEmail()
-        }
-      }, 500)
+    //    }
+      }, 800)
     })
-  /*  if(e.target.checkValidity() && eduEmailIsValid) {
-      e.target.classList.remove('error');
-    } else {
-      e.target.classList.add('error');
-    }*/
   }
 
   checkEduEmail() {
@@ -113,20 +128,32 @@ class ConfirmStudent extends React.Component {
     if (freeEmailDomains.includes(freeEmail)) {
       this.setState({
         eduEmailIsValid: false,
-        isPersonalEmail: true
+        isPersonalEmail: true,
+        sentForReview: ''
       });
     } else if (userInput.indexOf("@") === 0) {
       this.setState({
         eduEmailIsValid: false,
-        hasTextBeforeAt: false,
         isPersonalEmail: false,
+        hasTextBeforeAt: false,
+        sentForReview: ''
       });
     } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.indexOf("@") + 1)) === false) {
       this.setState({
         eduEmailIsValid: false,
+        isPersonalEmail: false,
         hasTextBeforeAt: true,
         hasTextAfterAt: false,
-        isPersonalEmail: false
+        sentForReview: ''
+      });
+    } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.length - 1)) === false) {
+      this.setState({
+        eduEmailIsValid: false,
+        isPersonalEmail: false,
+        hasTextBeforeAt: true,
+        hasTextAfterAt: true,
+        endsWithSymbol: true,
+        sentForReview: ''
       });
     } else if (country === 'GBR') {
       if (eetStatus === 'sch') {
@@ -146,15 +173,14 @@ class ConfirmStudent extends React.Component {
           )
 
           const isValid = (freeEmail === emailFormat + domain);
-          console.log("isValid: "+isValid);
-          console.log("eduEmailIsValid1ST: "+eduEmailIsValid);
           this.setState({
             eduEmailIsValid: isValid,
             isPersonalEmail: false,
             hasTextBeforeAt: true,
-            hasTextAfterAt: true
+            hasTextAfterAt: true,
+            endsWithSymbol: false,
+            sentForReview: ''
           }, () => {
-            console.log("eduEmailIsValid: "+eduEmailIsValid);
             ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
               ? document.getElementById('schEmailInput').classList.remove('error')
               : document.getElementById('schEmailInput').classList.add('error')
@@ -169,7 +195,9 @@ class ConfirmStudent extends React.Component {
             eduEmailIsValid: isValid,
             isPersonalEmail: false,
             hasTextBeforeAt: true,
-            hasTextAfterAt: true
+            hasTextAfterAt: true,
+            endsWithSymbol: false,
+            sentForReview: ''
           }, () => {
             ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
               ? document.getElementById('schEmailInput').classList.remove('error')
@@ -190,7 +218,9 @@ class ConfirmStudent extends React.Component {
               eduEmailIsValid: isValid,
               isPersonalEmail: false,
               hasTextBeforeAt: true,
-              hasTextAfterAt: true
+              hasTextAfterAt: true,
+              endsWithSymbol: false,
+              sentForReview: ''
             }, () => {
               ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
                 ? document.getElementById('schEmailInput').classList.remove('error')
@@ -203,9 +233,11 @@ class ConfirmStudent extends React.Component {
               eduEmailIsValid: isValid,
               isPersonalEmail: false,
               hasTextBeforeAt: true,
-              hasTextAfterAt: true
+              hasTextAfterAt: true,
+              endsWithSymbol: false,
+              sentForReview: ''
             }, () => {
-              ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
+              ( eduEmailIsValid
                 ? document.getElementById('schEmailInput').classList.remove('error')
                 : document.getElementById('schEmailInput').classList.add('error')
               )
@@ -220,7 +252,9 @@ class ConfirmStudent extends React.Component {
             eduEmailIsValid: isValid,
             isPersonalEmail: false,
             hasTextBeforeAt: true,
-            hasTextAfterAt: true
+            hasTextAfterAt: true,
+            endsWithSymbol: false,
+            sentForReview: ''
           }, () => {
             ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
               ? document.getElementById('schEmailInput').classList.remove('error')
@@ -237,7 +271,9 @@ class ConfirmStudent extends React.Component {
           eduEmailIsValid: isValid,
           isPersonalEmail: false,
           hasTextBeforeAt: true,
-          hasTextAfterAt: true
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          sentForReview: ''
         }, () => {
           ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
             ? document.getElementById('schEmailInput').classList.remove('error')
@@ -251,7 +287,9 @@ class ConfirmStudent extends React.Component {
           eduEmailIsValid: true,
           isPersonalEmail: false,
           hasTextBeforeAt: true,
-          hasTextAfterAt: true
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          sentForReview: '1'
         }, () => {
           ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
             ? document.getElementById('schEmailInput').classList.remove('error')
@@ -267,7 +305,9 @@ class ConfirmStudent extends React.Component {
         eduEmailIsValid: true,
         isPersonalEmail: false,
         hasTextBeforeAt: true,
-        hasTextAfterAt: true
+        hasTextAfterAt: true,
+        endsWithSymbol: false,
+        sentForReview: '1'
       }, () => {
         ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
           ? document.getElementById('schEmailInput').classList.remove('error')
@@ -278,32 +318,30 @@ class ConfirmStudent extends React.Component {
   }
 
   canBeSubmitted() {
-    const {userInput, eduEmailIsValid, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, sentForReview} = this.state;
+    const {userInput, eduEmailIsValid, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, sentForReview} = this.state;
     const {eetStatus} = this.props;
 
     if (eetStatus === 'sch' || eetStatus === 'uni') {
-      if (userInput != '' && (eduEmailIsValid || sentForReview != '') && !isPersonalEmail && hasTextBeforeAt && hasTextAfterAt) {
+      if (userInput != '' && (eduEmailIsValid || sentForReview != '') && !isPersonalEmail && hasTextBeforeAt && hasTextAfterAt && !endsWithSymbol) {
         return true;
       } else {
         return false;
       }
 
     } else if (eetStatus === 'job' || eetStatus === 'train' || eetStatus === 'none') {
-      if (sentForReview != '' && hasTextBeforeAt && hasTextAfterAt) {
+      if (sentForReview != '' && hasTextBeforeAt && hasTextAfterAt && !endsWithSymbol) {
         return true;
       } else {
         return false;
       }
     }
-
   }
 
   render() {
     const { onChange, handleKeyUp } = this;
-    const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName } = this.props;
-    const { eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt } = this.state;
+    const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider } = this.props;
+    const { eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol } = this.state;
     const isEnabled = this.canBeSubmitted();
-
 
     return (
       <React.Fragment>
@@ -315,7 +353,14 @@ class ConfirmStudent extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group">
-                <label className="descriptor alignLeft">Your {userEduName} Email Address</label>
+                <label className="descriptor alignLeft">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
+                <NoEduEmail
+                  country={country}
+                  eetStatus={eetStatus}
+                  handleNoEduEmail={this.handleNoEduEmail}
+                  currCo={currCo}
+                  currTrainingProvider={currTrainingProvider}
+                />
                 <input
                   type="email"
                   name="schEmail"
@@ -325,7 +370,7 @@ class ConfirmStudent extends React.Component {
                   onKeyUp={handleKeyUp}
                   value={userInput}
                   className="form-control-std verifyForm"
-                  placeholder={"Your " + userEduName + " email address"}
+                  placeholder={"Your " + (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') + " email address"}
                   autoComplete="off"
                   autoCorrect="off"
                   spellCheck="off"
@@ -338,7 +383,7 @@ class ConfirmStudent extends React.Component {
                   <div className="descriptor prompt error verifyForm alignLeft">
                     This must be a valid {userEduName} email address
                   </div>
-                  {hasTextBeforeAt && hasTextAfterAt && (
+                  {hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
                     <label className="checkbox-container alignLeft textLeft">This is a valid {userEduName} email. Submit for review
                       <input
                         type="checkbox"
@@ -356,12 +401,14 @@ class ConfirmStudent extends React.Component {
               {isPersonalEmail === true && (
                 <div className="descriptor prompt error verifyForm alignLeft textLeft">This can&#39;t be a personal email address</div>
               )}
-              <button type="submit" disabled={!isEnabled} className="Submit-btn fullWidth">
+              <button type="button" onClick={this.handleSubmit} disabled={!isEnabled} className="Submit-btn fullWidth">
                 Next
               </button>
-              <button type="button" className="Submit-btn BlankBtn Grey fullWidth">
-                or Change {eetStatus === 'uni' ? 'University' : country === 'GBR' ? 'School/College' : 'High School'}
-              </button>
+              {eetStatus === 'sch' || eetStatus === 'uni' && (
+                <button type="button" onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
+                  or Change {eetStatus === 'uni' ? 'University' : country === 'GBR' ? 'School/College' : 'High School'}
+                </button>
+              )}
             </form>
           </div>
         </div>

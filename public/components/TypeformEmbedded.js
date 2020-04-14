@@ -12,11 +12,14 @@ class TypeformEmbedded extends Component {
     const embedElement = document.querySelector('.embedded-typeform'); // NOTE: `.target-dom-node` is the target DOM element from your website or web app
 //    const mentortflink = 'https://prospela.typeform.com/to/A84jY2?fname='+this.props.fname+'&uid='+this.props.id;
 //    const studenttflink = 'https://prospela.typeform.com/to/XF3Fus?fname='+this.props.fname+'&uid='+this.props.id;
-    const tflink = this.props.tflink;
+    const {tflink, updateStep} = this.props;
+    console.log("updateStepoutside of widget: "+updateStep)
+    console.log(updateStep)
 
     typeformEmbed.makeWidget(
       embedElement,
       tflink,
+      updateStep,
       {
         hideFooter: false,
         hideHeaders: true,
@@ -24,6 +27,10 @@ class TypeformEmbedded extends Component {
         hideScrollbars: true,
         onSubmit: function () {
           alert('Typeform submitted!');
+          console.log("updateStep INSIDE widget: "+updateStep)
+          console.log(updateStep)
+          console.log('Typeform submitted! Should be redirected but typeform may block it');
+          updateStep('didShortSU');
         }
       }
     )

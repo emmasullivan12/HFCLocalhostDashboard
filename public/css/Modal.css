@@ -326,7 +326,8 @@
 }
 
 .ModalOpenBtn-noSuggestionsCTABtn,
-.ModalOpenBtn-eduFreeTextBtn {
+.ModalOpenBtn-eduFreeTextBtn,
+.ModalOpenBtn-noEduEmailBtn {
   background: none!important;
   border: none;
   color: #c7c7c7;
@@ -341,24 +342,35 @@
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
-.ModalOpenBtn-eduFreeTextBtn {
+.ModalOpenBtn-eduFreeTextBtn,
+.ModalOpenBtn-noEduEmailBtn {
   width: auto;
   float: right;
   height: auto;
   padding: 0;
   margin-right: 0;
+  font-size: 12px;
+}
+.ModalOpenBtn-eduFreeTextBtn{
+  margin-top: .3rem;
+}
+
+.ModalOpenBtn-noEduEmailBtn{
+  margin-top: .1rem;
 }
 
 .ModalOpenBtn-PassBtn:hover,
 .ModalOpenBtn-noSuggestionsCTABtn:hover,
-.ModalOpenBtn-eduFreeTextBtn:hover {
+.ModalOpenBtn-eduFreeTextBtn:hover,
+.ModalOpenBtn-noEduEmailBtn:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
 
 .ModalOpenBtn-PassBtn:focus,
 .ModalOpenBtn-noSuggestionsCTABtn:focus,
-.ModalOpenBtn-eduFreeTextBtn:focus {
+.ModalOpenBtn-eduFreeTextBtn:focus,
+.ModalOpenBtn-noEduEmailBtn:focus {
   outline: 0;
   box-shadow: none;
   color: rgba(63,63,63,.7);

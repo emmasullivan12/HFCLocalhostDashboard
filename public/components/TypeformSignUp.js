@@ -15,7 +15,7 @@ import TypeformEmbedded from './TypeformEmbedded.js';
 import {lookupUKSchUnis} from './UserDetail.js';
 //import VerifyStudentProps from './VerifyStudentProps.js';
 
-function VerifyStudentProps(eetStatus, userEduName) {
+function VerifyStudentProps(eetStatus, userEduName, currCo, currTrainingProvider) {
   let confirmStudentProps = {};
 
   switch (eetStatus) {
@@ -36,7 +36,12 @@ function VerifyStudentProps(eetStatus, userEduName) {
     case 'job':
     case 'train':
     case 'none':
-      return 'EM & DEX TO DECIDE WHAT TO REQUEST FROM JOB/TRAIN/NONE PEOPLE';
+      confirmStudentProps = {
+        subheader: 'Tell us your student email address so we can send you a verification code',
+        title: 'Verify your account',
+        fullWidth: false,
+      }
+      return confirmStudentProps;
   }
 }
 
@@ -100,18 +105,25 @@ class TypeformSignUp extends Component {
     super();
     this.state = {
       isLoading: true,
+      step: 'didShortSU', // set to did1stSU when first loaded
       userEduName: '',
+      updatingEdu: '',
       country: 'GBR',
-      eetStatus: '',
-      schName: '',
+      eetStatus: 'sch',
+      schName: '2',
       schNameFreeText: '',
       uniName: '',
       uniNameFreeText: '',
-      currCo: '',
-      currTrainingProvider: ''
+  //    changedSch: '',
+  //    changedUni: '',
+      currCo: 'GE',
+      currTrainingProvider: 'Escape Studios'
     }
+    this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);
     this.updateEetStatus = this.updateEetStatus.bind(this);
+//    this.updatingEdu = this.updatingEdu.bind(this);
+    this.updateStep = this.updateStep.bind(this);
     this.updateUKSch = this.updateUKSch.bind(this);
     this.updateSchFreeText = this.updateSchFreeText.bind(this);
     this.updateUKUni = this.updateUKUni.bind(this);
@@ -121,10 +133,13 @@ class TypeformSignUp extends Component {
   }
 
   componentDidMount() {
-    const {country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
-    const step = 'didCountry';
+    this.getUserEduName();
+  }
 
-    if (step === 'didShortSU') {
+  getUserEduName() {
+    const {step, updatingEdu, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
+
+    if (step === 'didShortSU' || (step === 'didCountry' && updatingEdu)) {
       if (eetStatus === 'sch') {
         if (country === 'GBR') {
 
@@ -172,8 +187,54 @@ class TypeformSignUp extends Component {
             userEduName: uniNameFreeText
           })
         }
+      } else {
+        this.setState({
+          isLoading: false
+        })
       }
     }
+  }
+
+  updateStep(stepJustDone, updatingEdu) {
+    if (stepJustDone === 'didCountry') {
+      this.setState({
+        step: 'didCountry'
+      })
+      return;
+
+    } else if (stepJustDone === 'didEdu' && updatingEdu != true) {
+      this.setState({
+        step: 'didEdu'
+      })
+      return;
+
+    } else if (stepJustDone === 'didEdu' && updatingEdu === true) {
+      return Promise.all([this.getUserEduName()]).then(res => {
+        this.setState({
+          step: 'didShortSU' // User updated education & has already done Shortsu so jump forward to didShortSU and confirm email
+        })
+      });
+
+    } else if (stepJustDone === 'didShortSU') {
+      this.setState({
+        step: 'didShortSU'
+      })
+      return;
+
+    } else if (stepJustDone === 'didEduEmail' && updatingEdu === true) {
+      this.setState({
+        step: 'didCountry', // User wants to go back to update education
+        updatingEdu: true
+      })
+      return;
+
+    } else if (stepJustDone === 'didEduEmail' && updatingEdu != true) {
+      this.setState({
+        step: 'didEduEmail'
+      })
+      return;
+    }
+
   }
 
   updateCountry(userInput) {
@@ -194,27 +255,35 @@ class TypeformSignUp extends Component {
     })
   }
 
-  updateUKSch(userInput) {
+  updateUKSch(userInput, callback) {
     this.setState({
       schName: userInput
+    }, () => {
+      callback();
     })
   }
 
-  updateSchFreeText(userInput) {
+  updateSchFreeText(userInput, callback) {
     this.setState({
       schNameFreeText: userInput
+    }, () => {
+      callback();
     })
   }
 
-  updateUKUni(userInput) {
+  updateUKUni(userInput, callback) {
     this.setState({
       uniName: userInput
+    }, () => {
+      callback();
     })
   }
 
-  updateUniFreeText(userInput) {
+  updateUniFreeText(userInput, callback) {
     this.setState({
       uniNameFreeText: userInput
+    }, () => {
+      callback();
     })
   }
 
@@ -231,9 +300,8 @@ class TypeformSignUp extends Component {
   }
 
   render() {
-    const {isLoading, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider} = this.state;
+    const {isLoading, step, updatingEdu, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider} = this.state;
     const userRole = 'mentee';
-    const step = 'didCountry';
     const totalMenteeSteps = 4;
     const totalMentorSteps = 2;
     const fname = 'Emma';
@@ -252,6 +320,7 @@ class TypeformSignUp extends Component {
                 currentStep="1"
                 totalMenteeSteps={totalMenteeSteps}
                 updateCountry={this.updateCountry}
+                updateStep={this.updateStep}
               />
             </SignUpScreenTemplate>
           );
@@ -263,6 +332,8 @@ class TypeformSignUp extends Component {
                 country={country}
                 currentStep="2"
                 totalMenteeSteps={totalMenteeSteps}
+                updatingEdu={updatingEdu}
+                eetStatus={updatingEdu ? eetStatus : ''}
                 updateEetStatus={this.updateEetStatus}
                 updateUKSch={this.updateUKSch}
                 updateSchFreeText={this.updateSchFreeText}
@@ -270,6 +341,7 @@ class TypeformSignUp extends Component {
                 updateUniFreeText={this.updateUniFreeText}
                 updateCurrCo={this.updateCurrCo}
                 updateCurrTrainingProv={this.updateCurrTrainingProv}
+                updateStep={this.updateStep}
               />
             </SignUpScreenTemplate>
           );
@@ -283,6 +355,7 @@ class TypeformSignUp extends Component {
                     step={step}
                     currentStep="3"
                     totalMenteeSteps={totalMenteeSteps}
+                    updateStep={this.updateStep}
                   />
                 </SignUpScreenTemplate>
               )}
@@ -291,7 +364,7 @@ class TypeformSignUp extends Component {
         case 'didShortSU':
           return (
             !isLoading && (
-              <SignUpScreenTemplate {...VerifyStudentProps(eetStatus, userEduName)}>
+              <SignUpScreenTemplate {...VerifyStudentProps(eetStatus, userEduName, currCo, currTrainingProvider)}>
                 <ConfirmStudent
                   step={step}
                   currentStep="4"
@@ -303,9 +376,16 @@ class TypeformSignUp extends Component {
                   eetStatus={eetStatus}
                   country={country}
                   userEduName={userEduName}
+                  updateStep={this.updateStep}
+                  currCo={currCo}
+                  currTrainingProvider={currTrainingProvider}
                 />
               </SignUpScreenTemplate>
             )
+          );
+        case 'didEduEmail':
+          return (
+            console.log("user done, return to App.js for next steps")
           );
       }
     } else {

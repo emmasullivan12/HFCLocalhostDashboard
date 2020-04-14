@@ -73,11 +73,13 @@ class CountryShortSU extends React.Component {
 
   // Dex to use save this down for individual's profile i.e. user/mentor/mentee.timeZone
   handleSubmit(e) {
+    const {updateStep} = this.props;
     console.log("handlesubmit function triggered")
     var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const {updateCountry} = this.props;
     const {countryLocal} = this.state;
     updateCountry(countryLocal);
+    updateStep('didCountry');
   }
 
   canBeSubmitted(countries, states, provinces, ukCounties, ieCounties) {

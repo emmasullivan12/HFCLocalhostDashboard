@@ -199,7 +199,7 @@ class Dashboard extends Component{
   closeMenu(e) {
     const clientMenu = document.getElementById("clientMenu");
     const clientMenuBtn = document.getElementById("nav-mainMenu");
-    
+
     if (window.innerWidth < 760 && clientMenu.style.left != "-220px" && !clientMenuBtn.contains(e.target)) {
       clientMenu.style.left = "-220px";
       clientMenu.style.zIndex = "0";
@@ -314,7 +314,9 @@ function Login() {
 */
 function MenteeSteps({userRole}) {
   const step = 'didShortSU';
-//    const step = this.props.users.step;
+  const emailNeedsPrVerif = ''; // Need to update this based on if needs Prospela to review email format
+  const eduNeedsPrVerif = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
+
       switch (step) {
         case 'did1stSU':
         case 'didCountry':
@@ -338,6 +340,12 @@ function MenteeSteps({userRole}) {
           </BrowserRouter>
         );
         case 'didEduEmailVerif':
+          if (emailNeedsPrVerif != true && eduNeedsPrVerif != true) {
+            return <Dashboard userRole={userRole}/>
+          } else  {
+            // SHOW THEM PAGE THAT SAYS WE ARE JUST REVIEWING YOUR DETAILS AND THEN WILL GET BACK TO YOU
+            return console.log("show we are just reviewing your details screen");
+          }
         case 'didReviewVerif':
         case 'autoEnroll':
         case 'joinedProg':
