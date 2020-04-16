@@ -24,7 +24,7 @@ class ConfirmStudent extends React.Component {
       endsWithSymbol: '',
       emailFormat: '',
       dm: '',
-      sentForReview: '',
+      emailSentForReview: '',
       timeout: 0
     }
     this.onBlur = this.onBlur.bind(this);
@@ -92,14 +92,15 @@ class ConfirmStudent extends React.Component {
   }
 
   handleNoEduEmail() {
-    console.log("handlenoeduemail function goes here")
+    const {updateStep} = this.props;
+    updateStep('didEduEmail', false)
   }
 
   handleSubmit(e) {
     const {updateStep} = this.props;
     updateStep('didEduEmail', false)
 
-    // Update status in Typeform sign up to be "emailNeedsPrVerif" and/or "eduNeedsPrVerif" ... this will be used
+    // Update status in TypeformSignUp.js or App.js to be "emailNeedsPrVerif" and/or "eduNeedsPrVerif" ... this will be used
     // to render page AFTER email verifcode page and BEFORE dashboard
 
   }
@@ -128,14 +129,14 @@ class ConfirmStudent extends React.Component {
       this.setState({
         eduEmailIsValid: false,
         isPersonalEmail: true,
-        sentForReview: ''
+        emailSentForReview: ''
       });
     } else if (userInput.includes(".") != true) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
         containsDot: false,
-        sentForReview: ''
+        emailSentForReview: ''
       });
     } else if (userInput.indexOf("@") === 0) {
       this.setState({
@@ -143,7 +144,7 @@ class ConfirmStudent extends React.Component {
         isPersonalEmail: false,
         containsDot: true,
         hasTextBeforeAt: false,
-        sentForReview: ''
+        emailSentForReview: ''
       });
     } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.indexOf("@") + 1)) === false) {
       this.setState({
@@ -152,7 +153,7 @@ class ConfirmStudent extends React.Component {
         containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: false,
-        sentForReview: ''
+        emailSentForReview: ''
       });
     } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.length - 1)) === false) {
       this.setState({
@@ -162,7 +163,7 @@ class ConfirmStudent extends React.Component {
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: true,
-        sentForReview: ''
+        emailSentForReview: ''
       });
     } else if (country === 'GBR') {
       if (eetStatus === 'sch') {
@@ -189,7 +190,7 @@ class ConfirmStudent extends React.Component {
             hasTextBeforeAt: true,
             hasTextAfterAt: true,
             endsWithSymbol: false,
-            sentForReview: ''
+            emailSentForReview: ''
           }, () => {
             ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
               ? document.getElementById('schEmailInput').classList.remove('error')
@@ -208,7 +209,7 @@ class ConfirmStudent extends React.Component {
             hasTextBeforeAt: true,
             hasTextAfterAt: true,
             endsWithSymbol: false,
-            sentForReview: ''
+            emailSentForReview: ''
           }, () => {
             ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
               ? document.getElementById('schEmailInput').classList.remove('error')
@@ -232,7 +233,7 @@ class ConfirmStudent extends React.Component {
               hasTextBeforeAt: true,
               hasTextAfterAt: true,
               endsWithSymbol: false,
-              sentForReview: ''
+              emailSentForReview: ''
             }, () => {
               ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
                 ? document.getElementById('schEmailInput').classList.remove('error')
@@ -248,7 +249,7 @@ class ConfirmStudent extends React.Component {
               hasTextBeforeAt: true,
               hasTextAfterAt: true,
               endsWithSymbol: false,
-              sentForReview: ''
+              emailSentForReview: ''
             }, () => {
               ( eduEmailIsValid
                 ? document.getElementById('schEmailInput').classList.remove('error')
@@ -268,7 +269,7 @@ class ConfirmStudent extends React.Component {
             hasTextBeforeAt: true,
             hasTextAfterAt: true,
             endsWithSymbol: false,
-            sentForReview: ''
+            emailSentForReview: ''
           }, () => {
             ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
               ? document.getElementById('schEmailInput').classList.remove('error')
@@ -276,6 +277,25 @@ class ConfirmStudent extends React.Component {
             )
           });
         }
+
+      // if user is eetstatus: job, train or nonw then do general check
+      } else {
+
+        const isValid = (userInput.indexOf(".sch.uk") == userInput.length - 7 || userInput.indexOf(".gov.uk") == userInput.length - 7 || userInput.indexOf(".ac.uk") == userInput.length - 6);
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          containsDot: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          emailSentForReview: ''
+        }, () => {
+          ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
+            ? document.getElementById('schEmailInput').classList.remove('error')
+            : document.getElementById('schEmailInput').classList.add('error')
+          )
+        });
       }
     } else if (country === 'USA') {
       if (eetStatus === 'uni') {
@@ -288,7 +308,7 @@ class ConfirmStudent extends React.Component {
           hasTextBeforeAt: true,
           hasTextAfterAt: true,
           endsWithSymbol: false,
-          sentForReview: ''
+          emailSentForReview: ''
         }, () => {
           ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
             ? document.getElementById('schEmailInput').classList.remove('error')
@@ -305,7 +325,26 @@ class ConfirmStudent extends React.Component {
           hasTextBeforeAt: true,
           hasTextAfterAt: true,
           endsWithSymbol: false,
-          sentForReview: '1'
+          emailSentForReview: '1'
+        }, () => {
+          ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
+            ? document.getElementById('schEmailInput').classList.remove('error')
+            : document.getElementById('schEmailInput').classList.add('error')
+          )
+        });
+
+      // if user is eetstatus: job, train or nonw then do general check
+      } else {
+
+        const isValid = (userInput.indexOf(".edu") == userInput.length - 4);
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          containsDot: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          emailSentForReview: '1'
         }, () => {
           ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
             ? document.getElementById('schEmailInput').classList.remove('error')
@@ -324,7 +363,7 @@ class ConfirmStudent extends React.Component {
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: false,
-        sentForReview: '1'
+        emailSentForReview: '1'
       }, () => {
         ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
           ? document.getElementById('schEmailInput').classList.remove('error')
@@ -335,18 +374,18 @@ class ConfirmStudent extends React.Component {
   }
 
   canBeSubmitted() {
-    const {userInput, eduEmailIsValid, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, sentForReview} = this.state;
+    const {userInput, eduEmailIsValid, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, emailSentForReview} = this.state;
     const {eetStatus} = this.props;
 
     if (eetStatus === 'sch' || eetStatus === 'uni') {
-      if (userInput != '' && (eduEmailIsValid || sentForReview != '') && !isPersonalEmail && hasTextBeforeAt && hasTextAfterAt && !endsWithSymbol) {
+      if (userInput != '' && (eduEmailIsValid || emailSentForReview != '') && !isPersonalEmail && hasTextBeforeAt && hasTextAfterAt && !endsWithSymbol) {
         return true;
       } else {
         return false;
       }
 
     } else if (eetStatus === 'job' || eetStatus === 'train' || eetStatus === 'none') {
-      if (sentForReview != '' && hasTextBeforeAt && hasTextAfterAt && !endsWithSymbol) {
+      if (emailSentForReview != '' && hasTextBeforeAt && hasTextAfterAt && !endsWithSymbol) {
         return true;
       } else {
         return false;
@@ -371,13 +410,6 @@ class ConfirmStudent extends React.Component {
             <form autoComplete="off">
               <div className="form-group">
                 <label className="descriptor alignLeft">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
-                <NoEduEmail
-                  country={country}
-                  eetStatus={eetStatus}
-                  handleNoEduEmail={this.handleNoEduEmail}
-                  currCo={currCo}
-                  currTrainingProvider={currTrainingProvider}
-                />
                 <input
                   type="email"
                   name="schEmail"
@@ -394,17 +426,24 @@ class ConfirmStudent extends React.Component {
                   autoFocus
                   required
                 />
+                <NoEduEmail
+                  country={country}
+                  eetStatus={eetStatus}
+                  handleNoEduEmail={this.handleNoEduEmail}
+                  currCo={currCo}
+                  currTrainingProvider={currTrainingProvider}
+                />
               </div>
               {eduEmailIsValid === false && isPersonalEmail === false && (
                 <React.Fragment>
-                  <div className="descriptor prompt error verifyForm alignLeft">
-                    This must be a valid {userEduName} email address
+                  <div className="descriptor prompt error verifyForm otherOption alignLeft">
+                    This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email address
                   </div>
                   {containsDot != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
-                    <label className="checkbox-container alignLeft textLeft">This is a valid {userEduName} email. Submit for review
+                    <label className="checkbox-container alignLeft textLeft">This is a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email. Submit for review
                       <input
                         type="checkbox"
-                        name="sentForReview"
+                        name="emailSentForReview"
                         className="SubmitMatch-input"
                         value="1"
                         onClick={this.handleMessageChange}

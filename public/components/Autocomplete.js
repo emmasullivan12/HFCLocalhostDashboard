@@ -27,9 +27,11 @@ class Autocomplete extends React.Component {
     if (focusOnLoad) {
       document.getElementById("autocompleteBox-"+name).focus();
     }
+    console.log("rendering components from autocomplete")
     if (renderComponents) {
       renderComponents(fileToRender, componentUpdatesState)
     }
+
     handleTabPress(false);
   }
 

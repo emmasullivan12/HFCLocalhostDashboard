@@ -105,14 +105,14 @@ class TypeformSignUp extends Component {
     super();
     this.state = {
       isLoading: true,
-      step: 'didShortSU', // set to did1stSU when first loaded
+      step: 'didCountry', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
       country: 'GBR',
-      eetStatus: 'job',
+      eetStatus: 'sch',
       schName: '2',
       schNameFreeText: '',
-      uniName: '',
+      uniName: '2',
       uniNameFreeText: '',
   //    changedSch: '',
   //    changedUni: '',

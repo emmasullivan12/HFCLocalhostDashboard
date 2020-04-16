@@ -344,19 +344,20 @@
 
 .ModalOpenBtn-eduFreeTextBtn,
 .ModalOpenBtn-noEduEmailBtn {
-  width: auto;
+  width: 6.6rem;
   float: right;
+  text-align: right;
   height: auto;
   padding: 0;
   margin-right: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 .ModalOpenBtn-eduFreeTextBtn{
-  margin-top: .3rem;
+  margin-top: .2rem;
 }
 
 .ModalOpenBtn-noEduEmailBtn{
-  margin-top: .1rem;
+  margin-top: -2.4rem;
 }
 
 .ModalOpenBtn-PassBtn:hover,

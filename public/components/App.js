@@ -314,8 +314,8 @@ function Login() {
 */
 function MenteeSteps({userRole}) {
   const step = 'didShortSU';
-  const emailNeedsPrVerif = ''; // Need to update this based on if needs Prospela to review email format
-  const eduNeedsPrVerif = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
+  const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
+  const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 
       switch (step) {
         case 'did1stSU':
@@ -340,11 +340,11 @@ function MenteeSteps({userRole}) {
           </BrowserRouter>
         );
         case 'didEduEmailVerif':
-          if (emailNeedsPrVerif != true && eduNeedsPrVerif != true) {
+          if (emailSentForReview != true && eduSentForReview != true) {
             return <Dashboard userRole={userRole}/>
           } else  {
             // SHOW THEM PAGE THAT SAYS WE ARE JUST REVIEWING YOUR DETAILS AND THEN WILL GET BACK TO YOU
-            return console.log("show we are just reviewing your details screen");
+            return console.log("show pending prospela review screen");
           }
         case 'didReviewVerif':
         case 'autoEnroll':

@@ -19,7 +19,6 @@ class NoEduEmailContent extends Component {
       currentSitu: '',
       profProfileURL: '',
       urlInputIsValid: '',
-      sentForReview: '',
       messageFromServer: '',
       timeout: 0
     };
@@ -75,21 +74,19 @@ class NoEduEmailContent extends Component {
       e.preventDefault ();
       return;
     } else {
-      const { eetStatus, handleNoEduEmail, updateStep } = this.props;
-      const { emailInput } = this.state;
+      const { eetStatus, handleNoEduEmail } = this.props;
 
       if (eetStatus != "none") {
-        handleNoEduEmail(emailInput, eetStatus)
+        handleNoEduEmail()
       }
 
       // OTHER HANDLER FUNCTIONS FOR OTHER INPUT BOXES
+      // Update pendingreview to = '1'
 
       this.setState({
         messageFromServer: 'We are sending your deets to Prospela!'
       });
 
-      //MIGHT NEED CALLBACK FOR THIS. SEE HOW DID IT IN EDUSHORTSU
-      updateStep('didEduEmail', false)
     }
   }
 
@@ -104,23 +101,20 @@ class NoEduEmailContent extends Component {
     if (freeEmailDomains.includes(freeEmail)) {
       this.setState({
         emailIsValid: false,
-        isPersonalEmail: true,
-        sentForReview: ''
+        isPersonalEmail: true
       });
     } else if (emailInput.includes(".") != true) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
-        containsDot: false,
-        sentForReview: ''
+        containsDot: false
       });
     } else if (emailInput.indexOf("@") === 0) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
         containsDot: true,
-        hasTextBeforeAt: false,
-        sentForReview: ''
+        hasTextBeforeAt: false
       });
     } else if (/^[a-zA-Z()]+$/.test(emailInput.charAt(emailInput.indexOf("@") + 1)) === false) {
       this.setState({
@@ -128,8 +122,7 @@ class NoEduEmailContent extends Component {
         isPersonalEmail: false,
         containsDot: true,
         hasTextBeforeAt: true,
-        hasTextAfterAt: false,
-        sentForReview: ''
+        hasTextAfterAt: false
       });
     } else if (/^[a-zA-Z()]+$/.test(emailInput.charAt(emailInput.length - 1)) === false) {
       this.setState({
@@ -138,8 +131,7 @@ class NoEduEmailContent extends Component {
         containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
-        endsWithSymbol: true,
-        sentForReview: ''
+        endsWithSymbol: true
       });
     } else {
       this.setState({
@@ -148,8 +140,7 @@ class NoEduEmailContent extends Component {
         containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
-        endsWithSymbol: false,
-        sentForReview: '1'
+        endsWithSymbol: false
       });
     }
   }
@@ -232,7 +223,7 @@ class NoEduEmailContent extends Component {
   }*/
 
   canBeSubmitted() {
-    const {emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDot, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, sentForReview} = this.state;
+    const {emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDot, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol} = this.state;
     const {eetStatus} = this.props;
 
     if (eetStatus != 'none') {

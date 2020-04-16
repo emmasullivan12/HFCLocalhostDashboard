@@ -9,6 +9,12 @@ class SignUpScreenTemplate extends React.Component {
 
   render() {
     const {children, subheader, title, fullWidth} = this.props;
+
+    //Converts any HTML tags that were passed as string to HTMl tags
+    /*var parsedSubheader = new DOMParser().parseFromString(subheader, "text/xml");
+    console.log("subheader: "+subheader)
+    console.log(parsedSubheader.firstChild)
+    console.log(parsedSubheader.firstChild.innerHTML)*/
     return (
       <div className="mainContainer">
         <div className="prLogoArea col-12">

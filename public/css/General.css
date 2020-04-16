@@ -168,16 +168,16 @@ hr{
   text-align: center!important;
 }
 .alignLeft{
-  float:left;
+  float:left!important;
 }
 .alignRight{
-  float: right;
+  float: right!important;
 }
 .textLeft{
-  text-align: left;
+  text-align: left!important;
 }
 .textRight{
-  text-align: right;
+  text-align: right!important;
 }
 .left{
   left: 0!important;

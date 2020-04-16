@@ -278,6 +278,10 @@ input[type=text]:disabled{
   margin-top: -2.5rem;
   /* margin-bottom: 1.5rem; */
 }
+.descriptor.prompt.error.verifyForm.otherOption{
+  width: 14rem;
+}
+
 .descriptor.prompt.error.noEduEmailForm{
   margin-top: -1rem;
   margin-bottom: 1.5rem;
