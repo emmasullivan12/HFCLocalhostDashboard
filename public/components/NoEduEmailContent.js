@@ -286,7 +286,7 @@ class NoEduEmailContent extends Component {
                 )}
               </React.Fragment>
             )}
-            <label className="descriptor alignLeft">
+            <label className="descriptor alignLeft" htmlFor="currentSitu">
               Tell us a bit about your current situation
             </label>
             <textarea

@@ -69,7 +69,7 @@ class PassMenteeContent extends Component {
             Why do you want to pass?
           </div>
           <form className="pass-form" id="passMenteeForm">
-            <label className="checkbox-container">Their career aspirations are <strong>not relevant</strong> to my role
+            <label className="checkbox-container" htmlFor="Role">Their career aspirations are <strong>not relevant</strong> to my role
               <input
                 type="checkbox"
                 name="Role"
@@ -79,7 +79,7 @@ class PassMenteeContent extends Component {
               />
               <span className="checkmark" />
             </label>
-            <label className="checkbox-container">They are <strong>not interested in my industry</strong>
+            <label className="checkbox-container" htmlFor="Industry">They are <strong>not interested in my industry</strong>
               <input
                 type="checkbox"
                 name="Industry"
@@ -89,7 +89,7 @@ class PassMenteeContent extends Component {
               />
               <span className="checkmark" />
             </label>
-            <label className="checkbox-container">Not enough relatable <strong>personal interests</strong>
+            <label className="checkbox-container" htmlFor="Interests">Not enough relatable <strong>personal interests</strong>
               <input
                 type="checkbox"
                 name="Interests"
@@ -99,7 +99,7 @@ class PassMenteeContent extends Component {
               />
               <span className="checkmark" />
             </label>
-            <label className="checkbox-container">I dont know enough about the <strong>skills</strong> they want to develop
+            <label className="checkbox-container" htmlFor="Skills">I dont know enough about the <strong>skills</strong> they want to develop
               <input
                 type="checkbox"
                 name="Skills"
@@ -109,7 +109,7 @@ class PassMenteeContent extends Component {
               />
               <span className="checkmark" />
             </label>
-            <label className="checkbox-container">Im <strong>too busy</strong> to take on another mentee
+            <label className="checkbox-container" htmlFor="Busy">Im <strong>too busy</strong> to take on another mentee
               <input
                 type="checkbox"
                 name="Busy"

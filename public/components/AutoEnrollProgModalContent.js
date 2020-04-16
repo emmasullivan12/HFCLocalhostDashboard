@@ -31,7 +31,7 @@ class AutoEnrollProgModalContent extends Component {
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <form className="leftRightPad">
-            <label className="checkbox-container-login" id="tncText">
+            <label className="checkbox-container-login" id="tncText" htmlFor="tanp">
               I agree to share my Prospela profile with the programme admin for the purposes of providing me career advice & support
               <input type="checkbox" id="tncCheckbox" name="tanp" value="1" />
               <span className="checkmark left" id="tncStyle"/>

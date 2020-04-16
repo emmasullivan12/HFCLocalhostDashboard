@@ -15,6 +15,7 @@ class ConfirmStudent extends React.Component {
   constructor () {
     super();
     this.state = {
+      isGeneralError: '',
       userInput: '',
       eduEmailIsValid: '',
       isPersonalEmail: '',
@@ -40,18 +41,35 @@ class ConfirmStudent extends React.Component {
 
     if (country === 'GBR') {
       if (eetStatus === 'sch' && schName != '') {
-        return Promise.all([lookupUKSchUnis(schName, 'emailFormat', eetStatus)]).then(email => {
-          this.setState({
-            emailFormat: email[0].emailFormat.toLowerCase(),
-            dm: email[0].dm != undefined ? email[0].dm : ''
+        return Promise.all([lookupUKSchUnis(schName, 'emailFormat', eetStatus)])
+          .then(email => {
+            this.setState({
+              emailFormat: email[0].emailFormat.toLowerCase(),
+              dm: email[0].dm != undefined ? email[0].dm : '',
+              isGeneralError: false
+            })
           })
-        });
+          .catch(err => {
+            console.log(err.message);
+            this.setState({
+              isGeneralError: true,
+            })
+          })
+
       } else if (eetStatus === 'uni' && uniName != '') {
-        return Promise.all([lookupUKSchUnis(uniName, 'emailFormat', eetStatus)]).then(email => {
-          this.setState({
-            emailFormat: email[0].emailFormat.toLowerCase()
+        return Promise.all([lookupUKSchUnis(uniName, 'emailFormat', eetStatus)])
+          .then(email => {
+            this.setState({
+              emailFormat: email[0].emailFormat.toLowerCase(),
+              isGeneralError: false
+            })
           })
-        });
+          .catch(err => {
+            console.log(err.message);
+            this.setState({
+              isGeneralError: true,
+            })
+          })
       }
     }
   }
@@ -396,7 +414,7 @@ class ConfirmStudent extends React.Component {
   render() {
     const { onChange, handleKeyUp } = this;
     const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider } = this.props;
-    const { containsDot, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol } = this.state;
+    const { isGeneralError, containsDot, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol } = this.state;
     const isEnabled = this.canBeSubmitted();
 
     return (
@@ -407,65 +425,72 @@ class ConfirmStudent extends React.Component {
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>
-            <form autoComplete="off">
-              <div className="form-group">
-                <label className="descriptor alignLeft">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
-                <input
-                  type="email"
-                  name="schEmail"
-                  id="schEmailInput"
-                  onBlur={this.onBlur}
-                  onChange={onChange}
-                  onKeyUp={handleKeyUp}
-                  value={userInput}
-                  className="form-control-std verifyForm"
-                  placeholder={"Your " + (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') + " email address"}
-                  autoComplete="off"
-                  autoCorrect="off"
-                  spellCheck="off"
-                  autoFocus
-                  required
-                />
-                <NoEduEmail
-                  country={country}
-                  eetStatus={eetStatus}
-                  handleNoEduEmail={this.handleNoEduEmail}
-                  currCo={currCo}
-                  currTrainingProvider={currTrainingProvider}
-                />
+            {isGeneralError === true && (
+              <div>
+                Something went wrong. Please try reloading the page.
               </div>
-              {eduEmailIsValid === false && isPersonalEmail === false && (
-                <React.Fragment>
-                  <div className="descriptor prompt error verifyForm otherOption alignLeft">
-                    This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email address
-                  </div>
-                  {containsDot != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
-                    <label className="checkbox-container alignLeft textLeft">This is a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email. Submit for review
-                      <input
-                        type="checkbox"
-                        name="emailSentForReview"
-                        className="SubmitMatch-input"
-                        value="1"
-                        onClick={this.handleMessageChange}
-                        required
-                      />
-                      <span className="checkmark" />
-                    </label>
-                  )}
-                </React.Fragment>
-              )}
-              {isPersonalEmail === true && (
-                <div className="descriptor prompt error verifyForm alignLeft textLeft">This can&#39;t be a personal email address</div>
-              )}
-              <button type="button" onClick={this.handleSubmit} disabled={!isEnabled} className="Submit-btn fullWidth">
-                Next
-              </button>
-              {eetStatus === 'sch' || eetStatus === 'uni' && (
-                <button type="button" onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
-                  or Change {eetStatus === 'uni' ? 'University' : country === 'GBR' ? 'School/College' : 'High School'}
+            )}
+            {isGeneralError != true && (
+              <form autoComplete="off">
+                <div className="form-group">
+                  <label className="descriptor alignLeft" htmlFor="schEmailInput">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
+                  <input
+                    type="email"
+                    name="schEmail"
+                    id="schEmailInput"
+                    onBlur={this.onBlur}
+                    onChange={onChange}
+                    onKeyUp={handleKeyUp}
+                    value={userInput}
+                    className="form-control-std verifyForm"
+                    placeholder={"Your " + (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') + " email address"}
+                    autoComplete="off"
+                    autoCorrect="off"
+                    spellCheck="off"
+                    autoFocus
+                    required
+                  />
+                  <NoEduEmail
+                    country={country}
+                    eetStatus={eetStatus}
+                    handleNoEduEmail={this.handleNoEduEmail}
+                    currCo={currCo}
+                    currTrainingProvider={currTrainingProvider}
+                  />
+                </div>
+                {eduEmailIsValid === false && isPersonalEmail === false && (
+                  <React.Fragment>
+                    <div className="descriptor prompt error verifyForm otherOption alignLeft">
+                      This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email address
+                    </div>
+                    {containsDot != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
+                      <label className="checkbox-container alignLeft textLeft" htmlFor="emailSentForReview">This is a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email. Submit for review
+                        <input
+                          type="checkbox"
+                          name="emailSentForReview"
+                          className="SubmitMatch-input"
+                          value="1"
+                          onClick={this.handleMessageChange}
+                          required
+                        />
+                        <span className="checkmark" />
+                      </label>
+                    )}
+                  </React.Fragment>
+                )}
+                {isPersonalEmail === true && (
+                  <div className="descriptor prompt error verifyForm alignLeft textLeft">This can&#39;t be a personal email address</div>
+                )}
+                <button type="button" onClick={this.handleSubmit} disabled={!isEnabled} className="Submit-btn fullWidth">
+                  Next
                 </button>
-              )}
-            </form>
+                {eetStatus === 'sch' || eetStatus === 'uni' && (
+                  <button type="button" onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
+                    or Change {eetStatus === 'uni' ? 'University' : country === 'GBR' ? 'School/College' : 'High School'}
+                  </button>
+                )}
+              </form>
+            )}
           </div>
         </div>
       </React.Fragment>

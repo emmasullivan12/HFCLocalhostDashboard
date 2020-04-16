@@ -105,6 +105,7 @@ class TypeformSignUp extends Component {
     super();
     this.state = {
       isLoading: true,
+      isGeneralError: '',
       step: 'didCountry', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
@@ -144,12 +145,20 @@ class TypeformSignUp extends Component {
         if (country === 'GBR') {
 
           if (schName != '') {
-            return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)]).then(sch => {
-              this.setState({
-                isLoading: false,
-                userEduName: sch[0].label
+            return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)])
+              .then(sch => {
+                this.setState({
+                  isLoading: false,
+                  userEduName: sch[0].label,
+                  isGeneralError: false
+                })
               })
-            });
+              .catch(err => {
+                console.log(err.message);
+                this.setState({
+                  isGeneralError: true,
+                })
+              })
           } else {
             this.setState({
               isLoading: false,
@@ -168,12 +177,20 @@ class TypeformSignUp extends Component {
         if (country === 'GBR') {
 
           if (uniName != '') {
-            return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)]).then(uni => {
-              this.setState({
-                isLoading: false,
-                userEduName: uni[0].label
+            return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)])
+              .then(uni => {
+                this.setState({
+                  isLoading: false,
+                  userEduName: uni[0].label,
+                  isGeneralError: false
+                })
               })
-            });
+              .catch(err => {
+                console.log(err.message);
+                this.setState({
+                  isGeneralError: true,
+                })
+              })
           } else {
             this.setState({
               isLoading: false,
@@ -209,11 +226,19 @@ class TypeformSignUp extends Component {
       return;
 
     } else if (stepJustDone === 'didEdu' && updatingEdu === true) {
-      return Promise.all([this.getUserEduName()]).then(res => {
-        this.setState({
-          step: 'didShortSU' // User updated education & has already done Shortsu so jump forward to didShortSU and confirm email
+      return Promise.all([this.getUserEduName()])
+        .then(res => {
+          this.setState({
+            step: 'didShortSU', // User updated education & has already done Shortsu so jump forward to didShortSU and confirm email
+            isGeneralError: false
+          })
         })
-      });
+        .catch(err => {
+          console.log(err.message);
+          this.setState({
+            isGeneralError: true,
+          })
+        })
 
     } else if (stepJustDone === 'didShortSU') {
       this.setState({
@@ -300,7 +325,7 @@ class TypeformSignUp extends Component {
   }
 
   render() {
-    const {isLoading, step, updatingEdu, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider} = this.state;
+    const {isGeneralError, isLoading, step, updatingEdu, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider} = this.state;
     const userRole = 'mentee';
     const totalMenteeSteps = 4;
     const totalMentorSteps = 2;
@@ -309,7 +334,11 @@ class TypeformSignUp extends Component {
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
     const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
 
-    if(userRole === 'mentee') {
+    if (isGeneralError === true) {
+      <div>
+        Something went wrong. Please try reloading the page.
+      </div>
+    } else if(userRole === 'mentee') {
       switch (step) {
         case 'did1stSU':
           return (

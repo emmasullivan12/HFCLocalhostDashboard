@@ -9,22 +9,30 @@ function lookupUKSchUnis(i, valueToGet, eetStatus) {
     let uniDetail;
 
     //IMPORT UNI list
-    return import(`./${fileToRender}.js`).then(component => {
-      //LOOK UP VALUETOGET BASED ON ID NUMBER
-      uniDetail = component.default[i];
-      return uniDetail;
-    })
+    return import(`./${fileToRender}.js`)
+      .then(component => {
+        //LOOK UP VALUETOGET BASED ON ID NUMBER
+        uniDetail = component.default[i];
+        return uniDetail;
+      })
+      .catch(err => {
+        console.log("Dex to deal with logging error: "+err.message)
+      })
 
   } else if (eetStatus === 'sch') {
     const fileToRender = valueToGet === 'emailFormat' ? 'UKSchEmails' : 'UKSchs' ;
     let schDetail;
 
     //IMPORT SCH list
-    return import(`./${fileToRender}.js`).then(component => {
-      //LOOK UP VALUETOGET BASED ON ID NUMBER
-      schDetail = component.default[i]
-      return schDetail;
-    })
+    return import(`./${fileToRender}.js`)
+      .then(component => {
+        //LOOK UP VALUETOGET BASED ON ID NUMBER
+        schDetail = component.default[i]
+        return schDetail;
+      })
+      .catch(err => {
+        console.log("Dex to deal with logging error: "+err.message)
+      })
 
   }
 }
@@ -127,25 +135,31 @@ function eduName(schName, schNameFreeText, uniName, uniNameFreeText, eetStatus) 
   if (eetStatus === 'uni') {
 
     if (uniName != '') {
-      return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)]).then(uni => {
-        this.setState({
-          isLoading: false,
-          userEduName: uni
+      return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)])
+        .then(uni => {
+          this.setState({
+            isLoading: false,
+            userEduName: uni
+          })
         })
-      });
-
+        .catch(err => {
+          console.log("Dex to deal with logging error: "+err.message)
+        })
     } else return uniNameFreeText;
 
   } else if (eetStatus === 'sch') {
 
     if (schName != '') {
-      return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)]).then(sch => {
-        this.setState({
-          isLoading: false,
-          userEduName: sch
+      return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)])
+        .then(sch => {
+          this.setState({
+            isLoading: false,
+            userEduName: sch
+          })
         })
-      });
-
+        .catch(err => {
+          console.log("Dex to deal with logging error: "+err.message)
+        })
     } else return schNameFreeText;
   }
 }
