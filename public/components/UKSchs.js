@@ -6401,13 +6401,13 @@ const ukSchs = [
   {value: '6395', label: 'Bachlaw Learning Centre', location: 'Glenbarry, Cornhill, UK' },
   {value: '6396', label: 'Ballikinrain Residential School', location: 'Balfron, Glasgow, UK' },
   {value: '6397', label: 'Balnacraig School', location: 'Perth, UK' },
-  {value: '6398', label: 'Barshare Unit', location: 'Cumnock, UK' },
+  {value: '6398', label: 'Lochnorris SLU', location: 'Cumnock, UK' },
   {value: '6399', label: 'Beatlie School Campus', location: 'Craigshill, Livingston, UK' },
   {value: '6400', label: 'Bothwellpark High School', location: 'Motherwell, UK' },
   {value: '6401', label: 'Braidburn Special School', location: 'Edinburgh, UK' },
   {value: '6402', label: 'Broomlea Primary School', location: 'Glasgow, UK' },
   {value: '6403', label: 'Buchanan High', location: 'Coatbridge, UK' },
-  {value: '6404', label: 'Burnhouse School', location: 'Whitburn, West Lothian, UK' },
+  {value: '6404', label: 'Burnhouse Skills Centre', location: 'Whitburn, West Lothian, UK' },
   {value: '6405', label: 'Calaiswood School', location: 'Duloch Park, Dunfermline, UK' },
   {value: '6406', label: 'Camphill Rudolf Steiner Schools', location: 'Bieldside, Aberdeen, UK' },
   {value: '6407', label: 'Campsie View School', location: 'Lenzie, UK' },
@@ -6423,7 +6423,7 @@ const ukSchs = [
   {value: '6417', label: 'Common Thread Dumfries', location: 'Durisdeer, Thornhill, UK' },
   {value: '6418', label: 'Common Thread Inverness', location: 'Bunachton, Inverness, UK' },
   {value: '6419', label: 'Connolly Campus School', location: 'Blackburn, West Lothian, UK' },
-  {value: '6420', label: 'Corseford Residential School', location: 'Kilbarchan, Renfrewshire, UK' },
+  {value: '6420', label: 'Corseford School', location: 'Kilbarchan, Renfrewshire, UK' },
   {value: '6421', label: 'Craighalbert-Scottish Centre for Children with Motor Impairments', location: 'Cumbernauld, UK' },
   {value: '6422', label: 'Craigmarloch School', location: 'Port Glasgow, UK' },
   {value: '6423', label: 'Croftcroighn Primary School', location: 'Glasgow, UK' },
@@ -6488,7 +6488,7 @@ const ukSchs = [
   {value: '6482', label: 'Lochies School', location: 'Sauchie, UK' },
   {value: '6483', label: 'Lomond View Academy', location: 'Greenock, UK' },
   {value: '6484', label: 'Maben House', location: 'Lochmaben, Dumfries, UK' },
-  {value: '6485', label: 'Mariner Support Service', location: 'Falkirk, UK' },
+  {value: '6485', label: 'Inclusion and Wellbeing Service', location: 'Falkirk, UK' },
   {value: '6486', label: 'Mary Russell School', location: 'Paisley, UK' },
   {value: '6487', label: 'Mavisbank School', location: 'Airdrie, UK' },
   {value: '6488', label: 'Merkland School', location: 'Kirkintilloch, UK' },
@@ -6552,7 +6552,7 @@ const ukSchs = [
   {value: '6546', label: 'Sycamore School', location: 'Dunfermline, Fife, UK' },
   {value: '6547', label: 'The Choices Programme', location: 'Clydebank, UK' },
   {value: '6548', label: 'The New School Butterstone', location: 'Dunkeld, Perthshire, UK' },
-  {value: '6549', label: 'The Wilton Centre', location: 'Hawick, UK' },
+  {value: '6549', label: 'The Arches', location: 'Hawick, UK' },
   {value: '6550', label: 'Top Services', location: 'Pathhead, UK' },
   {value: '6551', label: 'Troup House School', location: 'Banff, UK' },
   {value: '6552', label: 'Victoria Park School', location: 'Carluke, UK' },
@@ -7634,6 +7634,8 @@ const ukSchs = [
   {value: '7628', label: 'Sperrinview Special School', location: 'Dungannon, Tyrone, UK' },
   {value: '7629', label: 'Lisanally Special School', location: 'Armagh, Armagh, UK' },
 
+//added later
+  {value: '7630', label: 'Bertha Park High School', location: 'Perth, UK' }, //new sch in Scotland
 ]
 
 export default ukSchs;

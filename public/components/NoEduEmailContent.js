@@ -2,45 +2,66 @@
 
 import React, { Component } from "react";
 
+import {isURL} from './GeneralFunctions.js';
+
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class NoEduEmailContent extends Component {
   constructor() {
     super();
     this.state = {
-      jobEmail: '',
-      trainEmail: '',
+      emailInput: '',
       emailIsValid: '',
       isPersonalEmail: '',
+      containsDot: '',
       hasTextBeforeAt: '',
       hasTextAfterAt: '',
       endsWithSymbol: '',
+      currentSitu: '',
+      profProfileURL: '',
+      urlInputIsValid: '',
       sentForReview: '',
       messageFromServer: '',
       timeout: 0
     };
-//    this.onBlur = this.onBlur.bind(this);
+    this.onBlur = this.onBlur.bind(this);
     this.checkEmail = this.checkEmail.bind(this);
+    this.handleURLKeyUp = this.handleURLKeyUp.bind(this);
     this.handleEmailKeyUp = this.handleEmailKeyUp.bind(this);
   }
 
-  componentDidMount(){
+/*  componentDidMount(){
     const {eetStatus} = this.props;
     eetStatus != 'none'
       ? document.getElementById("notStudentEmail").focus()
-      : null
-  }
+      : document.getElementById("currentSitu").focus()
+  }*/
 
-/*  onBlur(e) {
+  onBlur(e) {
     console.log("onblur triggered")
-    const {emailIsValid} = this.state;
+    const {emailInput, emailIsValid, currentSitu, profProfileURL, urlInputIsValid} = this.state;
     const {eetStatus} = this.props;
 
-    if(e.target.checkValidity() && (eetStatus === 'job' || eetStatus === 'train' ? emailIsValid : null)) {
-      e.target.classList.remove('error');
-    } else {
-      e.target.classList.add('error');
+    if (e.target.name === 'emailInput') {
+      if(e.target.checkValidity() && (emailInput === '' || emailIsValid === true)) {
+        e.target.classList.remove('error');
+      } else {
+        e.target.classList.add('error');
+      }
+    } else if (e.target.name === 'currentSitu') {
+      if(e.target.checkValidity() && currentSitu.length >= 25) {
+        e.target.classList.remove('error');
+      } else {
+        e.target.classList.add('error');
+      }
+    } else if (e.target.name === 'profProfileURL') {
+      if(e.target.checkValidity() && (profProfileURL === '' || urlInputIsValid === true)) {
+        e.target.classList.remove('error');
+      } else {
+        e.target.classList.add('error');
+      }
     }
-  }*/
+
+  }
 
   handleChange = (e) => {
     this.setState({
@@ -55,24 +76,17 @@ class NoEduEmailContent extends Component {
       return;
     } else {
       const { eetStatus, handleNoEduEmail, updateStep } = this.props;
-      const { jobEmail, trainEmail } = this.state;
+      const { emailInput } = this.state;
 
-      if (eetStatus === "job") {
-        this.setState({
-          messageFromServer: 'We are sending your deets to Prospela!'
-        }, () => {
-          eetStatus != 'none' ? handleNoEduEmail(jobEmail) : null;
-        });
-
-      } else if (eetStatus === "train") {
-        this.setState({
-          messageFromServer: 'We are sending your deets to Prospela!'
-        }, () => {
-          eetStatus != 'none' ? handleNoEduEmail(trainEmail) : null;
-        });
-      } else {
-        return; // not currently using Autocomplete for anything other than sch & uni
+      if (eetStatus != "none") {
+        handleNoEduEmail(emailInput, eetStatus)
       }
+
+      // OTHER HANDLER FUNCTIONS FOR OTHER INPUT BOXES
+
+      this.setState({
+        messageFromServer: 'We are sending your deets to Prospela!'
+      });
 
       //MIGHT NEED CALLBACK FOR THIS. SEE HOW DID IT IN EDUSHORTSU
       updateStep('didEduEmail', false)
@@ -80,12 +94,11 @@ class NoEduEmailContent extends Component {
   }
 
   checkEmail() {
-    const {jobEmail, trainEmail} = this.state;
+    const {emailInput} = this.state;
     const {eetStatus} = this.props;
-    const userInput = eetStatus === 'job' ? jobEmail : trainEmail;
 
     const freeEmailDomains = ["gmail.com", "hotmail.com"];
-    var emailSplit = userInput.split('@')
+    var emailSplit = emailInput.split('@')
     var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
 
     if (freeEmailDomains.includes(freeEmail)) {
@@ -94,25 +107,35 @@ class NoEduEmailContent extends Component {
         isPersonalEmail: true,
         sentForReview: ''
       });
-    } else if (userInput.indexOf("@") === 0) {
+    } else if (emailInput.includes(".") != true) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
+        containsDot: false,
+        sentForReview: ''
+      });
+    } else if (emailInput.indexOf("@") === 0) {
+      this.setState({
+        emailIsValid: false,
+        isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: false,
         sentForReview: ''
       });
-    } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.indexOf("@") + 1)) === false) {
+    } else if (/^[a-zA-Z()]+$/.test(emailInput.charAt(emailInput.indexOf("@") + 1)) === false) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: false,
         sentForReview: ''
       });
-    } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.length - 1)) === false) {
+    } else if (/^[a-zA-Z()]+$/.test(emailInput.charAt(emailInput.length - 1)) === false) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: true,
@@ -122,6 +145,7 @@ class NoEduEmailContent extends Component {
       this.setState({
         emailIsValid: true,
         isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: false,
@@ -130,8 +154,42 @@ class NoEduEmailContent extends Component {
     }
   }
 
+  checkProfUrl() {
+    const {profProfileURL} = this.state;
+    console.log("profProfileURL: "+profProfileURL)
+
+    if (isURL(profProfileURL) === false) {
+      this.setState({
+        urlInputIsValid: false,
+      });
+    } else {
+      this.setState({
+        urlInputIsValid: true,
+      });
+    }
+  }
+
+  handleURLKeyUp(e) {
+    const {timeout, profProfileURL, urlInputIsValid} = this.state;
+    clearTimeout(timeout);
+
+    this.setState({
+      timeout: setTimeout(()=>{
+        this.checkProfUrl()
+      }, 800)
+    })
+
+    /*if (e.target.name === 'profProfileURL') {
+      if(e.target.checkValidity() && (profProfileURL === '' || urlInputIsValid === true)) {
+        e.target.classList.remove('error');
+      } else {
+        e.target.classList.add('error');
+      }
+    }*/
+  }
+
   handleEmailKeyUp(e) {
-    const {userInput, timeout} = this.state;
+    const {timeout, emailInput, emailIsValid} = this.state;
 
     clearTimeout(timeout);
 
@@ -140,6 +198,15 @@ class NoEduEmailContent extends Component {
         this.checkEmail()
       }, 800)
     })
+
+  /*  if (e.target.name === 'emailInput') {
+      if(e.target.checkValidity() && (emailInput === '' || emailIsValid === true)) {
+        e.target.classList.remove('error');
+      } else {
+        e.target.classList.add('error');
+      }
+    }*/
+
   }
 
 /*  onKeyDown = e => {
@@ -165,52 +232,54 @@ class NoEduEmailContent extends Component {
   }*/
 
   canBeSubmitted() {
-    const {userInput, emailIsValid, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, sentForReview} = this.state;
+    const {emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDot, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, sentForReview} = this.state;
     const {eetStatus} = this.props;
 
-//    if (eetStatus === 'job' || eetStatus === 'train') {
-      const emailInput = document.getElementById('notStudentEmail');
-      console.log(emailInput)
-      if (emailIsValid != 'false' && emailInput.checkValidity()) {
+    if (eetStatus != 'none') {
+      if ((emailInput === '' || emailIsValid === true) && currentSitu.length >= 25 && (profProfileURL === '' || urlInputIsValid != 'false')) {
         return true;
       } else {
         return false;
       }
-//    } else if (eetStatus === 'none') {
-      //
-//    }
+    } else {
+      if (currentSitu.length >= 25 && (profProfileURL === '' || urlInputIsValid != 'false')) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 
   render() {
     const { onKeyDown } = this;
-    const { jobEmail, trainEmail, noneEmail, isPersonalEmail, emailIsValid, messageFromServer } = this.state;
-    const { country, eetStatus, userInput, currCo, currTrainingProvider } = this.props;
+    const { emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer } = this.state;
+    const { country, eetStatus, currCo, currTrainingProvider } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer === '') {
       return (
         <React.Fragment>
           <div className="modal-preTitle">
-            We need a bit more info
+            Help us assess your eligibility
           </div>
           <div className="modal-subtitle">
             Tell us about your situation
           </div>
-          <form className="eduFreeText-form" id="eduFreeTextForm">
+          <form className="noEduEmail-form" id="noEduEmailForm">
             {eetStatus != 'none' &&(
               <React.Fragment>
-                <label className="descriptor alignLeft">
-                  Your {eetStatus === 'job' ? currCo : currTrainingProvider} Email Address
+                <label htmlFor="notStudentEmail" className="descriptor alignLeft">
+                  Your {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} Email Address (if you have one)
                 </label>
                 <input
                   type="email"
-                  name={eetStatus === 'job' ? 'jobEmail' : 'trainEmail'}
+                  name="emailInput"
                   id="notStudentEmail"
-            //      onBlur={this.onBlur}
+                  onBlur={this.onBlur}
                   onChange={this.handleChange}
                   onKeyUp={this.handleEmailKeyUp}
-                  value={eetStatus === 'job' ? jobEmail : trainEmail}
+                  value={this.state.emailInput}
                   className="form-control-std verifyForm"
-                  placeholder={"Your " + (eetStatus === 'job' ? currCo : currTrainingProvider) + " email address"}
+                  placeholder={"Your " + (eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional') + " email address"}
                   autoComplete="off"
                   autoCorrect="off"
                   spellCheck="off"
@@ -218,7 +287,7 @@ class NoEduEmailContent extends Component {
                 />
                 {emailIsValid === false && isPersonalEmail === false && (
                   <div className="descriptor prompt error verifyForm alignLeft">
-                    This must be a valid {eetStatus === 'job' ? currCo : currTrainingProvider} email address
+                    This must be a valid {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} email address
                   </div>
                 )}
                 {isPersonalEmail === true && (
@@ -227,22 +296,43 @@ class NoEduEmailContent extends Component {
               </React.Fragment>
             )}
             <label className="descriptor alignLeft">
-              Next questions
+              Tell us a bit about your current situation
             </label>
-            <input
-              type="email"
-              name='nextquestion'
-              id="nextquestion"
+            <textarea
+              name="currentSitu"
+              className="form-control-std textInputBox verifyForm"
+              //className="form-control-std verifyForm"
+              form="noEduEmailForm"
               onBlur={this.onBlur}
               onChange={this.handleChange}
-          //    onKeyUp={this.handleEmailKeyUp}
-          //    value={comment}
-              className="form-control-std verifyForm"
-              placeholder={"Your " + (eetStatus === 'job' ? currCo : currTrainingProvider) + " email address"}
+              value={this.state.currentSitu}
+              placeholder="Help us assess your eligibility to join..."
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
-              autoFocus
+              required
+            />
+            {currentSitu != '' && currentSitu.length < 25 && (
+              <div className="descriptor prompt error verifyForm alignLeft">
+                Min 25 characters
+              </div>
+            )}
+            <label htmlFor="profProfileURL" className="descriptor alignLeft">
+              Link to your LinkedIn (or equivalent) professional profile
+            </label>
+            <input
+              type="url"
+              name="profProfileURL"
+              id="profProfileURL"
+              onBlur={this.onBlur}
+              onChange={this.handleChange}
+              onKeyUp={this.handleURLKeyUp}
+              value={this.state.profProfileURL}
+              className="form-control-std verifyForm"
+              placeholder="https://...."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
             />
             <div className="pass-btn-container">
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn">

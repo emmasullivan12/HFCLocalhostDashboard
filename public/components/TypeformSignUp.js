@@ -109,7 +109,7 @@ class TypeformSignUp extends Component {
       userEduName: '',
       updatingEdu: '',
       country: 'GBR',
-      eetStatus: 'sch',
+      eetStatus: 'job',
       schName: '2',
       schNameFreeText: '',
       uniName: '',

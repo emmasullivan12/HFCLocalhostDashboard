@@ -18,6 +18,7 @@ class ConfirmStudent extends React.Component {
       userInput: '',
       eduEmailIsValid: '',
       isPersonalEmail: '',
+      containsDot: '',
       hasTextBeforeAt: '',
       hasTextAfterAt: '',
       endsWithSymbol: '',
@@ -104,15 +105,13 @@ class ConfirmStudent extends React.Component {
   }
 
   handleKeyUp(e) {
-    const {userInput, timeout} = this.state;
+    const {timeout} = this.state;
 
     clearTimeout(timeout);
 
     this.setState({
       timeout: setTimeout(()=>{
-      //  if (userInput.includes("@") && userInput.includes(".")) {
-          this.checkEduEmail()
-    //    }
+        this.checkEduEmail()
       }, 800)
     })
   }
@@ -131,10 +130,18 @@ class ConfirmStudent extends React.Component {
         isPersonalEmail: true,
         sentForReview: ''
       });
+    } else if (userInput.includes(".") != true) {
+      this.setState({
+        emailIsValid: false,
+        isPersonalEmail: false,
+        containsDot: false,
+        sentForReview: ''
+      });
     } else if (userInput.indexOf("@") === 0) {
       this.setState({
         eduEmailIsValid: false,
         isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: false,
         sentForReview: ''
       });
@@ -142,6 +149,7 @@ class ConfirmStudent extends React.Component {
       this.setState({
         eduEmailIsValid: false,
         isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: false,
         sentForReview: ''
@@ -150,6 +158,7 @@ class ConfirmStudent extends React.Component {
       this.setState({
         eduEmailIsValid: false,
         isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: true,
@@ -176,6 +185,7 @@ class ConfirmStudent extends React.Component {
           this.setState({
             eduEmailIsValid: isValid,
             isPersonalEmail: false,
+            containsDot: true,
             hasTextBeforeAt: true,
             hasTextAfterAt: true,
             endsWithSymbol: false,
@@ -194,6 +204,7 @@ class ConfirmStudent extends React.Component {
           this.setState({
             eduEmailIsValid: isValid,
             isPersonalEmail: false,
+            containsDot: true,
             hasTextBeforeAt: true,
             hasTextAfterAt: true,
             endsWithSymbol: false,
@@ -217,6 +228,7 @@ class ConfirmStudent extends React.Component {
             this.setState({
               eduEmailIsValid: isValid,
               isPersonalEmail: false,
+              containsDot: true,
               hasTextBeforeAt: true,
               hasTextAfterAt: true,
               endsWithSymbol: false,
@@ -232,6 +244,7 @@ class ConfirmStudent extends React.Component {
             this.setState({
               eduEmailIsValid: isValid,
               isPersonalEmail: false,
+              containsDot: true,
               hasTextBeforeAt: true,
               hasTextAfterAt: true,
               endsWithSymbol: false,
@@ -251,6 +264,7 @@ class ConfirmStudent extends React.Component {
           this.setState({
             eduEmailIsValid: isValid,
             isPersonalEmail: false,
+            containsDot: true,
             hasTextBeforeAt: true,
             hasTextAfterAt: true,
             endsWithSymbol: false,
@@ -270,6 +284,7 @@ class ConfirmStudent extends React.Component {
         this.setState({
           eduEmailIsValid: isValid,
           isPersonalEmail: false,
+          containsDot: true,
           hasTextBeforeAt: true,
           hasTextAfterAt: true,
           endsWithSymbol: false,
@@ -286,6 +301,7 @@ class ConfirmStudent extends React.Component {
         this.setState({
           eduEmailIsValid: true,
           isPersonalEmail: false,
+          containsDot: true,
           hasTextBeforeAt: true,
           hasTextAfterAt: true,
           endsWithSymbol: false,
@@ -304,6 +320,7 @@ class ConfirmStudent extends React.Component {
       this.setState({
         eduEmailIsValid: true,
         isPersonalEmail: false,
+        containsDot: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: false,
@@ -340,7 +357,7 @@ class ConfirmStudent extends React.Component {
   render() {
     const { onChange, handleKeyUp } = this;
     const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider } = this.props;
-    const { eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol } = this.state;
+    const { containsDot, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol } = this.state;
     const isEnabled = this.canBeSubmitted();
 
     return (
@@ -383,7 +400,7 @@ class ConfirmStudent extends React.Component {
                   <div className="descriptor prompt error verifyForm alignLeft">
                     This must be a valid {userEduName} email address
                   </div>
-                  {hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
+                  {containsDot != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
                     <label className="checkbox-container alignLeft textLeft">This is a valid {userEduName} email. Submit for review
                       <input
                         type="checkbox"
