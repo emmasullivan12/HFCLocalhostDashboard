@@ -112,7 +112,6 @@ class EduShortSU extends React.Component {
   }
 
   handleSchChange(e) {
-    console.log("IN EDUSHORTSU (e): "+e);
     const userInput = e.currentTarget != undefined ? e.currentTarget.value : e;
     const isValid = userInput.length >= 3;
     if (!isValid) {
@@ -243,7 +242,6 @@ class EduShortSU extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log("handlesubmit functinon triggered")
     const {updateStep, updatingEdu, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv} = this.props;
     const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal} = this.state;
 
@@ -276,20 +274,36 @@ class EduShortSU extends React.Component {
       updateEetStatus(eetStatusLocal);
 
       if (eetStatusLocal ==='sch' || eetStatus === 'sch') {
-        schNameLocal
-          ? updateUKSch(schNameLocal)
-          : updateSchFreeText(schNameFreeTextLocal)
+        if (schNameLocal != '') {
+          updateUKSch(schNameLocal, () => {
+            updateStep('didEdu', false);
+          })
+        } else {
+          updateSchFreeText(schNameFreeTextLocal, () => {
+            updateStep('didEdu', false);
+          })
+        }
 
       } else if (eetStatusLocal ==='uni' || eetStatus === 'uni') {
-        uniNameLocal
-          ? updateUKUni(uniNameLocal)
-          : updateUniFreeText(uniNameFreeTextLocal)
+        if (uniNameLocal != '') {
+          updateUKUni(uniNameLocal, () => {
+            updateStep('didEdu', false);
+          })
+        } else {
+          updateUniFreeText(uniNameFreeTextLocal, () => {
+            updateStep('didEdu', false);
+          })
+        }
 
       } else if (eetStatusLocal === 'job') {
-        updateCurrCo(currCoLocal);
+        updateCurrCo(currCoLocal, () => {
+          updateStep('didEdu', false);
+        })
 
       } else if (eetStatusLocal === 'train') {
-        updateCurrTrainingProv(currTrainingProviderLocal);
+        updateCurrTrainingProv(currTrainingProviderLocal, () => {
+          updateStep('didEdu', false);
+        })
       }
 
     }

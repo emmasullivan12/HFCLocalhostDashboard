@@ -72,7 +72,7 @@ class PassMentorContent extends Component {
             Why do you want to pass?
           </div>
           <form className="pass-form" id="passMentorForm">
-            <label className="checkbox-container" htmlFor="Role">Doesn&apos;t have a <strong>role</strong> I&apos;d like to explore
+            <label className="checkbox-container">Doesn&apos;t have a <strong>role</strong> I&apos;d like to explore
               <input
                 type="checkbox"
                 name="Role"
@@ -82,7 +82,7 @@ class PassMentorContent extends Component {
               />
               <span className="checkmark" />
             </label>
-            <label className="checkbox-container" htmlFor="Industry">Isn&apos;t in an <strong>industry</strong> I&apos;m interested in
+            <label className="checkbox-container">Isn&apos;t in an <strong>industry</strong> I&apos;m interested in
               <input
                 type="checkbox"
                 name="Industry"
@@ -92,7 +92,7 @@ class PassMentorContent extends Component {
               />
               <span className="checkmark" />
             </label>
-            <label className="checkbox-container" htmlFor="Interests">Limited similar <strong>personal interests</strong> to me
+            <label className="checkbox-container">Limited similar <strong>personal interests</strong> to me
               <input
                 type="checkbox"
                 name="Interests"
@@ -102,7 +102,7 @@ class PassMentorContent extends Component {
               />
               <span className="checkmark" />
             </label>
-            <label className="checkbox-container" htmlFor="Skills">Doesn&apos;t have any of the <strong>skills</strong> I want to develop
+            <label className="checkbox-container">Doesn&apos;t have any of the <strong>skills</strong> I want to develop
               <input
                 type="checkbox"
                 name="Skills"

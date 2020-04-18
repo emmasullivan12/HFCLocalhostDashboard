@@ -25,7 +25,7 @@ class HomepageCTAContainer extends Component {
     const step = 'didFullSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const is18plus = 1;
-    const matchstatus = 'isMatched';
+    const matchstatus = 'didSafeG';
     const groups = [];
 
     this.props.groups.forEach((group) => {

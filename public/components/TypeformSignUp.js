@@ -106,19 +106,19 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didCountry', // set to did1stSU when first loaded
+      step: 'didShortSU', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
-      country: 'GBR',
-      eetStatus: 'sch',
-      schName: '2',
-      schNameFreeText: '',
-      uniName: '2',
-      uniNameFreeText: '',
+      country: 'CAN',
+      eetStatus: 'job',
+      schName: '',
+      schNameFreeText: 'SDFSDF',
+      uniName: '',
+      uniNameFreeText: 'uniiiii',
   //    changedSch: '',
   //    changedUni: '',
-      currCo: 'GE',
-      currTrainingProvider: 'Escape Studios'
+      currCo: 'sdfsd',
+      currTrainingProvider: ''
     }
     this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);
@@ -284,7 +284,9 @@ class TypeformSignUp extends Component {
     this.setState({
       schName: userInput
     }, () => {
-      callback();
+      if (callback) {
+        callback();
+      }
     })
   }
 
@@ -292,7 +294,9 @@ class TypeformSignUp extends Component {
     this.setState({
       schNameFreeText: userInput
     }, () => {
-      callback();
+      if (callback) {
+        callback();
+      }
     })
   }
 
@@ -300,7 +304,9 @@ class TypeformSignUp extends Component {
     this.setState({
       uniName: userInput
     }, () => {
-      callback();
+      if (callback) {
+        callback();
+      }
     })
   }
 
@@ -308,7 +314,9 @@ class TypeformSignUp extends Component {
     this.setState({
       uniNameFreeText: userInput
     }, () => {
-      callback();
+      if (callback) {
+        callback();
+      }
     })
   }
 

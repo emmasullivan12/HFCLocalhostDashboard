@@ -51,6 +51,7 @@ class MentorCardContent extends Component {
   }
 
   render() {
+    const {handleClick} = this;
     const mentor = this.props.mentor;
     const {isOverflow} = this.state;
 

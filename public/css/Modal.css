@@ -333,13 +333,17 @@
   color: #c7c7c7;
   text-align: center;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   display: block;
   margin: auto;
   width: 250px;
   height: 40px;
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+}
+
+.ModalOpenBtn-noSuggestionsCTABtn{
+  color: #8f8fe5;
 }
 
 .ModalOpenBtn-eduFreeTextBtn,
@@ -350,7 +354,6 @@
   height: auto;
   padding: 0;
   margin-right: 0;
-  font-size: 13px;
 }
 .ModalOpenBtn-eduFreeTextBtn{
   margin-top: .2rem;
@@ -366,6 +369,10 @@
 .ModalOpenBtn-noEduEmailBtn:hover {
   background: none;
   color: rgba(63,63,63,.7);
+}
+
+.ModalOpenBtn-noSuggestionsCTABtn:hover{
+  color: #4e4ed6;
 }
 
 .ModalOpenBtn-PassBtn:focus,

@@ -30,7 +30,7 @@ class TypeformEmbedded extends Component {
           console.log("updateStep INSIDE widget: "+updateStep)
           console.log(updateStep)
           console.log('Typeform submitted! Should be redirected but typeform may block it');
-          updateStep('didShortSU');
+          updateStep('didShortSU', false);
         }
       }
     )

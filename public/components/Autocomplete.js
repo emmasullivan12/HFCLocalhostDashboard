@@ -27,7 +27,6 @@ class Autocomplete extends React.Component {
     if (focusOnLoad) {
       document.getElementById("autocompleteBox-"+name).focus();
     }
-    console.log("rendering components from autocomplete")
     if (renderComponents) {
       renderComponents(fileToRender, componentUpdatesState)
     }
@@ -77,36 +76,38 @@ class Autocomplete extends React.Component {
             suggestion[valueToShow].toLowerCase().indexOf(userInput.toLowerCase()) != -1
           //  suggestion.value.toLowerCase().includes(userInput.toLowerCase())
             // suggestion.value.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
-        );
+        )
       } else {
         filteredSuggestions = suggestions.filter(
           suggestion =>
             suggestion.toLowerCase().indexOf(userInput.toLowerCase()) != -1
           //  suggestion.toLowerCase().includes(userInput.toLowerCase())
             // suggestion.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
-        );
+        )
       }
       return filteredSuggestions;
     }
-
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: filteredSuggestions(),
       showSuggestions: true,
       userInput: e.currentTarget.value
     });
+
     const isValid = this.checkExists(e.currentTarget.value);
     handleChange(e.currentTarget.value, isValid);
   };
 
   onClick = (e) => {
     const { suggestions, handleChange, name, valueToShow, required } = this.props;
+
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: [],
       showSuggestions: false,
       userInput: e.currentTarget.dataset.text
     });
+
     const isValid = this.checkExists(e.currentTarget.dataset.id);
     handleChange(e.currentTarget.dataset.id, isValid);
   };
@@ -213,7 +214,7 @@ class Autocomplete extends React.Component {
   }
 
   render() {
-    const { onChange, onClick, onMouseDown, onKeyDown } = this;
+    const { onChange, onClick, onFocus, onMouseDown, onKeyDown } = this;
     const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow, children } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -279,6 +280,7 @@ class Autocomplete extends React.Component {
           id={"autocompleteBox-"+name}
           placeholder={placeholder}
           onChange={onChange}
+          onFocus={onChange}
           onKeyDown={onKeyDown}
           value={userInput}
           onBlur={this.onBlur}
