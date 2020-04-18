@@ -628,12 +628,12 @@ hr{
 }
 .checkbox-container-login:hover input ~ .checkmark,
 .checkbox-container:hover input ~ .checkmark,
-.checkbox-container-login:focus input ~ .checkmark,
-.checkbox-container:focus input ~ .checkmark {
+.checkbox-container-login input:focus ~ .checkmark,
+.checkbox-container input:focus ~ .checkmark {
   background-color: rgba(78,78,214,.29);
 }
 .checkbox-container-login:hover input ~ .initiativeCheckmark,
-.checkbox-container-login:focus input ~ .initiativeCheckmark {
+.checkbox-container-login input:focus ~ .initiativeCheckmark {
   background-color: rgba(247,247,247,.85)!important;
 }
 .checkbox-container-login:hover .initiative-tncText,

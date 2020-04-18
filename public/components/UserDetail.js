@@ -2,6 +2,22 @@
 
 import React, { Component } from "react";
 
+function lookupRoles(ifError) {
+  let roles = [];
+
+  //IMPORT UNI list
+  return import(`./Roles.js`)
+    .then(component => {
+      roles = component.default;
+      console.log("roles: "+roles)
+      return roles;
+    })
+    .catch(err => {
+      console.log("Dex to deal with logging error: "+err.message)
+    })
+
+}
+
 function lookupUKSchUnis(i, valueToGet, eetStatus) {
 
   if (eetStatus === 'uni') {
@@ -241,4 +257,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {lookupUKSchUnis, availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {lookupRoles, lookupUKSchUnis, availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

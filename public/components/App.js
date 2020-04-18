@@ -313,7 +313,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'didShortSU';
+  const step = 'didCountry';
   const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 
@@ -322,6 +322,8 @@ function MenteeSteps({userRole}) {
         case 'didCountry':
         case 'didEdu':
         case 'didShortSU':
+        case 'didEduEmail':
+        case 'didEmailVerifNeedsRev':
           return (
             <BrowserRouter>
               <Switch>
@@ -330,7 +332,8 @@ function MenteeSteps({userRole}) {
               </Switch>
             </BrowserRouter>
           );
-        case 'didEduEmail':
+
+    /* case 'didEduEmail':
         return (
           <BrowserRouter>
             <Switch>
@@ -338,14 +341,15 @@ function MenteeSteps({userRole}) {
               <Route path="/verify-email" component={VerifyEmail} step={step} />
             </Switch>
           </BrowserRouter>
-        );
-        case 'didEduEmailVerif':
+        );*/
+    /*    case 'didEduEmailVerif':
           if (emailSentForReview != true && eduSentForReview != true) {
             return <Dashboard userRole={userRole}/>
           } else  {
             // SHOW THEM PAGE THAT SAYS WE ARE JUST REVIEWING YOUR DETAILS AND THEN WILL GET BACK TO YOU
             return console.log("show pending prospela review screen");
-          }
+          }*/
+        case 'didEmailVerif':
         case 'didReviewVerif':
         case 'autoEnroll':
         case 'joinedProg':

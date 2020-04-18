@@ -9,6 +9,7 @@ import "../css/TypeformSignUp.css";
 import ConfirmStudent from './ConfirmStudent.js';
 import CountryShortSU from './CountryShortSU.js';
 import EduShortSU from './EduShortSU.js';
+import IndustryRoleSU from './IndustryRoleSU.js';
 import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
@@ -106,11 +107,11 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didShortSU', // set to did1stSU when first loaded
+      step: 'didEdu', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
-      country: 'CAN',
-      eetStatus: 'job',
+      country: 'GBR',
+      eetStatus: 'sch',
       schName: '',
       schNameFreeText: 'SDFSDF',
       uniName: '',
@@ -258,6 +259,12 @@ class TypeformSignUp extends Component {
         step: 'didEduEmail'
       })
       return;
+
+    } else if (stepJustDone === 'didEmailVerifNeedsRev') {
+      this.setState({
+        step: 'didEmailVerifNeedsRev'
+      })
+      return;
     }
 
   }
@@ -335,7 +342,7 @@ class TypeformSignUp extends Component {
   render() {
     const {isGeneralError, isLoading, step, updatingEdu, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider} = this.state;
     const userRole = 'mentee';
-    const totalMenteeSteps = 4;
+    const totalMenteeSteps = 5;
     const totalMentorSteps = 2;
     const fname = 'Emma';
     const id = '12345';
@@ -387,6 +394,21 @@ class TypeformSignUp extends Component {
             <React.Fragment>
               {fname && (
                 <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
+                  <IndustryRoleSU
+                    step={step}
+                    currentStep="3"
+                    totalMenteeSteps={totalMenteeSteps}
+                    updateStep={this.updateStep}
+                  />
+                </SignUpScreenTemplate>
+              )}
+            </React.Fragment>
+          );
+        /*case 'didEdu':
+          return (
+            <React.Fragment>
+              {fname && (
+                <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
                   <MenteeTypeformSignUpContent
                     tflink={menteetflink}
                     step={step}
@@ -397,7 +419,7 @@ class TypeformSignUp extends Component {
                 </SignUpScreenTemplate>
               )}
             </React.Fragment>
-          );
+          );*/
         case 'didShortSU':
           return (
             !isLoading && (
@@ -422,7 +444,11 @@ class TypeformSignUp extends Component {
           );
         case 'didEduEmail':
           return (
-            console.log("user done, return to App.js for next steps")
+            console.log("Verify code page goes here")
+          );
+        case 'didEmailVerifNeedsRev':
+          return (
+            console.log("pending review page goes here")
           );
       }
     } else {

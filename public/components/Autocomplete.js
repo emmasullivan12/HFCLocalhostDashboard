@@ -202,6 +202,10 @@ class Autocomplete extends React.Component {
 
   checkMultipleAttributes() {
     const { suggestions } = this.props;
+    console.log("suggestions: "+suggestions)
+    console.log(suggestions)
+    console.log("suggestions[0]: "+suggestions[0])
+    console.log(suggestions[0])
     if (suggestions[0] === undefined) {
       return false
     } else {
