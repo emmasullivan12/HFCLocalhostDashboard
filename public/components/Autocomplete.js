@@ -39,7 +39,7 @@ class Autocomplete extends React.Component {
   }
 
   onBlur = (e) => {
-    const { suggestions, valueToShow, required, name, noSuggestionsCTAclass } = this.props;
+    const { suggestions, onBlur, valueToShow, required, name, noSuggestionsCTAclass } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const userInput = this.state.userInput;
     const isValid = this.checkUserInputExists(userInput);
@@ -51,8 +51,8 @@ class Autocomplete extends React.Component {
         filteredSuggestions: [],
         showSuggestions: false,
         userInput: e.currentTarget.value
-      });
-
+      })
+      onBlur()
       if(isValid) {
         document.getElementById("autocompleteBox-"+name).classList.remove('error');
       } else {
@@ -61,7 +61,21 @@ class Autocomplete extends React.Component {
     }
   }
 
+  onFocus = (e) => {
+    const {filteredSuggestions} = this.state;
+    const {onFocus} = this.props;
+    console.log("onFocus fired")
+    onFocus();
+    console.log("filteredSuggestions.length: "+filteredSuggestions.length)
+    if (filteredSuggestions.length === 1) {
+      return
+    } else {
+      this.onChange(e);
+    }
+  }
+
   onChange = (e) => {
+    console.log("onchange fired")
     const { suggestions, handleChange, valueToShow, required } = this.props;
     const userInput = e.currentTarget.value;
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -99,6 +113,7 @@ class Autocomplete extends React.Component {
   };
 
   onClick = (e) => {
+    console.log("onclick triggered")
     const { suggestions, handleChange, name, valueToShow, required } = this.props;
 
     this.setState({
@@ -107,7 +122,6 @@ class Autocomplete extends React.Component {
       showSuggestions: false,
       userInput: e.currentTarget.dataset.text
     });
-
     const isValid = this.checkExists(e.currentTarget.dataset.id);
     handleChange(e.currentTarget.dataset.id, isValid);
   };
@@ -202,10 +216,7 @@ class Autocomplete extends React.Component {
 
   checkMultipleAttributes() {
     const { suggestions } = this.props;
-    console.log("suggestions: "+suggestions)
-    console.log(suggestions)
-    console.log("suggestions[0]: "+suggestions[0])
-    console.log(suggestions[0])
+
     if (suggestions[0] === undefined) {
       return false
     } else {
@@ -218,7 +229,7 @@ class Autocomplete extends React.Component {
   }
 
   render() {
-    const { onChange, onClick, onFocus, onMouseDown, onKeyDown } = this;
+    const { onChange, onClick, onMouseDown, onKeyDown } = this;
     const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow, children } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -284,7 +295,7 @@ class Autocomplete extends React.Component {
           id={"autocompleteBox-"+name}
           placeholder={placeholder}
           onChange={onChange}
-          onFocus={onChange}
+          onFocus={this.onFocus}
           onKeyDown={onKeyDown}
           value={userInput}
           onBlur={this.onBlur}

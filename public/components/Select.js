@@ -60,12 +60,12 @@ class SelectBox extends React.Component {
       }
 
       if(!required || required && value != null) {
-        document.getElementById("selectBox-"+name).classList.remove('error');
+        document.getElementById("selectBox-"+name).classList.remove('error')
         if (otherValidityChecks) {
-          otherValidityChecks();
+          otherValidityChecks()
         }
       } else {
-        document.getElementById("selectBox-"+name).classList.add('error');
+        document.getElementById("selectBox-"+name).classList.add('error')
       }
 
       return {

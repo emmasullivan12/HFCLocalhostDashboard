@@ -7,7 +7,7 @@ import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
-import {lookupRoles} from './UserDetail.js';
+//import {lookupRoles} from './UserDetail.js';
 
 class IndustryRoleSU extends React.Component {
   constructor () {
@@ -15,48 +15,33 @@ class IndustryRoleSU extends React.Component {
     this.state = {
       roles: [],
       errorLoadingRoles: '',
-      showIndPrompt: '',
       showRolePrompt: '',
       tabPressed: '',
-      industry: '',
-      role: '',
-      ratingConfi: ''
+      industries: '',
+      editingInd: '',
+      rolesChosen: '',
+      roleValid: '',
+      editingRole: '',
+      ratingConfi: '',
+      editingRating: '',
+      holdBackTxt: ''
     }
     this.handleIndChange = this.handleIndChange.bind(this);
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleRatingChange = this.handleRatingChange.bind(this);
+    this.handleHoldBkChange = this.handleHoldBkChange.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
-  }
-
-  componentDidMount(){
-    return lookupRoles().then(component => {
-      this.setState({
-        roles: component.default,
-        errorLoadingRoles: false
-      })
-      console.log("roles: "+this.state.roles)
-    })
-    .catch(err => {
-      this.setState({
-        errorLoadingRoles: true
-      })
-      console.log("Dex to deal with logging error: "+err.message)
-    })
-  }
-
-  onIndFocus = (e) => {
-    this.setState({
-      showIndPrompt: true
-    })
-  }
-
-  onIndBlur = (e) => {
-    this.setState({
-      showIndPrompt: false
-    })
+    this.renderComponents = this.renderComponents.bind(this);
   }
 
   onRoleFocus = (e) => {
+    const currentStateRoles = this.state.rolesChosen;
+    const currentStateValid = this.state.roleValid;
+    if (currentStateRoles != '' && currentStateValid != '') {
+      this.setState({
+        editingRole: true
+      })
+    }
     this.setState({
       showRolePrompt: true
     })
@@ -68,21 +53,69 @@ class IndustryRoleSU extends React.Component {
     })
   }
 
+  onRatingBlur = (e) => {
+    const isValid = e.currentTarget.value > 0 && e.currentTarget.value <= 10
+    if(isValid) {
+      document.getElementById("ratingConfi").classList.remove('error');
+    } else {
+      document.getElementById("ratingConfi").classList.add('error');
+    }
+  }
+
+  onHoldBkBlur = (e) => {
+    const isValid = e.currentTarget.value.length >= 2
+    if(isValid) {
+      document.getElementById("holdBackTxt").classList.remove('error');
+    } else {
+      document.getElementById("holdBackTxt").classList.add('error');
+    }
+  }
+
   handleIndChange(userInput) {
+    if (userInput === '') {
+      this.setState({
+        editingInd: true
+      })
+    }
     this.setState({
-      industry: userInput
+      industries: userInput
     });
   }
 
-  handleRoleChange(userInput) {
+  handleRoleChange(userInput, isValid) {
+    const currentStateRoles = this.state.rolesChosen;
+    const currentStateValid = this.state.roleValid;
+    if (currentStateRoles != '' && currentStateValid != '' && userInput === '') {
+      this.setState({
+        editingRole: true
+      })
+    }
+    if (userInput != "") {
+      this.setState({
+        showRolePrompt: false
+      })
+    }
     this.setState({
-      role: userInput
+      rolesChosen: userInput,
+      roleValid: isValid
     });
   }
 
   handleRatingChange(e) {
+    const currentStateRating = this.state.ratingConfi;
+    if (currentStateRating != '') {
+      this.setState({
+        editingRating: true
+      })
+    }
     this.setState({
       ratingConfi: e.currentTarget.value
+    });
+  }
+
+  handleHoldBkChange(e) {
+    this.setState({
+      holdBackTxt: e.currentTarget.value
     });
   }
 
@@ -90,8 +123,41 @@ class IndustryRoleSU extends React.Component {
     this.setState({ tabPressed: tabPressed });
   }
 
+  handleSubmit(e) {
+    const {updateStep} = this.props;
+
+    updateStep('didIndRole', false);
+  }
+
+  canBeSubmitted() {
+    const {industries, rolesChosen, roleValid, ratingConfi, holdBackTxt} = this.state;
+
+    if (industries != "" && rolesChosen != '' && roleValid === true && ratingConfi != "" && ratingConfi != 0 && !(ratingConfi >= 10) && holdBackTxt.length > 2) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+
+  renderComponents(fileToRender, componentUpdatesState, error) {
+    import(`./${fileToRender}.js`)
+      .then(component => {
+        this.setState({
+          [componentUpdatesState]: component.default,
+          errorLoadingRoles: false
+        })
+      })
+      .catch(err => {
+        this.setState({
+          errorLoadingRoles: true
+        })
+        console.log("Dex to deal with logging error: "+err.message)
+      })
+  }
+
   render() {
-    const {errorLoadingRoles, showIndPrompt, showRolePrompt, roles, tabPressed, industry, role, ratingConfi} = this.state;
+    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, roleValid, ratingConfi, editingRating, holdBackTxt} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const industryOptions = [
@@ -102,7 +168,7 @@ class IndustryRoleSU extends React.Component {
       {value: '4', label: 'Zoology'}
     ];
 
-  //  const isEnabled = this.canBeSubmitted();
+    const isEnabled = this.canBeSubmitted();
 
     return (
       <React.Fragment>
@@ -114,7 +180,7 @@ class IndustryRoleSU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="selectInd">Which industries are you interested in?</label>
+                <label className="descriptor alignLeft" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
                 <SelectBox
                   options={industryOptions}
                   name='selectInd'
@@ -127,68 +193,73 @@ class IndustryRoleSU extends React.Component {
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   required
                 />
-                {showIndPrompt && (
-                  <div className="descriptor prompt">
-                    You can select up to 3 if you like
+              </div>
+              {(industries != '' || editingInd === true) && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft" htmlFor="selectRole">What <strong>career or profession</strong> do you want to work in?</label>
+                  <div className="autocompleter">
+                    <Autocomplete
+                      suggestions={roles}
+                      name='selectRole'
+                      placeholder='Type Role(s):'
+                      renderComponents={this.renderComponents}
+                      fileToRender="Roles"
+                      componentUpdatesState="roles"
+                      handleChange={this.handleRoleChange}
+                      onFocus={this.onRoleFocus}
+                      onBlur={this.onRoleBlur}
+                      handleTabPress={this.handleTabPress}
+                      focusOnLoad={tabPressed ? false : true}
+                      idValue='value'
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
+                    />
+                    {showRolePrompt && (
+                      <div className="descriptor prompt indRoleForm">
+                        If you don&#39;t know just yet, that&#39;s fine! Just put &#34;don&#39;t know&#34;
+                      </div>
+                    )}
+                    {errorLoadingRoles === true && (
+                      <div className="descriptor prompt error indRoleForm alignLeft">
+                        Error loading Roles. Try reloading the page.
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-              <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="selectRole">What career or profession do you want to work in?</label>
-                <div className="autocompleter">
-                  <Autocomplete
-                    suggestions={roles}
-                    name='selectRole'
-                    placeholder='Type Role(s):'
-                    handleChange={this.handleRoleChange}
-                    onFocus={this.onRoleFocus}
-                    onBlur={this.onRoleBlur}
-                    handleTabPress={this.handleTabPress}
-                    focusOnLoad={tabPressed ? false : true}
-                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                    required
-                  />
-                  {showRolePrompt && (
-                    <div className="descriptor prompt">
-                      If you don&#39;t know just yet, that&#39;s fine! Just put &#34;don&#39;t know&#34;
-                    </div>
-                  )}
-                  {errorLoadingRoles === true && (
-                    <div className="descriptor prompt error eduForm alignLeft">
-                      Error loading education institutions. Try reloading the page.
-                    </div>
-                  )}
                 </div>
-              </div>
-              <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="ratingConfi">Out of 10, how confident are you in knowing what next steps you need to take to get down your preferred career path?</label>
-                <TextInput
-                  name="ratingConfi"
-                  id="ratingConfi"
-                  placeholder="Rating goes here"
-                  className="form-control-std"
-                  required
-                  handleChange={this.handleRatingChange}
-                  handleTabPress={this.handleTabPress}
-              //    onBlur={this.onBlur}
-                  focusOnLoad={tabPressed ? false : true}
-                />
-              </div>
-              <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="uniNameTextBox">What&#39;s the key thing holding you back from getting there?</label>
-                <TextInput
-                  name="holdBackTxt"
-                  id="holdBackTxt"
-                  placeholder="Type here..."
-                  className="form-control-std"
-                  required
-              //    handleChange={this.handleUniChange}
-                  handleTabPress={this.handleTabPress}
-              //    onBlur={this.onBlur}
-                  focusOnLoad={tabPressed ? false : true}
-                />
-              </div>
-              <button type="button" className="Submit-btn fullWidth">
+              )}
+              {((rolesChosen != '' && roleValid === true) || editingRole === true) && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft" htmlFor="ratingConfi">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
+                  <TextInput
+                    name="ratingConfi"
+                    id="ratingConfi"
+                    placeholder="Rating goes here"
+                    className="form-control-std"
+                    required
+                    handleChange={this.handleRatingChange}
+                    handleTabPress={this.handleTabPress}
+                    onBlur={this.onRatingBlur}
+                    focusOnLoad={tabPressed ? false : true}
+                  />
+                </div>
+              )}
+              {(ratingConfi != "" || editingRating === true)&& (
+                <div className="form-group">
+                  <label className="descriptor alignLeft" htmlFor="uniNameTextBox">What are the key things <strong>holding you back</strong> from getting there?</label>
+                  <TextInput
+                    name="holdBackTxt"
+                    id="holdBackTxt"
+                    placeholder="Type here..."
+                    className="form-control-std"
+                    required
+                    handleChange={this.handleHoldBkChange}
+                    handleTabPress={this.handleTabPress}
+                    onBlur={this.onHoldBkBlur}
+                    focusOnLoad={tabPressed ? false : true}
+                  />
+                </div>
+              )}
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
                 Next
               </button>
             </form>

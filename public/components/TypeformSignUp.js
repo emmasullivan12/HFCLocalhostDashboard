@@ -57,7 +57,7 @@ const MenteeShortSUProps = {
 const MenteeTypeformSignUpProps = {
   subheader: 'By understanding where you\'re starting from and where you\'re trying to get to, we\'re better able to support you!',
   title: 'Help us help you',
-  fullWidth: true
+  fullWidth: false
 }
 
 // This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
@@ -112,13 +112,13 @@ class TypeformSignUp extends Component {
       updatingEdu: '',
       country: 'GBR',
       eetStatus: 'sch',
-      schName: '',
-      schNameFreeText: 'SDFSDF',
+      schName: '2',
+      schNameFreeText: '',
       uniName: '',
-      uniNameFreeText: 'uniiiii',
+      uniNameFreeText: '',
   //    changedSch: '',
   //    changedUni: '',
-      currCo: 'sdfsd',
+      currCo: '',
       currTrainingProvider: ''
     }
     this.getUserEduName = this.getUserEduName.bind(this);
@@ -260,6 +260,12 @@ class TypeformSignUp extends Component {
       })
       return;
 
+    } else if (stepJustDone === 'didIndRole') {
+      this.setState({
+        step: 'didIndRole'
+      })
+      return;
+
     } else if (stepJustDone === 'didEmailVerifNeedsRev') {
       this.setState({
         step: 'didEmailVerifNeedsRev'
@@ -391,18 +397,18 @@ class TypeformSignUp extends Component {
           );
         case 'didEdu':
           return (
-            <React.Fragment>
-              {fname && (
-                <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
-                  <IndustryRoleSU
-                    step={step}
-                    currentStep="3"
-                    totalMenteeSteps={totalMenteeSteps}
-                    updateStep={this.updateStep}
-                  />
-                </SignUpScreenTemplate>
-              )}
-            </React.Fragment>
+            <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
+              <IndustryRoleSU
+                step={step}
+                currentStep="3"
+                totalMenteeSteps={totalMenteeSteps}
+                updateStep={this.updateStep}
+              />
+            </SignUpScreenTemplate>
+          );
+        case 'didIndRole':
+          return (
+            console.log("FSM questions go here")
           );
         /*case 'didEdu':
           return (
