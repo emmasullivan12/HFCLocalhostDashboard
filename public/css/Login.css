@@ -280,6 +280,7 @@ input[type=text]:disabled{
 }
 .descriptor.prompt.error.verifyForm.otherOption{
   width: 14rem;
+  margin-bottom: 2rem;
 }
 
 .descriptor.prompt.error.noEduEmailForm{

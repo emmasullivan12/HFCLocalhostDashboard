@@ -107,7 +107,9 @@ class EduShortSU extends React.Component {
       schNameLocal: userInput,
       schNameFreeTextLocal: '',
       schNameUpdated: true,
-      schNameIsValid: isValid
+      schNameIsValid: isValid,
+      requestReview: false,
+      reviewReason: ''
     })
   }
 
@@ -125,6 +127,8 @@ class EduShortSU extends React.Component {
       schNameLocal: '',
       schNameFreeTextUpdated: true,
       schNameIsValid: isValid,
+      requestReview: true,
+      reviewReason: "is sch free text"
     })
   }
 
@@ -150,7 +154,9 @@ class EduShortSU extends React.Component {
       uniNameLocal: userInput,
       uniNameFreeTextLocal: '',
       uniNameUpdated: true,
-      uniNameIsValid: isValid
+      uniNameIsValid: isValid,
+      requestReview: false,
+      reviewReason: ''
     })
   }
 
@@ -167,7 +173,9 @@ class EduShortSU extends React.Component {
       uniNameFreeTextLocal: userInput,
       uniNameLocal: '',
       uniNameFreeTextUpdated: true,
-      uniNameIsValid: isValid
+      uniNameIsValid: isValid,
+      requestReview: true,
+      reviewReason: "is uni free text"
     })
   }
 
@@ -242,32 +250,60 @@ class EduShortSU extends React.Component {
   }
 
   handleSubmit(e) {
-    const {updateStep, updatingEdu, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv} = this.props;
-    const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal} = this.state;
+    const {updateStep, updatingEdu, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv, sendForReview} = this.props;
+    const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal, requestReview, reviewReason} = this.state;
 
+    console.log("eetStatus: "+eetStatus)
+    console.log("eetStatusLocal: "+eetStatusLocal)
     if (updatingEdu) {
+      updateEetStatus(eetStatusLocal)
 
-      if (eetStatusLocal ==='sch' || eetStatus === 'sch') {
+      if (eetStatusLocal ==='sch') {
         if (schNameLocal != '') {
           updateUKSch(schNameLocal, () => {
             updateStep('didEdu', updatingEdu);
           })
         } else {
+
+          if (requestReview === true) {
+            console.log("sending to review function")
+            sendForReview('schName', reviewReason)
+          }
+
           updateSchFreeText(schNameFreeTextLocal, () => {
             updateStep('didEdu', updatingEdu);
           })
         }
 
-      } else if (eetStatusLocal ==='uni' || eetStatus === 'uni') {
+      } else if (eetStatusLocal ==='uni') {
         if (uniNameLocal != '') {
           updateUKUni(uniNameLocal, () => {
             updateStep('didEdu', updatingEdu);
           })
         } else {
+
+          if (requestReview === true) {
+            console.log("sending to review function")
+            sendForReview('uniName', reviewReason)
+          }
+
           updateUniFreeText(uniNameFreeTextLocal, () => {
             updateStep('didEdu', updatingEdu);
           })
         }
+
+      } else if (eetStatusLocal ==='job') {
+        updateCurrCo(currCoLocal, () => {
+          updateStep('didEdu', updatingEdu);
+        })
+
+      } else if (eetStatusLocal ==='train') {
+        updateCurrTrainingProv(currTrainingProviderLocal, () => {
+          updateStep('didEdu', updatingEdu);
+        })
+
+      } else {
+        updateStep('didEdu', updatingEdu);
       }
 
     } else {
@@ -296,7 +332,9 @@ class EduShortSU extends React.Component {
         }
 
       } else if (eetStatusLocal === 'job') {
+        console.log("updatingcurrco function triggered")
         updateCurrCo(currCoLocal, () => {
+          console.log("updatestep function triggered")
           updateStep('didEdu', false);
         })
 
@@ -304,25 +342,28 @@ class EduShortSU extends React.Component {
         updateCurrTrainingProv(currTrainingProviderLocal, () => {
           updateStep('didEdu', false);
         })
+
+      } else {
+        updateStep('didEdu', false);
       }
 
     }
   }
 
   canBeSubmitted() {
-    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCo, currTrainingProvider } = this.state;
-    const {eetStatus} = this.props;
+    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currTrainingProviderLocal } = this.state;
+  //  const {eetStatus} = this.props;
 
-      if (eetStatusLocal != '' || eetStatus != '') {
+      if (eetStatusLocal != '') {
 
-        if (eetStatusLocal === 'sch' || eetStatus === 'sch') {
+        if (eetStatusLocal === 'sch') {
           if ((schNameUpdated === true || schNameFreeTextUpdated === true) && schNameIsValid && schYrGrp != '') {
             return true;
           } else {
             return false;
           }
 
-        } else if (eetStatusLocal === 'uni' || eetStatus === 'uni') {
+        } else if (eetStatusLocal === 'uni') {
           if ((uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
             return true;
           } else {
@@ -330,14 +371,14 @@ class EduShortSU extends React.Component {
           }
 
         } else if (eetStatusLocal === 'job') {
-          if (currCo != '') {
+          if (currCoLocal != '') {
             return true;
           } else {
             return false;
           }
 
         } else if (eetStatusLocal === 'train') {
-          if (currTrainingProvider != '') {
+          if (currTrainingProviderLocal != '') {
             return true;
           } else {
             return false;
@@ -369,7 +410,7 @@ class EduShortSU extends React.Component {
   render() {
 
   const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
-  const { country, updatingEdu, eetStatus, tflink, step, currentStep, totalMenteeSteps } = this.props;
+  const { country, eetStatus, tflink, step, currentStep, totalMenteeSteps, sendForReview } = this.props;
 
   const eetStatusUKOptions = [
     {value: 'sch', label: 'I\'m at School / Sixth Form / College'},
@@ -432,22 +473,20 @@ class EduShortSU extends React.Component {
           />
           <div className='embedded-typeform'>
             <form autoComplete="off">
-              {updatingEdu != true && (
-                <div className="form-group">
-                  <label className="descriptor alignLeft" htmlFor="eetStatus">Are you currently in Education, Employment or Training?</label>
-                  <SelectBox
-                    options={country === 'GBR' ? eetStatusUKOptions : eetStatusNonUKOptions}
-                    placeholder="Select one:"
-                    name='eetStatus'
-                    handleChange={this.handleEetStatusChange}
-                    handleTabPress={this.handleTabPress}
-                    focusOnLoad
-                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                    required
-                  />
-                </div>
-              )}
-              {country === 'GBR' && (eetStatus === 'sch' || eetStatusLocal === 'sch') && schNameFreeTextLocal === '' && (
+              <div className="form-group">
+                <label className="descriptor alignLeft" htmlFor="eetStatus">Are you currently in Education, Employment or Training?</label>
+                <SelectBox
+                  options={country === 'GBR' ? eetStatusUKOptions : eetStatusNonUKOptions}
+                  placeholder="Select one:"
+                  name='eetStatus'
+                  handleChange={this.handleEetStatusChange}
+                  handleTabPress={this.handleTabPress}
+                  focusOnLoad
+                  valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  required
+                />
+              </div>
+              {country === 'GBR' && eetStatusLocal === 'sch' && schNameFreeTextLocal === '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft" htmlFor="schName">What&#39;s the name of your School / College?</label>
                   <div className="autocompleter">
@@ -494,7 +533,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {country != 'GBR' && (eetStatus === 'sch' || eetStatusLocal === 'sch') && (
+              {country != 'GBR' && eetStatusLocal === 'sch' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft" htmlFor="schNameTextBox">What&#39;s the name of your High School?</label>
                   <TextInput
@@ -525,7 +564,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {country === 'GBR' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameFreeTextLocal === '' && (
+              {country === 'GBR' && eetStatusLocal === 'uni' && uniNameFreeTextLocal === '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft" htmlFor="uniName">What&#39;s the name of your University?</label>
                   <div className="autocompleter">
@@ -572,7 +611,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {country != 'GBR' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && (
+              {country != 'GBR' && eetStatusLocal === 'uni' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft" htmlFor="uniNameTextBox">What&#39;s the name of your University?</label>
                   <TextInput

@@ -50,77 +50,54 @@ class VerifyEmail extends React.Component {
   render() {
   const isEnabled = this.canBeSubmitted();
   const {isContainerOpen, verificationCode} = this.state;
-  const userEmail = 'USER EMAIL GOES HERE';
+  const {emailToVerify} = this.props;
 
     return (
       <React.Fragment>
-        <div className="mainContainer">
-          <div className="prLogoArea col-12">
-            <div className="prLogoLoginContainer col-12">
-              <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
-            </div>
+        <form onSubmit={this.handleSubmit}>
+          <div className="form-group">
+            <div className="descriptor">Enter email verification code</div>
+            <input
+              type="password"
+              name="verificationCode"
+              className="form-control-pwd"
+              id="emailverifcode"
+              value={this.state.verificationCode}
+              onChange={this.handleChange}
+              required
+              autoFocus
+              minLength="6"
+              maxLength="6"
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
+            />
           </div>
-          <div className="row">
-            <div className="col-7 col-s-12 centerContainer">
-              <div className="loginContainer">
-                <div>
-                  <h1>Verify your email</h1>
-                  <div className="header-descriptor">We&#39;ve sent a verification code to {userEmail}. Please enter it below. Note: code only <span className="bold">valid for the next 24 hours.</span></div>
-                </div>
-                <form onSubmit={this.handleSubmit}>
-                  <div className="form-group">
-                    <div className="descriptor">Enter email verification code</div>
-                    <input
-                      type="password"
-                      name="verificationCode"
-                      className="form-control-pwd"
-                      id="emailverifcode"
-                      value={this.state.verificationCode}
-                      onChange={this.handleChange}
-                      required
-                      autoFocus
-                      minLength="6"
-                      maxLength="6"
-                      autoComplete="off"
-                      autoCorrect="off"
-                      spellCheck="off"
-                    />
-                  </div>
-                  <button type="submit" disabled={!isEnabled} className="Submit-btn emailVerif" id="emailverif-btn">
-                    Verify Email
-                  </button>
-                </form>
-                <div className="login-error-msg">The email verification code does not exist. Please check and try again</div>
-                <button type="button" className="btnDescriptor button-unstyled alignLeft" onClick={this.toggleContainer}>
-                  <span >Can&#39;t see the email? </span>
-                  <span className="exclamation-icon-container">
-                    <i className="fas fa-question-circle" />
-                  </span>
-                </button>
-                {isContainerOpen && (
-                  <div className="descriptor subheader">
-                    <ol>
-                      <li className="descListItem">Check your junk email folder</li>
-                      <li className="descListItem">Did you enter your email address correctly ({userEmail})? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
-                      <li className="descListItem">Wait a few minutes or alternatively click to resend below</li>
-                      <button type="submit" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
-                        <span >Resend code</span>
-                      </button>
-                      <div className="redText"> Something went wrong. Looks like this user has already been verified. Please try and log in</div>
-                      <div className="greenText"> Successfully resent. Please also check your junk mail.</div>
-                    </ol>
-                  </div>
-                )}
-                <div className="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a className="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a className="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
-              </div>
-            </div>
-            <div className="col-5 login-pic">
-              <div className="login-picContainer">
-                <img className="prPlatformImg" alt="Prospela Platform Cartoon" src="https://prospela.com/wp-content/uploads/2019/05/Platform-picture.png" />
-              </div>
-            </div>
+          <button type="submit" disabled={!isEnabled} className="Submit-btn emailVerif" id="emailverif-btn">
+            Verify Email
+          </button>
+        </form>
+        <div className="login-error-msg">The email verification code does not exist. Please check and try again</div>
+        <button type="button" className="btnDescriptor button-unstyled alignLeft" onClick={this.toggleContainer}>
+          <span >Can&#39;t see the email? </span>
+          <span className="exclamation-icon-container">
+            <i className="fas fa-question-circle" />
+          </span>
+        </button>
+        {isContainerOpen && (
+          <div className="descriptor subheader">
+            <ol>
+              <li className="descListItem">Check your junk email folder</li>
+              <li className="descListItem">Did you enter your email address correctly ({emailToVerify})? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
+              <li className="descListItem">Wait a few minutes or alternatively click to resend below</li>
+              <button type="submit" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
+                <span >Resend code</span>
+              </button>
+              <div className="redText"> Something went wrong. Looks like this user has already been verified. Please try and log in</div>
+              <div className="greenText"> Successfully resent. Please also check your junk mail.</div>
+            </ol>
           </div>
-        </div>
+        )}
       </React.Fragment>
     );
   }

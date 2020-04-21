@@ -133,7 +133,7 @@ class IndustryRoleSU extends React.Component {
   canBeSubmitted() {
     const {industries, rolesChosen, roleValid, ratingConfi, holdBackTxt} = this.state;
 
-    if (industries != "" && rolesChosen != '' && roleValid === true && ratingConfi != "" && ratingConfi != 0 && !(ratingConfi >= 10) && holdBackTxt.length > 2) {
+    if (industries != "" && rolesChosen != '' && roleValid === true && ratingConfi != "" && ratingConfi != 0 && !(ratingConfi >= 10) && holdBackTxt.length >= 2) {
       return true;
     } else {
       return false;
@@ -186,8 +186,6 @@ class IndustryRoleSU extends React.Component {
                   options={industryOptions}
                   name='selectInd'
                   placeholder='Select Industry(s):'
-                  onFocus={this.onIndFocus}
-                  onBlur={this.onIndBlur}
                   handleChange={this.handleIndChange}
                   handleTabPress={this.handleTabPress}
                   focusOnLoad

@@ -14,8 +14,8 @@ import DiversitySU from './DiversitySU.js';
 import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
+import VerifyEmail from './VerifyEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';
-//import VerifyStudentProps from './VerifyStudentProps.js';
 
 function VerifyStudentProps(eetStatus, userEduName, currCo, currTrainingProvider) {
   let confirmStudentProps = {};
@@ -67,6 +67,18 @@ const MenteeSU4Props = {
   fullWidth: false
 }
 
+function MenteeSU5Props(emailToVerify) {
+  let confirmStudentProps = {};
+
+  confirmStudentProps = {
+    subheader: 'We\'ve sent a verification code to ' + emailToVerify + '. Please enter it below. Note: code only valid for the next 24 hours.',
+    title: 'Verify your Student email',
+    fullWidth: false,
+  }
+
+  return confirmStudentProps;
+}
+
 // This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
 const MenteeTypeformSignUpContent = ({tflink, step, currentStep, totalMenteeSteps}) => (
   <div>
@@ -114,20 +126,22 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didIndRole', // set to did1stSU when first loaded
+      step: 'didDiversity', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
-      country: '',
-      eetStatus: '',
-      schName: '',
+      country: 'GBR',
+      eetStatus: 'sch',
+      schName: '2',
       schNameFreeText: '',
       uniName: '',
       uniNameFreeText: '',
-  //    changedSch: '',
-  //    changedUni: '',
+      emailToVerify: '',
+      sendForReview: [],
+      reviewReason: [],
       currCo: '',
       currTrainingProvider: ''
     }
+    this.sendForReview = this.sendForReview.bind(this);
     this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);
     this.updateEetStatus = this.updateEetStatus.bind(this);
@@ -138,22 +152,25 @@ class TypeformSignUp extends Component {
     this.updateUniFreeText = this.updateUniFreeText.bind(this);
     this.updateCurrCo = this.updateCurrCo.bind(this);
     this.updateCurrTrainingProv = this.updateCurrTrainingProv.bind(this);
+    this.updateEduEmail = this.updateEduEmail.bind(this);
   }
 
   componentDidMount() {
-    console.log("component did mount triggered")
     this.getUserEduName();
   }
 
   getUserEduName() {
     const {step, updatingEdu, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
-    console.log("step in getusereduname: "+step)
+    console.log("getusereduname function triggered")
+    console.log("eetStatus: "+eetStatus)
+    console.log("uniName: "+uniName)
+    console.log("step: "+step)
+    console.log("updatingEdu: "+updatingEdu)
     if (step === 'didDiversity' || (step === 'didCountry' && updatingEdu)) {
       if (eetStatus === 'sch') {
         if (country === 'GBR') {
 
           if (schName != '') {
-            console.log("about to load schools")
             return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)])
               .then(sch => {
                 this.setState({
@@ -186,6 +203,7 @@ class TypeformSignUp extends Component {
         if (country === 'GBR') {
 
           if (uniName != '') {
+            console.log("doing uni look up promise")
             return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)])
               .then(uni => {
                 this.setState({
@@ -201,9 +219,12 @@ class TypeformSignUp extends Component {
                 })
               })
           } else {
+            console.log("userEduName should be OLD uni: "+this.state.userEduName)
             this.setState({
               isLoading: false,
               userEduName: uniNameFreeText
+            }, () => {
+              console.log("userEduName should be new uni: "+this.state.userEduName)
             })
           }
 
@@ -219,6 +240,14 @@ class TypeformSignUp extends Component {
         })
       }
     }
+  }
+
+  sendForReview(itemsToReview, reviewReason) {
+    console.log("sending for review")
+    this.setState(prevState => ({
+      sendForReview: prevState.sendForReview.concat(itemsToReview),
+      reviewReason: prevState.reviewReason.concat(reviewReason)
+    }))
   }
 
   updateStep(stepJustDone, updatingEdu) {
@@ -240,6 +269,9 @@ class TypeformSignUp extends Component {
           this.setState({
             step: 'didDiversity', // User updated education & has already done Shortsu so jump forward to didDiversity and confirm email
             isGeneralError: false
+          }, () => {
+            console.log("triggering getUserEduName")
+            this.getUserEduName()
           })
         })
         .catch(err => {
@@ -256,10 +288,10 @@ class TypeformSignUp extends Component {
     return;
 
     } else if (stepJustDone === 'didDiversity') {
-      console.log("updating step to diddiversity")
       this.setState({
         step: 'didDiversity'
       }, () => {
+        console.log("triggering getUserEduName")
         this.getUserEduName()
       })
       return;
@@ -344,20 +376,38 @@ class TypeformSignUp extends Component {
     })
   }
 
-  updateCurrCo(userInput) {
+  updateCurrCo(userInput, callback) {
     this.setState({
       currCo: userInput
+    }, () => {
+      if (callback) {
+        callback();
+      }
     })
   }
 
-  updateCurrTrainingProv(userInput) {
+  updateCurrTrainingProv(userInput, callback) {
     this.setState({
       currTrainingProvider: userInput
+    }, () => {
+      if (callback) {
+        callback();
+      }
+    })
+  }
+
+  updateEduEmail(userInput, callback) {
+    this.setState({
+      emailToVerify: userInput
+    }, () => {
+      if (callback) {
+        callback();
+      }
     })
   }
 
   render() {
-    const {isGeneralError, isLoading, step, updatingEdu, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider} = this.state;
+    const {isGeneralError, isLoading, step, updatingEdu, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify} = this.state;
     const userRole = 'mentee';
     const totalMenteeSteps = 5;
     const totalMentorSteps = 2;
@@ -403,6 +453,7 @@ class TypeformSignUp extends Component {
                 updateCurrCo={this.updateCurrCo}
                 updateCurrTrainingProv={this.updateCurrTrainingProv}
                 updateStep={this.updateStep}
+                sendForReview={this.sendForReview}
               />
             </SignUpScreenTemplate>
           );
@@ -444,6 +495,8 @@ class TypeformSignUp extends Component {
                   country={country}
                   userEduName={userEduName}
                   updateStep={this.updateStep}
+                  updateEduEmail={this.updateEduEmail}
+                  sendForReview={this.sendForReview}
                   currCo={currCo}
                   currTrainingProvider={currTrainingProvider}
                 />
@@ -452,7 +505,13 @@ class TypeformSignUp extends Component {
           );
         case 'didEduEmail':
           return (
-            console.log("Verify code page goes here")
+            <SignUpScreenTemplate {...MenteeSU5Props(emailToVerify)}>
+              <VerifyEmail
+                step={step}
+                updateStep={this.updateStep}
+                emailToVerify={emailToVerify}
+              />
+            </SignUpScreenTemplate>
           );
         case 'didEmailVerifNeedsRev':
           return (

@@ -18,7 +18,6 @@ import React, { Component } from "react";
 }*/
 
 function lookupUKSchUnis(i, valueToGet, eetStatus) {
-
   if (eetStatus === 'uni') {
     const fileToRender = valueToGet === 'emailFormat' ? 'UKUniEmails' : 'UKUnis' ;
     let uniDetail;

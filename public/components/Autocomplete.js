@@ -52,7 +52,9 @@ class Autocomplete extends React.Component {
         showSuggestions: false,
         userInput: e.currentTarget.value
       })
-      onBlur()
+      if (onBlur) {
+        onBlur()
+      }
       if(isValid) {
         document.getElementById("autocompleteBox-"+name).classList.remove('error');
       } else {
@@ -64,9 +66,11 @@ class Autocomplete extends React.Component {
   onFocus = (e) => {
     const {filteredSuggestions} = this.state;
     const {onFocus} = this.props;
-    console.log("onFocus fired")
-    onFocus();
-    console.log("filteredSuggestions.length: "+filteredSuggestions.length)
+
+    if (onFocus) {
+      onFocus()
+    }
+
     if (filteredSuggestions.length === 1) {
       return
     } else {
@@ -75,7 +79,6 @@ class Autocomplete extends React.Component {
   }
 
   onChange = (e) => {
-    console.log("onchange fired")
     const { suggestions, handleChange, valueToShow, required } = this.props;
     const userInput = e.currentTarget.value;
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -113,7 +116,6 @@ class Autocomplete extends React.Component {
   };
 
   onClick = (e) => {
-    console.log("onclick triggered")
     const { suggestions, handleChange, name, valueToShow, required } = this.props;
 
     this.setState({

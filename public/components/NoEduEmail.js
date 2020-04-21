@@ -17,7 +17,7 @@ const noEduEmailModalProps = {
 class NoEduEmail extends Component {
 
   render() {
-    const { country, eetStatus, handleNoEduEmail, currCo, currTrainingProvider } = this.props;
+    const { country, eetStatus, handleNoEduEmail, currCo, currTrainingProvider, sendForReview } = this.props;
     return(
       <React.Fragment>
         <Modal {...noEduEmailModalProps}>
@@ -25,6 +25,7 @@ class NoEduEmail extends Component {
             country={country}
             eetStatus={eetStatus}
             handleNoEduEmail={handleNoEduEmail}
+            sendForReview={sendForReview}
             currCo={currCo}
             currTrainingProvider={currTrainingProvider}
           />

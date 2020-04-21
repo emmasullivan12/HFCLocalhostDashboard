@@ -74,14 +74,10 @@ class NoEduEmailContent extends Component {
       e.preventDefault ();
       return;
     } else {
-      const { eetStatus, handleNoEduEmail } = this.props;
-
-      if (eetStatus != "none") {
-        handleNoEduEmail()
-      }
-
-      // OTHER HANDLER FUNCTIONS FOR OTHER INPUT BOXES
-      // Update pendingreview to = '1'
+      const { handleNoEduEmail, sendForReview } = this.props;
+      console.log("noeduemailcontent handle submit triggered")
+      sendForReview('other details/currentSitu', 'no eduEmail')
+      handleNoEduEmail()
 
       this.setState({
         messageFromServer: 'We are sending your deets to Prospela!'
