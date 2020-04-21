@@ -31,6 +31,7 @@ class IndustryRoleSU extends React.Component {
     this.handleRatingChange = this.handleRatingChange.bind(this);
     this.handleHoldBkChange = this.handleHoldBkChange.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.renderComponents = this.renderComponents.bind(this);
   }
 

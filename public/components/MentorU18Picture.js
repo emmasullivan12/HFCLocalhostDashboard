@@ -8,7 +8,6 @@ import TypeformEmbedded from './TypeformEmbedded.js';
 import Modal from './Modal.js';
 import U18CameraUploadContent from './U18CameraUploadContent.js';
 
-// import "../css/TypeformSignUp.css";
 import "../css/General.css";
 import "../css/Login.css";
 

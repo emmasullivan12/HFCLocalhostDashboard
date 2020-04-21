@@ -321,7 +321,8 @@ function MenteeSteps({userRole}) {
         case 'did1stSU':
         case 'didCountry':
         case 'didEdu':
-        case 'didShortSU':
+        case 'didIndRole':
+        case 'didDiversity':
         case 'didEduEmail':
         case 'didEmailVerifNeedsRev':
           return (

@@ -5,11 +5,12 @@ import ReactDOM from "react-dom";
 //import { connect } from "react-redux";
 import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
-import "../css/TypeformSignUp.css";
+import "../css/SignUp.css";
 import ConfirmStudent from './ConfirmStudent.js';
 import CountryShortSU from './CountryShortSU.js';
 import EduShortSU from './EduShortSU.js';
 import IndustryRoleSU from './IndustryRoleSU.js';
+import DiversitySU from './DiversitySU.js';
 import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
@@ -54,9 +55,15 @@ const MenteeShortSUProps = {
 }
 
 //This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
-const MenteeTypeformSignUpProps = {
+const MenteeSU3Props = {
   subheader: 'By understanding where you\'re starting from and where you\'re trying to get to, we\'re better able to support you!',
   title: 'Help us help you',
+  fullWidth: false
+}
+
+const MenteeSU4Props = {
+  subheader: 'Prospela\'s Co-Founder\'s proudly come from "working class" & second-gen immigrant backgrounds =)',
+  title: 'Some of us have extra hurdles',
   fullWidth: false
 }
 
@@ -107,12 +114,12 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didEdu', // set to did1stSU when first loaded
+      step: 'didIndRole', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
-      country: 'GBR',
-      eetStatus: 'sch',
-      schName: '2',
+      country: '',
+      eetStatus: '',
+      schName: '',
       schNameFreeText: '',
       uniName: '',
       uniNameFreeText: '',
@@ -124,7 +131,6 @@ class TypeformSignUp extends Component {
     this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);
     this.updateEetStatus = this.updateEetStatus.bind(this);
-//    this.updatingEdu = this.updatingEdu.bind(this);
     this.updateStep = this.updateStep.bind(this);
     this.updateUKSch = this.updateUKSch.bind(this);
     this.updateSchFreeText = this.updateSchFreeText.bind(this);
@@ -135,17 +141,19 @@ class TypeformSignUp extends Component {
   }
 
   componentDidMount() {
+    console.log("component did mount triggered")
     this.getUserEduName();
   }
 
   getUserEduName() {
     const {step, updatingEdu, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
-
-    if (step === 'didShortSU' || (step === 'didCountry' && updatingEdu)) {
+    console.log("step in getusereduname: "+step)
+    if (step === 'didDiversity' || (step === 'didCountry' && updatingEdu)) {
       if (eetStatus === 'sch') {
         if (country === 'GBR') {
 
           if (schName != '') {
+            console.log("about to load schools")
             return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)])
               .then(sch => {
                 this.setState({
@@ -230,7 +238,7 @@ class TypeformSignUp extends Component {
       return Promise.all([this.getUserEduName()])
         .then(res => {
           this.setState({
-            step: 'didShortSU', // User updated education & has already done Shortsu so jump forward to didShortSU and confirm email
+            step: 'didDiversity', // User updated education & has already done Shortsu so jump forward to didDiversity and confirm email
             isGeneralError: false
           })
         })
@@ -241,9 +249,18 @@ class TypeformSignUp extends Component {
           })
         })
 
-    } else if (stepJustDone === 'didShortSU') {
+    } else if (stepJustDone === 'didIndRole') {
       this.setState({
-        step: 'didShortSU'
+        step: 'didIndRole'
+      })
+    return;
+
+    } else if (stepJustDone === 'didDiversity') {
+      console.log("updating step to diddiversity")
+      this.setState({
+        step: 'didDiversity'
+      }, () => {
+        this.getUserEduName()
       })
       return;
 
@@ -257,12 +274,6 @@ class TypeformSignUp extends Component {
     } else if (stepJustDone === 'didEduEmail' && updatingEdu != true) {
       this.setState({
         step: 'didEduEmail'
-      })
-      return;
-
-    } else if (stepJustDone === 'didIndRole') {
-      this.setState({
-        step: 'didIndRole'
       })
       return;
 
@@ -397,7 +408,7 @@ class TypeformSignUp extends Component {
           );
         case 'didEdu':
           return (
-            <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
+            <SignUpScreenTemplate {...MenteeSU3Props}>
               <IndustryRoleSU
                 step={step}
                 currentStep="3"
@@ -408,31 +419,22 @@ class TypeformSignUp extends Component {
           );
         case 'didIndRole':
           return (
-            console.log("FSM questions go here")
+            <SignUpScreenTemplate {...MenteeSU4Props}>
+              <DiversitySU
+                step={step}
+                currentStep="4"
+                totalMenteeSteps={totalMenteeSteps}
+                updateStep={this.updateStep}
+              />
+            </SignUpScreenTemplate>
           );
-        /*case 'didEdu':
-          return (
-            <React.Fragment>
-              {fname && (
-                <SignUpScreenTemplate {...MenteeTypeformSignUpProps}>
-                  <MenteeTypeformSignUpContent
-                    tflink={menteetflink}
-                    step={step}
-                    currentStep="3"
-                    totalMenteeSteps={totalMenteeSteps}
-                    updateStep={this.updateStep}
-                  />
-                </SignUpScreenTemplate>
-              )}
-            </React.Fragment>
-          );*/
-        case 'didShortSU':
+        case 'didDiversity':
           return (
             !isLoading && (
               <SignUpScreenTemplate {...VerifyStudentProps(eetStatus, userEduName, currCo, currTrainingProvider)}>
                 <ConfirmStudent
                   step={step}
-                  currentStep="4"
+                  currentStep="5"
                   totalMenteeSteps={totalMenteeSteps}
                   schName={schName}
                   schNameFreeText={schNameFreeText}
