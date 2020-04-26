@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jorge, sorry for such a late reply! I've sent messages around just waiting for replies about the layout\/storyboarding.\nI have a few ideas, just short films for now and a couple of written scripts for those. I think the closest to being made is a sequel to a short film I made back in school! There was a lot I wanted to do that I didn't have the experience for so I think I can explore the whole concept better. How about yourself?",
+        "ts": "1578394888.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/896074345589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

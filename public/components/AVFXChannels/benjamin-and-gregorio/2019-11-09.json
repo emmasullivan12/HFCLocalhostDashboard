@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd mainly like to go into more cartoony animation. Here's what my showreel so far looks like( <https:\/\/vimeo.com\/372141740>)",
+        "ts": "1573349907.002000",
+        "username": "Gregorio Malara (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-09\/820571348017_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "GregorioMalaraShowreelSept2019",
+                "title_link": "https:\/\/vimeo.com\/372141740",
+                "author_name": "Gregorio Malara",
+                "author_link": "https:\/\/vimeo.com\/user99934030",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/829870181_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: GregorioMalaraShowreelSept2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/372141740?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"GregorioMalaraShowreelSept2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/372141740",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/372141740"
+            }
+        ]
+    }
+]

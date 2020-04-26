@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Teddy, how are you doing?",
+        "ts": "1547222540.000400",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/521766632722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caroline! Sorry I was out shopping!",
+        "ts": "1547224060.000500",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/521624528436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Teddy, not a problem. Would you like to chat now or shall we rearrange for next week?",
+        "ts": "1547224137.000600",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/521056048224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe next week would be best? Sorry about this",
+        "ts": "1547224220.000700",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/523196760086_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats fine, not to worry. I'm free on Monday afternoon or Tuesday afternoon, is there a time that's good for you?",
+        "ts": "1547224275.000800",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/523197777286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Monday works for me",
+        "ts": "1547224311.000900",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/521059148640_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great, lets go for 3pm on Monday 14th. Chat then",
+        "ts": "1547224331.001000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/521191867649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okie doke, talk to you then :slightly_smiling_face:",
+        "ts": "1547224354.001100",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/521059857280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

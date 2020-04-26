@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes thank you \nmerry Christmas and a happy new year\noh btw I am doing wohaa as a charity and I volunteered in cancer research charity as well ",
+        "ts": "1545923466.000200",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-27\/511907640865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

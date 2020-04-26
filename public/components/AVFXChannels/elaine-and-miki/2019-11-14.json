@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is all so great Miki! You are learning so much, and it will all tie together. Its great to hear you sounding so focused and that your goals are so clear. That's really important! Learning Python will really benefit you, it will be useful no matter which area you end up choosing.",
+        "ts": "1573740657.000100",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/823097562019_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if you have any more questions :slightly_smiling_face:",
+        "ts": "1573740665.000200",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/834104929796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keep an eye on DNEG's apprenticeships too: <https:\/\/www.dneg.com\/careers\/students-graduates\/>",
+        "ts": "1573740740.000300",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/836425348743_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "DNEG",
+                "title": "Early Careers - DNEG",
+                "title_link": "https:\/\/www.dneg.com\/careers\/students-graduates\/",
+                "text": "[...]Read More...",
+                "fallback": "DNEG: Early Careers - DNEG",
+                "from_url": "https:\/\/www.dneg.com\/careers\/students-graduates\/",
+                "service_icon": "https:\/\/www.dneg.com\/wp-content\/themes\/dneg\/images\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.dneg.com\/careers\/students-graduates\/"
+            }
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just wanted to send a quick update that I've started to render the animation, but have gotten slowed down due to technical problems with our farm. Also, this upcoming quarter SCAD has shifted to full online enrollment due to the ongoing novel Coronavirus (Covid-19) pandemic. I hope to start planning a new project in the next couple of weeks after I've finished transitioning my belongings back home.  If you have any ideas or suggestions on what I should attempt\/explore next, it would be much appreciated. I also wish you and your family the best during this outbreak.",
+        "ts": "1584556289.004300",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/998258271907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, shit is fucked. I'm full on work from home for the foreseeable future. Where is home for you?",
+        "ts": "1584557082.004400",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1009308854500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Home is Louisville, KY. Trying to figure out what to do with a slow internet connection and over three hundred gigabytes to transfer.",
+        "ts": "1584560844.004500",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/998474504499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

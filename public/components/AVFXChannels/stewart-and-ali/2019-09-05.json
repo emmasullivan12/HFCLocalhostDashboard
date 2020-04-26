@@ -1,0 +1,29 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Stewart, thank you for the lovely introduction. Sounds like you really know your stuff and I’m looking forward to picking your brains about it :blush:!  \n\nA bit about me : I have a degree in moving image (an arty-farty course) which didn’t leave me with too many tangible skills but I had a lot of fun experimenting with film. \n\nI recently worked at The Mill as runner for just over a year, where I learned a lot and most importantly discovered what I wanted do for a career - 3D modelling and texturing with a focus on props and character (but am still open at this point in time) . \n\nI worked out of hours to train myself up from scratch and despite having the amazing opportunity where leads plucked me out of the running team to train in the 3D department for two months, the time I had to train beyond this, was limiting so I resigned to focus on up-skilling myself at home. Since being home for a month my skills have definitely improved and I’d like to start applying to internships and entry level roles in the next few months.\n\nThe software I’ve been using is Maya, Zbrush, substance painter, 3D equaliser and nuke \n\nI think the main advice I’m looking for for the time being  is:\n\n- What do I need to improve in my work to create a production ready reel\n- How do I get back in the industry \n- For the meantime, are there roles within the industry that allow for time to train properly and still have to foot in the door?\n\nPlease see my art station here, <https:\/\/www.artstation.com\/alimegerdichian> \n\n\n",
+        "ts": "1567679079.001700",
+        "username": "Ali Megerdichian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-05\/738238977891_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Ali Megerdichian",
+                "title_link": "https:\/\/www.artstation.com\/alimegerdichian",
+                "text": "freelance 3D Artist",
+                "fallback": "ArtStation: Ali Megerdichian",
+                "thumb_url": "https:\/\/cdnb.artstation.com\/p\/assets\/images\/images\/020\/391\/883\/small\/ali-megerdichian-fanbitch.jpg?1567601064",
+                "from_url": "https:\/\/www.artstation.com\/alimegerdichian",
+                "thumb_width": 800,
+                "thumb_height": 450,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-19b148b2b98dfbb3aaa1c1c97f1ac90d.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/alimegerdichian"
+            }
+        ]
+    }
+]

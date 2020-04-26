@@ -1,0 +1,71 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Juba, hope you're having a a great start to the week! It's been a super long time since I've updated you with anything on my front, please forgive my radio silence :disappointed_relieved:\nYour final piece was such a pleasure to watch! The timing and humour was amazing and it reminded me of the times I used to watch the animator vs animation videos on YouTube\/Newgrounds :)\n\nI've finally got something to show for our film! We recently had an Alpha submission that had led up to an intense period (there was a moment where we considered disbanding the team and freelancing for the rest of the semester) but after the positive reception from our classmates and lecturers we agreed to push on and give it our all :D Here's the film in it's current state (very much a work in progress, especially with some of the animation) but hopefully that gives a better idea of what we're hoping to do for the film: <https:\/\/vimeo.com\/394204069|https:\/\/vimeo.com\/394204069>\n\nFor this part of the year our time is split into completing our final major project (as well as any additional freelance\/personal work we do along the way) and our essay too, and typically only having 1\/2 classes a week where we talk to one of our lecturers about our progress on the film.\n\nI've been updating the lipsync piece a bit too, let me know what you think! <https:\/\/syncsketch.com\/sketch\/3de0918ae621\/#1396978\/1466533|https:\/\/syncsketch.com\/sketch\/3de0918ae621\/#1396978\/1466533>\n\nI'm also freelancing for some shots in other student films, I should be able to send progress on those shortly :) Admittedly it has meant my boar animation has been put on the backburner, here's what I have so far for it: <https:\/\/syncsketch.com\/sketch\/fbde959905dc\/|https:\/\/syncsketch.com\/sketch\/fbde959905dc\/>\n\nI was debating whether to continue with this piece or potentially come back to a different one, it was planned to be a dog jumping and catching a frisbee - something I did a while ago but would love to get your thoughts on if I should maybe pursue this one instead? <https:\/\/syncsketch.com\/sketch\/334fea1ff886\/|https:\/\/syncsketch.com\/sketch\/334fea1ff886\/>\n\nOnce again I'm so sorry for responding to you so so late!",
+        "ts": "1583799496.000100",
+        "username": "Alex Selby (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990348845365_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "MISSION INDeliGENCE Alpha",
+                "title_link": "https:\/\/vimeo.com\/394204069",
+                "author_name": "Jenna Drawing",
+                "author_link": "https:\/\/vimeo.com\/user98977995",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/859999065_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: MISSION INDeliGENCE Alpha",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/394204069?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"MISSION INDeliGENCE Alpha\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/394204069",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/394204069"
+            },
+            {
+                "title": "SyncSketch: Capitalism Lipsync",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/3de0918ae621\/#1396978\/1466533",
+                "text": "Collaborative Media Review with 5 items",
+                "fallback": "SyncSketch: Capitalism Lipsync",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/3de0918ae621\/#1396978\/1466533",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 2,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/3de0918ae621\/#1396978\/1466533"
+            },
+            {
+                "title": "SyncSketch: Boar Anim",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/fbde959905dc\/",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: Boar Anim",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/fbde959905dc\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 3,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/fbde959905dc\/"
+            },
+            {
+                "title": "SyncSketch: Dog Frisbee Catch",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/334fea1ff886\/",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: Dog Frisbee Catch",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/334fea1ff886\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 4,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/334fea1ff886\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583799497.000000"
+        }
+    }
+]

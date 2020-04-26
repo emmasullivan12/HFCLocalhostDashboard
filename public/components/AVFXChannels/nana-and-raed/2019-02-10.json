@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "^^I mean for when u said you are selling items",
+        "ts": "1549793582.006600",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-10\/548424813654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

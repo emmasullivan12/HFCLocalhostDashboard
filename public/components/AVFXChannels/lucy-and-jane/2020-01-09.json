@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I showed my teacher your advice and he agrees with you, so I made as many edits as I could manage to get it to completion",
+        "ts": "1578605119.000900",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/890193039505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/thomastallis-my.sharepoint.com\/:w:\/g\/personal\/zlee_thomastallis_org_uk\/EbSXNsnsszRNiSublHoJdDsBBx87hjsGxfd6kR4p4wFe_w?e=RYTz1t|https:\/\/thomastallis-my.sharepoint.com\/:w:\/g\/personal\/zlee_thomastallis_org_uk\/EbSXNsnsszRNiSublHoJdDsBBx87hjsGxfd6kR4p4wFe_w?e=RYTz1t>:w:\/g\/personal\/zlee_thomastallis_org_uk\/EbSXNsnsszRNiSublHoJdDsBBx87hjsGxfd6kR4p4wFe_w?e=RYTz1t",
+        "ts": "1578605123.001000",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/888944375187_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

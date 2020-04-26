@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeh sure ",
+        "ts": "1508340892.000745",
+        "username": "shania.jf.8 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258175844915_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We can FaceTime ",
+        "ts": "1508340902.000765",
+        "username": "shania.jf.8 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/257600232160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

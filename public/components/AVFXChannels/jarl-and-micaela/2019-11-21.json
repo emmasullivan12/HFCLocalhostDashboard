@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela,How are you? I hope your reel is coming along well. Please let me know if you'd like me to take a peek at some point? I'm totally cool with it being in whatever state, just let me know if you're ever in need of a second pair of eyes on it.\n\nAlso I saw Electric Theater Collective are advertising for Junior Houdini Artists right now out in Bristol. I know it's not exactly close, but I've heard good things about Bristol, and maybe it would be a cool opportunity? Here's a link to where I saw the job posted:\n<http:\/\/electrictheatre.tv\/blog\/careers>\n\nHere's the actual job application web page:\n<https:\/\/apply.workable.com\/electrictheatre\/j\/50E5AF71A4\/>",
+        "ts": "1574383235.000100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/836919348417_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Electric Theatre",
+                "title": "Careers",
+                "title_link": "http:\/\/electrictheatre.tv\/blog\/careers",
+                "text": "ETC are always on the look out for super talented, good people. If you are a super talented, good person drop us an email at <mailto:jobs@electrictheatre.tv|jobs@electrictheatre.tv>. Even if there isn't a vacancy listed below that applies to you drop us an email anyway. You just never know.",
+                "fallback": "Electric Theatre: Careers",
+                "image_url": "https:\/\/static.fabrik.io\/sx3\/106976cb4c667106.png?auto=format&lossless=1&w=1280&h=1280&fit=max&s=a8064e76dd13011c4ba5d34ffcc05a77",
+                "from_url": "http:\/\/electrictheatre.tv\/blog\/careers",
+                "image_width": 213,
+                "image_height": 250,
+                "image_bytes": 153889,
+                "service_icon": "http:\/\/electrictheatre.tv\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "http:\/\/electrictheatre.tv\/blog\/careers"
+            },
+            {
+                "title": "Junior CG Generalist &amp; Houdini Artists - Electric Theatre Collective",
+                "title_link": "https:\/\/apply.workable.com\/electrictheatre\/j\/50E5AF71A4\/",
+                "text": "Our Bristol office, the newest addition to the Electric stable, is looking for Junior CG Generalists to continue the great start they have made in their first year. Led by Head of VFX Dean Robinson, the office invests in and nurtures rising stars ...",
+                "fallback": "Junior CG Generalist &amp; Houdini Artists - Electric Theatre Collective",
+                "image_url": "https:\/\/www.workable.com\/assets\/facebook-preview.png",
+                "from_url": "https:\/\/apply.workable.com\/electrictheatre\/j\/50E5AF71A4\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 22751,
+                "service_icon": "https:\/\/www.workable.com\/static\/apple-touch-icon-192x192.png",
+                "service_name": "apply.workable.com",
+                "id": 2,
+                "original_url": "https:\/\/apply.workable.com\/electrictheatre\/j\/50E5AF71A4\/"
+            }
+        ]
+    }
+]

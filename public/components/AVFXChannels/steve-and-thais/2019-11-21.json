@@ -1,0 +1,113 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574369299.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5dd6f812238fea0004ff6c0d|this link> with other teams to invite them in it_",
+        "ts": "1574369299.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574369299.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574369700.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1574369715.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-25\" to \"steve-and-thais\"",
+        "old_name": "z-shared-25",
+        "name": "steve-and-thais"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1574369754.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1574369764.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@steve has joined the channel_",
+        "ts": "1574369958.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/846441461191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@thais.ondet has joined the channel_",
+        "ts": "1574369966.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844582565472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Thais, please meet Steve your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1574369985.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844583106624_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574369994.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/846442457799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574369998.001500",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/846442559767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

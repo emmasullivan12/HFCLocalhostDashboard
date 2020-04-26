@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good. Send a link to your work and I'll take a look",
+        "ts": "1585823434.002100",
+        "username": "Christian (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043410897141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

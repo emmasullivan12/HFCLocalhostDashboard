@@ -1,0 +1,147 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574086975.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574086976.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5dd2a93e9d0efc00048d7285|this link> with other teams to invite them in it_",
+        "ts": "1574086977.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574087048.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1574087065.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"emma-and-ravena\"",
+        "old_name": "z-shared-23",
+        "name": "emma-and-ravena"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Villiers E-Mentoring* joined the shared channel_",
+        "ts": "1574087089.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@raveraj03 has joined the channel_",
+        "ts": "1574087695.001000",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/840632836695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has joined the channel_",
+        "ts": "1574087696.001100",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838778249440_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ravena, please meet Emma your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message me if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1574087814.001200",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838781474576_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574087822.001300",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/840991089190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Emma my name is raveena",
+        "ts": "1574088886.001400",
+        "username": "Ravena Raj (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/830885166001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "client_msg_id": "a0f92acc-b7ea-47a4-a72f-916065f85479",
+        "type": "message",
+        "text": "Hey Raveena! So nice to \"meet\" you and be your E-Mentor for this programme :smiley:\n\nDexter sent me your profile and I have to say you remind me of me a little! I studied Business &amp; Psychology and used to spend all of my money on stationary :joy:\n\nYou mentioned a few careers you might be interested in (nursing, customer service @ BA and accountancy). They are all fairly different i.e. would require different approaches to getting into them, so I wondered which (if any) you were learning towards the most? If you're not sure yet, that's fine too. Perhaps we can use this programme to explore where your passion lies \/ what you would be a good fit for!\n\nWell here's a little bit about me &gt;&gt; I'm Emma and an entrepreneur \/ computer programmer, but I haven't always known how to code. I used to work in Finance\/Accounting and in Management Consultancy and in the Oil &amp; Gas industry, so it is safe to say I have been around a good few industries!\n\np.s is it Raveena (with two e's) or Ravena?\n\nLooking forward to hearing from you!",
+        "user": "U4V22C6A1",
+        "ts": "1574099012.001900",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "ddf766f5-571d-410c-a641-1c50fa6060a0",
+        "type": "message",
+        "text": "You can message me any time you like by the way. Anytime a question comes to mind or you want to have a chat! I will try to reply as soon as I can :slightly_smiling_face:",
+        "user": "U4V22C6A1",
+        "ts": "1574099082.002600",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

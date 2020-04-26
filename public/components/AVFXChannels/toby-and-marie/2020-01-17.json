@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I started splining the first shot today and the timing changes quite a bit, I’ll upload it for you to see",
+        "ts": "1579280491.000100",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/911360498816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you have any comments on timing please let me know",
+        "ts": "1579280511.000200",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/913220229079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/drive.google.com\/file\/d\/1C0k4HA1WPmINEmyKPTwJkq4J9njy8oLp\/view?usp=drivesdk|https:\/\/drive.google.com\/file\/d\/1C0k4HA1WPmINEmyKPTwJkq4J9njy8oLp\/view?usp=drivesdk>",
+        "ts": "1579283946.000300",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/913665320566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

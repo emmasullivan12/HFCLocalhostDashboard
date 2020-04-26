@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Juba, what are strengths and weakness at your job?",
+        "ts": "1532162588.000052",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-21\/403648459687_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

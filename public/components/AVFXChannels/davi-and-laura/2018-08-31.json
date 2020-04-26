@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will have a look at it, thanks:+1: ",
+        "ts": "1535717120.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-31\/426880401955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure :blush:",
+        "ts": "1535719582.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-31\/426304946272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

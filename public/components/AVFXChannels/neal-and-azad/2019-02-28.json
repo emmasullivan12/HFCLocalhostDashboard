@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yea same here which is why I replied so late as well sorry about that ",
+        "ts": "1551349289.000100",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-28\/563655303045_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope the day yesterday went well! ",
+        "ts": "1551349310.000200",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-28\/563286834948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, I've always used nuke since i started compositing. i had a bit of experience in after effects before that too. The company i'm at specialise in invisible vfx, which is all the stuff that you wouldn't know VFX has been added. So, something like a set extension where we've made a scene look bigger, or green screen comps, or made a sunny day look overcast. having said that, the show i'm currently on is very FX heavy with lots of gore and blood flying everywhere. The newest thing I've learnt is not so much a Nuke tool but developing the eye. Seeing what it takes to get a shot to final. That last 10% that will sell the shot.",
+        "ts": "1551350397.000300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-28\/563344370674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you don't want to use 3rd party renderers, I'd say go ahead and keep the free version! Mantra can be very powerful in itself. We're using it for some water stuff on our current film. We were also using it for particle work as well up until this week, where they changed their mind and took it into Maya, but until that point, it was a Mantra render setup",
+        "ts": "1586682127.002000",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1063975460628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye mantra is great but I'd want it more so that I can render without watermarks and bigger than 720",
+        "ts": "1586702659.002100",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056505863538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah yes, get some good renders going and out! There is the Indie version, which is $400 for 2 years which is a decent price. Virtually all the same benefits as the full FX one",
+        "ts": "1586710455.002200",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056586754610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And if you're going to be earning from it, Indie works just as well",
+        "ts": "1586710587.002300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1057434360243_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

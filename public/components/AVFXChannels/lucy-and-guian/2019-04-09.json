@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you Guian?  Let me know if I can have a peek at your project sometime. I’m curious. :slightly_smiling_face:",
+        "ts": "1554816228.000500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/605153548485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They're excited but also a bit worried",
+        "ts": "1554817170.000600",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/590758576563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lucy I'm good sorry my last message didn't send on time, and of course you can see my fmp I haven't started the production process yet, but there are some pre production posts on my blog :blush:",
+        "ts": "1554817307.000700",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/605800384247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

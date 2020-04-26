@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Flora, it looks like I will be doing OT this weekend so I probably wont have time, one after or a night this week would work though. Let me know what works for you",
+        "ts": "1584049914.006700",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/999203418455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

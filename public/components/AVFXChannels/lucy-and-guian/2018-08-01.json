@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sound really exciting.  Try to keep notes of your process or film on your phone and make a little behind the scenes film if you have time.  They are great to show people how you work etc.  Here is a lovely example that I like. <https:\/\/vimeo.com\/208796451>",
+        "ts": "1533123445.000008",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-01\/408642049747_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Poles Apart Making Of",
+                "title_link": "https:\/\/vimeo.com\/208796451",
+                "author_name": "Paloma Baeza",
+                "author_link": "https:\/\/vimeo.com\/palomabaeza",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/624205367_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "A behind the scenes look at Poles Apart, a stop-motion animation.\n",
+                "fallback": "Vimeo Video: Poles Apart Making Of",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/208796451?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Poles Apart Making Of\" webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/208796451",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/208796451"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thank you I will keep that in mind",
+        "ts": "1533130552.000122",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-01\/409881216871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

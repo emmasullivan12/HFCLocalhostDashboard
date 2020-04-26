@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahh that's unfortunate, I hope you get well soon! :) and I hope you arent feeling too ill either",
+        "ts": "1550567622.001400",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/555980582614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and yeah that sounds great!",
+        "ts": "1550567630.001500",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/553800711904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also if you know a few compositors it would be nice because another a few of my classmates are still struggling to find someone to talk to :joy::joy: if it's not a huge inconvenience for you",
+        "ts": "1550583114.001600",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/555799605255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks dude ! \nMore compositors might be a bit difficult actually \nMost projects that were are working on are not at the compositing stage and the department is very thin atm. It’s going to be while before they start hiring again . . It also doesn’t help that I’ve been out of compositing for over a year now :\/ \nHave you tried speaking to dexter maybe about finding more mentors that are compositors ? ",
+        "ts": "1550583639.001700",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554692696916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Btw I was thinking about the questions and having a conversation on text might not be the easiest due to the amount of typing involved. maybe you guys can  put all your questions on a mail and we can reply back to that? ",
+        "ts": "1550583940.001800",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554619592435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

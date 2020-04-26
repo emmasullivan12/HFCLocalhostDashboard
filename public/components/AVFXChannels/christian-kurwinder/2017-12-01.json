@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I have been quiet recently -  I've had an intense time at work. I was put on a project in a completely different area than I'm used to, so I had a lot to learn and get up to speed on so that I could get a report written for our client this week. Lots of new knowledge, and built an analytical tool for others in the office to use, so hard work but very useful! At the same time, been building an economic model for a corruption case, trying to work out what the market value of a contract was in 2010. Also very interesting! But lots of work, so apologies again for being quiet.",
+        "ts": "1512135378.000031",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/281421458551_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We're coming up to the end of the program, so I hope you have found it useful - happy to answer any last minute questions you might have.",
+        "ts": "1512135398.000134",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/279689687408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

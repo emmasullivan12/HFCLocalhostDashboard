@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright, I think I understand:+1: ",
+        "ts": "1550074253.001500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-13\/549510135281_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll see what I can come up with and show you:grin: ",
+        "ts": "1550074270.001600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-13\/551501376038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":blush:",
+        "ts": "1550086467.001700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-13\/550264487476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll see if I can find more examples too. ",
+        "ts": "1550086479.001800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-13\/549588601184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

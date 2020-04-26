@@ -1,0 +1,173 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! These are looking really cool! \nYou probably have done this but first of all I would suggest you find real world reference images for all the projects, whether you shoot them yourself or find them online (not just references from other films or video games). I always do this for example with lighting, even if the end result will be an animation. I find that way I'm more clear with what I want and how I want to proceed.\nI found the forest img dark and could use a bit more form. Be careful to not crush your blacks completely, unless you are doing it as a stylistic choice. The interior one with the wood panels on the windows is looking cool, is that the post apocalyptic one? You might consider tilting the camera angle to bring in an uneasy mood?\nFor point of interest I think probably the best way to start is to look at photography principles, like the rule of thirds or having lines (could be landscape) pointing to or guiding the eye towards what you want the audience to focus on as part of your story. Sometimes I draw tiny thumbnail img of my work to see if it is working as rough shapes and still holds interest. \nHope that helps, let me know if there was anything more specific you were thinking about or if I missed anything. \n\nGoing to add some links that will hopefully be useful!",
+        "ts": "1580770760.011000",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/922178197842_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Rule of thirds\n<https:\/\/emptyeasel.com\/2009\/02\/03\/the-rule-of-thirds-why-it-works-and-how-to-use-it-in-your-art\/|https:\/\/emptyeasel.com\/2009\/02\/03\/the-rule-of-thirds-why-it-works-and-how-to-use-it-in-your-art\/>\n\n<https:\/\/emptyeasel.com\/2008\/10\/21\/6-time-tested-ways-to-create-visual-paths-of-interest-in-your-paintings\/|https:\/\/emptyeasel.com\/2008\/10\/21\/6-time-tested-ways-to-create-visual-paths-of-interest-in-your-paintings\/>",
+        "ts": "1580770783.011100",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/937177574790_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "EmptyEasel.com",
+                "title": "The Rule of Thirds: Why it Works and How to Use it in Your Art - EmptyEasel.com",
+                "title_link": "https:\/\/emptyeasel.com\/2009\/02\/03\/the-rule-of-thirds-why-it-works-and-how-to-use-it-in-your-art\/",
+                "text": "In the diagram seen here, a rectangle has been divided horizontally and vertically by four lines. The rule of thirds states that the centers of interest for any rectangle lie somewhere along those lines.",
+                "fallback": "EmptyEasel.com: The Rule of Thirds: Why it Works and How to Use it in Your Art - EmptyEasel.com",
+                "image_url": "http:\/\/EmptyEasel.com\/wp-content\/uploads\/2009\/02\/rule-of-thirds-diagram-1.jpg",
+                "ts": 1233661102,
+                "from_url": "https:\/\/emptyeasel.com\/2009\/02\/03\/the-rule-of-thirds-why-it-works-and-how-to-use-it-in-your-art\/",
+                "image_width": 313,
+                "image_height": 250,
+                "image_bytes": 82298,
+                "service_icon": "https:\/\/emptyeasel.com\/wp-content\/uploads\/2019\/02\/cropped-ee-logo-hi-res-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/emptyeasel.com\/2009\/02\/03\/the-rule-of-thirds-why-it-works-and-how-to-use-it-in-your-art\/"
+            },
+            {
+                "service_name": "EmptyEasel.com",
+                "title": "6 Time-tested Ways to Create Visual Paths of Interest in Your Paintings - EmptyEasel.com",
+                "title_link": "https:\/\/emptyeasel.com\/2008\/10\/21\/6-time-tested-ways-to-create-visual-paths-of-interest-in-your-paintings\/",
+                "text": "Most of us realize that if we put too much visual information into a single work of art all at once, our viewers won't know where to look. But just as a musical composer guides what his audience hears, a painter can guide his viewers' eyes. . .",
+                "fallback": "EmptyEasel.com: 6 Time-tested Ways to Create Visual Paths of Interest in Your Paintings - EmptyEasel.com",
+                "image_url": "http:\/\/EmptyEasel.com\/wp-content\/uploads\/2008\/10\/genn-moscow-1.jpg",
+                "ts": 1224576796,
+                "from_url": "https:\/\/emptyeasel.com\/2008\/10\/21\/6-time-tested-ways-to-create-visual-paths-of-interest-in-your-paintings\/",
+                "image_width": 315,
+                "image_height": 250,
+                "image_bytes": 146264,
+                "service_icon": "https:\/\/emptyeasel.com\/wp-content\/uploads\/2019\/02\/cropped-ee-logo-hi-res-180x180.png",
+                "id": 2,
+                "original_url": "https:\/\/emptyeasel.com\/2008\/10\/21\/6-time-tested-ways-to-create-visual-paths-of-interest-in-your-paintings\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580770787.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/thevirtualinstructor.com\/how-to-create-focal-points.html|https:\/\/thevirtualinstructor.com\/how-to-create-focal-points.html>\n\nDream Worlds: Production Design for Animation <https:\/\/www.amazon.co.uk\/dp\/0240520939\/ref=cm_sw_r_other_apa_i_0LXnEbCA7YD9K|https:\/\/www.amazon.co.uk\/dp\/0240520939\/ref=cm_sw_r_other_apa_i_0LXnEbCA7YD9K>\n\n<https:\/\/zeico.tumblr.com\/post\/24771917045\/disneys-pool-of-light-and-background-theory|https:\/\/zeico.tumblr.com\/post\/24771917045\/disneys-pool-of-light-and-background-theory>",
+        "ts": "1580770808.011300",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/936829267287_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "5 Ways to Create a Focal Point in Artwork",
+                "title_link": "https:\/\/thevirtualinstructor.com\/how-to-create-focal-points.html",
+                "text": "Learn how to create effective focal points in your artwork in this video art demonstration.",
+                "fallback": "5 Ways to Create a Focal Point in Artwork",
+                "from_url": "https:\/\/thevirtualinstructor.com\/how-to-create-focal-points.html",
+                "service_icon": "https:\/\/thevirtualinstructor.com\/favicon.ico",
+                "service_name": "thevirtualinstructor.com",
+                "id": 1,
+                "original_url": "https:\/\/thevirtualinstructor.com\/how-to-create-focal-points.html"
+            },
+            {
+                "title": "Ravnican Shojo Manga",
+                "title_link": "https:\/\/zeico.tumblr.com\/post\/24771917045\/disneys-pool-of-light-and-background-theory",
+                "text": "Disney's Pool of Light and Background Theory coelasquid: “ notzilon: “ Something I’ve been reading up on recently in my quest to provide backgrounds for my drawings is Disney’s focus on pools of light...",
+                "fallback": "Ravnican Shojo Manga",
+                "image_url": "https:\/\/66.media.tumblr.com\/tumblr_m5d2ie2J3t1qgeheo.jpg",
+                "from_url": "https:\/\/zeico.tumblr.com\/post\/24771917045\/disneys-pool-of-light-and-background-theory",
+                "image_width": 445,
+                "image_height": 250,
+                "image_bytes": 25234,
+                "service_icon": "https:\/\/66.media.tumblr.com\/avatar_c1b92018f8e6_128.pnj",
+                "id": 2,
+                "original_url": "https:\/\/zeico.tumblr.com\/post\/24771917045\/disneys-pool-of-light-and-background-theory"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580770809.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/en.m.wikipedia.org\/wiki\/Dutch_angle|https:\/\/en.m.wikipedia.org\/wiki\/Dutch_angle>\n\n<https:\/\/www.gamasutra.com\/view\/feature\/185676\/the_aesthetics_of_game_art_and_.php|https:\/\/www.gamasutra.com\/view\/feature\/185676\/the_aesthetics_of_game_art_and_.php>",
+        "ts": "1580770834.011500",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/922180361170_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/06\/Person_passed_out_on_sidewalk_photographed_with_a_dutch_angle_NYC.tif\/lossy-page1-1200px-Person_passed_out_on_sidewalk_photographed_with_a_dutch_angle_NYC.tif.jpg",
+                "image_width": 1200,
+                "image_height": 828,
+                "image_bytes": 192670,
+                "title": "Dutch angle",
+                "title_link": "https:\/\/en.m.wikipedia.org\/wiki\/Dutch_angle",
+                "from_url": "https:\/\/en.m.wikipedia.org\/wiki\/Dutch_angle",
+                "author_name": "Wikipedia",
+                "author_link": "https:\/\/en.wikipedia.org\/",
+                "text": "The Dutch angle, also known as Dutch tilt, canted angle, or oblique angle, is a type of camera shot which involves setting the camera at an angle on its roll axis so that the shot is composed with vertical lines at an angle to the side of the frame, or so that the horizon line of the shot is not parallel with the bottom of the camera frame.  This produces a viewpoint akin to tilting one's head to the side. In cinematography, the Dutch angle is one of many cinematic techniques often used to portray psychological uneasiness or tension in the subject being filmed.Dutch is a bastardisation of the word Deutsch, the German word for \"German\". It is not related to the Dutch people or language. It originated in the First World War, as Navy blockades made the import (and export) of movies impossible. The German movie scene was part of the expressionist movement, which used the Dutch angle extensively.",
+                "fallback": "wikipedia: Dutch angle",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/wikipedia.png",
+                "id": 1,
+                "original_url": "https:\/\/en.m.wikipedia.org\/wiki\/Dutch_angle"
+            },
+            {
+                "title": "The Aesthetics of Game Art and Game Design",
+                "title_link": "https:\/\/www.gamasutra.com\/view\/feature\/185676\/the_aesthetics_of_game_art_and_.php",
+                "text": "How can the techniques of classical painters provide a roadmap that actually affects how gameplay is designed? In this all-new piece, Chris Solarski expands on themes from his successful book to illustrate an aesthetic path forward.",
+                "fallback": "The Aesthetics of Game Art and Game Design",
+                "thumb_url": "http:\/\/www.gamasutra.com\/db_area\/images\/feature\/185676\/art_thumb.jpg",
+                "from_url": "https:\/\/www.gamasutra.com\/view\/feature\/185676\/the_aesthetics_of_game_art_and_.php",
+                "thumb_width": 120,
+                "thumb_height": 90,
+                "service_icon": "https:\/\/www.gamasutra.com\/favicon.ico",
+                "service_name": "gamasutra.com",
+                "id": 2,
+                "original_url": "https:\/\/www.gamasutra.com\/view\/feature\/185676\/the_aesthetics_of_game_art_and_.php"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580770835.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some of these are animation links so if you don't find it relevant feel free to ignore :)\nHope you are having a good start to the week!",
+        "ts": "1580770890.011700",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/924810634529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! I’ll have a look at these tomorrow :) ",
+        "ts": "1580771758.011800",
+        "username": "Charlie Adams (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/937198089430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I'll be attending a few next year at the universities ",
+        "ts": "1545254368.002100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-19\/507746064321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

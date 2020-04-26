@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Daniel! I’m sorry I’ve been off comms for so long. The last couple of weeks have felt completely overwhelming. In positive news, I’ve been busy with some paid freelance work and we’re making good progress at Escape with our final short film. On the other hand, coronavirus is getting pretty scary (particularly how the government wants to handle it) and some family trouble to boot. I feel bad for taking so long to get in touch and I know everybody has a lot to think about right now but it’d lovely to hear back from you.\n\nI read your interview with Script Summit and I’ve been keeping up with Broken Toy. It’s wonderful that you’re making such good progress with it and I look forward to seeing where it goes!\n\nThe VFX Discord has been great so far! There’s lot of interesting conversation going on there. It’s nice to get so much insight into the industry and to just see so many varied artists in one forum.\n\nHow are you doing? I hope you’re as well as can be with everything going on. All the best!",
+        "ts": "1584235835.000100",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1003070796886_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "type": "message",
+        "text": "Your Slack export has completed! You can download the file from <https:\/\/prospela.slack.com\/services\/export\/download\/202911393075\/380f4440|your export page>.",
+        "user": "USLACKBOT",
+        "ts": "1498287661.938947",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Your invitation to <mailto:s1607767@ed.ac.uk|s1607767@ed.ac.uk> has bounced. If you’d like to try again (or try a different address), head to your <https:\/\/prospela.slack.com\/admin\/invites|Invitations> page.",
+        "user": "USLACKBOT",
+        "ts": "1498323914.701323",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Bolaji.pdf* under review.",
+        "ts": "1498327025.890758",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Bolaji.pdf* meets our content policy.",
+        "ts": "1498327026.890815",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vFinal.pdf* under review.",
+        "ts": "1498327186.899830",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vFinal.pdf* meets our content policy.",
+        "ts": "1498327187.899906",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vFinal.pdf* under review.",
+        "ts": "1498327303.907993",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vFinal.pdf* meets our content policy.",
+        "ts": "1498327304.908054",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Muchen.pdf* under review.",
+        "ts": "1498327761.934515",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Muchen.pdf* meets our content policy.",
+        "ts": "1498327762.934575",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela Thumbnail - Copy.png* under review.",
+        "ts": "1498342233.694778",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela Thumbnail - Copy.png* meets our content policy.",
+        "ts": "1498342234.694827",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    }
+]

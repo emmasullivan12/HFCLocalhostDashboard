@@ -1,0 +1,3191 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure thing.  How I came to like lighting a bit more is just through experimentation. Trying a few different specialisms. And founds the ones I avoid, the ones I don't mind doing and the ones I like. I chose lighting more as I like creating different atmospheres and moods with the types of lights and colours. \n\nWhat I do here at bluezoo is basically use light rigs and set up scenes to make sure the lighting hooks up with the environment and stays continuous throughiut the scene. The extra bit is comp is combining the render layers we have. So here it is character layer and then environment and shadows.  Also effects gets added in this layer as well",
+        "ts": "1577629817.002800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888486743189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Once all the layers are kind of added is when you can kind of get a sense of how it's looking",
+        "ts": "1577629898.002900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888020150692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does it take long to set up a scene? Since I have never had an experience I can't imagine what you do for 40 hrs a week whole year. Is it like you always have something to do? Or does it depends on availability of projects?",
+        "ts": "1577631712.003000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875704281842_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know from some studio they have quiet spells and intensive ones. For me it kind of just constant pace. Um. Not really some shots can be set up really quickly. Like you may to shots which look nearly identical in the position and framing. So you just do one and copy it over. The other parts which need to get setup like the setting and render layer doesn't take long we have tools to do that.",
+        "ts": "1577631874.003100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875705289234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But also depends on how heavy the scenes are. Some of the scenes are quite heavy.",
+        "ts": "1577631889.003200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888498966565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But that just means more time it takes to render.",
+        "ts": "1577631934.003300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888499241013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is render time part of working time? Do u render during work or leave it over night?",
+        "ts": "1577632290.003400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877023040307_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also when is the best to contact u?",
+        "ts": "1577632300.003500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875707763682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When ever.",
+        "ts": "1577632307.003600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890350385287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't really mind. If I have Tien I'll answer",
+        "ts": "1577632329.003700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875707965714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's mixed so when I'm working on shots I render during work time. When I think the lighting is good I send it to farm to either render it over night or on render it in working hours depending on priority and availability of blades",
+        "ts": "1577632440.003800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875708680962_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have a render farm at your university",
+        "ts": "1577632466.003900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875708809682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "??",
+        "ts": "1577632466.004000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888502410885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know some do and some don't",
+        "ts": "1577632486.004100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878252052465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is render farm? :^)",
+        "ts": "1577632543.004200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877024618611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We use just PCs uni provides. So we model and render on same pc.",
+        "ts": "1577632586.004300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877024854851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And what os availability of blades?",
+        "ts": "1577632599.004400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888493399936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is*",
+        "ts": "1577632772.004500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888494424336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok. I'll give it a good at explaining but they are made in a few different ways.  kind of think of it as big room full of computers. Say 100 computers\/blades. If I send a job to the farm of a shot about 20 frames. I can 1 frame to 20 blades. So if one frame takes 10 minutes and can complete my 20 frames in that time. Rather than it taking 20p minutes. While these are working I still have 80 blades still available for the next person to use. Priorities as you can guess decided who gets the blades or the other people. But you may find people at uni do like a mini farm. So like logging onto multiple pc and splitting the job across them. However. Not as good as a normal farm as your taking pc away from pc and depending how your saving your dating you have to go and collect it from all the pcs in the end.",
+        "ts": "1577633078.004600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888496106128_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Basically. I could have explained it like this. A load of pc connected to each by a network",
+        "ts": "1577633151.004700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890355316807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However. If you're looking at real time rendering in games. It wouldn't really benefit much",
+        "ts": "1577633243.004800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888039840228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah, gotcha",
+        "ts": "1577633387.004900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888498012208_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Last year final year student took 7 pcs for his final render. Quite annoying since pcs he took were in the middle of the room where usually ppl work",
+        "ts": "1577633447.005000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888508225989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However if you wanna try linking computers up across the network. Just remember. The data will be slower transfering across the network and you might bring the network down like we nearly did by sending too much data at once",
+        "ts": "1577633474.005100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890705432390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And in BlueZoo how you decide who takes blades?",
+        "ts": "1577633507.005200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890357538407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Too much data? So one pc renders different projects at the same time?",
+        "ts": "1577633539.005300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888498958288_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well if your uni works likes how ours did not to be mean but if you need a pc just turn one of them off",
+        "ts": "1577633541.005400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888498973536_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nah like. Sending 4gb scene files to different pcs",
+        "ts": "1577633561.005500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888041796516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's kinda nasty to turn them off :D \nUsually there is paper \"I am rendering pls dont touch\"",
+        "ts": "1577633645.005600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877031201059_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But yeah when people did that with our computer in my years  room I made a few rules. Find another computer. If all are taken the people who's room it was belongs to takes priority. With their rendering and tirn off the people who shouldn't be there. And notify them.",
+        "ts": "1577633748.005700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878259612305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And ppl feel kinda bad to turn it off. \nThat guy's final project was huge scene made in maya. He did smt like hirez turntable camera. Since it was his *final* work everyone understood",
+        "ts": "1577633755.005800",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888500311456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is mean.",
+        "ts": "1577633775.005900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878259792929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did u have lots of students?",
+        "ts": "1577633777.006000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875716655074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My group (all 2nd years) is only 11 ppl",
+        "ts": "1577633793.006100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875716763858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't get me wrong. Turning their pc off was the last resort. Normally after I have asked and looked around. If I couldn't find one I would say sorry but I need a pc and I couldn't do much work at home.  Um about 80 ISH think across 2 courses",
+        "ts": "1577633949.006200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890708280102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We did have it where a master student came in an turned a few of the logged in pc off.",
+        "ts": "1577633982.006300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890360376823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see",
+        "ts": "1577634034.006400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888501908896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And started rendering. Just randomly without asking.",
+        "ts": "1577634040.006500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878261291217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dam that's so few people",
+        "ts": "1577634057.006600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888511831189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did your labs work at nights?",
+        "ts": "1577634064.006700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888502097616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah",
+        "ts": "1577634074.006800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888044843076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "24\/7",
+        "ts": "1577634079.006900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878261518561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Even slept in there a few times",
+        "ts": "1577634093.007000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877033792179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Few indeed. Noone kinda liked our course so they left x) \nToo general I would say",
+        "ts": "1577634098.007100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888044992180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hum. What was your course called.",
+        "ts": "1577634141.007200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890361323735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On my year noone knows what they want to do. I know i wanna work with games.",
+        "ts": "1577634145.007300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890709414342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Digital media arts",
+        "ts": "1577634151.007400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888502615488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We do EVERYTHING. But like 1 program in 2month. Don't think it's a good idea. We had maya for 1,5 month. Basically that was my starting point",
+        "ts": "1577634209.007500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875719128338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok.",
+        "ts": "1577634450.007600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878263677761_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you written CV? Did you use university services for that?",
+        "ts": "1577634780.007700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875722442578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am not sure if they will be good at creative industries CVs becase they usually help business students",
+        "ts": "1577634833.007800",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875722734082_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1 program for 2 months. Which programs have you learnt so far",
+        "ts": "1577634838.007900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890365343879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1 year\nPhotoshop\nAftereffects\nIllustrator (we were learning this one only 3 lessons) \nMotionbuilder \nNuke \nMaya \nDragonframe (little bit)",
+        "ts": "1577635037.008000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888050462884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But you should try giving zbrush a go. Its not quite what you want to with sculpting and has a very clunky interface. But it can be kind of fun",
+        "ts": "1577635050.008100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888517622213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So kind of 4 related to 3d",
+        "ts": "1577635112.008200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875724372562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will give it a try. But little bit later. I need to make more models in maya to put something in my portfolio",
+        "ts": "1577635123.008300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888508245552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do u count Photoshop for textures?",
+        "ts": "1577635148.008400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890367177655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To be honest I have never used motion bulder. Yeah totally agree.",
+        "ts": "1577635167.008500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888051237556_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah",
+        "ts": "1577635167.008600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878267879217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Motionbuilder is weird. We used green room for mocap. Looked like all characters had tremor. .",
+        "ts": "1577635240.008700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877040771571_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Photoshop is good. But for creating some tillable texture maps. If you wanna do some more texturing  would suggest substance painter or Mari. Yeah. My old house mate was an animator and he said that there is normally clean up involved",
+        "ts": "1577635282.008800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890716432390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "May I show you my CV and Portfolio if I ever manage to do it?",
+        "ts": "1577635303.008900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875725950930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep. I don't mind looking through these stuff. Always fun seeing new stuff",
+        "ts": "1577635368.009000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877041738947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah quite a lot of cleaning up with what we got. \nI wanna try substance painter. \n.\nI have a small free course on it.",
+        "ts": "1577635371.009100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888052945396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No harsh criticism though I am quite a crybaby",
+        "ts": "1577635395.009200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875726615618_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "XD",
+        "ts": "1577635407.009300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888510503456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure",
+        "ts": "1577635410.009400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878269873329_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The only tough moments for me are in overwatch comp. Though can't stay there long without obtaining cancer.",
+        "ts": "1577635445.009500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875726977410_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ty!",
+        "ts": "1577635448.009600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888053495924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh",
+        "ts": "1577635462.009700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888510865904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah.",
+        "ts": "1577635464.009800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890717715686_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I love that stuff",
+        "ts": "1577635467.009900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890369687559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I opened it up recently. Dam it changed. You have select what you are doing before quick matching",
+        "ts": "1577635524.010000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890718136966_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fun isn't it? Though sometimes i regret having female voice. Can't swear at ppl when they think u r 11yrs old boi....",
+        "ts": "1577635562.010100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875727721906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like role selection?",
+        "ts": "1577635573.010200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888521364933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or rejims u can play during search?",
+        "ts": "1577635584.010300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888054349060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also got myself some monster hunter worlds and being like first monster easier I'm good. Diablos and crying. Pff. I wouldn't really care about you voice. You can normally tell the difference between children and adults.",
+        "ts": "1577635627.010400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888521680725_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Role select.",
+        "ts": "1577635634.010500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890370713271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's easy for me as I play tank.",
+        "ts": "1577635642.010600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888521766485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But like. If yo have a bad healthier or damage your kind of buggered",
+        "ts": "1577635671.010700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888512119376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*healer",
+        "ts": "1577635687.010800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890370999863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MONSTER HUNTER",
+        "ts": "1577635708.010900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875728548786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will u buy iceborne?",
+        "ts": "1577635737.011000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877044011939_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So hyped up for this one",
+        "ts": "1577635743.011100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875728728690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Whats your weapon?",
+        "ts": "1577635747.011200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875728750034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hummm. I'm kind of interested. But I just got this and spent my money's worth on games for a while.",
+        "ts": "1577635766.011300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888055363156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well yeah with winter sales. \nThe game is out in jan (on pc)",
+        "ts": "1577635803.011400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888055554612_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Humm. I think I played the switch axe the weeb weapon and the twin swords I think they're called",
+        "ts": "1577635805.011500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888512859200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I got myself tetrix",
+        "ts": "1577635827.011600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890719835462_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tetris.",
+        "ts": "1577635829.011700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888522808501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Long sword is weeb weapon I thought",
+        "ts": "1577635831.011800",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890371808631_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is",
+        "ts": "1577635843.011900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888513102080_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But mine at the moment is less weeby",
+        "ts": "1577635863.012000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890720043302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/7p3rZJlxyNY|https:\/\/youtu.be\/7p3rZJlxyNY>",
+        "ts": "1577635876.012100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877044816691_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "What Your Main Weapon Says About You - Monster Hunter World! (Weapon Stereotype Fun)",
+                "title_link": "https:\/\/youtu.be\/7p3rZJlxyNY",
+                "author_name": "RageGamingVideos",
+                "author_link": "https:\/\/www.youtube.com\/user\/RageGamingVideos",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/7p3rZJlxyNY\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: What Your Main Weapon Says About You - Monster Hunter World! (Weapon Stereotype Fun)",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/7p3rZJlxyNY?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/7p3rZJlxyNY",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/7p3rZJlxyNY"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am hammer main",
+        "ts": "1577635884.012300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888513339920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh",
+        "ts": "1577635885.012400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888523133749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No",
+        "ts": "1577635887.012500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875729568706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hammers are the best",
+        "ts": "1577635890.012600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888523169141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah my friend I'm playing with is that",
+        "ts": "1577635900.012700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878272788241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But you should get Tetris effects if you like Tetris.",
+        "ts": "1577635918.012800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890720392070_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Boi. Playing that until 2 in morning.",
+        "ts": "1577635934.012900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878272981057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Used to use hunting horn. Ppl used me for earplugs ....",
+        "ts": "1577635941.013000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890720520550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What does the hunting horn do",
+        "ts": "1577635974.013100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890372692039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Play songs",
+        "ts": "1577635997.013200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878273387345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And do damage. Little bit",
+        "ts": "1577636006.013300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890720949990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll see how much of monster hunter I can complete first before getting the expansion",
+        "ts": "1577636023.013400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875730438498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahah",
+        "ts": "1577636024.013500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888514245696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds amazing.",
+        "ts": "1577636033.013600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878273626369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's your hunter rank now?",
+        "ts": "1577636040.013700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877045866227_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm just gonna blast it with my music",
+        "ts": "1577636041.013800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890373109767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amazing when you don't chase monster for 45 min....",
+        "ts": "1577636053.013900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890373169847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I have no idea. I just finish off diablos",
+        "ts": "1577636074.014000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888057244212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have u watched video I sent. I would say very good representation of hunting horn",
+        "ts": "1577636079.014100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888057276404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And the volcano monster is in the sea.",
+        "ts": "1577636091.014200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877046186339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im not the best with names",
+        "ts": "1577636097.014300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888524485749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it's like 7ish then?",
+        "ts": "1577636100.014400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890721540518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can't at the moment. I'm on s bus into London",
+        "ts": "1577636106.014500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877046290019_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah damn",
+        "ts": "1577636115.014600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888057541124_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I will when I get set up at home again.",
+        "ts": "1577636131.014700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877046474963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do u play on gamepad?",
+        "ts": "1577636137.014800",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890721811238_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye",
+        "ts": "1577636143.014900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875731217666_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep, say me wut u think after u watched",
+        "ts": "1577636150.015000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888515060016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have that some games are just better for that. Like for honor",
+        "ts": "1577636167.015100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875731350466_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And if you need any help with monsters. I am like 130ish now",
+        "ts": "1577636175.015200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877046714739_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I heard for honour is broken and unfair.",
+        "ts": "1577636193.015300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888057998484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I'm left handed so I have to rekey bind every single key.",
+        "ts": "1577636196.015400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890374090695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some classes are insane and others are meh",
+        "ts": "1577636200.015500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888515360016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Humm.",
+        "ts": "1577636209.015600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875731614674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh gg",
+        "ts": "1577636214.015700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875731645474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess for but it's like one of these thing with fighting games you can stuck in a combo and die or dodge and live",
+        "ts": "1577636234.015800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890374348487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just have to for see it",
+        "ts": "1577636248.015900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888515675744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I got it for free so I don't really mind",
+        "ts": "1577636259.016000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888515745584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heavily skill based?",
+        "ts": "1577636264.016100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875731981378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess in away but I button smash the hell out of it",
+        "ts": "1577636290.016200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890374683735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm trying to teach myself not to button masg",
+        "ts": "1577636309.016300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888525827941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mash.",
+        "ts": "1577636317.016400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888516083856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Poor keys",
+        "ts": "1577636331.016500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877047704691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's my genji controller",
+        "ts": "1577636345.016600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888058943044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It flows green",
+        "ts": "1577636350.016700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875732487970_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glows",
+        "ts": "1577636354.016800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890723127718_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wha",
+        "ts": "1577636357.016900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888059007940_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is ot ps type or xbox type?",
+        "ts": "1577636367.017000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890723206854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It*",
+        "ts": "1577636372.017100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878275755361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However I was in playing sekiro",
+        "ts": "1577636377.017200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877047977827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Xbox",
+        "ts": "1577636380.017300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890375233127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I bought myself ps type (cheap and kinda legit one). Then trued SO's xbox controller. SOOOOO MUCH better",
+        "ts": "1577636422.017400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888526563765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I thought xbox controller is too big but location of sticks is better",
+        "ts": "1577636465.017500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878276411249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And got angry and one of buttons didn't have the feedback. So I got even more angry and took it appart",
+        "ts": "1577636467.017600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890375848727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like the ps ones",
+        "ts": "1577636478.017700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890375936135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like the symbols over the letters.",
+        "ts": "1577636487.017800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875733438946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why?",
+        "ts": "1577636487.017900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890375993799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah",
+        "ts": "1577636493.018000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888059973412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's true",
+        "ts": "1577636499.018100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888060008084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But xbox is less effort to set up.",
+        "ts": "1577636502.018200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878276675505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But hands are so tired",
+        "ts": "1577636510.018300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878276716337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Got stuff on a boss",
+        "ts": "1577636513.018400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875733601458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Stuck",
+        "ts": "1577636527.018500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888060152596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So put the game down and went into fixing mode.",
+        "ts": "1577636550.018600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890724413478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Angrily.",
+        "ts": "1577636555.018700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890724441062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "XD",
+        "ts": "1577636557.018800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878276974913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How old is your genji controller?",
+        "ts": "1577636560.018900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890724468822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hummm",
+        "ts": "1577636565.019000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890724494694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or is it just becais controller abuse?",
+        "ts": "1577636574.019100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890376477207_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh it's not really a genji controller I just call it that because it has green lights in it. Um. 2018 I think",
+        "ts": "1577636604.019200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877049398595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now older",
+        "ts": "1577636605.019300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875734084130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2017",
+        "ts": "1577636610.019400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875734111922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Probably about here",
+        "ts": "1577636632.019500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890376769799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I know it's not. Dou sounds better that your controller",
+        "ts": "1577636753.019600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875734872690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It still works. R1 just doesn't wanna work sometimes",
+        "ts": "1577636780.019700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888528610245_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If it's working not as good as before you can buy some chinese ones on amazon? They are quite gud",
+        "ts": "1577636784.019800",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878278178817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nothing will be able to replace my genji",
+        "ts": "1577636814.019900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890377738599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It the best for horror games. It flashes when it viberates.",
+        "ts": "1577636841.020000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888061816260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Scares the hell out of me everytime",
+        "ts": "1577636850.020100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875735400610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I watch let's plays for horror games. I will never ever play them myself. I bought once dead space 2 back in 2014. Will never do this mistake again",
+        "ts": "1577636912.020200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890726375190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have the original dead space",
+        "ts": "1577636941.020300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877051226099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still in its plastic film",
+        "ts": "1577636949.020400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877051268211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I have alien isolation.",
+        "ts": "1577636958.020500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888062480244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can only play that if I have someone else with me",
+        "ts": "1577636968.020600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877051371427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like friends gaming gathering?",
+        "ts": "1577636993.020700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878279333393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah.",
+        "ts": "1577637007.020800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875736304290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Kind of.",
+        "ts": "1577637010.020900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888529911605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was mostly my house mates as they couldn't sleep with my loud screams. XD",
+        "ts": "1577637034.021000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877051796739_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Back in the day of uni.",
+        "ts": "1577637044.021100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877051861411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah. I thought mb u had something like gaming soc in uni?",
+        "ts": "1577637060.021200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878279790193_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh there is I think. But that was league.",
+        "ts": "1577637076.021300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888063230116_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And the winner goo some money",
+        "ts": "1577637083.021400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875736805170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm just too bad at league",
+        "ts": "1577637098.021500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888530489941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also my pc is full of games at the moment",
+        "ts": "1577637127.021600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888063541236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just for League?",
+        "ts": "1577637131.021700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890727700710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah",
+        "ts": "1577637139.021800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878280260081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think there is overwatch",
+        "ts": "1577637146.021900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890727782406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh we have different comp games because of nuel and nse",
+        "ts": "1577637162.022000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890379814103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I think I was too stressed out to look out for these",
+        "ts": "1577637163.022100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888530886005_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am in ow team. Don't rly enjoy it. Not good to mix plat and silver okayers",
+        "ts": "1577637189.022200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888531062725_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are these universities",
+        "ts": "1577637205.022300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875737591122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm gold I think",
+        "ts": "1577637210.022400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875737616994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But these are gambles on if teams mates play together or against",
+        "ts": "1577637240.022500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890728420534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven't played comp for quite a long time. New season in jan. Need to calibrate.",
+        "ts": "1577637252.022600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878281004577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahhh",
+        "ts": "1577637261.022700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875737927826_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha. I'll probably go e comp ago soon.",
+        "ts": "1577637271.022800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875737991250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like comp more than quick play as people seems to cooperate a bit more and talk.",
+        "ts": "1577637295.022900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877053417363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I nearly got into plat",
+        "ts": "1577637310.023000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888531790261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When u play comp you at least have goal. Though ppl trash talk a lot more",
+        "ts": "1577637366.023100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890381042215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In quick play if someone trach talks you just ask to chill since it's not comp x)",
+        "ts": "1577637392.023200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890729287494_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah. I just like talking dumb stuff on there.",
+        "ts": "1577637409.023300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875738774882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As the saltiness of comp needs to have something else",
+        "ts": "1577637423.023400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888522626608_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like offensively?",
+        "ts": "1577637433.023500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878282029969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh no",
+        "ts": "1577637442.023600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877054247955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or just some random stuff?",
+        "ts": "1577637444.023700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890729570406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just dumb stuff.",
+        "ts": "1577637448.023800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878282113921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't like hating on peoepl.",
+        "ts": "1577637466.023900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877054370803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not toxic at all?????",
+        "ts": "1577637483.024000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890729756774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In comp game??????",
+        "ts": "1577637497.024100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875739222146_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hatride doesn't solve hatride.",
+        "ts": "1577637508.024200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888523058976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How does it work????????",
+        "ts": "1577637509.024300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890381817783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Weeeelll",
+        "ts": "1577637517.024400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878282459649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sooometiiiimes",
+        "ts": "1577637521.024500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888532946117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It helps.",
+        "ts": "1577637528.024600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888065856452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh you find someone who talks. And seeing if the follow the flow",
+        "ts": "1577637531.024700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888065873252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sometimes",
+        "ts": "1577637536.024800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877054720787_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "U hate them then u say: mate see u can play better!",
+        "ts": "1577637540.024900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875739436722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My housemates friend is a bit toxic at times.",
+        "ts": "1577637553.025000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890730111590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh this",
+        "ts": "1577637555.025100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890382043959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like what?",
+        "ts": "1577637571.025200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877054902387_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What you said. Yeah sometimes I do this",
+        "ts": "1577637639.025300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888523764016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah!",
+        "ts": "1577637667.025400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877055436419_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or tell them to pick another person",
+        "ts": "1577637677.025500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875740184866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So they can just be bad",
+        "ts": "1577637682.025600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890382734567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well before you could ask em pick symm cuz she didn't need aim x)",
+        "ts": "1577637721.025700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890731055894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "True",
+        "ts": "1577637740.025800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888524339376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But now don't even know what u can ask dps to pick to be useful",
+        "ts": "1577637746.025900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888524372592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like mei to be annoying?",
+        "ts": "1577637759.026000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888534272293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pick reap or junk maybe",
+        "ts": "1577637759.026100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888534273429_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah tru",
+        "ts": "1577637768.026200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888534327637_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like I enjoy tank. I can be Winston or roadhog",
+        "ts": "1577637774.026300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878283897249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She can be.",
+        "ts": "1577637779.026400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888067256900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On the ebony team as well as on your own",
+        "ts": "1577637790.026500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890731456006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Enemy",
+        "ts": "1577637802.026600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890383435975_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "U main tanks?",
+        "ts": "1577637804.026700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888534527509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah",
+        "ts": "1577637810.026800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890731578022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you guess my bae",
+        "ts": "1577637819.026900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888534627637_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Off or main?",
+        "ts": "1577637821.027000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890383568951_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds like off",
+        "ts": "1577637828.027100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890383610791_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Winston?",
+        "ts": "1577637831.027200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888534712517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nope",
+        "ts": "1577637836.027300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890731756966_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Zarya?",
+        "ts": "1577637849.027400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888067703972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hell yeah",
+        "ts": "1577637859.027500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875741298930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm big and powerful",
+        "ts": "1577637865.027600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888067815092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Who do you main",
+        "ts": "1577637874.027700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890732017478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She is indeed. Though they made her off meta now. Doesn't rly matter on our rank but ppl can't live without double shield nowadays",
+        "ts": "1577637905.027800",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888068094548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah true",
+        "ts": "1577637923.027900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878284882065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mercy\/moira\/baptist",
+        "ts": "1577637924.028000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878284885841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like brigitta so so much",
+        "ts": "1577637930.028100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888068275460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They killed her",
+        "ts": "1577637934.028200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875741817986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She is soooooooo weak now",
+        "ts": "1577637942.028300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877057190195_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Healing wise",
+        "ts": "1577637950.028400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888068403572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know.",
+        "ts": "1577637972.028500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890384563399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I even got her golden weapon before all of that shir happened....",
+        "ts": "1577637976.028600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888535669397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I loved her when she first came out",
+        "ts": "1577637983.028700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890384624231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think same.",
+        "ts": "1577637989.028800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877057447299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But zarya has my first.",
+        "ts": "1577637999.028900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888525987680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do u like sigma?",
+        "ts": "1577638046.029000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888536048405_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or orisa with her orb?",
+        "ts": "1577638057.029100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890733145094_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They are quite similar to zarya",
+        "ts": "1577638066.029200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877057888339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Humm. Haven't had much time play with him.",
+        "ts": "1577638148.029300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875743034578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But i.loke zaryas more.",
+        "ts": "1577638172.029400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890733799606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just wish it was longer.",
+        "ts": "1577638179.029500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875743217426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Too op",
+        "ts": "1577638240.029600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888070113876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know.",
+        "ts": "1577638285.029700",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875743930546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wish they bring the old mercy back.",
+        "ts": "1577638322.029800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875744162130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With mass res?",
+        "ts": "1577638381.029900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875744493970_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye",
+        "ts": "1577638391.030000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875744544594_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I didn't like it tbh. Its quite rare when all 5 are dead and u use it effectively. With new mercy u res every 20 sec. And you can use ult freely, without waiting for more teammates death",
+        "ts": "1577638445.030100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878288026353_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like the idea that she can your ult worthless",
+        "ts": "1577638475.030200",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888071567652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "True that",
+        "ts": "1577638498.030300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877060516115_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah",
+        "ts": "1577638505.030400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875745255186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well we have zen and lucio",
+        "ts": "1577638522.030500",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888071833012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Zen is easily countered by ana and widow",
+        "ts": "1577638587.030600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890388308727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can ana sleep him during ult?",
+        "ts": "1577638714.030700",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890737212166_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "While he was ulting",
+        "ts": "1577640071.030800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877070800851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However I did manage to hook zen off the map once",
+        "ts": "1577640071.030900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875755493218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She do the anti heal.",
+        "ts": "1577640072.031000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/877070806259_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good strat. Not working on plat :D",
+        "ts": "1577643796.031100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/890421133559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have never seen good anas on my rank",
+        "ts": "1577643809.031200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/875778689538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what rank are you",
+        "ts": "1577651660.031300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888148746964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Last season was 2900 (still so proud) \nThis season 2700",
+        "ts": "1577657745.031400",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878394628001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hum I don't think I was that high",
+        "ts": "1577658725.031500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/878399184465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's alright\nI dont think there is difference between 2200 to 2700 x)",
+        "ts": "1577661257.031600",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-29\/888194457476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's one of my favourites! I have indeed, that's a great idea. Would be fantastic practice for fabric shaders (assuming the hat is made from fabric). What sort of gadgets will it have?",
+        "ts": "1575283452.008100",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/843057134354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I’m going to either have it as a top hat or a safari type hat! That’s something I’m still working out at the moment! Because it would be cool to have it have multiple arms to do all kinds of whacky stuff but we’ve been given another brief today so I might just give it one arm. I think the whole Mickey Mouse Hand would be cool to have on the end of it so it could for example do someone’s lipstick! But I think maybe an umbrella would also be kind of fun!",
+        "ts": "1575322226.008200",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/858688694983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m just doing some pre-vis atm to help me decide on my subject for my new brief!",
+        "ts": "1575323884.008300",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/858727123239_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

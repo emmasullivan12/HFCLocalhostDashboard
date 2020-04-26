@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was the same when I was at school",
+        "ts": "1575922857.005900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/868311213846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hated dealing with customers or any of those kinds of jobs",
+        "ts": "1575922871.006000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/868311488134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But actually spending a short time in those customer services types roles will really help you",
+        "ts": "1575922885.006100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/868311810502_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As it's good to know how to and be comfortable dealing with people in any career",
+        "ts": "1575922904.006200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/853321976786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The sooner you face this kind of challenge the better I think :slightly_smiling_face:",
+        "ts": "1575922919.006300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/853322370690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What kind of work experience do you think you will apply to?",
+        "ts": "1575922927.006400",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/858161437377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you had any jobs at all?",
+        "ts": "1575922938.006500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/865647656756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries if you haven't had any experience yet that's normal",
+        "ts": "1575923080.006600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/868316545078_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a good time to try and get some though",
+        "ts": "1575923086.006700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/866118104197_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy to help you with any applications if you would like me to",
+        "ts": "1575923097.006800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/865651557668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I worked only once, in a laundry for 1 month and few days, it was fun and I liked to work there because they were friendly and I enjoyed to work with them,  that was in summer holidays :sweat_smile: \nI haven't thought about any job experience yet but  definitely I will because everyone just looks at the CV as a proof.",
+        "ts": "1575928618.006900",
+        "username": "Gurpreet (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/858301778129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

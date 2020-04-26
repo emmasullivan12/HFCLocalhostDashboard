@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah sorry I've forgotten hahah I'll send it to you tonight thanks Emma",
+        "ts": "1570782156.000300",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/785522682833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Also don't forget EGX is next week Thurs! Have you managed to snag a ticket? Is there anything preventing you from doing so? Let me know if I can help :relaxed:",
+        "ts": "1570817107.000400",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/786272357969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a fab weekend!",
+        "ts": "1570817113.000500",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/786272483953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

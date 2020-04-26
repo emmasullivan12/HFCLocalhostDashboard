@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So from what you've said you feel like you are leaning away from animation and more towards things like Unreal and realtime Fx? I also love realtime its definitely something i'm trying to push more aswell. Very fun and interesting! Also where are you located if you dont mind me asking? just wondering what companies you might have near you that do suitable work :slightly_smiling_face:",
+        "ts": "1563650198.000100",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-20\/703040656534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

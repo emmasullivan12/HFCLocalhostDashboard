@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey. How's it all going? How's all your projects coming along? Have you been doing any job hunting recently?",
+        "ts": "1571936345.000100",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-24\/810180256022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

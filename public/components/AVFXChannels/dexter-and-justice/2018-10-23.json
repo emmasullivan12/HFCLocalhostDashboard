@@ -1,0 +1,128 @@
+[
+    {
+        "client_msg_id": "d37c582a-6b64-4f91-9174-5f839d4532c7",
+        "type": "message",
+        "text": "Ah OK.  If I'm honest I hated writing a personal statement. I found it really strange writing about myself for a whole page lol",
+        "user": "U4VR52RQE",
+        "ts": "1540300634.000100",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "4b8abd3a-1e5a-4b87-bba9-30369ecc23e2",
+        "type": "message",
+        "text": "It's a really good exercise to do though",
+        "user": "U4VR52RQE",
+        "ts": "1540300641.000100",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "f719accc-445a-4955-9d5c-449aa8f86004",
+        "type": "message",
+        "text": "Once you get all the content down you need then you can start playing around with the structure of it",
+        "user": "U4VR52RQE",
+        "ts": "1540300663.000100",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b8ebf933-8c13-47ad-a968-286b815e9b2b",
+        "type": "message",
+        "text": "There are some useful and simple templates of how to contract your personal statement online of course but I'd be happy to help you with it too if you'd like? :blush:",
+        "user": "U4VR52RQE",
+        "ts": "1540300723.000100",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "29194cbc-2856-40eb-98bc-81e762cd708b",
+        "type": "message",
+        "text": "Feel free to share the doc in slack and I'll take a look for you",
+        "user": "U4VR52RQE",
+        "ts": "1540300738.000100",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "2a6d9610-cff0-4e0c-912a-c8750ad8182c",
+        "type": "message",
+        "text": "What uni are you thinking of applying to? ",
+        "user": "U4VR52RQE",
+        "ts": "1540300757.000100",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

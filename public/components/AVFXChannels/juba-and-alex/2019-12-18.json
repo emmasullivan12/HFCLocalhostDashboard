@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Alex! How are you? For a quick intro, my name is Juba, been working as an animator at Framestore for 2 years now, and in the industry for about 4 years. I studied 3D animation at Vancouver Film School in Canada, where I made my first short\nEither way, I still have so much to learn, but I'd be happy to help in anyway I can =)\nIf you'd like, tell me a little about yourself too :smiley:",
+        "ts": "1576663188.001600",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/868116017905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Paulina, how is it going? How are you feeling about the project - is it going okay working with others in the team? How much longer do you have left?\n\nThanks for sending your work through, its looking really nice and clean, well done! The idea and storyboard is funny, I'd love to see the final result when you are ready! :monkey:",
+        "ts": "1574709844.019500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848635310432_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wondered if you wanted to share with me your thoughts about studios you might want to apply to or careers you want to pursue? Are your tutors helping you with this?",
+        "ts": "1574709853.019600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848635485376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I look forward to hearing back! Hope you are getting time to chill out and have fun outside of studies too..! :i_love_you_hand_sign:",
+        "ts": "1574709924.019700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850844473398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

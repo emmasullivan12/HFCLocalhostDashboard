@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey no worries! I'm sure you're bus, i don't seem to get notifications on Slack.",
+        "ts": "1567755081.003700",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/750987641973_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyway ye. The main idea is to do a good destruction sim with particles, debris and pyro however I'd also like the building to be procedural. We did a procedural building project at school, it's in another one of my reels.",
+        "ts": "1567755297.003800",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/739527199443_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/334192133>",
+        "ts": "1567755451.003900",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/753208807142_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "ReelMay2019",
+                "title_link": "https:\/\/vimeo.com\/334192133",
+                "author_name": "Tariq Kinani",
+                "author_link": "https:\/\/vimeo.com\/user95568254",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/780403512_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "All projects done in Houdini and Nuke. This is a mix of my favourite projects up to now. I have learnt a huge amount during my short time learning 3d and Houdini in particular. I can't wait to see what I can learn and produce in the future!",
+                "fallback": "Vimeo Video: ReelMay2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/334192133?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"ReelMay2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/334192133",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/334192133"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":point_up: It's the penultimate one on this reel. What do u think?",
+        "ts": "1567755506.004100",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/750993382976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That would work well I think! The procedural building looks good. If you're able to adapt that setup, so that the building is built to be destructible, with windows and bricks and metal blocks all being set up with the relative attributes and settings, that would be a good project.\n\nThe breakdown for that shot would definitely highlight the features and best parts of the etup",
+        "ts": "1567766751.004200",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/744759784545_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

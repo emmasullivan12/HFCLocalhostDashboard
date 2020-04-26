@@ -1,0 +1,54 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude,",
+        "ts": "1578949623.000100",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/904654503328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry its taken me so long to get to this, was manic with deliveries again last week. :disappointed:\n\nThis is looking really nice!\n\nThe sky is tracking really nice, the perspective is working really well. One thing you could do is to break it up a bit so the sky isn't all on one layer. You could then add some super subtle animation to help sell the realism. Another thing I would do it to run a de-noise pass on the image your using as I can see there is some static grain in there, especially on the top right corner. Other than that looking nice!\n\nAs you've said the roto is still WIP but its looking good for a first pass! Have you used a key for the area above the SR (Screen Right) building? This is looking really nice there are just some bright edges popping through. I can give you some hints to help solve this once you get to working up that areas, but the luma key is working for now!\n\nAnother thing you could do, is to maybe try a small prep task to remove one of the lamp posts? This kind of prep work would look great on a showreel ad would be using the same techniques that your using already just in a slightly different way. Let me know if you want me to talk you through how I would approach it.\n\nAfter a few loops I am looking at the buildings you've got in the BG. I'm not 100% but it maybe feels like they are sliding slightly for how big they are. It could be that they are a bit far away, or too close I'm not quite sure. Just take a look at your 3D scene in Nuke and see if their position relative to the points from your camera track make sense for their scale.\n\nOverall I think the track is working really well, I'm not noticing too much sliding of the texture youv applied to the buildings which is really nice to see. You've got a really solid start hear and now its just about those extra tweaks to push it further!\n\nReally nice work!",
+        "ts": "1578950268.000200",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/904680687221_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if you want me clarify anything! (I always go and ask if I don't understand a note I get from dailies!)",
+        "ts": "1578950342.000300",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/904215668868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya mate! You don't need to apologize haha I'm grateful for you just getting back to me! Hope you got all your stuff done! \n\nFor the sky, how would you go about breaking it up? Would you just just key some clouds out of the image I'm already using and then apply the animation to those? Or would you have a look at making the sky from scratch using a load of different components (blue sky, keyed out clouds, a flock of birds... As examples)? I'll have a look at using the Denoise tomorrow, thanks!\n\nYeah I used a keying node, can't remember which one I used right now but I'll double check tomorrow. Yeah understand what you mean, there's a few satellite dishes that are semi transparent too. I was going to solve that by doing a more accurate roto but if I could do it with keying that could definitely speed things up.\n\nTo be honest I would like to get rid of the big lamppost nearest to the camera because it's a pain in the arse being there haha. How would you go about that? I would like to think it's just roto and then applying an image behind the mask but I'm not sure tbh.\n\nOkay, I'll take another look at the BG buildings. One question I have... I definitely should have asked earier, but I just felt comfortable in 3DS Max at the time. How do I import the tracked camera in Nuke? I tried but when I imported it the camera just appeared static with no animation or tracking points.\nAt the moment I'm back and too between max and nuke only after rendering in max can I test the 3D out in Nuke which is hard to position properly without being able to scrub the timeline.\n\nThanks for the feedback! I had to hand it in on Friday so the vid above is what they received but I still want to work on it to make it actually look good rather than how it is now.",
+        "ts": "1578957325.000400",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya mate! You don't need to apologize haha I'm grateful for you just getting back to me! Hope you got all your stuff done! \n\nFor the sky, how would you go about breaking it up? Would you just just key some clouds out of the image I'm already using and then apply the animation to those? Or would you have a look at making the sky from scratch using a load of different components (blue sky, keyed out clouds, a flock of birds... As examples)? I'll have a look at using the Denoise tomorrow, thanks!\n\nYeah I used a keying node, can't remember which one I used right now but I'll double check tomorrow. Yeah understand what you mean, there's a few satellite dishes that are semi transparent too. I was going to solve that by doing a more accurate roto but if I could do it with keying that could definitely speed things up.\n\nTo be honest I would like to get rid of the big lamppost nearest to the camera because it's a pain in the arse being there haha. How would you go about that? I would like to think it's just roto and then applying an image behind the mask but I'm not sure tbh.\n\nOkay, I'll take another look at the BG buildings. One question I have... I definitely should have asked earier, but I just felt comfortable in 3DS Max at the time. How do I import the tracked camera in Nuke? I tried but when I imported it the camera just appeared static with no animation or tracking points.\nAt the moment I'm back and too between max and nuke only after rendering in max can I test the 3D out in Nuke which is hard to position properly without being able to scrub the timeline.\n\nThanks for the feedback! I had to hand it in on Friday so the vid above is what they received but I still want to work on it to make it actually look good rather than how it is now.",
+        "ts": "1578957354.000500",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/906690368615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

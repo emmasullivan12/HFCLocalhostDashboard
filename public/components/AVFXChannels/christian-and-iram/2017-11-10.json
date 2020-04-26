@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was already expecting that answer. The transition from GCSE's to A-levels is difficult and the gap is quite big but i believe that the gap between A-levels and University is even 'huger' your statement has reinforced my belief for this.\n\nI think the most challenging part of univeristy is the independancy you need to have. A person like me who always depends on teachers and parents would find it difficult to do everything themselves and not have someone run after you to get work done. \n\nLiving away from your family may also be another challenge for me - like Ive said before I do consider myself a bit too dependant on other people hence I believe I should start to prepare myself and try to do things independently before I begin my university life.. Otherwise it could be a struggle.",
+        "ts": "1510304150.000441",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/270105607251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes, living away from friends and family can be tough to begin with",
+        "ts": "1510318567.000148",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/271159090054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "a good idea to prepare!",
+        "ts": "1510318578.000234",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/271361952135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

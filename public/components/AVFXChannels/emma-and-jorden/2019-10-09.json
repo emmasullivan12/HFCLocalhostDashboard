@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jorden, don't forget to send me your CV?",
+        "ts": "1570605956.000100",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/777344758899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jorden, hope you're good! Don't forget to send me your CV!",
+        "ts": "1570615494.000200",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/776204925298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

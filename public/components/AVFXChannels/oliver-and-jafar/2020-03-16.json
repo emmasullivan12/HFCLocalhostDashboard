@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Please do Jafar, I do think that's quite common though",
+        "ts": "1584360170.002400",
+        "username": "Oliver Bowyer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/992486880209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Drop me an email and we can set up a regular time to spend an hour on here chatting once a week.",
+        "ts": "1584360187.002500",
+        "username": "Oliver Bowyer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/992487532481_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shania! It's Janina :-) I wonder whether we could do our call 8.15pm? I don't think I will make it home before that. If it's too late for you we can do Tomo 7.30. Either way, looking forward to talking to you! :-)",
+        "ts": "1508865868.000340",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261276399076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

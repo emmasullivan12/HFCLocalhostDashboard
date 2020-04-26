@@ -1,0 +1,124 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@simkaur-2012 has joined the group_",
+        "ts": "1507581162.000113",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/254776155303_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@sonal92 has joined the group_",
+        "ts": "1507581172.000373",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253744843268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "<!channel>, Simranjit we have matched you with Sonal as your E-Mentor. Feel free to introduce yourselves and continue chatting within this channel. Why not send a quick video to say hello! :wave:\n\nI will now be leaving the channel, but please direct message myself or Emma if you have any questions. All the best! :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1507581210.000125",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507581218.000395",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/254776615559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507581236.000173",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/254575485574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello?!",
+        "ts": "1507581310.000505",
+        "username": "simkaur-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253830023557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F7FJHMZC3",
+                "created": 1507583086,
+                "timestamp": 1507583086,
+                "name": "Introducing myself .MOV",
+                "title": "Introducing myself ",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 7666964,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7FJHMZC3\/introducing_myself_.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7FJHMZC3\/download\/introducing_myself_.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F7FJHMZC3\/introducing_myself_.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F7FJHMZC3-16384db83d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1507583087.000192"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, how are you?",
+        "ts": "1507585917.000358",
+        "username": "sonal92 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253780650708_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

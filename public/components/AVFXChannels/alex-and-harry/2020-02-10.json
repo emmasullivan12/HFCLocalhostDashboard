@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi long time no see, been doing all my mocks \n\nHoping to get some time to dive back into vfx, I wanted to ask your opinion on maya vs cinema 4d. Been watching a lot of stuff recently that uses cinema 4d and the workflow seems a lot quicker compared to maya which is quite finicky. \n\nWanted to get your opinion on what to learn rly cus want to get into the industry but I’m not sure which is most useful \n\nThanks ",
+        "ts": "1581369483.000100",
+        "username": "Harry Wilkinson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/947608151319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I had one guy signed on to help with the animation for my dinosaur short. Last night that turned into three more guys. Two of them animated for call of the wild and Dr. Dolittle, and the other two have done some really nice stuff too. So I am excited to have them on board!",
+        "ts": "1587134532.014700",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1055017257975_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "wow, great! nice to have an experienced anim team! you finding these folks or do you post somewhere generally?",
+        "ts": "1587147359.014800",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1094184082384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I made a post on linked in and several people asked about the project. Yeah. I was excited. They all are excited about the project too which makes it even better.",
+        "ts": "1587147449.014900",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1070345845746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

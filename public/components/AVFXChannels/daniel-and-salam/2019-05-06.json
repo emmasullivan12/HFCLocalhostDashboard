@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry, I've not been getting message notifications recently! Hello, I hope your holiday went well. The visit was really interesting, albeit extremely short. I signed up to the NextGen apprenticeship but haven't heard anything since then. Yes! I'd like to ask, do the physical demands of industry work concern you sometimes? Such as grinding for deadlines and forfeiting sleep sometines",
+        "ts": "1557184082.000200",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-06\/621551401745_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

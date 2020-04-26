@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man, how you doing?",
+        "ts": "1584717001.001800",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1003512124787_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pretty strange time to be alive with the whole Corona situation.",
+        "ts": "1584717022.001900",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1002194553650_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Elliot! Hope you're well, indeed everything is frozen.",
+        "ts": "1584772128.002000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1005109950371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On the brighter side, I'm taking advantage of all this free time!",
+        "ts": "1584772670.002100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1003795834818_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To give you a brief intro, I've graduated from Bournemouth University close to two years ago after which I got hired as a modeler at MPC London for about a year and recently I've been doing a few freelance gigs remotely. At MPC I mainly work on Sonic's redesign and a few characters from Maleficent. So yeah, not a bunch of years in the industry but I got a sense of how things roll - that said, I'm glad to help or answer any questions you might have regarding modeling characters, technical\/artstic, studio environment or whatever else!",
+        "ts": "1584773483.002200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016605728325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

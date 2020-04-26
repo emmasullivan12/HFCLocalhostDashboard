@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey sorry for the delay in getting back to you. For some reason I didn't get a notification for a new message",
+        "ts": "1551303820.000600",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/563941809095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes feel free to forward you questions over and I'll answer your questions in you last message tomorrow ",
+        "ts": "1551303868.000700",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/563942586263_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

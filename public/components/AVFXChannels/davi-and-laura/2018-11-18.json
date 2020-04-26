@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. How are you doing? Are you quite busy with your studies? Hope all is well :) ",
+        "ts": "1542543652.009600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-18\/482402840916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

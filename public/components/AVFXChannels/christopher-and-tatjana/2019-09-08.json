@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi!\nI've been busy with legal issues with the school sorry!\nBut no, I don't have any questions atm :) Thank you",
+        "ts": "1567936079.001400",
+        "username": "Tatjana Paul (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-08\/746255429185_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

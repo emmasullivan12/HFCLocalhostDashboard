@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How do your deadlines now compare with the ones you had in uni? If I’m honest, I was expecting more of the same thing when I leave uni!\nThat’s fantastic, do you enjoy your role? \nI can see what you’re saying with everyone being out for themselves, I’ve seen someone so insistent on doing the rigging and getting the credit for it that it almost derailed the entire project. Unfortunately it was the fire service project I sent you above so it became a serious issue. Great learning opportunity though and I learnt to rig in ToonBoom because of it, silver linings :sweat_smile: it’s interesting to know that the noodling trait can be found in a studio.\nIt’s all my pre-production work for the short film I’m doing about dementia. Character and set design, synopsis, script, animatic, soundtrack, research and a 2500 word essay to go alongside a 15 minute presentation.",
+        "ts": "1546783944.000900",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-06\/516821646544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

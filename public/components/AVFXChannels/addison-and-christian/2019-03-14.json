@@ -1,0 +1,97 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just thought I'd let you know, Framestore do an internship every summer with different roles. Im not sure which positions they are this year but if you're interested here is a link ",
+        "ts": "1552551861.006200",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576539050946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.framestore.com\/work\/launchpad-internship>",
+        "ts": "1552551862.006300",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576873746293_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Framestore",
+                "title": "Launchpad Internship",
+                "title_link": "https:\/\/www.framestore.com\/work\/launchpad-internship",
+                "text": "Framestore offers students the opportunity to work alongside our talented teams across all of our sites in London, Montréal and our US offices as part of our paid summer Internship scheme. However, you will need the right to work for the location you are interested in. During their time with us, our Interns are exposed to a wide range of departments across the company. To be considered for the chance to take part in our Internship we would prefer it if you had an interest in, or are studying any of, the following subjects: visual effects, animation, games, real-time computing, computer science, film or TV production, design, photography, illustration or fine art.",
+                "fallback": "Framestore: Launchpad Internship",
+                "image_url": "https:\/\/www.framestore.com\/sites\/default\/files\/styles\/slideshow_images_medium_1400_788\/public\/case-study\/images\/img_9696-1_copy_2.jpg?itok=Co6Hsndx",
+                "image_width": 444,
+                "image_height": 250,
+                "ts": 1504543500,
+                "from_url": "https:\/\/www.framestore.com\/work\/launchpad-internship",
+                "image_bytes": 701397,
+                "service_icon": "https:\/\/www.framestore.com\/sites\/all\/themes\/framestore\/img\/touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.framestore.com\/work\/launchpad-internship"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.nextgenfutures.com\/>",
+        "ts": "1552552788.006500",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576519288740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's also this ",
+        "ts": "1552552791.006600",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576519321732_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh yes, I've heard of the framestore intership before, thanks :+1: ",
+        "ts": "1552570686.006700",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577165668805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The nextgen thing says its for 18-24 year olds, I'm 26 unfortunately :face_with_rolling_eyes: ",
+        "ts": "1552570771.006800",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/574428409936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah okay, that's a shame ",
+        "ts": "1552572397.006900",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577947970343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,204 @@
+[
+    {
+        "client_msg_id": "3f10a605-40a8-4a1f-afa3-0e41bc2ac22c",
+        "type": "message",
+        "text": "Oh congrats!",
+        "user": "U4VR52RQE",
+        "ts": "1579662167.000500",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N7QC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Oh congrats!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5fb8ee54-8ad8-4559-9d67-45acb68e1cd1",
+        "type": "message",
+        "text": ":clapping: :clapping:",
+        "user": "U4VR52RQE",
+        "ts": "1579662173.000600",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "S+wsB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "clapping"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "clapping"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "432b49b4-843d-4d65-8162-e900af73a331",
+        "type": "message",
+        "text": "Great news!",
+        "user": "U4VR52RQE",
+        "ts": "1579662179.000900",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jsy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Great news!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2b202eb3-2477-4a98-b67a-9a8ad0056aba",
+        "type": "message",
+        "text": "It's always nice to see hard work paying off :wink:",
+        "user": "U4VR52RQE",
+        "ts": "1579662273.001300",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Qu=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "It's always nice to see hard work paying off "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "wink"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e1db5156-85c8-4fcf-b99e-4b185cb22efd",
+        "type": "message",
+        "text": "And I like the sound if your plan I.e. get grades sorted so that you can start sparing time to work on other things you are interested in. Grades defintely help open doors but I always think back to my school\/uni days and wish I learnt and tried other things alongside studying. Best to prioritise studies though",
+        "user": "U4VR52RQE",
+        "ts": "1579662472.004900",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HSP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "And I like the sound if your plan I.e. get grades sorted so that you can start sparing time to work on other things you are interested in. Grades defintely help open doors but I always think back to my school\/uni days and wish I learnt and tried other things alongside studying. Best to prioritise studies though"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

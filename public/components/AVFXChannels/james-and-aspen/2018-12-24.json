@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope you have a good break over the next couple of weeks and your university applications are going well!",
+        "ts": "1545663254.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-24\/510581938337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

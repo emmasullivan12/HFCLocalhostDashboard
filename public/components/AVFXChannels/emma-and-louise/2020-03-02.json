@@ -1,0 +1,537 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "CV is really great! Love the illustrations as they really make it stand out. All very clear.",
+        "ts": "1583140351.004300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/966770059697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is the pass with my name??",
+        "ts": "1583140368.004400",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/966770478305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahhh I think that it will have been for the ACCESS:VFX meeting maybe... I am based in Bristol so dial in.",
+        "ts": "1583140439.004500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976874285088_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would maybe write your personal statement in 1st person... it is a personal statement after all!",
+        "ts": "1583140486.004600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/965407850771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the feedback, I really appreciate it. Yesterday I applied for a “Production runner” role  from one of the links you sent me at Dneg so will wait to see a response. I understand it’s abit of a blanket question but : how long does it usually take to get a a response and after a few weeks should I chase up with them? \n\n\nAnd yeah the name pass was from Access:VFX meeting they held here at Escape, didn’t know you would be calling haha . I was so excited to meet you. \n\nMany thanks ,\nLouise ",
+        "ts": "1583159863.004700",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976878012980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Completely depends on the company. Some are rude and never get back to you! Others will get back to you straight away. I would always wait till a week after their deadline date to chase them up.",
+        "ts": "1583161866.004800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977403084336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have seen other production runner \/ assistant roles recently... let me see if I can find the links for you.",
+        "ts": "1583161891.004900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979614112742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.technicolor.com\/academy>",
+        "ts": "1583161970.005000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977406797408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/careers.technicolor.com\/>",
+        "ts": "1583162000.005100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979270769255_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Search for Jobs at Technicolor | Careers at Technicolor",
+                "title_link": "https:\/\/careers.technicolor.com\/",
+                "text": "Explore Jobs at Technicolor. Global career opportunities in Technology, Sales, Animation, Marketing and more.",
+                "fallback": "Search for Jobs at Technicolor | Careers at Technicolor",
+                "from_url": "https:\/\/careers.technicolor.com\/",
+                "service_icon": "http:\/\/tbcdn.talentbrew.com\/company\/3488\/img\/favicon\/favicon-2307.png",
+                "service_name": "careers.technicolor.com",
+                "id": 1,
+                "original_url": "https:\/\/careers.technicolor.com\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583162001.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking for Prod Coordinator : <https:\/\/hr.jellyfishpictures.co.uk\/>",
+        "ts": "1583162297.005300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977437272565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!!!",
+        "ts": "1583162314.005400",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979282022775_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would literally go through every VFX company and email them... get your foot in the door.",
+        "ts": "1583162358.005500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977420593856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MAKE SURE you tailor your email to the company - there is nothing annoys me more than getting an email addressed to a different company. Shows such little attention to detail that I wouldn't want in our work place.",
+        "ts": "1583162412.005600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964634549442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.unionvfx.com\/careers>",
+        "ts": "1583162475.005700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967323514881_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Union VFX - Careers",
+                "title_link": "https:\/\/www.unionvfx.com\/careers",
+                "text": "Union VFX is an independent visual-effects facility founded in 2008 by Adam Gascoyne and Tim Caplan to provide a creative service for feature films &amp; television",
+                "fallback": "Union VFX - Careers",
+                "from_url": "https:\/\/www.unionvfx.com\/careers",
+                "service_icon": "https:\/\/www.unionvfx.com\/site\/templates\/images\/favicon.png",
+                "service_name": "unionvfx.com",
+                "id": 1,
+                "original_url": "https:\/\/www.unionvfx.com\/careers"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583162476.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking for a runner. I know Lucy who looks after HR. Mention that you have a mentor!",
+        "ts": "1583162500.005900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/965958240835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok will do! Would you recommend emailing my top ten companies whether they’ve got job postings or not ? \n\n",
+        "ts": "1583162602.006000",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964641278882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That completely depends on what area of VFX you want to get into... advertising, film, broadcast (natural history or drama), big or small company? .... right now I would just try to get in any and then navigate from the inside. I am going through the ACCESS VFX member list and seeing who has vacancies. In London, the most known are probably:",
+        "ts": "1583162802.006100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979646774054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Mill,",
+        "ts": "1583162806.006200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979646909142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Milk VFX",
+        "ts": "1583162809.006300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964648847458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Framestore",
+        "ts": "1583162812.006400",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964648958914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "DNEG",
+        "ts": "1583162815.006500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977455931589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MPC",
+        "ts": "1583162823.006600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977456212725_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Territory Studios",
+        "ts": "1583162836.006700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964649747410_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cinesite",
+        "ts": "1583162887.006800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964651641314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All big Film VFX",
+        "ts": "1583162907.006900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976986825780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For Advertising: MPC Advertising, Mill Advertising, Teritory Studios, The Third Floor, Mainframe, Electric Theatre Collective, Coffee &amp; TV.",
+        "ts": "1583162960.007000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977461267445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For Broadcast: Bluebolt, Jellyfish, Axis,",
+        "ts": "1583163022.007100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979308069543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ILM",
+        "ts": "1583163024.007200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979655382950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Union FX, Unit TV, Glassworks,",
+        "ts": "1583163262.007300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979317645623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/onelightvfx.com\/studio-list\/complete-list-of-2d-3d-animation-post-production-and-vfx-studios-in-england\/>",
+        "ts": "1583163263.007400",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977473593333_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "OneLight Vfx",
+                "title": "Complete List of 2D\/3D Animation, Post Production and VFX Studios in England – OneLight Vfx",
+                "title_link": "https:\/\/onelightvfx.com\/studio-list\/complete-list-of-2d-3d-animation-post-production-and-vfx-studios-in-england\/",
+                "text": "Studios in England - Animation, Post Production, Gaming and VFX",
+                "fallback": "OneLight Vfx: Complete List of 2D\/3D Animation, Post Production and VFX Studios in England – OneLight Vfx",
+                "image_url": "https:\/\/i0.wp.com\/onelightvfx.com\/wp-content\/uploads\/2018\/11\/bilder-5-of-10.jpg?fit=1000%2C667&ssl=1",
+                "image_width": 375,
+                "image_height": 250,
+                "ts": 1541212266,
+                "from_url": "https:\/\/onelightvfx.com\/studio-list\/complete-list-of-2d-3d-animation-post-production-and-vfx-studios-in-england\/",
+                "image_bytes": 396829,
+                "service_icon": "https:\/\/i2.wp.com\/onelightvfx.com\/wp-content\/uploads\/2018\/07\/cropped-onelightVFX-studio-temp.jpg?fit=180%2C180&#038;ssl=1",
+                "id": 1,
+                "original_url": "https:\/\/onelightvfx.com\/studio-list\/complete-list-of-2d-3d-animation-post-production-and-vfx-studios-in-england\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583163266.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some of that may be a little out of date now",
+        "ts": "1583163280.007600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979665607142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Frightening how many there are now and how many there were when I started... makes me feel old!",
+        "ts": "1583163324.007700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977457024752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What I have noticed working in both advertising and broadcast: Advertising is very, very quick turn around. There tends. to be a little less R&amp;D as there is simply no time. Budgets seems a little bigger. Normally a 6 week post turn around but I had a lot of late nights trying to get jobs out of the door.",
+        "ts": "1583163412.007800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979323296983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Broadcast there seems to be a lot more lead time. Each project can be anything from 3 months to a couple of years. Tend to have bit more of a work life balance (or that may be the companies I have been lucky to be placed at).",
+        "ts": "1583163484.007900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977462924544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Film: quick turn around. Pipeline tends to be a lot more organised. A lot of late nights depending where you are in that pipe!! Good if you are young. Hard work if you have a family.",
+        "ts": "1583163595.008000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/965999384051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some companies are now coming around to job sharing and part time work - others aren't as flexible.",
+        "ts": "1583163628.008100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964680016642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Doesn't hurt to email anyone! It doesn't cost you anything and you have no idea what is happening with that producer on that day!",
+        "ts": "1583163683.008200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964681973746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a jobs board for producers in advertising: <https:\/\/www.a-p-a.net\/jobs\/>",
+        "ts": "1583163869.008300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979686929654_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Jobs | Advertising Producers Association",
+                "title_link": "https:\/\/www.a-p-a.net\/jobs\/",
+                "text": "Industry trade body for advertising production, VFX, animation, music, editing &amp; sound design companies",
+                "fallback": "Jobs | Advertising Producers Association",
+                "from_url": "https:\/\/www.a-p-a.net\/jobs\/",
+                "service_icon": "https:\/\/www.a-p-a.net\/apple-touch-icon.png",
+                "service_name": "a-p-a.net",
+                "id": 1,
+                "original_url": "https:\/\/www.a-p-a.net\/jobs\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583163869.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m infinitely grateful for all this info , especially the break down between broadcasting and advertising. I have a soft spot for film and would eventually love to work for indie film houses as it’s my fave genre atm. However I’ve also heard good things about advertising studios and broadcast is definitely a path I wouldn’t mind going down. I’ll have a look at all the job posts and try to apply for as many as possible! And then put a day aside where I send I out the emails with my CV",
+        "ts": "1583164179.008500",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967386865985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want me to read through anything before you send - very happy to! Feel like I have bombarded you today!",
+        "ts": "1583168659.008600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967559974177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It has helped me hugely as a VFX producer knowing and respecting each part of the pipeline... from being an actor, to scheduling crews, to working on edits, to finally GFX and VFX. Having played a part in each stage makes you try and solve problems rather than pass it on... how often I have heard \"they can fix it in post\" knowing it would be a headache for VFX when the actor or make up could slightly change what they were doing. Have a go at everything you can whilst you are young! This is the time to explore and travel the world... when you settle down at my age you wish you had done so much more!!",
+        "ts": "1583168841.008700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964879773266_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had a lovely studio runner once who applied to be a production assistant in India for Dreamworks. She now travels the world with her partner (who is an animator) following the work...why not! Nice!",
+        "ts": "1583168991.008800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979536145959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

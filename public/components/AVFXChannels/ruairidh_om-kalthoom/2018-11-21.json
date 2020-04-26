@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have. I've downloaded modo and watched videos about the software.",
+        "ts": "1542806976.004300",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485357479653_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how have you found it so far ?",
+        "ts": "1542808714.004400",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485077429475_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "alright. I guess I'll get comfortable once I start to create something.",
+        "ts": "1542808962.004500",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486585040262_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have in mind what's the best thing to create as a beginner?",
+        "ts": "1542808981.004600",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484447472528_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "an ammo box would be good can be a simple shape you can build up and up as you get more skilled",
+        "ts": "1542809468.004700",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484454685552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll try that some point next week :slightly_smiling_face:",
+        "ts": "1542810613.004800",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485209118354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

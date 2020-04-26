@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ivan- good to 'meet' you! Maybe a good place to start is to tell me a bit about yourself and what brings you to Access:VFX mentoring! As for me- I designed a new VFX degree course based around World building, and as part of Access:VFX I design lots of industry events. Today we have Industrial Light and Magic in to talk to the students, so I'm excited by that. Anyway, let me know about yourself and what you hope to get out of this mentoring. Speak soon!",
+        "ts": "1573808571.001600",
+        "username": "Saint John Walker (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/823116358290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

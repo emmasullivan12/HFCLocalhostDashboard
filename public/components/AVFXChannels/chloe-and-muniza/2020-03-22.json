@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello~ I have an update for the fox project im working on\n<https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1431121\/1534827>",
+        "ts": "1584886205.001300",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017128750532_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: WB_Shot_1230",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1431121\/1534827",
+                "text": "Collaborative Media Review with 3 items",
+                "fallback": "SyncSketch: WB_Shot_1230",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1431121\/1534827",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1431121\/1534827"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584886205.000000"
+        }
+    }
+]

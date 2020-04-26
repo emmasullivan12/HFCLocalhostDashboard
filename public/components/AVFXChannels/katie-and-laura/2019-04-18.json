@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam,\nGreat to hear the project is going well! When is your final deadline for this? Best of luck!",
+        "ts": "1555583564.000100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/614118363447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, I can be free for a chat between 1-2pm or 8-9pm Mon-Friday - but Tuesdays or Wednesdays are the more ideal days. Please let me know if you can fit in with any of those times\/days.",
+        "ts": "1555583579.000200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/612317335920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm going to be unavailable on here from 6pm tonight (18\/04) until 9am Tuesday (23\/04) for the Easter break. Sorry about this! If you have any questions please feel free to send them over anyway, I just won't get to see them until I log back in.\nAre you doing anything nice for the break? The weather is supposed to be beautiful, I'm very excited!! :sunglasses::palm_tree::beach_with_umbrella:",
+        "ts": "1555583591.000300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/611730520036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! that's great that you are having a break! I am enjoying my finally (I handed in my animatic last friday!). I am just chilin at home this week, trying to organize little since I moved recently and didn't get a lot of time to do that properly. I do have a trip soon to visit my aunt and uncle in Cardiff which I am really excited about because I get to truly rest and disconnect for a few days.",
+        "ts": "1555595311.000400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/612474346816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I leave next Wednesday morning so I think Tuesday would be great to have our first chat session. 8-9pm is best for me. I will take my laptop with me though (don't really want to disconnect completely hehe), so no problem with still keeping in touch through here too. I am also very excited for the weather getting warmer finally! I definitely missed it!",
+        "ts": "1555595604.000500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/601053612914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I will leave most of my questions for our chat next week so don't worry, I really hope you have fun and enjoy your break!",
+        "ts": "1555595719.000600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/612482246128_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fantastic - have an amazing time! Sounds lovely spending some time in Cardiff, make sure you get a good rest :blush:\nI look forward to catching up with you 8pm on Tuesday 23rd!! (not a problem if you need to cancel\/reschedule nearer the time, just let me know) :+1::+1:",
+        "ts": "1555604566.000700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/601168787491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

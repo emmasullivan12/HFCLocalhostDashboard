@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's not that they're done badly it's justI've seen the firepole shot a thousand times. Also anything you do in class is a no go I'd say - that shows laziness and chances are one of the people reviewing it will know it's a class exercise.",
+        "ts": "1568099813.002200",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/756820326150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyway youvre first job is going to be roto prep no way round it so make sure that you real shows quality roto and uality cleanup. Maybe throw in a screen replacement (they can actually be quite challenging if the move is tricky like someone passing a phone to a friend of with a defocuaed FG). A full comp can be fun to throw in too but emphasis on the roto prep. Anyway feel free to send me a private link to your reel at any stage and I'll give feedback (I won't pass it around until you're ready). I've had to review a lot of reels so I know what gets work and what doesn't",
+        "ts": "1568100565.002300",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/754623289477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see! That makes sense. \nI’ve done a couple of what should be reel-worthy roto shots but I need to get some more cleanup in in that case. I wouldn’t have thought about screen replacement so I’ll get on that! Thank you, I really appreciate that. I don’t have a reel together yet but as soon as I do I’ll be sure to send it over!\nIn the profile I was sent about you, you said you found it difficult to enter the industry and you had help from several people in your reason for becoming a mentor. May I ask more about your journey?",
+        "ts": "1568111425.002400",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/754810250261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Michael,\n\nYeah so my journey: well I was a GenX 80's kid so I grew up with the original Star Wars, Ghost busters Back to the Future and Superman. They had these amazing making of docs and as a kid I really wanted to do that SFX stuff. At the the time there was no real career path, no VFX schools and was generally told to plan for a real job. But I did a general Media and fil degree anyway and as a teenager (still now my plan was to be a writer director). I did lots of work on unpaid indy films, music videos but I had a lot of debt so I had to do a lot of temping. Got sick of that, went to Italy, taught English and made my own shorts on the side. Did some work as a camera operator editor and started using AFX,firston my stuff then for other people. Had. a kid and discovered FXPhd, suddenly I had a window I to how big pro movies were made and I was hooked. I learned Shake kanother node based comp which dominated till Apple killed it) worked on anan Italian movie and moved back to London and was able to start freelancing as junior roto prep on Shake and Nuke. Started a permanent position at an Ad agency as that made more sense kmy second kid was born at that time l then after 4 years went back to freelance and soon started at Molinare as Lead. I also made a course for Pluralsight on Vray and Maya (in small places you are more likely to use a variety of softwares). After 4.5 years I felt it was time to move on and now I'm at One of Us as a contractor. Next who knows...",
+        "ts": "1568139918.002500",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/755463497504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

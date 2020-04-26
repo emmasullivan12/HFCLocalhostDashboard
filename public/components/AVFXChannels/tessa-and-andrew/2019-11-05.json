@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tessa, that's fine to be completely honest",
+        "ts": "1572977590.001900",
+        "username": "Andrew Jara (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/814632609521_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am in a strange position compared to other students because I am still in a Foundation course after deferring my 3D Animation course at Hertfordshire for a year. What I would like to know the most from this mentorship is an understanding of studio life, the pipeline of vfx\/animation and general advice from your time as an animator",
+        "ts": "1572977732.002000",
+        "username": "Andrew Jara (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/822088809476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Because of this I am still beginning to learn my skills both in traditional art like drawing and in programs such as Maya. Therefore, I would not be able to ask for technical help as of now. Having said that, I am entering a project now where I want to adapt a clay sculpture I made into a character design, then into concept art and then into 3D using various processes.",
+        "ts": "1572978038.002100",
+        "username": "Andrew Jara (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/824417637655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Silvija! Hope you’re well, just confirming that you’re still okay for a video call either this evening at 7 or if you can anytime between 1-2 today! :)",
+        "ts": "1543485855.015600",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491030633154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, I am sorry, I am working so could not answer your message. :disappointed_relieved:\n\nYes, I am completely fine to have a call at 7pm! Can not wait:fire::fire::fire:",
+        "ts": "1543500304.015700",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491098250531_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, that’s no problem, thought so, tonight it is! I guess we will use Skype! Haven’t used it in awhile haha",
+        "ts": "1543500678.015800",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492608104950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here’s my skype ID: live:3e0ba4f648f334a8",
+        "ts": "1543500695.015900",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492608404630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Talk to you later! :octopus:",
+        "ts": "1543500748.016000",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492258297511_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great, thank you! I haven't used it in a while as well, so we are in the same boat, haha :see_no_evil:",
+        "ts": "1543508461.016100",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492759218358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank You very much for Your time! \n\nHave a lovely evening! :+1::blush::blush:",
+        "ts": "1543524769.016200",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490923005616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh it’s absolutely no problem! You’re very welcome :) ",
+        "ts": "1543525257.016300",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491064552289_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aaannnd if anymore questions pop up let me know :) ",
+        "ts": "1543526124.016400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492733020615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Definetally, thank you!:fire::fire::fire:",
+        "ts": "1543526821.016500",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491892949909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the vdb tip, really useful since the Houdini engine isn’t working out. Hopefully I’ll be able to start doing some stuff with the simulations once I get a open vdb installed. I was wondering if you had a preferred renderer, they’re all mega expensive so I won’t be able to get one but I was just wondering what all the money brought you",
+        "ts": "1569502333.002700",
+        "username": "Harry Wilkinson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/773793656932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

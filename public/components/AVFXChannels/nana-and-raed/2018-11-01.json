@@ -1,0 +1,37 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh Nana by the way do you have any good game ideas in your head? If so allow me to introduce you to the BAFTA YGD! Just enter a game idea. Want a challenge? Make a game for the competition! I just though you might want to put your skills to the test! You can enter here:  <http:\/\/ygd.bafta.org\/competition>                      :slightly_smiling_face:",
+        "ts": "1541085575.005300",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-01\/469878553253_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "GOT AN ORIGINAL IDEA FOR A GAME? WE WANT TO SEE IT! | BAFTA YGD",
+                "title_link": "http:\/\/ygd.bafta.org\/competition",
+                "text": "Are you looking to get into the games industry when you leave school? Or do you simply have a great game idea you want to share with the world?  Young Game Designers (YGD) is a BAFTA initiative for 10-18 year-olds, where just taking part opens up a world of creative opportunities and provides insights into making games. Enter the competition for a chance to win once-in-a-lifetime experiences with top game makers + industry professionals. There are three categories for entering into YGD:",
+                "fallback": "GOT AN ORIGINAL IDEA FOR A GAME? WE WANT TO SEE IT! | BAFTA YGD",
+                "from_url": "http:\/\/ygd.bafta.org\/competition",
+                "service_icon": "http:\/\/ygd.bafta.org\/sites\/all\/themes\/ygd_theme\/favicon.ico",
+                "service_name": "ygd.bafta.org",
+                "id": 1,
+                "original_url": "http:\/\/ygd.bafta.org\/competition"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thought about doing it for a while.",
+        "ts": "1541088584.005500",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-01\/469732139042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

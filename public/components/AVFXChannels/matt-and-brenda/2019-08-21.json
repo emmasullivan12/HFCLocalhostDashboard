@@ -1,0 +1,463 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve enquired for two other people through access vfx too, here is a copy of what recruitment said and also our dailies schedule so you could see when you’d want to pop in and out during the day? ",
+        "ts": "1566370929.004400",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735007629463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FMM9P4GHL",
+                "created": 1566370952,
+                "timestamp": 1566370952,
+                "name": "Image from iOS.png",
+                "title": "Image from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 457179,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMM9P4GHL\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMM9P4GHL\/download\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 202,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 450,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMM9P4GHL-a6912a7024\/image_from_ios_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 750,
+                "original_h": 1334,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FMM9P4GHL\/image_from_ios.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FMM9P4GHL-677d29221b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1566370957.004500"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FMCNEHPDF",
+                "created": 1566370957,
+                "timestamp": 1566370957,
+                "name": "Image from iOS.png",
+                "title": "Image from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 330396,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMCNEHPDF\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMCNEHPDF\/download\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 202,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 450,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMCNEHPDF-fb083190b3\/image_from_ios_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 750,
+                "original_h": 1334,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FMCNEHPDF\/image_from_ios.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FMCNEHPDF-ccab73d81b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1566370961.004800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Matt!! That sounds awesome!! Even if it is not necessarily doing work I am sure I will learn a lot from it :blush: at the moment I am free, as I am just on the wait to start my postgraduate in September",
+        "ts": "1566371169.005100",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/721701222067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So whenever it's more convenient for you :blush: also, what is a NDA?",
+        "ts": "1566371203.005200",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735011383623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Honestly I would love to be there for the animation dailies and the comp dailies as my specialist is animatiom, but my second specialist it's Compositing :blush:",
+        "ts": "1566371268.005300",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733152638453_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I should note that we are winding down in anim dailies and might not have much to review for the rest of the project. If I’m put on animation again for another project it might be more beneficial you coming when we are in peak anim time ",
+        "ts": "1566401707.005400",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733242459668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay awesome! Are you free this Friday? Next week? NDA is a non disclosure agreement you sign, basically you agree not to share our work, are confidential with what we are working on here etc ",
+        "ts": "1566401751.005500",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722265339875_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is no problem, I am willing to learn as much as I can :blush:\n\nYeah, I am free this Friday, next week, and until I go back to uni the 13th of September :grinning:",
+        "ts": "1566402120.005600",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735904638822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome :blush: I am just checking with my producer ",
+        "ts": "1566402187.005700",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735906287542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! Let me know :blush:",
+        "ts": "1566402556.005800",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733729419248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have permission! Let me know what days you’d like to do and you’re in. If it’s anim you want to see tomorrow and Friday would be best as next week we are basically out of anim on the show ",
+        "ts": "1566402629.005900",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/727351066897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You’re welcome to just attend as many hours of the day as you like ",
+        "ts": "1566402646.006000",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733266090740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My number is 07905053887 by the way for WhatsApp ",
+        "ts": "1566402788.006100",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733741354693_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds great!! If there is more animation tomorrow and Friday, then defienlty!",
+        "ts": "1566402798.006200",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733735464448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Going to check the train times and I will let you know what time",
+        "ts": "1566402895.006300",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/727357665537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay awesome, if possible can you let me know before 6? I’ll email reception so they can set up a temporary pass for you ",
+        "ts": "1566402939.006400",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733273418196_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I will have a look right now :blush:",
+        "ts": "1566402980.006500",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733274378852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great thank you ",
+        "ts": "1566404536.006600",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733785478309_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Matt, just had a look :blush:\nI can be there just after the lighting dailies :blush: so 11?",
+        "ts": "1566404572.006700",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722332139634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I was thinking I could stay until the end of comp dailies or even clien call if that's afterwards? :blush:got an open return cause I wasn't sure",
+        "ts": "1566404700.006800",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735969261014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah cool! Yeah 11 is good for me. Unfortunately you can’t stay for client call ",
+        "ts": "1566405087.006900",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733792519344_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But can stay till 5! ",
+        "ts": "1566405094.007000",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722344762610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or shadow me 5-6 for a bit more whatever works best ",
+        "ts": "1566405103.007100",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733799185717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah sounds good :blush:",
+        "ts": "1566405295.007200",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722353422835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You’ll come in Friday as well? ",
+        "ts": "1566405470.007300",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722357431811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that's okay, yeah :blush:",
+        "ts": "1566405601.007400",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733338668868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep! I have you down tomorrow and Friday with another animation student Kristie studying at uni of Hertfordshire. I’ll see you both at 11 in reception! ",
+        "ts": "1566407424.007500",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722399286658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Perfect, see you then!",
+        "ts": "1566407711.007600",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733853640720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you enjoy it I can probably arrange next week too. See you tomorrow :blush: ",
+        "ts": "1566407770.007700",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722411075587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My anim supervisor said he would watch your reel and give feedback ",
+        "ts": "1566408462.007800",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735736275623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great!! Thanks!! :blush:",
+        "ts": "1566408580.007900",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735739038295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "See you tomorrow",
+        "ts": "1566408587.008000",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/736059685830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

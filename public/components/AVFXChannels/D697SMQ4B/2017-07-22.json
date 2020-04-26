@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "No problem. Yes I'll use that email address as a source to contact you. \nI haven't been blue to find the links and speak to the people I wanted to today, as work was very busy! But I will get back to you via email over the next few days! ",
+        "user": "U5WAJ7VTJ",
+        "ts": "1500734016.293224",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gabf5a03665f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4abf5a03665f50cf155c4552ec0d1a50.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Jason",
+            "real_name": "Jason A",
+            "display_name": "aytson02",
+            "team": "T4UUTPV18",
+            "name": "aytson02",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thanks for the update. Looking forward to hearing from you. Hastings",
+        "user": "U61PV8VEW",
+        "ts": "1500792536.946587",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g9b53a60f63a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c9b53a60f63aa1a94dac529f533134b4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0024-72.png",
+            "first_name": "Hastings",
+            "real_name": "Hastings Allunga",
+            "display_name": "hastings",
+            "team": "T4UUTPV18",
+            "name": "hastings",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

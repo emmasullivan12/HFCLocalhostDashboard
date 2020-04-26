@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Adam- I'm in Sri Lanka for a couple of weeks hence the slowness! All sounds great- Is your work anywhere on line i can see it? It sounds like you are doing the right stuff- answering practical problems like the Horse and Boat.  Also have you tried showing dexterity with other software (Phoenix, Bifrost etc etc)- so you can drop in comments at interview about your preferences and why- interviewers like to hear that kind of thing, even those who only use Houdini....Good luck- hope it went great at The Mill. If not, do continue the conversation and send me links!",
+        "ts": "1555682607.000200",
+        "username": "Saint (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-19\/613409136949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you’re enjoying the sun.\n\n<http:\/\/www.adambroadbearvfx.co.uk|www.adambroadbearvfx.co.uk>\n\nThe link has my showreel, cv and some photography on their. No I’ve not tried them out yet, would be a good idea.\n\nThe interview went really really well. They didn’t offer me the position. But said if I keep them up to date with my final project at Uni. And send them my grad reel in two weeks, they hope to make me an offer!\n",
+        "ts": "1555683220.000300",
+        "username": "Adam Broadbear (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-19\/615627670758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

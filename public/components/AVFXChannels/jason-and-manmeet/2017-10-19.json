@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Manmeet, no problem - i have been very busy too! \n\n",
+        "ts": "1508406642.000213",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258843082661_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh right, well your English is very good for somebody who has only arrived in the UK over the last couple of years!",
+        "ts": "1508406683.000350",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258843377829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's good that you enjoy maths and did well at it for GCSE. Whatever career you end up pursuing, it will be a good advantage to have good maths skills. ",
+        "ts": "1508406887.000198",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/259790907207_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok, well in that case, BTEC business is a good choice and still a good option. You'll get some very good skills from that. There is always the option to re-take English literature at a later point to get a C or higher which could also help with future jobs or education.",
+        "ts": "1508406983.000111",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/259590735830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, that makes sense. That is similar to me, at least you are taking your time and making  your work good. I take time over it to make sure it ia perfect. ",
+        "ts": "1508407055.000219",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258845846869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mean entrepreneurial in the sense of, have you ever thought about one day making your own business or do you ever come up with business ideas?",
+        "ts": "1508407106.000260",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258054525904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Given the information you have explained to me, some form of finance or accountancy role might be good career to look into. There is not much need for great English, but it is tailored towards people who are good at maths and like business. The finance teams are key in businesses for helping the company make all the decisions.",
+        "ts": "1508407265.000132",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258190267393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some companies take student's straight out of school or college and bring them in as 1st year accounting students. They may help them study towards ACA, CIMA or ACCA exams which are all amazing accounting exam boards (which the employers would fund).",
+        "ts": "1508407361.000071",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258847971685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can provide more info if you like.",
+        "ts": "1508407383.000324",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258191070049_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

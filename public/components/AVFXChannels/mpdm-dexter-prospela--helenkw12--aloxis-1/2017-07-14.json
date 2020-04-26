@@ -1,0 +1,102 @@
+[
+    {
+        "type": "message",
+        "text": "Hi! Oh great really pleased you're on board!",
+        "user": "U5WR9CJTC",
+        "ts": "1500017484.407803",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I did Psychology as a degree and then spent some time working at HMIP which is the inspectorate for prisons (like ofsted for prisons) so I might be able to help a bit in that area but I have to confess my knowledge on astronomy is very limited!!",
+        "user": "U5WR9CJTC",
+        "ts": "1500017548.424739",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Have you been able to get any experience in either of those areas at all?",
+        "user": "U5WR9CJTC",
+        "ts": "1500017595.436696",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "That sounds interesting :) Apart from lessons and watching documentaries not really unfortunately. I am signed up for some astronomy events this summer but unfortunately it's hard to find work experience in these areas. ",
+        "user": "U632EJECV",
+        "ts": "1500047865.171036",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g16ce1eaf30a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a16ce1eaf30adad8c9134f06d78be6cd.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Alex",
+            "real_name": "Alex Lisowska",
+            "display_name": "aloxis",
+            "team": "T4UUTPV18",
+            "name": "aloxis",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Do you maybe know an institution in psychology field, preferably forensic psychology, that would accept a student for work experience? I'd love to just get a taste of a job in this field as so far I can only imagine what it's like.",
+        "user": "U632EJECV",
+        "ts": "1500066378.166892",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g16ce1eaf30a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a16ce1eaf30adad8c9134f06d78be6cd.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Alex",
+            "real_name": "Alex Lisowska",
+            "display_name": "aloxis",
+            "team": "T4UUTPV18",
+            "name": "aloxis",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

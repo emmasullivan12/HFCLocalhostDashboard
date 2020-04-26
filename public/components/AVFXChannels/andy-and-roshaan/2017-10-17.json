@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Other than Biology, I'm doing economics and graphics. Hoping to get all As by the end of A levels. I was told by my teacher that if i want to do just biology (not something like medicine or biomed) then i should get into one of the top universities. It would help get a job but there might be a struggle if i don't get to the right university. ",
+        "ts": "1508263898.000520",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257765925412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which a levels did you do and which university did you go to?",
+        "ts": "1508263922.000718",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/258597309062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(I will look at these links) ",
+        "ts": "1508263934.000558",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257766319044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting into a top university will definitely help! It's something that employers will look at when you apply for jobs, especially if you want to do research because it is very competitive.\n\nI did maths, economics, history and physics, and then studied economics at Nottingham university because it was the subject I enjoyed most...and the job prospects for an economics student were pretty good.\n\nWhat universities have you applied to?",
+        "ts": "1508272451.000538",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257149241920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

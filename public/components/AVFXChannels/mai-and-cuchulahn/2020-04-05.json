@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll definitely shoot for the internship! It feels more worthwhile trying to do my very best for may than rushing for tomorrow",
+        "ts": "1586106712.001000",
+        "username": "Cuchulahn O'Byrne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1045269077815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

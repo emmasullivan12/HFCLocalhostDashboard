@@ -1,0 +1,214 @@
+[
+    {
+        "type": "message",
+        "text": "#CURIOSITY",
+        "user": "U4V22C6A1",
+        "ts": "1498483007.431046",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "dick",
+        "user": "U4VR52RQE",
+        "ts": "1498494254.864891",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "no you're a dick",
+        "user": "U4V22C6A1",
+        "ts": "1498494295.880356",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "In case you need to intro people whilst im busy\/history (can't save it in our Google shared drive for some reason)",
+        "files": [
+            {
+                "id": "F5YUU1A3A",
+                "created": 1498495489,
+                "timestamp": 1498495489,
+                "name": "Movie on 21-06-2017 at 18.35.mov",
+                "title": "Mentee &amp; Mentor Intro Video.mov",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 27671516,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5YUU1A3A\/movie_on_21-06-2017_at_18.35.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5YUU1A3A\/download\/movie_on_21-06-2017_at_18.35.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F5YUU1A3A\/movie_on_21-06-2017_at_18.35.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5YUU1A3A-a6ec00d0a6",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1498495490.318447"
+    },
+    {
+        "type": "message",
+        "text": "*The 12 Employability Skills for ideas of things to share &amp; rating your students*\nIf you're stuck for ideas of pictures, videos or thoughts to share with your mentees, why not think about the 12 Employability skills? After all, they are trying to learn what skills are useful in the workplace ... why don't you show some of them in action!",
+        "user": "U4V22C6A1",
+        "ts": "1498500107.041619",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "*The 12 Employability Skills for ideas of things to share &amp; rating your students*\nIf you're stuck for ideas of pictures, videos or thoughts to share with your mentees, why not think about the 12 Employability skills? After all, they are trying to learn what skills are useful in the workplace ... why don't you show some of them in action!\n```• #curiosity\n• #confidence\n• #ambition\n• #proactivity\n• #personalliteracy\n• #problemsolving\n• #resilience\n• #adaptability\n• #communication\n• #organisation\n• #collaboration\n• #networking\n```",
+        "user": "U4V22C6A1",
+        "ts": "1498500202.077813",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "*The 12 Employability Skills for ideas of things to share &amp; rating your students*\nIf you're stuck for ideas of pictures, videos or thoughts to share with your mentees, why not think about the 12 Employability skills? After all, they are trying to learn what skills are useful in the workplace ... why don't you show some of them in action!\n```• #curiosity\n• #confidence\n• #ambition\n• #proactivity\n• #personalliteracy\n• #problemsolving\n• #resilience\n• #adaptability\n• #communication\n• #organisation\n• #collaboration\n• #networking```",
+        "files": [
+            {
+                "id": "F5Z118U56",
+                "created": 1498500248,
+                "timestamp": 1498500248,
+                "name": "Prospela e-mentoring - Employability Skills Cheat Sheet.pdf",
+                "title": "Prospela e-mentoring - Employability Skills Cheat Sheet.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 240559,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Z118U56\/prospela_e-mentoring_-_employability_skills_cheat_sheet.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Z118U56\/download\/prospela_e-mentoring_-_employability_skills_cheat_sheet.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5Z118U56\/prospela_e-mentoring_-_employability_skills_cheat_sheet.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5Z118U56-565ffc05f0",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498500249.095715"
+    },
+    {
+        "type": "message",
+        "text": "*Questions to ask your E-Mentor!*\nIf you're stuck for ideas of what to ask your E-Mentor, here's a few to get you started:\n• Can you describe a typical working day?\n• When your alarm goes off in the morning, what is your morning routine?\n• What are your strengths and weaknesses at work?\n• What do you like most and least about your job?\n• What motivates and inspires you?```",
+        "user": "U4V22C6A1",
+        "ts": "1498509196.267339",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "*Questions to ask your E-Mentor!*\nIf you're stuck for ideas of what to ask your E-Mentor, here's a few to get you started:\n```• Can you describe a typical working day?\n• When your alarm goes off in the morning, what is your morning routine?\n• What are your strengths and weaknesses at work?\n• What do you like most and least about your job?\n• What motivates and inspires you?```",
+        "user": "U4V22C6A1",
+        "ts": "1498509211.272827",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

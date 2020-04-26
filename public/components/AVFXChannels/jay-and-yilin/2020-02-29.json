@@ -1,0 +1,481 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Yilin. Thanks again for sending your reel. I’ve watched it a few times now.",
+        "ts": "1582983943.000500",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975496818373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Before I offer up any advice, is there any specific advice you want?",
+        "ts": "1582984017.000600",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/962690326962_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmmm, I don't have any. :joy:",
+        "ts": "1582990675.000700",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975079447908_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you think?",
+        "ts": "1582990689.000800",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/962745090370_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There’s some good stuff on there.\nWhich is your favourite shot?\nWhich do you think is the best shot?",
+        "ts": "1582992965.000900",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975099394068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keeping it around 1 minute long is great. I tend to keep mine under 1:30.\nBe careful with your music choice. The beat is good, but some of the other instruments are a bit harsh on the ears and therefore distracting.",
+        "ts": "1582993075.001000",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975555091504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh ok Thank you!  Actually, my last reel is 1 minute and I show it to one of my classes, but the professor said to try to keep it short. So I cut it down to 50 secs. ",
+        "ts": "1582994792.001100",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977778514918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My favorites will be those 3d comps",
+        "ts": "1582994837.001200",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/964101270147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which one do you like the most?",
+        "ts": "1582994851.001300",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/964101386435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, and the shot the man is running.  I tried so hard on that. I actually keyed his hairs out.",
+        "ts": "1582994976.001400",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977780037894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I won’t argue with your professor. I think around a minute is fine though.",
+        "ts": "1582996209.001500",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977791390102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I liked the car in the garage the most.",
+        "ts": "1582996265.001600",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/964114299811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do have some suggestions if you’d like to hear them?",
+        "ts": "1582996300.001700",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975601326213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do u want to see or do you think it needs more breakdowns? ",
+        "ts": "1582997248.001800",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/965486389345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, you can show me. I do think more breakdowns would help.",
+        "ts": "1582997686.001900",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975595736368_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "alright! I'll have another music first:joy:",
+        "ts": "1582997785.002000",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/965491203073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First of all, I just want to say that anything I say as a suggestion is either to help make the shot better, or to help you show employers your skills.",
+        "ts": "1582997816.002100",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/965491467713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One thing I think that would really help is to slightly tweak how you show your roto.",
+        "ts": "1582997844.002200",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975597129968_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In all the places I’ve worked the roto department delivers their mattes in red, green and blue.",
+        "ts": "1582997893.002300",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977459029863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you show your roto in that way, it’ll show that you understand that idea.",
+        "ts": "1582997936.002400",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977806612342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do u have a reference that I can take a look?",
+        "ts": "1582997994.002500",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975143690148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What about the roto for the car there is a color-coded version ",
+        "ts": "1582998040.002600",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977460289303_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I found this online.",
+        "ts": "1582998099.002700",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/964130446099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FURDK36P9",
+                "created": 1582998135,
+                "timestamp": 1582998135,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 59598,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FURDK36P9\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FURDK36P9\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FURDK36P9-d6ca65af0b\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1280,
+                "original_h": 720,
+                "thumb_tiny": "AwAbADCmF3EgUpRueCce1NzzxRnjqaAGs7LgA0fvM9R+NB4YZpwO3cCoP1rSEOZBewmJSeOfpS5lUZ7Zx0qe3K5JLbR6ZqKYgghSSu71rMBoBY4FBBBwetJRQAx+opRKQScDn2p\/ajA9Kd7AR7yTSmQsACO9PpaQH\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FURDK36P9\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FURDK36P9-091270249a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582998138.002800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, the car is the right idea, but we use the red green and blue channels so that there’s 3 mattes in each render.",
+        "ts": "1582998157.003100",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/964130957027_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I get it",
+        "ts": "1582998157.003200",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975617629045_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's really helpful. Thank you so much ",
+        "ts": "1582998199.003300",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977808895078_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, if I wanted just the body, I use the blue matte.",
+        "ts": "1582998200.003400",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975617995717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem.",
+        "ts": "1582998249.003500",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/964131741523_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Once I update it I'll let you know!",
+        "ts": "1582998517.003600",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975620835477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you show your roto on a solid colour, use 50% grey.",
+        "ts": "1582998641.003700",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977465594231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Again, that’s just something that I’ve always seen. It helps show any issues with highlights or shadows on the edges.",
+        "ts": "1582998695.003800",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/962815478434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Absolutely!  I had tried to color-coded the man as well. But I don't know how to color-code the hair where I keyed out so I gave up on that.",
+        "ts": "1582998899.003900",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977467820727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you do that in Nuke?",
+        "ts": "1582998998.004000",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977468667847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes ",
+        "ts": "1582999015.004100",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977468811511_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll show you when I come back from my spring break.",
+        "ts": "1582999073.004200",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/962818739122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So you had your alpha for the key, and you added the roto to that?",
+        "ts": "1582999081.004300",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/962818800258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK, if that’s easier we can do that.",
+        "ts": "1582999097.004400",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/962818934690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes haha I'll send you probably the week after the next week ",
+        "ts": "1582999154.004500",
+        "username": "Yilin Lai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/975153837044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

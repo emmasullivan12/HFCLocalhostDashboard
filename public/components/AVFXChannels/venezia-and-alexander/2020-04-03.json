@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey, im back, yeah i have started working on a full game, and i have joined a friend's games design team as their in house modeller",
+        "ts": "1585950148.001600",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046704130165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i havent really thought about any properly big projects, but the machine above was supposed to kind of kickstart somethimg",
+        "ts": "1585950209.001700",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046705329205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "something*",
+        "ts": "1585950226.001800",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1045066922151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

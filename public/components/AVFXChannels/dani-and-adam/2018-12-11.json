@@ -1,0 +1,410 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dani, thank you so much for your feedback! It's so much for me to pick up! I'll carefully analyse it and will to change my work :slightly_smiling_face:",
+        "ts": "1544566713.000100",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/502504491527_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I apologise for not sending all other work as I said previously. I came back after work on Sunday (actually Monday) at 00:30 am. I had only 8 hours of sleep other 2 days. Anyway, excuses, excuses, excuses.",
+        "ts": "1544566825.000200",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501285420724_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This animation was done last week and was my first time using proper rig and Maya for character animation. I've tried to use the knowledge I've learned for 2 months of self-studies.",
+        "ts": "1544567042.000300",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501656657685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was experimenting with FK\/IK controllers. Hands movement are not right, as I could not get them moving in a right trajectory. Finally, I found additional controllers to get the desired effect.\n\nHowever, I've saved this work as a reminder. Learning curve. So, when I get back, I'd see my progress.",
+        "ts": "1544567205.000400",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501356653171_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FEQMCND40",
+                "created": 1544567563,
+                "timestamp": 1544567563,
+                "name": "Walk_1.mp4",
+                "title": "Walk 1",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2477155,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEQMCND40\/walk_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEQMCND40\/download\/walk_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEQMCND40-88400b78ad\/walk_1_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FEQMCND40\/walk_1.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FEQMCND40-5fdf316ca7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1544567565.000500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "‏‏‎  ‏‏‎",
+        "ts": "1544567775.000800",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500863856433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "‏‏‎",
+        "ts": "1544567777.000900",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501364459715_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "‏‏‎",
+        "ts": "1544567778.001000",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500863905825_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_*Run cycles*_",
+        "ts": "1544567806.001100",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501364877219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These run cycle are refined. Both are done after walk cycles.",
+        "ts": "1544567845.001200",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/502869487526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FESRMV3FG",
+                "created": 1544568037,
+                "timestamp": 1544568037,
+                "name": "Run_cycle_(1of2)_final.mp4",
+                "title": "Run cycle (1of2) final",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2229635,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FESRMV3FG\/run_cycle__1of2__final.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FESRMV3FG\/download\/run_cycle__1of2__final.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FESRMV3FG-7e70c5c74a\/run_cycle__1of2__final_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FESRMV3FG\/run_cycle__1of2__final.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FESRMV3FG-d6f5c02587",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1544568038.001300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "‏‏‎",
+        "ts": "1544568056.001600",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501368105907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "‏‏‎",
+        "ts": "1544568057.001700",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/502872226646_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FERAUAFTM",
+                "created": 1544568076,
+                "timestamp": 1544568076,
+                "name": "Run_cycle_(1of2)_final_1.mp4",
+                "title": "Run cycle (1of2) final 1",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3398313,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FERAUAFTM\/run_cycle__1of2__final_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FERAUAFTM\/download\/run_cycle__1of2__final_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FERAUAFTM-1c60d7175e\/run_cycle__1of2__final_1_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FERAUAFTM\/run_cycle__1of2__final_1.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FERAUAFTM-698d387b79",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1544568077.001800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_*Weight exercise*_",
+        "ts": "1544568095.002100",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500868026929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This animation was a new challenge for me as I couldn't find the right reference. So, I had to use my imagination and basis knowledge of physics. That was an exciting experience.",
+        "ts": "1544568268.002200",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501370799779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FEQRMRR97",
+                "created": 1544568396,
+                "timestamp": 1544568396,
+                "name": "Colour_pers_1.mp4",
+                "title": "Colour pers 1",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2551721,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEQRMRR97\/colour_pers_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEQRMRR97\/download\/colour_pers_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEQRMRR97-91a5fbffd2\/colour_pers_1_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FEQRMRR97\/colour_pers_1.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FEQRMRR97-891891807a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1544568397.002300"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FER91AFGC",
+                "created": 1544568464,
+                "timestamp": 1544568464,
+                "name": "Colour_side_1.mp4",
+                "title": "Colour side 1",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 4696769,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FER91AFGC\/colour_side_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FER91AFGC\/download\/colour_side_1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FER91AFGC\/colour_side_1.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FER91AFGC-ba6019acf9",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1544568464.002600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "‏‏‎",
+        "ts": "1544568591.002900",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501308905140_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "‏‏‎",
+        "ts": "1544568592.003000",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501374905331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_*Emote*_",
+        "ts": "1544568611.003100",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501375098035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This animation was done today.",
+        "ts": "1544568628.003200",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501375363379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FERB1KJTD",
+                "created": 1544568651,
+                "timestamp": 1544568651,
+                "name": "emote_(optimised).mp4",
+                "title": "emote (optimised)",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3701405,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FERB1KJTD\/emote__optimised_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FERB1KJTD\/download\/emote__optimised_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FERB1KJTD-e946cebcb1\/emote__optimised__thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FERB1KJTD\/emote__optimised_.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FERB1KJTD-afd352af06",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1544568651.003300"
+    }
+]

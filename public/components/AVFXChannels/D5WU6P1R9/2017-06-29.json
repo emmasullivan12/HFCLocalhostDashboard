@@ -1,0 +1,362 @@
+[
+    {
+        "type": "message",
+        "text": "Yo - how do I add growthbot to a convo",
+        "user": "U5X3WPT29",
+        "ts": "1498769472.953738",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ester has started a conversation ",
+        "user": "U5X3WPT29",
+        "ts": "1498769484.957860",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "But growthbot isn't there",
+        "user": "U5X3WPT29",
+        "ts": "1498769489.959869",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "don't worry about growbot - we found another slack way to do it",
+        "user": "U4VR52RQE",
+        "ts": "1498769526.972381",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "its all good!",
+        "user": "U4VR52RQE",
+        "ts": "1498769532.974291",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "glad the convo is flowing!!",
+        "user": "U4VR52RQE",
+        "ts": "1498769537.975670",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Started",
+        "user": "U5X3WPT29",
+        "ts": "1498769674.024103",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Not yet flowing",
+        "user": "U5X3WPT29",
+        "ts": "1498769681.026268",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "haha",
+        "user": "U4VR52RQE",
+        "ts": "1498769684.027599",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Will make sure the reviews of the pilot are good",
+        "user": "U5X3WPT29",
+        "ts": "1498769699.032592",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Get you guys rolling",
+        "user": "U5X3WPT29",
+        "ts": "1498769705.034824",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": ":wink:",
+        "user": "U4VR52RQE",
+        "ts": "1498769709.036289",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How do I give them points?",
+        "user": "U5X3WPT29",
+        "ts": "1498770977.453168",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hashtags ",
+        "user": "U5X3WPT29",
+        "ts": "1498770989.456747",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "hashtags indeed man",
+        "user": "U4VR52RQE",
+        "ts": "1498772171.800945",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "if that makes sense!",
+        "user": "U4VR52RQE",
+        "ts": "1498772273.829600",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "you might need to explain briefly what it means (not all of them have read our induction booklett.....!) and why you are giving it to them e.g. curiosity because your really proactively asking me questions about etc. etc.",
+        "user": "U4VR52RQE",
+        "ts": "1498772292.834570",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "you're*",
+        "user": "U4VR52RQE",
+        "ts": "1498772296.835676",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela, how are you this week? I hope you are doing well. Just thought I'd say hi. If you are curious about more of what goes on in a VFX studio, I'd be glad to share some info from time to time about what I have going on ",
+        "ts": "1544546742.002400",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/502507623862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! I'm not sure how much I should put walk and run cycles into my reel, what would you recommend regarding that?",
+        "ts": "1586942630.003600",
+        "username": "Ellen Gordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1048801339159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It will be interesting to see everything bounce back after the lockdown, do you think more people will work remotely afterwards? I imagine like you say, it's a bit limiting due to rendering and computer power?",
+        "ts": "1586942820.003700",
+        "username": "Ellen Gordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1056806832982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you I'd really appreciate that!",
+        "ts": "1586942854.003800",
+        "username": "Ellen Gordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1062161431813_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies for the delay in my getting back to you, my uni work caught up with me!",
+        "ts": "1586942881.003900",
+        "username": "Ellen Gordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063752355587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011PDLKFT8",
+                "created": 1586960824,
+                "timestamp": 1586960824,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 214195,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011PDLKFT8\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011PDLKFT8\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 271,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 406,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 451,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011PDLKFT8-7772ee9ed5\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 541,
+                "original_w": 1018,
+                "original_h": 574,
+                "thumb_tiny": "AwAbADCI9TSUp6migAAycCnyKq4A696AdqfJy3vTWOTzQA2iiloAD1NFB6migBKKWigAooooA\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011PDLKFT8\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011PDLKFT8-017d0a9815",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1586960825.004000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, I think this looks more impressive than the rendered version because I can see what's going on. I get a much better idea of the weight of the creature whereas in the rendered one you kind of lose that..",
+        "ts": "1586960896.004300",
+        "username": "llyr williams (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064409783651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If I'm looking at a reel for a creature animator I want to see as much detail as possible. Which may be an ugly playblast but it's going to inform me a lot more. So I guess walk cycles from multiple angles would be the way to go",
+        "ts": "1586961035.004400",
+        "username": "llyr williams (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1049474272215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me, I'd probably rather see a walk cycles \/ turnarounds first, then see a rendered \/ comped shot. That way I know immediately what I'm meant to be concentrating on.",
+        "ts": "1586961293.004500",
+        "username": "llyr williams (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1088063402928_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, post lockdown is gonna be weird. I'm hoping it's going to make employers a lot more flexible with working from home and working hours.",
+        "ts": "1586961399.004600",
+        "username": "llyr williams (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064227063250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some houdini sites which really helped me\n\n<https:\/\/entagma.com\/>\n\n<https:\/\/www.rohandalvi.net\/free>\n\nThese guys have a really good way of explaining and. the early tutorials really helped me out.",
+        "ts": "1586961620.004700",
+        "username": "llyr williams (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064447959539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a really interesting talk which I attended last year.\n\n<https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70>\n\nThe Mog cat one is really interesting and funny. Talking about how they worked with the flabbiness of the cat",
+        "ts": "1586961740.004800",
+        "username": "llyr williams (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064453844483_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Framestore Creatures &amp; Houdini | Framestore | Character FX &amp; Crowds Production Talks",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70",
+                "author_name": "Houdini",
+                "author_link": "https:\/\/www.youtube.com\/user\/houdini3d",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/_JQ673B6Y70\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Framestore Creatures & Houdini | Framestore | Character FX & Crowds Production Talks",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/_JQ673B6Y70?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586961741.000000"
+        }
+    }
+]

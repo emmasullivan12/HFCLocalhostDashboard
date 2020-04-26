@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries :) that’s good, is there anything else you’d like to improve or discuss?",
+        "ts": "1553682963.000300",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/580907018513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Feel free to let me know ",
+        "ts": "1553682976.000400",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590699215351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would like help to create a CV ",
+        "ts": "1553697504.000500",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590281383621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, what in particular do you need help with about the CV? ",
+        "ts": "1553702828.000600",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/581405168897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there a specific bit that you find difficult?",
+        "ts": "1553702848.000700",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/591198061959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I just don’t know how to do it ",
+        "ts": "1553703141.000800",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/581415293393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For start you can write your personal details on the top part and then continue with writing what position are you looking for and why. Afterwards you can start listing subjects you are studying in school, any volunteering activities you’ve done if any or anything that could be considered to have given you some experience and then you can mention your skills and things you enjoy doing..",
+        "ts": "1553703900.000900",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590490347941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay I will try it as soon as I get home and see how it goes ",
+        "ts": "1553704187.001000",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/581448002305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah play around and see.. also I’m sure that potential employers expect that students don’t have much professional experiences so don’t feel pressured that you need to have many things to say.. whatever would form a profile with your characteristics, skills and things\/activities you enjoy doing would be good",
+        "ts": "1553705069.001100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/591267349783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah Okayy ",
+        "ts": "1553705153.001200",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590529210149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also if you feel like including any soft skills (teamwork, meeting deadlines, working under pressure etc) which you might have noticed when doing courseworks at schools or projects make sure to include these too :)",
+        "ts": "1553705186.001300",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/587781020224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay I’ll try and get back to you ",
+        "ts": "1553707401.001400",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/591704289654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

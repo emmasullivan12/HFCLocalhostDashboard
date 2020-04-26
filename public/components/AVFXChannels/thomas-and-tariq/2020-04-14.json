@@ -1,0 +1,189 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye, your right. I haven't touched my reel and to be honest I'm not sure I've got anything better or 'finished' enough to go in yet. Ye so I'll start with one of the destruction sims, or maybe do all of them as they're quite small. I was thinking of doing a new fluid sim. Something similar to the tutorials but not identical, some kind of slowmo small scale splash. Any ideas what O could do with that?",
+        "ts": "1586855027.002800",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1059917127237_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Where were you a runner by the way?",
+        "ts": "1586855264.002900",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1067139968020_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The thing I've always found with looking at some people's showreels are that there are tutorials on there, identical to the tutorial. There's a lot of applied houdini work on showreels, that has literally followed the tutorial and not changed a thing... so if you want to do something similar to the tutorial but not identical, that's great as it shows you have the ability to think and experiment for yourself (even if you were the one doing the tutorial)\nIf you want to try something slow motion, small scale, it'll be good to go on Youtube, find some reference videos (slowmoguys for example) and then try to recreate that. So when you have your work, you can have the reference in the corner and your sim full screen. Shows the ability to match reference as well, which is always a great skilL!",
+        "ts": "1586855810.003000",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060940483923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for ideas:\n• A drop of liquid into a larger liquid\n• Something popping filled with a liquid (balloon?)\n• Have something melt and slide off a surface\n• Could try having liquid fill up a container with collision objects inside\nSomething bursting open could be good, as that could be done in slow-mo, and then you could also have small particles coming out as well, depending on the object\n\nAnd I was a runner at Cinesite for a while",
+        "ts": "1586855959.003100",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047133568455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wicked! I'll try and stay away from replicating tutorials then. I'll have to get everything I've been working on together to show you.",
+        "ts": "1586887994.003200",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047414900119_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do have a problem I'm trying to work out. I've got this football sim, one I showed you ages ago. I've got a sim of the stringy bits at where the leather has torn. Unfortunately due to the collisions some of them got streached out. So what I want to do is delete them based on they're length. I've got the length worked out with the measure sop and I can delete them based on that. The problem is that they snap before the end of the sim. So I need a way of saving the highest value of an attribute over time. Does that make sense? I asume it would be with a solver, but I couldn't get it to work. Any ideas?",
+        "ts": "1586888348.003300",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1055428626294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I tried the max function to compare the current and last frame and save the highest but I couldn't get it to work. I'll try again tonight",
+        "ts": "1586892995.003400",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1074977052993_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man!\nA solver is the way to go, that's how I would personally do it\nDoes your point count change over time? or are all the stringy bits the same throughout the whole sim?",
+        "ts": "1586932160.003500",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1063221379250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F012K206LSC",
+                "created": 1586932370,
+                "timestamp": 1586932370,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 19604,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012K206LSC\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012K206LSC\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K206LSC-27c0f2ed24\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K206LSC-27c0f2ed24\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K206LSC-27c0f2ed24\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 222,
+                "thumb_360_h": 347,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K206LSC-27c0f2ed24\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "original_w": 222,
+                "original_h": 347,
+                "thumb_tiny": "AwAwAB6CPydnzht36U2Tyt37vdjHeliVGB3tjHSkcKHIB4zx3oAZ9KKXA9f0pKAJYoDIu4MoHueabJEY22kqeM8GnRW7SJvBAFJJC0bYOPwNAEZGKKKKAHIGJ+XP4Uhz3z+NSQyiMEEdaa77mJAwKAGUUHmigD\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F012K206LSC\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F012K206LSC-9254eee7dc",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1586932371.003600"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F012K22D524",
+                "created": 1586932474,
+                "timestamp": 1586932474,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 71328,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012K22D524\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012K22D524\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K22D524-625724c80a\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K22D524-625724c80a\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K22D524-625724c80a\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 224,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K22D524-625724c80a\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 299,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K22D524-625724c80a\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K22D524-625724c80a\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 448,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012K22D524-625724c80a\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 498,
+                "original_w": 842,
+                "original_h": 524,
+                "thumb_tiny": "AwAdADCouB94Z\/Gg47D9aSns6kcIq\/SgBlO+tNppOB3oAecD+I0g+uaZuPrSp96gCaNmAO1Aw6nIzTM+wpySOgIVsA0wnNABS\/L6UlFAB+X5UZ+n5UUUAf\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F012K22D524\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F012K22D524-91abfcefe5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1586932474.003900"
+    }
+]

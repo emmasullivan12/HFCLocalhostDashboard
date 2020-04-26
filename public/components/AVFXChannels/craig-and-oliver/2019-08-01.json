@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know maya well. Houdini is free to download as well. It doesn't take long to learn a new package really one you know one though. Craig, do you think Houdini FX to Unreal Engine would be interesting? I think there is a shortage of fx artists more than anything? I like a bit of everything but FX would be more challenging than modelling for example. I like things not because they are easy but because they are hard.",
+        "ts": "1564675214.000500",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/713315499408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

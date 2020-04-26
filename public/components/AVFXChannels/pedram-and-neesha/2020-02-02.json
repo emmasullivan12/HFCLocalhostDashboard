@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Pedram,\nHow are you? \nI alright. I have applied like I mentioned to some Returning to VFX scheme and should here from them soon. It was difficult after Christmas break but no other time is a better time in the year. \n",
+        "ts": "1580676659.000100",
+        "username": "Neesha Khan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-02\/933121681349_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

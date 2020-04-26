@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Oliver! I'm an animator at Blue Zoo :slightly_smiling_face: Hope you are having a good day too!",
+        "ts": "1571990603.001900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/796103362098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi thanks, it's great too meet you. You work for Blue zoo? :) What form of animation do you focus on? :)",
+        "ts": "1572002412.002000",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/808644604516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do 3d animation, so I work only in Maya, how about you?",
+        "ts": "1572008586.002100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/808764951892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "3d animation too :) started specializing in it now it's my second year.",
+        "ts": "1572021778.002200",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/809636046965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

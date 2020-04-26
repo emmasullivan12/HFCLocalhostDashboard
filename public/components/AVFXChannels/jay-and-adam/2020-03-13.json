@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, I've been very busy and stressed lately trying to get stuff done for my final major project so haven't really had time. I do plan on talking to them though",
+        "ts": "1584147201.004800",
+        "username": "Adam Clement (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1000086526912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

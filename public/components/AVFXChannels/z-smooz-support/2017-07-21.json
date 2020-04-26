@@ -1,0 +1,894 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1500649399.400908",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1500649399.401097",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: This is the beginning of your conversation with Smooz support\nSay `Hello` here, it will be sent to their Slack team.\n",
+        "ts": "1500649402.402595",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1500649402.402678",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "callback_id": "greetings_message",
+                "fallback": "Conversation with Smooz support",
+                "id": 1,
+                "color": "3AA3E3",
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "Basic commands",
+                        "text": "Chat commands",
+                        "type": "button",
+                        "value": "basic",
+                        "style": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "Show Help",
+                        "text": "Show all Help topics",
+                        "type": "button",
+                        "value": "topics",
+                        "style": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! I'm Matthieu, founder of Smooz, and this is a support channel\nPlease let me know if you have any question",
+        "ts": "1500649418.412210",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216056737268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "Matthieu, how are you doing? You spoke with my colleague Emma",
+        "user": "U4VR52RQE",
+        "ts": "1500649462.437564",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh nice :slightly_smiling_face:",
+        "ts": "1500649480.449159",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215346228560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "It would be great to talk more about how we can work with Smooz and to try a test channel between one of our other Slack teams :slightly_smiling_face:",
+        "user": "U4VR52RQE",
+        "ts": "1500649578.506874",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sure",
+        "ts": "1500649602.520515",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/217099486439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, at the basic level, Smooz enables you to open a shared channel, connecting two (or more) Slack teams",
+        "ts": "1500649628.535626",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216892291046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this is where I may have misunderstood Emma",
+        "ts": "1500649648.547201",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216133581013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mean connecting two of your teams - no problem",
+        "ts": "1500649664.556329",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216059213572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but I understand you will connect with N students later",
+        "ts": "1500649682.567299",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216133836885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "will each student have its own Slack team?",
+        "ts": "1500649691.572287",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215467365297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "We will have students in one Slack team and mentors in another. We would then invite individual mentors and individual students from each team into a 3rd Slack team where Emma and I will sit as paid Slack users",
+        "user": "U4VR52RQE",
+        "ts": "1500649776.620555",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So individual students won't have their own Slack team but will need their own channel with their mentor so that it is a 1:1 conversation",
+        "user": "U4VR52RQE",
+        "ts": "1500649815.643042",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "understood",
+        "ts": "1500649816.643707",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216894286374_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so, Team Students, Team Mentors, and Team Prospela",
+        "ts": "1500649837.655779",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215468872657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": ":ok_hand: Exactly!",
+        "user": "U4VR52RQE",
+        "ts": "1500649852.664543",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Team Prospela creates a shared channel, invites team Mentors and team Students in it",
+        "ts": "1500649861.669932",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215469057681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "quick limitation on top of my head - the user invited in the Smooz shared channel, is the one who has installed Smooz",
+        "ts": "1500649899.691532",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215350444704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "Will we have the ability to invite only individuals from team Mentors and Team students into the channel? i.e. not everyone?",
+        "user": "U4VR52RQE",
+        "ts": "1500649907.695760",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in terms of process, you or Emma need to sit in both Team Mentors and team Students. You (or Emma) install Smooz, get invited in the shared channel when create",
+        "ts": "1500649949.719072",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216895581910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "then you invite the student you want",
+        "ts": "1500649957.723124",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216895638630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "or the mentor you want",
+        "ts": "1500649959.724284",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216136645765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "then you make the channel private",
+        "ts": "1500649964.727114",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216136684213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "a bit of manual management I think - but workable",
+        "ts": "1500649982.736777",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216895818214_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "OK sure. We will both be in all 3 teams.",
+        "user": "U4VR52RQE",
+        "ts": "1500649983.737321",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "then it can work",
+        "ts": "1500649998.745556",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216896084582_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "Can we then leave the private shared channel for them to talk privately?",
+        "user": "U4VR52RQE",
+        "ts": "1500650004.749148",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes",
+        "ts": "1500650018.756797",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216004580850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "But still be able to monitor conversations in the compliance exports from our paid team Prospela?",
+        "user": "U4VR52RQE",
+        "ts": "1500650047.773105",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes, you'll see all exchanges",
+        "ts": "1500650118.813124",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/217104688055_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "By the way, it's great how you have appeared in our team! :+1:",
+        "user": "U4VR52RQE",
+        "ts": "1500650141.825670",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":smile:",
+        "ts": "1500650189.852506",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/217105375751_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so, to invite another team - I think you have received a link ?",
+        "ts": "1500650292.908962",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215473361985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "click on this link, then select the other team to install Smooz",
+        "ts": "1500650319.923565",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/217106648071_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "I've noticed I can't see when you are typing, just out of curiosity, is that feature not available in the shared channels?",
+        "user": "U4VR52RQE",
+        "ts": "1500650322.925296",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Brilliant thanks will do!",
+        "user": "U4VR52RQE",
+        "ts": "1500650327.928306",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "to create additional shared channel between two teams already connected - it takes place in your dashboard <http:\/\/www.smooz.io\/dashboard|www.smooz.io\/dashboard>",
+        "ts": "1500650357.944717",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215935993587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes, not available in the app. also not available : edit and deletes",
+        "ts": "1500650382.958915",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216008240130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "thanks for that, just checking out the link now",
+        "user": "U4VR52RQE",
+        "ts": "1500650546.051273",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Works fine it seems for us :slightly_smiling_face:",
+        "user": "U4VR52RQE",
+        "ts": "1500651211.431045",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "good good :slightly_smiling_face:",
+        "ts": "1500651227.439517",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215944734755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "So did you have any thoughts on pricing for us? And just to clarify Smooz charge per shared channel i.e. not a charge for each of the 3 teams?",
+        "user": "U4VR52RQE",
+        "ts": "1500651421.549495",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "per shared channel, yes",
+        "ts": "1500651459.570667",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216019154418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I understand that the channel will \"come and go\" correct ?",
+        "ts": "1500651482.583011",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216077478916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "each one of them will be active for a while, then be deactivated?",
+        "ts": "1500651500.593225",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216911253062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "We have set student programmes for 1-3 months and then they will roll onto another new shared channel with a new mentor. We were thinking of having the old channels to remain open in case they want to talk with each other but imagine the frequency of conversation to be minimal after the 1-3 months is over",
+        "user": "U4VR52RQE",
+        "ts": "1500651693.702104",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see",
+        "ts": "1500651960.851490",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216024056690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so, roughly speaking, shared channels are normally 6€ \/ channel, and 4€ above 5. Let say, approximately 5€ each. Some larger users have negotiated a flat-fee deal, with a certain max number of channel",
+        "ts": "1500652109.933930",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216025593010_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example, 50€\/m for 20 channels max",
+        "ts": "1500652124.942294",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215491753905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is less expensive, if the usage is there",
+        "ts": "1500652143.952776",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216917473046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was thinking along the same line, perhaps with a reduced fee because I understand that you may not be able to charge a lot...",
+        "ts": "1500652173.969874",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216917841414_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can go down to approx 1.5€ per channel on a flat fee, below that it becomes close to my costs... so let say, if you pilot will be open to 100 students max, 150€ \/ month",
+        "ts": "1500652252.013482",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215954873587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how would that sound? I'm thinking out loud here, brainstorming - because you're so out of my normal scope :slightly_smiling_face:",
+        "ts": "1500652279.028587",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215374290064_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "Does the no. of people in a shared chat increase the cost for you or is it each new shared channel only?",
+        "user": "U4VR52RQE",
+        "ts": "1500652602.206776",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "number of channels only",
+        "ts": "1500652625.220001",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216030598466_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "regardless of number of teams in the channel (max 6 though) or number of people in it",
+        "ts": "1500652645.231315",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215377885040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "Thanks very much for the quote. We are likely to have circa 200 students (with further growth in the future) and thus shared channels so I think it would be a bit too much for us unfortunately.",
+        "user": "U4VR52RQE",
+        "ts": "1500652969.413817",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U4VR52RQE",
+            "ts": "1500652985.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "understood",
+        "ts": "1500652989.424612",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215500609905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what would be an appropriate level, in your eyes?",
+        "ts": "1500652998.429769",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/216034768338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "per channel, or flat fee with X number of channels max, as you want",
+        "ts": "1500653019.441703",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-21\/215500985025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "So we have a quote from a US company for $99 \/ month for unlimited channels. Is that something you could work with? Or perhaps a lower price with a cap on the no. of channels?",
+        "user": "U4VR52RQE",
+        "ts": "1500653170.523645",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

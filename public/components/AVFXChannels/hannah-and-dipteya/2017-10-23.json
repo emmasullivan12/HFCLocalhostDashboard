@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank youuu:relaxed: ",
+        "ts": "1508764909.000094",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-23\/260402143346_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What sort of skill do you use for your work??",
+        "ts": "1508764927.000218",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-23\/260542189525_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

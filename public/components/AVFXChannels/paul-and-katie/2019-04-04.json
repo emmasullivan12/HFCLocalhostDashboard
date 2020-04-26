@@ -1,0 +1,176 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1554402587.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5ca64d1b0bfa340004861e14|this link> with other teams to invite them in it_",
+        "ts": "1554402588.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1554402588.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1554402606.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1554402618.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-18\" to \"paul-and-katie\"",
+        "old_name": "z-shared-18",
+        "name": "paul-and-katie"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1554402677.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1554402683.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yo",
+        "ts": "1554402720.001100",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602313416134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@paulmosleyuk has joined the channel_",
+        "ts": "1554402832.001200",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/601987034647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@katiejbirbeck has joined the channel_",
+        "ts": "1554402842.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/601987219063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Katie, please meet Paul your incredible E-Mentor I've been telling you about! Feel free to introduce yourselves and continue chatting within this channel :wave:\n\nI will now be leaving the channel, but both please direct message myself or emma-prospela if you have any questions. All the best for now! :smile:",
+        "ts": "1554402861.001400",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/601360096261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1554402868.001500",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/600844177060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1554402874.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/592152921393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Paul, it’s nice to meet you :slightly_smiling_face: I’m currently studying 2D animation at uni, at the moment I don’t really know what I want to get into when I leave anymore and so now have a want to try a bit of everything attitude. I’m very interested in 2D animation and preproduction work like character design and concept art, what are some of your interests ? ",
+        "ts": "1554403734.001700",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/601383225701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Katie, nice to meet you too. I have worked in character design at the Mill before as an Executive Producer - we created this series of spots for Cif: <http:\/\/www.themill.com\/portfolio\/385\/sleeping-beauty> (although that's very much 3D animation) amongst many others - I don't run that team anymore but I still work on animation projects all the time - in fact you can see snippets of tons of specifically 2D stuff our teams are working on here <http:\/\/www.themill.com\/millchannel\/1982\/mill-design-weekender-%7C-march-2019-edition> ... I've done pretty much every job on the production side of VFX so I'm happy to help in any way I can.",
+        "ts": "1554417235.001800",
+        "username": "Paul (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602608675750_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "The Mill",
+                "title": "Cif: Sleeping Beauty",
+                "title_link": "http:\/\/www.themill.com\/portfolio\/385\/sleeping-beauty",
+                "text": "This fully CG animated fairy tale spot, narrated by Michael Gambon, shows how Sleeping Beauty retained her beauty and shine with the help of new Cif floor cleaner, leaving her time to make sure she looked perfect for her…",
+                "fallback": "The Mill: Cif: Sleeping Beauty",
+                "image_url": "http:\/\/cdn.themill.com\/media\/00000008844.jpg",
+                "from_url": "http:\/\/www.themill.com\/portfolio\/385\/sleeping-beauty",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 101716,
+                "id": 1,
+                "original_url": "http:\/\/www.themill.com\/portfolio\/385\/sleeping-beauty"
+            },
+            {
+                "service_name": "The Mill",
+                "title": "Mill Design Weekender | March 2019 Edition",
+                "title_link": "http:\/\/www.themill.com\/millchannel\/1982\/mill-design-weekender-%7C-march-2019-edition",
+                "text": "Take a look at our latest collection of creative explorations, passion projects, and experiments in technique and style from Mill Designers and Artists across the globe. Rebecca Perry Mill LDN ILLUSTRATIONS Sasha…",
+                "fallback": "The Mill: Mill Design Weekender | March 2019 Edition",
+                "image_url": "http:\/\/cdn.themill.com\/media\/00000033957.jpg",
+                "from_url": "http:\/\/www.themill.com\/millchannel\/1982\/mill-design-weekender-%7C-march-2019-edition",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 355544,
+                "id": 2,
+                "original_url": "http:\/\/www.themill.com\/millchannel\/1982\/mill-design-weekender-%7C-march-2019-edition"
+            }
+        ]
+    }
+]

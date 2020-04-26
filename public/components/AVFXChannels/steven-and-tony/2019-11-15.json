@@ -1,0 +1,127 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Tony! All good thanks man, we're delivering the first 10 episodes this week so quite busy with fixes as well as the regular work! But all part of the game hah. How's the roto going? I guess the hard way is a good way to start xD",
+        "ts": "1573821732.037500",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/823350415234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow! 10 episodes? Doesn’t sound fun! Do your best! Haha",
+        "ts": "1573821838.037600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/838350127926_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahh well its only 3 for my team, 10 across the production! But they're 10 minute episodes so still more than we delivered at once on numberblocks! It's going well though :slightly_smiling_face: lots of painting out glitches haha",
+        "ts": "1573821964.037700",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/835678573908_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQL4FF6VB",
+                "created": 1573822060,
+                "timestamp": 1573822060,
+                "name": "File from iOS.MOV",
+                "title": "File from iOS",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 30916196,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQL4FF6VB\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQL4FF6VB\/download\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQL4FF6VB-8cc60ce0ab\/file_from_ios_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQL4FF6VB\/file_from_ios.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQL4FF6VB-0e296c07a3",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1573822062.037800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice! looks nice and clean",
+        "ts": "1573822229.038100",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/838356477574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "little popping on the trouser leg but definitely not an easy shot",
+        "ts": "1573822275.038200",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/835683689876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": " After I finish all the shapes i will review them individually ",
+        "ts": "1573822434.038300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/835686599188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Middle part of the trousers is popping ",
+        "ts": "1573822462.038400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/838005733767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Then after i finish the two WIP rotos i need to learn cleanup with projections",
+        "ts": "1573822623.038500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/835689886548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

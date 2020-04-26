@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi harry, good to meet you. The school i went to didn't have very strong creative a-levels, there was really only a-level art. I ended up going to college to do a national diploma in media studies, which is a-level equivalent in terms of UCAS points. I then did a higher national diploma in interactive media, which was essentially just more of the same.",
+        "ts": "1569233106.001800",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771444458663_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there's a lot of very useful crossover with something like photography, you get to learn about how light works to make up an image, composition etc, so I'd definitely suggest taking up photography, or pursuing it further if it's something you're already doing. What sort of options do they have at the school?",
+        "ts": "1569233246.001900",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771796587142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think if you're already interested in modelling, and it's something you are doing in your free time anyway, there's plenty of subjects with really great transferable knowledge - anything film makey - photography, or even just pursuing a level art to get down more of the fundamentals if you're interested in it.",
+        "ts": "1569233694.002000",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/758123464787_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At my school they pretty much just have art and DT, so probably end up taking both of those unless I go somewhere else for collage. Last few days I like taking photos on my phone and editing them although I’m not really sure if that counts as photography. Very recently started to look at doing some simulations in Houdini so if you’ve got any tips I’d appreciate them ",
+        "ts": "1569241275.002100",
+        "username": "Harry Wilkinson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771572275175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think most university courses are more comfortable with applicants with traditional art a-levels - certainly for me i was actually rejected by an automated filter when i applied to my university course, which rejected any applicant without gcse or a-level art (i had neither) only to be un-rejected and offered a place! I'd say if you enjoy traditional art practices anyway, its probably a good bet, and a lot of what you learn in a-level art will be transferable too.",
+        "ts": "1569252463.002200",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769528641892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as far as Houdini goes - I'm really desperate to get into it, but it's hard to try and pick up after being used to something else. it's getting used more and more everywhere, and there's really no reason not to have a go and dive in, it's amazingly well put together software, and it poos im maya from a great height. I think the future of CG is proceduralism; - that is, you make a node graph to do a thing, and have the ability to go right back up the chain and make changes to the start of it. maya is actually pretty rubbish at it. Houdini artists can get good freelance rates too!",
+        "ts": "1569252863.002300",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/772212941174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as far as tips within houdini, i wont be much use im afraid, but there's some incredibly awe free tutorials from a couple of guys called entagma. They are really information dense, and the stuff that's made in the tuts always looks amazing\n<https:\/\/www.entagma.com\/category\/tutorials\/>",
+        "ts": "1569252966.002400",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771865759063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Houdini seems like a really powerful tool as I managed to make a fire thin in 10 mins. My main problem at the moments seems to be working out where everything is, like you said I’m kind of used to maya and zbrush. I also seem to be struggling getting stuff into maya after I finished but I’m sure I’ll get there eventually. Which software do you use for most of your stuff or is it a variety? ",
+        "ts": "1569267724.002500",
+        "username": "Harry Wilkinson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/772224307799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

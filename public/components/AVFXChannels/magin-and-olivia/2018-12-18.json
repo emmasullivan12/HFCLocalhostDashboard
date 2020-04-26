@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I took all your advice into account and my animation is already looking so much better!",
+        "ts": "1545131657.003600",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-18\/508085108294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right now though I am writing my dissertation and I was wondering if you'd be able to answer some questions for me as an animator so that I may quote you? I can send you the questions over in Spanish and you can reply in Spanish as its easier for you? :slightly_smiling_face:",
+        "ts": "1545131745.003700",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-18\/506515750500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! yeah for sure!\nI think I could do it in english, and if there's something something weird you could help me :slightly_smiling_face:",
+        "ts": "1545145383.003800",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-18\/506135200480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Omg that’s awesome! Ok I’ll put the questions in a google docs and send you a link! Thanks magin! ",
+        "ts": "1545155488.003900",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-18\/506963554275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

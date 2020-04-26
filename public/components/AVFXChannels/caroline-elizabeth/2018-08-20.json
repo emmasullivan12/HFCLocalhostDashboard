@@ -1,0 +1,65 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Elizabeth, I hope the exhibition went well! Sorry I've been out of the office a lot in August. I was chatting to the tutors in our animation deptartment and they've shared some blogs with some exercises to explore to see if you 3D animation might be something you'd enjoy <http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html>",
+        "ts": "1534778452.000100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419729975778_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "How To Tell If 3D Animation Is Right For You?",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html",
+                "text": "free 3D software - yours to try for free! What is involved in a career in 3D animation?  A lot of what animators do day to day involves ...",
+                "fallback": "How To Tell If 3D Animation Is Right For You?",
+                "image_url": "https:\/\/4.bp.blogspot.com\/-sHYtP_KzPKo\/U_EXeI4h2XI\/AAAAAAAAC-E\/XiJ6e8aA0n0\/w1200-h630-p-k-no-nu\/Screen%2BShot%2B2014-08-17%2Bat%2B21.59.09.png",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html",
+                "image_width": 402,
+                "image_height": 211,
+                "image_bytes": 44174,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It requires downloading Blender, which is free. Have you used it before?",
+        "ts": "1534778471.000100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/420764907047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You could also download a student version of Maya <https:\/\/www.autodesk.com\/education\/free-software\/featured>. This is the software used most in industry for animation",
+        "ts": "1534778651.000100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419169353889_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Free Student Software Downloads | Autodesk Education Community",
+                "title_link": "https:\/\/www.autodesk.com\/education\/free-software\/featured",
+                "text": "Unlock your creative potential with free access to 3D design software from Autodesk. Free software downloads available to students, educators, educational institutions.",
+                "fallback": "Free Student Software Downloads | Autodesk Education Community",
+                "from_url": "https:\/\/www.autodesk.com\/education\/free-software\/featured",
+                "service_icon": "https:\/\/www.autodesk.com\/favicon.ico",
+                "service_name": "autodesk.com",
+                "id": 1,
+                "original_url": "https:\/\/www.autodesk.com\/education\/free-software\/featured"
+            }
+        ]
+    }
+]

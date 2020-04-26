@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Sorry i've been so rubbish at getting back on here - how exciting! Being a producer is great - you get a wonderful overview of projects and get to work with creative people while playing to your strengths.",
+        "ts": "1575290501.000200",
+        "username": "Amy Johnson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/855975108549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can definitely run you through an overview of a day in the life of a project manager - and i'll also connect you with my friend Andy who is an incredible VFX producer. He could definitely give you more specific advice!",
+        "ts": "1575290647.000300",
+        "username": "Amy Johnson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/855968087872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That would be amazing, thank you! I’m currently helping to VFX produce a short film so any tips on producing or project management would be incredibly useful at this time! :grin: ",
+        "ts": "1575296817.000400",
+        "username": "Lucy White (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/843324553586_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

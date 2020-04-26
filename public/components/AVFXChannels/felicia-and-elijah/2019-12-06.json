@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey thanks for getting back to me, I don't have a reel but I'll throw together a quick one a little later today and I can show you some stuff I'm currently working on.",
+        "ts": "1575666472.001800",
+        "username": "Elijah Gray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/852122288403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

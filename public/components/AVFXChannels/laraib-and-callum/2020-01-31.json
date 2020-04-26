@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m good thank you ! So tell me about yourself. And how can I help you ",
+        "ts": "1580465910.001900",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/919289637555_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, so i have quite a few question I'd that's okay? \n\nI am in my final year at university and I'm starting to pull a showreel together to get ready for when I finish. What i was wondering is what employers are looking for in a showreel, getting into the industry in general and how you can progress in industry?",
+        "ts": "1580487783.002000",
+        "username": "Callum Reeve (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/918518254498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

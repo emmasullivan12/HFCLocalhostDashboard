@@ -1,0 +1,109 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In case you missed Allar’s new Mocha Pro tools \/Nuke\/SFX webinar \n<https:\/\/youtu.be\/R6GRELGtT30|https:\/\/youtu.be\/R6GRELGtT30>",
+        "ts": "1580545900.009000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/934114867303_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Rotoscoping and Clean-up with Nuke and Mocha Pro",
+                "title_link": "https:\/\/youtu.be\/R6GRELGtT30",
+                "author_name": "Escape Studios",
+                "author_link": "https:\/\/www.youtube.com\/user\/escapestudios",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/R6GRELGtT30\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Rotoscoping and Clean-up with Nuke and Mocha Pro",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/R6GRELGtT30?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/R6GRELGtT30",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/R6GRELGtT30"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580545901.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I watched it yesterday! Thank you!",
+        "ts": "1580545928.009200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/934463899174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure ",
+        "ts": "1580545941.009300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/920785081747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships|https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships>",
+        "ts": "1580546049.009400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/932253764320_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "NextGen Skills Academy | Apprenticeships",
+                "title_link": "https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships",
+                "text": "Earn as you learn in the workplace. Take time out to study in the classroom. A NextGen Apprenticeship can offer the best of both worlds, giving you invaluable experience and knowledge to kick-start your career. ‍",
+                "fallback": "NextGen Skills Academy | Apprenticeships",
+                "from_url": "https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships",
+                "service_name": "nextgenskillsacademy.com",
+                "id": 1,
+                "original_url": "https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580546050.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not sure if you quality or if you’re past this level. But have a read ",
+        "ts": "1580546080.009600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/934464882774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will check it out now! Made a new showreel and applied to Dneg for a TV tech checker",
+        "ts": "1580546113.009700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/934116220183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

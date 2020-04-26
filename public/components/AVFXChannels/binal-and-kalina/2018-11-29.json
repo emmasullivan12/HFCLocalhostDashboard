@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course!! I'm so sorry I saw this message so late. Is it okay if I send you my portfolio later tonight? Thank you so much for the help!",
+        "ts": "1543502415.002400",
+        "username": "Kalina (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490632083169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, ofcourse its absolutely fine.",
+        "ts": "1543502820.002500",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490506075472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya Binal! I hope everything is okay with you, how has your day been? I unfortunately don't really have a portfolio ready for this semester (it will be ready in a week or so) but on my vimeo there are my showreels! I've been really stuck on making one really I was hoping you'd have some tips? \n\nMy vimeo is @kalinakolchevska :blush: \n",
+        "ts": "1543534301.002600",
+        "username": "Kalina (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492845028247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm also really sorry for the bad replies its been insanely busy and hectic with deadlines slowly approaching ):",
+        "ts": "1543534373.002700",
+        "username": "Kalina (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491191205201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

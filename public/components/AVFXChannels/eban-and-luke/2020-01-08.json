@@ -1,0 +1,91 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great. Lets start at the basics here. Can you show me a few references of things you like? Jobs, shots, or sequences you have seen that when you see them you say to yourself \"Wow, I would have loved to have worked on that.\". Second, what is your schedule for your thesis? What are the dates you need to share your progress, what do you need to show, and to whom?  Also How long is your program at Scad?",
+        "ts": "1578498185.002000",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-08\/900313395430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FS1U73K0A",
+                "created": 1578520808,
+                "timestamp": 1578520808,
+                "name": "VSFX_ReviewGuidelines_2016_2017.pdf",
+                "title": "VSFX ReviewGuidelines 2016 2017",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 110186,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS1U73K0A\/vsfx_reviewguidelines_2016_2017.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS1U73K0A\/download\/vsfx_reviewguidelines_2016_2017.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS1U73K0A-e6c7d20e56\/vsfx_reviewguidelines_2016_2017_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 935,
+                "thumb_pdf_h": 1210,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FS1U73K0A\/vsfx_reviewguidelines_2016_2017.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FS1U73K0A-c9e7da9895",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1578520809.002100"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FS383HPL3",
+                "created": 1578520808,
+                "timestamp": 1578520808,
+                "name": "VSFX_Graduate Thesis Guidelines_2019-2020.pdf",
+                "title": "VSFX Graduate Thesis Guidelines 2019-2020",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 158220,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS383HPL3\/vsfx_graduate_thesis_guidelines_2019-2020.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS383HPL3\/download\/vsfx_graduate_thesis_guidelines_2019-2020.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS383HPL3-b117612a09\/vsfx_graduate_thesis_guidelines_2019-2020_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 935,
+                "thumb_pdf_h": 1210,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FS383HPL3\/vsfx_graduate_thesis_guidelines_2019-2020.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FS383HPL3-d9b687d509",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1578520809.002400"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Khadijah! \n\nGood to hear from you. \n\nWhen you say work experience, do you mean like short-term unpaid work? \n\nHow are you assignments going by the way? Managing okay to complete them?\n\nDid you complete your CV okay? ",
+        "ts": "1542297465.000600",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480065722001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, as an International Super Tutor, over the past three years I have been to some amazing places and had incredible experiences. These have included placements in Florida, South of France (St Tropez), the Greek Islands, the Swiss Alps, Monaco, on a a yacht in Indonesia.....the list could go on. \n\nA typical day for me is just fours, say 9:30am to 1:30pm, tutoring my student one-to-one. We study wherever they prefer in their home - usually a study room or dining room, but sometimes even on a sunny terrace (in Greece) or out in the garden if the weather is nice! If they are losing their focus, we take a break - maybe play a game, or Xbox, or go outside for a bit - whatever brings their focus back to study after. Lunch is always with the family together, or perhaps in a restaurant. After lunch, my work day is done and I am free to do whatever I like for the rest of the day! :) \n\nThis demonstrates that nowadays there are so many different, unusual and spectacular jobs out there, and also that work hours do not have to be typical, fixed 9-5. They can be much shorter, and more flexible - like mine! \n\nAs your mentor, I’m keen to expand your horizons in terms of what is possible and what is out there! :) ",
+        "ts": "1542297832.000700",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480575656595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "work experience as an employment ",
+        "ts": "1542312840.000800",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/482344925158_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yh my assignments are too much but I made a plan of what is more important and urgent to least...\nhope it helps started it this week so I am trying to see how useful it will be...\n \nI haven't focused on my cv much because of my hw but yh I have made a few changes",
+        "ts": "1542312999.000900",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480342697217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

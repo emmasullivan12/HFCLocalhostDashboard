@@ -1,0 +1,64 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.eventbrite.co.uk\/e\/artistai-figures-form-tickets-62906417789>",
+        "ts": "1561143923.000700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-21\/672848236773_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "ARTIST+AI: Figures &amp; Form",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/artistai-figures-form-tickets-62906417789",
+                "text": "This exhibition showcases the recent work of artist Scott Eaton combining the latest in generative artificial intelligence (AI) with the centuries old practices of drawing and sculpture. The show's featured works are the result of the dynamic interaction between Scott's traditionally-trained hand and the AI tools he has ‘taught’ to work as his assistants. In this show, Eaton, an interdisciplinary artist with backgrounds in sculpture, anatomy and design, underscores the impact AI is set to have on the art-making process. The exhibition features a diverse collection of drawings, prints, sculpture and video, each somehow reflecting the theme of \"Figures &amp; Form\". This is a free, but ticketed, private exhibition, please book your ticket here in advance.   Special thanks to our sponsors: Lenovo Panavision Direct Digital Raw Umber Studios And Somerset House Studios for helping coordinate the show.",
+                "fallback": "Eventbrite: ARTIST+AI: Figures &amp; Form",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F63458708%2F261180984989%2F1%2Foriginal.20190605-210521?w=1000&auto=compress&rect=0%2C0%2C2160%2C1080&s=2c905b8141e63ae711cd7abdc61c80f0",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "New Wing, Room G16 Strand, London, WC2R 1LA, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Wed 19 Jun 2019 at 10:00",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/artistai-figures-form-tickets-62906417789",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 55808,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/artistai-figures-form-tickets-62906417789"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Drawing, sculpture and AI. This weekend! :blush:",
+        "ts": "1561143943.000900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-21\/661425314946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Info: \nThis week we have a very cool event to highlight for you.\n\nRunning until Sunday the 23rd of June from 10am to 6pm at Somerset House, take a tour discovering how the combination of traditional hand drawn art and the types of software used to create the visuals we see today in movies and games have been brought together.\n\nThe artist, Scott Eaton, who has worked with Disney and Pixar (how cool!) has created a series of pieces using the artificial intelligence he has taught to assist him.\n\nThe showcase explores what art might look like if humans are made redundant by new technologies. It delves into many other mind-blowing aspects, offering a whole new vision of our interpretation of art.\n\nWe thought it was something very different but also interestingly relevant for you guys to check out.\nIt was hard to do it justice in the short paragraph we have written but please check out this article.\n\nIf you already convinced, follow the link below to reserve your ticket!",
+        "ts": "1561149175.001000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-21\/661510307106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

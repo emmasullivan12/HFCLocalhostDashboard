@@ -1,0 +1,157 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1567010343.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1567010343.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d66ae24bfdebf0004d2e26c|this link> with other teams to invite them in it_",
+        "ts": "1567010343.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1567010396.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"lucy-and-jane\"",
+        "old_name": "z-shared-23",
+        "name": "lucy-and-jane"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1567010402.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1567010456.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1567010463.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@janeleezy20 has joined the channel_",
+        "ts": "1567010691.001100",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/729871689954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@lucy.cooper has joined the channel_",
+        "ts": "1567010698.001200",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-17\/459973929702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jane, please meet Luct your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1567010724.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741326921189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1567010730.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741327079333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1567010741.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/743187015383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane nice to meet you.",
+        "ts": "1567010784.001600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/740856370772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy, it's nice to meet you too",
+        "ts": "1567010823.001700",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741329216437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I heard that you might be able to help me decide on future career options that are related to my interests and give advice about that? Apologies, it's the first time I've signed up to mentoring so I thought that this would be a good place to start with in relation to the questions I have.",
+        "ts": "1567011446.001800",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741338694128_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  I’ll try to help you all I can.  Let me know what you’re studying and what you really enjoy doing and we’ll take it from there.  We’ll take some time to get to know each other and help you make some decisions :slightly_smiling_face:",
+        "ts": "1567011608.001900",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/729893354082_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

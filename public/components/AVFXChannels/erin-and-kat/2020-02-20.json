@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey ive managed to download that shot but I want the chance to draw on it so my feedback is clear",
+        "ts": "1582224241.000100",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/963661651751_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Crazy week for me but I didn't want you to think I'd forgotten you",
+        "ts": "1582224264.000200",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/951677292305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

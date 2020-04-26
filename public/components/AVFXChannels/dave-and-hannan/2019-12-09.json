@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is always a reality where you need to find a job and it may not be what you want to do. Even though that is the case, I do think it is better to aim where you want to be and continuously work at where you ultimately want to end up. ",
+        "ts": "1575903314.003000",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/867391657431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Even if you take a job at a smaller house \/ company, if you are doing the type of job you ultimately want to do, you will be developing skills and building a portfolio ",
+        "ts": "1575903377.003100",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/857592905137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Plus also meeting people in that particular field that may end up helping you get future jobs",
+        "ts": "1575903400.003200",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/865077614516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking back on my career, I would also say the following: it is better to not aim at a particular job title, but try to find the type of job and work that you enjoy doing day to day",
+        "ts": "1575903475.003300",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/852754806562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Job titles will come and go, but if you enjoy actually doing your job that will keep motivating you throughout any job",
+        "ts": "1575903513.003400",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/852755873346_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

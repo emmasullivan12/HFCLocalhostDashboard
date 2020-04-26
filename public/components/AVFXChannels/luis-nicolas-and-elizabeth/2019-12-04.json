@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aha, well I'm glad I'm not missing out on some magical fix! Thanks for the tips - I'll definitely make an effort this week to go through my networks and clean them up. \n\nAlso apologies for the slow reply! I've been spending this last week struggling with my research and development project. I'm making  braids in Houdini and it's kinda driving me up the wall :exploding_head:",
+        "ts": "1575486527.005100",
+        "username": "Elizabeth Thomas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/848602528275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries. Braids? Sounds fun :)",
+        "ts": "1575488213.005200",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/859660001252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha, that's definitely one way to put it!",
+        "ts": "1575491490.005300",
+        "username": "Elizabeth Thomas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/862411971462_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

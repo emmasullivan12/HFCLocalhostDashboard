@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/394145117|https:\/\/vimeo.com\/394145117>",
+        "ts": "1582800271.000200",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/973642132215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, this link is to my wip showered. Let me know your thoughts! I consider the first 2 to be done but I'm aiming to add and possibly replace the other ones to a summer to winter, day to night and extended landscapes, and a city projection if I have enough time",
+        "ts": "1582800615.000300",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/971333557652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh and the password is: Lasma",
+        "ts": "1582800650.000400",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/960320374883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

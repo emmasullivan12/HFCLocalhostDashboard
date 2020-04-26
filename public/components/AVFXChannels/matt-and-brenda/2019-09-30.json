@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Brenda, it was great thanks! I got back yesterday :blush: on me way to work now. Ooh very exciting indeed, and sounds like you’ve been busy! Well done for acting on the feedback. When is BFX?! I have no idea what these festivals are haha ",
+        "ts": "1569912635.000200",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/766331134002_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you had a great summer too and relaxed in between animating :wink::hugging_face:",
+        "ts": "1569912654.000300",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/772677433969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

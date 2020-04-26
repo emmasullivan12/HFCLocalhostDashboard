@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Mikaella, nice to meet you",
+        "ts": "1570004757.001600",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/780729427792_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,392 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Josh. Nice to meet you!",
+        "ts": "1541600847.002000",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473794673043_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Animation is tough but very rewarding",
+        "ts": "1541600864.002100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474947885895_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Think of them as the cowboys of the film industry",
+        "ts": "1541600892.002200",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474948243735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What year of study are you currently in?",
+        "ts": "1541600937.002300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473897742306_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am in my second year :slightly_smiling_face:",
+        "ts": "1541603053.002400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473328621377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did my first year in Computer games Animation where I worked with Motion capture but it was extremely technical and so I switched to just Animation",
+        "ts": "1541603121.002500",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474985856455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your background?",
+        "ts": "1541603170.002600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473935455746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Digital media technology - Covering everything from html\/python\/games and film production",
+        "ts": "1541604019.002700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/475349817382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I ended up specialising in Visual effects.",
+        "ts": "1541604065.002800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/475002254759_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Feel free to check out my imdb page: <https:\/\/www.imdb.com\/name\/nm5741545\/>",
+        "ts": "1541604097.002900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473780321332_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "IMDb",
+                "title": "Christopher Lucas Maw",
+                "title_link": "https:\/\/www.imdb.com\/name\/nm5741545\/",
+                "text": "Christopher Lucas Maw, Visual Effects: World War Z",
+                "fallback": "IMDb: Christopher Lucas Maw",
+                "from_url": "https:\/\/www.imdb.com\/name\/nm5741545\/",
+                "thumb_url": "https:\/\/m.media-amazon.com\/images\/G\/01\/imdb\/images\/logos\/imdb_fb_logo-1730868325._CB483414249_.png",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/m.media-amazon.com\/images\/G\/01\/imdb\/images\/desktop-favicon-2165806970._CB484110913_.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.imdb.com\/name\/nm5741545\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "wow that is very impressive!",
+        "ts": "1541604209.003100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473215802944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As a visual effects compositor, I am the last person to touch a \"shot\".  When I finish it is what you still in the cinema",
+        "ts": "1541604228.003200",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473852147475_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "see **",
+        "ts": "1541604240.003300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/475353608406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats. Many hours of hard work",
+        "ts": "1541604274.003400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/475354241174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This defiantly isnt a industry for the weak. So be prepared to work :slightly_smiling_face:",
+        "ts": "1541604313.003500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473783990820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How many hours a week do you work?",
+        "ts": "1541604354.003600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473784769060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Normally it isnt bad 40 hours, but towards deadlines you can work up to 60-70 hours",
+        "ts": "1541604402.003700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473956935074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "unfortunately this industry isn't 9-5",
+        "ts": "1541604451.003800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474157529701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but can pay $$$ very well.",
+        "ts": "1541604459.003900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473786646004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah, I work hard but I'm prone to procrastinating. And because of it last year I spent 24 hours in the library getting an assignment done. I do not intend to repeat that :smile:",
+        "ts": "1541604705.004000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474162214085_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you worked on any video games?",
+        "ts": "1541604731.004100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473861103043_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Only video games I've made myself during Uni",
+        "ts": "1541604889.004200",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473794487396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Video games have a much slower pace than film",
+        "ts": "1541604905.004300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/475365527414_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Usually film last up to 6 months",
+        "ts": "1541604916.004400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/475365720966_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can defeat procrastinating, that will instantly make you go far in life",
+        "ts": "1541604953.004500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473795604948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Easier said than done :smile:",
+        "ts": "1541604996.004600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473362895585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have some experience in the Industry, I worked at a small animation company called Flickerpix in Belfast, doing After Effects 2D animation, Stopmotion, and Rotoscoping. I want to try and get into a bigger company for this summer to get more experience. Do you have any advice on what I should do?",
+        "ts": "1541605138.004700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473798862660_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As a student part time job? or full time employment",
+        "ts": "1541610914.004800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474274489125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, what path in VFX do you want to end up as?",
+        "ts": "1541610944.004900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473904030532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "After Effects is rarely used in Film, and 2d animation comes under a motion designer.",
+        "ts": "1541610987.005000",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473471245025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can explain your long term goal and what you desire, I can show you what path to take",
+        "ts": "1541611012.005100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473974745875_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't know what I want to end up as if I'm perfectly honest. I'm more of an Animator and my strengths are in 2d animation.",
+        "ts": "1541619312.005200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474211044946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My long term goal is to one day own a creative company but that is a long way ahead in the future.",
+        "ts": "1541619604.005300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/474044374292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to do 3D character animation, and just get some general experience in the industry. I live in Ireland but I study in England and I can work in both places. I would like to get a summer internship or something like that so I can be more prepared for my final year at uni and maybe have an idea on what I want to do next :smile:",
+        "ts": "1541619814.005400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473614077457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

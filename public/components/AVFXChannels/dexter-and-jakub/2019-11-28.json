@@ -1,0 +1,277 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, I was thinking whether the getting a degree and going to University to complete a Business degree would be useful and how could that help me to progress further. More specifically what could I do after I get it?",
+        "ts": "1574934272.009500",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852613342480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FR36Q9X5K",
+                "created": 1574971573,
+                "timestamp": 1574971573,
+                "name": "CV.docx",
+                "title": "CV",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "filetype": "docx",
+                "pretty_type": "Word Document",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 14636,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FR36Q9X5K\/cv.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FR36Q9X5K\/download\/cv.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FR36Q9X5K\/cv.docx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FR36Q9X5K-30f6c897a0",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1574971573.009600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding university....that's a good question!",
+        "ts": "1575007218.009900",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/853061903108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But a hard one to answer and I don't think there is a straight forward one.",
+        "ts": "1575007240.010000",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/840736814706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nowadays I don't think it's completely _necessary_ to go to university as there are apprenticeships that can give you similar qualifications without the debt but also you get work experience. The other advantage from this route can be that you get a rotational apprenticeship where you can try out different roles if you're not sure where you want to focus.",
+        "ts": "1575007472.010100",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/842053446499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you got a good apprenticeship at a reputable company then it could be just as useful as going to university I.e the doors it opens",
+        "ts": "1575007534.010200",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/845591682017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's my personal opinion on this though and it's not always easy finding a good apprenticeship",
+        "ts": "1575007564.010300",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855381853063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I went to university and did business studies",
+        "ts": "1575007582.010400",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/853532465605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well it was called Business Administration",
+        "ts": "1575007597.010500",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/853523063712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And this was at the University if Bath",
+        "ts": "1575007612.010600",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/853523219872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me going to this university which was\/is considered high calibre for its business graduates helped me get a lot of the jobs I've had today",
+        "ts": "1575007675.010700",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855731503846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I started at Ernst &amp; Young in their Audit division and got a chartered accountant qualification.",
+        "ts": "1575007731.010800",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855383467655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However arguably I could have also got this job at Ernst &amp; Young via one of their apprenticeship routes",
+        "ts": "1575007781.010900",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855732492934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But they only take small number of apprentices each year whereas they take  huge number of university graduates every year",
+        "ts": "1575007832.011000",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/845594554641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So you see I think University just gives you more options \/ opportunities\/ chances sometimes",
+        "ts": "1575007861.011100",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/853068468084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But in the business route u wouldn't say its _necessary_ always",
+        "ts": "1575007901.011200",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855385108263_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To be sure that university is or isn't necessary you should check the roles of big companies that you like the look of or go on <http:\/\/prospects.ac.uk|prospects.ac.uk> and check what is required to secure one of these roles I.e. is A-levels enough and what grades you need etc",
+        "ts": "1575008001.011300",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/840744360146_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope that's helpful! Does that all make sense?",
+        "ts": "1575008018.011400",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/845596331393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":sweat_smile:",
+        "ts": "1575008029.011500",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/842058824963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not so sure on customer services type roles but I think for marketing\/advertising it might be helpful to get a degree in that specialism. The degree would be Marketing focused though rather than general and broader business",
+        "ts": "1575008178.011600",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/840746077298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll also take a look at your cv when I get a moment in the next couple of days if that works for you? :grin:",
+        "ts": "1575008246.011700",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/853529283168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My thoughts would be that now would be a good time to try customer services as a weekend job to see if you like it",
+        "ts": "1575008418.011800",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can imagine it would be very difficult to get a marketing type role as a weekend job especially with no experience in it. Unless of course you have a contact who can help somehow",
+        "ts": "1575008503.011900",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855739388518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

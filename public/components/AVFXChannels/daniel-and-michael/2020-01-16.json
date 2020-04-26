@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s great, thank you! It’s been quite a mad week for me almost out of the blue. The VFX supervisor for the external short film reached out to the people who originally agreed to work on it and asked who was still keen. He has a temp deadline for today so that it can be entered into a film festival. A few people and I agreed to help out. I was originally assigned three shots but at this point I’ve delivered nine. I’ve pretty much been the lead compositor at Escape for the film and now I’m being officially credited that way! The supervisor’s also said he couldn’t have done it without me and asked if I could work for him on his next projects too! I’ve worked really hard on the film so it’s really nice to see that recognised.\n\nCongratulations on Broken Toy being a finalist in the Prisma awards! How has your week been?",
+        "ts": "1579219469.000500",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/898793475155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

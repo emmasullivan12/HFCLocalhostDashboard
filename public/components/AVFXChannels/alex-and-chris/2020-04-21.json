@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alex, this reel came up on my LinkedIn today and I think it basically encompasses what I want to do! I know his work and level is much more advanced and experienced than my own will be for a long time yet, but I think it's essentially the job I want to aim for! Environment \/ CG Generalist. Do you think there's any specific skills I really need to get across in my reel to better my chances of finding a junior role like this? Or is it still case of creating 2 or 3 really high quality environments which kind of show all of the key skills?",
+        "ts": "1587472420.003000",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075988848994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/392666284>",
+        "ts": "1587472425.003100",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1099830592800_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Showreel Spring 2020",
+                "title_link": "https:\/\/vimeo.com\/392666284",
+                "author_name": "Werner Reifberger",
+                "author_link": "https:\/\/vimeo.com\/reifberger",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/877596727_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Footage from Black Panther, Captain Marvel, Babylon Berlin, Avengers: Infinity War\/Endgame, SEE, Free Guy and Shazam!\nShot Breakdown:\n\nBlack Panther - Marvel (Tools used: Maya, Zbrush, Mari, Houdini)\n00:03 Blockout front hero building, detailing of back throne room building, snow sculpting on all rooftop hero buildings, back\/mid ground environment and snow sculpting, rock detailing under hero buildings, support tree sculpting under front hero building\n00:11 Digi double LIDAR clean up, sculpting\/modelling of 3 characters and texturing of the right warrior.\n00:15 snow and rock sculpting on the healing hut left side, path\/stonewall modelling\/sculpting on the right side\n\nCaptain Marvel - Marvel (Tools used: Maya, Zbrush, Mari, Houdini, PTGui, Substance Designer, Speedtree, Photoshop)\n00:20 Blockout “Lower Halla” left side and roof, detail modelling of train tracks,multiple buildings blockout and detail modeling. Kitbash created for panels, pillars and other props. SyFy procedural texture creation with Substance Designer.\n00:27 “Upper Halla” Several crowd spaceships from scratch\/start to finish including texturing and lookdef. Concept Art\/blockout of multiple buildings. Several buildings from start to finish including blockout, layout and lookdef tasks. HDR stitching.\n\nAvengers: Infinity War - Marvel (Tools used: Maya, Zbrush, Mari, Houdini, PTGui, Substance Designer, Speedtree, Photoshop)\n00:40 Inlet sculpting of case. Texture map creation for MARI. (AO, cavity, dirt maps)\n00:45 Layout and environment sculpting. Various tree variants with Speedtree created. HDR stitching. Hut\/fence modelling.\n00:55 Complete Infinity Car and ground modelling. Nick Fury digi-double LIDAR cleanup. Cloth\/hand sculpting and texturing. Pager parts modelling and street ground sculpting.\n\nAvengers: Endgame - Marvel (Tools used: Maya)\n01:13 Inlet parts modeling of rescue helmet-\n\nSEE - Apple TV + (Tools used: Maya, Zbrush)\n01:23 Modeling of the highway overpass. \n\nFree Guy - Fox Movies (Tools used: Maya, Zbrush)\n01:37 RPG launcher and Walther PPQ gun modeling start to finish.\n\nBabylon Berlin - SKY\/Netflix (Tools used: Maya, Zbrush, Houdini)\n01:46 LIDAR cleanup and set extension modelling of complete 1920s Berlin buildings, responsible for 16 of the 32 houses from start (LIDAR cleanup) to finish (ready for texturing).\n01:52 Lead modelling and layout of airport sequence, environment sculpting, prop modelling.\n\nShazam! - DC (Tools used: Maya, Zbrush, Houdini, Photoshop)\n02:02 Internal techViz of all sequences, asset organisation\/priority ranking for all buildings and crowd vehicles of the city. Part of modelling team for multiple buildings, modelling\/texturing of all crowd vehicles. Several blockout\/layout tasks  and HDR stitching.\n\nDolittle -  Universal Studios (Tools used: Maya, Zbrush, Houdini, Photoshop, Substance Designer\/Painter, Mari)\n02:20 Foreground\/right side environment\/cliff sculpting. Creating a stonewall kitbash for set dressing inlcuding first pass texturing with substance. 02:24 Cliff detailing\/sharpening 02:25 Left side environment\/cliff sculpting. Stonewall set dressing.\n02:27 First pass blockout\/layout and basic camera test of Archipelago sequence based on concept art.\n02:29 Lead sculpting and and complete asset organisation of final cave sequence. LIDAR cleanup and split-up into logical set pieces. Upresing and watertight mesh creation for FX department. Flow and cavity map creation for FX driven cave glow effect. Set extension and most rocks modeling\/sculpting including first pass texturing in Mari\/Substance.\n\nBlack Panther - Marvel (Tools used: Maya, Zbrush, Houdini)\n02:40 detail modelling of hero throne room building, complete rock modelling\/detailing on the left side including snow sculpting, sculpting of all supporting trees under buildings, snow sculpting on all roofs, additional detailing on some other buildings.",
+                "fallback": "Vimeo Video: Showreel Spring 2020",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/392666284?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Showreel Spring 2020\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/392666284",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/392666284"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587472425.000000"
+        }
+    }
+]

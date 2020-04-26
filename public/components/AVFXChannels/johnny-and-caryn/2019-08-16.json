@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the info, I look forwards to your feedback regarding my portfolio. For some context, in case they didn't tell you when I was assigned to you, but my initial training is with game environments, but I believe there is some cross over with other industries.",
+        "ts": "1565953633.002200",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/728647411648_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes definitely! Just need to leave this office ASAP ! I will come back to you , but just drop questions as we go , don’t worry how silly they may seam , have a great weekend ",
+        "ts": "1565981826.002300",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/717743306403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks, have a great weekend too, I'll definitely drop any questions I have",
+        "ts": "1565989156.002400",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/731176828487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

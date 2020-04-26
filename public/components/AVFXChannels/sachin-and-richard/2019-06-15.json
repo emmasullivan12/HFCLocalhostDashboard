@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh gosh, mango season! That sounds amazing, I love mangoes :joy: :joy: I'm currently abroad too",
+        "ts": "1560658661.001000",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-15\/660126407505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "back in Hong Kong for just a little over a week and I'm doing pretty much the same",
+        "ts": "1560658676.001100",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-15\/668332268567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "eating most of the time over here",
+        "ts": "1560658682.001200",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-15\/668623101734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

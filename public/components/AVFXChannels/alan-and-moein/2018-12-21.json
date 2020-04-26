@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah great stuff. Maybe adding something really futuristic? And you could even work to change the feel of the piece by changing the sky? These are common matte painting tasks ",
+        "ts": "1545422890.000100",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-21\/509644486753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

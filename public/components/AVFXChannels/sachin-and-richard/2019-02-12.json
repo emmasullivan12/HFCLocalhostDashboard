@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "alright sachin, it would be 8~10 questions",
+        "ts": "1549967847.000100",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/548589301762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mostly about what it's like in the industry",
+        "ts": "1549967853.000200",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/547854523456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "their personal experience",
+        "ts": "1549967857.000300",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/550011796934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "skillset required etc.",
+        "ts": "1549967865.000400",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/547985116913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "tough aspects throughout work life",
+        "ts": "1549967877.000500",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/547854836400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it would be great if I could talk to a current compositor but if I recall correctly, you used to be one too right?",
+        "ts": "1549967907.000600",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/548432112820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also, one of my friends is looking for a simulation\/fx artist to talk to if that's possible we would really appreciate it",
+        "ts": "1549967952.000700",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/547986245857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

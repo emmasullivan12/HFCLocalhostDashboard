@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At least that limits things down a bit, but it's clear there are two areas you enjoy and enjoyment is the starting point. If there is anything you want to know about compositing or 2D VFX I can give you some advice and pointers. Do you have any examples of work, a showreel or anything you are working on?",
+        "ts": "1581970519.002700",
+        "username": "Fraser Murdoch (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/956216213237_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

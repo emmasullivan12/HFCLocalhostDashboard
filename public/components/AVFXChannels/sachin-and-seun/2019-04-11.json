@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I am ding good thanks, glad to hear you are great.  I'm not currently studying, I work full time as an IT Desktop Support Analyst at a school, but having said that I am currently teaching myself how to code and develop mobile apps.  I also intend to get more creative and understand more about animation and design.",
+        "ts": "1555016548.000600",
+        "username": "Seun Olaniyi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/605920051957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

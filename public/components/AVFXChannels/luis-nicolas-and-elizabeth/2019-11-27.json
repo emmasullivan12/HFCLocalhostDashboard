@@ -1,0 +1,150 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that's so cool! \n\nThis brief is for one of my units this term at uni - it's got quite a wide scope:\n'You have been provided with a rune stone that requires some magical effects, the client would like to see 2 unique look developments\/ concepts.'",
+        "ts": "1574865341.002500",
+        "username": "Elizabeth Thomas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838682633170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok. There's a few things I can tell you that might help and are related to how we do things in actual films with clients. I like to think that effects are always natural forces, and this natural forces always have an unnatural component to them that is what makes the thing cinematic. Let's say there is a wide range of how unnatural it is, from a Michael bay explosion that is pretty much an exaggerated thing that actually exists, to outright magic.",
+        "ts": "1574865629.002600",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/840004895155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But let's say, whatever it is, it will be grounded in reality, so it's important to start by gathering references of the look you want to achieve",
+        "ts": "1574865695.002700",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853333864215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And it's nice if you put them as small \"picture in picture\" inserts in  your flipbooks for presentation purposes",
+        "ts": "1574865753.002800",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838693759426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Think that you will pick natural ingredients to make an unnatural effect, so you want to have your ingredients at hand and never miss the different variables that make them look Cool, try to decipher why you like a particular reference image and be sure your effect shares those characteristics.",
+        "ts": "1574865923.002900",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851481091792_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The second thing is that clients love wedges and iteration. So it's always nice to pick certain variables that give the effect character and try a couple of different intensities thinking of how the change in look could serve different purposes.",
+        "ts": "1574866030.003000",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851494060949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for direct feedback on the file you showed me, the first thing that comes to mind, is to add more scale variation to the noises you're using to drive things. As in maybe using a low frequency noise, a high frequency noise and blending them together using a medium frequency noise.",
+        "ts": "1574866207.003100",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/843558557905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This always helps things look a bit more organic and feels kinda rewarding to the eye.",
+        "ts": "1574866249.003200",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853698012838_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope it helps, let me know if you want more specific feedback on this or that.",
+        "ts": "1574866333.003300",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853351704855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(this book has some nice explanations on composition in terms of graphic design but it might come in handy when thinking about this things <https:\/\/www.goodreads.com\/book\/show\/2211399.Graphic_Design|https:\/\/www.goodreads.com\/book\/show\/2211399.Graphic_Design> )",
+        "ts": "1574866500.003400",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838714746722_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Graphic Design",
+                "title_link": "https:\/\/www.goodreads.com\/book\/show\/2211399.Graphic_Design",
+                "text": "How do designers get ideas? Many spend their time searching for clever combinations of forms, fonts, and colors inside thedesign annuals ...",
+                "fallback": "Graphic Design",
+                "thumb_url": "https:\/\/i.gr-assets.com\/images\/S\/compressed.photo.goodreads.com\/books\/1348622667i\/2211399._UY630_SR1200,630_.jpg",
+                "from_url": "https:\/\/www.goodreads.com\/book\/show\/2211399.Graphic_Design",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/www.goodreads.com\/favicon.ico",
+                "service_name": "goodreads.com",
+                "id": 1,
+                "original_url": "https:\/\/www.goodreads.com\/book\/show\/2211399.Graphic_Design"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's another thing I can think of and it's that depending on the sequence, the effect might need to be seen close-up, or dar away and still have a nice read, so it's always a good idea to provide variations on that kind of scaling. And show them it will readily adapt to different shots.",
+        "ts": "1574866850.003600",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838725789986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looks cool tho, looking forward to see where you take it :)",
+        "ts": "1574866938.003700",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/840043237875_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

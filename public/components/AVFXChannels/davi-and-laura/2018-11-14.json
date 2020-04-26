@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. Hope you are well. Can I help any with your application? \nAlso we have some other projects to start if you can? ",
+        "ts": "1542222278.009500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/481217958918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

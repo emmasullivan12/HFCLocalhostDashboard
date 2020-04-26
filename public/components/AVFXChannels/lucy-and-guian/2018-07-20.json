@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "good afternoon Lucy I was wondering what part of creative media you specialise in.",
+        "ts": "1532084336.000122",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-20\/403419389590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian.  I work for a VFX company, but over the years I've worked in post production, physical special effects and visual effects software.",
+        "ts": "1532085877.000079",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-20\/401395088096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What area are you looking to get into?",
+        "ts": "1532085888.000097",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-20\/401866493364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2d animation mainly storyboarding and initial character\/ story concept design ",
+        "ts": "1532101690.000092",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-20\/401565563264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what is a typical work day like for you?",
+        "ts": "1532111675.000416",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-20\/402260378115_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

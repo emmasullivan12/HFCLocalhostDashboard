@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emma, yes I saw that as well. I had a look at that, but I don't have a portfolio as I have no experience in the industry or any experience using any software",
+        "ts": "1580740561.000800",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/934060443557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

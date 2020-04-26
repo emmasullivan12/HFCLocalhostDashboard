@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Holly,\nI can tell you straight away that where I learned the most was working, with both colleagues and supervisors\/directors. I attended at different times two 1-year animation courses, one of them being the first year of a uni I dropped, and Although the variety of subjects and opportunity to try things out are great, on the practical side there are a lot of methods and ways they teach that don't match with a work environment. On the other side I do understand courses are great if you're really beginning and still need to figure out what type of animation or even what role in the field you would like to work with.",
+        "ts": "1580807468.002500",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/925367698737_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, that's reassuring. The reason I'm leaning towards doing a course is just so that I can talk to people about things and get some critique since I don't really know if what I'm doing is heading in the right direction haha. Since I'm slowly trying to work this out- what kind of method did you use to out your portfolio together?",
+        "ts": "1580833540.002600",
+        "username": "Holly Raidl (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935762637812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

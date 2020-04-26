@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, yeh prob best to work at a few places. Each has it's own character. Commercials can be quick turn around but in film you could work 3 months on a shot. Our goal is to work on drama, so Witcher type stuff but we've done commercials and, being in Bristol, would happily take on some natural history of docos.",
+        "ts": "1583184089.000500",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/968064760401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

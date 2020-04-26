@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey can you email me the file?",
+        "ts": "1585918458.003300",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046295855478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As a pdf :) ",
+        "ts": "1585918463.003400",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046295930486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<mailto:reblairanimation@gmail.com|reblairanimation@gmail.com>",
+        "ts": "1585918476.003500",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1044969072183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep will do ",
+        "ts": "1585920630.003600",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1040201908449_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

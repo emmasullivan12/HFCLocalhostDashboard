@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hopefully your university gets something setup! \n\nI have set up a google slides to help explain the metal!",
+        "ts": "1585602246.000500",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036258986180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hoping this will be a bit more helpful and you can revisit it :) ",
+        "ts": "1585602267.000600",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1026723775809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/docs.google.com\/presentation\/d\/1doPwmfs5ERBwyjmBXScYUFxGgc5pVEq7lXw7iXYcW94\/edit?usp=sharing>",
+        "ts": "1585602315.000700",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1038633939510_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amazing thank you ! I’ll check that out tomorrow :)",
+        "ts": "1585605492.000800",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036859515472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

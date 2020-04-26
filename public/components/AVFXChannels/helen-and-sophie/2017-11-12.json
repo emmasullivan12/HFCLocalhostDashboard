@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please you’re an angel, And that diagram is awesome !!!",
+        "ts": "1510521650.000070",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/270525775681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And radiographer",
+        "ts": "1510521655.000032",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/271090517316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

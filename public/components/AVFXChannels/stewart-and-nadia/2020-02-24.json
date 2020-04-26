@@ -1,0 +1,109 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1582570968.000200",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1582570968.000400",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1582570995.000500",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-25\" to \"stewart-and-nadia\"",
+        "old_name": "z-shared-25",
+        "name": "stewart-and-nadia"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1582571222.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1582571229.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@stewarta has joined the channel_",
+        "ts": "1582571493.000800",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/955189237907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@nadiamack1607 has joined the channel_",
+        "ts": "1582571509.000900",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/966676095397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nadia, please meet Stewart your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1582571598.001000",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/956543966849_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1582571607.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/966678967989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1582571611.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/966206451924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Stewart! I'm a first year animation student with a speciality in 2D tradigital and an interest in 3D modelling. My ultimate job goal is showrunning somewhere in LA, but it's a bit of a long shot. I basically just want to know the industry from the inside and how best to approach it for my purposes :)))))",
+        "ts": "1582572758.001300",
+        "username": "Nadia Mackenzie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/955228077427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

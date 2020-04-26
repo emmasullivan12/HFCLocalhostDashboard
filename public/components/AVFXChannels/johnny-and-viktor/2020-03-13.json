@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, hope work it going well! Sorry to hear about having to extend the F9 release date",
+        "ts": "1584101716.005900",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1000313654439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Work it’s still rolling but the virus will have a strong impact on the industry as it may shape the next year and the way to do things .\nI should start to ease out of work in the next weeks \n",
+        "ts": "1584133055.006000",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999329743316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, the virus couldnt have come at a worse time",
+        "ts": "1584133725.006100",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999827757957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

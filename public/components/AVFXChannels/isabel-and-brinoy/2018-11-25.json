@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi so sorry for late reply! !",
+        "ts": "1543184293.000200",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486812268752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was actually really busy with my mock exams and prefect duties. Last  two weeks were so stressful",
+        "ts": "1543184356.000300",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487447915795_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am alright. Thank you. How are you doing at your work??",
+        "ts": "1543184395.000400",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487750521253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

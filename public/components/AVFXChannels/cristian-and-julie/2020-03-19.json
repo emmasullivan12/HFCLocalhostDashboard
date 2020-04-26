@@ -1,0 +1,304 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584618734.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584618734.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e735cedcca2270004e845db|this link> with other teams to invite them in it_",
+        "ts": "1584618734.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584619142.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584619142.000900",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1584619930.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-25\" to \"christian-and-julie\"",
+        "old_name": "z-shared-25",
+        "name": "christian-and-julie"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1584619973.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1584619978.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1584620169.001300",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"christian-and-julie\" to \"cristian-and-julie\"",
+        "old_name": "christian-and-julie",
+        "name": "cristian-and-julie"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@juliezhang.design has joined the channel_",
+        "ts": "1584620185.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011594313765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@info034 has joined the channel_",
+        "ts": "1584620198.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011120778068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Julie, please meet Cristian your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1584620216.001600",
+        "username": "Dexter Boyce (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011576729184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1584620224.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1001510779889_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1584620239.001800",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011577555056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Cristian, I am Julie a Junior at studying Computer Arts, Computer Animation, and VFX. I enjoy all aspects of the 3D pipeline. I have been focused on modeling, lighting, and texturing so far. I am hoping to expand my skill set and have taken Houdini, Character FX, and Advanced Rigging this year. Next year I am signed up for Advanced Facial Rigging, and Texturing courses. I’m hoping to try to focus more on Rigging if those classes go well!  So far I really enjoy it. ",
+        "ts": "1584664379.001900",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1000765357522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/julie-zhang.com|http:\/\/julie-zhang.com> &lt;This is my portfolio. I would love any critique.\n\nAny advice would also be incredible. What do studios look for in a demo reel? What programs could I benefit from studying? What are some good resources for improving my skillset? So much!!",
+        "ts": "1584664772.002000",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1000773974450_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Julie Zhang",
+                "title_link": "http:\/\/julie-zhang.com\/",
+                "text": "Use this space to add a brief description of your project.",
+                "fallback": "Julie Zhang",
+                "thumb_url": "http:\/\/static1.squarespace.com\/static\/5d9bff4f944db65b80d13fb8\/t\/5d9c0160d3bb4424f4ee5704\/1578816502734\/Screen+Shot+2018-12-28+at+7.25.05+PM.png?format=1500w",
+                "from_url": "http:\/\/julie-zhang.com\/",
+                "thumb_width": 260,
+                "thumb_height": 258,
+                "service_icon": "https:\/\/assets.squarespace.com\/universal\/default-favicon.ico",
+                "service_name": "julie-zhang.com",
+                "id": 1,
+                "original_url": "http:\/\/julie-zhang.com"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584664773.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Julia,\nNice to meet you.\nThis is Cristian, CG Supervisor at MillFilm Montreal. I’m working the industry since almost 17 years and passionate about the CG since more than 25 ;-)\nI’ve a generalist background so I’m pretty familiar with many aspect of the pipeline both in small and big studios.",
+        "ts": "1584664818.002200",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1000774960226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my CV:\n\n<https:\/\/drive.google.com\/file\/d\/1iBZqLrT0byCLPfXe9Dk8efP-oPjrKWm-\/view?usp=drivesdk|https:\/\/drive.google.com\/file\/d\/1iBZqLrT0byCLPfXe9Dk8efP-oPjrKWm-\/view?usp=drivesdk>",
+        "ts": "1584664884.002300",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1003497623569_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can find all my info and my details and the links to all my public channels ",
+        "ts": "1584664922.002400",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013563586208_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Feel free to ask any question related to it",
+        "ts": "1584664958.002500",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013582994837_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll have a look at your material and I’ll get back to you ASAP ",
+        "ts": "1584664985.002600",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1000778524418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Cristian,",
+        "ts": "1584665322.002700",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013571851952_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have requested access to the link you sent! Thank you so much for the info.",
+        "ts": "1584665403.002800",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013573442672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It should be active now",
+        "ts": "1584665784.002900",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1000794190690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank You!",
+        "ts": "1584665887.003000",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1015792810134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "WelcoMe",
+        "ts": "1584666458.003100",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013594181120_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I looked over your resume and website and it's amazing! I was wondering, since you have such a variety of industries from gaming, advertisement and film, what is it like to switch between the different pipelines and programs. Since one thing I am worried about is how to continue improving and learning even if I am not able to take certain classes in college. Do you get training in the companies, learn the different pipelines and rendering engines on the job etc?",
+        "ts": "1584668605.003200",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1000844801506_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or is it heavy self study?",
+        "ts": "1584668643.003300",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1003566732641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

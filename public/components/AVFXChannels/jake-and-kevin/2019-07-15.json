@@ -1,0 +1,115 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FLE327H9S",
+                "created": 1563188991,
+                "timestamp": 1563188991,
+                "name": "REVOLVE_FINAL_OUTLASTER_720.mp4",
+                "title": "REVOLVE FINAL OUTLASTER 720",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 54763244,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLE327H9S\/revolve_final_outlaster_720.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLE327H9S\/download\/revolve_final_outlaster_720.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FLE327H9S\/revolve_final_outlaster_720.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FLE327H9S-f14a2b0013",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1563188994.003300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for sending these man I'll check them out later today. I've got some time tomorrow after work if you want to meet then somewhere near Theobalds Road? I finish at 6:30pm",
+        "ts": "1563204084.003600",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/697000685430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes i can do that, do want to exchange numbers?",
+        "ts": "1563207467.003700",
+        "username": "Kevin Ditawole (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/688585954385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as we have not seen each other in person",
+        "ts": "1563207691.003800",
+        "username": "Kevin Ditawole (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/683539587651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure thing, my number is 07739181290",
+        "ts": "1563209029.003900",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/694979633285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool my one is  07885607196",
+        "ts": "1563212673.004000",
+        "username": "Kevin Ditawole (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/683630342610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you use WhatsApp?",
+        "ts": "1563215411.004100",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/688754546833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes i do use whatsapp",
+        "ts": "1563219936.004200",
+        "username": "Kevin Ditawole (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/683777123682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

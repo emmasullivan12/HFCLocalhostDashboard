@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Kavita, This is Isabel- hope you are well. Apologies for the delay but work was not behaving itself . As I understand you want to go into law- not sure if you know but I have a law degree but work in finance. Would you like to tell me why you want to go in law and what you want to become? Very much looking forwadr to hearing from you, very kind regards isabel",
+        "ts": "1538424974.000100",
+        "username": "Isabel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446809045299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

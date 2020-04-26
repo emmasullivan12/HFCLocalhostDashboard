@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya, hope you are well, sorry for the lack of communication - I've just finished working on a group project then launched into another with little to no break. The VR project is finished by the way and handed in - I can send you the cinematic when I get time. We have just started another group project, it has just started so it's alot of preproduction. How is working at Blue zoo? Also how is ray traced rending in UE4 going ? Are you using any custom tools to improve workflow?",
+        "ts": "1582569862.000100",
+        "username": "Rasheed Abdul (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/968812571382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

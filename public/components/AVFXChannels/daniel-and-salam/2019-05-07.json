@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great to hear from you Salam ! \nI was worried when I got into games and Vfx about the working hours etc. And I think it's healthy to have that worrying , but when you are in it it doesn't feel that bad. And it's in your control , no one can force you to work too many hours if you don't want to. \nIt does depend on where you work and what part of the project you are in , also what job you do in the chain ( comp , editorial , production and audio mostly need to wait for other teams to finish before they can finish so they tend to get hit by the late nights and weekends.\nThere are a lot of people who choose to work late because they want to sleep in , at FS these people get free dinner :) so even though they appear to work loads they are not doing much more than others.\nMore jr people think they need to work really long hours to impress and progress , but I know lots of senior managers who see the person working late as being someone who doesn't work efficiently . And setting expectations that others need to do the same , which can make these people working long hours unpopular ;).\nThe industry we are in , we don't save any lives , so we don't need to stress too much.\nIf you work hard and focus during the day you should not need to crunch much. \nAnd it's important you have a life too.",
+        "ts": "1557219645.000300",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-07\/630387917510_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope that helps.",
+        "ts": "1557219668.000400",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-07\/616796021458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for such a detailed answer, that really explains a lot. When I was at FS, the recruitment officer mentioned that a very last minute change had to be made on a certain film 3 months before the release date. She said that most people who took all nighters etc took a couple months off of work. Isn't it a bit worrying to not have a regular source of income when you're working in short bursts like that.",
+        "ts": "1557245053.000500",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-07\/628670099840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "?*",
+        "ts": "1557245058.000600",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-07\/628670225264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

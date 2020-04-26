@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes. I have to switch between two sets of patches because of the perspective change. Sorry about radio silence btw - work.",
+        "ts": "1582202192.000600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/949629585699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey no worries, quite busy here too. When I had 2 patches I would probably have switch between the 2 patches at the point where they merge over B spline, without actually seeing the patches in your script though it would be hard to say",
+        "ts": "1582202459.000700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/950979793713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just looked at the shot and want to quickly check workflow again so I get it right\n1 - log to Lin denoise (technique I picked up from Josh Parks),\n2 - should I undistort a shot like this\n3 - how do I track a shot that goes in and out of focus... with Nuke? Not something I've every done before. Or is that something I'm just going to have to figure out lol!",
+        "ts": "1582202599.000800",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/948318053522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "753 frames of exr joy - I hope I know what I've let myself in for! Off to work so excuse no replies for a bit. Above not urgent! Cheers.",
+        "ts": "1582206095.000900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/949718514083_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the late reply today. large file size for that, hope your computer is okay for that. In terms of denoise, that can help if you are using Neatvideo denoise, but standard I dont think it does much, and doesn't work all the time. A good video to watch is Tony Lyons video on denoise (if you have the time watch all his videos, best ones I've found to learn with, retaught myself keying with his videos in film school when our tutor taught us very quickly and went right over my head).",
+        "ts": "1582224395.001000",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/961350255220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Distortion mainly applies to shots you are doing with cg or maybe projections, but this shot doesn't have any camera movement, so you might need to do a 2d track just to be safe, but distortion doesn't apply here I dont think. Also distortion mainly applies to the edges of the shot, and this isn't that close to the edge from memory.",
+        "ts": "1582224505.001100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/963669765223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of tracking in and out of focus, you wont need a track for this particular shot, when you adjust the defocus with zdefocus to match what is going on in the shot this should match you wont need to track. Sometimes the scale will change when the defocus changes, I've only encountered this once, I think they say it's called breathing from memory.",
+        "ts": "1582224837.001200",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/950349988675_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.google.com\/search?q=film+lens+breathing&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-e>",
+        "ts": "1582224840.001300",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/963680220039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I fudged this once simply by animating a transform in time with the zdefocus I was using",
+        "ts": "1582224894.001400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/951696931249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All going well thank you",
+        "ts": "1560163242.000200",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/648764140963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you getting on? What have you been up to?",
+        "ts": "1560163253.000300",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/648759288834_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

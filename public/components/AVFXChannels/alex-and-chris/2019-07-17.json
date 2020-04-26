@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, no worries :slightly_smiling_face:\n\nOh yeah I know Hugo, he came to platige once, we gave him a tour :slightly_smiling_face: Did he teach you something?\n\nThat's the good plan, it's not much of the summer left so you need to be super efficient about it. In my opinion the main goal of your env has to be making it as good as you can. For that you need a great concept(don't do the concept yourself please :slightly_smiling_face: , look  for the great one on the artstation). Portfolio wise it's better to have one stunning piece rather than 4-5 average ones. What type of env do you want to do? I can help you with setting the quality bar and give feedback along the way if you want.  Also I can guide you with python basics but that would require you to put on hold env I guess, so if I were you I would pick one route and stuck to it till the end of summer  at least",
+        "ts": "1563362923.002200",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/697180247056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also if you are thinking about working in cinematics you would need to move somewhere first, like eastern europe or France",
+        "ts": "1563362973.002300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/690842119217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay nice. Have you done any games jams or development competitions?",
+        "ts": "1584354819.002200",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1001934529428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I took part in a few game jams last year but i haven't looked into many this year since I'm putting my focus on learning C# from a base level since I feel that is the main problem I'm facing when it comes to working on my own.",
+        "ts": "1584355049.002300",
+        "username": "Thomas Ackland (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/990929719475_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, what resources are you using for your learning?",
+        "ts": "1584355222.002400",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/990935199939_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did find a Microsoft learning website (ill have to see if i can find that again if i tabbed out of it) but im utilising some free months with Skillshare to see if their courses are up to snuff, as well as some basic YouTube tutorials where you make games like tic-tac-toe outside of unity, things like that.",
+        "ts": "1584355488.002500",
+        "username": "Thomas Ackland (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004621599110_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Got any good recommendations?",
+        "ts": "1584355508.002600",
+        "username": "Thomas Ackland (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004622330198_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep, this <http:\/\/www.csharpcourse.com\/> is a free book written by the guy who taught me csharp and is a microsoft mvp, definitely a great starting place :smile:",
+        "ts": "1584355655.002700",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004627098294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oooo very nice! Ill definitely look at that after work today, how're you by the way? Bit of radio silence had me a lil worried :)",
+        "ts": "1584355718.002800",
+        "username": "Thomas Ackland (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004629100102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm good don't worry, my work ramps up and down inconsistently so sometimes I'll be away for a week or so, but don't worry about messaging if you need anything as I'll jump in wHen I can",
+        "ts": "1584359859.002900",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1002568865125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Grand! Can imagine it can get hectic, especially lately and having to work from home. I'll just exercise patience then :)",
+        "ts": "1584363783.003000",
+        "username": "Thomas Ackland (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1002720570101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

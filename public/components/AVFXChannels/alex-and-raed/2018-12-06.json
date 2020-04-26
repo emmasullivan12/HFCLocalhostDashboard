@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's still a very long way to the game you have in mind. did you do a tutorial for cocos2d?",
+        "ts": "1544087135.002600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/496214732512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I Have one ready to begin, I am just covering the final steps of console based C++",
+        "ts": "1544112564.002700",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/497513444277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "great",
+        "ts": "1544113406.002800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/497530706821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

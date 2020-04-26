@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Nico, can you do 12 on friday or is it too early to have lunch? ( we have our xmas thing and projection at 3pm in Laval) . Other option, depending on if you are going home for the holidays or not..if you’re working, i could also meet you for lunch next week, let me know what works for you! Take care!",
+        "ts": "1576646196.000100",
+        "username": "Anne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/867866963217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

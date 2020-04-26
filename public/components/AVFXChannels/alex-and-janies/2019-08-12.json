@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah okay.",
+        "ts": "1565615325.002000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/723111834324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "did you check if that would be okay or if you need to run it on a phone?",
+        "ts": "1565615359.002100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/723576372000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I think it should be.. \nWe didn't get any kind of brief",
+        "ts": "1565616642.002200",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/725754618342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it should be fine as long as I have a good enough enough problem for it",
+        "ts": "1565616673.002300",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/725755286006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As in I have to make up and senario with a problem to which my project is a solution to",
+        "ts": "1565616777.002400",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/723604067440_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still need to think of one tho.. any ideas?",
+        "ts": "1565616799.002500",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/723604499680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

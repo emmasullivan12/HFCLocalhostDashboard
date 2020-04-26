@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you!",
+        "ts": "1585757807.001000",
+        "username": "Michael Leslie Rubin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041395566276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course! Happy to help with any other questions. How are you holding up this week?",
+        "ts": "1585759542.001100",
+        "username": "Olivia Burke (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1031954315345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi  Christian, Hope everything is going well! Im doing a study on the industry and would really appriciate any information you can offer as a case study. A small desbrition of who you are and your current role in the vfx industry? How you started your career in vfx and the pathway you took to progress into the job role. with a timeframe? Finally, what projects you have worked on over your career?\nThanks again for taking the time to help me!",
+        "ts": "1587137220.003700",
+        "username": "tylersimmons (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1076053657924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

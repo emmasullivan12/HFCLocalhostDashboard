@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela, happy new year!",
+        "ts": "1546360360.000100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-01\/514699060933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's it going? I hope your past few weeks have been okay. Have you been able to work on things for your reel much lately?",
+        "ts": "1546363543.000200",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-01\/515909590790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

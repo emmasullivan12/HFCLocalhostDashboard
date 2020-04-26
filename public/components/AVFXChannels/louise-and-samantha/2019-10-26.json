@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lousie, Thank you so much this is all so useful! I shall look into it all and definitely implement it!  For the Black Kite role, would they be most likely wanting a strong cover letter and would they possibly take on graduates? :smile: Thank you so much for all the help btw it  really means a great deal.",
+        "ts": "1572077949.003200",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-26\/812524056166_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I was going to ask this, I have most social media except twitter as I'm not the greatest fan but I was wondering do you think it's worth having for employment opportunities since most seem to have it ?",
+        "ts": "1572078451.003300",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-26\/812526987286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I'm just doing my CV and have a question, do you think it worth putting in the modules I completed so far at university or not since its part of the degree? :sweat_smile:",
+        "ts": "1572082441.003400",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-26\/812549784742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPFKD684A",
+                "created": 1572099684,
+                "timestamp": 1572099684,
+                "name": "SamanthaHumphreysCVcreative2019NEW.pdf",
+                "title": "SamanthaHumphreysCVcreative2019NEW",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 318092,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPFKD684A\/samanthahumphreyscvcreative2019new.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPFKD684A\/download\/samanthahumphreyscvcreative2019new.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPFKD684A-6e0eb89f1c\/samanthahumphreyscvcreative2019new_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPFKD684A\/samanthahumphreyscvcreative2019new.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPFKD684A-2964cf2e48",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1572099685.003500"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds good, it's nice how you still have time to chill even though sometimes work can be intense, has there been a time where you haven't really had time to chill? ",
+        "ts": "1552317290.002600",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/574298540662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you finished uni, were you just applying for jobs with your showreel or your final project if you had one? Was using LinkedIn for example help out to find a job? At the moment Jon hunting is my main concern coz I don't exactly know how to find VFX job roles unless I look at places like LinkedIn or indeed or even specific company websites, did you know a company you were interested in joining before you graduated? ",
+        "ts": "1552320259.002700",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/574000264695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's quite cool how you wanted to be a mentor to help out with people who was in the same situation in the past, every little helps and I am grateful that you can at least reply to me so thank you kindly it really helps even though I'm just bombarding you with questions haha maybe I could buy you a drink sometime? ",
+        "ts": "1552320575.002800",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/573265511029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

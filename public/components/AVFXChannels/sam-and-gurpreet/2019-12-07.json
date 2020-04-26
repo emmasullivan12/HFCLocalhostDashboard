@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad that was helpful :slightly_smiling_face:",
+        "ts": "1575742249.005000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/851355232018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok awesome",
+        "ts": "1575742260.005100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/851355299298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you thinking of applying for some work experience or anything?",
+        "ts": "1575742279.005200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/851355425330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And do you have a CV?",
+        "ts": "1575742289.005300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/866345743366_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy to take a look at it and give you some feedback if that might be useful",
+        "ts": "1575742303.005400",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/856196698657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Please feel free to share it in this chat if so :smile:",
+        "ts": "1575742318.005500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/863680637940_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also agree that if you can get apprenticeships that are worthwhile then they can be a really good option",
+        "ts": "1575742350.005600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/864137237264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are many more apprenticeships around than when I was making career decisions (I've now just turned 30).",
+        "ts": "1575742386.005700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/851356095970_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

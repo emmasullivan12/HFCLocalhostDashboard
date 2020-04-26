@@ -1,0 +1,66 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Rebecca! Very nice to meet you! \nI know that you are very keen on 3d modeling, how nice! How did you learn modeling? Please tell me your journey. \nI will be available to answer you questions in the noon or in the evening. So please do not worry if you dont hear from me between those times.",
+        "ts": "1583400003.001800",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/985096172615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! It great to meet you too. I started modelling 2 years ago on my college course and am now studying 3D animation and modelling at University! I would like to become more competent in hard surface modelling and am currently trying to model an Aston Martin DBS right now for a project.",
+        "ts": "1583430550.001900",
+        "username": "Rebecca Johnson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/974019392161_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was really lucky to get started in Maya with a really great teacher, although he was really stretched thin throughout the school as he was the only 3D teacher there. But I was still able to experiment and learn a lot from my 2 years there :)",
+        "ts": "1583430628.002000",
+        "username": "Rebecca Johnson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/984134389445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.artstation.com\/RebeccaJohnson|https:\/\/www.artstation.com\/RebeccaJohnson> here is a little bit of the work I created while I was there. Still working on polishing my art station and uploading more on there!",
+        "ts": "1583430709.002100",
+        "username": "Rebecca Johnson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/974025081873_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Rebecca Johnson",
+                "title_link": "https:\/\/www.artstation.com\/RebeccaJohnson",
+                "text": "3D Animation Student",
+                "fallback": "ArtStation: Rebecca Johnson",
+                "thumb_url": "https:\/\/cdna.artstation.com\/p\/assets\/videos\/images\/022\/018\/168\/small\/rebecca-johnson-maxresdefault.jpg?1573779223",
+                "from_url": "https:\/\/www.artstation.com\/RebeccaJohnson",
+                "thumb_width": 800,
+                "thumb_height": 450,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-2e7683f7d5b3da27948b5631c13387eb.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/RebeccaJohnson"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583430709.000000"
+        }
+    }
+]

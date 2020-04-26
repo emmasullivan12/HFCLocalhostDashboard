@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey George, it’s great to have you here, good  choice of school too. How are you finding it?\n\nYes Union is a nice place to be in, good for starting artists too.\n",
+        "ts": "1586428053.002100",
+        "username": "Vadim (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1059841885329_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shoot me any questions you have and I’ll be happy to answer to the best of my ability.",
+        "ts": "1586428180.002200",
+        "username": "Vadim (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1059847929601_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

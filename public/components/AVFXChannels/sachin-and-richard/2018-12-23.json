@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard !! Sorry about the delayed reply \nWe were running on a skeleton crew due to the holidays and ended up having to do a lot of firefighting. lol ",
+        "ts": "1545560105.000100",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-23\/512173419990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "An ad for a toothpaste is it ? Nice !! \nThat’s good advice . \nI remember my group project . My team and I got too ambitious and didn’t have safety shots . 3 out of 4 ended up failing cause everything was incomplete. Fortunately my scores in the other modules were good enough to compensate for that . But scary times . \nSo yeah that’s a really good approach :) \nBtw I spoke to a couple of my friends who happen to be comp supervisors \/ leads and told them I might be asking them for some feed back on your comp work soon. ",
+        "ts": "1545560617.000200",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-23\/510037222144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That being said , it’s good that you are learning other aspects of vfx as well . Btw what year of the course are you in atm? I don’t remember if you told me that . \nThis is not your final project is it ? ",
+        "ts": "1545560816.000300",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-23\/511827738967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, sorry for the late response (as always… :stuck_out_tongue:) That water test is looking pretty nice for the reflection. I would say it just needs to maybe be a bit darker but that will come once you get to fully comp it. Another thing would be the shadow but again that will come with time as you develop the CG more. What stuff have you been doing on it recently?",
+        "ts": "1587060517.002600",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052911675207_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha no worries! I get your busy so don't worry!! \n\nYeah I've spent some time on the grading and I've darkened and then blended it in a bit better. I've rendered the shadows out today, that took some time :joy: and rendered the final version of the pier. \n\nJust started working on some smoke before for the background and for the gun fire then u need to put some people in the scene. For that I'm gonna use a CG character just so I can get the movement I want and scatter them around with different animations.",
+        "ts": "1587063859.002700",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067789257714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How would you like to use this in the next few months? Are there any questions I can answer for you, or goals you have that you would like help with? Other things we could do would be code review, or I can share articles I’ve read which I’ve found interesting. What would make this useful for you?",
+        "ts": "1539572002.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-14\/455863583316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

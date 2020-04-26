@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Josh, thank you for accepting me as a mentee.\n\nI had studied fine and arts with focus on painting but during my masters I got interested in 3D modelling and sculpting, particularly character and creature design. I have been practising and developing my skills and knowledge about the softwares but feel like I need a guiding hand to tell me the direction to go to.\n\nI know the basics of Maya and Zbrush but would help tremendously if someone could tell me I'm on the right track. Tricks and techniques to speed up the work flow will help along with advice about how I can improve my designs. If I share my portfolio with you, maybe it'll give a better idea?\n\nHope to hear from you soon",
+        "ts": "1583431853.001800",
+        "username": "Jasmeet Singh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/983708255236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

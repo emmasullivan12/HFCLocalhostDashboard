@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Aman! Apologies. Hectic day!",
+        "ts": "1586450925.009100",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1055069355797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't see the plates on the drive?",
+        "ts": "1586450951.009200",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1052631206659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris. Sorry for the late reply. No worries at all. They should be in the assets folder. The plates are in their respective folders in assets folder. In their respective folders, it has a link to the plates that corresponds to the plate name",
+        "ts": "1586474502.009300",
+        "username": "Aman Arora (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1055680039461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

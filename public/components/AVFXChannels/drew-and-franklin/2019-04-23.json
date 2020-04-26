@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much, I will send you soon as possible. \nThanks for the availability as well.",
+        "ts": "1556043850.000400",
+        "username": "Franklin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-23\/618187544071_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

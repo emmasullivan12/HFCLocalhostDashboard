@@ -1,0 +1,498 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1565903338.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d55c9ea1d81460004e238e7|this link> with other teams to invite them in it_",
+        "ts": "1565903338.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1565903338.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1565903418.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1565903427.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1565903441.000900",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1565903464.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"shailendra-and-callum\"",
+        "old_name": "z-shared-23",
+        "name": "shailendra-and-callum"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@shail.3d has joined the channel_",
+        "ts": "1565903590.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716656136643_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@callummckay3d has joined the channel_",
+        "ts": "1565903608.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728097769744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Callum, please meet Shailendra your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1565903628.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729962881655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1565903635.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716657732210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1565903643.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/730283092438_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Callum\nHow are you doing.\nMy name is Shailendra.\nI am a Film compositor at Framestore based in Montreal, Canada.\n",
+        "ts": "1565903881.001600",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727640873028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shailendra! Sorry for taking awhile to reply.",
+        "ts": "1565904585.001700",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716673811874_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's so awesome to meet you!! I'm doing well.",
+        "ts": "1565904600.001800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728124154805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How're you?",
+        "ts": "1565904605.001900",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729979826311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I should probably say that I'm currently moving in to my second year of University in September studying VFX at the University of Hertfordshire!",
+        "ts": "1565904672.002000",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728125574437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm looking to use this opportunity with you to grow as a compositor and refine my skillset as well as learn more about the industry.",
+        "ts": "1565904700.002100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716675660963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's so great that you're over in Canada since that's where I want to move after awhile of being in industry in England.",
+        "ts": "1565904722.002200",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727655356164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Callum!\nnice to meet you too.\n",
+        "ts": "1565904742.002300",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729982296487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "aha!\ninteresting to hear.\nCanada is a great place to live work.\njust a little too cold in winters :)",
+        "ts": "1565904773.002400",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716676845347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "absolutely!\nI’d be happy to answer your questions and help you focus on things you want to learn.",
+        "ts": "1565904829.002500",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727657173828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aha! Right. I'm sure you get used to the cold after awhile though :^P",
+        "ts": "1565904884.002600",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729984648663_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have A LOT of questions and I'm going to send you a lot  of messages of these next few months if that's okay with you!",
+        "ts": "1565904917.002700",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728120364864_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is Slack the best place to contact you or do you do better with emails?",
+        "ts": "1565904934.002800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716679449699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you certainly do!\nworking in different parts of the world is similar in many ways. also being a compositor you tend to problem solve things in life easily. too cold! get a nice coat, take the shortest route. easy!",
+        "ts": "1565904995.002900",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716680718514_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "slack is good as its instant",
+        "ts": "1565905009.003000",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727660083956_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ofcourse!\nwe’ll look at your questions as they come.",
+        "ts": "1565905031.003100",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716680940163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it must be late in the UK",
+        "ts": "1565905044.003200",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728122409408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahaha! That's an interesting way to look at it!",
+        "ts": "1565905118.003300",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716682647890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad to hear you're eager for my questions :smile:",
+        "ts": "1565905128.003400",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728132957285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is late! I should be going soon but before I leave would you like to see my showreel?",
+        "ts": "1565905149.003500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716683043474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i am usually free in the evening around 11:00pm UK time.\ni’ll try to answer your questions in the evenings(you can send them anytime that’s convenient)",
+        "ts": "1565905164.003600",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727662438164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You don't have to critique it or anything! I just think it'd be good for you to know the kind of stuff I've done.",
+        "ts": "1565905175.003700",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/721750718977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "11PM is perfect!!!",
+        "ts": "1565905194.003800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728133941173_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes! that would be the purpose to see where you are at",
+        "ts": "1565905196.003900",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729989492007_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "btw I am leaving for home so might not see your questions for sometime.",
+        "ts": "1565905253.004000",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716684700898_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/336801273>",
+        "ts": "1565905262.004100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/730310500070_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Callum McKay - Showreel - Spring 2019",
+                "title_link": "https:\/\/vimeo.com\/336801273",
+                "author_name": "Callum McKay",
+                "author_link": "https:\/\/vimeo.com\/user90797736",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/787183565_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Email: \nLinkedIn: ",
+                "fallback": "Vimeo Video: Callum McKay - Showreel - Spring 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/336801273?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Callum McKay - Showreel - Spring 2019\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/336801273",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/336801273"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't worry about taking a long time to reply. I'm patient! : )",
+        "ts": "1565905281.004300",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729990807127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool! i’ll take a look",
+        "ts": "1565905288.004400",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/730310920806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My showreel has a lot of modelling in it but I want to go away from modelling and focus on compositing in my second year.",
+        "ts": "1565905299.004500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/721752641745_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see!\nnot to worry. we all have to try different things to see what we like.\ni used to do lighting\/texturing back in the day but Compositing was the most fun",
+        "ts": "1565905406.004600",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727666115524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have to go because it is late but I'm going to send you some questions tomorrow!",
+        "ts": "1565905496.004700",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716688362738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm looking forward to having you as my mentor! :smile: thank you for this opportunity",
+        "ts": "1565905511.004800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716688240467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you are welcome!\nhave a goodnight",
+        "ts": "1565905589.004900",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/728139981461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

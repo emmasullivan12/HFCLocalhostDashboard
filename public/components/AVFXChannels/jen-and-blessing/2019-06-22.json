@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Blessing. Sorry to hear you haven’t been well",
+        "ts": "1561216673.000100",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-22\/673315967381_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I’m sorry for my late response. I never got a notification that you messaged ",
+        "ts": "1561216687.000200",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-22\/661906752963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So how are things? Anything you wanna talk about or ask me?",
+        "ts": "1561216699.000300",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-22\/673316082101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

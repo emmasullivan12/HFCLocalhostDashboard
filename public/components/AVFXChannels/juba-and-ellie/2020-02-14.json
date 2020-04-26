@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ellie! Im currently on holiday till next week I’ll get back to you as soon as I can =)",
+        "ts": "1581673061.003300",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/954282526583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

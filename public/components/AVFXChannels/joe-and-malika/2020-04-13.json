@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah. I would use this concept kind of like a guide and try and develop it s little bit further but making its reconsable to the concept",
+        "ts": "1586763205.019100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1068572928417_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How long should be showreel? Is it ok if it's 3-5 min???",
+        "ts": "1586843330.019200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1059973248674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for the softwares used.",
+        "ts": "1576862915.000100",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/869529225282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Foundry Nuke (and others) for 2D compositing",
+        "ts": "1576862936.000200",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/881855822676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Autodesk Maya for 3D",
+        "ts": "1576862949.000300",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/869530162050_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "SideFX Houdini for 3D and (what is now being called) FX",
+        "ts": "1576862972.000400",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/870845452435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Those are the main kind of tools used in VFX",
+        "ts": "1576863006.000500",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/884173919271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but there are others",
+        "ts": "1576863010.000600",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/882314550352_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

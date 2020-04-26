@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam, I'd give Houdini a try. There is a free learning verison called Apprentice. It is the most interesting and best bit of software around in my opinion. Mainly it is used for fx and stuff but it will help with developing an understanding of a procedural work flow as it is all node based but also opens things out for coding through VEX language and you can do incredible things with it. Unlike blender and cinema 4d it is also widely used through the professional industry. The company that makes it is called sidefx and they have a great vimeo channel with tutorials. also there is a really good forum community on odforce and also check out entagma which is a site doing really cool stuff in houdini and has great tutorials.",
+        "ts": "1585232474.000700",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-26\/1016838849363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if your school is after adverts for themselves (which does sound lame) Houdini again is going to be something you can do really cool stuff in. It is widely used in vfx simulation work and also in advertising and tv and even feature animation now.",
+        "ts": "1585232542.000800",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-26\/1030352396823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/entagma.com\/houdini-curl-noise-flow\/>",
+        "ts": "1585232746.000900",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-26\/1016853762851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/entagma.com\/colored-trails-point-advection-rendering\/>",
+        "ts": "1585232787.001000",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-26\/1028597400416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

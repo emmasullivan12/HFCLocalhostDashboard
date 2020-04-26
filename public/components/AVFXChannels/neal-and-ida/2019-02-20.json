@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Neal. Great! Thank you! I´ll come up with some questions.",
+        "ts": "1550683835.000100",
+        "username": "Ida Durvard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/555424128816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

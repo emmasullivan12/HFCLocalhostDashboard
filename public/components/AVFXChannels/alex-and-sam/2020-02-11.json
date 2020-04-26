@@ -1,0 +1,140 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "looks promising, have you made all the models?",
+        "ts": "1581424087.000700",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946655698816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "those spot lights look like a good candidate for IES light profiles, can get some really night effects",
+        "ts": "1581424128.000800",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946202290596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "not necessarily arnold specific, but they give you an overview of what they are\n\n<https:\/\/docs.arnoldrenderer.com\/display\/A5AFMUG\/IES+Lighting>",
+        "ts": "1581424176.000900",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946203225604_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and a download to a bunch of them",
+        "ts": "1581424190.001000",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/935189734051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah everything in the scene ive modelled",
+        "ts": "1581424213.001100",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/948520608903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am using poliigon for some of the textures",
+        "ts": "1581424231.001200",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/935191194403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTU61F7NG",
+                "created": 1581424254,
+                "timestamp": 1581424254,
+                "name": "received_646067289530799.jpeg",
+                "title": "received 646067289530799",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 240986,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTU61F7NG\/received_646067289530799.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTU61F7NG\/download\/received_646067289530799.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 240,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 320,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 480,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 534,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 640,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU61F7NG-771b53261e\/received_646067289530799_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 683,
+                "image_exif_rotation": 1,
+                "original_w": 1600,
+                "original_h": 1067,
+                "thumb_tiny": "AwAgADCNCVI\/u5waJIlLfKcfhT8bRtbuaDgSOc4XAxk0hjBASDg5x2xSiNSPkkDN\/dxyKdnOArAA9WqWGNQ2CBjPFAFfysLluD3poP7h3HGKuzBMNuBP0qupR0cBSq4JGe1MQw\/PtcnkdqGyYioxk1CGIA5HFPEoGOKQyRd4B6YxwAamiGIwrEZBzkVW8wsnyr7ZpVZ8c\/rQBamxsAB5Oe9VkV\/mVhwfem5buQR6GphKBGFGOvQUxH\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTU61F7NG\/received_646067289530799.jpeg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTU61F7NG-46a31dddb3",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581424258.001300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats where i am currently but need to make some changes. We have industry guests coming into the uni tomorrow so i wanna get it textured by then to show where im at. Ill then make the specific textures in substance to demonstrate the knowledge of texture creation",
+        "ts": "1581424321.001600",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/936518793569_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

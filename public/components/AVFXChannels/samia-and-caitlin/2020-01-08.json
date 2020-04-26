@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy New Year to you aswell Samia! Did you do anything nice over Christmas?",
+        "ts": "1578520656.000100",
+        "username": "Caitlin Purser (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-08\/900946197206_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

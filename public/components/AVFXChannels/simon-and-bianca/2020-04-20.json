@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1587378070.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1587378075.000800",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@sjtaylor84 has joined the channel_",
+        "ts": "1587378170.000900",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085708338769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@biancathemaker has joined the channel_",
+        "ts": "1587378190.001000",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085708869665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Bianca, please meet Simon your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1587378202.001100",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085709227105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1587378209.001200",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079251889252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1587378218.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071703826677_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon! Lovely to (virtually) meet you. Thanks for signing up as my mentor. I look forward to picking your brains! :blush:",
+        "ts": "1587378501.001400",
+        "username": "Bianca Iancu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1096933490080_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Bianca! Pleased to meet you too, happy to answer any questions you have!",
+        "ts": "1587378531.001500",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073092781730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've got a shot in progress that would be great to get your feedback on when you get the chance to have a look. I'm about halfway through splining and would love to know your any thoughts you have. (Please ignore the tablecloth not making contact with the hand at the moment!)\n\n<https:\/\/www.syncsketch.com\/sketch\/dde2f279f447\/#1584536\/1841666>",
+        "ts": "1587379011.001600",
+        "username": "Bianca Iancu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073107676610_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Simon Taylor",
+                "title_link": "https:\/\/www.syncsketch.com\/sketch\/dde2f279f447\/#1584536\/1841666",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: Simon Taylor",
+                "from_url": "https:\/\/www.syncsketch.com\/sketch\/dde2f279f447\/#1584536\/1841666",
+                "service_icon": "https:\/\/www.syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/www.syncsketch.com\/sketch\/dde2f279f447\/#1584536\/1841666"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587379012.000000"
+        }
+    }
+]

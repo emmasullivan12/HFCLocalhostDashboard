@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that's a good mindset at your stage in life!",
+        "ts": "1550920551.000900",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/560401026006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So what subjects are you thinking for options? I remember you saying finance, politics and engineering were your thing.",
+        "ts": "1550920615.001000",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/560038092487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "P.S Speaking of not letting something become your whole life ... Im working this weekend booo!",
+        "ts": "1550920634.001100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558847206963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(But luckily I enjoy the work I do :smiley:)",
+        "ts": "1550920647.001200",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/560038222647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im thinking about choosing triple science, citizenship, history and maybe business.\n",
+        "ts": "1550940781.001300",
+        "username": "Amina (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558947601379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your working during the weekend! Wow I could never do that.",
+        "ts": "1550940814.001400",
+        "username": "Amina (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558947765075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds like a good mix of technical\/engineering (triple sciences) alongside learning to construct arguments well (history) which will come in useful for politics and finance",
+        "ts": "1550940945.001500",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558948399635_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is citizenship mandatory? What is that about? I havent heard of it as its not a \"traditional\" subject ",
+        "ts": "1550940976.001600",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/559070572626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes but i work for myself so can choose my hours. Sometimes i might take a tuesday afternoon off if i fancy it. So i like the flexibility :wink: ",
+        "ts": "1550941031.001700",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558496568705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would say most professional jobs might incl long hours at crunch times which might include wknd work. Just think of poor Theresa May working overtime on Brexit atm :joy: :joy: ",
+        "ts": "1550941086.001800",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558323116592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Buy many companies are moving to flexible hours i.e u can choose hours and work from home some days etc",
+        "ts": "1550941119.001900",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558949292291_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are you up to this weekend?",
+        "ts": "1550941169.002000",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558497273457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

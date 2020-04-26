@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "text": "Your Slack export has completed! You can download the file from <https:\/\/prospela.slack.com\/services\/export\/download\/205475812388\/e3d3b212|your export page>.",
+        "user": "USLACKBOT",
+        "ts": "1498724814.323730",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Career Plan: Hastings* under review.",
+        "ts": "1498770501.680308",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Movie on 21-06-2017 at 18.35.mov* under review.",
+        "ts": "1498770556.696270",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    }
+]

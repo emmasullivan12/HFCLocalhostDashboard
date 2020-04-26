@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Morning, \n\nSure! Then lets have a call on the weekend!",
+        "ts": "1543651350.001500",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492842329139_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you prefer Tomorrow after 4.30 pm or Monday after 6 pm?",
+        "ts": "1543694328.001600",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492378999856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We could try tomorrow! Unsure how busy I’ll be, but let’s try for then! :) ",
+        "ts": "1543694671.001700",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492949512276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, great! Have a lovely evening! :blush::blush::blush:",
+        "ts": "1543702627.001800",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/493045307299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! You too have a groovy evening! :smile:",
+        "ts": "1543702656.001900",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492543795809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

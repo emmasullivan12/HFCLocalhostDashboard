@@ -1,0 +1,1326 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1562071427.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1562071427.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d1b518384129300049082ae|this link> with other teams to invite them in it_",
+        "ts": "1562071427.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1562071464.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1562071497.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"chrisc-and-josh\"",
+        "old_name": "z-shared-23",
+        "name": "chrisc-and-josh"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1562071515.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1562071517.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@wavelets.joshua has joined the channel_",
+        "ts": "1562071889.001100",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682523974720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@chrishcarter has joined the channel_",
+        "ts": "1562071904.001200",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684374625191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Joshua, please meet Chris your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1562071953.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682534966357_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1562071963.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682053211828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1562071966.001500",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-09-25\/442844780978_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, my name is Josh. I'm from Northern Ireland and I've just finished my second year at Staffordshire University studying Animation :)",
+        "ts": "1562072329.001600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671116638674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Josh, I'm currently a Technical Director for the 2D series pipeline at Blue Zoo (an aniamtion studio in London)",
+        "ts": "1562075790.001700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682617592949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm working from home today, so there's a chance I might get called away to fix something at work without warning",
+        "ts": "1562075847.001800",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682619137477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've heard of Blue zoo it seems like a good place to work. and I tried to get an internship there this summer but I wasn't successful.",
+        "ts": "1562075908.001900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682610929712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's pretty cool that you can work from home as well :blush:",
+        "ts": "1562076023.002000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671199058386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yea, its a lovely place to work. A bit chaotic but lots of nice people and the show I'm working on i genuinely enjoy",
+        "ts": "1562076032.002100",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684758386534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What show are you working on? (Or are you not allowed to say?)",
+        "ts": "1562076079.002200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676264645985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "well a lot of my role is software\/tool development and that is easier to do from home without people coming over to ask me questions",
+        "ts": "1562076081.002300",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682144258052_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its only one day a week and Im in the studio for the other 4 days",
+        "ts": "1562076093.002400",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684467082615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its currently quite unusual to work from home unless you are script writer \/ storyboard artist or programmer",
+        "ts": "1562076123.002500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676265894865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Saves you commuting into work and wasting time, it's also better for the environment :blush:",
+        "ts": "1562076163.002600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682618803008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yep yep. Motivation can be a problem tho, some days I need to be around other people that are being productive and have colleagues to bounce ideas off of.",
+        "ts": "1562076224.002700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671205131298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ive worked from home full time before and did not enjoy that",
+        "ts": "1562076236.002800",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676269180673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so, tell me a bit about yourself. What kind of thing do you want to be doing in 3-5 years time? what do you enjoy doing the most now?",
+        "ts": "1562076316.002900",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676271392929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I've been animating since I was 10 years old (stop motion) I did my GCSE'S and A levels and then worked in an Animation studio in Belfast called Flickerpix. I went to Uni to study game animation but the course wasn't great so last year I switched over to just Animation and that's been a lot better. I want to graduate and get a good job so I can save up and buy a Narrowboat to live on. I also freelance on Upwork on the side :grin:",
+        "ts": "1562076518.003000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671227464899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/330040445>",
+        "ts": "1562076539.003100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684479452183_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Updated Showreel 2019",
+                "title_link": "https:\/\/vimeo.com\/330040445",
+                "author_name": "Joshua Boyd",
+                "author_link": "https:\/\/vimeo.com\/user75334539",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/774998347_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Updated General Animation Showreel",
+                "fallback": "Vimeo Video: Updated Showreel 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/330040445?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Updated Showreel 2019\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/330040445",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/330040445"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's my general showreel.",
+        "ts": "1562076550.003300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682157364468_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I work in After Effects but would love to learn Toon Boom and 3D in the future.",
+        "ts": "1562076596.003400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671229535219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool, thanks for showing me",
+        "ts": "1562076684.003500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682161116100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem :blush:",
+        "ts": "1562076743.003600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671233574131_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "do you have a specific studio \/ job title you will be aiming for after graduating?",
+        "ts": "1562076764.003700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676283761169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I say this because I think you might have the same problem I had when I graduated. I was too much of a generalist",
+        "ts": "1562076798.003800",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684779753638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It made the first couple of years quite tough and lots of short contracts without much stability",
+        "ts": "1562076829.003900",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682164945572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No not really. I do like motion graphics and lean more that way though.",
+        "ts": "1562076831.004000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671235870899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd recommend you look at the work being produced by specific studios that you admire \/ would like to work at",
+        "ts": "1562076891.004100",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684782181830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok.",
+        "ts": "1562076953.004200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682168170628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The work in your showreel should be the same quality as the stuff that they produce.",
+        "ts": "1562076978.004300",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671225520706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that makes sense.",
+        "ts": "1562077007.004400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684491978727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can get lucky, but most of the time, studios are not going to be able to train you on the job, you will be expected to hit the ground running",
+        "ts": "1562077016.004500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671226486322_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They are often prepared to take a risk if you prove that you can do a similar job in different software tho.",
+        "ts": "1562077043.004600",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682652482997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "( lots of the time we hire animators without harmony experience as their animation is very good and they have made steps to start learning it themselves )",
+        "ts": "1562077082.004700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682653394613_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I know I haven't got a great deal of experience in the industry and it really worry's me that I'm going to graduate and not get a job that I want :disappointed:",
+        "ts": "1562077143.004800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684495293735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I have a lot of experience in After Effects but I know that harmony seems to be the way to go.",
+        "ts": "1562077221.004900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671245786771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would not get too worried about the specific software ( unless you are wanting to get into rigging )",
+        "ts": "1562077404.005000",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671250271571_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I'm not really sure what I want to do to be honest :sweat_smile:",
+        "ts": "1562077490.005100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682181533300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "would you say you want to aim more towards character animation, FX, motion graphics, directing or art direction",
+        "ts": "1562077495.005200",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684504008727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Probably motion graphics because of After Effects, being a Director would be a dream but I don't even know how I'd even get into that.",
+        "ts": "1562077698.005300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682668626181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anywhere that I can check out what your 3rd year curriculum would be at Staffordshire?",
+        "ts": "1562077772.005400",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684804181910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah cool, thats great that you are aiming high!",
+        "ts": "1562077794.005500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682661125584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Um... I think I can check out what modules I have give me a second :grin:",
+        "ts": "1562077830.005600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682190168420_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So my modules for next year are...\n\nIndividual Short Animation: 30 Credits\nAnimation Future Destinations: 15 Credits\nFinal Major Signature Project: 60 Credits\nAnimation Declarations: 15 Credits",
+        "ts": "1562078049.005700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682677738469_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Animation Declarations is a 3000 word Harvard referenced essay on a subject of your choice.",
+        "ts": "1562078154.005800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671255037458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Animation future destinations is I think brushing up on your CV and reel while learning how to apply for jobs.",
+        "ts": "1562078192.005900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684521687799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I found this page:\n<http:\/\/www.staffs.ac.uk\/course\/animation-ba>",
+        "ts": "1562078228.006000",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671270948467_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Animation",
+                "title_link": "http:\/\/www.staffs.ac.uk\/course\/animation-ba",
+                "text": "Do you have a favourite character from an animated film? Whether it’s Buzz Lightyear, a minion from Despicable Me, Jack Skellington or one of the Disney princesses, have you ever wondered what and who turns them into such likeable (or loathe-able) characters?",
+                "fallback": "Animation",
+                "thumb_url": "http:\/\/www.staffs.ac.uk\/undergraduate\/image-library\/courses\/hero-images\/animation-header.x4fbbd415.jpg",
+                "from_url": "http:\/\/www.staffs.ac.uk\/course\/animation-ba",
+                "thumb_width": 3000,
+                "thumb_height": 700,
+                "service_icon": "http:\/\/www.staffs.ac.uk\/favicon.ico?v=1",
+                "service_name": "staffs.ac.uk",
+                "id": 1,
+                "original_url": "http:\/\/www.staffs.ac.uk\/course\/animation-ba"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FL2KT2Y8G",
+                "created": 1562078262,
+                "timestamp": 1562078262,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 101012,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FL2KT2Y8G\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FL2KT2Y8G\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 299,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 399,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 599,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 665,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 798,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FL2KT2Y8G-13abfea48c\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 852,
+                "image_exif_rotation": 1,
+                "original_w": 1182,
+                "original_h": 983,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FL2KT2Y8G\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FL2KT2Y8G-5d9a5057fa",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1562078266.006200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is that the course that you are on?",
+        "ts": "1562078270.006500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682683166437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/www.staffs.ac.uk\/course\/animation-ba|www.staffs.ac.uk\/course\/animation-ba>",
+        "ts": "1562078479.006600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684528551879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is the course I'm on",
+        "ts": "1562078503.006700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682678841344_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah, just realising that you are on summer holiday now and wont have coursework for a while now :stuck_out_tongue:",
+        "ts": "1562078521.006800",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684822753638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "whats your summer plans?",
+        "ts": "1562078546.006900",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682207746276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I applied all over the UK and Ireland for internships and got nothing back :joy:",
+        "ts": "1562078591.007000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684824468518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh no :disappointed:",
+        "ts": "1562078607.007100",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671265893746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I then tried to get back into Flickerpix to work there but they've downsized and don't have anything for me :blush:",
+        "ts": "1562078621.007200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671280489523_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "we could figure out some short project for the next couple of weeks if you have time for that?",
+        "ts": "1562078641.007300",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684825632230_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that would be cool. I was also thinking about coming up with ideas for my Final project next year :grin:",
+        "ts": "1562078711.007400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676332225457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is your final project indidual or group?",
+        "ts": "1562078782.007500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671284395731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*individual",
+        "ts": "1562078796.007600",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684829533750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Final year project, you can work with other people but most don't. You also get a second year to help you for a bit (25 hours worth)",
+        "ts": "1562078835.007700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684537166583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "when do you start back at uni? and when do you have to have your proposal for your final year project for?",
+        "ts": "1562078940.007800",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676337758689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I start back at the end of September. I do the individual Short Animation module for the first few months before launching into the FMP",
+        "ts": "1562078998.007900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671289564195_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The module description says you negotiate with your lecturers with the scale and depth of your final piece so I don't think there's an official start date.",
+        "ts": "1562079062.008000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676340726977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh sure, that makes sense.",
+        "ts": "1562080975.008100",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684590453207_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well the way most internships work at Blue Zoo is the interns work together to make a short film",
+        "ts": "1562081037.008200",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671340489811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I do have an idea for a short film :blush:",
+        "ts": "1562081215.008300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684889531430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think we are expected to make a Bible with all our preproduction as well to back up our work.",
+        "ts": "1562081249.008400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671331392610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How short a film? ( runtime )",
+        "ts": "1562081285.008500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671346405011_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Between 5 and 10 minutes most likely. Probably closer to 5.",
+        "ts": "1562081332.008600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682748708416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "eeeek thats quite long",
+        "ts": "1562081442.008700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682279637380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha I know! :grin:",
+        "ts": "1562081481.008800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671337316642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe 3 minutes then :grin:",
+        "ts": "1562081509.008900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671338038850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its possible but I'd highly recommend you aim for somethign nearer 3 mins unless the art direction is intentionally econimical",
+        "ts": "1562081514.009000",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682281395876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so do you have something worked up currently? a proposal or outline or artwork?",
+        "ts": "1562081547.009100",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682282251380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a good outline in my head and a working title. :blush:",
+        "ts": "1562081623.009200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684606579943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*economical",
+        "ts": "1562081629.009300",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671355246179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh cool. well if thats what you want to be working towards this summer I can help you figure out some goals and review your work",
+        "ts": "1562081676.009400",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676405983761_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that would be awesome :grin:",
+        "ts": "1562081703.009500",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682758049872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll right out my outline and you can tell me what you think of it.",
+        "ts": "1562081717.009600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671343126114_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sure, but just so you know what I was thinking of doing otherwise, you make some very short form content for things like 11 second club \/ loopdeloop ( or other online competition things )",
+        "ts": "1562081768.009700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676408081665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have done stuff for the 11 second club before (not very good stuff though) :grin:",
+        "ts": "1562081827.009800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682770991189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can do both ( if you have time )",
+        "ts": "1562081853.009900",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684905361478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I have time",
+        "ts": "1562081867.010000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682289965588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/305716195>",
+        "ts": "1562081869.010100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684612429831_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "My 11 Second Club November",
+                "title_link": "https:\/\/vimeo.com\/305716195",
+                "author_name": "Joshua Boyd",
+                "author_link": "https:\/\/vimeo.com\/user75334539",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/745286765_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: My 11 Second Club November",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/305716195?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"My 11 Second Club November\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/305716195",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/305716195"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but you seem to be pumped for your short film so lets run with that for now :slightly_smiling_face:",
+        "ts": "1562081878.010300",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671346887154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We did it as an exercise to teach us lip syncing.",
+        "ts": "1562081884.010400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682290277284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "not bad. very minimal. The lipsync is fine.",
+        "ts": "1562081942.010500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682291639700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel you could have pushed the posing\/acting more. But as lipsync it does the job",
+        "ts": "1562081995.010600",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684908634934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it was only a very small part of the module and the emphasis was in the lip sync :\/",
+        "ts": "1562082031.010700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684909544134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it would be good if we set up weekly catchups. ( feel free to chat here more often tho but I'm not sure how regularly I'll be able to check it)",
+        "ts": "1562082082.010800",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682294972100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But as we have only just met I think it would be helpful to have a chat in a couple of days time also",
+        "ts": "1562082117.010900",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684618211143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd like to give you a couple of assignments.",
+        "ts": "1562082129.011000",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682768064960_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's ok :blush:",
+        "ts": "1562082136.011100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/676416757409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1. Write up an outline for your short film ( this should fit on 1 A4 page, 300 words or so ). If you have any artwork to go with it that would be good to see also.\n2. Do some research on short animation competitions and see if there are any with a deadline before September 1st that you would like to enter ( something like <https:\/\/www.loopdeloop.org\/> maybe ? )",
+        "ts": "1562082313.011200",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682782436197_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "LoopdeLoop",
+                "title_link": "https:\/\/www.loopdeloop.org\/",
+                "text": "LoopdeLoop is an international animation challenge and a community of creative folks working...",
+                "fallback": "LoopdeLoop",
+                "thumb_url": "https:\/\/66.media.tumblr.com\/avatar_530c2827acae_128.pnj",
+                "from_url": "https:\/\/www.loopdeloop.org\/",
+                "thumb_width": 128,
+                "thumb_height": 128,
+                "service_icon": "https:\/\/66.media.tumblr.com\/avatar_530c2827acae_128.pnj",
+                "service_name": "loopdeloop.org",
+                "id": 1,
+                "original_url": "https:\/\/www.loopdeloop.org\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is this thursday afternoon for catching up with eachother? ( 7pm?)",
+        "ts": "1562082373.011400",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682773898288_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But in general Tuesday Lunchtime is good for me for our weekly chats if it is good for you too",
+        "ts": "1562082395.011500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671373442867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That all sounds good, Thursdays are grand. I can talk whenever. If you want I can keep you updated as I go and if you're busy just reply when you can :blush:",
+        "ts": "1562082481.011600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671375348307_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice one :slightly_smiling_face:",
+        "ts": "1562082505.011700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682787032501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its been nice chatting with you Josh, I'm excited to see what we will both learn this summer :slightly_smiling_face:",
+        "ts": "1562082529.011800",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671362224098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Me too :blush:",
+        "ts": "1562083000.011900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682788720384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thankyou for taking the time to help me :blush:",
+        "ts": "1562083017.012000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671387997075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm with you on the science, definitely not my strongest subject. We leave school at 16 and have to decide on college or apprenticeship.  I really want to go for the apprenticeship option as I will learn whilst working. This is one of the reasons why i thought it would be good to have a mentor. It's really competitive to get a good apprenticeship and i need to prove i have the skills for it, also i need to find one in a job i would want to do. There are HR apprenticeship advertised but i still don't fully understand why the job entails, can you let me know what a day at work for you is like.",
+        "ts": "1571158793.002100",
+        "username": "Caitlin Purser (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/795782016900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I definitely agree for the apprenticeship. Having proper work experience is a definite plus in the work market. HR is a very diversed job. You could love maths and work in Compensation and be in your speeadsheets all day long. You could be in Human resources information system and work more on IT stuff. If you like to talk and analyze people and negotiation, recruitment might be a good option. If you like to deal with sensitive situations and mediate and all that, employee relations might be your thing. If you get bored quick of doing the same thing then a generalist position could be interesting. There are experts of international mobility too.",
+        "ts": "1571164563.002200",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/796396373248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you work in a big company usually you will be a specialist and most likely do similar things everydayz ",
+        "ts": "1571164623.002300",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/795933094260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In smaller companies, you tend to do more various things. For me, I’m a generalist. I’ll send you my job descriptions it should help! ",
+        "ts": "1571164648.002400",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/798254368439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you had a look at job descrptions on indeed or monster? It could definitely help guiding you",
+        "ts": "1571164664.002500",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/784918088035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPGHYJ4AJ",
+                "created": 1571164830,
+                "timestamp": 1571164830,
+                "name": "Human Resources Advisor_ Conseillère des RH.pdf",
+                "title": "Human Resources Advisor  Conseillère des RH",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 59774,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPGHYJ4AJ\/human_resources_advisor__conseille__re_des_rh.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPGHYJ4AJ\/download\/human_resources_advisor__conseille__re_des_rh.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPGHYJ4AJ-e542515127\/human_resources_advisor__conseille__re_des_rh_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 910,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPGHYJ4AJ\/human_resources_advisor__conseille__re_des_rh.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPGHYJ4AJ-c201759bdb",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1571164831.002600"
+    }
+]

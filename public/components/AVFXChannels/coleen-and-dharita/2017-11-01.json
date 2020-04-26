@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi I’m doing maths English and art alevels ",
+        "ts": "1509528620.000043",
+        "username": "dharita_ (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-01\/266037164694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And thankyou very much ",
+        "ts": "1509528628.000085",
+        "username": "dharita_ (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-01\/264636704497_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My email is <mailto:dharita_@hotmail.co.uk|dharita_@hotmail.co.uk> and yes I do have a cv I’ll send it through when I get home thank you ",
+        "ts": "1509528676.000050",
+        "username": "dharita_ (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-01\/264637043633_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wonderful Dharita, they are great subjects!",
+        "ts": "1509531888.000239",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-01\/266258612935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Please send it to <mailto:coboyle@alliesandmorrison.com|coboyle@alliesandmorrison.com>",
+        "ts": "1509531902.000327",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-01\/266258673095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad I'm able to help",
+        "ts": "1509531917.000039",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-01\/266258769863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

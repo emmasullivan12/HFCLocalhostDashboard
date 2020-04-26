@@ -1,0 +1,178 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija! How about Friday?? :) you can show the bow (fully uved and modelled, maybe even textured??) and then I can take look!",
+        "ts": "1547642949.004400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/524438098145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heyy, sounds great! \n\nWhat time would you be thinking around? :relaxed:\n",
+        "ts": "1547647762.004500",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/526522733750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually I forgot I have something :( how about tomorrow? Around 7",
+        "ts": "1547648433.004600",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525113410946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I cant really tomorrow, got some plans as well :s\n\nI am very sorry! \n\nWhat about Saturday?",
+        "ts": "1547654006.004700",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/524615535921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha we are busy bees :bee:",
+        "ts": "1547654033.004800",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525114577971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Saturday is good with me, morning?",
+        "ts": "1547654043.004900",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525114735139_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I got GP appointment 8.30am and work after. \n\nOh dear, I am very sorry about it",
+        "ts": "1547654176.005000",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525055074452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I could do Sunday morning, if that is okay",
+        "ts": "1547654200.005100",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525117987187_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or evening",
+        "ts": "1547654203.005200",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/526640897526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sunday afternoon then! It’s no problem! I am free this weekend :) ",
+        "ts": "1547654239.005300",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/526641559094_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "After 4.30pm, would it be okay?",
+        "ts": "1547654279.005400",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/524489014880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s grand with me :)",
+        "ts": "1547654298.005500",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525424908421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":octopus:",
+        "ts": "1547654305.005600",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/526280293031_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will make sure to do texturing in that case! Haha :D \n\nThank you so much ! \n:smile_cat:",
+        "ts": "1547654317.005700",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/524621829505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem! And any questions in the meantime lemme know!",
+        "ts": "1547654845.005800",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525069176292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Perfect, thanks ! :hamster:",
+        "ts": "1547656676.005900",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525106274324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

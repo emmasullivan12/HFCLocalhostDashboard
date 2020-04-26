@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Hi Ewelina, I'm sure you are super busy, but just wanted to check in to see how things are going? :blush: if there's anything you need from me at the moment just let me know. ",
+        "user": "U5WDKTPAL",
+        "ts": "1499978718.093050",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "6788fd256268",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201209037828_6788fd25626825847754_72.jpg",
+            "first_name": "Ellie",
+            "real_name": "Ellie Faircloth",
+            "display_name": "eleanorfaircloth",
+            "team": "T4UUTPV18",
+            "name": "eleanorfaircloth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

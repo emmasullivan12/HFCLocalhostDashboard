@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I heard it's good for artsy stuff but not for other things",
+        "ts": "1582100162.001000",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/948638252065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I only really know what people tell me to be honest. The cg people look good from there and their sounds a bit better than Bournemouth's.",
+        "ts": "1582119603.001100",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/958731250468_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

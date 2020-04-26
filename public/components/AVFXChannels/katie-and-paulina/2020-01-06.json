@@ -1,0 +1,189 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Paulina, I am again sorry for my delayed response to you - it has been a bit crunchy for me in work over the Christmas period, getting things finished and starting up again this week.. Concept works at a little bit of a different pace; I have so many teams dependent on me to come up with designs way ahead of production time. Just wanted to let you know I am typing up responses to your questions and will send them over later tonight! :bee:",
+        "ts": "1578342609.000400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897140250711_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So.. to reply to your previous questions!:",
+        "ts": "1578345715.000500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/895367036277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Isn't Creature FX mostly rigging and simulations related\/orientated?_\n- It is, you are right, but I got a job as a Creature FX TD with very little prior rigging\/simulation experience - granted this was because I had applied for the CFX internship and not a regular job posting. But I thought I’d mention it because it was mainly my passion for creature design\/anatomy that got me in, and it was a really important step for me to get into and experience the VFX industry as a starting point.\nIt also meant I was working with creature characters all of the time instead of inanimate objects\/vehicles\/props which is often what a lot of modelling consists of.",
+        "ts": "1578345758.000600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/882573762434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_What would they want to see and in what way is it best to present models?_\n- Yes definitely have examples of both organic and hard-surface. I’d suggest you also keep your design ideas very close to, if not an exact replica of, real-world examples. So your ideas of the deer\/monkey\/typewriter\/telephone are great because you can potentially do a side-by-side comparison of your reference with your model, to show off how accurate you can be.\nYes, as Amy says; you don’t need to do any texturing if you are applying for a modeller position but they will definitely want to see nice, clean topology and your UV maps.\n\nAmy is a friend of mine from Framestore!\nI’d also recommend you contact my friend Roo, he’s a modeller at Framestore London and is doing a lot for the VFX newcomer community with videos and tutorials etc. <https:\/\/www.instagram.com\/roo_vfx\/>\n(Ruairidh MacNeill on Linkedin)",
+        "ts": "1578345821.000700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/882575194354_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": " Login • Instagram ",
+                "title_link": "https:\/\/www.instagram.com\/roo_vfx\/",
+                "text": "Welcome back to Instagram. Sign in to check out what your friends, family &amp; interests have been capturing &amp; sharing around the world.",
+                "fallback": " Login • Instagram ",
+                "from_url": "https:\/\/www.instagram.com\/roo_vfx\/",
+                "service_icon": "https:\/\/www.instagram.com\/static\/images\/ico\/apple-touch-icon-76x76-precomposed.png\/666282be8229.png",
+                "service_name": "instagram.com",
+                "id": 1,
+                "original_url": "https:\/\/www.instagram.com\/roo_vfx\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.artstation.com\/rooboy3d>",
+        "ts": "1578345908.000900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897219481879_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Roo MacNeill",
+                "title_link": "https:\/\/www.artstation.com\/rooboy3d",
+                "text": "3D modeler at Framestore",
+                "fallback": "ArtStation: Roo MacNeill",
+                "thumb_url": "https:\/\/cdnb.artstation.com\/p\/users\/covers\/000\/152\/829\/default\/17edbf40253ad9622a195dcf92a46010.jpg?1542481926",
+                "from_url": "https:\/\/www.artstation.com\/rooboy3d",
+                "thumb_width": 1920,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-2636a7fc7ef17a40611d4d3f16f6f9f9.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/rooboy3d"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-11.html>",
+        "ts": "1578346079.001100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/883896938163_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "How to get a career in VFX with MPC and Framestore - Part 1 | Webinars and tutorials | Escape Studios | Pearson College London",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-11.html",
+                "text": "This webinar on careers in VFX was hosted by Claire Vandenbroecke, from the admissions team at Escape Studios. Claire put questions to a couple of industry experts, Ben Owens and Anna Swift, to help you learn how to find, get and keep your dream job in VFX.",
+                "fallback": "How to get a career in VFX with MPC and Framestore - Part 1 | Webinars and tutorials | Escape Studios | Pearson College London",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-11.html",
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-11.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-2.html>",
+        "ts": "1578346087.001300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/894907137476_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "How to get a career in VFX with MPC and Framestore - Part 2 | Webinars and tutorials | Escape Studios | Pearson College London",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-2.html",
+                "text": "In part 2 of this careers webinar, Ben and Anna talk in more detail about preparing and sharing your show reel, CV and portfolio to show your skills in the best light.",
+                "fallback": "How to get a career in VFX with MPC and Framestore - Part 2 | Webinars and tutorials | Escape Studios | Pearson College London",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-2.html",
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/how-to-get-a-career-in-vfx-with-mpc-and-framestore-part-2.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for your comments on my CV, I am glad my advice could be of some use to you. Yeah I agree it is pretty wild how things have changed over the years, I feel like I can barely keep track of what I’m doing one minute to the next - but I guess life is just like that haha!\nI agree that keeping your CV clear and well-arranged is key - don’t worry about imagery or formatting too much, it needs to be very easily readable and keep in mind that a lot of recruiters will be looking at them quickly, so keeping it brief and clear will work in your favour.",
+        "ts": "1578346132.001500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897573060406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of first steps into the industry, I think you have to just apply for any and every opportunity that you come across. Obviously you will need to be specific about what position you are looking for, and apply for similar roles - i.e. I wouldn’t also apply for Lighting or VR as well as Modelling because they are all very different sectors.",
+        "ts": "1578346164.001600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897225476855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Running isn’t always ideal (which is why I recommend applying for the jobs you really want first and give them a longer time to respond while you are applying for all the other stuff) - but running can be a fantastic first step, it gets you in and involved, you can start making connections and network before you even take on a role. :woman-running:",
+        "ts": "1578346235.001700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897227469687_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keep savvy about it and keep your goals in mind, I had many setbacks before I got into full-time work in VFX, it’s not always a straightforward route.\nIt’s worth thinking about freelance gigs too. I started freelancing with small projects for friends of my family, I picked up some clients from attending VFX events and I also got work by applying to an agency who found gigs for me.\nFreelancing is a minefield and it wasn't the lifestyle I wanted - so I found it difficult to get the knack of, but some people really love it and become really successful through it. Never know until you try!",
+        "ts": "1578346375.001800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/895382815989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you had a nice rest in Lithuania! Keep me posted on how things are going with uni :blush::mortar_board:",
+        "ts": "1578346644.001900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897585471606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! Great work... what do you mean by \"multicultural  sale for staff\" btw?",
+        "ts": "1559550582.001600",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-03\/646885403377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With the work experience, do you know \/ have you decided what type of job you want to get work experience in?",
+        "ts": "1559550776.001700",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-03\/653242666704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

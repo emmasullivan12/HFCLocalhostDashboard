@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Angel sorry for the slow start! Wow those are really impressive for personal projects i’m surprised you are in layout and not modelling full time :) i presume framestore are aware you want to progress in this field?",
+        "ts": "1563214731.002800",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/697234926166_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Craig, thankvyou for getting back to me. I understand your so busy. And thank you! Theres more to come. Yeah in Layout right now, they know I want to go into modeling. But unsure when as they feel it's hard to get a replacement to do layout.",
+        "ts": "1563231322.002900",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/683974518755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you*",
+        "ts": "1563231329.003000",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/695386114069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm constantly doing personal projects, for various of reasons. But iv wanted to go into modeling for a long time, just dont know when it would happen. They feel I could fit in environment, but in that department it's not intense modeling like for bug props and spaceships.",
+        "ts": "1563231433.003100",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/697224850183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/346632069>",
+        "ts": "1563231541.003200",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/689028268785_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Angel Cano Reel 2018",
+                "title_link": "https:\/\/vimeo.com\/346632069",
+                "author_name": "Angel Cano",
+                "author_link": "https:\/\/vimeo.com\/canomation",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/796744058_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "A collection of Professional work I had to pleasure of being a part of and personal projects. Hope you enjoy thank you.",
+                "fallback": "Vimeo Video: Angel Cano Reel 2018",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/346632069?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Angel Cano Reel 2018\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/346632069",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/346632069"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my reel. When you get them be great to get your view. I got it criticises which was helpful, but concerned on the type of work I have is lacking me any opportunities. But I would love to love up in framestore. It's been a dream of mine to work there as a modeler.",
+        "ts": "1563231693.003400",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/695390529157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! I’ll be free in around 40 mins :) ",
+        "ts": "1559071094.001600",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/650548259702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that’s alright?",
+        "ts": "1559071098.001700",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/650548338134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I haven’t been the best with time recently ",
+        "ts": "1559071119.001800",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/650548766358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually, thinking about it, it’s probably a lot of work for you to do in a week ",
+        "ts": "1559079069.001900",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/642164303873_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So just the mood boards will be okay, we can talk about the schedule next time ",
+        "ts": "1559079089.002000",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/648516991120_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a lovely week! And good luck with the move :) ",
+        "ts": "1559079106.002100",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/637093751058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

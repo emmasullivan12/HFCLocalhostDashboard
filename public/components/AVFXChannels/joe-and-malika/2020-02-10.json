@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Daaamn this guy is soooo skilled! \nHis planning stage is insane dou x) \nTbh, i have never heard of including aaa quality benchmark into the scenes. That's something new and useful!",
+        "ts": "1581326469.013800",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944542794885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks a lot",
+        "ts": "1581326472.013900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944067973844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Same. I guess it just to see what other people have done. I'm guessing.",
+        "ts": "1581326600.014000",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/934380406145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

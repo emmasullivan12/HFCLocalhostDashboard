@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. Did you get a placement? ",
+        "ts": "1583160721.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964571980946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I asked at ILM where I woke now, but they are fully booked for March :( ",
+        "ts": "1583160762.000200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979571496134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you free for a work experience in November 23-27?",
+        "ts": "1583160789.000300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977362157488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Davi, sorry I didn’t reply. Yes, I got a work placement of two days at Blinkink. Not too long but it will have to do. ",
+        "ts": "1583174942.000400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967774003969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Congratulations on the new job! ",
+        "ts": "1583174958.000500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/966407821843_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m not sure about November, it’s such a long time away so I don’t know :sweat_smile:, but thank you.",
+        "ts": "1583175009.000600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977423519300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which days will you be at Blinkink? \nI’m asking another company too ",
+        "ts": "1583193564.000700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/980611835526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

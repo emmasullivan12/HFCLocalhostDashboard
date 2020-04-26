@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard , \nI just forwarded the reply from the fx artist \nLemme know if you received it \nI’m afraid I couldn’t get another compositor who’s free at the moment \nI might have to answer them myself from a former comper and comp TD perspective \nWould that be ok ? ",
+        "ts": "1551708733.000600",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567475086743_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes it would!",
+        "ts": "1551719448.000700",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566618640482_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that would be fine for me",
+        "ts": "1551719450.000800",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567687879383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":)",
+        "ts": "1551719450.000900",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/565869940000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "does the FX artist have a show reel by any chance?",
+        "ts": "1551719457.001000",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566618765714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude \nSorry just got off work . Long day \nOn my way home now \nWhat time is your presentation ? ",
+        "ts": "1551743003.001100",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/568081896103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "He probably does \nI’ll check with him first thing tomorrow and let you know :) ",
+        "ts": "1551743041.001200",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567012955554_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it's cool, I requested a small extension, but it would be great to receive them asap so I could work on it in advance :joy:",
+        "ts": "1551761941.001300",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567134204388_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but thank you so much, sachin!",
+        "ts": "1551761950.001400",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/568610620022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

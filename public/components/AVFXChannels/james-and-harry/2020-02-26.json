@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is certainly a lot of work for compositors on TV shows these days. It's a great time to be graduating. With a good reel you shouldn't have a problem getting work and I can help with that where possible.",
+        "ts": "1582756111.000300",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/971015711104_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

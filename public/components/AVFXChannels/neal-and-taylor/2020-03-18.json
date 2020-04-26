@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am not going to lie, it can be quite a difficult industry to get into and you may need to consider a runner role first to get in. It's not the must glamorous of roles but definitely a way in. I have recently just helped one of my other mentee's getting his first role at one of my previous companies as a runner and they will give him the tools to become ac omper",
+        "ts": "1584515487.003200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1007903224896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You should also start looking at apprenticeships at some of the bigger companies too as you may need to apply to these fairly early on. Check framestore, DNEG and ILMs websites and see what they have to offer",
+        "ts": "1584515594.003300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/997835581921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah Im definitely not turned away by thought of getting a runner job, whatever starts me in the industry I'll happily do! I have been looking at the internships and I will 100% apply for them as I think that would be an amazing way to start off, I'm just keeping an eye on dates and working on my current final project to get that in my showreel before I send off any applications.",
+        "ts": "1584532713.003400",
+        "username": "Taylor Webber (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1008026563332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

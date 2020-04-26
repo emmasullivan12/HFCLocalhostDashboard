@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, we're back to a full time week now. Howre you doing?",
+        "ts": "1585578515.000700",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1037648099895_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! That's good. Is the remote network holding up better now then? I'm getting on okay. In all honesty, the lockdown is taking a toll on my mental health. Try as I might to keep myself active it's naturally gonna be difficult. Either way, I'm keeping up with uni work and the project is holding together. I've almost finished my roto for it and at that point we're waiting for 3D renders. I've been taking advantage of my Disney+ trial to catch up on a lot of their biggest films I've missed. My mum and I are gonna start working on the garden once she's done reorganising her room too. We're supporting each other as much as we can.\n\nHow are you getting on?",
+        "ts": "1585581071.000800",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1037645650806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

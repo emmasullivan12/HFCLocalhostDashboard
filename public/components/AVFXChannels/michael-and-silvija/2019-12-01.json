@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, I am ready for a call !",
+        "ts": "1575196765.006900",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/857282927302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Coming on now :) ",
+        "ts": "1575197504.007000",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/855079383264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

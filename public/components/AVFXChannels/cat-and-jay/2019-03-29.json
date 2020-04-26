@@ -1,0 +1,112 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "aah that’s cool… I’m still working on my showreel. I did see that framestore opened their internship and from the last conversation with DNEG they were gonna do so mid april.",
+        "ts": "1553848541.002700",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/593036356341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you perhaps explain me the difference between 2D comp and 3D comp as it’s not quite clear to me.\nalso would you be so kind to sent me your show reel and advise me on some does and don’ts",
+        "ts": "1553848603.002800",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/583985633409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If it’s not too much too ask :smile: and happy Friday Cat",
+        "ts": "1553848624.002900",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/592674600708_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "of course!",
+        "ts": "1553879085.003000",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/590982249232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "well as comp you get to do both 2d and 3d comp.\na 3d comp is a cg only shot usually using Deep information which means you'll need to recreate the 3D environment within nuke and work from there. quite a pain and usually only given to seniors.\na 2d comp is everything else.",
+        "ts": "1553879281.003100",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/593737661957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my current very outdated showreel. I actually got shots from Bohemian Rhapsody and Fantastic Beasts 2 yesterday that I'll add soon as they're my first ever comp work within DNEG.\n<https:\/\/vimeo.com\/93403519>\npassword is \"hireme\"",
+        "ts": "1553879370.003200",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/594845168406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "showreel wise i'm quite biased. I tend to go for what looks cool more than what was hardest haha",
+        "ts": "1553879403.003300",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/590990589072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i came from audiovisual so like to spend time editing and getting it cool looking",
+        "ts": "1553879424.003400",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/594482402407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but i do know that recruiters tend to not listen to whatever music you put on there",
+        "ts": "1553879444.003500",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/584690376561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i'd say you should do a sandwich, put your coolest shots as opening and then closing so that they start with a wow and end with a nice",
+        "ts": "1553879497.003600",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/590993146000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To be fair with you I hate V-ray :smile: I really like redshift though. I can't force vray to have anything decent out of engine, it all needs so much post processing that in the end it's just not worth it(for me). But People still use it and some do magic with it. Just always always keep in mind that all those beautiful images you see from V-ray marketing campaign aren't out of the engine. It's a heavily post processed images from PS or Nuke :slightly_smiling_face:",
+        "ts": "1579864651.008900",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/909054041219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I've been opposed to it for the same reason to be honest, it's always been used for arch viz which is obviously really heavily post processed. Arnold just seems so much more simple but with better and more efficient results",
+        "ts": "1579865366.009000",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/922396520807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So definitely good luck with that :slightly_smiling_face: I'm sure it's not that bad anymore",
+        "ts": "1579887354.009100",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/923329535702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you using vray next?",
+        "ts": "1579887360.009200",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/922981979383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure actually! Depends which version the university have, it's a couple of weeks until I start on that stuff so I'll try to find out beforehand",
+        "ts": "1579888070.009300",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/923349724342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Next looks interesting, kinda fresh take",
+        "ts": "1579889065.009400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/921167715504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but again anytime I get excited about Vray I open the latest one and it's as slow as it was before :smile:",
+        "ts": "1579889091.009500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/923380953654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah my tutors swear it's faster than Arnold but I'm sure it's not :joy:",
+        "ts": "1579892347.009600",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/909795211171_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

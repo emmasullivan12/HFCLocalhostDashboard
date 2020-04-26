@@ -1,0 +1,282 @@
+[
+    {
+        "type": "message",
+        "text": "Hey Dexter - on the usernames \/ slack profiles it's a bit unclear if we should put our last names in our profiles (guidance on the website says no to full names if we interact with students under 18). ",
+        "user": "U5W6M67LZ",
+        "ts": "1497988139.670816",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Not used slack before so don't know it will hide last names etc. ",
+        "user": "U5W6M67LZ",
+        "ts": "1497988160.678067",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Chris - welcome!",
+        "user": "U4VR52RQE",
+        "ts": "1497991086.708442",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thanks! ",
+        "user": "U5W6M67LZ",
+        "ts": "1497991175.738997",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So your last name is not appearing",
+        "user": "U4VR52RQE",
+        "ts": "1497991195.745802",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I haven't put it in ",
+        "user": "U5W6M67LZ",
+        "ts": "1497991205.749377",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok",
+        "user": "U4VR52RQE",
+        "ts": "1497991210.751203",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Can do and I think it will show up ",
+        "user": "U5W6M67LZ",
+        "ts": "1497991220.754814",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Just did ",
+        "user": "U5W6M67LZ",
+        "ts": "1497991241.761865",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "right, well at least we know you read your training! lol",
+        "user": "U4VR52RQE",
+        "ts": "1497991267.770915",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hahaha ",
+        "user": "U5W6M67LZ",
+        "ts": "1497991272.772765",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "will make that clearer on the instructions",
+        "user": "U4VR52RQE",
+        "ts": "1497991273.772992",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "thanks mate",
+        "user": "U4VR52RQE",
+        "ts": "1497991279.775292",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "No problem! ",
+        "user": "U5W6M67LZ",
+        "ts": "1497991291.779268",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

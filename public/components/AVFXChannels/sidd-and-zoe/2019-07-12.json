@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Zoe!\n\nThat's very good to hear! I hope that your work experience goes ahead smoothly!\nAlso yes i've been there, it's a _very_ hard place to be.\nWhat sort of stuff have you been working on in Uni?",
+        "ts": "1562918119.002200",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-12\/694441404919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

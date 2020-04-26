@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Kat, checking back in! I got sucked into a crazy scheduled project but I'm through the woods now. Did you manage to find some stuff to work on?",
+        "ts": "1574695218.000100",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850072658167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

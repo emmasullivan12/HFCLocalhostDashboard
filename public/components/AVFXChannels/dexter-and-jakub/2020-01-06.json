@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure as soon as I find something I'll let you know",
+        "ts": "1578318245.001100",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/884407817217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

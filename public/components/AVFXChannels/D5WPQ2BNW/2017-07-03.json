@@ -1,0 +1,298 @@
+[
+    {
+        "type": "message",
+        "text": "Hey <@U5WMH4QGK>!",
+        "user": "U4V22C6A1",
+        "ts": "1499065627.968102",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yo",
+        "user": "U5WMH4QGK",
+        "ts": "1499065650.973956",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We have another student called Alisha who is interested in law &amp; english who isn't getting too much out of her current E-Mentor (he's being quite unresponsive unfortunately). Care for another?",
+        "user": "U4V22C6A1",
+        "ts": "1499065677.980995",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We met her in her school the other day and she hadn't logged in before that ... but now seems quite engaged!",
+        "user": "U4V22C6A1",
+        "ts": "1499065695.985877",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F631G9MPE",
+                "created": 1499065738,
+                "timestamp": 1499065738,
+                "name": "Prospela - Your Mentee Profile - Alisha M.pdf",
+                "title": "Prospela - Your Mentee Profile - Alisha M.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 199812,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F631G9MPE\/prospela_-_your_mentee_profile_-_alisha_m.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F631G9MPE\/download\/prospela_-_your_mentee_profile_-_alisha_m.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F631G9MPE\/prospela_-_your_mentee_profile_-_alisha_m.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F631G9MPE-6306e09085",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1499065739.996913"
+    },
+    {
+        "type": "message",
+        "text": "Here is her profile ^",
+        "user": "U4V22C6A1",
+        "ts": "1499065743.998101",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sure! I'm pretty busy in meetings in Algiers this week, but should have time to say hi and start chatting ",
+        "user": "U5WMH4QGK",
+        "ts": "1499065827.019767",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Fantastic",
+        "user": "U4V22C6A1",
+        "ts": "1499065872.031452",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "That sounds fun!",
+        "user": "U4V22C6A1",
+        "ts": "1499065879.033313",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "OK - we'll introduce you shortly :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1499065891.036569",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ta",
+        "user": "U5WMH4QGK",
+        "ts": "1499065960.054177",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "She is on it - a good set of questions already",
+        "user": "U5WMH4QGK",
+        "ts": "1499103599.130297",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Amazing! She comes across as quite clever - so hopefully a good chat!",
+        "user": "U4V22C6A1",
+        "ts": "1499107924.453323",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hope Algiers is fun :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1499107929.454453",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

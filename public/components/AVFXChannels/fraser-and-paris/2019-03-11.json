@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds great - worth looking into some cinematography with that mood. The compositing stage should involve effects and colour correction, but there's still the lighting to get right first - which would involve utilising different lighting types, e.g. rim light, fill light... but also it's about getting the shadows right - e.g. softness. You really don't want to lose information which is important as this won't be easy fixed in post. It's got to look the best it can look, and first of all research \/ an aim will be key then really working the controls to get the right areas lit with the right effect and the right areas in shadow with the right fall-off then tweaking the strengths etc of this in post. All for the telling of the story to its maximum. Colour grading is also worth researching for adding a mood.",
+        "ts": "1552308338.005000",
+        "username": "Fraser (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/573019793397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

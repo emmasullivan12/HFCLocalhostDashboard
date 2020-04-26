@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Romone, I hope you're well today! I'm going to talk to some of my colleagues who work in the our animation department to get some tips from them.",
+        "ts": "1543330285.003800",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/490156685559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want to become a film director I would really recommend starting by taking lots of photos. Do you have a camera or video recorder.",
+        "ts": "1543330449.003900",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/490159607159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you're taking photos here's a few things to think about:",
+        "ts": "1543330472.004000",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/488940257508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "* Think about what can make the picture interesting",
+        "ts": "1543330497.004100",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489007667731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "* Frame it well (is the object in the centre, at the side looking into the distance etc)",
+        "ts": "1543330525.004200",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489110569058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "* Telling a story with the picture",
+        "ts": "1543330637.004300",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/490163051191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "* setting yourself a project of taking a set of photos with different moods, for example: 'happy', 'sad', 'melancholy', 'excited', 'hopeful', 'tense', 'scary', 'lonely', 'tired'.",
+        "ts": "1543330728.004400",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489012012499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you are taking photos I'd be really happy to look at them and discuss them with you.",
+        "ts": "1543334239.004500",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489182514130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Romone!\n\nOne of my colleagues who works with our animators has a few suggestions too:\n\nShe says it's really important to draw so if you can go to any art or drawing classes that'd be awesome.  If your school do computer classes that’d be helpful too.\n\nShe also recommends learning any animation software - some of these you can get for free, like 'Blender' or a student version of Maya.\n\nTwo great books to read are:\n•\t'Illusion of Life' by Frank Thomas and Ollie Johnston and\n•\t'Animator's Survival Kit' by Richard Williams\n\nIn the future when you’re starting to think about finishing school there are online animation courses that you can apply to, if you google ‘online animation courses’ you can start to have a look at what’s out there. Some of these are just as good as our UK universities.",
+        "ts": "1543334966.004600",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489397037877_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

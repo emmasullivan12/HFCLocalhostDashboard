@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nathalie, I am still here",
+        "ts": "1580722929.000200",
+        "username": "Connor Woodey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/935502359943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh hey, good to hear from you. Was starting to worry since you didn't reply. Hope everything is going alright? I finished my dissertation so I am back doing my practical stuff. How is the showreel coming along?\nI am currently working on my final project which is due in may. It is supposed to contain glass bottles. As it turns out that is a lot harder to set up than I expected. Do you have any tips on that?",
+        "ts": "1580726418.000300",
+        "username": "Nathalie Puetzer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/920929956562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

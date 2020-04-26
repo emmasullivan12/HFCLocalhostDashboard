@@ -1,0 +1,244 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for the reminder, will definitely scout him out today :eyes:",
+        "ts": "1571831055.011100",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805873540784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a question I didn’t get to ask before but, after working at ILM have you managed to suss out how long someone is generally a roto prep artist before they can go up into compositing? Do you want to go to comp or stay in roto prep for a while?",
+        "ts": "1571831100.011200",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805409872436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I definitely consider myself more of a compositor than a paint and roto artist. Most places expect you to do paint for 18 months before moving you into comp, some places more, some less. I'm probably not going to be doing 18 months just because this isn't my first exposure to a production environment. ILM is slightly different to most places because of the career Paint and Roto people so most people in the dept aren't looking at comp for their future.",
+        "ts": "1571831319.011300",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/793095203634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A buddy of mine is madly talented and he was paint for 2.5 years. Timing is a big factor too.",
+        "ts": "1571831364.011400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/794408430051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah I see, I was gonna say is there like a level of training they expect you to do? Because compositing is far different to rotoing and painting everyday ",
+        "ts": "1571831434.011500",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/808089346774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do they take you on and give you a while to try out the new workflows or techniques you need to know ",
+        "ts": "1571831455.011600",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/807737129383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that's why people get 'stuck' in paint and roto. Paint will teach you a lot to be a better comper but it won't teach you everything",
+        "ts": "1571831472.011700",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/808089955606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mmmm definitely. I feel like everyone’s end goal is to be a compositor but they also need senior roto artists and I can understand it being difficult for some ppl to move on ",
+        "ts": "1571831527.011800",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805416965092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can access anyone's nuke script so I can get a feel for a lot of stuff like that. Plus there's training resources to play around with. But yeah I personally think making the move to comp is prohibitively challenging",
+        "ts": "1571831530.011900",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/794411165715_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ILM is particularly difficult to make the jump because a 'Junior' comp task here would be a Mid\/Senior task anywhere else",
+        "ts": "1571831604.012000",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/808092181286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe Andrew can give me better in-site to how it works at Framestore, I’m eager to learn and go big lmao ",
+        "ts": "1571831619.012100",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/799443703537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fuck yeah!",
+        "ts": "1571831646.012200",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/807740329095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah is that why Allan is always telling me that being a senior or med artist in any other company means you’re a junior at ILM haha ",
+        "ts": "1571831649.012300",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805419033108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "100% reach out to Andrew as soon as possible because he's also someone with the ability to say \"I think this person should stick around as they clearly want to learn\"",
+        "ts": "1571831674.012400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/794413627619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wonder how they distribute the work at Framestore, I can imagine most of the roto and comp is done at their Indian branch so I wonder what work stays here or if the colourists do the majority of the end product ",
+        "ts": "1571831733.012500",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/807741765639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've actually got a friend in roto at framestore and she says they've got a fairly decent sized department",
+        "ts": "1571835946.012600",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805509386772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "outsource is good for doing lots of basic stuff but the complex stuff stays in the main facilities",
+        "ts": "1571835971.012700",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/793191700866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s good for me then. Do roto artists usually get given any shots they need done, like you and Allan for the grad scheme, or do you get contracted work I wonder. Like you roto for a given movie or a tv show for the majority of your contact time ",
+        "ts": "1571836427.012800",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805521222036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I get assigned to a show and do work just for that show till I get moved onto the next one, it helps people keep consistent and also provides context for your work. Instead of doing a spaceship one day then a jungle the next",
+        "ts": "1571837742.012900",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/794550209491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah good to know ",
+        "ts": "1571846427.013000",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805818170996_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting my Framestore pass today so I like to think it’s official and they won’t get rid of me any time soon :P",
+        "ts": "1571846447.013100",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805819082308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's hoping!",
+        "ts": "1571851975.013200",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/799997165073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

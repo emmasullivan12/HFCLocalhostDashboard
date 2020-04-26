@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah man I'm so sorry to hear that. :disappointed: I'm wishing you the best of luck for the game studio!! You got this man let me know if there's anything I can do to help!",
+        "ts": "1571099548.000200",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-14\/797437087158_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

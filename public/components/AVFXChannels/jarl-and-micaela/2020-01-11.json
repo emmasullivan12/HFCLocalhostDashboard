@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! Just so I can reference it in my message to him, what position\/location did you interview for with Goodbye Kansas?",
+        "ts": "1578752271.000400",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-11\/892310500609_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

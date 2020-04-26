@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "text": "You could probs apply to this one too? Although it asks for qualified accountants, I think actually you are much more suited to it than most accountants will be!",
+        "user": "U4VR52RQE",
+        "ts": "1505811103.000224",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/www.reed.co.uk\/jobs\/part-time-finance-director-4-6-days-per-month\/32446284>",
+        "user": "U4VR52RQE",
+        "ts": "1505811106.000062",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Part Time Finance Director 4-6 days per month (32446284) - reed.co.uk",
+                "title_link": "https:\/\/www.reed.co.uk\/jobs\/part-time-finance-director-4-6-days-per-month\/32446284",
+                "text": "The UK’s No.1 job site is taking the pain out of looking for a job. The app brings to market for the first time a new and powerful way to find and apply for the right job for you, with over 200,000 jobs from the UK’s top employers.",
+                "fallback": "Part Time Finance Director 4-6 days per month (32446284) - reed.co.uk",
+                "thumb_url": "https:\/\/www.reed.co.uk\/resources\/cms\/images\/reed-co-uk-r-logo-2016-05-27.png",
+                "thumb_width": 923,
+                "thumb_height": 483,
+                "from_url": "https:\/\/www.reed.co.uk\/jobs\/part-time-finance-director-4-6-days-per-month\/32446284",
+                "service_icon": "https:\/\/www.reed.co.uk\/resources\/images\/layout\/apple-touch-icon.png",
+                "service_name": "reed.co.uk",
+                "id": 1
+            }
+        ]
+    }
+]

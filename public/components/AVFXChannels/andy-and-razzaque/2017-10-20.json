@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Razzaque, I hope all is well with you. Can you tell me a bit about yourself?",
+        "ts": "1508532050.000373",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-20\/259751629300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

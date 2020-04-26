@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is more like a creative thing,  it’s your decision to do what ever you want as director. Normally for concept we collect references online and composite them in photoshop then draw something on the top.",
+        "ts": "1585171980.000100",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1015184688883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

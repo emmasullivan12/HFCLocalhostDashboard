@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have had a look at this website. It did help me widen my knowledge on career options. What intrigued me the most was researching and developing new products and then of course Teaching. I think for now, I really want to work in Research and Teaching. Do you whether these two options are well payed and satisfying as a job?\n\nOther than that, I think working in a company like NHS can be interesting. I am not doing chemistry as an a level so my chances of working as a doctor or in a Hospital are low. If I continue with a Biology degree, are there any chances of me becoming a doctor? \n",
+        "ts": "1507979586.000052",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256398808052_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not that I want to become a doctor (for now) but just curious about it ",
+        "ts": "1507979636.000019",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/255827620593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

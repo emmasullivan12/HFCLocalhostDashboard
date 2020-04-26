@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So is it possible to use the same auto rigger for a set of NPC characters who have different proportions? Like one small and one tall. Or are auto riggers built for one type of character. Either a main character or characters of certain proportions like tall and skinny for example.",
+        "ts": "1582338969.002700",
+        "username": "Katherine Padley (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/966450007014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you also create blendshapes for NPC characters or maybe monster characters, like the less important mob type monsters. Would you use blendshapes on them as well if needed or would blendshapes only really be used on main characters?",
+        "ts": "1582339069.002800",
+        "username": "Katherine Padley (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/966103041159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

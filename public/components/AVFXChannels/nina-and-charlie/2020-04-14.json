@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course! Send me screen grabs! If I don't spot anything odd i can also have a look at the scene if you want",
+        "ts": "1586869125.001300",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1084345904432_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that would be perfect, I’m currently out at the moment but should be able to send them over tomorrow. ",
+        "ts": "1586891163.001400",
+        "username": "Charlie Adams (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1086121960752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

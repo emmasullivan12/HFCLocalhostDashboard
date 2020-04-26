@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did thanks! Now to reinstall all the software and copy over as many files as I can recover!\nAh no, that's annoying! It won't say which RAM or what's wrong with it though?",
+        "ts": "1575566365.008400",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/850142301011_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's the job going? Have you invoiced them yet for a job?",
+        "ts": "1575566377.008500",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/848828382850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ugh, that sounds fun! I've discussed it with them but I need to finish this one job I'm half way through first. I've been trying to sort my computer for a few days working with the tech support and got to the point where he said to just ask for a repair. I don't know if that means sending it back, can't be arsed with that hastle. So I just saw some kid on YouTube say to limit the power going to the CPU, in the advanced settings of the power plan. I dropped it to 95 percent and it seems to be working now. I guess that means I'll lose some processor power. I don't know if there's still something that needs to be fixed so I can use 100%",
+        "ts": "1575574107.008600",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/849044640738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

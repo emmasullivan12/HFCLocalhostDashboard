@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Bimpe, I hope you had a wonderful new year and Christmas break. I’ve been keeping an eye out for jobs and applying for at least 10 day. I really appreciate it and yes let me know :blush:",
+        "ts": "1578998494.000100",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/904973164420_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

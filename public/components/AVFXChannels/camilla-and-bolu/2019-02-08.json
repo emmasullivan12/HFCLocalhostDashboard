@@ -1,0 +1,137 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1549629972.000800",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentees* joined the shared channel_",
+        "ts": "1549629975.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1549630028.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-20\" to \"camilla-and-bolu\"",
+        "old_name": "z-shared-20",
+        "name": "camilla-and-bolu"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@camillaelwood has joined the channel_",
+        "ts": "1549630110.001100",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/547303037286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jb2bunny has joined the channel_",
+        "ts": "1549630162.001200",
+        "username": "smooz (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545881696418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @jb2bunny please meet Camilla your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the relationship and continue chatting within this channel. :wave:",
+        "ts": "1549630185.001300",
+        "username": "Dexter Boyce (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545279316529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1549630187.001400",
+        "username": "Dexter Boyce (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545279338625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1549630200.001500",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545775283619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1549630204.001600",
+        "username": "smooz (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/546946832135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Bolu, how are you? ",
+        "ts": "1549631969.001700",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/547326169766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd love to hear a bit about you. What you're up to, what you are interested in at school and what you like to do for fun! ",
+        "ts": "1549632007.001800",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545744974340_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I work for a charity that helps small businesses grow. All the businesses have social purpose core to what they do. It's an amazing job!",
+        "ts": "1549632040.001900",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545302513425_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For fun I like to go to gigs, watch TV, read and travel !",
+        "ts": "1549632058.002000",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/546109451029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,189 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Adam! Yay! Don't worry - I am getting used to Slack too!",
+        "ts": "1541674336.002100",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474562804484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh amazing! Are you attending Manchester Animation Festival next week then?! I'll be there!",
+        "ts": "1541674363.002200",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474563129876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yay! I am so glad to meet you. It's amazing to meet positive people! :slightly_smiling_face:",
+        "ts": "1541683281.002300",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474729508163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Technically, we should. But 2 years in a row our course is not on the list for the trip.",
+        "ts": "1541683300.002400",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474831576034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll try to explain:\nIt's 3 courses (separate) that make the Animation department.\n1. Traditional Animation\n2. Stop-motion and puppet making\n3. Computer Games Animation",
+        "ts": "1541683332.002500",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474660517828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On my first year, we didn't go because we had an \"Industry Week\" instead (people from industry come down and deliver a talk).",
+        "ts": "1541683358.002600",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/475883049591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll ask a lecturer (who is responsible for the trip) about it.",
+        "ts": "1541683378.002700",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474832470658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aw that is a shame, since it's the biggest animation festival in the UK and so close!",
+        "ts": "1541690820.002800",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474849306611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I guess it doesn't really have a focus on games as such!",
+        "ts": "1541690852.002900",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474346674145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Was the industry week helpful at least? What kind of speakers do they invite?",
+        "ts": "1541690930.003000",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474851350499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a really good friend who went to Staffordshire for animation, he's been working in games in Manchester for almost his entire career :slightly_smiling_face: I met him on my first job out of Uni!",
+        "ts": "1541690980.003100",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/476353442150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know, it is. I would be very glad to visit this festival at least once.",
+        "ts": "1541717596.003200",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/476790143910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Generally speaking - yes. At least, this is what our lecturers told us. That it's not that much focus on games in terms of animation.",
+        "ts": "1541717630.003300",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/475391209106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About the industry week:\nWe had it last year, but this year they stopped doing that. I'm not really sure what was the cause. I had a chat with a course leader and my personal tutor. They both said that \"Industry week\" this year was cancelled.",
+        "ts": "1541717679.003400",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/475290125299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But last year we had: (Important notice - I apologise for not remembering the names). We had speakers from:\n• *TT Games* (he was working on Lego games series)\n• *Cubic Motion* (he was working on facial animation for Star Citizen; it was UKIE Conference, same week as Industry week; he is Staffs graduate)\n• *Rare* (she was working on Sea of Thieves).",
+        "ts": "1541717774.003500",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/476443792791_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was many other speakers, apart from highlighted above. However, these speakers (above) were talking about animation.",
+        "ts": "1541717846.003600",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474656019712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was nice to be there. As a First year student, everything is so new and cool. You think: \"Wow! Hopefully one day I'll on their place and talk about how is it to work industry\" :sweat_smile:",
+        "ts": "1541717917.003700",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474789573249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

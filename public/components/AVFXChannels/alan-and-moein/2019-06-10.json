@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Moein do you have something you'd like my input on? You've gone very quiet. Let me know how I can help.",
+        "ts": "1560204893.000100",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/654587116769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

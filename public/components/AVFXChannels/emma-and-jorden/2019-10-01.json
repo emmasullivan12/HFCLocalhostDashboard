@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning! This looks super cool! It's a great starting point for you to demonstrate your passion for the industry",
+        "ts": "1569915042.002000",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/780999468439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's the job hunt going? Anything I can help you with?",
+        "ts": "1569915060.002100",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779149116080_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya thanks Haha.\n\nIt's going alright no interviews yet, just saving up for the camera an computer",
+        "ts": "1569975576.002200",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/768925537491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

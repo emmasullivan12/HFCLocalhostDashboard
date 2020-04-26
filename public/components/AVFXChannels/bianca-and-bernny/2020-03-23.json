@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I would like to show you an animation I’m working on right now but first I want to finish blocking it",
+        "ts": "1584991006.000100",
+        "username": "Bernny Mwamba K (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020391642901_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

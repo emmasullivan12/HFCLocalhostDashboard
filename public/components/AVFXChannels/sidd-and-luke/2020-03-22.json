@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sid! I've had to leave my current group project due to them not being able to supply the rig early enough. I have 2 months to have a short animation piece and to improve my showreel so its gonna be a crazy few months for me :sweat_smile: Ill probably use my animated film piece to replace one of my show reel animations. Are you able to check over it when you have time :smile: ? A quick summary is that its a short comedy film about 2 characters. Ill be animating the first bit then my friend will animate the last bit. Its gonna be like 25\/30 seconds long. The guy character is trying to flirt with the girl, however the girl is uninterested and disgusted resulting her throwing a book at him. As the girl walks off the camera changes to the girl in shock as the guy has his arms around her leg. She pulls away from him leaving the guy upset but he hugs the book because its the only thing he has of hers, but then the girl comes back and snatches it from his hands. It probably doesn't sound that funny but we gonna try pull it off. The story was thought last second so if theirs anything you'd change to make it funnier please let me know ! You can see in the animation thats my part of the story is her being disgusted by him then throws the book, its early stages but I want to get as much feedback as possible to make sure it looks good ahaha",
+        "ts": "1584904534.003500",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017801714853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank youu",
+        "ts": "1584904535.003600",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017327946980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ill send it you in a sec",
+        "ts": "1584904791.003700",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1007724292849_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im also thinking on changing the camera so its not all front on? But for show reel purposes I might have to keep it.",
+        "ts": "1584904842.003800",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1019555594935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm animating the woman first before I start on the guy, would you say Its best to animate them at the same time or is this okay ?",
+        "ts": "1584905301.003900",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1005004506802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/playground\/08f2e62f3fdc4e3096627922512037c0?offlineMode=1#1431598\/1535781\/f_98>",
+        "ts": "1584905441.004000",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1006323901011_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: 08f2e62f3fdc4e3096627922512037c0",
+                "title_link": "https:\/\/syncsketch.com\/playground\/08f2e62f3fdc4e3096627922512037c0?offlineMode=1#1431598\/1535781\/f_98",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: 08f2e62f3fdc4e3096627922512037c0",
+                "from_url": "https:\/\/syncsketch.com\/playground\/08f2e62f3fdc4e3096627922512037c0?offlineMode=1#1431598\/1535781\/f_98",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/playground\/08f2e62f3fdc4e3096627922512037c0?offlineMode=1#1431598\/1535781\/f_98"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584905442.000000"
+        }
+    }
+]

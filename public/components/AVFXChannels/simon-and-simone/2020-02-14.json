@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simone,\nI'm so sorry for my delayed response, I've had some family health issues and I forgot to reply. Thank you for continuing to ask so many good questions.\n\nThat's a good question about seeing the same shot over and over. Sometimes your eyes can start to smooth out the problems with it if you stare for long enough and it's also easy to have the problem of \"I know this doesn't look right but why?\". I know some people who like to mirror the shot or watch it backwards, personally I don't do that very often but I know it helps some people. I heard a good quote from an art tutor a while ago, it went something like \"when you're feeling stuck or overwhelmed what will save you is the process\" and by that he meant if you have a step by step guide to eg how to block an animation or common issues to look out for, then when you're feeling blind to a shot you can just refer back to that checklist to get you out of a rut.\n\nGlad you liked the look of Paddington! I'm looking forward to seeing what people think of it in this country. It's exciting to work on especially as we have Ben Whishaw and some other well know voices. The show has quite a lot of acting range for a preschool show which is lovely, sometimes you can have shows where characters are 100% happy all the time and it can get difficult to come up with something fresh!\n\nThanks for the kind words on the bafta, I'm super proud of the team and the reach the show's had so far.\n\nI hope I'm not too late to answer your morphing questions. Assuming a low budget where all you have is character A's rig and character B's rig then if the rig has the translate and scales unlocked on the main controllers I would distort rig A for about half the shot then switch to rig B in almost the same \"pose\" then finish with B going back into a regular pose. If the motion is quick enough you won't notice the switch. What I'd also probably do is have a couple of frames where both rigs are visible to ease the blend. Have you tried anything already?",
+        "ts": "1581696535.000300",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/942866498305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your work is incredible! Where did you study?? ",
+        "ts": "1569923612.002300",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/767816635203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! I studied at Hertfordshire but a huge amount of my learning came from sneaking into companies and absorbing as much as I could while I was there.",
+        "ts": "1569935899.002400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779059036980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats dead cool. What places have you worked? ",
+        "ts": "1569961237.002500",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/768694006307_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the advice :+1:,hope you are doing good. I just found out that we might be going on a university trip to Framestore soon.",
+        "ts": "1581816751.004600",
+        "username": "Edjoy Trindade (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-15\/941564832290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":D pretty cool! I'm in the montreal office now, but hope you have fun!",
+        "ts": "1581823304.004700",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-15\/953935063956_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

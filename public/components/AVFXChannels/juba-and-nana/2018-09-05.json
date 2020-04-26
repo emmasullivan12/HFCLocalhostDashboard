@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds great! Sorry I haven't been too active myself, been getting ready to back to school.",
+        "ts": "1536143937.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-05\/429238634164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of my thoughts on that question, story and visual design are 2 key things that I think games can take from any form of storytelling.",
+        "ts": "1536144098.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-05\/429613138309_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

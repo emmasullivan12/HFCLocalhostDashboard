@@ -1,0 +1,876 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's it going Josh, any new work?",
+        "ts": "1554729473.000100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589632928178_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, yeah I'm good just working towards deadlines. :blush:",
+        "ts": "1554729561.000200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589634519282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I recently created a intro sequence which is a parody of catch me if you can for my Showreel :blush:",
+        "ts": "1554729602.000300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604577685303_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah its time again,",
+        "ts": "1554729640.000400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589636029458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is that going, close to finishing?",
+        "ts": "1554729658.000500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604578755111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/327677800>",
+        "ts": "1554729667.000600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594737262561_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Motion Graphics Sequence For Showreel",
+                "title_link": "https:\/\/vimeo.com\/327677800",
+                "author_name": "Joshua Boyd",
+                "author_link": "https:\/\/vimeo.com\/user75334539",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/772011834_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Catch Me If You Can inspired intro sequence for Showreel.",
+                "fallback": "Vimeo Video: Motion Graphics Sequence For Showreel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/327677800?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Motion Graphics Sequence For Showreel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/327677800",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/327677800"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I'm on track to getting everything finished I'm not stressing about it. It's also not due until after Easter :blush:",
+        "ts": "1554729717.000800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/601053679728_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh sick",
+        "ts": "1554729851.000900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603956797397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thats really cool",
+        "ts": "1554729855.001000",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603956872917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice use of color too",
+        "ts": "1554729861.001100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589542204499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aw I'm glad you like it :blush:",
+        "ts": "1554729885.001200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604913818374_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hopefully it'll help spice up my showreel :joy:",
+        "ts": "1554729942.001300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589641791778_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "defiantly",
+        "ts": "1554729970.001400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604915384598_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "just love the lines at the beginning",
+        "ts": "1554729995.001500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594743606801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks :grin:",
+        "ts": "1554730011.001600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604916238950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "After Effects?",
+        "ts": "1554730036.001700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604585996439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you see the newspaper there is a the logos of the software that I am proficient in and then when he turns it over there's a graphic of the iron giant which is my favorite animated movie :grin:",
+        "ts": "1554730060.001800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594744890193_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yeah it's After Effects :blush:",
+        "ts": "1554730068.001900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589644225426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maya?",
+        "ts": "1554730193.002000",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594747423089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Houdini?",
+        "ts": "1554730219.002100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594747971777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Never used Houdini and only have limited experience in Maya, Max, motion builder and Unity :+1:",
+        "ts": "1554730280.002200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589648454386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Motion graphics is a nice industry but its easy and full of people so the salaries are low",
+        "ts": "1554730290.002300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603965480469_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm just not good at 3D unfortunately :confused:",
+        "ts": "1554730320.002400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589649302930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "3D is hard, but that's a good thing",
+        "ts": "1554730388.002500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604923811318_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Senior 3D artists I know make £500 per day",
+        "ts": "1554730411.002600",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594752016145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Motion graphics make £200, maybe 250 tops",
+        "ts": "1554730436.002700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603454475572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If I was young again, I'd choose the hardest program I could learn and spend my time learning it",
+        "ts": "1554730482.002800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604595128455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The software of the future is either Nuke or Houdini",
+        "ts": "1554730503.002900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589653021314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think Maya for animation though",
+        "ts": "1554730517.003000",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/601069587456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My course just doesn't offer Houdini or Nuke",
+        "ts": "1554730540.003100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604596313911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you know all three.... then you can choose your price $$$ and company",
+        "ts": "1554730542.003200",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603970736325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They wouldnt, my uni only offered AE",
+        "ts": "1554730560.003300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594755005505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I had to teach myself after effects :+1:",
+        "ts": "1554730563.003400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603971097013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Access VFX was formed for precisely this reason. UNI's don't know this industry and keep teaching students the wrong thing.",
+        "ts": "1554730626.003500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594756313505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well my GF does VFX in the same uni as me and they teach Houdini and Nuke. She has it really tough though as most of the lecturers don't really know the software that well in the first place :confused:",
+        "ts": "1554730718.003600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589559502851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure I could see myself as a 2D character Animator or something along the lines of that. I know they don't earn a lot either.",
+        "ts": "1554730755.003700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604600579111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha thats funny, but also completely believable. Lecturers prob make 50k, that is less that a mid level artist.",
+        "ts": "1554730819.003800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603462202004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Any senior artist who is good enough to teach wouldnt take the pay cut",
+        "ts": "1554730850.003900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594760839313_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah although a lot of them are a little older and like the security of the job :grin:",
+        "ts": "1554730896.004000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603977819605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or are really young because they're just starting out.",
+        "ts": "1554730918.004100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603464185236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can see why its difficult to learn these software",
+        "ts": "1554730959.004200",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604935460390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sites like digital tutors are your best bet",
+        "ts": "1554730975.004300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603979405509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but its very hard work",
+        "ts": "1554730981.004400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589662663282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and you will only really start learning when you start working on real projects",
+        "ts": "1554731004.004500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589565225987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just bear in mind that what you choose to learn now will carry forward",
+        "ts": "1554731031.004600",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603466526916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's true...",
+        "ts": "1554731048.004700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594764782673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know basically nothing about 3D though and have never touched the software that will lead the industry. I'm finishing my second year of Uni as well :joy:",
+        "ts": "1554731110.004800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603468093604_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you seen any of the new Lego movies? I was really impressed with the level of detail that went into them.",
+        "ts": "1554731149.004900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603469006260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "not the lastest",
+        "ts": "1554731336.005000",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604612546599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but that would have been made using Maya and Nuke :stuck_out_tongue:",
+        "ts": "1554731350.005100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/601086548064_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and probs Houdini for simulations",
+        "ts": "1554731368.005200",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604943891526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh and Photoshop for dmp's",
+        "ts": "1554731390.005300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594771971329_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The first moive: <https:\/\/www.youtube.com\/watch?v=po0dmHhgsxU>",
+        "ts": "1554731433.005400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589672106498_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "The LEGO Movie - \"Creating the Bricks\" [HD]",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=po0dmHhgsxU",
+                "author_name": "Warner Bros. Pictures",
+                "author_link": "https:\/\/www.youtube.com\/user\/WarnerBrosPictures",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/po0dmHhgsxU\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: The LEGO Movie - \"Creating the Bricks\" [HD]",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/po0dmHhgsxU?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=po0dmHhgsxU",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=po0dmHhgsxU"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I know I saw that and I was really impressed :blush:",
+        "ts": "1554731680.005600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/601093646736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I was younger I made Lego Stopmotion films and I always wondered what it would look like it a 3D company actually made it look real :sweat_smile:",
+        "ts": "1554731731.005700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589678451522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They used Lego Digital designer as well which is a 3D program just for Lego :grin:",
+        "ts": "1554731760.005800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/601095308720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I worked on 8 episodes of this awhile back, <https:\/\/www.imdb.com\/title\/tt2356791\/?ref_=nm_flmg_vsl_12>",
+        "ts": "1554732024.005900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604958371286_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "IMDb",
+                "title": "Legends of Chima (TV Series 2013–2014) - IMDb",
+                "title_link": "https:\/\/www.imdb.com\/title\/tt2356791\/?ref_=nm_flmg_vsl_12",
+                "text": "Created by Tommy Andreasen, John Derevlany, Erik Legernes. With David Attar, Bethany Brown, Bill Courage, Scott Shantz. The magical world of CHIMA - a land ruled by animals that walk, talk, drive vehicles, use machinery and live in castles - was once a pristine, natural paradise but has now become a battle ground where friends have become worst enemies.",
+                "fallback": "IMDb: Legends of Chima (TV Series 2013–2014) - IMDb",
+                "image_url": "https:\/\/m.media-amazon.com\/images\/M\/MV5BOTcwMDQwMDc1NF5BMl5BanBnXkFtZTcwNTM1NTgyOQ@@._V1_UY1200_CR113,0,630,1200_AL_.jpg",
+                "from_url": "https:\/\/www.imdb.com\/title\/tt2356791\/?ref_=nm_flmg_vsl_12",
+                "image_width": 131,
+                "image_height": 250,
+                "image_bytes": 163843,
+                "service_icon": "https:\/\/m.media-amazon.com\/images\/G\/01\/imdb\/images\/desktop-favicon-2165806970._CB484110913_.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.imdb.com\/title\/tt2356791\/?ref_=nm_flmg_vsl_12"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lego is pretty cool",
+        "ts": "1554732033.006100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604627951495_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Man is there anything you haven't done :joy:",
+        "ts": "1554732068.006200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589686277026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I might do something with 3D Lego to try and see if I can learn to love it :joy:",
+        "ts": "1554732123.006300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/601103904448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its a fast industry :slightly_smiling_face:",
+        "ts": "1554732429.006400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603497571556_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You always move from 1 project to another hahah",
+        "ts": "1554732444.006500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594795750273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now on Wonder woman . :stuck_out_tongue:",
+        "ts": "1554732462.006600",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604968750422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha fair enough :grin:",
+        "ts": "1554732470.006700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604968907382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wonder Woman 2? :sweat_smile:",
+        "ts": "1554732478.006800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589695754450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeh but it wont come out till next year",
+        "ts": "1554732492.006900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/594796781393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Holy crap that's awesome :open_mouth:",
+        "ts": "1554732508.007000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589696421954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you seen the trailer for the new Joker fill coming in October?? :sweat_smile::sweat_smile::sweat_smile:",
+        "ts": "1554732526.007100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604970150262_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm really excited for it :grin:",
+        "ts": "1554732537.007200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603500001844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Film*",
+        "ts": "1554732544.007300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/604639704311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh man thats that sick trailer",
+        "ts": "1554733233.007400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603515123636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I cant wait, its going to be a really good film",
+        "ts": "1554733247.007500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589712415122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think he will do the role justice",
+        "ts": "1554733258.007600",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589712605922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Me too, there's a biiig expectation on him though :sweat_smile:",
+        "ts": "1554733543.007700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/589718806434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,532 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Teddy, I'm online, hope you've had a good week.",
+        "ts": "1543500034.015700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491395545157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caroline! Ah my week's been alright ",
+        "ts": "1543500076.015800",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491196928098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you been back in classes this week?",
+        "ts": "1543500105.015900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491095083123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still no, we've been left on self-managed time to do our own work",
+        "ts": "1543500213.016000",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490461359824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh Ok, so how has that gone? Have you found it easy to manage your time? How confident are you feeling about your project deadlines?",
+        "ts": "1543500273.016100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492250569911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am feeling pretty confident now, as I have had a productive week. I managed to finish one task completely, and am well on my way to finishing another ",
+        "ts": "1543500395.016200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492252583127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's good news, its good to hear you're feeling confident about it.",
+        "ts": "1543500491.016300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491101266083_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm no longer as panicked as I was before for sure",
+        "ts": "1543500548.016400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491404025637_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So in our chat today, would you like to explore the job roles I mentioned a couple of sessions ago that are a little more drawing focused? Like Storyboarding and Matte painting.",
+        "ts": "1543500601.016500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491205484850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please",
+        "ts": "1543500654.016600",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492607745270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was reading this article this morning by our Head of Animation about Storyboarding and thought of you <https:\/\/escapestudiosanimation.blogspot.com\/2018\/11\/wreck-it-ralph-storyboards.html>.\n\nI think its interesting the correlation he notes between storyboarding and directing, they appear to require similar skills, very visual, setting the direction of the film, an eye for story and narrative.",
+        "ts": "1543500816.016700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492259414231_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Wreck-It Ralph Storyboards",
+                "title_link": "https:\/\/escapestudiosanimation.blogspot.com\/2018\/11\/wreck-it-ralph-storyboards.html",
+                "text": "Wreck-It Ralph 2 is hitting our screens tomorrow, and this latest Disney animated film will have deployed many of the latest digital fil...",
+                "fallback": "Wreck-It Ralph Storyboards",
+                "image_url": "https:\/\/lh6.googleusercontent.com\/proxy\/yBWxMlH0P7yQgY7uNeXVuzd1BMWrxJULzzh_nbx5KFUxuCCN8RTo8H616fZc2ejMqGRKt5BlSnPDl0nEqXmuJlc8T0w=w1200-h630-n-k-no-nu",
+                "from_url": "https:\/\/escapestudiosanimation.blogspot.com\/2018\/11\/wreck-it-ralph-storyboards.html",
+                "image_width": 333,
+                "image_height": 250,
+                "image_bytes": 15917,
+                "service_icon": "https:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosanimation.blogspot.com\/2018\/11\/wreck-it-ralph-storyboards.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wondered whether you also enjoy the idea of interpreting a directors vision into a storyboard?",
+        "ts": "1543500893.016900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491107812419_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think i have a love\/hate relationship with storyboarding :grin: I find they are obviously very helpful for animation purposes, but my technical skills for making them aren't... amazing, but that's probably more a practice thing I guess. I've never had to make a storyboard for someone else's specific idea",
+        "ts": "1543501108.017000",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491111343219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So have you done them for your own projects?",
+        "ts": "1543501167.017100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491214751682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, we are encouraged to do them as we can submit them as part of our progress, plus we make animatics out of them",
+        "ts": "1543501272.017200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492617838006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So when you say you have a love\/hate feeling towards them, what do you hate and what do you love about them?",
+        "ts": "1543501429.017300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490614738545_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I sometimes find them very difficult to complete, and often make shots complicated or quick changing which gives me more cells to make. I like though that they can be really detailed, or not detailed at all, as it means i can power through making them with just stick figures",
+        "ts": "1543501725.017400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492625604102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK, so technically making them is tricky, but are you comfortable with the coming up with the ideas for the storyboard, and knowing what you want to do with it?",
+        "ts": "1543501831.017500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490621721041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It definitely varies! Sometimes my ideas get really complicated, and i find working out timings difficult with storyboards when translating to an animation. I usually end up having to cut a fair amount out ",
+        "ts": "1543501952.017600",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490490513440_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats interesting",
+        "ts": "1543502017.017700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492279933287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you come across Toonboom Storyboarding pro software?",
+        "ts": "1543502082.017800",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492281093911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If they've got some free trial licences, I've been reliably informed that it is really helpful for animators when creating storyboards",
+        "ts": "1543502116.017900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490493434384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It might be something that helps you figure out if its just practice and tools that you need to master, or if its not a good fit for you",
+        "ts": "1543502145.018000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490627441601_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They have a 21 day free trial <https:\/\/store.toonboom.com\/downloads\/try\/551>",
+        "ts": "1543502290.018100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491065398900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes we use toonboom a fair amount, and I've used storyboard pro for this semester",
+        "ts": "1543502321.018200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491132572691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh great!",
+        "ts": "1543502386.018300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491133719699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like its link with harmony too, but ive only really used it after I've thumbailed a storyboard lol",
+        "ts": "1543502407.018400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491067456516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What type of feedback have you received from tutors about your storyboards? You say you don't have the technical skills for them, but what do your tutors think?",
+        "ts": "1543502488.018500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491068967684_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And what do your coursemates think? Would you ever offer to do the storyboards for a group project?",
+        "ts": "1543502626.018600",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490502566416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My tutors understand them so that's good. Theyve never said that i need to do anything differently. I've never thought about doing it for a group project admittedly",
+        "ts": "1543502870.018700",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491142495011_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Might be worth giving it a go and create a storyboard for someone elses idea. That's the most likely scenario you'd have as a storyboarder, using your skills to interpret someone elses ideas into storyboard.",
+        "ts": "1543502975.018800",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492648164806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lastly before I have to go at 3pm, what do you think about the role of a matte painter at the other end of the production pipeline?",
+        "ts": "1543503000.018900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490509375136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Matte Painters are towards the end of the pipeline, so you're working with lots of other peoples work, rather than interpreting onto a blank canvas. It's technical, but requires lots of traditional art and design skills",
+        "ts": "1543503056.019000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492649672198_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's quite a lot of overlap between matte painting and concept design these days, which was an area you said you were interested in during one of our first conversations",
+        "ts": "1543503193.019100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492301134871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes i thought about looking into matte painting as it was mentioned at the VFX access event but i didnt really know what it was",
+        "ts": "1543503420.019200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492656425718_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you got a copy of the careers guide we gave out at the Access VFX event?",
+        "ts": "1543503490.019300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490518483584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a section on Matte Painting that you might find helpful",
+        "ts": "1543503504.019400",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491455976229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FEEK8MKT3",
+                "created": 1543503627,
+                "timestamp": 1543503627,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 186445,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEEK8MKT3\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEEK8MKT3\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEEK8MKT3-7a78d6f2d8\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEEK8MKT3-7a78d6f2d8\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEEK8MKT3-7a78d6f2d8\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 255,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEEK8MKT3-7a78d6f2d8\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 340,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEEK8MKT3-7a78d6f2d8\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEEK8MKT3-7a78d6f2d8\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 510,
+                "thumb_720_h": 720,
+                "image_exif_rotation": 1,
+                "original_w": 532,
+                "original_h": 751,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FEEK8MKT3\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FEEK8MKT3-c80b0a2542",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1543503630.019500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm going to have to go now. It sounds like it would be helpful to look into Matte Painting a little further. I'm going to be away next week, but would you like to speak again during the week of the 10th Dec?",
+        "ts": "1543503659.019800",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490655548033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes can do that! That gives me time to look into matte painting ",
+        "ts": "1543503728.019900",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492662759670_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Teddy, sorry I had to jump into a meeting. Would 4pm on Mon 10th work for you?",
+        "ts": "1543510492.020000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492801317446_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that's fine!",
+        "ts": "1543510517.020100",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491400278562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great, chat then. Have a good week!",
+        "ts": "1543510647.020200",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490665293600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

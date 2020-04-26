@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Merry christmas",
+        "ts": "1577268708.002600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-25\/873095110354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

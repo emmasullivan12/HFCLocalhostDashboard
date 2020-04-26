@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! :] How was your weekend? Have you made any progress on your project? It's my girlfriends birthday so didn't have too productive a time! haha That's cool, my course was the same really, I did Multimedia at Nottingham Trent, our lecturer pushed for character animation too but I didn't really get too into that and always preferred look dev and fx :slightly_smiling_face: do you have any other projects for this year or will this one be the focus?",
+        "ts": "1543231981.003700",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487156585456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

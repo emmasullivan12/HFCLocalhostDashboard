@@ -1,0 +1,614 @@
+[
+    {
+        "type": "message",
+        "text": "did you get your student?",
+        "user": "U5WUKRLBD",
+        "ts": "1498115743.527203",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I've been told about mine ",
+        "user": "U5X3KFLFN",
+        "ts": "1498116702.720330",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Have you ",
+        "user": "U5X3KFLFN",
+        "ts": "1498116709.721852",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i have been given the overview but they havent logged on yet. how did your intro video go?",
+        "user": "U5WUKRLBD",
+        "ts": "1498116764.733452",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I haven't made mine yet ",
+        "user": "U5X3KFLFN",
+        "ts": "1498116879.758252",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm waiting for him to log in then I'll make one.  Have you made yours? ",
+        "user": "U5X3KFLFN",
+        "ts": "1498116906.763712",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "whatttttttt?!?! i did mine last night, in garden in the sun. was a lovely backdrop :wink:",
+        "user": "U5WUKRLBD",
+        "ts": "1498116923.767433",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yeah mines not logged in yet so how can you send it to them? ",
+        "user": "U5X3KFLFN",
+        "ts": "1498116947.772174",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I look better today anyway. I'm not a hot sweaty mess :joy:",
+        "user": "U5X3KFLFN",
+        "ts": "1498116969.776710",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i just uploaded it and sent it to emma for review, mines like 40seconds",
+        "user": "U5WUKRLBD",
+        "ts": "1498116979.779009",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "haha, i have amazing air con in my office so always bloody freezing",
+        "user": "U5WUKRLBD",
+        "ts": "1498116992.782023",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'll make one this morning ",
+        "user": "U5X3KFLFN",
+        "ts": "1498117062.796339",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "What did you say?",
+        "user": "U5X3KFLFN",
+        "ts": "1498117141.812546",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Just made one and sound like a bloke :joy::joy:",
+        "user": "U5X3KFLFN",
+        "ts": "1498117366.860468",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Too early! Will do another one when I've woken up ",
+        "user": "U5X3KFLFN",
+        "ts": "1498117395.866584",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F5X319A8G",
+                "created": 1498118394,
+                "timestamp": 1498118394,
+                "name": "IMG_7746.MOV",
+                "title": "my intro video",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U5WUKRLBD",
+                "editable": false,
+                "size": 77479951,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5X319A8G\/img_7746.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5X319A8G\/download\/img_7746.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U5WUKRLBD\/F5X319A8G\/img_7746.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5X319A8G-31afc26d0f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U5WUKRLBD",
+        "display_as_bot": false,
+        "ts": "1498118400.088253"
+    },
+    {
+        "type": "message",
+        "text": "there's no sound :ear:",
+        "user": "U5X3KFLFN",
+        "ts": "1498120626.633243",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "should be, worked ok for Emma. try turning the volume up...",
+        "user": "U5WUKRLBD",
+        "ts": "1498121313.807607",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F5XQ3NC9Z",
+                "created": 1498134265,
+                "timestamp": 1498134265,
+                "name": "IMG_4132.MOV",
+                "title": "My awkward intro...",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U5X3KFLFN",
+                "editable": false,
+                "size": 92243227,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XQ3NC9Z\/img_4132.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XQ3NC9Z\/download\/img_4132.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U5X3KFLFN\/F5XQ3NC9Z\/img_4132.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5XQ3NC9Z-3431f51c66",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U5X3KFLFN",
+        "display_as_bot": false,
+        "ts": "1498134271.708212"
+    },
+    {
+        "type": "message",
+        "text": "you're so polite!",
+        "user": "U5WUKRLBD",
+        "ts": "1498135230.947669",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "its so awkward",
+        "user": "U5X3KFLFN",
+        "ts": "1498135689.070117",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "only have to do it once though, at least you're not a narcissist",
+        "user": "U5WUKRLBD",
+        "ts": "1498136131.194532",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": ":joy:",
+        "user": "U5X3KFLFN",
+        "ts": "1498136766.393569",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I've been matched up now ",
+        "user": "U5X3KFLFN",
+        "ts": "1498136772.395409",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Have you? ",
+        "user": "U5X3KFLFN",
+        "ts": "1498136775.396269",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "not yet, they said they were speaking to her teacher today!",
+        "user": "U5WUKRLBD",
+        "ts": "1498139692.424805",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I have been set up now",
+        "user": "U5X3KFLFN",
+        "ts": "1498139904.508901",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "eek",
+        "user": "U5X3KFLFN",
+        "ts": "1498139905.509184",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "haha, good luck! let me know how it goes and if you have any tips!",
+        "user": "U5WUKRLBD",
+        "ts": "1498141219.045271",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

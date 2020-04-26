@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Juba, I'm a 2D animator. I just finished my MA in Character Animation in Central Saint Martins, London. I went one year ago to this VFX event in London and filled in the form to get an adviser. I'm working between London and Mexico.",
+        "ts": "1574176654.001700",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/842756545222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Last time I was working as a colourist and assist in the new animated film for Chanel 4 and Universal called The Tiger Who Came to Tea. At Lupus Films, London.",
+        "ts": "1574176718.001800",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/827760500738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would like to know more about character animation, movement but also see if there is a chance for me to like 3D, hehe. I've used Maya but so far I haven't felt comfortable using it, I think my MA was more focused on storytelling, body acting and 2D animation than something else.",
+        "ts": "1574176824.001900",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/827763625810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*Channel 4",
+        "ts": "1574176841.002000",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/840552730960_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice to meet you! :slightly_smiling_face:",
+        "ts": "1574176859.002100",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/842407974631_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

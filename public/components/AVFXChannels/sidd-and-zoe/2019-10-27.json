@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for all of this, it will be so helpful for my report :D can't thank you enough :)",
+        "ts": "1572219252.000700",
+        "username": "Zoë Paterson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-27\/813248308678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

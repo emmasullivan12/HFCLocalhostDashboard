@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've put together a mood board with some lines of information to sort of explain some of my thinking, I couldn't quite decide on one so there's three ideas across three mood boards",
+        "ts": "1569436822.002300",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/773294934752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FNQQESLH2",
+                "created": 1569436851,
+                "timestamp": 1569436851,
+                "name": "Brief.pdf",
+                "title": "Brief",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2189287,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNQQESLH2\/brief.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNQQESLH2\/download\/brief.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNQQESLH2-fc9f73cb69\/brief_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 910,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FNQQESLH2\/brief.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FNQQESLH2-a58521dfcb",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1569436853.002400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! I will go through it , select one , as lets start pointing into a direction. QUESTION: in your says year: 30 years, like 30 years from now? 2049?",
+        "ts": "1569446455.002700",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/773510310277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "through it",
+        "ts": "1569448768.002800",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/775755062230_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":slightly_smiling_face:",
+        "ts": "1569448770.002900",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/760772705298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

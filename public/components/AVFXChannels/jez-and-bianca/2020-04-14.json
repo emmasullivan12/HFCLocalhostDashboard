@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jez! I've added an updated version of the shot to that same SyncSketch link if you've got time to take a look.",
+        "ts": "1586884852.002400",
+        "username": "Bianca Iancu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1074628766369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Ok great. It is really important to set yourself goals, that is one lesson learnt that will always be important to me.",
+        "user": "U5WUKRLBD",
+        "ts": "1498725225.688877",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "What are you looking to study @ University?",
+        "user": "U5WUKRLBD",
+        "ts": "1498725245.693968",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

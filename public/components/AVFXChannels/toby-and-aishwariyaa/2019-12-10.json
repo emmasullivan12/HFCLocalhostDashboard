@@ -1,0 +1,59 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey hope all is well, thought you might find this interesting",
+        "ts": "1576037873.002100",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/868445796000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&amp;utm_content=106162222&amp;utm_medium=social&amp;utm_source=linkedin&amp;hss_channel=lcp-2663437|https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&amp;utm_content=106162222&amp;utm_medium=social&amp;utm_source=linkedin&amp;hss_channel=lcp-2663437>",
+        "ts": "1576037876.002200",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/870654890054_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Discover @ The Rookies",
+                "title": "Beginner's Guide to Visual Effects - A free book that explains everything you need to know about getting started.",
+                "title_link": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&utm_content=106162222&utm_medium=social&utm_source=linkedin&hss_channel=lcp-2663437",
+                "text": "Why pursue a career in Visual Effects? Maybe because it's a career that involves the perfect mix of story telling, cutting-edge technology and creativity. It could also be because you love films and want to hang out on set surrounded by movie stars. Maybe you want a career that allows you to travel the world or even work remotely from home. Or maybe it's because you love drawing and building things with your hands and on the computer. There are so many reasons why you would want to work in Visua",
+                "fallback": "Discover @ The Rookies: Beginner's Guide to Visual Effects - A free book that explains everything you need to know about getting started.",
+                "image_url": "https:\/\/discover.therookies.co\/content\/images\/2019\/09\/facebook-advert-1.png",
+                "image_width": 476,
+                "image_height": 250,
+                "fields": [
+                    {
+                        "title": "Written by",
+                        "value": "Andrew McDonald",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&utm_content=106162222&utm_medium=social&utm_source=linkedin&hss_channel=lcp-2663437",
+                "image_bytes": 757161,
+                "service_icon": "https:\/\/discover.therookies.co\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&amp;utm_content=106162222&amp;utm_medium=social&amp;utm_source=linkedin&amp;hss_channel=lcp-2663437"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, thanks I will check it out sometime, just have mocks this week :\/",
+        "ts": "1576050755.002400",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/868623606821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

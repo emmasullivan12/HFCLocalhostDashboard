@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tony. Here is some cool info for you  :slightly_smiling_face:   <https:\/\/escapestudiosanimation.blogspot.com\/2019\/08\/mocap-retargeting-with-amedeo-beretta.html>",
+        "ts": "1566984417.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/729340616946_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "MoCap Retargeting with Amedeo Beretta",
+                "title_link": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/08\/mocap-retargeting-with-amedeo-beretta.html",
+                "text": "We've uploaded a new tutorial video to our Vimeo Channel - MoCap Retargeting with Amedeo Beretta. Amedeo explains in detail the proce...",
+                "fallback": "MoCap Retargeting with Amedeo Beretta",
+                "image_url": "https:\/\/4.bp.blogspot.com\/-9lMTj6eMiO8\/XIjH01Bq9cI\/AAAAAAAAD20\/HNg64dxXreYazkqBVucQg8mvjh6vQm2_QCLcBGAs\/w1200-h630-p-k-no-nu\/Motion_Capture_Performers.png",
+                "from_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/08\/mocap-retargeting-with-amedeo-beretta.html",
+                "image_width": 292,
+                "image_height": 153,
+                "image_bytes": 82063,
+                "service_icon": "https:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/08\/mocap-retargeting-with-amedeo-beretta.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! I started updating my linkedin and doing some work!",
+        "ts": "1566984652.000300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/729348270435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FMFA5KVA6",
+                "created": 1566984719,
+                "timestamp": 1566984719,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 297944,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMFA5KVA6\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMFA5KVA6\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 203,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1422,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMFA5KVA6-b21a52782c\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 1920,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FMFA5KVA6\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FMFA5KVA6-362fa98976",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1566984722.000400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. I lik it :slightly_smiling_face:",
+        "ts": "1566988535.000700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/729402977298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! Just threw a quick model together, textured and now the hard part.. lighting and integration :relaxed: will keep you posted!",
+        "ts": "1566990570.000800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/742745070279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a question, if i am using stock footage and I don’t know the camera it was shot on, what should i put on the film back preset? I heard somewhere that i should be  putting my resolution divided by 100.  ",
+        "ts": "1567018510.000900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/735123254817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

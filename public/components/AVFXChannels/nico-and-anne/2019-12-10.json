@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nico! Xmas lunch soon? Are you still at FS? Next week if you’re available and feel like it!",
+        "ts": "1575998922.000100",
+        "username": "Anne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/867069842244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that'd be nice, let me know what day works :)",
+        "ts": "1576004799.000200",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/867735205621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

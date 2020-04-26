@@ -1,0 +1,145 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "HI Olli, how is it going ?\nI wanted to know if you had seen the email I sent you last week and if you had time to download and have a look at the plates I sent you ?",
+        "ts": "1583152517.002300",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977138150816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man it's going good - I've downloaded and been experimenting with different keys, this afternoon I'm properly gonna tackle the key and try and get a solid result",
+        "ts": "1583152596.002400",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977158624325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could I ask what a gobo is ?",
+        "ts": "1583152655.002500",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979351144966_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice one! Are you not busy during the day ? I think a Gobo is like an occlusion of the light; like a silouhette of the grapes; I'm going to work a bit on my shot tonight; let me know if you are stuck or anything",
+        "ts": "1583159187.002600",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964520581058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and thanks for the help man",
+        "ts": "1583159192.002700",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967207244593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course man - In the day I'm just working on all my projects atm and this is one of them so it's fine- maybe we could Skype call tonight?",
+        "ts": "1583159301.002800",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976858666004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, yeah let's do very quick call tonight; prob around 8pm tho..",
+        "ts": "1583160193.002900",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977342046256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sick",
+        "ts": "1583160547.003000",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979217026327_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry man, still at work; I need to solve my shot so won't be able to do a call tonight!",
+        "ts": "1583175532.003100",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967793454897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "maybe tmr?",
+        "ts": "1583175538.003200",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967793674177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeh man of course",
+        "ts": "1583176282.003300",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977467642196_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope your get home soon !",
+        "ts": "1583176303.003400",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967821012081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thanks mate; yeah VFX life ... I tihnk it's going to work tho ! So home time soon hopefully",
+        "ts": "1583176345.003500",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967822333089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

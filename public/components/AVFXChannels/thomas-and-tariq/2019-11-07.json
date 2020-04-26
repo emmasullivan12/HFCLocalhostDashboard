@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! So they got back to me and said they'll pay per job\/asset. Its still not much money but quite repetitive so I recon I'll be able to do them pretty quickly. They sent me three bike stand models to do. I just have to sim in a similar way to the traffic sign I showed you. So I already have the setup. 20 euros each.",
+        "ts": "1573113771.003000",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/825071246608_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Per asset\/job might work out better for you! It's just over a model per day, and if you have the setup already then you should be good\nIt'll be a good time to test how procedural your setup is, or how much manual work is required, and if you're feeling there's too much work, try and adapt it for more procedurally.\nDefinitely a good opportunity to test a few new fx and how much you can push yourself with these",
+        "ts": "1573123338.003100",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/825243091968_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

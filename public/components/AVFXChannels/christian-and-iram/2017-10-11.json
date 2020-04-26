@@ -1,0 +1,128 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "University can be stressful around exam time, but in general it isn't at all. You get to meet new people, study a subject that (hopefully!) you enjoy, and be independent. As far as tips go, I think the most important thing is to enjoy yourself, but not too much! There is no point just going to doing nothing except study for three years - then you would miss the point of being away from home with new people and new opportunities. But obviously there is a balance. What worked for me was to find the time of day that I am most productive, and use it every day for study. So for me that was very early in the morning. So I started work at 5 or 6am, then by lunchtime had essentially finished, and used the afternoon for other things (or lectures). That balance seemed to work for me. Obviously everyone is different, so it's a question of working out what works.",
+        "ts": "1507716593.000156",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254637334740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My work routine today: I'm working from home today - I had to be up at 6 to get ready for a call with a client in the Philippines at 7am. Then a call with a lawyer in Dubai to discuss a possible partnership bidding for a large project in Cyprus. That took me to lunch. After a morning talking, the afternoon will be spent reading through documents sent from the Philippines to see if the information needed for our analysis is there. A fairly typical day when projects are in full flow.",
+        "ts": "1507723015.000130",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254559755155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah very interesting... And fairly busy I must say. Do you enjoy your work Mr Chrisitan? ",
+        "ts": "1507751492.000068",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255821624950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About 'trying to find the time your the most productive' I often have trouble trying to do that. My ordinary day is - going to school from 8:40am till 3pm. But around 2-3 days a week I usually return home by 4:30pm due to extra Math or English classes. The problem is that because of the usually long and hectic school days i usually find myself exhausted after school. So after dinner I tend to sleep but if i have alot of workload from school i skip sleeping in the evenings and begin to finish my work instead. - This I really believe does not work for me because I just feel so tired from school that I generally just loose focus during my time doing homework. I think this may be prove to be very costly to me as I believe A-levels are extremely important hence would you advise me what i could do in a situation like this? ",
+        "ts": "1507752098.000715",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254942373842_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry, if this is something out of context... Hehe but Ive tried talking to tutors and my parents too but they seem to be very busy and their suggestions just doesnt fit into my timetable. So as you are my mentor I thought you may be of help as you've gone through this phase of life. ",
+        "ts": "1507752276.000245",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255083942373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's a tough problem - do you have time before school, or any free time at school, that you can use? if not, one important thing to remember is that you don't have to just sit and work non-stop. I try to take lots of very short breaks - even just getting up from my desk, making a cup of tea and then getting back to work. That helps me keep alert and focused, by not getting bored of just trying to keep working every minute of every hour. That might help if you are tired.",
+        "ts": "1507789066.000113",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255196529188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F7GEMD5ME",
+                "created": 1507790549,
+                "timestamp": 1507790549,
+                "name": "Image uploaded from iOS.jpg",
+                "title": "Image uploaded from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3771852,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7GEMD5ME\/image_uploaded_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7GEMD5ME\/download\/image_uploaded_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 270,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 360,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 540,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 600,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 720,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7GEMD5ME-3732527a38\/image_uploaded_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 768,
+                "image_exif_rotation": 1,
+                "original_w": 3264,
+                "original_h": 2448,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F7GEMD5ME\/image_uploaded_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F7GEMD5ME-c5109475ac",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1507790554.000204"
+    }
+]

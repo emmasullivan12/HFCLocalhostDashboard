@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i am not sure yet",
+        "ts": "1552735056.000100",
+        "username": "Bolu Afolabi (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580119895015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "do you know how i can write a CV?",
+        "ts": "1552735563.000200",
+        "username": "Bolu Afolabi (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579014802004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

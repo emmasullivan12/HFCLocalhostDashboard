@@ -1,0 +1,127 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahaha check this out lol.",
+        "ts": "1581769278.002200",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-15\/954028276021_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pscp.tv\/w\/1DXxyNwmnbkKM?t=4m17s|https:\/\/www.pscp.tv\/w\/1DXxyNwmnbkKM?t=4m17s>",
+        "ts": "1581769283.002300",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-15\/943874599409_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Periscope",
+                "title": "Byron, Game Designer @xiotex",
+                "title_link": "https:\/\/www.pscp.tv\/w\/1DXxyNwmnbkKM?t=4m17s",
+                "text": "‪The games being played by Sony at @PrincesTrust and @ngenacademy ‬",
+                "fallback": "Periscope: Byron, Game Designer @xiotex",
+                "thumb_url": "https:\/\/prod-fastly-eu-west-1.video.pscp.tv\/Transcoding\/v1\/replay_thumbnail\/eu-west-1\/periscope-replay-direct-prod-eu-west-1-public\/eyJkIjowfQ\/f6SV7IU8CZ4i8Z9b3WIJlSDUFnaYJ0HnqTdi6oYU0Uy1fF4arR3-dFOxT0EkWgLWeNTnU1iw_dq7PTuMmM3Vcg\/chunk_1555079145258164277_81_a.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJBbGxvd2VkUHJvdG9jb2xzIjpbInRodW1iIl0sIkJyb2FkY2FzdElkIjoiMURYeHlOd21uYmtLTSIsIkdyYW50VHlwZSI6InJlYWQiLCJHcmFudGVkQXQiOjE1ODE3NjkwMzYsIkdyYW50ZWRUbyI6IndlYi1yYXRlLWxpbWl0ZWQtODNmNWZlYzBjNTMzYTIzZDQ4MTdhNGNhNTZlNTU2NjkiLCJTdHJlYW1OYW1lIjoiZjZTVjdJVThDWjRpOFo5YjNXSUpsU0RVRm5hWUowSG5xVGRpNm9ZVTBVeTFmRjRhclIzLWRGT3hUMEVrV2dMV2VOVG5VMWl3X2RxN1BUdU1tTTNWY2ciLCJleHAiOjE1ODE5NDE4MzZ9.DQ2P7wZ-gyuynSvolPvAmUop1_1pSS4COw5Kf-hNFww&service=proxsee&digest=6XaDM53UrBeaF-c3o9mBnaOM8o270FCRqllx10bXXWc",
+                "from_url": "https:\/\/www.pscp.tv\/w\/1DXxyNwmnbkKM?t=4m17s",
+                "thumb_width": 320,
+                "thumb_height": 568,
+                "service_icon": "https:\/\/assets.pscp.tv\/images\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.pscp.tv\/w\/1DXxyNwmnbkKM?t=4m17s"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581769284.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTPB02KA6",
+                "created": 1581790024,
+                "timestamp": 1581790024,
+                "name": "Screenshot_20200215-180647_Twitter.jpg",
+                "title": "Screenshot 20200215-180647 Twitter",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 211910,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTPB02KA6\/screenshot_20200215-180647_twitter.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTPB02KA6\/download\/screenshot_20200215-180647_twitter.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 175,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 234,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 350,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1644,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 467,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPB02KA6-ac237266f1\/screenshot_20200215-180647_twitter_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 498,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1440,
+                "original_h": 2960,
+                "thumb_tiny": "AwAwABfQbaO+DQMf3s\/hSFWY84H0oEeO9AD9o7CjFLRQBHL1FMHWny9RTF69aAJx0ooHSigCOTqOaaFGeDTto9z9aUBQaAH9qKTIoyKAP\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTPB02KA6\/screenshot_20200215-180647_twitter.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTPB02KA6-c965ef82d8",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581790028.002500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":raised_hands: :raised_hands: :raised_hands:",
+        "ts": "1581792664.002800",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-15\/954184497472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great stuff!!",
+        "ts": "1581792674.002900",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-15\/956394133526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice looking work Nicol",
+        "ts": "1561466596.000400",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-25\/669222196593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ta Colin ",
+        "ts": "1561474477.000500",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-25\/675762079749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

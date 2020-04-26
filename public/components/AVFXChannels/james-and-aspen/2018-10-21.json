@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FDK765TL5",
+                "created": 1540163288,
+                "timestamp": 1540163288,
+                "name": "Aspen mentoring - personal statement.docx.docx",
+                "title": "Aspen mentoring - personal statement.docx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "filetype": "docx",
+                "pretty_type": "Word Document",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 15663,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FDK765TL5\/aspen_mentoring_-_personal_statement.docx.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FDK765TL5\/download\/aspen_mentoring_-_personal_statement.docx.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FDK765TL5\/aspen_mentoring_-_personal_statement.docx.docx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FDK765TL5-ca6c57d775",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1540163289.000100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Aspen, thanks for sharing that with me. I hope you don’t mind, but I’ve taken the two personal statements you’ve sent me so far and picked my favorite bits from both of them and put them together with a few extra notes. I wanted to try to group together the things that relate to each other to tell more of a story of who you are, what your strengths are, and what you are interested in. I really liked how clear your strengths were in the first personal statement, and how many of your interests you were able to talk about in your second personal statement. I hope by bringing them together we can really show how much you love computing, and why you’re a good candidate for a place at the universities you want to apply for! I’ve left some notes in there where I think you’ve made a good point that you could expand on more, or where there’s something else I’d be interested in reading from you. Also, I think we need a big final paragraph that summarises how passionate you are about computing! Of course, you don’t have to take my suggestions if you don’t like them, it is your personal statement, I won’t be offended :). Do you have a list of universities you are thinking about applying to?",
+        "ts": "1540163679.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-21\/462100399623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Harvard is a university in America, they had an old machine called the Harvard Mark 1 ( <https:\/\/en.m.wikipedia.org\/wiki\/Harvard_Mark_I> ) that had a “Harvard” architecture.",
+        "ts": "1540164072.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-21\/462101741735_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/11\/Harvard_Mark_I_Computer_-_Left_Segment.jpg\/1200px-Harvard_Mark_I_Computer_-_Left_Segment.jpg",
+                "image_width": 1200,
+                "image_height": 805,
+                "image_bytes": 335785,
+                "title": "Harvard Mark I",
+                "title_link": "https:\/\/en.m.wikipedia.org\/wiki\/Harvard_Mark_I",
+                "from_url": "https:\/\/en.m.wikipedia.org\/wiki\/Harvard_Mark_I",
+                "author_name": "Wikipedia",
+                "author_link": "https:\/\/en.wikipedia.org\/",
+                "text": "The IBM Automatic Sequence Controlled Calculator (ASCC), called Mark I by Harvard University’s staff, was a general purpose electromechanical computer that was used in the war effort during the last part of World War II.\nOne of the first programs to run on the Mark I was initiated on 29 March 1944 by John von Neumann. At that time, von Neumann was working on the Manhattan project, and needed to determine whether implosion was a viable choice to detonate the atomic bomb that would be used a year later. The Mark I also computed and printed mathematical tables, which had been the initial goal of British inventor Charles Babbage for his \"analytical engine\".\nThe Mark I was disassembled in 1959, but portions of it are displayed in the Science Center as part of the Harvard Collection of Historical Scientific Instruments. Other sections of the original machine were transferred to IBM and the Smithsonian Institution.",
+                "fallback": "wikipedia: Harvard Mark I",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/wikipedia.png",
+                "id": 1,
+                "original_url": "https:\/\/en.m.wikipedia.org\/wiki\/Harvard_Mark_I"
+            }
+        ]
+    }
+]

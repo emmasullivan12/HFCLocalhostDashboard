@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nur, thank you for your kind words. As you can probably tell I’ve been incredibly busy trying to sort out what is happening in regards to school, food and my family in the last couple of weeks so it’s all been a bit hectic! I’m trying to keep up my art as much as I can, I guess the positive of schools being closed now is that I can do much more art! How are you? I hope you and your family are staying safe and healthy",
+        "ts": "1584609515.006000",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/998404423298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Zahra, that is great to hear you are ok. I know the feeling, yes!\nAs you said, this time mostly at home can be positive for your art. Please let me know whenever you have question or sth to show.\nHere is a link for you which I believe you will find useful. Keep safe and healthy!\n<https:\/\/www.accessvfx.org\/podcast>",
+        "ts": "1584615810.006100",
+        "username": "Nur Diker Koksal (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011441757749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have actually listened to that podcast, it was great and super informative",
+        "ts": "1584629644.006200",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1001981135681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i love access vfx so much",
+        "ts": "1584629648.006300",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013911917447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was thinking about attending one of their meetups in the future, they look really inclusive",
+        "ts": "1584629664.006400",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011593014628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you like to see the project I am working on now? I'm at the lighting stage!",
+        "ts": "1584629704.006500",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011595448308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please. Is that a topology study or one of your homeworks?",
+        "ts": "1584636793.006600",
+        "username": "Nur Diker Koksal (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1014336173175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh! Neither, just one of my personal projects :)",
+        "ts": "1584683235.006700",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013390199364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just doing it for fun!",
+        "ts": "1584683245.006800",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013845532016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

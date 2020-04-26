@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey buddy. Did you get your new HD yet? I got my computer on Monday but I'm having trouble with it. Apparently it's one of the ram sticks so I'm testing them one by one today. Two hours each though! It's taking ages!",
+        "ts": "1575471238.008300",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/851668031969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

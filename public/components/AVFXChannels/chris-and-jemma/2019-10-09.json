@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok woah that’s insane their work is incredible. Personally I’d love to just stick to one area but I can’t find anything I’m like “exceptional at” if that makes sense ",
+        "ts": "1570639430.000100",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/778056435955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m creating a UI for a second year project it’s no where near on the level of those guys. But is there anyway you could take a look and maybe see what things I could do to make it integrate better? ",
+        "ts": "1570639547.000200",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/783107306721_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I'd love to, that's what I'm here for!",
+        "ts": "1570639830.000300",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789552317205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I doubt you'll find something you're immediately world class at, but you may find something you're immediately passionate to learn more about and improve",
+        "ts": "1570639994.000400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791407882855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Let me just figure out how to send it to you! :joy: ",
+        "ts": "1570640284.000500",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789565975008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m too impatient hahah ",
+        "ts": "1570640291.000600",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/783126709777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You could wetransfer it to me at <mailto:christianwjfryer@gmail.com|christianwjfryer@gmail.com>",
+        "ts": "1570642014.000700",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789140685476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That might be overkill though if it's just a JPEG or something",
+        "ts": "1570642031.000800",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/783172900753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

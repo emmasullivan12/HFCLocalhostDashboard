@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! just seeing how you are getting on? Hope that it is a lot less stressful!",
+        "ts": "1558345816.000100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-20\/639809846004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, sorry I haven’t spoke in a couple of days, now deadlines are over I’m feeling a lot more stress free, I have my last lecture tomorrow and then I’m basically a third year which is a bit scary, Unis going so fast. I should hear back from the internship on the 24th but I think there might be an interview process if they wanna see me, you got any advice for interviews ? ",
+        "ts": "1558346164.000200",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-20\/628916272962_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

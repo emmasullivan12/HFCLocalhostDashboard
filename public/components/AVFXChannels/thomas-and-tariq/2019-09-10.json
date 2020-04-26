@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye definitely, I did apply for it a while back but there wasn't any info on when the program runs. Who should I contact to ask about it?",
+        "ts": "1568115383.004500",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/754871597861_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

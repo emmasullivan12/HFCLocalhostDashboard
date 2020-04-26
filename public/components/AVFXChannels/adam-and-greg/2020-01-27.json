@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you describe what you mean by combat designer?",
+        "ts": "1580127255.002400",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-27\/911850034355_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "working on balancing, enemy encounters. honestly I'm not sure.",
+        "ts": "1580127506.002500",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-27\/911854625555_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

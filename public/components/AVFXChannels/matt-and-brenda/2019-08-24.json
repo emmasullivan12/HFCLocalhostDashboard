@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aw you’re welcome :blush: it was really nice having you and I’m glad you learnt a lot. I am sure you will go far. The lady and the tramp trailer is online! ",
+        "ts": "1566652047.010000",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/725711963202_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you!! Definetly learned a lot, will try to take everything into practice this course :blush::blush:",
+        "ts": "1566654832.010100",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/739362074678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's awesome!! I was going to ask you, of I include the work experience on my CV as you said, what should I say\/call it? :blush:",
+        "ts": "1566654867.010200",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/730798175825_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wanted to fix my CV before applying for the runners part time thing :blush:",
+        "ts": "1566654888.010300",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/725733941555_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You’re welcome! Think you’re good to write it as work experience at Framestore or shadowing and just describe what you attended (it’s fine to say lady and the tramp just don’t go into big detail) and like getting feedback on reel etc ",
+        "ts": "1566669250.010400",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/737260997797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If not you don’t have to include, you could just tell people at interview and networking ",
+        "ts": "1566669293.010500",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/725806595042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think on cv it would be good to say through networking and prospela e mentor I got two days experience at framestore attending dailies etc, cause that shows you’re being proactive by seeking mentorship and networking and making connections and all that good stuff :blush:",
+        "ts": "1566669347.010600",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/725806872738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome!! Thanks Matt :blush: I will include it and I will email about the runners position :grinning:\n\nThanks again!! And have a good Bank Holiday and bbq",
+        "ts": "1566671078.010700",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/736797634884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you. Have a great bank holiday too :blush:",
+        "ts": "1566671938.010800",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/730889012721_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t think I’ve ever found any great ones\nI’ve learned it by doing it :\/ but I’ll ask around and see if anyone has anything that might help",
+        "ts": "1556446407.000500",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/620089203172_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that’s what you want to do then great :) vfx will still be here then ",
+        "ts": "1556446452.000600",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/620089359444_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And when you have a showreel you like and feel confident in then start applying ",
+        "ts": "1556446496.000700",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/609170335331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The only thing is that by waiting you might not be accepted into the graduate schemes (?) although your financial stability is really the most important thing \nWouldn’t want you eating toast and pot noodles ",
+        "ts": "1556446601.000800",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/609222452850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "lol",
+        "ts": "1556471324.000900",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/620698723173_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "toast and pot  noodles is what I’m trying to get away from. Graduate schemes can be done up to 12 months post graduation which is what i’m counting on atm",
+        "ts": "1556471388.001000",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/620197231332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and yeaa would be great if you share anything you know off",
+        "ts": "1556471406.001100",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/620197297812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hope you’re having a good weekend",
+        "ts": "1556471416.001200",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-28\/614421038177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,539 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dear Alan,",
+        "ts": "1552426963.001800",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574920556325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First of all I want to thank you from UWL and Visual Effects courses for all supporting act and I really appreciated.",
+        "ts": "1552427101.001900",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574556522324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Second Today I had presentation and it was about you. Feedback was amazing. I shared all your point with other people, tips tricks and ...",
+        "ts": "1552427206.002000",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574558671476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Everyone enjoyed and those information was very constructive and informative.",
+        "ts": "1552427251.002100",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574926185509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":pray::blush:",
+        "ts": "1552427282.002200",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574592278882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK, My progress in past week,",
+        "ts": "1552427309.002300",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574592863298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As you told me use Nuke, I started to create whole scene in Nuke. Honestly, WOW... How easy Nuke projection is and I have control on all aspect of that.",
+        "ts": "1552427442.002400",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574563316260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGWE6V4JF",
+                "created": 1552427489,
+                "timestamp": 1552427489,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 69107,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWE6V4JF\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWE6V4JF\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 125,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 166,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 249,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 277,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 333,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWE6V4JF-a11d391a3c\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 355,
+                "image_exif_rotation": 1,
+                "original_w": 1813,
+                "original_h": 628,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWE6V4JF\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGWE6V4JF-6869c8381b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552427493.002500"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGY14CZ5L",
+                "created": 1552427555,
+                "timestamp": 1552427555,
+                "name": "WF_Layout_001.mp4",
+                "title": "WF Layout 001",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 8551885,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGY14CZ5L\/wf_layout_001.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGY14CZ5L\/download\/wf_layout_001.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGY14CZ5L-6ecee0e325\/wf_layout_001_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGY14CZ5L\/wf_layout_001.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGY14CZ5L-ed19306b93",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552427558.002800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a result of Nuke script.",
+        "ts": "1552427596.003100",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574932898341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I used Pencil to draw my goal, I am not good with pencil :disappointed_relieved:",
+        "ts": "1552427661.003200",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574599681074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "3D modeling In progress...",
+        "ts": "1552427749.003300",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574935887189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGWHPGE1G",
+                "created": 1552427757,
+                "timestamp": 1552427757,
+                "name": "Fence_TurnTable_1.[0001-0200].mp4",
+                "title": "Fence TurnTable 1.[0001-0200]",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2718648,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWHPGE1G\/fence_turntable_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWHPGE1G\/download\/fence_turntable_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWHPGE1G-6ce5998ca7\/fence_turntable_1._0001-0200__thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWHPGE1G\/fence_turntable_1._0001-0200_.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGWHPGE1G-ce03ad894d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552427758.003400"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGWTJ357F",
+                "created": 1552427763,
+                "timestamp": 1552427763,
+                "name": "London_Aerial_Footage-converted_12682.jpg",
+                "title": "London Aerial Footage-converted 12682",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2569632,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWTJ357F\/london_aerial_footage-converted_12682.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWTJ357F\/download\/london_aerial_footage-converted_12682.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTJ357F-ab84add94c\/london_aerial_footage-converted_12682_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 3840,
+                "original_h": 2160,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWTJ357F\/london_aerial_footage-converted_12682.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGWTJ357F-2b2c6627e7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552427768.003700"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGWTM0LCD",
+                "created": 1552427911,
+                "timestamp": 1552427911,
+                "name": "Oil_Tank_TurnTable_1.[0001-0200].mp4",
+                "title": "Oil Tank TurnTable 1.[0001-0200]",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2676439,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWTM0LCD\/oil_tank_turntable_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWTM0LCD\/download\/oil_tank_turntable_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWTM0LCD-c97e896269\/oil_tank_turntable_1._0001-0200__thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWTM0LCD\/oil_tank_turntable_1._0001-0200_.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGWTM0LCD-8ef641d8af",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552427912.004000"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGXL10TMM",
+                "created": 1552427972,
+                "timestamp": 1552427972,
+                "name": "Fence.mov",
+                "title": "Fence",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 131810149,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGXL10TMM\/fence.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGXL10TMM\/download\/fence.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGXL10TMM-8bfcc3eb68\/fence_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGXL10TMM\/fence.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGXL10TMM-b0943bdf34",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552427982.004300"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGY1DAS78",
+                "created": 1552428013,
+                "timestamp": 1552428013,
+                "name": "TurnTable_Wire_1.[0001-0200].mp4",
+                "title": "TurnTable Wire 1.[0001-0200]",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2748676,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGY1DAS78\/turntable_wire_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGY1DAS78\/download\/turntable_wire_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGY1DAS78-a4f7dac7f4\/turntable_wire_1._0001-0200__thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGY1DAS78\/turntable_wire_1._0001-0200_.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGY1DAS78-cb5e47ed82",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552428015.004600"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGY1E9URL",
+                "created": 1552428055,
+                "timestamp": 1552428055,
+                "name": "Oil_Tank.mov",
+                "title": "Oil Tank",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 17928468,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGY1E9URL\/oil_tank.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGY1E9URL\/download\/oil_tank.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGY1E9URL-d4ff15661a\/oil_tank_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGY1E9URL\/oil_tank.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGY1E9URL-3ee10c6757",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552428057.004900"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGWEJJP4K",
+                "created": 1552428075,
+                "timestamp": 1552428075,
+                "name": "Oil_Tank_TurnTable_1.[0001-0200].mp4",
+                "title": "Oil Tank TurnTable 1.[0001-0200]",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2744821,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWEJJP4K\/oil_tank_turntable_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWEJJP4K\/download\/oil_tank_turntable_1._0001-0200_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWEJJP4K-0ab5df5694\/oil_tank_turntable_1._0001-0200__thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWEJJP4K\/oil_tank_turntable_1._0001-0200_.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGWEJJP4K-158a3988f9",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552428076.005200"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGWGXND0C",
+                "created": 1552428073,
+                "timestamp": 1552428073,
+                "name": "Heli_Pad.mov",
+                "title": "Heli Pad",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 87429627,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWGXND0C\/heli_pad.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWGXND0C\/download\/heli_pad.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGWGXND0C-8227dd0a00\/heli_pad_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWGXND0C\/heli_pad.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGWGXND0C-140d511eec",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552428079.005500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "More is coming... :grinning:",
+        "ts": "1552428158.005800",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574609739218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

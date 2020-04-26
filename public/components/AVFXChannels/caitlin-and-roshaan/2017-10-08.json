@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507463037.000036",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/59da0f7dfcd36500045961b0|this link> with other teams to invite them in it_",
+        "ts": "1507463037.000040",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507463037.000046",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507467591.000043",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentee* joined the shared channel_",
+        "ts": "1507468772.000065",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1507468791.000044",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    }
+]

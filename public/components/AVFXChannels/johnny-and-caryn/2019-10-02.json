@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Johnny, thanks for the feedback, sorry for not replying sooner, I've been very unwell this week. I like the idea of a mall mixed with a factory and I'll begin gathering references\/ideas for props and vegetation.",
+        "ts": "1570042398.004100",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/781096410324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't worry, I've just wrote to you yesterday. Everyone in the office in feeling also a bit rough , its that time of the year, Please feel free to reply to me only when feeling better .",
+        "ts": "1570043615.004200",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/783446193271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

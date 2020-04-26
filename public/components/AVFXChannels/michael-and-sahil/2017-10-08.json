@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507463000.000004",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/59da0f58fcd36500045961a2|this link> with other teams to invite them in it_",
+        "ts": "1507463000.000022",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507463000.000025",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1507467120.000005",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-16\" to \"michael-and-sahil\"",
+        "old_name": "z-shared-16",
+        "name": "michael-and-sahil"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1507467136.000059",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentee* joined the shared channel_",
+        "ts": "1507467166.000036",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hi",
+        "ts": "1507467204.000021",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-08\/252610860849_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507467489.000071",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel"
+    }
+]

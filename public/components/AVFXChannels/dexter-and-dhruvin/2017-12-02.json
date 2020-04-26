@@ -1,0 +1,200 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh okay dex",
+        "ts": "1512243513.000088",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280322287665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you soo much for helping",
+        "ts": "1512243523.000035",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280181175824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really appreciate the time you have given up for me thanks a lot",
+        "ts": "1512243559.000059",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280838179602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dhruvin, you're very welcome :smiley:",
+        "ts": "1512243592.000022",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280882300308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My email is <mailto:dexter@prospela.com|dexter@prospela.com>, feel free to send my any questions you have after this programme is done :ok_hand:",
+        "ts": "1512243624.000001",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280764837459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "@dvalgi-2012 Thanks for the feedback! :+1: :blush:",
+        "ts": "1512246307.000097",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280988607125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thanks dex",
+        "ts": "1512246341.000085",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280888470628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Quick question for you, you mentioned under the question \"what's missing from the Prospela programme\" that you would have liked to get into good conversations. What do you think would have helped with this?",
+        "ts": "1512246384.000052",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280888567796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So that we know for next time :smile:",
+        "ts": "1512246444.000072",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/281918917271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "like as in more convos",
+        "ts": "1512247271.000071",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280330682929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "like trying to set specific times between the mentor adn the student to talk during specifc days",
+        "ts": "1512247310.000052",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280890604388_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also Dex",
+        "ts": "1512247409.000009",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280773284883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will theses meassages be removed or will they stay",
+        "ts": "1512247423.000091",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/281719238934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "????????",
+        "ts": "1512247426.000062",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280331008609_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok that's reasonable",
+        "ts": "1512247799.000069",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280847605282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So we will keep these Slack accounts open for a couple of weeks, perhaps up until Xmas",
+        "ts": "1512247829.000012",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280774188755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But then we will be closing them so anything you need from the chat you should copy over :ok_hand:",
+        "ts": "1512247863.000045",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280992022677_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And of course you can ask us more things in the future via email if you'd like to :smiley:",
+        "ts": "1512247895.000057",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280190891008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

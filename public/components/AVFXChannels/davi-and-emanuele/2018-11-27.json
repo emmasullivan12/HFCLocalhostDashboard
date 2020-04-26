@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emanuele, This week is getting quite busy for me and I need to leave for a cconference on Thursday evening. Shall we meet week of 3rd Dec?",
+        "ts": "1543322784.002400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/490045070103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What about 4:45pm on Tues 4th?",
+        "ts": "1543322802.002500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/488825495572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that is perfect. No problem at all",
+        "ts": "1543344416.002600",
+        "username": "Emanuele (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489269650419_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

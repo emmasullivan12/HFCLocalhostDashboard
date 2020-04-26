@@ -1,0 +1,131 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man I'm trying my best to get a final out for tonight but nuke has crashed on me like 6 times now",
+        "ts": "1584375793.007700",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's ok no stress. Don't forget to precomp",
+        "ts": "1584376421.007800",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/991907942515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And divide your shot in several script if necessary",
+        "ts": "1584376436.007900",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1005240038327_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that's what I'm going to do",
+        "ts": "1584376452.008000",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/993302786705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you still have troubles I can still have a look at it too",
+        "ts": "1584376463.008100",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1003396286197_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've got the stream pretty much done so I'm gonna render put a version",
+        "ts": "1584376486.008200",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1002923466404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was wondering for when it comes out his mouth do u think a grid warp will be the best method for his lips moving around the grapes or another distortion instead ?",
+        "ts": "1584376527.008300",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1005591219350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you mean? We shouldn't touch the plate. Or no distortion on the lips. As for the grapes if it needs nudging. Try a simple transform overall at first ( maybe we get away because there is a lot of movement in the grapes) if not, then spline wrap with few keyframes",
+        "ts": "1584377374.008400",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1005287868023_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh ok, I thought it could help the comp but if not touching the plate then that's fine",
+        "ts": "1584377703.008500",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/993366483025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man I'll just give u and update on where I'm at before I go to bed - precoming and working smart has really sped up my workflow ! (Who wouldve thought it!) So tomorrow I just need to add the light gobo corrections and little more comp love and I'm good to send as a final",
+        "ts": "1584406539.008600",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004487501824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would really love to when your free go through the scripts and see your approach to this task",
+        "ts": "1584406565.008700",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/826397250019_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And would also really love this shot on my reel if that's allowed btw? Obviously not until after the release of the film- but it's a really cool shot I think",
+        "ts": "1584406615.008800",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004489080592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

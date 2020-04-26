@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, summer internships open at Studio AKA: <https:\/\/studioaka.co.uk\/FAQ\/Home> They would be great for you!",
+        "ts": "1583252740.000100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/979695979744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

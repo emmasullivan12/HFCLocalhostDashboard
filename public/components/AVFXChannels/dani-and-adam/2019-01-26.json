@@ -1,0 +1,206 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is a great question Adam! I receive application letters all the time and obviously I have sent a million myself. I think the really important points that I want to read as an employer is an ability and a willingness to fit into my workflow and pick up new things easily. I think the fact that you are teaching yourself SO MUCH STUFF around Uni speaks absolute volumes, and I would definitely like to read that about you. Also, compliment the style of the studio you are looking to placement at. I receive so many letters saying something like 'Hi I came across your call out for After Effects animators on Twitter and I just thought I'd send you my showreel' and it's a showreel that is irrelevant to what I was looking for, with no explanation as to why they've sent it, nor their desire to come and work in After Effects. This is just an example! We work in lots of styles, so they could have written 'I love how multi-disciplined your work is, I have always wanted to explore every method of animating and have always tried to push myself into new styles!'",
+        "ts": "1548502213.004800",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533837034099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However, we are a smaller studio and have a very small amount of people - so we need them to be more open-minded and good all-rounders. If I was applying to a games studio, I would write about my love of the work they produce and send examples that match it as closely as I can.",
+        "ts": "1548502305.004900",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533943587506_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why don't you take a look at my company website, and send me a cover letter as practice? Send it to the address you can find on the site, do you research so you know who to address it to, and I will answer? :smile: <https:\/\/www.piclanimation.com\/>",
+        "ts": "1548502509.005000",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/535005526663_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Picl Animation | Animation Studio | Cardiff | Wales",
+                "title_link": "https:\/\/www.piclanimation.com\/",
+                "text": "We are a creative, multi discipline animation studio based in Cardiff, founded by Dani Abram and Lauren Orme, two animators and directors with a shared passion for distinctive stories and irreverent humour, and a combined 18 years experience in animation.",
+                "fallback": "Picl Animation | Animation Studio | Cardiff | Wales",
+                "image_url": "https:\/\/static.wixstatic.com\/media\/2a4418_b675b3014bd341b4ba371959f51b2b2d%7Emv2.png",
+                "from_url": "https:\/\/www.piclanimation.com\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 491620,
+                "service_icon": "https:\/\/static.wixstatic.com\/media\/2a4418_b675b3014bd341b4ba371959f51b2b2d%7Emv2.png\/v1\/fill\/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01\/2a4418_b675b3014bd341b4ba371959f51b2b2d%7Emv2.png",
+                "service_name": "piclanimation.com",
+                "id": 1,
+                "original_url": "https:\/\/www.piclanimation.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ALSO look at thiiiiisssss: <https:\/\/twitter.com\/SuperSpline\/status\/1085918001432576000> these are friends of mine! :slightly_smiling_face:",
+        "ts": "1548503014.005200",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533946287042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You should definitely put something together for that if you can get to Leamington Spa over the summer! They're good peoples and I know the game they're working onnnn and it's absolutely RAD.",
+        "ts": "1548504143.005300",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533844619731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for such a detailed answer. I feel like I know what exactly to include in a cover letter and what to avoid.\nBtw, this Pickle is adorable. This symbol (smiley pickle) follows me everywhere. Pickle Rick, a stop-motion project from my course fried Charlotte (where she had multiple pickle babies), then your company logo. Smiley pickle always brings a smile on my face, haha! :smile:\n\nI didn't know that this company belongs to you. This's just like – W.O.W!!1 That's impressive! Just unbelievable!\nThank you for letting me practice with a cover letter. That means a lot to me! I appreciate it!",
+        "ts": "1548519691.005400",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/534223360853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\/\/",
+        "ts": "1548519737.005500",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533915441123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not on social networks apart from Instagram. I had but deleted. People spend too much time on this. But even there (on Instagram) I've stopped posting photos. Just stories, so they are saved in an archive. It's just good to go through the stories archive, as only I can see them. Especially, when I need some motivation boost and positive energy.\nHowever, I looked at Twitter as you set a challenge for me, by telling me to explore your website. And I want to say that I really like your mantra: \"If I just make it. It'll be finished\". Out of all three – this one reflects the most for me. I was learning to finish stuff for many years. I hope I succeeded a bit lol",
+        "ts": "1548519759.005600",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533915552563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":man-facepalming:",
+        "ts": "1548519915.005700",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/534224384869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sorting out my reference and then will start on cover\/motivation letter.\n\nThank you for a link with an internship at Super Spline studios. Also, they work in Maya which is excellent! I'll defo apply to this internship position. Finger crossed haha\nMoving to a different place\/city\/country for me is not something new or challenging. I'm changing places twice a year. I knew that this is something that comes with an education abroad. Also, I have been saving money as I have a part-time job in this case. For instance, if I need to change a living place for work experience, or do an unpaid internship (not preferable, but still an option). In all these cases I need some financial support. I have no one to rely on apart from myself in this case. In my opinion, the financial side is vital to take into consideration, especially when you are a noname student.",
+        "ts": "1548519935.005800",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/535083637287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Moneeeeyyyyyyy!!!!! :money_with_wings:",
+        "ts": "1548519975.005900",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/534224676437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However, despite me saying that it's great that they work with Maya, I want to thank you for a good life\/professional lesson. This consist of an open-minded approach to new applications.\nDon't get me wrong. I always had an open-minded approach. Simply because I believe that what is relevant today may become obsolete tomorrow. Also, this approach simply trains your brain by creating new neural connections, which help you to maintain cognitive functions. It's like to take your brain out to the gym. From a psychological point of view, it helps you to look\/create a new perspective on any situation, by crossing your previous experiences (in this case using different applications and using different approaches in achieving the same result - animation for instance)\n\nOh, I hope it wasn't too much lol",
+        "ts": "1548519997.006000",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/535443032150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry .. :man-bowing:",
+        "ts": "1548520019.006100",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/535443130182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've got another question (again, every time, another question, haha. Don't kick me please :sob:).\n\nThis semester we'll do rigging and skinning. Also, we'll work we Blade application (for managing MoCap data). Also, we' ll learn to transfer MoCap data into Unreal to make a playable character.\n\nI want to refer to what I was saying earlier – open-minded approach to new applications.",
+        "ts": "1548520086.006200",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533418859793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We have to use 3dsmax for rigging and skinning; Because we'll use CAT rigs. I had a chat with a lecturer, and he said that for this assignment there are no other options (Maya). You showed me that it's great to be multi-disciplined and I know it's requisite to be ready to work in a few different applications. I found an absolutely fantastic tutorial of Game Characters rigging in Maya. But apparently, I won't be able to use, at least now.\n\nMy concern is: time :hourglass_flowing_sand:\n\nAs a noname student, I have to show maximum skills. To demonstrate these skills I have to obtain them by learning. Learning takes time. In my case, desirably I have to get a placement between 2nd and 3rd years as you have to be a returning student (in most places). Tutorials are 5-10 hours long each. There 5-10 hours turn into days and weeks, because you follow, stop, replicate, then do it again until you get a grasp of it.\n\nI'll defo learn both approaches, simply because I like it and it's interesting. But I know I have to use my time wisely (cos of the reasons :arrow_up:).\n\nWhat advice could give me in this situation? Try to go deep and learn properly how to rig and skin in 3dsmax, or just get it done (this assignment) (not my style to get things done just because) and concentrate on Maya instead?",
+        "ts": "1548520220.006300",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533286473376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cos I'll have much less time for things like - Body Mechanics, Acting, etc. (these are or at least there on my list)",
+        "ts": "1548520924.006400",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533289740416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Soooooooooooooo MUCH text, sorry for that :tired_face:",
+        "ts": "1548520976.006500",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533290012032_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

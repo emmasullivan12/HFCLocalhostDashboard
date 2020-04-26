@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah sure Which gold material do you mean ?",
+        "ts": "1584083275.005500",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/997495271828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

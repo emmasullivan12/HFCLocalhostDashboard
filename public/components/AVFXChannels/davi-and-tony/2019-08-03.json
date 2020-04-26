@@ -1,0 +1,191 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tony, Wow it has been awhile since we last chatted. Sorry about that. I was back home in NY for holidays, and logged out of my Slack account so I wouldn't get roaming charges, but forgot to log back in.Opps! so sorry for the radio silience. I am back and can help you.  Firstly, some links that I thougth might be helpfyl from other mentors.",
+        "ts": "1564848939.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/717494888694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/q9Ae-peS9EU>",
+        "ts": "1564848939.000200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/715339577584_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Episode_005",
+                "title_link": "https:\/\/youtu.be\/q9Ae-peS9EU",
+                "author_name": "Ruairidh MacNeill",
+                "author_link": "https:\/\/www.youtube.com\/user\/rooboy2222",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/q9Ae-peS9EU\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Episode_005",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/q9Ae-peS9EU?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/q9Ae-peS9EU",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/q9Ae-peS9EU"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "He reviews students' showreels. I can also so do that for you, but this will give you more sense of what industry is looking for.",
+        "ts": "1564848982.000400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/715339788016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60204586539>",
+        "ts": "1564848995.000500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/717495159958_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "ACCESS: VFX Animation Summer School",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60204586539",
+                "text": "Do you love animation? Are you a parent, teacher or carer of a keen animator and want to find out more about how they can channel their love for animation into an exciting career in the visual effects (VFX), animation and games industries? According to a recent Screen Business report released last October, the UK’s visual effects and animation industry generates more than one billion pounds of added value for the UK economy. This shows VFX to be a vital component of the UK’s successful film, TV and advertising industries. This Summer ACCESS: VFX will partner with London SIGGRAPH, 3Dami, Escape Studios and We Are Stripes to host our ‘Animation Summer School’ a 3-day family-event for 11-16-year olds interested in a career in the exciting UK animation industry. We will host a range of free workshops across 3 days on: Thursday 8th August Friday 9th August Saturday 10th August Each day will be it's own stand-alone event, so whether you sign up to just one day, or all three dates, there will not be an order to the Summer School. What can I expect? On the Thursday, Escape Studios will host two 3-hour Maya taster sessions and 3Dami students will run 45 minute Blender Hangouts all day. There will also be workshops and talks hosted by The Mill, Blue Zoo and ILM. On the Friday we will have another Maya taster session and Blender Hangouts taking place all-day. There will also be workshops and sessions hosted by Blue Zoo, DNEG and we are lucky to have an exclusive 'stop motion' workshop with artist Valentina Grasso. On the Saturday we will have Blender Hangouts with past and current 3Dami students taking place all-day. There will also be a workshops hosted by Blue Zoo, The Mill and more. On the final day we will welcome motion designer and creative Stephanie Dewhirst who will run a workshop on her craft. On each day we will hold a panel discussion so you can hear direct from idustry speakers working in animation and visual effects who have secured their role through entry level opportunities, whether via the apprenticeship route, internships, running programmes and other avenues. Across the event, Animation Mentor have kindly donated one of their 8 week Maya courses that we will be giving away as prizes! As you read this we continue to build the content across the 3 day event and can promise there will be some surprises. We can guarantee that the experience will provide a fresh perspective on attainable creative careers, a chance to connect with industry professionals first-hand and gain optional mentorship. Want to come? Please express your interest in attending by signing up for a free ticket on a date of your choosing. We will then get in touch separately to confirm your place at the event and keep you posted on our plans for the day. We hope that by spreading the word to fresh and inclusive communities of people, providing Inspiration, sparking Aspiration, will in time, lead to Application. About our partners: Escape Studios offer undergraduate, postgraduate and short courses in visual efects, game art, animation and motion graphics. Escape work with an impressive list of industry partners to design and deliver their courses, from MPC, Cinesite, Framestore and The Mill, through to Jellyfish, Milk and BlueBolt. 3Dami is a non-profit organisation founded to promote digital art amongst pre-university students, by linking them with each other and industry. It runs free seven day summer and half term camps, getting groups of nine students to run their own studios, and make their own short 3D animated film using Blender. London ACM SIGGRAPH is a local non-profit, volunteer organisation run and made up of local professionals. They host events for the computer graphics community in London, reach out to other communities and aim to promote contact and information exchange. We Are Stripes create and increase opportunities for individuals from ethnic backgrounds by educating on career entry into the industry and supporting current BAME (black, Asian and minority ethnic) individuals in the industry with career progression. Animation Mentor is an online animation school that teaches students character animation skills where students are taught by mentors; experienced animators who are professionals working in the animation industry. Animation Mentor is a distance learning school at which animation professionals teach character animation to students in over 105 countries. #avfxsummerschool",
+                "fallback": "Eventbrite: ACCESS: VFX Animation Summer School",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F65823943%2F64872761663%2F1%2Foriginal.20190718-113900?w=1000&auto=compress&rect=0%2C0%2C2160%2C1080&s=fb40b436a7104535ab8e4fa4b5ab79fb",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "190 High Holborn, London, WC1V 7BH, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Fri 9 Aug 2019 at 09:30",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60204586539",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 70450,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60204586539"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "An event this Friday. Hopefully you already heard about it, and signed up for the other days?",
+        "ts": "1564849025.000700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/703936416338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We were going to try to meet up at Escape to review you work. Still interested? When will you be in London? You can bring your CV, cover letters, showreel etc",
+        "ts": "1564849078.000800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/714879668948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And, an interesting article and video on Digital Domain. I have some friends who work for them in Los Angeles. Maybe they have a Hong Kong vfx office?",
+        "ts": "1564850296.000900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/714885412900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And.... Seoul company:<https:\/\/www.scanlinevfx.com\/>  They have been around a long time in Munich, and LA. Now Seoul! Cool!",
+        "ts": "1564850359.001000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/703956894819_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let's meet up to help with your applications to companies :wink:",
+        "ts": "1564850377.001100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/703956976755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry one more...<http:\/\/vfxvoice.com\/vfx-weekly-053\/>",
+        "ts": "1564850395.001200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/703942844018_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "VFX Voice Magazine",
+                "title": "VFX Weekly",
+                "title_link": "http:\/\/vfxvoice.com\/vfx-weekly-053\/",
+                "text": "News on SIGGRAPH announcements, the de-aging VFX of THE IRISHMAN and AVENGERS: ENDGAME, People on the Move, and the VFX of Hulu's Catch-22",
+                "fallback": "VFX Voice Magazine: VFX Weekly",
+                "image_url": "https:\/\/i1.wp.com\/vfxvoice.com\/wp-content\/uploads\/2019\/07\/WeeklyLogo2.jpg?fit=500%2C500",
+                "image_width": 250,
+                "image_height": 250,
+                "ts": 1564758185,
+                "from_url": "http:\/\/vfxvoice.com\/vfx-weekly-053\/",
+                "image_bytes": 30677,
+                "service_icon": "http:\/\/vfxvoice.com\/wp-content\/uploads\/2017\/03\/favicon.ico",
+                "id": 1,
+                "original_url": "http:\/\/vfxvoice.com\/vfx-weekly-053\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Subscribe to this VFX newsletter. Excellent! I belong to this society, VES. You can too after 5 years of industry experience :wink:",
+        "ts": "1564850434.001400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/717209934951_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

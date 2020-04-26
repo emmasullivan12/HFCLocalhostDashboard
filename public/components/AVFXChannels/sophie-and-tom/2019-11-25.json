@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! It’s okay no worries! :blush:",
+        "ts": "1574705673.001900",
+        "username": "Sophie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850384206775_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So what would you like some help with? You’d like to be an animator right? :blush:",
+        "ts": "1574705754.002000",
+        "username": "Sophie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850386329639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

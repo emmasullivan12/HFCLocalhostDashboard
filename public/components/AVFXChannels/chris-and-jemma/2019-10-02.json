@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Over the last two year I've worked at One of Us, Blue Zoo, DNEG, The Third Floor and now ILM. Blue Zoo and Third Floor were literally about a week. One of Us was 4 months and DNEG was 2",
+        "ts": "1570002992.002600",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/767914388514_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Where are Blue Zoo and third floor? ",
+        "ts": "1570020716.002700",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/769513707347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m really stuck at whether to go into Tv or Film and where to go to do it ",
+        "ts": "1570020733.002800",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/780530273012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Blue Zoo is in London on Great Portland Street and The Third Floor is a visualisation company inside Framestore",
+        "ts": "1570022907.002900",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/783252949350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say the biggest distinction between Film and TV is TV has a slightly lower quality bar compared with film because budgets and time are lower",
+        "ts": "1570022948.003000",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/783254024806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that’s really cool I went to do work experience in frame store because my mums cousin used to work there. ",
+        "ts": "1570023411.003100",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/781063038485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are there the same opportunities in both? ",
+        "ts": "1570023420.003200",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/769578352323_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What specific thing do you mean when you say opportunities?",
+        "ts": "1570030265.003300",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/780784185316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Generally TV is known for having a better work\/life balance but TV and Film are getting closer and closer in quality now",
+        "ts": "1570030293.003400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-02\/774818046049_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

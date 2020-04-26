@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Manmeet. Just wanted to apologise briefly, it’s been two of the busiest weeks in a long time and sorry for radio silence....",
+        "ts": "1540330027.000100",
+        "username": "Andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-23\/463874962151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We can pick back up tomorrow, management and corporate finance it is.",
+        "ts": "1540330044.000100",
+        "username": "Andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-23\/464223687254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's nice! The technical background is a super useful thing because brings you the chance your own rigs and that means, have unique animations. Is a good point.",
+        "ts": "1542966653.002600",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/486478180803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, now you're more focus on character animation right? Which kind of anim will you like to do?",
+        "ts": "1542966708.002700",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/485843296464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

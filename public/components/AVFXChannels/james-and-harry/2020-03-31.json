@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi James. The cleanup has been going well, I decided to go with grading the patches which seems to have worked quite nicely, i'm still making some refinements and adding in more patches. It's quite impressive how quickly the industry has been able to adapt to enable working from home.",
+        "ts": "1585670923.000300",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1038377287620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Original - <https:\/\/vimeo.com\/402598263>  v039 - <https:\/\/vimeo.com\/402595697>  Password: HH",
+        "ts": "1585671037.000400",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026104539154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking good Harry. Still some spill to cleanup but your approach seems to be working. Send it through when it's finished and I'll see if I can spot anything weird. Nice work.",
+        "ts": "1585674822.000500",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1040949039206_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

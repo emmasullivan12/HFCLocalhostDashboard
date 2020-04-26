@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Colin \n\nHow’s everything going?\n\nYou know you said about organising and multi tasking, have you used the app called Trello ??",
+        "ts": "1553795216.000100",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/593359776774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

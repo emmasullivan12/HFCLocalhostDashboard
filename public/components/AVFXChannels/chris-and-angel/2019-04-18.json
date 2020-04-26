@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Chris, I understand.  I thought to message you on hangout but didn't want to disturb you. \n\nOh okay I see, iv did research online and is it bad to rely on references for proportions as iv heard it's incorrect compare to the reference picture we use. And when it comes to the focal length of the image, I got mine only and had to play with it for a while. Is there  a more straight forward way of doing this. \n\nAnd right now I'm trying to make sure to model every part. Only tricky thing is the rotor head for the helicopter. As it's not clear on the reference, but I'm online looking at a similar one but worried it won't match 100% \n\nYeah, right now I'm trying to get it dead close to the reference but in the perspective view I'm worried if a piece isn't correct.",
+        "ts": "1555576465.000300",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/600800844770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I didn't know sup would zoom in to the detail and for the scan you mentioned. Would the approach to that be qaud draw to get lower mesh? As iv not modelled over a scan 9nly references.",
+        "ts": "1555576535.000400",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/605902006001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Only*",
+        "ts": "1555589430.000500",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/614513373766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You are right that you can not use internet reference to model over, there are too many facters that can affect the image (focal length, distortion, aberration etc). If you want to model through camera you should be using either a photoscan, which you wont have for this asset, or find blue prints online. However, you will still be expected to provide reference by the side of your model, and the detail I was refereing to is things like nuts and bolts, jusnction boxes, door handles etc. They will be looking between the model and the reference and calling out anything that is missing or obviously different.",
+        "ts": "1555605510.000600",
+        "username": "chris cook (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/612608946821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

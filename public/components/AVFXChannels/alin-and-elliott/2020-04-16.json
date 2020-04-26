@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey dude sorry had a lot going on! Super appreciate the feedback! I see what you mean about the pecks, I wanted to try get a blend between human and dog but i don't think that really comes across too well",
+        "ts": "1587050166.009800",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1060402678374_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah the ears are super underworked currently, this is a side project to my main project, the main project is nearly out the way however so I plan to put most my time into the werewolf!",
+        "ts": "1587050215.009900",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1060405136294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also greta reference images!",
+        "ts": "1587050218.010000",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1090980639472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On the face again i wanted to try show some human elements, or more that it was a man before. if that makes sense",
+        "ts": "1587050345.010100",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067145509170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also about the skinnier look, my logic was that for someone to transform into a werewolf, it would probably put a lot of stress on the skin etc and use up fat reserves perhaps?",
+        "ts": "1587050415.010200",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073317454596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

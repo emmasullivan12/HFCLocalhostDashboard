@@ -1,0 +1,49 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good evening, how are you?",
+        "ts": "1508956752.000707",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262826497878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F7PRH0JTD",
+                "created": 1508956865,
+                "timestamp": 1508956865,
+                "name": "EalingAAu2",
+                "title": "EalingAAu2",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 105040,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7PRH0JTD\/ealingaau2?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7PRH0JTD\/download\/ealingaau2?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F7PRH0JTD\/ealingaau2",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F7PRH0JTD-2ce8c4a64d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1508956866.000030"
+    }
+]

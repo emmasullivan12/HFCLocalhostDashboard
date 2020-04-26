@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great thanks, difficult day at work but so far so good",
+        "ts": "1544028732.001300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/496481891605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you a Uni student?",
+        "ts": "1544028745.001400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/497684424150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

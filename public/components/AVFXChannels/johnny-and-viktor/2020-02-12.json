@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Poly instanced is a lot lighter than displacement , and pure geo as a stand in format ( look at stand ins in Arnold ) is the way to get non deformable geo .\nIf you displace a plane you will need more polys to achieve the same effect of a base mesh that already has some modelling but gets displaced at the end .\nI will try to find some images to explain this ",
+        "ts": "1581548632.011600",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/949837397520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

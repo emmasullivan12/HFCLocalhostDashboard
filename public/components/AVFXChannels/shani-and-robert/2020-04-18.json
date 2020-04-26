@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shani,",
+        "ts": "1587211838.004400",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1056560768279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much for your help so far regardless! I was going to write up your prior advice if that's okay with you too?",
+        "ts": "1587212042.004500",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1077463905748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Robert! Sure that's absolutely fine with me :)",
+        "ts": "1587212989.004600",
+        "username": "Shanih (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1069922632069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you !!",
+        "ts": "1587213207.004700",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1071304322658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

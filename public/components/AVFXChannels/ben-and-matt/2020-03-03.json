@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I reckon take a look at the projects you've done before and how long it took you to get them done. Then compare each of your shots\/sequences against how much time you've got to realistically get them done. The one mistake I always remember making with uni project was trying to do way too much and then the quality suffered on everything. Also keep in mind what kind of shots you think will look good on your reel too. If you want to head for a comp job then having some roto and maybe a little bit of prep work in there will help you. If you are thinking more 3D then having a 3D model nicely integrated will be hugely advantageous. What do you think?",
+        "ts": "1583253758.000800",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/979736454848_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the advice appreciate it!\n\nI was having a similar chat at uni before and decided to just focus on one scene and make sure that looks as polished as it possibly can! \n\nInvolves an initial camera track because I'm going to be putting a 3D pier going into the ocean (already modelled &amp; textured), I got the tracking done or at least almost finished and it looks quite nice with the grid, test geometry and in 3D space the ground is nice and flat. \n\nWith the footage I've got there's a hell of a lot of cleanup work to do with the amount of people on the beach so that will be challenging, but good to do.\n\nThen I want to include a crowd a long the pier queueing up to get onboard a boat (based on Dunkirk).\n\nI'll send a vid later or tomorrow, depending on trains, of a quick mockup of how it'll be laid out!",
+        "ts": "1583257105.000900",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/968395842371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think that sounds alright all together?",
+        "ts": "1583257198.001000",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/968399129027_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also fully understand with you saying trying to do too much at uni... It's hard not to contain yourself! :joy::joy:",
+        "ts": "1583257355.001100",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/967083896706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

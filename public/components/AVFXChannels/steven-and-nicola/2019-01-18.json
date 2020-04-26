@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey, thanks for asking, the main issue is basically that when the frames are stored there is no timecode information, they then get edited in the avid but when you have to conform the avid aaf for fx or grading all the plates share the same timecode (00:00:00:00) and it's then impossible to re-conform them easily... dunno. thanks for the feedback o the reel, do you think its  the right length?",
+        "ts": "1547814741.000600",
+        "username": "Nicola (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/527104253155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm sounds tricky indeed! I have never used anything from Avid, is that where the data is getting lost I guess? The length is good, maybe a little long (generally 1-1.5 minutes is good for a graduate reel) so you could potentially condense it a little more. Watching a few times I get a little more easily distracted between the snow and running clips, but then the final shot is strong (although perhaps more because I am more CG driven!).  The title plate could maybe have less screen time (I know a few people that start to skip long title frames). I think the order is good, and it shows great comp skills as a whole",
+        "ts": "1547825747.000700",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/526640333792_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

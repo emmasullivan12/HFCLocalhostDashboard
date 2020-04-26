@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Leanne, Happy New Year . So so sorry I have not replied to your last message, I have been awful. Work has been manic and I took some holiday over the christmas period. I have been meaning to reply to your message but I have just been swamped. I will give you a more detailed reply in the next few days once things have calmed down a bit, I have not forgotten! Thanks, and sorry again, Emma :white_frowning_face:",
+        "ts": "1547222430.000100",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/521764510242_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its for kinda now really",
+        "ts": "1571394638.000600",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/793949216593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "go to <https:\/\/www.unionvfx.com\/careers> and look for render wangler \/ roto artist",
+        "ts": "1571394654.000700",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/802244064695_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Union VFX - Careers",
+                "title_link": "https:\/\/www.unionvfx.com\/careers",
+                "text": "Union VFX is an independent visual-effects facility founded in 2008 by Adam Gascoyne and Tim Caplan to provide a creative service for feature films &amp; television",
+                "fallback": "Union VFX - Careers",
+                "from_url": "https:\/\/www.unionvfx.com\/careers",
+                "service_icon": "https:\/\/www.unionvfx.com\/site\/templates\/images\/favicon.png",
+                "service_name": "unionvfx.com",
+                "id": 1,
+                "original_url": "https:\/\/www.unionvfx.com\/careers"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its a dual role where you'd need to look after the render farm as well as do some roto work",
+        "ts": "1571394671.000900",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/787605468658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "eventually, itshould lead into roto \/ prep then junior comp",
+        "ts": "1571394689.001000",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/800395340997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds awesome!! I'll apply now",
+        "ts": "1571406348.001100",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/789122146467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Done! Fingers crossed! Thanks for the heads up! :raised_hands:",
+        "ts": "1571406946.001200",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/800615068485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

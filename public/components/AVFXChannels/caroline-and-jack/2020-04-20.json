@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, sorry I've just realised I'm working today until 6 :confused: is there another time that's doable?",
+        "ts": "1587377030.000100",
+        "username": "Jack Purkiss (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066314143254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jack, not a problem. Are you free tomorrow? I'm around in the morning between 11-2pm, or at 4:30?",
+        "ts": "1587394011.000200",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079839008468_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep any time tomorrow really ",
+        "ts": "1587398687.000300",
+        "username": "Jack Purkiss (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1080072864916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

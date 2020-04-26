@@ -1,0 +1,107 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. Hope your having a good weekend. Yea Goldsmith is a good school. I saw the Saturday Club exhibition and ceremony from Escape Studious and other other schools that day. (Saturday 9 June I think). It was really fun and inspirational to see all the projects the projects! This autumn I will be teaching some. :blush: can’t wait. ",
+        "ts": "1532863079.000055",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/408216767174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have an Instagram account but haven’t been in it for awhile lol. I’ll check it and let you know my name. ",
+        "ts": "1532863123.000011",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/407036821461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Check V&amp;A museum’s up coming exhibit on Games opening soon. It looks really cool. ",
+        "ts": "1532863478.000014",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/406343546689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.vam.ac.uk\/exhibitions\/videogames?utm_campaign=540191_August%20General%20What%27s%20On&amp;utm_medium=email&amp;utm_source=Victoria%20and%20Albert%20Museum&amp;dm_i=45GA,BKTB,AF8ZN,19Y23,1>",
+        "ts": "1532863525.000041",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/407935024023_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Victoria and Albert Museum",
+                "title": "V&amp;A · Videogames: Design\/Play\/Disrupt",
+                "title_link": "https:\/\/www.vam.ac.uk\/exhibitions\/videogames?utm_campaign=540191_August%20General%20What%27s%20On&utm_medium=email&utm_source=Victoria%20and%20Albert%20Museum&dm_i=45GA,BKTB,AF8ZN,19Y23,1",
+                "text": "This exhibition explores the design and culture of videogames since the mid-2000s",
+                "fallback": "Victoria and Albert Museum: V&amp;A · Videogames: Design\/Play\/Disrupt",
+                "image_url": "https:\/\/vanda-production-assets.s3.amazonaws.com\/2017\/09\/01\/09\/05\/14\/886088b6-bfa5-454e-9a63-493a5d7b3649\/960.jpg",
+                "from_url": "https:\/\/www.vam.ac.uk\/exhibitions\/videogames?utm_campaign=540191_August%20General%20What%27s%20On&utm_medium=email&utm_source=Victoria%20and%20Albert%20Museum&dm_i=45GA,BKTB,AF8ZN,19Y23,1",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 111383,
+                "service_icon": "https:\/\/www.vam.ac.uk\/assets\/favicon\/apple-touch-icon-57x57-dba02653cbd7d1f5c9cb84eadb81c92139d5cacadfb6f008b5252e4f3089c29d.png",
+                "id": 1,
+                "original_url": "https:\/\/www.vam.ac.uk\/exhibitions\/videogames?utm_campaign=540191_August%20General%20What%27s%20On&amp;utm_medium=email&amp;utm_source=Victoria%20and%20Albert%20Museum&amp;dm_i=45GA,BKTB,AF8ZN,19Y23,1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The exhibition looks cool.",
+        "ts": "1532880870.000043",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/408262807014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi again. Ok I think I have my Instagram account set up. Lol. Try davisteinster \nI don’t have any images up. Lol. If you want to share your artwork, that would be great :blush: \nI’m off to bed soon so I’ll take a look in the morning. Need to work tomorrow early so I’ll chat you more soon. And we will make a set day and time for this week :smiley: ",
+        "ts": "1532897116.000033",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/406852076019_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, I'll try it:ok_hand: ",
+        "ts": "1532900703.000007",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/406859984483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I forgot to mention that this week I will be going to some type of art festival Mon-Fri 10-4:00 so I'll only probably be able to talk in the afternoons but after next week I'm back to having an open schedule:smiley: ",
+        "ts": "1532900824.000067",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-29\/406439663921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

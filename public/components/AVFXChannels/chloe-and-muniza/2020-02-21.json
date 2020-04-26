@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi!\nI've made some more progress on this shot\n<https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1354366\/1388004>",
+        "ts": "1582288933.002700",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/964905954951_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Shot05_Anim",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1354366\/1388004",
+                "text": "Collaborative Media Review with 4 items",
+                "fallback": "SyncSketch: Shot05_Anim",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1354366\/1388004",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1354366\/1388004"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582288934.000000"
+        }
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's the video I was talking about in regards to console generations: <https:\/\/www.youtube.com\/watch?v=O5cup4d0HHs>",
+        "ts": "1540654723.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-27\/465754322212_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Are Game Console Generations Dead As We Know Them?",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=O5cup4d0HHs",
+                "author_name": "Spawn Wave",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCoIXnB865l9Ex9zs4OIXTdQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/O5cup4d0HHs\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Are Game Console Generations Dead As We Know Them?",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/O5cup4d0HHs?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=O5cup4d0HHs",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=O5cup4d0HHs"
+            }
+        ]
+    }
+]

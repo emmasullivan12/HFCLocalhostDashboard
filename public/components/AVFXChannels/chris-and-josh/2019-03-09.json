@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you have a good trip? :blush:",
+        "ts": "1552142574.003000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-09\/571065279568_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

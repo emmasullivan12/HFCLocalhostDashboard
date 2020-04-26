@@ -1,0 +1,64 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sure there are plenty of options.. I found this article that has a few ideas related to categories of jobs for students maybe you can have a look:",
+        "ts": "1550922538.007400",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/560046350807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.localwise.com\/a\/100-37-best-part-time-jobs-for-college-students>",
+        "ts": "1550922541.007500",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558403101873_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Localwise Jobs",
+                "title": "37 Best Part-Time Jobs for College Students - Localwise",
+                "title_link": "https:\/\/www.localwise.com\/a\/100-37-best-part-time-jobs-for-college-students",
+                "text": "Find a part-time job that fits your busy schedule — it's easier than you think!",
+                "fallback": "Localwise Jobs: 37 Best Part-Time Jobs for College Students - Localwise",
+                "image_url": "https:\/\/dev-staging-lw-attachments-paperclip-attachments.s3.amazonaws.com\/000\/960\/113\/article_large\/6c16b4522705ab1ddb029ae8d34edeb0bf70971b.jpeg?1545357060",
+                "ts": 1549584269,
+                "from_url": "https:\/\/www.localwise.com\/a\/100-37-best-part-time-jobs-for-college-students",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 127180,
+                "service_icon": "https:\/\/www.localwise.com\/assets\/favicon-07811298cb656d41a16bdae828d400c51165419013fd31cf0e2a186b7427f992.png",
+                "id": 1,
+                "original_url": "https:\/\/www.localwise.com\/a\/100-37-best-part-time-jobs-for-college-students"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "unless you'd like specifically to get work experience relevant to what you'll be studying in which case maybe a good start could be as a receptionist or admin in a place that deal with helping kids with special needs, so you are inside the circle where you will be learning more about the subject too",
+        "ts": "1550922614.007700",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/560046680855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I’ll have a look thank u ",
+        "ts": "1550923222.007800",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-23\/558858494819_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

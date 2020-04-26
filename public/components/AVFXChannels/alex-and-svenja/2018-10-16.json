@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor,\n\nI was told about the job the daybefore hence my interview was next day. I've passed the interview and got the job, it's a part time job at a pharmacy in order for me to gain some work experience in a pharmaceutical carrier.\n\n\n",
+        "ts": "1539717183.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-16\/458678210999_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

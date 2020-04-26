@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve looked into the big companies like Framestore, DNEG, MPC. Not sure whether my work will be good enough at the beginning to go straight into a company like that, but they have really good programs for graduates to start out. I’ve also looked into smaller companies like Animade, Blue-Zoo, Seed Animation. There are so many companies in London it’s hard to know where to start! And I’ve not looked much into games companies.\n\nUni has been amazing. The group project is going well, but the deadline is coming. After this group project I’ll have to do 2 big projects on my own, both animation focused. I would definitely appreciate some help with those if I could send you some shots when I start working on them!",
+        "ts": "1582460210.000100",
+        "username": "João Pereira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/965043124789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

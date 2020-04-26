@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "text": "You’ve upgraded your Slack team :tada: But right now, anyone on your team can invite a new member. If you’d like, you can restrict that to just administrators.\n_<slack-action:\/\/BSLACKBOT\/users-invites\/invites-only-admins\/restrict\/|Only allow administrators to invite>_",
+        "user": "USLACKBOT",
+        "ts": "1496932413.116256",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Emma Sullivan has applied to have the Compliance Exports feature made available for your Slack team. <https:\/\/slack.zendesk.com\/hc\/en-us\/articles\/203950296-FAQs-about-Slack-s-policy-update#complianceexport|Learn more about Compliance Exports>. If you have questions about this application, please discuss with Emma Sullivan or <https:\/\/prospela.slack.com\/\/requests\/new|contact us> if you believe this is an error.",
+        "user": "USLACKBOT",
+        "ts": "1496939853.007843",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Your compliance export application has been approved. You can now <https:\/\/prospela.slack.com\/services\/export|enable the feature> for your team.",
+        "user": "USLACKBOT",
+        "ts": "1496939860.010105",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi, <@U4VR52RQE|dexter-prospela>. Your Team Owner, <@U4V22C6A1|emma-prospela>, enabled Compliance Exports for your Slack team. This allows Team Owners to export communication history, including the content of private group and direct messages, subject to your team's message retention and deletion policy. \n\nYour Team Owner enabled this feature on June 8, 2017 at 10:00:09 AM PDT. Private messages sent before this time are not included in Compliance Exports. Please read our <https:\/\/slack.zendesk.com\/hc\/articles\/203950296-FAQs-about-Slack-s-policy-update#complianceexport|FAQ> to learn more about this feature.",
+        "user": "USLACKBOT",
+        "ts": "1496941209.477595",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

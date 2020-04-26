@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries Andrew, ah term of software i dont see anything changing just yet. Maya is still around and wont be too long yet because it would be too expensive to change pipeline. arnold is very good. i dont believe they will move away from it. places still use arnold. Yea for sure right now its crazy so im using this time to improve and finish projects for myself. XD Ah outdoor enviroment is nice. Im trying to expand my horizon with work wise. its good to do that for yourself it gets interesting :slightly_smiling_face:",
+        "ts": "1586085348.000400",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1049484482708_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What personal projects do you have going on at the moment?",
+        "ts": "1586085368.000500",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1047520184805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

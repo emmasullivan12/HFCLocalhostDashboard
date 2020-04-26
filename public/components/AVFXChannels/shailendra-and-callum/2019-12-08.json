@@ -1,0 +1,354 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shailendra!! Sorry for the super late response. Deadlines are next week so I've been really busy! Now I only have one more brief to get out of the way so I should have a lot more time :slightly_smiling_face:",
+        "ts": "1575844815.004100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864257917796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much for the advice on the ivyman interior scene! I took your advice and made those changes and it made it a lot more immersive!;D",
+        "ts": "1575844849.004200",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/851932874658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the advice on shooting also. Right now we're planning on going shooting around the end of January now but we'll see for sure closer to the time. I think that we're going to do some tests\/previsualisations before then also if you'd be interested in seeing those.",
+        "ts": "1575844911.004300",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/853247754147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OH I HAVE SOME AWESOME NEWS!!",
+        "ts": "1575844923.004400",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866575034231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apparently ILM got in touch with my university and they're offering two compositor internships to our university for the summer!!",
+        "ts": "1575844948.004500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/851933461762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I went and shot some footage and now I'm working on it for my reel:)",
+        "ts": "1575844961.004600",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/856774981457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I spoke to a graduate paint and roto artist there and he said to put these on my showreel",
+        "ts": "1575844989.004700",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866575419815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Organic roto like a person",
+        "ts": "1575844996.004800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864725512533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Rigid roto like a car",
+        "ts": "1575845001.004900",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864725544709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Patch or 3d projected paintwork",
+        "ts": "1575845013.005000",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864725624805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And frame by frame paintwork.",
+        "ts": "1575845018.005100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866575590087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Plus actual CG compositing shots.",
+        "ts": "1575845024.005200",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864725687717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So right now I'm working on a 3 second frame by frame paint shot.",
+        "ts": "1575845038.005300",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/853248488659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me upload it to show you!",
+        "ts": "1575845043.005400",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866924502790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's the shot - <https:\/\/vimeo.com\/378168031>",
+        "ts": "1575845332.005500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866926250550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "password is: runpaint",
+        "ts": "1575845337.005600",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864261026244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With this shot I'm basically painting out the lanyard and id around her neck frame by frame.",
+        "ts": "1575845351.005700",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/851935857042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So far I've only done three frames since I'm busy with briefs hahaha",
+        "ts": "1575845367.005800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864717605776_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I only recently learned that you can paint from previous and future frames using the rotopaint node!! I had no idea this is how paint was done.",
+        "ts": "1575845394.005900",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864717769456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have any advice for doing frame by frame paint?",
+        "ts": "1575845412.006000",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/853250739763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right now for the first three frames I've done I have used this work flow:",
+        "ts": "1575845430.006100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866926855862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1. paint the first frame by hand ",
+        "ts": "1575845445.006200",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/851936460210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2. paint the second frame using the first frame",
+        "ts": "1575845461.006300",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/853251055731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "3. then paint the third frame using the second frame.",
+        "ts": "1575845472.006400",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/853251117411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not sure if what I'm doing is 100% industry standard.",
+        "ts": "1575845482.006500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866578417319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OH! I also uploaded a new showreel since my old showreel had a lot of modelling in it. <https:\/\/vimeo.com\/336801273>",
+        "ts": "1575845524.006600",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864718576896_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Callum McKay - Paint and Roto Showreel - Autumn 2019",
+                "title_link": "https:\/\/vimeo.com\/336801273",
+                "author_name": "Callum McKay",
+                "author_link": "https:\/\/vimeo.com\/user90797736",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/835451016_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Email: \nLinkedIn: ",
+                "fallback": "Vimeo Video: Callum McKay - Paint and Roto Showreel - Autumn 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/336801273?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"170\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Callum McKay - Paint and Roto Showreel - Autumn 2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 170,
+                "from_url": "https:\/\/vimeo.com\/336801273",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/336801273"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Since I want to go into comp, I removed all of the modelling and random stuff and just showed paint, roto and comp",
+        "ts": "1575845548.006800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866927574742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But yeah! That's what I've been up to besides all of my university assignments!:)",
+        "ts": "1575845562.006900",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864262406532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry again for taking so long to get back to you!!",
+        "ts": "1575845572.007000",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864729015653_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks again:)",
+        "ts": "1575845575.007100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866578977783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

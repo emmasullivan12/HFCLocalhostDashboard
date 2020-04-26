@@ -1,0 +1,11 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_add",
+        "text": "added an integration to this channel: <https:\/\/prospela.slack.com\/services\/B5D8XGJSE|github>",
+        "user": "U4VR52RQE",
+        "bot_id": "B5D8XGJSE",
+        "bot_link": "<https:\/\/prospela.slack.com\/services\/B5D8XGJSE|github>",
+        "ts": "1494776395.953425"
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I got an email today saying my first interview is on Friday at 9:45 ",
+        "ts": "1547658074.006800",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/524698406865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "University of Greenwich ",
+        "ts": "1547658079.006900",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525501963029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m so stressed because they want to see my portfolio too :persevere:",
+        "ts": "1547658104.007000",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525300649570_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Halima! Sorry for my delayed response... I've been feeling a little unwell recently, but I'm glad you like the changes to your CV... and let me know if you find Alerts useful :+1:",
+        "ts": "1547677309.007100",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525031571009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding the interview... how is your portfolio coming along?",
+        "ts": "1547677370.007200",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/526691354071_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of advice, and handling your nerves, there's lots of things we can work on together before your interview :slightly_smiling_face:",
+        "ts": "1547677490.007300",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/526693096727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm going to send you a document I've been working on recently for people preparing for job interviews - I'm sorry I haven't had enough time to transfer it to university interviews - but much of the advice remains the same",
+        "ts": "1547677563.007400",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525533760851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FFGLF0VC7",
+                "created": 1547677625,
+                "timestamp": 1547677625,
+                "name": "Interview Guide (WIP).pdf",
+                "title": "Interview Guide (WIP)",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 751490,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FFGLF0VC7\/interview_guide__wip_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FFGLF0VC7\/download\/interview_guide__wip_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FFGLF0VC7-8a1c393b92\/interview_guide__wip__thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 1100,
+                "thumb_pdf_h": 688,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FFGLF0VC7\/interview_guide__wip_.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FFGLF0VC7-80ca38c586",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1547677627.007500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Please read through and let me know if you have any questions.... please remember it is focussed on job interviews, so you can ignore parts, but I'll do my best to explain anything that doesn't make sense",
+        "ts": "1547677758.007800",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525536593267_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The most useful part of that document is the last page.... it's a really REALLY big help with nerves if you use some techniques to slow down and take your time to answer questions - it will make you feel like you're in more control :slightly_smiling_face:",
+        "ts": "1547677838.007900",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525475480452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Once you've read through let me know... I'd like to give you some more advice \/ guidance but realise you've probably got lots on and might struggle to digest everything at once",
+        "ts": "1547677908.008000",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525538921763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So that document is the most important stuff - and if you feel like you're ready for some more, just let me know :+1:",
+        "ts": "1547677933.008100",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-16\/525539237219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

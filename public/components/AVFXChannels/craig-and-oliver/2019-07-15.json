@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Craig, please accept my apologies for not introducing myself. I am a mature Student that didn't start studying until the age of 32. I started life in the motor trade. In 2013 I had d daughter that is quite severely disabled. Her disability meant my partner couldn't cope with the pressures of raising my non-disabled children and well as my daughter. It required me to quit working and help out. I thought I may as well study a degree in something. I always loved video games, so I took on a games degree to keep my mind active. I enjoyed using Unreal Engine and making real time art and also scripting mainly using their new flow based scripting known as blueprint. I have tried a bit of everything and haven't committed to one particular skill set and this is my problem. My problem is that I enjoy everything. However, I feel that 3d modelling environments i.e. tables and chairs to be a bit simple and non-interesting. Once I tried organic modelling in digital sculpting apps such as Zbrush I was gone for days. I really enjoyed organic modelling. I then started to dabble with animation and touched on particle systems. This seemed very interesting to me and would love to explore a bit more of real-time VFX.  I feel I really need to build a portfolio that specializes in one particular job such as FX.  I feel that good looking FX is the ultimate 3D challenge, especially real time or even interactive. I was hoping that maybe you could help me with that by setting tasks for me to complete.  Time is not on my side unfortunately due to my age being 37 now. I am also currently raising a family with support from the breadline. I did not anticipate how much how of a challenge looking after a severely disabled person would be.  I am in a position now I can return to work. However, the motor trade won’t have me now because I have been gone so long and studying 3D for years really shows where my interests lie. Getting a job in the film or games industry is my dream. I am sick of the stigma that comes with being a benefits family. I have invested so much time in 3D and will die trying to get in the industry. I realise the industry is tough and not for the faint-hearted . I am a very honest person even though it doesn’t always work to my advantage.  Really hope to hear from you and get started.",
+        "ts": "1563204356.002400",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/688512626177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi oliver sorry slack didnt properly alert me to your messages! Thank you for sharing your story with me; i’m sorry things have been tough but we will see what we can do to help get you into the industry! Its also great to understand the areas you enjoy and want to progress further in so we can focus in on something",
+        "ts": "1563215542.002500",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-15\/688757492897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

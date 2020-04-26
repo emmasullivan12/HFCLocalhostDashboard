@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for sending your Cv. I will tlak a. Look at and give you feedback. :)",
+        "ts": "1570777714.000700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/794095985894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.amazon.co.uk\/Rotoscoping-Techniques-Tools-Aspiring-Artist\/dp\/0240817044>",
+        "ts": "1570777799.000800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/793745764967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This book my student recommend for learning  the art of rotoscoping. The methods are to do as much as possible procedurally. Then, go frame by frame if needed to nudge the shapes to align with your object. So let the computer interpolate in between key frame first. ",
+        "ts": "1570777957.000900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/779112443378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is an electronic version too of the book ",
+        "ts": "1570777982.001000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/785458482465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see, thanks! Will see if i can find it somewhere!",
+        "ts": "1570778013.001100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/793748720279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will hopefully make a graduate showreel and apply for a few jobs through linkedIN",
+        "ts": "1570778076.001200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/793749600855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good plan. I can definitely help with your shits for your showreel :+1: That’s what I do with my students :wink:",
+        "ts": "1570778126.001300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/785460506945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks :sweat_smile::innocent: i have some animation, rigging, game development, vfx and 3d sculpting ",
+        "ts": "1570778228.001400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/791899624181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@rmoham-2012 has joined the group_",
+        "ts": "1507581713.000218",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/254780601559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@afandy.vanhien has joined the group_",
+        "ts": "1507581742.000178",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253044032976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "<!channel>, Abdul Razzaque we have matched you with Andy as your E-Mentor. Feel free to introduce yourselves and continue chatting within this channel. Why not send a quick video to say hello! :wave:\n\nI will now be leaving the channel, but please direct message myself or Emma if you have any questions. All the best! :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1507581793.000058",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U4VR52RQE",
+            "ts": "1507581821.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507581871.000216",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253695176626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507581887.000528",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253834723605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Abdul, I am Andy. I will be your Prospela e-mentor. I'll do my best to answer your questions about university\/jobs\/careers.\n\nI work in finance at an investment company. I also spend basically all of my money on food, so we're cool.\n\nI see you want were thinking about medicine. I am not a doctor, but my sister is. So, should you have any questions, I'll see what I can do to get you a good answer. ",
+        "ts": "1507582276.000201",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253753809060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

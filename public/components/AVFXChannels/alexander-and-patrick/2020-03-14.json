@@ -1,0 +1,162 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I have since then heard a lot of similar (and worse) stories about MPC from friends and colleges. I know they are a good entry point for a lot of people into the industry because they hire a lot of juniors and let them work on cool, big shows. But they don't pay very well and they are very quick to kick you out again when they don't need you. I for my part have very little interested in working for MPC anymore. Even though their creature department is top notch. Simply because I know I can get a job elsewhere that pays and treats me better.",
+        "ts": "1584214450.004000",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/990602287025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They have offered me a job since then a couple of times but I declined and now that they layed off so many people because they didn't have work I'm quite glad I did.",
+        "ts": "1584214544.004100",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1000224979748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Being a generalist doesn't have to mean you can't learn mechanical rigging. Most of the time people will specialize one type of assets eventually without even being conscious of it. So if hard surface is what motivates you most then you can still be a generalist but focus on hard surface assets. hard surface modeling, hard surface texturing, mechanical rigging, maybe some product lighting. There is still plenty of variety to have even though you mostly do hard surface assets",
+        "ts": "1584214716.004200",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1002545938967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "specializing from the beginning on is very hard to do and not necessarily beneficial. Most people don't know exactly what they want to do when they start off and find it over time by doing all kinds of work. At some point you figure out what you're best at and what you like doing the most quite naturally. So try not to worry about specialization too much :wink:",
+        "ts": "1584214873.004300",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1000683740512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for the texturing part:\n\nI tend to find a lot of different references and pick my favourite features but it's not always a good thing. Sometimes that confuses me or different features don't work well together. So heaving a handful of KEY images is probably a good idea. They will guide you to a coherent version and then you can still add additional detail from other references if you wish :smile:",
+        "ts": "1584215203.004400",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1002897002742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't have that much Mari experience myself. Usually I prefer to do my texturing in Substance Painter but that is just because I haven't used mari a lot. I should probably get better at it :sweat_smile: Generally though you can get a nice breakup by combining baked maps like curvature and ao with noises. Most people I know tend to bake those mesh maps in Substance and then bring them into Mari to use them for their texturing there since the Mari bakers are not that advanced yet. I know there is some really cool real time curvature in the new mari extension pack though",
+        "ts": "1584215414.004500",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/987901307026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of feedback for the rest of your reel:\n\nThe helmet looks really good in general. It's a nice model your friend made there, there is plenty of believable detail in the textures, it's well presented including lighting and breakdowns. There is really not that much in terms of critique :sweat_smile:. Maybe you could have gone a bit higher on the texture resolution since it it such a hero piece. For the most part it's enough, but some areas feel like they would benefit from a higher texture res. Another thing is the fact that everything is kind of the same material. I realize that is the concept of the whole thing. Just as a nod to future hard surface pieces you do: a lot of times the interplay of drastically different materials creates a tension and some interest of its own. So maybe having some rubber parts, carbon fiber, cloth or a really wet blood stain could break up that uniformity :wink:",
+        "ts": "1584224028.004600",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/990689927073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lastly the still life rendering:\n\nCompared to the other two I would say this is your weakest piece, which is probably why you put it at the end. If you don't have that much time to improve things on your reel anymore this is probably worth spending a bit more time on rather than the others. There are some really good still life images on the web similar to this. Lots of them are paintings but there are also plenty of CG ones now. Grant Warwick did an amazing one a couple of years ago. maybe you can find some inspiration in his piece",
+        "ts": "1584224669.004700",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1002982480614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F01009ASR9A",
+                "created": 1584224675,
+                "timestamp": 1584224675,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2188072,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F01009ASR9A\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F01009ASR9A\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 228,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 304,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 456,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 507,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 608,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01009ASR9A-6e624f4426\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 648,
+                "image_exif_rotation": 1,
+                "original_w": 1366,
+                "original_h": 865,
+                "thumb_tiny": "AwAeADDMFSqStMFSYzgUgJNxI5OKgc5NSopbk9Kay7c5oAhxRTup4pKYAtTxuQOear0oZh0JpAWyP7vyr16U1lJU4O70IquXY9WP50mT60DHjjgg00mkyfWkpgf\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F01009ASR9A\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F01009ASR9A-886455004b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584224681.004800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "keep up the good work :smile:",
+        "ts": "1584224743.005100",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/990695814129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

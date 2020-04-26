@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Halima, how are things going this week? Have you had your 2 interviews??",
+        "ts": "1550153070.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/550965055475_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It sounds like it's a really stressful time for you at the moment. I know it can seem a bit crazy but it's so important to make sure you have time to unwind.",
+        "ts": "1550153106.000200",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/550342809584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anything you do to do this?",
+        "ts": "1550153111.000300",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/551078888802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know you mentioned watching TV isn't an option right now, but maybe if you can make time for things like that, it'll really increase your productivity.",
+        "ts": "1550153146.000400",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/551020193620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like to do things like: read books, take a long bath, watch tv, films, go to the cinema, take my dog for a walk",
+        "ts": "1550153182.000500",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/551020799300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Having that 'me time' is invaluable",
+        "ts": "1550153193.000600",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/551021018500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just finished reading To the Lighthouse by Virginia Woolfe. I told myself i wasnt a feminist if i didnt read Woolfe but i found it reallllly hard!!!",
+        "ts": "1550153232.000700",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/550344989808_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also just read Normal People by Sally Rooney which i loved!",
+        "ts": "1550153246.000800",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/551021911988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm now reading some short stories!",
+        "ts": "1550153253.000900",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/550968251971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way, I'm going on holiday on Sunday for 2 weeks!! I'm off to Cape Town with some freinds, I can't wait! But I'm going to take time off from work\/slack.everythign to completely unwind",
+        "ts": "1550153301.001000",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/550969045763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll speak to you before then anyway.",
+        "ts": "1550153309.001100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-14\/552163635143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

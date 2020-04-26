@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not to worry! The heightfield stuff is coming along\nAre you trying to recreate the snow scene in Houdini?",
+        "ts": "1568026611.002500",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/753374262565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am been fixing it in maya, as I wanna correct it in software I am comfortable with(: ",
+        "ts": "1568067048.002600",
+        "username": "Cas Van Den Bergh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/756126648727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

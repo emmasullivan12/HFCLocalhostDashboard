@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Joshua- sorry for the delay getting here! You graduated in Animation? Great. Tell me a bit about the kind of stuff you got up to- and where you'd like to end up too- as that'll help our conversations.",
+        "ts": "1554575460.000700",
+        "username": "Saint (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-06\/604024883430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

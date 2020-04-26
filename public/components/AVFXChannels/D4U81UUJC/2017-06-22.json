@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "text": "Your Slack export has completed! You can download the file from <https:\/\/prospela.slack.com\/services\/export\/download\/201672657395\/5a2553df|your export page>.",
+        "user": "USLACKBOT",
+        "ts": "1498114859.297620",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *20170622_083336.mp4* under review.",
+        "ts": "1498117164.741596",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Georgina.pdf* under review.",
+        "ts": "1498145639.687118",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Georgina.pdf* meets our content policy.",
+        "ts": "1498145640.687625",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "text": "Your Slack export has completed! You can download the file from <https:\/\/prospela.slack.com\/services\/export\/download\/201488485905\/babb5cda|your export page>.",
+        "user": "USLACKBOT",
+        "ts": "1498147194.328442",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vFinal.pdf* under review.",
+        "ts": "1498162970.067784",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vFinal.pdf* meets our content policy.",
+        "ts": "1498162971.068126",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    }
+]

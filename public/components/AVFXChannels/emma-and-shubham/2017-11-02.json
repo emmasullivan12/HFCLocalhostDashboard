@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not too sure what type of engineering interest me just yet, I am still exploring and researching different types of them ",
+        "ts": "1509611707.000370",
+        "username": "syadav-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/265704227507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What project are you working at the moment ",
+        "ts": "1509611850.000032",
+        "username": "syadav-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/265705157907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure if you've seen these websites? Good overview of different branches of engineering: <https:\/\/www.allaboutcareers.com\/careers\/industry\/engineering>\n<https:\/\/nationalcareersservice.direct.gov.uk\/job-profiles\/manufacturing-and-engineering>",
+        "ts": "1509624881.000288",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/265366092257_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Engineering Careers | AllAboutCareers",
+                "title_link": "https:\/\/www.allaboutcareers.com\/careers\/industry\/engineering",
+                "text": "Bridges, builds, CAD and cars; the engineering sector has all sorts of options available if you've got the skills and the desire! Check out your options here.",
+                "fallback": "Engineering Careers | AllAboutCareers",
+                "from_url": "https:\/\/www.allaboutcareers.com\/careers\/industry\/engineering",
+                "service_icon": "https:\/\/www.allaboutcareers.com\/favicon.ico",
+                "service_name": "allaboutcareers.com",
+                "id": 1
+            },
+            {
+                "title": "  Manufacturing and engineering | Job profiles | National Careers Service ",
+                "title_link": "https:\/\/nationalcareersservice.direct.gov.uk\/job-profiles\/manufacturing-and-engineering",
+                "text": "There are a lot of different careers in this job family. For some jobs you’ll need practical skills and creativity and in others you’ll need to be good at maths and science. An interest in how things work and problem solving skills will also help if you want to design, test and build tomorrow’s technology.",
+                "fallback": "  Manufacturing and engineering | Job profiles | National Careers Service ",
+                "from_url": "https:\/\/nationalcareersservice.direct.gov.uk\/job-profiles\/manufacturing-and-engineering",
+                "service_icon": "https:\/\/nationalcareersservice.direct.gov.uk\/favicon.ico",
+                "service_name": "nationalcareersservice.direct.gov.uk",
+                "id": 2
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At the moment I'm working on building my own tech startup (so a computer engineering project!)",
+        "ts": "1509624970.000138",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/265935603652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As an engineer, a lot of work starts in the \"brainstorm\" \/ design mode ... there is a lot of groundwork to be thought about and tested before any actual building happens ... so lots of work in teams and research to get to the best ideas",
+        "ts": "1509625013.000264",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/265884920018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a lot of debates with your colleagues as well as getting external advisers \/ companies in who are experts in a certain area. This way you can ensure your idea is solid and well-researched!",
+        "ts": "1509625057.000202",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/265231468416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Often, engineering is not always starting from scratch. For example when I worked at GE Oil &amp; Gas, the team would always ask the question \"build vs. buy?\" i.e. should we spend the time \/ money \/ resources on building new technology &amp; equipment from scratch or should we simply buy it externally and spend our time on something else",
+        "ts": "1509625146.000087",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/265886138226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example, GE is a MASSIVE company and we had lots of clients. One of them wanted to use our product, but only if it had this extra technology that came along with it. We knew it would take us 6 months to build it ourselves, but instead we paid an external company (who was a lot smaller than us) to license the technology from them. It cost us a few thousand £££ but it meant we could deliver to the customer TOMORROW, rather than months and months ahead. It's all about weighing up options and solving problems for the end user!",
+        "ts": "1509625277.000088",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/266971587079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are there any particular problems in the world that you are interested in solving?",
+        "ts": "1509625305.000361",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/266971797959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Engineering isn't always about big technical equipment and cars &amp; planes. I like to think as engineers as problem solvers of ANY type of problem :wink:",
+        "ts": "1509625339.000046",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/266026412821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sidd, if you have a moment, I am currently writing a paper on Professional Practice. I would love to hear what you have to say regarding your experience in the industry and what you have learned. My paper will be on the possibilities of going freelance and what industry are currently looking for, if you can help regarding this I will be extremely grateful :slightly_smiling_face: Thank you!",
+        "ts": "1571051595.000200",
+        "username": "Zoë Paterson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-14\/794324792272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

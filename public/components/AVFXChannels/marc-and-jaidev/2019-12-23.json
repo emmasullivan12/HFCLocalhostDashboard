@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right so the programs are a mix of languages at times.",
+        "ts": "1577104628.000700",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/886043367047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

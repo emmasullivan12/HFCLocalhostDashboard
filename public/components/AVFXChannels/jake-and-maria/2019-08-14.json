@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad I could offer some feedback. Look forward to seeing any new renders! Is there anything at all you wanted to know about feature film vfx? Anything at all :grin:",
+        "ts": "1565807390.004100",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/728856995510_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

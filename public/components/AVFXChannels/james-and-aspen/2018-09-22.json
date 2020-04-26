@@ -1,0 +1,26 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Aspen, good to meet you, I’m James. I’m a Staff Engineer at Arm ( <https:\/\/www.arm.com> ), where I’ve been working for six years. Amongst other things, Arm designs processors that end up in many of the world’s top smartphones. At Arm I’ve spent most of my career working on compilers, in particular the open source GCC compiler, and my interests have been in software optimisation and performance tuning. This year I’ve been lucky enough to have an opportunity for a small career break, so right now I’m working with one of our processor design teams to decide what one of our upcoming products should look like, and how we can make it our fastest and most energy efficient processor yet. During this year, I’m living in Austin Texas, so please don’t be alarmed if I seem to be messaging at strange times of day; there’s a six hour time difference to UK time! Outside of work, my interests are music, film, “hiking” and theatre, along with playing PS4 or reading if I’ve had a particularly stressful day. I’m originally from Edinburgh, Scotland and studied computing at at Imperial College London.\n\nDexter has shared with me an introduction of your interests, and aspirations but if it’s ok with you, I’d like to hear it from your perspective. Or, let me know if you have any questions for me on what I do. I’m happy to go in to loads more detail about what we do at Arm, or my background, or any other topic that feels interesting for you!",
+        "ts": "1537635812.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/440967700179_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Arm | The Architecture for the Digital World",
+                "title": "Architecting a Smarter World – Arm",
+                "title_link": "https:\/\/www.arm.com\/",
+                "text": "Arm architects the pervasive intelligence that is transforming our daily experience. Arm-based chips and device architectures orchestrate the performance of the technology that makes modern life possible.",
+                "fallback": "Arm | The Architecture for the Digital World: Architecting a Smarter World – Arm",
+                "from_url": "https:\/\/www.arm.com\/",
+                "service_icon": "https:\/\/www.arm.com\/shared\/common\/img\/favicon\/apple-touch-icon.png?v=2.23.0.0",
+                "id": 1,
+                "original_url": "https:\/\/www.arm.com"
+            }
+        ]
+    }
+]

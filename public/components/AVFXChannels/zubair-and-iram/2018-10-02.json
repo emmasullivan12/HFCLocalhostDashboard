@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If I’m honest. I don’t know a definitive answer. Like, I was thinking of going into accounting, but not doing pure accounting. If that makes sense?\nThe difference is that CIMA is more management based. Sort of “why a company does what it does”. \nACCA is how. It’s a lot more pure accounting and the qualification you need if you want to go into the big 4 or if you want to set up your own private practice. \n\nMy apprenticeship is a CIMA apprenticeship. Company pays for my 18 month course which I’m currently doing with Kaplan college. \n\nTo also answer the last part. Studying for the qualification is the apprenticeship. In the sense that studying for you exam is your apprenticeship. The only thing you might do additionally as part of your work is a skills review.  ",
+        "ts": "1538473743.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/448642342086_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay thank you,\n\nMay I ask what A-levels did you study for?\nAnd what did you learn in the course of your A level studies that has helped you in your CIMA qualification.\n",
+        "ts": "1538474472.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447191226051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of Skills, Knowledge ect. ",
+        "ts": "1538474484.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/448650307990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example. I work at Next. My apprenticeship is being taught by Kaplan. I go college on Sunday’s to study for the qualification. But every 6 weeks, I get a phone call from someone else at Kaplan (a talent coach) who reviews what I’ve been through. With her, I’ve got to do a few competency based question as part of my end point assessment. ",
+        "ts": "1538505306.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/446976232464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

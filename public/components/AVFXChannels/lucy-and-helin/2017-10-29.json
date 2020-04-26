@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Helin.\nHope you are getting my messages.\nLook forward to hearing from you!",
+        "ts": "1509307673.000019",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-29\/264793532679_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

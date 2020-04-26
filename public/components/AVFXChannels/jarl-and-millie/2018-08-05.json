@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey no worries I don't really have notifications on my phone so it definitely didn't wake me up :) Thanks for sharing your portfolio, I'll definitely check it out.\n\nI'd be glad to tell you what I was working on if I could, but these VFX companies are often times sworn to secrecy by the production studios who fund these movies, so until it has been publicly announced by my company, I try to be cautious and not tell people just because I can get in trouble for doing so.\n\nBut I can tell you I worked on the new Winnie the Pooh movie, which is called Christopher Robin. It honestly seems like a somewhat depressing spin on Winnie the Pooh, but in reality the story is not depressing at all, and the stuffed animal designs are really cute (we had real costume versions of them from Disney as reference and everyone wanted to steal them haha, Eeyore was particularly cute).",
+        "ts": "1533468837.000031",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-05\/412353577942_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

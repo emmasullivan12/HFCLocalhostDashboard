@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was for nuke! he was great, he taught us so many useful tools we didnt know about",
+        "ts": "1547821437.001900",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/527296617570_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "we were just working on object renders that he prepared for us beforehand and he gave us tasks to alter or animate certain attributes of the objects",
+        "ts": "1547821493.002000",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/527297534386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "he also taught us how to create our own shortcut nodes to reuse and save time",
+        "ts": "1547821516.002100",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/526563286800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice !! :) sounds like you had fun learning . \nThe creating of shortcut nodes , was that using tool sets ? \n",
+        "ts": "1547850088.002200",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/527687315763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

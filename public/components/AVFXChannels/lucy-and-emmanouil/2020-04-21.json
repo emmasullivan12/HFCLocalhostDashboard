@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Manos, I didn't get notified about your reply either!  Thanks so much for your kind words. I agree a chat would be easier, I'll have a think about your questions and see what's the best way to arrange this.",
+        "ts": "1587489505.003000",
+        "username": "Lucy Lawson-Duckett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1100640961184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy, no problem at all! Thanks for letting me know",
+        "ts": "1587496916.003100",
+        "username": "Emmanouil Zervoudakis (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075728108837_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507462976.000031",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/59da0f40fcd365000459619a|this link> with other teams to invite them in it_",
+        "ts": "1507462977.000006",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507462977.000008",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1507465962.000092",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-8\" to \"dexter-and-layton\"",
+        "old_name": "z-shared-8",
+        "name": "dexter-and-layton"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1507465992.000026",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentee* joined the shared channel_",
+        "ts": "1507466010.000008",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507467444.000008",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel"
+    }
+]

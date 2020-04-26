@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FLY7EMBHR",
+                "created": 1565620536,
+                "timestamp": 1565620536,
+                "name": "Willow Storybook  (1).pdf",
+                "title": "Willow Storybook  (1)",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 39656,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLY7EMBHR\/willow_storybook___1_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLY7EMBHR\/download\/willow_storybook___1_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLY7EMBHR-a37e877484\/willow_storybook___1__thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 935,
+                "thumb_pdf_h": 1210,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FLY7EMBHR\/willow_storybook___1_.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FLY7EMBHR-e4626e7e5b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1565620539.000500"
+    }
+]

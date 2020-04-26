@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Daniel, how was last week? I've been doing some progress on my Spiderman Shot polishing the first 30 frames (I still need to figure out how to fix that camera cut, I think it's simple, but I need to spend more time on it). In the past two weeks I've been working on an idea for a short movie for the second group project I and my classmates will work on next term. I'm doing a rough layout for when I'll be presenting in January. I've done the layout of the first part of it and I'll try to finish it by end of next week.",
+        "ts": "1575898233.004100",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/865400513760_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, it's been very busy recently, we've had some deadlines so it feels like the team has been non stop. How are you doing?",
+        "ts": "1575902519.004200",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/857568281777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you'd like me to take a glance at any bits do send them my way. What's the short movie going to be about?",
+        "ts": "1575902547.004300",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/857568992017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The story is about an arrogant new model robot (protagonist) who likes to show off and goes in an abandoned alleyway inhabited by damaged robots. He tries to get everyone's attention. Once he gets it, something suddenly happens. One of his pieces drops. At this point everyone is still looking at him and because that piece dropped, he feels ashamed and imperfect. Runs away. Time passes by and a new robot walks on that same alleyway. Shows off and as the first robot, tries to get everyone's attention. One of the damaged robots doesn't look at him. The new robot approaches him and the broken robot looks at him. We understand that this robot is the protagonist, but because of time he got rusty. The protagonist can see from another perspective who he was before. The new robot leaves. The rest of the damaged robots get closer to the protagonist and one of them gives him a gear, similar to the piece he lost. The protagonist takes it and walks away. This moment makes think the broken robots that he just didn't understand the meaning of that gesture. Few seconds after we first hear and then see the protagonist coming back with a cart full of metallic pieces. Everyone is going to get closer to the cart and we leave with a frame showing them close each other.\n\nThe meaning of the story is about expectations and how having big expectations makes us look just at what we are missing.",
+        "ts": "1575905517.004400",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/865601703552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tomorrow I'll send to you the first part of the layout I made. :slightly_smiling_face:",
+        "ts": "1575905637.004500",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/865615642149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

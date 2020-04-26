@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! - I'm going to need to reschedule next week's chat, I'm not going to be available on Monday, does Tuesday or Thursday work with you? Can do lunchtimes instead too! Sorry about this.",
+        "ts": "1560428539.006500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-13\/663600435076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

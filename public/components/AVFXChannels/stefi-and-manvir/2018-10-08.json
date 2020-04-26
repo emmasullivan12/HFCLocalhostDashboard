@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow thats so cool thanks for sharing that with me! Yeah i find being in a large group of people very overwhelming:laughing:. That is very true, i agree :+1::skin-tone-3: ",
+        "ts": "1539015272.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/451748416101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yes i have written a few things in my personal statment, actually more like noted down. I’m now trying to structure it well so that it is intresting to read. I’m not sure why i am so anxious in writing this personal statement, i think its the pressure and also the expectations that are set. ",
+        "ts": "1539015415.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/451389931316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was on unifrog the other day and it suggested me a lot of universities that i can go to for psychology. Now i’m not sure if i should move out or stay home, because a lot of unis that were suggested were far away from me. I know theres a lot of pros and cons to moving out what do you think?:thinking_face:",
+        "ts": "1539015539.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/452927904070_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

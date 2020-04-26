@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so have you got a reel or current work you'd like to share?",
+        "ts": "1587458845.002600",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1081720179988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

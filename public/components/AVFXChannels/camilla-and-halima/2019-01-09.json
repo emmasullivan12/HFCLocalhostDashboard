@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The list wasn't too bad actually! My inbox was quiet over xmas so that's good.",
+        "ts": "1547027970.003700",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/521141471718_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah that's annoying with your english teacher. I had that with French during my a-levels. I wish I worked harder because I was a bit lazy and saw it as an opportunity to have free periods. Looking back, i just needed to get my head down and work more. Retrospect is a valuable thing!",
+        "ts": "1547028050.003800",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519135943169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sure you won't do that!",
+        "ts": "1547028085.003900",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/521142890182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope your school makes allowances for you guys - not having a teacher can be quite a big thing.",
+        "ts": "1547028129.004000",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519741926562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure you'll be fine!",
+        "ts": "1547028151.004100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519573914948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Camilla, \nHope you’re well today! That’s great that you didn’t have too much to do on the first day back\nI don’t think my school does that, but we might have a substitute teacher covering our lessons so it should be okay. A lot of us sometimes go home after school on Fridays — instead of going to that English lesson because we’re all tired and exhausted and don’t really have assigned work to do ",
+        "ts": "1547072855.004200",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/521375997447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Whenever my lessons get cancelled I use that as an opportunity to work on my art work but I should prioritise geography and philosophy a lot more because there’s so much content to remember for my exams and COURSEWORK that I need to complete ",
+        "ts": "1547072906.004300",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519719113089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I keep leaving my geography coursework for another day and eventually weeks pass and I don’t add anything. I need to sort out a timetable for getting that completed ",
+        "ts": "1547072959.004400",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519719699617_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

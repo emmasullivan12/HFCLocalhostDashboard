@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hello , sorry for the long delay system update at work screwed over our ability to use the site. Been looking through the stuff in your portfolio, you have some nice reference layouts but the models you are creating are very basic and seem to be going for more of a stylized look of the reality of the shapes you are building. there are no bevels of support loops to allow for smoothing. is there any reason you have gone that direction ?",
+        "ts": "1555490744.000100",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-17\/599218162067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

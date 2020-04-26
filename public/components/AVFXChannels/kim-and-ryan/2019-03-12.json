@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! Sounds great! Thank you :relaxed: ",
+        "ts": "1552398901.000600",
+        "username": "Ryan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573891768500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

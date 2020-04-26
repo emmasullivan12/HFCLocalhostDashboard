@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hellow Drew nice to meet you too sorry about the late reply getting close to our deadlines now so I'm in the library often!",
+        "ts": "1574697300.001800",
+        "username": "Bradley James Costello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848277315360_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

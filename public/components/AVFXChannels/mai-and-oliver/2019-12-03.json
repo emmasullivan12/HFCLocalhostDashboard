@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi :) do you know the best person I could reach out and talk about internships to for blue zoo :)",
+        "ts": "1575385025.013600",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/859730194615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll check who the right person is for ya :slightly_smiling_face:",
+        "ts": "1575389898.013700",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/860235549254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The best person to contact would be our recruitement coordinator, katie gascoyne",
+        "ts": "1575390969.013800",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/860269602342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll pop here email here",
+        "ts": "1575390975.013900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/845279200898_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<mailto:katieg@blue-zoo.co.uk|katieg@blue-zoo.co.uk>",
+        "ts": "1575390993.014000",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/858062680144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks :)",
+        "ts": "1575402239.014100",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/850453603025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

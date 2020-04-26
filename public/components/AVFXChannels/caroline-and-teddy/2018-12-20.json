@@ -1,0 +1,277 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Teddy, how are you doing?",
+        "ts": "1545321817.000100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/510464991270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! I am good",
+        "ts": "1545321855.000200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508327553232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How has your week been?",
+        "ts": "1545321943.000300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509065854450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pretty busy, travelling around for xmas!",
+        "ts": "1545321987.000400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508464119713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So have you finish uni for Christmas?",
+        "ts": "1545322058.000500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/510121212151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I have, all work handed in early",
+        "ts": "1545322085.000600",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509068539170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great. I've got until 4:30 to chat. So what would you like to chat about?",
+        "ts": "1545322168.000700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509270608853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Admittedly I don't really know! I've downloaded Nuke and got the online taster course, but apparently there's been IT issues for the online courses so haven't had a chance to use it yet.",
+        "ts": "1545322249.000800",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/510473422198_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, sorry to hear the online courses have had IT issues. Well done on downloading Nuke",
+        "ts": "1545322294.000900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508968281251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm going to try and find some tutorials on lynda or something for the meantime, when I have a spare day or two !",
+        "ts": "1545322377.001000",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508471578417_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great idea.",
+        "ts": "1545322400.001100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/510476259238_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you feeling any clearer on where you see yourself after finishing uni?",
+        "ts": "1545322442.001200",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509275795557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still not so much, but I guess I have more things to work on\/do that should help me",
+        "ts": "1545322496.001300",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508339986336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How confident are you feeling in your work at the moment? I'm wondering if now you've finished your projects if you're feeling more confident in your animation skills",
+        "ts": "1545322577.001400",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509077983122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still a work in progress :grin: I am happy with what I have achieved, but still feel I can do better\/improve",
+        "ts": "1545322715.001500",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509281068389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds like a good balance though. I'm glad to hear you're proud of what you've achieved, that feels a little more positive than our first chat.",
+        "ts": "1545322859.001600",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509283856261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you like to keep up with our regular chats in the new year? We could agree for another 4 sessions, with some specific goals, like securing an internship maybe?",
+        "ts": "1545322970.001700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508917066884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I would like that!",
+        "ts": "1545323172.001800",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508985066371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK great, lets aim to get you an internship for the summer or some type of industry experience. When are you back in the new year? When would be good for our next chat?",
+        "ts": "1545323277.001900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/510144613079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm back the week of the 7th January",
+        "ts": "1545323321.002000",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509092318018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK, how about Friday at 3pm? And you can let me know closer the time if you've got to change it",
+        "ts": "1545323498.002100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508493311201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Friday the 11th? That works!",
+        "ts": "1545323607.002200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508993701043_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep. 11th. Great. Hope you have a nice relaxing break over Christmas",
+        "ts": "1545323635.002300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/510500250422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Speak in the new year :slightly_smiling_face:",
+        "ts": "1545323642.002400",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/509299108005_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, you too\"",
+        "ts": "1545323646.002500",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/510151862055_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

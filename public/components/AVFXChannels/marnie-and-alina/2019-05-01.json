@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marnie, I hope you are doing well. I'm planning to apply for the internship in a couple of days and I was wondering if by any chance you know whom to address the cover letter to make it more personal? Also, I know I asked before but just to confirm, do you mind if I reference you in my letter? Thank you in advance:)",
+        "ts": "1556701773.000100",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-01\/625117719063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello sorry just saw this, yes feel free to reference me. I unfortunately have no idea who is looking after the internship. I will ask around but it is a big place, so may not get an answer quickly. Good luck!",
+        "ts": "1556738544.000200",
+        "username": "Marnie Pitts (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-01\/623769158421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks a lot!:slightly_smiling_face:",
+        "ts": "1556739365.000300",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-01\/612405339186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's ace. Hmmm good question- we have our own node here at Blue Zoo so I'm not sure how much help I'd be. It's been a few days since you messaged, did you figure it out? :slightly_smiling_face:",
+        "ts": "1573837267.004300",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/838389158359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I spoke to my lecturer and he said it didn’t really need it because much motion blur as it wasn’t really moving that fast! We put it on the explosion instead. I’ve actually finished the project now! I’m pretty happy with how it’s turned out! Maybe you could go and have a look at my vfx instagram? (@beccaavfx) or I can send them to you on here if you want!",
+        "ts": "1573841156.004400",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/838846901606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

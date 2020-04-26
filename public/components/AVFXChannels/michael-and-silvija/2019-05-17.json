@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! \n\nI am very sorry about a late reply, studying a lot for my exam :D \n\nI am sorry, I meant weekday next week, my exam is on Monday, so I am fine any day after Tuesday!",
+        "ts": "1558092948.002000",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-17\/640804920726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah I see! Box modelling is kind of what we’re doing in class then. It was successful until I got to the lid as my water bottle has a rounded shape and a straw so it got a little tricky! ",
+        "ts": "1574410646.003100",
+        "username": "Lucy White (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/844703071700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also could you tell me how you get the notifications to come up on here because it never tells me when you’ve sent me a message! ",
+        "ts": "1574410794.003200",
+        "username": "Lucy White (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/847370701830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I might be able to send you a picture of it at some point so you can see where I’m struggling ",
+        "ts": "1574410853.003300",
+        "username": "Lucy White (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/847371613990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

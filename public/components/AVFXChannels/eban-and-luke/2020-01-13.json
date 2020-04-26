@@ -1,0 +1,131 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did a snow tool for a place I was working a few years ago. Its a useful thing and something a lot of studios would have or potentially want. While I think it would be an interesting approach to make a tool that takes in to account real world science, I'm not sure it would be very artist friendly. The artist would have to already have the knowledge of how a change in atmosphere or temperature would effect the look of the simulation. An artist is typically given a reference or a shot plate to match, so in the case of snow, would an artist be able to look at this reference and figure out what the temperature of the ground and air was? Also I would maybe say that wind in general is probably a greater contributor to the final look of snow that the general atmospheric conditions. But it is an interesting idea, I dont actually know how temp changes or moisture changes affect the look of snow. There is a great blog that I go to almost daily that you might enjoy if you're in to that stuff...",
+        "ts": "1578942392.003500",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903999639828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/fyfluiddynamics.com\/>",
+        "ts": "1578942403.003600",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/904456722544_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "FYFD",
+                "title_link": "https:\/\/fyfluiddynamics.com\/",
+                "text": "Celebrating the physics of all that flows",
+                "fallback": "FYFD",
+                "image_url": "https:\/\/i0.wp.com\/fyfluiddynamics.com\/wp-content\/uploads\/2019\/11\/FYFD_logo-e1573082043478.png?fit=300%2C292&ssl=1",
+                "image_width": 257,
+                "image_height": 250,
+                "from_url": "https:\/\/fyfluiddynamics.com\/",
+                "image_bytes": 6868,
+                "service_icon": "https:\/\/i0.wp.com\/fyfluiddynamics.com\/wp-content\/uploads\/2019\/11\/FYFD_logo-e1573082043478.png?fit=180%2C175&#038;ssl=1",
+                "service_name": "fyfluiddynamics.com",
+                "id": 1,
+                "original_url": "https:\/\/fyfluiddynamics.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Amtrack slow mo you sent is amazing. So much stuff going on there. Fast moving collisions, chunks of snow, snow sprays, and probably some volume kind of stuff. There is a lot to work with there. Also the train in general could be replaced with almost anything else. The other thing I love about that ref, is the people getting hit by the snow. Not to say that you should incorporate people in to your concept, but having the snow react with something else in the environment.",
+        "ts": "1578942630.003800",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/906321660359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That being said, one thing to be careful of there is getting bogged down by simulation times. Since there is a lot of stuff going on might be best to think about doing stuff in stages. Like do the biggest chunks of snow first then running that through secondary and tertiary sims afterwards. Its always best to work as low res as you can at first, *fail fast,* and get basic interactions working first, if that makes sense.",
+        "ts": "1578942926.003900",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/893003321827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok maybe going back to your first idea for a sec. Maybe instead of coming up with a tool that used real world science to create snow, maybe do something like that for air?",
+        "ts": "1578943074.004000",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/904485317365_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you could then apply that to any other kind of simulation you might want to have. Ash, smoke, snow, rain. I recently saw a realtime tool that does something like this, let me go find that real quick.",
+        "ts": "1578943141.004100",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/904020316820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/jangafx.com\/software\/vectoraygen\/>",
+        "ts": "1578943379.004200",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/894271786577_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "JangaFX",
+                "title": "VectorayGen: Procedural Vector Field Creation - Learn More",
+                "title_link": "https:\/\/jangafx.com\/software\/vectoraygen\/",
+                "text": "Procedurally create vector fields with VectorayGen. Check out what other AAA VFX Artists are using to speed up their workflow!",
+                "fallback": "JangaFX: VectorayGen: Procedural Vector Field Creation - Learn More",
+                "from_url": "https:\/\/jangafx.com\/software\/vectoraygen\/",
+                "service_icon": "https:\/\/jangafx.com\/wp-content\/uploads\/2019\/11\/cropped-jangafx-favicon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/jangafx.com\/software\/vectoraygen\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so these guys just came up with realtime software to easily create vector fields. That might be another way to think of your tool. But I might be wrong. Going to think about it a little more.",
+        "ts": "1578943453.004400",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/906692480278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for the wonderful suggestions and bits of insight. I will make it a point to investigate the links you provided in-depth. I am certainly interested in the idea of airfield generation. However, I have to double-check that this has not already been attempted in the past.  Please give me a few days to explore the ideas you proposed. Afterwards, we can talk in detail about further ideas or options. In the meantime, if you have any other thoughts, please let me know.",
+        "ts": "1578971965.004500",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/905053360485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

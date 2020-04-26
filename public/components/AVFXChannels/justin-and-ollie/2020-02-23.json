@@ -1,0 +1,195 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man, you have some nice free footage to train your tracking \/ chromakey\/ integration",
+        "ts": "1582470432.000100",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/964637855268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.videvo.net\/free-stock-footage\/freeclips\/yes\/>",
+        "ts": "1582470436.000200",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/965091706192_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Free  Stock Video Footage &amp; B-Roll Download 4K &amp; HD Clips",
+                "title": "Free Stock Footage - Videvo.net",
+                "title_link": "https:\/\/www.videvo.net\/free-stock-footage\/freeclips\/yes\/",
+                "text": "Download free stock video footage and B-Roll with 4k and HD clips available. Click here to download royalty-free licensing videos from Videvo today.",
+                "fallback": "Free  Stock Video Footage &amp; B-Roll Download 4K &amp; HD Clips: Free Stock Footage - Videvo.net",
+                "from_url": "https:\/\/www.videvo.net\/free-stock-footage\/freeclips\/yes\/",
+                "service_icon": "https:\/\/www.videvo.net\/wp-content\/themes\/ViDEVO\/images\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.videvo.net\/free-stock-footage\/freeclips\/yes\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582470437.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's sick, thanks mate - I have a tracking question - if you where tracking a face how would you go about it, I'm using the keen tools blender plugin to model the cg head, and the footage we had tracking markers on the face so nows the question of how to line things up",
+        "ts": "1582471497.000400",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/953631577219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My gut feeling is leaning towards using a smart vector esq ststem but I'm not sure",
+        "ts": "1582471533.000500",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/953631836627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah either keen tools (not the geo tracker but the face tracker, this one distorts properly your geo to follow the face mvt); otherwise yes smart vectors!",
+        "ts": "1582471883.000600",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/965101903008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So with the smart vectors would you line the geo up to a reference frame and see if it followed the face through the movement ?",
+        "ts": "1582471968.000700",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/965121196309_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah sorry why do you need the geo ? If you just need to stuck stuff on top of the plate face; you simply project your patches using Smartvector. If you need the geo for a full CG head replacement then there is no other options to matchmove in a 3D package or use keentools face tracker. Hopefully that should give you good results",
+        "ts": "1582472186.000800",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/964650156532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah right I'm with you - I'm helping my mate on my course doing an experiment for her final piece where shes going to add mushrooms and fungus to a face",
+        "ts": "1582472247.000900",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/966966276247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So we've done a test shoot and know how to model the head but then match moving the geo I was curious about, as I doubt nukes tracker will help with that",
+        "ts": "1582472296.001000",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/965104729936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there a free trial for the keentools face tracker ?",
+        "ts": "1582472327.001100",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/954986628161_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if that's 3D fungus; we can't really smart vector because they will feel flat on the face (like a spray paint); it's they are growing outward I'd 2D track them and maybe dio gridwarp for a bit of streching",
+        "ts": "1582472371.001200",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/953637602979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but maybe I'm over complicating things lol",
+        "ts": "1582472380.001300",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/953637667923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeh it is 3d fungus- the plan is once we've match moved the head attaching the fungus geo to the head geo so it follows the movement and then in comp joining the moved fungus to the plate",
+        "ts": "1582472469.001400",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/967315668278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah yeah",
+        "ts": "1582473673.001500",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/966976003159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Try keen tool face tracker then",
+        "ts": "1582473682.001600",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/967324010806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, cheers - my other idea was to try and see what was possible in pftrack as I get that for free",
+        "ts": "1582475068.001700",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/952336193186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

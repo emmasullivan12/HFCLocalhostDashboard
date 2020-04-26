@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow. These are so good. I think ‘Draw’ is probably my favourite one.\n",
+        "ts": "1580050391.002600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/922569072341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t really know how to define it. Um, I guess it’s going to the workplace and seeing how it works, if you’re lucky you actually get to work with someone or help with a project they’re working on. Something like that.",
+        "ts": "1580050497.002700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/924760436086_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, I would really appreciate it. There’s one that really caught my eye. It’s called ‘The Line’ and I quite like the work they’ve done so that’s my number one option. I haven’t emailed them yet though as I need to make sure my CV looks professional.",
+        "ts": "1580050608.002800",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/922571277157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

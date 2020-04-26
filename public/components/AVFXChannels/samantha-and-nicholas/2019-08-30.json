@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nick! Hope you're doing okay with finals and deadlines from work!",
+        "ts": "1567188066.000900",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-30\/744199127584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey thank you for your awesome words of encouragement! I really appreciate it there’s a lot going on on my plate right now and lots of panic, but just now looking at your message really helps me out. ",
+        "ts": "1567217136.001000",
+        "username": "NicholasKim (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-30\/744561882805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

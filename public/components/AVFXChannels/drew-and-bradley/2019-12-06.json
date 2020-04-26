@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there drew first of all I want to apologise for not replying sooner, currently I'm in my 3rd year of university in Staffordshire doing CGI and Visual effects. I've gained a large interest into lighting from one of our modules and I decided to research lighting for my dissertation! My goals I've been looking at jobs locally to my home location in Manchester and cloud imperium games have a studio based in wilsmlow with a lot of open vacancies, some for lighting artist and they've taken part in talks with our university etc. Thank you for your patience I really do appreciate it and I love to hear about you and your career!",
+        "ts": "1575657988.002000",
+        "username": "Bradley James Costello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/851915308003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want to know any information about my current work be happy to send it any time not quite sure how this system works I was just told by a colleague of mine but I look forward to hearing back from you!",
+        "ts": "1575658058.002100",
+        "username": "Bradley James Costello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862928051572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

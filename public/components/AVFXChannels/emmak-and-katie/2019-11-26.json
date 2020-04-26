@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, I'm good thank you, how are you? Third year is crazy busy, I'll put together some of the stuff I've been working on and show you what Ive been up to",
+        "ts": "1574773922.000200",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/838217785875_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rasheed, no worries at all! I've been very busy myself so I understand. Yeh I'd love to see your cinematic when you've got time to send it over. Blue Zoo is going well! We've finished that R&amp;D project a while back but it's looking promising, I think it might be a few updates away from being fully usable for production. I did develep a custom ui to help with ray-tracing settings so that it almost acts like a 'Render Settings' window in Maya. Tell me more about your new project!",
+        "ts": "1583400940.000200",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/973161554241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

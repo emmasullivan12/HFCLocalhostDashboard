@@ -1,0 +1,630 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Teddy, how are you doing?",
+        "ts": "1558538414.003300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642587219108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi caroline, i am good thank you!",
+        "ts": "1558538459.003400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/644941502823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry its been a little while. How did you get on with applying for internships?",
+        "ts": "1558538507.003500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643114733488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I didn't manage to get round to applying unfortunately",
+        "ts": "1558538555.003600",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645284424390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why do you think you didn't apply for any of them in the end?",
+        "ts": "1558538838.003700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642597470836_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I just ended up putting it off amd forgetting",
+        "ts": "1558538875.003800",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642598360020_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it would be interesting to understand why you're putting it off",
+        "ts": "1558538924.003900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/636774482241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think you agree that it would be helpful to have an internship to understand what type of role you'll enjoy",
+        "ts": "1558538985.004000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645294822406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mainly forgetting",
+        "ts": "1558538989.004100",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642601180100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think there's still some open for application",
+        "ts": "1558539017.004200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645295615302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But if its something you were excited about and really wanted, you wouldn't forget. Is there something that's putting you off?",
+        "ts": "1558539038.004300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/644955687639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't know",
+        "ts": "1558539112.004400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631685159075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't know if i was fully invested in doing them",
+        "ts": "1558539135.004500",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642604875172_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why do you think you may not be fully invested?",
+        "ts": "1558539185.004600",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/636780939137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess i still don't know if it's the industry I want to go into",
+        "ts": "1558539230.004700",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631688064611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could you be more specific? What do you mean when you say 'the industry'?",
+        "ts": "1558539344.004800",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631690798259_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The animation industry",
+        "ts": "1558539365.004900",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643135573168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, what hesitations have you got about the animation industry?",
+        "ts": "1558539495.005000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/636788329761_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure, I'm just indecisive",
+        "ts": "1558539574.005100",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/644968505495_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmmm, how do you feel about that? Would you like to be decisive and pick an industry? Or do you not feel the need to pick an industry just yet?",
+        "ts": "1558539876.005200",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643113685013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel the need to pick one, I just haven't really found anything I really love doing",
+        "ts": "1558539981.005300",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631705823651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well its quite likely that you'll have multiple different careers rather than stay in one thing for your working life. You can have multiple career options at this stage and then see where the most opportunities are when you graduate",
+        "ts": "1558540432.005400",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/644988827703_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So lets imagine there are 3 types of careers that you like the sound of, what would be your top 3?",
+        "ts": "1558540462.005500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/644989529175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In our conversations you've mentioned animation, concept design and illustration",
+        "ts": "1558540824.005600",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643170499136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are there other areas you've been considering?",
+        "ts": "1558540838.005700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631726621459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Kinda unrelated but I'd been interested in going into tattooing",
+        "ts": "1558540871.005800",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643137782581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK, I can see the connection",
+        "ts": "1558540921.005900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631748052866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Any other areas you've considered",
+        "ts": "1558540956.006000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643140010565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "?",
+        "ts": "1558540957.006100",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643140042565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's pretty much been it",
+        "ts": "1558541036.006200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643175883232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK, something to consider then, if you've got a list of careers that interest you, is to look at how likely you are you find work in those areas. I feel we've got to be realistic about jobs. There will be multiple things that you love to do. I don't think there is just one job out there for you and you've got to find it. You've got lots of skills, there are lots of options, which is going to have the most job opportunities.",
+        "ts": "1558541378.006300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645352226518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I suggest taking a look at the iCould website, they've now got labour market intelligence included in their profiles. This means you can see how many jobs there are likely to be in the future in those areas",
+        "ts": "1558541420.006400",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645353057286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay",
+        "ts": "1558541448.006500",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643151236501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's one profile that looks interesting <https:\/\/icould.com\/stories\/jamie-i\/>",
+        "ts": "1558541464.006600",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643151497877_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "icould",
+                "title": "Jamie I - icould",
+                "title_link": "https:\/\/icould.com\/stories\/jamie-i\/",
+                "text": "Jamie was quite quiet at school but managed to express himself through art. A chance reading of a magazine gave him the idea to study at the Bristol School of Animation, which has very close ties with Aardman Animations. He has continued to develop his skills and recently completed a storyboarding course, ran by Lupus Films in association with Creative Skillset, and is now a freelance storyboarder.",
+                "fallback": "icould: Jamie I - icould",
+                "image_url": "https:\/\/icould.com\/wp-content\/uploads\/2018\/09\/Jamie-367x206.png",
+                "image_width": 367,
+                "image_height": 206,
+                "from_url": "https:\/\/icould.com\/stories\/jamie-i\/",
+                "image_bytes": 91356,
+                "id": 1,
+                "original_url": "https:\/\/icould.com\/stories\/jamie-i\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Screenskills has some helpful info as well <https:\/\/www.screenskills.com\/careers\/job-profiles\/animation>",
+        "ts": "1558541782.006800",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645360794806_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ScreenSkills",
+                "title": "Animation  - ScreenSkills",
+                "title_link": "https:\/\/www.screenskills.com\/careers\/job-profiles\/animation",
+                "text": "ScreenSkills",
+                "fallback": "ScreenSkills: Animation  - ScreenSkills",
+                "image_url": "https:\/\/app-images.hiive.co.uk\/images\/static\/og\/screenskills.png",
+                "from_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/animation",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 8040,
+                "service_icon": "https:\/\/www.screenskills.com\/Content\/img\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/animation"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd suggest considering how your art skills could be used in games <https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/art\/>. That industry is worth more than TV and Film together according to the BBC <https:\/\/www.bbc.co.uk\/news\/technology-46746593>",
+        "ts": "1558541853.007000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631768866050_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ScreenSkills",
+                "title": "Art  - ScreenSkills",
+                "title_link": "https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/art\/",
+                "text": "ScreenSkills",
+                "fallback": "ScreenSkills: Art  - ScreenSkills",
+                "image_url": "https:\/\/app-images.hiive.co.uk\/images\/static\/og\/screenskills.png",
+                "from_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/art\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 8040,
+                "service_icon": "https:\/\/www.screenskills.com\/Content\/img\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/art\/"
+            },
+            {
+                "service_name": "BBC News",
+                "title": "Gaming worth more than video and music",
+                "title_link": "https:\/\/www.bbc.co.uk\/news\/technology-46746593",
+                "text": "A new report finds gaming is now more lucrative in the UK than video and music combined.",
+                "fallback": "BBC News: Gaming worth more than video and music",
+                "image_url": "https:\/\/ichef.bbci.co.uk\/news\/1024\/branded_news\/16CC9\/production\/_103958339_mediaitem103958331.jpg",
+                "from_url": "https:\/\/www.bbc.co.uk\/news\/technology-46746593",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 93403,
+                "service_icon": "https:\/\/static.bbc.co.uk\/news\/1.281.03331\/apple-touch-icon.png",
+                "id": 2,
+                "original_url": "https:\/\/www.bbc.co.uk\/news\/technology-46746593"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And at Escape we're seeing that more and more of our VFX students are being hired by games companies.",
+        "ts": "1558541870.007200",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645022141895_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah games is a pretty big section here at uni",
+        "ts": "1558541894.007300",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642669445460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, it for someone like you who's said you don't like the idea of living in London, games is a good option because its not as London centric as animation and VFX for TV and film",
+        "ts": "1558541956.007400",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642670746180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are hubs all around the UK and Europe",
+        "ts": "1558541966.007500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631751862595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You might find it interesting to also look at the jobs out there and the skills they're looking for and the salaries on offer to see if any of them sound like something you'd like to explore",
+        "ts": "1558542023.007600",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645025332615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/datascope.co.uk\/> Has lots of games jobs around the UK and the EU",
+        "ts": "1558542032.007700",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/631753266771_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Datascope",
+                "title": "Game Jobs at Datascope - Award winning recruitment agency, games jobs",
+                "title_link": "https:\/\/datascope.co.uk\/",
+                "text": "Multi-award winning specialist in Game Jobs. Animators, Artists, Programmers, Producers, Game &amp; Audio Designers, Mobile Developers, and Marketing.",
+                "fallback": "Datascope: Game Jobs at Datascope - Award winning recruitment agency, games jobs",
+                "from_url": "https:\/\/datascope.co.uk\/",
+                "service_icon": "https:\/\/datascope.co.uk\/apple-touch-icon-precomposed.png",
+                "id": 1,
+                "original_url": "https:\/\/datascope.co.uk\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've got to go now I'm afraid.",
+        "ts": "1558542050.007900",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/636847610145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you like to chat again in a couple of weeks?",
+        "ts": "1558542062.008000",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643164191461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's fine, I have a lot to think on!",
+        "ts": "1558542065.008100",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643198213872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that would be good",
+        "ts": "1558542071.008200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643164386981_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How would Friday 7th June at 4pm work?",
+        "ts": "1558542100.008300",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645027000055_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That works fine",
+        "ts": "1558542120.008400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/645367838454_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Have a fun couple of weeks, chat later!",
+        "ts": "1558542152.008500",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/636849773793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Talk to you then!",
+        "ts": "1558542160.008600",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/643166336549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

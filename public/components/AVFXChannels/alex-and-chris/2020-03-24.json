@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, how are you doing through all this madness? Working from home?",
+        "ts": "1585049058.006300",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011978024241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, yeah working from home, FS is establishing remote setup while we are all at home. They managed to do that really fast. I'm really impressed. Also I can't order my favourite pizza... :laughing:",
+        "ts": "1585072467.006400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010462123442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Jokes aside it's terrible of course",
+        "ts": "1585072483.006500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025010720823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How about you?",
+        "ts": "1585072497.006600",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010463757074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I've seen that companies have dealt with it quite fast!! Using home machines or are you able to remote access machines in the office?",
+        "ts": "1585072601.006700",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024880189190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know it's crazy!! I'm eating so much crap just sat at home haha",
+        "ts": "1585072619.006800",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025018021623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm working from home too now, University is shut completely and might not open until after I've finished my course so have to finish it from home!! Nightmare but I'm getting on okay, my workstation is handling all the texturing I'm doing really well, although I'm desperate for a second monitor for lookdev, flicking through so many tabs on a tiny crappy old monitor!!",
+        "ts": "1585072712.006900",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011793502595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

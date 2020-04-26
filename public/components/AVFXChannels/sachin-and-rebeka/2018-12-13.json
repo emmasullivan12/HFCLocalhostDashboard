@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahhh i see",
+        "ts": "1544704309.004700",
+        "username": "Rebeka Strapakova (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/504078505399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's very interesting",
+        "ts": "1544704315.004800",
+        "username": "Rebeka Strapakova (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/502923606787_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How many riggers do usually work on such a project?",
+        "ts": "1544704343.004900",
+        "username": "Rebeka Strapakova (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/502858543492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

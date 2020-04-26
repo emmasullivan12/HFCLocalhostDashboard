@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Patrick,\nI'm back from the weekend and finally have time to address your questions :stuck_out_tongue:\n\nAbout my interest in bigger companies: I definitely want to work for some of the bigger companies as well, just to have tried it. Also I feel like you can learn a lot there simply because the scope of the problems you face is so much bigger. Also there are all these legendary artist running around whose knowledge you can draw from. Long term I want to settle for a midsize studio though. The big houses generally don't pay that well, you do a lot more OT and since they are so big, artists are mostly just workforce for them. I prefer to work with a team I know rather well and in a company that feels more like a family.\nDepending on the circumstances I would love to work for Framestore or DNeg Animation while I'm in London. Framestore mainly because out of all the other companies I've heard the best things about them. And DNeg animation simply because it would be a good gateway to get into feature animation(and maybe eventually Pixar :wink: )",
+        "ts": "1583797532.003000",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980203482369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How I got into groom:\nI did a bit of groom in XGen and yeti in Uni. So when we got a small creature at pixomondo and they wanted to give it to a different facility because we didn't have a groomer I asked them if I could give it a try. They had confidence in me and let me do the deer. After that went well I took a liking in groom and whenever we would get smaller groom tasks I would do them. Eventually I wanted to give grooming a proper shot, but since Pixomondo Stuttgart didn't have proper creature work I had to go somewhere else.\nI signed a contract with MPC at Key Groom Artist and then left Pixo. Unfortunately, three weeks before I was supposed to start at MPC they told me they didn't have work and retracted the contract.\nI came to London anyway and got a groom job at OOU but still a pretty lousy move from MPC.\n\nAnyway, I chose groom specifically not only because it was fun to me. It's also a highly demanded skill. There are very few good groom artists out there and creature work is getting more and more. So having that as an extra skill opens a lot of doors. Also it pays better since it's more specialized :wink: Being \"just\" a groomer is dangerous because a lot of time studios don't have continuous groom work but because I'm a generalist I can easyly pick up some lighting or modeling work during groom down time :slightly_smiling_face: being specialized as advantages and disadvantages. I quite like being a generalist. But having one (or even better two) disciplines you are a little bit better with than the average generalist helps a lot.",
+        "ts": "1583798103.003100",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/992164922519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And now to your feedback",
+        "ts": "1583798161.003200",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980215517409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Red eyed Tree frog:\nFirst of all I think this is a really strong asset you got there, congrats!\nI love the model. You found a very good balance between clean and simple lines but just the right amount of detail like a little bump of crease here and there.\nNow the things I feel like you could improve on depend on the look you are going for. At this point your frog looks very neat and clean which is great for a more cartoonish look.\nSince you want to get into VFX I reckon you probably want to go as photoreal as you can, so here are a few ideas.\nTexturing wise you nailed the primary colors and the general distribution. Looking at some of the references you could maybe introduce a bit more color variation. You have been doing this with the blue already that it fades into a different hue when it's getting weaker. almost like watercolors. maybe on the light green you can use a curvature mask to make the little bumps slightly lighter and a bit more yellowish + a subtle overall noise.\nAnother thing are your color masks. You managed to transition from blue into white on the belly quite well by having some of the dots stay white in between the blue. However the green and yellow lines stick out little bit. They are just a bit too clean and perfect. try breaking those up a little more by blurring them. A little bit more in some, a little bit less in other places. Like in pencil drawings when you vary the strength of your lines. It should make the coloring feel a bit more natural.\nShading wise you could maybe introduce some SSS to really make the frog feel delicate and squishy. This will also make your color transitions  a bit softer too and give you these nice, gooey hands :smile:\nLastly, for the eyes: They look solid so far. Since you gathered very specific eye reference though I figured you probably want to focus on them a bit. Usually when I do eyes I have a separate geo for the iris and the cornea. That allows you to bend the iris slightly inwards around the pupil and give you a lot more depth. Also when you look closely at the reference you can see little veins on the iris and that is has this almost metallic shimmer underneath the clearcoat. If you can get that to work your frog will probably gain a lot more character as the eyes are usually the focus point.\nKeep up the good work!\nRetopo looks nice btw",
+        "ts": "1583799753.003300",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980248133185_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll send you more feedback on the other stuff tomorrow. It's quite late :stuck_out_tongue:",
+        "ts": "1583800023.003400",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990339599184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

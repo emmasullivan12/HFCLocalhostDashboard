@@ -1,0 +1,135 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1581433751.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e42c396e623fe000454cf2e|this link> with other teams to invite them in it_",
+        "ts": "1581433752.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1581433752.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1581434262.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-25\" to \"daniel-and-katherine\"",
+        "old_name": "z-shared-25",
+        "name": "daniel-and-katherine"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1581434273.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *IntoGames (Mentees)* joined the shared channel_",
+        "ts": "1581434383.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *IntoGames (Mentors)* joined the shared channel_",
+        "ts": "1581434419.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@danielcseager has joined the channel_",
+        "ts": "1581434558.001100",
+        "username": "smooz (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949162190038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@kpadley0 has joined the channel_",
+        "ts": "1581434563.001200",
+        "username": "smooz (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949162391206_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Katherine, please meet Daniel your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1581434564.001300",
+        "username": "emma-prospela (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/936810389169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1581434569.001400",
+        "username": "smooz (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/948814796823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1581434572.001500",
+        "username": "smooz (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/912863288135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Daniel, its nice to meet you. Im Katherine im currently studying 3D Games art at university but im hoping to be a rigger. I look forward to chatting with you:grin:",
+        "ts": "1581434759.001600",
+        "username": "Katherine Padley (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946505180084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi There Katherine, pleasure to meet you too :smiley:\n\nSo, I'm Daniel, I'm currently a Technical Animator at Dovetail Games. I've been there for about a year now, and my job consists of rigging and animation of the human and animals that fill our games.\n\nI'm very happy to answer any questions you have about rigging and making games in general, but is there anything in particular you'd like to talk about?",
+        "ts": "1581460878.001700",
+        "username": "Daniel Seager (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949663644311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

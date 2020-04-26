@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jarl!! its nice to finally meet :slightly_smiling_face: im currently studying 3D animation in the first year, im hoping to send some animation for review and maybe some rigging? :smile:",
+        "ts": "1581886502.001600",
+        "username": "Rebecca Johnson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/956642494039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

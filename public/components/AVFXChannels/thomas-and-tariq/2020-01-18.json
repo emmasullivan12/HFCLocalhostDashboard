@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've just finished a building sim. And now I'm working on a shredder sim, like the industrial kind that you can use to shred furniture. Also going to be noing a fire sim for a hip hop video with a friend. And I've also got the football popping sim I'm doing with uni friends, aaand a gambling YouTube intro thing for a friend. Pretty busy, ha ha. What are you working on?",
+        "ts": "1579387121.000200",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-18\/899693302274_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

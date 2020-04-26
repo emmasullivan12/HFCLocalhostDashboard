@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Andrew, being in Foundation year is totally fine. I’m actually in a bit of a strange position myself, work wise, but I’ll get into that later.",
+        "ts": "1573506630.002200",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/818727453827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For studio life I can try and share stories of previous studios I’ve worked at. I can try and share more current ones as well where possible, but generally I’m not at liberty to share those because of NDAs.",
+        "ts": "1573506824.002300",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/832412381494_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anything in particular regarding studio life you’re curious about?",
+        "ts": "1573506843.002400",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/830211251941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For advice as an animator, there is one piece of advice I can give you now that was given to me by a Disney animator: “Always keep going.”",
+        "ts": "1573507190.002500",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/818738899555_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was at the end of my second year in uni (I was studying game development) and I had some doubts about my animation skill, something that happens to many animators at many points in their career.",
+        "ts": "1573507278.002600",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/822290463105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Luckily I had a friend that was presenting at Siggraph that year and he gave me a guest pass. I found out that the day he was presenting there was a Disney review room set up to have Disney employers feedback people’s reels.",
+        "ts": "1573507415.002700",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/829750504180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It took some courage but I went in and asked for feedback. The guy they sat me down with was really nice and to my surprise he said that I had a lot to improve on but that he saw something in my work. I told him about why I was there and that was the advice he gave. Just keep animating, even when you or other people have doubts, and you will improve and get there.",
+        "ts": "1573507706.002800",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/817432626354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

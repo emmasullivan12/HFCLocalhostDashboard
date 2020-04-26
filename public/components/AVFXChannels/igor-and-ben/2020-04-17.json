@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ben, I hope everything is going well with you.",
+        "ts": "1587147581.014800",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1063617339318_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are we going back to that project?",
+        "ts": "1587147631.014900",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1082978721121_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "anyway, I would appreciate if you could write some words about what you are doing, what you have changed on the images that you are uploading here.",
+        "ts": "1587147671.015000",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1068974425893_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I believe the feedback would benefit.",
+        "ts": "1587147718.015100",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1055623031463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am not a Feedback machine that you just upload images and I comment them.  :wink:",
+        "ts": "1587147754.015200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1068977577765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey igor yeah im just doing some stuff on him for the application for free folk internship deadline sunday as the fmp would not been complete for that application. So basically i have redone the sss texturing on him to make him less spec and less wet look, added the stick in the next, i had some feedback on the shadows been too feathered around the next so i have turn them down. I have also redone today the grain as well as redone the roto using Richard Frazer blog post technique .",
+        "ts": "1587147937.015300",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1094206355984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hope all is well too :slightly_smiling_face:",
+        "ts": "1587147950.015400",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1055631984935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as well i have written out a short personal statement for the application",
+        "ts": "1587147973.015500",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1055632861799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So glad you’re enjoying it all.",
+        "ts": "1573039735.001700",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/812126579107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

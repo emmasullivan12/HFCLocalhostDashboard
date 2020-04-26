@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On the subject of work experience, it's a good concept but it will greatly differ between companies and how they manage you. It would seem based on what you've said that landing a paid role seems to be your priority. I also think that's the ideal outcome. Going back quickly to the fact you initially spoke about freelancing, I'd say that freelancing most certainly has its pros and cons. I know a few very experienced freelancers and they all seem to be very happy with the work life balance that's seemingly always superior to that of a full time employee not to mention the fact you'll always earn more as you have to charge more to cover the fact you must own your own equipment, licenses, a lack of company healthcare or other perks etc. It's something I can definitely give you an insight into but it would be via asking the freelancers I know so there would be a bit of a delay but if you do ever want to know more then ask away :slightly_smiling_face:",
+        "ts": "1586775325.003900",
+        "username": "Jake Cross (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1058454902101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jake,\nWow! This is so much great information!! :star-struck:\nI will definitely take on all this advice and make sure all my work and applications are good to go out into the world! I am currently updating my showreel with the most recent work and will share the first edits with you soon (hopefully by next week sometime). It would be really helpful to get some feedback on that! :slightly_smiling_face:\nI really like the idea of adding something visual to the CV. At the moment my CV is quite basic and I will definitely make it more interesting! I will send an updated CV to you as well.\nI am also starting to think about how best to market myself, but I haven't come up with any interesting approaches yet. I have some colleagues who have designed their websites, social and linkedin to all match as one brand with a logo and similar colour design. Do you think that is necessary at this point?\n\nThanks so much for all this information! I am still processing it all, but I should have some more questions for you as I go through preparing my CV and showreel! :slightly_smiling_face:",
+        "ts": "1586791419.004000",
+        "username": "Victoria (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1058164509810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Victoria,",
+        "ts": "1586799811.004100",
+        "username": "Jake Cross (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1059043262485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "my pleasure, digest it all and feel free to get back to me whenever it suits you :slightly_smiling_face: I'd say that making your own website isn't necessary but if you want to do it and that makes you happy then by all means go for it. Just make sure it's good, has a clean and easy layout and loads fast as these are what's already offered by free sites such as Artstation which is pretty much perfect out the box. I'd love to see your reel whenever you're happy with it for sure! Good luck",
+        "ts": "1586799943.004200",
+        "username": "Jake Cross (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1059338543411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

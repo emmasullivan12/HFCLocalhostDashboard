@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry.. have been so busy with parents evening and assessment",
+        "ts": "1510686918.000125",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272249546530_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are things?",
+        "ts": "1510686920.000602",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272296357188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

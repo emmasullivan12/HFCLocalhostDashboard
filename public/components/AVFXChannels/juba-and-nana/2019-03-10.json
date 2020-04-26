@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes definitely. There are a few in London that are really cool, but I'm afraid you have to be able to go into pubs since that's where they normally happen.\nBring Your Own Animation or BYOA is for people looking to get feedback from professionals and just hanging out and meeting people in the industry - <https:\/\/www.facebook.com\/groups\/BYOALondon\/>\nThe other is loop de loop they sometimes have screenings in London - <http:\/\/www.loopdeloop.org\/>\nI'll ask around if there are others :smiley:",
+        "ts": "1552238382.001000",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-10\/572518200421_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Bring Your Own Animation - London",
+                "title_link": "https:\/\/www.facebook.com\/groups\/BYOALondon\/",
+                "text": "Bring Your Own Animation is an event taking place every month at The Lukin pub, 4 Conway Street in London. Anyone can bring their animation or just come to share their passion (and have a few...",
+                "fallback": "Bring Your Own Animation - London",
+                "from_url": "https:\/\/www.facebook.com\/groups\/BYOALondon\/",
+                "thumb_url": "https:\/\/scontent-iad3-1.xx.fbcdn.net\/v\/t1.0-0\/c269.0.200.200a\/p200x200\/13537720_10157054272090082_2674175104752943714_n.jpg?_nc_cat=102&_nc_ht=scontent-iad3-1.xx&oh=1abace8b229b77cfb6b0d436b64c3797&oe=5D1E3435",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/static.xx.fbcdn.net\/rsrc.php\/yz\/r\/KFyVIAWzntM.ico",
+                "service_name": "facebook.com",
+                "id": 1,
+                "original_url": "https:\/\/www.facebook.com\/groups\/BYOALondon\/"
+            },
+            {
+                "title": "LoopdeLoop",
+                "title_link": "http:\/\/www.loopdeloop.org\/",
+                "text": "LoopdeLoop is an international animation challenge and a community of creative folks working...",
+                "fallback": "LoopdeLoop",
+                "thumb_url": "https:\/\/66.media.tumblr.com\/avatar_530c2827acae_128.pnj",
+                "from_url": "http:\/\/www.loopdeloop.org\/",
+                "thumb_width": 128,
+                "thumb_height": 128,
+                "service_icon": "https:\/\/66.media.tumblr.com\/avatar_530c2827acae_128.pnj",
+                "service_name": "loopdeloop.org",
+                "id": 2,
+                "original_url": "http:\/\/www.loopdeloop.org\/"
+            }
+        ]
+    }
+]

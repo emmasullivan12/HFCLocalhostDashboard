@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the response :) I think advice on current work and previous work would be beneficial for me. As you’re the lead lighting and composition artist I also think some feedback in these areas would also be helpful.  \n\nCurrently I’m away for Christmas so I’m unable to provide the renders as they’re on my home pc but I can send them over when I’m back. Starting in January I’m also working on two projects at university, one is an arch viz interior which is set in Iceland and the other project is a post-apocalyptic house, similar to the last of us. \nKind regards,\nCharlie ",
+        "ts": "1576937608.000200",
+        "username": "Charlie Adams (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/882618987684_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey\nThat sounds great! It's good to get a proper break over the holidays. I'm actually from Iceland so looking forward to seeing that one! \nAll the best and happy holidays\nNína",
+        "ts": "1576955380.000300",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/885042124503_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a nice Christmas, I’ll send over the test renders as soon as I can :) ",
+        "ts": "1576956918.000400",
+        "username": "Charlie Adams (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/883200970853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

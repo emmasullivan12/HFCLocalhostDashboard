@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Very true. My work’s a lot better now than it was this time last year. I would have still been working on the Shoreditch alleyway at that point and my comp skills have gotten a lot better since then. It’s a good way to look at things!",
+        "ts": "1573995426.001300",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/837338731604_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

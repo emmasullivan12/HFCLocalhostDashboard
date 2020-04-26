@@ -1,0 +1,84 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh of course! I'm glad that's all the confusion was",
+        "ts": "1583945703.000900",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996307745734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You sound much more relieved \/ happy with the situation haha",
+        "ts": "1583945728.001000",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994098273376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "glad to hear that :smile:",
+        "ts": "1583945731.001100",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981310750802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is your school dealing with the virus that's going around - is it considering closing at all?",
+        "ts": "1583945758.001200",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/984016664337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "client_msg_id": "cef17047-4cd1-4f93-8892-83dc448e56f2",
+        "type": "message",
+        "text": "Also this gives you the chance to do something relevant over the summer that might help you stand out over other students going for the same apprenticeships in the new school year",
+        "user": "U4VR52RQE",
+        "ts": "1583946139.002200",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "j93bT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Also this gives you the chance to do something relevant over the summer that might help you stand out over other students going for the same apprenticeships in the new school year"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

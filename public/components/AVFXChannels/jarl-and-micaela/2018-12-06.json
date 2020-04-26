@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela\n\nHow's your week going? I heard back from my friend Niels who works at Trixter in Berlin. He was very generous and gave some thoughts while also offering to put you directly in touch with someone he works with who is also not from Germany. Here's what he said:\n\n\"I think working in VFX in Germany without knowing any German shouldn't be a problem. The company language at Trixter and Rise FX is English and that's the case for most of the bigger outlets. My colleague Chris Smallfield is from the U.S. and has volunteered to answer a couple of questions from the perspective of an expat. She's welcome to email him at chris.smallfield@trixter.de\n\nIf she needs any other help she can of course get in touch with me.\"",
+        "ts": "1544090526.002000",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/496826845428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jarl! \nThank you very much for this, those are really good news! For sure i think it will be very useful to get in touch with both of them if you could share his contact with me :) . I am now working on my reel, it feels like it is neverending but i hope to have it finished at mid January before going to Berlin so maybe i could also send it to them.\nThank you very much again!",
+        "ts": "1544091533.002100",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/496905919539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool sounds good! Let me know if you want some feedback on your reel too, I'd be happy to take a look :)",
+        "ts": "1544093088.002200",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/496290190752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure , that would be great :) I’ll send you my project once it is done before taking it to compositing",
+        "ts": "1544093401.002300",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/496293934016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

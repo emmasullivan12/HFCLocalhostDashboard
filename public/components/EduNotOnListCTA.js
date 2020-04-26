@@ -1,5 +1,4 @@
-// Dex last merged this code on 28th Oct 2019
-
+// Dex last merged this code on 26th April 2020s
 import React, { Component } from "react";
 import "../css/General.css";
 

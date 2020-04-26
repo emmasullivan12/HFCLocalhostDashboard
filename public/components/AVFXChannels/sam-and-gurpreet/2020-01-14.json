@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Gurpreet :slightly_smiling_face: How was your holiday break? Hope you caught some sweet videos!",
+        "ts": "1579018507.001200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/905920020016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Something that came to mind (Although I'm not sure how much spare time you currently have) is entering a little event or competition that requires you to utilise some kind of engineering skill",
+        "ts": "1579018596.001300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/907781698647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was speaking with a colleague and he mentioned he saw a CV where the candidate had no real work experience but had shown interest by entering a robotics competition in London. Sounded like both a fun activity but also something that can help you show your interest in the engineering space, even if it isn't necessarily directly related to flying\/planes",
+        "ts": "1579018688.001400",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/895716721153_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was great I enjoyed holidays and had fun and you?\n\nThat looks interesting in robotics, I don't really got time because it's like full time study, only on weekends I am free.",
+        "ts": "1579037145.001500",
+        "username": "Gurpreet (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/893680182194_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

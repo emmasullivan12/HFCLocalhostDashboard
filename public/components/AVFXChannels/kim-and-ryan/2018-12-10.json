@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh nice! When are you due to finish uni?",
+        "ts": "1544439410.001800",
+        "username": "Kim (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-10\/500751485639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

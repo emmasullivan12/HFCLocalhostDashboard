@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hii",
+        "ts": "1565426327.001700",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-10\/716130873697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ill start my second year in September ",
+        "ts": "1565426341.001800",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-10\/724654787142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My studies are a 2 year BA in SAE institute",
+        "ts": "1565426371.001900",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-10\/711065951043_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, I am Maria, Im a student here in East London, this past year in September I was new to the 3D and We are working in maya, zbrush and unreal so far",
+        "ts": "1565426466.002000",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-10\/716131670289_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I been in London for 3 years already and want all the help I can get for my new challenge here finding a creative 3D company to work for.\nNice to meet you Jake and thanks for your time!",
+        "ts": "1565426654.002100",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-10\/722502884896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're welcome! I'm here to help with whatever I can. There are a lot of creative companies of varying sizes in London some of which you probably know already. Any in particular you like?  If you have any work you'd like me to give some constructive feedback on, please do send it over.",
+        "ts": "1565467229.002200",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-10\/711267081378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

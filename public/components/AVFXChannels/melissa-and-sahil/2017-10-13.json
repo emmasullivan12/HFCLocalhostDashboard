@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha yeah it's not the easiest :P yeah you should, I'm sure there are some free ones online you can fill out! Yeah it's hard to find something when you don't really know what you can do! Okay, nice! what interests you in the content in the degree? Are there any others that you're still considering or are you pretty set on that now? ",
+        "ts": "1507893799.000045",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256964419783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m still interested in Biological sciences alongside Human sciences but Biomedicine is interesting? I’m also interested in Oncology but I think Biomedicine is better as a foundation and then I can specialise in Oncology?! Haha! I’m just looking for an insight and work experience to build up my skills of working in a lab or hospital environment or shadowing someone! ",
+        "ts": "1507901693.000044",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255943557794_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

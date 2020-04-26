@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven’t quite decided yet! What is neuro physiotherapy? Yeah hopefully I can do a mixture of training! :)",
+        "ts": "1510412183.000109",
+        "username": "elinor.sandells (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-11\/270708211955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Neuro physiotherapy is physiotherapy for people with conditions that have affected the brain or nerves in the body, which can range from strokes, multiple sclerosis, Parkinson’s disease to things like motor neurone disease and things like that  ",
+        "ts": "1510416973.000028",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-11\/270283185553_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And you do exercises with them to regain function or maintain their ability to be independent during daily activities ",
+        "ts": "1510417424.000002",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-11\/270726643187_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So you can be involved with helping people to walk again ",
+        "ts": "1510417465.000042",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-11\/270284765841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

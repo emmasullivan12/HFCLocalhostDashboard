@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm. Can we use a pratruic scenario.",
+        "ts": "1563623441.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-20\/700771795253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

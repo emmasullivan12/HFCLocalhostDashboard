@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya Emma, I have studied Business an IT back in the days hahah, awesome you gone through exactly what I went through hahah crazy no no working at the time but would love to work in the games industry.",
+        "ts": "1566474104.002200",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-22\/734787493088_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Send me you email I'll send me cv so you will understand better about my experiences",
+        "ts": "1566474125.002300",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-22\/728408592241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

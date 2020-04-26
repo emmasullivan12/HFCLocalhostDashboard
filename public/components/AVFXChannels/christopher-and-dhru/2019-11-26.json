@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats very helpful :simple_smile: so essentially dont worry about learning the modeling or other parts of houdini and just stick to fx and with that in terms of fx would you say its good to learn all parts of fx so particles, water, fire etc or to focus on one or 2 of them? :simple_smile:",
+        "ts": "1574772648.002800",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/849670345909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's probably a good idea to start with particles and maybe fluids (as in smoke\/dry ice etc) since they kinda go together (you can drive one with the other, or emit fluids from particles etc) and then move on to higher-tier things from there.\nBut you also don't HAVE to learn or cover every possible effect before you even start working in fx :slightly_smiling_face:. Some of the high-res water stuff takes extremely long to sim, lots of hard-drive space so i wouldn't think anyone expects juniors to have crazy things like that in their reel\nDo you already have an idea what you'll be doing for your final year project (if that's even an issue to think about already)?",
+        "ts": "1574798258.002900",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/852569241862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

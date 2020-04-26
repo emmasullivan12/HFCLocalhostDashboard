@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem at all, I completely understand. I’ll be there :grinning: really looking forward to it now",
+        "ts": "1554710993.000300",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/603166446964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

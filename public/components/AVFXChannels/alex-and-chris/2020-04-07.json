@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok, allright, challenges are cool, you don't have to provide him the reflection but you should have it for yourself, because it's a challenge to match it in a first place let alone to eyeball it :slightly_smiling_face:",
+        "ts": "1586250469.002700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1044437342947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you have macbeth and\/or ball please match them first, or just put them now in the scene and see how it looks, if it matches it's a good start. Even though that initial match doesn't mean it's  gonna be the final rig :slightly_smiling_face:",
+        "ts": "1586250531.002800",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1060783175744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I'm gonna work on the bridge shot at some point this week so will try to match first! :slightly_smiling_face:",
+        "ts": "1586258417.002900",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1053629950420_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

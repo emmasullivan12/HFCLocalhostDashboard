@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Simon,\nPleased to meet you. I'm currently working on learning how to use 3ds max for the first time and also I do sketches of my characters when I start the animation. I am continuously developing my art skills at home so I work daily such as doing the storyboards, script and learning how to do background design for the own independent animation that I'm working on for a long time. What software are you using to make the new series, Paddington Bear? What had inspired you to be an animator as I am learning to become one like you? \nHope u reply soon,\n\nNathanael Christopher",
+        "ts": "1579715333.000200",
+        "username": "Nathanael Christopher (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/907316378081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

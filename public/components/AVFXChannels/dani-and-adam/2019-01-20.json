@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I meant, I'll keep working on collab project and improve my animation skills. Sorry for misunderstanding :open_mouth:",
+        "ts": "1548026060.001000",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528377605267_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

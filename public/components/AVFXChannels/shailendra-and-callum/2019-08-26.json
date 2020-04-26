@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is all awesome advice!! I'm going to be making a short film with a group in a few months so that video on camera lenses was incredibly useful!:D I made sure to share it with my team also.",
+        "ts": "1566836392.007400",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/727046136946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for this.",
+        "ts": "1566836394.007500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/727046162914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The LRC\/Library has been closed for three days so I haven't been able to continue work on that small project, sadly. Once I have something else comped in I'll let you have a look!:)",
+        "ts": "1566836436.007600",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/740361046183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,155 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "class Push : public Component\n{\n\/*..create, ini*\/\n    void onAdd()\n    {\n        \/*iniy listener on owner*\/\n        m_listener-&gt;onMouseDown = [](Event *event){ \/*clicked*\/};\n    }\n}",
+        "ts": "1548835205.008300",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/538021439671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "to detect that its been clicked",
+        "ts": "1548835211.008400",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/536798366340_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "because,\nusing logical thinking I concluded that a slingshot of the type I’m trying to achieve (<https:\/\/youtu.be\/qnpkd3Ucg7s> 1) will have to function by, firstly detecting touch down position and saving where it drags the point to. The angle between these two points will have to be measured as this is the angle the ball will fire at. The length must also be measured as this determining the velocity that the ball will travel at. On touch release, it will use the angle and length to launch the ball realistically.",
+        "ts": "1548835238.008500",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/538380718070_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Gideros Box2d Slingshot",
+                "title_link": "https:\/\/youtu.be\/qnpkd3Ucg7s",
+                "author_name": "ar2rsawseen",
+                "author_link": "https:\/\/www.youtube.com\/user\/ar2rsawseen",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/qnpkd3Ucg7s\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Gideros Box2d Slingshot",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/qnpkd3Ucg7s?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/youtu.be\/qnpkd3Ucg7s",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/qnpkd3Ucg7s"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes that sounds reasonable",
+        "ts": "1548870240.008700",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/536938226705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the github code from vkreal doesn't really help you - you might be able to get an idea from it but it's completely different. there's nothing you can reuse - especially because it's not using cocos2d.",
+        "ts": "1548870658.008800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537547970834_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "about the other code",
+        "ts": "1548870684.008900",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537442856707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can connect your own functions with _onMouseDown_  so that the engine will call these functions when a _MouseDown_ event happens",
+        "ts": "1548870738.009000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537443925059_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "see <https:\/\/docs.cocos2d-x.org\/cocos2d-x\/en\/event_dispatcher\/mouse.html>",
+        "ts": "1548870785.009100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/536814942736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "do you have enough sufficient knowledge of cocos2d-x and it's engine to help me make a slingshot?",
+        "ts": "1548873495.009200",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537808875141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have an idea!",
+        "ts": "1548876832.009300",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537069957617_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will get it prepared",
+        "ts": "1548877037.009400",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537516003428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can maybe later help me improve it",
+        "ts": "1548877043.009500",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537569838339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

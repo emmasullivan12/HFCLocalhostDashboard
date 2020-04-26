@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Easter!",
+        "ts": "1586712151.007100",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1053571596278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I ve got one question...",
+        "ts": "1586712168.007200",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056604768050_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I try to make a render of a project 3d on a carde to use as a texture in maya and need to be accurate.\nSo i created 3d scene with an undistort shot the a create a card and i place the card at the good place.\ni project 3d the roto of the person on it undist as well with same camera then it s fit as well.\ni was thinking to do scanlinerender for it with same camera a reformat and the card as object with the projection on it to create the texture i need",
+        "ts": "1586712402.007300",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1046745696759_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it s seems to dont be accurate",
+        "ts": "1586712412.007400",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056607204978_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

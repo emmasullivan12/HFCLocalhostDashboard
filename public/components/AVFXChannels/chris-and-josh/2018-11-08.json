@@ -1,0 +1,112 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is a creative company?",
+        "ts": "1541693675.005500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474400703489_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think your best bet will be to apply for a couple \"runner\" jobs from start of next year. As a runner you will get a good over view of all the different departments. Then you will be able to choose which area you prefer",
+        "ts": "1541693786.005600",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/476407221126_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For any good summer internship you will require a showreel of sorts to demonstrate your current ability",
+        "ts": "1541693858.005700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474271414912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you mange to do any work so far that you could use?",
+        "ts": "1541693877.005800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/476408925734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like an Animation company.",
+        "ts": "1541694261.005900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/476067615511_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't have a dedicated showreel but I am working on putting one together.",
+        "ts": "1541694286.006000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474845945892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why do you want to have an Animation company? For the money?",
+        "ts": "1541698969.006100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474496655441_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh god no, I want to create something and build it from nothing.",
+        "ts": "1541700471.006200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474389109520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And sure it probably won't be the next Pixar but I want to try :slightly_smiling_face:",
+        "ts": "1541700568.006300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/474390645424_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you think I should do?",
+        "ts": "1541704763.006400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/476597671926_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

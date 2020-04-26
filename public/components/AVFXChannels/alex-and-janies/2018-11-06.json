@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apprenticeships and universities are equally good but have different approaches. An apprenticeship is more practical, a university is more theoretical. For example some friends of mine are very much hands-on and would not have enjoyed university but very much liked their apprenticeship. So if you want to learn while working (or the other way around :slightly_smiling_face:) an apprenticeship would be very good for you.",
+        "ts": "1541495508.003700",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-06\/473750552087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does your school allow and offer any internships on the side?",
+        "ts": "1541495540.003800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-06\/472528141508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you think about doing an internship during school break?",
+        "ts": "1541495561.003900",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-06\/471961913984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The school doesn't necessarily offer any but they do sometimes tell us if there are any available",
+        "ts": "1541519080.004000",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-06\/473000694354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I didn't know you could do internships during school break...",
+        "ts": "1541519149.004100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-06\/472830483300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

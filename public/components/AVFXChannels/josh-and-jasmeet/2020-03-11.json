@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jasmeet, sorry for the late reply, it's been a manic week. Great to connect with you!\nThanks for letting me know a bit about your background. That's very useful.\n\nI work as a designer, so I certainly can help you with improving your design work. Maybe less so with helping with Maya or zbrush as I don't use them myself.\n\nI'd love to take a look at your portfolio and we can take it from there.\n\nLooking forward to it.",
+        "ts": "1583935064.001900",
+        "username": "Josh O'Brien (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993168145492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

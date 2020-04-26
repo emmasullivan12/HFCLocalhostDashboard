@@ -1,0 +1,122 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010NK8MN92",
+                "created": 1585069881,
+                "timestamp": 1585069881,
+                "name": "newlylitTunnel.mp4",
+                "title": "newlylitTunnel",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 5628810,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010NK8MN92\/newlylittunnel.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010NK8MN92\/download\/newlylittunnel.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010NK8MN92-d420ad7a6f\/newlylittunnel_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010NK8MN92\/newlylittunnel.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010NK8MN92-bafb8d6ed0",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585069882.003600"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010A9H5L1Y",
+                "created": 1585069879,
+                "timestamp": 1585069879,
+                "name": "withLighting.jpg",
+                "title": "withLighting",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 573290,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010A9H5L1Y\/withlighting.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010A9H5L1Y\/download\/withlighting.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 216,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 288,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 432,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 480,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 576,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010A9H5L1Y-7a5e0a232b\/withlighting_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 614,
+                "image_exif_rotation": 1,
+                "original_w": 1500,
+                "original_h": 900,
+                "thumb_tiny": "AwAcADDOozSUtMBQaMmkHPSlOe9OzATJoyfWikpAFFSbBigKKAGr06UrfdwBTgMUMOKvm0sMiop+0UbRUCP\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010A9H5L1Y\/withlighting.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010A9H5L1Y-7148626733",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585069884.003900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is what the tunnel and room look like now. I sent a render of the tunnel this time so you could see it's movement. I still haven't added any depth, but I was able to lighten the front a bit. I think I should also darken the back some more. As for the room, I added in some colored lighting using masks in after effects. Seeing it now, I realize I should probably lighten the scene some more. Perhaps I will extend the mask so you see more light around and above the doorway. I am also in the process of adding particles, maybe some fog as well. Anyways, I'd love to hear your feedback, as I am not so great with the technical side of things :sweat_smile: thanks!",
+        "ts": "1585070350.004200",
+        "username": "Violet Gonzalez (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023130241408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Violet, sorry for the late reply, I was quite busy those past few days :slightly_smiling_face: Thanks for the screenshots and video, it helps to see better !\nSo for the tunnel I think you're in the right direction :slightly_smiling_face: you told me Coraline is your ref ? I looked it up to see how it looks\nI think what would help right now for the tunnel is to give it more variation in color, intensity and contrast. Do you know what I mean or do you want me to explain it more in details ?\nMaybe adding some glow to the brighter parts of it would help as well, what do you think ?\nOtherwise may I ask the intention of this shot ? just to know where you're going with it and to guide you in a better way, don't worry :slightly_smiling_face:",
+        "ts": "1585087634.004300",
+        "username": "Aurelie Couble (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011176583602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

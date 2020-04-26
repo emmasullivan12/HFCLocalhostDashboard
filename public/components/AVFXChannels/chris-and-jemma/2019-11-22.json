@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m trying to make a fur ball in either maya c4d or in Houdini and make it interact with filmed water ",
+        "ts": "1574440885.006900",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/845360168148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So the fur gets wet when dunked in water if that makes sense ",
+        "ts": "1574440900.007000",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/848025924070_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just a little confused how I’d do that ",
+        "ts": "1574440917.007100",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/837892080625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

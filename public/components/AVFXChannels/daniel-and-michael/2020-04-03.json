@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She was just told this morning that she's being furloughed",
+        "ts": "1585912601.001200",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1035106932402_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So we're both really happy, she's much less worried now.\n\nThat sounds really interesting! I'll look into them both. I love a good sci-fi so a truly different perspective is a compelling pitch.\n\nThat's great! I'll definitely see what I can do about that. I've been looking at some of Neil Gaiman's books recently so I appreciate the recommendation there.",
+        "ts": "1585912844.001300",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046495621284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

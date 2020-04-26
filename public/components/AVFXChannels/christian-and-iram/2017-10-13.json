@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I took a gap year - i found it very rewarding. I went to university with experience of being independent in a strange country, with stories to tell, and a break from exams! So it was personally beneficial. Obviously they can be expensive depending on what you choose to do, but if you get a job for part of it then it isn;t necessarily a problem.",
+        "ts": "1507878050.000193",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255831173604_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would it be better for a student to gain work experience that is in the context of what they would want to do in future? And if for some reason they dont end up having an opportunity to do so will they be at a disadvantage? \n\nRight now I've been offered to gain work experience at a Tutoring center - 'Kumon' should I consider it even though it has nothing to do with anything I would want to do in the future? ",
+        "ts": "1507908907.000542",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255370401072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would say that if it’s something you’ll enjoy you should definitely consider it. When you have an interview for your first job it can set you apart from other candidates if you have some experience to talk about, even if it isn’t directly relevant. You can show an employer what your attitude to work is, how you tackled any problems, and probably most importantly, have actual work that you can talk about. It’s not vital, but it can definitely help make you stand out.",
+        "ts": "1507910008.000197",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255957664435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some of my friends tell me to just do A-levels and ace them then take a gap year and do all the work experience and take all the opportunities offered to you in that year because that way ill be able to focus on just my a-levels and be able to gain experience and develop myself as a independent person. What do you think of this? Would you say it would be wise to do so?",
+        "ts": "1507914414.000068",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/257164643623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It depends - I don't think there's one right answer there. If you think that you need the time to study for a-levels the it might be right to focus on them. On the other hand, if you think that work experience now is something you will enjoy, then you should think about whether you can find time for both. Working while studying is another way to develop as an independent person, although it can have its challenges. Have you thought about what you would want to do it a gap year? ",
+        "ts": "1507930704.000213",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255706492257_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Anthony, here are a few ideas as a starting point : <https:\/\/docs.google.com\/presentation\/d\/11W3WxG7CuVyuUmLhy3vo4zw10k3tykYfkcKeLiWZsfs\/edit?usp=sharing> .\nLet me know what do you think  and if it's the right path so I can look for more . Best",
+        "ts": "1587151585.003700",
+        "username": "Isabella Ippolito (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1076678521860_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

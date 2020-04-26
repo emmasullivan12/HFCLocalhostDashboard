@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! It's ok, I was also pretty busy on Monday... and have been all this week! We could try on lunch time and see how it goes. I think for lunchtimes Tuesdays, Wednesdays or Thursdays are better for me. I normally take my lunch break from 1pm to 2pm. An thanks for the link! Will check it out as soon as I get a chance.",
+        "ts": "1561023140.006600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-20\/664622499137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am sorry, I feel like I haven't been the best mentee for the past few weeks:white_frowning_face: To be honest I have been dealing with a bit of extra curricular activities which have taken a bit more time than expected (which I always like to have as a means to get inspiration from), but I am doing my best to keep my focus because I am very passionate about learning as much as I can in uni and from you. July is going to be pretty intense at uni because the deadlines for handing my assignments will be closing in, but I am still very interested in discussing more about possibilities for internships at studios next year, and getting to know some of your friends who are currently working as video game artists, get to know about their working environments and their journeys into the industry. Thanks a lot for being patient! Also, does this mentorship has a time limit? if it does it would be great to know so I can plan ahead and schedule it all.",
+        "ts": "1561046861.006700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-20\/659988906786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you have a nice rest of the week and weekend! :space_invader:",
+        "ts": "1561046890.006800",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-20\/659989466546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I was looking for work in London, I grew up just outside London so it was convenient for me. Unfortunately most VFX seems to be based in London though there is some stuff spreading out now to Bristol, Cardiff, Sheffield, Manchester etc. which is great!",
+        "ts": "1574873048.002600",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853896950550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for Jellyfish, I did have a recommendation from someone I knew who forwarded my CV to the Editor. Although they still interviewed me same as if I applied online. Trainee Finder didn't find me the job, but as Jellyfish were already a part of the scheme and I was eligible, it meant they could hire me through that which made me cheaper for them so definitely helped secure the role.",
+        "ts": "1574873232.002700",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851704131797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know others however who applied to Trainee Finder without anything lined up and they helped them find a suitable position.",
+        "ts": "1574873283.002800",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/843764782017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a great scheme, the criteria used to be quite generous and allowed most people to use it. Though I'm not sure if that has changed, I'll take a look and see.",
+        "ts": "1574873383.002900",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851708295013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Currently we have a couple of different projects here at Milk. Just wrapped up a medium budget feature film last week which was nice. We also have 3 more features, one in early stages of post and the other two quite far along. In addition we have two high end TV series in production, one still shooting and another about halfway through.",
+        "ts": "1574873519.003000",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838919716994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting a bit busy! It's not too bad at the moment though, nice to be busy.",
+        "ts": "1574873537.003100",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851245254804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What stage of your studies are you at?",
+        "ts": "1574873580.003200",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851246489220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm currently thinking about London as I know there seems to be a real concentration of studios down south. I'm currently based in Newcastle, so this is something I'm trying to decide. \n\nCool! That does seem quite busy! What have been the main tasks you've been working on this week? I'm really interested in knowing what day to day work would be like in VFX. \n\nI'm at the end of my studies and have graduated now.\n\nI was also wondering how important you think your CV is when applying for work? Do you think this was important or does it matter more about crafting a reel and networking (who you know)? - If this does seem important, I was wondering if I could see how your CV looks \/ looked? It is fine if not. I do not know anyone in VFX so I am unsure how this looks.\n\nThank you",
+        "ts": "1574876935.003300",
+        "username": "Charlotte Cook (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853651989479_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

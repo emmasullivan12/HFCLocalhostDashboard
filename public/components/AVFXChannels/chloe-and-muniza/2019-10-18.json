@@ -1,0 +1,26 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chloe! I’ve made some progress on my shot but its been a little slow recently as I’ve been settling back into university life. I’ve been struggling with the timing so I think I might switch the animation to spline soon to work on adjusting the timing.\n\n<https:\/\/syncsketch.com\/sketch\/644784102d2c\/#1100813\/1041913>",
+        "ts": "1571401120.000100",
+        "username": "Muniza Fazal (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/802693077030_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Talk_Animation",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/644784102d2c\/#1100813\/1041913",
+                "text": "Collaborative Media Review with 3 items",
+                "fallback": "SyncSketch: Talk_Animation",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/644784102d2c\/#1100813\/1041913",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/644784102d2c\/#1100813\/1041913"
+            }
+        ]
+    }
+]

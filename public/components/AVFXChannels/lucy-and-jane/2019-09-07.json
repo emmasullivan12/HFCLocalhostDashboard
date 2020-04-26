@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for letting me know, I'll continue to fill out the questions soon",
+        "ts": "1567853331.003900",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-07\/754477143638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm glad you like it :blush: , I'm currently drawing a comic in my spare time but its taking really long because of school work",
+        "ts": "1567853371.004000",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-07\/745857306065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anything you're working on too?",
+        "ts": "1567853420.004100",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-07\/739489385906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd like to publish it someday too, if you have any advice on that that would be appreciated :smiley:",
+        "ts": "1567853467.004200",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-07\/752262029728_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

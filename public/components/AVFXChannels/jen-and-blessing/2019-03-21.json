@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jen apologies, I didn’t receive the notification that you messaged ",
+        "ts": "1553167449.002100",
+        "username": "Blessing Odukoya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584131066693_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m currently working at Sky as part of a Sky Drama placement aimed at getting disabled people into the media industry. So far I’ve done some post production work where I spent time with graders, sound mixers and a series of editors. I did actually spend the day at DNEG getting some insight into VFX so I have some idea of what happens in that part of the process ",
+        "ts": "1553167655.002200",
+        "username": "Blessing Odukoya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/583767313252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Blessing. That’s ok.\n\nI actually used to work at DNEG, funnily enough. I started my career in post production, but then transitioned into visualisation in pre-production as we do actually use a lot of the same software and tools.\n\nHave you used any of the software associated with post production much? Eg Maya, Nuke, etc? And has there been any part of the post production work flow that you’ve found particularly interesting?",
+        "ts": "1553199283.002300",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/582007247056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

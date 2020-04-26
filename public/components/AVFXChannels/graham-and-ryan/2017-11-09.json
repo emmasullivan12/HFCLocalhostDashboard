@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Graham, I am Ryan Smith, I'm 17 and live in Colnbrook, Slough. I am interested in the Travel and Tourism industry but I have not got a job yet so I am going to research what jobs would best suit me.",
+        "ts": "1510233773.000428",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-09\/269658347620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would like to ask you what brought you into the marketing\/ finance industry?",
+        "ts": "1510234006.000299",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-09\/268956862976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

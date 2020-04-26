@@ -1,0 +1,178 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Thomas.",
+        "ts": "1552387958.007600",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573654013235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I worked on a couple of nickelodeon games - Jimmy Neutron, Sponge Bob, a Batman: Dark Knight game that got cancelled, and a WW2 game called The Saboteur",
+        "ts": "1552388022.007700",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573735527972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I took a look at your blog too. Looks like you're chipping away at the stuff that needs to get done. I think the topic of your short film is very interesting and a good topic for a short film. Finding what's personal to you in a story is very important in connecting with audiences",
+        "ts": "1552388342.007800",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573739494372_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have a storyboard or a script?",
+        "ts": "1552388349.007900",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573658877779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do! However it do need to give it another re-work. I'm narrating the film, so my performance needs to come across as genuine rather than scripted.",
+        "ts": "1552394277.008000",
+        "username": "Thomas Mayfield (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573812752324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you don't mind me asking, whats it like to work in games rather than film? I've always wondered how the production pipeline works with that sort of thing.",
+        "ts": "1552394322.008100",
+        "username": "Thomas Mayfield (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574180609077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. Well if you want me to take a look, I'm here. No stress though... only if you want :slightly_smiling_face:",
+        "ts": "1552396587.008200",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573767641411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, you are right, being genuine is very important",
+        "ts": "1552396605.008300",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573767946067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Working in games is a little different than film",
+        "ts": "1552396617.008400",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573848902820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was in it a while ago and things have changed, but I personally didn't love it because animation was not the most important part of the pipeline",
+        "ts": "1552396755.008500",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575324682790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you have to be very aware of the entire game you are making",
+        "ts": "1552396767.008600",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573135856784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and a lot of the time you need to check your animation is working in the gameplay",
+        "ts": "1552396783.008700",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574218877269_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if that makes senese",
+        "ts": "1552396788.008800",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574959862823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sense",
+        "ts": "1552396789.008900",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573136243408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the game engine can compress your animation poorly, but different studios would have different engines",
+        "ts": "1552396819.009000",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573136708272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I take it you like games then?",
+        "ts": "1552396825.009100",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575325867846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Kim! No worries! I do have some work that I can share, the following links should be to the artstation pages of my last 3 assignments. :slightly_smiling_face: \n\n<https:\/\/artstn.co\/p\/DxNlG0>\n<https:\/\/artstn.co\/p\/Bmk8z4>\n<https:\/\/artstn.co\/p\/w80wV5>",
+        "ts": "1552143518.000300",
+        "username": "Ryan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-09\/571069661424_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Unity Island Project, Ryan Clark",
+                "title_link": "https:\/\/artstn.co\/p\/DxNlG0",
+                "text": "A walk around video and collection of assets from my latest Uni project, had to create a themed Island using a mixture of traditional modelling techniques and photogrammetry, and present it inside of Unity. Models created in Maya, Textured in Substance Painter and photogrammetry in PhotoscanPro, with retopology done in Maya.",
+                "fallback": "ArtStation: Unity Island Project, Ryan Clark",
+                "image_url": "https:\/\/cdnb.artstation.com\/p\/assets\/videos\/images\/016\/431\/425\/large\/ryan-clark-765372657-640.jpg?1552142388",
+                "image_width": 482,
+                "from_url": "https:\/\/artstn.co\/p\/DxNlG0",
+                "image_height": 250,
+                "image_bytes": 47489,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-f10d92cba7d4992683dbfcdfc63bc457.png",
+                "id": 1,
+                "original_url": "https:\/\/artstn.co\/p\/DxNlG0"
+            },
+            {
+                "service_name": "ArtStation",
+                "title": "1970's Formula 1 Pit Lane - 'Time Leap' Project, Ryan Clark",
+                "title_link": "https:\/\/artstn.co\/p\/Bmk8z4",
+                "text": "A couple of renders of a 1970's inspired F1 pit lane for my latest Uni project. Very pleased with the final results!",
+                "fallback": "ArtStation: 1970's Formula 1 Pit Lane - 'Time Leap' Project, Ryan Clark",
+                "image_url": "https:\/\/cdnb.artstation.com\/p\/assets\/covers\/images\/014\/991\/167\/large\/ryan-clark-lowcamdofnuke3edit.jpg?1546617030",
+                "image_width": 444,
+                "from_url": "https:\/\/artstn.co\/p\/Bmk8z4",
+                "image_height": 250,
+                "image_bytes": 351624,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-f10d92cba7d4992683dbfcdfc63bc457.png",
+                "id": 2,
+                "original_url": "https:\/\/artstn.co\/p\/Bmk8z4"
+            },
+            {
+                "service_name": "ArtStation",
+                "title": "New York City Skyline Project, Ryan Clark",
+                "title_link": "https:\/\/artstn.co\/p\/w80wV5",
+                "text": "A handful of renders from my latest university project. Had to model a scene based upon the New York City skyline. Pretty pleased with how this turned out, especially getting to grips with Substance Painter and Nuke for the first time.",
+                "fallback": "ArtStation: New York City Skyline Project, Ryan Clark",
+                "image_url": "https:\/\/cdna.artstation.com\/p\/assets\/images\/images\/014\/598\/324\/large\/ryan-clark-sunsetrenderfinal-fixedsky.jpg?1544638208",
+                "image_width": 444,
+                "from_url": "https:\/\/artstn.co\/p\/w80wV5",
+                "image_height": 250,
+                "image_bytes": 359056,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-f10d92cba7d4992683dbfcdfc63bc457.png",
+                "id": 3,
+                "original_url": "https:\/\/artstn.co\/p\/w80wV5"
+            }
+        ]
+    }
+]

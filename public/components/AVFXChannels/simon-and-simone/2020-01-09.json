@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, thanks, and happy new year to you too! \nYour projects sound like a lot of fun. How do you get to be picked out to work on a short? \nWe’ve got the January deadlines coming up, so apologies in advance if I’m a little absent. Hope you had a good holiday,\nSimone \n",
+        "ts": "1578585467.000100",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/899394540500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

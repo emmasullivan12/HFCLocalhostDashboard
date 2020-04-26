@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya! Happy New Year! Hope youre getting on well! I think there might be some runner positions coming up soon at ILM - if youre interested I can get in contact with Simon unless youve done so already?",
+        "ts": "1580853960.000100",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/939079608790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

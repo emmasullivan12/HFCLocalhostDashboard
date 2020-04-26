@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I forgot to mention, when Will Cook and Mai came to our course a while back, Mai mentioned that she was on the same team as you for the new Paddington TV series!",
+        "ts": "1587404948.000700",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1086803425089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How has it been working for it? :open_mouth: The animation style seems really cute and snappy aha",
+        "ts": "1587405016.000800",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1072800203685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

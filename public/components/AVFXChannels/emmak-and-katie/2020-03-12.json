@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview>",
+        "ts": "1584033384.000200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996242165908_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Alexander Richter TD",
+                "title": "The perfect Showreel with Amy Smith (Framestore)",
+                "title_link": "https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview",
+                "text": "What is a Showreel and why do we need it? A showreel is your opportunity to show us what you’re capable of. Given that we work in a visual industry, your CV is only able to tell us so much about your skill ...",
+                "fallback": "Alexander Richter TD: The perfect Showreel with Amy Smith (Framestore)",
+                "image_url": "https:\/\/static.wixstatic.com\/media\/f83e50_5addef869f654a67b3ec0123bfae542a~mv2.jpg\/v1\/fit\/w_1000,h_1000,al_c,q_80\/file.png",
+                "image_width": 445,
+                "image_height": 250,
+                "ts": 1583584388,
+                "from_url": "https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview",
+                "image_bytes": 449404,
+                "service_icon": "https:\/\/static.wixstatic.com\/media\/f83e50_b9f48a064571452db0191eaac8cd8987%7Emv2.png\/v1\/fill\/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01\/f83e50_b9f48a064571452db0191eaac8cd8987%7Emv2.png",
+                "id": 1,
+                "original_url": "https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584033384.000000"
+        }
+    }
+]

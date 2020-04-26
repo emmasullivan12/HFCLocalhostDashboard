@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, you too! My uni has been shut but I'm still working on projects so it's not too bad. How are you and Framestore dealing with the situation?",
+        "ts": "1585048352.005500",
+        "username": "Matt Hawker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1009225865122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I'm keeping an eye on it all, I know it closes 11th May so I was going to leave it a bit longer to see if I can squeeze in another new shot into my showreel. Would you suggest to get it submitted now?",
+        "ts": "1585048471.005600",
+        "username": "Matt Hawker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022034728821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh if it goes on till May then yeah may be time to get some more work in before then, things are really busy at Framestore at the moment anyway so waiting is not a bad idea",
+        "ts": "1585055831.005700",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024065419335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We're still setting up the remote machines, i havent received mine yet so currently just relaxing at home waiting for a setup to arrive :smile:",
+        "ts": "1585055862.005800",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1009516033698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, oh really? Not too bad then! Does that mean you're going to be rushed to produce work (once it arrives) though? Or are deadlines quite relaxed at the moment considering a lot of shows have been pushed back?",
+        "ts": "1585057890.005900",
+        "username": "Matt Hawker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024171159847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Graeme,\nHow are you? I hope all is well. I have finally found the time to review your previs edit and have got to say that I am pretty impressed with the sheer amount of work you have put into this already. It is looking great and a very solid base to work from! I’ve written down a few thoughts on possible options to push your work even further, but it is for you to decide if you can\/want to implement them. Let me know your thoughts on this or if you have any questions don’t be shy to ask, I should be available for this more often again and will try to check in at least twice a week.",
+        "ts": "1553611972.003000",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/585945942192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Previs – and that might separate it from layout – is very much about the visual storytelling, the big picture including character placement\/staging, the camera movement and the cut\/edit as a whole. Therefore it is sometimes a good idea to stay away from sound editing (use text lines as an overlay) for as long as possible and also re-watch your edit with the sound turned off for a change and see if the pictures still hold up and tell the story.\nA few general tips that might help improve your edit to push it further into a professional direction is 1) the use of crop bars as well as 2) displaying information on the camera lens and 3) to make sure to give every shot a shot number so that it becomes easier to comment on a specific shot rather than having to note down frame ranges.",
+        "ts": "1553611994.003100",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589435926167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Furthermore camera work - a choice in a particular movement, lens or angle - is a big part of previs and has the same importance as character animation for example. You can intensify or guide the viewer with a slow push in on a character and you can lead them away from a point of interest by having a camera pull back gently, preparing for a cut to a wider angle... There are many options to play around with that will add a whole new layer to your edit! Overall there are just a few basic camera points that you can watch out for:",
+        "ts": "1553612014.003200",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589436636647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1)\tDisplay your center of interest in your camera when you work in maya so you can make sure you don’t have your character positioned off center.\n2)\tDisplay the safe tile to avoid placing characters too close to the edge of screen\n3)\tDo not double cut \/ cut to a shot with the very same camera angle &amp; lens, it might be better to combine a shot instead\n4)\tAvoid dead space in your picture composition and keep a clear silhouette of characters\n5)\tAvoid harsh camera movements (speedups or slowdowns should always be motivated by characters) and they should not distract the viewer. Overall keep a camera alive throughout a shot.",
+        "ts": "1553612039.003300",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/579645919713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I sure hope this makes sense and can be helpful rather than demotivating... Keep up the great work, I am certain you are on the right track there :slightly_smiling_face:\nBest regards,\nmaike",
+        "ts": "1553612057.003400",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/588334643188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

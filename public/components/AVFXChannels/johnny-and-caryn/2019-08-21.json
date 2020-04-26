@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s working , in a bit busy until the end This week but I will be back at you later .\nThank you for setting that up ",
+        "ts": "1566417581.004100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/722623991570_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

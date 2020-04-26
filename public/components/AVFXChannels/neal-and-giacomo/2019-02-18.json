@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey gia. Thought I'd check in and see how you're getting on. Which scheme did you decide to go for and have you started yet",
+        "ts": "1550523048.000100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/553627355201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

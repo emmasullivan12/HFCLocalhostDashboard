@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you feeling about your course options and subject choices?  Is there anything I can help you with?  Things are busy here at Union. We’ve just delivered A Christmas Carol that will be on TV at Christmas and are working away trying to finish a new film version of Emma before Christmas.",
+        "ts": "1575899767.001100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/864978153620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

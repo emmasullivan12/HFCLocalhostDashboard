@@ -1,0 +1,18 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *20170630_141124.jpg* under review.",
+        "ts": "1498828427.824689",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *20170630_141124.jpg* meets our content policy.",
+        "ts": "1498828429.825302",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    }
+]

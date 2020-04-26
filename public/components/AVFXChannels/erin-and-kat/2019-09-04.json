@@ -1,0 +1,29 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Kat! Educating yourself is not a bad idea,  school only lights the fire. You will learn most of what you need to know on your own or on the job. If you don't have a copy of this book try to find a used one on Amazon.  <https:\/\/books.google.com\/books\/about\/Digital_Compositing_for_Film_and_Video.html?id=Bo5-21R0IuYC>\n\nThis is your work bible.\n\nI had a few looks at your reel and can give you detailed feedback later this week. You definitely need to keep going.  As a recent grad no one will hold it against you if the work you show is not from a commercial product. Just keep at it. My first few years in the business I would do my 8-10 hours at a freelance gig,  then go home and work another 4-6 on my own. Back then when I was starting out I sought out footage on vimeo and made my own shots. Try to find good looking footage that inspires you to do something and just go for it!  Look for opportunities for screen replacements,  matte painting,  etc.  It will be good practice and help build your body of work. Don't get discouraged,  just forge ahead!",
+        "ts": "1567598813.000100",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-04\/748294990421_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Google Books",
+                "title": "Digital Compositing for Film and Video",
+                "title_link": "https:\/\/books.google.com\/books\/about\/Digital_Compositing_for_Film_and_Video.html?id=Bo5-21R0IuYC",
+                "text": "First Published in 2006. Routledge is an imprint of Taylor &amp; Francis, an informa company.",
+                "fallback": "Google Books: Digital Compositing for Film and Video",
+                "from_url": "https:\/\/books.google.com\/books\/about\/Digital_Compositing_for_Film_and_Video.html?id=Bo5-21R0IuYC",
+                "thumb_url": "https:\/\/books.google.com\/books\/content?id=Bo5-21R0IuYC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE724PLUesQ5dXzL_B3lJbWATG5K4IVRDQCioqxUhurCSd4v9V6-o2WY_RB-yNWo-ePTY0Q085lKWCdo-f38PsM1FkEcGI-omj6HZLOyxSqjuSqAqeGSfLETAkTkvpJwPpFX9YWMY",
+                "thumb_width": 128,
+                "thumb_height": 166,
+                "service_icon": "https:\/\/books.google.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/books.google.com\/books\/about\/Digital_Compositing_for_Film_and_Video.html?id=Bo5-21R0IuYC"
+            }
+        ]
+    }
+]

@@ -1,0 +1,145 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, so from monday I wont be able to continue with the project till this is all over. I was planning to apply to internships over summer. Do you think its wise to send out a showreel with my work rendered out in Ambient Occlusion now, Or wait till I have completed work?",
+        "ts": "1584714522.007100",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1004776507729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not sure whether companies will extend their internship applications deadlines or keep them as they are",
+        "ts": "1584714570.007200",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016614111831_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its not great , but you can explain, the world is changing",
+        "ts": "1584714592.007300",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1002058452514_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Currently all vfx companies are holding on contracting and internships because they are still adjusting",
+        "ts": "1584714634.007400",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1014847285888_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe you can work from home also to improve just one element of your work?",
+        "ts": "1584714665.007500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1003382098387_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you do some work at home or that's not a possibility",
+        "ts": "1584714717.007600",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1002066524370_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "?",
+        "ts": "1584714719.007700",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1002066617122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My computer doesnt have a good enough graphics card to run my projects so it struggles to open my scenes. So wont be able to work on the scenes.\n\nAlso cant run substance painter\/designer or zbrush so kinda at a stalemate with that.",
+        "ts": "1584714953.007800",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1014884373093_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You won't be in a good position to compete with other students that have a completed project. But you also won't be the only one on the same position, so companies will have to think about it. Try not to stress yourself about it. Is this your goal for now getting an internship ?",
+        "ts": "1584715246.007900",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016651488215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I could also work with you just getting a crazy model and I could help you render it :slightly_smiling_face: or something like that",
+        "ts": "1584715296.008000",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1004819298641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah because doing a masters is not an option for me. I was a thinking that an internship would be the best way for me to get my way into the industry. To learn more while working in an actual vfx environment. \nThat sounds amazing! Just need to think about what I should concentrate on to get to a high level",
+        "ts": "1584715679.008100",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016674412343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Had a talk with my lecturer and we came up with the idea of creating a model referencing a painting of a stone sculpture. Something that is interesting which you wont see on everyones showreel. So I reckon I'll be working on that as a side project while not being able to work on my scenes",
+        "ts": "1584719478.008200",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1017325825366_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I reckon that its better, focus on doing one good thing , and doing it at home",
+        "ts": "1584720753.008300",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016959727767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

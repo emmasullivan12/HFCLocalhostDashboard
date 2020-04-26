@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, did you see my message about it above yours?",
+        "ts": "1583942500.001300",
+        "username": "Katie Rosso (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996164847846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK Great. We're busy pitching on new projects at the moment and trying to get organised for Christmas for both clients and staff.",
+        "ts": "1543321322.000700",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/488808782292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright thanks for letting me know :)",
+        "ts": "1543337616.000800",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489449032901_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

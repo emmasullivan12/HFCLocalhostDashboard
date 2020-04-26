@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Louise just wondering if u had a chance to look anything over no rush of course! :)",
+        "ts": "1583475503.000800",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/985205275829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7CQMS6N4\/F7LHVD9C6\/chestnut_grove_academy.jpg|School Partner.jpg>",
+        "ts": "1508264859.000746",
+        "username": "dexter"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Emma and I both volunteer for the govt backed CEC as careers advisors for schools. Today I met with one of my schools to discuss their careers strategy for the coming year and managed to secure another new partner school for Prospela :wink::raised_hands:",
+        "ts": "1508264877.000386",
+        "username": "bot"
+    }
+]

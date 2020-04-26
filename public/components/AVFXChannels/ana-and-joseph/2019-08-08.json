@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds like a good idea, I might even suggest that you simplify the log to just a cylinder to avoid putting too much energy into anything other than the animation itself but obviously it's up to you!",
+        "ts": "1565300401.001000",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-08\/722890005431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

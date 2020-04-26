@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micheal nice to meet you! I'm Riley and I work as a modeler, texture and lookdev artist at Framestore New York. I would be happy to answer any questions you may have about vfx and the job market",
+        "ts": "1584105418.001800",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1000782576646_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

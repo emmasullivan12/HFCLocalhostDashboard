@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oooh thats awesome, I love zero. You should test out some thickness and making it a light source for a more energy feel, that's always the vibe I got from Zeros sabre, even in the GBA games :smiley:",
+        "ts": "1542225460.002700",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/479871841314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I love that question, in the simplest way, because I can't imagine myself doing anything else. When I was a teenager I'd spend hours animating silly things and bringing characters to life. It's corny but it was that feeling of belonging that I can't find in any other type of work.\nIs there anything that brings that feeling to you right now?",
+        "ts": "1542225685.002800",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/479138653456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would everything at the moment, more so animation, script writing and coding .",
+        "ts": "1542226224.002900",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/479147659376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

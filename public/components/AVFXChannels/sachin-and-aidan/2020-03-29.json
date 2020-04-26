@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sachin hope you’re well, I was just wondering when it comes to laying out the UI itself would you be using QT designer at all or are you creating it manually and positioning it yourself?  Hope you’re doing well!",
+        "ts": "1585503216.000500",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033496378404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

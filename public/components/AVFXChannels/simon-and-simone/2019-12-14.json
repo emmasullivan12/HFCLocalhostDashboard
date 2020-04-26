@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon,\nThanks, I didn't realise how many places the leg changes direction or stretchiness over a short number of frames, I'll try and fix that up soon :slightly_smiling_face: I'll try and push the down pose a bit more as well. I did use reference for the first part (until the leg is highest in the air), but the dance continues for quite a while and I wanted to end the clip, so I sort of made up the ending. I think you can probably tell though, there is kind of a dip in quality. :sweat_smile:\n\nBy the way, you might have heard, but Will and Dan visited Bournemouth uni the other day and mentioned that it's good to have three nice shots in particular: a body mechanics one, pantomime acting one and a lip-sync acting shot.\nFor a good lip-sync shot, do you know what to look out for in particular (besides being able to match the lip shapes to the audio)?\n\nAnyway, thanks for taking your time to answer all my questions :slightly_smiling_face:",
+        "ts": "1576341205.000100",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-14\/862397643347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "TH",
+        "ts": "1580721141.002400",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/933621500965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That* really helps",
+        "ts": "1580721156.002500",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/935812431126_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I always wanted to travel to US somewhere like New York or LA but I have to grow a bit older for that.",
+        "ts": "1580721222.002600",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/933602673040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "More so I though that setting a business there would be better idea but it seems that setting it up here has more chances on success.",
+        "ts": "1580721297.002700",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/933604272112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have not had a chance to travel a lot, I have been in Poland in Warsaw but that is my home country, and than I moved here. I've been once to Bruges in Belgium and that's all really, I haven't had a chance to see the world that much but I would love to. Similarly, I like to learn different cultures and travel just because it open your mind and shows different perspective on certain situations and helps to think outside of the box",
+        "ts": "1580721530.002800",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/920821671666_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At least in my opinion",
+        "ts": "1580721539.002900",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/935820657046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

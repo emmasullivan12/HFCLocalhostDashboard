@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ben - thanks for your introduction :slightly_smiling_face:",
+        "ts": "1510674945.000101",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272242746949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would it be useful to discuss your options at some point and I can give you some insight as to what I do, which might help make a decision?",
+        "ts": "1510674995.000155",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272101158546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know when you're free this week to discuss",
+        "ts": "1510675008.000096",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272148031892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am relatively flexible",
+        "ts": "1510675014.000901",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/271583960401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

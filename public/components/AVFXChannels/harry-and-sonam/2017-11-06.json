@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sonam - I am happy to have a read of your personal statement and give you some help if you like?",
+        "ts": "1509962107.000161",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/267516043748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you want to share it on here?",
+        "ts": "1509962116.000168",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/268347652422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you had a good weekend!",
+        "ts": "1509962122.000446",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/268347740630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

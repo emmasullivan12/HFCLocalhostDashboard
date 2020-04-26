@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats cool! And heres my email too =)\n<mailto:jppolati@gmail.com|jppolati@gmail.com>\nThat project looks really cool Jorge! Love all the different styles, are they all separate stories or are you using cultural myths as a basis? Which one are you working on?\nAnd cool about your short film! How did that come about? I mean about having a need to tell a story about arts and sciences?\nAnd I haven't met Rhea yet, there is definitely a lot of artists here, which is a blessing and curse, especially for meeting everyone :smiley:",
+        "ts": "1582543254.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/965888994501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

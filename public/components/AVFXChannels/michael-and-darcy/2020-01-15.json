@@ -1,0 +1,242 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1579110376.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e1f4fe820d6b000040ee480|this link> with other teams to invite them in it_",
+        "ts": "1579110376.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1579110376.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1579110391.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1579110405.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"michael-and-darcy\"",
+        "old_name": "z-shared-23",
+        "name": "michael-and-darcy"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1579110513.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1579110519.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@michaelbryantvfx has joined the channel_",
+        "ts": "1579110642.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907431184804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@darcy513 has joined the channel_",
+        "ts": "1579110658.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/909747200919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Darcy, please meet Michael your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1579110661.001300",
+        "username": "Emma Sullivan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907431774084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1579110664.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907431857076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1579110671.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907898496197_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Michael :slightly_smiling_face: I'm Darcy, I currently study at The University of Hertfordshire and i'm in my second year of being on the 3D Animation and Modelling pathway. It's semester B now so I am about to start working on some short films for a couple teams with all different styles but I would mainly like to specialise in the realistic, VFX route. My film team and I actually signed a production contract for our short early today so this is wonderful timing! I'm really excited. I mainly want to specialise in Texture and lookdev, but i'm also dabbling with rigging for one of the teams as well. It's lovely to meet you!",
+        "ts": "1579110924.001600",
+        "username": "Darcy John (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907895915680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I spend most of my time working, watching films or playing rugby and socialising but my head is mainly in my work. I really want to try for an internship over the summer so I would love some guidance on pieces I make for my showreel eventually :slightly_smiling_face:",
+        "ts": "1579111067.001700",
+        "username": "Darcy John (Prospela Students (beta))",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Darcy!!! Hope you’re well! :) ahh that’s great that you know what sort of area in the industry you want to specialize in!! And congrats on the contract hehe!\nWell I guess abit about me! I’m Mike and I’m a Texture\/Lookev and Lighting artist at Framestore; I’ve been here about 3 years now where I began as a Runner!! :blush: I graduated from Teesside University in 2016 and coming from Wales I also love Rugby hahaha!!! Family cling to fame that my grandad played for Wales ",
+        "ts": "1579111945.001800",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/896459623363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah it's so nice to meet you! I applied back at the end of last year for programme so I was worried I wouldn't actually get accepted for a mentor but here we are! How long did it take you to go from runner to a main artist? The lecturers always say the transition varies in time period for everyone",
+        "ts": "1579112185.001900",
+        "username": "Darcy John (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/909793416807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well you’re at the perfect time to start thinking about some guidance and feedback on you’re reel for applications! :)\nOur department at Framestore is Texture\/Lookdev\/Lighting so we dabble in and out of these areas which is lovely to have I think\nBeing a Runner was really great I worked with like minded people who are still close friends today!!! I know maybe people say that running is awful maybe but it just depends on the company you’re at, framestore has a great program to develop! I was only running for 6 months then I got an opportunity on Paddington 2! The rest is history haha! :octopus: \nI’m unsure how best you want to communicate, whether you prefer chat or trying to setup a voice call through Discord or Skype to go through what you want to get out of the mentoring! Let me know and we can try and setup something soon! :)",
+        "ts": "1579112459.002000",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907485551428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am happy on here or Discord :slightly_smiling_face: I'll just need some warning so I can setup my headset",
+        "ts": "1579112587.002100",
+        "username": "Darcy John (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/910152607958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha cool! Maybe we can organize a call tomorrow in the day? Just to lay out some plans for us and answer any initial questions you have!! :) ",
+        "ts": "1579112700.002200",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907492261972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Absolutely, what time are you available? My classes don't start until next week so I am free all day",
+        "ts": "1579112754.002300",
+        "username": "Darcy John (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/895165670210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah awesome! Shall we say 11 tomorrow? ",
+        "ts": "1579112811.002400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/909811001175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's brilliant :slightly_smiling_face: 11 it is",
+        "ts": "1579112835.002500",
+        "username": "Darcy John (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/897746984209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! Have a lovely evening and speak tomorrow! :octopus:",
+        "ts": "1579112865.002600",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907963452293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You too :smile:",
+        "ts": "1579112919.002700",
+        "username": "Darcy John (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/910161963398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

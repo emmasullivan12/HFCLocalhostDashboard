@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jorden! Apologies for the delay in responding! Would it be possible to upload your CV here? I think we have to keep all communication on the Slack platform",
+        "ts": "1567060733.000100",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/743939206247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Once I have a better understanding of your work experience, I can try to point you in the right direction. If you don't mind me asking, why do you want to be a Games Producer?",
+        "ts": "1567060865.000200",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/744258415270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What drives you? Was it a particular childhood game or something else?",
+        "ts": "1567060895.000300",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/730629030147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

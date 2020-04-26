@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Karolina, hope you're well. I just thought I'd drop you a message as I've updated my showreel slightly <https:\/\/vimeo.com\/330523020> . This version should be 1080 and has a few extra bits now.",
+        "ts": "1555499902.000100",
+        "username": "Bleddyn Wakeford (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-17\/599378219331_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Bleddyn Wakeford 2019 Showreel",
+                "title_link": "https:\/\/vimeo.com\/330523020",
+                "author_name": "Bleddyn Wakeford",
+                "author_link": "https:\/\/vimeo.com\/b1eddyn",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/775644113_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "A collection of work completed at Escape Studios and a few personal pieces.\n\nSoftware used: Nuke, After Effects, Maya, DaVinci Resolve",
+                "fallback": "Vimeo Video: Bleddyn Wakeford 2019 Showreel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/330523020?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Bleddyn Wakeford 2019 Showreel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/330523020",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/330523020"
+            }
+        ]
+    }
+]

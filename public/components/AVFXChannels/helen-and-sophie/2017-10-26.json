@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes it was!!",
+        "ts": "1509009267.000166",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/261609016800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you looked into what requirements there are for radiology training?",
+        "ts": "1509009304.000124",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/262261851234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A lot of university’s want at least two sciences and aren’t really bothered which ones but I’ve decided on physics, biology and maths. Fingers crossed that’ll help me out :joy::joy: (happy national mentoring day btw !)",
+        "ts": "1509009854.000326",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/263149924022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I didn’t realise haha",
+        "ts": "1509024409.000319",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/261867176097_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And to you too!!",
+        "ts": "1509024415.000142",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/261867219025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you know which unis you want to apply to get?",
+        "ts": "1509024428.000692",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/262384512642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yet?",
+        "ts": "1509024436.000706",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/262523784549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Probably Portsmouth uni, it’s close :joy:",
+        "ts": "1509027503.000372",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/262418878130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

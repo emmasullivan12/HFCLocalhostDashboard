@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Oliver, I'm back from Jury Service so I'll be around if you have any questions :slightly_smiling_face:",
+        "ts": "1580831412.000900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/925981052737_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man, how's it going? Did you do some work on the destruction?",
+        "ts": "1587568204.009100",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1079386242947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's on hold right now I'm afraid. Just been doing some uni work for a group project so far. I'll pick it up again on the weekend sometime though. How are you?",
+        "ts": "1587571579.009200",
+        "username": "Ben Fowler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1085519582820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm good thanks, you? How's the Uni Project going?",
+        "ts": "1587621947.009300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1104619915568_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

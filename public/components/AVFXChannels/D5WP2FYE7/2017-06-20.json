@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Helloooo <@U5WR9CJTC>!!",
+        "user": "U4V22C6A1",
+        "ts": "1497993831.869560",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1497993833.870291",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

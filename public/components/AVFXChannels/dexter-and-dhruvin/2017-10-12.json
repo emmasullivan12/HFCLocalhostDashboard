@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, it's the nature of speaking on this chat. We can just respond when we both have a chance. Or we can set a time, whatever you would prefer.",
+        "ts": "1507800139.000126",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256293264887_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That makes sense, you should focus on passing your exams for now",
+        "ts": "1507800156.000024",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255261493540_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The same reason why I enjoy it actually, being able make something out of nothing and build it in the way most suited to you :sunglasses:",
+        "ts": "1507800189.000197",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/254556339664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please do send it all over when it's complete and you've had time to do it",
+        "ts": "1507800254.000095",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255262142564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if you have any questions on anything or if you think I can help with something in general",
+        "ts": "1507800261.000294",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255262219300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay thanks Dex",
+        "ts": "1507800710.000114",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256297163671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll Talk Later when i get home",
+        "ts": "1507800723.000291",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255350106261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for your help",
+        "ts": "1507800729.000125",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255210555906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

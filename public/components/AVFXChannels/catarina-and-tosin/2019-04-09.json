@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh okay thank you!",
+        "ts": "1554802000.003600",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/605901314038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also quick question, do vfx employers care about CVs?",
+        "ts": "1554808246.003700",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/590712082498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like what skills u have other than technical",
+        "ts": "1554808257.003800",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/604518844468_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or is the showreel the really the only thing",
+        "ts": "1554808393.003900",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/605658101591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

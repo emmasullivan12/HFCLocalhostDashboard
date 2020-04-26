@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh good! At least it's running",
+        "ts": "1575826238.008900",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864605181360_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you need help\/advice with anything, give me a shout! I won't be on the pc much between now and New Year, but I'll check in periodically and catch up with anything you have over then! Or if you've got anything you want to show and want feedback on, send that over too :slightly_smiling_face:",
+        "ts": "1575826299.009000",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866814447958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

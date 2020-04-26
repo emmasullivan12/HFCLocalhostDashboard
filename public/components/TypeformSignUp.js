@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019
+// Dex last merged this code on 26th April 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -16,6 +16,9 @@ import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 import VerifyEmail from './VerifyEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';
+
+import chatList from './1LastActiveChats.js';
+import LastActive from './1LastActive.js';
 
 function VerifyStudentProps(eetStatus, userEduName, currCo, currTrainingProvider) {
   let confirmStudentProps = {};
@@ -516,6 +519,12 @@ class TypeformSignUp extends Component {
         case 'didEmailVerifNeedsRev':
           return (
             console.log("pending review page goes here")
+          );
+        case 'checkActiveUsers':
+          return (
+            <LastActive
+              chatList={chatList}
+            />
           );
       }
     } else {

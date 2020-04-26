@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow u really have great plans:muscle::skin-tone-2: Good luck with it m sure you will get there:smile: \nAbout my personal statement there’s still time...currently in progress of my references :grin:",
+        "ts": "1510344808.000068",
+        "username": "diasshirley08 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/271435349846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are your future aspirations? Of course I know your immediate plans from your profile and talking to you...but where do you picture yourself when youre aged 50? What does the life of Dharita look like?!",
+        "ts": "1510345477.000484",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/271441306694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mean SHIRLEY! :sweat_smile: haha getting confused..",
+        "ts": "1510345584.000229",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/270045977281_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "P.S You know you can put Prospela on your CV \/ Personal statement!",
+        "ts": "1510345984.000264",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/270708744421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,151 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! \nMy tutor in uni said that being connected to people through LinkedIn is a good idea. If you have profile, may i pls add you?",
+        "ts": "1576781357.000100",
+        "username": "Malika Omarova (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/880856027968_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, is slack that popular in companies? Isn't discord better?",
+        "ts": "1576782958.000200",
+        "username": "Malika Omarova (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/880910053253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Discord I guess is more chill and an alrounder if that makes sense. I'm following python and unreal I think on there at the moment.  Um one of my friends uses stack but I think it's still new so it's still growing.",
+        "ts": "1576783086.000300",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/869435223651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yeah sure.",
+        "ts": "1576783091.000400",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/869435330451_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can't remember what picture is have on there at the moment.",
+        "ts": "1576783282.000500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/868125385234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRLKJ442V",
+                "created": 1576783665,
+                "timestamp": 1576783665,
+                "name": "Screenshot_2019-12-19-19-26-19-650_com.linkedin.android.jpg",
+                "title": "Screenshot 2019-12-19-19-26-19-650 com.linkedin.android",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 136545,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRLKJ442V\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRLKJ442V\/download\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 166,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 222,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 332,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1733,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 443,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRLKJ442V-0a91a77869\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 473,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 2340,
+                "thumb_tiny": "AwAwABaLaOhx9M0eWPSpzYt5zdNpYENnkD0q39li9D+dXzGTg+hm+X9KPL9hWl9li9D+dH2WL0P50cwuSQgkJfHluOeuKlGfeoknSR2VGBK9eOlSZPqKg2HiikAPeloAjUkE\/KaeDntikUtjLAZ9M0oPPIoAWiiigD\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRLKJ442V\/screenshot_2019-12-19-19-26-19-650_com.linkedin.android.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRLKJ442V-92a4374907",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1576783668.000600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh boi I see myself",
+        "ts": "1576783729.000900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/880929656437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sori",
+        "ts": "1576789723.001000",
+        "username": "Malika Omarova (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/869602227907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "May i pls ask u some questions about blue zoo? I will need info about the company for my assignment. I am not sure what i need (i will ask teacher) and probly it's easily googleble but still good to have someone from there",
+        "ts": "1576789845.001100",
+        "username": "Malika Omarova (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/880616456612_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

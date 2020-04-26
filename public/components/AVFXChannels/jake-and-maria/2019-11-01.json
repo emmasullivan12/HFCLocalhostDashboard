@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hii, Im working at the moment in an animation for my final in december, have the animatic almost shorted",
+        "ts": "1572620605.000900",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-01\/810321089985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can show you that",
+        "ts": "1572620612.001000",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-01\/805449484434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":33",
+        "ts": "1572620612.001100",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-01\/820091007303_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It sounds generally like game designer is the way you want to go, focusing on the high level functionality and tweaking the game feel, over the art or programming of specific elements?",
+        "ts": "1581415139.003300",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946023193460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah",
+        "ts": "1581417090.003400",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/933731011906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

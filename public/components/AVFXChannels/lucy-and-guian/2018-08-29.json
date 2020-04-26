@@ -1,0 +1,106 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian.  I have a friend who works at Henry's Cat.  Are you familiar with them.",
+        "ts": "1535554666.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/424946014625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "?",
+        "ts": "1535554668.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/426554007319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I meant Simon's Cat - eek! <https:\/\/simonscat.com\/>",
+        "ts": "1535554995.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/425298152996_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Simon's Cat - Home",
+                "title_link": "https:\/\/simonscat.com\/",
+                "text": "The home of Simon's Cat! Visit us for all the latest films and animations! Read our exclusive content shop our official merchandise!",
+                "fallback": "Simon's Cat - Home",
+                "thumb_url": "https:\/\/simonscat.com\/wp-content\/uploads\/2016\/10\/website-buttons-01.jpg.jpeg",
+                "from_url": "https:\/\/simonscat.com\/",
+                "thumb_width": 792,
+                "thumb_height": 594,
+                "service_icon": "https:\/\/simonscat.com\/wp-content\/uploads\/2017\/03\/cropped-simonscat_icon-180x180.png",
+                "service_name": "simonscat.com",
+                "id": 1,
+                "original_url": "https:\/\/simonscat.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I recognise the character",
+        "ts": "1535555241.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/426563155559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So it's all 2D.  My friend Emma works there as a senior producer.  Obviously this is not on the creative side, but if you're up for travelling to Shepherds Bush one day around lunch time, she said she'd be happy to chat to you about your future and show you around the studio.  Is that something you'd like to do?",
+        "ts": "1535555686.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/424809588736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes of course I would be very interested in doing that. Thank you for the opportunity.",
+        "ts": "1535555801.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/425310359428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not at all.  I'll connect you two. Do you have an email address that you'd be happy for me to pass on to Emma?",
+        "ts": "1535557719.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/425712661221_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": " yes sure it's: <mailto:guianbenson@gmail.co.uk|guianbenson@gmail.co.uk> ",
+        "ts": "1535558362.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-29\/425446547683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

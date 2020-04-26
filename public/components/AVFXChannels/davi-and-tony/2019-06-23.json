@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a question, how do I begin looking for work? When applying for a runner position, what do i need to show? And what should i write on my cover letter and CV?",
+        "ts": "1561292390.004100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-23\/673605539840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

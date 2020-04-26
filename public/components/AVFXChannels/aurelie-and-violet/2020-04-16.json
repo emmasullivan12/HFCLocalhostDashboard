@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello :slightly_smiling_face: One of the mentors shared this if it can interests you, it is some lectures about basic comp\/roto principles : <https:\/\/www.chrisfryer.co.uk\/training>",
+        "ts": "1587051689.002300",
+        "username": "Aurelie Couble (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1079841686513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

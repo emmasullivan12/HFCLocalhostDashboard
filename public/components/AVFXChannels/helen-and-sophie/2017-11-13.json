@@ -1,0 +1,198 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome!",
+        "ts": "1510574718.000253",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/272154004230_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me just figure out the best way to put you two in touch",
+        "ts": "1510574881.000002",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/270621665776_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She’s super lovely! And she has two boys similar to you age so totally understands how tricky it can be thinking about career options!",
+        "ts": "1510574913.000100",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271419274757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you !!!!",
+        "ts": "1510601700.000329",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271712779381_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that sounds like a handful\nHow are you btw ?",
+        "ts": "1510601711.000487",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271053141121_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No that’s okay I spoke to Prospela and they said it’s fine but she just has to chat to you via slack so I’ve asked her to sign up",
+        "ts": "1510606335.000252",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271619327058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m good thanks!! How are you?",
+        "ts": "1510606342.000551",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/272700409095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just got back from the gym - tiiiiiiiired today!",
+        "ts": "1510606358.000329",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/270964399488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you !!\nAnd yeah I’m good, jut watching some film theory\n",
+        "ts": "1510606388.000278",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271762059029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Film theory?",
+        "ts": "1510609057.000200",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271129480769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What’s that?",
+        "ts": "1510609062.000177",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/270991891648_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s a YouTube channel that either proves stuff in films can happen, can’t happen or gives us extra information, it’s quite interesting ",
+        "ts": "1510644911.000181",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/272926186103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll send you a link when I can",
+        "ts": "1510644920.000304",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271987482181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hold on",
+        "ts": "1510644982.000007",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271845549330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/m.youtube.com\/watch?t=217s&amp;v=drXGJ3ZZdvc&amp;itct=CA4QpDAYByITCION9aLHvdcCFUjTFgodDtkB6zIGcmVsbWZ1SK6Vz8nerv-LLg%3D%3D>",
+        "ts": "1510645067.000192",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271845924818_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Film Theory: Doctor Strange Magic DEBUNKED by Science",
+                "title_link": "https:\/\/m.youtube.com\/watch?t=217s&amp;v=drXGJ3ZZdvc&amp;itct=CA4QpDAYByITCION9aLHvdcCFUjTFgodDtkB6zIGcmVsbWZ1SK6Vz8nerv-LLg%3D%3D",
+                "author_name": "The Film Theorists",
+                "author_link": "https:\/\/www.youtube.com\/user\/FilmTheorists",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/drXGJ3ZZdvc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Film Theory: Doctor Strange Magic DEBUNKED by Science",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/drXGJ3ZZdvc?start=217&feature=oembed&start=217&autoplay=1&iv_load_policy=3\" frameborder=\"0\" gesture=\"media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/m.youtube.com\/watch?t=217s&amp;v=drXGJ3ZZdvc&amp;itct=CA4QpDAYByITCION9aLHvdcCFUjTFgodDtkB6zIGcmVsbWZ1SK6Vz8nerv-LLg%3D%3D",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mean this guy, Calculated approximately how many calories the stay puft marshmallow man has ! Strange but quite interesting",
+        "ts": "1510645183.000104",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271988680085_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

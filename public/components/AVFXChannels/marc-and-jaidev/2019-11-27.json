@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah I see.",
+        "ts": "1574852989.003900",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853070129431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What software is mostly used in the process of creating these fx?",
+        "ts": "1574853041.004000",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851221971157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And are there any other side softwares whcih are used to support the main ones?",
+        "ts": "1574853074.004100",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/839744612803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

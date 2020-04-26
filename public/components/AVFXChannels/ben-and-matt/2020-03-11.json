@@ -1,0 +1,60 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, I think that proof of concept is good! Doing what you need it too! It could maybe be worth having a bit of a bigger camera move on there? Maybe have it sweep a bit lower down to the piers, so you can show off your modelling a bit bigger on screen. Other than that I think it’s looking really cool!\n\nAnd yeah sure! Here’s the link: <https:\/\/vimeo.com\/387289604|https:\/\/vimeo.com\/387289604>\nThe password is: V1sualEffects\n\nOnly thing, if you could not share it around please, sometimes they get a bit picky about showreels",
+        "ts": "1583959868.001500",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994664615056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cheers!\nYeah I get what you mean with the camera movement because the 3D stuff is pretty far away from the camera. How would I go about doing that just because I don't have a drone to refilm. Would I need to create the ocean in VFX so that I can just change the camera path in 3D for perspective change rather than a camera Projection?\n\nThat's awesome! Makes me wanna watch dark crystal haha! Yeah don't worry I won't share it. I just like looking at peoples reels for inspiration haha",
+        "ts": "1583961401.001600",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996582383303_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I made a start on cleaning some of the people up, obviously not finished yet but happy with the start so far\n\n<https:\/\/youtu.be\/-6Np05ityG4|https:\/\/youtu.be\/-6Np05ityG4>",
+        "ts": "1583961816.001700",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994276525572_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Beach Evac - Cleanup V1",
+                "title_link": "https:\/\/youtu.be\/-6Np05ityG4",
+                "author_name": "Matt Coleman",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCqZyESR3LvstdTCXraugOJg",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/-6Np05ityG4\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Beach Evac - Cleanup V1",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/-6Np05ityG4?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/-6Np05ityG4",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/-6Np05ityG4"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583961817.000000"
+        }
+    }
+]

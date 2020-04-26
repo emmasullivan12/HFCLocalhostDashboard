@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m currently using toon boom and if that’s okay, anything to help is appreciated. I tend to get very worried about using long pauses on frames in my work because I worry that it doesn’t look right, so I’ve been told by others that the pacing of my animation is quick and there’s not enough time for the viewer to see all the detail I’ve put into my work. do you have any advice on this as well? ",
+        "ts": "1544091546.000400",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/497208421157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

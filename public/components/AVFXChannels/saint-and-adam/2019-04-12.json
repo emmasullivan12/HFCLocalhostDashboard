@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So being an FX Artist, me reel is all based around Houdini. The first half consists of the projects I’ve done. Be it dirt simulations to set a horse into a VFX plate. Then to a masterclass I did with assists from DNEG. As well as a personal project of a boat dock. Which I took from fx all the way to rendered.\nThe second half is a tool I created to speed up the meshing process of water.\n\nI’ve been applying at all sorts of places. ILM, DNEG, Framestore. I’ve got an interview as a runner at The Mill on Monday",
+        "ts": "1555068117.000100",
+        "username": "Adam Broadbear (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-12\/595118047250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

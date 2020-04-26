@@ -1,0 +1,51 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Sorry in my delay in replying! We're switching over to Linux at work, and without a working PC at home, I've not been able to check this yet. That does make sense, So you would be using something like (if i@group_wood* == 1 } do this {) sort of thing?",
+        "ts": "1579973231.000100",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-25\/922098086016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could you create a group via group expression. And say something along the lines of * wood * == 1 and make it? Without Houdini infront of me at the moment I can't check. I'll try and check at work Monday and see if slack gets unblocked and let you know, otherwise I'll have a play around and tr and get on here at home. If you haven't already solved it?",
+        "ts": "1579973326.000200",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-25\/910633126867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or something like this: <https:\/\/forums.odforce.net\/topic\/21689-how-to-spell-piece-in-attribwrangle-vex\/>\nIf you haven't tried already?",
+        "ts": "1579973394.000300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-25\/922099238800_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "od|forum",
+                "title": "How to spell piece* in attribwrangle vex?",
+                "title_link": "https:\/\/forums.odforce.net\/topic\/21689-how-to-spell-piece-in-attribwrangle-vex\/",
+                "text": "Please well-intentioned people who can tell me  How to spell piece* in attribwrangle vex?",
+                "fallback": "od|forum: How to spell piece* in attribwrangle vex?",
+                "from_url": "https:\/\/forums.odforce.net\/topic\/21689-how-to-spell-piece-in-attribwrangle-vex\/",
+                "id": 1,
+                "original_url": "https:\/\/forums.odforce.net\/topic\/21689-how-to-spell-piece-in-attribwrangle-vex\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579973395.000000"
+        }
+    }
+]

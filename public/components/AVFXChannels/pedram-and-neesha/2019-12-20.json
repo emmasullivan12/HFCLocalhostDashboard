@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, great it sounds like you're very proactive! I will defo keep an ear out for you and ask around. Merry Christmas and Happy new year!",
+        "ts": "1576836332.000100",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/881728819152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

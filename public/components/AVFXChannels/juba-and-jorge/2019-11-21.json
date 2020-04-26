@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds really cool! How was the experience working on that film? Is it based on the style of the book?\nI think all that stuff is incredibly useful though! Tell me a little more about Maya, how much have you used\/ are familiar with it?\nAnd what are you goals in general? Are you looking to work in 3D? or just broadening your skill set?\nAll the best!",
+        "ts": "1574376856.002200",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844742461264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

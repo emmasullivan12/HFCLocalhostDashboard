@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it is very rewarding and if you like helping people then it’s a great thing to do ",
+        "ts": "1511197042.000234",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-20\/275176638546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Within the physiotherapy course you have different modules which cover the different types of physiotherapy. For the 1st year I learnt more about anatomy and physiology which gives you the basis for it. Then in 2nd year there were more modules on the different types including: respiratory, neuro, musculoskeletal etc ",
+        "ts": "1511197255.000296",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-20\/274663961105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I’m currently in my final year at university ",
+        "ts": "1511197265.000560",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-20\/275106112851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

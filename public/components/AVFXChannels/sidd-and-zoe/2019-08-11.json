@@ -1,0 +1,73 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, I don't seem to be getting notifications about replies. I have been designing a character for my film \"Willow\" a 2D animated short fantasy film. The character also named Willow is an old bumblebee-fairy lady, that is on a mission to fix time - it has frozen still and her plants and animal friends are also in a frozen state.\nHer design has gone through many iterations now but I am getting to a place that i actually like, however, the 2D aspect is too clean for the style i was hoping for, (I am usually traditional). I will post examples below, I should note that the story is aimed at children.  :slightly_smiling_face:",
+        "ts": "1565549501.000100",
+        "username": "Zoë Paterson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-11\/711603926322_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FLXHURPL2",
+                "created": 1565550146,
+                "timestamp": 1565550146,
+                "name": "Send to Sidd.png",
+                "title": "Send to Sidd",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 4854621,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLXHURPL2\/send_to_sidd.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLXHURPL2\/download\/send_to_sidd.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 255,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 339,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 509,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 566,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 679,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLXHURPL2-4b6344ee74\/send_to_sidd_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 724,
+                "image_exif_rotation": 1,
+                "original_w": 3508,
+                "original_h": 2480,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FLXHURPL2\/send_to_sidd.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FLXHURPL2-0d6f8c4d67",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1565550152.000200"
+    }
+]

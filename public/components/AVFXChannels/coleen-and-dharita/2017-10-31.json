@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, great, thanks. I've just asked at work and will let you know. So you have done your GCSE's and are thinking about which courses to apply for.",
+        "ts": "1509465525.000231",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/264675324883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just out of interest, what A-levels are you doing?",
+        "ts": "1509465553.000265",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/264099517008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are many subjects useful for architecture.",
+        "ts": "1509465567.000580",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/265837884967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Dharita, Good news! The lady who organises work experience has said that you'd be able to come in for a week that suits you. She wants your email address to get in touch directly about organising this and you will need to send her a CV and covering letter just lie you would for a real job interview. I can take a look at this for you before you send it to her.",
+        "ts": "1509468266.000497",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/265670868438_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you made a CV before? If not, don't worry - I can take you through what to include.",
+        "ts": "1509468300.000303",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/264839705124_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes indeed it would be pointless to start a course and send a whole year and than drop out in next year. That's also the reason why I'm giving up the University I just think that I wouldn't be able to handle it, I heard from my teachers how hard it was when they were in Uni so I'm pretty sure it only got harder since then. Also the prices now are much higher. For me to do a degree in Business which is quiet cheap in comparison to other degrees, I need to pay for the 3 years of University which is almost £10,000 per year now times it by 3 it's £30,000, And then add up all the other fees of living, rent and stuff like that and it's just too expensive even if I had a part time job in a meanwhile.",
+        "ts": "1575579914.019600",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/861987761109_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I know how does a studnet loan works but if there is other way to get to the same place without spending all that money and getting a loan and ending up with equivalent qualifications. Isn't it worthy of trying that rather than pay that loan for the next 20 years of my life?",
+        "ts": "1575580087.019700",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/864190939734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

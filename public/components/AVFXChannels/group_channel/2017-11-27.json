@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's cool @amysheikh05. I actually think I learned a lot of problem solving skills from playing video games when I was younger! Would you ever think about making your own video games?",
+        "ts": "1511783504.000281",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-27\/278913789607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What instruments do you play @kaurm-2011? :musical_score:",
+        "ts": "1511783553.000079",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-27\/278712104998_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think talking about Apprenticeships is a great idea! They're becoming a big thing nowadays with more and more employers offering them. Is anyone else considering doing one rather than going to university?",
+        "ts": "1511783599.000082",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-27\/277837713426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You certainly don't need to go to university to succeed. \n\nThere is ALWAYS another way to go about getting somewhere. You just have to be determined enough to find it. \n\nFor example, my sister didn't get the grades she needed to go to a top university to study her dream course. In the end, she decided to retake her A-Levels (to get good enough grades to impress employers), then studied the AAT (an accounting qualification) paid for by an employer instead. She saved A LOT OF money from not having to take out student debt, got great first-hand experience of the workplace and actually ended up staying with that employer and is doing very well. \n\nShe had to work very hard to get there though. You have to decide whether you are going to put the effort in and GO FOR IT :muscle:",
+        "ts": "1511783763.000138",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-27\/277982824677_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*What are your thoughts on needing to go to university vs. getting experience via an apprenticeship route instead, E-Mentors?* <@U5XMAF7AA|michael>.caira @alexouli99 @janina.schendel",
+        "ts": "1511783843.000226",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-27\/277839307538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "@emma I do a bit of programming at home using programming softwares such as visual basic and python. I haven't created a fully functional game at the moment as I am still learning the languages but I will create some when I am more confident at it. :video_game: :sunglasses: ",
+        "ts": "1511788302.000076",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-27\/277214002864_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

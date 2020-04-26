@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi harry,\nSorry have been a busy \nI’m doing okay, at the moment I’m looking into whether I want to go to university or pursue a career or apprenticeship. \nI am having difficulty deciding what career path I would want for the future. \nI am currently in my second year of college and am studying maths, physics and BTEC sport and exercise science. \n",
+        "ts": "1510349301.000057",
+        "username": "16085659 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/271474316982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

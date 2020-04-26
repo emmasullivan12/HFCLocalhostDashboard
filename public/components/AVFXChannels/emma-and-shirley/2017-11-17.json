@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I suppose I want to learn about how to build a successful business, and I'm also interested in figuring out how the world works ... politics \/ war \/ travel",
+        "ts": "1510913360.000162",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/273975131171_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I could read the news all day every day haha",
+        "ts": "1510913384.000051",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/273532919089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it's an easier question to answer (i.e. what are you curious to learn about vs what is your passion).",
+        "ts": "1510913419.000254",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/273393179920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a good exercise to write down things that interested you every single day for a week ... then you can look back at your list and see what makes you feel good and focus on those!",
+        "ts": "1510913453.000424",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/274925579014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

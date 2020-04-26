@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, wanted to share this with you.\nThis guy did a level in cyberpunk style and he got the job in CDP and works on cyberpunk 2077 now :slightly_smiling_face:\nI wanted to share it with you because it's a great example of tailoring your reel to the company you really want to work at\n\nThe work itself\n<https:\/\/www.artstation.com\/artwork\/9J2Lo>",
+        "ts": "1567087220.000100",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/736117663777_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Cyberpunk street Unreal 4 scene, Krzysiek Burzyński",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/9J2Lo",
+                "text": "Continuation of my level in cyberpunk city. It was made in Unreal Engine 4. I've used assets from \"Showdown\", \"Infiltrator\", \"Sci-fi Hallway\", \"Sci-fi Bunk\", \"Soul City\" and characters from Mixamo and Paragon. Some of the characters are made by me in Fuse. Also a car model from super talented: <https:\/\/sketchfab.com\/dennish2010\/models> Music is: Wice - Star Fighter and Toxxify - Cyborg Chase I did the design, mesh placing, lighting, light bake, postprocessing, camera and animations setup. I've made this for fun and practice. City is slowly growing, far from being finished. Its a work in progress.",
+                "fallback": "ArtStation: Cyberpunk street Unreal 4 scene, Krzysiek Burzyński",
+                "image_url": "https:\/\/cdna.artstation.com\/p\/assets\/covers\/images\/011\/027\/626\/large\/kosmiczny-kowboj-highresscreenshot00258.jpg?1527509225",
+                "image_width": 622,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/9J2Lo",
+                "image_height": 250,
+                "image_bytes": 287794,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-ac4c49b9c783b2911b5213c6efbeffaa.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/9J2Lo"
+            }
+        ]
+    }
+]

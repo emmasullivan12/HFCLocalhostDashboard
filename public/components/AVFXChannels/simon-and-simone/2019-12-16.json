@@ -1,0 +1,83 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I've been trying to get some basics of body mechanics down lately, I thought that if I know a bit more about the physics stuff first, it will be easier to focus on acting later. Anyways, it'd be cool if you wouldn't mind giving your thoughts on this run cycle I did yesterday :slightly_smiling_face: It's a little basic, but I barely know what I'm doing so I thought I'd keep it simple:",
+        "ts": "1576509691.000200",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/877171845975_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRT52BUUX",
+                "created": 1576509708,
+                "timestamp": 1576509708,
+                "name": "runcycle_extend.mp4",
+                "title": "runcycle extend",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2391089,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRT52BUUX\/runcycle_extend.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRT52BUUX\/download\/runcycle_extend.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRT52BUUX-bf55f5ffb4\/runcycle_extend_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRT52BUUX\/runcycle_extend.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRT52BUUX-82979497b8",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1576509709.000300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simone!\nSo for a lipsync shot pick something with some nice constrast, not just all shouting for example, that'll give you more to work with. It doesn't have to be massive contrast but just something with clear variation. When you block it, make sure that you're treating the face and mouth as one unit, don't block without lipsync then do the mouth afterwards. The reason for that is that you'll get a much better performance and all the parts of the face will feel connected. If you leave the mouth til last it would be a bit like animating the whole body except for, say, the left arm, then slapping it on last. Let me know if you have any audio ideas and i'll give you any thoughts if you like.",
+        "ts": "1576522644.000600",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/877562546087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The cycle's pretty good! Nice and fluid and with some good overlaps, here's a couple of thoughts!\n\n- There's a number of duplicate frames in it which are causing hitches\n- The drag on the hand feels a bit too much, a bit too floppy\n- Check the arc and spacing of the wrist, you want a nice clean arc with spacing that cushions at either side , dunno if this makes sense but imagine this is the spacing of one arm swing\n\n-- - -  -   -       -        -   -  -  --\n\n- Does this rig allow the chest to twist? If so it could use some :)\n- Watch for moments where the knee sticks in place eg fr101-102\n\nReally good foundation though, which means I can get picky!",
+        "ts": "1576523396.000700",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/877585770039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon, thank you! I think I understand what you mean (the hand floppiness in particular - I can’t unsee it anymore) but just to clarify; when you say duplicate frames, is it that the spacing is so tight in certain areas that it almost looks like the pose is “stuck”? The rest I should be able to fix. \n\nBack when you were studying, were there any exercises in particular you found useful? :) ",
+        "ts": "1576529707.000800",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/863116042018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

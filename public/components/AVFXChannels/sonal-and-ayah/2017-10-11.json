@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Sonal , nice to meet you . I'm really looking forward to this E-mentoring with you . I would love to hear about what you do currently and how you managed to get there. \nI am currently in year 12 studying biology , chemistry and geography at Villiers high school . One of my personal interests is science especially biology ( I really enjoyed it at high school ) . In the future I would like to go into the field of science but I'm not too sure what exactly I want to do.  Personally I'm a very  bubbly person however when I have a set aim , I would do my best to achieve it.\n",
+        "ts": "1507737461.000328",
+        "username": "aalhar-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254708872579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So , that was a little about me and what I do . I would love to find about what you do and your interests and how you managed to decide what was right for you ?",
+        "ts": "1507737604.000355",
+        "username": "aalhar-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254925531077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

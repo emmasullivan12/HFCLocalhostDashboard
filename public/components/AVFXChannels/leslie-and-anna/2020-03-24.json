@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great you're already developing relationship at different studio's. Short contracts can be tiring but it's a good way to let those studios and people know more about you and your work ethic. It might take a while but it will be useful in the future.\n\nCongrats on the work visa, you are correct Montreal and Vancouver are big industry hubs, especially Montreal in the past 2 years. Unfortunately all studios have slowed down drastically on hiring due to the pandemic but hopefully things ease up in the following months. Otherwise getting work here is pretty straightforward with a visa, it's all about the reel!",
+        "ts": "1585037800.002300",
+        "username": "Mondundu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023260199478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can see my latest demo reel on my website: <http:\/\/www.mondundu.com|www.mondundu.com>\nAlmost all of my work is still under Non disclosure Agreement, I'll be updating it later this summer.",
+        "ts": "1585037995.002400",
+        "username": "Mondundu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1021634080112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's true! I've never seen the situation from this point of view. You're right, thank you!\nYes the pandemic is a disaster everywhere and in every industry unfortunately. I hope this will pass soon and we'll be back to normal.\nI can enter Canada until next February so I hope there will be the chance, it is still quite far for now. :crossed_fingers::skin-tone-3:\nAny advices on Vancouver? Really any haha! For example I know that in Montréal is quite difficult to find a house if it's not the 1st of July :sweat_smile: I guess it's not the same in Vancouver but it's just to make you understand the \"any\" word!\n\nNot sure what time is there, have a good day!",
+        "ts": "1585041259.002500",
+        "username": "Anna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1021772565509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It",
+        "ts": "1585041561.002600",
+        "username": "Mondundu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011707633809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Vancouver is a pretty expensive city to live in compared to Montreal but finding a place to live doesn't take too long.\nMontreal can get pretty expensive too when you get closer to downtown. The average for a 1 bedroom apartment in Vancouver is 1600\/Month, downtown Montreal is 1200\/Month.",
+        "ts": "1585042066.002700",
+        "username": "Mondundu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011725982529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Montreal does have a \"moving season\" but there are always a lot of places to go if you look well enough",
+        "ts": "1585042164.002800",
+        "username": "Mondundu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1021805760645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have any studios you want to join in particular?",
+        "ts": "1585042222.002900",
+        "username": "Mondundu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1009003339378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

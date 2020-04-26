@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Evening, \n\nJust an update, I have started doing the museum from the scrath again, since I though, that my foundation was very poor. \n\nI will try to finish, what we spoke about last time, over the weekend and if everything will be fine, would you be available Tuesday for a call? \n\nThank youu!:blush:",
+        "ts": "1565896836.001200",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729828652551_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

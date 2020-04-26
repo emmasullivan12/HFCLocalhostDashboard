@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh no! It was sold out... hopefully there will be another intake sooner out later :+1::skin-tone-2:\n\nYes, I was in the studio over the holidays. My studio is pretty good with holidays, as VFX studios go though, so I did have most of Christmas week off. It’s usually easier to plan to have time off in between contracts when working in VFX. It’s wire hard to book longer holidays, especially if you’re working shorter contracts.",
+        "ts": "1578906743.000100",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/905420660871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You asked a really good question. In honesty, I think the learning curves at the beginning of your career will be steeper but they never really end haha.\n\nI think that’s something I love about the industry. The skills, techniques and software continue to be updated and improved therefore you constantly realise that there are things you don’t know.  There are also a really good group of people that work in VFX who are usually very happy to answer questions or help explain something. No matter where you are, don’t be afraid to ask questions. I’ve found that artists love to talk about what they are creating :blush:\n\nBut likewise, don’t worry about not feeling ready. Everyone gets those feelings initially.\n\nI remember my tutor once telling me that sometimes he feels like he doesn’t really know what he’s doing and he is a senior comper at Framestore :rolling_on_the_floor_laughing: I think that’s the raw truth about any art form.",
+        "ts": "1578907145.000200",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/905428123735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you started any of the workshops?",
+        "ts": "1578907177.000300",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903569910896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

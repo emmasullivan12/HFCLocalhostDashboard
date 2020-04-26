@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow - how well do you reckon that will work? I'm probably going to be working from home starting tomorrow, I think.",
+        "ts": "1584554631.006000",
+        "username": "Tom Mawby (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1009661507781_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gonna have to make it work somehow!",
+        "ts": "1584554641.006100",
+        "username": "Tom Mawby (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/996857102386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck. Strange times we're in...",
+        "ts": "1584554663.006200",
+        "username": "Tom Mawby (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1009644728448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im in support sessions only in the lead up to deadlines so I am pretty ok. I think I'll move back home.",
+        "ts": "1584554779.006300",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/999582884913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah - are most people planning to head home?",
+        "ts": "1584555327.006400",
+        "username": "Tom Mawby (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1011542443399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think so. Reslife (uni accomdation people) recommended it but are still open if you want to stay here.",
+        "ts": "1584555404.006500",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/999613850385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Should they have a license server, it might be possible for them to give students access to the software. ",
+        "ts": "1584449298.008300",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/994117470659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that is something they're looking into but everything has happened at quite short notice.",
+        "ts": "1584462393.008400",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/996232544337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

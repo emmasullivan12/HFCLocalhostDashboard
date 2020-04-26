@@ -1,0 +1,37 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Enjoyed a trip to the Houses of Parliament yesterday! MP spotting on The Terrace, Portcullis House and (of course) the Sports and Social Club...",
+        "ts": "1510233550.000113",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F7X2PBQKT\/20171020_165830.jpg|20171020_165830.jpg>",
+        "ts": "1510233608.000258",
+        "username": "emma"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F7XN2ECP7\/20171020_173600.jpg|20171020_173600.jpg>",
+        "ts": "1510233614.000249",
+        "username": "emma"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F7YLR9QR5\/20171020_194140.jpg|20171020_194140.jpg> and commented: Portcullis House",
+        "ts": "1510235264.000274",
+        "username": "emma"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F7XNH5QQ5\/20171020_172547.jpg|20171020_172547.jpg> and commented: The Terrace",
+        "ts": "1510235279.000308",
+        "username": "emma"
+    }
+]

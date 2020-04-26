@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds amazing. That's a lot of cool stuff esp with python and c++ which is very helpful in what we do.",
+        "ts": "1566565865.002700",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/724774357778_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So what else would you like to know about the industry or work culture etc.",
+        "ts": "1566566129.002800",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/729848363169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you recommend me to focus on? At university they are preparing me to do programming specially for games but I have a passion for the animation industry. So what things should I work on that could be useful for my portfolio? I talked to an animation programmer once and he told me that I could try to develop a ragdoll simulation. But what do you recommend?",
+        "ts": "1566588392.002900",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/725271468003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I my experience people working for gaming industry can easily port over to the animation or vfx. The tools that we usually use are shared for eg Maya is heavily used in both, unreal has started becoming part of the vfx industry as well. If you can aim at becoming a technical artist in a game studio you will have more options available for you in vfx. One of my colleagues used to work for netherrealms studio for a very long time before he joined framestore. I would highly recommend get yourself accustomed to the basics of disciplines in Maya like rigging, texturing and animation. You have the coding know how but how to get a tool working the most efficient way is a tougher nut to crack, there your experience or understanding of the rigging\/texturing etc workflows helps.",
+        "ts": "1566611436.003000",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/738835582647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

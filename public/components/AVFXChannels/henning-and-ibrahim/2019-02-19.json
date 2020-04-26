@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ibrahim! Pleasure meeting you. It's really cool that you know FN",
+        "ts": "1550574809.002100",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554960661061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I read your pdf now - and you want to be a character artist, correct?",
+        "ts": "1550574825.002200",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/556069281014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Henning,\n\nYes that's correct and also creature designer. I love developing characters through concept and develop them through zbrush and maya",
+        "ts": "1550581325.002300",
+        "username": "Ibrahim Jama (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554585425699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

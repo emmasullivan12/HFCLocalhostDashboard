@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, it has been really unusual. I'm the same with the garden - we have a small one but it's fallen into disrepair for a variety of reasons to the point we can't really use it. We've been talking about clearing it out for a long time and I'm really wishing we had now. I did a run to our local shop yesterday for essentials and social distanced as much as possible. Even that little trip made a huge difference to how I felt. The small things we take for granted have never been so noticeably valuable.\n\nI'm trying to keep my mind active but the whole situation is taking a measurable toll on my mental health. I've been a lot easier on myself than usual with uni work, taking my time with roto and fitting in stuff I really enjoy. A personal creative outlet would really help but I'm honestly finding motivation thin on the ground. Photography isn't something I thought I was taking for granted but now I'm stuck indoors I didn't realise how much I valued it as an outlet. I suppose I need to find new ways to practice it at home. I've also been meaning to get back into more traditional art so if there was ever a time it's now!\n\nIt makes sense. I suppose still being in school gives us students a leg up on adapting to WFH because it's not a dramatic change. Are you connecting to the machines at OOU remotely then? I've seen a lot of discussion about different methods studios are using and it's all gone a little over my head. It's a really curious time for changes to the industry as a whole.",
+        "ts": "1585143012.000100",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1015309105777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, fixing up a rundown garden is a great project, I find it really helps mentally and is very different from computer based work. Also you'd be surprised the kind of photography you can do even in a small garden (especially with macro lenses). Anyway gardening is quite physically tiring and that often helps with stress. \n\nTraditional art is a lot of fun, there's a few nice course on udemy often for about $10.\n\nAt OOU we are connecting remotely so the media stays at the office. There is an issue with bandwidth so we work different shifts. Currently not doing a full week but getting full pay so not a big problem. It's very laggy though. \nWe are using Discord to chat so I feel gamers (which I am not) are at an advantage! \n\nThe issues are mainly:\n\nBig files\nHi rez images\nNeeds to be responsive\nSecurity - files can't leave the server\nUsers have different hardware. \nHarder to review in context or discuss with supervisors. \n\nBut anyway it's moving forward. \n\nKeep. On keeping on!",
+        "ts": "1585154008.000200",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1015947495089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's very true! The trouble is that there's a lot of junk like old furniture and palettes that can't really be gotten rid of until we're under better circumstances. I'm the only fully able-bodied person in my household so that's what's stopped us so far. We're gonna do as much as we can though! My mum's ordering some tools online to help so it's underway. Today I've been doing a lot of deep cleaning. I've moved my desk around so I have better access to my windows and framed some lovely NASA posters I've been meaning to for too long.\n\nThat's interesting! Thank you!\n\nI see! That makes sense. I'm glad you're getting full pay, I've read some horror stories about remote work already. My group at Escape has been using Discord too. It operates really similarly to Slack at least. We're having a lot of similar issues at uni now too. Only one person in our team has a machine powerful enough to render well so we're closing in on a bottleneck. Escape's doing what they can in the meantime so hopefully we get a good solution in place in time!\n\nAll the best!",
+        "ts": "1585178041.000300",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1014333125378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, how is it going? Summer is wrapping up and I won't be as accessible as I am now. So if you have any questions please feel free to spam me now :slightly_smiling_face:",
+        "ts": "1566308007.018200",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/734002821735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man, been a bit busy with other stuff over the past few days, getting ready for third year has been really stressful with all sort of things changing and responsibilities to prepare for. I’m going to try my best to finish that asset this week, I really need to get back into a normal work routine and that will be much easier once university starts again and I’m in the studio 9-5. I’ll have my dissertation to work on but I’m definitely going to try to commit 2\/3 full days out of the week to work full time on env work :+1::skin-tone-3: Unforntunately my summer has been a bit more eventful than planned so haven’t had the time I thought I would have :white_frowning_face: ",
+        "ts": "1566309882.018300",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/725802580881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey sure no worries! which studio are you in?",
+        "ts": "1566312519.018400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/725867366961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s just my university work space, we have a VFX based studio with lots of workstations, set up like an industry studio so that we can work in teams on projects. It’s really great! ",
+        "ts": "1566313287.018500",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/734132925863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice, and do you do something real for clients or just personal stuff?",
+        "ts": "1566314333.018600",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/720847213666_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No it’s just for our university work really, a lot of us use it in our spare time to work on personal stuff for our showreel though, but it’s not open over summer :white_frowning_face:",
+        "ts": "1566327603.018700",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/721162044371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

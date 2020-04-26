@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, do you have an email I can send a Google hang out link to later or if it's more comfortable my email is <mailto:oliverrobinhughes@hotmail.co.uk|oliverrobinhughes@hotmail.co.uk> :)",
+        "ts": "1587038872.005400",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1090451412256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "my email is <mailto:maiatzmon@yahoo.co.uk|maiatzmon@yahoo.co.uk> feel free to send a link over :slightly_smiling_face:",
+        "ts": "1587040254.005500",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1066867147379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay :) what time is best for you",
+        "ts": "1587041183.005600",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1090532712464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm going to set it for six but feel free to join after whenever your ready :) let me know if you get the email with the link. :)",
+        "ts": "1587048152.005700",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1079653412129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I got it, ok, lets do 6 then, I can only do half an hour though as I am cooking dinner for the fam tonight",
+        "ts": "1587048527.005800",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067256626275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's okay, any help is great :)",
+        "ts": "1587049057.005900",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067073992338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My plan is I'm going to put a hold on the 11-second club animation as I didn't have enough time to focus in on it. Instead, I'm going to work on building up my showreel and working on a couple of small animations to compliment the main ones and strengthen my skillset. So I'm going to enter the animdojo April competition which is just a heavy ball lift as it's more simple and I can use it to practice improving my skillset, so I was wondering if I sent you the base files you could help me understand the best way to block and plan out an animation like that :)",
+        "ts": "1587050607.006000",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067159079122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thats a good plan! I used to struggle with 11 second club too while I was at uni",
+        "ts": "1587050896.006100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1065793816709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to do it, but until I can learn to block and plan more efficiently it takes too much time and stress",
+        "ts": "1587051408.006200",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1060468181046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for sure, the problem is with uni is that they dont teach you how to animate, they just make you do it without teaching you the method, and unfortunately its impossible to do something like 11 second club without a lot of experience but they still make students do it anyway",
+        "ts": "1587051647.006300",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1065833822549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Exactly and now with this lockdown, it pretty much feels like we are on our own since I've had pretty much zero advice or help from the uni",
+        "ts": "1587052315.006400",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1065867441717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much for taking the time to help me :)",
+        "ts": "1587059807.006500",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067609271458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

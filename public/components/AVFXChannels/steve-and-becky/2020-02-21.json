@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had a question if that’s cool? I was just wondering if we could talk about as you said you’ve got a background in Comp- what do you do? More 2d or 3d? Do you work in Nuke? :relaxed: obviously I know you’ve got NDA and everything so like if I overstep please let me know ",
+        "ts": "1582282170.000400",
+        "username": "Becky Shaw (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/964779860839_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been locked in the Nuke cage for the last 15 years but I've dabbled a bit with Houdini. At the moment I'm trialing some tracking tools like Mocha or pftrack, but Nuke will always be my main package",
+        "ts": "1582282435.000500",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/964785104599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course, there's a bit of 3d in Nuke",
+        "ts": "1582282480.000600",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/962942951589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

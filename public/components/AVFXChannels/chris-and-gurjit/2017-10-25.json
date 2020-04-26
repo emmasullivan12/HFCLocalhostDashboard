@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am currently studying level 3 BTEC Business in year 12",
+        "ts": "1508929847.000051",
+        "username": "sgurjit949 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262730683191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

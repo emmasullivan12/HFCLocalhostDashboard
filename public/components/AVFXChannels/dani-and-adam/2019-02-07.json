@@ -1,0 +1,113 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha! Good lad! There's no deadline, of course, but I just thought it would be useful for you to 'practice' with me before you apply to Spline Studios. Allowing us time to give feedback and stuffs :smile:",
+        "ts": "1549539626.007400",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/546137323974_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I came up with 2 designs. For the current moment, I can't choose one of them. Here is why:\nThe first design represents strength. The font is \"strong and resistant\n\". The logo shows confidence.\nAt the same time, I think it may be too \"flashy\".\nHowever, I like this design, because it's catchy. A person (a hiring manager) who will look on it will remember it. At least, I see it this way.",
+        "ts": "1549557080.007500",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544903263203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FG0C0MWBB",
+                "created": 1549557158,
+                "timestamp": 1549557158,
+                "name": "My Cover Letter_1 .pdf",
+                "title": "My Cover Letter 1 ",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 71340,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FG0C0MWBB\/my_cover_letter_1_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FG0C0MWBB\/download\/my_cover_letter_1_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FG0C0MWBB-5861447b97\/my_cover_letter_1__thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 935,
+                "thumb_pdf_h": 1210,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FG0C0MWBB\/my_cover_letter_1_.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FG0C0MWBB-72b98cdfe6",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1549557159.007600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The second design is more subtle. I thought that a cover letter may complement Cv\/résumé. However, I'm afraid that it doesn't look memorable. Therefore among all the other CV's it may be forgotten and put amongst \"backup CVs'\"",
+        "ts": "1549557215.007900",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544409974465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FG0C3KB1P",
+                "created": 1549557288,
+                "timestamp": 1549557288,
+                "name": "My Cover Letter_2.pdf",
+                "title": "My Cover Letter 2",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 56668,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FG0C3KB1P\/my_cover_letter_2.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FG0C3KB1P\/download\/my_cover_letter_2.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FG0C3KB1P-af7f147a20\/my_cover_letter_2_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 935,
+                "thumb_pdf_h": 1210,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FG0C3KB1P\/my_cover_letter_2.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FG0C3KB1P-07777e1551",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1549557290.008000"
+    }
+]

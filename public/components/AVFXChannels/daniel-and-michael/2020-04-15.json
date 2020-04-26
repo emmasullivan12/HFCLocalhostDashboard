@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey I think it looks great. The boat shot is the kind of work we always wanted to see on juniors reels when hiring at Molinare. There are no weak shots and you show enough roto prep to indicate you can do it and you've got a couple of comps in there to.",
+        "ts": "1586985815.001700",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1065529207971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Too",
+        "ts": "1586985847.001800",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1050587170983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do wonder how the current home working thing will work with juniors, that's where interaction is most important. If things are slow than Plan B could be your older idea of doing the MA - basically sitting the thing out a bit. Take work though if you can get it!\n\nGreat starting reel a lot better than mine was anyway.\n\nAs well as official job openings I would forward it along to all the people you've been meeting with along the way, from QVFX, visiting tutors etc... In this time of remote working it becomes doubly useful to have met people since they can't arrange to meet with anyone in person now, being a familiar face will give you a bit of an edge.",
+        "ts": "1586986205.001900",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1077958056193_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aaahhhhh okaaayyy",
+        "ts": "1509131363.000348",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/263387965285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you do a Pharmacy degree or any science degrees???",
+        "ts": "1509131380.000115",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/262732017105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

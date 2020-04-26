@@ -1,0 +1,66 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F7SMDBXNC\/20171101_094820.jpg|ChelseaFCFoundation.jpg> and commented: Meeting at the best football club today!!! (Met with Chelsea FC Foundation to talk edtech!)",
+        "ts": "1509553681.000022",
+        "username": "emma"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are you up to today? *Why not send a quick photo insight to your mentees?!* :camera_with_flash:",
+        "ts": "1509553698.000119",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> commented on <@U00>’s file <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F7SMDBXNC\/20171101_094820.jpg|ChelseaFCFoundation.jpg>: Excellent! If only the men’s team was as good as the ladies team...",
+        "ts": "1509553764.000315",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha! Good point.",
+        "ts": "1509553890.000110",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Note: When sending your pics, it's best to send your commentary separately as hasn't always been sending with the pic (a slack issue!)",
+        "ts": "1509553943.000381",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shame about the club!!!",
+        "ts": "1509557180.000632",
+        "username": "bot",
+        "thread_ts": "1509557180.000632",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1509558664.000531",
+        "reply_users": [
+            "U00"
+        ],
+        "replies": [
+            {
+                "user": "0",
+                "ts": "1509558664.000531"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Booooo!!",
+        "ts": "1509558664.000531",
+        "username": "bot",
+        "thread_ts": "1509557180.000632"
+    }
+]

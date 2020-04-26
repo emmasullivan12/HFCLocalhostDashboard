@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Felicia, apologies I hadn't check in because I thought I'd get an email alert when your replied. I assumed you were still busy with the move. So basically I only started in VFX a 2 and a half years ago and began by doing a nuke roto internship for 6 months on game of thrones.  After that I began working at jam on a mixed media Kids TV show called Becca's bunch. It was a combination of puppets and CG but a lot of the work I did on it was roto, basic clean up and very basic compositing of just placing the characters in position. All of that work was on after effects. I then spent the next 6 months on a new show keying its main live action character. Now I've I'm on the compositing team but its been a bit of a baptism of fire. Like your experience the small nature of the company has allowed me to move onto new positions but I know there's plenty of room for improvement on my skillset and want to train very hard over the next year to bring them up to par. I also want to piece a good show reel together because even though the end result of the shows we are working on look good, its still kids TV and I don't want that to be the only thing on my show reel. The only thing I feel I have a pretty good grasp of is keying. I even want to go back an work on making my roto more efficient. I was thinking clean up was a decent place to start too. Do you have any resources that or bits off footage to work on that you found particularly helpful when you were learning.",
+        "ts": "1566040249.002000",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-17\/729160579188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies again for the delay in reply.  Ill be sure to check in more regularly in future.",
+        "ts": "1566040273.002100",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-17\/723246747969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,206 @@
+[
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498326411.728514",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the group"
+    },
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498326703.745148",
+        "user": "U5YF3N0QH",
+        "text": "<@U5YF3N0QH> has joined the group"
+    },
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498327096.767994",
+        "user": "U5WF2FY81",
+        "text": "<@U5WF2FY81> has joined the group",
+        "inviter": "U4V22C6A1"
+    },
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498327096.767997",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the group",
+        "inviter": "U4V22C6A1"
+    },
+    {
+        "type": "message",
+        "text": "Hi both, please watch this short intro video! Your Career Plan is also pinned to this conversation for easy access. Best of luck!",
+        "files": [
+            {
+                "id": "F5ZS342PQ",
+                "created": 1498327336,
+                "timestamp": 1498327336,
+                "name": "Movie on 21-06-2017 at 18.35.mov",
+                "title": "Introduction - Hannah &amp; Muchen",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 27671516,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5ZS342PQ\/movie_on_21-06-2017_at_18.35.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5ZS342PQ\/download\/movie_on_21-06-2017_at_18.35.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F5ZS342PQ\/movie_on_21-06-2017_at_18.35.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5ZS342PQ-6d601898c8",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1498327338.783944"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F5YBYCPLY",
+                "created": 1498327456,
+                "timestamp": 1498327456,
+                "name": "Prospela - Career Plan: Muchen",
+                "title": "Prospela - Career Plan: Muchen.pptm",
+                "mimetype": "application\/vnd.google-apps.presentation",
+                "filetype": "gpres",
+                "pretty_type": "GSuite Presentation",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 10125,
+                "mode": "external",
+                "is_external": true,
+                "external_type": "gdrive",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/docs.google.com\/presentation\/d\/1xagd0P99HiN-SvYUIbkUXyVvl33SG85ZzyLOtzL0ag4\/edit?usp=drive_web",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5YBYCPLY-f2e02b162f\/prospela_-_career_plan__muchen_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5YBYCPLY-f2e02b162f\/prospela_-_career_plan__muchen_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5YBYCPLY-f2e02b162f\/prospela_-_career_plan__muchen_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5YBYCPLY-f2e02b162f\/prospela_-_career_plan__muchen_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5YBYCPLY-f2e02b162f\/prospela_-_career_plan__muchen_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5YBYCPLY-f2e02b162f\/prospela_-_career_plan__muchen_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5YBYCPLY-f2e02b162f\/prospela_-_career_plan__muchen_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "image_exif_rotation": 1,
+                "original_w": 800,
+                "original_h": 450,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F5YBYCPLY\/prospela_-_career_plan__muchen",
+                "is_starred": false,
+                "external_id": "1xagd0P99HiN-SvYUIbkUXyVvl33SG85ZzyLOtzL0ag4",
+                "external_url": "https:\/\/docs.google.com\/presentation\/d\/1xagd0P99HiN-SvYUIbkUXyVvl33SG85ZzyLOtzL0ag4\/edit?usp=drive_web",
+                "has_rich_preview": true
+            }
+        ],
+        "upload": false,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1498327458.791626",
+        "edited": {
+            "user": "U4VR52RQE",
+            "ts": "1498636939.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U5WF2FY81> and <@U5YF3N0QH>, please feel free to continue chatting within this group (Note: we are muted and won't be involved from here on out) but if you would prefer you should now be able to set up a Direct Message between just yourselves.",
+        "user": "U4VR52RQE",
+        "ts": "1498327607.801089",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hello Hannah, nice to meet you!",
+        "user": "U5YF3N0QH",
+        "ts": "1498327821.813858",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g13115cfbdb3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/913115cfbdb31de8ad2ceb1b7fc76646.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Muchen",
+            "real_name": "Muchen Jiang",
+            "display_name": "muchen",
+            "team": "T4UUTPV18",
+            "name": "muchen",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Muchen! Nice to meet you too, how are you ? ",
+        "user": "U5WF2FY81",
+        "ts": "1498328026.825901",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "1da7ab747a0a",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-26\/204235436887_1da7ab747a0a05b6622a_72.jpg",
+            "first_name": "Hannah",
+            "real_name": "Hannah",
+            "display_name": "hannah",
+            "team": "T4UUTPV18",
+            "name": "hannah",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I am good thanks, and you? Your role seems very interesting! I'm wondering whether you have the time to discuss now, or would rather to book a time to discuss later if you are busy?",
+        "user": "U5YF3N0QH",
+        "ts": "1498328357.844822",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g13115cfbdb3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/913115cfbdb31de8ad2ceb1b7fc76646.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Muchen",
+            "real_name": "Muchen Jiang",
+            "display_name": "muchen",
+            "team": "T4UUTPV18",
+            "name": "muchen",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

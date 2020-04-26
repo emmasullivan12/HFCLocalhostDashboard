@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "text": "Hello, I’m Slackbot. I try to be helpful. (But I’m still just a bot. Sorry!) *Type something* and hit _enter_ to send your message.",
+        "user": "USLACKBOT",
+        "ts": "1498118878.464110",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "something",
+        "user": "U5XLJFDD1",
+        "ts": "1498118885.465559",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Pleasure to meet you. Let me show you a couple things about Slack.",
+        "user": "USLACKBOT",
+        "ts": "1498118885.465582",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "If you have any questions about *how to use Slack*, please ask me! I’ll do my best to help.",
+        "user": "USLACKBOT",
+        "ts": "1498119022.498301",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

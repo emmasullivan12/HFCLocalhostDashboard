@@ -1,0 +1,142 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey,  environments wise there only one super start that I know of. It's Andrew Averkin <https:\/\/www.artstation.com\/averkin>\nCheck his work, he is a beast and that's a really good quality bar :slightly_smiling_face:",
+        "ts": "1563805394.000200",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/695580428049_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Andrew Averkin",
+                "title_link": "https:\/\/www.artstation.com\/averkin",
+                "text": "Founder of Utopia Syndrome | Environment Artist at Blur",
+                "fallback": "ArtStation: Andrew Averkin",
+                "thumb_url": "https:\/\/cdna.artstation.com\/p\/users\/covers\/000\/007\/574\/default\/7fc6922115e9a63aa98919739ec83e13.jpg?1524655470",
+                "from_url": "https:\/\/www.artstation.com\/averkin",
+                "thumb_width": 1920,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-b73069c55108cbf4a0a05efc8bbd73fa.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/averkin"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Concept could be with 3d too, let me find some examples",
+        "ts": "1563805421.000400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/695581129009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So the idea is not to make something yourself but execute one to one someone's concept because that's gonna be 80-90% of the time your task.\nI would suggest to make 4 really good images with 4 various envs by the end of the next 12 months. It's really a tough goal but that would help you understand the production speed. Just don't forget to credit the concept artist,you can even write them to get potential exposure if your env will be that good :slightly_smiling_face:\nHere are some examples of concepts you could go with:\n<https:\/\/www.artstation.com\/artwork\/onXak> (check this guy in general,he has tons of great stuff)\n<https:\/\/www.artstation.com\/artwork\/oOl6EJ> (task example could be to remove character and make it as photo real as possible and yet preserve the mood)\n<https:\/\/www.artstation.com\/artwork\/oOKWmW>\n<https:\/\/www.artstation.com\/artwork\/nQLP59> you totally can copy someone's work for studying, just remember to credit the person :slightly_smiling_face:\n<https:\/\/www.artstation.com\/artwork\/GXJLxV> ( really good one for the mood, and then you can make a moodboard of assets, though it's rather stylized, I'm not sure it's that useful in VFX in particular)\n<https:\/\/www.artstation.com\/artwork\/gJBBLe> (this guys rocks)\n<https:\/\/www.artstation.com\/artwork\/6aP8JO> (extremely easy to reproduce, and very very hireable  outcome)\n<https:\/\/www.artstation.com\/artwork\/e0zYoP> (just for variety you would want to have different envs in your reel)\n<https:\/\/www.artstation.com\/artwork\/2x114A> (pretty common env in films :slightly_smiling_face: Like a set extension or something similar)\n<https:\/\/www.artstation.com\/artwork\/gJydgG> (If you can pull this type of env off on a level that the concept does but in \"proper 3d\" you will be instantly hireable, but this one is really ambitious one :slightly_smiling_face: )\n<https:\/\/www.artstation.com\/artwork\/L2eVxl>\n<https:\/\/www.artstation.com\/artwork\/4WwK1> (this one has a bit poor execution but it's a nice picture in general composition wise and it has castles, you really want to have different types of envs :slightly_smiling_face: )",
+        "ts": "1563806484.000500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/695606295857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much for these, they're amazing! I've seen Andrew's work before and love it so much. During my final university year, I will have lots of time to work on projects like this so it would be great to get one started over the summer. I love the one with the person walking up the stairs and think it would be a great starting piece, I have never worked with trees\/foliage though so will have to look more into that.",
+        "ts": "1563816402.000600",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/704324884022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here are a couple of pieces I have done 100% myself over the past few months. ( <https:\/\/www.youtube.com\/watch?v=AnjQwphrnLc> )",
+        "ts": "1563816677.000700",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/704330942614_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "TOAST FACTORY",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=AnjQwphrnLc",
+                "author_name": "Chris Spencer",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCznZN_f36-rgRK7c6aDErXw",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/AnjQwphrnLc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: TOAST FACTORY",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/AnjQwphrnLc?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=AnjQwphrnLc",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=AnjQwphrnLc"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FLN5UQMM3",
+                "created": 1563816705,
+                "timestamp": 1563816705,
+                "name": "Classic_Robot_LookDev_Neutral_01.mov",
+                "title": "Classic Robot LookDev Neutral 01",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3404384,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLN5UQMM3\/classic_robot_lookdev_neutral_01.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLN5UQMM3\/download\/classic_robot_lookdev_neutral_01.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLN5UQMM3-6925a2aaf8\/classic_robot_lookdev_neutral_01_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FLN5UQMM3\/classic_robot_lookdev_neutral_01.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FLN5UQMM3-e0f7e8a404",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1563816706.000900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The factory was modelled in Maya and textured with just procedurals in Arnold, and the robot was modelled and rigged in Maya and textured with Mari.",
+        "ts": "1563816809.001200",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/704041760647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

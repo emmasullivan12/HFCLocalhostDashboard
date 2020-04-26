@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok so fx takes what other departments give but are also seperate in terms of what they produce :simple_smile: . Im working on a short film currently which i would ideally use some shots from for my reel which fits with having dust and destruction. \nI wanted to ask how a model goes from maya to houdini for destruction and other effects and what things need to be considered in terms of how it works going from maya to houdini?",
+        "ts": "1574944287.003200",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855006234486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We are separate from other departments in that sense, but sometimes there's also a bit of overlap\/back-and-forth. In our current project we have a character transforming, which is mainly a characterFX\/cloth department job, but fx is providing \"simple\" shapes that grow under the skin etc,which  characterFX then uses to deform the skin. They're good at that, but fx is more capable of coming up with the helper-geometries, so there's a bit of help across departments there. That's one point that i always like...problem-solving across departments - gets you out of the usual fx-funk a little bit and see other things than just particles and volumes :wink:\n\nIn terms of geo-export to Houdini, Alembic is probably the best format. Things to look out for would mainly be naming and grouping of geometry...if you make that something meaningful\/logical to the object, it's very easy to filter out certain parts of a bigger set of objects in Houdini, so you don't have to deal with the whole thing all the time. It's also a good idea to select regions of a piece of geo by its name, because that likely won't change...but selecting things in the viewport by lasso or so, there's no guarantee that that selection will produce the same output next time the original geometry changes (things might be in a different place in 3d, point numbers might have changed etc). So the former method avoids those problems",
+        "ts": "1574960365.003300",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/854953213655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

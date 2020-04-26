@@ -1,0 +1,953 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah nice, I've been a WoW player since it launched haha tried a few others too. Never played Lineage though! Yeah it's quite a tough one! Mobile games is quite steady work I've heard. Yeah it's tough with applying to different countries, I have to apply to Spain in English so automatically you'll be lower on the pile I suppose. Are you able\/willing to leave London, or would korea be a special case?",
+        "ts": "1570707436.005000",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784185301489_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You moved in with you girlfriend right?",
+        "ts": "1570707450.005100",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/779137584323_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "your*",
+        "ts": "1570707454.005200",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792826813270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "London for now",
+        "ts": "1570707725.005300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/777843960882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yes we moved in together Shepherd’s bush",
+        "ts": "1570707732.005400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792479206679_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I found an interesting listing on technicolour for a technical artist entry level",
+        "ts": "1570707818.005500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790629286725_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will put some things together and apply tonight ",
+        "ts": "1570707827.005600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/777845630914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh cool! I think that would be a great role for you, let me know if you have anything you want me to take a look at, I'll be around until 6ish but might not be able to check this much tonight!",
+        "ts": "1570708116.005700",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792485397127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haven’t got anything great just the panda i was doing for uni and a dragon i rigged in college",
+        "ts": "1570709206.005800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790184215908_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FP85EUFA8",
+                "created": 1570709246,
+                "timestamp": 1570709246,
+                "name": "Image from iOS.png",
+                "title": "Image from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 249367,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP85EUFA8\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP85EUFA8\/download\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 202,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 450,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP85EUFA8-34b84fc47a\/image_from_ios_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 750,
+                "original_h": 1334,
+                "thumb_tiny": "AwAwABqQ2j\/31pwtDj76\/nVnBJPFG0+lVzMXKir9kb\/notL9jc871q0qnPNPo5mHKiPHPWl2H1oYnd1pB7k\/nUjHBPc06mfifzp9AEb\/AHqAvPP8qdj5u\/Hel\/E0AKAB0opp4BOTxTqAP\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FP85EUFA8\/image_from_ios.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FP85EUFA8-ea6fe998dd",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570709250.005900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice, that looks great. I'm a big fan of 'less is more' so it's not such a bad thing to not have a back catalogue to show! A rig will be a good thing to show for sure. How's your cv? If it's more generalist leaning, it might be a good idea to edit it down to only the relevant skills to this (I'm also a big fan of the single page cv wherever you can), with a nod to having generalist skills in your pocket. Remember the person reading it will be scanning for keywords first!",
+        "ts": "1570710431.006200",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784238704641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t have a creative cv i can come up with something when i get home",
+        "ts": "1570711491.006300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784260153889_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will add my skills in a bullet-point list and also a list of software i can use ",
+        "ts": "1570711665.006400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790701563541_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shall i add hobbies and interests outside of the industry or nobody looks at that?",
+        "ts": "1570711692.006500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790703652592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm pitching the question to some of the supervisors\/directors that do the screening here as I haven't really done very much hiring, will let you know what they say! For me it can't hurt, maybe even can make a personal connection with whoever is reading it through mutual interests. Yep bullet points and lists are great and make it real easy to find the information they need",
+        "ts": "1570712719.006600",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/779240506515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FNX7AC603",
+                "created": 1570713044,
+                "timestamp": 1570713044,
+                "name": "cvadvice.JPG",
+                "title": "cvadvice",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 25227,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNX7AC603\/cvadvice.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNX7AC603\/download\/cvadvice.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNX7AC603-3fd61ee55b\/cvadvice_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNX7AC603-3fd61ee55b\/cvadvice_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNX7AC603-3fd61ee55b\/cvadvice_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 94,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNX7AC603-3fd61ee55b\/cvadvice_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 125,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNX7AC603-3fd61ee55b\/cvadvice_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 663,
+                "original_h": 173,
+                "thumb_tiny": "AwAMADDR5pcn0pMUYoAXJ9KM+1Jij8aAFz7GjPtRmjNAH\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FNX7AC603\/cvadvice.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FNX7AC603-514895f2f4",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570713046.006700"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FNVTYUS0J",
+                "created": 1570713071,
+                "timestamp": 1570713071,
+                "name": "cvadvice2.JPG",
+                "title": "cvadvice2",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 25408,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNVTYUS0J\/cvadvice2.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNVTYUS0J\/download\/cvadvice2.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNVTYUS0J-7aeea84db9\/cvadvice2_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNVTYUS0J-7aeea84db9\/cvadvice2_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNVTYUS0J-7aeea84db9\/cvadvice2_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 129,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNVTYUS0J-7aeea84db9\/cvadvice2_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 171,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNVTYUS0J-7aeea84db9\/cvadvice2_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 535,
+                "original_h": 191,
+                "thumb_tiny": "AwARADDQPWikPWlGfSgBRg06m\/8AAaMD0NADqD0puB6Gl7dDQAtJS0lABRRRQAUUUUAf\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FNVTYUS0J\/cvadvice2.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FNVTYUS0J-98e4839f61",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570713073.007000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "first one added \"in a nutshell, anything to get personality across, before they are in the interview room is the best thing to add in a CV, but dont make it a joke\/tacky\"",
+        "ts": "1570714193.007300",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790762666229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see! Thanks!",
+        "ts": "1570720263.007400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790941559232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Got busy at work sorry for the late replies ",
+        "ts": "1570722005.007500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/793193565222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(I didn’t make them just selling them)",
+        "ts": "1570722041.007600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/779505355427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FNXEV6GUT",
+                "created": 1570722035,
+                "timestamp": 1570722035,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 764454,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNXEV6GUT\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNXEV6GUT\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 270,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 360,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 540,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1067,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 720,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNXEV6GUT-2a4a93d58d\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 768,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 3024,
+                "original_h": 4032,
+                "thumb_tiny": "AwAwACS6VyejcGoZZFXcp4Y9u9E10iMQGbP6VXklzkk5zQ3YaJOc8A\/nQN2ewHuag+0cEdPehpT17UOb6Gjl2G3GRL9RUWTVhZMqOAfqaXef7o\/OnzGb1YjojHcRyajIViFAwfUUM5bjpUYf5htHNZ2YXRYWFUdTknHrRKuYzt55zimedgjdkGkcvj7pxQrj0EEgAxR5q0ghLjIVhS\/Zj6N+VPQCzHGoQEjkjJpG254AqRgVHtULHkfWpadxkcgAZWx3qcEjpUflmQ9OKftZe2aOV2FcXc3rRub1pPm\/umk+b+6aLMdz\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FNXEV6GUT\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FNXEV6GUT-9c0fdf96e7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570722042.007700"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPAQS7EUF",
+                "created": 1570722035,
+                "timestamp": 1570722035,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 764454,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPAQS7EUF\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPAQS7EUF\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 270,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 360,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 540,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1067,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 720,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPAQS7EUF-7a8646744b\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 768,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 3024,
+                "original_h": 4032,
+                "thumb_tiny": "AwAwACS6VyejcGoZZFXcp4Y9u9E10iMQGbP6VXklzkk5zQ3YaJOc8A\/nQN2ewHuag+0cEdPehpT17UOb6Gjl2G3GRL9RUWTVhZMqOAfqaXef7o\/OnzGb1YjojHcRyajIViFAwfUUM5bjpUYf5htHNZ2YXRYWFUdTknHrRKuYzt55zimedgjdkGkcvj7pxQrj0EEgAxR5q0ghLjIVhS\/Zj6N+VPQCzHGoQEjkjJpG254AqRgVHtULHkfWpadxkcgAZWx3qcEjpUflmQ9OKftZe2aOV2FcXc3rRub1pPm\/umk+b+6aLMdz\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPAQS7EUF\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPAQS7EUF-5a83e4dfdd",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570722042.007800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ohh these are both coming through broken!",
+        "ts": "1570724249.008300",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790584575892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it's been really quiet here today, lots of small fixes getting ready for a comp review tomorrow for the episode we're currently on",
+        "ts": "1570724293.008400",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/791055194709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh awesome!! When it’s quiet, what do you do? Can you work on personal stuff?",
+        "ts": "1570724674.008500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/793268592102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nah not really, there's always something that needs doing! I'll go back and work on fixes for older episodes, give the current another watch through, or ask the team if they need any help, on the odd occasions I have done some training in quiet times but honestly there hasn't been a time that quiet for me in a couple years!",
+        "ts": "1570724963.008600",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/778288821138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh damn!! Sounds stressful and scary",
+        "ts": "1570725001.008700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792925120311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How do junior artists do? How much is expected of us to know?",
+        "ts": "1570725013.008800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/793277600390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Know the basics? The wording they use on the job listings sounds like they need an expert ",
+        "ts": "1570725046.008900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/779589490627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I stumbled across a job listing for a unity developer for 80k yearly... scared to apply... the description matches me just my coding is not amazing... hahah",
+        "ts": "1570725330.009000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/793286024790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You get used to it, and it's part of learning to be in such a fast turnaround really. I'm naturally quite good at juggling things and switching in and out of different things so I find I'm quite a fast worker here. When we've had fresh grads in it's usually expected that they'll have a basic understanding of the workflow and pipeline, but wont have actually worked inside a pipeline, so the teams are structured now so that for example, I'm listed as a senior now rather than a lead, so it's expected of me to be there to help the juniors and artists on my team whenever the lead is busy, so there's always someone to support, but it is expected that they can manage their time and workload - and will speak up if there's any issues. It's fine not to know things, as long as they're communicating and picking it up",
+        "ts": "1570725528.009100",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792938972535_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "never be scared to apply if you think you meet the criteria, the salary will probably give an idea of the level they ideally want, but you never know! They might adjust to experience",
+        "ts": "1570725689.009200",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/779605828339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For 80k i would make a whole game for them... :joy: even in binary scripting ",
+        "ts": "1570725766.009300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/791093400229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha I mean I had heard there was good money in games but... :sweat_smile:",
+        "ts": "1570725845.009400",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/791095366405_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahahah and pay-wise how do we juniors do and how quick does pay-skill progress?",
+        "ts": "1570725898.009500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790627203380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(Going underground for 40min-ish)",
+        "ts": "1570725922.009600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/791099097456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it really does vary, and you can get lucky and start high. If you move more between companies your pay will go up faster than if you stay in the same place, but if you're good at negotiating it might not really make a difference. For me I just sort of accepted whatever I was offered being too scared to ask for more in case they'd fire me - which is ridiculous, looking back! Until one of my leads prompted me to negotiate, and said the person offering the contract is probably expecting it. Ask for higher than you expect, in a polite way, and give reason for why you think you should get more. They will either stand their ground or offer a medium. The industry will change the salary quite a lot too, TV production is fairly low compared to VFX naturally, budgets are smaller, contracts are longer.",
+        "ts": "1570726254.009700",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784667517729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see ! Thanks for the insight ! I am rubbing at negotiating and asking for more hahah i need to learn to play my cards well",
+        "ts": "1570726514.009800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792963625735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its a really difficult thing. For your first couple of jobs i wouldn't do it, generally the offer will be fair, otherwise I'd reconsider taking the job, but once you're no longer considered a junior it gets easier, and expected",
+        "ts": "1570726739.009900",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784679693233_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will do my best to create a somewhat decent showreel with what I already have (i have one rig and might try to make another one) i will put some game stuff, some stop-motion animation and some 3d rigging and a 3d animation ",
+        "ts": "1570728402.010000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/778377158578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Home sweet home!!",
+        "ts": "1570729297.010100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/778399872402_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPB280W7R",
+                "created": 1570730866,
+                "timestamp": 1570730866,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1803285,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPB280W7R\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPB280W7R\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 270,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 360,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 540,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1067,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 720,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPB280W7R-fa8ce390aa\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 768,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 3024,
+                "original_h": 4032,
+                "thumb_tiny": "AwAwACSqLZyOAv50v2ST0X86uxr8vFSqp7igDN+yyei\/99UhtpP7o\/Otbb7UxkoAyvs8np+tH2eT0\/WtArzSbaAJEGVqUA+tQK3y\/jUyHikA\/B9aawPrTs0xjQAwijFITzSZoAiRuKmVqqxtuQH1qQNQBY3UwtTN1NLUDHFuaTdTCaTNAj\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPB280W7R\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPB280W7R-3f3245e7ea",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570730873.010200"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FNWDCLRFC",
+                "created": 1570731427,
+                "timestamp": 1570731427,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2179674,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNWDCLRFC\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNWDCLRFC\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 270,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 360,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 540,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1067,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 720,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNWDCLRFC-022442c51f\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 768,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 3024,
+                "original_h": 4032,
+                "thumb_tiny": "AwAwACSstsxHVacLNv7y1aRflGOKmVTQBQ+yN\/eH5GkNo394flWnt4prLSAyXgZTgc\/QUnlP\/dP5VpFeaTbTAcg+Uc4qZV96roflFWEPFIB233NIVHqaXNNY0AMI5oxSE80maAK6t8oqdGqrGd0YJ71IKALW7imFqjyKQtQMUtzRuqMmjNAH\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FNWDCLRFC\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FNWDCLRFC-dad6d7a16b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570731433.010500"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FP99KTZ29",
+                "created": 1570734974,
+                "timestamp": 1570734974,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2332083,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP99KTZ29\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP99KTZ29\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 270,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 360,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 540,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1067,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 720,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP99KTZ29-2991495289\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 768,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 3024,
+                "original_h": 4032,
+                "thumb_tiny": "AwAwACSuLVj\/ABL+VKLNv76\/lVsKM1KoHrQBQ+xv\/eX8jSG0cfxL+VaXFMYCgDO+zN\/eFH2Zv7wq6VpNtIZKozipQMDpmq4fpUyvlfegQ8fTH4UjUgcd6RmoAYetFNJ5ozQBAGqVGNVxTgfegCzvPqKYWPeo8+9ITQA8tzSbqjJozQB\/\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FP99KTZ29\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FP99KTZ29-28e23a4cd2",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570734980.010800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice! That's looking great Tony, it reads really well and the informations nice and direct, I'd consider changing the order of the experience to most recent first, just so that it's the first thing read, but otherwise really nice, H&amp;I is a nice touch and shows your personality well",
+        "ts": "1570747183.011100",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/780084388819_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!! Pulling all the work i can find!!",
+        "ts": "1570747219.011200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/793422045031_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Found animations, some basic nuke stuff, my  game etc",
+        "ts": "1570747257.011300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/791101516820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Since it’s a technical role I don’t know what exactly to put, i will make a generalist showreel for now just to apply for this job and then will improve it and make a better one",
+        "ts": "1570747303.011400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/785133524177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FP9H1SUS1",
+                "created": 1570747916,
+                "timestamp": 1570747916,
+                "name": "File from iOS.MOV",
+                "title": "File from iOS",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 17782436,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP9H1SUS1\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP9H1SUS1\/download\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FP9H1SUS1\/file_from_ios.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FP9H1SUS1-e19a7015df",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570747917.011500"
+    }
+]

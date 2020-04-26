@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy, \nI didn't see this until now but I will take all the feedback you and Jasmine gave into consideration when editing the rest of my portfolio. Thanks for showing my work to her :grinning: \n\nApolgies about the fact I don't have many new things I'm comfortable with showing you right now since everything is a work in progress at this stage. \nWhen there's enough new content, I'll be sure to send it over though. \n\nI hope your weekend is going well",
+        "ts": "1574511746.000600",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-23\/833891166802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually regarding what she said about page 9, the universities that I'm applying to said that they want to see any sketchbook work relating to the project(s) displayed. \n\nSince those pages were from my personal notebook, do you think it would be better to do a neater redraw of the content displayed there and replace it entirely, or include both the neater one and the  original pages together\n\nI'm aware that it is up to me in the end, but regardless of that, I still want to hear your opinion on this matter",
+        "ts": "1574512169.000700",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-23\/846676557552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

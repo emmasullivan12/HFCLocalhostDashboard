@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi James, Thanks a lot for this feedback! some really useful points i will add to my shots\/reel. I'll keep you updated on the progress.",
+        "ts": "1583177454.001700",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977505651028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you that’s so cool. \nHow did you decide you wanted to do psychology as a degree. Was it a subject you always enjoyed or were always good at?? ",
+        "ts": "1509225228.000004",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-28\/263593632740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is being able to write reports and essays a skill that still comes in handy with your job?? ",
+        "ts": "1509225260.000022",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-28\/263024085217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also Helen, did you do any sort of work experience during your school years?? ",
+        "ts": "1509225369.000024",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-28\/263680382069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

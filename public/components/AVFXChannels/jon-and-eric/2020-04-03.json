@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eric, \n\nIt’s really great to see you transition into visual effects work, that’s difficult to do, and your reel demonstrates a good understanding of the fundamentals of visual effects!\n\nI’m very sorry to hear how the Coronavirus has affected your work. Things have become difficult for everyone in the visual effects industry, and I hope that you’re staying healthy and safe.\n\nI find it interesting that you focus on developing your 3D modeling and texturing skills! It’s great to have an understanding of the 3D side of the pipeline as a compositor.\n\nYou’ve been staying busy, and it’s great to see how hungry you are to find your place in visual effects. That’s very important.\n\nWhat do you think your goals are for this mentorship? How have you been staying busy during this crisis to help develop your reel further?",
+        "ts": "1585931684.003900",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046573588374_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, \nI subscribe to pluralsight to do some nuke turorials. I keep in touch with my ex supervisor at Mels he takes news from me to see how it goes. \n\nI was doing Maya training since 2003 compositing is newer. \n\nSo about mentorship I wish you can guide me true a good path for vfx compositing. I'm really new to it. As I said, I'm ready to learn from you.\n\nFor my reel, the big question I have is what kind of works on shots could really improve it?\n\nSorry about my average english, I'm more french\n...",
+        "ts": "1585932200.004000",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046178986965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

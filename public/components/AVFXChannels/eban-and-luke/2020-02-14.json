@@ -1,0 +1,60 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I went ahead and watched that video you sent last night. Fascinating stuff, especially how the different elevations in the riverbed, had a leading cause in the hydraulic jump. Also sorry that I don't have an update yet, I'm still trying to adjust the velocities, forces, and sourcing to stop the stairs from overflowing. I realized that I had inadvertently turned on, stick on collision, which was causing a large portion of the problem. I'm planning on having this fixed soon.",
+        "ts": "1581705269.012100",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/955482803046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. Let me know if you have any questions.",
+        "ts": "1581711472.012200",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/943314527105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTNUWV0N6",
+                "created": 1581730251,
+                "timestamp": 1581730251,
+                "name": "W20_V721_VuilliomenetL_floodedStairs.v0056.hiplc",
+                "title": "W20 V721 VuilliomenetL floodedStairs.v0056",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3505381,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTNUWV0N6\/w20_v721_vuilliomenetl_floodedstairs.v0056.hiplc?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTNUWV0N6\/download\/w20_v721_vuilliomenetl_floodedstairs.v0056.hiplc?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTNUWV0N6\/w20_v721_vuilliomenetl_floodedstairs.v0056.hiplc",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTNUWV0N6-80a091577d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581730251.012300"
+    }
+]

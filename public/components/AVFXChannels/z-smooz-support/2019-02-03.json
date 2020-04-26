@@ -1,0 +1,23 @@
+[
+    {
+        "client_msg_id": "2b939fdb-d5ff-48a3-9863-96239bec233b",
+        "type": "message",
+        "text": "Awesome! :ok_hand:\n\nThanks for the speedy turn around too",
+        "user": "U4VR52RQE",
+        "ts": "1549198113.017900",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

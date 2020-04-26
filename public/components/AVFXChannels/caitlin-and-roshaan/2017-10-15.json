@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "8-9 would be fine for me ",
+        "ts": "1508077597.000052",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256477025347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have already done the quiz and looked at that website .. It is somewhat useful but I wanted to know which jobs (in field of biology) are satisfactory and\/or highly paid? ",
+        "ts": "1508077670.000028",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/257437810870_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

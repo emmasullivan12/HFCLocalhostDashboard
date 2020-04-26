@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is indeed! It's looking sooo gorgeous, it's a really fun show to work on because all of the sets are supposed to look minature. So my department is fairly unique in the sense that we work on lots of different things and projects. A lot of the time we're working on defining the look and feel of a character or environment. It's quite a lot of testing out different techniques to find out what works during pre-production (mostly through working on shaders, textures and lighting) :smile:",
+        "ts": "1574676128.006300",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850009110790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that sounds so cool! We’ve been doing look dev today on a little R2D2 and I’ve really been enjoying it!",
+        "ts": "1574701810.006400",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850625609302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

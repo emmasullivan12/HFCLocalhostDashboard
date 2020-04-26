@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Josh, that's awesome! I've had a quick look at the animatic and it already looks bonkers cool! I'll try and write up some feedback later. :smile:",
+        "ts": "1580840502.000900",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/938668095574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

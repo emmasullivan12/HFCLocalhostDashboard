@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Smarth\n\nMy only side hustle type thing would be writing which I do semi professionally. I do not have any propery investments.",
+        "ts": "1585901840.002600",
+        "username": "peter rogers (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1049210102512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi peter\nWhat do you write about??\nWhich books did you publish??\nWhy did you start writing??\nHow did you publish your book??\nCan you tell me more about you experience writing your first books??how did you get from notes to a physical book??\nHow do you get paid from books?\nSorry for these long questions but i am really excited:grin:\nThanks \nSmarth",
+        "ts": "1585974155.002700",
+        "username": "Smarth Barjinder (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1045090873799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

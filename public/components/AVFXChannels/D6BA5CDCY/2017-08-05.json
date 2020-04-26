@@ -1,0 +1,10 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dear user, your trial period is now over. The shared channels you may have created will be deactivated, until you subscribe to the service from <https:\/\/www.smooz.io|your dashboard>.",
+        "ts": "1501984460.256849",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    }
+]

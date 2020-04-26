@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, \n\nYes, I am working with bow tommorow! \n\nI have a Friday off, and I would be available pretty much anytime. \n\nOr any other day after 6.30 :panda_face:\n\n",
+        "ts": "1547489564.004300",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-14\/523527766277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

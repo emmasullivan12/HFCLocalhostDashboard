@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm heading to a Game Meetup next week, is their anything in particular you think I should ask?",
+        "ts": "1538818569.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-06\/449933330144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

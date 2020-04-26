@@ -1,0 +1,156 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi I've updated it slightly i will send the new version over now :)",
+        "ts": "1581928819.002100",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/957108582727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi dont worry I've just seen your notes, thanks so much for your help, it still needs so much work haha.",
+        "ts": "1581930514.002200",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/945150929601_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no worries :slightly_smiling_face: hopefully they are helpful! I will try to help you with your showreel",
+        "ts": "1581930547.002300",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/957145225159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "bare in mind that the internship application is usually open for a month so you have until mid april probably",
+        "ts": "1581930563.002400",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/942495140786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha thanks so much, I know but still won't stop me panicking haha",
+        "ts": "1581930953.002500",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/955291843216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your advice is really helpful, sorry the blocking is bad, I didn't have any reference so was trying to figure it out by eye",
+        "ts": "1581931006.002600",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/957502497878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its very hard doing stuff without reference, but its also very good practice :slightly_smiling_face: I used to not be able to do it at all in uni, but at blue zoo we dont have time to film reference and we just get used to knowing what to do XD",
+        "ts": "1581935482.002700",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/957602573526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it comes with practice",
+        "ts": "1581935493.002800",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/957255736103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm definitely getting better at it, it's just figuring out the timing which I find annoying",
+        "ts": "1581937355.002900",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/957646930118_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "a good tip for timing is to come up with a rhythm for your shot",
+        "ts": "1581943803.003000",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/955565803584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "usually when you have lipsync there is already a rhythm in there",
+        "ts": "1581943820.003100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/945435241009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but you can me sounds to figure out the length of each movmement,  and then animate to that sound",
+        "ts": "1581943842.003200",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/955566594432_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you wanna make sure that there is a dynamic rhythm so some bits are fast and some bits are slow, its breaks the shot up and makes it not feel too samey",
+        "ts": "1581943971.003300",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/944100951315_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay thanks, I will try and implement that on the next animation I do :)",
+        "ts": "1581945113.003400",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/955139487188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

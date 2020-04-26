@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris! Sorry it’s been a hectic few days! I’m doing good thank you! How are you? Is it ok if a bit later I send through a couple of points that I’m just kinda looking for a bit of advice on? Maybe a few Nuke and vfx logistic questions thrown in there? \n\nIt would be awesome to get an insight from yourself :)\n\nThanks 🥳",
+        "ts": "1564738303.002000",
+        "username": "Tori Aspinall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/716056324743_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tori.\n\nTell me about it! It's that time of year when productions finish filming and jobs start coming from all directions! Other than that I am very well thank you, Friday after all!\n\n...and go ahead. Thats what I am here for! :slightly_smiling_face:",
+        "ts": "1564741624.002100",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/702840962770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

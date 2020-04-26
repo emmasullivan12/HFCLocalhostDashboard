@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.classcentral.com\/report\/new-courses-october-2018\/?fbclid=IwAR0qQI16kn1aHfW3cY-8D296nXAOIBAq0c5qhZeoxnMkvbmuFFo4kkmRh6Y> this got sent around between the mentors, some really interesting courses on there, I'm not 100% sure how free they are but definitely worth looking in to!",
+        "ts": "1585314311.000500",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1031116536336_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Class Central's MOOCReport",
+                "title": "190 universities just launched 600 free online courses. Here's the full list. — Class Central",
+                "title_link": "https:\/\/www.classcentral.com\/report\/new-courses-october-2018\/?fbclid=IwAR0qQI16kn1aHfW3cY-8D296nXAOIBAq0c5qhZeoxnMkvbmuFFo4kkmRh6Y",
+                "text": "Since the end of 2011 over 800 universities have created around 10,000 MOOCs. In the past four months alone, 190 universities have announced 600 such free online courses.",
+                "fallback": "Class Central's MOOCReport: 190 universities just launched 600 free online courses. Here's the full list. — Class Central",
+                "image_url": "https:\/\/www.classcentral.com\/report\/wp-content\/uploads\/2019\/04\/banner-social-tracker-new-courses.png",
+                "image_width": 500,
+                "image_height": 250,
+                "ts": 1539102204,
+                "from_url": "https:\/\/www.classcentral.com\/report\/new-courses-october-2018\/?fbclid=IwAR0qQI16kn1aHfW3cY-8D296nXAOIBAq0c5qhZeoxnMkvbmuFFo4kkmRh6Y",
+                "image_bytes": 40717,
+                "service_icon": "https:\/\/www.classcentral.com\/report\/wp-content\/themes\/blue-steel-v2\/dist\/images\/favicon_02cb421c.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.classcentral.com\/report\/new-courses-october-2018\/?fbclid=IwAR0qQI16kn1aHfW3cY-8D296nXAOIBAq0c5qhZeoxnMkvbmuFFo4kkmRh6Y"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585314312.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Will definitely have a look! ",
+        "ts": "1585318960.000700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1030859144740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

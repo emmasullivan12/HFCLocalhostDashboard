@@ -1,0 +1,44 @@
+[
+    {
+        "client_msg_id": "eac7eb83-4238-483e-b91a-ca64c1a36296",
+        "type": "message",
+        "text": "Hey @Simon &amp; team,\n\nYou can check out the landing page here &gt;&gt; <https:\/\/initiatives.prospela.com\/>\nwe're just tidying up the cross-browser\/mobile testing and other last-mile tweaks, but in the meantime  (NOTE: it's probably best to view in chrome for now and the URL will change before launch so I'll keep you posted on that):\n\n\n\nWould love to hear thoughts \/ initial reactions \/ comments...is there anything else you'd like to see that isn't currently on there?",
+        "user": "U4V22C6A1",
+        "ts": "1564530642.000600",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "b5a93eec-0ca7-4b14-bf4d-e238ed920613",
+        "type": "message",
+        "text": "Hey @Simon &amp; team,\n\nYou can check out the landing page here &gt;&gt; <https:\/\/initiatives.prospela.com\/>\n\nNOTE: We're just tidying up the cross-browser\/mobile testing and other last-mile tweaks, so in the meantime *it's probably best to view in chrome for now*. Also the URL will change before launch so I'll keep you posted on that\n\nWould love to hear thoughts \/ initial reactions \/ comments!...is there anything else you'd like to see that isn't currently on there?",
+        "user": "U4V22C6A1",
+        "ts": "1564530692.001300",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

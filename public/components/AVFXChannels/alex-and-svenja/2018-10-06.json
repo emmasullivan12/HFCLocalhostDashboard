@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning Mentor,\n\nI've had some experience in the basics of coding in HTML and Visual <http:\/\/Basics.net|Basics.net>, however weren't as much in detail and have recently started Python.\n\nAs of now I don't have a concrete job in my mind but I'm greatly interested in science and technology where I have a greater support leaning towards the medical aspect, however despite that I do want to know more about the careers and pathways in computing and technology.",
+        "ts": "1538816465.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-06\/452026194470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

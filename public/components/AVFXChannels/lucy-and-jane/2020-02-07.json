@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jane. It’s no trouble at all. I’m here to help. Sometimes it’s the small questions that are the most important. Glad you got your applications off. :crossed_fingers: \nWhen should you hear? \nGood luck with your exams. \nIt can be a stressful time. just remember you can only do your best :slightly_smiling_face:\nI’m here if you ever want a chat. I’m not too busy for you. ",
+        "ts": "1581087345.001500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/941977595840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

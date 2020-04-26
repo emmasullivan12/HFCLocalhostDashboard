@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OOooo exciting! How did you get on with the nuke license?",
+        "ts": "1579513867.001500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/913426855781_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've not actually had the chance to download it yet, I've been busy getting written references sorted as I need to supply 2 to the interview. Once I've got 2 referees confirmed and sorted I'll get onto downloading it then!",
+        "ts": "1579532516.001600",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/903610277825_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will have a look at the youtube channel you linked later today at some point",
+        "ts": "1579532545.001700",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/915665690567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

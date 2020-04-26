@@ -1,0 +1,143 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586508262.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586508263.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e9031e6caa4850004ae2833|this link> with other teams to invite them in it_",
+        "ts": "1586508263.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586508842.000700",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586508843.000900",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1586508949.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-26\" to \"anthony-isabella\"",
+        "old_name": "z-shared-26",
+        "name": "anthony-isabella"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1586508961.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1586508965.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jbs has joined the channel_",
+        "ts": "1586509232.001300",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1056074952629_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@isabellaippolito8 has joined the channel_",
+        "ts": "1586509247.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1052502403574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Isabella, please meet Anthony your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1586509267.001500",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1063765973025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1586509276.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1061555996324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1586509283.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054336875123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there :slightly_smiling_face:\nI've no clue what they told you about me so I'm gonna introduce myself, sorry if you already know part of this.\nMy name is Anthony Arnoux, I graduated from the French school Supinfocom in 2008 and moved to London right after where I've been (mostly) living and working since then.\nI started as a freelancer in the commercial industry, initially as a generalist with a focus on lighting and rendering and ended up doing mostly lighting\/rendering for close to 6 years.\nI then looked for new challenges and ended up picking up Houdini which naturally lead me to the FX world, I never looked back since.\nFor the past 5 or 6 years I've been working in the movie industry with the last 3 as a Senior FX\/TD at ILM London. I'm now at Framestore London, in the IA branch (formerly named Commercials). My initial plan was to switch back to the movies branch in June\/July but with this pandemic that I'm sure you've heard of, schedules are slightly affected and the position I was eyeballing will probably not be available anymore. We'll see.\nI have a showreel if you're curious, happy to share if you want to see it.\nI'm working remotely for the past 3 weeks and try to always keep an eye on slack\/emails and all, feel free to reach anytime you need or want.\n\nThat's for me, if you have any question, please shout :slightly_smiling_face:",
+        "ts": "1586516089.001800",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1053598980818_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ho also, full disclosure: first time mentoring for me! though I've worked with numerous juniors through my career, that's what led me to sign up for this mentoring program.",
+        "ts": "1586517173.001900",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054521527283_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

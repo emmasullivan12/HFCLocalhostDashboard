@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "good good",
+        "ts": "1552559104.012900",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576981074165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "we work closely with Dupe VFX based in London",
+        "ts": "1552559120.013000",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576981348789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They are quite quiet right now. I'll give you a shout if that changes",
+        "ts": "1552559180.013100",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576647515330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the mean time though, you might as well pass on your CV",
+        "ts": "1552559206.013200",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576647915298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

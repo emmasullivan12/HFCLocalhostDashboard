@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Christian, did you hear back on any of your applications?",
+        "ts": "1563348424.000100",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/690635533057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Addison, yes unfortunately I didn't get into most of the internships I applied to. There's one last one still open for Cinecite that I should hear back from till this Friday the latest.",
+        "ts": "1563402733.000200",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/700149939958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's everything going at work, stressful summer so far?",
+        "ts": "1563402761.000300",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/691662140401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

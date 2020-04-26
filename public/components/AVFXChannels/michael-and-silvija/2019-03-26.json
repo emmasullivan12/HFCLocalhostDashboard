@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija! I’m good! How are you! :) Saturday would probably work for me, if that’s alright with you! Looking forward to catching up :octopus:",
+        "ts": "1553622193.002200",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589758543415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Perfect! Looking forward as well! :dog:",
+        "ts": "1553628714.002300",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589194935429_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you ever had to do any work experience as part of your school curriculum?",
+        "ts": "1509473319.000208",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/264850175538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

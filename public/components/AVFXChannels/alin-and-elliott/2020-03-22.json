@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey sorry I didn't get any notification of your message! Damn that's really cool, I imagine it was quite intense working on a redesign. I suppose you just make sure to respect whoever did the original? yeah i'm definitely trying to make the most of the free time but the virus has really put a spanner in the works for my university. I'm in my third year at hertfordshire as creature modeller.",
+        "ts": "1584897142.002300",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1019472269143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I spoke to someone else from MPC who said that it's usually a separate artist who works on the blend shapes. have you dabbled in them at all?",
+        "ts": "1584897186.002400",
+        "username": "Elliott Holland-Crouch (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017722108165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

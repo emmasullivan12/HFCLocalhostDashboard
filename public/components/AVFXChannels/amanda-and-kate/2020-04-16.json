@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Amanda! Thank you for taking your time and writing such a nice and informative message. I always appreciate the chance talking to you regardles the response time.\n\nI ended up having only 1 interview with Framestore. It went really well. I felt we were on the same page with the Production Manager but also I felt not so much attention from the him at the same time. I had questions mainly about my background and about my people skills. Taking into account my Event-manager, Tour-guide and HR experiemces I think I made a good impression.   And once the recruiter told me that the recruitment is on hold and they conduct interviews just to keep the database fresh and updated, only then I understood why the manager didn’t really took it seriously (if I can say so). It was really nice and productive chat but without any clear result. I plan to contact the recruiter again just to get an update on what’s going on. And Reel FX canceled our interview the evening before. I was really surprised as I haven’t had a chance even to present myslef and they already told me that they found a better candidate. I talked to the local Producer and she told me that sometimes companies do that. They schedule interviews already having a chosen candidate. In this way they follow the policy. Maybe that’s not the case. But I like to tell myself “what should happen - will happen”. I stay positive and keep working on be the better version of myself after the lockdown.\n\nI met via my network a Coordinator who can refer me to  MPC. I’ve already applied with them but will try to go throught the reference. Also another specialist from my network offered to improve the Shotgun skills together. So I plan to have a very productive next week.",
+        "ts": "1587067933.000500",
+        "username": "Kate (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1080579457265_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for your insights! I didn’t know about those websites and will have a look.\n\nI followed up with DNEG and discovered that they don’t hire talents without any local or big studios experience which is my case.\n\nOh nice, you will be back to work from studio so soon. That sounds great and challenging at the same time. I wish you a smooth work and productive crew and artists these days.\n\nStay safe and take care! :grinning:",
+        "ts": "1587068816.000600",
+        "username": "Kate (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1066607089077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

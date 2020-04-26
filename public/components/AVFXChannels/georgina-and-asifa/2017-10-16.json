@@ -1,0 +1,156 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy Monday Asifa! Hope you had a pleasant weekend. What an interesting story as to how you came across Radiography. It certainly is an interesting subject and a very practical one at that. ",
+        "ts": "1508153089.000099",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257711621558_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To me, studying radiography at university does sound very vocational I.e. if you study it, it is the kind of subject that leads to a career in what you studied. Do you have a big passion for it and can you imagine yourself becoming a radiographer I a hospital etc? It certainly is a great career but you would need to be very sure that it is what you want to do. ",
+        "ts": "1508153156.000256",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256826975106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I love that you are creative! What are your creative outlets? Art, music, writing etc?",
+        "ts": "1508153188.000149",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256751685027_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Georgina :grin: How are you doing?",
+        "ts": "1508173994.000808",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257924035206_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to study radiography but not sure if I am going to end up with it as a career.",
+        "ts": "1508174132.000519",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256523030209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "After uni, I am thinking to work in a hospital as a radiographer. ''maybe''",
+        "ts": "1508174246.000313",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257926601878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I love art and to be specific I am passionate about interior designing.\nBesides studying radiography I want to continue with art. I know that's not possible!",
+        "ts": "1508174336.000678",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256525041249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":thinking_face: I don't know where I am going to end up",
+        "ts": "1508174868.000160",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257101820676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is so so hard to know what you want to do! At your age I had NO clue. ",
+        "ts": "1508175419.000680",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256536398433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you tell me what you mean by not being able to continue doing art if you study radiography? ",
+        "ts": "1508175460.000191",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256403173312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sometimes i feel like radiography is not the correct choice for me.",
+        "ts": "1508181660.000279",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257257662293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am creative and want to do art in future as well.",
+        "ts": "1508181800.000176",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256602127905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You said at my age you had no clue. So how did you come up with your decision for music..",
+        "ts": "1508181936.000380",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257174549892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":grinning: I am so scared I don't know what I really want to study.",
+        "ts": "1508182024.000240",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256470418272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

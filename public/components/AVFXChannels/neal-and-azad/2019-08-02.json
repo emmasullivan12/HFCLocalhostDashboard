@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Azad, You may already know this, but Milk are currently looking for runners if you're still looking for work?",
+        "ts": "1564760462.000100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/714122192996_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ohhh well to update you, I applied and got interviewed by lidar lounge, hopefully I start a trial run in mid late August hopefully leading to a contract, but I really appreciate the heads up! If anything I need more being a helpless artist that I am :rolling_on_the_floor_laughing: I have been checking around but I didn't know about milk so gonna apply anyway now",
+        "ts": "1564760878.000200",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/714617667909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

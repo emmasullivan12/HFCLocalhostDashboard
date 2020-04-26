@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "well in these holidays i got a ton of homework and i am completing them also the advise that you gave me, has given me a clearer path to my goal thanks a lot",
+        "ts": "1508749740.000469",
+        "username": "aferna-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-23\/260204326643_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Very happy to hear I helped :sunglasses: \n\nIn terms of your next steps, what do yu have planned? Are you going to be looking for work experience and doing a CV\/personal statement etc? I'm happy to help and take a look at your drafts for you now? \n\nDo you also have an idea of what skills you need to be building to be attractive for a PhD and employers in computer science? I can help you figure this out too if you are unsure. One of the big regrets  we hear from a lot of our mentors and professionals whatever career they go into, is that they focused solely on their grades and didn't start developing attractive \/ useful skills whilst they were at school. ",
+        "ts": "1508774626.000462",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-23\/260436540819_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

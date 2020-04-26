@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Hi, <@U5JN4HP1S|growbot>. Your Team Owner, <@U4V22C6A1|emma-prospela>, enabled Compliance Exports for your Slack team. This allows Team Owners to export communication history, including the content of private group and direct messages, subject to your team's message retention and deletion policy. \n\nYour Team Owner enabled this feature on June 8, 2017 at 10:00:09 AM PDT. Private messages sent before this time are not included in Compliance Exports. Please read our <https:\/\/slack.zendesk.com\/hc\/articles\/203950296-FAQs-about-Slack-s-policy-update#complianceexport|FAQ> to learn more about this feature.",
+        "user": "USLACKBOT",
+        "ts": "1496941209.429418",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

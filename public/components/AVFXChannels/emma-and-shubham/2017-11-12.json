@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Any idea about what engineering you're interested in yet? What problems in the world do you want to solve?!",
+        "ts": "1510521785.000038",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/271922092406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "BIG question for sunday evening haha",
+        "ts": "1510521793.000065",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/271090890676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

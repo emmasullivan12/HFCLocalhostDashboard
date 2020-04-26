@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! My name is Klaudia, I'm a 3rd year VFX and MG student at University of South Wales and I'm really excited about this program. \nEven tho I should already know what I want to do in the future (or at least in the next few years) I still can't decide if I'd rather stick to motion graphics or if I want to get more into 3D (always loved animation and would love to try it even tho I've done quite a lot of 2D one for my MG projects). Currently I am working on a design competition brief (we can choose briefs online or treat it as an open one) which I really want to do in houdini. \nSorry for taking so much time to start the conversation, been quite busy since Friday because of work and Uni :disappointed_relieved:",
+        "ts": "1542800229.001600",
+        "username": "Klaudia Skalska (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485285403813_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

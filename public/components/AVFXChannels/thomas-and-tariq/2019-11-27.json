@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've singed up for a self employed tax number thing and I'm waiting for a letter for that, hopefully it comes before the end of the month so I can bill them properly.",
+        "ts": "1574859124.007100",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851320324288_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyway ye I'm starting out with a concrete and brick layer, with some bendy rebar. Then wood glass and drywall. Then probably some particles and smoke.",
+        "ts": "1574859219.007200",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853529848758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The rebar is going to be stuck inside the concrete and bricks? and be constrained there?",
+        "ts": "1574925646.007300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/854325220231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

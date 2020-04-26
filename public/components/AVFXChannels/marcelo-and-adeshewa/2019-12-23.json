@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Adeshewa, no worries, mine won't show notifications as well, so I'm late many times!\nHave a merry Christmas and enjoy this new year! Cheers!",
+        "ts": "1577139872.000100",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/886990695366_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

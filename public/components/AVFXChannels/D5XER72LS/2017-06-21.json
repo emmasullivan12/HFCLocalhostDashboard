@@ -1,0 +1,254 @@
+[
+    {
+        "type": "message",
+        "text": "Hello <@U5XFGLR7X>!! Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1498073596.571920",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sonal - here is a profile of your first mentee, Ayah!",
+        "files": [
+            {
+                "id": "F5XES4LEN",
+                "created": 1498073654,
+                "timestamp": 1498073654,
+                "name": "Prospela - Your Mentee Profile - Ayah.pdf",
+                "title": "Prospela - Your Mentee Profile - Ayah.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 200965,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XES4LEN\/prospela_-_your_mentee_profile_-_ayah.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XES4LEN\/download\/prospela_-_your_mentee_profile_-_ayah.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5XES4LEN\/prospela_-_your_mentee_profile_-_ayah.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5XES4LEN-70378359de",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498073655.591387"
+    },
+    {
+        "type": "message",
+        "text": "And here is a profile of your second mentee, Ugbad!",
+        "files": [
+            {
+                "id": "F5XCK8D2P",
+                "created": 1498073671,
+                "timestamp": 1498073671,
+                "name": "Prospela - Your Mentee Profile - Ugbad.pdf",
+                "title": "Prospela - Your Mentee Profile - Ugbad.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 239857,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XCK8D2P\/prospela_-_your_mentee_profile_-_ugbad.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XCK8D2P\/download\/prospela_-_your_mentee_profile_-_ugbad.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5XCK8D2P\/prospela_-_your_mentee_profile_-_ugbad.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5XCK8D2P-8a8d1197ea",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498073672.597104"
+    },
+    {
+        "type": "message",
+        "text": "Unfortunately, neither of them have logged in to the platform as yet so we can't introduce you ... hopefully later tonight or tomorrow (when their teacher can give them a nudge!)",
+        "user": "U4V22C6A1",
+        "ts": "1498073701.606599",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Emma. I'll read these now and wait to meet them :)",
+        "user": "U5XFGLR7X",
+        "ts": "1498073850.656664",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "1df66bfa0e19",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202263735607_1df66bfa0e1959635bd6_72.jpg",
+            "first_name": "Sonal",
+            "real_name": "Sonal Patel",
+            "display_name": "sonal",
+            "team": "T4UUTPV18",
+            "name": "sonal",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Brilliant!",
+        "user": "U4V22C6A1",
+        "ts": "1498073988.703209",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Unfortunately we didn't have a Spanish speaker that came up as a match for you. We did try!",
+        "user": "U4V22C6A1",
+        "ts": "1498074017.712647",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thank you! Their profiles sound like I'll be able to offer a fair bit of advice (hopefully) so that's all I need ",
+        "user": "U5XFGLR7X",
+        "ts": "1498074215.780158",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "1df66bfa0e19",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202263735607_1df66bfa0e1959635bd6_72.jpg",
+            "first_name": "Sonal",
+            "real_name": "Sonal Patel",
+            "display_name": "sonal",
+            "team": "T4UUTPV18",
+            "name": "sonal",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Exactly - they both wanted insights to the teaching arena ... and also both enjoy writing - something you mentioned in your sign up form!",
+        "user": "U4V22C6A1",
+        "ts": "1498074627.920547",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hopefully lots for you to talk about :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1498074636.923695",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Can't wait ",
+        "user": "U5XFGLR7X",
+        "ts": "1498074674.936344",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "1df66bfa0e19",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202263735607_1df66bfa0e1959635bd6_72.jpg",
+            "first_name": "Sonal",
+            "real_name": "Sonal Patel",
+            "display_name": "sonal",
+            "team": "T4UUTPV18",
+            "name": "sonal",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Steven! Lovely to have you back and i hope your first time in America was amazing!! What kind of games do you play\/make? I have released a small game online and do like to go in and out of game design periodically! I would like to work in CG movies ideally but for now anywhere that pays :joy: to be honest i have been  a huge fan of photoshop and after effects but now i have gradually transitioned into nuke which is also something new for me, currently working on a CG shot for one of my submissions and as of yesterday the character designer for another project decided to leave and I as the animator of the group will probably do the characters, rig and animate them... while working 5 days a week :sweat_smile: the main reason i signed up for the mentorship programme is because I believe it will keep me motivated. My worst aspect is finding the motivation , usually i work fairly quick despite not being good at most areas :sweat_smile:i will try and find some of my work before i start work (15:00-22:00)",
+        "ts": "1542723464.001800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/484065806707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/m.youtube.com\/watch?v=fa-RHuflpEI> that’s a character I sculpted for one of my courses(not optimised for any use) and here’s a gameplay of my “game” (more of a warm-up tool) \n<https:\/\/m.youtube.com\/watch?v=NjmboPu2G0Q> ",
+        "ts": "1542725382.001900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/484400200805_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Zbrush 3D sculpt\/Turntable- Napallea-The Hero, The Destroyer",
+                "title_link": "https:\/\/m.youtube.com\/watch?v=fa-RHuflpEI",
+                "author_name": "Anthony Nikolaou",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCRv9M7ns0jG5kH4k1FxsVgA",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/fa-RHuflpEI\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Zbrush 3D sculpt\/Turntable- Napallea-The Hero, The Destroyer",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/fa-RHuflpEI?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/m.youtube.com\/watch?v=fa-RHuflpEI",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/m.youtube.com\/watch?v=fa-RHuflpEI"
+            },
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "New Indie Mini-Game (uDodge:Practice Tool) Released 2018",
+                "title_link": "https:\/\/m.youtube.com\/watch?v=NjmboPu2G0Q",
+                "author_name": "Anthony Nikolaou",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCRv9M7ns0jG5kH4k1FxsVgA",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/NjmboPu2G0Q\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: New Indie Mini-Game (uDodge:Practice Tool) Released 2018",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/NjmboPu2G0Q?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/m.youtube.com\/watch?v=NjmboPu2G0Q",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 2,
+                "original_url": "https:\/\/m.youtube.com\/watch?v=NjmboPu2G0Q"
+            }
+        ]
+    }
+]

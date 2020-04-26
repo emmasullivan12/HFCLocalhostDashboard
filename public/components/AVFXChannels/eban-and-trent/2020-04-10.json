@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its all word of mouth for me. I would be highly suspicious of any companies that say they will help get you jobs.",
+        "ts": "1586541870.003500",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1056704471269_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you're having trouble finding contacts any companies try linked in. Look for people with titles like resource manager. Hold on I'll look up what some of my contacts titles are...",
+        "ts": "1586541949.003600",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1046507167959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Coordinator\/Scheduler,  Head of Recruitment, Crew Manager, Production Coordinator, Production Talent Manager, stuff like that.",
+        "ts": "1586542194.003700",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1075728255024_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "search for people that have titles like that at the places you want to get in at. Its usually ok to cold contact these people introduce yourself and give a link to your reel.",
+        "ts": "1586542251.003800",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1046507936759_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is your internet connection? That is all of a sudden very important for remote work.",
+        "ts": "1586542301.003900",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1052895245574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tony. Thanks :) My new classes started this week so I have 32 new students for 3D and 2D. Busy :smiley:\nI’ll take a look. ",
+        "ts": "1568905516.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-19\/753472007634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh don’t worry! Good luck!",
+        "ts": "1568917903.000200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-19\/755099701107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Rob, Just checking in. Hope you're good and enjoyed the clear sunshine yesterday if you were in London.\nSorry I've been dead quiet - don't mean to waste your time or the mentoring opportunity. Had my art show launch at the weekend so had to do promo stuff in the run up to Friday and make an appearance to invigilate the show. All done now and I'm back on vfx cleanup duty!",
+        "ts": "1583140305.000300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976417709332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jon, I hope the exhibition went well on Friday. Fiday got a bit messy, Bond finished Thursday and we ended up at the pub after lunch Friday and unwinded from the project, it was a fairly tough one lol let me know if you start encountering any problems or have any questions",
+        "ts": "1583147642.000400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977040349152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's insane! Well done! I love the sparkling effect you've got at the start. The slow reveal of it is really lovely. What did you end up using for the colour bursts at the end?",
+        "ts": "1583401069.000500",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/970471434050_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

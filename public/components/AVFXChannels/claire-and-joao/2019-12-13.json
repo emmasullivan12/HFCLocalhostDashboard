@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi again. Sorry, only just saw this. I'm at University, yes. I'm doing a 1 year master's at the University of Kent. I studied Film back in Portugal about 10y ago and I'm now finally going for a career in animation and VFX. When it comes to questions, I'm not quite sure. I worked at the Framestore for a few months last year as an IT Support Runner, and it really made me want career in animation. So I have a bit of an idea of how it works. This year at Uni I'm really trying to get the most out of it and build a showreel. If you think of any advice on what to include and what companies normally like to see in one, I'm really interested.",
+        "ts": "1576252400.000100",
+        "username": "João Pereira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-13\/860050693986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

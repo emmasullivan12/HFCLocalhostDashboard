@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good Micaela! Thanks for your understanding with my super delayed response. Glad to hear you had a nice time in Argentina and felt like you got a break from stress. Good luck with the Goodbye Kansas interview! I met a recruiter from their Sweden location a few years back when I was still at Framestore and attending a recruitment event on their behalf in Sweden. His name is Anders Singstedt, and I think he's still there and is a \"Talent Acquisition Manager\". I don't know if it would help, but let me know if you'd like me to reach out to him on LinkedIn to put a good word in for you?",
+        "ts": "1578649583.000200",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/890837958337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! I think it went well, I am happy with how it was so let’s see, they told me they would get back to me in a week or so. I would be so grateful if you put a good word for me, I don’t know how it works in this industry with that but I think everything is helpful in this cases. Thank you again!:grin:",
+        "ts": "1578664517.000300",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/903536109654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

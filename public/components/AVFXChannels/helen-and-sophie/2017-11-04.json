@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What did you do in college ? Random question",
+        "ts": "1509794879.000006",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-04\/266349688720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

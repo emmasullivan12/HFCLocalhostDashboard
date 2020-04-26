@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, sorry I ghosted you, my phone got destroyed. I got a new one and just forgot to reenstall the app!",
+        "ts": "1550506535.000100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/555427598726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My goals this year is to get a 1st in all my modules (I got all firsts in both my modules last semester and I want to keep it up) ",
+        "ts": "1550506651.000200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/555066050695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm also starting a Freelance Website called 'Crimson Avenue' with 2 other people. A Graphic Designer and a VFX artist. I would be Animation.",
+        "ts": "1550506778.000300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/555431473446_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also created a Vimeo account and a showeeel",
+        "ts": "1550506885.000400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/553429092689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/310451918>",
+        "ts": "1550506904.000500",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/553253675888_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "2019 Showreel",
+                "title_link": "https:\/\/vimeo.com\/310451918",
+                "author_name": "Joshua Boyd",
+                "author_link": "https:\/\/vimeo.com\/user75334539",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/752565826_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: 2019 Showreel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/310451918?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"2019 Showreel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/310451918",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/310451918"
+            }
+        ]
+    }
+]

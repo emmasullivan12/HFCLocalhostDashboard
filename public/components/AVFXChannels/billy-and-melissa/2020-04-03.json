@@ -1,0 +1,159 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Melissa! Nice to meet you, sorry about the late response. Would be great to hear more about yourself and what your hoping to get out of the mentorship! I've been working in the animation industry for 6 years for a bunch of different companies so if you've got any questions or just want to talk through where you want to be heading I'll be here :smile:\n\nHere is all my work type links! linkedin <https:\/\/www.linkedin.com\/in\/billy-mpetha-273a8446\/>\nShowreel <https:\/\/vimeo.com\/373724067>\nWebstie <https:\/\/billympetha.co.uk\/>",
+        "ts": "1585907833.001900",
+        "username": "billympetha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1039483398657_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "BIlly Mpetha Showreel 2020",
+                "title_link": "https:\/\/vimeo.com\/373724067",
+                "author_name": "Billy",
+                "author_link": "https:\/\/vimeo.com\/billympetha",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/831939308_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "'Her Story' A short produced by Out Left Production for RTE - all animation \n\nClips from ROTMNT ©Nickelodeon \n\nROTMNT - Senior rough animator - Animated keys and rough inbetweens. \n\nPersonal work - All animation and clean up\n\nAvailble for work! get in touch at ",
+                "fallback": "Vimeo Video: BIlly Mpetha Showreel 2020",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/373724067?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"BIlly Mpetha Showreel 2020\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/373724067",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/373724067"
+            },
+            {
+                "title": "Billy Mpetha",
+                "title_link": "https:\/\/billympetha.co.uk\/",
+                "text": "I'm Billy Mpetha a Freelance Animator based in Manchester. I provide Animation Services to help bring your idea to life!",
+                "fallback": "Billy Mpetha",
+                "image_url": "https:\/\/pro2-bar-s3-cdn-cf6.myportfolio.com\/d9a8287b-ae8f-44de-878c-bd1847f535ca\/0ec63da4-2fbf-49b0-9fe8-5a50a4c0f7e2_rwc_0x0x849x558x849.jpg?h=d537b44f3fadebd1ef92aaa6db4164d2",
+                "from_url": "https:\/\/billympetha.co.uk\/",
+                "image_width": 380,
+                "image_height": 250,
+                "image_bytes": 43788,
+                "service_icon": "https:\/\/pro2-bar-s3-cdn-cf5.myportfolio.com\/d9a8287b-ae8f-44de-878c-bd1847f535ca\/6959d093-5628-4553-883f-5c342460a6dd_carw_1x1x180.gif?h=0341b6851a70bdb3176693b3686307cb",
+                "service_name": "billympetha.co.uk",
+                "id": 2,
+                "original_url": "https:\/\/billympetha.co.uk\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585907834.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I decided to take up the mentorship because since graduating University, I haven't really had the same guidance I had there from tutors and peers and it has made me stuck on what I need to do to improve my animation and character design. I know the work I did at graduation can be a lot better so I'm essentially using what I graduated with as a base to work and improve on. You can find this work here : <http:\/\/mjstoakes.com|mjstoakes.com>",
+        "ts": "1585919597.002100",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1040125668465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am currently rebooting the projects on my site as well as looking at my showreel and thinking what should be added\/removed. I would appreciate any feedback!",
+        "ts": "1585919653.002200",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1040129638449_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want an idea of projects I have worked on, I have our graduate film, Fox Fires, here ; <https:\/\/www.youtube.com\/watch?v=sN5goxeTfjc>",
+        "ts": "1585919716.002300",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1045717810149_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Fox Fires - Animated Short Film",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=sN5goxeTfjc",
+                "author_name": "Keby",
+                "author_link": "https:\/\/www.youtube.com\/user\/KeilidhBee",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/sN5goxeTfjc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Fox Fires - Animated Short Film",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/sN5goxeTfjc?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=sN5goxeTfjc",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=sN5goxeTfjc"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585919716.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also this freelance piece I did back in December: <https:\/\/www.youtube.com\/watch?v=DNx-Glw6MVw>",
+        "ts": "1585919774.002500",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1040138260849_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "The Beamish Brothers - Nostalgia ✨ 懐かしい  Official Video",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=DNx-Glw6MVw",
+                "author_name": "The Beamish Brothers",
+                "author_link": "https:\/\/www.youtube.com\/user\/TheMrBeamo",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/DNx-Glw6MVw\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: The Beamish Brothers - Nostalgia ✨ 懐かしい  Official Video",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/DNx-Glw6MVw?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=DNx-Glw6MVw",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=DNx-Glw6MVw"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585919774.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just had a look over your reel and the character design and there awesome!\n\nReally great acting and body mechanics in the reel (4 legged animals are crazy hard) do you have a favourite bit of animation on there?\n\nAlso really nice character designs with clear turnarounds and interesting expressions,  Are you shooting for a paticular path in animation like design or 2d animator?\n\nAs for feedback on the reel I think its really strong and shows alot of careful work has gone into it, are there any studios you'd like to work for? that might help direct you on what to focus on.",
+        "ts": "1585938107.002700",
+        "username": "billympetha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1037757645427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

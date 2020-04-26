@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My Exams are finally done.\nIve recieved my results for one of the biology papers - A*\nThe results for English is still pending.\nIll let you know once I recieve them.\n\n",
+        "ts": "1541843071.000200",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/477936904678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would like to know more about the world of finance and what it is like to be working in such a developing industry and what are future prospects like for ACCA accountants?",
+        "ts": "1541843092.000300",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/477936994294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its Okay, Ive been busy myself with all the preparations for my Mock exams.\n",
+        "ts": "1541843572.000400",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/476368126756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

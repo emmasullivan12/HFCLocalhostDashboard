@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's that going? Looking at the timeframe, what's your plan for the next 3 months? If you're not comfortable with c++ yet, do you have an alternative?",
+        "ts": "1544527603.003600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500798876930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have to greatly hope I am ready to begin by late December, which I likely will be thankfully",
+        "ts": "1544555329.000100",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501097336068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man, just double checking that we haven't started working on shots for RAWM yet, I saw the group chat the other day where all messaging and didn't know if I was supposed to be doing anything yet or not",
+        "ts": "1587225049.001100",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1071633200131_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ollie, I think there are things coming but I still don't have anything properly so I haven't started. Need to talk to the prod. No worries I'll et toi know",
+        "ts": "1587225704.001200",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1084056600481_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep it is quite timely for sure. Worth doing though, as ts good to demonstrate an understanding of good topology.",
+        "ts": "1582709387.000500",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/969667292581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

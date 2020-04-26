@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have more to add to that section of the personal statement however it wasnt as hard to write as i expected it to be!:grin: Great to hear, i feel like i should move out and experience new things as it gives you new life skills even though i know i will be overwhelmed and extremly home sick.",
+        "ts": "1539551032.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-14\/457323604774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m excited and nervous at the same time to start uni and the pros and cons you listed helped a lot so thank you so much!:blush:",
+        "ts": "1539551140.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-14\/455344626785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

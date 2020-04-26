@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "HI will honoured to be able sharing some good suggestion to get you more confident moving on with yours projects",
+        "ts": "1565885006.001700",
+        "username": "Federico Stefanini (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727247628308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what are your thought on the lighting route?",
+        "ts": "1565885084.001800",
+        "username": "Federico Stefanini (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729896118806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your current skillset on the cg side?",
+        "ts": "1565885113.001900",
+        "username": "Federico Stefanini (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729576727863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you got a plan for your next step, like a specific school ?",
+        "ts": "1565885146.002000",
+        "username": "Federico Stefanini (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729577614023_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well lighting has always been the part of the cg pipeline i've had the most fun doing, and is the area i'm most passionate about - most of my colleagues at university never appreciated it like i did! And in my opinion, it can make or break an image easily. Because of this, most of my time has been invested in improving my skills towards lighting, so for now I would consider it my strongest skillset too. Also since lighting and shading often go hand-in-hand I've decided to also concentrate a fair amount of focus on improving my look-dev skills as well - a lot of the time I would stick to substance painter to quickly pump out shaders, but I'm taking time to try and learn Arnold's (my preferred renderer) shading system top to bottom. For instance, my current project at the moment is going to be a simple mug of hot chocolate sitting on a wooden surface, but my goal is to make it look as photorealistic as possible; such as using Bifrost for the liquid simulation to take advantage of shading parameters like churn and viscosity.  My plan as of the moment is to simply continue working on my skills through personal projects to construct an industry standard showreel to start sending out to studios, and I consider my current works to not really be good enough (I'd love some feedback on them if you don't mind checking my LinkedIn!)",
+        "ts": "1565894442.002100",
+        "username": "Will Fenner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727451715700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Callum! hope you are well.\n\nhere is some feedback from one of our 3D modellers",
+        "ts": "1569619917.002600",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-27\/776440310736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I added some bony landmark(red) and muscle creases(green) he could work on\n\n\nThere is also a excellent book he could get <https:\/\/www.amazon.com\/Anatomy-Sculptors-Understanding-Human-Figure\/dp\/0990341100\/ref=sr_1_7?keywords=anatomy+for+artists&amp;qid=1568997148&amp;sr=8-7>\n\nGood luck!\n\nFramestore\nCarl Gagnon\nModeller, Montreal\n\nLondon • New York • Los Angeles • Montréal\nT  +1 514 277 0004  ex 40761\n5455 Av. de Gaspé, Suite 900, Montréal QC H2T 3B3",
+        "ts": "1569619999.002700",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-27\/775977179300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FNUD0D140",
+                "created": 1569620063,
+                "timestamp": 1569620063,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 386397,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNUD0D140\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FNUD0D140\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 266,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 354,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 531,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1084,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 708,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FNUD0D140-477ca192ad\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 755,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2129,
+                "original_h": 2886,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FNUD0D140\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FNUD0D140-b5cc55a0b1",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1569620066.002800"
+    }
+]

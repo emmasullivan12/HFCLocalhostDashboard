@@ -1,0 +1,276 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583772707.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583772708.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e667420b912c40004365c82|this link> with other teams to invite them in it_",
+        "ts": "1583772708.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1583774212.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-28\" to \"yinghao-and-maxime\"",
+        "old_name": "z-shared-28",
+        "name": "yinghao-and-maxime"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583774224.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583774224.001000",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1583774360.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1583774368.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@xtrack34 has joined the channel_",
+        "ts": "1583774466.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/976814685458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@yinghaochai has joined the channel_",
+        "ts": "1583774475.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/979515004065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Maxime, please meet Yinghao your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1583774478.001500",
+        "username": "Emma Sullivan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989602406656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1583774481.001600",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/991813314566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1583774485.001700",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989621523525_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey , yinghao , i am maxime  i am super happy to meet you ! so i will introduce myself little bit . Actually i am living in montreal i came here 5 month ago , before i live in the south of the france .\n I start to learn 3D in self taught 5 month ago , so all the day of the week i studied for 7-8 hours per day  , another stuff to tell you my boyfriend work in 3D Industry he do a school in france call ESMA for 5 years and he specialist in FX. He help me a lot with my work .\n At the begening i choice to learn the 3d environement because it s something i really like. my goal is to do a demo real with all skill i need to become 3D environement artist  , actually i work in my second project of my demo real , i will send you all my work . for my demo real i choice to make 3 personnal project ,but  i think i will need to do more depends of my progression .\n  i subscribe to access vfx , for have somebody specialist in 3d environment  for  help me to learn what i need to become artist and to have some rewiew in my work , oh and just for say my english is not the best of the world but i will try my best for speak ,   i will say to you i  am very  thankful for accept to be my mentor it s will help me a lot for the future :wink: .\nNow i will send you all my work first my art station you can see my first project i do , it s take a long time , because i never touch maya, subtance painter etc .. . and i send you a picture of my last project it s not finish yet , i need to do some compositing and Fx",
+        "ts": "1583787831.001800",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/979974457361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "my art station : <https:\/\/www.artstation.com\/artwork\/Qz08y4>",
+        "ts": "1583787873.001900",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990081564037_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Alarm clock , maxime polly",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/Qz08y4",
+                "text": "This is my first CG project. Created in 2 months, a month for modeling and a month for texturing and lookdev. I really enjoyed texturing in particular. It took a while because I was learning everything at the same time, but I'm happy with the result. Big thanks to Valentin who mentored me.",
+                "fallback": "ArtStation: Alarm clock , maxime polly",
+                "image_url": "https:\/\/cdna.artstation.com\/p\/assets\/images\/images\/022\/360\/974\/large\/maxime-polly-radio-reveil-image-1.jpg?1575154041",
+                "image_width": 444,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/Qz08y4",
+                "image_height": 250,
+                "image_bytes": 170772,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-e34cc57bc598044801769135d76d0603.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/Qz08y4"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583787874.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV68487AA",
+                "created": 1583787966,
+                "timestamp": 1583787966,
+                "name": "19.exr",
+                "title": "19",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 32603256,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV68487AA\/19.exr?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV68487AA\/download\/19.exr?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FV68487AA\/19.exr",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FV68487AA-7380583e87",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583787967.002100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this last project is inspired by a artwork i send you the artwork her :wink: ; <https:\/\/www.artstation.com\/artwork\/e3ozb>",
+        "ts": "1583788161.002400",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990090336485_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Cult Temple In Tibet , Jay Wong",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/e3ozb",
+                "text": "Cult was usually performed in Tibetan local dialog, either to bless the dead, celebrate the newborn, curse the devil, pray for the goodwill or for experienced elderly to hold local ceremonies of what Tibetan deeply believes in. I am also an oil painter at <https:\/\/jaywongoilpainting.artstation.com>",
+                "fallback": "ArtStation: Cult Temple In Tibet , Jay Wong",
+                "image_url": "https:\/\/cdna.artstation.com\/p\/assets\/images\/images\/004\/036\/660\/large\/jay-wong-cult-temple-in-tibet.jpg?1479723562",
+                "image_width": 587,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/e3ozb",
+                "image_height": 250,
+                "image_bytes": 312956,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-e34cc57bc598044801769135d76d0603.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/e3ozb"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583788163.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Maxime, thank you for sending me your work, I am happy to help people who are interested in the industry. I will review your work after I back home tonight, talk to you later.",
+        "ts": "1583800003.002600",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990339288592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok no problem see you soon :wink:",
+        "ts": "1583802693.002700",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/992254840631_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Maxime, I am impressed by your first 3d project, I can see you made a big progress in 5 month and how your professional bf help you to be a very efficient learner. I like the glass texture and shading specifically. I could see you could find a junior position in the industry after you got probably other 2 projects to make a demo reel.",
+        "ts": "1583810215.002800",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980428568673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you have any question do not hesitant to ask me, and I really like the concept you choose for your enviroment work, I hope you enjoy it so far.",
+        "ts": "1583811051.002900",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990526800048_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

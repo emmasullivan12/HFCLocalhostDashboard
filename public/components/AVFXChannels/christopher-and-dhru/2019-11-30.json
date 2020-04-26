@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I completely understand so if the geo was all one piece it may cause issues when being blown off. Something i wanted to ask is how it works project wise with different locations for companies. Would framestore montreal be working on the same as framestore london and how it works transfering things? :simple_smile:",
+        "ts": "1575121412.003600",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-30\/854231412372_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

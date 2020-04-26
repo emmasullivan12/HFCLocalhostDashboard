@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. How have you been? \nDid you start school again? \nI start teaching again in a week. \nI saw the Tate Modern Picasso exhibit. Really good! They exhibited a lot more unfamiliar works so it was a fresh look at a specific year in his artistic career. I highly recommend it! I think closes this weekend though. They give student discounts too :wink:\n",
+        "ts": "1536306850.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-07\/431004915634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, here is a video that explains what the Compositing Role is about in vfx in films and broadcast work.",
+        "ts": "1536313047.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-07\/431228030997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will also try to find some on animation, but my speciality is vfx :wink: More videos to follow",
+        "ts": "1536313076.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-07\/432110180407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In VFX there is the animation department too, so it is part of the entire pipelilne of a specific shot in a films\/tv project.",
+        "ts": "1536313240.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-07\/432415079302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Five primary jobs of a VFX artist, and how to get one - Glenn Cambell\n<https:\/\/www.youtube.com\/watch?v=KMYKFgUY_ro>\nThis video might help to explain the main departments.",
+        "ts": "1536313267.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-07\/432112011399_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "The Five primary jobs of a VFX artist, and how to get one - Glenn Cambell",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=KMYKFgUY_ro",
+                "author_name": "University of Advancing Technology (UAT)",
+                "author_link": "https:\/\/www.youtube.com\/user\/UATProductions",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/KMYKFgUY_ro\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: The Five primary jobs of a VFX artist, and how to get one - Glenn Cambell",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/KMYKFgUY_ro?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=KMYKFgUY_ro",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=KMYKFgUY_ro"
+            }
+        ]
+    }
+]

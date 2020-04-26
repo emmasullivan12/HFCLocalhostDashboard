@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries at all! Things are mad atm! Never worry about wasting my time either - that's what I'm here for! Nothing is a waste and any question you think is dumb most definitely isn't and has probably been asked by other people too! ^^",
+        "ts": "1587490154.000400",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1077036718835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually, this weekend I'm going to record a demo of how I animate a character walk cycle for one of my other students, let me know if this is something you'd be interested in too and I'll send it to you too.",
+        "ts": "1587490214.000500",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1062096564487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

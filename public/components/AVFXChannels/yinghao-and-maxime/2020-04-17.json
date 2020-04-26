@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Maxime sorry for late reply\n",
+        "ts": "1587172613.002200",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1094857252240_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did not check Slack those days everyone is work from home now, It a little bit stressful for me since you know every projects has been pushed for declined due to the virus ",
+        "ts": "1587172702.002300",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1064282869798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You should not consider about the time line, do not think you are too slow. Just take the time of your own schedule and make it looks good. \n",
+        "ts": "1587172847.002400",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1056284722567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you are work for a studio, they will not give you a environment to work on from the start to the end, you most likely do it part by part. Let’s say if you work for a film project, they may give you 3 weeks to model the train. ",
+        "ts": "1587172941.002500",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1094860458128_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2 weeks for texture and 2 weeks for lookdev, you will need to show your work in progress in between.",
+        "ts": "1587172981.002600",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1083645081041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

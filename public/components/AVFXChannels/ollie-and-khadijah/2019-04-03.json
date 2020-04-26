@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Khadijah,\n\nThat’s great news about your volunteering in a cancer research charity! Are you still volunteering there? How are you finding it?",
+        "ts": "1554291901.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/589836497729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I tried to open your CV file that you sent, but it doesn’t open properly and comes up as lots of random letters and numbers and symbols unfortunately. ",
+        "ts": "1554291960.000200",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/589837485297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you generally? All going well with your studies? Any exams upcoming? ",
+        "ts": "1554291992.000300",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599631896727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s been a busy year for me. My main work has been in London helping a student one-to-one with SEN with her GCSE studies across all subjects. ",
+        "ts": "1554292069.000400",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599633121431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was also working in South Africa for a while in March helping a 12 year old student with entrance exams into a UK school. He passed! Which is great :) ",
+        "ts": "1554292135.000500",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/596148490560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am also continuing with online University academic support ie helping students with their essays, proofreading etc ",
+        "ts": "1554292176.000600",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/589841027409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Outside of work, I have been learning to snowboard and have been to the Alps four times already! Twice to the Austrian Alps and twice to the French Alps. So much fun learning a new sport and the mountains and sunny weather is beautiful there :) ",
+        "ts": "1554292273.000700",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/600004588566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also went on a surfing trip to Lanzarote in January and a cycling holiday to the Netherlands in February, as well as going on my first Safari (in South Africa) in March :) ",
+        "ts": "1554292349.000800",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/598537412308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Working as a freelance international tutor gives me the freedom, time and flexibility to do all this travel and try new things :) ",
+        "ts": "1554292402.000900",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599638558519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is a massive perk of the job compared to working in an office job or working for a company, in which you are traditionally restricted to just five weeks holiday a year :( ",
+        "ts": "1554292468.001000",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/598539360004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As always, let me know if you have any questions about study, work, volunteering or life! ",
+        "ts": "1554292498.001100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/589846302033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a great day Khadijah! ",
+        "ts": "1554292514.001200",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/600008565846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Stephen, you can always try PA \/ coordinator roles straight away. It is slightly more difficult to land there but if you're patient it might work. There are some companies that gather CV for this among other roles (<http:\/\/www.productionswitchboardmedia.com\/home.asp>)\nOr you can check the APA website (<https:\/\/www.a-p-a.net\/jobs\/>) for ideas of what they're looking for and see if you match the skills.\nRunner is a good entry level job and again, you get to meet everyone in the studio which help building up working relationship. I had a really good experience running at Passion.\nIt's up to you really, both will take you there in the end.",
+        "ts": "1587569448.003100",
+        "username": "Mariano Melman Carrara (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1085409356468_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Production Switchboard Media. Production freelancers for commercials, new media, film and TV drama. Free for production companies and ad agencies, Directors of Photography",
+                "title_link": "http:\/\/www.productionswitchboardmedia.com\/home.asp",
+                "text": "Production Switchboard Media, Production freelancers, new media, film, production companies, ad agencies, freelance directors, Directors of Photography",
+                "fallback": "Production Switchboard Media. Production freelancers for commercials, new media, film and TV drama. Free for production companies and ad agencies, Directors of Photography",
+                "from_url": "http:\/\/www.productionswitchboardmedia.com\/home.asp",
+                "service_name": "productionswitchboardmedia.com",
+                "id": 1,
+                "original_url": "http:\/\/www.productionswitchboardmedia.com\/home.asp"
+            },
+            {
+                "title": "Jobs | Advertising Producers Association",
+                "title_link": "https:\/\/www.a-p-a.net\/jobs\/",
+                "text": "Industry trade body for advertising production, VFX, animation, music, editing &amp; sound design companies",
+                "fallback": "Jobs | Advertising Producers Association",
+                "from_url": "https:\/\/www.a-p-a.net\/jobs\/",
+                "service_icon": "https:\/\/www.a-p-a.net\/apple-touch-icon.png",
+                "service_name": "a-p-a.net",
+                "id": 2,
+                "original_url": "https:\/\/www.a-p-a.net\/jobs\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587569448.000000"
+        }
+    }
+]

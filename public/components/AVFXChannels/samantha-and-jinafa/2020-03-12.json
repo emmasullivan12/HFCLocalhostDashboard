@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A go's first income is about 30k after 6 years, and physiotherapist's is 28k after 3 years",
+        "ts": "1584003386.003000",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995577742821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gp*",
+        "ts": "1584003394.003100",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/984092484771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ooop I just realized I mentioned this earlier haha",
+        "ts": "1584003515.003200",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995581404181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right, I'm not necessarily going for the high wages but I want it to be good enough to live a comfortable life. I feel like I don't always like studying, it's just so long and I would rather do something more practical. I've checked the physio course and a lot of it is practicing the content learned throughout the year and so many placements, looks really exciting!",
+        "ts": "1584003750.003300",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995571335552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I say settling down I mean marriage:joy::joy::joy::joy:",
+        "ts": "1584003796.003400",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/984105438243_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow you travelled quite a lot!",
+        "ts": "1584003970.003500",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/997441427559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you travel during holidays or take time off?",
+        "ts": "1584003991.003600",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995578712736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

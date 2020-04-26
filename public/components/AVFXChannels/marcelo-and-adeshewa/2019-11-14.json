@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Marcelo!\n\nThis has been so enlightening for me! I've always struggled with finding an artstyle, always mimicking other artists in order to get better but then I always end up hating my work. I just wish for my art and animation to not be anime like because I've been told that having an anime artstyle is not good for the western animation industry and will most likely get you not hired :cold_sweat:",
+        "ts": "1573770168.004300",
+        "username": "Adeshewa Kosoko (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/835402552336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,228 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. Well if you want to mention an animation, then it could include animation of a character in an interactive design, motion graphics (graphics design on a website), or an environment that transforms when you play interactively with it.  What might help...what kinds of games or interactive things do you play or use on your phone\/computer or websites?",
+        "ts": "1547980637.002200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/529718371302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You mentioned Dumbs Ways to Die, but it might be better to use something else that has more complex animation. We are looking for something that has animation (of a character, or object)  that prompts the user to do particular interactive tasks: e.g it's animation prompts the use to move a certain direction to navigate around an environment to find clues, and propel a story, or solve something.",
+        "ts": "1547981446.002300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528301980242_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The animation doesn't have to a character. It can be an object, like a lamp turing on in a dark room...to reveal clues, as in an interactive games.",
+        "ts": "1547981534.002400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/529721714246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So first thing to do is see what interactive things you have done already, and if any of them are good qualifiers for this question :slightly_smiling_face:",
+        "ts": "1547981579.002500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528504146805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This could include an interactive game. Here is a site for some other interactive pieces that you could try, and analyse, then explain for this question.",
+        "ts": "1547981648.002600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/529360596567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/webdesignerwall.com\/trends\/30-truly-interactive-websites-built-css-javascript>",
+        "ts": "1547981650.002700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528504375525_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Web Designer Wall - Design Trends and Tutorials",
+                "title": "30 Truly Interactive Websites Built With CSS &amp; JavaScript - Web Designer Wall - Design Trends and Tutorials",
+                "title_link": "http:\/\/webdesignerwall.com\/trends\/30-truly-interactive-websites-built-css-javascript",
+                "text": "Truly interactive websites draw us in through sound and motion, giving us a choice. Here are some of the best interactive websites for your inspiration.",
+                "fallback": "Web Designer Wall - Design Trends and Tutorials: 30 Truly Interactive Websites Built With CSS &amp; JavaScript - Web Designer Wall - Design Trends and Tutorials",
+                "thumb_url": "http:\/\/webdesignerwall.com\/wp-content\/uploads\/2017\/01\/interactive.jpg",
+                "ts": 1483426809,
+                "from_url": "http:\/\/webdesignerwall.com\/trends\/30-truly-interactive-websites-built-css-javascript",
+                "thumb_width": 1600,
+                "thumb_height": 669,
+                "service_icon": "http:\/\/webdesignerwall.com\/favicon.ico",
+                "id": 1,
+                "original_url": "http:\/\/webdesignerwall.com\/trends\/30-truly-interactive-websites-built-css-javascript"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She is your application due? ",
+        "ts": "1548006012.002900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528298948051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It sounds so complicated:sweat_smile: ",
+        "ts": "1548022394.003000",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528465710418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I looked at the at the link and there's a website called inside asia tours",
+        "ts": "1548022435.003100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/527864555921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a section where it says visit Japan",
+        "ts": "1548022483.003200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/529523990071_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This takes you to an animated map of Japan whilst traditional instrumental music is playing\n",
+        "ts": "1548022523.003300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528300839236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you hover over certain parts of the map with your mouse it tells you the name of that area, which has an animation of what it's famous for (e.g.  if you hover over the monkeys Yudanaka pops up)",
+        "ts": "1548022679.003400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/527732584096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Once you click on it, a 360 view photograph of the are is shown and you can move around it and see it from different views",
+        "ts": "1548022760.003500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/527865816513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I will probably talk about this website",
+        "ts": "1548022785.003600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528301865316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you",
+        "ts": "1548022789.003700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528669071893_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi. That sounds cool! I will check it out tomorrow and see if I have any suggestions. \nBasically, you want to analyse how the objects\/characters that are animating 1) engage the user to continue with the story, or help to solve a problem, or keep you exploring.  Or 2) Was it an effective animation? If so, explain why you think it engaged you to keep playing or exploring. Did it have a purpose? Did it succeed? Or was it just decorative\/cute? \nIf it wasn’t effective, you could also explain why you think it didn’t keep you interested. ",
+        "ts": "1548025251.003800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/527742932912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I interpret that  ‘effective’ can also mean engaging. ",
+        "ts": "1548025334.003900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528477633490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So they are asking you to explain how objects or characters or specific animations (anything moving) engage you as a participant to keep you on a specific path... to continue a story, or  solve a challenge. \n\nHope that helps. Feel free to send me what you want to write. Happy to give feedback :blush:",
+        "ts": "1548025508.004000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528680248501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Though, I’m gong to bed now :sleeping: So I will catch up more tomorrow. :blush:\nWhen is the application due? ",
+        "ts": "1548025655.004100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/529536985511_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

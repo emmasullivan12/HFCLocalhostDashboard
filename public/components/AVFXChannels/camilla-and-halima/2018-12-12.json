@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much!",
+        "ts": "1544657064.000100",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503994729542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll have a look at your comments and make changes",
+        "ts": "1544657082.000200",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503994929734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also one of the recurring comments I got from others was that my personal statement wasn't as PERSONAL as it should be. People that assessed it said it didn't tell them much about me etc so I need to try working on that (I might remove that entire paragraph on geography as it's taking up too much word count and I haven't gotten into detail with my volunteering stuff)",
+        "ts": "1544657345.000300",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502596601922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I do send you my redraft, let me know if I have met these points! And whether you learn anything about me as an individual and my desire to do architecture (how relevant the things that I wrote about are to the course I'm applying for)",
+        "ts": "1544657428.000400",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501993965057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And also I really liked your feedback that if something isn't clear to me, it won't be for the reader either",
+        "ts": "1544657475.000500",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502495040643_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you again!",
+        "ts": "1544657484.000600",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501994580625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

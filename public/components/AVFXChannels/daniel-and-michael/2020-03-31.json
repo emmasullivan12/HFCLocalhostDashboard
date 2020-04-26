@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The lockdown sucks all round, the kids are getting grouchy and ever more dependent on ipad and other screens - that aspect was better with reduced hours but obviously not sustainable workwise I guess.\n\nGardening with your mum sounds like a fun thing, any exercise is good - maybe something gamified or even some friendly competition in the household.\n\nIts worth remembering that you don't have to be happy all the time. It's not depression if there's a legitimate reason to be down. Still keeping productive, healthy and not getting caught in mental feedback loops is important. Read any good books lately?",
+        "ts": "1585683431.000900",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039406009957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey @dexter-prospela sorry I didn't see your message. I cannot work on unlimited channels unfortunately, it's too risky... however I'm willing to try to help you because you have a very special project, and also because I think the load (nb of messages in each channel) will be limited. I suggest we try a setup with 75€\/month, for 150 shared channels. That should cover a good chunk of your initial phase, and if things go well for you we can rediscuss",
+        "ts": "1500738982.401507",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-22\/216346171026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what do you think?",
+        "ts": "1500738997.402696",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-07-22\/216404484932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

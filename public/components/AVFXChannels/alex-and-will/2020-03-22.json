@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man I was hoping I could ask some questions about lighting, as we're really struggling lighting our alien character,\nNo matter what we do he just doesn't quight sit in the plate",
+        "ts": "1584886339.003500",
+        "username": "Will Medcalf (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017130235268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, sure, do you have any examples?",
+        "ts": "1584923758.003600",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1006523630931_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

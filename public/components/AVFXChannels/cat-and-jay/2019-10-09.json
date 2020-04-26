@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You start with an idea haha\nAnd work your way from there",
+        "ts": "1570620141.000100",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/777572383155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There’s soooooo many things you can do that it might seem overwhelming \nBut that doesn’t mean you should give up if it’s what you end up doing",
+        "ts": "1570620209.000200",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/790910357111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

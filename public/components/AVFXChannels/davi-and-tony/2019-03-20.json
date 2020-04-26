@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good! \nAre they teaching you nuke in your school? Or are you using online tutorials to learn it? \n\nSo what are you thoughts and goals after graduation? \nAnd is there other advice I can help You with? \n ",
+        "ts": "1553102881.002900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/580675603184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We are doing nuke in class, we have Billie Vine as a visiting lecturer ( she used to work at Escape Studios too)\n\nAfter graduation, I  would ideally like to see whether I can go Korea as a VFX artist or even as a video editor and if not i will look for a job here. I am trying to get some more work completed so I can begin preparing a showreel. I contacted every single company in Korea asking them whether i need to speak Korean or not and nobody got back to me yet, I plan on taking Korean lessons as well after graduating.\nHow should i approach Korean companies and how much work should I have ?",
+        "ts": "1553106187.003000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/583158194066_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

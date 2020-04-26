@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, sorry for the slow reply it has been a busy week. We can definitely do a zoom call. In the AM  I'll send you some times I have available coming up.",
+        "ts": "1587008591.003200",
+        "username": "Anthony Palermo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1059068094758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

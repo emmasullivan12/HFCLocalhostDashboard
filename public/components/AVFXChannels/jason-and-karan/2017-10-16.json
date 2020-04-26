@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1508145623.000018",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1508145818.000035",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-16\" to \"jason-and-karan\"",
+        "old_name": "z-shared-16",
+        "name": "jason-and-karan"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@j_ayton has joined the group_",
+        "ts": "1508145869.000150",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256830027252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@karan4j1 has joined the group_",
+        "ts": "1508145878.000297",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257862211335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "<!channel>, Karan we have matched you with Jason as your E-Mentor. Feel free to introduce yourselves and continue chatting within this channel. Why not send a quick video to say hello! :wave:\n\nI will now be leaving the channel, but please direct message myself or Emma if you have any questions. All the best! :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1508145897.000050",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1508145908.000049",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257862359895_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1508145916.000326",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256700837507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

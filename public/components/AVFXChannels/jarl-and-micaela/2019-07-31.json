@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jarl! Thank you very much for linking me to Jessie.\nI sent her a message yesterday cause I never got to see yours until yesterday. I’m waiting for her reply :) but thank you so much for taking the time.\nI’m starting the course on Houdini today, can’t wait and I hope I manage to learn a lot!\nHow was your holidays?\nBest,",
+        "ts": "1564576265.000200",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-31\/711642091808_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

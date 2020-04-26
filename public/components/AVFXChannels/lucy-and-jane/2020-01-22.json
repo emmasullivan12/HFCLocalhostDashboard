@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s my pleasure.  Good luck!",
+        "ts": "1579695222.000900",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/916918375045_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

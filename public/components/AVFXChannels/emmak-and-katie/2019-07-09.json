@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahhh thats tricky. Take a break. Walk around the block and go again. Usually helps for me! Perfectly things never happen perfectly!",
+        "ts": "1562677767.000600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/677413083986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am working on a Netflix Natural History programme. We are doing lots of clean up on shots. Nothing very exciting but all quite stressful as they are very big on pipeline and perfection!",
+        "ts": "1562677887.000700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/677431407123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A show we finished last December is now on Netflix, it is called The Last Czars - if you are interested. We did the title seq and various VFX shots.",
+        "ts": "1562677920.000800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/690680471383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You are going into your third year right? I was thinking that it would be good to start arming you with tools that will help you as a freelancer... producer stuff that uni never seems to teach anyone.",
+        "ts": "1562678098.000900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/682484953073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that would be helpful to you??",
+        "ts": "1562678107.001000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/688364330516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ill take any help I can get to be more employable, any skill you can teach me would be much appreciated. I’m going into my final yeah and I’m quite open mind about what I wanna do when I leave, I wanna try a bit of everything ",
+        "ts": "1562678340.001100",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/677424649250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its more learning about what you need to do as a freelancer to protect you and your work! How to write a good email to a potential employer - any  CV advice.... all of that boring but essential stuff that I see every day.",
+        "ts": "1562678994.001200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/677438409810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I keep getting emails that people have obviously written to loads of companies but then forgotten to change the company name... I delete them straight away :open_mouth:",
+        "ts": "1562679049.001300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/690704204391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you like me to send you my current cv ? ",
+        "ts": "1562686085.001400",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/690875069527_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

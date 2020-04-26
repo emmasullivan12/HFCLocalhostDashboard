@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok good luck and let me know how it goes :+1:",
+        "ts": "1583408187.000300",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/970628646818_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

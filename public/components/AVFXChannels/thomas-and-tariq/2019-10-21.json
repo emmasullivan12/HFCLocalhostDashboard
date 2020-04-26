@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey mate! How's it going? I haven't been in touch in a while but I've been keeping busy with some projects. I'll send you some clips soon. What are you working on? If you can tell me ha ha",
+        "ts": "1571682821.000100",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/796965810785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

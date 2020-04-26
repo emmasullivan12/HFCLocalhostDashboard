@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've read it and it seems very straight forward. Have you had a chance to look at my work and do you think I have a chance to work in the industry with a little help and guidance ",
+        "ts": "1551101122.001200",
+        "username": "Ibrahim Jama (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-25\/560265408341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ps I hope you had a lovely weekend ",
+        "ts": "1551101154.001300",
+        "username": "Ibrahim Jama (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-25\/561010412135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

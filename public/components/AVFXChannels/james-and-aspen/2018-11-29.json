@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is very interesting",
+        "ts": "1543511191.005300",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/490810540993_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Man I'd love to work at Google deep mind",
+        "ts": "1543511207.005400",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491415246354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is their office right by King’s Cross with the rest of Google?",
+        "ts": "1543518309.005500",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492598649143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think my dream AI job would be Boston Dynamics because their robots look so realistic",
+        "ts": "1543518439.005600",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492601098519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know right, they can jump walk ",
+        "ts": "1543529407.005700",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491129332577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I mean shopia is creapy",
+        "ts": "1543529425.005800",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491933286517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow! I hadn’t heard of Sophia, I see what you mean!",
+        "ts": "1543535633.005900",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491808209122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m flying back to Cambridge tonight for a week of meetings; I have a presentation to give on Wednesday on the future of software optimization at Arm and how we can support our highest performance products. It should be fun!",
+        "ts": "1543535953.006000",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491811322674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

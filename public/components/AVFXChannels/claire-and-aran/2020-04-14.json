@@ -1,0 +1,130 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for getting back to me so fast! - \n\nI’m looking for an apprenticeship in a VFX studio - \nI’m most comfortable in Video editing",
+        "ts": "1586874184.002400",
+        "username": "arandesalle (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1061658308963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s great, where do you need advice? Studios to approach or how to approach eg CV writing and showreel? ",
+        "ts": "1586882754.002500",
+        "username": "Claire Brindley (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047278197655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My main problems is finding good studios to approach!\n\nFor instance the last one I found seemed really good and they worked with amazing clients.\n\nBut they wanted me to produce 30 videos a week,     With little guidance and minimum pay.",
+        "ts": "1586888983.002600",
+        "username": "arandesalle (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047454837431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Where are abouts are you based, as I don’t want to recommend anywhere too far away? ",
+        "ts": "1586893029.002700",
+        "username": "Claire Brindley (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1068520783636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m based in London SE18 (Greenwich)",
+        "ts": "1586893292.002800",
+        "username": "arandesalle (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047629304151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Blue Zoo are looking for interns in numerous roles: Closing date in May!  <https:\/\/www.blue-zoo.co.uk\/blog\/blue-zoo-internships-2020|https:\/\/www.blue-zoo.co.uk\/blog\/blue-zoo-internships-2020> ",
+        "ts": "1586893634.002900",
+        "username": "Claire Brindley (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1086216791312_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Blue Zoo Internships 2020! by Blue Zoo Animation Studio, London UK",
+                "title_link": "https:\/\/www.blue-zoo.co.uk\/blog\/blue-zoo-internships-2020",
+                "text": "As of today, summer internship applications are officially open for 2020!",
+                "fallback": "Blue Zoo Internships 2020! by Blue Zoo Animation Studio, London UK",
+                "thumb_url": "https:\/\/uploads-ssl.webflow.com\/5d2372f5be8827b62aaf3af8\/5e664a00815343788da9787d_interns%20header.jpg",
+                "from_url": "https:\/\/www.blue-zoo.co.uk\/blog\/blue-zoo-internships-2020",
+                "thumb_width": 2814,
+                "thumb_height": 1574,
+                "service_name": "blue-zoo.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.blue-zoo.co.uk\/blog\/blue-zoo-internships-2020"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586893636.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you I’ll have a look :)",
+        "ts": "1586894017.003100",
+        "username": "arandesalle (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1075015090081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will pull a list of other studios together for you too, they may not have active roles but would be worth speculatively approaching! In the interim, checkout ScreenSkills too, they are the industry-led skills body for TV, Film, VFX, animation and games. Their site has great info including apprenticeship schemes: <https:\/\/www.screenskills.com\/education-training\/apprenticeships\/|https:\/\/www.screenskills.com\/education-training\/apprenticeships\/>",
+        "ts": "1586894449.003200",
+        "username": "Claire Brindley (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1055674134486_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ScreenSkills",
+                "title": "Apprenticeships  - ScreenSkills",
+                "title_link": "https:\/\/www.screenskills.com\/education-training\/apprenticeships\/",
+                "text": "ScreenSkills",
+                "fallback": "ScreenSkills: Apprenticeships  - ScreenSkills",
+                "image_url": "https:\/\/www.screenskills.com\/content\/img\/og\/screenskills.png",
+                "from_url": "https:\/\/www.screenskills.com\/education-training\/apprenticeships\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 8040,
+                "service_icon": "https:\/\/www.screenskills.com\/Content\/img\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.screenskills.com\/education-training\/apprenticeships\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586894450.000000"
+        }
+    }
+]

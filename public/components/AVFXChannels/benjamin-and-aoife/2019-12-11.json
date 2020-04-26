@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Benjamin, sorry I’ve been caught up with uni and work ",
+        "ts": "1576085858.002100",
+        "username": "Aoife Hawe (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/858087280611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you do 1 tomorrow? ",
+        "ts": "1576085864.002200",
+        "username": "Aoife Hawe (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/869554719200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

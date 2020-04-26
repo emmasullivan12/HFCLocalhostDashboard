@@ -1,0 +1,144 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam :wave:",
+        "ts": "1553101485.007500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/583024800260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope your day is going well! That's cool about the studios you mentioned, I have friends that work at all of those... they're all drastically different from each other though in terms of team size, project scope and work ethic haha!",
+        "ts": "1553101529.007600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/583390742613_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of anatomy, yes - it's such a huge, endless subject matter it can be a struggle to find the relevant information! I'll list below some resources I have found useful:",
+        "ts": "1553101560.007700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/582945207955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can definitely start with Proko which is a (mostly) free online resource but he runs paid courses too, and Kenhub which is more medical-student focused: <https:\/\/www.proko.com\/>, <https:\/\/www.kenhub.com>",
+        "ts": "1553101594.007800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/584142798951_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Proko",
+                "title_link": "https:\/\/www.proko.com\/",
+                "text": "Drawing and Painting Tutorials",
+                "fallback": "Proko",
+                "thumb_url": "https:\/\/www.proko.com\/wp-content\/uploads\/2012\/09\/Art-Instruction-Videos-How-to-Draw.jpg",
+                "from_url": "https:\/\/www.proko.com\/",
+                "thumb_width": 720,
+                "thumb_height": 720,
+                "service_icon": "https:\/\/www.proko.com\/wp-content\/uploads\/2019\/01\/cropped-Proko-Logo-Favicon-180x180.png",
+                "service_name": "proko.com",
+                "id": 1,
+                "original_url": "https:\/\/www.proko.com\/"
+            },
+            {
+                "service_name": "Kenhub",
+                "title": "| Kenhub",
+                "title_link": "https:\/\/www.kenhub.com\/",
+                "text": "Learn Anatomy Online - Fast, effective and successful for medicine, nursing and physiotherapy students. Try Kenhub now for free!",
+                "fallback": "Kenhub: | Kenhub",
+                "image_url": "https:\/\/www.kenhub.com\/assets\/social\/social_share_facebook_en-2ed09bddc75b5f7b3d53453e1f418b82c8e0575933affe3aac961fe2d1c9b749.png",
+                "from_url": "https:\/\/www.kenhub.com\/",
+                "image_width": 478,
+                "image_height": 250,
+                "image_bytes": 269077,
+                "service_icon": "https:\/\/www.kenhub.com\/assets\/fav-1d4d85ac8e8bd55ad032099c91937275e077e3640b6e76960c1268add6f61d0e.png",
+                "id": 2,
+                "original_url": "https:\/\/www.kenhub.com"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd recommend these books in particular because they are made for artists: 'Figure Drawing for All It's Worth' - Andrew Loomis, 'Vilppu Drawing Manual' - Glenn Vilppu, 'Artistic Anatomy' - Dr. Paul Richer",
+        "ts": "1553101606.008000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/574485733105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's tons of videos on Gnomon Workshop (SAE might have access to this? Otherwise it's subscription based): <https:\/\/www.thegnomonworkshop.com\/tutorials?tags[]=anatomy>",
+        "ts": "1553101618.008100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/574485925601_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "anatomy | The Gnomon Workshop",
+                "title_link": "https:\/\/www.thegnomonworkshop.com\/tutorials?tags[]=anatomy",
+                "text": "The Gnomon Workshop offers the most comprehensive set of Digital Production tutorials anywhere. The broad scope of the tutorials contained in this section range from foundational understanding of the software tools all the way to the professional application of these tools and concepts used by artists working in the film and game industries.",
+                "fallback": "anatomy | The Gnomon Workshop",
+                "from_url": "https:\/\/www.thegnomonworkshop.com\/tutorials?tags[]=anatomy",
+                "service_name": "thegnomonworkshop.com",
+                "id": 1,
+                "original_url": "https:\/\/www.thegnomonworkshop.com\/tutorials?tags[]=anatomy"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For animal\/creature anatomy; Terryl Whitlatch, is a go-to for nice reference. She has books and video tutorials but also some free blog posts on muddy colours that are a good read!: <http:\/\/www.muddycolors.com\/author\/terrylwhitlatch\/>",
+        "ts": "1553101638.008300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/582946930515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Learning about the movement between bones\/muscles\/skin requires a lot of gathering references. We have really nice proprietary tools for helping us figure this all out in 3D at Framestore, but an understanding of where the origin and insertion points of the muscles are, where the fat pads and fascia are, how the bones are joined to eachother etc. are essential to working out what happens when the body moves. (Luckily for me, this is something that the rigging department are the experts in; for my role in CFX I don't need to go so in-depth, most of the time I can just use\/modify the rigs that get sent to us!)",
+        "ts": "1553101723.008400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/580651448672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I guess for my own personal future goals, learning the rigging process for anatomically 'correct' film creatures would help to give me a lot more independence and value to the team, so I'm up for doing some research and self-educating for that! :bear:",
+        "ts": "1553101893.008500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/584149155911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

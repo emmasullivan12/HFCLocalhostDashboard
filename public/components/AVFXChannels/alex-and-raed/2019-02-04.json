@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven't used cocos2d so I have no answer for that unfortunately",
+        "ts": "1549302290.012000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541676443378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

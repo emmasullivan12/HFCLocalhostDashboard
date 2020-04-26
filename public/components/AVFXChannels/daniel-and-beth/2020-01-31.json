@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Beth!\n\nI'm Daniel Seager, I'm a Technical Animator at Dovetail Games where I help to bring to life the various Simulation Games that Dovetail Games specialises in. I've been in the industry about 4 years now, I started off in QA at Ubisoft before I went back to University and built upon my Animation skills so I could re-enter the industry in a more creative capacity. That was about 3 years ago now, yikes how times flies!\n\nAll I'm looking to get out of this mentorship is to be of much help as I possible can to you! Getting into games is quite an intimidating and mysterious thing, so if I can do anything to de-mystify the process and help you feel more sure about what you can do to get started, I'd be very satisfied.\n\nHope that sounds good! :grinning:",
+        "ts": "1580481995.001600",
+        "username": "Daniel Seager (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/931130468069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

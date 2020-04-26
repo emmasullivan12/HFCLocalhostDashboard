@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not a problem, no need for an apology. What business are you starting? Is it a studio or something completely different to what you’re doing now?\nThank you very much. I don’t have a lot of expertise in rendering so I’ll be reliant on the knowledge of Campbell McAllister who’s being brought in by the university to help those working in 3D. I was scheduled to meet him on Friday but he’s snowed in so right now I’d have to say either Eevee or Cycles because I’m doing the work in Blender. The animation shouldn’t take too long as a lot of the shots are ‘nodding donkey’ shots so the main focus will be on the face. \nI have split the film up with 2D clips as well to help minimise my workload as well as add something for the audience. The clips are very basic e.g. the ‘he was swimming the Bristol Channel’ clip will be an Indiana Jones style map with a red line. I’m also considering outsourcing the 2D animating to a student in my class as I very rarely work in 2D. \nThe project has the remainder of the year to be finished so end of August. There’s no contingency edit yet but I will be tackling scenes from each section in turn rather than start to finish so that if I run out of time, I keep the structure that I’ve put in place.\nI haven’t been able to work out an elegant way to get it in the film. I don’t want to have someone explain it at the start because I think it would make people focus on the bookcase or versions of it instead of listening to the characters.\nI want people to look at the characters so I’m working on washing the colour out of the background now, possibly using watercolour to splash some colour in quickly without distracting. An idea for making the background colour fluid was floated around but I hadn’t considered physically shaking the bookcase. I’ll play with the idea and see if it works with any of the characters. The fact that they don’t have dementia themselves may make it unclear but it’s worth a test, thanks Alan.\nI will be making a simple website for the film too with the unused footage on it as well as links to support groups and information on dementia. I could make the bookcase metaphor the first thing you encounter on there before watching the film online?\n",
+        "ts": "1549270399.002700",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/540450389200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Khadijah! ",
+        "ts": "1555763762.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-20\/615891009287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How was your week? ",
+        "ts": "1555763770.000200",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-20\/602590981763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Got any work or academic stuff I can help you with? ",
+        "ts": "1555763789.000300",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-20\/613505936980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

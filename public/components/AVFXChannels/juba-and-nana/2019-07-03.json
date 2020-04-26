@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nana, those look really cool! What are you making them for?\nAlso sorry for the late reply, I still haven't gotten around to doing the draw over, things got incredibly busy over here. I'll do my best to do it next week!",
+        "ts": "1562181057.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-03\/684333283061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The first one is just for pratice, the other is for the game idea I'm working on!",
+        "ts": "1562182402.000200",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-03\/686489312582_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

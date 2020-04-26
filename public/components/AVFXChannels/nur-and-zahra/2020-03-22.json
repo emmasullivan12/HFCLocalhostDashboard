@@ -1,0 +1,153 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh ok! Awesome! Do you do the conepting as well as the modelling?",
+        "ts": "1584893491.008700",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1004876645106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F0104RTD8E6",
+                "created": 1584893567,
+                "timestamp": 1584893567,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 302846,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0104RTD8E6\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0104RTD8E6\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0104RTD8E6-632de879a3\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "thumb_tiny": "AwAbADBYj\/ooqOQgdTT0P+iioJeT9KnqUOiiEpY7sYqU2g\/vn8qjt5EjDBjjOMVP9pjz14+lMCtHCHGTnGaRo1DHCDikldlbarEADt60kgJboOcUATr\/AMe1QM+G4FTr\/wAe9V36t+FLqIUJuI9PrUxiQAEZ9asWIBhfIBqZYYxg7BnFAzJbdtPTcTzT2J34x2FaEqqYmJAyDwaqmhMD\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F0104RTD8E6\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F0104RTD8E6-1f9e643604",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584893571.008800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "heeey coming together! would you like some comments?\n\/ I don't do concepting part. but sometimes there is not enough ref images of the character design, so I may add my insights to the character's design. basicly, it starts with finding to form of the 2d drawing which you need to turn into 3d.",
+        "ts": "1584902157.009100",
+        "username": "Nur Diker Koksal (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1006289585107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love any comments you can offer! I think I've been staring at it for too long so I don't know what looks good and what doesn't",
+        "ts": "1584902196.009200",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1019527710807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh thats so cool :3 I love finding reference pictures and inspiration",
+        "ts": "1584902225.009300",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1007697213361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great, thank you. The details are amazing, your thinking and desire for the project is clearly seen. very admirable! My comments will be in technical side of lighting.\nThe girl being in a shadow at the first picture was a good idea. You can decrease the amount of her light a bit to give a mysterious look(well-maybe not as much as at the first picture).\nAlso the lighting of the interior room looks more real in the first one. In the last version, I feel you put extra strong light in the room. Maybe you can decrease its value to have the feeling that sunshine is coming from outside-not also from inside.\nLast thing to say-I am not sure if you finished the whole texture but- floor+basket+bed would look better if each has complementary or analogous colors; instead of sharing the same beige.\nHere are some links for your color palette to choose from the color wheel when you need a good combination. These links are great for everyone who works with images!\n<https:\/\/colorhunt.co\/>\n<https:\/\/colorsupplyyy.com\/app>",
+        "ts": "1584903209.009400",
+        "username": "Nur Diker Koksal (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017766957136_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Color Hunt - Color Palettes for Designers and Artists",
+                "title_link": "https:\/\/colorhunt.co\/",
+                "text": "Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes",
+                "fallback": "Color Hunt - Color Palettes for Designers and Artists",
+                "image_url": "https:\/\/colorhunt.co\/img\/color-hunt-palettes-og.png",
+                "from_url": "https:\/\/colorhunt.co\/",
+                "image_width": 478,
+                "image_height": 250,
+                "image_bytes": 80007,
+                "service_icon": "https:\/\/colorhunt.co\/img\/favicon.gif",
+                "service_name": "colorhunt.co",
+                "id": 1,
+                "original_url": "https:\/\/colorhunt.co\/"
+            },
+            {
+                "service_name": "Color Supply — A Color Picking Tool",
+                "title": "Color Picker — A handy design tool from Color Supply",
+                "title_link": "https:\/\/colorsupplyyy.com\/app",
+                "text": "Use the color wheel to select a style you like. Then pick a hex code.",
+                "fallback": "Color Supply — A Color Picking Tool: Color Picker — A handy design tool from Color Supply",
+                "image_url": "https:\/\/colorsupplyyy.com\/color-picker-wheel-hex-code.jpg",
+                "from_url": "https:\/\/colorsupplyyy.com\/app",
+                "image_width": 303,
+                "image_height": 250,
+                "image_bytes": 154422,
+                "id": 2,
+                "original_url": "https:\/\/colorsupplyyy.com\/app"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584903211.000000"
+        }
+    }
+]

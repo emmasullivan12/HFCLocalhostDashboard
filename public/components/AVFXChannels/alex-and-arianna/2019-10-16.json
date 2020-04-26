@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey hey,\nno worries, sorry for week of slack tumbleweeds, suddenly got a bit busy and chaotic here, we've been preparing for a shoot. and have a some clients on another project that are err... hard work!\n\nThat's a nice flexible brief, i think i'd definitely be more comfortable making environments. Being a really small studio, we are mostly doing a bit of everything, but just in terms of the jobs we get, it tends to be less character based, bbc bristol is the natural history arm of the bbc, and there's a lot of other natural history production companies here off the back of the beeb, so a big portion of our work is natural history documentaries (lots of earths..!) . most of the assets end up being bought from turbosquid, and then just cleaned up a bit and lookdeved. I think that kind of char\/env division probably happens in studios with 30+ artists, we top out at about 25 at full capacity, and the skeleton is about 10 people. On paper we should be using shotgun studio to manage all the shots, tasks, scheduling and versions, but in reality there's been a period of a few years where tasks are mostly just verbally hashed out, and shotgun has been used more for versioning and feedback from creative heads and clients. It works ok on smaller jobs, but on a job with over 100 shots, it gets a bit tricky...\n\nOn foliage -\nWe've used speedtree a fair amount in the past, its very easy to learn, and is sort of geared towards games, but you can swap out the geo for leaves etc if you wanted to make something interesting and stylised, you can get alembics with winds effects from it too.\n\nOf course you can add me on linkedin! <https:\/\/www.linkedin.com\/in\/alexrumsey\/>\n\nBristol is a brilliant city, very liberal and left leaning, a lot of really cool art scenes (banksy!), and nicely historic too (although not to the extend of oxford!) its big enough to have a lot of stuff going on, but small enough not to feel depersonalised, there's still loads of Independent shops and cafes, and a few well loved local chains - like the boston tea party cafes, which are dotted around and serve ethically sourced\/organic food and drink . Vegan vibes are strong here haha. Well worth visiting and checking out i'd say!",
+        "ts": "1571245104.000300",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/785018020626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

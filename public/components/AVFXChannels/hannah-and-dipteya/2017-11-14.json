@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies for the delay in getting back to you ! I've had my boss leave at work so very busy unfortunately for me.....",
+        "ts": "1510693325.000295",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/271667121616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For your personal statement, I would change  your wording slightly for example...",
+        "ts": "1510693356.000255",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/273200314678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Instead of \"a very hard working individual and dedicated\"..... I would change this to \"I am a dedicated, hard working individual\"",
+        "ts": "1510693436.000323",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/273404274583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have any predicted a level grades ?",
+        "ts": "1510693494.000077",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/271806734737_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding the stock work you did in your experience.... you can change this to \"i was responsible for the stock management of the business\" and describe any problems you faced and how you overcame these e.g raised concerns to management as soon as I knew stock was running low.",
+        "ts": "1510693880.000419",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272470808117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If this is what you mean ?",
+        "ts": "1510693910.000367",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272471073285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

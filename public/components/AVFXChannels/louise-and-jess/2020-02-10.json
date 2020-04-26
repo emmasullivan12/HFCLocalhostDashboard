@@ -1,0 +1,187 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is my 'day in a life summary'....",
+        "ts": "1581345272.004600",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944952177744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "* Booking in 'dailies' sessions (meetings where artists work is reviewed by supervisors) ensuring the room is booked.\n* Creating a playlist of versions to be reviewed in dailies and ensuring editorial department then prepare the versions to be reviewed, usually on a big screen in screening room.\n* Taking notes in review sessions and sending notes out to artists often using software called 'Shotgun'.\n* Doing 'rounds', checking in with artists and ensuring that they are aware of their targets for the day\/ week\/ upcoming client reviews or deliveries as set by the line producer\/ producer.\n* Organising client sends. Creating a playlist of versions to send to the client (usually informed by notes given in dailies) liaising with relevant department to send versions to the client. usually using software like FTP or Aspera.\n* Adding any client notes received following the send into the shot tracking software, again usually shotgun.",
+        "ts": "1581345274.004700",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944497749844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "let me know if you need any of it explained further!",
+        "ts": "1581345289.004800",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/933484762627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is a brief overview of pipeline too!",
+        "ts": "1581346469.004900",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/946853113335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "* Often before a film or TV show has finished filming VFX facilities start working on the 3d assets. Assets can be creatures or vehicles, buildings or props. I can take months to build an asset like a dragon. \n* The asset starts in modelling, and its the equivilent of sculpting from clay in real life but it is done in software. \n* Next it needs to be textured, this process add colour to the asset. \n* Once this is done it is sent to Look Dev, look dev tells the asset what material it is made of, for instance the texture artist may have made the dragon green but look dev will assign a shader that makes it look like a shiny scales or dry skin. \n* The assets also have to go through a phase called rigging, this can happen once the model has been finished and at the same time as texturing. Rigging add joints to a model and tells it how it can move.\n* Shots are 'turned over' to a vfx facility.\n* Shots are then 'brought online' which means they are made available for the artists to begin working with.\n* The first department is usually tracking. Tracking recreate the camera used on set in 3d software.\n* While tracking is in progress paint and roto artists may also start work. Paint often remove things from shots like harnesses is actors have been shot wearing them. Roto cut around things in the plate so that VFX can added behind them. for example if a man is shot standing a field and they need to add a dragon behind him, they would need to roto around the man so that the vfx dragon can sit behind him. If you've ever used photoshop its similar to the layers you have in that.\n* Once tracking is complete animation is the next department.\n* Once the Anim has been approved by the client this is then sent to lighting.\n* Sometimes FX is also needed, FX create things like water, fire, dust, snow and explosions.\n* Lighting take the anim and FX and recreate the lighting as it was onset but in software so that the VFX we are adding looks like it is in the same environment as what was shot. For example if onset everything was lit from the left it would look weird if the VFX added was lit from the right.\n* After Lighting, Compositors or comp take the lighting and the paint and roto and combine it all together. Sometimes they add in extra 2d elements to add to the realism.\n* Sometimes shots also need DMP or digital matte painting and this is a 2d picture that comp then blend into the shot. For example they hay shoot a shot of some fields and in matte painting they add in a mountain range on the horizon. Comp make sure this looks realistic but adding depth of field to it and other elements.",
+        "ts": "1581346470.005000",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/945011256565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "again ask me any questions :slightly_smiling_face:",
+        "ts": "1581346477.005100",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/933523117891_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=gYu4esqvnQ0>",
+        "ts": "1581346508.005200",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/946854473607_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "VFX Games - The Art of Compositing",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=gYu4esqvnQ0",
+                "author_name": "Roy Peker",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCHjdQOEuDRcT-uKj2OKRr0A",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/gYu4esqvnQ0\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: VFX Games - The Art of Compositing",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/gYu4esqvnQ0?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=gYu4esqvnQ0",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=gYu4esqvnQ0"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581346509.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This website has lots of great vfx breakdowns that can show how all the different layers from each department come together to buld a shot",
+        "ts": "1581346598.005400",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/933527191619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.artofvfx.com\/category\/breakdown\/>",
+        "ts": "1581346604.005500",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/934851340529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTV6R9954",
+                "created": 1581347211,
+                "timestamp": 1581347211,
+                "name": "VES.pdf",
+                "title": "VES",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 48220285,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTV6R9954\/ves.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTV6R9954\/download\/ves.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTV6R9954-b43cdb909e\/ves_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 704,
+                "thumb_pdf_h": 917,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTV6R9954\/ves.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTV6R9954-2c27ac58bb",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581347227.005600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Louise, Thank you so much for sending this through. I’ll go through it and let you know if I have any questions. I have sent a speculative CV to Outpost and have applied to Jellyfish and ILM so far. I’ll keep looking for some other opportunities to apply for. If there is any other information or opportunities you think might be good for me, please let me know:smile:",
+        "ts": "1581368716.005900",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/945724488928_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Yea I’ll let you know if I see any other opps and let me know if you get any interviews and we can do a bit of prep for them!",
+        "ts": "1581369313.006000",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/947603417015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

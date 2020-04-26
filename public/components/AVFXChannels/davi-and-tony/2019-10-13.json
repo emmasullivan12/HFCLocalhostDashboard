@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Opps. Really bad typo above by me  lol. Sorry :laughing: \nCool. Can you put it on Vimeo or YouTube with a password so it’s not public? Then I can show my retrospective games colleagues. :blush: ",
+        "ts": "1570979016.001500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/793282016228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have it public on vimeo right now",
+        "ts": "1570979075.001600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/795603466983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/365887632>",
+        "ts": "1570979099.001700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/793282475636_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "VFX\/Animation Showreel by Anthony Nikolaou 2019",
+                "title_link": "https:\/\/vimeo.com\/365887632",
+                "author_name": "Anthony Nikolaou",
+                "author_link": "https:\/\/vimeo.com\/user64984202",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/821756161_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Hello, I am a recent Animation\/VFX  Graduate from the University of Greenwich and here is my graduate showreel. I am currently looking for a job in the VFX, Animation and Games industries as the skills I have accumulated thus far cover a plethora of industry roles.",
+                "fallback": "Vimeo Video: VFX\/Animation Showreel by Anthony Nikolaou 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/365887632?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"VFX\/Animation Showreel by Anthony Nikolaou 2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/365887632",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/365887632"
+            }
+        ]
+    }
+]

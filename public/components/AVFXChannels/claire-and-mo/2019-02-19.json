@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Mo how's it going?\nJust wondering what sort of questions you would like me to ask RE starting your own business and things?\n\nJust letting you know a quick update, since last talking to you I've been on three different projects, as is the way with advertising sometimes, and while primarily an animator, I have also worked as a co-script writer, co-art director, concept artist, storyboard artist and all other sorts of things, as is the nature of smaller businesses sometimes. Do you have any secondary skills you're looking to develop?",
+        "ts": "1550570825.000100",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/553841665648_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

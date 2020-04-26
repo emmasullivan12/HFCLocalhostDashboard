@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries at all just hit me up if you have any questions.",
+        "ts": "1583239644.000500",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/966463868786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One thing I was going to ask do you think it would be useful to schedule a time when we are both available once a week maybe so we can have more of a back and forth chat?",
+        "ts": "1583239725.000600",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/978800092148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

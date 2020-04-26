@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marnie, sorry for the late reply, I was away for family reasons. I was rejected in Framestore as I expected. But I recently got an offer of a concept artist in a nice studio, so hopefully it will work! Thanks again for all your unbelievable help with my application! How are you doing?",
+        "ts": "1561619860.000200",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-27\/680091417094_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

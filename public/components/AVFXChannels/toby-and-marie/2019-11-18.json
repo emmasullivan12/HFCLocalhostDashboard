@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok I’ll try and change it and send it over to you by the end of this week, thank you! :grin:",
+        "ts": "1574072293.006000",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838473357216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha I’ll try and play around with the protecting the burger, that could work quite well",
+        "ts": "1574072327.006100",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838009781844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

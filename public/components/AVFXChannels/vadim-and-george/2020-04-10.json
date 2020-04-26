@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Escape is pretty cool, its really good if you want to study comp\nYou said Union is good for starting artists, how would you recommend approaching the company? Just emailing them or going through a recruiter?\nAlso how did you start your career??",
+        "ts": "1586522083.002300",
+        "username": "George Randall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1052622556678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The best way to approach union is through website, they have a system setup there. You can find it here for your future reference: <https:\/\/unionvfx.com\/careers|https:\/\/unionvfx.com\/careers>. Once you do apply don’t hesitate to drop a message to head of recruitment team on LinkedIn, you will need an up to date LinkedIn profile if you going to do this. At the moment and hopefully for long after the head of ‘unicorn discovery’ is Harriet Edge-Paddington.",
+        "ts": "1586538174.002400",
+        "username": "Vadim (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1062458855780_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Union VFX - Careers",
+                "title_link": "https:\/\/unionvfx.com\/careers",
+                "text": "Union VFX is an independent visual-effects facility founded in 2008 by Adam Gascoyne and Tim Caplan to provide a creative service for feature films &amp; television",
+                "fallback": "Union VFX - Careers",
+                "from_url": "https:\/\/unionvfx.com\/careers",
+                "service_icon": "https:\/\/unionvfx.com\/site\/templates\/images\/favicon.png",
+                "service_name": "unionvfx.com",
+                "id": 1,
+                "original_url": "https:\/\/unionvfx.com\/careers"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586538175.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My start was very different to what you guys have now ( isn’t it always :D). First of all I didn’t have access to such platform where you can ask professionals for advice and LinkedIn was in its early days. I didn’t really know what VFX was, believe it or not. Compositing?! Isn’t it something to do with the music,- people would ask. I was one of those people :rolling_on_the_floor_laughing:.\n\nI went trough a few universities none of them had anything to do with VFX, but on the other hand they had everything to do with it inadvertently. \nFirst was Fine Arts, were I was studying to be a painter :male-artist:, so drawing, colour and composition were my tools of trade. \nThe second one has quite a lengthy name: Film, Radio and Television with Digital Arts and Media. I was studying the form and art of film mainly and digital technology was gradually introduced to us at the end of the course, it was new and no one knew how to use it properly. I thought to be a DOP after graduation, never happened hahaha. \nThen after five years of no clear career path I was choosing between two schools: Animationmentor (for 3D character animator) or Escape. You would think Ive chosen Escape, me being a Compositor and all, but no I went for animationmentor course, so that I can become a full fledged next Pixar guru hahahahaha. Nothing could have been further from the truth...\nLets move on and answer your question on how my career started. \nI saw an ad asking for help with some roto on a film. At the time I thought roto consisted of a person to draw frame by frame over a live footage, good thing I searched online for roto examples and got across a software we all know and love - nuke. I got hooked just like that, something clicked and I didn’t want to look back. Digital tutors was a huge help, to get started.\nSo I’ve applied. It was for an indie film, where for the first half of the year I worked for two days a week for free, just expenses paid. Then the film got some funding and they hired me full time for another 9 or so months. I’ve learned basics of nuke while working on the film as simple as that. Then when the production ran out of funds I was let go, after scavenging around with my CV I got my first proper gig as a roto\/prep artist at MPC working on the Martian, I was over the moon. A first big show with great director and actors it was awesome, from there on I’ve been in quite a few places all of them had their pros and cons. \n\nWell that’s quite a passage for you to read, sorry ... will get some more input a bit later :D.\nAs always if you have any questions, shoot them my way!\n\nWhat guitar do you play? What music?",
+        "ts": "1586540958.002600",
+        "username": "Vadim (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1062549053220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

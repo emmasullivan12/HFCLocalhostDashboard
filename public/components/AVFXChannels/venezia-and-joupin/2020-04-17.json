@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Escape Studios at Pearson College",
+        "ts": "1587132119.003700",
+        "username": "Joupin Ahmed (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1062901653638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios.html>",
+        "ts": "1587132127.003800",
+        "username": "Joupin Ahmed (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1093477336096_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Escape Studios | Pearson College London",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios.html",
+                "text": "We've been helping students break into the creative industries since 2003 with our courses and degrees in Visual Effects (VFX), Game Art and Animation.",
+                "fallback": "Escape Studios | Pearson College London",
+                "image_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/content\/dam\/region-core\/uk\/pearson-college\/social-media-cards\/escape-studios\/escape-studios-23.jpg",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios.html",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 109276,
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios.html"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587132127.000000"
+        }
+    }
+]

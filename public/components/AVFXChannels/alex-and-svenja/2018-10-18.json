@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor,\n\nThey asked me questions that were already answered in my CV, such as what are my future plans, why do I do you need this job and what are my personal hobbies. I was a little nervous at the start but eventually relaxes into answering those questions",
+        "ts": "1539927952.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/460826305783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

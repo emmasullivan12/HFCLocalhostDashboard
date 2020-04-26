@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ooft that error doesn't look good, did you fix it in the end? How did it go with the normals? In redshift it's really easy, just using the built in AOV layer, but I haven't used Arnold in some time!",
+        "ts": "1544610096.000100",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503246089734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It worked after all! I rendered the normals as a separate sequence and now i have one exr with all the AOVs except normals and one exr with just a beauty and normals, as for the perspective a friend suggested i use grid warp ( it’s like the warp tool in photoshop) it’s getting there just trying to combine the Normals with the rest of the AOVs in nuke.. ",
+        "ts": "1544635605.000200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501510128880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

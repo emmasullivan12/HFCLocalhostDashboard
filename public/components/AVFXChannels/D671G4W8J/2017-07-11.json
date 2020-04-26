@@ -1,0 +1,158 @@
+[
+    {
+        "type": "message",
+        "text": "<@U65G4EV9Q> Hi there! Thought I would just let you know Sarah your mentor is on holiday at the moment which is why she is not responding as of yet!",
+        "user": "U4VR52RQE",
+        "ts": "1499782699.295885",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "In case you haven't received it and in the meantime please find below your on boarding pack - if you have a stab at your career plan then you can discuss it when Sarah is back on form :slightly_smiling_face:",
+        "user": "U4VR52RQE",
+        "ts": "1499782817.370608",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F67S2AEPR",
+                "created": 1499782859,
+                "timestamp": 1499782859,
+                "name": "Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf",
+                "title": "Prospela e-mentoring - Student Onboarding Pack (Summer Programme)",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 1400101,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F67S2AEPR\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F67S2AEPR\/download\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F67S2AEPR\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F67S2AEPR-6c98bea427",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1499782860.398331"
+    },
+    {
+        "type": "message",
+        "text": "Are you interested only in fashion marketing or also product and brand marketing? We have someone in Brand marketing for pladis (co. that owns McVities, Jacobs, Carrs, Jaffa Cakes Mini Cheddars and more!) who we can connect you with also if that is of interest?",
+        "user": "U4VR52RQE",
+        "ts": "1499782993.483485",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thank you for letting me know!!! and yes at the moment I am only interested in Fashion Marketing and going into that field,,, but thanks anyway.",
+        "user": "U65G4EV9Q",
+        "ts": "1499799249.309259",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "ge644cad0146",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/fe644cad01464a6c63d7a85d2ce239d1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "Vyabeny",
+            "real_name": "Vyabeny",
+            "display_name": "vyabeny",
+            "team": "T4UUTPV18",
+            "name": "vyabeny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sure no worries, I'll give Sarah a nudge later this week :slightly_smiling_face:",
+        "user": "U4VR52RQE",
+        "ts": "1499800670.090897",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "If there is anything we can help with in the meantime please let us know! :+1:",
+        "user": "U4VR52RQE",
+        "ts": "1499800694.103389",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,289 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you’re asking what area I aim to get employed through this film, it’s modelling\/sculpting, I would like to know more about rigging too because I enjoy it when it works and in turn that could improve my modelling so I was thinking about also becoming a 3D generalist too. Character animation is too difficult for me at the moment, my skills aren’t strong enough yet to consider doing that professionally.",
+        "ts": "1551691798.002100",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/565620845185_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What roles do you adopt or do you do a bit of everything without a specialism? I don’t know much about how freelancing in the industry works",
+        "ts": "1551691943.002200",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566075344387_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It doesn’t sound too good when you put the numbness like that but in any sense I suppose it’s not good, I’ve been working on this for so long that I’ve lost any sense of judgement or ability to look at it with fresh eyes - that’s what I mean by numb. The act structure do you mean for individual scenes whilst I’m animating to think of those as beginnings middles and ends? Or do you mean the whole thing because the whole thing I’ve already broken down into acts\/structures. Act 1: Trauma of Separation, Act 2: Fred’s Abuse and Doris’s search, Act 3: The Rescue.",
+        "ts": "1551692846.002300",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566166042756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think maybe to avoid the numbness, you need to freshen up your idea and take a fresh approach to it. That's why I've suggested looking at the moments you are more sure about as an area to focus on - either one of them or both (post box, milk bottles). I'm meaning: let's see if there's a story in those moments which could be explored and cut a lot of the rest of it out. I don't have the answers for you, at least at this time in any detail, but I'd suggest looking into those scenes and see if there is something short and meaningful in there - concise and beautiful. From there, you can focus on a short poignant scene where you can hone as much of your generalist skills as possible without being spread too thinly over so many minutes of scenes you're less sure about or losing your certainty on. The quality will naturally suffer over so many scenes and minutes. So it could in theory be one scene only and still say everything in a clever way. That's what I did with my graduate piece - really utilised cinematic storytelling to tell a complex story. But in hindsight, it was still too long and those are lessons I've taken forward in my career so that's why I'm telling you them. I can still go into more detail with you along the way, but I can help you every step of the way if you are able to reflect on it and come back to me first with some initial ideas based on this advice. I can also do better at explaining myself, if I am not doing so well enough, as we try this out.",
+        "ts": "1551698602.002400",
+        "username": "Fraser (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/565704926081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I understand what you mean - thank you :smiley: ",
+        "ts": "1551700060.002500",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/565546758880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I gave your method a try with Scene 2 where Fred and Doris get separated as this is meant to be one of the most emotional scenes. The letter scene I discussed with one of my lecturers and have already started on that one, today I wanted to give myself a fresh start. I rendered the shots (with basic lighting) of the 3 moments, I thought from a still render would be ‘say a lot with a little’ at its most basic\/effective.\n\nHere’s it roughly animated (plus a few seconds more): <https:\/\/youtu.be\/X51M5IXJxcE>\n\nI’m trying to achieve with this scene that Fred is vulnerable in his new surroundings and that Doris is his last bit of security. Doris is supposed to be less frightened but concerned and she is unaware that she is going to be separated from him. Doris’s reaction is supposed to read as surprised and uncertain, Fred is supposed to be lost and confused - hopefully this comes across.",
+        "ts": "1551736468.002600",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566879149716_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "A Time Apart: Scene 2 Version 2",
+                "title_link": "https:\/\/youtu.be\/X51M5IXJxcE",
+                "author_name": "Paris",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCfGgEyjXDNkZ98Bwr6A1Wxw",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/X51M5IXJxcE\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: A Time Apart: Scene 2 Version 2",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/X51M5IXJxcE?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/X51M5IXJxcE",
+                "service_icon": "https:\/\/cfr.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/X51M5IXJxcE"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGNA7SL6M",
+                "created": 1551736486,
+                "timestamp": 1551736486,
+                "name": "scene 2 render 2.jpg",
+                "title": "scene 2 render 2",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 238313,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGNA7SL6M\/scene_2_render_2.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGNA7SL6M\/download\/scene_2_render_2.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGNA7SL6M-82b989b912\/scene_2_render_2_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGNA7SL6M-82b989b912\/scene_2_render_2_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGNA7SL6M-82b989b912\/scene_2_render_2_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGNA7SL6M-82b989b912\/scene_2_render_2_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGNA7SL6M-82b989b912\/scene_2_render_2_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGNA7SL6M-82b989b912\/scene_2_render_2_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGNA7SL6M-82b989b912\/scene_2_render_2_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "image_exif_rotation": 1,
+                "original_w": 960,
+                "original_h": 540,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGNA7SL6M\/scene_2_render_2.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGNA7SL6M-2e68dff325",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1551736489.002800"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGPV5U7TR",
+                "created": 1551736492,
+                "timestamp": 1551736492,
+                "name": "scene 2 render 3.jpg",
+                "title": "scene 2 render 3",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 442818,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGPV5U7TR\/scene_2_render_3.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGPV5U7TR\/download\/scene_2_render_3.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV5U7TR-d390395c50\/scene_2_render_3_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGPV5U7TR\/scene_2_render_3.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGPV5U7TR-a03e7dec44",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1551736496.003100"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGPV60DSB",
+                "created": 1551736496,
+                "timestamp": 1551736496,
+                "name": "scene 2 render 5.jpg",
+                "title": "scene 2 render 5",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 235769,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGPV60DSB\/scene_2_render_5.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGPV60DSB\/download\/scene_2_render_5.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV60DSB-4e1662ad4c\/scene_2_render_5_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV60DSB-4e1662ad4c\/scene_2_render_5_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV60DSB-4e1662ad4c\/scene_2_render_5_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV60DSB-4e1662ad4c\/scene_2_render_5_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV60DSB-4e1662ad4c\/scene_2_render_5_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV60DSB-4e1662ad4c\/scene_2_render_5_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGPV60DSB-4e1662ad4c\/scene_2_render_5_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "image_exif_rotation": 1,
+                "original_w": 960,
+                "original_h": 540,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGPV60DSB\/scene_2_render_5.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGPV60DSB-26e378081f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1551736498.003400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you wanted to see the letter box scene so far, I think I’m going to shorten that even more and not have her walk away from the post box, my lecturer says walking can always be cut from animation: <https:\/\/youtu.be\/F3wSrpowcJw>\n\nThis scene Doris is upset and desperate. I want the audience to know what’s in the letter without having to see the inside of it and to get across from her face and body language how valuable and important the letter is - the entirety of that video is the whole post box scene.",
+        "ts": "1551736621.003700",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567994013623_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "A Time Apart: Doris Letter Scene Animation Progress 1",
+                "title_link": "https:\/\/youtu.be\/F3wSrpowcJw",
+                "author_name": "Paris",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCfGgEyjXDNkZ98Bwr6A1Wxw",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/F3wSrpowcJw\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: A Time Apart: Doris Letter Scene Animation Progress 1",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/F3wSrpowcJw?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/F3wSrpowcJw",
+                "service_icon": "https:\/\/cfr.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/F3wSrpowcJw"
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks again for your long answer!!! I really don't understand why I receive no notifications when you message, but I'll try to figure out how to switch on email notifications to solve it. What you said makes a lot of sense and does make me interested in that kind of work structure. Right now I've finished my design diploma, I'm hoping to get a distinction hopefully! Next year I'll be going to camberwell for a foundation as I haven't heard back from any apprenticeships. Do you know how I can get my foot in to a job in the industry for the summer? It's a bit difficult to find something for a runner or something like that. Do you have any advice?",
+        "ts": "1559159695.000100",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-29\/649659038949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

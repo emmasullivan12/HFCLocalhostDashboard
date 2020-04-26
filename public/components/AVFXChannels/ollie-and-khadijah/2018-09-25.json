@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ollie how are you ",
+        "ts": "1537905664.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-25\/443958334023_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am studyingbtec applied science ",
+        "ts": "1537905691.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-25\/444264796470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to be a nurse however my parents want me to be a proper doctor like the ones which do surgeries and stuff like that ",
+        "ts": "1537905762.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-25\/442318645681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want an advice to what I can do because my parents really want me to become a doctor and I want to make them happy ",
+        "ts": "1537905839.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-25\/442319663761_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also if I become a doctor I would be the first person in my whole family to become successful",
+        "ts": "1537905887.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-25\/444267542198_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

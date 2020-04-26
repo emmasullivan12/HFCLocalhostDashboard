@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Zoe, sorry for the delay!\nYes I'd love to help! Do you have any questions in particular?",
+        "ts": "1571216520.000300",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/784377025762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

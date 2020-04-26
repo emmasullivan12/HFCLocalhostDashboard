@@ -1,0 +1,211 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i live in zone 1, so probably not the best place to be during a pandemic :sweat_smile:",
+        "ts": "1586872414.002700",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060285014901_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the mocap one is cool, i like the camera parents with some of the movements, but not too much, pretty well done",
+        "ts": "1586872440.002800",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1061562136339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so you've been a generalist so far then, done  a bit of everything, how does brunel work, do you do assignments every year? at herts we made short films in 2nd and 3rd year",
+        "ts": "1586872503.002900",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1061565359795_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "with smaller assignments on the side ofc",
+        "ts": "1586872508.003000",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1055055024822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh wow yeah not the greatest! How are you coping?",
+        "ts": "1586886715.003100",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060710745589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! the background is very simple unfortunately because i didnt have much time to do anything on this front",
+        "ts": "1586886957.003200",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062311319459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah we have loads of assignments each year, they are all linear in year 1 and 2 but then we can choose 2 modules ourselves in year 3. which for me was FX animation and Motion Capture",
+        "ts": "1586887093.003300",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060726821925_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah pretty much everything you can name i have done at least a bit in. which is good because it allowed me to try out everything but not its time for me to decide what I want to specialize in basically",
+        "ts": "1586887146.003400",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1085951266128_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the annoying part of brunel is that we always had quite large word counts to accompany the assignments which sort of take it away from the actual animatic side",
+        "ts": "1586887217.003500",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060733105365_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is herts short for university of hertfordshire?",
+        "ts": "1586887310.003600",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060738552405_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what course did you study?",
+        "ts": "1586887363.003700",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062121382562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah hertfordshire, I did the 3d animation course there. They get everyone to generalise mostly, or in my case atleast try to stuiff. But I knew I wanted to animate before I went to uni haha",
+        "ts": "1586890093.003800",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047500715767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "queue 2 years of barely animating at all",
+        "ts": "1586890101.003900",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060853800485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah thats awesome that you knew exactly what you wanted to do before going to uni that must have benefited your career a lot",
+        "ts": "1586892283.004000",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062533008627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "okay so i have a few questions about how you first got into the industry if you wouldn't mind answering them?",
+        "ts": "1586892544.004100",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1068501112308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sure man, fire away",
+        "ts": "1586893196.004200",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062568791203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You could argue that hyper specialising into one thing is not a great thing.. it entirely depends on what you want to do tbh. Films for example. everyone has their 1 set job and they do it well, with exception to a couple roles here and there are more generalised.\n\nWhereas commercials \/ tv work, the goood majority are people that can do a wide range of things decently and a couple roles that are solely focused on their 1 depart. Like animation, or fur for example",
+        "ts": "1586895141.004300",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062434797970_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "awesome :slightly_smiling_face: so how easy was it to get your first job at framestore? and how long did it take you after leaving uni? as I didn't do a placement year as i just wanted to get uni out of the way as i changed courses after my first year (did a year of mechanical engineering) and feel like it might be limiting my chances of getting a job once i graduate",
+        "ts": "1586899408.004400",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062800293699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah you raise a good point, and i love it all really so i guess im happy to be a generalist for now",
+        "ts": "1586899464.004500",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047858981271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

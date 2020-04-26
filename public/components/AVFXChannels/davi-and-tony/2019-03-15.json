@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Tony! Great to meet you :blush: \nWhere are you studying? \n\nI am Head of Compositing department at Escape Studios, part of Pearson College I’m London. \n\nIt would be great to see some of your work, or showreel so far. ",
+        "ts": "1552678560.001800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/576253503184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

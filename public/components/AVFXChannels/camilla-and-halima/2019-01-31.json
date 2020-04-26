@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes it is!",
+        "ts": "1548963198.010000",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-31\/538721557060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And me too, school is so busy. I'm getting so much homework and essays I didn't realise it's already Friday!",
+        "ts": "1548963235.010100",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-31\/538146078768_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awwww, I love hearing the social purposes of businesses that you interact with!! That's so cool :slightly_smiling_face:",
+        "ts": "1548963312.010200",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-31\/538281019105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I need to finish my coursework *completely* this weekend, that's my main goal!! I've only completed 2\/4 and I need to start revising because my first exam is on the 14th of May - not too far away :disappointed:",
+        "ts": "1548963424.010300",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-31\/539089392981_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you made any goals at work for the next week?",
+        "ts": "1548963440.010400",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-31\/538283624657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

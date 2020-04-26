@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! just checking in to see how things are going, please do drop me a line if you have any questions or anything :slightly_smiling_face:",
+        "ts": "1571191681.000200",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/790420338609_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm in my 2nd year it's been okay during lockdown. I'm currently in home back in Ireland. It's just hard finding motivation to do the work.",
+        "ts": "1587067644.002400",
+        "username": "Stephanie Siaw (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1091783989392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,512 @@
+[
+{
+    "id": "G5D8FPJR0",
+    "name": "hello-students-pilot1",
+    "created": 1494768175,
+    "creator": "U4VR52RQE",
+    "is_archived": false,
+    "members": [
+        "U4V22C6A1",
+        "U4VR52RQE",
+        "U5JN4HP1S",
+        "U5QUP4PT2"
+    ],
+    "topic": {
+        "value": "On-demand support from Prospela and your fellow Students!",
+        "creator": "U4V22C6A1",
+        "last_set": 1497976486
+    },
+    "purpose": {
+        "value": "*On-demand support from Prospela &amp; your fellow Students*. Are you unsure of how to get the most out of your E-Mentor? Or not sure about the employability skills? Perhaps you just fancy speaking with other students about careers ... Reach out here!",
+        "creator": "U4V22C6A1",
+        "last_set": 1497976908
+    }
+},
+{
+    "id": "G5D8GA6N6",
+    "name": "archivedmentorchannel",
+    "created": 1494768508,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1",
+        "U4VR52RQE",
+        "U5JN4HP1S",
+        "U5QUP4PT2"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "Q&amp;A between all mentors for peer advice, how best to use this platform and any other related thoughts.",
+        "creator": "U4VR52RQE",
+        "last_set": 1494768509
+    }
+},
+{
+    "id": "G5HQHFQHW",
+    "name": "joelandchristina",
+    "created": 1495797086,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE",
+        "U5JN4HP1S"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5WPB05ME",
+    "name": "christian1",
+    "created": 1498070043,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5XB6T21H",
+    "name": "test2",
+    "created": 1498069741,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5XDAUP50",
+    "name": "test",
+    "created": 1498069482,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE",
+        "U5JN4HP1S"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5XDF369G",
+    "name": "andy1",
+    "created": 1498069830,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5XETQR6G",
+    "name": "andy_and_ester",
+    "created": 1498069624,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5XGE7Y3X",
+    "name": "thomas1",
+    "created": 1498070001,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5YQH0UQ0",
+    "name": "rob-and-ben",
+    "created": 1498483323,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5YV9CRSP",
+    "name": "hannah-and-muchen",
+    "created": 1498326411,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1",
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZC4GL2X",
+    "name": "sam-and-kaloyan",
+    "created": 1498482036,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZEPR28J",
+    "name": "becky-and-georgia",
+    "created": 1498483337,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZFNTX1S",
+    "name": "jason-and-hastings",
+    "created": 1498481654,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZJADLJH",
+    "name": "chris-and-naomi",
+    "created": 1498485571,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZNNDNHE",
+    "name": "michail-and-zubair",
+    "created": 1498590572,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZRWHQDC",
+    "name": "georgina-and-bolaji",
+    "created": 1498324549,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZSHH5EK",
+    "name": "helen-and-zoe",
+    "created": 1498325851,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G5ZSKM7FX",
+    "name": "michael-and-luca",
+    "created": 1498509737,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G601HSG72",
+    "name": "helen-and-muchen",
+    "created": 1498636725,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1",
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G6173GZ70",
+    "name": "jason-and-oubeid",
+    "created": 1498589728,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G61C98PV0",
+    "name": "rob-and-piotr",
+    "created": 1498723538,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G633CFEAZ",
+    "name": "sarah-and-vyabeny",
+    "created": 1499068046,
+    "creator": "U4V22C6A1",
+    "is_archived": true,
+    "members": [
+        "U4V22C6A1"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G6CBMMEQK",
+    "name": "shared",
+    "created": 1500810691,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "G6CEZ303E",
+    "name": "createdshared",
+    "created": 1500806472,
+    "creator": "U4VR52RQE",
+    "is_archived": true,
+    "members": [
+        "U4VR52RQE"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+}
+]

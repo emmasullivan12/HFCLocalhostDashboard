@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How much time should an average \"A-level student\" spend on studies per day?? ",
+        "ts": "1508584138.000070",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/260930754839_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In order to achieve the highest grades possible :)",
+        "ts": "1508584159.000029",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/260729603014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m not sure I’m the best person to answer that I’m afraid, it’s has been a while since I did my own a levels! It also probably varies depending on how easy or tough you find different subjects. Might be worth talking to teachers about that if you haven’t already",
+        "ts": "1508591821.000026",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/259923179556_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does your job\/work involve any lifestyle changes, such as frequent travel or late-night business entertaining?",
+        "ts": "1508605647.000057",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/259827853987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good question, that can be one of the things that takes people by surprise. It definitely used to. For a few years, I was abroad 4 or 5 days a week. I was flying to various countries several times a week. That was a great novelty for a while - I was seeing interesting places, I had a gold card to get me access to lounges in airports... it sounds very glamorous. But it isn’t a lifestyle that is sustainable unless you are really dedicated to it. I didn’t get to be at home very much, I didn’t see friends. So it got to the point where it wasn’t for me. I have managed to get myself into a role where it isn’t like that as much now, and I am home most of the time. I still travel, but my lifestyle is much more settled now, which I prefer. But, some of my colleagues travel all of the time. So it comes down to managing it in a way that works for you.",
+        "ts": "1508605865.000024",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/259387310689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see. :) \nWhich seasons of the year are toughest in your job?\n",
+        "ts": "1508615039.000029",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/260067074597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

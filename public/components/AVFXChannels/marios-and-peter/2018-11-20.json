@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, whenever I get the time I’ll try and set up a website or something to keep my portfolio. ",
+        "ts": "1542773135.007400",
+        "username": "Peter Hannon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/484730664163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for Teeside Uni since I’m from Scotland if I go to a Scottish University my tuition fees are covered by the government so that course isn’t as optimal as one based in Scotland for me. It seems good though ",
+        "ts": "1542773242.007500",
+        "username": "Peter Hannon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/484229493105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

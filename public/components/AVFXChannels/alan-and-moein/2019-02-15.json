@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi moein sorry for my slow reply lots going on!!\n\nGreat news about the camera and the references you are capturing. I'd be really keen to see the results.\n\nDo you have any updates on your progress? ",
+        "ts": "1550233104.000100",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/553545673510_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alan, I know VFX industry is busy next to the deadlines in particular. \n\nI will upload amazing stuff until Sunday. I really my point of regarding what you said. honestly it was hard but I made it.\n\nI happy to hear from you. You tips are amazing. ",
+        "ts": "1550248775.000200",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/552696194837_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":blush: ",
+        "ts": "1550248779.000300",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/552374815186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

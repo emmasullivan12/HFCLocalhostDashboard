@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caitlin. Hope youre well! Have you listened to the Access VFX podcast? ",
+        "ts": "1575310330.004400",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/843737080482_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also is there a specific subject you would like them to tackle? ",
+        "ts": "1575310339.004500",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/856519946384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.accessvfx.org\/podcast>",
+        "ts": "1575310378.004600",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/856521039136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

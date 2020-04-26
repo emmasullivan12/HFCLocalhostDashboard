@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @dvalgi-2012 I've had a good look at your CV",
+        "ts": "1510347587.000415",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/269925735888_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looks like a great start to the CV! Well done. \n\nI like the order you have it in, education first and other hobbies at the end. That’s exactly right. \n\nI’ve given you lots of pointers to work with (a bit of a mouthful) so have summarised my main messages to you:\n1) *Explain* each role\/duty in your work experience in detail\n2) *Give supporting evidence* for skills you want to show you have\n3) You have *loads of experiences and activities* that you have told me about in our short conversations that is really valuable to employers, but they’re *not written down here*. \n\nWriting a CV can feel like a bit of a pain, but once it’s done right it will be with you for a long time and also you give yourself a HUGE advantage over others your age who don’t put the effort in. \n\n*Comments on the CV*\n\nSummary Paragraph - I don’t think this is necessary if you are writing a cover letter\/email to go with your CV as this type of summary will be on that. However if you are just handing your CV to someone and you have lots of space on your CV to fill out then I can understand why. \n\nIf you do want to keep this summary, I think you should put some specifics on there to support your statements e.g. why you think you are confident or multi skilled. Every other student CV I’ve seen says pretty much the same as yours and doesn't explain why, so doing this will help you stand out immediately. Employers always want to see some example that supports a skill that you are claiming you have.\n\nSo most CVs are split into sections as the below:\n\n1.) Education\nUniversity (list your actual\/predicted grades)\nSchool (list your actual\/predicted grades)\n\n2.) Continuing Professional Education &amp; Training\n-Any systems\/tools you are familiar with such as Excel \n-Computer science online courses\n-Prospela E-Mentoring - Contacted and engaged with professional E-Mentors in Computer Science roles to gain further insights &amp; feedback on these career paths. (this is a great one as it shows employers how proactive you have been and that you are genuinely interested in this area)\n-Further Training – Fully motivated to train on the job for further skills &amp; qualifications. (also good to show this so that you look really keen and motivated, especially if you are applying for a job where you are likely to be learning a new qualification)\n\n3.) Work Experience \nThis is the most important section of your CV. \n\nIt’s great that you have had some work experience already and that it was volunteering. Employers love to see that a student has been willing to support their local community and also do something for free because they genuinely had an interest in helping :slightly_smiling_face:. \n\nIt’s also really good to see that you had a variety of roles there. Lets try and elaborate on each of them with specific examples of what you did that was a good learning experience or that had a beneficial impact. \n\nSo for example you talk about organising the events, what did you do exactly? Try and talk about how you made an impact and added some value where you can too e.g. did you save money by finding a cheaper alternative\/supplier for something or improve efficiency by finding a faster\/better way of doing something? Or maybe you had some great feedback from the elderly?\n\nSimilarly, the IT and accountancy duties, what did these involve exactly? These two words you have used a very broad when used on their own.\n\n4.Skills\nI don’t think you need this section, and like I mention above, ideally you would have been able to already show\/explain the skills you want to get across within your work experience. \n\n5.Other Experience &amp; Achievements\n-You should definitely put your website on here! It shows incredible ambition and interest in this area. Employers will love that you have taught yourself things and been creative as well. \n-Work projects\/encounters e.g. TFL Innovation programme\n-School societies are a member of \/ leading\n-Other small volunteering initiatives e.g. 1 day\/week activities",
+        "ts": "1510347875.000028",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/269928417392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "6.Additional Interests\nTry and say something about each interest individually, you have 2 pages to fill after all!\ne.g. Sport\nMusic\nTravel\netc",
+        "ts": "1510347878.000159",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/270583446946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you get a moment try and apply a few of these points to what you have already (Which is a great start). I'm happy to help as and when you have questions and to also take a look at the next version if you would like?",
+        "ts": "1510350771.000059",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-10\/270089931201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

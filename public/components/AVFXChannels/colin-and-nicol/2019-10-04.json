@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya Colin on the work front I got a draft CV at the moment but I know one area I will struggle is the showreel. As for places like to work I am kinda open on that. ",
+        "ts": "1570188387.001200",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/786072830614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

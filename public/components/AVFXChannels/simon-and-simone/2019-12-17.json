@@ -1,0 +1,116 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I framed through the video there were a number of repeated frames next to each other, it didn't look like the spacing was too tight, they were identical frames, does that happen to you if you frame through the video?",
+        "ts": "1576576538.000900",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876670490229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For exercises, hmm, I can tell you with hindsight what are good ones to do! When I was at uni I didn't have any time to do anything extra! I'd recommend doing lots of quick exercises that are very specific eg taking one step, a jump, a head turn, one very specific technique you want to do. Don't spend too long on them and treat them as disposable, not something to polish for the demoreel, you'll learn loads that way. Obviously still do your main pieces of work but we find here that people who drill themselves in lots of short sharp exercises improve much faster.",
+        "ts": "1576576761.001000",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876665187632_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you need inspiration Character Animation Crash Course or Animators survival kit has loads",
+        "ts": "1576576780.001100",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/878874086838_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRUFM6XJT",
+                "created": 1576576992,
+                "timestamp": 1576576992,
+                "name": "head_turn.MP4",
+                "title": "head turn",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 129481,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRUFM6XJT\/head_turn.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRUFM6XJT\/download\/head_turn.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRUFM6XJT-d527032540\/head_turn_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRUFM6XJT\/head_turn.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRUFM6XJT-dca35eadfd",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1576576993.001200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example, here's an exercise I did a few months back from character animation crashcourse",
+        "ts": "1576577018.001500",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/866411354369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Spent about an hour on it, won't ever go on the reel but i learnt a lot about using smeers in fluid 3d animation from doing it",
+        "ts": "1576577070.001600",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876682830021_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About the repeated frames, I've checked through the animation file and there shouldn't be any multiples, but I did playblast it and afterwards merge a couple of clips together in premiere, so something might've gone wrong with the frame rate in the process O:\n\nI do think I'll go for those quick exercises, seems like the best way to juggle animation practice with uni projects.\nBy the way that head turn looks really nice, I love the smear :slightly_smiling_face: Do you use a lattice to achieve that amount of deformation? It looks very snappy :smile:",
+        "ts": "1576623423.001700",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/877832439920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, if you don't mind me asking; how is it working at Bluezoo?",
+        "ts": "1576623484.001800",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/877843811317_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

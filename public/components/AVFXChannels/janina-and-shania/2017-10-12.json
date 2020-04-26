@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m 16 and I live in London southall after school my plan is to apply for nats that will be a 3 year course\/ training and if I don’t pass the nats test I will have to do the same course and training at university so I can then apply for ATC post again ",
+        "ts": "1507811017.000112",
+        "username": "shania.jf.8 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/254770701425_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shania! It's great to hear that you're already so clear on your future. Many students aren't quite sure, so that's great to see. \n\nJust so I am clear on what you mean, what does NATS and ATC stand for...",
+        "ts": "1507827925.000272",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255389641459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dare I assume air traffic controller..? ",
+        "ts": "1507827945.000139",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255389806291_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning! Work is going well. Currently working hard on a big film due to drop in December",
+        "ts": "1569309829.000700",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/758118093778_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What kind of jobs are you applying for? I've spoken to my hubby to get some info about positions in the game industry.  He suggested you check this page out: <https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/production\/games-producer\/>",
+        "ts": "1569310132.000800",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/758122505506_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ScreenSkills",
+                "title": "Games producer  - ScreenSkills",
+                "title_link": "https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/production\/games-producer\/",
+                "text": "ScreenSkills",
+                "fallback": "ScreenSkills: Games producer  - ScreenSkills",
+                "image_url": "https:\/\/screenskills-web-images.azureedge.net\/content\/img\/og\/screenskills.png",
+                "from_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/production\/games-producer\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 8040,
+                "service_icon": "https:\/\/screenskills-web-images.azureedge.net\/Content\/img\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/games\/production\/games-producer\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you considered doing an apprenticeship to get some experience?",
+        "ts": "1569310170.001000",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/758123076354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I started out in VFX, I had no experience in the industry. Luckily my years of admin experience gave me a leg up that allowed me to transition into the industry",
+        "ts": "1569310230.001100",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/770901129781_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,108 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hellow, hows your day doing?. \nwill be trying to teach myself how to rigg, Im checking tutorials right now. I been shorting stuff with the uni and that's why Ive been a bit absent",
+        "ts": "1570695276.000100",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792612178902_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, you think in my case it be worth to try to fix a showreel with the content I have now, maybe adding the content for this Christmas (animating an already rigged character) and try to get an internship?",
+        "ts": "1570695374.000200",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/783972740177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Maria :) my week going well thanks, work just suddenly went from really quiet to really busy which happens a lot, so be prepared for that hah. Yes definitely worth putting together a showreel, a 45 to 60 second reel would be the best to aim for. It'll be tempting to put everything in it but make sure it stays snappy, shorter is better. Either keep your name\/email\/number at the bottom for the whole video or clearly at the start and end. The thing to decide now is to decide which discipline you want to apply for?",
+        "ts": "1570697287.000300",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792295310583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here are my reels for reference:\n\nStudent reel:\n<https:\/\/youtu.be\/XNZaAhoGhA8>\n\nArtist reel:\n<https:\/\/youtu.be\/rqksR4Pp5N0>\n(please don't share this one, as its copyright material of course)\n\nHope that helps!",
+        "ts": "1570697874.000400",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784016734865_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "VFX Layout &amp; Matchmove Reel Dec 2016",
+                "title_link": "https:\/\/youtu.be\/XNZaAhoGhA8",
+                "author_name": "Jake Ferris",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCUMY7Zv0jAr-amqZodjIFyQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/XNZaAhoGhA8\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: VFX Layout & Matchmove Reel Dec 2016",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/XNZaAhoGhA8?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/XNZaAhoGhA8",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/XNZaAhoGhA8"
+            },
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Jake Ferris Layout Reel 2018",
+                "title_link": "https:\/\/youtu.be\/rqksR4Pp5N0",
+                "author_name": "Jake Ferris",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCUMY7Zv0jAr-amqZodjIFyQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/rqksR4Pp5N0\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Jake Ferris Layout Reel 2018",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/rqksR4Pp5N0?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/rqksR4Pp5N0",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 2,
+                "original_url": "https:\/\/youtu.be\/rqksR4Pp5N0"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okey, thats sounds great",
+        "ts": "1570704123.000600",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784131053361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will see what interests me the most",
+        "ts": "1570704149.000700",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/777785400498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yer I started originally as a programmer and then moved into lighting. also have worked as a compositor.",
+        "ts": "1585561597.002700",
+        "username": "purestvfx (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036968320295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "now I am head of 3d for a small studio",
+        "ts": "1585561611.002800",
+        "username": "purestvfx (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1034939522640_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.imdb.com\/name\/nm3228733\/>  this is me",
+        "ts": "1585561641.002900",
+        "username": "purestvfx (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1034940467632_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "IMDb",
+                "title": "Rupert Thorpe - IMDb",
+                "title_link": "https:\/\/www.imdb.com\/name\/nm3228733\/",
+                "text": "Rupert Thorpe, Visual Effects: Avengers: Endgame",
+                "fallback": "IMDb: Rupert Thorpe - IMDb",
+                "from_url": "https:\/\/www.imdb.com\/name\/nm3228733\/",
+                "thumb_url": "https:\/\/m.media-amazon.com\/images\/G\/01\/imdb\/images-ANDW73HA\/imdb_fb_logo._CB1542065250_.png",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/m.media-amazon.com\/images\/G\/01\/imdb\/images\/desktop-favicon-2165806970._CB466679383_.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.imdb.com\/name\/nm3228733\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585561641.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Feel free to ask me any questions you have - and we can have a call at somepoint - maybe on the weekend.",
+        "ts": "1585572605.003100",
+        "username": "purestvfx (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1037201241558_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

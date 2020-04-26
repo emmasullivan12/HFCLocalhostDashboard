@@ -1,0 +1,118 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha, hey Marina, nice to meet you to. So I guess I'm just here to answer questions and give advice where I can. Maya can be super daunting when you first start using it. I started in 3DS Max and even why I moved to Maya I was a bit scared =p\nIs there anything in particular you want to ask me about or just general advice going forward?\nIs the course at college a 3D course and how long is it for?",
+        "ts": "1571218038.001700",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/796719594660_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The 3D course is just 3 months, but they still didn't find us 3D teacher :( \nAfter that we are back to work placement to do 3 months traineeship there. \nI bought 3D course at Udemy. I've tried to watch videos, 3-4 times the same video again and again. I couldn't figure out what I was doing wrong, because teacher forgot to say which short cuts he was using.  \n\nCould you please give me like a small task, and by the end of the week, I could show you my result for a feedback. I'm really keen to learn, but I don't want to be pushy! \n\nAlso, could you please recommend me some tutorials, books, anything that helped you to grow as an animator. \n\nCheers,",
+        "ts": "1571232794.001800",
+        "username": "Marina Moraru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/796986916420_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, no problem. So have you done no 3D work at all yet? Where is your work placement taking place?\nIf you're starting at the very beginning then I recommend first starting with the bouncing ball tasks.\nFirst, animate a ball bouncing in a cycle just up and down on the spot. This will help you start to understand the basics of animating. Your timing and spacing, weight etc. It will also help you to get a bit more comfortable with using Maya.\nI highly recommend getting The Animators Survival Kit by Richard Williams. People call it the animation Bible. It has lots of examples of the basics of animation. It has examples of the bouncing ball exercises, walk cycles for humans and animals, information on timing your animations. Pretty much everything.\n\nHere is an example of the bouncing ball animation.\n<https:\/\/i.ytimg.com\/vi\/YDWm12umKvI\/maxresdefault.jpg>\nFor now I recommend just animating it on the spot and then when you are a bit more comfortable with Maya and the animation you can try animating the ball bouncing sideways.\n\nFor more resources and learning here is a bunch of things I recommend\n\nThe 12 principles of animation are the fundamentals of animation and you will use all of them pretty much all the time so it's a good idea to understand them.\nHere's a good video explaining them.\n<https:\/\/www.youtube.com\/watch?v=uDqjIdI4bF4>\n\nI didn't use it myself but I heard great things about a book called How to Cheat at Maya\n<https:\/\/www.amazon.com\/How-Cheat-Maya-2017-Techniques\/dp\/1498797083\/ref=sr_1_1?keywords=how+to+cheat+in+maya&amp;qid=1571238354&amp;s=books&amp;sr=1-1>\nI also recommend trying to absorb as much animation information as you can. Find animators who inspire you or whose work you really like. Or maybe find a studio whose animations you like. Use that as inspiration to fuel your own creativity.\nI really like Keith Lango. He's a very experienced animator and teacher and his videos are very informative.\n<https:\/\/www.youtube.com\/user\/keithlango\/videos>",
+        "ts": "1571238410.001900",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/786131096451_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "fallback": "1280x720px image",
+                "image_url": "https:\/\/i.ytimg.com\/vi\/YDWm12umKvI\/maxresdefault.jpg",
+                "image_width": 1280,
+                "image_height": 720,
+                "image_bytes": 64996,
+                "from_url": "https:\/\/i.ytimg.com\/vi\/YDWm12umKvI\/maxresdefault.jpg",
+                "id": 1,
+                "original_url": "https:\/\/i.ytimg.com\/vi\/YDWm12umKvI\/maxresdefault.jpg"
+            },
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "12 Principles of Animation (Official Full Series)",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=uDqjIdI4bF4",
+                "author_name": "AlanBeckerTutorials",
+                "author_link": "https:\/\/www.youtube.com\/user\/AlanBeckerTutorials",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/uDqjIdI4bF4\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: 12 Principles of Animation (Official Full Series)",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/uDqjIdI4bF4?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=uDqjIdI4bF4",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 2,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=uDqjIdI4bF4"
+            },
+            {
+                "service_name": "YouTube",
+                "title": "Keith Lango",
+                "title_link": "https:\/\/www.youtube.com\/user\/keithlango\/videos",
+                "text": "I'm an animation filmmaker and teacher. In my 15+ years in animation I've worked on a variety of animated properties and projects, ranging from Academy Award...",
+                "fallback": "YouTube: Keith Lango",
+                "thumb_url": "https:\/\/yt3.ggpht.com\/a\/AGF-l79thxCb0Y98NqVigv9U3Q5C9UK3iOWJ85sw3Q=s900-c-k-c0xffffffff-no-rj-mo",
+                "from_url": "https:\/\/www.youtube.com\/user\/keithlango\/videos",
+                "thumb_width": 900,
+                "thumb_height": 900,
+                "service_icon": "https:\/\/s.ytimg.com\/yts\/img\/favicon-vfl8qSV2F.ico",
+                "id": 3,
+                "original_url": "https:\/\/www.youtube.com\/user\/keithlango\/videos"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow! This is a lot of information! :the_horns:Thank you! Yes, I have 0 knowledge in 3D. I don't know which company will take me. It could be 3D or 2D. \nI have had 1 month traineeship in Kavaleer Studio. I was able to animate some of the scenes. Kavaleer works in Adobe Animate. Basically, I am familiar with 12 principals, but I am still doing a lot of mistakes.\n\n The animators survival kit is on my list. The rest from your  list is quite new for me, so thank you very much for sharing.",
+        "ts": "1571241986.002100",
+        "username": "Marina Moraru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/791278814321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can show you what I was able to do in Kavaleer, so you can judge at what level I'm. The show is not on air yet, so I'm not allowed to post it without password. \n<https:\/\/marinamoraru.com\/> \nPassword:boygirlcheese",
+        "ts": "1571242238.002200",
+        "username": "Marina Moraru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/799579075623_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Marina Moraru",
+                "title_link": "https:\/\/marinamoraru.com\/",
+                "fallback": "Marina Moraru",
+                "image_url": "https:\/\/pro2-bar-s3-cdn-cf2.myportfolio.com\/de14c206-7b3e-4875-8bb5-129682e91661\/db5065bf-100e-4cbc-9260-65e1abe2999a_rwc_485x80x685x536x685.JPG?h=273ae279c43ccdf168664bcfee2a6058",
+                "from_url": "https:\/\/marinamoraru.com\/",
+                "image_width": 319,
+                "image_height": 250,
+                "image_bytes": 89208,
+                "service_icon": "https:\/\/pro2-bar-s3-cdn-cf3.myportfolio.com\/de14c206-7b3e-4875-8bb5-129682e91661\/ef34fb05-635d-482b-9542-a6681099b883_carw_1x1x32.jpg?h=3286173898ac822282f533494353a3f6",
+                "service_name": "marinamoraru.com",
+                "id": 1,
+                "original_url": "https:\/\/marinamoraru.com\/"
+            }
+        ]
+    }
+]

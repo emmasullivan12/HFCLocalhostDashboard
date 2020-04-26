@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would still hand in whatever layout reel you have just in case, you cant go wrong there and can always update it in the future if you dont get it this time",
+        "ts": "1586164124.001100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1041020955619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

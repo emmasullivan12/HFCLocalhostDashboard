@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Rob... How are you doing?",
+        "ts": "1584957971.013600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1018749511269_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jon, been an exhausting weekend. Not sure what virus I do have but it sure knocked it out of me over the weekend",
+        "ts": "1584966068.013700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1008961515009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I keep meaning to respond to your previous message, but I ran out of steam Friday and have just been taking it easy trying to relax",
+        "ts": "1584966119.013800",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1021233917222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob, No probs at all. Take it easy!\nI seem to have had the mild version - sore throat for two weeks + a fever + serious drowsiness for a day. Now totally recovered - fingers crossed. I was so worried I'd maybe offended you with my stream of consciousness. Life is totally unreal rn. Finally making some good progress w projections and roto. Trying to have a routine every day and give a solid 8hrs + to each. Stay safe &amp; get better!",
+        "ts": "1584967518.013900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1006292538002_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

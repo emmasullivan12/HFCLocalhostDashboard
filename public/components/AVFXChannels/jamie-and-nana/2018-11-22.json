@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, Nana! It's a pleasure to meet you. Yes, I have some experience with rigging. I'm currently a Rigging TD in Film, and while it might be a little different to games, I'm happy to help any way that I can!",
+        "ts": "1542928800.001900",
+        "username": "Jamie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-22\/485630630496_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice. What is your typical day like?",
+        "ts": "1542928876.002000",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-22\/485630943920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Each day can vary, but a typical day would consist of continuing with any tasks that I've be assigned - I tend to specialise in faces, so I set up and maintain a lot of our facial rigs on whatever show I'm working on. We also have \"dailies\", which are 30 minutes to an hour meetings with the supervisors on the film and artists from other departments, to talk about a specific topic on the film. It's mainly working towards any deadlines we've been set and talking to other departments so that we can pick up any assets that we need and also pass on our work to whomever needs it.",
+        "ts": "1542929229.002100",
+        "username": "Jamie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-22\/486570172485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,167 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sachin hope you’re doing well, just wanted to ask you about C++ and whether you think its important to learn or not?",
+        "ts": "1586640992.002400",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1067003826337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Aidan \nI’m doing good thank you \nHope you are too ! \n",
+        "ts": "1586643103.002500",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1077573234832_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats great to hear! I’m doing well thanks",
+        "ts": "1586643143.002600",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1053384483590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unless you are planning to go deep into development you don’t have to ",
+        "ts": "1586643149.002700",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1056821544851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cause that’s a massive topic on its own ",
+        "ts": "1586643176.002800",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1067026712305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah I see, its just some job posts say its a desirable skill",
+        "ts": "1586643191.002900",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1056821877907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For an artistic role ? :thinking_face:",
+        "ts": "1586643228.003000",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1067027219281_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s weird ",
+        "ts": "1586643233.003100",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1067027259169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah for a rigging position sometimes people say its something they would like to see",
+        "ts": "1586643276.003200",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1057568812917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I suppose rigging is more of technical artist role so I can see how it could come in handy ",
+        "ts": "1586643286.003300",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1057568856933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But these days you can do a lot with python.  \nIf you have a lot of time on your hands then sure go ahead and learn c++ ",
+        "ts": "1586643360.003400",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1063728444660_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve been doing some lessons on c++ so thought I would ask before delving into it more",
+        "ts": "1586643424.003500",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1053385237014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would personally focus on leveling up your rigging and python skills but as I said if you have time and \/or need a break from that \nYou could play around with C++ :) ",
+        "ts": "1586643532.003600",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1057570002901_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah thanks!",
+        "ts": "1586644818.003700",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1046648653463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I need to start piecing my tool together because I have some additions to make",
+        "ts": "1586644869.003800",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1055999801858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

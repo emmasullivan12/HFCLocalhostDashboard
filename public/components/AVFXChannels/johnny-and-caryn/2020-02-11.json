@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is great, thank you :blush: I always struggle with figuring out the correct scale on 3d, so this really helps. In reference to your feedback of making the door 2x, does that mean making it twice as big as it would be in real life?",
+        "ts": "1581438621.003400",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/936959824273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What I meant is that the ceiling of a floor in a mall is roughly twice the height of a normal door , that will go to 4.5m , round it to 5 or 6 m and that will feel right ",
+        "ts": "1581459897.003500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/936309462163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For getting scale right , but trust your eyes yet , train yourself to know real world measures of itens , from the height pavement versus the road , or the size of a normal staircase step ",
+        "ts": "1581460008.003600",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/934991209666_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This will boost your environment knowledge, when I’m preparing for a project , besides the images.  I also collect information about sizes .\nAlso knowing the right lingo\/ naming of objects and features that are present on the environment that you will create , will also help you .\nFor example when making vegetation Try to know the Latin name of the specie , when making an human we need to know the name of the muscles \/features ",
+        "ts": "1581460202.003700",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949994720502_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I'm guessing you have more photos than what you shown. But have you the photos in Maya and started kind of like tracing it",
+        "ts": "1575916282.005800",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/853143373826_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mean have you put the photo into Maya and use them as a guide. Like front, side and tip view",
+        "ts": "1575916334.005900",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/854459250067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

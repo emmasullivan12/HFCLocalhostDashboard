@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/www.milk-vfx.com\/job\/vfx-production\/>",
+        "ts": "1571149934.000600",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/783213690418_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "VFX Production: Coordinators, Line Producers, Producer | Milk VFX",
+                "title_link": "http:\/\/www.milk-vfx.com\/job\/vfx-production\/",
+                "text": "Milk creates Academy and BAFTA award-winning visual effects for the international high-end television and feature film markets.",
+                "fallback": "VFX Production: Coordinators, Line Producers, Producer | Milk VFX",
+                "from_url": "http:\/\/www.milk-vfx.com\/job\/vfx-production\/",
+                "service_icon": "http:\/\/www.milk-vfx.com\/wp-content\/themes\/milk-vfx-theme-1-1\/inc\/images\/favicon.png",
+                "service_name": "milk-vfx.com",
+                "id": 1,
+                "original_url": "http:\/\/www.milk-vfx.com\/job\/vfx-production\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Saw this job posting today, looks good go for it!",
+        "ts": "1571149934.000700",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/797849490279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I must say the first few years may be difficult in any role production\/comp as they will very likely require full time work as well as some late nights\/weekends. However once you work your way up the ladder to producer or even freelance that will open up more opportunity to go part-time.",
+        "ts": "1571150947.000900",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/784542245139_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

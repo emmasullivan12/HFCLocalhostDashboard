@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s alright, hope you had a great time and thank you very much, and yes I’m in year 12 currently attending villiers high school",
+        "ts": "1509287866.000059",
+        "username": "dharita_ (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-29\/263581513539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

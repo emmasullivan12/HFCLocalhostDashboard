@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian. Hope you're well. Just letting you know I'm off on holiday next week.  I'll check in on my return.  :slightly_smiling_face:",
+        "ts": "1581611083.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/950654812308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy I am well, I hope you are too and there you enjoy your holiday. See you then :blush:",
+        "ts": "1581618385.000200",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/939890326579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

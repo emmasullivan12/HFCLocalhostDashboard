@@ -1,0 +1,165 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds about right. About the Virus, my teacher has spend one hour explaning everything we need to knoe what will be happening is the closure takes place. The school itself does not consider closing down, unless advisied by a government body. Also if the closure happens we will be receiving all the work in the Google classrom and will be expected to complete it by set deadline. Moreover, all students across the country are advisied to stay at home and not hanging around the city. Finally, if we have an eldery person at home, we have to lock them up in a wardrobe and not let them out for 3 weeks unless otherwise indicated :slightly_smiling_face:. The last one was a joke. But that is it. Im think we got everything under control even when the virus will hit its peak in UK we should be okey, other than lack of toilet paper in shops :wink:",
+        "ts": "1584136940.002300",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999901985312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "client_msg_id": "f138228a-7b2a-4cf7-a9cd-af0ddc4f5481",
+        "type": "message",
+        "text": ":joy:",
+        "user": "U4VR52RQE",
+        "ts": "1584137083.002400",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JLv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "joy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f9f6dded-dd31-40a8-9a94-5c93350e0a16",
+        "type": "message",
+        "text": "That made me chuckle about the grandparents in the wardrobe. In sure you could convince them to do that though!",
+        "user": "U4VR52RQE",
+        "ts": "1584137117.003400",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8\/l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "That made me chuckle about the grandparents in the wardrobe. In sure you could convince them to do that though!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8b47f799-7908-40cd-9972-939bc09ce738",
+        "type": "message",
+        "text": "Ok that's good news",
+        "user": "U4VR52RQE",
+        "ts": "1584137124.003700",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wcTc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Ok that's good news"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "37a61f94-dc14-43f2-90e2-a4d50edb382e",
+        "type": "message",
+        "text": "As long as you can continue working on your studies. Either way your school will be the same as the rest if the country so the same situation as all the other students",
+        "user": "U4VR52RQE",
+        "ts": "1584137275.004800",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/b4y1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "As long as you can continue working on your studies. Either way your school will be the same as the rest if the country so the same situation as all the other students"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

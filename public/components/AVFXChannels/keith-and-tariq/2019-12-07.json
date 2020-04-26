@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks. I'm kind of tied down to the shot time with the ball as it's been filmed already. Hopefully with a football texture and a inerbaloon thing it'll be more obvious.",
+        "ts": "1575758462.001500",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/856297798465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning Fabian! Nice to hear from you. How can I help you?",
+        "ts": "1579175605.001700",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/896308049714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

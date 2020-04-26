@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool Nana, i have no idea who the characters are and what it means, but it's good you are making things :smiley:\nWhats the process in making these stills?",
+        "ts": "1550519196.000400",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/554112643348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also Nana, just wanted to give you an update on what I'm working on at the moment.\nI'm working on the layout for a few shorts the company is making in the Talking Tom series, it's pretty challenging but very rewarding!",
+        "ts": "1550519361.000500",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/555592012582_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Going to make a video on that!",
+        "ts": "1550520248.000600",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/554046956531_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that sounds good! Good luck with that!",
+        "ts": "1550520270.000700",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/554493783557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

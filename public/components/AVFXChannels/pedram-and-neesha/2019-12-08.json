@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Pedram,\nHow are you? \nI am on LinkedIn now and did make contact with Elaine and got a message from her but  haven’t heard since. Judy Barr connected too and gave leads too. ",
+        "ts": "1575807420.003100",
+        "username": "Neesha Khan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/866698012566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey, sorry if it takes so long to reply but strangely I'm not getting notifications for this chat... so it always quite a small team. in terms of skills what are you looking for in your team? and do you do in-house training when someone gets hired?",
+        "ts": "1544732556.000100",
+        "username": "Nicola (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/503516747474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

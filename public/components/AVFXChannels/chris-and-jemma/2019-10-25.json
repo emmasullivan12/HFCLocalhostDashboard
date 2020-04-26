@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To stabilise an shot you have to apply a transform to it to stop it from moving. Any time you apply a transformation to your shot you do something called filtering.\n\nBen McEwan explains this really well here.\n\n<https:\/\/benmcewan.com\/blog\/2019\/04\/22\/back-to-basics-a-brief-lesson-on-image-filtering-node-concatentation\/>",
+        "ts": "1572008088.005900",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/811425505606_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Ben McEwan's Compositing Blog",
+                "title": "Back to Basics: A Brief Lesson on Image Filtering &amp; Node Concatentation",
+                "title_link": "https:\/\/benmcewan.com\/blog\/2019\/04\/22\/back-to-basics-a-brief-lesson-on-image-filtering-node-concatentation\/",
+                "text": "Image filtering is a necessary step in many tasks we do in computer graphics, but it often gets little cognisant attention from Compositors. When mentoring junior artists’ recently, I discove…",
+                "fallback": "Ben McEwan's Compositing Blog: Back to Basics: A Brief Lesson on Image Filtering &amp; Node Concatentation",
+                "thumb_url": "https:\/\/benmcewan.com\/blog\/wp-content\/uploads\/2019\/04\/diagram.png",
+                "ts": 1555946993,
+                "from_url": "https:\/\/benmcewan.com\/blog\/2019\/04\/22\/back-to-basics-a-brief-lesson-on-image-filtering-node-concatentation\/",
+                "thumb_width": 600,
+                "thumb_height": 500,
+                "service_icon": "https:\/\/benmcewan.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/benmcewan.com\/blog\/2019\/04\/22\/back-to-basics-a-brief-lesson-on-image-filtering-node-concatentation\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you do decide to stabilise your plate, make sure you don't use any automatic methods that introduce factors you can't control",
+        "ts": "1572008123.006100",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/809225151637_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

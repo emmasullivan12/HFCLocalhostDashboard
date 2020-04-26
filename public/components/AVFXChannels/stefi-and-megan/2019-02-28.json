@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Megan! :smile: How did the revision go the past week after what we discussed? Did you face any difficulties?",
+        "ts": "1551350266.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-28\/562767588913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

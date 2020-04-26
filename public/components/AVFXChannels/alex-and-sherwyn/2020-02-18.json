@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see. I haven't had any work experience but I'm looking to do a summer placement and a year long placement at the moment, but I'm still working on my showreel. I was thinking of maybe doing a summer placement overseas possibly Canada, and do my year long placement somewhere in the UK, but I'm still researching on Canadian work visas and also accommodation and such but it's still just a thought",
+        "ts": "1582068823.002200",
+        "username": "Sherwyn Hoo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/958325659669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

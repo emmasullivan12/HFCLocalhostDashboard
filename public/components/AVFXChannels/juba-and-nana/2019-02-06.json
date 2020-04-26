@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats really cool Nana.\nI forgot to ask you if you have any ideas to what you'd like to accomplish this year? Did you make any resolutions?",
+        "ts": "1549471948.004000",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/543139220336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

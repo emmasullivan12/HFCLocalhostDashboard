@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that's really insightful and interesting! And you started on nuke right? What's the most common nuke work that you had to do? And what's the latest new thing you have learned? At the moment I have just been working towards my final project and soon I shall be using nuke, I'm making a little VFX shot called kitten Kong and it's using my cat In front of a green screen and comping her into a street shot, I made a really rough \"previs\" using stock cat footage and old footage from another assignment, I can show you both if you wouldn't mind taking a look at them! But it's really cool how you are constantly learning something new it really drives the passion into continuing in VFX ",
+        "ts": "1551101546.000400",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-25\/559198843184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way, I have the questions ready to ask you if you wouldn't mind answering, it would really help out ",
+        "ts": "1551101607.000500",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-25\/559903980036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

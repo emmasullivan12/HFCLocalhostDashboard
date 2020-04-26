@@ -1,0 +1,126 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Perry, I am extremely sorry for the delay in the response, had a demise in my family so was busy with that",
+        "ts": "1542798637.001700",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485068924226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I should be able to message you regularly now.",
+        "ts": "1542798668.001800",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484966499123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice to meet you too. Please shoot any queries you have about vfx and animation :slightly_smiling_face:",
+        "ts": "1542798735.001900",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484465388033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah that's no problem, don't worry about it!\nI hope everything is okay :slightly_smiling_face:",
+        "ts": "1542816190.002000",
+        "username": "Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485137261844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've done blocking for a locamotive animation and I wanted to demonstrate some emotion through body language, do you mind taking a look to see what I could improve?",
+        "ts": "1542816994.002100",
+        "username": "Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485219097891_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "absolutely",
+        "ts": "1542822823.002200",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484820084081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "send it over. Not sure, can you share movie files here ?",
+        "ts": "1542822856.002300",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486476240695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FEB10FVGW",
+                "created": 1542838336,
+                "timestamp": 1542838336,
+                "name": "perry_jump_01.mp4",
+                "title": "perry jump 01",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3117930,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEB10FVGW\/perry_jump_01.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEB10FVGW\/download\/perry_jump_01.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FEB10FVGW\/perry_jump_01.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FEB10FVGW-11a1628175",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1542838337.002400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh nice, I can lol. Yeah, that's my initial blocking, I wanted to give a little personality and not just a character doing an action with no reason",
+        "ts": "1542838911.002700",
+        "username": "Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486690465191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

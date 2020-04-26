@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @rsadir-2011! I just read something that got me thinking ... it said \"Following your passion is bullsh*t. Follow knowledge instead. Be curious. Learn. That will take you places\"...what are you curious to learn about??",
+        "ts": "1510779109.000329",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/274126274871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":thinking_face:",
+        "ts": "1510779184.000599",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/274127105607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello how are you  \nI will be taking the exam on November this year. \nI will send u a picture of my CV\nok I will talk to them when they respond to me. \nthank you so much :)",
+        "ts": "1538768753.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-05\/449705453936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

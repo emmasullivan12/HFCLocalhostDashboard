@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Davi, I've looked through the the first list and I think my top 3 favourite would be Crewdson, Groover and Ray",
+        "ts": "1543708213.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492562143537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, have you ever been\/heard of the London Art Fair? I got a letter from them giving me a discount on a ticket as a thank you for my support but I don't know what they're talking about:sweat_smile: ",
+        "ts": "1543708341.000200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/493166494866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've also looked at the second list. I liked Gibson, Sherman and Heath's work",
+        "ts": "1543709422.000300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492566267697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

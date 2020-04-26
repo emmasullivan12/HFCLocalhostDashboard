@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Enrico ! How have you been doing ?? Sorry i've been busy with uni ! Lately i've been doing some 2D compositing with nuke so i've been spending quite some time learning about it ! It's really interesting though :)\n\nOhhh i've never went to the Maritime museum, i'll make sure to go :) \nTalking about painting have you ever tried oil paint ??? If so do you prefer it over gouache ?? ",
+        "ts": "1580597829.000100",
+        "username": "Mahira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/921150501795_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll defo make sure to check out forbidden planet ! Actually there is one close to escape, thanks for the tip !! ",
+        "ts": "1580597872.000200",
+        "username": "Mahira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/932639242181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's work going ???",
+        "ts": "1580597878.000300",
+        "username": "Mahira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/921150780563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Gutjit",
+        "ts": "1508149052.000275",
+        "username": "chris.cody (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256851625044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's it going? I see you're thinking about law - what's got you interesting in that?",
+        "ts": "1508149160.000193",
+        "username": "chris.cody (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256722794979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Chris, I'm sorry I couldn't reply you today ",
+        "ts": "1508176580.000012",
+        "username": "sgurjit949 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257205595893_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "More than law I'd say that I'm interested in banking and business or maybe accounting",
+        "ts": "1508176641.000288",
+        "username": "sgurjit949 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257066593490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

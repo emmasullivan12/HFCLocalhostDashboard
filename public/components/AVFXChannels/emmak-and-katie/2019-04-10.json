@@ -1,0 +1,179 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve looked at some showreel and it’s looks really interesting, it’s crazy what some people can create. Sometimes it gets a bit worrying thinking about when I leave uni because I know that more companies are moving on to 3D which isn’t really something that interests me. Would you say that 2D is still in demand whether this is in animation or design ? ",
+        "ts": "1554886869.005300",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/591968041282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And don’t worry I’m not the best at replying quickly haha deadlines are coming up ",
+        "ts": "1554886923.005400",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/607246616422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is still hugely in demand and required even in a 3D pipeline.",
+        "ts": "1554897785.005500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/592168710866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/sunandmoonstudios.co.uk\/>",
+        "ts": "1554897813.005600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/607115411703_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Sun &amp; Moon studios",
+                "title": "Sun &amp; Moon - Animation With Character - Bristol UK",
+                "title_link": "http:\/\/sunandmoonstudios.co.uk\/",
+                "text": "A specialist character animation studio, producing exceptional animation with character across all platforms. Crafted in Bristol UK.",
+                "fallback": "Sun &amp; Moon studios: Sun &amp; Moon - Animation With Character - Bristol UK",
+                "from_url": "http:\/\/sunandmoonstudios.co.uk\/",
+                "service_icon": "http:\/\/sunandmoonstudios.co.uk\/apple-touch-icon-57x57.png",
+                "id": 1,
+                "original_url": "http:\/\/sunandmoonstudios.co.uk\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.cubstudio.com\/>",
+        "ts": "1554897838.005800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/607447166118_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Animation Studio London",
+                "title": "Cub Animation Studio London",
+                "title_link": "https:\/\/www.cubstudio.com\/",
+                "text": "London animation studio working globally in sports animation, branded content, animated explainer videos, online promos, animated TVC and 2D animated content.",
+                "fallback": "Animation Studio London: Cub Animation Studio London",
+                "thumb_url": "http:\/\/static1.squarespace.com\/static\/535e680de4b0eea56c05a375\/t\/5b5f31352b6a284003632f37\/1532965176168\/favicon+1.jpg?format=1500w",
+                "from_url": "https:\/\/www.cubstudio.com\/",
+                "thumb_width": 640,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/static1.squarespace.com\/static\/535e680de4b0eea56c05a375\/t\/58ed34d5d482e9c96b4a2ec6\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.cubstudio.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.simontibbs.co.uk\/>",
+        "ts": "1554897866.006000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/603587123680_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Simon Tibbs | Freelance Motion Graphic Designer &amp; Animator | London, UK",
+                "title_link": "https:\/\/www.simontibbs.co.uk\/",
+                "text": "Simon Tibbs is a London based Freelance Motion Graphics Designer, Animator, and Director. Come and say hello!",
+                "fallback": "Simon Tibbs | Freelance Motion Graphic Designer &amp; Animator | London, UK",
+                "thumb_url": "http:\/\/static1.squarespace.com\/static\/54de7da2e4b0a566f11d178f\/t\/595048c6b3db2b9cbb3139ec\/1498433736637\/Logo_Circle.png?format=1500w",
+                "from_url": "https:\/\/www.simontibbs.co.uk\/",
+                "thumb_width": 600,
+                "thumb_height": 600,
+                "service_icon": "https:\/\/static1.squarespace.com\/static\/54de7da2e4b0a566f11d178f\/t\/595070d44f14bccd525c35ec\/favicon.ico",
+                "service_name": "simontibbs.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.simontibbs.co.uk\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These are a few of my mates working in 2D - they are all doing really, really well!",
+        "ts": "1554897907.006200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/592079146371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What you need to do is find your style and niche and sell it... but also in the beginning have the skills in other areas to be able to put food on the table!",
+        "ts": "1554897954.006300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/592080152867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope that makes sense!",
+        "ts": "1554897965.006400",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/597270767729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We can look at that together if you like? Find companies that may be up your street? Or work out exactly areas you like working in and see what that translates to in the working world.",
+        "ts": "1554898011.006500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/592173276690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Deadlines first though! Good luck!",
+        "ts": "1554898022.006600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/597271890945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that sounds great, I know blue zoo is doing internships over the summer with a lot of 2D positions available like background design and animation, I’m thinking of applying but I need to improve my show reel ",
+        "ts": "1554917732.006700",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/608002660486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

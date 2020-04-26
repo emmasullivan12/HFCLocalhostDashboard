@@ -1,0 +1,220 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583774330.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583774331.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e667a7ab912c40004365c85|this link> with other teams to invite them in it_",
+        "ts": "1583774332.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1583774969.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-26\" to \"alin-and-simran\"",
+        "old_name": "z-shared-26",
+        "name": "alin-and-simran"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583774982.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583774982.001000",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1583775115.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1583775121.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@simran.matharu has joined the channel_",
+        "ts": "1583775208.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/991494443319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@abolcas has joined the channel_",
+        "ts": "1583775228.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/978164289779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Simran, please meet Alin your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1583775231.001500",
+        "username": "Emma Sullivan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989176915284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1583775234.001600",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/991495517767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1583775238.001700",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/991842647126_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alin!\nI’m a graduate from Bournemouth University. I’m looking for roles in 3D prop\/hard surface modelling",
+        "ts": "1583784363.001800",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/979863781585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wanted to seek advice on my showreel and how to stand out to get a job in the industry ",
+        "ts": "1583784401.001900",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989497374068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simran, nice meeting you! Awesome, I'm also a Bournemouth graduate",
+        "ts": "1583786275.002000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990011763600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, do you have a link with your showreel? or are you currently working on it?",
+        "ts": "1583786411.002100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/978548904387_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Almost forgot to give you my intro - So I've graduated from Bournemouth Uni about a year and a half ago (Computer Visualisation and Animation major) then got hired at MPC as a character and facial modeler, I've worked on Maleficent 2, Sonic's redesign and a couple other shows which are not released yet. Recently I've taken a winter break doing some commissions and personal work. I can't really say I have a lot of experience but I think I formed an eye for what the demand is in terms of quality hence why I'm here to try and give back with what I can. :)",
+        "ts": "1583787113.002200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989582869012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice meeting you too! And that’s awesome! Well done with your progress, that’s really amazing.\nAnd thank you for helping me out :blush:",
+        "ts": "1583788802.002300",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990108684933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here’s a link to my website, which has my showreel too: \n\n<https:\/\/simranart.wordpress.com\/|https:\/\/simranart.wordpress.com\/>\n\nI’m still working on some projects now. I’ve been collaborating with concept artists on Instagram, modelling what they draw. \nTrying to practice vehicles now, I have another stylised spaceship being designed for me at the moment, and I’m currently finishing off a stylised I’ve-Cream truck.\nI’m just struggling to find reference for more realistic things.",
+        "ts": "1583789054.002400",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980009742497_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "ABOUT ME",
+                "title_link": "https:\/\/simranart.wordpress.com\/",
+                "author_name": "Simran Matharu",
+                "author_link": "https:\/\/simranart.wordpress.com\/author\/simranmatharu\/",
+                "thumb_url": "https:\/\/simranart.files.wordpress.com\/2020\/01\/img_0075-e1580057366687.jpg?w=1200&fit=200%2C150",
+                "thumb_width": 200,
+                "thumb_height": 70,
+                "text": "Hello! My name is Simran Matharu and welcome to my portfolio!\n\n\n\nI am a 3D modelling and texturing artist, based in Birmingham, UK.\n\n\n\nMy work caters for advertising, film and television. Previously worked on Disney Junior&rsquo;s &lsquo;PJ Masks&rsquo;.\n\n\n\nDon&rsquo;t hesitate to contact me with your enquiries.\n\n\n\nHere is my latest showreel below:",
+                "fallback": "Link: ABOUT ME",
+                "from_url": "https:\/\/simranart.wordpress.com\/",
+                "service_icon": "https:\/\/simranart.files.wordpress.com\/2019\/12\/cropped-img_0055.jpg?w=180",
+                "service_name": "WordPress.com",
+                "id": 1,
+                "original_url": "https:\/\/simranart.wordpress.com\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583789054.000000"
+        }
+    }
+]

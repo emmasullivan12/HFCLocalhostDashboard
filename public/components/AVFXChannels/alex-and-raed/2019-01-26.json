@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey alex, got an issue:",
+        "ts": "1548518355.004500",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533852754692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "auto BASBODY = AutoPolygon::generatePolygon(\"BASKET.png\");\n\n\t\tDEL1basket = Sprite::create(BASBODY);\n\t\tphysicsBody =\n\t\t\tSpriteBody = PhysicsBody::create(BASBODY),\n\t\t\tPhysicsMaterial(2.0f, 0.0f, 5.1f);",
+        "ts": "1548518358.004600",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/533852772148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how do I make the physics sprite polygon?",
+        "ts": "1548518384.004700",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/534014859906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "type": "message",
+        "text": "<@U5Z107PKQ> ",
+        "user": "U4VR52RQE",
+        "ts": "1499154025.572867",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Chris ",
+        "user": "U5Z107PKQ",
+        "ts": "1499154055.582598",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sorry that I haven't replied to you for a long time",
+        "user": "U5Z107PKQ",
+        "ts": "1499154096.596244",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "You have an amazing office. ",
+        "user": "U5Z107PKQ",
+        "ts": "1499154115.601914",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "No problem. Can you let me know some more about what you’re interested in studying and potentially doing for work?",
+        "user": "U5W6M67LZ",
+        "ts": "1499196834.336803",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

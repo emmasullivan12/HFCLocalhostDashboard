@@ -1,0 +1,189 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@tania.c.maccaferri has joined the channel_",
+        "ts": "1561977606.001100",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/674799731297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@neal2000uk has joined the channel_",
+        "ts": "1561977617.001200",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/669750293203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Tania, please meet Neal your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1561977639.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/674800300049_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1561977648.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/681161847013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1561977652.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/669750844659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Neal, hope you're having a nice day\nI'm Tania\n\nFirst of all, thank you for all of this\n\nSecondly, I will try to briefly introduce myself:\n\nI studied 2d and 3d animation at the Nemo Academy in Florence, finishing my studies in 2018. Then I participated at the realization of the 2d animated short \"Yujo\", discovering here compositing. \nHere the work I did during that experience, if you'd like to see it: <https:\/\/vimeo.com\/330231750>\nAnd thanks to it I got a job at Blue-Zoo Animation Studio as 2D Harmony compositor.\n\nAnd now why I joined prospela and what I would like to get out of this mentorship:\nI would like to grow in my compositing skill, to work not only in 2D animation, but also in 3D animation and Visual effects. But to get there, I need to learn After Effects and Nuke. And while it won't be a problem study by myself this two programs, I don't really know what are the right steps to do so in an efficient way, without loosing myself in hundreds of online tutorials never getting to the point (or the level) of want the industry truly requires. \n\nWith this mentorship I'm therefore hoping to find some sort of guidance in carving my path, learning all kind of useful things along the way, compositing related and not.\n\nand with this I guess... here I am? \n\nso, thank you again to be willing to start this mentorship, \n\nall the best, \n\nTania",
+        "ts": "1561985790.001600",
+        "username": "Tania Maccaferri (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/681285387781_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Tania Maccaferri - Compositing Reel",
+                "title_link": "https:\/\/vimeo.com\/330231750",
+                "author_name": "Tania Maccaferri",
+                "author_link": "https:\/\/vimeo.com\/taniamaccaferri",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/775236209_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Dropping here my very first compositing reel !!!\nMost of this work was created working on the 2D animated short 'Yujo', produced by the Nemo Academy of Digital Arts and starring Sandro Cleuzo & Tony Tarantini as Art Directors.\nEnjoy!",
+                "fallback": "Vimeo Video: Tania Maccaferri - Compositing Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/330231750?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Tania Maccaferri - Compositing Reel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/330231750",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/330231750"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tania,",
+        "ts": "1561992620.001800",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/670007369858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice to meet you, sounds like you have a clear idea what you want to gain from this which is great. I'm happy to answer any questions you may have",
+        "ts": "1561992674.001900",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/680951638820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll tell you a bit about me to give you a little background which may help direct your questions. I'm currently a lead compositor at Union VFX and do a little supervisory work here and there too. I started compositing at quite the late age of 27 learning on the job at Sky TV before going to freelance about 4 years ago. Whilst freelancing i worked at multiple companies bog and small on a variety of projects as a Compositor before arriving at Union where they asked me to stay on full time as a Lead. You can see more info about me on my LinkedIn page: <https:\/\/www.linkedin.com\/in\/rawvfx\/>",
+        "ts": "1561992998.002000",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/683574732934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For compositing I use Nuke which as mentioned I learned on the job but also using tutorials and simply asking A LOT of questions. I used Digital Tutors to learn whiich is now called Pluralsight so if you google that, there's some good, clear tutorials on there although this is a paid service.",
+        "ts": "1561993132.002100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/683284881079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2 books which really helped with the theory side of it that I'd recommend are this one:<https:\/\/www.amazon.co.uk\/Digital-Compositing-Film-Video-Production\/dp\/1138240370\/ref=sr_1_1?crid=11M3RQXBJ7N3C&amp;keywords=digital+compositing+for+film+and+video&amp;qid=1561993255&amp;s=books&amp;sprefix=digital+compo%2Cstripbooks%2C123&amp;sr=1-1>",
+        "ts": "1561993286.002200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/683289284279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and this one",
+        "ts": "1561993290.002300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/683582263750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.amazon.co.uk\/Art-Science-Digital-Compositing-Techniques\/dp\/0123706386\/ref=sr_1_1?crid=1JZ7YFEUNX7H1&amp;keywords=the+art+and+science+of+digital+compositing&amp;qid=1561993303&amp;s=books&amp;sprefix=the+art+and+science+of+digital%2Cstripbooks%2C122&amp;sr=1-1>",
+        "ts": "1561993313.002400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/680967201428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "they are a little pricey but i'm sure you can pick them up used for cheaper",
+        "ts": "1561993332.002500",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/681449693557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in the meantime feel free to message me with any questions. when you do message, can you use the '@' symbol in the chat, followed by my name as i find that I sometimes don't get notificaitons when a new message comes in without it",
+        "ts": "1561993430.002600",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/681452286389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

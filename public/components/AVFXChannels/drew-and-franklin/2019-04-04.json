@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you are doing well",
+        "ts": "1554401898.000100",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/598438167504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

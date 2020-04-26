@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. What is the project you are working on at the moment?\n\nYou say you want to achieve a senior level standard, are you currently working, do you have any industry experience?",
+        "ts": "1552921534.002600",
+        "username": "chris cook (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-18\/580248321076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The project I'm currently working on is a helicopter. ",
+        "ts": "1552946115.002700",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-18\/578412049376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My last job I was doing layout and I was fortunate to do a prop model for a feature film. I have small amount of experience in modelling. ",
+        "ts": "1552946197.002800",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-18\/580819699570_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I did some modelling for a tv show as well. ",
+        "ts": "1552946217.002900",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-18\/580788611252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

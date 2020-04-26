@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija!! Of course we can haha! Hope it’s going smoothly and Have a such a lovely Christmas with you’re brother! :) ",
+        "ts": "1577177404.000200",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-24\/873654964483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

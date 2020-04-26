@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that’s nice, is it better to be outside of London do you think? I saw u worked at Cinecite too, was it a fun experience there? ",
+        "ts": "1566985647.000100",
+        "username": "Cas Van Den Bergh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/729360167922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Personally I prefer Bournemouth, but I know quite a few artists here who prefer London. It was good experience there too. I started as a runner and moved up to FX from there",
+        "ts": "1567004899.000200",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/743358128262_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you know where you'd like to work? Or what area of Env stuff you'd like to do?",
+        "ts": "1567004961.000300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/740708792116_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to work for the environment department in DNEG! Really like the work they do, basically any tv\/VFX or commercial, just wanna make quality content and work with good team! (: cinecite would be amazing, I visited their office once and it looks really pretty and a nice environment! ",
+        "ts": "1567019562.000400",
+        "username": "Cas Van Den Bergh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/730081433426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

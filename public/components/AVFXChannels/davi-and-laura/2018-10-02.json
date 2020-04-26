@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that sounds like a fun plan :+1:\nI know you’re busy with school too so if one of them is your identity assignment, I’m sure that is fine. \n\nFirst question about Matisse? Why his style? \nWhat about his style that appeals to you? But more importantly what part of you, or identity of you feels related to his style? \n\nIt sounds for this project you need to identify first your ‘identity’. That is the core.  Do let me know if I’m off track ;) \nSo it’s like a story or film: what is the core part (narrative, purpose of the film\/story). Start with that and then the visuals can be researched. And I can try to suggest artists that suit that defined is identity. Then the fun art research begins! \n",
+        "ts": "1538503951.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447690874818_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh regarding colleges, my colleagues so far only suggested BRIT school too :+1:",
+        "ts": "1538504000.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447512104516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Back to the artist... do you have to research artists’ lives or philosophy? Or just the art style\/techniques? ",
+        "ts": "1538504111.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/448746147335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n\nSorry, jumping to our project objectives: IDEAS: 1) do you need guidance on a CV or application or portfolio for BRIT school? Is it competitive? When is the deadline? \n",
+        "ts": "1538504361.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447517391188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

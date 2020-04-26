@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Halima, i understand this is our last chance for a conversation so I would like to wish you the best of luck in the future x",
+        "ts": "1512309770.000014",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-03\/280291788160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aw me too! Thank you so much for your advice and teaching me new things about TEACHING :joy::relaxed::heart:",
+        "ts": "1512325241.000064",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-03\/281034721988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

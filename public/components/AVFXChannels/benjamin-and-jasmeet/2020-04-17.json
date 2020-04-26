@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Benjamin, I hope you are well and keeping safe and your loved ones are safe too",
+        "ts": "1587143225.000100",
+        "username": "Jasmeet Singh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1068788049509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jasmeet. Was just thinking about you actually. Hope you are well too. I'm so sorry I haven't gotten back to you with feed back on your work. I'll prioritise it for tomorrow morning. How have you been anyway. You keeping well during this time?",
+        "ts": "1587143309.000200",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1070381375667_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

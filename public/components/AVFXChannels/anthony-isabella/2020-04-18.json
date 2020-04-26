@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! those are some cool refs",
+        "ts": "1587239843.003800",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1064839287398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They all have some good things, I'd say that I'm not the biggest fan of the ref videos for the shockwave but the 2nd and 4th pictures are interesting (fire circle and broken glass one)",
+        "ts": "1587239981.003900",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1077742359268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I couldn't watch the Mark Fancher video as I do not have permission. There was a link to request permission which I followed",
+        "ts": "1587240098.004000",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1071785120931_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There would almost be a possibility to mix two of your main subject into one.\nSlide 11 shows some pattern ideas, the two first one being in the same vein as the melting reference. One could think of having a thin mesh evolving into a thicker one then gradually melting.",
+        "ts": "1587240219.004100",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1070196182741_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Overall, that's a promising start. Nice job gathering these.",
+        "ts": "1587240313.004200",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1064843236454_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiiiiii Helen. How are youuu \n\n",
+        "ts": "1512243466.000008",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/281912225319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much for all the advice it’s very handy to know what I can do to prepare for an interview :blush:",
+        "ts": "1512243494.000017",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280322239985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve finally decided that I should drop chemistry because I agree with you that I should only do subjects I like so thank you for that also ",
+        "ts": "1512243563.000003",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280181263968_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a interview coming up and will deffinately use those tips and hopefully it all goes well haha",
+        "ts": "1512243632.000090",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280764852723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

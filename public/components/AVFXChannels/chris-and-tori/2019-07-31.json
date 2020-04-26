@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies! Missed this last night!",
+        "ts": "1564566051.001800",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-31\/713347130919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you today?",
+        "ts": "1564566057.001900",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-31\/700096850195_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

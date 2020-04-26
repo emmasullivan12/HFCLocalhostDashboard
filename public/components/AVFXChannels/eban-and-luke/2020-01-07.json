@@ -1,0 +1,157 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1578418564.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e14c18306ab4d0004cd0ff0|this link> with other teams to invite them in it_",
+        "ts": "1578418564.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1578418564.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1578418606.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"eban-and-luke\"",
+        "old_name": "z-shared-23",
+        "name": "eban-and-luke"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1578418619.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1578418672.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1578418675.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@iameban has joined the channel_",
+        "ts": "1578418790.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/896646456373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@lukevuilliomenet has joined the channel_",
+        "ts": "1578418799.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/896178466356_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Luke, please meet Eban your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1578418801.001300",
+        "username": "Emma Sullivan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/886410632017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1578418805.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/896636542688_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1578418810.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/886410852945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Luke. My name is Eban Byrne, I am a freelance Houdini FX TD working in NYC. I've been working in the 3d field in various capacities for the last 19-20 years or so. I did a good bit of time working at MTV in their On Air Design department, that was 2001-2008. During that time I was using Softimage XSI as my core 3d package (also a lot of AE). At MTV I did a lot more mograph type of work, a lot of show opens and channel repackaging and VMA live preformance stuff. After MTV I worked at Psyop for the next 7.5 years or so, mostly doing commercial stuff. Starting as a permalance generalist I did a lot of end cards for ads and some mid level rigging work. Eventually ICE in XSI showed me what basic knowledge of math, vectors, linear algebra, and things like matrices and arrays could allow me to do in FX and procedural animation and I slowly became strictly an FX artist. I really liked doing water stuff when I started in FX and worked a good bit with Niad when I started with that. I would also do work as a 3d lead on a number of jobs during my time at Psyop. I left Psyop about 3.5 years ago and now I am strictly a freelance FX TD. In the last 3.5 years I have been splitting my time between doing commercials and film and episodic TV. I like doing both, the workflows are very different and force you to use different skillets, I like bouncing between the two. Below is  a link to the last reel I did when I left Psyop, therefore it does not show much film and tv work.",
+        "ts": "1578426838.001600",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/899062159942_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/182332782>",
+        "ts": "1578426840.001700",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/899062198230_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "password: tempreel",
+        "ts": "1578426862.001800",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/899062713030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mr. Byrne,\n\nMy name is Luke Vuilliomenet, and I'm a Houdini based F.X. artist and T.D. I've spent the past three years studying VFX in the general sense, and the most recent two focusing upon Houdini simulations. During this time, I've had the pleasure of working on two short films, one of which was a collaboration of one hundred plus artists\/individuals, spanning two continents, and two schools.\n\nI am now a first-year M.F.A. Visual Effects Student at the Savannah College of Art and Design (SCAD). Once completing my degree, I intend to join a studio to work in advertisement and possibly feature film. An essential part of receiving my degree is a thesis presented at the end of the course. I would ask if you would be willing to work with me in the creation of my thesis?\n\nThe Visual Effect Thesis outline describes the project as the following, \"The thesis should be a mature, resolved body of work, and demonstrate advanced professional competence through a mastery of the technical, creative and aesthetic elements of the visual effects discipline.\"\n\nThe entirety of the project is composed of three major parts. The parts submitted are as following,  a written component showing research supporting the thesis statement and visual element, a visual element showcasing the described effect, and finally, the three-stage review process.\n\nThe outline goes on to further mention, \"A thesis subject may be primarily technical, primarily focused upon a creative body of artistic work, or may be an appropriate combination of technical research and artistic creation. The exact nature and balance of the thesis components will reflect the focus of the thesis project, under the guidelines of the student's thesis committee.\"\n\nEach of the three parts has specific guidelines and timetables ergo; the review process does not begin until after 45 credit hours has been achieved in about a year.\n\nSince I am at the beginning of this process, my goal is to conceptualize my thesis statement and intended project. As a student, my work is aiming toward the technical side of F.X., but not limited to this area; however, I can only make intuitive guesses as to what the industry currently needs. It is the before mentioned reason I reached out to Prospela and subsequently you to gain insight into what is wanted\/needed in the industry.\n\nI greatly appreciate you taking the time to consider mentoring my thesis work and look forward to speaking with you further.\n\nSincerely,\nLuke Vuilliomenet\n<mailto:lukevuilliomenet@gmail.com|lukevuilliomenet@gmail.com>\n<http:\/\/www.lvfxstudios.com|www.lvfxstudios.com>",
+        "ts": "1578441410.001900",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/884390580354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

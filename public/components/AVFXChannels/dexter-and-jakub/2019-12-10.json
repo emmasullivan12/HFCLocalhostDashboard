@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okey thank you I will let you know if I have any further questions:)",
+        "ts": "1576016266.022100",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/868077685072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

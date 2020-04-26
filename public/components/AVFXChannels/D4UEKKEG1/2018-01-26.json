@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F8YS3RTA5",
+                "created": 1516993341,
+                "timestamp": 1516993341,
+                "name": "MVP.xlsx",
+                "title": "MVP.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 101170,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8YS3RTA5\/mvp.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8YS3RTA5\/download\/mvp.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F8YS3RTA5\/mvp.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F8YS3RTA5-9196947d8f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1516993342.000199"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F8ZB28TMZ",
+                "created": 1516997272,
+                "timestamp": 1516997272,
+                "name": "MVP.xlsx",
+                "title": "MVP.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 106038,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8ZB28TMZ\/mvp.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8ZB28TMZ\/download\/mvp.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F8ZB28TMZ\/mvp.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F8ZB28TMZ-58767d570c",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1516997273.000549"
+    }
+]

@@ -1,0 +1,195 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Assuming you're rotoing in Nuke you should be able to view the roto node and then hit A over the viewer? If that's not working there is a bug in Nuke where the viewer LUT breaks this so plug a shuffle node in and leave it set to default values and view that then hit A over the viewer",
+        "ts": "1576140504.005500",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/857809269698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if that works or not",
+        "ts": "1576140504.005600",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872451294167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRL8BBZ0U",
+                "created": 1576147672,
+                "timestamp": 1576147672,
+                "name": "Screenshot 2019-12-12 at 10.46.11.png",
+                "title": "Screenshot 2019-12-12 at 10.46.11",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1083685,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRL8BBZ0U\/screenshot_2019-12-12_at_10.46.11.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRL8BBZ0U\/download\/screenshot_2019-12-12_at_10.46.11.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 225,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 300,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 450,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 500,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 600,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRL8BBZ0U-3816bc68ca\/screenshot_2019-12-12_at_10.46.11_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 640,
+                "image_exif_rotation": 1,
+                "original_w": 3360,
+                "original_h": 2100,
+                "thumb_tiny": "AwAeADCk8mGxim+b7H86R1JckCm7G9KAHeZ7UvmD+7TNjelLsb0oAlUgrnpS8etCYCAHOaX5e2aAG07HAOevvSKMqDnqM04R5OM\/pQAyipPK5xu\/SkCZzz09qAGiinBRuxTX+Ut3xQB\/\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRL8BBZ0U\/screenshot_2019-12-12_at_10.46.11.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRL8BBZ0U-f50b4dcbab",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1576147678.005700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're viewing your plate, select the roto node, hit 1 then it should appear?",
+        "ts": "1576147743.006000",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872949797142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If not check your project format matches the plate resolution",
+        "ts": "1576147757.006100",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/857959342034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok yh i got it now, my bad. Thanks for the help",
+        "ts": "1576147874.006200",
+        "username": "lukman bello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872603632391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problems :)",
+        "ts": "1576148563.006300",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872617680663_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Another question is that when i play back the plate, the roto mask doesnt seem to move but when i scrub along the timeline, the roto mask moves along fine?",
+        "ts": "1576149127.006400",
+        "username": "lukman bello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/857986478418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Try either, plugging the roto node in to the sourceplate and checking 'replace' in the roto node or make a copy node and plug b input to the plate and A input to the roto  then view that. At the minute Nuke doesn't really know they are connected",
+        "ts": "1576149500.006500",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872983823558_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The copy node worked. Can you explain why that works?",
+        "ts": "1576150741.006600",
+        "username": "lukman bello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/859329028099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's just that Nuke doesn't understand that a roto node that's not attached to anything is relevant to what you are looking at and Nuke tries to load as little as possible at a time to save computing power. It seems trivial in a script with 2 nodes but I'm currently working in a script with well over 3000 nodes, so if it had to update all of them constantly it would be really heavy",
+        "ts": "1576150978.006700",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/870800285632_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, if you think about it when a node isn't attached to anything there's no way it can be doing anything do doesn't need to be computed. Nuke will assume it's a stray node that doesn't need rendering to screen",
+        "ts": "1576151023.006800",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/858019728738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That makes sense, thanks.",
+        "ts": "1576151785.006900",
+        "username": "lukman bello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/873023403366_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

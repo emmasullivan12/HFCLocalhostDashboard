@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry josh, was super busy and ended up forgetting our meeting 8pm wednesday, you want to have a chat some other time this week?",
+        "ts": "1567062798.000100",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/730653595363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Cris the bank holiday through me off and I forgot as well :sweat_smile:",
+        "ts": "1567104095.000200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/731481874690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm heading to Enniskillen this weekend with family for my birthday and there's no signal so it'll probably have to be next week",
+        "ts": "1567104152.000300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/742467599476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm flying out to America on Wednesday for 2 weeks just to let you know :joy:",
+        "ts": "1567104214.000400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/731488587107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,61 @@
+[
+    {
+        "bot_id": "B5KFHDXD5",
+        "type": "message",
+        "text": "In the past 24 hours,   you've given *1 praise*.\n\n*Praise Given*\n\n`0` reactions were added to the <https:\/\/prospela.slack.com\/archives\/general\/p1495819299527891|praise> you gave to  <@U4V22C6A1> a day ago.\n&gt;",
+        "user": "U5JN4HP1S",
+        "ts": "1495905580.462412",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5KFHDXD5",
+            "deleted": false,
+            "name": "Disco",
+            "updated": 1516699988,
+            "app_id": "A0DV3EEN4",
+            "icons": {
+                "image_36": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_36.png",
+                "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_48.png",
+                "image_72": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        }
+    },
+    {
+        "bot_id": "B5KFHDXD5",
+        "type": "message",
+        "text": "",
+        "user": "U5JN4HP1S",
+        "ts": "1495905581.462427",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5KFHDXD5",
+            "deleted": false,
+            "name": "Disco",
+            "updated": 1516699988,
+            "app_id": "A0DV3EEN4",
+            "icons": {
+                "image_36": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_36.png",
+                "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_48.png",
+                "image_72": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        },
+        "attachments": [
+            {
+                "callback_id": "props-reminder-request",
+                "text": "You’re on a roll this week! Want me to remind you once in a while to give props? You’ll be able to turn these off any time on your <https:\/\/prospela.growbot.io\/preferences|preferences page>.",
+                "id": 1,
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "Yes!",
+                        "text": "Yes!",
+                        "type": "button",
+                        "value": "U4VR52RQE",
+                        "style": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

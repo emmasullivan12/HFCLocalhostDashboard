@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Graeme,\n\nHow are you doing? I saw your LinkedIn update a while back that you managed to get a runner position at the mill and wanted to ask how you are finding it so far?\n\nBest regards,\nMaike",
+        "ts": "1567072429.000100",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/730798987426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

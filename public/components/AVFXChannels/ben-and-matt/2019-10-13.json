@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh yeah totally, yeah they mostly use images and reference stuff. In the show I was on before I went off, they were using the reference photography taken by the VFX supe to rebuild the interior of the Sistine Chapel!",
+        "ts": "1570988734.001700",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/793332596276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

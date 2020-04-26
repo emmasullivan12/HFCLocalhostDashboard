@@ -1,0 +1,983 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Igor okay no problem :grin:",
+        "ts": "1586332918.002200",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1045840119271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ben",
+        "ts": "1586366442.002300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1045993167079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you doing?",
+        "ts": "1586366459.002400",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048413096242_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you are safe and healty",
+        "ts": "1586366480.002500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050790178070_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey, im good thank you, hope you are safe and well too.",
+        "ts": "1586367446.002600",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1067567569600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, thanks",
+        "ts": "1586367641.002700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1045997682231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is going the course at Bolton university?",
+        "ts": "1586367665.002800",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1067583485936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's going well apart from everything happening, miss been there alot haha. We have moved fully remote now, but my fmp was a group project so its been tricky. i hope work is well for you too.",
+        "ts": "1586367845.002900",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057565754372_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I imagine ...",
+        "ts": "1586368109.003000",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1045999245319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you guys working with your own computers ?",
+        "ts": "1586368122.003100",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057192659297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or are you able to connect to university computers?",
+        "ts": "1586368156.003200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053233642293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah we have our own computers as well as access to vpn into uni as well, we are lucky we have deadline so we can sent our renders to that, but i have been waiting 6 hours to transfer renders back to my pc :zany_face:.",
+        "ts": "1586368320.003300",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048515999522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gosh .. That's painful",
+        "ts": "1586368359.003400",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046000071399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But let no get desperate :slightly_smiling_face:",
+        "ts": "1586368382.003500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048519375970_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, can you describe more about your course?",
+        "ts": "1586368435.003600",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046000321127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you send me the link to it as well?",
+        "ts": "1586368470.003700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048524012994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah of course, ill quickly write you a little description :grinning:",
+        "ts": "1586368516.003800",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057595414340_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So when i started 2 years ago the course was alot different to how it is now, so in my first year we had to study visual effects as well as special effect, but originally i came from a film\/vfx background and choose bolton uni as the lecturers and industry links were amazing and knew i would benefit from it there even though we had to learn special effects as well (That is different now you just do vfx as the course are spilt from year one now). So in the first year i was taught mostly 3d based packages (maya, zbrush, mari). it wasn't till late 1st year i was introduced into nuke , but originally i came from after effects and always knew i wanted to do comp. after first year we was taught further nuke skills as well as houdini , and more maya. Now in my final year this was when we was able to specialist in our choose field {comp}, this is also when the head lecture began to teach me python scripting for nuke and maya as well. <https:\/\/www.uobvfx.com\/>  <https:\/\/www.bolton.ac.uk\/subject-taster-sessions\/visual-effects-for-film-and-tv\/>",
+        "ts": "1586369303.003900",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048574256146_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "UOB VFX",
+                "title_link": "https:\/\/www.uobvfx.com\/",
+                "fallback": "UOB VFX",
+                "image_url": "https:\/\/dvqlxo2m2q99q.cloudfront.net\/000_clients\/1253556\/page\/12535562v9xRBEd.png",
+                "image_width": 221,
+                "image_height": 250,
+                "from_url": "https:\/\/www.uobvfx.com\/",
+                "image_bytes": 602197,
+                "service_icon": "https:\/\/dvqlxo2m2q99q.cloudfront.net\/000_clients\/1253556\/file\/57x57-1253556y6jM0f50.png",
+                "service_name": "UOB VFX",
+                "id": 1,
+                "original_url": "https:\/\/www.uobvfx.com\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586369305.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It sounds a good plan of studies. I think is important to understand a bit of field. Even we will not do everything.",
+        "ts": "1586369536.004100",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057301323649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do your teachers have experience in the field or they always have been teachers?",
+        "ts": "1586369580.004200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049591108579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also came from After Effects but took me a while to understand what I really wanted to do.",
+        "ts": "1586369649.004300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046004793431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Back in Portugal (I'm Portuguese) we don't have a film industry nor visual effects",
+        "ts": "1586369696.004400",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053283847333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you happy with your progression during those 3 years?",
+        "ts": "1586369737.004500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053285090709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah they do they work alot for company in barcelona ran by Christian Bull , called screenclay. Ah really i thought they would have some stuff, yeah 100% the last 3 years ive learn so much, but i know there is still alot to learn .",
+        "ts": "1586369812.004600",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050851329878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great!",
+        "ts": "1586370032.004700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049614369235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is always something to learn.",
+        "ts": "1586370089.004800",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049617280547_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I try to keep always learning :slightly_smiling_face:",
+        "ts": "1586370120.004900",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057669402212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah thats the best thing about vfx you always learn something new, its not the same stuff everyday.",
+        "ts": "1586370196.005000",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057672444884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Learning Python will be very useful for you in the future. However, I believe, in the beginning is not that much important.",
+        "ts": "1586370205.005100",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050857791798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You have to learn the basics and do it many times. As soon as you get experienced in doing something you can start optimizing that process with python or tcl",
+        "ts": "1586370266.005200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049626382627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tcl is the main language of nuke.",
+        "ts": "1586370282.005300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049627309491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i seem to pick python up to help me most make little pipeline tools atm to speed up tasks. ah i've not heard of that before thank you :slightly_smiling_face:",
+        "ts": "1586370354.005400",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050860321254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "don't get me wrong. Python is very useful. I think you definitely should learn it",
+        "ts": "1586370450.005500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050861893638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just think both of them aren't the priority for your level.",
+        "ts": "1586370500.005600",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049638620723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am sure you have heard about nukepedia. have a look this <http:\/\/www.nukepedia.com\/tcl\/tcl-reference>",
+        "ts": "1586370557.005700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057687959412_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Tcl Reference - TCL - Nukepedia",
+                "title_link": "http:\/\/www.nukepedia.com\/tcl\/tcl-reference",
+                "text": "Tcl Reference - TCL   Web Reference 1 Nuke's Tcl Reference The stuff that ships with Nuke 2 External Tcl Reference This page got me a long way back in the tcl days 3 Tcl Home For the whole deal   Book Recommendations Title Description Recommended by 1 Fr",
+                "fallback": "Tcl Reference - TCL - Nukepedia",
+                "from_url": "http:\/\/www.nukepedia.com\/tcl\/tcl-reference",
+                "service_icon": "http:\/\/www.nukepedia.com\/templates\/yoo_sync\/apple_touch_icon.png",
+                "service_name": "nukepedia.com",
+                "id": 1,
+                "original_url": "http:\/\/www.nukepedia.com\/tcl\/tcl-reference"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586370560.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "indeed, mostly ive tried to learn stuff to make me stand out. and ah thank you i was just doing a google search myself ill save that link in my notes.",
+        "ts": "1586370699.005900",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046008083543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, nukepedia has some information about it.",
+        "ts": "1586374304.006000",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057639051537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "when you link some nodes to each other, nuke is using tcl to do it",
+        "ts": "1586374335.006100",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068064846224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If anytime I say something that is not clear to you, please let me know..  I am happy to explain it",
+        "ts": "1586374394.006200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057851763172_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "at the moment, what do you would like to improve?",
+        "ts": "1586374420.006300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057647042945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you and yeah ill make sure to say something, at the moment im working on my final major, as well as improving old work for my showreel. I think my colour knowledge needs improvement to help cgi sit. Im not sure if Prospela gave you any links to my work.",
+        "ts": "1586374661.006400",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057862429108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool!",
+        "ts": "1586375099.006500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049877447427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no, they didn't",
+        "ts": "1586375106.006600",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057879651844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would be happy to help",
+        "ts": "1586375118.006700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050940052790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "when do you need to have a showreel?",
+        "ts": "1586375146.006800",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049879800435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats amazing i am so greatful for this help, originally alot of the internship deadline where soon, the first one is freefolk on the 19th april, framestore 11th may and dneg has been postpone now, but i feel lot are going to be postpone this year now.",
+        "ts": "1586375263.006900",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048884468450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/www.benramskillvfx.com\/> my site is",
+        "ts": "1586375302.007000",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068128516096_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Benramskillvfx",
+                "title": "Home | Benramskillvfx",
+                "title_link": "http:\/\/www.benramskillvfx.com\/",
+                "fallback": "Benramskillvfx: Home | Benramskillvfx",
+                "image_url": "https:\/\/static.wixstatic.com\/media\/31eccf_cc2d29aa29e345deb0f52c8191a03476%7Emv2.png\/v1\/fit\/w_2500,h_1330,al_c\/31eccf_cc2d29aa29e345deb0f52c8191a03476%7Emv2.png",
+                "from_url": "http:\/\/www.benramskillvfx.com\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 60035,
+                "service_icon": "http:\/\/static.wixstatic.com\/media\/31eccf_46834c6d5dee489c860c6a5806d7602a%7Emv2.png\/v1\/fill\/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01\/31eccf_46834c6d5dee489c860c6a5806d7602a%7Emv2.png",
+                "id": 1,
+                "original_url": "http:\/\/www.benramskillvfx.com\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586375303.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the candy man shot is the main one im reworking atm, i was lucky to get feedback from head of 3d dneg Ludovic Iochem on some improvement but it would be amazing to here what you think of him from a 2d side as  that is the main focus for me.",
+        "ts": "1586375469.007200",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046022568103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's amazing you have a website.",
+        "ts": "1586375940.007300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053469380373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All your colleagues have one as well?",
+        "ts": "1586375954.007400",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050953304582_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unfortunately, I believe all the internships will be delayed..",
+        "ts": "1586376004.007500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057752567681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but let's hope for the best.",
+        "ts": "1586376022.007600",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053472463125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking to your showreel, I don't understand if you want 3D or 2D ..",
+        "ts": "1586376101.007700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046024577959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is the first thing :slightly_smiling_face:",
+        "ts": "1586376119.007800",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046024642295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think you should be more clear on that.",
+        "ts": "1586376135.007900",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049930695347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unless you gonna apply for a really small company that you gonna do both things",
+        "ts": "1586376192.008000",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068191393296_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in my class a lot set the up as a module but i think im the only one who keeps it up to date, yeah my showreel is super out of date now i really need to update that to just 2d now.",
+        "ts": "1586376200.008100",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068191915824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes! you are doing a good job!",
+        "ts": "1586376235.008200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068194537888_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Make the effort to keep your website update and your Linkedin as well!",
+        "ts": "1586376257.008300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068195961216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "alot of my work ive had to do the 3d as well but my main focus is the comp. for my fmp im trying to just do the comp but keep been drag on 3d as well. yeah my linkedin is up to date and im really active on my Instagram as well .",
+        "ts": "1586376333.008400",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053482415061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think you should just have 2D work related. If you have a nice 3D mesh that you are using for your shot, I think it could be nice to show as well.",
+        "ts": "1586376366.008500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048942418754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well done mate!",
+        "ts": "1586376388.008600",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068204812560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Social media is the key today",
+        "ts": "1586376393.008700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068205190832_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your CV is important as well.",
+        "ts": "1586376430.008800",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050961978198_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "would you say to remove the 3d off there now? and thank you",
+        "ts": "1586376432.008900",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050962014502_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We will go to that later :slightly_smiling_face:",
+        "ts": "1586376441.009000",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053485449013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i do need to redo my cv that would super helpful thank you",
+        "ts": "1586376472.009100",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046025833095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, I think you should put Junior Compositor",
+        "ts": "1586376473.009200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050962653350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I would suggest to improve your shots, then re do the showreel, and then CV",
+        "ts": "1586376535.009300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053488118581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you think?",
+        "ts": "1586376546.009400",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053488421493_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On my showreel i will be only putting compositor, yeah sounds like an amazing plan :slightly_smiling_face: thank you!",
+        "ts": "1586376602.009500",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046026186183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "all good! happy to help",
+        "ts": "1586376623.009600",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049954666883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So - Candy man",
+        "ts": "1586376652.009700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050965427446_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also shall i give you a description of my fmp?",
+        "ts": "1586376661.009800",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057943892436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "fmp?",
+        "ts": "1586376691.009900",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048957787026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry final major project which im currently doing as group project.",
+        "ts": "1586376729.010000",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048959647298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it is up to you",
+        "ts": "1586376767.010100",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046026659111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is important to establish priorities",
+        "ts": "1586376817.010200",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050967920678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "which is the priority now?",
+        "ts": "1586376822.010300",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057949980532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm really Sorry if ive confessed you, my final major is priority as thats what im currently been marked on as well as working on, The candyman is an old project which i am working on the side  as i know it need to be better for my showreel.",
+        "ts": "1586376981.010400",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068242691104_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no worries.",
+        "ts": "1586377061.010500",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057824489553_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":slightly_smiling_face:",
+        "ts": "1586377062.010600",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068247840736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So tell me about your fmp",
+        "ts": "1586377081.010700",
+        "username": "Igor Gama (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050971942358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So the fmp is group project , my friend is a rigger and hes bought a 3d horse model and fully rigged it, and i was really lucky to get in contact myself with animator at PIXOMONDO to do the animation, my friend is currently working on the ziva muscle sim side of the horse, as he does that i have shot the footage done the clean plate of removing all the modern aspects in the shot  as its set in the 1940's and i am working on the set extension at the moment.",
+        "ts": "1586377382.010800",
+        "username": "Ben Ramskill (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057971239604_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

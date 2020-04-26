@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds really cool! Why did you decide to switch to vfx?",
+        "ts": "1543166641.004500",
+        "username": "Giacomo Verri (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487383551907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

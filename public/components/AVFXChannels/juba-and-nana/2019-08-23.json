@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats great news Nana! Congrats!",
+        "ts": "1566559720.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/736129849989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

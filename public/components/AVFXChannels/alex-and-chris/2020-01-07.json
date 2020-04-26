@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow, that video is great, I wish I had enough time to learn UE to be able to play around with using that in my work. I think I will just have to stick to Maya\/Substance\/Mari as what I know best for the next 3 months to complete my university showreel though. After that I will definitely have to look more into it!",
+        "ts": "1578432044.000100",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/885519647731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Portia! How about sending some emails or even better going in person to places like NHS or HR departments of businesses or even charities to ask to work for some work experience in the field and say that you are very eager to learn because that's what you want to study?",
+        "ts": "1551275775.000200",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562322163938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

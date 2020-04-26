@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marie, how can I help?",
+        "ts": "1567623796.000100",
+        "username": "Sally Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-04\/742532889041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

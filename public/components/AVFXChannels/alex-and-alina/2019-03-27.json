@@ -1,0 +1,70 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Спасибо большое! Если бы я знала про команду, принесла бы побольше коробку, эх! Я боюсь что до пятницы да, мне будет очень сложно успеть, но если ты считаешь, что это очень важно, я лучше поднапрягусь. Вот, и спасибо большое за список компаний и за Time Based Arts, я рассмотрю в деталях. И мне тоже было очень приятно познакомится!",
+        "ts": "1553685430.009400",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/589637072100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Привет, не торопись до пятницы - На артстейшн отличное портфолио, я его отправлю. Держи в курсе и пиши по любым вопросам. Хорошего дня!",
+        "ts": "1553685767.009500",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/591111607894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Спасибо огромное! И тебе тоже хорошего дня!:)",
+        "ts": "1553685839.009600",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590006473957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Internship в Freefolk (хорошая студия раньше называлась finish)\n<https:\/\/freefolk.com\/futurefolk\/?fbclid=IwAR1jgFCp27RCaDz0LoNDR50GR_2wdd3ba8rVdFUVvLV58RcFGIxBeYnDM6A>",
+        "ts": "1553693129.009700",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/587403516144_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Freefolk",
+                "title": "Freefolk | VFX | Colour Grading | Post Production | Freefolk",
+                "title_link": "https:\/\/freefolk.com\/futurefolk\/?fbclid=IwAR1jgFCp27RCaDz0LoNDR50GR_2wdd3ba8rVdFUVvLV58RcFGIxBeYnDM6A",
+                "text": "About us. We are a tight-knit team of creative artists, technicians, producers and problem solvers who use post production as their toolbox. Working closely with clients in the advertising, film, TV and music industries, we provide a full service post production and VFX offering including high-end colour grading, 2D &amp; 3D visual effects, shoot supervision, animation, design, direction and production..",
+                "fallback": "Freefolk: Freefolk | VFX | Colour Grading | Post Production | Freefolk",
+                "from_url": "https:\/\/freefolk.com\/futurefolk\/?fbclid=IwAR1jgFCp27RCaDz0LoNDR50GR_2wdd3ba8rVdFUVvLV58RcFGIxBeYnDM6A",
+                "service_icon": "http:\/\/cdn.freefolk.com\/static\/images\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/freefolk.com\/futurefolk\/?fbclid=IwAR1jgFCp27RCaDz0LoNDR50GR_2wdd3ba8rVdFUVvLV58RcFGIxBeYnDM6A"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Спасибо большое, выглядит отлично!",
+        "ts": "1553694428.009900",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/589824669524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

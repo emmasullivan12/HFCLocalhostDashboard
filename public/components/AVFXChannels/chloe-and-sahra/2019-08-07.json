@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Framestore’s traineeship lasts 12 weeks. On their advertisement they also mentioned that they are willing to hire the best trainees afterwards! Fingers crossed hoping to land an interview! \n\nOh no I won’t get to see you there then! Oh well, I hope you enjoy your trip back home! I’m not sure if I’ll be able to go to the October \/ November ones tbh but I’ll make make a note of them :) ",
+        "ts": "1565163922.001000",
+        "username": "Sahra Al (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-07\/707294521058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just saw your blog post on the new snazzy website!! :D The website also has lots of great information! I love it! Good job on the launch! :sparkles:",
+        "ts": "1565168745.001100",
+        "username": "Sahra Al (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-07\/720657396919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

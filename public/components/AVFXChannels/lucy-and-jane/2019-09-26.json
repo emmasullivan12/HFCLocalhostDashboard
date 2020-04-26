@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven't had the time to fully go through each and every resource in detail due to the amount of coursework I got given, but I found the Pixar video quite insightful so thanks for sending me everything",
+        "ts": "1569527740.003200",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/774449936020_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm currently doing my last year of a levels so the next step I'm looking at is University\/ art college",
+        "ts": "1569527791.003300",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/768494747953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The options that I selected were : art, graphics and english literature and I'm considering illustration or animation in university but I'm unsure of what I'll end up doing",
+        "ts": "1569527863.003400",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/762140879458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you said that you would have went a different way of you had your time again, what would you have chosen to do instead of law?",
+        "ts": "1569527935.003500",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/774918829104_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

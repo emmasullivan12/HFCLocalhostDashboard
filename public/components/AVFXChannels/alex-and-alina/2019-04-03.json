@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Алина, привет! Все хорошо\n, сдаем проект :slightly_smiling_face: Как твои успехи?",
+        "ts": "1554275542.000200",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599350031911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Я в четверг отправил твое портфолио начальникам 3Д отдела и планирования. Пока ничего не ответили, буду держать тебя в курсе.",
+        "ts": "1554275691.000300",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599352247239_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Здорово, надеюсь его уже скоро можно будет где-нибудь посмотреть:D У меня тоже все в порядке, несколько дней назад получила неожиданный заказ (фриланс) так что сижу работаю.  Спасибо большое, я была бы рада знать любое решение:)",
+        "ts": "1554281354.000400",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599449391175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Фриланс - отлично! 2Д \/ 3Д ?",
+        "ts": "1554282110.000500",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/589670211793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2D этот проект:)",
+        "ts": "1554297589.000600",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/598648539780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

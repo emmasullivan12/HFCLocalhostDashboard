@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @justice.j.allen hows it going? Is there anything you think I might be able to help you with or do you have any specific questions?\n\nHappy to share anything so fire your questions away! :slightly_smiling_face:",
+        "ts": "1540219760.000100",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/461521711266_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I’ve been struggling with how to structure my personal statement and what information I should and shouldn’t add",
+        "ts": "1540224720.000100",
+        "username": "Justice (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/462661148599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

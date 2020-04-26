@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Max, nice to e-meet you too!\n\nNot sure what they have told you about me too, so here's a brief summary: I've been working in the Animation and VFX industry in London for about 5 years, starting out as runner\/edit assistant at a studio called Jellyfish Pictures in 2013 and moving up to Assistant Editor, working across a couple of different animated TV series for different studios. I then returned to Jellyfish as a freelance Series Editor about 18 months ago. Now I am a VFX Editor at Milk, a VFX studio, working across various high end TV series and feature films.\n\nMy background before I got into VFX was graduating from Plymouth University early 2011 with a BA in Media Arts, doing some voluntary work with local organisations and charities before travelling\/working a couple of ski seasons. I also moved to Canada on a working holiday visa for a year then came back to the UK and got some work experience with small studios\/post houses in London for a bit before finally landing my first job.\n\nI saw your application from Prospela, in which you mention wanting to learn more about the VFX industry. Penny mentioned you are interested in matchmove which isn't really my skillset however I'd be happy to answer any questions you might have about the industry, what roles there are etc. :slightly_smiling_face:",
+        "ts": "1578402317.001700",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/883405043250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s a seriously busy few years! \n\nHonestly, I only started doing visual effects recently so I’ve not exactly nailed down what I’d like to do, it’s just that matchmove is one of the things I’ve been enjoying on my course and they wanted me to nail down specifics. \n\nDo you think while I’m at University, I should be seeking out volunteer work?",
+        "ts": "1578403778.001800",
+        "username": "Max Brown (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/896216831472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha, didn't really feel like it at the time but yeah I guess it was.\n\nOK sure, no worries. Well if you have any general VFX, animation or editing specific questions then I should be able to help.\n\nAs for volunteer work, I think if you can get any VFX work experience over the summer that would certainly be a good thing. It would help you stand out when sending CV's off to studios and show that you are dedicated and have a real interest in the industry. Also will give you a better idea of what kind of role you might want to work towards and more experiences to talk about in interviews and cover letters.\n\nThough I wouldn't recommend trying to do anything at the same time as your studies, it'll be a lot to take in.",
+        "ts": "1578417968.001900",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-07\/883828397362_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

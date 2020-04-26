@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today, It is the first day of my NCS.",
+        "ts": "1508591943.000054",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/260956283687_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

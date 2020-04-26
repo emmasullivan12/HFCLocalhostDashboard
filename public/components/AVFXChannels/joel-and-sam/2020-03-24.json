@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sam, I'm Joel a vfx supe at DNEG and your new mentor.\nSorry for delay in getting in touch, have just got back from a weeks \"holiday\" at the seaside. Got back to London late last night as the lockdown hit. I understand you are keen to get into vfx! I am more than happy to help in any way I can. My background is in CG, I started as a generalist CG artist at dneg back in 2006 and worked my way up through mainly lighting and look dev to become a CG supervisor. Dabbled with model\/texture\/fx type years back but focused more on technical director type work specialising in lighting and look dev before transitioning into supervision. Now I work as vfx supervisor, so overseeing all of the work DNEG does on a project. I just finished work on the new Bond film (before the release date was pushed due to Corona!). In this role I help direct the approach to the work and try to direct the look and improve the quality of everything. But basically means I spend a lot of time criticing other peoples work and rarely get a chance to do hands on stuff myself!\nPlease let me know where you are with your studies and what kind of things interest you and I will do my best to assist and advise where I can! Would be great to get a little background from you and then we can chat further.\nI am working from home remoting into the office which is a novel change as it has always been forbidden due to security measures so all a bit strange right now.\nMy motivation for signing up as a mentor is that I appreciate how much harder it is to get into the industry now compared to when I graduated and I have some spare time now the insanity of finishing Bond is over! I was very lucky to join the industry at a good time and I want to pass on some of my experience to others.\nCheers Joel",
+        "ts": "1585043726.001800",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1021840365632_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Joel, sorry that I've taken so long to reply, this whole coronavirus situation has really messed my timeline up. I'm all ready to go",
+        "ts": "1585093209.001900",
+        "username": "Sam Tucker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025876099223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could you tell me more about what your role entailed with DNEG?",
+        "ts": "1585093280.002000",
+        "username": "Sam Tucker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024113052304_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

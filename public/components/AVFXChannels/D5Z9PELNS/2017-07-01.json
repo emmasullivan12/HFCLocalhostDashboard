@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "text": "Hey <@U5XRV14GH>! Good to meet you in-person the other day :slightly_smiling_face:",
+        "user": "U4V22C6A1",
+        "ts": "1498905421.254574",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hope you and Sonal are getting on okay, although I can see she has been a little quiet (we'll chase her to give her a nudge!)",
+        "user": "U4V22C6A1",
+        "ts": "1498905446.256064",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We also thought we'd introduce you to a second E-Mentor called *Graham* ... given your creative skills &amp; interests in turning your love of writing into a career, we thought an insight to the world of Marketing and advertising at Pladis (the company who gave you the free biscuits:cookie::joy:! where Graham works) would be really interesting for you! He also runs his own branding \/ design business part-time on the side so hopefully lots of insights to share with you!",
+        "user": "U4V22C6A1",
+        "ts": "1498905538.261011",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

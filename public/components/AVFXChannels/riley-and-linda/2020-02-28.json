@@ -1,0 +1,213 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1582935937.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1582935937.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e59af8091b3500004d525b9|this link> with other teams to invite them in it_",
+        "ts": "1582935938.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1582935985.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"riley-and-linda\"",
+        "old_name": "z-shared-23",
+        "name": "riley-and-linda"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1582935994.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1582935994.001000",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1582936030.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1582936033.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@rileynelson48 has joined the channel_",
+        "ts": "1582936136.001300",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/974689028276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@zhoulinda233 has joined the channel_",
+        "ts": "1582936195.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/977005885047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Linda, please meet Riley your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1582936215.001500",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/962355590338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1582936221.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/975144927536_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1582936226.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/975162881893_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Riley! I'm Linda and I'm now a 3D look dev artist based in NYC. I just graduated last year from School of Visual Arts, MFA CA. I mainly focus on texturing and shading but can also do lighting and modeling! \n",
+        "ts": "1582936529.001800",
+        "username": "Linda (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/975148986448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope I could get some help in finding job and something about freelance jobs (btw I was an internship ar Hornet Studio from last year Sep to this year Jan)",
+        "ts": "1582936601.001900",
+        "username": "Linda (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/965043853041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Linda! Great to meet you. I'm Riley and I model, texture, and lookdev at Framestore NY. It seems like you are on a really good track with what you are interested in. Being able to model, texture, lookdev, and light is good for the New York market, because generally studios are hiring for more generalist roles. Yet it's also good to have a core skill you are really good at. SVA is a great school,cand congrats!",
+        "ts": "1582953855.002000",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/977504555014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool I would be happy to answer any questions about freelance or staff roles. Nice, so you've got some production experience. Do you have a demo reel?",
+        "ts": "1582953915.002100",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/977504905302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice to meet you! Now I don have any job and worried about that. Wait a minute lemme show you",
+        "ts": "1582954018.002200",
+        "username": "Linda (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/974842046244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.thisislindaland.com\/|https:\/\/www.thisislindaland.com\/>    here is my personal website  <https:\/\/vimeo.com\/391036885|https:\/\/vimeo.com\/391036885>  here is one of the projects that I was working at Hornet",
+        "ts": "1582954484.002300",
+        "username": "Linda (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/974844940900_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Kroger - Zero Hunger | Zero Waste",
+                "title_link": "https:\/\/vimeo.com\/391036885",
+                "author_name": "Hornet",
+                "author_link": "https:\/\/vimeo.com\/hellohornet",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/855457205_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "The Zero Hunger | Zero Waste initiative is Kroger’s social impact plan designed to cut down on food waste and commit to ending hunger by the year 2025. To spread the word about the cause, Kroger and DDB New York turned to Hornet director César Pelizer to create a spot that would be a little different from the bubbly, feel-good anthem and holiday spots, and instead, offer an emotional and symbolic story about unity and inclusion—something sweet and simple, with both clarity and emotional resonance, that would tackle the disturbing fact that one in nine Americans struggle with hunger. With diverse, expressive characters and a subtle narrative about eight people seated around a table offering a ninth seat to a lonely person walking by, César created an inclusive spot with a powerful and uplifting message.\n\nDirector César Pelizer\nAgency DDB New York\nProduction Co Hornet\nExecutive Producer Alex Unick\nHead of Production Sang-Jin Bae\nDevelopment Producer Kristin Labriola\nProducer Lucas Ajemian\nSenior Editor Anita Chao\nAssistant Editor Marianne Hill, Sam Stulin\nEdit Intern Hyeseung Kim\n\nPRE PRODUCTION\nStoryboard Artist Andres Padilla\nDesigners Matt Herring, Milo Targett, Enrique Vazquez\n\nCG\nCG Lead Corey Langelotti\nModeling & Texturing Angeline Rivera, Natalia Perez, Enrique Vazquez, Jamil Primas, Christine Kim\nRigging Jared Eng, Tyler Fotenos\nLighting & Rendering Jamil Primas, Natalia Perez, Christine Kim\nCompositors Jamil Primas, Natalia Perez, Christine Kim, Chimin Yang, Emily Mai\nLighting and Texturing Linda Zhou\nAnimators HeeJIn Kim, Paolo Cogliati, Anderson Ko\n\nAUDIO\nSound Design and Mix Honey Mix\n\nAGENCY\nHead of Account Management Jeff Prince\nAccount Director Jenai Richardson\nAccount Supervisor Madeline McDermott\nAccount Executive Danny Rodriguez\nChief Creative Officer Lisa Topol\nChief Creative Officer Derek Barnes\nGroup Creative Director Katie Jensen\nGroup Creative Director Ani Munoz\nCreative Director Paulo Junger\nHead of Art Cristina Rodriquez\nChief Production Officer David Fisher\nIntegrated Producer Elizabeth Stebner\nSenior Producer Bree Hopenwasser\nProduction Assistant Maya McGauley\nEditor Melina Tenenzapf\n\nCLIENT Kroger",
+                "fallback": "Vimeo Video: Kroger - Zero Hunger | Zero Waste",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/391036885?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Kroger - Zero Hunger | Zero Waste\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/391036885",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/391036885"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582954485.000000"
+        }
+    }
+]

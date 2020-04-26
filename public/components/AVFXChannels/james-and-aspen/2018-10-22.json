@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh now I get it it's not one person but multiple got it",
+        "ts": "1540232107.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/461625310515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The unis that I want to apply to are kings, uni of Nottingham, uni of Birmingham, royal Holloway, Winchester and imperial",
+        "ts": "1540232282.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/461724446018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s a great list!",
+        "ts": "1540244713.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/461707120212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

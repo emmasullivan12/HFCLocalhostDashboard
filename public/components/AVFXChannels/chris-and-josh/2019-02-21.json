@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "wow lovely reel",
+        "ts": "1550745824.000100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557991188007_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "great job!",
+        "ts": "1550745828.000200",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556923221634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The animation is nice, and edited well",
+        "ts": "1550745843.000300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557246562213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The only note I'd be temped to give is to either finish the geenscreen and compositing shot or remove it.",
+        "ts": "1550746033.000400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557993714631_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It doesnt fit in with the rest and still requires more work",
+        "ts": "1550746060.000500",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556352019297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The focus, black levels and grade are off",
+        "ts": "1550746107.000600",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557249797845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you made a website to host your work?",
+        "ts": "1550746190.000700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556178613072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I'm no VFX student after all! It was just a short 15 second assignment that I didn't spend very long on but I thought I would put it in there for a bit of diversity. I will remove it when I have something better to replace it with :joy:",
+        "ts": "1550765567.000800",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/558296755847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've made a website (just a skeleton version still needs a lot of work) which I will gradually add too. I'm going to be sharing it with a VFX and motion graphics student and a graphic designer to hopefully turn it into a Freelance service once we graduate :)",
+        "ts": "1550765695.000900",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556657065697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.crimsonavenue.co.uk\/>",
+        "ts": "1550765780.001000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557556387749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's the link, as I said it needs a lot of work :grin:",
+        "ts": "1550765808.001100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/558665127318_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

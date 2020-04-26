@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor\n\nI work there once per week and it hasn't yet been decided how long I will work there as it's mostly for work experience, hence for now I'm guessing it continuous.\n\nRight now I'll be handling the counter for the customers and the phone calls so, the desk work as well as filling all the medication that will and had been collected by the patients.\n\nAt the same time I'm given a short lesson on different types drugs in the medication, which medication is best for each type of sickness and how some medicines with certain drugs can be dangerous if ordered too much by a patient in which case must be reported directly to the chemist.\n\nOverall, the work experience revolves around the medical, healthcare and pharmaceutical profession, which so far has been rather very helpful.\n\n",
+        "ts": "1540320419.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-23\/462884606373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

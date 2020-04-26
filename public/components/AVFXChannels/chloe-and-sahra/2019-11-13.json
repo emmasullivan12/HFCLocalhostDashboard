@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chloe! I was having a look at opportunities in London today and have found a few junior positions at different companies, however with no indication of salaries. I was wondering if you have any advice on how much is a decent salary to ask for as a junior animator looking to work London specifically. I don’t think I’ll be able to survive commuting to London from a nearby area on anything less than 25k to be honest.  But I feel as though I may be shooting over what most companies are willing to pay junior animators.  ",
+        "ts": "1573670295.001500",
+        "username": "Sahra Al (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833337701072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

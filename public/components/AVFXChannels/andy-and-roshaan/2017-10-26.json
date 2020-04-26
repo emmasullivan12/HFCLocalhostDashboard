@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For my personal statement .. I know what i want to put in each paragraph.. Buy my English is not the strongest and one of my friends is helping me with it.. I would day its half done .. Any tips?",
+        "ts": "1509019664.000271",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/261822811585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am at my brother's wedding for the next few days...it's a long one. Would you like me to check your English in the personal statement at some point? Might not have time until early next week, but happy to check it for you ",
+        "ts": "1509028331.000241",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-26\/263312668486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

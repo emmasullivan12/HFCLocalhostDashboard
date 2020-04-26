@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi I'm in london tomorrow at a creature vfx gathering at Tower tavern just down the road from Blue zoo, I should be there around 19:20. It will be nice to meet if you are about :)",
+        "ts": "1579518096.000100",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/902033047235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I'm afraid I have another part time job on tuesdays so I wont be able to make it :disappointed: But I'm gonna have another look at your reel now so you can choose what shots to refine :slightly_smiling_face:",
+        "ts": "1579540890.000200",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/902552333091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, so i would definitely keep the red backflip, and the parkour shot too but I would spline it (it's looking reaaallly nice) as well as the dog cycle for body mechanics. I would also keep the chimpanzee shot and the cat shot as they would be the easiest to refine and have a lot of potential. I think the 'tv show' lipsync shot has too much hand movement and the acting choices would need a bit of refining as well, so it might take too long to get it show reel ready. It would be safer to invest that energy into the other shots :slightly_smiling_face: your 2d stuff is also really nice, so I would keep it in there :slightly_smiling_face:",
+        "ts": "1579541696.000300",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/913584440980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for the rendered chimpanzee shot, I would rerender it once it's finished and only show it once throughout the showreel",
+        "ts": "1579541732.000400",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/916247698422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope you enjoy the creature vfx event, its a shame I cant go",
+        "ts": "1579541754.000500",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/916248184678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much for the help I really appreciate all the advice and help you give :), oh well I'm sure there will be over chances to meet up at events. :)",
+        "ts": "1579545280.000600",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/902644266963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am good thanks, yourself?\n",
+        "ts": "1543955096.001200",
+        "username": "Michael (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/496818242422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

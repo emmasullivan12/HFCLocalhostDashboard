@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Johnny, sorry for the delay, it’s been a bit hectic, but I’ve started a Drive folder I can put my work into, it just has some basic stuff in it at the minute but I’ll have more time at the weekend to sort it out, and put more into it. Hope things are going well! \n<https:\/\/drive.google.com\/drive\/folders\/12RtmuGfyQ7z-p2_GsfYQdAC1Wvm6-AH4>",
+        "ts": "1566377972.002900",
+        "username": "Chloe O’Connor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733243487696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chloe , no worries , same here , been very busy and will be until the end of this week ,\nThank you for settings the drive , it’s working for me , it will be very useful.\n",
+        "ts": "1566417740.003000",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733610315876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

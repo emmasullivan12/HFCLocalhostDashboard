@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Lucia! Just wanted to check in and let you know I'm here if you need anything! I don't know how things are where you are right now, so hope you're doing okay! The state of California was just put in lock down because of the virus.",
+        "ts": "1584743331.006900",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1004745550867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm alright thank you, but things have been a bit overwhelming lately, sorry for not updating. I flew back to Portugal ( where I'm from) as my uni closed down and Portuguese borders were going to close",
+        "ts": "1584748931.007000",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1003562528674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I'm still re adjusting to everything and to what's going to happen to the course too",
+        "ts": "1584748947.007100",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016367563717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you're well to",
+        "ts": "1584748953.007200",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1018118628791_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*too",
+        "ts": "1584748956.007300",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1015893891444_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

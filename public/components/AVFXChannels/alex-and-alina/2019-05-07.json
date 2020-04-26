@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Spasibo bol'shoe! (prosti, na PC net russkoy klaviaturi) vigliadit ochen' zdorovo! I spasibo za pomosch!",
+        "ts": "1557218699.001800",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-07\/630036126647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Violet, how are you doing ? :slightly_smiling_face:\nI just wanted to check in, I hope you're doing well. Don't hesitate to reach out :slightly_smiling_face:",
+        "ts": "1585777754.000100",
+        "username": "Aurelie Couble (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1032898200721_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

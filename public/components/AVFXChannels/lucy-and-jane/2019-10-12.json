@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, ok \nHave a nice trip Lucy \n(Just got back from lcc open day so I'll look through what you sent here in more detail later)",
+        "ts": "1570900394.003700",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-12\/793384574464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

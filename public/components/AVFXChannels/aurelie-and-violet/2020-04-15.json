@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey thanks for the feedback!! :slightly_smiling_face: Can't wait to keep improving it. The picture is also very helpful! I will get to work and then send you an update sometime soon!",
+        "ts": "1586982661.002200",
+        "username": "Violet Gonzalez (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1071370059508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

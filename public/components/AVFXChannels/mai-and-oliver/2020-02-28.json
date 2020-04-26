@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok no worries :slightly_smiling_face: Hope you had a nice birthday!",
+        "ts": "1582906875.000200",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/974393650917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Hi, just wondering if you got my message and if you have any questions? ",
+        "user": "U5XVA0B7T",
+        "ts": "1498568552.921891",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "ga9587578ebb",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6a9587578ebbad5945c7259363b28670.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0006-72.png",
+            "first_name": "Alex",
+            "real_name": "Alex",
+            "display_name": "alexgordon",
+            "team": "T4UUTPV18",
+            "name": "alexgordon",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

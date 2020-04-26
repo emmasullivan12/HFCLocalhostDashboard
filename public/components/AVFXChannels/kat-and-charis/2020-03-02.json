@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Can't wait to have a look. I'll take a look this afternoon and aim to have some feedback with you by this evening.",
+        "ts": "1583145907.000800",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977002556304_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Charis, I have done some drawovers and notes for you. Here's the syncsketch link - can you let me know if it's working and you can see my drawovers and comments?",
+        "ts": "1583185738.000900",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977759870740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/>",
+        "ts": "1583185757.001000",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/978213882608_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "text": "Review media collaboratively in the cloud - no setup, visual creative feedback, all real time with just a link.",
+                "fallback": "Review media collaboratively in the cloud - no setup, visual creative feedback, all real time with just a link.",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583185758.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also let me know if you need any clarification on anything!",
+        "ts": "1583185765.001200",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/965426210610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These are mostly just suggestions, so feel free to take them with a pinch of salt!",
+        "ts": "1583185784.001300",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/978233342485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

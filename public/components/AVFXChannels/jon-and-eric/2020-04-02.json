@@ -1,0 +1,470 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585819595.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585819595.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e85afca86e7aa00042448c7|this link> with other teams to invite them in it_",
+        "ts": "1585819595.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1585821324.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1585821331.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585821342.000900",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585821342.001100",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1585821351.001200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-26\" to \"jon-and-eric\"",
+        "old_name": "z-shared-26",
+        "name": "jon-and-eric"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@eric.barrailler has joined the channel_",
+        "ts": "1585821461.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044703587703_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jon.rogala has joined the channel_",
+        "ts": "1585821469.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044643195392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eric, please meet Jon your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1585821485.001500",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1031358080690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1585821492.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1034613024081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1585821497.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043324380756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jon! thank you very much!",
+        "ts": "1585834625.001800",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1031943847234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eric!\n\nI’m extremely excited to meet you!\n\nLet me introduce myself.\nMy name is Jon Rogala, and I’m a Nuke compositor currently at Framestore Chicago.\nI studied Animation for Visual Effects at DePaul University in Chicago. I moved to Los Angeles after university, and spent a few years in LA working in episodic at Picture Shop, and Advertising at MPC LA as a junior compositor, then mid.\nI transferred up to MPC Montreal to work on 1917 and Maleficent 2, and found my way back home in Chicago at Framestore :)\n\nWhen I’m not working, I’m usually playing video games, or watching movies. I picked up bouldering recently too to stay in shape!\n\nI’m really looking forward to helping you navigate your way around as an artist!",
+        "ts": "1585839355.001900",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044758621511_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you tell me some more about yourself, Eric?\n\nWhat directed you to compositing, and how long have you been doing visual effects work? \n(And what do you do for fun??)",
+        "ts": "1585839413.002000",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1045919981344_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure,\n\nI'm leaving in the beautiful Montreal, I studied visual arts and 2d and 3d animation 20 years ago. I always practiced arts as a hobby or a bit of little contract.\n\nI did airbrush custom paint for automotive and motorcycle about 3 years. \nI just went back to university last automne semester for a 4 months intensive Nuke compositing class. \n\nIn January I had my first job at Rayon Fx, a small compagnie as a GG Compositor. All the shot where totally 3d rendering for a Discovery Channel show called \" Rise of The Machines\". I worked there for about 3 weeks to help clear the episodes. \n\nIn February, as I was searching for new opportunities, there was not a lot of junior positions, I accepted a runner position at Cinesite Montreal. I worked just there for about 3 weeks and I had an opportunity for a junior compositor position at Mels Studios. \n\nLast week of February u was working at Mels Studios for Hollywood shots and some independant movies. I did different kind of compositing : Beauty ( get ride of a huge pimple on Kevin Hart tempe ) for me it was a huge challenge because I never did. I did clean up too to erase things like houses, fences, etc. On live action shots ( thank you nuke for camera tracker 3d and cards ). \n\nBut with when the coronavirus hit Montreal my studio fired all the 7 new junior compositors employees they just hired in February. Because of the remote deployment and the difficulties to supervised remote juniors. \n\nSo I here trying to improve my skills and had good shots to my demo reel. \n\nFor fun I do appreciate watching Netflix and I'm doing 3d modeling and texturing in Maya, Zbrush and substance painter. I like to go fishing too.",
+        "ts": "1585840871.002100",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1036033808081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's a link to my reel and please tell me if there s any kind of shots could improve it. Because of the NDAs I couldnt put any of my real work on movie shots ... the majority of the shots are school stuff except the first one where I did an Hollywood swap if me in Tarentino movie Reservoir Dog.\n <https:\/\/vimeo.com\/380358602|https:\/\/vimeo.com\/380358602>",
+        "ts": "1585841072.002200",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043940182789_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Eric Barrailler Junior VFX Compositor Demo Reel 2020",
+                "title_link": "https:\/\/vimeo.com\/380358602",
+                "author_name": "Éric Barrailler",
+                "author_link": "https:\/\/vimeo.com\/user103335364",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/857008753_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Newly Graduate From NAD \nJunior VFX Compositor \/ Rotoscoping, Clean Panting, Cg Integration.\n\nAvailable Now...\n\nLinkedin: ",
+                "fallback": "Vimeo Video: Eric Barrailler Junior VFX Compositor Demo Reel 2020",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/380358602?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Eric Barrailler Junior VFX Compositor Demo Reel 2020\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/380358602",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/380358602"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585841072.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011C4T61Q8",
+                "created": 1585841883,
+                "timestamp": 1585841883,
+                "name": "received_3051500631560908.png",
+                "title": "received 3051500631560908",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2444021,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011C4T61Q8\/received_3051500631560908.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011C4T61Q8\/download\/received_3051500631560908.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T61Q8-d3422c5b0e\/received_3051500631560908_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011C4T61Q8\/received_3051500631560908.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011C4T61Q8-224979e4f1",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585841889.002400"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011A5T3ENQ",
+                "created": 1585841883,
+                "timestamp": 1585841883,
+                "name": "received_544844489492566.png",
+                "title": "received 544844489492566",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1266906,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011A5T3ENQ\/received_544844489492566.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011A5T3ENQ\/download\/received_544844489492566.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A5T3ENQ-1fbde32e50\/received_544844489492566_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "thumb_tiny": "AwAbADCp5bdRx9RTlgZuc4+XNXPlXG44p29B3pARRkKwVmA2gj8aZKsv3clk61YLoRwee3FVXkuFGT0+goAQg+aAw257nmmupZwS4PPOO1WYGMsZLqMg4pxRfQUAQ3X8P41CDx1\/Wru1WGGAI96QwRY+4KAKu44xk\/nTTz1q0IY\/7v609YY1GQozQA2FvvLzwcgkYp7UpAqNuDQM\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011A5T3ENQ\/received_544844489492566.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011A5T3ENQ-b0ff9a230f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585841890.002700"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011C4T56D6",
+                "created": 1585841882,
+                "timestamp": 1585841882,
+                "name": "received_210648850264106.jpeg",
+                "title": "received 210648850264106",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 128439,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011C4T56D6\/received_210648850264106.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011C4T56D6\/download\/received_210648850264106.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011C4T56D6-3a8f27b607\/received_210648850264106_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "thumb_tiny": "AwAbADBxJbGR0GKDk44PFTEqByKY0ozhV59T0qhDTkgDb0pQDtxt\/GmvIVOOvqelItyMkFee2O9ADlypztz9aMexqYYKg4PNHHvQBBcswAKjP61CHdioPA77RirjD5abQBVETs3oPepI7bDA5JPtVhRk1aRQq8DFIBCvyjI5qHbgVYPSo6EJn\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011C4T56D6\/received_210648850264106.jpeg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011C4T56D6-90a0ce9d6b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585841891.003000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I took the shots on pexel and the car is rigged and textured. \nI'm at the step when I do match move the ground and the wall of the BG with 2 cards. It s done... I need to export as .fbx the 2 geometries to maya but I have difficulties to apply textures on it.\nI think I need to use a project3d node on the 2 geometries and bake it with the UVproject node but I never did. \nBecause I want to add those textures into maya to have a efficient texture on the car. The reflection of the ground need to be on the car etc. \nIn maya I had a hdr light sky.. \nFor the man I will do a rotoscopie and use this camera instead of the bg camera. \nI was thinking of exporting a cards from nuke ro maya with the rotoscoped man as a animated texture to do a good match move with the animation of the car lifted.",
+        "ts": "1585842337.003300",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044220915636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pexels.com\/fr-fr\/video\/2080389\/|https:\/\/www.pexels.com\/fr-fr\/video\/2080389\/>",
+        "ts": "1585842520.003400",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044230711108_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Vidéo gratuite de compatible, des exercices, dur",
+                "title_link": "https:\/\/www.pexels.com\/fr-fr\/video\/2080389\/",
+                "text": "L’une des nombreuses superbes vidéos gratuites de Pexels. Thème de la vidéo : slow motion, sportif, vigoureux",
+                "fallback": "Vidéo gratuite de compatible, des exercices, dur",
+                "image_url": "https:\/\/images.pexels.com\/videos\/2080389\/free-video-2080389.jpg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "from_url": "https:\/\/www.pexels.com\/fr-fr\/video\/2080389\/",
+                "image_width": 478,
+                "image_height": 250,
+                "image_bytes": 58615,
+                "service_icon": "https:\/\/www.pexels.com\/assets\/icons\/apple-touch-icon-06fc98261c772fe20d584aba2336ad2bb32dffced6ec5470b03228548042f162.png",
+                "service_name": "Pexels",
+                "id": 1,
+                "original_url": "https:\/\/www.pexels.com\/fr-fr\/video\/2080389\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585842525.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pexels.com\/fr-fr\/video\/2836324\/|https:\/\/www.pexels.com\/fr-fr\/video\/2836324\/>",
+        "ts": "1585842654.003600",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1046234322592_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Vidéo gratuite de architecture, art, bâtiments",
+                "title_link": "https:\/\/www.pexels.com\/fr-fr\/video\/2836324\/",
+                "text": "L’une des nombreuses superbes vidéos gratuites de Pexels. Thème de la vidéo : places de parking, poudre, sol",
+                "fallback": "Vidéo gratuite de architecture, art, bâtiments",
+                "image_url": "https:\/\/images.pexels.com\/videos\/2836324\/free-video-2836324.jpg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "from_url": "https:\/\/www.pexels.com\/fr-fr\/video\/2836324\/",
+                "image_width": 478,
+                "image_height": 250,
+                "image_bytes": 93620,
+                "service_icon": "https:\/\/www.pexels.com\/assets\/icons\/apple-touch-icon-06fc98261c772fe20d584aba2336ad2bb32dffced6ec5470b03228548042f162.png",
+                "service_name": "Pexels",
+                "id": 1,
+                "original_url": "https:\/\/www.pexels.com\/fr-fr\/video\/2836324\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585842655.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I undistort the 2 footage before any 3d tracking. The man footage I did a mask of the man and the tire in alpha mask of the cameratracker to track only the bg.",
+        "ts": "1585842764.003800",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1036212401329_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

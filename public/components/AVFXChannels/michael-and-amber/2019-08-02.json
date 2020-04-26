@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I’ll definitely messaged the recruiters and check if there’s any vacancies available. I’ll be free all next week . So, I don’t mind having a Skype call on next Wednesday or Thursday? But if there’s a better day for you let me know and what time is ok for you? ",
+        "ts": "1564753043.001300",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/703030728003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

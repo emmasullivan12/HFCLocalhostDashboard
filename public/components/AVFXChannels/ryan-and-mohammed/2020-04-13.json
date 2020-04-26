@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Mohammed, great to meet you too! That sounds like some really cool background experience. What are you doing with video games? Am I correct that you're interested in learning more about VFX?",
+        "ts": "1586814250.001900",
+        "username": "Ryan Penny (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1059949820355_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

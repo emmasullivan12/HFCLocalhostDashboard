@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is the subject of the dream? Or is it abstract?",
+        "ts": "1550576322.000300",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554654434850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

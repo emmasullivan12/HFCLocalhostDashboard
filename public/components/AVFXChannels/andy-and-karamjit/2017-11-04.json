@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Karamjit, no need to apologise! I hope your feeling better. Ultimately I’m there for you and how you want to develop. As we progress going forward what sort of mentor do you want me to be? Someone who challenges, provides insights, or waits for you to specify what you need? Let me know. ",
+        "ts": "1509820900.000035",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-04\/267224003429_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

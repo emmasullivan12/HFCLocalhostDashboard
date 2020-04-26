@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sahra! I am so terribly sorry for my absence",
+        "ts": "1587632927.000100",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081109027650_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you doing?",
+        "ts": "1587632932.000200",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081319203731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

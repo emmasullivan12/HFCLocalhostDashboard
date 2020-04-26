@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for your advice, I've seen this one. Honestly I saw a lot of Reels. Once I've finished mine, can you give me some feedback? I think it takes me a long time :slightly_smiling_face:",
+        "ts": "1544522825.003200",
+        "username": "Eva (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500739084178_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happily. Reels are hard to put together, it does take time, don't worry. :slightly_smiling_face:",
+        "ts": "1544526882.003300",
+        "username": "Patricia Llaguno (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500687803507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

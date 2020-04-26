@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marcus,\n\nI hope you had a good Easter weekend. I am Diogo Teixeira, a 3rd Year student and studio assistant at Escape Studios. All my life I have always been fascinated by the effects done in film, watching things like Iron Man and Transformers. These films inspired me to study a film production course for GCSE and College. After doing a VFX module I had gotten hooked on the feeling of creating VFX and made this short for my final major project. I then moved to London to study at Escape studios in 2017. Here I made the decision to become a 2D VFX artist. Here is a link to my current showreel: <https:\/\/www.youtube.com\/watch?v=enVU0U1VvFc>. If you have any tips for my reel, I would love to hear them :blush:.\n\nIn my spare time, I like to play video games, watch films, cooking and hanging out with friends. It sounds quite basic but its really the only things I have time for besides studying and working. Do you have any hobbies and things that you would like to share?",
+        "ts": "1586863348.001800",
+        "username": "Diogo Teixeira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1083984258496_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Diogo Teixeira Spring Reel 2020",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=enVU0U1VvFc",
+                "author_name": "Diogo Teixeira",
+                "author_link": "https:\/\/www.youtube.com\/user\/dfft12",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/enVU0U1VvFc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Diogo Teixeira Spring Reel 2020",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/enVU0U1VvFc?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=enVU0U1VvFc",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=enVU0U1VvFc"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586863349.000000"
+        }
+    }
+]

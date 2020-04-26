@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good! I'll see if I can find some",
+        "ts": "1569848368.000600",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/771558202321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've heard Mixamo is a good resource for models and reference anim!",
+        "ts": "1569849909.000700",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/778030787472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh okey , Ill check there them :33",
+        "ts": "1569887265.000800",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/778856545024_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

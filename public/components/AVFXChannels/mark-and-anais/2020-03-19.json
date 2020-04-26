@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure that is a good idea, I actually have just had my contract terminated, because of the virus, but I am sure I will be able to find someone who will be able to show you around for a day.  Keep well and contact me when you are ready.",
+        "ts": "1584619038.003400",
+        "username": "Mark Sherwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013742802662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mark,\nI am sorry to hear. I see a lot of companies are closing the doors at the moment.\nStay well, I will contact you again once all this has passed.\nThank again for your advices",
+        "ts": "1584619129.003500",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011553962405_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

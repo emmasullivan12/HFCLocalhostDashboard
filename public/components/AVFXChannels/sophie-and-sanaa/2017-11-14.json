@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sanaa, how are you? I have just been looking through your profile and I saw that you don’t think you know what skills employers are looking for. I would be really interested to hear what you think your strengths and weaknesses are? We can then talk through the skills you have that employers would be looking for :blush:",
+        "ts": "1510732388.000239",
+        "username": "sophie.carlin (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272491795251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

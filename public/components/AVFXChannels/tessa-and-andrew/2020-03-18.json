@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Andrew. Cool, thanks for the update. I think a lot can be done in 8 weeks, but at the same time, I feel it's a bit short for a final project animation. You want to get the best out of it and I agree you wouldn't really have enough time to get things looking nice and polished. Doing pre-production is a smart alternative. I more or less decide on the same alternative while doing my specialization in uni. If you have any work to show that you'd like to get my thoughts on, even if it's pre-production, feel free to let me know. :slightly_smiling_face:",
+        "ts": "1584516860.000200",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/996468929971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have done a lot of work par for the foundation course but one of the issues I brought up was that almost none of it was relevant to the industry (or able to be understood by someone within industry). Actual work that can be seen by the industry coming soon",
+        "ts": "1584554993.000300",
+        "username": "Andrew Jara (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/999593691857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

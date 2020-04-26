@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Adam! Aw that's quite alright, you don't have to explain yourself. I'm so sorry for your loss, I really am. And travelling is such upheaval, don't beat yourself up too much ok! I hope you're getting back into the swing of things now? Are you enjoying uni projects at all? Did you hear anything about any apprenticeships yet? Hoping loads of good things happen for you! :slightly_smiling_face:",
+        "ts": "1552578132.000200",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/578468877750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

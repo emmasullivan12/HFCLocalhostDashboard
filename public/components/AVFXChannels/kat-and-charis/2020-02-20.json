@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats awesome! I went to Annecy festival last summer and saw the locksmith presentation on rons gone wrong, cant wait to see it! We also have someone from locksmith visiting our uni next week coincidentally! \nOur thesis films are completely individual, so its just me doing all stages of production.\nI would love to learn of more london based studios, as im currently only aware of a few and im sure there are loads more out there! I would also hugely appreciate your honest advice on my animation - any critique that can help me improve in the long run! I dont have much time this year to finish my film so i might not be able to immediately action all your advice, however i really want to learn from this experience so that i can do better in the future! After my deadline on the 11th of may, i plan to put together a showreel of my best work for annecy this summer, and also hope to animate a few new things for it, so when that time comes around i would also really love to know what you think my best work is! \nThanks for offering to mentor me btw, looking forward to getting to know you!",
+        "ts": "1582231878.001500",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/951910649889_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also sorry for the delayed reply, the app didnt notify me so ill try my best to check it more often from now!",
+        "ts": "1582232198.001600",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/950574558627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

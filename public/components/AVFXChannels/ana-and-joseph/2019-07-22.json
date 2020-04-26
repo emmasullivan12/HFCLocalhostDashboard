@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Joseph! I'm alright thanks, how are you doing?",
+        "ts": "1563827293.000100",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/702414141125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just thought i'd ask what kind of thing you expect from me in this mentoring? I'm new to this and I thought it would be best to ask what _you'd_ like",
+        "ts": "1563827444.000200",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/702396941984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also less formal but what work inspires you?",
+        "ts": "1563827462.000300",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/696061857729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "like any stuff you've watched where you think 'fwaugh I wish I could animate like _that_'",
+        "ts": "1563827745.000400",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/704263979287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

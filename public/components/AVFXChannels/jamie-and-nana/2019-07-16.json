@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U6D2VCN07|smooz> what are up to at work today or this week?",
+        "ts": "1563296073.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-16\/689938280513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

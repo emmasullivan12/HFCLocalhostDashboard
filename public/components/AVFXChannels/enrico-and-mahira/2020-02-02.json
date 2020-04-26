@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mahira, no worries, I’ve been busy with work as well. I don’t know how to use Nuke, but I’m learning ZBrush for sculpting. I would suggest you to download Blender, is open source, means that is free!\n\nI tried oil painting but I rather gouache as you can decide if to use it like watercolor approach (which is very good for sketchbooks and quick portable sketches, so with a lot of water) or more dense, just like the oil! \n\nAlso if you add white color to dark colors it actually becomes more light (instead of watercolor that tends to go darker and darker if you add) I used to try oil when I was in high school but it takes a long time to dry, but it surely gives you more time to change the shapes and have more control on shades.\n\nAt work is all good thanks, we are almost done with all the episodes, so If I can’t continue with this company I’ll have to look for another project!  what kind of project are you working on with Nuke?",
+        "ts": "1580644909.000400",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-02\/921408067827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

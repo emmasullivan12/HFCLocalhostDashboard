@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you getting on with your applications Tiago? Still busy with your runner position?",
+        "ts": "1553259055.013700",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-22\/586094689127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

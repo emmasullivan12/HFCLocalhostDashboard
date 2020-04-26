@@ -1,0 +1,416 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope Alexander got back to you. EXR is the most likely way that he would want it exported. Especially is that is how it originally came. cineon the colour space, but I'm not sure what colour space you are working in",
+        "ts": "1584093286.006600",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/998231327749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry that should have said is cineon the colour space you worked in?",
+        "ts": "1584094038.006700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988157971393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FVC7KGLBS",
+                "created": 1584094724,
+                "timestamp": 1584094724,
+                "name": "Screenshot 2020-03-13 at 10.17.11.png",
+                "title": "Screenshot 2020-03-13 at 10.17.11",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 287005,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVC7KGLBS\/screenshot_2020-03-13_at_10.17.11.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVC7KGLBS\/download\/screenshot_2020-03-13_at_10.17.11.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 251,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 335,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 503,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1146,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 670,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC7KGLBS-9730deca23\/screenshot_2020-03-13_at_10.17.11_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 715,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1188,
+                "original_h": 1702,
+                "thumb_tiny": "AwAwACGrnmjHvQAc9KUkAdqAEwfWjB9aOKTIoAPxo\/GjijigBR1pS2O1J+FBPHf86AAtn0pMn1oyfekoAOKOKXHvRj3oAM0YyO9AOO9LnvnmgBtFL+VFACUUUUAf\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FVC7KGLBS\/screenshot_2020-03-13_at_10.17.11.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FVC7KGLBS-7e745b1c6b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584094728.006800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you have the file type set to mov which would be incorrect",
+        "ts": "1584096879.007100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/998337057653_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "where the file is writing to at the top, you have .mov at the end of the export, you need to change it to .exr but this will write a series of images (as in exr's are image files). whenever you export image files you need to have have this at the end .####.exr and you would do the same with dpx or jpg, they would all need 4 pound signs",
+        "ts": "1584097082.007200",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1000534325014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Change of plan - the colourist thinks EXRS in Linear. Trying that now.  Yup or 0%4D - I think? is that right?",
+        "ts": "1584097172.007300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988247517857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also, your file name has a space in it, normally from my experience you cant have a space in a Nuke export, or file you read in.",
+        "ts": "1584097217.007400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/985540697858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah that should work too",
+        "ts": "1584097222.007500",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988249321953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "a tip is you might want to create a special folder for the export of those images",
+        "ts": "1584097255.007600",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/986862283427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "otherwise if you write it out to a folder with other items in you'll have all the files in the one folder",
+        "ts": "1584097283.007700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1000540693622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you worked on the shot was colour space linear?",
+        "ts": "1584097304.007800",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988251957729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F0100G0KLFQ",
+                "created": 1584097417,
+                "timestamp": 1584097417,
+                "name": "Screenshot 2020-03-13 at 11.02.27.png",
+                "title": "Screenshot 2020-03-13 at 11.02.27",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 364096,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0100G0KLFQ\/screenshot_2020-03-13_at_11.02.27.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0100G0KLFQ\/download\/screenshot_2020-03-13_at_11.02.27.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 243,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 324,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 487,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1184,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 649,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0100G0KLFQ-242be7d983\/screenshot_2020-03-13_at_11.02.27_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 692,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1196,
+                "original_h": 1770,
+                "thumb_tiny": "AwAwACCrjjvQcj1oAFH4CgBvFGBTv+AikxQAL1pxIwOaSQfJmoKAJ+Pag4x2qClX7woAmkPyVBUznK8dai2n0oASlX7wo2n0pQpBFAH\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F0100G0KLFQ\/screenshot_2020-03-13_at_11.02.27.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F0100G0KLFQ-ac7e8d5e7d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584097421.007900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Def creating a special folder. Remember the shot came as a .mxf file so had to export to demonised exrs before starting work. Hope I'm getting the workflow right! Didn't forget to put the noise back on and match as best as I could in the blue channel.",
+        "ts": "1584097507.008200",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/986869679827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*denoised",
+        "ts": "1584097522.008300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/985549785954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "never heard of an mxf file format, certainly never used in a workflow for vfx. Just had to google it",
+        "ts": "1584097984.008400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/998350060016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "well if they're happy to receive it back that way no worries, I guess it's just finding the best way to send it back to them",
+        "ts": "1584098019.008500",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/998369342101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hadn't heard of it either. Lucked out that Nuke imported it (huge file) But Nuke def does not export that format. Trying exrs now. Will zip and send and hope for the best! Thx for help on this.",
+        "ts": "1584098202.008600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988276394241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no worries mate, fingers crossed it all goes through correctly. Then it might be worth saying to Alexander as part of another email about whether you send the invoice to him for the work, he'll probably say send it to the producer but just reminds him",
+        "ts": "1584100683.008700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/997964374788_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Crashed Nuke a couple of times! Maybe 3rd time lucky... They've been in touch about payment so all good there. Just want more work and more practice tbh - lol!",
+        "ts": "1584104083.008800",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/998066809204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FVCHVKSAH",
+                "created": 1584105869,
+                "timestamp": 1584105869,
+                "name": "Screenshot 2020-03-13 at 13.04.50.png",
+                "title": "Screenshot 2020-03-13 at 13.04.50",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 627398,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVCHVKSAH\/screenshot_2020-03-13_at_13.04.50.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVCHVKSAH\/download\/screenshot_2020-03-13_at_13.04.50.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 289,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 386,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 578,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 643,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 771,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVCHVKSAH-21726d5e7d\/screenshot_2020-03-13_at_13.04.50_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 823,
+                "image_exif_rotation": 1,
+                "original_w": 3132,
+                "original_h": 2516,
+                "thumb_tiny": "AwAmADDSoopKAF7ZoBzSd+\/T1pRQAZpDz1FLSUAKaSlNJQAnG7t0pw\/CkJ569vSlFABSUtJQAgcN2pc1HH0P1p9AMCw3Y56etOBqM\/f\/AA\/rT170AGaM0lFAH\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FVCHVKSAH\/screenshot_2020-03-13_at_13.04.50.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FVCHVKSAH-4a1ef79431",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584105876.008900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is Framestore looking for roto\/cleanup right now? I know a friend said they took on some people here for Vancouver, but not sure if they're hiring for London.",
+        "ts": "1584111914.009200",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988784788577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've stopped looking in London tbh. I just get those Glassdoor emails daily - and Framestore is hiring a heck of a lot of people - for months it seems. There are 0 roto\/cleanup jobs that I can find at the moment. Josh Parks is saying (in a newsletter) there might be remote work bouncing around because of COVID19so I'll reach out to him with that new cleanup on my reel. Fingers crossed something appears.",
+        "ts": "1584118857.009300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1001411687926_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the meanwhile more showreel work and learning a bit more about exporting files! So I don't get stuck next time. And sorting out my application for Lost Boys in September.",
+        "ts": "1584118940.009400",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/986418084466_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for help this week.  Helped me earn £50 off my first paying gig! Have a great weekend. ",
+        "ts": "1584125738.009500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999506869280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh nice! That's great experience. I think the biggest difference is that in most small studios in the city, they typically don't have staff asset people so when I was freelancing, I didn't have anyone to learn from. At framestore it's nice to have 4 other asset people who I can ask questions and bounce ideas off of. I think bigger studios are more accustomed to doing a lot of 3D work as well so they are more reasonable with scheduling. For example I think sometimes in smaller studios producers don't realize that CAD data from a client can't just be instantly fixed to make it production friendly. So i think I prefer bigger studios, but the major drawback is that I think it takes a longer to move up at a bigger studio and the responsibility and creative input takes a lot of years to gain",
+        "ts": "1584545953.002200",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/996360048370_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But since you already have a lot of experience as a vfx supervisor you might be able to land a similar role at a bigger studio",
+        "ts": "1584545986.002300",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1008692973492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

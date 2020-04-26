@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, Dan Im not going to be able to make out catch up today I have to run some errands at lunch.",
+        "ts": "1587467727.009600",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1088468553057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would ou be free later this week?",
+        "ts": "1587467736.009700",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1069109129878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, that's completely fine - I have a university deadline this Friday so I should probably focus on that anyway!",
+        "ts": "1587487266.009800",
+        "username": "Dan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1082867008580_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

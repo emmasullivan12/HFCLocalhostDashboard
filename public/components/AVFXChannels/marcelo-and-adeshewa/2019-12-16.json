@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Marcelo!\nI have to say, my favourite thing about these shows are the animation! I like the bouncy feeling given through squash and stretch techniques and the character design is pleasing to look at. I found my self laughing at Pony because of how odd it was :blush: You're really talented Marcelo! I'm sorry for the late responses, apparently my phone model doesn't allow Slack to send notifications so I have to keep manually checking which I sometimes forget to do :tired_face: I'll try my best to sort it out but I am wishing you a merry Christmas! :hugging_face:",
+        "ts": "1576559303.000100",
+        "username": "Adeshewa Kosoko (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/878248661191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

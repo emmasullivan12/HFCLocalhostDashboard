@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s great to hear!! Did you find out any surprises? ",
+        "ts": "1511273829.000106",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/275162389841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

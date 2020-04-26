@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sid! Things are going ok thanks, I've been trying to balance out my work life etc. Hope you're well :grin: I wondered if you could tell me a bit about your day to day at your job?",
+        "ts": "1563444350.002400",
+        "username": "Lehi Briscoe (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-18\/687053903507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

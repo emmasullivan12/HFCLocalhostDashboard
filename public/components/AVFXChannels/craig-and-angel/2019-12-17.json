@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh thats looking sweet to me! Might be worth getting some wireframes over :) i wont be back in until around 30th \/ 2nd but i can show these past my friend then :)",
+        "ts": "1576577932.001500",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/863908397026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks craig, I'm enjoying the texturing at the moment. But when it's done going to moeel a small scene texture then light it. Might add it in my reel to show new skills. Worried I wont get response due to lack of knowledge in texturing. That be great thank you :) I have better renders.",
+        "ts": "1576624709.001600",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/877856268992_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gotta spend more time on the bolts and wood and move onto the dail tone and the rest. You think where this level is it's worth for a reel alone or with a scene could help better sell it.",
+        "ts": "1576624773.001700",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/880065317190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And okay, you going on holiday? If you are hope you have a great Christmas:) I'll just be in London.",
+        "ts": "1576624941.001800",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/879720432391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

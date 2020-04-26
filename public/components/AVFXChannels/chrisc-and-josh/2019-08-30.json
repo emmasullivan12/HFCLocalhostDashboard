@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If its going to be tricky to schedule, we can wait till you get back from your holiday? what is the first wendnesday you will be available?",
+        "ts": "1567150842.000500",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-30\/732079844819_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

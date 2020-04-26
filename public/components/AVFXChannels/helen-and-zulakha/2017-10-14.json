@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh okay interesting",
+        "ts": "1507995303.000018",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/255738042016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say a manager role is very varied it's a combination of things some things are very day today and operational e.g dealing with patient complaints, sorting rotas etc etc",
+        "ts": "1507995362.000102",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256313604179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And the other half is more strategic so you could be doing things like writing business cases, service improvement and service redesign",
+        "ts": "1507995397.000066",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256313704723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I enjoy that element of it more but the operational part can be fun too, it's very much about fire fighting and problem solving",
+        "ts": "1507995420.000036",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256528459973_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like the fact you get so much variety",
+        "ts": "1507995427.000082",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256313771107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Clinical roles are obviously much more specialised and you become an expert in a more specific area",
+        "ts": "1507995450.000030",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/257274141702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

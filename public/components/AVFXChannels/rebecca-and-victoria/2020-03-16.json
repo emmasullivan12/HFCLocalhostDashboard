@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey no it’s good! Sorry for late reply - it’s been mental with the virus stuff",
+        "ts": "1584392413.003900",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004103397152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

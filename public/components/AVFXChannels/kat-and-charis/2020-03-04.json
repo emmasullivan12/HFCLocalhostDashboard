@@ -1,0 +1,93 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ive done some work on those shots you critiqued for me, and am uploading the newer versions to the dropbox! I'm having to delete the old ones as dropbox says im out of space (despite those two files being the only thing i had in there :sweat_smile:), would hugely appreciate it if you dont mind taking another look and let me know if ive understood your feedback correctly! I found it really useful, so thank you!",
+        "ts": "1583358621.001900",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/982044091348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, studio aka internships just opened up and id appreciate your perspective on what shots I should apply with as they say theyd rather see 1 good shot than several ok ones with a good one in amongst them, im not sure what my best work is!",
+        "ts": "1583358746.002000",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/982501449776_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure thing! Do you have a reel that I can look at? I can pick out what your best shot is! I may need to curb your expectations as AKA currently don't have a lot of 3d work, so I wouldn't be surprised if they are looking for a 2d artist more specifically. But it's always worth sending your work anyway, they do keep stuff on file! I remember I applied to them when I first graduated, and at the time they didn't have any openings, but then 5 years later... haha",
+        "ts": "1583362238.002100",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/982597813184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The space is probably on my end! I'll clear up some space for you",
+        "ts": "1583362605.002200",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/982606469600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it takes into account what I've got in the rest of my dropbox, which is pretty manic full!",
+        "ts": "1583362623.002300",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/969819463954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/394138797|https:\/\/vimeo.com\/394138797> this has the old versions of the trapeze shots, so imagine the new ones from the dropbox in there instead :sweat_smile: I know i can see a lot of improvements i could  make to my older work, but im worried that if i take the time to go back to them i wont finish my film in time for deadline, so im doing this internship application without holding out too much hope but as you said, they keep a record and hopefully they might remember me in the future when i have a better reel :joy: still, let me know what you think is my best option!",
+        "ts": "1583369053.002400",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/984947639446_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "3D Animation Showreel Spring 2020",
+                "title_link": "https:\/\/vimeo.com\/394138797",
+                "author_name": "Charis Dussek",
+                "author_link": "https:\/\/vimeo.com\/charisdussek",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/859897290_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: 3D Animation Showreel Spring 2020",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/394138797?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"3D Animation Showreel Spring 2020\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/394138797",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/394138797"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583369054.000000"
+        }
+    }
+]

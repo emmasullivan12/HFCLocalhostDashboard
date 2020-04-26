@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh awesome, I’ve been signed up to his newsletter for a while and he always has some awesome tips and tricks. His courses also seem pretty comprehensive and how DNEG works too!",
+        "ts": "1571351283.003200",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-17\/793413101713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

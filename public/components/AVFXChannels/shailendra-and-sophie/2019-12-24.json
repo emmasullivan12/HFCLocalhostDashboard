@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sophie!\nnice and bright lighting.\ncould you look into rendering passes for compositing\n1. shadow pass(all white screen with shadows on the ground), no ship\n2. ship with alpha on black(can be single layer or broken into multiple passes e.g. specular)\n3. if you are using more than one light each light can be a layer.\n\nthere is no specific right way. we are looking for flexibility so we can making quick changes without re-rendering.\n\nlook into maya render layers or\/and render settings that allows you to do it easily.\n\nonce you get the hang of it.\nit will be fast and your stuff will look great\n",
+        "ts": "1577211807.000700",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-24\/887372387415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "let me know what you come up with and any questions and we’ll try to comp this into the background ",
+        "ts": "1577212746.000800",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-24\/885521420704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

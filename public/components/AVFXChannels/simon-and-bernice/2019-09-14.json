@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m 21 :)",
+        "ts": "1568484185.000100",
+        "username": "Bernice Chege (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-14\/760484274400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

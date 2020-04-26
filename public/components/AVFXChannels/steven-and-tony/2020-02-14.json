@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Steven! Happy valentine’s day! Have a good one!",
+        "ts": "1581678255.001800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/942396032065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

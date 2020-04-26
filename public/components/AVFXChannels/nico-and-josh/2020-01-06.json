@@ -1,0 +1,194 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello mate, aye no worries at all! Good Christmas\/New Year? Yeah that makes sense, I guess it depends on what your goals are at the time. I take it you’re back at work now then?",
+        "ts": "1578304869.000200",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/881642878418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, haha",
+        "ts": "1578316859.000300",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/894154212276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, how’s it going?",
+        "ts": "1578329038.000400",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897128163862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Supervisor Is still on holiday, so I get to play around with things for a bit. We'll see how it goes :)",
+        "ts": "1578329209.000500",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897133021350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How about you? Been able to do some Nuke lately?",
+        "ts": "1578329243.000600",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/884698050305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds great, anything in particular you’re messing around with?",
+        "ts": "1578331175.000700",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/884753574001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unfortunately not, really getting back on top of it at the end of this week though",
+        "ts": "1578331226.000800",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/894984191408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Currently struggling for material though, everything I’ve done so far is from skillshare and lynda on linkedIn - a lot of the stuff (such as Steve Wrights) is quite outdated so it takes me longer to work out how to do more traditional stuff on the newer versions of nuke",
+        "ts": "1578331301.000900",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897192681734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "do you have any recommendations of tutorials\/classes?",
+        "ts": "1578331317.001000",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897193109590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Vfxphd stuff Is the best. My gf used that to get in the industry.",
+        "ts": "1578331749.001100",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897204464422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s excellent, don’t suppose you have a link?",
+        "ts": "1578331967.001200",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897210774166_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.fxphd.com\/details\/374\/|https:\/\/www.fxphd.com\/details\/374\/>",
+        "ts": "1578332465.001300",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/895017297360_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "fxphd",
+                "title": "Introduction to NUKE | fxphd",
+                "title_link": "https:\/\/www.fxphd.com\/details\/374\/",
+                "text": "Taught by Tahl Niran, this course will cover all of the basic tools and techniques you need to get up and running with the latest version of The Foundry's NUKE as well as give you a good solid foundation in how to composite live action footage, CG renders and even work with cameras and objects from your 3D application. Designed as a guide for people with little or no experience using the application, a good understanding of photoshop, after effects or similar application is recommended.",
+                "fallback": "fxphd: Introduction to NUKE | fxphd",
+                "thumb_url": "https:\/\/www.fxphd.com\/fxphd\/images\/course_thumbs\/NUK104_thumb.jpg",
+                "from_url": "https:\/\/www.fxphd.com\/details\/374\/",
+                "thumb_width": 1280,
+                "thumb_height": 720,
+                "service_icon": "https:\/\/www.fxphd.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.fxphd.com\/details\/374\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's some math for vfx artists and vfx theory ones; pretty great foundation.",
+        "ts": "1578332504.001500",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/884789122801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They also have software licences through VPN, so you can legally access all the software without limitations.",
+        "ts": "1578332560.001600",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/895019737456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds amazing, I can’t believe I’ve never come across any of this before",
+        "ts": "1578332949.001700",
+        "username": "Josh Bagnall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/884800627361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's truly great.",
+        "ts": "1578333694.001800",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/884821795441_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

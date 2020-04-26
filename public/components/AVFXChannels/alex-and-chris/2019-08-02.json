@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, yes, cameras are off, the simplest way is to create plain box and adjust you camera to it. From what I can see here you have something around 35mm or less and the one on the concept is around  80-120mm. Overall it looks like you are not that far off and model in general looks nice(could please show wireframe too?) so after aligning your camera I would suggest start doing texturing\/lookdev",
+        "ts": "1564740369.008300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/713763094756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had my cameras at 50mm as I thought that would be the most likely that they’d used but I think you’re right about a bigger zoom. I can get this sorted today :+1::skin-tone-3: ",
+        "ts": "1564741253.008400",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/714241624304_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hm, try playing with focal length then. maybe try 35 then :slightly_smiling_face:",
+        "ts": "1564742553.008500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/707921632113_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

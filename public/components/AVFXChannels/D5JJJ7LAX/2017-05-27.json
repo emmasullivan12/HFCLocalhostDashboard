@@ -1,0 +1,71 @@
+[
+    {
+        "bot_id": "B5KFHDXD5",
+        "type": "message",
+        "text": "In the past 24 hours, you've received *1 praise* that got `2` reactions increasing your *Reaction Count* to `3`. \n\n*Praise Received*\n\n`2` reactions were added to the <https:\/\/prospela.slack.com\/archives\/joelandchristina\/p1495821029224111|praise> you received from <@U5HQK06BA> a day ago.\n&gt; <@U5JG9U1RS> \/curiosity",
+        "user": "U5JN4HP1S",
+        "ts": "1495906961.280364",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5KFHDXD5",
+            "deleted": false,
+            "name": "Disco",
+            "updated": 1516699988,
+            "app_id": "A0DV3EEN4",
+            "icons": {
+                "image_36": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_36.png",
+                "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_48.png",
+                "image_72": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        },
+        "attachments": [
+            {
+                "text": "<@U5HQK06BA> has given you 1 praise with 2 reactions.\n<@U5HQK06BA> hasn't received props yet.\n Hop in to any of these channels: <#C4U81UV4G>",
+                "pretext": "You should return the favor and give <@U5HQK06BA> praise :tada:",
+                "id": 1,
+                "thumb_height": 72,
+                "thumb_width": 72,
+                "thumb_url": "https:\/\/secure.gravatar.com\/avatar\/ef28e0c6be8c8de38517bc8ccfab64e1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2F66f9%2Fimg%2Favatars%2Fava_0012-72.png"
+            }
+        ]
+    },
+    {
+        "bot_id": "B5KFHDXD5",
+        "type": "message",
+        "text": "",
+        "user": "U5JN4HP1S",
+        "ts": "1495906961.280376",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5KFHDXD5",
+            "deleted": false,
+            "name": "Disco",
+            "updated": 1516699988,
+            "app_id": "A0DV3EEN4",
+            "icons": {
+                "image_36": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_36.png",
+                "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_48.png",
+                "image_72": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        },
+        "attachments": [
+            {
+                "callback_id": "props-reminder-request",
+                "text": "You’re on a roll this week! Want me to remind you once in a while to give props? You’ll be able to turn these off any time on your <https:\/\/prospela.growbot.io\/preferences|preferences page>.",
+                "id": 1,
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "Yes!",
+                        "text": "Yes!",
+                        "type": "button",
+                        "value": "U5JG9U1RS",
+                        "style": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

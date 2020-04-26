@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Kajsa, \n\nI’ve started working at Dneg as a tech runner and training to be in the roto prep position.\n\n Any advice?\n\nThanks,\nYaw ",
+        "ts": "1551683168.000100",
+        "username": "Yaw Afful (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-03\/566431016533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

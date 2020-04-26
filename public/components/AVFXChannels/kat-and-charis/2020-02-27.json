@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry, I didn't get to finish my thoughts before I had to leave!\n\nI think every studio I've worked at has had a different vibe and feel. DNEG for example is quite a big company (there's over 800 in London alone!) so you can sometimes feel like you don't know anybody and that you're a small cog in a big wheel. However, most of the time you're only interacting with your team and department, and the benefits of big studios is that they have more resources and better tools for you to use! Bigger companies naturally tend to pay a bit more too, as they have more budget to use!\n\nStudio AKA on the other hand is a lot smaller, in total the whole studio has maybe 60 people. So it's a lot more intimate, you get to know everybody and it feels a bit like a family. The downside of course is that there's way less resources so you have to find workarounds or compromises - for example the computers might not be so powerful, or they haven't got a lot of Maya tools for you to use so you need to find your own or find workarounds. The nature of smaller studios is also that the quota and deadlines are a bit tighter, as they have less budget to spend so they need things to be done quicker. This doesn't necessarily mean there's a drop in quality but certainly you have to work smarter and find creative solutions to make your animation work within the time you have!\n\nThis is probably already a lot to take in but it's also worth mentioning that between the two, Studio AKA and DNEG, at AKA I was working as a freelancer whereas at DNEG I am a PAYE employee. The only thing this means is that whilst at AKA I had to invoice them, and was required to pay my own taxes, whereas at DNEG I just get a payslip and don't have to worry about it ^^ For some people this is important, as they don't enjoy filling out tax returns (which I totally get!) so it's something to consider as to whether you'd be willing to work as a freelancer or not ^^",
+        "ts": "1582797568.000600",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/961610482913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "@dvalgi-2012 did you see my message above about the acornaspirations tech workshop this weekend? Sounds like it would be really useful and fun for you",
+        "ts": "1512037484.000154",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279803057621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you use the \"Prospela20\" code you get £20 off (full price is £30)!",
+        "ts": "1512037568.000014",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279003011552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

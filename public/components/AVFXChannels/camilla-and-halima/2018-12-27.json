@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that may be allowed, but I don't have Skype",
+        "ts": "1545933697.001400",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-27\/512012762881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I might get my older sister to do some practice interviews with me",
+        "ts": "1545933711.001500",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-27\/514017964470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My Christmas break is great, had some time to relax and I'm revising and finishing coursework (now that my personal statement stuff is sorted).",
+        "ts": "1545933800.001600",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-27\/514018842470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's your break?",
+        "ts": "1545933809.001700",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-27\/511880737600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

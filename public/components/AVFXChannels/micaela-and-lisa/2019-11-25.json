@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lisa,\n\nI’m so embarrassed as I totally missed your reply! How is the job going? Are you happy that you moved?\n\nI love it where I am, but I’d definitely be lying if I said things were not stressful sometimes! \n\nYes, I started on this project in August 2018 and will be on it until August 2020, so it feels like forever! \n\nHope all is well with you.\n\nBest \n\nMicaela ",
+        "ts": "1574699981.000300",
+        "username": "Micaela (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/835578236930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

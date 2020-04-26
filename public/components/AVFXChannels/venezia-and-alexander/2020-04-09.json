@@ -1,0 +1,240 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! Loving the progress on that so far, could you let me know a bit more about the character, so that I can give you better feedback? :slightly_smiling_face:",
+        "ts": "1586424319.003300",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051431860678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am particularly interested in a few key questions: Where are they from or where do they live? Will they be wearing any clothing? What do they tend to do on a day-to-day basis?\nThis will help me give you some guidelines on how to push this model further :star2:",
+        "ts": "1586424502.003400",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1059086555428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "uhh okay ill go through the questions chronologically, well for the first two i am not quite shure i'm working from concept art and i havent gotten any info about the characters backsort at the moment",
+        "ts": "1586424647.003500",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051364126451_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oooh, okay, no worries, I thought you had started it from scratch - in that case, could I have a look at the concept piece?",
+        "ts": "1586424729.003600",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1050389231394_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "shure shure, let me just grab it",
+        "ts": "1586424748.003700",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051437901478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011RKZJX09",
+                "created": 1586424848,
+                "timestamp": 1586424848,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 166263,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011RKZJX09\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011RKZJX09\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011RKZJX09-acaacf5ba2\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011RKZJX09-acaacf5ba2\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011RKZJX09-acaacf5ba2\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 308,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011RKZJX09-acaacf5ba2\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 411,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011RKZJX09-acaacf5ba2\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011RKZJX09-acaacf5ba2\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 617,
+                "image_exif_rotation": 1,
+                "original_w": 767,
+                "original_h": 657,
+                "thumb_tiny": "AwApADCWKMOCScdqbIoVsA5FRyTGNNqgklgfpSqWYEuckMRmgCWKMOCScdqbIoVsA5FOjYKnzdCwxSTfeoAWKNXBLH2psihWwpyKRmZISVGTuFJljuLZOGIzQA2VxHAx43EjbnsfWmwyeYHGejZGaZcKWZB2JxSW4xJJxgZxQBaEgiidj16AUxJvODk9iMCmycgLjO44pIsEMQP4qAJg21Hx1IwPrTQQQ2Om44\/lQOXUds5P4Ug+4Px\/nQAxw29CFyAeeaEV1duF2k596kooAikVjJGQCQDzzQiOjt93aTn3qWigAAHXODj060D3JI7CiigD\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011RKZJX09\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011RKZJX09-7daf97840a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1586424853.003800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think this is the clearest\/cleanest piece",
+        "ts": "1586424892.004100",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1054325073973_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That makes sense, thank you! I'll just write up some feedback now :slightly_smiling_face:",
+        "ts": "1586425016.004200",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1054327931877_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool, thanks in advance!",
+        "ts": "1586425048.004300",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051379938931_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking at the model itself, I think you have done a great job representing the overall body shape. The slightly elongated arms, legs, and neck, give her a really cool alien vibe. Just looking at her silhouette, you can definitely tell that she is from a foreign world. I think you have done a great job on the face, it looks very feminine and delicate, which corresponds to the concept art piece. My only piece of feedback regarding the face would be that the eyes appear to be proportionally bigger in the concept art piece - however, you as the 3D artist have the expertise to decide whether or not that size is appropriate, so it's ultimately up to you.\n\nThe body by itself is well-sculpted, however, I think there is a bit of misdirected effort there. In all of these concept art pieces, it appears that the character will be fully clothed throughout most of the game. With that in mind, I think your primary focus should be on creating those outfits and making them full of character as the skin itself will not be very visible. It's basically making sure that you are using your time as efficiently as possible. Focus on the parts of the body\/character we will be seeing the most in the game.\n\nThe only other point is that it's important to think about what this character does on a day-to-day basis. At the moment, the body seems very strong, full of power as most muscles are clearly defined and outlines. To achieve this, I would expect this character to be in serious training, probably on a daily basis. If that's the case, then this is perfectly fine and expected. However, if it's not, a more delicate body might be preferrable.\n\nTo sum up, I think the model and sculpt by themselves are great and show anatomical knowledge and effort - however, you must always think about whether or not this is the body that the character will realistically have. I know this feeds into character design a little bit, which is a field of its own, but as a 3D artists, it's good to keep that in mind",
+        "ts": "1586425871.004400",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1059731538929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope this makes sense!",
+        "ts": "1586425875.004500",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051452690566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it does immensely, thanks for the help, i think i'm going to try and get marvellous designer and try and cloth the character in there right after i finish retopologising the character",
+        "ts": "1586426154.004600",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1050444633874_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "okay... i have just spent the day delving into the clothing system of marvellous designer, and uh i have made a few pieces of clothing",
+        "ts": "1586474295.004700",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1053664684131_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922876442935316\/unknown.png?width=463&amp;height=658>",
+        "ts": "1586474313.004800",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1062873491393_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "fallback": "463x658px image",
+                "image_url": "https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922876442935316\/unknown.png?width=463&height=658",
+                "image_width": 463,
+                "image_height": 658,
+                "image_bytes": 87742,
+                "from_url": "https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922876442935316\/unknown.png?width=463&height=658",
+                "id": 1,
+                "original_url": "https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922876442935316\/unknown.png?width=463&amp;height=658"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586474313.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922933464760395\/unknown.png?width=525&amp;height=658>",
+        "ts": "1586474321.005000",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1073307390800_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "fallback": "525x658px image",
+                "image_url": "https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922933464760395\/unknown.png?width=525&height=658",
+                "image_width": 525,
+                "image_height": 658,
+                "image_bytes": 105712,
+                "from_url": "https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922933464760395\/unknown.png?width=525&height=658",
+                "id": 1,
+                "original_url": "https:\/\/media.discordapp.net\/attachments\/695094223447392267\/697922933464760395\/unknown.png?width=525&amp;height=658"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586474322.000000"
+        }
+    }
+]

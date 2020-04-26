@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Never heard of them =P\nHow do you feel about \"walking simulator\" games? Like What remains of Edith finch, Firewatch, Gone Home etc...",
+        "ts": "1548326338.002700",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533002367111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

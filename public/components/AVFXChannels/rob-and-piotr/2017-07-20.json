@@ -1,0 +1,202 @@
+[
+    {
+        "type": "message",
+        "text": "How does 5pm ish today suit?",
+        "user": "U5YFZREUC",
+        "ts": "1500562326.999621",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "That would be great. Would you prefer a Sype call or Phone call?",
+        "user": "U62P24HC5",
+        "ts": "1500562405.052702",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g558f8ffc30b",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a558f8ffc30bf48a568fa4b25cf6034b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "Piotr",
+            "real_name": "Piotr Skrenczynski",
+            "display_name": "pjs51",
+            "team": "T4UUTPV18",
+            "name": "pjs51",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'll call you; what number are you on?",
+        "user": "U5YFZREUC",
+        "ts": "1500563811.995630",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "07490577746",
+        "user": "U62P24HC5",
+        "ts": "1500566081.499558",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g558f8ffc30b",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a558f8ffc30bf48a568fa4b25cf6034b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "Piotr",
+            "real_name": "Piotr Skrenczynski",
+            "display_name": "pjs51",
+            "team": "T4UUTPV18",
+            "name": "pjs51",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<mailto:rob.chesworth@thecrownestate.co.uk|rob.chesworth@thecrownestate.co.uk>",
+        "user": "U5YFZREUC",
+        "ts": "1500567826.584135",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i'm obviously not very good at slack",
+        "user": "U5YFZREUC",
+        "ts": "1500567831.586768",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "so if i don't get back to you here and you want to run anything past me",
+        "user": "U5YFZREUC",
+        "ts": "1500567840.592087",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "send me a note",
+        "user": "U5YFZREUC",
+        "ts": "1500567841.592968",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Than you very much for today's call. It definitely clarified few things for me.",
+        "user": "U62P24HC5",
+        "ts": "1500583247.268817",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g558f8ffc30b",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a558f8ffc30bf48a568fa4b25cf6034b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "Piotr",
+            "real_name": "Piotr Skrenczynski",
+            "display_name": "pjs51",
+            "team": "T4UUTPV18",
+            "name": "pjs51",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Also thank you for the email and the willingness to help",
+        "user": "U62P24HC5",
+        "ts": "1500583274.282467",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g558f8ffc30b",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a558f8ffc30bf48a568fa4b25cf6034b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "Piotr",
+            "real_name": "Piotr Skrenczynski",
+            "display_name": "pjs51",
+            "team": "T4UUTPV18",
+            "name": "pjs51",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

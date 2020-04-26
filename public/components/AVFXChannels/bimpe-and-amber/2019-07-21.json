@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How did it go?? Have you got any other interviews coming up?",
+        "ts": "1563739427.000100",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-21\/694904224049_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "still waiting to hear back on the feedback for your reel btw! will chase up tomorrow :smiley:",
+        "ts": "1563739450.000200",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-21\/689836832914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

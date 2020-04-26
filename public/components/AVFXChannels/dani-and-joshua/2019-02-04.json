@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you made any progress Joshua? :slightly_smiling_face:",
+        "ts": "1549297280.001800",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/540972168769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

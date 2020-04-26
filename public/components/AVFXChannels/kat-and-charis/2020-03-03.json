@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for doing that! The syncsketch is coming up as access denied though, could you invite me to view it using my email <mailto:charisdussek@gmail.com|charisdussek@gmail.com>",
+        "ts": "1583240865.001400",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/981144633271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/>\n\ntry again, I'm hoping I changed the settings!",
+        "ts": "1583246042.001500",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/978981097460_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Charis",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/",
+                "text": "Collaborative Media Review with 2 items",
+                "fallback": "SyncSketch: Charis",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583246043.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats working now, thank you!!",
+        "ts": "1583256789.001700",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/982062160182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The notes and draw overs are really helpful! My tuteo has suggested i change the shot angles slightly to create more jeopardy, so ill try making all those changes and then upload new versions to the dropbox and let you know if thats ok!",
+        "ts": "1583257207.001800",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/979413263060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Leanne, So so so sorry for being so late on replying to your last message. Work has been very busy, we are working on the remake of The Dark Crystal for Netflix, so 10 big episodes which deliver later this year. It is the biggest show the tv department has ever taken on so scary and exciting at the same time! :grimacing:",
+        "ts": "1549285665.000300",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/542429922087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So to answer some of your questions.... Most people are freelancers and hop around from project to project at different companies, this is great for meeting new people and meeting new contacts and your are able to work in many different companies. If the company has back to back projects then they tend to keep on the same staff. Its not so much for style, its how its set up to be project based.",
+        "ts": "1549285845.000400",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541208467508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pipeline - in bigger companies it tends to be better, it has to be with the amount of people working at the company, all pipelines have their teething problems but what is great is that the companies listen to the artists and are always trying to implement new tools to help us. For example, at MPC they wrote a lot of tools for the fx department so we were able to create specific effects for some of the Marvel films .",
+        "ts": "1549285986.000500",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541369221202_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How many people are in each department - this varies from project to project, at the moment we are at our max because we currently have 16 shows in production. And the animation department is the largest it has been in a while, as we have The Dark Crystal and a new episode for Black Mirror which has a CG character. In tv we have a build department which varies from character build to environment build, again this fluctuates, but we currently have around 12 in build, around 15 animators, 8 in fx and around 20 or so lighters which double up as generalist TD's as well. We currently have around 180 people in the tv department, it was 60 people when I started so it has definitely grown!",
+        "ts": "1549286260.000600",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/540637135456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of working with the client, at DNegTV we are always producing work for an outside client, we do not produce our own content, some of the smaller shows may do, but all projects tend to be client driven - which is good and bad, when you have good clients its great! haha!",
+        "ts": "1549286387.000700",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541267904195_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Showreel - it completely depends on what you want to go into, if you want to be an animator then there is no reason to have environment modelling on your showreel! If you want to be an animator then continue to specialise in that. What I find is most generalists\/lighters\/modellers cannot animate, and most animators can only animate and very rarely cross over to another department.",
+        "ts": "1549286645.000800",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/540775759521_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah wow, a short film sounds great, what are your ideas?",
+        "ts": "1549286676.000900",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/542442612647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for sending me your showreel, its really good! I really like the fact you have a dog in the reel as well, it shows variety! I know you said it was work in progress, so you probably have fixed this already, but the one that stands out for me in the gymnastics routine, (second 16) , she feels a little floaty and does not have much weight to her. In terms of text, I normally add in the bottom left hand corner what I worked on, so for me it would say something like - lighting environment, hope that helps!",
+        "ts": "1549286925.001000",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/542445904087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How did the dissertation go? have you handed it in yet? When do you have to apply for the internships?",
+        "ts": "1549286964.001100",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541222678788_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

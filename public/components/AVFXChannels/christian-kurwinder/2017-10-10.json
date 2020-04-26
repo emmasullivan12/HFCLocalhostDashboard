@@ -1,0 +1,99 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@kurwinderkaur15 has joined the group_",
+        "ts": "1507659328.000235",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254370456757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_<@U5WMH4QGK|christian>.jeffery has joined the group_",
+        "ts": "1507659345.000374",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/255317762391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "<!channel>, Kurwinder we have matched you with Christian as your E-Mentor. Feel free to introduce yourselves and continue chatting within this channel. Why not send a quick video to say hello! :wave:\n\nI will now be leaving the channel, but please direct message myself or Emma if you have any questions. All the best! :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1507659405.000144",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507659433.000194",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254371499109_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507659453.000265",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/255318899415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey ",
+        "ts": "1507661466.000145",
+        "username": "kurwinderkaur15 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/253736599041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey. I am about to be on a call for a couple of hours, but thought it would be good to introduce myself and what I do so that you understand where I am coming from and what I might be able to offer you in terms of advice. Hopefully I have some useful insights that I can offer over the next month or so.\nI am an Associate Director in a large consultancy based in London. We are hired by clients to provide knowledge or experience that they don't have themselves. Most of my work is in international disputes. When two companies disagree or go to court, each hires an \"Expert\" to present the facts and argue their case. That is my role. Basically I am paid to argue with the expert on the other side of the dispute - I put forward a case, they say why it is wrong, and I say why they are wrong. It's very fun, can be very hard work, and is very rewarding!\n\nMost of my work is in the energy industry, but I also work in transport, banking, and other sectors\n\nMy background - I have a Masters in Maths, as well as two in Philosophy. I think continuing in education is very important to keep developing as a person, so my two Philosophy Masters were done part time while I worked, mainly or fun! (Although they were useful at work as well, as I'm sure I'll explain at some point)\n\nSo, that's a brief (ish) introduction to me. If you've got any questions about that, or about anything else let me know! I'll try to post updates about what I'm up to at work regularly - it's not all glamorous, as my current activity shows - entering 17 years of corporate bank account data into a spreadsheet and trying to match amounts that should have been pain in to what was actually paid in. Very tedious!",
+        "ts": "1507704953.000067",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/255591949879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I should add that in my dispute work, I work closely with both the client and their legal team, so I have a lot of interaction with legal work. In fact, some of my work gets close to being legal, so I should be able to help with any questions in relation to that. If there are specific questions that I can;t answer, I am friends with lawyers at various firms, so hopefully can build on that to answer them!",
+        "ts": "1507705062.000103",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254505805218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

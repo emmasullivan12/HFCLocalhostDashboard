@@ -1,0 +1,39 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRWQ61LBS",
+                "created": 1576780094,
+                "timestamp": 1576780094,
+                "name": "Marina Moraru Project 2 Animation.mp4",
+                "title": "Marina Moraru Project 2 Animation",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 8308551,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRWQ61LBS\/marina_moraru_project_2_animation.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRWQ61LBS\/download\/marina_moraru_project_2_animation.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRWQ61LBS-036a689872\/marina_moraru_project_2_animation_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRWQ61LBS\/marina_moraru_project_2_animation.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRWQ61LBS-8540214a72",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1576780095.000100"
+    }
+]

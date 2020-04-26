@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Steve,\n\nSorry for the delay in my answer! Thank you for taking the time to read me and answer. Our experiences seem to be very similar indeed, where you were stuck as a matchmover I am stuck as a studio or team assistant. I am glad I got these opportunities as it allowed me to get an overview of how a studio is run and to understand better the advertising pipeline.\n\nI feel like a few months of training would make a big difference if I was able to focus on 3D only. Sadly, I feel like this is only possible with savings and\/or not having rent to pay. I thought about finding a cheaper place to live when my rental contract terminates (1st of April) and find a random job that is less time consuming, so I could be able to work on my portfolio in my spare time.\n\nI would like to be a lookdev artist or texture artist. I like animation but I am very bad at it I believe and much more competent with texturing softwares (and well, I'm still working on lighting) and making things look good. I have several courses and tutorials purchased on sale that are waiting on my desktop (and I believe once I complete them all I will have a much better level and portfolio!). My other option would be to continue on the same path and save enough money to take some time off and focus on my 3D art only.\n\nI have an interview at Framestore this afternoon as a VFX production assistant, that could be my lifeline for the next few months, time to spare money (as well as gain a valuable line on my cv).\n\nThank you very much for your positive feedback on my work, means a lot! I will keep you updated,",
+        "ts": "1574781107.002700",
+        "username": "Thais Ondet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/849416377412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks a lot,",
+        "ts": "1574781107.002800",
+        "username": "Thais Ondet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/852081307574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thais",
+        "ts": "1574781107.002900",
+        "username": "Thais Ondet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/849873771616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

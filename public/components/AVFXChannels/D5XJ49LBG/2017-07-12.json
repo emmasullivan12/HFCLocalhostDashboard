@@ -1,0 +1,77 @@
+[
+    {
+        "type": "message",
+        "text": "Hello! My mentee mentioned they don't get notifications that I am sending new messages. Do you think there is a way to communicate to them how to get notifications? I'm just a bit concerned they aren't able to engage. ",
+        "user": "U5WPLAX4J",
+        "ts": "1499860472.645858",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "1ae7c34d40d4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202415541478_1ae7c34d40d485df60fe_72.png",
+            "first_name": "Georgina",
+            "real_name": "Georgina",
+            "display_name": "georgina",
+            "team": "T4UUTPV18",
+            "name": "georgina",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi <@U5WPLAX4J>! By default notifications should have been set up, so they may have accidently turned them off. Either way, they can manage notification settings here: <https:\/\/get.slack.help\/hc\/en-us\/articles\/201895138-Set-up-Slack-notifications>",
+        "user": "U4V22C6A1",
+        "ts": "1499861162.881217",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Slack Help Center",
+                "title": "Set up Slack notifications",
+                "title_link": "https:\/\/get.slack.help\/hc\/en-us\/articles\/201895138-Set-up-Slack-notifications",
+                "text": "Slack can send you notifications about items that need your attention, even when you're on the go. When to expect notifications from Slack Slack can send email and mobile notifications when you're ...",
+                "fallback": "Slack Help Center: Set up Slack notifications",
+                "from_url": "https:\/\/get.slack.help\/hc\/en-us\/articles\/201895138-Set-up-Slack-notifications",
+                "thumb_url": "http:\/\/p4.zdassets.com\/hc\/settings_assets\/138842\/200037786\/sSQBh5QoSbdSEsNIF1TYiQ-help-center-unfurl-image.png",
+                "thumb_width": 192,
+                "thumb_height": 192,
+                "service_icon": "http:\/\/p4.zdassets.com\/hc\/settings_assets\/138842\/200037786\/2ZJLjdZjm65NbRvxmGUdxw-favicon.png",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "I'm not sure whether they use slack on their mobile or on desktop, but it shows them how to sort it out all in that link above :slightly_smiling_face:",
+        "user": "U4V22C6A1",
+        "ts": "1499861184.888985",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

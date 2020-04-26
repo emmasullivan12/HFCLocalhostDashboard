@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Becky, not probs I totally know how it is. I'm just coming out of an all-consuming freelance contract that coincided with the corona craziness. Im good thanks and looking forward to having  break once this current work is out the door.",
+        "ts": "1586504999.000100",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1056010526917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How did your project go? how does the lockdown affect your studies? Gives you some time to work on your reel?",
+        "ts": "1586505090.000200",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1052461925702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you're keeping healthy",
+        "ts": "1586505114.000300",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1056012171861_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":slightly_smiling_face:",
+        "ts": "1586505114.000400",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1046416364487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

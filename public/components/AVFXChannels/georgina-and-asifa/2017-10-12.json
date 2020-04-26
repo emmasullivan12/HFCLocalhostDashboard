@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to study radiography at uni..... But I am not sure about my career",
+        "ts": "1507818499.000255",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/254841288161_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does career always have to link at what we study at uni? :no_mouth:",
+        "ts": "1507819027.000315",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255364033938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not always, no! So I studied music at university because I LOVE music. It’s always been my passion, I love making music with people but didn’t know what to do after. We are lucky in the UK system that we don’t have to decide too early on. ",
+        "ts": "1507841702.000601",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/254951546016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For some subjects, like if you want to be a doctor, or chemical engineer, or nurse then you do need to study those things at university. ",
+        "ts": "1507841748.000473",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255085443953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But there are so many careers that you can do unrelated subjects at university first! ",
+        "ts": "1507841766.000197",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256487908726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I went from doing music at university, to working in finance! ",
+        "ts": "1507841795.000274",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255527740835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My sister studied English Language and Linguistics and is now working in marketing for a sports and health company. ",
+        "ts": "1507841839.000144",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256488689286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One of my friends studied history and is now a lawyer. ",
+        "ts": "1507841852.000320",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256690195015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can I ask why in particular do you want to study radiography? Sounds fun!",
+        "ts": "1507841877.000184",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255743397541_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

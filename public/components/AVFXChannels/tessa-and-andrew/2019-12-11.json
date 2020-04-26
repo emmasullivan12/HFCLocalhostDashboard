@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, do take into account that this is my personal experience, perception, and advice. :slightly_smiling_face: Someone else's experience might be different, and therefore their advice different.",
+        "ts": "1576092062.004400",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/869777399845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I should note that I don't always get compensated for my overtime, and that's fine. Always getting compensated is pretty much an impossible string to pull. I just try to be careful about companies being abusive of not having to pay overtime, because the amount of respect for your time definitely varies per company.",
+        "ts": "1576096189.004500",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/869898821744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On a different note, are you familiar with Access VFX? They're part of what makes this mentor program possible, but they also have some cool podcasts occasionally if you ever wanna check those out. <https:\/\/www.accessvfx.org\/podcast>",
+        "ts": "1576097060.004600",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871782719015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,168 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574086512.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574086512.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5dd2a76f9d0efc00048d7283|this link> with other teams to invite them in it_",
+        "ts": "1574086512.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Villiers E-Mentoring* joined the shared channel_",
+        "ts": "1574086582.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1574086584.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1574086702.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"samantha-and-jinafa\"",
+        "old_name": "z-shared-23",
+        "name": "samantha-and-jinafa"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574086901.001000",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@grivens2 has joined the channel_",
+        "ts": "1574087301.001100",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480519550546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jinafamosammad has joined the channel_",
+        "ts": "1574087309.001200",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838774347205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jinafa, please meet Samantha your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1574087335.001300",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838303344532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574087347.001400",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838775489301_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574087351.001500",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/827296707587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Samantha, my names Jinafa and I am currently attending sixth form studying a-level biology,chemistry and psychology. My future aspirations include becoming a GP doctor so it would be really helpful if you could guide me! Thank you.",
+        "ts": "1574087644.001600",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/840986223030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jinafa! So nice to meet you &amp; I'm really excited to be your E-Mentor :smiley:\nA little bit about me: I'm Samantha and I work at the NHS as part of the Royal Free NHS Hospital Trust (a group of 3 hospitals in London). Dexter sent me your profile which says your passionate about helping people and want to get into Medicine and I can certainly give you some guidance on that and insight to work life in the industry. How sure are you that you want to be a GP? To what extent have you considered other roles in the healthcare industry? Would be great to know so I know what to cover during our chats ;)\nAlso, your profile also says you're a professional henna artist which sounds fun. I love that you're slightly entrepreneurial too! Where do you do that? In my spare time I go to the gym a fair bit and cook lots!",
+        "ts": "1574098359.001700",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/831174138273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also anytime you want to send a message go ahead! I can't always reply straight away whilst at work but I will get back to you as soon as I can!",
+        "ts": "1574098389.001800",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/831174964369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that's pretty cool, so what kind of activities\/roles does your job require you to do? Thanks, your guidance will mean a lot, I have been a bit lost recently and no I'm not certain I want to be a GP- I feel like many of the roles in the NHS aren't advertised as much as the others so I do lack knowledge in that topic and therefore I haven't really considered other roles. Ah thank you:smile: I usually do it twice a year in festivals such as eid when most people like to apply it. I can't cook:sob::sob: whenever I try I always either burn the food or burn myself:joy::joy: \n\n\nAnd no problem you can reply to me whenever you have time I do understand you're busy too, and I might be a bit late at replying too sometimes as I have sixth form so sorry in advance.",
+        "ts": "1574107795.001900",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/841212251159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I have a question, hence I want to do medicine unis require\/like students that have experience in the healthcare field, the only experience I got is 1 week at Charing Cross Hospital and at the moment I'm doing voluntary work at a care home. I am trying to get more work experience by emailing people but I am not having any luck. So I was also thinking to do volunteer work at King's college hospital for about 6 months? Do you think that would be too much as I have a-levels to study for too?",
+        "ts": "1574113214.002000",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/839489756256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

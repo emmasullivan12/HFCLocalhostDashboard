@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Breakdowns are good to have in there, especially if what you've done includes something that a recruiter or somebody revieiwing your reel might not notice from the final thing.",
+        "ts": "1573564737.003900",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-12\/831061972624_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay thank you! Also I tried that heat distortion thing and I got it to work! However it didn’t work for my shot where my orb is moving but I’ll definitely be using that technique in the future! :relaxed:",
+        "ts": "1573564915.004000",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-12\/831073610965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh amazing, well done! You'll be surprised how it comes in handy later down the line :smile:",
+        "ts": "1573566918.004100",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-12\/832965484103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I already have some ideas for it! Also do you know how to use the motion blur node because I tried to make it work but it just made my orb squish and look a bit funny.",
+        "ts": "1573570856.004200",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-12\/831229744645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

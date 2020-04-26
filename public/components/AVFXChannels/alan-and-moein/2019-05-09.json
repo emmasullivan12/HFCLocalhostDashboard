@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You did the hard work not me. I honestly don't know what they are looking for. But your work is clean and well presented so I think you have as good a chance as anyone!",
+        "ts": "1557387391.002500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-09\/619133655010_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

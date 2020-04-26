@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh okay, apologies for that, Ill send the full message again",
+        "ts": "1553461860.002200",
+        "username": "Seun Olaniyi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-24\/586634386645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Daffer, Hope all is well, thank you for your message.  I also work in the IT.  This is in Southbank International which is a world renowned private school.  I currently majority of the time assist with the technical support, whilst learning the networking and asset systems thats implemented.  Whilst having a technical background I am looking to gain creative experience in programming, animation etc.",
+        "ts": "1553461874.002300",
+        "username": "Seun Olaniyi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-24\/586634445781_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

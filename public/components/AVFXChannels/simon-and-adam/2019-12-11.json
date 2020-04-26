@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pleased to meet you Adam, happy to chat on here whenever's convenient. I'm having some issues with notifications but I'll be checking manually as much as I can.",
+        "ts": "1576068324.001700",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/868979221280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya im free to talk today if thats okay with you",
+        "ts": "1576081367.001800",
+        "username": "Adam Rivlin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/857919745971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "btw there are ways of changing the notification settings i think",
+        "ts": "1576081387.001900",
+        "username": "Adam Rivlin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871596751398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

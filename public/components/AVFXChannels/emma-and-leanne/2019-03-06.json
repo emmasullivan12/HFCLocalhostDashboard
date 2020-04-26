@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats fantastic news! Congratulations!!! :grin: :clap:",
+        "ts": "1551891402.000100",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/570334789238_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know when you apply to blue zoo and I will ask my friend to keep an eye out! Also, let me know if you apply to dneg or dnegtv if they do internships for animation",
+        "ts": "1551892620.000200",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569996526823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

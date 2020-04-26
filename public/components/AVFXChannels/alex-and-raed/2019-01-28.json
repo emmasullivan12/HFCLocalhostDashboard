@@ -1,0 +1,151 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hi",
+        "ts": "1548667114.005900",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/533933460912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there's this project: <https:\/\/www.codeandweb.com\/physicseditor\/tutorials\/creating-physics-shapes-for-cocos2d-x>",
+        "ts": "1548667120.006000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/534669799170_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "How to use physics with cocos2d-x",
+                "title_link": "https:\/\/www.codeandweb.com\/physicseditor\/tutorials\/creating-physics-shapes-for-cocos2d-x",
+                "text": "Learn how to create collision shapes for your physics enabled cocos2d-x game.",
+                "fallback": "How to use physics with cocos2d-x",
+                "image_url": "https:\/\/www.codeandweb.com\/blog\/2017\/04\/20\/creating-physics-shapes-for-cocos2d-x\/_opengraph-image.jpg",
+                "from_url": "https:\/\/www.codeandweb.com\/physicseditor\/tutorials\/creating-physics-shapes-for-cocos2d-x",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 74043,
+                "service_icon": "https:\/\/www.codeandweb.com\/img\/apple-touch-icon.png",
+                "service_name": "codeandweb.com",
+                "id": 1,
+                "original_url": "https:\/\/www.codeandweb.com\/physicseditor\/tutorials\/creating-physics-shapes-for-cocos2d-x"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can get a trial version to generate the physics shapes",
+        "ts": "1548667143.006200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-17\/505349015377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what's the issue you're stuck with now?",
+        "ts": "1548667274.006300",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/534671781378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi",
+        "ts": "1548703015.006400",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/535163369203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I followed this",
+        "ts": "1548703035.006500",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/535163701219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and It doesn't recognise the action",
+        "ts": "1548703046.006600",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/535110065140_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "'\"spawnSprite\"",
+        "ts": "1548703059.006700",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/535270534002_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "void DEL1::spawnSprite(const std::string &amp;name, Vec2 pos)\n\t{\tPhysicsShapeCache::getInstance();\n\n\t\t\/\/ create a sprite with the given image name\n\t\tauto Ba = Sprite::create(\"BASKET.png\");\n\n\t\t\/\/ attach physics body\n\t\tshapeCache-&gt;setBodyOnSprite(\"BASKET.png\", Ba);\n\n\t\t\/\/ set position and add it to the scene\n\t\tBa-&gt;setPosition(point(300, 500));\n\t\taddChild(Ba);\n\t}",
+        "ts": "1548703138.006800",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/536334851367_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it says \"spawnSprite\" is",
+        "ts": "1548703155.006900",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/536335161975_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "not a member",
+        "ts": "1548703175.007000",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/536694297382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "GOOD NEWS, I'm just going to make three seperate rectangles",
+        "ts": "1548715332.007100",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/534744177904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heyyy! I’m good thank you! I hope you’re well :) \n\nThanks for sharing the link with me, I’ve had a look and think it’s totally adorable! It must be nice to work on one off clips like this! How many people worked on it and how long did it take to make? :D \n\nThe amount of seconds you animate a day makes me really nervous! You must really be comfortable with Maya and the rigs to make things work within that time frame. Your work gets checked by a director right? Does your animation have to be flawless by the end of the day? \n\nThis summer I’m going to try to animate 5 seconds a day and see how that goes. I have trouble with progressive walk cycles to be honest... it takes me such a long time to get things right. Do you usually use looping walk cycles or progressive ones on a series? I’m guessing it depends on the clip? ",
+        "ts": "1562744879.003400",
+        "username": "Sahra Al (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-10\/683482115361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it was great. There were 4 of us on it, 3 in look dev and then I animated it. I could only animate out of hours, so in terms of animation it probably took me about a day in total (8 hours).",
+        "ts": "1562772521.003500",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-10\/690327161840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't forget that we animte for television quality for those 5\/6 seconds on average. So it's not quite as precise as film. Yes, our work is constantly checked by our animation director and directors. Also, it's not 5\/6 seconds a day from start to end. It's just under 2 minutes total in 4 weeks which averages at those 5\/6 seconds a day. But we have a blocking phase, blocking plus and then \"spline\"",
+        "ts": "1562772685.003600",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-10\/692183065287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If I'm honest, I'm not a fan of walk cycles at all either. But we're lucky that we have looping cycles here yes :slightly_smiling_face:",
+        "ts": "1562772723.003700",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-10\/689864614676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

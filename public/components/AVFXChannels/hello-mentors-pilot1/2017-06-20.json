@@ -1,0 +1,266 @@
+[
+    {
+        "type": "message",
+        "subtype": "pinned_item",
+        "text": "",
+        "user": "U4V22C6A1",
+        "item_type": "F",
+        "ts": "1497979928.656776"
+    },
+    {
+        "type": "message",
+        "text": "You should have already received this E-Mentor Onboarding Pack, but here's a copy for quick reference.",
+        "files": [
+            {
+                "id": "F5XG5JGDV",
+                "created": 1497980027,
+                "timestamp": 1497980027,
+                "name": "Prospela e-mentoring - E-Mentor Onboarding Pack (Summer Programme) vSlack.pdf",
+                "title": "E-Mentor Onboarding Pack",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 1752190,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XG5JGDV\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XG5JGDV\/download\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5XG5JGDV\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__vslack.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5XG5JGDV-9302e7d1b5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1497980027.695344",
+        "edited": {
+            "user": "U4V22C6A1",
+            "ts": "1497980071.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "pinned_item",
+        "text": "<@U4V22C6A1> pinned their PDF <https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5XG5JGDV\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__vslack.pdf|E-Mentor Onboarding Pack> to this channel.",
+        "user": "U4V22C6A1",
+        "item_type": "F",
+        "item": {
+            "id": "F5XG5JGDV",
+            "created": 1497980027,
+            "timestamp": 1497980027,
+            "name": "Prospela e-mentoring - E-Mentor Onboarding Pack (Summer Programme) vSlack.pdf",
+            "title": "E-Mentor Onboarding Pack",
+            "mimetype": "application\/pdf",
+            "filetype": "pdf",
+            "pretty_type": "PDF",
+            "user": "U4V22C6A1",
+            "editable": false,
+            "size": 1752190,
+            "mode": "hosted",
+            "is_external": false,
+            "external_type": "",
+            "is_public": true,
+            "public_url_shared": false,
+            "display_as_bot": false,
+            "username": "",
+            "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XG5JGDV\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+            "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5XG5JGDV\/download\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+            "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5XG5JGDV\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__vslack.pdf",
+            "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5XG5JGDV-9302e7d1b5",
+            "is_starred": false,
+            "has_rich_preview": false
+        },
+        "ts": "1497980049.703682"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497985487.805995",
+        "user": "U5WRX90MB",
+        "text": "<@U5WRX90MB> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497985524.820158",
+        "user": "U5W6M67LZ",
+        "text": "<@U5W6M67LZ> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497985709.886256",
+        "user": "U5XHLUT62",
+        "text": "<@U5XHLUT62> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497987291.442390",
+        "user": "U5WPLAX4J",
+        "text": "<@U5WPLAX4J> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497987633.561992",
+        "user": "U5WMH4QGK",
+        "text": "<@U5WMH4QGK> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497990790.697224",
+        "user": "U5WNHEH0T",
+        "text": "<@U5WNHEH0T> has joined the channel"
+    },
+    {
+        "type": "message",
+        "text": "A little video to say \"hello!\"",
+        "files": [
+            {
+                "id": "F5WS7EQ84",
+                "created": 1497990953,
+                "timestamp": 1497990953,
+                "name": "Prospela - E-Mentor Hello!.mp4",
+                "title": "Hello E-Mentors! [Watch Me]",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 145406304,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WS7EQ84\/prospela_-_e-mentor_hello_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WS7EQ84\/download\/prospela_-_e-mentor_hello_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5WS7EQ84\/prospela_-_e-mentor_hello_.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5WS7EQ84-4822d3348b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1497990966.760031"
+    },
+    {
+        "type": "message",
+        "subtype": "pinned_item",
+        "text": "<@U4V22C6A1> pinned their MPEG 4 Video <https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5WS7EQ84\/prospela_-_e-mentor_hello_.mp4|Hello E-Mentors! [Watch Me]> to this channel.",
+        "user": "U4V22C6A1",
+        "item_type": "F",
+        "item": {
+            "id": "F5WS7EQ84",
+            "created": 1497990953,
+            "timestamp": 1497990953,
+            "name": "Prospela - E-Mentor Hello!.mp4",
+            "title": "Hello E-Mentors! [Watch Me]",
+            "mimetype": "video\/mp4",
+            "filetype": "mp4",
+            "pretty_type": "MPEG 4 Video",
+            "user": "U4V22C6A1",
+            "editable": false,
+            "size": 145406304,
+            "mode": "hosted",
+            "is_external": false,
+            "external_type": "",
+            "is_public": true,
+            "public_url_shared": false,
+            "display_as_bot": false,
+            "username": "",
+            "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WS7EQ84\/prospela_-_e-mentor_hello_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+            "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WS7EQ84\/download\/prospela_-_e-mentor_hello_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+            "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5WS7EQ84\/prospela_-_e-mentor_hello_.mp4",
+            "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5WS7EQ84-4822d3348b",
+            "is_starred": false,
+            "has_rich_preview": false
+        },
+        "ts": "1497991403.911111"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497992577.325522",
+        "user": "U5WR9CJTC",
+        "text": "<@U5WR9CJTC> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497993218.536344",
+        "user": "U5WRFMCCA",
+        "text": "<@U5WRFMCCA> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1497998727.954249",
+        "user": "U5XMAF7AA",
+        "text": "<@U5XMAF7AA> has joined the channel"
+    },
+    {
+        "type": "message",
+        "text": "Hey guys, should we add photo of ourselves as an avatar? Create an avatar that is not our picture for compliance purposes but still something better than the generic Slack picture? Or keep the generic one that is generated from Slack?",
+        "user": "U5XMAF7AA",
+        "ts": "1497999483.101585",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1497999483.101585",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1498029130.165913",
+        "reply_users": [
+            "U4V22C6A1"
+        ],
+        "replies": [
+            {
+                "user": "U4V22C6A1",
+                "ts": "1498029130.165913"
+            }
+        ],
+        "subscribed": true,
+        "last_read": "1498029130.165913"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1498024201.389842",
+        "user": "U5WAJ7VTJ",
+        "text": "<@U5WAJ7VTJ> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1498026322.687761",
+        "user": "U5X3WPT29",
+        "text": "<@U5X3WPT29> has joined the channel"
+    }
+]

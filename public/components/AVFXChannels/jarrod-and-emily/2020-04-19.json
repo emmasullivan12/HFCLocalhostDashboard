@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Currently wrapping skin now! I'm solving the fascia and the fat\/skin as one pass using Ziva. The wide range of movement is making the fat fly off though and I'm having trouble getting it look right, I can send over how it is right now and all my settings if that's alright with you?",
+        "ts": "1587323224.003000",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1070798299301_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Definitely add more features I think, everything is blendshape driven on the face (apart from 2 ribbon splines on the lips) to make it look like it's all muscle driven, but you're definitely right that it's looking a bit wooden. How should I go about adding more control to the eye area? You're also very right about the nostrils and I've added more flare to imply breathing. The tongue has full control, I don't think it's been animated yet though!",
+        "ts": "1587323532.003100",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1072390626643_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(thanks again for all your help!)",
+        "ts": "1587323615.003200",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1072391296851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Absolutely, that would be great thanks!",
+        "ts": "1587326787.003300",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1057472607255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy to help, no problem.",
+        "ts": "1587326805.003400",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1072415923363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

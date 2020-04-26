@@ -1,0 +1,84 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I would love to see the games concept :blush:\n",
+        "ts": "1575156141.002300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-30\/843417479747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/m.youtube.com\/watch?v=KCnayCnM6Zk&amp;feature=youtu.be>",
+        "ts": "1575156144.002400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-30\/842103331090_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "The Lion King 2019 - Making Of - How it was filmed in a realistic way",
+                "title_link": "https:\/\/m.youtube.com\/watch?v=KCnayCnM6Zk&amp;feature=youtu.be",
+                "author_name": "Movie Trailer \/ PTP",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCP9RDTWcjs9re9MRfXS4alQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/KCnayCnM6Zk\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: The Lion King 2019 - Making Of - How it was filmed in a realistic way",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/KCnayCnM6Zk?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/m.youtube.com\/watch?v=KCnayCnM6Zk&amp;feature=youtu.be",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/m.youtube.com\/watch?v=KCnayCnM6Zk&amp;feature=youtu.be"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vfx-online.com\/thor-the-dark-world-visualization-reel-by-the-third-floor\/>",
+        "ts": "1575156402.002600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-30\/842104462130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is fascinating and changing the animation  industry.  Also a beautifully unique short film. \n\n<https:\/\/www.unrealengine.com\/en-US\/spotlights\/blue-zoo-uses-real-time-technology-to-create-distinctive-animated-short-ada>",
+        "ts": "1575156786.002700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-30\/854888824832_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Unreal Engine",
+                "title": "Blue Zoo uses real-time technology to create distinctive animated short “Ada”",
+                "title_link": "https:\/\/www.unrealengine.com\/en-US\/spotlights\/blue-zoo-uses-real-time-technology-to-create-distinctive-animated-short-ada",
+                "text": "Blue Zoo uses Unreal Engine to create real-time animation, opening up new creative avenues and making the whole artistic process more enjoyable.",
+                "fallback": "Unreal Engine: Blue Zoo uses real-time technology to create distinctive animated short “Ada”",
+                "image_url": "https:\/\/cdn2.unrealengine.com\/Unreal+Engine%2Fspotlights%2Fputting-the-fun-back-into-animation-with-real-time-technology%2FSpotlight_BlueZoo_fb_imageV1-1200x630-cc6b4768c986d2161e358657d41c811a3ecd83ac.jpg",
+                "from_url": "https:\/\/www.unrealengine.com\/en-US\/spotlights\/blue-zoo-uses-real-time-technology-to-create-distinctive-animated-short-ada",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 127750,
+                "service_icon": "https:\/\/www.unrealengine.com\/apple-touch-icon.png?v=xQdXpAz40w",
+                "id": 1,
+                "original_url": "https:\/\/www.unrealengine.com\/en-US\/spotlights\/blue-zoo-uses-real-time-technology-to-create-distinctive-animated-short-ada"
+            }
+        ]
+    }
+]

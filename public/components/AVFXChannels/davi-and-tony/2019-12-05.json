@@ -1,0 +1,220 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/user64984202>",
+        "ts": "1575541703.018000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/853059438945_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "title": "Anthony Nikolaou",
+                "title_link": "https:\/\/vimeo.com\/user64984202",
+                "text": "Anthony Nikolaou is a member of Vimeo, the home for high quality videos and the people who love them.",
+                "fallback": "Vimeo: Anthony Nikolaou",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/portrait\/18759683_640x640",
+                "from_url": "https:\/\/vimeo.com\/user64984202",
+                "thumb_width": 640,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/i.vimeocdn.com\/favicon\/main-touch_180",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/user64984202"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tony, I found the link to Escape’s newsletter signup. Get info on webinars, events, etc. \n<https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/newsletter.html?intid=MN_CB3_COL4_1>",
+        "ts": "1575587949.018200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/862151701040_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Newsletter | Escape Studios | Pearson College London",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/newsletter.html?intid=MN_CB3_COL4_1",
+                "text": "Want to know what's going on with Escape Studios? Sign up here for our newsletter and keep up to date with everything we do with Pearson College London.",
+                "fallback": "Newsletter | Escape Studios | Pearson College London",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/newsletter.html?intid=MN_CB3_COL4_1",
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/newsletter.html?intid=MN_CB3_COL4_1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And our VFX, Games and Animation Festival in March. Usually sells out! \n<https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/the-vfx-festival.html>",
+        "ts": "1575587972.018400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/862162095173_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "The VFX, Games and Animation Festival 2020",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/the-vfx-festival.html",
+                "text": "We're pulling out all the stops! The 2020 VFX Festival will be our biggest to date.",
+                "fallback": "The VFX, Games and Animation Festival 2020",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/the-vfx-festival.html",
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/the-vfx-festival.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!",
+        "ts": "1575588124.018600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/864014844567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great start on your clean up! ",
+        "ts": "1575588202.018700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/864364660022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keep going! ",
+        "ts": "1575588209.018800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/862155939968_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Adding finishing touches on the next one!",
+        "ts": "1575588231.018900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/861700132516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Trying to do about 100-ish frames cleanup every 1-2 days to gain the speed and experience ",
+        "ts": "1575588260.019000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/862166758261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great goal! ",
+        "ts": "1575588275.019100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/862157002576_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think i have been doing decently on linked in too, been inviting many people from the industry and my posts get about 500-ish views with a 10% click through rate :innocent:",
+        "ts": "1575588308.019200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/864017806167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yahoo!!\nAs you perfect your techniques, then you can start to add more challenges to remove more complex objects, or with more camera movements. It gets tricky then to get believable patches. ",
+        "ts": "1575588382.019300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/850691441539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And your keep building your reel up ",
+        "ts": "1575588394.019400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/849377328482_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m off to bed. Great achievement! Congratulations 🥳 :tada::+1:",
+        "ts": "1575588453.019500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/862159896080_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Chat you soon :blush:",
+        "ts": "1575588464.019600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/864020338935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks a lot! Certainly will! Rest well!",
+        "ts": "1575588477.019700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/854221573841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks. You too!",
+        "ts": "1575588498.019800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/854221864769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

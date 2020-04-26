@@ -1,0 +1,104 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh sorry for not answering for a while! That is awesome! I am a big fan of coding myself, even though I am just learning it on the side doing python and a bit of blinkscript",
+        "ts": "1585877454.003200",
+        "username": "Daniel Ravanelli (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044872485559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You've been working in all the areas I am interested in. Thats so cool!",
+        "ts": "1585877475.003300",
+        "username": "Daniel Ravanelli (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1034064969970_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And you worked on Avatar? That's incredible!",
+        "ts": "1585877488.003400",
+        "username": "Daniel Ravanelli (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044872545111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How was lighting on that? I bet quite a challenge with the size of those environments!",
+        "ts": "1585877514.003500",
+        "username": "Daniel Ravanelli (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044901987445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What parts on the film was Framestore working on?",
+        "ts": "1585877621.003600",
+        "username": "Daniel Ravanelli (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1045532963524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am currently working with my team on our final year vfx film!\nI 'm doing cinematographer, lighting and comp (and also learning a bit of colour grading)\nhere's one of the more finished shots. If you do have time would you mind giving us some of your thoughts on it?\nI'll include the vimeo and the synsketch link, whatever you prefer\n<https:\/\/vimeo.com\/403543884>\n<https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1491249\/1655084>",
+        "ts": "1585881027.003700",
+        "username": "Daniel Ravanelli (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1038459355905_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "TL_sc02_sh0290_compositing[1000-1050]_2",
+                "title_link": "https:\/\/vimeo.com\/403543884",
+                "author_name": "Daniel Ravanelli",
+                "author_link": "https:\/\/vimeo.com\/user76046773",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/873047199_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: TL_sc02_sh0290_compositing[1000-1050]_2",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/403543884?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"TL_sc02_sh0290_compositing[1000-1050]_2\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/403543884",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/403543884"
+            },
+            {
+                "title": "SyncSketch: Lookdev, Lighting &amp; Compositing",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1491249\/1655084",
+                "text": "Collaborative Media Review with 3 items",
+                "fallback": "SyncSketch: Lookdev, Lighting &amp; Compositing",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1491249\/1655084",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 2,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1491249\/1655084"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585881030.000000"
+        }
+    }
+]

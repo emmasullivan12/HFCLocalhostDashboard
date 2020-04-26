@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mausum, I'm so sorry for not messaging earlier. I seem to be missing notifications from this app somehow",
+        "ts": "1555012335.001800",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/609794460550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's lovely to meet you!",
+        "ts": "1555012342.001900",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/605932590816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great you're graduating so soon! This summer is looking to be busy for loads of companies =]",
+        "ts": "1555012392.002000",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/599615252673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding the next steps, have you done any internships while at uni? I know some unis have that as part of their curriculum. Either way, all depends if you're trying to get straight into comp or paint and roto. Or even starting as a runner.\n\nThings have changed since I started in the industry but generally speaking most companies will pay their runners a London living wage, which is currently £10.55ph. However that all depends on the company really. Running is definitely not a luxurious job but you get to meet people and get to know the company and how it operates from within and usually they will provide you with some kind of training, which will in turn lead to a secondment on live projects, and then into a full-time artist position.\n\nIf you're trying to start as a paint and roto artist, I would expect 18k at least. Most likely 20. Smaller companies don't have those positions at all (like mine), so compositors of all levels are expected to do everything. So for those companies, you would generally start as a runner if you're straight out of uni, or if you have an amazing showreel, maybe even straight into comp but I wouldn't bet on it. And if you do start as a runner at a small company, chances are there are so few running tasks that you would end up working on live shots straight away.",
+        "ts": "1555012886.002100",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/609473009879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I started as a runner at Framestore, where I ran for 8 months part time. After that got seconded for a few weeks and then promoted to an artist role right after",
+        "ts": "1555012996.002200",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/605944656656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Personally I'm glad I had a running stint as I've made friends for life and we had some really fun times",
+        "ts": "1555013040.002300",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/599627272257_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know July is still quite far away but have you applied anywhere at all?",
+        "ts": "1555013064.002400",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/599627735969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for a long essay =]",
+        "ts": "1555013073.002500",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/594529237522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

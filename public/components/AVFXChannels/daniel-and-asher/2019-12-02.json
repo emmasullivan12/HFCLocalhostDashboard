@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Asher,\n\nOverall I think it's a very nice shot.\n\nA few things:\n\nThe smoke in the MG looks very blobby. Maybe used a better element and a nicer defocus. In any case it shouldn't be more defocuaed than the BG or the window.\n\nHard to check edges with the compression but the face of the guy with dredds feels a bit crunchy.\n\nThe window is sharper than the computer equipment in Screen Left BG. That should vt be the case. The window should match those elements in the plate as should the smoke kif anything being a little sharper than the window). The view from the exterior might be a little softer than the frame (depending on whether it is a window or a display)\n\nI am not sure about the FG flare - it that coming from the blue led on the back of the control panel?\n\nThe planet is very static. Could you find or crete a moving planet element?\n\nNot really feeling the magenta tones in the grade. Keeping the more natural tones from the plate but adjusting for lighting might show off your skills better?\n\nHope that helps!",
+        "ts": "1575288709.003400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/858141849798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the feedback, I'll adjust the bits you've mentioned, and I'll make a 3d element in maya and then comp it in. Cheers!",
+        "ts": "1575310518.003500",
+        "username": "Asher Hunt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/858732510742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

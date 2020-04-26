@@ -1,0 +1,99 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@1401338 has joined the group_",
+        "ts": "1507543044.000194",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/252836786801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@skumar-2011 has joined the group_",
+        "ts": "1507543059.000163",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/254239396534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "<!channel>, Sahil we have matched you with Melissa as your E-Mentor. Feel free to introduce yourselves and continue chatting within this channel. Why not send a quick video to say hello! :wave:\n\nI will now be leaving the channel, but please direct message myself or Emma if you have any questions. All the best! :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1507543108.000262",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507543128.000225",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253409641796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507543139.000402",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/253279124275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! How're you? I'm Sahil, nice to meet you!",
+        "ts": "1507568996.000046",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/252932438192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sahil, it's great to meet you too!  Sorry for the late reply, had a pretty busy day :see_no_evil: I'm not sure if you've been told anything about me yet so I'll just give you a bit of background information about me. At school my favourite subject was probably Chemistry and I enjoyed learning topics covered in science and maths. At A levels I studied Chemistry, Biology and Physical Education. And currently I am Physiotherapy student in my final year at University.",
+        "ts": "1507582569.000312",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/254586184326_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are your favourite subjects at school? ",
+        "ts": "1507582703.000339",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-09\/254587328246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

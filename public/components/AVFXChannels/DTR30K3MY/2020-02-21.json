@@ -1,0 +1,27 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you’d like an easy way to get back to Slack whenever you need to, *download the desktop app* for your computer. (It’ll also give you extra control over your notifications.)",
+        "ts": "1582304575.000100",
+        "user": "USLACKBOT",
+        "username": "slackbot",
+        "bot_id": "B01",
+        "attachments": [
+            {
+                "id": 1,
+                "color": "2eb886",
+                "actions": [
+                    {
+                        "id": "1",
+                        "text": "Get the Desktop App",
+                        "type": "button",
+                        "style": "primary",
+                        "url": "https:\/\/slack.com\/downloads",
+                        "name": "joiner_onboarding_download_ssb_app"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did, i went to uni back home in Brazil for Game design, hoping to enter in game animation afterward but realize I liked acting and film animation more and decided to head to vancouver film school to study 3D Animation!",
+        "ts": "1565888798.001600",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727330288324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

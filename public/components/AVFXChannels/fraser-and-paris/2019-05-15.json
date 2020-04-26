@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I had my submission Monday, this is what I submitted: <https:\/\/vimeo.com\/335884933>\n\nI was able to really simplify and make things do able for myself and finished animating with a couple days spare! You can see in some parts I got the hang of animating. I’m going to work on it more before I render everything.\n\nThank you and I guess this is goodbye :blush: :wave::skin-tone-2:",
+        "ts": "1557910327.000100",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-15\/635504947124_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "A Time Apart: Major Submission Post Viz",
+                "title_link": "https:\/\/vimeo.com\/335884933",
+                "author_name": "Paris",
+                "author_link": "https:\/\/vimeo.com\/parisanimationarts",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/783088180_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: A Time Apart: Major Submission Post Viz",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/335884933?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"A Time Apart: Major Submission Post Viz\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/335884933",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/335884933"
+            }
+        ]
+    }
+]

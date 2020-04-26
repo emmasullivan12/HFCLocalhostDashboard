@@ -1,0 +1,98 @@
+[
+    {
+        "type": "message",
+        "text": "<@U632EJECV> Hey Alex! Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1499066409.431227",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Here is a little Student Onboarding Pack for you to get you started ... it contains a Career Plan to fill out with your E-Mentor (and lots of question prompts to help you guide the conversation!)",
+        "user": "U4V22C6A1",
+        "ts": "1499066442.440230",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F631LB412",
+                "created": 1499066455,
+                "timestamp": 1499066455,
+                "name": "Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf",
+                "title": "Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 1400101,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F631LB412\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F631LB412\/download\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F631LB412\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F631LB412-88eaaa1823",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1499066455.443747"
+    },
+    {
+        "type": "message",
+        "text": "We'll be introducing you to your E-Mentor shortly. She's called Helen and works for the NHS at a senior strategy level. She works at the hospitals most days so can give you insights from a psychological \/ patient perspective (something you seemed quite interested in)!",
+        "user": "U4V22C6A1",
+        "ts": "1499066541.466363",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

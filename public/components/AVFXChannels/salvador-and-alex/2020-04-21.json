@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi. Sure, please send. I am surprised they are still offering internships though, given that I imagine everyone is working from home.",
+        "ts": "1587484321.001600",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1100397038672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They are right next to Cinesite :slightly_smiling_face:",
+        "ts": "1587484334.001700",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1061822786519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow well there is no guarantee I'll get in but worth a try, framestore has changed their internship to a sort of competition where a team of 4-6 students create a 30 seconds short film, if u can get a team ill definitely give it a go its open to all students.\n\nTwo of my modules are done, last two are in for next month then that's second year done, I recently got match moving back and got a first for it which I'm really happy about, that's what I made that model I showed you for, my tutor said I'm coming on really well as a vfx artist so I hope that's a sign of things to come.",
+        "ts": "1587510762.001800",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1077555628194_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I've adapted pretty well to working from home, still doesn't beat uni but gotta work with what I have lol.",
+        "ts": "1587511059.001900",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1083730630836_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

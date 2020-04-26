@@ -1,0 +1,343 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok! Now is working! :slightly_smiling_face:",
+        "ts": "1544610616.000500",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501748644771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have to say first that is a good start",
+        "ts": "1544610629.000600",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501248182033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About the timming, maybe you can squeeze a little the time between the main poses. For exemple, since fr15 to fr38, the timing is a little bit even. And that happen along the shot.",
+        "ts": "1544610832.000700",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501751541235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can notice that, because the body is constantly moving",
+        "ts": "1544610911.000800",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503256509910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "let me try you to find and exemple",
+        "ts": "1544610923.000900",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501752598163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Check this reel for exemple",
+        "ts": "1544611026.001000",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501753913203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/225260059>",
+        "ts": "1544611027.001100",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501687884532_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Boss Baby Animation Reel",
+                "title_link": "https:\/\/vimeo.com\/225260059",
+                "author_name": "Bryce McGovern",
+                "author_link": "https:\/\/vimeo.com\/brycemcgovern",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/644528823_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "A collection of scenes I had the pleasure of animating for Dreamworks 'The Boss Baby'.",
+                "fallback": "Vimeo Video: Boss Baby Animation Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/225260059?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Boss Baby Animation Reel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/225260059",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/225260059"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there are some shot that have something in common like yours",
+        "ts": "1544611056.001300",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503258344838_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can see there, that even is a little bit overacted,  is easy to see a \"main\" pose, then a move, and then another main pose",
+        "ts": "1544611150.001400",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502057733477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're not far of that... but I thing that maybe you could make some contrast on the timming to give more texture to the anim",
+        "ts": "1544611192.001500",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501689973204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About pose wise... I notice that you spine is really static. Maybe you could bring more movement to help and follow the head movement.",
+        "ts": "1544611274.001600",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503261063606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also suggested a few poses that could help. Are just ideas, dont take them as something necessary",
+        "ts": "1544611555.001700",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501259813553_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "great feekback. ok first what do you mean by 'About the timming, maybe you can squeeze a little the time between the main poses. For exemple, since fr15 to fr38, the timing is a little bit even. And that happen along the shot.'",
+        "ts": "1544621340.001800",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503031788711_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "looking at boss baby is great! i didn't even think of that and its got that bouncy squishy child look I've been trying to achieve, great advice about the spine, i didnt think about things like this,  ill take a look and apply your feedback and get back another block to you :slightly_smiling_face:",
+        "ts": "1544621471.001900",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503383086406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "subtle hand movements are something that I really struggle with and is their a technique or any advice you could give towards approaching them?",
+        "ts": "1544621569.002000",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501880458227_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, about the first thing (that I explain it super badly sorry)",
+        "ts": "1544621995.002100",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501251544432_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Animation is about holding a pose, then quick change to another pose, then holding this second pose,  quick change to the third pose, hold third pose and so.... Is basically that.\neach pose means a thought or a feeling (for sure I know you that you knew that)",
+        "ts": "1544622228.002200",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501992745970_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let's say that fr1 is your first \"main pose\"",
+        "ts": "1544622536.002300",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501393510465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And 35 is the second one",
+        "ts": "1544622568.002400",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503049242951_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats ok",
+        "ts": "1544622594.002500",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501260209056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But the problem is the character goes from one pose to other, slowly and at the same time.",
+        "ts": "1544622666.002600",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501395436129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your third main pose is around fr64",
+        "ts": "1544622711.002700",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503400914454_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From fr35 to fr64 happen the same, everthing is moving",
+        "ts": "1544622742.002800",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503051854935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In this one, you have and strong breakdown, that makes it more alive. But beside that, is still even.",
+        "ts": "1544622796.002900",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503402168294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From fr 80 to fr104 your character goes to a pose, and when she arrives at fr104, starts to go to the next main pose (fr116)",
+        "ts": "1544622921.003000",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501265135376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry... Is quite hard to explain written, and more with my shitty english.  XD",
+        "ts": "1544622954.003100",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502003576082_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe, a solution, is now that you have a performance, try to do a video reference, and that maybe give you a lot of info.",
+        "ts": "1544623035.003200",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501401071041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About the hand gesture... There's no an specific technique to do it. It's always hard to do hards. The only thing that I can say, is that usually (at least for me) I let the hand animation for the end (like ears, tails, and little movement on the face) Obviouly we should put some animation on the blockings, to define the movement.",
+        "ts": "1544623468.003300",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501408582801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok I get what you mean now, ok ok so I’ll look into holding my poses more and work ok that! Thanks :) :+1::skin-tone-3:",
+        "ts": "1544632782.003400",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502023714884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

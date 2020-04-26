@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  I think if you’re happy with \/ proud of your work then you should include it.  They all show an evolution of your skill and style.  It’s fine if they are unrelated.  I’m sure you can group them in a way that will make sense.",
+        "ts": "1570466735.008000",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-07\/773763124258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is one of my employees portfolios.  I thought it would be interesting to share as he has quite a few different things in it <https:\/\/www.flickr.com\/photos\/58802611@N08\/albums\/72157625791485545>",
+        "ts": "1570466766.008100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-07\/773763891234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will definitely be really happy to look at your storyboard when you’re ready :slightly_smiling_face:",
+        "ts": "1570466786.008200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-07\/775061698755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll also find out what would be involved in volunteering at LIAF",
+        "ts": "1570466796.008300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-07\/775061976723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

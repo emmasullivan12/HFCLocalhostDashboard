@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey, thanks for sending that through. I'll try have a look and get back to you later today. I was off on holiday all last week, hence the slow replies, but back in today so just catching up with everything",
+        "ts": "1584439572.002700",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1007099166679_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey taylor, sorry, haven't had a chance to proper;y look at the reel yet, but i will do soon",
+        "ts": "1584468333.002800",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006621119808_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think the best route is going down the roto\/prep route. i know that at times you may feel you already know that stuff and want to get straight into comp, however, no matter what you're current level, i can promise you that you will still learn new and invaluable skills whilst professionally rotoing and preping shots. preping shots can often be more difficult than comp so you will definitely learn new techniques here which will be useful when starting to comp",
+        "ts": "1584478002.002900",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1007075946053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "many companies also will not take an a junior without roto\/prep experience too. some of the smaller companies may do if your reel is really strong, but the bigger companies rarely do so",
+        "ts": "1584478064.003000",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/994273175538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem there's no rush! \nAh okay that's really useful to know actually, because I've never really been told what the best thing to do for getting into comp after leaving uni was. I think I'd definitely want to start with roto prep just to build up skills so I would feel more confident when i do go into a comp job knowing a good base knowledge beforehand",
+        "ts": "1584487627.003100",
+        "username": "Taylor Webber (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006914319268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

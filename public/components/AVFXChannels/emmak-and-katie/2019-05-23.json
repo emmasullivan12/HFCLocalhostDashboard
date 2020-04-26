@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad that the stress is off for you!",
+        "ts": "1558612054.000300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/632678708178_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Be confident. The person interviewing you wants you to be the one as they hate doing loads of interviews so they are on your side. Don't be late! Be enthusiastic. Spend a lot of time looking at their website and refer to some work that you like on there (shows you are interested in them). Prep an answer of why you would like to work there - they may not answer but would be good for you to know!",
+        "ts": "1558612202.000400",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/632661935811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Always keep smiling! They want you to fit in with their team and no one wants to work with a misery! Be yourself and be confident that your work is good enough for you to be there.",
+        "ts": "1558612238.000500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/645933970759_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe have a piece of work with you that you enjoyed working on and tell them why.... do they have links to your showreel? If not, take a laptop with it on if you can.",
+        "ts": "1558612341.000600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/645935316231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

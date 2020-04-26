@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Halima! Hope you've had a nice weekend. I've just finished making some minor edits to your CV... so take a look and let me know what you think :+1:",
+        "ts": "1547401661.006500",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-13\/524033482742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Ben, I tried the tips you have me and applied them to a test orb I made and I can see the changes! And thanks!",
+        "ts": "1571739687.006100",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/806064700807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

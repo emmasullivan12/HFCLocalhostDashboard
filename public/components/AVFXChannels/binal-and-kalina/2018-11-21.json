@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Dexter and Kalina, I am extremely sorry for the delay in the response, had a demise in my family so was busy with that",
+        "ts": "1542798596.001700",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485268628805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice to meet you too. Please shoot any query you have about vfx and animation :slightly_smiling_face: I am more than happy to help",
+        "ts": "1542798760.001800",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485270353397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

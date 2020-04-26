@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes Monday 7 is fine ",
+        "ts": "1509913784.000031",
+        "username": "shania.jf.8 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/267208886643_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Speak then ",
+        "ts": "1509923896.000017",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266795814705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

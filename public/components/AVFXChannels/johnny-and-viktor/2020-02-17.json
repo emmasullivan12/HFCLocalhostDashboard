@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great, thank you, currently still working on adding details to my assets aswell as texturing as I go along.",
+        "ts": "1581936379.012000",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/955414902784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

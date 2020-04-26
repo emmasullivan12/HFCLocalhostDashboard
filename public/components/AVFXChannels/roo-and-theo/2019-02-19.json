@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is the link to my Wix portfolio. <https:\/\/theonelson595.wixsite.com\/myportfolio>",
+        "ts": "1550575259.000800",
+        "username": "Theo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554643063106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "recently in August, i had surgery, so I had to go through an MRI. I thought it will be a good idea to learn more about radiography in depth.\none of my friend wants to study dental hygiene at uni and she wants to become a dental hygienist. For me, its completely opposite, I want to study radiography at uni but later on, i want to try new stuff. :upside_down_face:\nI want to share something, as a career, I am particularly interested in creativity!! :art: :performing_arts:\nGeorgina, I am not really sure if I am doing the right thing. \nI even wrote my personal statement.",
+        "ts": "1508021025.000005",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/257535616519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good night Georgina",
+        "ts": "1508021350.000057",
+        "username": "agonsalves-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256504386596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

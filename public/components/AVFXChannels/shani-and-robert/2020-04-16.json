@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shani, no worries at all! Thank you so much for taking the time :) \n\nOkey dokey, I'll flip it around then! I put the paint out first as I thought that might be more appropriate to the more junior jobs I will be applying too. \n\nI think the section where I fall in would be best as it's got the most advanced clean plate.\n\nI have a roto shot now from my final project which I have completed since last sending it to you. I don't have any green screen at the moment and a gap I definitely need to fill. \n\nI'd love to go into junior comp ideally! I'm very concerned about getting a job because I've heard how competitive it is and how high the bar is but hopefully I can get there. No ones hiring at the moment anyway! \n\nThanks again for all your help, I really appreciate it :)",
+        "ts": "1587024452.004100",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1051411253991_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My pleasure! Hopefully my help is actually helpful ;)\nIt is definitely not the best time for a job hunt, but there is still work going on and the film and TV industry is obviously huge and there's loads of money involved so it's in everyone's interest to go back to normal and have new production ASAP.\nAre you already looking for work? Im not sure if they're looking for prep\/roto artist but I know Jellyfish are hiring at the moment, so is ILM.\nObviously if Union were looking I would have told you but we have some people in furlough so it's not relevant but if anything changes will definitely let you know!",
+        "ts": "1587066524.004200",
+        "username": "Shanih (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1080520376721_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It definitely is!  Yeah I am looking already, I haven't seen many junior roles advertised lately. I guess juniors need a lot of training and what not which is a bit difficult atm. Thank you very much, I'll check their websites see if there's anything relevant. That's very kind of you, as I said would love a roto\/prep role but would be very happy with a running opportunity :)",
+        "ts": "1587068915.004300",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1091832505152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

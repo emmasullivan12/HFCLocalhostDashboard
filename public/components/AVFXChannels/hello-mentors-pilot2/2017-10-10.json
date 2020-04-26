@@ -1,0 +1,26 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<!channel>\n*\"Children can only aspire to what they know exists\"*\nA few of our students say they are interested in Aviation (mostly because they are based near Heathrow Airport or BAE Systems down in Portsmouth).\n\nUnfortunately, BAE are due to announce later today that they are shedding 2000 jobs in the UK (of which a fair chunk will be from the Portsmouth facility). Portsmouth isn't a big place and students that grow up there tend not to leave, so *this could be a big deal for some of our Portsmouth Students (even if they don't know it yet)* :confused:\n\n&gt;It's definitely a reminder that it is worth exploring your Mentee's motivations to join their chosen industries &amp; try to expose them to a range of other careers &amp; industries as well!\n<https:\/\/www.ft.com\/content\/7892c6f2-aceb-11e7-beba-5521c713abf4>",
+        "ts": "1507626336.000122",
+        "username": "bot",
+        "attachments": [
+            {
+                "service_name": "Financial Times",
+                "title": "BAE set to cut almost 2,000 aerospace and dockyard jobs",
+                "title_link": "https:\/\/www.ft.com\/content\/7892c6f2-aceb-11e7-beba-5521c713abf4",
+                "text": "Losses will affect Lancashire factories which manufacture Eurofighter Typhoon jet",
+                "fallback": "Financial Times: BAE set to cut almost 2,000 aerospace and dockyard jobs",
+                "image_url": "http:\/\/prod-upp-image-read.ft.com\/157e3954-ad02-11e7-8076-0a4bdda92ca2",
+                "ts": 1507563380,
+                "from_url": "https:\/\/www.ft.com\/content\/7892c6f2-aceb-11e7-beba-5521c713abf4",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 401741,
+                "service_icon": "https:\/\/www.ft.com\/__assets\/creatives\/brand-ft\/icons\/v2\/apple-touch-icon-180x180.png",
+                "id": 1
+            }
+        ]
+    }
+]

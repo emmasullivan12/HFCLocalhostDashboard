@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That act",
+        "ts": "1582825995.000400",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/974387928103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oops, sorry, pressed enter too soon",
+        "ts": "1582826003.000500",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/972072458740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats actually a really good thing to hear. I actually come from a background where I find myself in groups where I'm often the only woman, or part of the minority (since I tend to be pretty involved in computer programming things and sports) and it can be pretty lonely sometimes. I'm really glad to hear the industry is getting better. That makes me really hopeful and excited to, I hope, break into it in the future :slightly_smiling_face:\n\nI think one of the thing that scares me now is my next steps. I'm pretty set on doing a vocational Level 3 for college, it's a games art and animation course and I'm really excited for it, but there's always a little voice in the back of my head doubting whether what im doing is the right choice. I feel as though I should take \"proper\" facilitating a-levels like maths, science etc. since that seems to be the thing everyone else is doing, but I know I won't enjoy real A Levels when all I want to do is build my skills in the career path I know I want to take",
+        "ts": "1582826343.000600",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/959749403026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

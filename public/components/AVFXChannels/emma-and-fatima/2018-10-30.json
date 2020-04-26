@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy National Mentoring Day for the other day!! :tada::smile::birthday:",
+        "ts": "1540895148.000400",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/468553343399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've heard of canva",
+        "ts": "1540895156.000500",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/466895202593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I thought that was more for design \/ visuals though, but maybe I'm wrong! I use something called workflowy for my notes and I'm completely addicted! It's so simple but JUST WORKS and helps me organise and search notes really easily!",
+        "ts": "1540895219.000600",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467330737268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck with setting up your team! Is there any way you can give them a (fake) deadline to encourage them to sign up",
+        "ts": "1540895266.000700",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/466764970096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good way to test your leadership skills haha :stuck_out_tongue_winking_eye:",
+        "ts": "1540895277.000800",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/466765065552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So shall we get started on #2 of our list and build your CV? Do you have a copy of your current CV? Even if it is just in draft form it will help alot as a basis!",
+        "ts": "1540895512.000900",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/468905665510_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "P.S I came across this cyber security programme with the government. They give you training and you're part of a community and they prob give you access to employers too! Worth checking out and register your interest for when their applications open (it's free to take part!): <https:\/\/www.joincyberdiscovery.com\/>",
+        "ts": "1540896125.001000",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467413686467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian. Great to see you today.  I’ve pulled together the notes and attached them here.  Hopefully they are helpful. I now know who Eadweard Muybridge is, so I have learned something :slightly_smiling_face: <https:\/\/docs.google.com\/document\/d\/1WcneSRBA2b2sETHQMyfXdCdCOJ8bguxZ1CmDsHOXdLQ\/edit?usp=sharing>",
+        "ts": "1548785174.002300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536252530867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy thank you for today and the notes, it was really helpful and gave me some things to think about. Yes, Edward Muybridge is very interesting :blush:",
+        "ts": "1548786382.002400",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536222107748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My pleasure.  You did a great job at the interview questions.  Looking forward to seeing your portfolio.",
+        "ts": "1548786421.002500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/537804922406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry for coughing all over you.",
+        "ts": "1548786430.002600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536222998964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

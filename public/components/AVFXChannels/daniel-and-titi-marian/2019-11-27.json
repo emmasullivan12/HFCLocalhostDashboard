@@ -1,0 +1,138 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Morning! :smile: I asked because in the last period I felt really stressed between school projects and work. I work only 3 days a week (in the past has been worse), but I feel that in those days I'm wasting a lot of time I could spend on learning and practising much more animation. I think is probably normal to feel like that and I'm trying to get things too fast.\n\nIs this your YouTube channel (<https:\/\/www.youtube.com\/user\/DANjustYEAHvisuals\/videos>)? Are those Minecraft Animations! :smile: It's funny because I started animation because of that game! :slightly_smiling_face: (<https:\/\/www.youtube.com\/playlist?list=PLrukei5Vlre6xbI1fIPFWcVbZ1i7qoYQp>)",
+        "ts": "1574841959.002200",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/852855638839_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "title": "DANjustYEAHvisuals",
+                "title_link": "https:\/\/www.youtube.com\/user\/DANjustYEAHvisuals\/videos",
+                "text": "Hey there! I'm DANjustYEAH, also known as Dan Radford. I have a 3D animation and visual effects background. Currently focusing on audiovisual works in the fo...",
+                "fallback": "YouTube: DANjustYEAHvisuals",
+                "thumb_url": "https:\/\/yt3.ggpht.com\/a\/AGF-l78er1Wj4H2EyLl0rmZBEDWvSHuuREHypwZ_7A=s900-c-k-c0xffffffff-no-rj-mo",
+                "from_url": "https:\/\/www.youtube.com\/user\/DANjustYEAHvisuals\/videos",
+                "thumb_width": 900,
+                "thumb_height": 900,
+                "service_icon": "https:\/\/s.ytimg.com\/yts\/img\/favicon-vfl8qSV2F.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/user\/DANjustYEAHvisuals\/videos"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It can be very tricky to work on things in your own time, it seems that's a common problem for people on here. Probably not the best advice but I tend to work late into the night and lose a bit of sleep here and there, luckily we get slower days at work so can just about get away with it",
+        "ts": "1574847971.002400",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/850653597812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aha yes that is! I'll send you the latest showreel though to have a click through",
+        "ts": "1574847999.002500",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851121541141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=KnHDcjiv2UA>",
+        "ts": "1574848036.002600",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838329720930_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Showreel 2019 v1",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=KnHDcjiv2UA",
+                "author_name": "DANjustYEAHvisuals",
+                "author_link": "https:\/\/www.youtube.com\/user\/DANjustYEAHvisuals",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/KnHDcjiv2UA\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Showreel 2019 v1",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/KnHDcjiv2UA?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=KnHDcjiv2UA",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=KnHDcjiv2UA"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Minecraft was great to learn with initially and the community was amazing. It really kick started my adventure into the world of 3D animation",
+        "ts": "1574848075.002800",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/843182667489_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have a portfolio I can take a look at?",
+        "ts": "1574848086.002900",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851113263056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes. This is my showreel at the moment (<https:\/\/vimeo.com\/301972243|https:\/\/vimeo.com\/301972243>). At the moment I'm working on a body mechanics shot and if you want I can send to you a syncsketch link where if you have any critique to give me through drawings and comments would be much appreciated. Thank you!",
+        "ts": "1574890472.003000",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/840605827651_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "3D Animation Reel | Titi-Marian Giusca",
+                "title_link": "https:\/\/vimeo.com\/301972243",
+                "author_name": "Titi-Marian Giusca",
+                "author_link": "https:\/\/vimeo.com\/user69277939",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/757255079_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "3D Animation Reel | Titi-Marian Giusca",
+                "fallback": "Vimeo Video: 3D Animation Reel | Titi-Marian Giusca",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/301972243?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"3D Animation Reel | Titi-Marian Giusca\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/301972243",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/301972243"
+            }
+        ]
+    }
+]

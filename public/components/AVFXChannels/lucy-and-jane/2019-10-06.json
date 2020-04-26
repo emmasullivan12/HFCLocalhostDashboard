@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would absolutely love to attend",
+        "ts": "1570367521.007700",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-06\/772639460914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How and what would I be able to do if were to volunteer?",
+        "ts": "1570367545.007800",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-06\/785422450949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today I am going to begin animating a rough storyboard of idea I have for my school project (would possibly go into my portfolio if it's good enough), would it be ok to show you when it's made some substantial progress? \nAlso, I had a look at all the advice you sent on constructing a portfolio and I'm concerned about whether the quality of my work is good enough for it  since I did a lot of work that is mismatched(?) (As in my fineart stuff doesnt link at all to my graphics work)",
+        "ts": "1570367959.007900",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-06\/778988585969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

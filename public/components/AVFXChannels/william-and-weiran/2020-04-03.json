@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi WInnie, sorry for the late reply! Super busy with everything at the moment, I'll take a look at this and ask for a bit of feedback from some of my team and get back to you. Hope you are doing well in the current situation",
+        "ts": "1585907206.002500",
+        "username": "William Foulds (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1036115877635_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

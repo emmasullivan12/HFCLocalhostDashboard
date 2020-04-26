@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It sounds like a really good team building \/ leadership activity! Good luck with finding the last 2 ppl you need!",
+        "ts": "1538762378.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-05\/450184478756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We were thinking about having teams in Prospela i.e. you could set up a team to share advice with (for example if you got advice from a mentor that you really liked, then you could share it with friends) .. .what do you think about that? Hate it? Love it? How could it be better? Would love to know your thoughts!",
+        "ts": "1538762454.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-05\/451414913335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You also mentioned that you would like work experience in security but not necessarily in the tech industry. Are there any other industries that you admire \/ relate to your hobbies? Then we can start by narrowing down a few companies we can potentially target for work experience (don't worry we will help you build your CV before reaching out too!)",
+        "ts": "1538762542.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-05\/450547978341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":muscle:",
+        "ts": "1538762548.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-05\/450361333698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a nice weekend if I don't hear from you. It's friyayyy!",
+        "ts": "1538762597.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-05\/451417028679_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

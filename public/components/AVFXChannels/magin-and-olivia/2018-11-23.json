@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I checked out the video on syncsketch and I love how you can draw over it! yeah I think thats my problem with animating it, I love working from a reference and find it so much better, I'm terrible and figuring out the flow on my own. I'll take a look at that tutorial page and use your annotations to make changes on my animation. As for animating another creature I'm pretty sure i don't want to, this dragon confirmed that for me haha. I'm going to put my all into animating characters. I have a real passion for it and I'm just happier animating them :slightly_smiling_face:",
+        "ts": "1542977138.002500",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/488098808102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ohhh wow you worked on Christopher robin!! i loved that film! and omg the detective pikachu trailer looks so gooooddd! my friend over at framestore is also working on that film, you may know him ahah. fingers crossed you get on paddington 3! that would really be an achievement!",
+        "ts": "1542977232.002600",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/486094483089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well It's ok if you want to start with something more simple, or something that excite you more. Just go step by step. And don't be worried about creature animation. In my first two movies I just did humans, and after that I did Pets, and I don't want to do humans again XD\nSo my advise is, do what you like, but try to not close your mind to other stuff that maybe you'll have fun too :slightly_smiling_face:",
+        "ts": "1542980334.002700",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/485993639856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

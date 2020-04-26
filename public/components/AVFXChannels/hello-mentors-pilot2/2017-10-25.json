@@ -1,0 +1,242 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy Hump Day <!everyone>! :tada:\n\nWe got some AMAZING NEWS yesterday ... *Sir Richard Branson and Steve Wozniak selected Prospela as Finalist for \"Best Idea - One to Watch\"* in the 2017 Talent Unleashed Awards!\n\nWe were identified as *one of the top three start-ups in EMEA*, recognising us for creating a bold, inventive solution to social issues using technology!\n\nWe now have to compete at the Global Grand Final on the 7th Dec, pitching our idea in front of a room of 200 people :sweat_smile::sweat_smile:\n\nYou can find out more here: <https:\/\/lnkd.in\/fqQT3PY>\n\nAnd it's *THANKS TO YOU GUYS* for putting up with our pilot programmes and delivering the impact we've had so far. :clap::clap::clap:\n\n...but more than ever, as we progress through the rest of the Autumn Pilot, please continue to give us your BRUTALLY HONEST feedback on your experience with us. Anything you've liked \/ loved \/ not understood \/ has annoyed you, etc ... just let us know! We promise you won't hurt our feelings :stuck_out_tongue_winking_eye:\n\nYOUR FEEDBACK SPECIFICALLY will help us grow Prospela into something that can help students across the UK (and beyond!)\n\nThanks once again for your energy and we hope you enjoy the rest of your week!\n\nEmma &amp; Dex (&amp; Charlie :feet:\"Woof Woof\")",
+        "ts": "1508930366.000062",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> <@U00> <@U5WR9CJTC> what would make them easier to manage for you? For example is there anything you wish they were more prepared in before they arrive? What do you find most useful about them?",
+        "ts": "1508930486.000161",
+        "username": "bot",
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> sorry to hear that!! What happened and what do you fear by taking on another? :scream:",
+        "ts": "1508930544.000109",
+        "username": "bot",
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> Mainly just having more hours in the day! I've never had an intern at a time when I wasn't maxed out on my own work - that makes it annoying for me and not very useful for them.",
+        "ts": "1508930758.000062",
+        "username": "bot",
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fantastic news, well done Emma and Dex!",
+        "ts": "1508930792.000313",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "text": "A-mazing!!!! #smashedit",
+        "user": "U5WR9CJTC",
+        "ts": "1508930836.000374",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Big congrats guys! Seriously well deserved!",
+        "user": "U5WR9CJTC",
+        "ts": "1508930852.000333",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's incredible! Well deserved! Congrats guys!",
+        "ts": "1508930885.000194",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "text": "Yeah id agree it’s just in the main time commitment. It would certainly make it more useful if we had time to meet \/ prep in advance of someone just joining you in the workplace",
+        "user": "U5WR9CJTC",
+        "ts": "1508930950.000073",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "text": "I’m always happy to have people come to meetings with me, ask questions etc but sometimes feeling the need to ‘entertain’ someone means you can’t crack on with your own work which might not be particularly interesting for them. Spose the risk is they end up with admin tasks",
+        "user": "U5WR9CJTC",
+        "ts": "1508931004.000402",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "text": "I think this is only in the early stages though as with any newbie, if someone was committed and bright I’d be happy to put the time in but I’d want to know that first",
+        "user": "U5WR9CJTC",
+        "ts": "1508931042.000328",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "text": "Fantastic news! Well done.",
+        "user": "U5X3WPT29",
+        "ts": "1508931138.000072",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amamzing news !! :tada: all the hard works paying off",
+        "ts": "1508931371.000355",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks both for that. I think there are some interesting points there about the ability for an intern to perhaps \"entertain\" themselves to some extent, but also being able to see their genuine interest and preparing them before they arrive on site. \n\nIt would definitely make interns more feasible to any company. \n\nHow might you judge their commitment? And what preparation would you say is the biggest drain for you?",
+        "ts": "1508932823.000139",
+        "username": "bot",
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is sensational!! I am so happy for Prospela. All the luck for 7th Dec!! Let us know if we can support x",
+        "ts": "1508933844.000217",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "text": "To be honest biggest drain is probably just really logistical things like IT set up, desks etc etc",
+        "user": "U5WR9CJTC",
+        "ts": "1508934123.000300",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "text": "In terms of judging their commitment, that’s hard to do until they get there. But I think it’s always a good sign of they contact you beforehand, ask if there’s any prep work \/ reading they could do to prepare themselves, be clear about why they want the internship and what they want out of it so you know it’s not just a tick box exercise for them",
+        "user": "U5WR9CJTC",
+        "ts": "1508934199.000510",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1508508971.000183"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't get me wrong - I benefited from an internship (mainly to let me know not to go into a particular career). But I was lucky - had a very well designed project for an actual client, a clear objective and time table, and a team that supported me. I just have never had the opportunity in terms of time to provide a similar environment.  As Helen said, it's important that it's not just tick boxes, both for the intern and the employer.",
+        "ts": "1508937680.000245",
+        "username": "bot",
+        "thread_ts": "1508508971.000183"
+    }
+]

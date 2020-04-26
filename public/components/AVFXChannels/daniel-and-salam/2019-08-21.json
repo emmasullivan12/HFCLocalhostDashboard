@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah.  I had similar issues with the app notifications,  it's a setting some place but dont worry. So long as you check in every now and then that's fine. \nYeah,  it can be difficult to get some of those places. Not to worry though,  if you want into vfx industry seriously you will get in. Your time might be better spent improving your art skills or software. \nGood luck with your cramming,  I know a lot of people whose best work is done when time is tight and the pressure is on.\nIts going great in the professional world thanks,  I'm on a fun project at the moment , with lots of cool creatures and a talented bunch of people around me that make my work look much better than it is. So I am happy. \nKeep up the great focus and if anything comes up that you think I might be able to help with then just say, that's what I'm here for.",
+        "ts": "1566377617.000300",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/735424851814_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've fixed it! Surprised it took me so long to figure out haha. \nAnd yeah, I don't think I need to focus on my art skills anymore, that's become an indulgence! But I really need to get back to using Maya and adobe, I didn't really pick them up throughout the summer at all. I'm hoping that during this foundation I just focus on developing myself with those tools! \nThank you so much for your help",
+        "ts": "1566379066.000400",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733269000933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nicola, how are you doing? Hope that your internship went well, sounds like a fantastic opportunity! Apologies for missing you on here has been a very busy few months with personal stuff as well as work! The film looks great man! Some really nice shots, and a great overall feel, really consistent. How did your other shorts go \/ are they going?? I wish I could show you some of what we're doing here on Paddington, maybe soon we will get some permission! They are making a big push in to real time rendering here so that will be very interesting. Excited to hear about your experience!",
+        "ts": "1570180296.000100",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/783738841381_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

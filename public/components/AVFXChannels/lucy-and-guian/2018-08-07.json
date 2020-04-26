@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian.  I'm a member of AWUK <http:\/\/www.animatedwomenuk.com|www.animatedwomenuk.com> which you might like to take a look at (particularly the member profiles in the blog section).  Beth our Animation chair gave me this advice to pass on to you.  \"My top tip for anyone interested in 2D animation is to keep up the life drawing skills, as that is what will make an animator stand out from the crowd. It's not enough to be able to handle the tech, a good animator needs to be able to grapple with basic drawing as well as acting skills. The best directors in my experience are former storyboard artists, not animators, so that is also something to consider.\"  Hope you find this useful. Beth always gives good advice.  I'm off on holiday for a week from tomorrow, so won't be online, but will message you when I'm back.  Have fun in the interim.  Lucy :slightly_smiling_face:",
+        "ts": "1533664481.000034",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-07\/412392397058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thank you very much for the insightful  advice will definitely take a look at AWUK. Have fun in holiday :grinning: ",
+        "ts": "1533673963.000135",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-07\/413532792391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

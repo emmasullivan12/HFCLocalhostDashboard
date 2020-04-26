@@ -1,0 +1,194 @@
+[
+    {
+        "type": "message",
+        "text": "Hi <@U5WDKTPAL>!! That was quick haha",
+        "user": "U4V22C6A1",
+        "ts": "1498039978.815623",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1498039981.816412",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I've posted a little intro video in the <#C4U81UV4G|mentors> channel - let me know if its not easy to spot when you first join!",
+        "user": "U4V22C6A1",
+        "ts": "1498040002.821515",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Got it! Downloaded the app and I'll try my best to be exciting for students :see_no_evil:",
+        "user": "U5WDKTPAL",
+        "ts": "1498045624.054493",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "6788fd256268",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201209037828_6788fd25626825847754_72.jpg",
+            "first_name": "Ellie",
+            "real_name": "Ellie Faircloth",
+            "display_name": "eleanorfaircloth",
+            "team": "T4UUTPV18",
+            "name": "eleanorfaircloth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Weyyy awesome!",
+        "user": "U4V22C6A1",
+        "ts": "1498046578.272843",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "And when you get a moment to do the training, please do! It may fill in some of the gaps \/ questions you have :)",
+        "user": "U4V22C6A1",
+        "ts": "1498046614.281440",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ellie - here is a profile of your first mentee, Ewelina! We'll be introducing you shortly!",
+        "files": [
+            {
+                "id": "F5Y9J2AMV",
+                "created": 1498072778,
+                "timestamp": 1498072778,
+                "name": "Prospela - Your Mentee Profile - Ewelina.pdf",
+                "title": "Prospela - Your Mentee Profile - Ewelina.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 239867,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Y9J2AMV\/prospela_-_your_mentee_profile_-_ewelina.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Y9J2AMV\/download\/prospela_-_your_mentee_profile_-_ewelina.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5Y9J2AMV\/prospela_-_your_mentee_profile_-_ewelina.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5Y9J2AMV-d31b9f9712",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498072779.418585"
+    },
+    {
+        "type": "message",
+        "text": "And here is a profile of your second mentee, Giovanna. Unfortunately, she hasn't logged in to the platform as yet so we can't introduce you ... hopefully later tonight or tomorrow (when their teacher nudges her!)",
+        "files": [
+            {
+                "id": "F5Y9JDTTR",
+                "created": 1498072818,
+                "timestamp": 1498072818,
+                "name": "Prospela - Your Mentee Profile - Giovanna.pdf",
+                "title": "Prospela - Your Mentee Profile - Giovanna.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 239902,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Y9JDTTR\/prospela_-_your_mentee_profile_-_giovanna.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Y9JDTTR\/download\/prospela_-_your_mentee_profile_-_giovanna.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5Y9JDTTR\/prospela_-_your_mentee_profile_-_giovanna.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5Y9JDTTR-357486016a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498072819.432222"
+    }
+]

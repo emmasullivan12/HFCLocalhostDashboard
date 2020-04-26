@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Bimpe, I’ve been ok. Just been working on my work and just been travelling a little bit. I’ve been going to VFX events around London. To keep me motivated but everything is great at my end. How are you? :blush:",
+        "ts": "1565603623.002000",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/725564370102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

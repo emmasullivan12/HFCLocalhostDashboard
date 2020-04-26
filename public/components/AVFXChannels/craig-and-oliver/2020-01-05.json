@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy New Year Craig! sorry I didn't message you. The holidays are always busy and I don't get any notifications. I finally have a plan for my showreel. Being a die hard survival horror fan I have chosen to do a Silent Hill piece. I am making the Janitor, Pyramid head and the nurses for the shot. Could you do point me to some good tutorials to get the wall peeling effect? pretty sure its a job for houdini as it seems to be the best for simulations and dynamics.\n<https:\/\/youtu.be\/snLNPt9H5J4>",
+        "ts": "1578237492.000200",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-05\/883625112545_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Silent Hill Janitor Scene 2006 HD",
+                "title_link": "https:\/\/youtu.be\/snLNPt9H5J4",
+                "author_name": "Arthesis Andreea",
+                "author_link": "https:\/\/www.youtube.com\/user\/twistoffat3",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/snLNPt9H5J4\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Silent Hill Janitor Scene 2006 HD",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/snLNPt9H5J4?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/snLNPt9H5J4",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/snLNPt9H5J4"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My Time is running out to enter the industry as I will be 38 years old this year.  I don't feel ready for retirement just yet though. After learning computer graphics for almost six years now I am a bit too committed and have much to offer. Ageism is in the industry though.  Maybe I should make this shot easy for myself and just perfect the peeling environment. before moving onto the rigs. I know I am capable of creating all this, However I know its going to take a lot of time. One thing at a time I think. I think this will look good in UE4. I have render farm credits to use. UE4 is still not going to light the scene as beautifully as an offline render like Arnold so I would still like to do that first as a kind of concept pass. My Goal is to try and sell myself to a games studio known as supermassive games.",
+        "ts": "1578238377.000400",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-05\/881078508402_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

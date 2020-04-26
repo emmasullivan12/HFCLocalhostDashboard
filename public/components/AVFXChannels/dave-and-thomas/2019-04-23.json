@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "FANTASIC! I'll see you there at 1:00! If your going to look for me, keep an eye out for the guy with a unicycle. :slightly_smiling_face:",
+        "ts": "1556021803.000600",
+        "username": "Thomas Mayfield (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-23\/615931719152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,197 @@
+[
+    {
+        "type": "message",
+        "text": "<!channel> \n\nPlease don't forget to give us your feedback in our quick debrief form (Link is here: <https:\/\/prospela.typeform.com\/to\/wPkrSE>. Your feedback will help us improve our service for you and our students in the future :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1500896238.424520",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F6CS6MYFL",
+                "created": 1500914421,
+                "timestamp": 1500914421,
+                "name": "Screen Shot 2017-07-24 at 17.45.37.png",
+                "title": "E-Mentor 2nd Round Leaderboard",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 91632,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6CS6MYFL\/screen_shot_2017-07-24_at_17.45.37.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6CS6MYFL\/download\/screen_shot_2017-07-24_at_17.45.37.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6CS6MYFL-07fd0224d2\/screen_shot_2017-07-24_at_17.45.37_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6CS6MYFL-07fd0224d2\/screen_shot_2017-07-24_at_17.45.37_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6CS6MYFL-07fd0224d2\/screen_shot_2017-07-24_at_17.45.37_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 286,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6CS6MYFL-07fd0224d2\/screen_shot_2017-07-24_at_17.45.37_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 381,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6CS6MYFL-07fd0224d2\/screen_shot_2017-07-24_at_17.45.37_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 718,
+                "original_h": 570,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F6CS6MYFL\/screen_shot_2017-07-24_at_17.45.37.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F6CS6MYFL-bcf71ea887",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1500914423.913129"
+    },
+    {
+        "type": "message",
+        "text": "*THE 2ND ROUND RESULTS ARE IN!!* <!channel>\nCongratulations to <@U5XMAF7AA> for a whopping 4,474 words sent over the final duration of our pilot programme! He'll shortly be the proud owner of a PROSPELA T-SHIRT, LinkedIn recommendation from Prospela &amp; (of course) a £10 retail voucher! :clapping::carltondance::champagnepop:",
+        "user": "U4VR52RQE",
+        "ts": "1500914455.931062",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "My goodness.",
+        "user": "U5XMAF7AA",
+        "ts": "1500914505.957388",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "laughing",
+                "users": [
+                    "U4VR52RQE"
+                ],
+                "count": 1
+            },
+            {
+                "name": "joy",
+                "users": [
+                    "U4V22C6A1"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "<@U5WRFMCCA>, <@U5WMH4QGK>, <@U5WF2FY81> &amp; <@U5WR9CJTC> - nice one!! and again a HUGE thank you to all of your efforts. We've had some great feedback and learnings from both mentor and mentees (^^ KEEP IT COMING!! The feedback form link is a few posts above ^^) and we will be sharing some stats from your mentee feedback in the next couple of days. :smiley::bowtie:",
+        "user": "U4VR52RQE",
+        "ts": "1500914514.961992",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "FYI - Here are the top ranked students!",
+        "files": [
+            {
+                "id": "F6DP2DWDC",
+                "created": 1500914625,
+                "timestamp": 1500914625,
+                "name": "Screen Shot 2017-07-24 at 17.36.21.png",
+                "title": "Mentee Leaderboard",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 89560,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6DP2DWDC\/screen_shot_2017-07-24_at_17.36.21.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6DP2DWDC\/download\/screen_shot_2017-07-24_at_17.36.21.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6DP2DWDC-69fbe607db\/screen_shot_2017-07-24_at_17.36.21_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6DP2DWDC-69fbe607db\/screen_shot_2017-07-24_at_17.36.21_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6DP2DWDC-69fbe607db\/screen_shot_2017-07-24_at_17.36.21_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 289,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6DP2DWDC-69fbe607db\/screen_shot_2017-07-24_at_17.36.21_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 386,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6DP2DWDC-69fbe607db\/screen_shot_2017-07-24_at_17.36.21_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F6DP2DWDC-69fbe607db\/screen_shot_2017-07-24_at_17.36.21_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 578,
+                "image_exif_rotation": 1,
+                "original_w": 722,
+                "original_h": 580,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F6DP2DWDC\/screen_shot_2017-07-24_at_17.36.21.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F6DP2DWDC-82fd0b722a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1500914626.023481"
+    }
+]

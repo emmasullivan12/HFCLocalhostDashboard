@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Emma, still fit and healthy here, hope that you and family are safe, only issue I'm having is that my uni has now closed due to the coronavirus and so I have no way of doing the work at home and my deadlines a a bit of a mess, I've managed to get hold of my partners laptop that can run toon boom but even with this I don't get the software for every long, we can use it until 19th of April and then after that we have to start paying and I don't think I'll get my animation finished by then",
+        "ts": "1585063423.000100",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022276777844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Really unsure of what I should do, I've told my lectures that I have no way of doing the work with out the uni being open but haven't heard any advice about what I should do yet",
+        "ts": "1585063453.000200",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022278327988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

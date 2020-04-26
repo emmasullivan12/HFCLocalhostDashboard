@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, they just sent this around to all the mentors! Thought I’d share it with you!\n\n\n<https:\/\/www.ukscreenalliance.co.uk\/wp-content\/uploads\/2019\/06\/The_Core_Skills_of_VFX_-_Student_Primer.pdf|https:\/\/www.ukscreenalliance.co.uk\/wp-content\/uploads\/2019\/06\/The_Core_Skills_of_VFX_-_Student_Primer.pdf>",
+        "ts": "1579592761.000100",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/916952770742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

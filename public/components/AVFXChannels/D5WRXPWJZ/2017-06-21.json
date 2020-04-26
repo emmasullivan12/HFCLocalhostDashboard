@@ -1,0 +1,338 @@
+[
+    {
+        "type": "message",
+        "text": "Hi <@U5W6M67LZ>! Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1498076928.989292",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Here is a profile for your mentee, Athethan",
+        "files": [
+            {
+                "id": "F5WRPE4DN",
+                "created": 1498076948,
+                "timestamp": 1498076948,
+                "name": "Prospela - Your Mentee Profile - Athethan.pdf",
+                "title": "Prospela - Your Mentee Profile - Athethan.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 182171,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WRPE4DN\/prospela_-_your_mentee_profile_-_athethan.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WRPE4DN\/download\/prospela_-_your_mentee_profile_-_athethan.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5WRPE4DN\/prospela_-_your_mentee_profile_-_athethan.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5WRPE4DN-258c8e3f96",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498076948.996146"
+    },
+    {
+        "type": "message",
+        "text": "Thank you! ",
+        "user": "U5W6M67LZ",
+        "ts": "1498076969.003298",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Unfortunately, he hasn't logged in to the platform as yet so we can't introduce you ... hopefully later tonight or tomorrow (when his teacher can give him a nudge!)",
+        "user": "U4V22C6A1",
+        "ts": "1498076981.007690",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sounds great. ",
+        "user": "U5W6M67LZ",
+        "ts": "1498077004.016048",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We matched you based on your love for sports, but in particular his relative weakness in some skills (problem solving \/ proactivity \/ adaptability), which Dexter tells me you are VERY strong in ... so hopefully you'll help him develop in those areas!",
+        "user": "U4V22C6A1",
+        "ts": "1498077064.037081",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "He has put 'architecture' down as a career choice, but he isn't too sure about that it seemed",
+        "user": "U4V22C6A1",
+        "ts": "1498077098.048990",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'd aim to expand on his reasoning for that and see what else he's interested in! ",
+        "user": "U5W6M67LZ",
+        "ts": "1498077157.069262",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "A large salary seems to be a key focus - will try and share my experience (it's not all about the £!) as well. Quite keen to see where his thoughts are. ",
+        "user": "U5W6M67LZ",
+        "ts": "1498077221.091573",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yes definitely - hopefully the Career Plan we've made will guide you (a copy is in your E-mentor onboarding pack, but a link will also be provided in the chat where we introduce you and you'll be able to collaborate on the document if you like)",
+        "user": "U4V22C6A1",
+        "ts": "1498077222.091669",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yes - and another student put \"large salary e.g. £10+\" ... so it's not always what they really mean!",
+        "user": "U4V22C6A1",
+        "ts": "1498077250.100984",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We will soon find out! The career plan guide looks like a good way to get thoughts down on paper and reflect on them on an ongoing basis. ",
+        "user": "U5W6M67LZ",
+        "ts": "1498077392.150213",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "That's the plan! We hope you find it useful, but please do let us know your feedback when it comes to using it. i.e. what you think is missing \/ what was particularly useful etc",
+        "user": "U4V22C6A1",
+        "ts": "1498077622.229813",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Will do. I did the greenwich university mentoring scheme with a uni student a few years back - will be interesting to see the difference! ",
+        "user": "U5W6M67LZ",
+        "ts": "1498077690.253194",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ahh interesting - will have to hear your thoughts on that one after this pilot!",
+        "user": "U4V22C6A1",
+        "ts": "1498077709.259764",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Very impressed thus far with the setup. You and Dexter have done a fantastic job. ",
+        "user": "U5W6M67LZ",
+        "ts": "1498077728.266238",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

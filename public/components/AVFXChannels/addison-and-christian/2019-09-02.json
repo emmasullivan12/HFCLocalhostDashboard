@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I can handle some shots in the beginning of my semester yes. That would mean I could only help you out in October tho, does that work? Cause then I can use the machines at my uni with the full license",
+        "ts": "1567431939.001200",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-02\/746037530325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, how official is this? Do I have to sign anything?",
+        "ts": "1567431968.001300",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-02\/746038039941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It might work... Our hard deadline is the end of October latest so we might not have much left. But message me when you're able to take shots on and we'll see what we can do.\n\nIt is an official project so you would need to sign an Non-disclosure agreement",
+        "ts": "1567433270.001400",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-02\/739673525473_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will definitely do, thank you again for the offer!",
+        "ts": "1567442450.001500",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-02\/739793141665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the long run I would strongly recommend purchasing a student licence for £180 by the way. It was the best thing I did while studying ",
+        "ts": "1567443565.001600",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-02\/748370071750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

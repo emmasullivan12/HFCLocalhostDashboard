@@ -1,0 +1,56 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "here are some examples:\n<https:\/\/proxy.duckduckgo.com\/iu\/?u=https%3A%2F%2Fgosumo-cvtemplate.com%2Fwp-content%2Fuploads%2F2016%2F02%2FCV-Template-Vienna-Purple.png&amp;f=1>\n<https:\/\/proxy.duckduckgo.com\/iur\/?f=1&amp;image_host=http%3A%2F%2Fwww.blog.spoongraphics.co.uk%2Fwp-content%2Fuploads%2F2009%2Fresume-design%2FPicture-23-lg.png&amp;u=https:\/\/blog.spoongraphics.co.uk\/wp-content\/uploads\/2009\/resume-design\/Picture-23-lg.png>\n<https:\/\/proxy.duckduckgo.com\/iu\/?u=http%3A%2F%2Fwww.calendarprintabletemplates.com%2Fwp-content%2Fuploads%2F2017%2F04%2FFree-cv-template.jpg&amp;f=1>",
+        "ts": "1542702053.006600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/483823113475_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "fallback": "720x1040px image",
+                "image_url": "https:\/\/proxy.duckduckgo.com\/iu\/?u=https%3A%2F%2Fgosumo-cvtemplate.com%2Fwp-content%2Fuploads%2F2016%2F02%2FCV-Template-Vienna-Purple.png&f=1",
+                "image_width": 720,
+                "image_height": 1040,
+                "image_bytes": 181652,
+                "from_url": "https:\/\/proxy.duckduckgo.com\/iu\/?u=https%3A%2F%2Fgosumo-cvtemplate.com%2Fwp-content%2Fuploads%2F2016%2F02%2FCV-Template-Vienna-Purple.png&f=1",
+                "id": 1,
+                "original_url": "https:\/\/proxy.duckduckgo.com\/iu\/?u=https%3A%2F%2Fgosumo-cvtemplate.com%2Fwp-content%2Fuploads%2F2016%2F02%2FCV-Template-Vienna-Purple.png&amp;f=1"
+            },
+            {
+                "fallback": "717x920px image",
+                "image_url": "https:\/\/proxy.duckduckgo.com\/iur\/?f=1&image_host=http%3A%2F%2Fwww.blog.spoongraphics.co.uk%2Fwp-content%2Fuploads%2F2009%2Fresume-design%2FPicture-23-lg.png&u=https:\/\/blog.spoongraphics.co.uk\/wp-content\/uploads\/2009\/resume-design\/Picture-23-lg.png",
+                "image_width": 717,
+                "image_height": 920,
+                "image_bytes": 36954,
+                "from_url": "https:\/\/proxy.duckduckgo.com\/iur\/?f=1&image_host=http%3A%2F%2Fwww.blog.spoongraphics.co.uk%2Fwp-content%2Fuploads%2F2009%2Fresume-design%2FPicture-23-lg.png&u=https:\/\/blog.spoongraphics.co.uk\/wp-content\/uploads\/2009\/resume-design\/Picture-23-lg.png",
+                "id": 2,
+                "original_url": "https:\/\/proxy.duckduckgo.com\/iur\/?f=1&amp;image_host=http%3A%2F%2Fwww.blog.spoongraphics.co.uk%2Fwp-content%2Fuploads%2F2009%2Fresume-design%2FPicture-23-lg.png&amp;u=https:\/\/blog.spoongraphics.co.uk\/wp-content\/uploads\/2009\/resume-design\/Picture-23-lg.png"
+            },
+            {
+                "fallback": "720x960px image",
+                "image_url": "https:\/\/proxy.duckduckgo.com\/iu\/?u=http%3A%2F%2Fwww.calendarprintabletemplates.com%2Fwp-content%2Fuploads%2F2017%2F04%2FFree-cv-template.jpg&f=1",
+                "image_width": 720,
+                "image_height": 960,
+                "image_bytes": 135033,
+                "from_url": "https:\/\/proxy.duckduckgo.com\/iu\/?u=http%3A%2F%2Fwww.calendarprintabletemplates.com%2Fwp-content%2Fuploads%2F2017%2F04%2FFree-cv-template.jpg&f=1",
+                "id": 3,
+                "original_url": "https:\/\/proxy.duckduckgo.com\/iu\/?u=http%3A%2F%2Fwww.calendarprintabletemplates.com%2Fwp-content%2Fuploads%2F2017%2F04%2FFree-cv-template.jpg&amp;f=1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright I'll try something similar ",
+        "ts": "1542729854.006800",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/485684874710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

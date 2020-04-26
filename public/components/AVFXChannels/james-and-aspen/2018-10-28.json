@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for that, this will help me with my course",
+        "ts": "1540740259.000900",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-28\/466382811829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

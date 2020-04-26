@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lisa-Mae, Sorry for the late response I have been busy with University work. I'm fine thank you - how are you ?",
+        "ts": "1573391638.000100",
+        "username": "Rasheed Abdul (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-10\/817218463763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

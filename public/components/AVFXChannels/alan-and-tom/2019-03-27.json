@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tom it all looks promising but I'm not really the guy to give you blendshape feedback :wink: do you have any test animation?",
+        "ts": "1553717220.004300",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590859158245_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

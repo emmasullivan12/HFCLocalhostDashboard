@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Samantha, I take you don't have any more questions at this stage? If so, let me know so I can help someone else. All the best. Mariano",
+        "ts": "1580809527.002100",
+        "username": "Mariano Melman Carrara (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935592598789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mariano yes my apologies for getting back to you :sweat_smile: not at this current moment. It mainly for university as we need to get feedback on our final major project work but I haven’t made enough to just show yet! If it okay to talk in a few more weeks at all that be great :) ",
+        "ts": "1580809628.002200",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/925416503585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, no problem. Good luck with your projects. Best, Mariano",
+        "ts": "1580809862.002300",
+        "username": "Mariano Melman Carrara (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935600168053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

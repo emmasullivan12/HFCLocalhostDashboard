@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great thanks Mark. Yes let's so that let me know when is good for you,",
+        "ts": "1586082765.005500",
+        "username": "tidyupmedia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1039718403779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*do*",
+        "ts": "1586082787.005600",
+        "username": "tidyupmedia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1049462227060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

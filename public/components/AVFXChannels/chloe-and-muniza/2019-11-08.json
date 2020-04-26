@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah wow! Thank you for help setting up such a meaningful and inclusive community :smile: It's already having such a big impact on the animation\/vfx community and I can see it growing even more in the future aha",
+        "ts": "1573212067.000200",
+        "username": "Muniza Fazal (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-08\/826960400293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry this is a bit last minute, but I'll be visiting Blue Zoo today with some other students from my course to gather research on the studio for one of our briefs - we might see each other :smile::sparkles:",
+        "ts": "1573212167.000300",
+        "username": "Muniza Fazal (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-08\/826489748516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

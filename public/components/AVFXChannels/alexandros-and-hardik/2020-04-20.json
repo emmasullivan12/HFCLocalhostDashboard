@@ -1,0 +1,568 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning,\nFor the last week I've been using HackerRank and doing the 30 day challenge. I like that we have to make use of some of the code they give us because it sometimes speed things up and you can learn shortcuts. I've also spent a bit of time adding a bit more information to the game I talked about and found an engine called Love, I found it after finding out about the community game that was made real from the show. It's an 8 bit engine I think and I think I will use that.",
+        "ts": "1587371702.010400",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079039492820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "good morning Hardik!",
+        "ts": "1587374190.010500",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073164742163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "wow great news, you've been active! :slightly_smiling_face:",
+        "ts": "1587374199.010600",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071575183621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how are you finding the \"testable\" aspect of HackerRank? i.e. how you write your code and then keep re-running the tests until they pass",
+        "ts": "1587374228.010700",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085581999377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also, how have you been finding it in terms of difficulty so far? too easy, just right or challenging?",
+        "ts": "1587374315.010800",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1096800339344_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in terms of the engine, I think it's cool that you're trying out new stuff! :smile: in terms of which engines are the most popular today in the industry, it may be worth trying out Unity or Unreal (I can help with Unity, but don't know Unreal)! they can be a bit \"intimidating\" at first but certainly offer a lot of flexibility! and Unity is both a 2D and 3D engine",
+        "ts": "1587374479.010900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1096805419872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how are you doing otherwise? still coping with staying inside etc.?",
+        "ts": "1587374503.011000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071584732629_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like how they run the code with different scenarios but I wish we could see them, I'm not sure if there is a feature that let you see what happens in each test.\n\nThe difficulty is strange as I understand the tasks at the moment but the format they want us to output in, needs getting used to so I'd say its just right.\n\nI think I tried unity a long time ago even before python so I gave up on it. I think I'll still focus on Love though. I'll get into unity in uni.\n\nI'm getting more used to staying indoors, I tend to get a lot more work done in the mornings so I'm going to try and wake up earlier. As the day goes on, I end up grinding games or shows.\n\nI just wanted to ask how your university years were set, like was year 1, a general course and that tried to explain each section of computer science and then you would go on to choose what you wanted to go into?",
+        "ts": "1587375184.011100",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079155769748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh, great question!",
+        "ts": "1587381623.011200",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073182624946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so I studied Informatics in Edinburgh, which has 4 year degrees (rather than 3, which is the case for lots of English universities I believe)",
+        "ts": "1587381664.011300",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073183784274_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there were some choices in every year, but significantly more choice in direction for the 3rd and 4th years",
+        "ts": "1587381700.011400",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071804889125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1st year had lots of mathematics, some of which was things often covered in school, but some new things too!",
+        "ts": "1587381764.011500",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073186457954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it also had 2 different programming language paradigms, Functional (in Haskell) and Object Oriented (in Java)",
+        "ts": "1587381770.011600",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079355112244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and some computer science fundamentals like graph theory, final state machines, logic etc.",
+        "ts": "1587381794.011700",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071807342517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "then we were offered a choice from other disciplines, for example electronics (from the school of engineering)",
+        "ts": "1587381833.011800",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073188333426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for my choice I took philosophy! it covered logic, so there was some overlap there, but also philosophy of science, which is quite an interesting topic",
+        "ts": "1587381859.011900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097030595664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "let me try to find my transcripts actually :slightly_smiling_face:",
+        "ts": "1587381973.012000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097033675936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "alright! so:\n\nyear 1:\n\n• Computation and Logic (this included logic as taught in philosophy, and finite state machines)\n• Functional programming (in Haskell)\n• Object oriented programming (in Java)\n• Data and analysis  (this was basic database stuff, SQL etc)",
+        "ts": "1587382356.012100",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079372111716_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "then the mathematics I mentioned and the choice I made for philosophy :slightly_smiling_face:",
+        "ts": "1587382371.012200",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073414059251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in year 2 I think we didn't get any choice, and the courses were:\n• Algorithms, data structures, learning (this included computational complexity theory etc, and a tiny bit of AI)\n• Computer systems and software engineering (this was on the theoretical side, going through design patterns and UML diagrams for architecture of systems)\n• Lots and lots of maths!!! (geometry, linear algebra, matrices etc.)\n• Processing formal and natural languages (this was about analysing natural languages, like English, automatically, but also programming languages, from a compiler point of view)\n• Reasoning and agents (introductory course to Artificial Intelligence)",
+        "ts": "1587382797.012300",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071836043813_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so by the end of the first 2 years, we would have looked at AI, at language processing, compilers, software engineering as well as something seemingly unrelated (like I choice philosophy)",
+        "ts": "1587382833.012400",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058483660919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "at that point we chose the title of our degree, mine was \"...with Honours in Software Engineering and Artificial Intelligence\"",
+        "ts": "1587382893.012500",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066484911238_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so to be able to have that degree title I had to make relevant choices, from tons and tons of options! I remember thinking how they kept all the cool options for the last two years and having real difficulty choosing :smile:",
+        "ts": "1587382929.012600",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085845520369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so in years 3 and 4 I made choices like networking, computer vision, machine learning, robotics etc",
+        "ts": "1587382984.012700",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097062669680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there were still some fixed courses though: 1 was (you guessed it) more maths :smile: then there was a group project where we built robots to play football against eachother",
+        "ts": "1587383019.012800",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085848053361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so we had a little robot football tournament",
+        "ts": "1587383026.012900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097063843600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and there was a long project too, for which I had to write a handwritten number recognition software",
+        "ts": "1587383054.013000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073222953938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in the final year, there's also the dissertation, in which you have to do some independent research and propose a final, longer report! usually the topics are chosen by professors that you collaborate with, though you can propose your own",
+        "ts": "1587383105.013100",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079392888612_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "since I also had a computer graphics course in my 4th year, I wanted something along those lines, so my project was a mix of graphics\/AI",
+        "ts": "1587383127.013200",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073434988963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had to build a system which learnt how to animate a character's head movement, based on speech as input! so you gave the system audio of someone talking, and it would build the animation that matched that speech",
+        "ts": "1587383165.013300",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085852107457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "alright I will stop now cause I'm bombarding you with information! :smile:",
+        "ts": "1587383180.013400",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073436469795_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that's a lot to take in, did you ever take further maths before university to help with the maths. If not, was it ever challenging?\nDid you learn anything about game theory and what things to include in a game? - This is something I want to go into and I'm doing this for an EPQ.\n\nAlso are you developing anything at home unrelated to work, something you just wanted to do when you had the free time. I'd like to know what type of things people get up to when they are able to.",
+        "ts": "1587386812.013500",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097185400272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I only did the maths my school offered, so I found the maths at university quite challenging at times! in retrospect, though, perhaps I should have spent more time understanding them during years 1-2 of my degree :smile:",
+        "ts": "1587387664.013600",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071997520661_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "just FYI, \"game theory\" usually refers to the mathematical theory of John Nash (there was a movie about him, \"A beautiful mind\", not sure if you've watched it)",
+        "ts": "1587387726.013700",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097221945472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but I understand what you mean! :slightly_smiling_face: there were no courses about game design and I don't know any computer science programs that offer that! there are, however, dedicated game design or game development courses these days that are more focused on these things",
+        "ts": "1587387776.013800",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073382505714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I used to do lots of development in my spare time! similar to you, working on games or game-related projects",
+        "ts": "1587387822.013900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079552988788_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but ever since I started working full-time I find that difficult",
+        "ts": "1587387837.014000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1072005267141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I still use my spare time to contribute to some academic journals as an editor",
+        "ts": "1587387857.014100",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058652728183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there is, however, a coding project I've been wanting to do in my spare time: it's called Raytracing in One Weekend",
+        "ts": "1587387916.014200",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073598400211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/www.realtimerendering.com\/raytracing\/Ray%20Tracing%20in%20a%20Weekend.pdf>",
+        "ts": "1587387918.014300",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079556991284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it's about writing a raytracing engine (essentially simulating bounces of light in a physically-based way) in C++",
+        "ts": "1587387959.014400",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1086016313217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but I don't know if I'll find the energy to do more dev on top of my usual day!",
+        "ts": "1587387975.014500",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058657643863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but I do have friends who like to code all the time, even after a full working day! :slightly_smiling_face:",
+        "ts": "1587388010.014600",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066658685078_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do have two great resources to share with you for learning more about game design and game technology, let me know and I can share it with you! I'm a bit wary about overloading you haha :smile:",
+        "ts": "1587388629.014700",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066683816694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah go ahead and send it.",
+        "ts": "1587393606.014800",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073651193682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*GDC talks and lectures*\nGDC (Games Developers Conference) is one of the biggest conferences for videogames. You can find free talks online at <https:\/\/gdcvault.com\/> as well as their YouTube channel: <https:\/\/www.youtube.com\/channel\/UC0JB7TSe49lg56u6qH8y_MQ>\nWhat's great is that, due to the current global situation, they've made all talks from this year free!\n<https:\/\/gdcvault.com\/free\/gdc-20>\n\n\n*Gamasutra*\nThis is generally a great website to read and learn news from the gaming industry.\n<https:\/\/gamasutra.com\/>\n\n\n*Ubisoft's Game Creators Odyssey*\nUbisoft recently created a game design online course, that is presented and delivered in a gamified way. I haven't tested it myself, but it caught my attention and it might be worth checking out! I believe there's also a certificate.\n<https:\/\/gamecreatorodyssey.com\/overview\/>",
+        "ts": "1587404025.014900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1074350087011_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "title": "GDC",
+                "title_link": "https:\/\/www.youtube.com\/channel\/UC0JB7TSe49lg56u6qH8y_MQ",
+                "text": "Welcome to the GDC YouTube channel, where you'll find clips and full length videos from GDC -- <http:\/\/www.gdconf.com|www.gdconf.com> GDC is the world's largest professional game in...",
+                "fallback": "YouTube: GDC",
+                "thumb_url": "https:\/\/yt3.ggpht.com\/a\/AATXAJyxk6_9N3AfkoFCnv2Xsrd_RNXr8K_p2pIlmg=s900-c-k-c0xffffffff-no-rj-mo",
+                "from_url": "https:\/\/www.youtube.com\/channel\/UC0JB7TSe49lg56u6qH8y_MQ",
+                "thumb_width": 900,
+                "thumb_height": 900,
+                "service_icon": "https:\/\/s.ytimg.com\/yts\/img\/favicon-vfl8qSV2F.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/channel\/UC0JB7TSe49lg56u6qH8y_MQ"
+            },
+            {
+                "title": "Gamasutra - The Art &amp; Business of Making Games",
+                "title_link": "https:\/\/gamasutra.com\/",
+                "text": "Daily news, interviews, features, and developer blogs about the Art &amp; Business of Making Games.",
+                "fallback": "Gamasutra - The Art &amp; Business of Making Games",
+                "thumb_url": "https:\/\/img.deusm.com\/informationweek\/gamasutra_logobig2.png",
+                "from_url": "https:\/\/gamasutra.com\/",
+                "thumb_width": 443,
+                "thumb_height": 443,
+                "service_icon": "https:\/\/gamasutra.com\/favicon.ico",
+                "service_name": "gamasutra.com",
+                "id": 2,
+                "original_url": "https:\/\/gamasutra.com\/"
+            },
+            {
+                "service_name": "Game Creators Odyssey",
+                "title": "OVERVIEW - Game Creators Odyssey",
+                "title_link": "https:\/\/gamecreatorodyssey.com\/overview\/",
+                "text": "Teach your students about the secrets behind game design and development. PROGRAM OVERVIEW Teach your students about the secrets behind game design and development. Our team of experts will unravel a journey that teaches the philosophy behind",
+                "fallback": "Game Creators Odyssey: OVERVIEW - Game Creators Odyssey",
+                "image_url": "https:\/\/gamecreatorodyssey.com\/wp-content\/uploads\/2019\/02\/speaker-DFT2018-Olivier-PALMIERI-Ubisoft.jpg",
+                "from_url": "https:\/\/gamecreatorodyssey.com\/overview\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 13593,
+                "service_icon": "https:\/\/gamecreatorodyssey.com\/wp-content\/uploads\/2019\/03\/FaviconGCO1-1.png",
+                "id": 3,
+                "original_url": "https:\/\/gamecreatorodyssey.com\/overview\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587404029.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow thanks. :grinning:",
+        "ts": "1587408288.015100",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1086941281857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

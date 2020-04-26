@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We can catch up then!",
+        "ts": "1558098845.003200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-17\/638726076880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

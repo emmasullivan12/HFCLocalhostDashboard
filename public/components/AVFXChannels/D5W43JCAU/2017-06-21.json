@@ -1,0 +1,102 @@
+[
+    {
+        "type": "message",
+        "text": "If you have any questions about *how to use Slack*, please ask me! I’ll do my best to help.",
+        "user": "USLACKBOT",
+        "ts": "1498041418.558704",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Video call",
+        "user": "U5WMH4QGK",
+        "ts": "1498058890.114367",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "You can call your teammates _directly from Slack!_ Check out the details on our Help Center: \n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/216771908|Start a voice call in Slack>",
+        "user": "USLACKBOT",
+        "ts": "1498058890.114408",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U4VR52RQE|dexter-prospela> converted a group DM into the private channel _christian1_.",
+        "user": "USLACKBOT",
+        "ts": "1498070044.566388",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "You have been removed from the group christian1 by <@U4VR52RQE|dexter-prospela>",
+        "user": "USLACKBOT",
+        "ts": "1498070049.568604",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

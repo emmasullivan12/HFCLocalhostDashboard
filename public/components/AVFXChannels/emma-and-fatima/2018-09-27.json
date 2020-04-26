@@ -1,0 +1,112 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! You can pin that list by hovering over it and clicking \"pin to emma-and-fatima\" so you can refer easily to it if you want! Also helps so if you can't think of questions to ask then you can relate to our list :smiley:",
+        "ts": "1538044714.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/445288257895_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I'm wondering whether to start with #1 or #2 on our list, but it will depend on how soon you need to find work experience. If this is something you need to do quickly then I think we should prioritize #2! So when do you need \/ want to do your work experience by?",
+        "ts": "1538044778.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444238331090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I assume you'd like something in the tech industry ... preferable in security team?",
+        "ts": "1538044794.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/443644235073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "BTW as a bit of an update to what I'm currently doing at work ... I'm in the process of designing a new product from scratch so we are mapping out the \"flow\" a user would take through our product to make it as slick and easy as possible :sunglasses: ... to help us, we are using a big whiteboard to scribble &amp; sketch ideas down and have a debate as a team! It can get quite heated and people disagree, but its quite exciting!!",
+        "ts": "1538044955.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444239990306_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm happy to do it on weekends and during half term holidays",
+        "ts": "1538081059.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444143522817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll be doing some volunteering in an old age home ",
+        "ts": "1538081136.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444006884640_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not specific to tech but my computer science sir adviced me ",
+        "ts": "1538081161.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444739863186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that's a right assumption:smile:",
+        "ts": "1538081207.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444639597347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wooooow that's amazing and sounds fun",
+        "ts": "1538081276.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/445792044567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's the product though? Can I know about it?",
+        "ts": "1538081303.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444555799860_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

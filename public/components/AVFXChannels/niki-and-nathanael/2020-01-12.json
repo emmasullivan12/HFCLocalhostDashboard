@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hopefully you will hear from Dexter soon. He is looking into giving you a 3D mentor. Hope it works out really well for you. Best of luck with everything ^^,\nNiki",
+        "ts": "1578836294.000200",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-12\/891541217011_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

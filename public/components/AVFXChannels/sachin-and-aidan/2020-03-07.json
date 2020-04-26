@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sachin hope you’re well, been a particular busy week for me this week but I tried having a look at linux on the computers at uni and I don’t believe that they have git installed",
+        "ts": "1583589877.023700",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-07\/975813308451_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

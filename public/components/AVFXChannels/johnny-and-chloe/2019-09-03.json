@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chloe, hope you are doing great, Im without internet at home. Sorry being quiet, I will try on my free moments at Dneg to start looking at your work.\nWhat are you up to now ?",
+        "ts": "1567514866.000100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/734138468098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you would like to aim for something, or try to do an exercise with me, what visual reference would you like to achieve?\nJust asking for a picture or video of something you would love to do by yourself",
+        "ts": "1567532482.000200",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/735896721491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

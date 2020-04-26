@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! I’ll actually be away for the weekend so I might be a bit delayed in replying but I’ll do my best! That seems late to be leaving the office at! Is that a standard work day for you? ",
+        "ts": "1565939413.002100",
+        "username": "Chloe O’Connor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/717016247155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha , not a standard . We are on delivery mode and I have a more lot responsibility than an artist ,\nmy team member are all leaving at 6 , I’m still at the office ",
+        "ts": "1565979445.002200",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/717696547250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow, well I hope you have time to take it easy at the weekend at least!",
+        "ts": "1565980351.002300",
+        "username": "Chloe O’Connor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/717714738018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you , yes it will be family time , I will get a good month out of work after I finish the current show , in November this one will be done ",
+        "ts": "1565980460.002400",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/717717018467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

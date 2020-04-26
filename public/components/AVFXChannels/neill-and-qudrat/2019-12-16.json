@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was a professional photographer for 12 years before deciding that I needed a change from Forensic photography I went to Bournemouth Uni 7 years ago",
+        "ts": "1576518822.000100",
+        "username": "Neill (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/877454812423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm moving to Australia because the film industry there is booming atm with all the tax breaks that the government is offering to production companies. Plus, I really want to live by the beach and have a short commute in to work, which is a bit tricky in London! I have a contract with a VFX studio out there and they will be sponsoring my visa as I wouldn't be allowed to stay in the country for more than 3 months otherwise.",
+        "ts": "1576519683.000200",
+        "username": "Neill (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/875620789616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is it about compositing that is drawing you in?",
+        "ts": "1576519801.000300",
+        "username": "Neill (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/877832645990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

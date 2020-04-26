@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Katherine, hows it going? Just a heads up, thought I would share this with you. I have signed up for this guys comp newsletter for a few months now and its got some really nice tips and tricks! He’s called Josh Parks and his website is: <http:\/\/www.compositingpro.com\/>",
+        "ts": "1586282046.000100",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1054692150084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ben, I’ll have a look sounds great! I’m okay we had online lectures last week, I’ve got quite a bit to do for my final major project, but trying ot stay motivated to get it done!",
+        "ts": "1586282534.000200",
+        "username": "Katherine Bristow (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046070241331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

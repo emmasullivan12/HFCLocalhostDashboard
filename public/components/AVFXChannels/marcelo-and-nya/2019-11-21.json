@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Marcelo, those are amazing ",
+        "ts": "1574347440.010100",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/845785712087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The animatics I feel like I’m watching a classic cartoon",
+        "ts": "1574347473.010200",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/832459470723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm glad you like them, thanks :) \nThose called sweaty siblings and hydro &amp; fluid are on YouTube, actually I've never watched the final versions haha but if you look it up you should find those episodes I did as well.",
+        "ts": "1574357941.010300",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/846463675030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

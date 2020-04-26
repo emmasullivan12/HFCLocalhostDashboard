@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Hannah! Sorry for my radio silence, I’ve been off work with a cold which has been incredibly boring... ",
+        "ts": "1508856398.000736",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261110037554_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck with the jump to BTEC! It will definitely be a shock to the system but also a lot more interesting and in depth than the GCSE which I sense you will definitely find rewarding ",
+        "ts": "1508856440.000574",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261110586786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you have spare time (I know very unlikely with all the studying) it might be worth looking at the ABRSM music theory courses because they are very in depth and will undoubtedly be useful for post school musical life. Do you have a piano teacher?",
+        "ts": "1508856518.000454",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261111450066_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also slightly unrelated but my boss at work has just asked if I want to be in the work rock band HA! Only catch is they need someone to play bass and I definitely do not.. wish me luck!",
+        "ts": "1508856576.000111",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/260459923040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

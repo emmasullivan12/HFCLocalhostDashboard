@@ -1,0 +1,146 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1562672454.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1562672455.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d247d4646cc0d0004b4dac1|this link> with other teams to invite them in it_",
+        "ts": "1562672456.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1562672505.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1562672510.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1562672534.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"david-and-louis\"",
+        "old_name": "z-shared-23",
+        "name": "david-and-louis"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1562672540.001100",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@d.sheldon has joined the channel_",
+        "ts": "1562672679.001200",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/690592771447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@louisvaney has joined the channel_",
+        "ts": "1562672687.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/688754881573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Louis, please meet David your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1562672708.001400",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/682394140225_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1562672720.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/677328969538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1562672725.001600",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/677329050770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi David. My name is Louis I'm living in London. I've been trying to get an entry level position for a Visual Effects company for some time but I've been having a real hard time getting any progress. Maybe you can help me figure out where to look and help me improve my chances of getting a job. I did a Masters in digital effects at Bournemouth universtity and I did really well, I focused on compositing a bit more than Houdini Effects. You can check my showreel <https:\/\/vimeo.com\/345192866>",
+        "ts": "1562675970.001700",
+        "username": "Louis Vaney (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/682444421585_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Louis Vaney Nuke Compositing Showreel 2019",
+                "title_link": "https:\/\/vimeo.com\/345192866",
+                "author_name": "Louis",
+                "author_link": "https:\/\/vimeo.com\/user72620554",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/794903658_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "First Project- Aquascape\/Dry for wet effect (solo)\nSunset scene (solo)\nNight forest\/day fornight effect (group project): Compositing, filming, lighting and 3d costume\nSorceress temple (duo): Compositing, filming, lighting and 3d assets",
+                "fallback": "Vimeo Video: Louis Vaney Nuke Compositing Showreel 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/345192866?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Louis Vaney Nuke Compositing Showreel 2019\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/345192866",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/345192866"
+            }
+        ]
+    }
+]

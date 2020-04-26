@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ryan, just checking if you got my messages?",
+        "ts": "1586981576.004700",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1065160020018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

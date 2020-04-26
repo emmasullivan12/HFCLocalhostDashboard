@@ -1,0 +1,178 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning, weekend as passed, and I had to work , so nothing outside work, got done. Trying today :slightly_smiling_face:",
+        "ts": "1569236200.000600",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769168187284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem, I understand your work keeps you busy :blush: I'll be available to talk at 2pm or 6pm, if that suits you",
+        "ts": "1569238356.000700",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769201235380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll actually be available this evening sometime after 7, something has come up so I hope that's okay",
+        "ts": "1569244096.000800",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771630457591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "all good :slightly_smiling_face:",
+        "ts": "1569244178.000900",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771632335431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, are you free to chat now?",
+        "ts": "1569263239.001000",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/770269632501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Kinda :slightly_smiling_face: But I can chat",
+        "ts": "1569264471.001100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/772152661159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still at the office",
+        "ts": "1569264479.001200",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/772152826519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you ok?",
+        "ts": "1569264490.001300",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/770297597248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wanted to start to block what we need to do on our environment",
+        "ts": "1569264523.001400",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/763878735121_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was thinking of writing a few lines and give you a mood board, and asking you to sketch\/block something , very rough but a start",
+        "ts": "1569264608.001500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/757524609826_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does it sound good? Or do you prefer me to guide you with always a very clear goal ? I will be happier if this is more something you really like instead of me just asking you to go for something i've choosen .",
+        "ts": "1569264728.001600",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/770302989072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm good, thank you\nI think starting to block\/sketch something as soon as possible is a good idea, I'd be happy for you to send over a few lines or a mood board and from there we can start developing from there.",
+        "ts": "1569266317.001700",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/770339130544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lets do that, lets start with a few lines, plus a mood board, I will then block the bits that I would like you to add. We won't take to long on this step, but I would like you to go through it, as it's pretty standart thing to do",
+        "ts": "1569267832.001800",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/770371186448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good, I'm keen to learn these kind of standard things as I feel like I wasnt really taught it during my studies so it's good I get to know it know",
+        "ts": "1569269511.001900",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/757632302386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Start just with some lines about the location, use year, season, time of the day, where,\nThen on the mood board collect on one big image, all the images that you think they have some meaning for the environment you are thinking off",
+        "ts": "1569269626.002000",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/770410217104_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, I'll start it sometime tonight or after work tomorrow and pass it along once I'm done",
+        "ts": "1569271145.002100",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/758967641251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Damn it I did not get notified of this",
+        "ts": "1560944575.000100",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-19\/658356879938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So so so sorry ",
+        "ts": "1560944579.000200",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-19\/669780048581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "DNEG used to be through runner positions but they no longer offer that for 2D so your best bet here would be internships or apprenticeships",
+        "ts": "1560944624.000300",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-19\/671914751478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think ILM still does the progression for runners and so does Framestore ",
+        "ts": "1560944653.000400",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-19\/658357868978_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nowadays there’s so many schemes that it doesn’t make much sense to go the runner route I think",
+        "ts": "1560944679.000500",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-19\/671915465174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you apply to the smaller companies you’ll also get experience and probably a faster progression and people tend to forget the smaller companies",
+        "ts": "1560944741.000600",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-19\/669777455200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Basically once you’re happy with your showreel apply everywhere ",
+        "ts": "1560944770.000700",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-19\/671916585878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

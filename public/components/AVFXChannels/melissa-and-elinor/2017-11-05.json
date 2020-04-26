@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, I’m currently taking: triple science, Spanish, history, media and PE. I was thinking about taking Biology, Spanish and PE at college because I really enjoy them all and I think they link well with physiotherapy. I think the Spanish could link well as it can allow me to go abroad whilst working etc. Whilst the biology and PE would obviously link aswell as I am thinking of doing more sports therapy than just any physiotherapy. :)",
+        "ts": "1509923922.000004",
+        "username": "elinor.sandells (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/268193648230_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I am currently doing my duke of Edinburgh award so I was wondering if that would affect my applications for work, college and university in anyway and what I will need to put in my applications. Good luck with your placement I hope you enjoy it! ",
+        "ts": "1509924197.000019",
+        "username": "elinor.sandells (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266796625937_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

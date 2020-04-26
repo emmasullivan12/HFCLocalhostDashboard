@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian. How are you getting on?  Are you going home for Christmas?  Hope it’s all going well. Lucy :slightly_smiling_face:",
+        "ts": "1576496500.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/874551860100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy I am going well, and I'm back in London for Christmas. I hope you are well too :blush::blush:",
+        "ts": "1576503292.000200",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/864872533297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

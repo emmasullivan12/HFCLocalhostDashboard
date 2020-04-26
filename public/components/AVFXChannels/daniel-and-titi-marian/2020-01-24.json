@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Daniel! In a week time I will have a mock-interview at school. They give us this opportunity to prepare ourselves for an actual interview one day. I've been through different interviews during this 3 years regarding this side jobs I've been working part-time, but I still feel scared of what they could ask me once I'm in front of one of those recruiters. I'm quite a shy person at the beginning with whoever I meet for the first time, but once I get more confident I feel more relaxed, obviously keeping a good attitude and respect. I'm just afraid that because of my shyness, I will make think the recruiter that I'm not sure of myself and this could impact negatively on my performance.\n\nDo you have any advice on how to approach an interview? Do you have a general idea of which kind of questions the recruiter might ask in that amount of time?\n\nThank you very much! Have a nice weekend! :D",
+        "ts": "1579911846.000100",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/923901176470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

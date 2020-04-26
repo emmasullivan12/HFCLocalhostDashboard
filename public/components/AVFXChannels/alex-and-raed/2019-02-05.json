@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see :slightly_smiling_face:",
+        "ts": "1549401394.012100",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-05\/544124937287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

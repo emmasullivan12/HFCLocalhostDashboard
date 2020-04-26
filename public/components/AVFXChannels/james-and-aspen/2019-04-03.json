@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow, so I have some questions",
+        "ts": "1554332706.000500",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599569223492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So when revising for your alevels what did you do",
+        "ts": "1554332726.000600",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/597193134880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I get distracted by YouTube social media very easily also I just can't do work properly I just do something else every time I start to do some work, and when I have a timetable I always just never follow it I forget a slot of things very easily, what should I do?",
+        "ts": "1554332839.000700",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/600087314053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

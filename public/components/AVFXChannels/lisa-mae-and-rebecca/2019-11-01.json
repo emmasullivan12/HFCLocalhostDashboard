@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's amazing, Josh is such a fantastic teacher and quest lecturer. Ah animating can be *so* tricky if it's not your cup of tea. Have you tried doing it procedurally? I know that you can sometimes plug a random noise value in for animation, especially if it's just floating with a bit of motion? I guess it's different if it's animation where it's travelling across the screen or something similar.\nWith regards to being a woman in the industry, I honestly find it really brilliant in comparison to how I felt while at university. I found it quite hard while at uni to get my voice heard, or to have my opinion taken as seriously as my male classmates. Have you had similar feelings while at uni?\n\nOf course this really depends on the company you work for, but I haven't found the same thing at all since working at Blue Zoo. There are lots of women in positions of power\/influence that are massively inspiring. I almost find that we're at a point where the industry making a conscious effort to push women forward. For example my team is made up of 5 people, 3 of those (including myself) are women. My supervisor and lead are both women. I don't think the same thing could be said even 5 years ago so it's really looking positive. I found it really upsetting that we, similarly, didn't have one female guest lecturer during my 3 years at university. It's so hard to picture yourself in the industry if you don't see yourself reflected. The good news is that we _are_ here and we _are_ doing well in the industry. I'll possibly have a chat with HR at Blue Zoo and see if we can get any female guest lecturers heading out your way! I'll keep you updated :blush:",
+        "ts": "1572612438.002600",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-01\/810122776593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/www.animatedwomenuk.com\/> You might find this organisation interesting? :grinning:",
+        "ts": "1572612726.002700",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-01\/819897278855_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Animated Women UK",
+                "title": "Animated Women UK Supporting Women in VFX &amp; Animation",
+                "title_link": "http:\/\/www.animatedwomenuk.com\/",
+                "text": "Our Vision is to see a change in the UK's animation and VFX industries. We want to support a network of women who can help each other achieve success at every stage of the animation or VFX pipeline.",
+                "fallback": "Animated Women UK: Animated Women UK Supporting Women in VFX &amp; Animation",
+                "thumb_url": "http:\/\/www.animatedwomenuk.com\/wp-content\/uploads\/2016\/09\/fbcoverlogo.png",
+                "from_url": "http:\/\/www.animatedwomenuk.com\/",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "id": 1,
+                "original_url": "http:\/\/www.animatedwomenuk.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I’ve heard of animated women! It’s really inspiring and I’m so glad that we are pushing for more equality in the workplace! When it comes to uni, I haven’t really felt unheard compared to my male classmates. It’s more that I’m a bit nervous rather than I can’t say something!\nAnd yes, I am struggling still with the animating of my orb. I’ve shown my work in our dailies sessions and have actually got some pretty good feedback which has made me feel better about it! I think I’m going to try the noise mode to try and animate it because it’s not really moving around that much it’s more just raising in the air and then floating about a bit! How would I go about doing that? Where does the noise node plug in?\n\nAlso, having a female lecturer from BlueZoo would be amazing!!\n\nToday we’ve started looking into texturing, which is kind of LookDev. I’m not 100% sure what lookdev is, all in all. But we used Mari today and fell in love with the software! I’m going to be practicing that quite a bit over the next few weeks I think!\n\nOh, I was also wondering, did you go straight into the industry after graduating? This is something I’m quite worried about as I don’t want to go back to working retail and losing any abilities whilst I’m not doing VFX work after graduating!",
+        "ts": "1572652180.002900",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-01\/806136326674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

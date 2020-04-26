@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Elaine! Thank you so much!\nLuckily, after that episode I got an interview at Goodbye Kansas and got the job as a Matchmove artist :grin: and apparently they were okay with me doing my own visa, so if everything goes well I will be starting on End of Feb there. I’m excited!\nI also heard back from Bournemouth and they accepted me so I’ll see what to do later on.\n\nThank you for the link! I applied last year and got to interview stage, but unluckily they don’t sponsor visas so that was the same situation. It gets tiring but there’s always a way! ",
+        "ts": "1580826551.000400",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935964393280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s wonderful news about goodbye Kansas!! I’ve heard great things about them. Congrats!! Also well done on getting accepted to Bournemouth. You have great options now :+1::+1::+1:",
+        "ts": "1580851957.000500",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/926655180481_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you!! Yes, I am excited for the things to come :)\nOne of my 2020 goals is to learn Python wherever I am working at, so I am trying to do that at least 30 min a day! Do you have any website\/recommendations for that?\n",
+        "ts": "1580852067.000600",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/936360639764_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

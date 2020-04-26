@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello there Tom! How are you? I am happy to meet you and see if I can be of any help. A little bit about myself, I come from a gamedesign background (5 years of uni) and have been working in a field of animation called previs\/previzualisation, that happens very much in pre-production for films and TV shows for another 5 years now. Can you tell me a little bit about your background and what you hope to find with this mentor program? Best regards, maike",
+        "ts": "1573204118.001700",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-08\/826341881300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Johnny, sorry for not responding sooner, I do have my work published online and I'll send a link in this chat. In terms of questions I suppose the two I currently have is, would you recommend environment artists learn to do matte paintings? I've previously considered it but I was unsure of how important a skill it was. The second is whether there is a specific time of day to best message you to avoid big gaps between our messages. Thanks",
+        "ts": "1565863066.001800",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/720966965857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/cfrayne.artstation.com\/>",
+        "ts": "1565863068.001900",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/720966978289_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Caryn Frayne",
+                "title_link": "https:\/\/cfrayne.artstation.com\/",
+                "text": "2D\/3D Artist | Available for Work",
+                "fallback": "Caryn Frayne",
+                "thumb_url": "https:\/\/cdnb.artstation.com\/p\/users\/covers\/000\/155\/153\/default\/280076e7343bf19f5073488aecaff409.jpg?1563201923",
+                "from_url": "https:\/\/cfrayne.artstation.com\/",
+                "thumb_width": 1920,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/cdn.artstation.com\/static_media\/placeholders\/user\/portfolio_favicon\/default.png",
+                "service_name": "cfrayne.artstation.com",
+                "id": 1,
+                "original_url": "https:\/\/cfrayne.artstation.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Finally out of the office !! \nI will have a proper look at your portfolio this weekend .\nDMP is not a must to master but an understanding of the 3D projections and what is possible achieve in DMP it’s important for environment artists .\nIn term of the best time , I’m always a bit more free after 9pm but txt me at anytime I will try to reply as soon as I can.\n",
+        "ts": "1565897236.002100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729836365543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

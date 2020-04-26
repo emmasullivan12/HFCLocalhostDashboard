@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey there! I chose Hybride! We’re on the third floor!  :) Yes, Montreal is a lot of things, and strange is one of them! Whatever you’re into, there will be a community and a festival to celebrate it! Much fun to be had! Which neighborhood did you choose? ",
+        "ts": "1562464731.000600",
+        "username": "Anne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-06\/686724822613_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

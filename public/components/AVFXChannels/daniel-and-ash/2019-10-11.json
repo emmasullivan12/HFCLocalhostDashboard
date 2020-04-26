@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya Ash,\n\nI've not heard from you in a while, how are things?",
+        "ts": "1570779895.000100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/785485945729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

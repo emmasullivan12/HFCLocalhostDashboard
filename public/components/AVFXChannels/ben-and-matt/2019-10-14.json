@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad to hear :sweat_smile:... Oh real nice, guessing that has something to do with the Pope :laughing:",
+        "ts": "1571049475.001800",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-14\/796500089446_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it was :wink: how are your ideas going? ",
+        "ts": "1571082626.001900",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-14\/794983482944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice :grin: \nSo I've been working on a mini project, just to get used to Nuke and I need to get out of my AE mind set because they're so different :joy: \n\nSo I've keyed out some green screen, tracked about 400 frames exported camera data, done my animation in Max thrown it back into Nuke, thinking to myself yeah, this is going great!\n\nThen I tried something simple like masking over some footage to make it look like the lower part of my animation is behind a ledge &amp; for some reason, inside the mask just keeps making everything other than the animation sequence turn to black. \n\nI've set the roto paint node to output as mask, then in the merge set it to use the mask from the foreground node...",
+        "ts": "1571088835.002000",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-14\/788661915697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's annoying me I can't do something so simple because in AE I could do it with my eyes closed :see_no_evil::tired_face: but I'm sure I'm just plugging nodes in the wrong way round or something... So I'll fix it tomorrow :grin:",
+        "ts": "1571088927.002100",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-14\/794632630436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Morning <@U5XTUA3HT>, hope you had a good weekend! It sounds like you are really into your music, do you get the opportunity to play as much as you would like?",
+        "user": "U5WVD9VEX",
+        "ts": "1499156156.561937",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2da0126f33a2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201889746406_2da0126f33a2bb51d9c6_72.jpg",
+            "first_name": "Thomas",
+            "real_name": "Thomas",
+            "display_name": "thomas",
+            "team": "T4UUTPV18",
+            "name": "thomas",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Thomas;\nRight at this moment, i don't have the opportunity to play as much as I'll like to because I'm quite busy with A levels.\n\nWhat do you do as a job? and do you like it ?\n\n",
+        "user": "U5XTUA3HT",
+        "ts": "1499169326.129129",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "6e7733bd8445",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/201181455952_6e7733bd8445ebf2c0bb_72.png",
+            "first_name": "Ivanna",
+            "real_name": "Ivanna",
+            "display_name": "ivannagioia",
+            "team": "T4UUTPV18",
+            "name": "ivannagioia",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your feedback for my reel?",
+        "ts": "1585156956.000100",
+        "username": "Michael Leslie Rubin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1016111973873_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

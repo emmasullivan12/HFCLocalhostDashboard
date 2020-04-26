@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will check this out tomorrow for you Charis! got a full day ahead of trying to get my shot approved by the end of the day but tomorrow I will have time ^^",
+        "ts": "1583487444.002600",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/987285297383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you!!",
+        "ts": "1583490325.002700",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/987703568406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

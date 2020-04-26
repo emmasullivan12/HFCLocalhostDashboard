@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Craig, Wondering if you could help me on this? I'm am trying to get my head around VEX. In this expression I am deleting red points. How would I specify a time delay before setting the attribute  \"kill_Red\" to 1? I want to wait a second or two.\n\nif (@Cd == {1,0,0} &amp; point(1, \"Cd\", @ptnum) == {1,0,0})\n\n{i@kill_Red = 1;;}",
+        "ts": "1579493584.000100",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/914996673559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

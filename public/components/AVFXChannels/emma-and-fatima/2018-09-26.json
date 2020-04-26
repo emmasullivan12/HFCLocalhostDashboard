@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think the list covers everything I needed... thanks:smiley: ",
+        "ts": "1537973005.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-26\/442794736752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ooooooooooooh so that's what a cover letter is. That makes sense now",
+        "ts": "1537973119.000100",
+        "username": "Fatima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-26\/443340497716_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

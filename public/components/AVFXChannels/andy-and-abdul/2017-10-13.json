@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Andy, sorry I am replying really late but I have been really busy the last couple of days. I am Abdul Razzak and I love sports and food. Also I want to do medicine as a career but i was considering doing business on the side. Really looking forward to this:slightly_smiling_face: ",
+        "ts": "1507928336.000200",
+        "username": "rmoham-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256206109698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Pedram, \nThanks for your messages above. I am interested in these roles but I will be honest about my schedule for now. \nI am available Mon-Wed. until Dec. because Thursday art class till Dec. and Fridays on another course until May2020. So by Jan. I will be wanting to work Mon-Thurs. from Jan.onwards. \nAt this level job I am sure they want you to work 5 days a week. \nAlso, I have heard about job sharing which some women are doing at DNeg in compositing. Have you heard of this? ",
+        "ts": "1570530271.002900",
+        "username": "Neesha Khan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/787502435509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, no i havent heard about job sharing to be honest but it sounds like an interesting idea.",
+        "ts": "1570569412.003000",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/775621326290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

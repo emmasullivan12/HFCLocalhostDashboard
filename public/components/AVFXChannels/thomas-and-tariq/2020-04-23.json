@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! I'm still waiting to hear back from them. But I think we've agreed on $1400 for recording and $1800 for recording and scene creation. I won't be working on the shots by myself. The three of us will be working on the shots together, plus the scenes are pretty simple. So it shouldn't be that much extra work. It's not loads of money but I'm happy with it. Especially considering the current work climate",
+        "ts": "1587645237.010200",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081505198450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

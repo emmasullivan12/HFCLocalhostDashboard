@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just sports videos yet such as football, basketball, we just try to do some skills with it and record on it that's it :+1:",
+        "ts": "1576916978.000300",
+        "username": "Gurpreet (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/884809679079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

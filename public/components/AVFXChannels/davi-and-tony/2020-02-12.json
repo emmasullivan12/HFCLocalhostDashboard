@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey thanks! Will try and get them asap!",
+        "ts": "1581549733.010000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/949880080437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

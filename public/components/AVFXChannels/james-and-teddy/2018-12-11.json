@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is a good question! I'll talk to our DMP artists about it to see if they have any pointers. What have you been using so far? I assume Maya? Have you got any work you could show me?",
+        "ts": "1544546832.000900",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501108228738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've not used Maya for compositing before, and we've only just been introduced to compositing with After Effects. Like I said, I've never really done anything similar before",
+        "ts": "1544547848.001000",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/502180612695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah OK! I thought you may have used Maya for modelling\/animating or something. Have you done any Photoshop-y stuff?",
+        "ts": "1544548012.001100",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500394627456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah yes we've used Maya for animating\/rigging\/etc! I've not done anything with Photoshop for a while, but I'm planning on getting reacquainted with it so I can use it",
+        "ts": "1544548286.001200",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501337148101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah ok! I'll talk to our DMP artists tomorrow morning, see what suggestions they have.",
+        "ts": "1544549630.001300",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501362412229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, thank you!",
+        "ts": "1544549846.001400",
+        "username": "Teddy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501063872307_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

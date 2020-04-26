@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! Thought I'd check in and see how things are going",
+        "ts": "1574788522.028500",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/850103171056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

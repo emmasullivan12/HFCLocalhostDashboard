@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Neesha, hope you had a great weekend. There seems to be quite a few production coordinator roles floating around, have you though more about what role you'd like to pursue? If its production then I could send you a few openings i've seen?",
+        "ts": "1570443245.002800",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-07\/779582665233_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

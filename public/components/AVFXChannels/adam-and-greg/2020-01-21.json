@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Greg, nice to meet you! Tell me a bit more about what you're looking to get from the programme as it were :smiley:",
+        "ts": "1579600498.001700",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-21\/904700554385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

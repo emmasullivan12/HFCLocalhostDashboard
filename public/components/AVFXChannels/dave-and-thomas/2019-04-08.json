@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fantastic! April 17th at 1:00! I assume you know where to eat, so just gimme details and I'll be there! (So excited.)",
+        "ts": "1554751800.000600",
+        "username": "Thomas Mayfield (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-08\/605034093751_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

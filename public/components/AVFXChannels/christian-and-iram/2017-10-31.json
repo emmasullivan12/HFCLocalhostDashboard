@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see.. ",
+        "ts": "1509448969.000343",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/264628529076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you wish you had done differently when you first started at your company?",
+        "ts": "1509449259.000025",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/263925717472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": " And.... How does your job affect your general lifestyle?",
+        "ts": "1509449288.000276",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/263925924592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At my current company, nothing, I am pretty hapy with how it has gone.",
+        "ts": "1509451151.000276",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/265477906278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My previous job had quite an affect on my lifestyle - I was travelling a lot with work, generally abroad 4 or 5 days a week. That meant I didn;t get to be at home very much, was always coming or going, and staying in different hotels etc. It can seem pretty glamorous and fun to begin with, but after a few years it gets pretty tedious, as it affects how much free time you have etc, and generally you work much longer hours when travelling abroad. At my current company I travel a lot less, which means I spend a lot more time at home, which I prefer. I also try to approach work as something that shouldn;t take priority over other aspects of life, so I leave after 8 hours even if really busy. Obviously sometimes, especially towards the end of a project, that just isn;t possible, and I end up working much longer hows, but generally I stick to my 8 hours a day, and try to enjoy life outside of work as much as possible!",
+        "ts": "1509451345.000062",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/265479730934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

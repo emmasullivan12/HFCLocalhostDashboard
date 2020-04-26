@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Smarth\n\nIf you google Bait Studio, you will be able to find out some of the answers from our website.\n\nI haven't had to seek investment as I don't own the company, however usually you would need a clear business plan and a way to show the ROI - return on investment, investors want to know they will end up with more money in the end.  Do you watch the TV show Dragon's Den? That gives a good insight into getting investment, or at least the info investors need.\n\nWe tend to advertise on social media mainly, but much of work comes from referrals and word of mouth. That would be different for each type of creative industry.\n\nWe are based in Cardiff but work with clients around the UK and overseas. We have a studio, although currently we are all working remotely.\n\nThanks\n\nPete",
+        "ts": "1585819738.002400",
+        "username": "peter rogers (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044542363200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi peter \nDo you do anything else apart from working in bait studio??\nFor example do you have a side hustle??\nDo you do property investing??\nDo you have properties which you rent?\nI am asking this because i really want to get in this field??\nThanks\nSmarth",
+        "ts": "1585845377.002500",
+        "username": "Smarth Barjinder (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1033896151427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

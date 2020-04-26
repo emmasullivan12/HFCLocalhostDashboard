@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "TV vs Film isn't crazy different (at least at high end) TV is a little faster so the quality is lower, Film gives you more time but the bar is higher",
+        "ts": "1568362149.003300",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/752671661169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah definitely apply for everything, you can always just say no to somewhere if you get two offers",
+        "ts": "1568362185.003400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/759078938640_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say every facility has crazy shots like the one you're describing to be honest, plus when you're starting out they'll probably send easier stuff your way",
+        "ts": "1568362385.003500",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/746307676802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

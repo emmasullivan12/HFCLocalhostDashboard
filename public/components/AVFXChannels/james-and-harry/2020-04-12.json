@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting better. There are a couple of scanlines moving up through the shot...I assumed this was just a render glitch previously but I can still see them so make sure they are fixed. I think you can still push the grade more, especially on him. Worth double checking your despill isn't removing too much green in his skin and blacks. Notice how the blacks on the binoculars and his shirt are quite red...this is usually a tell tale sign of despill pushed too far. Another thing you could do is adjust the whites on the cliff face, and probably take some of the mid tone down. If you gamma down your viewer the white of that cliff should be a similar yellow tone to the character. I would say a bit less gamma and a bit of warmth in gain will get you a bit nearer. Same on the guy, I think his blacks\/mids are a bit too high. Very close with this shot now though.",
+        "ts": "1586712044.001600",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1057448916611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you a list of places you are applying to? It's a great idea to get onto an internship, they are a pretty recent thing which I wish had been about when I started.",
+        "ts": "1586712176.001700",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1067749365089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

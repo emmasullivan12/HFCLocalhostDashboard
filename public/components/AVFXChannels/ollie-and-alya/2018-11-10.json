@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds really exciting, I hope everything goes well. :)\n\nYes I'm doing okay. I hope you are too\n\nI just found out that all of my subjects are going to do external AS exams and from those results we will get our predicted grades for our A-level exams and also use those for when applying for university so that's something I have to prepare for.\n\nIs it better to do an apprenticeship rather than an internship? \n\n",
+        "ts": "1541864431.001100",
+        "username": "Alya (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/476016559345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also didn't know there was a national mentoring day either :joy: ",
+        "ts": "1541864488.001200",
+        "username": "Alya (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/477672843127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

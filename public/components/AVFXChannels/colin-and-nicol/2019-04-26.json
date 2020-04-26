@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Onwards and upwards indeed :grinning:",
+        "ts": "1556286557.000100",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-26\/608163897346_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anything I might be able to help you with?",
+        "ts": "1556286575.000200",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-26\/619028836500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I came across a set of videos on youtube to help with writing and I'm finding them a good catalyst to thought.",
+        "ts": "1556286613.000300",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-26\/621739146022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

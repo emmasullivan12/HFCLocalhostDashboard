@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, well what interests you? What would you say you want from a job?",
+        "ts": "1507878779.000261",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255919690405_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

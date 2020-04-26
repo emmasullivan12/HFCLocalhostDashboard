@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U6D2VCN07|smooz> what is your day to day routine like?",
+        "ts": "1565547304.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-11\/722564965316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

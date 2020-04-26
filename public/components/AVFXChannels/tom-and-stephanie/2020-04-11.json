@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem at all, hope you are enjoying your Easter weekend. It says to introduce ourselves, so I'm tom, I studied computer animation at Bournemouth Uni and then started Blue Zoo with a few classmates! Now involved with lots of other things too, like running accessvfx, animdojo and various skills initiatives! But very much enjoying all of it :slightly_smiling_face: How about you?",
+        "ts": "1586596181.002100",
+        "username": "Tom Box (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1056319312147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

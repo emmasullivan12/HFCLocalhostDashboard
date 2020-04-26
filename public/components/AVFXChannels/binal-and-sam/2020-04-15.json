@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey yes definitely, do send it across",
+        "ts": "1586938956.000400",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1062032956373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My email is <mailto:binal.a.shah@gmail.com|binal.a.shah@gmail.com>",
+        "ts": "1586938965.000500",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063623248403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Graeme! Thats good to hear that it is helpful :slightly_smiling_face: I'm more than happy to have a look at the previz and provide some feedback but unfortunately the link is not working due to privacy settings atm.  best regards",
+        "ts": "1552558011.002500",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576630047906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Maike sorry about that, can you let me know if this link works? cheers :slightly_smiling_face:\n\n<https:\/\/vimeo.com\/322803154>",
+        "ts": "1552576267.002600",
+        "username": "Graeme Daly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576863472051_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Lost Boy Previz Edit",
+                "title_link": "https:\/\/vimeo.com\/322803154",
+                "author_name": "Graeme Daly",
+                "author_link": "https:\/\/vimeo.com\/graemedaly",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/765782345_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Lost Boy Previz Edit 2",
+                "fallback": "Vimeo Video: Lost Boy Previz Edit",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/322803154?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Lost Boy Previz Edit\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/322803154",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/322803154"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Graeme, yes that seems to be working now! I will get back to you with feedback when I get around to watching it without interruptions, hopefully that will be possible this weekend :slightly_smiling_face: Looking forward to it",
+        "ts": "1552585856.002800",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577565160069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! thanks a million Maike :slightly_smiling_face:",
+        "ts": "1552593191.002900",
+        "username": "Graeme Daly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577396079634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

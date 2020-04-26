@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. I studied in New York. I’m American :smiley: My secondary school was very art oriented. So I studied performing arts (chorus, dance), photography and the usual maths, science, etc. In my high school, it was again an art school. So I started studying theatre arts. I really liked the teacher. And I wanted to try stage lighting since I loved photography. ",
+        "ts": "1537108734.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-16\/435991927777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Then I switched from Theatre Arts to  Architecture. It left it maybe had more of a future career :wink: besides loving architecture and photographing it.  Architecture was hard, but a good challenge. It improved my maths and physics skills a lot since I could finally apply all that seemingly non-sense theory to something real.",
+        "ts": "1537108884.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-16\/436375102564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For university, I went back to my first love, Photography, in Brooklyn at Pratt Institute. I wanted to be a fine art photographer, but again in terms of career, I learned all about commercial photography (product shoots, like for catalogs, architecture, etc.  I wasn't much into fashion photography). I had some good summer jobs assisting a commercial photographer and learned tons, and then realised it was not what I wanted to do as a job. Very competitive, boring shooting products, and only occasionally able to get amazing projects that were very creative. So I decided to leave my photography as my fine art. Since I always had a passion for film, at uni, I learned editing, and later compositing.  At the time, many women were film editors (actually cutting the celluloid film before all this digital stuff) so that was encouraging. Again on the job I learned more about vfx and compositing and that appealed to me immediately, especially since it very related to photography and creating photo-realistic imagery. I still want to study cinematography at some point. Maybe a masters degree :wink:",
+        "ts": "1537109483.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-16\/437623936967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow Japanese! Cool! I took a course too awhile ago before I visited Japan. Loved it!",
+        "ts": "1537109539.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-16\/435850026768_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you taking any art courses too now?",
+        "ts": "1537109571.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-16\/436466141811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Katie It’s going good thanks how are you? ",
+        "ts": "1578916500.001500",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/905948493894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great, so you want to be a 3D modeller?",
+        "ts": "1578930822.001600",
+        "username": "Katie Rosso (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903638295700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did another one of the applied houdini tuts on rbds and debris and stuff. I'm doing a project with classmates, it's a teaser for a super hero film where the heroes are middle aged women who discover their powers as they go through menopause! Ha ha! My shot is a kid throws a football at his mum then she slashes it with her long nails, like Wolverine.",
+        "ts": "1572198697.000400",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-27\/810445159396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Watchmen is awesome! I'm so jealous. I didn't even know there was a new one in the making!",
+        "ts": "1572198773.000500",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-27\/812766212359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I connected with this dude on linked in today who told me he's looking for a freelance fx artist. He's asked me to do test project in which I have to destroy a sign asset that they've sent me. Is this normal?",
+        "ts": "1572198917.000600",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-27\/799439536323_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

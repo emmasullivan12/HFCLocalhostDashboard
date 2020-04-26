@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi tom no need to apologise. Absolutely send it over. ",
+        "ts": "1548329198.001400",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531980344450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FFN2UTGG2",
+                "created": 1548338752,
+                "timestamp": 1548338752,
+                "name": "Remembering Dementia Bible.pdf.pdf",
+                "title": "Remembering Dementia Bible.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 10302902,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FFN2UTGG2\/remembering_dementia_bible.pdf.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FFN2UTGG2\/download\/remembering_dementia_bible.pdf.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FFN2UTGG2-c8613f977f\/remembering_dementia_bible.pdf_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FFN2UTGG2\/remembering_dementia_bible.pdf.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FFN2UTGG2-e42afbfb91",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1548338754.001500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Alan",
+        "ts": "1548338816.001800",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531933065764_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mike, how are you ? :smiley_cat::smiley_cat::smiley_cat:\n\nWould I be able to get your e-mail address? So, I could send you the robot kid file ( as we talked before) :blush::blush::blush:",
+        "ts": "1543921724.003700",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/495909299879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why hello Silvija! Of course you can! it’s <mailto:michael.bryant@framestore.com|michael.bryant@framestore.com>",
+        "ts": "1543921936.003800",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/494860121458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I’m very good :) thank you, how are you and you’re week going? ",
+        "ts": "1543921954.003900",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/494758387219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am great, thank you!\nToday I am in uni and we are working on a character animation, haha \n\nStruggle is real :laughing::laughing::laughing:\n\nBut the rest is perfect, thank you :cat2: \n\n",
+        "ts": "1543929569.004000",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/494212297648_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! All received, I’ve sent you an email, we can discuss this more on there! :) ",
+        "ts": "1543930723.004100",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/494797653188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha the struggle must be! Lots to learn ;) ",
+        "ts": "1543930742.004200",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/496017569831_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

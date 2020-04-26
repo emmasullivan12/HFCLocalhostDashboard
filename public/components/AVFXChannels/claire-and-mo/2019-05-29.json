@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Mo! How is BFX going now? That's amazing that you got in, make sure to talk to industry reps that come in and to make connections with the other teams :)",
+        "ts": "1559116970.000100",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-29\/648844371717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Where are you at with this currently? I did not receive an email notification so just seen your message, sorry for that. However I'm going to commit my evening to your project if I have the latest up to date work? If that is okay?",
+        "ts": "1559117084.000200",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-29\/637454300050_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

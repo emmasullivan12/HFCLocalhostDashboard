@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shailendra\nI think I've got an idea for the still image I live near a castle and I'm going to go there early tomorrow morning to take some pictures of it and there is something I've been modelling in Blender that I think I could insert into it do you think I can do that?",
+        "ts": "1574873264.003200",
+        "username": "Sophie Woodman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838912677266_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sophie!\nhow are you",
+        "ts": "1574873303.003300",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851238785828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shailendra",
+        "ts": "1574873409.003400",
+        "username": "Sophie Woodman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/840231167299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that sounds great!\nI would encourage you to plan it. maybe a quick sketch\/photoshop mockup\n\n",
+        "ts": "1574873418.003500",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853558391735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "once you are back with a photo we can discuss how to go about it",
+        "ts": "1574873500.003600",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853560716871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shailendra\nI'm fine thank you\nYes I will do that",
+        "ts": "1574873559.003700",
+        "username": "Sophie Woodman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/840235296803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "fantastic!\nlook forward to seeing what you come up with",
+        "ts": "1574873644.003800",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/853913382182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

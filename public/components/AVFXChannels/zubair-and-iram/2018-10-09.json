@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah. So you’ve got the right idea and you know what you want in the future. So that’s good. \nOne thing to note however is that aswell as the exams, you will 3(I think) years of work experience. So the moment you come out of uni, you’d still need to work for that long to be fully qualified. ",
+        "ts": "1539087314.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/452191596610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The whole point of an apprentice is for people who don’t have work experience, so you don’t really have to worry about that. Though It would give you a bit of a boost if you had some work experience, whether it’s a store assistant or a cleaner, especially in the big 4 (which I’ll get to shortly). More importantly though, You just have to show you’re eager\/ambitious. ",
+        "ts": "1539087583.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/452023451620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There’s loads of accounting apprenticeships out there, so getting into one, mainly a local one, shouldn’t be too hard if your grades are good. The ones to worry about are the big 4 and other big companies who have been taking on apprentices for years. This is where you really have to shine, and where the work experience could come in handy, as you’ll be going up against 000’s of applicants. ",
+        "ts": "1539087781.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/451591001585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Start finding some jobs to apply for, if you like it and apply for it, see if there’s any competency questions. If there is, answer it but before you send it off, we’ll go through it together. ",
+        "ts": "1539087838.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/451459789104_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mhm, I see.\nThe ones I have viewed though are recruiting for apprentices this year, but I need to secure one for next year. Ive done some research but I have only found a few that are actually looking for apprentices for 2019 September. I am yet to apply for them though but was wondering If I should wait later on for apprenticeships that would want to recruit for next year. \n\n\n\n\n ",
+        "ts": "1539088096.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/453256787303_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ive planned out that assuming the ACCA apprenticeships i will apply for do not work out in terms of acceptance.. I will apply for other accounting apprenticeships such as the AAT since they are more easier to get into and then when i finish that I will reapply for the ACCA one.. as doing the AAT will give me a greater prospect boost and will be more likely to get into the ACCA one which I am aiming for. \n\n",
+        "ts": "1539088327.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/451465532032_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have recieved BDD for my AS grades.\nBut I have a mock coming up in the near end of October and the results from those will be used to put on my predicted Grades for A level since A levels are now reformed and AS is not counted towards the A level entirely. \n\nIf I manage to get good grades in those assuming a BCC or BBB or BBC for the very least they will act as predicted grades and then I shall begin applying to apprenticeships. \n\n",
+        "ts": "1539088521.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/451467791712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

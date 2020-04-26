@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon,\nOh no, I hope your family is okay now! Don't worry about the delay.\n\nWhen animating, does it get a lot easier to see the mistakes in your shots over time, or is it still quite common to have that \"I know it looks wrong, but not why\" moment with lots of experience? I usually rely on opinions from friends, but it can still be tricky when I can't see the issue myself. The \"process\" you mention; what's your checklist like?\n\nAlso, do you have some suggestions on how to maintain connectivity in the face while animating (like, avoid having it look like the features are moving separately)?\n\nThe morphing was for more of a proof-of-concept test. I did try to animate around it, but also did a test where I skinned parts two models to the same rig and adjusted the skeleton differences with SDKs, then blendshaped between the meshes (which theoretically should work on a larger scale). Hiding the transition in animation is definitely a lot more cost-effective though, I'll probably play around with it some more later.\n\nYeah, Paddington looks lovely, it must've been exciting to work on. Are you still in production?",
+        "ts": "1582499558.000100",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/964855453220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

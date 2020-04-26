@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jonathan, had a look over the footage a couple of times, all looks pretty good from what I can see. The only real issue I can see is the hair seems to pop when his head comes into frame in the mirror, and possibly seems to smudge as it moves over the camera handle. But if you can fix that, I'd say it would be good to present to the director",
+        "ts": "1583832890.005400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/993103345174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

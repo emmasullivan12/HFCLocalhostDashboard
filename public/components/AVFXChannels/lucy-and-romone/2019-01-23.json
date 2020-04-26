@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Romone, I'm sorry for the delay in replying to you. My general advice for getting into directing is to start be creating short films \/ videos. Have you done anything like this before or is there anything more specific you'd like to know?",
+        "ts": "1548256662.000200",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-23\/530945814771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

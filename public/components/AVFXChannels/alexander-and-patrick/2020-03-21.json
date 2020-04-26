@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Patrick,\nI hope you're alright in these uncertain times.\n\nI'd be happy to give you feedback when you have WIP renders and stuff :wink:\n\nThe VFX industry is obviously quite shaken by the virus atm. Film releases are being pushed back, all filming has stopped, etc. Most VFX companies have set up remote work solutions over the past week or are in the process of doing so. Obviously this is not only a technical problem (bandwidth, hardware, software licenses, etc) but also a massive legal problem. All the big film studios like disney and netflix have their ridiculously  strict security regulations. So trying to let everyone work from home while still holding up to those security standards is just incredibly difficult. One of Us has everyone set up to work from home from Monday on. And leading up to this point they have been very transparent, honest and sensitive to the wishes of their employees so I'm really grateful for that. It says a lot about a company how they treat their employees in times of crisis so taking a close look at how all the different studios are handling it is definitely worth it. I know some studios that still pressure most of their artists to come into work, which in my opinion is just irresponsible and a massive dick move.",
+        "ts": "1584810735.005400",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016504342164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also there are some companies that don't have the savings or stable work in order to keep all their artists and are actually letting people go....\nOn the upside, after this crisis it should hopefully be easier to be able to request remote work because none of the studios will have the excuse:\" we don't have the infrastructure for it so we just can't alow it\"",
+        "ts": "1584810861.005500",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016505781012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's going to be very interesting to see how this plays out in summer when all the current work is finished but due to the halt in filming not much new work is coming in. There may be a massive wave of layoffs in July\/August\/September. Also getting a new job will be difficult then. But we will see. we can't tell at this point. Maybe there will be more fully animated content for streaming like Love, Death + Robots. Because they don't need to film anything",
+        "ts": "1584811010.005600",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1004176520786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Stay safe!",
+        "ts": "1584811025.005700",
+        "username": "Alexander Breitfeld (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1018732081991_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

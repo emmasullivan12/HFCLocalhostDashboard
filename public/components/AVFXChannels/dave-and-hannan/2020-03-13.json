@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello it's been a while, I just wanted ask how you are you know with all the virus chaos going on??\n\nI'm still busy with family they are here on a long trip so still spending time with them. I am good and healthy and will get back to making my art again once they are gone.\n\nHope everything is good on your end",
+        "ts": "1584136736.000100",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999895837328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

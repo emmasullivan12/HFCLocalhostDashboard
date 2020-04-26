@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Harry. I must apologise as I haven't fed back to you, I didn't get the notification of your message. I've adjusted the settings, so hopefully it won't happen again. I'll check back here regularly from now on just in case.",
+        "ts": "1581627381.000100",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/941498096833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you still working on the shot? From what I saw it was a really positive start. I noticed some pixel stretching bottom of the frame and a matte edge travelling up his shoulder. The lighting is not quite right yet.  Please share your latest as I'm sure you've adjusted it in the last month.",
+        "ts": "1581627698.000200",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/951665078341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

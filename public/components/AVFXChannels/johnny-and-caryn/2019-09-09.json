@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Johnny, I'm glad you have your internet back, it must be a relief not to use your phone data :slightly_smiling_face:                                                                                             I agree that returning to the bedroom environment at a later time is for the best, as developing my artistic eye and portfolio skills is the priority. For my top 5 companies I would have to say they are: Supermassive Games, CD Projekt Red, Ninja Theory, Sumo Digital and Guerrilla.                                           In terms of what I would like to make I'm not entirely sure, I'm thinking either something horror themed or, if that seems too played out, a blend between fantasy\/post-apocalypse. A big problem I find I have is that I'm not sure what to make to appeal to these studios so I end up abandoning environments or scenes I start",
+        "ts": "1568061997.001400",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/756034692199_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi ! are the companies by order of preference? We can do an horror themed or a some madmax kinda env and still stay attrative to those companies...\nIm familiar with all of them, I may even have a connection or 2 that work on each.\nCan you collect me some artworks of work of those companies that you love to be part of  ?",
+        "ts": "1568065855.001500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/756456822534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say the order is more or less aligned with my preference of them, a mad max style environment could be a lot of fun. I can send you some of my favourite work from those studios sometime tomorrow afternoon, if that's okay?",
+        "ts": "1568066081.001600",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/756110840055_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "of course, don't worry whenever you can",
+        "ts": "1568067376.001700",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/754266124512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

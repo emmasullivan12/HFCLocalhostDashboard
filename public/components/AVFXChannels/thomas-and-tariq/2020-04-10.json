@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey that's good news. You've been ages without your computer then right? I only just upgraded to 64gb the other day. I've not heard of that film, anything with Tom Hanks in will be good though. Sounds like a lot of work!",
+        "ts": "1586510891.001300",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054377416451_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I didn't actually make the scenes they already them. I just had to recreate them and explain them along the way. So ye I did learn a bit, although the scenes are really simple. The hardest part was recording the without making any mistakes, and trying to make it sound natural. They mentioned doing another course on Crowds. I'd have more input with the scenes on that one",
+        "ts": "1586511293.001400",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1074305658944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just before Christmas it went kaputz. So yeah, 48GB is better than no computer! At least I can start working out what I was doing on my old projects. Will eventually have to get it back to 64 or more! It's \"meant\" to come out at Christmas this year, but who knows now",
+        "ts": "1586511497.001500",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054392868323_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's good though! sometimes picking up someone else's scenes means you can see if they do anything differently to how you would.\nHave you got any personal projects or ideas you'd like to try?\nI decided to bite the bullet and grab H18. I'd love to use Arnold in it, so can't use the free version, but I'd like to try and see about this USD stuff, maybe do a small course on Look-Dev.\nI'm quite happy with how my FX is progressing, but I'm pretty low on Lighting and Rendering skills, so I think that'll be where I'd like to look next",
+        "ts": "1586511649.001600",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1052526749350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

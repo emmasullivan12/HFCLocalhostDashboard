@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Currently listening to you in the caring in lockdown podcast. My thoughts are with your family, hope everything is going well x ",
+        "ts": "1587072556.003600",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1074296086820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

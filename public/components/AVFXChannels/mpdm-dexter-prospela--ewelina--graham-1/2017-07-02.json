@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "text": "Hi Ewelina, to make sure I am helping you in the best way possible, please would you be able to let me know what you would like to get from this mentoring? ",
+        "user": "U60D00VU6",
+        "ts": "1498983863.280916",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g7c5bedddf7a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/17c5bedddf7a0650d5d52c4831158b90.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Graham",
+            "real_name": "Graham",
+            "display_name": "graham",
+            "team": "T4UUTPV18",
+            "name": "graham",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I would like to get more informations about having own company how everything is working, if is hard and how your job looks like as a manager in large company.",
+        "user": "U5XGXM0PP",
+        "ts": "1498984245.301147",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "75c29b255653",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201526816532_75c29b25565378adb519_72.png",
+            "first_name": "Ewelina",
+            "real_name": "Ewelina",
+            "display_name": "ewelina",
+            "team": "T4UUTPV18",
+            "name": "ewelina",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ok cool, so what would your business be? Hard work and determination is needed to begin a business, I have done this myself through university, I had a design business which was great fun but very time consuming. For my current job I am able to still have responsibility (not as much as having your own company) but also support from the senior members of the team which is beneficial  ",
+        "user": "U60D00VU6",
+        "ts": "1498984964.338254",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g7c5bedddf7a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/17c5bedddf7a0650d5d52c4831158b90.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Graham",
+            "real_name": "Graham",
+            "display_name": "graham",
+            "team": "T4UUTPV18",
+            "name": "graham",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

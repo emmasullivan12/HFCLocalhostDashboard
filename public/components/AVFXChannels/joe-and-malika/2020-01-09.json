@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think including different kind of works in portfolio is a good idea???? Like some 3D animation, some 2D, modelling, video editing etc? Or is it better to be more specific?",
+        "ts": "1578579182.000100",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/899658314656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You should be at least 50 to able to play Iceborne",
+        "ts": "1578579197.000200",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/888190927843_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The mission that let's you get 50 is to kill tempered Kirin. Quite difficult if u r doing it alone",
+        "ts": "1578579230.000300",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/889439556049_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

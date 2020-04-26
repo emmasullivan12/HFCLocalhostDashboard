@@ -1,0 +1,177 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jane.  Where are you based?",
+        "ts": "1570181167.006300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/783285165156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah, I'm based near London",
+        "ts": "1570181435.006400",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/785962314758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just finished listening to the ted talk",
+        "ts": "1570181445.006500",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/783290162692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shes really inspiring, I think I'll start reading her book too",
+        "ts": "1570181482.006600",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/785963163686_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About looking at inspiration in animation, do you follow catsuka? He uploads a lot of variety in clips of animation by many different people <https:\/\/instagram.com\/catsuka?igshid=1k9i1ixvgfic9>",
+        "ts": "1570181915.006700",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/783766986181_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": " Login • Instagram ",
+                "title_link": "https:\/\/instagram.com\/catsuka?igshid=1k9i1ixvgfic9",
+                "text": "Welcome back to Instagram. Sign in to check out what your friends, family &amp; interests have been capturing &amp; sharing around the world.",
+                "fallback": " Login • Instagram ",
+                "from_url": "https:\/\/instagram.com\/catsuka?igshid=1k9i1ixvgfic9",
+                "service_icon": "https:\/\/www.instagram.com\/static\/images\/ico\/apple-touch-icon-76x76-precomposed.png\/4272e394f5ad.png",
+                "service_name": "instagram.com",
+                "id": 1,
+                "original_url": "https:\/\/instagram.com\/catsuka?igshid=1k9i1ixvgfic9"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you don't mind me asking, what topics of discussion were covered during bfx? More specifically, what would someone be looking for in a portfolio? I'm currently in the process of constructing mine, so do you have any suggestions in what to include?",
+        "ts": "1570182086.006900",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/783301170628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also I think it would be beneficial to appoint a time (at least once a week?) where we can have a more consistent text conversation, if that is inconvenient for you then I'm sorry (I was looking at the informative training for mentees list again)",
+        "ts": "1570183935.007000",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/777365248497_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  Having a specific date\/time for me is a little tricky as my days often get disrupted by production.  If it’s OK with you, I’d prefer to keep it ad hoc.  I will always try to reply if I’m online, but I don’t want to create an unrealistic expectation.",
+        "ts": "1570185612.007100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/777391338753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We wrote these tips for portfolios. Hopefully they are helpful. Really happy to look through and review things for you as you get to that point.",
+        "ts": "1570185644.007200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/777391828561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your portfolio of work:\n\nBelow are some tips to help you if you are putting together a portfolio of work.  Have a look at the college\/university website to see if they have any specific requirements.\n\nThis site also has some more: <https:\/\/www.studentartguide.com\/articles\/how-to-make-an-art-portfolio-for-college-or-university>\n\nWhere you can, include examples of visual work across a variety of mediums; your portfolio should illustrate your working processes\nProvide examples of photography, image composition, design and concept work; a sample of your best work highlighting your main area of interest and skill would be good\nShow evidence of your use of any relevant software\nPut together a showreel of your work - no longer than 3 minutes\nOnly put your best work in you portfolio and on your showreel - quality is better than quantity\nHow you present your work is as important as the work you present - it is a reflection of you and your style\nDesign some simple slates to introduce each piece stating the name of the project and what you did on it\nKeep the presentation of your work clean and clear - they will want to see what you did and how you achieved it\nIt doesn’t need to be edited to music\nEnsure there is a consistency to your presentation - if you are adding headings, create a look and carry it through\nTake a look at examples of websites, brochures and books etc.   They may be flexible with colours within a palette but they will have a consistency of style\nThis blog gives tips on some key graphic design rules <https:\/\/www.canva.com\/learn\/design-rules\/>\nAsk a tutor or a professional to critique your portfolio\/showreel - get honest and constructive feedback and once you’ve acted on it, go back for more\nCreate\/regularly update a LinkedIn profile\nCreate\/regularly update a Vimeo account\nCreate\/regularly update an Instagram account",
+        "ts": "1570185649.007300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/786031811078_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "STUDENT ART GUIDE",
+                "title": "How to make an art portfolio for college or university (the ultimate guide)",
+                "title_link": "https:\/\/www.studentartguide.com\/articles\/how-to-make-an-art-portfolio-for-college-or-university",
+                "text": "What should be in an art school application portfolio? How do you present a portfolio? What gives you the best chance of being accepted by the art school of your dreams? This article explains how to make an art portfolio for college or university and is packed with tips from leading art and design school",
+                "fallback": "STUDENT ART GUIDE: How to make an art portfolio for college or university (the ultimate guide)",
+                "ts": 1428200380,
+                "from_url": "https:\/\/www.studentartguide.com\/articles\/how-to-make-an-art-portfolio-for-college-or-university",
+                "service_icon": "https:\/\/www.studentartguide.com\/wp-content\/uploads\/2018\/05\/cropped-studentartguide-logo-6-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.studentartguide.com\/articles\/how-to-make-an-art-portfolio-for-college-or-university"
+            },
+            {
+                "service_name": "Learn",
+                "title": "20 design rules you should never break – Learn",
+                "title_link": "https:\/\/www.canva.com\/learn\/design-rules\/",
+                "text": "While rules are made to be broken, it's important to be aware of what they are first. Inside, we provide you with a crash course on 20 design rules all designers follow (and sometimes break).",
+                "fallback": "Learn: 20 design rules you should never break – Learn",
+                "image_url": "https:\/\/www.canva.com\/learn\/wp-content\/uploads\/2015\/04\/Design-Rules-You-Should-Never-Break-1024x484.jpg",
+                "image_width": 529,
+                "image_height": 250,
+                "ts": 1570162354,
+                "from_url": "https:\/\/www.canva.com\/learn\/design-rules\/",
+                "image_bytes": 134591,
+                "service_icon": "https:\/\/static.canva.com\/static\/images\/apple-touch-120x120.png",
+                "id": 2,
+                "original_url": "https:\/\/www.canva.com\/learn\/design-rules\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of BFX there were lots of talks from people about projects they have worked on. I was down there specifically for a panel talking to graduates about what employers look for etc.",
+        "ts": "1570185723.007500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/786032895718_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are lots of things that happen in London like this that you might be able to attend. I’ll try to let you know what I hear about. LIAF <http:\/\/www.liaf.org.uk\/> happens in November and is probably a great thing for you to attend or volunteer at. If you’re interested in volunteering I can try and find out who you’d need to contact.",
+        "ts": "1570186000.007600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/783364718356_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

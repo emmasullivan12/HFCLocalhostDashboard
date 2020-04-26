@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon, thanks, deadlines are going alright. I remember that shot in More Stuff, it's really nice! I like the way the eyes pop out just when the elf gets squashed :slightly_smiling_face: Is that all part of the rig, or did you have to cheat those things yourselves in the animation? Is getting draw-overs from the director quite common, does it happen in TV animation too?",
+        "ts": "1579465744.000100",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/915119287030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been wondering how it is to animate for TV; when I have a shot with a very tight deadline, I can usually get a result that will do the job, but not always one that I'm satisfied with. When you become more experienced and you can animate those 6-8 seconds a day, do you get better at getting straight to the result you want?",
+        "ts": "1579465889.000200",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/900128019458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "May I ask which shows you're working on now? (Unless it's confidential, of course). Do you have a say in the projects you get to do?",
+        "ts": "1579466071.000300",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/912914401776_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

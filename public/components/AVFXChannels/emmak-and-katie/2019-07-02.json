@@ -1,0 +1,53 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ACCESS: VFX Animation Summer School\nDo you love animation? Are you a parent, teacher or carer of a keen animator and want to find out more about how they can channel their love for animation into an exciting career in the visual effects (VFX), animation and games industries? According to a recent Screen Business report released last October, the UK’s visual effects and animation industry generates more than one billion pounds of added value for the UK economy. This shows VFX to be a vital component of the UK’s successful film, TV and advertising industries. This Summer ACCESS: VFX will partner with London SIGGRAPH, 3Dami, Escape Studios and We Are Stripes to host our ‘Animation Summer School’ a 3-day family-event for 11-16-year olds interested in a career in the exciting UK animation industry. We will host a range of free workshops across 3 days on: Thursday 8th August Friday 9th August Saturday 10th August Please express your interest in attending by signing up for a free ticket on a date of your choosing. We will then get in touch separately to confirm your place at the event and keep you posted on our plans for the day. We are currently working on building the content for the workshops across the 3 days, but can promise that the experience will provide a fresh perspective on attainable creative careers, a chance to connect with industry professionals first-hand and gain optional mentorship. We hope that by spreading the word to fresh and inclusive communities of people, providing Inspiration, sparking Aspiration, will in time, lead to Application. About our partners: Escape Studios offer undergraduate, postgraduate and short courses in visual efects, game art, animation and motion graphics. Escape work with an impressive list of industry partners to design and deliver their courses, from MPC, Cinesite, Framestore and The Mill, through to Jellyfish, Milk and BlueBolt. 3Dami is a non-profit organisation founded to promote digital art amongst pre-university students, by linking them with each other and industry. It runs free seven day summer and half term camps, getting groups of nine students to run their own studios, and make their own short 3D animated film using Blender. London ACM SIGGRAPH is a local non-profit, volunteer organisation run and made up of local professionals. They host events for the computer graphics community in London, reach out to other communities and aim to promote contact and information exchange. We Are Stripes create and increase opportunities for individuals from ethnic backgrounds by educating on career entry into the industry and supporting current BAME (black, Asian and minority ethnic) individuals in the industry with career progression. Animation Mentor is an online animation school that teaches students character animation skills where students are taught by mentors; experienced animators who are professionals working in the animation industry. Animation Mentor is a distance learning school at which animation professionals teach character animation to students in over 105 countries. #avfxsummerschool",
+        "ts": "1562057799.000100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/670887685538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60202941619>",
+        "ts": "1562057809.000200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/682303275008_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "ACCESS: VFX Animation Summer School",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60202941619",
+                "text": "Do you love animation? Are you a parent, teacher or carer of a keen animator and want to find out more about how they can channel their love for animation into an exciting career in the visual effects (VFX), animation and games industries? According to a recent Screen Business report released last October, the UK’s visual effects and animation industry generates more than one billion pounds of added value for the UK economy. This shows VFX to be a vital component of the UK’s successful film, TV and advertising industries. This Summer ACCESS: VFX will partner with London SIGGRAPH, 3Dami, Escape Studios and We Are Stripes to host our ‘Animation Summer School’ a 3-day family-event for 11-16-year olds interested in a career in the exciting UK animation industry. We will host a range of free workshops across 3 days on: Thursday 8th August Friday 9th August Saturday 10th August Please express your interest in attending by signing up for a free ticket on a date of your choosing. We will then get in touch separately to confirm your place at the event and keep you posted on our plans for the day. We are currently working on building the content for the workshops across the 3 days, but can promise that the experience will provide a fresh perspective on attainable creative careers, a chance to connect with industry professionals first-hand and gain optional mentorship. We hope that by spreading the word to fresh and inclusive communities of people, providing Inspiration, sparking Aspiration, will in time, lead to Application. About our partners: Escape Studios offer undergraduate, postgraduate and short courses in visual efects, game art, animation and motion graphics. Escape work with an impressive list of industry partners to design and deliver their courses, from MPC, Cinesite, Framestore and The Mill, through to Jellyfish, Milk and BlueBolt. 3Dami is a non-profit organisation founded to promote digital art amongst pre-university students, by linking them with each other and industry. It runs free seven day summer and half term camps, getting groups of nine students to run their own studios, and make their own short 3D animated film using Blender. London ACM SIGGRAPH is a local non-profit, volunteer organisation run and made up of local professionals. They host events for the computer graphics community in London, reach out to other communities and aim to promote contact and information exchange. We Are Stripes create and increase opportunities for individuals from ethnic backgrounds by educating on career entry into the industry and supporting current BAME (black, Asian and minority ethnic) individuals in the industry with career progression. Animation Mentor is an online animation school that teaches students character animation skills where students are taught by mentors; experienced animators who are professionals working in the animation industry. Animation Mentor is a distance learning school at which animation professionals teach character animation to students in over 105 countries. #avfxsummerschool",
+                "fallback": "Eventbrite: ACCESS: VFX Animation Summer School",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F60202876%2F64872761663%2F1%2Foriginal.20190411-121528?w=1000&auto=compress&rect=0%2C0%2C2160%2C1080&s=247687868cd4521d754e48905f968861",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "190 High Holborn, London, WC1V 7BH, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Multiple Dates",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60202941619",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 47466,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/access-vfx-animation-summer-school-tickets-60202941619"
+            }
+        ]
+    }
+]

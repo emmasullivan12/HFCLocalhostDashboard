@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there, Nya, nice to meet you! I hope I can help you with any questions you have! I'll try and answer you as well as I can based on my experiences, but if we come across some subject I'm not well aware I can search some resources for you to look into.\nIt's been only 3 months I'm working in the UK, before that I had been living and working in Brazil, where I'm from. I have worked on several stages of animation productions, but especially with storyboards and 2d traditional and cut out animation.",
+        "ts": "1571213132.001800",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/797100318133_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I read in your profile that you're on an internship, is that right? Could you tell me more about some project you've been working on, even if it's not from an internship\/job?",
+        "ts": "1571213295.001900",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/798954205959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,180 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/gumroad.com\/l\/irexrig>\n<https:\/\/gumroad.com\/l\/raptorrig>",
+        "ts": "1586967923.010400",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1088406180992_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Gumroad",
+                "title": "Irex Dinosaur Maya Rig",
+                "title_link": "https:\/\/gumroad.com\/l\/irexrig",
+                "text": "Introduction. Indominus Rex Maya Rig (fan art rig) made by Truong. Free to download and use for non-comercial purpose only, like animation practise, school projects, personal projects, demo reel, 11s club contest, etc. Cannot download\/ buy the rig? <https:\/\/youtu.be\/jPB-8-ewvFI>. Use discount code: \"free\" to get the rig for free. Technical Information. Software: Maya 2014 (or higher). Rigged using Advanced Skeleton. Maya scene files include: <http:\/\/irex_rig.ma|irex_rig.ma>: the rigged dinosaur. <http:\/\/irex_lighting.ma|irex_lighting.ma>: reference this file into your animation scene and render, the lighting was setup already (mental ray). Use Render_cam for the best results. Texture folder: all the texture files (color, normal, displacement, specular). Remember to set project, so all the textures can be loaded automatically. Remember to turn \"visibility\" on for the \"lens\" layer before rendering. It will make nicer eyes render. How to render? Issues and bugs. If you have any rig issues or further questions\/ requests, feel free to contact me at my facebook page: <https:\/\/www.facebook.com\/truongcgartist>. or email me at: <mailto:truongcgartist@gmail.com|truongcgartist@gmail.com> or <mailto:cvbtruong@gmail.com|cvbtruong@gmail.com>. Happy animating! Truong. <https:\/\/gumroad.com\/truongcgartist> (sign up your email here to receive emails for future rigs). Early access to free rigs and rigging videos: <https:\/\/www.patreon.com\/truongcgartist>",
+                "fallback": "Gumroad: Irex Dinosaur Maya Rig",
+                "thumb_url": "https:\/\/static-2.gumroad.com\/res\/gumroad\/1196093170968\/asset_previews\/bedc1d4c20c71520d8fd767fb783116d\/retina\/v9.jpg",
+                "thumb_width": 1005,
+                "thumb_height": 1005,
+                "fields": [
+                    {
+                        "title": "PRICE",
+                        "value": "$1+",
+                        "short": true
+                    },
+                    {
+                        "title": "BY",
+                        "value": "Truong CG Artist",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/gumroad.com\/l\/irexrig",
+                "service_icon": "https:\/\/gumroad.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/gumroad.com\/l\/irexrig"
+            },
+            {
+                "service_name": "Gumroad",
+                "title": "Raptor Maya Rig",
+                "title_link": "https:\/\/gumroad.com\/l\/raptorrig",
+                "text": "Introduction. Raptor Maya Rig made by Truong. Base model by Leo Nguyen. Renders above was done by Darren Wallace. Video Demo. Link: <https:\/\/youtu.be\/BIkiGBpbojU>. Raptor animation by Jose Ramirez. Raptor animation by Nic Cabana. Cannot download\/ buy the rig? Check out this video. Technical Information. Software: Maya 2014 (or higher). Rigged using Advanced Skeleton. Maya scene files include: <http:\/\/raptor_rig.ma|raptor_rig.ma>: the rigged dinosaur. redshift folder contains all the files needed for Redshift3d rendering. Video tutorial. mental ray folder contains all the files needed for mental ray render (Maya 2016). I also uploaded zbrush project file (ctrl + o to open) in case you need to adjust the model further. Zbrush 4r8 p1 (or higher). How to videos. Issues and bugs. If you have any rig issues or further questions\/ requests, feel free to contact me at my facebook page: <https:\/\/www.facebook.com\/truongcgartist>. or email me at: <mailto:truongcgartist@gmail.com|truongcgartist@gmail.com> or <mailto:cvbtruong@gmail.com|cvbtruong@gmail.com>. License. Single Seat: You can use the rig for personal practise, reel, 11s club challenge or other non-commercial purpose. Commercial Single Seat: This license entitles you and only you to use the rig for commercial and monetized use. Team Project Or Class License: This license entitles you to distribute this rig to up to 50 people working on one project or class. Commercial Studio: This license entitles you to use the rig throughout your studio for commercial or monetized uses. School License: This license entitles you to use my entire library, including my future rigs for your school. Please contact me for more details. Happy animating! Truong. <https:\/\/gumroad.com\/truongcgartist> (sign up your email here to receive emails for future rigs). Early access to free rigs and rigging videos: <https:\/\/www.patreon.com\/truongcgartist>",
+                "fallback": "Gumroad: Raptor Maya Rig",
+                "thumb_url": "https:\/\/static-2.gumroad.com\/res\/gumroad\/1196093170968\/asset_previews\/828af27afb44743938cf003b32c48416\/retina\/raptor_5.jpg",
+                "thumb_width": 1005,
+                "thumb_height": 565,
+                "fields": [
+                    {
+                        "title": "PRICE",
+                        "value": "$10+",
+                        "short": true
+                    },
+                    {
+                        "title": "BY",
+                        "value": "Truong CG Artist",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/gumroad.com\/l\/raptorrig",
+                "service_icon": "https:\/\/gumroad.com\/favicon.ico",
+                "id": 2,
+                "original_url": "https:\/\/gumroad.com\/l\/raptorrig"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586967924.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you don't already have one",
+        "ts": "1586967937.010600",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1070733421444_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "still good in 35mins?",
+        "ts": "1586967951.010700",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1077191749089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha I just saw the second one this morning and messaged the owner. He told me just to pay the $10 and if the film ended up doing well I could make a donation later if I wanted to. Very nice of him.",
+        "ts": "1586968047.010800",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064780403251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I think I am going to go in that direction. One of my modelers backed out anyway. He works a full time just not in the film industry so couldnt swing the work right now. So that works out well.",
+        "ts": "1586968102.010900",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1057839460902_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yes. I am free.",
+        "ts": "1586968108.011000",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1088415018208_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you going to call me on my cell or wanting to do a zoom call or something?",
+        "ts": "1586970067.011100",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1057934638758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry just saw that. \n\nHere's Hugo's thing,\n\n<https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-the-complete-nuke-compositing|https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-the-complete-nuke-compositing>\n\nLooks like it's nuke specific. Funnily enough I was talking to a mate about how expensive nuke is. Not sure about educational versions etc. \nI am sure though there's a lot that would come from this you could take away if you didn't want to learn nuke specifically as like 3D packages, you usually just need to find the method to replicate the technique.\n\nIn saying that, the packages can push your work a lot further and if the goal is to improve, some of the industry standard software is gonna help that\n\nAlso I didn't realize it was on Kickstarter but maybe that makes it cheaper?",
+        "ts": "1586974944.011200",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063506574101_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Kickstarter",
+                "title": "Hugo’s Desk Presents: The complete Nuke Compositing course",
+                "title_link": "https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-the-complete-nuke-compositing",
+                "text": "This is an official Foundry certified course for any artist that wants to learn Nuke and become a professional VFX compositor.",
+                "fallback": "Kickstarter: Hugo’s Desk Presents: The complete Nuke Compositing course",
+                "image_url": "https:\/\/ksr-ugc.imgix.net\/assets\/021\/503\/900\/9fb54b4024420d08ab4f60489dddc8af_original.jpg?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1535479630&auto=format&frame=1&q=92&s=ae9d43a9a1f40aa7fa4c82ebbd6cf3c6",
+                "image_width": 444,
+                "image_height": 250,
+                "from_url": "https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-the-complete-nuke-compositing",
+                "image_bytes": 217002,
+                "service_icon": "https:\/\/www.kickstarter.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-the-complete-nuke-compositing"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586974945.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Thanks! I will check that out. And again, thanks for the call today. Very helpful!",
+        "ts": "1586975440.011400",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064908041634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

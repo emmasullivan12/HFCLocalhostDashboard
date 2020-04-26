@@ -1,0 +1,140 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My tutor solved it for me yesterday, told me my plug in was missing so i just had to enable it from preferences :joy: I thought it was something completely new",
+        "ts": "1585828689.001200",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043553491972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's alright and yeah its funny when you look back at your old work, you realize it wasn't actually that difficult to do :joy:",
+        "ts": "1585828797.001300",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1045047304368_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oooh yes that's true, I really liked paddington and that candy commercial with the two wizards, they left the deepest impressions on me aha",
+        "ts": "1585829163.001400",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1035041437425_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think when it comes to watching a show, I like both realism and stylized stuff but because I've never had a proper stylized project to work on before, I don't really know how I feel about stylized stuff in terms of creating it if you get what I mean :joy:",
+        "ts": "1585829361.001500",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044722600967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've freelanced for a 3rd year stylized project and made a few smaller assets for them and that's about it aha",
+        "ts": "1585829396.001600",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044722693927_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010YT2MQHZ",
+                "created": 1585829458,
+                "timestamp": 1585829458,
+                "name": "IMG_1468.JPG",
+                "title": "IMG 1468",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 43643,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010YT2MQHZ\/img_1468.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010YT2MQHZ\/download\/img_1468.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 226,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 302,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 452,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 503,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 603,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010YT2MQHZ-ba08b31116\/img_1468_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 643,
+                "image_exif_rotation": 1,
+                "original_w": 1114,
+                "original_h": 700,
+                "thumb_tiny": "AwAeADCjRT0jeTO0Zx1qU2jhQWKgUm0hpNleirItCf4v0pfsTf3xS5kPlZVoqaS2dO6n8ajddhwetO6YmmgVmQ5UkGpDcyEYbBqGihpMLkv2mT1\/Sg3Ep\/ix9Kioo5V2C7FJLHLEk+9GSep6UlFMR\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010YT2MQHZ\/img_1468.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010YT2MQHZ-9e0dda1ade",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585829464.001700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like this fish over here aha",
+        "ts": "1585829489.002000",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043583125268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You’re a good sculptor too! \nIt’s a skill I really never picked up- our uni didn’t have great resourcing\/teaching so it was hard for certain things\nMy boyfriend is a very good teacher so I credit him with a lot of my initial learning :sweat_smile:",
+        "ts": "1585841898.002100",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043972561061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

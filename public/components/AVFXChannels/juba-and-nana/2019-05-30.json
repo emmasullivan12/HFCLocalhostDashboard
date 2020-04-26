@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that's really great Nana. If you'd like, I can do a draw over to show you how you can improve your posing and composition of the still. Let me know :smiley:",
+        "ts": "1559214788.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-30\/652463235494_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Please do! Been trying to work on that mostly!",
+        "ts": "1559214818.000200",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-30\/652463613878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

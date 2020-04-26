@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Katie",
+        "ts": "1586370812.000100",
+        "username": "A.B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057700109156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I apologize for not being on Slack much and I want to say thank you for reaching out to me as a mentor",
+        "ts": "1586370845.000200",
+        "username": "A.B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048656434546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To tell you a little bit about myself I am currently an intern with The Animation Project and I am working to become a look dev. artist or a CG generalist",
+        "ts": "1586370944.000300",
+        "username": "A.B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049663595587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The programs I work mostly in are Maya, ZBrush, and Substance Painter as well as Substance Designer and I am also learning, through my internship, how to composite in Nuke.",
+        "ts": "1586371016.000400",
+        "username": "A.B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053324250501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are your skill sets in the industry?",
+        "ts": "1586371052.000500",
+        "username": "A.B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1067833925328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Again thank you for reaching out.",
+        "ts": "1586371061.000600",
+        "username": "A.B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057410982961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

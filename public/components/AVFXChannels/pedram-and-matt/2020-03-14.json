@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure thing! Thanks! Not yet although I will be applying for all the graduate schemes. Do you think I should be looking around? Maybe even putting some speculative applications out? I wouldn't really be able to start anywhere until mid June though",
+        "ts": "1584178089.003800",
+        "username": "Matt Hawker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1002178870903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it can take some time for studios to get back to you so it is normally quite good to send out applications a good few weeks in advance. If you cant start until mid June i'd say start applying in April at the latest. Send out some speculative emails or apply directly for entry level\/graduate roles. Also LinkedIn can be a powerful resource, make sure to pop on and have a look or post about anything interesting a few times a week to get your profile SEO going",
+        "ts": "1584181149.003900",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1002549493446_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Studios are very accustom to working with student schedules and will most likely be actively recruiting around April time anyhow.",
+        "ts": "1584181201.004000",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/999884244868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, okay I'll definitely start putting bits out there in April, I want to get my LinkedIn more active, I'm always scrolling through and looking at the amazing work people are doing, I wouldn't know what to post though? (except from the odd showreel update). \n\nYeah, that's a good point, I see Framestores internship scheme is out at the moment, I'll definitely be applying but it closes in may so I want to get as much work in my showreel before I send it off.",
+        "ts": "1584197880.004100",
+        "username": "Matt Hawker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/989033056451_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You dont necissarily have to post your own work on linkedin you could even share posts that you find interesting with your network or any news\/articles you found useful. I dont post too much myself but occasionally comment or like peoples posts",
+        "ts": "1584222347.004200",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1002962926278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

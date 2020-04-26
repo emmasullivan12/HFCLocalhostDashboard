@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam, how's it going, been making anything?",
+        "ts": "1580831900.000100",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935701661668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

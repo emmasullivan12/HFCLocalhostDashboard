@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey Shana, I apologize for my late reply. I hope you’re doing well. For color script or in general before applying color you could start from black and white, deciding the values of your image.",
+        "ts": "1582805446.000800",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/974094699750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In a second moment when you have the contrast that you want in the image (thinking about where is your light source) and if it’s helping telling the story, then you can start adding colors",
+        "ts": "1582805522.000900",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/973748471495_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "generally you can keep the foreground darker as it creates depth, but depends on the image of course you’re doing ",
+        "ts": "1582805546.001000",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/971887553664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think for colors the best way is always practicing from real life, but during production is best if you make an online research and create a psd with images that have the mood and colors you want to recreate",
+        "ts": "1582805619.001100",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/971888918416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it’s completely fine if it was too many projects, so now you can be more realistic and focus on less to work on. how’s it going with the color script? Also don’t forget you can ask them when is the deadline or the material is expected to be delivered ",
+        "ts": "1582805691.001200",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/974099308102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t always gather references for my concepts and colors. you can always experiment and try different solutions for each image",
+        "ts": "1582805766.001300",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/971437462404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also when deciding what color to use just think about if you want to conceive a sense of warmth or cold, fear, passion etc.. in this way you can separate between cold and warm colors",
+        "ts": "1582805832.001400",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/960424630979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

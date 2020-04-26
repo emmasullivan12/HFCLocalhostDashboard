@@ -1,0 +1,37 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that is beautiful. Lots of scope for some great animation.",
+        "ts": "1561021686.003600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-20\/673097677862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Saw this and thought of you! <https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1>",
+        "ts": "1561036096.003700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-20\/664797096737_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Outpost VFX",
+                "title": "8 Pro Showreel Tips To Take Your Career To The Next Level – Part 1",
+                "title_link": "https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1",
+                "text": "Outpost is a VFX team built on a foundation of getting the right people and offering them a balanced and supportive environment to work in, which empowers us to deliver astonishing visual effects for film, high-end TV and creative projects.",
+                "fallback": "Outpost VFX: 8 Pro Showreel Tips To Take Your Career To The Next Level – Part 1",
+                "from_url": "https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1",
+                "service_icon": "https:\/\/outpost-vfx.com\/dist\/img\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1"
+            }
+        ]
+    }
+]

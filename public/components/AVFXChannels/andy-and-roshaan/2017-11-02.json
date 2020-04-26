@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude- how is that personal statement coming along?",
+        "ts": "1509681670.000207",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/266369541250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

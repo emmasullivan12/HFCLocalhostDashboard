@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sahil!\n\nOk, that's totally fine. Architecture is one branch of a very large design field. I studied at the Glasgow School of Art for my masters and there were people there doing everything from sculpture to jewellery design. Do you have a particular interest, say in computer based media, like web design or graphic design? Maybe you're more interested in physical making, such as fashion, ceramics or printmaking? Design itself is very broad so maybe a good place to start would be to think about the sorts of things that interest you. \n\nThere are some great creative universities, I mentioned GSA where I studied but in London there is UAL, UCL and Central St.Martins to name a few. Have a look at their websites to see the sorts of courses they offer and if you see anything you are interested in. Perhaps there are some art galleries close to you? Most are free, especially if you're under 18 and that might be a way to get inspiration.\n\nLet me know if this is helpful advice or if you already have an idea of what you'd like to look into. Is there a certain industry you'd like to get work experience in? Do you have any questions for me? \n\nColeen\n\nP.s. Apologies for the delay, I hope to be able to reply much faster moving forward. ",
+        "ts": "1508081190.000024",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/257445419222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries haha! I hope you're well! Oo, that's amazing, hope you're enjoying it! I'm more into graphic design and illustration, I've looked at Central St.Martins and UCL and I really like their courses for Art and Design. I've been to a couple of galleries around London, I've incorporated some styles into my own portfolio. I'm interested in illustration and web design, do you know anyone or a company that could possibly give me work experience or an internship? (Massive ask, apologies haha!). Also, when you're presenting a portfolio, does it have to be specific or does it have to show a range of interest and reaction to art and design?",
+        "ts": "1508082802.000073",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256703560997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sahil,\n\nI work at Allies and Morrison which is a big architecture firm. We have our own graphics department but the work that they do is obviously tailored to the architecture sector, producing documents for the public, clients and planners to explain the stories and thinking behind our buildings. \n\nI have a contact at Photobox who I can ask for you, she works in e-marketing, sending out emails to customers but they might have some graphics work experience. In any case I can ask her if they have a programme and see if it's the sort of thing your looking for?\n\nI don't have any direct contacts in website design or graphic design in London but I can help you to find the best places to contact and guide you through the process of approaching them. It never hurts to ask so don't be afraid to get in touch with companies you admire and dream big, the worst that can happen is that they don't have anything suitable. But when you're getting in touch we need to make sure you're putting your best foot forward and that you have considered how you'd like to introduce yourself and define what you want to learn and how you think they can help. \n\nSo, with this in mind:\n- Where (location wise) would you like to get to work experience?\n- Have you found firms which you're interested in? \n- The first contact will likely be an email to send to firms to enquirer about work experience, perhaps attaching some examples of your work and a CV. \n- Do you have specific dates you'd like to undertake work experience?\n\nThese are the first steps. I can give you feedback on your email and CV. I would definitely advise keeping a track of firms you've contacted to follow up. Some firms will have programmes in place for students of your age and might even have details on their websites. Research is key!\n\nWith the portfolio, I can have a look and provide some feedback. It's a skill which takes many years to perfect. I wouldn't worry too much about covering everything, it's a curation of your best work. At your stage no one will expect you to have a massive catalogue but they'll want an idea of your potential.\n\nIt's brilliant that you've taken the initiative to look at the courses. Self -driven research has been a really important tool for me at every level of my education and career. Are you applying for university this year?",
+        "ts": "1508084254.000043",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/257452740486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that's amazing, I would really appreciate that, yes please, it would potentially help me get an insight to commissions and dealing with commissioners. Yeah, thank you for the amazing advice, I will definitely take that on board and contact a few firms around London. In terms of dates, Christmas holidays (21st December - 7th of Jan) is best for me, but half term (next week) is good also but that's short notice. Anything after June would be excellent also haha! Oh, I'll upload some pictures of my graphics coursework pages thus far and send them over to you sometime tomorrow? Yeah, I'm looking at universities that offer graphics communication so, that's good!",
+        "ts": "1508105562.000100",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256620944530_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

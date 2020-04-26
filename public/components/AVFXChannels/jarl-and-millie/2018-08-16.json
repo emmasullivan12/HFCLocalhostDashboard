@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool no worries! I was just realising my previous message was seeming kinda random, so wanted to clarify.\n\nWow you got to see Orangutans in real life?! That's so cool! I'd love to do that some day. What a fun sounding trip, and also a good thing to do with building schools.\n\nCongrats on the job! Money is of course important, and it's great you are willing and able to get work even though it probably isn't your dream job. I think that willingness is a really good quality for employees in any industry - that they have a good work ethic and are willing to do things that aren't necessarily their dream task because sometimes 'shit just needs to get done' (excuse my language, sometimes there is just no other word that feels right for some work-related tasks haha :)\n\nIf you're curious, we've been recommended by the Prospela folks to give students regular insights into what our work life is like, does that interest you? Also, I have more ideas of photography related jobs or jobs that started with a focus in photography, which I'd be happy to tell you more about if that interests you too?",
+        "ts": "1534425476.000100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-16\/417034859520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please! I would love to hear more about photography jobs, and I agree, shit needs to be done sometimes :wink: I'm just happy to be out and working,  don't mind what I do for now because I know I'm not going to get my dream job straight out the gate. ",
+        "ts": "1534429545.000100",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-16\/417571462740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

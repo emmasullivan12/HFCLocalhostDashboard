@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was very tricky then because I had never animated a cutout character and had little idea of how it worked. They sent me a Flash file with the character and I had to figure out how to use it. I also didn't know how to animate in their style so I ended up breaking the character apart and doing it my way. Well, it wasn't how it was supposed to be done, bit the animation worked, so it was enough hehe :)\nBut it's still tricky, because most studios will ask for a test, even 10 years into a career.\nSometimes I don't have the software, sometimes the files are way too heavy for my computer, sometimes you just don't have the availability to take a test because you're already working. So, it's a case by case.\nI think it's sometimes annoying the testing, because it's already so tiresome to put up an updated portfolio, then the anxiety of waiting for a studio to get back to you, and then take a test. But that's the way it is, the good thing is that after you've worked at some studio it gets easier to keep context with them and hopefully they'll know all kinds of stuff you do, so it's less trouble in the future",
+        "ts": "1580409660.002200",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/919530292753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "After you graduate do you intend to work in your area or would you like to study animation or even try a job straight away?",
+        "ts": "1580409767.002300",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/916912330194_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds reasonable. I'm currently applying for any runner jobs I can find on animated productions, but since I don't finish university until July it's a bit early haha. I don't really have any ideas set in stone, I'm also applying to some jobs where I live- Oxford like theatre stewarding and stuff (I have theatre experience). I have some money saved  for possibly doing some short animation courses to help me build up a portfolio. My main plan is to get through my degree until March and then start worrying about jobs haha- but I am keeping my eye out on linkedin and stuff just incase. How was the process of learning for you?",
+        "ts": "1580423498.002400",
+        "username": "Holly Raidl (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/918631675715_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

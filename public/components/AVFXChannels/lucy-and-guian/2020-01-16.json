@@ -1,0 +1,223 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian. I watched your video. Your narration is really good, but there are a lot of words.  If it’s not too late I think a few more pauses would be great. Perhaps you can mark them up in your script so that you can see them really clearly. It’s very difficult to narrate.  You’re doing a great job.",
+        "ts": "1579173434.000400",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909063649125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like your choice of images, but we do dwell on each one for quite a long time so it might be nice to have a few more or even some moving images.  I have no idea how much time you have, but I did a bit of googling and found some blogs about free stock images and footage that might be helpful.",
+        "ts": "1579173521.000500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/898851804129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/blog.hootsuite.com\/free-stock-videos-sites\/>",
+        "ts": "1579173527.000600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/908599149956_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Hootsuite Social Media Management",
+                "title": "10 Sites to Get Free Stock Videos for Social Media",
+                "title_link": "https:\/\/blog.hootsuite.com\/free-stock-videos-sites\/",
+                "text": "We’ve rounded up a list of resources where you can get free stock videos to use in your social media content.",
+                "fallback": "Hootsuite Social Media Management: 10 Sites to Get Free Stock Videos for Social Media",
+                "image_url": "https:\/\/blog-assets.hootsuite.com\/wp-content\/uploads\/2018\/01\/free-stock-videos.png",
+                "image_width": 500,
+                "image_height": 250,
+                "ts": 1517234406,
+                "from_url": "https:\/\/blog.hootsuite.com\/free-stock-videos-sites\/",
+                "image_bytes": 30890,
+                "service_icon": "https:\/\/blog.hootsuite.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/blog.hootsuite.com\/free-stock-videos-sites\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/blog.snappa.com\/free-stock-photos\/>",
+        "ts": "1579173532.000800",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909065422229_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Snappa Blog",
+                "title": "21 Amazing Sites With Breathtaking Free Stock Photos (2020 Update)",
+                "title_link": "https:\/\/blog.snappa.com\/free-stock-photos\/",
+                "text": "A curated list of websites with beautiful free stock photos that can be used for personal and commercial projects.",
+                "fallback": "Snappa Blog: 21 Amazing Sites With Breathtaking Free Stock Photos (2020 Update)",
+                "image_url": "https:\/\/blog.snappa.com\/wp-content\/uploads\/2016\/12\/free-stock-photos-fb-1024x538.png",
+                "image_width": 476,
+                "image_height": 250,
+                "ts": 1578063605,
+                "from_url": "https:\/\/blog.snappa.com\/free-stock-photos\/",
+                "image_bytes": 57071,
+                "id": 1,
+                "original_url": "https:\/\/blog.snappa.com\/free-stock-photos\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had a quick look and found these videos that might work for your Sula people’s torches <https:\/\/www.shutterstock.com\/video\/search\/torch-light> and these for the dancing round the fire <https:\/\/www.shutterstock.com\/video\/search\/dance-bonfire>  Hope this helps.  Lucy :slightly_smiling_face:",
+        "ts": "1579173882.001000",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/896277024818_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Shutterstock",
+                "title": "Torch Light Stock Video Footage - 4K and HD Video Clips | Shutterstock",
+                "title_link": "https:\/\/www.shutterstock.com\/video\/search\/torch-light",
+                "text": "12,479 torch light stock video clips in 4K and HD for creative projects. Plus, explore over 11 million high-quality video and footage clips in every category. Sign up for free today!",
+                "fallback": "Shutterstock: Torch Light Stock Video Footage - 4K and HD Video Clips | Shutterstock",
+                "image_url": "https:\/\/ak4.picdn.net\/shutterstock\/videos\/1016205694\/thumb\/9.jpg",
+                "from_url": "https:\/\/www.shutterstock.com\/video\/search\/torch-light",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 25392,
+                "service_icon": "https:\/\/ak.picdn.net\/assets\/cms\/sstk-favicon-57.png",
+                "id": 1,
+                "original_url": "https:\/\/www.shutterstock.com\/video\/search\/torch-light"
+            },
+            {
+                "service_name": "Shutterstock",
+                "title": "Dance Bonfire Stock Video Footage - 4K and HD Video Clips | Shutterstock",
+                "title_link": "https:\/\/www.shutterstock.com\/video\/search\/dance-bonfire",
+                "text": "1,600 dance bonfire stock video clips in 4K and HD for creative projects. Plus, explore over 11 million high-quality video and footage clips in every category. Sign up for free today!",
+                "fallback": "Shutterstock: Dance Bonfire Stock Video Footage - 4K and HD Video Clips | Shutterstock",
+                "image_url": "https:\/\/ak7.picdn.net\/shutterstock\/videos\/1014709367\/thumb\/1.jpg",
+                "from_url": "https:\/\/www.shutterstock.com\/video\/search\/dance-bonfire",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 43456,
+                "service_icon": "https:\/\/ak.picdn.net\/assets\/cms\/sstk-favicon-57.png",
+                "id": 2,
+                "original_url": "https:\/\/www.shutterstock.com\/video\/search\/dance-bonfire"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much Lucy, I have already submitted my work as it was due, but I will definetly keep this in mind for future projects!",
+        "ts": "1579177286.001200",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/908667456404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem Guian.  What are the next steps.  I really enjoyed it.  It got me thinking about how perhaps making a sort of animatic equivalent with stock footage might help you to plan and story board.  Might be lots of work though. :slightly_smiling_face:",
+        "ts": "1579180166.001300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/897711528131_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That was the end of the unit so theres not much else to do on that project",
+        "ts": "1579181037.001400",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909197507616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do have other things I'm working on though",
+        "ts": "1579181047.001500",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/896412687010_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was really impressed with the world you created. I want to go there…  What else are you working on?",
+        "ts": "1579183762.001600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/911122778599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you :blush:",
+        "ts": "1579184414.001700",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/899078116593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have to make an illustration for a poem that I chose. I chose nothing gold can stat by Robert frost, I also have to animate model and animate a drinks can, as well as do the dialogue in our group comic book project.",
+        "ts": "1579184485.001800",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909293126181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow! Busy bee.  Keep me posted. :slightly_smiling_face:",
+        "ts": "1579184767.001900",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/911149882279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will do :blush:",
+        "ts": "1579184844.002000",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/911499922390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

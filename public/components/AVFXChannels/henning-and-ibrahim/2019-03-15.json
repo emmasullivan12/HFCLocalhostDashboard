@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Henning,\n\nSorry for the late reply, I start sculpting as you told me and I would like to show you the results. I've been looking at your YouTube channel and it make sense a lot. ",
+        "ts": "1552642136.000400",
+        "username": "Ibrahim Jama (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/577907631332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

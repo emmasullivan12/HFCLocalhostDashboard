@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today was Thanksgiving in America so we had the day off work, and we get tomorrow off too. I had no idea thanksgiving was such a big holiday here. The office was very quiet yesterday, I think the only people there were people like me who have recently moved to America or are only here for a short time. I finished a big report I’ve spent two months writing and sent it out on Monday... Now that I’ve sent it, I think I might made a big mistake in one of my conclusions and recommendations I made in my report! I’ll have to spend Monday checking over my work, and maybe send out a correction if I got it wrong. I’m a little bit frustrated that I made such a big mistake in front of all my colleagues, but I’m glad I sent the report.",
+        "ts": "1542940530.002000",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-22\/487818303286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

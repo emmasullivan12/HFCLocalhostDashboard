@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! I'm back now with loads of new photos. I think I'm going to pursue photography. :grin: I really enjoy it and I think I have the eye for it so I'm going to ask a family friend who runs their own photography business as to how to get into the industry and if I can work with them for a while. \nI like the idea of submitting my work to somewhere like the magazine you recommended but because I shoot a lot of nature I was wondering if you had any ideas if submitting photos to places like natgeo wild (maybe not that high profile but you get the idea :sweat_smile:) I was thinking of selling y2k photos to a national trust board or something? Any thoughts? Hope you're doing well!",
+        "ts": "1536576683.000100",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-10\/433359461063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi my boyfriend's really interested in game development (coding, animation etc) he wants to get some training to further his skills as he would like to enter a job in the industry, any suggestions, would love to hear from a pro.",
+        "ts": "1536623092.000100",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-10\/432136881552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

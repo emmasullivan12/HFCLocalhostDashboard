@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mahira! no worries! Yes I’ve finished the 21st of February so now I’m back to job searching which is not very exciting but that’s part of our industry as it’s mainly based on contracts for projects! I did some test for game companies and now I’m in contact with other studios so hopefully something will happen ahahI applied to a lot of them in London! there are a lot here, I can share the list with you. I started with characters in ZBrush, cause it looked easier for me but I want to move into Environments as well soon!",
+        "ts": "1583784053.000400",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/979852895201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah I would suggest Blender, cause it’s free and the industry is using it now!:)",
+        "ts": "1583784086.000500",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/979854045969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that’s sounds amazing, feel free to share with me if you want\/ can...I’d love to see your work! are you planning to do a portfolio with that material??",
+        "ts": "1583784163.000600",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/979856854417_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

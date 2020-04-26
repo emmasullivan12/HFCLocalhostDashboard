@@ -1,0 +1,91 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane. Thanks for sharing this with me.  I really like your idea and the style of your work. In relation to trying to portray the sea as vast I always really like the perspective given by zooming in or out of a place.  This sort of thing <https:\/\/www.youtube.com\/watch?v=PESDQ84Yd8U>",
+        "ts": "1570720209.003000",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/779452492899_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Earth zoom out (Amazing)",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=PESDQ84Yd8U",
+                "author_name": "CompuTech",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCVOxPykQFhtc6jOzUKQWfVA",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/PESDQ84Yd8U\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Earth zoom out (Amazing)",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/PESDQ84Yd8U?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=PESDQ84Yd8U",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=PESDQ84Yd8U"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "somehow it helps you realise how small we are in relation to the whole earth and the universe.",
+        "ts": "1570720244.003200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790940997184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can also illustrate this by showing how many of a known thing fit into an ‘expanse’ like the sea so…X million football pitches etc. you could illustrate this in your animation.",
+        "ts": "1570720440.003300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/778161055442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you ever heard of <https:\/\/www.instagram.com\/monachalabi\/> Mona Chalabi. She uses illustration to bring statistics to life. I think she is really creative and makes me stop and think with her illustrations. She might inspire you!",
+        "ts": "1570720570.003400",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790950366368_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": " Login • Instagram ",
+                "title_link": "https:\/\/www.instagram.com\/monachalabi\/",
+                "text": "Welcome back to Instagram. Sign in to check out what your friends, family &amp; interests have been capturing &amp; sharing around the world.",
+                "fallback": " Login • Instagram ",
+                "from_url": "https:\/\/www.instagram.com\/monachalabi\/",
+                "service_icon": "https:\/\/www.instagram.com\/static\/images\/ico\/apple-touch-icon-76x76-precomposed.png\/4272e394f5ad.png",
+                "service_name": "instagram.com",
+                "id": 1,
+                "original_url": "https:\/\/www.instagram.com\/monachalabi\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Jane just a note that I’m away for a few days from tomorrow, so might not be back on here until Tuesday. Have a lovely weekend.",
+        "ts": "1570725592.003600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/778305341378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

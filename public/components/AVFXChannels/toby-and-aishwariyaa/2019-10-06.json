@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey!\nSo I took a quick look at the CV.\n\nFirst of all you have a pretty impressive amount of things on there for being at this stage of your life! Well done!\n\nCouple of thoughts.\n\nFor your key skills:\nYou should be more brief and concise with these, and more confident in stating them as skills. I dont think you need to explain how you got the skills (at least not in this section)\ni.e\n\n-Experience with blender for character modelling, rigging and animation\n-digital art (sketchbook and photoshop)\n- Programming (python, *insert other programming language here)\n-Strong communication skills\n- Effective as a team member and independently\n-Cope well under pressure\n-Detail orientated\n\nI took out the receptionist one because - I think its not really a key skill its more of some work experience\n\nFor the section on 3dAnim I found it a little confusing\nWho or what is Pete Kemp?\nIf I understood correctly you did 3Danmi a few times? So I think you can say for this chunk\n\n_I applied and was accepted into the 3dami programe several times (dates here).3Dami is a program allowing students to work in small teams of like-minded artists to create short animations over the course of a week._\n_3Dami allowed me to learn and practice new animation abilities and given me an understanding of the animating industry whilst encouraging my love of animation._\n\nthen I would list the projects you worked on, but relatively briefly. bullet point them i.e\n\n_-NAME of film (youtube link) - Responsible for directing and animating etc_\n_-NAME of film (youtube link) - Responsible for modellign and texturing etc_\n\nAt this minute I feel like I need to know a lot more about 3d ami to understand whats going on. You dont need to give a tonne of information about the programme. Just the just i.e its a weeklong thing that you did off your own back to learn skills and you did these projects while there. Send me a message if you need to me to clarify this!\n\n\n\nIn the experience section\nThe names (Daphne Mather and Lindsey,Marilyn Holness) who are they? The way you have written it makes it sounds like they wrote this section about you?\nand you have a typo here ' The experience helped mei amplify my communication'\n\n\nOverall I think you could be more concise with everything on the CV. Traditionally they should only be  2 or 3 pages\nI believe you could cut it down a lot, just with general formatting, removing some white space etc\nIn your experience section I think you are giving too much opinion on your experiences\n\ni.e you wrote :\n_I had the most amazing experience during my time at Locksmith animation. While a lot of the work was confidential, I was treated with maturity and trusted far more than I expected. I had the chance to watch one of the animations Locksmith is working on and give some feedback, handled being a receptionist in the mornings and was even mentored by the lovely team who helped me create a week's worth of backstory research on a plotline of my own. I almost took on a role similar to a runner, but at the same time I felt part of the team and made valuable connections._\n\nI might change it a little to:\n_I had the most amazing experience during my time at Locksmith animation. While a lot of the work was confidential. I had the opportunity to give feedback on some animation. I took on the responsibilities of a runner, handled being a receptionist in the mornings and was mentored by the team who helped me carryout backstory research on a plotline of my own._\n\nSo while I only trimmed a little bit out of it, I think it reads a bit punchier.\n\nMaybe with the qualifications you could lists them together\n\nSo GCSEs in one column and A levels in a second and maybe awards in a third. Would save some space",
+        "ts": "1570388570.014300",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-06\/774046515027_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "just message me if you need clarification, and remember these are just ideas. Theres not really a right or wrong way for these things.",
+        "ts": "1570388645.014400",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-06\/785063320724_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hello, you might find this interesting <https:\/\/soundcloud.com\/accessvfx\/18-meet-the-framestore-interns>",
+        "ts": "1570420972.014500",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-06\/787932435030_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "SoundCloud",
+                "service_url": "https:\/\/soundcloud.com",
+                "title": "18: Meet the Framestore Interns by accessvfx",
+                "title_link": "https:\/\/soundcloud.com\/accessvfx\/18-meet-the-framestore-interns",
+                "author_name": "accessvfx",
+                "author_link": "https:\/\/soundcloud.com\/accessvfx",
+                "thumb_url": "https:\/\/i1.sndcdn.com\/artworks-000607483249-hank1u-t500x500.jpg",
+                "text": "Every summer studios across the world offer short work placements for budding VFX artists who aspire to work in the industry. They are an ideal stepping stone from education into industry, and we wanted to hear what it’s actually like. So we chatted to 8 of the interns who spent 8 weeks of their summer at Framestore, to hear their experience of what goes on.\nIf you’re thinking of applying for an internship this podcast is essential listening!\n\nFind out how you can apply for internships on the ACCESS:VFX website:\n\n\nHosted & recorded by Grace Hebditch, Marketing Coordinator at Blue-Zoo",
+                "fallback": "SoundCloud Audio: 18: Meet the Framestore Interns by accessvfx",
+                "audio_html": "<iframe width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https:\/\/w.soundcloud.com\/player\/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F690835759&show_artwork=true&maxheight=150\"><\/iframe>",
+                "audio_html_width": 100,
+                "audio_html_height": 150,
+                "from_url": "https:\/\/soundcloud.com\/accessvfx\/18-meet-the-framestore-interns",
+                "thumb_width": 500,
+                "thumb_height": 500,
+                "service_icon": "https:\/\/soundcloud.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/soundcloud.com\/accessvfx\/18-meet-the-framestore-interns"
+            }
+        ]
+    }
+]

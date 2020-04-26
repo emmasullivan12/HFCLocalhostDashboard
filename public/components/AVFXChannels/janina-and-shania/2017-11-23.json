@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Uhh some yes ",
+        "ts": "1511445257.000173",
+        "username": "shania.jf.8 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/277655691110_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

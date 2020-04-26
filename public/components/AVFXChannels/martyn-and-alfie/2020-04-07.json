@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, I'm gonna be more active now. Or as active as you'd like me to be, been getting to grips with the new covid lifestyle working from home. Has your course been affected,",
+        "ts": "1586259617.000600",
+        "username": "Martyn Hawkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1050443836597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I actually never knew I wanted to go into VFX or that it was even possible for me! I did a digital film degree at Sunderland university, with a goal of going into film 'somehow' haha. When i finished the course I found that I didn't have a niche or an area I really wanted to focus on",
+        "ts": "1586259680.000700",
+        "username": "Martyn Hawkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1061263087632_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What I did remember is I loved one of the VFX modules, which we were using after effects in. I was basically working in a bar trying to find runner jobs in London. Then I decided to look at what VFX job applications actually needed and noticed nuke was a main aspect for the 2d side of work (compositor).",
+        "ts": "1586259759.000800",
+        "username": "Martyn Hawkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1049145705606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was lucky enough to be able to do a masters in VFX whereby we had to teach ourselves Nuke and how it worked. I just focused on learning it and made a reel out of my end of year project haha. Fortunately a company that worked with York university hired off of that course so I used that as a way to build a professional reel to move to London",
+        "ts": "1586259830.000900",
+        "username": "Martyn Hawkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1050448308117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is why I said you have a few years headstart on me as you know What you'd like to go into :ok_hand:",
+        "ts": "1586259850.001000",
+        "username": "Martyn Hawkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1044799669667_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's definitely been an interesting change of pace that's for sure.\nSo far we've been given a week's extension on our final deadlines but I'm not sure if that'll change again at the moment.\n\nYour story definitely sounds similar to mine in terms of finding VFX through a college\/university module. I think I'm very lucky that we've had the tutors around at uni to show us how Nuke works and best practices etc. I'm quite interested to see how the covid situation will affect getting into the industry after graduating",
+        "ts": "1586261874.001100",
+        "username": "Alfie Bazley (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1043795363506_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

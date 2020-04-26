@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know what you mean.. From where do you feel that the pressure and expectations are coming from?",
+        "ts": "1539090939.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/451631230881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want to, when you have put it in a first draft you can send it here so I have a look and help you out :slightly_smiling_face:",
+        "ts": "1539090985.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/453293989047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, from my personal experience, studying away from home was the best decision I've done because it helped me become independent and taught me so many skills about everyday life and gave me strength to handle things on my own.. Plus the new experiences of living in a different place with new surroundings can be exciting! Also, I don't know if you were to choose to move out, if you'd stay in the dorms, because that would also be a cool part of uni life as you get to meet so many people there and have the \"community\" feel. Even though I didn't stay in the dorms because I stayed with my sister in a flat, I was visiting the dorms very often as my friends from uni were there and it was a fun environment :smile:",
+        "ts": "1539091148.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/451502257248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In general I believe it helps you in many ways to study away from home (if it is financially easy to), as it opens your mind more and the whole experience is really worth it.. What are your thoughts about it, are you inclining towards one or the other option?",
+        "ts": "1539091374.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-09\/453299533911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. I have got some good tips for you about animation from Alex. I’ll share tomorrow when I am back on the desktop computer. \n\nI’m going to see Antman And Wasp now to check out the visual effects :sunglasses::wink:\nHave you seen it yet? ",
+        "ts": "1533228492.000333",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-02\/409777992210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, thanks.",
+        "ts": "1533241248.000249",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-02\/410074978053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I haven't seen it yet but I really want to. I'm a big fan! Let me know what you thought of it:grin: ",
+        "ts": "1533241302.000321",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-02\/409937185010_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

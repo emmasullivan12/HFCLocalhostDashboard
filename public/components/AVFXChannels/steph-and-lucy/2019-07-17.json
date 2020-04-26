@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good to hear you have a plan already in motion! ",
+        "ts": "1563366140.002400",
+        "username": "Stephanie Dewhirst (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/690885454401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a lot of work on currently at work, so I’m sorry if my replying takes a little longer",
+        "ts": "1563366169.002500",
+        "username": "Stephanie Dewhirst (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/699082172871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It would be good to see some of your stuff, even if it’s not finished, so I can get a grasp of your current level and can appropriately give you further resources and advice ",
+        "ts": "1563366229.002600",
+        "username": "Stephanie Dewhirst (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/685831427587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We can also look into something like a work placement as well. I found experience in the industry, even as a runner or an intern is a good step forward. Studios can prefer that to a university degree anyway ",
+        "ts": "1563366358.002700",
+        "username": "Stephanie Dewhirst (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/699084961255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

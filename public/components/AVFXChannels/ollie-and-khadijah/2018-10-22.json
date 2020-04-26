@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey\ndo u know of any relevant activities that will make me stand out in universitys",
+        "ts": "1540206384.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/461540627445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya, what do you mean? As in, activities you are doing now that you should mention in your UCAS personal statement?",
+        "ts": "1540208951.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/460630949760_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

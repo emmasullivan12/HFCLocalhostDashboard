@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "do you have a specific project in mind right now? I can ask you about your progress - maybe that helps you to not procrastinate",
+        "ts": "1552490806.002000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/575567189106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've made plans for the project but not made a start on it yet so..",
+        "ts": "1552491688.002100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/575562808852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

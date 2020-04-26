@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Хорошо, договоримся на вторник.",
+        "ts": "1552979900.007700",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581461283845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

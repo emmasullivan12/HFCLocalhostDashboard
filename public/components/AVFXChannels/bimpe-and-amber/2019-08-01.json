@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s fine. Just need to work a little more harder. No, they haven’t but I got an email saying that, they would like to follow up with me soon, as Simon is on holiday the senior recruiter. \n\nYeah, I’ll definitely look at were I’m up to and let you know as soon as possible. But thanks again for helping me Bimpe :) Tbf, it was on my official interview so I’ve learnt a lot from it. ",
+        "ts": "1564669205.001700",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/712699526292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its great that you're planning on following up - fingers crossed they bring you back in! do you have any other interviews etc lined up?\nAwesome, no worries - will also keep my ear out for any other positions that come up! And yeh theres always so much to learn from interviews!",
+        "ts": "1564690321.001800",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/715797744646_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

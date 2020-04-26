@@ -1,0 +1,396 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's really cool and a creative task. What I would suggest you to do to fit both industry needs and your university is this:\nTake one specific setting(as close to real life as possible, no sci fi, no magic in it's core, do something you are real expert of) from any periods of time,do a thoroughest research you can on that. Like literally spend few days reading on that place\/era. Then gather great images, make a moodboard, for example you have an access to London or any UK's old fashioned factories in other cities so go there, ask people to let you in(it's easy in most cases for students). Should you choose industrial revolution topic you have the best place for references possible (UK :slightly_smiling_face:). And then when you have all of that - design just one main piece but based on what you've seen and everything else around it should be just a scene assemble of real world pieces. So don't do everything out of your head, use what's real as a base around one design because that's what will get you a job and fit the task let alone it's gonna look awesome! Of course that's only my suggestion",
+        "ts": "1574071668.001200",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/826989745971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example world of Bloodborne is stunning but when you take a closer look that's all real designs, like 90% a real world based but it is assembled in a different way",
+        "ts": "1574071717.001300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838462127664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I was really wanting to do something like this! Because I want to do alternate history I was thinking of setting it somewhere in the UK that is real but just adding one or two original concept pieces that stand out, surrounded by what was originally there :+1: I just need to choose somewhere haha",
+        "ts": "1574072187.001400",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/826999883091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, go for it for sure then!",
+        "ts": "1574072390.001500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/840684642422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really like the idea and setting of either Soviet architecture or 70\/80s UK Brutalist architecture but I'm not sure whether they are either a bit too popular or could look boring",
+        "ts": "1574072479.001600",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/827005441107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh man you are too happy for a soviet style art :smile: But sure if you decide to go for something like that take a look at\nJakub <https:\/\/www.artstation.com\/jakubrozalski>\nJust keep in mind that Soviet things look like shit in real life(Trust me on this one, I grew up with them) so it's a bit challenging to make them look great, though TV series Chernobyl made that real, so use that as a main reference if you go for soviet type of look for sure.\nBTW 1-2 works like that can get you started in the industry easily\n<https:\/\/www.artstation.com\/artwork\/nQDav4>",
+        "ts": "1574073889.001700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838511297045_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Jakub Rozalski",
+                "title_link": "https:\/\/www.artstation.com\/jakubrozalski",
+                "text": "howling at the moon",
+                "fallback": "ArtStation: Jakub Rozalski",
+                "thumb_url": "https:\/\/cdna.artstation.com\/p\/users\/covers\/000\/000\/758\/default\/9ef53f47cc25f1735ed63509dad8a3eb.jpg?1524655257",
+                "from_url": "https:\/\/www.artstation.com\/jakubrozalski",
+                "thumb_width": 1920,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-97ab34ee4295d172be7a5ff3a04a3457.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/jakubrozalski"
+            },
+            {
+                "service_name": "ArtStation",
+                "title": "Vertigo Train, Kemal Gunel",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/nQDav4",
+                "text": "Vertigo effect achieved by cinematic camera and sequencer in Unreal Engine 4. Lighting done by me. Train asset from Clinton Crumpler.",
+                "fallback": "ArtStation: Vertigo Train, Kemal Gunel",
+                "image_url": "https:\/\/cdna.artstation.com\/p\/assets\/covers\/images\/017\/259\/566\/large\/kemal-gunel-cover.jpg?1555267657",
+                "image_width": 250,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/nQDav4",
+                "image_height": 250,
+                "image_bytes": 305205,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-97ab34ee4295d172be7a5ff3a04a3457.png",
+                "id": 2,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/nQDav4"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQQHY8AEB",
+                "created": 1574086873,
+                "timestamp": 1574086873,
+                "name": "images.jpeg",
+                "title": "images",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 8340,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQQHY8AEB\/images.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQQHY8AEB\/download\/images.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQHY8AEB-926013203d\/images_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQHY8AEB-926013203d\/images_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQHY8AEB-926013203d\/images_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 265,
+                "thumb_360_h": 190,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQHY8AEB-926013203d\/images_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 265,
+                "original_h": 190,
+                "thumb_tiny": "AwAiADCYsdx5PWlQFj97AphU7jx3qWEAFvpVvYhbhEymMPk8+tDzDGFzmq8H+qX6VKV9DRYBDvY9TU4j6cnA7VAGK05ZG3DPNDQIHySfSkBKxuQccUO4UnJ5z2qLzSwICnB45NJvQaWpB564CImR0G40yXehAZQuam8oFugFPEYPXoKi5ditFNIrAIxOT0PIrRDKDkj8BUACqflAHuKAfmXmjmCxLtXzOg6+lDKM9BS\/x\/jQetIBAo2HgdaeijcOBTR9w\/Wnp94UAR7V\/uj8qXau77o6+lLR\/F+NAH\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQQHY8AEB\/images.jpeg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQQHY8AEB-a60e9ca6da",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1574086874.001900"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQQUD2CKG",
+                "created": 1574086872,
+                "timestamp": 1574086872,
+                "name": "5540e585dd0895c9598b4586-750-563.jpg",
+                "title": "5540e585dd0895c9598b4586-750-563",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 32344,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQQUD2CKG\/5540e585dd0895c9598b4586-750-563.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQQUD2CKG\/download\/5540e585dd0895c9598b4586-750-563.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQUD2CKG-5db58ec6b0\/5540e585dd0895c9598b4586-750-563_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQUD2CKG-5db58ec6b0\/5540e585dd0895c9598b4586-750-563_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQUD2CKG-5db58ec6b0\/5540e585dd0895c9598b4586-750-563_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 270,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQUD2CKG-5db58ec6b0\/5540e585dd0895c9598b4586-750-563_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 360,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQUD2CKG-5db58ec6b0\/5540e585dd0895c9598b4586-750-563_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQQUD2CKG-5db58ec6b0\/5540e585dd0895c9598b4586-750-563_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 540,
+                "image_exif_rotation": 1,
+                "original_w": 750,
+                "original_h": 563,
+                "thumb_tiny": "AwAkADDTopCcAn0qo8zkgbup7UAWTKg6sKcrBhkdKzpHKsAPSgSurEK5HNAGlRVOGVmkXcxPNXKAGP8AMhAOM1Rn3QMGZeOgINRB5hj5h+tDM7DD4OPekAhJaQFgRnBH0pHO1iTwCTj3pVGBjH60hXLEkD86AHxsQCynkdDWkrgqCSOR61k7D6\/rSGI+1MCwDS0gpaADNFFFABQTRSGgD\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQQUD2CKG\/5540e585dd0895c9598b4586-750-563.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQQUD2CKG-eb7676359e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1574086874.002200"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQB8C5VR9",
+                "created": 1574086872,
+                "timestamp": 1574086872,
+                "name": "frederic-chaubin-druzhba-holiday-center-hal-yalta-1984.jpg",
+                "title": "frederic-chaubin-druzhba-holiday-center-hal-yalta-1984",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 977593,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQB8C5VR9\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQB8C5VR9\/download\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 338,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 451,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 677,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 752,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 902,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQB8C5VR9-85e84c4422\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 962,
+                "image_exif_rotation": 1,
+                "original_w": 2384,
+                "original_h": 2240,
+                "thumb_tiny": "AwAtADC5imNIq8Z5xkUXD7BgdaqjOcdDQKxOZc4wOoJpqSlgM45OKiUEj9BSjpn8vei47EodW74J6A0hFREcA56+lSRNn5T1HSmmJokuFy+agC88mnm4Eow3BFJnBwMZ61IxwB7A9zSYIGMVImG4LZPsaSVljXJznsAetAyEjBz3p0WS4qHzy33h+NWLQfKzEgA8DJpiKoBRSW6elPjPy5XJpoIbGR1OKnSNUzjNTcYtuWM3TCYP50XZOUC89c\/SliTIM2Tk8Y7Um0s+7djjHSi4WKoiZ0J6c9KY6FDjHNWwCnAORTdoJDEZINO4WP\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQB8C5VR9\/frederic-chaubin-druzhba-holiday-center-hal-yalta-1984.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQB8C5VR9-73e274a978",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1574086877.002500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is that what you wanna make?",
+        "ts": "1574090814.002800",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/840726570311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Perhaps something like that as an establishing shot yeah but doesn't have to be as complex or large, just that style for an exterior and then an interior of it which can be more real-world based",
+        "ts": "1574091458.002900",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838427694500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So to clarify, I want to do 2 completely separate envs. But for each one I think I want an exterior shot and 1\/2 interior shots.",
+        "ts": "1574091741.003000",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/840754767191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQEUND45P",
+                "created": 1574091784,
+                "timestamp": 1574091784,
+                "name": "Screenshot_20191118-154251.png",
+                "title": "Screenshot 20191118-154251",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 166621,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQEUND45P\/screenshot_20191118-154251.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQEUND45P\/download\/screenshot_20191118-154251.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 203,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1422,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQEUND45P-a534dc3dad\/screenshot_20191118-154251_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 1920,
+                "thumb_tiny": "AwAwABtPsNx6r+dJ\/Z83+x+daTNgmgtg0AZ32Gcd1\/76oNhOT1X\/AL6rRzk06gBrJkk5oCHIJPSlJ98Uc+v6UAIoIY\/QU6m5OcZp1AEbHr9TQT84H+e9UzqJ\/wCeQ\/OgX+TnyV\/OgC6p+YH1Ap9Zw1EjpCP++qX+0j\/zyH\/fVAH\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQEUND45P\/screenshot_20191118-154251.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQEUND45P-6a88de6b60",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1574091788.003100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So this original concept piece I want to do now will just be one of the pieces",
+        "ts": "1574091821.003400",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/838902582336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see, sure, that's cool, go for it!",
+        "ts": "1574098226.003500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/831170254833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome!! Gonna do a few days of research and basic storyboards\/sketches so I'll update you when I have something ready to start! (Im technically on break from University atm)",
+        "ts": "1574098442.003600",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/826315931282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, sure man",
+        "ts": "1574098564.003700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/831179842625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

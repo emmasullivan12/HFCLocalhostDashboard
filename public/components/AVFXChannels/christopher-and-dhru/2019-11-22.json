@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That makes sense\nWhat made you go for a access-vfx menteeship \/ what do you think you need help with \/ advice etc?",
+        "ts": "1574429806.002500",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/832727170850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

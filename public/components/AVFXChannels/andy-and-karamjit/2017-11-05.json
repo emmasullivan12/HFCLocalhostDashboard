@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I need you to be someone who challenges and provides insights.",
+        "ts": "1509890358.000014",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266560361024_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Currently, I am partecipating in the National Citizen Service (NCS). In this program, I gained a lot of skills. I improved my communication skills as I met new people and I was confidently able to introduce myself to them. Moreover, we also had a speech competition and I was established as the winner with the most impactful speech. Furthermore, I also boosted my teamwork skill as we all worked together as a team and helped each other. Now I also gained enterprise and strategy skills as a consequence of the volunteer work with a Day Care Centre. Once, I was also established Project Manager, therefore right now I am able to successfully lead a group (leadership skills). I will include these details in my CV as soon as possible.",
+        "ts": "1509918954.000104",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/268381326247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am also partecipating in a TFL program where we have suggest some improvements in their program, such as facilities of buses or trains. Then we have to submit all the work and present our ideas in front of other people with the aim of persuading them. I am in a group of four and I am established as the project manager. I am looking forward to gain new skills in this initiative.",
+        "ts": "1509919265.000102",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/268180593766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

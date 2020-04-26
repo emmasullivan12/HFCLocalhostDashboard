@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey. So they've emailed me today and offered 500 euros a month for 8 hours a day. But I can 'clock in' however I want. Iv replied to ask if they can pay per job but I don't want to lose the opportunity. To be honest, I'd be paid pittance but to do the same as what I do now anyway",
+        "ts": "1572952362.002700",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/821926504709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would it be 8hrs a day for the 20-22 days a month? As that works out at £19 a day...... It all boils down to whether or not you would change anything you would be doing right now. If you're just testing simulations on models for own personal experience, and you'll now be testing simulations on models for work, then I guess it's an extra £400 a month. However if you're going to be missing out on other opportunities to do this, then you'd really have to think about it. Could you do 16hrs in one day, including simming time, and 3 days later you'll have done your week's worth of work? And what would be your \"get-out\" time? Would they need a month's worth of work's notice or could you turn round on a Thurs and go \"I have a job, starting Monday, tomorrow I'll finish up\"",
+        "ts": "1572964953.002800",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/824392681302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's my personal view. for £19 a day, it really is very little money, and you'd have to consider how your life\/work would change from what you're doing right now, to how it would be working. If 0 changes, and you still job hunt and practice, then the £400 is a bonus",
+        "ts": "1572965010.002900",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/809397485346_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

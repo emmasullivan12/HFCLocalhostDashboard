@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tom I just watched it and I think you should be proud of what you achieved. I see the 9 min edit got toned down a bit :wink: are you happy with how it turned out? What would you change if you had more time and what would you have done differently during the process? You dropped the bookcase metaphor in the end I see. What drove that decision?",
+        "ts": "1568631565.000100",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-16\/763244636615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great to hear from you.\n\nThanks :grinning: it got cut down in to a 3 phase project after speaking to you so I could achieve a finished piece and then expand if I had time. \n\nI'm happy with it but there were a lot of compromises made to make sure that I could finish it. \nI would have spent longer on the animation stage, especially early on to nail down the poses of each scene. I think it reflects in a few that I've moved on quickly and they are weaker as a result. The scenes with the pair at the dining table stick out for me.\nI treated it like pre vis after my visit and thought about what you said in terms of people noodling shots, thanks again for that advice. It forced me to make a stricter schedule and be happy with the results at each deadline so I wouldn't fall behind.\n\nI would have spend longer on the rigs too because the fast pace shows in a few scenes (sleeves deforming, eye protrusions etc.) It added a little more work at the end which could have been prevented. Bringing in someone to work alongside at the modelling and rigging stage would have helped a lot. I think they would have seen the flaws developing in the rigs such as the neck being too short and causing  issues with the freedom of movement.\n\nThe bookcase metaphor was planned for phase 2 if I had time for it. Every background has a version of the metaphor in it but it needed an illustration or explanation at the start to highlight it. The bookcase turned in to a tree version with the leaves and branches wilting or thinner at the top. It's either a tree bookcase, modern staggered tree photos, a mug tree or an indoor plant. I ran out of time to add the explanation.\n\nDo you have any major criticisms?\nWhich do you think are the stronger scenes? I'm using it to build my showreel around.",
+        "ts": "1568643511.000200",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-16\/761628919829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

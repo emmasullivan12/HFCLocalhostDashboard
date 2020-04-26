@@ -1,0 +1,194 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, wanted to share this with you.\nThis guy did a level in cyberpunk style and he got the job in CDP and works on cyberpunk 2077 now :slightly_smiling_face:\nI wanted to share it with you because it's a great example of tailoring your reel to the company you really want to work at\n\nThe work itself\n<https:\/\/www.artstation.com\/artwork\/9J2Lo>",
+        "ts": "1567087214.000100",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/744367656759_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Cyberpunk street Unreal 4 scene, Krzysiek Burzyński",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/9J2Lo",
+                "text": "Continuation of my level in cyberpunk city. It was made in Unreal Engine 4. I've used assets from \"Showdown\", \"Infiltrator\", \"Sci-fi Hallway\", \"Sci-fi Bunk\", \"Soul City\" and characters from Mixamo and Paragon. Some of the characters are made by me in Fuse. Also a car model from super talented: <https:\/\/sketchfab.com\/dennish2010\/models> Music is: Wice - Star Fighter and Toxxify - Cyborg Chase I did the design, mesh placing, lighting, light bake, postprocessing, camera and animations setup. I've made this for fun and practice. City is slowly growing, far from being finished. Its a work in progress.",
+                "fallback": "ArtStation: Cyberpunk street Unreal 4 scene, Krzysiek Burzyński",
+                "image_url": "https:\/\/cdna.artstation.com\/p\/assets\/covers\/images\/011\/027\/626\/large\/kosmiczny-kowboj-highresscreenshot00258.jpg?1527509225",
+                "image_width": 622,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/9J2Lo",
+                "image_height": 250,
+                "image_bytes": 287794,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-ac4c49b9c783b2911b5213c6efbeffaa.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/9J2Lo"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s awesome, so cool that it’s fully interactive and pretty much all one take :+1::skin-tone-3: Reminds me of the Gnomon tutorial with the alleyway! I have some turntables of the crate rendering at the minute and I’m really happy with them, will get them to you once they’re done. ",
+        "ts": "1567093664.000300",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/744858232790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it's really nice piece especially considering that it's all real time",
+        "ts": "1567094028.000400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/736299845313_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, looking forward to see it!",
+        "ts": "1567094043.000500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/736300159825_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you working on anything at the minute? ",
+        "ts": "1567094323.000600",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/742226523508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "at this particular moment no",
+        "ts": "1567094377.000700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/744877213574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you recently finished on a show? or moving onto a new one in the future? ",
+        "ts": "1567094621.000800",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/742706650997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I though you are asking like now, at this moment :slightly_smiling_face: No I'm working on this show\n<https:\/\/www.youtube.com\/watch?v=A2ZDDU34gYw>",
+        "ts": "1567094796.000900",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/742707051232_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Lady and the Tramp | Official Trailer | Disney+ | Streaming November 12",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=A2ZDDU34gYw",
+                "author_name": "Walt Disney Studios",
+                "author_link": "https:\/\/www.youtube.com\/user\/DisneyMovieTrailers",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/A2ZDDU34gYw\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Lady and the Tramp | Official Trailer | Disney+ | Streaming November 12",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/A2ZDDU34gYw?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=A2ZDDU34gYw",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=A2ZDDU34gYw"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We are wrapping up and I'm gonna move onto the next one but I have no idea which one for now",
+        "ts": "1567094837.001100",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/742708024496_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that’s great! Saw the trailer the other day and it looks really nice! How has it been to work on and what have you specifically been working on? ",
+        "ts": "1567095595.001200",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/742727268288_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh this show is great, from a get go I knew it's gonna be a showreel worthy. I did only lighting on this one, it's my first show in FS so it's been a nice introduction to pipeline and structure. I really enjoy working on photorealistic shows where people can't spot the difference if it's real or not. To me that's the most pleasant part of the show. Of course it's obvious when dogs talk but in cases where they just move it is quite hard to distinguish(for the most part)",
+        "ts": "1567098149.001300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/731343155635_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In general we have a very senior team on this show and it all goes pretty smooth",
+        "ts": "1567098193.001400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/731340223266_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The calmest show I've ever worked on",
+        "ts": "1567098205.001500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/731344550179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh nice! It sounds like a really good one to work on :+1::skin-tone-3:",
+        "ts": "1567103906.001600",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/731477573026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

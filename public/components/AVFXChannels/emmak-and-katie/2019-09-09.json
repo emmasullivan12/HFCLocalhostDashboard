@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its stunning. I love the texture that comes through on the canvas - it would be lovely to see some of that in your animation if possible to make it feel layered.",
+        "ts": "1568018619.004800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/755098623143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

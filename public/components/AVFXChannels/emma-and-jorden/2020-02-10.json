@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great stuff, lemme know what he says! Work is cool, just finishing up on another film, then taking a short break before starting the next one!",
+        "ts": "1581323529.001000",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/946321958199_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome sounds amazing if you ever need a run around let me know pmsl an he said it's cool haha",
+        "ts": "1581362839.001100",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/945093428788_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If ever an opportunity arises, I'll let you know:relaxed:. Not gonna lie have no idea what pmsl means :sweat_smile:",
+        "ts": "1581406112.001200",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/948518208902_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

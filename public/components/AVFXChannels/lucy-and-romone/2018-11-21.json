@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Romone, sorry not to get back to you sooner.",
+        "ts": "1542795031.002500",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484291202400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Those are both really exciting careers.",
+        "ts": "1542795044.002600",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484925551491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Perhaps I can start by telling you a bit about myself and the work I've done, and the company I work for to give you a picture of VFX.",
+        "ts": "1542795085.002700",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486429549622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So my background is this: when I was at school I was quite maths-y and I enjoyed art so I took Maths, Physics and Art A Levels. Unlike you I didn't know what I wanted to do for a job when I left school so I went to Manchester Uni and studied maths (my dad thought it would be good for me to have a 'solid subject' at uni).",
+        "ts": "1542795167.002800",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485029649074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I was at Manchester I found out about VFX by going around one of the VFX companies in London, a company called MPC. I realised I would really like to work doing vfx so applied to do a 1 year post graduate computer animation course at Bournemouth University.",
+        "ts": "1542795223.002900",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485230520261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I finally finished all my studying I got a job in the vfx industry. I have done quite a few roles, moving around a bit, but all computer based. I've had a chance to work on films like Harry Potter and The Order Of The Phoenix and Interstellar (and some less successful ones too!)",
+        "ts": "1542795282.003000",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484928319715_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did these computer animation roles for 9 years and I now work as an 'Artist Manager' which is a career development coach.",
+        "ts": "1542795334.003100",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486432431222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm just going into a meeting now so I'll write a bit more later...",
+        "ts": "1542795433.003200",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486084066967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A little bit of informtion about the company I work for: My company is called DNEG and they work on VFX films (ie superhero movies, Harry Potter - live action with CG in it). We also work on TV show and we also do full CG films (like Shrek)",
+        "ts": "1542800620.003300",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485289325205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We have lots and lots of people who work here and they do a lot of different roles - including animators and directors.",
+        "ts": "1542800655.003400",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484986759203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you mind telling me a bit about you? What subjects you enjoy at school? what you know about directing or animation? (just so I know if there's any useful information I can tell you) and what you think sounds cool about being a director or animator?",
+        "ts": "1542800745.003500",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485290593749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I was your age I had very little idea about what types of jobs I could get when I grew up, or what the jobs would be like so please feel free to ask big or small questions and I'll try and help!",
+        "ts": "1542800827.003600",
+        "username": "Lucy Salter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485091250482_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

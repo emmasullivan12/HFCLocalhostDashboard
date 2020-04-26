@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will thank you Alan. I’ve been running through it and trimming, so far there’s 00:01:30 off so a good chuck so far. It’s very difficult as they’re all very personal clips with the topic. \nI’ve definitely put a lot more thought in to not rendering though. I’d like to render 2\/3 shots to treat as hero shots and use to try and get funding for the last push and distribution after I graduate. The visit is already paying off :wink:",
+        "ts": "1555512531.000300",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-17\/599683899955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Final editing has brought me down to 3 versions of the film. I’m thinking of them as if they’re software versions.\nThe lite version of the film is 00:04:05 (00:03:29 lip sync)\nThe standard version of the film is 00:05:06 (00:04:30 lip sync)\nThe premium version of the film is 00:06:06 (00:05:12 lip sync)",
+        "ts": "1555520017.000400",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-17\/599989600034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

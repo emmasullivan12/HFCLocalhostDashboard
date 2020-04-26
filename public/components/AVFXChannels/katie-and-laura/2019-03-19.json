@@ -1,0 +1,379 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That all sounds amazing! Thanks a lot for the post, I'll read it whenever I go for a break today. I've been playing more with lights and found some new things that will make it clearer. I have to choose between using the Maya lights or the Arnold lights so I have created to sets to make some tests and see what my teachers think. Thing is, my first assignment, which is due this Friday, is individual. I will be showcasing my asset which is the cave by itself, so for now I am trying to focus on getting the lights do that rather than having them set the mood or work for a player. I have managed to get brighter renders:",
+        "ts": "1552995187.004900",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581676735077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH395S24C",
+                "created": 1552995213,
+                "timestamp": 1552995213,
+                "name": "Arnold_area_lights2.jpg",
+                "title": "Arnold area lights2",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 360277,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH395S24C\/arnold_area_lights2.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH395S24C\/download\/arnold_area_lights2.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH395S24C-0b3d9d1abf\/arnold_area_lights2_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1280,
+                "original_h": 720,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH395S24C\/arnold_area_lights2.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH395S24C-f6a1ef82c1",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552995218.005000"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH0TKBF7S",
+                "created": 1552995266,
+                "timestamp": 1552995266,
+                "name": "Arnold_area_lights.jpg",
+                "title": "Arnold area lights",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 290186,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH0TKBF7S\/arnold_area_lights.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH0TKBF7S\/download\/arnold_area_lights.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0TKBF7S-df46205825\/arnold_area_lights_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1280,
+                "original_h": 720,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH0TKBF7S\/arnold_area_lights.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH0TKBF7S-f1ee885ede",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552995271.005300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today I am working to get it a bit brighter and get some camera tests which is supposed to be part of what I hand in. We are supposed to set the assets on a turntable... but mine doesn't really apply to that except for the boulders I added, so I am setting a camera path to go around all of it.",
+        "ts": "1552995451.005600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581315221444_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam, thanks for sending over the new renders - your textures are looking really great, nice work!",
+        "ts": "1552999098.005700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/582478440471_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want to push this further without going back to modeling stage, you could play around with displacement\/normal maps - but I don't want to get too ahead of what your tutors are teaching! :wink:",
+        "ts": "1552999115.005800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/582478738727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess it is difficult to light your cave to show off as a 3D asset (instead of trying to create a mood) because it's an enclosed structure, but I think your idea of creating a camera path is a really good way to solve that. I'm not sure if you've gone into lighting theory much in your studies but it could really help to play around with a 3-Point Lighting set-up for your turntables?",
+        "ts": "1552999159.005900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/582479444823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's a vid that gives a good introduction to this set-up:\n<https:\/\/www.youtube.com\/watch?v=j_Sov3xmgwg>",
+        "ts": "1552999167.006000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581291623635_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Filmmaking 101 - Three Point Lighting Tutorial",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=j_Sov3xmgwg",
+                "author_name": "DiCasaFilm",
+                "author_link": "https:\/\/www.youtube.com\/user\/DiCasaFilm",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/j_Sov3xmgwg\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Filmmaking 101 - Three Point Lighting Tutorial",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/j_Sov3xmgwg?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=j_Sov3xmgwg",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=j_Sov3xmgwg"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's talking about the lighting from a film\/tv perspective but in my experience, game studios &amp; 3D visualisation studios love to see this sort of stuff on people's 3D models",
+        "ts": "1552999245.006200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/582481012183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH38QKG7M",
+                "created": 1552999460,
+                "timestamp": 1552999460,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 152328,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH38QKG7M\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH38QKG7M\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 298,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 397,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 595,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 968,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 794,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH38QKG7M-5d3c517e66\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 847,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1284,
+                "original_h": 1553,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH38QKG7M\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH38QKG7M-c367149647",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552999465.006300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wanted to ask; is there a particular Game studio you would really love to work for? :video_game:",
+        "ts": "1552999512.006600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/582485574519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah your actually on point with the 3 point light set up... we've gone through that in Maya already with another asset as an example. I plan to do that with my boulders, but it wont work with the whole environment, also because its huge hehe.",
+        "ts": "1553000127.006700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581389965748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I think you are not ahead with the displacement\/normal maps... I have actually added normal maps instead of bump maps already. I understand the concept and how to use them, still have to give it a try to create some of my own, but I think I will leave that for a future project because I don't think I have enough time now. Do show any more tutorials\/articles\/reading material about it!",
+        "ts": "1553000350.006800",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581394103508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About games studios I would like to work for: I think I still want to get to know each of them a bit more (I like to go to every games and VFX event I can to do that). For now I have in my mind Ubisoft, Creative Assembly, Rockstar Games (mostly because I am a fan but this somehow seems like a far off dream), Sumo Digital, Boss Alien... these are a few that I have come in contact with at some of the events I've been to",
+        "ts": "1553001549.006900",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581418699204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's more but I can't keep track of all the names :joy:",
+        "ts": "1553001577.007000",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/579044017392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will try to keep a list of them though on my desktop... I do want to be able to have a clear knowledge of what is out there, what style of games each of them make and if I actually see myself working for them. EGX Rezzed is coming up so I will have more info soon for sure",
+        "ts": "1553001694.007100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581787051317_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, games are my focus but I wouldn't say no to the possibility working on VFX for a while... that's on my plan B list",
+        "ts": "1553001745.007200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581453849090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just checked the silhouette environment design article, I will definitely get some practice with that method to use it later! thanks :blush:",
+        "ts": "1553004975.007300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/582971882822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was also wondering if it was possible to take a look at some of the research you are doing to understand real movements in animals\/humans and how the different components of a creature can realistically interact with each other. Sounds so cool! I am loving environment design at the moment but I really want to be able to work on character design at some point mainly because I have a thing for creatures! I am sure there's tons of content out there but I would appreciate not having to go through an internet wormhole before finding the juicy bits. Hope you are enjoying your day!",
+        "ts": "1553005517.007400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581544873570_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

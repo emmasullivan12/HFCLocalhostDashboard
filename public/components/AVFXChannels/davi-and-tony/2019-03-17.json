@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tony. Your CG Samsung unit looks good. What exactly is it suppose to be?  I have some ideas to keep improving it, but  I will also ask my 3D colleague his opinion and get back to you.",
+        "ts": "1552841286.002400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-17\/577104595168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We were asked to create an inanimate 3D model and incorporate it into a live action shot , the perspective is a bit off but I didn’t have the opportunity to re-render for the deadline, on top of that, after rendering out on Nuke, i got the footage into after effects and added cc rain to set the mood and then played a bit with other effects. ( i think i used CC Composite to add to the mood). And the “eye “ project is a limb replacement project where i will be replacing my head with an eye.",
+        "ts": "1552851347.002500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-17\/579558682914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Enrico,\nSorry for a bit of a late message,\nJust to mention I did read everything you posted, But I was so eager to try out some of the exercises you mentioned I wanted to try it out immediately as I had the weekend free. This weekend was difficult because though i was excited by the tasks, but by Sunday I felt so exhausted that I could not even work on an image longer than 20 minutes! I think I may have overwhelmed myself from the excitement and premise of doing all these things too much that by body decided to shut down on me. (Ironic, because you warned about this exact issue in your previous message)",
+        "ts": "1579473376.000100",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/912969697669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank-you for Mike Redmen, his work is very cinematic, most of his images feel like straight from a film still!\nIt is interesting because i remember talking to another illustration student once who said they often saw the ideas in their head that they wanted to draw as movie stills, but then Illustration in general is not restricted to the screen so there is no need to be restricted to the cinematic restrictions e.g. camera angels, video dimensions, perspectives.\nAnd this always gets me very overwhelmed, because I start realising that being an illustrator allows to bend the rules of what is possible when perceived though lense-based\/human-eye perspective.\nThis always bothers me when I start an image because I start having a debate in my own head on what pathway i should take.",
+        "ts": "1579473459.000200",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/900174627138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example; i adore the works of illustrator Beatrice Alemagna, who is a picture book artist for children- But is also very expressionistic in her scenes- they warp and bend in unrealistic ways, but  still tell a clear and charming way to tell the viewer what is happening in a scene. \nBut I also adore the works of visual development artists- who work in different yet similar ways....?",
+        "ts": "1579473518.000300",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/915167279734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I understand that some artists may work transferable between the two, for example- you worked on a picture book, but then also work in a screen based medium. How did you find the transition between mediums- would you say that your picture book project followed some similar processes as to when you are working for a screen-based project? How did the difference in medium affect the way you created and composed the visuals and scenes?",
+        "ts": "1579473539.000400",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/912970698549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also thank you for talking about your schedule a little bit. I definitely experience burnout quite a bit especially now and during periods when there are multiple things going on at life all at once, during those times I struggle immensely at pacing myself and realistically setting myself breaks, recognise\/ or forgive myself for my limitations, or disciplining my time per day to focus on things.\n\nIt would be extremely helpful to work towards finding a schedule that works for me. And I was wondering how it was like for you before you started your full-time placement at a studio?",
+        "ts": "1579473567.000500",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/914820091543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "....also this might seem silly to ask, but what constitutes as a well balanced day compared to a busy day?",
+        "ts": "1579473795.000600",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/902764960593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

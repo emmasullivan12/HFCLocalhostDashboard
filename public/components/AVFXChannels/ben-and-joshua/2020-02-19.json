@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks, hope your well also! I'll have to keep an eye out in Netflix for any new content And sounds interesting, I've only heard of deep compositing briefly but not in full details so that must have been fun. It went well, it's a bit stressful but I'm glad it's done and I'm ready for the second half of the year!",
+        "ts": "1582146385.000300",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/948599140947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

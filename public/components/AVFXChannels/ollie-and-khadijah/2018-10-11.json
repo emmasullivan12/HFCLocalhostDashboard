@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Khadijah! Thanks for sending me a screenshot of your CV ",
+        "ts": "1539313869.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454692651170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is your “Objectives” not to find work as an Assistant Nurse? ",
+        "ts": "1539313898.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454521309380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Under education, I think you should add your current studies ie BTEC in Applied Science (with start date and expected end date)",
+        "ts": "1539313979.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/455749490295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, “Math” should be “Maths”. ",
+        "ts": "1539314002.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454521852548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’d like you to add more information about your fundraising experience. Maybe write a small paragraph. ",
+        "ts": "1539314130.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454522531236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Under “Skills”, I think you should be more specific ie which IT skills you have. Also, change “public dealing skills” to specific skills like “working in teams”, “reliable” etc. List these in bullet point form ",
+        "ts": "1539314229.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454694544770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Overall, we want your CV to be longer than it is now. Ideally it should be one full A4 page. ",
+        "ts": "1539314267.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454601896931_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, you can put “references available upon request” at the bottom of the CV. ",
+        "ts": "1539314357.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454088495281_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am happy to provide a reference if you ever need one :)",
+        "ts": "1539314374.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/453956666816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

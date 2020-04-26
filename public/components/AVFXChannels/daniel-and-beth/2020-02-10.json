@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you have specific skills in mind for that question, in case my response was too waffley or vague?",
+        "ts": "1581367354.001900",
+        "username": "Daniel Seager (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/947545846039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

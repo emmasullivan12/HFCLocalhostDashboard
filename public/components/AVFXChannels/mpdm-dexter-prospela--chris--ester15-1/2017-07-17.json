@@ -1,0 +1,170 @@
+[
+    {
+        "type": "message",
+        "text": "Good morning! Wanted to check in with you. Have you done your first part of your career plan? ",
+        "user": "U5W6M67LZ",
+        "ts": "1500359316.979125",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Let’s try and get that finished today :) ",
+        "user": "U5W6M67LZ",
+        "ts": "1500359327.981664",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I wanted to share some information with you on human rights and criminal law if you haven’t seen it already. Some interesting reading and some useful links for career info",
+        "user": "U5W6M67LZ",
+        "ts": "1500359364.990018",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<http:\/\/graduates.simmons-simmons.com\/en\/english-graduate\/training-contracts\/training-contract-structure-and-support>",
+        "user": "U5W6M67LZ",
+        "ts": "1500359468.014875",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Simmons &amp; Simmons -         Training Contract Structure     ",
+                "title_link": "http:\/\/graduates.simmons-simmons.com\/en\/english-graduate\/training-contracts\/training-contract-structure-and-support",
+                "text": "Training Contract",
+                "fallback": "Simmons &amp; Simmons -         Training Contract Structure     ",
+                "from_url": "http:\/\/graduates.simmons-simmons.com\/en\/english-graduate\/training-contracts\/training-contract-structure-and-support",
+                "service_icon": "http:\/\/graduates.simmons-simmons.com\/favicon_careers.ico",
+                "service_name": "graduates.simmons-simmons.com",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "They have a graduate programme as do many law firms. ",
+        "user": "U5W6M67LZ",
+        "ts": "1500359480.017555",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/www.gov.uk\/guidance\/government-legal-service-gls-legal-trainee-scheme-how-to-apply>",
+        "user": "U5W6M67LZ",
+        "ts": "1500359529.028673",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Government Legal Service (GLS) legal trainee scheme - GOV.UK",
+                "title_link": "https:\/\/www.gov.uk\/guidance\/government-legal-service-gls-legal-trainee-scheme-how-to-apply",
+                "text": "Information for law or non-law graduates who wish to train as solicitors or barristers in the GLS",
+                "fallback": "Government Legal Service (GLS) legal trainee scheme - GOV.UK",
+                "image_url": "https:\/\/assets.publishing.service.gov.uk\/static\/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png",
+                "from_url": "https:\/\/www.gov.uk\/guidance\/government-legal-service-gls-legal-trainee-scheme-how-to-apply",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 15380,
+                "service_icon": "https:\/\/assets.publishing.service.gov.uk\/static\/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png",
+                "service_name": "gov.uk",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "The government also has some trainee positions in law ",
+        "user": "U5W6M67LZ",
+        "ts": "1500359539.031084",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

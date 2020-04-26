@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Andy, thats fine we can tlk when you find time and i will be sending you my personal statement and cv ",
+        "ts": "1540548240.000100",
+        "username": "Manmeet (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-26\/464941392964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But im considering to do higher apprenticeship however, im still writing my personal statement for contingency plans",
+        "ts": "1540548243.000200",
+        "username": "Manmeet (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-26\/466165677943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

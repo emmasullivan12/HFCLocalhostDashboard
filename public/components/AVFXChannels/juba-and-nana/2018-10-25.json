@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool Nana, the render looks nice and I think that if you did some more work on the poses it would look really good. Everything is very static and doesn't feel very natural (feels rigid, default poses) :smiley:",
+        "ts": "1540491735.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-25\/463868039616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

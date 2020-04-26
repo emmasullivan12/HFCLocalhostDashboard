@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Karamjit, any thoughts on your cv post my feedback? ",
+        "ts": "1509356248.000111",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-30\/263226071056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

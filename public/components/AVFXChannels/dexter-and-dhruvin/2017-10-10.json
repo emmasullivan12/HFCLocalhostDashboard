@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! Happy to help",
+        "ts": "1507623952.000319",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254036269557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm presuming you have learnt all front end code, what have you learnt so far? What is it about computer science that really appeals to you?",
+        "ts": "1507623990.000248",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254036567941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I've done lots of different programming languages such as: Visual Basics 2012, Java script, HTML,  and also touched on Python but I dont understand it but I'm Trying to understand the other rest and especially java.",
+        "ts": "1507663547.000086",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254413997045_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok cool, so what apprentice\/role are you hoping to go into after school exactly? Those languages are suitable for a front end web developer, UX designer and also with your Python you could become a data scientist. Put them all together and you would be on your way to being a full stack developer",
+        "ts": "1507665975.000190",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254298599090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's why I'm asking what exactly do you like about it all and what direction do you really like?",
+        "ts": "1507666015.000295",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/255385552343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With exams and all, you probably only have time to focus and learn a few languages well, whilst also showing evidence you are good in them",
+        "ts": "1507666063.000385",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254438916693_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the longer term, of course you have plenty of time to try different things out as you are still young!",
+        "ts": "1507668006.000538",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254457786901_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

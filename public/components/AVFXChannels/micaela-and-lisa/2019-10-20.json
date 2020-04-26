@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Micaela,\n\nThank you, yes, I have started now! It's going well so far. I think I am starting to get the hang of things a bit, just still need to find my way around the new company and its way of doing things.\n\nIt's funny that you say this about Lighting as that is my department now hah! I haven't coordinated that one before, but I think since I need to learn the new animation pipeline (and they split departments a bit differently than we did at ILM) I'm learning both at the same time as I get along. Next to Lighting I also coordinate DMP but I find that a bit easier to understand.\n\nDo you like your current company, and better than the one before?\nI hope you are doing well. And that you are working on a projects you enjoy at the moment!\nThe film I am working on now I'll be on until October 2020 so quite long - is that how long your projects usually take as well?\n\nAll the best,\nLisa",
+        "ts": "1571598463.000200",
+        "username": "Lisa Koelle (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-20\/789400111730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

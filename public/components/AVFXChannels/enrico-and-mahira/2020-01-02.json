@@ -1,0 +1,95 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you Mahira, Happy New Year to you too! :blush: Hope you had a great start! \nIf you want to paint something from the top or the bottom you should put your perspective point quite far outside the framing of your picture. So, for example, if you want to paint a city with skyscrapers from the top to the bottom (where you can see the little cars and streets) you should put the perspective point in the lower part of the canvas outside your frame, while if you want to paint a character that is looking up at some buildings, you have to position your point of view very high, always outside the framing of your image (let’s say in the sky). These views are quite extreme so don’t worry if the point view is very far and makes the photoshop canvas very big.",
+        "ts": "1577968123.010700",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/880938720705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes feel free to send me the images!!",
+        "ts": "1577968213.010800",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/878392041090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I meant the thumbnails *",
+        "ts": "1577968227.010900",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/878392447234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FS91A4KMM",
+                "created": 1577969021,
+                "timestamp": 1577969021,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 31401,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS91A4KMM\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS91A4KMM\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS91A4KMM-281114f53a\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS91A4KMM-281114f53a\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS91A4KMM-281114f53a\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 241,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS91A4KMM-281114f53a\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 321,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS91A4KMM-281114f53a\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 435,
+                "original_h": 650,
+                "thumb_tiny": "AwAwACDSpDS0yQ5GPegB9FNHPcilA980ABpCORS4FNOM+n40AKOG+tOpBg0Y+tAC009adTW7etAC5AoBB6UUuaAP\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FS91A4KMM\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FS91A4KMM-16f9784875",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1577969023.011000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this is a good example. To picture something from the bottom you need a third point view very high. Opposite, to create a bird’s eye view, your third view point must be very low. ",
+        "ts": "1577969225.011300",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/879719731011_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

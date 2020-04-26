@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's okay :slightly_smiling_face: I've had piles of essays to do :sob::face_with_rolling_eyes:",
+        "ts": "1510761424.000649",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272750496035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't have any free days at school so I decided to make use of the days I finish at 1:00 ",
+        "ts": "1510761446.000616",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273906818263_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I emailed and went to the primary closest to me if I could do work experience but..I got not response :upside_down_face::upside_down_face:🤷‍♀️",
+        "ts": "1510761488.000291",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272969262437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Might ask at another primary now ",
+        "ts": "1510761505.000368",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273907635815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

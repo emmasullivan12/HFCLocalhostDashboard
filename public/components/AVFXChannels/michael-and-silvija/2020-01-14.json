@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija! Lemme know when you’re free again this week and we can organize something! ",
+        "ts": "1579026846.000500",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/908037151655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

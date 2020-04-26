@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I was thinking, since everything is remote right now you should think about reaching out to studios outside of Atl. I could maybe get you a few contacts if you would like.",
+        "ts": "1586881535.004200",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1061801803442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I'm going to start reaching out to studios that are not in NY. There can be some advantages to this work from home thing.",
+        "ts": "1586881766.004300",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1055230826662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So just so I would know what to expect, what is remote working actually like then? I’ve been lucky enough to have have worried about it yet and I guess I figured it’d mostly entail downloading the files needed, and uploading them whenever I was done and maybe some zoom  calls. But is there a lot of screen sharing type things that happen more that would be heavier on the connections ?\n\n\nI have! That’s what I was thinking too, I think that’s definitely a good thing to come out of this. The past few days I’ve been trying to follow up with some hiring managers at places I’ve applied, like you suggested. So I’m crossing my fingers hoping to hear some more soon.",
+        "ts": "1586882336.004400",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1055240645958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Seems like most places will give you vpn access and you will remote in to one of their workstations and work like that. You will also constantly be on some sort of chat app like slack or rocket chat or the like. As well as daily video chats with something like google meet or web ex. Right now every studio is a little different but all doing basically the same stuff. Smaller studios may have you download files and then upload but seems like remote via vpn is the way to go.",
+        "ts": "1586882615.004500",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047277718567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also before your start date you will probably have contact with a it person who will probably have you install something like team viewer so they can set up the vpn and give you instructions on logging in. Or in one case they sent out a pdf that said how to set up the vpn.",
+        "ts": "1586886421.004600",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060698530821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

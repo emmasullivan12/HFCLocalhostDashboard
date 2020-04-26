@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So there's these two tutorials get to get started with. If you already know these then we can move on.\n\n<https:\/\/app.pluralsight.com\/player?course=your-first-day-rotoscoping-nuke-1217&amp;author=laura-smith&amp;name=your-first-day-rotoscoping-nuke-1217-m1&amp;clip=0>\n\n<https:\/\/app.pluralsight.com\/player?course=your-first-day-tracking-nuke-1206&amp;author=laura-smith&amp;name=your-first-day-tracking-nuke-1206-m1&amp;clip=0>",
+        "ts": "1586162035.005700",
+        "username": "Mark Millena (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1048196118533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay great, thanks.",
+        "ts": "1586168800.005800",
+        "username": "tidyupmedia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1048359153701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You'll notice that they choose to go with the bezier when they roto. I was taught with the b-spline method. There's no right or wrong, you'll build up your preferences on the go. Whenever you have a question no matter how simple just give me a shout",
+        "ts": "1586207847.005900",
+        "username": "Mark Millena (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1049531650757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will do.  I'm on the case.",
+        "ts": "1586208302.006000",
+        "username": "tidyupmedia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1048634983270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

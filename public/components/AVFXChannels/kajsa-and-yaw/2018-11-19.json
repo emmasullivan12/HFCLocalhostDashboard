@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks allot, I am currently having trouble with my laptop as I don't currently having a computer so doing corrections will take a bit of time. As, I have to get a new laptop.",
+        "ts": "1542619354.002600",
+        "username": "Yaw Afful (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/482780807860_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah okay, I'll take that on board and try fit in some time to learn it then, thanks. \n\nSo the ground in my scene will be mostly cobblestone. The plan was to use normal or displacement maps to give it its design. Would you recommend me sticking to that or do you think I should add that detail to the mesh?",
+        "ts": "1581326521.011000",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944523783568_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Create a hires tileable mesh , texture that and copy it around .\nIf your cameras are locked you know how much hi  res you will have to be .\nAlso check Megascans website and also substance painter store .\nNormally that kind of material your need a minimum of silhouette on the model to convey realism ",
+        "ts": "1581367129.011100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/947887609222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright, I will check it out when I'm back in the studio tomorrow, thank you",
+        "ts": "1581367839.011200",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/934229565987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know , if you prefer to go traditional and use just displacement it’s fine , I will still help you go through it ! I’m just letting you know how I would approach it in your scene ",
+        "ts": "1581372416.011300",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/948037696726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I use displacement maps mainly, but I want to learn new ways of approaching it so I'll do some tests to see which I prefer, thanks",
+        "ts": "1581372758.011400",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/935693016961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

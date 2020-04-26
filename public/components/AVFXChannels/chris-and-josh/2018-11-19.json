@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The deadline to apply is today... <https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/>",
+        "ts": "1542653331.008100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/482717744048_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Animation Assistant TD - paid apprenticeship opportunity",
+                "title_link": "https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/",
+                "text": "We have a paid apprenticeship opportunity for an Animation Assistant TD - but hurry, applications close soon!",
+                "fallback": "Animation Assistant TD - paid apprenticeship opportunity",
+                "image_url": "http:\/\/www.blue-zoo.co.uk\/static\/media\/news\/benextgen.jpg",
+                "from_url": "https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 49261,
+                "service_icon": "https:\/\/www.blue-zoo.co.uk\/static\/img\/favicon.ico",
+                "service_name": "blue-zoo.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Bluezoo is a good company",
+        "ts": "1542653371.008300",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/484506027063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can, it would be worth dropping everything and applying",
+        "ts": "1542653400.008400",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/482718795696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

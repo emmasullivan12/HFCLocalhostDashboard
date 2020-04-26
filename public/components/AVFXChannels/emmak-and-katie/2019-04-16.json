@@ -1,0 +1,81 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I AM SO IMPRESSED!!",
+        "ts": "1555401050.000800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/597835077235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a meeting with my creative director this AM. Let me have a word and see what he thinks - he started as a cell animator.",
+        "ts": "1555401079.000900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/597914998130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/sunandmoonstudios.co.uk\/>",
+        "ts": "1555401118.001000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/609341297392_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Sun &amp; Moon studios",
+                "title": "Sun &amp; Moon - Animation With Character - Bristol UK",
+                "title_link": "http:\/\/sunandmoonstudios.co.uk\/",
+                "text": "A specialist character animation studio, producing exceptional animation with character across all platforms. Crafted in Bristol UK.",
+                "fallback": "Sun &amp; Moon studios: Sun &amp; Moon - Animation With Character - Bristol UK",
+                "from_url": "http:\/\/sunandmoonstudios.co.uk\/",
+                "service_icon": "http:\/\/sunandmoonstudios.co.uk\/apple-touch-icon-57x57.png",
+                "id": 1,
+                "original_url": "http:\/\/sunandmoonstudios.co.uk\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These guys look up your street.",
+        "ts": "1555401126.001200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/609341388896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/aproductions.co.uk\/>",
+        "ts": "1555401314.001300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/612874341591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aw thank , that sounds great :slightly_smiling_face: I know there’s still a lot to change to it, I’ve new work that I could swap some of the older stuff will. Sun and moon looks pretty good, I like the style of their animations ",
+        "ts": "1555402120.001400",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/609271455621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

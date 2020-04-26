@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I took a small break from it as it was not coming together to the level i wanted, i shot a 4k plate on my phone and been practising some clean-up techniques with cornerpin stabilise\/matchmove.",
+        "ts": "1574765449.014900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/836748104546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I plan on shooting my own plate for roto. I got contacted today for a 2day roto\/cleanup gig but .... I don’t think i can pull it off just yet",
+        "ts": "1574765508.015000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/851390844167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

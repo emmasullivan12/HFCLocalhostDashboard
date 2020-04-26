@@ -1,0 +1,218 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are a lot of practical things that you need to learn about. You will live and die by your schedule for example.",
+        "ts": "1549284633.004300",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541556146517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok have you ever had something go wrong that made the schedule go astray or if you are ahead of schedule or behind schedule.? ",
+        "ts": "1549285426.004400",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/542784661142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is always something goes wrong! :smile:",
+        "ts": "1549298193.004500",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/542658241287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's when you have to think on your feet.",
+        "ts": "1549298221.004600",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/543016539590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That will mostly be out of your control, the thing you need to be able to see in advance is if people are asking you to do something that is impossible, comprpmises y",
+        "ts": "1549298286.004700",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/540859880496_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "compromises your goals",
+        "ts": "1549298299.004800",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/540993849889_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "or more importantly than all of that is just plain dangerous",
+        "ts": "1549298311.004900",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541489568179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not allowing realistic time to achieve things can result in all of those situations coming to bear.",
+        "ts": "1549298344.005000",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/543019034982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All problems become hugely exaggerated when you're struggling for time and that's when people end up getting hurt.",
+        "ts": "1549298404.005100",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/543020258838_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A bad schedule will wreck everything.",
+        "ts": "1549298420.005200",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/543020593766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's just occurred to me that I'm not sure where you're based.",
+        "ts": "1549307934.005300",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541627931492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you are in the UK you may be interested in this: <https:\/\/www.eventbrite.co.uk\/e\/mend-the-gap-tickets-51410680730>",
+        "ts": "1549307953.005400",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/542852067399_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "Mend The Gap",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/mend-the-gap-tickets-51410680730",
+                "text": "Film London and Escape Studios, in association with Universities UK, invite you to attend Mend The Gap: An evening of discussion and debate around the current animation training and employment landscape.  UK universities produce 600 animation graduates every year, yet there is a perceived skills gap within the animation industry and a shortage of home-grown talent. Join us as we bring together a panel of experts from industy and academia to discuss the current landscape and address such questions as:- What changes need to be made? Industry expectations or academic qualifications?  - How far apart are animation training and industry needs? - Can the gap be bridged and if so who needs to listen to who? 6.30pm Panel Discussion and Q&amp;A Chaired by Adrian Wootton OBE, CEO Film London &amp; The British Film CommissionSpeakers: Alex Williams - Head of Animation, Escape Studios Edward McAffrey - Senior Lecturer, Middlesex UniversityGareth Ellis-Unwin - Head of Film, ScreenSkillsGreg Wade - Policy Manager, Universities UKKate O’Connor - Executive Chair, Animation UK Natalie Busuttil - Studio Manager, Nexus StudiosShelly Paige –  Animation Talent Consultant Followed by a drinks reception",
+                "fallback": "Eventbrite: Mend The Gap",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F51321582%2F64546052597%2F1%2Foriginal.jpg?w=1000&auto=compress&rect=0%2C68%2C2160%2C1080&s=f8d4af1bb5e797330f320c0decb425bb",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "190 High Holborn, London, WC1V 7BH, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Mon 4 Feb 2019 at 18:00",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/mend-the-gap-tickets-51410680730",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 47599,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/1d8fef\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/mend-the-gap-tickets-51410680730"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies, I just realised that it happened this afternoon.",
+        "ts": "1549308010.005600",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541788293138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am a member of Access VFX which champions education and diversity in the vfx industry so I get notice about events.",
+        "ts": "1549308081.005700",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541993658485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If I come across something I think might be interesting I'll pass it on.",
+        "ts": "1549308103.005800",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/543212781046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies for getting the date wrong on this one, there will be plenty more.",
+        "ts": "1549308138.005900",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/543213347254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "e.g. There is the VFX Festival on Wednesday and Thursday this week in London. Animation day is Weds and photo-real day is Thurs",
+        "ts": "1549308215.006000",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-04\/541056899232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

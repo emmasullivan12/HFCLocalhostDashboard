@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Morning!\n\nHow are you?:) \n\nI have finished my assignment, just got an exam next week. \n\nWould you be able to have a call with me next weekend by any chance? \n\nOnce I will came back after work, I will send you my assignment works, if that is okay. \n\nThank you!  :panda_face:",
+        "ts": "1557737038.001400",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-13\/635735067142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nikki\n\nThank you for the information you have given me. I will look into the link that you've sent me. I hope this link would help me on my project because I've been trying at different softwares but most of them doesn't work or seem very useful. Also, I am looking to do an apprenticeship at a animation company. If possible, could you please send me the short film you were involved in. \n\nLook forward to hearing from you.\n\nRegards,\nNathanael Christopher",
+        "ts": "1572808581.002100",
+        "username": "Nathanael Christopher (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-03\/821600629191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

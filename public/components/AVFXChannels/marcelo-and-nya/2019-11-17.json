@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Nya! My old work you mean from my first jobs, or before that? I don't know what Dexter showed you, did you get to see any of my recent work?",
+        "ts": "1574063967.009700",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/840527594470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,749 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585065808.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585065809.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e7a2f505809230004da25ab|this link> with other teams to invite them in it_",
+        "ts": "1585065809.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Villiers E-Mentoring* joined the shared channel_",
+        "ts": "1585065972.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1585065975.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@samgrivens has joined the channel_",
+        "ts": "1585066062.000800",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024515936774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@asheri2107 has joined the channel_",
+        "ts": "1585066076.000900",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024516662518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ardhana, please meet Sam your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1585066137.001000",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022890076304_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1585066156.001100",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024658236007_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1585066161.001200",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022914826117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1585066228.001300",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"sam-and-ardhana\"",
+        "old_name": "z-shared-23",
+        "name": "sam-and-ardhana"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there, I am Ardhana, I'm in Year 12 and aspiring to be a commercial pilot",
+        "ts": "1585066249.001400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022919722341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can't wait to learn more about the industry :grin:",
+        "ts": "1585066268.001500",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022447709540_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey there Ardhana!\n\nHow are you doing?\n\n:slightly_smiling_face:\n\nPlease just ask away any questions you might have and I'll do my best to answer them as soon as I can. I hope I can help!\n\nMaybe we could start by you telling me a bit about yourself and what's made you want to become a commercial pilot? :smile:",
+        "ts": "1585066351.001600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010120899810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, I enjoy doing music (singing) and plane spotting at the airport. I also like reading and writing",
+        "ts": "1585066430.001700",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011443849779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to be a pilot because it was a dream that my dad had but wasn't able to fulfill because his father passed away at the age of 18 which meant that my dad had to leave school and start working",
+        "ts": "1585066478.001800",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024676386727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At first, my mum had told me that she wants me to be a pilot and I was very adamant against it but as time went on and I began exposing myself more and more to the industry, it became my dream as opposed to my dad's",
+        "ts": "1585066538.001900",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024543234294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What about you? Dexter said you're an engineer but wanted to be a pilot; what inspired you to want to be a pilot?",
+        "ts": "1585066571.002000",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024545047046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for the intro, really nice to hear :slightly_smiling_face:",
+        "ts": "1585070311.002100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013076255633_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's awesome that you've found something you really want to do at your age",
+        "ts": "1585070339.002200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023129605920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Most people never really figure this out!",
+        "ts": "1585070349.002300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024759577654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry to hear about your grandpa passing away",
+        "ts": "1585070378.002400",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023154826149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like plane spotting too. It's always fascinated me how airplanes that can be so large and heavy manage to float through the sky...as cheesy as that might sound :sweat_smile:",
+        "ts": "1585070435.002500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023157865333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I decided learning how things work is what interests me",
+        "ts": "1585070455.002600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011672720115_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So when you say you exposed yourself to the industry, what kinds of things have you been doing to learn about it so far?",
+        "ts": "1585070481.002700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024903538887_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you been to any career days etc to learn more about it?",
+        "ts": "1585070569.002800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011678884595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, I watch a lot of air crash investigation, and I'm doing an EPQ that I'm gonna base on threats to air safety",
+        "ts": "1585070578.002900",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022692364372_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I went to a aviation industry conference where we were lectured by some pilots and were able to look at different academies and universities that offer the course",
+        "ts": "1585070624.003000",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022694776036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Because I want a degree as well as a CPL",
+        "ts": "1585070644.003100",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023169213781_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just in case things don't go to plan in the future",
+        "ts": "1585070659.003200",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024913078487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also think it helps a lot that both my parents have jobs that are related to the industry as well - my dad is really knowledgeable about his planes so it opens up really interesting conversations for the future",
+        "ts": "1585072147.003300",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013175415969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Honestly, right now, the biggest thing I'm worried about is how the coronavirus is going to impact the future of the aviation industry - any thoughts?",
+        "ts": "1585072619.003400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023274895141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "RE the EPQ - Oh that's awesome!",
+        "ts": "1585072715.003500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013205177441_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd be interested to see what you come up with :smile:",
+        "ts": "1585072734.003600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023257937008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know how that goes",
+        "ts": "1585072738.003700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023280292917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I hope you don't mind if I ask you for any information that I might need, I think it would really help me a lot :grin:",
+        "ts": "1585072765.003800",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013208186241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great that you had the chance to learn directly from some pilots",
+        "ts": "1585072769.003900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025026226903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ha of course! I'll do my best to help",
+        "ts": "1585072780.004000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013209076641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank youuu",
+        "ts": "1585072791.004100",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024890735190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you don't mind my asking, Dexter didn't really specify, but what field of engineering do you specify in?",
+        "ts": "1585072835.004200",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023264718976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So what do your parents do? That is really lucky. Have you had a chance to do any work experience \/ volunteering in the area?",
+        "ts": "1585072862.004300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023289865445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unfortunately not, and with the way things are going, I highly doubt it'll be possible in the coming months :(",
+        "ts": "1585072910.004400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024898665350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think the virus is unfortunately going to be around for some time, maybe the rest of 2020. It will take a little longer too before people start wanting to travel and hiring goes back up",
+        "ts": "1585072920.004500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011807089603_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that's true",
+        "ts": "1585072924.004600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023293631141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My dad works as a Top Up Data allocator for DHL, and my mum works as a Purchasing Assistant for GateGourmet",
+        "ts": "1585072957.004700",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013220642465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I'm hoping that by the time I leave uni\/get a work placement, it's back to normal",
+        "ts": "1585072997.004800",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013222991553_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So my background is in electrical engineering",
+        "ts": "1585073345.004900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023315990853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I really expect it to be at least close to normal by then!",
+        "ts": "1585073372.005000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024923092790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A background in electrical engineering? Wow, that's really cool - are you an all-rounded electrical engineer or do you specify in a certain area?",
+        "ts": "1585073432.005100",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024926090310_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's your plan over the course of the next few weeks at home and how are you finding it with exams being cancelled etc?",
+        "ts": "1585073885.005200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023342520229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Over the next few weeks, I'm going to do online courses that will inform me more about aviation, and going to start looking further into my EPQ. I also want to make sure I'm up to standard with all my current learning of A-Level content so far. Oh, I'm afraid I forgot to tell you, I'm doing A Level Maths, Geography and English!",
+        "ts": "1585073989.005300",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022874305988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The exam cancellation doesn't directly affect me but the fact is that I'm missing out on 4 months of school, which isn't good at all. Fortunately, we're ahead in my courses but I want to make sure that everything I do know is up to best standard",
+        "ts": "1585074064.005400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023328122272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds like a great plan. Never stop learning :slightly_smiling_face:",
+        "ts": "1585078030.005500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025169480054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What online courses do you have in mind?",
+        "ts": "1585078039.005600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023091578276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not really sure as of yet, I'm currently taking part in an inclusive leadership course but I want to look for more aviation related ones too",
+        "ts": "1585078088.005700",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025172426870_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you watch air crash investigation?",
+        "ts": "1585078117.005800",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1012082569123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't but it sounds like fun! And also a bit scary to think about :sweat_smile:. I'm not particularly afraid of flying, but I'm well aware of the fact that machines and human error are very real",
+        "ts": "1585078169.005900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025313652183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sure watching something like that can teach you a lot about the different \"cogs\" in the aviation industry so a good one to keep in tune with",
+        "ts": "1585078203.006000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025315532983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it's so interesting, I really enjoy watching it",
+        "ts": "1585078311.006100",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025321870567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you ever witnessed a major error caused by a machine\/human error? If so, what did you do about it?",
+        "ts": "1585078360.006200",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010777808834_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was just doing a quick bit of research for you and came across these (not sure if you've seen them already):\n\n<https:\/\/careers.ba.com\/future-pilots> - if you scroll down to criteria it's quite well laid out exactly what they look for in grades etc. They also have some examples of pilot stories\/profiles. It's quite clear that your maths and english a-levels are the right ones to be doing!\n\n<https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/job-sectors\/transport-and-logistics\/how-to-become-a-pilot-in-the-uk> - what are your thoughts on the costs of becoming a pilot?",
+        "ts": "1585078466.006300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1013513208625_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "British Airways - Future Pilots",
+                "title_link": "https:\/\/careers.ba.com\/future-pilots",
+                "text": "The British Airways Cadet Programme is the launchpad for an exciting career in the skies.",
+                "fallback": "British Airways - Future Pilots",
+                "from_url": "https:\/\/careers.ba.com\/future-pilots",
+                "service_icon": "http:\/\/tbcdn.talentbrew.com\/company\/22348\/img\/apple-touch-icon.png",
+                "service_name": "careers.ba.com",
+                "id": 1,
+                "original_url": "https:\/\/careers.ba.com\/future-pilots"
+            },
+            {
+                "title": "How to become a pilot in the UK | Prospects.ac.uk",
+                "title_link": "https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/job-sectors\/transport-and-logistics\/how-to-become-a-pilot-in-the-uk",
+                "text": "If you're ready for the sizeable investment that's required for training to be a commercial airline pilot, discover how to go about landing your first role",
+                "fallback": "How to become a pilot in the UK | Prospects.ac.uk",
+                "from_url": "https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/job-sectors\/transport-and-logistics\/how-to-become-a-pilot-in-the-uk",
+                "service_icon": "https:\/\/www.prospects.ac.uk\/resources\/dist\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "Prospects",
+                "id": 2,
+                "original_url": "https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/job-sectors\/transport-and-logistics\/how-to-become-a-pilot-in-the-uk"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585078468.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nothing major comes to mind in terms of personal experience, but you always hear about machine errors on planes or other transportation seeming to cause crashes or human error (e.g. just forgetting to do something!) can cause catastrophe.",
+        "ts": "1585078570.006500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1012106878307_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How about you?",
+        "ts": "1585078603.006600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010790113154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh my gosh, thank you for putting in the effort :sob: I'll definitely look into these - I've heard of the BA Cadet programme and am interested and I was looking towards university courses",
+        "ts": "1585080444.006700",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023666853616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i.e. Kingston, Southampton (L3 Academy), and New Bucks are definitely going to be my top 3",
+        "ts": "1585080482.006800",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010887440834_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tbh, I think human complacency is definitely something that will reoccur within technological developments",
+        "ts": "1585080554.006900",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023672291520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like, with the 9\/11 attacks, they could have been avoided with stricter security regulations",
+        "ts": "1585080602.007000",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1025439361751_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

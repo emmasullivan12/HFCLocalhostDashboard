@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, thanks Jon! Have a good holiday! :)",
+        "ts": "1576059500.004000",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/868811502741_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

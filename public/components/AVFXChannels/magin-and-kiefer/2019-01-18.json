@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "NIce, I've always wanted to do 2D, it's so hard",
+        "ts": "1547803899.001000",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/526351297552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha yeah it can be, there are definitely some difficult elements to it but the same goes for 3D and stop motion I have noticed.  ",
+        "ts": "1547824248.001100",
+        "username": "Kiefer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-18\/528403984343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

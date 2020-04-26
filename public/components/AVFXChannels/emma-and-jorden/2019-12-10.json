@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Finally got a computer xD",
+        "ts": "1575987444.003000",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/866714207108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Janies. The good thing about our field is that it's very easy to get experience at home. For example, following and working on open source projects is very much appreciated.",
+        "ts": "1539364308.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-12\/455207646418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you thinking about a programming career or technology in general?",
+        "ts": "1539364331.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-12\/454469444224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure what u mean by in general..?",
+        "ts": "1539380687.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-12\/455237173620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mean I quite enjoy programming and have been using <http:\/\/vb.net|vb.net> for 2 years now... but I'm not sure whether it is something I should try as a carrer",
+        "ts": "1539380858.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-12\/456466681223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I currently know to use <http:\/\/vb.net|vb.net>, fairly knowledge in html and also am trying to learn python. What do you use??",
+        "ts": "1539381097.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-12\/455412521922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The pieces on the sides of the chair? ",
+        "ts": "1584392427.005600",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004104308768_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah sure I’ve updated it slightly so I’ll send you and updated file tomorrow morning  if that’s ok :)",
+        "ts": "1584392586.005700",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/991324120418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

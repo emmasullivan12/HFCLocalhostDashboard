@@ -1,0 +1,100 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve had some tough meetings this week. On very different topics. One is an engineering discussion that I’m not quite managing to convince people that the problem I’ve seen with our code is a big enough problem to fix (it will be expensive to fix), which I’m finding very challenging. The other set of meetings are about my career and what I want to do next. I’m trying to decide between taking a job that needs lots of time talking to customers, and a job that will mean managing an important team.",
+        "ts": "1543421187.004500",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/490269965026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nigel is a great speaker, and I hope that you pick the correct route in you career, both sound interesting and very important in their own ways",
+        "ts": "1543423441.004600",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/490147550436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FEEJK7H3L",
+                "created": 1543441932,
+                "timestamp": 1543441932,
+                "name": "VID_20181127_133140.mp4",
+                "title": "VID 20181127 133140",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 82783838,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEEJK7H3L\/vid_20181127_133140.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEEJK7H3L\/download\/vid_20181127_133140.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FEEJK7H3L\/vid_20181127_133140.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FEEJK7H3L-54a046ace9",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1543441941.004700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Both will give me a really good opportunity to push Arm to do some awesome things. Did you see Amazon announced Arm instanced are now available in Amazon Web Services - it is really cool to have been part of that happening <https:\/\/aws.amazon.com\/blogs\/aws\/new-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors\/>",
+        "ts": "1543447998.005000",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/490542735028_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Amazon Web Services",
+                "title": "New – EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors | Amazon Web Services",
+                "title_link": "https:\/\/aws.amazon.com\/blogs\/aws\/new-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors\/",
+                "text": "Earlier this year I told you about the AWS Nitro System and promised you that it would allow us to “deliver new instance types more quickly than ever in the months to come.” Since I made that promise we have launched memory-intensive R5 and R5d instances, high frequency z1d instances, burstable T3 instances, high memory […]",
+                "fallback": "Amazon Web Services: New – EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors | Amazon Web Services",
+                "image_url": "https:\/\/d2908q01vomqb2.cloudfront.net\/da4b9237bacccdf19c0760cab7aec4a8359010b0\/2018\/11\/14\/arm_running_1.png",
+                "image_width": 396,
+                "image_height": 250,
+                "ts": 1543292005,
+                "from_url": "https:\/\/aws.amazon.com\/blogs\/aws\/new-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors\/",
+                "image_bytes": 30340,
+                "service_icon": "http:\/\/a0.awsstatic.com\/main\/images\/site\/touch-icon-iphone-114-smile.png",
+                "id": 1,
+                "original_url": "https:\/\/aws.amazon.com\/blogs\/aws\/new-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the videos! I had a friend who went to work at deep mind, and a recruiter once tried to hire me to work there. They are a really interesting company.",
+        "ts": "1543448424.005200",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/490111883441_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

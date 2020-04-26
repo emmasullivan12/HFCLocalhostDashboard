@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Merry Xmas !!! ",
+        "ts": "1577270778.000100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-25\/887753420567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Merry Christmas! Hope you have a lovely day with your family!!",
+        "ts": "1577275443.000200",
+        "username": "Chloe O’Connor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-25\/887787172727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

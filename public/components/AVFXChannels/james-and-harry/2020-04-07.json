@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi James. I have made some changes to my Offcut and Jumanji shot if you wouldn't mind taking a look.  Offcut - <https:\/\/vimeo.com\/405013381>  Jumanji - <https:\/\/vimeo.com\/405012726>   Password: HH",
+        "ts": "1586266401.000600",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1061682683040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Harry. The offcut shot's DOF still doesn't quite work for me. It doesn't feel very natural. Feels like we should swing to character as he appears. If possible with a bit of in\/out to mimic an operator finding focus. If done subtly enough that can really help a shot. The particles are moving too slowly. Zoom into some dust and film it for reference, you'll see that through a long lens like that it will appear to move quite fast. Look at the shadow too, that shadow frame left is great ref. The top would obviously be a bit softer, but not near his legs. It doesn't match at the moment.",
+        "ts": "1586269051.000700",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1050723946869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your Jumanji shot is looking great. Good job. I'd say the grade overall just needs some work, but it's well balanced. Try giving it a bit more contrast and play with the grade of the guy. He looks a bit dull. Jumanji is a great ref so refer to some of those shots. When I get to this stage of a comp, when I'm happy with my key and comp overall I would render out my comp with a matte and then just play with the grade off pipe. This way you can quickly play with some grade looks without being in a heavy nuke script.",
+        "ts": "1586269363.000800",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045625689399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

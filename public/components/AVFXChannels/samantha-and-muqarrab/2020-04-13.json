@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Muqarrab - my apologies for the delay in getting back to you. Things have been crazy (as you can probably tell from the media :eyes:)\n\nIt definitely seems like you have smashed the work experience! I didn't have any relevant work experience until I went to university so you've got a great headstart and you've already demonstrated that you're proactive (by walking in the care home and asking straight up!)\n\nSo you said you'll likely be doing a personal statement in the coming weeks\/months. Do you know what degree\/what uni you are interested in? Also, what grades are you expecting? That way I can advise you better!",
+        "ts": "1586783893.004900",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1046895280247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would be happy to give you feedback on potential choices you have (if you have any yet) and which is likely the best for you!",
+        "ts": "1586783919.005000",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1053993914566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

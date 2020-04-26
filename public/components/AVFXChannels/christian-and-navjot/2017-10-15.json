@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning, how are you?",
+        "ts": "1508136640.000198",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256642913523_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How was your Sunday?",
+        "ts": "1508136652.000194",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256718540818_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

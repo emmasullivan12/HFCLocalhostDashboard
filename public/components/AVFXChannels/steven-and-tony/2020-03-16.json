@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope you are not stuck in this.  <https:\/\/m.9gag.com\/gag\/an5wq1V|https:\/\/m.9gag.com\/gag\/an5wq1V>",
+        "ts": "1584350412.015600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004446658950_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "9GAG",
+                "title": "Corona screening at U.S. Airport",
+                "title_link": "https:\/\/m.9gag.com\/gag\/an5wq1V",
+                "text": "Watch the video and join the fun convo with 9GAG community",
+                "fallback": "9GAG: Corona screening at U.S. Airport",
+                "image_url": "https:\/\/images-cdn.9gag.com\/photo\/an5wq1V_700b.jpg",
+                "from_url": "https:\/\/m.9gag.com\/gag\/an5wq1V",
+                "image_width": 141,
+                "image_height": 250,
+                "image_bytes": 66845,
+                "service_icon": "https:\/\/assets-9gag-fun.9cache.com\/s\/fab0aa49\/3f3166b18fb1d789c5f7546e9e21cf9bbff7053a\/static\/dist\/mobile8\/img\/apple-touch-icon-180.png",
+                "id": 1,
+                "original_url": "https:\/\/m.9gag.com\/gag\/an5wq1V"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584350412.000000"
+        }
+    }
+]

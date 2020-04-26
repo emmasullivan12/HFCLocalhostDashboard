@@ -1,0 +1,212 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why don't you try calling Cardiff uni? <https:\/\/www.cardiff.ac.uk\/study\/undergraduate\/courses\/2018\/dental-therapy-and-hygiene-bsc> They don't mention BTEC on their website, but I get the feeling they might accept it",
+        "ts": "1508147321.000306",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256135093232_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Study",
+                "title": "Dental Therapy and Hygiene (BSc)",
+                "title_link": "https:\/\/www.cardiff.ac.uk\/study\/undergraduate\/courses\/2018\/dental-therapy-and-hygiene-bsc",
+                "text": "Our Dental Therapy and Dental Hygiene course will enable you to qualify to practise as a hygienist or a therapist as it is recognised by the General Dental Council.",
+                "fallback": "Study: Dental Therapy and Hygiene (BSc)",
+                "from_url": "https:\/\/www.cardiff.ac.uk\/study\/undergraduate\/courses\/2018\/dental-therapy-and-hygiene-bsc",
+                "service_icon": "http:\/\/static.cf.ac.uk\/cfui\/1.9.6.beta.6\/ico\/favicon.ico",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Same with Liverpool University: <https:\/\/www.liverpool.ac.uk\/study\/undergraduate\/courses\/dental-hygiene-and-dental-therapy-bsc-hons\/entry-requirements\/>",
+        "ts": "1508147358.000009",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256840352260_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Entry requirements - University of Liverpool",
+                "title_link": "https:\/\/www.liverpool.ac.uk\/study\/undergraduate\/courses\/dental-hygiene-and-dental-therapy-bsc-hons\/entry-requirements\/",
+                "text": "Entry requirements",
+                "fallback": "Entry requirements - University of Liverpool",
+                "from_url": "https:\/\/www.liverpool.ac.uk\/study\/undergraduate\/courses\/dental-hygiene-and-dental-therapy-bsc-hons\/entry-requirements\/",
+                "service_icon": "http:\/\/www.liverpool.ac.uk\/images\/apple-touch-icon.png",
+                "service_name": "liverpool.ac.uk",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's usually a good sign if they don't mention BTEC ... Usually, if they don't accept it then they would mention it (you may have seen lots of unis say \" we don't accept general studies or critical thinking a-levels\"): <https:\/\/www.liverpool.ac.uk\/study\/undergraduate\/courses\/dental-hygiene-and-dental-therapy-bsc-hons\/entry-requirements\/>",
+        "ts": "1508147392.000257",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257872661863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which BTEC are you studying exactly? Portsmouth Uni have detail about different types of BTEC that they accept: <https:\/\/www.registryhub.port.ac.uk\/entry_requirements\/?course_code=C1810&amp;year=2018>",
+        "ts": "1508147474.000308",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257672317334_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Plymouth accept BTEC for sure: <https:\/\/www.plymouth.ac.uk\/courses\/undergraduate\/bsc-dental-therapy-hygiene>",
+        "ts": "1508147576.000058",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256841787588_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "University of Plymouth",
+                "title": "BSc (Hons) Dental Therapy and Hygiene",
+                "title_link": "https:\/\/www.plymouth.ac.uk\/courses\/undergraduate\/bsc-dental-therapy-hygiene",
+                "text": "This exciting BSc (Hons) Dental Therapy and Hygiene programme takes place in a supportive and research rich environment. You’ll mix with both dentistry and dental nursing students and learn within...",
+                "fallback": "University of Plymouth: BSc (Hons) Dental Therapy and Hygiene",
+                "thumb_url": "https:\/\/d39ner1f41xyl1.cloudfront.net\/uploads\/production\/media_asset\/file\/1\/1123\/medium_1323227__1__1280x720.jpg",
+                "from_url": "https:\/\/www.plymouth.ac.uk\/courses\/undergraduate\/bsc-dental-therapy-hygiene",
+                "thumb_width": 960,
+                "thumb_height": 540,
+                "service_icon": "https:\/\/d39ner1f41xyl1.cloudfront.net\/assets\/favicons\/180-f1a5f4d5587ece6b4eff04e4c472aff1.png",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's some info from Leeds: <http:\/\/www.leeds.ac.uk\/info\/128005\/applying\/31\/accepted_qualifications> &lt;&lt;&lt;looks like they accept the full extended BTEC diploma. Is that what you have?",
+        "ts": "1508147663.000054",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256788509794_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Accepted qualifications",
+                "title_link": "http:\/\/www.leeds.ac.uk\/info\/128005\/applying\/31\/accepted_qualifications",
+                "text": "To do a degree at Leeds you will need to satisfy the University's minimum entry requirements and the specific requirements for your course.",
+                "fallback": "Accepted qualifications",
+                "from_url": "http:\/\/www.leeds.ac.uk\/info\/128005\/applying\/31\/accepted_qualifications",
+                "service_icon": "http:\/\/www.leeds.ac.uk\/favicon.ico",
+                "service_name": "leeds.ac.uk",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Bristol accept BTEC Extended Diploma too!: <http:\/\/www.bristol.ac.uk\/study\/undergraduate\/entry-requirements-qualifications\/uk-qualifications\/#btec>",
+        "ts": "1508147721.000089",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256788908642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe Dundee too but you'd need to call them to check: <https:\/\/www.dundee.ac.uk\/study\/ug\/oral-health-sciences\/#info-entry-requirements>",
+        "ts": "1508147754.000201",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257674230678_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "University of Dundee",
+                "title": "Oral Health Sciences BSc (Undergraduate) : Study",
+                "title_link": "https:\/\/www.dundee.ac.uk\/study\/ug\/oral-health-sciences\/#info-entry-requirements",
+                "text": "Completion of this three-year course will enable you to work as a dental therapist, or a dental hygienist. Our course is approved by the General Dental Council.",
+                "fallback": "University of Dundee: Oral Health Sciences BSc (Undergraduate) : Study",
+                "image_url": "https:\/\/www.dundee.ac.uk\/media\/dundeewebsite\/themes\/newhope\/img\/layout\/opengraph.png",
+                "image_width": 500,
+                "image_height": 250,
+                "from_url": "https:\/\/www.dundee.ac.uk\/study\/ug\/oral-health-sciences\/#info-entry-requirements",
+                "image_bytes": 552961,
+                "service_icon": "http:\/\/cdn.dundee.ac.uk\/media\/dundeewebsite\/src\/img\/layout\/apple-touch-icon.png",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*Sorry to throw lots of links at you!*\nBut hopefully gives you confidence that a fair few universities do accept your BTEC for their Dental Hygiene BSc",
+        "ts": "1508147812.000033",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257674620310_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes i'm studying the BTEC Extended Diploma",
+        "ts": "1508188434.000361",
+        "username": "rsadir-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257235540980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and thanks a lot Emma",
+        "ts": "1508188441.000453",
+        "username": "rsadir-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256530698464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this really helped",
+        "ts": "1508188447.000186",
+        "username": "rsadir-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257106312771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":smiley: ",
+        "ts": "1508188798.000065",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257184746210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

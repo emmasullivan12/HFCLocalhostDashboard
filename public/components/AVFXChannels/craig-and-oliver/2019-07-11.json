@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Craig, I don't know where to start. This is a creature reel with some animation I did. I made all the rigs except for the tigers. It's not strong enough to get a job though. <https:\/\/vimeo.com\/336363284>",
+        "ts": "1562864404.002100",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-11\/694010987094_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Creature Reel 2018",
+                "title_link": "https:\/\/vimeo.com\/336363284",
+                "author_name": "Oliver Canovas",
+                "author_link": "https:\/\/vimeo.com\/user96979885",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/783184921_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "My creature reel with some of my own models\/rigs. The only model\/Rig I didn't create is the Tiger by CG spectrum.",
+                "fallback": "Vimeo Video: Creature Reel 2018",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/336363284?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Creature Reel 2018\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/336363284",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/336363284"
+            }
+        ]
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello there Dean, it's the weekend so I won't be paying much attention to the internet, but feel free to leave any queries here and I'll answer when I get some downtime at work next week. :)",
+        "ts": "1552723867.001600",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579337070213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nico, Yh that’s fine thanks",
+        "ts": "1552740842.001700",
+        "username": "Dean bryan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580146736663_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's been two weeks and they didn't get back to me. I don't think I got the job.",
+        "ts": "1586986182.001600",
+        "username": "Michael Leslie Rubin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1089173068720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

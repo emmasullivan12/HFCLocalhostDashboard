@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Steven. I hope all is well! Thanks for your feedback on the reel, that is very much appreciated. I’m such a terrible person, I’m so overwhelmed with work since I came back form Christmas that I’m never had the time to sit down a write you. We started this horror film project that I’m supervising now that has vfx in every other shot and since we started the post production is getting even more intense. I read quite a few good new about bz recently, best place to work award and the new 2d animation department looks cool! I’m once back with a question for you, I’m starting to actively look for internships for this summer and most application processes are opening soon, have you got any suggestions? Is there any intern program a bz that you know of? I could not find anything in the website",
+        "ts": "1550343226.000100",
+        "username": "Nicola (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-16\/552999705396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

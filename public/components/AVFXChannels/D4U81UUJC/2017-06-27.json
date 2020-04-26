@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "text": "Your Slack export has completed! You can download the file from <https:\/\/prospela.slack.com\/services\/export\/download\/204045009588\/662150cc|your export page>.",
+        "user": "USLACKBOT",
+        "ts": "1498546860.894976",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Student Matching.xlsx* under review.",
+        "ts": "1498559653.714493",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Student Matching.xlsx* meets our content policy.",
+        "ts": "1498559654.714699",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Trackers vLatest.xlsx* under review.",
+        "ts": "1498559657.715399",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Trackers vLatest.xlsx* meets our content policy.",
+        "ts": "1498559658.715649",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf* under review.",
+        "ts": "1498588238.384690",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf* meets our content policy.",
+        "ts": "1498588239.385141",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Ben.pdf* under review.",
+        "ts": "1498589570.888028",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Ben.pdf* meets our content policy.",
+        "ts": "1498589571.888471",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf* under review.",
+        "ts": "1498590041.068020",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf* meets our content policy.",
+        "ts": "1498590043.068942",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Student Matching.xlsx* under review.",
+        "ts": "1498597121.542384",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Trackers vLatest.xlsx* under review.",
+        "ts": "1498597123.542864",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Student Matching.xlsx* meets our content policy.",
+        "ts": "1498597124.543309",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Mentor Trackers vLatest.xlsx* meets our content policy.",
+        "ts": "1498597124.543382",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    }
+]

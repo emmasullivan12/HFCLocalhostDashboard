@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caryn, no internet at home on my side. Hope you are doing well,  I'm trying to start reviewing your work on my free time at Dneg.",
+        "ts": "1567514936.000500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746910678240_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, I'm doing well thank you, sorry to hear your still without internet, I'm moving soon myself and my biggest thing is getting the internet up as soon as\nThank you for taking the time to review my work, I hope it doesn't get in the way of whatever your working on at dneg",
+        "ts": "1567523187.000600",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/735668251491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, I think at the end of each day I will be able to check your work.",
+        "ts": "1567532772.000700",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/749532299318_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If we have to take something foward, like your bedroom environment , do you think its something you would really like, or we should start on something different?",
+        "ts": "1567532822.000800",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746884638548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On the drive it show the right way of working, we just need to work on getting better, and build a strong env.\nTo do it, we need to stay on a theme that you really love to work on, if Last of us is a good reference for you its a good starting point",
+        "ts": "1567532975.000900",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/747359338629_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

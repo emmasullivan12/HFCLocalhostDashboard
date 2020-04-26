@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m super excited to meet you and start this mentorship! I must say I am not 100% sure how it works as this is my first time ! :relaxed:",
+        "ts": "1581434785.001800",
+        "username": "Becky Shaw (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946960309712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

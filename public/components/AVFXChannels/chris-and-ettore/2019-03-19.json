@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Send me an OBJ and I'll take a look over it. Are you UVing it?",
+        "ts": "1552991772.016000",
+        "username": "chris cook (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581259689940_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

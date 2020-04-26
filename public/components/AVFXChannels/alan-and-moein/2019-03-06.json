@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok so I'm typing this on my phone so forgive my spelling mistakes.\n\nMy job is to lead the 3d teams through the post production asset builds and shot execution. I'm generally one of the first people assigned to a show and start to get the software environment ready for the teams.\n\nDay to day my job involves running daily review sessions, chatting to the team, client visits\/calls, dealing with software installs and other setup tasks.\n\nA CG Supe is generally considered the focal point for all technical show based issues as well. ",
+        "ts": "1551941427.000800",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569884185909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I got into the industry by luck really. I was doing an undergrad degree in computer science and one of our modules was in product design with computers. I produced a small product idea there and really liked the software and process involved in making the design.\n\nSo after graduating I looked into further studies in computer animation \/graphics and ended up at Bournemouth uni on their computer animation masters course.\n\nWhen I was there I was at a recruitment  presentation by framestore. I found it super interesting so I applied and they accepted me on a 3 month ATD contract (assistant technical director). I did a lot of coding and scripting to begin with and eventually moved into lighting. From there I progressed to being a lighter and eventually a lead lighter. I was made a cg supe on guardians of the galaxy ",
+        "ts": "1551941679.000900",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/568811459760_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It depends which job in visual effects you want. But I really believe that in order to stand out you must know more than just which buttons to push. Having photography, art, drama, coding skills etc can really help you become a better hiring prospect. Show that you understand composition of a shot. Show that you can look at a piece of film and break down what they did in that shot. Recreate a shot from a movie in an interesting  way. And believe in your own ability to succeed in the role. Don't be arrogant but be confident enough to express a creative opinion whne reviewing work. ",
+        "ts": "1551941881.001000",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569518610948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The day for us starts with a production meeting with all the team leads. We cover the weekly shot\/asset targets and any other relevant business such as client turn over of materials.\n\nThen its a series of reviews (dailies) such as environment dailies or lighting dailies. I will tend to run these sessions with the aim of putting together a playlist of materials to show the vfx supe later. After lunch we have more review sessions and eventually end up with a presentation for the vfx supe. We take their notes to the team afterwards. We also run individual rounds reviews. Which is when I try to see all team members individually at their desk to. Go over any issues they are having. At the end of the day I review what we plan to render that evening and create a prioritised list with production for which renders are the most important.\n\nThen I go home!!! ",
+        "ts": "1551942156.001100",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569521196868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Think I covered the responsibilities one already. ",
+        "ts": "1551942181.001200",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569521402932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tips and tricks for env positions :\n\n1. Go and look at reality. Take a picture. Study it. Study the light, the bounce light, the different reflections etc\n\n2. show that you understand what it is to work in an env position. They are the most generalised team in that they do lighting, modelling, rendering, texturing etc. You aren't expected to know all of these things. But be aware of them and do some small side project to learn.\n\n3. Don't over extend yourself. I was having exactly this conversation this morning. If your aim is to get work quickly its important to produce a piece of work that shows you could slot into a team. So a short 1min showreel of higher quality work is better than a 2 min lower quality work one. Be brutally honest with your showreel work. Is it good enough to show?\n\nAs an example I would be impressed with a student showreel that was something very simple : shoot a video of a building which is incomplete or damaged and then 'fix' it in cg. Or the other way around destroy a building in cg. Then your showreel is the shot and the breakdown of the shot. Don't overplay the breakdown with lots of layers and fancy transitions. Just a simple before and after wipe to show what you did. If that shot was done well and you had tracked, rendered and comped the shot it would be a good sign to me you were a serious candidate ",
+        "ts": "1551942791.001300",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569895748117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I work 9-10 hours a day. But I have worked up to 16 before at very crazy times ",
+        "ts": "1551942818.001400",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569447602627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Work life balance is something you have to guard closely. If you allow yourself to work crazy hours the job will always have more work for you to do. So go home on time. But on the odd occasion you are behind in your work talk to you supervisors and make them aware that you realise this and will be staying longer to get back on track. Communicating is the key. No one likes to find out an artist stayed late working like crazy and getting stressed out. It's a sure way to burn out if it becomes the norm. And if you are working all the time you won't have time for all the art, photography, sculpture courses you will of course be continuing with ;) ",
+        "ts": "1551943010.001500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569571565202_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if you have more questions. I'm more than happy to discuss them with you. ",
+        "ts": "1551943034.001600",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/568997232961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

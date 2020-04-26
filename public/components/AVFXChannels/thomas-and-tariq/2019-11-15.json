@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I managed to get it working with @Frame in the wrangle in sops in the end. I guess @Frame vex $T hscript?",
+        "ts": "1573804807.003900",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/837695970215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeap! You want to use the @ in a wrangle, and then $ outside of a wrangle. As for the first one, not sure if $F would suffice, and $SF isn't needed",
+        "ts": "1573828671.004000",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/828361351857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

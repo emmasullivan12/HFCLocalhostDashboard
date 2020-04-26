@@ -1,0 +1,338 @@
+[
+    {
+        "type": "message",
+        "text": "Physics,further maths ,maths and Italian ",
+        "user": "U5XA82WJV",
+        "ts": "1498210025.916213",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F5YC1LKDH",
+                "created": 1498210106,
+                "timestamp": 1498210106,
+                "name": "Friday morning 🎉.MOV",
+                "title": "Friday morning :tada:",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U5X3KFLFN",
+                "editable": false,
+                "size": 32076280,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5YC1LKDH\/friday_morning_____.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5YC1LKDH\/download\/friday_morning_____.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U5X3KFLFN\/F5YC1LKDH\/friday_morning_____.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5YC1LKDH-434272e73d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U5X3KFLFN",
+        "display_as_bot": false,
+        "ts": "1498210108.935337"
+    },
+    {
+        "type": "message",
+        "text": "You have chosen some tricky subjects, how did you find them?  Will Statistics be your final exam of this academic year?",
+        "user": "U5X3KFLFN",
+        "ts": "1498210354.992076",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "The exams were ok and I don't think that I will do statistics next year, since I don't really like it.",
+        "user": "U5XA82WJV",
+        "ts": "1498213397.641087",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Why don't you like it?  Do you enjoy maths? At the moment, I am on a payroll project which might be interesting for you...?",
+        "user": "U5X3KFLFN",
+        "ts": "1498215343.002656",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I like maths but I just don't find statistics interesting.  ",
+        "user": "U5XA82WJV",
+        "ts": "1498221517.160242",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "What's the project about?",
+        "user": "U5XA82WJV",
+        "ts": "1498221527.162476",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Well we are implementing a new payroll and HR system. So part of the project we are having to run the last 3 months' payrolls parallel with the old system.  It is proving to be not a simple as we first thought.",
+        "user": "U5X3KFLFN",
+        "ts": "1498222412.368270",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We are pulling the data from the old system into excel reports and sql server and match it with the new system.",
+        "user": "U5X3KFLFN",
+        "ts": "1498222464.380820",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How are you excel skills?",
+        "user": "U5X3KFLFN",
+        "ts": "1498222485.385908",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "your*",
+        "user": "U5X3KFLFN",
+        "ts": "1498222513.392876",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Pretty good ",
+        "user": "U5XA82WJV",
+        "ts": "1498222569.406452",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So do you have any hobbies outside of school?",
+        "user": "U5X3KFLFN",
+        "ts": "1498229297.578391",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "If you like excel and want to learn some cool formulas to help with maths",
+        "user": "U5X3KFLFN",
+        "ts": "1498229360.600893",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Alright, what type of formulas?",
+        "user": "U5XA82WJV",
+        "ts": "1498233287.052917",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Do I have to do any work? ",
+        "user": "U5XA82WJV",
+        "ts": "1498234189.373390",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

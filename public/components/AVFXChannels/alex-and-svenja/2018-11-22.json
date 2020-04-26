@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Svenja. Where would you want to do the courses? Do you have specific colleges in mind? Or does the college not really matter for you?",
+        "ts": "1542877140.001400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-22\/485738901812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you have some places in mind, it would be great to go to one of their open days.",
+        "ts": "1542877173.001500",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-22\/487310059798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "unfortunately, the next imperial college open days are in summer next year :confused: <https:\/\/www.imperial.ac.uk\/study\/ug\/visit\/open-days\/>",
+        "ts": "1542877204.001600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-22\/486960568503_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

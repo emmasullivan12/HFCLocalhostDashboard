@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Khadijah, I'm so sorry for my incredibly delayed response. Unfortunately I had not logged onto Prospela for some time and didn't receive a notification of your message. I've just updated my notification preferences, so hopefully I won't miss any future messages. Please let me know if you would still like some help with your CV and finding work experience? Kind regards, Arran",
+        "ts": "1558367953.000100",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-20\/642889374150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

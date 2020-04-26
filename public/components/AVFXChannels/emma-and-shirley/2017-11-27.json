@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shirley! You should def check out the free healthcare innovation conference in the \"hello-students\" channel ... it's over the next few days but I think you can just go to one day rather than all 3. Seems v relevant for what you want to do!",
+        "ts": "1511817077.000103",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-27\/278305392981_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

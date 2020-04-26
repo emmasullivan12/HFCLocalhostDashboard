@@ -1,0 +1,84 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hmm, its one of those things where its best to just go to as many events as possible and meet people",
+        "ts": "1576141920.014900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/870164500436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "have you ever heard of BYOA? its a bring your own animation club, where animators in the industry and students all meet in a pub and you can show your work to get feedback",
+        "ts": "1576141954.015000",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872481553559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it happens once a month in London and its an amazing way to network",
+        "ts": "1576141973.015100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872481945607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/london.siggraph.org\/event\/byoa-bring-animation\/>",
+        "ts": "1576141994.015200",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/859154356883_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "London ACM SIGGRAPH",
+                "title": "BYOA - Bring Your Own Animation - London ACM SIGGRAPH",
+                "title_link": "https:\/\/london.siggraph.org\/event\/byoa-bring-animation\/",
+                "text": "Bring Your Own Animation is an event taking place every month at a NEW LOCATION! – The Newman Arms, Fitzorvia (Near Goodge St and Tottenham Court Road stations) in London.   Anyone can bring their animation or just come to share their passion (and have a few drinks). If you are a student, an autodidact or a... Read more »",
+                "fallback": "London ACM SIGGRAPH: BYOA - Bring Your Own Animation - London ACM SIGGRAPH",
+                "thumb_url": "https:\/\/london.siggraph.org\/wp-content\/uploads\/2019\/08\/addamsfamily-mgm-header.jpg",
+                "from_url": "https:\/\/london.siggraph.org\/event\/byoa-bring-animation\/",
+                "thumb_width": 633,
+                "thumb_height": 356,
+                "service_icon": "https:\/\/london.siggraph.org\/wp-content\/themes\/siggraph\/images\/apple-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/london.siggraph.org\/event\/byoa-bring-animation\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay thanks :) oooh looks amazing I never knew about that, I will definitely go in January and have a look",
+        "ts": "1576145576.015400",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/872557735127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I used to go when I was a student and it was really helpful, especially for feedback",
+        "ts": "1576161537.015500",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/871029222880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

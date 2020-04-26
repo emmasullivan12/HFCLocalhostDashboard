@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there, Adeshewa, nice to meet you! I hope I can help you with any questions you have! I'll try and answer you as well as I can based on my experiences, but if we come across some subject I'm not well aware I can search some resources for you to look into.\nIt's been only 3 months I'm working in the UK, before that I had been living and working in Brazil, where I'm from. I have worked on several stages of animation productions, but especially with storyboards and 2d traditional and cut out animation.",
+        "ts": "1571213182.001600",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/797101185301_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I read you're in school but very interested in getting into animation. Could you tell me about some project\/illustrations you've been working on?",
+        "ts": "1571213480.001700",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/797106338101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mr Perin! \n\nThank you so much for agreeing to help me! I will make sure that this opportunity does not go to waste and will make sure to ask you any questions that come in mind :) \n\nI am from the UK, 16 and I am interested in 2D animation and storyboarding industry - maybe concept art but since it's such a competitive job, I am very unsure in pursuing that path. \n\nIn the UK, we have a qualification in secondary school called EPQ (Extended Project Qualification) and it is where you make a project on anything you like in the space of 6 months. For my project I have chosen to create my own manga as I thought it would be fun and it would allow me to make concept art, character references, illustrations and hopefully in future: an animation! Right now, I am gaining inspiration and collecting techniques from other famous manga and manga guides. I personally believe that my anatomy is not the best and so I am striving to improve my anatomy and perspectives so I can include it in my future animations :blush: \n\nThank you very much again for this opportunity!",
+        "ts": "1571253075.001800",
+        "username": "Adeshewa Kosoko (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/791575077649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

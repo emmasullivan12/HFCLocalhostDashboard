@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning dude.\n\nBoom! That’s great news congrats!\n\nNice, back into the fun stuff again :wink: \n\nSo for tracking, you totally could try and do it with the planar tracker and you would probs get some pretty decent results. However I would recommend getting a really good 3D camera track.\n\nA couple reasons for this, it’s a good skill to be able to say you can do (always thinking what looks good on a showreel), another is that you will be able to set the depths of your cards better with a 3D camera track. \n\nI don’t know if you have a separate 3D tracking software at uni? If not you could try the one that is built into Nuke. \n\nOne thing I would definitely do is take note of what camera you use and what focal length your camera is at when you take the shot. This will really help when you are trying to solve and track the 3D camera (it’s also really good practice).\n\nI got to go on set a couple of weeks ago for a show we have coming in in the new year and I was helping out the VFX supe with taking down that kind of info as well as taking reference photos of stuff. \n\nAnother thing I would do is, once you’ve got your shot filmed, just take a still frame of it and do a super quick mock up of what you plan to do in photoshop or something. This should help you lock down your ideas a bit and make sure it is heading in a particular direction. ",
+        "ts": "1573719173.000200",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/821364947698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cheers man! I know finally! :laughing:\n\nI'm glad you said that because I tried using a 2D planar track yesterday and it just didn't look right, so I did the 3D track in Nuke and it looked miles better.\n\nHowever, I didn't use the camera details just because I forgot even though I noted them down, so I'll redo the track with the camera details punched in.\n\nWe have a really old version of SynthEyes at uni, I think it was released not long after the battle of Hastings :thinking_face: but I can't find a free definitely legal copy anywhere so I've just been using the built in tracker in Nuke. Which seems good and pretty simple to use.\n\nThat's cool to hear, do you use the reference pics for placing in the scene as a reference for depth once tracked? \n\nPhotoshop storyboard is a good idea I've been working on it this afternoon. Means I can't stray away from the brief :grin:",
+        "ts": "1573752985.000300",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/834950843280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

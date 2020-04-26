@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How you getting on?",
+        "ts": "1578329976.000100",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897154727430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

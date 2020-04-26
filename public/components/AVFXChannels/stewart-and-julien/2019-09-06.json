@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Stewart, thank you for joining and becoming my mentor\n\n",
+        "ts": "1567758931.001600",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/753261604614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll just say a small introduction about myself…",
+        "ts": "1567758980.001700",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/744641928241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve been into animation for a while since I was in secondary school, I did a degree in 3d animation and finished in 2010…it wasn’t as focused on animation as I would have liked and ended up not having a great degree. I did the character animation program from animation mentor a couple of years back now and also took a masters in 3d animation to help my reel. I feel have a really good grounding in animation now but I know I need to a few shots for my reel to get a job",
+        "ts": "1567759423.001800",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/751053257925_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Funnily enough, I’ve been speaking to Mary Heskel and she introduced me to Jen Kitching because I’ve been focusing on previs as well as full on animation",
+        "ts": "1567759510.001900",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/750590552484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So Jen has been giving me notes on my shot for a few months now which is really nice of her. ",
+        "ts": "1567759544.002000",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/751055018864_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have kids and a family and she told me the reason why she left DNEG is because she didn’t really have weekends off but in Third floor she hasn’t worked in the weekends very much …and that really appealed to me",
+        "ts": "1567759609.002100",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/753272218358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m not sure I want to work in vfx because my animation is more stylised and more for feature animation",
+        "ts": "1567759640.002200",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/739593158963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I’m very glad I got you as a mentor because I really want to work for Third Floor!",
+        "ts": "1567759689.002300",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/744652909809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Daniel! Nice to meet you. I’m not sure where to start. I guess I’m wondering if you could look at my reel and give me notes?",
+        "ts": "1580424777.001700",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/919961697841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/gilfranco.com\/3dcharacters.html>",
+        "ts": "1580424778.001800",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/919961716689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

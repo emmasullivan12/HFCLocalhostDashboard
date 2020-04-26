@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I hope it is. It's always useful to get other peoples' perspectives on things, and to get other eyes on your work as well if you get round to trying out some of their exercises. It's amazing how often you can be staring at something for ages and not know what's wrong with it, then somebody can look at it for two minutes and tell you.",
+        "ts": "1587504414.003000",
+        "username": "Alex Watson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1070650868358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,143 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586508308.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586508308.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e903213caa4850004ae2834|this link> with other teams to invite them in it_",
+        "ts": "1586508308.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586509479.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586509479.000900",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1586509493.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-27\" to \"jake-and-victoria\"",
+        "old_name": "z-shared-27",
+        "name": "jake-and-victoria"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1586509554.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1586509558.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jake has joined the channel_",
+        "ts": "1586509661.001300",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054347180707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@viki.pleschko has joined the channel_",
+        "ts": "1586509675.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054347550051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Victoria, please meet Jake your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1586509694.001500",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1053444375346_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1586509699.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054348105619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1586509703.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054348200803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Victoria,  how's quarantine treating you? I'm Jake, a 3D Generalist with just short of 2 years of experience in vfx for TV \/ Commercials as you may already know :slightly_smiling_face: Having gone through the info I have on you, there's definitely a lot of aspects I can help you with. Feel free to talk to me about how you've currently prepared to get a job in VFX and why so we can assess that and make sure you've got the best chance of pulling this off. VFX is competitive as people may have already told you but I do think people over hype it in that sense. If you're a good person to work with and you can do the work you're applying for, you will land a job don't worry. I used to be really worried too but I put myself in the recruiters shoes and thought about the perfect candidate and tried to get to that as close as possible. I've got various connections in the industry so for things that I don't specialize in, I can ping my friends \/ colleagues to fill the gaps and make sure you get the info from the horse's mouth. Generally speaking, I'm super chilled out with my peers and I keep things informal with people so I'll naturally be doing the same with you unless you ever pop up saying otherwise. I know what it's like at uni pulling crazy hours to get projects over the line, to be quite frank it's horrible. Just know that it's worth it in the end once you start that real job. Let's make it happen. Generally speaking, If can give you insights into the work life if you ask me about specific stuff even whilst working throughout the day (granted responses will sometimes take a while if it's super busy or I'm under pressure to get renders out) but otherwise I'm totally available in the evenings \/ on the weekend as anyone would be :slightly_smiling_face: Also feel free to let me know how you would like to proceed. If you want us to nail one thing at a time on your list then that's cool. If you want to speak about all of it, that's also fine. Let's work around you.",
+        "ts": "1586512045.001800",
+        "username": "Jake Cross (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1053504150754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jake!\nNice to meet you! Thank you for taking the time to talk and offer your advice! :slightly_smiling_face:\nAs you probably already know, I am currently doing an MA in 2D VFX and will be graduating in September. Before that I was working as an editor at a small post-house in London, but it wasn't really the direction I wanted to go into. At the moment, we are currently doing two group projects with a 3D department and an animation department which is really cool but also quite challenging to keep it all organised! :smile: So at the moment, quarantine is actually quite alright! It gives me time to focus on the group projects, but I'm also enjoying some more free time for my hobbies! :smile: How is quarantine treating you? Are you able to work from home? That is probably one of my main questions at the moment: how is the industry running with everyone working from home?\nWith regards to how I would like to proceed, I think it would be really awesome if you could talk me through what steps you took after Uni and how you got your foot in the door! What were the most challenging parts in the transition from Uni to work? What is your advice generally? Should I just apply to as many companies as possible or really focus on just a few that I am really interested in?\nIf it would be okay with you, I might just start sending any questions as they come up. I just don't want to bombard you with too many questions at once! :smile:\nThanks again for taking the time to answer my questions! I look forward to the conversations! :slightly_smiling_face:",
+        "ts": "1586515093.001900",
+        "username": "Victoria (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1056159116853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

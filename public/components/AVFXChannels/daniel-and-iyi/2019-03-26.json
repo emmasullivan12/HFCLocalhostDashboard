@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just spoke to a modeler here and they mostly agreed. They added that you might want to keep an eye on how the branches fork off , looking at reference mostly they branch off at less than 90 degrees. \nAnd you might want to add some history to the tree,like stumps where branches used to be after being broken or cut off in the past.",
+        "ts": "1553614729.005400",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/579735222881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OK will do thank you for the feedback",
+        "ts": "1553615837.005500",
+        "username": "Iyioluwa Owoyemi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/588459490164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem. I hope it helps. ",
+        "ts": "1553623042.005600",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589042607141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

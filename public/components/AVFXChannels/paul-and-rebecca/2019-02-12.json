@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Rebecca - it is great to e-meet you!  I was travelling with work last week so just catch up up with this.  It would be great to find out more about what areas you think I can help with. I read a short intro that Dexter sent me and it sounds like you have a pretty good idea of where you want to head with your career.  I would be very happy to give you more info on that (I have worked in Games, Animation and VFX so have a pretty good understanding of career routes in all those areas) or anything else you think I could help with.",
+        "ts": "1549980522.000100",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/549822824215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Paul. \nIt's nice to meet you. I was busy with uni today so I apologise for not not getting back to you earlier. Character design is something I would be interested in and I am considering creating a hybrid animation for my course project. Is there any advice you may have in reference to either of these areas? Would it be possible for me to send you some character design sheets I have been working on for any feedback?\n\nThank you so much and I look forward to further correspondence,\nSincerely,\nRebecca. ",
+        "ts": "1549993154.000200",
+        "username": "Rebecca Oliver (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/550089134375_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

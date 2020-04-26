@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure thing just send it whenever",
+        "ts": "1576150221.002600",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/870331452468_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<mailto:drewrobertson@axisanimation.com|drewrobertson@axisanimation.com>",
+        "ts": "1576150227.002700",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/860517147473_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or link me to a Google drive or whatever is easiest",
+        "ts": "1576150237.002800",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/858006229442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

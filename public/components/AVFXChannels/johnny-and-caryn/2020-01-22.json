@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caryn , me too , I’m not getting notifications,\nGreat to hear that you are well,\nPlease don’t hesitate send work my way , I will look at it ASAP ",
+        "ts": "1579700493.000200",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/919226389542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

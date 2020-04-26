@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marnie! I wanted to ask you a question if you don't mind. There are internships for Film, TV and Advertising and they all have modelling and art department. Do you think it would be okay to apply to all of them or is it too much?:sweat_smile: Thank you in advance",
+        "ts": "1556964451.000400",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-04\/614889686691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "WOW!  Whoop whoop! That’s so great Guian. Congratulations! :slightly_smiling_face: :clap::birthday:",
+        "ts": "1548441315.001700",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-25\/533347440548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy for you to come in and do a mock interview next week if it suits you? 4pm any day next week would work for me.  Have your college given you any guidance as to questions you’re likely to be asked? If so, that would be helpful for me to see. If not, I can have a good guess.  Let me know and have a great weekend. Congratulations again! ’)",
+        "ts": "1548441430.001800",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-25\/532907066257_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you I'll come on Tuesday. My college hasn't done anything like that unfortunately. Have a great weekend too :blush:",
+        "ts": "1548442126.001900",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-25\/533523629554_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

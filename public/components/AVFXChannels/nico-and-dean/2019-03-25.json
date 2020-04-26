@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ask anytime :)",
+        "ts": "1553517449.002000",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-25\/587086876101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

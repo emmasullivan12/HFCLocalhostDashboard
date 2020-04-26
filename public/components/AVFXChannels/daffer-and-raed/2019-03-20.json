@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good to hear from you Ra’ed. Your game looks great, I can really see folks getting hooked on that. Just to give you a bit of background about what I do; I head the IT department at The Third Floor London, a visualisation company, where our main work falling in the movie industry. My role is to look after a team which supports the company’s infrastructure, operations and technology services. As a company, our staff consist of production (deal with clients and coordinate projects), supervisors ( who lead a team of artists to work on projects) artists ( either asset builders or shot creators) and pipeline, developers and R&amp;D. My team support everyone mentioned to make sure they have all the best tools and systems to be able to do their jobs as best as possible. This consists of managing many areas; network, software, hardware, security, cloud solutions, storage, render farms etc. I wanted to just give you a little insight into what I do. Although I don’t myself work in development and game design, I do however work with a number of people who do. Our pipeline partly uses Unreal Engine so we have a number of guys who we’ve hired from the game industry. You seem to be on the right track and you are doing the absolute right thing by putting yourself out there. How are you doing at school if you don’t mind me asking?",
+        "ts": "1553089369.002500",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/582663446403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks to the skills I improve and obtain in my free time I have a good advantage in school, and am having no issues",
+        "ts": "1553109662.002600",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/583190010772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "glad to hear your envision on my game.\n Your job sounds very crucial, I hope it doesn't arouse a lot of stress for you!",
+        "ts": "1553109847.002700",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/580814114096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just wanted to give you an idea of what we do, and my role. I actually enjoy my job here so it’s not too stressful, I find I only get stressed when either I’m not happy, I don’t see or understand the end goal or I’m out of my depth :). You seem to have your head screwed on, is there anything you would like to ask me? Or anything you’re interested to know more about? Happy to help where I can.",
+        "ts": "1553110519.002800",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/583240454642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a relief to hear you only find dis-satisfaction in the absence of purpose, commonly purpose is what we strive for.\nAbout the questions, I do have one I feel would be a lot of help, say you sketched up what could be the next revolutionary \"amazon alexa\", how would you get close to making your idea a reality (imagining you have no engineering or tech design qualifications, only a head full of ideas )",
+        "ts": "1553120039.002900",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/584839474054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

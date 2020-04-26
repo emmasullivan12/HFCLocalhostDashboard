@@ -1,0 +1,36 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for installing Smooz. You are now able collaborate across Slack teams with your clients, agencies, and partners.\n \n_:question: What would you like to know?_\n_Type `help` to display this message again_\n",
+        "ts": "1549482970.000100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "callback_id": "greetings_message",
+                "fallback": "Welcome to Smooz",
+                "id": 1,
+                "color": "3AA3E3",
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "How to create a shared channel",
+                        "text": "Invite a team",
+                        "type": "button",
+                        "value": "invite",
+                        "style": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "Show Help",
+                        "text": "Show all Help topics",
+                        "type": "button",
+                        "value": "topics",
+                        "style": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

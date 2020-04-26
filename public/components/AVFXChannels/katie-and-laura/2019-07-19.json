@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sam - so I asked around my industry friends and Elliott Pacel got back to me saying you can get in contact with him if you wish!\nElliott is a Tech Artist at Ubisoft studio; Reflections. He's been there for just over 4 years and started off as an intern. The Tech Artists work directly with the Environments team so he'll be able to tell you about team structure and company culture etc.\nHere is his email: *elliott.pacel@ubisoft.com*\nHe mentioned they are going through a bit of a busy period at work right now so please don't be disheartened if he doesn't get back to you straight away!",
+        "ts": "1563556147.000900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-19\/699752121572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a great weekend! :clinking_glasses:",
+        "ts": "1563556175.001000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-19\/702078372087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

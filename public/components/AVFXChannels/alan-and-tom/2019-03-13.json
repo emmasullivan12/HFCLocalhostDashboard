@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s fine, no problem at all. \nThe deadline for the coursework is 15\/05\/19 but we have a 3 week break from uni over Easter. The first week is 08\/04\/19 so we could arrange it for then if that’s easier for you? ",
+        "ts": "1552474429.000900",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/575082013411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

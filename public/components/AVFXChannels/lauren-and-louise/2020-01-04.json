@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy New year and hope you had a great Christmas! ",
+        "ts": "1578176865.000100",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-04\/883333893233_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

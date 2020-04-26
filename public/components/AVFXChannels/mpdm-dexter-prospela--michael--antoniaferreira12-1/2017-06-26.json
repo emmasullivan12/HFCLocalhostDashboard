@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Hello <@U5YQBVCHL>",
+        "user": "U5XMAF7AA",
+        "ts": "1498499500.452040",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How is school going? How are you coping with exam pressure?",
+        "user": "U5XMAF7AA",
+        "ts": "1498499649.504510",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

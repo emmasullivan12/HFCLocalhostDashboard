@@ -1,0 +1,44 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Bernny, this game tutorial series is also free now!\n\n<https:\/\/gumroad.com\/jasonshum>",
+        "ts": "1585558487.000400",
+        "username": "Bianca Iancu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1034334527220_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Gumroad",
+                "title": "Jason Shum",
+                "title_link": "https:\/\/gumroad.com\/jasonshum",
+                "fallback": "Gumroad: Jason Shum",
+                "image_url": "https:\/\/static-2.gumroad.com\/res\/gumroad\/files\/6027050049632\/839a275054fb4d8d9339c16c33a193fc\/original\/profile_picture.JPG",
+                "from_url": "https:\/\/gumroad.com\/jasonshum",
+                "image_width": 201,
+                "image_height": 250,
+                "image_bytes": 282703,
+                "service_icon": "https:\/\/gumroad.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/gumroad.com\/jasonshum"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585558487.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh thank you Bianca, I had already downloaded it as soon as I heard the news haha",
+        "ts": "1585604860.000600",
+        "username": "Bernny Mwamba K (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036784405029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

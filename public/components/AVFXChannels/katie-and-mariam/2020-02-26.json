@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Katie ",
+        "ts": "1582763576.000100",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/973030906119_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just wanted to let you know I have created a showreel and I would like to send it to you just to ask for your opinions as to what looks good and how to improve this :) ",
+        "ts": "1582763616.000200",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/971188602309_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could you send me your email please. ",
+        "ts": "1582763640.000300",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/973380020694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heck yeah, my email is\n <mailto:Katiechapman94@gmail.com|Katiechapman94@gmail.com>",
+        "ts": "1582763679.000400",
+        "username": "Katie Rosso (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/973380740550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

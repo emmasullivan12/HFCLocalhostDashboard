@@ -1,0 +1,190 @@
+[
+    {
+        "client_msg_id": "7fac3063-4474-49e7-af4a-2dddea3939eb",
+        "type": "message",
+        "text": "Hi there! I've just tried to resubscribe a couple times but I keep getting this error after entering payment details:",
+        "user": "U4VR52RQE",
+        "ts": "1530735887.000116",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FBK2Q9EM8",
+                "created": 1530735894,
+                "timestamp": 1530735894,
+                "name": "image.png",
+                "title": "image.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 67479,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FBK2Q9EM8\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FBK2Q9EM8\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 115,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 153,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 230,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 255,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 306,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FBK2Q9EM8-41ea5e8c37\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 327,
+                "image_exif_rotation": 1,
+                "original_w": 1900,
+                "original_h": 606,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/FBK2Q9EM8\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FBK2Q9EM8-13a9f8c44e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1530735897.000066"
+    },
+    {
+        "client_msg_id": "658fd90e-d748-4b30-b3d9-0308feb47b62",
+        "type": "message",
+        "text": "It also only says 50 channels for the EUR75, not the 150 channels we had previously - can you kindly update this for us? Many thanks!",
+        "user": "U4VR52RQE",
+        "ts": "1530735930.000107",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "04921e1c-3f63-4b74-a0f4-42a9004cc156",
+        "type": "message",
+        "text": "Is it perhaps because I tried using a Visa Credit card?!",
+        "user": "U4VR52RQE",
+        "ts": "1530736312.000146",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "client_msg_id": "cf3d7814-e889-4aa6-83eb-112b9c30e924",
+        "type": "message",
+        "text": "Let me know and i'll try again :slightly_smiling_face:",
+        "user": "U4VR52RQE",
+        "ts": "1530736578.000082",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello,",
+        "ts": "1530767135.000094",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-04\/393351113125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am correcting the 50 channels to 150",
+        "ts": "1530767142.000011",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-04\/394273913927_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the error with the card was “Your card was declined”, with a cryptic “do not honor” from your bank ...",
+        "ts": "1530767173.000069",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-04\/394274033271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is there perhaps any chance to try with another card?",
+        "ts": "1530767381.000049",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-04\/393202480290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! \n\nIt is going not too bad, haha\n\nWould you be available Tuesday evening for a call? :relaxed:",
+        "ts": "1564820052.000500",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-03\/715217279797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

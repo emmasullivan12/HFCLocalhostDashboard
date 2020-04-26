@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shailendra,\n\nHope you doing well!\n\nI wanted to ask if you or some of the other guys at Framestore would be down to give my team's creative project a whole lot of harsh critique.\n\nRight now we're working early on a live-action project with CG creature integration and we're getting to the stage where the creature should be done just before uni starts back up again at the end of this month. I was hoping you'd be able to give some feedback on our creature sculpt - a white-faced capuchin monkey. We're looking to muscle sim the fella in Houdini so he has a skeleton and all.\n\nLooking forward to hearing back from you!:)",
+        "ts": "1567866081.000800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-07\/752320285728_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

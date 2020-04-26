@@ -1,0 +1,96 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH2FZ1JG4",
+                "created": 1552933367,
+                "timestamp": 1552933367,
+                "name": "prospela_rimLight_1080p.mov",
+                "title": "prospela rimLight 1080p",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 104152851,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH2FZ1JG4\/prospela_rimlight_1080p.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH2FZ1JG4\/download\/prospela_rimlight_1080p.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH2FZ1JG4\/prospela_rimlight_1080p.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH2FZ1JG4-6fcdbeacbb",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552933372.007300"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH2G2AZ52",
+                "created": 1552933516,
+                "timestamp": 1552933516,
+                "name": "prospela_rimLight_AE_1080p.mov",
+                "title": "prospela rimLight AE 1080p",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 148456059,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH2G2AZ52\/prospela_rimlight_ae_1080p.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH2G2AZ52\/download\/prospela_rimlight_ae_1080p.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH2G2AZ52\/prospela_rimlight_ae_1080p.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH2G2AZ52-d53b085ce3",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552933523.007600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh ok, I haven’t done my rim lights like that, I’ve been putting area lights behind my characters and linked it to them only, your method seems to add a rim inside the characters outline. What lights did you have already existing in your maya scene because you rendered with Arnold, right? ",
+        "ts": "1552936860.007900",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-18\/582088031926_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You don’t need lights for this effect, but I would also encourage you to also set up all of you’re lights and this is an option on top. Make sure you push your lights and shadows - don’t want it all looking flat (kind of the main aim!) share some more stills if you get the chance and also let me know how other stages are looking for you. How is it all looking in terms of a rough schedule and how did it go in simplifying down your story \/ scenes?",
+        "ts": "1552947486.008000",
+        "username": "Fraser (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-18\/578431772976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

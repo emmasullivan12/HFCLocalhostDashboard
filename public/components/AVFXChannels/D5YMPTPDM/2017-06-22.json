@@ -1,0 +1,322 @@
+[
+    {
+        "type": "message",
+        "text": "Hello, I’m Slackbot. I try to be helpful. (But I’m still just a bot. Sorry!) *Type something* and hit _enter_ to send your message.",
+        "user": "USLACKBOT",
+        "ts": "1498135635.960477",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "what's the purpose of this",
+        "user": "U5XA82WJV",
+        "ts": "1498135651.964542",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Pleasure to meet you. Let me show you a couple things about Slack.",
+        "user": "USLACKBOT",
+        "ts": "1498135651.964575",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "If you have any questions about *how to use Slack*, please ask me! I’ll do my best to help.",
+        "user": "USLACKBOT",
+        "ts": "1498135655.965660",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "how do you use this",
+        "user": "U5XA82WJV",
+        "ts": "1498135663.967681",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I searched for that on our Help Center. Perhaps these articles will help: \n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/203772216-SAML-single-sign-on|SAML single sign-on>\n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/202014843-Slack-data-security-and-privacy-policies|Slack data security and privacy policies>",
+        "user": "USLACKBOT",
+        "ts": "1498135663.967834",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "nice dude",
+        "user": "U5XA82WJV",
+        "ts": "1498135668.969167",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm afraid I don't understand. I'm sorry!",
+        "user": "USLACKBOT",
+        "ts": "1498135669.969341",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "how does this work",
+        "user": "U5XA82WJV",
+        "ts": "1498135859.021878",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "If you'd like some help getting started, check out our <https:\/\/slack.com\/getting-started\/users|Getting Started guides>.\n\nAnd hey! Welcome to Slack! :tada: :grinning: Glad you're here! ",
+        "user": "USLACKBOT",
+        "ts": "1498135859.021908",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "thanks",
+        "user": "U5XA82WJV",
+        "ts": "1498135867.024103",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "You’re welcome!",
+        "user": "USLACKBOT",
+        "ts": "1498135867.024127",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "ok",
+        "user": "U5XA82WJV",
+        "ts": "1498135872.025257",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'll be right here if anything comes up. Otherwise, hope you're having a good day!",
+        "user": "USLACKBOT",
+        "ts": "1498135872.025291",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "k",
+        "user": "U5XA82WJV",
+        "ts": "1498135875.026184",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I searched for that on our Help Center. Perhaps these articles will help: \n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/206646877-Slack-for-Education|Slack for Education>\n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/213893898-Change-your-message-display-settings|Change your message display settings>",
+        "user": "USLACKBOT",
+        "ts": "1498135876.026518",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

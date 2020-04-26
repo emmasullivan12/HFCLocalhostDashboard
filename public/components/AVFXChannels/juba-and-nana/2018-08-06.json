@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nana, it's cool that you do reviews, I got a chance to read through it and it has some good points. I feel like you touched on things but didn't go deep on any particular part. \nBecause you want work in game development, take this chance to really break some things down. Analyze mechanics and gameplay choices, try and find comparisons with other games (such as Uncharted) and see what they did right and what could be improved. It's even better when there are sequels because you'll instantly see the differences. \nThat way you start training your critical eye for when you make your own games, it's a powerful tool :smiley:\nI also read through your script, it's very cool! And I feel like if there was more information about the world and setting it can work much better. I found myself wanting to know more about what was happening and the situation Ethan and Clare were in. I bet you have everything figured out in your head, but for me who has no point of reference, it's important to lay out all that info.\nThe last thing I'll say is, I noticed a lot of grammar errors in your writing, take some time to proof read. It will give you a chance to make sure you're getting your point across and adjust accordingly, and fix anything you find on the way =D",
+        "ts": "1533570961.000535",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-06\/412593194231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Firstly, Thank-you so much for offering to be a E-mentor, It is exciting to have the opportunity to talk to you, the field of visual development\/Concept artist for animated tv shows looks exciting and I too, am based in London. My father is Italian, though I was born in the UK.",
+        "ts": "1578928392.001700",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/891232165314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My background is Illustration and Visual Media.",
+        "ts": "1578929415.001800",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/893836970705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am inspired by the approaches of colour key artists to establish moods in scenes, and presently I am interested in both visual development for both environments and characters. I am inspired by the works to that of UPA approaches in design for animation, which is why a lot of my illustrative projects from university often started with researching places, its’ history and visualising the space and environment and later how they influence the design of characters.",
+        "ts": "1578929425.001900",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/893837492657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Because a career in Illustration is a little different to how one works in animation, I was hoping to find a mentor who can provide constructive criticism and advice breaking down my self set projects in order to better understand what sorts of goals I should set my self from project to project.",
+        "ts": "1578929441.002000",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/891265869378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am aware of Blue Zoo studio, because I know of their summer internships also I really enjoyed Mamoon.",
+        "ts": "1578929638.002100",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/892589526803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Shana! It’s great to hear from you and to meet you! I’ll be happy to help and share my experience for what concern the animation industry, with a focus on concept art\/ visual development! I have always worked in animation companies and I started doing some illustration work too in my free time (I realized my first children’s book a couple of years ago) I would be happy to see your work so I can have an idea of your current skills, style or taste, and giving you a first review, so we can decide together which is the right step to take to get better! \n\nI am currently working as Environment Designer and I work both on locations and props, but I had experiences also on character designs, background design and painting (tv, web and stop motion projects). Blue Zoo is an amazing studio and I’m very proud to be part of it! The talent of the people there is outstanding!",
+        "ts": "1578949654.002200",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/894443556865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

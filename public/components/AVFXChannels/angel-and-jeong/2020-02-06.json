@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay. Iv not used pftrack. But is your camera constrained as nodal or free camera?",
+        "ts": "1581028414.003100",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/940930338480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And can pftrack do projection?",
+        "ts": "1581028439.003200",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928142496098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its nothing to do with the distortion it can be based on the camera constraint you have it set and in 3de you could protect the points onto the geo of the container, unsure if pftrack can do that.",
+        "ts": "1581028521.003300",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928144394418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When it comes to tracking sometimes the software doesn't know where it could be in 3d space, as the camera is only moving one way.",
+        "ts": "1581028571.003400",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/940934015168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would be good to add points in the mid ground and thay can maybe change to curve look on the container and be more straight.",
+        "ts": "1581028682.003500",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/940956902277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

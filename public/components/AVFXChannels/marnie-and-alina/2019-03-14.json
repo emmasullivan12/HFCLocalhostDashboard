@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marnie! Thank you so much for agreeing to be my mentor, it means a lot to me! I am a recent graduate from the University of Hertfordshire (MA Animation), and I had my BA studies back at home (Minsk, Belarus) at the Academy of Arts.  At the moment I'm trying to find my way in the industry and I would greatly appreciate if you could give me some advice on that! Thanks again:)",
+        "ts": "1552558686.001700",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576608326548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alina, nice to meet you. I can honestly say most of the jobs I have got are from getting out and meeting people. It really increases your chances if people know you and your work personally. I see you are interested in concept art? Is this where you think you want to head or do you have other paths in mind? ",
+        "ts": "1552560206.001800",
+        "username": "Marnie Pitts (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577738065815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my ideal path, but as far as I understand it is incredibly difficult to get into Concept Art on early stages and that's why I am trying to keep both my 2D and 3D skills at a similar level. I know that you are a traditional artist as well, how did you first get in the industry?",
+        "ts": "1552564545.001900",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577798517463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi well I studied fine art - painting and drawing at uni. Then I did a night class in computer graphics (this was a long time ago and it was the very first 3d course in Australia). I meet someone there who worked in a traditional animation studio and he said I should come work there. So that was the beginning. ",
+        "ts": "1552572541.002000",
+        "username": "Marnie Pitts (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/576876102098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Concept art is difficult as there are few spots but there are more concept jobs in games studios. Also look at previs which can be pretty involved and combines some concept\/ ideas with planning",
+        "ts": "1552572631.002100",
+        "username": "Marnie Pitts (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/578319546374_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, that's great! Thank you, I'll have a look at previs studios, at the moment only The Third Floor comes to mind. If you don't mind me asking, how did you become a texture artist at Framestore? This is such an amazing company!",
+        "ts": "1552585519.002200",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/578297552903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I agree Framestore is pretty amazing. I first worked here around 15 years ago on one of the Harry Potter Movies. I got the job through friends I had made working at Henson's and another now gone studio. Third floor also shares the building with us.  I then went to mpc then took a lot of time off to raise our son and then came back to Framestore. I now work in what they call IA which includes tv, rides, VR, commercials and some film. Do you have some work you would like me to look at?  ",
+        "ts": "1552595800.002300",
+        "username": "Marnie Pitts (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/575044888976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

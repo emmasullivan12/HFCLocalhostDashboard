@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello?",
+        "ts": "1567004756.000100",
+        "username": "Iyioluwa Owoyemi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741175276053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

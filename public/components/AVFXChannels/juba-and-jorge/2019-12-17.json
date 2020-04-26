@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Juba! Thanks! that's really kind of you. It would be amazing to talk with layout\/storyboarding people",
+        "ts": "1576604916.000600",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876904097156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's so nice you wanna become a director. Are you thinking on doing something (short film, script, video art) soon? let me know if I can help as well :)",
+        "ts": "1576605020.000700",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/864581019170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

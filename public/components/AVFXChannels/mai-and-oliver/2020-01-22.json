@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I spoke to a couple of animators last night and I'm slightly panicking now about getting my showreel ready and good enough for internships haha",
+        "ts": "1579699465.000900",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/916993001392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say your body mechanic work is almost done, you just need to get anything that's blocked to be on spline, but its really strong. You still have a couple of months to perfect your lipsync work so I wouldn't panic, and remember that internships aren't everything, I never got accepted for one, not even the bluezoo one, but I still got a job there straight out of graduation :slightly_smiling_face:",
+        "ts": "1579703120.001000",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/906902299713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "did you film reference for your 'cat' lipsync shot?",
+        "ts": "1579703148.001100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/918952275543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

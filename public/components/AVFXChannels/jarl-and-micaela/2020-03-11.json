@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela, \n\nHow are you? I hope things are going well for you these days. Just thought I'd say hello since it's been a little while. \n\nA project I worked on over a year ago while at Milk VFX is finally getting released soon. It was a lower budget one, but I'm still excited for it. Michael Caine is the voice of the sandman character, and I had a lot of fun animating to his vocal performance. None of my shots are in the trailer, but just figured it might be fun to share:\n\n<https:\/\/youtu.be\/gH2qKK52E3k|https:\/\/youtu.be\/gH2qKK52E3k>",
+        "ts": "1583943771.000100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/983929101745_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Four Kids and It | Official Trailer | Sky Cinema",
+                "title_link": "https:\/\/youtu.be\/gH2qKK52E3k",
+                "author_name": "Sky TV",
+                "author_link": "https:\/\/www.youtube.com\/user\/skyatlantic",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/gH2qKK52E3k\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Four Kids and It | Official Trailer | Sky Cinema",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/gH2qKK52E3k?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/gH2qKK52E3k",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/gH2qKK52E3k"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583943772.000000"
+        }
+    }
+]

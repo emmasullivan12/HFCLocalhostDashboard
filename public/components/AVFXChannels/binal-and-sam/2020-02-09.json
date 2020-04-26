@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Binal, I'm so sorry for not replying in so long! I really didn't mean to be rude or waste your time, and I should have at least let you know that I was going to take a while to reply. Lots of things happened in the last few weeks that stopped me from being able to respond, but if you are still willing to help mentor me I'd love to know what it is like working at Framestore!",
+        "ts": "1581241536.001900",
+        "username": "Sam Mowforth (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-09\/933572972129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can I ask what projects you have worked on? I'm very curious about which ones you have enjoyed the most and why :slightly_smiling_face:",
+        "ts": "1581241613.002000",
+        "username": "Sam Mowforth (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-09\/945582169735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

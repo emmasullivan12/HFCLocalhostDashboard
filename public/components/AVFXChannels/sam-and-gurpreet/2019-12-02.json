@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, I generally don't know that much, but I would like to work at aerospace engineering, because I enjoy looking at the planes how they are made, and I watch a lot of documentaries about it and is quite interesting also I would really love to work in airport site.",
+        "ts": "1575357477.003900",
+        "username": "Gurpreet (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/849385663745_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The main thing is that I don't know if I'm going on right track to be there.",
+        "ts": "1575357508.004000",
+        "username": "Gurpreet (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/857328591045_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

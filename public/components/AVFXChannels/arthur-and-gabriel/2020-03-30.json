@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Gabriel, I hope you had a good weekend, I know Lisa-Mae she is in my team here at Blue-Zoo : ) and I have also had the pleasure of meeting Eqizia they are both lovely! It's what makes Blue-Zoo great for me some lovely people here\n\nNice reel! I understand it's WIP but one small tip would be to put your best foot forward and I feel like the renders of the woman (26 seconds in video) would be a better start ot the reel and then start showing the breakdown from that point. Looks like you have nice and clean topology on her and good mesh resolution in the face which is really important for animation. Also nice UV layout, one of our biggest problems is receiving assets from clients with terrible topology or UVs so good job with that! Often time we just prefer fewer tiles it makes other departments lives slightly easier sometimes. Often one tile for the face\/head and one for the body, any accessories can be on a third tile.\n\nWe use Substance Designer and Painter at Blue-Zoo they are great! In terms of baking the high res model, use substance painter to do this or your modeling package if possible. Get a normal maps out in 16bit .tif or something if you can and displacement maps out in a 32bit EXR  to keep as much information as possible, it really depends on how much detail your mesh has, and remember to load them in as RAW in Maya or whatever you are reading them into.",
+        "ts": "1585594054.002800",
+        "username": "Arthur Tibbett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1038438824535_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of render engine, Arnold is fantastic and feature rich and you can get some really nice looking results, but if computing resources aren't on your side and you have an nVidia graphics card then I would recommend Redshift",
+        "ts": "1585594115.002900",
+        "username": "Arthur Tibbett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1023643104562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's so quick and you can get some really nice results with it if you push it the right way. I've found lately that if you get into the right rhythm between Substance\/Maya\/Redshift you can really start churning out cool stuff, because you can be so iterative because rendering is relatively quick. Hope this helps, if you want more technical advice just let me know and maybe I can check it out for you",
+        "ts": "1585594257.003000",
+        "username": "Arthur Tibbett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1038300584006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Yeah there's definitely loads of value in trying lots of things at this stage",
+        "user": "U5WR9CJTC",
+        "ts": "1499679375.215098",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How are you getting on with your career plan?",
+        "user": "U5WR9CJTC",
+        "ts": "1499679425.232754",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

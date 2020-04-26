@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi craig, how have you been ? :) just wanted to check in it's been a while  and to ask about what we spoke about before and hearing what your friend had to say about my latest render I showed you? Hope your well.",
+        "ts": "1581627628.000100",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/951662707893_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

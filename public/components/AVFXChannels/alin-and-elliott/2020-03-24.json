@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Awesome dude, nice to meet you.",
+        "ts": "1585066421.002500",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022456509220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was fairly intense but yeah we looked back on the very first game designs too. Ah 3rd year always tends to build up a bit of pressure. Do you have any portfolio put up somewhere to get a sense of your work?",
+        "ts": "1585066791.002600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022927474480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What was his\/her name? It's true, we had a team of facial artists there, who were mainly tasked to do facial shapes and some tech fixes (inside of the mouth, teeth position). I was actually part of the team from the beginning because it's a great way to ease your way into the pipeline and the whole studio environment.",
+        "ts": "1585067014.002700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010158543186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did a bunch of shapes for different background characters from Maleficent. I helped a bit on Cats and then the whole Sonic wave came so after modelling I did all the shapes for him.",
+        "ts": "1585067137.002800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1012895034513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the beginning, I thought of it as being something easier than hardcore sculpting characters from a sphere but I've grown to think the opposite almost. It's way more subtle and you really need to know and get a sense of the bones, muscle, fat, and skin to make a believable shape.",
+        "ts": "1585067427.002900",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022513898836_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah nevermind I just googled you. Your reel is great man, is likely among the best student reels I've seen.",
+        "ts": "1585067828.003000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010205545714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And you presented everything in a super professional way with all the right components that'd get you a job in VFX I think!",
+        "ts": "1585068040.003100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022998438672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

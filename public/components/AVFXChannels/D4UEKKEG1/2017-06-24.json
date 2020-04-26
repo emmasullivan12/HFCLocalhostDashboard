@@ -1,0 +1,47 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F5Z4F99FW",
+                "created": 1498342232,
+                "timestamp": 1498342232,
+                "name": "Prospela Thumbnail - Copy.png",
+                "title": "Prospela Thumbnail - Copy.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 3886,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Z4F99FW\/prospela_thumbnail_-_copy.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5Z4F99FW\/download\/prospela_thumbnail_-_copy.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5Z4F99FW-ec12f8416e\/prospela_thumbnail_-_copy_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5Z4F99FW-ec12f8416e\/prospela_thumbnail_-_copy_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5Z4F99FW-ec12f8416e\/prospela_thumbnail_-_copy_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 125,
+                "thumb_360_h": 109,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F5Z4F99FW-ec12f8416e\/prospela_thumbnail_-_copy_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 125,
+                "original_h": 109,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5Z4F99FW\/prospela_thumbnail_-_copy.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5Z4F99FW-15bf1888c0",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498342233.037847"
+    }
+]

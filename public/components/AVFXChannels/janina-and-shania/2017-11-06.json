@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just leaving work and will call you when I’m home. Might be just a few mins after 7 :-)",
+        "ts": "1509993355.000265",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/267770355282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok \n",
+        "ts": "1509995234.000374",
+        "username": "shania.jf.8 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/267932963269_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shania! Just tried calling you but can't get through!? ",
+        "ts": "1509995861.000069",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/268679288998_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you call me please? ",
+        "ts": "1509995868.000409",
+        "username": "janina.schendel (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/267940175797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

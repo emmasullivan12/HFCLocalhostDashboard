@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Arran,\nSorry for the late reply, I've been busy with my geography coursework.\nI didn't reply yesterday because I was having trouble getting the link to load on my phone, but it's opened up on my PC so I shall have a look at it now",
+        "ts": "1547506023.006600",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-14\/524623125447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for the feedback! My CV looks more organised now, the Art Stars Award is actually a really old award I got from High School years ago not sure if I should include it.\nI'll check out google alerts and see how that'll benefit me - I have wondered in the past if there was a way to get instant notifs about current news updates so that's definitely interesting :slightly_smiling_face:",
+        "ts": "1547506493.006700",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-14\/523574832274_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

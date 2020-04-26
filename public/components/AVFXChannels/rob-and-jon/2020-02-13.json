@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jon, sorry I haven't been in touch today. Film students are not always the best for getting back to people, I haven't heard from the director today but will hopefully have more news tomorrow",
+        "ts": "1581614952.013000",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/950792223668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

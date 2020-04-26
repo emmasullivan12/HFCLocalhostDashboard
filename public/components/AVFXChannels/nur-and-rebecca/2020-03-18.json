@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nur, thank you so much for your kind message!! I really send all my best to you in such a difficult time, I hope soon we can have some certainty to the situation we've been put in. I hope you are staying safe and healthy too :-) !!",
+        "ts": "1584556044.005100",
+        "username": "Rebecca Johnson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1011577116503_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great to know you are fine, Rebecca.\nI hope you can make your time at home enjoyable. Here is a link for you to listen which I believe you may be interested.\n<https:\/\/www.accessvfx.org\/podcast>\n\nPlease do not hesitate to ask your questions on these days too. I will be happy to assist.\n\nStay safe and healthy!\n\n",
+        "ts": "1584556974.005200",
+        "username": "Nur Diker Koksal (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/998291756771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That looks great thank you! :D",
+        "ts": "1584558156.005300",
+        "username": "Rebecca Johnson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1011682381655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

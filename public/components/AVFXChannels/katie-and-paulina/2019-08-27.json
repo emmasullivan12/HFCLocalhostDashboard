@@ -1,0 +1,171 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1566920017.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1566920018.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d654d50f991f5000426b5be|this link> with other teams to invite them in it_",
+        "ts": "1566920018.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1566920122.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1566920136.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"katie-and-paulina\"",
+        "old_name": "z-shared-23",
+        "name": "katie-and-paulina"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1566920262.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1566920268.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@katie.hallaron has joined the channel_",
+        "ts": "1566920646.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/733413945345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@l.rybakaite has joined the channel_",
+        "ts": "1566920660.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/741980634806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Paulina, please meet Katie your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1566920678.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/728352146595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1566920692.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/741981492614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1566920697.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/733415268017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Katie!! Super excited to talk with you!:&gt;",
+        "ts": "1566920723.001600",
+        "username": "Paulina Rybakaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/739798133088_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm going to write a brief introduction about myself.\nThis year I finished my first year in the University of Hertfordshire on the 3D animation &amp; modelling course. Before coming here I graduated from Justinas Vienozinskis arts school in Vilnius, Lithuania where I’m originally from. It was a four-year course on mostly traditional art (painting, drawing, sculpting, graphic design and graphics being the main subjects). I also graduated from a choir singing school ‘Liepaites’ where I studied for 11 years. And of course high school where I had bunch of different subjects like maths, languages, biology, history etc. I came here originally wanting to do 2D animation (I chose this pathway at the beginning of the first year) but I naturally transitioned to 3D, specifically organic modelling. I haven’t had any 3D experience before coming to the University but I think that I managed to get some solid foundation knowledge in software already (Maya, ZBrush, Photoshop, a little bit of Nuke). Recently I’ve been very keen on creature sculpting and anatomy and I believe that that’s what I would like to do as a job. I’m also very interested in rigging and CFX (muscle, skin, fat sim) and planning to take rigging elective in my second year, which I think should be very useful. My current goal is to improve my current skills and build a strong showreel which could get me an internship in the VFX industry at the end of my second year. I really hope that this connection that we’re going to build with you will benefit both of us!:&gt;\nI’m going to share my previous works below.\nWorks that I did in arts school before coming to the uni: <https:\/\/www.flickr.com\/photos\/138761672@N03\/>\nModelling works at uni:\n<https:\/\/vimeo.com\/337044306>\n\nOh and my main interests are: sculpting (both traditional and digital), lighting, colour theory, cinematography, anatomy, cooking, singing, drawing, listening to music, travelling. :’D",
+        "ts": "1566922739.001700",
+        "username": "Paulina Rybakaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/741714901431_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Flickr",
+                "title": "Paulina Leonarda Rybakaite",
+                "title_link": "https:\/\/www.flickr.com\/photos\/138761672@N03\/",
+                "text": "Explore Paulina Leonarda Rybakaite's 49 photos on Flickr!",
+                "fallback": "Flickr: Paulina Leonarda Rybakaite",
+                "thumb_url": "https:\/\/live.staticflickr.com\/4905\/45651786914_d6e0acff9c_k.jpg",
+                "from_url": "https:\/\/www.flickr.com\/photos\/138761672@N03\/",
+                "thumb_width": 2048,
+                "thumb_height": 1365,
+                "service_icon": "https:\/\/combo.staticflickr.com\/pw\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.flickr.com\/photos\/138761672@N03\/"
+            },
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Paulina Rybakaite - Showreel - Spring 2019",
+                "title_link": "https:\/\/vimeo.com\/337044306",
+                "author_name": "Paulina Rybakaite",
+                "author_link": "https:\/\/vimeo.com\/user76586320",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/784045791_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Email address: \nLinkedIn: ",
+                "fallback": "Vimeo Video: Paulina Rybakaite - Showreel - Spring 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/337044306?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Paulina Rybakaite - Showreel - Spring 2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/337044306",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 2,
+                "original_url": "https:\/\/vimeo.com\/337044306"
+            }
+        ]
+    }
+]

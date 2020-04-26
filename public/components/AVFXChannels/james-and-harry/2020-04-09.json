@@ -1,0 +1,71 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi James. I have made some updates to the Offcut shot. <https:\/\/vimeo.com\/405809754>  PW: HH",
+        "ts": "1586436892.000900",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1060274511585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And made some changes to the grade off the Jumanji shot- <https:\/\/www.youtube.com\/watch?v=JNXywmUkQBU>",
+        "ts": "1586447720.001000",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1052442374819_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "jungle v083",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=JNXywmUkQBU",
+                "author_name": "Harry Havens",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCj2EtySri6zHy1rpXATbBPQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/JNXywmUkQBU\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: jungle v083",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/JNXywmUkQBU?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=JNXywmUkQBU",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=JNXywmUkQBU"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586447720.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Offcut feels much better now. Only thing is the shadow maybe ever so slightly sharp when he is bent over and getting up, it falls next to quite a soft part of the plate. The dust particles movement is feeling better. Good job.",
+        "ts": "1586457123.001200",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1046290148855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Jumanji shot still feels a touch dull. Try a version with more saturation and contrast on the character. Also I think a bit of glow to the plate and character would help this shot. If you soft mask his right side and apply some subtle glow it will help him feel lit by the setting sun. This is the final few percent, where you have got it to currently is looking really nice.",
+        "ts": "1586457449.001300",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1052977695507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,204 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1549563458.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1549563459.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5c5c76423274e7000414734a|this link> with other teams to invite them in it_",
+        "ts": "1549563459.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentees* joined the shared channel_",
+        "ts": "1549564484.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1549564486.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1549564607.000900",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1549565476.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-19\" to \"emma-and-amina\"",
+        "old_name": "z-shared-19",
+        "name": "emma-and-amina"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@moamina53 has joined the channel_",
+        "ts": "1549566087.001100",
+        "username": "smooz (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545084706211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has joined the channel_",
+        "ts": "1549566095.001200",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545031323444_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amina please meet Emma your incredible E-Mentor I've been telling you about! Feel free to introduce yourselves and continue chatting within this channel :wave:\n\nI will now be leaving the channel, but please direct message me if you have any questions. All the best for now! :smile:",
+        "ts": "1549566114.001300",
+        "username": "Dexter Boyce (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/546256144151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1549566123.001400",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545031865092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1549566127.001500",
+        "username": "smooz (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545031944420_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi emma ",
+        "ts": "1549566157.001600",
+        "username": "Amina (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545032597172_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im doing homework right now but i would love to speak to you tomorrow if you are free.",
+        "ts": "1549566259.001700",
+        "username": "Amina (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/546259000439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Amina :wave: So nice to meet you!\n\nMy name is Emma and I work for a tech start-up, but my career hasn't always been in tech. I started in sales, then banking, then in oil &amp; gas, then in education and now technology ... its been a pretty varied journey so far!!\n\nDexter shared your profile with me and am excited to hear more about you and your studies and interests. It seems we're both interested in finance, politics &amp; engineering so I'm sure we have lots to talk about over this programmes (especially politics right now argh!)\n\nIt would be great to hear more about your thoughts on your upcoming options choices too. An important decision, and I can definitely help you think through a few things if you like.\n\nAnyway, enough from me! Let me know what you're hoping to get out of mentoring too. Am excited to be your mentor and help you in any way I can :smile:\n\nP.S That's absolutely fine if you're busy with homework. I'm available almost anytime so just drop me a message and I'll reply as soon as possible",
+        "ts": "1549566351.001800",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545400038693_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FG0JLRPSL",
+                "created": 1549576179,
+                "timestamp": 1549576179,
+                "name": "20190207_214737.mp4",
+                "title": "20190207 214737",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 9031208,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FG0JLRPSL\/20190207_214737.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FG0JLRPSL\/download\/20190207_214737.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FG0JLRPSL\/20190207_214737.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FG0JLRPSL-fc455cc5d4",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1549576180.001900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":joy: I know the feeling girl! Keep with it :facepunch: (I'm working late too if that makes you feel any better)",
+        "ts": "1549576358.002200",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545575427349_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you",
+        "ts": "1549577321.002300",
+        "username": "Amina (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545591420053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

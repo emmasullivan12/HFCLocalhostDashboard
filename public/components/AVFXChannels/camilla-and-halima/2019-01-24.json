@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wowwwwwww!",
+        "ts": "1548342154.008700",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533212882743_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You are FLYING",
+        "ts": "1548342163.008800",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533213066759_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I still need to think of some interview questions for you",
+        "ts": "1548342176.008900",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532358002709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry, i will do that by end of tomorrow",
+        "ts": "1548342183.009000",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531422332160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

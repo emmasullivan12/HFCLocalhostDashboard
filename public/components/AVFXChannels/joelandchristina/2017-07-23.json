@@ -1,0 +1,20 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_add",
+        "text": "added an integration to this channel: <https:\/\/prospela.slack.com\/services\/B6DG7PH9D|incoming-webhook>",
+        "user": "U4VR52RQE",
+        "bot_id": "B6DG7PH9D",
+        "bot_link": "<https:\/\/prospela.slack.com\/services\/B6DG7PH9D|incoming-webhook>",
+        "ts": "1500806961.101772"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_add",
+        "text": "added an integration to this channel: <https:\/\/prospela.slack.com\/services\/B6BTDSMC1|incoming-webhook>",
+        "user": "U4VR52RQE",
+        "bot_id": "B6BTDSMC1",
+        "bot_link": "<https:\/\/prospela.slack.com\/services\/B6BTDSMC1|incoming-webhook>",
+        "ts": "1500809464.243125"
+    }
+]

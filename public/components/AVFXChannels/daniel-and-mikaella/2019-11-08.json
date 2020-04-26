@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pro's and con's I suppose",
+        "ts": "1573214769.005000",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-08\/827003956133_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you been working on any vfx bits lately? Finding the time can be quite tricky but I find even a couple of hours a week can keep your mind on things and get you thinking about it",
+        "ts": "1573214880.005100",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-08\/828853621335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

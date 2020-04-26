@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Will! Hows it going?\n\nSorry for the delay in saying hi!\n\nGuess I should introduce myself, I’m Ben I am currently a compositor working at a small boutique studio called Automatik. I have only been here a few weeks and before that I was working at DNEG where I started as a runner in 2016. I then worked my way up to working in the TV division as a comper.\n\nYou are at uni right?  Which uni are you at? How are you finding it so far (before the world went crazy :stuck_out_tongue:) What kind of stuff have you been working on so far?",
+        "ts": "1586420295.001800",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1069883838816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ben! Sorry for the late reply! \n\nAhh nice, sounds like fun! \n\nYeah I’m currently studying at Pearson’s College London at Escape Studios. I’m finding it to be really fun and interesting so far, up until the virus happened:tired_face:We’ve done a lot of different projects this year which all help to understand the basics of games design, animation, 2D and 3D VFX. I’m currently working on my 2D project from home, and I plan to become a 2D compositor later down the line! ",
+        "ts": "1586451222.001900",
+        "username": "Will Moss (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1052645721523_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh nice! Are you doing one of the degree courses? I few of my mates did the short courses and they really liked it there.\n\nAwesome thats good to hear you have already found a discipline you like! What are you doing for your project that your working from home? What is the set up like for working from home for you? Have uni given you software and stuff?",
+        "ts": "1586455114.002000",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051899399314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Thomas. Hope you’ve had a good weekend. Sorry to be a pain, but I think this week might actually be a little tricky for me as I have to deliver a project. Could we please reschedule for the following week? So that would be Wednesday 24th? Thanks :)",
+        "ts": "1555233418.000200",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-14\/611592272038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

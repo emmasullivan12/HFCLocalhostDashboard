@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "HI THERE!!! OMG! I am SO excited!!! Please, do excuse me if I cannot contain my excitement! T0T",
+        "ts": "1583851752.001900",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/978671657490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OPS! OK, good to know that hitting ENTER just sends the message, rather than making a new paragraph! Sorry about that!",
+        "ts": "1583851790.002000",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/991479543573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First things first, shall I call you by your surname or first name? Whatever you are comfortable with, I am happy with it.",
+        "ts": "1583851827.002100",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/993672863062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "After I have learned that you are going to be my mentor, I did a little digging, I'll admit. Hahaha! (NOT in a creepy way! No worries!) I am SO excited and happy that I have you as my mentor. I feel so lucky and grateful!!!",
+        "ts": "1583851896.002200",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/991010348884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right now, I just wanted to say a quick 'Hi!'. I am right now at the studio (at the campus, I am a MA Animation Production student at Arts University Bournemouth) and it is a busy day. I am giving a helping hand to few BA 3rd year projects, as much as possible. And right now I am making a spider web. Ahahaha!",
+        "ts": "1583852010.002300",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/991469748144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will write to you in detail soon and explain myself more in depth.",
+        "ts": "1583852067.002400",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/978684573378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much for your time and energy! Thanks a lot for doing this! I really appreciate it!!!!!!!!!!",
+        "ts": "1583852094.002500",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/993337102135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alev! :smile: What a great message!!! I'm super excited to be working with you - hopefully we can work great together and both gets lots out this!\nFirstly, my name is Niki and that is what you should call me! No formalities here!!! Also, I don't think anyone has ever really refered to me by my surname so it would just freak me out! hahaha!\n\nI just started a new job less than 3 weeks ago, so I will confess this is a super busy time for me too. So in general I will make time each weekend to reach out to you and support you. But during the week, generally it is quite difficult to make time. Of course I will check messages if they come in any time, and reply, but for any proper considered message or feedback, I will do that at the weekend! So I hope that's okay with you :slightly_smiling_face: And of course, I fully understand that you're here in your free time too so if I dont hear from you for a while, that's no problem too! I know you've got lots on too! Lives are busy!\n\nI am very excited to hear back from you with more about yourself and how I can help you on your animation journey! 2D forever!!! :star-struck:",
+        "ts": "1583870342.002600",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/992186550544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

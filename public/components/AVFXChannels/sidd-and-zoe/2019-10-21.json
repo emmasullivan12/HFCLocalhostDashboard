@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! I have a few questions, no pressure to answer them :slightly_smiling_face: it will be going in my professional practice report, with your permission :slightly_smiling_face:\n\n1. How did the process go for you, in regards to getting into the industry? Was the application process pretty simple through, or was there more trial and error?\n\n2. What have you picked up through your experience in the industry that has helped you the most, regarding your work ethic and the potential differences from university\/educational study?\n\n3. Is your work\/life balance easy to maintain, if applicable, what do you do to help maintain it? (this is for a segment based on Toshio Suzuki and his book \"Mixing work with pleasure\" a description of his time working at studio ghibli)\n\nAny other comments regarding the pros and cons for in-house vs freelance work.",
+        "ts": "1571648158.000400",
+        "username": "Zoë Paterson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/791140268355_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Zoe!\nAlright let's see.\n\n1. I'd say that my application process was trial and error. While my first job involved animation it was mainly corporate work so I wasn't awfully relevant. I had done some work experience with some studios while I was still in university which led to me building a couple of contacts (this was mainly through emailing prospective studios asking for any work experience opportunities. I got my break when I was connected via one of my old tutors to the studio I'm with now, while I started with work experience it graduated to freelance work with them which led to a full contract.\n\n2. I'd say that getting into the industry gave me a lot of insight into the production pipeline. The experience also helped improve my animation skills drastically through real world application of my skills on projects, as well as getting constant feedback from my supervisors and peers. Working for a client and understanding what liberties\/limitations I had to work with helped me schedule myself better as well as improve my communication skills. Likewise my communicating became easier when I started working with a team of people collaboratively.\n\n3. I find that I've managed to balance my work and regular life fairly well. I fortunately don't have to do overtime as frequently as say maybe other studios so I get plenty of time to relax afterwards. I spend most of my time pursing all sorts of hobbies like watching films, playing video games, going to conventions and setting time aside to meeting friends and family. Planning things out in a calendar helps immensely, i",
+        "ts": "1571666198.000500",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802491841636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for the pros and cons of in house vs freelance,  let me list some quick ones off the top of my head:\nPros for in house:\nFast peer review (usually)\nStability in income.\nProjects are provided to you.\nTax and other boring things are sorted out for you\nAccess to a lot of resources (like programs)\n\nCons:\nYou usually follow strict working hours\nNot a lot of flexibility for personal commitments and projects\nTravel to and from work can be expensive\nYou can't choose projects, your choice in what you do in very limited in most cases.\n\nPros for free lance:\nComplete control over what projects you work on\nYou can choose working hours that suit you best\nWork where ever and whenever as long as you have the means\nRelated to the work hours but you can pick and choose when you work on your own projects\nYou can build an interesting portfolio",
+        "ts": "1571666978.000600",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802987377797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

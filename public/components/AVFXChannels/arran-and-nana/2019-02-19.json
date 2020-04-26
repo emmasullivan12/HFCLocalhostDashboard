@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For this I wanted know a bit more about interview pratice.",
+        "ts": "1550581348.001300",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554709664578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure Nana! What do you know so far...?",
+        "ts": "1550600048.001400",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/556121392295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example, (1) do you know what a \"Behavioural Question\" is? (2) Have you ever come across the STAR approach to answering interview questions?",
+        "ts": "1550600049.001500",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/556121406295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know where you'd like to begin and what you'd like to understand... and I'll do my best to explain everything :+1:",
+        "ts": "1550600095.001600",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/555054815138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

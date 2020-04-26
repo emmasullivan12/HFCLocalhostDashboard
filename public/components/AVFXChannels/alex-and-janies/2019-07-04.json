@@ -1,0 +1,203 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've checked escape studios and it seems quite cool but I haven't done any work of that sort.. I'm looking something more of software development or testing.",
+        "ts": "1562248666.001900",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/686969716343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll be sure to check the first link you sent. Thanks a lot!",
+        "ts": "1562248688.002000",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685119689840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That was quite nice..",
+        "ts": "1562248884.002100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/678773123169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I'm going to settle on doing the digital and technology solutions Bsc with Queen Mary's university of London",
+        "ts": "1562248932.002200",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/686974219015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I should certainly look into more options because this is my only option right now and I probably should have a back up incase I don't get in Queen Mary's",
+        "ts": "1562248991.002300",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/684654239332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Queen Mary's looks good but yeah it's better to have a back up in place. It'll make it less stressful for you as well",
+        "ts": "1562252489.002400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685175204400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yh true.. just need to find somewhere good\/convenient",
+        "ts": "1562252694.002500",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/684707725476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I have a few months till I have to decide for certain",
+        "ts": "1562252714.002600",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/678828531569_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope your work is going well",
+        "ts": "1562252723.002700",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/673764236562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how about University of Greenwich?",
+        "ts": "1562252743.002800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685190190277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "or the Open University?",
+        "ts": "1562252777.002900",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685190632373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not familiar with either, just saw they're in London",
+        "ts": "1562252796.003000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/684709256596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Greenwich is very far.. \nAnd I haven't really heard of Open university?",
+        "ts": "1562252988.003100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/687032732679_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.independent.co.uk\/student\/student-life\/its-not-what-you-achieved-before-that-counts-its-your-will-to-succeed-now-2054075.html>",
+        "ts": "1562253128.003200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685184262512_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "The Independent",
+                "title": "\"It's not what you achieved before that counts, it's your will to",
+                "title_link": "https:\/\/www.independent.co.uk\/student\/student-life\/its-not-what-you-achieved-before-that-counts-its-your-will-to-succeed-now-2054075.html",
+                "text": " ",
+                "fallback": "The Independent: \"It's not what you achieved before that counts, it's your will to",
+                "ts": 1281916849,
+                "from_url": "https:\/\/www.independent.co.uk\/student\/student-life\/its-not-what-you-achieved-before-that-counts-its-your-will-to-succeed-now-2054075.html",
+                "service_icon": "https:\/\/www.independent.co.uk\/img\/shortcut-icons\/icon-72x72.png",
+                "id": 1,
+                "original_url": "https:\/\/www.independent.co.uk\/student\/student-life\/its-not-what-you-achieved-before-that-counts-its-your-will-to-succeed-now-2054075.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow! That's soo cool!!",
+        "ts": "1562254271.003400",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685198992160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I never knew about this",
+        "ts": "1562254278.003500",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685210258037_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Need to look into it a bit more",
+        "ts": "1562254309.003600",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/687344198774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

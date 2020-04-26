@@ -1,0 +1,9 @@
+[
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498908438.434563",
+        "user": "U62P24HC5",
+        "text": "<@U62P24HC5> has joined the group"
+    }
+]

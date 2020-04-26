@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I fleshed out my LinkedIn page finally, been meaning to do it for a while :blush:",
+        "ts": "1551463852.000700",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-01\/564948138978_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGM82399T",
+                "created": 1551463909,
+                "timestamp": 1551463909,
+                "name": "CV2018.pdf",
+                "title": "CV2018",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 359731,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGM82399T\/cv2018.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGM82399T\/download\/cv2018.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGM82399T-9d206bbdfa\/cv2018_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 910,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGM82399T\/cv2018.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGM82399T-eec8e0489c",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1551463910.000800"
+    }
+]

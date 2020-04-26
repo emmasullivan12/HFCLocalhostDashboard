@@ -1,0 +1,187 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh and I meant to ask, do you have a website or place I can view some of your work? I'd love to see it.",
+        "ts": "1586353299.004200",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050473018470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah of course -- Funny you saying you don't have a reel, cause I've never made one either! Since starting freelance, i've slowly been putting spots up here though\n<https:\/\/vimeo.com\/sbeck>",
+        "ts": "1586369964.004300",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053291772581_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "title": "Stephen Beck",
+                "title_link": "https:\/\/vimeo.com\/sbeck",
+                "text": "Stephen Beck is a member of Vimeo, the home for high quality videos and the people who love them.",
+                "fallback": "Vimeo: Stephen Beck",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/portrait\/32240194_640x640",
+                "from_url": "https:\/\/vimeo.com\/sbeck",
+                "thumb_width": 640,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/i.vimeocdn.com\/favicon\/main-touch_180",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/sbeck"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586369965.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha nice! Well I don't feel so bad now.\n\nAmazing work! So you do a lot of the 3D animation? For example, you animated the hedgehog. Did you do all the compositing, texturing\/lighting, modeling, etc.?",
+        "ts": "1586373461.004500",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050913543334_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or are you working with a team? Seriously great stuff!",
+        "ts": "1586373638.004600",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053403412885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thanks, appreciate that. all that work is a mixture of sup'ing \/ animating \/ rigging. The hedgehog I was supervising mainly as I had other stuff on at the time. My team was made up of 1 Houdini fx, 1 lighter \/ LD artist, 1 snr look dev artist, 1 x modeller, a generalist jr on the asset creation side, and a tech Houdini jr. and i would rig \/ animate when i was in the building or wasn't pitching\/bidding things.",
+        "ts": "1586374294.004700",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1053422601253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the lighter and i would generally switch out suping depending on the job or who was the busiest.",
+        "ts": "1586374347.004800",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068065638096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "we had an animation production arm as well called friends electric. I spent a lot of time dealing w\/ pitches for that.",
+        "ts": "1586374397.004900",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057645490513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "going forwards I'll certainly be able to advise you on sup'ing and what to look for with shots and whats standing out in your work, but I'm not going to be much help with specific tech details of how you might affect shader values to achieve what might improve it.. if that makes sense",
+        "ts": "1586374764.005000",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046020547351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's awesome! I currently doing preproduction on a new short with my son and daughter while we are all at home. I wrote a cute script and am making some props I am really proud of. I am going to try to do a study on Jurassic Park and put a raptor in my house... Got a pro sound guy, a colorist, a couple of modelers\/riggers, and an animator (although the two modelers were initially excited  but not sure they have started anything yet haha) that have said they want to be a part.",
+        "ts": "1586375512.005100",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046022686007_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That being said, all the character animation in your videos is really fascinating to me.",
+        "ts": "1586375545.005200",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050946706390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And thank you! Any advice you offer on anything is sincerely appreciated and will be of great value to me. Anything you don't know how to advise on, you are completely free to let me know haha. I am just super excited to be able to visit with someone who speaks my language as I mostly work alone in this field.",
+        "ts": "1586375695.005300",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048905557634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ha, nice! sounds like a fun project. I'm impressed you have time to make this with a kid and a FT job!",
+        "ts": "1586383242.005400",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046043806935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this weekend ill break down some of your stuff and see what stands out.\nif you need any thoughts on what you're going to shoot or anything, feel free to bounce some thoughts around.",
+        "ts": "1586383357.005500",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1051061861590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha I don't know that I have the time. I just try to make it for creative stuff to keep me going. And my kids love it.\n\nA little later I'll send you my script and animatics I am working on and if you have any thoughts I'd love your input.",
+        "ts": "1586384002.005600",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049276525026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah sweet",
+        "ts": "1586385226.005700",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1051082211622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

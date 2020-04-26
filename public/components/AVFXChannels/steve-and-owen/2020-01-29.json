@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Owen, I've had a quick look at your profile statement thingy but I think what's best to start of it to tell me a bit about what you're doing at the moment and what you'd like to be doing in the future. If you have any specific questions about animation or showreels\/CVs etc then please feel free to chuck it all in and I'll answer everything as best I can =]",
+        "ts": "1580293940.001600",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-29\/916782555073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

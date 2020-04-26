@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you . It’s going to take while to be resolved :\/ but good to hear you graduated \nWell done. Congratulations on that !! \n\nAhh the struggle begins . Have you applied at DNeg as well ? And I’m assuming you are looking for artistic roles only and nothing technical ? ",
+        "ts": "1565999705.000900",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/728963851268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

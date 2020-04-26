@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "text": "Backup  HTML \/ CSS as of 10th May",
+        "files": [
+            {
+                "id": "FAMJ3QKU4",
+                "created": 1525980523,
+                "timestamp": 1525980523,
+                "name": "Test.prospela.com - Backup CSS HTML.docx",
+                "title": "Test.prospela.com - Backup CSS HTML.docx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "filetype": "docx",
+                "pretty_type": "Word Document",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 16225,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FAMJ3QKU4\/test.prospela.com_-_backup_css_html.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FAMJ3QKU4\/download\/test.prospela.com_-_backup_css_html.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/FAMJ3QKU4\/test.prospela.com_-_backup_css_html.docx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FAMJ3QKU4-87b42446bd",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1525980524.000325"
+    }
+]

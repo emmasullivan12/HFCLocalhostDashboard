@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've always been really interested in storytelling. I originally wanted to be a script writer but then fell in love with the world of animation. I did multimedia in my home city Reykjavik but always with the focus on 3D. Although, having an understanding of graphic design, video making, motion graphics etc has helped me a lot with understanding composition and colors. After working in a graphics department at a broadcasting company for a little bit I got into the final year of a 3D course in England. Straight after that I did my masters in Digital Effects. I did a short stint at a vfx company after graduating but didn't really resonate with the atmosphere and type of work you do in film. I actually tried to move back to Iceland twice but the lack of animation studios made it difficult. I literally applied everywhere in Europe and in the end it was between moving to England again or Austria. I chose England as I was familiar with living here and stayed here for a year. I tried moving back home the second time, and managed to get in some freelance work for artists and creating a course for Pluralsight. Then I moved back here and have been working in the same company for almost three years now. I hadn't done any professional lighting before that as I had focused solely on comp but said I was willing to learn. It's not always straight forward but I found keeping in contact with school mates helped and got me some freelance work when I needed it as well as knowing which companies are hiring when. It definitely helps having a friend on the inside :slightly_smiling_face:",
+        "ts": "1565268689.000700",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-08\/722503089766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, so you are aiming for modelling mostly? If you want I can ask a modeller here what they look for in a portfolio\/showreel if that helps",
+        "ts": "1565268739.000800",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-08\/708923104306_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

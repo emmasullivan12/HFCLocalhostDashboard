@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amazing, thank you!",
+        "ts": "1587471969.001200",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1061239280407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll probably get onto this over the weekend, in the meantime have a look at these video tutorials by Keith Lango. They're over 10 years old now but all of the fundamental knowledge is still in there, I watched these again recently actually and got a good reminder of a few things I'd forgotten! Mainly the rig is just a little outdated, newer rigs are a lot easier to work with as you don't have to counteranimate the hips and shoulders like he has to in this tutorial.\n\nIf you have any questions let me know!\n\n<https:\/\/www.youtube.com\/watch?v=OmtSapfQyQs>\n<https:\/\/www.youtube.com\/watch?v=FB8D4gTLdmk>",
+        "ts": "1587490056.001300",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1077032179091_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "VTS22a: Walks &amp; Such",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=OmtSapfQyQs",
+                "author_name": "Keith Lango",
+                "author_link": "https:\/\/www.youtube.com\/user\/keithlango",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/OmtSapfQyQs\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: VTS22a: Walks & Such",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/OmtSapfQyQs?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=OmtSapfQyQs",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=OmtSapfQyQs"
+            },
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "VTS22b: Walks &amp; Such",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=FB8D4gTLdmk",
+                "author_name": "Keith Lango",
+                "author_link": "https:\/\/www.youtube.com\/user\/keithlango",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/FB8D4gTLdmk\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: VTS22b: Walks & Such",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/FB8D4gTLdmk?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=FB8D4gTLdmk",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 2,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=FB8D4gTLdmk"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587490057.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks ill give these a watch!",
+        "ts": "1587502665.001500",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1083491764964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

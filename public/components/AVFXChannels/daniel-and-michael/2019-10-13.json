@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're welcome! I see!\n\nYeah, that makes a lot of sense.\n\nThanks very much!",
+        "ts": "1570990989.000800",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/787375215265_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I've made really good progress with the roto! I've applied the steps I'd use to comp it to this video, I'm not sure if that's something I should do but it looks a lot tighter for it. Please let me know what you think whenever you're able! <https:\/\/youtu.be\/_Us1lSnACCc>",
+        "ts": "1571011341.000900",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/793445754756_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "michaelVodden_roto_comp_v09.11",
+                "title_link": "https:\/\/youtu.be\/_Us1lSnACCc",
+                "author_name": "Michael Vodden",
+                "author_link": "https:\/\/www.youtube.com\/user\/Artifexan",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/_Us1lSnACCc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: michaelVodden_roto_comp_v09.11",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/_Us1lSnACCc?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/_Us1lSnACCc",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/_Us1lSnACCc"
+            }
+        ]
+    }
+]

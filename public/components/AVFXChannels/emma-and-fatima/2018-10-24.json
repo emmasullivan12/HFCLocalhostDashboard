@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah New York is great!! :statue_of_liberty:",
+        "ts": "1540409044.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/463591849123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A long way to fly for just a few days though!! I'm still jet lagged ergh",
+        "ts": "1540409058.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/463592068611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Note taking for exams does take a long time I agree. It's worth thinking about why you are taking notes in the first place: is it because it helps you remember? If so, could typing instead of writing save you time and have the same effect?",
+        "ts": "1540409131.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/463519066532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could you spend a bit more time up front planning \/ organising how you will revise, so that it is more effective when you do i.e. organise your notes better so that they are quicker and easier to navigate?",
+        "ts": "1540409164.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/463085273585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Think about other little hacks that can save you time too. You could look at your general \"wellness\" and habits i.e. how many hours sleep do you feel you need vs how many are you getting? How much exercise do you need vs actually do? Could you combine exercise such as walking as part of a commute to a job? Could you get a part-time job that is relevant to your studies or future career ... there are lots of little ways you can \"kill two birds with one stone\" :bird:",
+        "ts": "1540409281.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/465093413094_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "P.S Did you ever finish setting up your team for Wings of Hope? Would love to hear how its all going!",
+        "ts": "1540409322.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/463087594177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Something interesting that I've been working on: I spun up a few servers to have a play around with some new skills I'm learning and could see from the logs lots of bots automatically attacking my new servers!! Scary, but a great way to learn how to hack and have robust security!",
+        "ts": "1540409387.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/465094983286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you heard of DigitalOcean or Amazon Web Services before?",
+        "ts": "1540409413.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/465095294742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lots of questions hehe :laughing:",
+        "ts": "1540409521.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-24\/463090474065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

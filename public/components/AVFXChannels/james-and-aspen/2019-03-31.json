@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for getting in touch again! Great news on your university offers! I decided to take a fairly big promotion at work, so I’ve moved back to our head office in Cambridge, and I’m not in Texas any more. I was a bit sad to leave Austin, but at least I’m back in Britain at a nice time of year and the sun has been out all weekend!",
+        "ts": "1554048363.001200",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/596069919142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The first programming I did in a community was writing mods for Sim City 4, I think modding is a fun way to play with games and explore the rules and systems they are built in and do one of my favourite things about programming; try something out and see what happens next! I think it’s one of the worst things about more and more games being locked down, becoming online, having anti-cheat mechanisms built in, and coming as binary blobs on mobile - you can’t change anything about them! I used to like hacking on flash games when they were popular, and wrote tools that let me read and modify game saves for flash games - that was a form of modding too, especially when a game didn’t  validate the save file and you could change things further than the developer intended. I learned a lot from modding and it was some of the most fun I had with programming!",
+        "ts": "1554048711.001300",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/594603566804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think you want this page for information on student finance <https:\/\/www.gov.uk\/get-undergraduate-student-loan> it looks like there are some forms to fill in that will tell you how much maintenance loan you can get, and a form to apply for the funding. I can’t read any further than that first page without creating an account though. There’s this guide too, but it doesn’t look much clearer! <http:\/\/media.slc.co.uk\/sfe\/1920\/ft\/sfe_how_you_are_assessed_and_paid_guide_1920_o.pdf> and another one here <https:\/\/www.ucas.com\/student-finance-england\/living-costs-full-time-students>",
+        "ts": "1554049117.001400",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/596074653382_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Get undergraduate student finance: step by step - GOV.UK",
+                "title_link": "https:\/\/www.gov.uk\/get-undergraduate-student-loan",
+                "text": "Check if you're eligible for a student loan, find out how much you can get, how to apply and when you start repaying.",
+                "fallback": "Get undergraduate student finance: step by step - GOV.UK",
+                "image_url": "https:\/\/assets.publishing.service.gov.uk\/static\/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png",
+                "from_url": "https:\/\/www.gov.uk\/get-undergraduate-student-loan",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 15380,
+                "service_icon": "https:\/\/assets.publishing.service.gov.uk\/static\/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png",
+                "service_name": "gov.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.gov.uk\/get-undergraduate-student-loan"
+            },
+            {
+                "service_name": "UCAS",
+                "title": "Living costs for full-time students",
+                "title_link": "https:\/\/www.ucas.com\/student-finance-england\/living-costs-full-time-students",
+                "text": "You can get student finance to help towards your living costs while you’re at university or college. Find information here about maintenance loans, maintenance grants &amp; special support grants.",
+                "fallback": "UCAS: Living costs for full-time students",
+                "image_url": "https:\/\/www.ucas.com\/sites\/default\/files\/md-3608-livingcostsfulltimestudents-1200x630px.png",
+                "image_width": 476,
+                "image_height": 250,
+                "ts": 1515583591,
+                "from_url": "https:\/\/www.ucas.com\/student-finance-england\/living-costs-full-time-students",
+                "image_bytes": 877459,
+                "service_icon": "https:\/\/www.ucas.com\/sites\/all\/themes\/ucas\/favicon.ico",
+                "id": 2,
+                "original_url": "https:\/\/www.ucas.com\/student-finance-england\/living-costs-full-time-students"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nottingham seems like a great choice, I’ve been looking at the campus and course details and it sounds like a really nice course!",
+        "ts": "1554049728.001600",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/592222504336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think if you get a chance to work in America and it is something you want to do it would be a good opportunity to take. The work culture in America can be quite different from a British company, which can be a shock, but can also be a good thing. There’s a lot to see in America, and the computing and AI industries are so busy that there are lots of good companies to choose from doing really interesting things.",
+        "ts": "1554049885.001700",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/594610843188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Congrats on your promotion, welcome back to England, thanks for the advise on the modding I think I will try that after my exams in june,",
+        "ts": "1554100465.001800",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/595336737685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

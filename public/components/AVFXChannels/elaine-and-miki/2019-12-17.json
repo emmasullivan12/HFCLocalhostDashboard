@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Elaine! Thank you for asking!! I felt it went really well, and they told me they’ll let me know on Wednesday. So let’s see what happens! Crossing fingers now:pray::skin-tone-4::pray::skin-tone-4::pray::skin-tone-4:",
+        "ts": "1576573288.000200",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/865122238291_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

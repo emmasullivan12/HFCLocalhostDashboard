@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi iyi ! I was worried that because I'm not a texture artist my feedback might not have been that helpful for you . But I hear you have someone else more relevant too. Which is cool.",
+        "ts": "1553791588.000100",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/589400892176_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have been asked if I want to mentor some one else too and I have said yes. Because I'm not sure how activity I can be of help to you.",
+        "ts": "1553791697.000200",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/583101918225_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So please keep showing me your work and keeping it up. I just wanted to let you know.",
+        "ts": "1553791778.000300",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592896843431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ask me if you need anything. Looking forward to seeing your tree progress :evergreen_tree:",
+        "ts": "1553791823.000400",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592898109207_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":+1:",
+        "ts": "1553791830.000500",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592898319431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, you have been a lot of help so far. I will look to you for more feed back on my tree and other projects.",
+        "ts": "1553793016.000600",
+        "username": "Iyioluwa Owoyemi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/589443053984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

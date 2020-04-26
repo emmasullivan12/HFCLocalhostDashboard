@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Simone! Not to worry, I just wanted to check you were getting Slack notifications as I wasn't for a while. Thanks for sharing your work. For the Robocop short, the chase through the garden version is much more energetic and interesting than the airport security one and has a lot more potential for some really fun cartoony animation.\n\nMy main note is that the punchline at the end with him baking cakes for the granny doesn't feel earned because it's not connected to anything we've seen before. Here's my thought process! ...\n\nThe idea of granny forcing him to do a task is a good punchline but why not have the gran make the robot fix her fence instead? That makes more sense to me instead of \"you broke my fence so bake me some cakes\".\n\nThe next element is what happened to the robber? This robot wants nothing else but to fullfil his mission to catch the robber, he's a badass, nothing can stop him except for...a granny? Why is that? How about the gran is really stern with him, is there a moment you could have where the robot tries to move her out the way but she's having none of it? She's a super exaggerated no-nonsense old lady who puts robocop in his place.\n\nFinally how about while he's fixing the fence we see the robber getting away or better still mocking the robot while he works on the fence?\n\nAll just suggestions though, see what you think! Did you want any particular feedback on your other work? I didn't want to comment on something too much if it can't be changed!",
+        "ts": "1573566178.002800",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-12\/818304942546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way if you've not got it already check out the book Character Animation Crash Course by Eric Goldberg, it's a fantastic guide to cartoony animation written by the guy who animated the Genie in Aladdin.",
+        "ts": "1573568459.002900",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-12\/833006975959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

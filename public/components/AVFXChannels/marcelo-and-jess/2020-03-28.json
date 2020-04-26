@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marcelo! I'm so so sorry for the late response, things have been a bit up in the air this month, my partner was hospitalized and checking here slipped my mind. It's lovely to meet you! Story boarding sounds interesting, I hope the UK has been treating you well! I'm Jess, a freelance illustrator (from the UK) who's looking to work in the animation industry, ideally in layout or bg painting (I'm a big sucker for colours), or visdev.\n\nI've previously studied illustration and animation, but I love always trying to branch out my knowledge and grow more, as soon as I seen Prospela's post on Twitter regarding mentors\/students I jumped on it, it's lovely to be matched with you! I've been feeling a bit beat down lately about entering the industry, jobs seem few and far between and it leaves me feeling a bit stagnant, bleh. I've heard of It's Pony, have you been enjoying working on it?",
+        "ts": "1585403019.000100",
+        "username": "Jess Bernadette (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1023144533329_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

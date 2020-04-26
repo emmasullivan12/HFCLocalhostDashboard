@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, how are you? I am receiving anything from you, Are you Busy?",
+        "ts": "1509915470.000036",
+        "username": "kaurm-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/267430738469_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not receiving*****",
+        "ts": "1509915485.000053",
+        "username": "kaurm-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/267213627779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes sorry!! Been very busy with work.. still working now! :see_no_evil: ",
+        "ts": "1509916102.000078",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266774240753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you doing?",
+        "ts": "1509916114.000044",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/267340583588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "EY is one of the big four accountancy firms in the world ",
+        "ts": "1509916134.000124",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/267340626756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did business studies at sixth form - then went on to do accountancy at university ",
+        "ts": "1509916161.000027",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266774394945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I managed to get an internship at EY when i was 19.. and got offered a job for when i was 21 ",
+        "ts": "1509916181.000017",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266636837472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was then an auditor of banks for 3 years at EY and qualified as a professional accountant",
+        "ts": "1509916206.000055",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/268373904215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And now i am still at EY but work in advising retail and hospitality companies on buying and selling companies ",
+        "ts": "1509916231.000030",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266774586833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

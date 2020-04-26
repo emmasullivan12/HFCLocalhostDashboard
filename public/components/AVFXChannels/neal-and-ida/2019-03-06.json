@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi again! I´ve got my first questions ready.\nWhat is your role at the company you are working at and what do you enjoy the most about working there?\nIt would be interesting to hear about how a typical workday looks like for you.\nThank you for answering!",
+        "ts": "1551896623.000100",
+        "username": "Ida Durvard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569004492642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

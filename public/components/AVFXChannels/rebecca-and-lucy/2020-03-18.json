@@ -1,0 +1,56 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think a problem is you have diffuse in this metal - metal doesn’t have it unless you’re masking the diffuse to say rust or dirt ",
+        "ts": "1584517757.006800",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1007959036016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.artstation.com\/artwork\/aL4JR>",
+        "ts": "1584517792.006900",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1010169897590_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Material Studies: Metals, Jarrod Hasenjäger",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/aL4JR",
+                "text": "Hello all, this is my first entry into what will be a series of studies on different materials, including but not limited to metals, plastics, paints, wood, refractive and SSS materials. I will continue to add to each category as I finish more examples. I do not claim that these results are scientifically accurate in look, they are only the result of personal studies and observation done outside of work, to further my own knowledge and skill. It would be great if this could help somebody else too, so please like, share or comment if you find this helpful, and please feel free to hit me up with any suggestions or thoughts, should you have any. All shaders and renders are done in Houdini.",
+                "fallback": "ArtStation: Material Studies: Metals, Jarrod Hasenjäger",
+                "image_url": "https:\/\/cdna.artstation.com\/p\/assets\/covers\/images\/002\/354\/174\/large\/jarrod-hasenjager-shaderdev-cover-v01.jpg?1460664522",
+                "image_width": 444,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/aL4JR",
+                "image_height": 250,
+                "image_bytes": 334489,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-0f13db57ff834cdb02b24a2ae4857ddf.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/aL4JR"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584517793.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is meant to look rusty\/dirty is that what you mean or do you mean not to diffuse the metal at all ?",
+        "ts": "1584561636.007100",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1009997627653_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

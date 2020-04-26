@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies, my app didn't notify me about your reply. I have currently heard nothing about the work experience but I know the studio is really busy at the moment, I also tried to get experience in the theatre yesterday but I wasn't experience enough so didn't get it, that old catch 22 haha.",
+        "ts": "1563364432.002300",
+        "username": "Zoë Paterson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/690860759873_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm currently making a film in uni at the moment, I am revisiting my character designs because I'm still not happy they are giving the film the right mood. :) I can send you some of my work over to have a look at of you like? :)",
+        "ts": "1563364501.002400",
+        "username": "Zoë Paterson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-17\/685789868610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,97 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @merlintravas I thought these might be useful:",
+        "ts": "1541600493.003800",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473286176865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.thestudentroom.co.uk\/university\/courses\/veterinary\/veterinary-work-experience>",
+        "ts": "1541600494.003900",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473719674052_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Veterinary Work Experience | The Student Room",
+                "title_link": "https:\/\/www.thestudentroom.co.uk\/university\/courses\/veterinary\/veterinary-work-experience",
+                "text": "Work experience is a wonderful prospect- a chance to dive into veterinary practices, farms, kennels and rescue centres, across the country and do all the jobs that any sane person would flat out refuse to do, in your precious spare time… for free. It is recognised by all animal establishments as an opportunity for free slave labour. And it’s one of the many requirements to get into veterinary school.",
+                "fallback": "Veterinary Work Experience | The Student Room",
+                "from_url": "https:\/\/www.thestudentroom.co.uk\/university\/courses\/veterinary\/veterinary-work-experience",
+                "service_icon": "https:\/\/static.thestudentroom.co.uk\/5be2d626866bf\/forum\/images\/miscellaneous\/favicon_192.png",
+                "service_name": "thestudentroom.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.thestudentroom.co.uk\/university\/courses\/veterinary\/veterinary-work-experience"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.thestudentroom.co.uk\/showthread.php?t=5179746>",
+        "ts": "1541600511.004100",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473719938020_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "The Student Room",
+                "title": "Work experience for vet school - what did you do?",
+                "title_link": "https:\/\/www.thestudentroom.co.uk\/showthread.php?t=5179746",
+                "text": "I have a year to get as much work experience as I can. I’m wondering what types of work experience is valued the most by vet schools and what everybody d",
+                "fallback": "The Student Room: Work experience for vet school - what did you do?",
+                "thumb_url": "https:\/\/static.thestudentroom.co.uk\/5be2d626866bf\/forum\/images\/base\/logo-facebook.png",
+                "from_url": "https:\/\/www.thestudentroom.co.uk\/showthread.php?t=5179746",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/static.thestudentroom.co.uk\/5be2d626866bf\/forum\/images\/miscellaneous\/favicon_192.png",
+                "id": 1,
+                "original_url": "https:\/\/www.thestudentroom.co.uk\/showthread.php?t=5179746"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't know if you've heard of the student room before, but my Vet friend recommended it and these links to better understand the sorts of work experience  you might like to look for :ok_hand:",
+        "ts": "1541600546.004300",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473286964145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She also mentioned that it's not for the faint-hearted and can be quite a sad job on occasions, however she finds it incredibly fulfilling helping animals and their owners live happy lives together!",
+        "ts": "1541600658.004400",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/475292934326_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sure you know about the sciences required, but she mentions that, preferably Chemistry and Biology are the subjects you are doing, although Physics and Mathematics are also highly valued.",
+        "ts": "1541600688.004500",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473289149905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

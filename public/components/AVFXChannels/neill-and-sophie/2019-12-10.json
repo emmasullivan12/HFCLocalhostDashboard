@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Neill, I’m so sorry I never replied to this sooner, the app got lost on my phone and I just never catched the notifications! I can imagine it’s been very busy at your work at the moment, especially with the different films coming out at the moment. You mentioned that you worked on the fast and furious film, how was that?",
+        "ts": "1576026859.000100",
+        "username": "Sophie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/868296180384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I managed to secure a compositing internship at DNEG during the summer this year! It was a great experience, I really enjoyed it! I’m now back at university completing my final year and working towards creating my final year project which I’m hoping to incorporate a lot of VFX in.",
+        "ts": "1576026922.000200",
+        "username": "Sophie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/870157147783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

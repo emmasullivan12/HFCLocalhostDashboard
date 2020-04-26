@@ -1,0 +1,299 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I'm gonna spend some time ranking up on league.\n As for python, I was introduced to it in year 9 and since in school we would do challenges found on exam boards to get a better understanding of programming in general. But in the summer, I tried to make my own RPG but entirely text based. I think I gave up on it because, I discovered what you could do with OOP but I still need to learn a lot. I've stopped focusing on python since then I guess so I could focus on coursework I have. I've also decided to do my computer science coursework in Visual Basic, since its something I am comfortable with and suits the task I'm doing.\nCould I ask how you knew all of the things you mentioned about me? I think I get the league one but python wow!",
+        "ts": "1585732251.002800",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040264065412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hahaha sorry I hope it didn't come off as creepy! :smile: it's from the information you shared when you applied for this e-mentoring",
+        "ts": "1585743308.002900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1031110860705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so I thought maybe I can start by telling you a little bit about myself and my journey so far, just so that you get to know a bit more about me, then we can discuss what you'd like to get out of this (of course if new things come up we can always address them)",
+        "ts": "1585743383.003000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029660623587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm Greek, but I was born and raised in Luxembourg, where I went to school until I was 18 years old",
+        "ts": "1585743423.003100",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1028367800978_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I loved playing videogames growing up, both on the PS1 as well as on PC, and this worked as a \"gateway\" for my interest in computers",
+        "ts": "1585743480.003200",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1043021142310_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there was also a chat platform called IRC, with an application (mIRC) which had its own scripting language, and that's how I started creating some custom user interfaces etc.",
+        "ts": "1585743521.003300",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029665572371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did some Visual Basic too (VB6!) and I generally messed around with things like Photoshop, websites etc.",
+        "ts": "1585743564.003400",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1031119960833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was quite certain that I wanted to continue learning more about computers, but I also had this interest in \"visual\" aspects, like the videogames I loved!",
+        "ts": "1585743684.003500",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041145727392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "my math teacher in school suggested that I study computer science if I want to pursue this further and given my existing curiosity I did apply and went to study informatics in Edinburgh",
+        "ts": "1585743739.003600",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040657821620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think by that point I hadn't done as much programming as maybe you have so far! :smile:",
+        "ts": "1585743760.003700",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041148520016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in university I discovered artificial intelligence, which caught my attention and I ended up focusing on that for my studies, but I still had this love for games and animation. I was actually enrolled in a Master's degree when a lecturer emailed me about this doctoral programme with the opportunity to do a placement in a company and some of the names where EA and Disney, so I thought that sounds amazing!",
+        "ts": "1585743899.003800",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041153631072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I applied for the doctorate and when I was fortunately accepted, I asked if I could cut my Master's short to make it a Bachelor's, which the university allowed. So after 4 years in Edinburgh I started my doctorate, placed at a small animation studio in Soho (London) - where I discovered just how technical the whole film and TV industry has become! It also became apparent that my computer science and AI background could prove useful to solve some complex problems in this new domain.",
+        "ts": "1585744036.003900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1043041262214_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fast forward a few years, after I've completed my doctorate, I applied for a software developer job in a big Visual Effects company called DNEG",
+        "ts": "1585744074.004000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040670162004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "we work on big blockbusters like Interstellar, or films from the Marvel universe or James Bond, as well as smaller but critically acclaimed films, like Ex Machina, and of course TV series",
+        "ts": "1585744134.004100",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029687980611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "more specifically I'm in the Research &amp; Development department of DNEG :slightly_smiling_face: day to day we use a LOT of Python, as well as C++, but at the end of the day it's the way of thinking that is transferable and is the most important thing",
+        "ts": "1585744184.004200",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040674338996_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "now, I realise I've written a wall of text! But hopefully you have a bit more of a background in terms of my journey so far",
+        "ts": "1585744222.004300",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040676159876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "have you thought about industries or things that excite you? if not (which is fine, it's not easy) what do you find most interesting these days?",
+        "ts": "1585744282.004400",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040678857748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "any other questions?",
+        "ts": "1585744291.004500",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041169153312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow, didn't know I put league of legends when signing up!\nI, also, love visual aspects of technology as I feel that's the most important feature in any application because that's what makes it memorable. Growing up, I loved The Legend of Zelda series and the earlier pokemon games. I was always interested in how they come up with little details to add to the game to make it fun. Game theory is something I'm personally interested in\nIt's probably why I want to get into the gaming industry just so I can be part of games that will, hopefully, be amazing. Having said that, I would like to help develop anything that could be used to help the world, if the opportunity rises.\n\nAs for questions:",
+        "ts": "1585746798.004600",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1043161820214_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is living away at a university?",
+        "ts": "1585746835.004700",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041225732645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How prominent is computer science in the world of film making?",
+        "ts": "1585746916.004800",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1043167444678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These days, I'm actually shocked that there isn't any company (not that I know off) that is developing any piece of technology to help with the biggest problems of the world. Surely they could sell the idea to a government? I know right at this moment, it's quite difficult but  for the last 3 years, awareness is being raised but nothing is actually happening...",
+        "ts": "1585747104.004900",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041293591232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for personal interests, I'm into football, reading books on history or cs and video games.",
+        "ts": "1585747304.005000",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029828775827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "very cool! :slightly_smiling_face:\n\nLiving away was great, I think it was an important part of growing up and being independent and I enjoyed it a lot! Made new friends, discovered new things about myself etc. Edinburgh is also a lovely, friendly city so this helped! It's not too small, but it's not huge either. I think if I had come to London maybe I would have found it more difficult. Obviously I was very lucky to be able to do so.\n\nI think it's also important to keep in mind that university is not necessary for a career as a programmer (though I found it useful and interesting). Do you think you'd be interested in studying at university or more on picking up key skills?\n\nFilm making was always driven by technology, and now that means software: a lot of work doesn't happen in front of a camera anymore! There's big studios, like DNEG, who work on post-production and visual effects. Then there's pure software companies that write software for film making e.g. The Foundry is a very successful UK company that sells their software throughout the world!\n\nI would argue that there are universities and companies that try to tackle big, important problems. Unfortunately, they might not get as much publicity as other things like silly apps. :slightly_smiling_face: For me climate change is an important problem. What sort of problems do you feel need immediate attention?",
+        "ts": "1585755788.005100",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1043654192454_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also, now that you know a bit more about me: what do you think you'd like to get our of this mentorship? :slightly_smiling_face:",
+        "ts": "1585756118.005200",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1031768444497_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I definitely want to go to university just for the experience and possible the option to live away.\nClimate change is pretty important, I think this decade, there will be a much stronger effort to find solutions and governments actively trying to do something about it.\nAs for other problems, I think finding ways to make medicine, teaching and generating energy more effectively is going to be important.",
+        "ts": "1585756291.005300",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1043829010983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From the mentorship, I would probably like to get a good grasp of what I should\/could do to improve my own skills and learn from any mistakes you have made or anything you would do differently.",
+        "ts": "1585756506.005400",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1031789733041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

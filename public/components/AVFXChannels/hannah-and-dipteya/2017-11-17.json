@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was more of when the delivery came, there were a few stocks missing ",
+        "ts": "1510918072.000095",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/274077860802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I checked which ones were and informed them ",
+        "ts": "1510918084.000212",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/273422322016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And My predictied grades are AAA",
+        "ts": "1510918110.000145",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/273562555969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F81L7EF9N",
+                "created": 1510946923,
+                "timestamp": 1510946923,
+                "name": "Dipteya Nileshkumar- CV.docx",
+                "title": "Dipteya Nileshkumar- CV",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "filetype": "docx",
+                "pretty_type": "Word Document",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 24207,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F81L7EF9N\/dipteya_nileshkumar-_cv.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F81L7EF9N\/download\/dipteya_nileshkumar-_cv.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F81L7EF9N\/dipteya_nileshkumar-_cv.docx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F81L7EF9N-3b2c8366a3",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1510946923.000277"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what are your future aspiration??",
+        "ts": "1510946938.000089",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/274388756676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

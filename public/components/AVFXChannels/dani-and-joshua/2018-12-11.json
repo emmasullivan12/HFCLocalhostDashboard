@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oooh maybe an angry animated speech balloon? Like in a comic? :slightly_smiling_face:",
+        "ts": "1544536892.001300",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500915860034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I think I can quickly do that\nDo you have any animation practices I can do while I'm off uni next year? ",
+        "ts": "1544545661.001400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500981594947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

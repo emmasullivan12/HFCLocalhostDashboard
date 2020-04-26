@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Halima.. how are your studies going?",
+        "ts": "1508266580.000275",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257741274626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My partner is a private hire driver so it will be hard to relocate due to the nature of his work. Maybe once I have enough experience in my field it would then be feasible to move to London but in the meantime maybe freelance or starting my own business is the way to go :’) ",
+        "ts": "1573829434.001900",
+        "username": "Sahra Al (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/838161877111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the spirit of world kindness day, I would like to say THANK YOU for all the advice you have given me so far! I honestly am in disbelief that this scheme exists in the first place! I’m very grateful to have you as my mentor on this journey :heart::sparkles:",
+        "ts": "1573859552.002000",
+        "username": "Sahra Al (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/825563482371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

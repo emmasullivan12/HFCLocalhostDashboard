@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just to follow up on what I was offering, today we send two of my shots on Aladdin to the client for feedback (I just realised they did announce that we are working on that project on our website). It is the first time they see my work on these shots, so this often feels like the trickiest point in a shot's animation progression, because depending on how they respond, if they don't like it, I could have to start over on a given shot. Fingers crossed they are pleased!",
+        "ts": "1544693982.000100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/502162776064_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jarl! Sorry the late response!\nI would love to know more about the Vfx pipeline :) ",
+        "ts": "1544694659.000200",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/504310473478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What did you animate??",
+        "ts": "1544694665.000300",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/502909624626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh no problem, I just figured I might as well go ahead and start sharing stuff because I suppose that's got to be somewhat relevant for your interest in VFX too :) I'm animating Abu. It's really fun!",
+        "ts": "1544710014.000400",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/504155474487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also wanted to share this little breakdown of a CG fox we did at my company: <https:\/\/www.artstation.com\/artwork\/mqza2E>",
+        "ts": "1544712617.000500",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/502410860560_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "One Of Us - Ziva Fox, Gael Kerchenbaum",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/mqza2E",
+                "text": "Fox done at One Of Us. Ziva was used to create this creature. Our wonderful CG Supervisor was Ceylan Shevket Jawara Rigging and Technical Animation done by Lasse Rasmussen Animation done by Jarl Midelfort Look dev was done by Justin Long and Boyan Baynov I was responsible for the modeling and texturing of the skeleton, muscle and actual fox. I also did the render, lighting, part of the look dev and comp on this breakdown. Thanks a lot to Clementin Massin for the great advice on the compositing. Rachel Ward , Cedric de La Forest Divonne and Jarl Didelfort did the animation of the actual movie. A huge thanks to all the people involved and One Of Us for this great project. <https:\/\/www.weacceptyou.com\/>",
+                "fallback": "ArtStation: One Of Us - Ziva Fox, Gael Kerchenbaum",
+                "image_url": "https:\/\/cdnb.artstation.com\/p\/assets\/covers\/images\/014\/402\/163\/large\/gael-kerchenbaum-screenshot-59.jpg?1543843988",
+                "image_width": 302,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/mqza2E",
+                "image_height": 250,
+                "image_bytes": 152601,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-206688562398eeb8f01c3782e9bc4210.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/mqza2E"
+            }
+        ]
+    }
+]

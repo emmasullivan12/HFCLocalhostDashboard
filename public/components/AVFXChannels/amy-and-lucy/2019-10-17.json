@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m good thank you! Hope you’re good too. At the moment we’re working on a group collaboration project with some cinematographers creating a scene with an orb in it! I’d love to run the idea past you and get any feedback about the story line. ",
+        "ts": "1571314823.001900",
+        "username": "Lucy White (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-17\/798495458404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much! I’ll let you know when I hear from them :)",
+        "ts": "1579129186.001100",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/908397758117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just got a response from an interview I had before christmas for RodeoFx at Munich. They made me an offer, but the problem is its just on the weekends part time..... on one side could be good, but on the other side its not great for many reasons obviously haha I will have to give it a thought..",
+        "ts": "1579129262.001200",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907933640724_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

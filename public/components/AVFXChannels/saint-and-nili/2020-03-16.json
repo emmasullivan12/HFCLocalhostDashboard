@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Saint! Apologies for the late response - I don't receive notifications from Slack sometimes!  \nLet me introduce myself - I am Nili Bhavsar and I'm currently studying character animation at Central Saint Martins. I do traditional 2D animation and I have keen interest in pre-production side (especially concept art, character design and story art altogether).",
+        "ts": "1584397439.001900",
+        "username": "Nili B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/991483187666_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can see some of my works at <http:\/\/www.artofnili.com|www.artofnili.com>",
+        "ts": "1584397467.002000",
+        "username": "Nili B. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004289536821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

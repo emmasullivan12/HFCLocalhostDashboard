@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Feeling more positive lately! We are going to do this and create a vfx reel.  Hold tight, I will post when I have something clear for you to help me on. I won't let you down.",
+        "ts": "1581874007.000500",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/944546155937_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

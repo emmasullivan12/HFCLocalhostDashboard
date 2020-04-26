@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! ",
+        "ts": "1551995157.001100",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570737425989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I’m happy with my offers. I’ve got an unconditional from Kingston, conditional from Westminster and Greenwich — just need to attend my LSB interview on the 29th of March. ",
+        "ts": "1551995208.001200",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570369083204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I liked Kingston in terms of how they teach because the lecturers were very friendly and they properly introduced the course to us and other students spoke to us about their experiences however they don’t have the resources that Westminster has",
+        "ts": "1551995252.001300",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570412717746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Westminster has a lot of work spaces and machinery etc. Kingston was a little crammed and requires you to book sessions when working on machinery sooo I’m tied between these two ",
+        "ts": "1551995321.001400",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/569839362817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, my mock exams are going well! They started this week and I finish my last exam next Monday. I’m so tired though I’ve been having 2h and 3h exams in a day :sleeping:",
+        "ts": "1551995384.001500",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/569666103904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, when you take a break from working on your clients and think through the business side, is it practical stuff that you work on daily or is it just evaluation in your mind (and notes)? Do you make schedules to organise your work or are you organised naturally? ",
+        "ts": "1551995705.001600",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/571854327270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

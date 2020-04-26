@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "heya! hope youre good! how did it go??",
+        "ts": "1564518481.001400",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-30\/704583319985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

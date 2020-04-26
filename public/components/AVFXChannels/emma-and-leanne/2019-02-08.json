@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Leanne, I met up with my friend from Blue Zoo the other day and she was telling me about <https:\/\/animdojo.com\/> which was set up by blue zoo as a great training programme for animators. Forgive me if you already know about this, thought I would pass it along , Emma",
+        "ts": "1549630958.001200",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/546095572949_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "AnimDojo: The online animation gym.",
+                "title_link": "https:\/\/animdojo.com\/",
+                "text": "An affordable of improving your CG character animation skills.",
+                "fallback": "AnimDojo: The online animation gym.",
+                "from_url": "https:\/\/animdojo.com\/",
+                "service_name": "animdojo.com",
+                "id": 1,
+                "original_url": "https:\/\/animdojo.com\/"
+            }
+        ]
+    }
+]

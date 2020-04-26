@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have done, just checking in to see how your doing? I hope your keeping safe at this insane time.",
+        "ts": "1584901886.002600",
+        "username": "Jafar Mohammad (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1019524440359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I was a fine art major in college which helped for fundamentals but the technical stuff was mostly from youtube. That can be a good way to learn but when I was starting out I couldn't tell the difference between good and bad tutorials. Yeah I enjoy it! Do you lean towards hard surface or organic, or both equally? Schedules can be tight at framestore too but I'm fortunate that there is often time to add some extra quality. I don't think coming from a small studio would preclude you from being taken seriously. It all just comes down to the reel. There's a guy in the lighting department who worked for 8 years at a 3-person studio in minneapolis, and that was the only place he had worked. But his work was awesome and the head of department liked that he could wear a lot of different hats, including on-set supervision",
+        "ts": "1584714386.002500",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1004769360721_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that guy isn't a vfx supervisor yet but he is a lead lighter",
+        "ts": "1584714439.002600",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016606975783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would say I'm paid the typical rate for a junior artist in nyc, which isn't a ton but it's enough. The problem id that I might not get a raise for like 4 or 5 more years",
+        "ts": "1584717880.002700",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1015045565029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,109 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Having the robot in my house rolling around exploring my floor reminded me of this talk by Kate Darling. She’s a researcher looking at the ways people interact with robots and how they feel a personal connection like they are pets. I remembered the talk this morning when the robot got stuck on the edge of a table and started making sad noises, and I said “Oh, how have you got stuck - this is your own fault, I’ll help you this time but next time you’re on your own” <https:\/\/www.ted.com\/talks\/kate_darling_why_we_have_an_emotional_connection_to_robots\/up-next#t-696558>",
+        "ts": "1543155888.002400",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487447149474_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "TED",
+                "service_url": "http:\/\/ted.com",
+                "title": "Kate Darling: Why we have an emotional connection to robots",
+                "title_link": "https:\/\/www.ted.com\/talks\/kate_darling_why_we_have_an_emotional_connection_to_robots\/up-next#t-696558",
+                "author_name": "Kate Darling",
+                "author_link": "https:\/\/www.ted.com\/speakers\/kate_darling",
+                "thumb_url": "https:\/\/pi.tedcdn.com\/r\/talkstar-photos.s3.amazonaws.com\/uploads\/44fcc0c2-f88a-4bcc-b104-dcd747ad7671\/KateDarling_2018S-embed.jpg?h=150&w=267",
+                "thumb_width": 267,
+                "thumb_height": 150,
+                "text": "We're far from developing robots that feel emotions, but we already have feelings towards them, says robot ethicist Kate Darling, and an instinct like that can have consequences. Learn more about how we're biologically hardwired to project intent and life onto machines -- and how it might help us better understand ourselves.",
+                "fallback": "TED Video: Kate Darling: Why we have an emotional connection to robots",
+                "from_url": "https:\/\/www.ted.com\/talks\/kate_darling_why_we_have_an_emotional_connection_to_robots\/up-next#t-696558",
+                "service_icon": "https:\/\/pa.tedcdn.com\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.ted.com\/talks\/kate_darling_why_we_have_an_emotional_connection_to_robots\/up-next#t-696558"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yes I have a trip on Tuesday for a computer science event called computer science in action, what should I be expecting?",
+        "ts": "1543173390.002600",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487510209730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That video is amazing",
+        "ts": "1543174242.002700",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486908674081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow",
+        "ts": "1543174244.002800",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/488563793319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That robot is amazing too, how much did it cost, and I have seen some adverts about these robots",
+        "ts": "1543174378.002900",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487713535029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Kate Darling spoke at one of our company events, giving an extended version of that TED talk, I found it very interesting. It is amazing to think about how we react to robots and what it will mean for how we design them and how that will change how comfortable we feel with them in the workplace and our lives. I find it really interesting.",
+        "ts": "1543186253.003000",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487557665474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The robot cost about £140, I received a bonus this month for some of my work, and I’d seen the adverts too and wanted to see how it worked. I think they have a python development SDK coming out soon - which I’m interested in playing with. ",
+        "ts": "1543186436.003100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486953736945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The “Computing in action” looks like a great set of speakers. I hope Nigel Shadbolt gives a good talk on AI, you’ll have to let me know what he talks about and whether you find it interesting. He should have something linking big data and AI and the history and future of AI. You might find the stuff on computer vision quite interesting too. Computer vision is an interesting mash-up of AI algorithms and computer graphics algorithms, and its own set of algorithms to together help a computer to see, and is obviously a huge part of self driving cars, robotics and similar AI fields. I’m interested what the digital forensics talk is about and whether you found it exciting. I would guess digital forensics is also about handling big data, but personally I’ve never really looked at what happens in digital forensics.",
+        "ts": "1543187620.003200",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487460618771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

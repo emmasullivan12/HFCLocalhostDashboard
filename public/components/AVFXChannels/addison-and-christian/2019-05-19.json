@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Addison, had a busy two weeks sorry. I just wanted to take this opportunity and thank you again for all your help! It was really helpful for me to talk to someone in the industry and get notes.",
+        "ts": "1558292960.007000",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-19\/639930772933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my showreel at the moment with the finished arm shot in it: <https:\/\/vimeo.com\/334313358>",
+        "ts": "1558292991.007100",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-19\/628518785299_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Compositing Showreel 2019",
+                "title_link": "https:\/\/vimeo.com\/334313358",
+                "author_name": "Christian Heim",
+                "author_link": "https:\/\/vimeo.com\/user98144726",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/780571763_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Compositing Showreel 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/334313358?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Compositing Showreel 2019\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/334313358",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/334313358"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "could be improved obviously, but time was a big issue in the end. I tried to fix everything you've told me tho. Lighting is still not quite right but better than before I think",
+        "ts": "1558293120.007300",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-19\/628541059682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is looking so much better! I'm super impressed consider the quick turnaround at the end.  Hopefully what I said was sorta helpful? ",
+        "ts": "1558299725.007400",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-19\/642159061990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's your next step? Are you finished uni for this year now?",
+        "ts": "1558299737.007500",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-19\/639464866756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

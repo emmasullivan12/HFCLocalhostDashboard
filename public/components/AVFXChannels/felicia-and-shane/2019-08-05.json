@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@felicialpetersen has joined the channel_",
+        "ts": "1565028854.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/710401541425_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@shanebr32 has joined the channel_",
+        "ts": "1565028863.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/710401758849_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shane, please meet Felicia your incredible E-Mentor I've been telling you all about :smile:.  I've shared a bit of background on you both with one another, but still feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but both please direct message myself or emma-prospela if you have any questions - we'd be happy to support! All the best for now! :slightly_smiling_face:",
+        "ts": "1565028975.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/710403982801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1565028985.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/716760732597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1565028989.001500",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/710404295409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Shane! I'm Felicia, I've been comping for almost 3 years now in everything from tv, commercial and film. I hope that I can provide the suport that you're looking for and I'm happy to answer any question about anything and everything. I'm in the middle of a move right now so might be a bit irregular in my answers, but I'll do my best to get back to you as soon as I can. \nLooking forward to hearing from you!",
+        "ts": "1565030306.001600",
+        "username": "Felicia Petersen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/716787935125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Felicia. That's no problem I'm in a similar situation so no worries about speedy replies. I've been doing some pretty basic comping the last year and a half. Im moving in 4 weeks too and buying a decent PC to focus on upskilling in my spare time. Managed to get a good deal on a nuke license from the foundry so no excuses now :stuck_out_tongue:.                                                                  I guess to get the ball rolling I'd like to know what are your key tasks as a junior comper  in your current job and what aspects did you find most challenging when learning these skills.   My last 18 months of compositing (again very basic) have been on Kids TV mixed media cartoons so I assume our pipelines are quite different.                                                                    No need to rush to reply. Best of luck with the move!!!",
+        "ts": "1565038154.001700",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/719073142022_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will do my best, Now is good time to go to the next level, \n\nI did apply for small studios as well, tomorrow I have job interview as technician for LiDAR Lounge but Visa is the main issue.",
+        "ts": "1560678863.000400",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-16\/655137236690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I have to say recently I become Autodesk Beta tester for new Procedural System which that called Bifrost. \n\nIn terms of Houdini I really need your help, I had some basic tutorial but most of Houdini is about FX, do you know any resources for environment mostly procedural edge damage or sth like that?",
+        "ts": "1560679116.000500",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-16\/655138304466_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

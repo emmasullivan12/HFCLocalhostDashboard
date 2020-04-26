@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was thinking also to make a creature animation. But yes thank you! I think this is a very good advice!! Don't worry I am also very busy, moving house in the middle of this pandemic is not the best!",
+        "ts": "1585575753.002300",
+        "username": "Anna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1025442558385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I can animate with my pc!",
+        "ts": "1585575761.002400",
+        "username": "Anna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1022700890162_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A creature shot would add more variety to your reel and is a great way to review the animation basics in a new way. But what is your specific reason for wanting to do one?",
+        "ts": "1585584673.002500",
+        "username": "Mondundu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1037847096950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

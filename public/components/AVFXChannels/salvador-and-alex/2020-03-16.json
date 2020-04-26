@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alex. Cinesite is still working on shows but quite a few shoots have been postponed due to the virus. I am expecting a gap work wise around end of summer\/early autumn. \n\nI think that talent is important, but being a good team member is more important. You can be the best artist in the world, if you don’t work well in a team, you won’t last. \n\nNever stop learning. Ever. Tools change. Skills change. You don’t want to get stuck with a dying software. \n\nToday, I would learn Unreal or Unity. There is a big shift towards real-time coming soon. ",
+        "ts": "1584354627.007900",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1002401892517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am moving house this week and will then be on holidays, so I will probably take longer to reply. ",
+        "ts": "1584354661.008000",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/992309283681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's very interesting cheers. \n\nWe're actually going to be learning unreal in my 3rd year so I'm glad I will be able to say I have that as a potential skill and hopefully I will have some work from it next year to put on a showreel.",
+        "ts": "1584355764.008100",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1002420200368_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My uni has called it, all lessons will be online until further notice.\n\nI don't know how this will effect work without access to all the software and without the face to face support of our tutors.",
+        "ts": "1584391957.008200",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004104146597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

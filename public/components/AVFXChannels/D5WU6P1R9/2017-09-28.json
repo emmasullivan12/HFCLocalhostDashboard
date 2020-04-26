@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Back on the platform ",
+        "user": "U5X3WPT29",
+        "ts": "1506628249.000472",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

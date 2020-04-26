@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1550765619.000100",
+        "username": "Mohammed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557106535395_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "author_name": "Mohammed",
+                "author_subname": "Mohammed",
+                "fallback": "[February 21st, 2019 4:13 PM] mohaabdinasir2: Sorry saw this messages abit late.\nBut here are the people I follow and that inspire me everyday.\n@grantcardone on insta [ very successful entrepreneur with 7 businesses. Just became a billionaire and had no money at the age of 25 and is now 50+ years old. O highlight recommend his book the 10xrule\n\n@garyvee on insta and YouTube [ another successful entrepreneur who inspires me because of his work ethics and willingness to motivation and inspire the next generation of entrepreneurs\n\n@johnlee on insta, Facebook and Twitter ( my mentor) [ another successful entrepreneur . he's just amazing, thought me \nThe power of social media and how to use it to your advantage and getting noticed. \n\n<@U9TBAM9EV>Harrington on Insta and twitter( he's another successful entrepreneur who has helped me overcome any fear when it comes to public speaking hence why I always have a question to ask:joy::rolling_on_the_floor_laughing:\nHas also allowed me to be able to go on stage and share the stage with him and the likes of my other mentor johnlee, Vince Wong, Simon coulson and the king of entrepreneurs RICHARD BRANSON \n\nhope that was helpful.\nGo and check these people out and I'm sure they'll change how you think and see the world",
+                "text": "Sorry saw this messages abit late.\nBut here are the people I follow and that inspire me everyday.\n@grantcardone on insta [ very successful entrepreneur with 7 businesses. Just became a billionaire and had no money at the age of 25 and is now 50+ years old. O highlight recommend his book the 10xrule\n\n@garyvee on insta and YouTube [ another successful entrepreneur who inspires me because of his work ethics and willingness to motivation and inspire the next generation of entrepreneurs\n\n@johnlee on insta, Facebook and Twitter ( my mentor) [ another successful entrepreneur . he's just amazing, thought me \nThe power of social media and how to use it to your advantage and getting noticed. \n\n<@U9TBAM9EV>Harrington on Insta and twitter( he's another successful entrepreneur who has helped me overcome any fear when it comes to public speaking hence why I always have a question to ask:joy::rolling_on_the_floor_laughing:\nHas also allowed me to be able to go on stage and share the stage with him and the likes of my other mentor johnlee, Vince Wong, Simon coulson and the king of entrepreneurs RICHARD BRANSON \n\nhope that was helpful.\nGo and check these people out and I'm sure they'll change how you think and see the world",
+                "footer": "From a thread in #hello-students",
+                "id": 1,
+                "author_link": "https:\/\/prospelaautumn2.slack.com\/team\/UCZSX3VGE",
+                "author_icon": "https:\/\/avatars.slack-edge.com\/2018-09-21\/440771935317_32aef316f0ded1a430e5_48.jpg",
+                "ts": 1550765590,
+                "color": "D0D0D0",
+                "mrkdwn_in": [
+                    "text"
+                ]
+            }
+        ]
+    }
+]

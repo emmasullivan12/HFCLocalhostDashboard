@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! just to let you know hes emailing them later today i think he's looking for people to recommend so if your not interested but know anyone you'd think would be i can pass it on :D",
+        "ts": "1586952160.004700",
+        "username": "billympetha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1062445548949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh my god that would be awesome! Thank you!",
+        "ts": "1586964478.004800",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063006934709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Emailed him! Hopefully I'm not too late!",
+        "ts": "1586965800.004900",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1049722347847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

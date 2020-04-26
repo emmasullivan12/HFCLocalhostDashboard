@@ -1,0 +1,56 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/CxB5tuCqT0w>",
+        "ts": "1575218081.017400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/855214054581_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Breaking Into the VFX industry: A guide on showreels, interviews, life balance, networking and more",
+                "title_link": "https:\/\/youtu.be\/CxB5tuCqT0w",
+                "author_name": "Hugo's Desk",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCv-7AV9139ZwlwTHiBwS-JQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/CxB5tuCqT0w\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Breaking Into the VFX industry: A guide on showreels, interviews, life balance, networking and more",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/CxB5tuCqT0w?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/CxB5tuCqT0w",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/CxB5tuCqT0w"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have seen it! I follow hugo a lot and watch many of his videos",
+        "ts": "1575218713.017600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/842425306050_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!",
+        "ts": "1575218719.017700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/855207854528_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

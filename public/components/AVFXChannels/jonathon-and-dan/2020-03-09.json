@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm glad you found it useful. I know there is quite a bit there but you can look into it at your own paces and it might help raise some questions about different things you want to know.\n\nOk so in regards to weekly conversations we could try to do something around lunch times so 12 or 1. Alternatively if its not to late I could do 7pm after I get back from work. I'm fine with it to been a Tuesday or Wednesday.",
+        "ts": "1583747574.000900",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/975937660018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As long as you don't mind me taking up your lunch breaks, I'm happy to do 12 or 1!",
+        "ts": "1583765618.001000",
+        "username": "Dan Ahern (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/976453403794_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

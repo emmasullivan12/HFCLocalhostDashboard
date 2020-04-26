@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mo \n\nYou should have a think about what sort of business you'd like to get involved with.\n\nI think a great way of starting this is by getting a part time job. I worked in John Lewis for a while and also pubs and bars and it gave me an idea of what I did and didn't enjoy. Have you thought about looking around?",
+        "ts": "1538928058.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-07\/452036633447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

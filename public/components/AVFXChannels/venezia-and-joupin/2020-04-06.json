@@ -1,0 +1,96 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there! Thank you for sharing all of that, it was a pleasure to look through :relaxed: There's a lot to unpack, so I'll start off by hopefully giving you some guidance on the university vs part-time work side of things. I will try to be as objective as possible and just provide some bits from experience that you may not have considered :relaxed:\n\nThe university route has some clear advantages, namely that they are credible institutions, which will provide you with a meaningful certificate at the end. More importantly, you will have an extra three years to develop your portfolio in a structured environment under the guidance of members of staff who have been in the creative industries for years, sometimes decades. The work you will do at uni and the degree you will receive are for life, so I wouldn't let the pandemic put you off, as that will pass. Even though it might be a bit tricky initially in Year 1. Personally, I feel I would not be where I am today without my university experience.\n\nHowever, there is another side to it, which is that no one is saying you have to start University this year. Taking a gap year is always an option and it might give you just the right amount of time to determine whether or not the self-development\/part-time job route is what you want more. For example, you could take this coming year doing part-time work, developing your skills individually, and just see where that takes you. If you are efficient and you are able to send out job applications in the mean-time and land a studio job\/internship anyway, then maybe that's the best way forward.\n\nIn our industry, the portfolio is undoubtedly the most important part of your job application. Therefore, university is valuable only in that it helps you structure your portfolio and improve its quality under the guidance of experts. The other main benefit to university is that it helps teach you how to work in a team efficiently, which is a very important skill employers need as well. Nonetheless, there is nothing wrong with taking a gap year or two and seeing where things lead from there :slightly_smiling_face:",
+        "ts": "1586163335.002400",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1045346708615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This turned into an essay quickly :smile: But I hope this helps give you some insight and feel free to ask me any questions at all about what uni is like or anything you may be wondering in this regard. I will be writing up some feedback for the portfolio itself in a bit too!",
+        "ts": "1586163444.002500",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1047885525718_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, and also I am saying this very much from personal experience, but it is absolutely crucial that you do what you would like to do and what you think is best, whether or not parents\/partners\/friends agree :relaxed:",
+        "ts": "1586163594.002600",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1039831632258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding your portfolio, I think you're off to a great start - it clearly shows that you have been working hard on developing these skills.\n\nHowever, I don't really think that the format you have chosen shows off your work in the best way possible. The video showreel is a great thing to have, however, a website needs to go above and beyond that for industry. I would dedicate a separate section for each of the pieces in your VFX reel and just fill the whole website with large images that really show you off. Currently, it gives the impression that there is less content than there actually is, solely due to the presentation of it. To help with this, think of using different website templates - Wordpress is great for college, however, for the professional world, I would advocate for a more sophisticated website editor such as Squarespace or Wix. I personally use Squarespace because of its stellar design templates, but they are a bit on the expensive side.\n\nI'll give you some examples:\n\n1. This one has a lot of video content, but what I really like about it is that it shows off the content of the creator really well. The little bits of context at the bottom of each video are also really useful - <https:\/\/www.sidneydiongzon.com\/>\n2. This one is also quite good in terms of content as it dedicated a separate page for each project and it shows not only the finished pieces, but also some of the research and process work. It's important to be able to see the journey to the finished piece: <http:\/\/www.c4dstuff.com\/dinosaurier-documentary>\nIn case you are interested, this is my personal portfolio that got me into industry: <https:\/\/www.alteredconduct.com\/>\nIt's basically focused on one major project, however, I think what left an impression was my documentation in the Dev Blog in my journal section.",
+        "ts": "1586171855.002700",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1056567912736_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SIDNEY DIONGZON",
+                "title_link": "https:\/\/www.sidneydiongzon.com\/",
+                "text": "Sidney Diongzon is a filmmaker dedicated to helping people become better storytellers through practical tutorials, cinematic visuals, camera gear reviews, and behind-the-scene vlogs. Download his LUTs and presets to help elevate your stories to the next level.",
+                "fallback": "SIDNEY DIONGZON",
+                "from_url": "https:\/\/www.sidneydiongzon.com\/",
+                "service_icon": "https:\/\/assets.squarespace.com\/universal\/default-favicon.ico",
+                "service_name": "sidneydiongzon.com",
+                "id": 1,
+                "original_url": "https:\/\/www.sidneydiongzon.com\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586171856.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyway, I know I have tossed a lot of info your way :sweat_smile:",
+        "ts": "1586171875.002900",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1048424161077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know what you think and if this is helpful :slightly_smiling_face:",
+        "ts": "1586171886.003000",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1040172567682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, and this one is quite good too! <https:\/\/www.graymachine.com\/>",
+        "ts": "1586171942.003100",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1050817433412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

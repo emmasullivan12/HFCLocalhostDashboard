@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven't gone in a very long time!  If you are planning on going next month I'll see if I can pop down for a bit :slightly_smiling_face:",
+        "ts": "1576507199.000200",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/874779214228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This virus is hitting out community hard. \nWorking from home is almost a revolution in the VFX industry. \nNot too much of a personal question really. I’ve worked  on quite a few of the Harry Potter Films and all the Fantastic Beasts. Plus a few of the Chris Nolan films such as The Batman Films and Inception.  And there’s plenty  of others but I think I enjoy working on the Wizarding films the most, much more my kind of films.",
+        "ts": "1584824236.002000",
+        "username": "Stewart Ash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1004316448626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I loved the original Harry Potter films but these new fantastic beasts ones are just rubbing me the wrong way. Fantasy is tied for my favourite genre",
+        "ts": "1584826174.002100",
+        "username": "Nadia Mackenzie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017118625520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm assuming the majority of the big budget film production that gets done in Britain is down in London?",
+        "ts": "1584826235.002200",
+        "username": "Nadia Mackenzie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017119208576_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, which 3D software do you see most in the industry? My uni uses Maya but I know most independent 3D artists use Blender",
+        "ts": "1584829062.002300",
+        "username": "Nadia Mackenzie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017143067904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

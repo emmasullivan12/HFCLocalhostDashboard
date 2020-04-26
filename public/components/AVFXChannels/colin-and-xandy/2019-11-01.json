@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Colin, it's Xander\nJust a quick question for you?\nHow did you know that you wanted to work in VFX?",
+        "ts": "1572616779.001700",
+        "username": "Xander (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-01\/810216940929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds cool, I’m back in uni tomorrow so I’ll send what I’ve got so far then",
+        "ts": "1555267566.000200",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-14\/596454020354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve already been told by my lecturer to change the title slide as it’s too busy and to take out my level 4 work ",
+        "ts": "1555268823.000300",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-14\/601559756593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

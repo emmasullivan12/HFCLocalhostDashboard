@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there, I'm Polly :wave: I can help you create and manage polls directly in Slack with my `\/poll` command. Simply type `help` within this conversation or check out our <https:\/\/www.polly.ai\/help\/slack\/|FAQ> to learn more. In the meantime here's your first poll from @dexter-prospela!",
+        "ts": "1498149617.526663",
+        "username": "Polly",
+        "bot_id": "B5RMPJ1GD"
+    },
+    {
+        "bot_id": "B5RMPJ1GD",
+        "type": "message",
+        "text": "",
+        "user": "U5QUP4PT2",
+        "ts": "1498149618.526738",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5RMPJ1GD",
+            "deleted": false,
+            "name": "Polly",
+            "updated": 1510697388,
+            "app_id": "A04E6JX41",
+            "icons": {
+                "image_36": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2016-05-09\/41532123248_86c89d7c608b75bbd782_36.png",
+                "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2016-05-09\/41532123248_86c89d7c608b75bbd782_48.png",
+                "image_72": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2016-05-09\/41532123248_86c89d7c608b75bbd782_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        },
+        "attachments": [
+            {
+                "callback_id": "6M2DrjahdZJYynN7s",
+                "fallback": "Hey mentees, so who has:",
+                "pretext": "<@U4VR52RQE> used `\/poll`! Votes in this poll are anonymous :lock:. ",
+                "title": "Hey mentees, so who has:",
+                "footer": "Due to your team's message editing settings, live results updates are only available for a day\n <https:\/\/app.polly.ai\/bg\/rLnoT6mf5KugnrTP8?auth=bELBBT2APuuMHY99y|Click here to view results any time.>",
+                "id": 1,
+                "title_link": "https:\/\/app.polly.ai\/bg\/rLnoT6mf5KugnrTP8?auth=bELBBT2APuuMHY99y",
+                "color": "35a8e0",
+                "fields": [
+                    {
+                        "title": "",
+                        "value": "\n",
+                        "short": false
+                    },
+                    {
+                        "title": "",
+                        "value": "*1*: Started talking to their mentor?",
+                        "short": false
+                    },
+                    {
+                        "title": "",
+                        "value": "*2*: Not started talking yet, but had a good laugh at their mentor's intro video?",
+                        "short": false
+                    }
+                ],
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "one",
+                        "text": "1",
+                        "type": "button",
+                        "value": "",
+                        "style": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "two",
+                        "text": "2",
+                        "type": "button",
+                        "value": "",
+                        "style": ""
+                    }
+                ],
+                "mrkdwn_in": [
+                    "pretext",
+                    "fields"
+                ]
+            }
+        ]
+    }
+]

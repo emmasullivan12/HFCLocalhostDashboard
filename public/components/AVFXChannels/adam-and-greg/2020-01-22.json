@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I'm looking to network and then improve my design skills. Since i'm a first year, I think having someone to navigate the industry with will be really useful.",
+        "ts": "1579704418.001800",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/905663295731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, well networking will depend on a few things like location etc :slightly_smiling_face: what is your goal for your first year, your course, and then once you finish? :slightly_smiling_face:",
+        "ts": "1579707699.001900",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/917257669509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First year: get to grips with the basics, do well and get used to uni, course overall: Become a good game designer, so I can get hired. hopefully I'll have enough skills at the end of this year, so I can make something in the summer and then use it for applying for placements ect.",
+        "ts": "1579710478.002000",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/917353379477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What course are you studying? When you say games designer what do you want to focus on? :slightly_smiling_face: Maybe it's better to think about after university what would be your ideal job title? ^^",
+        "ts": "1579710835.002100",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/905885472179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gameplay design and production. <https:\/\/www.staffs.ac.uk\/course\/computer-gameplay-design-production-bsc> maybe combat designer or similar.",
+        "ts": "1579711111.002200",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/919572149126_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Computer Gameplay Design and Production",
+                "title_link": "https:\/\/www.staffs.ac.uk\/course\/computer-gameplay-design-production-bsc",
+                "text": "If you love the idea of developing exciting and experimental games, this degree is for you. It's ideal if you're interested in a career as a games designer.",
+                "fallback": "Computer Gameplay Design and Production",
+                "from_url": "https:\/\/www.staffs.ac.uk\/course\/computer-gameplay-design-production-bsc",
+                "service_icon": "https:\/\/www.staffs.ac.uk\/favicon.ico?v=1",
+                "service_name": "staffs.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.staffs.ac.uk\/course\/computer-gameplay-design-production-bsc"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579711114.000000"
+        }
+    }
+]

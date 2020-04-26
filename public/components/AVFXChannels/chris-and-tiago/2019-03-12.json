@@ -1,0 +1,614 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning. Having a look through now! I'll get back with some notes. It might be useful to have a look at your scripts for these shots as well. (If you still have them)",
+        "ts": "1552385564.004000",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573158786129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Quite nice shots.\n\n*Shot 1*  It looks like the roto could do with a wee bit of tidying up on some frames...you can't really notice on playback, but that will be something that could bounce the shot back to you. Good to demonstrate the use of shapes on your reel, nice amount and generally in the right place.\n\n*Shot 2* Nice shot, all in all a decent comp. Your nice flat green screen helped. It could maybe do with a bit more edge work Screen Left though. Does it have a uniform edge despill? ie. the same one for all edges. it looks like this might be the case as the right ear against the brown looks great, but against the lights there is a dark edge. I'd maybe look into \"adaptive despill\" which uses the BG to despill the edges of the foreground (rather than despilling a uniform murky brown colour. (Which is why it works so well on the right ear.)\n\nSteve Wright has a useful tutorial for this, If you want I can send you a gizmo that I made based on Steve Wrights technique. I'll see if I can send the video tutorial as well if you can't locate it...I am not sure if that will be frowned upon though!\n\nI'd also maybe include another demonstration of keying, but with a more difficult green screen. 9 times out of 10 you will be working on shots with horrible screens of all sorts of shades with a million tracking markers interacting with the foreground. I think that will impress a lot more studios looking at your reel. Keep this one in though as it looks pretty cool!\n\n*Shot 3* Pretty solid cleanup - nice work. It looks like there may be a wee bit of drifting on the wall. Maybe due to the distortion? That might be my eyes failing me though! Grafiti looks pretty tight. (Which makes me think that the distortion is the culprit.\n\n*Shot 4* I think your clean up is good, perhaps the water could do with a bit more detail where the clean up was, as it looks a bit soft. I'd maybe play about with the cuts in the edit as you kinda get lost watching it. Maybe it doesn't require the 2nd \"before shot\" after the reveal? It's a tricky one.",
+        "ts": "1552388704.004100",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573744336132_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if anything doesn't make sense",
+        "ts": "1552388723.004200",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573663868163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning.",
+        "ts": "1552402119.004300",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573995718258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for all the information. Seems like I have a bit of tidying work to do :slightly_smiling_face:",
+        "ts": "1552402147.004400",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574330147893_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Concerning shot 2 it would be amazing if you could send the gizmo. I always felt the dispill wasn't perfect but didn't know how to fix it.",
+        "ts": "1552402239.004500",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573249278992_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shot 3 there is a slight drifting but I don't know how to fix it. Have tried multiple approaches to fix it but nothing helped so far.",
+        "ts": "1552402317.004600",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574334040869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shot 4 is quite hard to show what I have cleaned up. This is actually my 5th iteration, not too sure how I can make it easier to see what I have done.",
+        "ts": "1552402406.004700",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573253006848_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's quite hard to find online greenscreen shots, so I just used one that was provided by Escape Studios, but I understand that it would be good to have a more difficult one in my reel.",
+        "ts": "1552403078.004800",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573904512883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey there, I am glad that all made sense",
+        "ts": "1552405845.004900",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574050013924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will try share the gizmo here. 2 secs",
+        "ts": "1552405858.005000",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574417200645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGW1KAGR2",
+                "created": 1552405991,
+                "timestamp": 1552405991,
+                "name": "Adaptive_Suppression.txt",
+                "title": "Adaptive Suppression",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U6D2VCN07",
+                "editable": true,
+                "size": 3060,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGW1KAGR2\/adaptive_suppression.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGW1KAGR2\/download\/adaptive_suppression.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGW1KAGR2\/adaptive_suppression.txt",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGW1KAGR2-28e738c41d",
+                "edit_link": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGW1KAGR2\/adaptive_suppression.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552405991.005100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you paste that and open it up for a wee look",
+        "ts": "1552406029.005400",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575162058871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll speak to my boss about the possibility of sending you some GS footage",
+        "ts": "1552406324.005500",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574094104690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that is not possible, I definitely try filming something yourself",
+        "ts": "1552406351.005600",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574061891652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The extra effort will be worth it in the long run",
+        "ts": "1552406368.005700",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574095107170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With regards to the drifting. We have been forced to just pop an animated transform really tricky shots to just nudge frame by frame",
+        "ts": "1552406468.005800",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573984068995_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that is never ideal., but quite often the easier fix than tearing your whole script apart trying to fix it",
+        "ts": "1552406515.005900",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574099105378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Taking a look at the gizmo as we speak.",
+        "ts": "1552407657.006000",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574125265042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That would be amazing, thank you.",
+        "ts": "1552407673.006100",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574125604866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will definitely try to fix it with an animated transform, maybe that will do the trick",
+        "ts": "1552407731.006200",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575567375350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "again, it's not ideal. but sometimes necessary!",
+        "ts": "1552408041.006300",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574101147572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGW0M9HDH",
+                "created": 1552408096,
+                "timestamp": 1552408096,
+                "name": "gizmo_example.txt",
+                "title": "gizmo example",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U6D2VCN07",
+                "editable": true,
+                "size": 8192,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGW0M9HDH\/gizmo_example.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGW0M9HDH\/download\/gizmo_example.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGW0M9HDH\/gizmo_example.txt",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGW0M9HDH-46f3c79130",
+                "edit_link": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGW0M9HDH\/gizmo_example.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552408096.006400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "actually here is a better example:",
+        "ts": "1552408562.006700",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574112866276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGWE4NEHK",
+                "created": 1552408606,
+                "timestamp": 1552408606,
+                "name": "adaptive_comp.txt",
+                "title": "adaptive comp",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U6D2VCN07",
+                "editable": true,
+                "size": 9442,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWE4NEHK\/adaptive_comp.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGWE4NEHK\/download\/adaptive_comp.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWE4NEHK\/adaptive_comp.txt",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGWE4NEHK-d8e69bd06f",
+                "edit_link": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGWE4NEHK\/adaptive_comp.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552408606.006800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that is not really the best example unfortunately. But have a little play with it in comps and see how it works out for you",
+        "ts": "1552408770.007100",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573400905184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "from this course: <https:\/\/www.lynda.com\/Nuke-tutorials\/VFX-Keying-Master-Course\/450278-2.html>",
+        "ts": "1552408807.007200",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573570992033_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Lynda.com - from LinkedIn",
+                "title": "VFX Keying: Master Course",
+                "title_link": "https:\/\/www.lynda.com\/Nuke-tutorials\/VFX-Keying-Master-Course\/450278-2.html",
+                "text": "NUKE master Steve Wright dives deep into the process of keying for visual effects in NUKE. Learn about green-screen, blue-screen, luma, and saturation keys; spill suppression; color correction; edge refinement; and more.",
+                "fallback": "Lynda.com - from LinkedIn: VFX Keying: Master Course",
+                "image_url": "https:\/\/cdn.lynda.com\/courses\/450278-636107456038092827_338x600_thumb.jpg",
+                "image_width": 444,
+                "image_height": 250,
+                "from_url": "https:\/\/www.lynda.com\/Nuke-tutorials\/VFX-Keying-Master-Course\/450278-2.html",
+                "image_bytes": 43525,
+                "service_icon": "https:\/\/cdn.lynda.com\/static\/favicon-152.png",
+                "id": 1,
+                "original_url": "https:\/\/www.lynda.com\/Nuke-tutorials\/VFX-Keying-Master-Course\/450278-2.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which I highly recommend",
+        "ts": "1552408818.007400",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573401919376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It covers just about every issue you might have",
+        "ts": "1552408835.007500",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574118872740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ohh wow, I will definitely go through that course.",
+        "ts": "1552408868.007600",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575227180791_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah, unfortunately there are only so many real world issues that the guys at Escape can cover",
+        "ts": "1552408898.007700",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573403686944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so the rest is learning the hard way or picking bits up working with others",
+        "ts": "1552408932.007800",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575593996134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so that will give you a good head start",
+        "ts": "1552408947.007900",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573404732160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ohh yeah, 5 months of Escape just scratched the basic when it comes to compositing.",
+        "ts": "1552409087.008000",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574491149205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its always good to take a look at these amazing tutorials, especially from Steve Wright!",
+        "ts": "1552409117.008100",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573577721937_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The gizmo seems to have done a good job on the light areas, no more dark outline.",
+        "ts": "1552409445.008200",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574499071461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good. Theres a couple of other methods as well",
+        "ts": "1552409584.008300",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574135248436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe 2 seperate suppressions",
+        "ts": "1552409598.008400",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573588280113_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1 for light 1 for dark",
+        "ts": "1552409608.008500",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574135822212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just mix them together with a luminance keyer",
+        "ts": "1552409635.008600",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575244037959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would it be using the luminance keyer to extract the highlights for a mask than using the reverse for the mask for the darks?",
+        "ts": "1552409721.008700",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574057271683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Exactly",
+        "ts": "1552410155.008800",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574148680900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One suppression dropping the levels quite low...and the other lighter",
+        "ts": "1552410197.008900",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574068525539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That might help also",
+        "ts": "1552410207.009000",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574516678421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will have a go at this technique and compare the results",
+        "ts": "1552410777.009100",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574081237107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. Good luck",
+        "ts": "1552411504.009200",
+        "username": "Chris Duffy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574210145858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you :slightly_smiling_face:",
+        "ts": "1552412649.009300",
+        "username": "Tiago Filipe Ferreira Pereira (Prospela Students (",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574569028421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

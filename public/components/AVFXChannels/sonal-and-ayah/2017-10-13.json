@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No it's ok , I'm not getting notifications too. \nI have no science related work experience i might need a little advice on what work experience i should be doing. However my sister is a first year medical student , so she might be able to help me out.\n\nYour career path is very different than mine but is also very interesting and exciting and the same time. Thank you for the advice it's very helpful.\n",
+        "ts": "1507920815.000111",
+        "username": "aalhar-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/257026362246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At this stage, I would say go with anything you can get so you can test the waters. You can't do medicine without maths but your sister might be able to speak to someone in another department at the hospital where you'd use biology and chemistry? Ask absolutely anyone you know who works in science what they'd do and if they'd be able to get you something. And don't be afraid to say it's not for you if you don't like it: if you're two days in to a week long work experience and you don't like it, you can politely say it's not your cup of tea and leave. They're not paying you and you won't be able to do much as a school age student so they can't be offended or angry or anything. Are there any scientific fields at all that you're particularly interested in or want to learn more about?",
+        "ts": "1507932600.000124",
+        "username": "sonal92 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255718551361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know exactly what you mean. And unfortunately there’s no one solution. You really need to get to know yourself, your personality, character traits and ultimately your motivation. This will help you in how best to tackle your next steps, and your stage in your career you can’t lose that drive. I don’t know you well enough to know what motivates you but I can see already you’re thinking big, you set yourself big goals. Ok, if you’re someone who needs to know the ultimate goal to be motivated then go and write down your steps to get there. For example, for IT Manager you’ll need to move up 2nd line to 3rd line. Set a target of project managing a change from start to finish. Then take on a leadership role where you can manage and mentor others. I don’t know if you have a family or a child yet but when I was at your stage, I volunteered for everything, I got close to my manager, understood what really bugged him and just asked do you mind if I help with that. As for managing people, you soon realise that most IT people don’t like doing it, they’d rather deal with code :). As for continuing the motivation at home, it’s tricky because I know exactly what you mean because I’ve been there, last thing I wanted to do when I’m home is turn on my PC or laptop. But, by setting yourself smaller, more achievable targets and know and fully understand that you’re doing all this for you, not anyone else but just you, you’ll see that you are your biggest motivator. Finally, don’t be too hard on yourself too, be careful not to compare yourself to the 1%, like mr spiegel, it can be depressing. You’re allowed to sit back and rest, it’s a tough and busy world out there, our brains are on overload every day so no wonder we just want to kick back when home. I recommend doing a bit of self awareness to best understand what makes you tick. I’m not sure if my waffle helps, I’ve always been a better talker :). Please keep asking away, as it’s a path I relate to. ",
+        "ts": "1553843502.000300",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/592971294421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anyway you could incorporate your personal development into your work? Maybe ask for time to design an app to solve an existing problem. ",
+        "ts": "1553846521.000400",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/590257273920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I recently did a motivational map course which I found very interesting. It was paid for by work but maybe you could look at free notes online.",
+        "ts": "1553846631.000500",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/593749922711_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here’s an interesting ted talk about it <https:\/\/www.ted.com\/talks\/dan_pink_on_motivation\/up-next?language=en>",
+        "ts": "1553846732.000600",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-29\/594115474326_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "TED",
+                "service_url": "https:\/\/www.ted.com",
+                "title": "Dan Pink: The puzzle of motivation",
+                "title_link": "https:\/\/www.ted.com\/talks\/dan_pink_on_motivation\/up-next?language=en",
+                "author_name": "Dan Pink",
+                "author_link": "https:\/\/www.ted.com\/speakers\/daniel_pink",
+                "thumb_url": "https:\/\/pi.tedcdn.com\/r\/pe.tedcdn.com\/images\/ted\/110884_800x600.jpg?h=150&w=267",
+                "thumb_width": 200,
+                "thumb_height": 150,
+                "text": "Career analyst Dan Pink examines the puzzle of motivation, starting with a fact that social scientists know but most managers don't: Traditional rewards aren't always as effective as we think. Listen for illuminating stories -- and maybe, a way forward.",
+                "fallback": "TED Video: Dan Pink: The puzzle of motivation",
+                "from_url": "https:\/\/www.ted.com\/talks\/dan_pink_on_motivation\/up-next?language=en",
+                "service_icon": "https:\/\/pa.tedcdn.com\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.ted.com\/talks\/dan_pink_on_motivation\/up-next?language=en"
+            }
+        ]
+    }
+]

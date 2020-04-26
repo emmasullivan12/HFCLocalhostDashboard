@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have made some changes to the despill and also worked on the grade of both the character and rock. I can't seem to spot the Scanlines in the shot, are they still visible in this version?   I'm applying for The Freefolk and Framestore internships, a lot of the others i have in mind, appear to be postponed due to the current situation. Do you know any others that i could apply for?       <https:\/\/vimeo.com\/407572561>   PW: HH",
+        "ts": "1586871504.001800",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1061515470995_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think i should include this shot in my reel? <https:\/\/vimeo.com\/407609392>  PW: HH",
+        "ts": "1586878052.001900",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060456404277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The scanelines aren't there. It must have been a youtube encode issue, so that's good. I'd say knock back the glow and yellow brightness on him, especially his face a touch. Despill looks better.",
+        "ts": "1586894383.002000",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1075029611937_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah quite a lot of places seem to have put hiring on hold for now. Don't let that put you off, especially with smaller places it's worth sending and then checking back in when things pick up again, with an updated reel. Before you send anything off send it my way and I'll make sure there's nothing off-putting on there. Worth trying places like Unit and Jellyfish, I know they were scaling up their comp teams recently. If I see or hear anything I'll let you know. I know you want to work in film and TV but I also wouldn't discount commercial studios either, you will learn a lot more very quickly. This is what I did and never looked back as I enjoyed the fast pace and opportunities it presented.",
+        "ts": "1586895019.002100",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062640330019_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't put that shot on your reel. It doesn't display anything and would be just detract from your good stuff.",
+        "ts": "1586895150.002200",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1055701505862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

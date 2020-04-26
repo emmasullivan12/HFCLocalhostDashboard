@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, good luck with deadline. We could maybe catch up Friday if your free.",
+        "ts": "1587542767.009900",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1063460702343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

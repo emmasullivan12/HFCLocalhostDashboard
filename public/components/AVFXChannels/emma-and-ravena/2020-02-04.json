@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice :smiley:",
+        "ts": "1580829495.000200",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/923281887746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you just had loads of deadlines? Some of my other mentees been doing their coursework &amp; exams. Hope its going well!",
+        "ts": "1580829519.000300",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935616704404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is the BA customer service job an apprenticeship or normal job? Apprenticeships (especially degree apprenticeships) are a great way to get companies to pay for your education :laughing:",
+        "ts": "1580829562.000400",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/923284210402_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(and you get a job out of it!!)",
+        "ts": "1580829573.000500",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/925915337793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It wasn't really a big thing or very typical when I was at school 10 years ago but its def a bigger thing nowadays and widely accepted career path",
+        "ts": "1580829606.000600",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935619739796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

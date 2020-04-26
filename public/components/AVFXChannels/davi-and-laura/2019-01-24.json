@@ -1,0 +1,420 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, I'll send it to you through a laptop",
+        "ts": "1548323651.009000",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532968369639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would make an interactive animation where the user's choices would affect the course of the story. Similar to choose your own adventure stories, depending on the user's decision on something will change the ending and the events that happen in the animation. I would do this because it would have a very large range of possible stories, meaning different people watching the animation would see a different story. The decision making would keep the user interested and encourage them to follow on with the story to see what unique course of events occur. The animation would be in 2-D and in colour in order to make the production of it less time consuming while still making it aesthetically pleasing.",
+        "ts": "1548323787.009100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531750079028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The question is \"d. If you were to design and create your own interactive media product what would it be and why?\"",
+        "ts": "1548323832.009200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531179657200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've written some more but I don't think it's good enough",
+        "ts": "1548326849.009300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531788388260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would make an interactive animation where the user's choices would affect the course of the story. Similar to choose your own adventure stories, depending on the user's decision on something will change the ending and the events that happen in the animation. When the main character has to come to a decision two boxes, each providing a different choice, would pop up and pause the story. The animation wold not continue until the user has made a decision. For example, if the main character has to make a choice on whether to run or fight it would be up to the user to make that decision. These decision boxes would pop up in both climatic moments and simple everyday choices as well. This would make the animation and story more complex because even the small things would have a ripple effect on the overall story. I would do this because it would have a very large range of possible stories, meaning different people watching the animation would see a different story. The decision making would keep the user interested and encourage them to follow on with the story to see what unique course of events occur. The animation would be in 2-D because, unlike 3-D, it doesn't try to imitate real life. This allows the creative space to make a more imaginative story whilst still being simplistic. The use of 2-D animation would bring nostalgia to an older audience but still be suitable for an audience of any age.",
+        "ts": "1548326868.009400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533370714214_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. I like the 2nd draft much better! ",
+        "ts": "1548356418.009500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533496636199_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why do you mention this? ‘The use of 2-D animation would bring nostalgia to an older audience ...’? ",
+        "ts": "1548356472.009600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532442479186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You don’t mention about nostalgia earlier?  How are you connecting  the decision for 2D to an older generation? ",
+        "ts": "1548356589.009700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533862301462_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, did you have a chance to revise the interactive website question? I am happy to re-read that :blush:",
+        "ts": "1548356692.009800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532341827091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I said it would bring nostalgia because it's the traditional way of making animtaion",
+        "ts": "1548356766.009900",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533865719174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*animation",
+        "ts": "1548356768.010000",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532343221043_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah I see. Hmm maybe wording it differently ",
+        "ts": "1548356817.010100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533504615767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These days 2D animation can be so broad or visualise which style you mean. ",
+        "ts": "1548356855.010200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531714220144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are the different styles?",
+        "ts": "1548356905.010300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533868337590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1) Traditional Drawing (but interactive ‘film’ are all done in 3D now to be more efficient.  2) 3D animation tips are used, but looks 2D\/flat elements. ",
+        "ts": "1548357065.010400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533509120839_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is a website called Inside Asia Tours. This website has a special feature where it has illustrated interactive maps of different countries. When you click on this feature traditional instrumental music starts playing and takes you to the illustrated map of your chosen country (e.g. Japan). The map of your chosen country is full of famous illustrated tourist destinations. When you hover over these destinations with your mouse a scroll unrolls and shows you the name of the area (e.g. if you hover over the animation of the snow moneys they start moving and a scroll unrolls and 'Yudanaka' can be read). These simple yet effective animations  that are triggered due to the mouse hovering over them provide information on what that area is famous for, whether it be monuments, animals etc, in a aesthetically pleasing colorful design  without the use of words which is more likely to capture the user's attention and encourage them to keep exploring. Once you click on it, a 360° view photograph of the website's chosen favorite locations from that area. This allows you to see explore the photograph and view it from different perspectives. I think this is an effective piece of interactive digital design because the website is aimed at tourist who most likely don't know much about the country they want to travel to. The illustrated interactive map is simple and easy to understand while still informing the tourist of famous destinations and where they are located in terms of a map of the country. The interactive animations catches the user's attention and provides them with a range of additional information in a short space of time through purely visible ways rather than having to read it. Furthermore, the the traditional music playing throughout the experience which entices and captivates the user's attention. In addition to this, the scroll unrolling is a creative detail because it is taken from ancient Japanese culture where people wrote on scrolls. The 360° photograph makes a highly realistic experience of what the area is really like from the comfort of the user's laptop. Overall, the contrast between the aesthetically pleasing illustrated map and the 360° photograph makes the website informative yet engaging. This would encourage the user to search further about visiting Asia, which is the aim and purpose of the website.",
+        "ts": "1548357098.010500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531851070081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is what I wrote for the interactive website question",
+        "ts": "1548357128.010600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533872341638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The 2D animation that I am referring to in the question is traditional, like in the old Disney movies",
+        "ts": "1548357206.010700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532656279061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh ok. ",
+        "ts": "1548357406.010800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532295097588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you mean this...",
+        "ts": "1548357414.010900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531856771569_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The use of a 2D animated style could appeal to a wider audience, young and old, to help it stand out from the most commonly used 3D Pixar animation genre.",
+        "ts": "1548357432.011000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532660337797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oooh yes. I'll write that instead:+1:",
+        "ts": "1548357497.011100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532661528533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think I should add anything else? (to the 2D animation question)",
+        "ts": "1548357603.011200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533880921894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it’s good :+1:",
+        "ts": "1548357623.011300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532663756773_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, then I'm going to send it.",
+        "ts": "1548357748.011400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531730342768_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Interactive website question: \nOh I’m just getting off my train from my commute home. Great clear explanation! Just a few grammatical fixes. Well done!! ",
+        "ts": "1548357758.011500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532666298485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll chat you back once home with the fixes ",
+        "ts": "1548357785.011600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532666727221_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay",
+        "ts": "1548357997.011700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532365572115_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok I copied your text and made tiny, mostly grammatical changes  ",
+        "ts": "1548360613.011800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532412566003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "====================",
+        "ts": "1548360621.011900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531782032560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is a website called Inside Asia Tours. \nADD THE FULL WEBSITE LINK HERE. \n\nThis website has a special feature where it has illustrated interactive maps of different countries. When you click on this feature traditional instrumental music starts playing and takes you to the illustrated map of your chosen country (e.g. Japan). The map of your chosen country is full of famous tourist destinations illustrated with animating icons. When you hover over these destinations with your mouse, a scroll unrolls and shows you the name of the area. For example, if you hover over the animation of the snow moneys they start moving and a scroll unrolls and 'Yudanaka' is revealed. These simple, yet effective, animations  that are triggered due to the mouse hovering over them, provide information on what that area is famous for, whether it be monuments, wildlife, etc, in an aesthetically pleasing colorful design without the use of words which is more likely to capture the user's attention and encourage them to keep exploring. Once you click on it, a 360° photograph of that area opens up. This allows you to explore the photograph and view it from different perspectives and navigate around, similar to Google Street View. \n\nI think this is an effective piece of interactive digital design because the website is aimed at tourists who most likely don't know much about the country they want to travel to. The illustrated interactive map is simple, colourful and easy to understand while still informing the tourist of famous destinations and where they are located in the country. The interactive animations catch the user's attention and provides them with a range of additional information in a short space of time through purely visible ways, rather than having to read it. Furthermore, the traditional music playing throughout the experience entices and captivates the user's attention creating a cultural atmosphere.  In addition to this, the scroll unrolling is a creative detail because it is taken from ancient Japanese culture where people wrote on scrolls. The 360° photograph makes a highly realistic experience of what the area is really like from the comfort of the user's laptop. Overall, the contrast between the aesthetically pleasing illustrated map and the 360° photograph makes the website informative yet engaging. This would encourage the user to search further about visiting Asia, which is the aim and purpose of the website.\n\n",
+        "ts": "1548360632.012000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533935486982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Make sure you include the website link of Japan :smiley:",
+        "ts": "1548360667.012100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532413477107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright:+1:, thank you for the help",
+        "ts": "1548361595.012200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532733623589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure. I really like your answers for both questions :+1: ",
+        "ts": "1548362090.012300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533959314566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When would you back?",
+        "ts": "1548362104.012400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532741990949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, you were a very big help!",
+        "ts": "1548362493.012500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/533603546007_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When would I hear back? I'm not sure, maybe a couple of weeks",
+        "ts": "1548362530.012600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/532748772373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow. That would be great to hear that soon. Crossing fingers! Well done! \n",
+        "ts": "1548362881.012700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-24\/531818664672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

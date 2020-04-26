@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I think I've been down to Farnham before. That's great that the course is teaching you some traditional stuff as well. We never got taught that and I think it would've helped a lot.\nLearning a bit of coding is going to be a bit useful but I'm not sure what the best language to learn would be. I would also say it's very beneficial to learn some rigging as well. That seems to be something that is in almost all job specifications for animation now. It's not necessarily a requirement but pretty much every studio says it would be an additional skill so I think that would help your applications in the future if you could demonstrate some basic rigging.\nIt's also worth at least having a look at some motion capture software because games tend to do a lot of mocap these days and, again, job specs almost always seem to want animators to have some experience with it. But that will depend on the studio\/project you apply for.\n\nI agree it's a good idea to get a head start on making applications. I wish I was given some advice while I was still at university.\nWhen it comes to demand in the industry I would say it's pretty high but you need to be as good at animation as possible to get the best jobs (like everything I guess). Luckily, the game industry is expanding a lot. Even in the UK there are a lot of places around the country where they have studios so you're not just stuck with London like most TV\/Film\/VFX positions are. Games is also a growing industry around the world and there are plenty of countries with big studios. Canada, USA, France, Germany, Netherlands, Sweden, Poland etc. so your choices are huge. However, because the games industry is quite a fast paced and demanding place many studios want to take on animators with experience which, of course, is a big problem for graduates. This is why I think it's very important to try and focus on what you want as soon as possible. That way you can be the best you can when you graduate and be in a good position to make yourself desirable to companies even when you don't have experience. Like you said earlier, if you make your own short game I think this will help your application a lot as it shows you know a wide variety of skills and that you have some basic understanding of what it takes to make a game.\n\nIn terms of jobs, I'm afraid I can't tell you too much. I have been out of the games industry for  nearly 5 years and even then I was just an animator and had a very loose grasp on most of things (although I did learn a lot while I was there).\nAs I said before, it seems a lot of places will be looking at motion capture cleanup, or animation cleanup for recent graduates so it's worth trying to use some of that software at some point. It's more likely that you'll get that sort of job to start with and then progress into a full animator position. There are other companies that don't use motion capture of course but they seem to mostly be for mobile gaming or indie games. If you're looking at a studio like Rockstar or Supermassive, they are companies that will want motion capture experience.\nFor handkey stuff you have companies like Frontier (where I was working) or smaller indie companies. I'm afraid my knowledge of companies isn't great but I can send you over a spreadsheet of companies around the world that you might find useful.",
+        "ts": "1575641220.002200",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862464797540_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/docs.google.com\/spreadsheets\/u\/2\/d\/1eR2oAXOuflr8CZeGoz3JTrsgNj3KuefbdXJOmNtjEVM\/htmlview?sle=true#gid=0&amp;fvid=1005639776>",
+        "ts": "1575641288.002300",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862466348084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "here's the spreadsheet. It covers all current vacancies I think and it always being updated.",
+        "ts": "1575641310.002400",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/850141517250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's not just for games or animation but for all positions in games and VFX etc and it's worldwide so not just the UK",
+        "ts": "1575641343.002500",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862924016480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a bit list =p",
+        "ts": "1575641350.002600",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/850142510578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "big*",
+        "ts": "1575641354.002700",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862467905012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If there's anything else you want to ask please send me a message. I might not have answered your question properly either so please ask again if you want more information",
+        "ts": "1575641384.002800",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/864785183495_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm here to help as much as I can =]",
+        "ts": "1575641393.002900",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/864785410151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

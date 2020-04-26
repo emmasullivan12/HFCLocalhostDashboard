@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not really, I'm hoping to find some sesonal job since I will be at home anyways so I can use that time more efficiently",
+        "ts": "1576413585.000100",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-15\/862766158659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

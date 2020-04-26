@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Movie making is pretty tough stuff. You have to be thick-skinned!",
+        "ts": "1548715640.003800",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/535688352437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "During prep you will find that some of the stuff you want to achieve just isn’t going to be possible the way you imagined it. You might not get an actor you wanted, or a location, or you come to realise in rehearsals that an aspect of your script just doesn’t work. These things are inevitable and you will have to be creative to find a way forward. You are the director so you lead this process and have the final say (hopefully!) in what will happen. Embrace these problems and work creatively with the people around you, you are now bringing the written script to life and it is changing and becoming something new in the process.",
+        "ts": "1548716048.003900",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-28\/535693722965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

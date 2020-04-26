@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alex. Ftrack is what we use at Cinesite :slightly_smiling_face: I am on holidays until the 14th, taking care of my 3 years old daughter. It is a full-time job. From the 15th I'll be able to see how well the remote desktop solution found by our pipeline works, but it seems promising as we've gone fully remote.\n\nI hope you are doing well too.",
+        "ts": "1585597674.000200",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1038592436375_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great news, my bedroom isn't exactly ideal but I have a desktop and laptop that are powerful enough to support the sort so I've been managing. \nWe've just finished one of our modules match moving and rig removal which I'm quite happy with and I'm glad it's off my chest.\n\nI do miss uni a lot, a big part was the social aspect.",
+        "ts": "1585606484.000300",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036401185524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

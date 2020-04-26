@@ -1,0 +1,108 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tony. Fyi... tonight. Hopefully you already received an Escape newsletter notice about this ;)\n\nVFX Industry talk event tonight  at Escape!\n<https:\/\/www.eventbrite.co.uk\/e\/an-evening-with-stratostorm-tickets-82178212245>\nHope you can make it :blush:\n",
+        "ts": "1574253875.013800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/842035401792_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "An Evening with ... Stratostorm",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/an-evening-with-stratostorm-tickets-82178212245",
+                "text": "Introducing Stratostorm and their new short film \"Umbrella\"",
+                "fallback": "Eventbrite: An Evening with ... Stratostorm",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F81258647%2F200323684162%2F1%2Foriginal.20191115-103652?w=1000&auto=compress&rect=0%2C0%2C2160%2C1080&s=a9966d1a85a83b17aba6122ba4baa890",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "190 High Holborn, London, WC1V 7BH, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Wed 20 Nov 2019 at 18:30",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/an-evening-with-stratostorm-tickets-82178212245",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 62716,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/an-evening-with-stratostorm-tickets-82178212245"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, thank you! Unfortunately, I am  working today until around that time",
+        "ts": "1574259374.014000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/844012550135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you receiving Escape newsletter emails? They lost when upcoming talks happen. ",
+        "ts": "1574282239.014100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/842362592804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And to answer your silhouette (SFX) question: \n\nWhen interacting with W (rotate) or E (resize) in transform mode, wherever your mouse is on the screen is where the pivot point will be put when the key is pressed.",
+        "ts": "1574282276.014200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/831353311091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That was how it was like in the older versions. Hopefully the same now. Let me know if that doesn’t work :smiley:",
+        "ts": "1574282307.014300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/842825433680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for re reply! I didn’t receive any i am afraid! I did get contacted for a course after viewing it on the website though :rolling_on_the_floor_laughing:",
+        "ts": "1574282607.014400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/842371502772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The*",
+        "ts": "1574282614.014500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/834904505025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

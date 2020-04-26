@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "6.30 on Monday is perfect for me! Itll be great to get to talk to you, what's the best way to contact you?",
+        "ts": "1586615497.001900",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1055682283074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great let’s do that then! Whatsapp call or zoom? ",
+        "ts": "1586615527.002000",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1055682671106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

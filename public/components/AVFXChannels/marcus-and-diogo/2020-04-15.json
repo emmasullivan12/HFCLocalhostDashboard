@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi just wanted to say hi quick - ill look at your reel as soon as i get some time - any other question compile them an ill try and help ! nice to meet you",
+        "ts": "1586948624.002000",
+        "username": "marcus d (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1056987807798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

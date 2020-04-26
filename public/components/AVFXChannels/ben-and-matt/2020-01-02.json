@@ -1,0 +1,89 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dude worst mentor ever... I’ve completely dropped the ball here I’m really sorry. Was a bugger of a last few weeks trying to get shots done and I missed your messages! I’ll take a look at this cage now! Hope you’ve had a good Christmas break! Rendering is always a bastard believe me :P",
+        "ts": "1577983795.000300",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/881240712769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its looking really nice, the flickering light thats lighting up the back side of the cage is working nicely.\n\nI wonder if the frequency of the flickering light on the Bg and the cage is a bit too much. In yours it feels like its changing quite alot in between each frame. Where as, if you take a look at this video, (god knows what this guy is on about...) <https:\/\/www.youtube.com\/watch?v=HQZqbGME5HY> you can see the flicker feels a bit 'slower'\n\nHow are creating the effect?",
+        "ts": "1577984308.000400",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/881252451441_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Torches: indoor use",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=HQZqbGME5HY",
+                "author_name": "Lindybeige",
+                "author_link": "https:\/\/www.youtube.com\/user\/lindybeige",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/HQZqbGME5HY\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Torches: indoor use",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/HQZqbGME5HY?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=HQZqbGME5HY",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=HQZqbGME5HY"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For the fire, are you using an element or is that from 3D? It feels quite blown out and there isn't much detail in there, it could be worth doing a version where you bring the fire down in luminance a bit and you might read a bit more of the internal movement.\n\nOverall all the pieces are working its just the last few bits!",
+        "ts": "1577984449.000600",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/878708463074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha dude! Don't worry! Hope works eased a little bit for ya now! Yeah my laptop's basically been on all the last 2 weeks rendering and other bits.\n\nYeah I know exactly where your coming from wth the speed of the flickering. I thought it was too fast but by the time it had finished I just thought can I get away with it to save time :joy:\n\nUsing PheonixFD for the fire and just a light with a noise modifier for the lighting. Can easily change the frequency change down a bit to slow the rate of the flickering down. It's just rendering slows everything else down on my poor laptop :joy:\n\nFor the fire I was thinking I could replace the fire from pheonix with some stock footage to solve that luminance issue and to add a bit more of a realistic look to it.",
+        "ts": "1577984907.000700",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/891513165205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the feedback btw. \n\nI'm working on that abandoned street project now. Hoping to have something to show for that on Monday",
+        "ts": "1577984998.000800",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/891047927364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh amazing, I haven’t used Phoenix before. \n\nYeah I know how it is with projects and stuff. At work atm I’m working on a seq that has a load of fire from element shoots and from the guys in FX so I’m a bit tuned in to it :wink: \n\nNice that’s all good to hear! Defo let me know if you have any questions about stuff, technical or otherwise too! Hopefully the New Year should be a tiiiiny bit quieter after January as the last Ep of my show (should) deliver by then!",
+        "ts": "1578010310.000900",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-02\/879169279442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

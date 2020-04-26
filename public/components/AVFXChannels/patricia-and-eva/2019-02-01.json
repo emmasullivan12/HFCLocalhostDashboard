@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Patricia, thanks for your suggestions. I tried to change the settings in the ScanlineRender and also. I also tried to to paint on another frame and I still have the same issue.",
+        "ts": "1549044167.000800",
+        "username": "Eva (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-01\/539827854739_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

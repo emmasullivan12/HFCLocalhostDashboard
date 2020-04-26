@@ -1,0 +1,343 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "unreal engine wasn't even out? that's nuts",
+        "ts": "1587549118.002700",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1084582518676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh, sure! if I send over the DMP work I've been doing for a student film I'd love some feedback on that",
+        "ts": "1587549157.002800",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078625221459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sure send away :slightly_smiling_face:",
+        "ts": "1587550377.002900",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1071723898246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so i'm currently working on one very wide painting that's used across multiple shots\ni'm still mostly just painting out shapes, but it's getting to a point where i can actually start photobashing",
+        "ts": "1587555745.003000",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078831154851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F012AQG55A7",
+                "created": 1587555777,
+                "timestamp": 1587555777,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1540392,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012AQG55A7\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012AQG55A7\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 223,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 298,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 447,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 496,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 596,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012AQG55A7-81a92ba4d6\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 635,
+                "original_w": 1188,
+                "original_h": 737,
+                "thumb_tiny": "AwAdADC2Fz2oaEMuGAI9DTt9NeYRoXPQUahoZ97aLCgdcjJ6VSrTvJRNbKy9M1m0AAJFG6rDfNaqT1GB\/Oq5GKALfmf7R\/OkLqwZWYkduaZtppGKYCj\/AFZXPvUJGPxqVeh+lRnmkA9XLRFSeFxioz0pVHPWndKAP\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F012AQG55A7\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F012AQG55A7-1ff66003ef",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1587555780.003100"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F012974JTJR",
+                "created": 1587555790,
+                "timestamp": 1587555790,
+                "name": "2020-04-22_12-40-35.jpg",
+                "title": "2020-04-22 12-40-35",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 110913,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012974JTJR\/2020-04-22_12-40-35.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F012974JTJR\/download\/2020-04-22_12-40-35.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 143,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 191,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 287,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 318,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 382,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F012974JTJR-bd588d1803\/2020-04-22_12-40-35_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 407,
+                "original_w": 1852,
+                "original_h": 737,
+                "thumb_tiny": "AwATADCZYMdaf5IIwKb9rjA7\/iKUXadqYCiEDtSNCvpTvtKY6003aDqTRqAw2+egphtjipRcoehNHnpnrQIy6VetJSr1pDF3H1pDRRTAXJHelBJ602lWgD\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F012974JTJR\/2020-04-22_12-40-35.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F012974JTJR-7a3014352d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1587555791.003400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice, just taking a look now :slightly_smiling_face:",
+        "ts": "1587557043.003700",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1091289139793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This looks good to me!\n\nI would watch out for the brightness you're getting in the sky..its quite blown out and personally I would tone it back and then build in more layers of clouds to help it have more depth off into the distance.\nThe large rock formations in the background are reading a little old, I'd probably remove them because the don't feel as nice as the rest of the dmp and keep with the nicer shapes you have on the left side; unless they're important for the story?\n\nOtherwise I think this is more than enough to begin with the actual dmp",
+        "ts": "1587558239.003800",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1071968799926_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in shot it works really nicely; so dependant on what you actually see in shot; amend accordingly..no point in fixing stuff you won't see :slightly_smiling_face:",
+        "ts": "1587558306.003900",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078704673026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "aah thank you! i defo agree with you about the sky, having it so bright has made the planet had to pull off so i'll definitely work on that some more",
+        "ts": "1587558469.004000",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1091336381841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the team i'm doing it for said that the grass coming off the wooden platform (which is part of the dmp) doesn't look like its properly aligned with the platform but i'm not quite sure how to deal with it, do you have any ideas",
+        "ts": "1587558541.004100",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1091338846017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so is the grass mean to come straight off the edge of the wooden decking?",
+        "ts": "1587558959.004200",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1077348985877_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as if its at the same level",
+        "ts": "1587558969.004300",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078729126802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah!",
+        "ts": "1587559069.004400",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078942686675_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011W0AEVUP",
+                "created": 1587559377,
+                "timestamp": 1587559377,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 93028,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011W0AEVUP\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011W0AEVUP\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011W0AEVUP-6f3929bbb6\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011W0AEVUP-6f3929bbb6\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011W0AEVUP-6f3929bbb6\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 190,
+                "thumb_360_h": 266,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011W0AEVUP-6f3929bbb6\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "original_w": 190,
+                "original_h": 266,
+                "thumb_tiny": "AwAwACJpGBk1DIWZtgBX61a25HWlYb5Wz1K4pudxKJW+zAR7gwOOuKYsRd1XkZbFXNmImXPFIqhZEPoSam5RV8tPRj+NL5af3X\/OrQtjtHzj8qX7Mf74\/KquhCBvQ01nZW4xUQNOB55zU2GODvz0\/KnhvUc+tRkj3pM0WAs+Z7\/pR5nufyqtk0ZNKwEQPuacGNMooJJdwPbFGRTM8UAE9KLjuPopMH0pMH0ouB\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011W0AEVUP\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011W0AEVUP-1cdd6d2b55",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1587559378.004500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "make sense?",
+        "ts": "1587559382.004800",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1084912411428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i'm not sure what you mean, sorry",
+        "ts": "1587559736.004900",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1091383219537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "easiest way to fix something so specific, would be to do a separate dmp just for that foreground section..keep what you have, but then you can do another dmp just ontop of the foreground grass; to fix and perspective or resolution issues",
+        "ts": "1587560019.005000",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1084936329636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "any*",
+        "ts": "1587560031.005100",
+        "username": "Luke Panayiotou (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1064035006871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

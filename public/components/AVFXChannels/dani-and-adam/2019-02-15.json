@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awwww Adam! wooohooo!",
+        "ts": "1550226005.000100",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/553097221751_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is VERY formal. Do you have a reason why? My emails have always tended to be friendly\/chatty language, and it has mostly always gotten me where I needed to be. I think researching the place and the people that will be reading your words helps greatly. For example, you researched me, because you knew you would be addressing your letter to me! That's great! But my language on maybe all my footprints on the internet is chatty, hopefully approachable, and not formal at all (in fact quite the opposite!) I would have responded to 'Dear Dani, I wanted to forward my work to you for any opportunities that might come up at Picl Animation LTD. I just love what you guys are making, and I would love the chance to work on many different styles, utilising my skills in XYZ softwares, as well as gain some knowledge of BlahBlahBlah software. My showreel and CV are here: <http:\/\/www.adamisawesome.com|www.adamisawesome.com> Can't wait to hear back from you! Best, Adam.'",
+        "ts": "1550226335.000200",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/551909706979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I reeeeeeaally wanted to send you a cover letter as a response but we've had two deadlines this week and I'm stretched over both projects while Lauren moves house!! Life getting in the way again!",
+        "ts": "1550226373.000300",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/553101945687_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I think I would say, feel free to use a friendlier tone if the person you're writing to seems like they would respond to it - or you know them. If you do not know them, and they scream 'Professional Operation,' and 'We Have A HR Department To Deal With This,' for example Lucasfilm or D-Neg or one of the big studios, then your letter is worded beautifully and includes everything you would need. It might be perhaps a little too long in the case of the latter, since they read cover letters all day long and probably just 'skim read' and click on your link. They are busy peeps!",
+        "ts": "1550226504.000400",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/551987514452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of design, I'm sorry but I prefer the second one, it is cleaner and nicer to read!!!",
+        "ts": "1550226602.000500",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/551989030660_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok sure. So how do you think you would give a good impression to someone you've just met or at an interview?",
+        "ts": "1510761245.000436",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273700840406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's your opinion first, and then we can work on that",
+        "ts": "1510761258.000156",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272823737906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

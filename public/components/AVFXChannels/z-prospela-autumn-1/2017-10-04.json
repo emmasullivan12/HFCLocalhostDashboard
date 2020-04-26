@@ -1,0 +1,129 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507156169.000269",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: This is the beginning of your conversation with Prospela Autumn 1\nSay `Hello` here, it will be sent to their Slack team.\n",
+        "ts": "1507156170.000046",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1507156170.000088",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1507156170.000121",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "callback_id": "greetings_message",
+                "fallback": "Conversation with Prospela Autumn 1",
+                "id": 1,
+                "color": "3AA3E3",
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "Basic commands",
+                        "text": "Chat commands",
+                        "type": "button",
+                        "value": "basic",
+                        "style": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "Show Help",
+                        "text": "Show all Help topics",
+                        "type": "button",
+                        "value": "topics",
+                        "style": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey",
+        "ts": "1507156398.000162",
+        "username": "dexter (Prospela Autumn 1)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-10-04\/251759692885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Autumn 2* joined the shared channel_",
+        "ts": "1507156702.000202",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "heyyyyyyyy",
+        "ts": "1507157749.000219",
+        "username": "dexter (Prospela Autumn 2)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-10-04\/251630364642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_leave",
+        "ts": "1507157831.000149",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has left the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey",
+        "ts": "1507157860.000199",
+        "username": "dexter (Prospela Autumn 1)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-10-04\/251555234803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey",
+        "ts": "1507157865.000351",
+        "username": "dexter (Prospela Autumn 2)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-10-04\/251631154674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hes gone",
+        "ts": "1507157885.000162",
+        "username": "dexter (Prospela Autumn 1)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-10-04\/252517038934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

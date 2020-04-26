@@ -1,0 +1,102 @@
+[
+    {
+        "type": "message",
+        "text": "How are you <@U639Y9AQJ>? Are you at work today?",
+        "user": "U5XMAF7AA",
+        "ts": "1499157320.361036",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Good evening. Yep, I was at work. Finish at 3 so its not all bad. How are you?",
+        "user": "U639Y9AQJ",
+        "ts": "1499192516.326410",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g14f8e937749",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b14f8e93774926a3a605a4155fe7a39e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0016-72.png",
+            "first_name": "Zubair",
+            "real_name": "Zubair Sidat",
+            "display_name": "zs94",
+            "team": "T4UUTPV18",
+            "name": "zs94",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Good evening Zubair, I am fine as well. Long day off-site.",
+        "user": "U5XMAF7AA",
+        "ts": "1499201657.841867",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Generally in big teams people need to also know each other better.",
+        "user": "U5XMAF7AA",
+        "ts": "1499201687.846117",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So, today was one of those days that we all open ourselves to our colleagues and work outside of the office for more quality time.",
+        "user": "U5XMAF7AA",
+        "ts": "1499201749.855142",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "94d56bd32af7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202398922935_94d56bd32af78fb9ce16_72.jpg",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael",
+            "team": "T4UUTPV18",
+            "name": "michael",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

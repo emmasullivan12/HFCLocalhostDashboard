@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the late reply\nMy personal life went to shit and it’s been a bit of a struggle managing that plus these prop final weeks",
+        "ts": "1554934142.007800",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/604533326576_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course! Send whatever you want for feedback \nIf you don’t mind and want to I can even ask for feedback from some of my colleagues ",
+        "ts": "1554934189.007900",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/598215825137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Whatever we say as feedback that you end up not addressing or disagreeing with you can always use in an interview setting ",
+        "ts": "1554934220.008000",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/608064199143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like “I was thinking of upping the contrast in this section and trying live patches ... blah blah .. on this section but ran out of time\/wanted to be true to myself\/was pleased with the final result and preferred it like this ..blah blah ”\n",
+        "ts": "1554934345.008100",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/608066295703_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With that I’m saying there’s no shame in pointing your mistakes to them \nMight actually serve you well because it could show that you can tech check your work but didn’t have the time or was trying a different thing ",
+        "ts": "1554934405.008200",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/593029017347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that makes sense",
+        "ts": "1554934413.008300",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-10\/593120937378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still getting used to the differences between this chat app on my phone and the desktop version. I totally hit &lt;enter&gt; and inadvertently sent that message yesterday before intending to. What I was going to say before I mistakenly sent it was that I finally looked at your photos on a larger screen, and really enjoyed them!",
+        "ts": "1534322873.000100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-15\/416180141216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Sorry for the late reply I was on my feet all day. Thanks for looking at my photos! :grin: I actually did a charity trek in Borneo, after we built schools and homes in different villages we did a week long trek through the bornean rain forest where we saw wild orangutans and loads more, (although the red panda was the isle of white zoo :sweat_smile::sweat_smile:) thank you so much for your offer, but I don't think I would be much good at a VFX job just yet :sweat_smile: I do play around with light in my pictures quite a lot, I love taking macro photos but the lenses on my camera can't quite support it properly (:sob:) \nMy interviews went really well! I applied to work retail for now just to earn some money and I got an interview for a vape shop and they offered me the job on the spot! :grin: I'm just waiting for them to send me my start date :grin:",
+        "ts": "1534327149.000100",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-15\/418262090150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

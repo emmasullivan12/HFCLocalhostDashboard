@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good @raveraj03 Best of luck!",
+        "ts": "1582032408.001100",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/959400306406_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

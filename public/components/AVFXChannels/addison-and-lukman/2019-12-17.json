@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll try find you some examples of roto that I have done on side projects in the past. Basically a rule of thumb is that you shouldn't be able to see any background in your matte like that, unless there is motion blur or defocus",
+        "ts": "1576583312.001400",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/878652887335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Try find some roto tutorials online so you get a better idea of the purpose of roto and how exactly it should look",
+        "ts": "1576583332.001500",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/879001347542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

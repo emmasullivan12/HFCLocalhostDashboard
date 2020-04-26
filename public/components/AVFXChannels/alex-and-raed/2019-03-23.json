@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Victory would be fantastic indeed, I infact live in London, so going to the BAFTA HQ wouldn't be much of a problem",
+        "ts": "1553380939.001300",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-23\/586351140885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

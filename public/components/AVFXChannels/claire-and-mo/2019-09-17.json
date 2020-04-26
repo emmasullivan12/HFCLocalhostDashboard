@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Mo, I have been away lately, I shall have a look into this for you. what kind of advice are you looking for?",
+        "ts": "1568755224.000100",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-17\/765580464423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

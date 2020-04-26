@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No i don't send an email but go to them and ask",
+        "ts": "1508696338.000010",
+        "username": "rsadir-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-22\/260151786804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,178 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, sorry once again for the lack of response, once again i am not getting notifications when new messages come in. I'll take a look at your questions tomorrow and get back to you as soon as I can. Speak soon :slightly_smiling_face:",
+        "ts": "1551970260.000900",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570989189975_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, so to start with your original question about how to develop the eye, it's a combination of things. simply looking at the world around you and taking it in more. looking at how shadows fall off different objects, how something refracts through glass,  how light bounces off objects. simple things like that that you see everyday.  the next step is to them imagine how it would look through a film lens rather than just your eye. for example, if you look at the sun with your eyes, you'll see a sun, but looking it through a camera lens will then add lens flares. same with defocus. If you look at something close up, your eye naturally blurs out the things around it, but not it the way a camera lens would. if you look at a bokeh blur, its an effect you've seen a thousand times, but you would worry if your eye was doing that, but when you see it on a screen you do not question it.",
+        "ts": "1551999472.001000",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/571548378807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is your daily day to day life in your company and your role? Like your typical day? Typically, if I'm leading a project, I'd come in and first look at any client notes that have come in over night. Then with my coordinator, we'd do whats called rounds. We'd go to each artist working on the job and explain the notes they need to address and help them if they don't understand how to fix it. Then I'd go back and address any notes I have on my own shots. throughout the day I'd have artist coming up to me asking question about how to do something and then at a certain time everyday we have whats called a dailies session. This consist of going into our mini cinema room and watching all the shots then have been rendered that day. I'd either give notes to further improve the shot or pass it as a final to go to the client. Then I do whats called tech checks where I check if any shots that are finaled by the client are technically correct, i.e check the grain, the mattes, make sure the roto is fine, colours are correct, black point and white point are corrrects etc...",
+        "ts": "1551999865.001100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/569909730033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Originally, what were you interested in the most and why? Could you explain your main motivation? - I always had an interest in compositing and VFX simply by watching films and wanting to know how that cool shit was done. Im my own worst critic so my motivation is to make a shot looks as good as it can",
+        "ts": "1551999986.001200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570812262229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your job role? What do you need to do for the client? - My job role is Lead Compositor. I essentially have to pass or fail shots before it reaches the client. Only once I think it's good enough, we'll pass to the clients for them to see and give their opinions. I generally do not deal to much directly with the client. This is done by our producers and coordinators.",
+        "ts": "1552000076.001300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570444166820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What skills and requirements are needed from you for your work? - Companies like mine take on a lot of young artist to nurture. They look for a keen interest in VFX and the willingness to learn",
+        "ts": "1552000151.001400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/569913580449_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "going any sort of course such as doing a course by Escape Studios (or similar VFX course) helps a lot too as it shows your keenness to want to work in the industry. A showreel is a must and although noone expects a perfect reel from the start, it should be engaging, no more than 1 min 30 sec and only show your best work. Don't fill it with filler shots",
+        "ts": "1552000272.001500",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570489764226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Being in the position I am in, I don't exactly know what I would want to do or what field of work I would like to go into, can you relate or were you able to just decide into a specific field of interest? - When I was at University I always had an interest in 3D, I thought I'd go into 3D animation, but found that I was naturally more gifted in 2D motion graphics than 3D. I ended up getting my first job in graphic design but with a little bit of motion graphics, then my second job was at Sky which envoled much more motion graphics. From there, there was an opening for a junior compositor, so I felt it was a good natural progression to move into that.",
+        "ts": "1552000478.001600",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/571562242183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was not a runner, as I started straight into a junior comp role due to my previous motion graphics experience. This was an unusual route compared to most, but runners at my company generally do it for 6 months, then begin as a junior role in whatever field they have interest in. We currently have a runner who started as a runner 6 months ago with a £D background, but after running at the company, found he had an interest in editorial, so has begun training in that role",
+        "ts": "1552000639.001700",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/571564265255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What was your greatest moment and your worst moment in the first company that you worked in? - When I started freelancing, I wasn't sure i was good enough to do it. I was in a bubble at Sky and so never knew what I really knew. Once I started freelancing at m first proper VFX house, the moment I realised I can do it and actually knew more than I thought was a good moment for me. The worst moment for me was not quite nailing a brief and having to stay late to get it done. Others had to stay late too because of my shot and so just felt very bad.",
+        "ts": "1552000814.001800",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570374259491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "good portfolio\/showreel? Can I see your portfolio\/showreel? - I kind of touched on this earlier but not making your reel to long is important. Most companies don't have the time to sit there and watch loads of reels so they'll prefer it to be short and sweet, just highlighting your very best work. a variety of VFX techniques shows what you can do too such as tracking, projection, grading etc. rather than a reel full of greenscreen shots",
+        "ts": "1552001138.001900",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570826789285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i actually don't think my reel is even that good, quite dated and would prefer a few more breakdowns, but sometimes it's difficult to get original plates from companies to do a before and after.",
+        "ts": "1552001253.002000",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/571571676039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it's a little out of date too as there's about 3 projects I need to add to it but feel free to have a look here:",
+        "ts": "1552001380.002100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570829719605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/264318398>",
+        "ts": "1552001381.002200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570503376530_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Neal_Patel_Showreel_2018",
+                "title_link": "https:\/\/vimeo.com\/264318398",
+                "author_name": "Neal Patel",
+                "author_link": "https:\/\/vimeo.com\/user17925305",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/694070969_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "This is my latest showreel as a Visual Effects Compositor. It highlights a collection of shots that I have worked on at various VFX companies.",
+                "fallback": "Vimeo Video: Neal_Patel_Showreel_2018",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/264318398?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Neal_Patel_Showreel_2018\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/264318398",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/264318398"
+            }
+        ]
+    }
+]

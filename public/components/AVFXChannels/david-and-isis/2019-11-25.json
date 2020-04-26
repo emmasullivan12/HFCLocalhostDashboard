@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dear David! Thank you so much for your support. Your feedback and mentor ship has provided me with motivation and direction towards my goals in the vfx industry. I wanted to let you know that I received my grades and I am going to graduate :) We will see what the future holds. Meanwhile I’m practicing and learning all the things I had curiousity about that I didn’t get to learn in school. If you hear about internships let me know. It’s been such a pleasure having you as a mentor. Thanks again for your time and kindness. ",
+        "ts": "1574727366.000100",
+        "username": "Isis Cortes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848549357364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

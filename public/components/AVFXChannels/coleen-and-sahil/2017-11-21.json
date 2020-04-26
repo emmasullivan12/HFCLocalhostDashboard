@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sahil!",
+        "ts": "1511273691.000580",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/275020378544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We've been given a task of filling out the following form to let you gain an insight into our work routines. Here is mine from yesterday (Monday 20th):\n*Today I worked: from 9AM to 6PM\n*Today tasks \/ activities I worked on: Design team meeting in the morning with the engineers, then a security review meeting to discuss the buildings in terms of limiting risk of crime. I then spent the rest of the afternoon at a local college where the client asked us to help out by giving feedback on student presentations. \n*Today my colleague \/ boss gave me feedback of: Well done on getting information packs together on Friday so that we could present in the Design Team Meeting.\n*Today I'm learning \/ reading: I learned about the measures we have to consider putting in place to make sure the threat of crime and terrorism to our buildings is reduced. \n*Today I'm feeling (stress levels): It was a very hectic day and I was also having phone issues so finding the engineer's office in the morning was trickier than usual and I had to ask for directions. So it was a little stressful!",
+        "ts": "1511273704.000502",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/275020474208_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sahil...today's installment!",
+        "ts": "1511288034.000237",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/275763744467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tues 21st Nov...",
+        "ts": "1511288039.000349",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/275321990529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today I worked: from 9:30AM to 6PM\nToday tasks \/ activities I worked on: Catching up with emails as I was out of the office all day yesterday and speaking to each of the building teams about how their designs are progressing. We ened to send out masterplan drawings by early next week so I have been telling each team what we'll need from them to coordinate.\nToday my colleague \/ boss gave me feedback of: I don't actually think I received any direct feedback internally but the teacher whom we helped yesterday sent an email to say that the students had really enjoyed our session!\nToday I'm learning \/ reading: Reading the Architect's Journal in my lunch break, there is a big revolt happening at the RIAS in Scotland which I'm following\nToday I'm feeling (stress levels): Less stressed than yesterday, it's been good to be back in the office and get to spend time at my desk. I've got a good few things ticked off the list today but still very busy!",
+        "ts": "1511288058.000616",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/275181491952_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

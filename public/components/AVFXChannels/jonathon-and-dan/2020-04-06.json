@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that was my thinking also",
+        "ts": "1586173980.003000",
+        "username": "Dan Ahern (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1041407767763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

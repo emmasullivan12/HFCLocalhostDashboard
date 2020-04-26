@@ -1,0 +1,10 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":no_entry_sign: _You have deactivated the shared channel_",
+        "ts": "1512375513.000142",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    }
+]

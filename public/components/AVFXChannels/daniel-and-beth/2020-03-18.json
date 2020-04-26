@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem at all, I can only imagine! I'll keep checking in from time to time and be of much help as I can.\n\nSo, do you know what area you want to focus on? I can give a better answer in terms of portfolio based upon that.",
+        "ts": "1584573770.000300",
+        "username": "Daniel Seager (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/998951704563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

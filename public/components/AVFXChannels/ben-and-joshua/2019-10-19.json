@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll be signing up for it soon myself, and yeh his talk was very interesting and detailed.",
+        "ts": "1571472583.003300",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-19\/788741870802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

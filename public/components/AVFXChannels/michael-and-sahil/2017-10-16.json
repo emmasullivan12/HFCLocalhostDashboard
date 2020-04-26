@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's fantastic!  I love McVitie! \nI would like to know a little more about your role as a financial manager, because I think that's an amazing position to be in. What are your responsibilities and can you please describe one of your typical day? I would appreciate it.",
+        "ts": "1508149553.000058",
+        "username": "sjassal-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256283265521_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

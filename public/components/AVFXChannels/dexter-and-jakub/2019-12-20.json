@@ -1,0 +1,40 @@
+[
+    {
+        "client_msg_id": "31767811-32f0-48d1-a58c-6c167b5c640e",
+        "type": "message",
+        "text": "OK sure. Is this the customer service job you previously mentioned? Have you had any luck with this?",
+        "user": "U4VR52RQE",
+        "ts": "1576907615.000800",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ImN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "OK sure. Is this the customer service job you previously mentioned? Have you had any luck with this?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

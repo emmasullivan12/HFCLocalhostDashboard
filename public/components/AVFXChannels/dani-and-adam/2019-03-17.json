@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Showreel:\n<https:\/\/vimeo.com\/316466003>",
+        "ts": "1552869496.001900",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-17\/579613486292_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "2018 Showreel",
+                "title_link": "https:\/\/vimeo.com\/316466003",
+                "author_name": "Adam Z.",
+                "author_link": "https:\/\/vimeo.com\/user74929293",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/758479182_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: 2018 Showreel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/316466003?autoplay=1&app_id=122963\" width=\"400\" height=\"230\" frameborder=\"0\" title=\"2018 Showreel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 230,
+                "from_url": "https:\/\/vimeo.com\/316466003",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/316466003"
+            }
+        ]
+    }
+]

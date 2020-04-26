@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy it says I can't access the document I have to request permission to open it.",
+        "ts": "1547110227.000600",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-10\/520780192965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

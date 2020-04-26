@@ -1,0 +1,264 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have indeed, it's a really good skill to have actually we use that kind of thing all the time here.",
+        "ts": "1571647108.002700",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802599257509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's the brief?",
+        "ts": "1571647296.002800",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/804803861222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The brief is to create a 5 second piece that uses Nuke to shows projection mapping for clean up ",
+        "ts": "1571650015.002900",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/791176186579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have an idea but I was wondering if it would be impossible :joy:",
+        "ts": "1571650030.003000",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802182748020_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's the idea?",
+        "ts": "1571650896.003100",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/796225015841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was trying to think of situations where I was taking a photo or video and wanted no one else around. Have you seen the headphone advert that’s based in London? I think it’s for Beats. I want to use that concept of having a single person in an ice rink and cleaning everyone out then they fall and all the people reappear as if they’re “in their own world”",
+        "ts": "1571652143.003200",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/804895254230_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's definitely doable! I'd say just make sure you can get yourself the best clean plate possible, you'd probably have to stitch together lots of different areas but as lost as every area of the rink has a frame with no one in it you'll be golden",
+        "ts": "1571652558.003300",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802693409648_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could be an opportunity to flex those roto muscles as well",
+        "ts": "1571652580.003400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/789911392450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting a clean plate is that taking multiple imagery on the rink without people in it it or creating one myself? ",
+        "ts": "1571666732.003500",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/791502071027_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m actually not too bad with Roto it can be a ball ache sometimes but it’s satisfying ",
+        "ts": "1571666763.003600",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802509292356_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah a clean plate is just an image (or combination of images) without the elements you want to remove",
+        "ts": "1571667345.003700",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802525163204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok I understand ",
+        "ts": "1571670527.003800",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/796642351409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This might be a stupid question but does it need to be at the exact angle ",
+        "ts": "1571670544.003900",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/796642828353_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If I were approaching this task, I'd have my actor come in, do the movements, then leave frame and leave the camera recording for a while and let the public move around. Then pick parts of the video without the people in and stitch those together to make a clean frame",
+        "ts": "1571671537.004000",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/805317975686_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=pwYE3qhpQWo>\n\nPhotoshop has a feature for this",
+        "ts": "1571671565.004100",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/791639123315_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Amazing Photoshop Trick to Remove Crowds from a Photo - PLP #190",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=pwYE3qhpQWo",
+                "author_name": "Serge Ramelli Photography",
+                "author_link": "https:\/\/www.youtube.com\/user\/cmoeu",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/pwYE3qhpQWo\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Amazing Photoshop Trick to Remove Crowds from a Photo - PLP #190",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/pwYE3qhpQWo?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=pwYE3qhpQWo",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=pwYE3qhpQWo"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ohh ok that’s really clever actually I wouldn’t have thought about it like that ",
+        "ts": "1571672440.004300",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/803142245445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How would I do that with a moving camera ",
+        "ts": "1571672502.004400",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/791665467859_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You would have to stabilise your plate to make the cleanframe then track in the patches",
+        "ts": "1571672913.004500",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/805004066535_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=N2dW5He4jiY>",
+        "ts": "1571672973.004600",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/796710412993_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Nuke Tutorial - Building 3D Environments with Camera Projections",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=N2dW5He4jiY",
+                "author_name": "Paul DeNigris",
+                "author_link": "https:\/\/www.youtube.com\/user\/PDeNigris",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/N2dW5He4jiY\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Nuke Tutorial - Building 3D Environments with Camera Projections",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/N2dW5He4jiY?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=N2dW5He4jiY",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=N2dW5He4jiY"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Something akin to this",
+        "ts": "1571672979.004800",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/805358112006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Dave, just wanted to check in and see how work is going? Hopefully its not too stressful. :slightly_smiling_face:",
+        "ts": "1555680010.000400",
+        "username": "Thomas Mayfield (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-19\/613376086421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

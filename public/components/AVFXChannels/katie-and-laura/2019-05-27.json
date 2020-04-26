@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam, I'm still available for a chat tonight at 7.30pm if you'd like to catch up? :slightly_smiling_face:",
+        "ts": "1558974716.000100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-27\/640884408977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

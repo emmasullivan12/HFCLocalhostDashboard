@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey sorry I missed your first demo:sob:! Are you able to organize the second one too? I can make it this Saturday-!\nThank you for letting me know! It seems like focusing some studios and building the reels for them &amp; trying to reach out their employee is the better way..",
+        "ts": "1583424970.005800",
+        "username": "Flora Tsai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/985762674407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's really cool!",
+        "ts": "1583425076.005900",
+        "username": "Flora Tsai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/983449407908_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, Saturday should be fine, let me check and get back to you. It's not especially official I just talked mostly!",
+        "ts": "1583428383.006000",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/983579150452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for the reels yes I think som however no matter what studio ulis the goal. Working on improving fundamentals will make a huge difference",
+        "ts": "1583428438.006100",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/983581197892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I.e it's not worth working on creature animation if you haven't got comfortable moving so etching with two legs :)",
+        "ts": "1583429767.006200",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/973991531905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for spending time on the demo!!",
+        "ts": "1583452479.006300",
+        "username": "Flora Tsai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/984808904688_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah..improving fundamentals should be the first thing..!",
+        "ts": "1583452566.006400",
+        "username": "Flora Tsai (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/987021195110_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

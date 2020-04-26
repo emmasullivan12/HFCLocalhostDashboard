@@ -1,0 +1,73 @@
+[
+    {
+        "type": "message",
+        "text": "Yay! Congrats guys!!",
+        "user": "U5WR9CJTC",
+        "ts": "1508321909.000140",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": " :+1::clap:",
+        "user": "U5X3WPT29",
+        "ts": "1508331521.000244",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F7M753DBR\/20171018_141457.jpg|20171018_141457.jpg> and commented: Hey <!channel>. Had a meeting at Cocoon Networks today ... very funky offices. Need to practice my ping pong skills by the looks of it!",
+        "ts": "1508332698.000024",
+        "username": "emma"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Feel free to send this to me privately as some have done already :slightly_smiling_face:",
+        "ts": "1508332746.000409",
+        "username": "bot",
+        "thread_ts": "1508144312.000381"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me it was a work experience I did with an advertising agency when I was 15 (so school age but not necessarily at school). I thought I wanted to go into advertising and in my two week experience I realised I would prefer to work client side and more generally in marketing. Hence it proved to me what I thought I wanted wasn't actually what I wanted and it required a rethink.",
+        "ts": "1508336659.000265",
+        "username": "bot",
+        "thread_ts": "1508144312.000381"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think a fair few of us have wanted to be a Don Draper at some point :grin::dark_sunglasses:. It shows how important work experience is early on! Cheers Janina. So what exactly changed your mind and how did you come to this realisation? How did you go back to the drawing board? Obviously this side step paid off for you :ok_hand::+1:",
+        "ts": "1508339532.000322",
+        "username": "bot",
+        "thread_ts": "1508144312.000381"
+    }
+]

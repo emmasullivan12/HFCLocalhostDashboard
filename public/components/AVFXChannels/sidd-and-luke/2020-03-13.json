@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem Luke :smile: Please feel free to ask me more questions as well as your work, I'd love to see your progress!",
+        "ts": "1584113720.003400",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/986162587490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

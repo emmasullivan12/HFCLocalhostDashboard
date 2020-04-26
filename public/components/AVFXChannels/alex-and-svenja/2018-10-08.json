@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Svenja. Did you learn HTML and Visual Basic in school?",
+        "ts": "1538985491.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/452567374630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The great thing about computing and technology is that there are so many ways to learn and get experience. And it's easy to start learning other aspects to get into a new field.",
+        "ts": "1538985651.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/452260896087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example, my Bachelor courses were quite broad, giving me a very good overview of many things. Not that I need all of it on a daily basis but it's good to have some understanding of semi related topics",
+        "ts": "1538985939.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/451035577508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm German, so I'm not too familiar with the British education system. How long do you go to school and when do you usually start to go to universities? Do you already have a plan in mind?",
+        "ts": "1538986035.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/451115616083_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor,\n\nYes, I did learn HTML and Visual Basic in school, especially Visual Basic for my main exams at the age of 15\/16 which are our GCSEs. We now go to collage or sixth form for two years in order to get out A-levels and finally later to university. So far my plan consists of getting work experiences in areas of science and technology - where so far I have completed a two week experience at Imperial Collage provided by the NHS in different hospitals. ",
+        "ts": "1539014123.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/452906900326_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Svenja. What did you build with HTML and Visual Basic? So you want to get work experience while going to college before going to university?",
+        "ts": "1539017787.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/450987448593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor.\nFor HTML we created a basic website knowing how to create tables, change format, loading images, adding hyperlink and such. On the other hand with Visual Basic I created a game quiz based on general knowledge for my course work. Also   in regards to work experience, I've been told to obtain as much as I can for it'll be beneficial for me to decide on my choice of career and also as a requirement for my university reference. ",
+        "ts": "1539027603.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/452773319159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

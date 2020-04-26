@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am fine now! Haha:D thank you!\n\nI am available from Friday after 6pm. \n\nBut it is an Easter weekend, so it is completely fine if you would like to move it onto the next week",
+        "ts": "1555543060.000700",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-17\/611855544981_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

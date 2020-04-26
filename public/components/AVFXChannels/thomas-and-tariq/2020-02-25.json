@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Have a nice holiday. We're using Arnold for the tutorials so I'm trying to get to grips with it myself.",
+        "ts": "1582642571.000900",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/955336499522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

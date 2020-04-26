@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Stefi! ",
+        "ts": "1537627007.000100",
+        "username": "Maida (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/440313167824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m currently writing my personal statement for uni. It’s a rough draft but would it be okay if you could have a quick read and let me know what I’m missing? ",
+        "ts": "1537630393.000100",
+        "username": "Maida (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/440949112771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Maida! Sure, send it through",
+        "ts": "1537646530.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/440376609040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have an email that I could send it to? I’m unable to attach the file from my phone ",
+        "ts": "1537649465.000100",
+        "username": "Maida (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/441115031122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or shall I just copy and paste it all here?",
+        "ts": "1537649523.000100",
+        "username": "Maida (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/441288812261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can send it to my email stefi_daskalopoulou@hotmail,com or copy and paste it here whichever suits you",
+        "ts": "1537649660.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/440526462593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's the latest version:\n\nOne of the main obstacles that stop us from having a better life both for us and the new generations in the coming future is the crimes committed, whether it's occurred in a small alleyway in a forgotten town or a global dispute scarring millions. My growing passion for criminology was fueled by A-level psychology, where I learned scientific theory, research skills, and essay writing. In previous years people would always use supernatural forces or abnormal behavior as an excuse for when people committed a crime. The most common question constantly asked is Why do people commit crimes? However, I'm intrigued about what goes through the mind of criminals and how they think when they commit the crime, and why some don't regret it at all. I want to study criminology because of my desire to attempt things that are challenging and have rewarding outcomes, in the coming future I see myself working with young vulnerable people as a Youth Offending Officer.\nA book I read, written by Frances E. Jenson: \"The teenage brain\" had kept me busy during the first few weeks of the summer holidays, educating me about how young people have powerful yet vulnerable brains during their teenage years due to rapid change in hormones. The author writes about crucial topics like; how teens learn, why sleep is important; stress; mental illness; and biological differences between the brains of girls and boys.\n\nWorking at a local clothing store for the weekends was my first time working in the real world, I had pushed myself out of my comfort zone into an environment I found extremely challenging, however, I was determined to do my best and soon after understanding the concept I started enjoying the job. This experience allowed me to meet hundreds of customers who would initially present their best self, but I was able to differentiate between the different types of characters and personalities that entered the store, and as my confidence was building I was able to communicate with them effectively and help them find what they were looking for.\n\nI also volunteered to help give back to my community during a careers day event at my school enhancing my leadership and communication skills. At this event, I helped GCSE students find a career of their choice to gain experience in, proving to be a responsible student, as well as welcoming many employers from a wide range of fields and post-graduate students e.g: sports leaders, bank managers, solicitors, police, architecture students, doctors etc.\n\nDuring the Christmas holidays, I traveled to Pakistan for a couple of weeks and donated money and also volunteered at a local shelter for homeless children. I also had a chance to meet refugees from countries like Uganda, Kashmir, and Burma who were being provided services by the Edhi Foundation in Pakistan. This experience allowed me to be more empathetic towards the young vulnerable people living in dangerous and risky places and was one of the main reasons I wanted to study criminology, so I had more knowledge about how people ended up in these circumstances, and how these innocent people could be helped and be given a second chance at a brighter and more stable future.\n\nI learned how to play the guitar during music lessons in high school, I felt my confidence being boosted after performing in front of a huge crowd at a school concert before the school year ended. I wish to continue practicing playing the instrument and aspire to learn a new language in the course of three months. Whenever I have time to spare I like to draw and paint, I have a small sketchbook in which I'm constantly adding my creativeness to the empty pages. The asset of being able to see intricate details from different perspectives will aid me in the future of studying criminology.",
+        "ts": "1537649753.000100",
+        "username": "Maida (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/441289400661_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is this to apply for a Criminology degree at University?",
+        "ts": "1537650637.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-22\/441118178194_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

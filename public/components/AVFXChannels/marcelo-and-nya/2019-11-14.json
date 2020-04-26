@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Nya, glad to hear it helped you clarify some of your questions.\nAs for your story, I understand your fear of it being not so good, and getting stuck at some point. To that I'd advise you start with what you have, and you change as you go. It's only natural to change a story, characters, angles and stuff after you started. It might feel very different once you start to lay it out and see the pacing you get. Don't be affraid of changing it after you start - you might even end up getting rid of most of the story, sometimes this is all you need haha and make it simpler. Let's say your biggest problem will always be not to get started. We tend to overthink stuff and make an idea of it all, but in the end, if don't put it in paper it's just an idea, and nobody's gonna see it.\nPut in on paper the way you have it now, even if it's incomplete. When you see the big picture it might get easier to fill in the blanks, or else to change a whole chunk of it, as I said.",
+        "ts": "1573766195.009100",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/834844385396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I didn’t think of it like that",
+        "ts": "1573767308.009200",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/837545373526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m gonna try that ",
+        "ts": "1573767334.009300",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/835343677845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you Marcelo ",
+        "ts": "1573767350.009400",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/834872829492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I was thinking do you mind showing me  any of your old work ",
+        "ts": "1573767424.009500",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/834874611236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dexter said you were into things like nature too",
+        "ts": "1573767450.009600",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-14\/837548726550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok thanks i get on with that",
+        "ts": "1510477148.000060",
+        "username": "aferna-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/270855252515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "Sure, let me know if you have any questions. I probably sent you a bit too much all in one go so maybe try doing it bit by bit and we can go through it when you have updated different sections, if that's easier!",
+        "user": "U4VR52RQE",
+        "ts": "1510512702.000062",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

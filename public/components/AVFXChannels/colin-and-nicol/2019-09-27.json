@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/362346119>, password: Hope 1. ",
+        "ts": "1569576783.000300",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-27\/769114800945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

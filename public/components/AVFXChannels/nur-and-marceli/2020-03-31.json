@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nur!\n\nThanks for your feedback! I can definately try and take away some edge loops from Vessel, since that scene is getting very heavy. And yeah looking back, I could probably have made the mask lower poly. The detail on the \"forehead\" could most likely be done in Displacement like you say. I dont think I have enough time to go back and redo the topology for all these areas because I do want to get everything finished for my assessments which are coming up mid-May. \n\nYour notes about the arm anatomy - I actually used the same reference as you showed because I have the Anatomy For Sculptors book. I think if I showed the model directly from the front it does look like the reference, so I will try and send you a picture and see if you still think it needs some tweaks. \n\nAs for Harbinger, I know his anatomy of the chest\/shoulder is not entirely right. However the concept doesnt really feature that kind of human anatomy? I guess because he is bug-like and they dont have the same muscle structure. So I did wonder if I should stay from the concept and make the anatomy more accurate to a human, or if leaving it a bit closer to the concept but less \"accurate\" anatomically would be fine. Or maybe a sweet-spot somewhere in between?\n\nSorry for not replying sooner. I'm currently busy making my assessment video as I have a practice presentation on Thursday. If you like, I can send you the video once its finished, if you would like to hear about my process and my research and stuff. Might help let you know more about me :grin: but assessment isn't until the 18th of May so it would be a while yet before my video is completely done",
+        "ts": "1585690139.012000",
+        "username": "marceli guziewicz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1028258876051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

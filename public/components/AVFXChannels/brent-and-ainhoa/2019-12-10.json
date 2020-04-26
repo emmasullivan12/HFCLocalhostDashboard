@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah that's great. I had a project very similar in University.",
+        "ts": "1576019360.002300",
+        "username": "Brent Droog (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/870013458487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Being a generalist is great as you understand all steps of the pipline.",
+        "ts": "1576019416.002400",
+        "username": "Brent Droog (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/855373276418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

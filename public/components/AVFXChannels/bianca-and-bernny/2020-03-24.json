@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course, I'd love to see it when you're done! Do you use Syncsketch for feedback?",
+        "ts": "1585044091.000200",
+        "username": "Bianca Iancu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023624485255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do, I will send you the link",
+        "ts": "1585057638.000300",
+        "username": "Bernny Mwamba K (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010925696659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@underwoodvfx has joined the channel_",
+        "ts": "1561983200.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/669830803379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_<@U5W6M67LZ|chris>.spencer.vghs has joined the channel_",
+        "ts": "1561983211.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/681232868704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, please meet Alex your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1561983234.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/681233177216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1561983240.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/674880983585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1561983245.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/683083385399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chris, nice to meet you!\nHere's a small introduction so you could understand my background better.\n\nI've been in VFX industry for over 7 years by now. Originally I'm Ukrainian and started my career in Kiev as a generalist. Quickly transitioned to modeling and then to lighting lookdev(because I'm not patient enough to model, I like to have immediate results :slightly_smiling_face: ) After a year in the best company in Kiev I moved to Prague,CZ because I was looking for a much higher level projects. To a certain extent I succeeded just because I could work on films like Warcraft and The Walk(Also gods of egypts... unfortunately :wink: )\nSo after another year I moved to Warsaw, PL to Platige image. It was a lot of fun working there even though it was all about game cinematic. Also I became a lead lighter\/environments guy there. I brought  substance painter into pipeline(I'm really sorry junior texture artists who were rejected in getting a working there because of that) and developed some pipeline tools as well as led development team for a few months. And before leaving platige I became a CG sup as well and after 2 and a half years in total I moved to London.\nHere I worked at MPC assets department(one of the best departments of MPC) as a lead lookdev with majority of team in Bangalore,India, and after a year in MPC I moved to Framestore London.\nSo I'm here to answer all you VFX related questions but of course I'm happy to chat about none related to VFX topics too.\nPersonally I really like playing games,watching films(lately almost exclusively in cinema), tv series(also only the best ones, don't have time for anything worse than Breaking bad or Chernobyl) and I truly love Japanese art.\nI'm not sure about when and how often I'm gonna be available but we will figure this out along the way I guess. So feel free to write me any time but most likely I will be replying in bursts of long replies :slightly_smiling_face:",
+        "ts": "1561988008.001600",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-01\/683464067462_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

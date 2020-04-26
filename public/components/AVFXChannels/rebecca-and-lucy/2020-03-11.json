@@ -1,0 +1,275 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, sounds good how do you think I should improve them ? I know you said Uvs so which parts do you think need tweaking it’s hard to tell when you’ve been staring at them for so long :joy: And seeing your reel would be great !",
+        "ts": "1583914804.002700",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992609549780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you send me the chair file at all (it’d be easier for me to have a wee look :-) even a wetranfer link \n\nSo I have two reels- the first is my graduation reel- \n\n<https:\/\/vimeo.com\/332417069>\n\n\nAnd then this is my reel I applied to BlueZoo etc with (the lighting In the kids pilot isn’t great sadly that was a directors choice)\n\n<https:\/\/vimeo.com\/355860242>\n",
+        "ts": "1583921533.002800",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992787230964_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Rebecca Blair Showreel 2019",
+                "title_link": "https:\/\/vimeo.com\/332417069",
+                "author_name": "Rebecca Blair",
+                "author_link": "https:\/\/vimeo.com\/user61499517",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/778118584_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "My 2019 Showreel, featuring my major project 'Out of Control.'\n\nShot 01 Animation is credited to Oleksiy Popov -\n\nRenny's character rig is credited to Jeff Capili - \n\nMany thanks to my lectures Alec Parkin, Brian Coyle and Henry Malik, and special thanks to Chester Sampson, Michael Cauchi and Jesus Fernandez for all the feedback and guidance throughout this project.\n\nTune in on the 7th June for the premiere of  'Out of Control!'",
+                "fallback": "Vimeo Video: Rebecca Blair Showreel 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/332417069?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Rebecca Blair Showreel 2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/332417069",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/332417069"
+            },
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Rebecca Blair Showreel 2019- Update",
+                "title_link": "https:\/\/vimeo.com\/355860242",
+                "author_name": "Rebecca Blair",
+                "author_link": "https:\/\/vimeo.com\/user61499517",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/808788959_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Rebecca Blair Showreel 2019- Update",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/355860242?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Rebecca Blair Showreel 2019- Update\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/355860242",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 2,
+                "original_url": "https:\/\/vimeo.com\/355860242"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583921533.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I’ll get the chair file to you today and Your reels were really helpful thank you ",
+        "ts": "1583923256.003000",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995150842855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUX6DLN6M",
+                "created": 1583923827,
+                "timestamp": 1583923827,
+                "name": "File",
+                "title": "File",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 135,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUX6DLN6M\/file?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUX6DLN6M\/download\/file?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUX6DLN6M\/file",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUX6DLN6M-706d902214",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583923827.003100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope this has come through as the right thing ",
+        "ts": "1583923888.003400",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995513167750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey looks good I’ll have a look when I’m home tonight and give ya a few things I noticed - are the renders on your blog the most recent?",
+        "ts": "1583947564.003500",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996394173990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I’ve done loads more texturing and modelling I’m rendering a few more up to date ones for you currently they’re just taking quite a while to render I’ve tweaked a few of the shots but if you have any feedback on the render on my blog it would still help as some shots are still quite similar ",
+        "ts": "1583948909.003600",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994241895296_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unfortunately I only have the computers at uni to render on and they are very slow when it comes to maya so by the latest I’ll have an updated render for you to look at Friday while I sort that though I’ve got plenty of assets I’d love your expertise on if that’s ok :)",
+        "ts": "1583953448.003700",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994427852608_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure! That sounds great! If you send me what you want through that’d be awesome :-D \n\n",
+        "ts": "1583958697.003800",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994641521365_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are you rendering with btw? ",
+        "ts": "1583958723.003900",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981836632418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A more updated play through of my scenes to give you a better idea of what I want my final project to look like and yeah I’ll send you a few assets tomorrow what we’re you’re comments on my chair ? :)",
+        "ts": "1583958959.004000",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/984549976273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds good - hang on let me grab a screen shot of it and annotate it a bit",
+        "ts": "1583964524.004100",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996676929415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Brill thank you ",
+        "ts": "1583964693.004200",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994362833300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FVB31GDC6",
+                "created": 1583967698,
+                "timestamp": 1583967698,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 685418,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVB31GDC6\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVB31GDC6\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 255,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 339,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 509,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 566,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 679,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVB31GDC6-67a67edf69\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 724,
+                "image_exif_rotation": 1,
+                "original_w": 4096,
+                "original_h": 2896,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FVB31GDC6\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FVB31GDC6-8378d14f83",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583967703.004300"
+    }
+]

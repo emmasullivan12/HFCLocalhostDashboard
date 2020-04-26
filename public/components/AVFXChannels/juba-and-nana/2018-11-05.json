@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What hobbies do you have and how do you balance them with work?",
+        "ts": "1541427420.000700",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-05\/472989114951_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a few hobbies, I exercise (gym, bouldering, cycling), I love reading, playing games, writing, drawing, playing guitar. It's hard to balance honestly, can't tell you I know how to do that properly. I try to focus on my life goals first, I want to become a director, so I focus on hobbies that can complement or help me get there. Like drawing and writing, but sometimes I need a break so I fall to my other hobbies.\nHope that helps, what hobbies do you have?",
+        "ts": "1541451969.000800",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-05\/471607797392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

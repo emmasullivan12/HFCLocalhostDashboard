@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries,my English can be a bit broken sometimes , hope you are doing great , It's a nice an sunny day in London",
+        "ts": "1571301829.000800",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-17\/787256910835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't apologise for your English :slightly_smiling_face: and its getting colder with me, would appreciate a little bit of sunshine",
+        "ts": "1571338349.000900",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-17\/786799276802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've put some of my ideas together as a slide with some notes to explain my thoughts as to why I picked them, as I sometimes worry my ideas don't come across clear enough",
+        "ts": "1571338420.001000",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-17\/793144704625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPHHD15D3",
+                "created": 1571338444,
+                "timestamp": 1571338444,
+                "name": "Ideas.pdf",
+                "title": "Ideas",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2878810,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPHHD15D3\/ideas.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPHHD15D3\/download\/ideas.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPHHD15D3-a675846f44\/ideas_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 1467,
+                "thumb_pdf_h": 825,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPHHD15D3\/ideas.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPHHD15D3-77866a77d3",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1571338446.001100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some extra notes: I like the idea of a flooded mall, with pink and green flowers acting as a contrast to the murky water and greys of the old, broken mall",
+        "ts": "1571338683.001400",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-17\/801797961958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija! Great to hear from you, this is such an improvement to the last time I saw this!! We should arrange a call for some feedback! I’d also like to move our chats to discord? If you have one as it’s easier to screen share! :) ",
+        "ts": "1580041665.004700",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/924694357430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello~ that is not a problem! I do have a discord, just need to double check the username ID once I am back after work.\n\nAnd I am available for a call anyday evening that is suitable for you!",
+        "ts": "1580043099.004800",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/912314134337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

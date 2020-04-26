@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, just came across this on reddit, it'd be useful for python, but worth getting even if you don't plan on doing it yet, since it stays in your account forever - <https:\/\/old.reddit.com\/r\/learnprogramming\/comments\/ft7lw4\/automate_the_boring_stuff_with_python_udemy\/>",
+        "ts": "1585827777.023200",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044991692560_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "reddit",
+                "title": "Automate the Boring Stuff with Python Udemy course is free until Apr 7th",
+                "title_link": "https:\/\/old.reddit.com\/r\/learnprogramming\/comments\/ft7lw4\/automate_the_boring_stuff_with_python_udemy\/",
+                "text": "<https:\/\/inventwithpython.com\/automateudemy> (This link will automatically redirect you to the latest discount code.) [(EDIT: The HTML book is free...",
+                "fallback": "reddit: Automate the Boring Stuff with Python Udemy course is free until Apr 7th",
+                "thumb_url": "https:\/\/www.redditstatic.com\/new-icon.png",
+                "from_url": "https:\/\/old.reddit.com\/r\/learnprogramming\/comments\/ft7lw4\/automate_the_boring_stuff_with_python_udemy\/",
+                "thumb_width": 256,
+                "thumb_height": 256,
+                "service_icon": "http:\/\/www.redditstatic.com\/desktop2x\/img\/favicon\/apple-icon-57x57.png",
+                "id": 1,
+                "original_url": "https:\/\/old.reddit.com\/r\/learnprogramming\/comments\/ft7lw4\/automate_the_boring_stuff_with_python_udemy\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585827778.000000"
+        }
+    }
+]

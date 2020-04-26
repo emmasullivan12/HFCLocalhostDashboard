@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In Chemistry i like learining about what things are made out of like the atomic structure. Things do to with structure is very interesting. Im quiet interested in doin biochemistry at uni as i can incorporate biology as well as chemistry but dont know what that course is about in depth . However im curious to know what chemical engineering is nd what sort of jobs u could do with that degree. ",
+        "ts": "1507830403.000018",
+        "username": "shahana1812 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256577382423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That area of chemistry is very interesting! Are you interested in the chemistry of living organisms then? Genetics was my favourite biology topic when I was doing my a levels! I would say to get a better insight into what's involved maybe have a look at university websites and see what modules they cover on the subject! Also just a Google search around the subject would maybe help you know what sounds interesting to you :slightly_smiling_face: chemical engineering is similar in a way but looking more at how things are made on a larger scale and in less of a chemical analysis way - so more physics and maths and investigating how fluids\/solids flow and interact, including their energy and any reactions and incorporating some design with that too. It's involved in pretty much all industries be it food &amp; beverages, pharmaceuticals, cosmetics, oil and gas or energy. That's an aspect I love of the field because it is very diverse! ",
+        "ts": "1507833811.000426",
+        "username": "alex.gordon27 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/254875954896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

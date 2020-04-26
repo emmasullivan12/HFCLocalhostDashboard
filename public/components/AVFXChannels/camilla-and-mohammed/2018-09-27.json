@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great. Do you think you want to go to uni after school, or would you prefer to go into work?",
+        "ts": "1538038964.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/444355116293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I love the idea of raising awareness and funds through your business. I work with lots of entrepreneurs who do exactly that- it's great and they love what they do. I think it's important to do something you love every day.",
+        "ts": "1538039018.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-27\/445227910983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

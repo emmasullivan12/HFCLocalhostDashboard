@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "How are you coming along with your career plan Georgina?",
+        "user": "U5WUKRLBD",
+        "ts": "1499174470.480290",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "c6c9b25047f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/200508050097_c6c9b25047f4a7c025f4_72.png",
+            "first_name": "Tom",
+            "real_name": "Tom Sherwood",
+            "display_name": "tom",
+            "team": "T4UUTPV18",
+            "name": "tom",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No not really.",
+        "ts": "1511607070.000006",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-25\/277433402068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

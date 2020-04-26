@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I go to Norwich University of the Arts, and do the VFX course! And yes that’s the main software that we use, but we are looking more at Maya at the moment because we need to learn 3D!",
+        "ts": "1571944919.002000",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-24\/801751535969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We’re doing this project at the moment where we have to create an Orb and put it into that footage that we’ve just filmed! So we’re mainly going to be using Nuke for this project !",
+        "ts": "1571945055.002100",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-24\/807730523300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

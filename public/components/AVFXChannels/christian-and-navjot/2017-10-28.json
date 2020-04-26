@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No, but they will ",
+        "ts": "1509211533.000017",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-28\/263507687522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Last time they took 1 month and 15 days",
+        "ts": "1509211560.000016",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-28\/263560107508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For this time I don't know they've just told us that they will give feedback",
+        "ts": "1509211611.000012",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-28\/263646635477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

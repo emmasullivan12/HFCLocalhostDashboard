@@ -1,0 +1,191 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shailendra! Sorry for the delay - I've been home for new years and got back to university recently. I'm doing well - Just signed a production contract with my university to start production on our capuchin film so I'm super happy about that and it's just full steam ahead on the film from now!",
+        "ts": "1579104515.000100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907701354437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much for the paint explanation and that awesome video!!!!!! All of this was super super useful for me. I've managed to do a few of the frames from what I've filmed and I'll send you my paint work in a sec:D",
+        "ts": "1579104706.000200",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907698067488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you mean by 'stabilize and conquer'? Do you stabilise the whole video and then paint or stabilise a particular part?",
+        "ts": "1579104753.000300",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907699595472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/playground\/7fb829852cd94ebd855ac2a3c6160d99?offlineMode=1#1263982\/1297536\/f_0>",
+        "ts": "1579107348.000400",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907328916804_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: 7fb829852cd94ebd855ac2a3c6160d99",
+                "title_link": "https:\/\/syncsketch.com\/playground\/7fb829852cd94ebd855ac2a3c6160d99?offlineMode=1#1263982\/1297536\/f_0",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: 7fb829852cd94ebd855ac2a3c6160d99",
+                "from_url": "https:\/\/syncsketch.com\/playground\/7fb829852cd94ebd855ac2a3c6160d99?offlineMode=1#1263982\/1297536\/f_0",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/playground\/7fb829852cd94ebd855ac2a3c6160d99?offlineMode=1#1263982\/1297536\/f_0"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here are the first few frames of my paint work!",
+        "ts": "1579107356.000600",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/895000953698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Painting out the lanyard of the girl as she runs.",
+        "ts": "1579107362.000700",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/897579967201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can't see much right now because I've only painted out the lanyard as she's far away",
+        "ts": "1579107380.000800",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907796312997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks again!:)",
+        "ts": "1579107857.000900",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/896335888531_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Callum \nHappy new year!\nhope you had a nice break.\n\nHave fun working on your film.\nNo worries.\nSo stabilisation is quite useful when working however once completed we want to matchmove the result back\nonly the area thats been worked and not the whole frame(premult with the matte or difference)\n\nthe objective is the final result and source plate the only thing that changes is the work we do. its not uncommon to run a difference with high gain\n\n",
+        "ts": "1579107903.001000",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/909664564839_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "stabilise the whole video yes like locked off sometimes just a 1 point position or in perspective or even in unwrapped uv’s for someone’s face.\nwhatever is quick and easy",
+        "ts": "1579107986.001100",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/910015289590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "most of the time its just a simple tracker",
+        "ts": "1579108002.001200",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/895024094994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "silhouette paint has this ability to do it on the GPU so no render\npress a button to view stabilised(its just view and does not soften the image by doing it)\n",
+        "ts": "1579108105.001300",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907821879749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in nuke i often stabilise to match something very closely ",
+        "ts": "1579108134.001400",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907813048560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there are ways to procedural match changing color as well",
+        "ts": "1579108158.001500",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/895028900130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i remember years ago at dneg i had a tool that could be used to stabilise with a card and camera on a reference frame.\nand a script mapped to hotkeys\n\nso stabilse\/matchmove setup pretty much most things with a camera.\n\nif thats what you did all day",
+        "ts": "1579108324.001600",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/895034097810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i am unable to open your stuff on my phone.\nwill check this out at home",
+        "ts": "1579108522.001700",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/907824883392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

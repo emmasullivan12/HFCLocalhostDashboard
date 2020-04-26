@@ -1,0 +1,163 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you have any of your animations online or can send them to me, id be happy to take a look at them for you too",
+        "ts": "1570197404.012700",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/784046443216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome - I can send you the links to my animations hold on",
+        "ts": "1570202693.012800",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/786386382294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/ZUVNTIY8KxE>",
+        "ts": "1570202728.012900",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/771401380754_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Life ant death - 3Dami Studio London 2016",
+                "title_link": "https:\/\/youtu.be\/ZUVNTIY8KxE",
+                "author_name": "3Dami",
+                "author_link": "https:\/\/www.youtube.com\/user\/3damistudios",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/ZUVNTIY8KxE\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Life ant death - 3Dami Studio London 2016",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/ZUVNTIY8KxE?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/ZUVNTIY8KxE",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/ZUVNTIY8KxE"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/39WRy-D-NUQ>",
+        "ts": "1570202757.013100",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/771402179570_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Shape Off - 3Dami Studio London 2017 Summer",
+                "title_link": "https:\/\/youtu.be\/39WRy-D-NUQ",
+                "author_name": "3Dami",
+                "author_link": "https:\/\/www.youtube.com\/user\/3damistudios",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/39WRy-D-NUQ\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Shape Off - 3Dami Studio London 2017 Summer",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/39WRy-D-NUQ?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/39WRy-D-NUQ",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/39WRy-D-NUQ"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/uIGUkS3fuU8>",
+        "ts": "1570202774.013300",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/786388401430_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "A Tail Of Two Worms - 3Dami Studio London 2017 Winter",
+                "title_link": "https:\/\/youtu.be\/uIGUkS3fuU8",
+                "author_name": "3Dami",
+                "author_link": "https:\/\/www.youtube.com\/user\/3damistudios",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/uIGUkS3fuU8\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: A Tail Of Two Worms - 3Dami Studio London 2017 Winter",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/uIGUkS3fuU8?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/uIGUkS3fuU8",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/uIGUkS3fuU8"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/GtQR6b-GxgU>",
+        "ts": "1570202805.013500",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/784187625408_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Birds Of Any Feather - 3Dami Studio London 2019",
+                "title_link": "https:\/\/youtu.be\/GtQR6b-GxgU",
+                "author_name": "3Dami",
+                "author_link": "https:\/\/www.youtube.com\/user\/3damistudios",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/GtQR6b-GxgU\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Birds Of Any Feather - 3Dami Studio London 2019",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/GtQR6b-GxgU?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/GtQR6b-GxgU",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/GtQR6b-GxgU"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can find me on skype under <mailto:tobywinder@hotmail.com|tobywinder@hotmail.com> and on discord my username is blurgh (<mailto:winder.toby@googlemail.com|winder.toby@googlemail.com>)",
+        "ts": "1570250833.013700",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/772075087490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

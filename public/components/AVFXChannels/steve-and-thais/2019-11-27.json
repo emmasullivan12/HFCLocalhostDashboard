@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Thais, don't worry about not answering straight away. I have good experience of being busy :wink:\nTo me it sounds like you're being very sensible. Which is a good thing. University is expensive. I also have first hand experience with that. If you really feel like you only need a few months then maybe you're idea of saving and then taking a few months off is a good idea. Going to University or even a college course will likely take a year and I guess you will need a job in the meantime anyway to help pay for rent and bills etc.\nI have an observation which is really only my personal experience. I'm not trying to put a bad light on anyone or any company, just my experience. When I was working in VFX it was the hardest time for me to do any personal work. The hours are long and very demanding, especially towards the end of the project. I can't imagine what it must be like for a production coordinator who is trying to manager all of these things at a stressful time.\nFramestore is a great place to work (I was there for a little while many years ago) and it will look fantastic on your CV so good luck with the interview. I hope it went well.",
+        "ts": "1574852701.003000",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/850748490772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If end up working there then I think your idea of saving and then taking some time off is probably the best one, if you can afford it of course.",
+        "ts": "1574852724.003100",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851216198437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I asked in the general chat here we have for mentors and most people agreed that doing personal work alongside a professional job is very difficult. The only real suggestion I got was from someone who said they would get up early in the morning and work on personal stuff, then go to their professional job. They admitted it was tiring and the end of the day was often a struggle but it worked for them.",
+        "ts": "1574852820.003200",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/839740083907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't know about you but I am not a morning person =p so I don't think this would work well for me but maybe it could for you.",
+        "ts": "1574852843.003300",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/843277954513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unfortunately, I'm not sure what else to suggest. As I said, my solution was to go back to university and it worked ok for me but I understand it's not a solution for everyone",
+        "ts": "1574852888.003400",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851209218224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One other thing to think about is that the university fees in Scotland are for free. That's something that people have been asking about a lot.\nI'm not 100% sure how it works exactly. I think you still have to pay some small fee or maybe for enrolment or something like that but they are certainly close to being free. That might be something you could look at if it was an option for you.",
+        "ts": "1574852969.003500",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851220637397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I know a few people who have decided to do it your way and to save and then take some time off. I guess it's just whatever is best for you in your current situation.",
+        "ts": "1574853027.003600",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/843281265265_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If there's anything else you would like to ask or any more advice or questions you have then please just send me a message and I'll help in any way I can.",
+        "ts": "1574853053.003700",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/838429598578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

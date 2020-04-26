@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, Eric!\n\nI spent about 6 months in Montreal, so I completely relate. \n\nIt’s great that you’re keeping your skills fresh with online learning resources! There’s always more to learn. However you can practice using though tutorials in practical applications, the more confident of a compositor you’ll become.",
+        "ts": "1586117439.004100",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1045280683351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Having a background in Maya is only beneficial, as well. \nUnderstanding your renderer in Maya is extremely helpful. Understanding lighting is also a huge benefit for compositors. ",
+        "ts": "1586117499.004200",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1047571952614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m glad that you’re eager to grow as an artist!\nI’ll absolutely do my best to guide you as you navigate the business.",
+        "ts": "1586117539.004300",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1044621007393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for your reel, I’ll take some time, and write up a shot breakdown for you, and lay out some tips. There’s always something improve.",
+        "ts": "1586117585.004400",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1038892093394_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ideally, what kind of work do you aspire to working towards? More big budget film shots? \n\nHave you researched different small and big VFX houses? And favorites or inspirations?",
+        "ts": "1586117680.004500",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1047572496710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I applied many places, for either junior compositor  or roto paint but all studios are the same at those time with the virus. They can't really manage fresh from school juniors by remote and jobs are slowdown because of this virus",
+        "ts": "1586122788.004600",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1047589294198_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

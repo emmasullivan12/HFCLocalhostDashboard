@@ -1,0 +1,107 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Enrico, thank-you for all your advice thus far, and insight into your work process. I am trying to always refer back to what you have been telling me when I am doing a project. It is sometimes overwhelming especially when you are at the beginning and you feel pressured to make a choice of 'what to focus on', and of course the feeling of having to show someone when you feel very amateur at your skills  - I noticed that I struggle with compartmentalising my time and goals well and prioritising things in order to develop myself smartly. So recently when I sent you that list of projects, sure, Its all great to know i have ideas for so many possible projects, But realistically I haven't questioned why I want to do them all and so when I sit down with a project I am wrought with indecision as to what the aim of the project is. Recently i applied for a illustrative role through Artella (a public online project sharing site) and was surprised to see that I was accepted- I have been asked to assist in creating some colour scripts for a animation and tried to spend the day doing this. I began to get very frustrated and realised that I did not know enough about colour and lighting to understand how to even generate a colour  scene- and this created a knock down to my confidence again. I decided to refer a short course on design through colour and lighting- and upon realising how much I do not know and the layers of considerations when designing with colour to depict the emotional beats for an animated film, this has made me suddenly very intimidated and insecure at myself. I might have jumped ahead too far expecting i would be able to do something when I likely do not have the correct foundational skills.",
+        "ts": "1582569083.000100",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/953791083810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have done a little bit of observational and digital painting studies before, as well as traditional experiments in painting and observational drawings too, which i have attached as an example:",
+        "ts": "1582569565.000200",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/968803508838_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUGPP8554",
+                "created": 1582569622,
+                "timestamp": 1582569622,
+                "name": "examples.jpg",
+                "title": "examples",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2044573,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUGPP8554\/examples.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUGPP8554\/download\/examples.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 187,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 249,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 373,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 415,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 498,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGPP8554-38193d303d\/examples_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 531,
+                "image_exif_rotation": 1,
+                "original_w": 4221,
+                "original_h": 2188,
+                "thumb_tiny": "AwAYADC4GPqKjlJyuGBPIoz8wOcVXnRcLvYgAnkUOIiSQ5VRjpxVaOIFTvDZ7YFIwQrvMb4PG4d6uLnYCQelLYa0Et1UW\/zL0c4zUpAkVlI4qOUjaDgjDA0CRiT8mB65pbibEWymH\/LRf1oMDQQNn5ssOFzV6mTfc\/GqGUA7cDy2A+hqE8nkkVf7iqLdauJMia2JXdty3HPHSnvNNg7UIx3waLL+P6Cp\/WoktSovQ\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUGPP8554\/examples.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUGPP8554-7a3921588c",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582569629.000300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For the colour script role I have been given the storyboard and a few style frames of the final 3D renders of the opening scene. I am tasked to colour script a few scenes which take place in a forest in Autumn, so lots of foliage detail, and the characters are quite colourful in contrast, one has purple hair, the other blue etc.  I have been looking at Aurelen's work on early man and Moomin to understand how he simplifies colourful scenes into shapes and value- as well as Dice Tsutsumi's work for Toystory 3. With so many things to consider like Value, atmosphere, Local colour and how material surfaces react to lighting I am unsure how to break down this task and also wanted to ask for your advice on what would be a good way to approach this. From your expirience how long does colour scripting a single scene take- I have not been given a definitive deadline but am expected to be creating work to send back soon so I also wanted to gauge what is the general expectation for a beginner so that I can also factor in more time to set aside a little time studying and breaking it down.",
+        "ts": "1582570806.000600",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/953845892130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I remember your work on ratville, as It has striking considerations to colour and lighting in your pieces and wondered maybe if you remembered how you broke down the image before painting, roughly how long did one image take you and what considerations\/references did you have to gather in order to create these pieces?",
+        "ts": "1582571307.000700",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/968512840647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

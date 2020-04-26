@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jon, I'm really sorry I've taken this long to answer! Hope your January was nice? I've been doing the dmp tutorials for most of the month and updating one if the projects I already had un the showreel. The internship is going well, I've had a lot more free time which helps with doing the tutorials. At the moment I'm getting my showreel ready for sending to VFX Outpost in Bournemouth. I saw on LinkedIn they have some spots for a 4 to 6 month contract on dmp and environment artist. They have some senior dmp's already so it might be too late but I want to send it anyways. How's work been treating you? :)",
+        "ts": "1581416953.000200",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946062169860_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been thinking about this a lot, I wonder what's your opinion on it - if there is a short deadline to apply for a job do you think it's better to send a showreel as it is or better finish improving it before sending it over? Because I could have sent my showreel as it is ages ago but I wouldn't want to send it yet if I know I can do better now. It's a funny dilemma. What do you think, which one is better?",
+        "ts": "1581417587.000300",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/936387419681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

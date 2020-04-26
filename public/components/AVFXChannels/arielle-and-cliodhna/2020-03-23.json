@@ -1,0 +1,127 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mainly deal with workflow on a daily basis! :) I make demo material\/learning tutorials for Flix and Katana which are up on Foundry Learn. But a lot of the time I'll meet studios (now remotely) and demonstrate the products. In my previous job though I'd worked on a few environments on the 3d version of Asterix, but the majority of the time I was debugging the scenes and set dressing for the Asterix and Shelock Gnomes projects. The last reel I had was when I graduated, I don't practise what I preach by keeping my showreel updated! Although now I mainly do studio meetings, webinars or roadshow presentations, not really something you can put in a showreel :P",
+        "ts": "1584952829.002400",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1018528351600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah this time is perfect if you want to get work done :)",
+        "ts": "1584953004.002500",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020305597335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahhh, I thought so! You mentioned your showreel before but I wasn't sure how recent it was! :blush:",
+        "ts": "1584953147.002600",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1018560225749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "these were the projects I did over university :wink: <https:\/\/vimeo.com\/225421986>",
+        "ts": "1584956816.002700",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1018703293141_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Arielle Martin Graduate Showreel July 2017",
+                "title_link": "https:\/\/vimeo.com\/225421986",
+                "author_name": "Arielle Martin",
+                "author_link": "https:\/\/vimeo.com\/user40329862",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/644733875_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "This is my graduate reel from the Computer Visualisation and Animation course in Bournemouth. Enjoy!",
+                "fallback": "Vimeo Video: Arielle Martin Graduate Showreel July 2017",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/225421986?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Arielle Martin Graduate Showreel July 2017\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/225421986",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/225421986"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584956817.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That all looked so cool!! I reaaaaally loved your Monet piece, it looked so aesthetic with the blend of colours. And the way you created and modelled that scene with the house and the shadowey figure was all so smooth and dream like :exploding_head:",
+        "ts": "1584957468.002900",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1018728041589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These projects were really fun to work on! I cut a lot of corners for those since I was on my own for those projects on the final year, for the shadowy figure I filmed my firend at the park using the greenery as a 'greenscreen' so very budget indeed :stuck_out_tongue:",
+        "ts": "1584958184.003000",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020508062807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh my god, I didn't even notice, I was thinking \"damn, I wonder if she animated it..\" ahahaha :joy:",
+        "ts": "1584959144.003100",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020984136918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah I liked animating but clearly preferred all the other stuff!",
+        "ts": "1584962078.003200",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1008820424129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I get that, I really love editing in After effects so I sneakily use it to enhance illustrations or animations etc.",
+        "ts": "1584965265.003300",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020761300727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

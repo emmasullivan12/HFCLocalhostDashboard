@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Felicia,",
+        "ts": "1574717069.000100",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/836031091058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just incase you think Ive given up on nuke\/mentoring, I had a baby 7 weeks ago and things have been crazy but will be starting to set time aside for training soon.",
+        "ts": "1574717119.000200",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/837347200323_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Callum!\nnice to hear from you, take rest and hope you feel better soon.\nThe monkey looks cool! I have asked one of my colleagues from modeling dept. to take a look and give some feedback.\n\ncheers\n",
+        "ts": "1568651701.002400",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-16\/764050392854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Shailendra! :smile:",
+        "ts": "1568651897.002500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-16\/750374938163_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

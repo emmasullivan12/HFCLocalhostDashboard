@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Daniel, \nThe app still confounds me a little with it's lack of notifications! \nUnfortunately, I didn't get a place with any VFX company, there seemed to be a cut in numbers. \nThis summer has been a bit slow for me! I'm meant to have finished a documentary for an Extended Project Qualification but am no where near! Hoping to cram it in the next few days and present anyhow. \nThank you so much for checking up on me. How's it going in the professional world?",
+        "ts": "1566304951.000200",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/732079740309_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

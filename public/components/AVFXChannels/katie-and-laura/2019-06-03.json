@@ -1,0 +1,86 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam - I'm going to have to be a disappointment again and reschedule our real-time chat tonight! I've been very busy the past few weeks with work deadlines and I'm preparing to give a presentation this Friday, things should be a lot calmer next week however.",
+        "ts": "1559554534.000100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-03\/641874153922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We are hosting the first Q-VFX event at Framestore at the end of this month - so if you can come along we will be able to meet face to face? Sounds like it's going to be a good one! <https:\/\/www.eventbrite.co.uk\/e\/we-are-q-vfx-tickets-62308692978>",
+        "ts": "1559554624.000200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-03\/641875360930_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "We Are Q-VFX",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/we-are-q-vfx-tickets-62308692978",
+                "text": "We are Q-VFX! ACCESS: VFX with a group of like-minded folks from the London visual effects community have created Q-VFX (Queer VFX), a new, inclusive LGBTQI+ community hub where industry and aspiring talent can access information, events, mentorship and support. During Pride Month 2019, we host our official launch event: 'We Are Q-VFX' on the evening of Thursday 27th June at award winning visual effects studio, Framestore. The format of our event will run as follows: 6.00pm - Arrival 6.30pm - Welcome Presentation 7.00pm - 'We Are Q-VFX' Panel Discussion 8.00pm - Drag Queen Bingo 9.00pm - Drinks and Networking 9.30pm - Wrap up Our panel will be made up of industry peers from the VFX, animation and games community, and we're excited to share names with you as we approach the big day. We will follow the panel with an hour of drag queen bingo so we can celebrate Pride Month in style, along with an opportunity to mingle, network and party with our newly formed Q-VFX community! A big thank you to our sponsors Framestore for providing the venue and Foundry for paying for the drinks! Happy Pride Month! Q-VFX is growing a supportive queer community\/space that travels with you wherever you go, with regular meet-ups, outreach and events, all in the spirit of ACCESS: VFX’s core mission of actively pursuing and encouraging inclusion, diversity and opportunity across our incredible visual effects, animation and games industries.  Q-VFX is run by a diverse group of people from different companies, positions and backgrounds. Please sign up to our mailing list at <http:\/\/www.accessvfx.org\/qvfx|www.accessvfx.org\/qvfx>",
+                "fallback": "Eventbrite: We Are Q-VFX",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62773744%2F64872761663%2F1%2Foriginal.20190523-134919?w=1000&auto=compress&rect=0%2C243%2C1024%2C512&s=fd1a4c344562379c1cebf5938a0bdafe",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "28 Chancery Lane, London, WC2A 1LB, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Thu 27 Jun 2019 at 18:00",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/we-are-q-vfx-tickets-62308692978",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 33615,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/we-are-q-vfx-tickets-62308692978"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I saw this and got very very sad because that same day I have to travel to Manchester. Long story short, I am applying for Spanish nationality so I can have more of a chance to get a job in a studio after I graduate hopefully without having to go back to Colombia. For the application I have to take a test about Spanish culture and society knowledge... I booked it a few months ago on the last few slots the Spanish Institute had to offer in Manchester (there weren't any left in London). And yes, the test is that same day June 27th at 6:00pm :sob: so I wont be able to go to this first Q-VFX event. But I will definitely be watching out for the next one!",
+        "ts": "1559569145.000400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-03\/653483634741_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't worry about tonight, I also have an assignment to hand in this Friday so will be pretty busy too. Let's chat next Monday (8:00pm?) for sure, I will have more of my project done to show you by then. Also, I have been thinking about the questions you asked me regarding the goals for this mentorship and the list of things I think you could help me with regarding my future as a Video Game artist, I think it would be great to discuss it on our one-on-one next Monday.",
+        "ts": "1559570452.000500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-03\/653023760180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you have a great week and everything goes well with your presentation!! :space_invader:",
+        "ts": "1559570694.000600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-03\/655374313927_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

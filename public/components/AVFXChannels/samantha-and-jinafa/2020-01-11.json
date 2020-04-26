@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Samantha, hope you had a great break! Sorry for the late reply I had some many exams on the first week back and still got some left:weary::weary:",
+        "ts": "1578751452.003900",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-11\/904728122518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How would you say the salary is? Wow that's amazing what a coincidence:joy:I'm seriously thinking about applying to Medicine as my first choice and physiotherapy at Brunel University as my second choice",
+        "ts": "1578751546.004000",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-11\/902532270565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I had a question, is it possible to apply to different courses for your 5 choices or do you have to stick to one?",
+        "ts": "1578751598.004100",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-11\/902532576741_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeh I have checked and the best think about Imperial is that they don't take gcse grades into account, but it's more about how much experience you have, Bmat score and a level grades",
+        "ts": "1578751690.004200",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-11\/904381545943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Really? I think I should start contacting them then, as it would give me a good idea of the job but also look good for my application",
+        "ts": "1578751780.004300",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-11\/904382037399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha thank you for the advice, really means a lot:heart:",
+        "ts": "1578751852.004400",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-11\/889739338754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

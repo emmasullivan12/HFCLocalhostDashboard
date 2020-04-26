@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Will, sorry for a delayed reply. It's been a bit busy in the recent days. How are you? \nI'm most likely will be able to reply in bursts.\n\nSo a bit about myself - I've been in the industry for around 8-9 years now. I started as a generalist\/modeler then slowly transitioned into lighting\/lookdev. I had opportunity to be a lead as well as supervise some projects in the recent years. I mostly worked in films but I had some great time working on game cinematics\/high end commercials too. At the moment I do lighting and lookdev at Framestore and I'll be happy to answer all your questions and provide you with feedback if you'll need any.",
+        "ts": "1584138935.001900",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1002160265542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

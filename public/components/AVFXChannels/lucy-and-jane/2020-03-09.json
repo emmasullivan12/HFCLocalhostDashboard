@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thank you for showing him my portfolio :) , seeing as I'm back in school today, over this week I'll make some final modifications to it. \nI'll send you progress as soon as possible :+1:",
+        "ts": "1583752023.007800",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990695393767_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

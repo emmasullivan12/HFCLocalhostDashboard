@@ -1,0 +1,67 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah its a good excercise but it is something that you need to really think out and plan before starting to get good results :slightly_smiling_face:",
+        "ts": "1586163858.003700",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1045820547857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also when it comes to expressive character performance its always good to have a line of action in a characters face too. use the jaw and upper face controls to squash and stretch the face and to help open up one side of the face more :slightly_smiling_face:",
+        "ts": "1586163925.003800",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1050549399732_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pinterest.co.uk\/pin\/195695546291140047\/>",
+        "ts": "1586163992.003900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1056147800432_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Pinterest",
+                "title": "Koji | Artstation concept art, Character drawing, Character sketches",
+                "title_link": "https:\/\/www.pinterest.co.uk\/pin\/195695546291140047\/",
+                "text": "May 26, 2017 - Alexander Snow launches an action packed proof of concept for his animation about a lightning powered boy and his giant water\/ice powered blue cat buddy.",
+                "fallback": "Pinterest: Koji | Artstation concept art, Character drawing, Character sketches",
+                "image_url": "https:\/\/i.pinimg.com\/736x\/f7\/5e\/8d\/f75e8d95aa2c3c58ca9c4fd3d82cc1dc.jpg",
+                "image_width": 250,
+                "image_height": 250,
+                "from_url": "https:\/\/www.pinterest.co.uk\/pin\/195695546291140047\/",
+                "image_bytes": 81079,
+                "service_icon": "https:\/\/s.pinimg.com\/webapp\/style\/images\/logo_trans_144x144-642179a1.png",
+                "id": 1,
+                "original_url": "https:\/\/www.pinterest.co.uk\/pin\/195695546291140047\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586163992.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can see how the location of the mouth creates a line of action in the face, and how the brows are always asymmetrical? it adds a lot of expressiveness and appeal to the face :slightly_smiling_face:",
+        "ts": "1586164065.004100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1041018492675_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

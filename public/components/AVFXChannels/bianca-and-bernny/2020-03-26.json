@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aaron Blaise is giving away his Fundamentals of Animation Course free for the next few days if you're interested! You can use my download link if you like.\n\n<https:\/\/creatureartteacher.com\/checkout\/order-received\/926117\/?key=wc_order_UKvQLid4NUwEm>",
+        "ts": "1585218969.000100",
+        "username": "Bianca Iancu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-26\/1027266760484_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "The Art of Aaron Blaise",
+                "title": "Checkout - The Art of Aaron Blaise",
+                "title_link": "https:\/\/creatureartteacher.com\/checkout\/order-received\/926117\/?key=wc_order_UKvQLid4NUwEm",
+                "text": "You have purchased the following course: Fundamentals of Animation",
+                "fallback": "The Art of Aaron Blaise: Checkout - The Art of Aaron Blaise",
+                "from_url": "https:\/\/creatureartteacher.com\/checkout\/order-received\/926117\/?key=wc_order_UKvQLid4NUwEm",
+                "service_icon": "https:\/\/creatureartteacher.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/creatureartteacher.com\/checkout\/order-received\/926117\/?key=wc_order_UKvQLid4NUwEm"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585218973.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow thank you, I’d really like to see that !",
+        "ts": "1585239318.000300",
+        "username": "Bernny Mwamba K (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-26\/1028236156084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

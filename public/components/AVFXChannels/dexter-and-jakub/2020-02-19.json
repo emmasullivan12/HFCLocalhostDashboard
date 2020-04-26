@@ -1,0 +1,203 @@
+[
+    {
+        "client_msg_id": "c5851c59-1f79-4642-aaef-414402322862",
+        "type": "message",
+        "text": "Oh I must have got mixed up apologies haha",
+        "user": "U4VR52RQE",
+        "ts": "1582129180.000500",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SB9+I",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Oh I must have got mixed up apologies haha"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9c8b4d9b-25a1-485d-9dcd-80ea431eb5b5",
+        "type": "message",
+        "text": "that sounds interesting though. What kind of vocal help would you be interested in doing do you think?",
+        "user": "U4VR52RQE",
+        "ts": "1582129241.001200",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7=gnZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "that sounds interesting though. What kind of vocal help would you be interested in doing do you think?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "be0837b0-061a-4ffc-a87d-4f0d472df457",
+        "type": "message",
+        "text": "ah thats a shame but it happens don't worry about it. Another one will come along",
+        "user": "U4VR52RQE",
+        "ts": "1582129333.001600",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3L9iv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ah thats a shame but it happens don't worry about it. Another one will come along"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "05400f04-cb1b-4034-bcb6-a4f75de7ead1",
+        "type": "message",
+        "text": "Does finding this apprenticeship perhaps help you in your search for more like it? And maybe another that does give you higher than a level 3?",
+        "user": "U4VR52RQE",
+        "ts": "1582129382.002400",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5uPx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Does finding this apprenticeship perhaps help you in your search for more like it? And maybe another that does give you higher than a level 3?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9d6e37c9-e579-495d-be26-ed38f0fa22e5",
+        "type": "message",
+        "text": "Also how long is it? It might be that it's too short and that's why it's only level 3",
+        "user": "U4VR52RQE",
+        "ts": "1582129413.003100",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7NE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Also how long is it? It might be that it's too short and that's why it's only level 3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No, normally the apprenticeships are to achieve Level 3 and I am already doing Level 3 at school therefore looking for the Level 4 is challeanging because they usually are for 3 years and you achieve degree at the end. I don't think the time of duration has anything to do with the level you achieve, I think its about the level of qualifications that the company is ready to provide you with. Also in terms of Vocal help, I am very intrested in singing and at the begining I had no idea where to start and how to practise and I had to learn everything by myself so I would create a program where I would help people to learn how to sing and what is their Vocal range ext...",
+        "ts": "1582152159.003200",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/960221960656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

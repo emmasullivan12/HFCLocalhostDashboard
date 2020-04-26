@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that looks amazing- *SO* much better, well done! you can actually see all of the work you put into the lookdev now :smile: just to completely polish the image, try moving that light on the right hand side slightly so it doesn't cast that darker mark in the corner :smile:",
+        "ts": "1580465351.001400",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/917957722498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also I think your asset might be floating ever so slightly :wink: easy to miss!",
+        "ts": "1580465383.001500",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/930746213856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahh thank you! I will get onto trying to polish it more aha! Oh god it is floating isn't it?? I was half asleep when I did this, silly me :smile: I'll fix that as well haha",
+        "ts": "1580475108.001600",
+        "username": "Natalie Edwards (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/933144196390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

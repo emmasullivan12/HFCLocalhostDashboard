@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lucy ! So now I am finished with my Sem A, so will have some free time to spend on FX haha. This is showreel, that I mentioned earlier, of one of my assignments - <https:\/\/vimeo.com\/379338346> ( password - showreel). It is actually not only FX, but the important stuff for me is from 0:30, because thats the point where I show my work for FX. There are still a lot I would like to change, namely : change the gravity, add some variaty in Tornado movement so it wouldn't look so \"perfect\", add more dust to it to change colour, also would like to work more with actual wall destruction because now it doesn't look realistic. But maybe you can spot more problems and feedback is more than welcome ! I am so happy  that next semester I will be able to do only FX so I can improve much more :slightly_smiling_face: Have a nice Christmas and happy new year !",
+        "ts": "1577106043.000100",
+        "username": "Eirimas Jaskinas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873955790977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

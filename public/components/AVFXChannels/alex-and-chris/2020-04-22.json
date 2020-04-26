@@ -1,0 +1,89 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It looks like this guy is mostly a modeller, so what you need is modeling to keep up with his quality. Though my general advice would be to finish scenes, that's the most import part in this new world. Generalist will rule the world :slightly_smiling_face:  Also don't look at this reel as \"his\" real. It's a HUGE production behind all of that. It's been reviewed by the best of the best and then supported by good lighting and comp work, so modeling wise, I don't see anything fancy there. I would go as far as saying you are not that far away modeling wise. Textures are nice, but then again he says he was part of the team, which could mean he did decals and that's kinda good enough to put in your reel :slightly_smiling_face: I'm not saying it is like that, just remember there are usually hundreds of people working on such shows",
+        "ts": "1587561946.003300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078852853890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So just go for the finished scenes and make as many of them as you can",
+        "ts": "1587561980.003400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1085022901028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But with quality",
+        "ts": "1587561984.003500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1064121304167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No need in 10 weak scenes, 2 great ones will land you a job",
+        "ts": "1587562005.003600",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1072121862614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I totally agree and It's nice to know you think I'm not far off! Yeah I understand that it's a huge team working on it but tbh that makes me feel more hopeful because my reel will hopefully show quite a lot of those different skills for the different roles, so perhaps if i apply for example to an 'env-modelling' job but I dont get it  but they need an 'env lookdev' as well, my reel will show those skills to so they might want to explore me doing that instead? I think that's why I'm motivated to have a good quality varied reel  :+1:",
+        "ts": "1587565230.003700",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1079016906994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also dont know if you know about this or are even interested but the Head of CG Ludovic started this discord server a couple of months back and i've been finding it super useful for all sorts of crap, there's well over 1000 people on it now... <https:\/\/discord.gg\/b4uguP>",
+        "ts": "1587565971.003800",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1085225021492_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Discord",
+                "title": "Join the Keep Calm, I'm in VFX Discord Server!",
+                "title_link": "https:\/\/discord.gg\/b4uguP",
+                "text": "Check out the Keep Calm, I'm in VFX community on Discord - hang out with 2,390 other members and enjoy free voice and text chat.",
+                "fallback": "Discord: Join the Keep Calm, I'm in VFX Discord Server!",
+                "image_url": "https:\/\/cdn.discordapp.com\/splashes\/676088890964181005\/b8258ac4dc57e4e2671c83204c15e132.jpg?size=512",
+                "image_width": 427,
+                "image_height": 250,
+                "from_url": "https:\/\/discord.gg\/b4uguP",
+                "image_bytes": 37244,
+                "service_icon": "https:\/\/discordapp.com\/assets\/07dca80a102d4149e9736d4b162cff6f.ico",
+                "id": 1,
+                "original_url": "https:\/\/discord.gg\/b4uguP"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587565971.000000"
+        }
+    }
+]

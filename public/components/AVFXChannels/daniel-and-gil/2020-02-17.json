@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure Gil. Just communicate with the mentor organisers and I'm sure they can find someone more in line with your discipline. \nBrilliant work though,  looking forward to seeing what you can come up with in the future.",
+        "ts": "1581927829.002300",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/954773169572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thanks daniel!",
+        "ts": "1581953944.002400",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/955828676192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

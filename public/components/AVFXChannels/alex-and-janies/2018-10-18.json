@@ -1,0 +1,236 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, why not? :slightly_smiling_face:",
+        "ts": "1539848708.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458897751090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm from Germany. Did you notice?",
+        "ts": "1539848859.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/459954128183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Our industry is very interesting because one constantly talks to people around the world and learns about different countries and cultures.",
+        "ts": "1539848939.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458292035921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oo that's cool!\nDoes your industry have any branches in or around London?? And do you know if they offer any work experience or apprenticeships??",
+        "ts": "1539866447.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458980150771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "London is pretty much the centre in Europe :slightly_smiling_face:",
+        "ts": "1539867540.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/459088778434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and for DNEG, there's this: <https:\/\/www.dneg.com\/careers\/students-graduates\/>",
+        "ts": "1539867618.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/459089878498_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "DNEG",
+                "title": "Early Careers - DNEG",
+                "title_link": "https:\/\/www.dneg.com\/careers\/students-graduates\/",
+                "text": "[...]Read More...",
+                "fallback": "DNEG: Early Careers - DNEG",
+                "from_url": "https:\/\/www.dneg.com\/careers\/students-graduates\/",
+                "service_icon": "https:\/\/www.dneg.com\/wp-content\/themes\/dneg\/images\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.dneg.com\/careers\/students-graduates\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Framestore has this: <https:\/\/www.framestore.com\/work\/launchpad-apprenticeship>",
+        "ts": "1539867748.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458483928673_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Framestore",
+                "title": "Launchpad Apprenticeship",
+                "title_link": "https:\/\/www.framestore.com\/work\/launchpad-apprenticeship",
+                "text": "Apprenticeships are very different from a full-time course. You earn as you learn and most of your learning happens in the workplace. You will be trained on the job, by people at the very top of their game. You'll gain valuable experience, job-specific skills, earn a wage and get holiday pay. You'll also spend around 20% of your time studying in a classroom, learning the deeper, wider knowledge you need to progress your career.   ",
+                "fallback": "Framestore: Launchpad Apprenticeship",
+                "image_url": "https:\/\/www.framestore.com\/sites\/default\/files\/styles\/slideshow_images_medium_1400_788\/public\/case-study\/images\/group-image.png?itok=8g0s3Vo1",
+                "image_width": 444,
+                "image_height": 250,
+                "ts": 1504790640,
+                "from_url": "https:\/\/www.framestore.com\/work\/launchpad-apprenticeship",
+                "image_bytes": 1895469,
+                "service_icon": "https:\/\/www.framestore.com\/sites\/all\/themes\/framestore\/img\/touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.framestore.com\/work\/launchpad-apprenticeship"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow! U just made finding it a lot more easier ",
+        "ts": "1539867891.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458354220944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll be sure to check it out ",
+        "ts": "1539867901.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458998791203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MPC and The Mill have programs as well I believe",
+        "ts": "1539867915.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/459288236821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I need to run to a meeting now but I'll have a look later this afternoon",
+        "ts": "1539867941.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/459288628149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right.. I'll check those too",
+        "ts": "1539867949.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458999473651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh thanks anyway",
+        "ts": "1539867955.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458486740449_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck at your meeting!",
+        "ts": "1539867962.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/460149488535_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MPC's programm is called \"MPC Academy\"",
+        "ts": "1539882251.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/459536146709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and here's some information about the one from The Mill: <http:\/\/www.themill.com\/millchannel\/1164\/the-mill%E2%80%99s-trailblazing-apprenticeship-scheme%3A-could-you-be-next%3F>",
+        "ts": "1539882288.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/458603218432_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "The Mill",
+                "title": "The Mill’s Trailblazing Apprenticeship Scheme: Could You Be Next?",
+                "title_link": "http:\/\/www.themill.com\/millchannel\/1164\/the-mill%E2%80%99s-trailblazing-apprenticeship-scheme%3A-could-you-be-next%3F",
+                "text": "As part of a trailblazer scheme in partnership with Framestore, LexHag and Double Negative, The Mill have proudly created the first ever VFX Apprenticeship schemes within 2D &amp; 3D. The innovative scheme, led by The Mill’s Talent Manager…",
+                "fallback": "The Mill: The Mill’s Trailblazing Apprenticeship Scheme: Could You Be Next?",
+                "image_url": "http:\/\/cdn.themill.com\/media\/00000021135.jpg",
+                "from_url": "http:\/\/www.themill.com\/millchannel\/1164\/the-mill%E2%80%99s-trailblazing-apprenticeship-scheme%3A-could-you-be-next%3F",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 561017,
+                "id": 1,
+                "original_url": "http:\/\/www.themill.com\/millchannel\/1164\/the-mill%E2%80%99s-trailblazing-apprenticeship-scheme%3A-could-you-be-next%3F"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! You are so much help :slightly_smiling_face: ",
+        "ts": "1539903470.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-18\/459449589556_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

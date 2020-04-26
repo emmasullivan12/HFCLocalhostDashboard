@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Bianca. I’ll go take a look and get back to you. ",
+        "ts": "1585819937.002300",
+        "username": "Jez Hall (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044555252064_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

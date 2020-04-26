@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Maria! So sorry I'm replying late. I've just got back from Xmas and new year away. I'll have a good look at your animation this evening! I'm sure there's plenty feedback I can give.",
+        "ts": "1578331890.000300",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/882217916738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Maria, just been checking out your animation, it's looking great! :grin: You've clearly been applying animation principles and the story is well told by the animation itself.\n\nThe hair animation and rendered shadows are impressive, both of these are great for adding a professional look. Adding really subtle hair animation to each shot adds some dynamic interest so I'd recommend making it consistent throughout. Keep it nice and subtle.\n\nAs far as constructive criticism, I would use straight cuts between shots instead of fades, they make it difficult to focus on your work. I certainly get it if you don't want to make the run time too short, but if you were thinking of adding another shot, i'd definitely add an expository shot of the bee on its own, on the wall or coming through a window.",
+        "ts": "1578348839.000400",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/894971213204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The setting looks good and is a nice background for the action, nothing too distracting which is a plus. Though a little dark maybe.\n\nDid you create the character yourself or is this a free asset? If you have the ability to increase the contrast of the eye texture (pupil isn't dark enough and colour a little washed out), though this is just a personal preference I would change myself if it was my work!",
+        "ts": "1578349052.000500",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/894975664084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope this is constructive and helpful!",
+        "ts": "1578349063.000600",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/882649970578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "your site is looking much more full of work, awesome :smile: a huge bonus when you're applying for roles",
+        "ts": "1578349148.000700",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/897293999159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

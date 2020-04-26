@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hahaha it's definitely the better option for like showreel i would say!",
+        "ts": "1587125595.006400",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069375445186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah i thought as much, i was pretty much the same but i struggle to work in my house so I always preferred going to uni so I could separate the two",
+        "ts": "1587125652.006500",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1054643991671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have depression and if i dont leave the house then it can get bad pretty quickly, especially if i dont see or speak to anyone for a while",
+        "ts": "1587125751.006600",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1093221992864_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah i can imagine that being a great feeling, turning a hobby into a job is such an achievement",
+        "ts": "1587125831.006700",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1093224392672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hahaha yeah thats awesome, what were the astronaut shots for?",
+        "ts": "1587126001.006800",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1062654353606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thats the beauty of it though isnt it, i feel like ive barely scratched the surface",
+        "ts": "1587126086.006900",
+        "username": "georgetclarke120 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1075558866580_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Geostorm, the beautiful vfx master piece that it is",
+        "ts": "1587158067.007000",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1083370035713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "drunk gerard butler saves the earth in space",
+        "ts": "1587158080.007100",
+        "username": "Mack Knights (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1056011362151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

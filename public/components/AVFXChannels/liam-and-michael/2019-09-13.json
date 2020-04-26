@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sadly with the larger VFX companies like MPC and ILM, they actually don't really appreciate that kind of work when looking for people to hire. I'd say if you want to shoot for companies like that then I'd try to show a reel full of live action\/photoreal CG work. With 3D animation studios that work is most definitely appreciated, as well as smaller companies that work in commercials. It's nice to hear that you're doing some personal vfx projects, feel free to ask any technical questions should they come up :slightly_smiling_face:",
+        "ts": "1568363483.002200",
+        "username": "Liam Barlow (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/758636218548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok cheers, I think I will hold out on applying to those larger VFX studios until I have some more photoreal CG work :smile:\n\nThanks very much Liam! I am currently working on a music video and trying to make some kind of vortex that will respond to the music, as well as use projection on some photographs so that I can move the camera through them.\n\nI was just interested to ask as well whether you have been tasked with learning any software outside of Nuke, After Effects to complete your work as a Compositor? For example using other software like SynthEyes for tracking or was there in house software that you have had to learn when you start a job at a new studio?",
+        "ts": "1568372570.002300",
+        "username": "Michael Bond (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/761461738598_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good plan, feel free to send over any work or reels you're working on!\n\nThat sounds cool man, music videos are always fun! In general my day to day work will be in Nuke, I very rarely would use any other software, however I started in After Effects back when I discovered VFX. Here at ILM I haven't had to learn any other software for creative work, it's just been learning their scheduling and management tools and things like that. At smaller companies you can find yourself learning other software, for example I learnt some PFTrack when I was working at a TV &amp; Commercial studio.",
+        "ts": "1568382020.002400",
+        "username": "Liam Barlow (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/761631565798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

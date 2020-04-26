@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No, I have not had the opportunity to use Houdini. At university I have been showed how to use Zbrush, Maya, Nuke, Substance Painter, Photoshop and 3D Equalizer.  ",
+        "ts": "1550686939.000100",
+        "username": "Alexander Naranjo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/556189488932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But what I really like is simulation. For my final project I thought to crate a dolphin in real live footage but me and the lectures cloud not find the solution od reflections with Bifrost ",
+        "ts": "1550687087.000200",
+        "username": "Alexander Naranjo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/556238490322_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Therefore, I have changed my idea of the dolphin to landing a aircraft in a kitchen ",
+        "ts": "1550687192.000300",
+        "username": "Alexander Naranjo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/555666692897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My question is, do you think would be difficult to get a job as VFX simulation artist? ",
+        "ts": "1550687271.000400",
+        "username": "Alexander Naranjo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/555492845712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

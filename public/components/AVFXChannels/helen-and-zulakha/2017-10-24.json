@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank youuu!! ",
+        "ts": "1508873627.000633",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/260655425536_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I just wanted to ask if you know any examples of how I could make my personal statement stand out?? ",
+        "ts": "1508873768.000293",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261309066290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And what would you say is your favourite and least favourite thing about going to university ?? ",
+        "ts": "1508873910.000401",
+        "username": "zulakha2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261363732036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think key things to make it stand out will be really getting across that you’re passionate about what you’re applying for and that you’ve thought it through ",
+        "ts": "1508880015.000526",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261370896114_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Then also thinking about things you do above and beyond school and what they’ve taught you about a real life Work setting ",
+        "ts": "1508880048.000309",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261295172067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Even joining this mentoring programme is a great example!",
+        "ts": "1508880060.000113",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/260854320193_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The best things for me about university were how much fun I have and all the friends I made ",
+        "ts": "1508880083.000312",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/262256347622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And also learning to write reports and essays well, it doesn’t matter what you study and what you do as a career afterward being able to write at that level will always stand you in good stead",
+        "ts": "1508880125.000515",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/260719576976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s hard to think about what I didn’t like because I loved most of it!!  I suppose obviously it is expensive and you have to live carefully for a while but because everyone is doing it it’s almost part of the fun!",
+        "ts": "1508880172.000305",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-24\/261296250899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know world building is so cool! sounds like an interesting idea you have for a game, although probably massive in scope! :smile:",
+        "ts": "1586264297.006800",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1053825028884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "which sources are you using to learn python and visual basic?",
+        "ts": "1586264313.006900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1050560233461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also, for this mentorship, now that we've learned a bit more about each other, I thought perhaps we can set up a recurring catch up - maybe once a week? that should be enough time to have some updates to discuss, and for you to prepare questions etc :slightly_smiling_face: what do you think? this way it can be a bit more structured!",
+        "ts": "1586264442.007000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045604117175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

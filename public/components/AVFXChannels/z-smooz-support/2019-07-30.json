@@ -1,0 +1,66 @@
+[
+    {
+        "client_msg_id": "bed87deb-8f12-4b89-a10b-dfef67a099db",
+        "type": "message",
+        "text": "Hey <@U6D2VCN07> just wondering if you managed to find anything for the notifications piece?",
+        "user": "U4VR52RQE",
+        "ts": "1564489443.005300",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the best I know is to “allow notifications for all messages”",
+        "ts": "1564512958.005400",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-30\/712962233606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have not found anything better",
+        "ts": "1564512967.005500",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-30\/712962388822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "client_msg_id": "cafafb1b-e550-44d5-ade2-6d0b16b40b9e",
+        "type": "message",
+        "text": "ok sure, thanks a lot for looking into that for us :ok_hand:",
+        "user": "U4VR52RQE",
+        "ts": "1564513084.006300",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

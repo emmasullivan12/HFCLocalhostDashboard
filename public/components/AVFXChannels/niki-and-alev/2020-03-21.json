@@ -1,0 +1,299 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Niki!",
+        "ts": "1584836341.006000",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1004415823330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do hope that you are doing well and staying safe?",
+        "ts": "1584836360.006100",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017220768949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These are really dystopian and challenging times. :(",
+        "ts": "1584836381.006200",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1004416120802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As of Friday 5 p.m., AUB decided to close down the facilities to all students. Which also means, no more having the option to access the studios at the campus. The university and the staff are doing their best to move all the lectures and such to the online platforms. It is a trial and error phase for everyone.",
+        "ts": "1584836506.006300",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017221882517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On Friday, I had my first tutorial with Mat Dame. Over Skype. As usual, great feedback! BUUUUTTT, speaking of feedback, I have just read your feedback. Very fast. And I do appreciate such detailed and long and kind feedback! Thank you so much!!!",
+        "ts": "1584836618.006400",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017202384096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There were many interesting points and questions for me to think about, which I appreciate. :)",
+        "ts": "1584836643.006500",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1018973476791_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will reply to your points and questions separately later. Now, I just wanted to ask about you and keep our conversation going.",
+        "ts": "1584836678.006600",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1007142207777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also wanted to 'come clean' about few points about me. Because they are very relatable to my situation right now.",
+        "ts": "1584836710.006700",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1019415121046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First of all, I have decided to not travel back home. Therefore, I am still in Bournemouth. I fear that travelling will be a huge risk to me and others. BUT, being in the room, alone, unfortunately has many downs for me.",
+        "ts": "1584836778.006800",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1004419096786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I worry about my parents in Istanbul. Turkey just declared a curfew for elder people. People who are over 65 years old and with underlying health conditions. My parents are both over 65 and my papa has a weak immune system to begin with. He was diagnosed with liver cirrhosis 8-10 years ago. Due to Hepatitis B. He had a liver transplantation 2-3 years ago.",
+        "ts": "1584836905.006900",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017224835205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also worry about my husband. (Did I mention that I am married?) He is alone at home, in Hamburg, Germany. Where we are living past few years. Well, technically, he is not alone 'alone' because our cat, Edward, keeps him company. Hahahahahaha!",
+        "ts": "1584836972.007000",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017225340181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmmmm, may be 'worry' is not the right word for it, because he is rather healthy. I wonder, if I shall try to travel. But I fear that my travel will jeopardise both us and others. :( I do not want to bring with me any kind of virus into our home...",
+        "ts": "1584837067.007100",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017205884464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "...This week was very distressing. The last 10 days or so, we all felt the uneasiness at the campus. And particularly this week was very low for everyone. But still, we get to see few familiar faces.",
+        "ts": "1584837127.007200",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016753020244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The point that I am trying to arrive (Sorry! It is taking so long!) is that I am having a very difficult time right now. I cannot concentrate on anything. And my health condition does not help me with the situation at all! :(",
+        "ts": "1584837248.007300",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1018978195543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would like to share with you my health background and I trust that this information will stay between us. This background, I do not share it with everyone. Not yet. Sharing such information is totally a HUGE and new thing to me! OK, I was diagnosed with Borderline Personality Disorder. Which unfortunately goes hand in hand for me with Depression and Anxiety.",
+        "ts": "1584837373.007400",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1018979115815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are many disinformation and judgement surrounding BPD. Therefore, please, feel free to ask anything you want about it. Please?",
+        "ts": "1584837419.007500",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1005741867507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What BPD means for me is, in short, I feel too much. I feel everything. I may be overwhelmed with my feelings. Because they are intense. I may have hard time regulating my emotions. Also my thoughts.",
+        "ts": "1584837510.007600",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1018980114583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And right now, with the virus on the rise, and everyone getting more and more isolated, including myself, depression is making is move on me.",
+        "ts": "1584837551.007700",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016756151156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel relatively low and under water.",
+        "ts": "1584837607.007800",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1019421994550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also suffer from migraine. And lower back pain due to two times herniated disk.",
+        "ts": "1584837623.007900",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016756724180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Everyday is a constant battle for me in many ways. Mentally or physically or both.",
+        "ts": "1584837656.008000",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016756969076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am really struggling right now to have a whole new daily routine.",
+        "ts": "1584837691.008100",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017210569024_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Any help, any suggestions, any opinion from you is most welcome!",
+        "ts": "1584837710.008200",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1019422765110_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "OH... I really do hope that I did not scare you or such? I just wanted to share it, just in case, you observe that there is a change in my tone.",
+        "ts": "1584837754.008300",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016757677748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like I said, please, feel free to ask me anything you have on your mind. I am always happy to explain. Share.",
+        "ts": "1584837778.008400",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017211210496_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for reading!",
+        "ts": "1584837784.008500",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017211250000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keep safe!",
+        "ts": "1584837792.008600",
+        "username": "A. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1019423358054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Piyush. Sorry for not contacting you earlier but with the start of the new academic year I've been very busy. I've finally finished updating my website. I'll send you a link as soon as I can",
+        "ts": "1569518959.000100",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/776916620038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, placement applications will start soon and I was wondering if you knew anyone that I should write my application letter to from Framestore",
+        "ts": "1569519024.000200",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/761935114210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is the link for my website",
+        "ts": "1569519768.000300",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/774731289989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/luisrodrigoroldan.wixsite.com\/rodrigoroldan>",
+        "ts": "1569519771.000400",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/776936592086_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries about it! Will take a look at the website :blush:",
+        "ts": "1569520254.000500",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/776948263398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Let me know what you think and what else could I do",
+        "ts": "1569521516.000600",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/774308573524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, I will try to get the point of contact for the rnd team. There is some restructuring going on so not sure if they are hiring at the moment or not.",
+        "ts": "1569521591.000700",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/763300110451_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, yeah that's fine!",
+        "ts": "1569521623.000800",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/768354832577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

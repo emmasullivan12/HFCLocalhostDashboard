@@ -1,0 +1,187 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey <!everyone>!!\n\nIt's the last few days of our Prospela programme :scream::scream:! \n\nWe'll be formally closing your mentee channels on *Sunday at 11:59pm* so it's perhaps worth starting to think about rounding off your conversations and reflecting on the last 2 months!\n\n&gt;*A good end is as important as a good beginning for an E-Mentoring relationship!* It's a good idea to reflect on what you've both learned, what you enjoyed \/ what surprised you, set a few medium-term goals for Mentees post-programme, and - of course - wish each other all the best for the future!\n\n_Note: We'll be keeping open this \"hello-mentors\" channel beyond Sunday_",
+        "ts": "1511947252.000153",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7DCG4BV1\/F87V3TSDU\/example.png|Example.PNG> and commented: Hey team,\n\nHere's a made-up example of the type of insights you might have got by sharing your daily work updates with your Mentees.\n\nGoing to run a quick poll to get your thoughts on it! Love it \/ hate it \/ see potential in it etc? Let me know! &gt;&gt;&gt;",
+        "ts": "1511963350.000135",
+        "username": "emma"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> used `\/poll`!",
+        "ts": "1511963440.000377",
+        "username": "Polly",
+        "attachments": [
+            {
+                "callback_id": "nRegb9sDLNAmdnjtJ",
+                "fallback": "To what extent are these peer comparison insights interesting to you?",
+                "text": "You may vote for multiple options",
+                "title": "To what extent are these peer comparison insights interesting to you?",
+                "id": 1,
+                "color": "35A8E0",
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "one",
+                        "text": "1",
+                        "type": "button",
+                        "value": "0",
+                        "style": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "two",
+                        "text": "2",
+                        "type": "button",
+                        "value": "1",
+                        "style": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "three",
+                        "text": "3",
+                        "type": "button",
+                        "value": "2",
+                        "style": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "four",
+                        "text": "4",
+                        "type": "button",
+                        "value": "3",
+                        "style": ""
+                    }
+                ]
+            },
+            {
+                "callback_id": "nRegb9sDLNAmdnjtJ",
+                "fallback": "To what extent are these peer comparison insights interesting to you?",
+                "id": 2,
+                "color": "35A8E0",
+                "actions": [
+                    {
+                        "id": "5",
+                        "name": "five",
+                        "text": "5",
+                        "type": "button",
+                        "value": "4",
+                        "style": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "six",
+                        "text": "6",
+                        "type": "button",
+                        "value": "5",
+                        "style": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "seven",
+                        "text": "7",
+                        "type": "button",
+                        "value": "6",
+                        "style": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "add_option_to_existing_poll",
+                        "text": "＋ Add Option",
+                        "type": "button",
+                        "value": "8anhT6xbKMPC4vnQh",
+                        "style": ""
+                    }
+                ]
+            },
+            {
+                "callback_id": "nRegb9sDLNAmdnjtJ",
+                "fallback": "To what extent are these peer comparison insights interesting to you?",
+                "id": 3,
+                "fields": [
+                    {
+                        "title": "",
+                        "value": "*1*: Definitely not interested\n`▇▇▇` 11% (1)\n<@U7ECVBA4U>",
+                        "short": true
+                    },
+                    {
+                        "title": "",
+                        "value": "*2*: It's a bit bland at the moment, but maybe\n`⁢` 0%",
+                        "short": true
+                    },
+                    {
+                        "title": "",
+                        "value": "*3*: Yes if it also included something else\n`▇▇▇` 11% (1)\n<@U7FBX88F4>",
+                        "short": true
+                    },
+                    {
+                        "title": "",
+                        "value": "*4*: I'm interested to check it annually\n`▇▇▇` 11% (1)\n<@U7G8UKVLG>",
+                        "short": true
+                    },
+                    {
+                        "title": "",
+                        "value": "*5*: I'd be interested to check it monthly\n`▇▇▇▇▇▇▇▇▇▇` 44% (4)\n<@U7FBX88F4>, <@U7T5XUXFE>, <@U7E2SMUC9>, +1 more",
+                        "short": true
+                    },
+                    {
+                        "title": "",
+                        "value": "*6*: I'd be interested to check it weekly or more\n`⁢` 0%",
+                        "short": true
+                    },
+                    {
+                        "title": "",
+                        "value": "*7*: I'd be interested to check it quarterly\n`▇▇▇▇▇` 22% (2)\n<@U7FBX88F4>, <@U7FP6HZGC>",
+                        "short": true
+                    },
+                    {
+                        "title": "",
+                        "value": "",
+                        "short": true
+                    },
+                    {
+                        "title": "Total votes",
+                        "value": "9",
+                        "short": true
+                    }
+                ],
+                "actions": [
+                    {
+                        "id": "9",
+                        "name": "add_comments",
+                        "text": "Add a Comment",
+                        "type": "button",
+                        "value": "8anhT6xbKMPC4vnQh",
+                        "style": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "view_all_responses_in_channel",
+                        "text": "View All Responses",
+                        "type": "button",
+                        "value": "8anhT6xbKMPC4vnQh",
+                        "style": ""
+                    }
+                ],
+                "mrkdwn_in": [
+                    "fields"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<!channel>",
+        "ts": "1511963484.000331",
+        "username": "bot"
+    }
+]

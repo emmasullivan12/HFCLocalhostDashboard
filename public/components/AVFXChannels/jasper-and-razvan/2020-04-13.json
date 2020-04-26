@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have looked around. Most of the things I have found are either really basic or too advanced. There has been some success, piece by piece I'm getting a grip of what to do. I am not going to omit the factor of me having to put in more time nd effort to learn, although at sometimes I am completly stuck not knowing what to do and it becomes really frustrating. I've heard in multiple places wagt should be my starting portfolio, about the fire water and the others. Unfortunately I am still not at the level of making even the most basics of those. I'm getting the hang of the basics right now with slow improvement, but it's there.  I could send you the little things I've done so far, if you would like to have a look at them.",
+        "ts": "1586784333.003500",
+        "username": "Razvan Manea (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1058601642005_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah sure, feel free to send me anything you want help with, technical or otherwise and I'd be happy to have a look and add any notes to your scene",
+        "ts": "1586797116.003600",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1058962557365_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

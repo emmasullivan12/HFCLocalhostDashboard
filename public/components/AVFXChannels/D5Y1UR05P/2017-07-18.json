@@ -1,0 +1,722 @@
+[
+    {
+        "type": "message",
+        "text": "Hiya",
+        "user": "U5XLJFDD1",
+        "ts": "1500364628.524206",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I wanted to ask if you knew that do we complete our career plan on the pdf document we are given or we can do it on Microsoft word",
+        "user": "U5XLJFDD1",
+        "ts": "1500364671.539526",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Morning",
+        "user": "U5WMH4QGK",
+        "ts": "1500364735.562544",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "When dexter introduced us, he pinned a google doc that you can edit online, and I can also view",
+        "user": "U5WMH4QGK",
+        "ts": "1500364738.563515",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ah I need to find that then",
+        "user": "U5XLJFDD1",
+        "ts": "1500364937.638598",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "If you can , can you possibly link me the document here? It would be much appreciated , thanks :grinning: :+1: ",
+        "user": "U5XLJFDD1",
+        "ts": "1500365014.667197",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/prospela.slack.com\/archives\/G5X5VQ0E4\/p1498130484936647>",
+        "user": "U5WMH4QGK",
+        "ts": "1500365065.686027",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Great thanks so much",
+        "user": "U5XLJFDD1",
+        "ts": "1500365092.695814",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ill start working on it then",
+        "user": "U5XLJFDD1",
+        "ts": "1500365098.697997",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Great. Happy to talk through ideas later if needed",
+        "user": "U5WMH4QGK",
+        "ts": "1500365495.843003",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Will do",
+        "user": "U5XLJFDD1",
+        "ts": "1500365646.899084",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I need help with this question \"Ask your E-Mentor what industries \/ roles spring to mind related to your responses\"",
+        "user": "U5XLJFDD1",
+        "ts": "1500366062.058740",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I think the two that sprang to mind were consultancy - problem solving in the real world - and academic - research through a phd etc, as it seems you find the academic side of the sciences very interesting",
+        "user": "U5WMH4QGK",
+        "ts": "1500367496.609014",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Right, thanks",
+        "user": "U5XLJFDD1",
+        "ts": "1500367748.709269",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Im on part 2 of the Career plan and I need help with writing which employability skills my Mentor has shown",
+        "user": "U5XLJFDD1",
+        "ts": "1500370197.691163",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Not sure if I can help with that - it's a case of you thinking through messages I've sent and working out which (if any!) of the skills I have shown",
+        "user": "U5WMH4QGK",
+        "ts": "1500371041.017310",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Alright , fair enough ^^",
+        "user": "U5XLJFDD1",
+        "ts": "1500373198.810682",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "What are your ambitions? and have you achieved them?",
+        "user": "U5XLJFDD1",
+        "ts": "1500373216.816838",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "sorry - it's more important that you think through these things as that will help you learn from it much more",
+        "user": "U5WMH4QGK",
+        "ts": "1500373235.823796",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "my ambitions...",
+        "user": "U5WMH4QGK",
+        "ts": "1500373241.825957",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thats true, no problem at all , I can understand that :wink:",
+        "user": "U5XLJFDD1",
+        "ts": "1500373256.831205",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I have to say that I don;t really have ambitions related to my career, and never have. My ambitions are more academic. I wanted to do a Masters in philosophy, and have done that. I want to keep on learning, and am doing that. I am working towards other ambitions as well, but again, not work related I'm afraid",
+        "user": "U5WMH4QGK",
+        "ts": "1500373308.849000",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ah okay. Thanks ^^",
+        "user": "U5XLJFDD1",
+        "ts": "1500373422.887931",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Has there ever been an obstacle you have encountered, but you acted and resolved that quickly?",
+        "user": "U5XLJFDD1",
+        "ts": "1500373469.904067",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "alright im on the last part of the career plan",
+        "user": "U5XLJFDD1",
+        "ts": "1500374119.117704",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "What skills\/experience\/knowledge I can build to help me in the future and do you have any advice how to do that?",
+        "user": "U5XLJFDD1",
+        "ts": "1500374160.130828",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "good questions. If you are doing physics at uni then a skill that will help you after uni when you go into a career will be the ability to collaborate. It is easy to get used to working on your own to solve maths\/physics problems to pass exams, but when you then go into a job you have to be able to work as part of a team to solve much bigger problems together. One way to help with that would be to think about joining a uni society for people interested in similar things to you - so for example a friend of mine joined a space society, they built balloons that they sent up to the edge of the atmosphere with a camera attached. He now works in the space industry, so that prepared him to collaborate with like-minded people.",
+        "user": "U5WMH4QGK",
+        "ts": "1500374593.268596",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Oh wow, Cool I will definitely join a uni society when I get to uni, Thanks for answering that ^^",
+        "user": "U5XLJFDD1",
+        "ts": "1500374771.325478",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ok I have completed my career plan ! :smile:",
+        "user": "U5XLJFDD1",
+        "ts": "1500376442.853216",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Its on my email which I used to sign in Prospela (my school email) on Google Drive",
+        "user": "U5XLJFDD1",
+        "ts": "1500376463.859535",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/docs.google.com\/presentation\/d\/1IMg6kwrVDfnMnV9-o8sFljjrPUtQaIEG48YHkYj9Qb8\/edit?usp=sharing>",
+        "user": "U5XLJFDD1",
+        "ts": "1500376747.947903",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Great, I'll have a look in a bit and get back to you with any comments",
+        "user": "U5WMH4QGK",
+        "ts": "1500377006.029083",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Okay, thank you :slightly_smiling_face:",
+        "user": "U5XLJFDD1",
+        "ts": "1500377019.033167",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'll be off doing my school work now",
+        "user": "U5XLJFDD1",
+        "ts": "1500377041.039767",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Was great talking to you again , goodbye and take care :smile:",
+        "user": "U5XLJFDD1",
+        "ts": "1500377057.044963",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i had a read through of your career plan - i thought it was very good. very thorough, it's obvious that you have thought a lot about your own strengths and weaknesses, which is probably the most important thing in this context. very impressive. your actions on the last slide are excellent. no major comments at all!",
+        "user": "U5WMH4QGK",
+        "ts": "1500396428.878884",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

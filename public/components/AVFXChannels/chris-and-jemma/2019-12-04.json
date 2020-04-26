@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How would I do this is nuke sorry? ",
+        "ts": "1575484816.009500",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/860019981520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

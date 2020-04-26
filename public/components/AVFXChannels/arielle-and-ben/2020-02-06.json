@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's an event coming up in London, where you'll be able to speak to industry professionals\/recruiters. In case that's something you'd like to attend, here's a link for more info. <https:\/\/www.eventbrite.co.uk\/e\/the-vfx-festival-2020-emerging-talent-tickets-75999778383>",
+        "ts": "1581005806.002000",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/927433255794_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "The VFX Festival 2020 - Emerging Talent",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/the-vfx-festival-2020-emerging-talent-tickets-75999778383",
+                "text": "About The VFX Festival 2020 The VFX Festival, hosted by Escape Studios, is an annual celebration of visual effects, animation, games and motion graphics. It’s an event for emerging talent to explore the creative industries; it’s also an opportunity for creative professionals to share their insights on award-winning productions. In 2020, the festival will focus on discovering and developing new and emerging talent. Two parts of The VFX Festival 2020 - EDU and Emerging Talent will take place on 16 - 18 March 2020 at the Southbank Centre - the UK’s largest arts centre based in the middle of London’s most vibrant cultural quarter, on the South Bank of the River Thames. The VFX Festival After Hours event will take place at Escape Studios in central London, within a short walking distance from numerous award-winning studios. About The VFX Festival Emerging Talent The VFX Festival Emerging Talent will take place on Tuesday, 17 March - Wednesday, 18 March 2020. It’s an event for students currently studying within higher education and professionals who are looking to kick start a career in the creative industries. The festival will be filled with inspiring talks. Also attendees will receive encouragement and advice from experts in careers and recruitment during panel discussions. As part of the Recruitment Exhibition Zone, attendees will have the opportunity to speak with representatives from studios, to discover more about their available roles, career pathways and progression. Programme will be announced in early 2020 FAQs When is The VFX Festival Emerging Talent takign place? Tuesday, 17 March - Wednesday, 18 March 2020   Where is The VFX Festival Emerging Talent taking place? The VFX Festival Emerging Talent will take place at Southbank Centre - Queen Elizabeth Hall - Purcell Room Venue Address: Southbank Centre  (Queen Elizabeth Hall - Purcell Room) - Belvedere Road London SE1 8XX What are my transportation\/parking options for getting to and from the event? Please visit Southbank Centre 'Getting here and around' website for information about getting to the venue    Are there any minimum age requirements to enter the event? To attend The VFX Festival Emerging Talent on 17 - 18 March 2020 all attendees must be over 18 years old   What's the refund policy? Please note that we will not be able to refund any tickets.   Do I have to bring my printed ticket to the event? Yes, please bring your printed ticket or e-ticket to the event and a form of ID How can I contact the organizer with any questions? Please can contact vfxfestival@escapestudios.com",
+                "fallback": "Eventbrite: The VFX Festival 2020 - Emerging Talent",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F76123147%2F215178082142%2F1%2Foriginal.20191009-104225?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C270%2C1080%2C540&s=9396cb523588e002fb14350061c17126",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "Belvedere Road, London,  SE1 8XX, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Tue 17 Mar 2020 at 09:00",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/the-vfx-festival-2020-emerging-talent-tickets-75999778383",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 38568,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/the-vfx-festival-2020-emerging-talent-tickets-75999778383"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581005812.000000"
+        }
+    }
+]

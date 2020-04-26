@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ben,\nSorry for the late reply I was off ill yesterday. \nGlad to connect. Yeah, I’ve been at blue zoo coming up on a year now. Was it the storyboard internship you applied for? I’ve mentored two people before but not on this platform. \n\nFirst things then, do you have a reel or story portfolio for me to look at? And also, what kind of work are you trying to get? (Tv animation\/feature animation\/live action) ",
+        "ts": "1563295406.001900",
+        "username": "Matthew Robert Davies (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-16\/689923236801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

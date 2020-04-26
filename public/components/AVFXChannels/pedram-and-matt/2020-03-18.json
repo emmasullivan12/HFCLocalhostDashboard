@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hopefully I'm going to avoid using an agency, if anything id prefer to stick to companies on the payroll (rather than freelance) anyway. That looks interesting, I'll give it a watch today, thanks! It'll definitely be helpful with the coronarvirus situation at the moment",
+        "ts": "1584527655.005200",
+        "username": "Matt Hawker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1007855221108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

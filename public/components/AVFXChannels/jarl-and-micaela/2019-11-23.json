@@ -1,0 +1,61 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jarl! Thank you so much! I will definitely apply, Bristol sounds very nice as well :)\nI am working on an FX piece now that I wish to put on my reel, but I uploaded to my website what I did so far, (<http:\/\/www.micaelarslanian.com|www.micaelarslanian.com>) if you could take a look I would really appreciate it! And also any constructive critics are always welcome and very helpful as well  ",
+        "ts": "1574516484.000300",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-23\/833921052370_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I remember you told me you were going to have a baby! How are things going? Congratulations!! ",
+        "ts": "1574516593.000400",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-23\/846704819920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQWM0UQ69",
+                "created": 1574516610,
+                "timestamp": 1574516610,
+                "name": "IMG_8068.MOV",
+                "title": "IMG 8068",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 25668158,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQWM0UQ69\/img_8068.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQWM0UQ69\/download\/img_8068.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQWM0UQ69-dbc594422b\/img_8068_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQWM0UQ69\/img_8068.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQWM0UQ69-d4b87cd330",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1574516611.000500"
+    }
+]

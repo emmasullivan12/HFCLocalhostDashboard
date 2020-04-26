@@ -1,0 +1,728 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simran, that's beautiful work - thanks for sharing it. I'll can start off with my initial reaction to it, please take it lightly if it sounds too harsh at any point",
+        "ts": "1583914745.002600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994927155079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First the clean presentation, your website, accessible links to all the social media is awesome!",
+        "ts": "1583914840.002700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993065562336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The reel is in a great format also, vimeo is great, just over one minute, turnables, wireframes - it all checks out",
+        "ts": "1583914907.002800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/982983369489_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The first thing that comes to mind in making it better is isolating the modeling discipline if that's the role you want to move forward with",
+        "ts": "1583914995.002900",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992613851780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And really nailing it with difficult models which show your different abilities: realistic, stylized, anatomy, humans, creatures, topology maybe interesting props, trees, rocks (if you're not entirely focused on characters)",
+        "ts": "1583915128.003000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992616890596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it's awesome that you like to take the asset to a finished textured state (and you should keep doing it if it brings you the most satisfaction) but I found it takes way longer to balance a consistent refined look. (it may also allow you to get away with a simpler model)\nUnless you're more interested in a generalist role, which is a different story - I don't know if that's a harder or easier way to step through the door.",
+        "ts": "1583915495.003100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994944905559_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now going through your reel, I think the ship is your best work so it's great you put it first - also the format you presented it is ideal",
+        "ts": "1583915603.003200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992628622548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Small things you could change on this is\n• maybe adding a grey background just so nobody would think you tried integrating it with the hdri.",
+        "ts": "1583915716.003300",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993105007157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "• the grey and metal ball is fine as you have it shaded but it's up to you if think you need it\n• I'm not sure how big the ship - from what I can read from the texturing, the rust and fabric pattern seem prominent and large so it gives me the impression that is more of a toy (just an observation more than critique)",
+        "ts": "1583916142.003400",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992641396260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From the modeling side, I think it has many interesting shapes (is great you showed the reference too - also if you do a texture\/ lookdev pass it's great to show real-life reference on both sides) The cloth shows that you know some kind of simulation, ncloth or marvelous\/ houdini which is great",
+        "ts": "1583916358.003500",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995312307014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Moving forward, what stood out to me is the nutcracker and deer thingy that spins on top left",
+        "ts": "1583916567.003600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/983023360753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Those are great but I'd make hero assets with more details and presented the same way as the ship",
+        "ts": "1583916673.003700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993109741808_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV8UP6RD5",
+                "created": 1583916743,
+                "timestamp": 1583916743,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1088179,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV8UP6RD5\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV8UP6RD5\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 240,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 320,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 481,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1198,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 641,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV8UP6RD5-a6d71eb3f8\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 684,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1000,
+                "original_h": 1498,
+                "thumb_tiny": "AwAwACCjjijr1pxJwB0xSoFJyTjHb1oGNxx70dqcT2wBTT6UCBT606NcuM8KTjJpgqSFgsg3DIzzQMmkt8R7yw4HYVWPWp5XJjIDHHFVzSQ5KzHvHsXO4Gmjg5qRJTgjg57EVEetAn5EjEFGIwOQMVFSk5OaSmDdz\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FV8UP6RD5\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FV8UP6RD5-7b136e4759",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583916748.003800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking at some google imagines, he is quite simple model wise so it might be more of a texturing challenge to add the subtle smudges, scratches, colour variation in paint all these things add believability (more than realism as it applies to stylized assets too)",
+        "ts": "1583916903.004100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993115468176_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But you wanted to make this more of a modeling challenge, you could drift off from what's above and add things like wood carved cloth folds and sculpt the facial features in, add some modeled bits to the hat to make it more specific, and subtle variations in thickness and imperfections tend to make things more interesting to look at. See this as reference &gt; (you can still keep it a small toy but use stuff like this to base it in reality)",
+        "ts": "1583917272.004200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/983042373393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUVKDDDJP",
+                "created": 1583917285,
+                "timestamp": 1583917285,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 5536075,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUVKDDDJP\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUVKDDDJP\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 242,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 323,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 484,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1191,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 645,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVKDDDJP-f50f36a100\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 688,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1204,
+                "original_h": 1792,
+                "thumb_tiny": "AwAwACDOyPQU7b8oIHJ6U97dkjDkgjvg9KlVEcIGyuBVJAVwp2ltowPem5HpVi5iVCCGLHv3qvj60gNDIMTLKN3zACoXVEGACTjg095cKikZI5pm4sQTjg4qxJtbCISVfA\/hNRYHA6ntn+VSySmGU7AAKiDhpQT8oz2HSpV2W2mwfexUn0oIOeKlBAxS5HpTsRcrkE88mgDByfSpsrjoMUZFNIR\/\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUVKDDDJP\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUVKDDDJP-2a1d88fd71",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583917295.004300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The last space ship is awesome too! I almost missed it",
+        "ts": "1583917364.004600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995339222822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It looks like it has some really detailed engines and circle thingy in the front but I couldn't see it well as it moved so fast - maybe some panning closeup could work better for things like this",
+        "ts": "1583917426.004700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992675425588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyway, I hope I didn't come off too rude from the start and that you got something useful out of it!",
+        "ts": "1583917506.004800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981665750899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll look through bookmarks for a list of reels I look up to and see if you find it helpful",
+        "ts": "1583917649.004900",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993136620432_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the meantime, if you have any sort of questions about artistic or technical stuff, applying to jobs, studio environment or whatever just shoot :slightly_smiling_face:",
+        "ts": "1583917808.005000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992685567892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much for all the feedback! That was really helpful\nAnd it was really nice and not harsh at all so don’t worry :joy:\nI’ll definitely practice characters and creatures since I haven’t really done those before and didn’t realise I needed to, so thanks for the heads up!!\n\nHow much work would you recommend putting in a showreel? I’m working on some stuff now but not sure on how much is overcrowding \nAnd is there anything in my showreel that’s weak and I should take out?\n",
+        "ts": "1583943538.005100",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996212482598_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I’ve heard from people when applying for jobs it’s hard to actually get noticed when applying online, so it’s easier to meet at events \nIs this true or do you know of any hiring events?",
+        "ts": "1583943637.005200",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996216784838_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure if you need to have characters if you enjoy doing more props and assets or environments even - just make sure you gear all your work towards that so you convince them you're really good at it essentially",
+        "ts": "1583950535.005300",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/982844178035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "about taking out, again it can depend but I'd suggest the really simple stuff made out of boxes and things, like say the present, glass, small things like that",
+        "ts": "1583950708.005400",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/984235136257_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you're not interested in environments, I'd take them out too and leave a clean infinity wall background or flat colour",
+        "ts": "1583950762.005500",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993864827332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/118625773>",
+        "ts": "1583950869.005600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996534724630_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Hannah Kang Student Reel",
+                "title_link": "https:\/\/vimeo.com\/118625773",
+                "author_name": "Gnomon",
+                "author_link": "https:\/\/vimeo.com\/gnomonschool",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/514444405_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Hannah Kang Student Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/118625773?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Hannah Kang Student Reel\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/118625773",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/118625773"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583950869.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "^ this one is quite neat I think",
+        "ts": "1583950935.005800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996537282326_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1st piece shows interesting style and shapes",
+        "ts": "1583950951.005900",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981539859826_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2nd ability to pose and translate a story in 3d",
+        "ts": "1583950987.006000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996539314934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "3rd is not very strong but shows a bunch of fabric folds",
+        "ts": "1583951005.006100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993874416964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "4th is fairly nice but doesn't prove anything new",
+        "ts": "1583951099.006200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996543736806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "5th is very nice I thought, would have had it put second after the tree (if the tree was textured too) - this has nice balanced colours (even with very minimalistic texturing and shading it works as a whole) the background is not distracting and has a hard surface prop in her hand which is also great",
+        "ts": "1583951259.006300",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981552084658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the last really quick two, I don't think were needed or maybe replace the 3rd piece with Iron Giant if taken a bit further to have a fully hard surface character?",
+        "ts": "1583951358.006400",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994343860464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You've probably heard it before (hence why you asked what to take out) but your reel as good as your worst piece",
+        "ts": "1583951460.006500",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996558866374_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So have only 3-4-5 pieces that are really good and show with every piece a different skill that you need to do the job you're applying for",
+        "ts": "1583951555.006600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996215974935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example sake, I can critique my own reel. I applied with this for the MPC internship which I got 2 years ago.",
+        "ts": "1583953034.006700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/982942655523_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/199491072>",
+        "ts": "1583953036.006800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/984326953009_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Character Modelling DEMOREEL 2017",
+                "title_link": "https:\/\/vimeo.com\/199491072",
+                "author_name": "Alin Bolcas",
+                "author_link": "https:\/\/vimeo.com\/user44530596",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/612753945_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Character Modelling DEMOREEL 2017",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/199491072?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Character Modelling DEMOREEL 2017\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/199491072",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/199491072"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583953036.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1st piece shows story and put it first cus people always remembered it - poor cloth modelling (too thick), sketchy scales, the limbs look a bit like a toy (no feeling of nice compression like in the concept) The bench and little pavement is cute and fragile, it looks old so it adds contrast to the heavy croc\n2nd The weapon is quite simplistic, he doesn't have nails so there's unsettling about that, the head could be improved by breaking silhouette of the bald top of the head with some repel hair locks like in the concept, shoes are simplistic (if it was textured black it would have been okay) I'm showing topology for the first time so that's good but there are some zremeshed pieces there which is not that cool\n3rd Attempt at showing stylized anatomy and cloth folds.. not exactly successful\n4th example of hard surface modeling (quite wobbly) and the wireframe is a shameless zremesher",
+        "ts": "1583953787.007000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994459226693_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now for a good example, this is a friend from MPC who's at ILM now - really good creature modeler",
+        "ts": "1583953881.007100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993988919332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/344633765>",
+        "ts": "1583953884.007200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/984361598657_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Creature reel '19",
+                "title_link": "https:\/\/vimeo.com\/344633765",
+                "author_name": "Verney-Carron Antoine",
+                "author_link": "https:\/\/vimeo.com\/user50497866",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/794179959_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Personal work only, responsible for all aspects.\nThanks for watching!\n\nMaya, Zbrush, Mari, Arnold, Nuke, Photoshop\n\nmusique: Chu. - Brrrrrb",
+                "fallback": "Vimeo Video: Creature reel '19",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/344633765?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Creature reel &amp;#039;19\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/344633765",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/344633765"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583953884.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "very professional presentation, turntables closeups, nice studio lighting, non distracting background",
+        "ts": "1583953945.007400",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/982979481027_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "great diverse creatures with a consistent high-quality look",
+        "ts": "1583954130.007500",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994471841669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "all in just over 1 min",
+        "ts": "1583954165.007600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996318365015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I went on a bit of a tangent - yeah so around 4 pieces is a good amount",
+        "ts": "1583954233.007700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994001858404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(even though Antoine has many, he's been doing it for a while)",
+        "ts": "1583954450.007800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/984382448257_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About applying online, I agree - knowing someone in real life and connecting with people face to face is at least 3 times more effective",
+        "ts": "1583954559.007900",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994469308352_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't know many events, I think there was one in London at some point, BFX festival?",
+        "ts": "1583954667.008000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996336672887_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's also worth connecting with recruiters from the company you're interested in on LinkedIn and sending them a direct message - even though it might sound bold, it is quite effective and they do that too all the time.",
+        "ts": "1583954758.008100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996340141191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you're looking worldwide there's Siggraph, THU and Zbrush Summit but it might not be worth it financially to fly all the way there in search for a job",
+        "ts": "1583954899.008200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996691860854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

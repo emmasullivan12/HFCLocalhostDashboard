@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will try and get you a copy of the short film (and for myself because I don't have it! I changed job before it was fully finished, and I can't find it online!) It used to be online! I emailed my mate who runs the company though, so hopefully he can send me a copy!\n\nDo you know where you would like to do an apprenticeship? It could be really useful to know what kind of studio you would like to work in to help focus the work you do at home. Blue-Zoo, where I work, do internships. But they would expect you to have some work to show that demonstrates your interest in animation. It would be good to get involved in their AnimDojo (<https:\/\/animdojo.com\/>) if you would be interested in working with them, as you could learn and connect with people in there at the same time! The mentors on it are from Blue-Zoo. But 11 Second Club is free, whereas Animdojo is £15 a month.",
+        "ts": "1573147832.002200",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/817908169409_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "AnimDojo: The online animation gym.",
+                "title_link": "https:\/\/animdojo.com\/",
+                "text": "An affordable of improving your CG character animation skills.",
+                "fallback": "AnimDojo: The online animation gym.",
+                "from_url": "https:\/\/animdojo.com\/",
+                "service_name": "animdojo.com",
+                "id": 1,
+                "original_url": "https:\/\/animdojo.com\/"
+            }
+        ]
+    }
+]

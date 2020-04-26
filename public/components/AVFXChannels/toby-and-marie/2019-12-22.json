@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You are welcome, all styles are fun in their own way :slightly_smiling_face:",
+        "ts": "1577064349.000100",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885943658262_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

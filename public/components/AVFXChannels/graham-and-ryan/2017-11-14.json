@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am studying BTEC Travel and Tourism and A Level Communication and Culture.",
+        "ts": "1510647483.000225",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272001370789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds pretty fun, I would love to be able to travel more! Do you travel much? Would that be the business you would like to go into? ",
+        "ts": "1510671030.000266",
+        "username": "grahamphelan1991 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272048782098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I love travelling I've been to lots of countries including Mongolia where my family sponsor a boy and in Uganda we sponsor a girl we have visited those places in particular quite a few times. I would like to work in the travel industry because I'm the sort of person that likes to experience new places.",
+        "ts": "1510677295.000012",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/273212913911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds amazing! It sounds like that’s the subject that you are very passionate about! Where would be on your bucket list to visit? ",
+        "ts": "1510685056.000403",
+        "username": "grahamphelan1991 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272369627653_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the future I'd like to visit Madagascar and the Amazon rainforest. Anywhere that is a natural wonder I like. How about yourself are you much of a traveller?",
+        "ts": "1510685608.000089",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272280474036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That looks like the Applied Rigid's Tutorial?\nI can ask when I'm back in the office, I'm away til Tuesday. It might be worth dropping another message on the contact form on the website, seeing if someone gets back to you?",
+        "ts": "1568282649.004900",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-12\/744967052738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye the tutorials are really good. Very informative amd clear. I'm working my way through the vehicle destruction one now. I'll send a message tomorrow. Enjoy your holz!",
+        "ts": "1568325558.005000",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-12\/760911243686_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

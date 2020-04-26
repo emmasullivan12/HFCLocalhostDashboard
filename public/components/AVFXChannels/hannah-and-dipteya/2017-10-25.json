@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A lot of my work is using technical skills but I am a manger so leading a team is something I have to do on a daily basis. I also have to give a lot of presentations which isn't my favourite thing to do ! But the more you do them the less scary they seem.",
+        "ts": "1508942873.000415",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/261832177028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574367462.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5dd6f0e5238fea0004ff6c08|this link> with other teams to invite them in it_",
+        "ts": "1574367462.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574367462.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1574367567.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"christopher-and-dhru\"",
+        "old_name": "z-shared-23",
+        "name": "christopher-and-dhru"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574367573.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1574367612.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1574367617.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@christopher.puchta has joined the channel_",
+        "ts": "1574367880.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844072538548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dhruby has joined the channel_",
+        "ts": "1574367887.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2017-10-18\/258189660885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Dhru, please meet Christopher your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1574367912.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844073329412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574367917.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/831748136274_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574367922.001500",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844073561668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Dhru…good to meet you :slightly_smiling_face: !\nYou’re only my second mentee on here - so take it easy on me :wink:. Let me know if there’s anything to you had in mind you wanted help\/advice with or chat about\/learn more about my background or vfx in general etc etc :thumbsup:",
+        "ts": "1574368112.001600",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844078287268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi christopher its good to meet you too :relaxed: . Im currently at university in my final year studying vfx and am interested in getting into fx but unsure what i need to do going forward it would be great to hear how you got into it",
+        "ts": "1574368651.001700",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844550181664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As is kinda usual, i got into fx in a kind of roundabout way. I started out studying media technology in a university but that turned out very dry and theoretical so i focussed on some projects that people worked on on the side or trying out things on my own (and eventually dropped out in favour of trying a few freelance gigs). From there i went to a small vfx-company for an internship and then basically being a generalist for a few years (focussing on fx-&gt;lighting-&gt;comp stuff since i had no interest in modelling\/anim etc :wink:)…which was a really good learning experience, tho, since we worked on a new&amp;different problem every 2 weeks or so, so we all got to try and learned a lot at that place. Eventually that job went a bit stale, though and i wanted to try “bigger things”, lucked out on a few early smaller\/local film jobs that i could show my “talents” on and then fell into the big vfx movie machine where i’ve been working round-the-world now for the last 11-12 years :slightly_smiling_face:. I think fx is a cool field to be in, since it can encompass so many different fields in it at least a little bit.\nThat’s kinda it :slightly_smiling_face: . What made you jump on fx as thing you wanna study?",
+        "ts": "1574369758.001800",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844587427269_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats really interesting to hear that it came through being a generalist, would you say its good to start as a generalist? \nIn the course you learn different areas and when we tried fx in maya and phoenix it was the thing that i found i enjoyed the most and even the problem solving wasnt something that bored me but i enjoyed figuring out. I also think it can give really good results :).",
+        "ts": "1574370820.001900",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844605016896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think the generalist part is probably one of the more exciting for me sometimes. We basically need to know about everything coming in (is the anim done in the right way? is the track off, so our elements will be off, too? etc) and similarly about our output - lighting needs certain attributes to make their shaders work or some companies even have fx light their elements themselves. we often (slap)comp our elements for at least presentation or to present a certain look if it’s another magical element that no one knows what it’ll look like :wink:  - so we need to know about that stuff too. This has shifted a bit over time as other departments need to get more generalist and obviously i’m biased, but i think fx is still the most generalist. So yeah, it definitely helps being more generalist…but not at all necessary. There’s quite a lot diversity in the fx-things that people specialize in (like i’m not super interested in heavy scripting, but there are other people that are, so i can rely on them to help me\/the team out)\nAll of that doesn’t mean you “need” to start out a generalist as you can easily pick that up later on as you work on projects",
+        "ts": "1574371323.002000",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/846824532566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope that makes sense :slightly_smiling_face:",
+        "ts": "1574371424.002100",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844161693796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I completely understand what you mean. I think being a generalist is interesting in terms of doing different things\/having and understanding of different areas, i think that fx is something that im more gravitating towards. Its nice to hear though that being in fx you still do elements that a generalist would do in terms of comp and lighting",
+        "ts": "1574371799.002200",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844170865956_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is this something that’s encouraged or presented as a possibility in your course or is it more focussed on a certain field that students choose to go for?",
+        "ts": "1574373020.002300",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/846517579511_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We get the oppertunity to look at and learn different areas and use the skills weve learnt for projects. Its more during the final year when students tend to focus on a certain field but have the oppertunity to be generalist if they prefer",
+        "ts": "1574374003.002400",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844682967648_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

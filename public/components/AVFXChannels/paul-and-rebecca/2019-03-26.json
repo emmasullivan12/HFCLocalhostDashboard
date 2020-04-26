@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Rebecca -  sorry for the slow reply.  I was off ill for a few days last week and so I'm still playing catch up.  It is amazing how quickly the emails build up when I'm off for a few days. Things are quite busy for me at the moment as I have had someone new start working for me in our New York office so I have had to spend quite a lot of time getting her up and running.",
+        "ts": "1553622326.000300",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589021812965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I checked and it looks like you can send 1GB through the slack platform - if that is not enough let me know and we can work out another way for you to share it.",
+        "ts": "1553622349.000400",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589763153287_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

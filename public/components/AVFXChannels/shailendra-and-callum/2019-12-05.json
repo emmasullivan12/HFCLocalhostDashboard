@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Hello!\nHow’s it going Callum?\n\n\nwhat have you been upto.\nany new curiosities, explorations, CG Dinosaurs?\n",
+        "ts": "1575562399.004000",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/861484863152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

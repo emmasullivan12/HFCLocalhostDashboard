@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats terrible! Toon Boom have just taken 84% of their price for students if that helps? They must be running it at a price that they can afford to keep going.  I can't imagine how frustrating this is for you... but your uni will need to take this into account and let you some how finish... they should def have told you a plan by now...",
+        "ts": "1585122708.000100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1014599935265_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can get the cheapest toon boom for $6 a month which isn't bad.",
+        "ts": "1585122758.000200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1024350603445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ask on your neighbour next door app if someone has a spare monitor laying around. You will be suprised! That might make it easier.",
+        "ts": "1585122810.000300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1026417735223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

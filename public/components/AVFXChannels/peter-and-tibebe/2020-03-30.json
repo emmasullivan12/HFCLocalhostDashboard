@@ -1,0 +1,266 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha, with Python all you need is a good idea, the hard part is breaking it down into individual steps, so being good at maths and similar things can prove to be quite useful",
+        "ts": "1585563328.004500",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035001191952_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd personally say it depends what you want to do when it gets to making some of your own things. If you want to go into actual on set filming, perhaps short videos (showing good composition, framing, etc) would work really well, however for anything VFX related, you'd 100% need a reel, as it's meant to show off your \"best\" work, not all your work.",
+        "ts": "1585563446.004600",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036887591638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Portfolio goes with the reel, but you can go into more detail and show off more stuff",
+        "ts": "1585563495.004700",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036889198246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Definitely ask for a good PC for xmas\/birthday if you're serious about getting into this, you have no idea how much better it'd make everything. I got my first powerful PC in 2010ish, other than graphics card upgrades (as I like gaming), it held up fine until I upgraded everything last year.",
+        "ts": "1585563678.004800",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1024985584481_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure VFX in general does much in the way of work experience. Internships would be your best bet, but usually it's VFX students who do them as they have some basic knowledge of what they're applying to, definitely worth looking around though :slightly_smiling_face:",
+        "ts": "1585564025.004900",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1024996906305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example, this is where I work, they have a few internships listed on the jobs page - <https:\/\/jobs.blue-zoo.co.uk\/>\nI'm less sure about work experience, but if you find any small places near you (like &lt;5 people), they could potentially be willing to take you on for a week or two if you get in touch.",
+        "ts": "1585564143.005000",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1034537983876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also take a look at what the internships cover, as you may find an aspect of VFX that you're not yet aware of that sounds fun :slightly_smiling_face:",
+        "ts": "1585564368.005100",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035035855696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The problem with the pc bit is that my parents arent fully supportive of me getting into vfx",
+        "ts": "1585565117.005200",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1025032665745_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had to convince them for a long time just to do film in ib",
+        "ts": "1585565133.005300",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1022291429522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was going to save up but corona blew the option away",
+        "ts": "1585565172.005400",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1023586981315_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For python how long would you reckon it will take to learn in a way that one can properly use it in vfx. Is there like different aspects of the python that you have to learn for vfx. Because the tutorials ive found emphasise that its for data analysis and web developement",
+        "ts": "1585565594.005500",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036957362374_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you mean by ib?",
+        "ts": "1585587524.005600",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035617338804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do your parents have any reason to not support you doing it? My parents go by the idea of \"do what you enjoy\", if they forced me to go down some route like medicine for example, I would have failed, if they forced me to do something like accountancy, I'd be dead bored and probably hating life lol",
+        "ts": "1585587628.005700",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035623831700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can get your hands on Maya, it's a great place to start for VFX coding",
+        "ts": "1585587660.005800",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1026089681857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure about an exact timeframe, but I reckon you could easily get a basic tool working by yourself within a month or two, maybe throw in an extra month if you make a GUI for it",
+        "ts": "1585588087.005900",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035647967700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you say \"properly use it in vfx\", it can be as simple as an artist wants you to write a script to copy some values from one object to a bunch of others, which is very simple once you know how.",
+        "ts": "1585588151.006000",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1038023430118_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In pipeline we mostly get asked for the more complex scripts since quite a few artists know some very basic python",
+        "ts": "1585588183.006100",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1023373570722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For a good PC btw, it might be a bit out of range of saving up, I'd be saying between £800-£1500 would get you an actual good one to last years",
+        "ts": "1585588233.006200",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1023375864610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I dunno how much you know about the hardware, but the main thing to remember is you _need_ at least 32gb of ram to be comfortable. A good CPU is vital too as that's a pain in the arse to upgrade.",
+        "ts": "1585588385.006300",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1038034435030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For Python tutorials, once you've grasped the basics (from the normal tutorials), you've got to look at how to code in specific programs. Sadly Blender doesn't seem to have too much information, Maya has an absolute ton of resources available though. A very basic start is here - <https:\/\/help.autodesk.com\/cloudhelp\/2017\/ENU\/Maya-Tech-Docs\/PyMel\/tutorial.html>",
+        "ts": "1585588779.006400",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036170229040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ib is the name of the qualification im taking",
+        "ts": "1585593727.006500",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1024921082179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just like there is a levels, this one is called the international bacalaurette",
+        "ts": "1585593755.006600",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035906751684_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What i mean by my parents bot supporting me is that they really hate media... i have a very religious and strict parents and they believe that all forms of media are made to distract people and stop them from advancing in education. So yea they dont really like it when i do film. But they do support me in the coding departement because i have a cousin who works as a software engineer and is pretty successfull and they want me to be like him",
+        "ts": "1585593943.006700",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036349221829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For the pc, i used to build pcs so i know what parts i need but even for my current one. All i had was 300 so i had to use get creative and use parts from time ago which are still powerfull",
+        "ts": "1585594038.006800",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036408605616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

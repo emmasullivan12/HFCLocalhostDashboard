@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Brenda, no worries! Sorry for the delayed response, been busy at work and just come back from holiday in Japan. How is the Masters going? I’m not sure if you met her but another girl I brought in for work experience shortly after you, Lucy, just got employed as a PA at Framestore, and I referred her so it’s cool that worked!! ",
+        "ts": "1576582766.000100",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/878643584471_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

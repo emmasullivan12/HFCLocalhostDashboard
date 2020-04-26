@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Harry. Just checking in. Do you know what sort of companies you'd like to work at when you finish your studies? Film\/TV?commercials? I'm giving a talk at the VFX festival so pop along and say hi if you're going.",
+        "ts": "1582488680.000100",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/965222000800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hannah! Sorry ha a very busy weekend (lots of music you’ll be glad to hear)! I have read your lovely detailed message and have a reply ready which I will send once I get on the train!",
+        "ts": "1508136079.000013",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256640487923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the meantime, here is a video of me saying hello ",
+        "ts": "1508136092.000126",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256065095280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F7JNN1W3E",
+                "created": 1508136097,
+                "timestamp": 1508136097,
+                "name": "welcomehannah .MOV",
+                "title": "welcomehannah ",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 25376352,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7JNN1W3E\/welcomehannah_.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7JNN1W3E\/download\/welcomehannah_.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F7JNN1W3E\/welcomehannah_.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F7JNN1W3E-1f4e90bec5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1508136098.000099"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for your intro Hannah! You remind me of my friend Hannah from\nUniversity (coincidence!) who played the piano super well, loved J pop (boo K is better) and studied English Literature so always had her head in a book!",
+        "ts": "1508137052.000168",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256859960373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I studied a-levels at school which were music (obviously :) ), English Lit, French and geography because I basically didn’t know what I wanted to do! Then I went to Cambridge University to study music :headphones: ",
+        "ts": "1508137109.000163",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256860216757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now I have taken a bit i a jump and work in a office BUT doing the music degree was so incredibly useful. Taught me some great skills and I got to study something for three years that I was really passionate about. ",
+        "ts": "1508137179.000034",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/257806974103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

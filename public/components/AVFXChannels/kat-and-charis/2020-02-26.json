@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've set up our dropbox, let me know if you didn't receive it!",
+        "ts": "1582738868.000300",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/970505774085_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So Mikros doesn't exist in London anymore, sadly. It was opened as a partner studio to Mikros London in order to make the movie Sherlock Gnomes, and then closed upon completion. It was a shame as it would have been great to have more Feature work here in London!",
+        "ts": "1582738969.000400",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/972700214118_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is Jellyfish Studios in London, who do Feature work as well as TV and VFX. They are mainl based in Brixton",
+        "ts": "1582738998.000500",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/970492340960_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

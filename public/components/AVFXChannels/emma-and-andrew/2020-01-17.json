@@ -1,0 +1,139 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What desktop \/ laptop do you have?",
+        "ts": "1579251391.000100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/897887629874_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The guys at work told me about this : <https:\/\/www.foundry.com\/products\/nuke\/non-commercial>",
+        "ts": "1579252729.000200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/910699619392_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Foundry",
+                "title": "Get Free Nuke Software Now",
+                "title_link": "https:\/\/www.foundry.com\/products\/nuke\/non-commercial",
+                "text": "We’re offering free, non-watermarked versions of Nuke for you to hone your skills, work on personal projects, or just explore, learn, create and play.",
+                "fallback": "Foundry: Get Free Nuke Software Now",
+                "image_url": "https:\/\/www.foundry.com\/sites\/default\/files\/paragraphs\/feature-images\/Nuke%20non%20commercial%20free%20compositing%20software.png",
+                "from_url": "https:\/\/www.foundry.com\/products\/nuke\/non-commercial",
+                "image_width": 431,
+                "image_height": 250,
+                "image_bytes": 780263,
+                "service_icon": "https:\/\/www.foundry.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.foundry.com\/products\/nuke\/non-commercial"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a macbook pro which is about 4\/5 years old and and iMac at home which is about 10yrs old",
+        "ts": "1579254355.000400",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/899264545379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll have a look at that link, thank you",
+        "ts": "1579254363.000500",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/912939070422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That non commercial nuke should still work.",
+        "ts": "1579254769.000600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/910750541957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just found this that you may find interesting? <https:\/\/www.screenskills.com\/media\/1792\/vfx-industry-careers-map.pdf>",
+        "ts": "1579273848.000700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/911153007120_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also this - he is a compositing coach with loads of tutorials. <https:\/\/www.youtube.com\/channel\/UC2dIghYtEt6a1arYH5ErECg>",
+        "ts": "1579273929.000800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/898370526946_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "title": "Ian Murphy",
+                "title_link": "https:\/\/www.youtube.com\/channel\/UC2dIghYtEt6a1arYH5ErECg",
+                "text": "On this channel, I hope to share the best of my 16 years experience of working in feature film VFX and deliver comp skills that are accessible to all. Now wo...",
+                "fallback": "YouTube: Ian Murphy",
+                "thumb_url": "https:\/\/yt3.ggpht.com\/a\/AGF-l7_j8T2hP1gLCF1gHGp9Xq_HWcanfQyWSlF78Q=s900-c-k-c0xffffffff-no-rj-mo",
+                "from_url": "https:\/\/www.youtube.com\/channel\/UC2dIghYtEt6a1arYH5ErECg",
+                "thumb_width": 900,
+                "thumb_height": 900,
+                "service_icon": "https:\/\/s.ytimg.com\/yts\/img\/favicon-vfl8qSV2F.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/channel\/UC2dIghYtEt6a1arYH5ErECg"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This may also be a good and worthwhile read: <https:\/\/www.schoolofmotion.com\/freelance-manifesto>",
+        "ts": "1579273995.001000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/911157233104_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "School of Motion",
+                "title": "Freelance Manifesto Book",
+                "title_link": "https:\/\/www.schoolofmotion.com\/freelance-manifesto",
+                "text": "Learn the how’s and why’s of freelancing. A field guide for the modern Motion Designer.",
+                "fallback": "School of Motion: Freelance Manifesto Book",
+                "image_url": "https:\/\/www.schoolofmotion.com\/book.21bdbfb34947f3e92ef9032445af4f14.png",
+                "from_url": "https:\/\/www.schoolofmotion.com\/freelance-manifesto",
+                "image_width": 169,
+                "image_height": 250,
+                "image_bytes": 242512,
+                "id": 1,
+                "original_url": "https:\/\/www.schoolofmotion.com\/freelance-manifesto"
+            }
+        ]
+    }
+]

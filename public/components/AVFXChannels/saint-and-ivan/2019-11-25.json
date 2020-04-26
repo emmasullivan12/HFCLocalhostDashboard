@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ivan. The big question is- which PART of VFX do you feel a particular affinity to? Would you prefer Compositing, or modelling and 3D? Or even taking some of your Film and media skills into bring a VFX Producer? Even if you choose 3D I wouldnt start with Houdini. It's just too complex without certain artistic and technical principles. Everyone thinks there's a need for Houdini artists and tries to leapfrog a few years by thinking its just a matter of learning it to get into the industry. Only learn Houdini when you have built something of quality in Maya that experts recognise. In summary, where do you feel you'd like to fit in. Have you read this? Follow the links on this page <https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills>",
+        "ts": "1574671512.001800",
+        "username": "Saint John Walker (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/839781614753_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "UK Screen Alliance",
+                "title": "Careers advice for VFX, animation, post production, TV &amp; film studios or SFX | UK Screen Alliance",
+                "title_link": "https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills",
+                "text": "If you are researching careers in post-production, visual effects or animation, we guess you will be looking for authoritative advice to help you with your choices. What are the different job roles that are available? What qualifications do I need, if any? Can I do an apprenticeship, or should I go to uni? What’s it […]",
+                "fallback": "UK Screen Alliance: Careers advice for VFX, animation, post production, TV &amp; film studios or SFX | UK Screen Alliance",
+                "from_url": "https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills",
+                "id": 1,
+                "original_url": "https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills"
+            }
+        ]
+    }
+]

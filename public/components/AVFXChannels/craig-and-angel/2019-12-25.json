@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just above london myself in St Albans for a few days! Merry Christmas!",
+        "ts": "1577283518.000100",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-25\/885994900949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah okay. Merry Christmas to you to.",
+        "ts": "1577292673.000200",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-25\/874569633459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Neesha, Im doing well thank you, yourself?",
+        "ts": "1572434207.001600",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-30\/806803028081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want to get in touch with specific people generally LinkedIn is the best way. That being said the compositors and even the leads tend to have very little hiring power or in some cases knowledge of open positions.",
+        "ts": "1572434249.001700",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-30\/803242077107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The best people to connect with would be producers\/recruiters\/supervisors. With recruiters being the best of those.",
+        "ts": "1572434270.001800",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-30\/814248588628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

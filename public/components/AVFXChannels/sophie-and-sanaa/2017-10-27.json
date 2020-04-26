@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy Friday Sanaa! Today is national mentor day apparently :tada: ",
+        "ts": "1509125966.000105",
+        "username": "sophie.carlin (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/264280743911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today I had some presentation training at work and took a photo of one of their slides on how to structure a presentation. It was all about opening with something interesting e.g. a quote or an interesting statistic, telling your audience what you are going to cover, trying to stick to talking about things in threes (as it’s easier for people to remember) and then ending on one key take away. ",
+        "ts": "1509126169.000436",
+        "username": "sophie.carlin (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/262544424336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So do just feel free to ask me any questions about my current job or past job or anything else you would like to chat about :blush:",
+        "ts": "1509141731.000246",
+        "username": "sophie.carlin (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/263385490772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,145 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds like a good mix of a levels !.... I am actually an accountant so the first couple of weeks in the month are always busy !",
+        "ts": "1507878866.000082",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255263449873_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So do you have any work experience in pharmacy before, Saturday jobs or anything ?",
+        "ts": "1507878900.000085",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255263581729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nope, not any at the moment ",
+        "ts": "1507879231.000061",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256667680502_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did work experience at an office for 3 weeks",
+        "ts": "1507879242.000170",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255707224483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am planning to volunteer at the British Heart Foundation or an other charity shop for experiience",
+        "ts": "1507879307.000122",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255782770658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What sort of work experience did you do??",
+        "ts": "1507879432.000161",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255783448978_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The British heart foundation would be a great one to get a little experience. \n\nI have actually had a variety of jobs including working in a taxi office, waitress, party planner, tennis coach. They actually all taught me what I didn't want from a job ! For example being a waitress made me not want to be on my feet all day, tennis coach not being outside etc etc ",
+        "ts": "1507881894.000164",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255280998465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And also working directly with the public wasn't always easy ! But that is just me... people have different experiences in each job they have. ",
+        "ts": "1507881950.000262",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255147926960_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would say maybe try getting a Saturday job alongside your a levels... I know it isn't preferable but I found it gave me a break from the studies !",
+        "ts": "1507882000.000103",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256684012822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And if you are pretty sure medical is the route you wish to take, you are at an advantage because you can look for relevant Saturday jobs ",
+        "ts": "1507882076.000204",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255282152769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okaayyy",
+        "ts": "1507882580.000047",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255857323540_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What sort of work should I look for in your opinion?? ",
+        "ts": "1507882597.000032",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256687820566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Any recommendations?? ",
+        "ts": "1507882628.000126",
+        "username": "dniles-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255285686993_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

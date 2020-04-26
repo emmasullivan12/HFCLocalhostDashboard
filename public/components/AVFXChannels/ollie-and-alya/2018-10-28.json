@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't know much about internship at her company but she gave me a lot of pointers on how i can get apprenticeships after year 13 and what qualifications are best ",
+        "ts": "1540738784.000100",
+        "username": "Alya (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-28\/466080422211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But it would be a great opportunity to do so",
+        "ts": "1540738817.000200",
+        "username": "Alya (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-28\/466007730484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy national mentoring day :sparkler:",
+        "ts": "1540738988.000300",
+        "username": "Alya (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-28\/466008390388_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

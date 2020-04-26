@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I see! Yeah I saw the concept on instagram looked like you nailed it! :slightly_smiling_face:",
+        "ts": "1585065982.011700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022880953312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It depends really.. your primary job is to match the concept as closely as possible because that's the approved vision of the client",
+        "ts": "1585066032.011800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010102569474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but there tend to be compromises along the way (small drift offs for different reasons)",
+        "ts": "1585066145.011900",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024657482375_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's in the studio but for personal work you choose if you wanna follow the concept exactly (for practice or because you really like everything about it) or just loosely follow it and add or remove things yourself in trying to have a better finished result",
+        "ts": "1585066259.012000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011434047827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

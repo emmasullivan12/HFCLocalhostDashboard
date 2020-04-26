@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great meeting you too, it was a great day for me so thanks again. Nathan was brilliant and made a lot of time for me so I really appreciate the introduction. Hopefully I can come up again in a few months with a lot more animation work done :grinning:",
+        "ts": "1555240355.000100",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-14\/596252585379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well keep the updates coming. And as I said think about that edit and trimming it down. What's the shortest edit that still tells the story?",
+        "ts": "1555253259.000200",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-14\/596394200018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

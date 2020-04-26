@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Michael, sorry for the delay, I was away for a lot of september! Yeah I work with deep a lot at work, it's fairly standard here to get a deep pass with your cg for the most part, so its really handy to have it there when you need it :slightly_smiling_face:",
+        "ts": "1570094107.000200",
+        "username": "Liam Barlow (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/784114117127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

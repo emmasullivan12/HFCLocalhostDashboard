@@ -1,0 +1,208 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eric, \n\nSure! I’ll take a look.\nIdeally, you have your script prerendered out as often as needed to speed up render time. The tvi upscaling is a very heavy tool as well, and will increase render time.\n\nIf you haven’t already, I would have your prep, denoise, and roto work all prerendered our separately.\n\nWhen it comes to working from home, render time is a very large concern. With on machine available to render on, there’s only so much you can to to speed up the process",
+        "ts": "1587058306.008000",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067542607730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I agree... i dont have a big cpu and I have a gtx 1660 so I optimised render time for 3d by lowering resolution and use tviscale. I will obviously pre render in nuke.",
+        "ts": "1587058442.008100",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073717251092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was dealing with kids etc so I didnt worked on it but i will today. 3d renderer ended last night I add some corrections on it.",
+        "ts": "1587058513.008200",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073720441572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I use arnold denoise. Noice to help too",
+        "ts": "1587058679.008300",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067769578227_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello there,",
+        "ts": "1587085393.008400",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1061705286950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i worked on my comp i did a precomp just to know if everything fits\nhere's the link to the video tell me if there s something...\n\ni was thinking about putting fire in the garbage container and smokes, change coor to have a more evening lights. Add 2 or 3 lights in the scene and some dust particles for the fire and a bit of fog to create ambiance.",
+        "ts": "1587085682.008500",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1081070316737_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Link: <https:\/\/vimeo.com\/408679306>\nPassword: LifterV01",
+        "ts": "1587085795.008600",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1068446528178_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Precomp_v01",
+                "title_link": "https:\/\/vimeo.com\/408679306",
+                "author_name": "Éric Barrailler",
+                "author_link": "https:\/\/vimeo.com\/user103335364",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/879674714_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Precomp_v01",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/408679306?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Precomp_v01\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/408679306",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/408679306"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587085796.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and somesmoke because of the tire",
+        "ts": "1587085835.008800",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1061713661318_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will add VectorEdgde To the car and man and will see about where a want the focus on",
+        "ts": "1587086178.008900",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1092295151760_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i see theres some sliding about the feet i will try to fix this",
+        "ts": "1587086422.009000",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1068667741747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I try to use the camera from camera tracker of the lifter but it was worst so i track and match move it s better but not accurate",
+        "ts": "1587086861.009100",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1092307124320_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F0120ERTXSN",
+                "created": 1587088904,
+                "timestamp": 1587088904,
+                "name": "Lifter_Precomp_Script_V01.JPG",
+                "title": "Lifter Precomp Script V01",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 71823,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0120ERTXSN\/lifter_precomp_script_v01.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0120ERTXSN\/download\/lifter_precomp_script_v01.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 196,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 261,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 392,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 435,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 522,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0120ERTXSN-607432141e\/lifter_precomp_script_v01_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 557,
+                "original_w": 1761,
+                "original_h": 958,
+                "thumb_tiny": "AwAaADCKNFKAlcmn+Wn9wUkf+rWpBVuK5bivqM8pP7oo8uPONop9FQMZ5cefuiqxPNXKpnqaALMQ\/dLT6rqxCjBNLub1P507sCeioNzep\/Ojc3qfzpAT96pnqal3N6n86hoA\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F0120ERTXSN\/lifter_precomp_script_v01.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F0120ERTXSN-e69e3ebbbb",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1587088906.009200"
+    }
+]

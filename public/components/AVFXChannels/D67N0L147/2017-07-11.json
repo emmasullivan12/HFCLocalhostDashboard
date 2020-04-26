@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F670FEDLM",
+                "created": 1499767941,
+                "timestamp": 1499767941,
+                "name": "Useful excel.xlsx",
+                "title": "Useful excel.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U5X3KFLFN",
+                "editable": false,
+                "size": 18852,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F670FEDLM\/useful_excel.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F670FEDLM\/download\/useful_excel.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U5X3KFLFN\/F670FEDLM\/useful_excel.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F670FEDLM-0c16d7288f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U5X3KFLFN",
+        "display_as_bot": false,
+        "ts": "1499767942.380033"
+    },
+    {
+        "type": "message",
+        "text": "Hi Kaarujan!  I hope you are well.  I am sorry I haven't been in touch.  I have been on holiday and enjoyed my birthday.  How are you doing?  Are you enjoying the summer?",
+        "user": "U5X3KFLFN",
+        "ts": "1499767982.393821",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f83edd76b10",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201130484900_4f83edd76b10c02261b9_72.png",
+            "first_name": "Georgia",
+            "real_name": "Georgia",
+            "display_name": "georgia0907",
+            "team": "T4UUTPV18",
+            "name": "georgia0907",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

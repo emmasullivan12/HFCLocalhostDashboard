@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "That's an interesting set of subjects - I did psychology for AS level, very fun.",
+        "user": "U5WMH4QGK",
+        "ts": "1498300272.519380",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "In terms of skills needed for history,  you're right that organisation, communication and confidence are also important for a lawyer. What about the skills needed when you're coming up with an argument and dealing with sources\/evidence?",
+        "user": "U5WMH4QGK",
+        "ts": "1498300341.522567",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "e9738a771461",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201188260868_e9738a77146157ac53d5_72.jpg",
+            "first_name": "Christian",
+            "real_name": "Christian",
+            "display_name": "christian",
+            "team": "T4UUTPV18",
+            "name": "christian",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

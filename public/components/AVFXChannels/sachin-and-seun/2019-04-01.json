@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sachin, I haven't heard from you, I hope all is well?  Looking forward to hearing from you.  Seun.",
+        "ts": "1554150419.000100",
+        "username": "Seun Olaniyi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-01\/587429371137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey seun !! Sorry \nSuper busy at work \nGimme Just 2 more days \nI’ll be free for a month after that :slightly_smiling_face: \nTalk soon ",
+        "ts": "1554150536.000200",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-01\/593733805344_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

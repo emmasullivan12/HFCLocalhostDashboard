@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Moya! No problem! Sorry for such late reply from me as well. Maybe we could have a call tomorrow during the day? Let me know please ",
+        "ts": "1586198766.000400",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1058579502656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or Wednesday?",
+        "ts": "1586198776.000500",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1045458043655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

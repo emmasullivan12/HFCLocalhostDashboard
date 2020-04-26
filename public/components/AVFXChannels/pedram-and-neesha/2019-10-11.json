@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.glassdoor.co.uk\/Job\/london-production-coordinator-jobs-SRCH_IL.0,6_IC2671300_KO7,29.htm>",
+        "ts": "1570828746.000300",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/792941068928_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Seen an interesting one for BBC",
+        "ts": "1570828752.000400",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/795148275974_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

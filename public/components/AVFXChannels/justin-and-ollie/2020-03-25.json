@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey man, im doing some cleanup and trying to do the Smart vector way you spoke of previoiusly",
+        "ts": "1585157688.000100",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1016155590993_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

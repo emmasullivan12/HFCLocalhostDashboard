@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's totally fine. I know about deadlines all too well. \n\nWould be good to know a little more about you, your interests, goals, and how I can help you get there. \n\nNot sure how much you know about me and the company I work for. If you want more info just let me know",
+        "ts": "1575033405.001900",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-29\/856142933046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

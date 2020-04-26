@@ -1,0 +1,51 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*Question from the students* :bowtie:\n\nWe've asked the students the questions they want us to ask you, which we'll share with you throughout the programme. Here is Q.1:\n\n```What experience at school has been most useful in your career decision making?```",
+        "ts": "1508144312.000381",
+        "username": "bot",
+        "thread_ts": "1508144312.000381",
+        "reply_count": 6,
+        "reply_users_count": 1,
+        "latest_reply": "1508511178.000398",
+        "reply_users": [
+            "U00"
+        ],
+        "replies": [
+            {
+                "user": "0",
+                "ts": "1508181253.000453"
+            },
+            {
+                "user": "0",
+                "ts": "1508332746.000409"
+            },
+            {
+                "user": "0",
+                "ts": "1508336659.000265"
+            },
+            {
+                "user": "0",
+                "ts": "1508339532.000322"
+            },
+            {
+                "user": "0",
+                "ts": "1508505012.000355"
+            },
+            {
+                "user": "0",
+                "ts": "1508511178.000398"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me, it's a piece of advice that has been useful throughout my working life, rather than for choosing a specific career. It was a time when I was shivering on a cold day at rugby training. Our coach said sport is just like any other profession, you have to learn how to work smarter, not harder. Anyone can be a busy fool running around and working hard, but the best are clever about what they spend their time on. It's still now a difficult mindset to conquer!",
+        "ts": "1508181253.000453",
+        "username": "bot",
+        "thread_ts": "1508144312.000381"
+    }
+]

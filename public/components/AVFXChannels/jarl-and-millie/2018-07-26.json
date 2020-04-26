@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, sorry about my ling silences but my internet should finally be fixed now :grin: If you don't mind my asking, I would love to hear about how you got to work on such a big movie? ",
+        "ts": "1532597587.000231",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/406406330919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey no worries! Glad to hear your internet is back. That sounds frustrating. I dont mind your asking at all, please ask away! I think a big part of my getting the chance to work on Gravity had to do with working hard at getting my skills in a strong enough place to be able to create a solid portfolio, which for computer animation involves putting together a 'reel'\/short video exhibiting your work. I'll send you a link to my reel that got me that job (it's outdated now, but still I figure it might be interesting to see). Another thing that I think made getting that first job possible was building a solid relationship with one of my Uni lecturers, who had worked at DreamWorks Animation. He knew loads of people in the industry, and he was the one who put me in touch with the guy who hired me to work on Gravity.",
+        "ts": "1532602494.000156",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/406446353319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is a link to this now very old reel (it pains me a little to watch now haha) <https:\/\/vimeo.com\/10499562>",
+        "ts": "1532603114.000071",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/406451139591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is the password",
+        "ts": "1532603126.000132",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/404859368913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "jarl2010",
+        "ts": "1532603129.000093",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/406451278023_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank You!",
+        "ts": "1532610757.000095",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/405237902564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem! I imagine the specifics of jobs in computer animation \/ VFX (visual effects) are probably pretty unfamiliar for most people, and there are a lot of very specific job types within computer animation too, so please don't hesitate to ask more questions. I think your question about how I got that job is a good one! Also, people who ask questions (like you), and pursue figuring stuff out in that way, are really valuable people to hire, so don't be worried at all about asking questions, it's a good thing! :)",
+        "ts": "1532615494.000545",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/405299092532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank You :grin: in that case, how did you decide to get into the industry? And I was curious what your first job was in the industry? ",
+        "ts": "1532616287.000409",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-26\/405691471573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

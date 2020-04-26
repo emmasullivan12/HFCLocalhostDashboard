@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, when’s good to chat?",
+        "ts": "1508941098.000247",
+        "username": "rob.chesworth (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/261105438976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Manvir, Hope you're well.",
+        "ts": "1538996246.000100",
+        "username": "David (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/450574798704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know what support I can giv",
+        "ts": "1538996253.000100",
+        "username": "David (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/450706641953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "give",
+        "ts": "1538996254.000100",
+        "username": "David (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/452368432711_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi I wanted some advice on my personal statement, what should i add in it. Im planning to do psychology in university and im having trouble on how to start the personal statement",
+        "ts": "1539015036.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/451555795810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The only time I've written a cover letter is for the DNEG scheme and the ILM scheme, truthfully I doubt people read them. We're fortunate that really all you need to apply with is a showreel",
+        "ts": "1568792876.001400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-18\/764155488976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

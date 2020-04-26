@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Sam! :sun_with_face:",
+        "ts": "1553772313.000100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592373375991_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice work on delivering your project, for your first go at 3D this is really great - I am very excited to see what’s next!",
+        "ts": "1553772353.000200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592739103670_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you enjoy working with others for this project?",
+        "ts": "1553772368.000300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592739329878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are there any personal projects you are currently working on? Or thinking about? :thinking_face:\nI know you mentioned you wanted to try out character\/creature design - will you get a chance to do some of this on your course?",
+        "ts": "1553772436.000400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/588885059888_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As I mentioned about my friends in the games companies you listed - I’d be more than happy to introduce you to them if you have any specific questions (could be good to name drop a bit when you’re at EGX Rezzed!)",
+        "ts": "1553772507.000500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592741749350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's been quite busy for me at Framestore over the past few days - there was a bit of a shuffle around as we are finishing a few shows, so there wasn't a lot of CFX work for me to do. I've been temporarily transferred over to the Tracking department to help them out as they suddenly have a lot of work to do...!\nI have never done Tracking before so I have had to get stuck in learning the theory and software - I've been doing a lot of pestering of the Tracking team to figure it all out and luckily they are a really friendly, helpful and patient bunch of people so it has been going smoothly so far!\nIt's a bonus of working at Framestore that if work dries up, they will still try to keep you on board as much as they can and this might mean you get shuffled around the departments a little bit. Tracking is something I never thought I would ever really get involved in, but being transferred onto the team has pushed me out of my comfort zone and now I can add a new skill to my belt and increase my employability within the industry. :raised_hands:",
+        "ts": "1553772648.000600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592744328422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

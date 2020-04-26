@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m thinking about going to york university to study accounting finance and business management but i also just want to go ahead and do economics as a degree itself, i find it really interesting and i just understand it easily ",
+        "ts": "1508939852.000164",
+        "username": "sanaa3008 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/261742867394_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One of my best friends went to York and really enjoyed it! I think that you should study what you enjoy. Even if you wanted to end up becoming an accountant you could still study economics and then join an accountancy firm and do your training ",
+        "ts": "1508957299.000535",
+        "username": "sophie.carlin (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262087722437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Economics and finance could be another option for you if you enjoy both?",
+        "ts": "1508957437.000596",
+        "username": "sophie.carlin (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262002595780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

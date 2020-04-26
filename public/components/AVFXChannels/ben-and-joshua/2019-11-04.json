@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Afternoon Ben, I was wondering in regards to rotoscoping are there any tutorials you would recommend to help? As I want to go back and possibly redo an old project.",
+        "ts": "1572880602.006200",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/812649043601_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

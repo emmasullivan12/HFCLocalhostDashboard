@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah.. I see :) thats good ",
+        "ts": "1509635560.000637",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/266880088518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you more often work individually or as part of a team?",
+        "ts": "1509635753.000545",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/266050944996_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mostly as part of a team - the projects I work on are very large and complex, and I generally manage part of the team, with legal teams and our client also working. I do sometimes have smaller projects on my own, but not often. It’s generally more fun working in a team, and the result is usually better as everyone has different strengths and weaknesses.",
+        "ts": "1509637420.000278",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/267106055607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your opinion on this - 'A levels will be the only toughest time in your educational journey'\n\nAnd if you believe so .. Why? ",
+        "ts": "1509659080.000034",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-02\/267140887878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

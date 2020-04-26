@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Samantha,\n\nSure anything you want to know.",
+        "ts": "1582227652.002100",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/950439889379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

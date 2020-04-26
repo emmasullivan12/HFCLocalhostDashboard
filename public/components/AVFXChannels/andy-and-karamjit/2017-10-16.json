@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really want to work for the BA and it makes me feeling good that there is an high requirement for aircraft engineers.",
+        "ts": "1508157141.000052",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257946137095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies for being off line for a bit. Working from home this week though. I will send thoughts on your CV tomorrow. Worth thinking though about how you demonstrate your skills e.g. determination. A good thing to do is to create a workbook in excel. Name each of the tabs a skill and then provide examples of how you demonstrated the skill in specific situations. ",
+        "ts": "1508178442.000209",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256568156193_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

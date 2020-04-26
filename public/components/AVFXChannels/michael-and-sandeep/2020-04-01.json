@@ -1,0 +1,589 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya\nI would like to learn more about grooming fur and hair mostly. I have a basic knowledge on both xgen and houdini which helps but in terms of getting results that I would like its still not there. If its Alright with you could you review the groom I sent yesterday.",
+        "ts": "1585755357.007900",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041258387780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of what I would like to learn it would be grooming, lookdev and lighting in that order",
+        "ts": "1585755507.008000",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1031735429361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can learn multiple topics at the same time but if it makes it easier for you we can do one at a time",
+        "ts": "1585755546.008100",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041703311781_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And in terms of work is it okay if I send you work once a week for now because I'm in the middle of a group project",
+        "ts": "1585755728.008200",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1043651030694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I love the setting goals idea i'd be really happy with that",
+        "ts": "1585759009.008300",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030474715859_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F01184V2EG5",
+                "created": 1585764493,
+                "timestamp": 1585764493,
+                "name": "RefBreakdown_02.jpg",
+                "title": "RefBreakdown 02",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 220003,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F01184V2EG5\/refbreakdown_02.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F01184V2EG5\/download\/refbreakdown_02.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F01184V2EG5-45716c61eb\/refbreakdown_02_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 1080,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F01184V2EG5\/refbreakdown_02.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F01184V2EG5-8a0c9cf29e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585764497.008400"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010VD9FELA",
+                "created": 1585764494,
+                "timestamp": 1585764494,
+                "name": "RefBreakdown_01.jpg",
+                "title": "RefBreakdown 01",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 412855,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010VD9FELA\/refbreakdown_01.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010VD9FELA\/download\/refbreakdown_01.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010VD9FELA-6278002d31\/refbreakdown_01_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 1080,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010VD9FELA\/refbreakdown_01.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010VD9FELA-a223dc6d53",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585764497.008500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can send me an image with just your guides and model that would be great but I can give general tips based on the images you have sent :slightly_smiling_face:\nfist off is density. a human head tends to have between 80,000 and 150,000 hairs. generally speaking people with naturally darker hair are more likely to be on the low side. I find a good starting point for most grooms is 90,000 hairs between all the grooms on the head.\nYou can check how many hairs each groom has by going to log- statistics level 1. when you generate a groom it will tell you how many primitives were generated and how long it took, you just need to open the log at the bottom of the xgen window. the number of primitives is the number of hairs.\n\nwidth is harder to be accurate on since it xgen does not use real measurment units in the UI. generally the value to use is 0.01 width and 0.8 taper\/taper start",
+        "ts": "1585764812.009000",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1044264352567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "when doing guide work try to avoid the temptation to add more guides than you need, you'll be suprised how few guides you need for most hair styles. what I like to do is place around 10 guides and then preview the hair, if the hair looks good in some areas then I just leave the guides as they are and then add more guides where they are needed",
+        "ts": "1585764924.009100",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1044269272807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The short hair in your groom is a great example of this. If I was to give you feedback asking to change the flow you would have a horrible time or you would have to delete a lot of your work (luckily it seems that you flow is ok). Whne working in VFX it is important to minimize on work you dont need to do, you'll get very good at using few guides to get the most results",
+        "ts": "1585765027.009200",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1032223122001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Other than that there are a few key points to keep in mind for guide work, I already wrote this up in a tutorial so i'll just send you that, give it a read and ask me if you have any questions\n<https:\/\/www.mikecauchiart.com\/single-post\/2018\/04\/15\/The-dos-and-donts-of-guide-grooming>",
+        "ts": "1585765100.009300",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042191729781_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "mikecauchiart",
+                "title": "Quick tips: The do's and don'ts of guide grooming",
+                "title_link": "https:\/\/www.mikecauchiart.com\/single-post\/2018\/04\/15\/The-dos-and-donts-of-guide-grooming",
+                "text": "So, It's been too long since I last made any tutorials and at the moment I don't really have the right setup to do any in depth video tutorials like I planned",
+                "fallback": "mikecauchiart: Quick tips: The do's and don'ts of guide grooming",
+                "thumb_url": "https:\/\/static.wixstatic.com\/media\/2ae9b9_63ce04755280435584638aeb20612da5~mv2.png\/v1\/fit\/w_2500,h_1330,al_c\/2ae9b9_63ce04755280435584638aeb20612da5~mv2.png",
+                "from_url": "https:\/\/www.mikecauchiart.com\/single-post\/2018\/04\/15\/The-dos-and-donts-of-guide-grooming",
+                "thumb_width": 2065,
+                "thumb_height": 724,
+                "service_icon": "https:\/\/static.wixstatic.com\/media\/2ae9b9_78d2f38a14df4de8ab1e0a1f5b505a98%7Emv2_d_3842_2160_s_2.png\/v1\/fill\/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01\/2ae9b9_78d2f38a14df4de8ab1e0a1f5b505a98%7Emv2_d_3842_2160_s_2.png",
+                "id": 1,
+                "original_url": "https:\/\/www.mikecauchiart.com\/single-post\/2018\/04\/15\/The-dos-and-donts-of-guide-grooming"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585765101.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ".\n.\n.\ngetting back to the topic of how we will learn together, I think for now it will be easiest for me to teach one thing at a time. Probably best to leave setting goals until after your group project because they can be stressful but I am happy to give feedback and tips on things as you go. so if the project is tricky feel free to ask questions that may help and I will do what I can",
+        "ts": "1585765221.009500",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042196956757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010WRH3XR9",
+                "created": 1585767221,
+                "timestamp": 1585767221,
+                "name": "digi_double.avi",
+                "title": "digi double",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 112111104,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010WRH3XR9\/digi_double.avi?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010WRH3XR9\/download\/digi_double.avi?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010WRH3XR9\/digi_double.avi",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010WRH3XR9-e6906615f0",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585767225.009600"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011AAYLYKH",
+                "created": 1585767232,
+                "timestamp": 1585767232,
+                "name": "hair.pur",
+                "title": "hair",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 27488429,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011AAYLYKH\/hair.pur?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011AAYLYKH\/download\/hair.pur?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011AAYLYKH\/hair.pur",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011AAYLYKH-dad619434d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585767233.009900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so according to my file it says it has around 77157 primitives",
+        "ts": "1585767820.010200",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029602327042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "besides adding more density, how would you break up the big clumps into smaller clumps because I am finding difficulty doing this",
+        "ts": "1585767871.010300",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041881950772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and how many clump modifiers would you say is good to use",
+        "ts": "1585767891.010400",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1032351715089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for most grooms 2 is enough but in the case of the long hair on this character you would need 3",
+        "ts": "1585768160.010500",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042327996565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hmm ok, so 2 for the top and one for the bottom ?",
+        "ts": "1585768715.010600",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042350010549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "because I separated the hair on the top to a different collection than the on the bottom",
+        "ts": "1585768747.010700",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042351360149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Different collection or different description?",
+        "ts": "1585768812.010800",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042353870917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "honestly that part still confuses me",
+        "ts": "1585768840.010900",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029641433170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "description",
+        "ts": "1585768865.011000",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1044307223862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok heres how I think of it.\nA collection is an entire set of grooms, normally you would have one collection per character. a description is a unique part of the hair on a character. normally you would have somthing like this\n\ncharEmily_COL\n• furHeadHair_Long_DESC\n• furHeadHair_Short_DESC\n• furEyebrows_DESC",
+        "ts": "1585768960.011100",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030944827283_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so on clumping you will need 3 clump modifiers for the top of the head. one that is guide clumping and then two normal clump modifiers to break it up",
+        "ts": "1585769022.011200",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1032397104817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for the short hair you will need 1 or two clump modifiers",
+        "ts": "1585769032.011300",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041928465732_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so when you're breaking up a clump with another clump would you have 3-5 smaller clumps within that big clump",
+        "ts": "1585769095.011400",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1044463893399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah something like that",
+        "ts": "1585769118.011500",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1032400869377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "obviously it depends on ref but normally each clump modifier is 3 or 4 times denser than the last",
+        "ts": "1585769136.011600",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1032401585537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hmm, ok so in terms of clump density for xgen, does a higher number simply give you more clumps x the number of guides on the groom ?",
+        "ts": "1585769211.011700",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042369553477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "exactly",
+        "ts": "1585769247.011800",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030956556211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "basically when you create clumps and it asks for density its kind of making a copy of your groom with less hairs. then what happens is your hair will find the closest curve it can find from the clump modifier and get pulled to it",
+        "ts": "1585769297.011900",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042429802000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its quite an abstract concept so it will take you a few grooms to fully understand it",
+        "ts": "1585769327.012000",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029658771410_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":slightly_smiling_face:",
+        "ts": "1585769343.012100",
+        "username": "Sandeep Tuladhar (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030960542275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011A9TALS2",
+                "created": 1585769385,
+                "timestamp": 1585769385,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 79659,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011A9TALS2\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011A9TALS2\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A9TALS2-6090e125bd\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A9TALS2-6090e125bd\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A9TALS2-6090e125bd\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 212,
+                "thumb_360_h": 229,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011A9TALS2-6090e125bd\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 212,
+                "original_h": 229,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011A9TALS2\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011A9TALS2-f952fe5556",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585769386.012200"
+    }
+]

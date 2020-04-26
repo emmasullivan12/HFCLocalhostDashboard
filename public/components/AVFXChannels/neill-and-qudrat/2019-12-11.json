@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Qudrat, How's it going? I am told that you are interested in a career as a compositor? Just to let you know a little bit about myself; I am a lead compositor at Framestore in London, currently working on Wonder Woman 2. In January I am moving to Australia to work on some films (might be Marvel) but the titles are all a secret at the moment!",
+        "ts": "1576059939.001700",
+        "username": "Neill (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/870670791847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Neil, I'm really good thank you. That is so cooooool, you're working on Wonder Woman 2!!",
+        "ts": "1576064811.001800",
+        "username": "Qudrat Olayonwa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871119461382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you moving to Australia because of work or did you want to move to Australia and then look for a job there.",
+        "ts": "1576064851.001900",
+        "username": "Qudrat Olayonwa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/868921329845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry i have a lot of questions. I should introduce myself, I am a first year student at Brunel University currently studying VFX and through a university project I started looking at different jobs within the industry and have become really interested in compositing and the process involved within it.",
+        "ts": "1576065010.002000",
+        "username": "Qudrat Olayonwa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871123124902_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can I ask why you decided to become a compositor?",
+        "ts": "1576065029.002100",
+        "username": "Qudrat Olayonwa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/868924627941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

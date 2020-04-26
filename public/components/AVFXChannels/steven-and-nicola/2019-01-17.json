@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning! Had a chat with another person here about your issue, again it's hard to know much without more detail but he said that coming from Storyboard Pro (has never used Dragonframe) they use xml files to define timecodes, - we also look to those .xml's to build out shots in maya - not sure if that's something worth looking at, or indeed if you're already using them? :slightly_smiling_face:",
+        "ts": "1547716962.000500",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-17\/525390509537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

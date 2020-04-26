@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't worry! I think you can turn notifications on at the side of the screen (if you're using a web browser on a computer) There's a Notification Preferences menu&gt;&gt;&gt;",
+        "ts": "1543244653.004700",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/489467103446_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But also, it's ok to be slow, I'm happy for you to fit me in anytime you can, unless you fancy something a little more structured? My days are often very different (away at meetings, or chained to my PC animating, or teaching etc) so I can be flexible for you :slightly_smiling_face:",
+        "ts": "1543244715.004800",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/489118593239_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

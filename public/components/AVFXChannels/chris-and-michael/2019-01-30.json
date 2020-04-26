@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Michael how are things going? Have you any aims\/ goals you would like to achieve this year?",
+        "ts": "1548844085.000100",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/536915820548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

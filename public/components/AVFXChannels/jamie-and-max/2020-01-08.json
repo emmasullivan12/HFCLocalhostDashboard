@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been planning to apply to a ton of placements in London, but I know a few people in my class are applying so I'm not sure if I'll end up being chosen.\n\nDid you do any summer placements?",
+        "ts": "1578517714.000100",
+        "username": "Max Brown (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-08\/885883608402_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A bit about my day yesterday!\n*I worked:* from 8AM to 9PM (with a cuople hours off in the afternoon)\n*I worked on:* a few calls with potential clients (pitching my business &amp; talking about their problems)\n*My colleague gave me feedback:* saying I am good at thinking about the bigger picture of everything we do\n*I'm learned:* a bit about how to build dynamic websites in my spare time\n*I'm felt:* pretty unstressed yesterday! And productive :smiley:",
+        "ts": "1511261292.000294",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/275632831508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's my day today:\n*Today I worked:* from 9AM to 1PM and then from 4PM until probably 10PM tonight! :alarm_clock:\n*Today tasks \/ activities I worked on:* I applied to a grant and sent a proposal I'd promised to sent to a potential customer (good to send things on time and deliver as you promised to!)\n*Today my colleague gave me feedback:* saying I wrote concisely in the grant application and made our business sound amazing to potential investors!\n*Today I'm learning \/ reading:* I continued doing a bit of an online course about how to build dynamic websites + read some of a business book by LinkedIn co-founder Reid Hoffman\n*Today I'm feeling (stress levels):* Pretty chilled :facepunch::smirk: Feeling like getting good traction with the business and hard work is paying off (finally!)",
+        "ts": "1511295755.000490",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-21\/276988808567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

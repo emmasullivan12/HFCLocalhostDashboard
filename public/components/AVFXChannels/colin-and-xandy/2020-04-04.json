@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Colin, I just wanted to send the link across to a short film I made recently that I'd love to get your opinion on\n<https:\/\/youtu.be\/2J8pNVnXmoo|https:\/\/youtu.be\/2J8pNVnXmoo>",
+        "ts": "1586031735.000100",
+        "username": "Xander (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1043658787457_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Monster at the end of the bed",
+                "title_link": "https:\/\/youtu.be\/2J8pNVnXmoo",
+                "author_name": "Red Saturn",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCUgBaj-1YlZoBrfFz3EyE8g",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/2J8pNVnXmoo\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Monster at the end of the bed",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/2J8pNVnXmoo?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/2J8pNVnXmoo",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/2J8pNVnXmoo"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586031736.000000"
+        }
+    }
+]

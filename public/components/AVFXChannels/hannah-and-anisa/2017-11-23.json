@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today I worked:* from 9am to 5.30pm\n*Today tasks \/ activities I worked on: commenced work on Q4 forecast and discussed consolidated budget deadlines with Japan\/India.\nToday my colleague told me: I deserve a break !\nToday I'm learning \/ reading: unfortunately my study books ! I have an exam on the 5th :(\n*Today I felt: very stressed as I got a list of deadlines that have to be met in December and January !",
+        "ts": "1511472754.000151",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276850296099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

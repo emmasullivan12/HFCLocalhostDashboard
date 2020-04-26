@@ -1,0 +1,148 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob, This is where I've got to <https:\/\/vimeo.com\/390960304> - sorry the render is so awful - can't work out where to increase the quality in the Write node.  Any tips on how I deal with the wire in the trees? And the lone branch coming over my patch - tracking doesn't seem to be working.",
+        "ts": "1581510167.011800",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/938514019681_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "orig_v006",
+                "title_link": "https:\/\/vimeo.com\/390960304",
+                "author_name": "Jonathan Joubert",
+                "author_link": "https:\/\/vimeo.com\/user97436145",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/855332906_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: orig_v006",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/390960304?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"orig_v006\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/390960304",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/390960304"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581510168.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its looking good from what I can see so far. In regards to the branches you are talking about the ones at the top of the screen? those appear to be moving, so to clean those up unfortunately you would have to rebuild each branch area where it patches over. I would say that would be a lot of work, and one solution would simply to not do it and crop in the footage so you dont ever see it. I cant see it very well in the footage but it looks like a lot of work",
+        "ts": "1581512245.012000",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/938556236433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also I've had contact with the director, and it seems like a fairly straightforward removal.",
+        "ts": "1581512378.012100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/950560822167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "&gt; Here you go: <https:\/\/vimeo.com\/386730506>\n&gt; Password is *DGEEGR*\n",
+        "ts": "1581512383.012200",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/948698999232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thats the link for the entire film, the clip where the cameraman needs removing starts at 7:52",
+        "ts": "1581512431.012300",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/935911877474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is no movement, do the main problems are the man moving over the area once or twice, and the change of focus which will be the most difficult part. Just confirming with the director the it is just for one the clip, do you think you will be able to do that?",
+        "ts": "1581512672.012400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/937238429923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, are you able to receive the footage by wetransfer? I'm thinking that would be easiest way to the footage to you. The director is also offering £50 for the work, would be that okay?",
+        "ts": "1581512921.012500",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/950574095447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow. Thanks Rob. I've just had a look and I think its definitely doable. I'm guessing I will have to play around with animating the ZDefocus node to match the change of focus - not something I've done before but I'm up for it. unless you suggest another approach.\nAlthough, just to clarify, am I removing the cameraman AND camera or just the cameraman (meaning his head when it enters the frame and his finger when it comes in to defocus the shot)?  I was prepared to do it for £0 (for a credit) so £50 is grand! Thanks.\n\nAs for my monkey shot, I was thinking of maybe using the marker removal node for the trees. I know its a lot of work but I'm keen to get a job - won't a more challenging shot get my reel noticed ?\nWorkflow wise - I'll just render dpx's from the footage I'm given to work on, denoise and clean up as normal. I guess you'll let me know what format to return the footage? Will I get a credit? And can I use the footage on my reel?  And is there a deadline?\nwetransfer  to <mailto:jjoubertcomp@gmail.com|jjoubertcomp@gmail.com>",
+        "ts": "1581517665.012600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/951051813606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In regards to the credit, I'm not sure but I would assume so since I cant think there will be a lot of vfx work on the film. In terms of workflow, I would think it would be better for them to export dpx's then send those to you so there isn't a loss of information. I would assume it would be the cameraman and camera, but I think the main movement but the subject is in front of the camera. Zdefocus would be best, I basically learned that one with the video I had on youtube. The hardest part will be animating that in time the focus change.",
+        "ts": "1581518021.012700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/937386792803_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you would definitely be able to use the footage on your reel, just make sure it is password protected. Having said that I dont think anyone will be looking for online for a documentary no one has heard of lol But I do that with all my work just to be safe",
+        "ts": "1581518158.012800",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/936070796818_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. Point taken about locking up my reel. Seems to be the standard thing to do lol! I'll get youtubing for Zdefocus node and check out any foundry guides as well.",
+        "ts": "1581521620.012900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/948536376660_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

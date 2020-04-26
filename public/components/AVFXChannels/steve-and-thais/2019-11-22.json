@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Thais, nice to meet you. I guess the best thing to do would be for you to give me a bit of an idea of your background when it comes to animation. What are you doing at the moment (studying at college\/uni\/by yourself). And any questions you have about, well, anything I guess. I'm here to help so I can give you some of my opinions and experiences as well as some practical help if that's what you're after. Just give me a shout when you're free =]",
+        "ts": "1574418065.001600",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/837374124385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Steve! Thank you very much for you message and accepting to be a mentor in this programme!\n\nSo quick storytime, I've always wanted to be part of the animation industry and decided to leave France after high school to enrol in a VFX degree in Sweden. I studied there for 2 years (training as a generalist for the VFX industry) and then move to London to do my 5 months internship (at Mainframe). I graduated and decided to stay in London. However I quickly realised that I did not quite have the level needed to get a junior position in a big company (ILM, MPC, The Mill, Framestore...) where most of my classmates went, and also that smaller studios were more keen on hiring C4D artists (I work on Maya).\n\nIt's been a year I have been working at Unreasonable Studios (advertising) as a studio and production assistant, but I know I want to get a role on the creative side of things, where my passion lies. I will be leaving my job end of December as I decided to take a leap of faith and try to either get further training in 3D, or land a slightly more creative position.\n\nWith a rough idea of my background, do you have any advice for me? I keep studying 3D during my spare time (continuing on Maya and substance painter, and learning C4D) but I feel like my learning curve is very bad, probably because of the lack of time and how tired I am doing this after work. What would you recommend for me to do? What would be a \"smart move\" at this stage?\n\nThanks a lot for reading and looking forward to hearing from you!\nThais\n\nPS: you can find a small selection of my work at <http:\/\/www.thaisportfolio.com|www.thaisportfolio.com>",
+        "ts": "1574419592.001700",
+        "username": "Thais Ondet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/847536845670_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Thais. You're experience is actually very similar to mine (except for the moving countries part). I studied animation at university and eventually got a job matchmoving at Framestore (kind of through luck). I jumped between studios for about 18 months and eventually decided to go back to university in a hope to increase my skills because, like you, I wasn't able to progress my position with the skill I had and I definitely didn't want to be a matchmover all my life. Luckily, while I was there I managed to secure myself a job up in Cambridge for Frontier and then eventually moved down to Blue-Zoo where I have been for 4 years.",
+        "ts": "1574432102.001800",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/837637684577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's very good that you already have some studio experience, even if it's not exactly the position you want. It means you have an understand of how the industry works which will help your applications. Of course, you need a good portfolio to show you can work in the position you want. That is where I think further training will help you.",
+        "ts": "1574432193.001900",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/845566510688_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now is a great time take more training because there are so many options available to you. You have your standard universities (I'm assuming you're multilingual so you have quite a few option outside of the UK too) but also now there are many online resources you can use.",
+        "ts": "1574432267.002000",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/847775750662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are long form courses like AnimationMentor but now you also have shorter course structure from AnimSchool and AnimSquad as well as a few others. Youtube, Udemy, Skillshare all have option too but I don't have a lot of experience with those so I can promote them too much. All of my studying was done at physical universities.",
+        "ts": "1574432343.002100",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/845570286704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I found it very hard to do any personal work outside of my actual work in VFX and that is why I decided to go back to university to train. That might not be the best option for everyone and can be expensive but if it's an option to you I think I would recommend that the most.",
+        "ts": "1574432392.002200",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/837644950369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It means you can focus all of your time and energy into progressing your skills and I think you'll probably find this the quickest route to increasing you skills.",
+        "ts": "1574432429.002300",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/845572384528_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your website looks great and the work there also looks good. Honestly, I'm a little surprised you're struggling to find work but I know how the industry can be when it comes to looking for jobs.",
+        "ts": "1574432560.002400",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/847783034934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As an animator I'm not able to give you much critical feedback on your work as it's mostly VFX and modelling stuff but for a generalist it looks like you're pretty capable of everything.",
+        "ts": "1574432602.002500",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/837650134977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is is animation in particular you want to get into? or were you looking at another position?",
+        "ts": "1574432650.002600",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/837651398689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

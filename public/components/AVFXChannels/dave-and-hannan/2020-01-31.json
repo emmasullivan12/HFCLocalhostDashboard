@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FT2DK57GT",
+                "created": 1580509347,
+                "timestamp": 1580509347,
+                "name": "Many_Teeth_Creature_Graded.png",
+                "title": "Many Teeth Creature Graded",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 35503051,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT2DK57GT\/many_teeth_creature_graded.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT2DK57GT\/download\/many_teeth_creature_graded.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT2DK57GT-19f158a69c\/many_teeth_creature_graded_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 3840,
+                "original_h": 2160,
+                "thumb_tiny": "AwAbADDMoAzUmzilCUARlcDrzSVMY8mmlMdaAI6Kk20hWgCeMBhThGahQkHirsXzdeeKYxoVCPmXn1FLPGpClGz7VJgBTx3o9aAsVfLPpio5AFFWZSQvFU3JJ5oA\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FT2DK57GT\/many_teeth_creature_graded.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FT2DK57GT-6c64728c0e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580509360.000400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I finished this recently\n\nIts a deep sea creature similar size to a marlin fish (5 meter length). This took me 4 days to make which I would like to get this creation process down to 2 days.",
+        "ts": "1580509452.000700",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/931476893524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "More will come soon",
+        "ts": "1580509462.000800",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/921767579985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

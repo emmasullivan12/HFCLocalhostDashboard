@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its worth checking out (totally not biased... :wink: )\nThere is a also a behind the scenes documentary that has a few interviews with some of the guys from work.\nNice, all sounds good! I really enjoyed 1917, I think it all came together really well.\nAnd yeah exactly, I'm going in as a compositor so what I'm doing now yeah!",
+        "ts": "1582650832.000100",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/970284545815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha yeah totally not :nerd_face: I will do eventually just finished the Witcher &amp; stranger so that frees up some viewing time now :laughing:\n\nIs that behind the scenes documentary on Netflix or YouTube? \n\nYeah 1917 has got to be up there with the best war films now.\n\nI just finished presenting my proposal for the final project we got... Went down like a lead balloon :joy:",
+        "ts": "1582655306.000200",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/968566803840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

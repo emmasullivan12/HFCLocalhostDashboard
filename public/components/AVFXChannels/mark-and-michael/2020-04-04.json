@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Michael,\n\nGreat to meet you.\nFeel free to ask any questions which I might be able to help with.\n\nHard to say how long I've been mentoring for, as I just sort of drifted into doing it...\n\nI still mentor students from my first games class in Australia from 12 years ago, and quite a few others since then.\nSome are now art directors, senior animators or character effects artists.\nThis is my first time mentoring through accessVFX.",
+        "ts": "1585997532.001900",
+        "username": "mistermarkflanagan (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1048738882804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

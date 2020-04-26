@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chloe! Hope you're well amongst this crazy coronavirus situation aha\n\nI have an update on one of my shots:\n<https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1430361\/1533306>",
+        "ts": "1584829968.001100",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1018921201223_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Shot05_Anim",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1430361\/1533306",
+                "text": "Collaborative Media Review with 7 items",
+                "fallback": "SyncSketch: Shot05_Anim",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1430361\/1533306",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1430361\/1533306"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584829969.000000"
+        }
+    }
+]

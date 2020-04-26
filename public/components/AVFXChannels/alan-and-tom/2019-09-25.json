@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’d like to refine some of the facial animation actually, I didn’t get much time to use the emotion blendshapes I’d made. The focus was on blocking it all out and finishing the lip sync so less time to refine. The length is probably something else I’d change if I’m honest, it could have been cut even more. \nThat’s a good idea thanks. I hadn’t really considered showing the rig off at all, I was just going to put it on my website. Do you think it’s worth including in a reel for a specific job such as a junior animator as well as speculative applications?\nAny exercises you recommend me putting in the reel? I’m working through a Maya exercise book right now (one of the ‘how to cheat in’ books) so its full of rigs and little ideas. A lot of them are someone doing something very normal\/everyday like sitting down and picking up a phone or leaving the house and putting an umbrella up. Is there anything in particular that you’re fed up of seeing over and over?",
+        "ts": "1569396645.000400",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/765991874737_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think you have a point on the length. Not from a story pov but from a polish pov. Better to have something shorter and high quality in my opinion. But I can also understand the need to tell a story.\n\nNathan could guide you better on what to practice on. But if you are able to show you can animate someone doing simple tasks it's a great start. You reel will be missing that I guess at the minute. So yeah bit more body motion. You could make it into a funny series of here's someone doing something dull and okay with the colours and lighting you use as well. They could each be just a few seconds long.",
+        "ts": "1569398290.000500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/766019183281_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

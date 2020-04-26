@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nana, that's a broad question, so I'll give you a broad answer at first.\nYou can apply yourself to get into a Game Design School, it will give you a good foundation and direction, but it all depends what you are looking to do. Since now a days it's common to specialize (coder, level designer, animator, modeler etc.), univeristy will give you a broad learning experience that will help you decide what you want to specialize in, but if you want to open your own studio it's good to be a jack of all trades.\n\nIn a more specific sense, I'd suggest you enter every game jam possible. It's important to learn how to work in a team, how to iterate and reach better design decisions and learning from the feedback and experience. It will build up a portfolio that is incredibly useful when looking for a job. And you can take everything you learned from them and apply it to your own projects, that with the extra time you can polish up the game and your skills.\nPractice is incredibly important Nana, I can't stress that enough, the more you do something *actively* the better you get at it.",
+        "ts": "1534170764.000319",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-13\/415375602932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that's a good start to the animation, how far along are you with it?",
+        "ts": "1534170928.000323",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-13\/415377779284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is for a steath game, so I have few more to do, and then I can start programming.",
+        "ts": "1534171176.000585",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-13\/415381101380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I am doing a game jam this weekend!",
+        "ts": "1534171197.000268",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-13\/415381350852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's fun to do isn't it!\n\nRight all of the answers to your questions:\n\n-I love your Spiderman shot, that's really fun especially for 24hours! I love how scrumpled up Deadpool gets.\n\n-shots look cool, Kayla is a good rig isn't she. ",
+        "ts": "1551863167.000400",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/568341951235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGQDR5QP4",
+                "created": 1551863400,
+                "timestamp": 1551863400,
+                "name": "Screenshot_20190306_090554.jpg",
+                "title": "Screenshot 20190306 090554",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 80539,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGQDR5QP4\/screenshot_20190306_090554.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGQDR5QP4\/download\/screenshot_20190306_090554.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 174,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 231,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 347,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 386,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 463,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGQDR5QP4-50c35139e9\/screenshot_20190306_090554_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 494,
+                "image_exif_rotation": 1,
+                "original_w": 2240,
+                "original_h": 1080,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGQDR5QP4\/screenshot_20190306_090554.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGQDR5QP4-56a7382b7c",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1551863405.000500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha thanks! ",
+        "ts": "1551873187.000800",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/569658830391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anything you think I can improve on in that Spider-Man shot ? ",
+        "ts": "1551873209.000900",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/570023180742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

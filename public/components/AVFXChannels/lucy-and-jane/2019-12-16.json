@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  Hope you’re well and looking forward to Christmas.  I’m here for Christmas, but going to Scotland (where I’m from) on Boxing Day as my dad is going to be 80!  Hope you have a lovely time whatever you’re doing.  Please don’t hesitate to let me know if I can help you with anything.  Happy Christmas! Lucy :christmas_tree:",
+        "ts": "1576496587.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/864746170497_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

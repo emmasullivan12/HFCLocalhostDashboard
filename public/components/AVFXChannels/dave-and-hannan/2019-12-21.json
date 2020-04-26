@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice mate. Sorry for the radio silence... another deadline. That’s the job. What is the end goal with this model? Just a model or are you going to rig it up and animate it?",
+        "ts": "1576934225.000100",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/871586234243_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My end goal for that was just as a halloween art and nothing else. My end goal in general is to make concept art kinda like what Aaron Sims creatives do and get into that side of production.",
+        "ts": "1576945304.000200",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/883122398800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dont apologise, you are working on your job Im working on trying to get a job",
+        "ts": "1576954661.000300",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/872928249169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was wondering how can someone make a previs reel?? like how can I make a reel that demonstrates my skills in previs??",
+        "ts": "1576965895.000400",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/883246857285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

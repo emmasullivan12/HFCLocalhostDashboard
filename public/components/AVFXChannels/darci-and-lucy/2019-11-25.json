@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Darci! Somehow I didn't get the notification that you messaged! So sorry it has taken me so long to respond to you!",
+        "ts": "1574681628.002000",
+        "username": "Lucy Sturmer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/847448074228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I graduated with a 2:1 in BA Animation Production from the Arts University Bournemouth. The only title on my production experience, as of current, is my graduate film \"Sweetness and Light\" where I was producer, and Head of CG (across all aspects of the pipeline). I'm London based currently. I want to work as a producer for VFX as my long term goal. So I've been applying to a lot of production assistant and runner positions at the moment. However, I'm not opposed to other forms of producing, I think there is a lot to learn from every area.",
+        "ts": "1574681890.002100",
+        "username": "Lucy Sturmer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/836442408483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're dog sounds absolutely adorable! I used to have a golden retriever dogs are honestly the most fun animals (don't tell my cat) :sweat_smile: I want to travel the world some day, but at the moment I've mostly seen a lot of Europe as its pretty easy and cheap!!",
+        "ts": "1574682062.002200",
+        "username": "Lucy Sturmer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/849771949527_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope your meeting went well!",
+        "ts": "1574682087.002300",
+        "username": "Lucy Sturmer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/839986601825_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had an interview for a runner position at The Mill on Nov 6th. I think they were all full up on production runners tho, so next time!",
+        "ts": "1574682163.002400",
+        "username": "Lucy Sturmer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/835132116034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hopefully I get a notification next time, so I can be faster with my response! Speak soon",
+        "ts": "1574682212.002500",
+        "username": "Lucy Sturmer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/836447745107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":dog2:",
+        "ts": "1574682227.002600",
+        "username": "Lucy Sturmer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/839989022017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

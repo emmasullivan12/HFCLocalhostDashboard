@@ -1,0 +1,902 @@
+[
+    {
+        "type": "message",
+        "text": "Yo! How was\/is work experience? Enjoy(ing) it?",
+        "user": "U5X3WPT29",
+        "ts": "1499801677.163591",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Work experience was amazing ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499801715.184830",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I really enjoyed it ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499801719.187691",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It was quite exhausting though ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499801731.194385",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Welcome to the world of work! What did you find most exhausting?",
+        "user": "U5X3WPT29",
+        "ts": "1499801793.229664",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Rush hour :joy::sweat_smile:",
+        "user": "U5WBDCAFJ",
+        "ts": "1499801806.236726",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I hated the fact that the tube is packed after a long day and it was just too hot to be in a packed tube\/bus",
+        "user": "U5WBDCAFJ",
+        "ts": "1499801865.270125",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I feel your pain :dizzy_face:",
+        "user": "U5X3WPT29",
+        "ts": "1499801905.292345",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "On the train home now",
+        "user": "U5X3WPT29",
+        "ts": "1499801913.297176",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It's worth it if you enjoy your work though",
+        "user": "U5X3WPT29",
+        "ts": "1499801937.310395",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "(Or eventually move a little closer to work)",
+        "user": "U5X3WPT29",
+        "ts": "1499801955.320806",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It truly was worth it ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499801980.334750",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "My commute used to be 1 hour 20 door to door...if I timed the trains right",
+        "user": "U5X3WPT29",
+        "ts": "1499801987.338387",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Good to hear!",
+        "user": "U5X3WPT29",
+        "ts": "1499801993.341910",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Favourite bit about your work experience?",
+        "user": "U5X3WPT29",
+        "ts": "1499802007.349398",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "...and then your least favourite (about the actual work)?",
+        "user": "U5X3WPT29",
+        "ts": "1499802027.360985",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Favourite bit would have to be reading a lot of interesting cases! ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499802099.401649",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "The least favourite part was that I was only in court for a couple of hours and it was boring ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499802149.430726",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Because it was just the judges timetabling the trial sessions ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499802173.443468",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Haha",
+        "user": "U5X3WPT29",
+        "ts": "1499802197.457359",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "My guess is that there will be more interesting bits of Court than the bit you sat in on!",
+        "user": "U5X3WPT29",
+        "ts": "1499802241.481924",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sounds like you are onto something though!",
+        "user": "U5X3WPT29",
+        "ts": "1499802272.499631",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Maybe there's a bit of a clue in there about whether you want to be a solicitor vs. a barrister?",
+        "user": "U5X3WPT29",
+        "ts": "1499802312.522005",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Did they explain the difference to you!",
+        "user": "U5X3WPT29",
+        "ts": "1499802324.529551",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "*?",
+        "user": "U5X3WPT29",
+        "ts": "1499802328.532006",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yeah, they did. They said that right now, their jobs are kinda overlapping but there is still a difference ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499802395.570625",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm still not sure yet but I feel like being a solicitor would be better for me ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499802422.586539",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Because I like to work and interact with people ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499802454.605057",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Solicitors usually work closely with the clients and the barristers so I feel like I might enjoy that more ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499802514.639259",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "That sounds good to me",
+        "user": "U5X3WPT29",
+        "ts": "1499803591.261825",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Barristers are a very specific type of person",
+        "user": "U5X3WPT29",
+        "ts": "1499803614.274827",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Usually very witty, and quick on their feet",
+        "user": "U5X3WPT29",
+        "ts": "1499803629.283318",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yeah, they have their own kind of sense of humour ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499803842.402432",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Did you manage to complete your career plan?",
+        "user": "U5X3WPT29",
+        "ts": "1499804802.950986",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Also...I'm meant to be rewarding you with hashtags when you show employability skills",
+        "user": "U5X3WPT29",
+        "ts": "1499804880.995858",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I realise I am behind on giving you the credit for your hustling via hashtags",
+        "user": "U5X3WPT29",
+        "ts": "1499804902.008159",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So I'm going to play catch up and throw them at you now for all the skills you have demonstrated thus far!",
+        "user": "U5X3WPT29",
+        "ts": "1499804935.027282",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I haven't managed to complete the career plan but I am gonna get it done by tomorrow ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499804972.049174",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I didn't know there were meant to be rewards :joy::joy::sweat_smile::sweat_smile:",
+        "user": "U5WBDCAFJ",
+        "ts": "1499804988.058404",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "#curiosity #confidence #ambition #proactivity #resilience #communication #organisation #networking",
+        "user": "U5X3WPT29",
+        "ts": "1499805052.096015",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "At the end of this pilot hopefully they'll summarise for you all the skills that you have shown. The hashtags (hopefully) will be tracked...(hope I entered them in right)",
+        "user": "U5X3WPT29",
+        "ts": "1499805120.135009",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Do you need help with the career plan?",
+        "user": "U5X3WPT29",
+        "ts": "1499805137.145025",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So far, it's fine but I will ask if I am struggling ",
+        "user": "U5WBDCAFJ",
+        "ts": "1499805186.173339",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "And thank you for the hashtags :joy:",
+        "user": "U5WBDCAFJ",
+        "ts": "1499805214.189302",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Right on! Good luck! ",
+        "user": "U5X3WPT29",
+        "ts": "1499805461.329123",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "2c18b5c5e047",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201600907010_2c18b5c5e047634e85fd_72.png",
+            "first_name": "Andy",
+            "real_name": "Andy",
+            "display_name": "andy",
+            "team": "T4UUTPV18",
+            "name": "andy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

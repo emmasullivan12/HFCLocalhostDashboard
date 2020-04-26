@@ -1,0 +1,96 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FEF1009GA",
+                "created": 1543486128,
+                "timestamp": 1543486128,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 71641,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEF1009GA\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEF1009GA\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEF1009GA-eaa700ce10\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEF1009GA-eaa700ce10\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEF1009GA-eaa700ce10\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 219,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEF1009GA-eaa700ce10\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 292,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEF1009GA-eaa700ce10\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 581,
+                "original_h": 354,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FEF1009GA\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FEF1009GA-968980f779",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1543486130.003200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Opp sorry forgot to change the setting on that link try this one ",
+        "ts": "1543495124.003500",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491331702117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/dcd04c262b82\/>",
+        "ts": "1543495127.003600",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/491030028467_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: New Review",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/dcd04c262b82\/",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: New Review",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/dcd04c262b82\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/dcd04c262b82\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah great, I can see it now. I shall take a look in a bit.\nSo body mechanics shot, cool :slightly_smiling_face: What sort of animation style are you aiming for? I'll gear feedback to that.",
+        "ts": "1543502094.003800",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-29\/492281314615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Gabriel, it's a pleasure to meet you too! It sounds like we have quite a bit in common as I also like to play Overwatch and games like that from time to time, also love Star Wars and LOTR and Peep show is my favorite TV show haha!\n\nI've been working at Blue-Zoo for pretty much 5 years now, 3 years of that as a Look Dev artist, hopefully I can help you out in anyway I can.",
+        "ts": "1585305495.002000",
+        "username": "Arthur Tibbett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1019341662307_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm still getting used to this Slack software so you may have to bare with me for a few days :sweat_smile:",
+        "ts": "1585305529.002100",
+        "username": "Arthur Tibbett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1030329886564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're my first mentee!",
+        "ts": "1585305569.002200",
+        "username": "Arthur Tibbett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1018054711218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah same, Slack is pretty new to me so still trying to figure it out...was waiting for a reply alert on my email but apparently gotta check it here directly to see new messages. Yeah Star Wars, in general, was a huge one for me when it comes to shaping the nerd I am today hahaha but yeah damn 5 years in Blue-Zoo, that's a lot! I've been there the last month before this lockdown mess started and it was lovely, seemed like a really chill, familiar but professional work environment and I really like the content you guys make. Also, I don't know if you're friends with them but I have talked with Lisa-Mae Evans before since she is a graduate from my uni and Egizia Marchetti? Both awesome people, just made me want to go there even more ahahah",
+        "ts": "1585351108.002300",
+        "username": "Gabriel Monteiro (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1034770697367_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh well, you're my first mentor as well so we're even!",
+        "ts": "1585351140.002400",
+        "username": "Gabriel Monteiro (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1032254528708_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah I'm a 3D modeler, mostly into characters but only because that's what I most enjoy doing so far. I've always liked stylized and I'd love to learn more of the full pipeline of character creation since so far whenever I get into the texturing part I have ran over so many problems that I have a real hard time figuring out how to even go about things. I'm a really curious person so I try to find as much info on the subject as possible but on the internet everyone seems to have different opinions on how to solve problems and stacking different solutions usually leads to a lot of confusion on the later stages. I have assembled a small reeeeally quick WIP reel of my latest projects so far if you want to give it a look <https:\/\/vimeo.com\/400163189>",
+        "ts": "1585351654.002500",
+        "username": "Gabriel Monteiro (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1032703827381_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Monteiro Gabriel - WIP 2020 Reel",
+                "title_link": "https:\/\/vimeo.com\/400163189",
+                "author_name": "Gabriel",
+                "author_link": "https:\/\/vimeo.com\/user96608189",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/868463612_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Monteiro Gabriel - WIP 2020 Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/400163189?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Monteiro Gabriel - WIP 2020 Reel\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/400163189",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/400163189"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585351655.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "my biggest issue right now has been Substance and maps...what would be a good workflow to export maps from the high res sculpt, then texture the model and then combine them for render in Arnold? Do you know any other better renderer I could use? Sorry for the sudden bombing of messages and questions hahahah just trying to make the most out of this opportunity",
+        "ts": "1585352022.002700",
+        "username": "Gabriel Monteiro (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1032710631973_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

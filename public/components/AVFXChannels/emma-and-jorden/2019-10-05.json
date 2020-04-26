@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you an awesome I'll send it to you tomorrow",
+        "ts": "1570320570.002800",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-05\/773726962371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

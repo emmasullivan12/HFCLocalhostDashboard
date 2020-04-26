@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Maida! How have you been? Did you get any more clear about universities etc? :relaxed:",
+        "ts": "1548250337.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-23\/530202894352_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

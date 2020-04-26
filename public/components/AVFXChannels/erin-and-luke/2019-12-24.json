@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not worried about the time part. I'm a vfx supervisor so I can help you with all of the above but not with the technical breakdowns of the hip files. I'm a Houdini user but not an advanced one. I asked the organizers about an fx artist to help you as well.  Let me check in the mentors channel also.",
+        "ts": "1577182701.000300",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-24\/872408526210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From the documents you sent me it appears that mentors have to be physically present for 3 reviews during the course of your project,  that's what I was asking about.",
+        "ts": "1577182764.000400",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-24\/887051806583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mr. Nash,\n\nYes, you are correct that the three primary reviews require physical participation from the committee members as well as the degree candidate; however, if you chose to remain a mentor and not join the committee board, then this is unnecessary.\n\nI also wanted to send my thanks for your help in locating another individual who might be willing to help my project further.\n\nSincerely,\nLuke Vuilliomenet",
+        "ts": "1577213339.000500",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-24\/887733637574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,200 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Dharita,",
+        "ts": "1511519137.000449",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277226052149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy Friday!",
+        "ts": "1511519142.000215",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277128048100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great about the CV",
+        "ts": "1511519200.000062",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277128394276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Send it back to me when you're done and I'll take a look",
+        "ts": "1511519211.000326",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/276426885856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It would be great to book your work experience into the diary asap and you'll need the CV and covering letter to do this",
+        "ts": "1511519242.000341",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277009980515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Again, I can check over it all before you submit but the sooner the better",
+        "ts": "1511519259.000429",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277010058403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad you'refinding this helpfuk",
+        "ts": "1511519265.000185",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277226796069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*helpful",
+        "ts": "1511519270.000332",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277128797188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is yesterday...",
+        "ts": "1511519276.000276",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277957928102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thurs 23rd Nov:\n\n*Today I worked:* from 9:30AM to 6:30PM (I normally have to work a little later but this has been a good week!)",
+        "ts": "1511519278.000278",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277010139987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*Today tasks \/ activities I worked on: Planning the management company facilities on the project. I sent the client 3 sketches and asked them to clarify their priorities so that we can finalise the plans.",
+        "ts": "1511519288.000063",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/278160064295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*Today my colleague told me: My team leader and I discussed how tight the programme is on this project, we have to b very organised and look ahead to ensure we meet our deadlines.",
+        "ts": "1511519295.000220",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277128961076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*Today I'm learning \/ reading: The Architect's Journal - we get daily newsletters which helps us keep up with what's going on in the industry.",
+        "ts": "1511519301.000230",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277958124134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*Today I'm feeling (stress levels): I feel like today is the calm before the storm, my role in the masterplan and public realm team on this project involves coordinating all the building designs and we have asked everyone to send us their latest models by the end of the day so tomorrow we will find out how much work there is to do in coordinating!",
+        "ts": "1511519307.000068",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277227069077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry - just realised I forgot to send you Wednesday! And now I've deleted it!",
+        "ts": "1511519513.000016",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277084535794_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had a commercial meeting in the morning to discuss keeping the project on budget",
+        "ts": "1511519537.000007",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277084737522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I then began working on the layouts for the management company offices",
+        "ts": "1511519610.000388",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277085182066_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I managed to get out of work at 6 and go to my zumba class - I do 1 hour of cardio and 30 mins of floor and stretching. I really try hard to work out as often as possible as it makes me feel much better physically and mentally!",
+        "ts": "1511519874.000251",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277132548916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,153 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you're interested in this program I can help you with the portfolio",
+        "ts": "1562574034.004200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/675861905346_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But waiting for half a year might not be what you want?",
+        "ts": "1562574060.004300",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/687276135216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I talked to a some people about getting work experience",
+        "ts": "1562574096.004400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/687288662021_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I got a list of links for you :slightly_smiling_face: I hope they can help you",
+        "ts": "1562574116.004500",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/675863080802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/work-experience-and-internships\/internships>",
+        "ts": "1562574119.004600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/675863125826_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Internships | Prospects.ac.uk",
+                "title_link": "https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/work-experience-and-internships\/internships",
+                "text": "Find out everything you need to know about internships including why you should do one, how long they last, if you'll be paid and how to apply.",
+                "fallback": "Internships | Prospects.ac.uk",
+                "from_url": "https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/work-experience-and-internships\/internships",
+                "service_icon": "https:\/\/www.prospects.ac.uk\/resources\/dist\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "Prospects",
+                "id": 1,
+                "original_url": "https:\/\/www.prospects.ac.uk\/jobs-and-work-experience\/work-experience-and-internships\/internships"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.e4s.co.uk\/docs\/internships.htm>",
+        "ts": "1562574126.004800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/680928096209_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "UK Student Summer Internships | Guide to UK Summer Internship Application Deadlines in London and UK",
+                "title_link": "https:\/\/www.e4s.co.uk\/docs\/internships.htm",
+                "text": "Guide to UK summer internships and internship application deadlines for UK and London undergraduate internship programmes. Application deadline dates for actuarial internships, investment banking internships &amp; industrial internship placements in London &amp; UK",
+                "fallback": "UK Student Summer Internships | Guide to UK Summer Internship Application Deadlines in London and UK",
+                "from_url": "https:\/\/www.e4s.co.uk\/docs\/internships.htm",
+                "service_icon": "https:\/\/www.e4s.co.uk\/favicon.ico",
+                "service_name": "e4s.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.e4s.co.uk\/docs\/internships.htm"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.indeed.co.uk\/London-Summer-Internship-jobs>",
+        "ts": "1562574130.005000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/680928155425_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "London Summer Internship Jobs - July 2019 | Indeed.co.uk",
+                "title_link": "https:\/\/www.indeed.co.uk\/London-Summer-Internship-jobs",
+                "text": "Apply to London Summer Internship jobs now hiring on <http:\/\/Indeed.co.uk|Indeed.co.uk>, the world's largest job site.",
+                "fallback": "London Summer Internship Jobs - July 2019 | Indeed.co.uk",
+                "from_url": "https:\/\/www.indeed.co.uk\/London-Summer-Internship-jobs",
+                "service_icon": "https:\/\/www.indeed.co.uk\/images\/favicon.ico",
+                "service_name": "indeed.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.indeed.co.uk\/London-Summer-Internship-jobs"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.summerinternships.com\/london>",
+        "ts": "1562574135.005200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/689422804534_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "London Internships | Dream Careers",
+                "title_link": "https:\/\/www.summerinternships.com\/london",
+                "text": "Custom London internships, group housing, and weekend trips with Dream Careers. Apply today to guarantee a top London internship.",
+                "fallback": "London Internships | Dream Careers",
+                "from_url": "https:\/\/www.summerinternships.com\/london",
+                "service_icon": "https:\/\/uod-hurleytechnologi.netdna-ssl.com\/files\/images\/icons\/favicon.ico",
+                "service_name": "summerinternships.com",
+                "id": 1,
+                "original_url": "https:\/\/www.summerinternships.com\/london"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.glassdoor.co.uk\/Job\/city-of-london-summer-internship-jobs-SRCH_IL.0,14_IC3317926_KO15,32.htm>",
+        "ts": "1562574140.005400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/680928320785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

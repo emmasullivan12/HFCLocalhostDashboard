@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good idea, haha would be super fun to see it as a safari hat. Wondering whether you could maybe then have the extension arm holding some binoculars, ready for an actual safari! Nice to give yourself a challenge with a second asset. Are you thinking it'll be stylized or more photoreal. Oh that's exciting! Is your new brief a group project?",
+        "ts": "1575469379.008400",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/848081431187_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it has to be photoreal! And wow yeah binoculars is a great idea!! \nOur new brief is called Memory Palace and it’s about creating something abstract that tells a story of how we think about certain things. We can work in groups but we don’t have to. My two options are either being Zen or overthinking as I think coming up with concepts for these could be pretty cool!",
+        "ts": "1575507664.008500",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/860537751253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

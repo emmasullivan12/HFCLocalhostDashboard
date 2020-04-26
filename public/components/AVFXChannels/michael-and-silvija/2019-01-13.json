@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija!! I’m great thanks, hope your assignments went well! Awesome stuff! If you want we can go through it on next call! It’s up to you really, you have the bow still right,",
+        "ts": "1547390707.004000",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-13\/522427812276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wouldn’t start uving jasper till the model is final and you’re happy with him ",
+        "ts": "1547390737.004100",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-13\/521858003376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But we can arrange a call for next week sometime :) ",
+        "ts": "1547390749.004200",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-13\/522427975092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

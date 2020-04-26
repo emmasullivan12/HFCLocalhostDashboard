@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob, Sorry to hear about bf - hope he makes a quick recovery.",
+        "ts": "1586259862.002500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1049146895798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of house sale things were at exchange stage before Lockdown happened. There was a bidding war so the buyers are super keen. Just a matter of getting out of Lockdown to hopefully continue the sale as before. Lived here for 9 years &amp; wish I could buy my ex out buts that's not possible - but for the moment good to be comfortably at 'home' for the duration at this time!  I could easily have been locked down in Montreal as part of my big plan to run away for a change of scenery!",
+        "ts": "1586259915.002600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1043717392850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Finally cracked projections. Hopefully have some stuff for you to give me a few pointers on this Friday!",
+        "ts": "1586260007.002700",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045589655671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a newbie question about projections - is it really bad practice to try to make a clean plate from several different frames? By jigsawing\/fudging with transform \/skews and rescales. I'm being mean and don't want to pay for a Photoshop sub - lol!",
+        "ts": "1586260884.002800",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1049160048822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nothing wrong with making a cleanplate from different frames, just as long as it works and looks correct. I've had to make clean frames by using footage from other shots too, no one really cares that much how you do something at the end of the day, as long as it gets done and looks correct.",
+        "ts": "1586265503.002900",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1061613760064_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "they must have been very keen is there was a bidding war for your place, but your definitely in the right place considering what is going on in the world right now",
+        "ts": "1586265546.003000",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045054164035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

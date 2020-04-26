@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chris sorry it's been a while I'm currently in the airport waiting for my flight. I don't get back until the 19th of September which I think is a Thursday so I probably won't be back to normal until the week after. I'll keep you updated though :blush:",
+        "ts": "1567583648.000600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-04\/748044390112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, I'll check in with you around about's then. Safe travels :slightly_smiling_face:",
+        "ts": "1567584562.000700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-04\/736612270627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We've got a set of massive deadlines coming up, so I haven't really been doing many personal projects at present. I'm weaving in the beginning of a longer-term project into the environment (here's a link, if you're interested - worth noting that it's still mainly blockout, so the foliage is from the marketplace, and the 'dinosaur' is an early sculpt) <https:\/\/cdn.discordapp.com\/attachments\/686365371023753272\/696459106575319131\/2200-3000.mp4>\nI'd like to try and take it to being a more fleshed out project - I've been talking with someone who's a character artist\/sculptor to join in and provide some stuff to flesh out the bits I'm not as good at, so we'll possibly be making it into a bigger project over the summer.",
+        "ts": "1586180409.000600",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1041723760483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But it'll be a while before we'll have time to start; we've got a lot of deadlines between now and the beginning of May",
+        "ts": "1586181046.000700",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1046841261857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah I understand, looks interesting the video you sent me the link too. And your going to get a sculpting artist onboard? Do they work in a company or are they a student? And you are on discord? What groups are you with? Terms of deadline i can imagine its not easy, I just managed to finnish one collaboration project with a group and im on another for another group. But also trying to finish my personal project. Issues with education is your getting quantity and not quality, but that just personal experience. At least with personal projects or collab work you get more time. Which is nicer and i always recommend. Thats why I do personal projects or collab with other artists. You seem to have a busy term, despite the covid 19 thats good. Its effecting a lot at the moment, how you hanging on with it terms of lockdown? Are you based in london.",
+        "ts": "1586198776.000800",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1052058043348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Camilla, so sorry for the late reply. I returned from my geography field trip on Saturday and have been terribly ill since.",
+        "ts": "1537953141.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-26\/444630839030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":blush: A little bit about myself:\nI'm 17 and I'm currently a year 13 A-Level student\nThe subjects I study are English Literature, Geography, Philosophy and Art\nI aspire to become an Architect (if not that, perhaps something in the creative field)\nI enjoy spending my time drawing, reading and writing\nI love photography so I enjoy being outdoors and taking pictures of beautiful lanscapes",
+        "ts": "1537953372.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-26\/443277257106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

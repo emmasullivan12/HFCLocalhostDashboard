@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My app wasn’t giving me notifications sorry for the late response. I use Maya for my stuff. I’d like to work in either games or film but I’ve only ever done film style animation so this summer i’m considering trying about games style to see which I prefer",
+        "ts": "1586602119.002600",
+        "username": "Imogen Walters (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1063385700916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

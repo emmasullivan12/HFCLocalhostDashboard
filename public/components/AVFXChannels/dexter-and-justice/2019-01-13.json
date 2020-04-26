@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, sorry for the absence. Things have been a little crazy with school. I applied for economics at Keele, Kent, Coventry, Oxford Brookes and Huddersfield. Good news I’ve already received a conditional offer from Huddersfield so I’m pretty happy. I do hope to get into Coventry",
+        "ts": "1547400356.000100",
+        "username": "Justice (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-13\/522828006773_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

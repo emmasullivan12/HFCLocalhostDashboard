@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Bernice, how old are you?",
+        "ts": "1568372727.002600",
+        "username": "Simon Devereux (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/747784973763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sure we can get you involved in some way.",
+        "ts": "1568372742.002700",
+        "username": "Simon Devereux (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/759253708896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

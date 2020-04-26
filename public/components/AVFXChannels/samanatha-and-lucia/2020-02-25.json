@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! I did use Mari before, but so far what they taught us in uni about it is just the basics so I wanted to learn more",
+        "ts": "1582628786.003600",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/969655955367_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll share my work with you soon !",
+        "ts": "1582628792.003700",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/967340345300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is the course taught at your uni and what programs do you know? :slightly_smiling_face: Where I went (Los Angeles Film School) we had one class for a full month, so I would learn modeling for a month, then texturing was the next month, then rigging for another month, etc. It was nice to be able to see what skillset fit me, but I felt like they just taught me the basics and didn't really get into anything the industry was doing at the time. Like we were only taught to texture in Photoshop, which was a shock when I started working and found that no one textured in Photoshop anymore lol Although I felt like I could have looked up things on Youtube instead of going to college, I managed to make great connections with friends who often got me jobs after college ended.",
+        "ts": "1582673408.003800",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/971277124598_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

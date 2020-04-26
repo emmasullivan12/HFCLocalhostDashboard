@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "okay let me know when you do the test :smiley: Let's maybe explore a bit further what your skills are.. (everyone has skills even if you feel like you don't) Is there something (maybe an activity of whatever subject could be anything) you enjoy doing in you free time, or something you feel drawn to?",
+        "ts": "1538482542.000100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447268288451_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did the test and it said i was a advocate ",
+        "ts": "1538496536.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447480549331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I checked the career paths as well and it said advocates enjoy counselling, psychologist, life coach",
+        "ts": "1538496642.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/448941166518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I enjoy reading books, watching supernatural tv shows, watching crime shows, i also like gaming. Im not sure about what skills ive gained from my hobbies, there very ordinary which is why im struggling with writing it in my personal statement ",
+        "ts": "1538496821.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447766568437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a cv and i was reading through it the other day to give me a idea, its been months since ive last read it so i had forgotten what i wrote. However it actually did help me and give me a small idea on what i should include in my personal statement.\nI know that personal statements are very important when applying to university, however im not sure what i could add in it to be unique or stand out. Did you have trouble writing your personal statement? Or is it just me:laughing:",
+        "ts": "1538497048.000100",
+        "username": "Manvir (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/446987006497_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

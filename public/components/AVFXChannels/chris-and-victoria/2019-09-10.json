@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I’m just away on holiday this week, so haven’t even checking the app as much.\n \nI did some work on my showreel before I left but there is still some to finish like putting the green keyed shot onto its back plate and fix some colour issues on the edges now what the despill is mostly done. I wanted to show some more recent work on it but thinking back there is one part that can be replaced with work experience cause it doesn’t look amazingly impressive haha. They tried to train us while also make us do an industry standard project on the last 8 week course I did. While half the people on the course hasn’t done any VFX related stuff before. What a mess that was but I’m still glad I got a lot of comp training regardless. ",
+        "ts": "1568116234.002500",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/757092365270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/284040541>",
+        "ts": "1568116294.002600",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/756743853527_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Junior 2D Artist Showreel 2019",
+                "title_link": "https:\/\/vimeo.com\/284040541",
+                "author_name": "Victoria Hanke",
+                "author_link": "https:\/\/vimeo.com\/user7620272",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/804833155_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Includes work from my time at Bournemouth University, Work experience at Mighty Visage Studios, and an 8 week training course with NextGen Futures.\n\nContact at : ",
+                "fallback": "Vimeo Video: Junior 2D Artist Showreel 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/284040541?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Junior 2D Artist Showreel 2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/284040541",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/284040541"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess my main issue has always been what to include. I have comp from uni, lighting and comp from work experience, roto prep and keying from the course. I’m not sure if it needs more focus or not. ",
+        "ts": "1568116359.002800",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/742106132386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

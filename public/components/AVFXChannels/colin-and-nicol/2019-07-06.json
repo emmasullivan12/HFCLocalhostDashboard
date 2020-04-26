@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How’s it going? Do you have all your work completed for your course?",
+        "ts": "1562408677.000100",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-06\/675060085314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi still working, since my course doesn’t finish until September. Otherwise everything is on track, for now. :smile:",
+        "ts": "1562414882.000200",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-06\/688641429302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

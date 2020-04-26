@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's a lot of stuff! But at least it sounds like you're smashing through it, and whatever you can use and talk about it always great for interviews and showreels.",
+        "ts": "1582543101.000700",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/965886406389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm still on fur, almost finished that though. Set up some simulations for those, and passed the set up onto someone else. I'm now working on some dust\/pyro stuff, instancing in Arnold, but i'm on holiday for 2 and a bit weeks, so shall see the state of everything when I bet back",
+        "ts": "1582543168.000800",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/967730664695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

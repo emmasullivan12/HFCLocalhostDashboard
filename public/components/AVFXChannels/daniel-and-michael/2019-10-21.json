@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sure if you did this again from scratch now you would be able to get a better result in less time, that's part of the learning process. As far as the comp match sure you match the black levels and white levels and use a subtle light wrap and edge blur (which also blurs the rgb to help it sit. Don't go crazy as you don't want the edges to look blurred, observe what happens in real plate photograph and match that. You can cheat and use a crop so the top of the rope isn't ever in frame.",
+        "ts": "1571653411.001600",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-21\/802707639600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

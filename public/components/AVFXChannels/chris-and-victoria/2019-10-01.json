@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Chris. I hope you’re doing well, it’s been a while. I’ve started applying for places, so far Framestore has contacted me with a possible temp runner position which is always a start. You mentioned before the ILM scheme you’re currently on you managed to work at various companies for various amounts of time. Do you have any tips on how to get noticed or advice about how you managed to apply? ",
+        "ts": "1569928583.001500",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779385422245_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey!\n\nHere's how I got each of my jobs in industry so far but I've been fairly unconventional.\n\nOne of Us: Met recruiter at FMX and asked for literally any job if it meant I could work on shows\nBlue Zoo: Contacted Uni asking for 2 students for a week\nDNEG: Greenlight application scheme\nThe Third Floor: Contacted recruiter after seeing LinkedIn post\nILM: Grad Scheme\n\nI'd say once you apply online for a position, message the recruiter directly if you can.",
+        "ts": "1569936063.001600",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779533918400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also if a Supervisor\/Head of Department knows you\/your work directly, then they can literally just tell recruitment \"Hire this person\" and they bypass the recruiter",
+        "ts": "1569936131.001700",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/766752715954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Application &gt; Recruiter &gt; Supe &gt; Head of Department\\",
+        "ts": "1569936166.001800",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/766753579218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So the further down that chain you can jump the better, just make sure not to annoy a supe\/HOD or it can work against you",
+        "ts": "1569936191.001900",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779533184453_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much. It had been difficult with recruiters for me since they get so many applications and messages daily but I’ll definitely keep this in mind. Gotta step up my networking game. ",
+        "ts": "1569939238.002000",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/766836506226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Speaking of which, I'm now running comp feedback sessions as part of 'Bring Your Own Animation'",
+        "ts": "1569941861.002100",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779692131888_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "happens once a month in a pub for informal meet ups and work crit so feel free to come along!",
+        "ts": "1569941891.002200",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/768203729411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could be a chance for you to meet the industry",
+        "ts": "1569941903.002300",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779222480788_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah I’ve heard of bring your own animation before, they prob have a FB page I can follow for updates thanks for reminding me! Hope to see you there one day :D",
+        "ts": "1569941973.002400",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/781895617670_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah exactly, join\/follow the page and I'll see you there!",
+        "ts": "1569942359.002500",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-01\/779237119812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

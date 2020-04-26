@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds great! And photoshop is still the tool people use. I sit by some digital matte painters at work, and they just use photoshop. Occasionally they may use a niche software to make things like mountains and clouds. Haha and no problem, I didn't get a notif anyway xD ",
+        "ts": "1542358475.004300",
+        "username": "Ellie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/481264153363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh that’s fair XD  I didn’t get the notif either :sweat_smile: and okay that’s good to know, have you ever had people animating in Photoshop before? Like I mentioned to one of my lecturers that I was gonna do that yesterday and he looked at me like I was weird for doing it :sweat_smile:",
+        "ts": "1542372864.004400",
+        "username": "Poppy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/480924065585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "animdresses2 is a plugin I used once! I made a little teddy bear animation using it once :3",
+        "ts": "1542385856.004500",
+        "username": "Ellie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/481131194113_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(I should really readback my sentences before I hit send lol)",
+        "ts": "1542385874.004600",
+        "username": "Ellie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/481935568645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's totally not weird. I'm sure people make animations with much worse things than a photoshop plugin haha",
+        "ts": "1542385934.004700",
+        "username": "Ellie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/481736681330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah that’s so cool! &amp; yeah haha true, I mean anything is good right? X3 and yeah is there any you’d recommend not using though??",
+        "ts": "1542393964.004800",
+        "username": "Poppy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/482073160773_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hm, I guess I'm not experienced enough with 2d animation software to comment on what not to use.. :S I could comment on 3d software, but not sure how useful that is to you! ",
+        "ts": "1542410654.004900",
+        "username": "Ellie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/481360238512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy,\nBig apologies for not replying earlier but apparently I had the notifications off and thought you didn’t get a chance to read my message yet.\nThe article you forwarded me was amazing! So many great tips on how to successfully manage creative people and projects. I have created a document that I’m taking notes for my big journey, so all this is super useful :blush: I have one question about the article on becoming a data analyst. I didn’t quite understand that, could you please give me an example of what kind of data you would have to analyze?\nI know Warhammer 40k, it was a very cool movie for 2010. Your early experience is very interesting and I guess volunteering is a good path to build some contacts and experience. Thank you for sharing that!\nI also checked out your LinkedIn (not stalking :P) and noticed that you were working on short-term projects like ‘’Tales of Friendship’’ or ‘’Grandpa in my pocket’’ as a Production Co-ordinator. Does that mean that you were not full-time employed and you were called whenever there was a project?\nI watched the trailer of the ‘’Ethel and Ernest’’ project that you did at Cloth Cat Animation and it looks so beautiful! 2D animation is very powerful if it’s done right.\nThe Bait showreel was awesome as well, especially the second scene with the boat :blush:\nThis is my first time having a mentor so I don’t really know how you would like to move forward. I don’t want to take much of your time or message you at random moments so can I suggest for us to have a 45min chat (maybe voice call would be better and faster) once per month? I will have already prepped myself with what subject we could touch and any questions surrounding it. I can be emailing you that information as well so you know what to expect\n\nPlease let me know what you think or if you have a different idea :blush:",
+        "ts": "1586448343.002800",
+        "username": "Emmanouil Zervoudakis (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1071662398800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I tried to press enter to leave some gaps between the paragraphs but It sent it instead",
+        "ts": "1586448916.002900",
+        "username": "Emmanouil Zervoudakis (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051841949958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

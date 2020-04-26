@@ -1,0 +1,283 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nicol",
+        "ts": "1551263128.000100",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562154585458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How you doing?",
+        "ts": "1551263131.000200",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562032346675_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm feeling that our mentoring contact is starting to fall by the wayside a little",
+        "ts": "1551263158.000300",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562154938994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anything you're struggling with or think I might be able to help with?",
+        "ts": "1551263176.000400",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/563223874487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya Colin \nya sorry about that, everything has been up in the air the last few weeks. But I am doing better now.\nI was going to ask you if I can send some of my work, just to get feedback. \n\nI also got a question. I was wondering what is your process with creating story and do you use storyboards with your own project?",
+        "ts": "1551263638.000500",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562161203410_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By all means send me some work and I will try to be as helpful as possible.",
+        "ts": "1551291878.000600",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562980249685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is a long time since I wrote an original story",
+        "ts": "1551292564.000700",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562093339137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To say I had a process back then would be misleading too!",
+        "ts": "1551292578.000800",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562993578661_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However, at the moment I am working on an adaptation of a novel and there is the beginnings of a process emerging for that.",
+        "ts": "1551292702.000900",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/564103185462_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have found a structure that I like and now I'm editing the bits of the book that I want into that structure",
+        "ts": "1551292736.001000",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-17\/505840768691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have also decided on a genre, it is essentially a love story between a hostage and one of her captors, a phenomenon known as Stockholm Syndrome so named after a bank heist in the city",
+        "ts": "1551292828.001100",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562098279153_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is really the first part of the process: abstracting the story from its current format to find the value in the ingredients to then reassemble them to tell the story that I want to tell.",
+        "ts": "1551292923.001200",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/564107252998_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope that makes some sense.",
+        "ts": "1551292931.001300",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/561926838352_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yep that makes sense. ",
+        "ts": "1551293075.001400",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562634034404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you familiar with the Pixar story-telling formula?",
+        "ts": "1551295552.001500",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562150111585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's very good, even if it's a gross simplification of things",
+        "ts": "1551295588.001600",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/564158106054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This isn't what I was thinking of, but it looks like some good advice and it pertains to animation",
+        "ts": "1551295703.001700",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562152923377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/io9.gizmodo.com\/the-22-rules-of-storytelling-according-to-pixar-5916970>",
+        "ts": "1551295705.001800",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562684192404_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "io9",
+                "title": "The 22 rules of storytelling, according to Pixar",
+                "title_link": "https:\/\/io9.gizmodo.com\/the-22-rules-of-storytelling-according-to-pixar-5916970",
+                "text": "On Twitter, Pixar storyboard artist Emma Coats has compiled nuggets of narrative wisdom she’s received working for the animation studio over the years. It’s some sage stuff, although there’s nothing here about defending yourself from your childhood toys when they inevitably come to life with murder in their hearts. A truly glaring omission.[jump]",
+                "fallback": "io9: The 22 rules of storytelling, according to Pixar",
+                "image_url": "https:\/\/i.kinja-img.com\/gawker-media\/image\/upload\/s--_Pjij3uw--\/c_fill,fl_progressive,g_center,h_900,q_80,w_1600\/k1wngr46tjctwnu6owaw.jpg",
+                "from_url": "https:\/\/io9.gizmodo.com\/the-22-rules-of-storytelling-according-to-pixar-5916970",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 183709,
+                "service_icon": "https:\/\/i.kinja-img.com\/gawker-media\/image\/upload\/s--9VB8M2sJ--\/c_fill,f_auto,fl_progressive,g_center,h_200,q_80,w_200\/eh1hvjxamru5z6aobgwc.png",
+                "id": 1,
+                "original_url": "https:\/\/io9.gizmodo.com\/the-22-rules-of-storytelling-according-to-pixar-5916970"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have heard of the Pixar formula but not it great detail. Ta for the link ",
+        "ts": "1551296025.002000",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/561985905520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This one is quite useful I think",
+        "ts": "1551301310.002100",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562081562784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way, if you find interesting stuff, books, links, videos, films etc, I'd love to know about them.",
+        "ts": "1551301347.002200",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562255613665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that people often overlook the fact that mentoring is very often a two-way street. I will can doubt learn at least as much from you as the other way round.",
+        "ts": "1551301412.002300",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562083468224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*I will no doubt learn at least as much from you as the other way round.",
+        "ts": "1551301453.002400",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562832826930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Experience and\/or expertise are overrated!!! Make sure you keep your levels of skepticism high!",
+        "ts": "1551301502.002500",
+        "username": "Colin Kennedy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562789670036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

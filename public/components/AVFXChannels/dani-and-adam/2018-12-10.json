@@ -1,0 +1,120 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Adam! Thanks so much for sending me your WIP - it's such a strong start! I've been searching high and low for a way to record myself and draw over it while still being able to scrub through it! I wanted to give you some proper feedback! ^-^",
+        "ts": "1544433255.007400",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-10\/498882790912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do your tutors use, do you know?",
+        "ts": "1544433263.007500",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-10\/501021570390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At the moment, there is no upwards\/downwards motion on the hips. I can see his pelvis moves forward in a too-straight line. There is so much up and down in a walk. We push UP off our back foot (when that back foot leaves the ground) and then sink back down when that foot contacts the floor again, or just after if you want to add some lovely overlap!",
+        "ts": "1544445757.007600",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-10\/499971251797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, our hips rock\/tilt back and forth following our legs. I use this gif in teaching sometimes, to show how I figure out the main movements in a block, before refining the inbetweens :slightly_smiling_face: Great that it's the same character!!",
+        "ts": "1544445856.007700",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-10\/499670145395_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FEP4ZQM5X",
+                "created": 1544445869,
+                "timestamp": 1544445869,
+                "name": "Block_Spline_Refine.gif",
+                "title": "Block Spline Refine",
+                "mimetype": "image\/gif",
+                "filetype": "gif",
+                "pretty_type": "GIF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1693790,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEP4ZQM5X\/block_spline_refine.gif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FEP4ZQM5X\/download\/block_spline_refine.gif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "thumb_360_gif": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_360.gif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_gif": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_480.gif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "deanimate_gif": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FEP4ZQM5X-3ec1f96209\/block_spline_refine_deanimate_gif.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FEP4ZQM5X\/block_spline_refine.gif",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FEP4ZQM5X-95f77e5cb7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1544445884.007800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "there is plenty that i would still want to change about this walk, but it's a good example of my workflow :slightly_smiling_face:",
+        "ts": "1544446050.008100",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-10\/499037753008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man, hows things on your end going ? Still quite busy for the foreseeable future or is the white at the end if the tunnel in sight ?",
+        "ts": "1570806455.000100",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-11\/779662924514_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

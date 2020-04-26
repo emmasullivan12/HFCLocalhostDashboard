@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija, hope you’re weeks going well! Thinking we should have another call this week, maybe on Friday? I’m free all day! Maybe we could catchup from where we left off last time ",
+        "ts": "1545134439.001600",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-18\/506111993809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good evening, I am very sorry, to answer back so late again! \nI should be the one texting you first, I am so sorry!!! (Last time, I promise!)\nI am keep on trying to check, if there are no messages from you, but not getting any notifications, that is why in the end, I answer quite late :s \n\nThank You, I am great! \nI am working on little Jaspy, on Friday, I would be able to send you his brand new model, haha, if you would like me to.\n\nI am working on Friday, I am afraid, but, if you would like to, we could have a call during my lunch break, for 30 mins, or after 6.30pm or both times\n\nHow are you? How was your weekend?",
+        "ts": "1545178642.001700",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-18\/507309599891_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

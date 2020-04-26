@@ -1,0 +1,16 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1494763740.124265",
+        "user": "U5D9PGUHJ",
+        "text": "<@U5D9PGUHJ> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_archive",
+        "ts": "1494768688.392243",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> archived the channel"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lucy! What are your strengths and weaknesses at work? ",
+        "ts": "1510003374.000462",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/268020227413_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My strengths are organisation and a positive attitude. Within teaching there can be some stressful moments.. but i am a strong believe r of positive mental attitude.. it has got me through some tough times!!",
+        "ts": "1510003919.000431",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/268025722453_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I need to improve my positive mental attitude, there are soooo many moments I give up doing something because I end up with a negative mindset ",
+        "ts": "1510009932.000376",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/267421111793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

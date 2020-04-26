@@ -1,0 +1,129 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow, you've been really creative from a young age!",
+        "ts": "1537203551.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/438539779606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, Japanese is a bit of a challenge:sweat_smile: but I enjoy it.",
+        "ts": "1537203588.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/437357277189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm doing fine art as a GCSE so I have to research lots of artist and write a lot:face_with_rolling_eyes: ",
+        "ts": "1537203682.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/438237645127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I enjoy it either way:grin: ",
+        "ts": "1537203698.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/438237926599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know that the American system is a bit different from the English one but do I need a uni degree to be able to get a job in animation?",
+        "ts": "1537203864.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/436993792484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have to start looking for sixth forms\/colleges :persevere: ",
+        "ts": "1537203918.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/436610016017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. No you don’t need a degree to get an animation job.  But, a degree gives you a perfect way to develop your art, skills and creative thought. ",
+        "ts": "1537208911.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/437431381925_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll elaborate more soon. Just on a train now lol",
+        "ts": "1537208925.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/437152652723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/escapestudiosanimation.blogspot.com\/2018\/09\/what-kind-of-laptop-should-you-buy.html?m=1>",
+        "ts": "1537208928.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/438310354631_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "What Kind of Laptop Should You Buy?",
+                "title_link": "https:\/\/escapestudiosanimation.blogspot.com\/2018\/09\/what-kind-of-laptop-should-you-buy.html?m=1",
+                "text": "\"What kind of laptop should I buy?\" is a question that gets asked at the beginning of every new academic year. It's a tricky question t...",
+                "fallback": "What Kind of Laptop Should You Buy?",
+                "image_url": "https:\/\/3.bp.blogspot.com\/-zq7DuVLURhA\/W5vG3ttqGsI\/AAAAAAAADOs\/qtPQmDkXg686_6j6FKl4cppwuj6Y2sqLACLcBGAs\/w1200-h630-p-k-no-nu\/lapTop.jpg",
+                "from_url": "https:\/\/escapestudiosanimation.blogspot.com\/2018\/09\/what-kind-of-laptop-should-you-buy.html?m=1",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 168556,
+                "service_icon": "https:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosanimation.blogspot.com\/2018\/09\/what-kind-of-laptop-should-you-buy.html?m=1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good blog from my colleague :blush:",
+        "ts": "1537208940.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-17\/438614803894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow! thats so exciting!! so how did you get into the industry? do you have any advice for people that are coming out of uni and are looking for a job, these days its very competitive and a bit intimidating. Oh yeah! I have been a little interested in creature and did a little dog animation but its not polished, but what type of creatures are in the new netflix shows you are working on, are they fantasy or normal animals? can you also tell me more about the animation department in DNeg :slightly_smiling_face:",
+        "ts": "1543400758.001900",
+        "username": "Leanne cheuk (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/490166315653_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

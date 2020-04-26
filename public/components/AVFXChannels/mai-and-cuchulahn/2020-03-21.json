@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "awesome! thanks for the very detailed feedback, ill get on it!",
+        "ts": "1584815803.000100",
+        "username": "Cuchulahn O'Byrne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1017016040624_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how are things tho? i imagine things are quite scary amongst this corona virus stuff",
+        "ts": "1584815822.000200",
+        "username": "Cuchulahn O'Byrne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1004231713426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

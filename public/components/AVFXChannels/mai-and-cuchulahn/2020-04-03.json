@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Golly",
+        "ts": "1585933209.000800",
+        "username": "Cuchulahn O'Byrne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046213165765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel like I may have missed my window on that one :confused:",
+        "ts": "1585933236.000900",
+        "username": "Cuchulahn O'Byrne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046603689142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

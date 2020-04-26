@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Josh, is this the rig you're using? <https:\/\/gumroad.com\/truongcgartist?query=dog&amp;sort=page_layout#PCBc>",
+        "ts": "1585550727.000400",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034080693444_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Gumroad",
+                "title": "Truong CG Artist",
+                "title_link": "https:\/\/gumroad.com\/truongcgartist?query=dog&sort=page_layout#PCBc",
+                "text": "Sign up your email here to receive emails for future products from Truong",
+                "fallback": "Gumroad: Truong CG Artist",
+                "image_url": "https:\/\/static-2.gumroad.com\/res\/gumroad\/files\/1196093170968\/0dec6d3d62ae418ba229a03577be5bf2\/original\/logo_1_white.png",
+                "from_url": "https:\/\/gumroad.com\/truongcgartist?query=dog&sort=page_layout#PCBc",
+                "image_width": 251,
+                "image_height": 250,
+                "image_bytes": 27908,
+                "service_icon": "https:\/\/gumroad.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/gumroad.com\/truongcgartist?query=dog&amp;sort=page_layout#PCBc"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585550728.000000"
+        }
+    }
+]

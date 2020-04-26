@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok will do. It's been nice getting to know you so thank you for your help I really appreciate it!:grinning:",
+        "ts": "1511865944.000020",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-28\/279290734646_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

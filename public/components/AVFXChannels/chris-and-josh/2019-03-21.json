@@ -1,0 +1,67 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The industry tends to use Linux so thats definitely worth learning.",
+        "ts": "1553195994.003700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584359659298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "a nice breakdown <https:\/\/www.youtube.com\/watch?v=n0sREJJmPyU>",
+        "ts": "1553196281.003800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584252103811_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Captain Marvel Directors Breakdown a Nick Fury Fight Scene | Fandango All Access",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=n0sREJJmPyU",
+                "author_name": "Fandango All Access",
+                "author_link": "https:\/\/www.youtube.com\/user\/FandangoMovies",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/n0sREJJmPyU\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Captain Marvel Directors Breakdown a Nick Fury Fight Scene | Fandango All Access",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/n0sREJJmPyU?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=n0sREJJmPyU",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=n0sREJJmPyU"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Linux? As in the operating system? ",
+        "ts": "1553196770.004000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584339473972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The breakdown was cool :blush:",
+        "ts": "1553196777.004100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584339573460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

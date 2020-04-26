@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Halo\nI am in UK, i am ded. Will reply later as a normal person but for now it's just big thank you!",
+        "ts": "1580590725.011900",
+        "username": "Malika (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/934435699943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

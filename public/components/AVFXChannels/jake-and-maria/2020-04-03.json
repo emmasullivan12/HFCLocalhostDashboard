@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hellow is comming along, my problem is with the renders, but as soon as I be back in the university Ill be getting some renders for my showreel ",
+        "ts": "1585959005.000100",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1048435396452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emanuele. Did you get a new phone? \nHow are you classes going? Which Core module are you taking now? ",
+        "ts": "1553715999.002300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590828757077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

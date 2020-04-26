@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In general, soft skills are quite important. Being able to work with others, accept different opinions, view things from different angles and be open to new things are important. In most industries those are important but in technology for sure. It's a very dynamic, fast moving  industry where teamwork can get you far but you also have to constantly work on yourself, improve and learn new things.",
+        "ts": "1543915666.000700",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/496180597382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My company culture pivots around the goal we're all working towards: making great movies. It's a friendly atmosphere where people share at least some same interests but it can get ore stressful towards deadlines. Since most employees in the company are artists, there's a creative vibe but also often quite nerdy.",
+        "ts": "1543915875.000800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/494781678290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's quite nice... what are you currently working on??",
+        "ts": "1543940198.000900",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/494404894720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

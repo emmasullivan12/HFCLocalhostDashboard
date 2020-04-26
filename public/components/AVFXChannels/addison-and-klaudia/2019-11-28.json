@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Klaudia, sorry was quite busy yesterday evening so didn't get to do much of an introduction. \n\nI'm a compositor at Framestore, currently working on Dr Dolittle and from Monday the next Bond movie. I was previously in paint and roto at Framestore and developed in to a lead and eventually progressed in to comp. \n\nWhat are you doing at the minute, at University I assume?\n\nIs there anything in particular you're looking to get out of the mentorship scheme?",
+        "ts": "1574941574.001700",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852762150149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

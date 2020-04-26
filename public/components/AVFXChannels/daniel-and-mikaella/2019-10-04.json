@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya, yeah same - we are doing our version of Hackathon for this sprint, where everyone pitches ideas and it's a free-for-all as to which feature \/ task you want to be involved with. Busy indeed :slightly_smiling_face:",
+        "ts": "1570204322.001900",
+        "username": "Mika (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/772739417971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not quite sure yet of how this mentor-mentee thing works and out of fear of spamming you with information on me, I'll start by asking you a little bit about yourself (if that's okay heh).\nHow did you get into FX and why not a different specialization?",
+        "ts": "1570204753.002000",
+        "username": "Mika (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/777799036337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

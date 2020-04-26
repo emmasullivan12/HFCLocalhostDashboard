@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Munzia! So sorry I totally kept forgetting to check my messages. All your news sounds very exciting! The mission inDELIgence looks really entertaining",
+        "ts": "1582121030.001600",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/959245474181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will have a look at both of your animations this evening. Please don't hesitate to send them, that's how you'll make progress :slightly_smiling_face:",
+        "ts": "1582121067.001700",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/947758405539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh no worries! iI'll try to be more frequent with my updates too aha",
+        "ts": "1582144688.001800",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/960036416245_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1342745\/1376382>\n\nI'm freelance on a third year short film about a guy and fish ^",
+        "ts": "1582144713.001900",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/947229861522_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "text": "Review media collaboratively in the cloud - no setup, visual creative feedback, all real time with just a link.",
+                "fallback": "Review media collaboratively in the cloud - no setup, visual creative feedback, all real time with just a link.",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1342745\/1376382",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1342745\/1376382"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582144713.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm trying to apply Mai's animation workflow to this shot and I feel like I've improved in some aspects aha",
+        "ts": "1582144765.002100",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/962228460854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

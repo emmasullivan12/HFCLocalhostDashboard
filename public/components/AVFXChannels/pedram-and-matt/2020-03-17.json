@@ -1,0 +1,60 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have gotten some work through agencies. They can be helpful when you don’t have any offers coming in however it’s always best to avoid using them if possible as they take a cut of your pay and sometimes have a clause that states you cannot return to that company unless it’s through the agency for a few years. It has its pros and cons ",
+        "ts": "1584450922.004800",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/995588514801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you have a spare hour or want to listen to something while working away this is quite interesting",
+        "ts": "1584457206.004900",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006017394085_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=8dI3ZkDm2sY>",
+        "ts": "1584457207.005000",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1008208608774_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "ACCESS:VFX Podcast - Standing Out While Staying In",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=8dI3ZkDm2sY",
+                "author_name": "ACCESS: VFX",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCX4Vt8ZpXkd6c-MBZqEBIIw",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/8dI3ZkDm2sY\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: ACCESS:VFX Podcast - Standing Out While Staying In",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/8dI3ZkDm2sY?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=8dI3ZkDm2sY",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=8dI3ZkDm2sY"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584457208.000000"
+        }
+    }
+]

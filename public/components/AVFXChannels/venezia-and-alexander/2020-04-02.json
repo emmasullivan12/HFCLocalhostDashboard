@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These look great, it's really good that you are going through multiple iterations :smile: The latest one definitely seems to be the most compelling visually. I think I would be curious to know how the machine actually works. How would you fill it with air or repair it if something goes wrong at the top of the machine. You don't need to know the ins and outs of it, but I think it's important to make sure that the machine feels like it could work. I hope this is making sense.\n\nDid you get the chance to have a think about a larger-scale project you might be interested in working on?",
+        "ts": "1585843311.001500",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044774055319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

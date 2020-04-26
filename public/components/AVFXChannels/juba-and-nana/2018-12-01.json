@@ -1,0 +1,104 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's cool to see the progress on the character, there are a few things I thing you can do, to make it even better.\nI'd definitely take a look at his proportions. His torso is a little too short and the arms might be too long.\nTake a picture of yourself and start measuring things out to see how it relates to each other and how it compares to your current character.\nA few tips: Normally the arms in rest position reach mid thigh, the height from the hips to the feet are normally the same as from the hips to the head (this varies from person to person), things like that.\nThis is just one of the channels I follow (fairly traditional approach) but it can really help you figure things out.\n<https:\/\/www.youtube.com\/watch?v=yqxPHew5bGQ>\n\nDon't forget about general anatomy, especially in the arms and fingers, it will really help when you start modelling. That channel breaks down a lot of the different body parts, so If you don't know how to go about it, it can really help to look at reference.\nIt will also come in handy to do a side view of just the body without arms, to get the curvature of the spine right. Last thing I'll say is to simplify the costume even more, think of a whole body suit that can have a \"mask\" so you can just have a basic head shape without having to go into detail. At this point it can help developing a back story and name to infer on design decisions.",
+        "ts": "1543679528.000300",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492953140867_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "How to Draw Structure in the Body - Robo Bean",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=yqxPHew5bGQ",
+                "author_name": "Proko",
+                "author_link": "https:\/\/www.youtube.com\/user\/ProkoTV",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/yqxPHew5bGQ\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: How to Draw Structure in the Body - Robo Bean",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/yqxPHew5bGQ?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=yqxPHew5bGQ",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=yqxPHew5bGQ"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To answer your questions. \"Any interesting news in your industry at the moment?\" - Not much honestly, the only thing I can think of is that the Detective Pikachu trailer came out and people have been losing their heads over it, hahahaha, I was lucky to see the development of it while I was at Framestore.\n\"So, what is your workflow like for animation?\": That's a great question, it would take me some time to go into detail. This is a little old but it's remained mostly the same <https:\/\/animationsalvation.com\/making-of-cursed-animation\/>\nFor a shorter version. If I have time in the project, my process is always to find research and reference first, edit down what I collect and learn from it, go into maya and setup my scene (check all my controls for the best setup for animating the shot), block the golden poses out, breakdowns and in betweens, splining and polish! This is one of my favourites <https:\/\/vimeo.com\/81962062>",
+        "ts": "1543680129.000500",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492889774980_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Animation Salvation",
+                "title": "The Making of 'Cursed' - by Juba Polati | Animation Salvation",
+                "title_link": "https:\/\/animationsalvation.com\/making-of-cursed-animation\/",
+                "text": "An article that takes you behind the scenes on the production of this amazing short animated film",
+                "fallback": "Animation Salvation: The Making of 'Cursed' - by Juba Polati | Animation Salvation",
+                "image_url": "https:\/\/animationsalvation.com\/wp-content\/uploads\/2015\/03\/Anim_Cursed_FB.jpg",
+                "image_width": 477,
+                "image_height": 250,
+                "ts": 1427588131,
+                "from_url": "https:\/\/animationsalvation.com\/making-of-cursed-animation\/",
+                "image_bytes": 41549,
+                "id": 1,
+                "original_url": "https:\/\/animationsalvation.com\/making-of-cursed-animation\/"
+            },
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Epic Comparison Reel",
+                "title_link": "https:\/\/vimeo.com\/81962062",
+                "author_name": "jeff gabor",
+                "author_link": "https:\/\/vimeo.com\/jeffgabor",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/458191885_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Epic is the property of Fox entertainment and Blue Sky Studios. This comparison reel is a bit different than those I've done before. To help students understand the blocking process further, I've added a \"storytelling poses\" section that shows each shot in the earliest phase of exploring acting decisions. As always, the comparison reel is meant for educational purposes only.\nEpic was far and away my most enjoyable film experience to date, and I am extremely proud of the work I was fortunate to be cast on... from the smallest shot to the largest shot. In addition to my animation responsibilities, I was character lead on the main character Mary Katherine.",
+                "fallback": "Vimeo Video: Epic Comparison Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/81962062?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Epic Comparison Reel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/81962062",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 2,
+                "original_url": "https:\/\/vimeo.com\/81962062"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For the girl's design will defiantly look at more references.",
+        "ts": "1543689253.000700",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492993680851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, and I also made a Tomohawk for Fang. Read it about when you have the time: <https:\/\/twitter.com\/marfo343\/status\/1068580468352868352>",
+        "ts": "1543689344.000800",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/493296022709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We are just practicing right now but we are doing a “pipeline” project so we’re making something and taking it the whole way through the pipeline!",
+        "ts": "1574949517.006800",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852893204256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m just coming up with ideas at the moment and I’m finding it quite difficult to think of cool things to do that aren’t just the standard thing like a tank or something like that, but I was thinking of some kind of hologram projector!",
+        "ts": "1574949595.006900",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852437434148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh awesome, that'll definitely set you up well for industry. Understanding lots of different parts of the pipeline is really helpful. So do you have to create the asset too? If you are hoping to go into VFX, replicating something from photos would make a really great piece for your showreel (I'll send you some examples). Something like a projector would work well, then you also get the added bonus of a bit of creativity with the hologram element too.",
+        "ts": "1574952122.007000",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/845015237361_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/161215100> this graduate's showreel is a good example of the 'replication of photos' comment I made earlier",
+        "ts": "1574952181.007100",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/855154997686_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Zak Boxall | Model, Texture and Look Dev VFX Showreel | 2018",
+                "title_link": "https:\/\/vimeo.com\/161215100",
+                "author_name": "Zak Boxall",
+                "author_link": "https:\/\/vimeo.com\/user9107846",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/572893157_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Modeling and texturing reel consisting of work produced at the University of Hertfordshire.\n\n\n\n\n\n\n\n\n\nBertie The Elephant - This is my final degree short film that I'm working on with my course mate Chris Turner for the past 6 months. In this project I'm responsible for modeling, texturing, shading, groom, lighting, rendering and pipeline. The shot of the baby elephant walking down the street is a WIP shot for the film (To be completed end of May 2016). Lighting on this shot was particularly challenging as there is so much integration with the plate in regards to bounce light and the lights coming from the cars. No frame's lighting is the same. It was difficult to get the fine line between making the lighting look good and getting accurate shadows. The lights were keyframed across all frames to match the cars.\n\nThe rest of the modeling projects were designed around producing accurate 3D models by modeling to photos. It was really important for me to use my own reference as I know I'll be shooting in RAW with a 5D on a fixed focal length. By using my own reference I could remove colour temperature, undistorted and align accurately to model to. Once modeling was completed I had to prep the shadows and highlights from the photos and to make tilable parts for where texture projections were impossible. I used Nuke to make tilable textures by using a Gizmo that I have created, it's essentially the same as Photoshop's 'offset' but my Gizmo uses a soft rotopaint as the mask to remove the seams. My gizmo then sharpens only the soft areas of the rotopaint, this removes the 'softness' coming into the texture. Once I projected the colour map I bring into Nuke to perform a highpass using a gizmo that I have created. It produces customization small, medium and broad filters needed for a gradated bump or displacement map.\n\nIf you have any questions about my work please don't hesitate to get in touch.",
+                "fallback": "Vimeo Video: Zak Boxall | Model, Texture and Look Dev VFX Showreel | 2018",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/161215100?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Zak Boxall | Model, Texture and Look Dev VFX Showreel | 2018\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/161215100",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/161215100"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "or the start of my friend from uni's showreel: <https:\/\/www.joshuacrew.co.uk\/>",
+        "ts": "1574952220.007300",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/840165344002_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "joshuacrew",
+                "title": "3D Generalist | Joshua Crew | England",
+                "title_link": "https:\/\/www.joshuacrew.co.uk\/",
+                "text": "Joshua Crew | Modelling | Texturing | Currently working as a 3D Generalist at Studio AKA, based in London.",
+                "fallback": "joshuacrew: 3D Generalist | Joshua Crew | England",
+                "from_url": "https:\/\/www.joshuacrew.co.uk\/",
+                "service_icon": "https:\/\/static.parastorage.com\/client\/pfavico.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.joshuacrew.co.uk\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can find a projector and take your own photos, then model, texture and lookdev from those photos it'll be a really fabulous piece :smile:",
+        "ts": "1574952265.007500",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852958506565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow they’re so cool! Our project is “improbable inventions” and I need to get a better idea for my hologram that actually has something about it rather than “just being cool” ",
+        "ts": "1574957667.007600",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/854911083319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I could go for something else but I really want something like this as it’s kinda futuristic!",
+        "ts": "1574957729.007700",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/853053410320_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah that's a cool brief! It instantly reminds me of a film I used to watch as a kid called 'Chitty Chitty Bang Bang' where the dad makes crazy inventions. You could maybe get some inspiration haha! I'd love to hear more about your ideas when you get working on it, sounds like a really fun project. <https:\/\/www.youtube.com\/watch?v=RBJGpNTP_lY>",
+        "ts": "1574957992.007800",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852600422052_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "You Two - Chitty, Chitty, Bang Bang",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=RBJGpNTP_lY",
+                "author_name": "TheRatbasher",
+                "author_link": "https:\/\/www.youtube.com\/user\/TheRatbasher",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/RBJGpNTP_lY\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: You Two - Chitty, Chitty, Bang Bang",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/RBJGpNTP_lY?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=RBJGpNTP_lY",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=RBJGpNTP_lY"
+            }
+        ]
+    }
+]

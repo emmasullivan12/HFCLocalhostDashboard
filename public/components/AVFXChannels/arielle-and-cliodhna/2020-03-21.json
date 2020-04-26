@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You too, hope you're doing well! Also summer internships aren't cancelled yet either so don't hold back on the applications ;) I'd love to see your work btw!",
+        "ts": "1584786522.002100",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1005222965603_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I won't, don't worry hahaha. More time to get more work done I suppose!",
+        "ts": "1584797562.002200",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016798712624_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd also really like to see your work!!",
+        "ts": "1584797590.002300",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016799009088_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

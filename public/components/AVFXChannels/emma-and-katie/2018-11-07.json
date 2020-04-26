@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Katie! My name's Emma, I'm an Animator based in Sheffield right now but have recently worked in London at companies such as Blue Zoo, Jellyfish Pictures and more recently Double Negative. I'm excited to get to know you and help you in any way I can :slightly_smiling_face: How's it going?",
+        "ts": "1541581824.001600",
+        "username": "Emma Porter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-07\/473580467011_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

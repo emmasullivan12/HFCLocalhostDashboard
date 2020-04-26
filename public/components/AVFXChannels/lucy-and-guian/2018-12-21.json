@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy Christmas Guian. Have a great time. Look forward to chatting in the New Year! x",
+        "ts": "1545411342.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-21\/510082199218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, Merry Christmas and a happy new year to you too x",
+        "ts": "1545412387.000200",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-21\/509496698689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

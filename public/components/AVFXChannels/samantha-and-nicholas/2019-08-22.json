@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven’t applied really for intern positions. I’m looking more towards a freelance position. I can’t really afford an intern position while my wife is attending school. \n\nOh I didn’t know you could get a free account with a LA library card! I’ll have to check that out. \n\nThe back and forth is fine for me. Thou I know I have 2weeks left before finals and some deadlines at work so might be a bit hard to replay daily. After all that thou it be great to get some tips on how to showcase my work for my website on the indie game I worked on. I’m also debating on creating like three different subsections for vfx and game design,but I feel it might come across bad. \n\nI like VFX work but I also originally have a passion for video games too. I feel thou if it’s all in one website it might come off as a lack of discipline. ",
+        "ts": "1566491154.006600",
+        "username": "NicholasKim (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-22\/723722269667_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah freelance positions should work too! :slightly_smiling_face: Yeah I have a library card because I'm a book worm and was surprised to find that you can get several free accounts to a few different sites with it.",
+        "ts": "1566496555.006700",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-22\/735286271312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I totally understand about final\/deadlines. Just message me when you can! Like I said I'm at a computer all day at work so I'll be here, even if I don't respond immediately, I respond when I can. :slightly_smiling_face: I can help give tips on websites! I sat next to a modeling and light supervisor at work and often overhear their opinions on student work\/website, so hopefully I can help make sure your work is in the best light to capture attention of future employers! :slightly_smiling_face: For your website, only showcase work that you're extremely proud of and work that you want to be hired to do. If you don't want to be hired to do VFX work, don't display it. Otherwise, if you don't mind being hired to do VFX I think splitting up your site into different subsections is an excellent idea because work for video games is extremely different than work for VFX. Depending on who looks at your website, it'll be easier for them to pick what they want to hire you for and see the quality for that kind of work. Or just to show how expansive your skill set is as well.",
+        "ts": "1566496954.006800",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-22\/735296315856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I wouldn't have like more than 3 sections for your work. Like even just splitting it into VFX and Game Design would be excellent. Mostly because a lot of VFX houses are trying to get into real-time rendering with Unreal or Unity, so employers seeing that you can do both would be ideal because you know how VFX workflow works, but also you know how to implement things into a game engine.",
+        "ts": "1566497086.006900",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-22\/734833713492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

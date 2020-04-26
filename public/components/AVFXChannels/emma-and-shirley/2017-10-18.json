@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shirley, is there anything you want to know about work life that you arent sure about? Or perhaps uni life as well?",
+        "ts": "1508342761.000448",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/257757202641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also you can have my autograph haha ",
+        "ts": "1508342773.000059",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/259159560790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

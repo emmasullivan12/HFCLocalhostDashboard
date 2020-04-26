@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Kalina,\nugh sorry I have the same problem. May be you can tell me how you sorted out the notifications. :smile:\nLet me take a look at your Vimeo channel and get back to you asap.",
+        "ts": "1545319998.000100",
+        "username": "Binal Shah (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/508923905331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

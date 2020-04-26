@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh nice! Have you got it to hand so I can take a look?  What kind of stuff were you removing? What approach did you take for removing stuff?",
+        "ts": "1587491227.002400",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1070138532630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also having some really good prep techniques in your show reel will be a god send when you are applying for jobs. When I did my final project when I was at uni I did a project that involved preping out people body parts for that specific reason, that I would then have some prep on my reel. If your looking to get into Comp having a solid base in roto and prep techniques are a really good way to get your foot in the door aswell as have a base to learn other techniques ontop of.",
+        "ts": "1587491431.002500",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1076880479730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

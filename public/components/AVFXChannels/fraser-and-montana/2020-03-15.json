@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Montana, will be able to go into more detail later, but if you want to check out Hugo's Desk on Youtube for now. I think he might be quite helpful. I first learned Nuke from him when he visited my uni. If you have any questions on anything - even more basic stuff, then please send any question you can here and I'll do my best to get back to you quickly! Hope you're well!",
+        "ts": "1584286924.000400",
+        "username": "Fraser Murdoch (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-15\/1001272599461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

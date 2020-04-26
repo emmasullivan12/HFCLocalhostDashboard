@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What about tomorrow (Wednesday) afternoon?? Around 7pm?",
+        "ts": "1559837267.000100",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-06\/657493020133_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela, I just received your message referring to tomorrow as Wednesday! Sorry I missed it, I don't know why it didn't come through until now. Would Sunday work for you instead?",
+        "ts": "1559848307.000200",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-06\/657723809253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I'm back online",
+        "ts": "1565686431.006700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-13\/713208613522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you check his work?",
+        "ts": "1565686443.006800",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-13\/718273020977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About his reel - what you see there is not only his work. He can show the whole shot whereas in reality what he did could be a small tower on the BG. It could be the best tower and such but we are not allowed to take assets to show, we just have to show the final product",
+        "ts": "1565686520.006900",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-13\/724183912772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that's why you see character and all of that but next time try finding a reel where they specify what they actually did, because this guy didn't write what he did",
+        "ts": "1565686571.007000",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-13\/726511851143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I rewatched it, you're right, because he didnt specify what aspects are he is respo6for, I thought he did multiple assets in the scene",
+        "ts": "1565695989.007100",
+        "username": "Sreeharsh Baburajan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-13\/724322155396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, it's a common practice when you work in a huge company, so I hope that helps. If I were you I would go for a smaller company first because you will be able to grow real fast there, though if you know for sure you want to just model let's say, just make a portfolio like this guys has",
+        "ts": "1565704375.007200",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-13\/724934943696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that was understandable,  I have looked into jellyfish and bluezoo which I found really interesting",
+        "ts": "1565716830.007300",
+        "username": "Sreeharsh Baburajan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-13\/713797554850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

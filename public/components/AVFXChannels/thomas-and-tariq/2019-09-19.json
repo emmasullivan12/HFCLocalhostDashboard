@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye I couldn't agree more. I was first following the tutorial word for word to have a solid working scene file that I can use as reference. I definetely wouldn't put it in my reel though. Ye that example is cool! But do you think it's necessary to model an environment or comp it into a a shot or something? Or is it OK to just have it on one of those curved infinity wall things?",
+        "ts": "1568894180.000400",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-19\/753187148626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

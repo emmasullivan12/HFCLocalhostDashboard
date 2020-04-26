@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Yes, everything is going quite well - I've been moving away from digital to play with real clay for a bit. How are things progressing for you?",
+        "ts": "1586078329.000800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1044110509841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

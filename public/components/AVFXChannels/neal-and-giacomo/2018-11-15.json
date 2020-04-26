@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've done a little bit of commercial work. I done a Christmas TV ad for Sainsbury's a few years ago and I was at Sky for a few years so done a number of promos for Sky Sports. The difference between commercial and TV is mainly time. You tend to not get as much time to work on your shots in Ad's compared to TV and film as it's generally a quicker turnaround. The money in compositing on commercials is normally more than TV and film, but you are expected to work quick and still to a good quality. It also tends to pay more as you are joining on a shorter contract as the projects do not last as long. Tv and Film are longer contract so the day rate is a litlte less but you have the job security for a bit longer. I wouldn't say you have more or less creativity in either case though.",
+        "ts": "1542278705.002800",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480404197938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you are doing an Escape course, I'm not sure if there is any benefit in going to university unless you want to take your VFX course further ans specialise in a particular area. If you decide to further your studies and go to uni, the Bournemouth is the best for VFX, so look into their courses. For internships or work experience, it's only the big companies that really do this, so i'd just say keep an eye on their websites. For improving your techniques maybe sign up to Pluralsign and do as many of the Nuke courses on their. Also check out Steve Wright's tutoals on LinkedIn, they are also very good. The book The Art and Science of Digital Compositing by Ron Brinkmann is also a MUST read",
+        "ts": "1542279025.002900",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/481808669238_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats great to hear! And yes I’m currently studying at Escape. Because I don’t live in London I chose this Uni because of the networking possibilities added to learning new industry standard practices of course. I’ve watched quite a few of Steve’s courses, especially the more Sci-Fi centred ones. Will definitely check out the book you mentioned. At the moment I’m reading the VES handbook; extremely handy!\n\nI noticed that you talk about freelancing. Being one yourself, why do I hear many people say that’s it’s not the right thing to do because you don’t have guaranteed work. Are they just scared of taking the leap in reality? As opposed to working for years at one studio. ",
+        "ts": "1542280858.003000",
+        "username": "Giacomo Verri (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/479692748016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not longer a freelancer myself, I'm now in a permanent contract but was freelancing for the past 3-4 years. In this industry I think freelance is more common than working long at one studio. The biggest contract you'd get at one studio would tend to be a year contract with a view to extend. When I was freelancing I'd tend to pick up jobs anywhere between 1 month to 6 months and they always tend to extend you until the company reaches a quiet period. At that point I'd move onto the next gig. I really liked freelancing as like I mentioned before you get to work out what companies you like and don't like. You are also constantly meeting with new people and building your network. ",
+        "ts": "1542324206.003100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480935051700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

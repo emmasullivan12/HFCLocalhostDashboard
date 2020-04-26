@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh my goodness Binal I'm so sorry I didn't see this the app isn't sending me notifications I'm gonna have to sort it out! \n\nAnd yes of course I'd be more than happy (I have more things on it now!) \n\n<https:\/\/vimeo.com\/user74020812>",
+        "ts": "1544097400.000300",
+        "username": "Kalina (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/498478239782_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "title": "Kalina Kolchevska",
+                "title_link": "https:\/\/vimeo.com\/user74020812",
+                "text": "Kalina Kolchevska is a member of Vimeo, the home for high quality videos and the people who love them.",
+                "fallback": "Vimeo: Kalina Kolchevska",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/portrait\/26066232_640x640",
+                "from_url": "https:\/\/vimeo.com\/user74020812",
+                "thumb_width": 640,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/i.vimeocdn.com\/favicon\/main-touch_180",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/user74020812"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have resolved the issue with the notifications so it will all be good from now on! (I'm sorry again about this :cry: ",
+        "ts": "1544097526.000500",
+        "username": "Kalina (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/497078280066_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

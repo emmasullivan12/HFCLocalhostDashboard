@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Moein you've gone off radar! What are you up to?",
+        "ts": "1568753980.000100",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-17\/763701233909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

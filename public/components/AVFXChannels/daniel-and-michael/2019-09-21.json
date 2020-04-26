@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds like you're well on your way and have a good work ethic and a supportive partner. Events are great because people want to meet you. Keep it up!",
+        "ts": "1569061248.001100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-21\/762094434625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yeah money stress sucks.",
+        "ts": "1569062897.001200",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-21\/768524136501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

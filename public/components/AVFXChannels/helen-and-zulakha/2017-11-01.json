@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m at a coaching day today and we just did an exercise to build the tallest tower with marshmallow and spaghetti!! ",
+        "ts": "1509553780.000685",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-01\/265305143299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

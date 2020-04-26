@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Natasha, sorry for my late reply!! I’ve been busy with assignments the last few days. How did you find working at MPC? :) ",
+        "ts": "1583334944.001900",
+        "username": "Jenna Bushell (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981220956148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is a link to my current wip animation showreel <https:\/\/vimeo.com\/395437399|https:\/\/vimeo.com\/395437399> (password: showreel) which I’m trying to polish a bit more before I apply for summer internships, I was wondering if you had any showreel advice?",
+        "ts": "1583335072.002000",
+        "username": "Jenna Bushell (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981698045349_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Zoe! Just went through all your boards, it's looking really good! It did slightly confusing from slide 11 onwards but you mentioned you were still working on it. Despite that I can tell that it's definitely coming into focus now. I know that you're in a rush but do remember to slow it down when you can, rushing a project can lead to significant problems down the line! (I've been in that boat many _many_ times haha)",
+        "ts": "1569854272.013700",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/778144595808_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

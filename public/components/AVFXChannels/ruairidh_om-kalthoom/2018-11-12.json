@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ruairidh, have you used silicone clay before?",
+        "ts": "1542040610.003000",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477430442212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "only the once i seem to remember its reusable when it dries out if you just massage some water into it, but outside of that i dont know much",
+        "ts": "1542045327.003100",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477075431489_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see. Do you know of any useful websites or workshop, which may breakout those details?",
+        "ts": "1542065841.003200",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477353535553_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

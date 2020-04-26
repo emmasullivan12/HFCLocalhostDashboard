@@ -1,0 +1,244 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Paulina, so sorry again for my delay on getting back to you - I finally have internet set up at my new home now so I will be able to access Slack more frequently!",
+        "ts": "1571734882.002700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/797684110305_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The monkey sculpt is looking really great - well done! It's really good that you are working closely with groom and rigging too.",
+        "ts": "1571734888.002800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/805979884615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope it's not too late to give you some answers to the questions you asked;",
+        "ts": "1571734895.002900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/803658730756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Firstly; what software are you using for the simulation? It's good industry standard if you know Maya:\n<https:\/\/www.youtube.com\/watch?v=GzkorBT0PAM>\n_(There will be thousands more videos and tutorials about this on the internet so I'm not suggesting that this vid is the best one... but hopefully it can help give you a bit of insight into a possible method you could use for setting up a muscle system.\nI'd recommend following whatever you feel is most comfortable just to be able to get a technique working asap, then you can refine and perfect as you go. Cheat as much as you have to! Just make sure you keep your files clean and tidy ready to be passed on :blush:)_",
+        "ts": "1571734933.003000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/792653452051_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "An introduction to Maya Muscle",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=GzkorBT0PAM",
+                "author_name": "YellowDog 3D Tips",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCzltCx-JIQ9U0MHo4uhybfg",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/GzkorBT0PAM\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: An introduction to Maya Muscle",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/GzkorBT0PAM?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=GzkorBT0PAM",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=GzkorBT0PAM"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You use your knowledge of origin and insertion points to re-create digital muscles - this is also why the bony landmarks are important in the sculpt:\n <https:\/\/www.visiblebody.com\/learn\/muscular\/muscle-movements>",
+        "ts": "1571734983.003200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/806334170934_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Muscle Attachments and Actions | Learn Muscle Anatomy",
+                "title_link": "https:\/\/www.visiblebody.com\/learn\/muscular\/muscle-movements",
+                "text": "There are over 600 muscles in the human body. Learning the muscular system involves memorizing details about each muscle, such as muscle attachments and joint motions",
+                "fallback": "Muscle Attachments and Actions | Learn Muscle Anatomy",
+                "from_url": "https:\/\/www.visiblebody.com\/learn\/muscular\/muscle-movements",
+                "service_icon": "http:\/\/www.visiblebody.com\/hubfs\/vb-favicon.png",
+                "service_name": "visiblebody.com",
+                "id": 1,
+                "original_url": "https:\/\/www.visiblebody.com\/learn\/muscular\/muscle-movements"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're going to need to create a much more simplified mesh with far less detail to act as a skin purely for the simulation, which then drives your more complex detailed mesh with all of your sculpt work in it.\nSo you work with a low-poly version for quick, baseline sim and then rig-wrap that to your high-poly.\nHere's a bit of info of how you might do this in Maya: <https:\/\/autode.sk\/2J8kNyK>",
+        "ts": "1571734997.003400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/791342247698_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Skinning with wrap deformers",
+                "title_link": "https:\/\/autode.sk\/2J8kNyK",
+                "text": "Skinning is the process of binding deformable objects to a skeleton. Typically, the deformable objects that are bound are NURBS or polygonal surfaces (meshes). These geometry objects become the character’s surface, or skin, and their shapes are influenced by the action of the skeleton’s joints. Once you’ve built a skeleton for a character, you can skin your character by using a smooth skinning method or a rigid skinning method",
+                "fallback": "Skinning with wrap deformers",
+                "thumb_url": "https:\/\/knowledge.autodesk.com\/sites\/all\/themes\/autodesk_foundation5\/images\/standard\/autodeskLogo-125x125.png",
+                "from_url": "https:\/\/autode.sk\/2J8kNyK",
+                "thumb_width": 125,
+                "thumb_height": 125,
+                "service_icon": "https:\/\/knowledge.autodesk.com\/misc\/favicon.ico",
+                "service_name": "knowledge.autodesk.com",
+                "id": 1,
+                "original_url": "https:\/\/autode.sk\/2J8kNyK"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We had proprietary tools to do this at Framestore, so someone had already written a script to do it for CFX purposes, but the theory was the exact same.\nWhat matters the most is how closely you have been able to get the simulation to mimic real-life. Techniques are changing literally all the time in industry, so there's never 'one perfect way' to get things done.",
+        "ts": "1571735008.003600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/804133123397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You could then do broader fixes to your simulation mesh, or blend some caches together to have even more control over the look of the simulation; which would feed through into the high-poly.\nYou would also need to then go in and do further shot-sculpting on top of your high-poly mesh to get things as accurate as you need. You're going to end up losing some definition as you simulate, so be prepared to sculpt detail back in after you bake out your sim work. :male-detective:",
+        "ts": "1571735053.003700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/805983078343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(You can rely on Blend Shapes to speed up each step of this process.)",
+        "ts": "1571735062.003800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/804126110384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a very good point about the monkey being covered in hair - I think you can definitely fall back on that if you do find it too challenging in the time that you have.\nYou could probably still submit some WIP videos of your 'R&amp;D' work as supporting evidence of other methods you experimented with. :monkey:",
+        "ts": "1571735152.003900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/804135808821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you find you have extra time and access to Cinema 4D you might want to check out C4D's softbody dynamics for simulation of fat: <https:\/\/www.youtube.com\/watch?v=fibVrUBQhkA>\nYou would need to sculpt the fat pouches of the monkey, weight it to your rig, run a simulation after your muscle pass and before the skin pass - so you have muscle deformation driving fat simulation which then both drive skin slide on top.\nIt gets quite complicated and it's hard to give you a step-by-step run through of how this all works without a predetermined pipeline - but hopefully I can answer any further questions you have about this.",
+        "ts": "1571735165.004000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/791345373714_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Cinema 4D Tutorial - Speeding Up Soft Body Dynamics Using Mesh Deformer",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=fibVrUBQhkA",
+                "author_name": "eyedesyn",
+                "author_link": "https:\/\/www.youtube.com\/user\/eyedesyn",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/fibVrUBQhkA\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Cinema 4D Tutorial - Speeding Up Soft Body Dynamics Using Mesh Deformer",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/fibVrUBQhkA?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=fibVrUBQhkA",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=fibVrUBQhkA"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope this is clear? I'm not entirely sure how much you already know about the process so I hope I am not coming across as condescending!",
+        "ts": "1571735176.004200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/805985307367_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The script also looks great, short and sweet - looks like there is lots of opportunity for some focus on facial animation, I'm really excited to see how you and your team tackle that! :four_leaf_clover:",
+        "ts": "1571735190.004300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/806337991526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I should also mention, I relied quite heavily on *Mush3D* to shot-sculpt my CFX work. I'm proficient in Z-Brush so I find the sculpting side of things much more intuitive and rewarding than the simulation side. For bespoke work or shots where the CFX had to be art-directed to perfection; I would often run a simulation that would be 'good enough' - but then thoroughly sculpt per frame, adding the required amount of 'muscle-based non-sim jiggle' with the layer system in Mush3D and then selectively blend-shape back onto the high-poly mesh.\nI'm not sure how\/if you can access this software but it's worth taking a look at the tutorials here to get an idea of what I mean: <https:\/\/mush3d.com\/>",
+        "ts": "1571735699.004400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/806347102022_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Mush3D",
+                "title": "Home",
+                "title_link": "https:\/\/mush3d.com\/",
+                "text": "Watch Mush in Action",
+                "fallback": "Mush3D: Home",
+                "image_url": "https:\/\/mush3d.com\/wp-content\/uploads\/2018\/08\/Untitled-1-1.png",
+                "from_url": "https:\/\/mush3d.com\/",
+                "image_width": 246,
+                "image_height": 45,
+                "image_bytes": 15337,
+                "service_icon": "https:\/\/mush3d.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/mush3d.com\/"
+            }
+        ]
+    }
+]

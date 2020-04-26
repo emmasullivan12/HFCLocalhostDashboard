@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tessa, no worries. I've been working on some other shots and will send some playblasts of those soon, hopefully early\/mid next week. How has everyone adjusted to working remotely? I can imagine it's been very hectic, even just trying to set everything up",
+        "ts": "1587196266.000900",
+        "username": "Joshua Treadgold (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1083810030625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh that's a shame. Going away by yourself is part of the fun of uni! I definitely couldnt cook, wash clothes etc when I left home at 18!! Someone in my uni halls tried to grill his pasta (i.e. he didnt soak it in water first) ... so funny haha",
+        "ts": "1579554061.000100",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/902801613507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's also not up to your parents after you turn 18 :wink:",
+        "ts": "1579554091.000200",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/914282120325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was homesick too at first, but you make friends so quickly and everyone is in the same boat as you so people are friendly and open and welcoming. But i respect that you might not feel like going",
+        "ts": "1579554146.000300",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/914272001616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Work placement is definitely recommended! so thats great Brunel offer it, but I deffo encourage you to think BIGGER and HIGHER up the university rankings. You have so much potential girly!!",
+        "ts": "1579554189.000400",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/901487372050_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But im here for you whatever you choose, and we will get you there!! As I said, i can help with personal statements and all that stuff, so we'll put in the work and get you where you need to go :muscle:",
+        "ts": "1579554234.000500",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/916133730871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Like you say, the work placements sound good quality, and the placement was definitely the best part of my degree (in my opinion)",
+        "ts": "1579554279.000600",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/904080332017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

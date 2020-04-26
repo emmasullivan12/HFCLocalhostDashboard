@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the feedback! I would say my favourite reel animations are probably the very first one (the character is my own and called Ruffles) and the second one with the fox and the firefly as that was a very challenging one when I first got it. Also the fox jumping from behind the bush because cute factor XD.",
+        "ts": "1586008313.002800",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1047133738934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's one thing I'm still unsure of. I do think I need to practice animation more and I was always under the impression that character design was a \"higher up\" job, so I assumed during graduationg that I should prioritise animation. Problem is I love character design just as much for different reasons.",
+        "ts": "1586008413.002900",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1039035682099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A couple of studios I'm very interested in are The Line and Blue Zoo. Discovered Line way back during the Edinburgh Film Festival and found out they have been working with Gorillaz which is really up my alley. Also got to talk to Blue Zoo at Move Summit this year and they were the ones that recommended the mentoring program to me.",
+        "ts": "1586008591.003000",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1039037592707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alan, how was your week away? I didn’t want to message you during in case you were away with your family. \n\nThanks for arranging it for me to come up, how many days would I be able to come in for? I’m arranging it with my work tomorrow for the time off.\n\nMy project went through a sticky patch where I lost momentum in truth but I’m back in the swing and I’m creating blend shapes for my characters this week. I’m aiming to get all the characters done this week as I’m modelling them all from one master head with its own blend shapes. \n\nHopefully I can get some test animations done either before or whilst I’m up with you and I can get some feedback :grinning:",
+        "ts": "1552292146.000700",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572370689491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tom thanks for your consideration, it was a work trip. I'm really snowed under at the moment between kids, work and home renovations. Do you mind if we push the dates out on your visit a little? Just a couple of weeks until I get sorted out. I'm very stressed out and won't be much company for you. Do you have a time constraint on when you need to do the coursework?",
+        "ts": "1552321384.000800",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572951196946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

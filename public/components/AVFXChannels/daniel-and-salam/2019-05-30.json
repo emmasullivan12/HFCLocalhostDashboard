@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Congratulations  on finishing  your diploma. Well done !\nSorry but I don't  have much idea about  runners roles or apprenticeships.  But I did just see that mpc are looking for summer  runners support and you might want to check the other big studios  sites. Get in quick  though,  I think the might  go fast. \nLet me know what luck  you have.",
+        "ts": "1559203589.000100",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-30\/650149269936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll make sure to keep you updated",
+        "ts": "1559246291.000200",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-30\/639471337042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think that it's always necessary to have a degree in animation etc to be hired for a job? I've seen my classmates produce spectacular work in college, and some already work. Do you see most of your colleagues coming in from their related degrees?",
+        "ts": "1559246369.000300",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-30\/650865480549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some  do have degrees  for sure. I don't  have a degree  but did a one year postgraduate course. It's  all about the quality  and imagination in your work when it comes to animation. Then once y OJ u get an interview it's about your attitude and personality. \nMost people who I know that did a degree  in animation  say it was a waste of their  time ( apart from friends and contacts they gained) , many  learned how to animate at a course like animation mentor etc, or on the job .\nIf you know animation is for you ( which most don't realise until half way into a more general course) then I would say either do a degree  and focus purely on animation  or do an online animation diploma. The teachers are amazing  sometimes and you learn so much more than most universities.",
+        "ts": "1559248125.000400",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-30\/644575978177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

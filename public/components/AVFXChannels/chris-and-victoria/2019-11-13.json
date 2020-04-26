@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The talk went well. Sounds like they want to offer me full time op, though they have none atm but maybe soon. Although I’m a little worried that full time will mean I have less energy\/time to actually work on my showreel and skills ",
+        "ts": "1573648202.026800",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/824799303169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s a great company, the standard of hospitality for runner is waaaaay high. Framestore feels so laid back in compassion haha. I have Framestore’s resources available so I’m really not sure. I feel like Part time is good enough to meet ppl and keep training while earning money and showing the company what you’re made of ",
+        "ts": "1573648287.026900",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/819935630514_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel like being full time at the Mill would better to be honest, you'd have more money but more importantly you'd be a part of the team if that makes sense?",
+        "ts": "1573648545.027000",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/834583637783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've heard they really care about their runners though",
+        "ts": "1573648578.027100",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/832264740772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "True, I do have a friend who was running the last two years there. She said it is tough but she’s finally gotten into storyboarding like she wanted  ",
+        "ts": "1573650677.027200",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/824846937201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gotta sleep on it ",
+        "ts": "1573650697.027300",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/824847344033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds like a plan!",
+        "ts": "1573652942.027400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/834673882743_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Made friends with a roto painter at framestore and have a whole list of framestore resources to go through. I hope they have silhouette tutorials in English :see_no_evil:",
+        "ts": "1573670147.027500",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/820545723058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "He’s kind enough to show me what he’s working on and stuff so project roto is a go ",
+        "ts": "1573670173.027600",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/821863366691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

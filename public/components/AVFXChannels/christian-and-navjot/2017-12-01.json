@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I have been quiet recently -  I've had an intense time at work. I was put on a project in a completely different area than I'm used to, so I had a lot to learn and get up to speed on so that I could get a report written for our client this week. Lots of new knowledge, and built an analytical tool for others in the office to use, so hard work but very useful! At the same time, been building an economic model for a corruption case, trying to work out what the market value of a contract was in 2010. Also very interesting! But lots of work, so apologies again for being quiet.",
+        "ts": "1512135403.000323",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/281219652662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We're coming up to the end of the program, so I hope you have found it useful - happy to answer any last minute questions you might have.",
+        "ts": "1512135412.000418",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/279689770272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's alright don't worry you helped me a lot ",
+        "ts": "1512138875.000255",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/280423414772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really appreciate that",
+        "ts": "1512138880.000385",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/281453986311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":grin:",
+        "ts": "1512138891.000204",
+        "username": "navsin-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/280379476930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

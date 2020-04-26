@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its basically the mermaid in the environment with the other character as well",
+        "ts": "1567669134.000800",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-05\/749525715600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hi sorry for the late reply I am on my first year of btec applied science ",
+        "ts": "1538408629.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446072424497_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have done a little of research but I am trying to focus more in the course but I have done my CV and I applied for job research and I got a part time job request as a assistance nurse\nI didn't quite get high grades in my GCSE'S.\nI have got a grade 6 in maths \n Grades 5,5 in science \nA grade 4 in literature\ngrade 3 in language( i am retaking for a grade 4 or 5 ) \n",
+        "ts": "1538408947.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446858330453_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Khadijah, no worries - take as long as you need in replying (no issue for me). \n\nThat’s excellent about the part-time nurse assistant job! Have you already started it? ",
+        "ts": "1538421479.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446126949120_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah okay, in first year. So realistically you’ll be making University applications in October\/November 2019...? ",
+        "ts": "1538421540.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446127742416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you got good support in your school with the English Language GCSE retake? ",
+        "ts": "1538421598.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/447915213351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It sounds like you are very switched on, in terms of your CV and applying for relevant work experience ",
+        "ts": "1538421644.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/447915879335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if you ever need me to take a look at your CV ",
+        "ts": "1538421656.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446764519107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

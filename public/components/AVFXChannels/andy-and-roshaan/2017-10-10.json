@@ -1,0 +1,47 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not aware of the career options for biology at all but I enjoy doing Biology in A levels. I'm good at other A levels but this is one that I can easily understand. It is quite interesting as it let's me make connection with real life scenarios to what I learn in Biology. In terms of careers, I can only see two that are related to Biology. Research and Teaching. Other than this I don't know much about Biology as a career. ",
+        "ts": "1507657279.000559",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/253558753392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also could we set certain timings where we talk? I'm mainly doing work related to school from the morning to about 7pm. It would be suitable to have a certain hour where both of us can talk. ",
+        "ts": "1507657440.000221",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/253693601697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude - I found this website <https:\/\/www.prospects.ac.uk\/careers-advice\/what-can-i-do-with-my-degree\/biology>\n\nIt gives a pretty good idea of where biology students go when they are done. Hope you find it helpful.\n\nWhat do you enjoy most about Biology? It's a pretty broad subject, and answering that might help you narrow your focus.\n\nAlso worth noting that Biology is a reputable degree. Your options won't just be restricted to research and teaching. When I started my accountancy training contract, the firm hired people from many different backgrounds...not just finance and economics. The same will be true for other firms.\n\nMy work hours can be pretty unpredictable (often finish late) so can't promise a time, but if you message me, I will do my best to get back to you within a day!",
+        "ts": "1507668897.000370",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254382044372_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "What can I do with a biology degree? | Prospects.ac.uk",
+                "title_link": "https:\/\/www.prospects.ac.uk\/careers-advice\/what-can-i-do-with-my-degree\/biology",
+                "text": "Find out how the skills gained from a biology degree can lead to a career in the science and health sectors.",
+                "fallback": "What can I do with a biology degree? | Prospects.ac.uk",
+                "from_url": "https:\/\/www.prospects.ac.uk\/careers-advice\/what-can-i-do-with-my-degree\/biology",
+                "service_icon": "https:\/\/www.prospects.ac.uk\/resources\/dist\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "Prospects",
+                "id": 1
+            }
+        ]
+    }
+]

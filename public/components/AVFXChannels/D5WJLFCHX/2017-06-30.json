@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *IMG_20170626_164506_969.jpg* under review.",
+        "ts": "1498840862.713676",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *IMG_20170626_164506_969.jpg* meets our content policy.",
+        "ts": "1498840863.714220",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *IMG_20170626_165434_796.jpg* under review.",
+        "ts": "1498840869.716159",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *IMG_20170626_165434_796.jpg* meets our content policy.",
+        "ts": "1498840870.716612",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Supporting letter.pdf* under review.",
+        "ts": "1498842052.142511",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Supporting letter.pdf* meets our content policy.",
+        "ts": "1498842053.142854",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    }
+]

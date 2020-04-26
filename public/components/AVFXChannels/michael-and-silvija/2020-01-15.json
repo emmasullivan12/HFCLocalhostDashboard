@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! I am sorry about a late reply! \nI am very happy to have a call any afternoon-evening after tomorrow!",
+        "ts": "1579122890.000600",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/895452475538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

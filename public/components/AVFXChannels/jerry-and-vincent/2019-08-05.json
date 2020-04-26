@@ -1,0 +1,29 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Vincent !\nPleased to meet you.\nJust a little about myself. I'm currently working for Industrial Light &amp; Magic as a Creature Technical Director and have been in the industry for 5 years, before that I studied at Bournemouth University in Computer Visualisation and Animation.\nI read into your profile that dexter has sent me that you also would like to get into rigging.\nFeel free to ask any questions big or small, or if you have a portfolio we can even have a look at that.\nHere's some of my past work that I've done in my career and during university : <https:\/\/vimeo.com\/ziltz9>",
+        "ts": "1565022886.001700",
+        "username": "Jerry Lee (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-05\/716628782469_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "title": "Jerry Lee",
+                "title_link": "https:\/\/vimeo.com\/ziltz9",
+                "text": "Creature Technical Director at Industrial Light &amp; Magic",
+                "fallback": "Vimeo: Jerry Lee",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/portrait\/14122848_640x640",
+                "from_url": "https:\/\/vimeo.com\/ziltz9",
+                "thumb_width": 640,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/i.vimeocdn.com\/favicon\/main-touch_180",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/ziltz9"
+            }
+        ]
+    }
+]

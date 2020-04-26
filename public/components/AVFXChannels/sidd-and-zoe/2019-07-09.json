@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am doing well thank you, I have been asking around to get experience only had one hit though so far, so that is good :) busy week too I'm an currently juggling uni and my job :sweat: haha",
+        "ts": "1562711938.002100",
+        "username": "Zoë Paterson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/689521200224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

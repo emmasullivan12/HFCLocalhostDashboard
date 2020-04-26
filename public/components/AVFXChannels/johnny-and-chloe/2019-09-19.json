@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now it's me that's super slammed with work , sorry for being quiet for long, I think I will be a bit less busy this weekend",
+        "ts": "1568890914.000100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-19\/765909946336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

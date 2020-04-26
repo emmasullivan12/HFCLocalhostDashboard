@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Escape is pretty good. I work for them too as a studio assistant. I take care of 2nd-year animation students. They mainly do group projects so it's a bit tough to focus mainly on animating. Usually, we have to do set design, 3d layout, lighting &amp; rendering too. It has its own advantages and disadvantages.",
+        "ts": "1587633362.002500",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1079744150901_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In a way, I always want to render my shot. Although, I know that's not animators job so I treat it as a hobby.+",
+        "ts": "1587633424.002600",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081336011699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great. That's one of the most important aspects to me. I understand sometimes there might be crunch time, but as you said, people can burn out because of it... especially when London is known by not paying for overtime in the VFX industry...",
+        "ts": "1587633581.002700",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1074397615510_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting a job by grad game is really impressive especially when you consider that it's tough to keep the high quality of animation when you have to animate let's say 1min long short movie. I just worked on a few shots within 2 years and I hope my showreel will be good enough.",
+        "ts": "1587633924.002800",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1104984199456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Guardians of the Galaxy is one of my favourite movies from Marvel. Did they assign you to animate just one character throughout the whole movie or you had a few of them? Also, was it mocap or character animation :smile:",
+        "ts": "1587634125.002900",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1093775614753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know you can't tell me what movie you're working on at Jellyfish. I can only assume that it might be something from Dreamworks like Spirit haha.",
+        "ts": "1587634977.003000",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1079799241333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\"What is it that got you interested in studying animation? Do you have any goals for your future career?\":",
+        "ts": "1587635117.003100",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1074450078934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was studying maths, physics and IT at high school, but I found it more and more boring. By an accident, I found out what is the rendering when I was assembling my pc. I started using Blender for animation, lighting and modelling. Later on, I switched to 3ds Max because I thought it was an industry standard. However, at some point I realised that the animation is what I'd love to do so I chose Maya. I did quickly two short movies to apply to Escape Studios and somehow I got accepted :slightly_smiling_face:",
+        "ts": "1587635699.003200",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081413197219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From that moment, I'm passionate about it and giving life to any character is what keeps me going and learning :)",
+        "ts": "1587635827.003300",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1079827665029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "London has many great companies. I might be wrong, but DNEG, Framestore and Jellyfish seems to be the best to me. DNEG because they opened feature animation. Framestore because they're supposed to do mainly keyframe animation and have amazing fight sequences. Jellyfish because they're supposed to work for Dreamworks so it means cool projects. Ideally, I would love to work in LA because of the weather AND many companies around so, in theory, it should be a good place to settle down. However, I'm happy where I am at the moment and I won't be fussy with my first job. IF I WILL GET ONE :smile: haha",
+        "ts": "1587636743.003400",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081239656530_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are your goals for your future career? I know you achieved a lot already, but I suppose we never stop learning :smile:",
+        "ts": "1587636861.003500",
+        "username": "Maciej (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1087411993012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

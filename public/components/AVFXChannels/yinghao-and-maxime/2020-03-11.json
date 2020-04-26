@@ -1,0 +1,269 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Maxime, I would like to talk about env artist for VFX. For most of studios, env department has two parts- 3d and 2d. I am a 3d artist just like you but do not be confused if you seee some matte painters state they are env artists.",
+        "ts": "1583912301.003200",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/980224375282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the env 3d parts, some of people they do modeling, texture, look-dev, and shot layout, but most of them focus on certain areas. Please consider about you would like to focus on modeling\/layout or texture\/lookdev.",
+        "ts": "1583912508.003300",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981548571219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you would like to concentrate on the modeling\/layout part, you should more focus on env modeling such as maya hardsurface modeling, Houdini procedural modeling and houdini env scattering, speedtree would be a bounce as well.",
+        "ts": "1583912754.003400",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994884091607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you like the texture\/lookdev phases, you can just focus on improve your technical and creative skills. you could choose substance painter or Mari, but it is good to know both to prove you could do textures for different scale of environments.",
+        "ts": "1583912910.003500",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995233675142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In addition, it is good to learn Nuke and use it to composit your own demo reel to improve your work appearance and as a additional skill to be a good env artist.",
+        "ts": "1583913115.003600",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/992571990548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In some studios such as ILM and DD, the env also responsible for env lighting. so basically as a 3d env artist you are a 3d generalist who knows everything from modeling to lighting, and you are an asset artist as well. Never only consider your elf as an env artist since there are not a lot of positons in the industry, and asset and env artists are sharing most of the skillset unless you are a specialist on one small area which is not the case for most of people.",
+        "ts": "1583913469.003700",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/982950350273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to see your work in progress and reference then I could give you advices on your work.",
+        "ts": "1583913567.003800",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995246684566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Yinghao , first of all thank you so much for your message ! This is all very helpful. I think i want to focus more on the texture and lookdev aspect , i have so much fun when i'm texturing  assets  :wink: , i can try to learn Mari for my next project, it could be a good thing , as for compositing i already learned a little for the end of my second project and will learn more with the next project.",
+        "ts": "1583942457.003900",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/983869004529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The next project i want to make includes most of the skills you described, i sent you a picture of my idea : i want to add a train in the center to to improve my hardsurface modeling skills.",
+        "ts": "1583942465.004000",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996162995750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV7UKVC3F",
+                "created": 1583942483,
+                "timestamp": 1583942483,
+                "name": "Neko_Box_Shop_Japan_Ceramics_Homeware_Mountain_Train_Journey_Nanzoin_Temple_1_1024x1024 (1).jpeg",
+                "title": "Neko Box Shop Japan Ceramics Homeware Mountain Train Journey Nanzoin Temple 1 1024x1024 (1)",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 272602,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV7UKVC3F\/neko_box_shop_japan_ceramics_homeware_mountain_train_journey_nanzoin_temple_1_1024x1024__1_.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV7UKVC3F\/download\/neko_box_shop_japan_ceramics_homeware_mountain_train_journey_nanzoin_temple_1_1024x1024__1_.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FV7UKVC3F\/neko_box_shop_japan_ceramics_homeware_mountain_train_journey_nanzoin_temple_1_1024x1024__1_.jpeg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FV7UKVC3F-88d5e88e2d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583942483.004100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also with this next project I will have some Houdini terrains and scattering, Speedtree , texture ,lookdev and Nuke , layout , lighting.  i think it's a huge project but i would learn so much , do you think it's better if i focus the texturing and lookdev parts and do a another project ?",
+        "ts": "1583942516.004400",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993955340944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One more question : i am really bad with zbrush , is it a skill i absolutely need to learn to work in the industry ?",
+        "ts": "1583942521.004500",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993955608736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think i understand what you mean : it s not good to consider myself only as an environment artist because it can be hard to find a job if i only search for environment job. should i do two separate demo reels then ? one for texturing\/lookdev and another for environment ?",
+        "ts": "1583942541.004600",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/982489499699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Again, thank you so much for your answer it helps a lot :wink:",
+        "ts": "1583942546.004700",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981169099778_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One last thing : I will probably learn some Python , my boyfriend is a FX TD and according to him it can be a huge help to find a job",
+        "ts": "1583942552.004800",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/993975467317_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Maxime, the project looks worth to do and really complicated . I think you could start modeling the train station first and try to do mari texture for the whole station at the same time. The best thing of Mair is it can handel heavy mesh and lots of UDIMs.",
+        "ts": "1583995322.004900",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/997242578279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for the trees on the side you could do it by speedtree, but for the mountain it is better to be a matte painting instead of actually model since it is far background and I do not think your workstation could handel the RAM usage.",
+        "ts": "1583995450.005000",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994925679300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you really want to try houdini terrains you should pick some shot has wider angle.",
+        "ts": "1583995587.005100",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995383424240_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "people in the industry do care if you could use Mari since for most of companies the pipeline is built based on Mari, you should at least know the basic.",
+        "ts": "1583995647.005200",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995384349328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No you do not have to know Zbrush, but it will be an bounce to know for sure. You could put that ar the bottom of your list, personally I use Zbrush but I do not know how to sculpting a good character.",
+        "ts": "1583995813.005300",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995386906048_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you do not need 2 demo reel, since env and assets are basically really similar skillset. One demo reel is enough.",
+        "ts": "1583996078.005400",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/994935560324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Python is helpful, some env artist know python and those people are focus on houdini as their main software to do layout and scattering, some time you could write maya\/houdini or pipeline tool.",
+        "ts": "1583996219.005500",
+        "username": "Yinghao Chai (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/985311339137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

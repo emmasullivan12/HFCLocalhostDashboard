@@ -1,0 +1,99 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@georginamfeary has joined the group_",
+        "ts": "1507886775.000059",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256916869335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@hanctrue has joined the group_",
+        "ts": "1507886788.000164",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255180322160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "<!channel>, Hannah we have matched you with Georgina as your E-Mentor. Feel free to introduce yourselves and continue chatting within this channel. Why not send a quick video to say hello! :wave:\n\nI will now be leaving the channel, but please direct message myself or Emma if you have any questions. All the best! :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1507886809.000285",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507886832.000112",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256716157942_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1507886848.000052",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256716300598_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Hannah! So lovely to meet you. I’m at work at the moment so can’t chat for long but I’ll send you a little video when I get home tonight to get the ball rolling and then we can talk music! Have a great day!",
+        "ts": "1507895402.000087",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255373177665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello :grinning: :grinning: , it's nice to meet you too! I would send you a video too, but I don't like videos of myself (plus I have no means of taking one anyway haha). I look forward to your message later :slightly_smiling_face:. See you soon!",
+        "ts": "1507913480.000051",
+        "username": "hanctrue (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256068924562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I'll just introduce myself in words. I'm better with words anyway haha. My name is Hannah (if that wasn't clear), I am 15 (mentally -6) and I'm just about surviving year 11 so far. My massive passion is Music. I play the piano and I kinda play guitar, and I love listening to music. I am a massive k-pop fan! \"Massive\" is an understatement; I'm more *O B S E S S E D* haha. I have a problem I know. I surprisingly enjoy playing classical pieces on piano more than I like playing songs. I'm working towards my Grade 6 in piano at the moment :grinning: . I also plan to study music in college. I've already applied for a BTEC Diploma in Music Technology and a BTEC Level 3 in Music Performance. I hope one day to study Music in uni as well, hopefully internationally too! I also love books and films (the book was better regardless the book- to - film adaptaion haha). I also really like food and bubble tea. I think that's about it?",
+        "ts": "1507914916.000064",
+        "username": "hanctrue (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256138146260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

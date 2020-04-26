@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s good that you are managing to attend some industry talks. These days there is so much good quality information out there, that with a little hard work you can get all the information you need. \n\nInstead of trying to find a starting job, I would try to focus on the area of practice that you’re passionate about. Once you get a job, you can end up getting quite distracted. Breaking into a ILM can be very difficult, so you may need to cast your net wide initially to find your first job. The important thing is that you are working on your craft, and continuing to hone it. \n\nPostvis is basically the first pass of the vfx and can get very sophisticated these days. We have to track, match move the actual footage then redo our shots and comp the work. I’ve had many shots that look close to final on my shows. Techvis is basically taking our previs, and then breaking it down so that we can tell the client exactly how to shoot it. This would involve diagrams, green screen, camera and crane placements. ",
+        "ts": "1575717327.002600",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/851213615250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve just started a new job at dneg recently and they’ve already called me in for weekend work. So I’m in here for the day!",
+        "ts": "1575717374.002700",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/852528236979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Congrats on starting a new job",
+        "ts": "1575732917.002800",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/864077062224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well that is one of my fears of getting a job which is not what I want to do. I did apply to the third floor for previz jobs but got declined because I really didnt have much or previz work to show off.\n\nWhat do you think should I start in previz or something similar and make my way up to the position of my choice or should I only target the jobs I want to be in??\n\nI really would love to stay in a pre-production environment and I believe previz is one of the stepping ladders towards becoming a art director??",
+        "ts": "1575735728.002900",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/863638296516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "morning chris, how was the weekend?\nyou wanna do a call at some point tomorrow?",
+        "ts": "1586882899.009900",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1074483590561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Stephen! We had a great weekend. How about you?\n\nYes that'd be great. I think I may have a short call at 10 am cst but other than that I am pretty free I think.",
+        "ts": "1586890673.010000",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062467308883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok -- ill give you a ring 12cst -- i think thats 10am in la...",
+        "ts": "1586893189.010100",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1086200301680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "weekend.... fine. they're all blending together at this point. -- a couple of movies, some scrabble, some margaritas...",
+        "ts": "1586893224.010200",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062359828754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good.\n\nHaha yeah that's true. We did some stuff with the kids for easter, worked a little on my dinosaur short script and props, and then got my new computer set up yesterday.",
+        "ts": "1586893451.010300",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1062578200963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

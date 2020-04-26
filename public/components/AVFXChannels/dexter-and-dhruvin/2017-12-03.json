@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I hope this programme has been useful for you and I look forward to hearing about your career progression over time :smiley:\nI'm sure you have a great one ahead of you!",
+        "ts": "1512305574.000039",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-03\/280938629730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Stay in touch!",
+        "ts": "1512305577.000006",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-03\/281810758390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

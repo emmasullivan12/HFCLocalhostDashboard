@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Paul apologies for taking a while to get back to you. \n\nI’m currently working at Sky as part of a Sky Drama placement aimed at getting disabled people into the media industry. So far I’ve done some post production work where I spent time with graders, sound mixers and a series of editors. I did actually spend the day at DNEG getting some insight into VFX so I have some idea of what happens in that part of the process.\n\nI’m currently just trying to figure out where exactly I fit in the industry and I guess with disabled access being one of my biggest hurdles it’s difficult to gauge how and where to start. ",
+        "ts": "1553167859.001800",
+        "username": "Blessing Odukoya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/583769724052_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

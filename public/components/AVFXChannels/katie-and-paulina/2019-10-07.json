@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, Katie!! Hope you're doing well. I don't want to spam, so I'll wait for the reply but I just wanted to let you know that I have some updates on the monkey sculpt that I'd be more than happy to share with you!!:))",
+        "ts": "1570494363.004400",
+        "username": "Paulina Rybakaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-07\/788934081783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

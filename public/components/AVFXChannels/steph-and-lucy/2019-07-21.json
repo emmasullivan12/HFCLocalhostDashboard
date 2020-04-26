@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's okay I thought you would just be super busy. What kind of stuff are you working on at the moment? \n\n I think a work placement would be amazing. I will put some clips together and send you a link once I've got that done.",
+        "ts": "1563726286.000100",
+        "username": "Lucy Davis (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-21\/701185477248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

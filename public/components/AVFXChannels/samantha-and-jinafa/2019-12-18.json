@@ -1,0 +1,104 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries and thank you!",
+        "ts": "1576693968.001800",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/878694078980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you say healthcare startups doees it mean like the new advanced technology for health care or something else? And yesss its all about technlogy nowadays so having career prospects on that is a pretty smart move",
+        "ts": "1576694138.001900",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/881015508055_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow you got full marks?Thats amazing. And no I have the memory of a fish:joy: I need constant reminders if want to remember something(unless its something that i found interesting)",
+        "ts": "1576694305.002000",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/878703304772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really don't mind any job, I just like being independent so as long as it gives me enough pocket money i'm fine. Yessss I would be really grateful if you could help me on that, I don't know where to apply.",
+        "ts": "1576694603.002100",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/867700489203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "THANK YOU SO MUCH, you actually took the time and effort to do this when you have such a busy schedule:sob:",
+        "ts": "1576694720.002200",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/867703854675_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How can I ignore such god advice? I will edit my cv and send it back to you so you can have another final look",
+        "ts": "1576694779.002300",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/878716674564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRX3CAL9M",
+                "created": 1576697709,
+                "timestamp": 1576697709,
+                "name": "Edited CV.docx",
+                "title": "Edited CV",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "filetype": "docx",
+                "pretty_type": "Word Document",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 37398,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRX3CAL9M\/edited_cv.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRX3CAL9M\/download\/edited_cv.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRX3CAL9M\/edited_cv.docx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRX3CAL9M-2d50ccde3b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1576697710.002400"
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haven't heard from you in a while...",
+        "ts": "1537473091.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-20\/439348436449_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Everything OK Juba?",
+        "ts": "1537473099.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-20\/439206571664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyway, here some stuff I would like you to read and give me some advice on.",
+        "ts": "1537473157.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-20\/439207308144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First, my latest game works post, about my stealth game test. <https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-16sneak-around-a-game>",
+        "ts": "1537473184.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-20\/439937027874_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "NANA MARFO",
+                "title": "NM GameWorks #16:Sneak Around a Game",
+                "title_link": "https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-16sneak-around-a-game",
+                "text": "Talking about the Stealth Game Prototype!",
+                "fallback": "NANA MARFO: NM GameWorks #16:Sneak Around a Game",
+                "image_url": "http:\/\/nanamarfo.weebly.com\/uploads\/1\/1\/1\/8\/111885923\/dmck0orxcae6qcg_orig.jpg",
+                "from_url": "https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-16sneak-around-a-game",
+                "image_width": 556,
+                "image_height": 250,
+                "image_bytes": 23340,
+                "service_icon": "https:\/\/nanamarfo.weebly.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-16sneak-around-a-game"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Secoundly, a deep dive on how Japan has inspired me to make games. <https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-15inspired-and-comforted-by-japan>",
+        "ts": "1537473244.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-20\/439830566403_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "NANA MARFO",
+                "title": "NM GameWorks #15:Inspired and Comforted by Japan",
+                "title_link": "https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-15inspired-and-comforted-by-japan",
+                "text": "Time to talk about what inspires me...",
+                "fallback": "NANA MARFO: NM GameWorks #15:Inspired and Comforted by Japan",
+                "image_url": "http:\/\/nanamarfo.weebly.com\/uploads\/1\/1\/1\/8\/111885923\/maxresdefault_orig.jpg",
+                "from_url": "https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-15inspired-and-comforted-by-japan",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 83098,
+                "service_icon": "https:\/\/nanamarfo.weebly.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/nanamarfo.weebly.com\/blog\/nm-gameworks-15inspired-and-comforted-by-japan"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Finally I have a Linkedin! Please give some advice on how to look employable here! <https:\/\/www.linkedin.com\/in\/nana-marfo-959050171\/>",
+        "ts": "1537473365.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-20\/439351926625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

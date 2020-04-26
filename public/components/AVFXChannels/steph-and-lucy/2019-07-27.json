@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay so at least I know that means it's something major!",
+        "ts": "1564262912.000300",
+        "username": "Lucy Davis (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-27\/696731598483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

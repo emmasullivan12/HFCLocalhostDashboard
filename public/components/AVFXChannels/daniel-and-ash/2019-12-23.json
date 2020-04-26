@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a great Christmas!",
+        "ts": "1577135906.000100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884733236240_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.linkedin.com\/feed\/update\/activity:6614919510669475840|https:\/\/www.linkedin.com\/feed\/update\/activity:6614919510669475840>",
+        "ts": "1577135915.000200",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873265256835_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Simon Davies on LinkedIn: #ilm #london #jediacademy2020",
+                "title_link": "https:\/\/www.linkedin.com\/feed\/update\/activity:6614919510669475840",
+                "text": "Jedi Academy 2020 - ILM London. Watch this space. Applications opening soon... #ilm #london #jediacademy2020...",
+                "fallback": "Simon Davies on LinkedIn: #ilm #london #jediacademy2020",
+                "image_url": "https:\/\/media.licdn.com\/dms\/image\/C4E22AQEFxNYp0XveHw\/feedshare-shrink_2048_1536\/0?e=1579737600&v=beta&t=3VAftEjrYyCMeV8eBEQ1YiFzgbw-k2ahwvaCJR4pxKk",
+                "from_url": "https:\/\/www.linkedin.com\/feed\/update\/activity:6614919510669475840",
+                "image_width": 375,
+                "image_height": 250,
+                "image_bytes": 195849,
+                "service_icon": "https:\/\/static-exp1.licdn.com\/scds\/common\/u\/images\/logos\/favicons\/v1\/favicon.ico",
+                "service_name": "linkedin.com",
+                "id": 1,
+                "original_url": "https:\/\/www.linkedin.com\/feed\/update\/activity:6614919510669475840"
+            }
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds good! It might be worth seeing if you can get your hand on some elements of people walking too. Then you can do a bit of keying (or roto if you are trying to make a showreel piece). You could then pop them in during the comp to really fill out the shot",
+        "ts": "1587491508.002800",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1062150512247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Defo a good idea to try and get as much movement in there as possible. Anything you can do to add more visual interest for the eye is going to really help sell the shot.",
+        "ts": "1587495094.002900",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1083202428020_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe even having some super subtle atmospherics that could drift over the sand, to give the look of it being a bit windy and its picking up smaller bits of sand will help to get the realism",
+        "ts": "1587495150.003000",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075656159509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

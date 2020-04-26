@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jafar, that's fine. Drop me an email when you are free and we can put some more time in then.",
+        "ts": "1586432131.020400",
+        "username": "Oliver Bowyer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1059313806372_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sweet sorry for this i keep getting crashes so im trying to figure whether its GPU or CPU or even PSU failure",
+        "ts": "1586441136.020500",
+        "username": "Jafar Mohammad (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1052047405411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

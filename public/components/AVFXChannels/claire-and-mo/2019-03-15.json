@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Mo! Apologies, work has been a bit busy at the moment. We're in the process of fine tuning an animation pipeline, as the studio was primarily a visualisation company until last year, specialising in stills or procedural movement. Meaning lots of gap finding and filling, which is fun, but busy times. \n\nHow are you doing?\n\n'I have a question, what steps did you take to find a job in the industry after Uni ? anything you recommend me do ?'\nI applied for work experience mostly, internships were around at the time, but not a much as they are now (and that was only 4 years ago!). I would highly recommend getting in contact with potential companies, find their recruiters on LinkedIn, and ask about internship\/work experience opportunities :)\nI had three lots of direct animation industry work experience opportunities prior to leaving university, and I had experience mentoring as part of an animation workshop for two years in a row. ",
+        "ts": "1552640732.001000",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/577887655908_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My work experience gave me the contacts I needed for my first job in the industry",
+        "ts": "1552640772.001100",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578995359623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My contacts from uni earned my second",
+        "ts": "1552640786.001200",
+        "username": "Claire (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/577920191762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

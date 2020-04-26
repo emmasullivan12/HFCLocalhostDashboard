@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I thought you had to have a light in the scene for Arnold to work? I’ll give this a try, I had a schedule didn’t go to plan so my new plan is to finish Act 1 by the end of March, done and rendered",
+        "ts": "1552980235.008100",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/578724078752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve got some more stills on my blog, I also did a test render of about 12 seconds a few posts down \n\n<https:\/\/parisanimationarts.blogspot.com\/?m=0>",
+        "ts": "1552980388.008200",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581131683922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

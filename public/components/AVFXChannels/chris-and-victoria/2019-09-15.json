@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way if you want me to check over any of your stuff you're applying with (CVs, websites) I'd be happy to :smile:",
+        "ts": "1568558037.000100",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-15\/760814043616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

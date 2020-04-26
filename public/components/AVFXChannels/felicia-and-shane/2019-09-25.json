@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ha no worries. That's actually really helpful. I hadn't taken a look at additive keyers but had a look at the Steve Wright tutorial I have on them and that will definitely help on a couple off issues Ive been having on keying.",
+        "ts": "1569420868.000300",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/774731892999_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Because we are working on a kids TV and a number of us aren't overly experienced with nuke we are working with a fairly simplified pipeline which does the job for the show we are working on but doesn't exactly do much in terms of expanding our skillset so I'm doing whatever I can in my spare time to push on a bit further than the pipeline we are working on. Will definitely take some time to experiment with the additive keyer. It looks incredibly good for edge and motion blur work.",
+        "ts": "1569421035.000400",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/772882837685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!!!",
+        "ts": "1569421038.000500",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/760104765858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, happy to help! Yeah its gold, especially if you have a clean blue\/green screen to work with. If you're in a position to ask for a clean plate, always do. It helps a lot! Otherwise they're pretty simple to do yourself but you wont get as good of a result",
+        "ts": "1569422287.000600",
+        "username": "Felicia Petersen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/772450187044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah unfortunately no clean plates and often some pretty uneven green screen in the wide shots.",
+        "ts": "1569425725.000700",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/773012773168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah with the worst offenders theres no choice but masking it unfortunately. But ibk is usually pretty great for those instances !",
+        "ts": "1569426450.000800",
+        "username": "Felicia Petersen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/774887901671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

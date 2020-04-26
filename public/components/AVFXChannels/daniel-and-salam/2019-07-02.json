@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that's seriously cool! How did you do a postgraduate course without doing an undergraduate course? All these things I've never heard of!! How is it possible to learn on the job? Would you have to come in as a runner or as an apprentice? I think the online course sounds really good to me!! I'll have to research this thank you",
+        "ts": "1562068070.000100",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684605273814_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On Friday I've got a next gen VFX apprenticeship assessment day. Unfortunately I didn't get the assessment day where FS was one of the employers  :(. I'll let you know how it goes",
+        "ts": "1562068138.000200",
+        "username": "Salam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/684313033271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ha. I'm glad you found it interesting. \nIt wasn't easy to get into a postgrad with out a degree but I had worked in film for a few years before that and had to show them a folio of my art to get on. Got turned away once before I eventually got on the course.\nSome people get other jobs in the field and work in their own time to become an animator,  like tracking or roto or admin.  But because they are in the building and people know they are nice hard workers , they sometimes get given the chance.",
+        "ts": "1562070677.000300",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671102110227_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck !",
+        "ts": "1562070694.000400",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-02\/671088351746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

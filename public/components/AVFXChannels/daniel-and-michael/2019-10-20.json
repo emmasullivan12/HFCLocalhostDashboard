@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Daniel! How have you been?\n\nI'm still really busy with the short film. It's going well but we're getting a bit stuck on ironing out some issues with the matchmove and getting the character rigs up to scratch. Nevertheless, cleanup is coming along well and I've been making good progress on the film's grade. I've also been fortunate to work on the prep for a couple of independent shorts that Escape has exclusive access to! It'll cover the cleanup portion of one of my modules and get me a film credit so I'm really looking forward to it. They're lovely plates and it looks like some challenging work.\n\nAs for my roto, I've put together a rough comp and gone back through it frame-by-frame tightening up loose areas like his thighs and left hand. <https:\/\/youtu.be\/9H0EtCxZd5M> I was quite surprised how many things I'd still managed to miss (and I will likely be surprised again at this rate but fingers crossed!). It's part-troubling-part-comforting to go back and see what bad mistakes I'd missed but also know I wouldn't let them happen in the first place anymore. That's sort of the trouble with having most of my learning curve take place on this one shot. His left arm was one of, if not the, first part I worked on and it showed. I'm really hoping I've got it this time, but fully prepared to not, and still extremely grateful for your patience. Thanks again.",
+        "ts": "1571611814.001400",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-20\/789470028786_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "michaelVodden_roto_comp.v10.01",
+                "title_link": "https:\/\/youtu.be\/9H0EtCxZd5M",
+                "author_name": "Michael Vodden",
+                "author_link": "https:\/\/www.youtube.com\/user\/Artifexan",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/9H0EtCxZd5M\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: michaelVodden_roto_comp.v10.01",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/9H0EtCxZd5M?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/9H0EtCxZd5M",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/9H0EtCxZd5M"
+            }
+        ]
+    }
+]

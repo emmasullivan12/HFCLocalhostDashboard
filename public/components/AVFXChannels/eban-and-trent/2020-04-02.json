@@ -1,0 +1,165 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585819527.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585819527.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e85af8686e7aa00042448c6|this link> with other teams to invite them in it_",
+        "ts": "1585819527.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1585820806.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1585820811.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585820866.000900",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585820866.001100",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1585820879.001200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-25\" to \"eban-and-trent\"",
+        "old_name": "z-shared-25",
+        "name": "eban-and-trent"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@t4tune58 has joined the channel_",
+        "ts": "1585820983.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044959292134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@iameban has joined the channel_",
+        "ts": "1585820996.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044959460630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Trent, , please meet Eban your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1585821012.001500",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1034585616609_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1585821016.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043307892884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1585821022.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1031338472802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eban! Thanks so much in advance for being my EMentor. So to tell you a little about me, I went to SCAD and studied animation and graduated in 2018. Since then I went to an internship at a small studio called Millions of Tiny Robots in Atlanta and became a 3D Generalist doing lots of animation, texturing, modeling, some lighting, and lots of work in Unreal. I loved doing that but I felt like I still wanted to work on film\/tv, so I soon got accepted to the MPC academy where they trained me and taught me the pipeline to finally starting as a full on animator at Mill Film. \n\nIn Montreal i worked on CATS and another vfx project that so far is not announced. Doing vfx in Montreal was so so so fun but I started to kind of miss being in the US and someone I had once worked with briefly in Atlanta had told me about a previs studio he got put as the supervisor at back in Atlanta and offered to have me on the team. So I wanted to jump on that opportunity as soon as I could. Unfortunately plans changed and projects got shifted so as soon as I got down to Atlanta I was left without any leads. I continued my job search, updated my reel quite a bit, almost got back in a few places, and then this whole virus thing hit at the worst time.\n\nSo I think through all of this I’m really just looking for any advice or guidance you may have. I’ll send you my demo reel link if you’d like to take a look as well! For a long time I’ve been trying to think of things to add to it as well but honestly everything going on right now has hit me with a bit of a demoralizing creative slump, so I really will appreciate any and all input you have.",
+        "ts": "1585840315.001800",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1032321864866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/399310719|https:\/\/vimeo.com\/399310719>",
+        "ts": "1585840343.001900",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1045299852710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my demo reel^ and the password is reel2020",
+        "ts": "1585840360.002000",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044113398148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’d also love to know about you too!",
+        "ts": "1585840393.002100",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1043914733621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

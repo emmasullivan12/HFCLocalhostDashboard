@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Adeena! So nice to meet you &amp; I'm really excited to be your E-Mentor :smiley:\n\nA little bit about me: I'm Samantha and I work at the NHS as part of the Royal Free NHS Hospital Trust (a group of 3 hospitals in London). The guys at Prospela sent me your profile which says you're passionate about Science and have quite some experience volunteering in a care home. Would love to hear more about that and your experience there! You also mentioned that you might be working on your UCAS personal statement soon and I can certainly give you some guidance on that and insight to work life in the industry.\n\nDo you know exactly what you want to study at University? What role(s) are you aiming to get into afterwards? Would be great to know so I know what to cover during our chats :wink: and it's completely fine if you are undecided too, just let me know where I can help!",
+        "ts": "1585392845.001800",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1021613876691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also anytime you want to send a message go ahead! I can't always reply straight away whilst at work but I will get back to you as soon as I can!",
+        "ts": "1585392853.001900",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1023057724577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s fine, 1 day is more than I had before so I’m definitely not going to turn my nose up at it. Wednesday 10th sounds great to me. \nI’ve arranged to stay with a friend in London the night before so I can be there early and make the most of the day :slightly_smiling_face: ",
+        "ts": "1553089956.001100",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/584228715958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok great sounds good. I generally get to the office around 9.30am so you will need to wait in reception for me and then we will do your NDA etc. I'll make sure Framestore know you are coming too.",
+        "ts": "1553090734.001200",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/574233884817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in the meantime how is your project coming along?",
+        "ts": "1553090745.001300",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/580396961872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "anything you need some help with",
+        "ts": "1553090753.001400",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/583140001733_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "?",
+        "ts": "1553090754.001500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/580397121680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Tom HR are asking how old you are for some reason.",
+        "ts": "1553104344.001600",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/580705983616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That all sounds good to me. \n\nMy project is going alright. I’m aiming to have 9 models done, rigged and 3 and a half minutes of rough animation done by 29th April. As well as 6 backgrounds finished. \n\nSo far I’ve made 1 model with blend shapes for every character as well as lip sync and emotion blend shapes. I’m doing 2 bodies tomorrow and separate arms which I’m hoping to rig Friday, then bind them but keep them as separate joint systems so that I can scale each part independently to match every character. I’m away from my computer for tonight but I’ll send some stuff over tomorrow if you don’t mind giving feedback on the blend shapes?\n\nI’m 25 too. Do you need my date of birth?",
+        "ts": "1553109418.001700",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/574643152385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

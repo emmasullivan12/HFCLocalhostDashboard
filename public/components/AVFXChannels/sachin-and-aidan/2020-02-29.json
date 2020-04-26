@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m doing ok thanks, how’s you?\n\nI’ve currently got too many tools I’m building but might merge them together, the first is a locator script that creates locators based on the number of joints but it can also create controls. And I’m planning to turn that into a rigging UI for myself.\n\nThe other is a stretch leg script that takes inputs from the user and sets up nodes to allow the joints to scale.\n\nI’m kinda comfortable with coding but would like to gain more confidence I often find myself going the long way round because that’s how I comprehend the process. And for GCSE I did take computer science where I studied python and some other languages but didn’t fully grasp it and haven’t really done much until now ",
+        "ts": "1582977937.002200",
+        "username": "Aidan Lonergan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-29\/977650223062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

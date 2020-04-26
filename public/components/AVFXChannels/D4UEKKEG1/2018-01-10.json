@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F8QEWNRPB",
+                "created": 1515619920,
+                "timestamp": 1515619920,
+                "name": "Prospela Financial Plan - 08.01.18.xlsx",
+                "title": "Prospela Financial Plan - 08.01.18.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 204128,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8QEWNRPB\/prospela_financial_plan_-_08.01.18.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8QEWNRPB\/download\/prospela_financial_plan_-_08.01.18.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F8QEWNRPB\/prospela_financial_plan_-_08.01.18.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F8QEWNRPB-f7c04a6e57",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1515619920.000255"
+    },
+    {
+        "type": "message",
+        "text": "what happens if i do this <#C7HDW37JA|dexter-and-aspen>",
+        "user": "U4V22C6A1",
+        "ts": "1515620026.000116",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

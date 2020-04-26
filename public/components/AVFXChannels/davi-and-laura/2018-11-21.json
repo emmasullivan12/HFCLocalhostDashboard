@@ -1,0 +1,118 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hivlaura. That sounds like a wise choice to postpone. We can pick it up again later on. ",
+        "ts": "1542789640.010400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486015613863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some info for you ",
+        "ts": "1542789648.010500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485164552197_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Another mentor shared this animation apprenticeship. \nThe deadline to apply is today... <https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/>",
+        "ts": "1542789687.010600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486016117655_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Animation Assistant TD - paid apprenticeship opportunity",
+                "title_link": "https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/",
+                "text": "We have a paid apprenticeship opportunity for an Animation Assistant TD - but hurry, applications close soon!",
+                "fallback": "Animation Assistant TD - paid apprenticeship opportunity",
+                "image_url": "http:\/\/www.blue-zoo.co.uk\/static\/media\/news\/benextgen.jpg",
+                "from_url": "https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 49261,
+                "service_icon": "https:\/\/www.blue-zoo.co.uk\/static\/img\/favicon.ico",
+                "service_name": "blue-zoo.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.blue-zoo.co.uk\/feed\/Animation-Assistant-TD-Apprenticeship\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A project idea:  Photography Comosition and ways of seeing: You can use your phone to take photos. \nTake a photo everyday (or every other) of objects you see everyday maybe on your journeys to school , at home, in school, etc. \nPhotograph them in a different way so they are almost not recognisable. So make them abstract, and out of context of what and how  you normally see them. \nFurther challenge: use the same object for a week. Then the next week switch to another. Staying on the same object will force you to look at the object in different ways. \nTry for say 1 week, 2 weeks if you can. \nThe more often you shoot, say daily, thenthe more often you can switch objects. \nThen I can add other photography challenges that are more thought provoking. \nI can give some famous art photographers list as a reference for ideas. \nThen post the images, daily if you want or weekly summary. \nWhat do you think? ",
+        "ts": "1542790095.010800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484866437859_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I like the sound of that, I think I'll give it a go. I'll photograph the same object for a week",
+        "ts": "1542813853.010900",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485264574466_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the apprenticeship info but you need a degree to apply to it.:sweat_smile: ",
+        "ts": "1542814020.011000",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484662976785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Doh :laughing: oops. ",
+        "ts": "1542830154.011100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485735866165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool try that challenge. If bored, I have other ideas. :wink:",
+        "ts": "1542830174.011200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486936852534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will get you a list of famous art photographers tomorrow when back at the school. ",
+        "ts": "1542830220.011300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/485536695186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

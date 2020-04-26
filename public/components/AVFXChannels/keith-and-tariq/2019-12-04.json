@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "both sims are cool but I'm not sure what's happening with the football one.  It would be cool to see the ball whole for another second or so before destroying it.  I wasn't sure what it was at first.",
+        "ts": "1575474253.001200",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/859699373312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also you could add a dust pass to the sign break!",
+        "ts": "1575474277.001300",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/859244182580_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice progress though",
+        "ts": "1575474297.001400",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/859244866612_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

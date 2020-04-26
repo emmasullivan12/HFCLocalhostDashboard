@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nana, just want to give you a quick update on what I'm doing!\nI finished working on Spiderman last week, and moved to the remake of Lady and the Tramp. Its been quite challenging so far since we are going for hyper realism, but also incredibly fun!",
+        "ts": "1558547725.001200",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-22\/642788075972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

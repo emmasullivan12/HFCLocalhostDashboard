@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574854263.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1574854288.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-26\" to \"lucy-and-mauriton\"",
+        "old_name": "z-shared-26",
+        "name": "lucy-and-mauriton"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Villiers E-Mentoring* joined the shared channel_",
+        "ts": "1574854411.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1574854414.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@lucy.wisada has joined the channel_",
+        "ts": "1574854777.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/839774603651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@fernandesmauriton has joined the channel_",
+        "ts": "1574854795.001200",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/851242906176_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Mauriton, please meet Lucy your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1574854800.001300",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/850785600084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1574854811.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/843312725697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1574854816.001500",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/839775257683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey there! I'm Lucy, as Emma said, and she thought I'd be the ideal person to talk to you since I studied Computer Science at uni and entered as a software developer in the visual effects industry. I now work at Framestore where I started on graduation in 2017, but did a year placement there as part of my degree so got to go back after my final year of uni. I started out in their R&amp;D department working in computer graphics using C++ for making plugins in Autodesk Maya (vfx's main software) and since January I have moved positions into being an Assistant Technical Director which is a lot less technical, though I still do a fair amount of Python scripting and I help production, artists and the supervisors on a film project by developing tools and fixing things to make sure everything moves along nicely. That's my most basic summary haha, but of course I can go into plenty more detail into whatever you care about! :slightly_smiling_face:",
+        "ts": "1574889808.001600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/839280527122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

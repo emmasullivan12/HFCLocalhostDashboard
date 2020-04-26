@@ -1,0 +1,281 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! Of course I wouldn't mind, send it my way :) I'm doing alright, wfh is working nicel and I'm still holding meetings remotely. How about you, vas your university switched to teaching online?",
+        "ts": "1587540533.000500",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1063387579431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, I will asap!! Rendering it now :')",
+        "ts": "1587554802.000600",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1102434205408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great to hear! My university has given me.. 2 lectures. Within the span of a month. I suppose it might be because we have deadlines to complete but their communication skills are sadly lacking..",
+        "ts": "1587554886.000700",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1102436582416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, looking forward to it :slightly_smiling_face: Ah I'm sorry to hear that they're not being very engaging.. Let me know if you do need any help or if you get blocked, I'd be happy to give pointers",
+        "ts": "1587567138.000800",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1064382214727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "here you go! <https:\/\/vimeo.com\/410589804> :blush:",
+        "ts": "1587567188.000900",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1072384422374_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Show reel",
+                "title_link": "https:\/\/vimeo.com\/410589804",
+                "author_name": "Cliodhna O'Loingsigh",
+                "author_link": "https:\/\/vimeo.com\/user113531296",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/882315043_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Hi! This is my first showreel, I hope you enjoy. :)\n\nEmail: \nPortfolio: ",
+                "fallback": "Vimeo Video: Show reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/410589804?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Show reel\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/410589804",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/410589804"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587567188.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thank you so much, that's such a relief to hear :relaxed:",
+        "ts": "1587567217.001100",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1079119415122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice! You have a great style :)\nThere are some really good studies of movement there! You've packed a lot in that show reel in little time, I wouldn't be afraid to cut a few things!\nI've broken down a few things that stand out :)\n00:00 - 00:03 Love the intro! Sometimes only a few brush strokes can convey movement effectively, beautiful. Only thing is that it speeds up at the end and your character zaps out, tiny detail though.\n00:08 - 00:03 Incorporating the reference you have in that clip we've just seen can help make them feel more integrated. A suggestion could be to freeze it at 00:11, break down the three layers and then resume the animation.\n00:24 - Nice studies there! The animation is so beautiful I reckon you can have the walk cycle take up the whole screen and then have the concepts\/tests come afterwards.. It'd be such a shame to minimise that clip, it's really pretty!\n00:33 - Good portraits, although I wonder if the last one at 00:34 is strong enough to stand alone. Looking at your online portfolio, I reckon the four at the top stand out the most.\n00:35 - 00:44 Really nice light and mood study. A suggestion is to have the reference as a little icon overlaid on top of your breakdown to separate it from the rest.\n00:54 love the animation, the movements are really fluid!\n01:02 The Maya part at the end is a little confusing, maybe a little explanation can help.\nFeel free to ignore any feedback you don't agree with :stuck_out_tongue_winking_eye:",
+        "ts": "1587571173.001200",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1072593451430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All feedback is appreciated don't worry :joy: I'll defo re-edit it now thank youuuu!! There were some bits I was defo unsure with, i.e Maya since I just started Maya I thought I'd show some quick renders playing with atmospheric lighting but I forgot to preface that :') I tried to have all the work I was proud of in it, or work I knew had a reference since I tend to just draw without reference alot. If I included an alternative piece, would maybe like vague inspo or colour schemes suffice an image reference?? :open_mouth:",
+        "ts": "1587571926.001300",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1079577827779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that could work, although sometimes showing references aren't always needed. What kind of colour schemes do you have? You can drop images in this chat if it's easier",
+        "ts": "1587572279.001400",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078004738789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also your show reel should showcase your best work, remember recruiters can also check out your website to see more :slightly_smiling_face:",
+        "ts": "1587572422.001500",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1072657480966_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I usually use contrasting colours alot! So, red v.s black. Yellow and black etc.",
+        "ts": "1587572516.001600",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1092021641921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My sister advised I make my CV with my own template and colour palette to showcase my style since she did the same to a less personalised extent. :thinking_face:",
+        "ts": "1587572630.001700",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1064667478247_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Showing those experiments can still be useful! I reckon for a show reel you don't need references for all your work, that can end up overcrowding it a bit, taking the focus away from what's important. Yes a stylized CV will always stand out, definitely follow that advice. Some recruiters only look at show reels but it's still worth having under your slieve. This is something you'll be continuously working on and refining as well",
+        "ts": "1587572874.001800",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1079621918419_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gotcha!!",
+        "ts": "1587572920.001900",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1079624035955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I once saw a CV that was laid out like a menu, that definitely made him stand out and he got called back :stuck_out_tongue:",
+        "ts": "1587572941.002000",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1064681836903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, that's so brilliant omg :joy:",
+        "ts": "1587573003.002100",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1103260230320_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I thought maybe to do comic book panels, but I'm not too sure.",
+        "ts": "1587573366.002200",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1072702881606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds good, do a few tests and see where it takes you :slightly_smiling_face: You also wouldn't want it to be too distracting so it's about finding a balance",
+        "ts": "1587573486.002300",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078062083845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cel shading is very popular nowadays!",
+        "ts": "1587573584.002400",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1085614812900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "a bit like how spiderverse played around with blurring\/colour\/highlights\/lighting to draw focus",
+        "ts": "1587573647.002500",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1103290633760_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I've seen! The spiderverse was a masterpiece, it was so pretty.",
+        "ts": "1587573709.002600",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1020667758706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will try make it not as loud as I tend to do.",
+        "ts": "1587573722.002700",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078072511029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha nice :slightly_smiling_face:",
+        "ts": "1587573753.002800",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078073840997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

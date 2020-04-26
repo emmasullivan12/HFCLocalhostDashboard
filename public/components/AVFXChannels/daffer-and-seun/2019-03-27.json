@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The role I am working towards based on my current role is to an IT manager, I would like to eventually move up the ladder to achieve that.  Having said that, I do have entrepreneurship dreams that I would like to achieve one day.  I would like to develop mobile apps and get involved in the programming and creatives industry, found a company and achieve success that way, similar to Evan Spiegel.",
+        "ts": "1553686982.002500",
+        "username": "Seun Olaniyi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/587276458016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

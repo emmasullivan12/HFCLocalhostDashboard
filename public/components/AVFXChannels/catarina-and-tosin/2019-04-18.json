@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Catarina",
+        "ts": "1555591891.000100",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/614546246854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry it's been a while I was just thinking of things to ask you",
+        "ts": "1555591904.000200",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/606088093425_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One of them is how is it working as a Female in the industry",
+        "ts": "1555591927.000300",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/611828359092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

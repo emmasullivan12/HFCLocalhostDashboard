@@ -1,0 +1,1107 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "HI Tony! Happy New Year! Sorry for the radio silence. I was in NY visitng family and then back teaching. How are you?",
+        "ts": "1579788802.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906144783426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.ukscreenalliance.co.uk\/wp-content\/uploads\/2019\/06\/The_Core_Skills_of_VFX_-_Student_Primer.pdf>",
+        "ts": "1579788804.000200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918930131744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey hope you had a good time!! I am working on a production for free as a cleanup artist! A bit challenging at times but i am trying my best!",
+        "ts": "1579788885.000300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921140975702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&amp;utm_content=106162222&amp;utm_medium=social&amp;utm_source=linkedin&amp;hss_channel=lcp-2663437>",
+        "ts": "1579789076.000400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921146456694_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Discover @ The Rookies",
+                "title": "Beginner's Guide to Visual Effects - A free book that explains everything you need to know about getting started.",
+                "title_link": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&utm_content=106162222&utm_medium=social&utm_source=linkedin&hss_channel=lcp-2663437",
+                "text": "Why pursue a career in Visual Effects? Maybe because it's a career that involves the perfect mix of story telling, cutting-edge technology and creativity. It could also be because you love films and want to hang out on set surrounded by movie stars. Maybe you want a career that allows you to travel the world or even work remotely from home. Or maybe it's because you love drawing and building things with your hands and on the computer. There are so many reasons why you would want to work in Visua",
+                "fallback": "Discover @ The Rookies: Beginner's Guide to Visual Effects - A free book that explains everything you need to know about getting started.",
+                "image_url": "https:\/\/discover.therookies.co\/content\/images\/2019\/09\/facebook-advert-1.png",
+                "image_width": 476,
+                "image_height": 250,
+                "fields": [
+                    {
+                        "title": "Written by",
+                        "value": "Andrew McDonald",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&utm_content=106162222&utm_medium=social&utm_source=linkedin&hss_channel=lcp-2663437",
+                "image_bytes": 757161,
+                "service_icon": "https:\/\/discover.therookies.co\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&amp;utm_content=106162222&amp;utm_medium=social&amp;utm_source=linkedin&amp;hss_channel=lcp-2663437"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579789077.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2 shots got approved already and working on the third one . My supervisor said he has another one lined up",
+        "ts": "1579789081.000600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918950210741_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will have a look!",
+        "ts": "1579789092.000700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918938260240_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Congrats! Great opportunity!",
+        "ts": "1579789254.000800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918942971904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you work at Dounut time near Covent Garden?",
+        "ts": "1579789318.000900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/920805496903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cupcake Stories",
+        "ts": "1579789347.001000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921154188534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right in the heart of Covent Garden where the live music is :innocent:",
+        "ts": "1579789368.001100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918958478629_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ARe you there today?",
+        "ts": "1579789502.001200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921158828598_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As we speak :innocent:",
+        "ts": "1579789517.001300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906165380706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With 0 customers haha",
+        "ts": "1579789524.001400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906165587394_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. I can come by now for a quick visit. My lunch was too small. Still hungry :wink:",
+        "ts": "1579789574.001500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908766902721_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Looking forward to it!",
+        "ts": "1579789602.001600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908767810401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We only have sweets though :innocent:",
+        "ts": "1579789661.001700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918955069680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which one are you in? I went to the Long Acre one ",
+        "ts": "1579790296.001800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921184050534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cupcake Stories ",
+        "ts": "1579790321.001900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918976279040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FT0V37EQM",
+                "created": 1579790345,
+                "timestamp": 1579790345,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1200677,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT0V37EQM\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT0V37EQM\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 270,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 360,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 540,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 600,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 720,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT0V37EQM-ef58f14273\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 768,
+                "image_exif_rotation": 1,
+                "original_w": 4032,
+                "original_h": 3024,
+                "thumb_tiny": "AwAkADCvIxZcKoUDt60RQyOwKrxV5LaOPluT7095Ag4GPTPFFwsQx2S53SHJ9BU42IMKBj26VD5wkyOfu8E8DNQiReN7k+w70AWWuB25PYCrEbZQEjBPas97sKuETBxgHvUKXUgblunrUsqxZklkPQBf9rPWoZXjVepZj1qPe8x25am+VyMn8aAsIzs\/AJpFVmPANWVVVGAo5\/OlRdrFfXkU0Ir7CG54pVjLkheferMyjaPWkErqm1TgGgBMBYkCjG7OfeprpFSNVUcVCfuR\/j\/SrF70WoGVk+\/inSn5lH+zTU\/1lOk++v8Au1oiQ6p07ZpvY\/SnD7n\/AAGm9j9KbA\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FT0V37EQM\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FT0V37EQM-3bc85dadd5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1579790350.002000"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FSN5PMGAE",
+                "created": 1579790411,
+                "timestamp": 1579790411,
+                "name": "Image from iOS.png",
+                "title": "Image from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 881038,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FSN5PMGAE\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FSN5PMGAE\/download\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 202,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 450,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSN5PMGAE-c167b372d9\/image_from_ios_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 750,
+                "original_h": 1334,
+                "thumb_tiny": "AwAwABrQxjpRxwaKOBSACAaWo33MhCttJHB9KRQ4UAyZOOTimBLUZzu68fWn9qbQAUflRjmlpgLQRSEtk\/L+tKMnkjFIBMUYpxGRigDikB\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FSN5PMGAE\/image_from_ios.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FSN5PMGAE-cad02f4319",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1579790415.002300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I see I thought you were ar Donut Time. \nYou’re a bit further. What time are working till ?",
+        "ts": "1579790438.002600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907511184963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can come by after work ",
+        "ts": "1579790450.002700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908794807649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "6:30-ish",
+        "ts": "1579790491.002800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906196179890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm ok. I’ll text if I get out of work in time. Cheers. ",
+        "ts": "1579791557.002900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919029313589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, thanks!!",
+        "ts": "1579791681.003000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906237580674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am leaving soon and pass through CG on my way to Charring Cross station. Shall I pop in?",
+        "ts": "1579802975.003100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909221014369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure! We will close in about an hour but feel free to pop in for a cupcake or a coffee\/tea",
+        "ts": "1579803093.003200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919421693509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh thanks.. Just coming by to meet you and say Hi",
+        "ts": "1579803136.003300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907942106003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! I will be here!",
+        "ts": "1579803153.003400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918957447556_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also remind me to send you some links to good Comp textbooks for good theory to understand what you doing, and some other Nuke textbooks. ",
+        "ts": "1579805640.003500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919498039621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will definitely do! Once again a huge thanks for everything!!",
+        "ts": "1579805680.003600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919033163460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure! It great you are embracing the info :blush:\n",
+        "ts": "1579813990.003700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919741534789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html|https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html>",
+        "ts": "1579813993.003800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908260791267_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Fantastic Beasts™: The Wonder of Nature | Natural History Museum",
+                "title_link": "https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html",
+                "text": "Discover where the real and wizarding worlds intertwine. Fantastic Beasts™: The Wonder of Nature opens 22 May 2020.",
+                "fallback": "Fantastic Beasts™: The Wonder of Nature | Natural History Museum",
+                "image_url": "https:\/\/www.nhm.ac.uk\/content\/dam\/nhmwww\/visit\/Exhibitions\/fantastic-beasts-the-wonder-of-nature\/fb-title-treatment\/FB-Twitter-no-google.jpg",
+                "from_url": "https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 203760,
+                "service_icon": "https:\/\/www.nhm.ac.uk\/etc\/designs\/nhmwww\/favicon.ico",
+                "service_name": "nhm.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579813994.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Interesting exhibit later this spring. \nNature meets fantasy (vfx creator) design ",
+        "ts": "1579814047.004000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919277062308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pearsoncollegelondon.ac.uk\/news-and-events\/events\/2020\/1\/Roto-Clean-up-Webinar.html|https:\/\/www.pearsoncollegelondon.ac.uk\/news-and-events\/events\/2020\/1\/Roto-Clean-up-Webinar.html>",
+        "ts": "1579816061.004100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906999342978_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Compositing webinar: Rotoscoping and Clean-up with Nuke and Mocha Pro",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/news-and-events\/events\/2020\/1\/Roto-Clean-up-Webinar.html",
+                "text": "Compositing webinar: Rotoscoping and Clean-up with Nuke and Mocha Pro",
+                "fallback": "Compositing webinar: Rotoscoping and Clean-up with Nuke and Mocha Pro",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/news-and-events\/events\/2020\/1\/Roto-Clean-up-Webinar.html",
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/news-and-events\/events\/2020\/1\/Roto-Clean-up-Webinar.html"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579816062.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Webinar by my colleague this coming Wednesday. ",
+        "ts": "1579816104.004300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919799109525_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Will try and tune in as soon as I finish work! (Unless i am off)",
+        "ts": "1579816122.004400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921648245143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On roto and clean up tasks using Mocha Pro",
+        "ts": "1579816150.004500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921648966935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I registered for the webinar",
+        "ts": "1579816196.004600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909604881473_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am trying to find the energy to open nuke and do work :weary::sweat_smile:",
+        "ts": "1579816233.004700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908321741859_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh no. Yea hard after a day of work. Think about how much you can get further on your shots :laughing: ",
+        "ts": "1579816514.004800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919809992677_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m sure it’s looking  great ",
+        "ts": "1579816529.004900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922006883526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am trying to write it out so i can send you a before and my progress so far",
+        "ts": "1579816843.005000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921668624295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FSRJG14TB",
+                "created": 1579817007,
+                "timestamp": 1579817007,
+                "name": "DKR_0010_Draft_partial_Original_frames.mov",
+                "title": "DKR 0010 Draft partial Original frames",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 9077788,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FSRJG14TB\/dkr_0010_draft_partial_original_frames.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FSRJG14TB\/download\/dkr_0010_draft_partial_original_frames.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSRJG14TB-96dba905a1\/dkr_0010_draft_partial_original_frames_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FSRJG14TB\/dkr_0010_draft_partial_original_frames.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FSRJG14TB-42cc4ab5b5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1579817008.005100"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FT1QA9FJ9",
+                "created": 1579817065,
+                "timestamp": 1579817065,
+                "name": "DKR_0010_Draft_partial_V005.mov",
+                "title": "DKR 0010 Draft partial V005",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 10412896,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT1QA9FJ9\/dkr_0010_draft_partial_v005.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT1QA9FJ9\/download\/dkr_0010_draft_partial_v005.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT1QA9FJ9-49968c7360\/dkr_0010_draft_partial_v005_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FT1QA9FJ9\/dkr_0010_draft_partial_v005.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FT1QA9FJ9-4c76f9c925",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1579817066.005400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some inspiration \nOne of the teams of animation, 3D and compositing students short film that finished before Christmas break. \n\n<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1>",
+        "ts": "1579817243.005700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919817877600_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Introducing \"Joe\"",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1",
+                "text": "Escape Studios proudly presents \" Joe\" , a short film directed by third year student Callum Reeve and produced by Aidan Lonergan...",
+                "fallback": "Introducing \"Joe\"",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-dqt2dUf-zgE\/XioENYuTwHI\/AAAAAAAAF3A\/TruUif-DIH8zD4aN4MXqCyKz0LB0YYeFgCLcBGAsYHQ\/w1200-h630-p-k-no-nu\/thumbnail_JOE%2BoneSheet%2Bcopy.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1",
+                "image_width": 477,
+                "image_height": 250,
+                "image_bytes": 21650,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817244.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahha that was funny :joy: ",
+        "ts": "1579817433.005900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919835934757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1>",
+        "ts": "1579817450.006000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919822965632_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Introducing the \"March of the Potguins\"",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1",
+                "text": "March of the Potguins Escape Studios proudly presents March of the Potguins , a short film directed by third year student Michael V...",
+                "fallback": "Introducing the \"March of the Potguins\"",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-BnsIyaRjkjc\/XhyoBO2SBaI\/AAAAAAAAFuY\/G1f9js-HChAQDPvWnJaD5n6n1YJ3WRxcACLcBGAsYHQ\/w1200-h630-p-k-no-nu\/motp_oneSheet_LoRez.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 81440,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817451.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow really good clean up on your shots! ",
+        "ts": "1579817525.006200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909641599953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All 2D tracking? ",
+        "ts": "1579817536.006300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907038479810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or 3D Camera tracking? ",
+        "ts": "1579817550.006400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922035271654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I tried 3d tracking but couldn’t get a solve error under 5-6 :sweat_smile:",
+        "ts": "1579817580.006500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907039541474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Used planar tracking on the blood splatter on the wall",
+        "ts": "1579817598.006600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921688665911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! ",
+        "ts": "1579817611.006700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922036776710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1>",
+        "ts": "1579817614.006800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909643801281_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Introducing \"Draw\"",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1",
+                "text": "Escape Studios proudly presents \"Draw\" , a short film directed by third year animation student Martin Kamminga , and completed as part ...",
+                "fallback": "Introducing \"Draw\"",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-R9x78TzegBM\/XhNTEAcZZOI\/AAAAAAAAFqE\/2nryIQF5kQUEYl8RfcoV0PBS-z3ea3FWACLcBGAsYHQ\/w1200-h630-p-k-no-nu\/drawPoster_LoRez.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1",
+                "image_width": 477,
+                "image_height": 250,
+                "image_bytes": 55769,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817615.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And then stabilised the plate",
+        "ts": "1579817616.007000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909643836961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Perfect workflow :+1:",
+        "ts": "1579817641.007100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919841126709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Last film lol \n\n<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1>",
+        "ts": "1579817671.007200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908361031539_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "\"Offcut\" Selected for Dirigo Film Festival",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1",
+                "text": "Many congratulations to the makers of \"Offcut\" , whose film has been selected for its first festival entry - the Dirigo 6th International ...",
+                "fallback": "\"Offcut\" Selected for Dirigo Film Festival",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-vRWwQQ8R6ps\/XhxEvi_eeII\/AAAAAAAAFtU\/OqUu52vurkYiGEOkqJBhyQrDBW1CxCeSACLcBGAsYHQ\/w1200-h630-p-k-no-nu\/One_sheet.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 58267,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817672.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! I am trying to implement techniques that I have been picking up from\nPrevious projects and my supervisor but some of them i am not 100% sure why they work  the way they do",
+        "ts": "1579817743.007400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907043447922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lol. Yup. That’s the challenge of learning on your own. Well done for pursuing! At some point it wil make sense and as you learn from others ",
+        "ts": "1579818015.007500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908369389539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You should apply for internships this spring for summer programmes ",
+        "ts": "1579818038.007600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919836827552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, definitely on my to-do list! I keep seeing technicolor academy everyone but everything is in Montreal :sob:",
+        "ts": "1579818128.007700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919838827872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Everywhere*",
+        "ts": "1579818137.007800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909656494801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.accessvfx.org\/internships|https:\/\/www.accessvfx.org\/internships>",
+        "ts": "1579818192.007900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909657786209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow!!",
+        "ts": "1579818249.008000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921704409015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will apply to everything as soon as they are open and I have an updated showreel ",
+        "ts": "1579818283.008100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922052983846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.accessvfx.org\/blog\/frequently-asked-questions|https:\/\/www.accessvfx.org\/blog\/frequently-asked-questions>",
+        "ts": "1579818320.008200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907056639154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "AccessVFX site has tons of info. Check it out ",
+        "ts": "1579818337.008300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919843592704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will push this year to get a job or at least set my foot in the industry ",
+        "ts": "1579818412.008400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919845290448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My supervisor said that he usually brings people who work with him on unpaid gigs to actual paid gigs, there’s still hope :innocent:",
+        "ts": "1579818454.008500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919860597029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yea. Great connection! ",
+        "ts": "1579818495.008600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908380694595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a good evening. Keep up the good work on your shots! ",
+        "ts": "1579818527.008700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908381507747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will do my best! Thanks for the visit by the way! Means a lot! Have a lovely evening!",
+        "ts": "1579818563.008800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922059634390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

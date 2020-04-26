@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chloe! I went to a STEM Recruitment event at my university today and I met Katie! I was able to show her my showreel and acting animation I'm working on right now. She gave me some really good advice and and said that she is good friends with you :smile: it was really lovely meeting her :sparkles:",
+        "ts": "1571836576.000300",
+        "username": "Muniza Fazal (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-23\/805989478592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

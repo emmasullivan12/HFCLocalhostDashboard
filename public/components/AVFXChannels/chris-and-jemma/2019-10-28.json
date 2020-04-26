@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok that was really interesting thank you I didn’t know about any of that. When I take my shot can I send the raw footage your way and see what you think? ",
+        "ts": "1572281034.006200",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/814195116518_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You absolutely can",
+        "ts": "1572281777.006300",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/812015130869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

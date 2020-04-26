@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! Sorry for not answering earlier, i was busy last Friday and I thought that answering on weekend was a bit in appropriate.",
+        "ts": "1575913652.002000",
+        "username": "Ainhoa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/865393769316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The way the course is made we learn the general bases of vfx and by 3rd year we can choose an expectation. ",
+        "ts": "1575913754.002100",
+        "username": "Ainhoa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/853071539602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At the beginning of the year i was considering environmental artist, but a bit than a mont ago I started to consider generalist. I like to do a bit of everything. \nRight now we’re working on 3D pipeline; we’ve to create an improbable invention, model it all in Maya and texture it and integrate it on a footage that we’ve to shoot.",
+        "ts": "1575914016.002200",
+        "username": "Ainhoa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/853078766866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

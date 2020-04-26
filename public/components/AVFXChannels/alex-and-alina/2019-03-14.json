@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alex! Thank you so much for agreeing to be my mentor, it means a lot to me! I am a recent graduate from the University of Hertfordshire (MA Animation), and I had my BA studies back at home (Minsk, Belarus) at the Academy of Arts.  At the moment I'm trying to find my way in the industry and I would greatly appreciate if you could give me some advice on that! Thanks again:)",
+        "ts": "1552558650.001700",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/578080882486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alina, \nIt’s a pleasure to be your E-mentor. Reading all this I am thinking... we should probably speak Russian, but it’s up to you.",
+        "ts": "1552580176.001800",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577052719572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I work at MPC London as a compositing artist.  I have been working here for 4,5 years. Before I worked in Moscow as a 3D generalist in different VFX post-productions. I was born in raised in Bryansk which is pretty close to Minsk :)",
+        "ts": "1552580740.001900",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577067645748_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if available for a chat this weekend. Ideally, Saturday morning, but we can arrange it later. Speak to you soon.",
+        "ts": "1552580774.002000",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/574695770512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Отлично! Тогда конечно по-русски, хотя иногда я даже не уверена как перевести некоторые термины с английского, так что если вы не против, иногда будет немного того и другого :slightly_smiling_face: MPC одна из самых топовых компаний в VFX, так что это очень здорово и ваш опыт бы мне очень помог! Давайте тогда договоримся на субботу утром. Хорошего вам вечера!",
+        "ts": "1552585857.002100",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-14\/577198766388_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

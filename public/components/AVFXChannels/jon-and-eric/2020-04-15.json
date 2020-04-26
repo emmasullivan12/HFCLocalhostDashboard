@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi !\nRender us done. If you d like too I could do a little pre comp and send  link you can see it and take some advise from you",
+        "ts": "1586968170.007900",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1057842877814_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

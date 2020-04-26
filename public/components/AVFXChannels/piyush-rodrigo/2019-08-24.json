@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay great! I have also been told that I could look at Houdini and do some C++ stuff there as well as Maya but I don't know how I could use C++ in Maya.",
+        "ts": "1566637446.003100",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/737086264885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "C++ in Maya means more towards using the API to write the Maya plugins. Well yes Houdini is one of new hyped softwares, even cinema 4D. Houdini is used in the studios for particle effects and simulations, which is a beast in it's own. I would suggest learn the basics and understand it's working rather than deep diving if you are not interested in fx (particles like smoke, fire etc) work. I will try to get some material on Maya API for you, mainly reading materials etc.",
+        "ts": "1566648769.003200",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/730761586673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great awesome!",
+        "ts": "1566649143.003300",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/739008507607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

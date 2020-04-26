@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wholly agree that the amtrak shot would be very interesting and challenging to attempt. My main concern would be the required twenty-plus page thesis paper. If I am able to document each process and their outcomes, I should be able to meet this requirement; however, I do need to run this by my thesis advisor. If you have any suggestions on how to go about this or any other ideas, please let me know.",
+        "ts": "1579467441.000200",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/900137137554_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

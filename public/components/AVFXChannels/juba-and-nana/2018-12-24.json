@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am, thank you Nana, hope your enjoying your time off as well :smiley:\nComposition is important for sure, it's part of one of the 12 principles of animation: \"Staging\".",
+        "ts": "1545669044.000400",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-24\/510485667952_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I make an animation exercise or when im working on my shot, it's something I think about. If the action is reading well through the camera and if theres anything I can tweak to improve.\nDo you know some of the base ideas, like rule of thirds and focal points?",
+        "ts": "1545669147.000500",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-24\/511117458515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

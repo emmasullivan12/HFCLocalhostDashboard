@@ -1,0 +1,119 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  Sorry for the delay.  I was down at <https:\/\/www.bfxfestival.com\/> yesterday speaking to students and graduates about getting into the industry.",
+        "ts": "1570105973.005300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/769673822994_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "BFX",
+                "title": "BFX Festival - The UK's largest vfx, computer games &amp; animation festival",
+                "title_link": "https:\/\/www.bfxfestival.com\/",
+                "text": "BFX Festival is a week long event designed to celebrate VFX, Animation and Games, inspire the next generation of talent and share the latest knowledge.",
+                "fallback": "BFX: BFX Festival - The UK's largest vfx, computer games &amp; animation festival",
+                "image_url": "https:\/\/www.bfxfestival.com\/wp-content\/uploads\/2019\/07\/bfx-logo-white.jpg",
+                "image_width": 447,
+                "image_height": 250,
+                "from_url": "https:\/\/www.bfxfestival.com\/",
+                "image_bytes": 76209,
+                "service_icon": "https:\/\/bfxfestival.com\/wp-content\/uploads\/2017\/04\/512x512.png",
+                "id": 1,
+                "original_url": "https:\/\/www.bfxfestival.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I like your Inktober. Never heard of that before.",
+        "ts": "1570105994.005500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/776020225073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really liked that short you shared. I know I’ve felt like that in class before!  So many ideas and different styles.  I follow #animation on instagram which shows me so many different things.  I love it.",
+        "ts": "1570106280.005600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/784665217654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of people who inspire me I am inspired by all sorts of people. One I really like is Dame Steve Shirley <https:\/\/www.steveshirley.com\/> she’s amazing. Listen to her TED talk.  I’m inspired by people who have succeeded against the odds and remained human, challenging the ‘norm’ and being themselves.  Showing we can work well in different ways.  I also LOVE reading, watching film and listening to Podcasts.",
+        "ts": "1570106408.005700",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/782466022688_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Dame Stephanie Shirley",
+                "title_link": "https:\/\/www.steveshirley.com\/",
+                "text": "Dame Stephanie Shirley, came to the UK as a child refugee &amp; became a successful businesswoman. She is now a philanthropist &amp; supporter of several autism charities. Her book Let IT Go tells her story of her life.",
+                "fallback": "Dame Stephanie Shirley",
+                "from_url": "https:\/\/www.steveshirley.com\/",
+                "service_name": "steveshirley.com",
+                "id": 1,
+                "original_url": "https:\/\/www.steveshirley.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll do some digging on UAL’s illustration course",
+        "ts": "1570123496.005900",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/770122243202_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its not possible to attend the bfx festival anymore?",
+        "ts": "1570172187.006000",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/777166880401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its quite far from where i am unfortunately",
+        "ts": "1570172200.006100",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/785455758311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, im glad you like my inktober",
+        "ts": "1570172238.006200",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/777167501089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

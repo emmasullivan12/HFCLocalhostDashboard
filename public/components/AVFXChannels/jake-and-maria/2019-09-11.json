@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks :blush: I've just watched your latest video, project aqua, a few times and have some feedback! I understand it was a group project but I'll just talk about it as if you did everything as it's easier that way :wink: \n\nFirst three shots:\n I like the pillars and the fact they seem to be made of precious stone. The shader reacts nicely to light. The one thing I would change is to increase the opacity of the shader, they look a little liquid and less stone at times. The character is really nice but is too far from camera to properly appreciate. You could start the second shot further back, and with slower movement (this goes for all camera moves in this piece) to see the character in shot for longer and still fully appreciate the environment. Clothes on our character look really nice and we don't get close enough or long enough to appreciate these! \nThe modelling is all sound here, not much to improve on. \nTo really kick up the quality, a normal or displacement map on the rocks and sand would make these shots even more intriguing.\nEverything is a little bit too light, try getting creative with the lighting, for example as you go further from camera having the environment in and out of shadow like dark\/light\/dark\/light creates nice depth.\n\nShots 4 and 5 (seaweed shots):\nThe camera move is too long and complicated. Better to be a long straight camera move passing all the interesting models along the way. It's very normal to adjust characters and environments after a camera move has been designed and vice versa of course. The seaweed looks cool, but could do with being really subtly animated\/dynamic (if it is, it doesn't look like it). The wavy effect applied is neat and adds to the shot, but should be more subtle, about 50% less strong. Also, I'd apply this more subtle effect to all or none of the underwater shots, rather than some, otherwise its easy to wonder where we're supposed to be. Too much ambiguity means we're not looking at environment and characters. \n\nShot 5 to end (Shivara\/Skeleton):\nShivara and the set dressing (coral\/plants) all compliment each other nicely here. We do need some slightly brighter parts of the image though to direct our gaze, everything a little too dark and low contrast. Shivara is underlit, get a nice key light and rim light on her face. The last shot is my personal favourite as the lighting is spot on and the texture\/shader on the skeleton\/skull looks great. The edges of frame do spoil it a bit only because they're very bright, so steal our attention for something that is much less detailed and interesting. So a better option would be some dark rocks rather than bright sand.",
+        "ts": "1568205508.001400",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-11\/743639414306_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You 5 did a great job! Hope you enjoyed it and learned a lot.",
+        "ts": "1568205536.001500",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-11\/755949504820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

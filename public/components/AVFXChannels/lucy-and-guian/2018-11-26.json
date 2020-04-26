@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Guian.  Mexico was amazing. I was there during day of the dead which was really magical.  I actually watched Coco at the weekend which explains the festival really well.  Hope you're doing well. Please let me know if I can help with anything.",
+        "ts": "1543226187.000400",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487722788579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I'm waiting for my reference",
+        "ts": "1543229346.000500",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487762452035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello I am doing well working hard at college. I will definitely let you know if there's anything . Thanks",
+        "ts": "1543229711.000600",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487766700019_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

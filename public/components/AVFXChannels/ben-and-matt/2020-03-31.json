@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad to hear!\nNo decision as of yet, so hopefully they've changed their minds! haha\nAs long as it makes it all easier then that works!",
+        "ts": "1585647529.000300",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037834212816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

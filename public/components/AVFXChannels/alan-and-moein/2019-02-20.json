@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Alan, Sorry Saturday night I received a very bad news from my tow. I am so sorry for my bad. :disappointed_relieved: I am trying to recover myself in few days. please accept my apologize.",
+        "ts": "1550659409.000400",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/555754745378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":pray:",
+        "ts": "1550659440.000500",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/557186065782_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

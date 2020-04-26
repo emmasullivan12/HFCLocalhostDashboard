@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Morning! Happy to hear that. I'll try to  finish it be end of next week.\nHave a good day! :smile:",
+        "ts": "1576065456.005000",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/868922303984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

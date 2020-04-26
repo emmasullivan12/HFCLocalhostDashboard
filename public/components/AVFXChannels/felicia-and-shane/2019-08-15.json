@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Shane! Just checking in, hope you're doing well and that you're enjoying the last of the summer. Just wanted to hear how you're doing?",
+        "ts": "1565893571.001900",
+        "username": "Felicia Petersen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727432740100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

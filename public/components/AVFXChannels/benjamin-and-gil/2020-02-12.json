@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Benjamin. How are you?",
+        "ts": "1581525278.001600",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/938985763169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Gil, I am good thanks. How are you?",
+        "ts": "1581528697.001700",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/949266469957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hear you are looking for some modelling mentorship? Are there other areas, too, or just modelling?",
+        "ts": "1581528737.001800",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/949247379856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,585 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1587377511.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1587377515.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jarrod.anderson has joined the channel_",
+        "ts": "1587377660.001300",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-21\/733321264276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@chloetannervfx has joined the channel_",
+        "ts": "1587377672.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1096909230992_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chloe, please meet Jarrod your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1587377681.001500",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073067868530_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1587377698.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079236857908_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1587377705.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1096910210992_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chloe! Great to meet you, my name is Jarrod and I'm very excited to help you out any way I can. I'll tell you a little about myself first. I've been working on animated features and VFX for just under 10 years now. I started at Animal Logic working on Happy Feet, the Lego Movies and Peter Rabbit before moving into VFX. My history is in animation, both as an animator and in animation assets pipeline, and now my focus is on creature and creaturefx work, so I like to try and work in a way that recognises and enhances the work done by animation which has been really satisfying.  I've been at DNEG for a little over 2 years now and really enjoying that. I'm more than happy to help with your current work, reel, questions about the industry, pay, advice, anything! Happy to help any way I can :)",
+        "ts": "1587378192.001800",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058349676343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jarrod it's great to meet you! My name is Chloe and I'm currently study VFX Production Technology at Confetti which is based in Nottingham and specialises in creative media. Previous to this I studied Visual Effects extended diploma at BTEC level which was also at Confetti. I'm in my second year of my university course where we were introduced to the Creature Design - this is my favourite module and I would like to improve these skills so that I can be better prepared for the role as a Creature Artist. We are also being taught how to use Houdini - I'm currently making a grass simulation using Vellum for my Houdini module, but I want to expand my knowledge of Houdini so that I can create professional looking hair\/fur simulations, but I also want to experiment with muscle simulations and incorporating them with my future creatures.\n\nI'm currently making a full creature for my university module and I'm at the retopology phase which I'm doing manually inside of Maya 2020. I want this creature to potentially be on my showreel so at some point would I be able to send you previews or add your email as a collaborator on FTrack? I completely understand it you dont want to that so I'm happy to create a GoogleDrive folder instead. \n\nI also have another question. What's it like working at DNEG? I want to work for a company such as this but I'm not sure which one would be best? What's it like day-to-day?",
+        "ts": "1587379652.001900",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058392379303_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Absolutely! It would be great to keep all our collaboration notes here within the app but I'm more than happy to have a look at any links, files, everything, and then give my notes here if that works for you?",
+        "ts": "1587379830.002000",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085756553249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've really enjoyed my time at DNEG. Well, before all of this COVID drama, day to day was very easy, ha! I start at 9am and work until 6pm, with an hour break for lunch. I'll have rounds in the morning where my supervisors and production staff will swing by and we can chat about what  I'll be working on that day, and I'll work on that until lunch time. I'll submit my work to dailies for that afternoon for review by the VFX supervisor, and make their notes in the afternoon. I sit in a room with other creature artists, who are working on the same show I am or on other shows. We sit about 10 people to a room",
+        "ts": "1587380045.002100",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1096978147984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's kitchens with tea, coffee and snacks available and people are very friendly. Everyone is happy to sit down and have a chat or show what they're working on, and its encouraged to ask questions or get some advice on what you're working on. It's a great team, I'm lucky there.",
+        "ts": "1587380096.002200",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071758105861_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's a more general overview of course but happy to answer any specific questions I can :slightly_smiling_face:",
+        "ts": "1587380116.002300",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073348488531_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's really useful information thank you! Sorry to keep asking questions but how big is the creature department at DNEG? Does everyone tend to focus on one area of the pipeline or do people work in multiple areas? Also how to you get new creature artist in the department? Do you tend to hire university graduates straight out of learning or do you prefer entry level\/runners who've worked their way up? I'm quite curious about this question as I want to make sure that in the future I'm applying for the right opportunities :slightly_smiling_face:",
+        "ts": "1587380475.002400",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1085776016785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not at all, that's exactly what I'm here for haha.",
+        "ts": "1587380609.002500",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058421096807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We have about 30 people currently in Creature. We tend to split our Creature department into two major disciples, rigging and creaturefx. Within those two disciplines we have speciality leads, and people that tend to favour working in certain areas. I'm the Hair CFX lead at DNEG so it's perfect that you want to learn more about that, haha, and my other specialities are cloth. But we'll all work on all areas of a creature as the show demands it.",
+        "ts": "1587380701.002600",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079325565684_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "DNEG are very good about hiring juniors right out of university. They have a Greenlight program which I'd encourage you to look at - its where you can spend time at the studio working on an internal project and can use the studio facilities and staff as mentors, and it's a great way to get introduced to the department.",
+        "ts": "1587380760.002700",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058425596039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "New creature artists are sourced either from recommendations, or in reply to job ads that we place on LinkedIn, or our DNEG website. We hire from a mix of graduates and runners that express interest in the creature department,  I'd say mostly from university graduates though. That is probably just a reflection of what the runners want to do though :slightly_smiling_face:",
+        "ts": "1587380844.002800",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071781296517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll send you the link for the DNEG greenlight program so you can get some more information on that",
+        "ts": "1587380864.002900",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066428148678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.dneg.com\/careers\/students-graduates\/>",
+        "ts": "1587380886.003000",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071782482597_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "DNEG",
+                "title": "Early Careers - DNEG",
+                "title_link": "https:\/\/www.dneg.com\/careers\/students-graduates\/",
+                "text": "[...]Read More...",
+                "fallback": "DNEG: Early Careers - DNEG",
+                "from_url": "https:\/\/www.dneg.com\/careers\/students-graduates\/",
+                "service_icon": "https:\/\/www.dneg.com\/wp-content\/themes\/dneg\/images\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.dneg.com\/careers\/students-graduates\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587380887.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great thank you so much! I'll have a detailed look into it!\n\nI just compiled the images of my creature that I've done so far. I've just about finished the retopology of the body inside Maya, I just need to connect the back feet and brush over the body with the relax tool. I still got the horns, teeth and other features to retopologise. At a later point I would like to revisit this creature and potentially add fur to parts of it like the back. Would you say this mesh is suitable for that inside Houdini or could I afford to go higher resolution so that it better conforms the base mesh?",
+        "ts": "1587381421.003200",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1071797291301_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's the link to the drive, hopefully it works correctly, just let me know if there's any issues with it\n<https:\/\/drive.google.com\/drive\/folders\/1IPkzcaQ5SlMxRmOMGBi7QZ29cacCuZ18?usp=sharing>",
+        "ts": "1587381509.003300",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058446339575_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looks like I can access that just fine, thanks!",
+        "ts": "1587388529.003400",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073623240483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which folder should I look at, the retopology folder?",
+        "ts": "1587388539.003500",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1086039719505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please, but you can look through the others if you would like. Any feedback on anything would be greatly appreciated!",
+        "ts": "1587388656.003600",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073628459987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you :slightly_smiling_face:",
+        "ts": "1587388742.003700",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1072042166325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Enjoying the course so far?",
+        "ts": "1587388745.003800",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073422149762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Loving it! The tutors are great and offer a lot of insight to the industry and its practices. My tutors have close links to The Mill so we often get them as well as other industry professionals to review our course to ensure the students are being taught the correct software thats used in the industry. Every year we also have an Industry Week where we get industry professionals to come talk to us and some of them offer to come and review student work and show reels.",
+        "ts": "1587389035.003900",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073434088338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you be interested in attending Industry Week next year? We've never had an Creature Artist come in so I think it'll be a great opportunity to get people knowledgeable of the role. It runs in the first week of March every year and from what I know transport and meals are paid for by my course. I understand you're busy I just thought I'll put the invitation out there and if you were interested. :)",
+        "ts": "1587390027.004000",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066744557974_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd very interested, absolutely :slightly_smiling_face:",
+        "ts": "1587390278.004100",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1086115232737_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy to help any way I can",
+        "ts": "1587390285.004200",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066755943622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great to hear that the school is getting you active reviews and industry contacts, that's just so, so important. Really glad to hear that",
+        "ts": "1587390305.004300",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073490536658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So having a quick look at your retopology, Houdini is amazing at handling some pretty serious amounts of geometry. If you were looking to go higher resolution, that would be okay.",
+        "ts": "1587390445.004400",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079665213236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You could easily double the poly count and Houdini won't even sniff at that :slightly_smiling_face:",
+        "ts": "1587390472.004500",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073707972899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's fantastic! I'll inform my tutors and I see which person is best to email!\n\nI didn't realise Houdini would be capable of going too high res with topology but know that I know I'll be sure to consider it in my future creature simulations",
+        "ts": "1587390591.004600",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058770036087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I have another question, with regards to muscle simulations, is that done primarily in Houdini or does DNEG have it's own specialised software for it? I'm considering going into depth on Muscle Simulations for my 3rd Year Dissertation and I want to have working muscles for my creatures that I can also show on my showreel",
+        "ts": "1587390738.004700",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1072129943397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And a follow up question, does DNEG work with Unreal Engine? We're going to be learning that next year and I was wondering if DNEG are adopting game engines for their productions either now or in the future?",
+        "ts": "1587390840.004800",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073724444403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've talked to my tutors and the best one to talk to would be Jacky, her email is <mailto:jacky.gurr@confetti.ac.uk|jacky.gurr@confetti.ac.uk>\n\nShe's also sent a connection via LinkedIn if you would prefer to communicate through there! :slightly_smiling_face:",
+        "ts": "1587391639.004900",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073765971443_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem! Thanks I'll accept her now.",
+        "ts": "1587391689.005000",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073768363635_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah Houdini is fantastic with geometry. You don't want to go -too- high with your topology as it will slow down your sims but because you want a good representation of your body for good collisions and hair growth, you can afford to go a bit higher and sim time isnt sacrificed too much. What's nice is that you can keep multiple levels of topology of your meshes for faster sims. So for shots that are in the background and the creature is small, you could use a very light mesh for a quick sim, and for close ups you can use the high res geometry for your best sim that's the heaviest to calculate. But if you're after one mesh to rule them all, your instincts are correct and just go a level or 2 higher",
+        "ts": "1587391793.005100",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073563221906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Muscle sims are a focus for us at the moment at DNEG. Previously we had our own software that was Maya based, but we're experimenting with Ziva and with Houdini muscles at the moment to work out what works best for our pipeline and our artists",
+        "ts": "1587391833.005200",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097406680656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My closest colleague is the muscle lead here in Creature so I'll be sure to work with her when we look at your work for the best feedback",
+        "ts": "1587391857.005300",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079734793348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "DNEG does yes! We're always looking for new technology, and Unreal has come onto our radar recently. We have a real time department but Unreals recent work on real time simulation for hair and cloth has us very interested to try and take a look into adapting that into our pipeline. It's something that we're always interested in - how to get faster and faster sim work out the door.",
+        "ts": "1587391923.005400",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073569332130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've never tried muscle sims before but it is something I really want to get in to as realistic anatomy of creatures is something I'm aiming for. Do you think I should get an academic license of Ziva or just use Houdini? I have Houdini Apprentice license already but I do want to expand my software knowledge as well as work to the industry standards and workflows where I can",
+        "ts": "1587392414.005500",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1066858771654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it doesnt hurt to have a look at both, but start with whatever software package you feel most comfortable in as usually these systems extend further than just muscle sims. Are you more comfortable in Maya or Houdini?",
+        "ts": "1587392547.005600",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1086224656817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Defiantly Maya, I've been using it for the past 3-4 years, I've only started learning Houdini this year but I do want to be more proficient at is as I know how powerful it is and how useful it is in the pipeline",
+        "ts": "1587392635.005700",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097444411296_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay that's good to know. Yeah in my experience it's good to pick one, get comfortable with it, and then look at the other software versions after that so you know what the pros and cons are compared to what you started with",
+        "ts": "1587392761.005800",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073608776578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Should be able to help you with both",
+        "ts": "1587392778.005900",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058876321159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My speciality is Houdini but that wont stop us ha",
+        "ts": "1587392814.006000",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097452897296_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm most likely going to dive into muscle simulations over summer when i've handed in my last assignments for this year. Will I still be able to ask you questions during that time?",
+        "ts": "1587393338.006100",
+        "username": "Chloe Tanner (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1072258735445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Absolutely :slightly_smiling_face:",
+        "ts": "1587393360.006200",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073639671314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm here for as long as you need and always happy to be checked in with later, so dont feel like you can't message me for whatever reason. Happy to help!",
+        "ts": "1587393400.006300",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1097483100608_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

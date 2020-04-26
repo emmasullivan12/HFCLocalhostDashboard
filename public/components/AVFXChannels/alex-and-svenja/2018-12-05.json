@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you want to go ahead with the game idea, I would check if you can use a game engine and research if there are any good ones for Visual Basic. A game engine would certainly help you a lot!",
+        "ts": "1544020740.000900",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/495955340676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Once you've established that, you could do some tutorial and play a bit with the game engine to get a feeling if you will be able to use it.",
+        "ts": "1544020847.001000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/497527547414_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting an internship or work experience outside of college would be a plus but I don't think they are necessary. If you can show your skills with some projects you did at home that can be equally good. I think the important bit is that you actively get more experience in a related field.",
+        "ts": "1544021027.001100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/497180712647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

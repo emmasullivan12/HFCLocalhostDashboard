@@ -1,0 +1,23 @@
+[
+    {
+        "client_msg_id": "ba0dbead-7e52-4e5c-8851-767313630b01",
+        "type": "message",
+        "text": "PS: You can message me any time you like by the way. Anytime a question comes to mind or you want to have a chat! I will try to reply as soon as I can :slightly_smiling_face:",
+        "user": "U4VR52RQE",
+        "ts": "1574150772.001800",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

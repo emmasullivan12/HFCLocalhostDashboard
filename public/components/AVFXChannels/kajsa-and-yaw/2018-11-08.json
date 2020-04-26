@@ -1,0 +1,56 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Yaw, The first job I had in a bigger VFX house was at MPC in London. I had not applied for the job, but was lucky to be contacted by them. They had seen my profile and they liked my background, skillset and showreel. So they got in touch and asked me to come in for an interview and I was hired.\n\nA good showreel is very important. (Short and only your best work). And to keep your social media profiles (like LinkedIn) updated.\nBut sometimes it’s just luck. It happened to me quite a few times; I did not apply for the job but a recruiters reaches out because they are in need of people.\n\nOther ways to enter the industry is as a runner and work your way up, or apply for an apprenticeships. Most of the bigger VFX studios have apprenticeships programs. But often you have to do it within a year after you graduated.",
+        "ts": "1541699767.001900",
+        "username": "Kajsa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/475013069811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/253997396>",
+        "ts": "1541717904.002000",
+        "username": "Yaw Afful (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/475292789779_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "2018 Junior Compositor Demo reel",
+                "title_link": "https:\/\/vimeo.com\/253997396",
+                "author_name": "Yaw Afful",
+                "author_link": "https:\/\/vimeo.com\/user46418794",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/692359742_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: 2018 Junior Compositor Demo reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/253997396?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"2018 Junior Compositor Demo reel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/253997396",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/253997396"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "can you take a look at my showreel please",
+        "ts": "1541717925.002200",
+        "username": "Yaw Afful (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-08\/475394704834_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

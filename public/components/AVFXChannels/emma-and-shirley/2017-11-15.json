@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yup I’ll defend talk about prospela on my cv\/ps...\nWell I’ll say at 50 I see my self with obviously all that I’ve dreamt of. A successfull\/respectful individual with my dream house, car and all that I ever wanted I guess",
+        "ts": "1510747196.000071",
+        "username": "diasshirley08 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272675740866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What about you?",
+        "ts": "1510747204.000028",
+        "username": "diasshirley08 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272722087652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Speaking of CVs, did you want any help with yours?",
+        "ts": "1510761255.000544",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272748246995_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy to give you my thoughts if you'd like",
+        "ts": "1510761261.000501",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272748354851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At 50 (I hate to think about being 50...) I hope to have a fairly big family around me (2-3 kids and a few dogs!), live in a house in the countryside with land as well as a nice flat in London for working. Also want to travel for work and be working on interesting stuff, solving problems in the world.",
+        "ts": "1510761335.000150",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273905227815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think by the age of 50 I'd  be bored if I was just doing a job to earn money. It would have to be about something more than that!",
+        "ts": "1510763218.000342",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273728630438_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shirley I just read something that got me thinking :thinking_face: ... it said \"Following your passion is bullsh*t. Follow knowledge instead. Be curious. Learn. That will take you places\"...what are you curious to learn about??",
+        "ts": "1510779163.000253",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272528917553_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

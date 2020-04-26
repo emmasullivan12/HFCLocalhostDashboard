@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F8MCR50RM",
+                "created": 1514563080,
+                "timestamp": 1514563080,
+                "name": "MVP.xlsx",
+                "title": "MVP.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4VR52RQE",
+                "editable": false,
+                "size": 36197,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8MCR50RM\/mvp.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8MCR50RM\/download\/mvp.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4VR52RQE\/F8MCR50RM\/mvp.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F8MCR50RM-cc8d26516b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4VR52RQE",
+        "display_as_bot": false,
+        "ts": "1514563081.000097"
+    }
+]

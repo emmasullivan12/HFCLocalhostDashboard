@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, how is it going? Summer is wrapping up and I won't be as accessible as I am now. So if you have any questions please feel free to ask as many questions as you want before it ends :slightly_smiling_face:",
+        "ts": "1566308068.008500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/734325603814_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alex, thank you for the message,\nI'm away from london for a week, and I'll be back in few days.\nI'm following your advices to make my reel better and I have quite alot information from you already which I'll be looking through again.\n\nif it's okay, I'll keep update my progress in this slack and whenever you get time pls have a look at it and giveing some feedback would be really great.",
+        "ts": "1566313461.008600",
+        "username": "Sreeharsh Baburajan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/732271908592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure no worries, yes you can message me later on too but I just can't promise I will be consistent with answering. In any case have a good one and talk to you later!",
+        "ts": "1566320865.008700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-20\/721005893922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

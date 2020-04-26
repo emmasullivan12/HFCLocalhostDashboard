@@ -1,0 +1,254 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey. I had a look to find some examples how to write a CV and a resume. I don't remember very good examples from when I did it but there's some really helpful information out there :slightly_smiling_face:",
+        "ts": "1540886295.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467401402690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/novoresume.com\/career-blog\/how-to-write-a-resume-guide>",
+        "ts": "1540886296.000200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/466796205393_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Novorésumé",
+                "title": "How to Write a Resume in 2018 - Guide for Beginner",
+                "title_link": "https:\/\/novoresume.com\/career-blog\/how-to-write-a-resume-guide",
+                "text": "Do you find it challenging to write a resume in 2018? Follow our up-to-date guide, and this challenge will transform into an enjoyable adventure.",
+                "fallback": "Novorésumé: How to Write a Resume in 2018 - Guide for Beginner",
+                "image_url": "https:\/\/d.novoresume.com\/images\/blogs\/99e5ceb0-6959-11e7-8030-b75f510f1ded\/bg-cover-article.png",
+                "image_width": 478,
+                "image_height": 250,
+                "from_url": "https:\/\/novoresume.com\/career-blog\/how-to-write-a-resume-guide",
+                "image_bytes": 111697,
+                "service_icon": "https:\/\/novoresume.com\/images\/favi.png",
+                "id": 1,
+                "original_url": "https:\/\/novoresume.com\/career-blog\/how-to-write-a-resume-guide"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/resumegenius.com\/how-to-write-a-resume>",
+        "ts": "1540886301.000400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/468802676102_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Resume Genius",
+                "title": "How to Write a Great Resume | The Complete Guide | Resume Genius",
+                "title_link": "https:\/\/resumegenius.com\/how-to-write-a-resume",
+                "text": "A well-written resume (or CV) will hugely impact your job hunt. Our comprehensive writing guide will help you make a resume that turns heads and lands you interviews. Our expert's A to Z walkthrough covers every detail of the writing process – with this guide, you won't miss a step.",
+                "fallback": "Resume Genius: How to Write a Great Resume | The Complete Guide | Resume Genius",
+                "image_url": "https:\/\/resumegenius.com\/wp-content\/uploads\/2015\/02\/how-to-write-a-resume2.jpg",
+                "image_width": 1423,
+                "image_height": 234,
+                "from_url": "https:\/\/resumegenius.com\/how-to-write-a-resume",
+                "image_bytes": 27895,
+                "service_icon": "https:\/\/resumegenius.com\/wp-content\/themes\/genesis-rg\/images\/favicons\/favicon-180.png",
+                "id": 1,
+                "original_url": "https:\/\/resumegenius.com\/how-to-write-a-resume"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/standout-cv.com\/pages\/how-to-write-a-cv>",
+        "ts": "1540886306.000600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467303791939_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "StandOut CV | Professional CV Writing Service",
+                "title": "How to write a CV | Land interviews and get your dream job",
+                "title_link": "https:\/\/standout-cv.com\/pages\/how-to-write-a-cv",
+                "text": "How to write a CV is the only guide you will ever need to create a wining CV. Learn how to write a quality CV with our free detailed guide including CV templates and example CVs. Create an interview winning CV for any experience level or industry today",
+                "fallback": "StandOut CV | Professional CV Writing Service: How to write a CV | Land interviews and get your dream job",
+                "image_url": "http:\/\/cdn.shopify.com\/s\/files\/1\/0453\/4797\/t\/7\/assets\/logo.png?495912443284477667",
+                "from_url": "https:\/\/standout-cv.com\/pages\/how-to-write-a-cv",
+                "image_width": 497,
+                "image_height": 55,
+                "image_bytes": 22807,
+                "service_icon": "http:\/\/cdn.shopify.com\/s\/files\/1\/0453\/4797\/t\/7\/assets\/favicon.ico?495912443284477667",
+                "id": 1,
+                "original_url": "https:\/\/standout-cv.com\/pages\/how-to-write-a-cv"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.hloom.com\/resumes\/curriculum-vitae-guide\/>",
+        "ts": "1540886312.000800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467303837875_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Hloom.com",
+                "title": "How to Write a CV [18 Professional CV Templates \/ Examples]",
+                "title_link": "https:\/\/www.hloom.com\/resumes\/curriculum-vitae-guide\/",
+                "text": "How to Write a CV with 18 Professional CV Templates and Examples A Complete Guide to Creating Your Curriculum Vitae Studies show that only 1 of 5 employers",
+                "fallback": "Hloom.com: How to Write a CV [18 Professional CV Templates \/ Examples]",
+                "image_url": "https:\/\/www.hloom.com\/images\/pp\/cover-letter\/image.png",
+                "from_url": "https:\/\/www.hloom.com\/resumes\/curriculum-vitae-guide\/",
+                "image_width": 473,
+                "image_height": 250,
+                "image_bytes": 8811,
+                "service_icon": "https:\/\/www.hloom.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.hloom.com\/resumes\/curriculum-vitae-guide\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've found some others too... and thanks for these I'll make sure to have a look at them :slightly_smiling_face: \n",
+        "ts": "1540913772.001000",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/468825393031_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also had a few questions...\nHow is the work load and time pressure for your job?? Currently or previous",
+        "ts": "1540913858.001100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467168951793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Let me know if you have any questions about your CV or if you want me to read anything",
+        "ts": "1540915561.001200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467709673379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure.. Thank you ^-^",
+        "ts": "1540915607.001300",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/469209504902_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of workload, that's a difficult question. It depends on the industry and the individual companies and even projects within a company. But in most cases one can always limit the workload to the preferred level.",
+        "ts": "1540915841.001400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467076016560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example in my industry we could work a lot more (there's always something to improve) but we prefer not to :smile: but of course sometimes one has to work a bit more to get something done for a deadline",
+        "ts": "1540915935.001500",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/468014120037_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But there are other industries where it's more relaxed",
+        "ts": "1540915967.001600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467209929521_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In most cases though I would say it doesn't matter in the beginning. If you enjoy the work and learn a lot, working a bit more is not an issue.",
+        "ts": "1540916020.001700",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Once you're settled you can think about working less or if that's not an option you have a better overview and more experience to move somewhere else",
+        "ts": "1540916053.001800",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/469217671062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh right okay..  and yes I agree that if u enjoy it working just a little more shouldn't be a problem ",
+        "ts": "1540916113.001900",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/468017357237_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It has been a lot of me questioning you... any questions you might have for me??",
+        "ts": "1540916324.002000",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467084882656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Although I probably can't help you with anything ",
+        "ts": "1540916346.002100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-30\/467724113587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

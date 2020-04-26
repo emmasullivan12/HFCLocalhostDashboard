@@ -1,0 +1,431 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Satbir, nice to e-meet you and sorry for the delayed reply. \n\nWhat are the options you’re considering?",
+        "ts": "1585729576.002000",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029178912947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was considering either computer science, like software development or data analysis or something similar, or engineering, be it civilian, mechanical or aeronautical",
+        "ts": "1585729654.002100",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1027887531186_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or possibly even finance, such as accounting, or computational finance",
+        "ts": "1585729680.002200",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029182703427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah right! Those all sound like good options. Is there one that appeals to you more than others at the moment?",
+        "ts": "1585729743.002300",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040659550096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not at the moment",
+        "ts": "1585729769.002400",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040660488480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do enjoy aspects of each of those topics, but there isn't a clear winner",
+        "ts": "1585729790.002500",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029186728435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fair enough. What are you looking to get out of your career, in general?",
+        "ts": "1585729877.002600",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040175044692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its basically to maximise my potential income and minimise stress",
+        "ts": "1585729966.002700",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042698619831_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's not much",
+        "ts": "1585729997.002800",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042552209398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I understand that all jobs have stress associated with them, but I mean like flexible hours, and the like",
+        "ts": "1585730029.002900",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042553421030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok, makes sense. ",
+        "ts": "1585730089.003000",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030651211345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me briefly tell you my background. I studied maths and physics at university and then went into software engineering. I actually started a PhD in medical imaging and decided it wasn’t for me, but during that time I learned to program. After that I got a job in a company processing astronomical images, and that led to a job in the visual effects industry, where I still am today. ",
+        "ts": "1585730260.003100",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1027910542642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I have software development experience but I don’t have first hands experience of the other areas, I’m afraid. ",
+        "ts": "1585730307.003200",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042710922967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow, may I ask how difficult was it to get a job such as that",
+        "ts": "1585730314.003300",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040681164336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, both for my first job and my first job in VFX I happened to have the background they were looking for, working with images and computer graphics. \n\nI was also really interested in the job in both cases, and I think it showed. ",
+        "ts": "1585730443.003400",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040630576277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah, say if you wanted to join a \"generic\" software company, what interests would be beneficial to have?",
+        "ts": "1585730553.003500",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030667769121_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Many people I interview  work on graphics-related projects in their spare time, and have a GitHub link on their CVs where you can see examples of their code. It’s not essential, but some employers like to see that because it shows people are really interested in the subject and also you can see an example of their work. ",
+        "ts": "1585730819.003600",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042581960038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "People in VFX are often quite passionate about the area though, it might not be the same elsewhere!",
+        "ts": "1585730842.003700",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029225702227_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, so would you say that some interest in the field is useful, even if not completely specific to the field?\nLike interest in coding and mathematics or data analysis",
+        "ts": "1585730949.003800",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029229624979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think any interesting or unusual hobby can be a talking point though and help make you stand out, as long as it’s something you really enjoy and can talk about with enthusiasm. I interviewed one person who designed and sold jewellery in her spare time and that was fascinating to hear about as it was so outside our experience!",
+        "ts": "1585730965.003900",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042734688631_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think yes, some interest in the field is definitely useful. ",
+        "ts": "1585730991.004000",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042588168950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah, ok",
+        "ts": "1585731055.004100",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040217946324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You said you learned to program, was that as a uni course or by yourself?",
+        "ts": "1585731082.004200",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042738933015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And if it was a uni course, how important is the mathematical aspect of it?",
+        "ts": "1585731108.004300",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1027941143458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did a couple of short courses at uni but mostly it was figuring out by myself what I needed for the work I was doing at the time.",
+        "ts": "1585731166.004400",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042742037815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The maths was more important for the research I was doing than the coding part itself, if that makes sense. ",
+        "ts": "1585731199.004500",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040657936069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess because is it like coding is understanding the language but maths is making use of logic and using the language efficiently?",
+        "ts": "1585731347.004600",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040718680832_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s exactly it, yes. ",
+        "ts": "1585731387.004700",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029245552835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah, ok. I also have a question about work and work experience. How does one who wants to go into the sector gain experience and qualifications which would put you ahead of others",
+        "ts": "1585731550.004800",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029251751331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s a good question. I think with work experience it would help to be proactive and reach out to companies you are interested in to see if there are any opportunities. Connections really help there, so if you know any relatives, friends, neighbours, friends of friends etc working in a similar field it would be worth speaking to them. ",
+        "ts": "1585731834.004900",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042621177862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are now some apprenticeships available in the industry, but there aren’t a huge number of them so I imagine they are quite competitive. A relevant degree will always be a good start as well. ",
+        "ts": "1585731938.005000",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030720790289_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Outside that, there are things like hackathons you can take part in. Anything that involves working in a team and collaborating would stand out for me, because that’s a very useful skill in work life. ",
+        "ts": "1585732011.005100",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1027976625154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, ok, I have one last question (for now :) ).\nI have decent understanding in python, but isn't as in great a demand in the UK as java or C#. Do you think it would be good if I learnt one of those languages or started reading more about machine\/deep learning (which could help in a uni course)?",
+        "ts": "1585732153.005200",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042780557543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Python is very much in demand in the VFX industry. I have friends who use it for deep learning\/AI too. \n\nI think it’s definitely worth learning a second language because you can then see all the things they have in common and start to separate the key concepts from the specific features of each one. It would give me something to ask about in an interview as well, e.g. which one do you prefer and why? ",
+        "ts": "1585732423.005300",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029285703459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Python’s great for experimenting with deep learning libraries such as TensorFlow though. ",
+        "ts": "1585732502.005400",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040763106160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have to go now as well, but if you have any more questions or thoughts, feel free to send them through and I’ll answer when I can. ",
+        "ts": "1585732535.005500",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030742508817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I have tried tensorflow, but it's a little complex for me, I need to invest more time in it.",
+        "ts": "1585732542.005600",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042647117606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's all I have for now, thank you very much for the insight :)",
+        "ts": "1585732560.005700",
+        "username": "Satbir Virdi (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040765242896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You’re very welcome :)",
+        "ts": "1585732620.005800",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042649965638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

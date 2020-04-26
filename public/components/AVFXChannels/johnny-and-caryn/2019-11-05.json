@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just saw this now! !!! Sorry, my allerts didn't flag me your messages,let me have a look",
+        "ts": "1572971885.012900",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/824251483927_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

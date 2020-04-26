@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll take a look at it",
+        "ts": "1557932054.005900",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-15\/630055033809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

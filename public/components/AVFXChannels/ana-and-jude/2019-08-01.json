@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ana once again Im a turtle an it’s fine, I don’t really know advice on what I could try like suggestions or places I should go to that facilitate my...creative human...stuff hah ",
+        "ts": "1564645715.000400",
+        "username": "Jude Osei-Tutu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/701368595059_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Umm a whole load of things inspire me from anime to cartoons to even very Cg heavy content, but personally I’d like to be able to get better at 2D animation an here’s a few cartoon inspiration I go by for reference ",
+        "ts": "1564645892.000500",
+        "username": "Jude Osei-Tutu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/706424502609_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Billy and Mandy, Simpsons, American dad, Rick and morty, Steven universe and anything that peaks my interest on newgrounds ",
+        "ts": "1564645978.000600",
+        "username": "Jude Osei-Tutu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/701357746210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

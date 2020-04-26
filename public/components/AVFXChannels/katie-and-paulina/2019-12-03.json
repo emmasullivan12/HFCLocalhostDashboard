@@ -1,0 +1,187 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, glad to hear things are going well!\nYes, I am quite busy in work but I get to do concept art all day so it’s definitely a labour of love. I’m finding there are many differences between working in the Games industry to working in Film. Deadlines are a LOT more relaxed for one haha! The pipeline is a lot more organic and not as streamlined as it is in Film, which has it’s pros and cons! :bee:",
+        "ts": "1575407689.020800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/847063301459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These are great positions to apply for, I’m not sure where exactly specialises in creature modelling but you could check out Creature FX at Framestore (or it’s called ‘Techanim’ at MPC) because Framestore do their Launchpad Pro Internship in Creature FX which makes it easier to get into as an industry newcomer; but you will need to keep an eye out for when applications open again!\nI have friends at Framestore, MPC, DNEG and I know a few people from The Mill - I hear it’s a good one to work for.",
+        "ts": "1575407697.020900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/850595794609_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s really good that you are keeping an open mind to other studios too though, there are tons of boutique studios dotted all around London, I can help you do some research and get you a list of contacts if you’d like? :memo:",
+        "ts": "1575407729.021000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/845749749618_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m sure you are aware that Running is a pretty full-on job!? If you can help it, definitely try applying for the internships and artist jobs first and then you can always fall back on applying to be a runner if you don’t get through.",
+        "ts": "1575407750.021100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/850597094833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had a look at your CV and cover letter; they are both great!! Only suggestion I would make would be to list your achievements and responsibilities in bullet lists - it’s a shame but so many employers skim read CVs and don’t give them the time they deserve. If your CV is concise and quick to read then you do often have a better chance of getting through.",
+        "ts": "1575407782.021200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/847065551123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have a portfolio website with up-to-date work? I’d definitely put that in your CV personal details. I’d also integrate a little more of your cover letter into the intro at the top of the CV, just in case potential employers don’t open the cover letter.\nYou’ll find that you are typing out cover letters all the time for different companies when it comes to job-hunting; my advice would be to have a general intro in your CV then write your cover letter as your actual email to the company - that way there’s only one attachment in the email and you won’t feel like you are repeating yourself so much.",
+        "ts": "1575407812.021300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/858077385204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(Also don’t be afraid to tailor your CV for each company you apply to - I know there’s info out there that advises you to have the one same CV each time, but from my experience, it’s totally fine to prioritise the more relevant work experience in your resume.)",
+        "ts": "1575407831.021400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/860394097607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One great tip I got for writing up a CV\/going to interview was to; provide evidence for every statement that you make. So for example, you have said “It has also taught me to observe and carefully listen to other people around me, so I can learn from them.” - It would be great if you could provide details about a specific role that you had worked as or a specific project that you did that can help you to prove that you used and developed those skills.",
+        "ts": "1575407848.021500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/858078219268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s definitely worth putting your volunteering experience on your CV too, companies like to see it and it shows you are a self-motivated person who can handle responsibility and have interests outside of work! You could write it under an ‘Additional Info’ section. :trophy:",
+        "ts": "1575407906.021600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/858535637424_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll attach my CV below to give you a bit of insight on the perspective I am coming from. I’ll send the one I had shortly after graduating and my most recent one from summer this year, to help you see how they have changed over the years and what I’ve done with formatting etc.\nFeel free to ask me any further questions about this!",
+        "ts": "1575407988.021700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/858548288261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRABQQ1EK",
+                "created": 1575408026,
+                "timestamp": 1575408026,
+                "name": "Katie_Hallaron_CV_2015.pdf",
+                "title": "Katie Hallaron CV 2015",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 485342,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRABQQ1EK\/katie_hallaron_cv_2015.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRABQQ1EK\/download\/katie_hallaron_cv_2015.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRABQQ1EK\/katie_hallaron_cv_2015.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRABQQ1EK-91c6fb58fc",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1575408026.021800"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRAN0CRQW",
+                "created": 1575408055,
+                "timestamp": 1575408055,
+                "name": "Katie_Hallaron_CV_AUG_2019.pdf",
+                "title": "Katie Hallaron CV AUG 2019",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 57053,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRAN0CRQW\/katie_hallaron_cv_aug_2019.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRAN0CRQW\/download\/katie_hallaron_cv_aug_2019.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRAN0CRQW-cb4d11a8c5\/katie_hallaron_cv_aug_2019_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 911,
+                "thumb_pdf_h": 1288,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRAN0CRQW\/katie_hallaron_cv_aug_2019.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRAN0CRQW-e30869f2e2",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1575408056.022100"
+    }
+]

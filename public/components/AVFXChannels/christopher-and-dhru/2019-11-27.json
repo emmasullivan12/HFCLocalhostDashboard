@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats really helpful thank you :simple_smile: the stuff we'll be working on is a mixture of projects including a professional short film so that we have shots that we can put on our reels. Im unsure of what should be shown in a reel for fx artist or even where exactly fx fits into the pipeline which is why i wasnt sure what it would be good to know :simple_smile:",
+        "ts": "1574857356.003000",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/850830832548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah sure...i can go into that. FX basically sits before lighting and compositing. We take (depending on the task) what modeling\/anim\/tracking\/layout gives us and then place our effects in that environment. Some companies skip lighting and fx just renders their elements and they go straight to comp. Otherwise lighting-department would handle that for us (like they do where i'm currently at - Framestore)\n\nI think fx-reels vary quite widely in what people decide to show in the beginning of their career. I think it basically comes to being \"test shots\"...some copy a scene from a movie that has interesting fx (spaceship landing, kicking up dust etc for example), you could shoot a little thing on your phone\/camera rented from the uni, track that footage and then place some cool fx in there; another thing would be to code together a little tool that automates certain things fx-wise (distributing things over a landscape for example). Or it could be any combination of the above :wink:. The obvious one is of course shots and breakdowns from your final project...that probably counts the most for first applciations",
+        "ts": "1574880774.003100",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/854091371158_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,885 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Rob, Good Morning. Thanks for agreeing to be my Prospela Mentor. How are you doing?\nI'm finding it tricky to find entry level work in the industry - Roto Prep \/ Clean up or even work as a runner. Some pointers on where I might be going wrong would be really helpful. How did you start?\nUltimately I like to be working in a small studio working towards being Junior Comp by the end of 2020 - but I realise I still have a lot of work to do.  I can send a link to my reel so far if you like. Cheers, Jon",
+        "ts": "1580981390.001600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939123356308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jon, was just working out my first message when I saw this pop us. I've only seen a very basic profile of your background so far so I'm not sure exactly how experienced you are and your education background. But the reel would be a good place to start. Q quick background for me, I had no experience in film but had a bahelors from Australia years ago, did a 2 year masters at the National Film and Television School. None of us could get jobs for at least 3 months after graduating. got my first job doing some commercial comps for blinkink I think, then worked at Jellyfish for 6 months on a cg animated show with live backplates. Then kept working in small companies for 4 years before I finally managed to crack the big companies last year. I didn't did the usual route of runner then roto prep. I had to take a roto prep job in my second year as I didn't have many contacts and there wasn't a lot of work at the time. But lets start by looking at your reel and go from there (I'm in work at the moment so wont always be able to get back to you straight away)",
+        "ts": "1580983282.001700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939167633444_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way, are you aware it is national apprenticeship week this week? Have you looked into this as an option?",
+        "ts": "1580986918.001800",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928234728915_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob, Good to hear from you. My story's a bit long and a whole lot of complicated. I come from a Fine Art background. Did a 12 week Escape studios course for the basics. Plugged away on my own with my classmates as support. Now on a Hugo Guerra course. - which until now was on hiatus because he's not been well.",
+        "ts": "1580987812.001900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/929569775505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My most recent interview was for Runner at ETC (Previous one was The Mill) feeling a bit disheartened that I can't even get a job getting pizza and coffee so applied for a part-time job as a kitchen porter and focussing on a small exhibition of my work coming up at the end of the month.  Then Prospela got in touch! And  guy in LA has just emailed about a freelance gig!\nStrange coincidences aside.. I would happily work for free to get experience. At this point I'm considering heading out to Canada as there seem to be a lot of entry level jobs in Toronto &amp;  Montreal. Just would like to be in the best position possible with my reel. I think I'm too old for the apprenticeship scheme.",
+        "ts": "1580987912.002000",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/941933989894_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Reel: <https:\/\/vimeo.com\/374634241>",
+        "ts": "1580987948.002100",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928256478771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "pword: nukex",
+        "ts": "1580987957.002200",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939270338452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "p.s. Totally appreciate you can only answer when you have time - and don't mean to info dump!",
+        "ts": "1580988124.002300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/941590147687_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The freelance gig sounds promising. It would be good to know exactly which companies you have applied to as I may be able to suggest smaller companies that you haven't applied to. I might be able to contact some people and see if they have anything going.",
+        "ts": "1580988754.002400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/926951846002_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not getting too excited about the freelance gig but it's amazing its come along. Your experience sounds kind typical - I had a friend work on Floogals at Jellyfish as his first gig - which is reassuring.\nApplied to so many I have a spreadsheet! - Milk, Creep, Technicolor Academy Montreal, Bluebolt, Cinesite, Rising Dawn Pictures, One of Us, Automatik Vfx, Dupe vfx, Red vfx, Mavericks, Pixomodo, Media (based in Brussels), Deluxe, Goodbye Kansas. A mix of speculative and roto prep jobs when I see them advertised - which seems to be very rare in London.",
+        "ts": "1580989554.002500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939755109040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A friends told me about Proof and Mr X today so I'll be putting in a speculative application in for both today after some research.",
+        "ts": "1580989693.002600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939303552852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thx for the offer of contacting some folks.",
+        "ts": "1580989756.002700",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939758787328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no worries, I cant promise anything but no harm in reaching out to a few people I've worked with. In regards to your showreel, do you have any other work? What is your background in regards to training?",
+        "ts": "1580990582.002800",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939795936213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Totally understand. As for more work... I have a stack but I grind to a halt when I get stuck. I thought Hugo's Desk would be more available to give pointers than they seem to be...",
+        "ts": "1580992168.002900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/941668478167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTMADA4CU",
+                "created": 1580992221,
+                "timestamp": 1580992221,
+                "name": "Screenshot 2020-02-06 at 12.23.15.png",
+                "title": "Screenshot 2020-02-06 at 12.23.15",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 4097025,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMADA4CU\/screenshot_2020-02-06_at_12.23.15.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMADA4CU\/download\/screenshot_2020-02-06_at_12.23.15.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 340,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 453,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 679,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 848,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 905,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMADA4CU-9f1717e609\/screenshot_2020-02-06_at_12.23.15_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 966,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2180,
+                "thumb_tiny": "AwAwAC2tEVCrnPvUrFTGgBw3fNMt4mkVdoJ4q5Fa8nePpzSGVtpLEKMnrmkRuW9DV0LGFkKIdwB69uKopxzQA4nrnrVW4++PpVrIxk9arXX3x9KS3A1rKSP7JHggYGD9aJJEeUAMOh5zWRsX0o2L71QjXuPJjh4Ck9ARWeDyeag2L70eWvvQBYJHqKrzncw+lGxfSjYvvSsMdSgc4PFFGefSmISilxxmkoAKKKKAP\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTMADA4CU\/screenshot_2020-02-06_at_12.23.15.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTMADA4CU-f776296296",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992227.003000"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTQ0MDGH4",
+                "created": 1580992387,
+                "timestamp": 1580992387,
+                "name": "Screenshot 2020-02-06 at 12.24.10.png",
+                "title": "Screenshot 2020-02-06 at 12.24.10",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3769798,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTQ0MDGH4\/screenshot_2020-02-06_at_12.24.10.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTQ0MDGH4\/download\/screenshot_2020-02-06_at_12.24.10.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 340,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 453,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 679,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 848,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 905,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTQ0MDGH4-e74464385d\/screenshot_2020-02-06_at_12.24.10_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 966,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2180,
+                "thumb_tiny": "AwAwAC2KyxuH0qKQcNTrLh\/aiYfK31pFrZjop3KkYB2Yx2qdLhWwDnJ71Vt0LBtucmrQtum08jpQSNvJF4xnd6mqVz98fSrF4hV1H0qtP94fSgCzb7UUMo5I5JNS5B64NUtq+lGxfegDRUqO4qQOPUfnWV5a+9GxfegRduAsgBzyORzVGblhS7F9KNi+hpgOpyruOKbT4uXAzjNADpAAvAxzUVTyRkgAHJJqJlKHDdaSAbRRRTA\/\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTQ0MDGH4\/screenshot_2020-02-06_at_12.24.10.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTQ0MDGH4-6d01c06257",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992394.003300"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTMQGT2ER",
+                "created": 1580992453,
+                "timestamp": 1580992453,
+                "name": "Screenshot 2020-02-06 at 12.25.20.png",
+                "title": "Screenshot 2020-02-06 at 12.25.20",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2402530,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMQGT2ER\/screenshot_2020-02-06_at_12.25.20.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMQGT2ER\/download\/screenshot_2020-02-06_at_12.25.20.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 353,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 470,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 706,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 816,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 941,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQGT2ER-667e910424\/screenshot_2020-02-06_at_12.25.20_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1004,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2098,
+                "thumb_tiny": "AwAwAC+hb483kA8d6mYjd0FV4zhuOtWYgA25yD7Uhp6DyiKR3yMggU\/hsjYB7461ECQFG4YUYp27jrVol3HFU5yOlUZOJGA6ZNXkK4cPznAB\/WqD\/fb61I7Ap2nNP832pxUHtThAx58s4ouAzzfajzvanNGFOCpBpNq+lFwEMxJBx0qMkE5qXavpRtHpQBOEUjpzSkYPP6GlViFwDTaa1bBDJOoplPk7Uyh7gFFFFID\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTMQGT2ER\/screenshot_2020-02-06_at_12.25.20.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTMQGT2ER-0288777a3f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992458.003600"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTAA6B4TV",
+                "created": 1580992538,
+                "timestamp": 1580992538,
+                "name": "Screenshot 2020-02-06 at 12.27.45.png",
+                "title": "Screenshot 2020-02-06 at 12.27.45",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3184527,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTAA6B4TV\/screenshot_2020-02-06_at_12.27.45.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTAA6B4TV\/download\/screenshot_2020-02-06_at_12.27.45.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 353,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 470,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 706,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 816,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 941,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6B4TV-76871e8205\/screenshot_2020-02-06_at_12.27.45_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1004,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2098,
+                "thumb_tiny": "AwAwAC+vEmY1PqKk8uqquQo56U8THPc0XFYseVS+VUSu5OKfl8jkYzzRzByi+VUFym2PPvU7ShWwAzDv7CmXnEWM85o5ug+XqVUG44yB7k4q3EII+WkVj+lV9o9KNq+lJq40y958X99fzpDPHjHmL+dUtq+lG1fSlyj5i55sR6yrj64qvcmMp8hXOe3U1HtX0o2g9qFGwm7kjJtOM0m3kUruGJOD0pN3Ipu99CHcQ9akMOO\/aoz1qUzA9j0plfZ8yGlBx2B+tOiXe4Xj1NWRChP\/ANajQD\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTAA6B4TV\/screenshot_2020-02-06_at_12.27.45.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTAA6B4TV-00762edf14",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992544.003900"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTAA6BM9R",
+                "created": 1580992539,
+                "timestamp": 1580992539,
+                "name": "Screenshot 2020-02-06 at 12.28.06.png",
+                "title": "Screenshot 2020-02-06 at 12.28.06",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2939883,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTAA6BM9R\/screenshot_2020-02-06_at_12.28.06.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTAA6BM9R\/download\/screenshot_2020-02-06_at_12.28.06.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 353,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 470,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 706,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 816,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 941,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTAA6BM9R-720a2d794a\/screenshot_2020-02-06_at_12.28.06_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1004,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2098,
+                "thumb_tiny": "AwAwAC+rGuUX6U\/ZUaSEIo9KkE1O4rC7KUR5pBLSSOWAAFFwSF2fj9KinXCfjVlDuHpUN1\/qvxpc3QfK9yBTkYyPxNPVRnmRR+NJtB7UbV9KAJlEQP8ArVp2+PdnzR9ar7V9KNq+lTYdywsq7eHX8TUdw4aLG9WOegqPavpRtB7U7BzDyhHX0zSYNPZwcY9MU3cMj2od76ENsTHOKc0TKDnHFNzzmpXlVgQM80yuhFRxjoc1JEnmNz0HWphboaAP\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTAA6BM9R\/screenshot_2020-02-06_at_12.28.06.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTAA6BM9R-a5a9e2e355",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992545.004200"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTPKWK14P",
+                "created": 1580992538,
+                "timestamp": 1580992538,
+                "name": "Screenshot 2020-02-06 at 12.27.32.png",
+                "title": "Screenshot 2020-02-06 at 12.27.32",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3471294,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTPKWK14P\/screenshot_2020-02-06_at_12.27.32.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTPKWK14P\/download\/screenshot_2020-02-06_at_12.27.32.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 353,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 470,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 706,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 816,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 941,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTPKWK14P-9672086ed1\/screenshot_2020-02-06_at_12.27.32_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1004,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2098,
+                "thumb_tiny": "AwAwAC+KIMIlIUkY9Kkw5\/hP5U63nQQxrsYnGKm85Onlt+lK4+VlYo5\/hNIFf0P51YmuFWJjsYZHFR2848sZQlu5JouHKyJlkxxkVXn3bfmz19auPcgf8s\/1qpcS+YDhNvPJouLlaJYJkTYX2sAMYzigzJu4Ixknr0qDaPSjavpRYabRP5kZK7mBGeaRpEydrDFQ7V9KNq+lFh8zvcdI4boVH41ES20jIwe2aftX0o2g9qLCbbJGTacZpNvIpXcMScHpSbuRQ730IdxD1qQw479qjPWpTMD2PSmV9nzIaUHHYH606Jd7hePU1ZEKE\/8A1qNAP\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTPKWK14P\/screenshot_2020-02-06_at_12.27.32.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTPKWK14P-fe68263565",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992546.004500"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTMQ1TJV6",
+                "created": 1580992731,
+                "timestamp": 1580992731,
+                "name": "Screenshot 2020-02-06 at 12.36.46.png",
+                "title": "Screenshot 2020-02-06 at 12.36.46",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 3651430,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMQ1TJV6\/screenshot_2020-02-06_at_12.36.46.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMQ1TJV6\/download\/screenshot_2020-02-06_at_12.36.46.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 353,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 470,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 706,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 816,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 941,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQ1TJV6-c31ffc6cde\/screenshot_2020-02-06_at_12.36.46_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1004,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2098,
+                "thumb_tiny": "AwAwAC9HRVsoCqncwHNMhRQw8wnaevanwTebHHEw2qoxn3pVlEO1tu7OfwpAWI1j3gBVx+dWSAqNtAHHaqkLr5hdF+U849KlmuAkeQAQfU0ASGT5ipHGBzWZftuiH+9xUvnuxI25yKrXRBh+4VOaAFjeJLXO4eZx39DSvMjQ4DDO4moNo9KNq+lMBxcopAcYbrg1KsqGHDOCfc81BtX0pRGG6KTSAk8xHOCwHvUc23Zw4Jz60m1fSjaD2pgO2nFLsNPH3RTh3pNkpkWxsdKch8tjuz07VJ2FRS\/f\/Cknd2KFYJt+UHPuaZjFSOfkAxUVNMq2lz\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTMQ1TJV6\/screenshot_2020-02-06_at_12.36.46.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTMQ1TJV6-0cfc118445",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992737.004800"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTMQNEBTP",
+                "created": 1580992731,
+                "timestamp": 1580992731,
+                "name": "Screenshot 2020-02-06 at 12.37.04.png",
+                "title": "Screenshot 2020-02-06 at 12.37.04",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2344931,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMQNEBTP\/screenshot_2020-02-06_at_12.37.04.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTMQNEBTP\/download\/screenshot_2020-02-06_at_12.37.04.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 353,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 470,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 706,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 816,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 941,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTMQNEBTP-69f7989606\/screenshot_2020-02-06_at_12.37.04_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1004,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2056,
+                "original_h": 2098,
+                "thumb_tiny": "AwAwAC+LGLZCM5OKI0A+8TiltnDKiNwuMZ9+1OLCMA9c5pAPAXsBS0QlT1GVP6UpKpnKlvxxTASoLz\/Uj61IJDnHl1DdMWg5Uj5qACJ4ltfvDzD70rzI0JG4Z3ZqAqD2o2r6UAKXKrwwwfQ1MkieRhnBPuag2r6UojDdFJoAmSdS+SQM0l1IjxYVgTn1qHavpRtHpQA7acUuw08fdFOHek2SmRbGx0pyHy2O7PTtUnYVFL978KSd3YoVgm35Qc+5pmMVI5\/dgVFQmVbS5\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTMQNEBTP\/screenshot_2020-02-06_at_12.37.04.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTMQNEBTP-634b854c22",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580992738.005100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "p.s. Sorry about the messy scripts!",
+        "ts": "1580992785.005400",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928351254099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In summary - maybe a bit directionless in terms of what to complete next for the reel. I know my reel isn't good enough but I'm clueless as to what will get me my first job.",
+        "ts": "1580992881.005500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939366741620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so these are shots you have? And these are comping shots or roto shots you are doing? If I could give you some feedback on your showreel, I'm not really sure what you are applying for. There aren't many examples on there, the first is obviously a window composite, but has way too many wipes and to be honest I didn't realise they were wipes at first. I thought you'd composited in a blue background, and it felt like the breakdown of that shot was going on forever. Personally I could tell you were stretching out the wipes because you didn't have much else to put on your reel. For that shot in particular I would make it a third of the length, if not less. A lot less wipes, and you might consider adding a line when you are doing wipes to make it clearer. If you are applying for roto prep, it doesn;t really have either of those in that shot, so a recruiter will already be looking for the next shots because if you are going for roto prep they're not going to be interested in that shot. The roto shot is good, might be good to see a shot with a vehicle roto'd, maybe a car to get some variation. Best thing to do is maybe google 'roto prep showreel'. That is what I used to do when I was in school. The final shot, I have to be honest, was quite basic. You dont really have many examples of cleanup you have done on there. Recruiters will want to know that you have solid cleanup skills and this will show your potential to go on and do comp. Thes shots will generally have some level of camera movement, maybe people walking in front of whatever is cleaned up. I hope that doesn't sound too negative, but I think your showreel is a little sparse and would need some more examples of your work to show recruiters what you can do",
+        "ts": "1580993705.005600",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939383217332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In regards to training - 12 week 2D Comping course at Escape Studios (2018) as a total beginner. Had a lot of really tough personal issues going on so a lot went over my head - made some good friends though. Then a couple of short Josh Parks courses last year (<http:\/\/www.compositingpro.com\/nuke-masterclass-courses\/>) and tail end of last year into this year Hugo's Desk corse (<https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-complete-nuke-compositing-course-20>). Great content but not getting help when I'm stuck - and I try to ask but not plague. 200 other people on the course apparently so I get they can't give 1 on 1 feedback all the time.",
+        "ts": "1580993859.005700",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939840535440_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Kickstarter",
+                "title": "Hugo’s Desk Presents: Complete Nuke Compositing course 2.0",
+                "title_link": "https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-complete-nuke-compositing-course-20",
+                "text": "This is a course designed by Foundry certified teachers for any artist that wants to learn Nuke and be a professional VFX compositor",
+                "fallback": "Kickstarter: Hugo’s Desk Presents: Complete Nuke Compositing course 2.0",
+                "image_url": "https:\/\/ksr-ugc.imgix.net\/assets\/025\/651\/905\/dac8e4565b9098adc62528f4afd902e9_original.jpg?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1561828975&auto=format&frame=1&q=92&s=875ec8e5df75f3e30894f751037b2041",
+                "image_width": 444,
+                "image_height": 250,
+                "from_url": "https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-complete-nuke-compositing-course-20",
+                "image_bytes": 218576,
+                "service_icon": "https:\/\/www.kickstarter.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.kickstarter.com\/projects\/hugosdesk\/hugos-desk-presents-complete-nuke-compositing-course-20"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580993862.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Screengrabs are shots I'm working on and have got stuck.  Yikes, didn't realise the train shot was that bad! Thx for that feedback.",
+        "ts": "1580993946.005900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/941704917815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not negative at all. Need this! Thank you. Should be pretty straightforward to film a car shot and get rotoing.",
+        "ts": "1580994173.006000",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939394404500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm guessing Escape probably gave you the basics of roto and prep maybe? tracking, patching that kind of stuff. I've known about Josh for a while and worked with him 2 years ago, while I'm sure his course gives some good education I'm not sure companies are going to look at him as an official course, more stuff you've done for your own development. The same with Hugo, who I met in my final year at film school. He visited us for a day, but he gave us his card and said if we wanted feedback on our reels to email him, no one ever heard back lol Again I think companies will think of it as personal development. I think the best thing for you to concentrate on now would be your making your showreel stronger. The showreel is the main thing they are judging you on, and this will be your first step in the door and basically the thing you will be judged on your entire career. You would need a solid piece of cleanup, if not 2 and at least one more piece of roto to get a look in, I think",
+        "ts": "1580995000.006100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/927078925730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of reel research I'm aspiring to this sort of quality <https:\/\/mattkenspence.wixsite.com\/mattvfx>  but I hear what you're saying and I know I have a fair way to go. Any other clean up ideas? And should I ditch all the examples above and start again.",
+        "ts": "1580995031.006200",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928400122579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yup feel a bit cheated by the Hugo's  Desk course but it's good to watch and rewatch their content. Sounds crazy but I thought I could learn on the job with the basics like a few of my friends have - that's the impression we were given at Escape. And yes, Escape gave us a good grounding in exactly what you say.\n\nI'll put and plan together and get working on what you suggest. That said, do you think it's nuts to go study somewhere like Lost Boys for 12months? I don't want to but I'm saving for a much more solid education if learning on the job is gonna be out of the question in the industry.",
+        "ts": "1580995640.006300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/927093597090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To be honest everything you learn on these courses is just the start. They teach you the very basics and the examples they use are quite basic, but you will learn so much from other people you work with. You'll generally find most people are very helpful if they have time and will give you advice. In terms of Lost Boys I have no idea what that is. If you have the basics, I think it's best just to try and get some experience and see if you like the industry. I know a few people who started at Escape and are working as compositors now. 2 friends of mine who I've done a number of jobs with, and they're both working here at Framestore now. It's a very small industry in London, you will encounter the same people over and over again. If you get in at a big company then you can learn at those places too after you finish your shift. the film school I went to, they have end of year projects which get entered into festivals and sometimes need help to get finished. Its not roto so much as just comping shots and cleanup, they might be finished by now but I can check if they need any help. It's not paid, but you'll get shots other people wont have",
+        "ts": "1580998793.006400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/941833617799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Def up for helping out with any clean up I can also use for my reel. Do you think I have to master projections before starting out? And are you happy to help out with tricky scripts along the way?",
+        "ts": "1581002516.006500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/941963107271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm happy to help out with any technical advice I can give for sure. In terms of projections, I knew a girl who was working in roto cleanup at One of Us who didn't know how to do projections and she had been working for years. If you can get it, then it makes you a much better prospect for sure. Once you get the basics it's not too bad",
+        "ts": "1581002987.006600",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/940138254597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great that you can look over things when scripts get a bit tricky. Actually the main reason I signed up for Hugo's Desk was to get a grip of projections  once and for all - after not really understanding the scope of the technique at Escape. 3D Projections workflows were - enticingly - supposed to be covered back in November 2019. They're running a bit behind so still waiting.  I'm onto filming and getting some roto on a decent car shot. Should I abandon the (many) screen grab projects I sent across?",
+        "ts": "1581007406.006700",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/942489642294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure what the other shots are doing? Are they just roto or comp shots? So I got in touch with the digital effects department at my old school. All of their films have delivered but they have a shot for a documentary film where a camera man needs to be removed from a mirror, would that be something you might be interested in tackling?",
+        "ts": "1581009372.006800",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928884215235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes definitely! Anything for practice and that I can add to my reel.\n\nAs for the screen grabs\n- with the gunman shot - just roto, kettlebell guy - trying to comp with a makeshift shadow, CG doughnut - keying and comp and hair detail, alleyway shot pans in so 3d tracking and clean up - and hopefully at one point - projections. The topmost screen grab with the monkey is a seriously tricky shot that pans across - tracking and wire removal.",
+        "ts": "1581010007.006900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/939919243668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "at *some point...",
+        "ts": "1581010035.007000",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928906294739_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "with the shots above, maybe just focus on the top 2, the wire removal and tracking cleanup one. I emailed my contact at the school back and said you were interested. It's for a documentary, I asked if it was within the school or an outside project. Either way it might be a short but you can still use it on your reel and will have a credit to put on your cv",
+        "ts": "1581011423.007100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/940420286112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow. That's brilliant, Thank you for that! Look forward to hearing back on that. Watch this space for progress on the wire removal shot - it's a total pain but hopefully will be worth it eventually. As for the alleyway shot, a friend thinks I should remove all the figures apart from the seated pair in the doorway. Do you agree? And if it won't take up too much of your time... how would you tackle the shot? I've got some decent tracks from the windows but there's some parallax with the sandwich board that I don't know how to deal with - which is why I'm thinking projections would be the best way to go...",
+        "ts": "1581012628.007200",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/942672002662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "with that shot, I'm not sure how much movement there is, but how about just removing all the people walking behind the sandwitch board. Keeping the sandwitch board in the shot, you could just roto it maybe, keymix it back in and then you can show another example of roto without having to do roto on anything too painful like the people walking. You would just need to patch the floor, the walls behind no?",
+        "ts": "1581013790.007300",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/942708718662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lol - I've done most of that several times over with varying degrees of success. If you look at it here - <https:\/\/vimeo.com\/366529660> password: nukex  you'll see my patches just keep slipping. I think I have to start again. Then consult you with a fresh script.\nBtw the freelance gig seems to be coming good. They're in LA looking for Roto\/cleanup for a project lasting 2 weeks they say.  Randomly - Have you ever worked out in Canada?",
+        "ts": "1581014152.007400",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/942721020534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

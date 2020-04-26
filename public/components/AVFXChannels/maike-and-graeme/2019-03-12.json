@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Maike, I am currently in my final year of study and working on my animated short entitled \"Lost Boy\" I was just wondering if you knew of any useful scripts or plugins for Maya that you would recommend to speed up the workflow? Thanks",
+        "ts": "1552417881.002100",
+        "username": "Graeme Daly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/574256741475_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

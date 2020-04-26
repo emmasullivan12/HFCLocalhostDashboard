@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Yaw,\nI had a look through your showreel and have written down a few comments and suggestions.\n-----\nShot 1 with the bus:\n* The grading on the window sash bars (the strips separating and holding the panes of glass in a window) does not match the new background outside. Also, be careful with the edges. The roto shapes are not matching the shape of the window bars.\n* Think about your defocus and blur. The blur on the bus should be more of a directional motionblur and less of a general blur. It appears more defocused than the background.\n\n* The perspective of the bus is a bit wrong. It comes into the shot very small and goes out very big and the perspective does not look right.\n\n* The animation of the bus is not really working, it appears to be sliding through the shot.\n\nSuggestions:\nWork on the grading, especially on the windows. And perhaps selecting another image of a bus would make it easier to match the other elements.\n----\nShot 2 the snow scene:\n* Adding annotations to explain what you are doing would help the viewer to understand and appreciate your work more.\n----\nShot 3 - Sniper shot:\n* The grading look a bit wrong here. The levels looks a bit crushed. Check your black levels and make sure they match the background. Also be aware of your edges. Furthermore, the sniper original footage still contains a lot of details, e.g. on his backpack and in the final shot all these details are hidden in darkness.\n\n----\nShot 4 – Blindfolded man:\n* Look like his skin tone is still having a tint of green in it, it’s not too much, but I suggest to play around a bit with the colour grade on his skin and see if you can make it match a bit better.\n-------\nHope this was of any help, please let me know if anything is unclear.\n\nAnd please don’t be discouraged by this review, these are only suggestions and it’s all to help you become a great compositor.\n\nI be happy to review any updated version of your reel. Goodluck. :slightly_smiling_face:",
+        "ts": "1542204542.002500",
+        "username": "Kajsa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/479389172707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

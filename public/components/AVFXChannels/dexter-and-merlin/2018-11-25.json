@@ -1,0 +1,233 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @merlintravas",
+        "ts": "1543173585.008900",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487341392436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I've had a chance to run through your CV",
+        "ts": "1543173594.009000",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486772809568_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really like it :slightly_smiling_face:",
+        "ts": "1543173599.009100",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487710709845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think it's very concise and neat",
+        "ts": "1543173645.009200",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486906543745_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And you have some great things on there such as your charity work and awards and things!",
+        "ts": "1543173687.009300",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487341753044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One thing I would say, is that CV's are normally 1 page or 2 page",
+        "ts": "1543173705.009400",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487408673075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1 page and a bit is quite unusual",
+        "ts": "1543173728.009500",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486906824177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think we could squeeze it onto 1 page if we play around with the spacing a bit",
+        "ts": "1543173746.009600",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487408810707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think you could expand on a few of your experiences e.g. what did you do as a receptionist, what were your specific roles that you want to showcase and what did you learn?",
+        "ts": "1543173828.009700",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486773646800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You would want to mention a few things you did that demonstrate skills that would also translate to the career\/jobs you want to apply to",
+        "ts": "1543173860.009800",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/486907294561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example working with people and in a team, but also explain exactly what you did in a team and how you dealt with people etc",
+        "ts": "1543173890.009900",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/488912396774_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can show very specific examples (e.g. I helped a customer make decisions on a purchase they wanted to make for their family by doing xxx, and in doing so I helped make a sale for the charity and was commended by my boss etc)",
+        "ts": "1543173965.010000",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487342726692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These are the sorts of examples potential employers would like to see :slightly_smiling_face:",
+        "ts": "1543173980.010100",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/488562834199_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I'm sure you have plenty already! You just need to state them more clearly",
+        "ts": "1543173992.010200",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/488562877111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also think you have some incredible awards and curricular activites on your cv",
+        "ts": "1543174027.010300",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487342937828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think you should expand on them more",
+        "ts": "1543174033.010400",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487712251317_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example you were a prefect and senior prefect which is awesome!",
+        "ts": "1543174052.010500",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487712321701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But what did you do, how did you get the role and what have you learnt\/skills developed",
+        "ts": "1543174067.010600",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487409942371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope that's helpful",
+        "ts": "1543174085.010700",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487712437221_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are your thoughts on the feedback\/",
+        "ts": "1543174091.010800",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/488563214695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would be happy to have a look at a revised version when\/if you have one too",
+        "ts": "1543174130.010900",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-25\/487512814082_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

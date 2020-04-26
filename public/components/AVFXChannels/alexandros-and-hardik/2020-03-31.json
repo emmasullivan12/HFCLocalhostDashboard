@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hi Hardik! It's a pleasure to e-meet you! :slightly_smiling_face:",
+        "ts": "1585660408.001900",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037803361412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm doing well thanks - I've been working from home for almost 2 weeks now, adjusting to the new routine of things",
+        "ts": "1585660441.002000",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1025526018850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how are you?",
+        "ts": "1585660447.002100",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1038239887813_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm pretty good, for the last week I have been trying to pick up a routine of work, fun and hobbies.",
+        "ts": "1585678928.002200",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039206856117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've realised there are a lot of things I could be doing but I really miss going outside!",
+        "ts": "1585679623.002300",
+        "username": "Hardik Dineshchandra (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039239214597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "heheh yeah, I've always enjoyed staying at home but even I'm getting a bit restless!",
+        "ts": "1585682313.002400",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1038923546820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been spending my evenings playing videogames and reading, so I can't complain- I saw that you like League of Legends :slightly_smiling_face:",
+        "ts": "1585682403.002500",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1041447039079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also saw that you've been learning python; it's a very trendy programming language these days so it's a good choice!",
+        "ts": "1585682548.002600",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1041305578934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how long have you been learning Python for approximately?",
+        "ts": "1585682555.002700",
+        "username": "Alexandros Gouvatsos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1027948914963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

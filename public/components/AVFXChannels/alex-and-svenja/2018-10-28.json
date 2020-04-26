@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor,\n\nHappy National Mentoring week! Just wanted to say Thank you very much for you time and advice when mentoring me.\n\nHope you have a wonderful week.",
+        "ts": "1540737850.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-28\/466077515395_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

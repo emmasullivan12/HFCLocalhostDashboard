@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry davi I was at home yesterday. I'm in today btw",
+        "ts": "1544188401.000600",
+        "username": "Emanuele (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-07\/497458958784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

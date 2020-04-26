@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Halima :slightly_smiling_face: Hope you're well! Just checking in to see if there's anything I can do to support you? Hope all your interviews went well :+1:",
+        "ts": "1551303948.000100",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562300080913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

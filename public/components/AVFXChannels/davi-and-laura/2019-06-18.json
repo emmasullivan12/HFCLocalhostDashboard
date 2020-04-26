@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. Hope you are well :slightly_smiling_face: Sharing this event on the 20th June. Sounds intersting.",
+        "ts": "1560878864.000400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-18\/668919379957_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/escapestudiosanimation.blogspot.com\/2019\/06\/animation-meets-publishing-on-20-june.html>",
+        "ts": "1560878865.000500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-18\/657496436674_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Animation Meets Publishing on 20 June",
+                "title_link": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/06\/animation-meets-publishing-on-20-june.html",
+                "text": "Bloomsbury, the publishing house who brought Harry Potter to the world, are hosting a special event for animators and video editors on 20 ...",
+                "fallback": "Animation Meets Publishing on 20 June",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-iHwFf10_bek\/XQJCEwiqgYI\/AAAAAAAAEXk\/-vQfOlyvVGArKJXQlKjpuN3vPF3per9HgCLcBGAs\/w1200-h630-p-k-no-nu\/harryPotter.jpg",
+                "from_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/06\/animation-meets-publishing-on-20-june.html",
+                "image_width": 388,
+                "image_height": 204,
+                "image_bytes": 16174,
+                "service_icon": "https:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/06\/animation-meets-publishing-on-20-june.html"
+            }
+        ]
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay cool, what's your plan do develop your skills outside your course?",
+        "ts": "1582403951.000100",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/966910278982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My current plan is to make a game\/ portfolio piece in the summer.",
+        "ts": "1582404613.000200",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/951916840866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "mainly because I want to try and nail my first year and then apply what I've learned into a project.",
+        "ts": "1582404827.000300",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/954587494129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think having a completed project + the game jam project would set me up for applying for placements throughout year 2. Does Betajester offer placements and just in general, what would you be looking for in a designer?",
+        "ts": "1582405162.000400",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/964254564420_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That makes sense, try to supplement your learning and reading while you can. Your course will only take you so far, so whatever else you can add will help! \nWe don't offer placements I'm afraid. For a designer, itll be examples of experience. Games and your contributions to them, so we'd want to see a portfolio with those games :slightly_smiling_face:",
+        "ts": "1582405435.000500",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/953243052467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thanks",
+        "ts": "1582405856.000600",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/954594791569_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "anything you'd recommend learning? + reading material you'd recommend?",
+        "ts": "1582406084.000700",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/954596291809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a lot of material around games design. Look up the GDC talks on YouTube for any post mortems, and the same on gamasutra",
+        "ts": "1582407568.000800",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-22\/951936834514_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

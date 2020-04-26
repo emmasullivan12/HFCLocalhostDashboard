@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You should google reels - they basically make the environments for shots. So they would create beautiful stills that would project into the back of a shot... set extend or create a set from scratch. <https:\/\/vimeo.com\/259317189> (google DMP reels)",
+        "ts": "1554819475.005000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/606180325846_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "ATOMIC DMP REEL 2017",
+                "title_link": "https:\/\/vimeo.com\/259317189",
+                "author_name": "ATOMIC ARTS: Hannah W Edwards",
+                "author_link": "https:\/\/vimeo.com\/atomicartsvfx",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/709473405_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "This is our reel with Digital Matte Paintings created by our photogrammetry and compositing department. It includes backgrounds that were created in 3D, 2D and 2.5D",
+                "fallback": "Vimeo Video: ATOMIC DMP REEL 2017",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/259317189?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"ATOMIC DMP REEL 2017\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/259317189",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/259317189"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am off work Thurs \/ Fri so sorry if I go quiet for a few days!",
+        "ts": "1554819492.005200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/604712183572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

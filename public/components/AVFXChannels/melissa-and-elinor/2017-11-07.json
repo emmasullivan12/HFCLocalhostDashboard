@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh okay, you’ve got quite a mixture of different subjects then! Which is your favourite? Okay, have you managed to get any shadowing experience to see what physiotherapists roles are? Yeah that’s true, learning a language definitely makes it easier to work abroad in the future if you wanted to! Just be mindful that a large majority of physiotherapy isn’t sports related, there are a lot of different fields you can go into",
+        "ts": "1510059990.000123",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-07\/267559604768_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you do any sports at the moment? ",
+        "ts": "1510060000.000079",
+        "username": "1401338 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-07\/267697439905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My favourite subject is PE, I haven’t had any chance to shadow anybody yet but I am hoping to do some once I finish school. I currently do swimming and horse riding, but I also enjoy sailing as well! What sort of physiotherapy are you looking at? ",
+        "ts": "1510127471.000012",
+        "username": "elinor.sandells (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-07\/268917656341_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

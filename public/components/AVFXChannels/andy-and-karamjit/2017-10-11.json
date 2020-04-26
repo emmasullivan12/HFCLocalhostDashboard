@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that is great!!",
+        "ts": "1507724196.000167",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254126393441_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At the moment, I am looking to work for British Airways as an aircraft engineering in their hanger at Heathrow Airport (London). I am thinking of doing an apprentice with British Airways as then the job is 100% garanteed. Moreover, they also offer various benefits: A bonus scheme linked to performance\nA high quality pension scheme\nDiscounts on British Airways flights and holidays from day one for you, your friends and family\nUnlimited standby flights anywhere in the world on British Airways and other airlines\nA range of other benefits giving you access to discounts with thousands of retailers and gyms\nA range of wellbeing facilities to support you if you are unwell, and help you stay fit",
+        "ts": "1507724718.000083",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/253996732880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A bonus scheme linked to performance\nA high quality pension scheme\nDiscounts on British Airways flights and holidays from day one for you, your friends and family\nUnlimited standby flights anywhere in the world on British Airways and other airlines\nA range of other benefits giving you access to discounts with thousands of retailers and gyms\nA range of well-being facilities to support you if you are unwell, and help you stay fit",
+        "ts": "1507724888.000140",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255734934391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However, I am confused as I was also thinking about doing university instead (UCL OR Imperial College of London). Here, the problem is that my job with British Airways is not guaranteed, even if I have a degree and I actually don't want to risk.",
+        "ts": "1507725200.000150",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255536074310_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So can please help me make a decision, Thanks!",
+        "ts": "1507725269.000244",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254134181617_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wanted to ask you if you could have a look at my CV and my GCSEs grades.",
+        "ts": "1507725459.000329",
+        "username": "ksingh-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254135584385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy to look at your cv and GCSE grades. In the end you need to make the decision and ultimately it boils down to what is important to you. You have listed a lot of benefits to working for BA. Does that represent what drives you in your career choice? Going down the apprentice route is an option and if it works well there may be the opportunity for BA to pay for you to do a degree. Something worth exploring. You have obviously done some homework on the apprentice route. ",
+        "ts": "1507753953.000588",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255015574372_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way how do you feel about BAE shedding 2000 jobs in the aviation industry?",
+        "ts": "1507754386.000221",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/256051420599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry havent been messaging you about my work recently. I'm just been trying to get on with it and testing out different methods. I will send progress renders of my work tomorrow.",
+        "ts": "1582056235.012100",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/946513948691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries the more you show , the more I can try to help , at your pace no worries ",
+        "ts": "1582058962.012200",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/945271548210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

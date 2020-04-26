@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Neal it's been a while! Currently im still chilling at the moment as I'll be working with lidar next year so I'm trying to find some part times, apart from IT part times do you know any good VFX part time jobs? I applied for runner positions in some companies but I'm just trying to fill the gap for now",
+        "ts": "1571125728.000100",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/789071549537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hello Azad, I hope you're well. part time is tricky in VFX. I haven't come across many roles that require it. Have you tired looking at a website called <http:\/\/peopleperhour.com|peopleperhour.com>? it's a freelance site and you bid to do work for someone. it could be a photoshop design or animation and i've seen people ask for comp work on there now and again. it's worth checking out to see what's on there",
+        "ts": "1571152858.000200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/783301954786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

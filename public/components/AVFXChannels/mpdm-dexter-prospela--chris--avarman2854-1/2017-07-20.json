@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "No problem! Did you find the links useful?",
+        "user": "U5W6M67LZ",
+        "ts": "1500570746.119178",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Would you like me to have a look through your personal statement?",
+        "user": "U5W6M67LZ",
+        "ts": "1500570760.126538",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

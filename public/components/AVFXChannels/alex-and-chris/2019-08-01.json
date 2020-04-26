@@ -1,0 +1,84 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I never saw your reply, didn't get a notification for some reason... Here's today's progress, majority of the model done, just have to dig around in my assets to find some screws etc. and model the clasp mechanism. I'm not going to model the inside of the crate so will just have it closed on the bottom render.",
+        "ts": "1564689362.007800",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/715482828887_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FLZJC4YPJ",
+                "created": 1564689387,
+                "timestamp": 1564689387,
+                "name": "blackCrate_01_08_dailies.png",
+                "title": "blackCrate 01 08 dailies",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2409444,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLZJC4YPJ\/blackcrate_01_08_dailies.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FLZJC4YPJ\/download\/blackcrate_01_08_dailies.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FLZJC4YPJ-037fc9363d\/blackcrate_01_08_dailies_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 2880,
+                "original_h": 1620,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FLZJC4YPJ\/blackcrate_01_08_dailies.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FLZJC4YPJ-9eda5c9dd7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1564689394.007900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I need to make it less tall and a bit wider, but also struggled to match the focal length of the camera so it could be some distortion from that.",
+        "ts": "1564689456.008200",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/715484805847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

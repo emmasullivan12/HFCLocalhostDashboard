@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s interesting! Have you worked for any studios on motion projects?",
+        "ts": "1543046754.004300",
+        "username": "Giacomo Verri (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-24\/487097892242_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I started working at sky, I initially started as a graphic \/ motion graphic designer. I was working on the red button interactive pages making demos etc in after effects. From there I moved into vfx at sky ",
+        "ts": "1543095230.004400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-24\/487168852915_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey yinghao thank you for your answer :wink: , yeah my boyfriend is really a big help for me , i think i need to do mores projects to have a better demo reel , what project do you think i should do next to learn skill i will need to be an environment artist ?",
+        "ts": "1583845369.003000",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/978425933794_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i almost finish my second project and i will start to do the 3 third project , i want to create a japanese train station with mountain in the background , because i want to have better skill with modeling , and learn to do some mountain with Houdini and create tree with speed tree , i think i need to learn more zbrush too because i am very bad with zbrush . do you think is good project for learn new skill i need ? :slightly_smiling_face:",
+        "ts": "1583846641.003100",
+        "username": "maxime polly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/991274415765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

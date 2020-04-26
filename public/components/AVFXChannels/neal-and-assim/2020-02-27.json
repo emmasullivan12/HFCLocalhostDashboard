@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Neal, sorry for the late response I didn't receive any notification which is weird, apologies for that. Thank you so much for the feedback and I will update it as soon as possible.\n\nSomething that I am quite worried and curious about is what message is the showreel sending. Because it is quite broad and has a generalist feel to it, what are your thoughts on that?",
+        "ts": "1582813404.000100",
+        "username": "assim kamuka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/959286118002_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Assim, no problem, i have the same issue with notifications.",
+        "ts": "1582815204.000200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/962024696673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When sending a showreel out, you want to display your best work. Never pad it ot with fillers to make it last a bit longer. Companies will always rather see 30 seconds of amazing work over 2 mins of a few good shots and some average shots in the middle.",
+        "ts": "1582815288.000300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/959347803922_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in a way you're right. you may want to consider splitting your reel up into a comp reel and a separate reel for your 3D work. If applying for a comp role, they will only want to see your comp skills. If asked for an interview, you can always mention that you have some 3D knowledge which maybe useful on the job but concentrate on the role you are going for",
+        "ts": "1582815384.000400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/971685379876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you will rarely see someone asking for a compositor with 3D skills to be honest. the reason is that if they are hiring a compositor, they want to bring in someone who specialises in that, as they already will have someone who specialises in 3D to do that side of the work.",
+        "ts": "1582815550.000500",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/960677162211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hopefully that make sense, but feel free to ask if you want me to elaborate on anything",
+        "ts": "1582815605.000600",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/959359209538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you that makes perfect sense. I will apply the changes that you've suggested and break up the showreel into two, one for comp and the other for 3D work. Thanks for the feedback I really appreciate it.",
+        "ts": "1582819716.000700",
+        "username": "assim kamuka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/962191570353_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "feel free to ask anything at anytime",
+        "ts": "1582820152.000800",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/971862652004_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

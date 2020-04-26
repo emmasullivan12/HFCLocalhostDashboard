@@ -1,0 +1,145 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Arran! I'm good thank you, how are you?",
+        "ts": "1546693494.002300",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/516655288897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've enjoyed my Christmas and New Year, spent a nice time with my family",
+        "ts": "1546693557.002400",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/516523687984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dexter sent me your mentor profile which gave me a brief idea about you :slightly_smiling_face: I liked your skills — especially your interests outside of work, seemed very exciting and interesting",
+        "ts": "1546693678.002500",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/518313686183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I signed up to Prospela last year and I enjoyed the support I got from my mentors as well as Dexter and Emma. I think this is a great platform to get answers to your questions from a professional in the particular field that you're interested in",
+        "ts": "1546693772.002600",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/518662667174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So, over the year my curiosity has definitely changed — in terms of what I'd like to learn. Last year I was exploring different career paths, I went from being interested in teaching to settling with Architecture (for now, of course). But this year I was trying to nail my personal statement\/CV stuff. Dexter recommended I speak to you now that I've sent my personal statement off and I will be getting interviews from universities. I've actually only had about 2 interviews in my life so far haha, so I'm really nervous because I've only been awkward and quiet during them which is bad :confused:",
+        "ts": "1546694075.002700",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/518315188967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm great thank you! Glad to hear you've enjoyed your Christmas and New Year :grinning:",
+        "ts": "1546717886.002800",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/516615451616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you... if you have any questions or would like to know some more about me and my professional experience, feel free to ask anytime.",
+        "ts": "1546717946.002900",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/518753796086_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I'm happy that you've found Prospela to be a useful support resource!",
+        "ts": "1546718064.003000",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/518754192662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Interesting to hear about your change in preference from Teaching to Architecture, what drove that change?",
+        "ts": "1546718111.003100",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/518405773399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your personal statement and CV is definitely something I can help with, if you still need some support with them?",
+        "ts": "1546718147.003200",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/516748277793_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And interview preparation is my specialty :grin: So we can 100% work on your interview skills together!!",
+        "ts": "1546718206.003300",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/516748487185_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you tell me what has made you feel nervous \/ awkward in your previous interviews? (don't worry if you can't put a finger on it... just interesting for me to see where you head is at)",
+        "ts": "1546718278.003400",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/517248704995_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you're having a nice weekend!",
+        "ts": "1546718294.003500",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-05\/516616849440_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

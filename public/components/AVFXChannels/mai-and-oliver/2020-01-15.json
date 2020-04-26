@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi I'm putting together my updated showreel together today, could you have a quick look at it when you have a free moment and let me know if I need to fix anything :) thanks so much for your help :)",
+        "ts": "1579090340.000500",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/895843974899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

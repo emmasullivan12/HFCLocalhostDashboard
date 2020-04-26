@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "text": "Your Slack export has completed! You can download the file from <https:\/\/prospela.slack.com\/services\/export\/download\/203436477189\/2dbc8f96|your export page>.",
+        "user": "USLACKBOT",
+        "ts": "1498460487.015347",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - E-Mentor Onboarding Pack (Summer Programme) vSlack.pdf* under review.",
+        "ts": "1498482021.277877",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - E-Mentor Onboarding Pack (Summer Programme) vSlack.pdf* meets our content policy.",
+        "ts": "1498482023.278240",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf* under review.",
+        "ts": "1498485810.508320",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Student Onboarding Pack (Summer Programme) vSlack.pdf* meets our content policy.",
+        "ts": "1498485811.508699",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Georgia.pdf* under review.",
+        "ts": "1498492805.265573",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Georgia.pdf* meets our content policy.",
+        "ts": "1498492807.266691",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Naomi.pdf* under review.",
+        "ts": "1498495471.234123",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Naomi.pdf* meets our content policy.",
+        "ts": "1498495472.234603",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Employability Skills Cheat Sheet.pdf* under review.",
+        "ts": "1498500250.941318",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Employability Skills Cheat Sheet.pdf* meets our content policy.",
+        "ts": "1498500251.941706",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Employability Skills Cheat Sheet.pdf* under review.",
+        "ts": "1498500275.950629",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela e-mentoring - Employability Skills Cheat Sheet.pdf* meets our content policy.",
+        "ts": "1498500276.950983",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Naomi.pdf* under review.",
+        "ts": "1498508421.752376",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":white_check_mark: Uploaded image: *Prospela - Your Mentee Profile - Naomi.pdf* meets our content policy.",
+        "ts": "1498508422.752704",
+        "username": "ModerateContent.com",
+        "bot_id": "B5JB0K58V"
+    }
+]

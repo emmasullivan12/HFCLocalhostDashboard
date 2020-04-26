@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been trying improve my 3D art side for a bit, so I have been doing a lot of renders. This one I wanted to focus on the poses and expressions.",
+        "ts": "1532547075.000210",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-25\/405026974386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

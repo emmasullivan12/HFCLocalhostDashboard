@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My callstack isn't showing anything",
+        "ts": "1549826539.012600",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-10\/548184062375_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

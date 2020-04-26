@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! Thank you so much for your answers! It is very interesting to read about.\n\nIn VFX I like compositing, to see how everything comes together. I love how with VFX we can make whatever we imagine and tell stories without the limits of reality. While I have studied VFX this year I have discovered i don't enjoy doing the technical part and working in the different softwares is not a strength of mine. So i am looking into studying film production instead. But I think learning VFX is such a great way to learn about filmmaking.\n\nDid you know right away where you belong on a VFX team or have you tried different roles to find out?\nWhen working on a film, how is the process of working with the director? And what, in your experience, is most often a challenge when working with people outside that does not know so much about VFX?\n\nThank you so much!\nIda",
+        "ts": "1554066842.000100",
+        "username": "Ida Durvard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/596175202646_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

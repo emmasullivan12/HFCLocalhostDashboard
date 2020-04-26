@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Marina! That's looking good but there are few things to improve. The mechanics of the ball are really good but at the moment the it's a little slow. You can speed it up to give it a bit more impact when it lands. I would probably recommend doing it twice as fast. Maybe a little less. The bounces are good.\nDid you animate the dominos by hand or are they simulated? If you did them by hand they look really good. The bit of bounce you give the last one as it lands is done well.\nFor something like this I would leave out the camera move entirely. You're trying to show off your work and your animation and the camera move just makes it harder to see what's going on. Unless you're doing something that requires a camera move then I would leave them out. The animation is really only 3 or 4 seconds long but it's made into 6 seconds because of the camera move.",
+        "ts": "1576851358.000400",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/882000700688_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

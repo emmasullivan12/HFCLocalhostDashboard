@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thats fine ill get you in the next video and drop you a link once its done :slightly_smiling_face:",
+        "ts": "1562922488.000800",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-12\/692188158452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

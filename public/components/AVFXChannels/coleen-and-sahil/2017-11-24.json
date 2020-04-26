@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy Friday Sahil!",
+        "ts": "1511519316.000241",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/276427528880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is yesterday's instalment...",
+        "ts": "1511519329.000300",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/278160336039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thurs 23rd Nov:\n\n*Today I worked:* from 9:30AM to 6:30PM (I normally have to work a little later but this has been a good week!)\n\n*Today tasks \/ activities I worked on: Planning the management company facilities on the project. I sent the client 3 sketches and asked them to clarify their priorities so that we can finalise the plans. \n\n*Today my colleague told me: My team leader and I discussed how tight the programme is on this project, we have to b very organised and look ahead to ensure we meet our deadlines. \n\n*Today I'm learning \/ reading: The Architect's Journal - we get daily newsletters which helps us keep up with what's going on in the industry. \n\n*Today I'm feeling (stress levels): I feel like today is the calm before the storm, my role in the masterplan and public realm team on this project involves coordinating all the building designs and we have asked everyone to send us their latest models by the end of the day so tomorrow we will find out how much work there is to do in coordinating!",
+        "ts": "1511519339.000093",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277227211669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry - just realised I forgot to send you Wednesday!\nI had a commercial meeting in the morning to discuss keeping the project on budget\nI then began working on the layouts for the management company offices\nI managed to get out of work at 6 and go to my zumba class - I do 1 hour of cardio and 30 mins of floor and stretching. I really try hard to work out as often as possible as it makes me feel much better physically and mentally!",
+        "ts": "1511519897.000352",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/276431187168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

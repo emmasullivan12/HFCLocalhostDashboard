@@ -1,0 +1,296 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "",
+        "ts": "1508507125.000177",
+        "username": "Polly",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258398350309_48.png"
+        },
+        "bot_id": "B5RMPJ1GD",
+        "attachments": [
+            {
+                "callback_id": "w7x5Hz7AYh2PFF6CH",
+                "fallback": "What are peoples general thoughts on interns?",
+                "pretext": "<@U4VR52RQE> used `\/poll`!",
+                "title": "What are peoples general thoughts on interns?",
+                "id": 1,
+                "color": "35A8E0",
+                "fields": [
+                    {
+                        "title": "",
+                        "value": "\n",
+                        "short": false
+                    },
+                    {
+                        "title": "",
+                        "value": "*1*: Love'em. If we had enough budget, the place would be crawling with them.",
+                        "short": false
+                    },
+                    {
+                        "title": "",
+                        "value": "*2*: Interns are useful, but I don't have time to manage them unfortunately.",
+                        "short": false
+                    },
+                    {
+                        "title": "",
+                        "value": "*3*: I believe they have potential, but generally aren't ready for the workplace",
+                        "short": false
+                    },
+                    {
+                        "title": "",
+                        "value": "*4*: I've had bad experiences with interns. I wouldn't like to have one again.",
+                        "short": false
+                    }
+                ],
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "one",
+                        "text": "1",
+                        "type": "button",
+                        "value": "0",
+                        "style": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "two",
+                        "text": "2",
+                        "type": "button",
+                        "value": "1",
+                        "style": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "three",
+                        "text": "3",
+                        "type": "button",
+                        "value": "2",
+                        "style": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "four",
+                        "text": "4",
+                        "type": "button",
+                        "value": "3",
+                        "style": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "add_option_to_existing_poll",
+                        "text": "＋ Add Option",
+                        "type": "button",
+                        "value": "vnK8e7bYwQ6kTTz4H",
+                        "style": ""
+                    }
+                ],
+                "mrkdwn_in": [
+                    "fields",
+                    "pretext"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "this could be called \"What's the general vibe on interns?\"",
+        "user": "U4VR52RQE",
+        "ts": "1508507241.000530",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I thought this was relevant because we are talking about interns already and most people are being asked by their mentees",
+        "user": "U4VR52RQE",
+        "ts": "1508507280.000103",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "orrrrr we just go straight to \"what does potential look like to you?\" or some equivalent",
+        "user": "U4VR52RQE",
+        "ts": "1508507348.000231",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Do poll first",
+        "user": "U4V22C6A1",
+        "ts": "1508508681.000649",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Whar does potential look luke can be another q another day",
+        "user": "U4V22C6A1",
+        "ts": "1508508693.000012",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "cool",
+        "user": "U4VR52RQE",
+        "ts": "1508508715.000081",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "and its alright\/good?",
+        "user": "U4VR52RQE",
+        "ts": "1508508720.000170",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "as it is?",
+        "user": "U4VR52RQE",
+        "ts": "1508508722.000311",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yes think so!",
+        "user": "U4V22C6A1",
+        "ts": "1508509945.000174",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "cool :carltondance:",
+        "user": "U4VR52RQE",
+        "ts": "1508509969.000179",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

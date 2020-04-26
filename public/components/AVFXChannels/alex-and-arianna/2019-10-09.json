@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Another question !! How is living in Bristol?? I’ve always stayed here around London and Oxford. So I’m curious to hear about how life is other cities.  \n\nThank you so much Alex, \n\nArianna \n\n",
+        "ts": "1570604724.000200",
+        "username": "Arianna Querin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/788343877156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

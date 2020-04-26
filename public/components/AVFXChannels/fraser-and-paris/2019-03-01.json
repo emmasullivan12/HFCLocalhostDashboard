@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Paris, great to e-meet you! Your film sounds very interesting and I think it can be a great advantage that it is so close to your heart. How much of the film are you taking on yourself, when did you start and how much is done? Have you got a schedule? Would be great to hear about A Time Apart from the very start onwards.",
+        "ts": "1551433088.001000",
+        "username": "Fraser (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-01\/564464143650_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am making the entire thing by myself with guidance from my lecturers (Alan and Phil). I have been working on it since February last year, so far I have my characters made, some sets half made and some of an art of complete. I haven’t got a schedule I’m just getting as much as I can done, I’m currently animating at the moment. Here’s my blog and you can see everything so far for yourself - I will be putting up a blog post today of even more progress, I know it doesn’t look very impressive or a lot: \n\n<https:\/\/parisanimationarts.blogspot.com\/search\/label\/A%20Time%20Apart?m=0>",
+        "ts": "1551442498.001100",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-01\/564453187635_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This was my last submission back in January which might be a better start for understanding my project: \n\n<https:\/\/parisanimationarts.blogspot.com\/2019\/01\/a-time-apart-minor-submission-post.html?m=1>",
+        "ts": "1551442570.001200",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-01\/564001834993_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "A Time Apart: Minor Submission Post",
+                "title_link": "https:\/\/parisanimationarts.blogspot.com\/2019\/01\/a-time-apart-minor-submission-post.html?m=1",
+                "text": "The first video shows the character models, under their names I've written how far I've got with each character. The video below is a demo ...",
+                "fallback": "A Time Apart: Minor Submission Post",
+                "image_url": "https:\/\/lh5.googleusercontent.com\/proxy\/-hqkG9RWEu7SNlRsQrMtUWRbSRewP11qbpDGfx-7XopHyxmOIafzeU-hQiK0toUJkXlbuINEGepippw9iEP7mZfwteU=w1200-h630-n-k-no-nu",
+                "from_url": "https:\/\/parisanimationarts.blogspot.com\/2019\/01\/a-time-apart-minor-submission-post.html?m=1",
+                "image_width": 333,
+                "image_height": 250,
+                "image_bytes": 10370,
+                "service_icon": "https:\/\/parisanimationarts.blogspot.com\/favicon.ico",
+                "service_name": "parisanimationarts.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/parisanimationarts.blogspot.com\/2019\/01\/a-time-apart-minor-submission-post.html?m=1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I forgot to ask about you, are you working on any projects at the moment? Dexter already gave me a bit of information about you, that you’re a freelance writer and director and work in VFX :slightly_smiling_face:",
+        "ts": "1551446536.001400",
+        "username": "Paris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-01\/563874642512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

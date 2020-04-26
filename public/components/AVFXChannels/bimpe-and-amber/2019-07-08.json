@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you very much!  Yeah, I’m steering to the Modeling &amp; Texturing side but I’m really getting interested in the technical side as well. I’ve started a introduction coding course using python which has been super fun. I can send you a link to my website as well. So, you can check it out. ",
+        "ts": "1562600977.002100",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/687758387856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/chevelleaua.wixsite.com\/amberchevelleau>",
+        "ts": "1562606268.002200",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/676481386243_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "heya! and thats awesome on the coding side - having that python knowledge will definitely give your cv and skillset a boost! and thanks for sending over your website!! will take a look - and if youre ok with this I can also ask a couple of people in the the modelling and texturing department at work to take a look? if youre wanting to currently go down that route they'll be able to pin point a couple of the key things theyre looking for in portfolios",
+        "ts": "1562624696.002300",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-08\/688215918272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

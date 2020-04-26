@@ -1,0 +1,198 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, Shailendra! Here's what I have so far with the project",
+        "ts": "1566657100.006000",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/737197079429_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/355459991>",
+        "ts": "1566657106.006100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/739375554694_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "MiniCompTest10003",
+                "title_link": "https:\/\/vimeo.com\/355459991",
+                "author_name": "Callum McKay",
+                "author_link": "https:\/\/vimeo.com\/user90797736",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/808249341_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: MiniCompTest10003",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/355459991?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"MiniCompTest10003\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/355459991",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/355459991"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/355345091> - This video has the original plate at the start but 10003 is my current version.",
+        "ts": "1566657138.006300",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/739375703206_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "MiniCompTest1000",
+                "title_link": "https:\/\/vimeo.com\/355345091",
+                "author_name": "Callum McKay",
+                "author_link": "https:\/\/vimeo.com\/user90797736",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/808101664_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: MiniCompTest1000",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/355345091?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"MiniCompTest1000\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/355345091",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/355345091"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I projected the image onto geometry of the buildings I made and then animated the camera.",
+        "ts": "1566657311.006500",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/736725320084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Going to comp something into the scene eventually.",
+        "ts": "1566657325.006600",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/730812616401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Callum!\nits the right idea.\n\nA few things you can try to make it better.\nTechnical notes:\n-double check the scene scale, focal length matches(atleast in the ballpark) to the real world.\n-you could raise the camera height as if being hand held by a human operator.\n\nCreative Notes\/Ideas: \n-Composition\/framing \nthink about how you want to frame the shot and why\n\n-Camera move\nplan what the final shot might look like and why (depending on what you might put into the shot)\nMany filmmakers choose a specific style based on the story they are trying to tell.\nhandheld or cinematic smooth all serve a purpose.\n\n\n\n\n\n\n\n",
+        "ts": "1566711626.006700",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/737431612944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FMR8RKXFZ",
+                "created": 1566711743,
+                "timestamp": 1566711743,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 14505,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMR8RKXFZ\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMR8RKXFZ\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMR8RKXFZ-1b0ecf7464\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMR8RKXFZ-1b0ecf7464\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMR8RKXFZ-1b0ecf7464\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 325,
+                "thumb_360_h": 171,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMR8RKXFZ-1b0ecf7464\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 325,
+                "original_h": 171,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FMR8RKXFZ\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FMR8RKXFZ-46a31849e7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1566711744.006800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/DGujsKb2e10>",
+        "ts": "1566711765.007100",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/739297748279_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Cinematographer Explains 3 Different Camera Lenses | Vanity Fair",
+                "title_link": "https:\/\/youtu.be\/DGujsKb2e10",
+                "author_name": "Vanity Fair",
+                "author_link": "https:\/\/www.youtube.com\/user\/VanityFairMagazine",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/DGujsKb2e10\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Cinematographer Explains 3 Different Camera Lenses | Vanity Fair",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/DGujsKb2e10?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/DGujsKb2e10",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/DGujsKb2e10"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hope it helps.\nCheers",
+        "ts": "1566711839.007300",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-24\/736965980628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

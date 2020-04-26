@@ -1,0 +1,70 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Teddy, hope you had a good Christmas and New Year! Before Christmas I sat down with one of our senior concept &amp; DMP artists about how to get into those areas. We had a few good ideas between us! For now I'll just dump it all here, then after we can break it down as it's pretty general and far-reaching!",
+        "ts": "1546445913.000100",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-02\/515199847525_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1) STRATEGY\n* Firstly, it would be good to figure out what kind of concept work do you want to do? Creatures \/ environments \/ mechanical? You don't have to make up your mind straight away, and you can always change direction, but it will help guide you and keep it interesting!\n\n* in terms of guidance, it's always a good start to see what other people are doing. Artstation is a great website where artists share their work - good for inspiration \/ feedback. There's work from all levels there, including senior industry professionals. You'll see a lot of 2D and 3D work on Artstation. <https:\/\/www.artstation.com\/>\n\n2) SOFTWARE\n* The type of software you use isn't so important, although useful especially in smaller companies to use common software like Photoshop. Especially in concept art, it's the feel of the piece that is most important, so go with what you like. Can go full 3D - Maya is an all-round 3D modeller, but you might have more luck with zbrush or 3d-coat for a modeller that works like virtual sculpting.\nHere's a random speed-sculpt in z-brush (I could watch these for hours!)\n<https:\/\/www.youtube.com\/watch?v=uNWheYyLnzc>\nPlenty of tutorials online for z-brush, even on youtube: <https:\/\/www.youtube.com\/results?search_query=z-brush+tutorial>\n\n* Personally I would avoid blender and gimp (free open-source programs), because no-one in the industry uses them and it's always easier to get a job when you know how to use the company's software!\n\n3) WORK\n* A common mistake when starting out is to just design something from scratch. This makes you the artist and the client, which is unrealistic and difficult to criticise!\n* You could team up with a friend with a particular vision, who has no design abilities and fit stuff into their story \/ world. Alternatively you could create something new that fits into an existing world - like a new ship for Star Wars or a new monster for Stranger Things. Something that has a strong visual style that you as an artist try to fit new ideas into.\n* As a concept artist you are the one who creates, but (like all of us) you are not the one with the final say. The director and\/or VFX supe will guide\/criticise your work throughout the process, so it's important to demonstrate that you can be both creative and able to work alongside \/ for the client. Using your expertise to create \/ inform \/ guide the client into something that looks amazing but ultimately works for their project.",
+        "ts": "1546446600.000200",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-02\/515210533813_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "ArtStation",
+                "title_link": "https:\/\/www.artstation.com\/",
+                "text": "ArtStation is the leading showcase platform for games, film, media &amp; entertainment artists.",
+                "fallback": "ArtStation",
+                "thumb_url": "https:\/\/www.artstation.com\/images\/facebook.jpg",
+                "from_url": "https:\/\/www.artstation.com\/",
+                "thumb_width": 968,
+                "thumb_height": 504,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-3906d4a2e9aaa548f3d4261d9e0363e0.png",
+                "service_name": "artstation.com",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/"
+            },
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Zbrush Dragon Head Speed Sculpting (40min)",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=uNWheYyLnzc",
+                "author_name": "Kouji Tajima",
+                "author_link": "https:\/\/www.youtube.com\/user\/Kouji666sk8",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/uNWheYyLnzc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Zbrush Dragon Head Speed Sculpting (40min)",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/uNWheYyLnzc?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=uNWheYyLnzc",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 2,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=uNWheYyLnzc"
+            },
+            {
+                "title": "z-brush tutorial - YouTube",
+                "title_link": "https:\/\/www.youtube.com\/results?search_query=z-brush+tutorial",
+                "text": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+                "fallback": "z-brush tutorial - YouTube",
+                "from_url": "https:\/\/www.youtube.com\/results?search_query=z-brush+tutorial",
+                "service_icon": "https:\/\/s.ytimg.com\/yts\/img\/favicon-vfl8qSV2F.ico",
+                "service_name": "youtube.com",
+                "id": 3,
+                "original_url": "https:\/\/www.youtube.com\/results?search_query=z-brush+tutorial"
+            }
+        ]
+    }
+]

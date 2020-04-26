@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the late reply! Hi Michael, thanks for accepting me as a match. :) Hope you are doing well during these times.",
+        "ts": "1586593500.001900",
+        "username": "Martin Kamminga (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1053183156918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Likewise, let me know how exactly you want me to help you :slightly_smiling_face:\nIf you have any work you want feedback on feel free to send it, if you want to know more about me (what I do and how I got there) i'm also happy to answer those questions",
+        "ts": "1586594863.002000",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1053188204038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if there is anythign I cant answer i'll tell you, so ask whatever you want :slightly_smiling_face:",
+        "ts": "1586594883.002100",
+        "username": "Michael Cauchi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1076943110960_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

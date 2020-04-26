@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Hiiiiiiiiiiiii ",
+        "user": "U5XHLUT62",
+        "ts": "1498058921.668283",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "ga22eab815c9",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4a22eab815c96623c0603ba086b41899.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0024-72.png",
+            "first_name": "Sarah",
+            "real_name": "Sarah",
+            "display_name": "saz_1234",
+            "team": "T4UUTPV18",
+            "name": "saz_1234",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ordered it. I got the Ryzen 9, 32 ram and 2tb hardrive. None of the gpus on the list were available so I just got the one that came with it. 1275 with a screen keyboard and mouse and they chucked in a few games too.",
+        "ts": "1574433941.005900",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/837686288113_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

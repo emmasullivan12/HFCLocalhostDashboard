@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Moein I recently did a project recreating a London skyline. Mary Poppins returns. I have to tell you it's no small task!! Maybe you could simplify it a little bit? Choose a smaller section of London or a specific street. What is your approach going to be? Full 3d or matte painting? ",
+        "ts": "1544616287.000700",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501315254273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

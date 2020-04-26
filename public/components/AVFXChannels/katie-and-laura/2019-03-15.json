@@ -1,0 +1,386 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@katie.hallaron has joined the channel_",
+        "ts": "1552645916.000900",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578329037557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@lrmckn has joined the channel_",
+        "ts": "1552645945.001000",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/579070279047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam (Laura), please meet Katie your incredible E-Mentor I've been telling you about! Feel free to introduce yourselves and continue chatting within this channel :wave:\n\nI will now be leaving the channel, but both please direct message myself or emma-prospela if you have any questions. All the best for now! :smile:",
+        "ts": "1552646059.001100",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/575591497888_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1552646245.001200",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/577967342916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1552646251.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578333682405_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sam, nice to meet you! :wave:",
+        "ts": "1552648650.001400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/579472259622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm Katie and I work as a Creature FX Technical Director at Framestore.",
+        "ts": "1552648662.001500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/579472429302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Katie! Really nice to meet you :blush: thanks a lot for signing up as mentor, I am really excited to do this",
+        "ts": "1552648684.001600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/577918505891_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just to introduce myself a little bit; I have previous experience working as a Previs\/Concept Artist at Painting Practice, a Concept Artist at Framestore Art Department and a Concept Artist\/3D Generalist at Lucid Games. Some of my work has been on a Freelance basis. :art:",
+        "ts": "1552648686.001700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/577918528611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some of my past projects include mobile game; 'Jacob Jones and the Bigfoot Mystery', TV shows; 'Black Mirror', 'His Dark Materials', and the films; 'Ready Player One', 'Christopher Robin' and recently 'Detective Pikachu'.",
+        "ts": "1552648716.001800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578032656578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I joined Prospela because I love chatting to other artists who are working in, or just entering the industry, and I believe Games and VFX could be doing so much more to become a more nurturing, inclusive environment for people of all backgrounds to really thrive - I want to do my best to encourage that and to give you an honest insight into working life in the industry.:thumbsup::thumbsup:",
+        "ts": "1552648765.001900",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/579473673622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm very excited to hear about yourself and maybe you can let me know some of your thoughts about what you would like to achieve or find out more about through this process?",
+        "ts": "1552648779.002000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578001770340_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That´s awesome!! ok before I start drilling you with questions I'll do and intro too:",
+        "ts": "1552648795.002100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/577919899347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, Happy Friday! :tada:",
+        "ts": "1552648796.002200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578033609218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am from Colombia (Bogotá), came to London about 6 months ago to get a Bachelor's degree in game art and animation. I study at SAE Institute, and I am loving it. This is definitely my thing and it has been my dream to go into video game design and animation for many many years. Planned and saved up the money for this for almost 2 years!",
+        "ts": "1552648820.002300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/579109362999_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have previous experience with more \"traditional\" art techniques, studied visual arts back in Colombia and in Argentina but dropped out because I didn't feel it was getting me where I wanted. Did freelance for almost 5 years until I learned some programming on a bootcamp and figured video games was the way to go",
+        "ts": "1552648914.002400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578035095906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(by \"traditional\" I mean oil painting, drawing and illustration, sculpting and some 2D animation too)",
+        "ts": "1552648999.002500",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578370702389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have to head to class now but I'll be back soon to answer your question about thoughts and expectations",
+        "ts": "1552649070.002600",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578005389972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fantastic, belated welcome to London!!\nThat's amazing dedication, I'm really glad you are loving your course - it must be satisfying to know it was all worth it!\nNo problem - I look forward to hearing back from you when you get some more time :blush:",
+        "ts": "1552649288.002700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578008063348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am back! Still at uni finishing some work but not in class anymore so thought I should finish what I started and maybe even show you what I am currently working on. (Thanks for the warm belated welcome by the way :grin:)",
+        "ts": "1552675835.002800",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578602737458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I actually covered everything introduction-wise... oh! one more thing: You might have noticed I go by two names... my birth name is Laura but my preferred name is Sam. I identify as trans non-binary an my pronouns are He\/they. I still like and use my birth name on everything that is \"official\" but most people here know me by Sam and I guess its the one that comes more natural with my pronouns. Feel free to alternate between the two as much as you want",
+        "ts": "1552676197.002900",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/579685668263_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I am currently getting to the end of my second term at uni and we have been thrown into the world of Maya and Arnold. We are currently working on creating an environment that could go on a video game. My group is just four people so we have had to work a bit harder than the other larger groups which are 5 or 6 people. I am enjoying every bit of the process although I have had rough times understanding a few things. Ok, less talking and more showing:",
+        "ts": "1552676550.003000",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/579693607031_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH0K5B16E",
+                "created": 1552678197,
+                "timestamp": 1552678197,
+                "name": "Cave_render_test2.0013.tif",
+                "title": "Cave render test2.0013",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 757401,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH0K5B16E\/cave_render_test2.0013.tif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH0K5B16E\/download\/cave_render_test2.0013.tif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5B16E-46668e9993\/cave_render_test2.0013_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1280,
+                "original_h": 720,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH0K5B16E\/cave_render_test2.0013.tif",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH0K5B16E-7ee506c332",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552678203.003100"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH0K5PV0S",
+                "created": 1552678216,
+                "timestamp": 1552678216,
+                "name": "Cave_render_test3.0013.tif",
+                "title": "Cave render test3.0013",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 974228,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH0K5PV0S\/cave_render_test3.0013.tif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH0K5PV0S\/download\/cave_render_test3.0013.tif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FH0K5PV0S-a3b6d19982\/cave_render_test3.0013_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1280,
+                "original_h": 720,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH0K5PV0S\/cave_render_test3.0013.tif",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH0K5PV0S-64e0b920c2",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552678222.003400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As you can see we are doing a cave. . I am done with the modeling, thinking about polishing some of the textures to add some more detail but I am trying to get a basic lighting set up so I can start doing some camera animation to showcase the whole thing. Each of us is supposed to create 3 assets minimum to put in our environment (it has a whole back story related to biology and science). My asset is the whole structure of the cave :cold_sweat: plus some big rocks I think I will add soon.",
+        "ts": "1552678388.003700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/578655266946_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel it's still dark but I am trying to get to the right amount of shadows so I can capture the mood we are going for. This is my first time in Maya and £D modeling ever... I am feeling pretty good about what I have come up with so far. Let me know what you thing when you get some time. Hope you have a great weekend!",
+        "ts": "1552678602.003800",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/576254354880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

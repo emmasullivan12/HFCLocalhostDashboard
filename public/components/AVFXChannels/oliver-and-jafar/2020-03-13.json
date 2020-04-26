@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Oliver, Sorry for the late and delayed responses, I'm trying to catch my break into VFX as I've exhausted film and the tv industry and have more of a chance at VFX companies than most miraculously I get interviews for entry positions like runners, but soon as I finish the interview i know i dont have it but it was worth a try last response I got from an employer was I wasn't motivated enough nor had a drive which i find wrong because I'm teaching myself VFX.",
+        "ts": "1584137945.002200",
+        "username": "Jafar Mohammad (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999945740085_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and i shall drop you an email",
+        "ts": "1584137994.002300",
+        "username": "Jafar Mohammad (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999472542756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

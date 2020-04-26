@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hopefully getting a remote desktop login this week. Hows your studies coming along? is everything put on hold?",
+        "ts": "1585571355.000300",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1025241254433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

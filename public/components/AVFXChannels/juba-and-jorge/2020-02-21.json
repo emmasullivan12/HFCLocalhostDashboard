@@ -1,0 +1,111 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha, works for me :slightly_smiling_face:",
+        "ts": "1582312064.000700",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/953620888529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<mailto:jorgrojo@gmail.com|jorgrojo@gmail.com>",
+        "ts": "1582312071.000800",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/950953232962_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't remember Amanda, I came quite late to the production of \"The Tiger Who Came to Tea\". When I got there it was mostly artwork what was needed, almost all the animation was already done :slightly_smiling_face: but yes... amazing people worked there.",
+        "ts": "1582312171.000900",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/952276677619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Recently I'm collaborating with the animation and compositing for a short film for this project in Mexico: <https:\/\/68voces.mx\/projects>",
+        "ts": "1582312248.001000",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/965608379239_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "68 VOCES - Cuentos \/ Stories",
+                "title_link": "https:\/\/68voces.mx\/projects",
+                "text": "Serie de cuentos indígenas ilustrados y animados con el fin de ayudar a fomentar el orgullo, respeto y uso de las lenguas. Serie creada por Gabriela Badillo \/holacombo.com",
+                "fallback": "68 VOCES - Cuentos \/ Stories",
+                "image_url": "https:\/\/pro2-bar-s3-cdn-cf4.myportfolio.com\/82e72adbc4acfa698faac415d6a63e6d\/51911537833069.574de495a10c6_car_202x158.jpg?h=bd1730d9482117685c2a243f77927bb4",
+                "from_url": "https:\/\/68voces.mx\/projects",
+                "image_width": 320,
+                "image_height": 250,
+                "image_bytes": 581580,
+                "service_icon": "https:\/\/68voces.mx\/favicon.ico",
+                "service_name": "68voces.mx",
+                "id": 1,
+                "original_url": "https:\/\/68voces.mx\/projects"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582312249.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's like a social project where they are trying to save the Mexican indigenous languages that still exist. It's quite a nice project to work on, very social.",
+        "ts": "1582312319.001200",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/963294583540_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And in parallel, I'm working on the script of one new short film. Developing a series about arts and sciences but fictional.",
+        "ts": "1582312384.001300",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/965959734950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What about you? Actually one of my classmates just got hired as an animator in Framestore, her name is Rhea Bowers and she is really good with 4 legged animals animations.",
+        "ts": "1582312669.001400",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/965620289367_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You'll probably meet her, although being Framestore there should be a myriad of artists in the building and in different projects as well.",
+        "ts": "1582312942.001500",
+        "username": "Jorge Aguilar Rojo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/953645717169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

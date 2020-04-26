@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Offcut loomsThe guy in your jumanji shot is too lifted now. Look at his black levels compared to the mountain on the left. Really the black point on the him shouldn't change too much from the original plate.",
+        "ts": "1587284046.002400",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1057117367591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "***Offcut looks great",
+        "ts": "1587284078.002500",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1071850799986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Jumanji needs that black level fix.",
+        "ts": "1587284099.002600",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1078019340852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Soldier roto looks better than when I last saw it. there's no obvious bobble now.",
+        "ts": "1587284129.002700",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1095692848784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Boat shot is ok. Honestly the roto, especially around the rope could be better. I see this without looking too hard. So any supervisor looking at it will see it too. I'd spend a few hours trying to get it a bit better before you send on.",
+        "ts": "1587284260.002800",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1084478110065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Overall your reel is good. The black levels and that rope roto jump out and worth fixing before you send it on. Then I would advise adding to it over the next couple of months, making sure you send back to the same companies saying you've added\/improved upon it.",
+        "ts": "1587284349.002900",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1084478702481_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One thing to add would be a slightly trickier cleanup shot. The smaller companies will be looking for this skill. So find a shot with something to clean out, signs and labels are always worth doing as we do this pretty much weekly in vfx so would be very relevant.",
+        "ts": "1587284508.003000",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1095695559360_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some application tips - Research the company you're applying for. Mention a couple of jobs of theirs you liked in your application. It's amazing how many people just send blanket applications, a little personalisation can make the difference between 2 similar applicants. Ask for feedback, you usually won't get it to be honest but just asking shows you are humble and keen to learn. Check spelling and grammar, again such a simple thing but something I see all the time.",
+        "ts": "1587286176.003100",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1095707324176_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Feel free to send your application to me. We take on interns in the summer, the spaces may have been filled already as we did a uni tour a few months ago but we can get your details on record with our hiring team.",
+        "ts": "1587286386.003200",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1095708817568_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

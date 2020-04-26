@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emanuele. How are you doing? Hope all is week with you? ",
+        "ts": "1548529998.000200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/535128549463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I might guess your Slack chat is off? \nI can also try to get in touch with you via email at the school :wink:",
+        "ts": "1548530040.000300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-26\/535487795158_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

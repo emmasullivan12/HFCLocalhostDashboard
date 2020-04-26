@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Harry. I just wanted to send a message to you while the world seems to be going mad around us. I'm sure your studies have been affected by the pandemic and you might be anxious about things going forward, you may have heard companies are letting people go etc etc. So I wanted to share my perspective on things.",
+        "ts": "1584618093.001800",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/998714673618_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "While it is unavoidable for there to be job losses in periods like this the great thing about our industry is it is full of creative people. Companies are unlikely to be hiring any time soon as most places are ceasing work. Most of my company are luckily now working remotely from home and we are trying to offer creative solutions to our clients who can't film anything as all productions have shut down. This will be an opportunity to do more fully CG work, we hope that agencies and producers respond to this approach. It will no doubt be a difficult few months ahead, however once things have calmed down the industry will explode and productions will ramp up to finish previous work or start new projects.",
+        "ts": "1584618537.001900",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011515413744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So during this difficult time, keep up your learning. Practise your skills and polish that reel. So that when the dust does settle you are ready to take full advantage. I hope that you and all your loved ones stay safe. Contact me here anytime if you have any concerns or questions.",
+        "ts": "1584618755.002000",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011067348276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

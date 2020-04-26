@@ -1,0 +1,171 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Luke! I'll give this a look and get back to you as soon as I can :grinning:",
+        "ts": "1584964549.004200",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1021174537990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright so few things here; you said that you want to change the camera but it might remain static for the showreel but in the description you mentioned that there would be cuts. I'd recommend having cuts since in general, it's a lot easier to animate smaller shots then a whole lengthy sequence, plus it's easier to split the workload like that. The story seems fine! You'll really need to sell the acting though since it sounds like it will rely a lot on body language. I've put a few notes in the syncsketch for you :+1:\nI will say that you should probably act out what you're trying to do and record it, I can't stress this enough! it'll help immensely with floaty timing and posing",
+        "ts": "1584979210.004300",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1009682593345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh and yeah do 1 character at a time, it gets confusing very quickly if you don't haha",
+        "ts": "1584980127.004400",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1009739658209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahaha okayy thanks ill check it out :smile:",
+        "ts": "1584981397.004500",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1019891667461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you say frame 122 needs a better line of action ? Would you say tilting the head to the left side?",
+        "ts": "1584984384.004600",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1009981408097_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah i'd say so! Move the hip more towards her center so she doesn't look like she's tilting over!",
+        "ts": "1584985950.004700",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1021888289255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahh okii !",
+        "ts": "1584986130.004800",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1019677390612_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, got a problem... I've been trying to figure out how to constraint two hands to the book. Ive been constraining the IK hand to the book so when I moved the hand it would move the book. But when I wont be able to do that when constraining both hands becuase it makes the book float ahaha. I think I have to change the arms into FK then constraint the hands to the book. When I change the FK to IK it changes the position of the arms? Theres a blend FK\/IK but Im not sure if theres an easier way to do it ?",
+        "ts": "1585003344.004900",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020924794384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "wait",
+        "ts": "1585003383.005000",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020947031157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think I got Ik and FK the wrong way around... Im trying to change the FK hands to IK without it moving possition",
+        "ts": "1585003409.005100",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1008142510162_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010ARP18E5",
+                "created": 1585003496,
+                "timestamp": 1585003496,
+                "name": "2020-03-23 22-44-04.mkv",
+                "title": "2020-03-23 22-44-04",
+                "mimetype": "video\/x-matroska",
+                "filetype": "mkv",
+                "pretty_type": "Matroska Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 5076099,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010ARP18E5\/2020-03-23_22-44-04.mkv?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010ARP18E5\/download\/2020-03-23_22-44-04.mkv?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010ARP18E5-c9dff65a8b\/2020-03-23_22-44-04_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010ARP18E5\/2020-03-23_22-44-04.mkv",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010ARP18E5-d86ff13f97",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585003497.005200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dont worry! Ive figured it out, not sure if its the right way buttt...",
+        "ts": "1585004691.005500",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020987823429_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just changed one arm to IK and constrainted that to the book, so when the book moves it moves that arm. As well as keeping the fk constrained to the book so the arms moving the book and the other arm ahaha",
+        "ts": "1585004772.005600",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1022602339046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

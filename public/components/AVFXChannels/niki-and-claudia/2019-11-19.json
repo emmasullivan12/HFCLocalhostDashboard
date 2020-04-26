@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Claudia,\n\nIt's so exciting that Blue-Zoo have a new 2D department. We're all really hoping they get more shows in for us to work on!\n\nYes, I would guess that globally studios that use Harmony would use rigged characters about 70% of the time. There are exceptions of course, like Klaus, Green Eggs &amp; Ham, Hilda and Rise of the Teenage Mutant Ninja Turtles (though I think they use a few rigs!) Rick &amp; Morty mixes between rigged and hand-drawn. Only the highest budget shows will use only hand-drawn because yes, it is A LOT faster to animate rigged characters. And while it takes a while to rig characters, it still works out faster to use the cut-out method. It's also easier to keep characters on model.\nThere are a couple of things you can do to upskill your rigging if it's something you are interested in learning. I would advise that you do make yourself comfortable with basic rigging at least as it will make you more comfortable using rigs in a studio when the time comes. I am more than happy to answer any questions for you. If you like I can set you some tasks that you can do in your own time and I can review them for you. It's my area, so I'm happy to share what I know with you.\n\nAlso, Toon Boom have an excellent website: <https:\/\/learn.toonboom.com\/journeys\/rigging-artist>. You could look at the first 3 modules of the rigging artist journey. Am I right in assuming you have Harmony in college or on your own computer? You can download the files to work on them as you go through the modules which is really handy! If you can afford it, my mate Adam does a great animation training course too: <https:\/\/toonboomtrainer.com\/>. It's £275, though if you keep an eye on <https:\/\/animationskillnet.ie\/category\/courses\/>, they do Adam's course for about half that price because they get government subsides. Even though it's an Irish training school, Adam's course is still done online. I'm not sure when he's doing that next though.\n\nI think a lot of making a rig not look like a cut out one is how much prep you put into it. Yes, we rig all views - our main characters get front, 2qf, 3qf, profile, 3qback, 2qb, and back view. Then we give them hand, feet, mouth and eye instances. On my previous shows we also rigged the up and down head tilts in all views. The more prep you put in, the more sophisticated you can make your character look. Also, there are different styles of rigging, so that can help too. The more envelope deformers you use, the less cut out it can look. I have mostly used a mixture of curve, bone and envelope deformers on the shows I've worked on.\n\nAs for your other questions, I got into animation because I was obsessed with stories when I was young. I was a bit of a sick kid, so I'd just lose myself in books and cartoons. I used to draw a lot too. I just sort of decided that humans did that job and I'm a human so surely I could do that job too! That was how my brain worked in my early teens!!! I decided quite young it was the job for me! I went to the Irish School of Animation and did a degree in animation, which I graduation from in 2009. Been working in the industry ever since as an animator and rigger, in Dublin and London mostly. I'm all about the above mentioned hand-drawn style! Klaus is the most divine animation - I'm so in love with it!\nHow about you? What's your favourite style?\nDo you have a website or showreel online or anything I could take a look at?",
+        "ts": "1574190995.002000",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/833045965345_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Toon Boom Trainer",
+                "title": "Learn Toon Boom Harmony - Toon Boom Trainer",
+                "title_link": "https:\/\/toonboomtrainer.com\/",
+                "text": "Need to learn Toon Boom Harmony? We teach you the leading 2D animation software anywhere in the world! Affordable, certified, one-to-one training.",
+                "fallback": "Toon Boom Trainer: Learn Toon Boom Harmony - Toon Boom Trainer",
+                "image_url": "https:\/\/i0.wp.com\/toonboomtrainer.com\/wp-content\/uploads\/2017\/06\/TBT-logo_blue.png?fit=1796%2C492&ssl=1",
+                "image_width": 913,
+                "image_height": 250,
+                "from_url": "https:\/\/toonboomtrainer.com\/",
+                "image_bytes": 16412,
+                "service_icon": "https:\/\/i2.wp.com\/toonboomtrainer.com\/wp-content\/uploads\/2017\/10\/00767962-8578-4f3a-af04-d9a78e1de83f.jpg?fit=180%2C180&#038;ssl=1",
+                "id": 1,
+                "original_url": "https:\/\/toonboomtrainer.com\/"
+            }
+        ]
+    }
+]

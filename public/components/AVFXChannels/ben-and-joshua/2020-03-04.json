@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds like it will be an interesting proposition and change of working! Hope it's a good and seamless transition! I was wondering if I could ask your opinion and a topic I wanted to consider for my dissertation also if that's alright?",
+        "ts": "1583335741.000400",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/970237011379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah sure thing dude fire away!",
+        "ts": "1583339985.000500",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981869886592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

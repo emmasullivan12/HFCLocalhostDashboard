@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dont be down, its a very hard industry to get into",
+        "ts": "1551274382.001600",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562256175716_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I applied to over 35 jobs when I first started",
+        "ts": "1551274399.001700",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/561552049984_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now I'm in DNEG and they won an Oscar just a few days ago",
+        "ts": "1551274418.001800",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/561552364480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What I learnt is you need to be specific. So if you want to be an animator then only show animation stuff. Generalists are super rare and are masters of both worlds",
+        "ts": "1551274478.001900",
+        "username": "Chris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562257656068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah all the old saying goes, Jack of all trades, master of none :blush:",
+        "ts": "1551274536.002000",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562302636178_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Literally everyone I know in the VFX department wants to work at DNEG that must be really cool :blush:",
+        "ts": "1551274767.002100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562262032196_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.theguardian.com\/us>",
+        "ts": "1551310159.002200",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562390433585_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "the Guardian",
+                "title": "News, sport and opinion from the Guardian's US edition | The Guardian",
+                "title_link": "https:\/\/www.theguardian.com\/us",
+                "text": "Latest US news, world news, sports, business, opinion, analysis and reviews from the Guardian, the world's leading liberal voice",
+                "fallback": "the Guardian: News, sport and opinion from the Guardian's US edition | The Guardian",
+                "thumb_url": "https:\/\/assets.guim.co.uk\/images\/eada8aa27c12fe2d5afa3a89d3fbae0d\/fallback-logo.png",
+                "from_url": "https:\/\/www.theguardian.com\/us",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/assets.guim.co.uk\/images\/favicons\/fee5e2d638d1c35f6d501fa397e53329\/152x152.png",
+                "id": 1,
+                "original_url": "https:\/\/www.theguardian.com\/us"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ignore that.",
+        "ts": "1551310210.002400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562922286900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/amp-theguardian-com.cdn.ampproject.org\/v\/s\/amp.theguardian.com\/film\/2019\/feb\/27\/bohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen?amp_js_v=a2&amp;amp_gsa=1#referrer=https%3A%2F%2Fwww.google.com&amp;amp_tf=From%20%251%24s&amp;ampshare=https%3A%2F%2Fwww.theguardian.com%2Ffilm%2F2019%2Ffeb%2F27%2Fbohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen>",
+        "ts": "1551310214.002500",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562966427458_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "the Guardian",
+                "title": "Bohemian Rhapsody's visual effects team 'owed thousands'",
+                "title_link": "https:\/\/amp-theguardian-com.cdn.ampproject.org\/v\/s\/amp.theguardian.com\/film\/2019\/feb\/27\/bohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen?amp_js_v=a2&amp_gsa=1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.theguardian.com%2Ffilm%2F2019%2Ffeb%2F27%2Fbohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen",
+                "text": "Union Bectu calls for action on plight of freelancers at failed companies after Queen-film firm Halo VFX goes bankrupt",
+                "fallback": "the Guardian: Bohemian Rhapsody's visual effects team 'owed thousands'",
+                "image_url": "https:\/\/i.guim.co.uk\/img\/media\/71f83210d1976d74ca68934fae7a0d6af5c8701d\/56_0_1665_999\/master\/1665.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=388af1715e19091b3a81ed6143df7a26",
+                "image_width": 476,
+                "image_height": 250,
+                "from_url": "https:\/\/amp-theguardian-com.cdn.ampproject.org\/v\/s\/amp.theguardian.com\/film\/2019\/feb\/27\/bohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen?amp_js_v=a2&amp_gsa=1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.theguardian.com%2Ffilm%2F2019%2Ffeb%2F27%2Fbohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen",
+                "image_bytes": 61938,
+                "service_icon": "https:\/\/amp-theguardian-com.cdn.ampproject.org\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/amp-theguardian-com.cdn.ampproject.org\/v\/s\/amp.theguardian.com\/film\/2019\/feb\/27\/bohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen?amp_js_v=a2&amp;amp_gsa=1#referrer=https%3A%2F%2Fwww.google.com&amp;amp_tf=From%20%251%24s&amp;ampshare=https%3A%2F%2Fwww.theguardian.com%2Ffilm%2F2019%2Ffeb%2F27%2Fbohemian-rhapsody-special-effects-halo-vfx-bectu-entertainment-union-cases-bankrupt-queen"
+            }
+        ]
+    }
+]

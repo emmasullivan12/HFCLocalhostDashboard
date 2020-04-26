@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Camilla",
+        "ts": "1542062994.000500",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/478981610631_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So sorry, I’ve had mock exams the week before but they’re over now ",
+        "ts": "1542063016.000600",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477828433203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have coursework for English and Geography. I have started writing the English coursework in June but it’s only at level D\/C, our final deadline is before Christmas so I think that would be a great place to start working ",
+        "ts": "1542063112.000700",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477194164400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For geography we’re just writing everything up, my teacher has given us a date sheet for when she’d like our cwk parts handed in, I’ll send you a picture of it and let you know what parts I’ve done so far  ",
+        "ts": "1542063162.000800",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477830021651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have been so busy this weekend, my goal was to work on my personal statement but it didn’t happen!! :confused: So I’m going to prioritise that too. I have 20min of form every morning, which I think is plenty of time everyday in a week to work on small parts of the personal statement ",
+        "ts": "1542063247.000900",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/479332449974_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve had a stressful Monday but it was positive, how was your day ? :blush:",
+        "ts": "1542064393.001000",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/478145037941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

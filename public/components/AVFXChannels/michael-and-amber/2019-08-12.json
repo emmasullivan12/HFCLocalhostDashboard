@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Michael, I didn’t see your message. It’s was bit of a short notice for me since I’d went to visit family in Manchester. I don’t know when your next available for another call.  But please let me know now that I’m free from Tuesday. Sorry for the late reply. ",
+        "ts": "1565603534.001500",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/711974761330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

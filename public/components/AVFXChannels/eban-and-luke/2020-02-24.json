@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey. I'm so sorry for the lack of updates recently. Things got a little hectic, and I've been trying to get the sim running correctly. I found that the main reason the stairs were overflowing was due to the particles gaining too much velocity over time. I put a pop speed limit, and that seems to have alleviated the issue. I'm running the hi-res sim right now and should have it within the next day or so. If you have any recommendations for the whitewater step, it would be much appreciated. Thanks.",
+        "ts": "1582559100.000100",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/965794379284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unfortunately its been a while since I've had to do whitewater and I think the process has changed since. If I have some time this week I'll try to take a look at what the setup is like now. However I might suggest looking in to meshing and rendering first. If you have meshes running in the background you might be able to do some small slices of whitewater to tune. Are you looking at meshing on a farm? I forgot if you have access to a farm at school.",
+        "ts": "1582586115.000200",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/956947819953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From what little I've looked at, whitewater now sources itself from the compressed fluid instead of a mesh, but I'll need to double-check if that is correct. Unfortunately, the school is not sim farm capable; we do, however, have a renderfarm. The best I could achieve would be to pass the core fluid sim cache and have each machine create the surface at render-time, but we are capped at two hours a frame, so any calculations run their own set of risks.",
+        "ts": "1582589732.000300",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/967154046805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, that is how you should be using the farm for meshing. You can send out everything in parallel since the sime will already be done. Each meshed frame should only take a minute or two a frame.",
+        "ts": "1582592328.000400",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/967201305925_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But you can have maybe 5-10 machines working on it at a time.",
+        "ts": "1582592423.000500",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/955717112003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

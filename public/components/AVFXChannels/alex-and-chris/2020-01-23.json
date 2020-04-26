@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry, got carried away on my project :slightly_smiling_face: Sounds great, so you are starting with draft 3d layout or you go full in all around env? What I mean is that do you want to make it look cool per angle or from any angle ?",
+        "ts": "1579791777.008100",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907557929955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Definitely per angle, going to try to be clever about it so that each angle doesn't require too much extra work. So only finish 2\/3 sides of buildings if they're the only 2\/3 sides that will be seen. I want to block out my shots at the beginning of next week and then I'll know which parts need fully modelling and texturing :+1:",
+        "ts": "1579800292.008200",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918867362404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm also under NDA now for the spaceship project I'm working on so won't be able to send progress pics or anything, I might still ask for your advice on some lookdev and lighting stuff though as we're basing materials off the ISS and Boeing starliner. Im leading all CG for one sequence and then heading up the LD\/Lighting for the ship!",
+        "ts": "1579800556.008300",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906544057810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, sure, what do you use for lookdev and lighting? Arnold?",
+        "ts": "1579800683.008400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921194868167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I personally prefer Arnold yes (using it on my personal project) but as a challenge to myself and the others I'm leading, were using Vray, I think it'll be good to have experience with both on my reel",
+        "ts": "1579800885.008500",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/906555098866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I haven't touched Vray for a long time now but I would assume they are all pretty similar nowadays. There is almost no difference between Arnold and Renderman(industry standards) and I know that Redshift and Vray are almost the same, which is cool since yeah, you will have experience with all of them in a way",
+        "ts": "1579801283.008600",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907883721251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I think that's why the university have them as the two they try to get everyone familiar with, I used Vray a while back but not since I started in VFX so will have to get to grips with it again :sleeping:",
+        "ts": "1579805986.008700",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921357605463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":+1:* Oops haha",
+        "ts": "1579806003.008800",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919497154464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Daffer, Hope all is well, t",
+        "ts": "1553344543.002000",
+        "username": "Seun Olaniyi (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-23\/586184261285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Seun, all well here. How are you? Looks like part of your last message was cut off :blush:",
+        "ts": "1553376549.002100",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-23\/587443258486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

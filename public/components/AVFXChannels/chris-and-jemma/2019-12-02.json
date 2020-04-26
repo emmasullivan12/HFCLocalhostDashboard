@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way there's now an Access VFX podcast if you're into that kinda thing\n\n<https:\/\/www.accessvfx.org\/podcast>",
+        "ts": "1575280337.007700",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/847845630833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

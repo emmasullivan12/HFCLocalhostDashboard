@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that sounds interesting",
+        "ts": "1539800421.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/457786533440_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is! I find it one of the most rewarding things in my job. I can’t wait until there are servers in the world that use processors I helped design. I already find it really cool that most Arm servers will be running code that has been compiled with a compiler (GCC) I helped write, and running an Operating System kernel (Linux) my friends contributed to, it will be even better when I can order a processor online that goes fast because of decisions I’ve made!",
+        "ts": "1539824448.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/460127988534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats a great achievement I have never seen a arm processor run on a server, I have only heard of them on phones, what clock speed are they going to run on.",
+        "ts": "1539842262.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/459045396949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I always wondered how people write compilers I mean compiling all the code giving tokens removing spaces. I only have knowledge on the stages of compilation so I always wondered how long it would take to write the perfect code, I mean I can just barely write a program without using the internet",
+        "ts": "1539842443.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/458757421683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that an amazing nave Zeus God of lightning I think I know why you guys chose that nave, is it because it's super fast",
+        "ts": "1539842514.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/458113240880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

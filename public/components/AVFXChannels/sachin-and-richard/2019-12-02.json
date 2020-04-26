@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard !! \nI don’t know if ILM hires \nWhat about the smaller studios . Have you tried applying at , \n\nOne of us \nThe mill \nBlue bolt \n? \n\n\n",
+        "ts": "1575278665.000800",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/855742325056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

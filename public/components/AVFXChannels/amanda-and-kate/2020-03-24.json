@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "HI Kate - nice to meet you during these crazy times, sorry its taking a bit longer to respond than I'd like. We've been busy try to get the Studio working remotely. I'm glad to be part of the initiative. It sounds like you have some great experience and must have a good understanding of theVFX pipeline. I presume your experience is Film and Episodic, rather than Advertising?  My experience is mainly in Advertising - although have had some small amount in film a long time ago.  What was your motivation to move to Montreal? Are you looking for work or have a job?  Let me know how you would like me to help.  Take care and be safe  Amanda",
+        "ts": "1585062417.001900",
+        "username": "Amanda Libotte (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022669306544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Amanda, I am so glad to hear back from you! \nI can not imagine the amount of work and a challenge to transfer the whole production to work from home! So bravo! This is another great experience I’d love to hear about and to learn from. \n\nSpeaking about me I moved to Montreal because my husband got a job here (he works in cybersecurity) and in love with this city. So I couldn’t say no to a new challenge and a great opportunity to soar to new heights. I had some break from work due to the visa process. It took me 6 months to get to Montreal instead of 1 month as planned. \n\nAs soon I arrived I decided to make my own research and to feel how everything functions in the industry here. The results of my research and amazing professionals I’ve managed to talk to gave me a feeling that I am on the right path and I want to continue my career in the Production. So I started to look for a job more actively and apply with different studios. I lowered my expectations and applied for Coordinator positions mainly. So then I can enter the industry and prove that I am trustable and the studio can benefit from having me. Unfortunately, with the current situation, the companies postponed the recruitment process and I have to change my strategy as well. \n\nSorry if it’s too many details. From my experience, people get confused with my story so I try to explain my strategy.:wink:\n\nSpeaking about my experience, I am familiar with the VFX pipeline indeed and a few other Project Management methodologies. But with the small-scale projects. A studio I worked for was an outsource company for a few international production studios. So we mainly did explainer videos, advertisements, pitch videos, animation (for TED-Ed), product 3d samples (for Google), banners, game reskin, the music video for some singers for the Coachella festival. I orchestrated small-scale projects where the smallest one lasted for 5 days and the biggest one for 3 months. Now I am curious and ready to explore bigger projects in terms of duties, size of the team and the budget. \n\nWith everything going on I started to feel a bit disconnected. I’d love to find my way and be sure my talents and dedication will serve the right purpose and company. \n\nI would be grateful to hear your professional opinion about the current situation. Is it still a good time to look for a job? Or should I focus on something else? What do you as a manager feel the most important for a studio at the moment? I’d like to understand what it is like on the production side at the moment.\n\nI am grateful to have this opportunity to talk to you. The best thing that happened to me so far!\n\nTake care,\nKate",
+        "ts": "1585070672.002000",
+        "username": "Kate (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023170621189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

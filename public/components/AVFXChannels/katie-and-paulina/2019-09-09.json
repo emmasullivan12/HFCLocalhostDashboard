@@ -1,0 +1,133 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries Paulina, I also moved house recently so I can relate with being busy haha! :house_with_garden:",
+        "ts": "1568054329.001000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/747596541729_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well done on surviving your first year at Uni! I'm really glad you've had a chance to make good friends too in amongst all the madness of learning the language and coping with workload.\nI am still very close friends with the people I studied with at University, and I have even had the opportunity to work with them in my career!",
+        "ts": "1568054359.001100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/753537825364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can type up a little more about my pathway into the industry through the week... :blush:",
+        "ts": "1568054392.001200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/755868427047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That sounds great about you sending me your works in progress, I'd be more than happy to offer some feedback on that!",
+        "ts": "1568054408.001300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-30\/616513758577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And great job on getting started early with your group project!\nYour idea of the magician monkey sounds fab too - really solid idea for a student project. Sometimes people go a bit overboard with lots of VFX and explosions, collapsing buildings etc. which is very hard to pull off - but you have a great opportunity here to show off nice and tight CFX\/comp skills.",
+        "ts": "1568054427.001400",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/754010943093_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to see any WIPs of your monkey (or lioness sculpt)! :monkey::lion_face:",
+        "ts": "1568054451.001500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/747599330433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me personally, there were some opportunities to learn Houdini at Framestore, however it only ended up being the seniors that used it within the pipeline - so I don't actually have any experience rigging or simulating in Houdini.\nBut I can shoot some questions to my colleagues still at Framestore if you come up against any difficulties with it!\nWe typically used Maya for pretty much everything. Although it's a version of Maya that we had padded out with tons of proprietary tools that Framestore's R&amp;D team and senior CFX artists had developed. Each department at Framestore has it's own shelf of tools, so it was only possible to learn the workflow from within the company - there are no tutorials online for the work we were doing",
+        "ts": "1568054482.001600",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/756220026150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't let this put you off though, it just means you need to be comfortable with learning on the job. And don't worry too much about knowing the technical stuff 100% - it's your ability to show off good anatomical knowledge and having creative vision that the recruiters are looking for!",
+        "ts": "1568054503.001700",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/747600514977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You might find this video interesting:  <https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70>",
+        "ts": "1568054514.001800",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/755871189703_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Framestore Creatures &amp; Houdini | Framestore | Character FX &amp; Crowds Production Talks",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70",
+                "author_name": "Houdini",
+                "author_link": "https:\/\/www.youtube.com\/user\/houdini3d",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/_JQ673B6Y70\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Framestore Creatures & Houdini | Framestore | Character FX & Crowds Production Talks",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/_JQ673B6Y70?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=_JQ673B6Y70"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you enjoy the rest of your time before term starts again! Catch you soon :wave:",
+        "ts": "1568054529.002000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/754013182853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

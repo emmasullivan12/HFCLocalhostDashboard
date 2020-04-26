@@ -1,0 +1,282 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, sorry, I was sick this whole time with a pretty popular disease :) \n\nYeah eating crap is a huge problem, especially when people but out everything healthy at 9am.",
+        "ts": "1585581066.000100",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1037645403398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And sure, working from home sucks, I do work from home at the moment and of course I can't say I enjoy it but, well, what can we do",
+        "ts": "1585581105.000200",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1024290624963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "World gone crazy",
+        "ts": "1585581118.000300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1022996923522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't loose motivation though, when you go out companies will start hiring, even if it will be in a year, and they will need a lot of fresh blood",
+        "ts": "1585581166.000400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035713049845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man, no way!! You feeling better now?\n\nI bought a new monitor! It's really good and made me realise how bad my old one was... <https:\/\/www.benq.eu\/en-uk\/monitor\/designer\/bl2420pt.html>\n\nYeah I'm sticking with it and thinking that even by the time my showreel is done, I might have to try to get a job while all this is still happening so it might be remote! Once the Uni year is finished and my student loan is through, I'll have to get a job to keep my flat, can't really move home!",
+        "ts": "1585581708.000500",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1025771460881_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "BenQ",
+                "title": "BL2420PT",
+                "title_link": "https:\/\/www.benq.eu\/en-uk\/monitor\/designer\/bl2420pt.html",
+                "text": "The BenQ BL2420PT CAD\/CAM Professional Monitor built with BenQ's advanced QHD 1440p IPS technology, providing professionals in CAD\/CAM, animation, video editing and graphic arts ultra-precise color rendition and over 77% working space to enhance their work efficiency and productivity.",
+                "fallback": "BenQ: BL2420PT",
+                "image_url": "https:\/\/www.benq.eu\/content\/dam\/b2c\/en\/monitors\/bl\/bl2420pt\/image\/bl2420pt-social.jpg",
+                "from_url": "https:\/\/www.benq.eu\/en-uk\/monitor\/designer\/bl2420pt.html",
+                "image_width": 478,
+                "image_height": 250,
+                "image_bytes": 276950,
+                "service_icon": "https:\/\/www.benq.eu\/etc\/designs\/b2c\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.benq.eu\/en-uk\/monitor\/designer\/bl2420pt.html"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585581709.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting quite a lot of work done actually, will send some over today :slightly_smiling_face:",
+        "ts": "1585581731.000700",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035309399412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F0113T899EJ",
+                "created": 1585586199,
+                "timestamp": 1585586199,
+                "name": "Carpark_LookDev_004.jpg",
+                "title": "Carpark LookDev 004",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 733154,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0113T899EJ\/carpark_lookdev_004.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0113T899EJ\/download\/carpark_lookdev_004.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0113T899EJ-7d24d03fa4\/carpark_lookdev_004_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "thumb_tiny": "AwAbADDRDqy5Ugis68n3y4XkL+tQiVwpUPgHtTWPQdzQA0sTmgHmg56cUqqSfagCVLp0j8sAY9TT4Lpo0243DqPaq+DmpIpVwq4H1oA0C0caEMQM9jWdMoZwV6UZJPNMbqPrTbEkLkDgDP1oJJ60g6Gnd6Qxy8ik8sZyODSJ0p9IZ\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F0113T899EJ\/carpark_lookdev_004.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F0113T899EJ-2133af5e49",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585586203.000800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is first render pass just with an image plane. No defocus etc, I had an animator make a walk cycle along the wall. I'm rendering the full thing tonight.",
+        "ts": "1585586255.001100",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1024572157779_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F0111GG76BE",
+                "created": 1585586330,
+                "timestamp": 1585586330,
+                "name": "CarparkShot_Twos.mp4",
+                "title": "CarparkShot Twos",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 26015514,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0111GG76BE\/carparkshot_twos.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0111GG76BE\/download\/carparkshot_twos.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0111GG76BE-1ec50cfeb1\/carparkshot_twos_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F0111GG76BE\/carparkshot_twos.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F0111GG76BE-f27cc8db55",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585586332.001200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Another shot from the same project",
+        "ts": "1585586360.001500",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1023282697634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010P8DCXQS",
+                "created": 1585586417,
+                "timestamp": 1585586417,
+                "name": "Bridge_Matchmoved_05.mp4",
+                "title": "Bridge Matchmoved 05",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 8882732,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010P8DCXQS\/bridge_matchmoved_05.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010P8DCXQS\/download\/bridge_matchmoved_05.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010P8DCXQS\/bridge_matchmoved_05.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010P8DCXQS-f42e33254c",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585586417.001600"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010S0WBQE5",
+                "created": 1585586468,
+                "timestamp": 1585586468,
+                "name": "Buzludzha_Sign_001_LD.mov",
+                "title": "Buzludzha Sign 001 LD",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 70468067,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010S0WBQE5\/buzludzha_sign_001_ld.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010S0WBQE5\/download\/buzludzha_sign_001_ld.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010S0WBQE5-91038d35c7\/buzludzha_sign_001_ld_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010S0WBQE5\/buzludzha_sign_001_ld.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010S0WBQE5-3b921b263c",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585586472.001900"
+    }
+]

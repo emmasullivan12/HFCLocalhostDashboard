@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a little difficult to comment on attitudes that studios take to creative freedom when I've only worked at Bluezoo (which has in-house short films every so often). TV and Advertisting studios do tend to have more artistic freedom than for instance VFX focused feature film production studios.",
+        "ts": "1565953085.000900",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/717198606594_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When it comes to courses, Universitys are pretty good but are very independent learning wise. Online courses will provide more guidance and be cheaper, but you wont get to be in a computer lab full of people interested in the same things as you, like you would on a uni course (the importance of this I can't overstate)",
+        "ts": "1565953707.001000",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/728657453509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Please do yeah! and thanks ahaha~",
+        "ts": "1565953730.001100",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/722274720673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah when it comes to studios that can offer even creative freedom to that extent, like Its so preferable, but with studios with a more linear an stylistic approach I would still like to  be industry ready in that sense, also how was it working for blue zoo? ",
+        "ts": "1566024737.001200",
+        "username": "Jude Osei-Tutu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/723165600033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I think I’ve learned the importance of being in working environment with people  lmfao, I took a whole year out during college to try an get a better understanding of what I wanted to do exactly, an it’s had it’s pros an cons but one of the cons were literally that haha",
+        "ts": "1566025196.001300",
+        "username": "Jude Osei-Tutu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/729550865253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

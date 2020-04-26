@@ -1,0 +1,181 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are you currently working on ?",
+        "ts": "1580831173.001800",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/935675805684_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey sorry i just checked your message! I'm interested in match move\/tracking and hoping to get a job as a match move artist. I'm struggling a lot because I have to self teach myself and no one to ask around when i have technical questions. Also I would love to know about how to strongly build my portfolio.",
+        "ts": "1580833073.001900",
+        "username": "Jeong Han (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/923412432978_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i'm currently working on portfolio but tracking seems really hard haha",
+        "ts": "1580833095.002000",
+        "username": "Jeong Han (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/924733096051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jeong, great to hear from you. And good to hear what you like to do and get involved in. Just so I'm aware, is this something you see yourself doing long term or do you have other interests?",
+        "ts": "1580839846.002100",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/938647526886_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah online there isnt a lot out there for technical problem solving which is what I and others have faced. There are good stuff in youtube channel and etc, what are you currently using to track and are you doing personal projects for tracking?",
+        "ts": "1580839949.002200",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/938650737430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For a portfolio build you have to show a variety of skillset. Camera track, obj track. I can give you some useful links to a nice reel breakdown unless you have already seen. But it's mainly showing wireframe on a reel, so we understand what you did and clearly shows you have an understanding on the area.",
+        "ts": "1580840055.002300",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/923655433842_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you doing a portfolio build in tracking? Or in something else? And could I see screen grabs?",
+        "ts": "1580840096.002400",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/926287902865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What problems are you facing ? At the moment",
+        "ts": "1580842289.002500",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/923726551298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it would be amazing if you could help me out! <https:\/\/vimeo.com\/385164064> this is my footage that I've been working on with pftrack but haven't figured out it right. Most of my trackers seem okay but trackers on blue container in the video look so curved and i have no clue how to fix my problem. I thought it might be because of lens distortion but even I used undistort node, trackers are still in curve shape.",
+        "ts": "1580870612.002600",
+        "username": "Jeong Han (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-04\/939395367974_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "tracking test footage #1",
+                "title_link": "https:\/\/vimeo.com\/385164064",
+                "author_name": "Jeong H",
+                "author_link": "https:\/\/vimeo.com\/jeong1han",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/847155261_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: tracking test footage #1",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/385164064?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"tracking test footage #1\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/385164064",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/385164064"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580870613.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTM1HMA79",
+                "created": 1580870960,
+                "timestamp": 1580870960,
+                "name": "d.PNG",
+                "title": "d",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 31127,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTM1HMA79\/d.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTM1HMA79\/download\/d.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTM1HMA79-bda626444d\/d_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTM1HMA79-bda626444d\/d_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTM1HMA79-bda626444d\/d_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 261,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTM1HMA79-bda626444d\/d_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 348,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTM1HMA79-bda626444d\/d_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTM1HMA79-bda626444d\/d_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 522,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTM1HMA79-bda626444d\/d_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 580,
+                "image_exif_rotation": 1,
+                "original_w": 895,
+                "original_h": 649,
+                "thumb_tiny": "AwAiADCGiiigAooo6UALRRRQAlFFFABSHtS0h7UwHUUUUgEooooAKQ9qWkPamA6iiikB\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTM1HMA79\/d.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTM1HMA79-d0caeb670d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580870963.002800"
+    }
+]

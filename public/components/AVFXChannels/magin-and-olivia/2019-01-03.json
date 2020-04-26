@@ -1,0 +1,61 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Olivia!\nYeah, I answer two of them.. This afternoon I'll send you back the questions. :slightly_smiling_face:",
+        "ts": "1546515630.000200",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/515524892771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FF5GG0R43",
+                "created": 1546519596,
+                "timestamp": 1546519596,
+                "name": "-.txt",
+                "title": "-",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U6D2VCN07",
+                "editable": true,
+                "size": 4352,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FF5GG0R43\/-.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FF5GG0R43\/download\/-.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FF5GG0R43\/-.txt",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FF5GG0R43-d9e99b5dae",
+                "edit_link": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FF5GG0R43\/-.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1546519596.000300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thankyou so much!!",
+        "ts": "1546520271.000600",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/514934442224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

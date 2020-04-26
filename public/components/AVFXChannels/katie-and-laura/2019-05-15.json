@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! it's ok, I have been quite busy too! A new term just started and I have been clearing out other stuff to be able to concentrate in my new project properly. Also, my schedule has changed and I think Tuesdays I wont be available for our chat, so please remind me what other days of the week and times are good for you.\nWe are going to be working on a new environment, this time with characters in it! We are going to start learning Unreal. Right now we are working on researching, backstory and initial concepts, probably by next week I'll have good enough material to show you :blush:",
+        "ts": "1557938995.001100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-15\/636563327504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am researching Celtic imagery, and ancient island structures for my part of the environment so if you have any resources you think I should check out send over links. Thanks a lot for keeping in touch even while being busy! I will try to keep it up as well.",
+        "ts": "1557939935.001200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-15\/630234449809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

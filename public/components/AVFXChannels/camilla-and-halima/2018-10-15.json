@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Halima - I'm so pleased you've worked things out. It sounds really sensible doing mock exams. You can assess the work load and see how realistic it all is. Good shout!",
+        "ts": "1539597314.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-15\/455488375952_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gap years are a bit scary and you don't want to waste them. I didn't do a gap year because I knew I had a year out including within my degree, which is when I went to Paris. I think if you know you're going to have a year in industry, or a year doing something that's already included in your degree, then a gap year isn't the be all and end all.",
+        "ts": "1539597384.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-15\/456055506564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Although I have friends who did gap years and got some really good work experience! I suppose there's no rush with anything!",
+        "ts": "1539597414.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-15\/456422787973_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "More of my friends took a year out after uni than before.",
+        "ts": "1539597476.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-15\/456056524948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah good question! What was the most exciting thing last week? Well, I work on one of our social investment funds, and we approved a new social business called Nemi Teas. They employ refugees to help package and seel their own tea brand - they're really cool and you should look them up! We've agreed to invest in them to help them grow their operations. I'll be working with them to help in a more practical way. That was a great highlight of the week.",
+        "ts": "1539597568.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-15\/457285364167_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This week, I have our annual 'staff festival'. The whole of UnLtd are going up to the Peak District to discuss the organisation  as a whole and our vision for the next year. It's going to be great because we have a really good purpose and we help amazing social business grow and reach more people. I love the company i work for because the vision is really clear- and everyone is SO nice.",
+        "ts": "1539597641.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-15\/455492116912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What's your week looking like?",
+        "ts": "1539597661.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-15\/457602747622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

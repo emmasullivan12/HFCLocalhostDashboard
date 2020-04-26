@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How have you been approaching dental practices so far?",
+        "ts": "1508409713.000118",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258205635057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let's try and find out why you've been unsuccessful so far and see what we can do about it",
+        "ts": "1508409734.000372",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-19\/258205799585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll have a little look..\nI need to thank you again for the feedback, making it more snappy and cartoony is honestly so much fun, I’m enjoying it way too much :laughing:",
+        "ts": "1576077015.009200",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/868770899620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

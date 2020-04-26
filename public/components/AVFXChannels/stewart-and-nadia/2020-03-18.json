@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya - sorry things have gone crazy over the past couple of days in our industry. Production shutting the offices and working out how to work remotely.\nI would say it’s so much easier to find friends in the workplace in the animation industry.\nYou’ll find like minded people I’m sure.\nFrom geeks to artist we’re all kind of quirky people. But what’s shone through in this Crisis  is the great people I work with.\n",
+        "ts": "1584571144.001800",
+        "username": "Stewart Ash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/1009891090676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

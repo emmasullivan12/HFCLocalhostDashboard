@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, Christian, how you doing? Are you interested in picking up any shots?",
+        "ts": "1570707696.000100",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792830721446_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

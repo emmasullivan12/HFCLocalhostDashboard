@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy, \nSorry for the delay in reply, I hope you had a good weekend \nI was working on more pieces that could go into the portfolio, I'm glad you like my style and that you think there's no issues so far. :smile: \nI'm happy for you to show your team for additional feedback, though in the meantime I might make some slight alterations to the contents based on the feedback you and my school teacher gave so far.",
+        "ts": "1572858197.000100",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/820143421136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

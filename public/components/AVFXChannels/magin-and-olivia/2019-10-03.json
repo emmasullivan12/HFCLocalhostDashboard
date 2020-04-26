@@ -1,0 +1,70 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so I made some fixes and changes. I still need to finish the lip sync on the end and i changed the way I transition into the end and I don't think I like it but I'm not sure, I might go back to the simple lean forward. what do you think?? I'm going to make all changes tonight and have a final polish tomorrow",
+        "ts": "1570088619.001100",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/781698428548_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/ef4abafcaf05\/#1072494\/999537> I've added the second video to the same review page",
+        "ts": "1570088764.001200",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/784372647670_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: New Review",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/ef4abafcaf05\/#1072494\/999537",
+                "text": "Collaborative Media Review with 2 items",
+                "fallback": "SyncSketch: New Review",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/ef4abafcaf05\/#1072494\/999537",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/ef4abafcaf05\/#1072494\/999537"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looks much better!! The only thing that I can say is that the last gesture (114-140) It feels to me a little bit slow. Maybe you could make it a lit bit sharper :slightly_smiling_face:",
+        "ts": "1570095571.001400",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/769504845010_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amazing ok! Yeah it’s feeling a little slow and stiff to me so I’ll speed that up! :) Thankyou so much for your help ",
+        "ts": "1570096095.001500",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/775859624081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries :slightly_smiling_face:",
+        "ts": "1570096852.001600",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/769526518418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

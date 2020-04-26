@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Elizabeth, thanks for your message. So you say you'd like to do something creative, but also earn decent money and have independence. What type of creative things do you currently enjoy? What type of art are you selling in the upcoming convention?",
+        "ts": "1531930257.000536",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-18\/400286936337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I enjoy lots of things, but currently i've been really into Character design, and story writing. I'll be selling a mixture of original art and fan art at the convention. ",
+        "ts": "1531944572.000065",
+        "username": "Elizabeth (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-18\/400459239089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

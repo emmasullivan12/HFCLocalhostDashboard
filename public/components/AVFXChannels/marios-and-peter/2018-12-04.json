@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok thank you, also a quick update. I got a couple university offers and got unconditionals to both the courses I linked",
+        "ts": "1543945007.000100",
+        "username": "Peter Hannon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-04\/495135509171_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

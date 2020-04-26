@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Claudia, I just wanted to check in and makes sure you're doing well. Crazy time in the world!!! If you need anything from me, let me know :slightly_smiling_face:  Hope your college work is going well",
+        "ts": "1585140476.000100",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1025236960864_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

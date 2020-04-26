@@ -1,0 +1,289 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1567514778.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1567514778.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d6e609a3f05940004061e7d|this link> with other teams to invite them in it_",
+        "ts": "1567514779.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1567515169.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1567515180.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"keith-and-tariq\"",
+        "old_name": "z-shared-23",
+        "name": "keith-and-tariq"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1567515266.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1567515269.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@keith.acheson has joined the channel_",
+        "ts": "1567515360.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/735470952659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@tariq_kinani has joined the channel_",
+        "ts": "1567515369.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746451433924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Tariq, please meet Keith your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1567515382.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/735471388339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1567515389.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746919657664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1567515394.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746451987380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tariq!  How's it going?  I watched your reel and think it's great, especially since it all seems to be done in Houdini.",
+        "ts": "1567517608.001600",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746974555093_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm currently at Framestore in mtl using Houdini for feature films.  I guess I'll let you start this thing by asking me some questions you might have about the industry and fx in general :wink:",
+        "ts": "1567517667.001700",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/749153660854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Keith! I'm doing well thanks for asking. First of all thank you so much for taking time out of your schedule to help me. I'm sure you're very busy. I really appreciate your help",
+        "ts": "1567518184.001800",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746984763568_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And thanks for what you said about my reel! Ye it was basically all Houdini, don't think I used Maya at all. And comp in Nuke.",
+        "ts": "1567518321.001900",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746988047856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I guess I'll just introduce myself a bit first. So I've just finished a two year masters in Houdini at FX Animation in Barcelona. But now I've moved back home to Wales, literally just moved in last night :grimacing:",
+        "ts": "1567518450.002000",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/740605551377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And now I'm looking for work in studios in the UK.",
+        "ts": "1567518508.002100",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746524792996_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So really I would like to know how to land my first job or get my foot in the door?",
+        "ts": "1567518594.002200",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/746526876756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, you have a good start with a strong student reel!  i would continue to expand your skills and your demo reel while you look for work.",
+        "ts": "1567520503.002300",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/747048318133_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In addition to looking at big studios I think it's important to have an open mind and apply at smaller boutique type studios as well.  You might have a better chance at getting into a smaller shop as a junior artist and expand from there.  You tend to learn more at smaller studios because the pipelines are less established and your job is a bit more \"generalist\".  This is valuable even if you want to focus on fx because it's important to understand a studio pipeline.",
+        "ts": "1567520575.002400",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/740660857329_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Attending industry events is a good idea because like everyone says, networking is important.  The more people you know in the industry the better your chances.",
+        "ts": "1567520637.002500",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/747051615317_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you try applying at Framestore London yet?",
+        "ts": "1567520683.002600",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/747052818325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Framestore sometimes offers internships as well, and we just hired one of our interns full-time after a 3 month internship.",
+        "ts": "1567520718.002700",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/747050106880_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah right I was under the impression that I would have more chance at a bigger studio but I'd be happy in a small one and I'd love to have more of a generalist role. I did apply for the framestore internship but I didn't get it unfortunately. O did also have an interview for the MPC internship in Canada but they said my reel was more cfx \/ Crowds and that's not part of the FX department",
+        "ts": "1567529602.002800",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/735829323907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a fair point about your reel.  You obviously have a good eye and skill level in Houdini but I was most interested in your fluid and pyro sims and was hoping for more.  Because big studios have seperate departments for cloth and crowd you'll need to decide what you want to focus in.  If you're applying for an fx position in a large film studio I would consider taking that crowd and cfx stuff of and replacing with with things like RBD sims, pyro, flip water, particles, grains, and any work in sops or tool building in vex is good to show also.",
+        "ts": "1567534857.002900",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/747399745200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And patience is key...it took me about 2 years to get into an fx department at a studio after I decided that's what I wanted.  I'm not suggesting it will take that long for you but persistence is key and don't get discouraged.",
+        "ts": "1567534943.003000",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/749265978695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I'm here now so feel free to ask as many questions as you like and also technical ones as you build your reel.",
+        "ts": "1567534972.003100",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/747402366752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

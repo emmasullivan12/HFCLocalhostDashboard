@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wooah thats cool....My day was tiring! hope u had a good day at the football club:smile:",
+        "ts": "1509739864.000017",
+        "username": "diasshirley08 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-03\/266967771509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Hi Ayisha, I'm Melissa! I'm a student Physiotherapist going into my final year at University. I just wanted to introduce myself and get an idea of what you want to achieve through the programme and where I might be able to help you? I understand that you would like some help with your university application, are there any particular areas that you were having difficulty with?",
+        "user": "U5WDG4GAU",
+        "ts": "1498078163.309535",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g6329b69fd90",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c6329b69fd9093d9d67cfe55ede3fb52.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "Melissa",
+            "real_name": "Melissa",
+            "display_name": "melissa",
+            "team": "T4UUTPV18",
+            "name": "melissa",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi I'm Ayisha. I'm in Year 12  and wants apply to study Medicine at university. I just wanted to know how to structure my personal statement and what activities I could do to make myself an outstanding candidate. Also I would like to apply to Oxford so I wanted more information about that as well .",
+        "user": "U5X7R0LBX",
+        "ts": "1498078522.434960",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fdb73ff51ed7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201264672165_fdb73ff51ed7f670e19b_72.png",
+            "first_name": "Ayisha",
+            "real_name": "Ayisha Rasheed",
+            "display_name": "ayisha_2000",
+            "team": "T4UUTPV18",
+            "name": "ayisha_2000",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

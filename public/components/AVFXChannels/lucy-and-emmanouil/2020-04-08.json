@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Manos, hope this article helped in some way. I've got a little info here about how I got into the industry -\n\nMy first role in the Industry as a Post production Co-ordinator for the Animated feature film, “Ultramarines - a Warhammer 40000 movie” Voiced by Terence Stamp and John Hurt from May 2010 to Oct 2010.\n\nBefore this I'd been volunteering on several live action and Motion Design productions with contacts made whilst participating in the ITV's It's My Shout production scheme, after having completed my MA in Film Producing and Business Management.  The Project I'd completed just before entering the industry was as First Assistant Director of a 90-minute Sci Fi pilot starring Neil Rayment (Matrix Reloaded.)  \n\nI found out about the role of Post production Co-ordinator from a former classmate of mine from the Digital Video Design BA degree I'd completed a few years earlier, he was a Compositor on the project and felt my Skillset would be perfect for the project and passed on the contact details of the Producer.",
+        "ts": "1586343256.002600",
+        "username": "Lucy Lawson-Duckett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1056423313092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me if you have any other questions :+1:",
+        "ts": "1586343319.002700",
+        "username": "Lucy Lawson-Duckett (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048131865619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

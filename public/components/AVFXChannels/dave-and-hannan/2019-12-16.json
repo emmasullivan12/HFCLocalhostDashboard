@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey mate. How’s it going? What are you working on at the moment?",
+        "ts": "1576507231.000100",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/864973370849_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its going good I am working on a creature, a lion but instead of it having a traditional mane i was thinking putting various gems in the shape of a mane.\n\nHow is your new job at dneg going??",
+        "ts": "1576511559.000200",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/875369976736_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

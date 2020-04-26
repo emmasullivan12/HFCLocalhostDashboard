@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Adam no problem at all, there's no schedule we need to keep to :-)",
+        "ts": "1580376930.000400",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/918622784033_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hello",
+        "ts": "1520271587.000482",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-03-05\/325853634359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is your program starting again in march ?",
+        "ts": "1520271596.000191",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-03-05\/324777859204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the march bill has failed, most likely due to expired card ?",
+        "ts": "1520271614.000632",
+        "username": "matthieu (Smooz support)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-03-05\/324703553507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

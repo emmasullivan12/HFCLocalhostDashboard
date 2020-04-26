@@ -1,0 +1,378 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jon, are you talking about when your selecting your points when placing your card? You would select the tracked points, usually 4 points over a flat surface, right click and create card using those points. Often the card wont be the right orientation even after selecting those points so you will have to go into the 3D view and move the card so that it replicates the position in relation to the camera in a 3D space. I hope I'm not repeating what you already know, I figure this might be reason why your patches aren't sticking",
+        "ts": "1581413676.009400",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/948308862567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also might help if I see a screen grab of your script setup for your projection and a screengrab of your 3 D view, with your card and camera and tracked points",
+        "ts": "1581413797.009500",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/936306724337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTU1VGQLU",
+                "created": 1581417009,
+                "timestamp": 1581417009,
+                "name": "Screenshot 2020-02-11 at 10.29.04.png",
+                "title": "Screenshot 2020-02-11 at 10.29.04",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 576118,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTU1VGQLU\/screenshot_2020-02-11_at_10.29.04.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTU1VGQLU\/download\/screenshot_2020-02-11_at_10.29.04.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 290,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 386,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 579,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 644,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 772,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTU1VGQLU-7844be74b9\/screenshot_2020-02-11_at_10.29.04_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 824,
+                "image_exif_rotation": 1,
+                "original_w": 3224,
+                "original_h": 2594,
+                "thumb_tiny": "AwAmADCnRUyrlR0\/KlCgen5U7CuQUrHLE8fhT5QARimYpDEoopc8YoAnT7o+lLSL90fSlqySKb7wphG1sdfpUkvLioyMHBqGUhKKKKALWwogzjoDTcipZP8AVr\/uioapCYyXqKjp8nUUypYwooooA\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTU1VGQLU\/screenshot_2020-02-11_at_10.29.04.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTU1VGQLU-3a52037085",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581417014.009600"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTUF7QX0Q",
+                "created": 1581417010,
+                "timestamp": 1581417010,
+                "name": "Screenshot 2020-02-11 at 10.22.06.png",
+                "title": "Screenshot 2020-02-11 at 10.22.06",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 501072,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUF7QX0Q\/screenshot_2020-02-11_at_10.22.06.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUF7QX0Q\/download\/screenshot_2020-02-11_at_10.22.06.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 233,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 310,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 465,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 517,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 620,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUF7QX0Q-af72495e44\/screenshot_2020-02-11_at_10.22.06_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 662,
+                "image_exif_rotation": 1,
+                "original_w": 2300,
+                "original_h": 1486,
+                "thumb_tiny": "AwAfADClzRzSUUALzRzSUuKADmjLU4LlGY9qZQAUUUUALSg02igCV2AjVB9TUdJRQB\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTUF7QX0Q\/screenshot_2020-02-11_at_10.22.06.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTUF7QX0Q-852fc54e26",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581417015.009900"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTWB61Z8F",
+                "created": 1581417011,
+                "timestamp": 1581417011,
+                "name": "Screenshot 2020-02-11 at 10.22.54.png",
+                "title": "Screenshot 2020-02-11 at 10.22.54",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 5208170,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTWB61Z8F\/screenshot_2020-02-11_at_10.22.54.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTWB61Z8F\/download\/screenshot_2020-02-11_at_10.22.54.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 265,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 353,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 530,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 589,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 707,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWB61Z8F-2976f5add8\/screenshot_2020-02-11_at_10.22.54_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 754,
+                "image_exif_rotation": 1,
+                "original_w": 2622,
+                "original_h": 1930,
+                "thumb_tiny": "AwAjADDP8z2FHmewqxBCxhVwMgnirQtFC7mbbkfxetAGb5h9BR5nsK0ZYY4rbqC57g1XhjDOSRxQBW8z2FHmH0FXSg5qtcDCrjilcdi\/aSBNOUZ5Of51YiVnC7zlMdCOtZUL4iArVtpEMKncOnc0wIL4j7gAAHPFRRDbGM9aYzDcTxzk9ac8g6Aj86QCO2WqtcH5V+tSPIo6nJ9qglYMBigCOiiimIKKKKACiiigD\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTWB61Z8F\/screenshot_2020-02-11_at_10.22.54.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTWB61Z8F-bdc10bc926",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581417019.010200"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTUFUG7DK",
+                "created": 1581417018,
+                "timestamp": 1581417018,
+                "name": "Screenshot 2020-02-11 at 10.24.48.png",
+                "title": "Screenshot 2020-02-11 at 10.24.48",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 6632762,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUFUG7DK\/screenshot_2020-02-11_at_10.24.48.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUFUG7DK\/download\/screenshot_2020-02-11_at_10.24.48.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 217,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 289,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 433,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 481,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 578,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUFUG7DK-8201ebb662\/screenshot_2020-02-11_at_10.24.48_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 616,
+                "image_exif_rotation": 1,
+                "original_w": 2622,
+                "original_h": 1578,
+                "thumb_tiny": "AwAcADCEQfNtK\/XAzU5sAAcFc9geM1auH2kbcbj7UbPPY+Yg2joe9ICrLaxwwEkAsapqgJ6DpV+92jCKoyP5VTX+EetA0PCJx8o\/KkMa5ICj8qU0ZHWkMf5pdwSec1prwDWFuNasErNCMgciqEVHcu2WOc1Ep+7xwKfIcOQBwOKgjYg0gJieOeKYXGeoqF3ZutMoA\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTUFUG7DK\/screenshot_2020-02-11_at_10.24.48.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTUFUG7DK-7ae11b122f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581417024.010500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I graded my patch so you \/ I can see it better. Can you see how completely misaligned it is? Even on frame 100 - where the frame hold is set. I don't understand why that is.",
+        "ts": "1581417131.010800",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946540944005_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "&amp; btw the patch is 85% ready which is why you can still see some wires. I was a bit impatient to test it was working - cue card positioning nightmares!",
+        "ts": "1581417259.010900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/936380711537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "p.s. realise you're working  - this stuff not urgent, at all!",
+        "ts": "1581417707.011000",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/935064326867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "looking at your script, I cant see a project 3D node, which should be between your patch and your card, this would also be connected to the camera. You also need to to have a framehold on the connection between the project 3D node and the camera, the same frame as when the patch is done. I cant see those in your script",
+        "ts": "1581420030.011100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/948441316423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob, Slight schoolboy error missing out Project 3d and the frame hold. I seem to be making progress. Is it just me or is aligning cards in 3D space in Nuke a bit random? Is there a more accurate way? I tried using the pointcloudgenerator but I think that might be a bit too advanced for where I'm at...\nI want to put the monkeys and shadows back on top then I'll ask for some feedback if you don't mind. Think that will take me another day or so. I've given myself a deadline of Friday pm to get it all done.",
+        "ts": "1581438677.011200",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/948965942503_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aligning cards can be hard sometimes. Did you manage to reduce the errors in your tracking points? The pointcloud generator can be useful, but I rarely use it to be honest. On a flat surface it should be fairly easy to get the correct position. The school has got back to me about the cleanup, it is removing a camera operator from a mirror reflection, I can send you a photo later that I've been sent. Do you still want to go ahead with the cleanup?",
+        "ts": "1581441714.011300",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949423412150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please to the clean up. Hopefully you don't mind giving me some pointers if I get stuck - reflections signal tricky shot but I'm happy to give it a go. Managed to get the sky card aligned. There's some slippage on the wall with graffiti but I'll come back to fine tune in a bit. Is it a bad idea to keyframe the card into the correct position when it does slip? Or will that set up a whole load of other problems? 3DCamera tracker Tracking error rate =  0.86 - that okay?  &lt;1 is the ideal right?",
+        "ts": "1581444298.011400",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949511521030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the error rate sounds good, so not sure what that might be without seeing it. I wouldn't think you would need to keyframe to be honest, if you have a good track and the card in the right place you shouldn't have to keyframe the card. I'll get the details of the shot tomorrow, I suspect Sarah will put me in charge with the director and then we can get you guys connected once I know what is completely required from the shot",
+        "ts": "1581444905.011500",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949531239942_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok that sounds great. Thank you. On the monkey shot - a little bit of slippage and some weird ghosting. I'm going to work on it for. few more hours and post something for some feedback if you have time tomorrow am. Have a cool evening. &amp; thx again!",
+        "ts": "1581446297.011600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/947387625413_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no worries Jon catch you tomorrow mate",
+        "ts": "1581446566.011700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/935907759427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

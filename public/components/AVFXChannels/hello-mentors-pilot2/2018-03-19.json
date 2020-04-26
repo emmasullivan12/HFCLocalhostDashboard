@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yoyoyoyo",
+        "ts": "1521461681.000436",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1521465015.000278",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "pinned_item",
+        "text": " pinned a message to this channel.",
+        "item_type": "C",
+        "attachments": [
+            {
+                "fallback": "[October 5th, 2017 9:24 AM] bot: Hey E-mentors!\n:fallen_leaf: *Welcome to our Autumn pilot programme!* :fallen_leaf:\nEveryone will be signing in over the course of the weekend ready to be *introduced to your Mentees on Monday.*\nIn the meantime, here's *a short intro video* <https:\/\/youtu.be\/UtLFw4Dbyj4> :film_projector::film_projector: so be sure to check it out.\n*Feel free to include a personal picture on your profile too* (we want to see your lovely faces!)\nOtherwise, let us know if you have any questions :ok_hand::ok_hand:",
+                "ts": "1507220666.000107",
+                "msg_subtype": "bot_message",
+                "author_id": "",
+                "author_subname": "bot",
+                "channel_id": "C9S8YFHUM",
+                "channel_name": "hello-mentors-pilot2",
+                "is_msg_unfurl": true,
+                "text": "Hey E-mentors!\n:fallen_leaf: *Welcome to our Autumn pilot programme!* :fallen_leaf:\nEveryone will be signing in over the course of the weekend ready to be *introduced to your Mentees on Monday.*\nIn the meantime, here's *a short intro video* <https:\/\/youtu.be\/UtLFw4Dbyj4> :film_projector::film_projector: so be sure to check it out.\n*Feel free to include a personal picture on your profile too* (we want to see your lovely faces!)\nOtherwise, let us know if you have any questions :ok_hand::ok_hand:",
+                "from_hidden_wksp": false
+            }
+        ],
+        "ts": "1521465020.000107"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1521465314.000560",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"hello-mentors\" to \"hello-mentors-pilot2\"",
+        "old_name": "hello-mentors",
+        "name": "hello-mentors-pilot2"
+    }
+]

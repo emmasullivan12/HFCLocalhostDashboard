@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jon, sorry was a bit busy towards the end of last week. Not heard anything about a bias towards footage with reels with low production values. But obviously you want it to look as good as possible so that it catches their attention. when I click the link it goes to a website but no video to play.",
+        "ts": "1587372318.004100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1058157729575_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

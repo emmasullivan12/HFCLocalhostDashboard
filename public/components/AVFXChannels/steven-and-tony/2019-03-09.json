@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Game has 30 levels and tutors loved it and everyone who has played it, found it addictive, that’s so reassuring!",
+        "ts": "1552168257.000600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-09\/572269256181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

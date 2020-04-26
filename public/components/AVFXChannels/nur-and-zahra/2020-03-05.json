@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Zahra, very nice to meet you! I know you are keen on characters and creatures not only on modeling side, but also on fx side. That’s cool!\nPlease tell me how you started your modeling journey and why you like character modeling more.\nI will be answering your questions in the noon or in the evening, so please dont worry if you dont hear from me other times. ",
+        "ts": "1583400277.001800",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/983239437184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

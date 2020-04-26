@@ -1,0 +1,126 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course! Take your time no rush atall!",
+        "ts": "1581093660.003500",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/929408043746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTSA2B62K",
+                "created": 1581102530,
+                "timestamp": 1581102530,
+                "name": "Cover letter_Outpost_07022020.docx",
+                "title": "Cover letter Outpost 07022020",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "filetype": "docx",
+                "pretty_type": "Word Document",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 24635,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTSA2B62K\/cover_letter_outpost_07022020.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTSA2B62K\/download\/cover_letter_outpost_07022020.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTSA2B62K\/cover_letter_outpost_07022020.docx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTSA2B62K-db5fab6296",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581102531.003600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\n```Hey Lousie! I have written a speculative cover letter for Outpost which I have attached. I think it should be, being sent to Leanne Loughran who is Head of Talent at Outpost. Is it worth the risk to address it to her when I'm not sure? I can add more detail to other productions I admire so let me know if more should be added. Let me know what amends I should make and then I'll use this as a template to write one for Jellyfish. I have also seen that DNEG and Technicolor are recruiting as well. Do you think it is worth sending a CV and cover letter to them as well?```",
+        "ts": "1581104258.003900",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/942531206192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is such a good cover letter!! Genuinely once of the best I’ve read. And yes if you can find out in linked in who the talent manager or in house recruiter is by all means address the email\/ letter to them! ",
+        "ts": "1581104779.004000",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/944408480759_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yes if Technicolor and dneg are recruiting apply their too! When I was trying to get into vfx I applied to about 5 places all at once",
+        "ts": "1581104823.004100",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/944409760615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I started writing a day in a life of a coordinator summary which I’ll send through to you on Monday as that will be handy to know when you interview to show that you have an idea what the role will be like",
+        "ts": "1581104888.004200",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/932400839265_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much! I’ll start applying than :+1::skin-tone-2: I’ll let you know if I get any responses. Just looking at Outpost - the speculative cv only allows for links instead of attachments. What should I do? Also should I use my cover letter as the message or do I create a separate message? Any information you could give me would be great. Do you have anything further on the pipeline as well? Don’t worry if not, I can research it. :grin:",
+        "ts": "1581105642.004300",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/944434211591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yea I can write up some notes on the general pipeline for you aswell. I would say use the letter as your email. In the case of Out post I would update your linked in profile to match your cv as much as poss and you can link to that! :grinning:",
+        "ts": "1581105786.004400",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/944438770519_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice - thank u :+1::skin-tone-2:",
+        "ts": "1581106337.004500",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/942591846144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

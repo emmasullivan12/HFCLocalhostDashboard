@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahhh okay, I like the sound of that competitive working environment and the speed in which your pushed to work at.. Did you always feel like you wanted to become a texture and look-Dev artist?",
+        "ts": "1582103050.003000",
+        "username": "Thomas James Harrison (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/958372805460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is a very competitive industry, which suits me too! I used to work for madame Tussauds, designing their experiences worldwide but I fancied a career change. So I started training to become a modeller but someone suggested I try texturing and I never looked back",
+        "ts": "1582113133.003100",
+        "username": "Connor Woodey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/960908605543_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

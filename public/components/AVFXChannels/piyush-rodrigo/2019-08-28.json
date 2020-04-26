@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rodrigo, I am still looking for the material that you can read through for c++ in Maya. Will let back to you in a day or two. Any other questions you have I am happy to answer.",
+        "ts": "1566997776.000100",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741001445125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, okay that's fine, I don't have any questions right now but I'll think of some",
+        "ts": "1566997975.000200",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/742865220039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure. No rush!",
+        "ts": "1566997999.000300",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/734618358657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

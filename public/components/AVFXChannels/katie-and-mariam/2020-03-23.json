@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I cannot see it sorry. ",
+        "ts": "1584958560.001400",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1018297533508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

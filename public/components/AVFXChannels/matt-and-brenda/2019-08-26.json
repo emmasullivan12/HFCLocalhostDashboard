@@ -1,0 +1,130 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Just wanted to pass this on - at the BBQ Kyle randomly brought up what lovely work experience people you were and the whole squad agreed and had very warm words to say - so well done on making such a great impression :blush:",
+        "ts": "1566812230.010900",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/739936004823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's so nice to hear!!! I had a great time, and felt really welcome, thank everyone again for having us around and taking some of their time to answer some questions :blush: updating my CV at the moment to send it to recruitment for the runner role tomorrow",
+        "ts": "1566844176.011000",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/732287954625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you had a great Bbq, the weather was lovely this weekend!!",
+        "ts": "1566844200.011100",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/740852705910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Glad to hear that :blush: sounds good! Well done. Bbq was amazing thanks, hope you enjoyed the weather ",
+        "ts": "1566846595.011200",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/732340565809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Had so much fun thank you!!",
+        "ts": "1566847827.011300",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/738278390644_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will be attending ada's premiere next month btw, if you go, I might see you there :blush:",
+        "ts": "1566847849.011400",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/738751582533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You’re welcome! What’s Ada’s premiere? ",
+        "ts": "1566859471.011500",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/741135261190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a short from Blue zoo :blush:",
+        "ts": "1566859671.011600",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/740818013415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.eventbrite.co.uk\/e\/blue-zoo-presents-ada-tickets-69176369383?aff=eand>",
+        "ts": "1566859676.011700",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-26\/732573419025_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "Blue Zoo Presents: Ada",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/blue-zoo-presents-ada-tickets-69176369383?aff=eand",
+                "text": "Blue Zoo Presents: Ada Innovative short film screening and presentation",
+                "fallback": "Eventbrite: Blue Zoo Presents: Ada",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F68867907%2F107094187173%2F1%2Foriginal.20190816-104457?w=1000&auto=compress&rect=0%2C182%2C3890%2C1945&s=74734a00835f6511f293e26a3c8b79ee",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "Stratton Street, London, W1J 8LT, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Thu 5 Sep 2019 at 19:00",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/blue-zoo-presents-ada-tickets-69176369383?aff=eand",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 47101,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/blue-zoo-presents-ada-tickets-69176369383?aff=eand"
+            }
+        ]
+    }
+]

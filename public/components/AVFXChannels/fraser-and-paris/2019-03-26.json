@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I went on and did a master’s. My honours was more spread thin over Animation generalisation so in the master’s I specialised in compositing and directed a live action film with visual effects required for it. I did get some paid work during the master’s though - the odd freelance gig.",
+        "ts": "1553610324.008700",
+        "username": "Fraser (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/588280309476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

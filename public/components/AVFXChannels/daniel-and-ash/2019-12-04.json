@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.accessvfx.org\/podcast|https:\/\/www.accessvfx.org\/podcast>",
+        "ts": "1575462371.000100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/861253469703_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

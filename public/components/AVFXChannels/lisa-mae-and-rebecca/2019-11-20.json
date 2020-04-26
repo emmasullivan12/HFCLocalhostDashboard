@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! There’s an AccessVFX event happening at NUA this Friday! And my course leader has emailed us all to say that we can invite any industry people we think could benefit the event! Would you be interested in coming down? It’s late notice and I apologise for that, if you are interested however you can email <mailto:l.simpkin@nua.ac.uk|l.simpkin@nua.ac.uk> and you’ll be put on the list! I think someone from BlueZoo is already coming but have you there as-well would be great!",
+        "ts": "1574268813.004500",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/844303354215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a very good chance my uni is going to get quarantined or at least close for a few weeks which is going to put a big delay on like my work as we need the software here as I only have some of it at home, what's happening at cinesite are things being delayedand that.",
+        "ts": "1584016582.005700",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995940479008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We are still figuring things out. ",
+        "ts": "1584018367.005800",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/984536073651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=QJWmnMNU7sI> what do you think to this shot i composited during my first year as part of a group project, thought it might be good for a showreel because of the process. Its an original idea, we were running out of time and it needed doing so i stepped up, the rock and hat needed to be rotoed so the drone could fly over. My friend created the drone and i tracked the footage in Nuke so my friend could animate the drone to fit in the shot, i then graded it  so the drone looked like it belonged.",
+        "ts": "1584035297.005900",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998991424838_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Goup project final shot",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=QJWmnMNU7sI",
+                "author_name": "Dnbray",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCtVgBYMRSFOoWmp3eB-XpLg",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/QJWmnMNU7sI\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Goup project final shot",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/QJWmnMNU7sI?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=QJWmnMNU7sI",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=QJWmnMNU7sI"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584035298.000000"
+        }
+    }
+]

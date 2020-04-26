@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jason, well I'm just kinda confused as how I can get into investment banking and how to get some raw experience in the field ",
+        "ts": "1510691292.000140",
+        "username": "karan4j1 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272299784850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I would love to work in the city ",
+        "ts": "1510691319.000682",
+        "username": "karan4j1 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272224734755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I'm not to sure if i want to go to university ",
+        "ts": "1510691387.000237",
+        "username": "karan4j1 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/272300889058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem Charis! You'll have to be patient with me too from time to time, although I will do my best to respond as soon as I can! If you ever have anything time sensitive that you need feedback or advice on, you can email me at <mailto:kat.seale@gmail.com|kat.seale@gmail.com> and I'll get on it for you!!\n\nHonest advice on animation I can definitely do! I'll set us up a shared dropbox folder that you can drop your anim into, and I can either write up, record or do some drawovers for feedback for you ^^ Feel free to drop stuff in there whenever you like and then just shoot me a message so I know to check it!",
+        "ts": "1582561744.000100",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/968202141479_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That would be amazing, thank you! My email is <mailto:charisdussek@gmail.com|charisdussek@gmail.com>, if you could send the dropbox invite to that thatd be perfect! \nOn the topic of london based studios, i know of bluezoo, dneg and studio aka, but was wondering if you could tell me more about Mikros? What sort of stuff do they do? Also, is there a different atmosphere amongst the studios youve worked at? Where have you enjoyed working most?",
+        "ts": "1582588427.000200",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/967127631941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

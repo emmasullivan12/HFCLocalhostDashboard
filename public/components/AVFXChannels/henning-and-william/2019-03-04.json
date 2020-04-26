@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats nice! How is that going?",
+        "ts": "1551699163.000100",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566242584404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll ask the same question I did before, btw :slightly_smiling_face:\nTell me, is there anything specifically I can help you with - or just general advice?\nIm more than happy to just be here when you need me",
+        "ts": "1551699182.000200",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/565711148673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

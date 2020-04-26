@@ -1,0 +1,11 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1521463098.000248",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"hello-mentors\" to \"hello-mentors-pilot1\"",
+        "old_name": "hello-mentors",
+        "name": "hello-mentors-pilot1"
+    }
+]

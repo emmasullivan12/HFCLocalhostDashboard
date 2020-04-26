@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's fine :slightly_smiling_face: try to expand on that, what kind of thing do you want to be able to do?",
+        "ts": "1580316207.002600",
+        "username": "Adam Boyne (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-29\/914762699842_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I want to be able to really go into the minute details of a game, so what damage a gun does. Also this weekend Im doing the global game jam where I'll be the designer on my team and I'll also do some writing where needed for the game.",
+        "ts": "1580317733.002700",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-29\/927626180821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,207 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura, I am back :wink: I am double checking if you computer specs are good for running Blender 3D software.",
+        "ts": "1534774828.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419447374292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is a good blog entry from Alex on 'How To Tell If 3D Animation Is Right For You?'  <http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html>",
+        "ts": "1534774903.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/420715480343_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "How To Tell If 3D Animation Is Right For You?",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html",
+                "text": "free 3D software - yours to try for free! What is involved in a career in 3D animation?  A lot of what animators do day to day involves ...",
+                "fallback": "How To Tell If 3D Animation Is Right For You?",
+                "image_url": "https:\/\/4.bp.blogspot.com\/-sHYtP_KzPKo\/U_EXeI4h2XI\/AAAAAAAAC-E\/XiJ6e8aA0n0\/w1200-h630-p-k-no-nu\/Screen%2BShot%2B2014-08-17%2Bat%2B21.59.09.png",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html",
+                "image_width": 402,
+                "image_height": 211,
+                "image_bytes": 44174,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2015\/09\/how-can-you-tell-if-our-course-is-right.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Blender software is free to download.  Lots of free online tutorials. You can create 3D models, animate, texture, light, and render them as 2D images\/animations.   Have you heard of Maya 3D software or 3DMax or Adobe Cinema4D ? They are all 3D software packages all  very similar. Blender and Cinema4D are good ones to start learning, free\/free trials, and there are tons of good online tutorials.",
+        "ts": "1534775095.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419683228162_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maya &amp; 3DMax are used for high end vfx (commercials, broadcast, feature films) &amp;  all kinds of games (high end &amp; game apps).",
+        "ts": "1534775161.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/421021819366_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.autodesk.co.uk\/products\/maya\/overview?mktvar002=716541&amp;mkwid=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&amp;intent=&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GGL_Maya_UK_BR_SEM&amp;utm_term=autodesk%20maya&amp;utm_content=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&amp;gclid=EAIaIQobChMI6Zbbhev73AIVQed3Ch03YQQzEAAYASAAEgKSzPD_BwE>",
+        "ts": "1534775243.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419829437669_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Maya | Computer Animation &amp; Modelling Software | Autodesk",
+                "title_link": "https:\/\/www.autodesk.co.uk\/products\/maya\/overview?mktvar002=716541&mkwid=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&intent=&utm_medium=cpc&utm_source=google&utm_campaign=GGL_Maya_UK_BR_SEM&utm_term=autodesk%20maya&utm_content=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&gclid=EAIaIQobChMI6Zbbhev73AIVQed3Ch03YQQzEAAYASAAEgKSzPD_BwE",
+                "text": "Maya is 3D computer animation software with powerful modelling, rendering, simulation, texturing and animation tools for artists, modellers and animators.",
+                "fallback": "Maya | Computer Animation &amp; Modelling Software | Autodesk",
+                "from_url": "https:\/\/www.autodesk.co.uk\/products\/maya\/overview?mktvar002=716541&mkwid=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&intent=&utm_medium=cpc&utm_source=google&utm_campaign=GGL_Maya_UK_BR_SEM&utm_term=autodesk%20maya&utm_content=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&gclid=EAIaIQobChMI6Zbbhev73AIVQed3Ch03YQQzEAAYASAAEgKSzPD_BwE",
+                "service_icon": "https:\/\/www.autodesk.co.uk\/favicon.ico",
+                "service_name": "autodesk.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.autodesk.co.uk\/products\/maya\/overview?mktvar002=716541&amp;mkwid=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&amp;intent=&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GGL_Maya_UK_BR_SEM&amp;utm_term=autodesk%20maya&amp;utm_content=sRGNSTFw8%7Cpcrid%7C212217280476%7Cpkw%7Cautodesk%20maya%7Cpmt%7Ce%7Cpdv%7Cc%7Cslid%7C%7Cpgrid%7C43332388520%7Cptaid%7Ckwd-298358543755%7C&amp;gclid=EAIaIQobChMI6Zbbhev73AIVQed3Ch03YQQzEAAYASAAEgKSzPD_BwE"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yikes that is a long web link :smile:",
+        "ts": "1534775259.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419554156995_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Watch the  short 'play video' button",
+        "ts": "1534775283.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419122464513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cinema4D <https:\/\/www.youtube.com\/watch?v=jRKfumNPL1Y>",
+        "ts": "1534775416.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/420722196775_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "What is Cinema 4D?",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=jRKfumNPL1Y",
+                "author_name": "MaxonC4D",
+                "author_link": "https:\/\/www.youtube.com\/user\/MaxonC4D",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/jRKfumNPL1Y\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: What is Cinema 4D?",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/jRKfumNPL1Y?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=jRKfumNPL1Y",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=jRKfumNPL1Y"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oops sorry not Adobe. Maxon owns it. Cinema4D comes with Adobe AfterEffecst, but its reallya basic version.",
+        "ts": "1534775526.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419125773409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maya has a trial too, but Mays is reall complex, and you need quite a good computer to run it well.  So Blender is a better option :+1:",
+        "ts": "1534775596.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419457609620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just heard that you computer specs are Ok to run Blender. It will be slow rendering, but just run it overnight later on when you get further on a project.",
+        "ts": "1534775734.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419560609459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can even run Maya, but will be slow, and again even slower to render.",
+        "ts": "1534775751.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/421029836342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if you want me to explain any of these term like texturing, lighting, render, etc :wink:",
+        "ts": "1534775782.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/419460135092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, have you had a chance to do any more drawing? Or other artwork I can help give feedback on?",
+        "ts": "1534776551.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-20\/421040454854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

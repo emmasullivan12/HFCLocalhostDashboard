@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yea your one of jack's old colleagues\/friends right?",
+        "ts": "1582822194.001900",
+        "username": "Adam Clement (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/972392122112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, we worked together at DNEG. I’m also a graduate from your course.",
+        "ts": "1582829492.002000",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/959853497314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your profile said you’d like some help knowing where to go after Uni? Feel free to ask me anything you want to know about.",
+        "ts": "1582829663.002100",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/961179205683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

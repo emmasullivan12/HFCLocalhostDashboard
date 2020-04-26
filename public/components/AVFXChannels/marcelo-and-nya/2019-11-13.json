@@ -1,0 +1,244 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you want some help getting started? Please let me know what's holding you back so we think of something",
+        "ts": "1573680877.006900",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833154307076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nya, I'll just paste here a long long answer I wrote for another mentee who had some questions in general, I hope it's interesting to you too. Don't hesitate to ask me further if you'd like!",
+        "ts": "1573680937.007000",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/822148769203_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Her questions:\n\n1. how is animation as a career?\n2. how does one make a great animation portfolio?\n3. what kinds of jobs are there in an animation studio? \n4. where do you find your inspiration?  \n5. are there any animators I can study and learn techniques from?\n--------------------",
+        "ts": "1573680989.007100",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/825697464129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My answers:\n\n\n1. The great thing about animation is that you can't learn it all, I mean, it's a lifelong learning process. There's so much to learn, and there's definitely not just one way of doing things, so you can keep learning and experimenting as you go.\nIt's not easy as a career in terms of stability and continuity of work and income, even if you work permanent of fixed term contract, and that's worldwide. It certainly doesn't compare to people who happen to get some job in well stabilished company and they might work there their whole lives and move upwards in a clear career path. But I assume the kind of work you'd do also doesn't compare. What I know for experience is that you've got to really like it as a thing for your life and day to day. You'll be in a studio or at home working with animation for at least 8 hours of your day, dealing with people who do animation. You must like it as something you'd want to be part for most of your life",
+        "ts": "1573681037.007200",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833158265396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In a more practical way, it's important you learn to manage your money, learn to save and to live on the very basics when needed, because you might be out of work for some irregular periods. I tell that more from my perspective coming from Brazil and from a developing market point of view. It's just 4 months I've been in the UK but the animation market isn't much different around the world.",
+        "ts": "1573681101.007300",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/820835751282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2. A great animation portfolio comes either from a long time working or from a long time working for yourself - it takes time to have worked on many good projects so you can have several good shots, backgrounds or illustrations for your portfolio. Or else, if you can afford to just study and work hard on your own stuff, you could end up with great material for a portfolio, even though when you're looking for a job, it's usually more important if you have any commercial project than a perfect wonderful scene you've been doing by yourself for the last 2 years",
+        "ts": "1573681128.007400",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835479636615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So in that account I'd advise you get any job in animation, doing any step of the animation process, that I truly believe you'll learn so much and get to know people that will make more difference in your chances of getting a new job than working on your own to prepare a beautiful portfolio that isn't commercial.",
+        "ts": "1573681154.007500",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833161102356_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "3. There are several types of jobs in an animation studio, also depending on the technique they're working with.\nRoughly you have \n1 - administration work, that isn't directly related to animation, but people might need to understand the whole process\n2 - production work, either executive production, People  who work with funding for the projects, who pitch and sell the ideas, go to festivals, forums and markets to network with broadcasters, companies and investors to get the money for the studio, and also production management people, who manage the time and amount of work in a studio, so to say. They keep track of what is being done and make sure people have what they need for the production to be made",
+        "ts": "1573681218.007600",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/822155587843_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "3 - then you have pre production and production departments, where people do scripts, storyboards, layouts, characters, backgrounds, animatics, animation, effects, composition, lighting, texturing and so on. Everything that is directly related to animation. Usually for every step of it there can be an individual artist, so you might think of some step you'd like to do and there would be a position for that function",
+        "ts": "1573681221.007700",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835836571398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That includes post production as well, where compositors will put everything together, editors and so on will finish the piece",
+        "ts": "1573681241.007800",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/820839183634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "4. Inspiration comes from most things. I understand that inspiration for most good short films comes from one's own life experience, and from stories based on things that happened to you and subjects\/emotions\/situations you lived and understand well. I think the same applies for illustration - chances are you're going to find your style and be really good when you're doing your own thing, with the limitations you have and acknowledge, instead of trying to mimick someone's style. It might take time, but I believe it's worth it.",
+        "ts": "1573681260.007900",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835837592262_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, at least the I see it, inspiration for animation comes from anywhere but animation itself. Of course I like to watch animation and see other people's work, but when you try to do something like some animation you saw, it most likely will look like some (that one) animation\/drawing.",
+        "ts": "1573681274.008000",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833164007220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "5. There are several books on animation techniques by various super talented animators, but if you had to pick one it'd be The Animator's Survival Kit by Richard Williams. It really has all the basics and also complex stuff, explained with drawing the best way you can get. It's based on drawings but it applies to any technique you'd choose to animate.",
+        "ts": "1573681303.008100",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835483822647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aaron Blaise animated for Disney and he has a channel on YouTube with a lot of resources for free.",
+        "ts": "1573681320.008200",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835484247111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One good way to do it is you pick a film or character you like, then search online what studio\/animator animated that particular character and look for their blog\/Instagram. You'll certainly find really good stuff from a style\/show you like already",
+        "ts": "1573681335.008300",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833629336512_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/Udemy.com|Udemy.com> and motiondesign.school have some free online courses as well, may not be always, but if you keep visiting it you'll find some.",
+        "ts": "1573681350.008400",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833629707248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow",
+        "ts": "1573681694.008500",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/825714494641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Marcelo thank you",
+        "ts": "1573681704.008600",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835493447719_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some of those actually cleared some thing up for me",
+        "ts": "1573681728.008700",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/822167940403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I’d have to say I think I’m scared of the story not being that good so, I’m trying to note down as much as I can think  but I think it’s getting me more stuck",
+        "ts": "1573681818.008800",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833648689813_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I often focus so hard on one aspect that I exhaust myself so other parts lack sometimes",
+        "ts": "1573681872.008900",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835852264294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I need to find a balance but I’m not sure how to",
+        "ts": "1573681925.009000",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833179738132_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

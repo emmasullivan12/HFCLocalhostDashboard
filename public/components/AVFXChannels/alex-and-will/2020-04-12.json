@@ -1,0 +1,60 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey thanks so much man, my group member doing the lighting for the shot just gave it an update and a re-render and your advice helped\n<https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1502542\/1677671|https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1502542\/1677671>\nBy the way if you want to see the film we just made a new edit last night with all the updated stuff\n<https:\/\/vimeo.com\/406793411?fbclid=IwAR0GpC6AnfOW9S1L4ECv5G3iK_abfvU3OIthoih4fHLv4EghYn46gcoRHL4|https:\/\/vimeo.com\/406793411?fbclid=IwAR0GpC6AnfOW9S1L4ECv5G3iK_abfvU3OIthoih4fHLv4EghYn46gcoRHL4>",
+        "ts": "1586709439.011400",
+        "username": "Will Medcalf (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056576916946_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Lookdev, Lighting &amp; Compositing",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1502542\/1677671",
+                "text": "Collaborative Media Review with 14 items",
+                "fallback": "SyncSketch: Lookdev, Lighting &amp; Compositing",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1502542\/1677671",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/53610d9f36a3\/#1502542\/1677671"
+            },
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "TL_edit_w007_updated3_extendedEdit_soundUpdated",
+                "title_link": "https:\/\/vimeo.com\/406793411?fbclid=IwAR0GpC6AnfOW9S1L4ECv5G3iK_abfvU3OIthoih4fHLv4EghYn46gcoRHL4",
+                "author_name": "Daniel Ravanelli",
+                "author_link": "https:\/\/vimeo.com\/user76046773",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/877332969_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: TL_edit_w007_updated3_extendedEdit_soundUpdated",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/406793411?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"TL_edit_w007_updated3_extendedEdit_soundUpdated\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/406793411?fbclid=IwAR0GpC6AnfOW9S1L4ECv5G3iK_abfvU3OIthoih4fHLv4EghYn46gcoRHL4",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 2,
+                "original_url": "https:\/\/vimeo.com\/406793411?fbclid=IwAR0GpC6AnfOW9S1L4ECv5G3iK_abfvU3OIthoih4fHLv4EghYn46gcoRHL4"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586709440.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also been listening to the Allan McKay podcast and it's been super useful so thanks for the heads up on it",
+        "ts": "1586709597.011600",
+        "username": "Will Medcalf (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1078265867296_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

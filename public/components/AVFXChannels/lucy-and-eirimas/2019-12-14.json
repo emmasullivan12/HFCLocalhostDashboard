@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lucy ! How you doing ? :slightly_smiling_face: I haven't been in touch with you for a while because I have my deadlines these days, maybe you would like too see my FX project ? I  still want to improve it but I had to submit it atleast for my briefs, so I am planning to do it during christmas :sweat_smile:  Also I wanted to ask you maybe you know what kind of shots fx junior artist gets to work on ? Because I know that junior compositors doing mostly Roto Paint so it's really important to show that knowledge in your showreel",
+        "ts": "1576359892.000100",
+        "username": "Eirimas Jaskinas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-14\/863708727537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

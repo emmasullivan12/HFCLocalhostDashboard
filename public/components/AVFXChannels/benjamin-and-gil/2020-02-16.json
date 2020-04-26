@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Gil. I specialise in 3D and in python programming. I am here mentoring as a 3D artist. I could definitely try to help you hone your 3D skills. I worked 10 years in advertising working in print and broadcast as a 3D generalist. I cut my teeth on 3D modelling and then broadened my scope to become a generalist. So aside from animation and rigging I can hopefully assist in any of the other skills.",
+        "ts": "1581887575.002100",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/944657159633_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure about the recruiter stuff. Recruiters will often read out speculative but if they followed you you could always reach out and start a dialogue with them. I haven't used Instagram like that. Most of my work comes from LinkedIn. If you wanted you might try find them there and see if they will accept a connection.",
+        "ts": "1581887695.002200",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/956999616214_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok. that sounds like a good idea.",
+        "ts": "1581904051.002300",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/956793133911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "have I sent you my portfolio yet?",
+        "ts": "1581904070.002400",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/957140482086_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if not here it is",
+        "ts": "1581904073.002500",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/943462881587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/gilfranco.com\/3dcharacters.html>",
+        "ts": "1581904074.002600",
+        "username": "Gil Franco (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/954951407573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

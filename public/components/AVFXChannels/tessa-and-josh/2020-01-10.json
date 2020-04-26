@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, so my current understanding (feel free to correct me if I'm wrong :smile:) of the main differences between film and games animation are:\nWhen animating for film you only have to animate to the camera, whereas for games the animation needs to hold up from multiple angles. Also the frame rate being different for film (25fps) and games (30-60fps).\nOther than that I'm sure it would help tremendously if I knew some coding for games animation, but I'm pretty hopeless when it comes to coding :sweat_smile:. I am definitely interested though, so I'll try to pick some coding up.\nAs far as software goes, I'm confident when animating in Maya and that seems to be all I really need for film\/TV, but for games is learning a bit about plugging animation into Unity and using Blueprints the right way to go?\nI've been pretty interested in games but have been focusing on just getting my animation skills up to a good standard so haven't really delved too deep into other software yet.",
+        "ts": "1578680798.001800",
+        "username": "Joshua Treadgold (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/890331701955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

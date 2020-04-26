@@ -1,0 +1,180 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice",
+        "ts": "1542660509.005800",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/484968136886_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I think since you are still 17 you have plenty of time to see what you like the most among programming\/design\/modelling",
+        "ts": "1542660531.005900",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/482963177713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From what I have seen",
+        "ts": "1542660550.006000",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/484968687302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the most important thing that employers will look at",
+        "ts": "1542660559.006100",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/483465235971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "has to do with the portfolio",
+        "ts": "1542660563.006200",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/484968896422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so what you want to do ideally",
+        "ts": "1542660567.006300",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/483398253524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is everytime you create a project, e.g a mini-game or a technical document or a GUI app",
+        "ts": "1542660585.006400",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/483398548804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "upload it on your website",
+        "ts": "1542660593.006500",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/482831578128_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "e.g a friend of mine's website is this <http:\/\/www.simoncoenen.com\/>",
+        "ts": "1542660614.006600",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/483568719234_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "text": "Simon Coenen. Game programmer portfolio.",
+                "fallback": "Simon Coenen. Game programmer portfolio.",
+                "from_url": "http:\/\/www.simoncoenen.com\/",
+                "service_icon": "http:\/\/www.simoncoenen.com\/favicon.ico",
+                "service_name": "simoncoenen.com",
+                "id": 1,
+                "original_url": "http:\/\/www.simoncoenen.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "where he uploaded everything that he did during uni",
+        "ts": "1542660626.006800",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/483769218389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is the first thing that employers will visit to figure out what you have done, what you have worked on etc",
+        "ts": "1542660649.006900",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/484620201751_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "+I guess the LinkedIn which will quickly show them your background",
+        "ts": "1542660661.007000",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/484970342598_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know that the Abertay uni is really well known in the UK for its games studies",
+        "ts": "1542660729.007100",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/483400592468_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also know many people from Teeside university that went to uni there and were really good <https:\/\/www.tees.ac.uk\/undergraduate_courses\/Computer_Games\/BA_(Hons)_Computer_Games_Design.cfm>",
+        "ts": "1542660780.007200",
+        "username": "Marios Bikos (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-19\/483571175250_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Computer Games Design, BA (Hons) | Undergraduate study | Teesside University",
+                "title_link": "https:\/\/www.tees.ac.uk\/undergraduate_courses\/Computer_Games\/BA_(Hons)_Computer_Games_Design.cfm",
+                "text": "Ever played a terrible game and thought you could design something better? Or been so gripped by one that you wish you had come up with the idea? Then think about a course in computer games design.",
+                "fallback": "Computer Games Design, BA (Hons) | Undergraduate study | Teesside University",
+                "from_url": "https:\/\/www.tees.ac.uk\/undergraduate_courses\/Computer_Games\/BA_(Hons)_Computer_Games_Design.cfm",
+                "service_icon": "https:\/\/www.tees.ac.uk\/apple-touch-icon-114x114.png",
+                "service_name": "tees.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.tees.ac.uk\/undergraduate_courses\/Computer_Games\/BA_(Hons)_Computer_Games_Design.cfm"
+            }
+        ]
+    }
+]

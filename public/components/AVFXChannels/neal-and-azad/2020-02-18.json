@@ -1,0 +1,363 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you may not need to attach a cover letter if you're applying by email",
+        "ts": "1582018935.005000",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/944113318850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the email itself should really be the cover letter and your CV will detail your experiences",
+        "ts": "1582019049.005100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/956903397088_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh okay fair enough",
+        "ts": "1582022516.005200",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/959193479558_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "feel free to send me a draft before you send",
+        "ts": "1582022779.005300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/956535577780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "btw i use slack as a chat tool in my new place, so i'l be able to see messages much quicker now",
+        "ts": "1582022822.005400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/958853359415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh awesome! Good news for me haha",
+        "ts": "1582022971.005500",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/956994113648_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I'll send my cover letter over, would I take out the paragraph and replace it with the CL or keep it in and add the cover letter in somewhere ?",
+        "ts": "1582023048.005600",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/957016441637_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "just add what you want to add from the cover letter into your email",
+        "ts": "1582023104.005700",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/956997235136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh okay",
+        "ts": "1582023114.005800",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/956543438948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and when you send over, i'll tell you what you should keep or loose",
+        "ts": "1582023120.005900",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/946869145777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FU763M4KY",
+                "created": 1582023137,
+                "timestamp": 1582023137,
+                "name": "CL",
+                "title": "CL",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 66102,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU763M4KY\/cl?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU763M4KY\/download\/cl?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FU763M4KY\/cl",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FU763M4KY-f2ec1c6f0a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582023137.006000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think you can include your opening paragraph but everything else you can just say in your interview",
+        "ts": "1582023441.006300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/945536445603_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and the experience and events you've been to can be included in your Cv",
+        "ts": "1582023492.006400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/957005567744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahhhh okay perfect that sounds more efficient",
+        "ts": "1582024965.006500",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/944249601042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay so in the morning I was in a bit of a rush, I tapped send instead of schedule but it's not too bad as it's basically my previous version, with your paragraph and a few adjustments so it's still looking good, but in that version I have attached my cover letter instead of adding it to the body, I hope that should be okay? This is what it's looking like:",
+        "ts": "1582027562.006600",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/957108800597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTUU8ANRF",
+                "created": 1582027582,
+                "timestamp": 1582027582,
+                "name": "Screenshot_20200218-120617.jpg",
+                "title": "Screenshot 20200218-120617",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 139153,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUU8ANRF\/screenshot_20200218-120617.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUU8ANRF\/download\/screenshot_20200218-120617.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 203,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1422,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUU8ANRF-ae51b46957\/screenshot_20200218-120617_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 1920,
+                "thumb_tiny": "AwAwABvRyvcilBXHUU0b8tkjGeMelOAPc0AGPpRgUtFAEZOCeT+VG73NBB3Gk2n1H50AO3D3p46CotvuPzqUDAoAZg5OMflS4PqPypdozRjHSgAwfX9KWiigD\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTUU8ANRF\/screenshot_20200218-120617.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTUU8ANRF-976840ce1e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582027585.006700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was just unexpectedly called into work early today as they needed more assistance so I had a bit of pressure but I'm sure that should be okay still, I think the main important part is mentioning you which is covered",
+        "ts": "1582027712.007000",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/959301039958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Everything is attached as well",
+        "ts": "1582027879.007100",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/945626480147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry about this I hope this hasn't butchered my chances :sob:",
+        "ts": "1582027958.007200",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/957116554789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think it looks fine. Good luck and let me know what they say",
+        "ts": "1582028031.007300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/956643497924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fingers crossed, I really wanna get in to learn, grow and develop",
+        "ts": "1582028095.007400",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/957119157221_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "dont know if yuo've already applied but this is kicking off again too",
+        "ts": "1582029719.007500",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/959341116694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.framestore.com\/work\/launchpad-internship>",
+        "ts": "1582029720.007600",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/947003074833_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Framestore",
+                "title": "Launchpad Internship",
+                "title_link": "https:\/\/www.framestore.com\/work\/launchpad-internship",
+                "text": "Framestore offers students the opportunity to work alongside our talented teams across all of our sites in London, Montréal and our US offices as part of our paid summer Internship scheme. However, you will need the right to work for the location you are interested in. During their time with us, our Interns are exposed to a wide range of departments across the company. To be considered for the chance to take part in our Internship we would prefer it if you had an interest in, or are studying any of, the following subjects: visual effects, animation, games, real-time computing, computer science, film or TV production, design, photography, illustration or fine art.",
+                "fallback": "Framestore: Launchpad Internship",
+                "image_url": "https:\/\/www.framestore.com\/sites\/default\/files\/styles\/slideshow_images_medium_1400_788\/public\/case-study\/images\/img_9696-1_copy_2.jpg?itok=Co6Hsndx",
+                "image_width": 444,
+                "image_height": 250,
+                "ts": 1504543500,
+                "from_url": "https:\/\/www.framestore.com\/work\/launchpad-internship",
+                "image_bytes": 701397,
+                "service_icon": "https:\/\/www.framestore.com\/sites\/all\/themes\/framestore\/img\/touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.framestore.com\/work\/launchpad-internship"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582029721.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Last time I got declined, it's highly competitive haha but I'll try again later on today thank you for the heads up!",
+        "ts": "1582032076.007800",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-18\/956728929588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

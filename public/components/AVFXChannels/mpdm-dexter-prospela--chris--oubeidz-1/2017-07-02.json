@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "text": "Good afternoon! How’s your weekend going? ",
+        "user": "U5W6M67LZ",
+        "ts": "1498993279.428792",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It's going great. How about yours? How is it like to work in consulting?",
+        "user": "U5ZRZ6AU8",
+        "ts": "1498994848.526339",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g9af7e8bb2a8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c9af7e8bb2a88629cb539efe966226b2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0013-72.png",
+            "first_name": "Oubeid",
+            "real_name": "Oubeid Zitan",
+            "display_name": "oubeidz",
+            "team": "T4UUTPV18",
+            "name": "oubeidz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It’s going well thanks! Enjoying the sunshine. \n\nIt’s been really interesting thus far - Get to work with major companies in the UK and internationally which is great. I started out doing accountancy training in audit and have a CA. \n\nAre you interested in consulting? ",
+        "user": "U5W6M67LZ",
+        "ts": "1499001111.941544",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0066291283d0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200710056371_0066291283d0fb1e42af_72.png",
+            "first_name": "Chris",
+            "real_name": "Chris",
+            "display_name": "chris",
+            "team": "T4UUTPV18",
+            "name": "chris",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thats great. I am enjoying the sunshine as well (Its over 30 degrees now in Morocco)\nThat sounds really interesting. Audit is the field in consulting that appeals to me the most, as well as management accounting. I am interested in finance basically, mostly Investment banking, but also consulting other areas as I have never had an insight with a big firm in any of these fields, so I cannot tell now what I like the most. By the way, if you dont mind me asking, at what firm do you work at?",
+        "user": "U5ZRZ6AU8",
+        "ts": "1499021749.560007",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g9af7e8bb2a8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c9af7e8bb2a88629cb539efe966226b2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0013-72.png",
+            "first_name": "Oubeid",
+            "real_name": "Oubeid Zitan",
+            "display_name": "oubeidz",
+            "team": "T4UUTPV18",
+            "name": "oubeidz",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

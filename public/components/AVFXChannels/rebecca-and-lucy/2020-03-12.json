@@ -1,0 +1,104 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That really helpful thank you and yes that texture is worn brass I realised though that the texture hides all the detail so I’m looking for a better one I’ll act on your feedback and give you an update later if that’s ok I’ll send through some more assets in the meantime :)",
+        "ts": "1584000647.004600",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995505001717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure! What are you using to lookdev with? Substance or are they maps? The metal feels diffuse  currently (when metals have none\/a tiny bitta grey value) - if you get me :) ",
+        "ts": "1584003858.004700",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995574701408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And sounds great!",
+        "ts": "1584003874.004800",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/984107910275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah and I’m using a mixture of maya and z brush to texture on the chair just maps ",
+        "ts": "1584003952.004900",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/984110281811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUXL6P4AE",
+                "created": 1584028643,
+                "timestamp": 1584028643,
+                "name": "car textured.ma",
+                "title": "car textured",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2886455,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUXL6P4AE\/car_textured.ma?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUXL6P4AE\/download\/car_textured.ma?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUXL6P4AE\/car_textured.ma",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUXL6P4AE-c879f41af3",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584028644.005000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here’s my car there’s still abit of tweeking I need to do but this is it’s so far :)",
+        "ts": "1584028706.005300",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996477443200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool do you mind if I see the set up for the gold material in the hyper shade?",
+        "ts": "1584034738.005400",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998621287863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

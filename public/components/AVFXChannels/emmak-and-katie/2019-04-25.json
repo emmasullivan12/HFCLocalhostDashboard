@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! I haven't forgotten about you. It has been quite crazy at work. I saw this morning that A Productions are looking for toon boom animators - made me think of you!",
+        "ts": "1556180747.001500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-25\/618133008016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, you had big thumbs up over here. Loads of great work. The bits that we found most interesting were the sketch animations which were quite loose. Our CD thought trim down on the really worked up animation, live action only show once, lip sync baby only x 1 or for short stabs only,  trim length of babloon (great gag but make punchier). Is that helpful! I know it is SOOOOO hard having direction (which is all subjective opinion) from lots of people.",
+        "ts": "1556202420.001600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-25\/620277117111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well done though! Very talented and great work,",
+        "ts": "1556202434.001700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-25\/618402191077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, I’ve changed my showreel again since the last time I sent it you because I have to submit it along with my work, but I’m really grateful for all the advice and will apply it to my showreel for when I send it to blue zoo for the internship, I’ll send you my new one if you want, it’s got my new work it it ",
+        "ts": "1556204011.001800",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-25\/618502441472_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anything I can do that’s helpful - please send!! ",
+        "ts": "1556224313.001900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-25\/621057964726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/331220877>",
+        "ts": "1556229893.002000",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-25\/621144624742_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Show Reel 2019",
+                "title_link": "https:\/\/vimeo.com\/331220877",
+                "author_name": "Katie Birbeck",
+                "author_link": "https:\/\/vimeo.com\/user74620169",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/776525985_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Music: ",
+                "fallback": "Vimeo Video: Show Reel 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/331220877?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Show Reel 2019\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/331220877",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/331220877"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is the link to my new show reel, hope you enjoy :slightly_smiling_face:",
+        "ts": "1556229921.002200",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-25\/619000419792_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

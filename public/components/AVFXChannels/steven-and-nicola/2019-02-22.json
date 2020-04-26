@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Holla! Thanks for everything. For the moment the horror film is the only project so now I'm back in the quiet for a while, waiting for CG to deliver some renders for the project. Most of the fx are environments and set extentions plus some simulation of an \"evil ice\" that crawls on objects and people. A mixture of simulations, CG environments and 2d assets to comp. I would have loved to have had a creature in the film though. It's being fun until now but I really hate to wait arround for things knowing that all the assests will come at the same time and then it will be a lot of work in little time but I guess this is how it goes for every project. I didn't even know that there was a new paddington tv series how is that is it closer to the film or to the original style-wise? I was also thinking when new people come to BZ do they have some training an if yes about what? I'll wait for news about the internship :smiley: Have a nice one!",
+        "ts": "1550842715.000200",
+        "username": "Nicola (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-22\/557431300080_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "btw is this you <https:\/\/www.linkedin.com\/in\/steven-white-72257651\/> ??? so that I can give a face to your name??",
+        "ts": "1550842853.000300",
+        "username": "Nicola (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-22\/559250172887_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

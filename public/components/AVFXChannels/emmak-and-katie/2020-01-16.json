@@ -1,0 +1,156 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Emma sorry I've gone off on my own for a bit, I've been every busy and had quite a difficult time last semester. A lot of my lectures had been trying to get me to change my idea to a simple one but I know I can do it so I'm just doing my thing really heres a link to my finished animatic <https:\/\/vimeo.com\/379627419|https:\/\/vimeo.com\/379627419>  I've got to animate it this semester",
+        "ts": "1579177684.000200",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909130817056_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Animatic for FMP",
+                "title_link": "https:\/\/vimeo.com\/379627419",
+                "author_name": "Katie Birbeck",
+                "author_link": "https:\/\/vimeo.com\/user74620169",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/839740664_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Music: ",
+                "fallback": "Vimeo Video: Animatic for FMP",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/379627419?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Animatic for FMP\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/379627419",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/379627419"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know what you think :blush:",
+        "ts": "1579177750.000400",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/896347057378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there a duration that you need to do?? Myself and one of our creative directors have just had a look and think that you need a bit more of a set up. We certainly don't need to simplify the idea but make the story a little more clear... maybe a slate of type that says the people prayed to the dragons... or that the dead body needs a little more context? Its only really when the dragons set to work does it become more clear. Stylistically the dragons are beautiful!",
+        "ts": "1579186237.000500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/908878598068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It can be as long as I want but it's suggested we don't go over 4 minutes",
+        "ts": "1579186481.000600",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/899139124433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keep it simple then, add a slate up front thats beautifully designed to help set it up... ? Are you having any VO? You should be really proud. It is going to look stunning.",
+        "ts": "1579186776.000700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/911558652262_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm thinking a slate would be cool, I could design it like an old scroll?",
+        "ts": "1579186926.000800",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909368073669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And thank you a lot of effort as gone into it haha, I've just gotta stay on top it and finish it so I can prove myself",
+        "ts": "1579186986.000900",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909360381856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice! Looking back at the images you have shared with me, the dragons looked amazing on the canvas texture which may tie in with the scroll? Or not! I am a producer not a creative so tell me to do one!! HA!",
+        "ts": "1579187065.001000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/896578046306_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You don't ever need to prove yourself to anyone. If you know you can do it - that is enough. Its a funny old business where it all comes down to our creative preferences. You need to get used to making your ideas a little bit worse because of the client feedback that you get... 20 years later it happens on every job! We call it the client mangle here.",
+        "ts": "1579187165.001100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909366414112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you ever want creative feedback from our guys, let me know and they certainly will x",
+        "ts": "1579187203.001200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/908911224244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, youre a real help :blush: it's good to get the advice from an outside perspective",
+        "ts": "1579187718.001300",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/908927623892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is what I am here for! Literally get in touch if there is ANYTHING we can help with. There is not just me, I have a whole studio to talk to here and contacts in music \/ audio and all industry x",
+        "ts": "1579188197.001400",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/896614851154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

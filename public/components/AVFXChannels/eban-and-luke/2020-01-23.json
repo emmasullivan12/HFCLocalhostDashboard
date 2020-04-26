@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mr. Byrne,\n\nAfter looking over a couple of Thesis, I have to agree that there is a lot of padding. On a different note, I'm in the process of beginning a new Houdini project, learning the process of FLIP fluid and white water sim\/rendering. I have very little experience in this area, besides a few tutorials here and there. As I work through this project, I was hoping if you would be willing to look over the project and provide guidance on where I could improve. Thank you for any help, and I look forward to continuing our discussions.",
+        "ts": "1579820248.000800",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919903122069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Oliver, I tried using Nuke the other day quite weird software to use, do you know any books i could look at for the software and about compositing?",
+        "ts": "1586008958.020200",
+        "username": "Jafar Mohammad (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1043308500385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

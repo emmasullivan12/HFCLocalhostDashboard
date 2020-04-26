@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy New Year, Nicola! I hope that you had a great time over the holidays, and in Italy! Did you manage to solve the issue with the stopmotion pipeline? I'll ask around this week - hopefully someone will have some knowledge to share :] Did you make much progress on your showreel over the holidays - I'd be more than happy to take a look! It's been a few days of trying to remember how a computer works after ignoring them for two weeks, haha!",
+        "ts": "1547027943.000100",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519739723314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

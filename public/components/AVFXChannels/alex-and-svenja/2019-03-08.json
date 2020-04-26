@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor, \n\n     Hope you're doing well, especially around the start of spring which initiates hay fever, sore eyes and other pollen allergies. \n     Change is everywhere around us and as in human nature we mostly tend to keep change at a minimum, however some drastic changes cannot be deflected. Here, a common response by behaviour to change is shown by the 'change management curve', despite the curve being the common response there are other routes of response as well, where one of them is growth mindset.\n     How do you respond to a change in your workplace or personal life? Have there been any situations where a decision was extremely difficult to make, and if so, how did you decide? \n",
+        "ts": "1552080985.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-08\/571811991701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, sorry for the radio silence! I had a hectic week and I also upgraded my phone and forgot to install the app again :smile:",
+        "ts": "1572797012.010300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-03\/811755849969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I managed to deliver ok with a few minor things that didn't get finished in time but aw well they seemed happy enough. I also submitted my invoice which felt great! Wish I had that money coming in every month :joy:",
+        "ts": "1572797090.010400",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-03\/821879130134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

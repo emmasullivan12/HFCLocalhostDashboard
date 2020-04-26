@@ -1,0 +1,395 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011ZCRAZHR",
+                "created": 1587051840,
+                "timestamp": 1587051840,
+                "name": "On set HDR capture.pdf",
+                "title": "On set HDR capture",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 28594,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011ZCRAZHR\/on_set_hdr_capture.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011ZCRAZHR\/download\/on_set_hdr_capture.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011ZCRAZHR-ed1810e017\/on_set_hdr_capture_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 935,
+                "thumb_pdf_h": 1210,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011ZCRAZHR\/on_set_hdr_capture.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011ZCRAZHR-3b2d3c017d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1587051840.011500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Illuminated Pixels: The Why, What, and How of Digital Lighting <https:\/\/www.amazon.com\/dp\/B00B7RE6MS\/ref=cm_sw_r_other_apa_i_ImiMEb3ZKWX73|https:\/\/www.amazon.com\/dp\/B00B7RE6MS\/ref=cm_sw_r_other_apa_i_ImiMEb3ZKWX73>",
+        "ts": "1587053368.011800",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1060571742102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a great book from one of the lectures at SCAD. Ex Pixar lots of theory plus a bit on camera + HDR use",
+        "ts": "1587053442.011900",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067519111379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh thanks for this! I was actually going to try and google some of this info later.\n\nSo for the chrome\/gray ball I am just placing that in each camera set up, letting it role a few seconds, and then removing it? Just so I have a reference to compare to when I start digitally lighting in post?",
+        "ts": "1587053487.012000",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1065931341765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And for the HDRs am I pano-ing the whole room to get a full 360? Is that what those degrees will turn out to be when I stitch them together?",
+        "ts": "1587053565.012100",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067315242594_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I would set the camera in the center of the scene to shoot the HDR?",
+        "ts": "1587053602.012200",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1091158607568_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh found this and it",
+        "ts": "1587056314.012300",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073615036868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its pretty explanatory. <https:\/\/www.youtube.com\/watch?v=uK7UUvU33Bo>",
+        "ts": "1587056324.012400",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067447355890_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Chrome Ball + Grey Ball + 360 Cam for HDRI Lighting (C4D \/ Redshift)",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=uK7UUvU33Bo",
+                "author_name": "VFX Central",
+                "author_link": "https:\/\/www.youtube.com\/user\/VFXCentral",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/uK7UUvU33Bo\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Chrome Ball + Grey Ball + 360 Cam for HDRI Lighting (C4D \/ Redshift)",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/uK7UUvU33Bo?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=uK7UUvU33Bo",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=uK7UUvU33Bo"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587056325.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just looked up how much those gray\/chrome ball sets are. Gosh...",
+        "ts": "1587057754.012600",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052782836935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha",
+        "ts": "1587057756.012700",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1080141961009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "DIY it is.",
+        "ts": "1587057760.012800",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1080142160673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yep, a complete 360 - some people do 4 lots of 90 degrees, some 3 lots of 120degree\n\nPTGui is a great program for stitching the HDR",
+        "ts": "1587057998.012900",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1060793359206_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for the balls, yes, roll the cam, if the lighting changes through the shot ie fridge door opening + shutting, roll it with door shut \/ door open \/ and as it happens. you're after a still that is crisp and clean, so you don't need to roll for long.",
+        "ts": "1587058090.013000",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052798071383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome!",
+        "ts": "1587058110.013100",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052798933383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you happen to know where I could find out what value gray I would need to paint a sphere. 50% I am guessing?",
+        "ts": "1587058141.013200",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067743538851_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you end up with the plate with physical balls in it -- you make CG balls that match -- ie 100% reflective for the chrome. when you render those with the HDR, compare the render to that of the plate w\/ the balls and you can change your HDR setting till the renders match.",
+        "ts": "1587058207.013300",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1060803703222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Got it!",
+        "ts": "1587058227.013400",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1066158667445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!",
+        "ts": "1587058233.013500",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052805848871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Man that's super helpful. I knew there had to be some trick to the HDR deal but had never seen anyone using the chrome and gray balls.",
+        "ts": "1587058268.013600",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073709012596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its actually 18% if i remember correctly.",
+        "ts": "1587058337.013700",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073712303540_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh ok. Cool",
+        "ts": "1587058351.013800",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073712946116_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.bhphotovideo.com\/c\/product\/101853-REG\/Delta_22030_Gray_Card_8x10_1.html>",
+        "ts": "1587058477.013900",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052817364535_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Delta 1 Gray Card 8x10\" (1)",
+                "title_link": "https:\/\/www.bhphotovideo.com\/c\/product\/101853-REG\/Delta_22030_Gray_Card_8x10_1.html",
+                "text": "Buy Delta 1 Gray Card 8x10&amp;quot; (1) Review Delta 1 null",
+                "fallback": "Delta 1 Gray Card 8x10\" (1)",
+                "image_url": "https:\/\/static.bhphoto.com\/images\/fb\/101853.jpg",
+                "image_width": 476,
+                "image_height": 250,
+                "from_url": "https:\/\/www.bhphotovideo.com\/c\/product\/101853-REG\/Delta_22030_Gray_Card_8x10_1.html",
+                "image_bytes": 25798,
+                "service_icon": "https:\/\/www.bhphotovideo.com\/favicon.ico",
+                "service_name": "bhphotovideo.com",
+                "id": 1,
+                "original_url": "https:\/\/www.bhphotovideo.com\/c\/product\/101853-REG\/Delta_22030_Gray_Card_8x10_1.html"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587058477.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this is a cheaper version of going through buying paint and trying to get it perfectly on a ball. when you use card though you want to move it to different angles while rolling -- hold forwards \/ tilt back \/ leftish \/ rightish etc",
+        "ts": "1587058563.014100",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1066174518037_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "whatever you use to hold the chrome ball you want it as unintrusive as possible. i got a hardware store to drill some holes in mine and built a handle from bits and pieces at the hardware store.",
+        "ts": "1587058635.014200",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073725893140_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you dont want to hold it as you'll end up taking up most of the reflection in the ball.",
+        "ts": "1587058664.014300",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067558942626_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "heres a little info on linear lighting too:\n<https:\/\/blog.frame.io\/2020\/02\/17\/vfx-workflow-best-practices\/>",
+        "ts": "1587059157.014400",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1060846965414_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Frame.io Insider",
+                "title": "The Essential Guide to Building a Successful VFX Workflow",
+                "title_link": "https:\/\/blog.frame.io\/2020\/02\/17\/vfx-workflow-best-practices\/",
+                "text": "Everything you need to know about building a successful VFX workflow, including the technical choices, creative opportunities, and business tips and tricks.",
+                "fallback": "Frame.io Insider: The Essential Guide to Building a Successful VFX Workflow",
+                "image_url": "https:\/\/blog.frame.io\/wp-content\/uploads\/2020\/02\/vfx_best_practies_header-768x384.jpg",
+                "image_width": 500,
+                "image_height": 250,
+                "ts": 1581958682,
+                "from_url": "https:\/\/blog.frame.io\/2020\/02\/17\/vfx-workflow-best-practices\/",
+                "image_bytes": 59481,
+                "service_icon": "https:\/\/blog.frame.io\/wp-content\/themes\/frameio-insider\/images\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/blog.frame.io\/2020\/02\/17\/vfx-workflow-best-practices\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587059158.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! Thanks!",
+        "ts": "1587059324.014600",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1066207799573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

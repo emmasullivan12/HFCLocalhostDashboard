@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So Dexter has asked us to plan 2 or 3 objectives to complete by the holidays.:see_no_evil: ",
+        "ts": "1538413118.000100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446140782433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

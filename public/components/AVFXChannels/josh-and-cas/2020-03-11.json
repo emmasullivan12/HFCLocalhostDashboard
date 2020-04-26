@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Cas, apologies for the late reply. I've had a manic week at work :stuck_out_tongue:\nGreat to connect with you. Thanks for letting me know a little about yourself. I can certainly help with you 2d skills and photoshop knowledge.\n\nHow would you like to start? Do you have a piece you're working on at the moment?\n\nLooking forward to getting started.",
+        "ts": "1583935221.002300",
+        "username": "Josh O'Brien (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995494423111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

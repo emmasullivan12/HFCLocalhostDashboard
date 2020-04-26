@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @merlintravas hows it going? Is there anything you think I might be able to help you with or do you have any specific questions?\n\nHappy to share anything so fire your questions away! :slightly_smiling_face:",
+        "ts": "1540219783.000100",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/460917040321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also did you manage to recover your lost CV?! :sweat_smile::flushed:",
+        "ts": "1540219802.000100",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/461522431986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, I did:blush: nearly died from heart attack:joy::joy: also applied for work experience at the pharmaceutical near to my home n voluntarjng ",
+        "ts": "1540221378.000100",
+        "username": "Merlin Travas (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-22\/460945454913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

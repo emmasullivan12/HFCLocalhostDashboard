@@ -1,0 +1,64 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright, nice!",
+        "ts": "1550750147.000700",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556849095683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've written a really detailed guide which I think might help you\n<https:\/\/hub.flippednormals.com\/becoming-a-character-artist-ultimate-guide\/>",
+        "ts": "1550750159.000800",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556398360721_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "FlippedNormals Hub",
+                "title": "Becoming a Character Artist – Ultimate Guide | FlippedNormals Hub",
+                "title_link": "https:\/\/hub.flippednormals.com\/becoming-a-character-artist-ultimate-guide\/",
+                "text": "Learn to become a character artist for the film and games industry with this character guide from FlippedNormals. This is the ultimate guide for anyone who wants to work as 3D character and Creature artist.",
+                "fallback": "FlippedNormals Hub: Becoming a Character Artist – Ultimate Guide | FlippedNormals Hub",
+                "image_url": "https:\/\/hub.flippednormals.com\/wp-content\/uploads\/2018\/08\/characterVincent.jpg",
+                "image_width": 444,
+                "image_height": 250,
+                "ts": 1535126580,
+                "from_url": "https:\/\/hub.flippednormals.com\/becoming-a-character-artist-ultimate-guide\/",
+                "image_bytes": 203618,
+                "service_icon": "https:\/\/hub.flippednormals.com\/wp-content\/uploads\/2018\/06\/fn_fav64.png",
+                "id": 1,
+                "original_url": "https:\/\/hub.flippednormals.com\/becoming-a-character-artist-ultimate-guide\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Please read through this",
+        "ts": "1550750166.001000",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557295700565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say that going back to anatomy and figure sculpting will help you a lot",
+        "ts": "1550750292.001100",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556928292148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

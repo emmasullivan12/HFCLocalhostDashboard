@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Simon! It’s absolutely fine, I know how it gets at this time of the year. \n\nThat would be a great place to start: <https:\/\/dominicstrachan.wixsite.com\/portfolio\/showreel>  - this is the link to my reel, it currently contains a range of work that I have completed over the years",
+        "ts": "1575145602.000400",
+        "username": "Dominic Williamson-Strachan (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-30\/857041862806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

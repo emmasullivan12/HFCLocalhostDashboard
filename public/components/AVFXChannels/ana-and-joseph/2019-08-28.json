@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good stuff! What's position have they hired you for?",
+        "ts": "1567010072.000100",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741306881600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Roto Animation :) ",
+        "ts": "1567016795.000200",
+        "username": "Joseph Sciberras Margrie (Prospela Students (beta)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/730016472674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

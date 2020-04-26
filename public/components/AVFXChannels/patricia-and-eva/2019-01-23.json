@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Eva, sorry for the delay in replying, I guess you have figured it out already! The softness in thge patch could be coming from a number of processes. Is the frame you are projecting very different to the frame on the viewer? (ie. if the camera has moved a fair bit from where the projection frame is, and the perspective of the patch is quite different the stretching in the projection will make the patch soft and smeary). If this is the case the approach is normally a few different projections from a range of camera angles (and painted clean frames to project) accross the shot and dissolves between them; that way, when your patch starts getitng soft as the perspective drifts you are already dissolving into the next sharp patch.",
+        "ts": "1548247294.000600",
+        "username": "Patricia Llaguno (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-23\/532315704246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If this is not the problem, it could be that the patch you are using has not got a high enough resolution, or that your motion blur settings are too high (check your ScanlineRender; samples set to 10, shutter to 0.5 and offset to -0.25 -quarter offset- should give you accurate results for most cameras).",
+        "ts": "1548247434.000700",
+        "username": "Patricia Llaguno (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-23\/530794649043_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

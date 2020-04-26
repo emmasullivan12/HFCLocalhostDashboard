@@ -1,0 +1,129 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Toby, I apologize for the late getting back to you, we’ve had quite a lot of deadlines over the past two weeks",
+        "ts": "1573031205.001300",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/825298555047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/drive.google.com\/drive\/folders\/1aLMUSceRsfwxwGo797g2ZPwTmZV-3KHs> I have done the bouncing ball exercise. I think I’ll have another try here over the weekend as the left (heavier one) doesn’t seem quite right",
+        "ts": "1573031315.001400",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/815526862577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have been planning the animation I’m gonna make for the Bluezoo brief, do you think this could work?",
+        "ts": "1573031506.001500",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/825304158455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPZFLN2LR",
+                "created": 1573031522,
+                "timestamp": 1573031522,
+                "name": "Image from iOS.png",
+                "title": "Image from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1012435,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPZFLN2LR\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPZFLN2LR\/download\/image_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 270,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 360,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 540,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 600,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 720,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FPZFLN2LR-5480ccae09\/image_from_ios_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 768,
+                "image_exif_rotation": 1,
+                "original_w": 2732,
+                "original_h": 2048,
+                "thumb_tiny": "AwAjADC7LcKqnawLDjFO85NgZiADTJZkRWwVLDtUm9NoLEAGgBkU4kkYD7vY0ktyqr8hBbPSiOVZJWUYwOh9aJZ0RcrhjnpQA\/zVVVLsATTYZvMZugAPHvTyyADcQM9M0yCUSM2OgPFABM8aIxAUt6e9DyIkStsyG9qbO3lsDsDA\/wCz\/WpflKZK4GM4I6UAVFkzJHtbuM8e9TwbSnzFS2T6ZohcSO2EAA6HFEpKOAI1OenFABNhXToF5Jp0A3IGbaT2wKeQCMsBxTIJBIGIXAzxxQBIQDjIBxS0UUAAAHQYpCASCQDjpS0UAFIAFGAAB6ClooA\/\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPZFLN2LR\/image_from_ios.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPZFLN2LR-29ed80eb40",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1573031528.001600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is the story:",
+        "ts": "1573031530.001900",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/823455706549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Detective Mr. Robot is sitting down about to enjoy a burger but discovers a hidden pickle underneath the top bun. Picking it out and throwing it over the shoulder, he rubs his hands in pure excitement but as he is about to reach for it a banana peel hits him on the side of the face. Looking around not seeing where it came from, he is hit with another piece of rubbish. Mr. Robot mood suddenly changes as he stands up furiously dodging all the pieces of rubbish with a mix between karate and kickboxing. Succesfully dodging all rubbish, Mr. Robot proudly takes up a Bruce Lee stance.",
+        "ts": "1573031548.002000",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/823456039461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wanted him to not move so much in the beginning, remaining in his seat so as when he moves up the impact of the ‘fight’ would be even stronger with the bigger movements taking up more space",
+        "ts": "1573031692.002100",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/815533879809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

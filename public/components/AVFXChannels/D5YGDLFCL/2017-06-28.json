@@ -1,0 +1,462 @@
+[
+    {
+        "type": "message",
+        "text": "Em",
+        "user": "U5YFZREUC",
+        "ts": "1498654925.241740",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Just finding time to go through this now",
+        "user": "U5YFZREUC",
+        "ts": "1498654934.244810",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "have you got 2 mins to give me a quick download on what I should be doing\/reading",
+        "user": "U5YFZREUC",
+        "ts": "1498654945.248433",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i've said hello... i'm sure it's fairly straightforward from there",
+        "user": "U5YFZREUC",
+        "ts": "1498655786.515037",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "will let you know if i need anything",
+        "user": "U5YFZREUC",
+        "ts": "1498655792.516916",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Have a look in the <#C4U81UV4G|hello-mentors> channel. Theres your E-Mentor onboarding pack which should tell you everything you need to know :)",
+        "user": "U4V22C6A1",
+        "ts": "1498656664.815334",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "And also a little intro video from yours truly!",
+        "user": "U4V22C6A1",
+        "ts": "1498656685.823095",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Let me know if you have any questions after that! I think your mentee is in australia at the moment so unsure how he'd like to play it if he is on holiday. He will reply and let you know",
+        "user": "U4V22C6A1",
+        "ts": "1498656749.846279",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "you've done a little video too?",
+        "user": "U5YFZREUC",
+        "ts": "1498656867.888006",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "i've just watched Dexy",
+        "user": "U5YFZREUC",
+        "ts": "1498656870.889214",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I did a little chuckle",
+        "user": "U5YFZREUC",
+        "ts": "1498656877.891912",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "can we do lunch soon please?",
+        "user": "U5YFZREUC",
+        "ts": "1498656884.894337",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hehe yes lool at the pinned docs in the mentor channel (or scroll to the very top!)",
+        "user": "U4V22C6A1",
+        "ts": "1498658025.312540",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Dont laugh at me!!",
+        "user": "U4V22C6A1",
+        "ts": "1498658035.316132",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Haha lunch yes!",
+        "user": "U4V22C6A1",
+        "ts": "1498658041.318180",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I've watched both of your little videos",
+        "user": "U5YFZREUC",
+        "ts": "1498658522.507127",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "very much enjoyed the west wing-styled walked and talk",
+        "user": "U5YFZREUC",
+        "ts": "1498658531.510326",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": ":slightly_smiling_face:",
+        "user": "U5YFZREUC",
+        "ts": "1498658534.511583",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hahaha",
+        "user": "U4V22C6A1",
+        "ts": "1498661676.829758",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Your mentee is expecting the same from you",
+        "user": "U4V22C6A1",
+        "ts": "1498661693.837105",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": ":stuck_out_tongue_winking_eye: :stuck_out_tongue_winking_eye: :stuck_out_tongue_winking_eye: ",
+        "user": "U4V22C6A1",
+        "ts": "1498661697.839013",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Jane from TCE reckons she hasn't heard re. her mentee yet",
+        "user": "U5YFZREUC",
+        "ts": "1498662693.278729",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "but give her a prod if she's supposed to have done something",
+        "user": "U5YFZREUC",
+        "ts": "1498662701.282361",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

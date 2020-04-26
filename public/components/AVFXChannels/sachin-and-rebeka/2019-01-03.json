@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey, sorry for the delay. I traveled outside UK, and I got flu. Terrible combination",
+        "ts": "1546539094.000100",
+        "username": "Rebeka Strapakova (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/515847121155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, I am in my 3rd year and I am currently working on my final projects",
+        "ts": "1546539151.000200",
+        "username": "Rebeka Strapakova (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/515847964739_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I focus on rigging so I aim to get several rigs done for final project",
+        "ts": "1546539168.000300",
+        "username": "Rebeka Strapakova (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/515952851730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

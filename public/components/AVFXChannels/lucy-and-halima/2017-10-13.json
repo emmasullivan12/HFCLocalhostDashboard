@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could you explain what you mean by a graduate programme? Sorry, I'm very new to this and haven't got the grasp of everything in Uni ",
+        "ts": "1507911692.000130",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/256105513716_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course!\nThere is a teaching programme called 'Schools Direct'\nSo for example, I did my degree many years ago (not education related) so could do this programme whilst I worked at my school",
+        "ts": "1507911867.000624",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255977544147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There is a few options.\n I can look into them properly for you if you wish?",
+        "ts": "1507911888.000412",
+        "username": "lcollier (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255977700259_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I understand now ",
+        "ts": "1507912433.000055",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255983431491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, if you don't mind? You don't really have to bother if you're busy I'm not in a hurry :sweat_smile::slightly_smiling_face:",
+        "ts": "1507912476.000398",
+        "username": "halimahaq10 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/257145198935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

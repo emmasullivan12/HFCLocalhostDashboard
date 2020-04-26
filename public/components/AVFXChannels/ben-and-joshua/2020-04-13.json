@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya mate, thanks for the articles I'll give them a read over! Hope your in good health and that your is going well still with the new company!",
+        "ts": "1586809614.000500",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1066248055764_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

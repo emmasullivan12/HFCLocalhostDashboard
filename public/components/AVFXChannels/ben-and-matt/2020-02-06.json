@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya mate, hope your good!\n\nI've been using the techniques you've suggested, just on different work on a small scale to practice, I feel like I should have been at the stage I'm at now a year ago haha. \n\nI've come across hair and not on a green screen. The way I've approached it is using a difference matte by grabbing a plate and using that.\n\nI've fiddled with the difference matte as best I could and it's okay at best so I've roto'd the head &amp; neck (only 25 frames this time haha) to clean those parts up... \n\nNow using the open spline tool for the individual outlying hairs to clean them up a bit. \n\nJust wondering, how do you approach hair for roto? If there's no green screen",
+        "ts": "1581003461.000100",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/928667882547_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

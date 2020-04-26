@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "text": "Hiya",
+        "user": "U5XLJFDD1",
+        "ts": "1500627987.533985",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Really sorry for the late reply and the programme is finished right? Or do we still go through the plan",
+        "user": "U5XLJFDD1",
+        "ts": "1500628043.554023",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "But we can anyway :grinning: I should be free by 7pm",
+        "user": "U5XLJFDD1",
+        "ts": "1500628140.587615",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gb616a36a98e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/bb616a36a98ec6daf849391480fb7232.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Mohammad",
+            "real_name": "Mohammad Sheikh",
+            "display_name": "mo",
+            "team": "T4UUTPV18",
+            "name": "mo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It is finished but if you would like I am still happy to talk you through your career plan, 7pm works for me!",
+        "user": "U5WNHEH0T",
+        "ts": "1500630740.510767",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f57fd1437c2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-24\/202975306035_4f57fd1437c288f80dff_72.png",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael_h",
+            "team": "T4UUTPV18",
+            "name": "michael_h",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great to meet you too Mark! Sounds like you've helped a lot of great artists, I'm glad I got someone as experienced as you! I saw that you're the educational partner manager of epic games and I was wondering if you could talk a bit about that? I haven't been mentored before so I'm unsure on the process. Perhaps you can have a quick look at my portfolio and my most recent project if you don't mind? \n\n<https:\/\/www.artstation.com\/mwoods94|https:\/\/www.artstation.com\/mwoods94>\n\nAny advice would be fantastic :) \n\nI'm just doing written work for my assignments at the moment but once I've caught up within the next couple of days I should be starting the pre-production for my major project! \n\nDo you have insight into how to do pre production documents for environment artists? My tutor wants us to create one that we can use as a sort of physical portfolio piece for potential employers",
+        "ts": "1586105153.002000",
+        "username": "michael w 94 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1039963597907_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "michael woods",
+                "title_link": "https:\/\/www.artstation.com\/mwoods94",
+                "text": "University of Hertfordshire- Games Art Design MA Student",
+                "fallback": "ArtStation: michael woods",
+                "thumb_url": "https:\/\/cdna.artstation.com\/p\/users\/covers\/000\/689\/022\/default\/08e9fd14113622be7aba397de98ed25f.jpg?1524662742",
+                "from_url": "https:\/\/www.artstation.com\/mwoods94",
+                "thumb_width": 1920,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-d573ed8b518770300382fcfb54837d72.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/mwoods94"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586105154.000000"
+        }
+    }
+]

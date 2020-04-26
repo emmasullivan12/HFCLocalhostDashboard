@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian.  How are you? How is it all going both at Uni and in life away from home?",
+        "ts": "1572869829.000200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/819864850196_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thought you might like to see this breakdown reel of our work on Happy! If you remember when you came in here Dom was showing you his work on the arm.  A bit gory…but in a fun way… <https:\/\/vimeo.com\/359516994>",
+        "ts": "1572869919.000300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/819866140020_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Happy! S2 | VFX Breakdown Reel",
+                "title_link": "https:\/\/vimeo.com\/359516994",
+                "author_name": "Union Visual Effects",
+                "author_link": "https:\/\/vimeo.com\/unionvfx",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/813429325_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Union facilitated a lot of this season’s trademark violence.\nGore warning! Not for the faint of heart.\n\n© Universal Cable Productions \/ Netflix \/ Syfy",
+                "fallback": "Vimeo Video: Happy! S2 | VFX Breakdown Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/359516994?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Happy! S2 | VFX Breakdown Reel\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/359516994",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/359516994"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lucy I am well uni is going well and i am well adjusted to living away from home. I do miss London though.",
+        "ts": "1572870843.000500",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/807559032162_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yes I remember seeing him working on that episode thanks for sharing :)",
+        "ts": "1572870903.000600",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/820345575088_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That was really gory but very awesome work !!",
+        "ts": "1572871450.000700",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/808883268931_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Really glad it’s all going well.  What have you been learning so far?",
+        "ts": "1572874314.000800",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/819940564564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We have been modelling can in maya and doing some coding with python",
+        "ts": "1572879184.000900",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-04\/820529535909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

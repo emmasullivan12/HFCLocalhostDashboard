@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope so! I just got back from school , and I haven't had the chance to call yet . Do you think they are still open for calls?",
+        "ts": "1508172707.000125",
+        "username": "aalhar-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257164497157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No, maybe try tomorrow at lunch if you can",
+        "ts": "1508174152.000659",
+        "username": "sonal92 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256523182145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yh sure , I will hopefully!",
+        "ts": "1508191683.000101",
+        "username": "aalhar-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257260825636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

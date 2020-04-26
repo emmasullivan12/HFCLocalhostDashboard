@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hie there Adeshewa! I'm not used to the schools in the UK, so I asked to other mentors. They told me here in the UK there are 2 big university programs on animation, one at Bournemouth and other at Hertfordshire",
+        "ts": "1574703631.004600",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848479052533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know of some other universities in Europe, and I'll need to do a search for other courses that are not in universities, but if you know or have heard of any, please tell me and I can also look into those and ask around what people find of them!",
+        "ts": "1574703769.004700",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850679859398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

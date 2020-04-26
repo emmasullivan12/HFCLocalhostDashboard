@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hi I am retaking English language however I don't find the sessions really helpful. Is there anyway u can help me. \n \nI haven't started the work however I have applied for it but I am really far from the workplace. But do u know if employers can like let u chose ur best time to work like if I want to work only on weekends",
+        "ts": "1538495961.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447752256037_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will be sending u my CV so you can help me improve it ",
+        "ts": "1538496249.000100",
+        "username": "Khadijah Bah (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/448934747366_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

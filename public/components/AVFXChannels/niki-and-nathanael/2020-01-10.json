@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nikki,\nThanks for your response and I will look into the Amnidojo.\n\nRegards,\nNathanael",
+        "ts": "1578680399.000100",
+        "username": "Nathanael Christopher (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/891572751585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

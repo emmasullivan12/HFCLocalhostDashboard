@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh BTW is there anywhere I can see your work? ",
+        "ts": "1553027022.002000",
+        "username": "Marnie Pitts (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/583149846615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

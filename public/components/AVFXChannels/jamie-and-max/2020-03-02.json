@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It depends on the studio and sometimes on the specific task. At Milk we use Baselight for most of our work as its fast, reliable and provides 4K playback with no trouble. Though we also use Premiere Pro for short form stuff. When I was editing an animated series, everything was done in Premiere Pro. However I know other editors who work in Avid, Final Cut X and DaVinci Resolve. So there's not really any one program to learn. Which is quite nice but also annoying sometimes.",
+        "ts": "1583157464.000300",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967153097697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A friend of mine who works on a storyboard driven animated series actually edits in ToonBoom Harmony (storyboarding package) and a bit of Premiere Pro.",
+        "ts": "1583157548.000400",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977256980960_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you know if the new iMac Pro shaken up anything for editors? ",
+        "ts": "1583171049.000500",
+        "username": "Max Brown (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977762540501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

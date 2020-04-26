@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Dude",
+        "user": "U5XA82WJV",
+        "ts": "1498146954.398067",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

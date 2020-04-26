@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Marcelo!\n\nI have some questions :) \n1. how is animation as a career?\n2. how does one make a great animation portfolio?\n3. what kinds of jobs are there in an animation studio? \n4. where do you find your inspiration?  \n5. are there any animators I can study and learn techniques from?\n\nthank you so much!",
+        "ts": "1573496133.002800",
+        "username": "Adeshewa Kosoko (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/818490556355_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

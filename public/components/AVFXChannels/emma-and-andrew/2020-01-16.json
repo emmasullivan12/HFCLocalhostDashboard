@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anything you'd recommend? Software licenses I've had a look at are very expensive and the trials for most of the software don't last longer than 30 days so it's a limited time I'll have to use it.",
+        "ts": "1579191310.000500",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/911714708694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Plus I'm unsure as to whether my laptop or desktop at home is actually powerful enough to run the software smoothly",
+        "ts": "1579191410.000600",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909055280628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you like to have lunch some time? You could show me some work, and ask me any questions you may have. I’m currently close to regents park \/ oxford circus ",
+        "ts": "1578917218.000300",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903298446676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love that, I am actually working on a previs scene, was just finishing it up today to send it to you.\n\nI can come on Tuesday if thats fine with you, just tell me the time??",
+        "ts": "1578920313.000400",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/892343849491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FS914A351",
+                "created": 1578944154,
+                "timestamp": 1578944154,
+                "name": "Wetern_Tavern.mp4",
+                "title": "Wetern Tavern",
+                "mimetype": "text\/plain",
+                "filetype": "html",
+                "pretty_type": "HTML",
+                "user": "U6D2VCN07",
+                "editable": true,
+                "size": 105511,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS914A351\/wetern_tavern.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS914A351\/download\/wetern_tavern.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FS914A351\/wetern_tavern.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FS914A351-9a25a8c740",
+                "edit_link": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FS914A351\/wetern_tavern.mp4\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1578944154.000500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello again\n\nI worked on this scene for 10 days and everything you see is made by me, expect characters models. For some reason unreal decided not to pick up my textures, thats why everything is white and only some objects have textures. Also this is my best attempt at animation, I know animation is not my strong skill hence why the walk cycle is completely broken along with other issues as well.\n\nI would love to meet and have lunch with you tell me when and where??",
+        "ts": "1578944340.000800",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/906369924967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

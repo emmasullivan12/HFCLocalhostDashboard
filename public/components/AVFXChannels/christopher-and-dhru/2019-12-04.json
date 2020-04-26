@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good afternoon :simple_smile: How does the workflow differ in terms of tv and immersive compared to film is it more a faster turnaround or are the way the shots approached different? Something like immersive is something that has interested me but its not a field i know too much about in terms of studio environment.",
+        "ts": "1575462303.004300",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-04\/846610781458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

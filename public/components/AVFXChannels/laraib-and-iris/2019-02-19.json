@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@iris.rouschop has joined the channel_",
+        "ts": "1550578894.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554682135362_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@laraib.atta has joined the channel_",
+        "ts": "1550578903.001300",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554108953745_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Iris, please meet Laraib your incredible E-Mentor which I mentioned to you! Feel free to introduce yourselves and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but both please direct message myself or emma-prospela if you have any questions. All the best for now and happy chatting! :smile:",
+        "ts": "1550578925.001400",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554558528355_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1550578935.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/555750002535_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1550578940.001600",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/556113440854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laraib! It’s very nice to meet you. How are you doing? I look forward to hearing more about you and your work. I’m currently working towards my masters in filmmaking with a particular interest in animation.\nAre there any projects you and your team are currently working on which make you excited about your work? ",
+        "ts": "1550579327.001700",
+        "username": "Iris Rouschop (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554113465665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Iris, nice to meet you too. I’m good thanks how are you and how is everything at your end ? How is masters going ? \nSo I am currently working at Dneg. Working on some of the big Netflix shows which I really can’t talk about. But some of my recent projects were Mission Impossible Fall out, Krypton (tv show by DC) also another Netflix show I worked on was Altered Carbon for which I was nominated a VES award last month. I was in LA for the ceremony and it was incredible. Looking forward to know more about you and your goals.",
+        "ts": "1550579755.001800",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/555013913189_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m doing well. Working hard to get a trailer together for my dissertation film at the moment. And those are some incredible projects to work on! Congratulations on the nomination. :blush: I’ve watched a few episodes of Altered Carbon and it is visually stunning. Was there a particular episode you worked on or did you work on the whole series?",
+        "ts": "1550580317.001900",
+        "username": "Iris Rouschop (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554697525106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I worked on episode 1,2 and 10. Yes it looks awesome, never watched it though. I should at some point. \nSo in filmmaking are you like writing and directing your own films? And is it like live action or CG\/animated? Would love to see the trailer. ",
+        "ts": "1550584242.002000",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554623939683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m basically doing everything regarding my film right now. I’m writing, directing, editing, animating etc. The course is more aimed at artistic media projects and live action short films, but I’m working on a 2D animated short. I’ll definitely show you the trailer once it’s done. It’s still a  few weeks out, though. \n\nWhat are the CG things you’ve created that you’re most proud of so far?",
+        "ts": "1550590653.002100",
+        "username": "Iris Rouschop (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554741873955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As a compositor I have been involved in some really creative look-development shots where I lead the sequence creatively. I did some really cool city\/atmospheric shots in altered carbon to give them more of blade runner vibe. And then also I was in charge for comping this huge galaxy shots in Krypton - don't know if you ever had a chance to look at  that. Right now doing some really nice stuff which I will be able to tell you maybe by the end of the year.",
+        "ts": "1550614817.002200",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/555194996691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

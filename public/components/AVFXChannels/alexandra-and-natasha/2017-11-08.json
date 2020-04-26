@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning <@U6D2VCN07|smooz>! How are you? ",
+        "ts": "1510129823.000088",
+        "username": "alexouli99 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-08\/268714327075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

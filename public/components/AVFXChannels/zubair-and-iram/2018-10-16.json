@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah. It’s recruiting season right now , and IIRC, the sept vacancies will start to be put in the new year. Giving companies enough time to go through the process. But, just to get a feel of what the application process will entail, there’s no harm in trying if you’ve got time. ",
+        "ts": "1539690788.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-16\/458583879510_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Only think of AAT as a fall back\/ last resort option. Those apprenticeships, if I’m honest, tend to be easy to get into. Really focus on the ACCA path, which is what you’re doing anyway. \nAlso, again, no harm in applying for positions on which the grades required are slightly higher then your predicted. As if you were to get to the interview stage, and they really like you, but you didn’t ultimately get the grade, they could still take you on due to your personality etc. \nSometimes, the grades are there just so companies know what they’re getting in the sense that , they’d like people who they can give people a bit of training and set them off, rather then spoon feeding them. ",
+        "ts": "1539691195.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-16\/456608890673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah i see ill try that. Thank you. ",
+        "ts": "1507806240.000190",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255390450533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sir, What are the best and worst things about University? ",
+        "ts": "1507808694.000050",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256359034087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good question. The best thing (for me anyway) is the intellectual environment - you are exposed to new ideas, there are lecturers\/professors who are world experts in what they do, you are surrounded by other people there to learn about the same thing. Also, the chance to meet people with similar interests in university societies is a close second. The worst thing... I think it had to be exams. I don't miss those! But they have to be done unfortunately!",
+        "ts": "1507810611.000425",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255424466197_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are the people who have obtained success in your career path, you know, actually happy? Are YOU happy with what you have chosen as your career? ",
+        "ts": "1507819884.000473",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255373678114_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In general I think most people are happy. The thing about consultancy is that when you start out it can involve a lot of very long hours with little tangible reward at the time - the same is true for junior lawyers. If you don't enjoy the work, or have a real desire to progress, it is not fun. I am lucky - I really enjoy arguing and in dispute work that is what I am paid to do. It is very satisfying to receive a report from the other side and take the arguments apart and rebut them - much as in law. So yes, I am happy, although there are obviously occasional downsides that I have to deal with. Having fun colleagues helps - we are literally about to head out early for an after work drink, which makes things fun!",
+        "ts": "1507821248.000541",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255444571172_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think its important for someone to choose their own career rather than have someone else choose it for them? (E.g parents, friends, teachers ect.)",
+        "ts": "1507824269.000134",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256310698294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes - I found myself in my career by accident, but wouldn’t have wanted someone else to have chosen it for me. Imagine someone else choosing your hobbies, or what books you like etc. It wouldn’t work, and a career is much more important in terms of how much time gets spent on it. I this that it’s important that you are responsible for it. ",
+        "ts": "1507831553.000117",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255642594869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your opinion on taking a 'Gap year' can it prove to be beneficial or costly in terms of developing as a person. ",
+        "ts": "1507844484.000055",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/256511089926_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

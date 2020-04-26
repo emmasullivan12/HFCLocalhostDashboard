@@ -1,0 +1,192 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Having a look now :)",
+        "ts": "1587124912.001400",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1075522420996_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope your week has been good!",
+        "ts": "1587124917.001500",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069354291682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Waait I have a better edit you can watch!",
+        "ts": "1587125327.001600",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069367341170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/406793411|https:\/\/vimeo.com\/406793411>",
+        "ts": "1587125369.001700",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1075536898948_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "TL_edit_w007_updated3_extendedEdit_soundUpdated",
+                "title_link": "https:\/\/vimeo.com\/406793411",
+                "author_name": "Daniel Ravanelli",
+                "author_link": "https:\/\/vimeo.com\/user76046773",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/877332969_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: TL_edit_w007_updated3_extendedEdit_soundUpdated",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/406793411?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"TL_edit_w007_updated3_extendedEdit_soundUpdated\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/406793411",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/406793411"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587125369.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Week has been good, hope yours is going well too!",
+        "ts": "1587125383.001900",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1075537356084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!",
+        "ts": "1587125507.002000",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1075541156212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And your face and muscle links are still the same?",
+        "ts": "1587125651.002100",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1082003051985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well first off, I'll start by saying great work. It's a lot further along than I would have expected it to be",
+        "ts": "1587126306.002200",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069607398179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if everything else is your latest and I'll get you some notes!",
+        "ts": "1587126318.002300",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1075566079652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just checking now, face is still the same and so is muscle (I've just been updating the same link when I get new stuff to avoid having to pay for Vimeo)",
+        "ts": "1587126570.002400",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069406098210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for taking the time to look at everything, I really appreciate it! :smiley::smiley:",
+        "ts": "1587126583.002500",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069616569363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It helps that there is absolutely nothing else to do, what with University finishing. We've all submitted our dissertations too, so no excuses now but to finish the project",
+        "ts": "1587126634.002600",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1082034577233_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! The muscles look good, do you have a pass of them with the skin wrapped on? Would love to see that",
+        "ts": "1587136179.002700",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1070045235363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just having a look at the face rig you've done. Solid work so far! Are you looking to add some more features or are you happy with what you've got so far?",
+        "ts": "1587136210.002800",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1093678540016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a couple of shots in your film where you need to get a lot of emotion through a character that can't speak, so we need to be able to give animators the tools to deliver that. It's true that for made up creatures we don't have reference, but we do know things about creatures that do exist, and we can try and apply those to this character. So for example, you've already got quite a few options for the mouth and lips that are used by animators already. I'd love to see a little more control on and around the eyes. Shaping of the brows or around the eye would go a long way to getting this character to emote. Same goes for the tongue as well, especially on that wide open mouth shot. And definitely an ability to flare the nostrils - you've already got the nostrils able to rotate a little bit, but if you can get some controls\/blendshape in there to flare the nostrils to imply breathing? That can go a really long way.",
+        "ts": "1587137850.002900",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1082543129297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

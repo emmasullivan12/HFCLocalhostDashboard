@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think our next step to make this personal statement even better would be to make those strengths even more clear, maybe by bringing some examples of what you’ve done that proves some of your strengths, and to bring out more of your excitement for AI, again maybe with some examples of what you’ve found exciting, or think will be exciting in the future.",
+        "ts": "1538487916.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447337643059_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

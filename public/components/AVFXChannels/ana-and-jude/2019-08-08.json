@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jude!~ Again no problem, when you say places do you mean like courses or studios? Quite alot of those shows you mentioned use 2D rigs, have you looked into that at all? could be fun if you havent",
+        "ts": "1565300621.000700",
+        "username": "Ana Greengrass (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-08\/709610553571_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

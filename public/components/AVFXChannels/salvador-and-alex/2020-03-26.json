@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, how's everything I'm now fully working at home and online it was a bit overwhelming at first but I've been adjusting pretty well. Our class has been having regular meetings using Microsoft teams and work is going ahead, we've also been using F track to allow our tutors to review our work which has been very helpful.",
+        "ts": "1585225516.000100",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-26\/1015469266722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

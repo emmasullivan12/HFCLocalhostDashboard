@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Arielle!! I'll defo check it out!! :blush:",
+        "ts": "1585428614.000300",
+        "username": "Cliodhna O'Loingsigh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1020667758706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

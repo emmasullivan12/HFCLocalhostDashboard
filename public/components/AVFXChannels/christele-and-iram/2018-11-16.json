@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mhm Thank youu ",
+        "ts": "1542398528.000900",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/481341937153_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":blush: :blush: :blush: ",
+        "ts": "1542398534.001000",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-16\/481776141508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

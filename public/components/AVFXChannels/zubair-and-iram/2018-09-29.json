@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah, I see.. thank you for the advice. ",
+        "ts": "1538230518.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-29\/445725841283_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "May I ask, Why did you choose CIMA as your accounting body in which you want to be fully qualified for? As In what makes CIMA different to other Accounting bodies? (ACCA, ACA, ICAEW ect.. ) ",
+        "ts": "1538230663.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-29\/445642585940_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of prospects, the future of CIMA as a qualification, and average pay\/salary and demand of CIMA qualifiers",
+        "ts": "1538230752.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-29\/445726581091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2nd Question: Is your apprenticeship a CIMA Apprenticeship or a usual accounting apprenticeship in which your self studying the CIMA exams on your own?\n\nIf its not a CIMA Apprenticeship, is it difficult to study towards the apprenticeship and the CIMA qualification at the same time?? ",
+        "ts": "1538230956.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-29\/445643534276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

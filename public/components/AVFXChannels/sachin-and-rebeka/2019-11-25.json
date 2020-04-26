@@ -1,0 +1,510 @@
+[
+    {
+        "client_msg_id": "883d96c1-e215-41d3-ae79-2f85b684050c",
+        "type": "message",
+        "text": "*Dexter Boyce (Prospela Students (beta))APP* [8:53 PM]\nBeka please meet Sachin your incredible E-Mentor I've been telling you about! Feel free to introduce yourselves and continue chatting within this channel :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :smile:\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [8:55 PM]\nHello Sachin, my name is Rebeka. I am a 3rd-year animation student in Ravensbourne. I focus on rigging- bipeds, creatures, props I try to do all.\n[8:57 PM]\nFor rigging I mostly use Maya and lately I started learning a bit of python\n\n\n_*December 12th, 2018*_\n*Sachin (Prospela Mentors (beta))APP* [11:01 AM]\nHey Rebeka ! Good morning :) sorry about the delayed reply . Busy day at work yesterday.\nNice to meet to you !\n[11:03 AM]\nThat’s good . You definitely want to try your hand at all types before specialising :)\n[11:04 AM]\nHow comfortable are you with python and scripting in maya ?\n[11:07 AM]\nI am a pipeline  TD  primarily focussing  on Animation . Although I don’t deal with rigging directly , I am slowly getting familiar with the way they work since they come just before Animation in the pipeline and their work affects us .\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [1:29 PM]\nHey! I am getting comfortable using python. I am working on a python script biped rig atm. I have a leg and a hand working both FK\/IK , it just looks ugly but work fine xD\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [1:44 PM]\nIs it okay to ask questions?\n[1:45 PM]\nHow does pipeline work in your company? I would really like to know what do riggers do in your company, who they connect\/work with the most? Also, what is your work as pipeline TD?\n\n*Sachin (Prospela Mentors (beta))APP* [1:46 PM]\nAbsolutely! Feel free to ask anything you want to know about\n[1:47 PM]\nheads up though . My replies might be bit slow\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [1:48 PM]\nno worries, please do not worry about replying fast. I really don't mind and I understand if you busy with work\n\n*Sachin (Prospela Mentors (beta))APP* [1:49 PM]\nCool :) So when you say how does pipeline work at DNeg , I’m assuming you are asking me how the different departments are connected right ?\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [1:51 PM]\nyes\n\n*Sachin (Prospela Mentors (beta))APP* [1:52 PM]\nDNeg being a slightly larger studio , most of the main tasks involved in generating CGI are divided into separate departments . You may find that in some of the smaller studios , it may not be as subdivided. For example ,\n[1:54 PM]\nThe very first department is usually called editorial\/ IO\nAnd they are responsible for ingesting the data that we get from the client and processing this data so that it’s compatible with our pipeline .\n[1:55 PM]\nThe data usually consists of scans\/image sequences that were shot during production and all the associated metadata like what camera was used, lens information , etc\n[1:56 PM]\nBtw , let me know if I go into too much detail and you want me to start with a simpler overview\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [1:57 PM]\nthe editorial department description was great\n[1:57 PM]\nit's great to hear it from someone in company\n\n*Sachin (Prospela Mentors (beta))APP* [1:58 PM]\nCool I’ll keep it at that level then .\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [1:59 PM]\ngreat\n\n*Sachin (Prospela Mentors (beta))APP* [2:07 PM]\nWhile editorial is ingesting all this data , we have another department called imaging\/colour science that is responsible for setting up the colour pipeline . As a rigger , you’ll probably never have to worry about this so let me know if you are curious and I can explain  what that is . In very simple terms , it’s setting up the show in such a way that the images generated at the end look the way the client expects to see them . It changes from show to show so needs to be customised.\n[2:08 PM]\nGot a meeting now . Will continue later :)\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [2:12 PM]\nI see. I am mostly interested in the production (modelling-rigging-animation) because I wanna know who I would potentionaly work with as a rigger :slightly_smiling_face:\n[2:12 PM]\nnp talk later\n\n*Sachin (Prospela Mentors (beta))APP* [11:44 PM]\nMakes sense :)\nIn terms of the pipeline the data flow between those three departments is fairly straight forward. It goes in the order that you have mentioned but the the thing you probably want to know is exactly what data rigging receives from modelling ,what it delivers to animation.\nLet’s start with what rigging get from modelling\n[11:45 PM]\nFeel free to stop me if I’m talking about something you already know casue I have no idea how familiar you are with vfx pipelines :)\n[11:48 PM]\nIt might be easier to explain with an example so let me use one of our past projects , Wonder Woman .\n\n*Sachin (Prospela Mentors (beta))APP* [11:56 PM]\nNow the main character had the following  modelling requirements\n- body\n- head\n- costume\n- lasso\n- sword\nEach of these would go onto have a separate rig with relationships defined between  each other . Some of them are also grouped together but we will get to that later\n[11:58 PM]\nPlease let me know if you have any questions about what I’ve said till now and I can answer them before I go ahead :)\n\n\n_*December 13th, 2018*_\n*Rebeka Strapakova (Prospela Students (beta))APP* [12:31 PM]\nahhh i see\n[12:31 PM]\nIt's very interesting\n[12:32 PM]\nHow many riggers do usually work on such a project?\n\n\n_*December 14th, 2018*_\n*Sachin (Prospela Mentors (beta))APP* [9:20 AM]\nAhh numbers are not something I am privy to . That’s something handled by production managers and hods. Lemme ask around and see if I can find out .\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [10:09 AM]\nah okay\n[10:10 AM]\nthanks\n\n*Rebeka Strapakova (Prospela Students (beta))APP* [1:14 PM]\nIs the company busy before christmas?\n\n\n_*December 15th, 2018*_\n*Sachin (Prospela Mentors (beta))APP* [7:24 PM]\nYeah it gets a bit mental just before Christmas . Lot of people going on long holidays and want to wrap things up so everything is a priority\nLol\n[7:25 PM]\nDo you get some time off during Christmas?\n[7:26 PM]\nAre you doing anything fun ?\n\n*Sachin (Prospela Mentors (beta))APP* [7:33 PM]\nYou said you were in the third hour of your course right ? Im guessing its a 3 year programme in which case you must be working on or towards your final projects no ?\n[7:38 PM]\nGoing back to the pipeline overview , you remember how I said the Diana’s character had a 5 part requirement? If you noticed the list the face was separate to the body and had its own rig. I wasn’t sure if you knew that this was a common practice cause back when we were studying, the body and the face were all part of the same rig .\n[7:39 PM]\nAnd that came as a surprise to me when I first heard about it\n\n\n_*Thursday, January 3rd*_\n*Rebeka Strapakova (Prospela Students (beta))APP* [6:11 PM]\nhey, sorry for the delay. I traveled outside UK, and I got flu. Terrible combination\n[6:12 PM]\nYes, I am in my 3rd year and I am currently working on my final projects\n[6:12 PM]\nI focus on rigging so I aim to get several rigs done for final project\n\n\n_*Saturday, January 12th*_\n*Sachin (Prospela Mentors (beta))APP* [9:16 AM]\nHey Rebeka , no worries :) hope you are feeling better now. When’s your project due ?\n\n\n_*Tuesday, February 5th*_\n*Rebeka Strapakova (Prospela Students (beta))APP* [4:29 PM]\nMy project is due 29th may\n\n\n_*Saturday, February 9th*_\n*Sachin (Prospela Mentors (beta))APP* [9:44 AM]\nAhh nice ! Good luck with that ! :)\n\n\n_*Tuesday, February 19th*_\n*Rebeka Strapakova (Prospela Students (beta))APP* [12:58 PM]\nWhat projects are you working on at the moment?\n[12:59 PM]\nDo you know what are the requirements for junior rigger in your company?\n\n*Sachin (Prospela Mentors (beta))APP* [1:03 PM]\nI myself am not on any specific project or to be more precise on all projects , the work I do is not necessarily project specific. But the main projects being worked on at DNeg London are avengers , Wonder Woman , and a few others I’m not allowed to mention yet :)\n[1:05 PM]\nI haven’t come across any  junior riggers straight out of uni but I can ask the rigging sup\n[1:06 PM]\nWhat the entry requirements are\n[1:07 PM]\nIm off sick today , will get back to you on that once I get back to work .\n\n\n_*Tuesday, March 5th*_\n*Rebeka Strapakova (Prospela Students (beta))APP* [4:33 PM]\nokay\n[4:33 PM]\nthank you so much\n[4:33 PM]\nlook forward hearing from you",
+        "user": "U4V22C6A1",
+        "ts": "1574701945.001600",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kKXg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Dexter Boyce (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [8:53 PM]\nBeka please meet Sachin your incredible E-Mentor I've been telling you about! Feel free to introduce yourselves and continue chatting within this channel "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "wave"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "smile"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [8:55 PM]\nHello Sachin, my name is Rebeka. I am a 3rd-year animation student in Ravensbourne. I focus on rigging- bipeds, creatures, props I try to do all.\n[8:57 PM]\nFor rigging I mostly use Maya and lately I started learning a bit of python\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "December 12th, 2018",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [11:01 AM]\nHey Rebeka ! Good morning :) sorry about the delayed reply . Busy day at work yesterday.\nNice to meet to you !\n[11:03 AM]\nThat’s good . You definitely want to try your hand at all types before specialising :)\n[11:04 AM]\nHow comfortable are you with python and scripting in maya ?\n[11:07 AM]\nI am a pipeline  TD  primarily focussing  on Animation . Although I don’t deal with rigging directly , I am slowly getting familiar with the way they work since they come just before Animation in the pipeline and their work affects us .\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:29 PM]\nHey! I am getting comfortable using python. I am working on a python script biped rig atm. I have a leg and a hand working both FK\/IK , it just looks ugly but work fine xD\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:44 PM]\nIs it okay to ask questions?\n[1:45 PM]\nHow does pipeline work in your company? I would really like to know what do riggers do in your company, who they connect\/work with the most? Also, what is your work as pipeline TD?\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:46 PM]\nAbsolutely! Feel free to ask anything you want to know about\n[1:47 PM]\nheads up though . My replies might be bit slow\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:48 PM]\nno worries, please do not worry about replying fast. I really don't mind and I understand if you busy with work\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:49 PM]\nCool :) So when you say how does pipeline work at DNeg , I’m assuming you are asking me how the different departments are connected right ?\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:51 PM]\nyes\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:52 PM]\nDNeg being a slightly larger studio , most of the main tasks involved in generating CGI are divided into separate departments . You may find that in some of the smaller studios , it may not be as subdivided. For example ,\n[1:54 PM]\nThe very first department is usually called editorial\/ IO\nAnd they are responsible for ingesting the data that we get from the client and processing this data so that it’s compatible with our pipeline .\n[1:55 PM]\nThe data usually consists of scans\/image sequences that were shot during production and all the associated metadata like what camera was used, lens information , etc\n[1:56 PM]\nBtw , let me know if I go into too much detail and you want me to start with a simpler overview\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:57 PM]\nthe editorial department description was great\n[1:57 PM]\nit's great to hear it from someone in company\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:58 PM]\nCool I’ll keep it at that level then .\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:59 PM]\ngreat\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [2:07 PM]\nWhile editorial is ingesting all this data , we have another department called imaging\/colour science that is responsible for setting up the colour pipeline . As a rigger , you’ll probably never have to worry about this so let me know if you are curious and I can explain  what that is . In very simple terms , it’s setting up the show in such a way that the images generated at the end look the way the client expects to see them . It changes from show to show so needs to be customised.\n[2:08 PM]\nGot a meeting now . Will continue later :)\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [2:12 PM]\nI see. I am mostly interested in the production (modelling-rigging-animation) because I wanna know who I would potentionaly work with as a rigger "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "slightly_smiling_face"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n[2:12 PM]\nnp talk later\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [11:44 PM]\nMakes sense :)\nIn terms of the pipeline the data flow between those three departments is fairly straight forward. It goes in the order that you have mentioned but the the thing you probably want to know is exactly what data rigging receives from modelling ,what it delivers to animation.\nLet’s start with what rigging get from modelling\n[11:45 PM]\nFeel free to stop me if I’m talking about something you already know casue I have no idea how familiar you are with vfx pipelines :)\n[11:48 PM]\nIt might be easier to explain with an example so let me use one of our past projects , Wonder Woman .\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [11:56 PM]\nNow the main character had the following  modelling requirements\n- body\n- head\n- costume\n- lasso\n- sword\nEach of these would go onto have a separate rig with relationships defined between  each other . Some of them are also grouped together but we will get to that later\n[11:58 PM]\nPlease let me know if you have any questions about what I’ve said till now and I can answer them before I go ahead :)\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "December 13th, 2018",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [12:31 PM]\nahhh i see\n[12:31 PM]\nIt's very interesting\n[12:32 PM]\nHow many riggers do usually work on such a project?\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "December 14th, 2018",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [9:20 AM]\nAhh numbers are not something I am privy to . That’s something handled by production managers and hods. Lemme ask around and see if I can find out .\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [10:09 AM]\nah okay\n[10:10 AM]\nthanks\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:14 PM]\nIs the company busy before christmas?\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "December 15th, 2018",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [7:24 PM]\nYeah it gets a bit mental just before Christmas . Lot of people going on long holidays and want to wrap things up so everything is a priority\nLol\n[7:25 PM]\nDo you get some time off during Christmas?\n[7:26 PM]\nAre you doing anything fun ?\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [7:33 PM]\nYou said you were in the third hour of your course right ? Im guessing its a 3 year programme in which case you must be working on or towards your final projects no ?\n[7:38 PM]\nGoing back to the pipeline overview , you remember how I said the Diana’s character had a 5 part requirement? If you noticed the list the face was separate to the body and had its own rig. I wasn’t sure if you knew that this was a common practice cause back when we were studying, the body and the face were all part of the same rig .\n[7:39 PM]\nAnd that came as a surprise to me when I first heard about it\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Thursday, January 3rd",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [6:11 PM]\nhey, sorry for the delay. I traveled outside UK, and I got flu. Terrible combination\n[6:12 PM]\nYes, I am in my 3rd year and I am currently working on my final projects\n[6:12 PM]\nI focus on rigging so I aim to get several rigs done for final project\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Saturday, January 12th",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [9:16 AM]\nHey Rebeka , no worries :) hope you are feeling better now. When’s your project due ?\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Tuesday, February 5th",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [4:29 PM]\nMy project is due 29th may\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Saturday, February 9th",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [9:44 AM]\nAhh nice ! Good luck with that ! :)\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Tuesday, February 19th",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [12:58 PM]\nWhat projects are you working on at the moment?\n[12:59 PM]\nDo you know what are the requirements for junior rigger in your company?\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Sachin (Prospela Mentors (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [1:03 PM]\nI myself am not on any specific project or to be more precise on all projects , the work I do is not necessarily project specific. But the main projects being worked on at DNeg London are avengers , Wonder Woman , and a few others I’m not allowed to mention yet :)\n[1:05 PM]\nI haven’t come across any  junior riggers straight out of uni but I can ask the rigging sup\n[1:06 PM]\nWhat the entry requirements are\n[1:07 PM]\nIm off sick today , will get back to you on that once I get back to work .\n\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Tuesday, March 5th",
+                                "style": {
+                                    "bold": true,
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Rebeka Strapakova (Prospela Students (beta))APP",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " [4:33 PM]\nokay\n[4:33 PM]\nthank you so much\n[4:33 PM]\nlook forward hearing from you"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

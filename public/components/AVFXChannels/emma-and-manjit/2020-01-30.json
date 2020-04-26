@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @manjitkm.3210 - hope you are well girly!\n\nJust a thought, but my cousin is doing a Higher Apprenticeship with Barclays bank in relationships management ... it's a role where he gets to interact with clients and gets paid quite well and they pay for you to do a degree. Thought it might be interesting to you as its a little bit business, a little bit marketing \/ sales, which you said you might like! Just an idea\n\nHere is a link to the government website to browse all apprenticehips in UK by industry (click on the \"browse\" tab) &gt;&gt; <https:\/\/www.findapprenticeship.service.gov.uk\/apprenticeshipsearch?searchMode=Category>",
+        "ts": "1580413362.000400",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/929358969252_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Find an apprenticeship",
+                "title_link": "https:\/\/www.findapprenticeship.service.gov.uk\/apprenticeshipsearch?searchMode=Category",
+                "text": "Weâ€™ve introduced a new way to find and apply for an apprenticeship in England.",
+                "fallback": "Find an apprenticeship",
+                "from_url": "https:\/\/www.findapprenticeship.service.gov.uk\/apprenticeshipsearch?searchMode=Category",
+                "service_name": "findapprenticeship.service.gov.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.findapprenticeship.service.gov.uk\/apprenticeshipsearch?searchMode=Category"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580413362.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heyyy ive seen a few apprenticeships but theres not much apprenticeships near me and i dont want to travel far. And there are very few degree apprenticeships which is something i want to do",
+        "ts": "1580416693.000600",
+        "username": "Manjit Matharoo (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/918445112659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

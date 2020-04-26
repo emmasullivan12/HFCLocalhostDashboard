@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey <!channel>! \n\nWe have finished our programme, however we will be *announcing the leaderboards &amp; final winner shortly*!!  :tada::trophy::grin::grin::trophy::tada:\n\n&gt;Also to note, at some point in the near future we aim to have a way for you to keep up with your previous mentees, including those from our 2 pilot studies :relaxed::relaxed: :wave::wave:",
+        "ts": "1512380486.000178",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U00> uploaded a file: <https:\/\/prospelaautumn1.slack.com\/files\/U7CQMS6N4\/F88QGFM88\/2nd_half_e-mentor_leaderboard.png|2nd Half E-Mentor Leaderboard.png>",
+        "ts": "1512415399.000212",
+        "username": "dexter"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*THE 2ND ROUND RESULTS ARE IN!!* <!everyone>\nCongratulations to *<@U5WR9CJTC>* for winning in terms of activity over the final duration of our pilot programme! She'll shortly be the proud owner of a PROSPELA T-SHIRT &amp; LinkedIn recommendation from Prospela! :champagne::champagne:",
+        "ts": "1512415410.000724",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We also have *a few shout-outs* for some other *outstanding efforts* over the programme...:checkered_flag:\n\n&gt;*Sarah, Georgina, Helen &amp; Andy M* for being the most camera snapping happy! Pictures\/videos really do speak 1000 words :camera_with_flash:\n\n&gt;*Coleen* for progressing an internship within her company for her mentee. It's rare these students get a useful and inspiring work experience, let alone the chance to experience an architecture firm!  :classical_building:\n\n&gt;*Helen &amp; Christian* for going out of their way to recruit an additional E-Mentor to support their student - now that's what we call spreading the love :raised_hands:\n\n&gt;*Christian*, for being a speedy Gonzales. He's had 2 major projects come in this last month and 3 students at once this programme, yet his av. response rate was still probably within minutes!?? :rocket::flushed:\n\nAnd again a HUGE thank you to all of you for your efforts. We've had some really useful feedback and learnings from both mentor and mentees *(^^ KEEP IT COMING!! The feedback form link is a few posts above ^^)* :smiley::bowtie:",
+        "ts": "1512415452.000277",
+        "username": "bot"
+    },
+    {
+        "type": "message",
+        "text": "Woooooo!!!",
+        "user": "U5WR9CJTC",
+        "ts": "1512417353.000487",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

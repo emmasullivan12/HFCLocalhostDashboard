@@ -1,0 +1,59 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Magin, I used your feedback and changed some timing and it really helped my piece! I also entered the monthly contest 'animchallenge' and the final piece ended up ok but i was wondering if there is anyway I could improve it for my showreel? I can make it longer if needs be to add more story. I never fully polished it",
+        "ts": "1558358561.000100",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-20\/640518468272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/1a7864ac2bad\/>",
+        "ts": "1558358561.000200",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-20\/642345744887_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Vanished",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/1a7864ac2bad\/",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: Vanished",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/1a7864ac2bad\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/1a7864ac2bad\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It works really nice! :slightly_smiling_face: Let me draw a few thing that could help!",
+        "ts": "1558360712.000400",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-20\/640034422532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I let you some notes, but I have to say that the animation is really nice, so congrats! :slightly_smiling_face:",
+        "ts": "1558361821.000500",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-20\/640586286816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

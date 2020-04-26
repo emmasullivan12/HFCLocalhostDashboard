@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi. I'm glad it's helpful. This is what I am here for :)",
+        "ts": "1557299908.000700",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-08\/629355899024_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah. Contract work can be a bit stressful but the advantage is that u get paid more generally and you get to take longer holiday , if you want . Full timers only get about 4 weeks a year with only 2 week s in a row. So for some people it works out great , you work hard and get paid for weekend work then you have loads of money to see the world. A lot of younger people on my team do that.\nGetting experience at different studios is often a good thing too. So if you have a short contact at one place u can bounce to another and learn how they do things. It's also great for expanding Ur network of contacts.",
+        "ts": "1557300261.000800",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-08\/629318840645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some people do hate contract work though. After a while it can wear u down having to always think of what the next gig Will be. But that's mostly older people. And that's not you yet ;)",
+        "ts": "1557300363.000900",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-08\/617903540835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have never done an all-night er myself. Animator s don't normally get hit that hard by crunch. Honestly, if it comes to the team having to be worked that hard then someone has made a mistake.\nThe people doing lots of extra hours that I know is because they love the work and really want to put their best stuff on the screen, and also these are the people who don't work efficiently during the day because they are so sleepy.",
+        "ts": "1557300667.001000",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-08\/623016727393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Another long answer :grin:",
+        "ts": "1557300729.001100",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-08\/629324243589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

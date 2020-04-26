@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Binal as said yesterday, lovely to meet you, would it be possible to know more of your experiences and background :slightly_smiling_face: no rush to reply !",
+        "ts": "1582132515.002000",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/961843847254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

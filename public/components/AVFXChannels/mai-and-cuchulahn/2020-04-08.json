@@ -1,0 +1,94 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thats fair! thanks",
+        "ts": "1586351613.001200",
+        "username": "Cuchulahn O'Byrne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1047421523618_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011BSXJQCF",
+                "created": 1586351625,
+                "timestamp": 1586351625,
+                "name": "Seq 010 Shot 070 Blocking V03-1.mp4",
+                "title": "Seq 010 Shot 070 Blocking V03-1",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 388221,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011BSXJQCF\/seq_010_shot_070_blocking_v03-1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011BSXJQCF\/download\/seq_010_shot_070_blocking_v03-1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011BSXJQCF-2e5d037205\/seq_010_shot_070_blocking_v03-1_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011BSXJQCF\/seq_010_shot_070_blocking_v03-1.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011BSXJQCF-4f3c590d5a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1586351626.001300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ive splined one or two things here because im rather dim, but besides that i'm having trouble moving forward with it? like i see the issues with it but im unsure with how to fix them",
+        "ts": "1586351680.001600",
+        "username": "Cuchulahn O'Byrne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048477491299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The first think i would do is put a proper walk cycle in there, rather than just posing the legs, pose the whole body for each stage of the walk, and take it off spline as well. Splining is for the final stage of animation, its best to leave a scene in stepped until you have keys on every 2 frames so that when you hit spline it looks exactly like how you want it too and there is no flating around",
+        "ts": "1586354224.001700",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1055991974577_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "pose the whole body for each section in your scene",
+        "ts": "1586354235.001800",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1052702512805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also be careful, when your character bends over it looks like his legs are broken and bending backwards",
+        "ts": "1586354551.001900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1048643440707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Fraser, I’m so sorry for getting back to you so late, life’s been quite busy and a bit on the stressful side! Hope you’ve been well! I’d totally be up for learning more about the compositing side and building up my portfolio for compositing! \nI did rotoscoping briefly a couple years ago in AE but it was just part of a few lessons in my class not the focus, not done clean up work unless it was for 2D animation. I have the non commercial version of Nuke and I’ve been attempting to learn it but it is quite slow progress on that front, if there’s any helpful tips or tutorials you know I’d really appreciate the help :) ",
+        "ts": "1584179895.000300",
+        "username": "Montana FB (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/987541358018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

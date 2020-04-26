@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude!\n\nThis article is pretty good for some node tips for roto.\n\n\n<https:\/\/www.fxguide.com\/fxfeatured\/the-art-of-roto-2011\/>\n\nThere’s a lot of boring history stuff but towards the bottom the go into some tips and how best to do it. \n\nFxguide is a pretty good resource for what’s happening in vfx too. They have interviews and stuff with the guys doing stuff in the industry. There is also Art of VFX who have nice interviews too ",
+        "ts": "1573842667.006700",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/836674752688_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "fxguide",
+                "title": "The Art of Roto: 2011",
+                "title_link": "https:\/\/www.fxguide.com\/fxfeatured\/the-art-of-roto-2011\/",
+                "text": "Updated in-depth Art of Roto (2011) covering the history of roto to the tools and best practice for production roto. New sections include stereo workflow and stereo conversion tools, including Mocha, Silhouette, Fusion, Nuke, Flame 2012 and much more.",
+                "fallback": "fxguide: The Art of Roto: 2011",
+                "thumb_url": "https:\/\/www.fxguide.com\/wp-content\/uploads\/2011\/10\/roto_featured.jpg",
+                "ts": 1318226197,
+                "from_url": "https:\/\/www.fxguide.com\/fxfeatured\/the-art-of-roto-2011\/",
+                "thumb_width": 665,
+                "thumb_height": 285,
+                "service_icon": "https:\/\/www.fxguide.com\/wp-content\/uploads\/2019\/06\/fx-icon-grey-1-320x320.png",
+                "id": 1,
+                "original_url": "https:\/\/www.fxguide.com\/fxfeatured\/the-art-of-roto-2011\/"
+            }
+        ]
+    }
+]

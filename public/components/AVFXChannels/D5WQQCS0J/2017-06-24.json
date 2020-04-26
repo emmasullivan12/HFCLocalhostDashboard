@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Finally got around to sending something, soz for the delay! Just about to start testing now, it's just testing UI so not full blown testing as functionality behind it isn't built yet (for that I will defo be asking for help!) \n\nUploading the video from my phone i realised the file is massive so if the mentees don't have unlimited it may kill their data plans to chat using vids, don't know if there is an easy way to compress them?",
+        "user": "U5WNHEH0T",
+        "ts": "1498318838.549127",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "4f57fd1437c2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-24\/202975306035_4f57fd1437c288f80dff_72.png",
+            "first_name": "Michael",
+            "real_name": "Michael",
+            "display_name": "michael_h",
+            "team": "T4UUTPV18",
+            "name": "michael_h",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Nice! Sounds great mate! Hmmmm interesting. Ok will look into it and see what we can find. Cheers for the heads up ",
+        "user": "U4VR52RQE",
+        "ts": "1498321148.831491",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

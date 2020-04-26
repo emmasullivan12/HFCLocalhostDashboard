@@ -1,0 +1,100 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Olivia :slightly_smiling_face:\nI don't know much about the launchpad animation program, But I'm pretty sure that could be useful for you. Is always nice to be in a professional big company, there's talented people everywhere.\nI'm the mentor of the summer internship guy, and he's going to do the launchpad after his internship.",
+        "ts": "1565616187.000300",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/725745214742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok, \nIt’s sounds like such a great start. I sent in my application for the program so fingers crossed. I was wondering though if you’d take a look at my showreel and maybe give me a lil feedback and what’s looking good, what I should expand on, what to remove or add? ",
+        "ts": "1565620479.000400",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/717317048769_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/344579292>",
+        "ts": "1565620484.000500",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/725550967543_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "2019 Summer Showreel",
+                "title_link": "https:\/\/vimeo.com\/344579292",
+                "author_name": "Liv Donlan",
+                "author_link": "https:\/\/vimeo.com\/user51760445",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/800248131_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: 2019 Summer Showreel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/344579292?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"2019 Summer Showreel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/344579292",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/344579292"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just a side note do you know if they’re waiting until they get all the applications in to make their decisions or if it’s an ongoing process thing? Everything my gmail pops up I feel nervous thinking it’s a rejection response haha ",
+        "ts": "1565620563.000700",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/717318910321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hahaha... About the email stuff, don't worry. Happen always the same to me every time I apply for a new job XD.... but I assume that they will wait until have all the applications and then decide.",
+        "ts": "1565621994.000800",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/712286635155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About your reel, is a really good first reel. :slightly_smiling_face: Congrats.\nI thing you could do some body mechanics, because you have a lot of acting stuff. Btw I like the shot of the dog, and the one of the girl pissed of and walking carefully :slightly_smiling_face:\nAt this point my advise, is that you should keep doing animations, and keep improving. Do whatever you like to do, and that will improve your reel slowly :slightly_smiling_face:",
+        "ts": "1565622278.000900",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/723737323157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha so it’s something everyone does haha! \n\nThankyou! :blush:\nYeah I agree I need some body mechanic pieces in it now you’ve pointed that out. \nThe dog was a piece I started blocking the other night just to quickly throw for for the framestore application, I wanted to show I can block creatures pretty fast. ",
+        "ts": "1565623346.001000",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-12\/723292312196_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

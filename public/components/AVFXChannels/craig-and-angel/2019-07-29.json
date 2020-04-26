@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just a heads up i was stuck between delivery on a show and having half a week off last week for holiday  - terrible start to managing this mentoring slack! I’ll grab my modelling friend soon as i can today and get his thoughts as a priority :)",
+        "ts": "1564385062.000300",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-29\/697307161330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah no worries I understand :) shows can take up a lot of the time. What are you on at the moment. Ah hope you had a good week off after everything. Your busy and I'm on slack too much , thank you really appreciate that. :) look forward to his opinion.",
+        "ts": "1564423267.000400",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-29\/697991281763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

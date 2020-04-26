@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. That’s great it was your school! I was suppose to go but I couldn’t get out of work :( Sorry I don’t get to meet you. Were there other creative industries? Did you find the day interesting? ",
+        "ts": "1553589610.013200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/579173187825_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's alright:smiley: you must have a busy schedule. There weren't really creative industries, mostly engineering and things like that. There was a guy who did game development but that was pretty much it.",
+        "ts": "1553615146.013300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589540308423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The day was interesting but it's just not something I would like to work in in the future:sweat_smile:",
+        "ts": "1553615181.013400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/586052075280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emma, its great to meet you! so Im a third year student studying animation in Ravensbourne and my specialism is in character animation :slightly_smiling_face:",
+        "ts": "1543245388.001700",
+        "username": "Leanne cheuk (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487911104692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the late reply my phone was in the shop. Yes I would still like u go be my mentor. ",
+        "ts": "1573678174.000100",
+        "username": "Chelsea Macaulay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835759214950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

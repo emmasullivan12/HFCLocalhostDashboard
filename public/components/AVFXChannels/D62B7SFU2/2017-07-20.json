@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "text": "Alisha - anything else i can be of help with?",
+        "user": "U5YFZREUC",
+        "ts": "1500562342.829482",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sorry for the late reply Rob, thanks for the advice on the conversion courses I've started researching with some of my teachers. ",
+        "user": "U61NXB13P",
+        "ts": "1500569213.228014",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "a54d18b89dd4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-29\/205785743573_a54d18b89dd4e1dd41f8_72.png",
+            "first_name": "Alisha",
+            "real_name": "Alisha Malhan",
+            "display_name": "alishamalhan14",
+            "team": "T4UUTPV18",
+            "name": "alishamalhan14",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "great idea",
+        "user": "U5YFZREUC",
+        "ts": "1500569228.236125",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

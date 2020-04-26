@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, i'm really sorry - my halls internet went down last night and it's only just come back up",
+        "ts": "1584457031.001500",
+        "username": "Dan Ahern (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/995916104545_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dont worry about it. I was going message you to apologies too",
+        "ts": "1584465939.001600",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/995029053107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We have been moved to WFH this week so I have been running around getting that sorted.",
+        "ts": "1584465978.001700",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/996427198657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "World gone mad lol",
+        "ts": "1584465993.001800",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006043541828_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We can try tomorrow if you like or wait until next week.",
+        "ts": "1584466007.001900",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006518741829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah yeah, I can imagine it must be hectic on your end as well",
+        "ts": "1584466263.002000",
+        "username": "Dan Ahern (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1008378196615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Next week might be more ideal if that's okay? Hopefully everything's fine and dandy on your end",
+        "ts": "1584466286.002100",
+        "username": "Dan Ahern (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006515368752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jasmeet. Nice work in progress. I see you have yet to really tackle the extremities like hand and feet and such.",
+        "ts": "1587305479.000300",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1065292511174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm mainly going to talk about the male anatomy sculpt. It seems like you are understanding anatomy but maybe struggling to get it into the sculpt in the right way. I wonder if you are blocking out first or sort of cutting in the details? It is best if possible to start broad and refine in layers. I know some parts are more difficult but it is best if you do a sweep of the entire character before refining other areas. The arms for example look like they haven't had as much attention as say the upper back. I know this is a wip but covering the entire sculpt first at each refinement level makes sure those more difficult areas are not left behind or put off. More importantly it gives a better feel and balance to the sculpt. It also lets you have a finished product whenever you call it done. Each pass when completed is a detail level. This is nicer to have than one area receiving loads of attention and either setting the standard to something that won't be achievable for the rest, or delivered in the time frame.",
+        "ts": "1587305800.000400",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1072029144434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What areas in anatomy would you say are your strengths and weaknesses?",
+        "ts": "1587305821.000500",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1072029312258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

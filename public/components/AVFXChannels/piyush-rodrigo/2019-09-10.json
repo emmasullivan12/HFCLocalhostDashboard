@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have some games that I've done and other projects. Do you think I should make like a small video of each project showing what it does?",
+        "ts": "1568139191.001600",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/743981659539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If these were done in collaboration then make sure you do mention what part you have worked on. Game videos would be a great addition, you should include features like gameplay or set design or anything that's technical.",
+        "ts": "1568139412.001700",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/743987008035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, absolutely! I'll make sure I mention what I've done",
+        "ts": "1568139477.001800",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/755453210112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Upload this to Vimeo or YouTube once you have a final video. The link can go as part of your CV",
+        "ts": "1568139530.001900",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/742681053986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, I'll probably use Vimeo for it",
+        "ts": "1568139716.002000",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/755465730165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ye it's fun. I've not really worked with soft constraints before. To get the destroyed metal look. Still struggling with the weird vibration stuff. I think it could be a constraint problem.",
+        "ts": "1569579641.001700",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-27\/775583753248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

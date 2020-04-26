@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. I have a series of short photography briefs that are good exercises in ways of seeing and storytelling in a single image. The power of an image! \nWe will start with a simple idea, and it can develop to be more abstract. \nEven though simple, think about pushing the boundaries of what you can shot, how you shoot it and various interpretations. It is very open for interpretation :smiley: So I really encourage creativity :camera_with_flash::art:\nFirst one: ",
+        "ts": "1548889763.013800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537293560545_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1) Shoot an image that is about light. ",
+        "ts": "1548889799.013900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/538959323351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can start to interpret it literally which is a good start. Then develop into more creative or experimental methods, or compositions, or interpretations. \n",
+        "ts": "1548889912.014000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/538100887477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you can this week, or over the weekend, shoot at least 5 different images. And then upload. \nThings to consider: composition; colour, ‘texture’, the subject, framing, what is the intent of the single image? ...things like that. \n\nAll of this also applies to animation, vfx, vr, games, &amp; really any art :wink: ",
+        "ts": "1548890175.014100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/538104211637_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you cannot, take time looking at what you are shooting, and maybe why you chose that framing or object. Think of your camera\/phone as a canvas, just in the same way as you do a piece of art paper. ",
+        "ts": "1548890324.014200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/538106093445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oops... meant , if you can, take time.... :smiley:",
+        "ts": "1548890358.014300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-30\/537902511266_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

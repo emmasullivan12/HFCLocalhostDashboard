@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon,\nThank you so much for such a super in-depth and thorough commentary! There were both things that I kinda knew I had trouble with when I was doing it, but also some things I hadn't noticed until you mentioned it. Thank you so much for not only pointing out errors, but also suggesting how they can be fixed - that's really helpful :slightly_smiling_face:\nThe question about the old lady disappearing - yeah, she was meant to be out of the shot and I had some stuff blocking her \"disappearance\", but I later removed it because it was making the robot's silhouette difficult to read. I should've gone for a more elegant solution, this was a pretty shitty right-before-the-deadline decision... :sweat_smile:\nI am familiar with animation layers (although I haven't used them much before). I think what I struggle more with is how to change part of an animation when there are already a lot of keys, especially if I remove a little part and then have to slot something new into that same space and matching it up with the motion that comes before and after. For a few bits, I reanimated a couple of times because fixing it was harder than restarting for me. Do you have any good tips\/suggestions for how to do this best?\nWhat you pointed out with storybeats not reading well is a problem I've had before. I know it's possible of course, but I often find it tricky to figure out a way to have something clearly read when it also needs to happen quickly, or when multiple things happen at once and so on (as you of course noticed). The suggestions you gave were really useful, I hadn't thought about those ways to solve my problems. Are there any general tips for how to keep the action clear? I'm sure there are lots of things to learn, but I'm not quite sure where to start.\nAgain, thank you - you must've spent a lot of time putting all this together and I really appreciate it :slightly_smiling_face:",
+        "ts": "1586101941.000100",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1039928116051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Btw, do you ever film the voice actors acting out the characters and using their facial performance as reference when you work on tv shows?",
+        "ts": "1586102018.000200",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1049645619524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope you and your family is safe!",
+        "ts": "1586102046.000300",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1054699261632_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

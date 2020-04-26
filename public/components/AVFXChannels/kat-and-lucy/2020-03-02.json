@@ -1,0 +1,178 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy! Great to chat with you! A little about myself; I'm Kat, a Character Animator who's been working in London at various studios since I graduated from The Arts University Bournemouth in 2013. I've worked at Framestore, DNEG, Mikros, Blue Zoo, and Studio AKA to name a few! My current job sees me at DNEG Feature Animation working on \"Ron's Gone Wrong\" a feature film in partnership with Locksmith Animation.\nLooking forward to our mentorship!",
+        "ts": "1583145874.001800",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977001853328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh crikey, thats an incredible amount of experience !! Thank you so much for doing this !",
+        "ts": "1583147279.001900",
+        "username": "Lucy Harris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976579596228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha, it sounds more impressive than it is, trust me!",
+        "ts": "1583147898.002000",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/978908377895_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd love to hear more about yourself, too! Are you currently studying, and if so where? ^^",
+        "ts": "1583147913.002100",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964257903122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha, I bet otherwise !",
+        "ts": "1583148989.002200",
+        "username": "Lucy Harris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/965599969235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm a third year student at Escape Studios in London ^^",
+        "ts": "1583149008.002300",
+        "username": "Lucy Harris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976614322452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to be a creature animator so you having worked at Framestore and DNEG is super rad !",
+        "ts": "1583149044.002400",
+        "username": "Lucy Harris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976614968340_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh awesome!!",
+        "ts": "1583149487.002500",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/979287038054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can set us up a dropbox if you like, so if you have any anim you'd like feedback on you can drop it in there and I'll get some feedback your way?",
+        "ts": "1583149515.002600",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977096242997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm also happy to answer any other questions you might have along the way!",
+        "ts": "1583149538.002700",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976624378948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah yes please that would be amazing !!",
+        "ts": "1583150045.002800",
+        "username": "Lucy Harris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/965620120403_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh prepare to be spammed then haha",
+        "ts": "1583150054.002900",
+        "username": "Lucy Harris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/976634267012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In regards to the working environment at DNEG, what's it like ? And is there any sort of pipeline you follow in regards to animation ?",
+        "ts": "1583150086.003000",
+        "username": "Lucy Harris (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/964300472322_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what email should I use for you to set up the dropbox with?",
+        "ts": "1583175226.003100",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967783228785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for your questions. We have a pipeline that is unique to DNEG that we use to pass our work on to the next departments! But I'm assuming you mean workflow?\n\nIn Features we tend to get launched on our shots by the directors first. They'll tell us the brief of what they want to see in the shot, and what acting beats they really want us to hit. Then, I'll normally either go straight into blocking, or if it's something where I feel like reference might help, I'll book some time in our reference room and film myself acting out the shot, then pick the best takes. We'll normally show blocking a couple of times before it's approved. It then goes into IP (In Progress) which is when we spline it until it's almost finished. As soon as it's nearly there and it's selling all the main acting beats, we'll get approval from Directors on IP and then it moves into Polish which is where we get to tidy up, add those little final touches that make the shot feel special and great ^^",
+        "ts": "1583175420.003200",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/967789724913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a pretty typical workflow for Features, but for VFX it tends to work a little differently, mainly because directors tend to prefer seeing things in spline straight from the beginning, instead of stepped block. So your blocking is normally a little more refined!",
+        "ts": "1583175465.003300",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/977910803989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

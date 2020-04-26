@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh interesting! Glad to hear you're pursuing your passions :purple_heart: How come you couldn't do Sociology at GCSE?",
+        "ts": "1550586010.000600",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554203340081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I LOVED psychology at A-Level. I literally got full marks in the exams haha ... definitely still apply psychology every day (whether it is directly in my work and working with government and policymakers or working with people)",
+        "ts": "1550586067.000700",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/555845030615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you planning to go to university after your A-Levels? If so, what do you think you'll study?",
+        "ts": "1550586116.000800",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-19\/554778403362_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

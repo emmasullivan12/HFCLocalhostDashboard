@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy I just wanted to let you know I've moved to my uni accomodation and will be officially enrolling tomorrow. I'm really excited to start and I am settling into university nicely.",
+        "ts": "1569261221.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/757444223938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caitlin ! \nI did saw this today. It was a very good email :) I hope they will have something for your apprenticeship or that they can arrange to introduce you with the different careers through an observation day. ",
+        "ts": "1582164063.000200",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/960439924560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope that your school will find a coordinator to support you guys in pursuing opportunities. ",
+        "ts": "1582164090.000300",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/960440430000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTY9BJ5JM",
+                "created": 1582164163,
+                "timestamp": 1582164163,
+                "name": "File",
+                "title": "File",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 158,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTY9BJ5JM\/file?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTY9BJ5JM\/download\/file?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTY9BJ5JM\/file",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTY9BJ5JM-39aa6b6f7b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582164163.000400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Someone shared that on the mentor platform. Have you seen it before? ",
+        "ts": "1582164184.000700",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/948974097971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTWUNNKPD",
+                "created": 1582164222,
+                "timestamp": 1582164222,
+                "name": "The_Core_Skills_of_VFX_-_Student_Primer.pdf",
+                "title": "The Core Skills of VFX - Student Primer",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 738931,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTWUNNKPD\/the_core_skills_of_vfx_-_student_primer.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTWUNNKPD\/download\/the_core_skills_of_vfx_-_student_primer.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTWUNNKPD-6f844d0dbc\/the_core_skills_of_vfx_-_student_primer_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTWUNNKPD\/the_core_skills_of_vfx_-_student_primer.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTWUNNKPD-dad87535ed",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582164222.000800"
+    }
+]

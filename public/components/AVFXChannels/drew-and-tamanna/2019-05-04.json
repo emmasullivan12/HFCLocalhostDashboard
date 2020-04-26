@@ -1,0 +1,29 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.iamag.co\/making-japanese-inspired-canyon-homes-by-feng-zhu\/>",
+        "ts": "1556956466.000300",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-04\/628141482679_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "I.A. Magazine",
+                "title": "Making Japanese Inspired Canyon Homes by Feng Zhu",
+                "title_link": "https:\/\/www.iamag.co\/making-japanese-inspired-canyon-homes-by-feng-zhu\/",
+                "text": "Welcome to Episode 96 of Design Cinema. In this episode, Feng will design an environment which looks new and iconic yet retains enough familiar elements",
+                "fallback": "I.A. Magazine: Making Japanese Inspired Canyon Homes by Feng Zhu",
+                "thumb_url": "https:\/\/www.iamag.co\/wp-content\/uploads\/2019\/05\/Design-Cinema-EP-96-Japanese-Inspired-Canyon-Homes-3.jpg",
+                "ts": 1556868964,
+                "from_url": "https:\/\/www.iamag.co\/making-japanese-inspired-canyon-homes-by-feng-zhu\/",
+                "thumb_width": 1440,
+                "thumb_height": 635,
+                "id": 1,
+                "original_url": "https:\/\/www.iamag.co\/making-japanese-inspired-canyon-homes-by-feng-zhu\/"
+            }
+        ]
+    }
+]

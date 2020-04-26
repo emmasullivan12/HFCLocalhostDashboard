@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Congrats! Yeah Axis do a lot of games stuff so they may have a different setup to most studios. I know a few people over there so will ask them what they use next time I see them. They do have a studio in London and Bristol as well but not sure about internship.",
+        "ts": "1579538149.000400",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/915813526583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Working in games adverts sounds really fun, since you'd find out about a ton of cool stuff way before anyone else. Fast turnarounds sound difficult, but I'm sure I could get used to it. I'd ideally work in London, but I could work elsewhere. I'm not really tied down in any way.\n\nIt'll be a while away, but is it okay if I show you some of the stuff I'm working on for criticism at some point? My class is working on this huge advert for my university, and I've got an entire section to myself that I really want to make sure looks good so I can have my first big thing on my showreel.",
+        "ts": "1579539508.000500",
+        "username": "Max Brown (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/902518099107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

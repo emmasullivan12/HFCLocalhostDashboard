@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Marcelo :blush:  \nSorry about the late response, I don't receive notifications for some reason which is strange. I have two drawings which are both a work in progress but it will be completed hopefully this weekend, and then I can proudly show you my work and reviece criticism if you'd like to give it? :+1:",
+        "ts": "1573164272.002600",
+        "username": "Adeshewa Kosoko (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/813483516610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

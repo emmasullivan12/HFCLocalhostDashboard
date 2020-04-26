@@ -1,0 +1,177 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Drew, I'm Tamanna and I have decided to become an 3D asset maker.",
+        "ts": "1549535813.001600",
+        "username": "Tamanna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544872081765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have any advice with photorealistic texturing",
+        "ts": "1549537169.001700",
+        "username": "Tamanna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544685923410_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Tamanna, Lovely to meet you",
+        "ts": "1549539624.001800",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/546137305190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just spoke to our head of assets and one of the lead env artists",
+        "ts": "1549540213.001900",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544562383220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Basically we will try and use photographic textures when ever possible. We make great use of <https:\/\/www.textures.com\/>",
+        "ts": "1549540275.002000",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544563135028_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Textures.com",
+                "title_link": "https:\/\/www.textures.com\/",
+                "text": "Textures for 3D, Graphic Design and Photoshop 15 Free downloads every day!",
+                "fallback": "Textures.com",
+                "thumb_url": "http:\/\/www.textures.com\/images\/facebook_generic_share.jpg?v=5",
+                "thumb_width": 700,
+                "thumb_height": 700,
+                "from_url": "https:\/\/www.textures.com\/",
+                "service_icon": "https:\/\/www.textures.com\/images\/favicon-16.png",
+                "service_name": "textures.com",
+                "id": 1,
+                "original_url": "https:\/\/www.textures.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the main problem with purely photographic base textures is you dont have the relevant roughness, metalicity, normal map information",
+        "ts": "1549540313.002200",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544617081011_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now <http:\/\/textures.com|textures.com> does offer scans, which will come with all this",
+        "ts": "1549540328.002300",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544563764484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your other main pipeline tool is substance designer\/painter. They are so powerful and once you know your way around then you can create pretty much any material you want with fully Physically Based Render properties- ideal for easy shading",
+        "ts": "1549540398.002400",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/546146277046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I believe you can get a dirt cheap student license for substance",
+        "ts": "1549540416.002500",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/545789118151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Another good tool is quixel's megascans and mixer.",
+        "ts": "1549540440.002600",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544122254625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Quixel mixer now has a totally free open beta and it is incredibly powerful and a little easier to get to grips with than substance builder",
+        "ts": "1549540489.002700",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/543989498496_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/quixel.com\/megascans\/library\/latest>",
+        "ts": "1549540523.002800",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/544619478627_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Quixel",
+                "title": "Quixel Megascans Library",
+                "title_link": "https:\/\/quixel.com\/megascans\/library\/latest",
+                "text": "Discover a world of unbounded creativity. Explore a massive asset library, and Quixel’s powerful tools, plus free in-depth tutorials and resources.",
+                "fallback": "Quixel: Quixel Megascans Library",
+                "thumb_url": "https:\/\/d3uwib8iif8w1p.cloudfront.net\/megascans\/apps\/mixer_integration.jpg",
+                "from_url": "https:\/\/quixel.com\/megascans\/library\/latest",
+                "thumb_width": 2560,
+                "thumb_height": 2160,
+                "service_icon": "https:\/\/quixel.com\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/quixel.com\/megascans\/library\/latest"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Something like Marmoset viewer is ideal for quickly previewing your textures to see how they will look in a \"final\" rendered state",
+        "ts": "1549540569.003000",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-07\/546148273478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

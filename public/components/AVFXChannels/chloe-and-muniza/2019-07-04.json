@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was hoping to put them in my showreel as I don't feel as if I have enough work to show my skills in body mechanic or lipsyncing.\n\nAlso, that's a really good point! I enjoy drawing and reading comics so I could centre an animation piece around that. I also enjoy baking, karaoke and musical theatre! There's actually a lot of different scenarios I could do with these hobbies :smile: thank you for the suggestion! I will let you know once I start planning a short piece centered around one of these hobbies",
+        "ts": "1562231339.002800",
+        "username": "Muniza Fazal (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/684863429712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a question about becoming a senior animator - how long is an animator expected to be a junior animator before they can apply for a position as senior animator?",
+        "ts": "1562278151.002900",
+        "username": "Muniza Fazal (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/673971921906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

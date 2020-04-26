@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Micaela\n\nHow are you? I hope you are well. How is your course going?\n\nWork is pretty busy for me these days, but I'm really enjoying it too. The project I'm on has ramped up with a ton of animators on board, and the schedule is really starting to get tighter in terms of the amount of time we get with each task. I'm also getting more difficult but more interesting shots to animate on, so it's both challenging and fun.\n\nI heard about a networking event happening tomorrow, hosted by this group called Animated Women UK. I honestly don't know tons about them, and suspect they might be more generally focused on animators versus other areas of focus, but they say to come along to \"meet members of the VFX and animation industries\", so I figured it was worth sharing in case you might be interested:\n\n<https:\/\/www.eventbrite.co.uk\/e\/animated-women-london-networking-tickets-69863542737?ref=eios>",
+        "ts": "1567502834.000100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/733943041458_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Eventbrite",
+                "title": "ANIMATED WOMEN LONDON NETWORKING",
+                "title_link": "https:\/\/www.eventbrite.co.uk\/e\/animated-women-london-networking-tickets-69863542737?ref=eios",
+                "text": "4th September - Animated Women UK Networking Event - London",
+                "fallback": "Eventbrite: ANIMATED WOMEN LONDON NETWORKING",
+                "image_url": "https:\/\/img.evbuc.com\/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F69234217%2F86968154263%2F1%2Foriginal.20190820-112602?w=1000&auto=compress&rect=0%2C350%2C1500%2C750&s=f6f74405090085cc7c435cc964c7b479",
+                "fields": [
+                    {
+                        "title": "Where",
+                        "value": "7 Oxendon Street, London, SW1Y 4EE, United Kingdom",
+                        "short": true
+                    },
+                    {
+                        "title": "When",
+                        "value": "Wed 4 Sep 2019 at 18:30",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/www.eventbrite.co.uk\/e\/animated-women-london-networking-tickets-69863542737?ref=eios",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 90238,
+                "service_icon": "https:\/\/cdn.evbstatic.com\/s3-build\/perm_001\/eba891\/django\/images\/touch_icons\/apple-touch-icon-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/www.eventbrite.co.uk\/e\/animated-women-london-networking-tickets-69863542737?ref=eios"
+            }
+        ]
+    }
+]

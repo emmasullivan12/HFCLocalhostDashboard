@@ -1,0 +1,151 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been working on updating my showreel, would appreciate if you could take a look and share any feedback. <https:\/\/www.hhavens.com\/>  password: Harrym2020",
+        "ts": "1583065775.000400",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/976074862352_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "HHavensVFX",
+                "title": "VFX Compositor | London | Harry Havens | HHavens",
+                "title_link": "https:\/\/www.hhavens.com\/",
+                "text": "HHavens, Harry Havens, VFX artist, Compositor, London based.",
+                "fallback": "HHavensVFX: VFX Compositor | London | Harry Havens | HHavens",
+                "from_url": "https:\/\/www.hhavens.com\/",
+                "service_icon": "https:\/\/static.parastorage.com\/client\/pfavico.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.hhavens.com\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583065776.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Harry. Looking good so far. Here are some points that jumped out at me.",
+        "ts": "1583085235.000600",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/976228899296_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The particles in the first shot (Offcut) look nice but they don't move correctly. They should react to the Cg character. This is obviously tricky if you don't have the means to do that. I would either correct the movement or remove them out where the character is moving in frame. You don't want obvious mistakes on your first shot.",
+        "ts": "1583085431.000700",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/978093006503_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also the DOF doesn't look right yet. When he appears he is pretty sharp but the FG is still out. Just needs retiming so the focus switches to time with him popping up.",
+        "ts": "1583085568.000800",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/978441473862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your keying (Jumanji) shots is coming along nicely. However the DOF is not right, look at the defocus on the original plate. Look how those light stands are quite soft. Your BG jungle needs to be no sharper than this. Also the",
+        "ts": "1583085765.000900",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/978096036151_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it looks like you have reapplied the green spill. One good technique I do sometimes is to take the difference between my original and despill plate, multiply it with a blurred (By a lot, you don't want any detail) version the new BG and apply that. This adds the luminance values back with a bit of BG colour too.",
+        "ts": "1583085933.001000",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/978444877862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Persistance shot is nice. Typical TV episodic type of work so this is good for your reel. However the edges on some of your matte isn't working. Especially noticeable around the rope where I can see it is eroded in. Needs some edge work. Just keep referencing the original plate.",
+        "ts": "1583086243.001100",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/963449518434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The soldier roto seems a little wobbly around the top of the gun. Definitely fix this before sending out to TV\/film places.",
+        "ts": "1583086403.001200",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/963450800722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The last shot is quite ambitious and it still needs a lot of work. This is a shot where it is something that might be worth leaving off a junior reel as you are so reliant as a comper on good CG and smoke sims. From the comp side of things the big problem is the blacks don't match the plate. Some of the environment things you have added are nice. However some of the elements do not have correct defocus\/blacks matching. Also the light isn't balanced quite right.",
+        "ts": "1583087010.001300",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/976262078565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The main problem with the shot is the flying vehicle though, there should be a big shadow with the directional light in the scene. The blacks don't match and the dust and smoke doesn't work very well (Which I imagine was not done by you anyway)",
+        "ts": "1583087118.001400",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/975790569940_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On the whole I'm very impressed with where your reel is at. I think it would be good to consider putting another cleanup shot on the reel. One that is a bit trickier to do. A tricky cleanup on a junior reel will go a lot further than an average CG comp I assure you.",
+        "ts": "1583087332.001500",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/976245765920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keep me posted how you get on. Also don't be disheartened by my feedback, constructive feedback is part of VFX and something we all do to each other on a daily basis.",
+        "ts": "1583087512.001600",
+        "username": "James (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/963459374930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

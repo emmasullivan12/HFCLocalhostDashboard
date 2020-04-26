@@ -1,0 +1,253 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583790204.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583790204.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e66b87cb912c40004365c87|this link> with other teams to invite them in it_",
+        "ts": "1583790205.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1583790240.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"mark-and-anais\"",
+        "old_name": "z-shared-23",
+        "name": "mark-and-anais"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1583790276.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1583790282.000800",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583790430.001000",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1583790430.001200",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@anaiselmar has joined the channel_",
+        "ts": "1583790455.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990133988672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@amarksherwood has joined the channel_",
+        "ts": "1583790471.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989679855204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Anais, please meet Mark your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1583790491.001500",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/978667931507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1583790496.001600",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/978668044499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1583790500.001700",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/992345786982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good evening Mark,",
+        "ts": "1583791085.001800",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989695118532_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First of all, thank you very much for accepting to be my mentor, is a real privilege.",
+        "ts": "1583791154.001900",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990151498272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will write a bit about myself tomorrow (it is a bit late for me at the moment), but I just wanted to say Hello.",
+        "ts": "1583791217.002000",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/992364258950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, is there anytime when it is better for you to receive messages? I wouldn't want to bother you often, so maybe I can just send you some messages one specific day of the week",
+        "ts": "1583791281.002100",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/992019478471_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just a small introduction: My name is Anais Torreblanca; I am from Madrid, Spain, and I've been in London for almost 7 years (before that I also studied and did an internship in other countries: Finland, Denmark and US). My biggest passion is Film, but that seemed like an unrealistic long shot in Spain, so decided to study Media and Communications, with the hope to have a back up not too far away from film. Slowly I started to go into Postproduction, I specialised my studios in Edition, Animation, and I landed an internship in a VR company in London almost 7 years ago. After that, I started as a 'Video Producer' for the same company. As I wasn't too happy with what I was doing, a did an MA in Visual Effects Production (Compositing),  hoping to go into the VFX industry. I worked briefly as a Compositor and I got offered a job at Foundry. At that point I already had work in different Productions as an Editor, Compositor, and in the Art Department.",
+        "ts": "1583791679.002200",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980079141889_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the 2 years that I've been at Foundry, I spent most of the time working in Athera as a Workflow Specialist. Athera was (got canceled on November) a platform in the cloud, on which you could access different apps remotely (Nuke, Houdini, Blender, etc) and access your Storage in the cloud through them. I really enjoyed my time in that product, as I was able to help Projects, some for Netflix, Amazon Prime or BBC. Basically, I was guiding the customers through the softwares, helping with any issues they may had with the platform that may affect their productivity or deadline, and suggest changes to the Dev team about the platform\/software; sometimes this changes needed to be effective right away.",
+        "ts": "1583791953.002300",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980085618801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In 2020 I've been working on the Flix product, a storyboard platform, and the workflows with Editorial, mostly Avid.",
+        "ts": "1583791994.002400",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/992383912710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And basically, I would love to go back to Vfx, and hopefully be able to be a Production Manager",
+        "ts": "1583792017.002500",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/978706884787_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've got many questions about the right next step, I don't know if I should start as a Production Coordinator or if that is completely an entry level position, and if not, I wouldn't know which skills should I gain before going towards Production Manager.",
+        "ts": "1583792099.002600",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/992386307862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't feel too confident basically",
+        "ts": "1583792107.002700",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989721220324_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, it seems I won't have to write about myself tomorrow as I did a very long introduction. Just wanted to explain my situation and background.",
+        "ts": "1583792183.002800",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/978710631363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks again for accepting, have a lovely evening",
+        "ts": "1583792195.002900",
+        "username": "Anaïs Torreblanca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/980091153425_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

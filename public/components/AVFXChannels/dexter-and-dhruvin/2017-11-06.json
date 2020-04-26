@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "THAT'S MADDDDDDd",
+        "ts": "1509970541.000305",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/267005562017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":joy::sunglasses:",
+        "ts": "1509970554.000121",
+        "username": "dvalgi-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-06\/268605037991_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

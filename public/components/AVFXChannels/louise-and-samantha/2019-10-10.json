@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lousie, \nI'm sorry it been awhile! I currently in my final year of university. However, I was wondering if you possibly had any feedback from the portfolio I sent a couple of months ago :slightly_smiling_face:\n\nOh also, for my dissertation we have to write   about the industry we wish to get into and contact professionals working in that field. I was wondering it it be possible to ask you a couple of questions and use it in the dissertation  with your wirtten consent if this is possible :slightly_smiling_face: if not i completely understand. \n\nMnay thanks \nSamantha!",
+        "ts": "1570708777.000100",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790645228325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sam! Aside from checking your formatting and spelling I think your portfolio looked good, do you have a showreel as well? If you want to look into anim or previz roles they would usually like to see a showreel. I am more than happy to help answer questions for your dissertation.",
+        "ts": "1570715916.000200",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790339755620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

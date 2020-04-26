@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Felicia. Finally set up here at home. Couple of keying related questions that I find myself coming up against from time to time and Id be interested to know what your preferred means of talking them is. We have a couple of go to approaches in but I'm convince there has to be better as they aren't consistent enough.",
+        "ts": "1567974646.000100",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-08\/752395048356_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FMYDD3KU1",
+                "created": 1567974729,
+                "timestamp": 1567974729,
+                "name": "Capture.PNG",
+                "title": "Capture",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 377609,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMYDD3KU1\/capture.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMYDD3KU1\/download\/capture.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMYDD3KU1-8d1c044f7a\/capture_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMYDD3KU1-8d1c044f7a\/capture_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMYDD3KU1-8d1c044f7a\/capture_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 320,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMYDD3KU1-8d1c044f7a\/capture_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 426,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMYDD3KU1-8d1c044f7a\/capture_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 706,
+                "original_h": 627,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FMYDD3KU1\/capture.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FMYDD3KU1-ec942c42a7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1567974731.000200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also how do you manage motion blur on your keys.",
+        "ts": "1567976321.000500",
+        "username": "Shane Browne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-08\/740094584002_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

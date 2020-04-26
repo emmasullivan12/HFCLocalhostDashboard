@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Nico,\nI’m really glad about this mentorship. :slightly_smiling_face:\n\nA little background about me. I’m based in Montreal, originally from France. Transitioning from web design and motion design into VFX.\nSelf taught in the beginning then did two different courses on compositing. First being NAD school here in Montreal. This was a 12 weeks compositing program. I really enjoyed it. Introduced me to some basic keying, integration, 2D and 3D tracking, a bit of roto and Paint.\nThen I got hooked and got the opportunity to do the Framestore Launchpad training which i loved. Worked for Framestore as a paint and roto artist for a bit then switched to Atomic Fiction. Spent a year there, and learned a lot but haven’t been able to really put my comp knowledge into practice. Now i’m working on building a reel with a little bit more comp work as my goal is ideally to find a position as a junior comp here in Montreal. It should be done in about two weeks max, I would love to send it to you and have your thoughts and advice on it so i can push it further.\n\nI would love to learn more about you and your background. What’s your story, how did you end up in London working as a comp artist?\nOnce again, thanks for your time! have a great day!",
+        "ts": "1552658462.002100",
+        "username": "Anne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-15\/575784173920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

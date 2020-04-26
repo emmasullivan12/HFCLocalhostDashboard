@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So although I work in a pharmaceutical company I am an accountant but I really do enjoy this sector and will probably stay for a long time. So when I finished a levels I didn't know what I wanted to do and was planning to do business at university because it opened a lot of doors. However, the year I was due to go was the year the fees went up to 9k. Because of this I started looking at other options and there were a lot more opportunities other than going to university.  I came across a qualification that ended up being a better route for accountancy (takes less time, no fees and get experience). ",
+        "ts": "1508511222.000579",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-20\/258971968705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I always knew I wanted to work with figures but that was it !!!",
+        "ts": "1508511244.000213",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-20\/259413318483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The medical sector will require a degree most likely so it completely depends on the path you wish to take. ",
+        "ts": "1508511287.000287",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-20\/258972649425_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Although even within accountancy I am still not sure which path to take! Some people leave university and still not know what they want to do so the fact you know what sector will help in choosing experience that can help you and look good on your cv ",
+        "ts": "1508511392.000784",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-20\/259544253060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What a levels are you doing ",
+        "ts": "1508511451.000321",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-20\/260577836119_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

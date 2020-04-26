@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey! I hope all is going well. You might find this article interesting :slightly_smiling_face:\n<https:\/\/www.linkedin.com\/pulse\/7-questions-you-must-ask-art-school-before-giving-them-alwyn-hunt-1d\/>",
+        "ts": "1574039708.001500",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/838077616592_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "7 questions you must ask an Art School before giving them money",
+                "title_link": "https:\/\/www.linkedin.com\/pulse\/7-questions-you-must-ask-art-school-before-giving-them-alwyn-hunt-1d\/",
+                "text": "When looking for a school it's easy to get distracted by flashy advertising campaigns and glowing references from alumni. It's also a time when you could easily make a decision that you will regret because you didn't do your research.",
+                "fallback": "7 questions you must ask an Art School before giving them money",
+                "image_url": "https:\/\/media.licdn.com\/dms\/image\/C5112AQH6-ltCT03ykQ\/article-cover_image-shrink_720_1280\/0?e=1579737600&v=beta&t=nCzzDzwERVnnxnKXKnCjfr7stOjlGqwm1bMX-sNbQIM",
+                "from_url": "https:\/\/www.linkedin.com\/pulse\/7-questions-you-must-ask-art-school-before-giving-them-alwyn-hunt-1d\/",
+                "image_width": 374,
+                "image_height": 250,
+                "image_bytes": 200512,
+                "service_icon": "https:\/\/static-exp1.licdn.com\/scds\/common\/u\/images\/logos\/favicons\/v1\/favicon.ico",
+                "service_name": "linkedin.com",
+                "id": 1,
+                "original_url": "https:\/\/www.linkedin.com\/pulse\/7-questions-you-must-ask-art-school-before-giving-them-alwyn-hunt-1d\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, sorry for somw reason I hadn't seen your previous long message you took the time to write. Thankyou for having a look at my options I really appreciate it. As of now I've only been to one open day - UCA. Funnily enough my parents get all funny when I want to go to them was quite a struggle and then they brought up other subject's they wouod prefer I study",
+        "ts": "1574059883.001700",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/826797071251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im doing okay, I've decided to makw a couple bold changes on my epq which has kept me busy - and I do need to cut down my personal statement by alot so I havent sent me application for unis yet",
+        "ts": "1574059978.001800",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/830342897665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you that looks very useful I will havs a read of it. How are you doing?",
+        "ts": "1574060008.001900",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/837805564580_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Those were some really useful questions I will note for my other uni days. Thankyou",
+        "ts": "1574060362.002000",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/830346982881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

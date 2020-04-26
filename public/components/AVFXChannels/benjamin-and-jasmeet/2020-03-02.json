@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jasmeet. Amazing stuff. A background in traditional arts is a fantastic thing to have to complement then technical side of the 3d tooling.  \n\nPlease do share your portfolio.",
+        "ts": "1583219692.002100",
+        "username": "Benjamin Parry (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-02\/978818488336_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

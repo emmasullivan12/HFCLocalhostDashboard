@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, could you please tell me more about your profession\/speciality? How did you choose it?",
+        "ts": "1577438803.002700",
+        "username": "Malika Omarova (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/875762835427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

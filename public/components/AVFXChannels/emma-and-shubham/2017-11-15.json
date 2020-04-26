@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im interested in mechanical engineering ",
+        "ts": "1510747777.000121",
+        "username": "syadav-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272822668005_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And electrical engineering \n",
+        "ts": "1510748272.000248",
+        "username": "syadav-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272826291013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What makes you think you'll be a good engineer?",
+        "ts": "1510761136.000362",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273699467782_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are there any skills you think you lack in at the moment? I can try help you build them up or at least point you in the right direction!",
+        "ts": "1510761164.000539",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272746968579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are still things I try to improve even thought I've worked in engineering... e.g. team work \/ comms \/ and the latest technical developments",
+        "ts": "1510761191.000570",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272167405152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and trying to keep up to date with them",
+        "ts": "1510761198.000355",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/272747481235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @syadav-2011! I just read something that got me thinking ... it said \"Following your passion is bullsh*t. Follow knowledge instead. Be curious. Learn. That will take you places\"...what are you curious to learn about?",
+        "ts": "1510779127.000240",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/274126429095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":thinking_face:",
+        "ts": "1510779174.000154",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273923866966_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great! what year are you in? hope it's all going ok in lockdown?! I can help you with storyboarding (happy to reach out to any of the artsits at BZ for their advice too).",
+        "ts": "1586967010.002300",
+        "username": "Tom Box (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063140382693_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

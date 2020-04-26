@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I think im going to apply for free folk internship, with all my holidays been cancelled over the summer probably be worth trying, done quite a bit of work especially this year that I think I've got some decent stuff for a showreel.\n\nI'm going to have a go, worst that can happen is I get declined that's it. They extended the deadline to 3rd May giving me a little bit of time to put a showreel together, I've got some stuff I think is decent and I'll probably send you it to get your approval before I apply. I want to at least have a chance.",
+        "ts": "1587388669.001500",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079587526692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Titi, I was (and probably still am) a little nervous for any interview, it's quite common for everyone. The thing that helped most for me was just pretending to be confident, while still displaying enthusiasm &amp; professionalism. I've noticed when sitting in on interviews myself that half of it is to discuss your work and areas of expertise, and the other half to see what you're like as a person, as the interviewer will most likely be working along side you.",
+        "ts": "1580211114.000200",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-28\/914941622705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You've got some great work behind you that shows you're thoroughly into your craft and from our conversations I can see you're articulate and punctual, so I'm sure it'll go well!",
+        "ts": "1580211261.000300",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-28\/914944175441_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Before going into an interview it's good to remember that they aren't just there to pick apart your work. The fact that you are there at all means that you are able to produce the work they need, so it's worth interviewing back a little bit and asking any important questions you may have. Generally the interview turns into a discussion by the end, it's good for it to be conversational rather than question and answer",
+        "ts": "1580211429.000400",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-28\/914947046113_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope that helps",
+        "ts": "1580211444.000500",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-28\/925120839840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! \nIt does indeed help! \n\nThe biggest wall I find in front of me is my self-esteem. I don't believe much in myself even though on a skill level I feel I'm probably better than others around me. \n\nThe moment I usually feel much more comfortable is when I start talking about animation and the person I'm talking with actually understands what I'm saying. I'm happy to hear that an interview should be more a discussion instead of a question-answer dialogue.\n\nI should probably try to look more at the big picture and see their perspective as well.\n\nThank you very much for the insight! Hearing it from someone who's already in builds up my self-esteem! :)\n\nHave a great day! :D",
+        "ts": "1580213046.000600",
+        "username": "Titi-Marian Giusca (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-28\/925170079221_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Katherine! How’s it going?\n\nSorry for the delay in messaging, was a hellish week last week!\n\nAm I right I’m thinking I met you when you came to London from Cardiff with Jack??\n\nHow have you been, how are your projects going?? ",
+        "ts": "1583068787.001800",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/976095922976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

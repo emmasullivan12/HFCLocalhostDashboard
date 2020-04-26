@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the late reply",
+        "ts": "1539278742.000100",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454164263588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to become an accountant cause I want a job in banking sector",
+        "ts": "1539278930.000100",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/453731876977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel its a decent field to get a job in with a reasonable salary",
+        "ts": "1539278990.000100",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/455395536583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do not have many future plans as I am person who just wants to be on the safe side",
+        "ts": "1539279114.000100",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454341444098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You might think, I am not the most ambitious person around. ....",
+        "ts": "1539279294.000100",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/453605215072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Camilla,\nI've had my two interviews! The first one was really bad because my portfolio was really weak compared to other candidates, and it was at my 1\/2nd choice university:( HOWEVER,  I did get an offer so that's great! The interview for Kingston was good, as it was only 1 day apart from my Westminster one - I got an unconditional offer :smile: but only if I make that my first choice. After visiting Greenwich, Westminster and Kingston I'm struggling to decide which one I like better.. They all have their advantages and disadvantages",
+        "ts": "1550837617.000100",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-22\/559553627862_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's half term, so I have had time to relax and be more flexible with my time. I've been in school on Monday and Tuesday for art and spent Wednesday, Thursday and today to finish my geography coursework. It's going well, it's detailed, sophisticated and I'm making sure everything on the checklist is being met, so hopefully I secure a B or A, at least, in this coursework :slightly_smiling_face:",
+        "ts": "1550837778.000200",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-22\/557374952752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've only read extracts of Virginia Woolfe's work during GCSE's in English, for creative writing, they were good and I was interested in reading more. Perhaps I might even read the book you finished :smile:",
+        "ts": "1550837868.000300",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-22\/558124373602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These books seem interesting! I like your choice",
+        "ts": "1550837961.000400",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-22\/559557091798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that sounds fun, hope you have an amazing time!! You should tell me something about the interesting things you saw there or something new that you learnt - when you come back\nI will be having mock exams, so I'll be busy with revision and finishing off coursework etc.",
+        "ts": "1550838085.000500",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-22\/558004119315_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

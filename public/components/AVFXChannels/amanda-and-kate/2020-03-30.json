@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Kate, I hope you are staying safe and healthy.  Thanks for the background, its great that you had the opportunity to be in Montreal, in normal circumstances it would be an excellent place to look for work in the industry. Unfortunately, these are not normal times. The film industry is definitely badly hit at the moment as all productions are on hold.  I think your plan start at Coordinator positions is a good one, as the scale and size of the pipeline in large VFX studios, will be much different from what you've experienced. A Coordinator position would give the opportunity to learn the pipelines before moving on.  Which studios have you applied to so far?  At the moment, I would suggest that you keep in touch with your contacts at those studios, just check in with them in a couple of weeks and so on, so you know when they might start recruiting again.  I presume, you are on Linkedin - make sure you're following your favourite Studios and that you actively like and engage with any of their postings.  Its going to be a few more weeks before production gets back to normal, so i think its a question of keeping in touch and being ready.  You may also want to consider Production Assistant positions.  Each Studio will have a slightly different set up and job description for their roles - so might be worth researching each Studio.  I wish it were different times - but there will be an end and productions will start up again, when they do it will ramp up quickly as content will need to get released.  I'm happy to keep chatting in the meantime.  Stay safe.  Amanda",
+        "ts": "1585583165.000100",
+        "username": "Amanda Libotte (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035389138676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Amanda!\n\nThank you for your encouraging message. This time is definitely a special one and we will remember it. Things will change and I believe it’s for the best.\n\nIt sounds like I am on the right path. It was overwhelming at first to get to know all of the studios in Montreal, but eventually I made a list and applied with 17 of them. I attended networking events and parties organized by some of the studios, followed the pages on social media and contacted some of the recruiters. I was inspired by the family like atmosphere at DNEG and targeted to become a part of it. Unfortunately I received a refusal. But life is full of surprises and prepared another exciting teams to be a part of for me. This week I will have 2 in-person (video) interviews with Production Managers from the Framestore and Reel FX.\n\nI understand how different the pipeline might be. I searched for some additional information online and remained unsatisfied. I’d love to understand the most general VFX pipeline for films, for example. Just want to be confident before my interview and confirm my previously gained knowledge. Do you know of any special resources or articles that might answer my questions regarding the pipeline?\n\nWhat will you recommend to prepare or talk about on my interviews with the managers?\n\nAlso I was curious about your daily work and hoe you manage work from home. But I guess I’ve already asked too many questions. :smile:\n\nTake care,\nKate",
+        "ts": "1585618119.000200",
+        "username": "Kate (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1037097131205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

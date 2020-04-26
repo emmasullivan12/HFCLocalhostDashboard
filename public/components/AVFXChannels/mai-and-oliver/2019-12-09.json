@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh sorry I missed this, I don't usually check slack on weekends. Did you get a chance to talk to him?",
+        "ts": "1575882675.014400",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/867313167254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's okay, yes I did was very nervous haha but he seems really nice and I have him on LinkedIn now :)",
+        "ts": "1575908743.014500",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-09\/854235803139_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

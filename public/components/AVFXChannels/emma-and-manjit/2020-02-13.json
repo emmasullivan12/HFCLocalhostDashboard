@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi. Definitely not more than 50 mins away",
+        "ts": "1581607026.000800",
+        "username": "Manjit Matharoo (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/950505322868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

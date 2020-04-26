@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Halo, is there any channels you found useful in learning modeling?",
+        "ts": "1576848923.001200",
+        "username": "Malika Omarova (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/869165059474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

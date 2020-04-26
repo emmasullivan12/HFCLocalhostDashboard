@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am so sorry! I ended up getting so busy!!",
+        "ts": "1585787464.001500",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042532064340_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This app does not give notifications which is annoying.",
+        "ts": "1585787522.001600",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1033319235921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does 4pm this Friday work for you? 1 pm for me in California.",
+        "ts": "1585787590.001700",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1030368035506_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

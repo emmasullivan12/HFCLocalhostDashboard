@@ -1,0 +1,81 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's cool, what do you want to do at Uni? What subjects do you really enjoy at school?",
+        "ts": "1538486574.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447235953588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I went to Aston uni - they have amazing degree courses on business studies etc. This might be a good path for you, if you want to start your own business?",
+        "ts": "1538486608.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447416234450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's a link to Aston - you can see their courses. Might be of interest!",
+        "ts": "1538486644.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447416683698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www2.aston.ac.uk\/study\/undergraduate\/courses\/abs>",
+        "ts": "1538486645.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/447236907796_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "  Aston Business School - Undergraduate BSc &amp; LLB ",
+                "title_link": "https:\/\/www2.aston.ac.uk\/study\/undergraduate\/courses\/abs",
+                "text": "Studying business at Aston will give you the opportunity to develop both your academic and practical skills. Our degrees prepare you for tackling real-life issues and will teach you how to make the most of opportunities and also how to respond to challenges.",
+                "fallback": "  Aston Business School - Undergraduate BSc &amp; LLB ",
+                "from_url": "https:\/\/www2.aston.ac.uk\/study\/undergraduate\/courses\/abs",
+                "service_icon": "https:\/\/www2.aston.ac.uk\/favicon.ico",
+                "service_name": "www2.aston.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www2.aston.ac.uk\/study\/undergraduate\/courses\/abs"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can definitely get involved in small businesses at 17. What kind of business would interest you? Do you have any passions?",
+        "ts": "1538486685.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/448778342694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sometimes the best way in is through work experience. Do you have any experience or would you like to get some?",
+        "ts": "1538486754.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-02\/448471308487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

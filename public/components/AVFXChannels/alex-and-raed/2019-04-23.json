@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Getting exposure to new languages is a great exercise. Maybe you prefer JS :slightly_smiling_face:",
+        "ts": "1556006724.000600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-23\/609396064001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

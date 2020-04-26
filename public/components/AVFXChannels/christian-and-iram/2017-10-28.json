@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure :slightly_smiling_face: :slightly_smiling_face: ",
+        "ts": "1509193699.000060",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-28\/263514328100_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Micaela!\n\nI'm doing fine thanks. Congrats on the new job, and getting to stay in London! How does it feel to be back?\n\nDefinitely no need to apologise, it's totally understandable. Moving across countries and trying to find jobs is hard, stressful, and takes a ton of time! I figured you were busy with that kind of stuff. And it sounds like things really have been busy for you, first going to Argentina, and then coming back here again for a new job. While it's not what you would ideally like to be doing, getting experience working at a startup software company and doing visually oriented work for your job seems totally valuable and not completely unrelated to VFX, and if nothing else at the very least it allows you to stay in London and earn a living while working towards your VFX goals. I'm glad to hear the company is nice so far too! I hope this week is going well for you so far.",
+        "ts": "1551274650.000500",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/561555877920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've also been trying to find a new workstation\/notebook recently, I have a very old MacBook and it has a really bad graphics card. I think for our kind of work, one of the most important components is the graphics card \/ GPU. Basically most people only recommend Nvidia graphics cards if you are working with Maya a lot. If not, I'm less sure because I don't really use with Nuke or Houdini, but I suspect Nvidia would be a safe bet for them too",
+        "ts": "1551274838.000600",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562631893077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe setting some specific goals for yourself would be a good way to try to make some progress with your own VFX work over the next year. I would be happy to try to help with that if it interests you?",
+        "ts": "1551274936.000700",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-27\/562633394469_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Yaw,\nSorry for the delay in my reply, I have been very busy working on some new projects the last weeks.\nThat’s wonderful news that you got a runner position at Dneg, congratulations!\nIt’s a perfect way to get into the VFX industry and learn a lot of tips and tricks form colleagues in a big VFX production house.\nDneg have really good learning resources, check out their web training resources. (But I’m sure they have already showed you this). It’s also a great opportunity to learn thing for colleagues you work with and to get some new pieces for your showreel. They usually invite guest speakers once a week and I can recommend to go and listen to them if you have the opportunity.\n\nAnd don’t forget to enjoy the monthly beer and pizza Fridays! :wink:\n\nGood luck and let me know if you have any questions or things you wonder about and I  will try to answer as best as I can.",
+        "ts": "1553178900.000200",
+        "username": "Kajsa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/583955051988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

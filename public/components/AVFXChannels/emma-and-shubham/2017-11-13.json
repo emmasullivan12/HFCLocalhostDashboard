@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I focus when I am alone but teamwork is fine as well ",
+        "ts": "1510583108.000379",
+        "username": "syadav-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/272223630934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

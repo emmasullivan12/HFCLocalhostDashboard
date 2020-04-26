@@ -1,0 +1,122 @@
+[
+    {
+        "type": "message",
+        "text": "Hi <@U5XLJFDD1> all is going ok and you ? How was your weekend ?that is really good and to be honest a lot of times having a bit of curiosity is good as this experience will help to relate easier when you are learning .  ",
+        "user": "U5WRX90MB",
+        "ts": "1500276240.633361",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0d7b3d5bf4a2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-27\/203985798659_0d7b3d5bf4a2f491ebdc_72.png",
+            "first_name": "Geronimo",
+            "real_name": "Geronimo",
+            "display_name": "gerob",
+            "team": "T4UUTPV18",
+            "name": "gerob",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How is the career plan going? Sorry for the late reply , but let me know any help you need ",
+        "user": "U5WRX90MB",
+        "ts": "1500276419.676366",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0d7b3d5bf4a2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-27\/203985798659_0d7b3d5bf4a2f491ebdc_72.png",
+            "first_name": "Geronimo",
+            "real_name": "Geronimo",
+            "display_name": "gerob",
+            "team": "T4UUTPV18",
+            "name": "gerob",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Some actions for now a day that I think might help is watching some short ted talks or courses on topics you like( I've done a few in coursera and other websites ) some for work some for fun and lots of the one I've done for \"fun\" of my own curiosity actually helped me in some of my career and studies in topics I enjoyed  . Also there are a few good website that the plan suggest. ",
+        "user": "U5WRX90MB",
+        "ts": "1500276653.733538",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0d7b3d5bf4a2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-27\/203985798659_0d7b3d5bf4a2f491ebdc_72.png",
+            "first_name": "Geronimo",
+            "real_name": "Geronimo",
+            "display_name": "gerob",
+            "team": "T4UUTPV18",
+            "name": "gerob",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Something that it was shared with me at the time and I used for my long term development plan was this . ",
+        "user": "U5WRX90MB",
+        "ts": "1500276779.764166",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0d7b3d5bf4a2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-27\/203985798659_0d7b3d5bf4a2f491ebdc_72.png",
+            "first_name": "Geronimo",
+            "real_name": "Geronimo",
+            "display_name": "gerob",
+            "team": "T4UUTPV18",
+            "name": "gerob",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<https:\/\/youtu.be\/khOaAHK7efc>",
+        "user": "U5WRX90MB",
+        "ts": "1500276781.764688",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "0d7b3d5bf4a2",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-27\/203985798659_0d7b3d5bf4a2f491ebdc_72.png",
+            "first_name": "Geronimo",
+            "real_name": "Geronimo",
+            "display_name": "gerob",
+            "team": "T4UUTPV18",
+            "name": "gerob",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "What If Money Was No Object? - Alan Watts",
+                "title_link": "https:\/\/youtu.be\/khOaAHK7efc",
+                "author_name": "Tragedy & Hope",
+                "author_link": "https:\/\/www.youtube.com\/user\/tradgedyandhope",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/khOaAHK7efc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: What If Money Was No Object? - Alan Watts",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/khOaAHK7efc?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/khOaAHK7efc",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1
+            }
+        ]
+    }
+]

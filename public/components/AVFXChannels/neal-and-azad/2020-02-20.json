@@ -1,0 +1,195 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FU8DRUQ2G",
+                "created": 1582193962,
+                "timestamp": 1582193962,
+                "name": "Screenshot_20200220-101852.jpg",
+                "title": "Screenshot 20200220-101852",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 99372,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU8DRUQ2G\/screenshot_20200220-101852.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU8DRUQ2G\/download\/screenshot_20200220-101852.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 203,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1422,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU8DRUQ2G-7f4c7e7a6a\/screenshot_20200220-101852_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 1920,
+                "thumb_tiny": "AwAwABvSwO9GOKQbsnkdeMUuD6\/pQAY+n5UuKKKAGZ5PI\/Ol3e4pNmSaXyx70AG73FOpAoHrS0AISAaMijv0oP0oACQKWkP0paAP\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FU8DRUQ2G\/screenshot_20200220-101852.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FU8DRUQ2G-8084408ce8",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582193966.002700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So far so good! What would I say for salary expectations? She said the runner role is 18k annually starting so should I just say that?",
+        "ts": "1582194033.003000",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/950799991025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "one step closer...yea, i think if you are happy to take 18k, then go for it",
+        "ts": "1582195775.003100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/960508007908_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can possibly ask for a salary review in 6 months if you were expecting more?",
+        "ts": "1582195801.003200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/962824688327_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh fair enough, hopefully in 6 months I get a position as a junior if I'm hired, how does a salary review work?",
+        "ts": "1582197729.003300",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/950883228097_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At Union, you normally run between 6-12 months depending on how busy they are. After that, you will become a junior in whatever discipline you want. some runners have come in with a 3D reel, then decided that they want to be in editorial after working there so there is that flexibility",
+        "ts": "1582198087.003400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/949545721059_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Salary review is basically that. a review of your salary after a set length of time. You could ask for a review in 6 months and if they feel you're doing a good job will bump your pay up. for example you go in at 18k, but after 6 months they may feel like you're doing a really good job and go up to 20k",
+        "ts": "1582198196.003500",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/962878480231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but just to get your foot in the door, i'd take the starting salary and the money will come later",
+        "ts": "1582198243.003600",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/949549233347_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow didn't know it's flexible as to what department I can go in, nice! Will they provide help and help you learn along the way? I do intend to carry my own weight but just wondering what is expected of me, I know that asking for help is never an issue, But say I was interested in 3D and I wanted a jump, will they support me based on my ability level or will they help me get up to a standard of ability level? As 3D has always caught my eye and I'm fairly decent at it, but my showreel is not based in that and I haven't really touched 3D in a while so I might be rusty lol\n\nYeaaa main objective is just getting in I'm not too fussed about the pay at the moment so it's okay",
+        "ts": "1582208469.003700",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/961254227808_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes if you wanted to get into 3D, they will help, although they would expect you to self learn. You will have the kit to learn on and if you wanted t stay late to play with the software and work through the tutorials they have there, then this won't be an isssue. They also have an FXPHD account, so you'll be able to join that and work through all the tutorials on their too. The advantage is that if you are stuck or can't figure something out, there is some amazing talent to just go and ask to help and get instant feedback",
+        "ts": "1582210072.003800",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/951185643873_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay perfect, that's reassuring especially with asking for help and the courses they will have available to get good, seems very supportive!",
+        "ts": "1582215623.003900",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/961526283317_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "when is your interview?",
+        "ts": "1582218180.004000",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/951477033713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They are still deciding for some time next week which is flexible around my shifts, but I have replied by email letting them know my notice period and other info",
+        "ts": "1582237500.004100",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/961734600500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

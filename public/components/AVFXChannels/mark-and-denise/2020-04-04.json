@@ -1,0 +1,44 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Denise, I just came across this and it looks like it's limited to x amount of people.\n\n<https:\/\/www.pluralsight.com\/offer\/2020\/free-april-month?clickid=x0Gw77yGZxyOU9CwUx0Mo3EWUki04l1xn0vkT00&amp;irgwc=1&amp;mpid=121977&amp;utm_source=impactradius&amp;utm_medium=digital_affiliate&amp;utm_campaign=121977&amp;aid=7010a000001xAKZAA2>",
+        "ts": "1586038920.005200",
+        "username": "Mark Millena (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1045142746919_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Free April Month",
+                "title_link": "https:\/\/www.pluralsight.com\/offer\/2020\/free-april-month?clickid=x0Gw77yGZxyOU9CwUx0Mo3EWUki04l1xn0vkT00&irgwc=1&mpid=121977&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=121977&aid=7010a000001xAKZAA2",
+                "fallback": "Free April Month",
+                "image_url": "https:\/\/www.pluralsight.com\/content\/pluralsight\/en\/offer\/2020\/free-april-month\/jcr:content\/image-res\/file.transform\/share-image\/image.img.3c993cfd-8202-494d-8b16-41267dbda4e7.jpg",
+                "from_url": "https:\/\/www.pluralsight.com\/offer\/2020\/free-april-month?clickid=x0Gw77yGZxyOU9CwUx0Mo3EWUki04l1xn0vkT00&irgwc=1&mpid=121977&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=121977&aid=7010a000001xAKZAA2",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 28955,
+                "service_icon": "https:\/\/www.pluralsight.com\/etc\/clientlibs\/pluralsight\/main\/images\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "pluralsight.com",
+                "id": 1,
+                "original_url": "https:\/\/www.pluralsight.com\/offer\/2020\/free-april-month?clickid=x0Gw77yGZxyOU9CwUx0Mo3EWUki04l1xn0vkT00&amp;irgwc=1&amp;mpid=121977&amp;utm_source=impactradius&amp;utm_medium=digital_affiliate&amp;utm_campaign=121977&amp;aid=7010a000001xAKZAA2"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586038921.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can access Nuke VFX training. I've used them in the past when Framestore had access and it was quite good. I've signed up just now so maybe tomorrow or in the week we can discuss some things you could learn.",
+        "ts": "1586038979.005400",
+        "username": "Mark Millena (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1039373343171_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

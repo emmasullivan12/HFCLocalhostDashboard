@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dont worry too much about it, I'm just curious to see where you're at. I think your reel will be the most important thing when you're going to look for a job though, so its definitely something to keep in mind and work on :)",
+        "ts": "1575718463.001900",
+        "username": "Felicia Petersen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/864010621941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

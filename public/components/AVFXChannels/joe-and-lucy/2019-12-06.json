@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For the cap of the bottle. I think I would model the lip hook thing by using only the outside faces and then when I'm done extrude the faces inwards and begin filling the faces. The shape I would just extrude the faces up and then make the edge flow follows the shape",
+        "ts": "1575621468.005500",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862104525652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that makes sense. I can try modelling an example of this if you want. Also it doesn't matter to much with the bottle as I don't think it will deform. But normally it good to keep your quads as square as possible. If this is for games I would normally just say no as polycount is a valuable",
+        "ts": "1575621596.005600",
+        "username": "Joe Lee-Jones (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/864771895542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh ok! That’s great help thank you, I will try that when I get the chance! ",
+        "ts": "1575623425.005700",
+        "username": "Lucy White (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/849815076642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

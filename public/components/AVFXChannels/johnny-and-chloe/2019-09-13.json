@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Internet will come, Have a great weekend",
+        "ts": "1568399806.000600",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-13\/762061619302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

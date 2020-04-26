@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hi Ashley!! great to meet you - lately I don't have any major concepts at the moment but if I send you my artstation could you tell me what you think?",
+        "ts": "1580497552.001700",
+        "username": "Laith Shewayish (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/918830117058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

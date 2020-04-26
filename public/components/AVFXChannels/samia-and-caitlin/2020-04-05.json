@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caitlin! Sorry for the late answer. I don’t understand why I only receive notifications from the mentors group chat. Will fix that now! \nIt’s been rough for the past 3 weeks as the whole VFX industry was not set up to work remotely. Now things are starting to settle down and as VFX take times to produce, we still have work for a bit. Hollywood has stopped filming which will slow down business for a bit, but so far so good. In Montreal stores and companies are closed until May 4th (except essentials). How are you holding up? Have they organized for remote school? How do you pass the time? ",
+        "ts": "1586119220.000300",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1038908597890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

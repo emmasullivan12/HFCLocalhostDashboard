@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/introducing-flame.html?m=1>",
+        "ts": "1574158798.013200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/832227484705_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Introducing \"Flame\"",
+                "title_link": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/introducing-flame.html?m=1",
+                "text": "Congratulations to our MA animation students who have recently completed their short film project: \"Flame\", which is now being entered...",
+                "fallback": "Introducing \"Flame\"",
+                "image_url": "https:\/\/lh6.googleusercontent.com\/proxy\/C0dsybi-HDygaN08A4ODUhzW_8uhd6WLjb7QIBq4pbAYnKzncj_wZWV1QtD0T8-Y7V-NdKBwbq6y-WitiZi3t8sFOeU=w1200-h630-n-k-no-nu",
+                "from_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/introducing-flame.html?m=1",
+                "image_width": 333,
+                "image_height": 250,
+                "image_bytes": 7374,
+                "service_icon": "https:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/introducing-flame.html?m=1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahah that’s so cute",
+        "ts": "1574158920.013400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/840158184832_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yea love the idea !",
+        "ts": "1574159088.013500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/832233131217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still haven’t finished my roto",
+        "ts": "1574160242.013600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/828712691251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a question, how do I change the pivot point for my roto in Silhouette  ? It has been bugging me for a while.. (I haven’t used it for a while but trying to pick up a practice project i started)",
+        "ts": "1574191767.013700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/833066824801_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

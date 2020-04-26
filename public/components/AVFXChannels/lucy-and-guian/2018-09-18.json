@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Guian. How are you? Are you back at college after holidays?  Please let me know how I can be more helpful to you. We have received general feedback that the mentees would like 1) A better understanding of what skills are required in their desired careers and how to get them\nand 2.) Examples\/pictures of the workplace and pieces of work you are up to.  Would this be helpful to you?  If so I can definitely help with 2) and with 1) if you let me know a wee bit more about what you'd like to know.  :slightly_smiling_face:",
+        "ts": "1537272584.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-18\/437682692339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lucy I am back at college and the info from the feedback would be extremely helpful as it can be quite daunting to understand how exactly to specialise in such a diverse space. I would like to know more about portfolios especially on how to build a  unique and well developed one that would stand out to employers and universities.",
+        "ts": "1537273434.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-18\/437970301445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

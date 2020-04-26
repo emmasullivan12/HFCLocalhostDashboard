@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498636725.719368",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the group"
+    },
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498636785.732543",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the group",
+        "inviter": "U4V22C6A1"
+    },
+    {
+        "type": "message",
+        "subtype": "group_archive",
+        "ts": "1498636810.739560",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> archived the private channel"
+    }
+]

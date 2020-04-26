@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey there’s this graduate scheme I was accepted to at my uni where they’ll help me\nmake a pilot, do you know any producers or directors I can possibly hit up for advice ? ",
+        "ts": "1567312839.000400",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-31\/745039451664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

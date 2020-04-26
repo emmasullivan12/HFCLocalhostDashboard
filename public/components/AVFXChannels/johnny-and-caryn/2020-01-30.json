@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem, I'll send them over sometime tomorrow :slightly_smiling_face:",
+        "ts": "1580391153.001100",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/917620866691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

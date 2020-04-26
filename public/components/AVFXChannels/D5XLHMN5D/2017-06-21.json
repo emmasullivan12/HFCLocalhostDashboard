@@ -1,0 +1,318 @@
+[
+    {
+        "type": "message",
+        "text": "Hey Emma, I didn't get anything through today, will it be tomorrow now? Just thought I'd check in with you, I was checking it regularly don't know if I missed something?\nThanks Emma!",
+        "user": "U5WRFMCCA",
+        "ts": "1498072670.182003",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fe9db945c7f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201684935670_fe9db945c7f4b64a40b9_72.png",
+            "first_name": "Elliot",
+            "real_name": "Elliot",
+            "display_name": "elliot0520",
+            "team": "T4UUTPV18",
+            "name": "elliot0520",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Elliot - thanks for chasing!",
+        "user": "U4V22C6A1",
+        "ts": "1498073089.322247",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Elliot - here is a profile for your mentee, Ivanna!",
+        "files": [
+            {
+                "id": "F5WQDD28Y",
+                "created": 1498073120,
+                "timestamp": 1498073120,
+                "name": "Prospela - Your Mentee Profile - Ivanna.pdf",
+                "title": "Prospela - Your Mentee Profile - Ivanna.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 239054,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WQDD28Y\/prospela_-_your_mentee_profile_-_ivanna.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F5WQDD28Y\/download\/prospela_-_your_mentee_profile_-_ivanna.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F5WQDD28Y\/prospela_-_your_mentee_profile_-_ivanna.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F5WQDD28Y-f4a7eec5b5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498073121.333589"
+    },
+    {
+        "type": "message",
+        "text": "Unfortunately she hasn't logged in to the platform as yet so we can't introduce you at the moment ... hopefully later tonight or tomorrow (when her teacher gives her a nudge!)",
+        "user": "U4V22C6A1",
+        "ts": "1498073155.344900",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "She says she might want something in music, but it seems she needs a bit more guidance about other careers that are out there (hence why we partnered her with you with experience in the recruitment space)",
+        "user": "U4V22C6A1",
+        "ts": "1498073206.361821",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "She was also relatively weak in areas e.g. proactivity and communication skills (where we think you are bloody strong!! ... proactivity above a case in point haha!!) so thought you might be well placed to guide her and hopefully teach her a few new skills :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1498073265.381601",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "No worries! ",
+        "user": "U5WRFMCCA",
+        "ts": "1498074949.949196",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fe9db945c7f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201684935670_fe9db945c7f4b64a40b9_72.png",
+            "first_name": "Elliot",
+            "real_name": "Elliot",
+            "display_name": "elliot0520",
+            "team": "T4UUTPV18",
+            "name": "elliot0520",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ah amazing thanks for sending that over, all good that's no problem ",
+        "user": "U5WRFMCCA",
+        "ts": "1498075036.979229",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fe9db945c7f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201684935670_fe9db945c7f4b64a40b9_72.png",
+            "first_name": "Elliot",
+            "real_name": "Elliot",
+            "display_name": "elliot0520",
+            "team": "T4UUTPV18",
+            "name": "elliot0520",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Oh ",
+        "user": "U5WRFMCCA",
+        "ts": "1498075039.980213",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fe9db945c7f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201684935670_fe9db945c7f4b64a40b9_72.png",
+            "first_name": "Elliot",
+            "real_name": "Elliot",
+            "display_name": "elliot0520",
+            "team": "T4UUTPV18",
+            "name": "elliot0520",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "*oh okay sure, I've known quite a few people who have gone into music education (studying acm) and know people aspiring to be musicians and I'm a musician myself so there's common ground there, I'm sure I can help with some guidance there! But absolutely I can definitely help with other areas as well",
+        "user": "U5WRFMCCA",
+        "ts": "1498075153.019801",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fe9db945c7f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201684935670_fe9db945c7f4b64a40b9_72.png",
+            "first_name": "Elliot",
+            "real_name": "Elliot",
+            "display_name": "elliot0520",
+            "team": "T4UUTPV18",
+            "name": "elliot0520",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I see that on her ratings, absolutely , excited to try help her out with that then! Haha thanks very much! \n\nNo worries well will look out for when she logs on then!\n\nThanks Emma",
+        "user": "U5WRFMCCA",
+        "ts": "1498075366.098156",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fe9db945c7f4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201684935670_fe9db945c7f4b64a40b9_72.png",
+            "first_name": "Elliot",
+            "real_name": "Elliot",
+            "display_name": "elliot0520",
+            "team": "T4UUTPV18",
+            "name": "elliot0520",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yes we noticed your music in your sign up form!",
+        "user": "U4V22C6A1",
+        "ts": "1498075950.296887",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "and composition",
+        "user": "U4V22C6A1",
+        "ts": "1498075956.298974",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "which is great!",
+        "user": "U4V22C6A1",
+        "ts": "1498076043.328068",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "You will have to play something with my dad (*new band alert*)",
+        "user": "U4V22C6A1",
+        "ts": "1498076066.335550",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

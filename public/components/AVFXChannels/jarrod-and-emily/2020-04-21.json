@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/e67dbc929cbb\/#1596329\/1865252> here's an even better link!",
+        "ts": "1587503298.003600",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1101190016496_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: New Review",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/e67dbc929cbb\/#1596329\/1865252",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: New Review",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/e67dbc929cbb\/#1596329\/1865252",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/e67dbc929cbb\/#1596329\/1865252"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587503298.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome :D thanks, I'll have a reply for you tomorrow! Do you have a file handy?",
+        "ts": "1587504840.003800",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1077398983522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much! I can send over the both the muscle file and the fat\/skin one if you want, how is easiest?",
+        "ts": "1587507881.003900",
+        "username": "Emily shordon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1070752102918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

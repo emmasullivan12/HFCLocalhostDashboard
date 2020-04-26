@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hows it going Ravena? Are you enjoying the holidays?",
+        "ts": "1577459360.000100",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/874682645282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd love to go to Dundee, but after seeing the animation department at Edinburgh I'd like to go to either. I love the whole process, from working out how the movements would look to drawing the frames. But I think my favourite part about animation is seeing it all put together in the end. How did you get into doing animation as a job? ",
+        "ts": "1544193513.001000",
+        "username": "Carmen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-07\/499671096150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "text": "Hi Alexis - just wanted to check in and see if you are around and still interested in having a mentor?",
+        "user": "U5WR9CJTC",
+        "ts": "1499758469.443655",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Helen. Yes I am still interested in having a mentor and sorry for the late reply but I had some trouble figuring out how the app works and my friend has just helped me. ",
+        "user": "U632EJECV",
+        "ts": "1499805065.073847",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g16ce1eaf30a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a16ce1eaf30adad8c9134f06d78be6cd.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Alex",
+            "real_name": "Alex Lisowska",
+            "display_name": "aloxis",
+            "team": "T4UUTPV18",
+            "name": "aloxis",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I am currently in college studying A- levels psychology, physics and maths. I am still bit unsure whether I would like to proceed into forensic psychology or astronomy and as these are two completely different fields, I am aware I can include only one in my personal statement. Therefore I was hoping that this programme will help me get better view of both careers in terms of the jobs and aspects of them and so help me make my final decisions regarding which course to apply for in University.",
+        "user": "U632EJECV",
+        "ts": "1499805251.172726",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g16ce1eaf30a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a16ce1eaf30adad8c9134f06d78be6cd.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Alex",
+            "real_name": "Alex Lisowska",
+            "display_name": "aloxis",
+            "team": "T4UUTPV18",
+            "name": "aloxis",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

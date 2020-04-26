@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Camilla, it’s fine I’ve been quite busy too ",
+        "ts": "1538609186.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/450177974358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I’m planning to live at home when I’m at uni, I think it’s better financially and I can learn to manage my time wisely when commuting to and from uni (in the future I don’t want to be alarmed and stressed by having to travel a bit for jobs etc.)",
+        "ts": "1538609351.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/448639625812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think there’s a lot of experiences I want to get from going uni. Firstly being the second in my household to go to uni is quite exciting, I want to meet new people and make friends. I’d also like to gain a variety of skills including: public speaking, independence, time management etc. ",
+        "ts": "1538609648.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/449873281655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also as I mentioned at the start, I was busy regarding my subjects. My geography trip was for a week and then I became ill after returning so I missed out on a large chunk of lesson time and felt a lot of stress and pressure trying to catch up. I spoke to my head of sixthform that it would be best if I just did 3 A-Levels and that I should drop philosophy to free up time to focus on my art work. Also philosophy was the only subject I got an AS grade in so practically if I do drop it my one year worth of education doesn’t entirely go to waste because I got UCAS points for it. ",
+        "ts": "1538609811.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/450182516342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "He’s also my philosophy teacher and he thinks I shouldn’t drop his subject because I’m a strong candidate. But now my art teacher is annoyed that I won’t drop geography because it’s the subject that’s taking up my art lessons space. But they weren’t understanding I am perfectly capable of making art in my free periods and going to 3 of the lessons I do have available. I really want to do geography AND art as they’re both relevant to architecture. Philosophy isn’t as useful to me anymore and it’s actually quite challenging to understand. ",
+        "ts": "1538610055.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/448086938720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They won’t listen to me and my art teachers are so frustrated with me not being on the same pace as the other two students in the class, so now I’m just going to drop \nart :( ",
+        "ts": "1538610139.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/448087516944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll just use my art book for my portfolio and do other drawings and paintings at home. ",
+        "ts": "1538610224.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/449008408421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My friends suggested using my gap year to do an art course or something if it’s available ",
+        "ts": "1538610250.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-03\/448222482161_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

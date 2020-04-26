@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija! Oki dojo that’s great! I’ll take a look this evening and we can arrange a call for Thursday or Friday? I’m free during the daytime then ",
+        "ts": "1569352097.000200",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/765401975873_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! \n\nI am fine with both days at pretty much anytime more suitable for you! \n\nThank youu! :blush:",
+        "ts": "1569361812.000300",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/760552782035_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

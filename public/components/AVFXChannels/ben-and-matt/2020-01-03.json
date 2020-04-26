@@ -1,0 +1,106 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's reall easy to use pheonix! Good fun too if you ever get any spare time haha. \n\nDo you use mostly FX from the FX team for things like fire\/ smoke or is any of that 3D VFX or does it simply depends on how much detail is needed etc? \n\nYeah hopefully it is for you! Haha Good luck getting it done :grin:.. what you working on now? :eyes:",
+        "ts": "1578059156.001000",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-03\/894626696918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there a way where I can draw the initial mask and then have that mask track through the scene and then I can clean up where it went wrong rather than manually doing in through the whole scene? or is that not a good idea?",
+        "ts": "1578059597.001100",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-03\/892436916453_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "track through the sequence**",
+        "ts": "1578059612.001200",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-03\/882193491681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It kind of depends really. In this particular sequence the director and show runner wanted to do some weird stuff with the movement of the fire so we have done a lot with FX. It all depends what’s happening with it in the shot really. For a shot like your shot I would probably have used an element from the element library. Just because there probably isn’t time in the time the client is paying for the shot to do fx fire. But it all depends what the client wants really!\n\nAt the mo I’m working on a fantasy show for Netflix which is pretty fun despite the deadlines being pretty intense. \n\nFor the masking, what context do you mean?",
+        "ts": "1578059828.001300",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-03\/894289669879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FS8F64T3P",
+                "created": 1578063609,
+                "timestamp": 1578063609,
+                "name": "Masked-Building.jpg",
+                "title": "Masked-Building",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 72727,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS8F64T3P\/masked-building.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS8F64T3P\/download\/masked-building.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS8F64T3P-61000d82cc\/masked-building_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS8F64T3P-61000d82cc\/masked-building_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS8F64T3P-61000d82cc\/masked-building_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 272,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS8F64T3P-61000d82cc\/masked-building_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 363,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS8F64T3P-61000d82cc\/masked-building_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 710,
+                "original_h": 537,
+                "thumb_tiny": "AwAkADCvpozcN7If6Vp9gc\/n\/jWbpn+vf\/cP8xWoF6YpgRtKyt3yPepo50cdcH0NQyDLHH5etRiPc3BxnpmpTuMsNPtcrtOB3qaqywg8FiGHY1Lkpx1piMjTWC3DE\/3TWsHQ1iWvEh69O1WwfQn8qALRcFivOQabtYfMOQeoPeoBuLZVhkVIzSMB2PfBqeWzuNFhHDAKxwezdxUmd3XqODVdRyu7vwacZGgchvmGBzVIGZdkMzH\/AHavEAYx6iqVj\/rj\/u1ePb\/eFHUXQCAGOPWlFDfe\/GgUhj+q81XKLvb8Ksdqh\/5aN+FCA\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FS8F64T3P\/masked-building.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FS8F64T3P-ce8c2f3c40",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1578063610.001400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you're Roto'ing do you use a graphics tablet or mouse?",
+        "ts": "1578080002.001700",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-03\/895077722934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I hope you’re alright with everything going on.\n\nSome advice from Access:VFX that you might find useful in the next few months:\n\n<https:\/\/youtu.be\/8dI3ZkDm2sY|https:\/\/youtu.be\/8dI3ZkDm2sY>\n\nI know Henry, Leanne and Mark if you are interested in Framestore, Outpost or Epic in the future.",
+        "ts": "1584442532.004600",
+        "username": "Jay Murray (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/995268383265_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "ACCESS:VFX Podcast - Standing Out While Staying In",
+                "title_link": "https:\/\/youtu.be\/8dI3ZkDm2sY",
+                "author_name": "ACCESS: VFX",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCX4Vt8ZpXkd6c-MBZqEBIIw",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/8dI3ZkDm2sY\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: ACCESS:VFX Podcast - Standing Out While Staying In",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/8dI3ZkDm2sY?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/8dI3ZkDm2sY",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/8dI3ZkDm2sY"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584442533.000000"
+        }
+    }
+]

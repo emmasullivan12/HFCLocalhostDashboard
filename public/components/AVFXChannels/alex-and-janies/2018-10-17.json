@@ -1,0 +1,76 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here are two interactive tutorials:\n<https:\/\/www.codecademy.com\/learn\/learn-python>\n<http:\/\/www.learnpython.org\/>",
+        "ts": "1539760070.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/457237808640_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Codecademy",
+                "title": "Python Tutorial: Learn Python For Free | Codecademy",
+                "title_link": "https:\/\/www.codecademy.com\/learn\/learn-python",
+                "text": "Learn Python, a powerful language used by sites like YouTube and Dropbox. Learn the fundamentals of programming to build web apps and manipulate data. Master Python loops to deepen your knowledge.",
+                "fallback": "Codecademy: Python Tutorial: Learn Python For Free | Codecademy",
+                "thumb_url": "https:\/\/www.codecademy.com\/assets\/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png",
+                "from_url": "https:\/\/www.codecademy.com\/learn\/learn-python",
+                "thumb_width": 1200,
+                "thumb_height": 1200,
+                "service_icon": "https:\/\/www.codecademy.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.codecademy.com\/learn\/learn-python"
+            },
+            {
+                "title": "Learn Python - Free Interactive Python Tutorial",
+                "title_link": "http:\/\/www.learnpython.org\/",
+                "text": "<http:\/\/LearnPython.org|LearnPython.org> is a free interactive Python tutorial for people who want to learn Python, fast.",
+                "fallback": "Learn Python - Free Interactive Python Tutorial",
+                "from_url": "http:\/\/www.learnpython.org\/",
+                "thumb_url": "http:\/\/learnpython.org\/static\/img\/share-logos\/learnpython-share.png",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "http:\/\/www.learnpython.org\/favicon.ico",
+                "service_name": "learnpython.org",
+                "id": 2,
+                "original_url": "http:\/\/www.learnpython.org\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a long list of other tutorials but they are not interactive",
+        "ts": "1539760095.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/459032461271_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ooo that's looks cool! Thanks again ",
+        "ts": "1539779372.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/457443947856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If u don't mind me asking.. are u from UK or elsewhere??",
+        "ts": "1539804990.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/458478031315_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

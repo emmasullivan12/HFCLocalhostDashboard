@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, Nya, you might want to check this program\n<https:\/\/wonderunit.com\/storyboarder\/>\nIt's free, I haven't tried it yet, but it looks interesting and friendly to use, and I did already come by more than one job ad related to animation\/storyboard where the studio referred they used this program. So I suppose it's being used commercially as well.\nIf you like it I might try it too and see if I can assist you with something practical you might need!",
+        "ts": "1571750000.002300",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/797956574273_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Wonder Unit",
+                "title": "Storyboarder - The best and easiest way to storyboard.",
+                "title_link": "https:\/\/wonderunit.com\/storyboarder\/",
+                "text": "Storyboarder makes it easy to visualize a story as fast you can draw stick figures. Quickly draw to test if a story idea works. Create and show animatics to others. Express your story idea without mak",
+                "fallback": "Wonder Unit: Storyboarder - The best and easiest way to storyboard.",
+                "image_url": "https:\/\/wonderunit.com\/storyboarder\/preview.jpg",
+                "from_url": "https:\/\/wonderunit.com\/storyboarder\/",
+                "image_width": 400,
+                "image_height": 250,
+                "image_bytes": 657850,
+                "service_icon": "https:\/\/wonderunit.com\/apple-icon-57x57.png",
+                "id": 1,
+                "original_url": "https:\/\/wonderunit.com\/storyboarder\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The funny thing is I just downloaded this yesterday :joy:, after you mentioned storyboard programs. Still thanks for the recommendation, I’ll try it out today and report back to you, Marcelo.",
+        "ts": "1571751672.002500",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-22\/803973401092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

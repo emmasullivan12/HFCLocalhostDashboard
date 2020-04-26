@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Junaid,\n\nNo worries! I have the same problem with the app! Hope you had a good weekend too!",
+        "ts": "1585648628.002300",
+        "username": "Ryan Clark (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1025104153330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah, thanks.",
+        "ts": "1585648855.002400",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039764216918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "tell me about your interests and what do you think you want to pursue in future?",
+        "ts": "1585648895.002500",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1027858739089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

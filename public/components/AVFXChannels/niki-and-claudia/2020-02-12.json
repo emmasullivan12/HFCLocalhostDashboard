@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Niki! \nThank you so much for the rigs and the tips. I'll definitely will shorten my film as now it's too long:) Regarding the characters rigs, thank you so much I will play with them and study them and see if I can get back with a nice animation of a dance (these characters are for a side project). And I rig another character in this way so it has more mobility. Thank you very much for your advice on the deformers of the feet as it is something I've been struggling a lot with. \n\nI will get back to you at the end of this week with the new animation:)",
+        "ts": "1581530730.001800",
+        "username": "Claudia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/939175859073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am very used to rigging, so these things are easy to me. But I do remember how challenging it was when I started out - it took quite a while to get used to everything. So please ask any and every question you have. There is no such thing as a bad one ^^,\n\nThere are a few more things we can do if you're still struggling to get the feet to plant in your animation, but it's more advanced rigging with some tricky things to do, so I didn't want to put it into the rig unless you really understand what I've sent you so far. But hopefully the simple deformers I put in will solved your problem :slightly_smiling_face:\n\nI would also suggest making a keyboard shortcut to show your deformers. In Edit &gt; Preferences &gt; Shortcuts, it's called Show Current Deformers. It just means that if you select and arm and press \"M\" for example (that's what my shortcut is), the deformers are visible. Maybe you have a shortcut for it already, but it's sooooo useful.",
+        "ts": "1581542985.001900",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/951553207607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

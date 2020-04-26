@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! No worries at all, I hope it's a good kind of busy! It was amazing, my first time outside of Europe, we went over to Boston via New York, to see some ice hockey! :smile: Ah cool! I've met a few people from that school it seems great, have you been 100% focused on compositing, or only since joining your masters? They started joining the role together just before I joined a few years ago (I think I may have been on the first project with it joint) - it made sense on TV productions with tight turnarounds that the post artist has control over both light and comp scenes, and makes fixes much more fluid! A fair amount of us have generalist backgrounds so were already pretty happy to do both, have noticed roles popping up in a few other places with them joint as well.",
+        "ts": "1543835003.000200",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-03\/493600706020_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hello! the school is great and gives you the opportunity to experiment a lot, personally when I came here I already new that comp was the way but I did some CG for the first module and then again lighting more recently so do what it takes to finish the project (even if the less CG I have to do them the better it is). Currently I'm doing a bit of grading as well as I enjoy pipeline and workflow quite a lot and in the school is up to the colourists, so I joined their ranks to be able to influence that a bit more and that plus the 5 graduation projects I'm working on is keeping me quite busy (so good busy). I've head that Pixar now is making the lighting guys comp as well so I guess that it's  kind of a trend and it looks that the departments boundaries are fading with time... Now \"awkward\" question for you, have you ever mentored before or are we both freshmen in this? I need to admit that I have no clue of what should happen or how to behave in this...",
+        "ts": "1543847238.000300",
+        "username": "Nicola (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-03\/493187152480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

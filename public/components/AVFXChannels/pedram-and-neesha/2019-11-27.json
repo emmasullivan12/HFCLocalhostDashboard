@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah its good to build a network on LinkedIn too. Get in touch with her, I told her you would reach out and she is happy to help :slightly_smiling_face:",
+        "ts": "1574851188.003000",
+        "username": "Pedram Razi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/850719307300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

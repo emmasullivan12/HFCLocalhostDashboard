@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Charlie, nice to meet you :)\nA little about me, I'm a lead lighting and compositing artist at Blue Zoo, working on an animated children's series. I have a background in multi media and studied 3d and vfx in Bournemouth.\nWhat are you hoping most to get out of the mentor ship?  I'm more than happy to give advise, feedback on work etc.\nAll the best\nNína",
+        "ts": "1576884576.000100",
+        "username": "Nina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/884609229015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah Cool! I'm still not sure what to make of the plate! :sweat_smile::grin: Sorry! It's the same as the one above right? Is this for a moving shot? I haven't done too much matchmoving or vfx work really, looking forward to seeing more of this!",
+        "ts": "1544013896.001300",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/496021952642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh i re-sent it because on my phone it shows as though it wasn’t sent the first time :sweat_smile: probably bug on the app. And it’s for a moving shot, i have already tracked it and imported the point cloud into Maya, the tracking works like a charm, just need to replace the placeholder with the newly textured air-condition , light it and then render in passes  and do some post production in Nuke :relaxed:",
+        "ts": "1544026794.001400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/495639751953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh right! Yeah I'm looking on chrome at work xD Nice! What did you use to track it, Nuke? I've only used after effects before, was pretty fun! Did some infographics for a safety video for bus drivers haha! I've used the point cloud data too (someone else tracked that) Was reeeally cool to see. Is this part of a larger project or an exercise of it's own?",
+        "ts": "1544027320.001500",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/497655774726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/www.polarmedia.co.uk\/> this was the first place I worked! Still some of the stuff that I did in the reel :smile: was a lot of fun! A lot of places like this will hire generalists, so it's really worthwhile to pick up all these extra skills :slightly_smiling_face:",
+        "ts": "1544027585.001600",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/496459057493_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Polar Media | Award Winning Film &amp; 3D Animation",
+                "title_link": "http:\/\/www.polarmedia.co.uk\/",
+                "text": "Polar Media is an independent production company based in London, UK and Perth, Australia. We produce films, 3D animation, VR &amp; AR for TV, corporate and the music industry.",
+                "fallback": "Polar Media | Award Winning Film &amp; 3D Animation",
+                "from_url": "http:\/\/www.polarmedia.co.uk\/",
+                "service_name": "polarmedia.co.uk",
+                "id": 1,
+                "original_url": "http:\/\/www.polarmedia.co.uk\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I finished uni and was looking for my first job I had a lot of comments that tried to steer me away from selling myself as a generalist which made me quite paranoid about it! We're a very useful, and fairly rare type though so keep at it :smile:",
+        "ts": "1544027719.001800",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-05\/496461769685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

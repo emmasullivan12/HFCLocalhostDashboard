@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Sonam, 5pm tomorrow evening works well for me, look forward to speaking with you then :slightly_smiling_face:",
+        "ts": "1507628002.000201",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254810793766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":relaxed::relaxed:",
+        "ts": "1507675196.000228",
+        "username": "skaur-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/253726552976_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

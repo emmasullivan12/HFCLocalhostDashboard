@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard!! :) \nSounds good . Lemme ask around and see who’s free . I’m guessing this is in person and not over messaging or phone so will have to check as it is quite busy at the moment . \nYes I was a compositor but that was a long time back , for a short period and in India so not sure if it’s going to be relevant at all . But I’d be happy to share details of my experience if you want me to :) \n\n",
+        "ts": "1550221099.000800",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/553033568087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do know a couple of fx artists . I’ll try and convince them to spare some time . Give me a couple of days . Do you have a timeline ? If you can tel me when you were hoping to do this , that’ll help me talk to the others and find our the most convenient time . ",
+        "ts": "1550221295.000900",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/552291104277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Update: \nJust had a chat with my friend who’s done some fx work and he said he’d be happy to answer any questions and he offered to consult with other fx artists he knows for more info if necessary:) ",
+        "ts": "1550226605.001000",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-15\/551989071092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

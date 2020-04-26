@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, I suppose you're very busy but I would like to schedule a meeting with you to discuss access opportunities. What is convenient with you?",
+        "ts": "1584395250.002200",
+        "username": "Michael Leslie Rubin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/991415682882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

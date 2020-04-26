@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I agree to create more variety for a shout. Cool! ",
+        "ts": "1557866435.005100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-14\/635588764560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you studied the Rule of Thirds design\/composition theory? \nOr the Golden Ratio design theory? \n",
+        "ts": "1557866484.005200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-14\/624137475299_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.quickanddirtytips.com\/education\/math\/how-to-use-the-golden-ratio-to-take-better-pictures>",
+        "ts": "1557866513.005300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-14\/635590122112_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Quick and Dirty Tips",
+                "title": "How to Use the Golden Ratio to Take Better Pictures",
+                "title_link": "https:\/\/www.quickanddirtytips.com\/education\/math\/how-to-use-the-golden-ratio-to-take-better-pictures",
+                "text": "&amp;nbsp; Despite many people&amp;rsquo;s assumption to the contrary, math is undeniably artistic. It takes a tremendous amount of creative muscle and artistry to devise mathematical solutions. And, as made evident by their frequent battles between elegant symmetry and rampant chaos, the traditional fin",
+                "fallback": "Quick and Dirty Tips: How to Use the Golden Ratio to Take Better Pictures",
+                "image_url": "https:\/\/www.quickanddirtytips.com\/sites\/default\/files\/images\/1661\/MD018-1.png",
+                "from_url": "https:\/\/www.quickanddirtytips.com\/education\/math\/how-to-use-the-golden-ratio-to-take-better-pictures",
+                "image_width": 342,
+                "image_height": 223,
+                "image_bytes": 4891,
+                "service_icon": "https:\/\/www.quickanddirtytips.com\/sites\/default\/files\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.quickanddirtytips.com\/education\/math\/how-to-use-the-golden-ratio-to-take-better-pictures"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "See video. ",
+        "ts": "1557866523.005500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-14\/637755372070_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And this video \nThat compared the two. Ignore the maths lol if it’s confusing. \n<https:\/\/www.picturecorrect.com\/tips\/the-golden-ratio-vs-the-rule-of-thirds-which-is-best\/>",
+        "ts": "1557866552.005600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-14\/624162486626_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "PictureCorrect",
+                "title": "The Golden Ratio vs. The Rule of Thirds: Which is Best?",
+                "title_link": "https:\/\/www.picturecorrect.com\/tips\/the-golden-ratio-vs-the-rule-of-thirds-which-is-best\/",
+                "text": "Two terms, one more frequently heard that the other, are the golden ratio and the rule of thirds. But is one really better than the other? In this short video, you’ll learn what they are, how they impact your images, and how you can use them in your compositions: Rule of Thirds The rule of […]",
+                "fallback": "PictureCorrect: The Golden Ratio vs. The Rule of Thirds: Which is Best?",
+                "thumb_url": "https:\/\/picturecorrect-wpengine.netdna-ssl.com\/wp-content\/uploads\/2014\/10\/golden-ratio-rule-of-thirds-thumb.jpg",
+                "from_url": "https:\/\/www.picturecorrect.com\/tips\/the-golden-ratio-vs-the-rule-of-thirds-which-is-best\/",
+                "thumb_width": 570,
+                "thumb_height": 130,
+                "service_icon": "https:\/\/picturecorrect-wpengine.netdna-ssl.com\/apple-touch-icon-precomposed.png",
+                "id": 1,
+                "original_url": "https:\/\/www.picturecorrect.com\/tips\/the-golden-ratio-vs-the-rule-of-thirds-which-is-best\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But the design layout theories are really good to know and practice. \n\nHave you used time in class at all? ",
+        "ts": "1557866590.005800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-14\/637417725479_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,179 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1549477209.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5c5b2558cf8d8600047a574a|this link> with other teams to invite them in it_",
+        "ts": "1549477209.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1549477209.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentees* joined the shared channel_",
+        "ts": "1549477336.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Mentor* joined the shared channel_",
+        "ts": "1549477343.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey",
+        "ts": "1549477433.000800",
+        "username": "Dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/543983656002_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@parkerportia8 has joined the channel_",
+        "ts": "1549477553.000900",
+        "username": "smooz (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/543383619473_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@stefi_daskalopoulou has joined the channel_",
+        "ts": "1549477563.001000",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/544189738213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1549477583.001200",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi @parkerportia8 please meet Stefi your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the relationship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1549477610.001300",
+        "username": "Dexter Boyce (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/545409408214_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1549477678.001400",
+        "username": "smooz (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/545053043959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1549477689.001500",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/544192095173_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Stefi :blush:",
+        "ts": "1549477981.001600",
+        "username": "Portia Parker (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/543391841217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1549477985.001700",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-18\" to \"stefi-and-portia\"",
+        "old_name": "z-shared-18",
+        "name": "stefi-and-portia"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Portia! :relaxed:",
+        "ts": "1549487366.001800",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/544170515234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great to e-meet you!",
+        "ts": "1549487372.001900",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/544170611362_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "here's a little bit about me: I'm Stefi, I live in London but I am from Greece. I studied Business Management as a Bachelor degree when starting out uni and then I realised I was more interested in people and how they work and what makes them tick. So I decided to study Business Psychology as a Masters and then pursued a course on Life Coaching and recently I started being self employed as a personal development coach where I help people go past any limitations they have, to achieve their goals and improve their relationships with others either personally or professionally. I was always curious to see behind the reasons why people do the things they do and was convinced that there is an explanation about anything..so I love searching for the answers hehe\nI would be happy to learn more about you, what your concerns are and things you'd like to have a chat about :smile: Feel free to ask me anything",
+        "ts": "1549487577.002000",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/544014722276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay, well thank you for informing me more about yourself. I’m happy to have an insight on your life as well as mine. I’ll tell you a little about me as well:\n\nI am 15 years old and I am from Kent. Ever since I have been young I’ve been interested in drawings and animations (Which I still continue to do and be interested in now). However, in the last few years I’ve began to enjoy the idea of psychology, how people minds work. I’ve always dreamt when I was young that if I were to ever have a superpower it would be to read people’s minds! \nWe can not read other people’s mind right? So we have no clue how they think or feel. Even the actions they may be doing and the things they may say may be entire opposite to how they’re minds think. I find psychology amazing as it helps you think more on another persons point of view as well as your own. It’s fascinating. Which is why I’m excited to have a mentor to help me have a better idea of what I want to do and what I want to expect in the future. \n\nWhat I’m struggling with at most is how to find work experience based of what I’m interested in and how to do a Cv. I’ve worked at Barclays, Nurseries and Theatres. I’ve also began to create a Cv, but that isn’t doing to well sadly. \n\nThank you for your time \n\n(So sorry for the time this message took)",
+        "ts": "1549490569.002100",
+        "username": "Portia Parker (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-06\/544120345219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

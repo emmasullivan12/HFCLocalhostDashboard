@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. I'll try to take a look at the hip file a bit later on today. Looking at the flipbook it looks like maybe the ground particles are a bit too sparse but I'll have to take a look at the hip to make sure. Its probably about time to start looking at meshing to see what your final resolution will need to be.",
+        "ts": "1581010841.007100",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/942612043910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll start looking at meshing later this afternoon and tomorrow. I still want to adjust the bottom pump force a tiny amount.",
+        "ts": "1581012405.007200",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/942664914054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, looks like you could have a higher freq noise on the ground pump.",
+        "ts": "1581013701.007300",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-06\/940495332704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

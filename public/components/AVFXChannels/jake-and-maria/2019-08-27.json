@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, what networking events do you recommend?",
+        "ts": "1566917247.005800",
+        "username": "Maria Paz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/733335322081_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

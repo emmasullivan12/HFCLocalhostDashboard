@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Personal projects are fine I think when you’re starting out. If you like I can send over a 101 Dalmatian Street script? A launch pack, ref etc. ",
+        "ts": "1585086844.002200",
+        "username": "Jez Hall (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023635855701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Omg that would actually be fantastic :) would love to work or play around on existing (old) scripts. ",
+        "ts": "1585088829.002300",
+        "username": "Frederick ORourke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1011212804354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My email is <mailto:frederick.orourke@gmail.com|frederick.orourke@gmail.com> if it’s easier to send over that way. ",
+        "ts": "1585118548.000100",
+        "username": "Frederick ORourke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024264671765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

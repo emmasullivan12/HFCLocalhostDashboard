@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Merry Christmas Svenja! I'm now off for the next weeks - I'll be back mid January.",
+        "ts": "1545409312.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-21\/511451755814_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Mentor,\n\nThanks a lot for everything and may you have A Wonderful Christmas and a Lovely New Years. Enjoy your holidays!!!\n\n",
+        "ts": "1545410840.000200",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-21\/509969692659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

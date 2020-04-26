@@ -1,0 +1,87 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is a link to my portfolio! <http:\/\/julie-zhang.com|http:\/\/julie-zhang.com>",
+        "ts": "1586014833.002500",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1043405693089_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Julie Zhang",
+                "title_link": "http:\/\/julie-zhang.com\/",
+                "text": "Use this space to add a brief description of your project.",
+                "fallback": "Julie Zhang",
+                "thumb_url": "http:\/\/static1.squarespace.com\/static\/5d9bff4f944db65b80d13fb8\/t\/5d9c0160d3bb4424f4ee5704\/1578816502734\/Screen+Shot+2018-12-28+at+7.25.05+PM.png?format=1500w",
+                "from_url": "http:\/\/julie-zhang.com\/",
+                "thumb_width": 260,
+                "thumb_height": 258,
+                "service_icon": "https:\/\/assets.squarespace.com\/universal\/default-favicon.ico",
+                "service_name": "julie-zhang.com",
+                "id": 1,
+                "original_url": "http:\/\/julie-zhang.com"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586014833.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This was the software I was talking to you about",
+        "ts": "1586016163.002700",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1037889500258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/mush3d.com|https:\/\/mush3d.com>",
+        "ts": "1586016164.002800",
+        "username": "Cristian Spagnuolo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1039126278627_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Mush3D",
+                "title": "Home",
+                "title_link": "https:\/\/mush3d.com\/",
+                "text": "Watch Mush in Action",
+                "fallback": "Mush3D: Home",
+                "image_url": "https:\/\/mush3d.com\/wp-content\/uploads\/2018\/08\/Untitled-1-1.png",
+                "from_url": "https:\/\/mush3d.com\/",
+                "image_width": 246,
+                "image_height": 45,
+                "image_bytes": 15337,
+                "service_icon": "https:\/\/mush3d.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/mush3d.com"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586016171.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! I will check it out.",
+        "ts": "1586032738.003000",
+        "username": "Julie Zhang (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1038086661858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

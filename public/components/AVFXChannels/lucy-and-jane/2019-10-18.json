@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  I am on the board of AWUK with a lady called Anna who organises the volunteers for LIAF.  If you’re interested I can connect you.  I think it involves a bit of logistics, but you definitely get to watch a lot of the films in the festival. Let me know.",
+        "ts": "1571413019.003800",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/800777604613_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

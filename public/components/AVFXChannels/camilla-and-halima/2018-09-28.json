@@ -1,0 +1,112 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well those are great unis. I think it's good to have a backup (i.e somewhere with lower grades), however, i found that my uni accepted me anyway (I didn't quite get the grades I needed!). I know UCL is super competitive though.... but it's an amazing uni and I've only heard good things about it.",
+        "ts": "1538124724.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444448227393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can have a mix of realism and optimism in your uni choices!",
+        "ts": "1538124752.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444943170563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you thought about Goldsmith?",
+        "ts": "1538124783.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444943443107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, send me your statement whenever you want.",
+        "ts": "1538124790.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/446402210822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah cute! My dog is a labradoodle - he is AMAZING.",
+        "ts": "1538124800.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444943633651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you had a part time job to include on your CV\/personal statement?",
+        "ts": "1538124830.000100",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/446096085911_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To be honest, UCL was one of the few unis that didn’t require certain A Level subjects for architecture (like Art, Product Design, Maths, Physics etc.) — as long as my grades are good and I have an outstanding personal statement\/portfolio I can get in (very rare chance I think :sob:) \n\nMy biggest fault was at the end of year 11 I wasn’t sure if I still wanted to do architecture because my mum discouraged me a little bit. So, when I chose my A Level options I did whatever I was confident with. But I couldn’t choose Art and Geography because they were in the same category, so I sacrificed art because geography would “open more doors” for me. \nLong story short: I started with 3 A Levels but half way during year 12 I picked up Art again because I decided I did want to get into architecture but needed subjects relevant to the course :white_frowning_face: \n\nI shall look at Goldsmith. I chose my uni options according to the proximity from my home, so I’ll see if it is suitable for me :slightly_smiling_face:\n",
+        "ts": "1538173139.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/446990211734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And nope :white_frowning_face: no work experience or jobs etc ",
+        "ts": "1538173169.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/446683486999_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m thinking about taking a gap year. I might get work experience\/part time job and take a break from all the school stress, maybe do something architecture related or expand my portfolio \n",
+        "ts": "1538173420.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/445814499765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I’m sorry if I overloaded you with information, I should be doing more of the questioning :sweat_smile:",
+        "ts": "1538173626.000100",
+        "username": "Halima (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/445635036322_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

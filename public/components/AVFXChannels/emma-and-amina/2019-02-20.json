@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hehe no problem. I didn't decide until the very last minute when applying to university",
+        "ts": "1550678177.000100",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/556001686116_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you think will help you decide your options? I'm happy to help answer any questions you might have.",
+        "ts": "1550678205.000200",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/556048544386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For example, I chose Business, Art &amp; Design (Double) &amp; Graphics ... I was very artistic (and good at art!) but was certainly interested in a career in business",
+        "ts": "1550678317.000300",
+        "username": "Emma Sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-20\/556373872149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

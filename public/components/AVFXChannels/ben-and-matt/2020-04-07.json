@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, hows it going? Just a heads up, thought I would share this with you. I have signed up for this guys comp newsletter for a few months now and its got some really nice tips and tricks! He’s called Josh Parks and his website is: <http:\/\/www.compositingpro.com\/>",
+        "ts": "1586281900.000400",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046032720947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya mate, too be fair it's been one of them days today, just stressing out a bit about the water VFX to interact with the pier on my project, but will get there :laughing:\n\nOh real nice thanks for that. I'll give it a look!",
+        "ts": "1586287268.000500",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1054919098228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

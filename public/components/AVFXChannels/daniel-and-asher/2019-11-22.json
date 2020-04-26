@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will do thanks! :slightly_smiling_face:",
+        "ts": "1574414563.003200",
+        "username": "Asher Hunt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-22\/847090248327_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

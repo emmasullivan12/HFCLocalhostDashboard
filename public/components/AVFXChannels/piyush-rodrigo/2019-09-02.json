@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Piyush, do you know if Framestore offers placements for programmers like me?",
+        "ts": "1567426781.000400",
+        "username": "Rodrigo Roldan-Romero (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-02\/739557865457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes they do, they do look out for RnD developers which have the background or at least the education degree that deals with c++ api for Maya, nuke or any other 3D application. There is a department that specifically deals with that in a lot of major studios including framestore.",
+        "ts": "1567433598.000500",
+        "username": "Piyush Jain (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-02\/746064325152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

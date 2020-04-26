@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I think that would be the way I would approach it. There is a node called the IDistort in Nuke that is perfect for this kind of thing. If you send me a still frame of your CG I can do a spimple set up for how I would try and tackle it if you like?\n\nWith stuff like this I would always try and spend half an hour to an hour in 2D jus seeing if I can get something that is sort of working rather than diving straight into 3D. If you find a solution that works then happy days, and if not, then its only an hour or so wasted. Where as 3D is much more complex and takes a bit more time to get stuff working. (But I am a comper so I am always going to want to try and solve it in 2D where I fee more comfortable :wink:)",
+        "ts": "1586601955.001600",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1053217681078_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,547 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Алина, привет! Совсем забыл, что мы не договорились о времени. Я буду онлайн ближайшие 3 часа.",
+        "ts": "1552727727.002200",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578985542212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Расскажи, где ты на данный момент живешь и где бы хотела работать?",
+        "ts": "1552729523.002300",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576618547024_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Доброе утро, да, хорошо, что я вас словила!:) Я живу в Лондоне сейчас и рассматриваю работы в игровых и VFX компаниях, проблема в том, что требования, конечно, немного отличаются. В VFX я подаюсь на 3D Runner и internships. Вы не против, если я вам скину свое портфолио?",
+        "ts": "1552732500.002400",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578921180131_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Конечно присылай!",
+        "ts": "1552733778.002500",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579374120629_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Здорово, что ты в Лондоне - это все сильно упрощает.",
+        "ts": "1552733833.002600",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579039830786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/alinafeda.artstation.com\/>",
+        "ts": "1552734020.002700",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580115787895_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Конкуренция здесь нереальная для джуниоров, хотя возможностей действительно больше",
+        "ts": "1552734060.002800",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578926992067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Да, конкуренция огромная, а самая проблема что большая часть стартовый позиций вынесена на аутсорс.",
+        "ts": "1552734208.002900",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578927634915_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Я через 2 минуты посмотрю портфолио - вышел за кофе )",
+        "ts": "1552734270.003000",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579009979364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Конечно, спасибо вам большое!",
+        "ts": "1552734287.003100",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576636523696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Эх, Хотел бы я так уметь...",
+        "ts": "1552734946.003200",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576639031200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Очень классно!",
+        "ts": "1552734959.003300",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580119539959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "У тебя хорошая база, классный стиль",
+        "ts": "1552735151.003400",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576639767824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Скажи, а остались у тебя коммерческие работы из Минска?",
+        "ts": "1552735367.003500",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578932026099_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":flushed: Спасибо большое, для меня это очень важно ! У меня пока с ним не очень получается куда-то пройти, в нем явно не хватает чего-то для старта.. может, у вас есть какие-то мысли по этому поводу? Коммерческие какие-то есть, но это в основном графический дизайн",
+        "ts": "1552735821.003600",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578933674755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "У тебя отличное портфолио!!! Сложно сказать чего не хватает для старта. Чаще всего это просто дело случая.",
+        "ts": "1552736005.003700",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579382703525_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Сложность может быть в том, что оно очень обширное",
+        "ts": "1552736062.003800",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578934612307_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Нужно немного больше специализировать его",
+        "ts": "1552736078.003900",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579382970293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Еще я бы упростил CV",
+        "ts": "1552736095.004000",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579048564498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Обширное в плане 2D\/3D вместе? С CV где можно было бы сократить, вы не подскажите? Свежий взгляд:)",
+        "ts": "1552736296.004100",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576644035696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "могу свое прислать)",
+        "ts": "1552736351.004200",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579049511746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Было бы здорово:)",
+        "ts": "1552736405.004300",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578935879331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "это не руководство к действию, но как раз для свежего взгляда )",
+        "ts": "1552736405.004400",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579017948292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGYJYR5ME",
+                "created": 1552736516,
+                "timestamp": 1552736516,
+                "name": "alexanderkulikov-nuke_compositor-cv-2015.pdf",
+                "title": "alexanderkulikov-nuke compositor-cv-2015",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 88665,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGYJYR5ME\/alexanderkulikov-nuke_compositor-cv-2015.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGYJYR5ME\/download\/alexanderkulikov-nuke_compositor-cv-2015.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FGYJYR5ME-bc90f3a290\/alexanderkulikov-nuke_compositor-cv-2015_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 935,
+                "thumb_pdf_h": 1210,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGYJYR5ME\/alexanderkulikov-nuke_compositor-cv-2015.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGYJYR5ME-913069fa7f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552736517.004500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "CV смотрят всегда после портфолио, поэтому не обязательно его делать каким-то особенным. Его цель быстро и наглядно дать понять на какую должность ты претендуешь, твой опыт и образование",
+        "ts": "1552736767.004800",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579385529445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Хорошее CV, но у вас уже много опыта и он сам за себя говорит:) В моем случае, нужно еще все расписывать, даже учебу, по крайней мере до того момента как я найду первую нормальную работу, а там уже оно сократится. (по крайней мере, опираясь на все отзывы из университета моего и т.д.) Мне самой кажется, что оно перегружено... КстатиЮ",
+        "ts": "1552736788.004900",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580126289047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Простите, нажала enter*",
+        "ts": "1552736807.005000",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578937385555_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Кстати, хотела у вас спросить: может у вас есть немного свободного времени, чтобы встретиться ненадолго и задать вам несколько вопросов про индустрию и по портфолио? Если вам несложно, конечно:)",
+        "ts": "1552736888.005100",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579019734436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "лучше на \"ты\", если не против",
+        "ts": "1552737018.005200",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579020207364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "да, конечно можем встретиться.",
+        "ts": "1552737102.005300",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579020527556_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "мне удобнее всего было бы обед",
+        "ts": "1552737147.005400",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579020696260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "можем встретиться во вторник или среду. ты далеко от Сохо живешь?",
+        "ts": "1552737288.005500",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580493336662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Я, конечно, не против:) Супер! Во вторник было бы лучше всего, когда вам удобнее по времени? Нет, живу в пределах нормального:) 30-40 минут добираться",
+        "ts": "1552737579.005600",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576648753136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1pm?",
+        "ts": "1552737791.005700",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579055272066_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Отлично, и последний вопрос: куда мне подъехать?",
+        "ts": "1552737962.005800",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578942382691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "давай встретимся на ресепшене MPC во вторник 1300",
+        "ts": "1552737997.005900",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580131554199_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "127 Wardour street, W1F 0NL",
+        "ts": "1552738020.006000",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579024771892_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Отлично, спасибо тебе большое!:grinning:",
+        "ts": "1552738053.006100",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579056733330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Не за что!",
+        "ts": "1552738151.006200",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576651931792_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Вот мой номер, на всякий случай: 07453503329",
+        "ts": "1552738255.006300",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579026018772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Отлично. Вот мой 07415882980 Напиши мне когда приедешь, пожалуйста",
+        "ts": "1552738348.006400",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579392801061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Договорились! Тогда до встречи и спасибо большое еще раз!",
+        "ts": "1552738398.006500",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580133716375_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Я убегаю. До встречи. Если будут какие-то вопросы до вторника - пиши не стесняйся",
+        "ts": "1552738402.006600",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579058598754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":slightly_smiling_face:",
+        "ts": "1552738420.006700",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/576653415328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Хорошего тебе дня!",
+        "ts": "1552738431.006800",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/579058759202_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "У тебя отличные работы и ты обязательно найдешь работу мечты!",
+        "ts": "1552738434.006900",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/578944933059_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "И тебе. Пока",
+        "ts": "1552738441.007000",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-16\/580133931367_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

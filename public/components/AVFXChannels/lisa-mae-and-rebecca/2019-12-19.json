@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice to see you modelling from reference. Ahh that'll be super cool! Are you thinking of trying out a software like Houdini to get the effect?",
+        "ts": "1576749946.000100",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/867301126034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m not sure yet but I don’t think we actually have Houdini on all the uni computers at the moment so I’m not sure if I’d be able to use it. My lecturer suggested it being more of a comp thing possibly.",
+        "ts": "1576772182.000200",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/869124436723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah cool, yeh if you can find some cool plates to integrate. Do you guys have access to cameras at your uni? Could be cool to try filming the effects yourself. I interned at a super small studio while I was at uni and on one of the days they needed to record some dust FX hits for Robin Hood, it's super fun to watch.",
+        "ts": "1576777065.000300",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/880282408644_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Maybe using powder paints or something similar :smile: Obviously understandable if you don't have the time to, it's not often you have the luxury of time while you're at uni!",
+        "ts": "1576777133.000400",
+        "username": "Lisa-Mae Evans (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/870486917841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

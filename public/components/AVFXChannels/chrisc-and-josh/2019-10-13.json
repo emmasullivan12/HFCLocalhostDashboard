@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Josh, unfortunately I will not be avaiable this week, I have a family breavement. I expect our next catch-up should be Wed 23rd October 8pm",
+        "ts": "1570986278.000700",
+        "username": "Chris Carter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/795641089751_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

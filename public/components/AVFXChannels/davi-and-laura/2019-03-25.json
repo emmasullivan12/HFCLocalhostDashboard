@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! Today my school had a STEM day and a lady called Yulien Tso came from Escape Studio. I asked if she knew you and she said yes. What a coincidence!:laughing: ",
+        "ts": "1553528542.013100",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-25\/584568235840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

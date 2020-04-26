@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello,\n\nSorry for such a late reply.\n\nThat's amazing that you had a placement and it's great that they want to you back after you've graduated. \n\nBut yes, best to apply everywhere you can and then have options =]\n\nLooks like you have it all figured out. Sorry I haven't really been on here, but if you have any questions, feel free to ask and I will try to check the app more often as I am still not getting any notifications.\n\nWhen are you graduating? Must be really soon?\n\nAll the best,\n\nElise",
+        "ts": "1559068554.000100",
+        "username": "Elise (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/650499542758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

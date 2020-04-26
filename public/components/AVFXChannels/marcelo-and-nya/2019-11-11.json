@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Nya! Nice drawings! I especially like the black and white big cat one, and the castle. Great composition and colour choices there!",
+        "ts": "1573508389.006600",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/830243108613_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's that project you're working on? Do you have any concept drawings from that one? Characters or locations, or any bit of storyboard, if you've already managed to do some?",
+        "ts": "1573508467.006700",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-11\/829772318980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

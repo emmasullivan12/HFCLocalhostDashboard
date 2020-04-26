@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah nice! At the moment I’m starting with another 60 second animation for my module based on a dream :grin:",
+        "ts": "1550515996.000100",
+        "username": "Florence (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/553999048003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh great! How do you start your modules? Do you do a rough animatic for the whole 60 secs first? I would love to see what you're working on!",
+        "ts": "1550562525.000200",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/554815676245_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

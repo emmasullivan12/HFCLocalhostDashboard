@@ -1,0 +1,278 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob, Congratulations of finishing Bond. Friday afternoon pub lunch does sound pretty tough :wink: Always a bit strange hearing about a film being worked on when a nicely graded trailer's out, there's a buzz and adverts everywhere! Seems a bit disjointed but I guess you get used to it!",
+        "ts": "1583326394.000500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/983618272006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Working hard on the film shot... Just wondered if you could take a look at my work when you get a chance - and also help me out with the zdefocus node!",
+        "ts": "1583326455.000600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/980955915156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUVC2DF0Q",
+                "created": 1583326504,
+                "timestamp": 1583326504,
+                "name": "Screenshot 2020-03-04 at 12.46.35.png",
+                "title": "Screenshot 2020-03-04 at 12.46.35",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1020923,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUVC2DF0Q\/screenshot_2020-03-04_at_12.46.35.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUVC2DF0Q\/download\/screenshot_2020-03-04_at_12.46.35.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 208,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 278,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 416,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 463,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 555,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUVC2DF0Q-b88baad28a\/screenshot_2020-03-04_at_12.46.35_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 592,
+                "image_exif_rotation": 1,
+                "original_w": 4642,
+                "original_h": 2684,
+                "thumb_tiny": "AwAbADCnUohz3\/Soxwat4HpUydgIFj96Y67WIqyPuimIM3JHtW00krkpleir+0ZFUpP9Y31NZJ3GncbVylgiRl5UHkUrgA4HoKmRRUEj5xuqwsJV9wcZ9xVfaMUu0Z6VbYrFvDf89F\/KqcgPmN3560mBmpYuBxQFj\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUVC2DF0Q\/screenshot_2020-03-04_at_12.46.35.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUVC2DF0Q-0ab3a61c3a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583326511.000700"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUGJAQ3GA",
+                "created": 1583326504,
+                "timestamp": 1583326504,
+                "name": "Screenshot 2020-03-04 at 12.45.29.png",
+                "title": "Screenshot 2020-03-04 at 12.45.29",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2693014,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUGJAQ3GA\/screenshot_2020-03-04_at_12.45.29.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUGJAQ3GA\/download\/screenshot_2020-03-04_at_12.45.29.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 208,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 278,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 416,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 463,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 555,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGJAQ3GA-8a53ea02d9\/screenshot_2020-03-04_at_12.45.29_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 592,
+                "image_exif_rotation": 1,
+                "original_w": 4642,
+                "original_h": 2684,
+                "thumb_tiny": "AwAbADDN3t61oCOPn5c4GarNbbRkkU\/c2D+8Xn2pb7AS+XGFY7c4FUN7etWlLsxUMvPUmk+x\/wC0v50bA2iOIls5p3FKYvKOMg59DTaYFmf\/AFf41AmA6lumavPGhjXK9cVn+1TFWQFrzIPT\/wAdpfNt\/wC6P++aqUo6iqAkmZGYGMYwPTFRU6QAOQOlNoA\/\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUGJAQ3GA\/screenshot_2020-03-04_at_12.45.29.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUGJAQ3GA-4fd5a4afc2",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583326511.001000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't get why the zdefocus is affecting the whole plate and not the mask that's plugged into it.",
+        "ts": "1583326557.001300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/980958239844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Writing out for you to review now. Post in a few mins... Thank you!",
+        "ts": "1583326587.001400",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/968624650754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/U_oxyW7Spzg>",
+        "ts": "1583330501.001500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/968728924450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First time using Youtube - hope you can see it. Split the screen with original plate on the right to make comparison easier.",
+        "ts": "1583330552.001600",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/971421937409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just tried to click on the youtube link but says it is set to private",
+        "ts": "1583339753.001700",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981407733668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry just had to run to dailies after the first answer",
+        "ts": "1583341050.001800",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981929576741_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "in the zdefocus node, at the bottom, is the mask section, you need to set that rgba.alpha to be able to channel the alpha in",
+        "ts": "1583341482.001900",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981948190757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "the cleanplate you have painted looks pretty good, one thing I would say is the bokeh on the light seems different in the plate to the cleanplate you have",
+        "ts": "1583341595.002000",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981952653253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I believe it explains how to get the bokeh changing shapes in that video I linked you to a week or so ago",
+        "ts": "1583341653.002100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/969148536994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/U_oxyW7Spzg|E>vening Rob, Thanks for getting back. sorry, still at my coffee shop job working out my notice for a week and a bit.",
+        "ts": "1583348185.002200",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/984377337318_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you mind trying again please - <https:\/\/youtu.be\/U_oxyW7Spzg>",
+        "ts": "1583348194.002300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/982186146293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not sure I've touched the light. I'll check my roto. I'll check that video again.",
+        "ts": "1583348236.002400",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981715021428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

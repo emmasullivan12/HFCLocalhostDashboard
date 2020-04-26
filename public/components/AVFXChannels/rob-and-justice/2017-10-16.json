@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what's your availability like on wednesday afternoon from about 2pm?",
+        "ts": "1508165128.000551",
+        "username": "rob.chesworth (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/258025315319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

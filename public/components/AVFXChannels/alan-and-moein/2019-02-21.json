@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Of course! What's happened? Is everything OK? Don't worry about the project take care of yourself and your family first. ",
+        "ts": "1550794805.000100",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/558060174933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

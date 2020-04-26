@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, that's totally fine. What area of animation would you like to go into? VFX, Cartoon, Mocap?",
+        "ts": "1573219423.001800",
+        "username": "Benjamin Lane (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-08\/814288595730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also have you got a vimeo page?",
+        "ts": "1573219426.001900",
+        "username": "Benjamin Lane (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-08\/819156453345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

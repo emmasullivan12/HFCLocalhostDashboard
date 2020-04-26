@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anything you might like or anything you'd definitely rule out? What do your family members do? You might be able to get some work experience with them to see what you do and don't like",
+        "ts": "1507837768.000100",
+        "username": "sonal92 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-12\/255704908181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

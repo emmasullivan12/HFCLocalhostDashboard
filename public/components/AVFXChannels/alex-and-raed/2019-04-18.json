@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool! do you want to use cocos again?",
+        "ts": "1555574891.000300",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/600780833314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, its a great engine, most these days are 50 code 50 drag and drop, cocos is 100 code and has a more \"proper\" sense",
+        "ts": "1555584908.000400",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/614463183910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "though I will have to use javascript for one of the upcoming games, as I plan it to be ported to the web, and c++ isn't compatible with browsers",
+        "ts": "1555584969.000500",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-18\/600831882339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

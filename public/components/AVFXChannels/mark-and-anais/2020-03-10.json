@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Anaïs, great to meet you too.  It looks as though you have already done a lot in your short time in the industry.  I will try and give you a more detailed reply this evening or tomorrow.",
+        "ts": "1583848990.003000",
+        "username": "Mark Sherwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/990891528644_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Anaïs",
+        "ts": "1583871741.003100",
+        "username": "Mark Sherwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/979449254642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me tell you a little about me, I started working in the industry over 30 years ago, when everything was shot on film and it literally took two weeks to create a dissolve working with an optical house.  Since then I have seen the demise and rebirth of film, the death of tape and the rise of the digital age.  In my first week of work back in 1978, I did a shoot with David Bowie and the next day was a runner on a soap powder commercial.  I have been very lucky to work on all sorts of productions, commercials, films, documentaries, live action and animated television shows.  As I get towards the end of my working career, I have chosen to do less high end shows and most recently I have been working on low budget TV shows.  I would like you to tell me how I can help you.  Clearly working as a comper you have some experience of how shows work.  Would you like to come and spend a day with the company I am currently working at to see how a show is set up, talk to other artists and production folk?  Or would you like to talk on the phone?  Without knowing more about what you are currently doing, although I can guess - The Foundry is hugely respected - I think you are well placed to return to VFX production and as you rightly say perhaps as a co-ordinator before moving up to a PM.  I was interested in Flix a few years ago and did talk to the guys at the Foundry to see how it worked, but the show I was working on closed down before I had a chance to use it.  It is interesting that the film and television industry seems to be full of people with such confidence, but I can assure you over the years I have met so many people who have tried to hide their insecurities and lack of confidence, that this should not hold you back.  Look at the amazing things you have achieved in your life already.  There are many ways to deal with this and I am sure there is one that will work for you.  Let me know what you would like to do next and I will see if we can make it happen.  Looking forward to hearing from you.",
+        "ts": "1583873093.003200",
+        "username": "Mark Sherwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/992302180437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

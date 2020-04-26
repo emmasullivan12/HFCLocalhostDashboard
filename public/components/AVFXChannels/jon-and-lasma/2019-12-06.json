@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jon, \nso sorry for disappearing, for some reason the app just didn't let me know there are any new messages waiting!",
+        "ts": "1575643604.002800",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862525150036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Jup, my internship is in bachelors course in university. It's quite nice because sometimes it just feels like I'm getting paid to work!",
+        "ts": "1575643831.002900",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/864847803175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I would prefer to work in film just because I watch films more often but I'd like to try both at some point so I could answer for sure!",
+        "ts": "1575643993.003000",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/851524767715_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for a film that inspired me to get into vfx- not exactly! I went to bachelors for computer animation because I got inspired by a behind the scenes video of an animation film \"Over the Hedge\". I wanted to do little cute characters that felt like they're real. But when I got there I realised I didn't actually enjoy it. I still went through the course trying to find something I could imagine doing in the future but stylised just didn't do it for me. And then in 3rd year we had a few more projects more focused on realistic work and I really loved doing a dmp projection project. After that I completely changed my focus and went for a masters in Digital Effects",
+        "ts": "1575644602.003100",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/865219641638_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However, looking back it kinda makes sense because I really like mystical films and tv series like Divergent, vampire diaries, hunger games, mad max... so I'm hopping to one day do matte paintings for dystropian type movies",
+        "ts": "1575644853.003200",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862561747588_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How about you, what films\/events inspired you to get into VFX?",
+        "ts": "1575644904.003300",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/855080271601_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My teacher recommended to put in a the 'graduate showreel' title to kind of help with getting a junior role. Why, does it look weird to have that?",
+        "ts": "1575645042.003400",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/863033425061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's the thing with solo projects, I had to go through the whole pipeline to finish a project so I don't have a lot of dmp work only. But I would prefer to tailor it a bit more dmp in that case because I couldn't really want to go into comp if I can help it",
+        "ts": "1575645224.003500",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/863038532837_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wouldn't*",
+        "ts": "1575645293.003600",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/865239339526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's why I was thinking that probably a small studio would be the way forward in the start",
+        "ts": "1575645338.003700",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/864891970407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you enjoy working in Cinesite? :)",
+        "ts": "1575645498.003800",
+        "username": "Lasma Zeimule (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/850254612594_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

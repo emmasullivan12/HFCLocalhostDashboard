@@ -1,0 +1,67 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I definitely would be interested learning about HR further, I don't want to put all my energy into that specific role yet. I would like to see what creative roles i can research before narrowing down my options. I would really appreciate if you can send me some HR intro materials for me to get a greater understanding of this role.",
+        "ts": "1580160347.001000",
+        "username": "Caitlin Purser (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-27\/912820848467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just to let you know I have clicked the link on Access VFX and it is now working, thank you for the offer to chase this for me.",
+        "ts": "1580160489.001100",
+        "username": "Caitlin Purser (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-27\/926154145527_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for finding out who the contact is at Frame Store London, I would let you know once I've done my covering letter. It will be great if you could put a word in for me.",
+        "ts": "1580160586.001200",
+        "username": "Caitlin Purser (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-27\/923839832196_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which email address would I send it to? I can't find one specifically for HR. <https:\/\/www.framestore.com\/contact>",
+        "ts": "1580161041.001300",
+        "username": "Caitlin Purser (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-27\/926518530406_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Framestore",
+                "title": "Contact",
+                "title_link": "https:\/\/www.framestore.com\/contact",
+                "text": "With over 3000 employees across our Film, Immersive, Advertising and Television divisions, Framestore has grown to amass truly global reach. Find all of the details of our main offices below, as well as key contacts for our various business areas. To hear more about our recent work, newsletters and events please sign up to our mailing list here",
+                "fallback": "Framestore: Contact",
+                "thumb_url": "https:\/\/www.framestore.com\/\/sites\/all\/themes\/framestore\/img\/meta.jpg",
+                "ts": 1454668020,
+                "from_url": "https:\/\/www.framestore.com\/contact",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/www.framestore.com\/sites\/all\/themes\/framestore\/img\/touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.framestore.com\/contact"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580161043.000000"
+        }
+    }
+]

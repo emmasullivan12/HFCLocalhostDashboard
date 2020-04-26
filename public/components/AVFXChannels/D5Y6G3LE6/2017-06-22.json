@@ -1,0 +1,242 @@
+[
+    {
+        "type": "message",
+        "text": "Hello, I’m Slackbot. I try to be helpful. (But I’m still just a bot. Sorry!) *Type something* and hit _enter_ to send your message.",
+        "user": "USLACKBOT",
+        "ts": "1498162184.073488",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi",
+        "user": "U5Z107PKQ",
+        "ts": "1498162203.080178",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Pleasure to meet you. Let me show you a couple things about Slack.",
+        "user": "USLACKBOT",
+        "ts": "1498162203.080234",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "If you have any questions about *how to use Slack*, please ask me! I’ll do my best to help.",
+        "user": "USLACKBOT",
+        "ts": "1498162220.086421",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How does Slack benefit me?",
+        "user": "U5Z107PKQ",
+        "ts": "1498162253.097767",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I searched for that on our Help Center. Perhaps these articles will help: \n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/218891278-Manage-your-connected-accounts|Manage your connected accounts>\n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/223431088-Connect-your-tools-to-Slack|Connect your tools to Slack>\n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/217626298-Getting-started-for-team-creators|Getting started for team creators>",
+        "user": "USLACKBOT",
+        "ts": "1498162255.098082",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Thank you",
+        "user": "U5Z107PKQ",
+        "ts": "1498162295.111726",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Sure thing.",
+        "user": "USLACKBOT",
+        "ts": "1498162295.111765",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Is architecture a tough course to study at university?",
+        "user": "U5Z107PKQ",
+        "ts": "1498162332.124685",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm sorry, I don't understand! Sometimes I have an easier time with a few simple keywords. \n\nOr you can head to our wonderful <https:\/\/get.slack.help|Help Center> for more assistance! ",
+        "user": "USLACKBOT",
+        "ts": "1498162334.125072",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "what is the best university in London?",
+        "user": "U5Z107PKQ",
+        "ts": "1498162368.136568",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "f963fcf94cf0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-07-09\/209465396193_f963fcf94cf0076d5a6b_72.jpg",
+            "first_name": "Athethan",
+            "real_name": "Athethan Varman",
+            "display_name": "avarman2854",
+            "team": "T4UUTPV18",
+            "name": "avarman2854",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm sorry, I don't understand! Sometimes I have an easier time with a few simple keywords. \n\nOr you can head to our wonderful <https:\/\/get.slack.help|Help Center> for more assistance! ",
+        "user": "USLACKBOT",
+        "ts": "1498162369.136945",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

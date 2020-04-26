@@ -1,0 +1,200 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Elliott, sorry I didn't get a notification this time either",
+        "ts": "1585641446.000100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026139450579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yea we started the redesign with refs from the original games but then concept art started to come through until we got the directors approval on one which I just had to get as close as possible to",
+        "ts": "1585641724.000200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039654806471_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Indeed sleeping patterns is a big deal! I'm trying to make the use of this time by just learning new disciplines or just pushing to get better really.. I found while I was working that there's really so little time for that after getting home at 7ish it's not the first thing you wanna pick up haha",
+        "ts": "1585641845.000300",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026155345971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah I know Simon, spoke to him recently, he left MPC just before the virus situation started. He was part of the group I used to go for lunches with.",
+        "ts": "1585642040.000400",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039666081815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For most studios that I know, more tedious, time-consuming but relatively automated work like topology, digi doubles, props, etc are done somewhere else where is cheaper",
+        "ts": "1585642209.000500",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037642168192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In MPC's case is in Bangalore, DNEG has a branch like that too and I think the majority would make sense to do it like this",
+        "ts": "1585642307.000600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039675216839_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For digidoubles we have a standard human topo we just wrap on any humanoid character to share UVs, any maps we can reuse to start the process, transfer weight maps and even facial shapes",
+        "ts": "1585642459.000700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037595424565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But there are rare cases when the character is so different that we'd do the topology from scratch like for Sonic - they initially wanted to do it in Bang but the forms were really simple so I knocked it in a day or two and because I was gonna do the facial shapes it made sense to handle it",
+        "ts": "1585642625.000800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026182269987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With that said, it's true that quite often a facial artist from London, before starting to do any shape work we have to do a technical check (topology flow, expression keylines, inside thickness of the lips, teeth position are the big ones) and we'd send it back to for fixes or we'd do it ourselves if it takes less time (and depending on resources)",
+        "ts": "1585643023.000900",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037180424228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I spent some time in Zbrush to get 80% there shape wise but then likely 80% of the time I worked on sonic was in maya haha",
+        "ts": "1585643111.001000",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037673190752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For small fixes, topology, UVs, iterations, facial shapes, maintenance all that is pretty much maya",
+        "ts": "1585643219.001100",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037187266372_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Indeed, is so satisfying to get a really good head to start with, the shape work is a joy but it can turn 180 quite quickly",
+        "ts": "1585643458.001200",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1024917435538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah, if you ever need a fresh eye on your work I'm happy taking a look",
+        "ts": "1585643569.001300",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037690352192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The market does tend to look saturated but there's always space for talent they say, especially straight out of uni - is a no brainer for studios to hire someone good who's starting out",
+        "ts": "1585643792.001400",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039728007095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's really tricky to foresee how the whole industry will shift in these times - hopefully for better if people stay home and consume TV shows, movies and play games there'll be demand and jobs",
+        "ts": "1585643940.001500",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039585869062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm personally trying to figure out a way towards more passive income but I'm yet to land on a branch",
+        "ts": "1585644034.001600",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039589072246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyways, that was quite a rant - here's a link with imo some of the best books for anatomy and figure drawing, if you're interested, might serve you along the way (though there are some awesome courses, apps and anatomy figures out there you can buy all to help with that)",
+        "ts": "1585644507.001700",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037233656948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/1drv.ms\/u\/s!AkwahwaGdbr3vnjiHppmOkJnJk_X?e=7jIU3W>",
+        "ts": "1585644510.001800",
+        "username": "Alin Bolcas (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037723508800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

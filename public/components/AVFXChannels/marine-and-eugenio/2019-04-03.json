@@ -1,0 +1,112 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good afternoon no problem, I wrote you for asking some questions.. I am currently finishing my show reel and rendering some turntables for 3d models, normally in lookdev i might use the same HDRI and lighting condition of the shot or should I use a diffuse studio HDRI?",
+        "ts": "1554315790.000400",
+        "username": "Eugenio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/596805989072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually I did not recived the notification of ur message too on my smartphone app of slack..:thinking_face:",
+        "ts": "1554315867.000500",
+        "username": "Eugenio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/590495282785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "good question. in production we always looked in studio environment. We have a standardised HDRI as well as a 3 point lighting light rig : 2 rectangular silks and a small spotlight. The silks are on each side of the objet, the spot is used as a rim. We also modelled a studio, with ground, curtain, painted wooden turntable, stands with grey and diffuse ball, stand with macbeth chart, and actually studio lights. We realised that client approval rates went right up when we showed assets in a realistic environment. Scale is very important to sell your lookdev. Some clients can't see in an abstract way, and even for us it helps to have a consistent studio environment as well as a realistic scale to compare the object to.",
+        "ts": "1554320079.000600",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599814186325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Then as development moves on, we start also rendering the asset in shot lighting, typically we have different rigs with hydras : sunny, overcast, night ..... and specific shot lighting for the show we work on.",
+        "ts": "1554320140.000700",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599299695140_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It allows us to test looked in extreme situations and sometimes make choices.",
+        "ts": "1554320165.000800",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599300220052_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We also recreate reference shoot environments. As they often come from the same companies, we have their setup all modelled, with their stands, studio lights for photogrammetry etc. We can then match reference perfectly.",
+        "ts": "1554320227.000900",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/600445467047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does this help?",
+        "ts": "1554320234.001000",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/599301938836_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was going to give you my work email address, because I won't be able to access Slack from work. It's <mailto:marine.poirson@framestore.com|marine.poirson@framestore.com>",
+        "ts": "1554320266.001100",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/600446522663_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can reach me on it during work hours!",
+        "ts": "1554320274.001200",
+        "username": "Marine (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/600778205302_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you very much for the explanation I will get in touch as soon as I have the reel assembled and tomorrow, I have a couple of other questions by mail!",
+        "ts": "1554327146.001300",
+        "username": "Eugenio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/600615503095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

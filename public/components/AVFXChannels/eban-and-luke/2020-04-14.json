@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was considering using a vdb on the surface the only problem is that the resolution needed for the fibers is so great that it locks up my machine. At the moment I'm just using the surface geometry with a bit of vex code to create the desired shapes, along with a solver sop to create the growth effect.",
+        "ts": "1586890346.002200",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060863579973_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

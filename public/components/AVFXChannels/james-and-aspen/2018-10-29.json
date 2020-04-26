@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem. Let me know if there are other technical questions you’d like any help with.",
+        "ts": "1540818057.001000",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-10-29\/467696562887_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

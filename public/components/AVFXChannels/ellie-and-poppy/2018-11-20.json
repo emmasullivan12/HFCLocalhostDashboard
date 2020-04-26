@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't blame you haha xD",
+        "ts": "1542709704.005100",
+        "username": "Ellie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/483910073363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

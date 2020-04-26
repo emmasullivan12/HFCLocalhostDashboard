@@ -1,0 +1,70 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning Svenja,\n\nI'm Alex - very nice to meet you. Did Dexter or someone from Prospela tell you anything about me? Although I did training and lectures in the past, I never mentored someone directly. So this is new for me as well :slightly_smiling_face: I'm looking forward to all your questions and I hope I can give you some helpful answers.",
+        "ts": "1538640521.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-04\/448836672244_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Dexter just forwarded me the profile they've sent you about me - compared to your great details, mine is a bit sparse :smile: if you have any questions, feel free to ask anything. The most interesting detail is probably that I'm a R&amp;D programmer @ DNEG (<https:\/\/www.dneg.com\/>) . Prior to this, I worked for MPC (<https:\/\/www.moving-picture.com\/>), mainly on The Jungle Book.",
+        "ts": "1538652604.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-04\/449045067875_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "DNEG",
+                "title": "Home - DNEG",
+                "title_link": "https:\/\/www.dneg.com\/",
+                "text": "[...]Read More...",
+                "fallback": "DNEG: Home - DNEG",
+                "from_url": "https:\/\/www.dneg.com\/",
+                "service_icon": "https:\/\/www.dneg.com\/wp-content\/themes\/dneg\/images\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.dneg.com\/"
+            },
+            {
+                "title": "MPC  - Moving Picture Company",
+                "title_link": "https:\/\/www.moving-picture.com\/",
+                "text": "We have been one of the global leaders in VFX for over 25 years; renowned for adding visual wonder and creative expertise to the film, advertising and entertainment industries.",
+                "fallback": "MPC  - Moving Picture Company",
+                "from_url": "https:\/\/www.moving-picture.com\/",
+                "service_icon": "https:\/\/www.moving-picture.com\/Assets\/images\/favicon.ico",
+                "service_name": "moving-picture.com",
+                "id": 2,
+                "original_url": "https:\/\/www.moving-picture.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Firstly I'd like to know, as a programmer which programming language you use at your workplace and which is your preferred programming language as well as how did to learn to code and program.\nSecondly, what interested you in taking the career path towards technology, computing and graphics?\nThirdly (which is a bit of a tangent from the topic) what was your first job\/ part time job that you did and how was the first experience of it?\n\nPost-Script : The layout and design as well as graphics of the DNEG and Moving Pictures Company is very modern and intriguing, is that also re-designed through research and development?",
+        "ts": "1538679341.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-04\/449725101157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the amount of questions at first go and thank you very much for your time.\n\nHope you have a pleasant and calm night.",
+        "ts": "1538679462.000100",
+        "username": "Svenja (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-04\/449726875157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

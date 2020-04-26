@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha. Well you’ve got time to master your ideas for that one. I’m sure there are other organisations out there for younger inventors ",
+        "ts": "1553346713.003400",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-23\/585829238212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

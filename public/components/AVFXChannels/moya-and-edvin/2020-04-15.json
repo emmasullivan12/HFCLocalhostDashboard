@@ -1,0 +1,233 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Edvin, \nI've added you to my contacts but it's not appearing in WhatsApp. It might be a country code so I thought id give you a text and see if it works, can you let me know if you get my message?",
+        "ts": "1586959690.003300",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1087981915776_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure! Nothing yet ",
+        "ts": "1586959799.003400",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064355548067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Strange, do you want to try add me",
+        "ts": "1586961644.003500",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1076864982401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "0872047091",
+        "ts": "1586961652.003600",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1057506001590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or maybe 353 87 2047091",
+        "ts": "1586961664.003700",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1062860198581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmmm very strange. Can’t see you on WhatsApp either. I dropped you a message!",
+        "ts": "1586962096.003800",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1062881808005_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I didn't get anything , I thought I might have just been doing something wrong :sweat_smile:",
+        "ts": "1586967741.003900",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064555847746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmmm this is very strange! ",
+        "ts": "1586969089.004000",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063240614373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In any case, we could chat today around 8pm over zoom? Or is it too late? Let me know! ",
+        "ts": "1586969110.004100",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063241631877_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "8pm is perfect for me!",
+        "ts": "1586969138.004200",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1064622930754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its actually sunny here, so I'll get out for a walk before hand :slightly_smiling_face:",
+        "ts": "1586969159.004300",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1077249789857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi again. I can create zoom link in 10 mins, will it be easy for you to join? ",
+        "ts": "1586976603.004400",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1065166429923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Edvin, \nSure I created an account but I haven't used zoom yet",
+        "ts": "1586976806.004500",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1071132949172_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s super easy you don’t even need an account!",
+        "ts": "1586976835.004600",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1063586021125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I'll log in now to make sure it's all working",
+        "ts": "1586976835.004700",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1058232432662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will send you a link that you can open on phone \/ laptop and automatically join the call ",
+        "ts": "1586976864.004800",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1088808849264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/us04web.zoom.us\/j\/76803772142?pwd=czBCb3hMZ1JjZ3U1OXFnTGVCTkJVdz09|https:\/\/us04web.zoom.us\/j\/76803772142?pwd=czBCb3hMZ1JjZ3U1OXFnTGVCTkJVdz09>",
+        "ts": "1586977068.004900",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1058242221174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is the link ",
+        "ts": "1586977070.005000",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1088817619024_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you ready of course, no rush ",
+        "ts": "1586977077.005100",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1071144459188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just signing in now :slightly_smiling_face:",
+        "ts": "1586977236.005200",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1077610145873_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.google.com\/url?sa=t&amp;source=web&amp;rct=j&amp;url=https:\/\/docs.google.com\/spreadsheets\/d\/1eR2oAXOuflr8CZeGoz3JTrsgNj3KuefbdXJOmNtjEVM\/edit&amp;ved=2ahUKEwjl89aQl-voAhXSThUIHdVYCBQQFjAAegQIAxAB&amp;usg=AOvVaw2D8Sf-3LeQvhss0njppVbK|https:\/\/www.google.com\/url?sa=t&amp;source=web&amp;rct=j&amp;url=https:\/\/docs.google.com\/spreadsheets\/d\/1eR2oAXOuflr8CZeGoz3JTrsgNj3KuefbdXJOmNtjEVM\/edit&amp;ved=2ahUKEwjl89aQl-voAhXSThUIHdVYCBQQFjAAegQIAxAB&amp;usg=AOvVaw2D8Sf-3LeQvhss0njppVbK>",
+        "ts": "1586979485.005300",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1065285962531_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

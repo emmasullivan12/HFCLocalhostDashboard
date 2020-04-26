@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't worry. It's ok. When you have time, no rush. I didn't even received a notification that you replied. Lol",
+        "ts": "1575646662.002100",
+        "username": "Simona Silvestru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-06\/862613706628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

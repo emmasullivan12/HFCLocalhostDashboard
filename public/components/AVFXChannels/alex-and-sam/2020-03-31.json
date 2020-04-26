@@ -1,0 +1,358 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "very odd isnt it!",
+        "ts": "1585652769.000400",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1025242408562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "have you all been sent home from uni? we're all working from home at work here",
+        "ts": "1585652796.000500",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037956923365_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah they shut the uni last week but i had to return home before that as my nans been confirmed to have it",
+        "ts": "1585652845.000600",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037958469205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Weird as she feels fine though",
+        "ts": "1585652853.000700",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1038014050064_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So im guessing it varies in patients",
+        "ts": "1585652863.000800",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026539901971_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that's interesting, has it been confirmed with a test?",
+        "ts": "1585652881.000900",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026540479715_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The uni did extend our deadline for our final year project but i still intend to submit this friday",
+        "ts": "1585652895.001000",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037525386868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yeah she went in with a chest infection",
+        "ts": "1585652908.001100",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039898062390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its very positive news in a way if she's not feeling too bad, as i imagine shes at risk group\\",
+        "ts": "1585652908.001200",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1027991067505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Then caught it when in",
+        "ts": "1585652913.001300",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026541451491_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "caught it in hospital? that's not ideal",
+        "ts": "1585652938.001400",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037961486165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah she was very close to passing hence the urgency for me to come back. Then as she was recovering she was moved to the respiratory ward where she then caught it",
+        "ts": "1585652984.001500",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1025249213522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Meaning none of us are able to visit her of course",
+        "ts": "1585653010.001600",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039901281750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh goodness..",
+        "ts": "1585653013.001700",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1040048770615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not great",
+        "ts": "1585653014.001800",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039901373030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Uni has cancelled everything as well",
+        "ts": "1585653035.001900",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1027995092497_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Our end of year show, graduation",
+        "ts": "1585653041.002000",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1040049672535_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Such a shame honestly",
+        "ts": "1585653053.002100",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1025251416370_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "will they move it, or is that it now?",
+        "ts": "1585653077.002200",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037965800181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Graduations hopefully rescheduled to november if this ends by then (i sure hope it does) but end of year shows just been finished now",
+        "ts": "1585653126.002300",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039904951398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which sucks as it was our chance to get potentially hired",
+        "ts": "1585653148.002400",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037533323076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think we'll probably be the generation to talk about corona extensively for a long ol' time. everyone will have a story of being effected by the end of it",
+        "ts": "1585653157.002500",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026549102067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah i dont think anyones not had something changed or cancelled by it",
+        "ts": "1585653213.002600",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039907577222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "tbh, if any consolation, i think it was fairly rare that people would be hired from our end of year shows, despite there being quite a good representation from all the big companies.",
+        "ts": "1585653223.002700",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1025256603986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm currently just applying for jobs anyway for starting mid May",
+        "ts": "1585653258.002800",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1038026596944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i think its more of a litmus test to see generally what kind of work is coming out of a uni. i think one dude got offered a job with a small company, any there was a lot of incredibly good work from other students",
+        "ts": "1585653294.002900",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039910062246_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok cool, where are you looking at applying",
+        "ts": "1585653305.003000",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037972839077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(this is the arch vis thing i mentioned, probably very limited use now, but very pretty - <https:\/\/vimeo.com\/7809605>)",
+        "ts": "1585653364.003100",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1037974681861_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "The Third &amp; The Seventh",
+                "title_link": "https:\/\/vimeo.com\/7809605",
+                "author_name": "Alex Roman",
+                "author_link": "https:\/\/vimeo.com\/user1337612",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/496503402_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "---------------------------------------------------------------------------------------------------------------------------------------------------\n\n\n\n---------------------------------------------------------------------------------------------------------------------------------------------------\n\n\"From Bits To The Lens\" Book  -- Beautiful 120+ hires imagery artwork, philosophy and processes behind the shortfilm in a 232 pages large format book. \n\nHelp funding my next shortfilm through the book. All the book sales incomings will be destined to financing it.\n\n---------------------------------------------------------------------------------------------------------------------------------------------------\n\n\n.Fullscreen it, please.\n\n\nA FULL-CG animated piece that tries to illustrate architecture art across a photographic point of view where main subjects\nare already-built spaces. Sometimes in an abstract way. Sometimes surreal.\n\nCredits:\n\nCG\n\n|Modelling - Texturing - Illumination - Rendering|      Alex Roman\n\nPOST\n\n|Postproduction & Editing|      Alex Roman\n\nMUSIC\n\nSequenced, Orchestrated & Mixed by  Alex Roman   (Sonar & EWQLSO Gold Pro XP)\n\nSound Design by Alex Roman\n\nBased on original scores by:\n\n.Michael Laurence Edward Nyman. (The Departure)\n.Charles-Camille Saint-Saëns. (Le Carnaval des animaux)\n\nDirected by Alex Roman\n\nDone with 3dsmax, Vray, AfterEffects and Premiere.",
+                "fallback": "Vimeo Video: The Third & The Seventh",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/7809605?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"The Third &amp;amp; The Seventh\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/7809605",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/7809605"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585653365.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im applying for 3d artist\/generalist or environment artist roles",
+        "ts": "1585653444.003300",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026557907603_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ive currently applied for 4 places",
+        "ts": "1585654024.003400",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039932362662_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

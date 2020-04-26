@@ -1,0 +1,116 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok cool, ILM is a good goal! so short term I would focus compiling a short FX showreel comprising of around 4\/5 separate shots. When I first started learning Houdini at university, our course didn't offer support for it so I was just using any online resource I could find but the thing that helps the most is when you have a goal\/effect in mind that you want to achieve. For example instead of looking up how to create fire in houdini, you would give yourself a goal of creating a wooden stick torch and have the fire follow that around a scene. In the process of searching up how to do that, you would learn more about pyro than you would if you followed just one tutorial.",
+        "ts": "1586691002.002600",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056381305826_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "places like ILM always love to see integrated FX so for each project you do you should try to have some element of a filmed packplate, it could be a still image or a tracked shot, but the backplate footage doesnt need to be shot on an expensive camera, you can use your phone which works just fine!",
+        "ts": "1586691130.002700",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1057218500819_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/263978393>",
+        "ts": "1586691186.002800",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1078043440832_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Window Ripples WIP",
+                "title_link": "https:\/\/vimeo.com\/263978393",
+                "author_name": "Jasper Corker-Marin",
+                "author_link": "https:\/\/vimeo.com\/user50477678",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/693643030_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Window ripples done in houdini.",
+                "fallback": "Vimeo Video: Window Ripples WIP",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/263978393?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Window Ripples WIP\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/263978393",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/263978393"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586691186.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this was one of my earlier houdini pieces that I did while at uni and I filmed this with my pixel 2 phone, which isn't exactly a high end phone!",
+        "ts": "1586691269.003000",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056384002018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and it looks like a still image but I just filmed it standing still and stabilized it in nuke, which is why you can see a bird in the reflection, flying past",
+        "ts": "1586691323.003100",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1053508482934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but for you, I would suggest trying to come up with 4\/5 different shots that you could start working on, all with different elements to them, for example one which involves some sort of pyro, one which involves some sort of liquid sim, one which could be destruction, another could be cloth, and the last one could be smoke (which is part of pyro)",
+        "ts": "1586691680.003200",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1057785107717_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and most (if not all) should have a real world backplate to show that you're thinking about the integration aspect of the pipeline too",
+        "ts": "1586691809.003300",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1056389121746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would also try to keep all the simulations low scale as well, to help speed up the process, like burning a torch instead of a whole house, or dropping a glass instead of blowing up a building, since they all have the same principles, its just the scale and resources change",
+        "ts": "1586691927.003400",
+        "username": "Jasper Corker-Marin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-12\/1078051164256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

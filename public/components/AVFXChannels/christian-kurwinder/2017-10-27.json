@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "sorry i didn't get back to you about this, been a busy week getting a report finalised.",
+        "ts": "1509113043.000376",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/263193305701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i would think both - shows that you are interested, and if you can demonstrate that you understand the links then that will set you apart from other candidates.",
+        "ts": "1509113088.000411",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/263055016818_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

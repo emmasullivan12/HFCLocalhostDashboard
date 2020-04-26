@@ -1,0 +1,128 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ruairidh! I'd like to ask you what you're doing currently and the different career directions you took?",
+        "ts": "1543250890.004900",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487448047312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ooo thats a deep question, at the moment im a modeller at Framestore london working on Wonder Woman 2 , jsut finished on Alita battle angel ( a list of films i have been on <https:\/\/www.imdb.com\/name\/nm9526240\/> ) . I have always wanted to be a modeller so its been an easy path for me to follow, but while learning the software and skills i have worked in bars, restaurants, call centres and clothes shops. Needed to pay the bills while i was learning as i didnt go through a university route i did self teaching. There was one point i though i would be a famous biker but that was just the madness of ebing a teenager",
+        "ts": "1543251127.005000",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/488190913394_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "IMDb",
+                "title": "Ruairidh MacNeill",
+                "title_link": "https:\/\/www.imdb.com\/name\/nm9526240\/",
+                "text": "Ruairidh MacNeill, Visual Effects: Avengers: Infinity War",
+                "fallback": "IMDb: Ruairidh MacNeill",
+                "from_url": "https:\/\/www.imdb.com\/name\/nm9526240\/",
+                "thumb_url": "https:\/\/m.media-amazon.com\/images\/G\/01\/imdb\/images-ANDW73HA\/imdb_fb_logo._CB1542065250_.png",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/m.media-amazon.com\/images\/G\/01\/imdb\/images\/desktop-favicon-2165806970._CB484110913_.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.imdb.com\/name\/nm9526240\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, famous biker did not see that coming.",
+        "ts": "1543251401.005200",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/488196183746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Was that at a young age, knowing you wanted to be a modeller?",
+        "ts": "1543251468.005300",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/488396566405_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "from about 8 i knew i wanted to do 3d was probably from around 12\/13 modelling started to over take everything else. had to learn texturing as part of it but modelling was the bit that really took my fancy",
+        "ts": "1543252002.005400",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/489258697943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow, that's amazing! :slightly_smiling_face: I beginning to love 3d and want to learn everything about it. I guess for me is to experiment with my career, as I'm not sure what I want to do exactly?",
+        "ts": "1543253225.005500",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487625262833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess for me, knowing a modeller's lifestyle may help me decide (if I can picture that as my career).",
+        "ts": "1543253281.005600",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/488231121026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My question is what's a day-to-day modeller's lifestyle?",
+        "ts": "1543253305.005700",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/488129100883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "day to day isnt really how we work, I normally get given an asset that has some concept art and some kind of scale reference normally a basic human. i then go through block out ( really rough basic shapes to get the form ) i will then work it up in levels so a first pass for main details, a second for details and a 3rd for extra high level detailing \/ scale setting objects. after that i will UV the object, run some checks to make sure it all works and hand it to the next department. this can take between 1 day to 9 months depending on what the asset is. I have a meeting at 10.30 am everyday in out mini cinema to have my work reviewed and will add in any updates or details based on that. Otherwise ite pretty much a free for all artistic creation as long as i stay close to concept . That pattern is pretty much the same for all departments",
+        "ts": "1543253992.005800",
+        "username": "Ruairidh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487638884529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you or know anyone that's dabbled into entrepreneurship?",
+        "ts": "1543260264.005900",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/489751773318_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

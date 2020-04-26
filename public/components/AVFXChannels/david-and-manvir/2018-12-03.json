@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Manvir, do you want to email me your personal statement and I will reply by email? It's <mailto:david.ainsworth1@nhs.net|david.ainsworth1@nhs.net>",
+        "ts": "1543836063.000100",
+        "username": "David (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-03\/493177480433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

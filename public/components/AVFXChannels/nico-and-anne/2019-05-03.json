@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for your input Nico, i’ll keep that in mind! Would you have any advice regarding the application process\/cover letter etc? Have a great weekend! ",
+        "ts": "1556919447.000900",
+        "username": "Anne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-03\/627960778343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

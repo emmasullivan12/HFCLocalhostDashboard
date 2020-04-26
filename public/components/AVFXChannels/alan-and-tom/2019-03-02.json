@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi tom I think we could have you in for a couple of days. I will warn you though its going to be hectic :) we have a big client delivery coming up. ",
+        "ts": "1551527524.000200",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-02\/566498781159_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s great thanks Alan. When is the best date for you guys then? I’m really flexible with uni and my part time job. If you’re away next week, how about the week starting the 11th or the week starting the 18th of this month?\nIt’ll be really useful actually seeing a studio coming up to a deadline. ",
+        "ts": "1551547581.000300",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-02\/566950665542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think the week of the 18th will be better as I will be back in the swing of it. ",
+        "ts": "1551558362.000400",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-02\/565569593202_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Message me during the week of the 11th to arrange it. In the meantime keep the updates coming on your project and we could set you some targets to try and hit to help keep you loving along ",
+        "ts": "1551558441.000500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-02\/567002797270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

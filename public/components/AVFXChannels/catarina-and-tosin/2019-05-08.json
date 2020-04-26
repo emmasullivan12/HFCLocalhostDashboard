@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wouldn’t say forever haha \nI don’t really know.\nI mean I’ve just started doing it recently and I do like it\nLoads of people I know in the industry are people that have changed careers so I can’t say I won’t :) \nI guess I’ll do it till it stops making sense to me ",
+        "ts": "1557301486.001600",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-08\/631200129351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you’re asking that due to pregnancies and such,\nI know DNEG offers flexible work hours and allows you to work part time\nIt’s a quite reasonable industry at times aha",
+        "ts": "1557301560.001700",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-08\/617945065906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

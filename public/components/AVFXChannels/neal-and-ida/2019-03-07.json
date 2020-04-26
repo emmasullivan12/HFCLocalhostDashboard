@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, sorry if there is any gaps in my responses, for some reason i am not getting notifications when new messages come in. I'll take a look at your questions tomorrow and get back to you as soon as I can. Speak soon :slightly_smiling_face:",
+        "ts": "1551970307.000200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/569920426610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I currently work as a Lead Compositor at Union VFX. It's a nice relaxed company who specialise in invisible VFX (the kind of hidden stuff you don't see such as set extensions, greenscreens etc..). It's a good atmosphere and not as pressured as some companies I've worked at. The owners actually care about the artists and do not like making them work lates or weekends as they used to both work in the industry so try avoid the things they didn't like about it.",
+        "ts": "1552001605.000300",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570463212116_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A typical work day, if I'm leading a project would go like this...I'd come in and first look at any client notes that have come in over night as access what needs to be done. Then with my coordinator, we'd do whats called rounds. We'd go to each artist working on the job and explain the notes they need to address and help them if they don't understand how to fix it. Then I'd go back and address any notes I have on my own shots. throughout the day I'd have artist coming up to me asking question about how to do something and then at a certain time everyday we have whats called a dailies session. This consist of going into our mini cinema room and watching all the shots then have been rendered that day. I'd either give notes to further improve the shot or pass it as a final to go to the client. Then I do whats called tech checks where I check if any shots that are finaled by the client are technically correct, i.e check the grain, the mattes, make sure the roto is fine, colours are correct, black point and white point are corrrects etc...",
+        "ts": "1552001719.000400",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570464537156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What aspect of VFX are you interested in?",
+        "ts": "1552001739.000500",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-07\/570464803236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

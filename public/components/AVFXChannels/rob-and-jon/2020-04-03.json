@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jon not sure if you've seen on linkedin or not but Milk are looking for compers and roto on a sci fi project",
+        "ts": "1585917568.002100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046281644806_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was chatting with a friend at Framestore, and he was saying a guy we know in tv hasn't done much work for the last 2 weeks because they dont have much to do right now, I believe work is starting soon but that may be why you havn't heard back about the tv work. They might be planning ahead for a couple of weeks",
+        "ts": "1585917645.002200",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1046282884854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

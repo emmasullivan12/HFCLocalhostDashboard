@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So now that you’re in a new school and studies, have a think about what kinds of projects you would like to work together on? Several small ones, an ongoing larger idea or goal, industry insight, or anything else :smiley:",
+        "ts": "1570651351.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789837371397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t think I have enough free time to work on a big project right now. But industry insight would be really good because I need to find work experience for March so learning more about the industry might give me some ideas on where I can start looking and who to contact:sweat_smile:",
+        "ts": "1570651503.000200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789842673120_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. Work experience. What are the details? For how long? Do you need to submit a piece of artwork or written report at the end? Etc...",
+        "ts": "1570651820.000300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789849604816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s just for one week. I don’t think we need to submit a piece of artwork but they haven’t really given us any details.",
+        "ts": "1570654912.000400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791766792471_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

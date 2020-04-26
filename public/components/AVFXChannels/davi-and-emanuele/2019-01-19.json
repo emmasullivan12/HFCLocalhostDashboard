@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emanuele. Happy 2019! I hope you are well. Let’s try to meet up this week :) ",
+        "ts": "1547912026.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-19\/528265250501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

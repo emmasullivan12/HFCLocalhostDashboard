@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah! Apart from the 30 mins roughly a day, it's the same 4 walls!  How's work going? You doing alright WFH?",
+        "ts": "1585920292.000400",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1044975309127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it is fine! Just don’t really have the team spirit and communication from home as you have in the office! ",
+        "ts": "1585925461.000500",
+        "username": "Cas Van Den Bergh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1040600763537_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You working with teradici or your own workstation at home? ",
+        "ts": "1585937552.000600",
+        "username": "Cas Van Den Bergh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-03\/1047755483812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

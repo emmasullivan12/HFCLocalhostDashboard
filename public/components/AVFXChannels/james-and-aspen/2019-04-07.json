@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm, I haven’t looked at laptops for a few years. I don’t have a personal one, only a work laptop. I think what was important to me at university was:\n\n  light (so it can fit in my bag)\n  capable of running Linux, or at least having a command line (so I could connect to the university computers by ssh)\n  Has plenty storage (for all the IDE’s and languages the coursework needed).\n  Reasonable processor speed and RAM (not top of the range, but good enough that it isn’t slow).\n  Preferably fast restart (so you can close the lid if you need to pay attention to the lecture, and open it again to take notes.\n\nDon’t know which laptops still do that. I saved up some of my student loan for all of first year and bought a MacBook for my second year. In first year I just didn’t have a laptop.",
+        "ts": "1554655633.002300",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-07\/602842944068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ya thanks",
+        "ts": "1554663970.002400",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-07\/602877354964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

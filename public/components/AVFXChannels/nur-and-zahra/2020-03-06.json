@@ -1,0 +1,498 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nur! Nice to meet you too! I’m definitely extremely interested in characters and creatures, even though I only just really got into them.\n\nI started modelling about 1.5 years ago, and what started out as a small side hobby has very quickly evolved into my favourite thing to do. I’m super passionate about it and would love to make a career out of it.\n\nI started with low poly modelling, then grew my skills and moved to hard surface modelling. As much as I like hard surface, I think I just needed something new to try. I’ve started sculpting now and would love to further explore the area of character modelling and develop my skills in it! I love how much character, story and expression you can put into a character model, that sometimes you cant do with things like mechs and guns.",
+        "ts": "1583482390.001900",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985302457184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning Zahra!\nWell, you have been addicted to modeling like most of us, well done!\nI think the same for characters. A character has a soul in the end, that’s why I love modeling characters too!\n\nHow and in which software did you learn modeling? What do you know about the basics of topology? If you can share some images of your hardsurface models and character samples(if any) here, that would be helpful. So I can have an idea about your progress and guide you for your aim. Please also feel free to ask if you have faced any obstacle in your character modeling process. Cheers!",
+        "ts": "1583484147.002000",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985340435456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Right now I’ve been modelling and sculpting in blender, purely because I can’t afford zbrush though I’m saving up! I’ve just started on my first character (made the mistake of not using a concept reference, so not making that mistake again!). I sculpted her in blender but did the retopology in Maya :) I’ll just get a picture of her now, she’s nowhere near finished though",
+        "ts": "1583484396.002100",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/984891818180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.artstation.com\/coldew|https:\/\/www.artstation.com\/coldew> this is my artstation with my hardsurface stuff though!",
+        "ts": "1583484426.002200",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/975254624577_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Zahra T",
+                "title_link": "https:\/\/www.artstation.com\/coldew",
+                "text": "3D Hobbyist",
+                "fallback": "ArtStation: Zahra T",
+                "thumb_url": "https:\/\/cdnb.artstation.com\/p\/users\/covers\/001\/233\/553\/default\/07c0ba513bf07dfc722dfcff6e64b22a.jpg?1555696002",
+                "from_url": "https:\/\/www.artstation.com\/coldew",
+                "thumb_width": 1920,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-2e7683f7d5b3da27948b5631c13387eb.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/coldew"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583484427.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUP7LM117",
+                "created": 1583484607,
+                "timestamp": 1583484607,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 889193,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUP7LM117\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUP7LM117\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 249,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 332,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 498,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 553,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 664,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP7LM117-306a796884\/image_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 708,
+                "image_exif_rotation": 1,
+                "original_w": 1093,
+                "original_h": 756,
+                "thumb_tiny": "AwAhADCrRRShQf4gKAJYUTbl6jkADcdKkRW2\/K64pjISfvL+dADKMml2N6frSEY60AFFJRQBNEMIT61G4w5pSfkX60j\/AHzQA2lpKKACiiigBx+6Pxof75oP3R+ND\/fNADaKKKAP\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUP7LM117\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUP7LM117-6f651b7510",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583484613.002400"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV1GJPC78",
+                "created": 1583484670,
+                "timestamp": 1583484670,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 790698,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV1GJPC78\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV1GJPC78\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1GJPC78-d877d63ed1\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1GJPC78-d877d63ed1\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1GJPC78-d877d63ed1\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 320,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1GJPC78-d877d63ed1\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 427,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1GJPC78-d877d63ed1\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1GJPC78-d877d63ed1\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 640,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1GJPC78-d877d63ed1\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 712,
+                "thumb_800_h": 800,
+                "image_exif_rotation": 1,
+                "original_w": 780,
+                "original_h": 877,
+                "thumb_tiny": "AwAwACqtSjrRQOozQBIEXGTx+NJmLdtw+fpSsAwAz3ocgyKAckDBqSrEbABjjpSU5kZTyPxpKokcqqfvNj8KlWWNY9oBP1FV6KLAWUAkGQNvPamTZQgAnkd6liZPLABHA5qO4dGAAIJB7VPUZCST1NJRRVCCiiigBD96helPVVbOTg9qC2VAI6dDQA2iiigD\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FV1GJPC78\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FV1GJPC78-314e7b9828",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583484676.002700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think the main thing im struggling with now is the hair! I dont know whether to do it in xgen, whether to sculpt it or whether to almost poly model it using curves",
+        "ts": "1583484881.003000",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/987567672950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also think i might change her tshirt to a nasa\/space themed one, just to show that shes pretending to be an astronaut!",
+        "ts": "1583485066.003100",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/975269463073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow, these works are beautiiful! you have many characters but as hardsurface ones :slightly_smiling_face:",
+        "ts": "1583485082.003200",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/987225404455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you designed the topology of the body in the upper picture? or used a base mesh from another model?",
+        "ts": "1583485108.003300",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/972575287298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did it by hand... it was excrutiating",
+        "ts": "1583485125.003400",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/975270865121_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And i forgot to give her ears!",
+        "ts": "1583485145.003500",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985363303584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FULH0TNV8",
+                "created": 1583485226,
+                "timestamp": 1583485226,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 439654,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FULH0TNV8\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FULH0TNV8\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FULH0TNV8-05fb06d77c\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FULH0TNV8-05fb06d77c\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FULH0TNV8-05fb06d77c\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 324,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FULH0TNV8-05fb06d77c\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 432,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FULH0TNV8-05fb06d77c\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FULH0TNV8-05fb06d77c\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 648,
+                "image_exif_rotation": 1,
+                "original_w": 798,
+                "original_h": 718,
+                "thumb_tiny": "AwArADCjRRUsMavkt27UARgFjgAk+1SG3lH8P61bj2KMKMU40AZ5Rl6qR+FNrSJwOap3By46UAQ1NbH5yPUVDTo22SBvShgXFyMnFPVsj2pgcEDHekLFAcDPpUFD9uXySdoGTVF23uzepqzLKVj9C3QVUqkJhRRRTEKrFehqwlwp4cAEflVailYLjpHLuWNNoopgf\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FULH0TNV8\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FULH0TNV8-715122e2c8",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583485229.003600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries for the ear. The faciel topology looks quite nice, just need a few amends to make that great.\nWell, the aim to be better is to be able to create expression deformations to work nicely. Even the arm topology needs to be examined to be nicely rigged.",
+        "ts": "1583485347.003900",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/987233018407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! Yeah. The arm topology was really hard and I definitely will need to clean that up, thanks for pointing it out! There are weird loops and poles  at the upper arm",
+        "ts": "1583485431.004000",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/975279647921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Zahra, I may just advise you to try Xgen, many professionals use that since it is into Maya and there are plenty of tutorials for that as far as i know. I do not do fur staff, but this is what i observed.",
+        "ts": "1583485446.004100",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/984917786932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah? It seems really hard to learn though! A huge step",
+        "ts": "1583485494.004200",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985373216704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would like to share with you a link to examine and apply to your models.\n<http:\/\/www.hippydrome.com\/>",
+        "ts": "1583485529.004300",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985393296453_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Articulation Home Page",
+                "title_link": "http:\/\/www.hippydrome.com\/",
+                "text": "cgi modeling and rigging page for the 3d artist",
+                "fallback": "Articulation Home Page",
+                "from_url": "http:\/\/www.hippydrome.com\/",
+                "service_name": "hippydrome.com",
+                "id": 1,
+                "original_url": "http:\/\/www.hippydrome.com\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583485529.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You don't need to know fur to work as a modeller, but if that's your interest of course go on.",
+        "ts": "1583485568.004500",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985375031728_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you, that will help a lot :)",
+        "ts": "1583485569.004600",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/984920899444_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To improve your topology flow, I can suggest you working on ref images to paint over your topology guess. let me show you. That can also ease that arm problem you had. It is much easier than face, indeed. I am sure you will realize soon.",
+        "ts": "1583485656.004700",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985377230848_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to learnt that! I did use a reference mesh but I messed up around the arms, I think I see what I need to do now though!",
+        "ts": "1583485726.004800",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/973912107651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUP8J8U0H",
+                "created": 1583485862,
+                "timestamp": 1583485862,
+                "name": "draw_topology.jpg",
+                "title": "draw topology",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 150410,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUP8J8U0H\/draw_topology.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUP8J8U0H\/download\/draw_topology.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 338,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 450,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 675,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 853,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 901,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUP8J8U0H-45243d6302\/draw_topology_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 961,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1000,
+                "original_h": 1066,
+                "thumb_tiny": "AwAwAC27IcRt9KrpGAKnm\/1f4iogwHU4pMpC7B6UFBjpTs570pIHU1IyuV2NkdjmrtVJeVOOtWuwqkSxkufLOKqyIzZwTirjDKkVCOmDQxojhyvWkkVmb5TS87+hxUiZxyMUhjVDAcnnPFWaiUZce1S00SwqCUFWyOhqUnA5qNjuPPShgiviQt1J+gqRNw+8f0pwXB4NLj1qSiSMYGfWn1GjY4NPq0Sz\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUP8J8U0H\/draw_topology.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUP8J8U0H-a128b2bb3a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583485870.004900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So this can be your first challange. Whenever you do that, please let me know. This has an advantage though, you dont need to model but just to draw.",
+        "ts": "1583485989.005200",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/975293357489_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Then I will check that and we will discuss about it. Does it sound good to you?",
+        "ts": "1583486130.005300",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/975296864817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

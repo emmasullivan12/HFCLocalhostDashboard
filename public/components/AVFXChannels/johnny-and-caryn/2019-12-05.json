@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Johnny, sorry for the radio silence lately, I've been quite tied up with work. Just wanted to say hi and let you know I'm still interested in picking this back up once I have the time",
+        "ts": "1575542409.019500",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/848229232370_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

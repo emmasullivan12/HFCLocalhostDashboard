@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It appears that when doing the wedge it uses about 21-30gbs of ram. When running the larger it can vary between 55-62gbs of ram. But these numbers may change as I continue to make changes.",
+        "ts": "1581549751.012000",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/938392127635_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

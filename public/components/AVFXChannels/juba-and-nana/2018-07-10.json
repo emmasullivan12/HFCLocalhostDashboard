@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's cool to hear Nana, it's good that you've been making games. I've been meaning to start FFXV on pc but the 80gb download and 70+hr game time is a little too much for me right now, hahaha\n\nSo a typical day for me is arriving at work and animating any shots I have before dailies (dailies are meetings we have with our animation supervisors and leads that look over shots, and give us feedback on what to improve in Animation). After getting notes, I address them the best I can, I submit a new version, and rinse and repeat until the quality of animation is as good as we can make it! (I'm making it sound simple, but it's a lot of hard work)\n\nAnyway, I think that we should set up a time to have a real time chat, I wanted to learn more about your goals and drives and it would be a good chance to get to know each other some more.\nI work weekdays until (usually) 6pm BST, and I'd be up for a 30min\/ 1h chat this or next week. How about Thursday the 12th at 6:15pm bst? Let me know if that works, otherwise we can find another time.\nThanks!",
+        "ts": "1531243285.000475",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-10\/396125792498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure that time works for me.",
+        "ts": "1531243628.000439",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-10\/397197286855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

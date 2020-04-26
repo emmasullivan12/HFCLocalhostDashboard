@@ -1,0 +1,129 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nana, how is everything?\nIt was great to talk to you this week and I'm looking forward to talking with you some more!\n\nFirstly, I want to explain my expectations from this process, that way we can have a clear direction and focus on the important bits.\nAs a mentor I want to help you the best I can to achieve your career goals, it's not my place to be your teacher or friend, but to share what knowledge I have that might help direct your efforts to reaching those goals.\nYou know that I work in the Animation industry, which is different from what you are looking towards, but I'll do my best to help you and if something is beyond me I'll let you know or find people who can help me help you.\n\nOK, secondly, I read through your profile and a few questions came up that would really help me understand what you are looking for.\n\nYou said you want to be in Game Development with your own studio, but do you have a specific job in mind, for example: Level Designer, concept artist, programmer, everything? hahaha\nYou also mentioned a website and game you made, I'd really like to see them if you want to share them!\n\nLastly I wanted to ask you what your expectations are with the mentorship? What are you seeking to gain? And what specific help are you looking for? You don't have to answer it immediately, think about it and get back to me if you don't know right now :smiley:",
+        "ts": "1531415753.000048",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/398862388182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm afraid I have to go Nana, we can talk another day\nCheers",
+        "ts": "1531417234.000104",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/397798813157_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for not coming to talk I was very busy with family matters and this slipped my mind.",
+        "ts": "1531418307.000368",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/397114090385_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you are free tomorrow around the same time, I should be able to talk.",
+        "ts": "1531418346.000231",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/397812842869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One thing that I really want to gain is specific advice in the game development industry. I have had too much general advice thrown at me, and I really want to focus on my a career.",
+        "ts": "1531418700.000541",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/397677590754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For now I do a bit of everything, due to the fact I am still lacking in certain areas: VFX, 3D Modeling and so on.",
+        "ts": "1531418977.000385",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/397548352627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for my website: <http:\/\/nanamarfo.weebly.com>",
+        "ts": "1531419087.000442",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/397682406994_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "NANA MARFO",
+                "title_link": "http:\/\/nanamarfo.weebly.com\/",
+                "text": "The life and times of a 16 year old who wants to make games.",
+                "fallback": "NANA MARFO",
+                "image_url": "http:\/\/nanamarfo.weebly.com\/uploads\/1\/1\/1\/8\/111885923\/editor\/logo-nana-marfo_2.png?1525453152",
+                "from_url": "http:\/\/nanamarfo.weebly.com\/",
+                "image_width": 190,
+                "image_height": 238,
+                "image_bytes": 5150,
+                "service_icon": "https:\/\/nanamarfo.weebly.com\/favicon.ico",
+                "service_name": "nanamarfo.weebly.com",
+                "id": 1,
+                "original_url": "http:\/\/nanamarfo.weebly.com"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is where most of my work lies.",
+        "ts": "1531419112.000335",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/398904874038_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can get some advice on improving it?",
+        "ts": "1531419123.000070",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/398905015718_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Again, sorry for missing a chance to talk, and see you soon!",
+        "ts": "1531419706.000177",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-12\/397557320323_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

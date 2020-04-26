@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Goodbye, Daffer, I am de-activating my slack account, this site served me well indeed",
+        "ts": "1557297894.000100",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-07\/617903618210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

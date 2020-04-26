@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Louise, I have looked into the course and it’s over £5k and would mean taking 6 weeks off work to attend which means it’s not really an option. If it was cheaper and was in the evenings\/weekends, then I would definitely do it. In regards to production assistant roles, I would be happy to apply but don’t think I could take a pay cut quite that low if I’m going to live in London. ",
+        "ts": "1583745335.000500",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990532658087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you know of any schemes or alternative options? ",
+        "ts": "1583745434.000600",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/990535038279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s completely understandable. In that case I would just say to keep your eye out for more coord positions and keep applying and it will be a game of luck of who else is applying at the time, if there is a sudden need for coords that out strip the current number of coords with previous experience they will then look at people with transferable skills. I showed your cv to my friend who is going to be head of production at cinesite and she said she has hired a coordinator from the banking sector before because she had the right personality and she said your cv looked good. So don’t be disheartened, keep applying and also don’t be afraid to follow up if you haven’t had a rejection but it’s been a month, email and see what’s going on? Are they still hiring or do they have any feedback for you.",
+        "ts": "1583775490.000700",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-09\/989641193824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

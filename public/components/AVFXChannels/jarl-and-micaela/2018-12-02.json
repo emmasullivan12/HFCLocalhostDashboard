@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That seems like a really good sign that the people who teach there all have that level of experience! I couldn't remember if I sent this link to you about the \"bring your own animation\" event which is being done in coordination with The Foundry, so here it is  <https:\/\/london.siggraph.org\/event\/christmas-special-byoa-dd\/> ",
+        "ts": "1543765682.001700",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-02\/494396634935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also tried reaching out to a friend at Trixter in Germany. Hopefully I'll hear back from him soon. I have a few more connections in Germany too, so if I don't hear from him quickly, I'll try to reach out to them too",
+        "ts": "1543765760.001800",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-02\/492608121936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Thanks a lot!\nI will check the event out. Let me know if you get any information about Germany :) ",
+        "ts": "1543766320.001900",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-02\/492743676881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/previsualisation-webinar-on-27-november.html?m=1>",
+        "ts": "1574709264.001500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848162804276_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Previsualisation Webinar on 27 November",
+                "title_link": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/previsualisation-webinar-on-27-november.html?m=1",
+                "text": "Iliana Franklin teaching at Escape Studios Escape Studios is hosting a free webinar on previsualisation, taught by Iliana Franklin, our ...",
+                "fallback": "Previsualisation Webinar on 27 November",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-xO0xxS-sEY4\/Xda8kgD9XlI\/AAAAAAAAFSc\/qbMxoyx6ZPAd9UVdNOChYg79M9WXuWDTACLcBGAsYHQ\/w1200-h630-p-k-no-nu\/ilianaF_1a.jpg",
+                "from_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/previsualisation-webinar-on-27-november.html?m=1",
+                "image_width": 326,
+                "image_height": 172,
+                "image_bytes": 12786,
+                "service_icon": "https:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/11\/previsualisation-webinar-on-27-november.html?m=1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. I’m good. Been busy helping my students finish their short films. Due in 2.5 weeks! Then Christmas break! ",
+        "ts": "1574709321.001700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850829256630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are your studies? ",
+        "ts": "1574709328.001800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/840693130481_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are your games concepts coming along? ",
+        "ts": "1574709353.001900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848165109332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

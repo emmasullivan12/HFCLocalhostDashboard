@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I tuned in on the vfx live talk I can't remember the guys name now but he was talking about pitch black which my dad showed me when I was young and it was really interesting to hear about the old school vfx when something like Maya had just released.\n\nI'll definitely tune in on more in future.",
+        "ts": "1585779884.000700",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1033011007457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

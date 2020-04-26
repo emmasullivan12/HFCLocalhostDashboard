@@ -1,0 +1,96 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey!! finally finished it, could you just have a quick look to the CV? I added your name (let me know if you are happy with it or i should take it off :slightly_smiling_face: )",
+        "ts": "1566912256.011900",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/739603197829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FMRHRNCCV",
+                "created": 1566912278,
+                "timestamp": 1566912278,
+                "name": "CV_BrendaXimenaRoldanRomero_OCT2019.pdf",
+                "title": "CV BrendaXimenaRoldanRomero OCT2019",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 479791,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMRHRNCCV\/cv_brendaximenaroldanromero_oct2019.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FMRHRNCCV\/download\/cv_brendaximenaroldanromero_oct2019.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FMRHRNCCV-9e1c2761cf\/cv_brendaximenaroldanromero_oct2019_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 910,
+                "thumb_pdf_h": 1287,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FMRHRNCCV\/cv_brendaximenaroldanromero_oct2019.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FMRHRNCCV-a7020b7d03",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1566912279.012000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, looks really good! But you wrote trump instead of tramp :joy:",
+        "ts": "1566937087.012300",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/728732211123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the delay, I don’t get notifications here ",
+        "ts": "1566937099.012400",
+        "username": "Matt Howsam (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/740177428320_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Woops :joy::joy::joy: so glad you realised",
+        "ts": "1566937301.012500",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/733799284241_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries :blush: I will change it now and send it tomorrow then",
+        "ts": "1566937315.012600",
+        "username": "Brenda Ximena Roldan-Romero (Prospela Students (be",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/740181778000_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

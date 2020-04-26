@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tell me a bit about your position and what your job role is right now?\n2. How have you developed your career? Let’s start from the beginning\n3. What made you want to choose this starting position? Was Vfx always a dream of\nyours?\n4. Do you think your education was beneficial to your career? Many people believe that\nself-learning is more important?\n5. Back to your current job, what are the responsibilities of your job? \n6. In your job, what qualities or attributes do you look for in people that you are\nhoping to employ or work with?\n7. What is collaboration like within a studio with directors’ producers’ clients and other\nartists?\n8. What does your typical workday look like?\n9. How do you prioritise your work when you have multiple projects to complete?\n10. Would you class yourself as technical or artistic in your job role?\n11. What other job roles have you taken on? (If not already answered)\n12. is there anything you have done that you would count as a career highlight?\n14. If you had to start over would you do anything differently?\n15. What one lesson would you say you have learnt in your experience in vfx and what\none thing would you advise someone looking to work in the industry?\n16. What does the future of film look like?\n17. And now, seriously, how hard is it to keep the next big thing a secret? And is it worth\nyour job to keep it?",
+        "ts": "1584803946.000100",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016877079904_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These questions are all fantastic. Would it be more convenient for me to record myself answering all of these so I can answer a bit more naturally?",
+        "ts": "1584804086.000200",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016425348916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If that works for you that would be incredible :) ",
+        "ts": "1584822578.000300",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1019297518854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

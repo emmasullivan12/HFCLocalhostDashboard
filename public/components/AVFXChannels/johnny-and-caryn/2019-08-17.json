@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Caryn , had a look at your artstation , it’s great that you are using it , it’s a great tool to get your work out there, and see other people’s work.\nBut sometimes can be a bit overwhelming, specially this website it’s on the top 500 worldwide internet addresses, and it has thousands of incredible artists ! \nYou have already some cools things on your portfolio.\nOne of the things I definitely always recommend is photography, or drawing on locations as a way to improve yourself.\nAre you into one of these ? Or not really ? \nIf  would like to try one what would be the one you prefer ?\nModelling techniques, or better texture you can always learn online , and we will also talk about it if you want to . \nWhat are you developing currently ? \nHave a great weekend ,\n\nCheers \nJohnny \n",
+        "ts": "1566073957.002500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-17\/731657285495_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Johnny, I think drawing on location would be better since I'm currently trying to develop a stronger sense of perspective and design when it comes to environments. As for learning more modelling or texture techniques any advice you can give would be most helpful. As far as developing I'm still working on that bedroom environment on my portfolio but other than that I'm a little at a loss as to what to do next, as I find it a little overwhelming to try and figure out what would be best to get recruiters attentions. I know different studios look for different things but I want to try and hit as many as possible in fear of limiting myself \nThanks,\nCaryn",
+        "ts": "1566083679.002600",
+        "username": "Caryn Frayne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-17\/729828921536_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

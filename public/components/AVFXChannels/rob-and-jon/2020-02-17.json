@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Rob, Sorry about the late reply. Hope you had a cool weekend.  Strange weekend with me. Seems the house has sold after just a few days with a new agent... everything gets confirmed today. \nI’ve already started reaching out to recruiters and some research on vfx studios our in Canada but no firm contacts just yet. I’ll definitely try what you suggest. I was planning my recce there in April but I’ll keep the Stuttgart festival in mind in case I’m still  dealing with moving house by then - good tip.  I was actually thinking of vfx festivals \/ job fairs in Vancouver, Montreal and Toronto while I’m out there. \nLooks like I’ve missed the spring entry for the vfx courses I want which means waiting until September for autumn entry. More practice time with Nuke I guess!\n\nIn terms of my reel I’m going to move on to the alley shot this week. \n\nI’ll post the monkey shot for feedback tomorrow if that’s okay - lots of house stuff and starting my new job properly today! \n\nKeeping an eye out for the film clean up- nothing through just yet though. ",
+        "ts": "1581929470.014000",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/945127509201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jon, sounds like a productive weekend in terms of your house. Sorry been a busy day today, delivering shots for Bond. I still haven't heard anything from the director so will give a push and say we're waiting for the shot.",
+        "ts": "1581956243.014100",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-17\/945763141697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

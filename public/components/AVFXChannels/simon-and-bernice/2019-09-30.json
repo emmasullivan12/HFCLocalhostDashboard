@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Simon, sorry I haven’t kept in touch in a while just been busy settling in to university. I managed to find the time to download blender and I’ll be looking into it with the help\nof online tutorials online to get a start. (Would have liked to have done it sooner but my laptop broke so had to wait a while to get a new one).",
+        "ts": "1569882186.000200",
+        "username": "Bernice Chege (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/778787692069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve signed up to the mailing list. I’m interested in being involved in workshops available too so I’m looking into that ",
+        "ts": "1569882294.000300",
+        "username": "Bernice Chege (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/778322205476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

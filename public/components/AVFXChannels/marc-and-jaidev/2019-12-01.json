@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jaidev, As I understand it most software companies will use C (one of the flavours) or similar to actually create the software and then compile into whatever opersating system.",
+        "ts": "1575234124.004200",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/855307315013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My software\/pipeline team then use python to interface with the softwares as most of them include hooks\/pipes into and out of their wares to allow customisation",
+        "ts": "1575234179.004300",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/857157092711_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so from my perspective I usually deal with 'client' side rather than vendor side.",
+        "ts": "1575234285.004400",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/847367784881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you were to work for me, for instance, you'd be dealing with various software products and helping to integrate them and troubleshoot to help the whole studio to get to a better place",
+        "ts": "1575234789.004500",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/842518987522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "working for a software vendor would mean that youd probably be in a team working on a specific product OR module\/s that integrate into their specific products",
+        "ts": "1575234832.004600",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/857509630438_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll ask a mate who used to work at <https:\/\/www.foundry.com\/>",
+        "ts": "1575234881.004700",
+        "username": "Marc (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-01\/857509904454_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Foundry",
+                "title": "Discover more",
+                "title_link": "https:\/\/www.foundry.com\/",
+                "text": "Foundry creates pioneering software for creative industries across Digital Design, Media and Entertainment.",
+                "fallback": "Foundry: Discover more",
+                "image_url": "https:\/\/www.foundry.com\/sites\/default\/files\/paragraph\/hero-video-slide\/Web-header-v3.jpg",
+                "from_url": "https:\/\/www.foundry.com\/",
+                "image_width": 920,
+                "image_height": 250,
+                "image_bytes": 199559,
+                "service_icon": "https:\/\/www.foundry.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.foundry.com\/"
+            }
+        ]
+    }
+]

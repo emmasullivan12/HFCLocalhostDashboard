@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Craig, I live in the London borough of Hillingdon. And It's well too hot at the moment.  Really I have access to London.",
+        "ts": "1563984154.000200",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-24\/706589361991_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

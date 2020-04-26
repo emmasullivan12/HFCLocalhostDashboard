@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would be great to see an animation with those two!\nSorry for the format, was just through facebook but this is the feedback from my friend Matthew Brookes hes been a character designer for studios in the uk.\n\n\"Her design portfolio is good she’s doing everything right\nThe only thing I would suggest\nIs to have more variety of styles\nSo she could take an existing show and do something in that style\nLike do one in adventure time style one in fairly odd parents one like Steven universe\nAdd some props in there to maybe\nMaybe include some more preschool stuff if she’s trying to get work in the uk ?\nHope it helps ya\nSome good advice would be if there is a particular studio or show she wants to work for do something in the style of one of there shows to add to the folio\"\n\nIf you have any more questions for him i can pass on his details :slightly_smiling_face:",
+        "ts": "1586856492.004200",
+        "username": "billympetha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1083571466752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aw thank you so much! Really appreciate it!",
+        "ts": "1586863193.004300",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1073054933409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I kept thinking there was stuff I needed to change my folio up but couldn't figure out what so this feedback is really helpful.",
+        "ts": "1586863442.004400",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047169743655_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah great! actually Matt just asked if youd like him to recommend you to brown bag films for a remote character design job, He's moving to another job soon and needs to recommend people to replace him",
+        "ts": "1586863472.004500",
+        "username": "billympetha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1060081850197_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If your interested shoot matt an email with your portfolio and CV :smile: <mailto:Matthewbrookeart@gmail.com|Matthewbrookeart@gmail.com>",
+        "ts": "1586863951.004600",
+        "username": "billympetha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1067378805572_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

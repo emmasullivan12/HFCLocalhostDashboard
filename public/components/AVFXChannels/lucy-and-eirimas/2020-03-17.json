@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm afraid I'm not much help for the flour sim, but have you actually posted on the forums for help? There's the vfx reddit thread that might be useful too!\nI think I see what you mean with the code, you have the line in the if statement '@Frame &lt;= 160' so is that a required condition for the value to update? If the frame &gt; 160, what value do you expect it to be if it doesn't remain at spinforce?",
+        "ts": "1584460595.000700",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1008062138855_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I posted in odforum for help, but didnt get ant replies so ill try to post in reddit or even in sidefx then :sweat_smile:\n\nSo after frame 160 I want the points which were applied with attack force keep it, but the ones which stayed in spinforce, keep spinning around. But now after frame 160 the points which got applied with attack force comes back to spin force",
+        "ts": "1584460824.000800",
+        "username": "Eirimas Jaskinas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006212655056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will share a video how it looks now for you to more easily to visualize. <https:\/\/vimeo.com\/398272940> pw: live . You can see that after the attacker makes first attack stones comes back to spin around him, but I want it to just fly away",
+        "ts": "1584462211.000900",
+        "username": "Eirimas Jaskinas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/993507587906_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you know what your predictions are for everything you're studying at the moment? ",
+        "ts": "1510504906.000028",
+        "username": "sonal92 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/270921480627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

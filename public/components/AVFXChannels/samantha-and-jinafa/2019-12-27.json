@@ -1,0 +1,169 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries hun - we all have struggles and things to manage. It's great you are talking about it",
+        "ts": "1577459397.002400",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/874683148690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And you are very welcome for the CV comments.",
+        "ts": "1577459412.002500",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/887476765669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My holidays started already and I'm one of the lucky few who have time off until early January :smiley:",
+        "ts": "1577459432.002600",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/874683638722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Physiotherapy can be a very rewarding career. My step sister is one - she recently graduated from Robert Gordon University (she studied Physical Therapy) and she now works for the NHS and really loves it)",
+        "ts": "1577459537.002700",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/876000158915_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You should check this out for insight to the job\/salary\/hours etc &gt;&gt; <https:\/\/www.prospects.ac.uk\/job-profiles\/physiotherapist>",
+        "ts": "1577459568.002800",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/877226369985_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Physiotherapist job profile | Prospects.ac.uk",
+                "title_link": "https:\/\/www.prospects.ac.uk\/job-profiles\/physiotherapist",
+                "text": "Discover what it takes to be a Physiotherapist. Find out expected salary, working hours, qualifications and more.",
+                "fallback": "Physiotherapist job profile | Prospects.ac.uk",
+                "from_url": "https:\/\/www.prospects.ac.uk\/job-profiles\/physiotherapist",
+                "service_icon": "https:\/\/www.prospects.ac.uk\/resources\/dist\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "Prospects",
+                "id": 1,
+                "original_url": "https:\/\/www.prospects.ac.uk\/job-profiles\/physiotherapist"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One thing I would say is be sure you like the role, because the degree is obviously more specific so would be less relevant to other careers. i.e. Medicine would cover a range of roles within the industry, but Physio is obviously specific to the physio role.",
+        "ts": "1577459680.003000",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/887480318117_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you know what universities DO accept a 5 in Maths? You know because you go to a state school sometimes they can be more leniant",
+        "ts": "1577459705.003100",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/887480648005_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would go check out the top unis for Medicine, start at the top i.e. Imperial etc and work your way down until you find one who you think might accept lower grades. You never know you could even message Imperial and say you are passionate about studying there it would be your dream etc but are concerned your 5 in Maths excludes you from applying and what do you think etc",
+        "ts": "1577459773.003200",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/876003273331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its worth a shot! You dont ask, you dont get :stuck_out_tongue_winking_eye:",
+        "ts": "1577459793.003300",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/877229374209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But from your thinking about being a headteacher etc is certainly sounds like you want a career where you \"give back\" and can actually make a difference to a broken system (whether thats education or healthcare etc). I wonder if you could get work experience as a physio somewhere? Do you have a local sports team or an old peoples home you can support at (they often need physio after strokes etc)",
+        "ts": "1577460205.003400",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/887487173253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah this can be frustrating, but remember once you are out of school and exams and actually in the door to a particular career, the exam results wont matter so much anymore. You just have to make sure YOU do enough to get YOUR foot in the door. Forget how other people are doing it. i.e. you've made your subject choices for now. Don't worry about other people and how unfair it might be ... just focus your energy on YOURSELF and being the best YOU can be.",
+        "ts": "1577460344.003500",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/887488992053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But from what I'm hearing i.e. you are unsure particularly what role you want, you just know you want to help people and make a difference, I would choose an degree subject that is broad enough to keep doors open (unless you are really sure you want physiotherapy) ... and the only way to find that out is to actually try physio i.e. work shadowing or something",
+        "ts": "1577460428.003600",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/889687133622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One way to help yourself feel less stressed and worried about exams\/grades etc is to think about the end goal ... why am I learning this? Why does it matter? What is it useful for? ... of course grades matter too (to get you through the door!) but try to really understand the subject too. You might fall in love with it!",
+        "ts": "1577460581.003700",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/889341284871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anyway enough of me talking for now haha - have a think about the above and let me know how you're feeling! You can always talk to me if you're stressed :smiley:\n\nIt's a busy time of your life (I know I've been there!) but you got this :muscle:",
+        "ts": "1577460688.003800",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-27\/877241590961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

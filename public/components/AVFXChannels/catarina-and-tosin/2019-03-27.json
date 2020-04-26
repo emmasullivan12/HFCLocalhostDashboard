@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tosin\nHow’s the shot going now that you’re in week 5? How are you finding working with CG",
+        "ts": "1553680427.002500",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/587162982832_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you struggling with anything? In need of guidance?",
+        "ts": "1553680670.002600",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590657204231_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Catarina it's going well so far I finished my clean up but it doesn't look that good(its fine for now because its gonna be covered by cg) but I was wondering if u knew what the best technique to clean up is",
+        "ts": "1553692181.002700",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590870095639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I was wondering if in the industry it is valued to know both 3d and 2d vfx",
+        "ts": "1553692200.002800",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/581078430017_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m sure it’s fine\nUsually we roto\/cleanup according to the needs of the shot\nIf it’s to be covered then no point in making it perfect \n2D skills are for sure the best. I started as a runner and was roto prep for 2 ½ years and it’s saved my life in a lot of comps",
+        "ts": "1553715382.002900",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/591920106422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Golden rule or prep is if you can’t patch it you need to paint ",
+        "ts": "1553715411.003000",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/588065446016_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you’d like to send through anything for reviewing I’d be more than happy to advise or review :) ",
+        "ts": "1553715451.003100",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/588066358816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m sorry I realized I never get notifications for the slack app \nWhich is why I’ve not realized you’ve been replying ",
+        "ts": "1553715610.003200",
+        "username": "Catarina Goncalves (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590819285397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh really that's good then thank you for the advice!!\n\nWhen we get to the comp stages I'll definitely send you the footage :)",
+        "ts": "1553720218.003300",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/591671015863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's okay that happened to me at the beginning too",
+        "ts": "1553720227.003400",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590930226181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also what was your vfx journey for you to end up at DNEG :)",
+        "ts": "1553720257.003500",
+        "username": "Tosin Ogunleye (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/588181738160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

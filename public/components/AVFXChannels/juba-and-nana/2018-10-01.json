@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My best advice is to keep it simple. Try and think of the basic shapes of the character and how it relates to their personality (squares, spheres and triangles), think about having a clean silhouette that's easy to identify (example pic), and make many iterations exploring different aspects, don't get stuck in design decisions early on, it's important to play around and find different solutions to the characters design.\nThat's why having a solid reference for style and look is useful, it grounds a lot of aspects and is then easier to make decisions.",
+        "ts": "1538395718.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/445882890273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FD4E5K4SE",
+                "created": 1538395790,
+                "timestamp": 1538395790,
+                "name": "022cdae5-9c54-449c-89f0-39c8f93143f5_560_420.jpg",
+                "title": "022cdae5-9c54-449c-89f0-39c8f93143f5 560 420",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 33341,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FD4E5K4SE\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FD4E5K4SE\/download\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FD4E5K4SE-e4834f1db7\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FD4E5K4SE-e4834f1db7\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FD4E5K4SE-e4834f1db7\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 270,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FD4E5K4SE-e4834f1db7\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 360,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FD4E5K4SE-e4834f1db7\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 560,
+                "original_h": 420,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FD4E5K4SE\/022cdae5-9c54-449c-89f0-39c8f93143f5_560_420.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FD4E5K4SE-9f56afbe72",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1538395792.000100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And about the remasters, I think a lot of times it's amazing, bringing old games to a new generation of people and computers (consoles etc), but it's also become an excuse for some companies to cash in on old IP's. Where they don't put in the effort to make a decent remaster.\nOverall I don't mind remasters, as long as it's relevant to exist and it's done properly, I'm all for it! How about you, what do you feel about them?",
+        "ts": "1538396830.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-01\/446310578084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

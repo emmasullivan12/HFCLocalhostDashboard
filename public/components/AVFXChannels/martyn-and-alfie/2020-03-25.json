@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Martyn, just seen your message, sorry about that, I must have missed the notification. I don't really know what questions to ask to be honest, but I think it'd be cool to get an insight as to how you started and progressed :smile:",
+        "ts": "1585148558.000100",
+        "username": "Alfie Bazley (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1025219346212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

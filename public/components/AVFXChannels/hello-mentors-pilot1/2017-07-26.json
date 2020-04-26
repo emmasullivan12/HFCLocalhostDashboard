@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "text": "<!channel>\n*Look at the impact you've had this past month! [READ PDF]*\n&gt; This is a fantastic achievement, especially given our pilot only lasted 1 month!! WELL DONE GUYS! :sunglasses:\n&gt; Look forward to our next programme in Sept\/Oct!",
+        "files": [
+            {
+                "id": "F6D8X3WUR",
+                "created": 1501065955,
+                "timestamp": 1501065955,
+                "name": "Pilot #1 - Impact.pdf",
+                "title": "Pilot #1 - Impact.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 175355,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6D8X3WUR\/pilot__1_-_impact.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6D8X3WUR\/download\/pilot__1_-_impact.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F6D8X3WUR\/pilot__1_-_impact.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F6D8X3WUR-2419dc563e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1501065956.016164"
+    }
+]

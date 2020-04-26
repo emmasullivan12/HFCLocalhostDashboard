@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes we do! For the next two projects we need some kind of footage to complete the brief so I could be able to do that! Would it just be done infront of a green screen?",
+        "ts": "1576844310.000500",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/870398154483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

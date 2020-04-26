@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey nice to meet you",
+        "ts": "1537804640.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-24\/441726148371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Subjects that i am studding are computer science, maths and chemistry, personally computer science is my favourite i love it more that my other subjects, outside my college my personal interest are playing the keyboard\/ piano, also reading books specially once that contain a lot about AI",
+        "ts": "1537804899.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-24\/441835010802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "MY questions are:",
+        "ts": "1537804931.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-24\/443190150326_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What subject in specific did you do at university",
+        "ts": "1537804949.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-24\/442010757493_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also how long did the course run on for",
+        "ts": "1537804968.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-24\/443190841206_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is a staff engineer?",
+        "ts": "1537805049.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-24\/442012310677_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also i heard about ARM Processors, amazing things is that today in class we were talking about processors, single threaded and multi threaded performance on multi core processors, The best thing was that we were also talking about why RISC processors are used in phones.",
+        "ts": "1537806020.000100",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-24\/442026784885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

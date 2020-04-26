@@ -1,0 +1,114 @@
+[
+    {
+        "type": "message",
+        "text": "Ahh that's great! And that sounds like it's a  good thing to be involved with! ",
+        "user": "U5WDG4GAU",
+        "ts": "1498233599.069698",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g6329b69fd90",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c6329b69fd9093d9d67cfe55ede3fb52.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "Melissa",
+            "real_name": "Melissa",
+            "display_name": "melissa",
+            "team": "T4UUTPV18",
+            "name": "melissa",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Yeah, I've found that I never really received any guidance on how to use it. It can be daunting connecting with people you don't know on it but from what I understand that's the way that most people link with people in their industry and use the website. For organising my elective I did that and then private messaged someone at the place I was looking to work. I briefly explained my situation and then stated that I was interested in working there and asked whether or not they could advise me on who it would be best for me to contact to organise it ",
+        "user": "U5WDG4GAU",
+        "ts": "1498244114.686172",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g6329b69fd90",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c6329b69fd9093d9d67cfe55ede3fb52.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "Melissa",
+            "real_name": "Melissa",
+            "display_name": "melissa",
+            "team": "T4UUTPV18",
+            "name": "melissa",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'll try to use it like you said and see if it helps",
+        "user": "U5X7R0LBX",
+        "ts": "1498245779.215532",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "fdb73ff51ed7",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201264672165_fdb73ff51ed7f670e19b_72.png",
+            "first_name": "Ayisha",
+            "real_name": "Ayisha Rasheed",
+            "display_name": "ayisha_2000",
+            "team": "T4UUTPV18",
+            "name": "ayisha_2000",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Okay, let me know how it goes :blush:",
+        "user": "U5WDG4GAU",
+        "ts": "1498247889.841500",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g6329b69fd90",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c6329b69fd9093d9d67cfe55ede3fb52.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "Melissa",
+            "real_name": "Melissa",
+            "display_name": "melissa",
+            "team": "T4UUTPV18",
+            "name": "melissa",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Also, I've looked up some sample medical personal statements online because it may be worthwhile looking at them to get a better idea of how you want to write yours. Student room has some. Here's a link to one of them: <https:\/\/www.thestudentroom.co.uk\/university\/personal-statements\/medicine\/medicine-89>",
+        "user": "U5WDG4GAU",
+        "ts": "1498248088.902978",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g6329b69fd90",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c6329b69fd9093d9d67cfe55ede3fb52.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "Melissa",
+            "real_name": "Melissa",
+            "display_name": "melissa",
+            "team": "T4UUTPV18",
+            "name": "melissa",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Personal Statement:Medicine 89 | The Student Room",
+                "title_link": "https:\/\/www.thestudentroom.co.uk\/university\/personal-statements\/medicine\/medicine-89",
+                "text": "Personal Statement:Medicine 89",
+                "fallback": "Personal Statement:Medicine 89 | The Student Room",
+                "from_url": "https:\/\/www.thestudentroom.co.uk\/university\/personal-statements\/medicine\/medicine-89",
+                "service_icon": "https:\/\/static.thestudentroom.co.uk\/594a7ea79e3a9\/forum\/images\/miscellaneous\/favicon_192.png",
+                "service_name": "thestudentroom.co.uk",
+                "id": 1
+            }
+        ]
+    }
+]

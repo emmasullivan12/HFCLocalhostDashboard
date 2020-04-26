@@ -1,0 +1,91 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning Josh, Even I'm sorry for the late reply. I understand, the times are not exacty normal at the moment. Hope you are staying safe.\n\nThank you for your introduction. Please find a link to my artstation portfolio below.\n<https:\/\/jesse_cl.artstation.com\/|https:\/\/jesse_cl.artstation.com\/>\n\nI haven't been able to update it since a while and have a few unfinished projects pdf of which is linked as well.\n\nIt seems to me that I'm way off track so please let me know what you think and how I can improve. \nThanks again.",
+        "ts": "1584090695.002000",
+        "username": "Jasmeet Singh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988054554529_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FVC4HPYLD",
+                "created": 1584090745,
+                "timestamp": 1584090745,
+                "name": "sketches of finished projects on artstation.pdf",
+                "title": "sketches of finished projects on artstation",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 7551201,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVC4HPYLD\/sketches_of_finished_projects_on_artstation.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVC4HPYLD\/download\/sketches_of_finished_projects_on_artstation.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVC4HPYLD-68ad42b8de\/sketches_of_finished_projects_on_artstation_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 1819,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FVC4HPYLD\/sketches_of_finished_projects_on_artstation.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FVC4HPYLD-794850f218",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584090747.002100"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FVBL2AGAY",
+                "created": 1584090832,
+                "timestamp": 1584090832,
+                "name": "incomplete works with their sketches, ref images and concept drawings.pdf",
+                "title": "incomplete works with their sketches, ref images and concept drawings",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 20915069,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVBL2AGAY\/incomplete_works_with_their_sketches__ref_images_and_concept_drawings.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FVBL2AGAY\/download\/incomplete_works_with_their_sketches__ref_images_and_concept_drawings.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FVBL2AGAY-a2538a4a05\/incomplete_works_with_their_sketches__ref_images_and_concept_drawings_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 1648,
+                "thumb_pdf_h": 952,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FVBL2AGAY\/incomplete_works_with_their_sketches__ref_images_and_concept_drawings.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FVBL2AGAY-2b538f8eb8",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1584090835.002400"
+    }
+]

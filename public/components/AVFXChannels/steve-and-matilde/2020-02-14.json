@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Matilde.\n\nFirst of all I think I would say yes to applying for the speculative and specific jobs. It can't hurt. It will probably mean they see your application twice but that's ok. I know with the speculative applications your details go into a database they can refer back to later.\n\nDeveloping scenes is usually a collaborative process. The way we work is we have a meeting halfway through the episodes so that the main directors can give feedback on our progress so far. This means that if any blocking or poses or acting choices aren't really going in the way they want they can tell us and we can adjust them. It means when the episode is finished it will be in a condition where the directors are (mostly) happy. Of course it still happens that some adjustments need to be made after the episode is finished but having these halfway meetings mean the changes will be smaller and won't disrupt our time too much.\nIn addition to that our Animation Leads and Animation Directors are available at all times for us to chat with them if we have some specific questions or we want some advice or just to check that we are heading in the right directions with our choices. And of course are colleagues are always around to chat with and exchange ideas.\nI hope that answers that question ok.\n\nIn terms of progressing in your position I can only really give you my experience but I think it is an experience that happens quite often.\nI was employed at Blue-Zoo as a \"fixer\". That basically means that I would make the adjustments give by the directors after the episodes are finished and it meant that I took the fixes and it didn't disrupt the animators. I was also then responsible for render fixes, if the feet are intersection the floor or that sort of thing.\nBecause this was actually a step down for me (because I worked as an animator at a games studio before I was here), I got the work done quickly and well. The directors saw that I was a capable animator and started to give me shots to help take some work off the other animators. When they saw that I was capable of doing that well I was soon promoted into a full animator position.\nAlthough no all experiences are like this I think the main thing to recognise from it is that if you work hard and you are able to prove you skill to the bosses then it is likely that you will be able to progress into other positions. The same works for going from and Animator to a Lead Animator etc. If you show your skill you will be recognised for it.\nAgain, I hope that helps.\n\nPlease if you have any other question then ask. I'm happy to help any way I can.",
+        "ts": "1581677008.000200",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/952505130592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I should say that the position of \"fixer\" at Blue-Zoo now longer exists and it is the animators responsibilty to fix their own shots.\nInstead we get in \"cover animators\". These are people who can animate well enough and usually come in to cover for holidays when we are short of staff. I have seen a lot of people start doing this and then be kept for a longer contract as a full animator many times.",
+        "ts": "1581677095.000300",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/941038898003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi!\nThank you for the answers, they were very thorough! I had an idea that working on scenes was mostly a group effort, but this gave me a lot more insight on how everything works! So, would each animator be tasked with a shot, which they would then show during the meetings, then?",
+        "ts": "1581715150.000400",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/953540686208_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And, thanks a lot for explaining how progression works! I was really confused about how it worked, and wasn't sure if we would have to \"self-propose\" to a new position. I find it interesting how one can progress from position to position so naturally, it puts me at ease in a way :smile:",
+        "ts": "1581715336.000500",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/953544999264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, so would \"cover animator\" be the new entry-level job at Blue-Zoo, then? It seems a bit \"heavier\" than the \"fixer\", but it makes me happy that I'd have the possibility to start working on my own shots right away instead of just tweaking existing ones (this still sounds like a good way of learning more about how a shot was made, though). It reminds me of how freelancers are employed for certain projects",
+        "ts": "1581715562.000600",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/953096123924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, another thing that got me a bit confused was: what is the difference between a lead animator and an animation director?",
+        "ts": "1581715677.000700",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/942084842003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As always, thank you so much for answering my questions! I understand they can be a bit more on the open-ended side sometimes. Feel free to ask me anything as well if you ever want to!",
+        "ts": "1581715678.000800",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/953098847652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

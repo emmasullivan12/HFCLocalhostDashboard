@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah no! Gutted! Let me have a look around and see.",
+        "ts": "1560153644.000600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/648631520322_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you aware of Motionographer? <http:\/\/motionographer.com\/>",
+        "ts": "1560153663.000700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/659557861044_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Motionographer",
+                "title_link": "http:\/\/motionographer.com\/",
+                "text": "Sharing the best in moving media",
+                "fallback": "Motionographer",
+                "from_url": "http:\/\/motionographer.com\/",
+                "thumb_url": "https:\/\/s0.wp.com\/i\/blank.jpg",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "http:\/\/s18292.pcdn.co\/wp-content\/themes\/motionographer6.3\/library\/images\/apple-icon-touch.png",
+                "service_name": "motionographer.com",
+                "id": 1,
+                "original_url": "http:\/\/motionographer.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you been through and researched all of the animation companies in the UK (or wherever you want to end up working?). When I moved from London to Bristol, I had to work out every single company in the area that did anything remotely animated... I started working on a company that didn't exactly do what I wanted, but spent 6 months there so that other companies in the area could take me seriously.",
+        "ts": "1560153939.000900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/660057463488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Companies like this you would never think of looking at: <https:\/\/www.aspectfilmandvideo.co.uk\/>",
+        "ts": "1560153974.001000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/661896967271_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Aspect",
+                "title": "Video Content Agency &amp; Video Production Agency \/\/ London &amp; Bristol",
+                "title_link": "https:\/\/www.aspectfilmandvideo.co.uk\/",
+                "text": "Discover more about Aspect: Video Production Agency meets Video Content Agency - Branded Content, Viral Marketing, Explainer Video - Bristol &amp; London, UK",
+                "fallback": "Aspect: Video Content Agency &amp; Video Production Agency \/\/ London &amp; Bristol",
+                "image_url": "http:\/\/www.aspectfilmandvideo.co.uk\/wp-content\/uploads\/aspect-home-image-resized.jpg",
+                "from_url": "https:\/\/www.aspectfilmandvideo.co.uk\/",
+                "image_width": 445,
+                "image_height": 250,
+                "image_bytes": 99977,
+                "service_icon": "https:\/\/www.aspectfilmandvideo.co.uk\/wp-content\/themes\/aspectfilmandvideo\/NAssetManager\/images\/favicons\/apple-touch-icon.png?v=aljldOlN3R",
+                "id": 1,
+                "original_url": "https:\/\/www.aspectfilmandvideo.co.uk\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Until you see that they have animated content... so must have an animation dept1",
+        "ts": "1560153997.001200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/648636366802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.glassdoor.co.uk\/Job\/2d-animation-internship-jobs-SRCH_KO0,23.htm?countryRedirect=true>",
+        "ts": "1560154049.001300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-10\/661897977383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

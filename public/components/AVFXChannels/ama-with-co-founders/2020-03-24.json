@@ -1,0 +1,61 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585057687.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e7a0f975809230004da25a6|this link> with other teams to invite them in it_",
+        "ts": "1585057688.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585057689.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585057776.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1585057845.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"ama-with-co-founders\"",
+        "old_name": "z-shared-23",
+        "name": "ama-with-co-founders"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *The Swift Exit* joined the shared channel_",
+        "ts": "1585058323.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yo",
+        "ts": "1585058718.001000",
+        "username": "The Swift Exit (The Swift Exit)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1024220478695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

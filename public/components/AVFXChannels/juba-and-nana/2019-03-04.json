@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's great! I managed to finish the layout for the two shorts, it was a huge learning experience that really changed how I look at films.\nOn another note I'm actually returning to London to work at Framestore again, so I'm really excited about that :smiley:",
+        "ts": "1551710625.000400",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567871746854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck on your exams Nana!",
+        "ts": "1551710634.000500",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566316315875_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

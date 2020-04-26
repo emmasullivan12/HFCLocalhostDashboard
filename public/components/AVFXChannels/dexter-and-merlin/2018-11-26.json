@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thnkx a bunch... I was really helpful.. thnkx for helping me... I'll let you know when I redo it:blush::blush:",
+        "ts": "1543248469.011000",
+        "username": "Merlin Travas (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/487535360289_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You are very welcome and glad it helped you :grin: ",
+        "ts": "1543249282.011100",
+        "username": "Dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-26\/489206137703_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

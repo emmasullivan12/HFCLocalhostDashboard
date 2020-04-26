@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way, I've had a lot of questions about what it's like to be in the industry, while at university the \"real world\" out there seems so mysterious :sweat_smile: In terms of animation, are people usually already really good animators by the time they get a job? I was just wondering if the freshest animators are expected to pull off perfect shots or if you're given some room to practice and learn. (Also, do people working professionally still look up tutorials for stuff they don't know?)",
+        "ts": "1574100179.003100",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/839160061925_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

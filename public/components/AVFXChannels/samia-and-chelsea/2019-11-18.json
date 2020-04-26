@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright so back to my initial question. What interests you in the HR job? ",
+        "ts": "1574129341.000200",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/831829761233_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hellloooo! Hope you’re having a good October week. So in answer to all your great questions: 1) A-levels - I did do 4 overall although I started French a year early because I loved the language and could get it over and done with so luckily only sat 3 a levels  in my last year at school otherwise they would have been STRESSFUL!",
+        "ts": "1508357203.000115",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/257913483681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to learn more about the btec music, could you give me an overview of what you study so that I can compare to what I did? :)",
+        "ts": "1508357247.000038",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258484882052_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How exciting to go and study at a university in another country, especially somewhere in Asia! What a great idea, I hadn’t thought of it to be honest. ",
+        "ts": "1508357287.000209",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/259316470294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So the Cambridge course was super super technical in that it was basically a music theory degree with some historical and social models in there too. ",
+        "ts": "1508357330.000308",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258571978421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You could go through the 3 years without touching an instrument if you so wished! I however did do a performance paper in my third year which I was relieved to do because it meant I could finally focus on my strongest musical attribute!",
+        "ts": "1508357379.000268",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258572488197_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All that said, I would say about half of the students in my year (so 30 people) went on to study music full time either as performers at prestigious music conservatories like the royal academy of music or to further academic study. ",
+        "ts": "1508357441.000546",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258486787044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The rest of us went into law, finance etc. I did initially want to be a clarinettist in an orchestra. But I also really liked the idea of using the analytical and writing skills I had learnt at university in a different way (and I guess I wanted a steady 9-5 type of lifestyle too). ",
+        "ts": "1508357541.000283",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258358260275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you been to many Proms? I LOVE going, I always get excited when the summer programme comes out! ",
+        "ts": "1508357568.000092",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258574296629_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ALSO, do you practice the piano everyday? Have you done any music theory?",
+        "ts": "1508357613.000363",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-18\/258435339266_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

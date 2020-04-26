@@ -1,0 +1,221 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Before I even try to give you advice, I want to share this from my iPhone’s usage chart for the past week :slightly_smiling_face: ",
+        "ts": "1554415523.000800",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602258936967_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FHQ7M0N3Z",
+                "created": 1554415528,
+                "timestamp": 1554415528,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 66329,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FHQ7M0N3Z\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FHQ7M0N3Z\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 286,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 381,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 571,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 634,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 761,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7M0N3Z-f47ee018cc\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 812,
+                "image_exif_rotation": 1,
+                "original_w": 1242,
+                "original_h": 985,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FHQ7M0N3Z\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FHQ7M0N3Z-35bcb8155e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1554415532.000900"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wanted to share that because I don’t have a good answer for how not to spend time you could be spending working and revising on YouTube, and because it is important to give yourself a break from work sometimes.",
+        "ts": "1554415599.001200",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602259953063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The hardest subject for me to revise for A level (actually Scotland’s course was called Advanced Higher then) was “Applied Maths (mechanics)” I found it really hard and didn’t ever really manage to make a good model in my head of what it meant. I still don’t really understand mechanics today.",
+        "ts": "1554415774.001300",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/598738598560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I did have to revise for A levels, the only thing that worked for me was practice and past papers. I found that I could concentrate for the length of a practice paper without getting distracted if I took myself away from the big distractions (games!) and set a 2 hour timer to work. Then I would mark the answers strictly and revise only the things I didn’t get right or didn’t feel confident about.",
+        "ts": "1554415894.001400",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/601119944116_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't use a iPhone but this is the best I could do",
+        "ts": "1554415973.001500",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602264608503_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At university when there weren’t always past papers available, I had to get much better at taking notes. By then I had a friend who was as easily distracted as me, so we would spend 9 hours a day revising together making shared notebooks on iPads and making sure that we kept each other focused.",
+        "ts": "1554415975.001600",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602593909958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FHQ7SKXHV",
+                "created": 1554415980,
+                "timestamp": 1554415980,
+                "name": "Screenshot_2019-04-04-23-12-24.jpg",
+                "title": "Screenshot 2019-04-04-23-12-24",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 70416,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FHQ7SKXHV\/screenshot_2019-04-04-23-12-24.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FHQ7SKXHV\/download\/screenshot_2019-04-04-23-12-24.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 203,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1422,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FHQ7SKXHV-9858f2a0e0\/screenshot_2019-04-04-23-12-24_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1080,
+                "original_h": 1920,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FHQ7SKXHV\/screenshot_2019-04-04-23-12-24.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FHQ7SKXHV-edc627a8f9",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1554415984.001700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":slightly_smiling_face: yeah, the internet is distracting!",
+        "ts": "1554416104.002000",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/592430502753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At least Adobe flash games aren’t popular anymore! Haha",
+        "ts": "1554416134.002100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602595851190_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there like a laptop that is good for uni because my laptop is very slow tends to have 100% disk usage, and it's old and very heavy to take around is there a good one that I should get?",
+        "ts": "1554417472.002200",
+        "username": "Aspen (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-04\/602611318790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Interesting,\nSince I have almost 9 months left of my academic year, when do you supposedly advise I should start applying for apprenticeships?\n\nI will recieve my A level results in August and the certificates in October. ",
+        "ts": "1538127688.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444342377584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, What does your apprenticeship consist of? How long is it for? What level is it? And What qualification will you recieve upon the completion of your apprenticeship?\n",
+        "ts": "1538127857.000100",
+        "username": "Iram (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444976270899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Start looking now, maybe even applying. Most jobs will start toappear in the new year. But I would recommend thinking about it hard now, Especially as you're not in exam season just yet, (I don't think) so you have some time to think your applications through. \nStill apply Regardless of actual grades. In fact, I would even apply for positions in which the requirements are slightly above your predicted grades. This is so if you kill it in the Interview, the people could hire you for your personality and potential. ",
+        "ts": "1538134452.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/446190029143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My apprenticeship to begin with mostly consisted of  shadowing and adhoc due to the nature of the company and time I joined. But now I've been here 9 months (in a 18 month contract) and I've recently changed teams From online analyst (involved analysing trends basically) to retail estates, in which Im looking after the insurance the company pays on the buildings we currently rent. ",
+        "ts": "1538134737.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444956562308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm doing a CimA certificate. It consists of 4 modules. I've Done 1 exam so far, got another exam coming up in 3 weeks. Then the remaining 2 later on. Then, I'll be required to do another 12 exams at the professional level + have 2(?) years of work experience to be fully qualified. ",
+        "ts": "1538134893.000100",
+        "username": "Zubair (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-28\/444547182561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

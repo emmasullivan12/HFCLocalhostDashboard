@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Rebecca, I hope you are well. This is a difficult time which we face as the whole world. I hope you are healthy and dealing with the situation well.\nBest wishes.",
+        "ts": "1584475627.005000",
+        "username": "Nur Diker Koksal (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006958668192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

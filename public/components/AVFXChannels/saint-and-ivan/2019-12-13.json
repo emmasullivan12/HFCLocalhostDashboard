@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ivan, just checking in to see if you needed anything. Have a great holiday if you are studying.",
+        "ts": "1576224597.002000",
+        "username": "Saint John Walker (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-13\/859481205890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

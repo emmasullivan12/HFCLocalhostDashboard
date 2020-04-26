@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Addison, so sorry for not getting back to you sooner! I'm actually pretty swamped with uni, I didn't expect it to be this intense from day 1. It's really good on the one hand to really get to learn everything in depth but this also means I don't think I will be able to pick up shots from you. I'm very thankful for this opportunity but I just wouldn't be able to give it enough attention to get a good result. Thank you again and I hope I still can ask you for some feedback for my upcoming assignments if you're not too busy then",
+        "ts": "1571008297.000300",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/787460147185_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, thanks for getting back to me. Better get used to being crazy busy, this industry is like that constantly I'm afraid. If you need any feedback or anything let me know ",
+        "ts": "1571031287.000400",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-13\/794044556144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

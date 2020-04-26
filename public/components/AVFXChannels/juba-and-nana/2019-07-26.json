@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nana, no, I thought I mentioned I moved back to Framestore a few months ago, I'm currently on Disney's Lady and the Tramp remake, really fun work!",
+        "ts": "1564159658.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-26\/701050142737_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I honestly dont know where my best ideas are coming from, they come to me when I'm doing something besides work, while im walking or exercising, or doing seeing something that inspires an idea.\nDo you have any ideas you'd like to experiment or make something from?",
+        "ts": "1564159744.000200",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-26\/707388078592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And my company culture is good! It's focused on work flexibility, you can for most of the time, define the plan of your day and what shots you work on.\nBut it can get hectic at the end of projects, when priority is pushing shots out.",
+        "ts": "1564159866.000300",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-26\/695986268466_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

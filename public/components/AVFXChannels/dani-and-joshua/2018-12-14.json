@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/306284125?utm_source=email&amp;utm_medium=vimeo-clilp_liked-2017&amp;utm_campaign=31135> ",
+        "ts": "1544794949.000100",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-14\/505187123671_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Character Animation and Implementation Reel",
+                "title_link": "https:\/\/vimeo.com\/306284125?utm_source=email&amp;utm_medium=vimeo-clilp_liked-2017&amp;utm_campaign=31135",
+                "author_name": "Joshua De'Mendonca",
+                "author_link": "https:\/\/vimeo.com\/joshanimations",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/745995074_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Character Animation and Implementation Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/306284125?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Character Animation and Implementation Reel\" allow=\"autoplay; fullscreen\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/306284125?utm_source=email&amp;utm_medium=vimeo-clilp_liked-2017&amp;utm_campaign=31135",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/306284125?utm_source=email&amp;utm_medium=vimeo-clilp_liked-2017&amp;utm_campaign=31135"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my semesters work for university\nLemme know whatcha think ",
+        "ts": "1544794975.000300",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-14\/504135101042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

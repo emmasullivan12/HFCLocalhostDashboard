@@ -1,0 +1,179 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574366837.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5dd6ee74238fea0004ff6c07|this link> with other teams to invite them in it_",
+        "ts": "1574366837.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574366837.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574366914.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1574366947.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"connor-and-nathalie\"",
+        "old_name": "z-shared-23",
+        "name": "connor-and-nathalie"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1574367073.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1574367076.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@woodey.arts has joined the channel_",
+        "ts": "1574367305.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844526518021_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@nathalie.puetzer has joined the channel_",
+        "ts": "1574367316.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/831733282770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nathalie, please meet Connor your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1574367348.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/846376438583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574367385.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844518186784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1574367407.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/831735575762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Connor, it is so nice to meet you and thank you for becoming my E-Mentor :) I'm not sure how much you know about me so I will just introduce myself: My name is Nathalie, I'm 25 and a 3rd year BA Animation student at the University of Greenwich and I'm currently on my way to specialising in Lookdev, Texturing and Lighting. I'm not 100% whether that is the best idea as these are the areas that aren't really taught by my course and most students on my course seem to focus on modelling, but I wanted to go into another direction and was absolutely fascinated by how much realism in 3D depends on textures and lighting. So yeah, I probably made it extra difficult for myself but I don't mind challenges :sweat_smile:  I really hope you can help me get a general direction of the things I need to learn and do to improve my skills in an industry relevant way. Best Wishes, Nathalie",
+        "ts": "1574368426.001600",
+        "username": "Nathalie Puetzer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/836618316913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nathalie,\nI think texture and lookdev is a brilliant way to go as the industry is inundated with modellers and there are far too many students waiting for opportunities that aren't there. I am a texture\/ lookdev artist at Cinesite l, but I also do creature\/ character modelling and sculpting. I had very little knowledge on texturing when I left university, so I decided to teach myself during my spare time. If there are any questions you have whether its regarding career progression, training materials, showreel critiques, software reccomendations or just tips and tricks just ask away. I will provide you as much support and guidance as I can",
+        "ts": "1574369479.001700",
+        "username": "Connor Woodey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844112293348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, that is something I have noticed too, and although I really enjoy modelling and sculpting aswell, I don't really see a future there for me with such a tough competition. I would be really interested in your story, if that is something you would like to share, like where and what did you study, did you find a job in the industry right away or did you need some extra time to improve, was your first job at cinesite or did you first work somewhere else, and how did you get that job, how long you have been working there etc. \nI would also really like to know what kind of software\/s you would recommend I learn and what softwares you guys are using. I have recently started learning some substance painter but I heard that Mari is more common? What do you think I should concentrate on software and skill wise? Cause I'm quite aware that I have rather limited time left at uni and want to make the most of it and learn the things that are the most relevant and that will hopefully get me a job next summer",
+        "ts": "1574370270.001800",
+        "username": "Nathalie Puetzer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/831808220962_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I studies Design for Theatre, Performance and Events at Birmingham City University, where I mainly specialised in CAD modelling and miniature model making. I won a competition at university to do two weeks work experience at madame tussauds designing new attractions. Once I finished uni I went back to madame tussauds and worked as a freelancer for a year and a half. I then decided I wanted to get into film so I began teaching myself how to texture, I then applied for a runner position at Cinesite and got the job. I was a runner at cinesite for 14 months whilst I was running cinesite provided texturing training for me, in which I was texturing assets from old films (Assassins Creed, James Bond and World War Z). After 14 months I moved into a junior Texture artist position where I worked on Avengers: Endgame, Jason Bourne Stuntacular at Disney in Orlando and the upcoming Witcher TV series. During my downtime I have been teaching myself Modelling, Sculpting and Lookdev, which I will then put into practice on upcoming shows.",
+        "ts": "1574376658.001900",
+        "username": "Connor Woodey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844280511172_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would 100% learn Substance Painter and Mari. I predominantly use substance painter for the smart masks, which I export 10 - 15 black and white masks which I import into mari to use when texturing to get the breakup and surface imperfections. Substance Painter is good but not good enough to produce photoreal results. Substance Designer is good if you need to create tileable patterns for clothing or floor tiles. But to clarify Mari is a must if you want to work in VFX, substance painter and designer is good for speeding up your workflow and cutting corners but Mari is where the real magic happens. I would reccomend learning to use Mari's node graph over the layers system because the VFX industry is moving towards that workflow now",
+        "ts": "1574377136.002000",
+        "username": "Connor Woodey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/836821577489_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can send you my showreel at some point if you want to see the level of work a junior texture artist is expected to produce",
+        "ts": "1574377196.002100",
+        "username": "Connor Woodey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844291334228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There's a graduate scheme at your studio right? Do you think I'd have a chance of getting on that?",
+        "ts": "1568039414.004300",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/755491429639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure if there's a scheme, but I know we do hire graduates. And we also do have internship schemes, which may be open again at some point. It's always worth emailing and asking?  Start getting on people's radars",
+        "ts": "1568043291.004400",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/753731327056_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Distinction - thats great!!",
+        "ts": "1577097499.000100",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/871304879682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Congratulations :smiley:",
+        "ts": "1577097509.000200",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/885947469319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fingers crossed it passes the external moderators",
+        "ts": "1577097516.000300",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/883631645044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well it seems like you actually understand yourself quite well i.e. that you enjoy solving problems etc (which is really great for your age! I work with some adults who still don't know their head from their toes :joy:)",
+        "ts": "1577097715.000400",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/871307900226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would recommend doing some online quizzes (some of them can be crap and quite basic, but they can still help you think about things you might not have thought about)",
+        "ts": "1577097750.000500",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884091340656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/icould.com\/explore> (these guys have a quiz) as do <https:\/\/www.prospects.ac.uk\/job-match?gclid=Cj0KCQiA6IHwBRCJARIsALNjViUizjqVapkf3nLocS5s0tgYDewaC5QiVpEiV2dHohZqrxNrE-sy6acaArGLEALw_wcB>",
+        "ts": "1577097765.000600",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873843816305_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "icould",
+                "title": "Explore your options- icould",
+                "title_link": "https:\/\/icould.com\/explore",
+                "text": "Real-life career videos, advice and information to inspire your career",
+                "fallback": "icould: Explore your options- icould",
+                "from_url": "https:\/\/icould.com\/explore",
+                "thumb_url": "https:\/\/icould.com\/wp-content\/themes\/icould\/img\/share.jpg",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "id": 1,
+                "original_url": "https:\/\/icould.com\/explore"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I as studying in sixth form, I didn't have a clue what I wanted to do. I studied Business as I thought it was a good way to get exposure to lots of different industries without specialising too soon",
+        "ts": "1577097808.000800",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873844400401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A good way to think about it is to think about what skills are useful in ALL industries in the future (think software engineering! etc), rather than thinking about a particular industry...for example I've worked in ... wait, let me count ... 5 industries so far haha",
+        "ts": "1577097880.000900",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884103241333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(banking, management consulting, oil &amp; gas, education, software\/tech)",
+        "ts": "1577097902.001000",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/886301035430_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Why dont you have a go at those quizzes and let me know how you get on?",
+        "ts": "1577097926.001100",
+        "username": "emma-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/872625832387_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

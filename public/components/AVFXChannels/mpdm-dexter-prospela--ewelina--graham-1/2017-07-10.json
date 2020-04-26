@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "I would guess you try a few drafts to make sure you have got it completely right ",
+        "user": "U60D00VU6",
+        "ts": "1499719499.976055",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g7c5bedddf7a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/17c5bedddf7a0650d5d52c4831158b90.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Graham",
+            "real_name": "Graham",
+            "display_name": "graham",
+            "team": "T4UUTPV18",
+            "name": "graham",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "What have your teachers said? ",
+        "user": "U60D00VU6",
+        "ts": "1499719505.979460",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g7c5bedddf7a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/17c5bedddf7a0650d5d52c4831158b90.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Graham",
+            "real_name": "Graham",
+            "display_name": "graham",
+            "team": "T4UUTPV18",
+            "name": "graham",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

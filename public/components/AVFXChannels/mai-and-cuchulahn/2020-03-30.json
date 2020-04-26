@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah, if you are applying for the layout roll, I would make a layout tailored reel for that, and if you are applying for the anim internship, use an animation reel for that :slightly_smiling_face:",
+        "ts": "1585564894.000500",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1036935202918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

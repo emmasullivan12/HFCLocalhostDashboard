@@ -1,0 +1,91 @@
+[
+    {
+        "type": "message",
+        "text": "*Tip of the day - Google Docs* :bowtie: <!channel>\n```We've had a few questions around the career plans pinned at the top of every conversation. If you haven't used Google Docs before note that both mentor and mentee can click on, edit and comment on the file there as it is a collaborative working space.\n\nIf you are also uploading files you can simply drag and drop them onto your conversation.```",
+        "user": "U4VR52RQE",
+        "ts": "1499768833.395870",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We were invited to be part of TeachFirst's Innovation programme at the weekend. A great day for networking and getting feedback from others in the sector! <!channel>",
+        "files": [
+            {
+                "id": "F66FLNRED",
+                "created": 1499785508,
+                "timestamp": 1499785508,
+                "name": "20170708_102623.jpg",
+                "title": "20170708_102623.jpg",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 4185466,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F66FLNRED\/20170708_102623.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F66FLNRED\/download\/20170708_102623.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 203,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1422,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F66FLNRED-c38bf60b95\/20170708_102623_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 5312,
+                "original_h": 2988,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F66FLNRED\/20170708_102623.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F66FLNRED-c99bb9d7a5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1499785514.781785",
+        "reactions": [
+            {
+                "name": "lion_face",
+                "users": [
+                    "U5JN4HP1S"
+                ],
+                "count": 1
+            }
+        ]
+    }
+]

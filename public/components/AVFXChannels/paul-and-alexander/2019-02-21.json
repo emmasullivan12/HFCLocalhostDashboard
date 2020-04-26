@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alexander.  If you are interested in Simulation work in VFX - we would title that role FX TD (Effects Technical Director) - you should strat learning Houdini.  Is used by most if the VFX companies for that sort of work and so woudl be considered an essential tool for FX artists - of course it is good to use other tools (Maya, Realflow etc) but Houdini really does dominate in that area so getting hads on ealry will serve you well.",
+        "ts": "1550751777.000500",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556944906900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would say doing a project with a creature or character in it is not the way to go.  Creature work is very complex and it is much better to come up with something you can achive to higher standard.  The aircraft in the ktichen sounds like a good idea.  So are you going to be simluating the smoke, dust etc?  How about any other debris or destruction - like paper being blown around or things being knocked of the table or counter?  My intial advice would be to collect as much reference as possible of planes landing and taking off.  look at the interation between the plan the ground and objects around it.  How do the jets move the grass and other elements near the plane.",
+        "ts": "1550752185.000600",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556245991264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "FX artists are in high demand so it is a good area to focus on.  It is  quite a tracky area to become proffetiant in as it requires a high level of technical skill (even as for a coding)",
+        "ts": "1550752258.000700",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/556246853504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Paul, thank you very much for your helpful advice. I will start learning Houdini now.  Regarding the aircraft, yes I will use smoke and dust when the aircraft lands. And the idea of things being knocked of the surface sounds good. I'm thinking to create a  control tower and break it with the aircraft. ",
+        "ts": "1550772402.000800",
+        "username": "Alexander Naranjo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-21\/557372741026_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

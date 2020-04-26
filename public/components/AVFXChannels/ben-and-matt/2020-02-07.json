@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, \n\nAwesome that’s great to hear that you feel like your making progress! I there is anything you want me to look at just let me know!\n\nAs for hair... hair roto is a right pain in the arse. In TV we always try to key it rather than spending our bid days rotoing hair but sometimes it’s the only way to get the shot done.\n\nI tend to use either the open spline tool, or a bSpline and then put points around the individual hair strands. I like to have my control points running parallel along the strand so it’s easier to follow which point should be where (if that doesn’t make sense let me know, not sure I’ve switched on my brain yet this morning :joy:) \n\nYour heading in the right direction with trying to let it though, I will always try and key any hair before I spend the time rotoing it, you could also try a luma key aswell depending on how bright the hair is relative to the BG.",
+        "ts": "1581064361.000200",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/941015474788_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will do cheers! \n\nWhat do you mean by the control points? Is that like a little rig to control the spline points? Or am I looking way to much into that :joy:\n\nFor the actual scene I'm gonna be doing is half of a horse's head and the background is gonna be hopefully a blue sky and some green fields so yeah fingers crossed the keying will work nicely. \n\nOn the test one I've been working on the luminance ain't much difference between them, so  that's when I did the difference matte which worked to a degree, just the outline is rough as hell haha.\n\nI'd send vid and a pick of my mockup but I've left my laptop at my dad's went to see the Jonas Brothers last night (my bad guilty pleasure there :joy:)",
+        "ts": "1581076063.000300",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/943571052375_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

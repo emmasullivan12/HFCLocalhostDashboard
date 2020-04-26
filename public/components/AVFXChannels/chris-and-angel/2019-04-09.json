@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris hope your day went well and you had a good start to the week. I wanted to ask when it comes to modelling over a picture, does everything need to be modelled, to  you understand the work flow.",
+        "ts": "1554835893.000100",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/606530452006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When it comes to displaying it on a reel or to someone*",
+        "ts": "1554835935.000200",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-09\/596352923857_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

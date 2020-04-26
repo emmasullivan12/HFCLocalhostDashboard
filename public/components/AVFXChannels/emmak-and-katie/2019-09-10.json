@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This was posted on Screen Alliance yesterday which you may find interesting! <https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills>",
+        "ts": "1568101770.004900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-10\/741860972098_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "UK Screen Alliance",
+                "title": "Careers advice for VFX, animation, post production, TV &amp; film studios or SFX | UK Screen Alliance",
+                "title_link": "https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills",
+                "text": "If you are researching careers in post-production, visual effects or animation, we guess you will be looking for authoritative advice to help you with your choices. What are the different job roles that are available? What qualifications do I need, if any? Can I do an apprenticeship, or should I go to uni? What’s it […]",
+                "fallback": "UK Screen Alliance: Careers advice for VFX, animation, post production, TV &amp; film studios or SFX | UK Screen Alliance",
+                "from_url": "https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills",
+                "id": 1,
+                "original_url": "https:\/\/www.ukscreenalliance.co.uk\/subpages\/careers-advice\/?section=skills"
+            }
+        ]
+    }
+]

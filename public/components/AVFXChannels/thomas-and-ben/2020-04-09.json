@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ben :slightly_smiling_face: From what I've been told, you're hoping to get into the industry soon and work your way up to be an FX TD\/Lead?",
+        "ts": "1586433843.001800",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1051694633139_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

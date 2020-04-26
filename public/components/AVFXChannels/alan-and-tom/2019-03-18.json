@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes lets do that. I think realistically I can spare just a day at FS. My life is pretty hectic and I'd hate to not be able to give you the attention you need when you are here. So if we said Wednesday 10th of April? Would that work?",
+        "ts": "1552950148.001000",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-18\/582312038278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

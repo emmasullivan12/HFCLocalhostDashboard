@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob.. Still working on the roto. Having to single frame the hair edges.\nIn terms of checking, is it easier for you  if I move the mirrors closer together in the split screen? Hoping to work more over the weekend and post on Monday morning. And do you suggest using the Dope sheet to get the transform of the patch right or just continue to do it by eye?  Sorry if that's a rookie question. Have a good weekend!",
+        "ts": "1583522636.003900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/975000719379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

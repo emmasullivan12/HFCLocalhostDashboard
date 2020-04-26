@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, I’m so sorry for the late reply, my phone had stopped working and I had no WiFi , very sorry for that , and I have given in my work experience form into the teachers and took time to make my cv better ? ",
+        "ts": "1510938967.000346",
+        "username": "dharita_ (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/274189985523_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also how do you manage being nervous at work ? ",
+        "ts": "1510938994.000030",
+        "username": "dharita_ (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/275139977014_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, how do the peers and colleagues at you’re work place react to things you do ? ",
+        "ts": "1510939108.000102",
+        "username": "dharita_ (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-17\/273749207681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

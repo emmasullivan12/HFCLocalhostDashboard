@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ive got time, let me know what you are working on! How's the indie film project? What kinds of shots are you working on? Learn anything interesting?",
+        "ts": "1581078883.000100",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-07\/941782920565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

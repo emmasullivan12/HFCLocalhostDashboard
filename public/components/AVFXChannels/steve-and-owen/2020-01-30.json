@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Steve, it's great to meet you, right now I'm working on some personal projects to try and hone my skills to more of what I want to do. I just really want to break into the industry and ideally be working in 3D, I hate to say it which people say is a flaw but I love the process of everything 3D, I enjoy being a generalist but someone once said to me I'd struggle to break into the industry being a generalist. Thanks for helping me out though it's really appreciated, my showreel is here <https:\/\/calderbank.wixsite.com\/ocalderbank|https:\/\/calderbank.wixsite.com\/ocalderbank> and you'll be able to see a few projects I've done. I have done something recently for a guy for AR on Instagram but it's hard it's difficulties doing the entire process the finding the animation didn't fully import all the details on Spark AR, I can send over then recent bits if you'd like to see the Maya renders.",
+        "ts": "1580399632.001700",
+        "username": "Owen Calderbank (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/917889598691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just really want a break into a role, I'm really struggling and I've offered work experience but no one gets back so I feel like I'm at a wall where I'm constantly trying to develop but getting no where. I'm working on a 3D Cyberpunk environment at the moment in my spare time.",
+        "ts": "1580399704.001800",
+        "username": "Owen Calderbank (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/917892111507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies for the delay as well, having problems with my notifications on my phone with slack but il check in everyday",
+        "ts": "1580399734.001900",
+        "username": "Owen Calderbank (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/929360560400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't worry about the delay. I'm quite busy at work at the moment anyway so I might be a bit late every now and then. Don't worry about sending over the AR stuff. I'm only an animator so I'd only be able to give you limited feedback on it. Your reel is enough for me to look at.\nI don't know a huge amount about getting a job as a generalist but your friend is right to a certain extent. I wouldn't expect a big place like Framestore or DNeg to be on the lookout for generalist very often (although I believe those positions are available). Generalist positions you would either usually find a (much) smaller studios (I'm thinking 15 or less people) as they need a small amount of people to do a lot of work. Additionally, being a generalist can be quite good for freelancing as, sadly, clients often don't understand how much work goes into making something. Of course you know \"I need an animation made\" probably means they want the model, rig, animation, renders, everything done. Which isn't great for someone like me who is only really good at animating, but as a generalist you could quite easily do yourself or potentially with a friend or two.\n\nIf you're looking to get into the bigger studios I would probably recommend focusing on one area and then also keep up with the adjacent disciplines. For example, if you concentrated on animation then rigging would be a good one to also focus on. With modelling then you would also focus on texturing, lighting etc. Being multi-disciplined would be a big help as it makes you more desirable as an employee because you can help out in areas other than your own.\nThere's no reason you can't do the other stuff as individual\/personal projects at home.\n\nI had a very quick look on the Framestore site and they have Generalist in specific positions. So one opening they have now is a Houdini Generalist. So even though you're a generalist you still work mostly in Houdini. So not crazy general like you might expect to find at a smaller studio where you may be responsible for creating the whole character and then passing it over to an animator or coder or something.\n\nDoes that all make sense? If you have any other questions or I haven't been clear enough (I tend to waffle a lot) then please let me know. I'm here and happy to help =]",
+        "ts": "1580402231.002000",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/919283932945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

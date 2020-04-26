@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "@seyedmuhammad123 Hows things going? Anything I can help you out with? Happy to help you out so lemme know",
+        "ts": "1508146441.000342",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256919706549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

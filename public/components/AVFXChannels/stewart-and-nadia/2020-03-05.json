@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nadia\nHow are you ?\nWow sounds like you have a broad interest in both 3D and 2D.\nI can tell you what my experience is and perhaps you can pick my brains at some point.\nI studied animation at UWCN, but I specialized in stop-motion. That work dried up as I started to get my foot in the door. So I learnt different 3D softwares as quick as I could whilst working as a runner for a small production house in Soho. So I got a good genneralist experience working as an allrounder with Maya. I eventually got a job when Double Negative VFX house was pretty small, and I spent 8 years there working in all kinds of areas, but my main focus was animation, although I found that Previs was a very creative area which I wanted to move in to. So I got a job with The Third Floor Visualization company, where we help feature films create and plan sequences before they start filming. It’s very creative as we’re focused on the storytelling process as well as the animation.   If there’s any questions you’d like to ask me, fire away.   There’s so many areas to the industry these days, it can take a while to find where your strengths are and what you really want to do can be hard sometimes.",
+        "ts": "1583454289.001400",
+        "username": "Stewart Ash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-05\/984394824484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

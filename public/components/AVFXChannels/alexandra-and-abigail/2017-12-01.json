@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Abi\nSorry! Didn't get a notification of your text",
+        "ts": "1512130135.000103",
+        "username": "alexouli99 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/280355862516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you're well",
+        "ts": "1512130142.000023",
+        "username": "alexouli99 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/281386452791_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

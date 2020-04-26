@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Millie\n\nNo need to apologise for any late with replies, I'm not doing any better with my response times :\/ I hope you're doing well too! It sounds like your internet is just a little touch and go these days. My internet at home tends to be in and out once in a while too. But we are making it work! :)\n\nIt's cool that your Mom has been supportive of you and your siblings being creative. I also have a few siblings (two older sisters and a younger brother), and luckily my parents have been and continue to be really supportive of all of us being creative too.\n\nThanks for telling me a bit more about your interests. Since you mentioned taking untouched photos, I was wondering what kind of camera do you like to use? \n\nAs you can probably imagine (and you may already know - feel free to stop me if I ever get too wordy on a subject that you're already totally aware of :), knowledge of photography and cameras is a very useful skill for lots areas of focus in filmmaking and computer animation\/VFX. Typically for the bigger productions, I think it's entirely digital cameras that are used these days, but that doesn't mean there aren't a ton of important concepts that are shared by both digital and analog photography. After all, most digital cameras are basically designed to mimic the way analog cameras behave. \n\nAlthough I admittedly don't know as much about the \"on-set\" side of the film industry (I mostly sit at a computer all day instead of going to the locations where they shoot footage for the movies we work on, which is sometimes referred to as 'on-set'), I am pretty sure that the Director of Photography can be one of the most key on-set decision makers when it comes to live action shoots. I'm sure many film Directors work very closely with their Director of Photography (DOP), and it is also essential for Film Directors themselves to also know a lot about photography\/cinematography. Take for example this director\/cinematographer\/DOP named Reed Morano, who has directed several episodes of the Handmaiden's Tale:\n<https:\/\/www.instagram.com\/reedmorano\/>\n\nIn terms of VFX, knowledge of cameras is also incredibly important for people who do match-move\/motion tracking, motion capture, and actually for my job title (animation), as well as many of the key supervisor roles. \n\nOn the subject of animation, knowledge of acting also is entirely useful for Animators! It sounds like you have a ton of experience with acting too! What are the kinds of things that you enjoy and miss about acting for theatre?\n\nIn terms of photography portfolio advice, I can definitely try to help give some general thoughts\/advice on that (although admittedly I am not a professional photographer, so it's worth keeping that in mind too ;). To start out, do you already have an end viewer in mind that you are thinking you would ideally want to be looking your portfolio? ",
+        "ts": "1533039968.000054",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-31\/408160042981_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "R E E D  MORANO, A.S.C. (@reedmorano) • Instagram photos and videos",
+                "title_link": "https:\/\/www.instagram.com\/reedmorano\/",
+                "text": "160.1k Followers, 1,045 Following, 2,418 Posts - See Instagram photos and videos from R E E D MORANO, A.S.C. (@reedmorano)",
+                "fallback": "R E E D  MORANO, A.S.C. (@reedmorano) • Instagram photos and videos",
+                "from_url": "https:\/\/www.instagram.com\/reedmorano\/",
+                "thumb_url": "https:\/\/scontent-iad3-1.cdninstagram.com\/vp\/9f3be1703ec615858a8a1e5f6965309b\/5BFB82F2\/t51.2885-19\/s150x150\/33630466_1852343448151077_595133766867877888_n.jpg",
+                "thumb_width": 150,
+                "thumb_height": 150,
+                "service_icon": "https:\/\/www.instagram.com\/static\/images\/ico\/apple-touch-icon-76x76-precomposed.png\/4272e394f5ad.png",
+                "service_name": "instagram.com",
+                "id": 1,
+                "original_url": "https:\/\/www.instagram.com\/reedmorano\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oops I meant to say \"The Handmaid's Tale\", the Hulu TV show",
+        "ts": "1533042223.000211",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-31\/408183075701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I agree. I also think that I'd rather get a job than go to uni because I can go into the world of work early and try and work my way up to a top job",
+        "ts": "1510478862.000001",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/270980837156_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s a fair point, I would say though that having university on your CV would be a huge positive for an employer but that’s not to say that you have to go to uni to get a great job. Determination and resilience is all you need in life to get to the place you want! ",
+        "ts": "1510489084.000022",
+        "username": "grahamphelan1991 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/271830265814_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I think when you have determination and resilience it helps in job situations for example getting up early in the morning to go to work, college and also resilience to be able to take criticism on board and improve for next time.",
+        "ts": "1510511557.000042",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/271062372148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Exactly and that is a skill that a lot of people struggle with. What would you say your strongest skill is and then your weakest? ",
+        "ts": "1510513672.000046",
+        "username": "grahamphelan1991 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/272102363255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would say my strongest skill is organisation and my weakest skill is decisiveness.",
+        "ts": "1510521669.000072",
+        "username": "ryanlsmith11 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-12\/271185533269_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

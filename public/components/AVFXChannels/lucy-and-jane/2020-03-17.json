@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane. sorry for the late reply. work is very busy given all the Coronavirus things happening.  I really like the additional images and working you are adding to your portfolio.  I think it's great to show how you think and get to your end result.",
+        "ts": "1584457700.010300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/993244837858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "On another note I hope you and your family are well and safe.",
+        "ts": "1584457787.010400",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/994568515187_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck with your interview.  I hope it goes really well. You are prepared and have some lovely work to show with a good narrative as to how you created it and why. :slightly_smiling_face:",
+        "ts": "1584457825.010500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/994570759315_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, I understand since it's the same over here with schools shutting and everything being disrupted. Please stay safe too",
+        "ts": "1584474563.010600",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/994123540994_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

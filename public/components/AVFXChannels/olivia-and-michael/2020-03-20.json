@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your reel looks great, thanks for sharing! I will get back to you with feedback early next week. Hope you have a lovely weekend and stay safe.",
+        "ts": "1584746168.002600",
+        "username": "Olivia Burke (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1018060140087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

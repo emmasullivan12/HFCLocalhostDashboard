@@ -1,0 +1,82 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jen,",
+        "ts": "1554067773.000100",
+        "username": "Ali (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/594711550036_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much for your quick response. Apologies for not responding sooner, I have been quite ill recently and so I am just beginning to recover and get back into work! Yes I was trained to use Maya in my 3D animation short course at Escape studios, I am comfortable and familiar with the software so far and I really enjoy animating simple rigs (like the squirrel rig from animation mentor) and putting it in different worlds and scenarios. Of course this is only the beginning of my journey with animation and I still need to practice to retain my skills and progress in an independent environment. In my opinion I prefer creating short, kid friendly animations to long, detailed feature film 3D animations - how about you? In terms of a link to my animations I can attach a very simple, basic version of my demo reel, created after the first 2 months of learning Maya - I am still currently putting together a bigger website which will include links to all my animations.",
+        "ts": "1554068276.000200",
+        "username": "Ali (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/596182865462_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FHH29E9CM",
+                "created": 1554068323,
+                "timestamp": 1554068323,
+                "name": "ali_reel.mp4",
+                "title": "ali reel",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 64650791,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FHH29E9CM\/ali_reel.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FHH29E9CM\/download\/ali_reel.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FHH29E9CM\/ali_reel.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FHH29E9CM-ac3f0f77d2",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1554068327.000300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thankyou for also sharing your story about how you became an animator and then focused on pre-visualisation. I think both of these areas are so interesting and of course they overlap in many ways.",
+        "ts": "1554068395.000600",
+        "username": "Ali (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/595077836485_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What was it like working at DNEG- did your expectations match the reality of the situation? Likewise, I think the story is one of the strongest elements of any project and needs to be properly developed before rendering any kind of final outcome. How did you discover pre-vis, if you don't mind me asking? And did you find it quite easy to 'switch fields' or did you decide to retrain and take a course or two? And how much animating would you say you do now you work in this field, compared to full time animation?",
+        "ts": "1554068586.000700",
+        "username": "Ali (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/595820175367_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

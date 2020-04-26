@@ -1,0 +1,21 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya you okay?",
+        "ts": "1512375588.000090",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-04\/281066354179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":no_entry_sign: _You have deactivated the shared channel_",
+        "ts": "1512375646.000018",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    }
+]

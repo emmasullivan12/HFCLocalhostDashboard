@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian.  Happy New Year! Hope you had a great time and got some good pressies.  I'm aware that Tory and I bombarded you with information when we met so we thought we'd try to write it down.  Can you take a look and let me know if you think it's useful advice?  Can we add \/ remove anything? Could we format it more helpfully?  Thank you for your help.  We think it could prove useful for us when we engage with people looking at careers in our industry :slightly_smiling_face: <https:\/\/docs.google.com\/document\/d\/1oaLF7pxotXa6ArBv4JPEeHGh4D6XtNWWmH0E6Cm5bKc\/edit?usp=sharing>",
+        "ts": "1546603237.000300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-04\/515918246961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

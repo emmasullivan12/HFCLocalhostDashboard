@@ -1,0 +1,47 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Svenja. I'm good, thank you. How are you? Do you have hay fever too?\nThat is a good question. The change management curve (<https:\/\/cornerstone.rutgers.edu\/sites\/default\/files\/Managing%20Change%20Curve.jpg>) is pretty good I think. I would like to believe that if there's change which I don't like but which is going to happen then I wouldn't follow the curve with denial, frustration and so on but often that's the case.",
+        "ts": "1552313439.000200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572777842594_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "fallback": "1102x678px image",
+                "image_url": "https:\/\/cornerstone.rutgers.edu\/sites\/default\/files\/Managing%20Change%20Curve.jpg",
+                "image_width": 1102,
+                "image_height": 678,
+                "image_bytes": 110855,
+                "from_url": "https:\/\/cornerstone.rutgers.edu\/sites\/default\/files\/Managing%20Change%20Curve.jpg",
+                "id": 1,
+                "original_url": "https:\/\/cornerstone.rutgers.edu\/sites\/default\/files\/Managing%20Change%20Curve.jpg"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Though I think there are two things which can help (and I hope I do that):\n - focus on the long term goals. A change now might be frustrating but on a grander scale it often doesn't really matter. Keeping the long term goal in mind can help you.\n - don't take yourself too seriously. the world isn't going to end from the change and in a few days\/weeks you might have already forgotten about it.",
+        "ts": "1552316046.000400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572714947107_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there any specific change or problem you have in mind?",
+        "ts": "1552316062.000500",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572254651585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey mate. All is good. Busy as always but fine to meet up tomorrow, if you are still good. Did you want to meet me at the framestore building at 1pm? Its address is at 28 chancery lane",
+        "ts": "1556000785.000500",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-22\/609329610353_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,200 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello how have u been ",
+        "ts": "1559038934.000100",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/647758002480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Megan! I’m good thank you, I have been having more clients for coaching recently and was trying to plan out the appointments in my week so i can also have some free time to study for a hypnotherapy course I’m taking. How are you, how is everything going? ",
+        "ts": "1559039949.000200",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/641419782785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is involved in that course and I’m good and yeah everything going well I managed to do my cv and my GCSE’s finish in 2 weeks ",
+        "ts": "1559040002.000300",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/649942467974_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, that’s great! Are you planning to send the cv to places? How are the GCSE’s going? \nThis hypnotherapy course is mainly about helping people accessing their more unconscious parts of their mind, where they have insights about situations and about themselves. So basically it helps to be more aware about what is true for themselves.. and they are fully awake and everything, it has nothing to do with going to sleep etc. It’s just a process where they slow down and tune within, because in the everyday’s world where everything happens so fast and we are constantly busy with devices we don’t take the time to sit with ourselves to discover what we actually want.. so yeah it’s quite interesting :smiley:",
+        "ts": "1559041934.000400",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/641446440161_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I’ve sent it to 2 different places already and there okay and oh wow that sound so interesting ",
+        "ts": "1559042582.000500",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/647284143012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Did you send your cv to supermarkets that you were thinking before when we were talking or other places as well?",
+        "ts": "1559043256.000600",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/636391615362_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No it says online that supermarkets u have to be 18 ",
+        "ts": "1559043291.000700",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/636375727923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm that’s strange because remember that link I once sent you from Sainsburys that they were saying they have student placements for very specific jobs that you can be 16+?",
+        "ts": "1559044398.000800",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/636406445330_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me try and see what happens ",
+        "ts": "1559044721.000900",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/636394501923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There ain’t any jobs near me ",
+        "ts": "1559045050.001000",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/647839962416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay I see.. maybe they have these opportunities for students in specific locations. In which types of places did you choose to send your cv? ",
+        "ts": "1559045868.001100",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/649680020439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I sent it to 2 different bowling places ",
+        "ts": "1559045956.001200",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/647853357584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice idea! Would you be interested in the service industry as well? I.e ice cream shops etc? ",
+        "ts": "1559047115.001300",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/647871633728_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I don’t mind ",
+        "ts": "1559047591.001400",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/647879528608_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I thought maybe now that is summer they would be looking for more people to work for them ",
+        "ts": "1559050687.001500",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/636500083363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that’s a good idea ",
+        "ts": "1559050707.001600",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/647908840149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Because it’s nice you already sent two cvs, if you want to have more responses you can send more cvs and then if many of them get to ask you for an interview, you can choose which one you want the most afterwards..",
+        "ts": "1559058388.001700",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/649947487575_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that sounds like a good idea just can’t seem to find places that want someone ",
+        "ts": "1559069006.001800",
+        "username": "Megan (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-28\/648338125184_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

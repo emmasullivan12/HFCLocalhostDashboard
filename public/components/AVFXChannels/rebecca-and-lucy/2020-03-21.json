@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do diffuse should only be isolated in the dusk areas\nMetal materials have no diffuse at all\nSo to create dust- in the diffuse weight you would paint a black and white map\nBlack were the Metal is and white were the dusk areas are :-) ",
+        "ts": "1584791041.007200",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1005264886979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh right ok what do you mean by paint a black and white map how would I do that is that on the actual texture or on the bump map ? ",
+        "ts": "1584800874.007300",
+        "username": "Lucy Taylor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016837685072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,198 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Rob - Hope you had an awesome weekend. Thanks for the <http:\/\/foundry.com|foundry.com> tip. Sadly it doesn't go as far as I need. But it inspired me to look a bit deeper and I found <https:\/\/youtu.be\/CoT5e40lrEU> which goes beyond tracking into projections in a really simple and clear way. I'll be trying it on the flying monkey and alleyway shots this week. I know Youtube is prob not the best place to check for solid techniques but I reckon I know enough now to see when something's just being drudged. Hope you don't mind if I give you a shout if I get stuck!",
+        "ts": "1581325299.008000",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/934351933521_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "*fudged...\nGot the coffee shop job. But freelance gig is due to get back to me in 3-5 days- may be wasting my time - I can't be sure yet. Any news from the documentary?",
+        "ts": "1581325448.008100",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/946710342294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTUNNF15L",
+                "created": 1581328164,
+                "timestamp": 1581328164,
+                "name": "Screenshot 2020-02-10 at 09.45.58.png",
+                "title": "Screenshot 2020-02-10 at 09.45.58",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 4317103,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUNNF15L\/screenshot_2020-02-10_at_09.45.58.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTUNNF15L\/download\/screenshot_2020-02-10_at_09.45.58.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 341,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 454,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 682,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 845,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 909,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTUNNF15L-4df3ac90e8\/screenshot_2020-02-10_at_09.45.58_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 969,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 2338,
+                "original_h": 2470,
+                "thumb_tiny": "AwAwAC2ipdumPyqVIJn5UA\/hVnTo43X5xlu1WdoRnjReuOQcGgDPe2mSLzG2geneogjnnKitK9XbEqklj6mqijIFICBldVyWFReY1WJRhGqrQgLVvKUUYOCKt202Z\/mP3qztjDo1OUyqwZWwR0pgaV6D5ue2BVMOFB3Ux5bmQfPJnFRlXPUilYBZJSwI7VDUmxvUUnlt7UwJKKUgjOR0pKAFC5BPHFJSjof8aSgAooooA\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTUNNF15L\/screenshot_2020-02-10_at_09.45.58.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTUNNF15L-7c253c0b5f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581328170.008200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Jon, very quiet weekend, had both saturday and Sunday as worked the last couple of saturdays and will probably do the next three Saturdays too. Hope you had a good one! Great news on the coffee shop, but sounds like your focused on getting your showreel in shape which is really good. Sarah messaged me from the film school late on Friday to say she hadn't heard anything but will get back to me hopefully again today. With the monkey shot, what is it exactly you are trying to clean up? I can help out with any technical questions you have for sure.",
+        "ts": "1581331248.008500",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/933162196963_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way, I just noticed that Jellyfish posted looking for compers of all levels",
+        "ts": "1581333697.008600",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944682413376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Rob - uploaded a low res version of my flying monkey shot here <https:\/\/vimeo.com\/390469493> The aim is to paint out most or all of the wires. It's good challenge. Let me know if you think I'll be wasting my time.\nI'll prob need help switching out the 'hero' shots as the shot pans and new wires come into shot. Or should I just make a much larger clean plate? Also I'm not sure about putting the lens flares back on top. I'm going to try to tackle each problem in order.\nPretty down on my current reel - as you know - but I'll get on to applying for Jellyfish.",
+        "ts": "1581336025.008700",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944727790272_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "orig_193",
+                "title_link": "https:\/\/vimeo.com\/390469493",
+                "author_name": "Jonathan Joubert",
+                "author_link": "https:\/\/vimeo.com\/user97436145",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/854599041_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: orig_193",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/390469493?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"orig_193\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/390469493",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/390469493"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581336026.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ha! Didn't know Vimeo link would show up here - cool!",
+        "ts": "1581336061.008900",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/944728644256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So you're cleaning up the wall SR? The lens flare would be hard to do, and also you would have to do their shadows as they jump across the wire. I would have thought the street shot with the sandwitch board would be a lot easier to do. But ultimately its whatever shot you feel comfortable with",
+        "ts": "1581344144.009000",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/946778897095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yup cleaning wall SR and taking out wire in the sky. Not thinking about lens flare for the moment - I'm hoping a creative solution will come to me! Want to try a challenging shot - always liked the idea of paintwork with projections.  Love seeing the results. Btw, I'm going to try the street shot as well.  good point about the shadows - luckily they have the same colour value as the wire shadows.",
+        "ts": "1581346525.009100",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/934848599025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In regards to trying to a challenging shot, I would make sure you have the fundamentals of projection down on a more basic shot like the one in the street before moving onto something more chanllenging, the monkey shot is a fairly steep angle and looks like a fair amount of work",
+        "ts": "1581355922.009200",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/932537735074_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank Rob. You're totally right. Just worked so long on the alley shot that I'm a little fed up with it now tbh. Frustrating few hours today on the monkey shot Got a clean patch ready but can't seem to align the card in Nuke 3d space correctly. I have a good track with no slipping. Super frustrating as I know exactly how to do the clean up in terms of steps (like popping some roto shapes to mask anything moving for a good track, keying or rotoing the shadows and merging them back over the clean plate etc. ). Is there a more intuitive way to select the tracking points where I want to place my clean patch? Determined to make some more progress on this shot - but I hear what you're saying - back to alley shot shortly.",
+        "ts": "1581361975.009300",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/945542283093_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

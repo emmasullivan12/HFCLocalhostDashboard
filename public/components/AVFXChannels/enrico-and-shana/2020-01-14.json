@@ -1,0 +1,137 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Enrico, Congratulations on realising your first children book, I would love to ask you about how you planned it out, how did you go about researching your visuals for the story, and how you managed your time on the project?",
+        "ts": "1579018506.002300",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/893135072930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "About my work, I have a blog, which I am updating with small bits of personal development work that I am doing presently: <https:\/\/ink-fisher.tumblr.com\/>",
+        "ts": "1579018564.002400",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/907780733799_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Shana p.l. Illustration blog",
+                "title_link": "https:\/\/ink-fisher.tumblr.com\/",
+                "text": "A 'messy fishery' of creative and visual mumbles.",
+                "fallback": "Shana p.l. Illustration blog",
+                "thumb_url": "https:\/\/66.media.tumblr.com\/avatar_41c5ee843943_128.pnj",
+                "from_url": "https:\/\/ink-fisher.tumblr.com\/",
+                "thumb_width": 128,
+                "thumb_height": 128,
+                "service_icon": "https:\/\/66.media.tumblr.com\/avatar_41c5ee843943_128.pnj",
+                "service_name": "ink-fisher.tumblr.com",
+                "id": 1,
+                "original_url": "https:\/\/ink-fisher.tumblr.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my unpolished website, where at the moment, most of these projects have been submissions fairs and student competition entries, with a few community client works here and there.",
+        "ts": "1579018637.002600",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/895715094209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.shanapl.com\/>",
+        "ts": "1579018643.002700",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/905467505044_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Shana Lohrey Illustration",
+                "title_link": "https:\/\/www.shanapl.com\/",
+                "text": "shanapl",
+                "fallback": "Shana Lohrey Illustration",
+                "thumb_url": "https:\/\/66.media.tumblr.com\/avatar_933a9bc631ef_128.pnj",
+                "from_url": "https:\/\/www.shanapl.com\/",
+                "thumb_width": 128,
+                "thumb_height": 128,
+                "service_icon": "https:\/\/66.media.tumblr.com\/avatar_933a9bc631ef_128.pnj",
+                "service_name": "shanapl.com",
+                "id": 1,
+                "original_url": "https:\/\/www.shanapl.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At the moment, the most recent works that hopefully you can see on my blog, Is experiments using colour to explore the mood of a space I am wanting to develop. The few on here so far is in fact inspired by Naples and Bologna. I am also practising creating characters by simplifying the forms into interesting and expressive shapes. (I first find a character from a event\/situation I have witnessed, do a bit of life drawing to practice drawing gestures\/facial expressions, and then try to draw a character, Then there is also a little bit of scene construction when I try to place a character into a scene and tell a story, or express the atmosphere- a struggle with this a little as I sometimes struggle at figuring out exactly what I want to say\/what the story is (this is still a work in progress and I am wanting to do more!)",
+        "ts": "1579019267.002900",
+        "username": "shanapoly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/893159300930_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FSMUK578V",
+                "created": 1579019764,
+                "timestamp": 1579019764,
+                "name": "experement.gif",
+                "title": "experement",
+                "mimetype": "image\/gif",
+                "filetype": "gif",
+                "pretty_type": "GIF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 243432,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FSMUK578V\/experement.gif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FSMUK578V\/download\/experement.gif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSMUK578V-4842a605e2\/experement_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSMUK578V-4842a605e2\/experement_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSMUK578V-4842a605e2\/experement_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 192,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSMUK578V-4842a605e2\/experement_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_gif": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSMUK578V-4842a605e2\/experement_360.gif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 400,
+                "original_h": 213,
+                "deanimate_gif": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FSMUK578V-4842a605e2\/experement_deanimate_gif.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_tiny": "AwAZADDSo9aWkoAKD7c01gSMDH40AEZ+vagBetBpQOKMUAH50UGkHQUAL3oPSlooAKKDRQB\/\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FSMUK578V\/experement.gif",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FSMUK578V-3d9799ec47",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1579019767.003000"
+    }
+]

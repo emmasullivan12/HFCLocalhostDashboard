@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Lucy, how are you getting on? Hope you're keeping well in these strange times! Let me know if I can be of any assistance, I'm working from home now so it could be a lot easier for me to give feedback.",
+        "ts": "1585045563.003800",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1021458336260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

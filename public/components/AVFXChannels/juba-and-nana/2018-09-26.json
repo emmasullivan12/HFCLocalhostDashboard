@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can't say I have a regret Nana, Maybe I wish I had focused on Animation sooner, but if that were the case I wouldn't be where I am today and I don't want to change that in the least. All the experiences I went though helped me in someway so I can't regret it. :smiley:",
+        "ts": "1537957021.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-26\/443214006947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And okay that's awesome, the exercise I proposed would be perfect for developing some skills in your interest and help with your career planning.\nLet me be clear and say, this isn't homework, and it's only going to go as far as you invest time and effort into it, it's all up to you ok? If you prefer having deadlines and more structure, let me know and I can set that up for you, otherwise do it at your own pace =D.\n\nSo let's start designing a character!\nWe'll set some limits so that it doesn't get out of hand, let's make it a Humanoid (two arms, two legs), and let's not worry about the face right now (maybe think of having a mask or armour that conceals it).\nWhat you should start first is gathering reference! Find characters that you love, save any related images to a folder of what you might like to do. You can find reference for clothing\/ armour (keep it simple!). All this will help in finding the style and look of the character and give yourself the proper groundwork.\nOnce you've done that you can show me your progress and we can take things from there, how does that sound?\n\nIn the mean time I'll do my research for what education you can find that will help you in getting started in the industry :smiley:",
+        "ts": "1537957864.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-26\/442732473969_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good!",
+        "ts": "1537962045.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-26\/443542617349_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

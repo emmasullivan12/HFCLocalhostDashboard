@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marc. When yo mean 'client side' do you mean like the software that the computers themselves use or joint communication with a server?",
+        "ts": "1575290555.004900",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/855966468032_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "May I correct in believing that the vendor side would be the individual features of the front-end side of the software? so like in <http:\/\/google.com|google.com>, one of the vender side would be the GUI.",
+        "ts": "1575290867.005000",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-02\/855971989280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

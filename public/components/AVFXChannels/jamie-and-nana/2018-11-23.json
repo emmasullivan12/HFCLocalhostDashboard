@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you feel are your strength's and weaknesses at the moment?",
+        "ts": "1542964032.002200",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/486381110260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would say that facial anatomy and structure is one of my strengths; in terms of weaknesses, I would say that I lack some of the low-level technical programming knowledge compared to some of my other colleagues.",
+        "ts": "1542967723.002300",
+        "username": "Jamie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/485989186977_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That means you might be able to help me posing faces!",
+        "ts": "1542973477.002400",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/487711295415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ha! Yes, I hopefully can help you with that.",
+        "ts": "1542975494.002500",
+        "username": "Jamie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-23\/487732639719_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

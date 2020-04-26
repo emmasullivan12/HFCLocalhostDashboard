@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's amazing how your job requires so many various different skills,from management to business. What would you say are the pros and cons of this job? Do you see yourself in this job for the rest of your life or do you have plans of changing career later on in life?",
+        "ts": "1574244880.002800",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/841872561488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I feel lost sometimes because I have just started my a levels this September and it's pretty tough, the thought of failure is just unpleasant. Is there anything that motivated you to the job you're doing now? And have you done a-levels? Thank you for the website, I'll check it out!",
+        "ts": "1574245112.002900",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/833950420897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yehh I thought of doing it in parties and weddings but I can't figure out how to attract customers? Haha I'm pretty sure your cooking skills are great hence practice makes perfect!",
+        "ts": "1574245210.003000",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/833952354625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At King's college hospital a minimum of 2-3 hours per week which isn't bad. And yesss I was thinking to get a part time job too so I'll try and find one. For med we are required A*AA, but I've been accepted to this programme in imperial college which will run until Y13 and perhaps my entry requirement for there will be lowered to AAA- just for imperial(my dream uni:sob::joy:)",
+        "ts": "1574245429.003100",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/833956645393_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I haven't tried outside, that's a good idea though so I'll try on that too, thanksss",
+        "ts": "1574245499.003200",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/844095521830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

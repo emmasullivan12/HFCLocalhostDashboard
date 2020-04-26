@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon, nice to meet you! :slightly_smiling_face: I'm a 3rd year student from Bournemouth university, and I would like to do animation and rigging in particular. I'm a big fan of BlueZoo and your cartoony style, which is also what I would really like to improve on. I'm excited to get some tips on animation, especially because I've still got a lot of learning to do. :relaxed: Simone",
+        "ts": "1572451607.001600",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-30\/817379409270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simone pleased to meet you. Happy to help with anything I can, I'm a big fan of the cartoony stuff too! What have you been doing on your course so far? Is there anything in particular you would like some feedback on?",
+        "ts": "1572462189.001700",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-30\/815018415796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

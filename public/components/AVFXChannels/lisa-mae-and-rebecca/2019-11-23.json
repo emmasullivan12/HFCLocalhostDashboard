@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does that mean you get to move around from project to project aswell?",
+        "ts": "1574524117.006200",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-23\/838829012369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

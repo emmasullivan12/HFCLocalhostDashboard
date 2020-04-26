@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marcelo, I forgot to ask what programs do you use at home? \nFor drawing, storyboarding and animating, I remember you said you didn’t use stroryboarder yet.",
+        "ts": "1576088294.010600",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/858172118531_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

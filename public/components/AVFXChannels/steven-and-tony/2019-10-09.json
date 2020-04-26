@@ -1,0 +1,538 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah nice, it's good to have an overall understanding of the pipeline really! I don't mind at all! :slightly_smiling_face: Hmm I've not really had to think about that for a while, I would probably have to say it's lighting, my best skill, it's where I've been focused for almost 4 years now so have been learning a lot, and it's what I enjoy most too, when you get to see shots come together, set moods, it's rewarding. I'm focusing more on composition really at the moment, grading and balance. I really need to update my showreel but finding the time is near impossible, that's something that never stops hah!",
+        "ts": "1570613804.000100",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782522839025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see i see!!",
+        "ts": "1570613855.000200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t know what to focus on",
+        "ts": "1570613863.000300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782523779585_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yesterday i did some roto work, some sculpting, some retopology for the first time in my life and watched a lot of stuff(tutorials on everything )on Pluralsight ",
+        "ts": "1570614239.000400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782529925025_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was honestly in the same place when I left uni, I'd been down so many different routes, simulation fx, animation, level design, programming, rigging, I didn't know what I enjoyed more, what was most valuable to get a job, anything like that. I tried picking up character animation during my final year and wasted a lot of time with that, as it was just what we were told was the 'best' thing to be doing in uni...if I look back, my work was always about trying to make a pretty finished product, so in hindsight I would have been better focusing on finding group work and being the post guy. It's fine not to have a single focus right now in my opinion, if your focus is on picking up new skills and finding where it is you enjoy most, the rest will shape itself around that! It took me two years out of uni of doing voluntary projects on the side, with some rough personal life times as well, until I landed my first paid job in 3D, as a render wrangler, and all of the skills I'd picked up from dabbling around in my own time really paid off and kept me hired as a junior generalist!",
+        "ts": "1570614710.000500",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/790826368007_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it's really great that you're collecting these skills and it'll really help you to pinpoint what it is you love and enjoy the most, once you find that you'll only get better at it",
+        "ts": "1570614750.000600",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/788506101412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and the having the rest in your pocket will never go to waste",
+        "ts": "1570614767.000700",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/776192382834_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Woah that’s actually reassuring! Thanks a lot!!",
+        "ts": "1570616158.000800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/776215406226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Appreciate it!",
+        "ts": "1570616161.000900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/790850416455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will continue doing everything until I find something that clicks",
+        "ts": "1570616184.001000",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791202699286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I want to learn the whole pipeline from sculpting, retopo, baking the high poly to the low poly, uv, texture and rigging\/ animating (the basics and only in general terms)",
+        "ts": "1570616248.001100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/788530776628_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think i like game prototyping and giving ideas to grow a project ",
+        "ts": "1570616264.001200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789002316224_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don’t know what role that falls under",
+        "ts": "1570616271.001300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791204038326_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Usually in class i was the one running around saying “if you added that you could do that blah blah blah”",
+        "ts": "1570616324.001400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/790852845671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Especially around games and gameplay and mechanics",
+        "ts": "1570616336.001500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/790853031927_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Definitely! You'll find something, I was working as a generalist for nearly 2 years before I figured it out, so don't feel you have to commit to something just because it's where the jobs are. Also worth remembering that vfx\/animation\/games are all so closely connected, people are always switching between them, so wherever you land isn't where you have to stay! I've asked here about a tour and it's looking possible, so I'll keep you posted on that! I think it will be great for you to get to see how the pipeline goes here, it's quite different to how it is when you're studying. Have you been in any studios before?",
+        "ts": "1570631552.001600",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782877148321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No i have always begged college tutors and uni tutors to take us places... never happened",
+        "ts": "1570631817.001700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791173478007_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could bring some cupcakes in :joy:",
+        "ts": "1570631844.001800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791174144359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm that's quite a hard one to pinpoint actually I think. Could fall under many roles! I think that's more something that you progress into as a lead, and every role here are free to give ideas (and will be listened to) prototyping you could think about look dev if its visual style, or more suited to you could be a pipeline\/TD role, developing tools and ideas. I love R&amp;D but working in productions means it's not the constant...quite hard to get a constant job in that, very competitive, but really rewarding. As a lead I got to do a lot of it but now as an artist it's much less - but also less pressure so nice to have the balance now and then!",
+        "ts": "1570631896.001900",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782886868673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah was the same, I left uni with 0 contacts, having never set foot in a working studio! Haha! That would go down well anywhere :smile: Maybe even more important than your skill level is your attitude and likeability, really.",
+        "ts": "1570632007.002000",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/777841741859_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess your shifts change week to week right?",
+        "ts": "1570632093.002100",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789331481728_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They do but the boss is an old friend of mine, i can take a day  off when i need",
+        "ts": "1570632552.002200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/788873299396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If i know the date before a sunday i can arrange for the following week",
+        "ts": "1570632939.002300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791205393831_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "okay great! I'll let you know as soon as I know more :slightly_smiling_face:",
+        "ts": "1570633287.002400",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782928193377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks!! Much appreciated!!",
+        "ts": "1570633306.002500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789368052032_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is it advisable to bring work with me in some form? Blog\/usb\/laptop? Or not allowed due to NDAs?",
+        "ts": "1570633891.002600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782946374465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nah I wouldn't bring anything really, wouldn't be that kind of thing for feedback. It's always quite awkward when the group tours try to stop and show us stuff honestly! If there's anything you want feedback on you can show me here :slightly_smiling_face:",
+        "ts": "1570634319.002700",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791599514278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome!!! Got it!",
+        "ts": "1570634373.002800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/777912134499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just so i know not to bother anyone :joy: ",
+        "ts": "1570634407.002900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/777913189507_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha yeah it's good to ask cause you never know! And other people might feel differently about it honestly, that sounded a little harsh when I read it back! I love when students stop to chat at our department and ask questions etc but when they pull out their showreel while we're working it does put you on the spot if you're not ready to critique! usb's would be a no rule wise I think, but if you wanted to have something handy just in case you wanted to show\/someone asked its fine :slightly_smiling_face: but wouldn't be expected of you to bring anything!",
+        "ts": "1570634762.003000",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/788939600404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good ! And don’t worry hhaha okay i just wanna have a look at how the pipeline works and how everything comes together ",
+        "ts": "1570634825.003100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/782973509777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":slightly_smiling_face: I'm not sure exactly what it'll be yet, a group thing with other mentees or just yourself, but either way I'll try to make sure you get to chat to different artists about their process, might give you a good idea of something to focus on, or even inspire you to come to animation over vfx! One main difference will be that we have a really fast turnaround here, compared to vfx studios",
+        "ts": "1570635126.003200",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791271853415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see i see!! That does sound more like something i would like",
+        "ts": "1570635273.003300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/776641081298_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am not so much of the “bigger picture” kind of guy",
+        "ts": "1570635289.003400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791628589702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a keen interest in games, i have found a nice course on Pluralsight for rigging and animation and slowly going through it",
+        "ts": "1570635366.003500",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/777941931427_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How have you been lately? Working on any personal projects? Or working on anything specific at work?",
+        "ts": "1570635936.003600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/788974240836_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah same, the idea of spending months on a single shot bores me quite a lot. I really enjoy pressure and having to whip stuff out quick haha Oh nice, I used those a lot back when it was digital tutors, some really good stuff. Is that in maya? I've been good thanks! Had to collect my glasses today, first time I've had to wear them haha went to visit Romania for our anniversary too that was incredible! Work wise I've mostly been getting on with Paddington, we're all a little behind at the moment so it's quite intense. And been doing overtime on a different small project so not had much time for personal work! I'd love to do something soon though, just finding the time!",
+        "ts": "1570637896.003700",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789031416932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh nice!!!",
+        "ts": "1570638811.003800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/776742146114_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is that paddington 3?",
+        "ts": "1570638852.003900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789526995413_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah no, its the TV series, its linked to the movies though!",
+        "ts": "1570638986.004000",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789530506645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.blue-zoo.co.uk\/feed\/paddington\/>",
+        "ts": "1570639008.004100",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789532730272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh i see!",
+        "ts": "1570639040.004200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789062327940_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looks cute hhaha",
+        "ts": "1570639094.004300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789063720116_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah its really nice, I never set out to work on kids TV really but I enjoy it a lot",
+        "ts": "1570639367.004400",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789070878996_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "what style of games would it be that you'd ideally work on?",
+        "ts": "1570639875.004500",
+        "username": "Steven White (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791404797015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ideally would like to work on MMOs",
+        "ts": "1570641639.004600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791452189079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That was a huge wave of customers at work... finally calmed down",
+        "ts": "1570641666.004700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/791804851526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lineage 2 was the game that got my started in hardcore gaming and in wanting to make games but MMOs are hard to find work in. Mobile hyper casual games would be fun",
+        "ts": "1570641810.004800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789135450276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I emailed ncsoft in korea but got no reply because it was in English ",
+        "ts": "1570641857.004900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-09\/789607879664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thank you for this",
+        "ts": "1553000236.000900",
+        "username": "Tamanna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/579016600304_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have model a bike for someone to rig, can you give your opinion on it.",
+        "ts": "1553000298.001000",
+        "username": "Tamanna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581393104740_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FH3NBKLMB",
+                "created": 1553000363,
+                "timestamp": 1553000363,
+                "name": "bike_rig_04.ma",
+                "title": "bike rig 04",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 54015383,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH3NBKLMB\/bike_rig_04.ma?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FH3NBKLMB\/download\/bike_rig_04.ma?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FH3NBKLMB\/bike_rig_04.ma",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FH3NBKLMB-257e908c75",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1553000365.001100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this article is great, it has answered all the question I had on my mind",
+        "ts": "1553000720.001400",
+        "username": "Tamanna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-19\/581320454531_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

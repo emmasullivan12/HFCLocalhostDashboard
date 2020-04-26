@@ -1,0 +1,86 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Totally understand — I’m sure there are opportunities to shoot indoors and try to make the most of the situation. I will send some websites\/reels your way to review other work from students that can give you inspiration.",
+        "ts": "1585585773.000500",
+        "username": "Olivia Burke (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035966225893_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/314280688|H>ere is a <https:\/\/vimeo.com\/314280688|link> to a Compositor who started with us as a 2D Intern. The reel shows solid breakdowns and there is a part that was shot inside with the star wars character that you can check out for inspiration.",
+        "ts": "1585603752.000600",
+        "username": "Olivia Burke (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1025328112627_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Katelyn Veneman Demo Reel Winter 2019",
+                "title_link": "https:\/\/vimeo.com\/314280688",
+                "author_name": "Katie Veneman",
+                "author_link": "https:\/\/vimeo.com\/user58503533",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/758042719_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: Katelyn Veneman Demo Reel Winter 2019",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/314280688?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Katelyn Veneman Demo Reel Winter 2019\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/314280688",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/314280688"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585603753.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is another <https:\/\/vimeo.com\/226196210|reel> with great breakdowns and the card shot could be done indoors.",
+        "ts": "1585605054.000800",
+        "username": "Olivia Burke (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1024077069522_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Compositing Reel",
+                "title_link": "https:\/\/vimeo.com\/226196210",
+                "author_name": "Lucia Hill Barroso",
+                "author_link": "https:\/\/vimeo.com\/user18366234",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/645742836_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "2017",
+                "fallback": "Vimeo Video: Compositing Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/226196210?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Compositing Reel\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/226196210",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/226196210"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585605055.000000"
+        }
+    }
+]

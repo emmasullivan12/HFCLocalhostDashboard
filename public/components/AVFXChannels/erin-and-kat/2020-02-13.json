@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Honest truth is most roto work gets outsourced these days so although I like to know artists can do it in a pinch there isn't much call for it.",
+        "ts": "1581650169.000100",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/952083062368_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just managed to download the video I'll check it out in the morning!",
+        "ts": "1581650384.000200",
+        "username": "Erin Nash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/954295663670_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

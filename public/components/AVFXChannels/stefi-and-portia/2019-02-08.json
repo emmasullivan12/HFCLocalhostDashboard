@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Portia! For some reason I hadn't seen the notification for you message!  Wow that is great, thank you for sharing. It's nice to dedicate time on creative activities such as these! Hehe yeah we cannot read people's minds but we can is understand them and come to their shoes compassionately. As you very well said, psychology helps to expand our awareness for ourselves and other's perceptions..",
+        "ts": "1549653391.002200",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545565172864_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So to understand a bit better, you want to find work experience relevant to psychology? are you taking a module in psychology at school or are you thinking to study the subject at uni later on?",
+        "ts": "1549653516.002300",
+        "username": "Stefi Daskalopoulou (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/546143959812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m thinking of selecting Psychology as an A level yep ",
+        "ts": "1549653788.002400",
+        "username": "Portia Parker (Mentees)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-08\/545705689681_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, I am Adeena. Hope you are well. I am thankful for having an E-mentor and hope to be working with you. I am currently in year 12, doing my A Levels. I study chemistry, biology and psychology. I have a great interest in science related fields, especially to do with biology and find great interest in our bodily and mental behaviours (one of the reasons why I chose to do psychology). When I finish my A Levels, I am hoping to go to a uni and study a course that is related to fields of biology. I am currently unsure about my career, but I am interested in fields of medicine, biomedical science, biology and maybe teaching science. By these mentoring sessions I am hoping to get an idea of what careers pathways are open for me and be able to fully 100% decide what field I want to go into, as I am unsure about that the most. Moreover, find opportunities like work experiences that can allow me to enhance my understanding about different fields.",
+        "ts": "1585566570.002000",
+        "username": "Adeenasaeed59 (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035107545520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey , again. Sorry I didn't see the message you sent me and so I decided to introduce myself without replying to you message. Now that I have seen it, thank you so much. You asked about the volunteer experience I had working at a care home- I loved it, the care home was for people with dementia. Most of the time, it consisted of me spending time with them while they are all sat down and serving them tea, interacting with them, talking to them and empathising with them. Moreover, taking them from one place in the care home to another and ensuring they feel happy while I am with them.",
+        "ts": "1585567574.002100",
+        "username": "Adeenasaeed59 (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1035138730528_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No, currently I don't know what I want to study at uni . However, I want to maybe work in a hospital (at lab level or interactions with patients), not fully sure about that. I want to know more about your field, what is it like working in a hospital- what is the most though thing\/ challenges in that job you encounter everyday, how you deal with them. More specifically, I am unsure about your career, so it will be pleasure if you tell me what field you are exactly from that you do work on in the hospital. THANKS alot :blush:",
+        "ts": "1585567941.002200",
+        "username": "Adeenasaeed59 (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1023676537251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

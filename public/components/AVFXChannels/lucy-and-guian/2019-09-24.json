@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian. Lovely to hear from you.  I’m excited for you.  Hope you’re making some great new friends. Keep in touch. Lucy",
+        "ts": "1569316063.000200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/758228579458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you I'm  definetly socialising and getting to.know people. I will definetly keep in touch",
+        "ts": "1569318865.000300",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-24\/759580030419_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

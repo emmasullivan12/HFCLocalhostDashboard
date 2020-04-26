@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can see your busy, but what is your most anticipated game of 2019?",
+        "ts": "1548174957.001600",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-22\/529922906483_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can see why, but you're in a great condition with the unconditional offer from Kingston... so you should hopefully have the choice once you've finished your exams - and plenty of time to think it through before then :+1:",
+        "ts": "1552475420.001700",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/576652994310_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How do you feel about the offer from Westminster? Do you think you can get the grades they require?",
+        "ts": "1552475443.001800",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/576653414262_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So you're finished? When do you find out how you did?",
+        "ts": "1552475475.001900",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/576653888502_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding business - it's a bit of a mix. I'm actually taking a lot of time to work on a completely different project, so I can step back from the interview coaching to focus my efforts on that a little bit more. However, I'm relatively practical about my approach to the interview business - I have a list of tasks to complete and set about prioritising them and working through one by one. I also allow previous clients to \"interrupt\" my break, since it's often less work \/ effort to support people I worked with in the past and helpful to keep revenue from drying up. Does that all make sense?",
+        "ts": "1552475805.002000",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/575186090388_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, I might firm Kingston as my first choice because the lecturers there seemed great and a lot of current students mentioned great things about them and the uni as a whole (with their bad experiences too). \nWestminster was a little more demanding and they seem strict, I’m aiming for B’s but if I really push myself I think I should be able to get those grades (if I work hard everyday)!! ",
+        "ts": "1552515568.002100",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/577260933703_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I get my mock results in the beginning of April, I think these exams were much better than the November ones and I can really see myself making progress which is good. Hopefully my grades reflect this. ",
+        "ts": "1552515607.002200",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/576153849732_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes it made sense, and that is a great approach to your work! \nYou organise your time and tasks well, I struggle at prioritising my important work because I get so carried away trying to complete my smaller tasks..",
+        "ts": "1552515772.002300",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/576522893797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

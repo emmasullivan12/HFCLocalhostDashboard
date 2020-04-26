@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh, brilliant. Thank you Emma, I appreciate it",
+        "ts": "1579366498.001200",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-18\/912349615280_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've actually already applied to the trainee scheme for VFX at screen skills, I've been accepted for an interview for it which is on the 13th Feb!",
+        "ts": "1579366557.001300",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-18\/912359947061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Fingers crossed I can get through the interview",
+        "ts": "1579366585.001400",
+        "username": "Andrew Li (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-18\/899565440178_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

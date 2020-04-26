@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Im pretty open Friday Morning anytime between 9-12 let me know if you'd like to have a call.",
+        "ts": "1587562537.003400",
+        "username": "Anthony Palermo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1072148009606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! Is this Chicago time or California?",
+        "ts": "1587570530.003500",
+        "username": "Bella M (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1064561287095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Chicago, sorry :slightly_smiling_face:",
+        "ts": "1587579549.003600",
+        "username": "Anthony Palermo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1072980945398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Chicago @ 11AM works for me :smile:",
+        "ts": "1587598160.003700",
+        "username": "Bella M (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1065624417799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Anthony Palermo is inviting you to a scheduled Zoom meeting.\n\nTopic: Prospela Mentor Meeting, Bella\nTime: Apr 24, 2020 11:00 AM Central Time (US and Canada)\n\nJoin Zoom Meeting\n<https:\/\/us04web.zoom.us\/j\/71341907203>\n\nMeeting ID: 713 4190 7203",
+        "ts": "1587599905.003800",
+        "username": "Anthony Palermo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1104236120768_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

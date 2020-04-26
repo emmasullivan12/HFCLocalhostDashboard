@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Dani! nice to meet you too, sorry for the late reply It’s been a busy week ",
+        "ts": "1541850113.001700",
+        "username": "Florence (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/476461605747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem at all Florence :slightly_smiling_face: I'm slowly figuring out Slack myself. Busy week working?",
+        "ts": "1541850847.001800",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/475961273649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

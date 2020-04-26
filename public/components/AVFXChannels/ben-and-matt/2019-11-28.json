@@ -1,0 +1,77 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cheers, should have some footage, finally, tomorrow.. more so on the other project I'm doing so if I could send you a link to watch it for feedback that would be awesome! It's around 7 seconds long.\nJust waiting for some 3D stuff to render today so hopefully that's done in a few hours.\nHate the waiting around part tension kills me :joy:",
+        "ts": "1574947262.001000",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852860609029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So got the first version of one of my projects, this one is based on the idea that a cult was using the room in the past but they've not used it for a while so it needs to be a bit dusty etc.. \nI want to put a skeleton in the cage but that's the last thing on my list right now.\nSo far I've just messed around with the colour, cage and one symbol on the floor. \n\n<https:\/\/youtu.be\/dhxPQFj0PCU|https:\/\/youtu.be\/dhxPQFj0PCU>\n\nIf you think that something's off or not quite right please be as critical as you need too be!",
+        "ts": "1574965650.001100",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/845229478305_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Cult Cage Cavern",
+                "title_link": "https:\/\/youtu.be\/dhxPQFj0PCU",
+                "author_name": "Matt Coleman",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCqZyESR3LvstdTCXraugOJg",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/dhxPQFj0PCU\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Cult Cage Cavern",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/dhxPQFj0PCU?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/dhxPQFj0PCU",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/dhxPQFj0PCU"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's the original footage.\n<https:\/\/youtu.be\/qrRRClq0jWE|https:\/\/youtu.be\/qrRRClq0jWE>",
+        "ts": "1574965714.001300",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/845230127681_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Cult Room Original Footage",
+                "title_link": "https:\/\/youtu.be\/qrRRClq0jWE",
+                "author_name": "Matt Coleman",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCqZyESR3LvstdTCXraugOJg",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/qrRRClq0jWE\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Cult Room Original Footage",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/qrRRClq0jWE?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/qrRRClq0jWE",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/qrRRClq0jWE"
+            }
+        ]
+    }
+]

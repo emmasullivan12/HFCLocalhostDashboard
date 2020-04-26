@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a bit of a mix, but mainly maya - easiest way to get your fire back into maya is by getting it out as .vdb sequence, but you'll have to work out the shading again once you're in maya, which is a pain. I use zbrush pretty much only as a remeshing scans, im a bit lazy, so i never learnt to sculpt in it. Mainly use mudbox for sculpting. I've been doing a lot of photogrametry, which is good fun - generating meshes just from photos. I use agisoft metashape for that. Other bits and pieces like world machine for terrains, a bit of nuke, photoshop, megascans mixer. You've got a big headstart if you've already been messing about in maya and zbrush. I think i started experimenting with 3ds max when i was 16-17, but a lot of the people in my class at uni were starting from scratch at 18. I was 21 when i started uni, and was starting from scratch in maya.",
+        "ts": "1569429288.002600",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-25\/775315030198_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

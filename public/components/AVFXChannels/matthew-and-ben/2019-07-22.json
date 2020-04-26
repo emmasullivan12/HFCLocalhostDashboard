@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ben. Had a look at your showreel. Do you have a time to talk around 6-7pm usually a bit busy during the day. ",
+        "ts": "1563803829.000100",
+        "username": "Matthew Robert Davies (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/701413534516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Matt, absolutely! Feel free to drop me a message here or call on 07565252353",
+        "ts": "1563805079.000200",
+        "username": "Ben Gardener (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/704062085254_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you around tonight?",
+        "ts": "1563815893.000300",
+        "username": "Ben Gardener (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-22\/704314134758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

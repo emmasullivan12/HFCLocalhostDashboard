@@ -1,0 +1,37 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apologies for the delay in replying! I’ve updated my notifications on the app now! I have a website at <https:\/\/www.chloeoconnor.com\/> where I have posted some personal work, and a bit of the work I’ve done on my traineeship. My main focus would be on 3D modeling\/texturing, and I’ve stuck to a very cartoony, animation focused style so far. I’ve been looking to do more realistic stuff though, since learning Substance Painter on my placement, and taken a course in advanced 3D modeling. Let me know when suits you best to message, I’m sure you’re busy in the studio during the day!",
+        "ts": "1565866646.001800",
+        "username": "Chloe O’Connor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729567000918_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "3D modeling | Chloe O'Connor Modeling",
+                "title_link": "https:\/\/www.chloeoconnor.com\/",
+                "text": "Chloe O'Connor Modeling is a portfolio site of Chloe O'Connor Barry, Irish 3D Artist specialising in 3D modeling in Maya for CG projects such as animation and games",
+                "fallback": "3D modeling | Chloe O'Connor Modeling",
+                "from_url": "https:\/\/www.chloeoconnor.com\/",
+                "service_icon": "https:\/\/static.parastorage.com\/client\/pfavico.ico",
+                "service_name": "chloeoconnor.com",
+                "id": 1,
+                "original_url": "https:\/\/www.chloeoconnor.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Chloe , just left the office ! \nI can definitely help you with with realism , I haven’t got a proper look at your work , I will this weekend.\nBest time to contact me is at anytime , but I will be mostly a bit more free after 9pm .\n",
+        "ts": "1565898411.002000",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/716554584866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sally, I just wanted to let you know that I got hired at Mill Film as a Department Manager, so I will no longer work as a 3D artist. Until I get acquainted with this new role I will keep arts for my leisure time I guess. So I am not sure if this mentorship relationship is still relevant? Anyway, you can let me know what you think! Have a great Sunday night :slightly_smiling_face: Cheers!",
+        "ts": "1568584294.000100",
+        "username": "marie-line.despres (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-15\/763154251270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

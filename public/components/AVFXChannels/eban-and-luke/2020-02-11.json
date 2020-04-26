@@ -1,0 +1,170 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmmm. looks a little chunky. You might need a higher resolution sim for final meshing. But it also might be in your meshing settings. There are areas that kind of spike out, looks like there may be some particles that are just barely getting meshed. What are your thoughts?",
+        "ts": "1581439324.010600",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/935659042835_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I might want to adjust resolution slightly but sim time will jump further. Also I think it’s to do with the points velocity increasing to quickly and just skipping the stairs all together. So I’m trying to adjust velocity dampening, stick to collision scale and maybe change to swirly kernel instead of splashy. As well as the size of the emission source so it doesn’t dump to many particles at once",
+        "ts": "1581440129.010700",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/935687422147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, less particles on emission will help. Something I also noticed when I did my toy setup, it looks like hydraulic jumps are happening on the stairs, where water is getting sucked backwards in to a swirl in the back of each step...",
+        "ts": "1581440411.010800",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946711937988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.google.com\/search?q=hydrolic+jumps&amp;oq=hydrolic+jumps&amp;aqs=chrome..69i57j0l2.4528j1j7&amp;sourceid=chrome&amp;ie=UTF-8>",
+        "ts": "1581440437.010900",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/947167768064_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You might do well to add a bit of randomness to the collision area there to add more break up.",
+        "ts": "1581440512.011000",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/947171129616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are your sim times like now?",
+        "ts": "1581440542.011100",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/937030448833_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I noticed this same thing. I even turned off particle separation scaling in the solver to try and change this. \n\nI’ll give that a try with the collider. And in the small wedge for 500 frames it’s about 30-60 seconds a frame, full scale start going closer to 2 minutes.",
+        "ts": "1581440613.011200",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/947195308309_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, technically it might not be a hydraulic jump, here is a good video explaining them...",
+        "ts": "1581440869.011300",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949394451734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=XsYgODmmiAM>",
+        "ts": "1581440869.011400",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/946730338820_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Fatal Currents - Low Head Dam Presentation",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=XsYgODmmiAM",
+                "author_name": "Ed Kern",
+                "author_link": "https:\/\/www.youtube.com\/user\/eddiekern",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/XsYgODmmiAM\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Fatal Currents - Low Head Dam Presentation",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/XsYgODmmiAM?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=XsYgODmmiAM",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=XsYgODmmiAM"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581440870.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you're interested.",
+        "ts": "1581440883.011600",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949047197495_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This looks cool! I’ll definitely give it a proper watch when I get home this evening.",
+        "ts": "1581440949.011700",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/937045612561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your ram usage like during your sim? Make sure you dont max out your ram, if you do your done.",
+        "ts": "1581441016.011800",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/949051753991_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can’t remember the exact amount of the top of my head. I’ll take a look and give you a number next time I run it tonight. But I’m pretty sure I haven’t maxed out yet.",
+        "ts": "1581441186.011900",
+        "username": "Luke Vuilliomenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-11\/934406655986_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

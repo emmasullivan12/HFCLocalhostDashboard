@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow busy busy busy. Ya I try that. Ta Colin. ",
+        "ts": "1566059653.000700",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-17\/729259282980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

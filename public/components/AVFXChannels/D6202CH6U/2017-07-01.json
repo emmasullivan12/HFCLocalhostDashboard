@@ -1,0 +1,250 @@
+[
+    {
+        "type": "message",
+        "text": "Hey <@U60D00VU6>!! Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1498905265.211002",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It's unlucky that we haven't heard much from your mentee Radhika, so we were going to introduce you to another two students who have been active and are looking for another E-Mentor! Here is a profile on each of them and we'll be introducing you shortly!",
+        "user": "U4V22C6A1",
+        "ts": "1498905279.211785",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F62KNDYR0",
+                "created": 1498905287,
+                "timestamp": 1498905287,
+                "name": "Prospela - Your Mentee Profile - Ayah.pdf",
+                "title": "Prospela - Your Mentee Profile - Ayah.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 200965,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62KNDYR0\/prospela_-_your_mentee_profile_-_ayah.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62KNDYR0\/download\/prospela_-_your_mentee_profile_-_ayah.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F62KNDYR0\/prospela_-_your_mentee_profile_-_ayah.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F62KNDYR0-6c06f5a3d4",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498905288.212249"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F62HFP2TV",
+                "created": 1498905293,
+                "timestamp": 1498905293,
+                "name": "Prospela - Your Mentee Profile - Ewelina.pdf",
+                "title": "Prospela - Your Mentee Profile - Ewelina.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 239867,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62HFP2TV\/prospela_-_your_mentee_profile_-_ewelina.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62HFP2TV\/download\/prospela_-_your_mentee_profile_-_ewelina.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F62HFP2TV\/prospela_-_your_mentee_profile_-_ewelina.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F62HFP2TV-df7a0a0389",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498905294.212543"
+    },
+    {
+        "type": "message",
+        "text": "They are both quite creative (Ayah loves writing and Ewelina loves interior design \/ architecture), although aren't 100% sure of how to turn those abilities into a career. Thought an insight into your world of Marketing at Pladis as well as your own branding \/ design business will help them start to think about it more clearly!",
+        "user": "U4V22C6A1",
+        "ts": "1498905379.217561",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We'll be introducing you shortly!",
+        "user": "U4V22C6A1",
+        "ts": "1498905385.218005",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "<@U60D00VU6> As sods law would have it, your mentee Radhika has just logged in :joy:",
+        "user": "U4V22C6A1",
+        "ts": "1498905931.248919",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Here is a profile of Radhika too!",
+        "user": "U4V22C6A1",
+        "ts": "1498905939.249386",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F6204EZBJ",
+                "created": 1498905968,
+                "timestamp": 1498905968,
+                "name": "Prospela - Your Mentee Profile - Radhika.pdf",
+                "title": "Prospela - Your Mentee Profile - Radhika.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 183986,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6204EZBJ\/prospela_-_your_mentee_profile_-_radhika.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6204EZBJ\/download\/prospela_-_your_mentee_profile_-_radhika.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F6204EZBJ\/prospela_-_your_mentee_profile_-_radhika.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F6204EZBJ-a7b2fe0d05",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498905969.251197"
+    },
+    {
+        "type": "message",
+        "text": "Hi <@U4V22C6A1> thanks for sending the profiles over, Radhika has just messaged me so I will begin talks with her and also introduce myself to the 2 other mentees too! ",
+        "user": "U60D00VU6",
+        "ts": "1498907476.340561",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g7c5bedddf7a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/17c5bedddf7a0650d5d52c4831158b90.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Graham",
+            "real_name": "Graham",
+            "display_name": "graham",
+            "team": "T4UUTPV18",
+            "name": "graham",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

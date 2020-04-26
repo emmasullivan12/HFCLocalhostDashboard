@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lehi!\n\nGood to hear that! And sure no problem! Currently I'm working as an animator using Autodesk Maya, most of my work at the moment is doing a range of things from layout to finished animation. Usually I try to get at least a full shot done from start to finish on average but it often depends on how complicated the shot is, how many frames it may be etc etc.\nTo be honest most of the work I'm doing at the moment is just that! The animation I do is primarily character focused but sometimes I have to work on props and cameras (although I don't do that very often).\n\nBefore the project that i'm on currently came around I was busy with a number of other jobs such as character design, after effects animation and story boarding to name a few!",
+        "ts": "1563977216.000100",
+        "username": "Sidd Shetty (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-24\/698219065905_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

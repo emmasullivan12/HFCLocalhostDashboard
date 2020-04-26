@@ -1,0 +1,84 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My student’s short animated film got into this  festival!\n<https:\/\/escapestudiosanimation.blogspot.com\/2019\/04\/home-sweet-home-in-british-animation.html?m=1>",
+        "ts": "1557009294.000200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-04\/628365052167_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Home Sweet Home in British Animation Festival",
+                "title_link": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/04\/home-sweet-home-in-british-animation.html?m=1",
+                "text": "Many congratulations to the creators of the short film Home Sweet Home , which has made the cut for the official selection at the Britis...",
+                "fallback": "Home Sweet Home in British Animation Festival",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-DA9No_8H3Jg\/XMLb6IZqQYI\/AAAAAAAAEFE\/X6k489vtq9gil9e0_BdeF1CQL9uVa8PhwCLcBGAs\/w1200-h630-p-k-no-nu\/Screen%2BShot%2B2019-04-26%2Bat%2B11.20.36.png",
+                "from_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/04\/home-sweet-home-in-british-animation.html?m=1",
+                "image_width": 472,
+                "image_height": 248,
+                "image_bytes": 103957,
+                "service_icon": "https:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosanimation.blogspot.com\/2019\/04\/home-sweet-home-in-british-animation.html?m=1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.filmfestivalguild.com\/baff2019>",
+        "ts": "1557009307.000400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-04\/626001588148_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "The Film Festival Guild | Home",
+                "title_link": "https:\/\/www.filmfestivalguild.com\/baff2019",
+                "text": "The Film Festival Guild is an international company specializing in running events featuring the best in film and animation from around the world.",
+                "fallback": "The Film Festival Guild | Home",
+                "image_url": "https:\/\/static.wixstatic.com\/media\/9d7735_0cc8549dadda41a39a0fa524328281d6%7Emv2_d_3001_1458_s_2.jpg",
+                "from_url": "https:\/\/www.filmfestivalguild.com\/baff2019",
+                "image_width": 515,
+                "image_height": 250,
+                "image_bytes": 749111,
+                "service_icon": "https:\/\/static.parastorage.com\/client\/pfavico.ico",
+                "service_name": "filmfestivalguild.com",
+                "id": 1,
+                "original_url": "https:\/\/www.filmfestivalguild.com\/baff2019"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tickets \n<https:\/\/www.cineworld.co.uk\/films\/the-british-animation-film-festival-screening-1\/ho00006498#\/buy-tickets-by-film?in-cinema=london&amp;at=2019-05-10&amp;for-movie=ho00006498&amp;view-mode=list>\n",
+        "ts": "1557009326.000600",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-04\/628702026806_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "The British Animation Film Festival - Screening 1 | Book tickets at Cineworld Cinemas",
+                "title_link": "https:\/\/www.cineworld.co.uk\/films\/the-british-animation-film-festival-screening-1\/ho00006498#\/buy-tickets-by-film?in-cinema=london&at=2019-05-10&for-movie=ho00006498&view-mode=list",
+                "text": "Watch The British Animation Film Festival - Screening 1 movie trailer and book The British Animation Film Festival - Screening 1 tickets online",
+                "fallback": "The British Animation Film Festival - Screening 1 | Book tickets at Cineworld Cinemas",
+                "thumb_url": "https:\/\/www.cineworld.co.uk\/xmedia-cw\/repo\/feats\/posters\/HO00006498-md.jpg",
+                "from_url": "https:\/\/www.cineworld.co.uk\/films\/the-british-animation-film-festival-screening-1\/ho00006498#\/buy-tickets-by-film?in-cinema=london&at=2019-05-10&for-movie=ho00006498&view-mode=list",
+                "thumb_width": 600,
+                "thumb_height": 889,
+                "service_name": "cineworld.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.cineworld.co.uk\/films\/the-british-animation-film-festival-screening-1\/ho00006498#\/buy-tickets-by-film?in-cinema=london&amp;at=2019-05-10&amp;for-movie=ho00006498&amp;view-mode=list"
+            }
+        ]
+    }
+]

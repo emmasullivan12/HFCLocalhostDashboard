@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tell me about it! Forwarding on some free training in case you're interested:\n\nPaint and Roto and Compositing Basics\n<https:\/\/www.chrisfryer.co.uk\/training|https:\/\/www.chrisfryer.co.uk\/training>\n\nBunch of webinars\/skillups\/livestreams <https:\/\/www.foundry.com\/events\/virtual-events|https:\/\/www.foundry.com\/events\/virtual-events>\n\nIntro to Game Development course\n<https:\/\/online-learning.harvard.edu\/course\/cs50s-introduction-game-development?delta=0|https:\/\/online-learning.harvard.edu\/course\/cs50s-introduction-game-development?delta=0>",
+        "ts": "1587138110.001000",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1063195760310_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Foundry",
+                "title": "Register here",
+                "title_link": "https:\/\/www.foundry.com\/events\/virtual-events",
+                "text": "Explore our weekly webinars, skill-ups, sessions and more showcasing technology, career paths, and inspirational talks from our global customer",
+                "fallback": "Foundry: Register here",
+                "image_url": "https:\/\/imagine.foundry.com\/l\/298802\/2020-04-01\/84blv\/298802\/121951\/1920x1080___16_9.jpg",
+                "from_url": "https:\/\/www.foundry.com\/events\/virtual-events",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 1643483,
+                "service_icon": "https:\/\/www.foundry.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.foundry.com\/events\/virtual-events"
+            },
+            {
+                "service_name": "Harvard Online Courses",
+                "title": "CS50's Introduction to Game Development",
+                "title_link": "https:\/\/online-learning.harvard.edu\/course\/cs50s-introduction-game-development?delta=0",
+                "text": "Learn about the development of 2D and 3D interactive games in this hands-on course, as you explore the design of games such as Super Mario Bros., Pokémon, Angry Birds, and more.",
+                "fallback": "Harvard Online Courses: CS50's Introduction to Game Development",
+                "image_url": "https:\/\/online-learning.harvard.edu\/sites\/default\/files\/styles\/social_share\/public\/course\/CS50x_games.jpg?itok=qPlrJ8XY",
+                "image_width": 476,
+                "image_height": 250,
+                "ts": 1528918322,
+                "from_url": "https:\/\/online-learning.harvard.edu\/course\/cs50s-introduction-game-development?delta=0",
+                "image_bytes": 61168,
+                "service_icon": "https:\/\/online-learning.harvard.edu\/sites\/default\/files\/favicons\/apple-touch-icon.png",
+                "id": 2,
+                "original_url": "https:\/\/online-learning.harvard.edu\/course\/cs50s-introduction-game-development?delta=0"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587138112.000000"
+        }
+    }
+]

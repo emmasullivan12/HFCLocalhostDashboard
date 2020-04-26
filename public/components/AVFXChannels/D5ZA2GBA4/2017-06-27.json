@@ -1,0 +1,102 @@
+[
+    {
+        "type": "message",
+        "text": "Fluffy cat",
+        "user": "U6035Q7QV",
+        "ts": "1498549116.135982",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "ge1adb43cf9f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9e1adb43cf9f7fd8791b19aee5a37abc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Adnan",
+            "real_name": "Adnan",
+            "display_name": "adnan",
+            "team": "T4UUTPV18",
+            "name": "adnan",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "It goes down in the dm's",
+        "user": "U5XPLATU2",
+        "ts": "1498549140.140794",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g92f19385ee2",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a92f19385ee2f55364cdb99cfa112c92.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "Dinesh",
+            "real_name": "Dinesh",
+            "display_name": "dmatha-2011",
+            "team": "T4UUTPV18",
+            "name": "dmatha-2011",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": ":smiling_imp::smiling_imp::unamused:",
+        "user": "U5XPLATU2",
+        "ts": "1498549156.143817",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g92f19385ee2",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a92f19385ee2f55364cdb99cfa112c92.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "Dinesh",
+            "real_name": "Dinesh",
+            "display_name": "dmatha-2011",
+            "team": "T4UUTPV18",
+            "name": "dmatha-2011",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Rice",
+        "user": "U6035Q7QV",
+        "ts": "1498549157.144016",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "ge1adb43cf9f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9e1adb43cf9f7fd8791b19aee5a37abc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "Adnan",
+            "real_name": "Adnan",
+            "display_name": "adnan",
+            "team": "T4UUTPV18",
+            "name": "adnan",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Gum",
+        "user": "U5XPLATU2",
+        "ts": "1498549552.225417",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g92f19385ee2",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a92f19385ee2f55364cdb99cfa112c92.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "Dinesh",
+            "real_name": "Dinesh",
+            "display_name": "dmatha-2011",
+            "team": "T4UUTPV18",
+            "name": "dmatha-2011",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

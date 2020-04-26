@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Janies. Nice to meet you too.",
+        "ts": "1538985279.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/451108010371_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I believe Dexter sent you some details about me. Do you have any further questions about me? In a nutshell, I'm a R&amp;D programmer for DNEG (<https:\/\/www.dneg.com\/>) and previously worked for MPC (<https:\/\/www.moving-picture.com\/>).",
+        "ts": "1538985422.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-08\/451390729413_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "DNEG",
+                "title": "Home - DNEG",
+                "title_link": "https:\/\/www.dneg.com\/",
+                "text": "[...]Read More...",
+                "fallback": "DNEG: Home - DNEG",
+                "from_url": "https:\/\/www.dneg.com\/",
+                "service_icon": "https:\/\/www.dneg.com\/wp-content\/themes\/dneg\/images\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.dneg.com\/"
+            },
+            {
+                "title": "MPC  - Moving Picture Company",
+                "title_link": "https:\/\/www.moving-picture.com\/",
+                "text": "We have been one of the global leaders in VFX for over 25 years; renowned for adding visual wonder and creative expertise to the film, advertising and entertainment industries.",
+                "fallback": "MPC  - Moving Picture Company",
+                "from_url": "https:\/\/www.moving-picture.com\/",
+                "service_icon": "https:\/\/www.moving-picture.com\/Assets\/images\/favicon.ico",
+                "service_name": "moving-picture.com",
+                "id": 2,
+                "original_url": "https:\/\/www.moving-picture.com\/"
+            }
+        ]
+    }
+]

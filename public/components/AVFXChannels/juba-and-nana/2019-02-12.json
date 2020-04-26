@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, its good to set goals that aren't too far away!\nFor me, I'm currently developing a sequel to the short film I made in school, so I want to have a solid animatic\/story and start animating this year.\nI'm currently doing retopology on the character and after that I'll go into rigging. And when I need a break I'm working on the story beats and ideas :smiley:",
+        "ts": "1549972466.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/548042169377_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

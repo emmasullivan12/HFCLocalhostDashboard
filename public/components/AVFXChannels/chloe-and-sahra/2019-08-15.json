@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sahra, I hope you’re well. I just wanted to let you know that I am taking my anual leave from tomorrow until the 27th, so don’t worry if you don’t see me reply ;) ",
+        "ts": "1565888510.002600",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729970516150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

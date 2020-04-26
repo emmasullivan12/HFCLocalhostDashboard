@@ -1,0 +1,128 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so no more issue with spawnSprite?",
+        "ts": "1548751941.007200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/537226165478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nope, because there is no more spawn sprite",
+        "ts": "1548784991.007300",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536194567140_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, basket and ball tick",
+        "ts": "1548785001.007400",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536194811412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "leaving slingshot and obstacle",
+        "ts": "1548785020.007500",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/537777255958_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually I have an idea",
+        "ts": "1548789282.007600",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/535833619089_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but it will only work if you know java",
+        "ts": "1548789289.007700",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536640005829_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If so maybe you can give me the slingshot code in this game <https:\/\/github.com\/vkreal\/MonkeySling\/blob\/master\/js\/MonkeySling.js>",
+        "ts": "1548789320.007800",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536276548596_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "vkreal\/MonkeySling",
+                "title_link": "https:\/\/github.com\/vkreal\/MonkeySling\/blob\/master\/js\/MonkeySling.js",
+                "text": "Sling Shoot game written in Javascript and HTML5. Contribute to vkreal\/MonkeySling development by creating an account on GitHub.",
+                "fallback": "GitHub: vkreal\/MonkeySling",
+                "from_url": "https:\/\/github.com\/vkreal\/MonkeySling\/blob\/master\/js\/MonkeySling.js",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/230700?s=400&v=4",
+                "thumb_width": 250,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vkreal\/MonkeySling\/blob\/master\/js\/MonkeySling.js"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and interpret it is chipmunk and c++?",
+        "ts": "1548797504.008000",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/537651582359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or...",
+        "ts": "1548835154.008100",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536221553216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "can you help me expand with this code I found:",
+        "ts": "1548835166.008200",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-29\/536221693840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

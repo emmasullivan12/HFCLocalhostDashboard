@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Stephen, many thanks for your notes. It does remind me of myself while I was still studying.\nWe definitely need more producers with a solid background in animation these days so you're on the right pathway.\nDo you have any specific question you want to ask me? If so, happy to look into it and get back as soon as I can.",
+        "ts": "1586968078.002100",
+        "username": "Mariano Melman Carrara (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1070740191876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Mariano, definitely! I suppose kind of a generic first question but what's your day to day life like at Nexus both before the covid outbreak and now? What's a typical day like, and who do you work most closely with?",
+        "ts": "1586968335.002200",
+        "username": "Stephen Quenet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1070753716852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

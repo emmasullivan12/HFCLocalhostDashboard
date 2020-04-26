@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Colin, how are you? \nI'm wondering if I could get your opinion on a VFX shot I'm working on, I'm trying to do a  digital aging effect, but the software I was planning on using (face app, combined with EbSynth) doesnt recognise the faces, the only other software that seems similar is one on GitHub but I dont understand how it works",
+        "ts": "1582642401.000100",
+        "username": "Xander (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/958004772065_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Gosh, I’m afraid I can’t be much help with that sort of thing. I’m the CEO of a vfx company, but I can’t actually do vfx!",
+        "ts": "1582654489.000200",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/968087929604_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no problem, I completely understand, thanks for getting back to me so quickly though",
+        "ts": "1582654541.000300",
+        "username": "Xander (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/970752785350_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

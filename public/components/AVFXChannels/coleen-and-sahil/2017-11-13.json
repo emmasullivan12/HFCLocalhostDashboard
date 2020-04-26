@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sahil! That’s wonderful! Sorry, I thought you weren’t interested in architecture! Delighted to hear that you are!",
+        "ts": "1510572925.000186",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/272141953766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which firm are you going to?",
+        "ts": "1510572933.000187",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/272344838599_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if you have any questions or want any feedback on your CV or portfolio, etc",
+        "ts": "1510572971.000419",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/270746448369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, it's at RIBA haha! I had a trip there earlier this year and they've offered work experience over Christmas sooo! I'm more interested in the graphics side but it'll help me see how designers work in the studio and the apparatus available in making models and stuff",
+        "ts": "1510615097.000410",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/271182810657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I shall, thank you so much!",
+        "ts": "1510615106.000107",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-13\/272578474070_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

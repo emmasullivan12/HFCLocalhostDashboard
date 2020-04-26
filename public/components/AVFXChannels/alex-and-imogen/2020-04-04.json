@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well it sounds like you're definitely heading in the right direction. I studied animation at university too, it really helped shape what I did going forward.\n\nHow are you finding university at the moment? I take it you're not going in for lectures?",
+        "ts": "1585996244.002300",
+        "username": "Alex Watson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1047054972677_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "University is quite difficult at the moment as we are trying to create a short film but don’t have all the supplies to finish it! But i’m freelancing animation for other groups at the moment to keep practicing. I do enjoy university though as many are very helpful with criticism ",
+        "ts": "1586037711.002400",
+        "username": "Imogen Walters (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1049160971364_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

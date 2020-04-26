@@ -1,0 +1,89 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no worries, sure. Notifications are tricky in slack, you need to enable them in your phone manually if you want but I can't promise I will be replying right away so it's all good!\n\nOk cool, so if you are aiming for generalists role you need yo make one the-best-possible-piece of work rather than having a lot of generic ones. Generalists usually start in ENV departments and for that you would need a really good work. Out of Uni people don't expect you to have a lot of works so it's much better to have 1 or 2 works that are amazing. If you want to get into VFX it's really important to have at least one work with backplate integration. So you basically can go out, shoot something on your phone\/dslr(doesn't really matter) and then make set extension for example. Or integrate a car\/castle\/whatever into plate as best as you can to make it look real. If you want to go with both VFX and games it's cool to try make a full cg env as photo real as possible.\nThere was one guy that I talked to for example who was doing great assets but then wanted to do one big environment. Here's that piece\n<https:\/\/www.artstation.com\/artwork\/2JnaJ>\n\nIn general to get the first job in the industry requires a lot of hard work, it's a very competitive field where attention to details and skill beats everything else.\nSo be prepared that it's gonna be real tough. Here are the links to student showreels which shows you the hireable quality bar for the 2015-2016. Bear in mind that quality bar is rising slowly.\nGreat example of one piece which is great\n<http:\/\/www.cgstudentawards.com\/student-of-the-year-games\/luis-perez>\n\nVery good reel\n<http:\/\/www.cgstudentawards.com\/student-of-the-year-vfx-anim\/emilis-baltrusaitis>\n\nInstant hire. This guy is in Framestore Montreal at the moment\n<http:\/\/www.cgstudentawards.com\/student-of-the-year-vfx-anim\/kevin-decatoire>\n\nAlso perfect example of just 2 works but on the highest student's level\n<http:\/\/www.cgstudentawards.com\/student-of-the-year-vfx-anim\/edward-bob-ackah>\n\nBe inspired by this guys, don't invent your concepts, just take an already made concept and make 3d scene out of it(don't forget to credit the concept artist :slightly_smiling_face: )\nHere are some examples of concepts you could go with:\n<https:\/\/www.artstation.com\/artwork\/onXak> (check this guy in general,he has tons of great stuff)\n<https:\/\/www.artstation.com\/artwork\/oOl6EJ> (task example could be to remove character and make it as photo real as possible and yet preserve the mood)\n<https:\/\/www.artstation.com\/artwork\/oOKWmW>\n<https:\/\/www.artstation.com\/artwork\/nQLP59> you totally can copy someone's work for studying, just remember to credit the person :slightly_smiling_face:\n<https:\/\/www.artstation.com\/artwork\/GXJLxV>\n ( really good one for the mood, and then you can make a moodboard of\nassets, though it's rather stylized, I'm not sure it's that useful in\nVFX in particular)\n<https:\/\/www.artstation.com\/artwork\/gJBBLe> (this guys rocks)\n<https:\/\/www.artstation.com\/artwork\/6aP8JO> (extremely easy to reproduce, and very very hireable  outcome)\n<https:\/\/www.artstation.com\/artwork\/e0zYoP> (just for variety you would want to have different envs in your reel)\n<https:\/\/www.artstation.com\/artwork\/2x114A> (pretty common env in films :slightly_smiling_face: Like a set extension or something similar)\n<https:\/\/www.artstation.com\/artwork\/L2eVxl>\n<https:\/\/www.artstation.com\/artwork\/4WwK1>\n (this one has a bit poor execution but it's a nice picture in general\ncomposition wise and it has castles, you really want to have different\ntypes of envs :slightly_smiling_face: )\n\nAnd examples for great quality assets\n<https:\/\/www.artstation.com\/artwork\/ew8lY>\n<https:\/\/www.artstation.com\/artwork\/PmN9a8>\n<https:\/\/www.artstation.com\/artwork\/L2bBBv>\n<https:\/\/www.artstation.com\/artwork\/w85dwL>\n<https:\/\/www.artstation.com\/artwork\/L2lNAv>\n<https:\/\/www.artstation.com\/artwork\/Bmzeor>\n<https:\/\/www.artstation.com\/artwork\/58K3dg>\n<https:\/\/www.artstation.com\/artwork\/6aaeYN>\n<https:\/\/www.artstation.com\/artwork\/QANxx>",
+        "ts": "1564739543.003300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/702825292179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So in terms of your showreel - I would sudjest making one or two works which would bring you the level mentioned higher.\nSubstance painter is a must nowadays, especially for ENV work.\nAnd one note that I have regarding your car's modeling - you have edges which don't align, so it feel like somebody was punching the car to make it look uneven. It's really the hardest part of modeling cars but if you show the car I believe you have to spend extra weeks on working on it and polishing to the best possible state because overall it's a really nice asset",
+        "ts": "1564739930.003400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/713756087812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that last thing if you have an access to gnomon in your UNI watch this tutorial and of you want even follow it one to one\n<https:\/\/framestore.thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway>\nit's the best one",
+        "ts": "1564740036.003500",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/707886171121_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Creating a Sci-Fi Alleyway | The Gnomon Workshop",
+                "title_link": "https:\/\/framestore.thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway",
+                "text": "In this lecture, senior environment artist Devon Fay takes you through his process of creating complex and believable CG environments. He starts at the very beginning with the development of an idea with research, reference and exploration. Devon then discusses how to expand on your ideas with clear steps towards working efficiently and creatively. Topics include reference gathering, blocking-out scenes through effective layout techniques, modeling, lighting, texturing, painting, rendering and the exploration of new tools. Through this project, Devon demonstrates how to get the full benefits of programs that include Maya, VRay, Photoshop, ZBrush, and others. As his science fiction inspired alleyway is full of narrative detail, Devon explains the importance and application of composition, set dressing, storytelling, realism and the final post techniques that create an immersive environment. By the end of the lesson and demonstration, artists should have a clear idea of how to approach detailed environment work for production.",
+                "fallback": "Creating a Sci-Fi Alleyway | The Gnomon Workshop",
+                "image_url": "https:\/\/d8jxi8g09pf42.cloudfront.net\/images\/attachments\/000\/005\/478\/original\/01.jpg?1452270359",
+                "from_url": "https:\/\/framestore.thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 330968,
+                "service_name": "framestore.thegnomonworkshop.com",
+                "id": 1,
+                "original_url": "https:\/\/framestore.thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the link with framestore in it\n<https:\/\/thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway>",
+        "ts": "1564740077.003700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/714224414912_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Creating a Sci-Fi Alleyway | The Gnomon Workshop",
+                "title_link": "https:\/\/thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway",
+                "text": "In this lecture, senior environment artist Devon Fay takes you through his process of creating complex and believable CG environments. He starts at the very beginning with the development of an idea with research, reference and exploration. Devon then discusses how to expand on your ideas with clear steps towards working efficiently and creatively. Topics include reference gathering, blocking-out scenes through effective layout techniques, modeling, lighting, texturing, painting, rendering and the exploration of new tools. Through this project, Devon demonstrates how to get the full benefits of programs that include Maya, VRay, Photoshop, ZBrush, and others. As his science fiction inspired alleyway is full of narrative detail, Devon explains the importance and application of composition, set dressing, storytelling, realism and the final post techniques that create an immersive environment. By the end of the lesson and demonstration, artists should have a clear idea of how to approach detailed environment work for production.",
+                "fallback": "Creating a Sci-Fi Alleyway | The Gnomon Workshop",
+                "image_url": "https:\/\/d8jxi8g09pf42.cloudfront.net\/images\/attachments\/000\/005\/478\/original\/01.jpg?1452270359",
+                "from_url": "https:\/\/thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 330968,
+                "service_name": "thegnomonworkshop.com",
+                "id": 1,
+                "original_url": "https:\/\/thegnomonworkshop.com\/tutorials\/creating-a-sci-fi-alleyway"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alex,\n\nSorry Couldn't reply earlier, was a busy day. It was the last day of our boot camp.\nI'll look through the examples and references you posted, really appreciate your time doing this.\nI'll get back to you soon as possible once I look through it completely,\n\nand thank you for pointing out the mistakes on the model, One of my teacher at boot camp gave me a feedback and said exactly what you said about the edges that didn't align. :grin:\n\nI'll try to fix it for sure, and I'm currently working on some personal projects which I'll send it to you once I finished, So I hope that's okay with you.\n\nThank You",
+        "ts": "1564781034.003900",
+        "username": "Sreeharsh Baburajan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-02\/703567291778_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

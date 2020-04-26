@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t really get much time but if i do i like to play and listen music and sometimes to so my homework for my music class to find something new and i more thing that I really enjoy is reading scary books but i dont have much to read nowadays so i just read Business online articles",
+        "ts": "1511599108.000047",
+        "username": "kaurm-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-25\/276718981808_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello guyz. Its Manmeet and im currently studying BTEC Business Level 3 Extended Diploma in Business which will give me 3 A Levels at the end of 2 year. And also doing another language to get one more A level. ",
+        "ts": "1511599834.000002",
+        "username": "kaurm-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-25\/276720070096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Should we start the discussion on apprenticeship because i would like to get more information. I am thinking to go for apprenticeship after finishing my sixth form. Will that be okay or must go university?🧐🤨",
+        "ts": "1511599968.000036",
+        "username": "kaurm-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-25\/278250827542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

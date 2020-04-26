@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay that’s great! Thanks for the feedback! This is my first reel Iv made so there’s always room for improvement :relaxed: ",
+        "ts": "1586004226.000300",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1038992163715_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll be finishing university sometime mid May. Also I hope your doing okay through this outbreak :) ",
+        "ts": "1586004339.000400",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1045112794119_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

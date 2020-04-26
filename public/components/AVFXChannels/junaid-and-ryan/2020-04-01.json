@@ -1,0 +1,239 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In terms of VFX i'm currently enjoying compositing, but still have a lot to learn and improve, and enjoy the texturing\/lookdev side of 3D too. I'm currently torn on which discipline I want to pursue moving into the industry.",
+        "ts": "1585732145.002600",
+        "username": "Ryan Clark (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040695023365_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you working on any projects in school? Like full CGI based projects or something with VFX?",
+        "ts": "1585732575.002700",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040710487029_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What have you worked on? Like modeling and fx etc",
+        "ts": "1585732593.002800",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040766409440_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Uni is currently focused more on compositing CG into live action at the moment but I have done some full CG projects in the past.\n\nHere's a link to a site that has all of my uni work on, there's quite a bit on there so i'll send a link to my instagram too which is a bit more focused.\n\n<https:\/\/ryan02764.wixsite.com\/portfolio>\n\n<https:\/\/www.instagram.com\/rclark_3d\/>",
+        "ts": "1585734046.002900",
+        "username": "Ryan Clark (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042701747526_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": " Login • Instagram ",
+                "title_link": "https:\/\/www.instagram.com\/rclark_3d\/",
+                "text": "Welcome back to Instagram. Sign in to check out what your friends, family &amp; interests have been capturing &amp; sharing around the world.",
+                "fallback": " Login • Instagram ",
+                "from_url": "https:\/\/www.instagram.com\/rclark_3d\/",
+                "service_icon": "https:\/\/www.instagram.com\/static\/images\/ico\/apple-touch-icon-76x76-precomposed.png\/666282be8229.png",
+                "service_name": "instagram.com",
+                "id": 1,
+                "original_url": "https:\/\/www.instagram.com\/rclark_3d\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585734047.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Very nice work Ryan.",
+        "ts": "1585734884.003100",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1028079986274_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see you have a good sense of lighting.",
+        "ts": "1585734916.003200",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1028081118706_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You also seem to have good and useful comp skills.",
+        "ts": "1585734970.003300",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040361751476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Where are you leaning more towards? Full VFX based work or full animated work?",
+        "ts": "1585735062.003400",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042885105591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Keep in mind that the requirements might sound same but there's difference in overall art.",
+        "ts": "1585735088.003500",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040365972132_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you!\n\nThat's currently where i'm struggling, i've been really enjoying learning the comp side but have more experience with the full CG side, and enjoy the lighting\/rendering part of that too.",
+        "ts": "1585736421.003600",
+        "username": "Ryan Clark (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040848888789_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can see that from your work.",
+        "ts": "1585736472.003700",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040905876432_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well depending on which studio you work for will keep you stretched between both of them.",
+        "ts": "1585736507.003800",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040907064912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you work for a boutique studio which has a small team of expert generalists then you'll be working on almost everything.",
+        "ts": "1585736554.003900",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040418575284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "if you work in huge studios like DNEG, MPC, ILM etc then you will work on any one very specific thing.",
+        "ts": "1585736599.004000",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029435589571_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say, most mid-sized studios are better fit for artists as you get to work in smaller teams and have fair bit of resources available.",
+        "ts": "1585736684.004100",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042942915111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so keeping all this in mind, comp work can be a career in itself, but that wouldn't always have a VFX element in it.",
+        "ts": "1585736801.004200",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040916669696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In mid-sized studios, or even smaller studios, you do all the comp and VFX yourself, so basically you take your shot from almost start to end all by yourself (not always, but mostly).",
+        "ts": "1585736943.004300",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042951480311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But in bigger studios, you don't do comp work as such. It is usually automated by templates and then sent off to India (mostly) or China (some times) because of low cost of labor.",
+        "ts": "1585737044.004400",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1042807721126_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Grading is still done in London or Vancouver\/Montreal.",
+        "ts": "1585737068.004500",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1040925969344_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So to summarize, if you enjoy both end of spectrum then you need to look for studios which hire for generalists, but if you like to pursue lookdev\/texturing\/lighting as speciality, then look for larger mid-size to large-size studios.",
+        "ts": "1585737222.004600",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1028162480450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

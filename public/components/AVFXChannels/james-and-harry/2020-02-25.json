@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi James, I’m open to exploring opportunities after my graduation in May. My ambition was always to work within Film, however with some of the TV series recently coming out such as Peaky Blinders and Game of Thrones I would like to work within TV too. I like the work and projects Framestore have recently worked on particularly the series His Dark Materials. And also BlueBolt.\n I’m also going to the VFX festival on the 17th and 18th so I’ll see you there.",
+        "ts": "1582666175.000200",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-25\/970751233879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

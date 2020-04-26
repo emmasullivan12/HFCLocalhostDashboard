@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ops, wrong name, too many mentees ahah apologies Heather! :)",
+        "ts": "1584796099.002800",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1018994683334_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I really like your work!! Amazing! I can see that you’re very strong with matte paintings and realistic images. I think that is what I would enlighten more, and I feel like we could work more on character designs",
+        "ts": "1584796384.002900",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016785784464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Especially the stylized ones \/ cartoony",
+        "ts": "1584796405.003000",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1016806213509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know it’s not your area of interest but I think you can achieve great results. To improve on characters I would suggest you to do an exercise:  start painting from a photographic reference  as a study ( portrait) then making a caricature of it. In this way you’re basically adding a comedy\/ irony to your subject, and pushing shapes. After that, you take the same caricature and start developing a cartoony character pushing shapes even more and simplifying the shapes even more! At this point you have a character for animation with personality cause you started from a reference, and of course you can add details. As final thing you can try to make a turn around ",
+        "ts": "1584796961.003100",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-21\/1006730946785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

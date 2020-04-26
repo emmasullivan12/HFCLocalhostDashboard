@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude! Sorry for my late response! I have been a little under the weather these last few days! Excited to help you where I can!\n\nOk cool - doing medicine is a great way to help people, but there is a lot of hard work involved. My sister seems to work 60+ hours each week, which is a long time! Most people will work 35-40 hours a week. You might struggle to do business on the side whilst working those hours, but you could try!\n\nWhat A-levels are you working towards at the moment?\n\nWhy medicine?\n\nAnd, if you were to start a business, what would your business do?!",
+        "ts": "1508076026.000034",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-15\/256549222482_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

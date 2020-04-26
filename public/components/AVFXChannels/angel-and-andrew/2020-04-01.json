@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for your input! I'm being told by different tutors that the entire industry might be un upheaval software-wise soon (which I think is at least slightly tinged with the fact that they like Houdini), and we're looking at moving away from Arnold as soon as next year... It's quite interesting to hear another perspective on it. No need to apologise for the response time - it's been enough chaos on my end that I barely noticed it, and I can only imagine how much worse it is for whole studios having to move digitally. I'm trying to keep up personal projects, but it's looking like that might be a bit more of a summer thing (though we are encouraged to do projects over the summer in our course anyway). However, we've got a realtime project, so I'm now able to move back into the sort of thing I'm more interested in. It's the first time I've tried an outdoor environment, which is certainly an interesting experience.",
+        "ts": "1585769765.000300",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1029675808514_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

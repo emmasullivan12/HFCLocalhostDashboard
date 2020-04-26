@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! I'm doing this wohaa thing where we do our own charity and fundraise money for the student who are not able to pay for the education in Indian.. Do you have any ideas what we can do this month??",
+        "ts": "1544633919.000100",
+        "username": "Merlin Travas (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502112351155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

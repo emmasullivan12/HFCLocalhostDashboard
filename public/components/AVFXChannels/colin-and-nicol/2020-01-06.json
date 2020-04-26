@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Nicole, Merry Xmas and Happy New Year. I hope you’re full of resolve and looking to achieve all sorts of interesting things this year.",
+        "ts": "1578307746.000200",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/881689727570_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

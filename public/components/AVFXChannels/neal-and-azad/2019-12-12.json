@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Azad, I hope you're well. In my opinion, a masters would not make much of a difference. You'd be spending a lot of money and very little guarantee at the end of it for a job. I think a good showreel would be much better. In your cover letter, explain what your goals are and show your obvious passion for VFX. Explain the extra things you are doing such as things like joining up to this forum to get advice how to further your career. The fact you wanted to seek a mentor to help you displays you are willing to ask for help and go the extra mile to try and further you goals. Also, talk about any talks or event you go to as well. This all show the extra things you do in order to further your knowledge.",
+        "ts": "1576171112.001700",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/873543474422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahhhh okay pretty much just express my passion for VFX, showing mewanting to push myself further, that's good to hear haha! I remember I attended quite a few VFX events I gotta remember them coz there was a few! Personally I'm quite determined but I just gotta express that in words, keep it formal too right? Or a bit casual is cool, at least to show that I'm not just another template? :wink:",
+        "ts": "1576185848.001800",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-12\/871732861200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

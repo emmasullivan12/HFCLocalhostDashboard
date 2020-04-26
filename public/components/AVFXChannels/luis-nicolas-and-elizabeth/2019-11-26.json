@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's an interesting journey! Do you spend much time working in Houdini, or is it mostly Nuke that you work in?\n\nAnd that's great! This term we have an industry set brief - so that's what I've been working on recently. I'm doing an effects brief for DNEG, and the task is to create two unique magical effects on a rune stone. My first concept is a glowing vein effect, and my second is an electric\/Tesla coil effect. I've done some test renders, so it would be great to get some feedback on how they can be improved! I forgot to hide some particles on the electricity effect though, so please ignore the bubble wrap look on the crystal :sweat_smile:\n\nHere's the link to the renders:\n<https:\/\/drive.google.com\/file\/d\/1ipoALE2CaemD0lMpjduZVY6spdKrJieX\/view?usp=drivesdk|https:\/\/drive.google.com\/file\/d\/1ipoALE2CaemD0lMpjduZVY6spdKrJieX\/view?usp=drivesdk> \n\nThanks! :blush:",
+        "ts": "1574804747.002000",
+        "username": "Elizabeth Thomas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/850057651796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm mostly in nuke but I try to fight to do some houdini stuff all the time. Lately, in His Dark Materials, I managed to work on the windows between universes and the Daemon death effects mixing Houdini and Nuke; quite fun stuff.",
+        "ts": "1574806325.002100",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/842619475249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is the brief exactly?",
+        "ts": "1574806444.002200",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/850562291173_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Unique, special, magical  are the only keywords?",
+        "ts": "1574806479.002300",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/839085025859_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is it a brief as part of your job application?",
+        "ts": "1574806496.002400",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/852412226567_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

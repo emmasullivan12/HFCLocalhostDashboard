@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Charlotte, just to let you know I am now off for Christmas and will be back at work on the 2nd. Feel free to message during this time but I may be slow to reply. Hope that's OK. Have a great Christmas!",
+        "ts": "1576767744.000100",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/880454532032_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's pretty cool, congrats!!! I feel like TV (well :eyes: Netflix) is basically driving the industry at the moment",
+        "ts": "1573116425.004600",
+        "username": "Mika (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/812326275442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Agreed on that. They have all the funding it seems &amp; are pushing for new industry standards. Netflix and Apple are really strict clients to work for, it seems as though they are expecting big studio pipelines from small companies, which just isn't practical",
+        "ts": "1573123139.004700",
+        "username": "Daniel Radford (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/812451849410_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "To be honest, so far it doesn't seem like a bad thing, since Netflix can standardize certain processes so everyone in pipe can at least know what's going on.",
+        "ts": "1573162789.004800",
+        "username": "Mika (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/813446803218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But Apple on the other hand,... so far it seems more of an issue in a way. From our end at least we have to change a lot of stuff per release to be compatible",
+        "ts": "1573162817.004900",
+        "username": "Mika (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-07\/825770943796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

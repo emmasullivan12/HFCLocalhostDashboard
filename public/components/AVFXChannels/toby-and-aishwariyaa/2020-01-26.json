@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes it can be challenging, I think long term the thing to do is identify what sort of carer in it you would want. If you want to work in studios. Try to fidn the type of studios that interest you and really tailor your works to them. Obviously if that group\/style of studios is quite large it opens up your options a lot more. Its like people who have only interest in hand drwn 2d animation just instantly drastically reduce their career options due to the lack of studios doing that type of work",
+        "ts": "1580079735.000100",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/922292403092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Mhm it is quite small in comparison to the rapidly growing 3d careers, but merging 2d styles in 3d implementation is quite promising too, at the moment I want to see how my skills work out in more detail with different mediums and after than I can specialise with more certainty",
+        "ts": "1580084068.000200",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/924638651959_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

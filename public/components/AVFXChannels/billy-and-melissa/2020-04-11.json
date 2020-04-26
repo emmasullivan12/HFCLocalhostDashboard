@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! I would love to hear from him!",
+        "ts": "1586618467.004000",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1046626567719_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for my designs, they aren't really for a short but I have thought of doing animations with them.",
+        "ts": "1586618501.004100",
+        "username": "mstoakes71 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1066708960321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

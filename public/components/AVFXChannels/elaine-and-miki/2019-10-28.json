@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Miki, I'm Elaine - nice to e-meet you!  Just a little bit about me, I've been in the VFX industry for nearly 15 years, I did a masters in software development for animation &amp; VFX at Bournemouth, then got a job at MPC where I worked in R&amp;D as a shader writer and R&amp;D developer. After that I moved to DNEG where I've been for nearly 11 years. I'm currently the software development lead for Clarisse Tools and I also manage the Render Tech team. I'm really excited to hear all about you and your aspirations! I would love to provide you with as much help as possible to get you where you want to be :slightly_smiling_face:  Hope to chat soon!",
+        "ts": "1572277416.001600",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/803972777073_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Elaine! Nice to meet you! \nAnd thanks for the intro. Very impressive background :scream: \nLet me tell you a bit of mine. I am originally from Argentina, where I did my BA in Graphic Design. Shortly after graduating, I came to London to take a short course in VFX. I loved it! (This was last year). Since then I really wanted to get into the film industry, but being from another country and also having no prior experience, I felt like I needed to learn quite a lot before applying for 3D jobs. \n\nI started working as a Graphic Designer in order to stay in London, which I am still doing, but meanwhile continued to do personal projects 3D related, and now I started a course which teaches Houdini. It’s amazing and it clarified a lot in my mind in what I want to specialize inside VFX.\nI really enjoy Effects and everything that is procedural created, but I am just starting to learn it to be honest. I do not have any knowledge on programming, just VEX, but I find it very interesting how art and technology can merge and create amazing things!  I feel like I have so much to learn, but I am very motivated to do so; though sometimes its hard since I come from an artistic background and have 0 technical experience.\nI was considering Bournemouth for a Masters as well.. I heard it is really good. Though most people recommend me Digital Effects MA, I would like to study MSC Animation &amp; VFX since I want to head into that direction.. I know its been a while since you studied there but if you could give me some references it would be great!\n\nSo, thats my story basically! I would really appreciate if you could give me any advise or recommendations on what to focus on. Thank you !!",
+        "ts": "1572278870.001700",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/814133487398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wonderful! Sounds like you are really motivated and have a good idea of the direction you want to go in - that's great! Houdini is an amazing tool, and if you learn VFX through Houdini you're off to a brilliant start. If you are thinking of doing a masters at Bournemouth, I would agree with previous advice you received  recommending you investigate the Digital Effects MA. When I went to Bournemouth, the effects MA was run alongside the MSc, with lots of crossover and its very much houdini based.  The reason I'd recommend this for you instead of the MSc is this: the MSc is essentially for people coming from a programming background. I had done my BSc in Computer Applications and most of the people on the course had programming degrees too. There were a couple that didn't, but they had a pure maths or physics degree.  You will get a lot more out of the course if you have programming knowledge. Along with this, the MSc is basically designed to produce developers for the industry - not really artists. The Digital Effects course is designed for people who are interested in essentially being technical artists - people who will become experts in using combinations of the software,  scripting and technical approaches to create simulations for maybe fire or smoke, or something that is procedurally generated  through the software.  However, if you do think that you might be interested in programming, its always a very useful skill to learn, and Python is a great place to start as its used all throughout the industry.",
+        "ts": "1572296298.001800",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/800905722771_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What 3D software have you been learning? I'm really impressed that you're working during the day and continuing to do personal projects at night - that takes a lot of dedication!",
+        "ts": "1572296360.001900",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/814234684119_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What is your ultimate dream? Where would you love to see yourself, and what would you be doing?",
+        "ts": "1572296427.002000",
+        "username": "Elaine Kieran (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/812388622517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

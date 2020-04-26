@@ -1,0 +1,156 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eric,\n\nThis is a great start!\nDo you have a fake camera move added onto this in nuke?",
+        "ts": "1587335202.009500",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1057534267095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The floaty-ness of the camera does makes the car feel like it’s swimming a bit.",
+        "ts": "1587335232.009600",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1057534472503_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It looks like you’re in a solid place with the shot though!\n\nWhat I would do, since you have a workable car render for the time being, is focus on the clarity of the comp. \n\nI’d tighten your roto substantially - so you can see the inevitable comp issues that will arise between the interaction of the car, man, and environment.",
+        "ts": "1587335384.009700",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1057535584951_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Remove any post camera moves until the comp is mostly locked dow as well.\n\nThe colorful back wall is a bit distracting at the moment, but with better roto, I won’t have as hard of a time understanding the camera move",
+        "ts": "1587335541.009800",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1096111826992_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The lighting on the car is could use some work, but that’s more of a 3D issue than a computer issue. I’d try finding\/ making an HDRI to give realistic reflections to the car. The rest is moving around lights, and color correcting the broken out CG in Nuke until it sits naturally.",
+        "ts": "1587335676.009900",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1072481160563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Could use some work, but that’s more of a comp issue**",
+        "ts": "1587335712.010000",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1070891542805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The car needs more motion blur and comp lensing - matching grain, aberration, softness, halation. Motion blur on the spinning wheel.",
+        "ts": "1587335820.010100",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1078440651460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "FX elements like smoke and dust will be a nice touch when you get there too",
+        "ts": "1587335869.010200",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1065538939830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tightening your tracking will be essential. Do you feel like you are stuck?",
+        "ts": "1587335930.010300",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1070893097301_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have any slap comps of how you plan to fake the nighttime effect?",
+        "ts": "1587335955.010400",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1065539525046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for the reply. \nI agree on all of this. I got work to do on it for sure.\n\nFor render camera to really fit i took the one from the lifter shot and did nt chamge anything man. I use the same camera for 3d render of the car.",
+        "ts": "1587344869.010500",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1078534134468_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm working on roto for now. \nI was thinking of changing the color by wall with a 3d card I will use photoshop to put my name and email with replacing the words there. \n\nFir the car reflection I used arnold hdr sphere into maya. And I use the parking lot video as the 3d ground too to have the good reflection on the car",
+        "ts": "1587345075.010600",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1070988446501_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I m not feeling stuck as well like I told you I just did a precomp to see if my workflow was ok before losing too much time on details and being stuck.",
+        "ts": "1587345144.010700",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1078537673412_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let you know the difference at the end of the week or so",
+        "ts": "1587345170.010800",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1078538026084_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

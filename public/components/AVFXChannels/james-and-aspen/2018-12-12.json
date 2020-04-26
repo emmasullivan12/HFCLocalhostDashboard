@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m back in Austin now. Last week was very busy, I had almost back-to-back meetings every day trying to gather as much information about what was happening in Cambridge as I could in the short time I was there. My talk went very well, one of the original founders of Arm who has been at the company all 28 years that Arm has been going was watching and told me he thought it was the best talk of the conference, so I’m pleased with myself! I have to write a report each week on what I’ve done, and I added this to my report this week to let everyone know how much time it took to prepare for the conference. I felt it was good to let people know, because lots of them came up to me to say they could ‘t give a talk like that. I think I made it look easy, but it took a lot of practice!\n\n“The script for my talk was 3700 words, written in full in a word document, and took me around 15 hours to write spread over two weeks. I rehearsed every night for the two weeks leading up to the conference and made recordings of the talk as I went. When I was on my evening walks, I listened back to these recordings and used them to become familiar with how what I wanted to say sounded, and refine both what I wanted to say and how I wanted to say it. In all, I went through 3 major rewrites of the script to improve the flow from one section to another. The slides themselves took about two hours to put together, mostly wrangling excel to make my data look good, and hand translating the dates contracts were signed in to stars on a graph (they looked random, but they were all accurate within 6 months!). All in, I’d call it 40+ hours of preparation over a month for a 25 minute presentation.”\n\nHow are your applications and you project going?",
+        "ts": "1544666579.000100",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/504081154182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

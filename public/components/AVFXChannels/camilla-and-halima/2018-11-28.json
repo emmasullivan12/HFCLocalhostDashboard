@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome, look forward to seeing it",
+        "ts": "1543403773.005700",
+        "username": "Camilla Elwood (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/491404965030_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

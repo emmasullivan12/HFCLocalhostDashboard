@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don’t apologise honestly, I appreciate that you’re still finding time to speak to me when you’re so busy. How’s the business setup coming along?\nI’m definitely still set on giving the bookcase more focus, the changing of colour and shaking of the bookcase that you mentioned is one of the main options. \nI haven’t got anything substantial yet, I’m just starting to model the characters and work out a way to decrease my workload with 9 characters to model and rig. Any suggestions? ",
+        "ts": "1550478309.000200",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/553569503844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't have characters.... ;) can you reuse rigs between them and just change textures \/props\/costumes? So have 1 male and 1 female? It's a lot which is why I was asking about contingency plans. If you have too much on your plate you will have to rush. Better to cull it down early on and concentrate on getting a good piece of work out there that you can use to get a job.\n\nBusiness is a slow burn. Takes a lot of my time :) ",
+        "ts": "1550478672.000300",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/553573454772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

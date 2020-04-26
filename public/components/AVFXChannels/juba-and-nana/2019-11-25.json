@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm working on UV unwrapping atm! And the course is going pretty well!",
+        "ts": "1574697672.000400",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/836822043363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

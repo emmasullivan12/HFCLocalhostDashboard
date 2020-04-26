@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Good evening Hannah, how are you?",
+        "user": "U639Y9AQJ",
+        "ts": "1499722170.820566",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g14f8e937749",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b14f8e93774926a3a605a4155fe7a39e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0016-72.png",
+            "first_name": "Zubair",
+            "real_name": "Zubair Sidat",
+            "display_name": "zs94",
+            "team": "T4UUTPV18",
+            "name": "zs94",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

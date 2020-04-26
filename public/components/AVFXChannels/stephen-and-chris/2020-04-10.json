@@ -1,0 +1,145 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh dude -- YES!\nmy missus is a vegetarian so i am too for the most part -- but ill snap up some brisket and ribs any chance i get!",
+        "ts": "1586536007.008600",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1075385386272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you know of this site:\n<http:\/\/www.animationboss.net\/>",
+        "ts": "1586536019.008700",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1075386061936_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Animation Boss",
+                "title": "Latest Update on Animation, Visual Effects &amp; Jobs | Animation Boss",
+                "title_link": "http:\/\/www.animationboss.net\/",
+                "text": "Online update on Animation, Visual Effects &amp; Jobs Information around the world. An online Magazine devoted to keep its user update on Latest happening in Animation &amp; VFX",
+                "fallback": "Animation Boss: Latest Update on Animation, Visual Effects &amp; Jobs | Animation Boss",
+                "from_url": "http:\/\/www.animationboss.net\/",
+                "service_icon": "https:\/\/i0.wp.com\/www.animationboss.net\/wp-content\/uploads\/2017\/12\/ab-2-1-e1513022631169.png?fit=50%2C54",
+                "id": 1,
+                "original_url": "http:\/\/www.animationboss.net\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586536023.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha it would be hard to be a vegetarian in Oklahoma.\n\nNo I haven't seen that site. I'll check it out.",
+        "ts": "1586536175.008900",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1062390163924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "maybe i need to convince my missus to move back mid west area.... desire for meat v cold.... mhhh.",
+        "ts": "1586538513.009000",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1054376408546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that site has a lotta breakdowns",
+        "ts": "1586538535.009100",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1075528773120_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha maybe so.\n\nYeah that's awesome! Love a good VFX breakdown.",
+        "ts": "1586539135.009200",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1055282439139_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh I forgot to send you an image of my prop dino eggs I have been working on for my new short I sent the script for yesterday.",
+        "ts": "1586548149.009300",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-10\/1056842132885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011LN0D3DG",
+                "created": 1586548155,
+                "timestamp": 1586548155,
+                "name": "IMG_2937.jpeg",
+                "title": "IMG 2937",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 101391,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011LN0D3DG\/img_2937.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011LN0D3DG\/download\/img_2937.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011LN0D3DG-77e364d6b1\/img_2937_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011LN0D3DG-77e364d6b1\/img_2937_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011LN0D3DG-77e364d6b1\/img_2937_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 270,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011LN0D3DG-77e364d6b1\/img_2937_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 360,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011LN0D3DG-77e364d6b1\/img_2937_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 630,
+                "original_h": 472,
+                "thumb_tiny": "AwAjADBihT0o43Fe4qSBR97aATU7xq45A+tSUVRThUiQA53H8qjYbHKk9KkYE4BNJvxErNjkZ5pkxIGOxFMYeZGFHUYpgWYWG2pw3y1TBCH5WyPepVl7UxWHPMEB9aqIxeUknr61YKq3Vjk1C0ZU5U5FAWHyoXyy4OO1Pt4hsyy8k8UyJu3Sp\/mKnHWlYLlfaMdKXAwPrR2pew+tMY09aSlb71JQWOHSnCmjpTh0oEf\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011LN0D3DG\/img_2937.jpeg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011LN0D3DG-0efa50dcb7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1586548159.009400"
+    }
+]

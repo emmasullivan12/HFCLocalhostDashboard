@@ -1,0 +1,111 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Brilliant! Thank you.\n\nI've already got another video for you to look at if it's not too much to ask. I've also practically finished that roto shot I talked about bar some refinements. There's some edge inconsistency at the top of the rope but it's getting hard to think critically after looking at it so long so I'd value a fresh pair of eyes: <https:\/\/youtu.be\/BqtbzM-Blac> Please take your time! Thanks again!",
+        "ts": "1569508294.001900",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/761637542434_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "ropeClimberRoto_v08.11",
+                "title_link": "https:\/\/youtu.be\/BqtbzM-Blac",
+                "author_name": "Michael Vodden",
+                "author_link": "https:\/\/www.youtube.com\/user\/Artifexan",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/BqtbzM-Blac\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: ropeClimberRoto_v08.11",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/BqtbzM-Blac?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/BqtbzM-Blac",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/BqtbzM-Blac"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Will do! Keep it up!",
+        "ts": "1569511997.002100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/776729717606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Annoyingly the Internet at work blocks your website (they use Fortiguard). I think just because it's a new url. Worth checking out though",
+        "ts": "1569519876.002200",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/776939016822_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya, the music video shot is great, also I generally like the layout of your website. The rope climber roto is almost but no quite there, there are a couple of moments where it pops off his arm(0:08 is one example). Also I feel youvre taking in too much of the black edge, I know it's soft but you can adjust the feathering and motion blur to get that, at the moment it just looks inaccurate. In production I would kick it back.\n\nIn your writeup you say you couldn't do any tracking, not even with Mocha (there's the Mocha planar tracker in Silhouette I believe)? You don't need one track for the whole shot, you can track a section for each heft of his movement. Otherwise you could track the background (the Danger sign is vt wobbling and stays in the whole shot for example. That way you've removed the camera move and only have to deal with his movement.\n\nSo I say have another go and see if you can get a better result.\n\nI would also work out why the edges in Nuke don't match because Silhouette is only used to provide mattes to comp and if you can t do that you can t use it on a job.\n\nIn all fairness it's a bloody hard shot, how long did you spend on it?",
+        "ts": "1569535262.002300",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/768642185297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shoreditch, this is an interesting shot. I would review you tracks though as the pipes are bouncing and the door is wiggling round. Also the 3d is very cg looking at the minute. That's partly because your black points aren't matching and partly the perfect unbroken edges. For the inside bays try using the real brick texture from. The plate (take a section, frame hold, corner pin straight and project) as the cg bricks look very cg.\n\nYou can soften cg by deliberately breaking concatenation on a ie Transform 0.2,0.2, some node the Transform - 0.2, 0.2 the softening you get can be more pleasing than the Soften or Blur node. \n\nIn 3D you could try adding a touch of displacement.",
+        "ts": "1569535876.002400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/775072617760_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Thank you! That's fair, I'll take another look at it. I see. I was told by tutors to include that thick edge as they'd rather take it back in in comp than have too little information. I'll definitely take it in though, as it didn't really sit right with me!\n\nThe reason I struggled so much with tracking is how much he blends in with the background and how much motion blur is on him. It honestly just didn't occur to me to track to remove the camera movement. Seems really obvious now you point it out. I got so focused on tracking him I didn't consider it.\n\nWill do!\n\nThat was a really unusual thing. I haven't had the same issue since then, in fact I've moved between Nuke and Silhouette and back without issue now so I'll have to take that bit down. No idea what caused it.\n\nIt's tough to remember, honestly. I started it as part of a module last academic year but only rotoscoped the man to meet the brief, leaving unfinished edges where the rope would be. As I've been working through my back-catalogue trying to get things up to standard for my reel I came back to it to finish the rope. Doing the math it couldn't be more than 80 hours? This was my first attempt at a proper roto job",
+        "ts": "1569536389.002500",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/762303413842_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks again! The Shoreditch shot was my first time comping CG. I had to do everything including making all the 3D. Part of the brief was making all of the textures in Substance so as a compositor who'd never properly textured before I struggled a bit. I really appreciate the feedback! I'll be revisiting it when I'm done with the roto shot and wasn't sure how to go about fixing the issues you've pointed out!",
+        "ts": "1569536849.002600",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/774621445524_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I don't think it's fair to time shots when learning software. You`d probably get about a day to roto that rope shot in commercials or TV although more in film (but stricter standards). I am being harsh and I recently rewatched my first reel, its embarrassingly bad and I don't know how I ever got a job.\n\nAs for roto edges, like belly buttons they can be innies or outies main thing is not to change half way through a shot. You can (and should) keep soft edges but they should be as soft as the plate and also consistent. Using your roto in a comp will give you a feel for that - it's actually much harder to deliver mattes for other people! When compers have to roto they cheat like hell, I would try to key the arms, the black on black is much more forgiving to roto.",
+        "ts": "1569541657.002700",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/768724174161_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

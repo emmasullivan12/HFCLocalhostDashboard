@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I have a young family and it has become increasingly hard to consider moving to a different country as they grow older.  I have considered it a few times, but the industry here has been so strong over the past 15 years I've not had the need to.  There's so many companies around London you can gain great experience just moving about from job to job which some artists like to do.",
+        "ts": "1568195424.002800",
+        "username": "Stewart Ash (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-11\/755784857732_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Definitely, I have a young family also. Although we’ve always considered LA as an option, we love it there",
+        "ts": "1568198679.002900",
+        "username": "Julien Rashti (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-11\/749896221649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

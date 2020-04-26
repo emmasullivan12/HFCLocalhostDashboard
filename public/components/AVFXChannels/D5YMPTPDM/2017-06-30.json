@@ -1,0 +1,162 @@
+[
+    {
+        "type": "message",
+        "text": "What is slack ",
+        "user": "U5XA82WJV",
+        "ts": "1498809396.624351",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Slack is a collaboration tool for teams, and I'm its very own bot! Together, we're on a mission to make your working life simpler, more pleasant, and more productive. \n\nI only know simple answers to a smattering of questions, so you might find the <https:\/\/get.slack.help\/hc\/en-us\/categories\/202622877-Slack-Guides|Slack Guides> more helpful. Or you can always search for answers on our wonderful <https:\/\/get.slack.help\/hc\/en-us\/|Help Center>!",
+        "user": "USLACKBOT",
+        "ts": "1498809396.624389",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Who created slack ",
+        "user": "U5XA82WJV",
+        "ts": "1498809405.626377",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I searched for that on our Help Center. Perhaps these articles will help: \n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/218080037-Getting-started-for-new-users|Getting started for new users>\n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/202026038-Slackbot-personal-assistant-and-helpful-bot-|Slackbot: personal assistant and helpful bot >",
+        "user": "USLACKBOT",
+        "ts": "1498809406.626563",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Slack ",
+        "user": "U5XA82WJV",
+        "ts": "1498809409.627224",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I searched for that on our Help Center. Perhaps these articles will help: \n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/217626378-Email-template-for-introducing-Slack|Email template for introducing Slack>\n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/218080037-Getting-started-for-new-users|Getting started for new users>\n• <https:\/\/get.slack.help\/hc\/en-us\/articles\/218080137-Printable-poster-for-Slack-Training-Day|Printable poster for Slack Training Day>",
+        "user": "USLACKBOT",
+        "ts": "1498809411.627466",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "What is slack ",
+        "user": "U5XA82WJV",
+        "ts": "1498809416.628565",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gdefa95d2277",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4defa95d22776c6d75ca1dc0005c962b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "Kaarujan",
+            "real_name": "Kaarujan Kanthalingam",
+            "display_name": "kaarujan5",
+            "team": "T4UUTPV18",
+            "name": "kaarujan5",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Slack is a collaboration tool for teams, and I'm its very own bot! Together, we're on a mission to make your working life simpler, more pleasant, and more productive. \n\nI only know simple answers to a smattering of questions, so you might find the <https:\/\/get.slack.help\/hc\/en-us\/categories\/202622877-Slack-Guides|Slack Guides> more helpful. Or you can always search for answers on our wonderful <https:\/\/get.slack.help\/hc\/en-us\/|Help Center>!",
+        "user": "USLACKBOT",
+        "ts": "1498809416.628627",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "sv41d8cd98f0",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/slackbot_72.png",
+            "first_name": "slackbot",
+            "real_name": "Slackbot",
+            "display_name": "Slackbot",
+            "team": "T4UUTPV18",
+            "name": "slackbot",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

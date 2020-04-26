@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Gosh yes, a desktop would be a great idea! I'd have a look into H18 coming out, see if you can find anything out about Solaris and the new rendering they have going on, whether it'll be GPU or not. I haven't looked into it much yet, but if Solaris and the new rendering is going to be using GPU, then that's something you'd have to consider. But yes, your processor would be important. You'd want to be looking at an 8core\/16thread machine, if possible\nWrangles and VOPs can be multi-threaded, as well as some sims, and the rendering side of it, if it's CPU, will be affected by it. If you can't get an 8 core, try for a 6 core. But a 4core\/8thread machine won't tackle much once you start pushing it\nAs for the RAM, go as high as possible.\nHave you thought about getting a custom built one? Cause then once you have more budget, you can always add in more RAM, change a graphics card over, etc. That's what I did, I built my own (Cost £1,700) and then last Christmas bought myself another 32GB of RAM, taking it from 32GB to 64GB. And still got room to add another 64GB if I need to at any point.",
+        "ts": "1574284709.004200",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/842892300549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But my advice: See if you can find anything on Solaris and H18 (I'll try and have a look too) and see if it'll be CPU or GPU. If you want to get into rendering as well in Houdini, that'll give you a good idea whether you need to consider a great GPU in your workstation.\nBut then yes, it'll be CPU than RAM\nIf you just want to concentrate on Sims and not really looking into the rendering side of things (or have rendering as a side element, that you'll touch but not focus on) then maybe GPU wont matter as much",
+        "ts": "1574284833.004300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/831417177315_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pcspecialist.co.uk\/computers\/intel-z370-pc\/>\nJust had a quick look here, i9-9900, 32GB 2400Mhz, 4GB graphics Card, 480GB SSD, 4TB HD (Those sims take space!) came out at £1.2k for me. A bit over budget, but gives you a rough idea of mainly what you could be looking at? And if sales happen, could go down a bit!",
+        "ts": "1574285196.004400",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-20\/842897326144_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "PCSPECIALIST - Configure the Intel Z370 PC to your ideal requirements.",
+                "title_link": "https:\/\/www.pcspecialist.co.uk\/computers\/intel-z370-pc\/",
+                "text": "PCSpecialist is an award winning manufacturer of high quality custom PCs. Configure the Intel Z370 PC to your ideal requirements.",
+                "fallback": "PCSPECIALIST - Configure the Intel Z370 PC to your ideal requirements.",
+                "from_url": "https:\/\/www.pcspecialist.co.uk\/computers\/intel-z370-pc\/",
+                "service_icon": "https:\/\/www.pcspecialist.co.uk\/images\/icons\/favicon\/apple-icon-57x57.png",
+                "service_name": "PCSPECIALIST",
+                "id": 1,
+                "original_url": "https:\/\/www.pcspecialist.co.uk\/computers\/intel-z370-pc\/"
+            }
+        ]
+    }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, so ill be coming on Sunday only, because i have something planed on that day",
+        "ts": "1512044651.000084",
+        "username": "aferna-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279189529921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "quick question, my class is given a task to write a report on different sorting techniques i have done a few, but i am stuck on how to do insertion sorting could you help me, this is in visual basics",
+        "ts": "1512044852.000185",
+        "username": "aferna-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279751075604_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you,",
+        "ts": "1512044858.000216",
+        "username": "aferna-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279633335475_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure",
+        "ts": "1512046420.000255",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279060521520_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you need to write exactly?",
+        "ts": "1512046429.000053",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/280590542118_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a quick summary for you:",
+        "ts": "1512046439.000246",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279643941587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Insertion sort is one step better than the bubble sort and works on a similar principle. You still loop over the full list from first to last but instead of swapping elements over, you insert the element in the correct position within the already sorted part of the list.\n\nIf the list to be sorted were in reverse order, both Bubble and Insertion sorts would take about the same time to sort; however, if the list was semi-sorted, the insertion sort would run much faster.",
+        "ts": "1512046515.000366",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279202089265_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's also a good video I watched a while back: <https:\/\/www.youtube.com\/watch?v=kU9M51eKSX8>",
+        "ts": "1512046538.000098",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/280793483143_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Insertion Sort",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=kU9M51eKSX8",
+                "author_name": "CS50",
+                "author_link": "https:\/\/www.youtube.com\/user\/cs50tv",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/kU9M51eKSX8\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Insertion Sort",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/kU9M51eKSX8?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=kU9M51eKSX8",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Does that help you understand it?",
+        "ts": "1512046563.000182",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-30\/279061488624_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

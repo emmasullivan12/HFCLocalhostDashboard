@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "text": "Hi Aspen, how are you doing? How is the homework coming along? Let me know if you have anymore questions for me or want to know anything else. I've done a lot of research work and papers at both University and with work let me know if there's anything you want to know at all about University etc and I'll do my best to help.",
+        "user": "U4VR52RQE",
+        "ts": "1509271565.000064",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

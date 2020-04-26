@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<mailto:lucy.cooper@unionvfx.com|lucy.cooper@unionvfx.com>",
+        "ts": "1544610145.000200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/503246685142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, you too! It's good to have that extra day in there once in a while :slightly_smiling_face:",
+        "ts": "1567513619.001200",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-03\/749067486102_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

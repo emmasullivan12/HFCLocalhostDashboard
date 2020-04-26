@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I should probably explain my project before sending you some random shots :joy:\nIt is a short music video that myself and one of my course-mates are working on. I am the animator, my course-mate is an effects artists, and I also have a friend who graduated from the music course who will be doing the song for us.\nI have a pre-vis that we have been working on so I'll send you that along with the shot I have been developing over this week. But to summarise the project: It is a music video about a dog playing fetch which breaks down into some trippy sequences that hopefully get across the dog's excitement and state of mind as he runs after the ball.",
+        "ts": "1580468943.000500",
+        "username": "Joshua Treadgold (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/930818947616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is the pre-vis: <https:\/\/drive.google.com\/file\/d\/1zcToxdGjIvu-A2HMK1HeQuzNk0IP6JTR\/view?usp=sharing>",
+        "ts": "1580468954.000600",
+        "username": "Joshua Treadgold (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/933030171622_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and here is the shot I have been working on so far: <https:\/\/syncsketch.com\/sketch\/d60b026a1348\/>",
+        "ts": "1580468980.000700",
+        "username": "Joshua Treadgold (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/918031880450_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Fetch_Sh050",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/d60b026a1348\/",
+                "text": "Collaborative Media Review with 4 items",
+                "fallback": "SyncSketch: Fetch_Sh050",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/d60b026a1348\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/d60b026a1348\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1580468980.000000"
+        }
+    }
+]

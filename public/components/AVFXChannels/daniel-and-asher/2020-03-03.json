@@ -1,0 +1,107 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey I'm well, fundraising for a short film and I have a birthday coming up (I will be 43)\n\nThat project sounds very cool and ambitious! One of Us has a lot of similar work happening now and historical dramas and environs are a big thing. As well as comp have you considered environment work and DMP? I noticed that you put a lot of work into that aspect.\n\nJune isn't that far away!",
+        "ts": "1583226480.000900",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/967486426579_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUGTR6UHF",
+                "created": 1583230073,
+                "timestamp": 1583230073,
+                "name": "Street_v004.png",
+                "title": "Street v004",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1263428,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUGTR6UHF\/street_v004.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUGTR6UHF\/download\/street_v004.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 202,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 269,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 404,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 449,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 538,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUGTR6UHF-1c93971fad\/street_v004_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 574,
+                "image_exif_rotation": 1,
+                "original_w": 1118,
+                "original_h": 627,
+                "thumb_tiny": "AwAaADCgRxnOKfA247erA5X\/AApsWSTj0NSQJi5HAODQBqxMqIcjFZUp3TOR3Y1b83zI3zngcD0qmx+U46mgBwxgAn5SePeoWLOfQVIi5AHPFMwQ+V4xQAQg5JHpT4XPnBhyc1EfuVNa9DQBYUDB9xzUEiMh45X1qxTTQBCrbRuI4PHFRnBYkHvUsg\/dH61AetAH\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUGTR6UHF\/street_v004.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUGTR6UHF-b7fd48b5b7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583230078.001000"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will be filming a few people on green screen as eell as adding in the reflections in the windows and clean up too",
+        "ts": "1583230126.001300",
+        "username": "Asher Hunt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/968944477249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Very cool! It's a very ambitious shot I look forward to seeing how you pull it off!",
+        "ts": "1583233261.001400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/980980338295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cheers! :+1: ill send you it when its finished",
+        "ts": "1583233446.001500",
+        "username": "Asher Hunt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/966333504546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

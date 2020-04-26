@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, of course I didn't have any notifications... Thank you for your support. I really appreciate it. I will check the resources you sent. I will come back to you with other questions. I'm still working on my Spring project. I will show you later. Thank you.",
+        "ts": "1585752054.003100",
+        "username": "Simona Silvestru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-01\/1041560249232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope you managed to find some time to relax with all that work pending! C# is a fun language, how did you find the programming side of making the game?",
+        "ts": "1546532121.000400",
+        "username": "James Greenhalgh (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/517239427830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

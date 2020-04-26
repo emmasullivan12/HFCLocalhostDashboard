@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, so sorry for the late reply. I don't think my notifications are turned on. Finding a follow-up gig isn't going as quickly as I would've hoped. And there isn't a TON of 2D animation happening in London, it's mostly VFX here. I can update my vis dev portfolio pretty easily because I can use Procreate on my iPad. But as for updating my animation reels, it's a struggle...especially for 3D animation. But I'm still trying. I'm thinking of applying to the masters program at Gobelins back in Paris if I can afford it",
+        "ts": "1576013462.002200",
+        "username": "Jonathan Salter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/868007399509_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/jonathansalter.portfoliobox.net\/>",
+        "ts": "1576013475.002300",
+        "username": "Jonathan Salter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/856530126931_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Jonathan Salter",
+                "title_link": "https:\/\/jonathansalter.portfoliobox.net\/",
+                "text": "animator, visual development artist, story artist, motion design, 2d animation, concept art",
+                "fallback": "Jonathan Salter",
+                "image_url": "https:\/\/i.vimeocdn.com\/video\/716808777_1920.jpg",
+                "image_width": 444,
+                "image_height": 250,
+                "from_url": "https:\/\/jonathansalter.portfoliobox.net\/",
+                "image_bytes": 156901,
+                "service_icon": "https:\/\/dkemhji6i1k0x.cloudfront.net\/000_clients\/891115\/file\/57x57-891115bcUpSxKV.png",
+                "service_name": "Jonathan Salter",
+                "id": 1,
+                "original_url": "https:\/\/jonathansalter.portfoliobox.net\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I feel like my 3D reel isn't as strong, and unfortunately for me, most of the work here is 3D. And most jobs require experience that no one is willing to give me so I feel like I'm going in circles",
+        "ts": "1576013559.002500",
+        "username": "Jonathan Salter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/867543808500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

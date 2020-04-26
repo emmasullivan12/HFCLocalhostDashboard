@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi William, havent heard anything from you in a while now. How are you?",
+        "ts": "1548245588.000100",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-23\/530142164704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,203 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jinafa, I meant to send this to you but I wasn't really in front of my computer this weekend.",
+        "ts": "1577097200.000600",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/883627188724_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRM8V6V2N",
+                "created": 1577097237,
+                "timestamp": 1577097237,
+                "name": "Jinafa CV - Samantha Comments v2.docx",
+                "title": "Jinafa CV - Samantha Comments v2",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "filetype": "docx",
+                "pretty_type": "Word Document",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 32453,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRM8V6V2N\/jinafa_cv_-_samantha_comments_v2.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRM8V6V2N\/download\/jinafa_cv_-_samantha_comments_v2.docx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRM8V6V2N\/jinafa_cv_-_samantha_comments_v2.docx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRM8V6V2N-6d3fd7e758",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1577097238.000700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not quite sure where to put the Fashion Show example just yet ... what role did you play in it? If you just attended it (rather than organising it etc) then perhaps it could go in the interests section somewhere, but if you had a bigger role then it might slot in somewhere else",
+        "ts": "1577097273.001000",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873836913057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think your CV is really looking solid now thought!",
+        "ts": "1577097300.001100",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/871302126450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "though*",
+        "ts": "1577097304.001200",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/883628700388_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know you said you were struggling to find work. In the meantime what about doubling down on some of those entrepreneurial ventures you've got going (i love the study notes one in particular!!  you could make some serious money from that haha)",
+        "ts": "1577097397.001300",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884096545109_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How was your weekend?",
+        "ts": "1577097414.001400",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873838932753_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Things are still busy here even in the run up to christmas! Are you studying\/revising over the holidays?",
+        "ts": "1577097454.001500",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873839482881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I'll just leave the fashion show one since it's pretty useless",
+        "ts": "1577124567.001600",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884098411332_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for the Cv editing!!",
+        "ts": "1577124591.001700",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884565476165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well yeah Ive got so much homework, specially for chem:sob::sob:when are your holidays starting??",
+        "ts": "1577124672.001800",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884556715072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you think of physiotherapists as a job? Do you think having a physiotherapy degree would be meaningful?",
+        "ts": "1577124740.001900",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873089810691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm actually really confused on what to do, I want to do medicine but then my 5 in maths has limited to the universities I'll be applying",
+        "ts": "1577124790.002000",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/873090671955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I thought of perhaps becoming a scientist by doing something like biochemistry, but the money isn't satisfying. Then I thought of becoming a headteacher since I love to see progress and the idea of drawing futures of thousands seems fantastic, I would give students what I thought is lacking in our education--but that's not health sector and i want to work in the health sector",
+        "ts": "1577124936.002100",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884571409173_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Then I'm currently thinking of physiotherapy, the money is pretty good but what's annoying is people with applied sciences can get in the same course- what's the point of me doing a subject like chemistry when I could have just done applied sciences and got into the course? I'm a corsework type of person too and I absolutely hate exams as they stress me out, like I'm pretty sure even during gcses I would performed much better if I was told those weren't the official exams",
+        "ts": "1577125106.002200",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/884574226069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So it's a bit hectic here as you can see:joy::joy::joy:I'm sorry for bothering you with my struggles but I had let it out",
+        "ts": "1577125143.002300",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/886424181623_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes 60 hours is a lot and doing business on the side was just an idea I had. The a-levels I currently do are maths, physics,biology and chemistry. \n\nI chose medicine as i enjoy science and am relatively good at it.",
+        "ts": "1508182771.000194",
+        "username": "rmoham-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/258013767382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So would u advise not to do business?",
+        "ts": "1508187652.000191",
+        "username": "rmoham-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/258260764119_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "With medicine?",
+        "ts": "1508187666.000151",
+        "username": "rmoham-2012 (Mentee)",
+        "bot_id": "B6CS60LDU"
+    }
+]

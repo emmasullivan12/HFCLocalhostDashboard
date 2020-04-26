@@ -1,0 +1,277 @@
+[
+{
+    "user_id": "U4V22C6A1",
+    "user_name": "emma-prospela",
+    "date": "1574365747",
+    "change_type": "added",
+    "app_type": "Smooz",
+    "app_id": "A0FHPFA8G",
+    "scope": "identity.basic"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1507466757",
+    "change_type": "disabled",
+    "reason": "channel_archive",
+    "service_id": 215931905409,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1507466757",
+    "change_type": "disabled",
+    "reason": "channel_archive",
+    "service_id": 217551799319,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1507204297",
+    "change_type": "added",
+    "app_type": "Aloha",
+    "app_id": "A65NB7YHM",
+    "scope": "identity.basic"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1507143289",
+    "change_type": "expanded",
+    "app_type": "Smooz",
+    "app_id": "A0FHPFA8G",
+    "scope": "identify,bot,channels:write,identity.basic"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1507139911",
+    "change_type": "removed",
+    "app_type": "Export",
+    "app_id": "A19P6G35Y",
+    "scope": "identify,channels:history,groups:history,im:history,users:read,users:read.email"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1507139910",
+    "change_type": "removed",
+    "app_type": "IFTTT",
+    "app_id": "A028LGAFF",
+    "scope": "identify,ifttt"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1500810753",
+    "change_type": "removed",
+    "service_id": 182636192816,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1500810745",
+    "change_type": "removed",
+    "service_id": 216467489970,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1500810537",
+    "change_type": "added",
+    "service_id": 216467489970,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1500809464",
+    "change_type": "added",
+    "service_id": 215931905409,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1500806961",
+    "change_type": "added",
+    "service_id": 217551799319,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U5XMAF7AA",
+    "user_name": "michael",
+    "date": "1500679932",
+    "change_type": "added",
+    "app_type": "Export",
+    "app_id": "A19P6G35Y",
+    "scope": "identify,channels:history,groups:history,im:history,users:read,users:read.email"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1500649395",
+    "change_type": "added",
+    "app_type": "Smooz",
+    "app_id": "A0FHPFA8G",
+    "scope": "identify,bot,channels:write,identity.basic"
+},
+{
+    "user_id": "U4V22C6A1",
+    "user_name": "emma-prospela",
+    "date": "1498083195",
+    "change_type": "added",
+    "service_id": 200936042016,
+    "service_type": "Slash Commands",
+    "scope": "commands"
+},
+{
+    "user_id": "U5XMAF7AA",
+    "user_name": "michael",
+    "date": "1498078472",
+    "change_type": "added",
+    "app_type": "IFTTT",
+    "app_id": "A028LGAFF",
+    "scope": "identify,ifttt"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1498076521",
+    "change_type": "added",
+    "service_id": 201634187589,
+    "service_type": "Slash Commands",
+    "scope": "commands"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1497968546",
+    "change_type": "added",
+    "app_type": "Meme Bot",
+    "app_id": "A0H25FSUS",
+    "scope": "identify,commands,users:read,users:read.email,chat:write:bot"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1497968471",
+    "change_type": "updated",
+    "service_id": 200667959973,
+    "service_type": "Giphy",
+    "scope": "commands"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1497968455",
+    "change_type": "added",
+    "service_id": 200667959973,
+    "service_type": "Giphy",
+    "scope": "commands"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1497039479",
+    "change_type": "added",
+    "app_type": "Polly",
+    "app_id": "A04E6JX41",
+    "scope": "identify,bot,commands"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1495819175",
+    "change_type": "added",
+    "app_type": "Disco",
+    "app_id": "A0DV3EEN4",
+    "scope": "identify,bot,commands,channels:read,channels:write"
+},
+{
+    "user_id": "U4V22C6A1",
+    "user_name": "emma-prospela",
+    "date": "1495751536",
+    "change_type": "added",
+    "app_type": "Moderate Content",
+    "app_id": "A2CSH6YEM",
+    "scope": "admin,identify,files:read,users:read,users:read.email,chat:write:bot,files:write:user"
+},
+{
+    "user_id": "U4V22C6A1",
+    "user_name": "emma-prospela",
+    "date": "1495566188",
+    "change_type": "added",
+    "app_type": "Export",
+    "app_id": "A19P6G35Y",
+    "scope": "identify,channels:history,groups:history,im:history,users:read,users:read.email"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1494776848",
+    "change_type": "added",
+    "service_id": 182636192816,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1494776395",
+    "change_type": "added",
+    "service_id": 183303562898,
+    "service_type": "GitHub Enterprise Server",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1494775137",
+    "change_type": "removed",
+    "app_type": "Statsbot",
+    "app_id": "A0GP9E18S",
+    "scope": "identify,bot,commands"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1494774955",
+    "change_type": "added",
+    "app_type": "Statsbot",
+    "app_id": "A0GP9E18S",
+    "scope": "identify,bot,commands"
+},
+{
+    "user_id": "U4VR52RQE",
+    "user_name": "dexter-prospela",
+    "date": "1494771893",
+    "change_type": "added",
+    "app_type": "Export",
+    "app_id": "A19P6G35Y",
+    "scope": "identify,commands,channels:history,groups:history,im:history,users:read,users:read.email"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1491409425",
+    "change_type": "added",
+    "service_id": 164273982080,
+    "service_type": "Google Drive",
+    "scope": "files:write:user"
+}
+]

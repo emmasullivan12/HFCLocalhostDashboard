@@ -1,0 +1,104 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1508145643.000248",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1508146926.000077",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-18\" to \"emma-and-shubham\"",
+        "old_name": "z-shared-18",
+        "name": "emma-and-shubham"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has joined the group_",
+        "ts": "1508146974.000211",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256923419397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has joined the group_",
+        "ts": "1508146981.000069",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256837747636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@syadav-2011 has joined the group_",
+        "ts": "1508146993.000234",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257870009063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "<!channel>, Shubham we have matched you with Emma as your E-Mentor. Feel free to introduce yourselves and continue chatting within this channel. Why not send a quick video to say hello! :wave:\n\nI will now be leaving the channel, but please direct message me if you have any questions. All the best! :smile:",
+        "user": "U4VR52RQE",
+        "ts": "1508147030.000047",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1508147046.000155",
+        "username": "smooz (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/257669403542_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the group_",
+        "ts": "1508147057.000325",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256266975953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Shubham, how are you? I've been assigned as your E-Mentor :raised_hands: :smile:\n\nAny questions you have let me know and I'll do my best to help you.\n\nI see you're interested in computing. I'm working on the build of our Prospela web &amp; app platforms. So hopefully I can shed some light on these areas for you!\n\nI also used to work at General Electric (a large industrial company) in their Oil &amp; Gas divisions ... so can tell you anything you like about working with Engineers.\n\nIt would be great to hear a bit about your interests and what you would like support with over the duration of this mentoring programme (approx. 2 months)...?",
+        "ts": "1508148005.000529",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-16\/256790739650_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

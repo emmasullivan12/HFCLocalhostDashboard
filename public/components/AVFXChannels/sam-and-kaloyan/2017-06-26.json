@@ -1,0 +1,17 @@
+[
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498482036.282249",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the group"
+    },
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1498482037.282351",
+        "user": "U5Z6RM8R0",
+        "text": "<@U5Z6RM8R0> has joined the group",
+        "inviter": "U4V22C6A1"
+    }
+]

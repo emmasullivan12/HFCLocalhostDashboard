@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh sorry didn’t see that you’d replied. No worries, I meant the weekend after :grin: would you be free on the 27th?",
+        "ts": "1571554207.000300",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-19\/803798677703_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

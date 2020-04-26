@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Craig, it is such a pleasure to meet you! Thank you for becoming my e-mentor!\nIt was really surprising to see your name in this channel as I have read a few interview articles about you in the past, and you have been in the industry for quite a while now (and worked on some amazing projects, that's so cool!).\n\nTo introduce myself, I'm a final year student at the university of hertfordshire, and currently I'm specialising in groom. This summer I spent learning Houdini ( and still am :grin: ), and I looked a bit into creature effects\/done some tests, which really caught my interest, so I will be doing groom (and hair sim in Semester B) on a couple of student film projects. I am still not sure which path I should follow, as I feel more confident in groom, but cfx interests me as well; It would be amazing if you could guide me through hair sim process, and anything cfx related, really :blush:",
+        "ts": "1576347997.000100",
+        "username": "Laura Karbauskaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-14\/863642371841_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

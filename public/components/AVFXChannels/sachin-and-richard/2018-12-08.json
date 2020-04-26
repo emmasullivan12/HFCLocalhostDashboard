@@ -1,0 +1,310 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh that's very good advice! thanks for that Sachin",
+        "ts": "1544261752.002700",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500305034614_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and currently, I dont have any experience with coding",
+        "ts": "1544261761.002800",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/499955550807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll definitely look into that",
+        "ts": "1544261772.002900",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/499103183269_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "do you have any recommendations of where to start?",
+        "ts": "1544261788.003000",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500305162982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also Sachin, I would love to know more about your daily work routine and your position at the moment. I would also love to hear about the past experiences as well! I feel like it would be a great way for me to see how someone successful like you has progressed through the industry and it would be a nice way to get to know you",
+        "ts": "1544271741.003100",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498941958386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and I would also like to understand what you enjoy doing when you aren't working and what kind of hobbies and interests you have, essentially, I would like to know you better :slightly_smiling_face: ",
+        "ts": "1544271800.003200",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498204733312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":grin: ",
+        "ts": "1544271803.003300",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500343422998_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and I can share my experiences on what it's like at my university and my course as well as what's going on outside of my school life",
+        "ts": "1544271902.003400",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498339402929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem at all :) \nIf you mean recommendations on where to start for coding , \nI’d say start with some basic python . \nPython is pretty simple to start learning and you don’t really need advanced knowledge of the language for Nuke scripting. ( there are a couple of really good python courses on Udemy if you are looking for a structured video lessons ) . Or you could use on of the the python books . You can always ask me if you have trouble understanding any of the concepts . \nOnce you understand the basics you can start looking at some Nuke script examples ( can find a lot of them on Nukepedia) and understanding them won’t be an issue casue it’s basically python for Nuke . That’s for later though. To start with , keep it simple and just try understanding the basics of python . \n",
+        "ts": "1544277727.003500",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498363373665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At the moment, I’m working as a Pipeline TD focussing on the Animation part of the pipeline. I used to be a compositing TD up until 6 months ago when I made the shift to animation . ",
+        "ts": "1544278078.003600",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498865373155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As a TD the nature of my job is the same irrespective of the discipline. It involves \n- technical support ( for example when tools break, they need to be updated to handle the cases hat broke them ) \n- fire fighting . this is where we write quick python scripts that do a specific task . For example , when the artist has to process a large amount of data in a repetitive fashion and it would take them a long time to do it by hand . We’d write a script that can automate this process and do it for them . \n- development . For example building new \/ better tools that are designed to make artist’s life easier . \n\nThat an overview of my main responsibilities. Being a pipeline TDalso means  Being responsible for keeping an eye on how data flows between deparments . So in my case , it would be looking at how\/ where  data comes into animation and how\/ where it goes out . \nDoes that make sense ? ",
+        "ts": "1544278855.003700",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500372322454_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Funnily enough though , I did not start as a developer. I started my career as a Roto artist :) ",
+        "ts": "1544279274.003800",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498235251696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was trying to learn comp and once I moved to comp ,played around with python scripting . my then manager asked me if I would like to do that full time as there was a need for someone who understood the artistic side of things as well as the technical . \nI thought about it and by then I had actually started to like the technical side of it so it was an easy decision . ",
+        "ts": "1544280080.003900",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498238384032_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I’m not working , I’m usually playing some  sport or learning music . Have a few different interests\/ hobbies  but those are the ones I do religiously.  Lol \nDo I remember you saying you play football ? \n",
+        "ts": "1544281885.004000",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498245787424_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "wow",
+        "ts": "1544325200.004100",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498400504432_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you inspire me :joy: ",
+        "ts": "1544325207.004200",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/499138058866_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I play football but I'm not sure if I said it directly to you",
+        "ts": "1544325247.004300",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498400621360_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm definitely going to utilise my library then for python",
+        "ts": "1544325266.004400",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500189982311_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll take a look at Udemy and Nukepedia",
+        "ts": "1544325285.004500",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/499337589317_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "my school has a very nice learning and teaching environment from my perspective",
+        "ts": "1544325322.004600",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500539444390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it strives to meet the expectations of the students, our course is relatively new, we're the about to be the 3rd year that graduates",
+        "ts": "1544325355.004700",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498400918752_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "we got a motion capture studio about 2 years ago now, and it's amazing how many facilities we have to promote our studies",
+        "ts": "1544325403.004800",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/499337915173_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it's pretty sad, one of our lecturers is leaving this semester, he was definitely the most knowledgeable and experienced",
+        "ts": "1544325432.004900",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500190436103_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "he was the CTO of and co-founded the Imaginarium studios before he came to teach, and now hes moving onto Deep Silver Dambuster studios in nottingham as a mocap coordinator or something, I cant quite remember",
+        "ts": "1544325514.005000",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/500539953830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "he was the lecturer in charge of all our nuke and 3dequalizer modules",
+        "ts": "1544325540.005100",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/499138933138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "we also have a technician that used to work for an vfx studio that focused primarily on advertising, he does most of the demonstrations in nuke and 3dequalizer",
+        "ts": "1544325576.005200",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/499036239987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "but yeah, I'm in a great place to find my way",
+        "ts": "1544325590.005300",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498401526144_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and now I've met you and it just feels great! I'm really grateful for your support and friendship",
+        "ts": "1544325613.005400",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498970145812_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

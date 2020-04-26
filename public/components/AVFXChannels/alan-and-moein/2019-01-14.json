@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Moein, how is your project coming along?",
+        "ts": "1547506195.000500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-14\/524625078295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

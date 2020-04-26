@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not yet no. I'm currently studying Animation in 6th year for Advanced Higher Art ",
+        "ts": "1544270161.001500",
+        "username": "Michael (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-08\/498935627106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

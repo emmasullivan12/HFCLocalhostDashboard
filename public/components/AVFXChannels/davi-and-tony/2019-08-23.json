@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow. Well you know more than me :wink::laughing:",
+        "ts": "1566581784.001900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/725139185539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great you are getting paid for your training at work. That’s rare. \nI love Santorini! So beautiful! \n\nHow are your vfx projects going? \n",
+        "ts": "1566581930.002000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/736592134533_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My Vfx projects are not going anywhere i am afraid... i have been unable to find the motivation after a day’s work to think or to come up with a concept or the 3d models\/ assets. I don’t know what to produce in terms of Vfx because I don’t know exactly what i want to do. ",
+        "ts": "1566583581.002100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/736627250181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Probably compositing but still have no idea what to produce and what standard to try to reach",
+        "ts": "1566583632.002200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/738487799239_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah. I can help :smiley: \nI can give you a brief if you want. Yea it’s hard to do extra products after works. But be careful to not loose your Maya and Nuke practice. It’s mike a language. If you don’t keep practicing, then you can start to forget the details. \n\nHow about using Maya to creat some elements for your job? Double whammy! ",
+        "ts": "1566586187.002300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/730293951009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahah i have been more attracted lately to creating my own games ( i want to self publish a few) but will try to do some\nClean-up, tracking etc",
+        "ts": "1566586315.002400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-23\/725227493378_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

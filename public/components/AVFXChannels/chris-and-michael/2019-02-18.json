@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, sorry I didn't answer. Things are going fine thanks. I am hoping to get into college and improve my perspective skills. ",
+        "ts": "1550517320.000100",
+        "username": "Michael (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-18\/553565448177_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

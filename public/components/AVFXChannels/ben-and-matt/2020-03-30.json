@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah exactly, its been getting better on my end getting used to everything. Just a bit harder to contact my 2D and VFX supes but thats ok! Ahh that would be a bit annoying pushing stuff forward. Have they made a decision on it yet? We are using Slack here to run dailies and message each other and stuff. So far its not too bad to be honest, making it a bit easier.",
+        "ts": "1585575781.000200",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1022701941394_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

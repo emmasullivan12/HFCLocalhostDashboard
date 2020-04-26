@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Bleddyn, sorry for the delay but life just gets in a way sometimes. I’m glad that you managed to upload higher resolution, it makes it much clearer. In terms of content, I like the red overlay in the first shot. I’m still thinking that the last shot with the spaceships could be removed (if you are showcasing your prep, roto and keying skills than you should include only those shots in the reel, just to keep it nice and clear). In terms of the keying shot, how about adding the alpha and mid grey comp to show that you can preserve the edges? And rather than a still frame of the alpha and mid grey comp I’d make it a full shot so that your work is better visible (the comp is just a bit too dark to see the quality of your key).",
+        "ts": "1556533110.000100",
+        "username": "Karolina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-29\/609702552786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope that makes sense.",
+        "ts": "1556533117.000200",
+        "username": "Karolina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-29\/614793563057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Karolina, I totally understand no problem at all. Ok great, thank you for the pointers. I totally understand what you mean and if you think that's what's best then that's what I'll do. Thank you",
+        "ts": "1556534848.000300",
+        "username": "Bleddyn Wakeford (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-29\/609671586707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great! Let me know how it goes :slightly_smiling_face:",
+        "ts": "1556535450.000400",
+        "username": "Karolina (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-29\/621156746560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow! Beautiful. Were you given a brief to work to? ",
+        "ts": "1554463072.004200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/599172787360_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, we had to do a one minute animation of two characters interacting. My storyline was of two goddesses, one attach to the moon by a Chain and the other to the sun. The ‘moon’ goddesses has to move the moon to the sun so that that can be together for just a short time before they have to be separated again ",
+        "ts": "1554464968.004300",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/599195527968_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don’t think I explained that too well but I’ll gather together some of my animation and show you haha ",
+        "ts": "1554465040.004400",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/602093205445_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What software do you normally work in?",
+        "ts": "1554482208.004500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/602421255941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For my animations I use toon boom, but I also like to use photoshop for my backgrounds and I’ve stared to use after effects but I’m still getting a hang of it ",
+        "ts": "1554484331.004600",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/593249233617_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

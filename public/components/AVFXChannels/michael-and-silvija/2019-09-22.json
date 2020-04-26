@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Morning, hope you are having a wonderful Sunday!\n\nLast night, I sent the museum file. \n\nI have redone it again, since after trying to put pieces together, it went very complicated. \n\nPlease, take a look at it, whenever you will be available!\n\nThank you~ :blush:",
+        "ts": "1569145710.000100",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-22\/770814907591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

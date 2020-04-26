@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Aspen, hows things? How are you getting on with your CV? Let me know if you want me to take a look at the latest draft or have any more questions?",
+        "ts": "1510671607.000478",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/271538770273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In your feedback you also mentioned you'd be interested in understanding a bit more about what to do for first impressions and at an interview - I suppose a good start would be to understand first how you think you would currently approach something like this?",
+        "ts": "1510671687.000428",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/273138411143_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ya i am almost done with the cv and i am interested in knowing how to give a good impression",
+        "ts": "1510694827.000299",
+        "username": "aferna-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-14\/273216328294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

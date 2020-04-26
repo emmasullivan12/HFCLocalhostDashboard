@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you will enjoy your Christmas break, and we can speak in January. Happy Christmas! :blush:",
+        "ts": "1576869567.000100",
+        "username": "Simona Silvestru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-20\/882476229600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

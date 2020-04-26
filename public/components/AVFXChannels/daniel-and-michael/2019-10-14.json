@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey there, there's still a noticeable pop on one frame. That's the sort of thing that gets hailed up in dailies. Step through your render frame by frame (I can't on YouTube) and fix it. Then comp in a background (always take your shot to final, I know you're showing your roto skills, but a good roto artist understands the needs of comp). A simple concrete roof would be fine, tracked to the BG.",
+        "ts": "1571088142.001100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-14\/788650585409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

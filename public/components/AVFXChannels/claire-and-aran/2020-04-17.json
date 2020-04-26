@@ -1,0 +1,29 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some of the studios to approach: Jellyfish Pictures, The Mill, Framestore and Double Negative. Also, checkout <https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships|https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships>",
+        "ts": "1587127981.003400",
+        "username": "Claire Brindley (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1054721651175_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "NextGen Skills Academy | Apprenticeships",
+                "title_link": "https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships",
+                "text": "Earn as you learn in the workplace. Take time out to study in the classroom. A NextGen Apprenticeship can offer the best of both worlds, giving you invaluable experience and knowledge to kick-start your career. ‍",
+                "fallback": "NextGen Skills Academy | Apprenticeships",
+                "from_url": "https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships",
+                "service_name": "nextgenskillsacademy.com",
+                "id": 1,
+                "original_url": "https:\/\/www.nextgenskillsacademy.com\/course\/apprenticeships"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587127982.000000"
+        }
+    }
+]

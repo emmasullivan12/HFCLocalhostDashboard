@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Events wise, the ones I've been to are BFX in Bournemouth which is 1st to 4th October, and FMX which is in Stuttgart (Germany) 5th-8th May. Both were really awesome for talks about cutting edge games\/vfx\/VR, and lots of networking opportunities and getting reel feedback. Haven't actually been to much in London so I'm not much help there.",
+        "ts": "1567373326.000200",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/745355854480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For your next two projects decision, if characters are what you really want to do then I don't see why not :) as long as that fulfils the module of course. The only thing to consider is if you wanted to be an environment artist for example it'd be best to vary your projects so your reel has some variety. If you want to be a character artist though, focusing on character design and modeling is perfectly fine.",
+        "ts": "1567373453.000300",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/747221481943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

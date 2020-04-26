@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good stuff, I am well thanks! \nWell the good thing is that you are very young, and the reality is that you really do have a long time to choose what end career path you will take :slightly_smiling_face: \n\nThe good thing about business studies, (i also studied thia in sixth form), is that it teaches you a lot about how companies work, what drives the performance of different companies, alongside other professional aptidues! \n\n",
+        "ts": "1507667915.000555",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/254372733188_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I suppose we should start with what your interesta are? Inside and outside of school? One of the key things about finding the career path for you, is highlighting what you enjoy most and least... so that we can try and help give you advice on what sort of roles you might like to try out ",
+        "ts": "1507668001.000512",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-10\/253801483153_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FT6G2G1RV",
+                "created": 1580070035,
+                "timestamp": 1580070035,
+                "name": "IMG_20200126_201850.jpg",
+                "title": "IMG 20200126 201850",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1867497,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT6G2G1RV\/img_20200126_201850.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FT6G2G1RV\/download\/img_20200126_201850.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 270,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 360,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 540,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1067,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 720,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FT6G2G1RV-b634f4e2d3\/img_20200126_201850_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 768,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 3120,
+                "original_h": 4160,
+                "thumb_tiny": "AwAwACSt5yev6Uecnr+lP223\/PF\/++6Tbbf88X\/77qeVFXYzzU9f0pPMX1qTbbf88ZP++xRttv8AnlJ\/32KLILsqscsTSVd8u3\/55Sf99ijy7f8A55Sf99imIc8fHy9fSo\/Lm6qh\/IGrm0YqNow3Jz+Bp2AhMcgzl1z\/ALtKqkDDEH6DFSjKjA6Uxl3dc0WATO3jAo3H0H5CmvhMD2pu6lYC0vOetH41FG55x6U7fVEkhHAPNNNBf5RUbPQMr3LYkH0qLfRcHMn4VHSA\/9k=",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FT6G2G1RV\/img_20200126_201850.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FT6G2G1RV-cbee0803d1",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1580070040.000500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "did that work?",
+        "ts": "1580109754.000800",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/923018183205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll try and see if I get time at work today, create a group woodpiece, slatewood and woodchunk and combine them to wood, if there's a way in vex to do it",
+        "ts": "1580109765.000900",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-26\/911530399155_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

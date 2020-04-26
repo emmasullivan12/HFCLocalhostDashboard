@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon,\nThanks for the answers :slightly_smiling_face: (And regarding notifications, I don't seem to get any from this chat at all; I try to remember to check in every now and then, but sorry if I'm late at answering).\nIt's nice to hear all this, I don't feel like I have been all that prepared for what is waiting \"beyond uni\", but this is really helpful. When you say that you look for \"potential\", are there any things in particular that recruiters notice?\nI have been a bit worried about progressing quickly enough with animation to get a job; to me it seems like it's takes quite a long time to get to a good level, and I often feel like I am not improving much between each project I work on. Are there any ways you find helps you learn better (or faster)?\nAnd if you don't mind me asking, what are the most fun projects you've been working on throughout your career? :slightly_smiling_face:\nSimone",
+        "ts": "1574905176.003800",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-27\/839472956690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes absolutely. Is there anything in particular you’d like to know about?\n\nIt’s good that you mention Maya, as this is the software we use for animation and most of the work in my area of the industry. Where would you say your level of expertise is at with this software?\n\nAlso, do you have any work you’ve done that you’d like to show me? I’d be curious to see the animations\/visualisations you’ve been creating if you’re willing to send me a link to them.",
+        "ts": "1553199074.002000",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584380130820_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A little about my journey - \n\nI did a computer animation course at uni, which covered VFX too. Most of the people from my course go on to work in VFX due to the large VFX industry in London. I started at Double Negative. My dream was to be an animator and I did become an animator at Dneg.\n\nHowever, after spending some time in animation, I came to the realisation that animation wasn’t for me. I always enjoyed story, blocking and getting the idea for a shot achieved. But finals animation involved a lot of polishing. Some people love this - making a shot fully beautiful and final. But for me, I always liked getting the idea down and then moving on.\n\nThen I heard about previs, I discovered it by accident. And I successfully managed to switch over to previs. As soon as I got there, I realised that this was the place for me. It involved all the parts of animating that I found fun, but it was also about composition, cameras, storytelling and everything else that I love. It also enabled me to stay a generalist. I always enjoyed other aspects of Maya, and in previs, I was able to keep up other disciplines that I enjoyed.\n\nI’ve been in visualisation for about 8 years now and I’m still not sick of it. I get given the assets, and then I get to animate, compose shots, light, use FX - and everything else to create the previs shot. I also get to comp. I also can code in python, so sometimes I write tools.",
+        "ts": "1553200294.002100",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584401209780_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,154 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584618978.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584618978.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e735de1cca2270004e845e1|this link> with other teams to invite them in it_",
+        "ts": "1584618978.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584619192.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584619192.000900",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1584622898.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1584622902.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1584622917.001200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-31\" to \"enrico-and-heather\"",
+        "old_name": "z-shared-31",
+        "name": "enrico-and-heather"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@ocean.atoms has joined the channel_",
+        "ts": "1584622999.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013902404566_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@enry.artist has joined the channel_",
+        "ts": "1584623005.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1013902707238_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Heather, please meet Enrico your incredible E-Mentor we've been telling you about :smile:. Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:\n\nNote: You will not see your match as a \"member\" in this channel however you can see from the chat history that they have joined\/been added :smile:",
+        "ts": "1584623024.001500",
+        "username": "Dexter Boyce (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011693051872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1584623029.001600",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1011711895669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1584623034.001700",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1001627329553_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Heather! nice to meet you, my name is Enrico and I’m a Concept Artist\/ Visual Development Artist from Italy. I’ve recently finished to work on a 2D tv serie at Blue Zoo in London as Environment Designer (basically I draw all the locations and some props). I mostly focus on 2D design but during the production of the show I was provided with 3D models from Sketchup to speedup the production. I’m also pushing my skills on ZBrush, so I can block basic shapes for my environment and have different angles for the same location. What about yourself? :)",
+        "ts": "1584634395.001800",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1000868413923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Enrico :slightly_smiling_face: nice to meet you too, thank you for connecting with me! wow that sounds great, I've never worked at Blue Zoo myself. I'm a freelancer based in Manchester, I used to work in VFX in London. I'm trying to move into concept art as a full time role and wanted some help getting there which is why I signed up for this! I've worked on a few things as a freelancer, tv series and animation for a little bit. But I'd really like to move into concept art\/visual development full-time, hopefully in games as that seems to be the predominant industry up here in the North. I've built an art portfolio on the side ever since I was working in London, I keep adding to it when I can ( a lot more time now the COVID-19 thing has escalated!) that's really interesting you're pushing in ZBrush, I've used it myself a little but never for anything hard surface, it's always been really organic things.",
+        "ts": "1584638257.001900",
+        "username": "Heather Langford (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1014419210951_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that’s cool, what were you doing as VFX artist?  And what kind of TV animation were you working on? Were you working on concept art? Was it cartoony\/ kid style? That’s great your building your portfolio, if you want to send it to me I’ll have a look and let you know what I think about it! :) yes surely the actual situation is forcing \/ helping us to focus and be more productive, which is positive thing! Yes mostly I’ve done organic and a bit of hard surfaces but I’m at the beginning with that as well! ",
+        "ts": "1584647055.002000",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-19\/1012997340325_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

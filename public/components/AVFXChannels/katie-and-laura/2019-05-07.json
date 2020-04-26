@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sam, I'm really sorry but I'm going to need to cancel on our chat tonight - I'm going to be unavailable after work this week until next Monday (13th).\nPlease do feel free to send me messages on here in the mean-time! I can still reply it just might not be immediately! :hourglass_flowing_sand:\nHope your studies are going well? What's your next project?",
+        "ts": "1557227767.001000",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-07\/630501271142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Rob... Alexander loves the work! I haven't a clue which is the best quality export that matches the .mxf file I extracted the exrs from. I'll do some research but the write node is a bit of a mystery to me!",
+        "ts": "1584004559.006000",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/982807674066_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you give any pointers?",
+        "ts": "1584004570.006100",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/997805851590_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Essentially you want to export it in the same way as you imported it. Might be worth checking what colour space they are working in. In terms of exports, I would assume exr as well. When you work at companies they normally have all the export information preset or tell you early on in the project. But the best thing to do would be to double check with Alexander and the editor should give you the details",
+        "ts": "1584005295.006200",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/982829148498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also with your friend working on Cats sounds like you've heard about how bad the industry can be. Fingers crossed your house does go through. In terms of the stuff I'm doing these days, my work at ILM and Framestore have generally involved CG projects. Although Bond was the exception, a lot of 2D fixing things and stuff you could even say was cleanup some of the time, you can never really escape it lol",
+        "ts": "1584006233.006300",
+        "username": "Robert Rankin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/985563180401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Rob - I'll ask for more details on the colour space  - still clueless as to the export (exrs? dpxs? cineon?) Nuke doesn't export .mxf\n Alexander has an editor who might be able to suggest a format but I don't want to seem clueless or unprofessional by asking!  Happy to ask but thought I'd better check w you first!",
+        "ts": "1584039903.006400",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998837528583_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually you've answered this - window overlapped your answer and I read in a hurry! Embarrassed face palm. I'll just ask the editor!",
+        "ts": "1584040074.006500",
+        "username": "Jonathan Joubert (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996980706688_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

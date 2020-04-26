@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nevermind, scrap whatever I said: I was 100% convinced the application closed on the 5th of April, I just realized I've got another month.",
+        "ts": "1554038764.001300",
+        "username": "Ettore Zaccaria (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/594902056725_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll keep on working on it then and make it much better.",
+        "ts": "1554038786.001400",
+        "username": "Ettore Zaccaria (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/595643444215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "maybe take some of my older models as well and clean the topology",
+        "ts": "1554038810.001500",
+        "username": "Ettore Zaccaria (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-31\/585850654897_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

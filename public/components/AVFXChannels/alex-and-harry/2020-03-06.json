@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "nice, bit of distribution on a doughnut. Looks tasty.\n\nETC have just set up in bristol interestingly, they do some nice work, but i've heard mixed things about what they're like to work for, so ill be interested to hear what you think",
+        "ts": "1583491222.000700",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-06\/985060246964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

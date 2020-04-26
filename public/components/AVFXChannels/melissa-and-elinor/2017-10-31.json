@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi I’m sorry I haven’t been able to speak to you yet, I am fine thank you how are you? My phone was broken so I couldn’t speak to you! I was just wondering what subjects did you study at college to get into the university you are currently studying in? :blush:",
+        "ts": "1509470582.000389",
+        "username": "elinor.sandells (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-31\/264299029105_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

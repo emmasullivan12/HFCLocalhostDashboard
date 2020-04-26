@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ollie \nPleasure to e-meet you \nSorry for the late reply  I didn't get the notification for your message.\nI first heard about the field through my relative my aunty specifically who is a chartered accountant and i found it quiet interesting because i like to play around with numbers, I'm good at maths and I like solving puzzles \n",
+        "ts": "1539779668.000100",
+        "username": "Alya (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-17\/457447654992_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

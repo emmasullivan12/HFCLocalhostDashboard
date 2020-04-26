@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Last night couldn’t have really gone better. It was fun to present, I got a few laughs, and some high praise. A senior paint and roto artist from ILM really liked my reel and said it was just the sort of thing they look for from a candidate. I was the only 2D artist up there (and there were only 3 others out of about 60 people, surprisingly) and alongside some really nice 3D artists. Overall it was better than I could’ve thought and the only piece of feedback I really got was to apply for ILM’s graduate programme from ILM themselves. I feel really quite blown away.",
+        "ts": "1571990095.002300",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/808876044800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's awesome! Strike while the iron's hot and send in your application. Keep it up, looks like you're on a roll!",
+        "ts": "1572003679.002400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/796347029826_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to but unfortunately none of the graduate programs open up until March at the earliest. I will jump straight on every one I can for sure when they do. By that point I should have a stronger reel too! Thank you!",
+        "ts": "1572006663.002500",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/809194288085_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When do you graduate BTW?",
+        "ts": "1572030385.002600",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/809401310596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "May 2020!",
+        "ts": "1572030524.002700",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-25\/809877224149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

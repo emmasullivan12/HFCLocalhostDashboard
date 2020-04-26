@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awww fairs fairs. Did it take a while for you to get used to working at Framestore? I heard you learn way more when you start working compared to uni:sweat_smile: sounds intimidating!!\nHmmm okay do you have a preferred time of day? Mornings, afternoons, evenings? I can do Thursday morning or evening:sweat_smile: friday I thought I was free but something unexpected came up :triumph: or unless we shift it to next week?",
+        "ts": "1574787307.002500",
+        "username": "Mulan Luu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/852273319926_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Sorry if replies are slow haha! Umm it didn’t take awhile as I was running, but once I started as an artist you sorta have this epiphany that you’ve made it and have to remember maya etc haha can be daunting, but take you’re time and it’ll be fine! And it’s lovely at Framestore! :)\nI can be free Thursday morning? Just a quick chat really! Haha hope you’re studies are going well this week :grin:\n",
+        "ts": "1574806067.002600",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-26\/842614262849_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

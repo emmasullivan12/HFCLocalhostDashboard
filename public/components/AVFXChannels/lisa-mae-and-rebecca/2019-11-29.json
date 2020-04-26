@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I love that film!! \nHave you ever seen inspector gadget? I’m going to try and do something similar to his hat!",
+        "ts": "1575065914.008000",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-29\/842915406931_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

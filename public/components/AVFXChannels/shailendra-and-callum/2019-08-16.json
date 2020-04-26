@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, Shailendra! Here are some questions :smile:\n\nHow did you get your first job as a compositor?\n\nWhat was it like working at DNEG and Framestore?\n\nDid you work at DNEG in London?\n\nWhat are companies looking for in a graduate compositor showreel?\n\nWhat should I be practising?\n\nHave you ever been to FMX? If you have, what is it like?\n\nDo you use Nuke at Framestore?\n\nWhat kind of stuff are you working on at Framestore?\n\nDo you have any general tips for me?\n\nThanks!",
+        "ts": "1565985171.005000",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/722871003761_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These are just a few questions but I'll definitely have more soon! :smile:",
+        "ts": "1565985182.005100",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/717803641506_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also! During in October I'll be doing a compositing brief in University. Would you be able to give me advice\/critique throughout the brief?",
+        "ts": "1565985232.005200",
+        "username": "Callum McKay (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-16\/729255263285_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

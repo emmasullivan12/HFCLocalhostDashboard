@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy new year Chloe , I’m back to work and available to help with any questions.\nHope everything is going well with you , happy 2020 ",
+        "ts": "1579036073.000100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-14\/908644510150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

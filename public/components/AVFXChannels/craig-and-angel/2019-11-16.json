@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey craig, yes it has. I'm doing well just looking for advice in modeling as I am trying to push up to going into modeling  feels hard due to little experience. Any advice on this? Im not at framestore at dneg now. In matchmove. Iv been applying for modeling work in london, so still trying. I wrote quite a lot above could you reply to some of it when you get a chance, right now I'm doing some texturing which is of the phone I showed you using substance, hopping it will look good soon. Hope your having a good weekend so far I'm spending my time uving then painting. :) would be great to get advice from your friend on progressing from entry level role as iv been in matchmove for a while and wondering if I'll progress here or not. Getting that break can be tricky.",
+        "ts": "1573942433.000800",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-16\/826078830899_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope your doing great :) tha k you for getting in touch.",
+        "ts": "1573942454.000900",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-16\/839405048039_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank*",
+        "ts": "1573942459.001000",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-16\/826078955923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

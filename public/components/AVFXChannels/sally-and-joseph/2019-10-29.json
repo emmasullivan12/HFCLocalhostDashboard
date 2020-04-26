@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are there any learning resources you could recommend for texturing vegetation?",
+        "ts": "1572360032.003400",
+        "username": "Joseph Bishop (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/800560015154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

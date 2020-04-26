@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emanuele. We can meet next week Monday or Tuesday if you at the school. Otherwise the week of 26th is fine when you are at Holborn. \nI am in class from 1:30-4:30pm. So in the morning, lunchtime or after 4:30pm. Cheers ",
+        "ts": "1542717207.002300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/484090595810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

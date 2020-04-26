@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey sachin, when you are available, could I buy you a drink sometime? :)",
+        "ts": "1552391789.003700",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573780371284_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as a way of saying thanks and to have a nice conversation ",
+        "ts": "1552391800.003800",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/573814382178_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard. I don’t really drink anything :slightly_smiling_face: lol but we can definitely have a nice conversation :) \nWe may have to do it a bit later though as I’m going on a long holiday soon and trying to wrap a lot of stuff up before leaving \nSo a bit swamped at the moment :neutral_face:",
+        "ts": "1552403713.003900",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-12\/575107972871_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

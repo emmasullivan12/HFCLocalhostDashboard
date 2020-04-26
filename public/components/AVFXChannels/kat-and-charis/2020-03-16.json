@@ -1,0 +1,29 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aka have suspended their internship position for now due to covid19! But bluezoo released their internships not long ago, wonder what will happen now!",
+        "ts": "1584364926.003300",
+        "username": "Charis Dussek (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-16\/1004617263223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, interesting! Have you applied to Blue Zoo as well?",
+        "ts": "1584375491.003400",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Blue Zoo, as always are the most on it when it comes to the important issues! How're you getting on? Is your uni still open or are you all working from home?",
+        "ts": "1584375524.003500",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Arianna! how's the course going?",
+        "ts": "1569233333.001600",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/756817159762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "- not sure how much Dexter mentioned about what I'm doing for work, but i'm currently a 3D generalist working mostly on broadcast projects (as opposed to feature films\/commercials) on natural history programmes, we do things for museum attractions, as well as some flying theatre type rides too. I've been out of university and working full time for about 5 years, mainly using maya for 3d work.",
+        "ts": "1569235530.001700",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/763206653521_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Alex, nice to meet you!   \n\nI’m studying at Middlesex University in London, I’m about to begin the third year. The course name is 3d Games and Animation, so that’s why we’re more focused on video games in general rather than feature films. \nThis summer I was interning at blue zoo studio, where they do commercials and tv series for kids as well. So my style is more stylised\/cartoon oriented but I’m open to anything and realism as well.\n\nI had a look to your studio website and it is incredible. \n\nSorry if I am replying a bit late but I’m in my last days of holidays in the beautiful Venice, and coming back to London very soon. \n\nHow is the studio life? Do you do the texturing part as well? We use both Maya and zbrush for the modelling and for the texturing part we use substance painter. \n\nThank you for giving the opportunity to ask you some questions,\n\nArianna ",
+        "ts": "1569247237.001800",
+        "username": "Arianna Querin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769384614164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Morning Craig, and I understand.  It's been a crazy week. I really appreciate you replying. I know its not easy especially with how busy you can get. :).",
+        "ts": "1565855850.000900",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/729434209094_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did wonder about references. It seems it's a yes or no but unsure. Because if its not like the image exactly it worries me it will look bad. If that make sens.",
+        "ts": "1565855919.001000",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727250416112_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That would be great. I'm almost done with it. Just been trying to finish it because I have other things I want to move on with something different. Have other concept :)",
+        "ts": "1565857659.001100",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/715831116755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

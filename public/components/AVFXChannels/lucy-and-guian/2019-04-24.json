@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow! 7. I lived in a flat of 8 in my second year and it was great fun. I’m still good friends with most of them now.  We did have to work out boring things like dishes and bathroom cleaning rotas though :slightly_smiling_face:",
+        "ts": "1556108720.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-24\/619283152006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve been looking at your blog. Your project looks like it’s going to be great. Can’t wait to see it.  How are you creating your animation?",
+        "ts": "1556108747.000200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-24\/617075265861_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes living with so many differnt people is going to be really interesting!\nThank you I'm pretty excited for the animation and I will be using after effects and adobe animate to animate it.",
+        "ts": "1556111908.000300",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-24\/610865019329_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

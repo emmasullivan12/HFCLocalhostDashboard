@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Helo Guian. Hope you had a great weekend. The company I work for does VFX on films and episodic television.  I help run the business so get involved in all aspects of what we do. It's very varied.  I'm involved in pitching for new business, working to insure we have the right crew and technology to do the job well, that things are running smoothly, that we get paid when the job is done and are allowed to promote the work afterwards. Don't really have a very 'typical' day.  It depends what stage we're at with different projects.  Hope this helps.",
+        "ts": "1532336610.000142",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-23\/403242290949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see thanks. what type of programs and film s do you usually work for?",
+        "ts": "1532341325.000048",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-23\/403010338675_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Lots of independent films so last year we worked on Victoria and Abdul, My Cousin Rachel, Three Billboards outside Ebbing, Missouri, The Snowman, Guernsey and Mamma Mia 2 as well as a 10 part episodic TV series called Trust which comes out here in the Autumn.",
+        "ts": "1532347676.000060",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-23\/402635943649_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow that's great. what do you like most about your job?",
+        "ts": "1532348565.000063",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-23\/404235229783_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I love the proximity to amazing creative things.  It's exciting to be part of a project and watch it develop from a script until it's on the big screen.  :slightly_smiling_face:",
+        "ts": "1532370087.000224",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-23\/403332631571_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that must be a very fulfilling feeling. Gowcdis you start out in the industry.",
+        "ts": "1532372826.000184",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-23\/404820516054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

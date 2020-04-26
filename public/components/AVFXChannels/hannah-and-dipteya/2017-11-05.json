@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I'm actually an accountant so did accountancy qualifications..... everyone in our lab has a chemistry degree however...",
+        "ts": "1509913258.000080",
+        "username": "hannah.sullivan (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/267424591909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

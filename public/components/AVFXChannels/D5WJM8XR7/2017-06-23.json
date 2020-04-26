@@ -1,0 +1,102 @@
+[
+    {
+        "type": "message",
+        "text": "Heyy, whos your mentor??",
+        "user": "U5X3D52FM",
+        "ts": "1498248680.093976",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c392269b11",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e0c392269b1171920c8e0d37932c693f.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Justice",
+            "real_name": "Justice",
+            "display_name": "jallen",
+            "team": "T4UUTPV18",
+            "name": "jallen",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I have no clue ",
+        "user": "U5WBDCAFJ",
+        "ts": "1498252421.122627",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I need to check :joy::joy:",
+        "user": "U5WBDCAFJ",
+        "ts": "1498252426.123737",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Who's yours? ",
+        "user": "U5WBDCAFJ",
+        "ts": "1498252500.141433",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c196659188",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/40c1966591882ebf521486107b33078c.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ester",
+            "real_name": "Ester Remedios De Brito",
+            "display_name": "ester15",
+            "team": "T4UUTPV18",
+            "name": "ester15",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Mine is a man called Christian whos a associate director???",
+        "user": "U5X3D52FM",
+        "ts": "1498257680.154152",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g0c392269b11",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e0c392269b1171920c8e0d37932c693f.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Justice",
+            "real_name": "Justice",
+            "display_name": "jallen",
+            "team": "T4UUTPV18",
+            "name": "jallen",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

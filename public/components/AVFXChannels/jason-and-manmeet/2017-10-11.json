@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is the difficult part for me as i dont no what i really enjoy",
+        "ts": "1507745094.000378",
+        "username": "kaurm-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254219313504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just do some music classes, Gatka class and some reading (but thats religious) therefore, i dont do much after school because there are lots of homework and sometimes you can even get enough sleep.",
+        "ts": "1507745190.000529",
+        "username": "kaurm-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255010491205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok. Yes, I suppose it is difficult when you don't get a lot of time to yourself to explore other extra curricular activities you enjoy. \n\nSometimes it is not always about actually going into that particular activity as a job, but going into that industry. For e.g. if you enjoyed music - you would be able to look at a range of positions at different companies.\n\nFor instance, Spotify, Deezer, Apple\/ iTunes, \n\n",
+        "ts": "1507760925.000204",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254943551075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also BBC, ITV or Channel 4 who all own some of the music channels and have their own radio shows that play music ",
+        "ts": "1507760962.000285",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255158727477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "All of these companies have positions such as marketing, finance, strategy, HR,  etc. I always find that, people are always happier working in an industry and sector in which they understand",
+        "ts": "1507761019.000298",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255019389634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So in reality, your business course gives you the opportunity to apply for roles at the above companies (and any others), because it covers subjects ranging from finance, to marketing, to HR and everything else ",
+        "ts": "1507761086.000335",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255019875138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Which of the following best describes you?\n- mathematical\n- organised\n- loud \/ confident \n-Entrepreneurial\n-Creative \n\n\n\n",
+        "ts": "1507761202.000370",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/254945413187_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You can pick one or a few and describe any that arent in the list above ",
+        "ts": "1507761222.000253",
+        "username": "j_ayton (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255906168998_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

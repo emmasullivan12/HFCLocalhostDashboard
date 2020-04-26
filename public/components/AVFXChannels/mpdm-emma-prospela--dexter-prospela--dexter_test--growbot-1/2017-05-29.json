@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "text": "<@U4V22C6A1> curiosity",
+        "user": "U4VR52RQE",
+        "ts": "1496062204.040801",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "reactions": [
+            {
+                "name": "clap",
+                "users": [
+                    "U5JN4HP1S"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "bot_id": "B5KFHDXD5",
+        "type": "message",
+        "text": "`0` reactions :relieved: — <https:\/\/prospela.growbot.io\/praise\/|:clap: High fives all around!>  @emma-prospela `1`.",
+        "user": "U5JN4HP1S",
+        "ts": "1496062205.040999",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5KFHDXD5",
+            "deleted": false,
+            "name": "Disco",
+            "updated": 1516699988,
+            "app_id": "A0DV3EEN4",
+            "icons": {
+                "image_36": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_36.png",
+                "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_48.png",
+                "image_72": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        }
+    }
+]

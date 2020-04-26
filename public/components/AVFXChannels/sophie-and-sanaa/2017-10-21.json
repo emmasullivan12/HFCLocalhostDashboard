@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sophie, sorry it’s taken me so long to message, i’ve not been feeling well recently, but i thought i’d introduce myself, my names Sanaa i’m in year 12 and i’m currently studying biology economics and psychology at Villiers Sixth form, i’m really enjoying economics at the moment and i really enjoy maths, sadly i was unable to go forth with it because at the sixth form there was too many students in the class, so i’ve been thinking about a career in economics ",
+        "ts": "1508614824.000110",
+        "username": "sanaa3008 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-21\/260066593397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

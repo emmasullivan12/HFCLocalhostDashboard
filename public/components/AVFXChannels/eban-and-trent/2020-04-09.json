@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the delay, still getting used to the whole work from home thing. You would think I would have more time for online communication but right now it seems not. Third floor seems to be the biggest place specialising in pre viz that I know of. I have gotten work from them in the past. So thats a good place to start, good you are on their approved artist list. I dont think Fuse does a lot of pre viz. My friend just left their NY office so I could check. I did not even know they had an office in Atl. I think there is also Stars maybe? Let me check on that real quick...",
+        "ts": "1586459072.002900",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1052112217490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I was not thinking of stars, it was Encore, but apparently down there they are part of method. My friend formerly of Fuse seems to think that fuse's atl office does not really do any work. May just be there for tax incentives.",
+        "ts": "1586460748.003000",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1046311201223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Whats your setup like for remote work?",
+        "ts": "1586460808.003100",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1072586594320_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s totally okay! There’s no rush at all. But ya that makes sense that fuse is just here for the incentives, I know their office just opened up and I saw they were looking for compositors and like flame fx artists or something so i wasn’t sure exactly what the extent of the office here was going to be.\n\nCurrently I just have my asus laptop which runs every program from maya to C4D and Unreal totally fine. Normally I have another monitor too to get a dual screen going, but that along with everything else I typically have set up around me is back in New Hampshire. When I moved from Montreal to Atlanta, I figured once I signed a contract, I’d sign a longer apartment lease and then ship everything down, but now with everything pushed back I’m just here waiting in my AirBnb with the laptop :sweat_smile: but it runs everything smoothly so I’m not struggling to use anything right now.",
+        "ts": "1586479800.003200",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1055749402069_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Actually I was wondering, how do you normally go about getting freelance jobs? Is there a company that helps you find them? ",
+        "ts": "1586479866.003300",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1073477097008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Or is it just word of mouth once you have enough connections?",
+        "ts": "1586479890.003400",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-09\/1061085201092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

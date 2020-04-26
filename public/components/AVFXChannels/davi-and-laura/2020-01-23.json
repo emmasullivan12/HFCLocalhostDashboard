@@ -1,0 +1,322 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "HI Laura! Happy New Year! Sorry for the radio silence. I was in NY visiting family and then back teaching. How are you?\n\n[2:13 PM]\n<https:\/\/www.ukscreenalliance.co.uk\/wp-content\/uploads\/2019\/06\/The_Core_Skills_of_VFX_-_Student_Primer.pdf>",
+        "ts": "1579789356.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/918492143508_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&amp;utm_content=106162222&amp;utm_medium=social&amp;utm_source=linkedin&amp;hss_channel=lcp-2663437>",
+        "ts": "1579789378.000200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/921155154758_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Discover @ The Rookies",
+                "title": "Beginner's Guide to Visual Effects - A free book that explains everything you need to know about getting started.",
+                "title_link": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&utm_content=106162222&utm_medium=social&utm_source=linkedin&hss_channel=lcp-2663437",
+                "text": "Why pursue a career in Visual Effects? Maybe because it's a career that involves the perfect mix of story telling, cutting-edge technology and creativity. It could also be because you love films and want to hang out on set surrounded by movie stars. Maybe you want a career that allows you to travel the world or even work remotely from home. Or maybe it's because you love drawing and building things with your hands and on the computer. There are so many reasons why you would want to work in Visua",
+                "fallback": "Discover @ The Rookies: Beginner's Guide to Visual Effects - A free book that explains everything you need to know about getting started.",
+                "image_url": "https:\/\/discover.therookies.co\/content\/images\/2019\/09\/facebook-advert-1.png",
+                "image_width": 476,
+                "image_height": 250,
+                "fields": [
+                    {
+                        "title": "Written by",
+                        "value": "Andrew McDonald",
+                        "short": true
+                    }
+                ],
+                "from_url": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&utm_content=106162222&utm_medium=social&utm_source=linkedin&hss_channel=lcp-2663437",
+                "image_bytes": 757161,
+                "service_icon": "https:\/\/discover.therookies.co\/favicon.png",
+                "id": 1,
+                "original_url": "https:\/\/discover.therookies.co\/beginners-guide-to-visual-effects-free-ebook\/?utm_campaign=2019%20Q4%20Marketing%20Initiatives&amp;utm_content=106162222&amp;utm_medium=social&amp;utm_source=linkedin&amp;hss_channel=lcp-2663437"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579789378.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "v",
+        "ts": "1579789378.000300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html|https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html>\n\nInteresting exhibit later this spring. \nNature meets fantasy (vfx creator) design ",
+        "ts": "1579814084.000500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919278102468_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Fantastic Beasts™: The Wonder of Nature | Natural History Museum",
+                "title_link": "https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html",
+                "text": "Discover where the real and wizarding worlds intertwine. Fantastic Beasts™: The Wonder of Nature opens 22 May 2020.",
+                "fallback": "Fantastic Beasts™: The Wonder of Nature | Natural History Museum",
+                "image_url": "https:\/\/www.nhm.ac.uk\/content\/dam\/nhmwww\/visit\/Exhibitions\/fantastic-beasts-the-wonder-of-nature\/fb-title-treatment\/FB-Twitter-no-google.jpg",
+                "from_url": "https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 203760,
+                "service_icon": "https:\/\/www.nhm.ac.uk\/etc\/designs\/nhmwww\/favicon.ico",
+                "service_name": "nhm.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.nhm.ac.uk\/visit\/exhibitions\/fantastic-beasts-the-wonder-of-nature.html"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579814084.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries. Hope you are well. School is good, making our CVs so we can find work experience.\n\nHow’s work?",
+        "ts": "1579814364.000700",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909554798369_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. Cv!  Woe so good. My students are getting ready for a deadline. Some cool shots! \nFor 3 different short films for independent director, so they will get film credits. ",
+        "ts": "1579816609.000800",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908331841091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/women-in-industry.html|https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/women-in-industry.html>",
+        "ts": "1579817051.000900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922022331942_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Women in Industry | Webinars and tutorials | Escape Studios | Pearson College London",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/women-in-industry.html",
+                "text": "We look at what women can do to improve their chances of landing a job in the VFX industry. Whether you’ve recently graduated, completed a VFX short course or you’re looking to take the next step on the career ladder there’s plenty of advice to help you.",
+                "fallback": "Women in Industry | Webinars and tutorials | Escape Studios | Pearson College London",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/women-in-industry.html",
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/escape-studios\/webinars-and-tutorials\/women-in-industry.html"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817052.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1>",
+        "ts": "1579817116.001100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908346900259_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Introducing \"Joe\"",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1",
+                "text": "Escape Studios proudly presents \" Joe\" , a short film directed by third year student Callum Reeve and produced by Aidan Lonergan...",
+                "fallback": "Introducing \"Joe\"",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-dqt2dUf-zgE\/XioENYuTwHI\/AAAAAAAAF3A\/TruUif-DIH8zD4aN4MXqCyKz0LB0YYeFgCLcBGAsYHQ\/w1200-h630-p-k-no-nu\/thumbnail_JOE%2BoneSheet%2Bcopy.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1",
+                "image_width": 477,
+                "image_height": 250,
+                "image_bytes": 21650,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-joe.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817117.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One of the teams of animation, 3D and compositing students. ",
+        "ts": "1579817151.001300",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/908347937699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We will enter it into festivals!",
+        "ts": "1579817173.001400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922025700758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1>",
+        "ts": "1579817442.001500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/909639568017_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Introducing the \"March of the Potguins\"",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1",
+                "text": "March of the Potguins Escape Studios proudly presents March of the Potguins , a short film directed by third year student Michael V...",
+                "fallback": "Introducing the \"March of the Potguins\"",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-BnsIyaRjkjc\/XhyoBO2SBaI\/AAAAAAAAFuY\/G1f9js-HChAQDPvWnJaD5n6n1YJ3WRxcACLcBGAsYHQ\/w1200-h630-p-k-no-nu\/motp_oneSheet_LoRez.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 81440,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-march-of-potguins.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817444.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1>",
+        "ts": "1579817596.001700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Introducing \"Draw\"",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1",
+                "text": "Escape Studios proudly presents \"Draw\" , a short film directed by third year animation student Martin Kamminga , and completed as part ...",
+                "fallback": "Introducing \"Draw\"",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-R9x78TzegBM\/XhNTEAcZZOI\/AAAAAAAAFqE\/2nryIQF5kQUEYl8RfcoV0PBS-z3ea3FWACLcBGAsYHQ\/w1200-h630-p-k-no-nu\/drawPoster_LoRez.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1",
+                "image_width": 477,
+                "image_height": 250,
+                "image_bytes": 55769,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/introducing-draw.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817596.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1|http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1>",
+        "ts": "1579817683.001900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/919842160997_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "\"Offcut\" Selected for Dirigo Film Festival",
+                "title_link": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1",
+                "text": "Many congratulations to the makers of \"Offcut\" , whose film has been selected for its first festival entry - the Dirigo 6th International ...",
+                "fallback": "\"Offcut\" Selected for Dirigo Film Festival",
+                "image_url": "https:\/\/1.bp.blogspot.com\/-vRWwQQ8R6ps\/XhxEvi_eeII\/AAAAAAAAFtU\/OqUu52vurkYiGEOkqJBhyQrDBW1CxCeSACLcBGAsYHQ\/w1200-h630-p-k-no-nu\/One_sheet.jpg",
+                "from_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 58267,
+                "service_icon": "http:\/\/escapestudiosanimation.blogspot.com\/favicon.ico",
+                "service_name": "escapestudiosanimation.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/escapestudiosanimation.blogspot.com\/2020\/01\/offcut-selected-for-dirigo-film-festival.html?m=1"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579817684.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Need help in your Cv? ",
+        "ts": "1579817704.002100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/907042464786_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, nice! I will take a look at them when I have the chance:+1::skin-tone-2:",
+        "ts": "1579852665.002200",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/920297111248_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I’m fine with the CV, if anything it’s finding companies\/agencies that will actually let me do work experience with them:sweat_smile:",
+        "ts": "1579852706.002300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-23\/922509955158_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

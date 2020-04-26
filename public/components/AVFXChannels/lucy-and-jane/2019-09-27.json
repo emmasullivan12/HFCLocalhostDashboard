@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  I didn’t expect you to look at everything instantly :slightly_smiling_face: I think had I known more about marketing or business degrees when I was applying I probably would have gone that way which is where I ended up.  Can you tell me where the courses are that you are thinking of applying for?  I can then do a bit of homework for you on the context of them and what their graduates are up to and send it back.  It might be helpful for you.",
+        "ts": "1569578739.003600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-27\/764094895651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

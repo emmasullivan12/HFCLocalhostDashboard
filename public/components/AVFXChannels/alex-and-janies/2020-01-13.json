@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thanks. I had a look at goldman sachs and kpmg - thye both look good :slightly_smiling_face:",
+        "ts": "1578907023.002000",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903577359669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeahh, but I need to write a cover letter for both.. which is not really working out well :sweat::sweat:",
+        "ts": "1578907274.002100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903581986053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think I would start writing my letter for kpmg because they are giving you more hints about what they are looking for.\n\n*kpmg*\nIt's a good idea to go through their list of \"Key Skills*\"* and try to show them in your letter and CV that you have them. also mention how exciting you think their \"Training and Development\" plan is.\n\n*goldman sachs*\nthey already say what they want to see in the letter: \"Cover letters should describe applicants’ motivation for wanting to pursue a Degree Apprenticeship vs. the traditional university route\"\nother than that, you can take the parts from the kpmg letter where you say how excited you are about the program (adapt a bit maybe).",
+        "ts": "1578907423.002200",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/893361151569_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven't watched the goldman sachs videos at the bottom but they might give you really good points to talk about too.",
+        "ts": "1578907524.002300",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/905435061239_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "something where you can say \"I was impressed how the students in 2016 were able to do XYZ\" or a note about the perspectives they are outlining in the other video - \"The perspectives I have as an apprentice with you motivate me to give my very best\".",
+        "ts": "1578907790.002400",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903591682597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "writing a first draft is always the hardest :slightly_smiling_face: don't let it discourage you - it doesn't need to be perfect",
+        "ts": "1578907934.002500",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/893371277665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "let me know when you have a few sentences our paragraphs and I'll have a read",
+        "ts": "1578907961.002600",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903595391477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Omg thanks a lot!! That's incredibly helpful! Thank youu!! \nI'll send u my first draft after I'm done with it",
+        "ts": "1578908237.002700",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-13\/903590301152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

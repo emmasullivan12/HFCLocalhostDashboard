@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane. Hope you're well. Just letting you know I'm off on holiday next week.  I'll check in on my return.  :slightly_smiling_face:",
+        "ts": "1581611097.001600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/950655308292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

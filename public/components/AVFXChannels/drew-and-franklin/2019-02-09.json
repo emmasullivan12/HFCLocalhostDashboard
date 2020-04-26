@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Drew, I hope your business meeting went well. Personally I'm trying to create a mininshow reel to be able to apply roto artist at the end of the course. I really like the clean plate technique. There are many questions that I would ask you to do I would not just disturb too much. Example what techniques or characteristics are they essential to be a good compositor?",
+        "ts": "1549720108.002100",
+        "username": "Franklin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-09\/546624501987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a good day and thanks for the time ",
+        "ts": "1549720157.002200",
+        "username": "Franklin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-09\/545996426192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

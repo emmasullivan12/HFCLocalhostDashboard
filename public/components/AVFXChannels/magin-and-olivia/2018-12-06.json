@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok fair enough! I totally forgot about Spanish being your first language. I think it would be 5-6 hours like 2 in the morning and 3 in the afternoon or just the afternoon ",
+        "ts": "1544092461.000300",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/496851472596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Bah! That's kind of impossible. But thank you anyway for think about me! :smile:",
+        "ts": "1544108488.000400",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/497433057045_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

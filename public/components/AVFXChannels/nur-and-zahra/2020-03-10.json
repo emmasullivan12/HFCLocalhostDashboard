@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! Sorry for such a late response, I’ve been super busy with schoolwork and going out with my family over the weekend. I hope you weekend was good :)",
+        "ts": "1583826676.005400",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/979276277731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll get started on the face topology draw-over now! It sounds like great fun, thank you",
+        "ts": "1583826698.005500",
+        "username": "Zahra Tilling (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/977956565346_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worried Zahra, no rush top. I am glad you liked it. Please send me when you complete, than i will have alook and make comments. Have fun!",
+        "ts": "1583828192.005600",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/977987700658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One more thing, while you are drawing, try to analyze the shape of the face and guess what kind of a flow should be there on specificly that face. Imagining the topology before you draw is like a skill that can be improved by time. Cheers!",
+        "ts": "1583829705.005700",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/992673143047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am very excited to see your version!",
+        "ts": "1583829782.005800",
+        "username": "Nur (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/990356516900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

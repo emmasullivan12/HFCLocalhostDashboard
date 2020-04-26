@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Michael, that sounds very cool - and production experience with a tight deadline is something that just can't be simulated. Also leading a team is a very important skill, maybe not something you'll be doing straight away, but a good indicator for future progress. Mad weeks out of the blue are part and parcel of VFX so sounds like a good interview anecdote actually.\n\nI used my own interpretation of that keying template on Bodyguard, my main changes were to make it easier to separate the different characters (defocused FG police officer in fluorescent yellow, midground characters in white hazchem suits and hero with hair detail) into their own columns so they could each have separate edge and core keys. Keeping areas separate is really important as you might have a not to fix the hair of the character on the left and tmyou don't want to break anything on the right which every e is happy with.",
+        "ts": "1579249982.000100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/910656316613_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Work has been slowly picking up and I helping to finish up on a project as the film I'm assigned to is still in asset development.\n\nThanks about broken Toy! I am still trying to put in funding applications and have just approved the first concept sketch.\n\nRight of to the gym before work!",
+        "ts": "1579250204.000200",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/910194350756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, it was definitely a new and valuable bit of experience. After Potguins it was nice to do some busy client work too.\n\nWe’ve covered breaking it up into different keys quite a bit, thankfully. I’ve got a pretty good matte on my subject for the most part but I’m losing a fair bit of fine hair detail. It’s black hair so it’s very quick to start matching darker areas of the green screen when it thins out.\n\nThat’s great! I hope it goes well!",
+        "ts": "1579262131.000300",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/910424453108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You often can't get fine hair in the alpha so using additive keys can work\n\nOne way is take your despilled plate, grade the screen to white using white point in the grade mode, clamp white and black and then multiply this over the BG, put your normal key on top.\n\nFor light hair don't clamp but grade the screen to black and plus it over the BG (if you do vt clamp the black levels this will also get dark hair because negative numbers)\n\n\nLast resort is track hair patches on using Mocha or even smart vectors  (do that a lot with bad screens)",
+        "ts": "1579281797.000400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/899930763987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah, thank you! I appreciate the advice. The key is coming along well so it's mainly smaller details like that and integration work at this point. Finding a good background that fits nicely has been a bit of a struggle but I think I might have landed on something that works. I've been trying to use an HDRI as a starting point because the camera rotates quite far.",
+        "ts": "1579304243.000500",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/899145449522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Quite unfortunately my hard drive has gone missing, so I can't do a lot more until I'm back at Escape, but if you'd like to see a version I can send one when I'm happier with the comp! I really hope the drive turns up, I've got backups for most of the important stuff, but replacing an SSD is not a nice hit to the wallet!",
+        "ts": "1579304467.000600",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/900465011651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

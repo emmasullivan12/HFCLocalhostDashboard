@@ -1,0 +1,50 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Callum!\nhow are you getting on?\n\nGood to hear you went out and shot some footage.\n\nA job at ILM would be great start in the industry. A reel that demonstrates some of what you would be doing could help getting the foot in the door.\n\nsome solid paintwork could be challenging(and setup you up as you progress and gain more experience)\n\nA senior compositor essentially does a bit of everything to deliver final shots at the last minute.\n\nI would say every experience helps whether\n-simulating lens defocus(from your days shooting)\n-although you do get a lot of paint and roto done but being able to do some unplanned paint\/roto at the last minute really helps with getting shots done\ne.g. removing an arm and replacing with CG when it doesn’t cover the plate as it got changed.\nI recently had to remove rain from a busy wide shot while procedural stuff with frame boolean\/min\/max\/avg got us 90% there,\nthe last bit took some frame by frame painting.\n\n\nsome ideas on how its done\n1. extensive frame by frame painting is done in a raster paint system e.g. silhouette\n2. one of my favourite tricks in compositing is stabilize and conquer. this really helps with paint as well. also there are tricks with STMaps etc to minimize transformation filtering.\n3. a typical shot with say a rig removal would require multiple techniques. track clean patch,  warping, camera projection, paint and so on\nTry to breakdown a large problem into small bits. test out a few frames and take it from there.\n\n\n\nframe by frame paint.\n-start with a sharp hero frame\n-clone the hero frame into the next frame\n-paint is essentially lots of little merge operations with dissolves. if they are big and manageable we do it as a nuke script comp else with a brush(its not uncommon to have a few thousand strokes)\n-play back, redo\/paint on top\n-learn keyboard shortcuts\n-work on degrained plate and add back the grain\n-preserve details, make it look seamless when played back.\n-Enjoy being David Copperfield\n\nfeel free to ask anything you are having trouble with.\n\nThat’s a nice reel. starts with the basics and ends with something more fun.\nKeep at it!\nhopefully you can add everything you’ll be doing in the coming months and standout among the crowd.\n\nGoodluck!\n",
+        "ts": "1576704013.000100",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/869159256993_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FRUUN58UC",
+                "created": 1576704649,
+                "timestamp": 1576704649,
+                "name": "IMG_0557.mov",
+                "title": "IMG 0557",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 17931480,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRUUN58UC\/img_0557.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FRUUN58UC\/download\/img_0557.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FRUUN58UC-97252cd048\/img_0557_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FRUUN58UC\/img_0557.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FRUUN58UC-42805cc742",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1576704650.000200"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And how did you decide on that job ?",
+        "ts": "1508265013.000193",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257072888080_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

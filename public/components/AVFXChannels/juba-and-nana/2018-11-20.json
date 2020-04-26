@@ -1,0 +1,106 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Any interesting news in your industry at the moment?",
+        "ts": "1542704923.003000",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/483219938816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, yea I will try some thickness, and try and add some bevels.",
+        "ts": "1542704998.003100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/483957646546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Finished Design for the character! Becoming more and more comftable with designing and drawing, so going to keep at it!",
+        "ts": "1542714310.003200",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/483457073985_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FE87QGNGM",
+                "created": 1542714381,
+                "timestamp": 1542714381,
+                "name": "Male.png",
+                "title": "Male",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 113169,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FE87QGNGM\/male.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FE87QGNGM\/download\/male.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 322,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 430,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 645,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 716,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 859,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE87QGNGM-4bd52ae83a\/male_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 917,
+                "image_exif_rotation": 1,
+                "original_w": 2433,
+                "original_h": 2178,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FE87QGNGM\/male.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FE87QGNGM-e2f65f37a6",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1542714385.003300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Modeling will take me a while for sure, got a lot to learn there.",
+        "ts": "1542714558.003600",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-20\/483894130148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

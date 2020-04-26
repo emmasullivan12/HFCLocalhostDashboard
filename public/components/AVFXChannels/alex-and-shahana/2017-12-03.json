@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I know the mentoring scheme is ending this evening :sweat: I hope you found my advice helpful and I think you seem really capable and confident in what you want to do and I know you can achieve it! Just keep up the proactivity and I think your confidence will keep of developing :) thanks for being a great mentee and all the best in the future :tada::tada::tada:",
+        "ts": "1512313975.000041",
+        "username": "alex.gordon27 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-03\/280444778097_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thankyou sooo much for ur advice:relaxed: it has been very helpful and you have been sucha an amazing mentor:+1::skin-tone-5: I hope u achieve all the goals u may have and again thankyou for everything:relaxed::relaxed:",
+        "ts": "1512327983.000119",
+        "username": "shahana1812 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-03\/280996982674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

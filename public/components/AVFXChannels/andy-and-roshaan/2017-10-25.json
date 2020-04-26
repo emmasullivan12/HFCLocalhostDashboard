@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven't finished my personal statement or UCAS application but hopefully should be done the Nov the 7th .. The universities i like so far are Kent Warwick Bristol.. Because im only doing one science ..my university options are VERY limited.. Most uni is require ta sciences for Biology ",
+        "ts": "1508961388.000089",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262130550149_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Require two *",
+        "ts": "1508961488.000418",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/261339510784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its kind off stressful thinking about universities .. I mean what if i get into a uni and i regret going there? How was your time when choosing universities ?  ",
+        "ts": "1508961555.000389",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262877045990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Try not to stress. No point - won't help. It's all good. university is university - the experience is pretty similar everywhere.\n\nI didn't work hard enough in my last year of uni so didn't end up going to the university I wanted, but I still had a good time at university. Worked hard, and got an training contract with an accounting firm when I left.\n\nI didn't regret where I went to university, only that I didn't work hard enough to get to the best possible university that I could. So my advice would be not to stress about where at university, but to focus on getting the best grades possible because that will give you the most options. \n",
+        "ts": "1508994330.000202",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262321703605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is the personal statement going?",
+        "ts": "1508994383.000070",
+        "username": "afandy.vanhien (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-25\/262105966419_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

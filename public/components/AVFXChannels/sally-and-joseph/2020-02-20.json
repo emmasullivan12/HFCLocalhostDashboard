@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry. This app doesn’t notify me when I have a message! Sure, feel free to send anything and I’ll give feedback :) Which university are you studying at? ",
+        "ts": "1582231420.000100",
+        "username": "Sally Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/962039614101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

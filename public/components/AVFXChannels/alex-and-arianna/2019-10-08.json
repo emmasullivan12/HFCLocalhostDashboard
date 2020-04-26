@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hei Alex!! I didn’t receive the slack notification, so Ive just opened slack and found your message. Thank you for your explanation. \nFantastic. \n\nI started my last year of uni last week . Our first brief is to create some environment \/ or make a character. \nYeee, this year we’re going to have some quixel workshop finally. I know just the basics of substance designer. Really cool. \nAnd then I want to do some personal experiment with foliage. Cos I think not many people do that...\n\nAt the same time I’m writing my dissertation, it’s about stylisation and hyperrealism in videogame. \n\nIn your studio are you split into environment artist and asset  artist? Or do you make a bit of both? How are the task assigned?  \n\nCan I please add you in LinkedIn? \n",
+        "ts": "1570604353.000100",
+        "username": "Arianna Querin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/788807496453_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

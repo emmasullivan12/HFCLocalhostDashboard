@@ -1,0 +1,57 @@
+[
+    {
+        "bot_id": "B5KFHDXD5",
+        "type": "message",
+        "text": "`0` reactions added to the <https:\/\/prospela.slack.com\/archives\/mpdm-emma-prospela--dexter-prospela--dexter_test--growbot-1\/p1496062204040801|props> you received! _<https:\/\/prospela.growbot.io\/preferences\/?token=a527ae1d|Unsubscribe>_\n```<@U4V22C6A1> curiosity```",
+        "user": "U5JN4HP1S",
+        "ts": "1496062698.296026",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5KFHDXD5",
+            "deleted": false,
+            "name": "Disco",
+            "updated": 1516699988,
+            "app_id": "A0DV3EEN4",
+            "icons": {
+                "image_36": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_36.png",
+                "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_48.png",
+                "image_72": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/avatars\/2018-01-17\/300655353986_53957f8929256e832140_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        },
+        "attachments": [
+            {
+                "callback_id": "props-thanks",
+                "fallback": "Send a thank you phrase",
+                "text": "Send a thank you phrase to <@U4VR52RQE>.",
+                "id": 1,
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": ":on: :top: of the :earth_americas: ",
+                        "text": ":on: :top: of the :earth_americas:",
+                        "type": "button",
+                        "value": "{\"version\":\"thanks-phrase\",\"phrase\":\":on: :top: of the :earth_americas: \"}",
+                        "style": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": ":dancers: dancing inside",
+                        "text": ":dancers: dancing inside",
+                        "type": "button",
+                        "value": "{\"version\":\"thanks-phrase\",\"phrase\":\":dancers: dancing inside\"}",
+                        "style": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": ":elephant: I'll remember this",
+                        "text": ":elephant: I'll remember this",
+                        "type": "button",
+                        "value": "{\"version\":\"thanks-phrase\",\"phrase\":\":elephant: I'll remember this\"}",
+                        "style": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

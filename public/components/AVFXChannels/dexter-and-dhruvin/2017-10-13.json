@@ -1,0 +1,29 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is another good coding website <http:\/\/www.vikingcodeschool.com\/> (for once you are done with your English retake)",
+        "ts": "1507899575.000306",
+        "username": "dexter (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-13\/255924538674_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Become a Web Developer | Viking Code School",
+                "title_link": "http:\/\/www.vikingcodeschool.com\/",
+                "text": "Viking Code School is the premier program for learning professional web development online",
+                "fallback": "Become a Web Developer | Viking Code School",
+                "image_url": "https:\/\/s3.amazonaws.com\/viking_education\/logos\/logo_ship_text_1200x628.png",
+                "from_url": "http:\/\/www.vikingcodeschool.com\/",
+                "image_width": 478,
+                "image_height": 250,
+                "image_bytes": 45579,
+                "service_icon": "http:\/\/www.vikingcodeschool.com\/assets\/favicon-20ebb0ffcc080230bef95525bef87ef419f263d0cf38f6176623d27e3c2e6661.ico",
+                "service_name": "vikingcodeschool.com",
+                "id": 1
+            }
+        ]
+    }
+]

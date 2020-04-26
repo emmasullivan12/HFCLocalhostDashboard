@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't think it is. I did another test called memtest and it passed that fine. Anyway I let the guy know and he said it'd probably be resolved with a bios update so I'll keep an eye on that. Anyway I've changed it to 98 so it's barely effecting the performance anyway and still running OK.",
+        "ts": "1575758323.008800",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-07\/866097259415_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

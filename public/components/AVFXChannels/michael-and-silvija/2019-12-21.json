@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! \n\nHow are you? \nWould you be available to have a call after the New Year? \nSo many assignments at the moment :persevere::persevere::persevere:\nHopefully, you are having a wonderful time! \n\nHave a lovely Christmas! :christmas_tree:",
+        "ts": "1576916417.000100",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-21\/872696925665_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

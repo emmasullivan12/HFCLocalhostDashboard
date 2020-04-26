@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That fixed my issue nicely using the workflow you said above ^ so thanks for that :grin:",
+        "ts": "1571242267.002400",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/791286812545_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

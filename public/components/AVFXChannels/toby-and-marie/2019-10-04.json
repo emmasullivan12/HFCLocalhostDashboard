@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Toby, if you would have time tomorrow at 7 that would be great! Looking forward to speaking to you :smile:",
+        "ts": "1570218391.002200",
+        "username": "Marie Geert Jensen (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/786393838407_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes totally. If you have any animation or anything you want me to take a look at. You can either upload it somewhere, or maybe email it to me at <mailto:winder.toby@googlemail.com|winder.toby@googlemail.com>",
+        "ts": "1570225440.002300",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/784202026932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you can find me on skype under <mailto:tobywinder@hotmail.com|tobywinder@hotmail.com> and on discord my username is blurgh (<mailto:winder.toby@googlemail.com|winder.toby@googlemail.com>)",
+        "ts": "1570250844.002400",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-04\/786709806727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

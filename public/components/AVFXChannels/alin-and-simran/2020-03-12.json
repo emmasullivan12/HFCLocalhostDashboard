@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow those showreels are really nice!! \nAnd cool, I didnt really think of showing different skills in each piece so that’ll be something I’ll definitely work on",
+        "ts": "1584029706.008300",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/985060286867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would it be okay if I send you my WIPs when I start on new projects for feedback?",
+        "ts": "1584029774.008400",
+        "username": "Simran Matharu (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998394367799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

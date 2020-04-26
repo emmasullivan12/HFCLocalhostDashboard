@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Alex! Sorry for the late reply.. I didn't get notified for some reason",
+        "ts": "1539261043.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/453443467009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that seems VERY interesting ",
+        "ts": "1539261052.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454050026434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have been trying to gain work experience in a computer science related industry but most places I've checked say that it's better to have made programs made for evidence of skill",
+        "ts": "1539261231.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/454052204210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What would u recommend? ?",
+        "ts": "1539261238.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-11\/453445802353_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

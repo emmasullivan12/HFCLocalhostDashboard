@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Its good practice to UV as you go, especially with such a large asset. Otherwise you have a daunting task of doing it once finished, and it can be a nightmare.",
+        "ts": "1553189005.016500",
+        "username": "chris cook (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/585660729878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you start practicing now, you will soon get to the habit where you can have each object mostly UVd early on, when it is easier as you dont have a million edgeloops, then as you are modelling the back of your brain is already taking in to consideration what is happening to the UVs and the work required to fix them is relatively minimal",
+        "ts": "1553189096.016600",
+        "username": "chris cook (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/585298521447_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice thanks, I had never thought about it. I will do it from now on. Btw, have you had a sec to look at the obj?",
+        "ts": "1553189283.016700",
+        "username": "Ettore Zaccaria (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-21\/584115432003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

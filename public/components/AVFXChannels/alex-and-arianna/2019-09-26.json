@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hi Adrianna, sorry about the radio silence, it got a bit busy for a few days here - blue zoo is a cool place to intern if you're into doing more stylised work, i think  a few people from my uni course may have ended up there.\n\nThanks, it's a bit of a mixed bag here in terms of work - we're only a small studio, with maybe 20 people tops, we'd tend to let freelancers use whatever they are comfortable with, so we have licenses for zbrush, mudbox, mari, and substance designer as far as software that can be used to texture. We were pushed to use mari in uni, as its a bit of a standard for features, but to be honest, i was too lazy to learn, and mostly used mudbox. We do a lot of environment work here, so i've found myself using quixels megascans and their handy blending app, which lets you blend and mix the scan-based materials. i think the allegorithmic folks have come up with something that overlaps slightly called Alchemist. I'd love to learn a bit of substance, and really like the idea of being able to create things a bit more procedurally. I think a lot of the time games art tools tend to be far more efficient, to allow for the scale of the the content needed in a game, whereas film tools seem to be a bit more laboured.",
+        "ts": "1569489699.001900",
+        "username": "Alex (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-26\/767625167777_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

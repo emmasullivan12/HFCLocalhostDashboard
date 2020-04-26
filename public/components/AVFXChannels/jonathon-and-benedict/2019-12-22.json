@@ -1,0 +1,562 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, sorry for the late reply.\n\nThanks for the detailed response!",
+        "ts": "1577043224.000100",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883161723108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am trying to get an internship atm, for summer Southampton doesnt offer years in industry that i know about.\n\nHow did you network in your local industry? Thats something i want to do more.",
+        "ts": "1577044638.000200",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885484912423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey no worries, i thought it would be easier to try touch on a little of everything to give you an idea of how varied it can be. \n\nIn regards to the year in industry. Does your course not include a sandwich year? ",
+        "ts": "1577045264.000300",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883628664032_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They offer a year abroad at another uni in another country...",
+        "ts": "1577045428.000400",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883172949684_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that's interesting. It might be worth enquiring about just to make sure because I know its common for degree courses to allow you to do a years placement if you can secure\/find one.",
+        "ts": "1577045549.000500",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870847456098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, you think its worth it if i Can find something?",
+        "ts": "1577045611.000600",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/872162514467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for example Sumo offer this scheme: <https:\/\/www.sumo-digital.com\/our-2020-2021-undergraduate-student-placement-scheme-is-open-for-applications\/?utm_source=T&amp;utm_medium=PlacementBlogDec&amp;utm_campaign=T_PlacementBlogDec>",
+        "ts": "1577045627.000700",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/873381671345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah there isn't loads of them out there but if you can find one they are worth doing",
+        "ts": "1577045684.000800",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885490408423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Similarly if you can find a way to get some in house experience somewhere that will help a lot too.",
+        "ts": "1577045736.000900",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/872163155747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You might also want to keep an eye on Unity as they tend to run a really good placement scheme.",
+        "ts": "1577045777.001000",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883174710980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not sure if they will be running the same one in 2020 though.",
+        "ts": "1577045806.001100",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/873382580961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for networking within the local industry it was just a case of finding events related to game dev or where there would be some kind of development presence. I did also attend things like EGX and Develop quite regularly too.",
+        "ts": "1577045928.001200",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885491624359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm yeah thanks, was looking for these but had trouble finding many.",
+        "ts": "1577045939.001300",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/872164140515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as in internships. But dev things too.",
+        "ts": "1577045985.001400",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885839973654_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think networking is one of the main things I need to work on. I dont really know what to say to devs when I meet them.",
+        "ts": "1577046018.001500",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883632413504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I went to EGX and maneged to talk with a few, but the conversations wont have been remembered or anything.",
+        "ts": "1577046046.001600",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883642766021_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When it comes to networking its hard when you are starting out. So I always advise trying to with someone. The more you learn about development and the more you have those kind of conversations the easier they will become.",
+        "ts": "1577046136.001700",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870850358258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also this was posted on youtube recently: <https:\/\/www.youtube.com\/watch?v=RpvPyuBuT4Q>",
+        "ts": "1577046167.001800",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883633134752_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Networking Etiquette for the Modern Games Industry Professional",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=RpvPyuBuT4Q",
+                "author_name": "GDC",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UC0JB7TSe49lg56u6qH8y_MQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/RpvPyuBuT4Q\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Networking Etiquette for the Modern Games Industry Professional",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/RpvPyuBuT4Q?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=RpvPyuBuT4Q",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=RpvPyuBuT4Q"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It has some pretty good take aways about industry networking.",
+        "ts": "1577046194.002000",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883176751396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok ill watch that later, GDC talks are usually good.",
+        "ts": "1577046214.002100",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/872165478867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They are literally how I've learn a lot of things about development haha.",
+        "ts": "1577046253.002200",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870850905810_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "you say \"Trying to [blank] with someone\"\n\ndid you mean to type something there?",
+        "ts": "1577046270.002300",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883643836021_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "They are literally how I've learn a lot of things about development haha.",
+        "ts": "1577046326.002400",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/872166013731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "on the message starting \"When it comes to networking\"",
+        "ts": "1577046333.002500",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885493589351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh trying to go with some one sorry",
+        "ts": "1577046392.002600",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/873385423617_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahh cool thanks.",
+        "ts": "1577046408.002700",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883634295936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "phone cut my message short,",
+        "ts": "1577046422.002800",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870851713586_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "its fine 0:)",
+        "ts": "1577046429.002900",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/872166503651_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I would be interested in seeing how you design levels, This is something that is very freeform in our course, there isnt a set method or anything, other than grey-boxing. I am wondering if there is some sort of visual method for presenting level designs that is industry standard. Especially 2d.",
+        "ts": "1577046492.003000",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883178177012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When approaching Networking try to go with someone if your a little nervous.",
+        "ts": "1577046495.003100",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885842450726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I wouldn't say that there is a industry standard. Some studio have a emphasis of paper designs while other are happy to take a little more of a free form approach.",
+        "ts": "1577046582.003200",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870852489538_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok, that the vibe i was getting to be honest. so thanks",
+        "ts": "1577046680.003300",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870853083410_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Personally I always like to start with some kind of paper design which will usually include  a level breakdown detailing the key game play moments. I will also identify the mechanics, abilities or weapons that will be available to the player so i know what I have to work with.",
+        "ts": "1577046713.003400",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883179366756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will then gather references images to help me understand how a space appears\/ functions in the real works. From there I would a rough 2d sketch of the level to highlight the critical path.",
+        "ts": "1577046850.003500",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883646769701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The sketch is always just help me get started when taking it into engine. Never get to precious about things in your paper design as it will inevitably change as you start to build it in engine and you have to work with game systems etc.",
+        "ts": "1577046945.003600",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883637003792_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ok",
+        "ts": "1577046994.003700",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/885844988486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So a lot of the design is actually done inside the game engine. Not just implementation of a design.",
+        "ts": "1577047035.003800",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883180918484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would says it more of a iteration on the design. First iteration will usually paper then future iteration will be in engine, adjusting layout so it flows and plays better then you will start to implement the logic flow.",
+        "ts": "1577047200.003900",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883181672260_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So you wouldnt say you create multiple designs when making levels and then eliminate them, but more that one key design is focused on for the entire development of a level.",
+        "ts": "1577048142.004000",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883652879797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pretty much. Although this is contingent on the paper design translating successfully.",
+        "ts": "1577048256.004100",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870860578210_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I understand. cool.",
+        "ts": "1577048332.004200",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870860926770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Some times it might not work out how you thought which will either result in a complete redesign or more commonly you will end up adapting to something more suitable",
+        "ts": "1577048373.004300",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/873394983057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I am so used to the multiple designs thing because of my background in art. So i think knowing this will help me create a better level design workflow.",
+        "ts": "1577048428.004400",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883187684596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hmm, wondering if there is anything else you want to know about me? how i should use this channel? Is me just asking questions as I think of them about right?",
+        "ts": "1577048435.004500",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870861629138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Multiple designs can be required sometime but usually only if your want to present two different approaches. e.g stealth approaches v a combat approach.",
+        "ts": "1577048597.004600",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883655307605_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But you will always know what you have to work with when building a level usually. Sometimes you might need to request a new feature to execute your vision because you can't quite achieve what you need with the current systems.",
+        "ts": "1577048713.004700",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/870863073282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For now just asking questions is fine. In the new year I will think of a little bit more of a structured approach. So I can ensure you hopefully get the most out of the experience.",
+        "ts": "1577048809.004800",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883656403861_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok thanks, and yeah no pressure or anything. Thanks 0:)",
+        "ts": "1577048886.004900",
+        "username": "Benedict Targett (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883656776293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What you will probably find is that I start recommending a lot of stuff to you.",
+        "ts": "1577048898.005000",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883656838293_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

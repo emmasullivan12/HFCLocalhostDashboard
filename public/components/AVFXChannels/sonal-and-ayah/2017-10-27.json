@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "HAPPY MENTORING DAY!!!!! :tada::tada::tada:\nI just would like to say thank you for your support , even though we haven't done much yet I feel like choosing to sign up for prospela was one of my best choices made.\n\nThank you so much!!\n",
+        "ts": "1509097879.000155",
+        "username": "aalhar-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/262982731460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're very welcome. Yeah sorry it's been a bit hectic lately but keep shooting any questions you have or anything else",
+        "ts": "1509100364.000276",
+        "username": "sonal92 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-27\/264031249463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

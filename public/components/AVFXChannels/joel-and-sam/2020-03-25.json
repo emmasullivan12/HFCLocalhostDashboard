@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sam,\nNo problem at all. It is a crazy time.\n\nSo as vfx supervisor I am basically responsible creatively for the work we get awarded on a film.  Here is a rambling list of stuff I do:\nA big part of the work is that I have to present the work directly to the overall vfx supervisor on a film (who is hired by the studio (eg\/Warner Bros or Sony or Disney or whoever) or often I actually present the shots to the director of the film. Which is basically trying to convince them not to make changes and that they love what we have done!\n\nInitially when the work is being bid for and awarded to DNEG I will be involved in meetings with the clients and also have to bid the work. Which basically means reading a description of a shot either from a script or a breakdown of a script and using my experience to say how I think we should best approach the work. From there I would estimate how many days that shot will take to do in each department. So I might say 10 days to comp the shot and 5 days for FX sim work and 3 days to track the camera etc. This is pretty long and tedious process to do for hundreds of shots across 15 departments or something but is very important as it sets the $ cost of the work and also helps the company to crew the show. So they can see we have 4 months and need 1000 days comp or whatever it can be worked out how many compositors we think we need to do the show.\n\nI also attend the shot for the films normally with 2nd unit. The overall supervisor on the film will do the main unit with the director and main cast but vendor side supervisors often supervise 2nd unit shoots. 2nd unit is more fun as that is where you do the stunts and sfx explosions and generally tends to be more vfx work there. So on set you try to make sure things are shot in the best way possible to help the vfx in post and also to ensure we capture all the data required and photograph and measure everything possible!\n\nThe day to day as a vfx supervisor at dneg is mostly dailies. The artists will do their parts of a shot and then present it to me in dailies to approve it and pass it on to the next department. Basically when things get busy I spend my entire day in a screening room in the dark with a procession of artists coming in to show their work and trying to give the most concise and clear feedback I can to improve the shot and make sure it is staying on course for what the director or client has asked for. Also interpretting their feedback from the client review sessions and passing that on to the crew. So I have to know about all departments work but don't generally have time to do it hands on myself anymore.\n\nI am supported in my role with department supervisors. So for example there is a comp supe who looks after the comp team more directly and will work with production to assign shots to the right people and help the artists more directly at their desks to hit notes or improve things. When they are happy with the work it comes into \"show\" dailies and in front of me.\n\nIt is a rewarding job as you do get a lot of creative input into the look of a film and also technical say as you are setting some of the methodology when you do the initial bid work. It can be pretty stressful as there is a lot of responsibility and egos to deal with from the Holywood side and the hours can be pretty bad when it comes to the crunch period (which seems to be getting shorter and more intense with each new film)\n\nI think that is a pretty good overview of vfx supervising but very happy to share more info on any of that you have questions on.",
+        "ts": "1585142765.000100",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1013884110755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What are you currently studying?\n\nWhat are your main areas of interest with regards to vfx?\n\nWould be interesting to know what kind of stuff you are interested in working on.\n\nHope you are staying well and sane with the lock down!",
+        "ts": "1585142841.000200",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1026972184742_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cheers Joel",
+        "ts": "1585142848.000300",
+        "username": "Joel Green (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1025040789925_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm currently studying film, at this film school in bristol, it's called Screenology and it is okay but it has its flaws like any film school. For example they don't offer any support when it comes to VFX or anything. They're primarily focused on creating content for their school. They've been known to get angry at students how suggest a VFX class, and also suggest using adobe premiere pro over final cut pro. It's all very strange, they don't actually do any classes, what they do is tell us to make an advert for their school and then it never sees the light of day.",
+        "ts": "1585183302.000400",
+        "username": "Sam Tucker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1014450137250_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When it comes to what I'd like to do within VFX, I don't particularly know just yet. I've been using programs like Blender and Cinema 4D for a year and a bit now and I know that I find using these programs super rewarding",
+        "ts": "1585183357.000500",
+        "username": "Sam Tucker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1015485463923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Currently, I'm not working on anything, I've had to take time out from school to self isolate and it's all been very stressful, I'm starting work on a few scripts that would require the use of Blender or Cinema 4D",
+        "ts": "1585183411.000600",
+        "username": "Sam Tucker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1028845606918_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

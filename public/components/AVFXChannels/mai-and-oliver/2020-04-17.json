@@ -1,0 +1,107 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did a quick animation trying to put what we spoke about into practice would you be able to have a quick look when you have time :) it's really rough as I'm just trying to get my head around it.",
+        "ts": "1587128322.006600",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069467313426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/7d2a15c209cc\/|https:\/\/syncsketch.com\/sketch\/7d2a15c209cc\/>",
+        "ts": "1587128363.006700",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1068089307173_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Mai_Blocking",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/7d2a15c209cc\/",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: Mai_Blocking",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/7d2a15c209cc\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/7d2a15c209cc\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587128364.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey i put some notes up for you, some nice strong poses there, but dont forget to block your overlap in before you hit spline :slightly_smiling_face:",
+        "ts": "1587132916.006900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069882978995_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks, I think I'm starting to understand it though I still have a long way to go haha",
+        "ts": "1587134433.007000",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1063012193702_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "good! it takes a few attempts to learn a new workflow, one way to add overlap is with tweenmachine, so when I tween in my in between, I will choose the leading body part and tween it higher, where as the lagging body parts would be tweened on a lower number",
+        "ts": "1587137014.007100",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1068495438885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so for example if you select the whole body and tween it on 60, I would then select the head and the chest and arms and tween them on 20",
+        "ts": "1587137076.007200",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1082504220337_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and since you want the head to lag behind the chest you could do the head on -10 for example",
+        "ts": "1587137094.007300",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1069879285762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I never thought of doing it like that haha thanks :)",
+        "ts": "1587137525.007400",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-17\/1070111660627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes you're right exactly, I used a lattice for the smeer. It was an interesting exercise because the example in the book was on 2s (12fps) as it was 2D but I was animating it at 25fps in 3D so keeping the snappiness was a good challenge :slightly_smiling_face:",
+        "ts": "1576666264.001900",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/865651054498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Blue Zoo's great, I started here in 2011 and went to a couple of other studios after that (Karrot, MPC, Tiger Aspect) but since about 2015 I've been here solidly. As a company they really value their staff and are always looking to do the best they can do with the resources they have. Depending on the project you often get a lot of freedom too. The other thing I love is there's a culture of sharing information, everyone wants to keep learning, which is the mindset you need in this industry! They also allow ideas to come from anywhere, you may have seen our latest short film? That was directed by a lady who is part of our HR department and we had another short done a few years ago by a very junior storyboard artist. Was there anything specific you wanted to know about working at bluezoo?",
+        "ts": "1576666601.002000",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-18\/866972299587_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

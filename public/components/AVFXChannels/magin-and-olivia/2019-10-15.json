@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, That looks really nice! Good improvement!! :slightly_smiling_face:",
+        "ts": "1571151283.000300",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/796033149216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

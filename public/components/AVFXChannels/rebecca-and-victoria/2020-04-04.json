@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ahh thank you i'm trying to improve on my zbrush skills, I was only able to properly concentrate on it this semester aha",
+        "ts": "1586016099.002200",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1047172063909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I understand :confused: the school that I went to when I was studying for my diploma didn't really provide a lot of resources as well, we had to turn to the internet to teach ourselves the skills we needed",
+        "ts": "1586016159.002300",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1047172513013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "aww that's so nice :kissing: my bf ain't in the same course as me but he gives me crit when I'm trying to replicate something :joy:",
+        "ts": "1586016299.002400",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1037891322034_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also hope you're doing okay during tough times like this!",
+        "ts": "1586016351.002500",
+        "username": "Victoria Gan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1047194187878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

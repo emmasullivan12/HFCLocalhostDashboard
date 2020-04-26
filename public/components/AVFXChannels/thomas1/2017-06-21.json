@@ -1,0 +1,16 @@
+[
+    {
+        "type": "message",
+        "subtype": "group_leave",
+        "ts": "1498070008.086106",
+        "user": "U5WVD9VEX",
+        "text": "<@U5WVD9VEX> has left the group"
+    },
+    {
+        "type": "message",
+        "subtype": "group_archive",
+        "ts": "1498070014.088264",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> archived the private channel"
+    }
+]

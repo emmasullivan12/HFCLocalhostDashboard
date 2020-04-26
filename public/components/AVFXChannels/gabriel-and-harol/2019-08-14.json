@@ -1,0 +1,217 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1565780131.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1565780131.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d53e8a315b0510004eba55e|this link> with other teams to invite them in it_",
+        "ts": "1565780132.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1565780168.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1565780174.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1565780193.000900",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1565780234.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"gabriel-and-harol\"",
+        "old_name": "z-shared-23",
+        "name": "gabriel-and-harol"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@sblanco.gabriel has joined the channel_",
+        "ts": "1565780621.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/714662302162_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@harold.z.x has joined the channel_",
+        "ts": "1565780630.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/714660829987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Harol, please meet Gabriel your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1565780648.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/726111107589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1565780654.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/725640445028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1565780659.001500",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/728286888486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning Gabriel nice to meet you",
+        "ts": "1565780927.001600",
+        "username": "Harol Almeida (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/727970640807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Harol",
+        "ts": "1565781119.001700",
+        "username": "Gabriel Blanco (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/728293273366_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s my first time having a mentor so I don’t know how to start hehehehhe",
+        "ts": "1565781282.001800",
+        "username": "Harol Almeida (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/727975329175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a lot of questions but I don’t want be annoying, I saw that you work for ILM, that’s awesome, \nHow long are you in the industry.",
+        "ts": "1565781552.001900",
+        "username": "Harol Almeida (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/719740729713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries. You can ask all you want. i might take some time to reply while I’m at work but feel free to ask away",
+        "ts": "1565781603.002000",
+        "username": "Gabriel Blanco (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/714674014563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have been working in the industry for almost 10 years",
+        "ts": "1565781615.002100",
+        "username": "Gabriel Blanco (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/726115047008_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow nice to know that. \nfirst think I would like to do is have some feedback of my portfolio so you can give some advise which areas I need to improve. Basically I have been doing some projects for the UNI and personals.\nwhat I am feeling very confident so far is modelling, I have the feeling that I need to improve a a few areas because I saw some outstanding level of other artists.\nA profesional like you what is the first think you see when you open a portfolio, what are you looking for, maybe some technical knowledge, or just something visually appealing.\n<https:\/\/santiagoalmeidaguerra.artstation.com>\n\n",
+        "ts": "1565789188.002200",
+        "username": "Harol Almeida (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/725779469300_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Santiago Almeida Guerra",
+                "title_link": "https:\/\/santiagoalmeidaguerra.artstation.com\/",
+                "text": "Student",
+                "fallback": "Santiago Almeida Guerra",
+                "thumb_url": "https:\/\/cdna.artstation.com\/p\/assets\/covers\/images\/019\/862\/324\/small\/santiago-almeida-guerra-screenshot-2019-08-09-at-00-48-09.jpg?1565308099",
+                "from_url": "https:\/\/santiagoalmeidaguerra.artstation.com\/",
+                "thumb_width": 800,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/cdn.artstation.com\/static_media\/placeholders\/user\/portfolio_favicon\/default.png",
+                "service_name": "santiagoalmeidaguerra.artstation.com",
+                "id": 1,
+                "original_url": "https:\/\/santiagoalmeidaguerra.artstation.com"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What I have in mind is may be get into the industry as a modeller then develop another areas that I am interesting on.\nI want to develop some physical simulation like dust, smoke, explosions, fire, basically work with particles.\n",
+        "ts": "1565789524.002400",
+        "username": "Harol Almeida (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-14\/726248595664_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

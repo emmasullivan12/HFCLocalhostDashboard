@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had look at your website.  1st let me say congratulations , you are already going after the things you need to always keep developing to became a better artist .\nlive drawing , drawing , photography are the best tools to develop your eye and understanding of the world , by colour , texture , composition , lighting ....\nWhat are you currently developing with substance painter ? \nAre you familiar with PBR shader in substance ? \nHave a great weekend !\n",
+        "ts": "1566073065.002500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-17\/731653624391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

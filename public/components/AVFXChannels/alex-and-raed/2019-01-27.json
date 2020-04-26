@@ -1,0 +1,135 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I an in rather a rush",
+        "ts": "1548597273.004800",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/535717425270_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "am*",
+        "ts": "1548597276.004900",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/535358484455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this is a key part of the game",
+        "ts": "1548597283.005000",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/534499401061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how do I give this a perfect physics body:",
+        "ts": "1548597302.005100",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/534296227042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FFQ3ZNGGL",
+                "created": 1548597332,
+                "timestamp": 1548597332,
+                "name": "BASKET.png",
+                "title": "BASKET",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 8539,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FFQ3ZNGGL\/basket.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FFQ3ZNGGL\/download\/basket.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FFQ3ZNGGL-944721e8e0\/basket_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FFQ3ZNGGL-944721e8e0\/basket_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FFQ3ZNGGL-944721e8e0\/basket_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 185,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FFQ3ZNGGL-944721e8e0\/basket_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 473,
+                "original_h": 243,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FFQ3ZNGGL\/basket.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FFQ3ZNGGL-de6853cef9",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1548597334.005200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "physicsBody = PhysicsShapePolygon::create(\n\t\t\t    (Point(2, 8),\n\t\t\t\tPoint(2, 26),\n\t\t\t\tPoint(2, 58),\n\t\t\t\t3,\n\t\t\t\tPhysicsMaterial(1.9f, 0.1f, 9.4f),\n\t\t\t\t));",
+        "ts": "1548606001.005500",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/534332951154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "can you see the error here?",
+        "ts": "1548606009.005600",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/533730134145_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been working tirelessly, and have reached a big rock, the slingshot.",
+        "ts": "1548621267.005700",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/534394901714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "do you think we can arrange a time to have a discussion?",
+        "ts": "1548621283.005800",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-27\/534598272517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

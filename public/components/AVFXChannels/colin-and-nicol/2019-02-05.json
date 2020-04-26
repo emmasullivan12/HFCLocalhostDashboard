@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heya nice, oh I’m from South Wales, I should of said before soz. ",
+        "ts": "1549412139.006100",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-05\/543419005109_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey man I have a question about generating a star field - For this project I have to comp someone into outer space, and also the reflections of the stars need to be rendered on the CG visor. How would you go about creating the star field, do i ask someone to DMP it or is there some NASA stuff we can use for free, commercially ?",
+        "ts": "1586005416.000200",
+        "username": "Oliver Holt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-04\/1048819688852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

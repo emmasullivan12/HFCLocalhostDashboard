@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Muqarrab - that's some amazing grades there. You should be proud. I'm not sure if you will have to use the predicted grades or not but if so (and you are not happy with them), get your parents to push your teachers to increase them. That's what I had to do for one of my subjects!",
+        "ts": "1587641023.005400",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081369906354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I believe that's correct, but I don't think you'd find it easy to switch to becoming a Doctor if you only studied Biomedical science",
+        "ts": "1587641435.005500",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1094008517633_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Has the timing of applying to university changed because of covid at all?",
+        "ts": "1587641478.005600",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1105225535840_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

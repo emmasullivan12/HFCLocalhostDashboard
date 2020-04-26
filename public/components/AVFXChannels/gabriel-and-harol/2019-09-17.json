@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Gabriel, how are you?. I have one question, when we tried to transfer the animations from one rig to the final character, both characters needs to have same amount of joints?, or it’s enough just having same number of controls?. \nAlso the joints and controls should have the same names? \n\nIn resume, both rigs need to be identical? ",
+        "ts": "1568732823.000100",
+        "username": "Harol Almeida (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-17\/756764791121_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, just checking in on you xx",
+        "ts": "1585648466.000300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039749598694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi I’m ok thanks, my meetings this morning were extra long . Finally had some food and had a nap which was like an hour too long so sorry for the late reply:sweat_smile: Otherwise I’m ok , and getting into the swing of working at home (I’m actually starting to really enjoy it haha :see_no_evil:) ",
+        "ts": "1585683004.000400",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026673685170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is everything with you? caring for the kids whilst working at the same time? I can imagine it’s quite hectic atm ",
+        "ts": "1585683127.000500",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1026679588882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

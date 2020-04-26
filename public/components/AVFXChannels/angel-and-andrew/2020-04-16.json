@@ -1,0 +1,67 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "He's a sculptor in my class. We're both in our university",
+        "ts": "1587060048.000900",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052889510295_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(P.S. - Do you like dogs? We've got one or two. :slightly_smiling_face: <https:\/\/cdn.discordapp.com\/attachments\/689817516800868372\/699761694762860544\/image0.jpg>",
+        "ts": "1587060541.001000",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1091487509872_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "fallback": "3024x4032px image",
+                "image_url": "https:\/\/cdn.discordapp.com\/attachments\/689817516800868372\/699761694762860544\/image0.jpg",
+                "image_width": 3024,
+                "image_height": 4032,
+                "image_bytes": 1645285,
+                "from_url": "https:\/\/cdn.discordapp.com\/attachments\/689817516800868372\/699761694762860544\/image0.jpg",
+                "id": 1,
+                "original_url": "https:\/\/cdn.discordapp.com\/attachments\/689817516800868372\/699761694762860544\/image0.jpg"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587060541.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/cdn.discordapp.com\/attachments\/578344019428638721\/685042223175565345\/image0.jpg> )",
+        "ts": "1587060951.001200",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067663294450_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "fallback": "4032x3024px image",
+                "image_url": "https:\/\/cdn.discordapp.com\/attachments\/578344019428638721\/685042223175565345\/image0.jpg",
+                "image_width": 4032,
+                "image_height": 3024,
+                "image_bytes": 1502298,
+                "from_url": "https:\/\/cdn.discordapp.com\/attachments\/578344019428638721\/685042223175565345\/image0.jpg",
+                "id": 1,
+                "original_url": "https:\/\/cdn.discordapp.com\/attachments\/578344019428638721\/685042223175565345\/image0.jpg"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587060951.000000"
+        }
+    }
+]

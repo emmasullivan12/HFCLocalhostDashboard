@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "that's a lot to be doing! That's really good! How's it all going?\nI'm currently working on a few films, can't say too much, but looking into Groom inside Houdini, which is exciting work! Gets the brain wanting to do more at home",
+        "ts": "1579440295.000300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/912753691312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

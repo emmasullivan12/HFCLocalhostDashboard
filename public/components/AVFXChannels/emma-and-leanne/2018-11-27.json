@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Leanne, great to meet you too! A little bit about me - I am currently a CG Supervisor at DNegTV and have been working in the industry for 10 years. Not sure how much I can help with animation but I can try and answer any questions you may have about the industry or anything other questions you may have. I have been at DNeg for 4 years and in the TV department for 3 1\/2 years. We work mainly on shows for netflix and have a very big animation department at the moment for a show we are currently working on. Cant say too much, but lots of creature animation and its looking great! How is the final year of uni going? Looking forward to talking with you , Emma",
+        "ts": "1543335748.001800",
+        "username": "Emma Braney (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/490613577526_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

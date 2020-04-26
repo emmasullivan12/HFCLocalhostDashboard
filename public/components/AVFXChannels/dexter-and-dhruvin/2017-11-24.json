@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @dvalgi-2012 hows it going? Wondering if this event would be of interest for you? <http:\/\/acornaspirations.com\/about-us\/>",
+        "ts": "1511557773.000159",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/277297738402_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I might be able to get you a free ticket if so!",
+        "ts": "1511557784.000066",
+        "username": "dexter (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-24\/278374702183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

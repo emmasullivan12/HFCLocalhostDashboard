@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Colin nice. \nSoz for being a bit MIA I had two deadlines back to back not long after the last message. \nI hope your project is going well.  :smile: ",
+        "ts": "1559920567.000100",
+        "username": "Nicol (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-07\/658166649252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

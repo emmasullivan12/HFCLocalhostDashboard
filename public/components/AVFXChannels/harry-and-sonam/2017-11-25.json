@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi harry, I just wanted ask about the internship which you had asked from your friend?? thanks",
+        "ts": "1511626946.000025",
+        "username": "skaur-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-25\/277582868661_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

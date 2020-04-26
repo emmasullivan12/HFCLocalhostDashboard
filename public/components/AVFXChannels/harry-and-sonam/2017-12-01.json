@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sonam, I hope you got my comments on your CV",
+        "ts": "1512136284.000261",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/280398391348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "let me know if you have any questions",
+        "ts": "1512136292.000527",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/279697088160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apparently the deadline for us to stop speaking to each other is tonight, it's been nice getting to know and now you have my email address, feel free to drop me any questions that you might have :slightly_smiling_face: Best of luck!",
+        "ts": "1512136351.000375",
+        "username": "harry.ryan-smith (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-01\/279697589360_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

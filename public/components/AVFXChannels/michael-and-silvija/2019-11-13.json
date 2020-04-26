@@ -1,0 +1,94 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello, sure! \n\nHope you are okay!\n\nI will be free anytime after 1pm till 4pm and then anytime from 7pm! I am so sorry that, hopefully, that will work somehow for you :blush:",
+        "ts": "1573659374.002300",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833007457696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah sure I can do a call in 5 mins? I’m still in work but no problem :) ",
+        "ts": "1573671334.002400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835221403223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am completely free now!",
+        "ts": "1573671863.002500",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833390105765_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you would prefer to go back home and call me whenever you are ready, that would be perfectly fine as well!",
+        "ts": "1573671904.002600",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/835238998279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQ610C25R",
+                "created": 1573676421,
+                "timestamp": 1573676421,
+                "name": "ZBrush Movieturntable_V001.mp4",
+                "title": "ZBrush Movieturntable V001",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 4298470,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQ610C25R\/zbrush_movieturntable_v001.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQ610C25R\/download\/zbrush_movieturntable_v001.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQ610C25R-bc734835d0\/zbrush_movieturntable_v001_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQ610C25R\/zbrush_movieturntable_v001.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQ610C25R-7aede46f4d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1573676422.002700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello again! I got my license back, hahaha! \n\nI made a turntable to have an idea where I am atm :panda_face:",
+        "ts": "1573676478.003000",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-13\/833042796180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

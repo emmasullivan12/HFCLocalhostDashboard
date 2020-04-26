@@ -1,0 +1,126 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Tony! How's everything going? Must be crazy busy at the moment but thought I'd poke my head in and see whats up! Things have slowed down a little here now that we're at the start of production. Lots of scene crashes and working with unstable WIP environments haha! What are your plans for summer? Hope that you're well!",
+        "ts": "1562246337.000100",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/686933953463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Steven! Sorry for the inactivity! Been pretty busy! Finished uni got a 2:1, working 5 days a week, Studying korean when i have and struggling with coming up with a showreel",
+        "ts": "1562246476.000200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685085784816_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How have you been?",
+        "ts": "1562246481.000300",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/673686213459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Going Santorini,Greece in two weeks with my girlfriend and then when we come back we will look for a place together :sweat_smile:",
+        "ts": "1562246822.000400",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/678741075457_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, no worries at all man! Ahh amazing! Well done, that's fantastic! How did it all go overall, happy with what you made? It can be really difficult putting together a reel, still is in fact! What is it that you're struggling with, and what sort of role is it you'll be looking for? I've been good thanks! We finally delivered Numberblocks and have now moved on to Paddington where I'm back in an artist role, nice to not have to think about eeeverything all day, and just get on with making shots pretty (or just making them work at the moment...). New project = new fatal errors ahaha. Oh nice!! Hope you enjoy it! I'm actually off to Mallorca with my girlfriend and her family in two weeks! haha Ooooh nice! Are you planning to stick around in London then?",
+        "ts": "1562248044.000500",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/687254622054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sticking in London for a while i guess",
+        "ts": "1562248125.000600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/678761235057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am struggling finding 3d camera projection turorials",
+        "ts": "1562248145.000700",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/685111574592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I don’t know where i will be going ",
+        "ts": "1562248160.000800",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/684641155492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FL77JSLSJ",
+                "created": 1562248197,
+                "timestamp": 1562248197,
+                "name": "File from iOS.MOV",
+                "title": "File from iOS",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 15964067,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FL77JSLSJ\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FL77JSLSJ\/download\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FL77JSLSJ\/file_from_ios.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FL77JSLSJ-900aac8595",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1562248198.000900"
+    }
+]

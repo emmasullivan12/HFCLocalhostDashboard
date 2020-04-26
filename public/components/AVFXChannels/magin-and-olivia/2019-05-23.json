@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "amazing thankyou!! im going to give it a polish and I'll send you the final look. By the way thankyou so much for all the help you've given me over the past months! i can feel myself starting to improve finally hahah",
+        "ts": "1558607903.000600",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/632605559123_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hahaha You've improved a lot! :slightly_smiling_face:",
+        "ts": "1558618881.000700",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/644188110997_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

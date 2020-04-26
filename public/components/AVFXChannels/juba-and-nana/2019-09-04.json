@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nana, just wanted to check in, maybe share a little bit of wisdom.\nI finished working on Lady and the Tramp, and moved to an unannounced project I can't talk about at the moment. It's a fun new project and also short, but I'm very much enjoying it!",
+        "ts": "1567601996.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-04\/750550913046_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know I've mentioned this before but it's important to reiterate haha, when we live in a routine we tend to push away our long term goals to another day,  and it adds up to weeks\/ months going by.\nThe only way we can continue to progress and move towards our goal is to slowly chip away at what we'd like to improve or do. In that same way 6 months may go by, and by spending a little bit of time everyday you end up achieving a lot more than if you had done nothing.\nPerseverance is key here, to push past the routine and the resistance our brain has these things. You'll be surprised by how much you can achieve if you just put in some time everyday.\nHope you are well and pushing towards your goals Nana!",
+        "ts": "1567602310.000200",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-04\/748355543696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

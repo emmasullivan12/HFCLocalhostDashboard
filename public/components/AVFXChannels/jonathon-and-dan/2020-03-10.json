@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah that's fine with me. It's nice to switch gears for a little throughout the day sometimes. Would you prefer Tuesday or Wednesday?",
+        "ts": "1583835197.001100",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/990954645696_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tuesday would be ideal if I'm honest, I tend to be in the uni labs working on stuff all day Wednesdays",
+        "ts": "1583866383.001200",
+        "username": "Dan Ahern (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-10\/980579395075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Aleks! Thanks for the reply and sorry for the late message by the way.",
+        "ts": "1584050982.003500",
+        "username": "Patrick Paguio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/997371725168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's a real bummer what happened at MPC. Apparently there's a lot of rumors how MPC treat their employees but I hope that's not true :disappointed:",
+        "ts": "1584051046.003600",
+        "username": "Patrick Paguio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/997391834421_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At our uni, there's a lot of people doing groom now because we're doing a lot of creature work for our short film and it's really true how you guys are on-demand :smile: I'm kinda torn apart as well of being generalist because I also want to learn the basics of mechanical rigging. I'm a huge hard-surface fan so seeing those parts move just makes my mind blow away and it would be cool to see some of my models come to life and actually have fully functioning parts and not just pure design. Apart from all that, I should still stick to one specialism but of course it would be nice as well to show different skillsets since there are lots of online tutorials available and from that the standards became higher and I should keep up.",
+        "ts": "1584051431.003700",
+        "username": "Patrick Paguio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/999247272631_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In regards to the feedback, thank you so much for the critic! I really appreciate it. Yeah it's my first time texturing organic and I kinda don't know the workflow yet. In addition, there's not much Mari tutorials out there in regards to organic texturing. I was quite struggling with that and yeah I agree with you with the breakups. How can I add those extra breakups, like the technicality of it in Mari? I have a lot of references with the skin and most of them looks so plastic-y while others look so real. Should I just stick to one reference and follow that or try to combine breakups from different images?",
+        "ts": "1584052032.003800",
+        "username": "Patrick Paguio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/997417394165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding about the eyes, yes I actually did what you mentioned by having separate geo :smile: I didn't know that it would look nice because I hated them so much for not getting the photoreal look. I did learn a lot from this and can't wait to work on another one. Thanks for the feedback and I really appreciate the time you put!!",
+        "ts": "1584052129.003900",
+        "username": "Patrick Paguio (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/999611750006_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh that sounds interesting, I think I would enjoy doing something like that! How long have you been studying nuero physiotherapy? ",
+        "ts": "1510853591.000237",
+        "username": "elinor.sandells (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-16\/273788849909_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

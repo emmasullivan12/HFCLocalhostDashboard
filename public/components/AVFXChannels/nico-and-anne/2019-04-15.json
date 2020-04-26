@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Nico! Just a quick hello! I hope you’re doing good! I’ve been absorbed, working on my reel. I should be able to send you stuff soon and would love your input! Take Care! ",
+        "ts": "1555360836.000100",
+        "username": "Anne (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-15\/597534997874_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Brilliant, you too!",
+        "ts": "1555362994.000200",
+        "username": "Nico Coronado (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-15\/597570167106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

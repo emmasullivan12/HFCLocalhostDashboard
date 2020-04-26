@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Matt, I'm sure you're really busy at the moment but are you able to schedule a time to chat in the coming weeks? Cheers",
+        "ts": "1563956975.000400",
+        "username": "Ben Gardener (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-24\/692820405811_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

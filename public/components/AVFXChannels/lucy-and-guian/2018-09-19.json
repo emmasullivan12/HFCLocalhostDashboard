@@ -1,0 +1,39 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Guian.  I'll come back to you on this stuff. In the interim I have another person that I think you should meet and will be really well placed to give you sound advice for your chosen career.  Her name is Isobel <http:\/\/linkedin.com\/in\/isobel-stenhouse-42b5393|linkedin.com\/in\/isobel-stenhouse-42b5393>.  She is currently working at <https:\/\/www.thelineanimation.com\/> and would be happy to meet you between now and November.  Take a look and let me know what you think you'd like to see and learn from a meeting there and I'll connect the dots. :slightly_smiling_face:",
+        "ts": "1537364921.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-19\/438900685925_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "The Line Animation",
+                "title_link": "https:\/\/www.thelineanimation.com\/",
+                "text": "The Line is a leading London-based animation studio, specialising in short films, adverts, music videos, games &amp; more.",
+                "fallback": "The Line Animation",
+                "thumb_url": "https:\/\/d37meslxi3vijs.cloudfront.net\/imager\/images\/Studio\/1875\/IMG_4848-1_b461050e7d2ab907641732367d75e2c9.jpg",
+                "from_url": "https:\/\/www.thelineanimation.com\/",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_name": "thelineanimation.com",
+                "id": 1,
+                "original_url": "https:\/\/www.thelineanimation.com\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy I would love to meet Isobel and learn more about animation in music videos and adds as well as short films. Like the process that goes into it and how to combine the live footage with the animation effortlessly.",
+        "ts": "1537368702.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-09-19\/438961688181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

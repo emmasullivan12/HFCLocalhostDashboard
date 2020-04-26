@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! Sorry it has been crazy at framestore with the COVID-19 going around they are trying to get a lot of people to work from home and I was helping setting it up so haven’t been able to check my slack! Sorry! ",
+        "ts": "1584478380.002400",
+        "username": "Cas Van Den Bergh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1006616635092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looking forward to getting started! I have a piece but it has been left for 2 weeks already! It’s a 3D Render i would like to do a paintover on, just going to have to practice(:",
+        "ts": "1584478449.002500",
+        "username": "Cas Van Den Bergh (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-17\/1007093797701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

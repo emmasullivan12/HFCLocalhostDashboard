@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good morning Sahra! How are you? Did you have a nice weekend? Yes, doing that sport definitvly has huge benefits for my mental health. I actually started a running club at work which happens every Monday evening and it's really popular now. I am also a part of Animataed Women, I always go to their events. Last year I applied and got into their Helen North Achieve Programme. It was a game changer for me. I also attend something called Good Girls Eat Dinner. It's held every 2 months and it's a dinner with 4 female speakers. It was created for women to have female role models in the creative industry, it's really really good. I've also just co-founded a non profit organisation myself called Q(Queer)-VFX which is a community and hub for the LGBTQ+ folk and also allies. We have an event coming up on Thursday with a man called James Wharton who was the first openly gay soldier in the UK. I think it'll be really interesting.",
+        "ts": "1563869208.000100",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-23\/691448528098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Your webtoon sounds really really cool!",
+        "ts": "1563869228.000200",
+        "username": "Chloé Deneuve (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-23\/691464011923_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had a nice relaxing weekend! I hope you had a good one too :) Oh man you seem to be keeping yourself busy with the club and other events! Well done for getting into the Achieve programme! It is actually something I’m looking to get into once I get a job within the industry! What was the biggest thing you took away from the programme? Why was it a game changer :D \n\nI’m familiar with QVFX actually :D I didn’t know you co-founded it! I thinks it’s super great!! I always listen to the podcasts on Linkedin :) I wanted to attend the first event but ended up watching the livestream from home. I kind of wish I lived in London to have access to all these different events. The animation and VFX scene is a little quite here in Cardiff, though we do have animation nights once every 2 months. I am looking to join the organisation team for these animation events in Cardiff so hopefully we’ll have more great events in the future!\n\nThat dinner thing sounds absolutely amazing!!! I’d love to go one day!! ",
+        "ts": "1563902389.000300",
+        "username": "Sahra Al (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-23\/692090931618_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

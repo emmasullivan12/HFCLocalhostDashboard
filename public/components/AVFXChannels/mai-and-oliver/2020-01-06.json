@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Oliver, I hope you had a lovely Christmas, I'm back now so feel free to send me stuff and ask questions :slightly_smiling_face:",
+        "ts": "1578301301.001700",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/893905834964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, I had a great Christmas thanks :). Hope you had a nice Christmas too. Definitely have some work to send you, just need to refine it a bit more and I will send it over.",
+        "ts": "1578310796.001800",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/894518659584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My Christmas was good too thanks!  cool, send it over when you are happy with it :slightly_smiling_face:",
+        "ts": "1578327025.001900",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/894864217920_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

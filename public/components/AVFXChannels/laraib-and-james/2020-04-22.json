@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey James ! Really nice meeting you. Good to know that you have a plan in place. Once you have your showreel and CV ready please do send over and I would love to have a look. ",
+        "ts": "1587551785.002000",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1102343272848_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also companies like Dneg (where I work) - they have graduate schemes available like green light. Also look into that , not entirely sure how it works but they have all the details on their website ",
+        "ts": "1587551838.002100",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1091129375169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I know some graduates who got a head start at Dneg through that scheme. Or another way of getting into the industry would be as a runner. You could apply as a runner and then work your way up to to roto\/prep",
+        "ts": "1587551893.002200",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1091131001041_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And then junior comping ",
+        "ts": "1587551901.002300",
+        "username": "Laraib Atta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1102346663856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Elizabeth, how are you doing? I'm Caroline, I work at Escape Studios in Marketing and Communication. Sorry I've not been in touch sooner, I was out of the office for a lot of last week. What kind of career related things have you got coming up? I wondered if we could set a time for us both to be on Slack, so it feels like a conversion, Wednesday afternoons are good for me.",
+        "ts": "1531756620.000024",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-16\/399475872101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Caroline! Also sorry for the late response. I've been doing work for an upcoming convention where I'll be presenting and selling art. Wednesday is perfectly fine by me, looking forward to talking in more detail. :)",
+        "ts": "1531785537.000095",
+        "username": "Elizabeth (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-16\/399632309602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

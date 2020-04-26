@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. All good work there. I did really like the PS 4 power of pro one. And although I've never seen 2012 the tsunami scene was pretty good, particularly for when they did it, curious if scanline did it.",
+        "ts": "1578677215.003000",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/901712512213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So any idea of what you are gonna do for your thesis? Have you done any work on it so far?",
+        "ts": "1578677245.003100",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/901702646400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, scanline is listed as working on 2012 and since they have a heavy background on doing water wouldn't be surprised if they did that sequence.",
+        "ts": "1578679698.003200",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/901314177460_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

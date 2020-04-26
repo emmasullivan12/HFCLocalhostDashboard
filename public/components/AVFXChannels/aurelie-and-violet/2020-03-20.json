@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Violet :)\nSo when I was graduating my plan was to land an internship or a runner job ( my school was unfortunately more about 3D so I didn't have anything in comp to show except some small roto and paint, so I knew I was going to have to start by an entry level position and not straight to comp ).\nSo to show my interest in 2D, I did some roto and paint work outside of the assignements from school to help my reel. Then Double Negative team was going to come to our school and a few of us would be selected for interviews, so I worked veryyyy hard and a lot to get my reel ready in time and got an interview with them.\nThen they liked my profile, so I had another interview and they took me for the 2D runner position where I did a training in roto and prep.\nSo my plan was basically just to make it to a very low entry level position inside a big vfx company to have my foot in the door as I didn't have any comp work to show from school :)\n\nThat sounds awesome ! Can you show me a screenshot of it so that I can understand the shot better ? It's hard to picture it in my head ^^\nFor the depth, the best would be to have a Z depth pass but I'm not sure it's possible in After Effects. Then I would play with the color correct ( offset, gain, gamma...) to fake some depth in Nuke.\nOut of the box like this I'd say that LumaKey would work but again without seeing the shot is quite hard to advice :slightly_smiling_face:",
+        "ts": "1584737636.002300",
+        "username": "Aurelie Couble (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1015548161108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

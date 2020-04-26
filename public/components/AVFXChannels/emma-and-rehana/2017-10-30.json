@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is a pic of my Co-Founder in our window office! We need big screens to build websites and code, as you can imagine you might have experienced if you've done any coding(!), it helps a huge amount",
+        "ts": "1509358288.000257",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-30\/264777195382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Notice the big whiteboard as well ... great for brainstorming ideas!",
+        "ts": "1509358305.000179",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-30\/263893866338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

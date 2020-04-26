@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Keith! No worries. Now I'm late replying! Ye I've got a constraint system with some clumping and grouping to try to vary the size. The whole building is fractured in fact, so the shape left behind is a result of the constraints. I take your point though, I'll go back to it and try to force the size variation a bit. Ye I'm not sure about the helicopter, it was good for learning hard constraints. Both are tutorials so they won't go in my reel.",
+        "ts": "1571485440.000100",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-19\/803450671111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have a couple of other projects on the go. I'm doing a shot of a football being torn apart.",
+        "ts": "1571485678.000200",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-19\/803804460678_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

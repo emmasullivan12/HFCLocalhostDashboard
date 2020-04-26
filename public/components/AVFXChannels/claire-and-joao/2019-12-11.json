@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Claire! Just wanted to say hello. I’m J.P. Nice to meet you! ",
+        "ts": "1576071426.001600",
+        "username": "João Pereira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/869061052389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

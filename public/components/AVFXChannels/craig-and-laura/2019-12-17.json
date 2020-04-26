@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh fantastic! Funny enough i grew up in St Albans and went back to live there up until about feb last year so i have a strange fondness for uni of herts deapite not acctually going there!",
+        "ts": "1576578143.000200",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876705102165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that does split people; groom and cfx seem like they should go well together as a career but groom is so specialised i tend to find its Fx artists who share the most in common (which was my path into it!)",
+        "ts": "1576578232.000300",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/863914379778_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Now i cant recall what you get given when you sign up but do you have my reel and password? And as a quick background: i started at a small vfx house then moved to dneg for a while in Fx, switched to Rewind in St Albans for a year doing Vr, got picked up to create the fur simulation setups for Lion King at MPC then finally moved back down to bournemouth at Outpost where i’ve been accross Fx \/ Cfx (including another lion haha) and recently started Cg suping a cool new show with, you guessed it, Fx and Cfx!",
+        "ts": "1576584495.000400",
+        "username": "Craig Tonks (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876814239424_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

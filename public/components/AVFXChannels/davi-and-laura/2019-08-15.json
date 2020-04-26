@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura! Oh Spain. Warm I hope!?  NY was fun. Family and friends and got to enjoy some bbq in the country too for American 4th of July! :tada: Didn’t get to see fireworks. But there is Guy Fawkes day here in late autumn  lol. ",
+        "ts": "1565893240.001400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-15\/727425870436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

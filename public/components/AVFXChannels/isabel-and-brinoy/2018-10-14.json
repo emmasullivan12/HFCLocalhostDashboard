@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello",
+        "ts": "1539525839.000100",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-10-14\/456924348695_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

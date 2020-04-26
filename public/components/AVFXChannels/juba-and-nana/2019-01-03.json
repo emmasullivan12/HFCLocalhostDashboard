@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries Nana, I don't have a constant internet where I am atm so it's a little hard to keep in touch. I'll be back for the 14th so should get back to a normal schedule (I hope!)",
+        "ts": "1546556221.001000",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/515456294896_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you are having a good holiday!",
+        "ts": "1546556241.001100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-03\/516088401219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

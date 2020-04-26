@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eric!\n\nApologies for the late response.\n\n\n\nI hope that your Easter was lovely and safe! \n\nThis is a big ambitious shot that you’re working on! \nReading through your process, it’s a bit difficult to diagnose the issue over text.\n\nSo you have an actor plate A element, a new background plate B, and a CG car that you plan on integrating with plate A and B?\n\nTo begin I imagine all of your prep is done correctly - your plate are degrained and tracked. Your character is rotod. Unnecessary plate A elements are cleaned out.\n\nI imagine that your issue is with one of the cameras?\n\n",
+        "ts": "1586906742.007500",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1061405037701_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think that it would be easier to work out these technical issues over a video chat or call?",
+        "ts": "1586906770.007600",
+        "username": "Jon Rogala (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1056052142550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the reply. \n\nMy issue now it s render time ... i did some test and animation test too. Tomorrow should be done for the rendering. I did HD 540 rendering denoise with arnold denoise and I will use TVIScale node too upscale at HD 1080. Seems to works fine for the purpose",
+        "ts": "1586910873.007700",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1069038593252_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Roto was more loose for the animation . I ll need to do it accurately next",
+        "ts": "1586910918.007800",
+        "username": "Eric Barrailler (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1075497019697_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

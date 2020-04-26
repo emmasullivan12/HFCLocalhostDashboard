@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh ok",
+        "ts": "1584736431.005700",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1003165899938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

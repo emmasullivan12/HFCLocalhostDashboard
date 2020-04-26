@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ollie, no worries same here.... Still haven't started the short film... Waiting for the plates and the producer directives really...",
+        "ts": "1573932239.003700",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-16\/837495619120_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good luck for you dissertation! Hope you managed to do everything you wanted !",
+        "ts": "1573932268.003800",
+        "username": "Justin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-16\/837495779712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

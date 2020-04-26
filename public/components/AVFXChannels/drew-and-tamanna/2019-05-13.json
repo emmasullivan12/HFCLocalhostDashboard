@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "these are great articles, thank you",
+        "ts": "1557770729.000700",
+        "username": "Tamanna (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-13\/634180258560_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

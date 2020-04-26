@@ -1,0 +1,156 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When you're in a conversation with someone as well it's good to keep it flowing. I used to ask lots of questions where only \"yes\" or \"No\" were the responses. Better to ask open \"how?\" \"what?\" etc questions instead to keep the convo flowing",
+        "ts": "1511436714.000080",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/277801685095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also show's you're listening to what the person said and delving deeper.",
+        "ts": "1511436737.000155",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276770543700_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@amysheikh05 has joined the group_",
+        "ts": "1511437916.000115",
+        "username": "smooz (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276777485636_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<!channel> Note that some of your emoji reactions aren't showing up properly for everyone ... if you click on \"start a thread\" when you hover over someone's message and react that way instead!",
+        "ts": "1511438084.000195",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276876450565_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello",
+        "ts": "1511442209.000244",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276804962308_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Amy! :+1:",
+        "ts": "1511449448.000087",
+        "username": "michael.caira (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276740966595_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you guys get any \"networking\" opps at school (either with employees or other schools)? @halimahaq10 @amysheikh05 @kaurm-2011 @sjassal-2011 @sophie.ej.ellis",
+        "ts": "1511460838.000020",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276881201602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nope, not that I know of ",
+        "ts": "1511460917.000092",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276225884464_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nope ",
+        "ts": "1511461141.000055",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276882421698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's interesting ... it's a skill most 50 year olds still don't know how to do well!",
+        "ts": "1511461183.000160",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276367034209_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here's a little insight to my day today!\n*Today I worked:* from 9AM to (probably) 10PM with a few hours off at lunch to go to the gym!\n*Today tasks \/ activities I worked on:* brainstorming \/ firming up a \"10-year\" plan for the businesses. Lots of coffee required today! :coffee:\n*Today my colleague told me:* that they appreciate that we take gym breaks. We get back to the desk feeling refreshed!\n*Today I'm learning \/ reading:* about how to pitch to investors (i.e. what i should focus on most to impress them)\n*Today I felt:* a little frustrated as felt I didn't get much \"done\" on paper, but lots of brainstorming and interesting thoughts flying around on our whiteboards!\n\nWhat have you students been up to today?",
+        "ts": "1511461331.000087",
+        "username": "emma (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276367610257_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, there was a maths mock I had to do this morning, not much else I’m just sat revising for a physics one Tomorrow",
+        "ts": "1511461389.000175",
+        "username": "sophie.ej.ellis (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/277758403750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Revision for most of the day. ",
+        "ts": "1511461904.000062",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/276369878433_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My day was the typical one, i had few lessons to attend today and i also did P.E.",
+        "ts": "1511466486.000210",
+        "username": "sjassal-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-23\/277979626263_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

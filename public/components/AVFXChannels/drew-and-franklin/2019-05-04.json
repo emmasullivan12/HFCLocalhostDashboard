@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/3dtotal.com\/news\/general\/learning-to-become-a-good-vfx-artist>",
+        "ts": "1556956394.000100",
+        "username": "Drew Robertson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-04\/626273339125_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "3dtotal",
+                "title": "Learning to Become a Good VFX Artist",
+                "title_link": "https:\/\/3dtotal.com\/news\/general\/learning-to-become-a-good-vfx-artist",
+                "text": "Senior Compositor Josh Parks talks about what it takes to become a good VFX artist.",
+                "fallback": "3dtotal: Learning to Become a Good VFX Artist",
+                "image_url": "https:\/\/assets.3dtotal.com\/good-comper.uh1h7e.jpg",
+                "image_width": 473,
+                "image_height": 250,
+                "from_url": "https:\/\/3dtotal.com\/news\/general\/learning-to-become-a-good-vfx-artist",
+                "image_bytes": 48734,
+                "service_icon": "https:\/\/3dtotal.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/3dtotal.com\/news\/general\/learning-to-become-a-good-vfx-artist"
+            }
+        ]
+    }
+]

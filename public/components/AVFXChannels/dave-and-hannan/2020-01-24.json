@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries mate. If that is truly your decision, that is fine, but if you want to work towards previs, it is also possible. You just need to put in more work. One thing I will at about this industry is that people don’t really do a degree, then get work. There is a constant need to improve, so most people are constantly doing new courses and learning new things. It’s a necessity to stay in the industry. ",
+        "ts": "1579855011.000100",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/920333912832_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Was nice to meet you in person, and am happy to look at anything you want to send me. ",
+        "ts": "1579855046.000200",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/907547983234_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "One more option that is a possibility is to try and get a runner job in a major studio. They don’t pay great, but most of the runners get opportunities to move into production after they are finished. It’s a great way to meet people in the industry and find opportunities ",
+        "ts": "1579855127.000300",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-24\/920335888496_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

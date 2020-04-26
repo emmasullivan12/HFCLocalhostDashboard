@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Davi, glad to hear you had fun in America.\n\nI staterted at Brits on Thursday although we haven't properly started lessons yet but so far so good and I think I'm really going to enjoy it!:smile:",
+        "ts": "1567377032.000300",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/745373405440_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks for the info. I'd heard of it before and seen how some games have used it:+1:",
+        "ts": "1567377301.000400",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/745378991589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

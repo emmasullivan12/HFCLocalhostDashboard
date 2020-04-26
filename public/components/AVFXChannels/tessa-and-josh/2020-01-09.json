@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome stuff,\nWhen I was headed into uni I thought I wanted to go into games as a concept artist, but I was put into the 3D pathway and discovered animation, which I had always seen in movies and games but never gave much attention to before. I also had that moment where animation just clicked for me, it's something about seeing whatever it is that you're working on come to life. When it works it's very satisfying :smile:\nRight now, I'm kind of at a crossroads in terms of the area of animation that I'd like to head into. I'm not sure whether I'd like to do more games orientated animation, or animation for TV and film. I've always loved telling stories and so I'm leaning more towards TV and film, but I also love how action packed most games animation is. My hope is that if I'm able to get my foot in the door, I can hop around a little bit and try each of them out in a professional environment.",
+        "ts": "1578588799.001500",
+        "username": "Joshua Treadgold (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/901817410983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh for sure! It'll be good to get your feet wet in games first if you'd like to do both. Game animation requires a bit more technical insight, which I think a lot of studios assume film animators won't have and will overlook them as candidates as a result. If you can get a bit of experience in games you'll have a foothold to hop around between the two.",
+        "ts": "1578602771.001600",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/890132557761_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But see how you feel! You can always steer more towards film later. For myself, I was in the middle for a long time as well until after a few years I wanted to go full-on for film and TV.",
+        "ts": "1578602916.001700",
+        "username": "Tessa el Miligi (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-09\/902213950055_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

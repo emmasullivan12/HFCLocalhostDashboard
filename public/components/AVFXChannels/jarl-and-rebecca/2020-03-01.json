@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! Congratulations! I’m glad you found a new place, fingers crossed the baby waits until after the move haha :blush: Don’t feel pressured to respond quickly, you’ve got a lot on right now, so I hope you and your partner take it easy!\nAndreas Wannerstedt was one of my first inspirations for getting into 3D modelling and animation in the first place! These days I am more inspired by more stylized feature animation, focusing on conveying feeling and emotion or possibly animation for video games. Blue Zoo are currently animating a Paddington Bear series which is incredibly charming, I really enjoy that kind of highly stylized animation. The stop motion feel is very pleasant to watch. More recently I saw this piece from Passion Animation which was amazing, it’s called ‘Borrowed Time’ <https:\/\/www.youtube.com\/watch?v=aGiC9Mg91eQ>. ‘Best Friend’ is also another really amazing piece even though its not 3D <https:\/\/www.youtube.com\/watch?v=j01Hg4QJ6NE>.\nI’m planning on trying all kinds of 3D animation though to see what I actually enjoy creating, really looking forward to summer to dedicate a lot of time on it. I’m currently in first year and trying everything VFX, games and 3d related so I don’t actually have enough time to animate as I would like to but I’m grateful for it as I’ve just started my first rigging project and I feel like my drawing skills are really improving! Just getting controllers and the joints in place now but I really enjoy making the naming structure, it feels really satisfying. I think paint weighting will be really fun.\nI wasn’t aware of how divided jobs are in the industry so thank you for clarifying that! Are most people only extremely well versed in 1\/2 areas or is it more common to have 3\/4 really well developed skills?",
+        "ts": "1583093883.000300",
+        "username": "Rebecca Johnson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/976296568048_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Emotional Short Animated Movie: Borrowed Time (Full Movie) 3D Animation Movie",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=aGiC9Mg91eQ",
+                "author_name": "Passion Animation - The Best Animated Movies",
+                "author_link": "https:\/\/www.youtube.com\/user\/ChildrenGamesTV",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/aGiC9Mg91eQ\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Emotional Short Animated Movie: Borrowed Time (Full Movie) 3D Animation Movie",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/aGiC9Mg91eQ?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=aGiC9Mg91eQ",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=aGiC9Mg91eQ"
+            },
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Best Friend - Animation Short Film 2018 - GOBELINS",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=j01Hg4QJ6NE",
+                "author_name": "Gobelins",
+                "author_link": "https:\/\/www.youtube.com\/user\/gobelins",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/j01Hg4QJ6NE\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Best Friend - Animation Short Film 2018 - GOBELINS",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/j01Hg4QJ6NE?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=j01Hg4QJ6NE",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 2,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=j01Hg4QJ6NE"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583093884.000000"
+        }
+    }
+]

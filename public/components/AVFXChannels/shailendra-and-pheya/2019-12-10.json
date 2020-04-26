@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Shailendra, \nIm doing very well thanks for asking! How are you getting on? \n\nI just finished my contract it was really great. I got so much out of it and made really good connections. I also got told that they will definitely have me back once I graduate which is nice to hear! It was very reassuring to know that I was doing a good job and got trusted with some pretty big responsibilities.\n\nI do actually have curiosities, working during the bottle neck time of a project. Basically a week before delivery stress \"crunch time\" or even just generally in the industry - how do you balance your personal life and what does your normal routine look like? \n\nHow many hours do you usually work per day or week? \n\nWould love to hear your outlook on it because although I only worked there for 3 weeks I can imagine this lifestyle very demanding mentally",
+        "ts": "1575976183.004700",
+        "username": "Pheya Tribelsky (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/859008300561_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Pheya\n\nNice to hear from you.\nI am doing great, Thank you. A bit quiet at the moment at work going into the holidays. Went to a screening for one of the films we did this year. \n\n<https:\/\/youtu.be\/Rm4VnwCtQO8>\n\n\nThats Fantastic! Its a great way to get to know people and see how things work in the “real world”. Hope it leads to more opportunities once you graduate.\n\n\nGreat questions. Wish a lot of university students asked these before starting out.\n\n1. It can be very demanding indeed and we get good at it over time. Planning for simple things like healthy food, good sleep as well as reducing stress e.g. walking to the kitchen every hour or two, lunch in the park, meditate, bicycle to work and so on. gives you that extra capacity.\n\nI assume there will be some stress when it gets busy \ndirector changing their mind at last minute, the renders not working, colleague getting sick and so on.  being able to take it with ease and offer solutions goes a long way.\n\n2. I work 40 hours a week. a bit more during delivery weeks with some weekends too. I would say 40 hours when its going smooth and 50-60 when we get busy. \n\n3. If there was some advice I could give an aspiring vfx artist\/producer\nTake care of your health &amp; well being. you’ll need it in later parts of your career. \nBe a learner for life!\n\n\nto end with I’d say It can be an amazing experience to work in the vfx industry\nwith some really talented people, working in different parts of the world on interesting projects. In some ways it makes the best of you. \n\n\nHope that helps\nGoodluck!\n\n\n",
+        "ts": "1576000371.004800",
+        "username": "Shailendra Pandey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/854791053378_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "The Aeronauts - Official Trailer",
+                "title_link": "https:\/\/youtu.be\/Rm4VnwCtQO8",
+                "author_name": "Amazon Prime Video",
+                "author_link": "https:\/\/www.youtube.com\/user\/amazonstudios",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/Rm4VnwCtQO8\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: The Aeronauts - Official Trailer",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/Rm4VnwCtQO8?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/Rm4VnwCtQO8",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/Rm4VnwCtQO8"
+            }
+        ]
+    }
+]

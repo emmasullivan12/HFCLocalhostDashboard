@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries. Yeah, I think it'd be cool to chat once a week. Thursday afternoon is probably the best for me.",
+        "ts": "1574023248.002400",
+        "username": "Gregorio Malara (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/840178294582_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

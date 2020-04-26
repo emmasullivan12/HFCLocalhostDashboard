@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! I'd love to get the opportunity to run my final year lighting project past you and see what you think about the idea and my approach let me know!",
+        "ts": "1576009197.002500",
+        "username": "Bradley James Costello (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/855085978738_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

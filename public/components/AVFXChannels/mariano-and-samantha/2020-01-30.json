@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Samantha, do you want to have a look at my Linkedin profile first? <https:\/\/www.linkedin.com\/in\/marianomelmancarrara\/>\nHappy to answer questions afterwards. Thanks. Mariano",
+        "ts": "1580385841.001800",
+        "username": "Mariano Melman Carrara (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/928522422484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mariano , awesome I taken a look. I was wondering is it quite common for producers to work with storyboard artists during production or is it more of a post production role ? ",
+        "ts": "1580386526.001900",
+        "username": "Samantha Humphreys (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/928535549012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'd say storyboards is a very important element of the pre-production. The post-production artists would still refer to the original boards when doing their work.",
+        "ts": "1580390448.002000",
+        "username": "Mariano Melman Carrara (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-30\/931282961558_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

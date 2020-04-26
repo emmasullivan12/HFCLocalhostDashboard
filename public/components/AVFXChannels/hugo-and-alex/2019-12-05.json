@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Where do you want to take it from here? How can I help you?",
+        "ts": "1575546321.004400",
+        "username": "Hugo Melo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/860626284180_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

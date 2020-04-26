@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem! Yeah it's a big leap but it's a really nice industry to work in, I feel like overall people are really friendly and laid back.\n\nNot sure about matchmove in a reel, I'll ask our head of matchmove and see what she says.",
+        "ts": "1580488773.000100",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/918551902578_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "She said this:\nwell he would be best off shooting a bit of film, an interesting camera move then tracking it put some cones on the points add a ground plane then chuck some cg in there, 1 shots would be enough if it was long and showed lots of different skills\nor he could do a few shorter shots with harder camera moves and just cones on the points and a ground plane locked in for example",
+        "ts": "1580489769.000200",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/931393236581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also she mentioned there are some groups for Tracking &amp; Matchmove on LinkedIn where they share reels. You could also check on Vimeo\/Facebook groups for showreels.",
+        "ts": "1580489840.000300",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-31\/933585853206_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

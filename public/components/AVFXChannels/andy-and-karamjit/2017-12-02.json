@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, not quite sure what you mean. Can you be more specific? Overall I think your career path is good. Whether you follow a degree first or an apprenticeship is up to you and your circumstances. The apprenticeship looks attractive however, I would explore the possibility of doing an engineering degree at some point as it will enable better job prospects and the ability to move on from BA.",
+        "ts": "1512215017.000062",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/281837824807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It has been good being touch with you however, I don't feel I have provided you with the value from this programme that you need. I think having a discussion early on would have been beneficial to us both and enabled more in-depth conversations around your career aspirations. This is something I will ensure is done next time I do this. Would you have found a regular call beneficial?",
+        "ts": "1512215133.000081",
+        "username": "andy (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-12-02\/280907828821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mijail! Great to meet you! How are you doing? \nWould you like to share a bit about yourself? \nAre you studying at university now? \nWhat kinds of subjects? \nLooking forward to mentoring you :smiley:",
+        "ts": "1574159006.001700",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/839695624356_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

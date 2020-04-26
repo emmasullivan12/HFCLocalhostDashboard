@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am very sorry for a late reply! \nThank You very much again for a really nice demo session! \nIt was great! \n(I love that unicorn, haha) have a lovely weekend!!! :horse::+1::relaxed:",
+        "ts": "1544740771.001500",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-13\/505040712086_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

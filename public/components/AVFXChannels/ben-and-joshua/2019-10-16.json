@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The first link you sent, Josh Parks website, he gave a vfx lecture recently!",
+        "ts": "1571240555.003100",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-16\/799881845398_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

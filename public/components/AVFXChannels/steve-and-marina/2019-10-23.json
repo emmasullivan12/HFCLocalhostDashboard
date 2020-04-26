@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPQ05BZRB",
+                "created": 1571836885,
+                "timestamp": 1571836885,
+                "name": "Bouncing_ball_msrina.mb",
+                "title": "Bouncing ball msrina",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 62284,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPQ05BZRB\/bouncing_ball_msrina.mb?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPQ05BZRB\/download\/bouncing_ball_msrina.mb?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPQ05BZRB\/bouncing_ball_msrina.mb",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPQ05BZRB-865ccd62e6",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1571836885.003400"
+    }
+]

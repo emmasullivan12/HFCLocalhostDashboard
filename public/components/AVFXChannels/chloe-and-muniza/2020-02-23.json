@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! Heres a shot from another third year film im freelancing on! Its a vfx film with a cg fox\n<https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1358944\/1392584>",
+        "ts": "1582499404.000100",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-23\/955189880721_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: WB_Shot_1230",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1358944\/1392584",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: WB_Shot_1230",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1358944\/1392584",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/6af7b1bc18e0\/#1358944\/1392584"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582499405.000000"
+        }
+    }
+]

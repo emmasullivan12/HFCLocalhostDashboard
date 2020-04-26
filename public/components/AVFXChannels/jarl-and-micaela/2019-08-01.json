@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey cool Micaela! That's exciting to hear you're taking a Houdini course right now. Which course is it?\n\nGlad to hear you've tried to reach out to Jessie, I hope she can give you an interesting and helpful response.\n\nMy holidays were really fun, thanks for asking. My partner and I haven't been back to the city we're from in the States during the month of July in over 10 years! July is one of the best times of year to be there, so needless to say the weather was really enjoyable. It was also really fun getting to hang out with lots of friends and family. I have a 2 year old nephew, so that was a particular highlight for me too. This was only the second time I had ever seen him! Yikes living far away isn't easy (or cheap!), huh?",
+        "ts": "1564689401.000300",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-01\/715483692183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

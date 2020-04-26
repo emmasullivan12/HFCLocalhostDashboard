@@ -1,0 +1,61 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGUMGSFRU",
+                "created": 1552069779,
+                "timestamp": 1552069779,
+                "name": "Answers.txt",
+                "title": "Answers",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U6D2VCN07",
+                "editable": true,
+                "size": 5524,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGUMGSFRU\/answers.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGUMGSFRU\/download\/answers.txt?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGUMGSFRU\/answers.txt",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGUMGSFRU-a525e5c377",
+                "edit_link": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGUMGSFRU\/answers.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552069779.000300"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much !!!\n:pray::skin-tone-5: \nI’m gonna read carefully and make an awesome presentation now !!",
+        "ts": "1552092069.000600",
+        "username": "Franklin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-08\/570856728400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much for sharing all this with me, not just personal points of view, your experience and also part of your life. I feel really honored and more motivated than ever to do well. I hope I can show you what I am capable of and what I would like to be able to do. thanks a lot and see you soon !!",
+        "ts": "1552092781.000700",
+        "username": "Franklin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-08\/571610631426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

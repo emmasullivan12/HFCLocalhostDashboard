@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/>",
+        "ts": "1584702878.015300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016134629815_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "escapestudiosvfx.com",
+                "service_url": "http:\/\/escapestudiosvfx.com",
+                "title": "Sun loungers on the beach, not deckchairs on the titanic: 14 golden tips for students working remotely",
+                "title_link": "https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/",
+                "author_name": "Saint",
+                "author_link": "https:\/\/escapestudiosvfx.com\/author\/saintvfx\/",
+                "thumb_url": "https:\/\/escapestudiosvfx.files.wordpress.com\/2020\/03\/seuss_joshuacoleman-1.jpeg?w=1200&fit=200%2C150",
+                "thumb_width": 200,
+                "thumb_height": 92,
+                "text": "It&rsquo;s important to have a guiding principle for your &lsquo;home learning&rsquo; and to make it work for you. Don&rsquo;t let your education be defined by COVID-19. This is a new but temporary reality, and we can&rsquo;t just go into a coma for the coming months. We need to strive to be in the best possible shape for the world afterwards.",
+                "fallback": "escapestudiosvfx.com Link: Sun loungers on the beach, not deckchairs on the titanic: 14 golden tips for students working&nbsp;remotely",
+                "from_url": "https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/",
+                "service_icon": "https:\/\/s2.wp.com\/i\/webclip.png",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584702879.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it was a really emotionally toxic situation living with my dad and stepmom, and as soon as I turned 18 I left and never looked back . I am sorry to hear about your situation too, and glad we were able to share. It’s a bit trite but: a problem shared really is a problem halved sometimes. It helps put everything into perspective. ",
+        "ts": "1584716841.015500",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1014989777253_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Btw thanks for the link, yesterday was my first full day in isolation and I definitely need some times haha ",
+        "ts": "1584716929.015600",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1014520574596_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

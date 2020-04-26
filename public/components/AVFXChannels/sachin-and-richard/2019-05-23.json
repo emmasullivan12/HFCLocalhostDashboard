@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard , \nI seem to be having some issue with the notifications on my phone so I’m case you don’t hear from me within a couple of days of your message , just ping me again . I’m not sure what’s causing it but the notifications are inconsistent. ",
+        "ts": "1558625611.000700",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/638026515201_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That’s great !! Good luck with the application \nIn terms of tips I’d say clarity goes a long way in being taken seriously\nWhat I mean is , if your cv demonstrates clarity in thinking wrt the kind of work you would like to do , that increases your odds of getting picked . ",
+        "ts": "1558625796.000800",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/646209517031_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But In your case , I’m guessing you are applying for the role of a compositor so there’s probably not a lot of scope for being unclear :) ",
+        "ts": "1558625886.000900",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/632958747458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would also suggest being open to different roles like matchmove , Rotopaint etc cause you can always move around once you get in \n",
+        "ts": "1558626093.001000",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-23\/632963505042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

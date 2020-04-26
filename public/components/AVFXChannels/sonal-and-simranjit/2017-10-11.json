@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I’m really confused about that ",
+        "ts": "1507743378.000088",
+        "username": "simkaur-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-11\/255937239255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

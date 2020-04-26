@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey mate. Happy Holidays. Hope you are having \/ had a good break. \n\nThe core skills you need for previs are composition, cinematic knowledge and animation. There are other skills, but they are a good start! \n\nIf you wanted to build a reel for previs, and just wanted to get in the door, you would need to demonstrate those things. The problem I always had is that animation takes a long time to do. \n\nI haven’t seen your animation skills, but if this is something you want to pursue, the simplest way to could demonstrate your scene is to build a small scene where something is happening and put some cameras in it. Look for interesting ways to tell the story with the camera and staging. You could even art direct it to help the shots. \n\nWhile you could animate all the characters from scratch, I think for an entry level position you could use mocap and focus only on the animation of the cameras. If you were to do that, recruiters would question your animation skills (which you may need to demonstrate elsewhere) but they wouldn’t mind as using mocap is standard process. I think it could also help you to assemble more work and learn a lot more quickly. You would then need to find some mocap on the web, or track it down yourself. \n\nWith previs, while I mentioned camera work and animation above, it’s actually a field that needs you to be good in almost all areas. Modelling, lighting, fx, etc… this is because these skills are all used to help make a shot better. That is why a lot of artists are animators that have generalist skills. Saying that, if you are really good at one useful thing, that also counts for a lot!\n\nHope this information helps. Let me know if you have other questions!",
+        "ts": "1577523987.000600",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-28\/887988618693_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is very helpful thank you. Yes I do want to get started in previs as an entry level job because I am relly interested in pre-production as a whole, yes my aim is to eventually be doing concept and art direction work but with this I can pick up the essential skills needed to be good at what I want to do.\n\nI am learning lighting and colour as of now for my concept work and modelling is not an issue for me. As for fx I can do basic things like grooming, clothing, liquid and rigid bodies but nothing advanced.\n\nI will make a scene for you to see and give feedback",
+        "ts": "1577541414.000700",
+        "username": "Hannan Hanid (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-28\/876609167939_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FS44RBZ7X",
+                "created": 1577555167,
+                "timestamp": 1577555167,
+                "name": "Gem_King_Graded.png",
+                "title": "Gem King Graded",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 5037235,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS44RBZ7X\/gem_king_graded.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FS44RBZ7X\/download\/gem_king_graded.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FS44RBZ7X-2b85a345cc\/gem_king_graded_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 3840,
+                "original_h": 2160,
+                "thumb_tiny": "AwAbADCJhURFTsKjYUxERp7KPLGAMZ69\/wAaTGTTuQu0jHPekxoixRipMEr\/AEpMU0wZdZKiZKnamGpuPlIApVgR1HNLKWkYE+nSpCBSYFK4cpX+Ydj+VJu2nmrqjEfHFV7lFBUgck01IGj\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FS44RBZ7X\/gem_king_graded.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FS44RBZ7X-da6423f2a5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1577555173.000800"
+    }
+]

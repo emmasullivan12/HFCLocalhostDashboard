@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no need to apologise, I'm super busy so my replies may be a little slow",
+        "ts": "1553687141.005800",
+        "username": "chris cook (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-27\/590769038279_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

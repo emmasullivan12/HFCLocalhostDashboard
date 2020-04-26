@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha! No problem :) have a lovely Christmas also Silvija! :unicorn_face:",
+        "ts": "1545656419.001300",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-24\/510537295313_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

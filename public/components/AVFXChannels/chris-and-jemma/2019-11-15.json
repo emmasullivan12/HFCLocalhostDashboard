@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi sorry I’ve been gone for a while! In and out of hospital I never got a chance to finish that last brief! ",
+        "ts": "1573841366.006500",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/836178504164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Such a pain but doing so much better now and launched into a new one already. Any chance you’ve done any 3D integration ",
+        "ts": "1573841390.006600",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-15\/836643095744_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

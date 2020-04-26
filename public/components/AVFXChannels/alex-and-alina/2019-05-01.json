@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Привет, Алина! Извини, что долго не писал. \nЯ вторую неделю на новом месте. Первые ощущения очень позитивные. Хороший коллектив и классная атмосфера. Даже не парит, что пришлось работать в первые же выходные. В принципе, нормальное явление для постпродакшн. На данный момент большая часть студии работает над эпизодом «Crown», и две команды над рекламами. \nТяжко было потому, что не было мотивации совсем. Все мои мысли были на новом месте уже, а по договору нужно было доработать 4 недели. ",
+        "ts": "1556703935.000100",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-01\/625134278903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Как у тебя дела? Как отдохнула в Минске? Как продвигаются твои поиски?",
+        "ts": "1556703996.000200",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-01\/623264461077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Кстати, вчера снова ссылка попалась <https:\/\/lnkd.in\/gVK5xid>",
+        "ts": "1556704064.000300",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-01\/611888549890_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Framestore",
+                "title": "Jobs",
+                "title_link": "https:\/\/lnkd.in\/gVK5xid",
+                "text": "Framestore",
+                "fallback": "Framestore: Jobs",
+                "thumb_url": "https:\/\/www.framestore.com\/\/sites\/all\/themes\/framestore\/img\/meta.jpg",
+                "from_url": "https:\/\/lnkd.in\/gVK5xid",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/www.framestore.com\/sites\/all\/themes\/framestore\/img\/touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/lnkd.in\/gVK5xid"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Привет! Ох, я так рада, что у тебя все в порядке на новом месте! Круто:grinning:  Ничего страшного, что не писал, я даже не открывала слак в Минске. Да, я как раз собираюсь подавать заявку на internship Framestore, заканчиваю работу. В Минске отдыха не было особо, у меня сейчас к сожалению есть семейные проблемы, так что нужно было с некоторыми вещами помочь. А так все вроде идет как нужно:)",
+        "ts": "1556704508.000500",
+        "username": "Alina Fedaseyenka (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-01\/623320312400_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pretty much, I'm getting there to get some work done ahead. Therefore I can skip some lessons and take care of other things in school :slightly_smiling_face:",
+        "ts": "1579510968.000100",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/901888855363_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I just got Distinction for the Second Unit of work so it's getting better",
+        "ts": "1579523059.000200",
+        "username": "Jakub Zaniewski (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/903398227297_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

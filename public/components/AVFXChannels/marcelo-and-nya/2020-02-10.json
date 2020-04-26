@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Nya, hope you're well! Sorry for the late response, had a lot of setbacks these last weeks!\nYour site is looking great, the animation section is really nice, I especially liked the girl raised by crocs :+1:",
+        "ts": "1581327034.000900",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/931746952722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh no, well I hope everything’s back on track now. And thanks, Marcelo I’m going to try and keep adding to it.",
+        "ts": "1581370305.001000",
+        "username": "Nya (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/945789548885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

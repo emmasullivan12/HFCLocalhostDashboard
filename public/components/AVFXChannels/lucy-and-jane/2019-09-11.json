@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Jane.  My company is VFX. You can look us up if you like <http:\/\/www.unionvfx.com|www.unionvfx.com>.  We are currently working on several films and TV projects.  I can’t tell you about some of them (top secret stuff…) but can tell you that we worked on The Two Popes which is coming out on Netflix before Christmas and Four Weddings and a Funeral the TV series that is on now as well as the next season of The Crown, Yesterday and Outlander.  We do lots of different stuff.",
+        "ts": "1568213296.004300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-11\/756610593632_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

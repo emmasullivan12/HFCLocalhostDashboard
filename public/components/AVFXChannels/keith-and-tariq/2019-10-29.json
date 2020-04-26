@@ -1,0 +1,107 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amazing, yeah the best thing you can do is keep going and stay determined.  Get a few really nice things on your reel and then start applying around.  The best way to get into the industry is to get your foot in at any Houdini shop you can, and build up.",
+        "ts": "1572355642.000300",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/812749793652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Show me the football when you have something! Sounds very cool!",
+        "ts": "1572355669.000400",
+        "username": "Keith Acheson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/805307920817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPZLBDARL",
+                "created": 1572364251,
+                "timestamp": 1572364251,
+                "name": "football_testrender1.mp4",
+                "title": "football testrender1",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 5074938,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPZLBDARL\/football_testrender1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPZLBDARL\/download\/football_testrender1.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPZLBDARL\/football_testrender1.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPZLBDARL-94e5bea0e4",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1572364251.000500"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FPXEF3L5T",
+                "created": 1572364267,
+                "timestamp": 1572364267,
+                "name": "SignBreakV2.mp4",
+                "title": "SignBreakV2",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2835865,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPXEF3L5T\/signbreakv2.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FPXEF3L5T\/download\/signbreakv2.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FPXEF3L5T\/signbreakv2.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FPXEF3L5T-b71ac8ee93",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1572364268.000800"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The SignBreak thing could be a work opportunity. I have to do this as a test sim first. They like it so far though.",
+        "ts": "1572364352.001100",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/815694545174_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

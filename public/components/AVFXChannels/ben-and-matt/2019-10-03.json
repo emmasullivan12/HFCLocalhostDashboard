@@ -1,0 +1,151 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, at DNEG AE is only really used by our motion graphics team. In terms of compositing it is all Nuke really. It’s the same story for most big film and tv places to be honest. The node based workflow means we can address notes faste and shots can be handed round people if needs be (although they like to avoid that if possible)\n\nI would say picking up Nuke is the way forward right now to get into the industry. While AE will be good at training your eye, learning how to achieve what you want in Nuke would be more beneficial I reckon.\n\nOn a more broad sense I think bode based workflows are where the industry is heading. More and more of our CG is coming from Houdini (although Maya is still DNEGs primary 3D package) which is also node based.",
+        "ts": "1570086660.005500",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/782139147845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright mate, got ya. Think the only reason I've been using Ae is the price &amp; Andrew Kramers tutorials :joy: but yeah, got a student nuke licence last week so been getting a feel around for it and stuff. \n\nFor a full camera tracking, do you primarily use the built in nuke camera tracker? Or 3rd party like SynthEyes\/ pftrack? \n\nAm I alright to quote what you said ^^ about nuke &amp; nodes in general?",
+        "ts": "1570094292.005600",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/782266908640_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FP2GSGJDC",
+                "created": 1570100509,
+                "timestamp": 1570100509,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1280907,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP2GSGJDC\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FP2GSGJDC\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 270,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 360,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 540,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1067,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 720,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FP2GSGJDC-9c04612650\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 768,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 3024,
+                "original_h": 4032,
+                "thumb_tiny": "AwAwACSsWM2I1xjOeTVqK1VR3J+tQw24jbduDVfgUbixHJ71LZREiBMBeAOgqG7Cqjsjbi\/BGc4qw42uajcAoRtBJGBQmxNIy80Zq+I4QoEqgtjk5pfLtf7g\/OquFh0QwKsxtiqwOKkD\/IcelRuMdIwLcHNMzUUbAnnGTUlVawrj9iNyVB+opPKj\/uL+VJuxRvpiIxUqKMVWEgHcfnT1nUDlh+dQUN8va3BqUHioTKhP3hQJkH8QpiJqKj85P71HnJ\/epiP\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FP2GSGJDC\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FP2GSGJDC-11869a1283",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1570100515.005700"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And sure thing about the quote!",
+        "ts": "1570101450.006000",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/782381580869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's a nice mug ^ :laughing:\n\nThanks :+1: do you reckon everyone would say the same \/ or similar that you work with?",
+        "ts": "1570105753.006100",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/784654870054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have any book recommendations about roto btw?",
+        "ts": "1570105873.006200",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/781985408948_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hahaha and which bit do you mean with everyone saying similar things? And ahh yeah. To be honest the roto book is a bit overkill but it has a few good techniques in there! If you can, AE if you can get your Uni library to buy it rather than you. They usually have budgets for that kind of thing! The author is called Benjamin Bratt so if you search him and rotoscoping you should find it! \n\nSo you are just going into final year right? Why modules have you got coming up this year?",
+        "ts": "1570123932.006300",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/782915558245_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry wasn't clear, like would everyone say node based is their preference and that it's widely known that the industry is heading towards node based workflows, specifically in film and TV?\n\nYeah I'll ask them if they can get it then, worth an ask if anything!\n\nYeah just started the final year, we've just got 3 modules, first one is 'contextual studies' basically just a research project of my choice so using that to jump into Nuke and comparing layer and node workflows and which is used more and why kind of thing.\n\nWe get the brief of another on one called 'professional practice' and I think we have to sort ourselves out with some sort of work experience and\/ or get an assignment from someone else within industry and follow the description solely so we can't go off our own artistic license.\n\nLast one is just simply called final project, and from what we've briefly been told it's basically a portfolio boost with a small amount of write up.",
+        "ts": "1570135264.006400",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/783183642544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for the sheer amount of text there haha :see_no_evil:",
+        "ts": "1570135289.006500",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/783182242549_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

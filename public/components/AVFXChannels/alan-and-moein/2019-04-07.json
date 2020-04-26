@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Moein coming along nicely. How many sides of this tower will you see? Do you have camera moves that reveal the back side? If not then maybe you could do less work on that side?\n\nOne of things we do at work is get the modellers to get a render and the reference pic they used and literally draw a line between a bit of the render and the piece of reference they are matching. That helps us see what they are going for. I think you're model looks good so far but it's hard to get a sense of scale. It all feels the same size pieces and repetitive. Could you break it up? Different construction techniques etc.",
+        "ts": "1554668465.001400",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-07\/603409696757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And the satellite dishes at the top could definitely do with a bit of reference to match to. Look at buildings like the Sears tower in Chicago or even the real BT Tower.",
+        "ts": "1554668507.001500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-07\/604366441558_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

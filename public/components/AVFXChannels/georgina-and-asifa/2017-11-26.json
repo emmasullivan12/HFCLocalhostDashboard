@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Asifa. Thanks for sending me your impressive personal statement. Looks amazing. I will review it tonight and get back to you tomorrow!",
+        "ts": "1511733391.000049",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-26\/277685241844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah of course. Feel free to send whatever you like and I will give you feedback.",
+        "ts": "1579707551.000600",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/916786916724_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you send a password protected Vimeo (or other video host) link, that's probably the best way.",
+        "ts": "1579707596.000700",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/907054345153_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have also offered CV advice to others mentees (not sure if that's the word?) from Prospela so if you want me to look at your CV or cover letterthen go ahead. Redact any personal contact details first of course.",
+        "ts": "1579707714.000800",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/919106947591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for a putting together a reel, it's good to have some stuff on your reel that really relates to the area that you're interested in. I know you mentioned Houdini and Matchmove, so it would be good to try and include some of that kind of thing. Not necessarily right now but maybe something to think about for the future.\n\/\/\/",
+        "ts": "1579707850.000900",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/917250883488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also some general tips for reels, apologies if you've heard this before:",
+        "ts": "1579707899.001000",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/917264351365_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks again for helping me so much. Entering the industry is scary, but it makes it much less intimidating the more I understand about it.\n\nDuring this huge advert, everybody has been given little job roles, and I got given my section, which is an entirely CG space scene, most of the tracking and a couple of Houdini simulations throughout. Hopefully I’ll get enough stuff to put into a showreel after that. \nHow do people usually represent matchmoving in a showreel? I feel like matchmoving never looks impressive.",
+        "ts": "1579726744.001100",
+        "username": "Max Brown (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/905057789938_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1542288540.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5bed749c9efc760004fbfcd8|this link> with other teams to invite them in it_",
+        "ts": "1542288541.000400",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1542288541.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1542288572.000600",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1542288575.000700",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1542288654.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-5\" to \"neill-and-sophie\"",
+        "old_name": "z-shared-5",
+        "name": "neill-and-sophie"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1542288689.001000",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@neill.barrack has joined the channel_",
+        "ts": "1542288746.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480519550546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@sophiemase has joined the channel_",
+        "ts": "1542288756.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/481571396215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sophie, please meet Neill your incredible E-Mentor I've been telling you about! Feel free to introduce yourselves and continue chatting within this channel :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :smile:",
+        "ts": "1542288790.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/481920755222_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1542288794.001400",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480417846819_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1542288801.001500",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/479916273233_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Neill, thank you for connecting with me! I’m currently a digital media arts student at the University of Surrey. I finished my second year in June and currently doing a placement year before I return for my third year in September next year. So this has been an opportunity for me to gain experience in the industry. I’m currently a runner at Evolutions post productions in Soho but my contract ends at the end of this year and I would love to get some experience\/an internship with a VFX house for the rest of my placement year as I want to be a compositor. I was wondering if you had any advice of how I could get an internship or experience with a VFX house? I have a CV and portfolio\/show reels but not sure if I have the relevant experience\/work to secure a placement? ",
+        "ts": "1542289700.001600",
+        "username": "Sophie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480430030275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sophie, Pleased to meet you! Just so you know a little about me... I am a senior compositor at Framestore London, I have been in the VFX industry since 2012 when I graduated from the BA computer animation arts course at bournemouth uni. I have worked at framestore for that whole time and have moved from being a junior paint and roto artist to head of paint and roto to junior compositor and then to senior compositor over the 6 years. Before I went to bournemouth uni I was a pro photographer for 12 years.",
+        "ts": "1542293881.001700",
+        "username": "Neill (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/479997636945_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm not sure about other companies, but here the internship program runs over the summer and I think you can apply online. In my experience the people that tend to remain employed by a company rather than jumping from short contract to short contract are the compositors that start out in paint and roto. This gives a strong grounding in the necessary software and techniques but without quite as much pressure as a comp role. Have you considered building a paint and roto reel and taking that route?",
+        "ts": "1542293884.001800",
+        "username": "Neill (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480431799716_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pleasure to meet you too! It’s really interesting to here the career path you took, I hope I could follow suit and set on the same path. The summer internship is definitely something I would like to apply for. It sounds like paint and roto are also a good route to go, I have some roto work in my current compositing show reel but could possibly put some more in, so I could work on that. Do you think there’s any possibility that any companies may take me on as a roto\/paint artist for the remainder of my placement year, even if I would only be able to stay until September? ",
+        "ts": "1542321174.001900",
+        "username": "Sophie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-15\/480332090256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

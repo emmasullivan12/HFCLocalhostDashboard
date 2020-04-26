@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Не за что! Всегда спрашивай если есть вопросы.",
+        "ts": "1557163441.001300",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-06\/627026843268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ны, кстати, знаешь про drink&amp;draw?",
+        "ts": "1557163461.001400",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-06\/627565445408_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "моя бывшая коллега из mpc одна из организаторов. В этот раз они проводят иэвент в the mill",
+        "ts": "1557163503.001500",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-06\/627027974484_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/london.siggraph.org\/event\/drink-draw-the-mill\/>",
+        "ts": "1557163504.001600",
+        "username": "Alex Kulikov (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-06\/627566197968_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "London ACM SIGGRAPH",
+                "title": "Drink&amp;Draw at The Mill - London ACM SIGGRAPH",
+                "title_link": "https:\/\/london.siggraph.org\/event\/drink-draw-the-mill\/",
+                "text": "Drink&amp;Draw at The Mill The Mill invites us to their Learning Week, kicking off with Drink&amp;Draw in their London Studio.   Event Details: Date: Monday, 13th May 2019 Doors: 6:15 PM Event: 6:30– 9:30 PM Venue: The Mill, Fitzrovia   The Mill invites us to host May’s Drink&amp;Draw at their buzzing London studio as part of their... Read more »",
+                "fallback": "London ACM SIGGRAPH: Drink&amp;Draw at The Mill - London ACM SIGGRAPH",
+                "thumb_url": "https:\/\/london.siggraph.org\/wp-content\/uploads\/2019\/03\/DRINKDRAW_london_poster_TheMill_v01.jpg",
+                "from_url": "https:\/\/london.siggraph.org\/event\/drink-draw-the-mill\/",
+                "thumb_width": 1024,
+                "thumb_height": 581,
+                "service_icon": "https:\/\/london.siggraph.org\/wp-content\/themes\/siggraph\/images\/apple-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/london.siggraph.org\/event\/drink-draw-the-mill\/"
+            }
+        ]
+    }
+]

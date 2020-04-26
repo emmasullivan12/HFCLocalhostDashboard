@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it’s basically a starting production from scratch and complete it in 7 weeks  ",
+        "ts": "1567002001.000100",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/741096816912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was really fun actually ! It was stressful at times as I was directing and my group was relying on me but I think we did really well ",
+        "ts": "1567002099.000200",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/729653800627_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ha haha lot of hours of sleep lost :joy: but I’m very proud ",
+        "ts": "1567002123.000300",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-28\/743284077782_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

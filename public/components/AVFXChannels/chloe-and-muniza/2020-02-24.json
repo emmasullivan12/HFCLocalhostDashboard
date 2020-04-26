@@ -1,0 +1,30 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi!\nSorry for the spam of updates :sweat_smile: I've finished blocking out the whole of my other animation\n<https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1360649\/1394289>",
+        "ts": "1582565475.000300",
+        "username": "Muniza (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-24\/956349854337_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Shot05_Anim",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1360649\/1394289",
+                "text": "Collaborative Media Review with 5 items",
+                "fallback": "SyncSketch: Shot05_Anim",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1360649\/1394289",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/090fd39282e6\/#1360649\/1394289"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582565476.000000"
+        }
+    }
+]

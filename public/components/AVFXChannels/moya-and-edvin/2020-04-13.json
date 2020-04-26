@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Edvin, I'm so sorry I didn't send the details on. It's a bank holiday weekend here and I lost track of time. My email is <mailto:moyamchughanimation@gmail.com|moyamchughanimation@gmail.com>, if you want to connect on Zoom",
+        "ts": "1586804124.002200",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1054327417798_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can chat any night this week?",
+        "ts": "1586804131.002300",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1059168615141_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Moya! No problem, I lost track of time as well haha! Should we do tomorrow 7pm? ",
+        "ts": "1586804181.002400",
+        "username": "Edvin Dubrovskiy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1046987126455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Tomorrow at 7 is perfect! Talk to you then :blush:",
+        "ts": "1586805896.002500",
+        "username": "Moya McHugh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-13\/1059218677941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

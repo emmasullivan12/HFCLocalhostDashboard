@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great to be connected Bernice. I'm on leave at the moment, but happy for us to kick off our mentoring from tomorrow. In the meantime it would be great if you could have a think about your mentoring goals and what you'd like to get out of the experience.",
+        "ts": "1568185665.001600",
+        "username": "Simon Devereux (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-11\/743318404850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi, really sorry for this late reply Bea, I have quite a few questions but I'll ask one by one. Firstly, if you can please describe a typical day in your life as a software developer.Also how long did it take you to find a job after uni,what was the job and what was your experience? If you feel these are too personal than you don't have to answer.",
+        "ts": "1587572567.001900",
+        "username": "Shafeeq Mohammed (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1078017964229_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, I'm happy if you reply whenever! My day generally starts with getting in an checking up all my emails, the bulk of which are related to any code reviews I have in place. Other people on my team and in other sites (my company has offices globally) will be giving me advice\/ideas on the code I've written and it's up to me to address and discuss those quickly so things can be updated and pushed out. Then I usually go through what work has been assigned to me that I can pick up and move forwards, anything that isn't clear or requires further discussion I'll take to my supervisor and we work out next steps. As well as this I may pick up support tickets related to the code I look after or that junior TDs need help with, so that can be a process of finding out what  issues are, how to reproduce them, and how to fix them.\n\nI hope what's clear from this is exactly how much talking and communication makes up my day, I love to have a big project to work on and coding issues to solve, but it's important (and more fun) for me to keep up with the devs on my team, and my users, to make sure I'm doing the correct thing and delivering something useful.",
+        "ts": "1587596921.002000",
+        "username": "bea_de (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1080540595683_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also a lot of this is interspersed with just chatting to people around me because we all get on really well, of course at the moment I'm working from home so this happens a lot less!",
+        "ts": "1587596948.002100",
+        "username": "bea_de (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1080331171954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It took me a good few months to get a job out of university, because I only had 2 companies I wanted to work for, I essentially picked up smaller jobs until I got a traineeship at the company I wanted, but most people i know on my course were hired before they graduated.",
+        "ts": "1587596994.002200",
+        "username": "bea_de (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1086500815540_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The traineeship was part of the creative skillset program, where the government subsidised entry level roles in the industry, for a year I was meant to have a mentor who got me started in the industry, in truth it was used as a way for my company to hire a new junior for cheap, and my mentor left after a few months for his dream job, so I wasn't trained for long, but I am happy the opportunity was there!",
+        "ts": "1587597096.002300",
+        "username": "bea_de (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1086503060884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hope this answers your questions, any others welcome!",
+        "ts": "1587597159.002400",
+        "username": "bea_de (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-22\/1080545881331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

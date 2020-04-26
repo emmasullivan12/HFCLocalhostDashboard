@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard!! Sorry for the delay in getting back . Have a release on Monday so a bit swamped \n\nSure thing ! Can you give me more details ? Like when and what kind of questions to expect etc  :) ",
+        "ts": "1549104655.002700",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-02\/539701349104_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also if you need to interview someone that’s from the same discipline as you,  I might be able to find a comp supervisor\/ atleast a comper . ",
+        "ts": "1549104747.002800",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-02\/539701742448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

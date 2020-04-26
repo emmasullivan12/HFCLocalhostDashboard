@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "quite frankly it is a lot less intuitive, so I will code it in c++ first, then convert it to JS",
+        "ts": "1556313849.000700",
+        "username": "Ra'ed (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-26\/621909668551_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

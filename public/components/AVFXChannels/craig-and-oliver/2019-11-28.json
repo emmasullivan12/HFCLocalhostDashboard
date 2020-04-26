@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Craig,\nPlease accept my apologies for not engaging. I have been a bit caught up. It was a little overwhelming trying to get from Houdini to UE4. I have a little time over December I hope. I am going to try an achieve a whale jump and splash in Houdini. It will probably be my own Rig. After I have achieved this photo real shot in Houdini, I will then try and port it to UE4 and show a comparison on my reel. Hope you are still up for being my Mentor.",
+        "ts": "1574938530.000100",
+        "username": "Oliver Canovas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/841229760659_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

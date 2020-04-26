@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my first paragraph of my personal statement: \n\n“Every day I am surrounded by resources that can be used to create or develop anything. Whether that’s using two discarded toilet rolls to create binoculars or transforming a shoe box into a volcano for a geography project – there is no limit to what can be made by merging creativity with a few random supplies.\n  \nMy passion for architecture was initially sparked by a talk from leading architect Harbinder Birdi (RIBA chartered Architect at Hawkins\\Brown Infrastructure and Transport team), who is an inspiring role model for ethnic minorities wanting to join design and construction industries. One of the biggest projects he is working on is the Cross Rail programme that will deliver economic and social benefits to my area, Southall, as well as London as a whole. His talk about the Cross Rail project taught me that architecture is not just a new building shooting out from the ground, but a development to how the world works which can improve the interactions in our everyday life.” \n\nSo the first mini paragraph seemed too cheesy or childish to me, my peers liked it but I’m not sure. My form tutor liked my second paragraph more. ",
+        "ts": "1542228513.001100",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/479920729586_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FE3RJVAF6",
+                "created": 1542236706,
+                "timestamp": 1542236706,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 73510,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FE3RJVAF6\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FE3RJVAF6\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE3RJVAF6-48d730435b\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE3RJVAF6-48d730435b\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE3RJVAF6-48d730435b\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 335,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE3RJVAF6-48d730435b\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 447,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FE3RJVAF6-48d730435b\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "image_exif_rotation": 1,
+                "original_w": 640,
+                "original_h": 688,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FE3RJVAF6\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FE3RJVAF6-35f781a0bc",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1542236708.001200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve only crafted my intro, and it wasn’t detailed enough. I am working on a very slow pace so I need to start making time to work on my coursework as well ",
+        "ts": "1542236764.001500",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/480039984226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

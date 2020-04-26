@@ -1,0 +1,9 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<!everyone>\nBy way of a little update ... *some of our students do not have access to WiFi at home* (unfortunately)  and one of our schools had (accidentally &amp; temporarily) blocked access to the Slack platform. This means that they haven't been able to log in on time and\/or you might see a delay in the responses you get from them.\n\nWe had planned for some of you to take on more than 1 Mentee (where you had said you'd be happy to when you signed up of course :wink:), and the school IT team are fixing it so hopefully they'll all be logged in by Monday next week latest to meet you!",
+        "ts": "1507732643.000631",
+        "username": "bot"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya Chris, sorry has phone malfunctions this week. \nSame old same old. Mill didn’t get back to me so guessing that not interview failed whoops. Still at Framestore looking at their resources, Ian Murphy replied to my email and said university of Surrey needs help with a project. I don’t really want to do the whole project alone since it’s currently 4 minutes long (and really crap lol) but there are like two shots which I could use to put on a showreel if I finish them well. Might just set up nuke scenes, ask them to cut it to a minute, and most of all on off days I can go there and help Ian with Nuke training and use their programs.  Nice on a CV and reminding Ian that I exist. Since I won’t be wanting to go to central London on days off (it’s under 30 minute drive to my house which is :ok_hand:) ",
+        "ts": "1574936277.028600",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852664505013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are your ILM projects going?",
+        "ts": "1574936289.028700",
+        "username": "Victoria Hanke (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-28\/852197643924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

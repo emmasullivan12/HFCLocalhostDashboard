@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see, fair enough! I’ve heard about that. Apparently MPC has a serious reputation for underbidding for shows and then using staff pay to compensate.\n\nThings are good for me! My short film’s finally in comp and we’re delivering it in a couple of weeks now. We’ve also got a professional composer on board to make us a custom soundtrack for free. I’ve also started the grading and VFX for the film I worked on over the summer. ",
+        "ts": "1574540049.001500",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-23\/849062430534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

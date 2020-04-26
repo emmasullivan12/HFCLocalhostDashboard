@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm working at a company called Automatik vfx",
+        "ts": "1585311044.002200",
+        "username": "purestvfx (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1030951118245_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey just watched your showreel - pretty impressive for a student",
+        "ts": "1585324491.002300",
+        "username": "purestvfx (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1031608613077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

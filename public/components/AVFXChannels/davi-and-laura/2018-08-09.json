@@ -1,0 +1,391 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Laura. What are have you been up to?  Sorry for the delays in responding with Alex's feedback. I will list now and we can go over it in more details when you have a chance to read it.",
+        "ts": "1533818197.000065",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413431890772_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also do you have a computer at home?",
+        "ts": "1533818204.000412",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413118287953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "TIP:",
+        "ts": "1533818248.000391",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413539608067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1) Drawing: Keep drawing. Get a small portable sketchbook that you carry with you everywhere! Draw everything! On the tube, bus, park, at you internship, kitchen, bedrooom, etc.  :smile:",
+        "ts": "1533818310.000179",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413675497362_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The more you look a things, observe, the more you will improve your technical skills and your observation skills which are the most important bits actually.",
+        "ts": "1533818408.000335",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413120105713_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Life drawing classes are a great way to try gesture drawings for animation, etc to get pose in several seconds or minutes.\n<https:\/\/animationapprentice.blogspot.com\/2014\/07\/the-secret-of-animation-by-t-dan.html>",
+        "ts": "1533818455.000146",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/412959253072_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "The Secret of Animation - by T Dan Hofstedt",
+                "title_link": "https:\/\/animationapprentice.blogspot.com\/2014\/07\/the-secret-of-animation-by-t-dan.html",
+                "text": "T. Dan Hofstedt - animation supremo My old friend and former kumrad at Disney animation, T Dan Hofsted, recently posted at Facebook a r...",
+                "fallback": "The Secret of Animation - by T Dan Hofstedt",
+                "image_url": "https:\/\/3.bp.blogspot.com\/-mQ0nNuo3xPo\/U8BGBOppT-I\/AAAAAAAAAn0\/LvZ9z50iZfY\/w1200-h630-p-k-no-nu\/Screen+Shot+2014-07-11+at+21.15.56.png",
+                "from_url": "https:\/\/animationapprentice.blogspot.com\/2014\/07\/the-secret-of-animation-by-t-dan.html",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 183934,
+                "service_icon": "https:\/\/animationapprentice.blogspot.com\/favicon.ico",
+                "service_name": "animationapprentice.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/animationapprentice.blogspot.com\/2014\/07\/the-secret-of-animation-by-t-dan.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/animationapprentice.blogspot.com\/2017\/03\/gesture-drawing-by-proko.html>",
+        "ts": "1533818489.000117",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/414992852918_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Gesture Drawing by Proko",
+                "title_link": "https:\/\/animationapprentice.blogspot.com\/2017\/03\/gesture-drawing-by-proko.html",
+                "text": "Gesture drawing is an important skill for animators - it helps us learn how to capture a pose, and to master the art of visual storytell...",
+                "fallback": "Gesture Drawing by Proko",
+                "image_url": "https:\/\/lh4.googleusercontent.com\/proxy\/stkP6Ae8gEp4Se2a7O2UbGXNW6W84za45OkI8qT1FHWsMOnHqZ6wWmIn-H5zJqiU1D9NZq-d1jeAi5nQGNcOCnlIaa4=w1200-h630-n-k-no-nu",
+                "from_url": "https:\/\/animationapprentice.blogspot.com\/2017\/03\/gesture-drawing-by-proko.html",
+                "image_width": 333,
+                "image_height": 250,
+                "image_bytes": 20772,
+                "service_icon": "https:\/\/animationapprentice.blogspot.com\/favicon.ico",
+                "service_name": "animationapprentice.blogspot.com",
+                "id": 1,
+                "original_url": "https:\/\/animationapprentice.blogspot.com\/2017\/03\/gesture-drawing-by-proko.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These links are from Alex Williams, our Head of Animation at Escape Studios. His father, Richard Williams wrote the main animaiton textbook.",
+        "ts": "1533818538.000432",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413121311505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Animator's Survival Kit : mentioned above and amazon link.",
+        "ts": "1533818569.000203",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/412960313312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.theguardian.com\/film\/2013\/apr\/19\/richard-williams-master-animation>",
+        "ts": "1533818627.000117",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413678423362_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "the Guardian",
+                "title": "Richard Williams: the master animator",
+                "title_link": "https:\/\/www.theguardian.com\/film\/2013\/apr\/19\/richard-williams-master-animation",
+                "text": "Richard Williams was a pioneer of hand-drawn animation, working on films such as The Pink Panther and Who Framed Roger Rabbit. But perhaps his most enduring work is his masterclass, The Animator's Survival Kit. He talks to Nicholas Wroe",
+                "fallback": "the Guardian: Richard Williams: the master animator",
+                "image_url": "https:\/\/i.guim.co.uk\/img\/static\/sys-images\/GUARDIAN\/Pix\/pictures\/2013\/4\/17\/1366207153226\/animator-survival-kit-003.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=8d8828d135fd6082db1b2a2b2e0f5609",
+                "image_width": 476,
+                "image_height": 250,
+                "ts": 1366394340,
+                "from_url": "https:\/\/www.theguardian.com\/film\/2013\/apr\/19\/richard-williams-master-animation",
+                "image_bytes": 70416,
+                "service_icon": "https:\/\/assets.guim.co.uk\/images\/favicons\/ac43fe9507600081b58760450f518d07\/152x152.png",
+                "id": 1,
+                "original_url": "https:\/\/www.theguardian.com\/film\/2013\/apr\/19\/richard-williams-master-animation"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=dd5e1N9mWYA>",
+        "ts": "1533818729.000084",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413123088337_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Prologue (clip) - Richard Williams discusses",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=dd5e1N9mWYA",
+                "author_name": "Princess Cinemas",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UC1IwWng_RcicuAI1oXT5NGw",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/dd5e1N9mWYA\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Prologue (clip) - Richard Williams discusses",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/dd5e1N9mWYA?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=dd5e1N9mWYA",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=dd5e1N9mWYA"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=Blvijysj7dY>",
+        "ts": "1533818764.000187",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413817872805_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Richard Williams",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=Blvijysj7dY",
+                "author_name": "annecyfestival",
+                "author_link": "https:\/\/www.youtube.com\/user\/annecyfestival",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/Blvijysj7dY\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Richard Williams",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/Blvijysj7dY?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=Blvijysj7dY",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=Blvijysj7dY"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Annecy Animation Festival annually is amazing for the animaiton industry. At a later date you should try to go.",
+        "ts": "1533818838.000123",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413680412882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/channel\/UCGlDX5OlXkIL8-T9Pi1_YdA>",
+        "ts": "1533818838.000331",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/414996129958_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "title": "annecyfestival",
+                "title_link": "https:\/\/www.youtube.com\/channel\/UCGlDX5OlXkIL8-T9Pi1_YdA",
+                "text": "Annecy International Animation Film Festival. Discover films from the official selection, interviews and other great videos !",
+                "fallback": "YouTube: annecyfestival",
+                "thumb_url": "https:\/\/yt3.ggpht.com\/a-\/ACSszfE7nIMznE0lqHZk4unAIGi1oY1o-f4iLCGAIA=s900-mo-c-c0xffffffff-rj-k-no",
+                "from_url": "https:\/\/www.youtube.com\/channel\/UCGlDX5OlXkIL8-T9Pi1_YdA",
+                "thumb_width": 900,
+                "thumb_height": 900,
+                "service_icon": "https:\/\/s.ytimg.com\/yts\/img\/favicon-vfl8qSV2F.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/channel\/UCGlDX5OlXkIL8-T9Pi1_YdA"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=INQx-Lzs8mU>",
+        "ts": "1533818885.000202",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413438292836_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Animating Horse Walk Cycle",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=INQx-Lzs8mU",
+                "author_name": "animan1999",
+                "author_link": "https:\/\/www.youtube.com\/user\/animan1999",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/INQx-Lzs8mU\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Animating Horse Walk Cycle",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/INQx-Lzs8mU?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=INQx-Lzs8mU",
+                "service_icon": "https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=INQx-Lzs8mU"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Search for more videos and tutorials by Richard Williams on youtube",
+        "ts": "1533818902.000083",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/414715167319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As you watch more animation drawing tutorials, then try it out several times, then feel free to send to me for feedback :slightly_smiling_face:  And I will show Alex too for his expert animation eyes :wink:",
+        "ts": "1533818974.000262",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413546446083_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's quite a bit to start with. Hope that helps. Let me know ifyou have a computer, and I can suggest other good free softwares to try out and have fun with.",
+        "ts": "1533819036.000304",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413547064291_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, when you are drawing, try to branch out from anime style and characters. 1) Draw some of your own characters from your imagination. You can start with your own anime characters = character design.  Then try different genres, like characters from a movie, tv series, commercial, realistic and animated characters. Don't worry about being accurate. Try to capture the emotion and gesture of the character\/pose; happy, sad, fearful, zanny, etc character\/emotion.",
+        "ts": "1533819310.000302",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413685082098_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Again, feel free to send works in progress to get feedback. Do this often and in small dose is the best way to improve faster and broaden your repetoire of ideas and skills :slightly_smiling_face:",
+        "ts": "1533819390.000271",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/414720048615_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "opps forgot this link",
+        "ts": "1533819472.000418",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413551460611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.proko.com\/>",
+        "ts": "1533819473.000269",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-09\/413686770946_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Proko",
+                "title_link": "https:\/\/www.proko.com\/",
+                "text": "Drawing and Painting Tutorials",
+                "fallback": "Proko",
+                "thumb_url": "https:\/\/i7e8y7r6.stackpathcdn.com\/wp-content\/uploads\/2012\/09\/Art-Instruction-Videos-How-to-Draw.jpg",
+                "from_url": "https:\/\/www.proko.com\/",
+                "thumb_width": 720,
+                "thumb_height": 720,
+                "service_icon": "https:\/\/www.proko.com\/favicon.ico",
+                "service_name": "proko.com",
+                "id": 1,
+                "original_url": "https:\/\/www.proko.com\/"
+            }
+        ]
+    }
+]

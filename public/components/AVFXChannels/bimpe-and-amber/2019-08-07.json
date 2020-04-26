@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "heya, how you getting on? :smiley:",
+        "ts": "1565173857.001900",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-07\/707453781826_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

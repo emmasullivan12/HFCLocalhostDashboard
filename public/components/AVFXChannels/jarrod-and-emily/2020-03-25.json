@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not at all, more than happy to help you out with anything you need. I'm working from home for a few weeks so anything you need just let me know, I'll be more than happy for the distraction ha!",
+        "ts": "1585170698.000100",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1028646788711_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "DNEG has been really good, crazy busy. We're improving a lot and getting ready for some bigger projects so keen to get stuck into that. They've amazingly got everyone working from home which is an incredible thing for VFX",
+        "ts": "1585170752.000200",
+        "username": "Jarrod Anderson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-25\/1026126611652_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

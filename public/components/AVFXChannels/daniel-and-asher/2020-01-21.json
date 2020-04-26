@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Asher, hope you had a nice holiday and are back doing cool stuff. Have you finished your shots from the Christmas Ad?",
+        "ts": "1579634887.000100",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-21\/918029455286_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Daniel, how was your christmas? I've finished my xmas advert : <https:\/\/youtu.be\/WFfJNXcs8og>, however I think I will change a few bits such as projecting onto the 3d models of the presents instead to not make them look so flat due to the use of a card. I also think I will remove the snow footage too.",
+        "ts": "1579637249.000200",
+        "username": "Asher Hunt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-21\/915437471044_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Final Christmas Advert Composite",
+                "title_link": "https:\/\/youtu.be\/WFfJNXcs8og",
+                "author_name": "A",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UCoMVlUHLeFBX_t_roneFeFQ",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/WFfJNXcs8og\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Final Christmas Advert Composite",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/WFfJNXcs8og?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/youtu.be\/WFfJNXcs8og",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/WFfJNXcs8og"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579637250.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Asher,\n\nIt's a really nice idea.\n\nI think you need to review the track as your parcels are slipping as is one of the patches on the grass.\n\nNow I've done a fair few snow shots and your camera is not really moving through the snow - Ivm guessing it's a 2d element. With that kind of camera move the only real way to get it to work is particles, or possibly several layers of elements on cards, but in that case you need elements without defocus baked in so you can defocus them in comp. That's because the camera is moving through the snow.\n\nHere's a real life reference:\n\n<https:\/\/m.youtube.com\/watch?v=RejSUHcBBRM|https:\/\/m.youtube.com\/watch?v=RejSUHcBBRM>\n\n\n It's worth taking the time to get this sort of thing right because it will set you apart from those that don't!",
+        "ts": "1579643208.000400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-21\/918260582662_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "MAVIC AIR FLYING THROUGH SNOW | WINTER VLOG |",
+                "title_link": "https:\/\/m.youtube.com\/watch?v=RejSUHcBBRM",
+                "author_name": "Tahsin Abedin",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UC5vR-9bNQXbpd4pjtPgewKA",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/RejSUHcBBRM\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: MAVIC AIR FLYING THROUGH SNOW | WINTER VLOG |",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/RejSUHcBBRM?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/m.youtube.com\/watch?v=RejSUHcBBRM",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/m.youtube.com\/watch?v=RejSUHcBBRM"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1579643209.000000"
+        }
+    }
+]

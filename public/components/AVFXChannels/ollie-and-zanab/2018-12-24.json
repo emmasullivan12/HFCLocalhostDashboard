@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Merry Christmas Zanab and have a great New Year’s too! Hope you’ve found all the advice and support useful over the past three months :) ",
+        "ts": "1545655313.000100",
+        "username": "Ollie (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-24\/512187157943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

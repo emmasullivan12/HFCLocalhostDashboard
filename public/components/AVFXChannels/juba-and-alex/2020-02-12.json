@@ -1,0 +1,36 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Alex, it was an intense but incredibly rewarding experience, but I had so much support and help from my teachers and friends. I don't mind sharing, but keep in mind it's real rough :sweat_smile:\n<https:\/\/vimeo.com\/jubapolati\/cursed>\n\nThat's great news about the desk! And no worries about the project, feel free to share when you have something :smiley:\nSo how is your time split up in the course? Are you mostly focusing on you final project or still having a lot of side classes?\nAlso, how's the warthog anim progressing?",
+        "ts": "1581531291.000700",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-12\/951542567478_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Cursed",
+                "title_link": "https:\/\/vimeo.com\/jubapolati\/cursed",
+                "author_name": "Juba Polati",
+                "author_link": "https:\/\/vimeo.com\/jubapolati",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/510987638_200x150.jpg",
+                "thumb_width": 200,
+                "thumb_height": 150,
+                "text": "This is my final Animation project from Vancouver Film School, Cursed. It is a film that plays around within the 3D program Maya. It shows an animator and his cursor opening an existing scene with a character named Johnny, an overly confident rig that only wants to relax. But, the cursor wants things his own way, and soon a conflict arises between them.\n\nIt was incredibly fun and rewarding to make, so I hope you enjoy!\n\nI'd like to give special thanks to my family for giving me all the support I needed, you guys are the best!\n\nThank you so much!\n\nFinalist at CG Student awards! And earned a Slayer badge yeeeah!\n\n\nCreated by Juba Polati",
+                "fallback": "Vimeo Video: Cursed",
+                "from_url": "https:\/\/vimeo.com\/jubapolati\/cursed",
+                "service_icon": "https:\/\/i.vimeocdn.com\/favicon\/main-touch_180",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/jubapolati\/cursed"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581531291.000000"
+        }
+    }
+]

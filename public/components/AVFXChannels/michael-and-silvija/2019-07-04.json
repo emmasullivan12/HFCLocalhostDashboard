@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No rush! :) do whatever you can and that’s great news!",
+        "ts": "1562246387.000300",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-04\/686934733047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

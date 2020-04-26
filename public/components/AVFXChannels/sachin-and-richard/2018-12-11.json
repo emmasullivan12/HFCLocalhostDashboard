@@ -1,0 +1,140 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry to hear about your lecturer leaving . But I’m sure he won’t mind staying in touch with him and picking  his brains every now and then . I used to do that back when I first got out of uni . :) \n",
+        "ts": "1544545527.006100",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500343959360_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s good that you have instructors that actually have industry experience. Makes a huge difference imo ",
+        "ts": "1544545575.006200",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501082773890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’d does sound like a good place for learning and No problem at dude !! Glad to help in any way I can :) ",
+        "ts": "1544545636.006300",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500346156608_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh the mill \nThink I know a few compers there ! Then again they may have moved . Artists keep jumping between companies ",
+        "ts": "1544545709.006400",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/502137007735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah . That’s another thing . I have noticed that the technical compers seem more likely to be retained at a company longer than non technical ones and some even transition into TD roles when the comp work dries up at a company . It’s a great way to gain more work stability as an artist ! ",
+        "ts": "1544545888.006500",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501288811477_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "technical? do you mean like the ones with proficiency in coding? ",
+        "ts": "1544567107.000100",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501355246179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and yeah, definitely, I'll ask him for his contact details :joy: :grin: ",
+        "ts": "1544567119.000200",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501458400546_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "damn sachin, you know many people! I'm about to begin working on my final project, would it be alright if I showed you my work over the course of it's production for feedback and suggestions?",
+        "ts": "1544567192.000300",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/500721600784_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would love to start building up a mindset and work ethic that would match that of a person in the industry ",
+        "ts": "1544567212.000400",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501659014277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and hopefully I can somehow impress you as well :wink: ",
+        "ts": "1544567225.000500",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/502511460071_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also, sachin, would you recommend this? <https:\/\/www.udemy.com\/complete-python-bootcamp\/>",
+        "ts": "1544567864.000600",
+        "username": "Richard (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-11\/501468586290_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Udemy",
+                "title": "Complete Python Bootcamp: Learn Python Programming and Code",
+                "title_link": "https:\/\/www.udemy.com\/complete-python-bootcamp\/",
+                "text": "Learn Python like a Professional! Start from the basics and go all the way to creating your own applications and games!",
+                "fallback": "Udemy: Complete Python Bootcamp: Learn Python Programming and Code",
+                "image_url": "https:\/\/udemy-images.udemy.com\/course\/480x270\/567828_67d0.jpg",
+                "from_url": "https:\/\/www.udemy.com\/complete-python-bootcamp\/",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 21028,
+                "service_icon": "https:\/\/www.udemy.com\/staticx\/udemy\/images\/v6\/apple-touch-icon-57x57.png",
+                "id": 1,
+                "original_url": "https:\/\/www.udemy.com\/complete-python-bootcamp\/"
+            }
+        ]
+    }
+]

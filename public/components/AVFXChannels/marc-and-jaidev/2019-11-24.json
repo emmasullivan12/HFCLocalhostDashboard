@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have not actually heard about the VFX industry however from the google search I just did, it is the visual effects industry. Considering that search, I presume you would create\/edit images and videos to be used in movies, advertisement and possibly even in the designing industry.",
+        "ts": "1574595805.002300",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-24\/848980859111_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess the agents would mostly use a software (like sony vegas and photoshop) to create those effects. Possibly also use mathematical and natural(flowers,etc) patterns to create distinct effects.",
+        "ts": "1574595975.002400",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-24\/835655043411_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would assume it would also be most popular for sci-fi themed projects.",
+        "ts": "1574596046.002500",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-24\/848982191175_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looks like they use adobe after effects for videos as one of the software",
+        "ts": "1574597958.002600",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-24\/839207486705_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

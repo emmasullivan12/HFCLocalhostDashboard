@@ -1,0 +1,71 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simon,\nWe were working normally up until Friday, when our university very suddenly shut down for the rest of the semester. Apparently they will calculate the grades for our degree based on work done so far, which is a bit scary :sweat_smile: All in all, I think every student is a bit worried with things being so uncertain, hopefully we can get jobs as well. It must be tricky to coordinate with an entire studio working from home, but I hope you've got a proper workstation to work with :slightly_smiling_face: Are you still producing your tv shows at the same rate they were supposed to, or have you had to scale back because of the virus?\n\nI've heard of the 2 frame thing, but I sometimes struggle to put it into practice when I have to consider expression as well - I think it can be tricky sometimes to tell how the mouth shape is supposed to look when combining both sound-shape and the expression of the character, and it ends up looking off with the lip sync. Is there a good way to go about it?\n\nI'm surprised you did 2D! Was that for personal practice or actual production? Sounds really cool. Does a lot of your 3D knowledge transfer?\nI can't imagine how busy it must be working full-time at home while having a kid! Good luck with it all :slightly_smiling_face:",
+        "ts": "1585049615.001100",
+        "username": "Simone Jahn (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1010586865603_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/youtu.be\/nkD9HJRXQLw>",
+        "ts": "1585054352.001200",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023857161990_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Simone Feedback 2020 03 24 12 24 41",
+                "title_link": "https:\/\/youtu.be\/nkD9HJRXQLw",
+                "author_name": "Simon Taylor",
+                "author_link": "https:\/\/www.youtube.com\/user\/sjtaylor84",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/nkD9HJRXQLw\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Simone Feedback 2020 03 24 12 24 41",
+                "video_html": "<iframe width=\"400\" height=\"300\" src=\"https:\/\/www.youtube.com\/embed\/nkD9HJRXQLw?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 300,
+                "from_url": "https:\/\/youtu.be\/nkD9HJRXQLw",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/youtu.be\/nkD9HJRXQLw"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585054353.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Simone, sorry for the feedback delay but hope it's helpful! Happy to explain anything further :slightly_smiling_face:",
+        "ts": "1585054395.001400",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1023996003671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I appreciate everything must feel a bit scary and uncertain right now so I'm happy to help with any advice I can.\n\nSo yeah, Blue Zoo's setup pretty well for remoting from home, our IT team have been absolute legends getting it all running. All the work is done on the studio machines which means people only need a basic laptop to carry on working. As far as I know I think everyone's working more or less at the same rate but time will tell if there'll be any slowdown.\n\nGood question about emotions and lipsync. The emotion is most important so you could pose the emotion first then see what lip shape fits inside it. I think best thing to do is video reference yourself. How about referencing the same few words with different emotions and seeing how they compare?\n\nMaybe I should have said 2Dish haha but the principles were the same I guess. It was using software called Cel Action on a show called Sarah and Duck. I'd say the 3D knowledge didn't really transfer but the animation skills did. I'm not a great drawer though but learnt a lot about drawing even though I didn't physically have to draw on that show, but we had to make it look drawn. Animation skills are the most important, at the end of the day all software has similar tools and it doesn't take long just to learn the animation bit of them. I spent 4 years learning maya then had my first job in 3d studio max which I had to learn in a week! I've been dabbling with Blender too and again, it has a timeline, graph editor, rigs work in a similar way etc.",
+        "ts": "1585055009.001500",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1022257117616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "type": "message",
+        "text": "<https:\/\/techcrunch.com\/2017\/08\/15\/one-million-biz-dev-jobs\/> and <https:\/\/www.sv.academy\/>",
+        "user": "U4V22C6A1",
+        "ts": "1502884610.000090",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "TechCrunch",
+                "service_url": "http:\/\/techcrunch.com",
+                "title": "This ambitious founder wants to find high-paying biz dev jobs for one million Americans",
+                "title_link": "https:\/\/techcrunch.com\/2017\/08\/15\/one-million-biz-dev-jobs\/",
+                "author_name": "Connie Loizos",
+                "thumb_url": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/08\/svacademy-team.jpg?w=1200&fit=200%2C150",
+                "thumb_width": 200,
+                "thumb_height": 133,
+                "text": "Rahim Fazal grew up in government housing. He worked, as do many students, at McDonald's during high school. He didn't go to college. These aren't the kinds of details that might excite a recruiter at a big tech company, yet Fazal has done just fine, including co-founding&nbsp;SVAcademy in San Francisco.",
+                "fallback": "TechCrunch Link: This ambitious founder wants to find high-paying biz dev jobs for one million&nbsp;Americans",
+                "from_url": "https:\/\/techcrunch.com\/2017\/08\/15\/one-million-biz-dev-jobs\/",
+                "service_icon": "https:\/\/s0.wp.com\/wp-content\/themes\/vip\/techcrunch-2013\/assets\/images\/favicon.ico",
+                "id": 1
+            },
+            {
+                "title": "SVAcademy - Apply Today",
+                "title_link": "https:\/\/www.sv.academy\/",
+                "text": "Apply now for our Business Development Fellowship, an exclusive 12-week online program where you’ll be coached by Silicon Valley’s top executives and then hired by one of our fast growing tech companies.",
+                "fallback": "SVAcademy - Apply Today",
+                "from_url": "https:\/\/www.sv.academy\/",
+                "service_icon": "https:\/\/www.sv.academy\/favicon.png",
+                "service_name": "sv.academy",
+                "id": 2
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F6P2EPQP3",
+                "created": 1502914426,
+                "timestamp": 1502914426,
+                "name": "201610 Proversity Financial Plan_v3.xlsx",
+                "title": "201610 Proversity Financial Plan_v3.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 3026747,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6P2EPQP3\/201610_proversity_financial_plan_v3.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F6P2EPQP3\/download\/201610_proversity_financial_plan_v3.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F6P2EPQP3\/201610_proversity_financial_plan_v3.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F6P2EPQP3-dd6d530abe",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1502914427.000004"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh no! I am sorry, I am a very slow learner so as struggling with language sometimes, haha. \n\nI am very thankful for you time and patience and I am incredibly happy since I have learnt a lot from you! \n:panda_face:",
+        "ts": "1548098521.008200",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-21\/529212747138_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

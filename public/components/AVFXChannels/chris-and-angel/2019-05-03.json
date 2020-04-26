@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris hope you have a nice weekend, I understand your busy and can't get back so quickly.  I just also had another question, what kind of work do you or in general expect to see in a reel when someone specailizes in hard surface modelling. As framestore does environment work. Would that lack someone if they don't have environment work, and just have other hard surface models. Thanks.",
+        "ts": "1556913724.000100",
+        "username": "Angel Cano (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-03\/619711815121_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

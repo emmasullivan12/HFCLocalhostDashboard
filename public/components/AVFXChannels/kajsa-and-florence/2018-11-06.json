@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello it’s Flo, right now and I’m in my second year of animation and enjoying the 2d animation side ",
+        "ts": "1541543397.001600",
+        "username": "Florence (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-06\/474439153847_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Flo! I’m Kajsa. Very nice to virtually meet you here. :slightly_smiling_face: I’m looking forward to be your E-Mentor.\nA bit about me; I am a digital compositor and prep artist based in London.\nDuring the last 4 years I have worked in some great places like MPC, Double Negative and One of Us. I had the opportunity to work on many exciting projects.\nSome of my favourite movies I have worked on are ‘LIFE’, ‘Wonder Woman’, ‘The Martian’ and ‘The Crown’.\n\nI am looking forward to answer any questions you might have, big or small.\nIf you like feedback on any work you've done I am also happy to have a look at it. Just let me know.\n\nChat to you soon! :slightly_smiling_face:",
+        "ts": "1541543712.001700",
+        "username": "Kajsa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-06\/474443001063_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

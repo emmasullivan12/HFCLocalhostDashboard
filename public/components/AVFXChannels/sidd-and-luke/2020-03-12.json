@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeh, I can send you it over when i've done the first pass of animation :smile:",
+        "ts": "1584034775.003200",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/983971381122_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thankyou",
+        "ts": "1584034780.003300",
+        "username": "Luke Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996777674965_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

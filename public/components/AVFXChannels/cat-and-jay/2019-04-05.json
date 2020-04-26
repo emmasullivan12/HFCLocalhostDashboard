@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this is what I did before I decided to study VFX",
+        "ts": "1554476157.007100",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/587982010850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.behance.net\/jayechteld>",
+        "ts": "1554476158.007200",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/601778925572_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Behance",
+                "title": "Jay Echteld on Behance",
+                "title_link": "https:\/\/www.behance.net\/jayechteld",
+                "text": "I like to think of myself as an artist. I like pretty much everything that has something to do with multi media. I love animation, Graphic design and video editing. I like taking things and giving it a touch of magic...",
+                "fallback": "Behance: Jay Echteld on Behance",
+                "image_url": "https:\/\/mir-s3-cdn-cf.behance.net\/user\/276\/cb8e6155654725.583e27a9d2f59.jpeg",
+                "from_url": "https:\/\/www.behance.net\/jayechteld",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 29327,
+                "service_icon": "https:\/\/a5.behance.net\/03820c2f2739fbdb57c104a4cd81c903d4245aaf\/img\/site\/apple-touch-icon.png?cb=264615658",
+                "id": 1,
+                "original_url": "https:\/\/www.behance.net\/jayechteld"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/jayechteld>",
+        "ts": "1554476205.007400",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/603251904758_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "title": "Jay Echteld",
+                "title_link": "https:\/\/vimeo.com\/jayechteld",
+                "text": "Jay Echteld is a member of Vimeo, the home for high quality videos and the people who love them.",
+                "fallback": "Vimeo: Jay Echteld",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/portrait\/30080837_640x640",
+                "from_url": "https:\/\/vimeo.com\/jayechteld",
+                "thumb_width": 640,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/i.vimeocdn.com\/favicon\/main-touch_180",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/jayechteld"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "gonna try to finish my vfx reel by the end of this month... is it ok if I send it to you for feedback?",
+        "ts": "1554476243.007600",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/602923252487_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Cat, happy friday :smile:",
+        "ts": "1554476261.007700",
+        "username": "Jay Echteld (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-05\/599398948528_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

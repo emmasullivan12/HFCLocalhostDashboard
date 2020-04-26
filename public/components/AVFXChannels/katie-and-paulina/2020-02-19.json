@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Paulina, I am so sorry for not seeing this sooner - for some reason I stopped getting notifications so I completely missed this :scream:",
+        "ts": "1582140597.000100",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/959439896932_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll have a look through your questions and get back to you as soon as I can! Hope you're doing okay anyway?",
+        "ts": "1582140626.000200",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/949770311601_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wanted to share this; Framestore are accepting applications for their Launchpad Internship very soon - <https:\/\/www.framestore.com\/work\/launchpad-internship>",
+        "ts": "1582140669.000300",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/959916380565_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Framestore",
+                "title": "Launchpad Internship",
+                "title_link": "https:\/\/www.framestore.com\/work\/launchpad-internship",
+                "text": "Framestore offers students the opportunity to work alongside our talented teams across all of our sites in London, Montréal and our US offices as part of our paid summer Internship scheme. However, you will need the right to work for the location you are interested in. During their time with us, our Interns are exposed to a wide range of departments across the company. To be considered for the chance to take part in our Internship we would prefer it if you had an interest in, or are studying any of, the following subjects: visual effects, animation, games, real-time computing, computer science, film or TV production, design, photography, illustration or fine art.",
+                "fallback": "Framestore: Launchpad Internship",
+                "image_url": "https:\/\/www.framestore.com\/sites\/default\/files\/styles\/slideshow_images_medium_1400_788\/public\/case-study\/images\/img_9696-1_copy_2.jpg?itok=Co6Hsndx",
+                "image_width": 444,
+                "image_height": 250,
+                "ts": 1504543500,
+                "from_url": "https:\/\/www.framestore.com\/work\/launchpad-internship",
+                "image_bytes": 701397,
+                "service_icon": "https:\/\/www.framestore.com\/sites\/all\/themes\/framestore\/img\/touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.framestore.com\/work\/launchpad-internship"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1582140670.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "\"Applications will open on Monday 2nd March and close on Monday 11th May. \nPlease apply via our online application form at <http:\/\/careers.framestore.com|careers.framestore.com>.\"",
+        "ts": "1582140689.000500",
+        "username": "Katie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-19\/948429223443_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,142 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela, if you're still up for it I'll be ready to chat in just a few minutes",
+        "ts": "1543665742.000600",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/493200020853_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jarl! I am available, whenever you are ready :)",
+        "ts": "1543666192.000700",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/493201839093_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! It looks like I might not be able to direct message you on slack, which I think is how I think it normally works to video chat on here, maybe we need to try some alternative like skype\/zoom? Do you have a way of video calling me?",
+        "ts": "1543666496.000800",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/493203011621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I meant do you have a way of video calling me on here, if so please feel free to try it",
+        "ts": "1543666540.000900",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492399596513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure, we can Skype, my username is “micaelarslanian” ",
+        "ts": "1543666572.001000",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/494054588215_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool I'm loading up skype now, my username is jarlmm sorry for the delay",
+        "ts": "1543666689.001100",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/494405798582_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Micaela, it was nice chatting with you earlier today! I think both of the Swedish Universities that I was referring to only offer undergraduate degrees, so they are probably not so interesting for you since you already have an undergraduate degree (and they are also in very small\/rural places haha), but anyhow just in case you want to look at them, they are called \"Campus i12\" (<http:\/\/campusi12.com\/programme-visual-effects\/visual-effects\/>) and \"Lulea University of Technology\" ( <https:\/\/www.ltu.se\/edu\/program\/KKVDG\/KKVDG-Visuell-gestaltning-Digital-design-1.157633?l=en> ). Bournemouth is the University in England that I was mentioning, which does offer a couple of masters degrees: <https:\/\/www.bournemouth.ac.uk\/study\/courses\/msc-computer-animation-visual-effects>",
+        "ts": "1543690881.001200",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492934265492_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Visual Arts and Digital Design, Program, - Luleå University of Technology",
+                "title_link": "https:\/\/www.ltu.se\/edu\/program\/KKVDG\/KKVDG-Visuell-gestaltning-Digital-design-1.157633?l=en",
+                "fallback": "Visual Arts and Digital Design, Program, - Luleå University of Technology",
+                "image_url": "https:\/\/www.ltu.se\/cms_fs\/1.158014!\/image\/LTU-SKEL-KATALOG-DIGITAL-DESIGN.jpg_gen\/derivatives\/landscape_fullwidth_16x9\/LTU-SKEL-KATALOG-DIGITAL-DESIGN.jpg",
+                "from_url": "https:\/\/www.ltu.se\/edu\/program\/KKVDG\/KKVDG-Visuell-gestaltning-Digital-design-1.157633?l=en",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 239012,
+                "service_icon": "https:\/\/www.ltu.se\/img\/iphone-retina.png",
+                "service_name": "ltu.se",
+                "id": 1,
+                "original_url": "https:\/\/www.ltu.se\/edu\/program\/KKVDG\/KKVDG-Visuell-gestaltning-Digital-design-1.157633?l=en"
+            },
+            {
+                "title": "MSc Computer Animation and Visual Effects",
+                "title_link": "https:\/\/www.bournemouth.ac.uk\/study\/courses\/msc-computer-animation-visual-effects",
+                "fallback": "MSc Computer Animation and Visual Effects",
+                "image_url": "https:\/\/www.bournemouth.ac.uk\/sites\/default\/files\/assets\/images\/computer-animation-arts-hero2.jpg",
+                "from_url": "https:\/\/www.bournemouth.ac.uk\/study\/courses\/msc-computer-animation-visual-effects",
+                "image_width": 800,
+                "image_height": 250,
+                "image_bytes": 159100,
+                "service_icon": "https:\/\/www.bournemouth.ac.uk\/sites\/all\/themes\/bournemouth\/assets\/images\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "bournemouth.ac.uk",
+                "id": 2,
+                "original_url": "https:\/\/www.bournemouth.ac.uk\/study\/courses\/msc-computer-animation-visual-effects"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Jarl! Thank you very much. I was just seeing The lost boys reel and i was completely amazed.  since I want to specialize in Effects , i was mainly looking for a school which is focused on that and i think its impressive. I still should check how the application system is and prices of course",
+        "ts": "1543691014.001400",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492365891952_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yeah I've heard of that one! I had a friend from University who went there a while back",
+        "ts": "1543691603.001500",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/492501765009_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It looks really good, i am looking at the people who work there and they are all placed in mpc, dneg, etc",
+        "ts": "1543691888.001600",
+        "username": "Micaela (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-01\/494508459910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

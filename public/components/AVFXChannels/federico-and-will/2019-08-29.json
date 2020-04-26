@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi will, i think we have to improve into simplicity and precision . I woul do just one work taking on some lighting challenge of the past providing you scenes and working on those togheter",
+        "ts": "1567086754.000100",
+        "username": "Federico Stefanini (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/744673688710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Litghings moods and tones are nice, but overall they show initial steps , i would avoid posting many stills and get few very good onto linked",
+        "ts": "1567086883.000200",
+        "username": "Federico Stefanini (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/742494434944_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What software are you using for them? My bad could have just a look at them",
+        "ts": "1567086923.000300",
+        "username": "Federico Stefanini (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-29\/744677782502_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

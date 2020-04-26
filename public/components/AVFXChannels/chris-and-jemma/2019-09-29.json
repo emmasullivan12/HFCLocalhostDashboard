@@ -1,0 +1,70 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris! Sorry I’ve been late getting back to you, I’ve just started my second year of uni doing a vfx undergrad degree in South Wales! How about you man? ",
+        "ts": "1569767308.001700",
+        "username": "Jemma Morgan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-29\/779424932854_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries, understand how busy Uni can make you.",
+        "ts": "1569768532.001800",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-29\/777226345733_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I recently graduated but I've worked in various comp departments in VFX companies in London, currently at ILM",
+        "ts": "1569768621.001900",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-29\/764447863842_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My website is probably the quickest way to learn about me\/my work",
+        "ts": "1569768693.002000",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-29\/764448211314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.chrisfryer.co.uk\/>",
+        "ts": "1569768695.002100",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-29\/776760619252_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Chris Fryer | Digital Compositor",
+                "title_link": "https:\/\/www.chrisfryer.co.uk\/",
+                "text": "Digital Compositor, Chris Fryer's portfolio and personal website.",
+                "fallback": "Chris Fryer | Digital Compositor",
+                "from_url": "https:\/\/www.chrisfryer.co.uk\/",
+                "service_icon": "https:\/\/static.wixstatic.com\/media\/024951_f4be9f7d3a954c1d90ce503864fbc214%7Emv2.png\/v1\/fill\/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01\/024951_f4be9f7d3a954c1d90ce503864fbc214%7Emv2.png",
+                "service_name": "chrisfryer.co.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.chrisfryer.co.uk\/"
+            }
+        ]
+    }
+]

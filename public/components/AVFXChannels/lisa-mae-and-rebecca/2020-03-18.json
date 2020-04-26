@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you! And for the end we had access to different “spell hits” footage, so I just edited them to look like that!",
+        "ts": "1584579076.000600",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/999074625747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also how are things at BlueZoo with everything that’s going on? I wanted to do an internship this summer but I’m assuming that won’t really be possible now. ",
+        "ts": "1584579220.000700",
+        "username": "Rebecca Perry (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-18\/997758803506_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

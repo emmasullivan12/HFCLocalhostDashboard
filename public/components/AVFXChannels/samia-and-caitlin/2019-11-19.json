@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Caitlin! Oh wow ok it is a long apprenticeship. I think you’re a bit early to start actively looking. Most companies do not know their needs too much in advance but it’s good that you start creating relationships when possible. Have you created yourself a Linkedin profile? While not active now, it would give you a window on what’s out there by following potential companies you might be interested in. ",
+        "ts": "1574169849.004000",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/827573010354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For your CV I really liked the content. I think if your goal is to go into a more creative company, your CV should reflect this. There are tons of CV templates online you can inspire yourself from so that it looks a bit more like your personality. ",
+        "ts": "1574169964.004100",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/839899823300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I think it’s great that you quantified your work experience as a newspaper deliverer. It is something I always recommend. It gives a good idea to the recruiter on the intensity of the workload, good job there! ",
+        "ts": "1574170131.004200",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/827578961314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And wow 148 newspapers! That’s a lot! ",
+        "ts": "1574170139.004300",
+        "username": "Samia Paradis (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-19\/828896488883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

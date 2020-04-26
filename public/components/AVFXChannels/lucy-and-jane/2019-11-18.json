@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane",
+        "ts": "1574071968.000300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/840676532422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you had a good weekend. Here is some feedback for you from Jasmine who works with me at Union. Hope it’s helpful. Lucy",
+        "ts": "1574071990.000400",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/830540946929_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello,\n\nThank you for sharing your work.\n\nI can see some parts of the slides are missing but I assume this might be because is a work in progress.\n\nI really like your comic book panels, they show your taste and style very clearly.\n\nThe colour palette is pleasing and works well with the mood of the story.\nJust be careful not to use the same range of colours too much or your characters will start blending in with the background.\nThink of using complementary colours but keeping it in a pastel tone. The last panel on pg.19 works better where her hair is blue instead of purple.\n\nI can see you like to draw props and details, just beware that these do not clutter the panel. They draw away attention from the action and ultimately the story. You can find a work around to make things less distracting, such as making the object more washed out than the characters or removing the darker outline all together.\n\nI would have really liked to see character design sheets for the two protagonists.\n\nOn page 5 of the powerpoint the pictures are not the right side up, but this might also be because is a work in progress. Just make sure everything is the right way up before submitting them to your final applications.\n\nThe promotional illustration for your comic-book Is cool, it has a nice mood and great details. You also did a good job with the perspective. Just be careful with the lighting, the brightest thing in the image is one of the traffic cones, you might want to redirect the attention to the character.\nThink of using some yellow rim light on the left side of his face perhaps? To make him pop more, he blends in with the background a bit too much now.\n\nThe gifs on page 7 are cute and the magazine cover is clever. The mag cover drawing is just a little flat, I think you can use some more highlights to create mass in her hair and dress.\n\nPage 9 of the powerpoint: It might be a good idea to use bigger paper and do a top-down view of this environment. Try find a way to separate the drawing and your notes, because is hard to tell them apart at the moment. Perhaps use a different colour for the notes, or just make the sketch by hand and add the notes on your computer.\n\nKeep it up and continue drawing!\n\nBest of luck,\n\nJasmine",
+        "ts": "1574071994.000500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-18\/825679201490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

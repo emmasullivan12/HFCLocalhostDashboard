@@ -1,0 +1,770 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You're very welcome :slightly_smiling_face:",
+        "ts": "1585511104.000100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033566222836_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Those are some fab uni's",
+        "ts": "1585511120.000200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034006378725_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you coping with the closure of schools at the moment?! :sweat_smile:",
+        "ts": "1585511152.000300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021288206850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Honestly, I'm doing quite well, I took a few days break from my work to pursue guitar though :sweat_smile:",
+        "ts": "1585511192.000400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034006989125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What about you?",
+        "ts": "1585511209.000500",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033567128292_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And yes I hate to think how many accidents have been caused by human error. Even with self driving cars and testing we still see it",
+        "ts": "1585511217.000600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1024029540689_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":joy: that sounds great! Is that acoustic guitar?",
+        "ts": "1585511248.000700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022584678755_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I used to play way back....not very well though. Just for fun",
+        "ts": "1585511260.000800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034007543013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I actually don't mind the isolation stuff!",
+        "ts": "1585511300.000900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036084577943_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, it's acoustic, I've given myself a challenge to be able to play the acoustic properly by the time I go back to school",
+        "ts": "1585511305.001000",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034055854320_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh nice!",
+        "ts": "1585511313.001100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035937296294_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Same, I have work to do, but I keep putting it off to play the guitar, I need motivation :joy::sob:",
+        "ts": "1585511341.001200",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021289737890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you off until September for sure? Or is there a possibility you go back to school before the summer",
+        "ts": "1585511341.001300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036084920423_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well, on the news it said that there's a possibility we won't be back until July, but another source said we might be in this state of isolation for as much as 6 months",
+        "ts": "1585511386.001400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022585817891_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I read something similar",
+        "ts": "1585511426.001500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036085631511_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I mean, China had to lockdown for 5 months, so I wouldn't be surprised, especially not at the rate of which the cases are increasing",
+        "ts": "1585511428.001600",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035938249686_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "doesn't seem to add up!",
+        "ts": "1585511431.001700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034008960597_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "surely it's going to take months I agree",
+        "ts": "1585511448.001800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021290651954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But to be completely fair, we aren't in a proper state of lockdown, people aren't taking it very seriously so we might have to be in lockdown for longer than we need to",
+        "ts": "1585511489.001900",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034057378768_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes I almost think the govt should just go hard lock down on us for a shorter period of time",
+        "ts": "1585511535.002000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035939120390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "get it over with!",
+        "ts": "1585511541.002100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021291394674_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But part of me also thinks they might want a few of us to still be getting it and passing it around so that some of the population build up antibodies and an immunity to it",
+        "ts": "1585511579.002200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036086867319_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and also help us stagger the number in the hospital",
+        "ts": "1585511601.002300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021291878466_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "because otherwise surely when they let everyone back out again we'll just be in the same situation!",
+        "ts": "1585511627.002400",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035939875574_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "not an expert on any of this at all, but I don't think we have the full picture :face_with_monocle:",
+        "ts": "1585511680.002500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021292531730_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it's really unclear",
+        "ts": "1585511764.002600",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034059602368_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's unfair that they tell us so little",
+        "ts": "1585511771.002700",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034011701301_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "im guessing you didn't have a chance or any luck looking for online courses and things? I had a quick look last time we spoke and spotted a couple but they all looked like they cost a mini fortune. I was thinking maybe you could find one you're interested in and message them saying you're at school and it's closed and opportunities are sparse at the moment because of the virus etc etc",
+        "ts": "1585511987.002800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034013526261_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It might just work!",
+        "ts": "1585511995.002900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022590840227_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i.e. asking for free",
+        "ts": "1585512024.003000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021295561634_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nope, I didn't but that's a good idea, I'll do that first thing tomorrow",
+        "ts": "1585512039.003100",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035943506998_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Any particular courses that were of interest?",
+        "ts": "1585512048.003200",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022591517187_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "well first I was looking at these as an intro style course but they are of course in person and im not sure they will still be running <https:\/\/flyingwithconfidence.com\/courses>",
+        "ts": "1585512179.003300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021297035730_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Our fear of flying courses",
+                "title_link": "https:\/\/flyingwithconfidence.com\/courses",
+                "text": "Fear of flying courses to suit all needs and budgets",
+                "fallback": "Our fear of flying courses",
+                "image_url": "https:\/\/flyingwithconfidence.com\/assets\/images\/share\/og-generic@2x.jpg",
+                "from_url": "https:\/\/flyingwithconfidence.com\/courses",
+                "image_width": 500,
+                "image_height": 250,
+                "image_bytes": 91193,
+                "service_icon": "https:\/\/flyingwithconfidence.com\/assets\/images\/favicon\/apple-touch-icon.png",
+                "service_name": "flyingwithconfidence.com",
+                "id": 1,
+                "original_url": "https:\/\/flyingwithconfidence.com\/courses"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585512180.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, well I'm doing two Massive Open Online Courses (MOOCs) at the moment, so I have my hands a little full with that, as well as the EPQ and existing school work, but I'll keep an eye out for courses that are mediated towards aviation",
+        "ts": "1585512278.003500",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033576343476_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And then Udemy is quite renowned and has a lot of courses run by individuals as well as companies so might be a good opportunity to message someone <https:\/\/www.udemy.com\/topic\/aviation\/?utm_source=adwords&amp;utm_medium=udemyads&amp;utm_campaign=DSA_Catchall_la.EN_cc.US&amp;utm_content=deal4584&amp;utm_term=_._ag_95911180068_._ad_420432380638_._kw__._de_c_._dm__._pl__._ti_dsa-437115340933_._li_1014485_._pd__._&amp;matchtype=b&amp;gclid=Cj0KCQjwjoH0BRD6ARIsAEWO9DsnSbLE-ZlsITbjUd7OywJBAKw83wZly7kvh7alJl5tSad2x9SaBN8aAuuaEALw_wcB>",
+        "ts": "1585512289.003600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034016430165_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Udemy",
+                "title": "Top Aviation Courses Online - Updated [March 2020]",
+                "title_link": "https:\/\/www.udemy.com\/topic\/aviation\/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.US&utm_content=deal4584&utm_term=_._ag_95911180068_._ad_420432380638_._kw__._de_c_._dm__._pl__._ti_dsa-437115340933_._li_1014485_._pd__._&matchtype=b&gclid=Cj0KCQjwjoH0BRD6ARIsAEWO9DsnSbLE-ZlsITbjUd7OywJBAKw83wZly7kvh7alJl5tSad2x9SaBN8aAuuaEALw_wcB",
+                "text": "Learn Aviation today: find your Aviation online course on Udemy",
+                "fallback": "Udemy: Top Aviation Courses Online - Updated [March 2020]",
+                "image_url": "https:\/\/www.udemy.com\/staticx\/udemy\/images\/v6\/default-meta-image.png",
+                "from_url": "https:\/\/www.udemy.com\/topic\/aviation\/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.US&utm_content=deal4584&utm_term=_._ag_95911180068_._ad_420432380638_._kw__._de_c_._dm__._pl__._ti_dsa-437115340933_._li_1014485_._pd__._&matchtype=b&gclid=Cj0KCQjwjoH0BRD6ARIsAEWO9DsnSbLE-ZlsITbjUd7OywJBAKw83wZly7kvh7alJl5tSad2x9SaBN8aAuuaEALw_wcB",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 8450,
+                "service_icon": "https:\/\/www.udemy.com\/staticx\/udemy\/images\/v6\/apple-touch-icon-57x57.png",
+                "id": 1,
+                "original_url": "https:\/\/www.udemy.com\/topic\/aviation\/?utm_source=adwords&amp;utm_medium=udemyads&amp;utm_campaign=DSA_Catchall_la.EN_cc.US&amp;utm_content=deal4584&amp;utm_term=_._ag_95911180068_._ad_420432380638_._kw__._de_c_._dm__._pl__._ti_dsa-437115340933_._li_1014485_._pd__._&amp;matchtype=b&amp;gclid=Cj0KCQjwjoH0BRD6ARIsAEWO9DsnSbLE-ZlsITbjUd7OywJBAKw83wZly7kvh7alJl5tSad2x9SaBN8aAuuaEALw_wcB"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585512290.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ooops that's a long link",
+        "ts": "1585512313.003800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034064576592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds like you have enough on your plate then to be honest!",
+        "ts": "1585512322.003900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022593946275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's such a shame really, this was the year where we had the time to do extra curricular stuff",
+        "ts": "1585512340.004000",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035946191814_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I was looking forward to summer to do the bulk of it and now.. it's really such a shame :persevere:",
+        "ts": "1585512367.004100",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021298648162_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But this is what we have to go with for now, so I'll just have to do my best",
+        "ts": "1585512382.004200",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033577225220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yep it's unfortunate, but exactly, you can only do the best with what you have!",
+        "ts": "1585512429.004300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036094318455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I guess at least your peers will all be in the same situation",
+        "ts": "1585512457.004400",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034017836165_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah",
+        "ts": "1585512458.004500",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022595096179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's also true, so universities probably won't be focusing as much on that this time",
+        "ts": "1585512477.004600",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034065958656_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was wondering, this might seem like a stupid question, but did you do a degree? Because I wanted to ask if you could tell me what university life is like",
+        "ts": "1585512537.004700",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021300046898_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I went to Bath University",
+        "ts": "1585513095.004800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033583038724_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I liked it because the first year everyone is on campus so you have a chance to get to know everyone really well",
+        "ts": "1585513132.004900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036100035607_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also the fact that it's a small-ish place bit enough to do",
+        "ts": "1585513152.005000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021305018370_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there anything you're worried about?",
+        "ts": "1585513183.005100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1024046121137_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The beauty of uni is that you manage your own time most days",
+        "ts": "1585513209.005200",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021305458690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so if you're efficient (Which it sounds like you are having time to learn the guitar alongside everything else!) then you can make time for other things and take advantage of the resources and communities around you",
+        "ts": "1585513262.005300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021305905890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I definitely will take advantage of opportunities",
+        "ts": "1585513769.005400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034076321600_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was just curious about university because I'm most likely staying away from home and I know it can be challenging",
+        "ts": "1585513795.005500",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036105279095_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "ah I see",
+        "ts": "1585514627.005600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1036111985575_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "well it can be a little scary at first but everyones also thinking the same when you get there and people just want to make friends as soon as possible",
+        "ts": "1585514678.005700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021317203602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also you learn so much about cooking (or at least I did!) and looking after yourself and your flat\/room",
+        "ts": "1585514716.005800",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034083942608_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As well as getting on with other people.",
+        "ts": "1585514723.005900",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035965344326_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm sure you have lots of friends at school",
+        "ts": "1585514742.006000",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022613457379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But living with other people outside of your friends and family and learning to work together can be a fun and interesting experience",
+        "ts": "1585514768.006100",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035965697494_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do :joy: I look forward to it, I'm not exactly shy when it comes to socialising (as you can probably tell :joy:) but it can be a little unnerving",
+        "ts": "1585514804.006200",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035966010150_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You'll be fine im sure :grin:",
+        "ts": "1585514804.006300",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034084683312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for the confidence :grin:",
+        "ts": "1585514812.006400",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022614020387_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha",
+        "ts": "1585514825.006500",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033596846452_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And also in the your first year there are soooo many social activities going on",
+        "ts": "1585514842.006600",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1021318557106_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's a bit strange making a whole new friend group, but the people you live with will be the first nice little group of people to get to know and then your neighbours\/\/course mates and so on",
+        "ts": "1585514911.006700",
+        "username": "Sam (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035966858182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hopefully they're nice :crossed_fingers::skin-tone-5:",
+        "ts": "1585514972.006800",
+        "username": "Ardhana Sherin (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1034038004181_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Enrico ! Hope you are healthy and well ! \nI've been quite busy with my animation module as i had no experience in animating, and due to the situation we had a bit of a hard time finding a way to follow lessons and all ! \n\n\nI actually do not have a character ! I've never really made any characters actually ! I used to but that was really a while back !! But i'd love to do something like that !!\n\nI hope your test went well ?! \n\nOh whats the difference between background art and environment design ??? Hope your job hunting is going well though :)\n\n\nMy family and I have been doing well thankfully as no one is sick however the isolation is slightly tough at times but we are getting through it :)  thanks for the article btw it was a nice read and quite helpful :)",
+        "ts": "1586354524.000100",
+        "username": "Mahira (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1052715612053_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mahira! I’m doing well thanks, isolating here in my house in London. I’m glad you’re well and safe and that you have been able to carry on with the animation. If you want to show me I’d happy to have a look at it!\n\nIt’s important to do character design as you learn to observe and simplify the shapes, and it’s good as you push your creativity as well.\n\nBackground Designer (layout and paint) is usually a role that is required in 2D productions, like tv shows or features like Klaus. It’s a production department role, so it’s usually fast paced and require a lot of work, can be less creative as you receive the design package\/bible and direction, so it can also be very technical.\n\nThe environment designer is more creative role ( in fact can be pre-production role in the art department) he can add ideas and develop the show, it’s both technical (you have to have the basis like perspective, design appeal, understanding of 3D volumes etc) and creative (you can play with the shapes, come up with fun solutions and experiment a bit more). Sometimes tho the environment designer is not asked to use the colors as it will be done in production by others.",
+        "ts": "1586375766.000200",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057905559668_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The test didn’t go but luckily I got another job that will start next week. It will be 2D designer on a 3D show but still don’t know the details. Should be for a major broadcaster! I hope it will go well ahah",
+        "ts": "1586375833.000300",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1046023581815_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve been completely alone for more than a lot month as my housemates went back to France. So I’m enjoying my time painting and working ! ",
+        "ts": "1586375892.000400",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1050952255718_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My family in Italy is doing well  luckily as things are slowing down a bit now",
+        "ts": "1586375945.000500",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1068171172800_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you David :hearts: this week I’ll do some progress on my dissertation. I graduate on September this year. So I was thinking of applying once new vacancies open. I heard some open in November. So my aim is to polish my reel and get it ready for November. ",
+        "ts": "1562683107.004600",
+        "username": "Isis Cortes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/688962973845_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The info you sent is very helpful. And yes I love to work so I don’t mind starting from the bottom and up. This is what I enjoy doing so I could literally spend all day doing comp and it’s fun for me. I think for the demo reel I’ll try to update it soon. Since this summer I’m involved in a couple of projects I’ll be updating it once they are ready. ",
+        "ts": "1562683223.004700",
+        "username": "Isis Cortes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/677555265891_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And please do keep talking I know you have experience in the field so I am happy to listen :)",
+        "ts": "1562683244.004800",
+        "username": "Isis Cortes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-09\/688953271888_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

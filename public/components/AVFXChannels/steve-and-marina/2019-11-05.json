@@ -1,0 +1,100 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Marina, sorry for the late reply.\nThis is definitely getting there but you need an extra bounce or two at the end. With the height the ball has at the start and the following bounce heights it's a little odd that it lands and rolls as soon as it does.\nSo you have two option.\n1 - You can lower the height of the other bounces to be quite low.\n2 - You can add in a few more bounces.",
+        "ts": "1572955846.001000",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/821987125173_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1 - You may also need to slow the animation down as well because if the ball is bouncing less high then it's likely the ball is heavy. If you do this it's the top of the arcs that need more time. We call this \"hang time\". So you ball would need more hang time at the top. The sharp tangents at the bottom of the arcs will need to be pretty much the same as it will still hit the round and bounce off quickly like it does at the moment.",
+        "ts": "1572955957.001100",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/821980942192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "2 - You will need to translate the ball further  to give it more space to bounce in. Basically just repeat what you have done but with the height of the ball gradually slower until it's pretty much landed. Then you can roll it. I think for this option you probably need two more bounces. Don't forget that the less energy the ball has the less high it will jump. Less energy also means that the point from each contact with the floor will be closer together in time. For example; your first two contacts are at f8 and f16. A difference of 8 frames. Your third bounce happens at f23 which is 7 frames difference. So you fourth and fifth bounces will need to be around 6 and 5 frames difference.",
+        "ts": "1572956222.001200",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/810514786787_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=W70UK9OeHRk>",
+        "ts": "1572956347.001300",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/821523358244_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Tennisball vs. Bowlingball exercise",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=W70UK9OeHRk",
+                "author_name": "Dennis",
+                "author_link": "https:\/\/www.youtube.com\/user\/NorG88",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/W70UK9OeHRk\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Tennisball vs. Bowlingball exercise",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/W70UK9OeHRk?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=W70UK9OeHRk",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=W70UK9OeHRk"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "this is a pretty good example of the differences in weight and how it will effect the amount of bounces and how high they will bounce",
+        "ts": "1572956367.001500",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/824197678486_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is the sort of thing that, once you get used to it, you will just think of in the back of your mind when you animate. I don't think it gets said enough but this is really one of the first building blocks of animation. You'd be surprised how much this principle appears in animation.",
+        "ts": "1572956423.001600",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/821524634564_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me know if there's anything else I can do to help or if you have any more questions.",
+        "ts": "1572956441.001700",
+        "username": "Steve Kimbrey (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-05\/824198974310_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

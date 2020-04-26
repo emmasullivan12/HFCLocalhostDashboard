@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey addison, really sorry for the late reply! My project was kinda on hold for the last 10 days cause I went home to Austria for a few days to surprise my mum for her 55th birthday and when I got back I was proper sick for a week. I actually wanted to film my footage today at my uni but my lecturer didn't authorize my risk assessment so I couldn't rent the equipment. Basically if you book cameras or whatever from our media resource center you need to fill out a risk assessment giving them a detailed description what you wanna film, who's involved\/at risk in the shoot and stuff like that. I thought it only needs to be detailed if you're taking the equipment outside the uni so I only put a vague description that I'm filming inside the uni in the library. So when I wanted to get the equipment today my lecturer told me it needs to be a lot more detailed and I also need written permission from someone from the library to film there (or basically written permission from someone wherever I wanna film in the uni). Long story short I'm now gonna shoot on Friday in our tv studio with a lecturer present, that way I don't need to do the risk assessment.",
+        "ts": "1553622990.007100",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/590147500790_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I used the last few days to work a bit on the CG arm I'm going to use",
+        "ts": "1553623019.007200",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/586293269968_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is work still busy or are you finished with the new Avengers? ",
+        "ts": "1553623059.007300",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/590149554534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, I hope she had a great birthday! Hopefully you can get to film soon and then get on to the fun bit. When is your project due? I imagine the CG is going to take you quite a while as it's not an easy task... \n\nWorks still super busy on Avengers. Got a few more weeks on that and we've just picked up some more shots that another studio were meant to do but haven't which is frustrating. I'm also getting pretty busy on my next project which is His Dark Materials, a series for the BBC to be aired next year ",
+        "ts": "1553625938.007400",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589864528919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yea she really had thanks! It's due in 5weeks from friday so it's gonna be stressful 5 weeks I guess haha. I spent too much time testing, should've filmed my scene a lot earlier. But at least I know what I'm doing now (I hope)",
+        "ts": "1553637382.007500",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589390857397_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh wow, when's the deadline for that project? Because the film is gonna be released in 4 weeks",
+        "ts": "1553637439.007600",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589029205060_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

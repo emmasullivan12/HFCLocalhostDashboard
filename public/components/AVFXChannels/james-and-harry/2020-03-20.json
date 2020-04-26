@@ -1,0 +1,49 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi James, hope all is well. Thank you for sharing your insight on how the industry is currently being affected it really is quite surreal. Our Uni has now shut and we are working on our final group projects from home. I am a 2D lead on this project and i'm currently trying to figure out a way for us to cleanup tracking markers in a series of similar shots with interactive lighting, if you have any advice? Despite this current situation like you say it should hopefully provide me with some time to work on my showreel.",
+        "ts": "1584726437.002100",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1017258376087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Here is one of the shots with tracking markers and interactive lighting - <https:\/\/vimeo.com\/399233273\/e82c9b29ff>",
+        "ts": "1584726778.002200",
+        "username": "Harry Havens (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1004038255907_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "001_070",
+                "title_link": "https:\/\/vimeo.com\/399233273\/e82c9b29ff",
+                "author_name": "Harry Havens",
+                "author_link": "https:\/\/vimeo.com\/hhavens",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/867175020_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "fallback": "Vimeo Video: 001_070",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/399233273?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"211\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"001_070\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 211,
+                "from_url": "https:\/\/vimeo.com\/399233273\/e82c9b29ff",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/399233273\/e82c9b29ff"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584726779.000000"
+        }
+    }
+]

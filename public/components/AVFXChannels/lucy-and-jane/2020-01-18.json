@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy, \nDon't worry about your reply being too late. I was hesitant on sending the statement as it was s I waited for you to proofread it beforehand. \n\nI'll try to use the new structure you suggested later on today and see how it sounds after the alterations are made. \nIs there any information I need to omit from it, or is it just a matter of rearranging certain elements?\nIf I come up with any additional questions, I'll be sure to ask but so far all the feedback has bee quite helpful.",
+        "ts": "1579345132.000100",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-18\/914408780950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

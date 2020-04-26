@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Joshua and HAPPY NEW YEEEAR! Hope you have had a great holiday! Do you have any animation related new years resolutions? I really like your work, especially the ghost in your greenscreen project! Will you be working on your Casino Guy project further this month?",
+        "ts": "1547208651.000100",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-11\/520981302865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

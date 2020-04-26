@@ -1,0 +1,37 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Magin!!!! long time no speak!!! I FINALLY!! have some animations to show you. All I'm doing from here on out is animating so I will be in touch a lot from now on :slightly_smiling_face:",
+        "ts": "1553533953.000100",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-25\/587071789396_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/87bf20d28e3b\/> here a link to a block I've done, I'm trying to go for a more snappy style but I cant seem to get my timing right :slightly_smiling_face:",
+        "ts": "1553533988.000200",
+        "username": "Olivia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-25\/584687629056_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Magic Trick",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/87bf20d28e3b\/",
+                "text": "Collaborative Media Review with 0 items",
+                "fallback": "SyncSketch: Magic Trick",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/87bf20d28e3b\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/87bf20d28e3b\/"
+            }
+        ]
+    }
+]

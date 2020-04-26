@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool. Just let me in know.",
+        "ts": "1554192798.000700",
+        "username": "Daniel Bielawski (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-02\/587987707345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

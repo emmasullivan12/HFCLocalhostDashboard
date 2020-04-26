@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":raised_hands:  :raised_hands:",
+        "ts": "1576057819.003100",
+        "username": "Emma_Noma (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/870971385606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

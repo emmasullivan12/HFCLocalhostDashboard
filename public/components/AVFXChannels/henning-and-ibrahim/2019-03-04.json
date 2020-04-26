@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I definitely think you can end up in the industry - but you need to fundamentals when it comes to sculpting",
+        "ts": "1551698563.000100",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567348756135_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Really just do a lot of figure sculpting and i mean a lot",
+        "ts": "1551698575.000200",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/566236256900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and then doing proper projects where  you take characters through the stages, retopo, uvs, posings",
+        "ts": "1551698605.000300",
+        "username": "Henning (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-04\/567349173671_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,374 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, how are you getting on? We are all working from home today, testing systems to make sure that we can keep going in the event of a nationwide virus lockdown. Scary stuff. Is your college taking precaution?",
+        "ts": "1584015366.011200",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/984436798147_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Helllo,\n\nApart from events being cancelled, everything is  normal as <http:\/\/usual.it|usual.it>’s overwhelming psychologically tbh but still hanging in there haha . I try to avoid rush hour on the central line as much as possible on my morning commute . Just currently making assets for our game, been churning out a different asset everyday lol",
+        "ts": "1584024245.011300",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996260457216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is it working from home? ",
+        "ts": "1584024256.011400",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/986179596657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And how does it affect the way things work in the pipeline?",
+        "ts": "1584024284.011500",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998472729142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ooo I didn't know you were making a game! That is incredible! What are you modelling in?",
+        "ts": "1584024303.011600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996263166096_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Working from home is currently great but I can see challenges in the future. I didn't get dressed till 11! I think that if the kids are made to stay home (which I personally think that they should) then it will be much harder.",
+        "ts": "1584024368.011700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996266333856_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We are at home as we are testing all of the systems to make sure the full team can work.. and we all can, which is great. I can't imagine that the industry is going to be able to keep going. I know my friends who are crew are really worried... shoots won't go ahead and I am not sure if people will be able to get into edit suites..??",
+        "ts": "1584024437.011800",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/983481864562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can imagine how overwhelming it must be in such a busy place like London (I lived there for 20 years). I think that is why I cycled every where! (which has its own scares).",
+        "ts": "1584024497.011900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/983484586882_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have you got a machine you can work on from home?",
+        "ts": "1584024551.012000",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996293051557_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You and your team could set up a google drive or drop box and share assets so that you can stay at home and keep going?",
+        "ts": "1584024571.012100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996275669680_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah we’re making a game called Novem about an alien detective investigating a post apocalyptic earth destroyed by a.i ",
+        "ts": "1584024635.012200",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/984811317955_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow!! intense!",
+        "ts": "1584024673.012300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998144030199_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m working in Maya to make the assets, and then we’re putting everything in Unreal",
+        "ts": "1584024680.012400",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/983493049746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it’s pretty scary, hoping there’ll be jobs left by I think in time it’ll calm down a bit .",
+        "ts": "1584024695.012500",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/983493704258_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can only imagine the discomfort of working at home which is why I try to avoid it as much as possible! I have  a MacBook Pro laptop with a tiny screen so it’s a nightmare haha ",
+        "ts": "1584024786.012600",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998149246087_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am sure it will. I have several artists that all work on MAYA if you ever need any help. Could you borrow a bigger screen from college to plug into if you need to work from home? That is my set up at work.",
+        "ts": "1584024849.012700",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996306849573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah we’ve got a drive and of course slack which will probably be the way we end up working ",
+        "ts": "1584024897.012800",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998501331158_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No unfortunately ",
+        "ts": "1584024907.012900",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/986210065505_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "But I don’t think it’ll come to that I hope, summer is only 2 months away when we finish",
+        "ts": "1584024971.013000",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/986213120817_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are so many studios with rooms full of old monitors... do you want me to see if I can find you one?",
+        "ts": "1584024987.013100",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998505601142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please, that would be super helpful if its not too much hassle. Thank you very much!!!",
+        "ts": "1584025135.013200",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996302314576_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Let me see what I can do.",
+        "ts": "1584025161.013300",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/986222454913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you are doing modelling, I guess that it doesn't have to be super high end in terms of colour callibration?",
+        "ts": "1584025197.013400",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998516230134_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, I’m mostly working in Maya ",
+        "ts": "1584025391.013500",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/995862134884_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview>",
+        "ts": "1584033379.013600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996715865013_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Alexander Richter TD",
+                "title": "The perfect Showreel with Amy Smith (Framestore)",
+                "title_link": "https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview",
+                "text": "What is a Showreel and why do we need it? A showreel is your opportunity to show us what you’re capable of. Given that we work in a visual industry, your CV is only able to tell us so much about your skill ...",
+                "fallback": "Alexander Richter TD: The perfect Showreel with Amy Smith (Framestore)",
+                "image_url": "https:\/\/static.wixstatic.com\/media\/f83e50_5addef869f654a67b3ec0123bfae542a~mv2.jpg\/v1\/fit\/w_1000,h_1000,al_c,q_80\/file.png",
+                "image_width": 445,
+                "image_height": 250,
+                "ts": 1583584388,
+                "from_url": "https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview",
+                "image_bytes": 449404,
+                "service_icon": "https:\/\/static.wixstatic.com\/media\/f83e50_b9f48a064571452db0191eaac8cd8987%7Emv2.png\/v1\/fill\/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01\/f83e50_b9f48a064571452db0191eaac8cd8987%7Emv2.png",
+                "id": 1,
+                "original_url": "https:\/\/www.alexanderrichtertd.com\/post\/the-perfect-showreel-interview"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584033379.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Been meaning to make changes on showreel. I’ll take a look rn",
+        "ts": "1584033612.013800",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998917927734_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There was a part 1 to this interview.",
+        "ts": "1584033638.013900",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/986627674129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ll try to search up both parts ",
+        "ts": "1584033880.014000",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/996737404277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.artstation.com\/louise_kalyango|https:\/\/www.artstation.com\/louise_kalyango>",
+        "ts": "1584033883.014100",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/983931491794_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Louise Kalyango",
+                "title_link": "https:\/\/www.artstation.com\/louise_kalyango",
+                "text": "VFX Postgrad student",
+                "fallback": "ArtStation: Louise Kalyango",
+                "thumb_url": "https:\/\/cdnb.artstation.com\/p\/assets\/videos\/images\/017\/923\/339\/small\/louise-kalyango-maxresdefault.jpg?1557860676",
+                "from_url": "https:\/\/www.artstation.com\/louise_kalyango",
+                "thumb_width": 800,
+                "thumb_height": 450,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-2d309dd70806bf99fbbae9e4345537b9.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/louise_kalyango"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584033883.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a link to my draft showreel. When  you’ve got a min, can I please have some feedback? ",
+        "ts": "1584033972.014300",
+        "username": "Louise Kalyango (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-12\/998586770263_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

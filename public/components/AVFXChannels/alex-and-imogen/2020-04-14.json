@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It has done exactly the same for me. I'm using Slack for work at the moment and it's not given me notifications for that too which is *very* annoying!\n\nSo are there any particular areas you feel you need support with? I'm happy to try and help in any way I can, so whether it's questions about animation, the business side of things, getting a job etc, ask whatever you like and I'll do my best to help.",
+        "ts": "1586862159.002700",
+        "username": "Alex Watson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1047163939527_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "PS I was just listening to a podcast and they mentioned that Anim Dojo is free at the moment. I don't know if you've heard of it before? It was set up by some people from Blue Zoo and when I was working there last year they gave me a free account, it was pretty good.\n\nAnyway if you don't already have an account I'd recommend signing up while it's free. They have some really good classes on there and it has challenges you can take part in and get feedback on etc.\n\n<https:\/\/beta.animdojo.com\/app\/lobby>",
+        "ts": "1586877139.002800",
+        "username": "Alex Watson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1085112044864_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

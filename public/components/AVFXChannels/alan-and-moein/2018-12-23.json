@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amazing, I am preparing some sketches and moldboards in following days then I will send them you.",
+        "ts": "1545571375.000200",
+        "username": "Moein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-23\/511011768757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool sounds good, don't forget to take a break over Xmas though. Recharge your batteries! ",
+        "ts": "1545609788.000300",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-23\/511981385335_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

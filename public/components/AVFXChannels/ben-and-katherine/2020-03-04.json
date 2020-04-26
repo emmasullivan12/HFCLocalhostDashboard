@@ -1,0 +1,94 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m going to be doing a really rough edit today, and it’s only 3 short shots to do the comp work to. \n\nBut with that I’m also fixing some of my old project to go into my showreel to beef it out as well. ",
+        "ts": "1583314347.002500",
+        "username": "Katherine Bristow (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981161101989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/386099326|https:\/\/vimeo.com\/386099326> \n\nThis is my current showreel, some shots I’ll be removing or fixing and then adding other shots in as I fix them but this is what I have so far! ",
+        "ts": "1583316021.002600",
+        "username": "Katherine Bristow (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981201209173_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Compositing Showreel 2020",
+                "title_link": "https:\/\/vimeo.com\/386099326",
+                "author_name": "Katherine Bristow",
+                "author_link": "https:\/\/vimeo.com\/katherine0bristow",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/848498137_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Here's my 2D and 3D showreel for 2020 - all work is my own of which I did in university. \n\nContact: \n\nLinkedin: \nEmail: ",
+                "fallback": "Vimeo Video: Compositing Showreel 2020",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/386099326?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Compositing Showreel 2020\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/386099326",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/386099326"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1583316021.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh nice! yeah that's a solid 3 shots for you reel then! Means you can focus on giving the love to each shot as it needs it and really make them shine! You can also do some nice breakdowns too if you have lots of DMP and cleanup and stuff And nice, that's a good idea. When it comes down to showreels its often quality over quantity so its best to have your best work in there if you can! I'll take a look at your reel soon and let you know what I think! Have you got any other projects on atm or is it just your FMP?",
+        "ts": "1583340168.002800",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981876992912_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks! Yeah I wanted less shots for my FMP so that I can make them the best I can! And apart from the online presence project that’s it! ",
+        "ts": "1583340342.002900",
+        "username": "Katherine Bristow (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/983747011079_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah defo, always better to have a manageable amount of work to still be able to learn stuff along the way! and nice thats good means you can really focus on getting your FMP looking nice!",
+        "ts": "1583342227.003000",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981503931876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah! I just hope that the final piece looks good!",
+        "ts": "1583342289.003100",
+        "username": "Katherine Bristow (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-04\/981978709941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

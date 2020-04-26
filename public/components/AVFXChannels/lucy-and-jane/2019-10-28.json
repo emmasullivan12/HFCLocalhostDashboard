@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy, I hope you had a good weekend \nI constructed my portfolio to a point where I am comfortable with showing you. It's not yet finished and I've been using the resources you sent me but I'd like your opinion on what I have so far. Some descriptions are missing at this point so apologises for the inconvenience this might cause",
+        "ts": "1572279131.005000",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/804024884593_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/thomastallis-my.sharepoint.com\/:p:\/g\/personal\/zlee_thomastallis_org_uk\/EdcUu6-y2lhJpcQsxAp2qT8BSHMZlfLJbOXmjXLzyDXUOA?e=wZCWuI>",
+        "ts": "1572279188.005100",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/804026498321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For now, the document is to lay out the work I selected so the appearance is not yet finalised",
+        "ts": "1572279376.005200",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-28\/800467926707_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

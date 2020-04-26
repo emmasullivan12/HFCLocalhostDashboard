@@ -1,0 +1,44 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Found this vfx discord channel: <https:\/\/discord.gg\/kJAJzK|https:\/\/discord.gg\/kJAJzK>",
+        "ts": "1581667307.000900",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/940835750451_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Discord",
+                "title": "Join the Keep Calm, I'm in VFX Discord Server!",
+                "title_link": "https:\/\/discord.gg\/kJAJzK",
+                "text": "Check out the Keep Calm, I'm in VFX community on Discord - hang out with 543 other members and enjoy free voice and text chat.",
+                "fallback": "Discord: Join the Keep Calm, I'm in VFX Discord Server!",
+                "image_url": "https:\/\/cdn.discordapp.com\/splashes\/676088890964181005\/464a616146d09ac799a44fc524bc30fa.jpg?size=512",
+                "image_width": 444,
+                "image_height": 250,
+                "from_url": "https:\/\/discord.gg\/kJAJzK",
+                "image_bytes": 30161,
+                "id": 1,
+                "original_url": "https:\/\/discord.gg\/kJAJzK"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1581667308.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, thank you! :slightly_smiling_face:",
+        "ts": "1581668222.001100",
+        "username": "Asher Hunt (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/940851633267_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

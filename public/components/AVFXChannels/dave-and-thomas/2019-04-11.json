@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Thomas, I’ve asked work if I can give you a tour of the studio on Wednesday if you’re interested? I can’t take you to every floor, but I can show you the floor and area where I work. So maybe we’ll grab lunch, and then we’ll take a look around",
+        "ts": "1555011671.000100",
+        "username": "Dave Edwardz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-11\/599602790049_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

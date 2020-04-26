@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alexander - sorry for the slow reply.  I was off ill for a few days last week and so I'm still playing catch up.  It is amazing how quickly the emails build up when I'm off for a few days.",
+        "ts": "1553611480.000500",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/588679074757_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me the key to a good showreel is to show of your very best work.  I would say that it is probably too ealry for you to start work on the this.  Your focus right now should be on learning the skills to do the work you need for you reel in the future.",
+        "ts": "1553611546.000600",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/588318484612_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In general a reel can be anywhere from around 30 to 90 seconds - maybe a little longer.  As a starting point you should be looking to include 3 or 4 of your very best pieces of work - they should be the most complete and most polished you have.  Your showreel isn't somewhere for showing tests or R&amp;D.  We see lots of reels (especially in FX) where people have just captured the first few little tests they have done in Houdini, which may look cool, but don't really demonstrate anything creative or technical over and above a 100 other reels we have seen.",
+        "ts": "1553611791.000700",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/589795082950_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Paul, thanks for your reply and hope you are very well now.\n\nI will take your advice of keep learning  improving my skills. \n\nRegarding the showreel, this is one of the final university assessments.  This is why I am a bit confused, because I do not have enough material to show. \n\nBut with your explanation, I have a idea in how to improve them. \n\nMany thanks\n\n",
+        "ts": "1553621707.000800",
+        "username": "Alexander Naranjo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/588641487380_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah ok - understood.  Well yes then you should try and have a 2 or 3 small projects to have in your reel.  You can also include a breakdown, where you show how the project was put together.  Can you share the brief or critria you have to follow for the final assessment and I can give you some more specific advice.",
+        "ts": "1553622141.000900",
+        "username": "Paul Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-26\/579965446321_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

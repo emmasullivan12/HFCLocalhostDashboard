@@ -1,0 +1,192 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do enjoy both hard surface and organic but lately I've been focusing more on hard surface to get better at it. I don't think they thought us about colourspace for texturing, what is it?",
+        "ts": "1583582761.004700",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-07\/989089297127_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, here some of the things I did in my first year and first half of second year",
+        "ts": "1583582795.004800",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-07\/987225747312_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV1775MS9",
+                "created": 1583582836,
+                "timestamp": 1583582836,
+                "name": "received_2300167023533810.jpeg",
+                "title": "received 2300167023533810",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 89476,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV1775MS9\/received_2300167023533810.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV1775MS9\/download\/received_2300167023533810.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV1775MS9-120af7b54b\/received_2300167023533810_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 1920,
+                "original_h": 1080,
+                "thumb_tiny": "AwAbADC1iko3Umc9KBhSUrq+PlIBqECUcbweaVx2JKSgbgPnxn2opiG5PrSicxKeN2TTaKYD3vAYyAp3EflVZJCvG0nv1qdlHlk4qIUrAOaRndSRtwMDFLk+tIKKYH\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FV1775MS9\/received_2300167023533810.jpeg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FV1775MS9-c90d482e48",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583582841.004900"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV177NZJR",
+                "created": 1583582913,
+                "timestamp": 1583582913,
+                "name": "retopology_woman.mp4",
+                "title": "retopology woman",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 15616974,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV177NZJR\/retopology_woman.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FV177NZJR\/download\/retopology_woman.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FV177NZJR-12df47810e\/retopology_woman_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FV177NZJR\/retopology_woman.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FV177NZJR-f9728b7327",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583582914.005200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and now I'm currently working on this character but i had to simplify a lot because we realized we didn't have much time to do the whole film",
+        "ts": "1583582954.005500",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-07\/987246071381_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUNCXUHHQ",
+                "created": 1583582967,
+                "timestamp": 1583582967,
+                "name": "Turnaround_009.0001-0180_2 (1).mp4",
+                "title": "Turnaround 009.0001-0180 2 (1)",
+                "mimetype": "video\/mp4",
+                "filetype": "mp4",
+                "pretty_type": "MPEG 4 Video",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 7993278,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUNCXUHHQ\/turnaround_009.0001-0180_2__1_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUNCXUHHQ\/download\/turnaround_009.0001-0180_2__1_.mp4?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUNCXUHHQ-b917cf7014\/turnaround_009.0001-0180_2__1__thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUNCXUHHQ\/turnaround_009.0001-0180_2__1_.mp4",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUNCXUHHQ-e54bfc4e29",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583582968.005600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i already have a more updated version of this but i don't have any renders yet",
+        "ts": "1583583001.005900",
+        "username": "Lucia Soares (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-07\/986772901012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow Lucia those look great! Love how you show your topology for the female body. When you make your reel you will want to show your topology of your models so employers can see if you understand flow. Love the robotic bunny as well! Is that something you thought of yourself or did you follow a concept? :slightly_smiling_face:",
+        "ts": "1583607119.006000",
+        "username": "Samantha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-07\/987431271072_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

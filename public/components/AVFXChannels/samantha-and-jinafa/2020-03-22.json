@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello lovely - so sorry about the delay in replying to you. As you can imagine things have been ridiculously busy with all this coronavirus stuff going on!\n\nHow are you and your family doing? Hope you are all healthy &amp; in a safe place! I take it you are now working from home?\n\nThings are very busy here and my job has become even more important i.e. our operations have to be tip top as we try to get as many resources as we can, collaborate with others in the healthcare field and with government.\n\nI agree all the placements of the physio degree look exciting. Having reflected on my own experience and others I think placements were probably the most important part of my degree and personal development.\n\nIt's just my personal opinion but I would say marriage shouldn't stop you from continuing to build on your career. 23\/24 years of age is quite young to get married (i think!?) and is really very soon to put the brakes on your career. Your big earning power years will likely be in your late 20s-40s!",
+        "ts": "1584885699.003800",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017123023092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you know how all of this situation is going to affect you and applying to universities? Remember I'm here for you to help you get through it!",
+        "ts": "1584885727.003900",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1019788817990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A bit of both! I try to make the most out of the 4-5 weeks a year of holiday that I get e.g. I took 3 weeks off to backpack around Italy, Spain &amp; France ... very fast paced and tiring but I absolutely loved it. I have also asked for 6 months sabbatical before and that is when I did some of my travelling, but nto all employers are happy to do this especially at the very beginning of your career!",
+        "ts": "1584885794.004000",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-22\/1017124145236_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

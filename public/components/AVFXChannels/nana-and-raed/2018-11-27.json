@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still on C++ progress?",
+        "ts": "1543349027.007000",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-27\/489452352594_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

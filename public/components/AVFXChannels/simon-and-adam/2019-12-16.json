@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Adam, thanks for showing your work, here's my feedback!\n\nSkeleton:\n- The beginning feels like he's deliberately sneaking as he's picking his feet up quite high and quickly, is this the intent?\n- Overall I'd say work on losening up the arms, get some more overlap, maybe animating a walk cycle based on a guide will help for example from the animators survival kit. Remember that overlap should be something you physically pose, dont rely on dragging keys around. Offsetting keys should really be considered a polish stage not something you do when blocking.\n\nDialogue\n- Hopefully my sync sketch scribbles are clear enough! In a nutshell the 2 things I noticed were that he's always moving rather than hitting poses and working within them. The other was that it wasn't clear where the person he was talking to was. I assumed screen left but he's looking a bit all over the place.\n\nI hope that helps please let me know if you'd like anything explained more fully! I think a helpful exercise would be to practice getting a character in and out of a pose. Just pick 2 poses, it could be simple like looking left and looking right and build up the motion logically with key poses, a break down and keys for anticipation and settle, making sure there's as much overlap as possible in each key,",
+        "ts": "1576522422.000100",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/864228282467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thank you this is really helpful and uh no he wasn't suppose to pick up his feet so high but i see what you mean",
+        "ts": "1576522712.000200",
+        "username": "Adam Rivlin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/877912633062_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i love the drawings on the dialogue definitely helps a lot",
+        "ts": "1576522842.000300",
+        "username": "Adam Rivlin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/862926781714_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "gave me a bit of a chuckle too always nice",
+        "ts": "1576522856.000400",
+        "username": "Adam Rivlin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-16\/864241886419_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

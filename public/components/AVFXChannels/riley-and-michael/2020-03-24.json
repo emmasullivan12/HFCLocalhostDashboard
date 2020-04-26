@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No problem! I wish you the best as well and stay safe. I checked out the company website, and it's got some great stuff! My email is <mailto:rileynelson48@gmail.com|rileynelson48@gmail.com>",
+        "ts": "1585053236.002900",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-24\/1009398818610_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

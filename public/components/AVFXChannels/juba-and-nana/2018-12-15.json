@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I just saw the article on the tomahawk, looks cool! Good to see you doing this stuff.\nI can see your trying to do a lot of this from imagination, which is great.\nBut it you want to learn, it's always good to have a basis on reality. Look up reference images of axes, maybe from different cultures and find one you think fits better.\nSo when you make the model you can see and try to translate it to 3D, it really helps train your eye :smiley:",
+        "ts": "1544897762.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-15\/505143260437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hows everything with you? Already on holiday?",
+        "ts": "1544897777.000200",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-15\/505996450327_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not yet, just have one more week to get through.",
+        "ts": "1544906934.000300",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-15\/504810439924_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

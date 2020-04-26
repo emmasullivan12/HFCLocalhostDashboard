@@ -1,0 +1,93 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Amazing! That's great news, well done. :) This is the game for your final project? How much more do you have to do to it? It's always nice to get good feedback! It looks cool from the video I'd love to have a go! :D how is it going with the hunt for a new job? Hope you're managing to get a little balance! ",
+        "ts": "1552299570.000700",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572912948917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven't been too creative lately, we are coming close to the end of the show so things are getting intense haha, we started a D&amp;D group at work though which is a nice chance to step away from the screens and have some creative thinking! ",
+        "ts": "1552299640.000800",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572006182785_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh i see i see! This game will be for my final project and hopefully will be available on the AppStore, i wanna have about 100+levels. Stopped looking for a new job, got my days off, managing! I have 0 motivation and stress+workload is building up, any tips to handle the “no motivation” days?",
+        "ts": "1552307285.000900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572675317314_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great to hear that you've got some days off! That's a tough one! Sometimes you need to take some time to refocus yourself, I find listening to music helps me, I'll take one of my favourite albums, sit\/lay somewhere comfy alone, without distraction and just listen to it. When I'm thinking about 100 things at a time it's nice to just channel into something...sometimes if I have the house to myself I'll tidy up and stuff to find some inspiration but that's probably a more odd one! haha Washing the pots with an album on relaxes me quite a lot. The important thing is to try and clear your mind I think! The more I think about all the things I need to do the less ability I have to do them :stuck_out_tongue: Maybe going for a walk or sitting doing some people watching too could help, I only really did that in Spain while my gf was working and I had days to kill, but it was definitely inspiring!",
+        "ts": "1552322706.001000",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/572400794657_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah i see!! I watched about 16 hours of some korean series i found ( the whole show basically) in a day :sweat_smile: nearly 16 hours... did 12 episodes one day and the rest yesterday! My second monitor stopped working due to an update on my mac and it stopped working a day before my birthday.. spent it at home talking to apple all day... no solution yet! I am managing to do some things but not as much as I had hoped",
+        "ts": "1552333693.001100",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-11\/573197246834_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FGVGRENUD",
+                "created": 1552335912,
+                "timestamp": 1552335912,
+                "name": "File from iOS.MOV",
+                "title": "File from iOS",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 14129410,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGVGRENUD\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FGVGRENUD\/download\/file_from_ios.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FGVGRENUD\/file_from_ios.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FGVGRENUD-f627f3af66",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1552335914.001200"
+    }
+]

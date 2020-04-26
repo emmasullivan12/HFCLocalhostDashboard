@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I hear Framestore are still looking for their Launchpad, although Rodeo have cancelled their \"Ranch\", FixFX are planning their internship scheme for the summer. I haven't heard from the others but you should go ahead and keep applying!",
+        "ts": "1584702983.001900",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016577104342_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also one of the other mentors sent this if it helps :slightly_smiling_face:  <https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/>",
+        "ts": "1584703008.002000",
+        "username": "Arielle Martin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1016138640647_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "escapestudiosvfx.com",
+                "service_url": "http:\/\/escapestudiosvfx.com",
+                "title": "Sun loungers on the beach, not deckchairs on the titanic: 14 golden tips for students working remotely",
+                "title_link": "https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/",
+                "author_name": "Saint",
+                "author_link": "https:\/\/escapestudiosvfx.com\/author\/saintvfx\/",
+                "thumb_url": "https:\/\/escapestudiosvfx.files.wordpress.com\/2020\/03\/seuss_joshuacoleman-1.jpeg?w=1200&fit=200%2C150",
+                "thumb_width": 200,
+                "thumb_height": 92,
+                "text": "It&rsquo;s important to have a guiding principle for your &lsquo;home learning&rsquo; and to make it work for you. Don&rsquo;t let your education be defined by COVID-19. This is a new but temporary reality, and we can&rsquo;t just go into a coma for the coming months. We need to strive to be in the best possible shape for the world afterwards.",
+                "fallback": "escapestudiosvfx.com Link: Sun loungers on the beach, not deckchairs on the titanic: 14 golden tips for students working&nbsp;remotely",
+                "from_url": "https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/",
+                "service_icon": "https:\/\/s2.wp.com\/i\/webclip.png",
+                "id": 1,
+                "original_url": "https:\/\/escapestudiosvfx.com\/2020\/03\/20\/sun-loungers-on-the-beach-not-deckchairs-on-the-titanic-14-golden-tips-for-students-working-remotely\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1584703009.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okk thanks",
+        "ts": "1584713738.002200",
+        "username": "Ben Martin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-20\/1014800191152_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

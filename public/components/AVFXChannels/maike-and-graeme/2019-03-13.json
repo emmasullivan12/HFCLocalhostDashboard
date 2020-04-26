@@ -1,0 +1,36 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Graeme, that sounds great. Is this a solo or group project? There are tonnes of great animation tools out there but not necessarily specific to film production. The ones I found most helpful besides my own scripts are available here <https:\/\/animbot.ca\/home\/>   and here <http:\/\/morganloomis.com\/tools\/>  you maybe have heard of these before? The yshould definitely help speeding up the animation process. :slightly_smiling_face:",
+        "ts": "1552497415.002200",
+        "username": "Maike Fiene (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/576102876533_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Tools",
+                "title_link": "http:\/\/morganloomis.com\/tools\/",
+                "text": "Animation | Rigging | Pipeline",
+                "fallback": "Tools",
+                "from_url": "http:\/\/morganloomis.com\/tools\/",
+                "service_name": "morganloomis.com",
+                "id": 1,
+                "original_url": "http:\/\/morganloomis.com\/tools\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Maike thanks so much for the helpful Links I have heard of animbot before I've never seen that page from Morgan Loomis before so Handy! The project that I am working on is a solo project, I would like to share with you the previz and could you tell me what you think? I would love to know your first impressions.  right now I am just rigging the characters getting them ready to animate :slightly_smiling_face:\n\nPreviz Link  <https:\/\/vimeo.com\/manage\/322803154\/general>",
+        "ts": "1552503265.002400",
+        "username": "Graeme Daly (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-13\/575930019154_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FA1UW4FG8",
+                "created": 1523038928,
+                "timestamp": 1523038928,
+                "name": "Prospela e-mentoring - Overview for Leon.pdf",
+                "title": "Prospela e-mentoring - Overview for Leon.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 734575,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FA1UW4FG8\/prospela_e-mentoring_-_overview_for_leon.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FA1UW4FG8\/download\/prospela_e-mentoring_-_overview_for_leon.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FA1UW4FG8-2d4a481cdc\/prospela_e-mentoring_-_overview_for_leon_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 1100,
+                "thumb_pdf_h": 619,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/FA1UW4FG8\/prospela_e-mentoring_-_overview_for_leon.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FA1UW4FG8-473f0bd161",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1523038930.000358"
+    }
+]

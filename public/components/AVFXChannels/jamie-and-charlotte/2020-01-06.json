@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Charlotte, happy new year! 2020 is going good thanks, hope you had a nice break too.\nThat's great that you sent an application to Trainee Finder. I will check out your CV today and get back to you. Definitely agree that it's more about the content of your CV than fancy design. I will have a think about some good transferable skills too.",
+        "ts": "1578309674.000600",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/883034757267_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

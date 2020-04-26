@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Morning! \n\nHopefully you had a lovely weekend!:grin:\n\nI am very sorry, but could we reschedule the call for Wed or onwards? \n\nI have completely forgotten that I must be somewhere today, and tomorrow I am very busy as well :s",
+        "ts": "1574680593.005300",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/847897973461_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha Hey Silvia! Sure thing :) ",
+        "ts": "1574683154.005400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/847941975749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

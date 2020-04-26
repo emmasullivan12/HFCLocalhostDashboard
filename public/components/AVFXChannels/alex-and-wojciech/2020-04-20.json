@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Alex,\nHope you’re doing well. I was working on some stuff during quarantine. Could you have a look? \nThanks\n\n<https:\/\/www.artstation.com\/artwork\/RY8N2D|https:\/\/www.artstation.com\/artwork\/RY8N2D>",
+        "ts": "1587381840.000700",
+        "username": "Wojciech Szon (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1073188486178_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ArtStation",
+                "title": "Rotoscoping Showcase, Wojciech Szon",
+                "title_link": "https:\/\/www.artstation.com\/artwork\/RY8N2D",
+                "text": "Short Rotoscoping exercise I did during my quarantine. Let me know what you think!",
+                "fallback": "ArtStation: Rotoscoping Showcase, Wojciech Szon",
+                "image_url": "https:\/\/cdnb.artstation.com\/p\/assets\/videos\/images\/025\/774\/199\/large\/wojciech-szon-maxresdefault.jpg?1586881894",
+                "image_width": 444,
+                "from_url": "https:\/\/www.artstation.com\/artwork\/RY8N2D",
+                "image_height": 250,
+                "image_bytes": 103968,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-29a2dca177132e34caa742d88651830e.png",
+                "id": 1,
+                "original_url": "https:\/\/www.artstation.com\/artwork\/RY8N2D"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587381840.000000"
+        }
+    }
+]

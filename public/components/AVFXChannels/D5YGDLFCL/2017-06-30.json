@@ -1,0 +1,142 @@
+[
+    {
+        "type": "message",
+        "text": "hey - yeah thanks i've just seen her message",
+        "user": "U5YFZREUC",
+        "ts": "1498812559.928149",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "said she wants to be a lawyer",
+        "user": "U5YFZREUC",
+        "ts": "1498812565.929391",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "what's the process for matching up people, just out of interest?  strikes me as a better match for my mentee-less lawyer mate",
+        "user": "U5YFZREUC",
+        "ts": "1498812583.933535",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "045fecae6b01",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-23\/202547866612_045fecae6b0149822c83_72.jpg",
+            "first_name": "Rob",
+            "real_name": "Rob Chesworth",
+            "display_name": "robchesworth",
+            "team": "T4UUTPV18",
+            "name": "robchesworth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Your mentee-less lawyer friend didnt do a DBS check so is over 18s only unfortunately",
+        "user": "U4V22C6A1",
+        "ts": "1498819916.533489",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We match people based on the skills they rate themselves lowest on (and where we think you are particularly strong) as well as outside of school\/work interests",
+        "user": "U4V22C6A1",
+        "ts": "1498819960.541887",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We are weary of simply matching people based on the career they list on their sign up form...particularly as most kids just follow the route of parents \/ things theyve seen in the movie",
+        "user": "U4V22C6A1",
+        "ts": "1498820004.550272",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Although a lot of times their choice is warranted. Thought your work has legal aspects to it and is particularly rich in logical and analytical thinking so wanted to show her how her skills can be useful across a whole host of careers",
+        "user": "U4V22C6A1",
+        "ts": "1498820048.558339",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

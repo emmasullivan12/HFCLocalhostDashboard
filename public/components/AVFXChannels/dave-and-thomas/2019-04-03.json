@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Dave! I'm not based in London, but it'd be a pleasure to have lunch with you at some point! If you give me a time and place I'll be there!\n\nWould be nice to meet another creative!\n\nI can't do weekends however as I have a part time job, but any day from Monday to Friday would be amazing!\n\nAnd I can't believe you got to work on Game of Thrones! And its nice to hear that you enjoyed the work and people there! :slightly_smiling_face:",
+        "ts": "1554292167.000200",
+        "username": "Thomas Mayfield (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-03\/589840870401_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

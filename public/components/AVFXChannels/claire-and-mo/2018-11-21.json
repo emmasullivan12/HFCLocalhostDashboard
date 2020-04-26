@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Claire!\nYeah I definitely, me and my friend want to one day set a little studio up after a few years of experience so any info on their journey and what they did would be very useful :grinning:",
+        "ts": "1542834343.001900",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/486990331478_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm more of a CG animator, I use mostly Maya",
+        "ts": "1542834405.002000",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484853202160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "so like Third Floor or Cinesite",
+        "ts": "1542834654.002100",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484988584273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm currently trying to make some animations and build up my portfolio but I'm not too sure what they would want to see, like simple animation tests or character performance?",
+        "ts": "1542835108.002200",
+        "username": "Mo (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-21\/484861124672_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

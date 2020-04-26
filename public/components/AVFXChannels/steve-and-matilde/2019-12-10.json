@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, I think we'll learn some rigging starting next semester so I'll make sure to pay close attention to those classes! I'll see if I can find some nice resources to help with learning some coding as well. By the way, do you know of any?\nAnd ok! I'll look around for info on mocap software as well once I get some time.\nI'm really grateful we have things like this, where we can talk to people working on the industry. It's a shame it wasn't available before. Thank you for helping me out with this!\nAh, it's nice to know I won't necessarily have to be tied down to London when looking for jobs. I'd like to work in a variety of places if I can. I always feel like travelling helps me expand my horizons, that's why I moved here!\nAnd yeah, the experience part is a big problem. I'll do my best to improve my skills as much as possible, then! I'd like to work on bigger studios but smaller indie groups are also really interesting to me! I'd love to work on both environments to get a feel for how things work in each one.\nAnd thank you for the spreadsheet! I've been taking a look at it and it's going to be really useful. I noticed it also has internships which is great because I wanted to apply for one in my second year!",
+        "ts": "1576001108.003000",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/869808940934_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and you answered it pretty well! For now I guess my only question is more resource related. I want to collect as many things as I can that will help me learn and develop my craft, so books, websites and so on. If you ever think of some do send them my way! : D",
+        "ts": "1576001231.003100",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/854822730850_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh! And also, this might be a bit of a broad question, but how is it working at bluezoo? I do want to focus more on games but I wanted to learn a bit about how it's like to work on tv animation as well!",
+        "ts": "1576001274.003200",
+        "username": "Matilde Saeed Senos (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-10\/867616021013_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "eventually make a stop motion",
+        "ts": "1542183213.004100",
+        "username": "Om-Kalthoom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-14\/478495508384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

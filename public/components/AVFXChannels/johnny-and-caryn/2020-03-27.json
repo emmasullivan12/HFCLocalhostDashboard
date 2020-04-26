@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope you are well , Im being successfully working from home with all the teams , remote work is not too bad",
+        "ts": "1585295955.000200",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-27\/1017741661010_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

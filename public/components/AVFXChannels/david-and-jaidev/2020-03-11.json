@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am trying to learn java in the background but only just started.",
+        "ts": "1583958605.003200",
+        "username": "Jaidev Nileshkumar (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/981831842386_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Those are good subjects to learn for a career as a developer.\n\nI suggest you look at learning C# instead of Java. They are very similar but no games (that I know of) are written in Java. Better still, learn C# within Unity since that’s the environment that most games are made. It’s fun to use and has thousands of examples, plugins, assets etc.\n\nI can give you some advice about the kind of projects to focus on.",
+        "ts": "1583995654.003300",
+        "username": "David Amor (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/995402674805_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

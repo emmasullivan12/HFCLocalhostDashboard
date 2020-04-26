@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "for sure! I've just been so busy lately! Are you looking into creature animation at the moment?",
+        "ts": "1579604991.000700",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-21\/902200864898_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can imagine, I'm just looking at everything and trying to widen my network :)",
+        "ts": "1579634478.000800",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-21\/918017696726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

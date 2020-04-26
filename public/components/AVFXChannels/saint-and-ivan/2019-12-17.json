@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh sorry, I haven't seen the messages, I need to turn the notifications on.",
+        "ts": "1576576559.000100",
+        "username": "Ivan Moreno (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876670984277_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm gonna have a look to the links and try to find my 'favorite' field.",
+        "ts": "1576577052.000200",
+        "username": "Ivan Moreno (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-17\/876682434517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

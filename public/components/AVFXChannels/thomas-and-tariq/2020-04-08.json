@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry man, Slack hasn't been updating me! Good news: My PC is back. bad news: only 48GB! But hey, PC is back\nI'm currently working on News of the World, it;'s the new Tom Hanks film. Can't say what on it, but there's pretty big pyro, particle and some groom crowd scenes going on!",
+        "ts": "1586364730.001100",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1057414998228_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Looks great!! You've got some nice simulations and camera work going on. How did you find it?\nDo you think recording your own tutorials actually made you learn some stuff you didn't know or think about things and setups in a different way?&gt;",
+        "ts": "1586365290.001200",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-08\/1049348858067_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, I'm back :) yes, looks great, in general it's a really impressive quality for a student short. Keep it up guys, you're definitely on a right track",
+        "ts": "1587396385.011700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1079958676804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Regarding Alan, yes he has a lot of great content even though he likes to repeat\/promote himself..a lot :laughing:",
+        "ts": "1587396452.011800",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-20\/1059060200679_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

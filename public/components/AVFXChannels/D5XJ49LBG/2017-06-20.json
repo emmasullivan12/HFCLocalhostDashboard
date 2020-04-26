@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "text": "Hellooo <@U5WPLAX4J>!",
+        "user": "U4V22C6A1",
+        "ts": "1497991685.174113",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1497991688.175182",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hello!",
+        "user": "U5WPLAX4J",
+        "ts": "1498027302.072131",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "1ae7c34d40d4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/202415541478_1ae7c34d40d485df60fe_72.png",
+            "first_name": "Georgina",
+            "real_name": "Georgina",
+            "display_name": "georgina",
+            "team": "T4UUTPV18",
+            "name": "georgina",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

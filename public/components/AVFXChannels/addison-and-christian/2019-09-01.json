@@ -1,0 +1,112 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Addison, sorry for not responding to your last text, prospela didn't give me a notification :see_no_evil: that sounds amazing, I would love to help! When would this be? My only problem is that I'm working in Austria from 08.09 till 27.09 and I'm starting my masters degree at escape studios on 30.09. I'm not too sure about the timetable yet but I think it's Monday-friday 10-3. If there is any way I can come in before in the morning and after in the evening and\/or on the weekends I would love to help",
+        "ts": "1567354977.000200",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/747445625846_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! I only send it yesterday so don't worry. The project has already started and the deadline is end of October so roughly 2 months. The project is remote so assuming you have a Nuke licence you can work on it in any spare time. I am working on it at the weekends and after work. Obviously I will help you with anything you're unsure of but does this sound like it would work for you?",
+        "ts": "1567355266.000300",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/747447143462_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That would be perfect yes. I don't have a nuke licence atm, only used non commercial at home or the full version at Uni. How much would a licence be?",
+        "ts": "1567360301.000400",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/745296239925_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As a student you can buy a licence with a huge discount, the whole production suite for about £1000 instead of £9000",
+        "ts": "1567360604.000500",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/747475121606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you're still at uni it is only £180 for a years licence ",
+        "ts": "1567360622.000600",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/745293499632_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The project is 4K so you need a full licence ",
+        "ts": "1567360641.000700",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/747475307830_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However, I would strongly recommend getting a licence if you want to become a compositor as it is really helpful for training and freelance work ",
+        "ts": "1567360675.000800",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/747158664983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "180£ is not that bad actually, 1000£ I can't afford. But I just realised I can work at my uni, they have a full license. And I'm there everyday anyway",
+        "ts": "1567363830.000900",
+        "username": "Christian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/738924425889_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The £1000 is a permanent licence. I would recommend buying that when you leave uni (that's what I did) and then during my studies I paid the £180 a year ",
+        "ts": "1567363902.001000",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/744843667428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you're confident you would have the time to actually do shots then I'm happy to give you some ",
+        "ts": "1567363937.001100",
+        "username": "Addison Petrie (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-01\/745315088645_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

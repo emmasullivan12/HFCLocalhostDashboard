@@ -1,0 +1,129 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Caitlin?",
+        "ts": "1507979683.000061",
+        "username": "mkhan-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256344697698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Roshaan. Sorry I must have missed seeing your reply! No problem at all if you are busy and can't respond quickly. However, your idea of making a time where we can have a conversation rather than sporadic messages is a great idea! After 7 would work best for me too. I'm mostly likely not going to be around on Wednesday evenings but most other nights I should be able to chat should you wish to. Would you like to set a day and time or would it work if I said between 8-9 most weeknight evenings (excluding Wednesday) I will make sure I keep my phone to hand so I am able to respond to your messages should that time work for you? ",
+        "ts": "1508030113.000010",
+        "username": "caitlin.gordon22 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256605800373_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F7JFAMA76",
+                "created": 1508030245,
+                "timestamp": 1508030245,
+                "name": "Image uploaded from iOS.png",
+                "title": "Image uploaded from iOS",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 123488,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7JFAMA76\/image_uploaded_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F7JFAMA76\/download\/image_uploaded_from_ios.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 202,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 270,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 405,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 450,
+                "thumb_800_h": 800,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 540,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F7JFAMA76-0a182a201d\/image_uploaded_from_ios_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 576,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 750,
+                "original_h": 1334,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F7JFAMA76\/image_uploaded_from_ios.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F7JFAMA76-c6af697df0",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1508030247.000068"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also with a degree in biology does not close you off to other non biology\/ scientific career paths. ",
+        "ts": "1508030357.000014",
+        "username": "caitlin.gordon22 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256520925492_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not sure how accurate the quiz is but it might be of some interest for you to do the quiz I have linked below. It won't take long. Also the website its from is quite useful. ",
+        "ts": "1508030981.000018",
+        "username": "caitlin.gordon22 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256521972436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.prospects.ac.uk>",
+        "ts": "1508030986.000050",
+        "username": "caitlin.gordon22 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256467686402_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Prospects.ac.uk",
+                "title_link": "https:\/\/www.prospects.ac.uk",
+                "text": "Prospects for graduate jobs, postgraduate study, advice about work experience, internship opportunities and graduate careers",
+                "fallback": "Prospects.ac.uk",
+                "from_url": "https:\/\/www.prospects.ac.uk",
+                "service_icon": "https:\/\/www.prospects.ac.uk\/resources\/dist\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "Prospects",
+                "id": 1
+            }
+        ]
+    }
+]

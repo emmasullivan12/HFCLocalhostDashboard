@@ -1,0 +1,83 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574370285.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5dd6fbed238fea0004ff6c0f|this link> with other teams to invite them in it_",
+        "ts": "1574370285.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574370285.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1574370654.000700",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1574370716.000800",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"dexter-and-jakub\"",
+        "old_name": "z-shared-23",
+        "name": "dexter-and-jakub"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Villiers E-Mentoring* joined the shared channel_",
+        "ts": "1574370756.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jakub_zaniewski89 has joined the channel_",
+        "ts": "1574370800.001000",
+        "username": "smooz (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-09-21\/439746895584_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey @jakub_zaniewski89 Hi @meetsingh1427\n\nHow are you? :slightly_smiling_face:\n\nSo I'm going to try and help you with your career planning and Emma should have given you a brief bit of background on me already.\n\nFeel free to introduce yourself, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nPerhaps we could start with what it is you study at school and what subjects you like to spend your time on? Do you have any other ideas of what jobs you might like to try in the future?\n\nI've done LOADS of jobs so can certainly give you some insights",
+        "ts": "1574370827.001100",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844147314404_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "PS: You can message me any time you like by the way. Anytime a question comes to mind or you want to have a chat! I will try to reply as soon as I can :slightly_smiling_face:",
+        "ts": "1574370848.001200",
+        "username": "dexter-prospela (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/833137714211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

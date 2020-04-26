@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Neal, sorry I haven't been very active at the moment I've been working on my showreel and just finished it! Would I be able to send you a link and possibly get some feedback please?",
+        "ts": "1584190274.002100",
+        "username": "Taylor Webber (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-14\/1000419084352_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

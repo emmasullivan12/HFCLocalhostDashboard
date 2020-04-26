@@ -1,0 +1,173 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey, hope you're doing well! I've been looking at the showreels at Dneg and was wondering if you knew what the average poly count for a realistic scene was? I was looking at alita and some of those shots looked like they had a very high poly count.",
+        "ts": "1582319192.013300",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/965798948919_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Haha , my latest render is at 80billion ! Don’t look at the poly count ",
+        "ts": "1582319246.013400",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/953818381809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I give budgets to the type of assets , hero 10 million , 5 million mid , 1 million far \nBut sometimes we can have billions of Peebles that are just 300 polys ",
+        "ts": "1582319401.013500",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/963942111200_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s very shot \/show , requirements dependent ",
+        "ts": "1582319422.013600",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/965804760199_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Damn, that's insane. I'm just shocked because my lecturers have been telling me to always keep an eye on my poly count and keep it as low as possible.",
+        "ts": "1582319648.013700",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/952480835667_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is a common sense thing , don’t make polys if you don’t see them .\nAt 4K and imax we need to keep the detail .\nBut at Hd and web it’s ok to go low ",
+        "ts": "1582319719.013800",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/953830104961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We measure how big the object is meant to be on screen and calculate final resolutions .\nBut sometimes we go back and either downres or upres .\nTrust your lectures , you also need to be render efficient with your available hardware , here I have a lotttttt of computer power available .",
+        "ts": "1582319853.013900",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/951165212018_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah I see. That's good to know. I'm trying my best to be more efficient with my models. Just find it hard to find good references from the time period.\nI've managed to fix the problem with my maya running to slow. Got rid of a lot of polys that were not needed. Taking a little break from the ground for now and going to work on other parts (adding detail and testing out textures on the buildings).",
+        "ts": "1582320390.014000",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/963512482068_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good , this it’s like a marathon it’s never a sprint ",
+        "ts": "1582321446.014100",
+        "username": "Johnny Grilo (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/964011130917_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUBFX4RPE",
+                "created": 1582321568,
+                "timestamp": 1582321568,
+                "name": "Image from iOS.jpg",
+                "title": "Image from iOS",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 411715,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUBFX4RPE\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUBFX4RPE\/download\/image_from_ios.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 112,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 149,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 224,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 249,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 299,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUBFX4RPE-8fa01d67ae\/image_from_ios_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 319,
+                "image_exif_rotation": 1,
+                "original_w": 3024,
+                "original_h": 941,
+                "thumb_tiny": "AwAOADCvjKgHzOnTFBz0zJn3FN3rjq\/4Gk3jnJb256UAP\/7+flRjIyQ5Xr17U0uvGN\/50KRjjOO3NADupGFbHsaGGAfkcfjSce9HFAz\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUBFX4RPE\/image_from_ios.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUBFX4RPE-a7a186806e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582321574.014200"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's insane. I wish I had a computer that could handle that aha",
+        "ts": "1582321809.014500",
+        "username": "Viktor Berkita (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/964000280592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I can copy it into here if you would like to read :+1::skin-tone-2:",
+        "ts": "1582196152.000400",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/962832295495_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Having a look,  Framestore who sent the rejection, have put up another Production Coordinator role today. Do I reapply or do I leave it? ",
+        "ts": "1582199132.000500",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/960581056500_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I would leave it, they do keep cvs on file so they changed their mind they may get in touch. I wouldn’t be disheartened when I was making the translation to vfx I applied to dneg, mpc and framestore and didn’t even get interviews for dneg or mpc but got the job at fs. It was the same cv I sent to all of them just to do with timing and who else is applying at the same time I think",
+        "ts": "1582199316.000600",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/949570371075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay - Thank you :blush: ",
+        "ts": "1582200335.000700",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/963269438390_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve emailed our talent team and let them know that you applied one of them is on hold next week but hopefully someone will get in touch next week",
+        "ts": "1582203056.000800",
+        "username": "Louise Hastings (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/960661432516_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Louise :grinning:",
+        "ts": "1582210094.000900",
+        "username": "Jess Vaughan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-20\/949841307859_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

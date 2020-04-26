@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there! I’ve just finished up work for the day :relaxed: \n\nI have really enjoyed using Blender 2.8, I find that it has everything I need to 3D model and it’s amazing how many different plugins you can get to help out. Lots of community support and tutorials online, which has been a major relief :smile: \n\nHeading to university is a really good way to expand your portfolio and to learn a bit more about how to work in a professional environment. It worked out really well for me, so I can definitely recommend. Which courses were you thinking of? \n\nAs for an apprenticeship, it’s excellent to see you thinking about that, it shows that you have ambition and dedication, which is admirable :raised_hands: Do remember, there is no great rush though! You may want to consider starting uni first, see how you cope with the workload and if you’re handling things well, an apprenticeship will still be there :relaxed: I have found that often life can throw you unexpected curve balls, so you may want to have some flexibility to begin with. \n\nI also had a look at your portfolio and I think this is a fantastic start. I absolutely love your piece with the eyes, it shows you have an excellent eye for composition :hearts: I know you’ve mentioned it’s quite bare bones at the minute, but I’d love to watch it develop. Let me know what type of feedback would be most useful to you. ",
+        "ts": "1584125259.003100",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/986699041682_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I know I keep writing you essays, just trying not to spam too much :joy:",
+        "ts": "1584125355.003200",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999035251972_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "dont worry about, spamming its not a problem, but its wonderful to hear that you use blender",
+        "ts": "1584129084.003300",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999659783413_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as for questions, well... i dont really know what to ask",
+        "ts": "1584129159.003400",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/986856331170_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Blender is fantastic if you ask me :relaxed: I don’t have a ton of experience in 3D, but I can’t immediately see why other software would be much more advantageous, given the price difference. \n\nAnd no worries if you’re not sure what to ask just yet! :relaxed: This doesn’t have to happen straight away, but I would recommend that you have a think about what are some of the current problems you are facing and what are your goals for the next few years. Feel free to think about this for as long as you need. \n\nHopefully, if we identify those, that will help in figuring out what the next steps for you are :relaxed:",
+        "ts": "1584131053.003500",
+        "username": "Venezia Georgieva (IntoGames (Mentors))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/999715860272_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "okay, well i'm not very good at animating, and rigging for one",
+        "ts": "1584138792.003600",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988479230339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as for making a character, i have a tendency to get stuck when it comes to facial anatomy, so if you could help with that, that would be wonderful",
+        "ts": "1584138958.003700",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/988483038211_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "also, could i ask, do you have a discord?",
+        "ts": "1584139017.003800",
+        "username": "Alexander Kubota (IntoGames (Mentees))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/1001815781015_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,278 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Morning Samuel, sooo I had a bit of time to check out all your nice creations. The trump animation you sent doesnt have sound for me, I dont know if that's slack being funny but if you could double check if it works for you, that would be lovely :slightly_smiling_face:\nIt's looking very nice so far, from what I can tell. I see nice motions and transitions and eases. I have 2 main things I would note could be improved on this piece or to keep in mind when tackling the next exercise\/shot. In a few poses with his arms\/gestures you have a bit of Twinning going on (which tbh happens to me still sometimes) and it's actually hard to avoid it sometimes as people actually talk like that, with both their arms doing the same thing haha but we have some tricks in animation to give this a bit more appeal and make it look less robotic and more organic yay :slightly_smiling_face:",
+        "ts": "1587458692.003500",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1099388117136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F0127NCT4FM",
+                "created": 1587458819,
+                "timestamp": 1587458819,
+                "name": "Twinning.png",
+                "title": "Twinning",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 314374,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0127NCT4FM\/twinning.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0127NCT4FM\/download\/twinning.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 204,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 272,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 408,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 453,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_960.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 544,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127NCT4FM-7a971ffce0\/twinning_1024.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 580,
+                "original_w": 1906,
+                "original_h": 1080,
+                "thumb_tiny": "AwAbADBs3\/HxB9TU1Qzf8fEH1NT0AKqlmwKQjBIPakWTbKox19aGcNIwHagBk\/8AqH+lOT7i\/QU2f\/Uv9Kcn+rX6CgCGZh9oh57mpwyd2AFZ55IJ6ilNAE82N+5WBHaltyASXbGarYoNAFyZlML4IPFORl8teR0FUe2KMkDrQB\/\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F0127NCT4FM\/twinning.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F0127NCT4FM-d9a677e25b",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1587458821.003600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And another thing I highly recommend you get into as early as possible as an animator is offsetting things, especially the arms. Atm many of your poses are hit at the exact same frame by both arms. Literally grab all your Right Arm controls for example for one set of gesture and offset it for 1-3 frames, earlier or later, whatever you feel works better. It should make a big difference :slightly_smiling_face: This is all I can say so far without sound hehe but really lovely looking from what I can tell!",
+        "ts": "1587458985.003900",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1099397921376_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For the CV, I have some feedback as well but also letting you know that in the industry it's all really about your reel, I'm not even sure when was the last time somebody looked at my CV actually but nevertheless of course you need a nice one :slightly_smiling_face:",
+        "ts": "1587459217.004000",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075564040802_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I assume the nice drawings and poses are yours which you want to show but generally that shouldnt happen in the CV. I would take them all out, if you wanna keep one drawing in it somewhat resembling a logo that's fine but for showing your drawing skills (which is important in 3D, so yay) I would link either to your website where they should be found or an instagram account or something :slightly_smiling_face:",
+        "ts": "1587459352.004100",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1081737141108_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll send you my CV as an example although your layout is way better, so defo dont look for that in my CV haha. So I would say what you have is good, leave out the drawings\/screengrabs aaand I would delete your little introduction where you mention you;re lacking in things. I'll tell you now, animation business is part of the entertainment business, so you kinda wanna sell yourself. Dont mention what you're lacking, that's for them to figure out haha so far, you show what you CAN do and the recuriters can decide if it;s enough or not :slightly_smiling_face: Just list the 2 projects you've worked on, your descriptions are great and give a good insight. With the cats maybe you wanna add the word quadruped animation somewhere, as that's a highly asked skill often (\"you animated 4 legs? woooow\")",
+        "ts": "1587459547.004200",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1099416955712_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And that's to my next question, I've checked out your reel on vimeo, are you planning on updating your reel currently and theeen start applying for jobs when exactly? You have some nice bits in there but I guess you'll wanna update with the shorts and projects you've worked on so cant wait to see shots of those!",
+        "ts": "1587459623.004300",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075789001251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F0127H5H4SW",
+                "created": 1587459734,
+                "timestamp": 1587459734,
+                "name": "CV_AlinaBopele_Oct2019.pdf",
+                "title": "CV AlinaBopele Oct2019",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 159784,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0127H5H4SW\/cv_alinabopele_oct2019.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F0127H5H4SW\/download\/cv_alinabopele_oct2019.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F0127H5H4SW-c2c795ca18\/cv_alinabopele_oct2019_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F0127H5H4SW\/cv_alinabopele_oct2019.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F0127H5H4SW-e585aa6e8d",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1587459735.004400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/user5528352>",
+        "ts": "1587459777.004700",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075585262514_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "title": "Alina Bopele",
+                "title_link": "https:\/\/vimeo.com\/user5528352",
+                "text": "Alina Bopele is a member of Vimeo, the home for high quality videos and the people who love them.",
+                "fallback": "Vimeo: Alina Bopele",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/portrait\/24518750_640x640",
+                "from_url": "https:\/\/vimeo.com\/user5528352",
+                "thumb_width": 640,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/i.vimeocdn.com\/favicon\/main-touch_180",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/user5528352"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587459778.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll also send you my current reel which is password protected as most of it isnt released yet :wink:",
+        "ts": "1587459806.004900",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075586269586_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/324169435>  \npassword: pandalina2019",
+        "ts": "1587459822.005000",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1099428461216_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Aaaand the most recent project I've worked on is a 35 minute streaming special for AppleTV called \"Here we are\". I highly recommend watching it for many reasons btw haha content and also lovely style of animation, worked with a wonderful team at Studio AKA :slightly_smiling_face:",
+        "ts": "1587459879.005100",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075588959698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.youtube.com\/watch?v=2M3Q4-zCTHc>",
+        "ts": "1587459927.005200",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1075590629202_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Here We Are: Notes for Living on Planet Earth — Official Trailer | Apple TV+",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=2M3Q4-zCTHc",
+                "author_name": "Apple TV",
+                "author_link": "https:\/\/www.youtube.com\/channel\/UC1Myj674wRVXB9I4c6Hm5zA",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/2M3Q4-zCTHc\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Here We Are: Notes for Living on Planet Earth — Official Trailer | Apple TV+",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/2M3Q4-zCTHc?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=2M3Q4-zCTHc",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=2M3Q4-zCTHc"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587459928.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and now I'll stop bombarding you haha hope this is all helpful xD",
+        "ts": "1587459939.005400",
+        "username": "alina bopele (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1081759595556_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

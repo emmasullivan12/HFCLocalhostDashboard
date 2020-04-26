@@ -1,0 +1,110 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F8HB3742E",
+                "created": 1513768736,
+                "timestamp": 1513768736,
+                "name": "Engagement Stats (AccessLogs) - Pilot2.xlsx",
+                "title": "Engagement Stats (AccessLogs) - Pilot2.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 4456602,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8HB3742E\/engagement_stats__accesslogs__-_pilot2.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8HB3742E\/download\/engagement_stats__accesslogs__-_pilot2.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F8HB3742E\/engagement_stats__accesslogs__-_pilot2.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F8HB3742E-5a0c3c82ca",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1513768737.000273"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F8J6ZLA0N",
+                "created": 1513768738,
+                "timestamp": 1513768738,
+                "name": "December Plan.xlsx",
+                "title": "December Plan.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 29182,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8J6ZLA0N\/december_plan.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8J6ZLA0N\/download\/december_plan.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F8J6ZLA0N\/december_plan.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F8J6ZLA0N-74dd5bfe39",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1513768739.000121"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F8HF812P7",
+                "created": 1513768741,
+                "timestamp": 1513768741,
+                "name": "Slack Analytics DAU etc.xls",
+                "title": "Slack Analytics DAU etc.xls",
+                "mimetype": "application\/vnd.ms-excel",
+                "filetype": "xls",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 412160,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8HF812P7\/slack_analytics_dau_etc.xls?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F8HF812P7\/download\/slack_analytics_dau_etc.xls?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F8HF812P7\/slack_analytics_dau_etc.xls",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F8HF812P7-5f63528aa7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1513768742.000028"
+    }
+]

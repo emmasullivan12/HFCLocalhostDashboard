@@ -1,0 +1,88 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FU26BTRL5",
+                "created": 1581793948,
+                "timestamp": 1581793948,
+                "name": "Amiga-RIG.tpl.rar",
+                "title": "Amiga-RIG.tpl",
+                "mimetype": "application\/octet-stream",
+                "filetype": "binary",
+                "pretty_type": "Binary",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 370821,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU26BTRL5\/amiga-rig.tpl.rar?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU26BTRL5\/download\/amiga-rig.tpl.rar?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FU26BTRL5\/amiga-rig.tpl.rar",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FU26BTRL5-30730cfb76",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581793949.002300"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FU26CB9EH",
+                "created": 1581794004,
+                "timestamp": 1581794004,
+                "name": "Feedback for Claudia_15-02-20.pdf",
+                "title": "Feedback for Claudia 15-02-20",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 2385939,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU26CB9EH\/feedback_for_claudia_15-02-20.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FU26CB9EH\/download\/feedback_for_claudia_15-02-20.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FU26CB9EH-d45b4d85f0\/feedback_for_claudia_15-02-20_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 911,
+                "thumb_pdf_h": 1288,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FU26CB9EH\/feedback_for_claudia_15-02-20.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FU26CB9EH-9bb80c2bca",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581794005.002600"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Claudia, I probably didn't template my rig properly, so try this one instead. If it doesn't work, can you just send me your email address and I will google-drive it to you uncompressed or something! :slightly_smiling_face:\nI did new feedback to answer your rigging questions.\n\nI would be happy to check some of your illustration work, of course! But as I am not a designer in my role specifically, I would just give more general feedback compared to the detailed feedback I give on your Harmony work",
+        "ts": "1581794194.002900",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-15\/954197586848_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much! The indie is going well- it's difficult, though! So much about actual production cleanup work that school didn't prepare me for. It's not paid work, but honestly, the schedule is so lax and the learning is so valuable that I don't mind. I've done 3 or 4 screen replacements, patched out a wedding ring on a guy's finger, stitched a few takes of the same shot together, and currently working on a batch of set extensions. Lots of keying!!",
+        "ts": "1581374475.000200",
+        "username": "Kat (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/934409560723_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm planning on revamping my demo reel soon with some of these shots, and I also was thinking about doing an exercise or two to throw in there. I had seen one of my classmate's reels where she included a quick example of her roto work on a clip of a skateboarder- is that something companies like to see on reels, or is that too amateur looking? I'm really trying to build a reel that caters to the advertising scene here in Chicago, which seems like a good deal of roto\/cleanup, beauty, and some 3d integration work.",
+        "ts": "1581374717.000300",
+        "username": "Kat (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/934414889379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And also, as far as driving greenscreen shots- I have the key down fine, just trying to work on the integration of the background and window reflections. It's at an odd angle, let me send you a quick mov.",
+        "ts": "1581374851.000400",
+        "username": "Kat (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-10\/945885865552_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FTVNQ30S3",
+                "created": 1581375916,
+                "timestamp": 1581375916,
+                "name": "driveTest1.mov",
+                "title": "driveTest1",
+                "mimetype": "video\/quicktime",
+                "filetype": "mov",
+                "pretty_type": "QuickTime Movie",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 373665874,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTVNQ30S3\/drivetest1.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FTVNQ30S3\/download\/drivetest1.mov?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_video": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FTVNQ30S3-c3903709e2\/drivetest1_thumb_video.jpeg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FTVNQ30S3\/drivetest1.mov",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FTVNQ30S3-366bbe69d5",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1581375930.000500"
+    }
+]

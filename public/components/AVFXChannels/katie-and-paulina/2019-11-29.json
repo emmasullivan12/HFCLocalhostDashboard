@@ -1,0 +1,124 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Katie! Everything's going well:) I hope you're doing well too! I'm pretty confident about the project, don't have a lot time for it now as we have bunch of briefs and it's pretty intense but trying to find time for it as much as we can! We have the final project deadline 'til the start of May next year.\n\nThanks for the compliments! I'll definitely share the final result when it'll be ready.\n\nYes, I'd love to talk about the studios! I have a list of the places I want to apply to, my main goal is to pursue a career as a creature modeller but I'm also going to apply to modeller, prop modeller, 3D artist and CG generalist positions as well. Now my main focus is to get experience either throughout running or internship contracts. Main companies that I want to work at are The Mill, Framestore or MPC but I would be more than happy if I get my internship\/ first job experience anywhere else as long as I learn there, so I don't only limit myself only to VFX companies. My tutors are helping in a way that they're sharing their experience in industry and tips\/advice they hear from industry people, as we're still in a second year and have one more year they don't really help us as much as third-years which is understandable.:D\n\nI'm trying to apply for a runner position now. I saw that the Mill is looking for runners. I started writing CV and cover letter and thought that maybe you could take a look at it and tell me what you think?",
+        "ts": "1575038962.019800",
+        "username": "Paulina Rybakaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-29\/842571727315_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It would be incredible if I could get to an interview stage, so I'm really trying my best to make my application as best as I can..",
+        "ts": "1575039079.019900",
+        "username": "Paulina Rybakaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-29\/855901357799_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll attach them here, so you could take a look at it:)",
+        "ts": "1575039103.020000",
+        "username": "Paulina Rybakaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-29\/854042870304_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FR5SYTBV5",
+                "created": 1575039814,
+                "timestamp": 1575039814,
+                "name": "CV_PaulinaRybakaite.pdf",
+                "title": "CV PaulinaRybakaite",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 10636940,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FR5SYTBV5\/cv_paulinarybakaite.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FR5SYTBV5\/download\/cv_paulinarybakaite.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FR5SYTBV5-5ed9ffe1c6\/cv_paulinarybakaite_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FR5SYTBV5\/cv_paulinarybakaite.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FR5SYTBV5-f76b6ebec7",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1575039816.020100"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FQSHCTP4K",
+                "created": 1575039879,
+                "timestamp": 1575039879,
+                "name": "Cover_letter_PaulinaRybakaite.pdf",
+                "title": "Cover letter PaulinaRybakaite",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 895608,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQSHCTP4K\/cover_letter_paulinarybakaite.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FQSHCTP4K\/download\/cover_letter_paulinarybakaite.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FQSHCTP4K-3409a1af27\/cover_letter_paulinarybakaite_thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FQSHCTP4K\/cover_letter_paulinarybakaite.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FQSHCTP4K-ecc1a5f010",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1575039880.020400"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, I wanted to ask whether it's worth mentioning volunteering experience in CV? Because I only mentioned it in my cover letter.",
+        "ts": "1575040111.020700",
+        "username": "Paulina Rybakaite (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-29\/854073388821_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

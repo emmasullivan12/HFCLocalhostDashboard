@@ -1,0 +1,90 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Samantha, I'm so sorry I couldn't get back to you all these days, I had exams so I was pretty busy with revision and mentally exhausted, sorry again!",
+        "ts": "1576090019.003800",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871557299431_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Wow, your job seems to require quite a lot of communication and social skills. If you don't mind me asking, what job are you looking forward to get in the future then?",
+        "ts": "1576090127.003900",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/869710840885_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes I have noticed that a lot of jobs in the NHS require long hours so I'm not surprised, are you usually able to balance your social life with professional? And out of 10 how stressed would you say you are in a normal day due to work?",
+        "ts": "1576090257.004000",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871913848182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Those are amazing grades! Hence we have psychology in common, what advice would you give for the subject? In general I love psychology and did the best from all 3 of my subjects, it's so interesting!",
+        "ts": "1576090403.004100",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/856928126418_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have been looking for a job for a while now but most places want experience, which I really don't understand as the logic isn't there:joy::joy:how am I supposed to get experience if no one's going to hire me:joy::joy:",
+        "ts": "1576090512.004200",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/856931845042_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will probably do UCAS and all that around next year so that would be really helpful. The programme gave me work experience at Charing Cross Hospital in the oncology department and I loved it! It was so informative on the life of doctors&amp;etc.",
+        "ts": "1576090663.004300",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/869262343940_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From the programme we had this conference few weeks ago and we learnt about things like pharmaceutical degree and psychiatrist, even how to treat a person when they get stroke",
+        "ts": "1576090766.004400",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871931238534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh yes I do have a cv, ill send it right away",
+        "ts": "1576090899.004500",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-11\/871937068550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

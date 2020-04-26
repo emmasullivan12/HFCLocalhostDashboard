@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Moein great ot see you making a start on the project. Is this test your way of figuring out how you will do the rest of the project?\n\nFor the test you showed me what resolution are your textures? I think you might need to up them as I see a couple of low resolution textures. Where I think you could really do something with this is to take a photograph or a video of a similar env and really try to match it. So find a parking garage and take some pictures. Look how the light, textures, materials all interact. You could then extend the env or change it in someway.\n\nThat is something that you could be asked to do in industry and matching reference is always a core skill.",
+        "ts": "1547724304.001200",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-17\/526084294290_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

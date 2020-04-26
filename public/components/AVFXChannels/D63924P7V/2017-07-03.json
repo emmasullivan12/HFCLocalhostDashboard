@@ -1,0 +1,122 @@
+[
+    {
+        "type": "message",
+        "text": "<@U639Y9AQJ> Hi Zubair!! Welcome :smiley:",
+        "user": "U4V22C6A1",
+        "ts": "1499117569.385539",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Here is your Mentee Onboarding Pack to help get you started. It contains a few questions to help get the conversation flowing with your E-Mentor",
+        "user": "U4V22C6A1",
+        "ts": "1499117601.391458",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F62QACBJ5",
+                "created": 1499117620,
+                "timestamp": 1499117620,
+                "name": "Prospela e-mentoring - E-Mentor Onboarding Pack (Summer Programme) Over 18s - vSlack.pdf",
+                "title": "Prospela e-mentoring - E-Mentor Onboarding Pack (Summer Programme) Over 18s - vSlack.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 1752212,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62QACBJ5\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__over_18s_-_vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62QACBJ5\/download\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__over_18s_-_vslack.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F62QACBJ5\/prospela_e-mentoring_-_e-mentor_onboarding_pack__summer_programme__over_18s_-_vslack.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F62QACBJ5-9d76a26c6e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1499117620.395164"
+    },
+    {
+        "type": "message",
+        "text": "We've matched you with a guy called Michail who is an accountant and works at a large consumer food manufacturer!",
+        "user": "U4V22C6A1",
+        "ts": "1499117644.399739",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "We'll be introducing you shortly in your own channel :ok_hand:",
+        "user": "U4V22C6A1",
+        "ts": "1499117652.401289",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U4V22C6A1",
+            "ts": "1499117665.000000"
+        }
+    }
+]

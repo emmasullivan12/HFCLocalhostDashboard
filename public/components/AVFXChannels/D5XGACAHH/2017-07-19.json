@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "text": "Hi Ewelina, I think I had better give you my email. Just in case this platform doesn't work after Friday. It is <mailto:eleanor.faircloth@gmail.com|eleanor.faircloth@gmail.com> \n",
+        "user": "U5WDKTPAL",
+        "ts": "1500474528.944244",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "6788fd256268",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201209037828_6788fd25626825847754_72.jpg",
+            "first_name": "Ellie",
+            "real_name": "Ellie Faircloth",
+            "display_name": "eleanorfaircloth",
+            "team": "T4UUTPV18",
+            "name": "eleanorfaircloth",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Ok, thank you I will keep contact with you, of course if you don't mind :heart:",
+        "user": "U5XGXM0PP",
+        "ts": "1500505561.937585",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "75c29b255653",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-21\/201526816532_75c29b25565378adb519_72.png",
+            "first_name": "Ewelina",
+            "real_name": "Ewelina",
+            "display_name": "ewelina",
+            "team": "T4UUTPV18",
+            "name": "ewelina",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

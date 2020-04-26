@@ -1,0 +1,39 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Nora! So sorry I havn't had a chance to get back this week!\n\nLovely to meet you :smile: Thats great your familiar with toon boom i personally love working with it! What personal projects are you working on at the moment?\n\nA year is a great chunk of time to build a portfolio, I don't know if you saw some information about me but I've been in the industry for 6 years you can see my reel here <https:\/\/vimeo.com\/373724067> my work history here <https:\/\/www.linkedin.com\/in\/billy-mpetha-273a8446\/> I actually just finished at Sun and Moon so currently been job hunting! Its always nice to have a break between projects to work on personal stuff but it isnt great for my bank account aha.\n\nthe freelancing thing is fairly recent actually! but if you have any questions about it i'd be happy to awsner. The animation studio idea comes and goes haha, I've heard information about it being very difficult and it can be limiting as if you have a studio with staff on salary then you need to take what work you get (even if its a bit dull) to keep everyone paid! but then the otherside it you can get much bigger projects if you have a record for delivering!  Have you done any freelance work youself?\n\nI'm still learning alot about it but for now I'm focusing on trying to build experience in direct to client work . Personally i found working in house at studios masssivly helpful to building confidence and experience as theres so many talented people around to learn from. other than sun and moon are there any studios your really interested in? sun and moon are a lovely studio! what drew you to them?\n\nAs for why i went to freelance After around 5 years of working in house at different studios i had gotten into a managment position as an animation supervisor at Brown Bag Films which was a very stressfull job and i wasnt animating as much as id like to, I learnt a hell of a ton but i was feeling a bit stuck animation wise and needed a mental health brake so i took a job on the new teenage mutant ninja turtles as a senior rough animator and found my love for animation again! since then I've been looking for jobs with small teams where im pushed to get better at animation or projects where its direct to client and i have to wear alot more hats :smile:\n\nIt would be great to see your reel\/ portfolio, I've been on the hiring side of TV shows so can definatly help with that :smile:\n\nJust to get a better idea of what your interested in have you animated with 2D rigs or do you perfer traditional animation? is there a type of show you'd love to work on? Is there animation part of animation you'd like to learn more about like 2d rigging, character design, BGS ect\n\nhope you having a nice weekend and again sorry about the late response!",
+        "ts": "1587250301.001900",
+        "username": "billympetha (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1071856973139_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "BIlly Mpetha Showreel 2020",
+                "title_link": "https:\/\/vimeo.com\/373724067",
+                "author_name": "Billy",
+                "author_link": "https:\/\/vimeo.com\/billympetha",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/831939308_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "'Her Story' A short produced by Out Left Production for RTE - all animation \n\nClips from ROTMNT ©Nickelodeon \n\nROTMNT - Senior rough animator - Animated keys and rough inbetweens. \n\nPersonal work - All animation and clean up\n\nAvailble for work! get in touch at ",
+                "fallback": "Vimeo Video: BIlly Mpetha Showreel 2020",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/373724067?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"BIlly Mpetha Showreel 2020\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/373724067",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/373724067"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587250302.000000"
+        }
+    }
+]

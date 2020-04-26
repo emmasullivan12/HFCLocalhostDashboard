@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just checking in to see how your works going and if there's anything I can help out with. How's that UI coming along?",
+        "ts": "1571132364.000900",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/795160246900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

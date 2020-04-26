@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Heyy! I’m sorry I haven’t said anything yet! I’m very ill currently so am avoiding my screens sadly. I should be a functioning human by sometime next week! However it’s nice to E meet you :) ",
+        "ts": "1581628003.001600",
+        "username": "Tori Aspinall (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/940186139763_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

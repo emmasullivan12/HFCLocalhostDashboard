@@ -1,0 +1,48 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That is okay! I am stupidly busy too. Are you happy with how it has gone?",
+        "ts": "1557480870.002500",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-10\/631803723125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Saw this and thought it may be good for your course <https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1>",
+        "ts": "1557484516.002600",
+        "username": "Emma_MoonrakerVFX (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-10\/631359571860_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Outpost VFX",
+                "title": "Pro Showreel Tips To Take Your Career To The Next Level – Part 1",
+                "title_link": "https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1",
+                "text": "Outpost is a VFX team built on a foundation of getting the right people and offering them a trusting and supportive environment to work in, empowering us to deliver astonishing visual effects for film, high-end TV and creative projects.",
+                "fallback": "Outpost VFX: Pro Showreel Tips To Take Your Career To The Next Level – Part 1",
+                "from_url": "https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1",
+                "service_icon": "https:\/\/outpost-vfx.com\/dist\/img\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/outpost-vfx.com\/news\/pro-showreel-tips-part-1"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My course work I don’t think I’ve done as good as I did in the first semester but I don’t really see how I could have done any better as I was working from 9am to 9pm but this could just be me being too judgmental of my own work and as for the internship I really don’t know how that’s gonna a go haha ",
+        "ts": "1557505700.002800",
+        "username": "Katie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-05-10\/625914844049_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

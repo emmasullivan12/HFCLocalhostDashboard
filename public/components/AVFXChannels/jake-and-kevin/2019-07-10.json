@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds good. My course also taught both 3d and comp, really good to know both even if your interests lie in 3D. I was sure I wanted to be an editor, then motion graphics artist, then colourist, then I finally stuck with 3D\/CG. Took me a few years to find what I really loved. You'd like to persue 3d modeling right?",
+        "ts": "1562759976.002300",
+        "username": "Jake Ferris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-10\/691906103879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yes 3d modelling, specifically doing complex hard surfacing modeling as well as wanted to create environments for vfx. my problem is currently i rely on 3d modelling tutorials to create complex objects. for  example, right now i am trying to design a sci-fi tron inspired bike using orthographic buti struggle modelling with a clean topology in mind",
+        "ts": "1562780206.002400",
+        "username": "Kevin Ditawole (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-10\/679113373459_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is there anyway we can meet face to face, as it will be more efficient for me",
+        "ts": "1562793219.002500",
+        "username": "Kevin Ditawole (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-10\/690809415573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

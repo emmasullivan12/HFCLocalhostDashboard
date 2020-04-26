@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Kate - how are you doing.  I'm sorry so long again to write back.  Although working from home, its still busy making sure artists and crew are up and running and working. How did you 2 video interview go with Framestore and Reel FX?   Both good companies, what sort of questions were you asked.  It's always best to just be honest. One interesting thing to have up your sleeve are a couple of VFX sequences that you really like or admire and why.  Its your inspiration.   Even though you received a refusal from DNEG, you should still keep in touch and you can ask the reasons why it was a no - so you can think about how to address them.  Try a websites the Rookies <https:\/\/www.therookies.co\/> and also Pluralsight <https:\/\/www.pluralsight.com\/blog\/career\/vfx-jobs>.  Cinefex magazine also - it may be available online.   for work at the moment its mainlly behind the scenes stuff and also planning to get back into the studio (we hope) in the next few weeks.  it will be nice to see everyone again. Sorry again to miss getting back to you for your interviews - do let me know how they went and if there's any follow up.  Stay well.  Amanda",
+        "ts": "1586900004.000300",
+        "username": "Amanda Libotte (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1086451880688_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "The Rookies",
+                "title_link": "https:\/\/www.therookies.co\/",
+                "text": "Find out everything you need to know about The Rookies from rules, important dates, sponsors, prizes, internships, judging panel, and the team.",
+                "fallback": "The Rookies",
+                "from_url": "https:\/\/www.therookies.co\/",
+                "service_icon": "https:\/\/www.therookies.co\/assets\/apple-touch-icon.png",
+                "service_name": "therookies.co",
+                "id": 1,
+                "original_url": "https:\/\/www.therookies.co\/"
+            },
+            {
+                "title": "VFX jobs and what they do",
+                "title_link": "https:\/\/www.pluralsight.com\/blog\/career\/vfx-jobs",
+                "text": "Have you ever wondered what it takes to create VFX? Learn what some of the key jobs are and what they do.",
+                "fallback": "VFX jobs and what they do",
+                "image_url": "https:\/\/www.pluralsight.com\/etc\/clientlibs\/pluralsight\/main\/images\/resource-center\/resource-center-default.jpg",
+                "from_url": "https:\/\/www.pluralsight.com\/blog\/career\/vfx-jobs",
+                "image_width": 350,
+                "image_height": 205,
+                "image_bytes": 11630,
+                "service_icon": "https:\/\/www.pluralsight.com\/etc\/clientlibs\/pluralsight\/main\/images\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "pluralsight.com",
+                "id": 2,
+                "original_url": "https:\/\/www.pluralsight.com\/blog\/career\/vfx-jobs"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1586900005.000000"
+        }
+    }
+]

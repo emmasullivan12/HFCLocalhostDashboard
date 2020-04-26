@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I see. I’ve been through it frame by frame a few times but I must be focusing too much on one place at a time. You should be able to go frame-by-frame on YouTube with . and , ! I did do a basic comp and it looked fine to me but I must still be missing things. Sorry for all the back-and-forth on this!",
+        "ts": "1571140526.001200",
+        "username": "Michael Vodden (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/795764850160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Better to do it with me while a student than on production. Get used to qcing your work!",
+        "ts": "1571150704.001300",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-15\/795551110612_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

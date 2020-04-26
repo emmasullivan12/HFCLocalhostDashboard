@@ -1,0 +1,385 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586283863.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586283863.000400",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5e8cc556cf3a800004fb8b89|this link> with other teams to invite them in it_",
+        "ts": "1586283870.000500",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586283902.000700",
+        "user": "UTTNC1BJM",
+        "text": "<@UTTNC1BJM> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586283902.000900",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1586283909.001000",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-25\" to \"stephen-and-chris\"",
+        "old_name": "z-shared-25",
+        "name": "stephen-and-chris"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1586284020.001100",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1586284026.001200",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@chrisgcastor has joined the channel_",
+        "ts": "1586284126.001300",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1052725466129_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@stevebgm has joined the channel_",
+        "ts": "1586284136.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1051247304837_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, please meet Stephen your incredible E-Mentor we've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or penny-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1586284139.001500",
+        "username": "Emma Sullivan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045685408807_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1586284140.001600",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1049597865782_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@emma has left the channel_",
+        "ts": "1586284143.001700",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1063116804192_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, nice to meet you mate. Where abouts are you based?",
+        "ts": "1586284344.001800",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046166620355_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Stephen! Nice to meet you too! Thanks so much for taking the time to visit with me! I am in Oklahoma, USA. What about you?",
+        "ts": "1586285376.001900",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046218575251_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm LA based but originally from Australia. Though i think if im here for 3 more years i'll have lived in LA longer than any city back home...",
+        "ts": "1586285480.002000",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1052819925057_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Awesome! I've always wanted to visit Australia. I've been to LA a couple times. That's a fun place too. How you doing out there with the virus?",
+        "ts": "1586285545.002100",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045154272914_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it's interesting for sure. i started working from home from September last year, so it kinda feel like everyone else is just catchup up with me. the city is being pretty good now, but it took folks a minute to fall into line. supposedly this is going to be the worst week of it.  i am missing the social aspect for sure. Thank god for playstation, and home delivery ice cream!\nwhat it like out your way? I passed by Oklahoma City on a road trip a few years back on our way towards Kansas, but we made a point of not going to any cities so didn't get to check it out. I bet theres some mighty good bbq about",
+        "ts": "1586285821.002200",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1051298009749_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah I am the same way. I work from home and my wife is a stay at home mom to take care of our kids. So it hasn't been too big of an adjustment for us. We live in a small town in NW Oklahoma so we've only had one case so far. So it all still kind of feels far removed from us. But people are doing a decent job of social distancing so hopefully that number stays low. Strange times haha.\n\nYes, we have some great bar-b-q, steaks, and southern cooking out here. Not good for you, but tastes amazing haha.",
+        "ts": "1586286131.002300",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046259912131_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I went to LA once with some family. We were visiting San Diego and drove up. Then I was there in 2017 for a film festival I had a short in.",
+        "ts": "1586286181.002400",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1051310514517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh nice - i saw your file, application, whatever you wanna call it. sounds like you've done quite a lot of shooting pieces - how'd the festival go?\nwhat makes you want to head further into VFX rather than directing?",
+        "ts": "1586286349.002500",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1051315691573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, so I do want to do directing as well. I am working on both becoming more competent in both areas. I really enjoy both.\n\nI think professionally there's a lot of opportunity for me with visual effects both being here in Oklahoma and with my current job. There are only a few guys here that do VFX at a high level that I know of. And with my current job, The Skit Guys, there is opportunity as well. I guess you would already consider me the VFX\/motion graphics\/animation department. We have a really unique market where a person with a VFX and CG expertise might be able to make some big strides in. We are in pre-prodcution for our first feature film that is in partnership with Sony\/Provident Films and KLove radio. We were supposed to start shooting next week. But the virus put a hold on it for the time being. The film needs some VFX and a VFX supervisor. But the LA producers on the film won't really consider me seeing as I just don't have the experience yet.  And they don't have the budget to hire a big VFX house. So I don't see any reason why in situations like that where the company I work for needs a VFX supervisor that I shouldn't be able to fill that role. Those are just some of the reasons I want to move forward with this skill set.",
+        "ts": "1586287671.002600",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046335647619_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And I guess I should mention that I have no formal training in VFX. My degree is in the fine arts with an emphasis in painting. I came to the film world in a round about way after college but it became a passion of mine.",
+        "ts": "1586287965.002700",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1054947651204_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh and the festival in LA went great! I took best narrative. It was a drone film festival.",
+        "ts": "1586288306.002800",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046367779091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I guess I am just really curious from a professional's point of view where I stand with my skill and understanding of the VFX world as a guy who has been, for the most part, self-taught. And I'd love to know what steps I could take to continue growing.",
+        "ts": "1586292822.002900",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045512711954_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "firstly -- i know plenty of folks that never went to school for this and most of them are the best artists I know. So there's certainly no stigma around that.",
+        "ts": "1586293059.003000",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1049755253750_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great!",
+        "ts": "1586293075.003100",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1046601036195_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds like there are some great opportunities out there. That's why the mill \/ method \/ framestore setup in the midwest. see if they could get their dirty hands on the local markets, so I'm not surprised there are other pockets of opportunity about.\nlensing and film techniques can be a huge part of making vfx look like the really set in a plate, so it sounds like you have a good handle on that side of things also -- that can be one of the downfalls of a student, they are so worried about the software, the art of it goes out the window a little. consequently work can look a little off.",
+        "ts": "1586293354.003200",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1055168606660_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "have you got a site or reel I can check out?\nsorry for the delay i've getting a posting out today",
+        "ts": "1586293392.003300",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1051520627589_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "it sounds like we're talking about 2 things though, right - your general vfx level, and your ability to go on set. while getting better at vfx can certainly improve your knowledge to set sup, its also not the be all and end all.\ni am animator by trade pre heading cg depts, and was always a terrible lighter, but i understand what's necessary from a VFX sup perspective.\nMost of vfx suping can be prepared in the lead-up, its when things go wrong or inexpediently onset that the knowledge of how you can help comes into play.",
+        "ts": "1586293814.003400",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045725925879_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! I am working too so never feel like you have to rush to answer me.\n\nYes, I'd just like some guidance on how I can move forward. Maybe some of my strengths and weaknesses you see. Anything I should work on? Specific directions I should maybe move? And yes, I am on set three to four times a year for about a week at a time either grip\/gaffing or directing. So I feel like my on set knowledge is getting decent. But if there are any specifics to become a better VFX supervisor.\n\nI know this is probably bad but I haven't made a reel because I haven't really had the need for one yet. I've had a full time job (most of the time in the arts) since I graduated. I do need to make one though haha.\n\nBut yes, I have a website. It's <http:\/\/chrisgcastor.com|chrisgcastor.com>. It's fairly up to date. But I will just also post some links below of some of the work I am more proud of in VFX and motion graphics.\n\n*Personal or Freelance Projects:*\n_****These first three were all just fun projects I did with my family to pracitce using only the gear I had available and no or just a tiny budget.*_\nCardboard Cadet: <https:\/\/www.youtube.com\/watch?v=HCrPd_H2zns> - This is a short film created completely by my son and I.\nLittle Big Sister: <https:\/\/www.youtube.com\/watch?v=gvrQ6VfmNk4> - Another short by my kids and I.\nCookie Dough Disaster: <https:\/\/www.youtube.com\/watch?v=stOD010aiuY> - Another short by my son and I.\n\nFlutter: <https:\/\/www.youtube.com\/watch?v=-kf92bA0BgQ> - A short I shot completely on a Phantom 4 drone and composited in AE.\nThe Last Drone: <https:\/\/www.youtube.com\/watch?v=3oIUVA5Z9o8> - A goofy drone film about zombies.\nHeads Up: <https:\/\/www.youtube.com\/watch?v=d3VeSFaK0CE> - A drone film by my non-filmmaking friends and I.\nThe Stache Bros: <https:\/\/www.youtube.com\/watch?v=im-3mPx1JmI> - An animation test. I did the illustration and animation.\nWhere Was God? Documentary VFX breakdown: <https:\/\/www.youtube.com\/watch?v=zM_KMk1AFRk>\nNo Scent Commercial: <https:\/\/www.youtube.com\/watch?v=V3L32SOARdc> - All motion graphics, modeling, etc.\nThorn Commercial: <https:\/\/www.youtube.com\/watch?v=UTi4yhhXgt8&amp;feature=youtu.be> - All motion graphics, modeling, etc\n\n*Skit Guys:*\nSuperdads: <https:\/\/skitguys.com\/videos\/super-dads> - I helped write and shoot this one. I did VFX as well.\nThe Bee Farm: <https:\/\/skitguys.com\/videos\/awkward-invite-bee-farm> - I helped shoot this one and did on set VFX supervision. I did VFX as well.\nCome Thou Long Expected Jesus: <https:\/\/skitguys.com\/videos\/come-thou-long-expected-jesus> - I did the time-lapse painting.\nZechariah: <https:\/\/skitguys.com\/videos\/the-call-of-christmas-zechariah> - VFX supervision on set and VFX in post (and here’s a VFX break down of that one - <https:\/\/www.youtube.com\/watch?v=Pp28-Pn2tbE> )\nWho Do You Say I Am?: <https:\/\/skitguys.com\/videos\/easter-anthem-who-do-you-say-i-am> - Did everything but write and do VO\/sound for this one.\nNoel: <https:\/\/skitguys.com\/videos\/the-first-noel> - I did everything in this one. My sister and brother in law did the music.\nBeliever’s Creed: <https:\/\/skitguys.com\/videos\/believers-creed> - We manually did a lot of the ink effects in this video by painting the shapes in water and dropping ink in. Then I composited\/edited all the shots for the final.",
+        "ts": "1586294129.003500",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1055197917796_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The Cardboard Cadet film I did with my son was just a fun project.. but it ended up being accepted into around 14 film festivals all over the world and won around 12 awards. I got to go to Germany last year because of it... So crazy that the goofy film with terrible footage shot on a drone did ok haha.",
+        "ts": "1586294516.003600",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1053416285921_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh and here's some of my work in the music industry. <https:\/\/shwca.se\/chrisgcastor-music>\n\nThat's probably WAY more than you wanted. But you have it if you want to see it haha.",
+        "ts": "1586294648.003700",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1055216368708_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no this is great. ill spend some time going over it all if you don't mind.",
+        "ts": "1586296892.003800",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1051607833877_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes that's completely fine. I sincerely appreciate any time you spend  on my behalf.  Thank you!",
+        "ts": "1586297085.003900",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1045692602322_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey, that's what this is all about! don't be shy about reaching out ]at any point",
+        "ts": "1586297137.004000",
+        "username": "stephen beck (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1051613605685_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok I won't. Thanks so much! And don't be afraid of being honest with me. I can take constructive criticism.",
+        "ts": "1586297192.004100",
+        "username": "chrisgcastor (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-07\/1049821839910_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

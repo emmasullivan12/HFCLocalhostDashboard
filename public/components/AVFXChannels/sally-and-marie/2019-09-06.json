@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Sally, thank you so much for offering your help :slightly_smiling_face:Several options came up lately that are making me question my career path. I just woke up and must get ready to go to work but I will get back to you very soon with explanations! Have a lovely day :cherry_blossom:",
+        "ts": "1567763932.000200",
+        "username": "marie-line.despres (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-06\/744719968097_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

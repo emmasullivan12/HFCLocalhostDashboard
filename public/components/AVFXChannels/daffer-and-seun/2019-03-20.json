@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Seun, how are you doing? Good to meet you. Just getting ready to leave for work but I’ll send you a message later to properly introduce myself. How are you doing?",
+        "ts": "1553068988.001800",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/582490603282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello again. So, just to give you a little background: I head the IT department at The Third Floor London, a leading visualisation company. I lead a small team of engineers to implement and support all technical areas of the business including; network, security, cloud services, software, hardware etc. The company is mainly staffed by artists who work on Autodesk Maya and Unreal Engine pipeline. Would you mind telling me a little about yourself?",
+        "ts": "1553089363.001900",
+        "username": "Daffer Al-Faiadh (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-20\/583109554101_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

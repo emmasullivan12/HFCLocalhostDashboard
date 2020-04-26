@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lasma,\n\nLovely to connect on LinkedIn :+1::skin-tone-2:\n\nI have spent the last couple of weeks putting up furniture and fixing up the new house... I feel exhausted :laughing: \n\nI think a lot of film and tv projects have gone on hold but not all. There are definitely studios still working. However, most places have furloughed a bunch of people and then the ones still working will be given a lot of work... makes sense. It’s just a difficult situation for everyone at the moment.",
+        "ts": "1587632311.000300",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1066351621927_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, it was stressful to be going into central London before the lockdown but now it all seems rather weird. It doesn’t even feel like we live in London anymore because everything is so quiet and we can’t travel anywhere!",
+        "ts": "1587632359.000400",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1104928535104_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Bournemouth must be lovely in this weather! Are you able to walk down by the beach? How is the job going?",
+        "ts": "1587632400.000500",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1104930162384_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you managing with the time management?  I think the most important thing is to work out what motivates you best. For me, I like to start one thing and then follow it through to completion before starting the next thing but some people like to have many things on the go at the same time.\n\nPlus, you have to remember that we are all in an incredibly strange situation. It has been proven by studies that everyone’s productivity will be lower in lockdown and therefore in my opinion the most important thing to do is to to take care of yourself. Balance your time between work and self-care :+1::skin-tone-2:",
+        "ts": "1587632882.000600",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1066374265591_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s obviously important to keep yourself busy but I’ve personally experienced quite turbulent feelings where one day I feel really positive and the next quite negative. One day can be productive and the next not at all.",
+        "ts": "1587632990.000700",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1079731388437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How are you finding things?",
+        "ts": "1587633005.000800",
+        "username": "Jonathan Atkins (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081111677858_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Oliver, nice start! I can see a large improvement since your last lipsync piece!  I've put up some notes on syncsketch for you to have a look at :slightly_smiling_face:",
+        "ts": "1578647795.000300",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/901031786213_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks so much for your help, I will definitely get on fixing it :)",
+        "ts": "1578648747.000400",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-10\/901039605232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

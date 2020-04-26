@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Niki,\nI read the feedback yesterday and I cannot thank you enough for all the breakdown and detail. \nIt might be really basic questions but I have some :sweat_smile:. Somehow when I import your file into harmony I can't see the character (I've checked and the drawings are exposed so I don't understand why) \nMaybe it's because I can't see the character that I don't know what O,L and C stands for (I guess it's just where the pivot points are? ) And regarding the cutter, could I ask what is your thought process on decing what needs a cutter? Thank you so much:sunflower: I'm learning so much with this",
+        "ts": "1581602317.002000",
+        "username": "Claudia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-13\/952656870887_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

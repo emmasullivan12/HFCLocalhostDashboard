@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "valentine",
+        "ts": "1581706838.002100",
+        "username": "Claudia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/955528550438_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I am doing as well a project with schools illustrating their stories, which fortunately has received funding as a project for Coventry City of Culture 2021. I was wondering if you were interested in checking out some illustration work apart from animation:)",
+        "ts": "1581707293.002200",
+        "username": "Claudia (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-14\/955542510358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

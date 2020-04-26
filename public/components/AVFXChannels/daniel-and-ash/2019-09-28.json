@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Russel Dodgson, head of Nuke at Framestore advertising once said, \"show me three good  keys in a row and I'll give you a job\"",
+        "ts": "1569671008.000300",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-28\/763957252354_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

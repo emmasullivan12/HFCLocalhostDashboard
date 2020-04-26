@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Adam! Here's my first game that I made with a team for GGJ. <https:\/\/globalgamejam.org\/2020\/games\/derailed-5> I did the level design for it and the painting of some objects.",
+        "ts": "1580769314.002800",
+        "username": "Greg Alderton (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-03\/936797178935_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

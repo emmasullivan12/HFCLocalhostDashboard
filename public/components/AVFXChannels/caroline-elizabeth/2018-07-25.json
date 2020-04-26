@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Elizabeth, how are you doing? Have you had the art convention yet? \nYou may know that at Escape Studios, where I work, we teach Animation, VFX and games. We often get students who enjoy character design on our animation course in particular. Have you had a go at creating art digitally? Did you enjoy it?",
+        "ts": "1532533484.000551",
+        "username": "Caroline (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-25\/404716799827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The convention actually starts Friday and continues till Sunday. I have created a lot of art digitally, if you want to see some examples look here: <https:\/\/drawlii.myportfolio.com> ",
+        "ts": "1532547851.000066",
+        "username": "Elizabeth (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-25\/406071665751_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Drawlii",
+                "title_link": "https:\/\/drawlii.myportfolio.com\/",
+                "text": "Art and Illustration",
+                "fallback": "Drawlii",
+                "image_url": "https:\/\/pro2-bar-s3-cdn-cf6.myportfolio.com\/a9cc746b9b7c7b8023766c898bff604a\/ae6b1c92-97d5-4160-9f38-b13fd1ae7ccd_rwc_0x24x404x316x404.png?h=1017256c7bd89a3b503b2684d80990d3",
+                "from_url": "https:\/\/drawlii.myportfolio.com\/",
+                "image_width": 320,
+                "image_height": 250,
+                "image_bytes": 1707,
+                "service_icon": "https:\/\/drawlii.myportfolio.com\/favicon.ico",
+                "service_name": "drawlii.myportfolio.com",
+                "id": 1,
+                "original_url": "https:\/\/drawlii.myportfolio.com"
+            }
+        ]
+    }
+]

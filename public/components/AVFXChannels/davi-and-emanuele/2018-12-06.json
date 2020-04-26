@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emanuele. Can you meet today at 4:30pm? ",
+        "ts": "1544086446.000500",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-06\/496943697090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

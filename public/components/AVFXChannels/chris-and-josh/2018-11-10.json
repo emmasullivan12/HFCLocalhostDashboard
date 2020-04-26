@@ -1,0 +1,41 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have applied for an internship in Northern Ireland",
+        "ts": "1541853145.006500",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/477974586454_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<http:\/\/www.northernirelandscreen.co.uk\/news\/general\/animation-internship-programme\/>",
+        "ts": "1541853147.006600",
+        "username": "Joshua (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-10\/476574906546_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Northern Ireland Screen",
+                "title": "Animation Internship Programme - Northern Ireland Screen",
+                "title_link": "http:\/\/www.northernirelandscreen.co.uk\/news\/general\/animation-internship-programme\/",
+                "text": "Do you want to work in animation? Are you a good team leader? Are you interested in production co-ordinating\/management? If you can answer yes to these questions then Northern Ireland Screen wants to …",
+                "fallback": "Northern Ireland Screen: Animation Internship Programme - Northern Ireland Screen",
+                "thumb_url": "http:\/\/www.northernirelandscreen.co.uk\/wp-content\/uploads\/2018\/11\/Animation-internship-graphic.jpg",
+                "ts": 1541776201,
+                "from_url": "http:\/\/www.northernirelandscreen.co.uk\/news\/general\/animation-internship-programme\/",
+                "thumb_width": 454,
+                "thumb_height": 400,
+                "service_icon": "http:\/\/www.northernirelandscreen.co.uk\/wp-content\/themes\/NI-Screen\/images\/favicon.ico",
+                "id": 1,
+                "original_url": "http:\/\/www.northernirelandscreen.co.uk\/news\/general\/animation-internship-programme\/"
+            }
+        ]
+    }
+]

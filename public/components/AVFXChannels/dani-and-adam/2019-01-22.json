@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes! This is wonderful! I'm really glad the impact does reach the chest. I do believe we are always constantly rebalancing though and I really notice the hips not swaying even slightly. There would be tiny movements. Please find the confidence to move them. To me it makes it look like the characters are stuck in space with a drawing pin! If you really study the live action footage, even though the figure is clothed and it is only slight, the body still leans back and forth :slightly_smiling_face: You will be able to add another level of believably and accuracy to your motion and learn that most of our motion involves the whole body!",
+        "ts": "1548157700.001800",
+        "username": "Dani Abram (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-22\/531158898550_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much for the feedback! Will be sorted out. :slightly_smiling_face:\nCan I ask you please a bit more about the hips? I've rewatched the video again and again to understand and to see imperfections.\nBecause hips are outside the frame, did you mean that there is no movement in the upper body (swinging), which is naturally transmitted from the hips?",
+        "ts": "1548202745.001900",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-22\/530317625876_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've also tried to understand why I didn't notice the swinging. I thought it was because I was wearing a big shirt. And also used me as a reference. However, with a closer look, I have noticed myself swinging back and forth. It's nothing to do with a shirt. My mistake. Will be fixed.",
+        "ts": "1548202943.002000",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-22\/531540093223_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've just rewatched it again. And I want to ask something important, which I didn't find a solution for (so far and for now) - How to move (add swinging) upper part of the body without moving palms while keeping an existing animation I've done already?\n\nFor example, add it (body swinging) at the very end. Add a layer on top of everything?\n\nHands are FK controlled. So, if I move the body (which is the main controller - parent) it moves hands along.\nI understand, that a way out - change FK to IK. However, when I do that, the hands go back to standard pose (T-pose). I don't know how to fix that. I know hot to do that in 3ds max, but not in Maya.",
+        "ts": "1548204200.002100",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-22\/531552057719_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":thinking_face:",
+        "ts": "1548204228.002200",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-22\/531552335191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Apparently, we use the same rigs (if I get it right).\n\n_* Maybe you know how to reposition hands (when needed) from FK to IK? So hands, for instance,  let's say on frame 47, which were done with FK, could be animated using IK onwards._\n\n_*Is it possible (to add an extra layer of animation with IK) while keeping hands animation what was already made with FK?_\n\nMaybe an answer is to use \"Animation layers\"? I'm not sure. I haven't used them so far.\nAll Maya knowledge for me is a self-education. So far, I didn't come across using animation layers in any tutorials.\n\nSorry, it's too many questions. But I don't know who to ask. Lecturers don't know the answer.",
+        "ts": "1548204352.002300",
+        "username": "Adam (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-22\/530392847331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

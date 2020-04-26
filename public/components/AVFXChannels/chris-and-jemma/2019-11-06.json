@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's things? Uni work treating you well?",
+        "ts": "1573034975.006400",
+        "username": "Chris Fryer (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-06\/823521843301_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

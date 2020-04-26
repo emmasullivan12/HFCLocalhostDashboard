@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Anthony!\n\nNice to mee you, they didn't tell me much about you so thank you for introducing yourself!\nAlso, I don't know how much you know about me, I did the application several months ago so things may have changed since then. So I'll give you an overview as well.\n\nI moved to London 5 years ago to study because where I am from in Italy creative careers aren't seen as something serious or even possible so I wanted to follow my passions and see if there was a different way of thinking.\n\nI graduated in 2018 from the University of Greenwich where I achieved a First Class BSc Degree in Creative Digital Media. I'm attaching my CV for details.\nI enjoyed the course because it gave me an overview of what was available out there. I mostly enjoyed the 3D animation courses that we did and for my dissertation, I decided to investigate more and learn Houdini by myself, it wasn't part of the course and my teachers didn't know what it was, but while I was learning it with online tutorials I realized that it was the only software that allowed my to achieve what I wanted for my final project and it's still is the best for me, so I also didn't look back since then.",
+        "ts": "1586620731.002000",
+        "username": "Isabella Ippolito (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1046630386727_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F011YMWDAAV",
+                "created": 1586620840,
+                "timestamp": 1586620840,
+                "name": "CV (2).pdf",
+                "title": "CV (2)",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 226614,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011YMWDAAV\/cv__2_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F011YMWDAAV\/download\/cv__2_.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F011YMWDAAV-df5874f8ac\/cv__2__thumb_pdf.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F011YMWDAAV\/cv__2_.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F011YMWDAAV-9da6d5a23e",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1586620841.002100"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "alright, nice to meet you :)\nI saw you are working as a render wrangler now. What would be your goals in this industry?\nYou mentioned 3D animation and made your dissertation on fluids simulations. There's a mention of compositing in your CV as well. Are you predominantly interested in FX or are you keen on any other domain?\nFinally, what would be your expectations with this e-mentorship?",
+        "ts": "1586647295.002400",
+        "username": "anthony (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1067066320465_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

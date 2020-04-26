@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Silvija, just wanted to touch base and see if everything is going okay? :) ",
+        "ts": "1568041215.002400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/755889786470_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! \n\nI am a little struggling with edges\/faces and roof. Also I am re-doing the floor. \n\nAt the moment, I am mostly watching environment modeling, since I am a little stuck to how should I approach connecting and modelling the roof. \n\nSorry, that it is taking so long!",
+        "ts": "1568059867.002500",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-09\/747719027521_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

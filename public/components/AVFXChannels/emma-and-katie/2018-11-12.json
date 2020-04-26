@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think if you'd be aiming to work at one of the bigger animation\/VFX studios then it'd be important to really specialise in animation, however a base understanding in other areas (especially rigging) will help you communicate to other artists in different areas of production so I'd be more than happy to help in those areas too :slightly_smiling_face: Haha yeah I'm quite a perfectionist too and know the struggle... even now, I have to stop myself a bit from being too perfectionist about my work because of deadlines and such!",
+        "ts": "1542013899.002300",
+        "username": "Emma Porter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477134336259_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Old traditional disney films are great... I really love the way Disney drew their dogs, so full of character!",
+        "ts": "1542013924.002400",
+        "username": "Emma Porter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/476631748865_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So what software have you started in for 3d animation?",
+        "ts": "1542013943.002500",
+        "username": "Emma Porter (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-12\/477236752130_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

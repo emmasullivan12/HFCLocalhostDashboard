@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Pedram, I hope you had a good Easter?\n\nI've started looking around for jobs as I'm only a month away from finishing uni and I'm going to apply for my first one tomorrow. I've spent the day making a CV and updating the showreel so I'm just wondering if I could get a little bit of feedback before I send it off? I completely understand if a CV isn't really your thing haha :smiley:",
+        "ts": "1586900879.008400",
+        "username": "Matt Hawker (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-14\/1068804953028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

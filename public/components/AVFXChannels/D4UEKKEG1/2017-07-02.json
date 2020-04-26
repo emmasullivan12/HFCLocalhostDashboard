@@ -1,0 +1,168 @@
+[
+    {
+        "type": "message",
+        "text": "We are working on prizes for the best &amp; most engaged mentees :success:. If you have any thoughts on what would make a great prize please comment below!!",
+        "user": "U4VR52RQE",
+        "ts": "1499017640.499948",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "d730c1e93535",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/201542361287_d730c1e93535ae06c852_72.png",
+            "first_name": "Dexter",
+            "real_name": "Dexter",
+            "display_name": "dexter-prospela",
+            "team": "T4UUTPV18",
+            "name": "dexter-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "bot_id": "B5WKMU7UM",
+        "type": "message",
+        "text": "",
+        "user": "U4VR52RQE",
+        "ts": "1499017702.504620",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5WKMU7UM",
+            "deleted": false,
+            "name": "giphy",
+            "updated": 1497968455,
+            "app_id": "A0F827J2C",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/dc483\/img\/plugins\/giphy\/service_72.png",
+                "image_48": "https:\/\/a.slack-edge.com\/dc483\/img\/plugins\/giphy\/service_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/dc483\/img\/plugins\/giphy\/service_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        },
+        "attachments": [
+            {
+                "fallback": "giphy: http:\/\/giphy.com\/gifs\/olympics-shaun-the-sheep-aardman-xT8qBvaQSR3Lk0jLl6",
+                "image_url": "https:\/\/media.giphy.com\/media\/xT8qBvaQSR3Lk0jLl6\/giphy-tumblr.gif",
+                "image_width": 250,
+                "image_height": 140,
+                "image_bytes": 476910,
+                "is_animated": true,
+                "title": "woop",
+                "footer": "Posted using \/giphy | GIF by <https:\/\/giphy.com\/aardman\/|Aardman Animations>",
+                "id": 1,
+                "title_link": "http:\/\/giphy.com\/gifs\/olympics-shaun-the-sheep-aardman-xT8qBvaQSR3Lk0jLl6"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "We're starting to think about awards for the most engaged Mentees. What do you think would be examples of a great prize? COMMENT BELOW:",
+        "user": "U4V22C6A1",
+        "ts": "1499017872.517586",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "bot_id": "B5WKMU7UM",
+        "type": "message",
+        "text": "",
+        "user": "U4VR52RQE",
+        "ts": "1499017993.525937",
+        "team": "T4UUTPV18",
+        "bot_profile": {
+            "id": "B5WKMU7UM",
+            "deleted": false,
+            "name": "giphy",
+            "updated": 1497968455,
+            "app_id": "A0F827J2C",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/dc483\/img\/plugins\/giphy\/service_72.png",
+                "image_48": "https:\/\/a.slack-edge.com\/dc483\/img\/plugins\/giphy\/service_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/dc483\/img\/plugins\/giphy\/service_72.png"
+            },
+            "team_id": "T4UUTPV18"
+        },
+        "attachments": [
+            {
+                "fallback": "giphy: http:\/\/giphy.com\/gifs\/olympics-shaun-the-sheep-aardman-xT8qBvaQSR3Lk0jLl6",
+                "image_url": "https:\/\/media.giphy.com\/media\/xT8qBvaQSR3Lk0jLl6\/giphy-tumblr.gif",
+                "image_width": 250,
+                "image_height": 140,
+                "image_bytes": 476910,
+                "is_animated": true,
+                "title": "woop",
+                "footer": "Posted using \/giphy | GIF by <https:\/\/giphy.com\/aardman\/|Aardman Animations>",
+                "id": 1,
+                "title_link": "http:\/\/giphy.com\/gifs\/olympics-shaun-the-sheep-aardman-xT8qBvaQSR3Lk0jLl6"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F62SMMH26",
+                "created": 1499033497,
+                "timestamp": 1499033497,
+                "name": "Engagement Stats.xlsx",
+                "title": "Engagement Stats.xlsx",
+                "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "filetype": "xlsx",
+                "pretty_type": "Excel Spreadsheet",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 2795135,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62SMMH26\/engagement_stats.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F62SMMH26\/download\/engagement_stats.xlsx?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F62SMMH26\/engagement_stats.xlsx",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F62SMMH26-05009c7871",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1499033498.706513"
+    },
+    {
+        "type": "message",
+        "text": "Sending EXCEL MODEL TO YOU in case i lose it lol",
+        "user": "U4V22C6A1",
+        "ts": "1499033501.706774",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

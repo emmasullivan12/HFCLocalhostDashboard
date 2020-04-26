@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll talk a little bit about myself. I studied Cinema and Media Engineering at the Polytechinic of Turin and now I've just finished my MA in VFX Production at Escape Studios in London. My goal is to become an FX TD, I've both computer engineering and artistic skills. I've also did an interniship as android developer back in Turin. Now I'm using this lockdown to work on my showreel, but I always feel scared about the future since at the moment studios are not hiring junior positions. I also am always worried that they might not like my showreel and choose someone else for the job. Can you tell me more about your experience in the industry?",
+        "ts": "1587642899.000400",
+        "username": "Stefano Costa (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-23\/1081425350770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019
+// Dex last merged this code on 26th Aprili 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";

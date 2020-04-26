@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Steve! Thanks for your feedback. Everything was simulated, even ball movement. Camera movement was there just to show that I understand what is camera. I agree that it's not a good camera movement. :grin: I don't know how fix animation in simulation. But I'll fix camera for sure. Thank you again!",
+        "ts": "1577093292.000500",
+        "username": "Marina Moraru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-23\/886229690054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

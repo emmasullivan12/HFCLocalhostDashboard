@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Emma, do you know any junior positions happening where you work?",
+        "ts": "1572113570.001800",
+        "username": "Jorden Hector-Anderson (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-26\/799053548179_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sarah. I’m currently studying for my GCSE’s. I study English, science and maths, and my options were business studies, computer science and history. ",
+        "ts": "1510262273.000270",
+        "username": "zuzannag22 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-09\/270089028389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

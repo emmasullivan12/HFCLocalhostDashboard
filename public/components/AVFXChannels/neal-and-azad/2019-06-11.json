@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Azad, sorry it's been a while. Any updates on the internships?",
+        "ts": "1560263291.000100",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-11\/663512220743_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I checked out the reel and it's a good first reel. There are a few technical things which would need to be addressed to send some of the shots to final, but in general it's def a good start.",
+        "ts": "1560263399.000200",
+        "username": "Neal Patel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-11\/650251877218_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

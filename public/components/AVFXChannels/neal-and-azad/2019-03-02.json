@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Btw I have a line up of questions ready and I apologize if there's too many, it's also part of one of my assignments to ask someone from the industry questions so it would help out a lot ",
+        "ts": "1551550367.000600",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-02\/564783054928_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How is your daily day to day life in your company and your role? Like your typical day? \n\nOriginally, what were you interested in the most and why? Could you explain your main motivation? \n\nWhat is your job role? What do you need to do for the client? \n\nWhat skills and requirements are needed from you for your work? Such as your qualifications or experience\n\nBeing in the position I am in, I don't exactly know what I would want to do or what field of work I would like to go into, can you relate or were you able to just decide into a specific field of interest? \n\nIf you were a runner at your first company, how was it? \n\nWhat was your greatest moment and your worst moment in the first company that you worked in? \n\nBeing in the role that you are in, what do you think are the key components to making a good portfolio\/showreel? Can I see your portfolio\/showreel?",
+        "ts": "1551550413.000700",
+        "username": "Azad Sachedina Mohammed (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-02\/566601123463_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

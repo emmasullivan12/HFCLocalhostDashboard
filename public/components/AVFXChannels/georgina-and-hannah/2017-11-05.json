@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Hannah! I have been on holiday with v limited access to internet but back and ready to chat music again! ",
+        "ts": "1509933740.000140",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266690347536_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Such a busy time of year for everyone from those at school to work! It seems like it never ends although by the sounds of it, I gather you are a hard worker who enjoys what they are passionate about. ",
+        "ts": "1509933815.000093",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/266690622544_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I did Trinity music too! Mainly because you didn’t need to do theory :p although I ended up doing it anyway as I needed it for the course I wanted to do at university. ",
+        "ts": "1509933871.000087",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/268226194838_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’ve been doing some thinking on my time off about your pathway and the one thing I really want to stress is that there really no one way into becoming  a concert pianist\/performer like you want to do. That sounds SO vague but I’ve been thinking about people I know that now are musicians and the one thing they have in common is not qualifications but a really really strong practice ethic. They get up in the morning and practice and start the day that way. You are doing exactly the right thing by doing the BTEC because it’s practical and is leading you in the right direction for your aim. ",
+        "ts": "1509934145.000051",
+        "username": "georginamfeary (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-05\/268227184182_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

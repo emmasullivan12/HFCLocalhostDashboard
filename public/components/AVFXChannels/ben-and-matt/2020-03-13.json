@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You could maybe try and project the plate you’ve got on cards and maybe add a small camera move? Otherwise it wouldn’t be the end of the world if you kept with the plate you’ve got! \n\nI know what you mean about showreels! I’m waiting for some shots from my latest show to come out then I’m gonna update it again! ",
+        "ts": "1584114908.001900",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-13\/998550961044_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

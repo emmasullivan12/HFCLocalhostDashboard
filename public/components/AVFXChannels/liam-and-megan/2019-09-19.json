@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I haven’t gotten back.! That is so cool, thank you for sharing! ILM is such a revered company in the VFX industry, it must be awesome to work there!!! What’s one of your favorite films you worked on? Is there a film that I might recognize your work on?",
+        "ts": "1568943783.000100",
+        "username": "Megan Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-19\/768843253383_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think one of my biggest concerns in my career right now is that I don’t know if I will be prepared for the VFX industry in 2 years. DePaul’s VFX program is still growing, so there are not many VFX-specific classes that are currently offered. I am concerned I will have to continue on at another school which I am not excited about. I would much rather get into the industry and start working and learning there. However I do realize it will be hard to get in with a company without an impressive reel. If you have any thoughts on this let me know but I guess my biggest question might be, how do I know I am qualified enough to start my career in VFX?",
+        "ts": "1568943991.000200",
+        "username": "Megan Evans (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-19\/766523797428_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

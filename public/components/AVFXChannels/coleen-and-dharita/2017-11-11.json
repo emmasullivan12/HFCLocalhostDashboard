@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Dharita, thanks for sending through your CV and massive apologies for the delay! This has been an incredibly busy week with two big presentations next week to prepare for so I’ll send back my comments and tweaks on your CV over the weekend and we’ll go from there. When were you thinking ideally you’d like to come in for work experience? It’s usually for one week ",
+        "ts": "1510398379.000039",
+        "username": "coboyle (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-11\/270792415988_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

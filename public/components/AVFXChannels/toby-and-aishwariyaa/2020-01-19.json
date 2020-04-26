@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry to hear that :disappointed: I think its often like this though! Are they worried its not a viable career ?",
+        "ts": "1579466646.000100",
+        "username": "Toby Winder (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/901449018499_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I suppose, sometimes they seem prpud with what I do and create but often they really want to steer me away from my passion to something they believe is more secure. I have had a couple heated chats and at the moment seemed to have their support so thats a nice change. I think I'm quite lucky actually they aren't as strict as some asian parents can be.",
+        "ts": "1579468246.000200",
+        "username": "Aishwariyaa Thevananath (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-19\/915134682694_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

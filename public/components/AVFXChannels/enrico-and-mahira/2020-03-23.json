@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Mahira!! Yes why not! If you have a character we could work to make a turn around in 2D and then develop it and model it in a 3D software!! It’s actually something that is very requested from the industry!:) ",
+        "ts": "1584993770.003500",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020058356900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m doing another test at the moment and I got few positive replies from studios so fingers crossed! It always takes a bit of time to go from a project to another one but hopefully with more experience will be easier ",
+        "ts": "1584993826.003600",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1022281016903_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I’m doing a test for background art! I would be glad to go back to painting a bit ahah",
+        "ts": "1584993852.003700",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1010459161953_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "After one year of pure environment design:)",
+        "ts": "1584993869.003800",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020516838576_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "By the way me and my family are good thanks! How about you? I’m self isolating and is not a big deal for our industry ",
+        "ts": "1584993900.003900",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1007734288690_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is a good read also <https:\/\/www.accessvfx.org\/blog\/starting-out-in-animation-vfx-wellbeing-mental-health|https:\/\/www.accessvfx.org\/blog\/starting-out-in-animation-vfx-wellbeing-mental-health>",
+        "ts": "1584993919.004000",
+        "username": "Enrico Buffa (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-23\/1020066268964_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

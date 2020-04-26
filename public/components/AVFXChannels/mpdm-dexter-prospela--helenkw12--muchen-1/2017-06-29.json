@@ -1,0 +1,142 @@
+[
+    {
+        "type": "message",
+        "text": "Hello Helen!",
+        "user": "U5YF3N0QH",
+        "ts": "1498729386.595367",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g13115cfbdb3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/913115cfbdb31de8ad2ceb1b7fc76646.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Muchen",
+            "real_name": "Muchen Jiang",
+            "display_name": "muchen",
+            "team": "T4UUTPV18",
+            "name": "muchen",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "How are you?",
+        "user": "U5YF3N0QH",
+        "ts": "1498729421.603178",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g13115cfbdb3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/913115cfbdb31de8ad2ceb1b7fc76646.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Muchen",
+            "real_name": "Muchen Jiang",
+            "display_name": "muchen",
+            "team": "T4UUTPV18",
+            "name": "muchen",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Hi Muchen! Really pleased you've joined the programme!",
+        "user": "U5WR9CJTC",
+        "ts": "1498755319.819918",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I'm very well thanks, just finished a long day but heading home now. How are you?",
+        "user": "U5WR9CJTC",
+        "ts": "1498755378.841954",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "I am fairly well too, just enjoying my summer break from university!",
+        "user": "U5YF3N0QH",
+        "ts": "1498761761.253140",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "g13115cfbdb3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/913115cfbdb31de8ad2ceb1b7fc76646.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Muchen",
+            "real_name": "Muchen Jiang",
+            "display_name": "muchen",
+            "team": "T4UUTPV18",
+            "name": "muchen",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "So you're at university at the moment? Are you in your first year?",
+        "user": "U5WR9CJTC",
+        "ts": "1498804891.204868",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Where do you go and what do you study? I studied Psychology at Bath but I'm now an operational manager in the NHS ",
+        "user": "U5WR9CJTC",
+        "ts": "1498804927.210021",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "12cc30392690",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-22\/202605972151_12cc30392690c7b6febc_72.png",
+            "first_name": "Helen",
+            "real_name": "Helen",
+            "display_name": "helenkw12",
+            "team": "T4UUTPV18",
+            "name": "helenkw12",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

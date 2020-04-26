@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey that's a good start! The track looks pretty solid to me and the alphas on you greenscreen elements look accurate  (I don't have the plates).\n\n\nThe perspective on the main shop sign seems off, I fact the screen right hand corner doesn't lineup with the corner of the frame.\n\nThe black points seem wrong, nothing should be quite that perfect black - refer to the plate to find the black points, it will vary in different areas.\n\nI am not sure where the lighting is meant to be coming from, it seems to be different for each element. Again you should refer to the plate and match it as closely as possible, even in 2d where you might be using some masked color corrects or grade nodes.\n\nIs your St Paul's background cutting into the FG wall on screen right?\n\nThere's a building on screen left which is cut off oddly at the top - maybe you are intending to letterbox the final image? Otherwise worth addressing.\n\nYou've got a glass lamp in the foreground, the reflections are locked to the glass whereas they should move separately. The glass doesn't appear to be refracting the window behind It.\n\nLastly have a think about the focal point, where does it need to be for this shot? Is it matching the plate? Have you replaced so much you can decide, of so where is going to tell the story best?\n\nAnyway those are a lot of notes but that's pretty much the sort of thing you will encounter in dailies, especially on a bigger shot like that!\n\nKeep it up!",
+        "ts": "1586114105.000400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-05\/1044578034001_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

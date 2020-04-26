@@ -1,0 +1,122 @@
+[
+    {
+        "type": "message",
+        "text": "<@U5WVD9VEX> Hey Duffman!",
+        "user": "U4V22C6A1",
+        "ts": "1498904954.169899",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U4V22C6A1",
+            "ts": "1498904959.000000"
+        }
+    },
+    {
+        "type": "message",
+        "text": "It's unlucky that we haven't heard much from your mentee (we went into his school last week and he wasn't even there - they struggle with attendance this time of year i.e. post exams and with Eid and summer coming) ... so anyway we were going to introduce you to another student who has been active and looking for another E-Mentor! Here is a profile on them (she's called Ivanna) and we'll be introducing you shortly!",
+        "user": "U4V22C6A1",
+        "ts": "1498905015.173994",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F63E78UDC",
+                "created": 1498905038,
+                "timestamp": 1498905038,
+                "name": "Prospela - Your Mentee Profile - Ivanna.pdf",
+                "title": "Prospela - Your Mentee Profile - Ivanna.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U4V22C6A1",
+                "editable": false,
+                "size": 239054,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": false,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F63E78UDC\/prospela_-_your_mentee_profile_-_ivanna.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F63E78UDC\/download\/prospela_-_your_mentee_profile_-_ivanna.pdf?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U4V22C6A1\/F63E78UDC\/prospela_-_your_mentee_profile_-_ivanna.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F63E78UDC-7065705269",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U4V22C6A1",
+        "display_as_bot": false,
+        "ts": "1498905039.175507"
+    },
+    {
+        "type": "message",
+        "text": "She doesn't know what she wants to do, but knows she enjoys music and performing \/ entertaining others. I wonder if your experience running Brick &amp; Liquor can be useful to show her?",
+        "user": "U4V22C6A1",
+        "ts": "1498905089.178677",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Anyway - will be introducing you shortly!",
+        "user": "U4V22C6A1",
+        "ts": "1498905097.179161",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "52b8fca5eefd",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_72.jpg",
+            "first_name": "Emma",
+            "real_name": "Emma",
+            "display_name": "emma-prospela",
+            "team": "T4UUTPV18",
+            "name": "emma-prospela",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah it just feels weird using something like megascans and compiling different layers together to make a new material, normally I do things from scratch but the results with this method are so much better. Maybe it's because I'm taught to always do things from scratch \n\nYeah I'm thinking if I find some really good concept art I should use that and then in my prepro I can show the different types of materials I'll see, unique objects, modular assets ect and itll help me plan my time better",
+        "ts": "1586942718.002700",
+        "username": "michael w 94 (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-15\/1048804034119_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

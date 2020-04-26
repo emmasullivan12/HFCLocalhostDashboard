@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hiya, so I'm a beginner. I'm learning After Effects and Cinema 4d at Escape Studios. I'm looking to change my career from retail to a motion graphics designer. I'm putting together a showreel but it won't be ready until the end of August. I would happy to do some interning or shadow other designers. I am leaving my current job next week so that I can focus my energy into improving my skills.\n\n I'm speaking to lots of people for advice on how to get started and what it is like to freelance.\n\n:)",
+        "ts": "1562936841.002200",
+        "username": "Lucy Davis (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-12\/686514272913_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

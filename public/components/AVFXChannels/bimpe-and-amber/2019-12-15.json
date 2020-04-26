@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Amber, hope youre well!! There might be some roles coming up at ILM! Will try and find out and let you know!",
+        "ts": "1576428329.000100",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-15\/876181330551_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

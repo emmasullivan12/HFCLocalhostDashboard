@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alev, I was thinking about you so I thought I'd check in and see if you're keeping well ^^, Niki",
+        "ts": "1587474321.000400",
+        "username": "Niki Kehoe (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-21\/1099903640416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

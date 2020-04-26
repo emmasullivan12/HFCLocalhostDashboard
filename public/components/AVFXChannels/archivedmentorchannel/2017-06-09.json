@@ -1,0 +1,56 @@
+[
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1497040217.702415",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the group",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1497040301.726811",
+        "user": "U5JN4HP1S",
+        "text": "<@U5JN4HP1S> has joined the group",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "group_join",
+        "ts": "1497040318.731546",
+        "user": "U5QUP4PT2",
+        "text": "<@U5QUP4PT2> has joined the group",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "group_archive",
+        "ts": "1497045503.962646",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> archived the private channel"
+    },
+    {
+        "type": "message",
+        "subtype": "group_unarchive",
+        "ts": "1497045587.978622",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> un-archived the private channel"
+    },
+    {
+        "type": "message",
+        "subtype": "group_name",
+        "ts": "1497045678.997579",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has renamed the channel from \"mentors\" to \"archivedmentorchannel\"",
+        "old_name": "mentors",
+        "name": "archivedmentorchannel"
+    },
+    {
+        "type": "message",
+        "subtype": "group_archive",
+        "ts": "1497045688.999612",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> archived the private channel"
+    }
+]

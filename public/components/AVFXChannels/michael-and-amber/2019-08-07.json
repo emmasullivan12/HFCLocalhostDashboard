@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Amber! Soo I can do a call tomorrow at 1:15? That sound okay with you? If not then Friday evening or Saturday is fine!",
+        "ts": "1565203445.001400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-07\/719473349728_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

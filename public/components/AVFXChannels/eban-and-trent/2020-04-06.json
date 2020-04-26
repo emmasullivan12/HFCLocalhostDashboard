@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Trent. Crazy times. So I have been working in the realms of computer graphics and fx for about 20 years now. My longest stints where 7 years at mtv in NY doing on air graphics, some fx work, and some live events. After that I did 7 and a half years at Psyop in NY, starting as  a generalist and ending up focusing on FX. I left Psyop almost 4 years ago doing Freelance Houdini FX work. You can check out my reel here...",
+        "ts": "1586220766.002200",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1052724449348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/vimeo.com\/182332782>",
+        "ts": "1586220766.002300",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1045502647191_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "password: tempreel",
+        "ts": "1586220784.002400",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1049760535125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Since I've been freelancing I have been mostly splitting my time between commercial projects and film and tv jobs. I like being able to get the chance to work on both. But with the times the way they are we will see.",
+        "ts": "1586220867.002500",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1049761670389_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The last month has been rather trying but not too bad. A week ago my family and I left our apartment in Brooklyn temporarily to live in a family house in the NJ shore.  I have spent just a little over three weeks working remotely on two different jobs and looks like I'll be working consistently through the month. Places are still reaching out and are having people work remotely. If they want to keep the lights on they need to be working. Film and tv work could start to see a downturn as a lot of shoots have shut down filming. But I do have friends who exclusively work in film and tv in NY and they see work continuing as of now.",
+        "ts": "1586221121.002600",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1042541847762_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So you want to focus on animation yes? Are you particularly interested in previz work or did you just go to Atlanta because the job was available? What would be your dream job to work on? Also what kind of realtime stuff are you doing? Is that also mainly animation?",
+        "ts": "1586221341.002700",
+        "username": "Eban Byrne (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1049768991989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Super cool reel! Seeing what people can do with Houdini always amazing me, honesty I kinda wish I learned more of it. \n\nI’m glad to hear you’re able to work through all of this! This is a strange time indeed. It sure does seem like some studios are staying afloat just fine and other are a suffering a little more. \n\nI do want to focus on animation, ya. When I first started working in Montreal I realized after a few months how much i missed working in Georgia and when the guy who I previously worked with whos now a supervisor at a previz studio here started telling me about it, I thought previz sounded like the coolest thing and since that door was open I figured I might as well come down and chase it. I love the idea of having a little more say of what goes on in a shot because working at Mill Film, we were super restricted to the plates, obviously. And i did quite a bit of lighting\/texturing\/modeling\/etc at my internship and i kind of like adding that stuff to a shot if i can to sell it. But The Third Floor, Proof Inc, Halon, Method, FuseFX, and a few other studios are down here, as well as the place I interned (Millions of Tiny Robots). So it seemed like if the first place didn’t workout I wouldn’t be totally out of options. And when the first place had their project pushed back and everything got put on hold, i had to pivot, so I interviewed at third floor and got on their “approved artists list” or whatever that was and talked about joining Millions of Tiny Robots again, but then the state got put on shelter in place and it put everything on pause :sweat_smile::man-shrugging::skin-tone-5: but my dream job currently is to work in previs. I know i haven’t done it yet but when I look back at everything I’ve done, and what previs could be, I think I’d really enjoy it. Especially if I could do it in Atlanta. \n\nI’ve done quite a bit of work in unreal. But mostly just throwing elements in there and lighting\/texturing them and rendering them in unreal. So now if I can get a rig that I animated or it’s animated geometry cached in there to render it, i totally will because it looks so much nicer.",
+        "ts": "1586224140.002800",
+        "username": "Alvin Trent Fortume Jr. (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-06\/1052787298676_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

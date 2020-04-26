@@ -1,0 +1,103 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "of course, send it over when you finish it :slightly_smiling_face:",
+        "ts": "1579173638.000600",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/897589575219_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will warn you I had to finish it for one of my deadlines today but I want to fix it for when I start applying for internships, I'm not extremely happy with the animations in it but I've been awake for 30 hours finishing my work and putting it all together so it will have to do haha",
+        "ts": "1579174156.000700",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/898863212961_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "yeah, unfortunately uni deadlines don't allow for perfection XD I'm looking forward to seeing it though :slightly_smiling_face:",
+        "ts": "1579183630.000800",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909270293333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Just exporting it now and I will send it over through syncsketch",
+        "ts": "1579184326.000900",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/911485795782_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The animations still need a lot of work and its nowhere where I want it to be but this is what I have so far <https:\/\/syncsketch.com\/sketch\/21ed9165724b\/|https:\/\/syncsketch.com\/sketch\/21ed9165724b\/>",
+        "ts": "1579186092.001000",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909330624064_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: demo reel",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/21ed9165724b\/",
+                "text": "Collaborative Media Review with 1 items",
+                "fallback": "SyncSketch: demo reel",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/21ed9165724b\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/21ed9165724b\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice! A couple of things I noticed right of the bat, is that your music is very loud in comparison to the rest of the audio on your reel so you might wanna turn that down, especially since recruiters mute showreels. Also its reccommended not to put your phone number on a reel if you are going to put it online.",
+        "ts": "1579187771.001200",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/897917719331_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "You had a nice variety in there though, body mechanics, lipsync and some creature cycles which is always good! One important thing  is that you should always put your best pieces first, and if there is something that is lesser quality don't put it in at all as its always quality over quantity- but I understand that for Uni you need quantity so don't worry about it for now :slightly_smiling_face: However, when you are submitting for internships, pick 3 pieces you want to perfect and focus on those.  If you want me to give some concise anim feedback let me know :slightly_smiling_face:",
+        "ts": "1579188057.001300",
+        "username": "Mai Atzmon (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909395285136_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Okay thanks so much for your advice, which pieces would you pick for me to keep and refine more?",
+        "ts": "1579193296.001400",
+        "username": "Oliver Hughes (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-16\/909584512709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

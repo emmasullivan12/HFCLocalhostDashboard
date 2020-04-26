@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "text": "Hi mate, how are you? \n\nWondering if I can find some more out about you, and how I can help you in trying to maybe move into investment banking or a similar role in the industry. \n\n\n",
+        "user": "U5WAJ7VTJ",
+        "ts": "1498481719.574091",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gabf5a03665f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4abf5a03665f50cf155c4552ec0d1a50.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Jason",
+            "real_name": "Jason A",
+            "display_name": "aytson02",
+            "team": "T4UUTPV18",
+            "name": "aytson02",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "You're in year 12 right? Have you just had your exams? How did they go? ",
+        "user": "U5WAJ7VTJ",
+        "ts": "1498481753.582658",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gabf5a03665f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4abf5a03665f50cf155c4552ec0d1a50.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Jason",
+            "real_name": "Jason A",
+            "display_name": "aytson02",
+            "team": "T4UUTPV18",
+            "name": "aytson02",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    },
+    {
+        "type": "message",
+        "text": "Have you been thinking about what you might want to do after sixth form \/ college? Or have you just been concentrating on your exams?",
+        "user": "U5WAJ7VTJ",
+        "ts": "1498481778.589454",
+        "team": "T4UUTPV18",
+        "user_team": "T4UUTPV18",
+        "source_team": "T4UUTPV18",
+        "user_profile": {
+            "avatar_hash": "gabf5a03665f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4abf5a03665f50cf155c4552ec0d1a50.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0015-72.png",
+            "first_name": "Jason",
+            "real_name": "Jason A",
+            "display_name": "aytson02",
+            "team": "T4UUTPV18",
+            "name": "aytson02",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        }
+    }
+]

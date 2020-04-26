@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It is a brief description of yourself which is give to the chosen universities",
+        "ts": "1543775584.000200",
+        "username": "Brinoy Fernandes (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-02\/492644580176_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

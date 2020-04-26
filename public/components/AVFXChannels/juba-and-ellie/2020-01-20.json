@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Eleanor, its nice to meet you too!\nFor a quick intro, my name is Juba, been working as an animator at Framestore for 2 years now, and in the industry for about 4 years. I studied 3D animation at Vancouver Film School in Canada, where I made my first short.\nAnd although I have some experience I still have a lot to learn too! I think it's important you know that I can only share my perspective on things, and I might not know all the answers, but I'll definitely try the best I can!\nSo please feel free to ask me about anything you have doubts on, or want answers to\nIf you'd like, tell me a about yourself too, it would be great to see any work\/ projects you've done, I read on the thing that you draw?",
+        "ts": "1579516679.001700",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-20\/900688647698_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

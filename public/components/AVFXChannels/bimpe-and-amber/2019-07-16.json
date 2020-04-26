@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank again for sending my reel. I really appreciate it Bimpe. It’s a great to here about the your experience and your background as well. It’s really inspiring. Yeah, I totally understand about the ‘hobby’ into the career situation. I have lots of friends who didn’t pursue theirs because of family pressure. \n\nHehe, it’s great to here your from Manchester as well. London is such a big cities and so many opportunities as well! \n\nBtw, I have just gotten an email from Amy Backwell asking if I could have a quick chat with her tomorrow morning. I’m hoping it’s about the apprenticeship I’d applied for. I’ve already had my interview with her. So, fingers cross it’s good news :sparkles::sweat_smile:",
+        "ts": "1563280944.003300",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-16\/695937502437_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "no worries! Yeh its a shame, but there is always time to if they ever change their minds :smiley:\n\nAhh thats amazing!! Yeh shes a friend of mine, shes absolutely amazing! whats it for? Is it the grad scheme or something else? And good luck!!!",
+        "ts": "1563307403.003400",
+        "username": "Bimpe Alliu (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-16\/696058340580_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yeah, that’s what’s amazing about the VFX industry. There’s many ways to get into the industry :blush:\n\nThank you!:grin: She’s a really awesome. I saw her stop motion projects. They were all amazing! Amy was interviewing me for the assistant technical director role. I’d applied for an apprenticeship scheme using AccessVFX. There was about 30 applicants apply for 2D artist\/ ATD apprenticeships with DNEG, Molinare and ILM. ",
+        "ts": "1563312461.003500",
+        "username": "Amber Chevelleau (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-16\/685225625731_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

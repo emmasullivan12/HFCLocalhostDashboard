@@ -1,0 +1,88 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Junaid, I did get your messages, I thought i'd sent a response but must've missed the send button! Thanks a lot for that advice, it's very useful in terms of helping me decide what I want to do in the future and how to get there!\n\nI'm currently in the process of putting a showreel together, do you have any advice on structure and what sort of shots I should include?",
+        "ts": "1587041714.004800",
+        "username": "Ryan Clark (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1066921100339_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Ryan, my advice for showreel would be to keep it crisp and only put your best work in it. You can always show off all the work you want as separate uploads in you channel.",
+        "ts": "1587055972.004900",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1067430681602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "At the same time, make sure that presentation of the content is really polished and clear. If you're presenting a model and don't have great textures then you might as well apply a simple shader with glossy and rough reflections and light reflections to show off your modeling skills and don't let \"bad\" texture get in the way of experience.",
+        "ts": "1587056149.005000",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1052705835255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you have some content uploaded somewhere?",
+        "ts": "1587056239.005100",
+        "username": "Junaid (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1073611433316_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've got a lot of stuff on my Instagram (<https:\/\/www.instagram.com\/rclark_3d\/>), a little bit on artstation (<https:\/\/www.artstation.com\/cpt_kek>) and all of my uni work is up on this site ( <https:\/\/ryan02764.wixsite.com\/portfolio>)",
+        "ts": "1587066529.005200",
+        "username": "Ryan Clark (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-16\/1091736440720_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": " Login • Instagram ",
+                "title_link": "https:\/\/www.instagram.com\/rclark_3d\/",
+                "text": "Welcome back to Instagram. Sign in to check out what your friends, family &amp; interests have been capturing &amp; sharing around the world.",
+                "fallback": " Login • Instagram ",
+                "from_url": "https:\/\/www.instagram.com\/rclark_3d\/",
+                "service_icon": "https:\/\/www.instagram.com\/static\/images\/ico\/apple-touch-icon-76x76-precomposed.png\/666282be8229.png",
+                "service_name": "instagram.com",
+                "id": 1,
+                "original_url": "https:\/\/www.instagram.com\/rclark_3d\/"
+            },
+            {
+                "service_name": "ArtStation",
+                "title": "Ryan Clark",
+                "title_link": "https:\/\/www.artstation.com\/cpt_kek",
+                "text": "Student - VFX Artist",
+                "fallback": "ArtStation: Ryan Clark",
+                "thumb_url": "https:\/\/cdnb.artstation.com\/p\/users\/covers\/000\/516\/219\/default\/0354a1982f630a316bd9b9457329b658.jpg?1565280743",
+                "from_url": "https:\/\/www.artstation.com\/cpt_kek",
+                "thumb_width": 1920,
+                "thumb_height": 640,
+                "service_icon": "https:\/\/www.artstation.com\/assets\/apple-touch-icon-72x72-precomposed-d7f2a9807ded9eefc7a91a318b7e3ce1.png",
+                "id": 2,
+                "original_url": "https:\/\/www.artstation.com\/cpt_kek"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1587066538.000000"
+        }
+    }
+]

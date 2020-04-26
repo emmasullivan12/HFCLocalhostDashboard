@@ -1,0 +1,104 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have emailed you my showreel through wetransfer as this worked quite quickly :blush: ",
+        "ts": "1582840680.000500",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/975205349382_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also this is the first draft\/edit I have made so I know it is not quite perfect :sweat_smile: ",
+        "ts": "1582840706.000600",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/972542864804_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also wanted to ask you if you have LinkedIn so I can add you as a connection  ",
+        "ts": "1582840796.000700",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/975208946758_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! I'll have more time to watch it after work tonight and get back to you. \n\nAnd yeah! I'm Katie Chapman on LinkedIn. Currently working at Refuge vfx",
+        "ts": "1582842381.000800",
+        "username": "Katie Rosso (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/961575718739_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUM346GQ4",
+                "created": 1582873526,
+                "timestamp": 1582873526,
+                "name": "escape-studios-23.jpg",
+                "title": "escape-studios-23",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 27606,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUM346GQ4\/escape-studios-23.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUM346GQ4\/download\/escape-studios-23.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 180,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 240,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 360,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 400,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUM346GQ4-ebaa6b9842\/escape-studios-23_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 480,
+                "image_exif_rotation": 1,
+                "original_w": 1012,
+                "original_h": 506,
+                "thumb_tiny": "AwAYADDPUgHlQaQ9aAp9KcUZgMIc9\/egBo61JwQcDBHvTfLcclSB604HacsvHoaBCY4zTakZmPCgH\/dpvlyE8o3\/AHzQBsC1UdD+lKLbB++T+FT0UBYrPabwB5hGDnpUT6aHx+9Ix\/s1eooGU4LLyGJDseMfdqfys8bj+VTUGgD\/2Q==",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUM346GQ4\/escape-studios-23.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUM346GQ4-3204102e88",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1582873529.000900"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "haha 26 messages, I guess there was some glitch because they are kinda all the same))",
+        "ts": "1579688475.007700",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/916774036256_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "cool man, so what's the plan here? is it going to be a short? Or just few stills?",
+        "ts": "1579688524.007800",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/905306252259_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For desert for sure try using mega scans, they are kinda go to nowadays for such things",
+        "ts": "1579688563.007900",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/916775911040_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh oops haha that's weird :joy: I'd really like to make a few moving shots as they will be more interesting for my showreel, but I also want to photograph some stills from interesting angles. I've been playing around with desert and road scans and getting great results, I'll send them over when I get a chance :+1:",
+        "ts": "1579690189.008000",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-22\/918669991735_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

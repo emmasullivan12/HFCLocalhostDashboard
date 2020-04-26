@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok would you say that represents like a typical day or is it just a once in a while thing?",
+        "ts": "1511896470.000619",
+        "username": "asarwa-2012 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-28\/278705463058_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

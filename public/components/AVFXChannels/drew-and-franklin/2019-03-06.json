@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Drew \nHope you good, and you been probably very busy. I just want to ask you few question as well for my assignment. We have to ask\nTo our mentor 8 questions and do a presentation about him\/her , i hope you would find the time to answer at some one them :)",
+        "ts": "1551871739.000100",
+        "username": "Franklin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/567824980592_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "1- What was your aspiration before get to the industry? \n2 - what was your plan to get into the industry, if you didn’t have it, where did you study and get knowledges about lighting and compositing before get into the industry ? \n3 - what is your most satisfied work in your career? \n4 - how balanced is an VFX artist lifestyle? \n5 - Do you think that VFX gonna be better or worst in like 5 years From today ? \n6 - what’s your favourite film? Why? \n7 - Do you had a mentor or someone that inspired you particularly?\n8 - one thing that is essential for be a compositor ? \n\nThanks a lot for the time \n\nHope you the best \n\nSee you soon \n",
+        "ts": "1551872283.000200",
+        "username": "Franklin (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-06\/568457110611_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Interested to know how you learned Python &amp; Visual Basic? Was this at school or online somehwere?",
+        "ts": "1511862636.000276",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-28\/278320752051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also did you see the Hackathon I mentioned in the \"Hello-students\" channel? If you use the code \"Prospela50\" you can get a free ticket! But you'll have to be quick as it's this weekend :alarm_clock:",
+        "ts": "1511862695.000402",
+        "username": "emma (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-28\/279470685863_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "'Thenewboston' is the youtuber i watched regularly during the last summer holidays to learn visual basic + python",
+        "ts": "1511866649.000399",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-28\/278465930164_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

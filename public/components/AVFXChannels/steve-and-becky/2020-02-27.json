@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah thats quite cool! We used after effects in our first year of uni but now we’re basically just using nuke! (Well I’m obviously just talking about the compositors) What kind of 3d do you do in Nuke? Is it like projection?",
+        "ts": "1582812897.000100",
+        "username": "Becky Shaw (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/960591320883_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes, mostly projections for cleanup but useful for other stuff. I've used the particle system to make snow which was fun. The camera tracker and model builder is very handy.",
+        "ts": "1582813082.000200",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/960596853379_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What kind of shows would you like to work on? Features, commercials, TV etc",
+        "ts": "1582813147.000300",
+        "username": "Steve Hawken (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/971612840900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah that’s cool! That’s the kind of thing we’re learning too! :relaxed: \n\nI’m not 100% sure, I think that I want to work on all of them! Commercials appeal to me - my projects at uni tend to be adverts as I enjoy their concepts !\n\nWhat kind of stuff does your company work on mainly? If I remember right it seems more features right? ",
+        "ts": "1582822624.000400",
+        "username": "Becky Shaw (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-27\/974616676358_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

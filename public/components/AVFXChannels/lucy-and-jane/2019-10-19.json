@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Lucy, I am interested in volunteering so please give me more details on the event :blush:",
+        "ts": "1571491598.003900",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-19\/788851185602_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for not contacting you sooner in relation to LIAF, I was trying to make progress on my portfolio construction",
+        "ts": "1571491919.004000",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-19\/801171259028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

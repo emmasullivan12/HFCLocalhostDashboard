@@ -1,0 +1,96 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "My art account is art_draw29 by the way",
+        "ts": "1532941504.000359",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-30\/407041071891_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi! Cool artwork! Thanks for sharing :blush:\nWhich is your favourite piece? ",
+        "ts": "1532975196.000140",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-30\/406988359441_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And how would you like to further your skills and creative development? \nAnd are these characters you designed from scratch? ",
+        "ts": "1532975384.000056",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-30\/408581822455_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh and which art festival? Sounds intriguing...",
+        "ts": "1532975505.000344",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-30\/407305404708_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry for all the questions. :wink: Just curious :blush:",
+        "ts": "1532975538.000459",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-30\/407305789076_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.bbc.co.uk\/programmes\/b0bbn5pt>\nFyi I just started watching this BBC secrets of cinema series. On BBC iPlayer. ",
+        "ts": "1532979589.000042",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-30\/408914692630_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "BBC",
+                "title": "BBC Four - Mark Kermode's Secrets of Cinema",
+                "title_link": "https:\/\/www.bbc.co.uk\/programmes\/b0bbn5pt",
+                "text": "Mark Kermode reveals the film-making tricks and techniques behind classic movie genres.",
+                "fallback": "BBC: BBC Four - Mark Kermode's Secrets of Cinema",
+                "image_url": "https:\/\/ichef.bbci.co.uk\/images\/ic\/1200x675\/p06dgpd4.jpg",
+                "from_url": "https:\/\/www.bbc.co.uk\/programmes\/b0bbn5pt",
+                "image_width": 444,
+                "image_height": 250,
+                "image_bytes": 133369,
+                "service_icon": "https:\/\/ichef.bbci.co.uk\/images\/ic\/80x80\/p06dgpd4.jpg",
+                "id": 1,
+                "original_url": "https:\/\/www.bbc.co.uk\/programmes\/b0bbn5pt"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Most of the characters are from different anime series.",
+        "ts": "1533020383.000038",
+        "username": "Laura (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-07-30\/407143339760_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

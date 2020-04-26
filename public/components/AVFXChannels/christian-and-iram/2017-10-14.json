@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not yet. But I really think I should as it comes with various benefits - one of them like you said - 'a break from exams' hahaha I am looking forward to that one. \n",
+        "ts": "1507991139.000025",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256517845333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do you think there's an advantage into getting your university application in early? \n\nWill you be more likely to secure a place? ",
+        "ts": "1507991437.000065",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256378918450_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't think that it makes much of a difference, if it makes any difference at all. I think they probably just look at all the applications received by the deadline. It's good to get it done to avoid the stress of applying last minute, but i think that is probably the only benefit",
+        "ts": "1508002147.000035",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-14\/256546587205_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

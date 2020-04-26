@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "hey Charis! sorry I couldn't get a video record to work but here's my notes!",
+        "ts": "1585411126.000300",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1035140563782_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/>",
+        "ts": "1585411127.000400",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1033259046768_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "SyncSketch: Charis",
+                "title_link": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/",
+                "text": "Collaborative Media Review with 3 items",
+                "fallback": "SyncSketch: Charis",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/e2f5d83c35c9\/"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585411128.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as always if anything isn't clear let me know!",
+        "ts": "1585411133.000600",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1021788344691_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've marked the ones that I think are perhaps a bit more important with a red dot in the top, but it's up to you!",
+        "ts": "1585411161.000700",
+        "username": "Kat Seale (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-28\/1021788637907_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

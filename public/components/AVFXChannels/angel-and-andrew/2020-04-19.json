@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "wow. im a dog lover always have been.",
+        "ts": "1587292333.001700",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-19\/1070532982309_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

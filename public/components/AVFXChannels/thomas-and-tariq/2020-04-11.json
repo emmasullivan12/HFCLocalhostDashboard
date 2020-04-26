@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool! Ye I learnt a lot from doing the course.  I've not really been drawn to USD myself to be honest. But I probably should, haha. By the way it's a bit sneaky but you can just change your email address for Arnold every few weeks and keep updating the free trial. That's what I've done. Well there are the destruction clips I did for that modeling company. I did a few small ones with a wrecking ball. I'd like to take them and add textures, pyro and stuff and light them nicely.",
+        "ts": "1586632797.001700",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1056729539091_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Not so much Arnold I was fussed about, The free Houdini doesn't let you install 3rd party renderers, so it would have to be Mantra. Which is great, but every big company I've worked at uses Arnold, so thought that would be useful\nThat'll be good, to get some good Showreel work out!\nOnce this pandemic is all over, what's your plan? Keep doing what you're doing or would you like to get into a company to work on tv\/adverts\/film?",
+        "ts": "1586633054.001800",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1057516062661_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh OK I see. Im lucky because sidefx gave us 6 month graduate licenses but I'll probably but it when it finishes",
+        "ts": "1586638955.001900",
+        "username": "Tariq Samir Kinani (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-11\/1055948411474_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

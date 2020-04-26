@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Pedram,\nThanks for your message. How are you? I will have to put myself in LinkedIn.  I have been busy in replying...I was part of a short film last weekend as Script Supervisor which I thoroughly enjoyed. I like being part of a creative team making a film. I have applied for a work experience vfx at the Brewery VFX, to reconnect after a break in my situation. Have you heard of them? ",
+        "ts": "1573335480.001900",
+        "username": "Neesha Khan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-09\/827959371220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

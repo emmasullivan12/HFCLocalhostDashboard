@@ -1,0 +1,11 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1565109460.001100",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"simon-and-maria\" to \"simon-and-dominic\"",
+        "old_name": "simon-and-maria",
+        "name": "simon-and-dominic"
+    }
+]

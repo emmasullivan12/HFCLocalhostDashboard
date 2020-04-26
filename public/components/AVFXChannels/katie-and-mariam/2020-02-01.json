@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I’m based in London, I’m not sure if I’ve mentioned this but I’m studying at escape studios based in Holborn, I wouldn’t mind relocating but I’d like to work in London so I can get some experience before hand. ",
+        "ts": "1580551043.000600",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/932284931232_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I haven’t actually gotten round to making the reel yet :( once I do I will let you know and send it to you. ",
+        "ts": "1580551127.000700",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/922122191249_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was also wondering do you have linked in? ",
+        "ts": "1580551148.000800",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/920817531987_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I also wanted to mentioned, what if you feel like you don’t have enough experience or feel like your not good enough, do industries provide training? Or is it all self taught? Because I am a student I’m just not sure what to expect in industry, like I have the knowledge and skills in Maya, Mari and substance painter, would this be enough? Would they be able to help me expand my skills? ",
+        "ts": "1580551581.000900",
+        "username": "Mariam Hussein (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/919501102114_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "London is a great place right now for the industry. \n\nSome companies might do some kind of training, like mpc has a 3 month academy that a few of my friends started in, but you'll just learn the most by being on the job. You can learn from other people you work with too. My friend for example is a 3D modeller who took a job on a TV show and was working closely with the art department to 3D print his models to use on set. He ended up learning a lot that way and helping to cast molds, etc.",
+        "ts": "1580583884.001000",
+        "username": "Katie Rosso (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-01\/934388137527_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

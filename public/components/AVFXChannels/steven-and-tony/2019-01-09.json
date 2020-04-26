@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy New Year, Tony! I hope you had a great time over the holidays, and managed to relax a little, when are you guys back at it (if not already!)? Haha that's a great clip! We're back into it at the studio now, real life begins again :smile: I used a little unity in college it did seem like fun! I'd really like to learn it, or unreal haha Blender is also on my list of things to learn this year - and meditating!",
+        "ts": "1547027724.000500",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519737412338_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy new year to you too!! Starting on Monday... I am genuinely dreading going back! I didn’t get any time to relax :sweat_smile: I worked on new year’s eve, New Years and the whole week :joy:. Manager said she’s unable to decrease my shifts so going back to 7 days a week. I am considering changing jobs as soon as i find something that pays enough. In the meantime i started teaching English over Skype to Koreans! But tonight i finish work at 9:30 and got a Lesson at 3am :sweat_smile: i hope you had a lovely time in Spain with your girlfriend and her family and your family too!! Good luck at work :relaxed:",
+        "ts": "1547037445.000600",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-09\/519661461300_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

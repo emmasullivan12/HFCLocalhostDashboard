@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cool, that I can certainly help with. ",
+        "ts": "1544385570.001900",
+        "username": "alanw (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-09\/500390938183_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What sort of portfolio of work do you have so far? And there are always junior animation roles coming up. So don't think it's not do able :) first rule is to be positive about your work and what you have to offer. It's goes a long way. Everyone likes to work with enthusiastic  people, no matter what rung of the ladder they are on. ",
+        "ts": "1544385691.002000",
+        "username": "alanw (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-09\/500740998534_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I will be the first to admit I was lucky out of uni. I did the msc course at Bournemouth uni in 2002. Framestore visited us during that year and did a presentation to us about what projects they had going on. I applied at the start of the summer and was offered the job. That meant I could relax a bit for the last term of uni ;) ",
+        "ts": "1544385966.002100",
+        "username": "alanw (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-09\/500742136726_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I was offered 3 month contract which I lept at and moved in with 3 friends from the same course. I was employed as an assistant technical director (atd) and had to write scripts and pipeline pieces. Mainly supporting the 3d team. My cg supe at the time simply said to me 'make yourself indespensible'. I'm not sure I ever achieved that but I tried. I made a lot of good contacts. And many of those folks are still at the company but now as senior members of staff. ",
+        "ts": "1544386160.002200",
+        "username": "alanw (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-09\/500393472759_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me the thing that helped me the most was being able to script and program. I wasnt the best but I tried hard and that showed through. ",
+        "ts": "1544386249.002300",
+        "username": "alanw (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-09\/499541491941_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And so I still see that now. People who aren't just skilled in one area will. Always push on quicker than others. For you this might mean knowing a bit of python scripting to help automate a task or two. Or some dynamics\/fx to help spice up an animation presentation ",
+        "ts": "1544386336.002400",
+        "username": "alanw (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-09\/499239803539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Send me any links of work you'd like me to take a look at. YouTube or vimeo etc ",
+        "ts": "1544386592.002500",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-09\/499542870709_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

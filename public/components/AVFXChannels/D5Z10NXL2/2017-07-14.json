@@ -1,0 +1,82 @@
+[
+    {
+        "bot_id": "B01",
+        "type": "message",
+        "text": "You asked me to remind you about <https:\/\/prospela.slack.com\/archives\/G5D8FPJR0\/p1497980229225738|this message> from <@U4V22C6A1|emma-prospela> in hello-students.",
+        "user": "USLACKBOT",
+        "ts": "1500048000.248858",
+        "team": "T4UUTPV18",
+        "attachments": [
+            {
+                "callback_id": "reminders_snooze_212147225827",
+                "id": 1,
+                "actions": [
+                    {
+                        "id": "1",
+                        "name": "complete",
+                        "text": "Mark as Complete",
+                        "type": "button",
+                        "value": "212147225827",
+                        "style": "primary"
+                    },
+                    {
+                        "id": "2",
+                        "name": "delete",
+                        "text": "Delete",
+                        "type": "button",
+                        "value": "212147225827",
+                        "style": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "snooze_action_menu",
+                        "text": "Snooze",
+                        "type": "select",
+                        "data_source": "static",
+                        "options": [
+                            {
+                                "text": "20 minutes",
+                                "value": "20"
+                            },
+                            {
+                                "text": "1 hour",
+                                "value": "60"
+                            },
+                            {
+                                "text": "3 hours",
+                                "value": "180"
+                            },
+                            {
+                                "text": "Tomorrow at 9 AM",
+                                "value": "tomorrow"
+                            },
+                            {
+                                "text": "Next week",
+                                "value": "monday"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "from_url": "https:\/\/prospela.slack.com\/archives\/G5D8FPJR0\/p1497980229225738",
+                "fallback": "[June 20th, 2017 10:37 AM] emma-prospela: <@U4V22C6A1|emma-prospela> uploaded a file: <https:\/\/prospela.slack.com\/files\/emma-prospela\/F5WQ2UHBP\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf|Student Onboarding Pack> and commented: You should have already received this Student Onboarding Pack, but here's a copy for quick reference.",
+                "ts": "1497980229.225738",
+                "msg_subtype": "file_share",
+                "author_subname": "emma-prospela",
+                "channel_id": "G5D8FPJR0",
+                "channel_name": "hello-students",
+                "is_msg_unfurl": true,
+                "text": "<@U4V22C6A1|emma-prospela> uploaded a file: <https:\/\/prospela.slack.com\/files\/emma-prospela\/F5WQ2UHBP\/prospela_e-mentoring_-_student_onboarding_pack__summer_programme__vslack.pdf|Student Onboarding Pack> and commented: You should have already received this Student Onboarding Pack, but here's a copy for quick reference.",
+                "author_name": "Emma",
+                "author_link": "https:\/\/prospela.slack.com\/team\/emma-prospela",
+                "author_icon": "https:\/\/avatars.slack-edge.com\/2017-06-20\/200807858901_52b8fca5eefdbb8ad2b9_48.jpg",
+                "mrkdwn_in": [
+                    "text"
+                ],
+                "id": 2,
+                "footer": "Posted in #hello-students"
+            }
+        ]
+    }
+]

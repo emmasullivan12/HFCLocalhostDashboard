@@ -1,0 +1,173 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ah no that's only the super basic stuff you were being shown, you can kinda do whatever you want with it",
+        "ts": "1585474728.003200",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1035611920982_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I learned in Maya so instead of \"printing a code\", I was doing stuff like making a forest or a 3D maze",
+        "ts": "1585474756.003300",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1022259902003_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As an example of how versatile it is, I'm not sure if it still is, but Youtube was originally written in python",
+        "ts": "1585474798.003400",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1023704913409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F010Z75H3E0",
+                "created": 1585474892,
+                "timestamp": 1585474892,
+                "name": "test.jfif",
+                "title": "test",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 1800740,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010Z75H3E0\/test.jfif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-F010Z75H3E0\/download\/test.jfif?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_64.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_80.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_360.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_480.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_160.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_720.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_800.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_960.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-F010Z75H3E0-899ae76cd0\/test_1024.jpg?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "image_exif_rotation": 1,
+                "original_w": 2560,
+                "original_h": 1440,
+                "thumb_tiny": "AwAbADBJJSrYBOKb5zdjTZiBOfTNOUAyD0pGjdhy3DKeTxTjcMfuk0eXH1OKaxUdBRYXMI00h43EUsMW45NMUZarkSnApFNlS5T5zioRkHvUkh3OSeTmnQKCTkUDsNyT1GB60iqzE45q8salelEUaqTtGMmmToVUUq2SP0q3GcgEcCnEA5yKZEAGOKQ3qf\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/F010Z75H3E0\/test.jfif",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-F010Z75H3E0-ae47250722",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1585474896.003500"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Basically if you learn in school, you're learning \"normal people python\", which is considerably more boring than \"vfx people python\" haha.",
+        "ts": "1585475224.003800",
+        "username": "Peter Hunt (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033246078436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "woaaaaa",
+        "ts": "1585476498.003900",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033696491061_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i need to research this more",
+        "ts": "1585476520.004000",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1020978313442_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how would i get into the industry btw",
+        "ts": "1585476723.004100",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033258150756_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i enjoy every aspect of filming, from shooting the movie to editing it, but its very demotivating since my pc cant really hande the things i want to make",
+        "ts": "1585476784.004200",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033258616436_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "is it better to create like short movies or just go with a vfx reel or portfolio",
+        "ts": "1585476809.004300",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1020980534178_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "and what type of work experiences can i get during this time when im pretty much locked up home",
+        "ts": "1585476835.004400",
+        "username": "Tibebe Demissie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-29\/1033699083797_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

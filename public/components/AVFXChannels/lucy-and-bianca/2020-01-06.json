@@ -1,0 +1,59 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Bianca, happy new year! I heard about some “VFX Saturday schools” today so thought I would pass on the details...",
+        "ts": "1578334753.000200",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/882294834482_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great news, Escape Studios are running Saturday Clubs starting 11 January! Kids (13-16 year olds) get 15 free Saturday morning lessons learning to sculpt and animate their own superheros using Maya and zBrush taught by expert tutors, concluding with an exhibition to the public at Somerset House. Best of all... it's FREE!\n\nClick on the link below for more information and to register!\n<https:\/\/www.pearsoncollegelondon.ac.uk\/campaigns\/saturday-club.html|https:\/\/www.pearsoncollegelondon.ac.uk\/campaigns\/saturday-club.html>",
+        "ts": "1578334756.000300",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/895089173381_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "Art and Design Saturday Club | Escape Studios London",
+                "title_link": "https:\/\/www.pearsoncollegelondon.ac.uk\/campaigns\/saturday-club.html",
+                "text": "Our Saturday Club is free and is led by expert tutors who will give attendees (students between the ages of 13-16) a chance to learn the skills used in VFX, Games and Animation",
+                "fallback": "Art and Design Saturday Club | Escape Studios London",
+                "from_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/campaigns\/saturday-club.html",
+                "service_icon": "https:\/\/www.pearsoncollegelondon.ac.uk\/etc\/designs\/region-core\/uk\/pearson-college\/favicon.ico",
+                "service_name": "pearsoncollegelondon.ac.uk",
+                "id": 1,
+                "original_url": "https:\/\/www.pearsoncollegelondon.ac.uk\/campaigns\/saturday-club.html"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s more on the artistic than the programming side so o don’t know if you’d be interested, but perhaps you know someone who might be!",
+        "ts": "1578334786.000500",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/896938012439_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, do you want to schedule in a chat at some point soon? Maybe 15 mins or so. I thought it might be nice to have a proper conversation when we’re both free to answer straight away :)",
+        "ts": "1578334910.000600",
+        "username": "Lucy Wilkes (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-06\/884854085281_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

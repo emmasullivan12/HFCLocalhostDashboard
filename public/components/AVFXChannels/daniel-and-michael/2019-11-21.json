@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "A little update on me. Dneg did make an offer but they came in low so after a bit of back and forth to see if theyvd budgeI decided to take the OOU offer. The big companies often do that by the way but right now I don't really feel like I need validation. How are things going your end?",
+        "ts": "1574352712.001400",
+        "username": "Daniel Mark Miller (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-21\/844095059456_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

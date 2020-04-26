@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Millie\n\nHappy Friday! Its been a slightly busy week for me, sorry for  the delayed response. I am just eating lunch right now haha. I watched a WIP screening earlier today of the film I'm working on right now, which the start was as delayed during lunch\n\nI'vey watched 2 or 3 episodes of Handmaid's Tale myself, but what I saw I thought was pretty well done.\n\nI used to enjoy this photography magazine made where I am originally from in the U.S. called \"Shots\", which featured photography from all kinds of people. It was basically submission based, so I think anyone could get their photos in it if they sent them in and were selected. \n\n<https:\/\/shotsmag.com>\n\nOn the topic of analogue photography, have you ever developed your own film? I always wanted to try that, it's seems like such a nice thing to do, playing with light and really crafting the final image. \n\nDo you have any particular photographers or photography magazines you really like?\n\nThis looks pretty cool!\n<https:\/\/www.tate.org.uk\/whats-on\/tate-modern\/exhibition\/shape-light>\n",
+        "ts": "1533309667.000245",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-03\/410447575458_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Shots Magazine",
+                "title": "SHOTS MAGAZINE",
+                "title_link": "https:\/\/shotsmag.com\/",
+                "text": "Shots magazine is a reader supported quarterly, printed journal of unusual fine-art B&amp;W photography. Subscribe and submit for free.",
+                "fallback": "Shots Magazine: SHOTS MAGAZINE",
+                "from_url": "https:\/\/shotsmag.com\/",
+                "service_icon": "https:\/\/shotsmag.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/shotsmag.com"
+            },
+            {
+                "service_name": "Tate",
+                "title": "Shape of Light: 100 Years of Photography and Abstract Art – Exhibition at Tate Modern | Tate",
+                "title_link": "https:\/\/www.tate.org.uk\/whats-on\/tate-modern\/exhibition\/shape-light",
+                "text": "For the first time, Tate Modern tells the intertwined stories of photography and abstract art",
+                "fallback": "Tate: Shape of Light: 100 Years of Photography and Abstract Art – Exhibition at Tate Modern | Tate",
+                "thumb_url": "https:\/\/www.tate.org.uk\/sites\/default\/files\/styles\/width-600\/public\/ldn5_30.jpg",
+                "from_url": "https:\/\/www.tate.org.uk\/whats-on\/tate-modern\/exhibition\/shape-light",
+                "thumb_width": 530,
+                "thumb_height": 768,
+                "service_icon": "https:\/\/www.tate.org.uk\/favicon.ico",
+                "id": 2,
+                "original_url": "https:\/\/www.tate.org.uk\/whats-on\/tate-modern\/exhibition\/shape-light"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oops sorry sent that before I meant to haha, it has at least a few typos, sorry about that :\/",
+        "ts": "1533309718.000289",
+        "username": "Jarl (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-03\/410448288562_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you so much! I have seen shots magazine before, I've never thought to try an submit my work though, I will definitely be trying that! :grin: \nThat must have been nice to watch the screening, what film are you working on? \nI've never developed my own film but I want to try it too :wink:\nI have uploaded a lot of my photos onto a website called deviantart, do you know It? You're welcome to have a look at my online gallery, although I can't send you a direct link (sorry!) My username is just \n\"MillieFerneSmith\" if you'd like to see. \n\n(I'm sorry if this message wakes you up, I'm mostly nocturnal now! :sweat_smile:) \nHope you're well, enjoy the weekend! ",
+        "ts": "1533340143.000076",
+        "username": "Millie (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-03\/410604890563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

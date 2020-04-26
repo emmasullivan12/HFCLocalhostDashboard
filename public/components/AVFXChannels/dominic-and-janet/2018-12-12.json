@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Dominic, apologies for the delayed reply it's great to meet you too! :slightly_smiling_face: ",
+        "ts": "1544636651.000100",
+        "username": "Janet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502163848259_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I'll just start by talking about why I want to me mentored.. \n\nI previously studied Digital Effects and although I found it to be an interesting subject I was not entirely into it and eventually left the course. However, I've always had a love for film and cinematography, and I truly feel it would be something I could be extremely great at considering all of my film based coursework assignments were extremely enjoyable and they were the ones I received the highest marks for.\n\nWhat I need guidance on is where to start. I've been finding it a bit tricky in knowing where I could get film experience and how, because even as a runner it requires background experience that I don't have. \n\nMy first question to you is when you knew that you wanted to go into your industry what were the main steps you took to enter?",
+        "ts": "1544637527.000200",
+        "username": "Janet (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502482075621_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

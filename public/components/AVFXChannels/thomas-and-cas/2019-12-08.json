@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh nice! Congrats! What's the job?",
+        "ts": "1575826220.007500",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-08\/864615247989_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

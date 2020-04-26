@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think one of your messages havent been sent haha! Yeah but the experience is not enough to recruit me:sob:Thank you so much again, im sorry to bother you like that.",
+        "ts": "1577045160.000500",
+        "username": "Jinafa (Villiers E-Mentoring)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-22\/883638348741_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

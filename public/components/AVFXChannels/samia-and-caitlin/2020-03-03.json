@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I have watched the video and I find it very interesting. As I can see it requires a lot of skill, technicality and precise detail. I do have a good eye for detail. Hopefully I will hear from Karen soon she might be able to give me some job shadowing with a compositor.",
+        "ts": "1583260627.000900",
+        "username": "Caitlin Purser (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-03\/982199247142_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

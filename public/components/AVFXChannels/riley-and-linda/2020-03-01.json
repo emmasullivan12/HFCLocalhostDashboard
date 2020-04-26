@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's definitely fine to not be an expert at modeling, but there aren't too many roles that just focus on texture and lookdev. Your lighting looks great in some of your projects, so I think that would widen the job prospects a lot. As an example the lighters at Framestore also do texture and lookdev but they're not experts at modeling. But if you don't want to be a lighter and go the asset route instead I would recommend being proficient at modeling. But it takes time and you're on a good track! ",
+        "ts": "1583110903.002700",
+        "username": "Riley Nelson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-01\/966345410625_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

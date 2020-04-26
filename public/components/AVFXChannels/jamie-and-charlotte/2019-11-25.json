@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries! So I studied Media Arts at Plymouth University which was a very art focused course. There was a lot of freedom in choosing what form of media to use in assignments with loads of tutorials and workshops for specific software or techniques such as chemical photography. It was a great course though I didn't really learn anything about animation and VFX as an industry, more about it as an art form. I was really interested in After Effects and how I could use it to create VFX for my projects, so I spent a lot of time learning via Youtube\/Video Copilot tutorials and talking to the tutors and technicians from my faculty. So my degree wasn't vital to me getting a job but it did give me an environment in which I could develop my skills and understanding of animation and put them into practice.",
+        "ts": "1574691535.001900",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/835322791090_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I do think there could have been more of a career focused aspect to my course but I also got a strong sense that I got what I wanted from it, which was to figure out what kind of work I wanted to do in the future and build up my skills towards that.",
+        "ts": "1574691725.002000",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/848110771488_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Since working I feel like a lot of skills have been picked up through whichever position I was in at the time, although there are some basic skills which definitely helped me get my foot in the door.",
+        "ts": "1574691803.002100",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/850319974422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "When I started applying, I looked at lots of different branches of animation\/VFX such as compositing, production and motion graphics. I was mainly applying for runner or assistant positions and I eventually found a vacancy at Jellyfish as a runner with the prospect of helping in Editorial. There's a scheme called Trainee Finder run by Creative Skillset, which meant that Jellyfish could take me on as a trainee and I could still get paid which was vital for me as I had to support myself and couldn't take unpaid positions (of which there are many sadly).\n\nHere's a link to Trainee Finder in case you haven't heard of it, looks like it's rebranded to Screen Skills but still the same thing: <https:\/\/www.screenskills.com\/education-training\/trainee-finder\/>",
+        "ts": "1574692309.002200",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/836659354963_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ScreenSkills",
+                "title": "Trainee Finder  - ScreenSkills",
+                "title_link": "https:\/\/www.screenskills.com\/education-training\/trainee-finder\/",
+                "text": "ScreenSkills",
+                "fallback": "ScreenSkills: Trainee Finder  - ScreenSkills",
+                "image_url": "https:\/\/screenskills-web-images.azureedge.net\/content\/img\/og\/screenskills.png",
+                "from_url": "https:\/\/www.screenskills.com\/education-training\/trainee-finder\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 8040,
+                "service_icon": "https:\/\/screenskills-web-images.azureedge.net\/Content\/img\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.screenskills.com\/education-training\/trainee-finder\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope that helps, feel free to ask me to elaborate on anything or let me know if I didn't quite answer the question haha.",
+        "ts": "1574692350.002400",
+        "username": "Jamie Harris (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-25\/835345426722_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

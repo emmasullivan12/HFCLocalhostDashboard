@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "oh sorry. why are you confused?",
+        "ts": "1544604524.000100",
+        "username": "Alexander Schwank (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/501771630658_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No it's fine.. wasn't your fault.\nWell for starters... \nAlthough I gave the plan for the game in mind as in concept wise I don't really know how to begin? As in don't really have any idea about how to generate the maze ",
+        "ts": "1544651865.000200",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502526228642_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And also I haven't really done anything research on the coding behind the visuals yet so I need to look into that",
+        "ts": "1544651973.000300",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-12\/502424875747_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I bet it's been busy! I love the work so far, the film idea is really cute so I'm excited to see how it develops - what is your part in it? You're doing the editing? I already like the warm palette you've picked, its very inviting! The flour is also good so far, I wonder if it needs to be a bit more powdery? As the sim progresses, perhaps there should be some visible fall off on the side of the spoon? Thanks a lot for sharing! It looks like you're making great headway already so far this year",
+        "ts": "1583963109.000200",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/996635104023_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you very much! It's really nice to hear that, I was responsible for camera and a few of us were doing editing and now during Post-Production I am going to do FX. For the sim yeah I am trying to do that fall off\/ flour look, but I am kinda strugling with that. Trying now to search for help in various forums how to do that, but there isn't much help haha.  Also the monkey is going to smash that flour into a pot, so I am going to do a pyro sim.\n\nAlso I wanted to ask some coding stuff I that would be possible. I don't know how much you know about VEX, but it's C coding language so you still might know how to help haha. I am going to attach a screen shot of code so it would be easier for you to understand me:sweat_smile: So basically I want to have one force which is spinning force and during certains frames (there are two intervals where I want to do it)  I want only that points that matches 'if' parameters to change into the new force ( v@force = lerp(spinforce, attack, chf(\"Main_Force_Lerp\")); lerp is like a blend shape ). But then I face a problem: after the frame range changes into 161 the points come back to that old spinning force that was used before. It makes sense that it goes like that, since I'm using 'if' statement, but I was wondering if there's any other ways how to build my code that the points wouldn't return to the old spinning force.",
+        "ts": "1583964570.000300",
+        "username": "Eirimas Jaskinas (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-11\/984731979217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUW0TBSLA",
+                "created": 1583964582,
+                "timestamp": 1583964582,
+                "name": "image.png",
+                "title": "image",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U6D2VCN07",
+                "editable": false,
+                "size": 100372,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUW0TBSLA\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T4UUTPV18-FUW0TBSLA\/download\/image.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUW0TBSLA-513f32faca\/image_64.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUW0TBSLA-513f32faca\/image_80.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUW0TBSLA-513f32faca\/image_360.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_360_w": 360,
+                "thumb_360_h": 335,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUW0TBSLA-513f32faca\/image_480.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_480_w": 480,
+                "thumb_480_h": 447,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUW0TBSLA-513f32faca\/image_160.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUW0TBSLA-513f32faca\/image_720.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_720_w": 720,
+                "thumb_720_h": 670,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T4UUTPV18-FUW0TBSLA-513f32faca\/image_800.png?t=xoxe-164979811042-1081742544354-1080362743317-fee6284c0ee20406565ca4cadf37d845",
+                "thumb_800_w": 800,
+                "thumb_800_h": 745,
+                "image_exif_rotation": 1,
+                "original_w": 839,
+                "original_h": 781,
+                "thumb_tiny": "AwAsADCjzR8x6UY+lJg0ABz3pKCD6UUAFFFFADh9f1pOvcUuaMn0oAbiilz7UmR6UAFFFFAC+9HP+RSfhRQAuKTFFFABRRRQB\/\/Z",
+                "permalink": "https:\/\/prospela.slack.com\/files\/U6D2VCN07\/FUW0TBSLA\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T4UUTPV18-FUW0TBSLA-b3c5dd5bec",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U6D2VCN07",
+        "display_as_bot": false,
+        "ts": "1583964586.000400"
+    }
+]

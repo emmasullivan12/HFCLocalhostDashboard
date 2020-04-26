@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello! I have a day off tomorrow after all!",
+        "ts": "1580229799.008900",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-28\/925641934581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

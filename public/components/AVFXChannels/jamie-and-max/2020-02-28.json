@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've been meaning to ask you by the way, what software do you generally use as a VFX Editor? I know a lot of editors moved away from stuff like Final Cut and Premiere Pro.",
+        "ts": "1582923643.000200",
+        "username": "Max Brown (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-28\/962104256498_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

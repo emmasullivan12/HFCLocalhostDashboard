@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! What is it you’re unfolding!",
+        "ts": "1585684740.001000",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1041544758359_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I just realised you messaged me above!\nMy film was around 8 months- though now would take me about 3 :joy:\nThe kids pilot I had to do in 8 weeks!\n\nYeah they were! Tbh commercials at bz do a lot more varied look including some realism \n\nWhat style do you like?",
+        "ts": "1585684815.001100",
+        "username": "Rebecca Blair (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-31\/1039518868704_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

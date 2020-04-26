@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh cool! Did she enjoy it? Most of the modules are really similar, ecology, evolution, cell biology mostly haha! I'm just going back and forth on the thing now haha. Biology isn't very medical based, I'd say Biomedicine is more for that sorta thing? Biological sciences is more of a range of things haha",
+        "ts": "1510785001.000252",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/273251763125_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Is there any feedback you could perhaps offer on my statement?",
+        "ts": "1510785013.000017",
+        "username": "skumar-2011 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-15\/274190130391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

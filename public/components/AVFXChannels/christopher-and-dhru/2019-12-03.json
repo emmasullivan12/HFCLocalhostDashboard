@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats really interesting that generally theres no overlap but understandable that things dont get mixed up. :simple_smile: \nI wanted to ask with framestore do artists generally tend to stay in one area such as film or do they work in other areas such as tv or immersive if needed?",
+        "ts": "1575395206.004100",
+        "username": "Dhru (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/860048739047_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "People do work in other fields as needed, although that's rare. At Framestore London, people very occasionally jump to commercials and back...but again rarely and only if there's no one to be found to hire, like jumping in and helping out on a very short-term thing\nIn recent years, tho, as some people get a bit fed up with the loss of creativity maybe (especially when studios like Marvel get involved, where everybody and their dog needs to have input into the project :wink:) some people are venturing into other areas - like immersive, VR, gaming etc. Also those possibilities simply didn't exist 5-10years ago so people wanna give it a go and there's quite a bit more opportunity now to get involved with those new fields. Also the companies themselves (speaking for Framestore) also extend their involvement in those fields (especially VR), so there's a handful of positions for people that wanna switch inside the company, too. Maybe MPC is doing something similar with their film-vs-commercials departments",
+        "ts": "1575397308.004200",
+        "username": "Christopher Puchta (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-03\/858259729525_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

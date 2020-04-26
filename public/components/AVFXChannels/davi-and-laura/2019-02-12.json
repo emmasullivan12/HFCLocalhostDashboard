@@ -1,0 +1,75 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes it does. Ok new challenge, new brief that might hope you think about composition in the framing. All of this can directly apply to drawing, graphic design and especially animation, or any moving image (cinematography, photography, vfx, games too). ",
+        "ts": "1550006915.000900",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/549484984949_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Brief: \nShoot some photographs that create drama around the edges of the frame. ",
+        "ts": "1550007010.001000",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/549122801844_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "An example from a famous photographer:\n<https:\/\/goo.gl\/images\/xxuoGJ>",
+        "ts": "1550007161.001100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/548678790641_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.magnumphotos.com\/newsroom\/conflict\/telex-iran-in-the-name-of-revolution\/>\n\nGilles Peress artist. \n\nOften people put the main content of a image\/photo in the centre of the frame. That ok, but now try this different approach. More about the edges  of the frame. ",
+        "ts": "1550007457.001200",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/548683732129_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Magnum Photos",
+                "title": "Telex Iran: In the Name of Revolution • Gilles Peress • Magnum Photos",
+                "title_link": "https:\/\/www.magnumphotos.com\/newsroom\/conflict\/telex-iran-in-the-name-of-revolution\/",
+                "text": "Gilles Peress's seminal publication 'Telex Iran' documents life under the Iranian regime during the late 1970s including the American Embassy hostage crisis",
+                "fallback": "Magnum Photos: Telex Iran: In the Name of Revolution • Gilles Peress • Magnum Photos",
+                "image_url": "https:\/\/www.magnumphotos.com\/wp-content\/uploads\/2016\/05\/cortex\/par56870-overlay.jpg",
+                "image_width": 376,
+                "image_height": 250,
+                "ts": 1462980556,
+                "from_url": "https:\/\/www.magnumphotos.com\/newsroom\/conflict\/telex-iran-in-the-name-of-revolution\/",
+                "image_bytes": 232942,
+                "service_icon": "https:\/\/www.magnumphotos.com\/wp-content\/themes\/template\/res\/img\/favicons\/apple-touch-icon-57x57.png",
+                "id": 1,
+                "original_url": "https:\/\/www.magnumphotos.com\/newsroom\/conflict\/telex-iran-in-the-name-of-revolution\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Peress is a political photographer so has heavy content, but an amazing artist too with the camera. \nLet me know if you have any questions as you start to shoot :blush:",
+        "ts": "1550011446.001400",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-02-12\/549242414051_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

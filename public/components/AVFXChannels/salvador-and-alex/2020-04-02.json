@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The guy was Paul Franklin, one of the original team members who started Dneg.\n\nI wanted to watch the movie but I had to work. How was it otherwise? Did people ask a lot of questions? Was it a good experience overall ?",
+        "ts": "1585844442.000800",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1044778421351_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was really good, I've seen it before but it was great to watch it with others and hear about the work that went into it.\n\nA lot of people actually joined and they were answering some questions as they went a long.\n\nIt was quite fascinating hearing how it was pretty much done by only like 25 people with a really early version of Maya and when computers were still very early to. Really interesting as well that a lot of the creatures were hand modelled when you've got something like zbrush today lol. It was great experience overall.",
+        "ts": "1585853098.000900",
+        "username": "Alex Bray (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1034345641395_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great. I’ll try watching the next one they organise. ",
+        "ts": "1585853904.001000",
+        "username": "Salvador Zalvidea (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-02\/1045581914646_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

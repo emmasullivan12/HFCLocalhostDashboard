@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Chris, sorry I haven't seen any notifications, I will get back to you today",
+        "ts": "1566895376.019300",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/727882097458_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So in general it's a pretty good progress, you made it pretty close to the ref image. If I were you I would make the last push and tried to match the lighting to be similar and correct small scratches here and there to make it look even closer. Like sticker or  text on the side. If you will put that into your reel, which makes sense I guess, make sure to include the ref to showcase that you made it as close as you can,that's really valuable skill in both VFX and games",
+        "ts": "1566926213.019400",
+        "username": "Alex Underwood (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/742116846054_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thanks Alex! Yeah I will spend a little bit more time in substance to get the text and refine the dirt\/scratches, then take it back into Maya to light and render.",
+        "ts": "1566926798.019500",
+        "username": "Chris Spencer (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-08-27\/739951473077_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

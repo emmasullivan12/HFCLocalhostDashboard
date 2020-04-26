@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No worries Khadijah, happy to help - when will you be free next week (Mon-Fri) to look at your CV? We can also talk about finding working experience and see if \/ how I can help",
+        "ts": "1553768915.000100",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-03-28\/592675547878_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

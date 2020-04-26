@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Dan, no problem, I’m happy to help. It’s good to see you’re already doing an games related course. I assume your first year is quite broad, looking into a lot of different areas. Is there any particular you want to specialize in programming? \n\nIn regards of gaining industry experience there isn’t really a specific way of going about it. If your course offers a placement year that would probably be best and most logical way to go about it. \n",
+        "ts": "1580198520.001700",
+        "username": "Jonathon Wilson (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-28\/912081600434_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

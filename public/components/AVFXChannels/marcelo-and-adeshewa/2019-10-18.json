@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi there Adeshewa, sorry for my delayed answer. This end of week is a delivery for the current episode I'm working on, so work has been pretty heavy. Please call me Marcelo, it's alright :)\nNice to hear you're working on this project, and that you're able to put effort on something like this while at school!\nI must tell you I'm not very familiar with mangas, the only one I read is 'Blade of the immortal' which I liked very much because the storytelling is great, the rhythm and storyboarding (if you consider it as a storyboard) are really well done.\nIt's good you're aware of points you'd like to improve in your drawings, and anatomy and perspective are among the most difficult, it's a lifelong thing to get it better, no worries to understand everything there is to it in a short time, I'd say :)",
+        "ts": "1571387848.001900",
+        "username": "Marcelo Perin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/800278594133_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Marcelo! \n\nIf you don't mind, what episode were you working on ( so I can go watch it when it comes out ) and what does your job involve? :blush: \n\nI shall go check out Blade of the Immortal! A good story is always hard to come by because so many people has done the same thing, as a famous theorist once said, \"A genre is repetition with difference.\" \n\nStory telling and perspective is so hard :cold_sweat: because you have to make the panels move in a way that makes the readers eyes flow with the movement but I will practice! Once I get my character references done, would it be okay to send the images to you and you could maybe critique them? :) \n\nHave a good rest Marcelo and don't overwork yourself! :blush:",
+        "ts": "1571423177.002000",
+        "username": "Adeshewa Kosoko (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-18\/789553708291_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

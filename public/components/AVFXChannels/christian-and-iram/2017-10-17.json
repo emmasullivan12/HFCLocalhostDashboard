@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think that will vary, but in this country I think it is probably equal - I know a lot of people who have done a conversion course after a first degree, and a lot that have gone straight into a law degree, and there doesn;t seem to be a difference. In other countries that is different - in New Zealand for instance you have to do a full law degree. BUt here, not much of a problem either way. As long as you can demonstrate that you are intelligent, hard working, and have done well in a conversion course, law firms will like you.",
+        "ts": "1508227776.000071",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/256855126513_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you like the most and least about you job?",
+        "ts": "1508279880.000299",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257210589616_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you think are the pros and cons of being a lawyer?",
+        "ts": "1508279905.000044",
+        "username": "amysheikh05 (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257786462515_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The best thing about my job is the variety - as a consultant I get to work on problems that our clients can;t solve, which generally means they're tough and interesting, and the work is never the same twice. The worst thing is probably business development - I'm not a natural sales person, and having to try to sell my services, or the services of my company, can be a challenge!",
+        "ts": "1508308220.000224",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257466584881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "as for being a lawyer, i think the pros are that there will always be work and that it can be very fun - if you like a challenge, like to argue and like paying attention to details it is very rewarding. I really enjoy the legal aspects of my job, and being in an arbitration hearing is probably the most fun I have at work, even if it can involve very long hours. That's probably the con of being a lawyer - as a junior lawyer you have to work long days all the time - I have a number of friends who have gone through the process, and it is essentially part of the training.",
+        "ts": "1508308365.000033",
+        "username": "christian.jeffery (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-10-17\/257984785490_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

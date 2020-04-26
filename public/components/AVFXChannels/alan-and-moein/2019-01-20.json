@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ok I see did you spend time optimising your render? 3 days is a lot ;) a fully cg environment is very hard. Especially when it's something so familiar. You could try a set extension or placing cg objects in a photographed frame. ",
+        "ts": "1548015495.001800",
+        "username": "Alan Woods (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-20\/528439006754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Happy Friyay! Hope this week was productive for you!!",
+        "ts": "1548438003.008300",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-25\/533345653699_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Have a read of this! Interview with our head of talent here: :octopus:\n\n<https:\/\/cubebrush.co\/blog\/tips-on-how-to-get-hired-at-a-top-studio>",
+        "ts": "1548438040.008400",
+        "username": "Michael (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-25\/533654470373_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Cubebrush",
+                "title": "Tips on How to Get Hired at a Top Studio on Cubebrush.co",
+                "title_link": "https:\/\/cubebrush.co\/blog\/tips-on-how-to-get-hired-at-a-top-studio",
+                "text": "The work done in Christopher Robin just landed Framestore yet another nomination for an...",
+                "fallback": "Cubebrush: Tips on How to Get Hired at a Top Studio on Cubebrush.co",
+                "image_url": "https:\/\/d27nqrvkk22y65.cloudfront.net\/post_image\/image\/141\/big_5574cad3be.png",
+                "image_width": 464,
+                "image_height": 250,
+                "from_url": "https:\/\/cubebrush.co\/blog\/tips-on-how-to-get-hired-at-a-top-studio",
+                "image_bytes": 59529,
+                "service_icon": "https:\/\/cubebrush.co\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/cubebrush.co\/blog\/tips-on-how-to-get-hired-at-a-top-studio"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Good Evening!\n\nWe had a massive fire in our work, so it was a little busy trying to sort everything out, hahhaa:D\n\nThank you very much for the article, most of the things explained there are exactly the \nsame, what you have told me!\n\nIt really inspired me! \n\n",
+        "ts": "1548449425.008600",
+        "username": "Silvija Mickute (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-25\/533538166275_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

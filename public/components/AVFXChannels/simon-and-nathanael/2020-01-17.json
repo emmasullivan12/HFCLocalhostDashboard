@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Pleased to meet you Nathanael! I don't know what Emma's told you already but I'm an animator and director at blue zoo, currently animating on the new series of Paddington bear :-) happy to answer any questions you have on animation and the industry!",
+        "ts": "1579288375.000100",
+        "username": "Simon Taylor (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-17\/900114643827_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

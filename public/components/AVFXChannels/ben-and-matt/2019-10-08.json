@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Alright mate, I've got my professional practice assignment brief now, and basically it says that I can write myself a brief, as long as I get it okayed by someone in the industry.. so was just wondering if you could be that someone in the industry? :innocent: \nAll you'd need to do is just quickly go over it (I'll make sure the brief is brief.. pun intended) offer any suggestions, in ways I could do something a little different or just simply say that's a crap idea :joy:",
+        "ts": "1570547568.007300",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/790060547766_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey dude, ahh sounds good! \n\nYeah sure thing I would be fine with that! I can give you some pointers into shots that I think might look good on a showreel too if needs be!  ",
+        "ts": "1570566722.007400",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/781906306545_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Cheers bud :+1::skin-tone-3:\nI'll send you a screenshot tomorrow of the extremely short descriptions of the 2 ideas I have so far.\n\nYeah if you could that would be awesome :+1:\n\nI do want everything I'm doing this year to end up in my showreel really anyway so that would be very helpful thank you.",
+        "ts": "1570569962.007500",
+        "username": "Matt Coleman (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/788417822448_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

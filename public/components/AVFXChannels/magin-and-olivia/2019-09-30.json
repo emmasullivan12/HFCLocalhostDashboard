@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Liv,\nThe anim looks nice! What I'm seeing is that the shot now seems a little bit \"empty\". If you check it, your character is just moving when she's talking. Actually, the firsts 40 frames is frozen. If you add some little movements, or maybe a context (she could be doing something meanwhile she's talking) that would add more texture and will help you timing :slightly_smiling_face:",
+        "ts": "1569836033.000400",
+        "username": "Magin Marques (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/777311485092_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sorry I just realised i put an old playblast on there, this is the right one! that one i sent you was shocking. i redid the whole thing",
+        "ts": "1569889039.000500",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/766095154066_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/syncsketch.com\/sketch\/ef4abafcaf05\/>",
+        "ts": "1569889040.000600",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/766095163458_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "text": "Review media collaboratively in the cloud - no setup, visual creative feedback, all real time with just a link.",
+                "fallback": "Review media collaboratively in the cloud - no setup, visual creative feedback, all real time with just a link.",
+                "from_url": "https:\/\/syncsketch.com\/sketch\/ef4abafcaf05\/",
+                "service_icon": "https:\/\/syncsketch.com\/media\/img\/favicons\/apple-touch-icon-57x57.png",
+                "service_name": "SyncSketch",
+                "id": 1,
+                "original_url": "https:\/\/syncsketch.com\/sketch\/ef4abafcaf05\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "i havent really touched the lip sync yet. just the chin movement",
+        "ts": "1569889209.000800",
+        "username": "Liv Donlan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-30\/778409015220_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

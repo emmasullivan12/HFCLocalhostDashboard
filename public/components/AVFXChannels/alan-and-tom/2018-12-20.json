@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Alan, no notification came through for this sorry so I didn’t realise you’d replied.\nI find the facial animation comes more naturally. The feedback I’ve had in the past is that my ‘acting’ skills are good but my characters are often stationary. \nWith the stage I’m at now, being in my final year of uni, I feel it may make more sense to focus on my facial animation and strengthen it rather than focus on body animation and ending up with lots of mediocre skills as you say. \nDo you think it be better to use a downloaded rig? The aim behind creating my own rig was that it would add an extra skill in rigging and make my reel unique. \nI’ve been working on a portfolio website recently to partner with a short showreel of my best work. Would it be worth creating a reel for animation and another that shows my rig? Or is stating that the rig in my reel was creating by me enough? As it’s not the job I’m going for, rather an extra string on my bow.",
+        "ts": "1545297508.001400",
+        "username": "Tom (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-12-20\/507990267504_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

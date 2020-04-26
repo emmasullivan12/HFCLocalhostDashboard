@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey andrew, thanks for the introduction and these kind of programs are always good to help with people and to understand their direction. Games does seem popular and what people move towards too. I have not been in game just vfx but I dont regret it. In terms of what you want to do it seems you have a much higher interest in game and your reel looks nice, is this your reel your sending out to places or just something you have at place for now till you build more? I like the breakdown on the fire it's nice to show that. Recruiters like that.",
+        "ts": "1582748466.000100",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/958009454226_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Are you still exploring as your only in your first year? Which is good gives you more time to learn a lot and if realtime is what you like you should move in that angle. Seems you enjoy it a lot.",
+        "ts": "1582748574.000200",
+        "username": "Angel (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/972662156823_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'm somewhat in limbo right now. I've spoilt myself by working in realtime for the past 3 years (EEVEE is a wonderful piece of software...), but equally I quite enjoy sim stuff as well. Realtime FX seems to be a decent convergance of the two, but I'm not going into it blindly; I am still very much keeping an eye on offline-rendered FX (I quite enjoyed working with Nuke, but given that it took me hours to get something to look passable color-match wise, I don't forsee it being something that I would excel at), and modelling is fun, but we're told in no uncertain terms that the industry is already pretty full for modellers (and truth be told, I'm not the best modeller in town. Not even amongst my class). The reel was thrown together because of a possible internship thing that ILM was doing, but I didn't finish it in time, so... at this point, it's my Prospela mentor reel, I suppose. We were advised to put only stuff we'd done since starting in there, and in Semester A I had to devote most of my time to the 2D side of things (not my forté in the slightest). The pod racer and table were both for assignments, and the rocket effect was the closest thing I had to a 'personal' project to put in there (and is incidentally only first realtime effect I've done to date). Likewise, Houdini looks fascinating, but... finding good resources are a pain, and whilst I can ask the tutors a question in the corridor every now and then, we're not scheduled to begin learning it fully until next year (when the course switches to it more fully), which further complicates my decisions.",
+        "ts": "1582759297.000300",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/970633964692_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you recommend sending a reel out to companies this early on? I'd personally like to get a couple more effects done (that rocket one was primarily done in 48 hours or so before the deadline for the Search for a Rising Star deadline and looks atrocious from a shader complexity standpoint; overdraw everywhere, and made in Cascade, which is being replaced soon anyway) before going to recruiters and pretending to know much of anything.",
+        "ts": "1582759549.000400",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/973302247606_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think, thus far at least, the lectures at university have been more effective at ruling out areas to go down than clarifying new ones; I can say for a certainty that I am no animator, nor a concept artist (though I am growing to like sketching ideas out), but the rest of the field is still pretty open, apart from that.",
+        "ts": "1582759892.000500",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-26\/970645946868_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

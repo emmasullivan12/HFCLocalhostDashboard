@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Harol, sorry for the late reply. I actually don’t know the answer to that but if you are transfering animation curves the number of joints might need to match.",
+        "ts": "1569175831.000200",
+        "username": "Gabriel Blanco (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-22\/769124893936_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Do the two characters have the same topology?",
+        "ts": "1569175859.000300",
+        "username": "Gabriel Blanco (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-22\/762705933345_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

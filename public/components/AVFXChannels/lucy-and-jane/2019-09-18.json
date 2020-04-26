@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Lucy, apologises for not replying for a while. Thank you for sending me the website, the projects that your comany does look very interesting. :sparkles: \nCan you tell me what pathway you took to get your current job? (What qualifications, a levels\/ university courses etc, since I'm interested in a job somewhat similar to the industry that you're working in) \nCurrently in school we're drafting our personal statement, so what sort of information would you think is beneficial to include in that?",
+        "ts": "1568836631.000100",
+        "username": "Jane Lee (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-18\/758736428673_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Tony. I just heard about a past Escape Studios student of mine that has opened a new vfx company in Beijing and is hiring! Any interest for after graduating? \n\n",
+        "ts": "1554150782.000100",
+        "username": "Davi Stein (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-01\/593739880160_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It’s something i would definitely consider! I ideally wanted to go Korea but I don’t mind good anywhere outside of The Uk for a year to take a break and work. Would they hire people in junior positions? And what company would that be ? Thanks a lot for the effort!",
+        "ts": "1554154613.000200",
+        "username": "Anthony Nikolaou (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-01\/596210558916_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

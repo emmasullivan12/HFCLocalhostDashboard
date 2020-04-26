@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Clockwise from bottom left, that's Elsa, Emma, Nadia, Sophie, and Isla.",
+        "ts": "1587260964.001500",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1095557118528_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "We breed labradors, so we get a lot of them around. :slightly_smiling_face:",
+        "ts": "1587260978.001600",
+        "username": "Andrew Z (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-04-18\/1095557196496_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

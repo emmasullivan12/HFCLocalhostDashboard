@@ -1,0 +1,210 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Jane.  It can feel really scary making choices.  In my experience the most important thing is to do what you love and enjoy as you’ll do well.  If you’re studying something you’re not passionate about it’s really difficult to do well.  Most decisions in life are not forever.  Lots of people I know have had varied paths in their careers, moving and transitioning until they find the right fit.  Some of them went to university later after working for a while or not at all.  Some of my team have done complete career changes.  If someone is passionate about something there is always a way to get there. My advice would be to follow your passions.",
+        "ts": "1569233448.001600",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/756818962306_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In relation to 2D animation that’s not something we do much of here at Union, but again lots of animation courses start with a generic course that lets you try your hand at 2D and 3D animation as well as other things and see what you enjoy before specializing.  Many of them have not ended up where they started.  3D people who are now more passionate about compositing etc.",
+        "ts": "1569233536.001700",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771451168391_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "These links might be helpful to give you a better idea of the kind of jobs in Animation and Visual Effects.",
+        "ts": "1569233615.001800",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769129369268_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.screenskills.com\/careers\/job-profiles\/animation\/>",
+        "ts": "1569233616.001900",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/756821535554_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ScreenSkills",
+                "title": "Careers in animation  - ScreenSkills",
+                "title_link": "https:\/\/www.screenskills.com\/careers\/job-profiles\/animation\/",
+                "text": "ScreenSkills",
+                "fallback": "ScreenSkills: Careers in animation  - ScreenSkills",
+                "image_url": "https:\/\/screenskills-web-images.azureedge.net\/content\/img\/og\/screenskills.png",
+                "from_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/animation\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 8040,
+                "service_icon": "https:\/\/screenskills-web-images.azureedge.net\/Content\/img\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/animation\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/www.screenskills.com\/careers\/job-profiles\/visual-effects-vfx\/>",
+        "ts": "1569233634.002100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/756821812082_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "ScreenSkills",
+                "title": "Careers in VFX  - ScreenSkills",
+                "title_link": "https:\/\/www.screenskills.com\/careers\/job-profiles\/visual-effects-vfx\/",
+                "text": "ScreenSkills",
+                "fallback": "ScreenSkills: Careers in VFX  - ScreenSkills",
+                "image_url": "https:\/\/screenskills-web-images.azureedge.net\/content\/img\/og\/screenskills.png",
+                "from_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/visual-effects-vfx\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 8040,
+                "service_icon": "https:\/\/screenskills-web-images.azureedge.net\/Content\/img\/favicons\/apple-touch-icon.png",
+                "id": 1,
+                "original_url": "https:\/\/www.screenskills.com\/careers\/job-profiles\/visual-effects-vfx\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also trying to get an idea of a day in the life in these different companies is worth while.  I found this Pixar video <https:\/\/www.youtube.com\/watch?v=fytHjRvkn-U>",
+        "ts": "1569234023.002300",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769135608692_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "Behind the scenes at Pixar",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=fytHjRvkn-U",
+                "author_name": "The Guardian",
+                "author_link": "https:\/\/www.youtube.com\/user\/TheGuardian",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/fytHjRvkn-U\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: Behind the scenes at Pixar",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/fytHjRvkn-U?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=fytHjRvkn-U",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=fytHjRvkn-U"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And one for VFX from ILM <https:\/\/www.youtube.com\/watch?v=eDoVcGPw_3o>",
+        "ts": "1569234074.002500",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/771459442007_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "YouTube",
+                "service_url": "https:\/\/www.youtube.com\/",
+                "title": "VFX: Going Behind The Magic, Episode 1: ILM Creating The Impossible",
+                "title_link": "https:\/\/www.youtube.com\/watch?v=eDoVcGPw_3o",
+                "author_name": "TheAloomaX",
+                "author_link": "https:\/\/www.youtube.com\/user\/TheAloomaX",
+                "thumb_url": "https:\/\/i.ytimg.com\/vi\/eDoVcGPw_3o\/hqdefault.jpg",
+                "thumb_width": 480,
+                "thumb_height": 360,
+                "fallback": "YouTube Video: VFX: Going Behind The Magic, Episode 1: ILM Creating The Impossible",
+                "video_html": "<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/eDoVcGPw_3o?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/www.youtube.com\/watch?v=eDoVcGPw_3o",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/youtube.png",
+                "id": 1,
+                "original_url": "https:\/\/www.youtube.com\/watch?v=eDoVcGPw_3o"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "There are of course lots of different companies that exist many of whom are much smaller than these two giants, so quite different as animation is prolific in corporate, social media and commercials content as well as for feature film and TV.  There is a lot of variety.",
+        "ts": "1569234127.002700",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769606017573_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hope some of this helps.  Have a read\/look and then lets have a chat about your thoughts.  I am really happy to try to answer any questions you may have.",
+        "ts": "1569234160.002800",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769606559669_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Realised I haven’t answered this question: Were there any times where you felt worried about this issue, and how did you overcome it?",
+        "ts": "1569240484.002900",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769235620900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So… absolutely.  I have felt pressured and stressed and it’s really hard to make decisions that you feel might impact the rest of your life when you’re not 100% sure what you want to do.  I don’t think I really knew what I wanted to do until I was in my early 20s and even then it was more about what industry I wanted to do it in as opposed to my exact job.  We go to school a bit earlier in Scotland so I was making big subject choices at 15 which is really young.  I was influenced by my parents and the school.  I don’t regret my choices, but if I had my time again I might have gone a different way.  I only knew what I knew.  I think do as much reading and fact finding as you can and really think about what you enjoy.  This will help steer your choices.",
+        "ts": "1569240693.003000",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769707977333_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Can you tell me what the choices are you are looking at right now?  Is this your A Level choices? What subjects are you doing currently and where are you struggling to decide? I might be able to help a bit better if you can share this.",
+        "ts": "1569240740.003100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-09-23\/769239931012_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

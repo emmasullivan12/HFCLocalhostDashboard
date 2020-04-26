@@ -1,0 +1,123 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Halima!",
+        "ts": "1546940603.004900",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/520279690422_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Don't worry, the more information the better! :blush:",
+        "ts": "1546940635.005000",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/518710286212_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That completely makes sense with your decision to pursue Architecture over Teaching... and great to hear that you've spent some time browsing TED talks and articles! It's a really useful resource and one that I constantly use myself.",
+        "ts": "1546940806.005100",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/518880213618_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you for sending across your CV - I'm going to review it and let you know my thoughts. I'm also checking with Dexter to see whether we can collaboratively work on it in an external programme, or if it's best to share the Word doc via Slack. I'll let you know soon.",
+        "ts": "1546940899.005200",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/518712883028_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And thank you for telling me about your experience with interviews, it's really helpful for me to understand what you've gone through so far. The interview for Head Girl sounded tough and I'm not surprised that you felt nervous... especially with the ear infection issues!",
+        "ts": "1546941061.005300",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/518277715809_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "The good news is that you've already got some experience and we can work on different techniques to control your nerves... plus, *preparation* for interviews is 100% allowed and encouraged!!",
+        "ts": "1546941172.005400",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/519084904933_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It's not considered cheating and in fact it can be viewed a bit like an exam - you don't know exactly what questions you're going to be asked, but you have a rough idea, so you can prepare your answers in the same way you'd revise for an exam :slightly_smiling_face:",
+        "ts": "1546941220.005500",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/518779722435_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So we can work on interview preparation together whenever you'd like... it's useful for your university interviews and will no doubt come in use later in your career when you have job interviews",
+        "ts": "1546941290.005600",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/518780420931_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've had a quick flick over your personal statement too and it looks very impressive - I'll read it in detail soon and let you know my thoughts :+1:",
+        "ts": "1546941388.005700",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/518148718480_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "In the mean time... have you heard of the STAR technique to answer interview questions? :slightly_smiling_face:",
+        "ts": "1546941580.005800",
+        "username": "Arran Lawson (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/519088996581_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "That's great! Thank you so much :slightly_smiling_face:",
+        "ts": "1546984900.005900",
+        "username": "Halima Haq (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-01-08\/519325088467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

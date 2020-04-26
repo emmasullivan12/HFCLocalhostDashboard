@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Sophie!!",
+        "ts": "1511969772.000415",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-29\/278532720720_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "So I was on annual leave on Monday and yesterday but here goes for today!",
+        "ts": "1511969793.000347",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-29\/278533053872_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Today I worked: from 8:30 and will leave around 6\nToday’s task was: A few meetings and preparing a presentation for an audit day on Friday\nToday my colleague told me: Someone from my old team who I bumped into said they missed me because I got things done, which was nice!\nToday I’m learning: about spinning lots of plates at once!\nToday I felt: Good! Refreshed as I had a good nights sleep last night :+1::skin-tone-4:",
+        "ts": "1511969932.000919",
+        "username": "helenkw12 (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2017-11-29\/279235644900_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

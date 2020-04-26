@@ -1,0 +1,106 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Guian. Back from my holiday.  We posted a lovely member profile this month on a stop motion animator. <http:\/\/www.animatedwomenuk.com\/heathercolbert_illustrator_and_animator\/>",
+        "ts": "1534499394.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/417672343056_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Animated Women UK",
+                "title": "Member profile | Heather Colbert | Illustrator and Animator - Animated Women UK",
+                "title_link": "http:\/\/www.animatedwomenuk.com\/heathercolbert_illustrator_and_animator\/",
+                "text": "What inspired you to start Stop-motion Animation? I came to animation through my illustration degree; we had a puppet making project in our 1st year that ignited my interest in stop motion and puppet making. The character I made was a Frankenstein’s monster-style slave, doomed to an eternity of stirring a vat of fudge! ItContinue reading →",
+                "fallback": "Animated Women UK: Member profile | Heather Colbert | Illustrator and Animator - Animated Women UK",
+                "thumb_url": "http:\/\/www.animatedwomenuk.com\/wp-content\/uploads\/2018\/08\/PHOTO-FOR-ASF.png",
+                "ts": 1533657661,
+                "from_url": "http:\/\/www.animatedwomenuk.com\/heathercolbert_illustrator_and_animator\/",
+                "thumb_width": 253,
+                "thumb_height": 252,
+                "id": 1,
+                "original_url": "http:\/\/www.animatedwomenuk.com\/heathercolbert_illustrator_and_animator\/"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi hope you had a great holiday, thanks for this post.",
+        "ts": "1534503060.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418564668869_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I had a great holiday.  Thank you. Are you going away this summer?  Also do you have a blog or online presence with any of your work?  I'm putting out some feelers to see if we can get you some work experience.",
+        "ts": "1534509209.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418335971235_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "thanks I just came back from a holiday last week as well. I do have a blog in wordpress that's details my work in college it's called 'interactive media and games design- Guian benson-quarm'",
+        "ts": "1534519596.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/419923130278_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Where did you go?  Did you have a good time?  With friends or family?",
+        "ts": "1534522499.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418624693890_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "First  I went to Scotland with family about two weeks ago, and I just came back from a camping trip with my girls brigade last week",
+        "ts": "1534523326.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418502119539_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sounds nice.  I'm from Scotland. Where did you go?",
+        "ts": "1534539891.000100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/419849391255_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "to Glasgow and then to Oban sell and in the way home we stopped in Edinburgh ",
+        "ts": "1534543070.000100",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418705820563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

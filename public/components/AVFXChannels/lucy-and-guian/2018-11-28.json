@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Would you like to say hello in person one day Guian? You're very welcome to come and visit Union <http:\/\/www.unionvfx.com|www.unionvfx.com> and we can have coffee or go for lunch and have a chat - my shout! :slightly_smiling_face:",
+        "ts": "1543411164.000900",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/489485975169_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes of course!! I would love to meet you. I'm  free Monday or tuesday next week so I can come on those days if that s alright.:smile:",
+        "ts": "1543411628.001000",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/491147145399_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Great.  Tuesday would suit me.  Do you want to come at 12.30?  I can show you around and then take you for some lunch. I'm 18 Rathbone Place, London W1T 1HX. Nearest Tubes are Tottenham Court Road (Central\/Northern), Goodge Street (Northern) and Oxford Circus (Central\/Victoria).",
+        "ts": "1543412735.001100",
+        "username": "Lucy (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/489374303264_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Sure that sounds great ",
+        "ts": "1543412957.001200",
+        "username": "Guian (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2018-11-28\/490115335794_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

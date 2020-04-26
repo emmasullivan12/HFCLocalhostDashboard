@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Gregorio how are you doing? Are you free at 1 today for a catch up?",
+        "ts": "1575539850.005800",
+        "username": "Benjamin Lane (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-05\/860501590852_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

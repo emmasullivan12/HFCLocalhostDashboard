@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Richard !! I’m doin good thank you :) \nHow are you ? How’s it going ? ",
+        "ts": "1582279666.000200",
+        "username": "Sachin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-21\/951399058979_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

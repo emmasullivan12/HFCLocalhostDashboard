@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hi Ali,\n\nApologies for the late response. I've been away on holiday, but I'm back now. Hope you're feeling better?\n\nLooking forward to seeing your website when it's up!\n\nIn terms of which animation\/type of project I like to do: when I was younger, I always preferred the idea of cartoony, full CG stuff. I had the Disney\/Pixar dream. I've never actually applied to work at either of those companies. I went for live action, since this industry is so big in London. I am completely satisfied working for live action movies. The animation I do for previs anyway is relatively rough and blocky, so in my field I don’t feel like I'm missing out. Plus Disney animation is grounded in realistic motion and real-world physics. Animation is animation, whichever style you go for, and the same principles and techniques cover everything.\n\nDneg was my first job after graduating. It was definitely new and exciting to start working there. I went from doing personal projects and working alongside fellow students with similar levels of knowledge to me, to suddenly being a part of a huge company with proprietary software and established pipelines.\n\nI didn't think too much about what to expect at Dneg after being hired. I definitely had a presumption that I would be hired straight away into my field of choice (at the time I wanted to be a rigger). I didn't realise that people straight from uni normally had to start out being a runner or be in matchmove (if 3D was their thing) or be in prep and roto (if 2D was their thing). I started out in layout and techAnim, because the company was working on a very animation-heavy show at the time. What this meant was that I prepped scenes for animators, and then fixed the scenes after they were animated if they weren't going through the pipeline correctly. I did find it strange that someone as junior as me was responsible for prepping and fixing things. But looking back, it was hardly a glamorous job, so someone had to do it, and I always had leads and supervisors above me to help me if I got stuck.",
+        "ts": "1555443131.000100",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/598592240467_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "It was pure dumb luck that I got into animation so early in my career. The fact was they needed more animators on this animation-heavy show. So I, along with a bunch of other newbies, applied to move to animation. We all had to do a walk or run cycle, and 2 people were chosen to be put into animFix. I happened to sit next to a senior animator at Dneg, so he gave me lots of tips and advice for my run cycle. So I managed to win one of those anim spots. AnimFix was fixing animation. For instance, if someone had animated with the feet going below the ground, or intersecting in a way that broke the cloth sim etc, I would go in and change the animation to solve the problem. So although I was animating, I still wasn't a proper animator.\n\nI discovered previs, again by dumb luck. The animation-heavy show was coming to an end, and I knew they would be reducing their animators back to a normal amount and that I would most likely be kicked back into a more junior job. I overheard someone in my room talking about previs. I asked them what it was. They explained, and I thought that it sounded cool. It sounded like it involved some animation, and I desperately didn't want to stop animating and go back to square 1 after I fought to get there. Fortunately Dneg had a previs department. I simply asked to be assigned to previs. They said no to begin with, and put me in body tracking. But I asked again, and eventually they let me. It must have been good timing. I was very junior, and I assume that when I asked this time, previs must have been ready for juniors.\n\nSo I didn't retrain or take a course. I learned the job on the job. I was trained up in the previs department by my coworkers. I instantly preferred this department, because I felt part of a small, tight-knit team that all sat and worked together and I found I could progress more rapidly there. Animation on the animation-heavy show at Dneg was massive and we were all scattered about amongst the building, and I was at the bottom of that department. I don't really know how animation felt there on normal-sized shows. But I learned around this time that I prefer being part of a smaller team than being a part of a huge company. I could stand out more in previs.\n\n\nDneg pulled me away from previs a few times to put me back into animation over the next couple of years. I was going from blocking out whole sections of sequences in previs, to being a junior animator that animated minor things to finals standard. I eventually left Dneg to do previs full-time. I'm sure if I'd've stayed I could have worked my way up in animation, but I had already decided that previs was the path I wanted to take.",
+        "ts": "1555443159.000200",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/610095993328_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I cannot give a fair assessment of how previs truly compares to animation as I only animated in a junior capacity. Once I found previs, I never wanted to go back. But plenty of coworkers I know love both animation and previs and bounce between the two. So if you're more of a freelance\/short contract sort of person, you don't have to choose.\n\n\nAnimation is a huge part of previs. On average, we do maybe 2 or 3 shots a day per person. It's really hard to quantify how much of this time is spent animating, as every show is so different. Also you want to work as fast as possible, so we use mocap from our library where possible. We also grab stuff from other peoples scenes where possible. There are no awards for creating things from scratch. The aim is to be as efficient as possible. But I would say that at least half of my working time is spent animating. That includes character animation, camera animation and applying and adjusting mocap. The rest of the time is mostly spent adding FX, lighting and a little bit of compositing where needed.\n\n\nWhatever you decide to go into, it's important to have a good passion and knowledge for cinematography. In previs, the most important thing is an understanding of cinematography and an eye for composing a good shot. I can recommend books and websites if you like, but I think the following is a good, fun resource to start with:\n\n<http:\/\/floobynooby.blogspot.com\/2013\/12\/the-cinematography-of-incredibles-part-1.html>",
+        "ts": "1555443174.000300",
+        "username": "Jen (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-04-16\/613964767558_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "title": "The Cinematography of \"The Incredibles\" Part 1",
+                "title_link": "http:\/\/floobynooby.blogspot.com\/2013\/12\/the-cinematography-of-incredibles-part-1.html",
+                "text": "Here is Part 1 of 3 on a case study of the shot compositions from Pixar's film \"The Incredibles, I'll go over how the relationships of all ...",
+                "fallback": "The Cinematography of \"The Incredibles\" Part 1",
+                "image_url": "http:\/\/1.bp.blogspot.com\/-BejKyYPFOwQ\/TbQ3zynkFiI\/AAAAAAAAQ-k\/aFnerl4Kr_o\/w1200-h630-p-k-no-nu\/the-incredibles-20041018000853492.jpg",
+                "from_url": "http:\/\/floobynooby.blogspot.com\/2013\/12\/the-cinematography-of-incredibles-part-1.html",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 189715,
+                "service_icon": "http:\/\/floobynooby.blogspot.com\/favicon.ico",
+                "service_name": "floobynooby.blogspot.com",
+                "id": 1,
+                "original_url": "http:\/\/floobynooby.blogspot.com\/2013\/12\/the-cinematography-of-incredibles-part-1.html"
+            }
+        ]
+    }
+]

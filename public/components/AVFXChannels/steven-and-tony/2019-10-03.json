@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Tony, apologies for the lack of contact! Has been quite busy at work and with life in general! How are you doing? Have you made any progress with your showreel? Hope things are going well for you, I'll try to be a lot more active here!!",
+        "ts": "1570113215.000100",
+        "username": "Steven (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-03\/782162244276_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

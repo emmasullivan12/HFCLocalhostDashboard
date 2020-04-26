@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Alex! \nYou remember how I was planning on doing a game for my A-level coursework??\nWhile I was thinking about it I thought how about I try making a shopping app",
+        "ts": "1564438875.000100",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-29\/703351567217_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Since I suppose thatit would be a lot easier to come up with clients and stakeholders and such for a shopping app than it would for a game",
+        "ts": "1564438923.000200",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-29\/709709632517_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "What do you think??\nShould I go with the shopping cart idea?",
+        "ts": "1564438963.000300",
+        "username": "Janies (Mentee)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-07-29\/703352607153_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

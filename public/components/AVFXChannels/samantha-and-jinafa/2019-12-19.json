@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And no problem for the CV! It's my pleasure. I know how hard it is to get noticed when you have \"no experience\". Having said that you really do have a lot of experience to demonstrate already - you've nailed it and shows you make realyl good use of your time.",
+        "ts": "1576752955.000100",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/880141789168_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "From reading CVs from job applications and then meeting them in person I know that people are often much better in person \/ have so much more to offer than their CV portrays....its just about marketing yourself well! I think this new CV of yours is brilliant now :smiley: I only did some wordsmithing...you did all the hard word getting the experience to put on it!",
+        "ts": "1576753022.000200",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/868675090867_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't have time right now but I will look at your CV later (hopefully by end of the week)",
+        "ts": "1576753037.000300",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/882003056647_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "looks like you've filled in those red bits and added some more thoughts which is great. Will let you know what I think asap! Have a lovely rest of the week girl!",
+        "ts": "1576753065.000400",
+        "username": "Samantha (Mentor)",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-12-19\/867361117282_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

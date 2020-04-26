@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey! That's fine, What projects you been doing? You doing alright with it all?",
+        "ts": "1571936245.000200",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-24\/807968416416_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "How's the job hunting and stuff going as well? Have you been looking around or making any progress? Stuff my end is all good, we've just wrapped up on Watchmen and a short sequence for another tv show (which I can't say!) and we'll be starting on a new film in the next few weeks (again, NDA), but keeping busy!",
+        "ts": "1571936305.000300",
+        "username": "Thomas Thornton (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-24\/795186767522_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

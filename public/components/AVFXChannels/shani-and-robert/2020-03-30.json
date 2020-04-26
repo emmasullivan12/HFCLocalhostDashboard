@@ -1,0 +1,94 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "No I hadn't seen any of the message, strange that it didn't come through haha. That's really great feedback thank you, I've got about a month left before my deadline so I'll will definitely be adding too it and making the changes you have suggested. Hopefully I can find a nuke solution to breaking up the edges as I've lost access to the renderfarm now the uni has shut! \n\nI was slightly worried about the colours of the digidouble, do you think it is matching well enough? \n\nI've got a little showreel I've put together that I will send through, you thoughts on that would be greatly appreciated too :) \n\nThanks again for the great feedback, I hope your week is good and a little more normal than the last!",
+        "ts": "1585555462.003300",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1034226409620_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "This is my showreel: <https:\/\/vimeo.com\/330340376|https:\/\/vimeo.com\/330340376>",
+        "ts": "1585556021.003400",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1034246315252_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Robert Hales - Showreel 2020",
+                "title_link": "https:\/\/vimeo.com\/330340376",
+                "author_name": "robert hales",
+                "author_link": "https:\/\/vimeo.com\/user97388214",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/865258839_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Robert Hales VFX Showreel 2020\nContact: \nDigital Art BA (Year 3) at The University of Kent\n\nBreakdown:\n\nShot 1 - Tracked shot in PFTrack, removed cone and parking meter using multiple patches projected onto cards in 3D space in Nuke.\n\nShot 2 - Tracked shot in Nuke, modelled Cafetiere in Maya, textured in Substance Painter, rendered using Arnold, composited in Nuke.\n\nShot 3 - Tracked shot in Nuke, ocean simulation in Houdini, boat modelled in Maya, rendered using Arnold, composited in Nuke.",
+                "fallback": "Vimeo Video: Robert Hales - Showreel 2020",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/330340376?autoplay=1&amp;app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"Robert Hales - Showreel 2020\"><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/330340376",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/330340376"
+            }
+        ],
+        "edited": {
+            "user": "B6CS60LDU",
+            "ts": "1585556022.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I don't think we're in normal land anymore..\n\nTo your question, I do think the double works pretty good but it's hard for me to look at every frame as I don't have the render.\n\nFor the edges, you can use 'roughen edges' on the alpha of the hole and for the cracks, you can Google 'asphalt crack texture' or something like that and just project it around the hole (you can use it as an alpha to darken cracks on the original plate).\n\nHope that helps, let me know if it doesn't ;)",
+        "ts": "1585556028.003600",
+        "username": "Shanih (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1023262125075_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thank you very much, give that a try:)",
+        "ts": "1585556115.003700",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1021970839746_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "As for my showreel, I'm not sure about the first shot but wanted to include a paint shot for a running role I applied for and all my paint work was tied up in this project!",
+        "ts": "1585556199.003800",
+        "username": "Robert Hales (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1034687357109_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I'll have a look!",
+        "ts": "1585556517.003900",
+        "username": "Shanih (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-03-30\/1021984976770_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

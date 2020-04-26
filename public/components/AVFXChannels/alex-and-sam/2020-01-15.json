@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Thats a really good idea! Ill have to try this for my portfolio",
+        "ts": "1579105529.006500",
+        "username": "Sam Cassidy (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-01-15\/909932903094_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

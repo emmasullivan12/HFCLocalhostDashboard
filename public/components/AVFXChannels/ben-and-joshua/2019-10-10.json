@@ -1,0 +1,168 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1570708153.000200",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": ":champagne: _You have opened a new, empty shared channel._ \n_Share <https:\/\/www.smooz.io\/room\/5d9f1ab8e6591d0004439b1a|this link> with other teams to invite them in it_",
+        "ts": "1570708153.000300",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1570708153.000500",
+        "user": "U6D2VCN07",
+        "text": "<@U6D2VCN07> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1570708399.000600",
+        "user": "U4VR52RQE",
+        "text": "<@U4VR52RQE> has renamed the channel from \"z-shared-23\" to \"ben-and-joshua\"",
+        "old_name": "z-shared-23",
+        "name": "ben-and-joshua"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1570708405.000800",
+        "user": "U4V22C6A1",
+        "text": "<@U4V22C6A1> has joined the channel",
+        "inviter": "U4VR52RQE"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Students (beta)* joined the shared channel_",
+        "ts": "1570708726.000900",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_Team *Prospela Mentors (beta)* joined the shared channel_",
+        "ts": "1570708728.001000",
+        "username": "Smooz",
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@benjohnstonvfx has joined the channel_",
+        "ts": "1570709027.001100",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792501855639_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@jryanfett has joined the channel_",
+        "ts": "1570709041.001200",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790181182148_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Joshua, please meet Ben your incredible E-Mentor I've been telling you about :smile:.  Feel free to introduce yourselves, say a little bit about what you would like to get out of the mentorship and continue chatting within this channel. :wave:\n\nI will now be leaving the channel, but please direct message myself or emma-prospela if you have any questions. All the best for now! :slightly_smiling_face:",
+        "ts": "1570709051.001300",
+        "username": "Dexter Boyce (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792854366710_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1570709067.001400",
+        "username": "smooz (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792502604343_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "_@dexter has left the channel_",
+        "ts": "1570709072.001500",
+        "username": "smooz (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/792854754902_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hello Ben, my name is Josh and I'm a 2nd year student studying VFX at Norwich University of the Arts and am considering going down the route of compostier. Thank you for taking the opportunity for being my mentor!",
+        "ts": "1570709592.001600",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790660828021_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Hey Josh! How’s it going dude? \n\nThat cool! How are you finding it so far? What kind of modules do you have there? That’s great that you are already thinking of heading towards comp for a career. I was the same at uni tbh, within a few months I knew that cool was where I wanted to go. \n\nI guess a little bit about me, I’m currently a roto&amp;prep lead at DNEGTV. I’ve been at Dneg for nearly 3 years and started as a runner. I then moved up after a few months into the Tech Check position (the most junior 2d role in DnegTV) then have moved my way up from there!\n\nRight now I am comping on a show for Sky\/HBO but I have just finished work on Chernobyl and Dark Crystal: Age of Resistance for Netflix. \n\nIs there any questions you have at the outset? \n\n(I’ve only just started this mentoring thing btw so sorry if I’m a bit slow to reply \/ don’t make much sense. Just say and I’ll explain stuff another way!)",
+        "ts": "1570716332.001700",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/784385036881_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I've found the course so far interesting the projects for 2nd year have been breilfy outlined but so far am focused on project orb which includes collaberation with film students and briefly sound students. The course has made me view how I watch tv\/film different, trying to think what technqiues are applied here and there, what's real and what's practical mean I've been more interested in vfx in television rather than film. \n\nI've been reading about compositing over summer, and what I like about it is that it's like a puzzle putting all the pieces together!\n\nI love HBO shows, and am going to pick up Chernobyl soon and I've seen the vfx breakdown on Instagram! Have you heard about HBO's adaptation of watchmen?\n\nI have a couple of questions (at this moment)\nWhat's the difference between working in the TV and film departments?\nWhat does the TechCheck position intail?",
+        "ts": "1570726236.001800",
+        "username": "Joshua Carter (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/790635748980_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Ahh that’s awesome! Honestly doing the collaborative projects are the best thing you can do. If you want to work on high budget TV and film you are gonna be working with loads of people so being to get on and to understand their tools and how they talk about images and film making are a god send when you get into industry.\n\nYeah that’s what I like about comp tbh. Some days it could just be adding a monitor graphic to a screen and other days it’s doing a full CG shot where you have complete control on how it looks (based on what the VFX &amp; 2D supes want too :wink:)\n\nChernobyl was a really cool project to work on. We were the sole vendor so got all the shots which was nice. Plus the show runner was really keen on having everything be authentic which was nice to see. There is a cool podcast that goes along side each episode if your into that sort of thing. I really enjoyed watching it too which is a bonus. :wink:\n\nI have seen the new Watchmen! I have a couple mates who are working  on the vfx for it now actually.\n\nSo for me, the main differences I have seen between TV and film are: In TV the deadlines are a lot more broken up than in film. A VFX company will normally have to deliver their shots for a film on a particular day. Which leads to everyone rushing to get their stuff done coming up to that deadline. Whereas in TV we normally have episodic delivery. So we will be delivering episodes one after the other. This means production have a bit more time to organise artists time and make sure people aren’t over worked. Generally, atleast in DNEGTV, we tend to work 9am-6pm and don’t tend to have much (if any) crunch time on projects. Which I really like. \n\nFrom my point of view the quality of VFX work done is pretty much the same. However in TV there is sometimes some more leniency depending on what the client is paying is for aswell as wether it will break the flow of the shot in the cut with the non vfx shots around it.\n\nSo at DNEGTV every vfx shot goes through a tech check. Basically the person doing the tech check compares every frame of the final comp against the scan and make sure we aren’t changing more than we should be. That goes down to if the grain we are adding to our CG or prep work matches that in the scan. So after the shot gets approved in dailies review by the vfx supe, the shot gets sent to tech check. It’s basically the final check to make sure we haven’t missed anything or changed something we shouldn’t have. In film and at other vendors this gets done by 2D and vfx supes. \n\nI found it a really good way to train my eye to what common mistakes compers make and what ways to fix them. It also is a really good way to get to know the 2D supes which is good because they are the ones who now give me comp shots to work on.\n\nLet me know if that all makes sense or if I’ve been hella confusing... :P",
+        "ts": "1570743760.001900",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/778731588754_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also I saw your LinkedIn invite. The access vfx and prospella people asked us not to send or accept social media connections. I think in the program then have school kids and stuff and it’s a safe guarding issue for them. I’ll double check with them and let ya know what they say! ",
+        "ts": "1570744038.002000",
+        "username": "Ben (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-10\/793371732983_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

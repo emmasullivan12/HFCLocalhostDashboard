@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I good starting point is to look at the reels of people who already have the kind of job you want to do, so go hunting for artists that you like then see if you can find their reels on the interenet.",
+        "ts": "1570536050.001300",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/787586487392_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "internet",
+        "ts": "1570536053.001400",
+        "username": "Colin (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-08\/776099264947_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

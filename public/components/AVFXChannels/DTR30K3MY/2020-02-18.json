@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If you're not sure how to do something in Slack, *just type your question below*.\n\nOr, choose a button to try one of the following quick steps:",
+        "ts": "1582040822.000100",
+        "user": "USLACKBOT",
+        "username": "slackbot",
+        "bot_id": "B01",
+        "attachments": [
+            {
+                "callback_id": "slackbotresponse_button",
+                "id": 1,
+                "actions": [
+                    {
+                        "id": "1",
+                        "text": "Add a Profile Photo",
+                        "type": "button",
+                        "style": "primary",
+                        "url": "slack:\/\/edit-profile?team=T4UUTPV18&id=UTTNC1BJM",
+                        "name": "actionable_edit_profile_button"
+                    },
+                    {
+                        "id": "2",
+                        "text": "Join Channels",
+                        "type": "button",
+                        "style": "primary",
+                        "url": "slack:\/\/channel-browser?team=T4UUTPV18&id=UTTNC1BJM",
+                        "name": "actionable_join_channels_button"
+                    },
+                    {
+                        "id": "3",
+                        "name": "actionable_format_messages_button",
+                        "text": "Format Messages",
+                        "type": "button",
+                        "value": "Format Messages",
+                        "style": "primary"
+                    }
+                ]
+            }
+        ]
+    }
+]

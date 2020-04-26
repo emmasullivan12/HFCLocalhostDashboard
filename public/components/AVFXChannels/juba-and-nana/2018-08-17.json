@@ -1,0 +1,167 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Well I shoot a video of myself doing the action for reference.\nfor example: <https:\/\/vimeo.com\/38332730>",
+        "ts": "1534505569.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418307653891_48.png"
+        },
+        "bot_id": "B6CS60LDU",
+        "attachments": [
+            {
+                "service_name": "Vimeo",
+                "service_url": "https:\/\/vimeo.com\/",
+                "title": "Horton Hears a Who Comparison Reel",
+                "title_link": "https:\/\/vimeo.com\/38332730",
+                "author_name": "jeff gabor",
+                "author_link": "https:\/\/vimeo.com\/jeffgabor",
+                "thumb_url": "https:\/\/i.vimeocdn.com\/video\/263767963_295x166.jpg",
+                "thumb_width": 295,
+                "thumb_height": 166,
+                "text": "Here is the original comparison reel. I created this as my first attempt to help aspiring animators understand the process to creating feature film animations.\nI hope it still finds a use. I'm very proud of the animations I was part of on that movie. It was definitely a very special crew we had, and a very special movie.",
+                "fallback": "Vimeo Video: Horton Hears a Who Comparison Reel",
+                "video_html": "<iframe src=\"https:\/\/player.vimeo.com\/video\/38332730?autoplay=1&app_id=122963\" width=\"400\" height=\"225\" frameborder=\"0\" title=\"Horton Hears a Who Comparison Reel\" webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>",
+                "video_html_width": 400,
+                "video_html_height": 225,
+                "from_url": "https:\/\/vimeo.com\/38332730",
+                "service_icon": "https:\/\/a.slack-edge.com\/bfaba\/img\/unfurl_icons\/vimeo.png",
+                "id": 1,
+                "original_url": "https:\/\/vimeo.com\/38332730"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Also, let me know your thoughts of what you asked me about Uncharted etc.",
+        "ts": "1534505608.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418583892085_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "For me it depends.",
+        "ts": "1534510548.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/419815065990_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "If it a game has been built to tell stories like uncharted, then I think it's fine.",
+        "ts": "1534510666.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418246885348_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "However with something like the new Tomb Raider, where it still feels like a game a it's core, than things like the monatomas amount of quick time event make it feel like story with game mechanics rather than a game with a story.",
+        "ts": "1534510839.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/417921566273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Oh, the game jam theme was awesome per second.",
+        "ts": "1534511235.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/419821924630_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "I think of it as \"injection of pace\".",
+        "ts": "1534511252.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418630273813_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "uuuuuh that sounds really interesting!",
+        "ts": "1534525372.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418658269426_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "how did it go?",
+        "ts": "1534525377.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418096991409_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "or is it still happening?",
+        "ts": "1534525383.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418526050563_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Still on going!",
+        "ts": "1534525400.000100",
+        "username": "Nana (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418097270449_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Nice! Good luck on it :smiley:",
+        "ts": "1534525433.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418802749349_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "And about the story games, I see where you are coming from, and I agree that intention is everything. The naughty dog games do a better job of blending the game with story.\nI just feel like those games are just trying to emulate what has already been done on film. We know films can be engaging but there's something to pushing the envelope of storytelling in games. It's part of our jobs as artists to explore and invent new ways that might be more interesting for the medium. Naughty Dog and Crystal Dynamics focus a lot on pushing the realism technology forward, which is also cool for the industry as a whole =D",
+        "ts": "1534525755.000100",
+        "username": "Juba (Prospela Mentors (beta))",
+        "icons": {
+            "image_48": "https:\/\/slack-files2.s3-us-west-2.amazonaws.com\/bot_icons\/2018-08-17\/418101348273_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]

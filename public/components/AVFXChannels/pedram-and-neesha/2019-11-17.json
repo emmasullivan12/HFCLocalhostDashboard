@@ -1,0 +1,13 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "Yes please. That would be good. If you can give her my details: <mailto:neeshakhan1@gmail.com|neeshakhan1@gmail.com> \nI can ask her about the 2 compositors I was trying to contact. ",
+        "ts": "1574021630.002500",
+        "username": "Neesha Khan (Prospela Students (beta))",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-11-17\/837959717824_48.png"
+        },
+        "bot_id": "B6CS60LDU"
+    }
+]
