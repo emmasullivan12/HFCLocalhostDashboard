@@ -162,7 +162,7 @@ class EduShortSU extends React.Component {
 
   handleUniChange(e) {
     const userInput = e.currentTarget != undefined ? e.currentTarget.value : e;
-    const isValid = userInput.length >= 3;
+    const isValid = userInput.length >= 2;
     if (!isValid) {
       this.setState({
         uniYrGrp: '',
@@ -276,6 +276,7 @@ class EduShortSU extends React.Component {
         }
 
       } else if (eetStatusLocal ==='uni') {
+        console.log("comes here")
         if (uniNameLocal != '') {
           updateUKUni(uniNameLocal, () => {
             updateStep('didEdu', updatingEdu);
@@ -315,6 +316,10 @@ class EduShortSU extends React.Component {
             updateStep('didEdu', false);
           })
         } else {
+          if (requestReview === true) {
+            console.log("sending to review function")
+            sendForReview('schName', reviewReason)
+          }
           updateSchFreeText(schNameFreeTextLocal, () => {
             updateStep('didEdu', false);
           })
@@ -326,6 +331,10 @@ class EduShortSU extends React.Component {
             updateStep('didEdu', false);
           })
         } else {
+          if (requestReview === true) {
+            console.log("sending to review function")
+            sendForReview('uniName', reviewReason)
+          }
           updateUniFreeText(uniNameFreeTextLocal, () => {
             updateStep('didEdu', false);
           })

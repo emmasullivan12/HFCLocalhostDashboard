@@ -431,6 +431,16 @@ hr{
 .Submit-btn.BlankBtn.Grey{
   color: #bfbebe;
 }
+.Submit-btn.BlankBtn.Inline{
+  width: auto;
+  height: auto;
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 0;
+  min-width: 0;
+  padding-left: .2rem;
+  color: rgba(78,78,214,.79);
+}
 .Submit-btn.enableNotif{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -478,6 +488,12 @@ hr{
 .Submit-btn.BlankBtn.Grey:hover,
 .Submit-btn.BlankBtn.Grey:focus{
   color: #8e8e8e;
+  background-color: none;
+}
+.Submit-btn.BlankBtn.Inline:hover,
+.Submit-btn.BlankBtn.Inline:focus{
+  color: #4e4ed6;
+  background-color: none;
 }
 .Submit-btn.HollowBtn:hover,
 .Submit-btn.HollowBtn:focus{

@@ -118,17 +118,25 @@ class ConfirmStudent extends React.Component {
     updateStep('didEduEmail', true)
   }
 
-  handleNoEduEmail() {
-    const {updateStep} = this.props;
+  handleNoEduEmail(emailInput) {
+    const {updateStep, updateEduEmail} = this.props;
+    updateEduEmail(emailInput)
     updateStep('didEduEmail', false)
   }
 
   handleSubmit(e) {
-    const {requestReview, reviewReason, userInput} = this.state;
-    const {updateStep, sendForReview, updateEduEmail} = this.props;
+    const {requestReview, reviewReason, userInput, eduEmailIsValid} = this.state;
+    const {country, updateStep, sendForReview, updateEduEmail, removeFromSendForReview} = this.props;
 
     if (requestReview === true) {
       sendForReview('eduEmail', reviewReason)
+    }
+
+    if (country === 'USA') {
+      if (eduEmailIsValid === true) {
+        const itemToReview = 'uniName'
+        removeFromSendForReview(itemToReview)
+      }
     }
 
     updateEduEmail(userInput, () => {
@@ -466,7 +474,7 @@ class ConfirmStudent extends React.Component {
 
   render() {
     const { onChange, onKeyDown, toggleCheckbox, handleKeyUp } = this;
-    const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider, sendForReview } = this.props;
+    const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider, sendForReview, updateEduEmail, updateStep } = this.props;
     const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol } = this.state;
     const isEnabled = this.canBeSubmitted();
 
@@ -508,6 +516,8 @@ class ConfirmStudent extends React.Component {
                     country={country}
                     eetStatus={eetStatus}
                     handleNoEduEmail={this.handleNoEduEmail}
+                    updateEduEmail={updateEduEmail}
+                    updateStep={updateStep}
                     currCo={currCo}
                     currTrainingProvider={currTrainingProvider}
                     sendForReview={sendForReview}

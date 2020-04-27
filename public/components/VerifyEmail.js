@@ -13,6 +13,7 @@ class VerifyEmail extends React.Component {
       verificationCode: ''
     }
     this.handleChange = this.handleChange.bind(this);
+    this.handleUpdateEmail = this.handleUpdateEmail.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.toggleContainer = this.toggleContainer.bind(this);
   }
@@ -24,9 +25,25 @@ class VerifyEmail extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const { verificationCode } = this.state;
+    const {updateStep, sendForReview, country} = this.props;
     const submission = {
       token: verificationCode
     };
+    if (sendForReview.length > 0) {
+      updateStep('didEmailVerifNeedsRev', false)
+    } else {
+      updateStep('didEmailVerif', false)
+    }
+
+  }
+
+  handleUpdateEmail() {
+    const {updateStep, removeFromSendForReview} = this.props;
+
+    const itemToReview = 'eduEmail'
+    removeFromSendForReview(itemToReview)
+
+    updateStep('didDiversity', false, true) // Send them back to update their student email
   }
 
   handleResendSubmit(e) {
@@ -88,7 +105,12 @@ class VerifyEmail extends React.Component {
           <div className="descriptor subheader">
             <ol>
               <li className="descListItem">Check your junk email folder</li>
-              <li className="descListItem">Did you enter your email address correctly ({emailToVerify})? If not, go back and <a href="https://test.prospela.com/signup">enter it again</a></li>
+              <li className="descListItem">
+                Did you enter your email address correctly ({emailToVerify})? If not, go back and
+                <button type="button" onClick={this.handleUpdateEmail} className="Submit-btn BlankBtn Inline">
+                  enter it again
+                </button>
+              </li>
               <li className="descListItem">Wait a few minutes or alternatively click to resend below</li>
               <button type="submit" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
                 <span >Resend code</span>
