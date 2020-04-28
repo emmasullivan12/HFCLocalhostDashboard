@@ -1029,6 +1029,16 @@ a:active {
 }
 
 /* ICONS */
+
+.reqAsterisk:after{
+  content: " *";
+  margin-left: .1em;
+  font-size: 1.3em;
+  position: relative;
+  top: 2px;
+  color: #ffb6b6;
+}
+
 .buttonIcon{
   padding-right: .5rem;
 }

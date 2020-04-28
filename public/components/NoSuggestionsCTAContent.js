@@ -104,6 +104,7 @@ class NoSuggestionsCTAContent extends Component {
             What&#39;s your {eetStatusLocal === 'uni' ? 'University' : (country === 'GBR' ? 'School' : 'High School')} name?
           </div>
           <form className="eduFreeText-form" id="eduFreeTextForm">
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="schName">Your {eetStatusLocal === 'uni' ? 'University' : (country === 'GBR' ? 'School' : 'High School')} name?</label>
             <input
               name="eduNameFreeText"
               id="eduNameFreeTextModal"

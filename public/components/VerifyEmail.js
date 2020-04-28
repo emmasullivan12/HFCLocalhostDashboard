@@ -73,7 +73,7 @@ class VerifyEmail extends React.Component {
       <React.Fragment>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <div className="descriptor">Enter email verification code</div>
+            <div className="descriptor reqAsterisk">Enter email verification code</div>
             <input
               type="password"
               name="verificationCode"

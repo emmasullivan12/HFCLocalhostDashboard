@@ -282,14 +282,14 @@ class SelectBox extends React.Component {
     }
 
     return (
-      <div className="value">
+      <div className="value overflow-ellipsis">
         { values[0] }
       </div>
     )
   }
 
   renderOptions() {
-    const { options, valueToShow } = this.props
+    const { options, valueToShow, showDetail, detailToShow } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
@@ -297,15 +297,24 @@ class SelectBox extends React.Component {
     }
 
     return (
-      <div className="options">
+      <div className={showDetail===true ? 'options showDetail' : 'options noDetail'}>
         {options.map((option, index) => {
           const hasMultipleAttributes = this.checkMultipleAttributes();
           const value = hasMultipleAttributes === true ? option[valueToShow] : option;
+          const detail = detailToShow == undefined ? '' :  option[detailToShow];
           const selected = values.includes(value)
 
           let className = "option"
           if (selected) className += " selected"
           if (index === focusedValue) className += " focused"
+          if (showDetail===true) {
+            className += " showDetail overflow-ellipsis"
+          } else {
+            className += " noDetail overflow-ellipsis"
+          }
+          console.log("option[detailToShow]: "+option[detailToShow])
+          if (option[detailToShow] === "") className += " extraTop"
+          if (index === options.length) className += " lastItem"
 
           return (
             <div
@@ -318,6 +327,11 @@ class SelectBox extends React.Component {
               onClick={this.onClickOption}
             >
               {value}
+              {showDetail===true && (
+                <div className="option-detail overflow-ellipsis" >
+                  {detail}
+                </div>
+              )}
             </div>
           );
         })}

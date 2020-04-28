@@ -16,7 +16,8 @@
   left: 0;
   right: 0;
   /* max-height: 250px; */
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .autocompleter-items.showDetail{
   max-height: calc(5 * 50px);
@@ -55,7 +56,7 @@
   text-align: left;
   background-color: inherit;
   font-size: 0.8em;
-    padding-top: 3px;
+  padding-top: 3px;
 }
 .autocompleter-item:hover {
   background-color: #e9e9e9;

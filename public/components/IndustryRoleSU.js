@@ -180,7 +180,7 @@ class IndustryRoleSU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
                 <SelectBox
                   options={industryOptions}
                   name='selectInd'
@@ -194,7 +194,7 @@ class IndustryRoleSU extends React.Component {
               </div>
               {(industries != '' || editingInd === true) && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft" htmlFor="selectRole">What <strong>career or profession</strong> do you want to work in?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">What <strong>career or profession</strong> do you want to work in?</label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={roles}
@@ -227,7 +227,7 @@ class IndustryRoleSU extends React.Component {
               )}
               {((rolesChosen != '' && roleValid === true) || editingRole === true) && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft" htmlFor="ratingConfi">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="ratingConfi">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
                   <TextInput
                     name="ratingConfi"
                     id="ratingConfi"
@@ -243,7 +243,7 @@ class IndustryRoleSU extends React.Component {
               )}
               {(ratingConfi != "" || editingRating === true)&& (
                 <div className="form-group">
-                  <label className="descriptor alignLeft" htmlFor="uniNameTextBox">What are the key things <strong>holding you back</strong> from getting there?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="uniNameTextBox">What are the key things <strong>holding you back</strong> from getting there?</label>
                   <TextInput
                     name="holdBackTxt"
                     id="holdBackTxt"

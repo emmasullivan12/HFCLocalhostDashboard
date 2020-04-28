@@ -517,6 +517,7 @@ class TypeformSignUp extends Component {
               <DiversitySU
                 step={step}
                 currentStep="4"
+                country={country}
                 totalMenteeSteps={totalMenteeSteps}
                 updateStep={this.updateStep}
               />

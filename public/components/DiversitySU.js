@@ -14,10 +14,12 @@ class DiversitySU extends React.Component {
     this.state = {
       tabPressed: '',
       hurdles: '',
+      schType: '',
       gender: '',
       ethnicity: '',
     }
     this.handleHurChange = this.handleHurChange.bind(this);
+    this.handleSchTypeChange = this.handleSchTypeChange.bind(this);
     this.handleGenChange = this.handleGenChange.bind(this);
     this.handleEthChange = this.handleEthChange.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
@@ -27,6 +29,12 @@ class DiversitySU extends React.Component {
   handleHurChange(userInput) {
     this.setState({
       hurdles: userInput
+    });
+  }
+
+  handleSchTypeChange(userInput) {
+    this.setState({
+      schType: userInput
     });
   }
 
@@ -52,9 +60,9 @@ class DiversitySU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {hurdles, gender, ethnicity} = this.state;
+    const {hurdles, schType, gender, ethnicity} = this.state;
 
-    if (hurdles != "" && gender != '' && ethnicity != "") {
+    if (hurdles != "" && schType != "" && gender != '' && ethnicity != "") {
       return true;
     } else {
       return false;
@@ -63,15 +71,31 @@ class DiversitySU extends React.Component {
   }
 
   render() {
-    const {tabPressed, hurdles, gender} = this.state;
-    const { step, currentStep, totalMenteeSteps } = this.props;
+    const {tabPressed, hurdles, schType, gender} = this.state;
+    const { step, currentStep, totalMenteeSteps, country } = this.props;
 
     const hurdlesList = [
       {value: '0', label: 'Eligible for Free School Meals'},
-      {value: '1', label: '1st in my family to go to university'},
+      {value: '1', label: 'My parents didn\'t go to university'},
       {value: '2', label: 'Non-native English speaker'},
       {value: '3', label: 'None'},
       {value: '4', label: 'Prefer not to say'}
+    ];
+
+    const uKschAttendedList = [
+      {value: '0', label: 'State-run/funded school', detail: ''},
+      {value: '1', label: 'Independent or fee-paying school ', detail: 'with bursary'},
+      {value: '2', label: 'Independent or fee-paying school', detail: 'no bursary'},
+      {value: '3', label: 'Home-schooled', detail: ''},
+      {value: '4', label: 'Prefer not to say', detail: ''}
+    ];
+
+    const schAttendedList = [
+      {value: '0', label: 'Public school/state-funded (selective)', detail: ''},
+      {value: '1', label: 'Private or fee-paying school ', detail: 'with scholarship'},
+      {value: '2', label: 'Private or fee-paying school', detail: 'no scholarship'},
+      {value: '3', label: 'Home-schooled', detail: ''},
+      {value: '4', label: 'Prefer not to say', detail: ''}
     ];
 
     const genders = [
@@ -105,7 +129,7 @@ class DiversitySU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="selectHur">Are / were any of the following applicable to you?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">Are / were any of the following applicable to you?</label>
                 <SelectBox
                   options={hurdlesList}
                   name='selectHur'
@@ -117,12 +141,29 @@ class DiversitySU extends React.Component {
                   required
                 />
               </div>
+              {(hurdles != '') && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{country === 'GBR' || 'country' === 'IRL' ? 'What type of Secondary School did you attend?' : 'What type of High School did you attend?'}</label>
+                  <SelectBox
+                    options={country === 'GBR' || 'country' === 'IRL' ? uKschAttendedList : schAttendedList}
+                    name='selectSchType'
+                    placeholder={'Select ' + (country === 'GBR' ? 'school' : 'high-school') + ' type:'}
+                    handleChange={this.handleSchTypeChange}
+                    handleTabPress={this.handleTabPress}
+                    focusOnLoad
+                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                    showDetail
+                    detailToShow='detail'
+                    required
+                  />
+                </div>
+              )}
               <div className="tooltip alignRight descriptor no-href" id="diversityTooltip">Why do I need to provide this?
                 <span className="tooltiptext">Not only to we want to make sure nobody gets left behind, but we think it&39;s pretty fun to celebrate our differences!</span>
               </div>
-              {(hurdles != '') && (
+              {(schType != "") && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft" htmlFor="selectGender">What&#39;s your <strong>gender</strong>?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectGender">What&#39;s your <strong>gender</strong>?</label>
                   <SelectBox
                     options={genders}
                     name='selectGender'
@@ -137,7 +178,7 @@ class DiversitySU extends React.Component {
               )}
               {gender != '' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft" htmlFor="selectEth">How do you identify your <strong>ethnicity</strong>?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectEth">How do you identify your <strong>ethnicity</strong>?</label>
                   <SelectBox
                     options={ethnicities}
                     name='selectEth'

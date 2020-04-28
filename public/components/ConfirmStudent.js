@@ -494,7 +494,7 @@ class ConfirmStudent extends React.Component {
             {isGeneralError != true && (
               <form autoComplete="off">
                 <div className="form-group">
-                  <label className="descriptor alignLeft" htmlFor="schEmailInput">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schEmailInput">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
                   <input
                     type="email"
                     name="schEmail"
@@ -529,7 +529,7 @@ class ConfirmStudent extends React.Component {
                       This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email address
                     </div>
                     {containsDotAndAt != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
-                      <label className="checkbox-container alignLeft textLeft">This is a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email. Submit for review
+                      <label className="checkbox-container alignLeft textLeft reqAsterisk">This is a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email. Submit for review
                         <input
                           type="checkbox"
                           name="requestReview"
