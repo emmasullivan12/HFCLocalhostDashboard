@@ -24,8 +24,7 @@
   color: #58d2bb;
   margin-top: 1rem;
 }
-.inputfile:focus + label,
-label:hover {
+.inputfile:focus + label:hover {
   color: #43a08f;
 }
 .inputFile + label svg{

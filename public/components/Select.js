@@ -192,7 +192,7 @@ class SelectBox extends React.Component {
 
     // User pressed the up arrow
     else if (e.keyCode === 38) {
-      if (isOpen) {
+      if (isOpen || this.state.isFocused === true) {
         e.preventDefault();
         this.setState(prevState => {
           let { focusedValue } = prevState
@@ -215,7 +215,7 @@ class SelectBox extends React.Component {
 
     // User pressed the down arrow
     else if (e.keyCode === 40) {
-      if (isOpen) {
+      if (isOpen || this.state.isFocused === true) {
         e.preventDefault()
         this.setState(prevState => {
           let { focusedValue } = prevState

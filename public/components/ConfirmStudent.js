@@ -241,9 +241,9 @@ class ConfirmStudent extends React.Component {
               requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
               reviewReason: "!match sch format"
             })
-/*            ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-              ? document.getElementById('schEmailInput').classList.remove('error')
-              : document.getElementById('schEmailInput').classList.add('error')
+/*            ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+              ? document.getElementById('eduEmailInput').classList.remove('error')
+              : document.getElementById('eduEmailInput').classList.add('error')
             )*/
           });
 
@@ -264,9 +264,9 @@ class ConfirmStudent extends React.Component {
               requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
               reviewReason: "no sch format specified & failed general .ac.uk/.sch.uk check"
             })
-            /*( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-              ? document.getElementById('schEmailInput').classList.remove('error')
-              : document.getElementById('schEmailInput').classList.add('error')
+            /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+              ? document.getElementById('eduEmailInput').classList.remove('error')
+              : document.getElementById('eduEmailInput').classList.add('error')
             )*/
           });
         }
@@ -291,9 +291,9 @@ class ConfirmStudent extends React.Component {
                 requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
                 reviewReason: "!match uni format"
               })
-              /*( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-                ? document.getElementById('schEmailInput').classList.remove('error')
-                : document.getElementById('schEmailInput').classList.add('error')
+              /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+                ? document.getElementById('eduEmailInput').classList.remove('error')
+                : document.getElementById('eduEmailInput').classList.add('error')
               )*/
             });
           } else {
@@ -311,8 +311,8 @@ class ConfirmStudent extends React.Component {
                 reviewReason: "!match uni format"
               })
               /*( eduEmailIsValid
-                ? document.getElementById('schEmailInput').classList.remove('error')
-                : document.getElementById('schEmailInput').classList.add('error')
+                ? document.getElementById('eduEmailInput').classList.remove('error')
+                : document.getElementById('eduEmailInput').classList.add('error')
               )*/
             });
           }
@@ -333,9 +333,9 @@ class ConfirmStudent extends React.Component {
               requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
               reviewReason: "no uni format specified & failed general .ac.uk check"
             })
-            /*( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-              ? document.getElementById('schEmailInput').classList.remove('error')
-              : document.getElementById('schEmailInput').classList.add('error')
+            /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+              ? document.getElementById('eduEmailInput').classList.remove('error')
+              : document.getElementById('eduEmailInput').classList.add('error')
             )*/
           });
         }
@@ -356,9 +356,9 @@ class ConfirmStudent extends React.Component {
             requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
             reviewReason: "eetstatus is job/train/none & failed general .sch.uk/.ac.uk check"
           })
-          /*( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('schEmailInput').classList.remove('error')
-            : document.getElementById('schEmailInput').classList.add('error')
+          /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+            ? document.getElementById('eduEmailInput').classList.remove('error')
+            : document.getElementById('eduEmailInput').classList.add('error')
           )*/
         });
       }
@@ -380,9 +380,9 @@ class ConfirmStudent extends React.Component {
             reviewReason: "!match USA .edu format"
           })
 /*
-          ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('schEmailInput').classList.remove('error')
-            : document.getElementById('schEmailInput').classList.add('error')
+          ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+            ? document.getElementById('eduEmailInput').classList.remove('error')
+            : document.getElementById('eduEmailInput').classList.add('error')
           )*/
         });
 
@@ -400,9 +400,9 @@ class ConfirmStudent extends React.Component {
             requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
             reviewReason: "is USA sch and we don't know sch email format"
           })
-        /*  ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('schEmailInput').classList.remove('error')
-            : document.getElementById('schEmailInput').classList.add('error')
+        /*  ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+            ? document.getElementById('eduEmailInput').classList.remove('error')
+            : document.getElementById('eduEmailInput').classList.add('error')
           )*/
         });
 
@@ -422,9 +422,9 @@ class ConfirmStudent extends React.Component {
             requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
             reviewReason: "is USA job/train/none and !match .edu format"
           })
-          /*( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('schEmailInput').classList.remove('error')
-            : document.getElementById('schEmailInput').classList.add('error')
+          /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+            ? document.getElementById('eduEmailInput').classList.remove('error')
+            : document.getElementById('eduEmailInput').classList.add('error')
           )*/
         });
       }
@@ -444,9 +444,9 @@ class ConfirmStudent extends React.Component {
           requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
           reviewReason: "is other country and we don't know format"
         })
-    /*    ( document.getElementById('schEmailInput').checkValidity() && eduEmailIsValid
-          ? document.getElementById('schEmailInput').classList.remove('error')
-          : document.getElementById('schEmailInput').classList.add('error')
+    /*    ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
+          ? document.getElementById('eduEmailInput').classList.remove('error')
+          : document.getElementById('eduEmailInput').classList.add('error')
         )*/
       });
     }
@@ -494,11 +494,11 @@ class ConfirmStudent extends React.Component {
             {isGeneralError != true && (
               <form autoComplete="off">
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schEmailInput">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="eduEmailInput">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
                   <input
                     type="email"
-                    name="schEmail"
-                    id="schEmailInput"
+                    name="eduEmail"
+                    id="eduEmailInput"
                     onBlur={this.onBlur}
                     onChange={onChange}
                     onKeyUp={handleKeyUp}

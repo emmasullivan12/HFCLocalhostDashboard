@@ -108,7 +108,7 @@ class SubmitMatchContent extends Component {
                 id="matchByGender"
                 name="Gender"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -121,7 +121,7 @@ class SubmitMatchContent extends Component {
                 id="matchByEthnicity"
                 name="Ethnicity"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -134,7 +134,7 @@ class SubmitMatchContent extends Component {
                 id="matchByLGBQT"
                 name="LGBQT"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -147,7 +147,7 @@ class SubmitMatchContent extends Component {
                 id="matchByFSM"
                 name="FSM"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -160,7 +160,7 @@ class SubmitMatchContent extends Component {
                 id="matchByRole"
                 name="Role"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -173,7 +173,7 @@ class SubmitMatchContent extends Component {
                 id="matchByHobbies"
                 name="Hobbies"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -186,7 +186,7 @@ class SubmitMatchContent extends Component {
                 id="matchBySkills"
                 name="Skills"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -199,7 +199,7 @@ class SubmitMatchContent extends Component {
                 id="matchByIndustry"
                 name="Industry"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>
@@ -212,7 +212,7 @@ class SubmitMatchContent extends Component {
                 id="matchByToDoList"
                 name="ToDoList"
                 value="1"
-                onClick={this.handleCheckboxChange}
+                onChange={this.handleCheckboxChange}
               />
               <span className="slider round"/>
             </label>

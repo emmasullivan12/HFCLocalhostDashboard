@@ -135,11 +135,11 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'did1stSU', // set to did1stSU when first loaded
+      step: 'didCountry', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
       updatingEmail: '',
-      country: '',
+      country: 'GBR',
       eetStatus: '',
       schName: '',
       schNameFreeText: '',
@@ -457,7 +457,7 @@ class TypeformSignUp extends Component {
     const fname = 'Emma';
     const id = '12345';
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
-    const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
+  //  const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
 
     if (isGeneralError === true) {
       <div>

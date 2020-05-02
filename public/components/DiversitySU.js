@@ -71,7 +71,7 @@ class DiversitySU extends React.Component {
   }
 
   render() {
-    const {tabPressed, hurdles, schType, gender} = this.state;
+    const {tabPressed, hurdles, schType, gender, ethnicity} = this.state;
     const { step, currentStep, totalMenteeSteps, country } = this.props;
 
     const hurdlesList = [
@@ -158,9 +158,6 @@ class DiversitySU extends React.Component {
                   />
                 </div>
               )}
-              <div className="tooltip alignRight descriptor no-href" id="diversityTooltip">Why do I need to provide this?
-                <span className="tooltiptext">Not only to we want to make sure nobody gets left behind, but we think it&39;s pretty fun to celebrate our differences!</span>
-              </div>
               {(schType != "") && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectGender">What&#39;s your <strong>gender</strong>?</label>
@@ -190,6 +187,16 @@ class DiversitySU extends React.Component {
                     required
                   />
                 </div>
+              )}
+              {ethnicity != '' && (
+                <React.Fragment>
+                  <div className="neutralText textLeft paddingBtm">
+                    We use this information to support equality of opportunities for our mentees, and are serious about safeguarding your personal data as per our <a className="legal-href" href="https://prospela.com/privacy-policy/">Privacy Policy</a>.
+                  </div>
+                  <div className="neutralText textLeft paddingBtm">
+                    By clicking &#34;Next&#34;, you consent us to use your responses for this purpose.
+                  </div>
+                </React.Fragment>
               )}
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
                 Next

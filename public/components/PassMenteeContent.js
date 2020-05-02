@@ -75,7 +75,7 @@ class PassMenteeContent extends Component {
                 name="Role"
                 className="SubmitMatch-input"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="checkmark" />
             </label>
@@ -85,7 +85,7 @@ class PassMenteeContent extends Component {
                 name="Industry"
                 className="SubmitMatch-input"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="checkmark" />
             </label>
@@ -95,7 +95,7 @@ class PassMenteeContent extends Component {
                 name="Interests"
                 className="SubmitMatch-input"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="checkmark" />
             </label>
@@ -105,7 +105,7 @@ class PassMenteeContent extends Component {
                 name="Skills"
                 className="SubmitMatch-input"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="checkmark" />
             </label>
@@ -115,7 +115,7 @@ class PassMenteeContent extends Component {
                 name="Busy"
                 className="SubmitMatch-input"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="checkmark" />
             </label>

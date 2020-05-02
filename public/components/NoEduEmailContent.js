@@ -31,7 +31,7 @@ class NoEduEmailContent extends Component {
 /*  componentDidMount(){
     const {eetStatus} = this.props;
     eetStatus != 'none'
-      ? document.getElementById("notStudentEmail").focus()
+      ? document.getElementById("profEmail").focus()
       : document.getElementById("currentSitu").focus()
   }*/
 
@@ -259,13 +259,13 @@ class NoEduEmailContent extends Component {
           <form className="noEduEmail-form" id="noEduEmailForm">
             {eetStatus != 'none' &&(
               <React.Fragment>
-                <label htmlFor="notStudentEmail" className="descriptor alignLeft">
+                <label htmlFor="profEmail" className="descriptor alignLeft">
                   Your {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} Email Address (if you have one)
                 </label>
                 <input
                   type="email"
                   name="emailInput"
-                  id="notStudentEmail"
+                  id="profEmail"
                   onBlur={this.onBlur}
                   onChange={this.handleChange}
                   onKeyUp={this.handleEmailKeyUp}

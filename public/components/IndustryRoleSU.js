@@ -21,14 +21,11 @@ class IndustryRoleSU extends React.Component {
       rolesChosen: '',
       roleValid: '',
       editingRole: '',
-      ratingConfi: '',
-      editingRating: '',
-      holdBackTxt: ''
+      knowNextSteps: '',
     }
     this.handleIndChange = this.handleIndChange.bind(this);
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleRatingChange = this.handleRatingChange.bind(this);
-    this.handleHoldBkChange = this.handleHoldBkChange.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderComponents = this.renderComponents.bind(this);
@@ -56,18 +53,9 @@ class IndustryRoleSU extends React.Component {
   onRatingBlur = (e) => {
     const isValid = e.currentTarget.value > 0 && e.currentTarget.value <= 10
     if(isValid) {
-      document.getElementById("ratingConfi").classList.remove('error');
+      document.getElementById("knowNextSteps").classList.remove('error');
     } else {
-      document.getElementById("ratingConfi").classList.add('error');
-    }
-  }
-
-  onHoldBkBlur = (e) => {
-    const isValid = e.currentTarget.value.length >= 2
-    if(isValid) {
-      document.getElementById("holdBackTxt").classList.remove('error');
-    } else {
-      document.getElementById("holdBackTxt").classList.add('error');
+      document.getElementById("knowNextSteps").classList.add('error');
     }
   }
 
@@ -102,20 +90,8 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleRatingChange(e) {
-    const currentStateRating = this.state.ratingConfi;
-    if (currentStateRating != '') {
-      this.setState({
-        editingRating: true
-      })
-    }
     this.setState({
-      ratingConfi: e.currentTarget.value
-    });
-  }
-
-  handleHoldBkChange(e) {
-    this.setState({
-      holdBackTxt: e.currentTarget.value
+      knowNextSteps: e.currentTarget.value
     });
   }
 
@@ -130,9 +106,9 @@ class IndustryRoleSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {industries, rolesChosen, roleValid, ratingConfi, holdBackTxt} = this.state;
+    const {industries, rolesChosen, roleValid, knowNextSteps} = this.state;
 
-    if (industries != "" && rolesChosen != '' && roleValid === true && ratingConfi != "" && ratingConfi != 0 && !(ratingConfi >= 10) && holdBackTxt.length >= 2) {
+    if (industries != "" && rolesChosen != '' && roleValid === true && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
       return true;
     } else {
       return false;
@@ -157,7 +133,7 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, roleValid, ratingConfi, editingRating, holdBackTxt} = this.state;
+    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, roleValid, knowNextSteps} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const industryOptions = [
@@ -227,32 +203,16 @@ class IndustryRoleSU extends React.Component {
               )}
               {((rolesChosen != '' && roleValid === true) || editingRole === true) && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="ratingConfi">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="knowNextSteps">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
                   <TextInput
-                    name="ratingConfi"
-                    id="ratingConfi"
+                    name="knowNextSteps"
+                    id="knowNextSteps"
                     placeholder="Rating goes here"
                     className="form-control-std"
                     required
                     handleChange={this.handleRatingChange}
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onRatingBlur}
-                    focusOnLoad={tabPressed ? false : true}
-                  />
-                </div>
-              )}
-              {(ratingConfi != "" || editingRating === true)&& (
-                <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="uniNameTextBox">What are the key things <strong>holding you back</strong> from getting there?</label>
-                  <TextInput
-                    name="holdBackTxt"
-                    id="holdBackTxt"
-                    placeholder="Type here..."
-                    className="form-control-std"
-                    required
-                    handleChange={this.handleHoldBkChange}
-                    handleTabPress={this.handleTabPress}
-                    onBlur={this.onHoldBkBlur}
                     focusOnLoad={tabPressed ? false : true}
                   />
                 </div>

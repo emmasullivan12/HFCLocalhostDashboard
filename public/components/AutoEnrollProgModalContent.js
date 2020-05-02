@@ -13,12 +13,28 @@ class AutoEnrollProgModalContent extends Component {
     };
   }
 
+  toggleCheckbox = (e) => {
+    const currentState = this.state[e.target.name];
+
+    if (currentState === false) {
+      this.setState({
+        [e.target.name]: true,
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: false
+      });
+    }
+  }
+
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
     this.setState({ messageFromServer: 'Programme code sent' });
   }
 
   render() {
+    const { toggleCheckbox } = this;
     const { messageFromServer } = this.state;
     const {autoEnrollProgName} = this.props;
     const isError = false;
@@ -33,7 +49,7 @@ class AutoEnrollProgModalContent extends Component {
           <form className="leftRightPad">
             <label className="checkbox-container-login" id="tncText">
               I agree to share my Prospela profile with the programme admin for the purposes of providing me career advice & support
-              <input type="checkbox" id="tncCheckbox" name="tanp" value="1" />
+              <input type="checkbox" id="tncCheckbox" name="tanp" value="1" onChange={toggleCheckbox}/>
               <span className="checkmark left" id="tncStyle"/>
             </label>
             <div className="request-btn-container">

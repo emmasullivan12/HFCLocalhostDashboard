@@ -16,7 +16,7 @@ class Autocomplete extends React.Component {
     this.state = {
       activeSuggestion: 0,
       filteredSuggestions: [],
-      showSuggestions: true,
+      showSuggestions: false,
       userInput: ''
     };
   }
@@ -71,7 +71,7 @@ class Autocomplete extends React.Component {
       onFocus()
     }
 
-    if (filteredSuggestions.length === 1) {
+    if (filteredSuggestions.length === 1 || filteredSuggestions.length === 0) {
       return
     } else {
       this.onChange(e);
@@ -135,14 +135,19 @@ class Autocomplete extends React.Component {
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();
-      const isntValueToShow = valueToShow == undefined
-      this.setState({
-        activeSuggestion: 0,
-        showSuggestions: false,
-        userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
-      });
-      const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
-      valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+
+      if (filteredSuggestions.length) {
+        const isntValueToShow = valueToShow == undefined
+        this.setState({
+          activeSuggestion: 0,
+          showSuggestions: false,
+          userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
+        })
+        const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
+        valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+      } else {
+        return;
+      }
     }
 
     // User pressed the tab key

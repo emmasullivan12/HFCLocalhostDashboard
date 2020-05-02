@@ -70,7 +70,7 @@ class SendNotifModalContent extends Component {
                 id="sendAll"
                 name="SendAll"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="slider round"/>
             </label>
@@ -83,7 +83,7 @@ class SendNotifModalContent extends Component {
                 id="sendMentees"
                 name="sendMentees"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="slider round"/>
             </label>
@@ -96,7 +96,7 @@ class SendNotifModalContent extends Component {
                 id="sendMentors"
                 name="sendMentors"
                 value="1"
-                onClick={this.handleMessageChange}
+                onChange={this.handleMessageChange}
               />
               <span className="slider round"/>
             </label>

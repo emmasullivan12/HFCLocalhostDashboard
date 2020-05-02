@@ -30,6 +30,21 @@ class JoinProgrammeModalContent extends Component {
     this.setState({ progName: 'AVFX' }); //NEED TO UPDATE WITH ACTUALLY PROGRAMME NAME
   }
 
+  toggleCheckbox = (e) => {
+    const currentState = this.state[e.target.name];
+
+    if (currentState === false) {
+      this.setState({
+        [e.target.name]: true,
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: false
+      });
+    }
+  }
+
   canBeSubmitted() {
     const {progCode, progName} = this.state;
     return (
@@ -77,7 +92,7 @@ class JoinProgrammeModalContent extends Component {
             )}
             <label className="checkbox-container-login" id="tncText">
               I agree to share my Prospela profile with the programme admin for the purposes of {userRole === 'mentee' ? 'providing me career advice & support' : 'providing effective career advice & support to young people'}
-              <input type="checkbox" id="tncCheckbox" name="tanp" value='1' />
+              <input type="checkbox" id="tncCheckbox" name="tanp" value='1' onChange={this.toggleCheckbox} />
               <span className="checkmark left" id="tncStyle"/>
             </label>
             <div className="request-btn-container">

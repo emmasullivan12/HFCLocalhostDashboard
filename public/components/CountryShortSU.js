@@ -229,7 +229,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal === 'IRL' && (
                 <div className="form-group" id="userIECounty">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Worcestershirech County?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which County?</label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ieCounties}
