@@ -126,7 +126,7 @@ class SelectBox extends React.Component {
   }
 
   onKeyDown = e => {
-    const { isOpen } = this.state;
+    const { isOpen, focusedValue, isFocused } = this.state;
     const { handleChange, handleTabPress, options, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -141,7 +141,7 @@ class SelectBox extends React.Component {
           return {
             isOpen: true
           }
-        } else {
+        } else if (focusedValue != -1) {
           const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
           const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
           handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
@@ -192,12 +192,21 @@ class SelectBox extends React.Component {
 
     // User pressed the up arrow
     else if (e.keyCode === 38) {
-      if (isOpen || this.state.isFocused === true) {
+      if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault();
         this.setState(prevState => {
           let { focusedValue } = prevState
 
-          if (focusedValue > 0) {
+          if (focusedValue === 0 || focusedValue === -1) {
+            focusedValue = options.length - 1
+
+            const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+            return {
+              values: [ value ],
+              focusedValue
+            }
+          } else if (focusedValue > 0) {
             focusedValue--
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
@@ -215,14 +224,22 @@ class SelectBox extends React.Component {
 
     // User pressed the down arrow
     else if (e.keyCode === 40) {
-      if (isOpen || this.state.isFocused === true) {
+      if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault()
         this.setState(prevState => {
           let { focusedValue } = prevState
 
 
           if (focusedValue === options.length -1) {
-            return;
+            focusedValue = 0
+
+            const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+            return {
+              values: [ value ],
+              focusedValue
+            }
+
           } else {
             focusedValue++
 
@@ -312,7 +329,7 @@ class SelectBox extends React.Component {
           } else {
             className += " noDetail overflow-ellipsis"
           }
-          console.log("option[detailToShow]: "+option[detailToShow])
+
           if (option[detailToShow] === "") className += " extraTop"
           if (index === options.length) className += " lastItem"
 

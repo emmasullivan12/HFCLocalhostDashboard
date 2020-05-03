@@ -72,7 +72,7 @@ class DiversitySU extends React.Component {
 
   render() {
     const {tabPressed, hurdles, schType, gender, ethnicity} = this.state;
-    const { step, currentStep, totalMenteeSteps, country } = this.props;
+    const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const hurdlesList = [
       {value: '0', label: 'Eligible for Free School Meals'},
@@ -143,7 +143,7 @@ class DiversitySU extends React.Component {
               </div>
               {(hurdles != '') && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{country === 'GBR' || 'country' === 'IRL' ? 'What type of Secondary School did you attend?' : 'What type of High School did you attend?'}</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' || 'country' === 'IRL' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                   <SelectBox
                     options={country === 'GBR' || 'country' === 'IRL' ? uKschAttendedList : schAttendedList}
                     name='selectSchType'
@@ -191,7 +191,7 @@ class DiversitySU extends React.Component {
               {ethnicity != '' && (
                 <React.Fragment>
                   <div className="neutralText textLeft paddingBtm">
-                    We use this information to support equality of opportunities for our mentees, and are serious about safeguarding your personal data as per our <a className="legal-href" href="https://prospela.com/privacy-policy/">Privacy Policy</a>.
+                    We use this information to support equality of opportunities for our mentees, and are serious about safeguarding your personal data as per our <a className="legal-href" href="https://prospela.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
                   </div>
                   <div className="neutralText textLeft paddingBtm">
                     By clicking &#34;Next&#34;, you consent us to use your responses for this purpose.

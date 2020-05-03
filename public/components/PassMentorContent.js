@@ -1,6 +1,7 @@
 // Dex last merged this code on 26th April 2020
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
 import "../css/PassMatchContent.css";
 import "../css/General.css";
 
@@ -72,46 +73,46 @@ class PassMentorContent extends Component {
             Why do you want to pass?
           </div>
           <form className="pass-form" id="passMentorForm">
-            <label className="checkbox-container">Doesn&apos;t have a <strong>role</strong> I&apos;d like to explore
-              <input
-                type="checkbox"
-                name="Role"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
-            <label className="checkbox-container">Isn&apos;t in an <strong>industry</strong> I&apos;m interested in
-              <input
-                type="checkbox"
-                name="Industry"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
-            <label className="checkbox-container">Limited similar <strong>personal interests</strong> to me
-              <input
-                type="checkbox"
-                name="Interests"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
-            <label className="checkbox-container">Doesn&apos;t have any of the <strong>skills</strong> I want to develop
-              <input
-                type="checkbox"
-                name="Skills"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="Doesn't have a role I'd like to explore"
+              name="Role"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="Isn't in an industry I'm interested in"
+              name="Industry"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="Limited similar personal interests to me"
+              name="Interests"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="Doesn't have any of the skills I want to develop"
+              name="Skills"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
             <div className="descriptor bold passDescriptor">
               Please comment:
             </div>

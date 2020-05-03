@@ -1,6 +1,7 @@
 // Dex last merged this code on 26th April 2020
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
 
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class SendNotifModalContent extends Component {
@@ -64,42 +65,39 @@ class SendNotifModalContent extends Component {
         <form id="sendNotifForm">
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Send to All Users?</span>
-            <label className="switch" htmlFor="sendAll" >
-              <input
-                type="checkbox"
-                id="sendAll"
-                name="SendAll"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              name="SendAll"
+              id="sendAll"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Send to Mentees only?</span>
-            <label className="switch" htmlFor="sendMentees" >
-              <input
-                type="checkbox"
-                id="sendMentees"
-                name="sendMentees"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              name="sendMentees"
+              id="sendMentees"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Send to Mentors only?</span>
-            <label className="switch" htmlFor="sendMentors" >
-              <input
-                type="checkbox"
-                id="sendMentors"
-                name="sendMentors"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              name="sendMentors"
+              id="sendMentors"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
           </div>
           <div>Or Type User IDs</div>
           <input

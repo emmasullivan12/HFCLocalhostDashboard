@@ -1,14 +1,11 @@
 // Dex last merged this code on 26th April 2020
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
 import "../css/PassMatchContent.css";
 import "../css/General.css";
 
-
 // Format all multi-line textarea elements
-
-
-
 
 class PassMenteeContent extends Component {
   constructor(props) {
@@ -69,56 +66,56 @@ class PassMenteeContent extends Component {
             Why do you want to pass?
           </div>
           <form className="pass-form" id="passMenteeForm">
-            <label className="checkbox-container">Their career aspirations are <strong>not relevant</strong> to my role
-              <input
-                type="checkbox"
-                name="Role"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
-            <label className="checkbox-container">They are <strong>not interested in my industry</strong>
-              <input
-                type="checkbox"
-                name="Industry"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
-            <label className="checkbox-container">Not enough relatable <strong>personal interests</strong>
-              <input
-                type="checkbox"
-                name="Interests"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
-            <label className="checkbox-container">I dont know enough about the <strong>skills</strong> they want to develop
-              <input
-                type="checkbox"
-                name="Skills"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
-            <label className="checkbox-container">Im <strong>too busy</strong> to take on another mentee
-              <input
-                type="checkbox"
-                name="Busy"
-                className="SubmitMatch-input"
-                value="1"
-                onChange={this.handleMessageChange}
-              />
-              <span className="checkmark" />
-            </label>
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="Their career aspirations are not relevant to my role"
+              name="Role"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="They are not interested in my industry"
+              name="Industry"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="Not enough relatable personal interests"
+              name="Interests"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="I dont know enough about the skills</strong> they want to develop"
+              name="Skills"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
+            <Checkbox
+              labelClassName="checkbox-container"
+              label="Im too busy to take on another mentee"
+              name="Busy"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
             <div className="descriptor bold passDescriptor">
               How could we better match you?
             </div>

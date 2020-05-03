@@ -518,6 +518,7 @@ class TypeformSignUp extends Component {
                 step={step}
                 currentStep="4"
                 country={country}
+                eetStatus={eetStatus}
                 totalMenteeSteps={totalMenteeSteps}
                 updateStep={this.updateStep}
               />

@@ -171,20 +171,30 @@ class Autocomplete extends React.Component {
     else if (e.keyCode === 38) {
       e.preventDefault();
       if (activeSuggestion === 0) {
-        return;
+        const parent = document.getElementById("autocompleter-items");
+        const item = document.getElementsByClassName("autocompleter-item");
+        console.log("parent.scrollHeight: "+parent.scrollHeight)
+        console.log("item[0].offsetHeight: "+item[0].offsetHeight)
+        console.log("item[0].offsetHeight * 5: "+item[0].offsetHeight * 5)
+        parent.scrollTop = parent.scrollHeight - (item[0].offsetHeight * 5)
+        this.setState({ activeSuggestion: filteredSuggestions.length - 1 });
       } else {
         this.handleMoveUp();
+        this.setState({ activeSuggestion: activeSuggestion - 1 });
       }
-      this.setState({ activeSuggestion: activeSuggestion - 1 });
     }
+
     // User pressed the down arrow
     else if (e.keyCode === 40) {
       if (activeSuggestion + 1 === filteredSuggestions.length) {
-        return;
+        const parent = document.getElementById("autocompleter-items");
+        const item = document.getElementsByClassName("autocompleter-item");
+        parent.scrollTop = 0;
+        this.setState({ activeSuggestion: 0 });
       } else {
         this.handleMoveDown();
+        this.setState({ activeSuggestion: activeSuggestion + 1 });
       }
-      this.setState({ activeSuggestion: activeSuggestion + 1 });
     }
   };
 

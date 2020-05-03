@@ -8,6 +8,7 @@ import "../css/General.css";
 import ProgressCircles from './ProgressCircles.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 import Autocomplete from './Autocomplete.js';
+import Checkbox from './Checkbox.js';
 import NoEduEmail from './NoEduEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';
 
@@ -83,7 +84,6 @@ class ConfirmStudent extends React.Component {
   }
 
   onChange = (e) => {
-
     this.setState({
       userInput: e.currentTarget.value
     })
@@ -529,18 +529,17 @@ class ConfirmStudent extends React.Component {
                       This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email address
                     </div>
                     {containsDotAndAt != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
-                      <label className="checkbox-container alignLeft textLeft reqAsterisk">This is a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email. Submit for review
-                        <input
-                          type="checkbox"
-                          name="requestReview"
-                          id="requestReview"
-                          className="SubmitMatch-input"
-                          onChange={toggleCheckbox}
-                          value="1"
-                          required
-                        />
-                        <span className="checkmark" />
-                      </label>
+                      <Checkbox
+                        label={"This is a valid " + ((eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student') + " email. Submit for review"}
+                        labelClassName="checkbox-container alignLeft textLeft reqAsterisk noPaddingT"
+                        id="requestReview"
+                        name="requestReview"
+                        value="1"
+                        className="SubmitMatch-input"
+                        spanClassName="checkmark"
+                        onChange={toggleCheckbox}
+                        required
+                      />
                     )}
                   </React.Fragment>
                 )}

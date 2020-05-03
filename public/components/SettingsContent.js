@@ -1,6 +1,7 @@
 // Dex last merged this code on 14th Nov 2019
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
 
 import "../css/Article.css";
 import "../css/General.css";
@@ -110,20 +111,26 @@ class SettingsContent extends Component {
                   <p>
                     Receive messages from {userRole === 'mentee' ? 'E-Mentors and other students in your groups, including 1:1 careers advice personalised to you' : 'Mentees and other employees in your groups'}.
                   </p>
-                  <form onChange={this.handleSubmit}>
+                  <form>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By Email</span>
-                      <label className="switch" htmlFor="notif-msgs-email" >
-                        <input type="checkbox" id="notif-msgs-email" defaultChecked />
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-msgs-email"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked
+                      />
                     </div>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By SMS / Text Message</span>
-                      <label className="switch" htmlFor="notif-msgs-sms" >
-                        <input type="checkbox" id="notif-msgs-sms" defaultChecked />
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-msgs-sms"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked={false}
+                      />
                     </div>
                   </form>
                   <h2>
@@ -132,20 +139,26 @@ class SettingsContent extends Component {
                   <p>
                     Receive requests to give & receive a review, chat reminders, and other reminders related to your activities on Prospela.
                   </p>
-                  <form onChange={this.handleSubmit}>
+                  <form>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By Email</span>
-                      <label className="switch" htmlFor="notif-reminders-email" >
-                        <input type="checkbox" id="notif-reminders-email" defaultChecked />
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-reminders-email"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked={false}
+                      />
                     </div>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By SMS / Text Message</span>
-                      <label className="switch" htmlFor="notif-reminders-sms" >
-                        <input type="checkbox" id="notif-reminders-sms" />
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-reminders-sms"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked={false}
+                      />
                     </div>
                   </form>
                   <h2>
@@ -154,20 +167,26 @@ class SettingsContent extends Component {
                   <p>
                     Receive inspiration, {userRole === 'mentee' ? 'career opportunities,' : 'ongoing support,'} promotions, surveys, and product updates from Prospela and our partners.
                   </p>
-                  <form onChange={this.handleSubmit}>
+                  <form>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By Email</span>
-                      <label className="switch" htmlFor="notif-promotions-email" >
-                        <input type="checkbox" id="notif-promotions-email" />
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-promotions-email"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked={false}
+                      />
                     </div>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By SMS / Text Message</span>
-                      <label className="switch" htmlFor="notif-promotions-sms" >
-                        <input type="checkbox" id="notif-promotions-sms" />
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-promotions-sms"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked={false}
+                      />
                     </div>
                   </form>
                   <h2>
@@ -176,20 +195,27 @@ class SettingsContent extends Component {
                   <p>
                     We may need to send you messages regarding your account, your mentoring relationships, legal notifications, security, privacy and safeguarding matters, and customer support requests. <strong>For your security you cannot disable email notifications</strong> and we may contact you by phone or other means if needed.
                   </p>
-                  <form onChange={this.handleSubmit}>
+                  <form>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By Email</span>
-                      <label className="switch" htmlFor="notif-support-email" >
-                        <input type="checkbox" id="notif-support-email" defaultChecked disabled/>
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-support-email"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked
+                        disabled
+                      />
                     </div>
                     <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By SMS / Text Message</span>
-                      <label className="switch" htmlFor="notif-support-sms" >
-                        <input type="checkbox" id="notif-support-sms" />
-                        <span className="slider round"/>
-                      </label>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-support-sms"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked={false}
+                      />
                     </div>
                   </form>
                 </section>

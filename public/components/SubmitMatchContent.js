@@ -1,6 +1,8 @@
 // Dex last merged this code on 26th April 2020
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
+
 import "../css/SubmitMatchContent.css";
 
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
@@ -102,120 +104,111 @@ class SubmitMatchContent extends Component {
           />
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Gender Pref?</span>
-            <label className="switch" htmlFor="matchByGender" >
-              <input
-                type="checkbox"
-                id="matchByGender"
-                name="Gender"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByGender"
+              name="Gender"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Ethnicity Pref?</span>
-            <label className="switch" htmlFor="matchByEthnicity" >
-              <input
-                type="checkbox"
-                id="matchByEthnicity"
-                name="Ethnicity"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByEthnicity"
+              name="Ethnicity"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by LGBQT Pref?</span>
-            <label className="switch" htmlFor="matchByLGBQT" >
-              <input
-                type="checkbox"
-                id="matchByLGBQT"
-                name="LGBQT"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByLGBQT"
+              name="LGBQT"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by FSM/Working Class Pref?</span>
-            <label className="switch" htmlFor="matchByFSM" >
-              <input
-                type="checkbox"
-                id="matchByFSM"
-                name="FSM"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByFSM"
+              name="FSM"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Role Pref?</span>
-            <label className="switch" htmlFor="matchByRole" >
-              <input
-                type="checkbox"
-                id="matchByRole"
-                name="Role"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByRole"
+              name="Role"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Hobbies?</span>
-            <label className="switch" htmlFor="matchByHobbies" >
-              <input
-                type="checkbox"
-                id="matchByHobbies"
-                name="Hobbies"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByHobbies"
+              name="Hobbies"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Skills?</span>
-            <label className="switch" htmlFor="matchBySkills" >
-              <input
-                type="checkbox"
-                id="matchBySkills"
-                name="Skills"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchBySkills"
+              name="Skills"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Industry?</span>
-            <label className="switch" htmlFor="matchByIndustry" >
-              <input
-                type="checkbox"
-                id="matchByIndustry"
-                name="Industry"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByIndustry"
+              name="Industry"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div className="notifToggleContainer">
             <span className="notifToggleTxt">Matched by Latest Actions on Mentee ToDo List?</span>
-            <label className="switch" htmlFor="matchByToDoList" >
-              <input
-                type="checkbox"
-                id="matchByToDoList"
-                name="ToDoList"
-                value="1"
-                onChange={this.handleCheckboxChange}
-              />
-              <span className="slider round"/>
-            </label>
+            <Checkbox
+              labelClassName="switch"
+              id="matchByToDoList"
+              name="ToDoList"
+              value="1"
+              spanClassName="slider round"
+              onChange={this.handleCheckboxChange}
+              defaultChecked={false}
+            />
           </div>
           <div>Mentee Likely to be Engaged? (no. between 1-10)</div>
           <input

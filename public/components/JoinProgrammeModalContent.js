@@ -1,6 +1,7 @@
 // Dex last merged this code on 26th April 2020
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
 import "../css/Modal.css";
 import "../css/Emoji.css";
 import "../css/General.css";
@@ -90,11 +91,18 @@ class JoinProgrammeModalContent extends Component {
                 Sorry, that programme doesn&#39;t exist. Make sure you have the correct code.
               </div>
             )}
-            <label className="checkbox-container-login" id="tncText">
-              I agree to share my Prospela profile with the programme admin for the purposes of {userRole === 'mentee' ? 'providing me career advice & support' : 'providing effective career advice & support to young people'}
-              <input type="checkbox" id="tncCheckbox" name="tanp" value='1' onChange={this.toggleCheckbox} />
-              <span className="checkmark left" id="tncStyle"/>
-            </label>
+            <Checkbox
+              labelId="tncText"
+              labelClassName="checkbox-container-login"
+              label={"I agree to share my Prospela profile with the programme admin for the purposes of " + (userRole === 'mentee' ? 'providing me career advice & support' : 'providing effective career advice & support to young people')}
+              id="tncCheckbox"
+              name="tanp"
+              value="1"
+              onChange={this.toggleCheckbox}
+              spanClassName="checkmark left"
+              spanId="tncStyle"
+              required={false}
+            />
             <div className="request-btn-container">
               <button type="submit" className="Submit-btn" onSubmit={this.handleSubmit}>
                 Join Programme

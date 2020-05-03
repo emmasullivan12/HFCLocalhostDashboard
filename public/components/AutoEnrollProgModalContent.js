@@ -1,6 +1,7 @@
 // Dex last merged this code on 26th April 2020
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
 import "../css/Modal.css";
 import "../css/Emoji.css";
 import "../css/General.css";
@@ -47,11 +48,18 @@ class AutoEnrollProgModalContent extends Component {
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <form className="leftRightPad">
-            <label className="checkbox-container-login" id="tncText">
-              I agree to share my Prospela profile with the programme admin for the purposes of providing me career advice & support
-              <input type="checkbox" id="tncCheckbox" name="tanp" value="1" onChange={toggleCheckbox}/>
-              <span className="checkmark left" id="tncStyle"/>
-            </label>
+            <Checkbox
+              labelId="tncText"
+              labelClassName="checkbox-container-login"
+              label="I agree to share my Prospela profile with the programme admin for the purposes of providing me career advice & support"
+              id="tncCheckbox"
+              name="tanp"
+              value="1"
+              onChange={toggleCheckbox}
+              spanClassName="checkmark left"
+              spanId="tncStyle"
+              required={false}
+            />
             <div className="request-btn-container">
               <button type="submit" className="Submit-btn" onSubmit={this.handleSubmit}>
                 Join Programme
