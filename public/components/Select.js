@@ -127,7 +127,7 @@ class SelectBox extends React.Component {
 
   onKeyDown = e => {
     const { isOpen, focusedValue, isFocused } = this.state;
-    const { handleChange, handleTabPress, options, valueToShow } = this.props;
+    const { handleChange, handleTabPress, options, name, valueToShow, otherValidityChecks } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key
@@ -145,6 +145,10 @@ class SelectBox extends React.Component {
           const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
           const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
           handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+
+          if (otherValidityChecks) {
+            otherValidityChecks();
+          }
 
           return {
             values: [ value ],
@@ -194,22 +198,46 @@ class SelectBox extends React.Component {
     else if (e.keyCode === 38) {
       if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault();
+
         this.setState(prevState => {
           let { focusedValue } = prevState
 
           if (focusedValue === 0 || focusedValue === -1) {
+
+            const parent = document.getElementById("options-"+name);
+            const item = parent.firstElementChild;
+            parent.scrollTop = parent.scrollHeight - (item.offsetHeight * 5)
+
             focusedValue = options.length - 1
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+            if (otherValidityChecks) {
+              otherValidityChecks();
+            }
+
+            if (!isOpen) {
+              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            }
 
             return {
               values: [ value ],
               focusedValue
             }
           } else if (focusedValue > 0) {
+            this.handleMoveUp();
+
             focusedValue--
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+            if (!isOpen) {
+              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            }
+
+            if (otherValidityChecks) {
+              otherValidityChecks();
+            }
 
             return {
               values: [ value ],
@@ -226,14 +254,25 @@ class SelectBox extends React.Component {
     else if (e.keyCode === 40) {
       if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault()
+
         this.setState(prevState => {
           let { focusedValue } = prevState
 
-
           if (focusedValue === options.length -1) {
+            const parent = document.getElementById("options-"+name);
+            parent.scrollTop = 0;
+
             focusedValue = 0
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+            if (otherValidityChecks) {
+              otherValidityChecks();
+            }
+
+            if (!isOpen) {
+              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            }
 
             return {
               values: [ value ],
@@ -241,9 +280,19 @@ class SelectBox extends React.Component {
             }
 
           } else {
+            this.handleMoveDown();
+
             focusedValue++
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+            if (otherValidityChecks) {
+              otherValidityChecks();
+            }
+
+            if (!isOpen) {
+              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            }
 
             return {
               values: [ value ],
@@ -262,6 +311,26 @@ class SelectBox extends React.Component {
     e.stopPropagation()
   }
 */
+  handleMoveUp = () => {
+    const { focusedValue } = this.state;
+    const { options, name } = this.props;
+    const parent = document.getElementById("options-"+name);
+    const item = parent.firstElementChild;
+    if (focusedValue < (options.length - 4)) {
+      parent.scrollTop -= item.offsetHeight
+    }
+  }
+
+  handleMoveDown = () => {
+    const { focusedValue } = this.state;
+    const { name } = this.props;
+    const parent = document.getElementById("options-"+name);
+    const item = parent.firstElementChild;
+    // i.e. 4 = 5th box
+    if (focusedValue >= 4) {
+      parent.scrollTop += item.offsetHeight
+    }
+  }
 
   checkExists(inputToCheck) {
     const { options, required, valueToShow } = this.props;
@@ -306,7 +375,7 @@ class SelectBox extends React.Component {
   }
 
   renderOptions() {
-    const { options, valueToShow, showDetail, detailToShow } = this.props
+    const { options, valueToShow, showDetail, detailToShow, name } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
@@ -314,7 +383,7 @@ class SelectBox extends React.Component {
     }
 
     return (
-      <div className={showDetail===true ? 'options showDetail' : 'options noDetail'}>
+      <div className={showDetail===true ? 'options showDetail' : 'options noDetail'} id={'options-'+name}>
         {options.map((option, index) => {
           const hasMultipleAttributes = this.checkMultipleAttributes();
           const value = hasMultipleAttributes === true ? option[valueToShow] : option;

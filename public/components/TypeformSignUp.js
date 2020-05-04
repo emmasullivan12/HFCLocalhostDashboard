@@ -135,11 +135,11 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didCountry', // set to did1stSU when first loaded
+      step: 'did1stSU', // set to did1stSU when first loaded
       userEduName: '',
       updatingEdu: '',
       updatingEmail: '',
-      country: 'GBR',
+      country: '',
       eetStatus: '',
       schName: '',
       schNameFreeText: '',
@@ -210,7 +210,6 @@ class TypeformSignUp extends Component {
         if (country === 'GBR') {
 
           if (uniName != '') {
-            console.log("doing uni look up promise")
             return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)])
               .then(uni => {
                 this.setState({

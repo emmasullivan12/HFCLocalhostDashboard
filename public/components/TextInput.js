@@ -20,7 +20,7 @@ class TextInput extends React.Component {
 
   render() {
     const { onChange } = this;
-    const { name, id, onBlur, placeholder, handleChange, required } = this.props;
+    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required } = this.props;
 
     return (
       <React.Fragment>
@@ -36,6 +36,7 @@ class TextInput extends React.Component {
           onBlur={onBlur}
           required={required}
           onChange={handleChange}
+          onKeyUp={handleKeyUp}
         />
 
       </React.Fragment>

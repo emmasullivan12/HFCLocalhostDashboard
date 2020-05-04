@@ -64,14 +64,14 @@ class Autocomplete extends React.Component {
   }
 
   onFocus = (e) => {
-    const {filteredSuggestions} = this.state;
+    const {filteredSuggestions, userInput} = this.state;
     const {onFocus} = this.props;
 
     if (onFocus) {
       onFocus()
     }
 
-    if (filteredSuggestions.length === 1 || filteredSuggestions.length === 0) {
+    if ((userInput != "" && this.checkUserInputExists(userInput)) || (filteredSuggestions.length === 0 && userInput === "")) {
       return
     } else {
       this.onChange(e);
@@ -104,13 +104,14 @@ class Autocomplete extends React.Component {
       }
       return filteredSuggestions;
     }
+
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions: filteredSuggestions(),
-      showSuggestions: true,
+      showSuggestions: userInput != "" ? true : false,
+  //    showSuggestions: true,
       userInput: e.currentTarget.value
     });
-
     const isValid = this.checkExists(e.currentTarget.value);
     handleChange(e.currentTarget.value, isValid);
   };
@@ -173,9 +174,6 @@ class Autocomplete extends React.Component {
       if (activeSuggestion === 0) {
         const parent = document.getElementById("autocompleter-items");
         const item = document.getElementsByClassName("autocompleter-item");
-        console.log("parent.scrollHeight: "+parent.scrollHeight)
-        console.log("item[0].offsetHeight: "+item[0].offsetHeight)
-        console.log("item[0].offsetHeight * 5: "+item[0].offsetHeight * 5)
         parent.scrollTop = parent.scrollHeight - (item[0].offsetHeight * 5)
         this.setState({ activeSuggestion: filteredSuggestions.length - 1 });
       } else {
@@ -188,7 +186,6 @@ class Autocomplete extends React.Component {
     else if (e.keyCode === 40) {
       if (activeSuggestion + 1 === filteredSuggestions.length) {
         const parent = document.getElementById("autocompleter-items");
-        const item = document.getElementsByClassName("autocompleter-item");
         parent.scrollTop = 0;
         this.setState({ activeSuggestion: 0 });
       } else {

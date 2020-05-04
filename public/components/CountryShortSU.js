@@ -20,6 +20,7 @@ class CountryShortSU extends React.Component {
       stateProvIsValid: '',
       city: '',
       tabPressed: '',
+      timeout: 0
     }
     this.handleCountryChange = this.handleCountryChange.bind(this);
     this.handleStateChange = this.handleStateChange.bind(this);
@@ -35,6 +36,19 @@ class CountryShortSU extends React.Component {
     } else {
       e.target.classList.add('error');
     }
+  }
+
+  handleKeyUp = (e) => {
+    e.persist();
+    const {timeout} = this.state;
+
+    clearTimeout(timeout);
+
+    this.setState({
+      timeout: setTimeout(()=>{
+        this.handleCityChange(e.target.value)
+      }, 300)
+    })
   }
 
   handleCountryChange(userInput, isValid) {
@@ -63,8 +77,10 @@ class CountryShortSU extends React.Component {
     })
   }
 
-  handleCityChange(e) {
-    this.setState({ city: e.target.value });
+  handleCityChange(userInput) {
+    this.setState({ city: userInput }, () => {
+      document.getElementById("Submit-btn-Country").focus()
+    });
   }
 
   handleTabPress(tabPressed) {
@@ -74,7 +90,6 @@ class CountryShortSU extends React.Component {
   // Dex to use save this down for individual's profile i.e. user/mentor/mentee.timeZone
   handleSubmit(e) {
     const {updateStep} = this.props;
-    console.log("handlesubmit function triggered")
     var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const {updateCountry} = this.props;
     const {countryLocal} = this.state;
@@ -252,14 +267,15 @@ class CountryShortSU extends React.Component {
                     placeholder="City"
                     className="form-control-std"
                     required
-                    handleChange={this.handleCityChange}
+                  //  handleChange={this.handleCityChange}
+                    handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onBlur}
                     focusOnLoad={countryIsValid === true && !tabPressed ? true : false}
                   />
                 </div>
               )}
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Country">
                 Next
               </button>
             </form>

@@ -84,6 +84,7 @@ class ConfirmStudent extends React.Component {
   }
 
   onChange = (e) => {
+    const {eduEmailIsValid} = this.state;
     this.setState({
       userInput: e.currentTarget.value
     })
@@ -113,6 +114,18 @@ class ConfirmStudent extends React.Component {
     }
   }
 
+  handleKeyUp = (e) => {
+    const {timeout} = this.state;
+
+    clearTimeout(timeout);
+
+    this.setState({
+      timeout: setTimeout(()=>{
+        this.checkEduEmail()
+      }, 800)
+    })
+  }
+
   handleUpdateEdu() {
     const {updateStep} = this.props;
     updateStep('didEduEmail', true)
@@ -124,7 +137,7 @@ class ConfirmStudent extends React.Component {
     updateStep('didEduEmail', false)
   }
 
-  handleSubmit(e) {
+  handleSubmit() {
     const {requestReview, reviewReason, userInput, eduEmailIsValid} = this.state;
     const {country, updateStep, sendForReview, updateEduEmail, removeFromSendForReview} = this.props;
 
@@ -143,18 +156,6 @@ class ConfirmStudent extends React.Component {
       updateStep('didEduEmail', false)
     })
 
-  }
-
-  handleKeyUp(e) {
-    const {timeout} = this.state;
-
-    clearTimeout(timeout);
-
-    this.setState({
-      timeout: setTimeout(()=>{
-        this.checkEduEmail()
-      }, 800)
-    })
   }
 
   checkEduEmail() {
@@ -204,12 +205,6 @@ class ConfirmStudent extends React.Component {
         hasTextAfterAt: true,
         endsWithSymbol: true,
         requestReview: false
-
-    //    {eduEmailIsValid === false && isPersonalEmail === false && (
-          //first div
-      //      {containsDotAndAt != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
-
-
       });
     } else if (country === 'GBR') {
       if (eetStatus === 'sch') {
@@ -241,10 +236,13 @@ class ConfirmStudent extends React.Component {
               requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
               reviewReason: "!match sch format"
             })
-/*            ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-              ? document.getElementById('eduEmailInput').classList.remove('error')
-              : document.getElementById('eduEmailInput').classList.add('error')
-            )*/
+          /*  if(document.getElementById("eduEmailInput").checkValidity() && eduEmailIsValid) {
+              console.log("removes error")
+              document.getElementById("eduEmailInput").classList.remove('error');
+            } else {
+              console.log("adds error")
+              document.getElementById("eduEmailInput").classList.add('error');
+            }*/
           });
 
         // if sch doesnt have specific format or user freetyped in sch name then do general check
@@ -264,10 +262,6 @@ class ConfirmStudent extends React.Component {
               requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
               reviewReason: "no sch format specified & failed general .ac.uk/.sch.uk check"
             })
-            /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-              ? document.getElementById('eduEmailInput').classList.remove('error')
-              : document.getElementById('eduEmailInput').classList.add('error')
-            )*/
           });
         }
 
@@ -291,10 +285,6 @@ class ConfirmStudent extends React.Component {
                 requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
                 reviewReason: "!match uni format"
               })
-              /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-                ? document.getElementById('eduEmailInput').classList.remove('error')
-                : document.getElementById('eduEmailInput').classList.add('error')
-              )*/
             });
           } else {
             const isValid = freeEmail === emailFormat + ".ac.uk";
@@ -310,10 +300,6 @@ class ConfirmStudent extends React.Component {
                 requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
                 reviewReason: "!match uni format"
               })
-              /*( eduEmailIsValid
-                ? document.getElementById('eduEmailInput').classList.remove('error')
-                : document.getElementById('eduEmailInput').classList.add('error')
-              )*/
             });
           }
 
@@ -333,10 +319,6 @@ class ConfirmStudent extends React.Component {
               requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
               reviewReason: "no uni format specified & failed general .ac.uk check"
             })
-            /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-              ? document.getElementById('eduEmailInput').classList.remove('error')
-              : document.getElementById('eduEmailInput').classList.add('error')
-            )*/
           });
         }
 
@@ -356,10 +338,6 @@ class ConfirmStudent extends React.Component {
             requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
             reviewReason: "eetstatus is job/train/none & failed general .sch.uk/.ac.uk check"
           })
-          /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('eduEmailInput').classList.remove('error')
-            : document.getElementById('eduEmailInput').classList.add('error')
-          )*/
         });
       }
     } else if (country === 'USA') {
@@ -379,11 +357,6 @@ class ConfirmStudent extends React.Component {
             requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
             reviewReason: "!match USA .edu format"
           })
-/*
-          ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('eduEmailInput').classList.remove('error')
-            : document.getElementById('eduEmailInput').classList.add('error')
-          )*/
         });
 
       } else if (eetStatus === 'sch') {
@@ -400,10 +373,6 @@ class ConfirmStudent extends React.Component {
             requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
             reviewReason: "is USA sch and we don't know sch email format"
           })
-        /*  ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('eduEmailInput').classList.remove('error')
-            : document.getElementById('eduEmailInput').classList.add('error')
-          )*/
         });
 
       // if user is eetstatus: job, train or nonw then do general check
@@ -422,10 +391,6 @@ class ConfirmStudent extends React.Component {
             requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
             reviewReason: "is USA job/train/none and !match .edu format"
           })
-          /*( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-            ? document.getElementById('eduEmailInput').classList.remove('error')
-            : document.getElementById('eduEmailInput').classList.add('error')
-          )*/
         });
       }
 
@@ -444,10 +409,6 @@ class ConfirmStudent extends React.Component {
           requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
           reviewReason: "is other country and we don't know format"
         })
-    /*    ( document.getElementById('eduEmailInput').checkValidity() && eduEmailIsValid
-          ? document.getElementById('eduEmailInput').classList.remove('error')
-          : document.getElementById('eduEmailInput').classList.add('error')
-        )*/
       });
     }
   }
@@ -504,7 +465,7 @@ class ConfirmStudent extends React.Component {
                     onKeyUp={handleKeyUp}
                     onKeyDown={onKeyDown}
                     value={userInput}
-                    className="form-control-std verifyForm"
+                    className={"form-control-std verifyForm " + (eduEmailIsValid === true || eduEmailIsValid === "" ? "" : "error")}
                     placeholder={"Your " + (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') + " email address"}
                     autoComplete="off"
                     autoCorrect="off"

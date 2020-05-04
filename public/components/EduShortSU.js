@@ -41,6 +41,7 @@ class EduShortSU extends React.Component {
       currTrainingProviderLocal: '',
       tabPressed: '',
       selectBoxFocused: '',
+      timeout: 0,
     }
     this.handleEetStatusChange = this.handleEetStatusChange.bind(this);
     this.handleUKSchChange = this.handleUKSchChange.bind(this);
@@ -66,6 +67,26 @@ class EduShortSU extends React.Component {
     } else {
       e.target.classList.add('error');
     }
+  }
+
+  handleKeyUp = (e) => {
+    console.log("handlekeyup triggered")
+
+    e.persist();
+    const {timeout} = this.state;
+
+    clearTimeout(timeout);
+
+    this.setState({
+      timeout: setTimeout(()=>{
+
+        if (e.target.id === 'schNameTextBox') {
+          console.log("handleschchange triggered")
+          this.handleSchChange(e)
+        }
+
+      }, 800)
+    })
   }
 
   handleEetStatusChange(userInput) {
@@ -114,8 +135,8 @@ class EduShortSU extends React.Component {
   }
 
   handleSchChange(e) {
-    const userInput = e.currentTarget != undefined ? e.currentTarget.value : e;
-    const isValid = userInput.length >= 3;
+    const userInput = e.target != undefined ? e.target.value : e;
+    const isValid = userInput.length > 0;
     if (!isValid) {
       this.setState({
         schYrGrp: '',
@@ -135,6 +156,8 @@ class EduShortSU extends React.Component {
   handleSchYrChange(userInput) {
     this.setState({
       schYrGrp: userInput,
+    }, () => {
+      document.getElementById("Submit-btn-Edu").focus()
     });
     if (this.state.courseLength != '') {
       this.setState({
@@ -162,7 +185,7 @@ class EduShortSU extends React.Component {
 
   handleUniChange(e) {
     const userInput = e.currentTarget != undefined ? e.currentTarget.value : e;
-    const isValid = userInput.length >= 2;
+    const isValid = userInput.length > 0;
     if (!isValid) {
       this.setState({
         uniYrGrp: '',
@@ -198,6 +221,8 @@ class EduShortSU extends React.Component {
   handleUniGradYrChange(userInput) {
     this.setState({
       courseLength: userInput,
+    }, () => {
+      document.getElementById("Submit-btn-Edu").focus()
     });
 
     const uniYrGrp = this.state.uniYrGrp;
@@ -551,7 +576,8 @@ class EduShortSU extends React.Component {
                     placeholder="High School"
                     className="form-control-std"
                     required
-                    handleChange={this.handleSchChange}
+                  //  handleChange={this.handleSchChange}
+                    handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
@@ -565,9 +591,10 @@ class EduShortSU extends React.Component {
                     options={country === 'GBR' ? ukSchYrs : nonUKSchYrs}
                     placeholder="Select Year Group:"
                     name='schYrGrp'
+                    id='schYrGrp'
                     handleChange={this.handleSchYrChange}
                     handleTabPress={this.handleTabPress}
-                    focusOnLoad={schNameIsValid === true && !tabPressed && country === 'GBR' ? true : false}
+                    focusOnLoad={schNameIsValid === true && !tabPressed ? true : false}
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
                   />
@@ -715,7 +742,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Edu">
                 Next
               </button>
             </form>
