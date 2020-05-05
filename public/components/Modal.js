@@ -24,14 +24,15 @@ const ModalContent = ({
   content,
   mentorName,
   modalRef,
-  onClickAway,
+  onMouseUp,
+  onMouseDown,
   onClose,
   onKeyDown,
   role = 'dialog',
   title
 }) => {
   return ReactDOM.createPortal(
-    <aside className="modal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onClick={onClickAway}>
+    <aside className="modal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
       <div className="modal-container" ref={modalRef}>
         <div className="modal-header">
           <div className="modal-title">
@@ -42,7 +43,7 @@ const ModalContent = ({
             <svg className="modal-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
           </button>
         </div>
-        <div className="modal-content">
+        <div className="modal-content" id="modal-content">
           {React.Children.map(content, child => React.cloneElement(child, {onClose, onKeyDown}))}
         </div>
       </div>
@@ -56,7 +57,8 @@ class Modal extends React.Component {
   constructor () {
     super();
     this.state = {
-      isOpen: false
+      isOpen: false,
+  //    itemClicked: ''
     }
     this.onOpen = this.onOpen.bind(this);
     this.onClose = this.onClose.bind(this);
@@ -64,7 +66,15 @@ class Modal extends React.Component {
 
   onOpen(e) {
     this.setState({ isOpen: true }, () => {
-      this.closeButtonNode.focus();
+      var content = document.getElementById("modal-content")
+
+      // if there is an input within modal content then allow (if needed) focus to
+      // be given to that instead of close button
+      if (content.getElementsByTagName("input").length != 0) {
+        return
+      } else {
+        this.closeButtonNode.focus();
+      }
     });
     this.toggleScrollLock();
   }
@@ -81,16 +91,16 @@ class Modal extends React.Component {
   // Close modal using Escape key on keyboard
   onKeyDown = ({keyCode}) => keyCode === 27 && this.onClose();
 
+  // Ensures if click within modal and end outside of modal does not cloes modal
+  onMouseDown = (e) => {
+    this.setState({
+      itemClicked: e.target
+    })
+  }
+
   // Close modal by clicking outside of Modal
-  onClickAway = (e) => {
-    console.log("e.target: "+e.target)
-    console.log(e.target)
-    console.log("e.currentTarget: "+e.currentTarget)
-    console.log(e.target)
-    console.log("this.modalNode: "+this.modalNode)
-    console.log(this.modalNode)
-    console.log("this.modalNode.contains(e.target): "+this.modalNode.contains(e.target))
-    if (this.modalNode && this.modalNode.contains(e.target)) return;
+  onMouseUp = (e) => {
+    if (this.modalNode && this.modalNode.contains(this.state.itemClicked)) return;
     this.onClose();
   }
 
@@ -112,7 +122,8 @@ class Modal extends React.Component {
             mentorName={mentorName}
             modalRef={n => this.modalNode = n}
             content={children}
-            onClickAway={this.onClickAway}
+            onMouseDown={this.onMouseDown}
+            onMouseUp={this.onMouseUp}
             onClose={this.onClose}
             onKeyDown={this.onKeyDown}
             role={role}

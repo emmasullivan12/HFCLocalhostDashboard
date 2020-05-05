@@ -56,7 +56,7 @@ class PassMenteeContent extends Component {
     const { PassReasonMessage, PassedOnMentee, messageFromServer } = this.state;
     const isEnabled = this.canBeSubmitted();
 //    const { onSubmit } = this.props;
-    if(messageFromServer == '') {
+    if(messageFromServer === '') {
       return (
         <React.Fragment>
           <div className="modal-preTitle">

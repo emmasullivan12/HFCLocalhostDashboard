@@ -96,6 +96,8 @@ class ConfirmStudent extends React.Component {
     if (currentState === false) {
       this.setState({
         [e.target.name]: true,
+      }, () => {
+        document.getElementById("Submit-btn-eduEmail").focus()
       });
 
     } else {
@@ -232,10 +234,20 @@ class ConfirmStudent extends React.Component {
             hasTextAfterAt: true,
             endsWithSymbol: false,
           }, () => {
-            this.setState({
-              requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-              reviewReason: "!match sch format"
-            })
+            if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+              this.setState({
+                requestReview: true,
+                reviewReason: "!match sch format"
+              })
+            } else {
+              this.setState({
+                requestReview: false,
+                reviewReason: ""
+              }, () => {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              })
+            }
+
           /*  if(document.getElementById("eduEmailInput").checkValidity() && eduEmailIsValid) {
               console.log("removes error")
               document.getElementById("eduEmailInput").classList.remove('error');
@@ -258,10 +270,19 @@ class ConfirmStudent extends React.Component {
             hasTextAfterAt: true,
             endsWithSymbol: false,
           }, () => {
-            this.setState({
-              requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-              reviewReason: "no sch format specified & failed general .ac.uk/.sch.uk check"
-            })
+            if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+              this.setState({
+                requestReview: true,
+                reviewReason: "no sch format specified & failed general .ac.uk/.sch.uk check"
+              })
+            } else {
+              this.setState({
+                requestReview: false,
+                reviewReason: ""
+              }, () => {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              })
+            }
           });
         }
 
@@ -281,10 +302,19 @@ class ConfirmStudent extends React.Component {
               hasTextAfterAt: true,
               endsWithSymbol: false,
             }, () => {
-              this.setState({
-                requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-                reviewReason: "!match uni format"
-              })
+              if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+                this.setState({
+                  requestReview: true,
+                  reviewReason: "!match uni format"
+                })
+              } else {
+                this.setState({
+                  requestReview: false,
+                  reviewReason: ""
+                }, () => {
+                  document.getElementById("Submit-btn-eduEmail").focus()
+                })
+              }
             });
           } else {
             const isValid = freeEmail === emailFormat + ".ac.uk";
@@ -296,10 +326,19 @@ class ConfirmStudent extends React.Component {
               hasTextAfterAt: true,
               endsWithSymbol: false,
             }, () => {
-              this.setState({
-                requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-                reviewReason: "!match uni format"
-              })
+              if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+                this.setState({
+                  requestReview: true,
+                  reviewReason: "!match uni format"
+                })
+              } else {
+                this.setState({
+                  requestReview: false,
+                  reviewReason: ""
+                }, () => {
+                  document.getElementById("Submit-btn-eduEmail").focus()
+                })
+              }
             });
           }
 
@@ -315,10 +354,19 @@ class ConfirmStudent extends React.Component {
             hasTextAfterAt: true,
             endsWithSymbol: false,
           }, () => {
-            this.setState({
-              requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-              reviewReason: "no uni format specified & failed general .ac.uk check"
-            })
+            if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+              this.setState({
+                requestReview: true,
+                reviewReason: "no uni format specified & failed general .ac.uk check"
+              })
+            } else {
+              this.setState({
+                requestReview: false,
+                reviewReason: ""
+              }, () => {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              })
+            }
           });
         }
 
@@ -334,10 +382,19 @@ class ConfirmStudent extends React.Component {
           hasTextAfterAt: true,
           endsWithSymbol: false,
         }, () => {
-          this.setState({
-            requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-            reviewReason: "eetstatus is job/train/none & failed general .sch.uk/.ac.uk check"
-          })
+          if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+            this.setState({
+              requestReview: true,
+              reviewReason: "eetstatus is job/train/none & failed general .sch.uk/.ac.uk check"
+            })
+          } else {
+            this.setState({
+              requestReview: false,
+              reviewReason: ""
+            }, () => {
+              document.getElementById("Submit-btn-eduEmail").focus()
+            })
+          }
         });
       }
     } else if (country === 'USA') {
@@ -353,10 +410,19 @@ class ConfirmStudent extends React.Component {
           hasTextAfterAt: true,
           endsWithSymbol: false,
         }, () => {
-          this.setState({
-            requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-            reviewReason: "!match USA .edu format"
-          })
+          if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+            this.setState({
+              requestReview: true,
+              reviewReason: "!match USA .edu format"
+            })
+          } else {
+            this.setState({
+              requestReview: false,
+              reviewReason: ""
+            }, () => {
+              document.getElementById("Submit-btn-eduEmail").focus()
+            })
+          }
         });
 
       } else if (eetStatus === 'sch') {
@@ -369,9 +435,11 @@ class ConfirmStudent extends React.Component {
           hasTextAfterAt: true,
           endsWithSymbol: false,
         }, () => {
-        this.setState({
-            requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
+          this.setState({
+            requestReview: true,
             reviewReason: "is USA sch and we don't know sch email format"
+          }, () => {
+            document.getElementById("Submit-btn-eduEmail").focus()
           })
         });
 
@@ -387,10 +455,19 @@ class ConfirmStudent extends React.Component {
           hasTextAfterAt: true,
           endsWithSymbol: false,
         }, () => {
-          this.setState({
-            requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
-            reviewReason: "is USA job/train/none and !match .edu format"
-          })
+          if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+            this.setState({
+              requestReview: true,
+              reviewReason: "is USA job/train/none and !match .edu format"
+            })
+          } else {
+            this.setState({
+              requestReview: false,
+              reviewReason: ""
+            }, () => {
+              document.getElementById("Submit-btn-eduEmail").focus()
+            })
+          }
         });
       }
 
@@ -406,8 +483,10 @@ class ConfirmStudent extends React.Component {
         endsWithSymbol: false,
       }, () => {
         this.setState({
-          requestReview: eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked),
+          requestReview: true,
           reviewReason: "is other country and we don't know format"
+        }, () => {
+          document.getElementById("Submit-btn-eduEmail").focus()
         })
       });
     }
@@ -507,7 +586,7 @@ class ConfirmStudent extends React.Component {
                 {isPersonalEmail === true && (
                   <div className="descriptor prompt error verifyForm alignLeft textLeft">This can&#39;t be a personal email address</div>
                 )}
-                <button type="button" onClick={this.handleSubmit} disabled={!isEnabled} className="Submit-btn fullWidth">
+                <button type="button" onClick={this.handleSubmit} disabled={!isEnabled} className="Submit-btn fullWidth" id="Submit-btn-eduEmail">
                   Next
                 </button>
                 <button type="button" onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">

@@ -47,7 +47,7 @@ class CountryShortSU extends React.Component {
     this.setState({
       timeout: setTimeout(()=>{
         this.handleCityChange(e.target.value)
-      }, 300)
+      }, 800)
     })
   }
 

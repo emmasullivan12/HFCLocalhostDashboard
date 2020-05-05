@@ -92,6 +92,8 @@ class IndustryRoleSU extends React.Component {
   handleRatingChange(e) {
     this.setState({
       knowNextSteps: e.currentTarget.value
+    }, () => {
+      document.getElementById("Submit-btn-ind").focus()
     });
   }
 
@@ -217,7 +219,7 @@ class IndustryRoleSU extends React.Component {
                   />
                 </div>
               )}
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-ind">
                 Next
               </button>
             </form>

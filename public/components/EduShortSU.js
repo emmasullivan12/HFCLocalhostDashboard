@@ -81,8 +81,13 @@ class EduShortSU extends React.Component {
       timeout: setTimeout(()=>{
 
         if (e.target.id === 'schNameTextBox') {
-          console.log("handleschchange triggered")
           this.handleSchChange(e)
+        } else if (e.target.id === 'uniNameTextBox') {
+          this.handleUniChange(e)
+        } else if (e.target.id === 'currCoInput') {
+          this.handleJobChange(e)
+        } else if (e.target.id === 'currTrainingProviderInput') {
+          this.handleTrainChange(e)
         }
 
       }, 800)
@@ -114,6 +119,10 @@ class EduShortSU extends React.Component {
       currCoLocal: '',
       currTrainingProviderLocal: '',
       tabPressed: '',
+    }, () => {
+      if (userInput === 'none') {
+        document.getElementById("Submit-btn-Edu").focus()
+      }
     })
   }
 
@@ -184,7 +193,7 @@ class EduShortSU extends React.Component {
   }
 
   handleUniChange(e) {
-    const userInput = e.currentTarget != undefined ? e.currentTarget.value : e;
+    const userInput = e.target != undefined ? e.target.value : e;
     const isValid = userInput.length > 0;
     if (!isValid) {
       this.setState({
@@ -238,13 +247,17 @@ class EduShortSU extends React.Component {
 
   handleJobChange(e) {
     this.setState({
-      currCoLocal: e.currentTarget.value
+      currCoLocal: e.target.value
+    }, () => {
+      document.getElementById("Submit-btn-Edu").focus()
     })
   }
 
   handleTrainChange(e) {
     this.setState({
-      currTrainingProviderLocal: e.currentTarget.value
+      currTrainingProviderLocal: e.target.value
+    }, () => {
+      document.getElementById("Submit-btn-Edu").focus()
     });
   }
 
@@ -656,7 +669,8 @@ class EduShortSU extends React.Component {
                     placeholder="University"
                     className="form-control-std"
                     required
-                    handleChange={this.handleUniChange}
+                  //  handleChange={this.handleUniChange}
+                    handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
@@ -675,7 +689,7 @@ class EduShortSU extends React.Component {
                       handleTabPress={this.handleTabPress}
                       handleFocus={this.handleFocus}
                       otherValidityChecks={this.otherValidityChecks}
-                      focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed && country === 'GBR' ? true : false}
+                      focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed ? true : false}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
@@ -711,8 +725,10 @@ class EduShortSU extends React.Component {
                     //tabIndex='1'
                     type="text"
                     name="currCo"
+                    id="currCoInput"
                     onBlur={this.onBlur}
-                    onChange={this.handleJobChange}
+                    //onChange={this.handleJobChange}
+                    onKeyUp={this.handleKeyUp}
                     className="form-control-std"
                     placeholder="Company"
                     autoComplete="off"
@@ -730,8 +746,10 @@ class EduShortSU extends React.Component {
                     //tabIndex='1'
                     type="text"
                     name="currTrainingProvider"
+                    id="currTrainingProviderInput"
                     onBlur={this.onBlur}
-                    onChange={this.handleTrainChange}
+                  //  onChange={this.handleTrainChange}
+                    onKeyUp={this.handleKeyUp}
                     className="form-control-std"
                     placeholder="Training Provider"
                     autoComplete="off"

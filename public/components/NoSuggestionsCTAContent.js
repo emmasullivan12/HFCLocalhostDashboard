@@ -14,9 +14,6 @@ class NoSuggestionsCTAContent extends Component {
   }
 
   componentDidMount(){
-    console.log("componentdidmount")
-    console.log("document.getElementById(eduNameFreeTextModal)"+document.getElementById("eduNameFreeTextModal"))
-    console.log(document.getElementById("eduNameFreeTextModal"))
     document.getElementById("eduNameFreeTextModal").focus();
   }
 
@@ -46,23 +43,16 @@ class NoSuggestionsCTAContent extends Component {
       const { schNameFreeTextModal, uniNameFreeTextModal } = this.state;
 
       if (eetStatusLocal === "sch") {
-        console.log("IN MODAL: schNameFreeTextModal: "+schNameFreeTextModal);
         this.setState({
           messageFromServer: 'We are saving down your school name in free text!'
-        }, () => {
-          console.log("messageFromServer: "+this.state.messageFromServer);
-          handleSchChange(schNameFreeTextModal);
-        });
+        })
+        handleSchChange(schNameFreeTextModal);
 
       } else if (eetStatusLocal === "uni") {
-        console.log("IN MODAL: uniNameFreeTextModal: "+uniNameFreeTextModal);
         this.setState({
           messageFromServer: 'We are saving down your uni name in free text!'
-        }, () => {
-          handleUniChange(uniNameFreeTextModal);
-        });
-      } else {
-        return; // not currently using Autocomplete for anything other than sch & uni
+        })
+        handleUniChange(uniNameFreeTextModal)
       }
     }
   }
