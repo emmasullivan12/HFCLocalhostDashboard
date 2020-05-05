@@ -9,7 +9,8 @@ import NoEduEmailContent from './NoEduEmailContent.js';
 const noEduEmailModalProps = {
   ariaLabel: 'No student email?',
   triggerText: 'No student email?',
-  usedFor: 'noEduEmailBtn'
+  usedFor: 'noEduEmailBtn',
+  changeInitFocus: true
 }
 
 // Content for MentorCards using props passed from database

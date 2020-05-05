@@ -65,12 +65,14 @@ class Modal extends React.Component {
   }
 
   onOpen(e) {
+    const {changeInitFocus} = this.props;
     this.setState({ isOpen: true }, () => {
-      var content = document.getElementById("modal-content")
+    //  var content = document.getElementById("modal-content")
 
-      // if there is an input within modal content then allow (if needed) focus to
+      // if there is an input within modal content then allow focus to
       // be given to that instead of close button
-      if (content.getElementsByTagName("input").length != 0) {
+    //  if (content.getElementsByTagName("input").length != 0) {
+      if (changeInitFocus) {
         return
       } else {
         this.closeButtonNode.focus();

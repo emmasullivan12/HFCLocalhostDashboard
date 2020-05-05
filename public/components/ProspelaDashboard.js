@@ -41,7 +41,8 @@ const SendNotifModalProps = {
 const SubmitMatchModalProps = {
   ariaLabel: 'Popup for Prospela to submit mentor matches',
   triggerText: 'Submit new match',
-  usedFor: 'SubmitMatch'
+  usedFor: 'SubmitMatch',
+  changeInitFocus: true
 }
 
 // This includes all content to appear below Modal's title for the RequestChatModal

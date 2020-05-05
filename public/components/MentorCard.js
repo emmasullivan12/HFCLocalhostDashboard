@@ -17,7 +17,8 @@ import MentorProfileContent from './MentorProfileContent.js';
 const RequestChatModalProps = {
   ariaLabel: 'Popup to request chat with matched E-Mentor',
   triggerText: 'Start Chatting',
-  usedFor: 'RequestChat'
+  usedFor: 'RequestChat',
+  changeInitFocus: true
 }
 
 // This includes props and title to be passed to PassMentorModal

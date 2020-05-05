@@ -9,7 +9,8 @@ import NoSuggestionsCTAContent from './NoSuggestionsCTAContent.js';
 const noSuggestionsCTAModalProps = {
   ariaLabel: 'Edit school or uni',
   triggerText: 'Edit',
-  usedFor: 'eduFreeTextBtn'
+  usedFor: 'eduFreeTextBtn',
+  changeInitFocus: true
 }
 
 // Content for MentorCards using props passed from database

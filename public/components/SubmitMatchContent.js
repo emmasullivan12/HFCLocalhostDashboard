@@ -27,6 +27,10 @@ class SubmitMatchContent extends Component {
     };
   }
 
+  componentDidMount(){
+    document.getElementsByTagName("input")[0].focus();
+  }
+
   handleInput = (evt) => {
     evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
@@ -82,6 +86,7 @@ class SubmitMatchContent extends Component {
           <input
             type="text"
             name="MenteeID"
+            id="MenteeIDtextInput"
             className="textInputBox small"
             placeholder="Enter MenteeID..."
             value={this.state.MenteeID}

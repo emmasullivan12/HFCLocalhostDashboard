@@ -12,6 +12,10 @@ class AddChatModalContent extends Component {
     }
   }
 
+  componentDidMount(){
+    document.getElementsByTagName("input")[0].focus();
+  }
+
   handleInput = (evt) => {
     evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });

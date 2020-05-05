@@ -10,6 +10,7 @@ const JoinProgrammeModalProps = {
   ariaLabel: 'Join a live Programme',
   triggerText: 'Join a Programme',
   usedFor: 'joinProgLrg',
+  changeInitFocus: true
 }
 
 class JoinProgPrompt extends Component {

@@ -17,12 +17,14 @@ const JoinProgrammeModalProps = {
   ariaLabel: 'Join a live Programme',
   triggerText: 'Join a Programme',
   usedFor: 'joinProg',
+  changeInitFocus: true
 }
 
 const JoinProgrammePlusModalProps = {
   ariaLabel: 'Join a live Programme',
   triggerText: 'Join a Programme',
   usedFor: 'joinProgSml',
+  changeInitFocus: true
 }
 
 // This shows the content within an individual row in the ChatMenu

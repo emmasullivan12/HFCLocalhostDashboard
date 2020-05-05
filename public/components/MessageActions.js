@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 
@@ -9,7 +9,8 @@ import "../css/MessageActions.css";
 const ReportModalProps = {
   ariaLabel: 'Report message to Prospela',
   triggerText: 'Report',
-  usedFor: 'ReportMsg'
+  usedFor: 'ReportMsg',
+  changeInitFocus: true
 }
 
 class MessageActions extends Component {

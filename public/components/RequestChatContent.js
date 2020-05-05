@@ -16,6 +16,10 @@ class RequestChatContent extends Component {
     };
   }
 
+  componentDidMount(){
+    document.getElementsByTagName("textarea")[0].focus();
+  }
+
   handleInput = (evt) => {
     evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ requestChatMessage: evt.target.value });

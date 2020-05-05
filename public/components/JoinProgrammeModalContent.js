@@ -17,6 +17,10 @@ class JoinProgrammeModalContent extends Component {
     };
   }
 
+  componentDidMount(){
+    document.getElementsByTagName("input")[0].focus();
+  }
+
   handleInput = (evt) => {
     this.setState({ [evt.target.name]: evt.target.value });
   }

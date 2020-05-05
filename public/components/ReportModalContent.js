@@ -15,6 +15,10 @@ class ReportModalContent extends Component {
     this.updateClassname = this.updateClassname.bind(this);
   }
 
+  componentDidMount(){
+    document.getElementsByTagName("textarea")[0].focus();
+  }
+
   handleInput = (evt) => {
     evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ [evt.target.name]: evt.target.value });

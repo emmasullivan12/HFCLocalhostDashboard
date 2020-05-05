@@ -313,7 +313,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'did1stSU';
+  const step = 'didSafeG';
   const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 

@@ -16,6 +16,7 @@ const AddChatModalProps = {
   ariaLabel: 'Start a new DM with a specific user',
   triggerText: 'Start a DM',
   usedFor: 'addPrDM',
+  changeInitFocus: true
 }
 
 // This shows the content within an individual row in the ChatMenu

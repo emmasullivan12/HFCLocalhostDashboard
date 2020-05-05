@@ -11,7 +11,8 @@ import "../css/General.css";
 const AcceptMenteeModalProps = {
   ariaLabel: 'Popup to accept chat with matched Mentee',
   triggerText: 'Accept Mentee',
-  usedFor: 'msgExtras-accept'
+  usedFor: 'msgExtras-accept',
+  changeInitFocus: true
 }
 
 const PassMenteeModalProps = {

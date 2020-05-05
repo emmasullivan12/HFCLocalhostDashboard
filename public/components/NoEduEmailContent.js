@@ -35,6 +35,10 @@ class NoEduEmailContent extends Component {
       : document.getElementById("currentSitu").focus()
   }*/
 
+  componentDidMount(){
+    document.getElementsByTagName("input")[0].focus();
+  }
+
   onBlur(e) {
     console.log("onblur triggered")
     const {emailInput, emailIsValid, currentSitu, profProfileURL, urlInputIsValid} = this.state;

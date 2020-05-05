@@ -18,6 +18,7 @@ const JoinProgrammePlusModalProps = {
   ariaLabel: 'Join a live Programme',
   triggerText: 'Join a Programme',
   usedFor: 'joinProgSmlHome',
+  changeInitFocus: true
 }
 
 class HomepageCTAContainer extends Component {
