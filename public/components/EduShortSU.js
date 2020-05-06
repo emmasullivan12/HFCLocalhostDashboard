@@ -70,8 +70,6 @@ class EduShortSU extends React.Component {
   }
 
   handleKeyUp = (e) => {
-    console.log("handlekeyup triggered")
-
     e.persist();
     const {timeout} = this.state;
 
@@ -556,8 +554,10 @@ class EduShortSU extends React.Component {
                     >
                       <EduNotOnListCTA
                         country={country}
-                        eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                        //  eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                        eetStatusLocal={eetStatusLocal}
                         handleSchChange={this.handleSchChange}
+                        maxLength="75"
                       />
                     </Autocomplete>
                     {errorLoadingEdu === true && (
@@ -575,8 +575,10 @@ class EduShortSU extends React.Component {
                   </div>
                   <EditEduFreeText
                     country={country}
-                    eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                    //  eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                    eetStatusLocal={eetStatusLocal}
                     handleSchChange={this.handleSchChange}
+                    maxLength="75"
                   />
                 </div>
               )}
@@ -594,6 +596,7 @@ class EduShortSU extends React.Component {
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
+                    maxLength="75"
                   />
                 </div>
               )}
@@ -636,8 +639,10 @@ class EduShortSU extends React.Component {
                     >
                       <EduNotOnListCTA
                         country={country}
-                        eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                        //  eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                        eetStatusLocal={eetStatusLocal}
                         handleUniChange={this.handleUniChange}
+                        maxLength="75"
                       />
                     </Autocomplete>
                     {errorLoadingEdu === true && (
@@ -655,8 +660,10 @@ class EduShortSU extends React.Component {
                   </div>
                   <EditEduFreeText
                     country={country}
-                    eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                  //  eetStatusLocal={eetStatus ? eetStatus : eetStatusLocal}
+                    eetStatusLocal={eetStatusLocal}
                     handleUniChange={this.handleUniChange}
+                    maxLength="75"
                   />
                 </div>
               )}
@@ -674,6 +681,7 @@ class EduShortSU extends React.Component {
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
+                    maxLength="75"
                   />
                 </div>
               )}
@@ -734,6 +742,7 @@ class EduShortSU extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    maxLength="50"
                     autoFocus
                     required
                   />
@@ -755,6 +764,7 @@ class EduShortSU extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    maxLength="50"
                     autoFocus
                     required
                   />

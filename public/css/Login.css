@@ -274,9 +274,9 @@ input[type=text]:disabled{
 .descriptor.prompt.error{
   color: red;
 }
-.descriptor.prompt.error.verifyForm{
+.descriptor.prompt.error.verifyForm,
+.neutralText.verifyForm.alignRight{
   margin-top: -2.5rem;
-  /* margin-bottom: 1.5rem; */
 }
 .descriptor.prompt.error.verifyForm.otherOption{
   width: 14rem;

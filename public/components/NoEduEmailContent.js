@@ -9,6 +9,7 @@ class NoEduEmailContent extends Component {
   constructor() {
     super();
     this.state = {
+      progCode: '',
       emailInput: '',
       emailIsValid: '',
       isPersonalEmail: '',
@@ -24,23 +25,13 @@ class NoEduEmailContent extends Component {
     };
     this.onBlur = this.onBlur.bind(this);
     this.checkEmail = this.checkEmail.bind(this);
-    this.handleURLKeyUp = this.handleURLKeyUp.bind(this);
-    this.handleEmailKeyUp = this.handleEmailKeyUp.bind(this);
   }
 
-/*  componentDidMount(){
-    const {eetStatus} = this.props;
-    eetStatus != 'none'
-      ? document.getElementById("profEmail").focus()
-      : document.getElementById("currentSitu").focus()
-  }*/
-
   componentDidMount(){
-    document.getElementsByTagName("input")[0].focus();
+    document.getElementById("progverifcode").focus();
   }
 
   onBlur(e) {
-    console.log("onblur triggered")
     const {emailInput, emailIsValid, currentSitu, profProfileURL, urlInputIsValid} = this.state;
     const {eetStatus} = this.props;
 
@@ -66,9 +57,46 @@ class NoEduEmailContent extends Component {
 
   }
 
-  handleChange = (e) => {
+  handleCodeChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
+    }, () => {
+      if (e.target.value.length === 6) {
+        document.getElementById("currentSituInput").focus();
+      }
+    })
+  }
+
+  handleSituChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+  handleSituMoveNext = (e) => {
+    const {eetStatus} = this.props;
+    if (e.target.value.length >= 25) {
+      if (eetStatus != 'none') {
+        document.getElementById("profEmail").focus();
+      } else {
+        document.getElementById("profProfileURL").focus();
+      }
+    }
+  }
+
+  handleURLChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    }, () => {
+      this.checkProfUrl()
+    })
+  }
+
+  handleEmailChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    }, () => {
+      this.checkEmail()
     })
   }
 
@@ -93,6 +121,26 @@ class NoEduEmailContent extends Component {
       });
 
     }
+  }
+
+  handleKeyUp = (e) => {
+    e.persist()
+    const {timeout} = this.state;
+    clearTimeout(timeout);
+
+    this.setState({
+      timeout: setTimeout(()=>{
+        if (e.target.name === 'progCode') {
+          this.handleCodeChange(e)
+        } else if (e.target.name === 'currentSitu') {
+          this.handleSituMoveNext(e)
+        } else if (e.target.name === 'emailInput') {
+          this.handleEmailChange()
+        } else if (e.target.name === 'profProfileURL') {
+          this.handleURLChange(e)
+        }
+      }, 800)
+    })
   }
 
   checkEmail() {
@@ -146,13 +194,14 @@ class NoEduEmailContent extends Component {
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: false
+      }, () => {
+        document.getElementById("profProfileURL").focus();
       });
     }
   }
 
   checkProfUrl() {
     const {profProfileURL} = this.state;
-    console.log("profProfileURL: "+profProfileURL)
 
     if (isURL(profProfileURL) === false) {
       this.setState({
@@ -161,84 +210,24 @@ class NoEduEmailContent extends Component {
     } else {
       this.setState({
         urlInputIsValid: true,
+      }, () => {
+        document.getElementById("Submit-btn-noEduEmail").focus();
       });
     }
   }
-
-  handleURLKeyUp(e) {
-    const {timeout, profProfileURL, urlInputIsValid} = this.state;
-    clearTimeout(timeout);
-
-    this.setState({
-      timeout: setTimeout(()=>{
-        this.checkProfUrl()
-      }, 800)
-    })
-
-    /*if (e.target.name === 'profProfileURL') {
-      if(e.target.checkValidity() && (profProfileURL === '' || urlInputIsValid === true)) {
-        e.target.classList.remove('error');
-      } else {
-        e.target.classList.add('error');
-      }
-    }*/
-  }
-
-  handleEmailKeyUp(e) {
-    const {timeout, emailInput, emailIsValid} = this.state;
-
-    clearTimeout(timeout);
-
-    this.setState({
-      timeout: setTimeout(()=>{
-        this.checkEmail()
-      }, 800)
-    })
-
-  /*  if (e.target.name === 'emailInput') {
-      if(e.target.checkValidity() && (emailInput === '' || emailIsValid === true)) {
-        e.target.classList.remove('error');
-      } else {
-        e.target.classList.add('error');
-      }
-    }*/
-
-  }
-
-/*  onKeyDown = e => {
-
-    // User pressed the enter key
-    if (e.keyCode === 13) {
-      if (!this.canBeSubmitted()) {
-        e.preventDefault ();
-        return;
-      } else {
-        console.log("onkeydown triggered")
-        this.handleSubmit();
-      }
-    }
-  };
-*/
-  // This ensures user cannot press Enter on keyboard to submit without completing form first
-/*  canBeSubmitted() {
-    const {schNameFreeTextModal, uniNameFreeTextModal} = this.state;
-    return (
-      schNameFreeTextModal.length >= 2 || uniNameFreeTextModal.length >= 2
-    );
-  }*/
 
   canBeSubmitted() {
     const {emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDot, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol} = this.state;
     const {eetStatus} = this.props;
 
     if (eetStatus != 'none') {
-      if ((emailInput === '' || emailIsValid === true) && currentSitu.length >= 25 && (profProfileURL === '' || urlInputIsValid != 'false')) {
+      if ((emailInput === '' || emailIsValid === true) && currentSitu.length >= 25 && currentSitu.length <= 500 && (profProfileURL === '' || urlInputIsValid != false)) {
         return true;
       } else {
         return false;
       }
     } else {
-      if (currentSitu.length >= 25 && (profProfileURL === '' || urlInputIsValid != 'false')) {
+      if (currentSitu.length >= 25 && (profProfileURL === '' || urlInputIsValid != false)) {
         return true;
       } else {
         return false;
@@ -248,7 +237,7 @@ class NoEduEmailContent extends Component {
 
   render() {
     const { onKeyDown } = this;
-    const { emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer } = this.state;
+    const { progCode, emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer } = this.state;
     const { country, eetStatus, currCo, currTrainingProvider } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer === '') {
@@ -261,6 +250,54 @@ class NoEduEmailContent extends Component {
             Tell us about your situation
           </div>
           <form className="noEduEmail-form" id="noEduEmailForm">
+            <label htmlFor="profProfileURL" className="descriptor alignLeft">
+              Have a programme code? Enter it here:
+            </label>
+            <input
+              type="password"
+              name="progCode"
+              className="form-control-std verifyForm"
+              onBlur={this.onBlur}
+              onKeyUp={this.handleKeyUp}
+              placeholder="Type programme code...."
+              id="progverifcode"
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
+              maxLength="50"
+            />
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="currentSitu">
+              Tell us a bit about your current situation
+            </label>
+            <textarea
+              name="currentSitu"
+              className="form-control-std textInputBox verifyForm"
+              form="noEduEmailForm"
+              id="currentSituInput"
+              onBlur={this.onBlur}
+              onChange={this.handleSituChange}
+              onKeyUp={this.handleKeyUp}
+              placeholder="Help us assess your eligibility to join..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
+              minLength="25"
+              maxLength="500"
+              required
+            />
+            {currentSitu != '' && currentSitu.length < 25 && (
+              <div className="descriptor prompt error verifyForm alignLeft">
+                Min 25 characters
+              </div>
+            )}
+            {currentSitu != '' && currentSitu.length > 500 && (
+              <div className="descriptor prompt error verifyForm alignLeft">
+                Max 500 characters
+              </div>
+            )}
+            <div className="neutralText verifyForm alignRight">
+              {currentSitu.length} / 500
+            </div>
             {eetStatus != 'none' &&(
               <React.Fragment>
                 <label htmlFor="profEmail" className="descriptor alignLeft">
@@ -271,14 +308,13 @@ class NoEduEmailContent extends Component {
                   name="emailInput"
                   id="profEmail"
                   onBlur={this.onBlur}
-                  onChange={this.handleChange}
-                  onKeyUp={this.handleEmailKeyUp}
-                  value={this.state.emailInput}
+                  onKeyUp={this.handleKeyUp}
                   className="form-control-std verifyForm"
                   placeholder={"Your " + (eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional') + " email address"}
                   autoComplete="off"
                   autoCorrect="off"
                   spellCheck="off"
+                  maxLength="100"
                   autoFocus
                 />
                 {emailIsValid === false && isPersonalEmail === false && (
@@ -291,28 +327,6 @@ class NoEduEmailContent extends Component {
                 )}
               </React.Fragment>
             )}
-            <label className="descriptor alignLeft reqAsterisk" htmlFor="currentSitu">
-              Tell us a bit about your current situation
-            </label>
-            <textarea
-              name="currentSitu"
-              className="form-control-std textInputBox verifyForm"
-              //className="form-control-std verifyForm"
-              form="noEduEmailForm"
-              onBlur={this.onBlur}
-              onChange={this.handleChange}
-              value={this.state.currentSitu}
-              placeholder="Help us assess your eligibility to join..."
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck="off"
-              required
-            />
-            {currentSitu != '' && currentSitu.length < 25 && (
-              <div className="descriptor prompt error verifyForm alignLeft">
-                Min 25 characters
-              </div>
-            )}
             <label htmlFor="profProfileURL" className="descriptor alignLeft">
               Link to your LinkedIn (or equivalent) professional profile
             </label>
@@ -321,17 +335,16 @@ class NoEduEmailContent extends Component {
               name="profProfileURL"
               id="profProfileURL"
               onBlur={this.onBlur}
-              onChange={this.handleChange}
-              onKeyUp={this.handleURLKeyUp}
-              value={this.state.profProfileURL}
+              onKeyUp={this.handleKeyUp}
               className="form-control-std verifyForm"
               placeholder="https://...."
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
+              maxLength="150"
             />
             <div className="pass-btn-container">
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-noEduEmail">
                 Submit for Review
               </button>
             </div>

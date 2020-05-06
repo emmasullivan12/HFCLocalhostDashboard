@@ -292,8 +292,8 @@ class ConfirmStudent extends React.Component {
         if (uniName != '' && emailFormat != "") {
 
           // This University does not have .ac.uk format
-          if (uniName === '69') {
-            const isValid = emailFormat[0] === freeEmail;
+          if (uniName === '69' || uniName === '163') {
+            const isValid = freeEmail === emailFormat;
             this.setState({
               eduEmailIsValid: isValid,
               isPersonalEmail: false,
@@ -549,6 +549,7 @@ class ConfirmStudent extends React.Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    maxLength="100"
                     autoFocus
                     required
                   />

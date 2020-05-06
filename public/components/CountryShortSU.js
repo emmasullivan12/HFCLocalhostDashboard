@@ -102,7 +102,7 @@ class CountryShortSU extends React.Component {
 
     var isCountryOK = countries.map((el) => el.value).indexOf(countryLocal) != -1;
 
-      if (countryLocal != '' && isCountryOK && city != '') {
+      if (countryLocal != '' && isCountryOK && city != '' && city.length <= 50) {
 
         if (countryLocal === 'GBR') {
           var isUKCountyOK = ukCounties.map((el) => el.value).indexOf(stateProv) != -1;
@@ -267,6 +267,7 @@ class CountryShortSU extends React.Component {
                     placeholder="City"
                     className="form-control-std"
                     required
+                    maxLength="50"
                   //  handleChange={this.handleCityChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}

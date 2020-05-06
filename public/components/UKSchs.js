@@ -27,7 +27,7 @@ const ukSchs = [
   {value: '21', label: 'Swiss Cottage School - Development & Research Centre', location: 'London, UK' },
   {value: '22', label: 'Newhaven Pupil Referral Unit', location: 'London, UK' },
   {value: '23', label: 'Saint Mary Magdalene Church of England All Through School', location: 'Secondary - Old Dover Road, Se3 8sy, UK' },
-  {value: '24', label: 'Eltham Hill School', location: 'London, UK' },
+  {value: '24', label: 'Eltham Hill Schoofl', location: 'London, UK' },
   {value: '25', label: 'Plumstead Manor School', location: 'London, UK' },
   {value: '26', label: 'Thomas Tallis School', location: 'London, UK' },
   {value: '27', label: 'The John Roan School', location: 'London, UK' },
@@ -7636,6 +7636,7 @@ const ukSchs = [
 
 //added later
   {value: '7630', label: 'Bertha Park High School', location: 'Perth, UK' }, //new sch in Scotland
+  {value: '7631', label: 'Access Creative College', location: 'Manchester, UK' }, //new college
 ]
 
 export default ukSchs;

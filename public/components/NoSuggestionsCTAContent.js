@@ -9,7 +9,8 @@ class NoSuggestionsCTAContent extends Component {
     this.state = {
       schNameFreeTextModal: '',
       uniNameFreeTextModal: '',
-      messageFromServer: ''
+      messageFromServer: '',
+      timeout: 0
     };
   }
 
@@ -17,16 +18,33 @@ class NoSuggestionsCTAContent extends Component {
     document.getElementById("eduNameFreeTextModal").focus();
   }
 
+  handleKeyUp = (e) => {
+    e.persist();
+    const {timeout} = this.state;
+
+    clearTimeout(timeout);
+
+    this.setState({
+      timeout: setTimeout(()=>{
+        this.handleChange(e.target.value)
+      }, 800)
+    })
+  }
+
   handleChange = (e) => {
     const { eetStatusLocal } = this.props;
 
     if (eetStatusLocal === "sch") {
       this.setState({
-        schNameFreeTextModal: e.target.value
+        schNameFreeTextModal: e
+      }, () => {
+        document.getElementById("Submit-btn-addEdu").focus()
       });
     } else if (eetStatusLocal === "uni") {
       this.setState({
-        uniNameFreeTextModal: e.target.value
+        uniNameFreeTextModal: e
+      }, () => {
+        document.getElementById("Submit-btn-addEdu").focus()
       });
     } else {
       return; // not currently using Autocomplete for anything other than sch & uni
@@ -74,15 +92,16 @@ class NoSuggestionsCTAContent extends Component {
   // This ensures user cannot press Enter on keyboard to submit without completing form first
   canBeSubmitted() {
     const {schNameFreeTextModal, uniNameFreeTextModal} = this.state;
+    const {maxLength} = this.props;
     return (
-      schNameFreeTextModal.length >= 2 || uniNameFreeTextModal.length >= 2
+      (schNameFreeTextModal.length >= 2 && schNameFreeTextModal.length <= maxLength) || (uniNameFreeTextModal.length >= 2 && uniNameFreeTextModal.length <= maxLength)
     );
   }
 
   render() {
     const {onKeyDown } = this;
-    const { schNameFreeTextModal, uniNameFreeTextModal, messageFromServer } = this.state;
-    const { country, eetStatusLocal } = this.props;
+    const { messageFromServer } = this.state;
+    const { country, eetStatusLocal, maxLength } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer === '') {
       return (
@@ -100,17 +119,19 @@ class NoSuggestionsCTAContent extends Component {
               id="eduNameFreeTextModal"
               className="form-control-std"
               form="eduFreeTextForm"
-              value={eetStatusLocal === "sch" ? schNameFreeTextModal : uniNameFreeTextModal}
-              onChange={this.handleChange}
+          //    value={eetStatusLocal === "sch" ? schNameFreeTextModal : uniNameFreeTextModal}
+          //    onChange={this.handleChange}
               onKeyDown={this.onKeyDown}
+              onKeyUp={this.handleKeyUp}
               placeholder={country === 'GBR' ? "School or College" : "High School"}
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
+              maxLength={maxLength}
               required
             />
             <div className="pass-btn-container">
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn">
+              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-addEdu">
                 Submit for Review
               </button>
             </div>

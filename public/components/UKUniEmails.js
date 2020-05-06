@@ -164,7 +164,12 @@ const ukUniEmails = [
   {value: '158', emailFormat: 'bangor'},
   {value: '159', emailFormat: 'uwtsd'},
   {value: '160', emailFormat: 'aber'},
-  {value: '161', emailFormat: 'glyndwr'}
+  {value: '161', emailFormat: 'glyndwr'},
+
+  // added later
+  {value: '162', emailFormat: 'pearsoncollegelondon'},
+  {value: '163', emailFormat: 'escapestudios.com'},
+  {value: '164', emailFormat: 'accesscreative'},
 ];
 
 export default ukUniEmails;

@@ -165,6 +165,11 @@ const ukUnis = [
   {value: '159', label: 'University of Wales Trinity Saint David', location: 'Lampeter, Wales, UK'},
   {value: '160', label: 'Aberystwyth University', location: 'Aberystwyth, Wales, UK'},
   {value: '161', label: 'Wrexham Glyndwr University', location: 'Wrexham, Wales, UK'},
+
+  //added later
+  {value: '162', label: 'Pearson College London', location: 'London, UK' }, //new uni
+  {value: '163', label: 'Escape Studios', location: 'London, UK' }, //new uni
+  {value: '164', label: 'Access Creative College', location: 'Manchester, UK' },
 ];
 
 export default ukUnis;

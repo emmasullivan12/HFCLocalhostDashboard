@@ -17,7 +17,7 @@ const noSuggestionsCTAModalProps = {
 class EduNotOnListCTA extends Component {
 
   render() {
-    const { country, eetStatusLocal, handleSchChange, handleUniChange } = this.props;
+    const { country, eetStatusLocal, handleSchChange, handleUniChange, maxLength } = this.props;
     return(
       <React.Fragment>
         <Modal {...noSuggestionsCTAModalProps}>
@@ -26,6 +26,7 @@ class EduNotOnListCTA extends Component {
             eetStatusLocal={eetStatusLocal}
             handleSchChange={handleSchChange}
             handleUniChange={handleUniChange}
+            maxLength={maxLength}
           />
         </Modal>
       </React.Fragment>

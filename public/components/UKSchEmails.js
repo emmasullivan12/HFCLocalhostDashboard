@@ -7634,6 +7634,10 @@ const ukSchEmails = [
   {value: '7628', emailFormat: 'sperrinview.dungannon', dm: 'ni'},
   {value: '7629', emailFormat: 'lisanally.armagh', dm: 'ni'},
 
+  //added later
+  {value: '7630', emailFormat: ''}, //new sch in Scotland
+  {value: '7631', emailFormat: 'accesscreative', dm: 'ac'}, //new college
+
 ];
 
 export default ukSchEmails;
