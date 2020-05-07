@@ -10,11 +10,13 @@ class VerifyEmail extends React.Component {
     super();
     this.state = {
       isContainerOpen: false,
-      verificationCode: ''
+      verificationCode: '',
+      resentCode: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleUpdateEmail = this.handleUpdateEmail.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleResendSubmit = this.handleResendSubmit.bind(this);
     this.toggleContainer = this.toggleContainer.bind(this);
   }
 
@@ -34,9 +36,9 @@ class VerifyEmail extends React.Component {
       token: verificationCode
     };
     if (sendForReview.length > 0) {
-      updateStep('didEmailVerifNeedsRev', false)
+      updateStep('didEmailVerifNeedsRev')
     } else {
-      updateStep('didEmailVerif', false)
+      updateStep('didEmailVerif')
     }
 
   }
@@ -47,12 +49,11 @@ class VerifyEmail extends React.Component {
     const itemToReview = 'eduEmail'
     removeFromSendForReview(itemToReview)
 
-    updateStep('didDiversity', false, true) // Send them back to update their student email
+    updateStep('didDiversity') // Send them back to update their student email
   }
 
   handleResendSubmit(e) {
-    e.preventDefault();
-    console.log("requesting to resend email verification code");
+    this.setState({ resentCode: true });
 //    this.props.resendVerifyEmail();
   }
 
@@ -70,7 +71,7 @@ class VerifyEmail extends React.Component {
 
   render() {
   const isEnabled = this.canBeSubmitted();
-  const {isContainerOpen, verificationCode} = this.state;
+  const {isContainerOpen, verificationCode, resentCode} = this.state;
   const {emailToVerify} = this.props;
 
     return (
@@ -116,11 +117,13 @@ class VerifyEmail extends React.Component {
                 </button>
               </li>
               <li className="descListItem">Wait a few minutes or alternatively click to resend below</li>
-              <button type="submit" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
+              <button type="button" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
                 <span >Resend code</span>
               </button>
               <div className="redText"> Something went wrong. Looks like this user has already been verified. Please try and log in</div>
-              <div className="greenText"> Successfully resent. Please also check your junk mail.</div>
+              {resentCode === true && (
+                <div className="greenText"> Successfully resent. Please also check your junk mail.</div>
+              )}
             </ol>
           </div>
         )}

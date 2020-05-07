@@ -83,13 +83,29 @@ class EduShortSU extends React.Component {
         } else if (e.target.id === 'uniNameTextBox') {
           this.handleUniChange(e)
         } else if (e.target.id === 'currCoInput') {
-          this.handleJobChange(e)
+          this.handleJobMoveNext()
         } else if (e.target.id === 'currTrainingProviderInput') {
-          this.handleTrainChange(e)
+          this.handleTrainMoveNext()
         }
 
       }, 800)
     })
+  }
+
+  handleJobMoveNext = () => {
+    document.getElementById("Submit-btn-Edu").focus()
+  }
+
+  handleJobChange = (e) => {
+    this.setState({ currCoLocal: e.target.value })
+  }
+
+  handleTrainMoveNext = () => {
+    document.getElementById("Submit-btn-Edu").focus()
+  }
+
+  handleTrainChange = (e) => {
+    this.setState({ currTrainingProviderLocal: e.target.value })
   }
 
   handleEetStatusChange(userInput) {
@@ -243,22 +259,6 @@ class EduShortSU extends React.Component {
     }
   }
 
-  handleJobChange(e) {
-    this.setState({
-      currCoLocal: e.target.value
-    }, () => {
-      document.getElementById("Submit-btn-Edu").focus()
-    })
-  }
-
-  handleTrainChange(e) {
-    this.setState({
-      currTrainingProviderLocal: e.target.value
-    }, () => {
-      document.getElementById("Submit-btn-Edu").focus()
-    });
-  }
-
   handleTabPress(tabPressed) {
     this.setState({ tabPressed: tabPressed });
   }
@@ -286,18 +286,16 @@ class EduShortSU extends React.Component {
   }
 
   handleSubmit(e) {
-    const {updateStep, updatingEdu, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv, sendForReview} = this.props;
+    const {step, updateStep, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv, sendForReview} = this.props;
     const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal, requestReview, reviewReason} = this.state;
 
-    console.log("eetStatus: "+eetStatus)
-    console.log("eetStatusLocal: "+eetStatusLocal)
-    if (updatingEdu) {
+    if (step === "updatingEdu") {
       updateEetStatus(eetStatusLocal)
 
       if (eetStatusLocal ==='sch') {
         if (schNameLocal != '') {
           updateUKSch(schNameLocal, () => {
-            updateStep('didEdu', updatingEdu);
+            updateStep('updatingEdu');
           })
         } else {
 
@@ -307,7 +305,7 @@ class EduShortSU extends React.Component {
           }
 
           updateSchFreeText(schNameFreeTextLocal, () => {
-            updateStep('didEdu', updatingEdu);
+            updateStep('updatingEdu');
           })
         }
 
@@ -315,7 +313,7 @@ class EduShortSU extends React.Component {
         console.log("comes here")
         if (uniNameLocal != '') {
           updateUKUni(uniNameLocal, () => {
-            updateStep('didEdu', updatingEdu);
+            updateStep('updatingEdu');
           })
         } else {
 
@@ -325,22 +323,22 @@ class EduShortSU extends React.Component {
           }
 
           updateUniFreeText(uniNameFreeTextLocal, () => {
-            updateStep('didEdu', updatingEdu);
+            updateStep('updatingEdu');
           })
         }
 
       } else if (eetStatusLocal ==='job') {
         updateCurrCo(currCoLocal, () => {
-          updateStep('didEdu', updatingEdu);
+          updateStep('updatingEdu');
         })
 
       } else if (eetStatusLocal ==='train') {
         updateCurrTrainingProv(currTrainingProviderLocal, () => {
-          updateStep('didEdu', updatingEdu);
+          updateStep('updatingEdu');
         })
 
       } else {
-        updateStep('didEdu', updatingEdu);
+        updateStep('updatingEdu');
       }
 
     } else {
@@ -349,7 +347,7 @@ class EduShortSU extends React.Component {
       if (eetStatusLocal ==='sch' || eetStatus === 'sch') {
         if (schNameLocal != '') {
           updateUKSch(schNameLocal, () => {
-            updateStep('didEdu', false);
+            updateStep('didEdu');
           })
         } else {
           if (requestReview === true) {
@@ -357,14 +355,14 @@ class EduShortSU extends React.Component {
             sendForReview('schName', reviewReason)
           }
           updateSchFreeText(schNameFreeTextLocal, () => {
-            updateStep('didEdu', false);
+            updateStep('didEdu');
           })
         }
 
       } else if (eetStatusLocal ==='uni' || eetStatus === 'uni') {
         if (uniNameLocal != '') {
           updateUKUni(uniNameLocal, () => {
-            updateStep('didEdu', false);
+            updateStep('didEdu');
           })
         } else {
           if (requestReview === true) {
@@ -372,7 +370,7 @@ class EduShortSU extends React.Component {
             sendForReview('uniName', reviewReason)
           }
           updateUniFreeText(uniNameFreeTextLocal, () => {
-            updateStep('didEdu', false);
+            updateStep('didEdu');
           })
         }
 
@@ -380,16 +378,16 @@ class EduShortSU extends React.Component {
         console.log("updatingcurrco function triggered")
         updateCurrCo(currCoLocal, () => {
           console.log("updatestep function triggered")
-          updateStep('didEdu', false);
+          updateStep('didEdu');
         })
 
       } else if (eetStatusLocal === 'train') {
         updateCurrTrainingProv(currTrainingProviderLocal, () => {
-          updateStep('didEdu', false);
+          updateStep('didEdu');
         })
 
       } else {
-        updateStep('didEdu', false);
+        updateStep('didEdu');
       }
 
     }
@@ -735,7 +733,7 @@ class EduShortSU extends React.Component {
                     name="currCo"
                     id="currCoInput"
                     onBlur={this.onBlur}
-                    //onChange={this.handleJobChange}
+                    onChange={this.handleJobChange}
                     onKeyUp={this.handleKeyUp}
                     className="form-control-std"
                     placeholder="Company"
@@ -757,7 +755,7 @@ class EduShortSU extends React.Component {
                     name="currTrainingProvider"
                     id="currTrainingProviderInput"
                     onBlur={this.onBlur}
-                  //  onChange={this.handleTrainChange}
+                    onChange={this.handleTrainChange}
                     onKeyUp={this.handleKeyUp}
                     className="form-control-std"
                     placeholder="Training Provider"

@@ -104,7 +104,7 @@ class IndustryRoleSU extends React.Component {
   handleSubmit(e) {
     const {updateStep} = this.props;
 
-    updateStep('didIndRole', false);
+    updateStep('didIndRole');
   }
 
   canBeSubmitted() {

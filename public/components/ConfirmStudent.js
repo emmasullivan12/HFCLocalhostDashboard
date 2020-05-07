@@ -84,7 +84,7 @@ class ConfirmStudent extends React.Component {
   }
 
   onChange = (e) => {
-    const {eduEmailIsValid} = this.state;
+//    const {eduEmailIsValid} = this.state;
     this.setState({
       userInput: e.currentTarget.value
     })

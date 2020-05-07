@@ -46,9 +46,17 @@ class CountryShortSU extends React.Component {
 
     this.setState({
       timeout: setTimeout(()=>{
-        this.handleCityChange(e.target.value)
+        this.handleCityMoveNext(e.target.value)
       }, 800)
     })
+  }
+
+  handleCityMoveNext = (e) => {
+    document.getElementById("Submit-btn-Country").focus()
+  }
+
+  handleCityChange = (e) => {
+    this.setState({ city: e.target.value })
   }
 
   handleCountryChange(userInput, isValid) {
@@ -75,12 +83,6 @@ class CountryShortSU extends React.Component {
       stateProv: userInput,
       stateProvIsValid: isValid
     })
-  }
-
-  handleCityChange(userInput) {
-    this.setState({ city: userInput }, () => {
-      document.getElementById("Submit-btn-Country").focus()
-    });
   }
 
   handleTabPress(tabPressed) {
@@ -268,7 +270,7 @@ class CountryShortSU extends React.Component {
                     className="form-control-std"
                     required
                     maxLength="50"
-                  //  handleChange={this.handleCityChange}
+                    handleChange={this.handleCityChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onBlur}

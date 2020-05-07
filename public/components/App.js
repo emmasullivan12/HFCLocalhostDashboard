@@ -320,6 +320,7 @@ function MenteeSteps({userRole}) {
       switch (step) {
         case 'did1stSU':
         case 'didCountry':
+        case 'updatingEdu':
         case 'didEdu':
         case 'didIndRole':
         case 'didDiversity':

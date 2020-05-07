@@ -58,7 +58,7 @@ class DiversitySU extends React.Component {
 
   handleSubmit(e) {
     const {updateStep} = this.props;
-    updateStep('didDiversity', false);
+    updateStep('didDiversity');
   }
 
   canBeSubmitted() {

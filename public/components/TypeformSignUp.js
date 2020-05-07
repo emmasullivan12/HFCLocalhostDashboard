@@ -137,8 +137,6 @@ class TypeformSignUp extends Component {
       isGeneralError: '',
       step: 'did1stSU', // set to did1stSU when first loaded
       userEduName: '',
-      updatingEdu: '',
-      updatingEmail: '',
       country: '',
       eetStatus: '',
       schName: '',
@@ -171,9 +169,9 @@ class TypeformSignUp extends Component {
   }
 
   getUserEduName() {
-    const {step, updatingEdu, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
+    const {step, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
 
-    if (step === 'didDiversity' || (step === 'didCountry' && updatingEdu)) {
+    if (step === 'didDiversity' || step === 'updatingEdu') {
       if (eetStatus === 'sch') {
         if (country === 'GBR') {
 
@@ -268,27 +266,26 @@ class TypeformSignUp extends Component {
     }
   }
 
-  updateStep(stepJustDone, updatingEdu, updatingEmail) {
+  updateStep(stepJustDone, updatingEdu) {
     if (stepJustDone === 'didCountry') {
       this.setState({
         step: 'didCountry'
       })
       return;
 
-    } else if (stepJustDone === 'didEdu' && updatingEdu != true) {
+    } else if (stepJustDone === 'didEdu') {
       this.setState({
         step: 'didEdu'
       })
       return;
 
-    } else if (stepJustDone === 'didEdu' && updatingEdu === true) {
+    } else if (stepJustDone === 'updatingEdu') {
       return Promise.all([this.getUserEduName()])
         .then(res => {
           this.setState({
             step: 'didDiversity', // User updated education & has already done Shortsu so jump forward to didDiversity and confirm email
             isGeneralError: false,
           }, () => {
-            console.log("triggering getUserEduName")
             this.getUserEduName()
           })
         })
@@ -306,11 +303,6 @@ class TypeformSignUp extends Component {
     return;
 
   } else if (stepJustDone === 'didDiversity') {
-      if (updatingEmail) {
-        this.setState({
-          updatingEmail: updatingEmail
-        })
-      }
       this.setState({
         step: 'didDiversity'
       }, () => {
@@ -321,10 +313,9 @@ class TypeformSignUp extends Component {
 
     } else if (stepJustDone === 'didEduEmail' && updatingEdu === true) {
       this.setState({
-        step: 'didCountry', // User wants to go back to update education
-        updatingEdu: true,
+        step: 'updatingEdu', // User wants to go back to update education
         sendForReview: [],
-        reviewReason: []
+        reviewReason: [],
       })
       return;
 
@@ -449,7 +440,7 @@ class TypeformSignUp extends Component {
   }
 
   render() {
-    const {isGeneralError, isLoading, step, updatingEdu, updatingEmail, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify, sendForReview} = this.state;
+    const {isGeneralError, isLoading, step, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify, sendForReview} = this.state;
     const userRole = 'mentee';
     const totalMenteeSteps = 5;
     const totalMentorSteps = 2;
@@ -477,7 +468,8 @@ class TypeformSignUp extends Component {
               />
             </SignUpScreenTemplate>
           );
-        case 'didCountry': // School status component goes here
+        case 'didCountry':
+        case 'updatingEdu':
           return (
             <SignUpScreenTemplate {...MenteeShortSUProps}>
               <EduShortSU
@@ -485,8 +477,7 @@ class TypeformSignUp extends Component {
                 country={country}
                 currentStep="2"
                 totalMenteeSteps={totalMenteeSteps}
-                updatingEdu={updatingEdu}
-                eetStatus={updatingEdu ? eetStatus : ''}
+                eetStatus={step === 'updatingEdu' ? eetStatus : ''}
                 updateEetStatus={this.updateEetStatus}
                 updateUKSch={this.updateUKSch}
                 updateSchFreeText={this.updateSchFreeText}
