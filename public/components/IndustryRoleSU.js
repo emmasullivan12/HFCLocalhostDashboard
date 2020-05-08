@@ -6,6 +6,7 @@ import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
+import RatingItems from './RatingItems.js';
 //import {lookupRoles} from './UserDetail.js';
 
 class IndustryRoleSU extends React.Component {
@@ -212,7 +213,7 @@ class IndustryRoleSU extends React.Component {
               {((rolesChosen != '' && roleValid === true) || editingRole === true) && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="knowNextSteps">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
-                  <TextInput
+                {/*  <TextInput
                     name="knowNextSteps"
                     id="knowNextSteps"
                     placeholder="Rating goes here"
@@ -222,6 +223,9 @@ class IndustryRoleSU extends React.Component {
                     handleTabPress={this.handleTabPress}
                     onBlur={this.onRatingBlur}
                     focusOnLoad={tabPressed ? false : true}
+                  />*/}
+                  <RatingItems
+                    ratingOutOf={10}
                   />
                 </div>
               )}

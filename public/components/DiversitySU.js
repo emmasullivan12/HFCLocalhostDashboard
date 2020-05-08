@@ -83,11 +83,11 @@ class DiversitySU extends React.Component {
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const hurdlesList = [
-      {value: '0', label: 'Eligible for Free School Meals'},
-      {value: '1', label: 'My parents didn\'t go to university'},
-      {value: '2', label: 'Non-native English speaker'},
-      {value: '3', label: 'None'},
-      {value: '4', label: 'Prefer not to say'}
+      {value: '0', label: 'Eligible for Free School Meals', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default'},
+      {value: '1', label: 'My parents didn\'t go to university', icon: 'https://images.typeform.com/images/QSBrrY42iA35/image/default'},
+      {value: '2', label: 'Non-native English speaker', icon: 'https://images.typeform.com/images/di2wKSTrtKwX/image/default'},
+      {value: '3', label: 'None', icon: 'https://images.typeform.com/images/qfz8s3nqfncc/image/default'},
+      {value: '4', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/WzCB42U3EE5c/image/default'}
     ];
 
     const uKschAttendedList = [
@@ -107,10 +107,10 @@ class DiversitySU extends React.Component {
     ];
 
     const genders = [
-      {value: '0', label: 'Male'},
-      {value: '1', label: 'Female'},
-      {value: '2', label: 'Non-binary'},
-      {value: '3', label: 'Prefer not to say'}
+      {value: '0', label: 'Male', icon: 'https://images.typeform.com/images/8ht36QbibjJJ/image/default'},
+      {value: '1', label: 'Female', icon: 'https://images.typeform.com/images/c6BWgrhxrj3d/image/default'},
+      {value: '2', label: 'Non-binary', icon: 'https://images.typeform.com/images/nnGsJVx2JgGJ/image/default'},
+      {value: '3', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/tsrEVrcRyMjR/image/default'}
     ];
 
     const ethnicities = [
@@ -145,6 +145,8 @@ class DiversitySU extends React.Component {
                   handleChange={this.handleHurChange}
                   handleTabPress={this.handleTabPress}
                   focusOnLoad
+                  showIcon
+                  iconToShow='icon'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   required
                 />
@@ -176,6 +178,8 @@ class DiversitySU extends React.Component {
                     handleChange={this.handleGenChange}
                     handleTabPress={this.handleTabPress}
                     focusOnLoad
+                    showIcon
+                    iconToShow='icon'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
                   />

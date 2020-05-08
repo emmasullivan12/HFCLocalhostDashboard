@@ -375,7 +375,7 @@ class SelectBox extends React.Component {
   }
 
   renderOptions() {
-    const { options, valueToShow, showDetail, detailToShow, name } = this.props
+    const { options, valueToShow, showDetail, showIcon, detailToShow, iconToShow, name } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
@@ -388,6 +388,7 @@ class SelectBox extends React.Component {
           const hasMultipleAttributes = this.checkMultipleAttributes();
           const value = hasMultipleAttributes === true ? option[valueToShow] : option;
           const detail = detailToShow == undefined ? '' :  option[detailToShow];
+          const icon = iconToShow == undefined ? '' :  option[iconToShow];
           const selected = values.includes(value)
 
           let className = "option"
@@ -397,6 +398,9 @@ class SelectBox extends React.Component {
             className += " showDetail overflow-ellipsis"
           } else {
             className += " noDetail overflow-ellipsis"
+          }
+          if (showIcon===true) {
+            className += " showIcon"
           }
 
           if (option[detailToShow] === "") className += " extraTop"
@@ -412,6 +416,11 @@ class SelectBox extends React.Component {
         //      onMouseOver={this.onHoverOption}
               onClick={this.onClickOption}
             >
+              {showIcon===true && (
+                <div className={"option-iconContainer " + (showDetail===true ? "showDetail": "noDetail")}>
+                  <img alt="option icon" src={icon} />
+                </div>
+              )}
               {value}
               {showDetail===true && (
                 <div className="option-detail overflow-ellipsis" >

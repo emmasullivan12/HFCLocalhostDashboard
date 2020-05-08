@@ -83,6 +83,32 @@ svg {
   background-color: #fff;
   border-bottom: 1px solid #d4d4d4;
 }
+.option.showIcon{
+  display: flex;
+  flex-direction: row;
+  padding-left: 60px;
+  position: relative;
+}
+.option-iconContainer{
+  position: absolute;
+  left: 15px;
+  top: 0;
+  display: inline-block;
+}
+.option-iconContainer.showDetail{
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+.option-iconContainer.noDetail{
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+.option-iconContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .option-detail{
   color: #a0a0a0;
   text-align: left;

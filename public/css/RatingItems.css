@@ -1,0 +1,10 @@
+.ratingItemsContainer{
+  flex-direction: row;
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+
+.ratingItem{
+  display: inline-block;
+}
