@@ -13,10 +13,11 @@ class NoEduEmailContent extends Component {
       emailInput: '',
       emailIsValid: '',
       isPersonalEmail: '',
-      containsDot: '',
+      containsDotAndAt: '',
       hasTextBeforeAt: '',
       hasTextAfterAt: '',
       endsWithSymbol: '',
+      isHtmlValid: '',
       currentSitu: '',
       profProfileURL: '',
       urlInputIsValid: '',
@@ -60,11 +61,13 @@ class NoEduEmailContent extends Component {
   handleCodeChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
-    }, () => {
-      if (e.target.value.length === 6) {
-        document.getElementById("currentSituInput").focus();
-      }
     })
+  }
+
+  handleCodeMoveNext = (e) => {
+    if (e.target.value.length >= 6 && e.target.value.length < 50) {
+      document.getElementById("currentSituInput").focus();
+    }
   }
 
   handleSituChange = (e) => {
@@ -92,12 +95,21 @@ class NoEduEmailContent extends Component {
     })
   }
 
+  handleURLMoveNext = (e) => {
+    document.getElementById("Submit-btn-noEduEmail").focus();
+  }
+
+
   handleEmailChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
     }, () => {
       this.checkEmail()
     })
+  }
+
+  handleEmailMoveNext = (e) => {
+    document.getElementById("profProfileURL").focus();
   }
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
@@ -131,13 +143,13 @@ class NoEduEmailContent extends Component {
     this.setState({
       timeout: setTimeout(()=>{
         if (e.target.name === 'progCode') {
-          this.handleCodeChange(e)
+          this.handleCodeMoveNext(e)
         } else if (e.target.name === 'currentSitu') {
           this.handleSituMoveNext(e)
         } else if (e.target.name === 'emailInput') {
-          this.handleEmailChange()
+          this.handleEmailMoveNext(e)
         } else if (e.target.name === 'profProfileURL') {
-          this.handleURLChange(e)
+          this.handleURLMoveNext(e)
         }
       }, 800)
     })
@@ -150,30 +162,31 @@ class NoEduEmailContent extends Component {
     const freeEmailDomains = ["gmail.com", "hotmail.com"];
     var emailSplit = emailInput.split('@')
     var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
+    const emailFormInput = document.getElementById("profEmail")
 
     if (freeEmailDomains.includes(freeEmail)) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: true
       });
-    } else if (emailInput.includes(".") != true) {
+    } else if (emailInput.includes(".") != true || emailInput.includes("@") != true) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
-        containsDot: false
+        containsDotAndAt: false
       });
     } else if (emailInput.indexOf("@") === 0) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
-        containsDot: true,
+        containsDotAndAt: true,
         hasTextBeforeAt: false
       });
     } else if (/^[a-zA-Z()]+$/.test(emailInput.charAt(emailInput.indexOf("@") + 1)) === false) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
-        containsDot: true,
+        containsDotAndAt: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: false
       });
@@ -181,21 +194,30 @@ class NoEduEmailContent extends Component {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
-        containsDot: true,
+        containsDotAndAt: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: true
+      });
+    } else if (emailFormInput.checkValidity() != true) {
+      this.setState({
+        emailIsValid: false,
+        isPersonalEmail: false,
+        containsDotAndAt: true,
+        hasTextBeforeAt: true,
+        hasTextAfterAt: true,
+        endsWithSymbol: false,
+        isHtmlValid: false,
       });
     } else {
       this.setState({
         emailIsValid: true,
         isPersonalEmail: false,
-        containsDot: true,
+        containsDotAndAt: true,
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
-        endsWithSymbol: false
-      }, () => {
-        document.getElementById("profProfileURL").focus();
+        endsWithSymbol: false,
+        isHtmlValid: true,
       });
     }
   }
@@ -210,25 +232,31 @@ class NoEduEmailContent extends Component {
     } else {
       this.setState({
         urlInputIsValid: true,
-      }, () => {
-        document.getElementById("Submit-btn-noEduEmail").focus();
       });
     }
   }
 
   canBeSubmitted() {
-    const {emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDot, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol} = this.state;
+    const {emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDotAndAt, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid} = this.state;
     const {eetStatus} = this.props;
 
     if (eetStatus != 'none') {
       if ((emailInput === '' || emailIsValid === true) && currentSitu.length >= 25 && currentSitu.length <= 500 && (profProfileURL === '' || urlInputIsValid != false)) {
-        return true;
+        if (isHtmlValid) {
+          return true;
+        } else {
+          return false;
+        }
       } else {
         return false;
       }
     } else {
       if (currentSitu.length >= 25 && (profProfileURL === '' || urlInputIsValid != false)) {
-        return true;
+        if (isHtmlValid) {
+          return true;
+        } else {
+          return false;
+        }
       } else {
         return false;
       }
@@ -237,7 +265,7 @@ class NoEduEmailContent extends Component {
 
   render() {
     const { onKeyDown } = this;
-    const { progCode, emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer } = this.state;
+    const { progCode, emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer, isHtmlValid } = this.state;
     const { country, eetStatus, currCo, currTrainingProvider } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer === '') {
@@ -258,6 +286,7 @@ class NoEduEmailContent extends Component {
               name="progCode"
               className="form-control-std verifyForm"
               onBlur={this.onBlur}
+              onChange={this.handleCodeMoveNext}
               onKeyUp={this.handleKeyUp}
               placeholder="Type programme code...."
               id="progverifcode"
@@ -308,6 +337,7 @@ class NoEduEmailContent extends Component {
                   name="emailInput"
                   id="profEmail"
                   onBlur={this.onBlur}
+                  onChange={this.handleEmailChange}
                   onKeyUp={this.handleKeyUp}
                   className="form-control-std verifyForm"
                   placeholder={"Your " + (eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional') + " email address"}
@@ -317,7 +347,7 @@ class NoEduEmailContent extends Component {
                   maxLength="100"
                   autoFocus
                 />
-                {emailIsValid === false && isPersonalEmail === false && (
+                {isHtmlValid === false && emailIsValid === false && isPersonalEmail === false && (
                   <div className="descriptor prompt error verifyForm alignLeft">
                     This must be a valid {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} email address
                   </div>
@@ -335,6 +365,7 @@ class NoEduEmailContent extends Component {
               name="profProfileURL"
               id="profProfileURL"
               onBlur={this.onBlur}
+              onChange={this.handleURLChange}
               onKeyUp={this.handleKeyUp}
               className="form-control-std verifyForm"
               placeholder="https://...."

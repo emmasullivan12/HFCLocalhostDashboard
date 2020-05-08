@@ -111,7 +111,13 @@ class IndustryRoleSU extends React.Component {
     const {industries, rolesChosen, roleValid, knowNextSteps} = this.state;
 
     if (industries != "" && rolesChosen != '' && roleValid === true && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
-      return true;
+      const form = document.getElementById("form-IndRoleShortSU");
+
+      if (form.checkValidity()) {
+        return true;
+      } else {
+        return false;
+      }
     } else {
       return false;
     }
@@ -156,7 +162,7 @@ class IndustryRoleSU extends React.Component {
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>
-            <form autoComplete="off">
+            <form autoComplete="off" id="form-IndRoleShortSU">
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
                 <SelectBox

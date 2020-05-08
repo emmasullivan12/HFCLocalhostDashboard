@@ -399,29 +399,31 @@ class EduShortSU extends React.Component {
 
       if (eetStatusLocal != '') {
 
+        const form = document.getElementById("form-EduShortSU");
+
         if (eetStatusLocal === 'sch') {
-          if ((schNameUpdated === true || schNameFreeTextUpdated === true) && schNameIsValid && schYrGrp != '') {
+          if (form.checkValidity() && (schNameUpdated === true || schNameFreeTextUpdated === true) && schNameIsValid && schYrGrp != '') {
             return true;
           } else {
             return false;
           }
 
         } else if (eetStatusLocal === 'uni') {
-          if ((uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
+          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
             return true;
           } else {
             return false;
           }
 
         } else if (eetStatusLocal === 'job') {
-          if (currCoLocal != '') {
+          if (form.checkValidity() && currCoLocal != '') {
             return true;
           } else {
             return false;
           }
 
         } else if (eetStatusLocal === 'train') {
-          if (currTrainingProviderLocal != '') {
+          if (form.checkValidity() && currTrainingProviderLocal != '') {
             return true;
           } else {
             return false;
@@ -515,7 +517,7 @@ class EduShortSU extends React.Component {
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>
-            <form autoComplete="off">
+            <form autoComplete="off" id="form-EduShortSU">
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="eetStatus">Are you currently in Education, Employment or Training?</label>
                 <SelectBox

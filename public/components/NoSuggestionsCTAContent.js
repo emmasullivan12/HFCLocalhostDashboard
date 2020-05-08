@@ -26,9 +26,15 @@ class NoSuggestionsCTAContent extends Component {
 
     this.setState({
       timeout: setTimeout(()=>{
-        this.handleChange(e.target.value)
+        this.handleMoveNext()
       }, 800)
     })
+  }
+
+  handleMoveNext = () => {
+    const { eetStatusLocal } = this.props;
+
+    document.getElementById("Submit-btn-addEdu").focus()
   }
 
   handleChange = (e) => {
@@ -36,15 +42,11 @@ class NoSuggestionsCTAContent extends Component {
 
     if (eetStatusLocal === "sch") {
       this.setState({
-        schNameFreeTextModal: e
-      }, () => {
-        document.getElementById("Submit-btn-addEdu").focus()
+        schNameFreeTextModal: e.target.value
       });
     } else if (eetStatusLocal === "uni") {
       this.setState({
-        uniNameFreeTextModal: e
-      }, () => {
-        document.getElementById("Submit-btn-addEdu").focus()
+        uniNameFreeTextModal: e.target.value
       });
     } else {
       return; // not currently using Autocomplete for anything other than sch & uni
@@ -122,6 +124,7 @@ class NoSuggestionsCTAContent extends Component {
           //    value={eetStatusLocal === "sch" ? schNameFreeTextModal : uniNameFreeTextModal}
           //    onChange={this.handleChange}
               onKeyDown={this.onKeyDown}
+              onChange={this.handleChange}
               onKeyUp={this.handleKeyUp}
               placeholder={country === 'GBR' ? "School or College" : "High School"}
               autoComplete="off"

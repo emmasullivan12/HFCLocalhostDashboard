@@ -65,7 +65,13 @@ class DiversitySU extends React.Component {
     const {hurdles, schType, gender, ethnicity} = this.state;
 
     if (hurdles != "" && schType != "" && gender != '' && ethnicity != "") {
-      return true;
+      const form = document.getElementById("form-DiversityShortSU");
+
+      if (form.checkValidity()) {
+        return true;
+      } else {
+        return false;
+      }
     } else {
       return false;
     }
@@ -129,7 +135,7 @@ class DiversitySU extends React.Component {
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>
-            <form autoComplete="off">
+            <form autoComplete="off" id="form-DiversityShortSU">
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">Are / were any of the following applicable to you?</label>
                 <SelectBox

@@ -185,10 +185,10 @@ class TypeformSignUp extends Component {
                 })
               })
               .catch(err => {
-                console.log(err.message);
                 this.setState({
                   isGeneralError: true,
                 })
+                console.log("Dex to deal with logging error: "+err.message)
               })
           } else {
             this.setState({
@@ -221,14 +221,12 @@ class TypeformSignUp extends Component {
                 this.setState({
                   isGeneralError: true,
                 })
+                console.log("Dex to deal with logging error: "+err.message)
               })
           } else {
-            console.log("userEduName should be OLD uni: "+this.state.userEduName)
             this.setState({
               isLoading: false,
               userEduName: uniNameFreeText
-            }, () => {
-              console.log("userEduName should be new uni: "+this.state.userEduName)
             })
           }
 
@@ -290,10 +288,10 @@ class TypeformSignUp extends Component {
           })
         })
         .catch(err => {
-          console.log(err.message);
           this.setState({
             isGeneralError: true,
           })
+          console.log("Dex to deal with logging error: "+err.message)
         })
 
     } else if (stepJustDone === 'didIndRole') {
@@ -451,9 +449,9 @@ class TypeformSignUp extends Component {
 
     if (isGeneralError === true) {
       <div>
-        Something went wrong. Please try reloading the page.
+        Oops! Something went wrong. Please try reloading the page.
       </div>
-    } else if(userRole === 'mentee') {
+    } else if (userRole === 'mentee') {
       switch (step) {
         case 'did1stSU':
           return (

@@ -357,13 +357,13 @@ yDOB.addEventListener('blur', function(event) {
 */
 
 pwd.addEventListener('blur', function(event) {
-  if(pwd.checkValidity() && this.value.length > 7 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#£$%^&*()_+]/) != -1) {
+  if(pwd.checkValidity() && this.value.length > 7 && this.value.length <= 50 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#£$%^&*()_+]/) != -1) {
    pwd.classList.remove('error');
  }
 })
 
 pwd.addEventListener('input', function(event) {
-  if( this.value.length > 7 ){
+  if( this.value.length > 7 && this.value.length <= 50){
     numCharReqCrl.style.color = 'transparent';
     numCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
     numCharReq.style.color = '#595959';

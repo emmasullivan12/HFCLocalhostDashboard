@@ -2,22 +2,7 @@
 
 import React, { Component } from "react";
 
-/* function lookupRoles(ifError) {
-  let roles = [];
-
-  //IMPORT UNI list
-  return import(`./Roles.js`)
-    .then(component => {
-      roles = component.default;
-      return roles;
-    })
-    .catch(err => {
-      console.log("Dex to deal with logging error: "+err.message)
-    })
-
-}*/
-
-function lookupUKSchUnis(i, valueToGet, eetStatus) {
+function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   if (eetStatus === 'uni') {
     const fileToRender = valueToGet === 'emailFormat' ? 'UKUniEmails' : 'UKUnis' ;
     let uniDetail;
@@ -30,7 +15,10 @@ function lookupUKSchUnis(i, valueToGet, eetStatus) {
         return uniDetail;
       })
       .catch(err => {
-        console.log("Dex to deal with logging error: "+err.message)
+        if (callback) {
+          callback()
+        }
+        console.log("Dex to deal with logging error. Need anything else here? Am already showing error in other component if this function doesnt work: "+err.message)
       })
 
   } else if (eetStatus === 'sch') {
@@ -45,7 +33,10 @@ function lookupUKSchUnis(i, valueToGet, eetStatus) {
         return schDetail;
       })
       .catch(err => {
-        console.log("Dex to deal with logging error: "+err.message)
+        if (callback) {
+          callback()
+        }
+        console.log("Dex to deal with logging error. Need anything else here? Am already showing error in other component if this function doesnt work: "+err.message)
       })
 
   }
@@ -158,6 +149,7 @@ function eduName(schName, schNameFreeText, uniName, uniNameFreeText, eetStatus) 
         })
         .catch(err => {
           console.log("Dex to deal with logging error: "+err.message)
+          return "Loading university..."
         })
     } else return uniNameFreeText;
 
@@ -173,6 +165,7 @@ function eduName(schName, schNameFreeText, uniName, uniNameFreeText, eetStatus) 
         })
         .catch(err => {
           console.log("Dex to deal with logging error: "+err.message)
+          return "Loading school..."
         })
     } else return schNameFreeText;
   }
