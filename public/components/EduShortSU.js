@@ -42,6 +42,7 @@ class EduShortSU extends React.Component {
       tabPressed: '',
       selectBoxFocused: '',
       timeout: 0,
+      submitted: ''
     }
     this.handleEetStatusChange = this.handleEetStatusChange.bind(this);
     this.handleUKSchChange = this.handleUKSchChange.bind(this);
@@ -93,7 +94,9 @@ class EduShortSU extends React.Component {
   }
 
   handleJobMoveNext = () => {
-    document.getElementById("Submit-btn-Edu").focus()
+    if (this.state.submitted != true) {
+      document.getElementById("Submit-btn-Edu").focus()
+    }
   }
 
   handleJobChange = (e) => {
@@ -101,7 +104,9 @@ class EduShortSU extends React.Component {
   }
 
   handleTrainMoveNext = () => {
-    document.getElementById("Submit-btn-Edu").focus()
+    if (this.state.submitted != true) {
+      document.getElementById("Submit-btn-Edu").focus()
+    }
   }
 
   handleTrainChange = (e) => {
@@ -135,7 +140,9 @@ class EduShortSU extends React.Component {
       tabPressed: '',
     }, () => {
       if (userInput === 'none') {
-        document.getElementById("Submit-btn-Edu").focus()
+        if (this.state.submitted != true) {
+          document.getElementById("Submit-btn-Edu").focus()
+        }
       }
     })
   }
@@ -180,7 +187,9 @@ class EduShortSU extends React.Component {
     this.setState({
       schYrGrp: userInput,
     }, () => {
-      document.getElementById("Submit-btn-Edu").focus()
+      if (this.state.submitted != true) {
+        document.getElementById("Submit-btn-Edu").focus()
+      }
     });
     if (this.state.courseLength != '') {
       this.setState({
@@ -245,7 +254,9 @@ class EduShortSU extends React.Component {
     this.setState({
       courseLength: userInput,
     }, () => {
-      document.getElementById("Submit-btn-Edu").focus()
+      if (this.state.submitted != true) {
+        document.getElementById("Submit-btn-Edu").focus()
+      }
     });
 
     const uniYrGrp = this.state.uniYrGrp;
@@ -294,50 +305,66 @@ class EduShortSU extends React.Component {
 
       if (eetStatusLocal ==='sch') {
         if (schNameLocal != '') {
+          this.setState({
+            submitted: true
+          })
           updateUKSch(schNameLocal, () => {
             updateStep('updatingEdu');
           })
         } else {
 
           if (requestReview === true) {
-            console.log("sending to review function")
             sendForReview('schName', reviewReason)
           }
-
+          this.setState({
+            submitted: true
+          })
           updateSchFreeText(schNameFreeTextLocal, () => {
             updateStep('updatingEdu');
           })
         }
 
       } else if (eetStatusLocal ==='uni') {
-        console.log("comes here")
         if (uniNameLocal != '') {
+          this.setState({
+            submitted: true
+          })
           updateUKUni(uniNameLocal, () => {
             updateStep('updatingEdu');
           })
         } else {
 
           if (requestReview === true) {
-            console.log("sending to review function")
             sendForReview('uniName', reviewReason)
           }
-
+          this.setState({
+            submitted: true
+          })
           updateUniFreeText(uniNameFreeTextLocal, () => {
             updateStep('updatingEdu');
           })
         }
 
       } else if (eetStatusLocal ==='job') {
+        this.setState({
+          submitted: true
+        })
         updateCurrCo(currCoLocal, () => {
           updateStep('updatingEdu');
         })
 
       } else if (eetStatusLocal ==='train') {
+        this.setState({
+          submitted: true
+        })
         updateCurrTrainingProv(currTrainingProviderLocal, () => {
           updateStep('updatingEdu');
         })
 
       } else {
+        this.setState({
+          submitted: true
+        })
         updateStep('updatingEdu');
       }
 
@@ -346,14 +373,19 @@ class EduShortSU extends React.Component {
 
       if (eetStatusLocal ==='sch' || eetStatus === 'sch') {
         if (schNameLocal != '') {
+          this.setState({
+            submitted: true
+          })
           updateUKSch(schNameLocal, () => {
             updateStep('didEdu');
           })
         } else {
           if (requestReview === true) {
-            console.log("sending to review function")
             sendForReview('schName', reviewReason)
           }
+          this.setState({
+            submitted: true
+          })
           updateSchFreeText(schNameFreeTextLocal, () => {
             updateStep('didEdu');
           })
@@ -361,32 +393,44 @@ class EduShortSU extends React.Component {
 
       } else if (eetStatusLocal ==='uni' || eetStatus === 'uni') {
         if (uniNameLocal != '') {
+          this.setState({
+            submitted: true
+          })
           updateUKUni(uniNameLocal, () => {
             updateStep('didEdu');
           })
         } else {
           if (requestReview === true) {
-            console.log("sending to review function")
             sendForReview('uniName', reviewReason)
           }
+          this.setState({
+            submitted: true
+          })
           updateUniFreeText(uniNameFreeTextLocal, () => {
             updateStep('didEdu');
           })
         }
 
       } else if (eetStatusLocal === 'job') {
-        console.log("updatingcurrco function triggered")
+        this.setState({
+          submitted: true
+        })
         updateCurrCo(currCoLocal, () => {
-          console.log("updatestep function triggered")
           updateStep('didEdu');
         })
 
       } else if (eetStatusLocal === 'train') {
+        this.setState({
+          submitted: true
+        })
         updateCurrTrainingProv(currTrainingProviderLocal, () => {
           updateStep('didEdu');
         })
 
       } else {
+        this.setState({
+          submitted: true
+        })
         updateStep('didEdu');
       }
 

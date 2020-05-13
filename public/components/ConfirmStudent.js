@@ -29,7 +29,8 @@ class ConfirmStudent extends React.Component {
       dm: '',
       requestReview: false,
       reviewReason: '',
-      timeout: 0
+      timeout: 0,
+      submitted: ''
     }
     this.onBlur = this.onBlur.bind(this);
     this.checkEduEmail = this.checkEduEmail.bind(this);
@@ -156,7 +157,9 @@ class ConfirmStudent extends React.Component {
         removeFromSendForReview(itemToReview)
       }
     }
-
+    this.setState({
+      submitted: true
+    })
     updateEduEmail(userInput, () => {
       updateStep('didEduEmail', false)
     })
@@ -260,7 +263,9 @@ class ConfirmStudent extends React.Component {
                 requestReview: false,
                 reviewReason: ""
               }, () => {
-                document.getElementById("Submit-btn-eduEmail").focus()
+                if (this.state.submitted != true) {
+                  document.getElementById("Submit-btn-eduEmail").focus()
+                }
               })
             }
           });
@@ -289,7 +294,9 @@ class ConfirmStudent extends React.Component {
                 requestReview: false,
                 reviewReason: ""
               }, () => {
-                document.getElementById("Submit-btn-eduEmail").focus()
+                if (this.state.submitted != true) {
+                  document.getElementById("Submit-btn-eduEmail").focus()
+                }
               })
             }
           });
@@ -322,7 +329,9 @@ class ConfirmStudent extends React.Component {
                   requestReview: false,
                   reviewReason: ""
                 }, () => {
-                  document.getElementById("Submit-btn-eduEmail").focus()
+                  if (this.state.submitted != true) {
+                    document.getElementById("Submit-btn-eduEmail").focus()
+                  }
                 })
               }
             });
@@ -347,7 +356,9 @@ class ConfirmStudent extends React.Component {
                   requestReview: false,
                   reviewReason: ""
                 }, () => {
-                  document.getElementById("Submit-btn-eduEmail").focus()
+                  if (this.state.submitted != true) {
+                    document.getElementById("Submit-btn-eduEmail").focus()
+                  }
                 })
               }
             });
@@ -376,7 +387,9 @@ class ConfirmStudent extends React.Component {
                 requestReview: false,
                 reviewReason: ""
               }, () => {
-                document.getElementById("Submit-btn-eduEmail").focus()
+                if (this.state.submitted != true) {
+                  document.getElementById("Submit-btn-eduEmail").focus()
+                }
               })
             }
           });
@@ -404,7 +417,9 @@ class ConfirmStudent extends React.Component {
               requestReview: false,
               reviewReason: ""
             }, () => {
-              document.getElementById("Submit-btn-eduEmail").focus()
+              if (this.state.submitted != true) {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              }
             })
           }
         });
@@ -433,7 +448,9 @@ class ConfirmStudent extends React.Component {
               requestReview: false,
               reviewReason: ""
             }, () => {
-              document.getElementById("Submit-btn-eduEmail").focus()
+              if (this.state.submitted != true) {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              }
             })
           }
         });
@@ -453,7 +470,9 @@ class ConfirmStudent extends React.Component {
             requestReview: true,
             reviewReason: "is USA sch and we don't know sch email format"
           }, () => {
-            document.getElementById("Submit-btn-eduEmail").focus()
+            if (this.state.submitted != true) {
+              document.getElementById("Submit-btn-eduEmail").focus()
+            }
           })
         });
 
@@ -480,7 +499,9 @@ class ConfirmStudent extends React.Component {
               requestReview: false,
               reviewReason: ""
             }, () => {
-              document.getElementById("Submit-btn-eduEmail").focus()
+              if (this.state.submitted != true) {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              }
             })
           }
         });
@@ -503,7 +524,9 @@ class ConfirmStudent extends React.Component {
           requestReview: true,
           reviewReason: "is other country and we don't know format"
         }, () => {
-          document.getElementById("Submit-btn-eduEmail").focus()
+          if (this.state.submitted != true) {
+            document.getElementById("Submit-btn-eduEmail").focus()
+          }
         })
       });
     }

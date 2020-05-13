@@ -20,7 +20,8 @@ class CountryShortSU extends React.Component {
       stateProvIsValid: '',
       city: '',
       tabPressed: '',
-      timeout: 0
+      timeout: 0,
+      submitted: ''
     }
     this.handleCountryChange = this.handleCountryChange.bind(this);
     this.handleStateChange = this.handleStateChange.bind(this);
@@ -52,7 +53,9 @@ class CountryShortSU extends React.Component {
   }
 
   handleCityMoveNext = (e) => {
-    document.getElementById("Submit-btn-Country").focus()
+    if (this.state.submitted != true) {
+      document.getElementById("Submit-btn-Country").focus()
+    }
   }
 
   handleCityChange = (e) => {
@@ -95,8 +98,13 @@ class CountryShortSU extends React.Component {
     var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const {updateCountry} = this.props;
     const {countryLocal} = this.state;
-    updateCountry(countryLocal);
-    updateStep('didCountry');
+
+    this.setState({
+      submitted: true
+    }, () => {
+      updateCountry(countryLocal);
+      updateStep('didCountry');
+    })
   }
 
   canBeSubmitted(countries, states, provinces, ukCounties, ieCounties) {

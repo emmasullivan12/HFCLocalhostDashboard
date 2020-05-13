@@ -91,8 +91,9 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleRatingChange(e) {
+    console.log("e.target.value: "+e.target.value)
     this.setState({
-      knowNextSteps: e.currentTarget.value
+      knowNextSteps: e.target.value
     }, () => {
       document.getElementById("Submit-btn-ind").focus()
     });
@@ -226,6 +227,7 @@ class IndustryRoleSU extends React.Component {
                   />*/}
                   <RatingItems
                     ratingOutOf={10}
+                    handleRatingChange={this.handleRatingChange}
                   />
                 </div>
               )}

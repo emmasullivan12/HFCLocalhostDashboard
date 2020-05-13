@@ -3,8 +3,97 @@
   position: relative;
   display: inline-flex;
   width: 100%;
+  margin: .75rem 0 1.5rem 0;
+}
+
+.ratingContainer{
+  max-width: 64px;
+  max-height: 64px;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 8px;
+  flex: 1 0 0%;
+}
+
+/*
+.ratingcontainer:hover input ~ .ratingIconSvg path .iconFill,
+.ratingcontainer input:focus ~ .ratingIconSvg path .iconFill {
+  fill: red;
+}
+
+.ratingcontainer input:checked ~ .ratingIconSvg path .iconFill {
+  fill: rgb(159, 158, 231);
+}*/
+
+.ratingContainer input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+  clip: rect(0px, 0px, 0px, 0px);
+  clip-path: inset(100%);
+  margin: -1px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  padding: 0px;
+  overflow: hidden;
 }
 
 .ratingItem{
-  display: inline-block;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+.ratingItem > * {
+  flex: 0 0 auto;
+}
+
+.ratingItem > :not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.ratingIcon{
+  width: 100%;
+  color: #9F9EE7;
+}
+
+.ratingIcon svg {
+  max-height: 64px;
+  max-width: 64px;
+  width: 100%;
+  height: 100%;
+}
+
+.iconHover{
+  color: #9f9ee733;
+}
+
+/*.ratingIconSvg path .iconFill{
+  fill: none;
+  display: none;
+}
+
+.ratingIconSvg path .iconOutline{
+  fill: rgb(159, 158, 231);
+}*/
+
+.ratingText{
+  max-width: 100%;
+  font-weight: unset;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(159, 158, 231);
+  text-align: center;
+  margin: 0px;
 }
