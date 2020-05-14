@@ -13,8 +13,6 @@ class RatingItems extends Component {
   }
 
   onBlur = (e) => {
-    console.log("on blurrr")
-    console.log("e.currentTarget.id: "+e.currentTarget.id)
     if (e.currentTarget.id === 'ratingsContainer') {
       this.setState({
         indexHovered: ''
@@ -22,19 +20,21 @@ class RatingItems extends Component {
     }
   }
 
-  onClick = (e) => {
-    console.log("e.target.value: "+e.target.value)
-    console.log("this.state.indexChecked: "+this.state.indexChecked)
-    console.log("this.state.indexChecked: "+this.state.indexHovered)
-    if (e.target.value === this.state.indexChecked) {
-      console.log("unclicked")
+  onMouseDown = (e) => {
+    e.persist()
+    const value = e.currentTarget.dataset.id;
+    const {handleRatingChange} = this.props;
+    if (value === this.state.indexChecked) {
       this.setState({
         indexChecked: ''
+      }, () => {
+        handleRatingChange("")
       })
     } else {
-      console.log("click")
       this.setState({
-        indexChecked: e.target.value
+        indexChecked: value
+      }, () => {
+        handleRatingChange(value)
       })
     }
   }
@@ -42,13 +42,42 @@ class RatingItems extends Component {
   onHover = (e) => {
     if (e.currentTarget.id === 'radioLabel') {
       this.setState({
-        indexHovered: e.currentTarget.firstChild.value
+        indexHovered: e.currentTarget.dataset.id
       })
     }
   }
 
+  onKeyDown = (e) => {
+    const { handleRatingChange } = this.props;
+    const { timesClicked } = this.state;
+    console.log(e.currentTarget)
+    console.log(e.target)
+
+    // User pressed the enter key
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      e.persist()
+      const value = e.currentTarget.value;
+      const {handleRatingChange} = this.props;
+
+      if (value === this.state.indexChecked) {
+        this.setState({
+          indexChecked: ''
+        }, () => {
+          handleRatingChange("")
+        })
+      } else {
+        this.setState({
+          indexChecked: value
+        }, () => {
+          handleRatingChange(value)
+        })
+      }
+    }
+  }
+
   render() {
-    const {ratingOutOf, ratingIconImg, handleRatingChange} = this.props
+    const {ratingOutOf, ratingIconImg} = this.props
     const {indexChecked, indexHovered} = this.state
     var ratings = [];
 
@@ -56,11 +85,10 @@ class RatingItems extends Component {
 
     for (var i = 0; i < ratingOutOf; i++) {
       ratings.push(
-        <label key={i} className="ratingContainer" id="radioLabel" onMouseEnter={this.onHover} onFocus={this.onHover}>
+        <label key={i} data-id={i+1} className="ratingContainer" id="radioLabel" onMouseEnter={this.onHover} onFocus={this.onHover} onMouseDown={this.onMouseDown}>
           <input
             type="radio"
-            onChange={handleRatingChange}
-            onClick={this.onClick}
+            onKeyDown={this.onKeyDown}
             value={i+1}
           />
           <div className="ratingItem" >

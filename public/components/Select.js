@@ -46,44 +46,72 @@ class SelectBox extends React.Component {
   }
 
   onBlur = (e) => {
-    const { options, valueToShow, name, required, otherValidityChecks } = this.props
+    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     this.setState(prevState => {
       const { values } = prevState
-      const value = values[0];
-      let focusedValue = -1
+      if (multiple) {
+        finMultiOptions()
 
-      if (value) {
-        focusedValue = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
-      }
+        if(!required || required && values[0] != null) {
+          document.getElementById("selectBox-"+name).classList.remove('error')
+          if (otherValidityChecks) {
+            otherValidityChecks()
+          }
+        } else {
+          document.getElementById("selectBox-"+name).classList.add('error')
+        }
 
-      if(!required || required && value != null) {
-        document.getElementById("selectBox-"+name).classList.remove('error')
-        if (otherValidityChecks) {
-          otherValidityChecks()
+        return {
+          focusedValue: -1,
+          isFocused: false,
+          isOpen: false,
         }
       } else {
-        document.getElementById("selectBox-"+name).classList.add('error')
-      }
+        const value = values[0];
+        let focusedValue = -1
 
-      return {
-        focusedValue,
-        isFocused: false,
-        isOpen: false,
+        if (value) {
+          focusedValue = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
+        }
+
+        if(!required || required && value != null) {
+          document.getElementById("selectBox-"+name).classList.remove('error')
+          if (otherValidityChecks) {
+            otherValidityChecks()
+          }
+        } else {
+          document.getElementById("selectBox-"+name).classList.add('error')
+        }
+
+        return {
+          focusedValue,
+          isFocused: false,
+          isOpen: false,
+        }
       }
     })
   }
 
   onClick = (e) => {
-    const { handleFocus } = this.props;
+    const { handleFocus, multiple, finMultiOptions } = this.props;
     const currentState = this.state.isOpen;
 
     if (currentState === false) {
       if (handleFocus) {
         handleFocus(document.activeElement.id);
       }
+    }
+
+    if (multiple && currentState === true && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer') {
+      //change so if multiple and is open and clicked on box (not item) then close
+      return;
+    }
+
+    if (multiple && currentState === true) {
+      finMultiOptions()
     }
 
     this.setState({
@@ -102,32 +130,65 @@ class SelectBox extends React.Component {
     })
   }
 */
+  onDeleteOption = (e) => {
+    const {value} = e.currentTarget.dataset
+
+    this.setState(prevState => {
+      const [...values] = prevState.values
+      const index = values.indexOf(value)
+
+      values.splice(index, 1)
+
+      return {values}
+    })
+  }
+
   onClickOption = (e) => {
-    const { options, handleChange, valueToShow, otherValidityChecks } = this.props;
+    const { options, multiple, handleChange, valueToShow, otherValidityChecks } = this.props;
   //  const {elementIdFocused} = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const value = e.currentTarget.dataset.text;
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
 
+    if (!multiple) {
+      handleChange(e.currentTarget.dataset.id);
+    }
 
-    handleChange(e.currentTarget.dataset.id);
     this.setState(prevState => {
 
       if (otherValidityChecks) {
         otherValidityChecks();
       }
 
-      return {
-        values: [ value ],
-        focusedValue: index,
-        isOpen: false
+      if (!multiple) {
+
+        return {
+          values: [ value ],
+          focusedValue: index,
+          isOpen: false
+        }
       }
+
+      const [ ...values ] = prevState.values
+      const index = values.indexOf(value)
+
+      if (index === -1) {
+        values.push(value)
+      } else {
+        values.splice(index, 1)
+      }
+
+      return {
+        values: values,
+        isOpen: true
+      }
+
     });
   }
 
   onKeyDown = e => {
     const { isOpen, focusedValue, isFocused } = this.state;
-    const { handleChange, handleTabPress, options, name, valueToShow, otherValidityChecks } = this.props;
+    const { handleChange, handleTabPress, options, multiple, name, valueToShow, otherValidityChecks } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key
@@ -220,9 +281,15 @@ class SelectBox extends React.Component {
               handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
             }
 
-            return {
-              values: [ value ],
-              focusedValue
+            if (multiple) {
+              return {
+                focusedValue
+              }
+            } else {
+              return {
+                values: [ value ],
+                focusedValue
+              }
             }
           } else if (focusedValue > 0) {
             this.handleMoveUp();
@@ -239,9 +306,15 @@ class SelectBox extends React.Component {
               otherValidityChecks();
             }
 
-            return {
-              values: [ value ],
-              focusedValue
+            if (multiple) {
+              return {
+                focusedValue
+              }
+            } else {
+              return {
+                values: [ value ],
+                focusedValue
+              }
             }
           }
         })
@@ -274,9 +347,15 @@ class SelectBox extends React.Component {
               handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
             }
 
-            return {
-              values: [ value ],
-              focusedValue
+            if (multiple) {
+              return {
+                focusedValue
+              }
+            } else {
+              return {
+                values: [ value ],
+                focusedValue
+              }
             }
 
           } else {
@@ -294,9 +373,15 @@ class SelectBox extends React.Component {
               handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
             }
 
-            return {
-              values: [ value ],
-              focusedValue
+            if (multiple) {
+              return {
+                focusedValue
+              }
+            } else {
+              return {
+                values: [ value ],
+                focusedValue
+              }
             }
           }
         })
@@ -307,10 +392,10 @@ class SelectBox extends React.Component {
 
   };
 
-/*  stopPropagation = (e) => {
+  stopPropagation = (e) => {
     e.stopPropagation()
   }
-*/
+
   handleMoveUp = () => {
     const { focusedValue } = this.state;
     const { options, name } = this.props;
@@ -356,15 +441,36 @@ class SelectBox extends React.Component {
   }
 
   renderValues() {
-    const { placeholder } = this.props
+    const { placeholder, multiple } = this.props
     const { values } = this.state
 
     if (values.length === 0) {
       return (
-        <div className="select-placeholder">
+        <div className="select-placeholder" id="select-placeholder">
           { placeholder }
         </div>
       )
+    }
+
+    if (multiple) {
+      return values.map(value => {
+        return (
+          <span
+            key={value}
+            onClick={this.stopPropagation}
+            className="multiple value"
+          >
+            {value}
+            <span
+              data-value={value}
+              onClick={this.onDeleteOption}
+              className="delete"
+            >
+              <X />
+            </span>
+          </span>
+        )
+      })
     }
 
     return (
@@ -375,7 +481,7 @@ class SelectBox extends React.Component {
   }
 
   renderOptions() {
-    const { options, valueToShow, showDetail, showIcon, detailToShow, iconToShow, name } = this.props
+    const { options, multiple, valueToShow, showDetail, showIcon, detailToShow, iconToShow, name } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
@@ -392,7 +498,13 @@ class SelectBox extends React.Component {
           const selected = values.includes(value)
 
           let className = "option"
-          if (selected) className += " selected"
+          if (selected) {
+            if (multiple) {
+              className += " selectedMultiple"
+            } else {
+              className += " selected"
+            }
+          }
           if (index === focusedValue) className += " focused"
           if (showDetail===true) {
             className += " showDetail overflow-ellipsis"
@@ -421,6 +533,14 @@ class SelectBox extends React.Component {
                   <img alt="option icon" src={icon} />
                 </div>
               )}
+              { multiple
+                ? (
+                  <span className="checkbox">
+                    { selected ? <Check /> : null }
+                  </span>
+                  )
+                : null
+              }
               {value}
               {showDetail===true && (
                 <div className="option-detail overflow-ellipsis" >
@@ -450,7 +570,7 @@ class SelectBox extends React.Component {
           required={required}
           onClick={this.onClick}
         >
-          <div className="selectContainer">
+          <div className="selectContainer " id="selectContainer">
             { this.renderValues() }
             <span className="arrow">
               { isOpen ? <ChevronUp /> : <ChevronDown /> }
@@ -472,6 +592,18 @@ const ChevronDown = () => (
 const ChevronUp = () => (
   <svg viewBox="0 0 10 8">
     <path d="M2.08578644,7.29289322 C1.69526215,7.68341751 1.69526215,8.31658249 2.08578644,8.70710678 C2.47631073,9.09763107 3.10947571,9.09763107 3.5,8.70710678 L8.20710678,4 L3.5,-0.707106781 C3.10947571,-1.09763107 2.47631073,-1.09763107 2.08578644,-0.707106781 C1.69526215,-0.316582489 1.69526215,0.316582489 2.08578644,0.707106781 L5.37867966,4 L2.08578644,7.29289322 Z" transform="translate(5.000000, 4.000000) rotate(-90.000000) translate(-5.000000, -4.000000) " />
+  </svg>
+)
+
+const X = () => (
+  <svg viewBox="0 0 16 16">
+    <path d="M2 .594l-1.406 1.406.688.719 5.281 5.281-5.281 5.281-.688.719 1.406 1.406.719-.688 5.281-5.281 5.281 5.281.719.688 1.406-1.406-.688-.719-5.281-5.281 5.281-5.281.688-.719-1.406-1.406-.719.688-5.281 5.281-5.281-5.281-.719-.688z" />
+  </svg>
+)
+
+const Check = () => (
+  <svg viewBox="0 0 16 16">
+    <path d="M13 .156l-1.406 1.438-5.594 5.594-1.594-1.594-1.406-1.438-2.844 2.844 1.438 1.406 3 3 1.406 1.438 1.406-1.438 7-7 1.438-1.406-2.844-2.844z" transform="translate(0 1)" />
   </svg>
 )
 

@@ -17,8 +17,10 @@ class DiversitySU extends React.Component {
       schType: '',
       gender: '',
       ethnicity: '',
+      finMultiOptions: ''
     }
     this.handleHurChange = this.handleHurChange.bind(this);
+    this.handleMultiOptions = this.handleMultiOptions.bind(this);
     this.handleSchTypeChange = this.handleSchTypeChange.bind(this);
     this.handleGenChange = this.handleGenChange.bind(this);
     this.handleEthChange = this.handleEthChange.bind(this);
@@ -29,6 +31,12 @@ class DiversitySU extends React.Component {
   handleHurChange(userInput) {
     this.setState({
       hurdles: userInput
+    });
+  }
+
+  handleMultiOptions() {
+    this.setState({
+      finMultiOptions: true
     });
   }
 
@@ -79,7 +87,7 @@ class DiversitySU extends React.Component {
   }
 
   render() {
-    const {tabPressed, hurdles, schType, gender, ethnicity} = this.state;
+    const {tabPressed, hurdles, schType, gender, ethnicity, finMultiOptions} = this.state;
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const hurdlesList = [
@@ -139,6 +147,8 @@ class DiversitySU extends React.Component {
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">Are / were any of the following applicable to you?</label>
                 <SelectBox
+                  multiple
+                  finMultiOptions={this.handleMultiOptions}
                   options={hurdlesList}
                   name='selectHur'
                   placeholder='Select as many as you like:'
@@ -151,7 +161,7 @@ class DiversitySU extends React.Component {
                   required
                 />
               </div>
-              {(hurdles != '') && (
+              {(finMultiOptions === true) && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' || 'country' === 'IRL' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                   <SelectBox
