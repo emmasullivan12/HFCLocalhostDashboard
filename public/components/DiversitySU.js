@@ -37,6 +37,8 @@ class DiversitySU extends React.Component {
   handleMultiOptions() {
     this.setState({
       finMultiOptions: true
+    }, () => {
+      document.getElementById("selectBox-selectSchType").focus()
     });
   }
 
