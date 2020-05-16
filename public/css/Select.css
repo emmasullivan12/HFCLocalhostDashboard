@@ -136,6 +136,7 @@ svg {
   color: #fff;
   cursor: pointer;
 }
+
 .option.selectedMultiple {
   display: none
 }
@@ -160,7 +161,7 @@ svg {
   -webkit-border-radius: .25rem;
 }
 
-.multiple.value:focus {
+.multiple.value.focused {
   border: 1px solid #d8d7f5;
   color: #4e4ed6;
   outline: none;

@@ -46,7 +46,7 @@ class SelectBox extends React.Component {
   }
 
   onBlur = (e) => {
-    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions } = this.props
+    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -54,6 +54,8 @@ class SelectBox extends React.Component {
       const { values } = prevState
       if (multiple) {
         finMultiOptions()
+        handleChange(prevState.values)
+
 
         if(!required || required && values[0] != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -96,7 +98,8 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
-    const { handleFocus, multiple, finMultiOptions } = this.props;
+    const { handleFocus, multiple, finMultiOptions, options } = this.props;
+    const { values } = this.state;
     const currentState = this.state.isOpen;
 
     if (currentState === false) {
@@ -105,7 +108,11 @@ class SelectBox extends React.Component {
       }
     }
 
-    console.log(e.target.nodeName)
+    if (multiple && currentState != true) {
+      if (values.length === options.length) {
+        return;
+      }
+    }
 
     if (multiple && currentState === true && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer') {
       //change so if multiple and is open and clicked on box (not item) then close
@@ -122,17 +129,8 @@ class SelectBox extends React.Component {
     })
   };
 
-/*  onHoverOption = (e) => {
-    const { options, valueToShow } = this.props;
-    const hasMultipleAttributes = (options[0].value != undefined) || (options[0].value != null);
-    const value = hasMultipleAttributes ? e.currentTarget.dataset.text : e.currentTarget.dataset;
-    const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value);
-    this.setState({
-      focusedValue: index
-    })
-  }
-*/
   onDeleteOption = (e) => {
+    const {required, otherValidityChecks, name} = this.props;
     const {value} = e.currentTarget.dataset
 
     this.setState(prevState => {
@@ -140,6 +138,19 @@ class SelectBox extends React.Component {
       const index = values.indexOf(value)
 
       values.splice(index, 1)
+
+      if ([...values].length === 0) {
+        if(!required) {
+          document.getElementById("selectBox-"+name).classList.remove('error')
+          document.getElementById("selectBox-"+name).focus()
+          if (otherValidityChecks) {
+            otherValidityChecks()
+          }
+        } else {
+          document.getElementById("selectBox-"+name).classList.add('error')
+          document.getElementById("selectBox-"+name).focus()
+        }
+      }
 
       return {values}
     })
@@ -171,7 +182,6 @@ class SelectBox extends React.Component {
         }
       }
 
-      console.log("value in onclick: "+value)
       const [ ...values ] = prevState.values
       const index = values.indexOf(value)
 
@@ -221,16 +231,22 @@ class SelectBox extends React.Component {
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();
-
       this.setState(prevState => {
         let { focusedValue } = prevState
 
         if (!isOpen) {
+
+          if (multiple) {
+            if (prevState.values.length === options.length) {
+              return;
+            }
+          }
+
           return {
             isOpen: true
           }
         } else {
-          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
           if (multiple) {
             this.setState(prevState => {
               const { focusedValue } = prevState
@@ -238,9 +254,91 @@ class SelectBox extends React.Component {
               if (focusedValue !== -1) {
                 const [ ...values ] = prevState.values
               //  const value = options[focusedValue].value
+                const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
                 const index = values.indexOf(value)
 
-                console.log("value in onenter: "+value)
+                if (index === -1) {
+                  values.push(value)
+                } else {
+                  values.splice(index, 1)
+                }
+                const noMoreOptions = values.length === options.length
+
+                if (noMoreOptions) {
+                  finMultiOptions()
+                  if(!required || required && value != null) {
+                    document.getElementById("selectBox-"+name).classList.remove('error')
+                    if (otherValidityChecks) {
+                      otherValidityChecks()
+                    }
+                  } else {
+                    document.getElementById("selectBox-"+name).classList.add('error')
+                  }
+                  return {
+                    values: values,
+                    isOpen: false
+                  }
+                }
+
+                if(!required || required && value != null) {
+                  document.getElementById("selectBox-"+name).classList.remove('error')
+                  if (otherValidityChecks) {
+                    otherValidityChecks()
+                  }
+                } else {
+                  document.getElementById("selectBox-"+name).classList.add('error')
+                }
+                return {
+                  values: values,
+                  isOpen: true
+                }
+              } else {
+                return {
+                  isOpen: false
+                }
+              }
+            })
+          } else if (focusedValue != -1) {
+        //    const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+            const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+            const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
+            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+
+            if (otherValidityChecks) {
+              otherValidityChecks();
+            }
+
+            return {
+              values: [ value ],
+              focusedValue: index,
+              isOpen: false,
+            }
+          }
+        }
+      })
+
+    }
+
+    // User pressed the tab key
+    else if (e.keyCode === 9) {
+      this.setState(prevState => {
+        let { focusedValue } = prevState
+
+        if (!isOpen) {
+          return
+        } else {
+      //    e.preventDefault();
+      //    const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+          if (multiple) {
+            this.setState(prevState => {
+              const { focusedValue } = prevState
+
+              if (focusedValue !== -1) {
+                const [ ...values ] = prevState.values
+              //  const value = options[focusedValue].value
+                const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+                const index = values.indexOf(value)
 
                 if (index === -1) {
                   values.push(value)
@@ -278,44 +376,17 @@ class SelectBox extends React.Component {
                 }
               }
             })
-          } else if (focusedValue != -1) {
-        //    const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+          } else {
+            const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
+      //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
             handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-
-            if (otherValidityChecks) {
-              otherValidityChecks();
-            }
-
+            handleTabPress(true);
             return {
               values: [ value ],
               focusedValue: index,
-              isOpen: false,
+              isOpen: false
             }
-          }
-        }
-      })
-
-    }
-
-    // User pressed the tab key
-    else if (e.keyCode === 9) {
-      this.setState(prevState => {
-        let { focusedValue } = prevState
-
-        if (!isOpen) {
-          return
-        } else {
-      //    e.preventDefault();
-          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
-          const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
-    //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-          handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-          handleTabPress(true);
-          return {
-            values: [ value ],
-            focusedValue: index,
-            isOpen: false
           }
         }
       })
@@ -340,6 +411,11 @@ class SelectBox extends React.Component {
         this.setState(prevState => {
           let { focusedValue } = prevState
 
+          const elements = document.getElementsByClassName("multiple value")
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.remove('focused')
+          }
+
           if (focusedValue === 0 || focusedValue === -1) {
 
             const parent = document.getElementById("options-"+name);
@@ -359,6 +435,13 @@ class SelectBox extends React.Component {
             }
 
             if (multiple) {
+              const values = prevState.values;
+              const focusedSelectedValue = values.indexOf(value)
+
+              if (focusedSelectedValue != -1) {
+                document.getElementById(values[focusedSelectedValue]).classList.add('focused')
+              }
+
               return {
                 focusedValue
               }
@@ -384,6 +467,16 @@ class SelectBox extends React.Component {
             }
 
             if (multiple) {
+              const values = prevState.values;
+              const focusedSelectedValue = values.indexOf(value)
+
+              if (focusedSelectedValue != -1) {
+                document.getElementById(values[focusedSelectedValue]).classList.add('focused')
+              }
+
+              /*if (focusedSelectedValue != -1) {
+                document.getElementById(values[focusedSelectedValue]).classList.add('focused')
+              }*/
               return {
                 focusedValue
               }
@@ -408,6 +501,11 @@ class SelectBox extends React.Component {
         this.setState(prevState => {
           let { focusedValue } = prevState
 
+          const elements = document.getElementsByClassName("multiple value")
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.remove('focused')
+          }
+
           if (focusedValue === options.length -1) {
             const parent = document.getElementById("options-"+name);
             parent.scrollTop = 0;
@@ -425,6 +523,13 @@ class SelectBox extends React.Component {
             }
 
             if (multiple) {
+              const values = prevState.values;
+              const focusedSelectedValue = values.indexOf(value)
+
+              if (focusedSelectedValue != -1) {
+                document.getElementById(values[focusedSelectedValue]).classList.add('focused')
+              }
+
               return {
                 focusedValue
               }
@@ -451,6 +556,13 @@ class SelectBox extends React.Component {
             }
 
             if (multiple) {
+              const values = prevState.values;
+              const focusedSelectedValue = values.indexOf(value)
+
+              if (focusedSelectedValue != -1) {
+                document.getElementById(values[focusedSelectedValue]).classList.add('focused')
+              }
+
               return {
                 focusedValue
               }
@@ -530,13 +642,15 @@ class SelectBox extends React.Component {
     }
 
     if (multiple) {
-      return values.map(value => {
+      return values.map((value, index) => {
+
         return (
           <span
             key={value}
             onClick={this.stopPropagation}
             className="multiple value"
-            tabIndex="0"
+        //    id={index}
+            id={value}
           >
             {value}
             <span

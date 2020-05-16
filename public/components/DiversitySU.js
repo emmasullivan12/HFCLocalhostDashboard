@@ -8,12 +8,20 @@ import Autocomplete from './Autocomplete.js';
 import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 
+const hurdlesList = [
+  {value: '0', label: 'Eligible for Free School Meals', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default'},
+  {value: '1', label: 'My parents didn\'t go to university', icon: 'https://images.typeform.com/images/QSBrrY42iA35/image/default'},
+  {value: '2', label: 'Non-native English speaker', icon: 'https://images.typeform.com/images/di2wKSTrtKwX/image/default'},
+  {value: '3', label: 'None', icon: 'https://images.typeform.com/images/qfz8s3nqfncc/image/default'},
+  {value: '4', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/WzCB42U3EE5c/image/default'}
+];
+
 class DiversitySU extends React.Component {
   constructor () {
     super();
     this.state = {
       tabPressed: '',
-      hurdles: '',
+      hurdles: [],
       schType: '',
       gender: '',
       ethnicity: '',
@@ -29,6 +37,30 @@ class DiversitySU extends React.Component {
   }
 
   handleHurChange(userInput) {
+    console.log("userInput: "+userInput)
+    console.log(userInput)
+
+    const {hurdles} = this.state
+
+    console.log("hurdlesList: "+hurdlesList)
+    console.log(hurdlesList)
+
+    for (var i = 0; i < hurdlesList.length; i++) {
+      const index = userInput.indexOf(hurdlesList[i])
+
+  //    const index = hurdlesList[hurdlesList.indexOf(userInput[i]).value]
+
+      console.log("userInput.indexOf(hurdlesList[i]): "+index)
+      console.log("hurdlesList[i].value: "+hurdlesList[i].value)
+      console.log("hurdlesList[i][value]: "+hurdlesList[i]["value"])
+      if (index === -1) {
+        hurdles.push(hurdlesList[i].value)
+      } else {
+        hurdles.splice(index, 1)
+      }
+
+    }
+
     this.setState({
       hurdles: userInput
     });
@@ -91,14 +123,6 @@ class DiversitySU extends React.Component {
   render() {
     const {tabPressed, hurdles, schType, gender, ethnicity, finMultiOptions} = this.state;
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
-
-    const hurdlesList = [
-      {value: '0', label: 'Eligible for Free School Meals', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default'},
-      {value: '1', label: 'My parents didn\'t go to university', icon: 'https://images.typeform.com/images/QSBrrY42iA35/image/default'},
-      {value: '2', label: 'Non-native English speaker', icon: 'https://images.typeform.com/images/di2wKSTrtKwX/image/default'},
-      {value: '3', label: 'None', icon: 'https://images.typeform.com/images/qfz8s3nqfncc/image/default'},
-      {value: '4', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/WzCB42U3EE5c/image/default'}
-    ];
 
     const uKschAttendedList = [
       {value: '0', label: 'State-run/funded school', detail: ''},
