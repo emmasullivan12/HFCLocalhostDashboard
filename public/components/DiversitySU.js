@@ -22,6 +22,7 @@ class DiversitySU extends React.Component {
     this.state = {
       tabPressed: '',
       hurdles: [],
+      editedHurdles: '',
       schType: '',
       gender: '',
       ethnicity: '',
@@ -37,40 +38,35 @@ class DiversitySU extends React.Component {
   }
 
   handleHurChange(userInput) {
-    console.log("userInput: "+userInput)
-    console.log(userInput)
+    const newArray = hurdlesList
+      .filter(hurdle => userInput.includes(hurdle.label))
+      .map(value => value.value)
 
-    const {hurdles} = this.state
+    this.setState(prevState => {
 
-    console.log("hurdlesList: "+hurdlesList)
-    console.log(hurdlesList)
+      let edited;
 
-    for (var i = 0; i < hurdlesList.length; i++) {
-      const index = userInput.indexOf(hurdlesList[i])
-
-  //    const index = hurdlesList[hurdlesList.indexOf(userInput[i]).value]
-
-      console.log("userInput.indexOf(hurdlesList[i]): "+index)
-      console.log("hurdlesList[i].value: "+hurdlesList[i].value)
-      console.log("hurdlesList[i][value]: "+hurdlesList[i]["value"])
-      if (index === -1) {
-        hurdles.push(hurdlesList[i].value)
-      } else {
-        hurdles.splice(index, 1)
+      if (prevState.editedHurdles === '' && prevState.hurdles.length === 0) {
+        edited = true
       }
 
-    }
+      return {
+        hurdles: newArray,
+        editedHurdles: edited
+      }
 
-    this.setState({
-      hurdles: userInput
-    });
+    })
   }
 
   handleMultiOptions() {
     this.setState({
-      finMultiOptions: true
+      finMultiOptions: true,
     }, () => {
-      document.getElementById("selectBox-selectSchType").focus()
+      if (this.state.hurdles.length > 0) {
+        document.getElementById("selectBox-selectSchType").focus()
+      } else {
+        document.getElementById("selectBox-selectHur").focus()
+      }
     });
   }
 
@@ -106,7 +102,9 @@ class DiversitySU extends React.Component {
   canBeSubmitted() {
     const {hurdles, schType, gender, ethnicity} = this.state;
 
-    if (hurdles != "" && schType != "" && gender != '' && ethnicity != "") {
+    console.log("hurdles.length :"+hurdles.length)
+
+    if (hurdles.length != 0 && schType != "" && gender != '' && ethnicity != "") {
       const form = document.getElementById("form-DiversityShortSU");
 
       if (form.checkValidity()) {
@@ -121,7 +119,7 @@ class DiversitySU extends React.Component {
   }
 
   render() {
-    const {tabPressed, hurdles, schType, gender, ethnicity, finMultiOptions} = this.state;
+    const {tabPressed, hurdles, editedHurdles, schType, gender, ethnicity, finMultiOptions} = this.state;
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const uKschAttendedList = [
@@ -187,7 +185,7 @@ class DiversitySU extends React.Component {
                   required
                 />
               </div>
-              {(finMultiOptions === true) && (
+              {editedHurdles != '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' || 'country' === 'IRL' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                   <SelectBox

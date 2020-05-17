@@ -56,7 +56,6 @@ class SelectBox extends React.Component {
         finMultiOptions()
         handleChange(prevState.values)
 
-
         if(!required || required && values[0] != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
