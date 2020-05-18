@@ -9,6 +9,21 @@ import ProgressCircles from './ProgressCircles.js';
 import RatingItems from './RatingItems.js';
 //import {lookupRoles} from './UserDetail.js';
 
+const industryOptions = [
+  {value: '', label: 'Finance Sector', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
+  {value: '0', label: 'Accounting', checkbox: true, isTitle: false},
+  {value: '1', label: 'VFX', checkbox: true, isTitle: false},
+  {value: '2', label: 'Banking', checkbox: true, isTitle: false},
+  {value: '3', label: 'Astrology', checkbox: true, isTitle: false},
+  {value: '4', label: 'Zoology', checkbox: true, isTitle: false},
+  {value: '', label: 'Engineering Sector', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
+  {value: '5', label: 'Librarian', checkbox: true, isTitle: false},
+  {value: '6', label: 'Writing', checkbox: true, isTitle: false},
+  {value: '7', label: 'Reading', checkbox: true, isTitle: false},
+  {value: '8', label: 'Healthcare', checkbox: true, isTitle: false},
+  {value: '9', label: 'Physics', checkbox: true, isTitle: false}
+];
+
 class IndustryRoleSU extends React.Component {
   constructor () {
     super();
@@ -17,8 +32,8 @@ class IndustryRoleSU extends React.Component {
       errorLoadingRoles: '',
       showRolePrompt: '',
       tabPressed: '',
-      industries: '',
-      editingInd: '',
+      industries: [],
+      editedIndustries: '',
       rolesChosen: '',
       roleValid: '',
       editingRole: '',
@@ -61,14 +76,32 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleIndChange(userInput) {
-    if (userInput === '') {
-      this.setState({
-        editingInd: true
-      })
+    const newArray = industryOptions
+      .filter(industry => userInput.includes(industry.label))
+      .map(value => value.value)
+
+    this.setState(prevState => {
+
+      let edited;
+
+      if (prevState.editedIndustries === '' && prevState.industries.length === 0) {
+        edited = true
+      }
+
+      return {
+        industries: newArray,
+        editedIndustries: edited
+      }
+
+    })
+  }
+
+  handleMultiOptions() {
+    if (this.state.industries.length > 0) {
+      document.getElementById("autocompleteBox-selectRole").focus()
+    } else {
+      document.getElementById("selectBox-selectInd").focus()
     }
-    this.setState({
-      industries: userInput
-    });
   }
 
   handleRoleChange(userInput, isValid) {
@@ -113,7 +146,7 @@ class IndustryRoleSU extends React.Component {
   canBeSubmitted() {
     const {industries, rolesChosen, roleValid, knowNextSteps} = this.state;
 
-    if (industries != "" && rolesChosen != '' && roleValid === true && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
+    if (industries.length != 0 && rolesChosen != '' && roleValid === true && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
       const form = document.getElementById("form-IndRoleShortSU");
 
       if (form.checkValidity()) {
@@ -144,16 +177,8 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, roleValid, knowNextSteps} = this.state;
+    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editedIndustries, rolesChosen, editingRole, roleValid, knowNextSteps} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
-
-    const industryOptions = [
-      {value: '0', label: 'Accounting'},
-      {value: '1', label: 'VFX'},
-      {value: '2', label: 'Banking'},
-      {value: '3', label: 'Astrology'},
-      {value: '4', label: 'Zoology'}
-    ];
 
     const isEnabled = this.canBeSubmitted();
 
@@ -169,6 +194,8 @@ class IndustryRoleSU extends React.Component {
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
                 <SelectBox
+                  multiple
+                  finMultiOptions={this.handleMultiOptions}
                   options={industryOptions}
                   name='selectInd'
                   placeholder='Select Industry(s):'
@@ -176,10 +203,12 @@ class IndustryRoleSU extends React.Component {
                   handleTabPress={this.handleTabPress}
                   focusOnLoad
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  showIcon
+                  iconToShow='icon'
                   required
                 />
               </div>
-              {(industries != '' || editingInd === true) && (
+              {editedIndustries != '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">What <strong>career or profession</strong> do you want to work in?</label>
                   <div className="autocompleter">

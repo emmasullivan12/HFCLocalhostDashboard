@@ -68,7 +68,7 @@ svg {
 
 .option {
   padding: 10px 15px;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid #f1f1f1fc;
   cursor: pointer;
 }
 .option.showDetail {
@@ -87,12 +87,12 @@ svg {
   height: 40px;
   cursor: pointer;
   background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid #f1f1f1fc;
 }
 .option.showIcon{
   display: flex;
   flex-direction: row;
-  padding-left: 60px;
+  padding-left: 60px!important;
   position: relative;
 }
 .option-iconContainer{
@@ -136,12 +136,26 @@ svg {
   color: #fff;
   cursor: pointer;
 }
-
+.option.title.selected {
+  background: transparent!important;
+}
+.option.title{
+  user-select: none;
+  color: #9f9ee7;
+  cursor: default;
+  background-color: transparent;
+  border-bottom: none;
+  text-align: left;
+  padding-left: 20px
+}
 .option.selectedMultiple {
   display: none
 }
 .option.focused {
   background: #e9e9e9;
+}
+.option.title.focused {
+  background: transparent!important;
 }
 
 .value {

@@ -53,7 +53,9 @@ class SelectBox extends React.Component {
     this.setState(prevState => {
       const { values } = prevState
       if (multiple) {
-        finMultiOptions()
+        if (values.length != 0) {
+          finMultiOptions()
+        }
         handleChange(prevState.values)
 
         if(!required || required && values[0] != null) {
@@ -97,6 +99,11 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
+    console.log("onclick gets triggered")
+
+    if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
+      return
+    }
     const { handleFocus, multiple, finMultiOptions, options } = this.props;
     const { values } = this.state;
     const currentState = this.state.isOpen;
@@ -113,7 +120,7 @@ class SelectBox extends React.Component {
       }
     }
 
-    if (multiple && currentState === true && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer') {
+    if (multiple && currentState === true && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer' && e.target.id.indexOf("selectBox") != 0) {
       //change so if multiple and is open and clicked on box (not item) then close
       return;
     }
@@ -129,7 +136,7 @@ class SelectBox extends React.Component {
   };
 
   onDeleteOption = (e) => {
-    const {required, otherValidityChecks, name} = this.props;
+    const {required, otherValidityChecks, name, handleChange} = this.props;
     const {value} = e.currentTarget.dataset
 
     this.setState(prevState => {
@@ -138,16 +145,18 @@ class SelectBox extends React.Component {
 
       values.splice(index, 1)
 
+      handleChange(values)
+
       if ([...values].length === 0) {
         if(!required) {
           document.getElementById("selectBox-"+name).classList.remove('error')
-          document.getElementById("selectBox-"+name).focus()
+    //      document.getElementById("selectBox-"+name).focus()
           if (otherValidityChecks) {
             otherValidityChecks()
           }
         } else {
           document.getElementById("selectBox-"+name).classList.add('error')
-          document.getElementById("selectBox-"+name).focus()
+    //      document.getElementById("selectBox-"+name).focus()
         }
       }
 
@@ -158,6 +167,11 @@ class SelectBox extends React.Component {
   onClickOption = (e) => {
     const { options, name, required, multiple, handleChange, valueToShow, otherValidityChecks, finMultiOptions } = this.props;
   //  const {elementIdFocused} = this.state;
+
+    if (e.currentTarget.dataset.id.indexOf("title") != -1) {
+      return
+    }
+
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const value = e.currentTarget.dataset.text;
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
@@ -189,6 +203,8 @@ class SelectBox extends React.Component {
       } else {
         values.splice(index, 1)
       }
+
+      handleChange(values)
 
       if (values.length === options.length) {
         finMultiOptions()
@@ -230,6 +246,7 @@ class SelectBox extends React.Component {
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();
+
       this.setState(prevState => {
         let { focusedValue } = prevState
 
@@ -251,6 +268,12 @@ class SelectBox extends React.Component {
               const { focusedValue } = prevState
 
               if (focusedValue !== -1) {
+                const isSectionTitle = options[focusedValue]["isTitle"] === true;
+
+                if (isSectionTitle) {
+                  return
+                }
+
                 const [ ...values ] = prevState.values
               //  const value = options[focusedValue].value
                 const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
@@ -299,6 +322,12 @@ class SelectBox extends React.Component {
             })
           } else if (focusedValue != -1) {
         //    const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+            const isSectionTitle = options[focusedValue]["isTitle"] === true;
+
+            if (isSectionTitle) {
+              return
+            }
+
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
             handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
@@ -320,6 +349,8 @@ class SelectBox extends React.Component {
 
     // User pressed the tab key
     else if (e.keyCode === 9) {
+      console.log("on tab")
+
       this.setState(prevState => {
         let { focusedValue } = prevState
 
@@ -332,6 +363,12 @@ class SelectBox extends React.Component {
           if (multiple) {
             this.setState(prevState => {
               const { focusedValue } = prevState
+
+              const isSectionTitle = options[focusedValue]["isTitle"] === true;
+
+              if (isSectionTitle) {
+                return
+              }
 
               if (focusedValue !== -1) {
                 const [ ...values ] = prevState.values
@@ -376,6 +413,10 @@ class SelectBox extends React.Component {
               }
             })
           } else {
+            const isSectionTitle = options[focusedValue]["isTitle"] === true;
+            if (isSectionTitle) {
+              return
+            }
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
       //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
@@ -664,6 +705,10 @@ class SelectBox extends React.Component {
       })
     }
 
+    console.log("values[0]: "+values[0])
+    console.log(values)
+    console.log(values[0])
+
     return (
       <div className="value overflow-ellipsis">
         { values[0] }
@@ -686,9 +731,14 @@ class SelectBox extends React.Component {
           const value = hasMultipleAttributes === true ? option[valueToShow] : option;
           const detail = detailToShow == undefined ? '' :  option[detailToShow];
           const icon = iconToShow == undefined ? '' :  option[iconToShow];
+          const isSectionTitle = option["isTitle"] === true;
           const selected = values.includes(value)
 
           let className = "option"
+
+          if (isSectionTitle) {
+            className += " title"
+          }
           if (selected) {
             if (multiple) {
               className += " selectedMultiple"
@@ -702,7 +752,7 @@ class SelectBox extends React.Component {
           } else {
             className += " noDetail overflow-ellipsis"
           }
-          if (showIcon===true) {
+          if (showIcon===true && option["icon"] != null) {
             className += " showIcon"
           }
 
@@ -712,14 +762,14 @@ class SelectBox extends React.Component {
           return (
             <div
               key={value}
-              data-id={hasMultipleAttributes === true ? option.value : option}
+              data-id={hasMultipleAttributes === true ? (isSectionTitle ? ('title-'+ value) : option.value) : option}
               data-text={value}
               className={className}
         //      onFocus={this.onHoverOption} // placeholder as was erroring without this
         //      onMouseOver={this.onHoverOption}
               onClick={this.onClickOption}
             >
-              {showIcon===true && (
+              {(showIcon===true && option["icon"] != null) && (
                 <div className={"option-iconContainer " + (showDetail===true ? "showDetail": "noDetail")}>
                   <img alt="option icon" src={icon} />
                 </div>

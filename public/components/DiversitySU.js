@@ -26,7 +26,6 @@ class DiversitySU extends React.Component {
       schType: '',
       gender: '',
       ethnicity: '',
-      finMultiOptions: ''
     }
     this.handleHurChange = this.handleHurChange.bind(this);
     this.handleMultiOptions = this.handleMultiOptions.bind(this);
@@ -45,7 +44,7 @@ class DiversitySU extends React.Component {
     this.setState(prevState => {
 
       let edited;
-
+      
       if (prevState.editedHurdles === '' && prevState.hurdles.length === 0) {
         edited = true
       }
@@ -59,15 +58,11 @@ class DiversitySU extends React.Component {
   }
 
   handleMultiOptions() {
-    this.setState({
-      finMultiOptions: true,
-    }, () => {
-      if (this.state.hurdles.length > 0) {
-        document.getElementById("selectBox-selectSchType").focus()
-      } else {
-        document.getElementById("selectBox-selectHur").focus()
-      }
-    });
+    if (this.state.hurdles.length > 0) {
+      document.getElementById("selectBox-selectSchType").focus()
+    } else {
+      document.getElementById("selectBox-selectHur").focus()
+    }
   }
 
   handleSchTypeChange(userInput) {
@@ -102,8 +97,6 @@ class DiversitySU extends React.Component {
   canBeSubmitted() {
     const {hurdles, schType, gender, ethnicity} = this.state;
 
-    console.log("hurdles.length :"+hurdles.length)
-
     if (hurdles.length != 0 && schType != "" && gender != '' && ethnicity != "") {
       const form = document.getElementById("form-DiversityShortSU");
 
@@ -119,7 +112,7 @@ class DiversitySU extends React.Component {
   }
 
   render() {
-    const {tabPressed, hurdles, editedHurdles, schType, gender, ethnicity, finMultiOptions} = this.state;
+    const {tabPressed, hurdles, editedHurdles, schType, gender, ethnicity} = this.state;
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const uKschAttendedList = [
@@ -194,7 +187,7 @@ class DiversitySU extends React.Component {
                     placeholder={'Select ' + (country === 'GBR' ? 'school' : 'high-school') + ' type:'}
                     handleChange={this.handleSchTypeChange}
                     handleTabPress={this.handleTabPress}
-                    focusOnLoad
+            //        focusOnLoad
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     showDetail
                     detailToShow='detail'

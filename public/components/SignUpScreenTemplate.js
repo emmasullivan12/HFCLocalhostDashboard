@@ -32,7 +32,6 @@ class SignUpScreenTemplate extends React.Component {
               <div className="typeform-content">
                 {children}
               </div>
-              <div className="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a className="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a className="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
             </div>
           </div>
           {!fullWidth && (
@@ -42,6 +41,7 @@ class SignUpScreenTemplate extends React.Component {
               </div>
             </div>
           )}
+          <div className="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a className="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a className="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
         </div>
       </div>
     );
