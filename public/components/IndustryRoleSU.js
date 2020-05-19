@@ -201,6 +201,7 @@ class IndustryRoleSU extends React.Component {
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showIcon
                   iconToShow='icon'
+                  showCheckbox
                   required
                 />
               </div>
