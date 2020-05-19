@@ -22,7 +22,7 @@ class DiversitySU extends React.Component {
     this.state = {
       tabPressed: '',
       hurdles: [],
-      editedHurdles: '',
+      editingHurdles: '',
       schType: '',
       gender: '',
       ethnicity: '',
@@ -37,23 +37,19 @@ class DiversitySU extends React.Component {
   }
 
   handleHurChange(userInput) {
+    console.log("Handledhurchange triggered")
     const newArray = hurdlesList
       .filter(hurdle => userInput.includes(hurdle.label))
       .map(value => value.value)
 
-    this.setState(prevState => {
+    if (this.state.hurdles.length != 0 & userInput.length != 0) {
+      this.setState({
+        editingHurdles: true
+      })
+    }
 
-      let edited;
-      
-      if (prevState.editedHurdles === '' && prevState.hurdles.length === 0) {
-        edited = true
-      }
-
-      return {
-        hurdles: newArray,
-        editedHurdles: edited
-      }
-
+    this.setState({
+      hurdles: newArray
     })
   }
 
@@ -112,7 +108,7 @@ class DiversitySU extends React.Component {
   }
 
   render() {
-    const {tabPressed, hurdles, editedHurdles, schType, gender, ethnicity} = this.state;
+    const {tabPressed, hurdles, editingHurdles, schType, gender, ethnicity} = this.state;
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const uKschAttendedList = [
@@ -178,7 +174,7 @@ class DiversitySU extends React.Component {
                   required
                 />
               </div>
-              {editedHurdles != '' && (
+              {(hurdles.length > 0 || editingHurdles != '') && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' || 'country' === 'IRL' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                   <SelectBox

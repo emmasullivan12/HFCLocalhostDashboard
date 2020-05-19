@@ -46,6 +46,9 @@ class SelectBox extends React.Component {
   }
 
   onBlur = (e) => {
+    console.log("on blur triggered")
+    console.log("e.target in onblur")
+    console.log(e.target)
     const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -53,10 +56,11 @@ class SelectBox extends React.Component {
     this.setState(prevState => {
       const { values } = prevState
       if (multiple) {
+
         if (values.length != 0) {
           finMultiOptions()
         }
-        handleChange(prevState.values)
+        handleChange(values)
 
         if(!required || required && values[0] != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -120,12 +124,15 @@ class SelectBox extends React.Component {
       }
     }
 
+    console.log("e.target in onclick")
+    console.log(e.target)
+
     if (multiple && currentState === true && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer' && e.target.id.indexOf("selectBox") != 0) {
       //change so if multiple and is open and clicked on box (not item) then close
       return;
     }
 
-    if (multiple && currentState === true) {
+    if (multiple && currentState === true && values.length != 0) {
       finMultiOptions()
     }
 

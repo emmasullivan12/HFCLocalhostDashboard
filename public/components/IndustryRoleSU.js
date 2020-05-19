@@ -33,7 +33,7 @@ class IndustryRoleSU extends React.Component {
       showRolePrompt: '',
       tabPressed: '',
       industries: [],
-      editedIndustries: '',
+      editingInd: '',
       rolesChosen: '',
       roleValid: '',
       editingRole: '',
@@ -42,6 +42,7 @@ class IndustryRoleSU extends React.Component {
     this.handleIndChange = this.handleIndChange.bind(this);
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleRatingChange = this.handleRatingChange.bind(this);
+    this.handleMultiOptions = this.handleMultiOptions.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderComponents = this.renderComponents.bind(this);
@@ -80,19 +81,14 @@ class IndustryRoleSU extends React.Component {
       .filter(industry => userInput.includes(industry.label))
       .map(value => value.value)
 
-    this.setState(prevState => {
+    if (this.state.industries.length != 0 & userInput.length != 0) {
+      this.setState({
+        editingInd: true
+      })
+    }
 
-      let edited;
-
-      if (prevState.editedIndustries === '' && prevState.industries.length === 0) {
-        edited = true
-      }
-
-      return {
-        industries: newArray,
-        editedIndustries: edited
-      }
-
+    this.setState({
+      industries: newArray,
     })
   }
 
@@ -177,7 +173,7 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editedIndustries, rolesChosen, editingRole, roleValid, knowNextSteps} = this.state;
+    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, roleValid, knowNextSteps} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const isEnabled = this.canBeSubmitted();
@@ -208,7 +204,7 @@ class IndustryRoleSU extends React.Component {
                   required
                 />
               </div>
-              {editedIndustries != '' && (
+              {(industries.length > 0 || editingInd != '') && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">What <strong>career or profession</strong> do you want to work in?</label>
                   <div className="autocompleter">
