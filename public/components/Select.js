@@ -469,7 +469,7 @@ class SelectBox extends React.Component {
             elements[i].classList.remove('focused')
           }
 
-          if (focusedValue === 0 || focusedValue === -1) {
+          if ((this.countTitles() > 0 ? focusedValue === 1 : focusedValue === 0) || focusedValue === -1) {
 
             const parent = document.getElementById("options-"+name);
             const item = parent.firstElementChild;
@@ -563,7 +563,11 @@ class SelectBox extends React.Component {
             const parent = document.getElementById("options-"+name);
             parent.scrollTop = 0;
 
-            focusedValue = 0
+            if (this.countTitles() > 0) {
+              focusedValue = 1
+            } else {
+              focusedValue = 0
+            }
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
@@ -595,9 +599,15 @@ class SelectBox extends React.Component {
             }
 
           } else {
+            if (focusedValue === -1 && this.countTitles() > 0) {
+              focusedValue = 1
+            } else {
+              focusedValue++
+            }
+
             this.handleMoveDown();
 
-            focusedValue++
+
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
