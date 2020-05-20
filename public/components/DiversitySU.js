@@ -9,11 +9,11 @@ import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 
 const hurdlesList = [
-  {value: '0', label: 'Eligible for Free School Meals', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default'},
-  {value: '1', label: 'My parents didn\'t go to university', icon: 'https://images.typeform.com/images/QSBrrY42iA35/image/default'},
-  {value: '2', label: 'Non-native English speaker', icon: 'https://images.typeform.com/images/di2wKSTrtKwX/image/default'},
-  {value: '3', label: 'None', icon: 'https://images.typeform.com/images/qfz8s3nqfncc/image/default'},
-  {value: '4', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/WzCB42U3EE5c/image/default'}
+  {value: 0, label: 'Eligible for Free School Meals', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default'},
+  {value: 1, label: 'My parents didn\'t go to university', icon: 'https://images.typeform.com/images/QSBrrY42iA35/image/default'},
+  {value: 2, label: 'Non-native English speaker', icon: 'https://images.typeform.com/images/di2wKSTrtKwX/image/default'},
+  {value: 3, label: 'None', icon: 'https://images.typeform.com/images/qfz8s3nqfncc/image/default'},
+  {value: 4, label: 'Prefer not to say', icon: 'https://images.typeform.com/images/WzCB42U3EE5c/image/default'}
 ];
 
 class DiversitySU extends React.Component {
@@ -112,38 +112,38 @@ class DiversitySU extends React.Component {
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const uKschAttendedList = [
-      {value: '0', label: 'State-run/funded school', detail: ''},
-      {value: '1', label: 'Independent or fee-paying school ', detail: 'with bursary'},
-      {value: '2', label: 'Independent or fee-paying school', detail: 'no bursary'},
-      {value: '3', label: 'Home-schooled', detail: ''},
-      {value: '4', label: 'Prefer not to say', detail: ''}
+      {value: 0, label: 'State-run/funded school', detail: ''},
+      {value: 1, label: 'Independent or fee-paying school ', detail: 'with bursary'},
+      {value: 2, label: 'Independent or fee-paying school', detail: 'no bursary'},
+      {value: 3, label: 'Home-schooled', detail: ''},
+      {value: 4, label: 'Prefer not to say', detail: ''}
     ];
 
     const schAttendedList = [
-      {value: '0', label: 'Public school/state-funded (selective)', detail: ''},
-      {value: '1', label: 'Private or fee-paying school ', detail: 'with scholarship'},
-      {value: '2', label: 'Private or fee-paying school', detail: 'no scholarship'},
-      {value: '3', label: 'Home-schooled', detail: ''},
-      {value: '4', label: 'Prefer not to say', detail: ''}
+      {value: 0, label: 'Public school/state-funded (selective)', detail: ''},
+      {value: 1, label: 'Private or fee-paying school ', detail: 'with scholarship'},
+      {value: 2, label: 'Private or fee-paying school', detail: 'no scholarship'},
+      {value: 3, label: 'Home-schooled', detail: ''},
+      {value: 4, label: 'Prefer not to say', detail: ''}
     ];
 
     const genders = [
-      {value: '0', label: 'Male', icon: 'https://images.typeform.com/images/8ht36QbibjJJ/image/default'},
-      {value: '1', label: 'Female', icon: 'https://images.typeform.com/images/c6BWgrhxrj3d/image/default'},
-      {value: '2', label: 'Non-binary', icon: 'https://images.typeform.com/images/nnGsJVx2JgGJ/image/default'},
-      {value: '3', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/tsrEVrcRyMjR/image/default'}
+      {value: 0, label: 'Male', icon: 'https://images.typeform.com/images/8ht36QbibjJJ/image/default'},
+      {value: 1, label: 'Female', icon: 'https://images.typeform.com/images/c6BWgrhxrj3d/image/default'},
+      {value: 2, label: 'Non-binary', icon: 'https://images.typeform.com/images/nnGsJVx2JgGJ/image/default'},
+      {value: 3, label: 'Prefer not to say', icon: 'https://images.typeform.com/images/tsrEVrcRyMjR/image/default'}
     ];
 
     const ethnicities = [
-      {value: '0', label: 'Asian'},
-      {value: '1', label: 'Arab'},
-      {value: '2', label: 'Black / African / Caribbean'},
-      {value: '3', label: 'Hispanic / Latinx'},
-      {value: '4', label: 'Indian / Pakistani'},
-      {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
-      {value: '6', label: 'White'},
-      {value: '7', label: 'Other'},
-      {value: '8', label: 'Prefer not to say'}
+      {value: 0, label: 'Asian'},
+      {value: 1, label: 'Arab'},
+      {value: 2, label: 'Black / African / Caribbean'},
+      {value: 3, label: 'Hispanic / Latinx'},
+      {value: 4, label: 'Indian / Pakistani'},
+      {value: 5, label: 'Mixed / Multiple Ethnic Groups'},
+      {value: 6, label: 'White'},
+      {value: 7, label: 'Other'},
+      {value: 8, label: 'Prefer not to say'}
     ];
 
     const isEnabled = this.canBeSubmitted();

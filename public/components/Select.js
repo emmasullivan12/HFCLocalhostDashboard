@@ -32,6 +32,7 @@ class SelectBox extends React.Component {
     if (focusOnLoad) {
       document.getElementById("selectBox-"+name).focus();
     }
+  //  this.heightCalc()
     handleTabPress(false);
   }
 
@@ -135,6 +136,10 @@ class SelectBox extends React.Component {
     this.setState({
       isOpen: !currentState,
 //      elementIdFocused: document.activeElement.id
+    }, () => {
+      if (this.state.isOpen === true) {
+        this.heightCalc()
+      }
     })
   };
 
@@ -680,6 +685,27 @@ class SelectBox extends React.Component {
     return titleCount
   }
 
+  heightCalc = (needValue) => {
+    const {options, name} = this.props
+
+    let containerHeight = 0;
+
+    // Makes container the height of the first 5 items
+    for (var i = 0; i < 6; i++) {
+      if (options[i]["isTitle"] === true) {
+        containerHeight += 40
+      } else {
+        containerHeight +=
+        32
+      }
+    }
+    if (needValue) {
+      return containerHeight
+    } else {
+      document.getElementById('options-'+name).style.maxHeight = containerHeight + "px";
+    }
+  }
+
   checkExists(inputToCheck) {
     const { options, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -767,14 +793,17 @@ class SelectBox extends React.Component {
 
   renderOptions() {
     const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name } = this.props
-    const { isOpen, values, focusedValue } = this.state;
+        const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
       return;
     }
 
     return (
-      <div className={showDetail===true ? 'options showDetail' : 'options noDetail'} id={'options-'+name}>
+      <div
+        className={(showDetail===true ? 'options showDetail' : 'options noDetail')}
+        id={'options-'+name}
+      >
         {options.map((option, index) => {
           const hasMultipleAttributes = this.checkMultipleAttributes();
           const value = hasMultipleAttributes === true ? option[valueToShow] : option;
@@ -860,6 +889,7 @@ class SelectBox extends React.Component {
     const { handleChange, required, name } = this.props;
     const { isOpen, isFocused } = this.state;
 
+    console.log("render")
     return (
       <React.Fragment>
         <div
