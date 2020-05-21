@@ -123,9 +123,9 @@ class NoEduEmailContent extends Component {
       console.log("noeduemailcontent handle submit triggered")
       sendForReview('other details/currentSitu', 'no eduEmail')
       if (emailInput != '') {
-        handleNoEduEmail(emailInput)
+        handleNoEduEmail(emailInput,'prof')
       } else {
-        handleNoEduEmail('personal')
+        handleNoEduEmail('','personal')
       }
       updateStep('didEduEmail', false)
       this.setState({

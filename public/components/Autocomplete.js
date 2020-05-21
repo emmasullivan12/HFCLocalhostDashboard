@@ -31,7 +31,9 @@ class Autocomplete extends React.Component {
       renderComponents(fileToRender, componentUpdatesState)
     }
 
-    handleTabPress(false);
+    if (handleTabPress) {
+      handleTabPress(false);
+    }
   }
 
   onMouseDown = (e) => {
@@ -303,6 +305,7 @@ class Autocomplete extends React.Component {
     return (
       <React.Fragment>
         <input
+          tabIndex="0"
           type="text"
           name={name}
           className="form-control-std autocompleter"

@@ -137,9 +137,9 @@ class ConfirmStudent extends React.Component {
     updateStep('didEduEmail', true)
   }
 
-  handleNoEduEmail(emailInput) {
+  handleNoEduEmail(emailInput, emailType) {
     const {updateStep, updateEduEmail} = this.props;
-    updateEduEmail(emailInput)
+    updateEduEmail(emailInput, emailType)
     updateStep('didEduEmail', false)
   }
 
@@ -160,7 +160,7 @@ class ConfirmStudent extends React.Component {
     this.setState({
       submitted: true
     })
-    updateEduEmail(userInput, () => {
+    updateEduEmail(userInput, 'sch', () => {
       updateStep('didEduEmail', false)
     })
 
@@ -175,7 +175,7 @@ class ConfirmStudent extends React.Component {
     var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
     const emailFormInput = document.getElementById("eduEmailInput")
 
-    if (freeEmailDomains.includes(freeEmail)) {
+  if (freeEmailDomains.includes(freeEmail)) {
       this.setState({
         eduEmailIsValid: false,
         isPersonalEmail: true,

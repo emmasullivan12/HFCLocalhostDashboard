@@ -21,7 +21,31 @@ const industryOptions = [
   {value: 6, label: 'Writing', checkbox: true, isTitle: false},
   {value: 7, label: 'Reading', checkbox: true, isTitle: false},
   {value: 8, label: 'Healthcare', checkbox: true, isTitle: false},
-  {value: 9, label: 'Physics', checkbox: true, isTitle: false}
+  {value: 9, label: 'Physics', checkbox: true, isTitle: false},
+  {value: '', label: 'Engineering Sector2', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
+  {value: 5, label: 'Librarian2', checkbox: true, isTitle: false},
+  {value: 6, label: 'Writing2', checkbox: true, isTitle: false},
+  {value: 7, label: 'Reading2', checkbox: true, isTitle: false},
+  {value: 8, label: 'Healthcare2', checkbox: true, isTitle: false},
+  {value: 9, label: 'Physics2', checkbox: true, isTitle: false},
+  {value: '', label: 'Engineering Sector3', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
+  {value: 5, label: 'Librarian3', checkbox: true, isTitle: false},
+  {value: 6, label: 'Writing3', checkbox: true, isTitle: false},
+  {value: 7, label: 'Reading3', checkbox: true, isTitle: false},
+  {value: 8, label: 'Healthcare3', checkbox: true, isTitle: false},
+  {value: 9, label: 'Physics3', checkbox: true, isTitle: false},
+  {value: '', label: 'Engineering Sector4', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
+  {value: 5, label: 'Librarian4', checkbox: true, isTitle: false},
+  {value: 6, label: 'Writing4', checkbox: true, isTitle: false},
+  {value: 7, label: 'Reading4', checkbox: true, isTitle: false},
+  {value: 8, label: 'Healthcare4', checkbox: true, isTitle: false},
+  {value: 9, label: 'Physics4', checkbox: true, isTitle: false},
+  {value: '', label: 'Engineering Sector5', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
+  {value: 5, label: 'Librarian5', checkbox: true, isTitle: false},
+  {value: 6, label: 'Writing5', checkbox: true, isTitle: false},
+  {value: 7, label: 'Reading5', checkbox: true, isTitle: false},
+  {value: 8, label: 'Healthcare5', checkbox: true, isTitle: false},
+  {value: 9, label: 'Physics5', checkbox: true, isTitle: false}
 ];
 
 class IndustryRoleSU extends React.Component {
@@ -76,12 +100,28 @@ class IndustryRoleSU extends React.Component {
     }
   }
 
-  handleIndChange(userInput) {
-    const newArray = industryOptions
-      .filter(industry => userInput.includes(industry.label))
-      .map(value => value.value)
+  handleIndMoveNext = () => {
+    document.getElementById("autocompleteBox-selectRole").focus()
+  }
 
-    if (this.state.industries.length != 0 & userInput.length != 0) {
+  handleIndChange(userInput, canSelectMulti) {
+    let newArray
+
+    if (!canSelectMulti) {
+      newArray = [userInput]
+  /*    if (this.state.industries.length === 0) {
+        document.getElementById("autocompleteBox-selectRole").focus()
+      } else {
+        document.getElementById("selectBox-selectInd").focus()
+      }*/
+
+    } else {
+      newArray = industryOptions
+        .filter(industry => userInput.includes(industry.label))
+        .map(value => value.value)
+    }
+
+    if (this.state.industries.length != 0 && userInput.length != 0) {
       this.setState({
         editingInd: true
       })
@@ -89,8 +129,16 @@ class IndustryRoleSU extends React.Component {
 
     this.setState({
       industries: newArray,
+    }, () => {
+      if (!canSelectMulti) {
+      //  if (this.state.tabPressed != true) {
+          this.handleIndMoveNext()
+    //    }
+      }
     })
   }
+
+
 
   handleMultiOptions() {
     if (this.state.industries.length > 0) {
@@ -120,16 +168,15 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleRatingChange(e) {
-    console.log("updating parent")
     this.setState({
       knowNextSteps: e
     }, () => {
-      console.log("gets here")
       document.getElementById("Submit-btn-ind").focus()
     });
   }
 
   handleTabPress(tabPressed) {
+    console.log("handleTabPress just triggered")
     this.setState({ tabPressed: tabPressed });
   }
 
@@ -190,7 +237,7 @@ class IndustryRoleSU extends React.Component {
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
                 <SelectBox
-                  multiple
+                //  multiple
                   finMultiOptions={this.handleMultiOptions}
                   options={industryOptions}
                   name='selectInd'
@@ -201,7 +248,7 @@ class IndustryRoleSU extends React.Component {
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showIcon
                   iconToShow='icon'
-                  showCheckbox
+              //    showCheckbox
                   required
                 />
               </div>
@@ -220,7 +267,7 @@ class IndustryRoleSU extends React.Component {
                       onFocus={this.onRoleFocus}
                       onBlur={this.onRoleBlur}
                       handleTabPress={this.handleTabPress}
-                      focusOnLoad={tabPressed ? false : true}
+              //        focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required

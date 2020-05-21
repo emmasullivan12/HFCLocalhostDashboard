@@ -144,6 +144,7 @@ class TypeformSignUp extends Component {
       uniName: '',
       uniNameFreeText: '',
       emailToVerify: '',
+      emailType: '',
       sendForReview: [],
       reviewReason: [],
       currCo: '',
@@ -416,19 +417,30 @@ class TypeformSignUp extends Component {
     })
   }
 
-  updateEduEmail(userInput, callback) {
-    if (userInput === 'personal') {
-      const personalEmail = 'personal@gmail.com' //DEX TO PULL IN PERSONAL EMAIL FROM HTML SIGNUP PAGE
+  updateEduEmail(userInput, emailType, callback) {
+    if (emailType === 'sch') {
       this.setState({
-        emailToVerify: personalEmail
+        emailToVerify: userInput,
+        emailType: 'sch'
       }, () => {
         if (callback) {
           callback();
         }
       })
-    } else {
+    } else if (emailType === 'personal'){
+      const personalEmail = 'personal@gmail.com' //DEX TO PULL IN PERSONAL EMAIL FROM HTML SIGNUP PAGE
       this.setState({
-        emailToVerify: userInput
+        emailToVerify: personalEmail,
+        emailType: 'personal'
+      }, () => {
+        if (callback) {
+          callback();
+        }
+      })
+    } else if (emailType === 'prof'){
+      this.setState({
+        emailToVerify: userInput,
+        emailType: 'prof'
       }, () => {
         if (callback) {
           callback();
@@ -438,7 +450,7 @@ class TypeformSignUp extends Component {
   }
 
   render() {
-    const {isGeneralError, isLoading, step, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify, sendForReview} = this.state;
+    const {isGeneralError, isLoading, step, country, userEduName, emailType, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify, sendForReview} = this.state;
     const userRole = 'mentee';
     const totalMenteeSteps = 5;
     const totalMentorSteps = 2;

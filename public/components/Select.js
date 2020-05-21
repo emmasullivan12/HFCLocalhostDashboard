@@ -22,7 +22,7 @@ class SelectBox extends React.Component {
       focusedValue: -1,
       isFocused: false,
       isOpen: false,
-      numSelected: 0
+      numSelected: 0,
   //    elementIdFocused: ''
     };
   }
@@ -33,7 +33,9 @@ class SelectBox extends React.Component {
       document.getElementById("selectBox-"+name).focus();
     }
   //  this.heightCalc()
-    handleTabPress(false);
+    if (handleTabPress) {
+      handleTabPress(false);
+    }
   }
 
   onFocus = (e) => {
@@ -49,6 +51,9 @@ class SelectBox extends React.Component {
 
   onBlur = (e) => {
     console.log("on blur triggered")
+    console.log("e.target")
+    console.log(e.target)
+
     const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -60,7 +65,7 @@ class SelectBox extends React.Component {
         if (values.length != 0) {
           finMultiOptions()
         }
-        handleChange(values)
+        handleChange(values, true)
 
         if(!required || required && values[0] != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -77,12 +82,21 @@ class SelectBox extends React.Component {
           isOpen: false,
         }
       } else {
+        if (values.length === 0) {
+          finMultiOptions()
+          return {
+            isOpen: false,
+          }
+        }
         const value = values[0];
+
         let focusedValue = -1
 
         if (value) {
           focusedValue = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
         }
+
+        handleChange(values, false)
 
         if(!required || required && value != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -104,8 +118,11 @@ class SelectBox extends React.Component {
 
   onClick = (e) => {
     console.log("onclick gets triggered")
+    console.log("e.target: "+e.target)
+    console.log(e.target)
 
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
+      console.log("gets here inonclick")
       return
     }
     const { handleFocus, multiple, finMultiOptions, options, showCheckbox } = this.props;
@@ -176,6 +193,8 @@ class SelectBox extends React.Component {
   }
 
   onClickOption = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
     const { options, name, required, multiple, handleChange, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions } = this.props;
   //  const {elementIdFocused} = this.state;
 
@@ -188,7 +207,7 @@ class SelectBox extends React.Component {
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
 
     if (!multiple) {
-      handleChange(e.currentTarget.dataset.id);
+      handleChange(e.currentTarget.dataset.id, false);
     }
 
     this.setState(prevState => {
@@ -201,7 +220,7 @@ class SelectBox extends React.Component {
 
         return {
           values: [ value ],
-          focusedValue: index,
+        //  focusedValue: index,
           isOpen: false
         }
       }
@@ -214,10 +233,12 @@ class SelectBox extends React.Component {
       } else {
         values.splice(index, 1)
       }
-
-      handleChange(values)
+      console.log("here 0")
+      handleChange(values, true)
+      console.log("here 1")
 
       if (values.length === (options.length - this.countTitles())) {
+        console.log("finMultiOptions about to launch")
         finMultiOptions()
         if(!required || required && value != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -234,19 +255,23 @@ class SelectBox extends React.Component {
         }
 
       } else {
+        console.log("here 2")
         if(!required || required && value != null) {
+          console.log("here 3")
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
             otherValidityChecks()
           }
         } else {
+          console.log("here 4")
           document.getElementById("selectBox-"+name).classList.add('error')
         }
+        console.log("continues here")
 
         return {
           numSelected: values.length,
           values: values,
-          isOpen: true
+          isOpen: true,
         }
       }
 
@@ -339,6 +364,7 @@ class SelectBox extends React.Component {
             })
           } else if (focusedValue != -1) {
         //    const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
             const isSectionTitle = options[focusedValue]["isTitle"] === true;
 
             if (isSectionTitle) {
@@ -347,7 +373,7 @@ class SelectBox extends React.Component {
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
-            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], false);
 
             if (otherValidityChecks) {
               otherValidityChecks();
@@ -358,6 +384,13 @@ class SelectBox extends React.Component {
               focusedValue: index,
               isOpen: false,
             }
+          } else {
+            if (prevState.values.length === 0) {
+              finMultiOptions()
+              return {
+                isOpen: false,
+              }
+            }
           }
         }
       })
@@ -366,11 +399,9 @@ class SelectBox extends React.Component {
 
     // User pressed the tab key
     else if (e.keyCode === 9) {
-      console.log("on tab")
 
       this.setState(prevState => {
         let { focusedValue } = prevState
-
         if (!isOpen) {
           return
         } else {
@@ -438,7 +469,7 @@ class SelectBox extends React.Component {
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
       //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], false);
             handleTabPress(true);
             return {
               values: [ value ],
@@ -469,12 +500,14 @@ class SelectBox extends React.Component {
         this.setState(prevState => {
           let { focusedValue } = prevState
 
+          const hasTitles = this.countTitles() > 0
+
           const elements = document.getElementsByClassName("multiple value")
           for (var i = 0; i < elements.length; i++) {
             elements[i].classList.remove('focused')
           }
 
-          if ((this.countTitles() > 0 ? focusedValue === 1 : focusedValue === 0) || focusedValue === -1) {
+          if ((hasTitles ? focusedValue === 1 : focusedValue === 0) || focusedValue === -1) {
 
             const parent = document.getElementById("options-"+name);
             const item = parent.firstElementChild;
@@ -512,7 +545,15 @@ class SelectBox extends React.Component {
           } else if (focusedValue > 0) {
             this.handleMoveUp();
 
-            focusedValue--
+            if (hasTitles) {
+              if (options[focusedValue - 1]["isTitle"] === true) {
+                focusedValue-=2
+              } else {
+                focusedValue--
+              }
+            } else {
+              focusedValue--
+            }
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
@@ -555,6 +596,7 @@ class SelectBox extends React.Component {
     else if (e.keyCode === 40) {
       if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault()
+        const hasTitles = this.countTitles() > 0
 
         this.setState(prevState => {
           let { focusedValue } = prevState
@@ -603,43 +645,54 @@ class SelectBox extends React.Component {
               }
             }
 
-          } else {
-            if (focusedValue === -1 && this.countTitles() > 0) {
+          } else if (focusedValue === -1) {
+
+            if (hasTitles) {
               focusedValue = 1
             } else {
               focusedValue++
             }
 
-            this.handleMoveDown();
+          } else {
 
-
-
-            const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
-
-            if (otherValidityChecks) {
-              otherValidityChecks();
-            }
-
-            if (!isOpen) {
-              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-            }
-
-            if (multiple) {
-              const values = prevState.values;
-              const focusedSelectedValue = values.indexOf(value)
-
-              if (focusedSelectedValue != -1 && showCheckbox != true) {
-                document.getElementById(values[focusedSelectedValue]).classList.add('focused')
-              }
-
-              return {
-                focusedValue
+            if (hasTitles) {
+              if (options[focusedValue + 1]["isTitle"] === true) {
+                focusedValue+=2
+              } else {
+                focusedValue++
               }
             } else {
-              return {
-                values: [ value ],
-                focusedValue
-              }
+              focusedValue++
+            }
+          }
+
+          this.handleMoveDown();
+
+          const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
+
+          if (otherValidityChecks) {
+            otherValidityChecks();
+          }
+
+          if (!isOpen) {
+            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+          }
+
+          if (multiple) {
+            const values = prevState.values;
+            const focusedSelectedValue = values.indexOf(value)
+
+            if (focusedSelectedValue != -1 && showCheckbox != true) {
+              document.getElementById(values[focusedSelectedValue]).classList.add('focused')
+            }
+
+            return {
+              focusedValue
+            }
+          } else {
+            return {
+              values: [ value ],
+              focusedValue
             }
           }
         })
@@ -655,24 +708,87 @@ class SelectBox extends React.Component {
   }
 
   handleMoveUp = () => {
-    const { focusedValue } = this.state;
-    const { options, name } = this.props;
+    const { focusedValue, values } = this.state;
+    const { options, name, showCheckbox, valueToShow } = this.props;
     const parent = document.getElementById("options-"+name);
-    const item = parent.firstElementChild;
-    if (focusedValue < (options.length - 4)) {
-      parent.scrollTop -= item.offsetHeight
+    const hasTitles = this.countTitles() > 0
+
+    let item;
+    let titleItem;
+
+    if (hasTitles) {
+      item = parent.children[1]
+      titleItem = parent.firstElementChild
+    } else {
+      item = parent.firstElementChild;
+
+      // i.e. 4 = 5th box
+      if (focusedValue < (options.length - 4)) {
+        parent.scrollTop -= item.offsetHeight
+        return
+      }
     }
+
+
+    if (focusedValue < (options.length - 4)) {
+
+      if (showCheckbox != true) {
+        if (values.indexOf(options[focusedValue - 1][valueToShow]) != -1) {
+          return
+        }
+      }
+
+      //check if next item is title
+      if (options[focusedValue - 1]["isTitle"] === true) {
+        // 1.75 is hack because over time would have gone offscreen
+        parent.scrollTop -= (titleItem.offsetHeight + (item.offsetHeight * 1.75))
+      } else {
+        parent.scrollTop -= item.offsetHeight
+      }
+
+    }
+
   }
 
   handleMoveDown = () => {
-    const { focusedValue } = this.state;
-    const { name } = this.props;
+    const { focusedValue, values } = this.state;
+    const { name, title, options, valueToShow, showCheckbox } = this.props;
     const parent = document.getElementById("options-"+name);
-    const item = parent.firstElementChild;
-    // i.e. 4 = 5th box
-    if (focusedValue >= 4) {
-      parent.scrollTop += item.offsetHeight
+    const hasTitles = this.countTitles() > 0
+
+    let item;
+    let titleItem;
+
+    if (hasTitles) {
+      item = parent.children[1]
+      titleItem = parent.firstElementChild
+    } else {
+      item = parent.firstElementChild;
+
+      // i.e. 4 = 5th box
+      if (focusedValue >= 4) {
+        parent.scrollTop += item.offsetHeight
+        return
+      }
     }
+
+    if (focusedValue >= 4) {
+
+      if (showCheckbox != true) {
+        if (values.indexOf(options[focusedValue + 1][valueToShow]) != -1) {
+          return
+        }
+      }
+
+      //check if next item is title
+      if (options[focusedValue + 1]["isTitle"] === true) {
+        parent.scrollTop += (titleItem.offsetHeight + (item.offsetHeight * 1.75))
+      } else {
+        parent.scrollTop += item.offsetHeight
+      }
+
+    }
+
   }
 
   countTitles = () => {
@@ -793,7 +909,7 @@ class SelectBox extends React.Component {
 
   renderOptions() {
     const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name } = this.props
-        const { isOpen, values, focusedValue } = this.state;
+    const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
       return;
@@ -889,7 +1005,6 @@ class SelectBox extends React.Component {
     const { handleChange, required, name } = this.props;
     const { isOpen, isFocused } = this.state;
 
-    console.log("render")
     return (
       <React.Fragment>
         <div
