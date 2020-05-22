@@ -21,6 +21,10 @@ svg {
   line-height: 14px;
   padding: 5px 10px;
 }
+.select-placeholder.onClick{
+  font-size: 12px;
+  color: #4e4ed6;
+}
 .arrow {
   position: absolute;
   top: 5px;
@@ -55,7 +59,13 @@ svg {
   overflow-y: auto;
   overflow-x: hidden;
 }
-
+/*#options-selectInd::before{
+  content: "You can edit these later";
+  color: #d4d4d4;
+  font-size: 12px;
+  margin-bottom: 20px;
+  display: inline-block;
+}*/
 .options.showDetail{
   max-height: calc(5 * 50px);
 }

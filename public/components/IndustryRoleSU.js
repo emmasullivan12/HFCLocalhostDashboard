@@ -223,13 +223,14 @@ class IndustryRoleSU extends React.Component {
                   options={industryOptions}
                   name='selectInd'
                   placeholder='Select Industry(s):'
+                  placeholderOnClick='You can edit these later'
                   handleChange={this.handleIndChange}
                   handleTabPress={this.handleTabPress}
                   focusOnLoad
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showIcon
                   iconToShow='icon'
-                //  showCheckbox
+                  showCheckbox
                   required
                 />
               </div>

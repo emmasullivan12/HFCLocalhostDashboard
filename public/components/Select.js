@@ -20,8 +20,8 @@ class SelectBox extends React.Component {
     this.state = {
       values: [],
       focusedValue: -1,
-      hoveredValue: -1,
-      canResetHoverVal: '',
+    //  hoveredValue: -1,
+    //  canResetHoverVal: '',
       isFocused: false,
       isOpen: false,
       numSelected: 0,
@@ -277,7 +277,7 @@ class SelectBox extends React.Component {
     });
   }
 
-  onHoverOption = (e) => {
+/*  onHoverOption = (e) => {
 //    e.persist()
     const {options, valueToShow} = this.props;
     const currentTarget = e.currentTarget
@@ -303,11 +303,10 @@ class SelectBox extends React.Component {
   }
 
   onMouseMove = (e) => {
-    console.log("onmousemove triggered")
     this.setState({
       canResetHoverVal: true
     })
-  }
+  }*/
 
   onKeyDown = e => {
     const { isOpen, focusedValue, isFocused } = this.state;
@@ -894,13 +893,13 @@ class SelectBox extends React.Component {
   }
 
   renderValues() {
-    const { placeholder, multiple, showCheckbox, options } = this.props
-    const { values, numSelected } = this.state
+    const { placeholder, placeholderOnClick, multiple, showCheckbox, options } = this.props
+    const { values, numSelected, isOpen } = this.state
 
     if (values.length === 0) {
       return (
-        <div className="select-placeholder" id="select-placeholder">
-          { placeholder }
+        <div className={"select-placeholder"+(isOpen === true ? ' onClick' : '')} id="select-placeholder">
+          { isOpen === true ? placeholderOnClick : placeholder }
         </div>
       )
     }
@@ -957,7 +956,7 @@ class SelectBox extends React.Component {
 
   renderOptions() {
     const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name } = this.props
-    const { isOpen, values, focusedValue, hoveredValue } = this.state;
+    const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
       return;
@@ -967,7 +966,7 @@ class SelectBox extends React.Component {
       <div
         className={(showDetail===true ? 'options showDetail' : 'options noDetail')}
         id={'options-'+name}
-        onMouseMove={this.onMouseMove}
+    //    onMouseMove={this.onMouseMove}
   //      onBlur={this.onMouseOut}
       >
         {options.map((option, index) => {
@@ -1002,7 +1001,7 @@ class SelectBox extends React.Component {
               className += " selected"
             }
           }
-          if (index === focusedValue && hoveredValue != focusedValue) className += " focused"
+          if (index === focusedValue) className += " focused"
           if (showDetail===true) {
             className += " showDetail overflow-ellipsis"
           } else {
@@ -1024,8 +1023,8 @@ class SelectBox extends React.Component {
         //      onFocus={this.onHoverOption} // placeholder as was erroring without this
         //      onMouseOver={this.onHoverOption}
               onClick={this.onClickOption}
-              onFocus={this.onFocus}
-              onMouseOver={this.onHoverOption}
+            //  onFocus={this.onFocus}
+            //  onMouseOver={this.onHoverOption}
             >
               {(showIcon===true && option["icon"] != null) && (
                 <div className={"option-iconContainer " + (showDetail===true ? "showDetail": "noDetail")}>
