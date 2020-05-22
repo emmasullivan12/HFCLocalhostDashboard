@@ -137,7 +137,7 @@ class TypeformSignUp extends Component {
       isGeneralError: '',
       step: 'didEdu', // set to did1stSU when first loaded
       userEduName: '',
-      country: '',
+      country: 'GBR',
       eetStatus: '',
       schName: '',
       schNameFreeText: '',

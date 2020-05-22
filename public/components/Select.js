@@ -20,6 +20,8 @@ class SelectBox extends React.Component {
     this.state = {
       values: [],
       focusedValue: -1,
+      hoveredValue: -1,
+      canResetHoverVal: '',
       isFocused: false,
       isOpen: false,
       numSelected: 0,
@@ -34,6 +36,7 @@ class SelectBox extends React.Component {
     }
   //  this.heightCalc()
     if (handleTabPress) {
+      console.log("about to set tbrepss to false")
       handleTabPress(false);
     }
   }
@@ -50,9 +53,7 @@ class SelectBox extends React.Component {
   }
 
   onBlur = (e) => {
-    console.log("on blur triggered")
-    console.log("e.target")
-    console.log(e.target)
+    console.log("ONBLUR triggered")
 
     const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
 
@@ -63,9 +64,11 @@ class SelectBox extends React.Component {
       if (multiple) {
 
         if (values.length != 0) {
-          finMultiOptions()
+          if (finMultiOptions) {
+            finMultiOptions()
+          }
         }
-        handleChange(values, true)
+        handleChange(values)
 
         if(!required || required && values[0] != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -83,9 +86,12 @@ class SelectBox extends React.Component {
         }
       } else {
         if (values.length === 0) {
-          finMultiOptions()
+        /*  if (finMultiOptions) {
+            finMultiOptions()
+          }*/
           return {
             isOpen: false,
+            isFocused: false,
           }
         }
         const value = values[0];
@@ -95,8 +101,6 @@ class SelectBox extends React.Component {
         if (value) {
           focusedValue = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
         }
-
-        handleChange(values, false)
 
         if(!required || required && value != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -117,12 +121,9 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
-    console.log("onclick gets triggered")
-    console.log("e.target: "+e.target)
-    console.log(e.target)
+    console.log("ONCLICK gets triggered")
 
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
-      console.log("gets here inonclick")
       return
     }
     const { handleFocus, multiple, finMultiOptions, options, showCheckbox } = this.props;
@@ -147,14 +148,16 @@ class SelectBox extends React.Component {
     }
 
     if (multiple && currentState === true && values.length != 0) {
-      finMultiOptions()
+      if (finMultiOptions) {
+        finMultiOptions()
+      }
     }
 
     this.setState({
       isOpen: !currentState,
 //      elementIdFocused: document.activeElement.id
     }, () => {
-      if (this.state.isOpen === true) {
+      if (this.state.isOpen === true && this.countTitles() > 0) {
         this.heightCalc()
       }
     })
@@ -207,7 +210,7 @@ class SelectBox extends React.Component {
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
 
     if (!multiple) {
-      handleChange(e.currentTarget.dataset.id, false);
+      handleChange(e.currentTarget.dataset.id);
     }
 
     this.setState(prevState => {
@@ -233,13 +236,13 @@ class SelectBox extends React.Component {
       } else {
         values.splice(index, 1)
       }
-      console.log("here 0")
-      handleChange(values, true)
-      console.log("here 1")
+      handleChange(values)
 
       if (values.length === (options.length - this.countTitles())) {
         console.log("finMultiOptions about to launch")
-        finMultiOptions()
+        if (finMultiOptions) {
+          finMultiOptions()
+        }
         if(!required || required && value != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
@@ -255,18 +258,14 @@ class SelectBox extends React.Component {
         }
 
       } else {
-        console.log("here 2")
         if(!required || required && value != null) {
-          console.log("here 3")
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
             otherValidityChecks()
           }
         } else {
-          console.log("here 4")
           document.getElementById("selectBox-"+name).classList.add('error')
         }
-        console.log("continues here")
 
         return {
           numSelected: values.length,
@@ -278,13 +277,46 @@ class SelectBox extends React.Component {
     });
   }
 
+  onHoverOption = (e) => {
+//    e.persist()
+    const {options, valueToShow} = this.props;
+    const currentTarget = e.currentTarget
+
+    this.setState(prevState => {
+      if (prevState.canResetHoverVal === true) {
+
+        if (currentTarget.dataset.id.indexOf("title") != -1) {
+          return
+        }
+
+        const hasMultipleAttributes = this.checkMultipleAttributes();
+        const value = currentTarget.dataset.text;
+        const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
+
+        return {
+          focusedValue: index,
+          hoveredValue: index,
+          canResetHoverVal: false
+        }
+      } else return
+    })
+  }
+
+  onMouseMove = (e) => {
+    console.log("onmousemove triggered")
+    this.setState({
+      canResetHoverVal: true
+    })
+  }
+
   onKeyDown = e => {
     const { isOpen, focusedValue, isFocused } = this.state;
-    const { handleChange, handleTabPress, options, multiple, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks } = this.props;
+    const { handleChange, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key
     if (e.keyCode === 13) {
+      console.log("on enter")
       e.preventDefault();
 
       this.setState(prevState => {
@@ -302,7 +334,7 @@ class SelectBox extends React.Component {
             isOpen: true
           }
         } else {
-
+          console.log("focusedValue: "+focusedValue)
           if (multiple) {
             this.setState(prevState => {
               const { focusedValue } = prevState
@@ -327,7 +359,9 @@ class SelectBox extends React.Component {
                 const noMoreOptions = (values.length === (options.length - this.countTitles())) && showCheckbox != true
 
                 if (noMoreOptions) {
-                  finMultiOptions()
+                  if (finMultiOptions) {
+                    finMultiOptions()
+                  }
                   if(!required || required && value != null) {
                     document.getElementById("selectBox-"+name).classList.remove('error')
                     if (otherValidityChecks) {
@@ -373,11 +407,12 @@ class SelectBox extends React.Component {
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
-            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], false);
+            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
 
             if (otherValidityChecks) {
               otherValidityChecks();
             }
+            console.log("gets here")
 
             return {
               values: [ value ],
@@ -385,8 +420,11 @@ class SelectBox extends React.Component {
               isOpen: false,
             }
           } else {
+            console.log("gets hereeeeeee")
             if (prevState.values.length === 0) {
-              finMultiOptions()
+              if (finMultiOptions) {
+                finMultiOptions()
+              }
               return {
                 isOpen: false,
               }
@@ -399,7 +437,9 @@ class SelectBox extends React.Component {
 
     // User pressed the tab key
     else if (e.keyCode === 9) {
-
+      if (isLastChild != undefined) {
+        e.preventDefault()
+      }
       this.setState(prevState => {
         let { focusedValue } = prevState
         if (!isOpen) {
@@ -430,7 +470,9 @@ class SelectBox extends React.Component {
                 }
 
                 if (values.length === (options.length - this.countTitles())) {
-                  finMultiOptions()
+                  if (finMultiOptions) {
+                    finMultiOptions()
+                  }
                   if(!required || required && value != null) {
                     document.getElementById("selectBox-"+name).classList.remove('error')
                     if (otherValidityChecks) {
@@ -469,8 +511,10 @@ class SelectBox extends React.Component {
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
       //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], false);
-            handleTabPress(true);
+            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            if (handleTabPress) {
+              handleTabPress(true);
+            }
             return {
               values: [ value ],
               focusedValue: index,
@@ -802,17 +846,21 @@ class SelectBox extends React.Component {
   }
 
   heightCalc = (needValue) => {
-    const {options, name} = this.props
+    const {options, name, showCheckbox} = this.props
 
     let containerHeight = 0;
 
+    const length = options.length
     // Makes container the height of the first 5 items
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < Math.min(6, length); i++) {
       if (options[i]["isTitle"] === true) {
         containerHeight += 40
       } else {
-        containerHeight +=
-        32
+        if (showCheckbox === true) {
+          containerHeight += 32
+        } else {
+          containerHeight += 40
+        }
       }
     }
     if (needValue) {
@@ -909,7 +957,7 @@ class SelectBox extends React.Component {
 
   renderOptions() {
     const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name } = this.props
-    const { isOpen, values, focusedValue } = this.state;
+    const { isOpen, values, focusedValue, hoveredValue } = this.state;
 
     if (!isOpen) {
       return;
@@ -919,6 +967,8 @@ class SelectBox extends React.Component {
       <div
         className={(showDetail===true ? 'options showDetail' : 'options noDetail')}
         id={'options-'+name}
+        onMouseMove={this.onMouseMove}
+  //      onBlur={this.onMouseOut}
       >
         {options.map((option, index) => {
           const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -952,7 +1002,7 @@ class SelectBox extends React.Component {
               className += " selected"
             }
           }
-          if (index === focusedValue) className += " focused"
+          if (index === focusedValue && hoveredValue != focusedValue) className += " focused"
           if (showDetail===true) {
             className += " showDetail overflow-ellipsis"
           } else {
@@ -974,6 +1024,8 @@ class SelectBox extends React.Component {
         //      onFocus={this.onHoverOption} // placeholder as was erroring without this
         //      onMouseOver={this.onHoverOption}
               onClick={this.onClickOption}
+              onFocus={this.onFocus}
+              onMouseOver={this.onHoverOption}
             >
               {(showIcon===true && option["icon"] != null) && (
                 <div className={"option-iconContainer " + (showDetail===true ? "showDetail": "noDetail")}>

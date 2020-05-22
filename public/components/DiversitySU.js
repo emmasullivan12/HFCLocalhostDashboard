@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import SelectBox from './Select.js';
-import Autocomplete from './Autocomplete.js';
 import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 
@@ -93,10 +92,11 @@ class DiversitySU extends React.Component {
   canBeSubmitted() {
     const {hurdles, schType, gender, ethnicity} = this.state;
 
-    if (hurdles.length != 0 && schType != "" && gender != '' && ethnicity != "") {
+    if (hurdles.length != 0 && schType != '' && gender != '' && ethnicity != '') {
       const form = document.getElementById("form-DiversityShortSU");
 
       if (form.checkValidity()) {
+    //    document.getElementById("Submit-btn-eth").focus()
         return true;
       } else {
         return false;
@@ -112,38 +112,38 @@ class DiversitySU extends React.Component {
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const uKschAttendedList = [
-      {value: 0, label: 'State-run/funded school', detail: ''},
-      {value: 1, label: 'Independent or fee-paying school ', detail: 'with bursary'},
-      {value: 2, label: 'Independent or fee-paying school', detail: 'no bursary'},
-      {value: 3, label: 'Home-schooled', detail: ''},
-      {value: 4, label: 'Prefer not to say', detail: ''}
+      {value: '0', label: 'State-run/funded school', detail: ''},
+      {value: '1', label: 'Independent or fee-paying school ', detail: 'with bursary'},
+      {value: '2', label: 'Independent or fee-paying school', detail: 'no bursary'},
+      {value: '3', label: 'Home-schooled', detail: ''},
+      {value: '4', label: 'Prefer not to say', detail: ''}
     ];
 
     const schAttendedList = [
-      {value: 0, label: 'Public school/state-funded (selective)', detail: ''},
-      {value: 1, label: 'Private or fee-paying school ', detail: 'with scholarship'},
-      {value: 2, label: 'Private or fee-paying school', detail: 'no scholarship'},
-      {value: 3, label: 'Home-schooled', detail: ''},
-      {value: 4, label: 'Prefer not to say', detail: ''}
+      {value: '0', label: 'Public school/state-funded (selective)', detail: ''},
+      {value: '1', label: 'Private or fee-paying school ', detail: 'with scholarship'},
+      {value: '2', label: 'Private or fee-paying school', detail: 'no scholarship'},
+      {value: '3', label: 'Home-schooled', detail: ''},
+      {value: '4', label: 'Prefer not to say', detail: ''}
     ];
 
     const genders = [
-      {value: 0, label: 'Male', icon: 'https://images.typeform.com/images/8ht36QbibjJJ/image/default'},
-      {value: 1, label: 'Female', icon: 'https://images.typeform.com/images/c6BWgrhxrj3d/image/default'},
-      {value: 2, label: 'Non-binary', icon: 'https://images.typeform.com/images/nnGsJVx2JgGJ/image/default'},
-      {value: 3, label: 'Prefer not to say', icon: 'https://images.typeform.com/images/tsrEVrcRyMjR/image/default'}
+      {value: '0', label: 'Male', icon: 'https://images.typeform.com/images/8ht36QbibjJJ/image/default'},
+      {value: '1', label: 'Female', icon: 'https://images.typeform.com/images/c6BWgrhxrj3d/image/default'},
+      {value: '2', label: 'Non-binary', icon: 'https://images.typeform.com/images/nnGsJVx2JgGJ/image/default'},
+      {value: '3', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/tsrEVrcRyMjR/image/default'}
     ];
 
     const ethnicities = [
-      {value: 0, label: 'Asian'},
-      {value: 1, label: 'Arab'},
-      {value: 2, label: 'Black / African / Caribbean'},
-      {value: 3, label: 'Hispanic / Latinx'},
-      {value: 4, label: 'Indian / Pakistani'},
-      {value: 5, label: 'Mixed / Multiple Ethnic Groups'},
-      {value: 6, label: 'White'},
-      {value: 7, label: 'Other'},
-      {value: 8, label: 'Prefer not to say'}
+      {value: '0', label: 'Asian'},
+      {value: '1', label: 'Arab'},
+      {value: '2', label: 'Black / African / Caribbean'},
+      {value: '3', label: 'Hispanic / Latinx'},
+      {value: '4', label: 'Indian / Pakistani'},
+      {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+      {value: '6', label: 'White'},
+      {value: '7', label: 'Other'},
+      {value: '8', label: 'Prefer not to say'}
     ];
 
     const isEnabled = this.canBeSubmitted();
@@ -175,23 +175,25 @@ class DiversitySU extends React.Component {
                 />
               </div>
               {(hurdles.length > 0 || editingHurdles != '') && (
-                <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' || 'country' === 'IRL' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
-                  <SelectBox
-                    options={country === 'GBR' || 'country' === 'IRL' ? uKschAttendedList : schAttendedList}
-                    name='selectSchType'
-                    placeholder={'Select ' + (country === 'GBR' ? 'school' : 'high-school') + ' type:'}
-                    handleChange={this.handleSchTypeChange}
-                    handleTabPress={this.handleTabPress}
-            //        focusOnLoad
-                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                    showDetail
-                    detailToShow='detail'
-                    required
-                  />
-                </div>
+                <React.Fragment>
+                  <div className="form-group">
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' || 'country' === 'IRL' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
+                    <SelectBox
+                      options={country === 'GBR' || 'country' === 'IRL' ? uKschAttendedList : schAttendedList}
+                      name='selectSchType'
+                      placeholder={'Select ' + (country === 'GBR' ? 'school' : 'high-school') + ' type:'}
+                      handleChange={this.handleSchTypeChange}
+                      handleTabPress={this.handleTabPress}
+              //        focusOnLoad
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      showDetail
+                      detailToShow='detail'
+                      required
+                    />
+                  </div>
+                </React.Fragment>
               )}
-              {(schType != "") && (
+              {schType != '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectGender">What&#39;s your <strong>gender</strong>?</label>
                   <SelectBox
@@ -200,7 +202,7 @@ class DiversitySU extends React.Component {
                     placeholder='Select gender:'
                     handleChange={this.handleGenChange}
                     handleTabPress={this.handleTabPress}
-                    focusOnLoad
+                    focusOnLoad={tabPressed ? false : true}
                     showIcon
                     iconToShow='icon'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -217,16 +219,17 @@ class DiversitySU extends React.Component {
                     placeholder='Select ethnicity:'
                     handleChange={this.handleEthChange}
                     handleTabPress={this.handleTabPress}
-                    focusOnLoad
+                    focusOnLoad={tabPressed ? false : true}
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                    isLastChild
                     required
                   />
                 </div>
               )}
               {ethnicity != '' && (
-                <React.Fragment>
+               <React.Fragment>
                   <div className="neutralText textLeft paddingBtm">
-                    We use this information to support equality of opportunities for our mentees, and are serious about safeguarding your personal data as per our <a className="legal-href" href="https://prospela.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                    We use this information to support equality of opportunities for our mentees, and are serious about safeguarding your personal data as per our <a tabIndex="-1" className="legal-href" href="https://prospela.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
                   </div>
                   <div className="neutralText textLeft paddingBtm">
                     By clicking &#34;Next&#34;, you consent us to use your responses for this purpose.

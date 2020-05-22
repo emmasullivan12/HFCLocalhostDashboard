@@ -12,6 +12,14 @@ class RatingItems extends Component {
     }
   }
 
+  componentDidMount(){
+    const { handleTabPress} = this.props;
+    if (handleTabPress) {
+      handleTabPress(false);
+    }
+  }
+
+
   onBlur = (e) => {
     if (e.currentTarget.id === 'ratingsContainer') {
       this.setState({
@@ -77,7 +85,7 @@ class RatingItems extends Component {
   }
 
   render() {
-    const {ratingOutOf, ratingIconImg} = this.props
+    const {ratingOutOf, ratingIconImg, focusOnLoad} = this.props
     const {indexChecked, indexHovered} = this.state
     var ratings = [];
 
@@ -90,6 +98,7 @@ class RatingItems extends Component {
             type="radio"
             onKeyDown={this.onKeyDown}
             value={i+1}
+            autoFocus={focusOnLoad === false ? false : i===0 ? true : false}
           />
           <div className="ratingItem" >
             <div className="ratingIcon">

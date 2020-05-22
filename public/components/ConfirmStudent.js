@@ -7,7 +7,7 @@ import "../css/General.css";
 
 import ProgressCircles from './ProgressCircles.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
-import Autocomplete from './Autocomplete.js';
+//import Autocomplete from './Autocomplete.js';
 import Checkbox from './Checkbox.js';
 import NoEduEmail from './NoEduEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';

@@ -135,7 +135,6 @@ svg {
 .option.lastItem {
   border-bottom: none;
 }
-
 .option:hover {
   background-color: #e9e9e9;
 }
@@ -176,7 +175,10 @@ svg {
   display: none
 }
 .option.focused {
-  background: #e9e9e9;
+/*  background: #e9e9e9;*/
+  background-color: #351c75 !important;
+  color: #ffffff;
+  cursor: pointer;
 }
 .option.title.focused {
   background: transparent!important;

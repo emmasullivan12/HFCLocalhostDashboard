@@ -773,44 +773,36 @@ class EduShortSU extends React.Component {
               {eetStatusLocal === 'job' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">Who do you currently work for?</label>
-                  <input
-                    //tabIndex='1'
-                    type="text"
+                  <TextInput
                     name="currCo"
                     id="currCoInput"
-                    onBlur={this.onBlur}
-                    onChange={this.handleJobChange}
-                    onKeyUp={this.handleKeyUp}
-                    className="form-control-std"
                     placeholder="Company"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    spellCheck="off"
-                    maxLength="50"
-                    autoFocus
+                    className="form-control-std"
                     required
+                    handleChange={this.handleJobChange}
+                    handleKeyUp={this.handleKeyUp}
+                    handleTabPress={this.handleTabPress}
+                    onBlur={this.onBlur}
+                    focusOnLoad={tabPressed ? false : true}
+                    maxLength="50"
                   />
                 </div>
               )}
               {eetStatusLocal === 'train' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="currTrainingProvider">Who is your training provider?</label>
-                  <input
-                    //tabIndex='1'
-                    type="text"
+                  <TextInput
                     name="currTrainingProvider"
                     id="currTrainingProviderInput"
-                    onBlur={this.onBlur}
-                    onChange={this.handleTrainChange}
-                    onKeyUp={this.handleKeyUp}
-                    className="form-control-std"
                     placeholder="Training Provider"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    spellCheck="off"
-                    maxLength="50"
-                    autoFocus
+                    className="form-control-std"
                     required
+                    handleChange={this.handleTrainChange}
+                    handleKeyUp={this.handleKeyUp}
+                    handleTabPress={this.handleTabPress}
+                    onBlur={this.onBlur}
+                    focusOnLoad={tabPressed ? false : true}
+                    maxLength="50"
                   />
                 </div>
               )}

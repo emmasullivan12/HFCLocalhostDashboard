@@ -2,9 +2,6 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-//import '../css/Camera.css';
-//import '../css/General.css';
-//import '../css/Autocomplete.css';
 
 class TextInput extends React.Component {
   constructor(props) {
@@ -12,14 +9,17 @@ class TextInput extends React.Component {
   }
 
   componentDidMount(){
-    const { focusOnLoad, id } = this.props
+    const { focusOnLoad, id, handleTabPress } = this.props
     if (focusOnLoad) {
       document.getElementById(id).focus();
+    }
+    if (handleTabPress) {
+      handleTabPress(false);
     }
   }
 
   render() {
-    const { onChange } = this;
+//    const { onChange } = this;
     const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, maxLength } = this.props;
 
     return (
