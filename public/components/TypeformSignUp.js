@@ -137,21 +137,16 @@ class TypeformSignUp extends Component {
       isGeneralError: '',
       step: 'didEdu', // set to did1stSU when first loaded
       userEduName: '',
-      country: 'GBR',
+      country: '',
       eetStatus: '',
       schName: '',
       schNameFreeText: '',
       uniName: '',
       uniNameFreeText: '',
       emailToVerify: '',
-      emailType: '',
-      sendForReview: [],
-      reviewReason: [],
       currCo: '',
       currTrainingProvider: ''
     }
-    this.sendForReview = this.sendForReview.bind(this);
-    this.removeFromSendForReview = this.removeFromSendForReview.bind(this);
     this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);
     this.updateEetStatus = this.updateEetStatus.bind(this);
@@ -245,26 +240,6 @@ class TypeformSignUp extends Component {
     }
   }
 
-  sendForReview(itemsToReview, reviewReason) {
-    this.setState(prevState => ({
-      sendForReview: prevState.sendForReview.concat(itemsToReview),
-      reviewReason: prevState.reviewReason.concat(reviewReason)
-    }))
-  }
-
-  removeFromSendForReview(itemsToReview) {
-    if (this.state.sendForReview.length > 0) {
-
-      // Index of both SFR & RR should be the same, so okay to just look up this one
-      var index = this.state.sendForReview.indexOf(itemsToReview);
-
-      this.setState(prevState => ({
-        sendForReview: prevState.sendForReview.filter((_,i) => i !==index),
-        reviewReason: prevState.reviewReason.filter((_,i) => i !==index)
-      }))
-    }
-  }
-
   updateStep(stepJustDone, updatingEdu) {
     if (stepJustDone === 'didCountry') {
       this.setState({
@@ -313,14 +288,18 @@ class TypeformSignUp extends Component {
     } else if (stepJustDone === 'didEduEmail' && updatingEdu === true) {
       this.setState({
         step: 'updatingEdu', // User wants to go back to update education
-        sendForReview: [],
-        reviewReason: [],
       })
       return;
 
     } else if (stepJustDone === 'didEduEmail' && updatingEdu != true) {
       this.setState({
         step: 'didEduEmail'
+      })
+      return;
+
+    } else if (stepJustDone === 'didEduEmailNeedsRev') {
+      this.setState({
+        step: 'didEduEmailNeedsRev'
       })
       return;
 
@@ -417,30 +396,19 @@ class TypeformSignUp extends Component {
     })
   }
 
-  updateEduEmail(userInput, emailType, callback) {
-    if (emailType === 'sch') {
-      this.setState({
-        emailToVerify: userInput,
-        emailType: 'sch'
-      }, () => {
-        if (callback) {
-          callback();
-        }
-      })
-    } else if (emailType === 'personal'){
+  updateEduEmail(userInput, callback) {
+    if (userInput === 'personal') {
       const personalEmail = 'personal@gmail.com' //DEX TO PULL IN PERSONAL EMAIL FROM HTML SIGNUP PAGE
       this.setState({
-        emailToVerify: personalEmail,
-        emailType: 'personal'
+        emailToVerify: personalEmail
       }, () => {
         if (callback) {
           callback();
         }
       })
-    } else if (emailType === 'prof'){
+    } else {
       this.setState({
-        emailToVerify: userInput,
-        emailType: 'prof'
+        emailToVerify: userInput
       }, () => {
         if (callback) {
           callback();
@@ -450,7 +418,7 @@ class TypeformSignUp extends Component {
   }
 
   render() {
-    const {isGeneralError, isLoading, step, country, userEduName, emailType, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify, sendForReview} = this.state;
+    const {isGeneralError, isLoading, step, country, userEduName, emailType, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify} = this.state;
     const userRole = 'mentee';
     const totalMenteeSteps = 5;
     const totalMentorSteps = 2;
@@ -496,7 +464,6 @@ class TypeformSignUp extends Component {
                 updateCurrCo={this.updateCurrCo}
                 updateCurrTrainingProv={this.updateCurrTrainingProv}
                 updateStep={this.updateStep}
-                sendForReview={this.sendForReview}
               />
             </SignUpScreenTemplate>
           );
@@ -541,8 +508,6 @@ class TypeformSignUp extends Component {
                   userEduName={userEduName}
                   updateStep={this.updateStep}
                   updateEduEmail={this.updateEduEmail}
-                  sendForReview={this.sendForReview}
-                  removeFromSendForReview={this.removeFromSendForReview}
                   currCo={currCo}
                   currTrainingProvider={currTrainingProvider}
                 />
@@ -550,14 +515,13 @@ class TypeformSignUp extends Component {
             )
           );
         case 'didEduEmail':
+        case 'didEduEmailNeedsRev':
           return (
             <SignUpScreenTemplate {...MenteeSU6Props(emailToVerify)}>
               <VerifyEmail
                 step={step}
                 updateStep={this.updateStep}
                 emailToVerify={emailToVerify}
-                sendForReview={sendForReview}
-                removeFromSendForReview={this.removeFromSendForReview}
               />
             </SignUpScreenTemplate>
           );

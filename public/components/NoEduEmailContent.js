@@ -99,7 +99,6 @@ class NoEduEmailContent extends Component {
     document.getElementById("Submit-btn-noEduEmail").focus();
   }
 
-
   handleEmailChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
@@ -118,16 +117,15 @@ class NoEduEmailContent extends Component {
       e.preventDefault ();
       return;
     } else {
-      const { handleNoEduEmail, sendForReview, updateStep } = this.props;
+      const { handleNoEduEmail, updateStep } = this.props;
       const { emailInput } = this.state;
-      console.log("noeduemailcontent handle submit triggered")
-      sendForReview('other details/currentSitu', 'no eduEmail')
+
       if (emailInput != '') {
-        handleNoEduEmail(emailInput,'prof')
+        handleNoEduEmail(emailInput)
       } else {
-        handleNoEduEmail('','personal')
+        handleNoEduEmail('personal')
       }
-      updateStep('didEduEmail', false)
+      updateStep('didEduEmailNeedsRev', false)
       this.setState({
         messageFromServer: 'We are sending your deets to Prospela!'
       });

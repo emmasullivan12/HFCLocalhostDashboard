@@ -52,6 +52,7 @@ class EduShortSU extends React.Component {
     this.handleUniChange = this.handleUniChange.bind(this);
     this.handleUniYrChange = this.handleUniYrChange.bind(this);
     this.handleUniGradYrChange = this.handleUniGradYrChange.bind(this);
+    this.handlePgGradYrChange = this.handlePgGradYrChange.bind(this);
     this.handleJobChange = this.handleJobChange.bind(this);
     this.handleTrainChange = this.handleTrainChange.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
@@ -63,6 +64,8 @@ class EduShortSU extends React.Component {
   }
 
   onBlur(e) {
+    console.log("e.target onblur")
+    console.log(e.target)
     if(e.target.checkValidity()) {
       e.target.classList.remove('error');
     } else {
@@ -159,8 +162,6 @@ class EduShortSU extends React.Component {
       schNameFreeTextLocal: '',
       schNameUpdated: true,
       schNameIsValid: isValid,
-      requestReview: false,
-      reviewReason: ''
     })
   }
 
@@ -178,8 +179,6 @@ class EduShortSU extends React.Component {
       schNameLocal: '',
       schNameFreeTextUpdated: true,
       schNameIsValid: isValid,
-      requestReview: true,
-      reviewReason: "is sch free text"
     })
   }
 
@@ -210,8 +209,6 @@ class EduShortSU extends React.Component {
       uniNameFreeTextLocal: '',
       uniNameUpdated: true,
       uniNameIsValid: isValid,
-      requestReview: false,
-      reviewReason: ''
     })
   }
 
@@ -229,8 +226,6 @@ class EduShortSU extends React.Component {
       uniNameLocal: '',
       uniNameFreeTextUpdated: true,
       uniNameIsValid: isValid,
-      requestReview: true,
-      reviewReason: "is uni free text"
     })
   }
 
@@ -239,15 +234,28 @@ class EduShortSU extends React.Component {
       uniYrGrp: userInput,
     });
 
-    const courseLength = this.state.courseLength;
+    if (userInput != 'pg') {
+      const courseLength = this.state.courseLength;
 
-    if (courseLength != '') {
-      const isValid = (userInput === 'pg' || courseLength >= userInput) ? true : false;
+      if (courseLength != '') {
+        const isValid = (courseLength >= userInput) ? true : false;
+        this.setState({
+          uniGraduYr: setUniGraduYr(userInput, courseLength),
+          uniGraduYrIsValid: isValid
+        });
+      } else {
+        this.setState({
+          uniGraduYr: '',
+          uniGraduYrIsValid: false
+        });
+      }
+    } else {
       this.setState({
-        uniGraduYr: setUniGraduYr(userInput, courseLength),
-        uniGraduYrIsValid: isValid
+        uniGraduYr: '',
+        uniGraduYrIsValid: false
       });
     }
+
   }
 
   handleUniGradYrChange(userInput) {
@@ -262,12 +270,24 @@ class EduShortSU extends React.Component {
     const uniYrGrp = this.state.uniYrGrp;
 
     if (uniYrGrp != '') {
-      const isValid = (uniYrGrp === 'pg' || userInput >= uniYrGrp) ? true : false;
+      const isValid = (userInput >= uniYrGrp) ? true : false;
       this.setState({
         uniGraduYr: setUniGraduYr(uniYrGrp, userInput),
         uniGraduYrIsValid: isValid
       });
     }
+  }
+
+  handlePgGradYrChange(userInput) {
+    const isValid = userInput != '' ? true : false;
+    this.setState({
+      uniGraduYr: userInput,
+      uniGraduYrIsValid: isValid
+    }, () => {
+      if (this.state.submitted != true) {
+        document.getElementById("Submit-btn-Edu").focus()
+      }
+    });
   }
 
   handleTabPress(tabPressed) {
@@ -280,9 +300,9 @@ class EduShortSU extends React.Component {
 
   // Passed on to be used within Select.js onBlur & onClickOption events
   otherValidityChecks() {
-    const { selectBoxFocused, courseLength } = this.state;
-    if (selectBoxFocused === "selectBox-uniYrGrp" || selectBoxFocused === "selectBox-uniLength") {
-      if (courseLength === '') {
+    const { selectBoxFocused, courseLength, pgGraduYr } = this.state;
+    if (selectBoxFocused === "selectBox-uniYrGrp" || selectBoxFocused === "selectBox-uniLength" || selectBoxFocused === "selectBox-pgGraduYr") {
+      if (courseLength === '' || pgGraduYr != '') {
         document.getElementById("selectBox-uniYrGrp").classList.remove('error');
       } else {
         if (this.state.uniGraduYrIsValid === true) {
@@ -297,8 +317,8 @@ class EduShortSU extends React.Component {
   }
 
   handleSubmit(e) {
-    const {step, updateStep, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv, sendForReview} = this.props;
-    const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal, requestReview, reviewReason} = this.state;
+    const {step, updateStep, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv} = this.props;
+    const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal, } = this.state;
 
     if (step === "updatingEdu") {
       updateEetStatus(eetStatusLocal)
@@ -313,9 +333,6 @@ class EduShortSU extends React.Component {
           })
         } else {
 
-          if (requestReview === true) {
-            sendForReview('schName', reviewReason)
-          }
           this.setState({
             submitted: true
           })
@@ -334,9 +351,6 @@ class EduShortSU extends React.Component {
           })
         } else {
 
-          if (requestReview === true) {
-            sendForReview('uniName', reviewReason)
-          }
           this.setState({
             submitted: true
           })
@@ -380,9 +394,6 @@ class EduShortSU extends React.Component {
             updateStep('didEdu');
           })
         } else {
-          if (requestReview === true) {
-            sendForReview('schName', reviewReason)
-          }
           this.setState({
             submitted: true
           })
@@ -400,9 +411,6 @@ class EduShortSU extends React.Component {
             updateStep('didEdu');
           })
         } else {
-          if (requestReview === true) {
-            sendForReview('uniName', reviewReason)
-          }
           this.setState({
             submitted: true
           })
@@ -453,7 +461,7 @@ class EduShortSU extends React.Component {
           }
 
         } else if (eetStatusLocal === 'uni') {
-          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && courseLength != '' && uniGraduYrIsValid) {
+          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && (uniYrGrp != 'pg' ? courseLength != '': true) && uniGraduYrIsValid) {
             return true;
           } else {
             return false;
@@ -499,7 +507,7 @@ class EduShortSU extends React.Component {
   render() {
 
   const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
-  const { country, eetStatus, tflink, step, currentStep, totalMenteeSteps, sendForReview } = this.props;
+  const { country, eetStatus, tflink, step, currentStep, totalMenteeSteps } = this.props;
 
   const eetStatusUKOptions = [
     {value: 'sch', label: 'I\'m at School / Sixth Form / College'},
@@ -550,6 +558,32 @@ class EduShortSU extends React.Component {
     {value: '7', label: '7 years'},
     {value: '8', label: '8 years'},
   ]
+
+  function pgGradYrs() {
+    var d = new Date();
+    var year = d.getFullYear();
+    var month = d.getMonth();
+
+    let startYr;
+
+    if (month <= 7) {
+      startYr = year;
+    } else {
+      startYr = year + 1;
+    }
+
+    const secYr = startYr + 1;
+    const trdYr = startYr + 2;
+    const fthYr = startYr + 3;
+
+    const pgGradYrs = [
+      {value: startYr, label: 'Class of '+startYr},
+      {value: secYr, label: 'Class of '+secYr},
+      {value: trdYr, label: 'Class of '+trdYr},
+      {value: fthYr, label: 'Class of '+fthYr},
+    ]
+    return pgGradYrs
+  }
 
   const isEnabled = this.canBeSubmitted();
 
@@ -746,12 +780,12 @@ class EduShortSU extends React.Component {
                       required
                     />
                   </div>
-                  {uniGraduYrIsValid === false && courseLength != '' && (
+                  {uniGraduYrIsValid === false && uniYrGrp != 'pg' && courseLength != '' && (
                     <div className="descriptor prompt error eduForm alignLeft">Year group can&#39;t be greater than course length</div>
                   )}
                 </React.Fragment>
               )}
-              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp != '' && (
+              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg'&& (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And how long is your course?</label>
@@ -764,6 +798,25 @@ class EduShortSU extends React.Component {
                       handleFocus={this.handleFocus}
                       otherValidityChecks={this.otherValidityChecks}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp != '' && !tabPressed ? true : false}
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
+                    />
+                  </div>
+                </React.Fragment>
+              )}
+              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp === 'pg' && (
+                <React.Fragment>
+                  <div className="form-group">
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And when do you graduate?</label>
+                    <SelectBox
+                      options={pgGradYrs()}
+                      name='pgGraduYr'
+                      placeholder='Select Graduation Year:'
+                      handleChange={this.handlePgGradYrChange}
+                      handleTabPress={this.handleTabPress}
+                      handleFocus={this.handleFocus}
+                  //    otherValidityChecks={this.otherValidityChecks}
+                      focusOnLoad={uniNameIsValid === true && uniYrGrp === 'pg' && !tabPressed ? true : false}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />

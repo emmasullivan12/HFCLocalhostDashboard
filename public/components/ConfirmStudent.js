@@ -28,7 +28,6 @@ class ConfirmStudent extends React.Component {
       emailFormat: '',
       dm: '',
       requestReview: false,
-      reviewReason: '',
       timeout: 0,
       submitted: ''
     }
@@ -134,41 +133,36 @@ class ConfirmStudent extends React.Component {
 
   handleUpdateEdu() {
     const {updateStep} = this.props;
+
     updateStep('didEduEmail', true)
   }
 
-  handleNoEduEmail(emailInput, emailType) {
+  handleNoEduEmail(emailInput) {
     const {updateStep, updateEduEmail} = this.props;
-    updateEduEmail(emailInput, emailType)
+    updateEduEmail(emailInput)
     updateStep('didEduEmail', false)
   }
 
   handleSubmit() {
-    const {requestReview, reviewReason, userInput, eduEmailIsValid} = this.state;
-    const {country, updateStep, sendForReview, updateEduEmail, removeFromSendForReview} = this.props;
+    const {userInput, eduEmailIsValid, requestReview} = this.state;
+    const {country, updateStep, updateEduEmail} = this.props;
 
-    if (requestReview === true) {
-      sendForReview('eduEmail', reviewReason)
-    }
-
-    if (country === 'USA') {
-      if (eduEmailIsValid === true) {
-        const itemToReview = 'uniName'
-        removeFromSendForReview(itemToReview)
-      }
-    }
     this.setState({
       submitted: true
     })
-    updateEduEmail(userInput, 'sch', () => {
-      updateStep('didEduEmail', false)
+    updateEduEmail(userInput, () => {
+      if (requestReview === true) {
+        updateStep('didEduEmailNeedsRev', false)
+      } else {
+        updateStep('didEduEmail', false)
+      }
     })
 
   }
 
   checkEduEmail() {
     const {userInput, emailFormat, dm, eduEmailIsValid} = this.state;
-    const {country, eetStatus, schName, uniName} = this.props;
+    const {country, eetStatus, schName, uniName, schNameFreeText, uniNameFreeText} = this.props;
 
     const freeEmailDomains = ["gmail.com", "hotmail.com"];
     var emailSplit = userInput.split('@')
@@ -256,12 +250,10 @@ class ConfirmStudent extends React.Component {
             if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
               this.setState({
                 requestReview: true,
-                reviewReason: "!match sch format"
               })
             } else {
               this.setState({
                 requestReview: false,
-                reviewReason: ""
               }, () => {
                 if (this.state.submitted != true) {
                   document.getElementById("Submit-btn-eduEmail").focus()
@@ -287,12 +279,10 @@ class ConfirmStudent extends React.Component {
             if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
               this.setState({
                 requestReview: true,
-                reviewReason: "no sch format specified & failed general .ac.uk/.sch.uk check"
               })
             } else {
               this.setState({
                 requestReview: false,
-                reviewReason: ""
               }, () => {
                 if (this.state.submitted != true) {
                   document.getElementById("Submit-btn-eduEmail").focus()
@@ -322,12 +312,10 @@ class ConfirmStudent extends React.Component {
               if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
                 this.setState({
                   requestReview: true,
-                  reviewReason: "!match uni format"
                 })
               } else {
                 this.setState({
                   requestReview: false,
-                  reviewReason: ""
                 }, () => {
                   if (this.state.submitted != true) {
                     document.getElementById("Submit-btn-eduEmail").focus()
@@ -349,12 +337,10 @@ class ConfirmStudent extends React.Component {
               if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
                 this.setState({
                   requestReview: true,
-                  reviewReason: "!match uni format"
                 })
               } else {
                 this.setState({
                   requestReview: false,
-                  reviewReason: ""
                 }, () => {
                   if (this.state.submitted != true) {
                     document.getElementById("Submit-btn-eduEmail").focus()
@@ -380,12 +366,10 @@ class ConfirmStudent extends React.Component {
             if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
               this.setState({
                 requestReview: true,
-                reviewReason: "no uni format specified & failed general .ac.uk check"
               })
             } else {
               this.setState({
                 requestReview: false,
-                reviewReason: ""
               }, () => {
                 if (this.state.submitted != true) {
                   document.getElementById("Submit-btn-eduEmail").focus()
@@ -410,12 +394,10 @@ class ConfirmStudent extends React.Component {
           if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
             this.setState({
               requestReview: true,
-              reviewReason: "eetstatus is job/train/none & failed general .sch.uk/.ac.uk check"
             })
           } else {
             this.setState({
               requestReview: false,
-              reviewReason: ""
             }, () => {
               if (this.state.submitted != true) {
                 document.getElementById("Submit-btn-eduEmail").focus()
@@ -441,12 +423,10 @@ class ConfirmStudent extends React.Component {
           if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
             this.setState({
               requestReview: true,
-              reviewReason: "!match USA .edu format"
             })
           } else {
             this.setState({
               requestReview: false,
-              reviewReason: ""
             }, () => {
               if (this.state.submitted != true) {
                 document.getElementById("Submit-btn-eduEmail").focus()
@@ -468,7 +448,6 @@ class ConfirmStudent extends React.Component {
         }, () => {
           this.setState({
             requestReview: true,
-            reviewReason: "is USA sch and we don't know sch email format"
           }, () => {
             if (this.state.submitted != true) {
               document.getElementById("Submit-btn-eduEmail").focus()
@@ -492,12 +471,10 @@ class ConfirmStudent extends React.Component {
           if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
             this.setState({
               requestReview: true,
-              reviewReason: "is USA job/train/none and !match .edu format"
             })
           } else {
             this.setState({
               requestReview: false,
-              reviewReason: ""
             }, () => {
               if (this.state.submitted != true) {
                 document.getElementById("Submit-btn-eduEmail").focus()
@@ -522,7 +499,6 @@ class ConfirmStudent extends React.Component {
       }, () => {
         this.setState({
           requestReview: true,
-          reviewReason: "is other country and we don't know format"
         }, () => {
           if (this.state.submitted != true) {
             document.getElementById("Submit-btn-eduEmail").focus()
@@ -566,7 +542,7 @@ class ConfirmStudent extends React.Component {
 
   render() {
     const { onChange, onKeyDown, toggleCheckbox, handleKeyUp } = this;
-    const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider, sendForReview, updateEduEmail, updateStep } = this.props;
+    const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep } = this.props;
     const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid } = this.state;
     const isEnabled = this.canBeSubmitted();
 
@@ -613,7 +589,6 @@ class ConfirmStudent extends React.Component {
                     updateStep={updateStep}
                     currCo={currCo}
                     currTrainingProvider={currTrainingProvider}
-                    sendForReview={sendForReview}
                   />
                 </div>
                 {eduEmailIsValid === false && isPersonalEmail === false && (

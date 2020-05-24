@@ -288,6 +288,7 @@ input[type=text]:disabled{
   margin-bottom: 1.5rem;
 }
 
+.descriptor.prompt.autocompleter,
 .descriptor.prompt.indRoleForm,
 .descriptor.prompt.error.eduForm{
   margin-top: -1.5rem;

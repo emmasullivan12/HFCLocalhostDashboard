@@ -31,11 +31,12 @@ class VerifyEmail extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const { verificationCode } = this.state;
-    const {updateStep, sendForReview, country} = this.props;
+    const {updateStep, country, step} = this.props;
+    const needsRev = step === "didEduEmailNeedsRev"
     const submission = {
       token: verificationCode
     };
-    if (sendForReview.length > 0) {
+    if (needsRev === true) {
       updateStep('didEmailVerifNeedsRev')
     } else {
       updateStep('didEmailVerif')
@@ -44,10 +45,7 @@ class VerifyEmail extends React.Component {
   }
 
   handleUpdateEmail() {
-    const {updateStep, removeFromSendForReview} = this.props;
-
-    const itemToReview = 'eduEmail'
-    removeFromSendForReview(itemToReview)
+    const {updateStep} = this.props;
 
     updateStep('didDiversity') // Send them back to update their student email
   }

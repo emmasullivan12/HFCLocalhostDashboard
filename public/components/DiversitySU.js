@@ -165,12 +165,14 @@ class DiversitySU extends React.Component {
                   options={hurdlesList}
                   name='selectHur'
                   placeholder='Select as many as you like:'
+                  placeholderOnClick='Select as many as you like:'
                   handleChange={this.handleHurChange}
                   handleTabPress={this.handleTabPress}
                   focusOnLoad
                   showIcon
                   iconToShow='icon'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                //  showCheckbox
                   required
                 />
               </div>

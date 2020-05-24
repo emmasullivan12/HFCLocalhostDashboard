@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import SelectBox from './Select.js';
-import Autocomplete from './Autocomplete.js';
+import AutocompleteNEW from './AutocompleteNEW.js';
 import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 import RatingItems from './RatingItems.js';
@@ -238,7 +238,11 @@ class IndustryRoleSU extends React.Component {
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">What <strong>career or profession</strong> do you want to work in?</label>
                   <div className="autocompleter">
-                    <Autocomplete
+                    <AutocompleteNEW
+                      multiple
+                      openOnClick
+                      showCheckbox
+
                       suggestions={roles}
                       name='selectRole'
                       placeholder='Type Role(s):'

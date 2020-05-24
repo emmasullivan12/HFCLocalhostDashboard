@@ -146,10 +146,10 @@ class CountryShortSU extends React.Component {
             return false;
           }
 
-      } else {
-        return true;
+        } else {
+          return false;
+        }
       }
-    }
   }
 
   render() {
@@ -198,6 +198,9 @@ class CountryShortSU extends React.Component {
                   />
                 </div>
               </div>
+              {countryLocal != '' && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'IRL' && countryLocal != 'CAN') && (
+                <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re not in your country yet!</div>
+              )}
               {countryLocal === 'USA' && (
                 <div className="form-group" id="userState">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which State?</label>
@@ -268,7 +271,7 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {countryLocal != '' && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'IRL' && countryLocal != 'USA' && countryLocal != 'CAN')) && (
+              {countryLocal != '' && (countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'IRL' || countryLocal === 'CAN') && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'IRL' && countryLocal != 'USA' && countryLocal != 'CAN')) && (
                 <div className="form-group" id="userCity">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="cityTextBox">{countryLocal != 'GBR' && countryLocal != 'IRL' ? 'Which City?' : 'Which Town/City?'}</label>
                   <TextInput

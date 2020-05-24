@@ -36,7 +36,6 @@ class SelectBox extends React.Component {
     }
   //  this.heightCalc()
     if (handleTabPress) {
-      console.log("about to set tbrepss to false")
       handleTabPress(false);
     }
   }
@@ -89,6 +88,14 @@ class SelectBox extends React.Component {
         /*  if (finMultiOptions) {
             finMultiOptions()
           }*/
+          if(!required || required && value != null) {
+            document.getElementById("selectBox-"+name).classList.remove('error')
+            if (otherValidityChecks) {
+              otherValidityChecks()
+            }
+          } else {
+            document.getElementById("selectBox-"+name).classList.add('error')
+          }
           return {
             isOpen: false,
             isFocused: false,
@@ -223,7 +230,7 @@ class SelectBox extends React.Component {
 
         return {
           values: [ value ],
-        //  focusedValue: index,
+          focusedValue: index,
           isOpen: false
         }
       }
@@ -333,7 +340,7 @@ class SelectBox extends React.Component {
             isOpen: true
           }
         } else {
-          console.log("focusedValue: "+focusedValue)
+
           if (multiple) {
             this.setState(prevState => {
               const { focusedValue } = prevState
