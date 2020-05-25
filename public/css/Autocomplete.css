@@ -37,7 +37,40 @@
   background-color: #fff;
   border-bottom: 1px solid #d4d4d4;
 }
-
+.autocompleter-item.noDetail.showCheckbox,
+.autocompleter-active.noDetail.showCheckbox{
+  padding: 8px 8px 8px 20px;;
+  height: 32px;
+  border-bottom: none;
+}
+.autocompleter-item.showCheckbox,
+.autocompleter-active.showCheckbox{
+  text-align: left;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.autocompleter-item.selected,
+.autocompleter-active.selected {
+  margin: -1px -1px 0;
+  background: #351c75 !important;
+  color: #fff;
+  cursor: pointer;
+}
+.autocompleter-item.selectedMultiple,
+.autocompleter-active.selectedMultiple {
+  display: none
+}
+.autocompleter-item.selectedCheckbox,
+.autocompleter-active.selectedCheckbox{
+/*  border: 1px solid #8f8fe5;
+  margin: -1px -1px 0;*/
+  background: #f1f1ff;
+}
+.autocompleter-item.selectedCheckbox > .checkbox,
+.autocompleter-active.selectedCheckbox > .checkbox{
+  border-color: #4e4ed6;
+  background: #8f8fe5;
+}
 .autocompleter-item.lastItem {
   border-bottom: none;
 }

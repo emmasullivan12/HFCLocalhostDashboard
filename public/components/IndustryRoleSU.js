@@ -67,6 +67,7 @@ class IndustryRoleSU extends React.Component {
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleRatingChange = this.handleRatingChange.bind(this);
     this.handleMultiOptions = this.handleMultiOptions.bind(this);
+    this.handleMultiRoles = this.handleMultiRoles.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderComponents = this.renderComponents.bind(this);
@@ -124,9 +125,17 @@ class IndustryRoleSU extends React.Component {
 
   handleMultiOptions() {
     if (this.state.industries.length > 0) {
-      document.getElementById("autocompleteBox-selectRole").focus()
+  //    document.getElementById("autocompleteBox-selectRole").focus()
     } else {
       document.getElementById("selectBox-selectInd").focus()
+    }
+  }
+
+  handleMultiRoles() {
+    if (this.state.roles.length > 0) {
+      document.getElementById("autocompleteBox-selectRole").focus()
+    } else {
+      document.getElementById("knowNextSteps").focus()
     }
   }
 
@@ -241,11 +250,15 @@ class IndustryRoleSU extends React.Component {
                     <AutocompleteNEW
                       multiple
                       openOnClick
+                      showValues
+
                       showCheckbox
+                      finMultiOptions={this.handleMultiRoles}
 
                       suggestions={roles}
                       name='selectRole'
                       placeholder='Type Role(s):'
+                  //    placeholderOnClick='It\u0027s fine if you\u0027re not sure. Just put \u0027don\u0027t know\u0027'
                       renderComponents={this.renderComponents}
                       fileToRender="Roles"
                       componentUpdatesState="roles"
@@ -258,12 +271,12 @@ class IndustryRoleSU extends React.Component {
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
-                    {showRolePrompt && (
+                  {/*  {showRolePrompt && (
                       <div className="descriptor prompt indRoleForm">
                         If you don&#39;t know just yet, that&#39;s fine! Just put &#34;don&#39;t know&#34;
                       </div>
                     )}
-                    {errorLoadingRoles === true && (
+              */}   {errorLoadingRoles === true && (
                       <div className="descriptor prompt error indRoleForm alignLeft">
                         Error loading Roles. Try reloading the page.
                       </div>

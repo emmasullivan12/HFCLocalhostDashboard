@@ -2,9 +2,8 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-//import '../css/Camera.css';
-//import '../css/General.css';
 import '../css/Autocomplete.css';
+import {ChevronDown, ChevronUp, X, Check} from './GeneralFunctions.js';
 
 class AutocompleteNEW extends React.Component {
   static defaultProperty={
@@ -14,9 +13,9 @@ class AutocompleteNEW extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-  //    values: [],
-  //    numSelected: 0,
-      activeSuggestion: 0,
+      values: [],
+      numSelected: 0,
+      activeSuggestion: -1,
       filteredSuggestions: [],
       showSuggestions: false,
       userInput: ''
@@ -69,14 +68,13 @@ class AutocompleteNEW extends React.Component {
 
   onFocus = (e) => {
     const {filteredSuggestions, userInput} = this.state;
-    const {onFocus} = this.props;
+    const {onFocus, multiple} = this.props;
 
     if (onFocus) {
       onFocus()
     }
 
-    if ((userInput != "" && this.checkUserInputExists(userInput)) || (filteredSuggestions.length === 0 && userInput === "")) {
-      console.log("gets here so need to change this for multiple")
+    if ((userInput != "" && this.checkUserInputExists(userInput)) || (filteredSuggestions.length === 0 && userInput === "" && !multiple)) {
       return
     } else {
       this.onChange(e);
@@ -84,7 +82,7 @@ class AutocompleteNEW extends React.Component {
   }
 
   onChange = (e) => {
-    const { suggestions, handleChange, valueToShow, required } = this.props;
+    const { multiple, suggestions, handleChange, valueToShow, required, openOnClick } = this.props;
     const userInput = e.currentTarget.value;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -92,59 +90,197 @@ class AutocompleteNEW extends React.Component {
 
       let filteredSuggestions;
 
-      if (hasMultipleAttributes) {
-        filteredSuggestions = suggestions.filter(
-          suggestion =>
-            suggestion[valueToShow].toLowerCase().indexOf(userInput.toLowerCase()) != -1
-          //  suggestion.value.toLowerCase().includes(userInput.toLowerCase())
-            // suggestion.value.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
-        )
+      if (multiple && userInput === '' && openOnClick) {
+        filteredSuggestions = suggestions
       } else {
-        filteredSuggestions = suggestions.filter(
-          suggestion =>
-            suggestion.toLowerCase().indexOf(userInput.toLowerCase()) != -1
-          //  suggestion.toLowerCase().includes(userInput.toLowerCase())
-            // suggestion.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
-        )
+        if (hasMultipleAttributes) {
+          filteredSuggestions = suggestions.filter(
+            suggestion =>
+              suggestion[valueToShow].toLowerCase().indexOf(userInput.toLowerCase()) != -1
+            //  suggestion.value.toLowerCase().includes(userInput.toLowerCase())
+              // suggestion.value.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
+          )
+        } else {
+          filteredSuggestions = suggestions.filter(
+            suggestion =>
+              suggestion.toLowerCase().indexOf(userInput.toLowerCase()) != -1
+            //  suggestion.toLowerCase().includes(userInput.toLowerCase())
+              // suggestion.substr(0,userInput.length).toLowerCase() === userInput.toLowerCase()
+          )
+        }
       }
+
       return filteredSuggestions;
     }
-
     this.setState({
-      activeSuggestion: 0,
+      activeSuggestion: userInput != "" ? 0 : -1,
       filteredSuggestions: filteredSuggestions(),
-      showSuggestions: userInput != "" ? true : false,
-  //    showSuggestions: true,
+      showSuggestions: ((multiple && openOnClick) || userInput != "") ? true : false,
       userInput: e.currentTarget.value
     });
-    console.log("e.currentTarget.value: "+e.currentTarget.value)
+    if (multiple && openOnClick && userInput === '') {
+      return
+    }
     const isValid = this.checkExists(e.currentTarget.value);
-    console.log("isValid onchange: "+isValid)
     handleChange(e.currentTarget.value, isValid);
   };
 
-  onClick = (e) => {
-    const { suggestions, handleChange, name, valueToShow, required, openOnClick } = this.props;
+  stopPropagation = (e) => {
+    e.stopPropagation()
+  }
 
-    this.setState({
-      activeSuggestion: 0,
-      filteredSuggestions: [],
-      showSuggestions: false,
-      userInput: e.currentTarget.dataset.text
-    });
-    const isValid = this.checkUserInputExists(e.currentTarget.dataset.text);
-    handleChange(e.currentTarget.dataset.id, isValid);
+  onDeleteOption = (e) => {
+    const {required, name, handleChange} = this.props;
+    const {value} = e.currentTarget.dataset
+
+    this.setState(prevState => {
+      const [...values] = prevState.values
+      const index = values.indexOf(value)
+
+      values.splice(index, 1)
+
+      handleChange(values)
+
+      if ([...values].length === 0) {
+        if(!required) {
+          document.getElementById("autocompleteBox-"+name).classList.remove('error')
+        } else {
+          document.getElementById("autocompleteBox-"+name).classList.add('error')
+        }
+      }
+
+      return {
+        values,
+        numSelected: values.length,
+      }
+    })
+  }
+
+  onClickOption = (e) => {
+    const { multiple, suggestions, handleChange, name, valueToShow, finMultiOptions, required } = this.props;
+    console.log("onclickoption triggered")
+    const value = e.currentTarget.dataset.text;
+
+    if (!multiple) {
+      this.setState({
+        activeSuggestion: 0,
+        filteredSuggestions: [],
+        showSuggestions: false,
+        userInput: value
+      });
+      const isValid = this.checkUserInputExists(value);
+      handleChange(e.currentTarget.dataset.id, isValid);
+    } else {
+      this.setState(prevState => {
+        const [ ...values ] = prevState.values
+        const index = values.indexOf(value)
+        console.log("value: "+value)
+        console.log("prevState.activeSuggestion in onCLICK: "+prevState.activeSuggestion)
+
+        if (index === -1) {
+          values.push(value)
+        } else {
+          values.splice(index, 1)
+        }
+        handleChange(values)
+
+        if (values.length === (suggestions.length)) {
+          if (finMultiOptions) {
+            finMultiOptions()
+          }
+          if(!required || required && value != null) {
+            document.getElementById("autocompleteBox-"+name).classList.remove('error')
+          } else {
+            document.getElementById("autocompleteBox-"+name).classList.add('error')
+          }
+          return {
+            numSelected: values.length,
+            values: values,
+            showSuggestions: false
+          }
+
+        } else {
+          if(!required || required && value != null) {
+            document.getElementById("autocompleteBox-"+name).classList.remove('error')
+          } else {
+            document.getElementById("autocompleteBox-"+name).classList.add('error')
+          }
+
+          return {
+            numSelected: values.length,
+            values: values,
+            showSuggestions: true,
+          }
+        }
+
+      })
+
+    }
   };
 
   onKeyDown = e => {
-    const { activeSuggestion, filteredSuggestions } = this.state;
-    const { handleChange, handleTabPress, idValue, name, valueToShow, isLastChild } = this.props;
+    const { activeSuggestion, filteredSuggestions, showSuggestions } = this.state;
+    const { suggestions, multiple, required, showCheckbox, finMultiOptions, handleChange, handleTabPress, idValue, name, valueToShow, isLastChild } = this.props;
+    const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();
 
-      if (filteredSuggestions.length) {
+      if (multiple) {
+        this.setState(prevState => {
+          const { activeSuggestion, showSuggestions } = prevState
+
+          if (activeSuggestion !== -1) {
+
+            const [ ...values ] = prevState.values
+          //  const value = options[focusedValue].value
+            console.log("activeSuggestion in onenter: "+activeSuggestion)
+            const value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
+            const index = values.indexOf(value)
+            console.log("value: "+value)
+
+            if (index === -1) {
+              values.push(value)
+            } else {
+              values.splice(index, 1)
+            }
+            const noMoreOptions = (values.length === (suggestions.length)) && showCheckbox != true
+            console.log("noMoreOptions: "+noMoreOptions)
+            if (noMoreOptions) {
+              if (finMultiOptions) {
+                finMultiOptions()
+              }
+              if(!required || required && value != null) {
+                document.getElementById("autocompleteBox-"+name).classList.remove('error')
+              } else {
+                document.getElementById("autocompleteBox-"+name).classList.add('error')
+              }
+              return {
+                values: values,
+                numSelected: values.length,
+                showSuggestions: false
+              }
+            }
+
+            if(!required || required && value != null) {
+              document.getElementById("autocompleteBox-"+name).classList.remove('error')
+            } else {
+              document.getElementById("autocompleteBox-"+name).classList.add('error')
+            }
+            return {
+              values: values,
+              numSelected: values.length,
+              showSuggestions: true
+            }
+          } else {
+            return {
+              showSuggestions: !showSuggestions
+            }
+          }
+        })
+
+      } else if (filteredSuggestions.length) {
         const isntValueToShow = valueToShow == undefined
         this.setState({
           activeSuggestion: 0,
@@ -163,10 +299,54 @@ class AutocompleteNEW extends React.Component {
       if (isLastChild != undefined) {
         e.preventDefault()
       }
-      const isntValueToShow = valueToShow == undefined
+
       if (this.state.showSuggestions === false) {
         return;
+      } else if (multiple) {
+        this.setState(prevState => {
+          const { activeSuggestion } = prevState
+
+          if (activeSuggestion !== -1) {
+
+            const [ ...values ] = prevState.values
+            const value = hasMultipleAttributes ? suggestions[activeSuggestion][valueToShow] : suggestions[activeSuggestion];
+            const index = values.indexOf(value)
+
+            if (index === -1) {
+              values.push(value)
+            }
+
+            if (values.length === (suggestions.length)) {
+              if (finMultiOptions) {
+                finMultiOptions()
+              }
+              if(!required || required && value != null) {
+                document.getElementById("autocompleteBox-"+name).classList.remove('error')
+              } else {
+                document.getElementById("autocompleteBox-"+name).classList.add('error')
+              }
+              return {
+                values: values,
+                numSelected: values.length,
+                showSuggestions: false
+              }
+            } else {
+              if(!required || required && value != null) {
+                document.getElementById("autocompleteBox-"+name).classList.remove('error')
+              } else {
+                document.getElementById("autocompleteBox-"+name).classList.add('error')
+              }
+              return {
+                values: values,
+                numSelected: values.length,
+                showSuggestions: true
+              }
+            }
+          }
+        })
+
       } else {
+        const isntValueToShow = valueToShow == undefined
         this.setState({
   //        activeSuggestion: 0,
           showSuggestions: false,
@@ -180,10 +360,20 @@ class AutocompleteNEW extends React.Component {
       }
     }
 
+    // User pressed the escape key
+    else if (e.keyCode === 27) {
+      if (showSuggestions) {
+        this.setState({
+          showSuggestions: false,
+          activeSuggestion: -1
+        })
+      }
+    }
+
     // User pressed the up arrow
     else if (e.keyCode === 38) {
       e.preventDefault();
-      if (activeSuggestion === 0) {
+      if (activeSuggestion === 0 || activeSuggestion === -1) {
         const parent = document.getElementById("autocompleter-items");
         const item = document.getElementsByClassName("autocompleter-item");
         parent.scrollTop = parent.scrollHeight - (item[0].offsetHeight * 5)
@@ -256,84 +446,204 @@ class AutocompleteNEW extends React.Component {
     }
   }
 
-  render() {
-    const { onChange, onClick, onMouseDown, onKeyDown } = this;
-    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow, children } = this.props;
-    const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
-    const hasMultipleAttributes = this.checkMultipleAttributes();
+  renderValues() {
+    const { placeholder, placeholderOnClick, multiple, showCheckbox, showValues, suggestions } = this.props
+    const { values, numSelected, showSuggestions } = this.state
 
-    let suggestionsListComponent;
-    if (showSuggestions && userInput) {
-      if (filteredSuggestions.length) {
-        suggestionsListComponent = (
-          <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
-              {filteredSuggestions.map((suggestion, index) => {
-                let className;
-                let dataTarget;
+  /*  if (values.length === 0) {
+      return (
+        <div className={"select-placeholder"+(showSuggestions === true ? ' onClick' : '')} id="select-placeholder">
+          { showSuggestions === true ? placeholderOnClick : placeholder }
+        </div>
+      )
+    }*/
 
-                // Flag the active suggestion with a class
-                if (index === activeSuggestion) {
-                  className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
-                  dataTarget = "autoCompleteItem";
-                } else {
-                  className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
-                  dataTarget = "autoCompleteItem";
-                }
+    if (multiple && showValues) {
+      return values.map((value, index) => {
 
-                const suggestionText = valueToShow == undefined ? suggestion : suggestion[valueToShow];
-                const key = valueToShow == undefined ? suggestion : suggestion[idValue];
-                const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
-                return (
-                  <div
-                    className={className}
-                    key={key}
-                    onClick={onClick}
-                    onMouseDown={onMouseDown}
-                    data-id={key}
-                    data-text={suggestionText}
-                    data-target={dataTarget}
-                  >
-                    {suggestionText}
-                    {showDetail===true && (
-                      <div className="autocompleter-item-detail">
-                        {detail}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-          </div>
-        );
-      } else {
-        suggestionsListComponent = (
-          <div className="no-suggestions" id="noSuggestionsCTA">
-            <em>No suggestions</em>
-            {children}
-          </div>
-        );
-      }
+        return (
+          <span
+            key={value}
+            onClick={this.stopPropagation}
+            className="multiple value"
+            id={value}
+          >
+            {value}
+            <span
+              data-value={value}
+              onClick={this.onDeleteOption}
+              className="delete"
+            >
+              <X />
+            </span>
+          </span>
+        )
+      })
     }
+
+    if (showCheckbox === true) {
+
+      const allSelected = values.length === (suggestions.length);
+
+      return (
+        <span className="multiple numChecked">
+          <span
+            className="tickNumSelected"
+          >
+            <Check />
+          </span>
+          {allSelected === true ? (
+            <span>All</span>
+          ) : (
+            <span>{numSelected} selected</span>
+          )}
+        </span>
+      )
+    }
+  }
+
+  renderSuggestions() {
+    const { onChange, onClickOption, onMouseDown, onKeyDown } = this;
+    const { name, detailToShow, placeholder, multiple, handleChange, idValue, required, showDetail, suggestions, showCheckbox, valueToShow, children } = this.props;
+    const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected, values} = this.state;
+
+    if (!showSuggestions) {
+      return;
+    }
+    if (userInput === '' && !multiple) {
+      return;
+    }
+    console.log("filteredSuggestions")
+    console.log(filteredSuggestions)
+
+    return (
+      <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
+        {filteredSuggestions.length && (
+          filteredSuggestions.map((suggestion, index) => {
+            const hasMultipleAttributes = this.checkMultipleAttributes();
+            const value = hasMultipleAttributes === true ? suggestion[valueToShow] : suggestion;
+            const selected = values.includes(value)
+
+            let className;
+            let dataTarget;
+
+            // Flag the active suggestion with a class
+            if (index === activeSuggestion) {
+              className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+              dataTarget = "autoCompleteItem";
+            } else {
+              className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
+              dataTarget = "autoCompleteItem";
+            }
+
+            if (showCheckbox === true) {
+              className += " showCheckbox"
+            }
+
+            if (selected) {
+              if (multiple) {
+
+                //added
+                if (showCheckbox === true) {
+                  className += " selectedCheckbox"
+
+                } else {
+                  className += " selectedMultiple"
+                }
+              } else {
+                className += " selected"
+              }
+            }
+
+            const suggestionText = valueToShow == undefined ? suggestion : suggestion[valueToShow];
+            const key = valueToShow == undefined ? suggestion : suggestion[idValue];
+            const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
+            return (
+              <div
+                className={className}
+                key={key}
+                onClick={onClickOption}
+                onMouseDown={onMouseDown}
+                data-id={key}
+                data-text={suggestionText}
+                data-target={dataTarget}
+              >
+                {(multiple && showCheckbox === true) && (
+                    <span className="checkbox">
+                      { selected ? <Check /> : null }
+                    </span>
+                  )
+                }
+                <span className={(showCheckbox === true) ? "checkboxText" : ""}>
+                  {suggestionText}
+                </span>
+                {showDetail===true && (
+                  <div className="autocompleter-item-detail">
+                    {detail}
+                  </div>
+                )}
+              </div>
+            );
+          })
+        )}
+        {filteredSuggestions.length === 0 && (
+          const value = userInput;
+          const selected = values.includes(value)
+
+          let className;
+          let dataTarget;
+
+          // Flag the active suggestion with a class
+          if (index === activeSuggestion) {
+            className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+            dataTarget = "autoCompleteItem";
+          } else {
+            className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
+            dataTarget = "autoCompleteItem";
+          }
+          //no suggestions
+          return (
+            <div>
+              {'Add \''+userInput+'\''}
+            </div>
+          );
+        )}
+      </div>
+    )
+  }
+
+  render() {
+    const { placeholder, required, name } = this.props;
+    const { showSuggestions, userInput } = this.state;
 
     return (
       <React.Fragment>
-        <input
-          tabIndex="0"
-          type="text"
-          name={name}
-          className="form-control-std autocompleter"
-          id={"autocompleteBox-"+name}
-          placeholder={placeholder}
-          onChange={onChange}
-          onFocus={this.onFocus}
-          onKeyDown={onKeyDown}
-          value={userInput}
-          onBlur={this.onBlur}
-          autoComplete="off"
-          autoCorrect="off"
-          spellCheck="off"
-          required={required}
-        />
-        {suggestionsListComponent}
+        <div>
+          <div className="selectContainer " id="selectContainer">
+            { this.renderValues() }
+            <span className="arrow" id="selectArrow">
+              { showSuggestions ? <ChevronUp /> : <ChevronDown /> }
+            </span>
+          </div>
+          <input
+            tabIndex="0"
+            type="text"
+            name={name}
+            className="form-control-std autocompleter"
+            id={"autocompleteBox-"+name}
+            placeholder={placeholder}
+            onChange={this.onChange}
+            onFocus={this.onFocus}
+            onKeyDown={this.onKeyDown}
+            value={userInput}
+            onBlur={this.onBlur}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
+            required={required}
+          />
+          { this.renderSuggestions() }
+        </div>
       </React.Fragment>
     );
   }
