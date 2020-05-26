@@ -81,9 +81,32 @@ class AutocompleteNEW extends React.Component {
     }
   }
 
+  focusOnInput = (e) => {
+    const {name} = this.props
+    document.getElementById("autocompleteBox-"+name).focus();
+  }
+
+  widthCalc = () => {
+    const {userInput} = this.state
+
+    let containerwidth;
+
+    if (userInput === '') {
+      containerwidth = 110 + "px"
+      return
+    } else {
+      containerwidth = (userInput.length +1) + "ch"
+    }
+
+    document.getElementById('autocompleteBox-selectRole').style.width = containerwidth;
+  }
+
   onChange = (e) => {
+    console.log("onchange triggered")
     const { multiple, suggestions, handleChange, valueToShow, required, openOnClick } = this.props;
     const userInput = e.currentTarget.value;
+    this.widthCalc()
+    // set width of input box to size f userInput
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     function filteredSuggestions() {
@@ -161,6 +184,11 @@ class AutocompleteNEW extends React.Component {
     console.log("onclickoption triggered")
     const value = e.currentTarget.dataset.text;
 
+    if (this.checkLetters(value) === false) {
+      console.log("gets here but shouldnt")
+      return
+    }
+
     if (!multiple) {
       this.setState({
         activeSuggestion: 0,
@@ -184,33 +212,18 @@ class AutocompleteNEW extends React.Component {
         }
         handleChange(values)
 
-        if (values.length === (suggestions.length)) {
-          if (finMultiOptions) {
-            finMultiOptions()
-          }
-          if(!required || required && value != null) {
-            document.getElementById("autocompleteBox-"+name).classList.remove('error')
-          } else {
-            document.getElementById("autocompleteBox-"+name).classList.add('error')
-          }
-          return {
-            numSelected: values.length,
-            values: values,
-            showSuggestions: false
-          }
-
+        if(!required || required && value != null) {
+          document.getElementById("autocompleteBox-"+name).classList.remove('error')
         } else {
-          if(!required || required && value != null) {
-            document.getElementById("autocompleteBox-"+name).classList.remove('error')
-          } else {
-            document.getElementById("autocompleteBox-"+name).classList.add('error')
-          }
+          document.getElementById("autocompleteBox-"+name).classList.add('error')
+        }
 
-          return {
-            numSelected: values.length,
-            values: values,
-            showSuggestions: true,
-          }
+        return {
+          numSelected: values.length,
+          values: values,
+          userInput: '',
+          filteredSuggestions: suggestions,
+          showSuggestions: true,
         }
 
       })
@@ -244,29 +257,16 @@ class AutocompleteNEW extends React.Component {
               value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
             }
 
+            if (this.checkLetters(value) === false) {
+              return
+            }
+
             const index = values.indexOf(value)
 
             if (index === -1) {
               values.push(value)
             } else {
               values.splice(index, 1)
-            }
-            const noMoreOptions = (values.length === (suggestions.length)) && showCheckbox != true
-
-            if (noMoreOptions) {
-              if (finMultiOptions) {
-                finMultiOptions()
-              }
-              if(!required || required && value != null) {
-                document.getElementById("autocompleteBox-"+name).classList.remove('error')
-              } else {
-                document.getElementById("autocompleteBox-"+name).classList.add('error')
-              }
-              return {
-                values: values,
-                numSelected: values.length,
-                showSuggestions: false
-              }
             }
 
             if(!required || required && value != null) {
@@ -277,7 +277,9 @@ class AutocompleteNEW extends React.Component {
             return {
               values: values,
               numSelected: values.length,
-              showSuggestions: true
+              userInput: '',
+              filteredSuggestions: suggestions,
+              showSuggestions: true,
             }
           } else {
             return {
@@ -324,37 +326,27 @@ class AutocompleteNEW extends React.Component {
               value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
             }
 
+            if (this.checkLetters(value) === false) {
+              return
+            }
+
             const index = values.indexOf(value)
 
             if (index === -1) {
               values.push(value)
             }
 
-            if (values.length === (suggestions.length)) {
-              if (finMultiOptions) {
-                finMultiOptions()
-              }
-              if(!required || required && value != null) {
-                document.getElementById("autocompleteBox-"+name).classList.remove('error')
-              } else {
-                document.getElementById("autocompleteBox-"+name).classList.add('error')
-              }
-              return {
-                values: values,
-                numSelected: values.length,
-                showSuggestions: false
-              }
+            if(!required || required && value != null) {
+              document.getElementById("autocompleteBox-"+name).classList.remove('error')
             } else {
-              if(!required || required && value != null) {
-                document.getElementById("autocompleteBox-"+name).classList.remove('error')
-              } else {
-                document.getElementById("autocompleteBox-"+name).classList.add('error')
-              }
-              return {
-                values: values,
-                numSelected: values.length,
-                showSuggestions: true
-              }
+              document.getElementById("autocompleteBox-"+name).classList.add('error')
+            }
+            return {
+              values: values,
+              numSelected: values.length,
+              userInput: '',
+              showSuggestions: true,
+              filteredSuggestions: suggestions,
             }
           }
         })
@@ -428,6 +420,15 @@ class AutocompleteNEW extends React.Component {
     if (activeSuggestion >= 4) {
       parent.scrollTop += item[0].offsetHeight
     }
+  }
+
+  checkLetters(inputToCheck) {
+   var letters = /[A-Za-z]/g;
+   if(inputToCheck.match(letters)) {
+     return true;
+   } else {
+     return false;
+   }
   }
 
   checkExists(inputToCheck) {
@@ -569,6 +570,8 @@ class AutocompleteNEW extends React.Component {
               }
             }
 
+            if (index === suggestions.length) className += " lastItem"
+
             const suggestionText = valueToShow == undefined ? suggestion : suggestion[valueToShow];
             const key = valueToShow == undefined ? suggestion : suggestion[idValue];
             const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
@@ -603,6 +606,7 @@ class AutocompleteNEW extends React.Component {
       )
     } else if (filteredSuggestions.length === 0) {
       const value = userInput;
+      const containLetters = this.checkLetters(value)
       const selected = values.includes(value)
       const suggestionText = userInput;
       const key = userInput;
@@ -611,8 +615,12 @@ class AutocompleteNEW extends React.Component {
       let dataTarget;
 
       // Flag the active suggestion with a class
-      className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+      className = "autocompleter-active lastItem" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
       dataTarget = "autoCompleteItem";
+
+      if (!containLetters) {
+        className += " error"
+      }
 
       return (
         <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
@@ -638,30 +646,36 @@ class AutocompleteNEW extends React.Component {
 
     return (
       <React.Fragment>
-        <div>
-          <div className="selectContainer " id="selectContainer">
+        <div
+          className="form-control-std role autocompleterTags"
+          id={"autocompleterTags-"+name}
+          onClick={this.focusOnInput}
+        >
+          <div className="tagsContainer " id="selectContainer">
             { this.renderValues() }
-            <span className="arrow" id="selectArrow">
-              { showSuggestions ? <ChevronUp /> : <ChevronDown /> }
-            </span>
           </div>
-          <input
-            tabIndex="0"
-            type="text"
-            name={name}
-            className="form-control-std autocompleter"
-            id={"autocompleteBox-"+name}
-            placeholder={placeholder}
-            onChange={this.onChange}
-            onFocus={this.onFocus}
-            onKeyDown={this.onKeyDown}
-            value={userInput}
-            onBlur={this.onBlur}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck="off"
-            required={required}
-          />
+          <div className="autocompleterTags-search">
+            <input
+              tabIndex="0"
+              type="text"
+              name={name}
+            //  className=""
+              id={"autocompleteBox-"+name}
+              placeholder={placeholder}
+              onChange={this.onChange}
+              onFocus={this.onFocus}
+              onKeyDown={this.onKeyDown}
+              value={userInput}
+              onBlur={this.onBlur}
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
+              required={required}
+            />
+          </div>
+          <span className="arrow" id="selectArrow">
+            { showSuggestions ? <ChevronUp /> : <ChevronDown /> }
+          </span>
           { this.renderSuggestions() }
         </div>
       </React.Fragment>

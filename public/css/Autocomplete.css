@@ -4,6 +4,40 @@
   position: relative;
   display: block;
 }
+.autocompleterTags{
+  position: relative;
+  display: inline-block;
+  cursor: text;
+  width: 100%;
+  text-align: left;
+}
+.tagsContainer{
+  line-height: 14px;
+/*  display: inline-block;*/
+  display: inline;
+}
+
+.autocompleterTags-search{
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+/*  width: 100%;*/
+  /*min-width: 110px;*/
+}
+.autocompleterTags-search input {
+/*  width: 100%;*/
+  max-width: 100%;
+  min-width: 110px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
 #autocompleteBox.error {
   border-bottom: 2px solid red;
 }
@@ -36,6 +70,21 @@
   cursor: pointer;
   background-color: #fff;
   border-bottom: 1px solid #d4d4d4;
+}
+.autocompleter-item.lastItem,
+.autocompleter-active.lastItem {
+  border-bottom: none;
+}
+.autocompleter-active.error{
+  background-color: #fbf2f2!important;
+  color: #c5c5c5;
+}
+.autocompleter-active.error::after{
+  content: "Must contain letters";
+  color: red;
+  font-size: 12px;
+  float: right;
+  margin-top: 3px;
 }
 .autocompleter-item.noDetail.showCheckbox,
 .autocompleter-active.noDetail.showCheckbox{
