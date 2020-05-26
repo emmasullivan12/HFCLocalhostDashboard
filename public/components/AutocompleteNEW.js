@@ -219,7 +219,7 @@ class AutocompleteNEW extends React.Component {
   };
 
   onKeyDown = e => {
-    const { activeSuggestion, filteredSuggestions, showSuggestions } = this.state;
+    const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const { suggestions, multiple, required, showCheckbox, finMultiOptions, handleChange, handleTabPress, idValue, name, valueToShow, isLastChild } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -235,10 +235,16 @@ class AutocompleteNEW extends React.Component {
 
             const [ ...values ] = prevState.values
           //  const value = options[focusedValue].value
-            console.log("activeSuggestion in onenter: "+activeSuggestion)
-            const value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
+
+            let value
+
+            if (filteredSuggestions.length === 0) {
+              value = userInput;
+            } else {
+              value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
+            }
+
             const index = values.indexOf(value)
-            console.log("value: "+value)
 
             if (index === -1) {
               values.push(value)
@@ -246,7 +252,7 @@ class AutocompleteNEW extends React.Component {
               values.splice(index, 1)
             }
             const noMoreOptions = (values.length === (suggestions.length)) && showCheckbox != true
-            console.log("noMoreOptions: "+noMoreOptions)
+
             if (noMoreOptions) {
               if (finMultiOptions) {
                 finMultiOptions()
@@ -309,7 +315,15 @@ class AutocompleteNEW extends React.Component {
           if (activeSuggestion !== -1) {
 
             const [ ...values ] = prevState.values
-            const value = hasMultipleAttributes ? suggestions[activeSuggestion][valueToShow] : suggestions[activeSuggestion];
+
+            let value
+
+            if (filteredSuggestions.length === 0) {
+              value = userInput;
+            } else {
+              value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
+            }
+
             const index = values.indexOf(value)
 
             if (index === -1) {
@@ -516,10 +530,10 @@ class AutocompleteNEW extends React.Component {
     console.log("filteredSuggestions")
     console.log(filteredSuggestions)
 
-    return (
-      <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
-        {filteredSuggestions.length && (
-          filteredSuggestions.map((suggestion, index) => {
+    if (filteredSuggestions.length) {
+      return (
+        <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
+          {filteredSuggestions.map((suggestion, index) => {
             const hasMultipleAttributes = this.checkMultipleAttributes();
             const value = hasMultipleAttributes === true ? suggestion[valueToShow] : suggestion;
             const selected = values.includes(value)
@@ -583,33 +597,39 @@ class AutocompleteNEW extends React.Component {
                   </div>
                 )}
               </div>
-            );
-          })
-        )}
-        {filteredSuggestions.length === 0 && (
-          const value = userInput;
-          const selected = values.includes(value)
+            )
+          })}
+        </div>
+      )
+    } else if (filteredSuggestions.length === 0) {
+      const value = userInput;
+      const selected = values.includes(value)
+      const suggestionText = userInput;
+      const key = userInput;
 
-          let className;
-          let dataTarget;
+      let className;
+      let dataTarget;
 
-          // Flag the active suggestion with a class
-          if (index === activeSuggestion) {
-            className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
-            dataTarget = "autoCompleteItem";
-          } else {
-            className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
-            dataTarget = "autoCompleteItem";
-          }
-          //no suggestions
-          return (
-            <div>
-              {'Add \''+userInput+'\''}
-            </div>
-          );
-        )}
-      </div>
-    )
+      // Flag the active suggestion with a class
+      className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+      dataTarget = "autoCompleteItem";
+
+      return (
+        <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
+          <div
+            className={className}
+            key={key}
+            onClick={onClickOption}
+            onMouseDown={onMouseDown}
+            data-id={key}
+            data-text={suggestionText}
+            data-target={dataTarget}
+          >
+            {'Add \''+userInput+'\''}
+          </div>
+        </div>
+      )
+    }
   }
 
   render() {
