@@ -128,6 +128,7 @@ input[type=text]:disabled{
   color: #d9d9d9;
   opacity: 1; /* Firefox */
 }
+
 .dob::placeholder{
   font-size: .85em;
 }

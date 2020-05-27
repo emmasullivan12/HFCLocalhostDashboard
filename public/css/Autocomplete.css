@@ -36,7 +36,10 @@
   line-height: inherit;
 }
 
-
+.autocompleterTags-search .placeholderOnClick::placeholder{
+  font-size: 12px;
+  color: #c7c7f7;
+}
 
 #autocompleteBox.error {
   border-bottom: 2px solid red;

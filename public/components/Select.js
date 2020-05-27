@@ -86,9 +86,6 @@ class SelectBox extends React.Component {
         }
       } else {
         if (values.length === 0) {
-        /*  if (finMultiOptions) {
-            finMultiOptions()
-          }*/
           if(!required || required && value != null) {
             document.getElementById("selectBox-"+name).classList.remove('error')
             if (otherValidityChecks) {
@@ -165,7 +162,7 @@ class SelectBox extends React.Component {
       isOpen: !currentState,
 //      elementIdFocused: document.activeElement.id
     }, () => {
-      if (this.state.isOpen === true && this.countTitles() > 0) {
+      if (this.state.isOpen === true && (this.countTitles() > 0 || showCheckbox === true)) {
         this.heightCalc()
       }
     })

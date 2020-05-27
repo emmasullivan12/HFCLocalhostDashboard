@@ -54,12 +54,10 @@ class IndustryRoleSU extends React.Component {
     this.state = {
       roles: [],
       errorLoadingRoles: '',
-      showRolePrompt: '',
       tabPressed: '',
       industries: [],
       editingInd: '',
       rolesChosen: '',
-      roleValid: '',
       editingRole: '',
       knowNextSteps: '',
     }
@@ -75,21 +73,11 @@ class IndustryRoleSU extends React.Component {
 
   onRoleFocus = (e) => {
     const currentStateRoles = this.state.rolesChosen;
-    const currentStateValid = this.state.roleValid;
-    if (currentStateRoles != '' && currentStateValid != '') {
+    if (currentStateRoles != '') {
       this.setState({
         editingRole: true
       })
     }
-    this.setState({
-      showRolePrompt: true
-    })
-  }
-
-  onRoleBlur = (e) => {
-    this.setState({
-      showRolePrompt: false
-    })
   }
 
   onRatingBlur = (e) => {
@@ -125,7 +113,7 @@ class IndustryRoleSU extends React.Component {
 
   handleMultiOptions() {
     if (this.state.industries.length > 0) {
-  //    document.getElementById("autocompleteBox-selectRole").focus()
+      document.getElementById("autocompleteBox-selectRole").focus()
     } else {
       document.getElementById("selectBox-selectInd").focus()
     }
@@ -133,28 +121,21 @@ class IndustryRoleSU extends React.Component {
 
   handleMultiRoles() {
     if (this.state.roles.length > 0) {
-      document.getElementById("autocompleteBox-selectRole").focus()
+      document.getElementById("ratingsContainer").firstElementChild.focus()
     } else {
-      document.getElementById("knowNextSteps").focus()
+      document.getElementById("autocompleteBox-selectRole").focus()
     }
   }
 
   handleRoleChange(userInput, isValid) {
     const currentStateRoles = this.state.rolesChosen;
-    const currentStateValid = this.state.roleValid;
-    if (currentStateRoles != '' && currentStateValid != '' && userInput === '') {
+    if (currentStateRoles != '' && userInput === '') {
       this.setState({
         editingRole: true
       })
     }
-    if (userInput != "") {
-      this.setState({
-        showRolePrompt: false
-      })
-    }
     this.setState({
       rolesChosen: userInput,
-      roleValid: isValid
     });
   }
 
@@ -177,9 +158,9 @@ class IndustryRoleSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {industries, rolesChosen, roleValid, knowNextSteps} = this.state;
+    const {industries, rolesChosen, knowNextSteps} = this.state;
 
-    if (industries.length != 0 && rolesChosen != '' && roleValid === true && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
+    if (industries.length != 0 && rolesChosen != '' && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
       const form = document.getElementById("form-IndRoleShortSU");
 
       if (form.checkValidity()) {
@@ -210,7 +191,7 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, showRolePrompt, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, roleValid, knowNextSteps} = this.state;
+    const {errorLoadingRoles, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, knowNextSteps} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const isEnabled = this.canBeSubmitted();
@@ -251,32 +232,26 @@ class IndustryRoleSU extends React.Component {
                       multiple
                       openOnClick
                       showValues
-
                       showCheckbox
+
                       finMultiOptions={this.handleMultiRoles}
 
                       suggestions={roles}
                       name='selectRole'
                       placeholder='Type Role(s):'
-                  //    placeholderOnClick='It\u0027s fine if you\u0027re not sure. Just put \u0027don\u0027t know\u0027'
+                      placeholderOnClick="Not sure? Select 'don't know'"
                       renderComponents={this.renderComponents}
                       fileToRender="Roles"
                       componentUpdatesState="roles"
                       handleChange={this.handleRoleChange}
                       onFocus={this.onRoleFocus}
-                      onBlur={this.onRoleBlur}
                       handleTabPress={this.handleTabPress}
                   //    focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
-                  {/*  {showRolePrompt && (
-                      <div className="descriptor prompt indRoleForm">
-                        If you don&#39;t know just yet, that&#39;s fine! Just put &#34;don&#39;t know&#34;
-                      </div>
-                    )}
-              */}   {errorLoadingRoles === true && (
+                    {errorLoadingRoles === true && (
                       <div className="descriptor prompt error indRoleForm alignLeft">
                         Error loading Roles. Try reloading the page.
                       </div>
@@ -284,25 +259,14 @@ class IndustryRoleSU extends React.Component {
                   </div>
                 </div>
               )}
-              {((rolesChosen != '' && roleValid === true) || editingRole === true) && (
+              {((rolesChosen.length > 0) || editingRole === true) && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="knowNextSteps">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
-                {/*  <TextInput
-                    name="knowNextSteps"
-                    id="knowNextSteps"
-                    placeholder="Rating goes here"
-                    className="form-control-std"
-                    required
-                    handleChange={this.handleRatingChange}
-                    handleTabPress={this.handleTabPress}
-                    onBlur={this.onRatingBlur}
-                    focusOnLoad={tabPressed ? false : true}
-                  />*/}
                   <RatingItems
                     ratingOutOf={10}
                     handleRatingChange={this.handleRatingChange}
                     handleTabPress={this.handleTabPress}
-                    focusOnLoad={tabPressed ? false : true}
+                  //  focusOnLoad={tabPressed ? false : true}
                   />
                 </div>
               )}

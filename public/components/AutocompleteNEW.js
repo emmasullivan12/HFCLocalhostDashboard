@@ -26,7 +26,7 @@ class AutocompleteNEW extends React.Component {
     const { focusOnLoad, handleTabPress, renderComponents, fileToRender, componentUpdatesState, name } = this.props
 
     if (focusOnLoad) {
-      document.getElementById("autocompleteBox-"+name).focus();
+      document.getElementById("autocompleterTags-"+name).focus();
     }
     if (renderComponents) {
       renderComponents(fileToRender, componentUpdatesState)
@@ -42,10 +42,11 @@ class AutocompleteNEW extends React.Component {
   }
 
   onBlur = (e) => {
-    const { multiple, suggestions, onBlur, valueToShow, required, name, noSuggestionsCTAclass } = this.props;
+    const { multiple, suggestions, onBlur, valueToShow, required, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    const userInput = this.state.userInput;
-    const isValid = this.checkUserInputExists(userInput);
+    const values = this.state.values;
+    const isValid = required ? values.length > 0 : true;
+
     if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
       return;
     } else {
@@ -58,16 +59,22 @@ class AutocompleteNEW extends React.Component {
       if (onBlur) {
         onBlur()
       }
+      if (values.length != 0) {
+        console.log("finmlutioptions about to be triggered")
+        if (finMultiOptions) {
+          finMultiOptions()
+        }
+      }
       if(isValid) {
-        document.getElementById("autocompleteBox-"+name).classList.remove('error');
+        document.getElementById("autocompleterTags-"+name).classList.remove('error');
       } else {
-        document.getElementById("autocompleteBox-"+name).classList.add('error');
+        document.getElementById("autocompleterTags-"+name).classList.add('error');
       }
     }
   }
 
   onFocus = (e) => {
-    const {filteredSuggestions, userInput} = this.state;
+    const {filteredSuggestions, userInput, values} = this.state;
     const {onFocus, multiple} = this.props;
 
     if (onFocus) {
@@ -103,7 +110,7 @@ class AutocompleteNEW extends React.Component {
 
   onChange = (e) => {
     console.log("onchange triggered")
-    const { multiple, suggestions, handleChange, valueToShow, required, openOnClick } = this.props;
+    const { multiple, suggestions, handleChange, valueToShow, required, showCheckbox, openOnClick } = this.props;
     const userInput = e.currentTarget.value;
     this.widthCalc()
     // set width of input box to size f userInput
@@ -140,12 +147,14 @@ class AutocompleteNEW extends React.Component {
       filteredSuggestions: filteredSuggestions(),
       showSuggestions: ((multiple && openOnClick) || userInput != "") ? true : false,
       userInput: e.currentTarget.value
+    }, () => {
+      if (this.state.showSuggestions === true && showCheckbox === true) {
+        this.heightCalc()
+      }
     });
     if (multiple && openOnClick && userInput === '') {
       return
     }
-    const isValid = this.checkExists(e.currentTarget.value);
-    handleChange(e.currentTarget.value, isValid);
   };
 
   stopPropagation = (e) => {
@@ -166,9 +175,9 @@ class AutocompleteNEW extends React.Component {
 
       if ([...values].length === 0) {
         if(!required) {
-          document.getElementById("autocompleteBox-"+name).classList.remove('error')
+          document.getElementById("autocompleterTags-"+name).classList.remove('error')
         } else {
-          document.getElementById("autocompleteBox-"+name).classList.add('error')
+          document.getElementById("autocompleterTags-"+name).classList.add('error')
         }
       }
 
@@ -185,7 +194,6 @@ class AutocompleteNEW extends React.Component {
     const value = e.currentTarget.dataset.text;
 
     if (this.checkLetters(value) === false) {
-      console.log("gets here but shouldnt")
       return
     }
 
@@ -202,8 +210,6 @@ class AutocompleteNEW extends React.Component {
       this.setState(prevState => {
         const [ ...values ] = prevState.values
         const index = values.indexOf(value)
-        console.log("value: "+value)
-        console.log("prevState.activeSuggestion in onCLICK: "+prevState.activeSuggestion)
 
         if (index === -1) {
           values.push(value)
@@ -213,9 +219,9 @@ class AutocompleteNEW extends React.Component {
         handleChange(values)
 
         if(!required || required && value != null) {
-          document.getElementById("autocompleteBox-"+name).classList.remove('error')
+          document.getElementById("autocompleterTags-"+name).classList.remove('error')
         } else {
-          document.getElementById("autocompleteBox-"+name).classList.add('error')
+          document.getElementById("autocompleterTags-"+name).classList.add('error')
         }
 
         return {
@@ -270,9 +276,9 @@ class AutocompleteNEW extends React.Component {
             }
 
             if(!required || required && value != null) {
-              document.getElementById("autocompleteBox-"+name).classList.remove('error')
+              document.getElementById("autocompleterTags-"+name).classList.remove('error')
             } else {
-              document.getElementById("autocompleteBox-"+name).classList.add('error')
+              document.getElementById("autocompleterTags-"+name).classList.add('error')
             }
             return {
               values: values,
@@ -337,9 +343,9 @@ class AutocompleteNEW extends React.Component {
             }
 
             if(!required || required && value != null) {
-              document.getElementById("autocompleteBox-"+name).classList.remove('error')
+              document.getElementById("autocompleterTags-"+name).classList.remove('error')
             } else {
-              document.getElementById("autocompleteBox-"+name).classList.add('error')
+              document.getElementById("autocompleterTags-"+name).classList.add('error')
             }
             return {
               values: values,
@@ -380,7 +386,7 @@ class AutocompleteNEW extends React.Component {
     else if (e.keyCode === 38) {
       e.preventDefault();
       if (activeSuggestion === 0 || activeSuggestion === -1) {
-        const parent = document.getElementById("autocompleter-items");
+        const parent = document.getElementById("autocompleter-items-"+name);
         const item = document.getElementsByClassName("autocompleter-item");
         parent.scrollTop = parent.scrollHeight - (item[0].offsetHeight * 5)
         this.setState({ activeSuggestion: filteredSuggestions.length - 1 });
@@ -393,7 +399,7 @@ class AutocompleteNEW extends React.Component {
     // User pressed the down arrow
     else if (e.keyCode === 40) {
       if (activeSuggestion + 1 === filteredSuggestions.length) {
-        const parent = document.getElementById("autocompleter-items");
+        const parent = document.getElementById("autocompleter-items-"+name);
         parent.scrollTop = 0;
         this.setState({ activeSuggestion: 0 });
       } else {
@@ -404,8 +410,9 @@ class AutocompleteNEW extends React.Component {
   };
 
   handleMoveUp = () => {
+    const {name} = this.props;
     const { activeSuggestion, filteredSuggestions } = this.state;
-    const parent = document.getElementById("autocompleter-items");
+    const parent = document.getElementById("autocompleter-items-"+name);
     const item = document.getElementsByClassName("autocompleter-item");
     if (activeSuggestion < (filteredSuggestions.length - 4)) {
       parent.scrollTop -= item[0].offsetHeight
@@ -413,13 +420,32 @@ class AutocompleteNEW extends React.Component {
   }
 
   handleMoveDown = () => {
+    const {name} = this.props;
     const { activeSuggestion } = this.state;
-    const parent = document.getElementById("autocompleter-items");
+    const parent = document.getElementById("autocompleter-items-"+name);
     const item = document.getElementsByClassName("autocompleter-item");
     // i.e. 4 = 5th box
     if (activeSuggestion >= 4) {
       parent.scrollTop += item[0].offsetHeight
     }
+  }
+
+  heightCalc = () => {
+    const {suggestions, name, showCheckbox} = this.props
+
+    let containerHeight = 0;
+
+    const length = suggestions.length
+    // Makes container the height of the first 5 items
+    for (var i = 0; i < Math.min(6, length); i++) {
+      if (showCheckbox === true) {
+        containerHeight += 32
+      } else {
+        containerHeight += 40
+      }
+    }
+
+    document.getElementById("autocompleter-items-"+name).style.maxHeight = containerHeight + "px";
   }
 
   checkLetters(inputToCheck) {
@@ -434,7 +460,6 @@ class AutocompleteNEW extends React.Component {
   checkExists(inputToCheck) {
     const { suggestions, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    console.log("inputToCheck in checkexists:"+inputToCheck)
     const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option.value : (valueToShow === undefined ? option : option[valueToShow])) === inputToCheck) != -1) : (required ? false : true);
     return isValid;
   }
@@ -442,7 +467,6 @@ class AutocompleteNEW extends React.Component {
   checkUserInputExists(inputToCheck) {
     const { suggestions, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    console.log("inputToCheck in checkuserinputexists:"+inputToCheck)
     const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === inputToCheck) != -1) : (required ? false : true);
     return isValid;
   }
@@ -462,16 +486,8 @@ class AutocompleteNEW extends React.Component {
   }
 
   renderValues() {
-    const { placeholder, placeholderOnClick, multiple, showCheckbox, showValues, suggestions } = this.props
+    const { placeholder, multiple, showCheckbox, showValues, suggestions } = this.props
     const { values, numSelected, showSuggestions } = this.state
-
-  /*  if (values.length === 0) {
-      return (
-        <div className={"select-placeholder"+(showSuggestions === true ? ' onClick' : '')} id="select-placeholder">
-          { showSuggestions === true ? placeholderOnClick : placeholder }
-        </div>
-      )
-    }*/
 
     if (multiple && showValues) {
       return values.map((value, index) => {
@@ -528,12 +544,13 @@ class AutocompleteNEW extends React.Component {
     if (userInput === '' && !multiple) {
       return;
     }
-    console.log("filteredSuggestions")
-    console.log(filteredSuggestions)
 
     if (filteredSuggestions.length) {
       return (
-        <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
+        <div
+          className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')}
+          id={"autocompleter-items-"+name}
+        >
           {filteredSuggestions.map((suggestion, index) => {
             const hasMultipleAttributes = this.checkMultipleAttributes();
             const value = hasMultipleAttributes === true ? suggestion[valueToShow] : suggestion;
@@ -607,7 +624,7 @@ class AutocompleteNEW extends React.Component {
     } else if (filteredSuggestions.length === 0) {
       const value = userInput;
       const containLetters = this.checkLetters(value)
-      const selected = values.includes(value)
+    //  const selected = values.includes(value)
       const suggestionText = userInput;
       const key = userInput;
 
@@ -619,11 +636,16 @@ class AutocompleteNEW extends React.Component {
       dataTarget = "autoCompleteItem";
 
       if (!containLetters) {
-        className += " error"
+        document.getElementById("autocompleterTags-"+name).classList.add('error')
+      } else {
+        document.getElementById("autocompleterTags-"+name).classList.remove('error')
       }
 
       return (
-        <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
+        <div
+          className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')}
+          id={"autocompleter-items-"+name}
+        >
           <div
             className={className}
             key={key}
@@ -641,8 +663,9 @@ class AutocompleteNEW extends React.Component {
   }
 
   render() {
-    const { placeholder, required, name } = this.props;
-    const { showSuggestions, userInput } = this.state;
+    const { placeholder, placeholderOnClick, required, name } = this.props;
+    const { showSuggestions, userInput, values } = this.state;
+    const showClickPlaceholder = showSuggestions === true && placeholderOnClick && values.length === 0
 
     return (
       <React.Fragment>
@@ -659,9 +682,9 @@ class AutocompleteNEW extends React.Component {
               tabIndex="0"
               type="text"
               name={name}
-            //  className=""
+              className={showClickPlaceholder === true ? "placeholderOnClick" : ""}
               id={"autocompleteBox-"+name}
-              placeholder={placeholder}
+              placeholder={showClickPlaceholder === true ? placeholderOnClick : placeholder}
               onChange={this.onChange}
               onFocus={this.onFocus}
               onKeyDown={this.onKeyDown}
