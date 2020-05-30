@@ -43,36 +43,73 @@ class AutocompleteNEW extends React.Component {
   onBlur = (e) => {
     console.log("onblur triggered")
     const { multiple, suggestions, onBlur, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
-    const hasMultipleAttributes = this.checkMultipleAttributes();
-    const values = this.state.values;
-    const isValid = required ? values.length > 0 : true;
+    const {userInput} = this.state
 
     if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
       return;
     } else {
+      const hasMultipleAttributes = this.checkMultipleAttributes();
 
       if (onBlur) {
         onBlur()
       }
-      handleChange(values, () => {
-        if (values.length != 0) {
-          if (finMultiOptions) {
-            finMultiOptions()
+
+      if (userInput != '') {
+        this.setState(prevState => {
+          const [ ...values ] = prevState.values
+          const index = values.indexOf(userInput)
+
+          if (index === -1) {
+            values.push(userInput)
           }
-        }
-      })
 
+          return {
+            numSelected: values.length,
+            values: values,
+            userInput: '',
+          }
+        }, () => {
+          const {values} = this.state
+          handleChange(values, () => {
+            if (this.state.values.length != 0) {
+              if (finMultiOptions) {
+                finMultiOptions()
+              }
+            }
+          })
+          const isValid = required ? values.length > 0 : true;
 
-      if(isValid) {
-        document.getElementById("autocompleterTags-"+name).classList.remove('error');
+          if(isValid) {
+            document.getElementById("autocompleterTags-"+name).classList.remove('error');
+          } else {
+            document.getElementById("autocompleterTags-"+name).classList.add('error');
+          }
+        })
       } else {
-        document.getElementById("autocompleterTags-"+name).classList.add('error');
+        const values = this.state.values;
+
+        handleChange(values, () => {
+          if (values.length != 0) {
+            if (finMultiOptions) {
+              finMultiOptions()
+            }
+          }
+        })
+
+        const isValid = required ? values.length > 0 : true;
+
+        if(isValid) {
+          document.getElementById("autocompleterTags-"+name).classList.remove('error');
+        } else {
+          document.getElementById("autocompleterTags-"+name).classList.add('error');
+        }
       }
+      console.log("carries on")
+
       this.setState({
         activeSuggestion: 0,
         filteredSuggestions: [],
         showSuggestions: false,
-        userInput: e.currentTarget.value
       })
     }
   }
@@ -316,7 +353,7 @@ class AutocompleteNEW extends React.Component {
     }
 
     // User pressed the tab key
-    if (e.keyCode === 9) {
+    else if (e.keyCode === 9) {
       console.log("on tab triggered")
       if (this.state.showSuggestions === false) {
         return;
@@ -376,6 +413,25 @@ class AutocompleteNEW extends React.Component {
           handleTabPress(true);
         }
       }
+    }
+
+    // User pressed backspace
+    else if (e.keyCode === 8) {
+      console.log("backspace pressed")
+      if (userInput === '') {
+        this.setState(prevState => {
+          const [ ...values ] = prevState.values
+
+          const lastItem = values.length - 1
+
+          values.splice(lastItem, 1)
+
+          return {
+            values: values,
+            numSelected: values.length,
+          }
+        })
+      } else return
     }
 
     // User pressed the escape key

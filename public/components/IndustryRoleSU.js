@@ -61,7 +61,8 @@ class IndustryRoleSU extends React.Component {
   constructor () {
     super();
     this.state = {
-      roles: [],
+      rolesFromList: [],
+      freeTextRoles: [],
       errorLoadingRoles: '',
       tabPressed: '',
       industries: [],
@@ -79,22 +80,22 @@ class IndustryRoleSU extends React.Component {
   }
 
   onRoleFocus = (e) => {
-    const currentStateRoles = this.state.roles;
-    if (currentStateRoles != '') {
+    const {rolesFromList, freeTextRoles} = this.state
+    if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
       this.setState({
         editingRole: true
       })
     }
   }
 
-  onRatingBlur = (e) => {
+/*  onRatingBlur = (e) => {
     const isValid = e.currentTarget.value > 0 && e.currentTarget.value <= 10
     if(isValid) {
       document.getElementById("knowNextSteps").classList.remove('error');
     } else {
       document.getElementById("knowNextSteps").classList.add('error');
     }
-  }
+  }*/
 
   handleIndChange(userInput) {
     let newArray
@@ -123,7 +124,8 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleMultiRoles() {
-    if (this.state.roles.length > 0) {
+    const {rolesFromList, freeTextRoles} = this.state
+    if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
       document.getElementById("ratingsContainer").firstElementChild.focus()
     } else {
       document.getElementById("autocompleteBox-selectRole").focus()
@@ -131,22 +133,32 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleRoleChange(userInput) {
-    const currentStateRoles = this.state.roles;
-    if (currentStateRoles != '' && userInput === '') {
+    const rolesFromList = roleOptions
+      .filter(role => userInput.includes(role.label))
+
+    const labels = rolesFromList.map(value => value.label)
+
+    const freeTextRoles = userInput
+      .filter(role => labels.indexOf(role) === -1)
+
+    const values = rolesFromList.map(value => value.value)
+
+    if ((this.state.rolesFromList.length != 0 || this.state.freeTextRoles.length != 0) && userInput.length != 0) {
       this.setState({
         editingRole: true
       })
     }
+
     this.setState({
-      roles: userInput,
-    });
+      rolesFromList: values,
+      freeTextRoles: freeTextRoles
+    })
+
   }
 
-  handleRatingChange(e) {
+  handleRatingChange(value) {
     this.setState({
-      knowNextSteps: e
-    }, () => {
-      document.getElementById("Submit-btn-ind").focus()
+      knowNextSteps: value
     });
   }
 
@@ -160,11 +172,12 @@ class IndustryRoleSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {industries, roles, knowNextSteps} = this.state;
-
-    if (industries.length != 0 && roles.length != 0 && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
+    const {industries, rolesFromList, freeTextRoles, knowNextSteps} = this.state;
+    console.log("rolesFromList.length: "+rolesFromList.length)
+    console.log("freeTextRoles.length: "+freeTextRoles.length)
+    if (industries.length != 0 && (rolesFromList.length != 0 || freeTextRoles.length != 0) && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
       const form = document.getElementById("form-IndRoleShortSU");
-      console.log("form.checkValidity(): "+form.checkValidity())
+
       if (form.checkValidity()) {
         return true;
       } else {
@@ -177,7 +190,7 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, roles, tabPressed, industries, editingInd, editingRole, knowNextSteps} = this.state;
+    const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, knowNextSteps} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const isEnabled = this.canBeSubmitted();
@@ -241,7 +254,7 @@ class IndustryRoleSU extends React.Component {
                   </div>
                 </div>
               )}
-              {((roles.length > 0) || editingRole != '') && (
+              {((rolesFromList.length != 0 || freeTextRoles.length != 0) || editingRole != '') && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="knowNextSteps">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
                   <RatingItems

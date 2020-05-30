@@ -41,7 +41,7 @@ class DiversitySU extends React.Component {
       .filter(hurdle => userInput.includes(hurdle.label))
       .map(value => value.value)
 
-    if (this.state.hurdles.length != 0 & userInput.length != 0) {
+    if (this.state.hurdles.length != 0 && userInput.length != 0) {
       this.setState({
         editingHurdles: true
       })
