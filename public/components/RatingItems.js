@@ -13,7 +13,10 @@ class RatingItems extends Component {
   }
 
   componentDidMount(){
-    const { handleTabPress} = this.props;
+    const { focusOnLoad, handleTabPress, name } = this.props;
+    if (focusOnLoad) {
+      document.getElementById("ratingsContainer").firstElementChild.focus()
+    }
     if (handleTabPress) {
       handleTabPress(false);
     }
@@ -21,6 +24,21 @@ class RatingItems extends Component {
 
 
   onBlur = (e) => {
+    const {required} = this.props
+    const {indexChecked} = this.state
+    const list = document.querySelectorAll(".ratingIcon")
+    var i;
+
+    if(!required || required && indexChecked != "") {
+      for (i = 0; i < list.length; ++i) {
+        list[i].classList.remove('error')
+      }
+    } else {
+      for (i = 0; i < list.length; ++i) {
+        list[i].classList.add('error')
+      }
+    }
+
     if (e.currentTarget.id === 'ratingsContainer') {
       this.setState({
         indexHovered: ''
@@ -58,9 +76,6 @@ class RatingItems extends Component {
   onKeyDown = (e) => {
     const { handleRatingChange } = this.props;
     const { timesClicked } = this.state;
-    console.log(e.currentTarget)
-    console.log(e.target)
-
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();
@@ -85,7 +100,7 @@ class RatingItems extends Component {
   }
 
   render() {
-    const {ratingOutOf, ratingIconImg, focusOnLoad} = this.props
+    const {ratingOutOf, ratingIconImg, focusOnLoad, name} = this.props
     const {indexChecked, indexHovered} = this.state
     var ratings = [];
 

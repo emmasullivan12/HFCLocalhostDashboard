@@ -37,6 +37,7 @@ class SelectBox extends React.Component {
     }
   //  this.heightCalc()
     if (handleTabPress) {
+      console.log("about to launch handle tab press")
       handleTabPress(false);
     }
   }
@@ -63,12 +64,14 @@ class SelectBox extends React.Component {
       const { values } = prevState
       if (multiple) {
 
+        handleChange(values)
+
         if (values.length != 0) {
+          console.log("finMultiOptions - from onBlur")
           if (finMultiOptions) {
             finMultiOptions()
           }
         }
-        handleChange(values)
 
         if(!required || required && values[0] != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
@@ -153,6 +156,7 @@ class SelectBox extends React.Component {
     }
 
     if (multiple && currentState === true && values.length != 0) {
+      console.log("finMultiOptions - from onClick")
       if (finMultiOptions) {
         finMultiOptions()
       }
@@ -201,6 +205,7 @@ class SelectBox extends React.Component {
   }
 
   onClickOption = (e) => {
+    console.log("ONCLICKOPTION gets triggered")
     e.preventDefault()
     e.stopPropagation()
     const { options, name, required, multiple, handleChange, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions } = this.props;
@@ -244,7 +249,7 @@ class SelectBox extends React.Component {
       handleChange(values)
 
       if (values.length === (options.length - this.countTitles())) {
-        console.log("finMultiOptions about to launch")
+        console.log("finMultiOptions - from onClickOption")
         if (finMultiOptions) {
           finMultiOptions()
         }
@@ -360,6 +365,9 @@ class SelectBox extends React.Component {
                 } else {
                   values.splice(index, 1)
                 }
+
+              //  handleChange(values)
+
                 const noMoreOptions = (values.length === (options.length - this.countTitles())) && showCheckbox != true
 
                 if (noMoreOptions) {
@@ -441,6 +449,7 @@ class SelectBox extends React.Component {
 
     // User pressed the tab key
     else if (e.keyCode === 9) {
+      //console.log("isLastChild: "+isLastChild)
       if (isLastChild != undefined) {
         e.preventDefault()
       }
@@ -472,6 +481,8 @@ class SelectBox extends React.Component {
               //  } else {
             //      values.splice(index, 1)
                 }
+
+                handleChange(values)
 
                 if (values.length === (options.length - this.countTitles())) {
                   if (finMultiOptions) {

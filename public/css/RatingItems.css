@@ -68,6 +68,10 @@
   color: #9F9EE7;
 }
 
+.ratingIcon.error{
+  color: red;
+}
+
 .ratingIcon svg {
   max-height: 64px;
   max-width: 64px;

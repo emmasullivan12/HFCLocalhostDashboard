@@ -48,6 +48,15 @@ const industryOptions = [
   {value: '9', label: 'Physics5', checkbox: true, isTitle: false}
 ];
 
+const roleOptions = [
+  {value: '0', label: 'Animator'},
+  {value: '1', label: 'Accountant'},
+  {value: '2', label: 'Banker'},
+  {value: '3', label: 'Candlestick Maker'},
+  {value: '4', label: 'Librarian'},
+  {value: '5', label: 'Delivery Driver'},
+];
+
 class IndustryRoleSU extends React.Component {
   constructor () {
     super();
@@ -57,7 +66,6 @@ class IndustryRoleSU extends React.Component {
       tabPressed: '',
       industries: [],
       editingInd: '',
-      rolesChosen: '',
       editingRole: '',
       knowNextSteps: '',
     }
@@ -68,11 +76,10 @@ class IndustryRoleSU extends React.Component {
     this.handleMultiRoles = this.handleMultiRoles.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.renderComponents = this.renderComponents.bind(this);
   }
 
   onRoleFocus = (e) => {
-    const currentStateRoles = this.state.rolesChosen;
+    const currentStateRoles = this.state.roles;
     if (currentStateRoles != '') {
       this.setState({
         editingRole: true
@@ -87,10 +94,6 @@ class IndustryRoleSU extends React.Component {
     } else {
       document.getElementById("knowNextSteps").classList.add('error');
     }
-  }
-
-  handleIndMoveNext = () => {
-//    document.getElementById("autocompleteBox-selectRole").focus()
   }
 
   handleIndChange(userInput) {
@@ -127,15 +130,15 @@ class IndustryRoleSU extends React.Component {
     }
   }
 
-  handleRoleChange(userInput, isValid) {
-    const currentStateRoles = this.state.rolesChosen;
+  handleRoleChange(userInput) {
+    const currentStateRoles = this.state.roles;
     if (currentStateRoles != '' && userInput === '') {
       this.setState({
         editingRole: true
       })
     }
     this.setState({
-      rolesChosen: userInput,
+      roles: userInput,
     });
   }
 
@@ -153,16 +156,15 @@ class IndustryRoleSU extends React.Component {
 
   handleSubmit(e) {
     const {updateStep} = this.props;
-
     updateStep('didIndRole');
   }
 
   canBeSubmitted() {
-    const {industries, rolesChosen, knowNextSteps} = this.state;
+    const {industries, roles, knowNextSteps} = this.state;
 
-    if (industries.length != 0 && rolesChosen != '' && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
+    if (industries.length != 0 && roles.length != 0 && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
       const form = document.getElementById("form-IndRoleShortSU");
-
+      console.log("form.checkValidity(): "+form.checkValidity())
       if (form.checkValidity()) {
         return true;
       } else {
@@ -174,24 +176,8 @@ class IndustryRoleSU extends React.Component {
 
   }
 
-  renderComponents(fileToRender, componentUpdatesState, error) {
-    import(`./${fileToRender}.js`)
-      .then(component => {
-        this.setState({
-          [componentUpdatesState]: component.default,
-          errorLoadingRoles: false
-        })
-      })
-      .catch(err => {
-        this.setState({
-          errorLoadingRoles: true
-        })
-        console.log("Dex to deal with logging error: "+err.message)
-      })
-  }
-
   render() {
-    const {errorLoadingRoles, roles, tabPressed, industries, editingInd, rolesChosen, editingRole, knowNextSteps} = this.state;
+    const {errorLoadingRoles, roles, tabPressed, industries, editingInd, editingRole, knowNextSteps} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const isEnabled = this.canBeSubmitted();
@@ -233,22 +219,18 @@ class IndustryRoleSU extends React.Component {
                       openOnClick
                       showValues
                       showCheckbox
-
                       finMultiOptions={this.handleMultiRoles}
-
-                      suggestions={roles}
+                      suggestions={roleOptions}
                       name='selectRole'
                       placeholder='Type Role(s):'
                       placeholderOnClick="Not sure? Select 'don't know'"
-                      renderComponents={this.renderComponents}
-                      fileToRender="Roles"
-                      componentUpdatesState="roles"
                       handleChange={this.handleRoleChange}
                       onFocus={this.onRoleFocus}
                       handleTabPress={this.handleTabPress}
-                  //    focusOnLoad={tabPressed ? false : true}
+                      focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                    //  isLastChild
                       required
                     />
                     {errorLoadingRoles === true && (
@@ -259,14 +241,16 @@ class IndustryRoleSU extends React.Component {
                   </div>
                 </div>
               )}
-              {((rolesChosen.length > 0) || editingRole === true) && (
+              {((roles.length > 0) || editingRole != '') && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="knowNextSteps">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
                   <RatingItems
                     ratingOutOf={10}
                     handleRatingChange={this.handleRatingChange}
+                    name='selectRating'
                     handleTabPress={this.handleTabPress}
-                  //  focusOnLoad={tabPressed ? false : true}
+                    focusOnLoad={tabPressed ? false : true}
+                    required
                   />
                 </div>
               )}
