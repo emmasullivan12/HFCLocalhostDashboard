@@ -106,7 +106,10 @@ class AutocompleteTagsMulti extends React.Component {
       }
 
       if (this.state.values.length > 2) {
-        document.getElementById("autocompleterTags-search-"+name).style.display = 'none';
+        const inputBox = document.getElementById("autocompleterTags-search-"+name)
+        inputBox.style.display = 'block';
+        inputBox.style.height = '0';
+        inputBox.style.opacity = '0';
       }
 
       this.setState({
@@ -134,7 +137,10 @@ class AutocompleteTagsMulti extends React.Component {
 
   focusOnInput = (e) => {
     const {name} = this.props
-    document.getElementById("autocompleterTags-search-"+name).style.display = 'inline-block';
+    const inputBox = document.getElementById("autocompleterTags-search-"+name)
+    inputBox.style.display = 'inline-block';
+    inputBox.style.height = 'unset';
+    inputBox.style.opacity = 'unset';
     document.getElementById("autocompleteBox-"+name).focus();
   }
 
@@ -219,6 +225,10 @@ class AutocompleteTagsMulti extends React.Component {
       handleChange(values)
 
       if ([...values].length === 0) {
+        const inputBox = document.getElementById("autocompleterTags-search-"+name)
+        inputBox.style.display = 'inline-block';
+        inputBox.style.height = 'unset';
+        inputBox.style.opacity = 'unset';
         if(!required) {
           document.getElementById("autocompleterTags-"+name).classList.remove('error')
         } else {
@@ -269,6 +279,23 @@ class AutocompleteTagsMulti extends React.Component {
       }
     })
   };
+
+/*  onKeyDownParent = e => {
+    const { showSuggestions } = this.state;
+    console.log("onKeyDownParent")
+    // User pressed the enter key
+    if (e.keyCode === 13) {
+      e.preventDefault();
+
+      this.setState({
+        showSuggestions: !showSuggestions
+      }, () => {
+        if (showSuggestions === false) {
+          this.focusOnInput()
+        }
+      })
+    }
+  }*/
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
@@ -712,6 +739,8 @@ class AutocompleteTagsMulti extends React.Component {
           className="form-control-std role autocompleterTags"
           id={"autocompleterTags-"+name}
           onClick={this.focusOnInput}
+      //    onKeyDown={this.onKeyDownParent}
+      //    tabIndex="0"
         >
           <div className="tagsContainer " id="selectContainer">
             { this.renderValues() }

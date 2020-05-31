@@ -4,6 +4,8 @@ var password = document.getElementById("password");
 var email = document.getElementById("email");
 var loginbtn = document.getElementById("login-btn");
 var formControl = document.getElementsByClassName("form-control-std");
+//var form = document.getElementById("form-login");
+const isValidEmail = email.checkValidity();
 
 // Disable the button on initial page load
 loginbtn.disabled = true;
@@ -24,7 +26,7 @@ for(let input of formControl) {
   }, false);
 
   input.addEventListener('input', function(event) {
-    if( email.value.length > 0 && password.value.length > 0){
+    if( isValidEmail && password.value.length > 0){
       loginbtn.disabled = false;
     }else{
       loginbtn.disabled = true;

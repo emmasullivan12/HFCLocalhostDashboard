@@ -15,7 +15,7 @@ var emailContainer = document.getElementById("emailContainer");
 var emailConfiContainer = document.getElementById("emailConfiContainer");
 var emailConfi = document.getElementById("emailConfi");
 var pwdContainer = document.getElementById("pwdContainer");
-var getStartedbtn = document.getElementById("getStarted-btn");
+var getStartedbtn = document.getElementById("submit-btn");
 
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
@@ -83,6 +83,8 @@ lowCharReq.style.color = '#cbcaca';
 specCharReq.style.color = '#cbcaca';
 numCharReq.style.color = '#cbcaca';
 
+
+
 // add event listeners
 menteebtn.addEventListener('click', function(event) {
   menteebtn.style.backgroundColor = '#6fc3b3';
@@ -97,6 +99,7 @@ menteebtn.addEventListener('click', function(event) {
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   getStartedbtn.style.display = 'block';
+  getStartedbtn.disabled = true;
   workEmailTooltip.style.display = 'none';
   emailText.innerHTML = 'Personal Email';
 //  codeTooltip.style.display = 'block';
@@ -122,6 +125,7 @@ mentorbtn.addEventListener('click', function(event) {
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   getStartedbtn.style.display = 'block';
+  getStartedbtn.disabled = true;
   workEmailTooltip.style.display = 'block';
   emailText.innerHTML = 'Work Email';
 //  codeInput.style.display = 'none';

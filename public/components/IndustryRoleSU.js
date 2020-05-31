@@ -173,8 +173,6 @@ class IndustryRoleSU extends React.Component {
 
   canBeSubmitted() {
     const {industries, rolesFromList, freeTextRoles, knowNextSteps} = this.state;
-    console.log("rolesFromList.length: "+rolesFromList.length)
-    console.log("freeTextRoles.length: "+freeTextRoles.length)
     if (industries.length != 0 && (rolesFromList.length != 0 || freeTextRoles.length != 0) && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
       const form = document.getElementById("form-IndRoleShortSU");
 

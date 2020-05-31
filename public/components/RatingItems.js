@@ -24,6 +24,16 @@ class RatingItems extends Component {
 
 
   onBlur = (e) => {
+    this.checkError()
+
+    if (e.currentTarget.id === 'ratingsContainer') {
+      this.setState({
+        indexHovered: ''
+      })
+    }
+  }
+
+  checkError = e => {
     const {required} = this.props
     const {indexChecked} = this.state
     const list = document.querySelectorAll(".ratingIcon")
@@ -37,12 +47,6 @@ class RatingItems extends Component {
       for (i = 0; i < list.length; ++i) {
         list[i].classList.add('error')
       }
-    }
-
-    if (e.currentTarget.id === 'ratingsContainer') {
-      this.setState({
-        indexHovered: ''
-      })
     }
   }
 
@@ -88,12 +92,14 @@ class RatingItems extends Component {
           indexChecked: ''
         }, () => {
           handleRatingChange("")
+          this.checkError()
         })
       } else {
         this.setState({
           indexChecked: value
         }, () => {
           handleRatingChange(value)
+          this.checkError()
         })
       }
     }
