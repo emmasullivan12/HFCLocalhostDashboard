@@ -1,8 +1,8 @@
-// Dex last merged this code on 28th Oct 2019 
+// Dex last merged this code on 28th Oct 2019
 
 import React, { Component } from "react";
 //import { connect } from "react-redux";
-import * as typeformEmbed from '@typeform/embed';
+// import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
 import TypeformFullPage from './TypeformFullPage.js';
 

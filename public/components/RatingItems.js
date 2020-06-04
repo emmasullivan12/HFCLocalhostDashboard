@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th May 2019
+// Dex last merged this code on 4th June 2019
 
 import React, { Component} from "react";
 import '../css/RatingItems.css';
@@ -138,76 +138,6 @@ class RatingItems extends Component {
         </label>
       );
     }
-
-/*    <label className="checkbox-container">{label}
-      <input
-        type="checkbox"
-        className="SubmitMatch-input"
-        value="1
-        required={required}
-        defaultChecked={defaultChecked}
-        disabled={disabled}
-      />
-      <span className="checkmark" />
-    </label>
-
-    .checkbox-container {
-      display: block;
-      position: relative;
-      padding-left: 4rem;
-      padding-top: .25rem;
-      margin-bottom: 1.25rem;
-      margin-right: 1rem;
-      cursor: pointer;
-      font-size: 14px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    .checkmark {
-      position: absolute;
-      top: 0;
-      left: 1rem;
-      height: 25px;
-      width: 25px;
-      background-color: rgba(78,78,214,.11);
-    }
-    .checkbox-container input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-    }
-    .checkbox-container:hover input ~ .checkmark,
-    .checkbox-container input:focus ~ .checkmark {
-      background-color: rgba(78,78,214,.29);
-    }
-    .checkbox-container input:checked ~ .checkmark {
-      background-color: rgba(78,78,214,.79);
-    }
-    .checkmark:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-    .checkbox-container input:checked ~ .checkmark:after {
-      display: block;
-    }
-    .checkbox-container .checkmark:after {
-      left: 9px;
-      top: 5px;
-      width: 5px;
-      height: 10px;
-      border: solid white;
-      border-width: 0 3px 3px 0;
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-    }*/
 
     return (
       <React.Fragment>
