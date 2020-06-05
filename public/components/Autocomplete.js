@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -255,7 +255,7 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onMouseDown, onKeyDown } = this;
-    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow, children } = this.props;
+    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow, handleMouseDown, children } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -323,6 +323,7 @@ class Autocomplete extends React.Component {
           onChange={onChange}
           onFocus={this.onFocus}
           onKeyDown={onKeyDown}
+          onMouseDown={handleMouseDown}
           value={userInput}
           onBlur={this.onBlur}
           autoComplete="off"

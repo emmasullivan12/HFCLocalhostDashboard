@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -37,7 +37,6 @@ class SelectBox extends React.Component {
     }
   //  this.heightCalc()
     if (handleTabPress) {
-      console.log("about to launch handle tab press")
       handleTabPress(false);
     }
   }
@@ -54,8 +53,6 @@ class SelectBox extends React.Component {
   }
 
   onBlur = (e) => {
-    console.log("ONBLUR triggered")
-
     const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -67,7 +64,6 @@ class SelectBox extends React.Component {
         handleChange(values)
 
         if (values.length != 0) {
-          console.log("finMultiOptions - from onBlur")
           if (finMultiOptions) {
             finMultiOptions()
           }
@@ -129,8 +125,6 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
-    console.log("ONCLICK gets triggered")
-
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
       return
     }
@@ -156,7 +150,6 @@ class SelectBox extends React.Component {
     }
 
     if (multiple && currentState === true && values.length != 0) {
-      console.log("finMultiOptions - from onClick")
       if (finMultiOptions) {
         finMultiOptions()
       }
@@ -205,7 +198,6 @@ class SelectBox extends React.Component {
   }
 
   onClickOption = (e) => {
-    console.log("ONCLICKOPTION gets triggered")
     e.preventDefault()
     e.stopPropagation()
     const { options, name, required, multiple, handleChange, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions } = this.props;
@@ -249,7 +241,6 @@ class SelectBox extends React.Component {
       handleChange(values)
 
       if (values.length === (options.length - this.countTitles())) {
-        console.log("finMultiOptions - from onClickOption")
         if (finMultiOptions) {
           finMultiOptions()
         }
@@ -325,7 +316,6 @@ class SelectBox extends React.Component {
 
     // User pressed the enter key
     if (e.keyCode === 13) {
-      console.log("on enter")
       e.preventDefault();
 
       this.setState(prevState => {
@@ -424,7 +414,6 @@ class SelectBox extends React.Component {
             if (otherValidityChecks) {
               otherValidityChecks();
             }
-            console.log("gets here")
 
             return {
               values: [ value ],
@@ -432,7 +421,6 @@ class SelectBox extends React.Component {
               isOpen: false,
             }
           } else {
-            console.log("gets hereeeeeee")
             if (prevState.values.length === 0) {
               if (finMultiOptions) {
                 finMultiOptions()
@@ -449,7 +437,6 @@ class SelectBox extends React.Component {
 
     // User pressed the tab key
     else if (e.keyCode === 9) {
-      //console.log("isLastChild: "+isLastChild)
       if (isLastChild != undefined) {
         e.preventDefault()
       }
@@ -1069,7 +1056,7 @@ class SelectBox extends React.Component {
   }
 
   render() {
-    const { handleChange, required, name } = this.props;
+    const { handleChange, required, name, handleMouseDown } = this.props;
     const { isOpen, isFocused } = this.state;
 
     return (
@@ -1081,6 +1068,7 @@ class SelectBox extends React.Component {
           onFocus={this.onFocus}
           onBlur={this.onBlur}
           onKeyDown={this.onKeyDown}
+          onMouseDown={handleMouseDown}
           required={required}
           onClick={this.onClick}
         >

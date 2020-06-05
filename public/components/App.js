@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -67,7 +67,7 @@ class Loading extends Component{
                           <span color="currentColor" className="SVGInline SpinnerSvg-jjs2a1-0 dtuFiT">
                             <svg className="SVGInline-svg SpinnerSvg-jjs2a1-0-svg dtuFiT-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                               <title>loader</title>
-                              <g fill="#2F2F26" fillrule="evenodd">
+                              <g fill="#2F2F26" fillRule="evenodd">
                                 <rect transform="rotate(22.5 26.506 4.294)" x="25.506" y="1.294" width="2" height="6" rx="1"/>
                                 <rect transform="rotate(45 32.02 7.98)" x="31.021" y="4.979" width="2" height="6" rx="1"/>
                                 <rect transform="rotate(-112.5 35.706 13.494)" x="34.706" y="10.494" width="2" height="6" rx="1"/>

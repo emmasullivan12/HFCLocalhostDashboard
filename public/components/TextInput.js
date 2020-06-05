@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -20,7 +20,7 @@ class TextInput extends React.Component {
 
   render() {
 //    const { onChange } = this;
-    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, maxLength } = this.props;
+    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, maxLength, handleMouseDown } = this.props;
 
     return (
       <React.Fragment>
@@ -37,6 +37,7 @@ class TextInput extends React.Component {
           required={required}
           onChange={handleChange}
           onKeyUp={handleKeyUp}
+          onMouseDown={handleMouseDown}
           maxLength={maxLength}
         />
 

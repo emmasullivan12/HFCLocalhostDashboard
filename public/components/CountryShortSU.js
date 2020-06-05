@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -37,6 +37,11 @@ class CountryShortSU extends React.Component {
     } else {
       e.target.classList.add('error');
     }
+  }
+
+  handleMouseDown = (e) => {
+    const {timeout} = this.state;
+    clearTimeout(timeout);
   }
 
   handleKeyUp = (e) => {
@@ -191,6 +196,7 @@ class CountryShortSU extends React.Component {
                     placeholder='Country'
                     handleTabPress={this.handleTabPress}
                     handleChange={this.handleCountryChange}
+                    handleMouseDown={this.handleMouseDown}
                     focusOnLoad
                     idValue='value'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -198,7 +204,7 @@ class CountryShortSU extends React.Component {
                   />
                 </div>
               </div>
-              {countryLocal != '' && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'IRL' && countryLocal != 'CAN') && (
+              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'IRL' && countryLocal != 'CAN') && (
                 <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re not in your country yet!</div>
               )}
               {countryLocal === 'USA' && (
@@ -211,6 +217,7 @@ class CountryShortSU extends React.Component {
                       placeholder='State'
                       handleTabPress={this.handleTabPress}
                       handleChange={this.handleStateChange}
+                      handleMouseDown={this.handleMouseDown}
                       focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -229,6 +236,7 @@ class CountryShortSU extends React.Component {
                       placeholder='Province'
                       handleTabPress={this.handleTabPress}
                       handleChange={this.handleStateChange}
+                      handleMouseDown={this.handleMouseDown}
                       focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -247,6 +255,7 @@ class CountryShortSU extends React.Component {
                       placeholder='County'
                       handleTabPress={this.handleTabPress}
                       handleChange={this.handleStateChange}
+                      handleMouseDown={this.handleMouseDown}
                       focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -265,6 +274,7 @@ class CountryShortSU extends React.Component {
                       placeholder='County'
                       handleTabPress={this.handleTabPress}
                       handleChange={this.handleStateChange}
+                      handleMouseDown={this.handleMouseDown}
                       focusOnLoad={tabPressed ? false : true}
                       required
                     />
@@ -284,6 +294,7 @@ class CountryShortSU extends React.Component {
                     handleChange={this.handleCityChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={countryIsValid === true && !tabPressed ? true : false}
                   />

@@ -1,7 +1,8 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 
+import personalEmails from "./PersonalEmails.js";
 import {isURL} from './GeneralFunctions.js';
 
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
@@ -10,6 +11,7 @@ class NoEduEmailContent extends Component {
     super();
     this.state = {
       progCode: '',
+      progCodeIsValid: '',
       emailInput: '',
       emailIsValid: '',
       isPersonalEmail: '',
@@ -60,7 +62,8 @@ class NoEduEmailContent extends Component {
 
   handleCodeChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
+      progCodeIsValid: e.target.value.length > 0
     })
   }
 
@@ -133,6 +136,11 @@ class NoEduEmailContent extends Component {
     }
   }
 
+  handleMouseDown = (e) => {
+    const {timeout} = this.state;
+    clearTimeout(timeout);
+  }
+
   handleKeyUp = (e) => {
     e.persist()
     const {timeout} = this.state;
@@ -157,12 +165,11 @@ class NoEduEmailContent extends Component {
     const {emailInput} = this.state;
     const {eetStatus} = this.props;
 
-    const freeEmailDomains = ["gmail.com", "hotmail.com"];
     var emailSplit = emailInput.split('@')
     var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
     const emailFormInput = document.getElementById("profEmail")
 
-    if (freeEmailDomains.includes(freeEmail)) {
+    if (personalEmails.includes(freeEmail)) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: true
@@ -235,16 +242,12 @@ class NoEduEmailContent extends Component {
   }
 
   canBeSubmitted() {
-    const {emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDotAndAt, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid} = this.state;
+    const {progCode, progCodeIsValid, emailInput, currentSitu, profProfileURL, urlInputIsValid, emailIsValid, isPersonalEmail, containsDotAndAt, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid} = this.state;
     const {eetStatus} = this.props;
 
     if (eetStatus != 'none') {
-      if ((emailInput === '' || emailIsValid === true) && currentSitu.length >= 25 && currentSitu.length <= 500 && (profProfileURL === '' || urlInputIsValid != false)) {
-        if (isHtmlValid) {
-          return true;
-        } else {
-          return false;
-        }
+      if ((progCode === '' || progCodeIsValid === true) && (emailInput === '' || emailIsValid === true) && currentSitu.length >= 25 && currentSitu.length <= 500 && (profProfileURL === '' || urlInputIsValid != false)) {
+        return true;
       } else {
         return false;
       }
@@ -284,8 +287,9 @@ class NoEduEmailContent extends Component {
               name="progCode"
               className="form-control-std verifyForm"
               onBlur={this.onBlur}
-              onChange={this.handleCodeMoveNext}
+              onChange={this.handleCodeChange}
               onKeyUp={this.handleKeyUp}
+              onMouseDown={this.handleMouseDown}
               placeholder="Type programme code...."
               id="progverifcode"
               autoComplete="off"
@@ -304,6 +308,7 @@ class NoEduEmailContent extends Component {
               onBlur={this.onBlur}
               onChange={this.handleSituChange}
               onKeyUp={this.handleKeyUp}
+              onMouseDown={this.handleMouseDown}
               placeholder="Help us assess your eligibility to join..."
               autoComplete="off"
               autoCorrect="off"
@@ -337,6 +342,7 @@ class NoEduEmailContent extends Component {
                   onBlur={this.onBlur}
                   onChange={this.handleEmailChange}
                   onKeyUp={this.handleKeyUp}
+                  onMouseDown={this.handleMouseDown}
                   className="form-control-std verifyForm"
                   placeholder={"Your " + (eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional') + " email address"}
                   autoComplete="off"
@@ -365,6 +371,7 @@ class NoEduEmailContent extends Component {
               onBlur={this.onBlur}
               onChange={this.handleURLChange}
               onKeyUp={this.handleKeyUp}
+              onMouseDown={this.handleMouseDown}
               className="form-control-std verifyForm"
               placeholder="https://...."
               autoComplete="off"

@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -64,13 +64,22 @@ class EduShortSU extends React.Component {
   }
 
   onBlur(e) {
-    console.log("e.target onblur")
-    console.log(e.target)
+    if (e.target.id === 'schNameTextBox') {
+      this.handleSchChange(e)
+    } else if (e.target.id === 'uniNameTextBox') {
+      this.handleUniChange(e)
+    }
+
     if(e.target.checkValidity()) {
       e.target.classList.remove('error');
     } else {
       e.target.classList.add('error');
     }
+  }
+
+  handleMouseDown = (e) => {
+    const {timeout} = this.state;
+    clearTimeout(timeout);
   }
 
   handleKeyUp = (e) => {
@@ -500,7 +509,6 @@ class EduShortSU extends React.Component {
         this.setState({
           errorLoadingEdu: true
         })
-        console.log("Dex to deal with logging error: "+err.message)
       })
   }
 
@@ -604,6 +612,7 @@ class EduShortSU extends React.Component {
                   name='eetStatus'
                   handleChange={this.handleEetStatusChange}
                   handleTabPress={this.handleTabPress}
+                  handleMouseDown={this.handleMouseDown}
                   focusOnLoad
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   required
@@ -620,6 +629,7 @@ class EduShortSU extends React.Component {
                       handleChange={this.handleUKSchChange}
                       handleTabPress={this.handleTabPress}
                       renderComponents={this.renderComponents}
+                      handleMouseDown={this.handleMouseDown}
                       fileToRender="UKSchs"
                       componentUpdatesState="ukSchsList"
                       focusOnLoad={tabPressed ? false : true}
@@ -672,6 +682,7 @@ class EduShortSU extends React.Component {
                   //  handleChange={this.handleSchChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
                     maxLength="75"
@@ -688,6 +699,7 @@ class EduShortSU extends React.Component {
                     id='schYrGrp'
                     handleChange={this.handleSchYrChange}
                     handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
                     focusOnLoad={schNameIsValid === true && !tabPressed ? true : false}
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
@@ -705,6 +717,7 @@ class EduShortSU extends React.Component {
                       handleChange={this.handleUKUniChange}
                       handleTabPress={this.handleTabPress}
                       renderComponents={this.renderComponents}
+                      handleMouseDown={this.handleMouseDown}
                       fileToRender="UKUnis"
                       componentUpdatesState="ukUnisList"
                       idValue='value'
@@ -757,6 +770,7 @@ class EduShortSU extends React.Component {
                   //  handleChange={this.handleUniChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
                     maxLength="75"
@@ -775,6 +789,7 @@ class EduShortSU extends React.Component {
                       handleTabPress={this.handleTabPress}
                       handleFocus={this.handleFocus}
                       otherValidityChecks={this.otherValidityChecks}
+                      handleMouseDown={this.handleMouseDown}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed ? true : false}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
@@ -797,6 +812,7 @@ class EduShortSU extends React.Component {
                       handleTabPress={this.handleTabPress}
                       handleFocus={this.handleFocus}
                       otherValidityChecks={this.otherValidityChecks}
+                      handleMouseDown={this.handleMouseDown}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp != '' && !tabPressed ? true : false}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
@@ -815,6 +831,7 @@ class EduShortSU extends React.Component {
                       handleChange={this.handlePgGradYrChange}
                       handleTabPress={this.handleTabPress}
                       handleFocus={this.handleFocus}
+                      handleMouseDown={this.handleMouseDown}
                   //    otherValidityChecks={this.otherValidityChecks}
                       focusOnLoad={uniNameIsValid === true && uniYrGrp === 'pg' && !tabPressed ? true : false}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -835,6 +852,7 @@ class EduShortSU extends React.Component {
                     handleChange={this.handleJobChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
                     maxLength="50"
@@ -853,6 +871,7 @@ class EduShortSU extends React.Component {
                     handleChange={this.handleTrainChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
                     maxLength="50"

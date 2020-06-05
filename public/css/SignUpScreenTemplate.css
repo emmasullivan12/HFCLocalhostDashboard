@@ -3,7 +3,8 @@
 .typeformContainer{
   padding: 100px 85px;
   max-width: 518px;
-  min-width: 488px;
+  width: 518px;
+/*  min-width: 488px; */
   display: inline-block;
 }
 

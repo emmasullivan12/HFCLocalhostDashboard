@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -11,6 +11,7 @@ import TypeformEmbedded from './TypeformEmbedded.js';
 import Checkbox from './Checkbox.js';
 import NoEduEmail from './NoEduEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';
+import personalEmails from "./PersonalEmails.js";
 
 class ConfirmStudent extends React.Component {
   constructor () {
@@ -164,12 +165,11 @@ class ConfirmStudent extends React.Component {
     const {userInput, emailFormat, dm, eduEmailIsValid} = this.state;
     const {country, eetStatus, schName, uniName, schNameFreeText, uniNameFreeText} = this.props;
 
-    const freeEmailDomains = ["gmail.com", "hotmail.com"];
     var emailSplit = userInput.split('@')
     var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
     const emailFormInput = document.getElementById("eduEmailInput")
 
-  if (freeEmailDomains.includes(freeEmail)) {
+  if (personalEmails.includes(freeEmail)) {
       this.setState({
         eduEmailIsValid: false,
         isPersonalEmail: true,
