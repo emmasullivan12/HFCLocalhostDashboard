@@ -771,6 +771,7 @@ class EduShortSU extends React.Component {
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
+                    onKeyDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
                     maxLength="75"
@@ -853,6 +854,7 @@ class EduShortSU extends React.Component {
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
+                    onKeyDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
                     maxLength="50"
@@ -872,6 +874,7 @@ class EduShortSU extends React.Component {
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
+                    onKeyDown={this.handleMouseDown}
                     onBlur={this.onBlur}
                     focusOnLoad={tabPressed ? false : true}
                     maxLength="50"

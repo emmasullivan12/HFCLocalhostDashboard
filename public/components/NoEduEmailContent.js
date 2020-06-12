@@ -141,24 +141,31 @@ class NoEduEmailContent extends Component {
     clearTimeout(timeout);
   }
 
-  handleKeyUp = (e) => {
-    e.persist()
+  handleKeyDown = (e) => {
     const {timeout} = this.state;
     clearTimeout(timeout);
+  }
 
-    this.setState({
-      timeout: setTimeout(()=>{
-        if (e.target.name === 'progCode') {
-          this.handleCodeMoveNext(e)
-        } else if (e.target.name === 'currentSitu') {
-          this.handleSituMoveNext(e)
-        } else if (e.target.name === 'emailInput') {
-          this.handleEmailMoveNext(e)
-        } else if (e.target.name === 'profProfileURL') {
-          this.handleURLMoveNext(e)
-        }
-      }, 800)
-    })
+  handleKeyUp = (e) => {
+    e.persist()
+    const {timeout, emailInput, emailIsValid} = this.state;
+    clearTimeout(timeout);
+
+    if (e.target.value != '') {
+      this.setState({
+        timeout: setTimeout(()=>{
+          if (e.target.name === 'progCode') {
+            this.handleCodeMoveNext(e)
+          } else if (e.target.name === 'currentSitu') {
+            this.handleSituMoveNext(e)
+          } else if (e.target.name === 'emailInput') {
+            this.handleEmailMoveNext(e)
+          } else if (e.target.name === 'profProfileURL') {
+            this.handleURLMoveNext(e)
+          }
+        }, 800)
+      })
+    }
   }
 
   checkEmail() {
@@ -289,6 +296,7 @@ class NoEduEmailContent extends Component {
               onBlur={this.onBlur}
               onChange={this.handleCodeChange}
               onKeyUp={this.handleKeyUp}
+              onKeyDown={this.handleKeyDown}
               onMouseDown={this.handleMouseDown}
               placeholder="Type programme code...."
               id="progverifcode"
@@ -308,6 +316,7 @@ class NoEduEmailContent extends Component {
               onBlur={this.onBlur}
               onChange={this.handleSituChange}
               onKeyUp={this.handleKeyUp}
+              onKeyDown={this.handleKeyDown}
               onMouseDown={this.handleMouseDown}
               placeholder="Help us assess your eligibility to join..."
               autoComplete="off"
@@ -342,6 +351,7 @@ class NoEduEmailContent extends Component {
                   onBlur={this.onBlur}
                   onChange={this.handleEmailChange}
                   onKeyUp={this.handleKeyUp}
+                  onKeyDown={this.handleKeyDown}
                   onMouseDown={this.handleMouseDown}
                   className="form-control-std verifyForm"
                   placeholder={"Your " + (eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional') + " email address"}

@@ -86,7 +86,7 @@
                   <input type="number" name="year" id="yDOB" min="1910" max="2050" minlength="4" maxlength="4" placeholder="yyyy" class="form-control-dob prompt dob" required>
                 </div>
               </div>
-              <div class="descriptor prompt" id="dobPrompt">You must be 13 or older to use Prospela</div>
+              <div class="descriptor prompt error" id="dobPrompt">You must be 13 or older to use Prospela</div>
             </div>
             <div class="form-group" id="pwdContainer">
               <div class="descriptor">Password</div>
@@ -99,7 +99,7 @@
                 <div class="reqs" id="specCharReq"><span class="crl" id="specCharReq-crl">&#9899;</span>One special (eg. £@*%)</div>
               </div>
             </div>
-            <label class="checkbox-container-login" id="tncText">I have read and agree to Prospela's <a href="https://prospela.com/terms-of-use-safeguarding-policy/" target="_blank">Terms & Safeguarding Policy</a> and <a href="https://prospela.com/privacy-policy/" target="_blank">Privacy Policy</a> and confirm that I am over 13 years of age<input type="checkbox" id="tncCheckbox" name="tandp" required><span class="checkmark left" id="tncStyle"></span></label>
+            <label class="checkbox-container-login" id="tncText">I have read and agree to Prospela's <a href="https://prospela.com/terms-of-use-safeguarding-policy/" target="_blank" tabindex="-1">Terms & Safeguarding Policy</a> and <a href="https://prospela.com/privacy-policy/" target="_blank" tabindex="-1">Privacy Policy</a> and confirm that I am over 13 years of age<input type="checkbox" id="tncCheckbox" name="tandp" required><span class="checkmark left" id="tncStyle"></span></label>
             <button type="submit" id="getStarted-btn" class="Submit-btn fullWidth">Get Started</button>
           </form>
           <div class="login-error-msg">The email and/or password entered were not recognised. Please try again</div>

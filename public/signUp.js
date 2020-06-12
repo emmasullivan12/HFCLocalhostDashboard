@@ -1,4 +1,6 @@
 /* Dex last merged this code on 12th Dec 2019*/
+//import { personalEmails } from './PersonalEmails.js';
+
 var formControlStd = document.getElementsByClassName("form-control-std");
 
 var tncCheckbox = document.getElementById("tncCheckbox");
@@ -15,7 +17,7 @@ var emailContainer = document.getElementById("emailContainer");
 var emailConfiContainer = document.getElementById("emailConfiContainer");
 var emailConfi = document.getElementById("emailConfi");
 var pwdContainer = document.getElementById("pwdContainer");
-var getStartedbtn = document.getElementById("submit-btn");
+var getStartedbtn = document.getElementById("getStarted-btn");
 
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
@@ -83,10 +85,21 @@ lowCharReq.style.color = '#cbcaca';
 specCharReq.style.color = '#cbcaca';
 numCharReq.style.color = '#cbcaca';
 
-
+var dobIsValid = false;
+var pwdIsValid = false;
+let personalEmails;
 
 // add event listeners
 menteebtn.addEventListener('click', function(event) {
+  fname.value = '';
+  lname.value = '';
+  email.value = '';
+  dDOB.value = '';
+  mDOB.value = '';
+  yDOB.value = '';
+  pwd.value = '';
+  tncCheckbox.checked = false;
+
   menteebtn.style.backgroundColor = '#6fc3b3';
   menteebtn.style.color = '#fff';
   mentorbtn.style.backgroundColor = '#fff';
@@ -112,6 +125,27 @@ menteebtn.addEventListener('click', function(event) {
 });
 
 mentorbtn.addEventListener('click', function(event) {
+  fname.value = '';
+  lname.value = '';
+  email.value = '';
+  emailConfi.value = '';
+  emailConfiPrompt.style.visibility = 'hidden';
+  dDOB.value = '';
+  mDOB.value = '';
+  yDOB.value = '';
+  pwd.value = '';
+  tncCheckbox.checked = false;
+
+  console.log("personalEmails B4: "+personalEmails)
+  import(`./PersonalEmails.js`)
+    .then(component => {
+      personalEmails = component.default
+      console.log("personalEmails after: "+personalEmails)
+    })
+    .catch(err => {
+      emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
+    })
+
   mentorbtn.style.backgroundColor = '#6fc3b3';
   mentorbtn.style.color = '#fff';
   menteebtn.style.backgroundColor = '#fff';
@@ -137,79 +171,157 @@ mentorbtn.addEventListener('click', function(event) {
   }
 });
 
-/* codeTooltip.addEventListener('click', function(event) {
-  emailText.innerHTML = 'Personal Email';
-  codeTooltip.style.display = 'none';
-  codeInput.style.display = 'block';
-  inviteCode.focus();
-  inviteCode.required = true;
-});
-*/
+function canBeSubmitted() {
+  if (fname.value != '' && lname.value != '' && email.checkValidity() && dobIsValid === true && pwdIsValid === true && tncCheckbox.checked === true) {
+    if (menteeradio.checked === true) {
+      if (email.value === emailConfi.value) {
+        getStartedbtn.disabled = false;
+      } else {
+        getStartedbtn.disabled = true;
+      }
+    } else {
+      getStartedbtn.disabled = false;
+    }
+  } else {
+    getStartedbtn.disabled = true;
+  }
 
-/* noCodeTooltip.addEventListener('click', function(event) {
-  emailText.innerHTML = 'School or University Email';
-  codeTooltip.style.display = 'block';
-  codeTooltip.innerHTML = 'Don\'t have a School email?';
-  codeInput.style.display = 'none';
-  inviteCode.required = false;
-});
-*/
+}
+
+fname.addEventListener('invalid', function(e) {
+  fname.classList.add('error');
+}, false)
+
+lname.addEventListener('invalid', function(e) {
+  lname.classList.add('error');
+}, false)
 
 email.addEventListener('focus', function(event) {
-  if (emailText.innerHTML === 'Personal Email') {
+  if (emailText.innerHTML === 'Work Email') {
     emailPrompt.style.visibility = 'visible';
-    emailConfiContainer.style.display = 'block';
   } else {
     emailPrompt.style.visibility = 'hidden';
   }
 },true);
 
-email.addEventListener('blur', function(event) {
-  emailPrompt.style.visibility = 'hidden';
-  if (email.value != emailConfi.value) {
-    emailConfiPrompt.style.visibility = 'visible';
+email.addEventListener('input', function(e) {
+  if (email.checkValidity()) {
+    if (emailText.innerHTML === 'Personal Email' && e.target.value.length > 0) {
+      email.classList.remove('error');
+      emailConfiContainer.style.display = 'block';
+      if (email.value != emailConfi.value) {
+        emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
+        emailConfi.value != '' ? emailConfi.classList.add('error') : '';
+      } else {
+        emailConfiPrompt.style.visibility = 'hidden';
+        emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
+      }
+    } else if (emailText.innerHTML === 'Work Email') {
+      var emailSplit = email.value.split('@')
+      var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
+
+      if (personalEmails.includes(freeEmail)) {
+        emailConfiPrompt.classList.add('error')
+      } else {
+        emailConfiPrompt.classList.remove('error')
+      }
+      emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
+      emailConfiContainer.style.display = 'none';
+
+    } else {
+      emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
+      emailConfiContainer.style.display = 'none';
+    }
   } else {
-    emailConfiPrompt.style.visibility = 'hidden';
+    email.classList.add('error');
+  }
+});
+
+email.addEventListener('blur', function(e) {
+  emailPrompt.style.visibility = 'hidden';
+  if (email.checkValidity()) {
+    email.classList.remove('error');
+    if (emailText.innerHTML === 'Personal Email') {
+      if (email.value != emailConfi.value) {
+        emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
+        emailConfi.value != '' ? emailConfi.classList.add('error') : '';
+      } else {
+        emailConfiPrompt.style.visibility = 'hidden';
+        emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
+      }
+  /*  } else if (emailText.innerHTML === 'Work Email') {
+      var emailSplit = email.value.split('@')
+      var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
+      var {personalEmails} = require ('./PersonalEmails.js')
+
+      if (personalEmails.includes(freeEmail)) {
+        emailConfiPrompt.classList.add('error')
+      } else {
+        emailConfiPrompt.classList.remove('error')
+      }*/
+    }
+  } else {
+    email.classList.add('error');
   }
 });
 
 emailConfi.addEventListener('blur', function(event) {
   if (email.value != emailConfi.value) {
     emailConfiPrompt.style.visibility = 'visible';
+    emailConfi.classList.add('error');
   } else {
     emailConfiPrompt.style.visibility = 'hidden';
+    emailConfi.classList.remove('error');
   }
 });
 
+emailConfi.addEventListener('input', function(event) {
+  if (email.value != emailConfi.value) {
+    emailConfiPrompt.style.visibility = 'visible';
+    emailConfi.classList.add('error');
+  } else {
+    emailConfiPrompt.style.visibility = 'hidden';
+    emailConfi.classList.remove('error');
+  }
+});
 
 // check validity of inputs when submit & onBlur i.e. after clicing away
 for(let input of formControlStd) {
-  input.addEventListener('invalid', function(event) {
-    input.classList.add('error');
-  }, false);
+
+  input.addEventListener('input', function(event) {
+    if(input.checkValidity()) {
+      input.classList.remove('error');
+    }
+    canBeSubmitted()
+  });
 
   // Check validity onblur (i.e. click away)
   input.addEventListener('blur', function(event) {
     if(input.checkValidity()) {
       input.classList.remove('error');
     }
- });
+    canBeSubmitted()
+  });
 }
 
 dDOB.addEventListener('invalid', function(event) {
   dDOB.classList.add('error');
+  dobIsValid = false
 }, false);
 
 mDOB.addEventListener('invalid', function(event) {
   mDOB.classList.add('error');
+  dobIsValid = false
 }, false);
 
 yDOB.addEventListener('invalid', function(event) {
   yDOB.classList.add('error');
+  dobIsValid = false
 }, false);
 
 pwd.addEventListener('invalid', function(event) {
   pwd.classList.add('error');
+  pwdIsValid = false
 }, false);
 
 tncCheckbox.addEventListener('invalid', function(event) {
@@ -218,11 +330,47 @@ tncCheckbox.addEventListener('invalid', function(event) {
 }, false);
 
 tncCheckbox.addEventListener('change', function(event) {
+  canBeSubmitted()
   if(tncCheckbox.checkValidity()) {
     tncText.classList.remove('error');
     tncStyle.classList.remove('error');
  }
 })
+
+function checkDOB() {
+  if(dDOB.checkValidity() && validateDay()) {
+   dDOB.classList.remove('error');
+  } else {
+    dobIsValid = false
+    dDOB.classList.add('error');
+  }
+  if(yDOB.checkValidity()) {
+   yDOB.classList.remove('error');
+  }
+  if(mDOB.checkValidity()) {
+   mDOB.classList.remove('error');
+  }
+  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
+   dDOB.classList.remove('error');
+   if(checkAge()){
+     dobIsValid = true
+     dDOB.classList.remove('error');
+     mDOB.classList.remove('error');
+     yDOB.classList.remove('error');
+     dobPrompt.style.visibility = 'hidden';
+   } else {
+     dobIsValid = false
+     dDOB.classList.add('error');
+     mDOB.classList.add('error');
+     yDOB.classList.add('error');
+     dobPrompt.style.visibility = 'visible';
+   }
+  } else {
+    dobIsValid = false
+  //  dDOB.classList.add('error');
+ }
+ canBeSubmitted()
+}
 
 function validateDay() {
   var d = dDOB.value;
@@ -263,106 +411,48 @@ function checkAge() {
 }
 
 dDOB.addEventListener('blur', function(event) {
-  if(dDOB.checkValidity() && validateDay()) {
-   dDOB.classList.remove('error');
-  }else{
-    dDOB.classList.add('error');
-  }
-  if(yDOB.checkValidity()) {
-   yDOB.classList.remove('error');
-  }
-  if(mDOB.checkValidity()) {
-   mDOB.classList.remove('error');
-  }
-  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
-   dDOB.classList.remove('error');
-   if(checkAge()){
-     dDOB.classList.remove('error');
-     mDOB.classList.remove('error');
-     yDOB.classList.remove('error');
-     dobPrompt.style.visibility = 'hidden';
-   }else{
-     dDOB.classList.add('error');
-     mDOB.classList.add('error');
-     yDOB.classList.add('error');
-     dobPrompt.style.visibility = 'visible';
-   }
-  }else{
-    dDOB.classList.add('error');
- }
+  checkDOB()
 })
 
 mDOB.addEventListener('blur', function(event) {
-  if(mDOB.checkValidity()) {
-   mDOB.classList.remove('error');
-  }
-  if(yDOB.checkValidity()) {
-   yDOB.classList.remove('error');
-  }
-  if(dDOB.checkValidity() && validateDay()) {
-   dDOB.classList.remove('error');
-  }else{
-    dDOB.classList.add('error');
-  }
-  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
-   dDOB.classList.remove('error');
-   if(checkAge() && validateDay()){
-     dDOB.classList.remove('error');
-     mDOB.classList.remove('error');
-     yDOB.classList.remove('error');
-     dobPrompt.style.visibility = 'hidden';
-   }else{
-     dDOB.classList.add('error');
-     mDOB.classList.add('error');
-     yDOB.classList.add('error');
-     dobPrompt.style.visibility = 'visible';
-   }
-  /*}else{
-   mDOB.classList.add('error');*/
-  }
+  checkDOB()
 })
 
 yDOB.addEventListener('blur', function(event) {
-  if(yDOB.checkValidity()) {
-   yDOB.classList.remove('error');
-  }
-  if(mDOB.checkValidity()) {
-   mDOB.classList.remove('error');
-  }
-  if(dDOB.checkValidity() && validateDay()) {
-   dDOB.classList.remove('error');
-  }
-  if(dDOB.checkValidity() && mDOB.checkValidity() && yDOB.checkValidity() && validateDay()) {
-   dDOB.classList.remove('error');
-   if(checkAge()){
-     dDOB.classList.remove('error');
-     mDOB.classList.remove('error');
-     yDOB.classList.remove('error');
-     dobPrompt.style.visibility = 'hidden';
-   }else{
-     dDOB.classList.add('error');
-     mDOB.classList.add('error');
-     yDOB.classList.add('error');
-     dobPrompt.style.visibility = 'visible';
-   }
-  /*}else{
-   yDOB.classList.add('error');*/
-  }
+  checkDOB()
 })
 
-// Check validity onblur (i.e. click away)
-/*inviteCode.addEventListener('input', function(event) {
-  if(inviteCode.checkValidity()) {
-    inviteCode.classList.remove('error');
-  } else {
-    inviteCode.classList.add('error');
-  }
+dDOB.addEventListener('input', function(event) {
+  checkDOB()
 })
-*/
+
+mDOB.addEventListener('input', function(event) {
+  checkDOB()
+})
+
+yDOB.addEventListener('input', function(event) {
+  checkDOB()
+})
 
 pwd.addEventListener('blur', function(event) {
   if(pwd.checkValidity() && this.value.length > 7 && this.value.length <= 50 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#£$%^&*()_+]/) != -1) {
    pwd.classList.remove('error');
+   pwdIsValid = true
+   canBeSubmitted()
+ } else {
+   pwdIsValid = false
+   canBeSubmitted()
+ }
+})
+
+pwd.addEventListener('input', function(event) {
+  if(pwd.checkValidity() && this.value.length > 7 && this.value.length <= 50 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#£$%^&*()_+]/) != -1) {
+   pwd.classList.remove('error');
+   pwdIsValid = true
+   canBeSubmitted()
+ } else {
+   pwdIsValid = false
+   canBeSubmitted()
  }
 })
 
@@ -377,6 +467,7 @@ pwd.addEventListener('input', function(event) {
     numCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
     numCharReq.style.color = '#cbcaca';
     pwd.classList.add('error');
+    pwdIsValid = false
   }
 });
 
@@ -386,6 +477,7 @@ pwd.addEventListener('input', function(event) {
     numReqCrl.style.textShadow = '0 0 0 #cbcaca';
     numReq.style.color = '#cbcaca';
     pwd.classList.add('error');
+    pwdIsValid = false
   }else{
     numReqCrl.style.color = 'transparent';
     numReqCrl.style.textShadow = '0 0 0 #7e7ec9';
@@ -400,6 +492,7 @@ pwd.addEventListener('input', function(event) {
     upCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
     upCharReq.style.color = '#cbcaca';
     pwd.classList.add('error');
+    pwdIsValid = false
   }else{
     upCharReqCrl.style.color = 'transparent';
     upCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
@@ -414,6 +507,7 @@ pwd.addEventListener('input', function(event) {
     lowCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
     lowCharReq.style.color = '#cbcaca';
     pwd.classList.add('error');
+    pwdIsValid = false
   }else{
     lowCharReqCrl.style.color = 'transparent';
     lowCharReqCrl.style.textShadow = '0 0 0 #7e7ec9';
@@ -433,5 +527,6 @@ pwd.addEventListener('input', function(event) {
     specCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
     specCharReq.style.color = '#cbcaca';
     pwd.classList.add('error');
+    pwdIsValid = false
   }
 });
