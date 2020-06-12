@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020
+// Dex last merged this code on 12th June 2020
 
 import React, { Component } from "react";
 
@@ -298,7 +298,7 @@ class NoEduEmailContent extends Component {
               onKeyUp={this.handleKeyUp}
               onKeyDown={this.handleKeyDown}
               onMouseDown={this.handleMouseDown}
-              placeholder="Type programme code...."
+              placeholder="_ _ _ _ _ _"
               id="progverifcode"
               autoComplete="off"
               autoCorrect="off"
