@@ -1,4 +1,4 @@
-// merged on 15th June 2020
+// merged on 15th June 2020 
 
 const personalEmails = [
 '0-mail.com',
