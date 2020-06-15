@@ -136,15 +136,15 @@ mentorbtn.addEventListener('click', function(event) {
   pwd.value = '';
   tncCheckbox.checked = false;
 
-  console.log("personalEmails B4: "+personalEmails)
+/*
   import(`./PersonalEmails.js`)
     .then(component => {
       personalEmails = component.default
-      console.log("personalEmails after: "+personalEmails)
     })
     .catch(err => {
-      emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
+      email.value != '' ? emailPrompt.style.visibility = 'visible' : '';
     })
+*/
 
   mentorbtn.style.backgroundColor = '#6fc3b3';
   mentorbtn.style.color = '#fff';
@@ -207,7 +207,6 @@ email.addEventListener('focus', function(event) {
 email.addEventListener('input', function(e) {
   if (email.checkValidity()) {
     if (emailText.innerHTML === 'Personal Email' && e.target.value.length > 0) {
-    //  email.classList.remove('error');
       emailConfiContainer.style.display = 'block';
       if (email.value != emailConfi.value) {
         emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
@@ -219,11 +218,15 @@ email.addEventListener('input', function(e) {
     } else if (emailText.innerHTML === 'Work Email') {
       var emailSplit = email.value.split('@')
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
-
+      var personalEmails = ['gmail.com', 'hotmail.com']
       if (personalEmails.includes(freeEmail)) {
-        emailConfiPrompt.classList.add('error')
+        console.log("input adds error")
+        emailPrompt.classList.add('error')
+        email.classList.add('error');
       } else {
-        emailConfiPrompt.classList.remove('error')
+        console.log("input rm error")
+        emailPrompt.classList.remove('error')
+        email.classList.remove('error');
       }
       emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
       emailConfiContainer.style.display = 'none';
@@ -238,10 +241,10 @@ email.addEventListener('input', function(e) {
 });
 
 email.addEventListener('blur', function(e) {
-  emailPrompt.style.visibility = 'hidden';
   if (email.checkValidity()) {
-    email.classList.remove('error');
+    //email.classList.remove('error');
     if (emailText.innerHTML === 'Personal Email') {
+      emailPrompt.style.visibility = 'hidden';
       if (email.value != emailConfi.value) {
         emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
         emailConfi.value != '' ? emailConfi.classList.add('error') : '';
@@ -249,16 +252,21 @@ email.addEventListener('blur', function(e) {
         emailConfiPrompt.style.visibility = 'hidden';
         emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
       }
-  /*  } else if (emailText.innerHTML === 'Work Email') {
+    } else if (emailText.innerHTML === 'Work Email') {
       var emailSplit = email.value.split('@')
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
-      var {personalEmails} = require ('./PersonalEmails.js')
-
+      var personalEmails = ['gmail.com', 'hotmail.com']
       if (personalEmails.includes(freeEmail)) {
-        emailConfiPrompt.classList.add('error')
+        console.log("adds error")
+        emailPrompt.classList.add('error')
+        email.classList.add('error');
+        emailPrompt.style.visibility = 'visible';
       } else {
-        emailConfiPrompt.classList.remove('error')
-      }*/
+        console.log("rm error")
+        emailPrompt.classList.remove('error')
+        email.classList.remove('error');
+        emailPrompt.style.visibility = 'hidden';
+      }
     }
   } else {
     email.classList.add('error');
@@ -291,6 +299,7 @@ for(let input of formControlStd) {
   input.addEventListener('input', function(e) {
     if(input.checkValidity()) {
       if(e.target.id != 'email' && e.target.id != 'emailConfi') {
+        console.log("input input rm error")
         input.classList.remove('error');
       }
     }
@@ -301,6 +310,7 @@ for(let input of formControlStd) {
   input.addEventListener('blur', function(e) {
     if(input.checkValidity()) {
       if(e.target.id != 'email' && e.target.id != 'emailConfi') {
+        console.log("input blur rm error")
         input.classList.remove('error');
       }
     }

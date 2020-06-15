@@ -4751,6 +4751,4 @@ const personalEmails = [
 'zzz.pl',
 ];
 
-module.exports = {
-  personalEmails
-}
+export default personalEmails;
