@@ -207,6 +207,7 @@ email.addEventListener('focus', function(event) {
 email.addEventListener('input', function(e) {
   if (email.checkValidity()) {
     if (emailText.innerHTML === 'Personal Email' && e.target.value.length > 0) {
+      email.classList.remove('error');
       emailConfiContainer.style.display = 'block';
       if (email.value != emailConfi.value) {
         emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
@@ -244,6 +245,7 @@ email.addEventListener('blur', function(e) {
   if (email.checkValidity()) {
     //email.classList.remove('error');
     if (emailText.innerHTML === 'Personal Email') {
+      email.classList.remove('error');
       emailPrompt.style.visibility = 'hidden';
       if (email.value != emailConfi.value) {
         emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
