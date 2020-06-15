@@ -1,4 +1,4 @@
-/* Dex last merged this code on 16th May 2019 */
+/* merged this code on 20th june 2020 */
 
 var password = document.getElementById("password");
 var email = document.getElementById("email");
