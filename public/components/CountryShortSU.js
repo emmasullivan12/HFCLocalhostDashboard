@@ -127,14 +127,6 @@ class CountryShortSU extends React.Component {
             return false;
           }
 
-        } else if (countryLocal === 'IRL') {
-          var isIECountyOK = ieCounties.indexOf(stateProv) != -1;
-          if (stateProv != '' && isIECountyOK) {
-            return true;
-          } else {
-            return false;
-          }
-
         } else if (countryLocal === 'USA') {
           var isStateOK = states.map((el) => el.value).indexOf(stateProv) != -1;
           if (stateProv != '' && isStateOK) {
@@ -204,7 +196,7 @@ class CountryShortSU extends React.Component {
                   />
                 </div>
               </div>
-              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'IRL' && countryLocal != 'CAN') && (
+              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN') && (
                 <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re not in your country yet!</div>
               )}
               {countryLocal === 'USA' && (
@@ -264,26 +256,9 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {countryLocal === 'IRL' && (
-                <div className="form-group" id="userIECounty">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which County?</label>
-                  <div className="autocompleter">
-                    <Autocomplete
-                      suggestions={ieCounties}
-                      name='stateprovince'
-                      placeholder='County'
-                      handleTabPress={this.handleTabPress}
-                      handleChange={this.handleStateChange}
-                      handleMouseDown={this.handleMouseDown}
-                      focusOnLoad={tabPressed ? false : true}
-                      required
-                    />
-                  </div>
-                </div>
-              )}
-              {countryLocal != '' && (countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'IRL' || countryLocal === 'CAN') && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'IRL' && countryLocal != 'USA' && countryLocal != 'CAN')) && (
+              {countryLocal != '' && (countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'CAN') && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN')) && (
                 <div className="form-group" id="userCity">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="cityTextBox">{countryLocal != 'GBR' && countryLocal != 'IRL' ? 'Which City?' : 'Which Town/City?'}</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="cityTextBox">{countryLocal != 'GBR' ? 'Which City?' : 'Which Town/City?'}</label>
                   <TextInput
                     name="city"
                     id="cityTextBox"

@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -179,9 +179,9 @@ class DiversitySU extends React.Component {
               {(hurdles.length > 0 || editingHurdles != '') && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' || 'country' === 'IRL' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                     <SelectBox
-                      options={country === 'GBR' || 'country' === 'IRL' ? uKschAttendedList : schAttendedList}
+                      options={country === 'GBR' ? uKschAttendedList : schAttendedList}
                       name='selectSchType'
                       placeholder={'Select ' + (country === 'GBR' ? 'school' : 'high-school') + ' type:'}
                       handleChange={this.handleSchTypeChange}
