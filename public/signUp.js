@@ -1,4 +1,4 @@
-/* merged this code on 20th june 2020 */
+/* merged this code on 20th june 2020  */
 //import { personalEmails } from './PersonalEmails.js';
 
 var formControlStd = document.getElementsByClassName("form-control-std");
@@ -205,7 +205,6 @@ email.addEventListener('focus', function(event) {
 },true);
 
 email.addEventListener('input', function(e) {
-  console.log("email input")
   if (email.checkValidity()) {
     if (emailText.innerHTML === 'Personal Email' && e.target.value.length > 0) {
     //  email.classList.remove('error');
@@ -277,13 +276,8 @@ emailConfi.addEventListener('blur', function(event) {
 });
 
 emailConfi.addEventListener('input', function(event) {
-  console.log("emailConfi input")
-  console.log("email.value: "+email.value)
-  console.log("emailConfi.value: "+emailConfi.value)
-  console.log("email.value != emailConfi.value: "+email.value != emailConfi.value)
   if (email.value != emailConfi.value) {
     emailConfiPrompt.style.visibility = 'visible';
-    console.log("emailConfi input ADDS error")
     emailConfi.classList.add('error');
   } else {
     emailConfiPrompt.style.visibility = 'hidden';
@@ -295,7 +289,6 @@ emailConfi.addEventListener('input', function(event) {
 for(let input of formControlStd) {
 
   input.addEventListener('input', function(e) {
-    console.log("input input")
     if(input.checkValidity()) {
       if(e.target.id != 'email' && e.target.id != 'emailConfi') {
         input.classList.remove('error');
