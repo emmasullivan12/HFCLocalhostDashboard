@@ -205,9 +205,10 @@ email.addEventListener('focus', function(event) {
 },true);
 
 email.addEventListener('input', function(e) {
+  console.log("email input")
   if (email.checkValidity()) {
     if (emailText.innerHTML === 'Personal Email' && e.target.value.length > 0) {
-      email.classList.remove('error');
+    //  email.classList.remove('error');
       emailConfiContainer.style.display = 'block';
       if (email.value != emailConfi.value) {
         emailConfi.value != '' ? emailConfiPrompt.style.visibility = 'visible' : '';
@@ -276,8 +277,13 @@ emailConfi.addEventListener('blur', function(event) {
 });
 
 emailConfi.addEventListener('input', function(event) {
+  console.log("emailConfi input")
+  console.log("email.value: "+email.value)
+  console.log("emailConfi.value: "+emailConfi.value)
+  console.log("email.value != emailConfi.value: "+email.value != emailConfi.value)
   if (email.value != emailConfi.value) {
     emailConfiPrompt.style.visibility = 'visible';
+    console.log("emailConfi input ADDS error")
     emailConfi.classList.add('error');
   } else {
     emailConfiPrompt.style.visibility = 'hidden';
@@ -288,17 +294,22 @@ emailConfi.addEventListener('input', function(event) {
 // check validity of inputs when submit & onBlur i.e. after clicing away
 for(let input of formControlStd) {
 
-  input.addEventListener('input', function(event) {
+  input.addEventListener('input', function(e) {
+    console.log("input input")
     if(input.checkValidity()) {
-      input.classList.remove('error');
+      if(e.target.id != 'email' && e.target.id != 'emailConfi') {
+        input.classList.remove('error');
+      }
     }
     canBeSubmitted()
   });
 
   // Check validity onblur (i.e. click away)
-  input.addEventListener('blur', function(event) {
+  input.addEventListener('blur', function(e) {
     if(input.checkValidity()) {
-      input.classList.remove('error');
+      if(e.target.id != 'email' && e.target.id != 'emailConfi') {
+        input.classList.remove('error');
+      }
     }
     canBeSubmitted()
   });
