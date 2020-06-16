@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -11,10 +11,7 @@ class SignUpScreenTemplate extends React.Component {
     const {children, subheader, title, fullWidth} = this.props;
 
     //Converts any HTML tags that were passed as string to HTMl tags
-    /*var parsedSubheader = new DOMParser().parseFromString(subheader, "text/xml");
-    console.log("subheader: "+subheader)
-    console.log(parsedSubheader.firstChild)
-    console.log(parsedSubheader.firstChild.innerHTML)*/
+    /*var parsedSubheader = new DOMParser().parseFromString(subheader, "text/xml");*/
     return (
       <div className="mainContainer">
         <div className="prLogoArea col-12">
@@ -33,6 +30,7 @@ class SignUpScreenTemplate extends React.Component {
                 {children}
               </div>
             </div>
+            <div className="col-5 legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a className="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a className="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
           </div>
           {!fullWidth && (
             <div className="col-5 login-pic">
@@ -41,7 +39,6 @@ class SignUpScreenTemplate extends React.Component {
               </div>
             </div>
           )}
-          <div className="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a className="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a className="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
         </div>
       </div>
     );

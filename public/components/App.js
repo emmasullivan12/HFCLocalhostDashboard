@@ -334,23 +334,6 @@ function MenteeSteps({userRole}) {
               </Switch>
             </BrowserRouter>
           );
-
-    /* case 'didEduEmail':
-        return (
-          <BrowserRouter>
-            <Switch>
-              <Redirect exact from="/" to="/verify-email" />
-              <Route path="/verify-email" component={VerifyEmail} step={step} />
-            </Switch>
-          </BrowserRouter>
-        );*/
-    /*    case 'didEduEmailVerif':
-          if (emailSentForReview != true && eduSentForReview != true) {
-            return <Dashboard userRole={userRole}/>
-          } else  {
-            // SHOW THEM PAGE THAT SAYS WE ARE JUST REVIEWING YOUR DETAILS AND THEN WILL GET BACK TO YOU
-            return console.log("show pending prospela review screen");
-          }*/
         case 'didEmailVerif':
         case 'didReviewVerif':
         case 'autoEnroll':

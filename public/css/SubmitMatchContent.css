@@ -15,5 +15,6 @@
   line-height: 40px;
   vertical-align: top;
   resize: none;
+  -moz-resize: none;
   outline: none;
 }

@@ -259,12 +259,8 @@ class NoEduEmailContent extends Component {
         return false;
       }
     } else {
-      if (currentSitu.length >= 25 && (profProfileURL === '' || urlInputIsValid != false)) {
-        if (isHtmlValid) {
-          return true;
-        } else {
-          return false;
-        }
+      if (currentSitu.length >= 25 && currentSitu.length <= 500 && (profProfileURL === '' || urlInputIsValid != false)) {
+        return true;
       } else {
         return false;
       }

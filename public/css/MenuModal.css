@@ -19,6 +19,8 @@
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  -moz-box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
   top: 80px;
   left: 20px;
   cursor: default;
@@ -130,6 +132,8 @@
   border: 0;
   background-color: #fff;
   box-shadow: 0;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
   outline: none;
 }
 

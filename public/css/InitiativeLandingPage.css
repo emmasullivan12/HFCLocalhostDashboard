@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 html {
@@ -91,6 +93,8 @@ header, nav, article, section, aside, footer {
 .gdpr-btn:hover{
   background: #312e67;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   color: #c5c5ff;
 }
 
@@ -157,6 +161,8 @@ header, nav, article, section, aside, footer {
   position: fixed;
   border-bottom: none;
   box-shadow: 0 1px 1px rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.15);
   height: 71px;
   -webkit-transition: background-color 200ms linear;
   -moz-transition: background-color 200ms linear;
@@ -443,6 +449,8 @@ header, nav, article, section, aside, footer {
 #why-join{
   position: relative;
   box-shadow: 0 0 10px 0 #ccc;
+  -webkit-box-shadow: 0 0 10px 0 #ccc;
+  -moz-box-shadow: 0 0 10px 0 #ccc;
 }
 #why-join ul.why-join-nav {
   list-style: none;
@@ -482,6 +490,8 @@ header, nav, article, section, aside, footer {
   z-index: 1;
   background-color: #fff;
   box-shadow: 0 0 10px 0 #ccc;
+  -webkit-box-shadow: 0 0 10px 0 #ccc;
+  -moz-box-shadow: 0 0 10px 0 #ccc;
   position: relative;
 }
 #why-join ul.why-join-nav li.active a:before {

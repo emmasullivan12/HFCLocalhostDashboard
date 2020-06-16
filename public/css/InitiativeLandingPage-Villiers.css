@@ -30,6 +30,8 @@
 .initiativeBtn-student.villiers:hover{
   background: rgba(145,8,8,.9);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-student.villiers:active{
   background: #910808;
@@ -43,6 +45,8 @@
   background-color: rgba(113,145,255,.2);
   color: rgba(226,226,226,.9);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-mentor.villiers:active{
   background: transparent;

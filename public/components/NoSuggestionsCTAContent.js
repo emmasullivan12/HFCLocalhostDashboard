@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 
@@ -85,7 +85,6 @@ class NoSuggestionsCTAContent extends Component {
         e.preventDefault ();
         return;
       } else {
-        console.log("onkeydown triggered")
         this.handleSubmit();
       }
     }

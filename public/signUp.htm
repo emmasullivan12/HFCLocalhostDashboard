@@ -49,11 +49,11 @@
             <div class="inlineForm" id="names">
               <div class="form-group inlineLeft">
                 <div class="descriptor">First Name</div>
-                <input type="text" name="fname" id="fname" autofocus class="form-control-std" required>
+                <input type="text" name="fname" id="fname" autofocus autocomplete="on" class="form-control-std" required>
               </div>
               <div class="form-group inlineRight">
                 <div class="descriptor">Last Name</div>
-                <input type="text" name="lname" id="lname" class="form-control-std" required>
+                <input type="text" name="lname" id="lname" autocomplete="on" class="form-control-std" required>
               </div>
             </div>
             <div class="form-group" id="emailContainer">
@@ -63,14 +63,14 @@
                   <span class="tooltiptext">This helps us maintain a safeguarded environment</span>
                 </div>
               </div>
-              <input type="email" name="email" id="email" class="form-control-std prompt" required>
+              <input type="email" name="email" id="email" class="form-control-std prompt" autocomplete="on" required>
               <div class="descriptor prompt" id="emailPrompt">This must be your work email address</div>
             </div>
             <div class="form-group" id="emailConfiContainer">
               <div>
                 <div class="alignLeft descriptor">Confirm Personal Email</div>
               </div>
-              <input type="email" name="emailConfi" id="emailConfi" class="form-control-std prompt" required>
+              <input type="email" name="emailConfi" id="emailConfi" class="form-control-std prompt" autocomplete="off" required>
               <div class="descriptor prompt error" id="emailConfiPrompt">Emails do not match</div>
             </div>
             <div class="form-group" id="dob">
@@ -90,7 +90,7 @@
             </div>
             <div class="form-group" id="pwdContainer">
               <div class="descriptor">Password</div>
-              <input type="password" name="password" id="password" class="form-control-pwd prompt" required>
+              <input type="password" name="password" id="password" class="form-control-pwd prompt" autocomplete="off" required>
               <div class="eqWrap">
                 <div class="reqs" id="numReq"><span class="crl" id="numReq-crl">&#9899;</span>One number</div>
                 <div class="reqs" id="upCharReq"><span class="crl" id="upCharReq-crl">&#9899;</span>One uppercase</div>
@@ -103,7 +103,7 @@
             <button type="submit" id="getStarted-btn" class="Submit-btn fullWidth">Get Started</button>
           </form>
           <div class="login-error-msg">The email and/or password entered were not recognised. Please try again</div>
-          <div class="legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
+          <div class="col-5 legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
         </div>
       </div>
       <div class="col-5 login-pic">

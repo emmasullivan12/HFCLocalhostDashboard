@@ -114,9 +114,7 @@ class Autocomplete extends React.Component {
   //    showSuggestions: true,
       userInput: e.currentTarget.value
     });
-    console.log("e.currentTarget.value: "+e.currentTarget.value)
     const isValid = this.checkExists(e.currentTarget.value);
-    console.log("isValid onchange: "+isValid)
     handleChange(e.currentTarget.value, isValid);
   };
 
@@ -226,7 +224,6 @@ class Autocomplete extends React.Component {
   checkExists(inputToCheck) {
     const { suggestions, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    console.log("inputToCheck in checkexists:"+inputToCheck)
     const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option.value : (valueToShow === undefined ? option : option[valueToShow])) === inputToCheck) != -1) : (required ? false : true);
     return isValid;
   }
@@ -234,7 +231,6 @@ class Autocomplete extends React.Component {
   checkUserInputExists(inputToCheck) {
     const { suggestions, required, valueToShow } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    console.log("inputToCheck in checkuserinputexists:"+inputToCheck)
     const isValid = inputToCheck ? (suggestions.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === inputToCheck) != -1) : (required ? false : true);
     return isValid;
   }

@@ -20,6 +20,8 @@
 .initiativeBtn-student.avfx:hover{
   background: rgba(170, 253, 96,.9);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-student.avfx:active{
   background: #a8ff54;
@@ -33,6 +35,8 @@
   background-color: rgba(248, 41, 146,.2);
   color: rgba(226,226,226,.9);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-mentor.avfx:active{
   background: transparent;

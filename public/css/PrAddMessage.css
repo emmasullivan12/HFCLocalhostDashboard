@@ -37,6 +37,7 @@
   -ms-border-radius: .25rem;
   -o-border-radius: .25rem;
   -webkit-appearance: none;
+  -moz-appearance: none;
   outline: 0;
   color: #351c75;
   max-width: 100%;
@@ -47,6 +48,8 @@
   -ms-transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
   -o-transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   height: auto;
 }
 
@@ -56,6 +59,8 @@
 
 .input-box-container:focus-within{
   box-shadow: 0 0 0 1.2px #4e4ed6;
+  -webkit-box-shadow: 0 0 0 1.2px #4e4ed6;
+  -moz-box-shadow: 0 0 0 1.2px #4e4ed6;
   border: 3px solid rgba(122,80,199,.1);
   padding: 8px 13px;
 }
@@ -67,6 +72,7 @@
 .input-box{
   border: none;
   resize: none;
+  -moz-resize: none;
   outline: none;
   padding-left: 30px;
   padding-right: 70px;

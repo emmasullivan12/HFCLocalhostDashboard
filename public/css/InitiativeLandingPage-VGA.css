@@ -106,6 +106,8 @@
 .initiativeBtn-mentor.vga:hover{
   background: #ff5622;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-mentor.vga:active{
   background: #ff5622;
@@ -119,6 +121,8 @@
 .initiativeBtn-student.vga:hover{
   background-color: rgba(20,178,174,.2);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .initiativeBtn-student.vga:active{
   background: transparent;

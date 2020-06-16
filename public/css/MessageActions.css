@@ -117,6 +117,8 @@
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  -moz-box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
   cursor: default;
   display: none;
 }

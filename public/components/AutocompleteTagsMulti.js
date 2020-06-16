@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -41,7 +41,6 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   onBlur = (e) => {
-    console.log("onblur triggered")
     const { suggestions, onBlur, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
     const {userInput} = this.state
 
@@ -160,7 +159,6 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   onChange = (e) => {
-    console.log("onchange triggered")
     const { suggestions, handleChange, valueToShow, required, showCheckbox, openOnClick } = this.props;
     const userInput = e.currentTarget.value;
     this.widthCalc()
@@ -247,7 +245,6 @@ class AutocompleteTagsMulti extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     const { suggestions, handleChange, name, valueToShow, finMultiOptions, required } = this.props;
-    console.log("ONCLICKOPTION triggered")
     const value = e.currentTarget.dataset.text;
 
     if (this.checkLetters(value) === false) {
@@ -282,7 +279,6 @@ class AutocompleteTagsMulti extends React.Component {
 
 /*  onKeyDownParent = e => {
     const { showSuggestions } = this.state;
-    console.log("onKeyDownParent")
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();
@@ -358,7 +354,6 @@ class AutocompleteTagsMulti extends React.Component {
 
     // User pressed the tab key
     else if (e.keyCode === 9) {
-      console.log("on tab triggered")
       if (this.state.showSuggestions === false) {
         return;
       } else {

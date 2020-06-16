@@ -5,6 +5,8 @@
   height: 8rem;
   margin-right: .75rem;
   box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   text-align: center;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -284,6 +286,8 @@
   background-color: #fff;
   margin-bottom: .5rem;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   font-size: 13px;
   line-height: 13px;
   text-align: left;
@@ -336,10 +340,14 @@
   text-align: center;
   padding: 0;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   margin-right: 5px;
 }
 .profileBtn:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
 }
 .profileBtn.dayTime{
   background: #ffd350;
@@ -353,6 +361,8 @@
 .profileBtn.dayTime:hover,
 .profileBtn.nightTime:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   cursor: default;
 }
 .profileBtn.save4Later.greenTextBorderBkgnd:hover{

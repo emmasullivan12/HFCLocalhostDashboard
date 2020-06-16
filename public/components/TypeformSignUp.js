@@ -137,11 +137,11 @@ class TypeformSignUp extends Component {
       isGeneralError: '',
       step: 'didEdu', // set to did1stSU when first loaded
       userEduName: '',
-      country: '',
-      eetStatus: '',
+      country: 'GBR',
+      eetStatus: 'uni',
       schName: '',
       schNameFreeText: '',
-      uniName: '',
+      uniName: '75',
       uniNameFreeText: '',
       emailToVerify: '',
       currCo: '',
@@ -184,7 +184,6 @@ class TypeformSignUp extends Component {
                 this.setState({
                   isGeneralError: true,
                 })
-                console.log("Dex to deal with logging error: "+err.message)
               })
           } else {
             this.setState({
@@ -213,11 +212,9 @@ class TypeformSignUp extends Component {
                 })
               })
               .catch(err => {
-                console.log(err.message);
                 this.setState({
                   isGeneralError: true,
                 })
-                console.log("Dex to deal with logging error: "+err.message)
               })
           } else {
             this.setState({
@@ -267,7 +264,6 @@ class TypeformSignUp extends Component {
           this.setState({
             isGeneralError: true,
           })
-          console.log("Dex to deal with logging error: "+err.message)
         })
 
     } else if (stepJustDone === 'didIndRole') {
@@ -280,7 +276,6 @@ class TypeformSignUp extends Component {
       this.setState({
         step: 'didDiversity'
       }, () => {
-        console.log("triggering getUserEduName")
         this.getUserEduName()
       })
       return;

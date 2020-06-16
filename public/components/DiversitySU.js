@@ -36,7 +36,6 @@ class DiversitySU extends React.Component {
   }
 
   handleHurChange(userInput) {
-    console.log("Handledhurchange triggered")
     const newArray = hurdlesList
       .filter(hurdle => userInput.includes(hurdle.label))
       .map(value => value.value)

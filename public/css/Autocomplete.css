@@ -58,9 +58,13 @@
 }
 .autocompleter-items.showDetail{
   max-height: calc(5 * 50px);
+  -webkit-max-height: calc(5 * 50px);
+  -moz-max-height: calc(5 * 50px);
 }
 .autocompleter-items.noDetail{
   max-height: calc(5 * 37px);
+  -webkit-max-height: calc(5 * 37px);
+  -moz-max-height: calc(5 * 37px);
 }
 .autocompleter-items::-webkit-scrollbar-track {
   background-color: #fff!important;
@@ -104,7 +108,7 @@
 .autocompleter-item.selected,
 .autocompleter-active.selected {
   margin: -1px -1px 0;
-  background: #351c75 !important;
+  background: #351c75!important;
   color: #fff;
   cursor: pointer;
 }
@@ -148,7 +152,7 @@
 }
 
 .autocompleter-active {
-  background-color: #351c75 !important;
+  background-color: #351c75!important;
   color: #ffffff;
   cursor: pointer;
 }

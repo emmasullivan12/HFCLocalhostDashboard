@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 
@@ -18,7 +18,6 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
         if (callback) {
           callback()
         }
-        console.log("Dex to deal with logging error. Need anything else here? Am already showing error in other component if this function doesnt work: "+err.message)
       })
 
   } else if (eetStatus === 'sch') {
@@ -36,7 +35,6 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
         if (callback) {
           callback()
         }
-        console.log("Dex to deal with logging error. Need anything else here? Am already showing error in other component if this function doesnt work: "+err.message)
       })
 
   }
@@ -148,7 +146,6 @@ function eduName(schName, schNameFreeText, uniName, uniNameFreeText, eetStatus) 
           })
         })
         .catch(err => {
-          console.log("Dex to deal with logging error: "+err.message)
           return "Loading university..."
         })
     } else return uniNameFreeText;
@@ -164,7 +161,6 @@ function eduName(schName, schNameFreeText, uniName, uniNameFreeText, eetStatus) 
           })
         })
         .catch(err => {
-          console.log("Dex to deal with logging error: "+err.message)
           return "Loading school..."
         })
     } else return schNameFreeText;

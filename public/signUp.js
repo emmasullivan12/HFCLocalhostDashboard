@@ -67,24 +67,6 @@ dobPrompt.style.visibility = 'hidden';
 menteeradio.checked = false;
 mentorradio.checked = false;
 
-numReqCrl.style.color = 'transparent';
-upCharReqCrl.style.color = 'transparent';
-lowCharReqCrl.style.color = 'transparent';
-specCharReqCrl.style.color = 'transparent';
-numCharReqCrl.style.color = 'transparent';
-
-numReqCrl.style.textShadow = '0 0 0 #cbcaca';
-upCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
-lowCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
-specCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
-numCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
-
-numReq.style.color = '#cbcaca';
-upCharReq.style.color = '#cbcaca';
-lowCharReq.style.color = '#cbcaca';
-specCharReq.style.color = '#cbcaca';
-numCharReq.style.color = '#cbcaca';
-
 var dobIsValid = false;
 var pwdIsValid = false;
 let personalEmails;
@@ -97,8 +79,27 @@ menteebtn.addEventListener('click', function(event) {
   dDOB.value = '';
   mDOB.value = '';
   yDOB.value = '';
+  dobPrompt.style.visibility = 'hidden';
   pwd.value = '';
   tncCheckbox.checked = false;
+
+  numReqCrl.style.color = 'transparent';
+  upCharReqCrl.style.color = 'transparent';
+  lowCharReqCrl.style.color = 'transparent';
+  specCharReqCrl.style.color = 'transparent';
+  numCharReqCrl.style.color = 'transparent';
+
+  numReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  upCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  lowCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  specCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  numCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+
+  numReq.style.color = '#cbcaca';
+  upCharReq.style.color = '#cbcaca';
+  lowCharReq.style.color = '#cbcaca';
+  specCharReq.style.color = '#cbcaca';
+  numCharReq.style.color = '#cbcaca';
 
   menteebtn.style.backgroundColor = '#6fc3b3';
   menteebtn.style.color = '#fff';
@@ -122,6 +123,12 @@ menteebtn.addEventListener('click', function(event) {
   for(let input of formControlStd) {
     input.classList.remove('error');
   }
+  pwd.classList.remove('error');
+  dDOB.classList.remove('error');
+  mDOB.classList.remove('error');
+  yDOB.classList.remove('error');
+  tncText.classList.remove('error');
+  tncStyle.classList.remove('error');
 });
 
 mentorbtn.addEventListener('click', function(event) {
@@ -133,6 +140,7 @@ mentorbtn.addEventListener('click', function(event) {
   dDOB.value = '';
   mDOB.value = '';
   yDOB.value = '';
+  dobPrompt.style.visibility = 'hidden';
   pwd.value = '';
   tncCheckbox.checked = false;
 
@@ -145,6 +153,23 @@ mentorbtn.addEventListener('click', function(event) {
       email.value != '' ? emailPrompt.style.visibility = 'visible' : '';
     })
 */
+  numReqCrl.style.color = 'transparent';
+  upCharReqCrl.style.color = 'transparent';
+  lowCharReqCrl.style.color = 'transparent';
+  specCharReqCrl.style.color = 'transparent';
+  numCharReqCrl.style.color = 'transparent';
+
+  numReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  upCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  lowCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  specCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+  numCharReqCrl.style.textShadow = '0 0 0 #cbcaca';
+
+  numReq.style.color = '#cbcaca';
+  upCharReq.style.color = '#cbcaca';
+  lowCharReq.style.color = '#cbcaca';
+  specCharReq.style.color = '#cbcaca';
+  numCharReq.style.color = '#cbcaca';
 
   mentorbtn.style.backgroundColor = '#6fc3b3';
   mentorbtn.style.color = '#fff';
@@ -169,6 +194,12 @@ mentorbtn.addEventListener('click', function(event) {
   for(let input of formControlStd) {
     input.classList.remove('error');
   }
+  pwd.classList.remove('error');
+  dDOB.classList.remove('error');
+  mDOB.classList.remove('error');
+  yDOB.classList.remove('error');
+  tncText.classList.remove('error');
+  tncStyle.classList.remove('error');
 });
 
 function canBeSubmitted() {
@@ -221,11 +252,9 @@ email.addEventListener('input', function(e) {
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
       var personalEmails = ['gmail.com', 'hotmail.com']
       if (personalEmails.includes(freeEmail)) {
-        console.log("input adds error")
         emailPrompt.classList.add('error')
         email.classList.add('error');
       } else {
-        console.log("input rm error")
         emailPrompt.classList.remove('error')
         email.classList.remove('error');
       }
@@ -259,12 +288,10 @@ email.addEventListener('blur', function(e) {
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
       var personalEmails = ['gmail.com', 'hotmail.com']
       if (personalEmails.includes(freeEmail)) {
-        console.log("adds error")
         emailPrompt.classList.add('error')
         email.classList.add('error');
         emailPrompt.style.visibility = 'visible';
       } else {
-        console.log("rm error")
         emailPrompt.classList.remove('error')
         email.classList.remove('error');
         emailPrompt.style.visibility = 'hidden';
@@ -272,6 +299,9 @@ email.addEventListener('blur', function(e) {
     }
   } else {
     email.classList.add('error');
+    if (email.value === '') {
+      emailPrompt.style.visibility = 'hidden';
+    }
   }
 });
 
@@ -301,7 +331,6 @@ for(let input of formControlStd) {
   input.addEventListener('input', function(e) {
     if(input.checkValidity()) {
       if(e.target.id != 'email' && e.target.id != 'emailConfi') {
-        console.log("input input rm error")
         input.classList.remove('error');
       }
     }
@@ -312,7 +341,6 @@ for(let input of formControlStd) {
   input.addEventListener('blur', function(e) {
     if(input.checkValidity()) {
       if(e.target.id != 'email' && e.target.id != 'emailConfi') {
-        console.log("input blur rm error")
         input.classList.remove('error');
       }
     }
@@ -452,7 +480,7 @@ yDOB.addEventListener('input', function(event) {
 
 pwd.addEventListener('blur', function(event) {
   if(pwd.checkValidity() && this.value.length > 7 && this.value.length <= 50 && this.value.search(/\d/) != -1 && this.value.search(/[A-Z]/) != -1 && this.value.search(/[a-z]/) != -1 && this.value.search(/[!@#£$%^&*()_+]/) != -1) {
-   pwd.classList.remove('error');
+   pwd.classList.remove('error')
    pwdIsValid = true
    canBeSubmitted()
  } else {

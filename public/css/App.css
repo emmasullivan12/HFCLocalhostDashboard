@@ -40,6 +40,8 @@ html {
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 h2{
@@ -104,6 +106,8 @@ h2{
   background: transparent;
   border: 0;
   box-shadow: 0;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
   outline: none;
   cursor: pointer;
   z-index: 1;
@@ -123,22 +127,7 @@ h2{
 }
 .clientMenuContainer{
   position: absolute;
-/*  display: -ms-flexbox;
-  display: -webkit-flex;
-*/  display: table;
-/*  flex-direction: column;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-basis: 220px;
-  -webkit-flex-basis: 220px;
-  -moz-flex-basis: 220px;
-  flex-shrink: 0;
-  -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
-  min-width: 1px;
-  max-width: 260px;
-  box-sizing: content-box;
-*/
+  display: table;
   width: 220px;
   height: 100%;
   background-image: url("https://prospela.com/wp-content/uploads/2019/03/Dashboard-Background.jpg");
@@ -567,6 +556,8 @@ svg:not(:root) {
   color: #fff;
   position: relative;
   min-height: 61px;
+  background-color: #fff;
+  z-index: 100;
 }
 .prLogoArea.notLogin{
   height: 100%;

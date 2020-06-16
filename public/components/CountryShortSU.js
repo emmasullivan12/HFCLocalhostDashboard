@@ -197,7 +197,7 @@ class CountryShortSU extends React.Component {
                 </div>
               </div>
               {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN') && (
-                <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re not in your country yet!</div>
+                <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re currently only in the UK, USA & Canada! </div>
               )}
               {countryLocal === 'USA' && (
                 <div className="form-group" id="userState">

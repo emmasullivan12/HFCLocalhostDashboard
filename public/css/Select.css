@@ -44,6 +44,8 @@ svg {
   background: #fff;
   z-index: 99;
   box-shadow: 0 10px 8px 1px rgba(29,28,29,.3);
+  -webkit-box-shadow: 0 10px 8px 1px rgba(29,28,29,.3);
+  -moz-box-shadow: 0 10px 8px 1px rgba(29,28,29,.3);
   border-bottom-left-radius: 2%;
   -webkit-border-bottom-left-radius: 2%;
   -moz-border-bottom-left-radius: 2%;
@@ -68,9 +70,13 @@ svg {
 }*/
 .options.showDetail{
   max-height: calc(5 * 50px);
+  -webkit-max-height: calc(5 * 50px);
+  -moz-max-height: calc(5 * 50px);
 }
 .options.noDetail{
   max-height: calc(5 * 40px);
+  -webkit-max-height: calc(5 * 40px);
+  -moz-max-height: calc(5 * 40px);
 }
 /*
 .options.noDetail.showCheckbox{
@@ -82,7 +88,7 @@ svg {
 
 .option {
   padding: 10px 15px;
-  border-bottom: 1px solid #f1f1f1fc;
+  border-bottom: 1px solid rgba(241, 241, 241, 0.988);
   cursor: pointer;
 }
 .option.showDetail {
@@ -101,7 +107,7 @@ svg {
   height: 40px;
   cursor: pointer;
   background-color: #fff;
-  border-bottom: 1px solid #f1f1f1fc;
+  border-bottom: 1px solid rgba(241, 241, 241, 0.988);
 }
 .option.noDetail.showCheckbox{
   padding: 8px 8px 8px 20px;;
@@ -109,8 +115,12 @@ svg {
   border-bottom: none;
 }
 .option.showIcon{
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   padding-left: 60px!important;
   position: relative;
 }
@@ -169,6 +179,9 @@ svg {
 }
 .option.title{
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   color: #9f9ee7;
   cursor: default;
   background-color: transparent;
@@ -209,6 +222,9 @@ svg {
   margin-bottom: 4px;
   border-radius: .25rem;
   -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
   word-break: break-word;
 }
 
@@ -239,6 +255,8 @@ svg {
   color: #cacaca;
   right: 32px;
   box-shadow: -23px 0px 15px 5px #ffffff;
+  -webkit-box-shadow: -23px 0px 15px 5px #ffffff;
+  -moz-box-shadow: -23px 0px 15px 5px #ffffff;
 }
 
 .delete,
@@ -268,6 +286,10 @@ svg {
   padding: 2px;
   border: 1px solid #ddd;
   border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   margin: 0 12px 0 0;
   color: #fff;
   font-size: 10px;

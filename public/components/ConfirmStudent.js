@@ -57,7 +57,6 @@ class ConfirmStudent extends React.Component {
             this.setState({
               isGeneralError: true,
             })
-            console.log("Dex to deal with logging error: "+err.message)
           })
 
       } else if (eetStatus === 'uni' && uniName != '') {
@@ -72,7 +71,6 @@ class ConfirmStudent extends React.Component {
             this.setState({
               isGeneralError: true,
             })
-            console.log("Dex to deal with logging error: "+err.message)
           })
       }
     }

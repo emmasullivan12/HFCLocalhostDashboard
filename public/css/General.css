@@ -62,7 +62,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     left: 0px!important;
   }
 }
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 758px) {
   .loadingContainer,
   .clientWindowContainer {
     left: 0!important;
@@ -329,6 +329,7 @@ hr{
   line-height: 20px;
   vertical-align: top;
   resize: none;
+  -moz-resize: none;
   outline: none;
   font-family: inherit;
   overflow-y: scroll;
@@ -344,6 +345,8 @@ hr{
 }
 .textInputBox.passTxtBox:invalid{
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 .textInputBox.inputTitle{
   min-height: 20px;
@@ -386,6 +389,8 @@ hr{
 .Submit-btn.landingCTA.hollow:hover,
 .Submit-btn.landingCTA.hollow:focus{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   background: #fff;
 }
 .Submit-btn.chatCTA{
@@ -411,6 +416,8 @@ hr{
 .Submit-btn.HollowBtn.Edit:hover,
 .Submit-btn.HollowBtn.Edit:focus{
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   background: none;
   color: #351c75;
   border: none;
@@ -468,6 +475,8 @@ hr{
   border: 1px solid #a0a0a0;
   color: #7f7f7f;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 
 .uploadPicBtn{
@@ -478,12 +487,16 @@ hr{
   background: #06bf9c;
   color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
 .Submit-btn.BlankBtn:hover,
 .Submit-btn.BlankBtn:focus{
   color: #43a08f;
   background: #fff;
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 .Submit-btn.BlankBtn.Grey:hover,
 .Submit-btn.BlankBtn.Grey:focus{
@@ -501,6 +514,8 @@ hr{
   background: #fff;
   border: 2px solid #58d2bb;
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 .Submit-btn.HollowBtn:disabled,
 .Submit-btn:disabled{
@@ -508,6 +523,8 @@ hr{
   background: #e0e1e2;
   cursor: default;
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 .Submit-btn:active{
   background: #58d2bb;
@@ -617,11 +634,12 @@ hr{
   user-select: none;
   color: #a3a3a3;
   font-size: 0.75rem;
+  line-height: .9rem;
   text-align: left;
   font-family: Lato;
 }
 .checkbox-container-login.error{
-  color: rgba(249,177,177,.73)!important;
+  color: rgba(249,177,177,.90)!important;
 }
 .checkbox-container-login input,
 .checkbox-container input {
@@ -648,12 +666,28 @@ hr{
 .checkbox-container input:focus ~ .checkmark {
   background-color: rgba(78,78,214,.29);
 }
+.checkbox-container-login.error:hover input ~ .checkmark,
+.checkbox-container.error:hover input ~ .checkmark,
+.checkbox-container-login.error input:focus ~ .checkmark,
+.checkbox-container.error input:focus ~ .checkmark {
+  background-color: rgba(255, 153, 153, 0.7)!important;;
+}
+.checkbox-container-login:hover,
+.checkbox-container-login:focus,
+.checkbox-container-login input:focus .checkbox-container-login{
+  color: #898888;
+}
+.checkbox-container-login.error:hover,
+.checkbox-container-login.error:focus,
+.checkbox-container-login.error input:focus .checkbox-container-login{
+  color: rgba(245,89,89,.74)!important;
+}
 .checkbox-container-login:hover input ~ .initiativeCheckmark,
 .checkbox-container-login input:focus ~ .initiativeCheckmark {
   background-color: rgba(247,247,247,.85)!important;
 }
 .checkbox-container-login:hover .initiative-tncText,
-.checkbox-container-login:focus .initiative-tncText {
+.checkbox-container-login:focus .initiative-tncText, {
   color: rgba(220,220,220,.98)!important;
 }
 .checkbox-container-login input:checked ~ .checkmark,
@@ -983,6 +1017,8 @@ a:active {
   background-color: #fff;
   border: 1px solid #efefef;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   padding: .5rem 1rem .5rem 1rem;
   margin-bottom: 1rem;
 }

@@ -16,7 +16,9 @@
 }
 
 .page-header {
-  display:flex;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-direction: row;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
@@ -28,7 +30,9 @@
   align-items:center;
   -webkit-align-items: center;
   border-bottom: 1px solid #dae1e7;
-  box-sizing:inherit;
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   background: #fff;
 }
 
@@ -63,7 +67,11 @@
   -moz-flex: 1;
   -ms-flex: 1;
   box-sizing: inherit;
-  display:flex;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-direction:column;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;

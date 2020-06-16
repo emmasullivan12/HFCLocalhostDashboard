@@ -6,6 +6,7 @@
   width: 518px;
 /*  min-width: 488px; */
   display: inline-block;
+  height: 100%;
 }
 
 @media only screen and (max-width: 320px) {
@@ -18,11 +19,11 @@
     padding: 5rem 1.55rem;
   }
 }
-@media only screen and (min-width: 400px) and (max-width: 500px) {
+/*@media only screen and (min-width: 400px) and (max-width: 500px) {
   .typeformContainer{
     padding: 6rem 4rem;
   }
-}
+}*/
 .typeformContainer h1 {
   line-height: 1em;
 }

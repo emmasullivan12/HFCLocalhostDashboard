@@ -14,10 +14,20 @@
   list-style: none;
   width: 100%;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   position: absolute;
   left: 0;
   transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
 }
 
 .arrowBtn {
@@ -36,6 +46,8 @@
   -o-border-radius: 50%;
   z-index: 1000;
   box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
 }
 .arrowBtn.left {
   position: absolute;
@@ -52,4 +64,6 @@
 .arrowBtn:hover,
 .arrowBtn:focus {
   box-shadow: 0 3px 6px 0 rgba(0,0,0,.28);
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.28);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,.28);
 }
