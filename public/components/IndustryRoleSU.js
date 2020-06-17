@@ -125,10 +125,15 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleMultiRoles() {
+    console.log("HANLEMULTIROLES")
     const {rolesFromList, freeTextRoles} = this.state
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
+      console.log("focusing on firstelementchild")
+      console.log("document.getElementById('ratingsContainer').firstElementChild")
+      console.log(document.getElementById('ratingsContainer').firstElementChild)
       document.getElementById("ratingsContainer").firstElementChild.focus()
     } else {
+      console.log("focusing on role box")
       document.getElementById("autocompleteBox-selectRole").focus()
     }
   }
@@ -164,7 +169,9 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleTabPress(tabPressed) {
-    this.setState({ tabPressed: tabPressed });
+    this.setState({ tabPressed: tabPressed }, () => {
+      console.log("this.state.tabPressed: "+this.state.tabPressed)
+    });
   }
 
   handleSubmit(e) {
@@ -235,7 +242,7 @@ class IndustryRoleSU extends React.Component {
                       suggestions={roleOptions}
                       name='selectRole'
                       placeholder='Type Role(s):'
-                      placeholderOnClick="Not sure? Select 'don't know'"
+                      placeholderOnClick="Type Role(s): Not sure? Select 'don't know'"
                       handleChange={this.handleRoleChange}
                       onFocus={this.onRoleFocus}
                       handleTabPress={this.handleTabPress}

@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2019 
+// Dex last merged this code on 4th June 2019
 
 import React, { Component} from "react";
 import '../css/RatingItems.css';
@@ -59,12 +59,14 @@ class RatingItems extends Component {
         indexChecked: ''
       }, () => {
         handleRatingChange("")
+        this.checkError()
       })
     } else {
       this.setState({
         indexChecked: value
       }, () => {
         handleRatingChange(value)
+        this.checkError()
       })
     }
   }

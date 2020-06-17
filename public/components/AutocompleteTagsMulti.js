@@ -41,9 +41,10 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   onBlur = (e) => {
+    console.log("ONBLUR")
+    e.persist()
     const { suggestions, onBlur, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
     const {userInput} = this.state
-
     if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
       return;
     } else {
@@ -53,7 +54,9 @@ class AutocompleteTagsMulti extends React.Component {
         onBlur()
       }
 
+
       if (userInput != '') {
+        console.log(" gets hereeee")
         this.setState(prevState => {
           const [ ...values ] = prevState.values
           const index = values.indexOf(userInput)
@@ -85,10 +88,13 @@ class AutocompleteTagsMulti extends React.Component {
           }
         })
       } else {
+        console.log(" gets hereeee 3")
         const values = this.state.values;
 
         handleChange(values, () => {
+          console.log("gets here 0")
           if (values.length != 0) {
+            console.log("gets here 1")
             if (finMultiOptions) {
               finMultiOptions()
             }
@@ -105,16 +111,21 @@ class AutocompleteTagsMulti extends React.Component {
       }
 
       if (this.state.values.length > 2) {
-        const inputBox = document.getElementById("autocompleterTags-search-"+name)
+        const inputBox = document.getElementById("autocompleteBox-"+name)
         inputBox.style.display = 'block';
+    //    inputBox.style.display = 'none';
         inputBox.style.height = '0';
         inputBox.style.opacity = '0';
       }
-
+  //    const isDeletingOption = e.target.className === "autocompleterTags-search"
+  //    this.setState(prevState => {
+    //    return {
       this.setState({
         activeSuggestion: 0,
         filteredSuggestions: [],
         showSuggestions: false,
+        //  showSuggestions: isDeletingOption ? prevState.showSuggestions : false,
+  //      }
       })
     }
   }
@@ -130,37 +141,47 @@ class AutocompleteTagsMulti extends React.Component {
     if (userInput != "" && this.checkUserInputExists(userInput)) {
       return
     } else {
+      this.focusOnInput();
       this.onChange(e);
     }
   }
 
-  focusOnInput = (e) => {
+  focusOnInput = () => {
+    console.log("FOCUSONINPUT")
     const {name} = this.props
-    const inputBox = document.getElementById("autocompleterTags-search-"+name)
+    const inputBox = document.getElementById("autocompleteBox-"+name)
     inputBox.style.display = 'inline-block';
     inputBox.style.height = 'unset';
     inputBox.style.opacity = 'unset';
     document.getElementById("autocompleteBox-"+name).focus();
   }
 
-  widthCalc = () => {
-    const {userInput} = this.state
+  widthCalc = (selectedOption) => {
+    const {userInput, values, showSuggestions, numSelected} = this.state
+    const {placeholderOnClick} = this.props
 
     let containerwidth;
+    const input = document.getElementById('autocompleteBox-selectRole')
 
     if (userInput === '') {
-      containerwidth = 110 + "px"
-      return
+      if (placeholderOnClick && values.length === 0 && selectedOption != true) {
+        containerwidth = 250 + "px"
+      } else {
+        containerwidth = 110 + "px"
+      }
+
     } else {
+      console.log("gets here")
       containerwidth = (userInput.length +1) + "ch"
     }
 
-    document.getElementById('autocompleteBox-selectRole').style.width = containerwidth;
+    input.style.width = containerwidth;
   }
 
   onChange = (e) => {
     const { suggestions, handleChange, valueToShow, required, showCheckbox, openOnClick } = this.props;
     const userInput = e.currentTarget.value;
+
     this.widthCalc()
     // set width of input box to size f userInput
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -223,7 +244,7 @@ class AutocompleteTagsMulti extends React.Component {
       handleChange(values)
 
       if ([...values].length === 0) {
-        const inputBox = document.getElementById("autocompleterTags-search-"+name)
+        const inputBox = document.getElementById("autocompleteBox-"+name)
         inputBox.style.display = 'inline-block';
         inputBox.style.height = 'unset';
         inputBox.style.opacity = 'unset';
@@ -237,6 +258,7 @@ class AutocompleteTagsMulti extends React.Component {
       return {
         values,
         numSelected: values.length,
+        showSuggestions: prevState.showSuggestions
       }
     })
   }
@@ -255,6 +277,10 @@ class AutocompleteTagsMulti extends React.Component {
       const [ ...values ] = prevState.values
       const index = values.indexOf(value)
 
+  //    if (values.length === 0) {
+  //      this.widthCalc()
+  //    }
+
       if (index === -1) {
         values.push(value)
       } else {
@@ -269,11 +295,14 @@ class AutocompleteTagsMulti extends React.Component {
 
       return {
         numSelected: values.length,
+        activeSuggestion: -1,
         values: values,
         userInput: '',
         filteredSuggestions: suggestions,
         showSuggestions: true,
       }
+    }, () => {
+      this.widthCalc(true)
     })
   };
 
@@ -349,6 +378,8 @@ class AutocompleteTagsMulti extends React.Component {
             showSuggestions: !showSuggestions
           }
         }
+      }, () => {
+        this.widthCalc(true)
       })
     }
 
@@ -357,6 +388,7 @@ class AutocompleteTagsMulti extends React.Component {
       if (this.state.showSuggestions === false) {
         return;
       } else {
+
         this.setState(prevState => {
           const { activeSuggestion } = prevState
 
@@ -397,13 +429,17 @@ class AutocompleteTagsMulti extends React.Component {
               filteredSuggestions: suggestions,
             }
           }
+        }, () => {
+          this.widthCalc(true)
         })
       }
     }
 
     // User pressed backspace
     else if (e.keyCode === 8) {
+
       if (userInput === '') {
+
         this.setState(prevState => {
           const [ ...values ] = prevState.values
 
@@ -415,6 +451,8 @@ class AutocompleteTagsMulti extends React.Component {
             values: values,
             numSelected: values.length,
           }
+        }, () => {
+          this.widthCalc()
         })
       } else return
     }
@@ -551,7 +589,7 @@ class AutocompleteTagsMulti extends React.Component {
       const arrayToMap = showSuggestions != true ? shortArray : values
 
       return (
-        <div>
+        <div className="tagsList">
           {arrayToMap.map((value, index) => {
             return (
               <span
@@ -563,7 +601,7 @@ class AutocompleteTagsMulti extends React.Component {
                 {value}
                 <span
                   data-value={value}
-                  onClick={this.onDeleteOption}
+                  onMouseDown={this.onDeleteOption}
                   className="delete"
                 >
                   <X />
@@ -734,30 +772,26 @@ class AutocompleteTagsMulti extends React.Component {
           className="form-control-std role autocompleterTags"
           id={"autocompleterTags-"+name}
           onClick={this.focusOnInput}
-      //    onKeyDown={this.onKeyDownParent}
-      //    tabIndex="0"
         >
           <div className="tagsContainer " id="selectContainer">
             { this.renderValues() }
           </div>
-          <div className="autocompleterTags-search" id={"autocompleterTags-search-"+name}>
-            <input
-              tabIndex="0"
-              type="text"
-              name={name}
-              className={showClickPlaceholder === true ? "placeholderOnClick" : ""}
-              id={"autocompleteBox-"+name}
-              placeholder={showClickPlaceholder === true ? placeholderOnClick : placeholder}
-              onChange={this.onChange}
-              onFocus={this.onFocus}
-              onKeyDown={this.onKeyDown}
-              value={userInput}
-              onBlur={this.onBlur}
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck="off"
-            />
-          </div>
+          <input
+            tabIndex="0"
+            type="text"
+            name={name}
+            className={showClickPlaceholder === true ? "placeholderOnClick autocompleterTags-search" : "autocompleterTags-search"}
+            id={"autocompleteBox-"+name}
+            placeholder={showClickPlaceholder === true ? placeholderOnClick : placeholder}
+            onChange={this.onChange}
+            onFocus={this.onFocus}
+            onKeyDown={this.onKeyDown}
+            value={userInput}
+            onBlur={this.onBlur}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
+          />
           <span className="arrow" id="selectArrow">
             { showSuggestions ? <ChevronUp /> : <ChevronDown /> }
           </span>
