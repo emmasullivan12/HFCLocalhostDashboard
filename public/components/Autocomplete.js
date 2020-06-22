@@ -132,7 +132,7 @@ class Autocomplete extends React.Component {
   };
 
   onKeyDown = e => {
-    const { activeSuggestion, filteredSuggestions } = this.state;
+    const { activeSuggestion, filteredSuggestions, showSuggestions } = this.state;
     const { handleChange, handleTabPress, idValue, name, valueToShow, isLastChild } = this.props;
 
     // User pressed the enter key
@@ -155,7 +155,7 @@ class Autocomplete extends React.Component {
 
     // User pressed the tab key
     if (e.keyCode === 9) {
-      if (isLastChild != undefined) {
+      if (isLastChild != undefined && showSuggestions === true) {
         e.preventDefault()
       }
       const isntValueToShow = valueToShow == undefined

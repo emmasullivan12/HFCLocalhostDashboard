@@ -34,7 +34,7 @@ class UploadProfPicContent extends Component {
         </div>
         <form className="fileUploadForm" id="profPicUploadForm">
           <div className="capture">
-            <Camera  />
+            <Camera />
             <input
               type="file"
               id="profPicSelect"

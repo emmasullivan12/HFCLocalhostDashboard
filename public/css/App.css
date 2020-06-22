@@ -26,6 +26,10 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* For Firefox */
+  scrollbar-color: rgba(63,63,63,.45) #fff;
+  scrollbar-width: thin;
 }
 
 html {

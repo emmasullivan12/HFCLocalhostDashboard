@@ -29,6 +29,10 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+
+  /* For Firefox */
+  scrollbar-color: rgba(63,63,63,.45) #fff;
+  scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
@@ -128,47 +132,49 @@ input[type=text]:disabled{
   color: #8f8fe5;
   font-size: 13px;
 }
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #d9d9d9;
   opacity: 1; /* Firefox */
 }
 
-.dob::placeholder{
-  font-size: .85em;
-}
-
 :-moz-input-placeholder { /* Internet Explorer 10-11 */
   color: #d9d9d9;
-}
-.dob:-moz-input-placeholder{
-  font-size: .85em;
 }
 
 ::-moz-input-placeholder { /* Microsoft Edge */
   color: #d9d9d9;
 }
-.dob::-moz-input-placeholder{
-  font-size: .85em;
-}
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #d9d9d9;
-}
-.dob:-ms-input-placeholder{
-  font-size: .85em;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #d9d9d9;
 }
-.dob::-ms-input-placeholder{
-  font-size: .85em;
-}
 
 ::-webkit-input-placeholder {
   color: #d9d9d9;
 }
+
+.dob::placeholder{
+  font-size: .85em;
+  opacity: 1; /* Firefox */
+}
 .dob::-webkit-input-placeholder{
+  font-size: .85em;
+}
+.dob:-moz-input-placeholder{
+  font-size: .85em;
+}
+.dob::-moz-input-placeholder{
+  font-size: .85em;
+}
+.dob:-ms-input-placeholder{
+  font-size: .85em;
+}
+.dob::-ms-input-placeholder{
   font-size: .85em;
 }
 
@@ -537,6 +543,9 @@ input[type=text]:disabled{
   color: #dadada!important;
   font-size: 0.7rem;
   padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  z-index: 100;
 }
 
 @media only screen and (min-width: 760px) {
@@ -545,7 +554,7 @@ input[type=text]:disabled{
     bottom: 0;
     right: 0;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 30px;
   }
 }
 

@@ -41,7 +41,6 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   onBlur = (e) => {
-    console.log("ONBLUR")
     e.persist()
     const { suggestions, onBlur, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
     const {userInput} = this.state
@@ -56,7 +55,6 @@ class AutocompleteTagsMulti extends React.Component {
 
 
       if (userInput != '') {
-        console.log(" gets hereeee")
         this.setState(prevState => {
           const [ ...values ] = prevState.values
           const index = values.indexOf(userInput)
@@ -88,13 +86,10 @@ class AutocompleteTagsMulti extends React.Component {
           }
         })
       } else {
-        console.log(" gets hereeee 3")
         const values = this.state.values;
 
         handleChange(values, () => {
-          console.log("gets here 0")
           if (values.length != 0) {
-            console.log("gets here 1")
             if (finMultiOptions) {
               finMultiOptions()
             }
@@ -147,7 +142,6 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   focusOnInput = () => {
-    console.log("FOCUSONINPUT")
     const {name} = this.props
     const inputBox = document.getElementById("autocompleteBox-"+name)
     inputBox.style.display = 'inline-block';
@@ -171,7 +165,6 @@ class AutocompleteTagsMulti extends React.Component {
       }
 
     } else {
-      console.log("gets here")
       containerwidth = (userInput.length +1) + "ch"
     }
 
@@ -260,12 +253,19 @@ class AutocompleteTagsMulti extends React.Component {
         numSelected: values.length,
         showSuggestions: prevState.showSuggestions
       }
+    }, () => {
+      if (this.state.values.length === 0) {
+        this.widthCalc()
+      } else {
+        this.widthCalc(true)
+      }
     })
   }
 
   onClickOption = (e) => {
     e.preventDefault()
     e.stopPropagation()
+    e.persist()
     const { suggestions, handleChange, name, valueToShow, finMultiOptions, required } = this.props;
     const value = e.currentTarget.dataset.text;
 
@@ -303,6 +303,9 @@ class AutocompleteTagsMulti extends React.Component {
       }
     }, () => {
       this.widthCalc(true)
+      if (e.target.classList.contains('addOwn')) {
+        this.heightCalc()
+      }
     })
   };
 
@@ -324,13 +327,12 @@ class AutocompleteTagsMulti extends React.Component {
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
-    const { suggestions, required, showCheckbox, finMultiOptions, handleChange, handleTabPress, idValue, name, valueToShow, isLastChild } = this.props;
+    const { suggestions, required, showCheckbox, finMultiOptions, handleChange, handleTabPress, idValue, name, valueToShow} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();
-
       this.setState(prevState => {
         const { activeSuggestion, showSuggestions } = prevState
 
@@ -380,6 +382,9 @@ class AutocompleteTagsMulti extends React.Component {
         }
       }, () => {
         this.widthCalc(true)
+        if (filteredSuggestions.length === 0) {
+          this.heightCalc()
+        }
       })
     }
 
@@ -516,11 +521,12 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   heightCalc = () => {
-    const {suggestions, name, showCheckbox} = this.props
+    const {suggestions, name, showCheckbox, required} = this.props
+    const {filteredSuggestions, values} = this.state
 
     let containerHeight = 0;
 
-    const length = suggestions.length
+    const length = filteredSuggestions.length === 0 ? suggestions.length : filteredSuggestions.length
     // Makes container the height of the first 5 items
     for (var i = 0; i < Math.min(6, length); i++) {
       if (showCheckbox === true) {
@@ -529,8 +535,20 @@ class AutocompleteTagsMulti extends React.Component {
         containerHeight += 40
       }
     }
-
     document.getElementById("autocompleter-items-"+name).style.maxHeight = containerHeight + "px";
+    if (filteredSuggestions.length != 0) {
+      document.getElementById("autocompleter-doneContainer-"+name).style.maxHeight = containerHeight + "px";
+      document.getElementById("autocompleter-doneContainer-"+name).style.top = (containerHeight += 10) + "px";
+    }
+    if (!required || (required && values.length > 0)) {
+      if (filteredSuggestions.length === 0 || containerHeight === 40) {
+        return
+      } else if (filteredSuggestions.length === 1) {
+        document.getElementById("doneTick-"+name).classList.add('solo')
+      } else {
+        document.getElementById("doneTick-"+name).classList.remove('solo')
+      }
+    }
   }
 
   checkLetters(inputToCheck) {
@@ -650,74 +668,93 @@ class AutocompleteTagsMulti extends React.Component {
 
     if (filteredSuggestions.length) {
       return (
-        <div
-          className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')}
-          id={"autocompleter-items-"+name}
-        >
-          {filteredSuggestions.map((suggestion, index) => {
-            const hasMultipleAttributes = this.checkMultipleAttributes();
-            const value = hasMultipleAttributes === true ? suggestion[valueToShow] : suggestion;
-            const selected = values.includes(value)
+        <React.Fragment>
+          <div
+            className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')}
+            id={"autocompleter-items-"+name}
+          >
+            {filteredSuggestions.map((suggestion, index) => {
+              const hasMultipleAttributes = this.checkMultipleAttributes();
+              const value = hasMultipleAttributes === true ? suggestion[valueToShow] : suggestion;
+              const selected = values.includes(value)
 
-            let className;
-            let dataTarget;
+              let className;
+              let dataTarget;
 
-            // Flag the active suggestion with a class
-            if (index === activeSuggestion) {
-              className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
-              dataTarget = "autoCompleteItem";
-            } else {
-              className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
-              dataTarget = "autoCompleteItem";
-            }
-
-            if (showCheckbox === true) {
-              className += " showCheckbox"
-            }
-
-            if (selected) {
-              //added
-              if (showCheckbox === true) {
-                className += " selectedCheckbox"
-
+              // Flag the active suggestion with a class
+              if (index === activeSuggestion) {
+                className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+                dataTarget = "autoCompleteItem";
               } else {
-                className += " selectedMultiple"
+                className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
+                dataTarget = "autoCompleteItem";
               }
-            }
 
-            if (index === suggestions.length) className += " lastItem"
+              if (showCheckbox === true) {
+                className += " showCheckbox"
+              }
 
-            const suggestionText = valueToShow == undefined ? suggestion : suggestion[valueToShow];
-            const key = valueToShow == undefined ? suggestion : suggestion[idValue];
-            const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
-            return (
-              <div
-                className={className}
-                key={key}
-                onClick={onClickOption}
-                onMouseDown={onMouseDown}
-                data-id={key}
-                data-text={suggestionText}
-                data-target={dataTarget}
-              >
-                {(showCheckbox === true) && (
-                    <span className="checkbox">
-                      { selected ? <Check /> : null }
-                    </span>
-                  )
+              if (selected) {
+                //added
+                if (showCheckbox === true) {
+                  className += " selectedCheckbox"
+
+                } else {
+                  className += " selectedMultiple"
                 }
-                <span className={(showCheckbox === true) ? "checkboxText" : ""}>
-                  {suggestionText}
+              }
+
+              if (index === suggestions.length) className += " lastItem"
+
+              const suggestionText = valueToShow == undefined ? suggestion : suggestion[valueToShow];
+              const key = valueToShow == undefined ? suggestion : suggestion[idValue];
+              const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
+              return (
+                <div
+                  className={className}
+                  key={key}
+                  onClick={onClickOption}
+                  onMouseDown={onMouseDown}
+                  data-id={key}
+                  data-text={suggestionText}
+                  data-target={dataTarget}
+                >
+                  {(showCheckbox === true) && (
+                      <span className="checkbox">
+                        { selected ? <Check /> : null }
+                      </span>
+                    )
+                  }
+                  <span className={(showCheckbox === true) ? "checkboxText" : ""}>
+                    {suggestionText}
+                  </span>
+                  {showDetail===true && (
+                    <div className="autocompleter-item-detail">
+                      {detail}
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+          <div className="autocompleter-doneContainer" id={"autocompleter-doneContainer-"+name}>
+            {!required || (required && values.length > 0) && (
+              <div
+                onClick={this.focusOnInput}
+              //  className={"doneTickSq-btn" + ((required === true && values.length === 0) ? " disabled" : "")}
+                className="doneTickSq-btn"
+                id={"doneTick-"+name}
+              >
+                <span
+                  className="tickNumSelected"
+                >
+                  <Check />
                 </span>
-                {showDetail===true && (
-                  <div className="autocompleter-item-detail">
-                    {detail}
-                  </div>
-                )}
+                Done
               </div>
-            )
-          })}
-        </div>
+            )}
+          </div>
+        </React.Fragment>
       )
     } else if (filteredSuggestions.length === 0) {
       const value = userInput;
@@ -730,7 +767,7 @@ class AutocompleteTagsMulti extends React.Component {
       let dataTarget;
 
       // Flag the active suggestion with a class
-      className = "autocompleter-active lastItem" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+      className = "addOwn autocompleter-active lastItem overflow-ellipsis" + (showDetail===true ? ' showDetail' : ' noDetail');
       dataTarget = "autoCompleteItem";
 
       if (!containLetters) {

@@ -21,21 +21,18 @@ class SelectBox extends React.Component {
     this.state = {
       values: [],
       focusedValue: -1,
-    //  hoveredValue: -1,
-    //  canResetHoverVal: '',
       isFocused: false,
       isOpen: false,
       numSelected: 0,
-  //    elementIdFocused: ''
     };
   }
 
   componentDidMount(){
     const { focusOnLoad, handleTabPress, name } = this.props;
+
     if (focusOnLoad) {
       document.getElementById("selectBox-"+name).focus();
     }
-  //  this.heightCalc()
     if (handleTabPress) {
       handleTabPress(false);
     }
@@ -48,7 +45,6 @@ class SelectBox extends React.Component {
     }
     this.setState({
       isFocused: true,
-//      elementIdFocused: document.activeElement.id
     })
   }
 
@@ -60,8 +56,11 @@ class SelectBox extends React.Component {
     this.setState(prevState => {
       const { values } = prevState
       if (multiple) {
-
-        handleChange(values)
+        const allSelected = values.length === (options.length - this.countTitles())
+        
+    //    if (allSelected != true) {
+          handleChange(values)
+      //  }
 
         if (values.length != 0) {
           if (finMultiOptions) {
@@ -144,7 +143,7 @@ class SelectBox extends React.Component {
       }
     }
 
-    if (multiple && currentState === true && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer' && e.target.id.indexOf("selectBox") != 0) {
+    if (multiple && currentState === true && e.target.nodeName != 'svg' && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer' && e.target.id.indexOf("selectBox") != 0 && e.target.id.indexOf("doneTick") != 0) {
       //change so if multiple and is open and clicked on box (not item) then close
       return;
     }
@@ -159,7 +158,8 @@ class SelectBox extends React.Component {
       isOpen: !currentState,
 //      elementIdFocused: document.activeElement.id
     }, () => {
-      if (this.state.isOpen === true && (this.countTitles() > 0 || showCheckbox === true)) {
+  //    if (this.state.isOpen === true && (this.countTitles() > 0 || showCheckbox === true)) {
+      if (multiple && this.state.isOpen === true && (showCheckbox != true || (this.countTitles() > 0 || showCheckbox === true))) {
         this.heightCalc()
       }
     })
@@ -232,15 +232,20 @@ class SelectBox extends React.Component {
 
       const [ ...values ] = prevState.values
       const index = values.indexOf(value)
+      const allSelected = values.length === (options.length - this.countTitles())
 
       if (index === -1) {
         values.push(value)
       } else {
         values.splice(index, 1)
       }
-      handleChange(values)
 
-      if (values.length === (options.length - this.countTitles())) {
+
+    //  if (allSelected != true) {
+        handleChange(values)
+  //    }
+
+      if (allSelected === true) {
         if (finMultiOptions) {
           finMultiOptions()
         }
@@ -275,6 +280,14 @@ class SelectBox extends React.Component {
         }
       }
 
+    }, () => {
+      if (showCheckbox === true) {
+        return
+      } else {
+        if (multiple && this.state.values.length != (options.length - this.countTitles())) {
+          this.heightCalc()
+        } else return
+      }
     });
   }
 
@@ -335,7 +348,7 @@ class SelectBox extends React.Component {
         } else {
 
           if (multiple) {
-            this.setState(prevState => {
+        //    this.setState(prevState => {
               const { focusedValue } = prevState
 
               if (focusedValue !== -1) {
@@ -397,7 +410,7 @@ class SelectBox extends React.Component {
                   isOpen: false
                 }
               }
-            })
+          //  })
           } else if (focusedValue != -1) {
         //    const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
@@ -437,7 +450,7 @@ class SelectBox extends React.Component {
 
     // User pressed the tab key
     else if (e.keyCode === 9) {
-      if (isLastChild != undefined) {
+      if (isLastChild != undefined && isOpen === true) {
         e.preventDefault()
       }
       this.setState(prevState => {
@@ -449,7 +462,7 @@ class SelectBox extends React.Component {
       //    const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
           if (multiple) {
-            this.setState(prevState => {
+          //  this.setState(prevState => {
               const { focusedValue } = prevState
 
               if (focusedValue !== -1) {
@@ -504,7 +517,7 @@ class SelectBox extends React.Component {
                   }
                 }
               }
-            })
+      //      })
           } else {
             const isSectionTitle = options[focusedValue]["isTitle"] === true;
             if (isSectionTitle) {
@@ -848,7 +861,8 @@ class SelectBox extends React.Component {
   }
 
   heightCalc = (needValue) => {
-    const {options, name, showCheckbox} = this.props
+    const {options, name, showCheckbox, required} = this.props
+    const {values} = this.state
 
     let containerHeight = 0;
 
@@ -869,6 +883,17 @@ class SelectBox extends React.Component {
       return containerHeight
     } else {
       document.getElementById('options-'+name).style.maxHeight = containerHeight + "px";
+      document.getElementById("autocompleter-doneContainer-"+name).style.maxHeight = containerHeight + "px";
+      document.getElementById("autocompleter-doneContainer-"+name).style.top = (containerHeight += 10) + "px";
+      if (!required || (required && values.length > 0)) {
+        if (containerHeight === 40) {
+          return
+        } else if (containerHeight === 32) {
+          document.getElementById("doneTick-"+name).classList.add('solo')
+        } else {
+          document.getElementById("doneTick-"+name).classList.remove('solo')
+        }
+      }
     }
   }
 
@@ -958,7 +983,7 @@ class SelectBox extends React.Component {
   }
 
   renderOptions() {
-    const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name } = this.props
+    const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name, required } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
@@ -966,92 +991,111 @@ class SelectBox extends React.Component {
     }
 
     return (
-      <div
-        className={(showDetail===true ? 'options showDetail' : 'options noDetail')}
-        id={'options-'+name}
-    //    onMouseMove={this.onMouseMove}
-  //      onBlur={this.onMouseOut}
-      >
-        {options.map((option, index) => {
-          const hasMultipleAttributes = this.checkMultipleAttributes();
-          const value = hasMultipleAttributes === true ? option[valueToShow] : option;
-          const detail = detailToShow == undefined ? '' :  option[detailToShow];
-          const icon = iconToShow == undefined ? '' :  option[iconToShow];
-          const isSectionTitle = option["isTitle"] === true;
-          const selected = values.includes(value)
+      <React.Fragment>
+        <div
+          className={(showDetail===true ? 'options showDetail' : 'options noDetail')}
+          id={'options-'+name}
+      //    onMouseMove={this.onMouseMove}
+    //      onBlur={this.onMouseOut}
+        >
+          {options.map((option, index) => {
+            const hasMultipleAttributes = this.checkMultipleAttributes();
+            const value = hasMultipleAttributes === true ? option[valueToShow] : option;
+            const detail = detailToShow == undefined ? '' :  option[detailToShow];
+            const icon = iconToShow == undefined ? '' :  option[iconToShow];
+            const isSectionTitle = option["isTitle"] === true;
+            const selected = values.includes(value)
 
-          let className = "option"
+            let className = "option"
 
-          if (isSectionTitle) {
-            className += " title"
+            if (isSectionTitle) {
+              className += " title"
 
-          //added
-          } else if (showCheckbox === true) {
-            className += " showCheckbox"
-          }
-
-          if (selected) {
-            if (multiple) {
-
-              //added
-              if (showCheckbox === true) {
-                className += " selectedCheckbox"
-
-              } else {
-                className += " selectedMultiple"
-              }
-            } else {
-              className += " selected"
+            //added
+            } else if (showCheckbox === true) {
+              className += " showCheckbox"
             }
-          }
-          if (index === focusedValue) className += " focused"
-          if (showDetail===true) {
-            className += " showDetail overflow-ellipsis"
-          } else {
-            className += " noDetail overflow-ellipsis"
-          }
-          if (showIcon===true && option["icon"] != null) {
-            className += " showIcon"
-          }
 
-          if (option[detailToShow] === "") className += " extraTop"
-          if (index === options.length) className += " lastItem"
+            if (selected) {
+              if (multiple) {
 
-          return (
-            <div
-              key={value}
-              data-id={hasMultipleAttributes === true ? (isSectionTitle ? ('title-'+ value) : option.value) : option}
-              data-text={value}
-              className={className}
-        //      onFocus={this.onHoverOption} // placeholder as was erroring without this
-        //      onMouseOver={this.onHoverOption}
-              onClick={this.onClickOption}
-            //  onFocus={this.onFocus}
-            //  onMouseOver={this.onHoverOption}
-            >
-              {(showIcon===true && option["icon"] != null) && (
-                <div className={"option-iconContainer " + (showDetail===true ? "showDetail": "noDetail")}>
-                  <img alt="option icon" src={icon} />
-                </div>
-              )}
-              { (multiple && showCheckbox === true && isSectionTitle != true) && (
-                  <span className="checkbox">
-                    { selected ? <Check /> : null }
-                  </span>
-                )
+                //added
+                if (showCheckbox === true) {
+                  className += " selectedCheckbox"
+
+                } else {
+                  className += " selectedMultiple"
+                }
+              } else {
+                className += " selected"
               }
-              <span className={(showCheckbox === true && isSectionTitle != true) ? "checkboxText" : ""}>
-                {value}
+            }
+            if (index === focusedValue) className += " focused"
+            if (showDetail===true) {
+              className += " showDetail overflow-ellipsis"
+            } else {
+              className += " noDetail overflow-ellipsis"
+            }
+            if (showIcon===true && option["icon"] != null) {
+              className += " showIcon"
+            }
+
+            if (option[detailToShow] === "") className += " extraTop"
+            if (index === options.length) className += " lastItem"
+
+            return (
+              <div
+                key={value}
+                data-id={hasMultipleAttributes === true ? (isSectionTitle ? ('title-'+ value) : option.value) : option}
+                data-text={value}
+                className={className}
+          //      onFocus={this.onHoverOption} // placeholder as was erroring without this
+          //      onMouseOver={this.onHoverOption}
+                onClick={this.onClickOption}
+              //  onFocus={this.onFocus}
+              //  onMouseOver={this.onHoverOption}
+              >
+                {(showIcon===true && option["icon"] != null) && (
+                  <div className={"option-iconContainer " + (showDetail===true ? "showDetail": "noDetail")}>
+                    <img alt="option icon" src={icon} />
+                  </div>
+                )}
+                { (multiple && showCheckbox === true && isSectionTitle != true) && (
+                    <span className="checkbox">
+                      { selected ? <Check /> : null }
+                    </span>
+                  )
+                }
+                <span className={(showCheckbox === true && isSectionTitle != true) ? "checkboxText" : ""}>
+                  {value}
+                </span>
+                {showDetail===true && (
+                  <div className="option-detail overflow-ellipsis" >
+                    {detail}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <div className="autocompleter-doneContainer" id={"autocompleter-doneContainer-"+name}>
+          {multiple && (!required || (required && values.length > 0)) && (
+            <div
+              onClick={this.onClick}
+            //  className={"doneTickSq-btn" + ((required === true && values.length === 0) ? " disabled" : "")}
+              className="doneTickSq-btn"
+              id={"doneTick-"+name}
+            >
+              <span
+                className="tickNumSelected"
+              >
+                <Check />
               </span>
-              {showDetail===true && (
-                <div className="option-detail overflow-ellipsis" >
-                  {detail}
-                </div>
-              )}
+              Done
             </div>
-          );
-        })}
-      </div>
+          )}
+        </div>
+      </React.Fragment>
     )
   }
 

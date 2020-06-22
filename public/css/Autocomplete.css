@@ -37,6 +37,39 @@
   font-size: 12px!important;
   color: #c7c7f7!important;
   min-width: 250px!important;
+  opacity: 1; /* Firefox */
+}
+
+.placeholderOnClick::-webkit-input-placeholder{
+  font-size: 12px!important;
+  color: #c7c7f7!important;
+  min-width: 250px!important;
+}
+
+.placeholderOnClick:-moz-input-placeholder{
+  font-size: 12px!important;
+  color: #c7c7f7!important;
+  min-width: 250px!important;
+}
+
+.placeholderOnClick::-moz-input-placeholder{
+  font-size: 12px!important;
+  color: #c7c7f7!important;
+  min-width: 250px!important;
+}
+
+.placeholderOnClick:-ms-input-placeholder{
+  font-size: 12px!important;
+  color: #c7c7f7!important;
+  min-width: 250px!important;
+}
+
+.placeholderOnClick::-ms-input-placeholder{
+  font-size: 12px!important;
+  color: #c7c7f7!important;
+  min-width: 250px!important;
+  transform: scale(0.7) translateX(-50px); /* Edge bug: font-size doesnt work, so use transform instead */
+  -ms-transform: scale(0.7) translateX(-50px);
 }
 
 #autocompleteBox.error {
@@ -53,6 +86,10 @@
   /* max-height: 250px; */
   overflow-y: auto;
   overflow-x: hidden;
+
+  /* For Firefox */
+  scrollbar-color: rgba(63,63,63,.45) #fff;
+  scrollbar-width: thin;
 }
 .autocompleter-items.showDetail{
   max-height: calc(5 * 50px);

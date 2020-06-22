@@ -21,6 +21,16 @@ svg {
   line-height: 14px;
   padding: 5px 10px;
 }
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+  .select-placeholder{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .select-placeholder{
+    font-size: 15px;
+  }
+}
 .select-placeholder.onClick{
   font-size: 12px;
   color: #4e4ed6;
@@ -60,6 +70,10 @@ svg {
   border-top: none;
   overflow-y: auto;
   overflow-x: hidden;
+
+  /* For Firefox */
+  scrollbar-color: rgba(63,63,63,.45) #fff;
+  scrollbar-width: thin;
 }
 /*#options-selectInd::before{
   content: "You can edit these later";
@@ -86,10 +100,87 @@ svg {
   background-color: #fff!important;
 }
 
+/*.doneTickCrcl-btn{
+  padding: .5em;
+  line-height: 1;
+  background: #58d2bb;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.33);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,.33);
+  -moz-box-shadow: 0 3px 4px 0 rgba(0,0,0,.33);
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px!important;
+}*/
+.autocompleter-doneContainer{
+  position: relative;
+}
+
+.doneTickSq-btn{
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  width: 70px;
+  height: 24px;
+
+  background: #58d2bb;
+  color: #fff;
+  z-index: 1000;
+  cursor: pointer;
+
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.11);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,.11);
+  -moz-box-shadow: 0 3px 4px 0 rgba(0,0,0,.11);
+
+  font-size: 0.7em;
+  word-break: break-word;
+  padding: 5px 10px;
+  padding-left: 27px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.doneTickSq-btn.solo{
+  bottom: 6.5px;
+}
+
 .option {
   padding: 10px 15px;
   border-bottom: 1px solid rgba(241, 241, 241, 0.988);
   cursor: pointer;
+}
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+  .option {
+    font-size: 16px;
+  }
+  .option.showIcon {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .option {
+    font-size: 15px;
+  }
+  .option.showIcon {
+    font-size: 13px;
+  }
 }
 .option.showDetail {
   height: 50px;
@@ -121,12 +212,12 @@ svg {
   flex-direction: row;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
-  padding-left: 60px!important;
+  padding-left: 40px!important;
   position: relative;
 }
 .option-iconContainer{
   position: absolute;
-  left: 15px;
+  left: 10px;
   top: 0;
   display: inline-block;
 }
@@ -136,8 +227,8 @@ svg {
   padding: 5px;
 }
 .option-iconContainer.noDetail{
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   padding: 5px;
 }
 .option-iconContainer img {
@@ -215,7 +306,7 @@ svg {
 
 .multiple {
   padding-right: 30px;
-  margin-right: 5px;
+  margin-right: 10px;
   background: #f1f1ff;
   color: #8f8fe5;
   font-size: 0.8em;

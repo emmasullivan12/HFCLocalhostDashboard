@@ -260,6 +260,7 @@ class EduShortSU extends React.Component {
       }
     } else {
       this.setState({
+        courseLength: '',
         uniGraduYr: '',
         uniGraduYrIsValid: false
       });
@@ -309,9 +310,9 @@ class EduShortSU extends React.Component {
 
   // Passed on to be used within Select.js onBlur & onClickOption events
   otherValidityChecks() {
-    const { selectBoxFocused, courseLength, pgGraduYr } = this.state;
+    const { selectBoxFocused, courseLength, uniGraduYr } = this.state;
     if (selectBoxFocused === "selectBox-uniYrGrp" || selectBoxFocused === "selectBox-uniLength" || selectBoxFocused === "selectBox-pgGraduYr") {
-      if (courseLength === '' || pgGraduYr != '') {
+      if (courseLength === '' && uniGraduYr === '') {
         document.getElementById("selectBox-uniYrGrp").classList.remove('error');
       } else {
         if (this.state.uniGraduYrIsValid === true) {

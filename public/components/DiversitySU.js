@@ -41,11 +41,13 @@ class DiversitySU extends React.Component {
       .map(value => value.value)
 
     if (this.state.hurdles.length != 0 && userInput.length != 0) {
+      console.log("gets here in handlehurchange")
+      console.log("about to setstate")
       this.setState({
         editingHurdles: true
       })
     }
-
+    console.log("about to setstate 2")
     this.setState({
       hurdles: newArray
     })

@@ -56,6 +56,10 @@ const roleOptions = [
   {value: '3', label: 'Candlestick Maker'},
   {value: '4', label: 'Librarian'},
   {value: '5', label: 'Delivery Driver'},
+  {value: '6', label: 'Uber Driver'},
+  {value: '7', label: 'Postman'},
+  {value: '8', label: 'Teacher'},
+  {value: '9', label: 'Baker'},
 ];
 
 class IndustryRoleSU extends React.Component {
@@ -125,20 +129,15 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleMultiRoles() {
-    console.log("HANLEMULTIROLES")
     const {rolesFromList, freeTextRoles} = this.state
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
-      console.log("focusing on firstelementchild")
-      console.log("document.getElementById('ratingsContainer').firstElementChild")
-      console.log(document.getElementById('ratingsContainer').firstElementChild)
       document.getElementById("ratingsContainer").firstElementChild.focus()
     } else {
-      console.log("focusing on role box")
       document.getElementById("autocompleteBox-selectRole").focus()
     }
   }
 
-  handleRoleChange(userInput) {
+  handleRoleChange(userInput, callback) {
     const rolesFromList = roleOptions
       .filter(role => userInput.includes(role.label))
 
@@ -158,6 +157,10 @@ class IndustryRoleSU extends React.Component {
     this.setState({
       rolesFromList: values,
       freeTextRoles: freeTextRoles
+    }, () => {
+      if(callback) {
+        callback()
+      }
     })
 
   }
@@ -165,13 +168,17 @@ class IndustryRoleSU extends React.Component {
   handleRatingChange(value) {
     this.setState({
       knowNextSteps: value
+    }, () => {
+      if (this.state.knowNextSteps === "") {
+        document.getElementById("ratingsContainer").firstElementChild.focus()
+      } else {
+        document.getElementById("Submit-btn-ind").focus()
+      }
     });
   }
 
   handleTabPress(tabPressed) {
-    this.setState({ tabPressed: tabPressed }, () => {
-      console.log("this.state.tabPressed: "+this.state.tabPressed)
-    });
+    this.setState({ tabPressed: tabPressed });
   }
 
   handleSubmit(e) {
@@ -249,7 +256,6 @@ class IndustryRoleSU extends React.Component {
                       focusOnLoad={tabPressed ? false : true}
                       idValue='value'
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                    //  isLastChild
                       required
                     />
                     {errorLoadingRoles === true && (
