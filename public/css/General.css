@@ -72,6 +72,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .loadingSUMsg {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   #loading-welcome {
     background-position: 21px 16px, right 15px top 16px!important;
   }
@@ -209,6 +213,10 @@ hr{
   text-align: left;
   font-family: Lato;
   margin-bottom: 0.2rem;
+}
+.descriptor.intro{
+  text-align: center;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 425px) {
   .descriptor {
@@ -552,22 +560,25 @@ hr{
   width: 100px;
   color: #3baf99;
   font-weight: 600;
-  background: #fff;
+  background: #e9f9f6;
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
   cursor: pointer;
   outline: none;
-  border: 2px solid #6fc3b3;
+  border: 1.5px solid #58d2bb;
   height: 40px;
   text-align: center;
   padding: 0;
-  margin: 0.8rem 0;
+  margin: 0.4rem 0 0.8rem 0;
   margin-right: -3px;
   -webkit-transition: background .15s ease-out;
   -moz-transition: background .15s ease-out;
   -ms-transition: background .15s ease-out;
   -o-transition: background .15s ease-out;
   transition: background .15s ease-out;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.02);
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.02);
+  -moz-box-shadow: 0 3px 3px 0 rgba(0,0,0,.02);
   text-decoration: none;
   font:inherit;
 }
@@ -580,17 +591,20 @@ hr{
   border-bottom-right-radius: .5rem;
   cursor: pointer;
   outline: none;
-  border: 2px solid #6fc3b3;
+  border: 1.5px solid #58d2bb;
   height: 40px;
   text-align: center;
   padding: 0;
-  margin: 0.8rem 0;
+  margin: 0.4rem 0 0.8rem 0;
   margin-left: -3px;
   -webkit-transition: background .15s ease-out;
   -moz-transition: background .15s ease-out;
   -ms-transition: background .15s ease-out;
   -o-transition: background .15s ease-out;
   transition: background .15s ease-out;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.02);
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.02);
+  -moz-box-shadow: 0 3px 3px 0 rgba(0,0,0,.02);
   text-decoration: none;
   font:inherit;
 }
@@ -626,6 +640,7 @@ hr{
   -ms-user-select: none;
   user-select: none;
 }
+
 .checkbox-container-login{
   display: block;
   position: relative;
@@ -662,6 +677,23 @@ hr{
   width: 25px;
   background-color: rgba(78,78,214,.11);
 }
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+  .checkbox-container{
+    padding-left: 2.7rem;
+  }
+  .checkmark {
+    left: 0.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .checkbox-container{
+    padding-left: 2.7rem;
+  }
+  .checkmark {
+    left: 0.5rem;
+  }
+}
+
 .initiativeCheckmark {
   background-color: rgba(247,247,247,.64)!important;
 }

@@ -201,7 +201,7 @@ input[type=text]:disabled{
   height: 100%;
 }
 
-.prLogoArea{
+.prLogoArea.signUp{
   color: #fff;
   position: relative;
   min-height: 61px;
@@ -238,6 +238,7 @@ input[type=text]:disabled{
   padding: 60px 85px;
   max-width: 518px;
   display: inline-block;
+  height: 100%;
 }
 
 .loginContainer h1 {
@@ -295,6 +296,24 @@ input[type=text]:disabled{
   width: 14rem;
   margin-bottom: 2rem;
 }
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .descriptor.prompt.error.verifyForm.otherOption,
+  .descriptor.prompt.error.verifyForm{
+    width: 12rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .descriptor.prompt.error.verifyForm.otherOption,
+  .descriptor.prompt.error.verifyForm{
+    width: 10.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .descriptor.prompt.error.verifyForm.otherOption,
+  .descriptor.prompt.error.verifyForm{
+    width: 10rem;
+  }
+}
 
 .descriptor.prompt.error.noEduEmailForm{
   margin-top: -1rem;
@@ -337,7 +356,7 @@ input[type=text]:disabled{
 .form-control-dob,
 .form-control-pwd{
   width: 100%;
-  font-size: 1.14rem;
+  font-size: 1rem;
   font-family: inherit;
   line-height: normal;
   padding: 10px 15px;
@@ -540,8 +559,8 @@ input[type=text]:disabled{
 
 .legalSection{
   margin-top: 1rem;
-  color: #dadada!important;
-  font-size: 0.7rem;
+  color: #c7c7c7!important;
+  font-size: 12px;
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;

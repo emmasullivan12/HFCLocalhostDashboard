@@ -101,10 +101,10 @@ menteebtn.addEventListener('click', function(event) {
   specCharReq.style.color = '#cbcaca';
   numCharReq.style.color = '#cbcaca';
 
-  menteebtn.style.backgroundColor = '#6fc3b3';
+  menteebtn.style.backgroundColor = '#58d2bb';
   menteebtn.style.color = '#fff';
   mentorbtn.style.backgroundColor = '#fff';
-  mentorbtn.style.color = '#3baf99';
+  mentorbtn.style.color = '#15b395';
   menteeradio.checked = true;
   mentorradio.checked = false;
   names.style.display = 'flex';
@@ -171,10 +171,10 @@ mentorbtn.addEventListener('click', function(event) {
   specCharReq.style.color = '#cbcaca';
   numCharReq.style.color = '#cbcaca';
 
-  mentorbtn.style.backgroundColor = '#6fc3b3';
+  mentorbtn.style.backgroundColor = '#58d2bb';
   mentorbtn.style.color = '#fff';
   menteebtn.style.backgroundColor = '#fff';
-  menteebtn.style.color = '#3baf99';
+  menteebtn.style.color = '#15b395';
   menteeradio.checked = false;
   mentorradio.checked = true;
   names.style.display = 'flex';

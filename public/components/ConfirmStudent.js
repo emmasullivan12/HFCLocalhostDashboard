@@ -592,7 +592,7 @@ class ConfirmStudent extends React.Component {
                 {eduEmailIsValid === false && isPersonalEmail === false && (
                   <React.Fragment>
                     <div className="descriptor prompt error verifyForm otherOption alignLeft">
-                      This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email address
+                      This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email
                     </div>
                     {isHtmlValid === true && containsDotAndAt != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
                       <Checkbox

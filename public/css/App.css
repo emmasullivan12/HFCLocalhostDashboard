@@ -192,6 +192,16 @@ h2{
   background: #fff;
 }
 
+.loadingSUContainer{
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+}
+
 #loading-welcome{
   display: table-cell;
   vertical-align: middle;
@@ -201,11 +211,22 @@ h2{
   background-size: 200px 29px, 225px 13px;
 }
 
+#loadingSU-welcome{
+  display: table-cell;
+  vertical-align: middle;
+  background-image: url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatName.png"), url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatActions.png");
+  background-position: 21px 16px, right 15px top 16px;
+  background-repeat: no-repeat;
+  background-size: 200px 29px, 225px 13px;
+}
+
 .loadingMsg{
   text-align: center;
   margin-left: -220px;
 }
-
+.loadingSUMsg{
+  text-align: center;
+}
 .loadingWelcomeMsg{
   font-size: 1.25rem;
   font-weight: 600;
@@ -560,7 +581,7 @@ svg:not(:root) {
   color: #fff;
   position: relative;
   min-height: 61px;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 100;
 }
 .prLogoArea.notLogin{

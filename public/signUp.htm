@@ -6,12 +6,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="./css/Login.css">
-  <link rel="stylesheet" href="./css/General.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <meta name="description" content="Sign up to get your Prospela.com account.">
+  <link rel="preload stylesheet" href="./css/Login.css">
+  <link rel="preload stylesheet" href="./css/General.css">
+  <link rel="shortcut icon preload" href="https://prospela.com/wp-content/uploads/2018/04/Prospela_Favicon_vLatest.png">
+  <link rel="icon preload" href="https://prospela.com/wp-content/uploads/2018/04/Prospela_Favicon_vLatest.png" sizes="32x32">
+  <link rel="icon preload" href="https://prospela.com/wp-content/uploads/2018/04/Prospela_Favicon_vLatest.png" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed preload" href="https://prospela.com/wp-content/uploads/2018/04/Prospela_Favicon_vLatest.png">
+  <meta name="msapplication-TileImage" content="https://prospela.com/wp-content/uploads/2018/04/Prospela_Favicon_vLatest.png">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='preload stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='preload stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='preload stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='preload stylesheet'>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96909912-2"></script>
   <script>
@@ -41,6 +47,7 @@
           </div>
           <form method="POST" action="/signup">
             <div className="buttonContainer">
+              <div class="descriptor intro">Sign up as:</div>
               <input type="radio" class="hiddenRadio" value="mentor" name="role" id="mentorradio">
               <input type="radio" class="hiddenRadio" value="mentee" name="role" id="menteeradio">
               <button type="button" id="mentor-btn" name="role" class="btn-left">Mentor</button>
@@ -103,8 +110,8 @@
             <button type="submit" id="getStarted-btn" class="Submit-btn fullWidth">Get Started</button>
           </form>
           <div class="login-error-msg">The email and/or password entered were not recognised. Please try again</div>
-          <div class="col-5 legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
         </div>
+        <div class="col-5 legalSection">Copyright 2019 All Rights Reserved. Made with ♥ by Prospela Group Ltd <a class="legal-href" href="https://prospela.com/privacy-policy/">Privacy</a> | <a class="legal-href" href="https://prospela.com/terms-of-use-safeguarding-policy/">Terms and Safeguarding</a></div>
       </div>
       <div class="col-5 login-pic">
         <div class="login-picContainer">

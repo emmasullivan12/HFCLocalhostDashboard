@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -76,7 +76,7 @@ class VerifyEmail extends React.Component {
       <React.Fragment>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <div className="descriptor reqAsterisk">Enter email verification code</div>
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="emailverifcode">Enter email verification code</label>
             <input
               type="password"
               name="verificationCode"

@@ -14,7 +14,7 @@ class SignUpScreenTemplate extends React.Component {
     /*var parsedSubheader = new DOMParser().parseFromString(subheader, "text/xml");*/
     return (
       <div className="mainContainer">
-        <div className="prLogoArea col-12">
+        <div className="prLogoArea signUp col-12">
           <div className="prLogoLoginContainer col-12">
             <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
           </div>

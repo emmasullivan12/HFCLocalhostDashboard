@@ -359,7 +359,7 @@ class NoEduEmailContent extends Component {
                 />
                 {isHtmlValid === false && emailIsValid === false && isPersonalEmail === false && (
                   <div className="descriptor prompt error verifyForm alignLeft">
-                    This must be a valid {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} email address
+                    This must be a valid {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} email
                   </div>
                 )}
                 {isPersonalEmail === true && (

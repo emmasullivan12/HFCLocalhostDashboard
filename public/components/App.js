@@ -38,7 +38,61 @@ const SUContent = ('mentor or mentee?')
 const MenteeSUContent = ('mentee SU')
 const MentorSUContent = ('mentor SU')*/
 
-class Loading extends Component{
+class LoadingSU extends Component{
+  render(){
+    const userRole = this.props.userRole;
+    return(
+      <BrowserRouter>
+        <div className="clientUI">
+          <div className="clientContainer">
+            <div className="loadingSUContainer">
+              <div id="loadingSU-welcome">
+                <div className="loadingSUMsg">
+                  <p className="loadingWelcomeMsg">
+                    Loading sign-up form...
+                  </p>
+                  <div className="infiniteSpinner infiniteSpinner-medium">
+                    <div className="LoaderLayout-sc-1eu50fy-0 eczmJS">
+                      <div className="LoaderWrapper-sc-1eu50fy-1 iKvkDg">
+                        <div className="SpinnerWrapper-sc-1eu50fy-2 ebrxGH">
+                          <span color="currentColor" className="SVGInline SpinnerSvg-jjs2a1-0 dtuFiT">
+                            <svg className="SVGInline-svg SpinnerSvg-jjs2a1-0-svg dtuFiT-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                              <title>loader</title>
+                              <g fill="#2F2F26" fillRule="evenodd">
+                                <rect transform="rotate(22.5 26.506 4.294)" x="25.506" y="1.294" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(45 32.02 7.98)" x="31.021" y="4.979" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-112.5 35.706 13.494)" x="34.706" y="10.494" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-90 37 20)" x="36" y="17" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-67.5 35.706 26.506)" x="34.706" y="23.506" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-45 32.02 32.02)" x="31.021" y="29.021" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-22.5 26.506 35.706)" x="25.506" y="32.706" width="2" height="6" rx="1"/>
+                                <rect x="19" y="34" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(22.5 13.494 35.706)" x="12.494" y="32.706" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(45 7.98 32.02)" x="6.979" y="29.021" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-112.5 4.294 26.506)" x="3.294" y="23.506" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-90 3 20)" x="2" y="17" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-67.5 4.294 13.494)" x="3.294" y="10.494" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-45 7.98 7.98)" x="6.979" y="4.979" width="2" height="6" rx="1"/>
+                                <rect transform="rotate(-22.5 13.494 4.294)" x="12.494" y="1.294" width="2" height="6" rx="1"/>
+                                <rect x="19" width="2" height="6" rx="1"/>
+                              </g>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </BrowserRouter>
+    );
+  }
+}
+
+class LoadingDash extends Component{
   render(){
     const userRole = this.props.userRole;
     return(
@@ -318,6 +372,8 @@ function MenteeSteps({userRole}) {
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 
       switch (step) {
+        case 'loading':
+          return <LoadingSU userRole={userRole}/>
         case 'did1stSU':
         case 'didCountry':
         case 'updatingEdu':
@@ -329,8 +385,7 @@ function MenteeSteps({userRole}) {
           return (
             <BrowserRouter>
               <Switch>
-                <Redirect exact from="/" to="/mentee-signup" />
-                <ProtectedRoute path="/mentee-signup" roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
+                <ProtectedRoute roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
               </Switch>
             </BrowserRouter>
           );
@@ -368,7 +423,7 @@ function MentorSteps({userRole}) {
               </BrowserRouter>
             );
           case 5:
-            return <Loading userRole={userRole}/>
+            return <LoadingDash userRole={userRole}/>
           case 'didShortSUtf':
           case 'didFullSUtf':
           case 'didTrain':
