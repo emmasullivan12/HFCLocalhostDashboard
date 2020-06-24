@@ -25,10 +25,20 @@ svg {
   .select-placeholder{
     font-size: 16px;
   }
+  .option-iconContainer.FA.showDetail,
+  .option-iconContainer.FA.noDetail{
+    left: 5px;
+    font-size: 21px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .select-placeholder{
     font-size: 15px;
+  }
+  .option-iconContainer.FA.showDetail,
+  .option-iconContainer.FA.noDetail{
+    left: 5px;
+    font-size: 21px;
   }
 }
 .select-placeholder.onClick{
@@ -212,8 +222,9 @@ svg {
   flex-direction: row;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
-  padding-left: 40px!important;
+  padding-left: 50px!important;
   position: relative;
+  text-align: left;
 }
 .option-iconContainer{
   position: absolute;
@@ -221,6 +232,25 @@ svg {
   top: 0;
   display: inline-block;
 }
+.option-iconContainer.FA.showDetail{
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #8f8fe5;
+}
+.option-iconContainer.FA.noDetail{
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  color: #8f8fe5;
+}
+
+left: 5px;
+
 .option-iconContainer.showDetail{
   height: 50px;
   width: 50px;

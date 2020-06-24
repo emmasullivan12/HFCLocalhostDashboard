@@ -583,7 +583,7 @@ input[type=text]:disabled{
 }
 
 .login-picContainer{
-  max-width: 360px;
+  max-width: 340px;
   flex-shrink: 0;
   -webkit-flex-shrink: 0;
   -moz-flex-shrink: 0;

@@ -8,12 +8,20 @@ import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 
 const hurdlesList = [
-  {value: 0, label: 'Eligible for Free School Meals', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default'},
-  {value: 1, label: 'My parents didn\'t go to university', icon: 'https://images.typeform.com/images/QSBrrY42iA35/image/default'},
-  {value: 2, label: 'Non-native English speaker', icon: 'https://images.typeform.com/images/di2wKSTrtKwX/image/default'},
-  {value: 3, label: 'None', icon: 'https://images.typeform.com/images/qfz8s3nqfncc/image/default'},
-  {value: 4, label: 'Prefer not to say', icon: 'https://images.typeform.com/images/WzCB42U3EE5c/image/default'}
+  {value: 0, label: 'Eligible for Free School Meals', iconFA: 'fas fa-utensils'},
+  {value: 1, label: 'My parents didn\'t go to university', iconFA: 'fas fa-hiking'},
+  {value: 2, label: 'Non-native English speaker', iconFA: 'fas fa-language'},
+  {value: 3, label: 'None', iconFA: 'fas fa-times'},
+  {value: 4, label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
 ];
+
+/*const hurdlesList = [
+  {value: 0, label: 'Eligible for Free School Meals', iconFA: '', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default'},
+  {value: 1, label: 'My parents didn\'t go to university', iconFA: '', icon: 'https://images.typeform.com/images/QSBrrY42iA35/image/default'},
+  {value: 2, label: 'Non-native English speaker', iconFA: '', icon: 'https://images.typeform.com/images/di2wKSTrtKwX/image/default'},
+  {value: 3, label: 'None', iconFA: '', icon: 'https://images.typeform.com/images/qfz8s3nqfncc/image/default'},
+  {value: 4, label: 'Prefer not to say', iconFA: '', icon: 'https://images.typeform.com/images/WzCB42U3EE5c/image/default'}
+];*/
 
 class DiversitySU extends React.Component {
   constructor () {
@@ -129,10 +137,10 @@ class DiversitySU extends React.Component {
     ];
 
     const genders = [
-      {value: '0', label: 'Male', icon: 'https://images.typeform.com/images/8ht36QbibjJJ/image/default'},
-      {value: '1', label: 'Female', icon: 'https://images.typeform.com/images/c6BWgrhxrj3d/image/default'},
-      {value: '2', label: 'Non-binary', icon: 'https://images.typeform.com/images/nnGsJVx2JgGJ/image/default'},
-      {value: '3', label: 'Prefer not to say', icon: 'https://images.typeform.com/images/tsrEVrcRyMjR/image/default'}
+      {value: '0', label: 'Male', iconFA: 'fas fa-male'},
+      {value: '1', label: 'Female', iconFA: 'fas fa-female'},
+      {value: '2', label: 'Non-binary', iconFA: 'fas fa-genderless'},
+      {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
     ];
 
     const ethnicities = [
@@ -171,7 +179,7 @@ class DiversitySU extends React.Component {
                   handleTabPress={this.handleTabPress}
                   focusOnLoad
                   showIcon
-                  iconToShow='icon'
+                  iconToShow='iconFA'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                 //  showCheckbox
                   required
@@ -207,7 +215,7 @@ class DiversitySU extends React.Component {
                     handleTabPress={this.handleTabPress}
                     focusOnLoad={tabPressed ? false : true}
                     showIcon
-                    iconToShow='icon'
+                    iconToShow='iconFA'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
                   />

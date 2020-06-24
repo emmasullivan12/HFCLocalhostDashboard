@@ -57,7 +57,7 @@ class SelectBox extends React.Component {
       const { values } = prevState
       if (multiple) {
         const allSelected = values.length === (options.length - this.countTitles())
-        
+
     //    if (allSelected != true) {
           handleChange(values)
       //  }
@@ -1036,7 +1036,7 @@ class SelectBox extends React.Component {
             } else {
               className += " noDetail overflow-ellipsis"
             }
-            if (showIcon===true && option["icon"] != null) {
+            if (showIcon===true && (option["icon"] != null || option["iconFA"] != null)) {
               className += " showIcon"
             }
 
@@ -1054,7 +1054,13 @@ class SelectBox extends React.Component {
                 onClick={this.onClickOption}
               //  onFocus={this.onFocus}
               //  onMouseOver={this.onHoverOption}
+
               >
+                {(showIcon===true && option["iconFA"] != null) && (
+                  <div className={"option-iconContainer FA " + (showDetail===true ? "showDetail": "noDetail")}>
+                    <i className={icon} />
+                  </div>
+                )}
                 {(showIcon===true && option["icon"] != null) && (
                   <div className={"option-iconContainer " + (showDetail===true ? "showDetail": "noDetail")}>
                     <img alt="option icon" src={icon} />
