@@ -12,11 +12,25 @@ const TypeformTrigger = ({
     {text}
   </button>
 );
+
 // Launches Full page Typeform Modal to complete full sign up (will need to copy our Typeform URL below)
 class TypeformFullPage extends Component {
 
   componentDidMount(){
-    const tflink = this.props.tflink;
+    document.getElementById('typeform-popup').addEventListener('click',function(){
+      this.fullPageTypeformPopup.open();
+    });
+  }
+
+  componentWillUnmount() {
+    document.getElementById('typeform-popup').addEventListener('click',function(){
+      this.fullPageTypeformPopup.open();
+    });
+  }
+
+  createFullPageTypeformPopup = () => {
+    const {tflink} = this.props;
+
     const fullPageTypeformPopup = typeformEmbed.makePopup(
       tflink,
       {
@@ -31,9 +45,6 @@ class TypeformFullPage extends Component {
         }
       }
     )
-    document.getElementById('typeform-popup').addEventListener('click',function(){
-      fullPageTypeformPopup.open();
-    });
   }
 
   render(){
