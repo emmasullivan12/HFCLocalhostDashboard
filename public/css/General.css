@@ -1,4 +1,4 @@
-/* Dex last merged this code on 4th June 2020 */
+/* Dex last merged this code on 25th June 2020 */
 
 /* General CSS styles to add to any individual element anywhere in the app */
 
@@ -560,7 +560,7 @@ hr{
   width: 100px;
   color: #3baf99;
   font-weight: 600;
-  background: #e9f9f6;
+  background: #d9f9f3;
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
   cursor: pointer;
