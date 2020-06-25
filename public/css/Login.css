@@ -293,7 +293,7 @@ input[type=text]:disabled{
   margin-top: -2.5rem;
 }
 .descriptor.prompt.error.verifyForm.otherOption{
-  width: 14rem;
+  width: 12rem;
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 376px) and (max-width: 425px) {

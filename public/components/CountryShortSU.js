@@ -180,7 +180,7 @@ class CountryShortSU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group" id="userCountry">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="country">What country are you studying / working in?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="country">What <strong>country</strong> are you studying / working in?</label>
                 <div className="autocompleter">
                   <Autocomplete
                     suggestions={countries}
@@ -201,7 +201,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal === 'USA' && (
                 <div className="form-group" id="userState">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which State?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which <strong>State?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={states}
@@ -220,7 +220,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal === 'CAN' && (
                 <div className="form-group" id="userProvince">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which Province?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which <strong>Province?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={provinces}
@@ -239,7 +239,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal === 'GBR' && (
                 <div className="form-group" id="userUKCounty">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which County?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which <strong>County?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukCounties}
@@ -258,7 +258,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal != '' && (countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'CAN') && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN')) && (
                 <div className="form-group" id="userCity">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="cityTextBox">{countryLocal != 'GBR' ? 'Which City?' : 'Which Town/City?'}</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="cityTextBox">Which <strong>{countryLocal != 'GBR' ? 'City?' : 'Town/City?'}</strong></label>
                   <TextInput
                     name="city"
                     id="cityTextBox"

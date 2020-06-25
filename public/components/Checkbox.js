@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -7,7 +7,7 @@ class Checkbox extends Component {
 
   onKeyDown = (e) => {
     const { onChange, id } = this.props;
-    const { timesClicked } = this.state;
+  //  const { timesClicked } = this.state;
 
     // User pressed the enter key
     if (e.keyCode === 13) {

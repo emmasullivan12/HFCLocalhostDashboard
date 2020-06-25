@@ -266,7 +266,7 @@ class AutocompleteTagsMulti extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
-    const { suggestions, handleChange, name, valueToShow, finMultiOptions, required } = this.props;
+    const { suggestions, handleChange, name, valueToShow, required } = this.props;
     const value = e.currentTarget.dataset.text;
 
     if (this.checkLetters(value) === false) {
@@ -327,7 +327,7 @@ class AutocompleteTagsMulti extends React.Component {
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
-    const { suggestions, required, showCheckbox, finMultiOptions, handleChange, handleTabPress, idValue, name, valueToShow} = this.props;
+    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key

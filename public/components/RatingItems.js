@@ -81,7 +81,7 @@ class RatingItems extends Component {
 
   onKeyDown = (e) => {
     const { handleRatingChange } = this.props;
-    const { timesClicked } = this.state;
+  //  const { timesClicked } = this.state;
     // User pressed the enter key
     if (e.keyCode === 13) {
       e.preventDefault();

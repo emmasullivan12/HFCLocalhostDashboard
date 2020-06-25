@@ -17,13 +17,15 @@ const TypeformTrigger = ({
 class TypeformFullPage extends Component {
 
   componentDidMount(){
+    //not sure this is right formula anymore as changed it      
+    this.createFullPageTypeformPopup()
     document.getElementById('typeform-popup').addEventListener('click',function(){
       this.fullPageTypeformPopup.open();
     });
   }
 
   componentWillUnmount() {
-    document.getElementById('typeform-popup').addEventListener('click',function(){
+    document.getElementById('typeform-popup').removeEventListener('click',function(){
       this.fullPageTypeformPopup.open();
     });
   }

@@ -560,7 +560,7 @@ class ConfirmStudent extends React.Component {
             {isGeneralError != true && (
               <form autoComplete="off" id="form-ConfirmStudentSU">
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="eduEmailInput">Your {eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'} Email Address</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="eduEmailInput">Your <strong>{eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'}</strong> Email Address</label>
                   <input
                     type="email"
                     name="eduEmail"

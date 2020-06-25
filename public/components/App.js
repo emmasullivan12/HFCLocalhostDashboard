@@ -220,6 +220,21 @@ class Dashboard extends Component{
     }
   }
 
+  onKeyDown = (e) => {
+    console.log("Onkeydown in app.js")
+    // User pressed the backspace key (to prevent reloading / going back a page particularly in Firefox)
+    if (e.keyCode === 8) {
+      var rx = /INPUT|SELECT|TEXTAREA|BUTTON/i;
+
+      console.log("e.target: "+e.target)
+      console.log(e.target)
+      console.log("e.target: "+e.target.tagName)
+      if (!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly) {
+        e.preventDefault()
+      }
+    }
+  }
+
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
@@ -266,7 +281,7 @@ class Dashboard extends Component{
     const {moveScroller, startDrag} = this;
     return(
       <BrowserRouter>
-        <div className="clientUI">
+        <div className="clientUI" onKeyDown={this.onKeyDown}>
           <div className="clientContainer">
             <div className="clientMenuContainer" id="clientMenu">
               <button type="button" className="close-menu" aria-labelledby="Close Modal" onClick={this.closeMenu}>
@@ -321,9 +336,32 @@ class Dashboard extends Component{
 }
 
 class App extends Component{
-  /* componentDidMount() {
-    this.props.fetchData();
-  } */
+  constructor () {
+    super();
+//    this.checkBackspace = this.checkBackspace.bind(this);
+  }
+
+
+  componentDidMount() {
+    document.addEventListener('keydown',this.checkBackspace);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown',this.checkBackspace);
+  }
+
+  checkBackspace = (event) => {
+
+    // User pressed backspace
+    if (event.keyCode === 8) {
+      var rx = /INPUT|SELECT|TEXTAREA/i;
+
+      if (!rx.test(event.target.tagName) || event.target.type === 'checkbox' || event.target.type === 'radio' || event.target.disabled || event.target.readOnly) {
+        event.preventDefault()
+      }
+    }
+  }
+
   render() {
     const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {

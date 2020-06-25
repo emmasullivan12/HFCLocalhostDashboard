@@ -606,7 +606,7 @@ class EduShortSU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off" id="form-EduShortSU">
               <div className="form-group">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="eetStatus">Are you currently in Education, Employment or Training?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="eetStatus">Are you currently in <strong>Education, Employment or Training?</strong></label>
                 <SelectBox
                   options={country === 'GBR' ? eetStatusUKOptions : eetStatusNonUKOptions}
                   placeholder="Select one:"
@@ -621,7 +621,7 @@ class EduShortSU extends React.Component {
               </div>
               {country === 'GBR' && eetStatusLocal === 'sch' && schNameFreeTextLocal === '' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schName">What&#39;s the name of your School / College?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schName">What&#39;s the name of your <strong>School / College?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukSchsList ? ukSchsList : undefined}
@@ -673,7 +673,7 @@ class EduShortSU extends React.Component {
               )}
               {country != 'GBR' && eetStatusLocal === 'sch' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schNameTextBox">What&#39;s the name of your High School?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schNameTextBox">What&#39;s the name of your <strong>High School?</strong></label>
                   <TextInput
                     name="schNameFreeText"
                     id="schNameTextBox"
@@ -692,7 +692,7 @@ class EduShortSU extends React.Component {
               )}
               {(eetStatus === 'sch' || eetStatusLocal === 'sch') && schNameIsValid === true && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schYrGrp">And which {country === 'GBR' ? 'year group' : 'grade / year group'} are you in?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schYrGrp">And which <strong>{country === 'GBR' ? 'year group' : 'grade / year group'}</strong> are you in?</label>
                   <SelectBox
                     options={country === 'GBR' ? ukSchYrs : nonUKSchYrs}
                     placeholder="Select Year Group:"
@@ -709,7 +709,7 @@ class EduShortSU extends React.Component {
               )}
               {country === 'GBR' && eetStatusLocal === 'uni' && uniNameFreeTextLocal === '' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="uniName">What&#39;s the name of your University?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="uniName">What&#39;s the name of your <strong>University?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukUnisList ? ukUnisList : undefined}
@@ -761,7 +761,7 @@ class EduShortSU extends React.Component {
               )}
               {country != 'GBR' && eetStatusLocal === 'uni' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="uniNameTextBox">What&#39;s the name of your University?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="uniNameTextBox">What&#39;s the name of your <strong>University?</strong></label>
                   <TextInput
                     name="uniNameFreeText"
                     id="uniNameTextBox"
@@ -782,7 +782,7 @@ class EduShortSU extends React.Component {
               {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniYrGrp">And which year group are you in?</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniYrGrp">And which <strong>year group</strong> are you in?</label>
                     <SelectBox
                       options={uniYrs}
                       name='uniYrGrp'
@@ -805,7 +805,7 @@ class EduShortSU extends React.Component {
               {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg'&& (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And how long is your course?</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>how long</strong> is your course?</label>
                     <SelectBox
                       options={uniLength}
                       name='uniLength'
@@ -825,7 +825,7 @@ class EduShortSU extends React.Component {
               {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp === 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And when do you graduate?</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>when</strong> do you graduate?</label>
                     <SelectBox
                       options={pgGradYrs()}
                       name='pgGraduYr'
@@ -844,7 +844,7 @@ class EduShortSU extends React.Component {
               )}
               {eetStatusLocal === 'job' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">Who do you currently work for?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">Who is your current <strong>employer?</strong></label>
                   <TextInput
                     name="currCo"
                     id="currCoInput"
@@ -864,7 +864,7 @@ class EduShortSU extends React.Component {
               )}
               {eetStatusLocal === 'train' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currTrainingProvider">Who is your training provider?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currTrainingProvider">Who is your <strong>training provider?</strong></label>
                   <TextInput
                     name="currTrainingProvider"
                     id="currTrainingProviderInput"

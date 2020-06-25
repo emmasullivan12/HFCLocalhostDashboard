@@ -283,7 +283,7 @@ class NoEduEmailContent extends Component {
           </div>
           <form className="noEduEmail-form" id="noEduEmailForm">
             <label htmlFor="profProfileURL" className="descriptor alignLeft">
-              Have a programme code? Enter it here:
+              Have a <strong>programme code?</strong> Enter it here:
             </label>
             <input
               type="password"
@@ -302,7 +302,7 @@ class NoEduEmailContent extends Component {
               maxLength="50"
             />
             <label className="descriptor alignLeft reqAsterisk" htmlFor="currentSitu">
-              Tell us a bit about your current situation
+              Tell us a bit about <strong>your current situation</strong>
             </label>
             <textarea
               name="currentSitu"
@@ -338,7 +338,7 @@ class NoEduEmailContent extends Component {
             {eetStatus != 'none' &&(
               <React.Fragment>
                 <label htmlFor="profEmail" className="descriptor alignLeft">
-                  Your {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} Email Address (if you have one)
+                  Your <strong>{eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} Email Address</strong> (if you have one)
                 </label>
                 <input
                   type="email"
@@ -368,7 +368,7 @@ class NoEduEmailContent extends Component {
               </React.Fragment>
             )}
             <label htmlFor="profProfileURL" className="descriptor alignLeft">
-              Link to your LinkedIn (or equivalent) professional profile
+              Link to your <strong>LinkedIn (or equivalent) professional profile</strong>
             </label>
             <input
               type="url"

@@ -159,7 +159,7 @@ class SelectBox extends React.Component {
 //      elementIdFocused: document.activeElement.id
     }, () => {
   //    if (this.state.isOpen === true && (this.countTitles() > 0 || showCheckbox === true)) {
-      if (multiple && this.state.isOpen === true && (showCheckbox != true || (this.countTitles() > 0 || showCheckbox === true))) {
+      if (multiple && this.state.isOpen === true && (showCheckbox != true || (this.countTitles() > 0 && showCheckbox === true))) {
         this.heightCalc()
       }
     })
@@ -443,6 +443,10 @@ class SelectBox extends React.Component {
               }
             }
           }
+        }
+      }, () => {
+        if (multiple && this.state.isOpen === true && (showCheckbox != true || (this.countTitles() > 0 && showCheckbox === true))) {
+          this.heightCalc()
         }
       })
 
@@ -926,8 +930,8 @@ class SelectBox extends React.Component {
 
     if (values.length === 0) {
       return (
-        <div className={"select-placeholder"+(isOpen === true ? ' onClick' : '')} id="select-placeholder">
-          { isOpen === true ? placeholderOnClick : placeholder }
+        <div className={"select-placeholder"+((isOpen === true && placeholderOnClick) ? ' onClick' : '')} id="select-placeholder">
+          { (isOpen === true && placeholderOnClick) ? placeholderOnClick : placeholder }
         </div>
       )
     }

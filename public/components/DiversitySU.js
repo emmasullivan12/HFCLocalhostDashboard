@@ -49,13 +49,10 @@ class DiversitySU extends React.Component {
       .map(value => value.value)
 
     if (this.state.hurdles.length != 0 && userInput.length != 0) {
-      console.log("gets here in handlehurchange")
-      console.log("about to setstate")
       this.setState({
         editingHurdles: true
       })
     }
-    console.log("about to setstate 2")
     this.setState({
       hurdles: newArray
     })
@@ -167,7 +164,7 @@ class DiversitySU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off" id="form-DiversityShortSU">
               <div className="form-group">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">Are / were any of the following applicable to you?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">Are / were any of the following <strong>applicable to you?</strong></label>
                 <SelectBox
                   multiple
                   finMultiOptions={this.handleMultiOptions}
@@ -188,7 +185,7 @@ class DiversitySU extends React.Component {
               {(hurdles.length > 0 || editingHurdles != '') && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">{"What type of " + (country === 'GBR' ? "Secondary School" : "High School") + (eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">What type of <strong>{(country === 'GBR' ? "Secondary School" : "High School")}</strong>{(eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                     <SelectBox
                       options={country === 'GBR' ? uKschAttendedList : schAttendedList}
                       name='selectSchType'

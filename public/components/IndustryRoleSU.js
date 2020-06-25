@@ -79,7 +79,7 @@ class IndustryRoleSU extends React.Component {
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleRatingChange = this.handleRatingChange.bind(this);
     this.handleMultiOptions = this.handleMultiOptions.bind(this);
-    this.handleMultiRoles = this.handleMultiRoles.bind(this);
+  //  this.handleMultiRoles = this.handleMultiRoles.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -128,14 +128,14 @@ class IndustryRoleSU extends React.Component {
     }
   }
 
-  handleMultiRoles() {
+/*  handleMultiRoles() {
     const {rolesFromList, freeTextRoles} = this.state
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
       document.getElementById("ratingsContainer").firstElementChild.focus()
     } else {
       document.getElementById("autocompleteBox-selectRole").focus()
     }
-  }
+  }*/
 
   handleRoleChange(userInput, callback) {
     const rolesFromList = roleOptions
@@ -245,7 +245,7 @@ class IndustryRoleSU extends React.Component {
                       openOnClick
                       showValues
                       showCheckbox
-                      finMultiOptions={this.handleMultiRoles}
+                  //    finMultiOptions={this.handleMultiRoles}
                       suggestions={roleOptions}
                       name='selectRole'
                       placeholder='Type Role(s):'
