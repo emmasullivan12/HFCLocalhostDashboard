@@ -1,4 +1,4 @@
-// Dex last merged this code on 10th Sept 2019
+// Dex last merged this code on 27th june 2020
 
 import React, { Component } from "react";
 import * as typeformEmbed from '@typeform/embed';
@@ -17,7 +17,7 @@ const TypeformTrigger = ({
 class TypeformFullPage extends Component {
 
   componentDidMount(){
-    //not sure this is right formula anymore as changed it      
+    //not sure this is right formula anymore as changed it
     this.createFullPageTypeformPopup()
     document.getElementById('typeform-popup').addEventListener('click',function(){
       this.fullPageTypeformPopup.open();

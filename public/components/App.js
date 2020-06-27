@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th June 2020
+// Dex last merged this code on 27th June 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -339,27 +339,6 @@ class App extends Component{
   constructor () {
     super();
 //    this.checkBackspace = this.checkBackspace.bind(this);
-  }
-
-
-  componentDidMount() {
-    document.addEventListener('keydown',this.checkBackspace);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('keydown',this.checkBackspace);
-  }
-
-  checkBackspace = (event) => {
-
-    // User pressed backspace
-    if (event.keyCode === 8) {
-      var rx = /INPUT|SELECT|TEXTAREA/i;
-
-      if (!rx.test(event.target.tagName) || event.target.type === 'checkbox' || event.target.type === 'radio' || event.target.disabled || event.target.readOnly) {
-        event.preventDefault()
-      }
-    }
   }
 
   render() {
