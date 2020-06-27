@@ -30,6 +30,10 @@ svg {
     left: 5px;
     font-size: 21px;
   }
+  .option-iconContainer.FA.showDetail.showCheckbox,
+  .option-iconContainer.FA.noDetail.showCheckbox{
+    font-size: 17px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .select-placeholder{
@@ -39,6 +43,10 @@ svg {
   .option-iconContainer.FA.noDetail{
     left: 5px;
     font-size: 21px;
+  }
+  .option-iconContainer.FA.showDetail.showCheckbox,
+  .option-iconContainer.FA.noDetail.showCheckbox{
+    font-size: 17px;
   }
 }
 .select-placeholder.onClick{
@@ -248,8 +256,9 @@ svg {
   text-align: center;
   color: #8f8fe5;
 }
-
-left: 5px;
+.option-iconContainer.FA.noDetail.showCheckbox{
+  font-size: 19px;
+}
 
 .option-iconContainer.showDetail{
   height: 50px;

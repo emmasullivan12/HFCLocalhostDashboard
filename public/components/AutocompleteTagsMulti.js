@@ -53,7 +53,6 @@ class AutocompleteTagsMulti extends React.Component {
         onBlur()
       }
 
-
       if (userInput != '') {
         this.setState(prevState => {
           const [ ...values ] = prevState.values
@@ -220,8 +219,14 @@ class AutocompleteTagsMulti extends React.Component {
     }
   };
 
-  stopPropagation = (e) => {
+  onClickValue = (e) => {
     e.stopPropagation()
+    const {showSuggestions} = this.state
+    if (showSuggestions === true) {
+      return
+    } else {
+      this.focusOnInput();
+    }
   }
 
   onDeleteOption = (e) => {
@@ -612,7 +617,8 @@ class AutocompleteTagsMulti extends React.Component {
             return (
               <span
                 key={value}
-                onClick={this.stopPropagation}
+            //    onClick={this.stopPropagation}
+                onClick={this.onClickValue}
                 className="multiple value"
                 id={value}
               >

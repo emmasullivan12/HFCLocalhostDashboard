@@ -43,12 +43,14 @@ class SelectBox extends React.Component {
     if (handleFocus) {
       handleFocus(document.activeElement.id)
     }
+    console.log("about to set state in onfocus")
     this.setState({
       isFocused: true,
     })
   }
 
   onBlur = (e) => {
+    console.log("onblur triggered")
     const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -56,12 +58,16 @@ class SelectBox extends React.Component {
     this.setState(prevState => {
       const { values } = prevState
       if (multiple) {
-        const allSelected = values.length === (options.length - this.countTitles())
-
-    //    if (allSelected != true) {
+        //const allSelected = values.length === (options.length - this.countTitles())
+    /*    console.log("values.length: "+values.length)
+        console.log("options.length: "+options.length)
+        console.log("this.countTitles(): "+this.countTitles())
+        console.log("options.length - this.countTitles(): "+options.length - this.countTitles())*/
+      //  console.log("allSelected: "+allSelected)
+      //  if (allSelected != true) {
+    //      console.log("about to handlechange")
           handleChange(values)
-      //  }
-
+  //      }
         if (values.length != 0) {
           if (finMultiOptions) {
             finMultiOptions()
@@ -159,7 +165,8 @@ class SelectBox extends React.Component {
 //      elementIdFocused: document.activeElement.id
     }, () => {
   //    if (this.state.isOpen === true && (this.countTitles() > 0 || showCheckbox === true)) {
-      if (multiple && this.state.isOpen === true && (showCheckbox != true || (this.countTitles() > 0 && showCheckbox === true))) {
+      //if (multiple && this.state.isOpen === true && (showCheckbox != true || (this.countTitles() > 0 && showCheckbox === true))) {
+      if (multiple && this.state.isOpen === true) {
         this.heightCalc()
       }
     })
@@ -232,7 +239,6 @@ class SelectBox extends React.Component {
 
       const [ ...values ] = prevState.values
       const index = values.indexOf(value)
-      const allSelected = values.length === (options.length - this.countTitles())
 
       if (index === -1) {
         values.push(value)
@@ -240,15 +246,14 @@ class SelectBox extends React.Component {
         values.splice(index, 1)
       }
 
+      const allSelected = values.length === (options.length - this.countTitles())
 
-    //  if (allSelected != true) {
+  //    if (allSelected != true) {
         handleChange(values)
   //    }
 
       if (allSelected === true) {
-        if (finMultiOptions) {
-          finMultiOptions()
-        }
+      /*  */
         if(!required || required && value != null) {
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
@@ -282,6 +287,12 @@ class SelectBox extends React.Component {
 
     }, () => {
       if (showCheckbox === true) {
+        if (finMultiOptions) {
+          const allSelected = this.state.values.length === (options.length - this.countTitles())
+          if (allSelected) {
+            finMultiOptions()
+          }
+        }
         return
       } else {
         if (multiple && this.state.values.length != (options.length - this.countTitles())) {
@@ -445,9 +456,17 @@ class SelectBox extends React.Component {
           }
         }
       }, () => {
-        if (multiple && this.state.isOpen === true && (showCheckbox != true || (this.countTitles() > 0 && showCheckbox === true))) {
-          this.heightCalc()
+        if (showCheckbox === true) {
+          if (finMultiOptions) {
+            const allSelected = this.state.values.length === (options.length - this.countTitles())
+            if (allSelected) {
+              finMultiOptions()
+            }
+          }
         }
+        if (multiple && this.state.isOpen === true) {
+          this.heightCalc()
+        } else return
       })
 
     }
@@ -1061,7 +1080,7 @@ class SelectBox extends React.Component {
 
               >
                 {(showIcon===true && option["iconFA"] != null) && (
-                  <div className={"option-iconContainer FA " + (showDetail===true ? "showDetail": "noDetail")}>
+                  <div className={"option-iconContainer FA " + (showDetail===true ? "showDetail": "noDetail") + (showCheckbox===true ? " showCheckbox": "")}>
                     <i className={icon} />
                   </div>
                 )}

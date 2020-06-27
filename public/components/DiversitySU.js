@@ -53,14 +53,17 @@ class DiversitySU extends React.Component {
         editingHurdles: true
       })
     }
+    console.log("about to setstate in handlrhurchange")
     this.setState({
       hurdles: newArray
     })
   }
 
   handleMultiOptions() {
+    console.log("finMultiOptions")
     if (this.state.hurdles.length > 0) {
       document.getElementById("selectBox-selectSchType").focus()
+      console.log("moved focus")
     } else {
       document.getElementById("selectBox-selectHur").focus()
     }
@@ -178,7 +181,7 @@ class DiversitySU extends React.Component {
                   showIcon
                   iconToShow='iconFA'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                //  showCheckbox
+                  showCheckbox
                   required
                 />
               </div>
