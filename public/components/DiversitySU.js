@@ -6,6 +6,7 @@ import ReactDOM from "react-dom";
 import SelectBox from './Select.js';
 import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 
 const hurdlesList = [
   {value: 0, label: 'Eligible for Free School Meals', iconFA: 'fas fa-utensils'},
@@ -33,6 +34,7 @@ class DiversitySU extends React.Component {
       schType: '',
       gender: '',
       ethnicity: '',
+      isSubmitting: false,
     }
     this.handleHurChange = this.handleHurChange.bind(this);
     this.handleMultiOptions = this.handleMultiOptions.bind(this);
@@ -53,17 +55,14 @@ class DiversitySU extends React.Component {
         editingHurdles: true
       })
     }
-    console.log("about to setstate in handlrhurchange")
     this.setState({
       hurdles: newArray
     })
   }
 
   handleMultiOptions() {
-    console.log("finMultiOptions")
     if (this.state.hurdles.length > 0) {
       document.getElementById("selectBox-selectSchType").focus()
-      console.log("moved focus")
     } else {
       document.getElementById("selectBox-selectHur").focus()
     }
@@ -95,6 +94,9 @@ class DiversitySU extends React.Component {
 
   handleSubmit(e) {
     const {updateStep} = this.props;
+    this.setState({
+      isSubmitting: true
+    });
     updateStep('didDiversity');
   }
 
@@ -117,7 +119,7 @@ class DiversitySU extends React.Component {
   }
 
   render() {
-    const {tabPressed, hurdles, editingHurdles, schType, gender, ethnicity} = this.state;
+    const {tabPressed, hurdles, editingHurdles, schType, gender, ethnicity, isSubmitting} = this.state;
     const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
 
     const uKschAttendedList = [
@@ -248,7 +250,12 @@ class DiversitySU extends React.Component {
                 </React.Fragment>
               )}
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-eth">
-                Next
+                {isSubmitting === true && (
+                  <LoadingSpinner />
+                )}
+                {isSubmitting != true && (
+                  <span>Next</span>
+                )}
               </button>
             </form>
           </div>

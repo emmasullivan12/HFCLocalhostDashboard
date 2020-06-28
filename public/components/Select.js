@@ -43,14 +43,12 @@ class SelectBox extends React.Component {
     if (handleFocus) {
       handleFocus(document.activeElement.id)
     }
-    console.log("about to set state in onfocus")
     this.setState({
       isFocused: true,
     })
   }
 
   onBlur = (e) => {
-    console.log("onblur triggered")
     const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -380,7 +378,7 @@ class SelectBox extends React.Component {
                   values.splice(index, 1)
                 }
 
-              //  handleChange(values)
+                handleChange(values)
 
                 const noMoreOptions = (values.length === (options.length - this.countTitles())) && showCheckbox != true
 

@@ -2,6 +2,8 @@
 
 import React, { Component } from "react";
 
+import {LoadingSpinner} from './GeneralFunctions.js';
+
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class NoSuggestionsCTAContent extends Component {
   constructor() {
@@ -10,6 +12,7 @@ class NoSuggestionsCTAContent extends Component {
       schNameFreeTextModal: '',
       uniNameFreeTextModal: '',
       messageFromServer: '',
+      isSubmitting: false,
       timeout: 0
     };
   }
@@ -64,13 +67,15 @@ class NoSuggestionsCTAContent extends Component {
 
       if (eetStatusLocal === "sch") {
         this.setState({
-          messageFromServer: 'We are saving down your school name in free text!'
+          messageFromServer: 'We are saving down your school name in free text!',
+          isSubmitting: true,
         })
         handleSchChange(schNameFreeTextModal);
 
       } else if (eetStatusLocal === "uni") {
         this.setState({
-          messageFromServer: 'We are saving down your uni name in free text!'
+          messageFromServer: 'We are saving down your uni name in free text!',
+          isSubmitting: true,
         })
         handleUniChange(uniNameFreeTextModal)
       }
@@ -101,7 +106,7 @@ class NoSuggestionsCTAContent extends Component {
 
   render() {
     const {onKeyDown } = this;
-    const { messageFromServer } = this.state;
+    const { messageFromServer, isSubmitting } = this.state;
     const { country, eetStatusLocal, maxLength } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer === '') {
@@ -134,7 +139,12 @@ class NoSuggestionsCTAContent extends Component {
             />
             <div className="pass-btn-container">
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-addEdu">
-                Submit for Review
+                {isSubmitting === true && (
+                  <LoadingSpinner />
+                )}
+                {isSubmitting != true && (
+                  <span>Submit for Review</span>
+                )}
               </button>
             </div>
           </form>
@@ -144,7 +154,9 @@ class NoSuggestionsCTAContent extends Component {
       return (
         <React.Fragment>
           <div className="modal-title">
-            <div className="emoji-icon peace-emoji successBox" />
+            <div className="emoji-icon successBox fa">
+              <i className="far fa-hand-peace"/>
+            </div>
             Education institution submitted
           </div>
           <div className="success-container">

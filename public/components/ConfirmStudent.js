@@ -10,6 +10,7 @@ import TypeformEmbedded from './TypeformEmbedded.js';
 //import Autocomplete from './Autocomplete.js';
 import Checkbox from './Checkbox.js';
 import NoEduEmail from './NoEduEmail.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 import {lookupUKSchUnis} from './UserDetail.js';
 import personalEmails from "./PersonalEmails.js";
 
@@ -18,6 +19,7 @@ class ConfirmStudent extends React.Component {
     super();
     this.state = {
       isGeneralError: '',
+      isSubmitting: false,
       userInput: '',
       eduEmailIsValid: '',
       isPersonalEmail: '',
@@ -62,10 +64,12 @@ class ConfirmStudent extends React.Component {
       } else if (eetStatus === 'uni' && uniName != '') {
         return Promise.all([lookupUKSchUnis(uniName, 'emailFormat', eetStatus)])
           .then(email => {
-            this.setState({
-              emailFormat: email[0].emailFormat.toLowerCase(),
-              isGeneralError: false
-            })
+            setTimeout(() => {
+              this.setState({
+                emailFormat: email[0].emailFormat.toLowerCase(),
+                isGeneralError: false
+              })
+            },5000)
           })
           .catch(err => {
             this.setState({
@@ -147,6 +151,7 @@ class ConfirmStudent extends React.Component {
     const {country, updateStep, updateEduEmail} = this.props;
 
     this.setState({
+      isSubmitting: true,
       submitted: true
     })
     updateEduEmail(userInput, () => {
@@ -156,7 +161,6 @@ class ConfirmStudent extends React.Component {
         updateStep('didEduEmail', false)
       }
     })
-
   }
 
   checkEduEmail() {
@@ -541,7 +545,7 @@ class ConfirmStudent extends React.Component {
   render() {
     const { onChange, onKeyDown, toggleCheckbox, handleKeyUp } = this;
     const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep } = this.props;
-    const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid } = this.state;
+    const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid, isSubmitting } = this.state;
     const isEnabled = this.canBeSubmitted();
 
     return (
@@ -613,7 +617,12 @@ class ConfirmStudent extends React.Component {
                   <div className="descriptor prompt error verifyForm alignLeft textLeft">This can&#39;t be a personal email address</div>
                 )}
                 <button type="button" onClick={this.handleSubmit} disabled={!isEnabled} className="Submit-btn fullWidth" id="Submit-btn-eduEmail">
-                  Next
+                  {isSubmitting === true && (
+                    <LoadingSpinner />
+                  )}
+                  {isSubmitting != true && (
+                    <span>Next</span>
+                  )}
                 </button>
                 <button type="button" onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
                   or Change {eetStatus === 'uni' ? 'University' : eetStatus === 'sch' ? country === 'GBR' ? 'School/College' : 'High School' : 'school status'}

@@ -231,14 +231,12 @@ input[type=text]:disabled{
 
 .centerContainer{
   text-align: center;
-  height: 100%;
 }
 
 .loginContainer{
   padding: 60px 85px;
   max-width: 518px;
   display: inline-block;
-  height: 100%;
 }
 
 .loginContainer h1 {
@@ -558,13 +556,14 @@ input[type=text]:disabled{
 }
 
 .legalSection{
-  margin-top: 1rem;
+  margin-top: 60px;
   color: #c7c7c7!important;
   font-size: 12px;
   padding-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
   z-index: 100;
+  text-align: center;
 }
 
 @media only screen and (min-width: 760px) {

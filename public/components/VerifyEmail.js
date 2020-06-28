@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "../css/Login.css";
 import "../css/General.css";
+import {LoadingSpinner} from './GeneralFunctions.js';
 
 class VerifyEmail extends React.Component {
   constructor () {
@@ -11,7 +12,8 @@ class VerifyEmail extends React.Component {
     this.state = {
       isContainerOpen: false,
       verificationCode: '',
-      resentCode: false
+      resentCode: false,
+      isSubmitting: false,
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleUpdateEmail = this.handleUpdateEmail.bind(this);
@@ -36,6 +38,9 @@ class VerifyEmail extends React.Component {
     const submission = {
       token: verificationCode
     };
+    this.setState({
+      isSubmitting: true
+    })
     if (needsRev === true) {
       updateStep('didEmailVerifNeedsRev')
     } else {
@@ -69,7 +74,7 @@ class VerifyEmail extends React.Component {
 
   render() {
   const isEnabled = this.canBeSubmitted();
-  const {isContainerOpen, verificationCode, resentCode} = this.state;
+  const {isContainerOpen, verificationCode, resentCode, isSubmitting} = this.state;
   const {emailToVerify} = this.props;
 
     return (
@@ -94,7 +99,12 @@ class VerifyEmail extends React.Component {
             />
           </div>
           <button type="submit" disabled={!isEnabled} className="Submit-btn emailVerif" id="emailverif-btn">
-            Verify Email
+            {isSubmitting === true && (
+              <LoadingSpinner />
+            )}
+            {isSubmitting != true && (
+              <span>Verify Email</span>
+            )}
           </button>
         </form>
         <div className="login-error-msg">The email verification code does not exist. Please check and try again</div>

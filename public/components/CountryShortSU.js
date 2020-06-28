@@ -9,6 +9,7 @@ import TypeformEmbedded from './TypeformEmbedded.js';
 import Autocomplete from './Autocomplete.js';
 import ProgressCircles from './ProgressCircles.js';
 import TextInput from './TextInput.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 
 class CountryShortSU extends React.Component {
   constructor (props) {
@@ -21,6 +22,7 @@ class CountryShortSU extends React.Component {
       city: '',
       tabPressed: '',
       timeout: 0,
+      isSubmitting: false,
       submitted: ''
     }
     this.handleCountryChange = this.handleCountryChange.bind(this);
@@ -105,7 +107,8 @@ class CountryShortSU extends React.Component {
     const {countryLocal} = this.state;
 
     this.setState({
-      submitted: true
+      submitted: true,
+      isSubmitting: true
     }, () => {
       updateCountry(countryLocal);
       updateStep('didCountry');
@@ -151,7 +154,7 @@ class CountryShortSU extends React.Component {
 
   render() {
 
-  const { countryLocal, countryIsValid, stateProv, stateProvIsValid, city, tabPressed, timeZone } = this.state;
+  const { countryLocal, countryIsValid, stateProv, stateProvIsValid, city, tabPressed, timeZone, isSubmitting } = this.state;
   const {tflink, step, currentStep, totalMenteeSteps, totalMentorSteps, userRole} = this.props;
 
   var countries = [
@@ -276,7 +279,12 @@ class CountryShortSU extends React.Component {
                 </div>
               )}
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Country">
-                Next
+                {isSubmitting === true && (
+                  <LoadingSpinner />
+                )}
+                {isSubmitting != true && (
+                  <span>Next</span>
+                )}
               </button>
             </form>
           </div>

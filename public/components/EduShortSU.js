@@ -11,6 +11,7 @@ import SelectBox from './Select.js';
 import Autocomplete from './Autocomplete.js';
 import ProgressCircles from './ProgressCircles.js';
 import TextInput from './TextInput.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 import {setSchGraduYr, setUniGraduYr} from './UserDetail.js';
 
 
@@ -42,6 +43,7 @@ class EduShortSU extends React.Component {
       tabPressed: '',
       selectBoxFocused: '',
       timeout: 0,
+      isSubmitting: false,
       submitted: ''
     }
     this.handleEetStatusChange = this.handleEetStatusChange.bind(this);
@@ -336,7 +338,8 @@ class EduShortSU extends React.Component {
       if (eetStatusLocal ==='sch') {
         if (schNameLocal != '') {
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateUKSch(schNameLocal, () => {
             updateStep('updatingEdu');
@@ -344,7 +347,8 @@ class EduShortSU extends React.Component {
         } else {
 
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateSchFreeText(schNameFreeTextLocal, () => {
             updateStep('updatingEdu');
@@ -354,7 +358,8 @@ class EduShortSU extends React.Component {
       } else if (eetStatusLocal ==='uni') {
         if (uniNameLocal != '') {
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateUKUni(uniNameLocal, () => {
             updateStep('updatingEdu');
@@ -362,7 +367,8 @@ class EduShortSU extends React.Component {
         } else {
 
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateUniFreeText(uniNameFreeTextLocal, () => {
             updateStep('updatingEdu');
@@ -371,7 +377,8 @@ class EduShortSU extends React.Component {
 
       } else if (eetStatusLocal ==='job') {
         this.setState({
-          submitted: true
+          submitted: true,
+          isSubmitting: true,
         })
         updateCurrCo(currCoLocal, () => {
           updateStep('updatingEdu');
@@ -379,7 +386,8 @@ class EduShortSU extends React.Component {
 
       } else if (eetStatusLocal ==='train') {
         this.setState({
-          submitted: true
+          submitted: true,
+          isSubmitting: true,
         })
         updateCurrTrainingProv(currTrainingProviderLocal, () => {
           updateStep('updatingEdu');
@@ -387,7 +395,8 @@ class EduShortSU extends React.Component {
 
       } else {
         this.setState({
-          submitted: true
+          submitted: true,
+          isSubmitting: true,
         })
         updateStep('updatingEdu');
       }
@@ -398,14 +407,16 @@ class EduShortSU extends React.Component {
       if (eetStatusLocal ==='sch' || eetStatus === 'sch') {
         if (schNameLocal != '') {
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateUKSch(schNameLocal, () => {
             updateStep('didEdu');
           })
         } else {
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateSchFreeText(schNameFreeTextLocal, () => {
             updateStep('didEdu');
@@ -415,14 +426,16 @@ class EduShortSU extends React.Component {
       } else if (eetStatusLocal ==='uni' || eetStatus === 'uni') {
         if (uniNameLocal != '') {
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateUKUni(uniNameLocal, () => {
             updateStep('didEdu');
           })
         } else {
           this.setState({
-            submitted: true
+            submitted: true,
+            isSubmitting: true,
           })
           updateUniFreeText(uniNameFreeTextLocal, () => {
             updateStep('didEdu');
@@ -431,7 +444,8 @@ class EduShortSU extends React.Component {
 
       } else if (eetStatusLocal === 'job') {
         this.setState({
-          submitted: true
+          submitted: true,
+          isSubmitting: true,
         })
         updateCurrCo(currCoLocal, () => {
           updateStep('didEdu');
@@ -439,7 +453,8 @@ class EduShortSU extends React.Component {
 
       } else if (eetStatusLocal === 'train') {
         this.setState({
-          submitted: true
+          submitted: true,
+          isSubmitting: true,
         })
         updateCurrTrainingProv(currTrainingProviderLocal, () => {
           updateStep('didEdu');
@@ -447,7 +462,8 @@ class EduShortSU extends React.Component {
 
       } else {
         this.setState({
-          submitted: true
+          submitted: true,
+          isSubmitting: true,
         })
         updateStep('didEdu');
       }
@@ -515,7 +531,7 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength} = this.state;
+  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting} = this.state;
   const { country, eetStatus, tflink, step, currentStep, totalMenteeSteps } = this.props;
 
   const eetStatusUKOptions = [
@@ -883,7 +899,12 @@ class EduShortSU extends React.Component {
                 </div>
               )}
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Edu">
-                Next
+                {isSubmitting === true && (
+                  <LoadingSpinner />
+                )}
+                {isSubmitting != true && (
+                  <span>Next</span>
+                )}
               </button>
             </form>
           </div>

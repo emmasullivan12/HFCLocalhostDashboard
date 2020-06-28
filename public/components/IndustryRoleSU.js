@@ -8,6 +8,7 @@ import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 import RatingItems from './RatingItems.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 //import {lookupRoles} from './UserDetail.js';
 
 const industryOptions = [
@@ -74,6 +75,7 @@ class IndustryRoleSU extends React.Component {
       editingInd: '',
       editingRole: '',
       knowNextSteps: '',
+      isSubmitting: false,
     }
     this.handleIndChange = this.handleIndChange.bind(this);
     this.handleRoleChange = this.handleRoleChange.bind(this);
@@ -183,6 +185,7 @@ class IndustryRoleSU extends React.Component {
 
   handleSubmit(e) {
     const {updateStep} = this.props;
+    this.setState({ isSubmitting: true });
     updateStep('didIndRole');
   }
 
@@ -203,7 +206,7 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, knowNextSteps} = this.state;
+    const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, knowNextSteps, isSubmitting} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const isEnabled = this.canBeSubmitted();
@@ -280,7 +283,12 @@ class IndustryRoleSU extends React.Component {
                 </div>
               )}
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-ind">
-                Next
+                {isSubmitting === true && (
+                  <LoadingSpinner />
+                )}
+                {isSubmitting != true && (
+                  <span>Next</span>
+                )}
               </button>
             </form>
           </div>

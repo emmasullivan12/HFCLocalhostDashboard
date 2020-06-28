@@ -387,7 +387,8 @@ class AutocompleteTagsMulti extends React.Component {
         }
       }, () => {
         this.widthCalc(true)
-        if (filteredSuggestions.length === 0) {
+      //  if (filteredSuggestions.length === 0) {
+        if (filteredSuggestions.length != suggestions.length) {
           this.heightCalc()
         }
       })

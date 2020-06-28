@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 
 import personalEmails from "./PersonalEmails.js";
-import {isURL} from './GeneralFunctions.js';
+import {isURL, LoadingSpinner} from './GeneralFunctions.js';
 
 // Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class NoEduEmailContent extends Component {
@@ -24,6 +24,7 @@ class NoEduEmailContent extends Component {
       profProfileURL: '',
       urlInputIsValid: '',
       messageFromServer: '',
+      isSubmitting: false,
       timeout: 0
     };
     this.onBlur = this.onBlur.bind(this);
@@ -122,16 +123,16 @@ class NoEduEmailContent extends Component {
     } else {
       const { handleNoEduEmail, updateStep } = this.props;
       const { emailInput } = this.state;
-
+      this.setState({
+        isSubmitting: true,
+        messageFromServer: 'We are sending your deets to Prospela!',
+      });
       if (emailInput != '') {
         handleNoEduEmail(emailInput)
       } else {
         handleNoEduEmail('personal')
       }
       updateStep('didEduEmailNeedsRev', false)
-      this.setState({
-        messageFromServer: 'We are sending your deets to Prospela!'
-      });
 
     }
   }
@@ -151,7 +152,8 @@ class NoEduEmailContent extends Component {
     const {timeout, emailInput, emailIsValid} = this.state;
     clearTimeout(timeout);
 
-    if (e.target.value != '') {
+    // checks use has not pressed backspace
+    if (e.target.value != '' && e.keyCode != 8) {
       this.setState({
         timeout: setTimeout(()=>{
           if (e.target.name === 'progCode') {
@@ -269,7 +271,7 @@ class NoEduEmailContent extends Component {
 
   render() {
     const { onKeyDown } = this;
-    const { progCode, emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer, isHtmlValid } = this.state;
+    const { progCode, emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer, isHtmlValid, isSubmitting } = this.state;
     const { country, eetStatus, currCo, currTrainingProvider } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer === '') {
@@ -387,7 +389,12 @@ class NoEduEmailContent extends Component {
             />
             <div className="pass-btn-container">
               <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-noEduEmail">
-                Submit for Review
+                {isSubmitting === true && (
+                  <LoadingSpinner />
+                )}
+                {isSubmitting != true && (
+                  <span>Submit for Review</span>
+                )}
               </button>
             </div>
           </form>

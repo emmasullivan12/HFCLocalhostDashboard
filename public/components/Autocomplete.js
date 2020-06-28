@@ -158,21 +158,24 @@ class Autocomplete extends React.Component {
       if (isLastChild != undefined && showSuggestions === true) {
         e.preventDefault()
       }
-      const isntValueToShow = valueToShow == undefined
-      if (this.state.showSuggestions === false) {
-        return;
-      } else {
-        this.setState({
-  //        activeSuggestion: 0,
-          showSuggestions: false,
-          userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
-        });
-        const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
-        valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
-        if (handleTabPress) {
-          handleTabPress(true);
+
+      if (filteredSuggestions.length) {
+        const isntValueToShow = valueToShow == undefined
+        if (this.state.showSuggestions === false) {
+          return;
+        } else {
+          this.setState({
+    //        activeSuggestion: 0,
+            showSuggestions: false,
+            userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
+          });
+          const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
+          valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+          if (handleTabPress) {
+            handleTabPress(true);
+          }
         }
-      }
+      } else return
     }
 
     // User pressed the up arrow

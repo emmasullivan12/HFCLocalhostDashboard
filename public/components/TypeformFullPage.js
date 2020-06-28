@@ -18,6 +18,7 @@ class TypeformFullPage extends Component {
 
   componentDidMount(){
     //not sure this is right formula anymore as changed it
+    //NEEDS CLEARING UP
     this.createFullPageTypeformPopup()
     document.getElementById('typeform-popup').addEventListener('click',function(){
       this.fullPageTypeformPopup.open();
