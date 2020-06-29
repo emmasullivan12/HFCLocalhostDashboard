@@ -616,7 +616,7 @@ class ConfirmStudent extends React.Component {
                 {isPersonalEmail === true && (
                   <div className="descriptor prompt error verifyForm alignLeft textLeft">This can&#39;t be a personal email address</div>
                 )}
-                <button type="button" onClick={this.handleSubmit} disabled={!isEnabled} className="Submit-btn fullWidth" id="Submit-btn-eduEmail">
+                <button type="button" onClick={this.handleSubmit} disabled={isSubmitting === true ? true : !isEnabled} className="Submit-btn fullWidth" id="Submit-btn-eduEmail">
                   {isSubmitting === true && (
                     <LoadingSpinner />
                   )}

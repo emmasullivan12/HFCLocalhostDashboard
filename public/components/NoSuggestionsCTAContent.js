@@ -138,7 +138,7 @@ class NoSuggestionsCTAContent extends Component {
               required
             />
             <div className="pass-btn-container">
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-addEdu">
+              <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-addEdu">
                 {isSubmitting === true && (
                   <LoadingSpinner />
                 )}

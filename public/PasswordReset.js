@@ -3,7 +3,9 @@
 var resetcode = document.getElementById("resetcode");
 var pwd = document.getElementById("password");
 var resetPwdBtn = document.getElementById("resetpwd-btn");
+var resetPwdBtnText = document.getElementById("resetpwd-btnText");
 var newPwdText = document.getElementById("newPwdText");
+var spinnerWrapper = document.getElementById("spinnerWrapper-resetPwd");
 
 var numReqCrl = document.getElementById("numReq-crl");
 var upCharReqCrl = document.getElementById("upCharReq-crl");
@@ -20,6 +22,7 @@ var numCharReq = document.getElementById("numCharReq");
 pwd.disabled = true;
 resetPwdBtn.disabled = true;
 newPwdText.style.color = '#cfcccc';
+spinnerWrapper.style.display = 'none';
 
 numReqCrl.style.color = 'transparent';
 upCharReqCrl.style.color = 'transparent';
@@ -38,6 +41,12 @@ upCharReq.style.color = '#cbcaca';
 lowCharReq.style.color = '#cbcaca';
 specCharReq.style.color = '#cbcaca';
 numCharReq.style.color = '#cbcaca';
+
+resetPwdBtn.addEventListener('click', function() {
+  resetPwdBtn.disabled = true;
+  resetPwdBtnText.style.display = 'none';
+  spinnerWrapper.style.display = 'inline-block';
+}, false)
 
 resetcode.addEventListener('blur', function(event) {
   if(pwd.checkValidity() && pwd.value.length > 7 && this.value.length > 5 && pwd.value.search(/\d/) != -1 && pwd.value.search(/[A-Z]/) != -1 && pwd.value.search(/[a-z]/) != -1 && pwd.value.search(/[!@#£$%^&*()_+]/) != -1) {

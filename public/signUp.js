@@ -18,6 +18,8 @@ var emailConfiContainer = document.getElementById("emailConfiContainer");
 var emailConfi = document.getElementById("emailConfi");
 var pwdContainer = document.getElementById("pwdContainer");
 var getStartedbtn = document.getElementById("getStarted-btn");
+var getStartedbtnText = document.getElementById("getStarted-btnText");
+var spinnerWrapper = document.getElementById("spinnerWrapper-signUp");
 
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
@@ -59,6 +61,7 @@ dob.style.display = 'none';
 pwdContainer.style.display = 'none';
 tncText.style.display = 'none';
 getStartedbtn.style.display = 'none';
+spinnerWrapper.style.display = 'none';
 emailPrompt.style.visibility = 'hidden';
 emailConfiPrompt.style.visibility = 'hidden';
 emailConfiContainer.style.display = 'none';
@@ -184,6 +187,7 @@ mentorbtn.addEventListener('click', function(event) {
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   getStartedbtn.style.display = 'block';
+  getStartedbtn.innerHTML = 'Get Started'
   getStartedbtn.disabled = true;
   workEmailTooltip.style.display = 'block';
   emailText.innerHTML = 'Work Email';
@@ -218,6 +222,12 @@ function canBeSubmitted() {
   }
 
 }
+
+getStartedbtn.addEventListener('click', function() {
+  getStartedbtn.disabled = true;
+  getStartedbtnText.style.display = 'none';
+  spinnerWrapper.style.display = 'inline-block';
+}, false)
 
 fname.addEventListener('invalid', function(e) {
   fname.classList.add('error');

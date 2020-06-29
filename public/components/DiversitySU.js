@@ -249,7 +249,7 @@ class DiversitySU extends React.Component {
                   </div>
                 </React.Fragment>
               )}
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-eth">
+              <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-eth">
                 {isSubmitting === true && (
                   <LoadingSpinner />
                 )}

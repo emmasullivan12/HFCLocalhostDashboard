@@ -282,7 +282,7 @@ class IndustryRoleSU extends React.Component {
                   />
                 </div>
               )}
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-ind">
+              <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-ind">
                 {isSubmitting === true && (
                   <LoadingSpinner />
                 )}

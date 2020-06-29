@@ -388,7 +388,7 @@ class NoEduEmailContent extends Component {
               maxLength="150"
             />
             <div className="pass-btn-container">
-              <button type="button" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-noEduEmail">
+              <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn" id="Submit-btn-noEduEmail">
                 {isSubmitting === true && (
                   <LoadingSpinner />
                 )}

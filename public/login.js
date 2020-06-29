@@ -3,11 +3,14 @@
 var password = document.getElementById("password");
 var email = document.getElementById("email");
 var loginbtn = document.getElementById("login-btn");
+var loginbtnText = document.getElementById("login-btnText");
+var spinnerWrapper = document.getElementById("spinnerWrapper-login");
 var formControl = document.getElementsByClassName("form-control-std");
 //var form = document.getElementById("form-login");
 
 // Disable the button on initial page load
 loginbtn.disabled = true;
+spinnerWrapper.style.display = 'none';
 
 // add event listener
 /*password.addEventListener('input', function(event) {
@@ -17,6 +20,12 @@ loginbtn.disabled = true;
     loginbtn.disabled = true;
   }
 });*/
+
+loginbtn.addEventListener('click', function() {
+  loginbtn.disabled = true;
+  loginbtnText.style.display = 'none';
+  spinnerWrapper.style.display = 'inline-block';
+}, false)
 
 // check validity of inputs when submit & onBlur i.e. after clicing away
 for(let input of formControl) {

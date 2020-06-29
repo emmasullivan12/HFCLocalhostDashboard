@@ -98,7 +98,7 @@ class VerifyEmail extends React.Component {
               spellCheck="off"
             />
           </div>
-          <button type="submit" disabled={!isEnabled} className="Submit-btn emailVerif" id="emailverif-btn">
+          <button type="submit" disabled={isSubmitting === true ? true : !isEnabled} className="Submit-btn emailVerif" id="emailverif-btn">
             {isSubmitting === true && (
               <LoadingSpinner />
             )}
