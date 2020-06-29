@@ -1,4 +1,4 @@
-// Dex last merged this code on 27th june 2020
+// Dex last merged this code on 29th june 2020
 
 import React, { Component } from "react";
 import * as typeformEmbed from '@typeform/embed';

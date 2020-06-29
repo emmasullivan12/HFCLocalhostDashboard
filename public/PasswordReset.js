@@ -1,4 +1,4 @@
-// Dex last merged this code on 17th May 2019
+// Dex last merged this code on 29th june 2020
 
 var resetcode = document.getElementById("resetcode");
 var pwd = document.getElementById("password");

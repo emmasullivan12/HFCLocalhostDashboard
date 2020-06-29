@@ -1,4 +1,4 @@
-/* merged this code on 20th june 2020 */
+/* merged this code on 29th june 2020 */
 
 var password = document.getElementById("password");
 var email = document.getElementById("email");
