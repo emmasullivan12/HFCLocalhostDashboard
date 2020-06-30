@@ -498,6 +498,7 @@ svg:not(:root) {
 .neutralText.verifyForm.alignRight{
   margin-top: -2.5rem;
 }
+.descriptor.prompt.error.verifyForm,
 .descriptor.prompt.error.verifyForm.otherOption{
   width: 12rem;
   margin-bottom: 2rem;

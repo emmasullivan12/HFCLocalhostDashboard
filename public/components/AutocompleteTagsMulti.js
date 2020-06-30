@@ -484,7 +484,7 @@ class AutocompleteTagsMulti extends React.Component {
       if (activeSuggestion === 0 || activeSuggestion === -1) {
         const parent = document.getElementById("autocompleter-items-"+name);
         const item = document.getElementsByClassName("autocompleter-item");
-        parent.scrollTop = parent.scrollHeight - (item[0].offsetHeight * 5)
+        parent.scrollTop = parent.scrollHeight - (item[0].offsetHeight * 6)
         this.setState({ activeSuggestion: filteredSuggestions.length - 1 });
       } else {
         this.handleMoveUp();
@@ -510,7 +510,7 @@ class AutocompleteTagsMulti extends React.Component {
     const { activeSuggestion, filteredSuggestions } = this.state;
     const parent = document.getElementById("autocompleter-items-"+name);
     const item = document.getElementsByClassName("autocompleter-item");
-    if (activeSuggestion < (filteredSuggestions.length - 4)) {
+    if (activeSuggestion < (filteredSuggestions.length - 5)) {
       parent.scrollTop -= item[0].offsetHeight
     }
   }
@@ -520,8 +520,8 @@ class AutocompleteTagsMulti extends React.Component {
     const { activeSuggestion } = this.state;
     const parent = document.getElementById("autocompleter-items-"+name);
     const item = document.getElementsByClassName("autocompleter-item");
-    // i.e. 4 = 5th box
-    if (activeSuggestion >= 4) {
+    // i.e. 5 = 6th box
+    if (activeSuggestion >= 5) {
       parent.scrollTop += item[0].offsetHeight
     }
   }
@@ -533,8 +533,8 @@ class AutocompleteTagsMulti extends React.Component {
     let containerHeight = 0;
 
     const length = filteredSuggestions.length === 0 ? suggestions.length : filteredSuggestions.length
-    // Makes container the height of the first 5 items
-    for (var i = 0; i < Math.min(6, length); i++) {
+    // Makes container the height of the first 6 items
+    for (var i = 0; i < Math.min(7, length); i++) {
       if (showCheckbox === true) {
         containerHeight += 32
       } else {
@@ -690,15 +690,17 @@ class AutocompleteTagsMulti extends React.Component {
 
               // Flag the active suggestion with a class
               if (index === activeSuggestion) {
-                className = "autocompleter-active" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail');
+                className = "autocompleter-active" + (showDetail===true ? ' showDetail' : ' noDetail');
                 dataTarget = "autoCompleteItem";
               } else {
-                className="autocompleter-item" + (showDetail===true ? ' showDetail overflow-ellipsis' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
+                className="autocompleter-item" + (showDetail===true ? ' showDetail' : ' noDetail') + (index === filteredSuggestions.length ? 'lastItem' : "");
                 dataTarget = "autoCompleteItem";
               }
 
               if (showCheckbox === true) {
                 className += " showCheckbox"
+              } else {
+                className += " overflow-ellipsis"
               }
 
               if (selected) {
@@ -732,7 +734,7 @@ class AutocompleteTagsMulti extends React.Component {
                       </span>
                     )
                   }
-                  <span className={(showCheckbox === true) ? "checkboxText" : ""}>
+                  <span className={(showCheckbox === true) ? "checkboxText overflow-ellipsis" : ""}>
                     {suggestionText}
                   </span>
                   {showDetail===true && (

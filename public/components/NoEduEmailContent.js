@@ -404,7 +404,9 @@ class NoEduEmailContent extends Component {
       return (
         <React.Fragment>
           <div className="modal-title">
-            <div className="emoji-icon peace-emoji successBox" />
+            <div className="emoji-icon successBox fa">
+              <i className="far fa-hand-peace"/>
+            </div>
             Details submitted
           </div>
           <div className="success-container">

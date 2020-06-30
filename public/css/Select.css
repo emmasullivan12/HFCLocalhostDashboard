@@ -34,6 +34,9 @@ svg {
   .option-iconContainer.FA.noDetail.showCheckbox{
     font-size: 17px;
   }
+  .checkboxText{
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .select-placeholder{
@@ -47,6 +50,9 @@ svg {
   .option-iconContainer.FA.showDetail.showCheckbox,
   .option-iconContainer.FA.noDetail.showCheckbox{
     font-size: 17px;
+  }
+  .checkboxText{
+    font-size: 11px;
   }
 }
 .select-placeholder.onClick{
@@ -183,6 +189,12 @@ svg {
   padding: 10px 15px;
   border-bottom: 1px solid rgba(241, 241, 241, 0.988);
   cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
 }
 @media only screen and (min-width: 321px) and (max-width: 425px) {
   .option {
@@ -318,7 +330,7 @@ svg {
   border-bottom: none;
   text-align: left;
   padding-left: 20px;
-  margin-bottom: 2px;
+/*  margin-bottom: 2px;*/
   margin-top: 20px;
 }
 .option.title:first-child{
@@ -423,9 +435,11 @@ svg {
   margin: 0 12px 0 0;
   color: #fff;
   font-size: 10px;
+  position: absolute;
 }
 .checkboxText{
   display: inline-block;
+  margin-left: 25px;
 }
 
 .option.selectedCheckbox > .checkbox {

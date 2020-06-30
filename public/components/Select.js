@@ -300,37 +300,6 @@ class SelectBox extends React.Component {
     });
   }
 
-/*  onHoverOption = (e) => {
-//    e.persist()
-    const {options, valueToShow} = this.props;
-    const currentTarget = e.currentTarget
-
-    this.setState(prevState => {
-      if (prevState.canResetHoverVal === true) {
-
-        if (currentTarget.dataset.id.indexOf("title") != -1) {
-          return
-        }
-
-        const hasMultipleAttributes = this.checkMultipleAttributes();
-        const value = currentTarget.dataset.text;
-        const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
-
-        return {
-          focusedValue: index,
-          hoveredValue: index,
-          canResetHoverVal: false
-        }
-      } else return
-    })
-  }
-
-  onMouseMove = (e) => {
-    this.setState({
-      canResetHoverVal: true
-    })
-  }*/
-
   onKeyDown = e => {
     const { isOpen, focusedValue, isFocused } = this.state;
     const { handleChange, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks } = this.props;
@@ -802,15 +771,15 @@ class SelectBox extends React.Component {
     } else {
       item = parent.firstElementChild;
 
-      // i.e. 4 = 5th box
-      if (focusedValue < (options.length - 4)) {
+      // i.e. 5 = 6th box
+      if (focusedValue < (options.length - 5)) {
         parent.scrollTop -= item.offsetHeight
         return
       }
     }
 
 
-    if (focusedValue < (options.length - 4)) {
+    if (focusedValue < (options.length - 5)) {
 
       if (showCheckbox != true) {
         if (values.indexOf(options[focusedValue - 1][valueToShow]) != -1) {
@@ -820,8 +789,8 @@ class SelectBox extends React.Component {
 
       //check if next item is title
       if (options[focusedValue - 1]["isTitle"] === true) {
-        // 1.75 is hack because over time would have gone offscreen
-        parent.scrollTop -= (titleItem.offsetHeight + (item.offsetHeight * 1.75))
+        // 20px is margin-top of the title
+        parent.scrollTop -= (titleItem.offsetHeight + 20 + item.offsetHeight)
       } else {
         parent.scrollTop -= item.offsetHeight
       }
@@ -845,14 +814,14 @@ class SelectBox extends React.Component {
     } else {
       item = parent.firstElementChild;
 
-      // i.e. 4 = 5th box
-      if (focusedValue >= 4) {
+      // i.e. 5 = 6th box
+      if (focusedValue >= 5) {
         parent.scrollTop += item.offsetHeight
         return
       }
     }
 
-    if (focusedValue >= 4) {
+    if (focusedValue >= 5) {
 
       if (showCheckbox != true) {
         if (values.indexOf(options[focusedValue + 1][valueToShow]) != -1) {
@@ -862,7 +831,8 @@ class SelectBox extends React.Component {
 
       //check if next item is title
       if (options[focusedValue + 1]["isTitle"] === true) {
-        parent.scrollTop += (titleItem.offsetHeight + (item.offsetHeight * 1.75))
+        // 20px is margin-top of the title
+        parent.scrollTop += (titleItem.offsetHeight + 20 + item.offsetHeight)
       } else {
         parent.scrollTop += item.offsetHeight
       }
@@ -888,10 +858,16 @@ class SelectBox extends React.Component {
     let containerHeight = 0;
 
     const length = options.length
-    // Makes container the height of the first 5 items
-    for (var i = 0; i < Math.min(6, length); i++) {
+    // Makes container the height of the first 6 items
+    for (var i = 0; i < Math.min(7, length); i++) {
       if (options[i]["isTitle"] === true) {
         containerHeight += 40
+
+        // Add 20px margin-top for all but the first title
+        if (i != 0) {
+          containerHeight += 20
+        }
+
       } else {
         if (showCheckbox === true) {
           containerHeight += 32
@@ -1035,6 +1011,8 @@ class SelectBox extends React.Component {
             //added
             } else if (showCheckbox === true) {
               className += " showCheckbox"
+            } else {
+              className += " overflow-ellipsis"
             }
 
             if (selected) {
@@ -1053,9 +1031,9 @@ class SelectBox extends React.Component {
             }
             if (index === focusedValue) className += " focused"
             if (showDetail===true) {
-              className += " showDetail overflow-ellipsis"
+              className += " showDetail"
             } else {
-              className += " noDetail overflow-ellipsis"
+              className += " noDetail"
             }
             if (showIcon===true && (option["icon"] != null || option["iconFA"] != null)) {
               className += " showIcon"
@@ -1093,7 +1071,7 @@ class SelectBox extends React.Component {
                     </span>
                   )
                 }
-                <span className={(showCheckbox === true && isSectionTitle != true) ? "checkboxText" : ""}>
+                <span className={(showCheckbox === true && isSectionTitle != true) ? "checkboxText overflow-ellipsis" : ""}>
                   {value}
                 </span>
                 {showDetail===true && (

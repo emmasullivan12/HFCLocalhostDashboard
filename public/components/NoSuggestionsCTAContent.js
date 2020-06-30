@@ -99,9 +99,12 @@ class NoSuggestionsCTAContent extends Component {
   canBeSubmitted() {
     const {schNameFreeTextModal, uniNameFreeTextModal} = this.state;
     const {maxLength} = this.props;
-    return (
-      (schNameFreeTextModal.length >= 2 && schNameFreeTextModal.length <= maxLength) || (uniNameFreeTextModal.length >= 2 && uniNameFreeTextModal.length <= maxLength)
-    );
+
+    if ((schNameFreeTextModal.length >= 2 && schNameFreeTextModal.length <= maxLength) || (uniNameFreeTextModal.length >= 2 && uniNameFreeTextModal.length <= maxLength)) {
+      return true
+    } else {
+      return false
+    }
   }
 
   render() {

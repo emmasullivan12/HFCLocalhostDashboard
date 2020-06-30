@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import Checkbox from './Checkbox.js';
@@ -143,7 +143,9 @@ class PassMenteeContent extends Component {
       return (
         <React.Fragment>
           <div className="modal-title">
-            <div className="emoji-icon peace-emoji successBox" />
+            <div className="emoji-icon successBox fa">
+              <i className="far fa-hand-peace"/>
+            </div>
             You passed
           </div>
           <div className="success-container">
