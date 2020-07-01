@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -12,7 +12,7 @@ const ModalTrigger = ({
   text,
   usedFor
 }) => (
-  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef}>
+  <button tabIndex="0" type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -62,6 +62,16 @@ class Modal extends React.Component {
     }
     this.onOpen = this.onOpen.bind(this);
     this.onClose = this.onClose.bind(this);
+    this.onMouseDown = this.onMouseDown.bind(this);
+    this.onMouseUp = this.onMouseUp.bind(this);
+  }
+
+  onMouseDown(e) {
+    this.openButtonNode.focus()
+  }
+
+  onMouseUp(e) {
+    this.openButtonNode.focus()
   }
 
   onOpen(e) {
@@ -113,6 +123,8 @@ class Modal extends React.Component {
       <React.Fragment>
         <ModalTrigger
           onOpen={this.onOpen}
+          onMouseDown={this.onMouseDown}
+          onMouseUp={this.onMouseUp}
           buttonRef={n => this.openButtonNode = n}
           text={triggerText}
           usedFor={usedFor}

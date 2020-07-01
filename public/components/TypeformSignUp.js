@@ -16,6 +16,7 @@ import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 import TypeformEmbedded from './TypeformEmbedded.js';
 import VerifyEmail from './VerifyEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 
 import chatList from './1LastActiveChats.js';
 import LastActive from './1LastActive.js';
@@ -135,11 +136,11 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didEduEmail', // set to did1stSU when first loaded
+      step: 'didDiversity', // set to did1stSU when first loaded
       userEduName: '',
       country: 'GBR',
-      eetStatus: '',
-      schName: '',
+      eetStatus: 'sch',
+      schName: '60',
       schNameFreeText: '',
       uniName: '',
       uniNameFreeText: '',
@@ -161,10 +162,12 @@ class TypeformSignUp extends Component {
   }
 
   componentDidMount() {
+    console.log("isloading: "+this.state.isLoading)
     this.getUserEduName();
   }
 
   getUserEduName() {
+    console.log("getusereduname loading")
     const {step, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
 
     if (step === 'didDiversity' || step === 'updatingEdu') {
@@ -178,6 +181,8 @@ class TypeformSignUp extends Component {
                   isLoading: false,
                   userEduName: sch[0].label,
                   isGeneralError: false
+                }, () => {
+                  console.log("isloading AFTER: "+this.state.isLoading)
                 })
               })
               .catch(err => {
@@ -488,26 +493,50 @@ class TypeformSignUp extends Component {
           );
         case 'didDiversity':
           return (
-            !isLoading && (
-              <SignUpScreenTemplate {...MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider)}>
-                <ConfirmStudent
-                  step={step}
-                  currentStep="5"
-                  totalMenteeSteps={totalMenteeSteps}
-                  schName={schName}
-                  schNameFreeText={schNameFreeText}
-                  uniName={uniName}
-                  uniNameFreeText={uniNameFreeText}
-                  eetStatus={eetStatus}
-                  country={country}
-                  userEduName={userEduName}
-                  updateStep={this.updateStep}
-                  updateEduEmail={this.updateEduEmail}
-                  currCo={currCo}
-                  currTrainingProvider={currTrainingProvider}
-                />
-              </SignUpScreenTemplate>
-            )
+            <React.Fragment>
+              {this.state.isLoading === true && (
+                <div className="clientUI">
+                  <div className="clientContainer">
+                    <div className="loadingSUContainer">
+                      <div id="loadingSU-welcome">
+                        <div className="loadingSUMsg">
+                          <p className="loadingWelcomeMsg">
+                            Loading sign-up form...
+                          </p>
+                          <div className="infiniteSpinner infiniteSpinner-medium">
+                            <div className="LoaderLayout-sc-1eu50fy-0 eczmJS">
+                              <div className="LoaderWrapper-sc-1eu50fy-1 iKvkDg">
+                                <LoadingSpinner />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {!isLoading && (
+                <SignUpScreenTemplate {...MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider)}>
+                  <ConfirmStudent
+                    step={step}
+                    currentStep="5"
+                    totalMenteeSteps={totalMenteeSteps}
+                    schName={schName}
+                    schNameFreeText={schNameFreeText}
+                    uniName={uniName}
+                    uniNameFreeText={uniNameFreeText}
+                    eetStatus={eetStatus}
+                    country={country}
+                    userEduName={userEduName}
+                    updateStep={this.updateStep}
+                    updateEduEmail={this.updateEduEmail}
+                    currCo={currCo}
+                    currTrainingProvider={currTrainingProvider}
+                  />
+                </SignUpScreenTemplate>
+              )}
+            </React.Fragment>
           );
         case 'didEduEmail':
         case 'didEduEmailNeedsRev':
@@ -530,12 +559,6 @@ class TypeformSignUp extends Component {
               Doesnt need review. Show the dashboard!!
             </div>
           );
-    /*    case 'checkActiveUsers':
-          return (
-            <LastActive
-              chatList={chatList}
-            />
-          );*/
       }
     } else {
       switch (step) {

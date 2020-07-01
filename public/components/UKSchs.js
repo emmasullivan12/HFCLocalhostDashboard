@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th june 2020 
+// Dex last merged this code on 4th june 2020
 
 import React, { Component } from "react";
 
@@ -26,7 +26,7 @@ const ukSchs = [
   {value: '20', label: 'Royal Free Hospital Children\'s School', location: 'London, UK' },
   {value: '21', label: 'Swiss Cottage School - Development & Research Centre', location: 'London, UK' },
   {value: '22', label: 'Newhaven Pupil Referral Unit', location: 'London, UK' },
-  {value: '23', label: 'Saint Mary Magdalene Church of England All Through School', location: 'Secondary - Old Dover Road, Se3 8sy, UK' },
+  {value: '23', label: 'Saint Mary Magdalene Church of England All Through School', location: 'London, UK' },
   {value: '24', label: 'Eltham Hill Schoofl', location: 'London, UK' },
   {value: '25', label: 'Plumstead Manor School', location: 'London, UK' },
   {value: '26', label: 'Thomas Tallis School', location: 'London, UK' },
