@@ -539,6 +539,12 @@ hr{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
+.Submit-btn:disabled:active {
+  background: none;
+}
+.Submit-btn.BlankBtn:disabled{
+  background: none!important;
+}
 .Submit-btn:active{
   background: #58d2bb;
 }

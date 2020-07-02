@@ -25,7 +25,6 @@ class NoEduEmailContent extends Component {
       urlInputIsValid: '',
       messageFromServer: '',
       isSubmitting: false,
-      timeout: 0
     };
     this.onBlur = this.onBlur.bind(this);
     this.checkEmail = this.checkEmail.bind(this);
@@ -33,6 +32,13 @@ class NoEduEmailContent extends Component {
 
   componentDidMount(){
     document.getElementById("progverifcode").focus();
+  }
+
+  componentWillUnmount() {
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   onBlur(e) {
@@ -138,35 +144,40 @@ class NoEduEmailContent extends Component {
   }
 
   handleMouseDown = (e) => {
-    const {timeout} = this.state;
-    clearTimeout(timeout);
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   handleKeyDown = (e) => {
-    const {timeout} = this.state;
-    clearTimeout(timeout);
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   handleKeyUp = (e) => {
     e.persist()
-    const {timeout, emailInput, emailIsValid} = this.state;
-    clearTimeout(timeout);
+    const {emailInput, emailIsValid} = this.state;
+    clearTimeout(this.timerHandle);
 
     // checks use has not pressed backspace
     if (e.target.value != '' && e.keyCode != 8) {
-      this.setState({
-        timeout: setTimeout(()=>{
-          if (e.target.name === 'progCode') {
-            this.handleCodeMoveNext(e)
-          } else if (e.target.name === 'currentSitu') {
-            this.handleSituMoveNext(e)
-          } else if (e.target.name === 'emailInput') {
-            this.handleEmailMoveNext(e)
-          } else if (e.target.name === 'profProfileURL') {
-            this.handleURLMoveNext(e)
-          }
-        }, 800)
-      })
+
+      this.timerHandle = setTimeout(() => {
+        if (e.target.name === 'progCode') {
+          this.handleCodeMoveNext(e)
+        } else if (e.target.name === 'currentSitu') {
+          this.handleSituMoveNext(e)
+        } else if (e.target.name === 'emailInput') {
+          this.handleEmailMoveNext(e)
+        } else if (e.target.name === 'profProfileURL') {
+          this.handleURLMoveNext(e)
+        }
+        this.timerHandle = 0;
+      }, 800);
+
     }
   }
 

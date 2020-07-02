@@ -31,7 +31,6 @@ class ConfirmStudent extends React.Component {
       emailFormat: '',
       dm: '',
       requestReview: false,
-      timeout: 0,
       submitted: ''
     }
     this.onBlur = this.onBlur.bind(this);
@@ -43,40 +42,57 @@ class ConfirmStudent extends React.Component {
   }
 
   componentDidMount() {
+    this.mounted = true
     const {country, schName, uniName, eetStatus} = this.props;
 
     if (country === 'GBR') {
       if (eetStatus === 'sch' && schName != '') {
         return Promise.all([lookupUKSchUnis(schName, 'emailFormat', eetStatus)])
           .then(email => {
-            this.setState({
-              emailFormat: email[0].emailFormat.toLowerCase(),
-              dm: email[0].dm != undefined ? email[0].dm : '',
-              isGeneralError: false
-            })
+            if(this.mounted) {
+              this.setState({
+                emailFormat: email[0].emailFormat.toLowerCase(),
+                dm: email[0].dm != undefined ? email[0].dm : '',
+                isGeneralError: false
+              })
+            }
           })
           .catch(err => {
-            this.setState({
-              isGeneralError: true,
-            })
+            if(this.mounted) {
+              this.setState({
+                isGeneralError: true,
+              })
+            }
           })
 
       } else if (eetStatus === 'uni' && uniName != '') {
         return Promise.all([lookupUKSchUnis(uniName, 'emailFormat', eetStatus)])
           .then(email => {
-            setTimeout(() => {
+            if(this.mounted) {
               this.setState({
                 emailFormat: email[0].emailFormat.toLowerCase(),
                 isGeneralError: false
               })
-            },5000)
+            }
           })
           .catch(err => {
-            this.setState({
-              isGeneralError: true,
-            })
+            if(this.mounted) {
+              this.setState({
+                isGeneralError: true,
+              })
+            }
           })
       }
+    }
+  }
+
+  componentWillUnmount() {
+
+    this.mounted = false;
+
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
     }
   }
 
@@ -123,15 +139,13 @@ class ConfirmStudent extends React.Component {
   }
 
   handleKeyUp = (e) => {
-    const {timeout} = this.state;
 
-    clearTimeout(timeout);
+    clearTimeout(this.timerHandle);
 
-    this.setState({
-      timeout: setTimeout(()=>{
-        this.checkEduEmail()
-      }, 800)
-    })
+    this.timerHandle = setTimeout(() => {
+      this.checkEduEmail()
+      this.timerHandle = 0;
+    }, 800);
   }
 
   handleUpdateEdu() {
@@ -583,15 +597,17 @@ class ConfirmStudent extends React.Component {
                     autoFocus
                     required
                   />
-                  <NoEduEmail
-                    country={country}
-                    eetStatus={eetStatus}
-                    handleNoEduEmail={this.handleNoEduEmail}
-                    updateEduEmail={updateEduEmail}
-                    updateStep={updateStep}
-                    currCo={currCo}
-                    currTrainingProvider={currTrainingProvider}
-                  />
+                  {isSubmitting === false && (
+                    <NoEduEmail
+                      country={country}
+                      eetStatus={eetStatus}
+                      handleNoEduEmail={this.handleNoEduEmail}
+                      updateEduEmail={updateEduEmail}
+                      updateStep={updateStep}
+                      currCo={currCo}
+                      currTrainingProvider={currTrainingProvider}
+                    />
+                  )}
                 </div>
                 {eduEmailIsValid === false && isPersonalEmail === false && (
                   <React.Fragment>
@@ -624,7 +640,7 @@ class ConfirmStudent extends React.Component {
                     <span>Next</span>
                   )}
                 </button>
-                <button type="button" onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
+                <button type="button" disabled={isSubmitting === true ? true : false} onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
                   or Change {eetStatus === 'uni' ? 'University' : eetStatus === 'sch' ? country === 'GBR' ? 'School/College' : 'High School' : 'school status'}
                 </button>
               </form>

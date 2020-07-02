@@ -136,15 +136,15 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didDiversity', // set to did1stSU when first loaded
+      step: 'didEdu', // set to did1stSU when first loaded
       userEduName: '',
-      country: 'GBR',
-      eetStatus: 'sch',
-      schName: '60',
+      country: '',
+      eetStatus: '',
+      schName: '',
       schNameFreeText: '',
       uniName: '',
       uniNameFreeText: '',
-      emailToVerify: 'emma@email.com',
+      emailToVerify: '',
       currCo: '',
       currTrainingProvider: ''
     }
@@ -162,12 +162,15 @@ class TypeformSignUp extends Component {
   }
 
   componentDidMount() {
-    console.log("isloading: "+this.state.isLoading)
+    this.mounted = true
     this.getUserEduName();
   }
 
+  componentWillUnmount() {
+    this.mounted = false;
+  }
+
   getUserEduName() {
-    console.log("getusereduname loading")
     const {step, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText} = this.state;
 
     if (step === 'didDiversity' || step === 'updatingEdu') {
@@ -177,18 +180,22 @@ class TypeformSignUp extends Component {
           if (schName != '') {
             return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)])
               .then(sch => {
-                this.setState({
-                  isLoading: false,
-                  userEduName: sch[0].label,
-                  isGeneralError: false
-                }, () => {
-                  console.log("isloading AFTER: "+this.state.isLoading)
-                })
+                if(this.mounted) {
+                  this.setState({
+                    isLoading: false,
+                    userEduName: sch[0].label,
+                    isGeneralError: false
+                  }, () => {
+                    console.log("isloading AFTER: "+this.state.isLoading)
+                  })
+                }
               })
               .catch(err => {
-                this.setState({
-                  isGeneralError: true,
-                })
+                if(this.mounted) {
+                  this.setState({
+                    isGeneralError: true,
+                  })
+                }
               })
           } else {
             this.setState({
@@ -210,16 +217,20 @@ class TypeformSignUp extends Component {
           if (uniName != '') {
             return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)])
               .then(uni => {
-                this.setState({
-                  isLoading: false,
-                  userEduName: uni[0].label,
-                  isGeneralError: false
-                })
+                if(this.mounted) {
+                  this.setState({
+                    isLoading: false,
+                    userEduName: uni[0].label,
+                    isGeneralError: false
+                  })
+                }
               })
               .catch(err => {
-                this.setState({
-                  isGeneralError: true,
-                })
+                if(this.mounted) {
+                  this.setState({
+                    isGeneralError: true,
+                  })
+                }
               })
           } else {
             this.setState({
@@ -258,17 +269,21 @@ class TypeformSignUp extends Component {
     } else if (stepJustDone === 'updatingEdu') {
       return Promise.all([this.getUserEduName()])
         .then(res => {
-          this.setState({
-            step: 'didDiversity', // User updated education & has already done Shortsu so jump forward to didDiversity and confirm email
-            isGeneralError: false,
-          }, () => {
-            this.getUserEduName()
-          })
+          if(this.mounted) {
+            this.setState({
+              step: 'didDiversity', // User updated education & has already done Shortsu so jump forward to didDiversity and confirm email
+              isGeneralError: false,
+            }, () => {
+              this.getUserEduName()
+            })
+          }
         })
         .catch(err => {
-          this.setState({
-            isGeneralError: true,
-          })
+          if(this.mounted) {
+            this.setState({
+              isGeneralError: true,
+            })
+          }
         })
 
     } else if (stepJustDone === 'didIndRole') {

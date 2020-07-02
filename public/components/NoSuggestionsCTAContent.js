@@ -13,7 +13,6 @@ class NoSuggestionsCTAContent extends Component {
       uniNameFreeTextModal: '',
       messageFromServer: '',
       isSubmitting: false,
-      timeout: 0
     };
   }
 
@@ -21,23 +20,29 @@ class NoSuggestionsCTAContent extends Component {
     document.getElementById("eduNameFreeTextModal").focus();
   }
 
+  componentWillUnmount() {
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
+  }
+
   handleKeyUp = (e) => {
     e.persist();
-    const {timeout} = this.state;
 
-    clearTimeout(timeout);
+    clearTimeout(this.timerHandle);
 
-    this.setState({
-      timeout: setTimeout(()=>{
-        this.handleMoveNext()
-      }, 800)
-    })
+    this.timerHandle = setTimeout(() => {
+      this.handleMoveNext()
+      this.timerHandle = 0;
+    }, 800);
   }
 
   handleMoveNext = () => {
     const { eetStatusLocal } = this.props;
-
-    document.getElementById("Submit-btn-addEdu").focus()
+    if (this.canBeSubmitted() === true) {
+      document.getElementById("Submit-btn-addEdu").focus()
+    }
   }
 
   handleChange = (e) => {
@@ -59,7 +64,7 @@ class NoSuggestionsCTAContent extends Component {
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
   handleSubmit = (e) => {
     if (!this.canBeSubmitted()) {
-      e.preventDefault ();
+      e.preventDefault();
       return;
     } else {
       const { eetStatusLocal, handleSchChange, handleUniChange } = this.props;

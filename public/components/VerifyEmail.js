@@ -120,12 +120,12 @@ class VerifyEmail extends React.Component {
               <li className="descListItem">Check your junk email folder</li>
               <li className="descListItem">
                 Did you enter your email address correctly ({emailToVerify})? If not, go back and
-                <button type="button" onClick={this.handleUpdateEmail} className="Submit-btn BlankBtn Inline">
+                <button type="button" disabled={isSubmitting === true ? true : false} onClick={this.handleUpdateEmail} className="Submit-btn BlankBtn Inline">
                   enter it again
                 </button>
               </li>
               <li className="descListItem">Wait a few minutes or alternatively click to resend below</li>
-              <button type="button" className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
+              <button type="button" disabled={isSubmitting === true ? true : false} className="Submit-btn alignLeft resendCode" onClick={this.handleResendSubmit}>
                 <span >Resend code</span>
               </button>
               <div className="redText"> Something went wrong. Looks like this user has already been verified. Please try and log in</div>

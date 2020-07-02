@@ -123,6 +123,7 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleMultiOptions() {
+    console.log("this is controlling focus")
     if (this.state.industries.length > 0) {
       document.getElementById("autocompleteBox-selectRole").focus()
     } else {
@@ -131,6 +132,7 @@ class IndustryRoleSU extends React.Component {
   }
 
 /*  handleMultiRoles() {
+    console.log("handleMultiRoles")
     const {rolesFromList, freeTextRoles} = this.state
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
       document.getElementById("ratingsContainer").firstElementChild.focus()
@@ -151,6 +153,7 @@ class IndustryRoleSU extends React.Component {
     const values = rolesFromList.map(value => value.value)
 
     if ((this.state.rolesFromList.length != 0 || this.state.freeTextRoles.length != 0) && userInput.length != 0) {
+      console.log("setting editingRole to true")
       this.setState({
         editingRole: true
       })

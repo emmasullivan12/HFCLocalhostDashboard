@@ -304,7 +304,7 @@ class Autocomplete extends React.Component {
         );
       } else {
         suggestionsListComponent = (
-          <div className="no-suggestions" id="noSuggestionsCTA">
+          <div tabIndex="-1" className="no-suggestions" id="noSuggestionsCTA">
             <em>No suggestions</em>
             {children}
           </div>

@@ -291,7 +291,9 @@ class AutocompleteTagsMulti extends React.Component {
       } else {
         values.splice(index, 1)
       }
+
     //  handleChange(values)
+
       if(!required || required && value != null) {
         document.getElementById("autocompleterTags-"+name).classList.remove('error')
       } else {
@@ -307,32 +309,21 @@ class AutocompleteTagsMulti extends React.Component {
         showSuggestions: true,
       }
     }, () => {
-      this.widthCalc(true)
+      if (this.state.values.length === 0) {
+        this.widthCalc()
+        return
+      } else {
+        this.widthCalc(true)
+      }
       if (e.target.classList.contains('addOwn')) {
         this.heightCalc()
       }
     })
   };
 
-/*  onKeyDownParent = e => {
-    const { showSuggestions } = this.state;
-    // User pressed the enter key
-    if (e.keyCode === 13) {
-      e.preventDefault();
-
-      this.setState({
-        showSuggestions: !showSuggestions
-      }, () => {
-        if (showSuggestions === false) {
-          this.focusOnInput()
-        }
-      })
-    }
-  }*/
-
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
-    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow} = this.props;
+    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     // User pressed the enter key
@@ -366,13 +357,14 @@ class AutocompleteTagsMulti extends React.Component {
             values.splice(index, 1)
           }
 
-        //  handleChange(values)
+      //    handleChange(values)
 
           if(!required || required && value != null) {
             document.getElementById("autocompleterTags-"+name).classList.remove('error')
           } else {
             document.getElementById("autocompleterTags-"+name).classList.add('error')
           }
+
           return {
             values: values,
             numSelected: values.length,
@@ -386,10 +378,18 @@ class AutocompleteTagsMulti extends React.Component {
           }
         }
       }, () => {
-        this.widthCalc(true)
-      //  if (filteredSuggestions.length === 0) {
-        if (filteredSuggestions.length != suggestions.length) {
+        if (this.state.values.length === 0) {
+          this.widthCalc()
+          return
+        } else {
+          this.widthCalc(true)
+        }
+    //    if (filteredSuggestions.length != suggestions.length) {
+      //  if (filteredSuggestions.length != 0 && this.state.showSuggestions === true) {
+        if (this.state.showSuggestions === true) {
           this.heightCalc()
+  //      } else if (finMultiOptions) {
+    //      finMultiOptions()
         }
       })
     }
@@ -425,7 +425,7 @@ class AutocompleteTagsMulti extends React.Component {
               values.push(value)
             }
 
-        //    handleChange(values)
+            handleChange(values)
 
             if(!required || required && value != null) {
               document.getElementById("autocompleterTags-"+name).classList.remove('error')

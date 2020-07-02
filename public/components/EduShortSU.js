@@ -42,7 +42,6 @@ class EduShortSU extends React.Component {
       currTrainingProviderLocal: '',
       tabPressed: '',
       selectBoxFocused: '',
-      timeout: 0,
       isSubmitting: false,
       submitted: ''
     }
@@ -65,6 +64,19 @@ class EduShortSU extends React.Component {
     this.onBlur = this.onBlur.bind(this);
   }
 
+  componentDidMount() {
+    this.mounted = true
+  }
+
+  componentWillUnmount() {
+    this.mounted = false
+
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
+  }
+
   onBlur(e) {
     if (e.target.id === 'schNameTextBox') {
       this.handleSchChange(e)
@@ -80,31 +92,29 @@ class EduShortSU extends React.Component {
   }
 
   handleMouseDown = (e) => {
-    const {timeout} = this.state;
-    clearTimeout(timeout);
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   handleKeyUp = (e) => {
     e.persist();
-    const {timeout} = this.state;
 
-    clearTimeout(timeout);
+    clearTimeout(this.timerHandle);
 
-    this.setState({
-      timeout: setTimeout(()=>{
-
-        if (e.target.id === 'schNameTextBox') {
-          this.handleSchChange(e)
-        } else if (e.target.id === 'uniNameTextBox') {
-          this.handleUniChange(e)
-        } else if (e.target.id === 'currCoInput') {
-          this.handleJobMoveNext()
-        } else if (e.target.id === 'currTrainingProviderInput') {
-          this.handleTrainMoveNext()
-        }
-
-      }, 800)
-    })
+    this.timerHandle = setTimeout(() => {
+      if (e.target.id === 'schNameTextBox') {
+        this.handleSchChange(e)
+      } else if (e.target.id === 'uniNameTextBox') {
+        this.handleUniChange(e)
+      } else if (e.target.id === 'currCoInput') {
+        this.handleJobMoveNext()
+      } else if (e.target.id === 'currTrainingProviderInput') {
+        this.handleTrainMoveNext()
+      }
+      this.timerHandle = 0;
+    }, 800);
   }
 
   handleJobMoveNext = () => {
@@ -517,15 +527,19 @@ class EduShortSU extends React.Component {
   renderComponents(fileToRender, componentUpdatesState, error) {
     import(`./${fileToRender}.js`)
       .then(component => {
-        this.setState({
-          [componentUpdatesState]: component.default,
-          errorLoadingEdu: false
-        })
+        if(this.mounted) {
+          this.setState({
+            [componentUpdatesState]: component.default,
+            errorLoadingEdu: false
+          })
+        }
       })
       .catch(err => {
-        this.setState({
-          errorLoadingEdu: true
-        })
+        if(this.mounted) {
+          this.setState({
+            errorLoadingEdu: true
+          })
+        }
       })
   }
 

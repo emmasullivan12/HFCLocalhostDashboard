@@ -31,6 +31,8 @@ class TypeformEmbedded extends Component {
     )
   }
 
+  // NEED TO COMPONENTWILLUNMOUNT TO DESTROY WIDGET??
+
   render(){
     return(
       <div>

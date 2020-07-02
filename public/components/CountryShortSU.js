@@ -21,7 +21,6 @@ class CountryShortSU extends React.Component {
       stateProvIsValid: '',
       city: '',
       tabPressed: '',
-      timeout: 0,
       isSubmitting: false,
       submitted: ''
     }
@@ -33,6 +32,13 @@ class CountryShortSU extends React.Component {
     this.onBlur = this.onBlur.bind(this);
   }
 
+  componentWillUnmount() {
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
+  }
+
   onBlur(e) {
     if(e.target.checkValidity()) {
       e.target.classList.remove('error');
@@ -42,21 +48,21 @@ class CountryShortSU extends React.Component {
   }
 
   handleMouseDown = (e) => {
-    const {timeout} = this.state;
-    clearTimeout(timeout);
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   handleKeyUp = (e) => {
     e.persist();
-    const {timeout} = this.state;
 
-    clearTimeout(timeout);
+    clearTimeout(this.timerHandle);
 
-    this.setState({
-      timeout: setTimeout(()=>{
-        this.handleCityMoveNext(e.target.value)
-      }, 800)
-    })
+    this.timerHandle = setTimeout(() => {
+      this.handleCityMoveNext(e.target.value)
+      this.timerHandle = 0;
+    }, 800);
   }
 
   handleCityMoveNext = (e) => {
