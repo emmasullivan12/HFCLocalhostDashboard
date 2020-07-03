@@ -15,6 +15,7 @@ class RatingItems extends Component {
   componentDidMount(){
     const { focusOnLoad, handleTabPress, name } = this.props;
     if (focusOnLoad) {
+      console.log("loadedRatings setting focus")
       document.getElementById("ratingsContainer").firstElementChild.focus()
     }
     if (handleTabPress) {
@@ -121,7 +122,7 @@ class RatingItems extends Component {
             type="radio"
             onKeyDown={this.onKeyDown}
             value={i+1}
-            autoFocus={focusOnLoad === false ? false : i===0 ? true : false}
+      //      autoFocus={focusOnLoad === false ? false : i===0 ? true : false}
           />
           <div className="ratingItem" >
             <div className="ratingIcon">

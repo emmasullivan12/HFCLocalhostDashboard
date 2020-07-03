@@ -204,6 +204,7 @@ class AutocompleteTagsMulti extends React.Component {
 
       return filteredSuggestions;
     }
+
     this.setState({
       activeSuggestion: userInput != "" ? 0 : -1,
       filteredSuggestions: filteredSuggestions(),
@@ -292,8 +293,6 @@ class AutocompleteTagsMulti extends React.Component {
         values.splice(index, 1)
       }
 
-    //  handleChange(values)
-
       if(!required || required && value != null) {
         document.getElementById("autocompleterTags-"+name).classList.remove('error')
       } else {
@@ -309,6 +308,8 @@ class AutocompleteTagsMulti extends React.Component {
         showSuggestions: true,
       }
     }, () => {
+      handleChange(this.state.values)
+      this.focusOnInput()
       if (this.state.values.length === 0) {
         this.widthCalc()
         return
@@ -322,7 +323,7 @@ class AutocompleteTagsMulti extends React.Component {
   };
 
   onKeyDown = e => {
-    const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
+    const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected } = this.state;
     const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -357,7 +358,7 @@ class AutocompleteTagsMulti extends React.Component {
             values.splice(index, 1)
           }
 
-      //    handleChange(values)
+        //  handleChange(values)
 
           if(!required || required && value != null) {
             document.getElementById("autocompleterTags-"+name).classList.remove('error')

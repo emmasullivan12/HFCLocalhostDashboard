@@ -123,7 +123,6 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleMultiOptions() {
-    console.log("this is controlling focus")
     if (this.state.industries.length > 0) {
       document.getElementById("autocompleteBox-selectRole").focus()
     } else {
@@ -153,7 +152,6 @@ class IndustryRoleSU extends React.Component {
     const values = rolesFromList.map(value => value.value)
 
     if ((this.state.rolesFromList.length != 0 || this.state.freeTextRoles.length != 0) && userInput.length != 0) {
-      console.log("setting editingRole to true")
       this.setState({
         editingRole: true
       })
@@ -244,7 +242,7 @@ class IndustryRoleSU extends React.Component {
               </div>
               {(industries.length > 0 || editingInd != '') && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">What <strong>career or profession</strong> do you want to work in?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">Which <strong>career or profession(s)</strong> do you want to work in?</label>
                   <div className="autocompleter">
                     <AutocompleteTagsMulti
                       multiple
@@ -280,7 +278,7 @@ class IndustryRoleSU extends React.Component {
                     handleRatingChange={this.handleRatingChange}
                     name='selectRating'
                     handleTabPress={this.handleTabPress}
-                    focusOnLoad={tabPressed ? false : true}
+                //    focusOnLoad={tabPressed ? false : true}
                     required
                   />
                 </div>

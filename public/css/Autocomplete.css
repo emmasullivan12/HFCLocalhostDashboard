@@ -35,38 +35,38 @@
 
 .placeholderOnClick::placeholder{
   font-size: 12px!important;
-  color: #c7c7f7!important;
+  color: #d9d9d9!important;
   min-width: 250px!important;
   opacity: 1; /* Firefox */
 }
 
 .placeholderOnClick::-webkit-input-placeholder{
   font-size: 12px!important;
-  color: #c7c7f7!important;
+  color: #d9d9d9!important;
   min-width: 250px!important;
 }
 
 .placeholderOnClick:-moz-input-placeholder{
   font-size: 12px!important;
-  color: #c7c7f7!important;
+  color: #d9d9d9!important;
   min-width: 250px!important;
 }
 
 .placeholderOnClick::-moz-input-placeholder{
   font-size: 12px!important;
-  color: #c7c7f7!important;
+  color: #d9d9d9!important;
   min-width: 250px!important;
 }
 
 .placeholderOnClick:-ms-input-placeholder{
   font-size: 12px!important;
-  color: #c7c7f7!important;
+  color: #d9d9d9!important;
   min-width: 250px!important;
 }
 
 .placeholderOnClick::-ms-input-placeholder{
   font-size: 12px!important;
-  color: #c7c7f7!important;
+  color: #d9d9d9!important;
   min-width: 250px!important;
   transform: scale(0.7) translateX(-50px); /* Edge bug: font-size doesnt work, so use transform instead */
   -ms-transform: scale(0.7) translateX(-50px);
