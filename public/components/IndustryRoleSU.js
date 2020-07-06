@@ -11,7 +11,7 @@ import RatingItems from './RatingItems.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
 //import {lookupRoles} from './UserDetail.js';
 
-const industryOptions = [
+const industryOptions2 = [
   {value: '', label: 'Finance Sector', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
   {value: '0', label: 'Accounting', checkbox: true, isTitle: false},
   {value: '1', label: 'VFX', checkbox: true, isTitle: false},
@@ -48,6 +48,82 @@ const industryOptions = [
   {value: '7', label: 'Reading5', checkbox: true, isTitle: false},
   {value: '8', label: 'Healthcare5', checkbox: true, isTitle: false},
   {value: '9', label: 'Physics5', checkbox: true, isTitle: false}
+];
+
+const industryOptions = [
+  {value: '', label: 'Art, Fashion & Design', iconFA: 'fas fa-palette', isTitle: true},
+  {value: '0', label: 'Art & Exhibitions', checkbox: true, isTitle: false},
+  {value: '1', label: 'Fashion & Photography', checkbox: true, isTitle: false},
+  {value: '2', label: 'Graphic Design & Animation', checkbox: true, isTitle: false},
+  {value: '3', label: 'Product & Interior Design', checkbox: true, isTitle: false},
+  {value: '', label: 'Business, Finance & Accounting', iconFA: 'fas fa-pound-sign', isTitle: true},
+  {value: '4', label: 'Investment Banking', checkbox: true, isTitle: false},
+  {value: '5', label: 'Asset Management & Private Equity', checkbox: true, isTitle: false},
+  {value: '6', label: 'Accounting & Audit', checkbox: true, isTitle: false},
+  {value: '7', label: 'Management Consulting', checkbox: true, isTitle: false},
+  {value: '8', label: 'Insurance, Tax & Financial Advisory', checkbox: true, isTitle: false},
+  {value: '9', label: 'Administration & Operations', checkbox: true, isTitle: false},
+  {value: '', label: 'Construction & Real Estate', iconFA: 'fas fa-wrench', isTitle: true},
+  {value: '10', label: 'Architecture & Civil Engineering', checkbox: true, isTitle: false},
+  {value: '11', label: 'Construction Sites & Facilities', checkbox: true, isTitle: false},
+  {value: '12', label: 'Real Estate Investing & Development', checkbox: true, isTitle: false},
+  {value: '13', label: 'Property Management & Sales', checkbox: true, isTitle: false},
+  {value: '', label: 'Education, Training & Recruitment', iconFA: 'fas fa-graduation-cap', isTitle: true},
+  {value: '14', label: 'HR, Training & Recruitment', checkbox: true, isTitle: false},
+  {value: '15', label: 'Teaching & Tutoring', checkbox: true, isTitle: false},
+  {value: '', label: 'Energy, Environment & Agriculture', iconFA: 'fas fa-seedling', isTitle: true},
+  {value: '16', label: 'Energy & Utilities', checkbox: true, isTitle: false},
+  {value: '17', label: 'Conservation & Sustainability', checkbox: true, isTitle: false},
+  {value: '18', label: 'Farming & Agriculture', checkbox: true, isTitle: false},
+  {value: '', label: 'Entertainment', iconFA: 'fas fa-film', isTitle: true},
+  {value: '19', label: 'Film, TV & VFX in Film/TV', checkbox: true, isTitle: false},
+  {value: '20', label: 'Gaming & VFX in Games', checkbox: true, isTitle: false},
+  {value: '21', label: 'Music, Dance & Theatre', checkbox: true, isTitle: false},
+  {value: '22', label: 'Events Management', checkbox: true, isTitle: false},
+  {value: '', label: 'Industrial & Engineering', iconFA: 'fas fa-drafting-compass', isTitle: true},
+  {value: '23', label: 'Aeronautical & Space Engineering', checkbox: true, isTitle: false},
+  {value: '24', label: 'Electronic & Mechanical Engineering', checkbox: true, isTitle: false},
+  {value: '25', label: 'Chemical Engineering', checkbox: true, isTitle: false},
+  {value: '26', label: 'Manufacturing', checkbox: true, isTitle: false},
+  {value: '27', label: 'Nuclear, Petroleum & Process Engineering', checkbox: true, isTitle: false},
+  {value: '', label: 'Law', iconFA: 'fas fa-gavel', isTitle: true},
+  {value: '28', label: 'Criminal Law', checkbox: true, isTitle: false},
+  {value: '29', label: 'Corporate Law & Intellectual Property', checkbox: true, isTitle: false},
+  {value: '30', label: 'Common Law & Disuptes', checkbox: true, isTitle: false},
+  {value: '', label: 'Media & Marketing', iconFA: 'fas fa-bullhorn', isTitle: true},
+  {value: '31', label: 'Advertising & Branding', checkbox: true, isTitle: false},
+  {value: '32', label: 'PR & Social Media', checkbox: true, isTitle: false},
+  {value: '33', label: 'Journalism, Writing & Radio', checkbox: true, isTitle: false},
+  {value: '', label: 'Non-profit, Charity & Social Care', iconFA: 'fas fa-hand-holding-heart', isTitle: true},
+  {value: '34', label: 'International aid & development', checkbox: true, isTitle: false},
+  {value: '35', label: 'Charity, Fundraising & Voluntary work', checkbox: true, isTitle: false},
+  {value: '36', label: 'Community, Counselling & Social Care', checkbox: true, isTitle: false},
+  {value: '', label: 'Politics & Philosophy', iconFA: 'fas fa-landmark', isTitle: true},
+  {value: '37', label: 'Government, Civil Service & Policy', checkbox: true, isTitle: false},
+  {value: '38', label: 'Economics, Social Research & Intelligence', checkbox: true, isTitle: false},
+  {value: '', label: 'Emergency Services & Law Enforcement', iconFA: 'fas fa-fire-extinguisher', isTitle: true},
+  {value: '39', label: 'Armed Forces & Security', checkbox: true, isTitle: false},
+  {value: '40', label: 'Policing, Fire & Prison Services', checkbox: true, isTitle: false},
+  {value: '', label: 'Sciences & Health', iconFA: 'fas fa-microscope', isTitle: true},
+  {value: '41', label: 'Medical, Pharmacy & Dentistry', checkbox: true, isTitle: false},
+  {value: '42', label: 'Clinical Science & Research', checkbox: true, isTitle: false},
+  {value: '43', label: 'Nursing & Midwifery', checkbox: true, isTitle: false},
+  {value: '44', label: 'Animals & Veterinary', checkbox: true, isTitle: false},
+  {value: '', label: 'Sports, Leisure & Retail', iconFA: 'fas fa-umbrella-beach', isTitle: true},
+  {value: '45', label: 'Retail & Merchandising', checkbox: true, isTitle: false},
+  {value: '46', label: 'Sports, Fitness & Coaching', checkbox: true, isTitle: false},
+  {value: '47', label: 'Accommodation & Food Services', checkbox: true, isTitle: false},
+  {value: '48', label: 'Transportation & Tourism', checkbox: true, isTitle: false},
+  {value: '', label: 'Startups & Entrepreneurship', iconFA: 'fas fa-rocket', isTitle: true},
+  {value: '49', label: 'Entrepreneurship & Starting a business', checkbox: true, isTitle: false},
+  {value: '50', label: 'Venture Capital & Fundraising', checkbox: true, isTitle: false},
+  {value: '', label: 'Technology & Software', iconFA: 'fas fa-server', isTitle: true},
+  {value: '51', label: 'Software Development: Mobile & Web', checkbox: true, isTitle: false},
+  {value: '52', label: 'Hardware, Robotics & Electronics', checkbox: true, isTitle: false},
+  {value: '53', label: 'Big Data & AI / Machine Learning', checkbox: true, isTitle: false},
+  {value: '54', label: 'Cyber Security', checkbox: true, isTitle: false},
+  {value: '55', label: 'Networking & Infrastructure', checkbox: true, isTitle: false},
+  {value: '56', label: 'Telecommunications', checkbox: true, isTitle: false},
 ];
 
 const roleOptions = [
@@ -235,7 +311,7 @@ class IndustryRoleSU extends React.Component {
                   focusOnLoad
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showIcon
-                  iconToShow='icon'
+                  iconToShow='iconFA'
                   showCheckbox
                   required
                 />
