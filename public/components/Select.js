@@ -1056,7 +1056,7 @@ class SelectBox extends React.Component {
 
               >
                 {(showIcon===true && option["iconFA"] != null) && (
-                  <div className={"option-iconContainer FA " + (showDetail===true ? "showDetail": "noDetail") + (showCheckbox===true ? " showCheckbox": "")}>
+                  <div className={"option-iconContainer FA" + (isSectionTitle ? ' title' : '') + (showDetail===true ? " showDetail": " noDetail") + (showCheckbox===true ? " showCheckbox": "")}>
                     <i className={icon} />
                   </div>
                 )}

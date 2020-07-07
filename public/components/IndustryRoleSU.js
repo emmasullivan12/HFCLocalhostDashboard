@@ -9,9 +9,10 @@ import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 import RatingItems from './RatingItems.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
+import roleOptions from './Roles.js';
 //import {lookupRoles} from './UserDetail.js';
 
-const industryOptions2 = [
+/*const industryOptions2 = [
   {value: '', label: 'Finance Sector', icon: 'https://images.typeform.com/images/EfFgjb4xicUU/image/default', isTitle: true},
   {value: '0', label: 'Accounting', checkbox: true, isTitle: false},
   {value: '1', label: 'VFX', checkbox: true, isTitle: false},
@@ -48,7 +49,7 @@ const industryOptions2 = [
   {value: '7', label: 'Reading5', checkbox: true, isTitle: false},
   {value: '8', label: 'Healthcare5', checkbox: true, isTitle: false},
   {value: '9', label: 'Physics5', checkbox: true, isTitle: false}
-];
+];*/
 
 const industryOptions = [
   {value: '', label: 'Art, Fashion & Design', iconFA: 'fas fa-palette', isTitle: true},
@@ -126,7 +127,7 @@ const industryOptions = [
   {value: '56', label: 'Telecommunications', checkbox: true, isTitle: false},
 ];
 
-const roleOptions = [
+/*const roleOptions = [
   {value: '0', label: 'Animator'},
   {value: '1', label: 'Accountant'},
   {value: '2', label: 'Banker'},
@@ -137,7 +138,7 @@ const roleOptions = [
   {value: '7', label: 'Postman'},
   {value: '8', label: 'Teacher'},
   {value: '9', label: 'Baker'},
-];
+];*/
 
 class IndustryRoleSU extends React.Component {
   constructor () {
