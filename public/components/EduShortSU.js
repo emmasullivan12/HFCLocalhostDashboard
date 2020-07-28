@@ -32,6 +32,8 @@ class EduShortSU extends React.Component {
       uniNameFreeTextUpdated: '',
       ukUnisList: [],
       uniNameIsValid: '',
+      degreeLocal: '',
+      degreeIsValid: '',
       schYrGrp: '',
       uniYrGrp: '',
       courseLength: '',
@@ -39,8 +41,13 @@ class EduShortSU extends React.Component {
       uniGraduYr: '',
       uniGraduYrIsValid: '',
       currCoLocal: '',
+      coIsValid: '',
+      currRoleLocal: '',
       currTrainingProviderLocal: '',
+      trainProvIsValid: '',
+      currTrainingCourseLocal: '',
       tabPressed: '',
+      userRole: 'mentor',
       selectBoxFocused: '',
       isSubmitting: false,
       submitted: ''
@@ -55,7 +62,9 @@ class EduShortSU extends React.Component {
     this.handleUniGradYrChange = this.handleUniGradYrChange.bind(this);
     this.handlePgGradYrChange = this.handlePgGradYrChange.bind(this);
     this.handleJobChange = this.handleJobChange.bind(this);
+    this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleTrainChange = this.handleTrainChange.bind(this);
+    this.handleTrainCourseChange = this.handleTrainCourseChange.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -83,7 +92,6 @@ class EduShortSU extends React.Component {
     } else if (e.target.id === 'uniNameTextBox') {
       this.handleUniChange(e)
     }
-
     if(e.target.checkValidity()) {
       e.target.classList.remove('error');
     } else {
@@ -108,16 +116,42 @@ class EduShortSU extends React.Component {
         this.handleSchChange(e)
       } else if (e.target.id === 'uniNameTextBox') {
         this.handleUniChange(e)
+      } else if (e.target.id === 'degreeInput') {
+        this.handleDegreeMoveNext()
       } else if (e.target.id === 'currCoInput') {
         this.handleJobMoveNext()
+      } else if (e.target.id === 'currRoleInput') {
+        this.handleRoleMoveNext()
       } else if (e.target.id === 'currTrainingProviderInput') {
         this.handleTrainMoveNext()
+      } else if (e.target.id === 'currTrainingCourseInput') {
+        this.handleTrainCourseMoveNext()
       }
       this.timerHandle = 0;
     }, 800);
   }
 
+  handleDegreeChange = (e) => {
+    this.setState({ degreeLocal: e.target.value })
+  }
+
+  handleDegreeMoveNext = () => {
+    if (this.state.submitted != true) {
+      this.setState({
+        degreeIsValid: true
+      })
+    }
+  }
+
   handleJobMoveNext = () => {
+    if (this.state.submitted != true) {
+      this.setState({
+        coIsValid: true
+      })
+    }
+  }
+
+  handleRoleMoveNext = () => {
     if (this.state.submitted != true) {
       document.getElementById("Submit-btn-Edu").focus()
     }
@@ -127,7 +161,19 @@ class EduShortSU extends React.Component {
     this.setState({ currCoLocal: e.target.value })
   }
 
+  handleRoleChange = (e) => {
+    this.setState({ currRoleLocal: e.target.value })
+  }
+
   handleTrainMoveNext = () => {
+    if (this.state.submitted != true) {
+      this.setState({
+        trainProvIsValid: true
+      })
+    }
+  }
+
+  handleTrainCourseMoveNext = () => {
     if (this.state.submitted != true) {
       document.getElementById("Submit-btn-Edu").focus()
     }
@@ -135,6 +181,10 @@ class EduShortSU extends React.Component {
 
   handleTrainChange = (e) => {
     this.setState({ currTrainingProviderLocal: e.target.value })
+  }
+
+  handleTrainCourseChange = (e) => {
+    this.setState({ currTrainingCourseLocal: e.target.value })
   }
 
   handleEetStatusChange(userInput) {
@@ -153,6 +203,8 @@ class EduShortSU extends React.Component {
       uniNameFreeTextUpdated: '',
       ukUnisList: [],
       uniNameIsValid: '',
+      degreeLocal: '',
+      degreeIsValid: '',
       schYrGrp: '',
       uniYrGrp: '',
       courseLength: '',
@@ -160,7 +212,11 @@ class EduShortSU extends React.Component {
       uniGraduYr: '',
       uniGraduYrIsValid: '',
       currCoLocal: '',
+      coIsValid: '',
+      currRoleLocal: '',
       currTrainingProviderLocal: '',
+      trainProvIsValid: '',
+      currTrainingCourseLocal: '',
       tabPressed: '',
     }, () => {
       if (userInput === 'none') {
@@ -222,7 +278,9 @@ class EduShortSU extends React.Component {
     if (!isValid) {
       this.setState({
         uniYrGrp: '',
-        uniGraduYr: ''
+        uniGraduYr: '',
+        degreeLocal: '',
+        degreeIsValid: '',
       });
     }
     this.setState({
@@ -239,7 +297,9 @@ class EduShortSU extends React.Component {
     if (!isValid) {
       this.setState({
         uniYrGrp: '',
-        uniGraduYr: ''
+        uniGraduYr: '',
+        degreeLocal: '',
+        degreeIsValid: '',
       });
     }
     this.setState({
@@ -254,8 +314,15 @@ class EduShortSU extends React.Component {
     this.setState({
       uniYrGrp: userInput,
     });
-
-    if (userInput != 'pg') {
+    if (this.state.userRole === 'mentor') {
+      this.setState({
+        uniGraduYrIsValid: true
+      }, () => {
+        if (this.state.submitted != true) {
+          document.getElementById("Submit-btn-Edu").focus()
+        }
+      });
+    } else if (userInput != 'pg') {
       const courseLength = this.state.courseLength;
 
       if (courseLength != '') {
@@ -322,8 +389,8 @@ class EduShortSU extends React.Component {
 
   // Passed on to be used within Select.js onBlur & onClickOption events
   otherValidityChecks() {
-    const { selectBoxFocused, courseLength, uniGraduYr } = this.state;
-    if (selectBoxFocused === "selectBox-uniYrGrp" || selectBoxFocused === "selectBox-uniLength" || selectBoxFocused === "selectBox-pgGraduYr") {
+    const { selectBoxFocused, courseLength, uniGraduYr, userRole } = this.state;
+    if ((selectBoxFocused === "selectBox-uniYrGrp" && userRole === 'mentee') || selectBoxFocused === "selectBox-uniLength" || selectBoxFocused === "selectBox-pgGraduYr") {
       if (courseLength === '' && uniGraduYr === '') {
         document.getElementById("selectBox-uniYrGrp").classList.remove('error');
       } else {
@@ -482,7 +549,7 @@ class EduShortSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currTrainingProviderLocal } = this.state;
+    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, degreeIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currRoleLocal, currTrainingProviderLocal, currTrainingCourseLocal, userRole } = this.state;
   //  const {eetStatus} = this.props;
 
       if (eetStatusLocal != '') {
@@ -497,21 +564,21 @@ class EduShortSU extends React.Component {
           }
 
         } else if (eetStatusLocal === 'uni') {
-          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && (uniYrGrp != 'pg' ? courseLength != '': true) && uniGraduYrIsValid) {
+          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && degreeIsValid && uniYrGrp != '' && (uniYrGrp != 'pg' && userRole != 'mentor' ? courseLength != '': true) && uniGraduYrIsValid) {
             return true;
           } else {
             return false;
           }
 
         } else if (eetStatusLocal === 'job') {
-          if (form.checkValidity() && currCoLocal != '') {
+          if (form.checkValidity() && currCoLocal != '' && currRoleLocal != '') {
             return true;
           } else {
             return false;
           }
 
         } else if (eetStatusLocal === 'train') {
-          if (form.checkValidity() && currTrainingProviderLocal != '') {
+          if (form.checkValidity() && currTrainingProviderLocal != '' && currTrainingCourseLocal != '') {
             return true;
           } else {
             return false;
@@ -545,18 +612,30 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting} = this.state;
+  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, degreeLocal, degreeIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting, currCoLocal, coIsValid, currTrainingProviderLocal, trainProvIsValid, currRoleLocal, currTrainingCourseLocal, userRole} = this.state;
   const { country, eetStatus, tflink, step, currentStep, totalMenteeSteps } = this.props;
 
-  const eetStatusUKOptions = [
+  const eetStatusMenteeUKOptions = [
     {value: 'sch', label: 'I\'m at School / Sixth Form / College'},
     {value: 'uni', label: 'I\'m at University'},
     {value: 'job', label: 'I\'m in full-time employment'},
     {value: 'train', label: 'I\'m in Training'},
     {value: 'none', label: 'None'}
   ];
-  const eetStatusNonUKOptions = [
+  const eetStatusMenteeNonUKOptions = [
     {value: 'sch', label: 'I\'m at High School'},
+    {value: 'uni', label: 'I\'m at University / College'},
+    {value: 'job', label: 'I\'m in full-time employment'},
+    {value: 'train', label: 'I\'m in Training'},
+    {value: 'none', label: 'None'}
+  ];
+  const eetStatusMentorUKOptions = [
+    {value: 'uni', label: 'I\'m at University'},
+    {value: 'job', label: 'I\'m in full-time employment'},
+    {value: 'train', label: 'I\'m in Training'},
+    {value: 'none', label: 'None'}
+  ];
+  const eetStatusMentorNonUKOptions = [
     {value: 'uni', label: 'I\'m at University / College'},
     {value: 'job', label: 'I\'m in full-time employment'},
     {value: 'train', label: 'I\'m in Training'},
@@ -625,6 +704,7 @@ class EduShortSU extends React.Component {
   }
 
   const isEnabled = this.canBeSubmitted();
+  const optionsToUse = country === 'GBR' ? (userRole === 'mentee' ? eetStatusMenteeUKOptions : eetStatusMentorUKOptions) : (userRole === 'mentee' ? eetStatusMenteeNonUKOptions : eetStatusMentorNonUKOptions);
 
     return (
       <React.Fragment>
@@ -638,7 +718,7 @@ class EduShortSU extends React.Component {
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="eetStatus">Are you currently in <strong>Education, Employment or Training?</strong></label>
                 <SelectBox
-                  options={country === 'GBR' ? eetStatusUKOptions : eetStatusNonUKOptions}
+                  options={optionsToUse}
                   placeholder="Select one:"
                   name='eetStatus'
                   handleChange={this.handleEetStatusChange}
@@ -810,6 +890,26 @@ class EduShortSU extends React.Component {
                 </div>
               )}
               {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">And what <strong>degree</strong> are you studying?</label>
+                  <TextInput
+                    name="degree"
+                    id="degreeInput"
+                    placeholder="Type your Degree..."
+                    className="form-control-std"
+                    required
+                    handleChange={this.handleDegreeChange}
+                    handleKeyUp={this.handleKeyUp}
+                    handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
+                    onKeyDown={this.handleMouseDown}
+                    onBlur={this.onBlur}
+                    focusOnLoad={tabPressed ? false : true}
+                    maxLength="50"
+                  />
+                </div>
+              )}
+              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeIsValid === true && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="uniYrGrp">And which <strong>year group</strong> are you in?</label>
@@ -832,7 +932,7 @@ class EduShortSU extends React.Component {
                   )}
                 </React.Fragment>
               )}
-              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg'&& (
+              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>how long</strong> is your course?</label>
@@ -852,7 +952,7 @@ class EduShortSU extends React.Component {
                   </div>
                 </React.Fragment>
               )}
-              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp === 'pg' && (
+              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeIsValid === true && uniYrGrp === 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>when</strong> do you graduate?</label>
@@ -892,6 +992,26 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
+              {eetStatusLocal === 'job' && currCoLocal != '' && coIsValid === true && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">And what is your current <strong>role?</strong></label>
+                  <TextInput
+                    name="currRole"
+                    id="currRoleInput"
+                    placeholder="Role"
+                    className="form-control-std"
+                    required
+                    handleChange={this.handleRoleChange}
+                    handleKeyUp={this.handleKeyUp}
+                    handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
+                    onKeyDown={this.handleMouseDown}
+                    onBlur={this.onBlur}
+                    focusOnLoad={tabPressed ? false : true}
+                    maxLength="50"
+                  />
+                </div>
+              )}
               {eetStatusLocal === 'train' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="currTrainingProvider">Who is your <strong>training provider?</strong></label>
@@ -902,6 +1022,26 @@ class EduShortSU extends React.Component {
                     className="form-control-std"
                     required
                     handleChange={this.handleTrainChange}
+                    handleKeyUp={this.handleKeyUp}
+                    handleTabPress={this.handleTabPress}
+                    handleMouseDown={this.handleMouseDown}
+                    onKeyDown={this.handleMouseDown}
+                    onBlur={this.onBlur}
+                    focusOnLoad={tabPressed ? false : true}
+                    maxLength="50"
+                  />
+                </div>
+              )}
+              {eetStatusLocal === 'train' && currTrainingProviderLocal != '' && trainProvIsValid === true && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currTrainingCourse">And what is your <strong>training course?</strong></label>
+                  <TextInput
+                    name="currTrainingCourse"
+                    id="currTrainingCourseInput"
+                    placeholder="Training Course"
+                    className="form-control-std"
+                    required
+                    handleChange={this.handleTrainCourseChange}
                     handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}

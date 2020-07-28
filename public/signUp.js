@@ -73,9 +73,11 @@ mentorradio.checked = false;
 var dobIsValid = false;
 var pwdIsValid = false;
 let personalEmails;
+let userType;
 
 // add event listeners
 menteebtn.addEventListener('click', function(event) {
+  userType = 'mentee';
   fname.value = '';
   lname.value = '';
   email.value = '';
@@ -135,6 +137,7 @@ menteebtn.addEventListener('click', function(event) {
 });
 
 mentorbtn.addEventListener('click', function(event) {
+  userType = 'mentor';
   fname.value = '';
   lname.value = '';
   email.value = '';
@@ -417,6 +420,7 @@ function checkDOB() {
      dDOB.classList.add('error');
      mDOB.classList.add('error');
      yDOB.classList.add('error');
+     dobPrompt.innerHTML = userType === 'mentee' ? 'You must be 13 or older to use Prospela' : 'You must be 18 or older to use Prospela'
      dobPrompt.style.visibility = 'visible';
    }
   } else {
@@ -450,6 +454,7 @@ function checkAge() {
   var m = mDOB.value-1;
   var y = yDOB.value;
   var birthDate = new Date(y,m,d);
+  var ageToCheck = userType === 'mentee' ? 13 : 18;
   /*var birthDate = new Date().setFullYear(y,m,d);*/
 
   var age = today.getFullYear() - birthDate.getFullYear();
@@ -458,7 +463,7 @@ function checkAge() {
   if (mth < 0 || (mth === 0 && today.getDate() < birthDate.getDate())) {
     age--;
   }
-  if (age < 13) {
+  if (age < ageToCheck) {
     return false;
   }
   return true;

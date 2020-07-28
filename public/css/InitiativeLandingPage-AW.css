@@ -9,14 +9,14 @@
 }
 .pwdByMain.aw{
   background-image: url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
-  background-image:linear-gradient(0deg,#83378c,rgba(255,255,255,.68)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
-  background-image:-moz-linear-gradient(0deg,#83378c,rgba(255,255,255,.68)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
-  background-image:-webkit-linear-gradient(90deg,#83378c,rgba(255,255,255,.68)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
-  background-image:-o-linear-gradient(0deg,#83378c,rgba(255,255,255,.68)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
+  background-image:linear-gradient(0deg,#83378c,rgba(156,47,181,.26)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
+  background-image:-moz-linear-gradient(0deg,#83378c,rgba(156,47,181,.26)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
+  background-image:-webkit-linear-gradient(90deg,#83378c,rgba(156,47,181,.26)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
+  background-image:-o-linear-gradient(0deg,#83378c,rgba(156,47,181,.26)),url(https://prospela.com/wp-content/uploads/2020/07/Prospella_AWUK_mage.jpeg);
 }
 .initiativeLogoContainer.aw{
   width: 160px!important;
-  height: auto;
+  height: p;
   left: -10px;
 }
 .sponsoredByLogoContainer.aw{

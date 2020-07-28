@@ -20,6 +20,7 @@ class SelectBox extends React.Component {
     super(props);
     this.state = {
       values: [],
+  //    keysPressed: [],
       focusedValue: -1,
       isFocused: false,
       isOpen: false,
@@ -300,10 +301,26 @@ class SelectBox extends React.Component {
     });
   }
 
+/*  onKeyUp = e => {
+    console.log("KEYUP TRIGGERED")
+    const { keysPressed } = this.state;
+    console.log("ONKEYUP e.keyCode & e.type: "+e.keyCode+" "+e.type=='keydown')
+    keysPressed[e.keyCode] = e.type == 'keydown';
+  //  console.log("keysPressed[9]: "+keysPressed[9])
+  //  console.log("keysPressed[16]: "+keysPressed[16])
+}*/
+
   onKeyDown = e => {
+//    console.log("KEYdown")
+//    const { isOpen, focusedValue, isFocused, keysPressed } = this.state;
     const { isOpen, focusedValue, isFocused } = this.state;
     const { handleChange, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
+
+//    console.log("e.keyCode & e.type: "+e.keyCode+" "+e.type=='keydown')
+//    keysPressed[e.keyCode] = e.type == 'keydown';
+  //  console.log("keysPressed[9]: "+keysPressed[9])
+  //  console.log("keysPressed[16]: "+keysPressed[16])
 
     // User pressed the enter key
     if (e.keyCode === 13) {
@@ -475,9 +492,16 @@ class SelectBox extends React.Component {
                 handleChange(values)
 
                 if (values.length === (options.length - this.countTitles())) {
-                  if (finMultiOptions) {
-                    finMultiOptions()
-                  }
+
+                  // checks if shift + tab were pressed, as otherwise ignores shift tab to move backwards
+          //        console.log("e.shiftKey && e.keyCode == 9: "+e.shiftKey && e.keyCode == 9)
+                //  console.log("trigger finMultiOptions?: "+keysPressed[9] && keysPressed[16])
+          //        if (e.shiftKey && e.keyCode == 9) {
+                    if (finMultiOptions) {
+                      finMultiOptions()
+                    }
+          //        }
+
                   if(!required || required && value != null) {
                     document.getElementById("selectBox-"+name).classList.remove('error')
                     if (otherValidityChecks) {
@@ -1117,6 +1141,7 @@ class SelectBox extends React.Component {
           onFocus={this.onFocus}
           onBlur={this.onBlur}
           onKeyDown={this.onKeyDown}
+      //    onKeyUp={this.onKeyUp}
           onMouseDown={handleMouseDown}
           required={required}
           onClick={this.onClick}

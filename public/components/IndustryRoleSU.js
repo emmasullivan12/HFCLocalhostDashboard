@@ -127,6 +127,24 @@ const industryOptions = [
   {value: '56', label: 'Telecommunications', checkbox: true, isTitle: false},
 ];
 
+const workEnvOptions = [
+  {value: '0', label: 'friendly'},
+  {value: '1', label: 'laid-back'},
+  {value: '2', label: 'nurturing'},
+  {value: '3', label: 'always learning'},
+  {value: '4', label: 'collborative'},
+  {value: '5', label: 'diverse'},
+  {value: '6', label: 'forward-thinking'},
+  {value: '7', label: 'modern'},
+  {value: '8', label: 'flexible'},
+  {value: '9', label: 'creative'},
+  {value: '10', label: 'challenging'},
+  {value: '11', label: 'competitive'},
+  {value: '12', label: 'energizing'},
+  {value: '13', label: 'thought-provoking'},
+  {value: '14', label: 'inspiring'},
+];
+
 /*const roleOptions = [
   {value: '0', label: 'Animator'},
   {value: '1', label: 'Accountant'},
@@ -152,13 +170,17 @@ class IndustryRoleSU extends React.Component {
       editingInd: '',
       editingRole: '',
       knowNextSteps: '',
+      workEnv: [],
       isSubmitting: false,
+      userRole: 'mentor',
     }
     this.handleIndChange = this.handleIndChange.bind(this);
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleRatingChange = this.handleRatingChange.bind(this);
+    this.handleWorkEnvChange = this.handleWorkEnvChange.bind(this);
     this.handleMultiOptions = this.handleMultiOptions.bind(this);
-  //  this.handleMultiRoles = this.handleMultiRoles.bind(this);
+    this.handleMultiWorkEnv = this.handleMultiWorkEnv.bind(this);
+    this.handleMultiRoles = this.handleMultiRoles.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -207,15 +229,15 @@ class IndustryRoleSU extends React.Component {
     }
   }
 
-/*  handleMultiRoles() {
+  handleMultiRoles() {
     console.log("handleMultiRoles")
     const {rolesFromList, freeTextRoles} = this.state
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
-      document.getElementById("ratingsContainer").firstElementChild.focus()
+      document.getElementById("selectBox-selectWorkEnv").focus()
     } else {
       document.getElementById("autocompleteBox-selectRole").focus()
     }
-  }*/
+  }
 
   handleRoleChange(userInput, callback) {
     const rolesFromList = roleOptions
@@ -245,6 +267,26 @@ class IndustryRoleSU extends React.Component {
 
   }
 
+  handleWorkEnvChange(userInput) {
+    let newArray
+
+    newArray = workEnvOptions
+      .filter(workEnvWord => userInput.includes(workEnvWord.label))
+      .map(value => value.value)
+
+    this.setState({
+      workEnv: newArray,
+    })
+  }
+
+  handleMultiWorkEnv() {
+    if (this.state.workEnv.length > 0) {
+      document.getElementById("Submit-btn-ind").focus()
+    } else {
+      document.getElementById("selectBox-selectWorkEnv").focus()
+    }
+  }
+
   handleRatingChange(value) {
     this.setState({
       knowNextSteps: value
@@ -268,8 +310,8 @@ class IndustryRoleSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {industries, rolesFromList, freeTextRoles, knowNextSteps} = this.state;
-    if (industries.length != 0 && (rolesFromList.length != 0 || freeTextRoles.length != 0) && knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10)) {
+    const {industries, rolesFromList, freeTextRoles, knowNextSteps, userRole, workEnv} = this.state;
+    if (industries.length != 0 && (rolesFromList.length != 0 || freeTextRoles.length != 0) && (userRole === 'mentee' ? knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10) : workEnv.length != 0)) {
       const form = document.getElementById("form-IndRoleShortSU");
 
       if (form.checkValidity()) {
@@ -284,7 +326,7 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, knowNextSteps, isSubmitting} = this.state;
+    const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, editingWorkEnv, knowNextSteps, isSubmitting, userRole} = this.state;
     const { step, currentStep, totalMenteeSteps } = this.props;
 
     const isEnabled = this.canBeSubmitted();
@@ -299,7 +341,12 @@ class IndustryRoleSU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off" id="form-IndRoleShortSU">
               <div className="form-group">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
+                {userRole === 'mentee' && (
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
+                )}
+                {userRole === 'mentor' && (
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> do you have experience in?</label>
+                )}
                 <SelectBox
                   multiple
                   finMultiOptions={this.handleMultiOptions}
@@ -319,14 +366,19 @@ class IndustryRoleSU extends React.Component {
               </div>
               {(industries.length > 0 || editingInd != '') && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">Which <strong>career or profession(s)</strong> do you want to work in?</label>
+                  {userRole === 'mentee' && (
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">Which <strong>career or profession(s)</strong> do you want to work in?</label>
+                  )}
+                  {userRole === 'mentor' && (
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectRole">Which <strong>roles(s)</strong> do you have experience in?</label>
+                  )}
                   <div className="autocompleter">
                     <AutocompleteTagsMulti
                       multiple
                       openOnClick
                       showValues
                       showCheckbox
-                  //    finMultiOptions={this.handleMultiRoles}
+                      finMultiOptions={userRole === 'mentor' ? this.handleMultiRoles : null}
                       suggestions={roleOptions}
                       name='selectRole'
                       placeholder='Type Role(s):'
@@ -347,7 +399,7 @@ class IndustryRoleSU extends React.Component {
                   </div>
                 </div>
               )}
-              {((rolesFromList.length != 0 || freeTextRoles.length != 0) || editingRole != '') && (
+              {userRole === 'mentee' && ((rolesFromList.length != 0 || freeTextRoles.length != 0) || editingRole != '') && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="knowNextSteps">Out of 10, <strong>how confident</strong> are you in knowing what next steps to take to get there?</label>
                   <RatingItems
@@ -356,6 +408,27 @@ class IndustryRoleSU extends React.Component {
                     name='selectRating'
                     handleTabPress={this.handleTabPress}
                 //    focusOnLoad={tabPressed ? false : true}
+                    required
+                  />
+                </div>
+              )}
+              {userRole === 'mentor' && ((rolesFromList.length != 0 || freeTextRoles.length != 0) || editingRole != '') && (
+                <div className="form-group">
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectWorkEnv">To give students a sense of work-life reality, how would you describe <strong>your work environment?</strong></label>
+                  <SelectBox
+                    multiple
+                    finMultiOptions={this.handleMultiWorkEnv}
+                    options={workEnvOptions}
+                    name='selectWorkEnv'
+                    placeholder='Select words:'
+                    placeholderOnClick="Select as many as you like"
+                    handleChange={this.handleWorkEnvChange}
+                    handleTabPress={this.handleTabPress}
+                    focusOnLoad
+                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  //  showIcon
+                  //  iconToShow='iconFA'
+                    showCheckbox
                     required
                   />
                 </div>
