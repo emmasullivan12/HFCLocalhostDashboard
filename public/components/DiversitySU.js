@@ -120,7 +120,7 @@ class DiversitySU extends React.Component {
 
   render() {
     const {tabPressed, hurdles, editingHurdles, schType, gender, ethnicity, isSubmitting} = this.state;
-    const { step, currentStep, totalMenteeSteps, country, eetStatus } = this.props;
+    const { step, currentStep, totalSteps, country, eetStatus } = this.props;
 
     const uKschAttendedList = [
       {value: '0', label: 'State-run/funded school', detail: ''},
@@ -163,7 +163,7 @@ class DiversitySU extends React.Component {
       <React.Fragment>
         <div>
           <ProgressCircles
-            totalSteps={totalMenteeSteps}
+            totalSteps={totalSteps}
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>

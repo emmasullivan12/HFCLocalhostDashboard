@@ -172,7 +172,6 @@ class IndustryRoleSU extends React.Component {
       knowNextSteps: '',
       workEnv: [],
       isSubmitting: false,
-      userRole: 'mentor',
     }
     this.handleIndChange = this.handleIndChange.bind(this);
     this.handleRoleChange = this.handleRoleChange.bind(this);
@@ -310,7 +309,8 @@ class IndustryRoleSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {industries, rolesFromList, freeTextRoles, knowNextSteps, userRole, workEnv} = this.state;
+    const {industries, rolesFromList, freeTextRoles, knowNextSteps, workEnv} = this.state;
+    const {userRole} = this.props;
     if (industries.length != 0 && (rolesFromList.length != 0 || freeTextRoles.length != 0) && (userRole === 'mentee' ? knowNextSteps != "" && knowNextSteps != 0 && !(knowNextSteps > 10) : workEnv.length != 0)) {
       const form = document.getElementById("form-IndRoleShortSU");
 
@@ -326,8 +326,9 @@ class IndustryRoleSU extends React.Component {
   }
 
   render() {
-    const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, editingWorkEnv, knowNextSteps, isSubmitting, userRole} = this.state;
-    const { step, currentStep, totalMenteeSteps } = this.props;
+    const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, editingWorkEnv, knowNextSteps, isSubmitting} = this.state;
+    const {userRole} = this.props;
+    const { step, currentStep, totalSteps } = this.props;
 
     const isEnabled = this.canBeSubmitted();
 
@@ -335,7 +336,7 @@ class IndustryRoleSU extends React.Component {
       <React.Fragment>
         <div>
           <ProgressCircles
-            totalSteps={totalMenteeSteps}
+            totalSteps={totalSteps}
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>

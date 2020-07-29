@@ -47,7 +47,6 @@ class EduShortSU extends React.Component {
       trainProvIsValid: '',
       currTrainingCourseLocal: '',
       tabPressed: '',
-      userRole: 'mentor',
       selectBoxFocused: '',
       isSubmitting: false,
       submitted: ''
@@ -311,10 +310,11 @@ class EduShortSU extends React.Component {
   }
 
   handleUniYrChange(userInput) {
+    const {userRole} = this.props;
     this.setState({
       uniYrGrp: userInput,
     });
-    if (this.state.userRole === 'mentor') {
+    if (userRole === 'mentor') {
       this.setState({
         uniGraduYrIsValid: true
       }, () => {
@@ -389,7 +389,8 @@ class EduShortSU extends React.Component {
 
   // Passed on to be used within Select.js onBlur & onClickOption events
   otherValidityChecks() {
-    const { selectBoxFocused, courseLength, uniGraduYr, userRole } = this.state;
+    const { selectBoxFocused, courseLength, uniGraduYr } = this.state;
+    const {userRole} = this.props;
     if ((selectBoxFocused === "selectBox-uniYrGrp" && userRole === 'mentee') || selectBoxFocused === "selectBox-uniLength" || selectBoxFocused === "selectBox-pgGraduYr") {
       if (courseLength === '' && uniGraduYr === '') {
         document.getElementById("selectBox-uniYrGrp").classList.remove('error');
@@ -549,7 +550,8 @@ class EduShortSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, degreeIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currRoleLocal, currTrainingProviderLocal, currTrainingCourseLocal, userRole } = this.state;
+    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, degreeIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currRoleLocal, currTrainingProviderLocal, currTrainingCourseLocal } = this.state;
+    const {userRole} = this.props;
   //  const {eetStatus} = this.props;
 
       if (eetStatusLocal != '') {
@@ -612,8 +614,9 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, degreeLocal, degreeIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting, currCoLocal, coIsValid, currTrainingProviderLocal, trainProvIsValid, currRoleLocal, currTrainingCourseLocal, userRole} = this.state;
-  const { country, eetStatus, tflink, step, currentStep, totalMenteeSteps } = this.props;
+  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, degreeLocal, degreeIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting, currCoLocal, coIsValid, currTrainingProviderLocal, trainProvIsValid, currRoleLocal, currTrainingCourseLocal} = this.state;
+  const {userRole} = this.props;
+  const { country, eetStatus, tflink, step, currentStep, totalSteps } = this.props;
 
   const eetStatusMenteeUKOptions = [
     {value: 'sch', label: 'I\'m at School / Sixth Form / College'},
@@ -710,7 +713,7 @@ class EduShortSU extends React.Component {
       <React.Fragment>
         <div>
           <ProgressCircles
-            totalSteps={totalMenteeSteps}
+            totalSteps={totalSteps}
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>

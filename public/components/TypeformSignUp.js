@@ -71,12 +71,13 @@ function MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider) {
   }
 }
 
-function MenteeSU6Props(emailToVerify) {
+function MenteeSU6Props(emailToVerify, userRole) {
   let confirmStudentProps = {};
+  const emailType = userRole === 'mentee' ? 'Student' : 'Work'
 
   confirmStudentProps = {
     subheader: 'We\'ve sent a verification code to ' + emailToVerify + '. Please enter it below. Note: code only valid for the next 24 hours.',
-    title: 'Verify your Student email',
+    title: 'Verify your ' + emailType + ' email',
     fullWidth: false,
   }
 
@@ -136,15 +137,15 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didEdu', // set to did1stSU when first loaded
+      step: 'didEduEmail', // set to did1stSU when first loaded
       userEduName: '',
       country: 'GBR',
       eetStatus: '',
       schName: '',
       schNameFreeText: '',
-      uniName: '',
+      uniName: '75',
       uniNameFreeText: '',
-      emailToVerify: '',
+      emailToVerify: 'emma@prospela.com',
       currCo: '',
       currTrainingProvider: ''
     }
@@ -446,7 +447,7 @@ class TypeformSignUp extends Component {
       <div>
         Oops! Something went wrong. Please try reloading the page.
       </div>
-    } else if (userRole === 'mentee') {
+    } else {
       switch (step) {
         case 'did1stSU':
           return (
@@ -455,7 +456,7 @@ class TypeformSignUp extends Component {
                 step={step}
                 userRole={userRole}
                 currentStep="1"
-                totalMenteeSteps={totalMenteeSteps}
+                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
                 updateCountry={this.updateCountry}
                 updateStep={this.updateStep}
               />
@@ -468,8 +469,9 @@ class TypeformSignUp extends Component {
               <EduShortSU
                 step={step}
                 country={country}
+                userRole={userRole}
                 currentStep="2"
-                totalMenteeSteps={totalMenteeSteps}
+                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
                 eetStatus={step === 'updatingEdu' ? eetStatus : ''}
                 updateEetStatus={this.updateEetStatus}
                 updateUKSch={this.updateUKSch}
@@ -487,8 +489,9 @@ class TypeformSignUp extends Component {
             <SignUpScreenTemplate {...MenteeSU3Props}>
               <IndustryRoleSU
                 step={step}
+                userRole={userRole}
                 currentStep="3"
-                totalMenteeSteps={totalMenteeSteps}
+                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
                 updateStep={this.updateStep}
               />
             </SignUpScreenTemplate>
@@ -501,7 +504,7 @@ class TypeformSignUp extends Component {
                 currentStep="4"
                 country={country}
                 eetStatus={eetStatus}
-                totalMenteeSteps={totalMenteeSteps}
+                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
                 updateStep={this.updateStep}
               />
             </SignUpScreenTemplate>
@@ -536,7 +539,7 @@ class TypeformSignUp extends Component {
                   <ConfirmStudent
                     step={step}
                     currentStep="5"
-                    totalMenteeSteps={totalMenteeSteps}
+                    totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
                     schName={schName}
                     schNameFreeText={schNameFreeText}
                     uniName={uniName}
@@ -556,7 +559,7 @@ class TypeformSignUp extends Component {
         case 'didEduEmail':
         case 'didEduEmailNeedsRev':
           return (
-            <SignUpScreenTemplate {...MenteeSU6Props(emailToVerify)}>
+            <SignUpScreenTemplate {...MenteeSU6Props(emailToVerify, userRole)}>
               <VerifyEmail
                 step={step}
                 updateStep={this.updateStep}
@@ -573,29 +576,6 @@ class TypeformSignUp extends Component {
             <div>
               Doesnt need review. Show the dashboard!!
             </div>
-          );
-      }
-    } else {
-      switch (step) {
-        case 'didEmailVerif':
-          return (
-            <React.Fragment>
-              {fname && (
-                <SignUpScreenTemplate {...MentorCountryShortSUProps}>
-                  <CountryShortSU step={step} userRole={userRole} currentStep="1" totalMenteeSteps={totalMentorSteps}/>
-                </SignUpScreenTemplate>
-              )}
-            </React.Fragment>
-          );
-        case 'didCountry':
-          return (
-            <React.Fragment>
-              {fname && (
-                <SignUpScreenTemplate {...MentorTypeformSignUpProps}>
-                  <MentorTypeformSignUpContent tflink={mentortflink} step={step} currentStep="2" totalMenteeSteps={totalMentorSteps}/>
-                </SignUpScreenTemplate>
-              )}
-    	      </React.Fragment>
           );
       }
     }

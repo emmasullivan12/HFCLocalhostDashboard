@@ -558,7 +558,7 @@ class ConfirmStudent extends React.Component {
 
   render() {
     const { onChange, onKeyDown, toggleCheckbox, handleKeyUp } = this;
-    const { tflink, step, country, currentStep, eetStatus, totalMenteeSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep } = this.props;
+    const { tflink, step, country, currentStep, eetStatus, totalSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep } = this.props;
     const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid, isSubmitting } = this.state;
     const isEnabled = this.canBeSubmitted();
 
@@ -566,7 +566,7 @@ class ConfirmStudent extends React.Component {
       <React.Fragment>
         <div>
           <ProgressCircles
-            totalSteps={totalMenteeSteps}
+            totalSteps={totalSteps}
             currentStep={currentStep}
           />
           <div className='embedded-typeform'>
