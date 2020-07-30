@@ -81,6 +81,7 @@ menteebtn.addEventListener('click', function(event) {
   fname.value = '';
   lname.value = '';
   email.value = '';
+  emailConfi.required = true;
   dDOB.value = '';
   mDOB.value = '';
   yDOB.value = '';
@@ -142,6 +143,7 @@ mentorbtn.addEventListener('click', function(event) {
   lname.value = '';
   email.value = '';
   emailConfi.value = '';
+  emailConfi.required = false;
   emailConfiPrompt.style.visibility = 'hidden';
   dDOB.value = '';
   mDOB.value = '';
@@ -193,10 +195,10 @@ mentorbtn.addEventListener('click', function(event) {
   getStartedbtn.innerHTML = 'Get Started'
   getStartedbtn.disabled = true;
   workEmailTooltip.style.display = 'block';
-  emailText.innerHTML = 'Work Email';
+  emailText.innerHTML = 'Work (or Uni) Email';
 //  codeInput.style.display = 'none';
 //  codeTooltip.style.display = 'none';
-  emailPrompt.innerHTML = 'This must be your work email address';
+  emailPrompt.innerHTML = 'This must be your work (or uni) email address';
   fname.focus();
   for(let input of formControlStd) {
     input.classList.remove('error');
@@ -241,7 +243,7 @@ lname.addEventListener('invalid', function(e) {
 }, false)
 
 email.addEventListener('focus', function(event) {
-  if (emailText.innerHTML === 'Work Email') {
+  if (emailText.innerHTML === 'Work (or Uni) Email') {
     emailPrompt.style.visibility = 'visible';
   } else {
     emailPrompt.style.visibility = 'hidden';
@@ -260,7 +262,7 @@ email.addEventListener('input', function(e) {
         emailConfiPrompt.style.visibility = 'hidden';
         emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
       }
-    } else if (emailText.innerHTML === 'Work Email') {
+    } else if (emailText.innerHTML === 'Work (or Uni) Email') {
       var emailSplit = email.value.split('@')
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
       var personalEmails = ['gmail.com', 'hotmail.com']
@@ -296,7 +298,7 @@ email.addEventListener('blur', function(e) {
         emailConfiPrompt.style.visibility = 'hidden';
         emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
       }
-    } else if (emailText.innerHTML === 'Work Email') {
+    } else if (emailText.innerHTML === 'Work (or Uni) Email') {
       var emailSplit = email.value.split('@')
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
       var personalEmails = ['gmail.com', 'hotmail.com']

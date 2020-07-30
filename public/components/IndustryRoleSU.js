@@ -1,4 +1,4 @@
-// Dex last merged this code on 29th july 2020 
+// Dex last merged this code on 29th july 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -229,7 +229,6 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleMultiRoles() {
-    console.log("handleMultiRoles")
     const {rolesFromList, freeTextRoles} = this.state
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
       document.getElementById("selectBox-selectWorkEnv").focus()
@@ -303,9 +302,11 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleSubmit(e) {
-    const {updateStep} = this.props;
+    const {updateStep, userRole} = this.props;
     this.setState({ isSubmitting: true });
-    updateStep('didIndRole');
+    const mentorEmailOK = true;
+    const newStep = userRole === 'mentee' ? 'didIndRole' : (mentorEmailOK === true ? 'didIndRoleMentor' : 'updatingEmailError');
+    updateStep(newStep)
   }
 
   canBeSubmitted() {

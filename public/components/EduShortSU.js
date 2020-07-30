@@ -1,4 +1,4 @@
-// Dex last merged this code on 29th july 2020 
+// Dex last merged this code on 29th july 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -107,31 +107,39 @@ class EduShortSU extends React.Component {
 
   handleKeyUp = (e) => {
     e.persist();
-
+    console.log("handleykeyup triggered")
     clearTimeout(this.timerHandle);
 
-    this.timerHandle = setTimeout(() => {
-      if (e.target.id === 'schNameTextBox') {
-        this.handleSchChange(e)
-      } else if (e.target.id === 'uniNameTextBox') {
-        this.handleUniChange(e)
-      } else if (e.target.id === 'degreeInput') {
-        this.handleDegreeMoveNext()
-      } else if (e.target.id === 'currCoInput') {
-        this.handleJobMoveNext()
-      } else if (e.target.id === 'currRoleInput') {
-        this.handleRoleMoveNext()
-      } else if (e.target.id === 'currTrainingProviderInput') {
-        this.handleTrainMoveNext()
-      } else if (e.target.id === 'currTrainingCourseInput') {
-        this.handleTrainCourseMoveNext()
-      }
-      this.timerHandle = 0;
-    }, 800);
+    // checks use has not pressed backspace
+  //  if (e.target.value != '' && e.keyCode != 8) {
+      this.timerHandle = setTimeout(() => {
+        if (e.target.id === 'schNameTextBox') {
+          this.handleSchChange(e)
+        } else if (e.target.id === 'uniNameTextBox') {
+          this.handleUniChange(e)
+        } else if (e.target.id === 'degreeInput') {
+          this.handleDegreeMoveNext()
+        } else if (e.target.id === 'currCoInput') {
+          this.handleJobMoveNext()
+        } else if (e.target.id === 'currRoleInput') {
+          this.handleRoleMoveNext()
+        } else if (e.target.id === 'currTrainingProviderInput') {
+          this.handleTrainMoveNext()
+        } else if (e.target.id === 'currTrainingCourseInput') {
+          this.handleTrainCourseMoveNext()
+        }
+        this.timerHandle = 0;
+      }, 800);
+//    } else {
+//      console.log("gets here")
+//    }
+
   }
 
   handleDegreeChange = (e) => {
-    this.setState({ degreeLocal: e.target.value })
+    this.setState({
+      degreeLocal: e.target.value,
+    })
   }
 
   handleDegreeMoveNext = () => {
@@ -144,6 +152,7 @@ class EduShortSU extends React.Component {
 
   handleJobMoveNext = () => {
     if (this.state.submitted != true) {
+      console.log("about to set coisvalid")
       this.setState({
         coIsValid: true
       })
@@ -157,7 +166,10 @@ class EduShortSU extends React.Component {
   }
 
   handleJobChange = (e) => {
-    this.setState({ currCoLocal: e.target.value })
+    this.setState({
+      currCoLocal: e.target.value,
+      coIsValid: e.target.value === '' ? false : true
+    })
   }
 
   handleRoleChange = (e) => {
@@ -898,7 +910,7 @@ class EduShortSU extends React.Component {
                   <TextInput
                     name="degree"
                     id="degreeInput"
-                    placeholder="Type your Degree..."
+                    placeholder="Type Degree e.g. BSc (Hons) Business..."
                     className="form-control-std"
                     required
                     handleChange={this.handleDegreeChange}

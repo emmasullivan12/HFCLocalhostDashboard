@@ -50,9 +50,10 @@ class VerifyEmail extends React.Component {
   }
 
   handleUpdateEmail() {
-    const {updateStep} = this.props;
+    const {updateStep, userRole} = this.props;
+    const newStep = userRole === 'mentee' ? 'didDiversity' : 'updatingEmail'
 
-    updateStep('didDiversity') // Send them back to update their student email
+    updateStep(newStep) // Send them back to update their email
   }
 
   handleResendSubmit(e) {

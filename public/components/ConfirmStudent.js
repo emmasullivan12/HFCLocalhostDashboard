@@ -179,7 +179,7 @@ class ConfirmStudent extends React.Component {
 
   checkEduEmail() {
     const {userInput, emailFormat, dm, eduEmailIsValid} = this.state;
-    const {country, eetStatus, schName, uniName, schNameFreeText, uniNameFreeText} = this.props;
+    const {country, eetStatus, schName, uniName, schNameFreeText, uniNameFreeText, userRole} = this.props;
 
     var emailSplit = userInput.split('@')
     var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
@@ -236,6 +236,16 @@ class ConfirmStudent extends React.Component {
         isHtmlValid: false,
         requestReview: false
       });
+    } else if (userRole === 'mentor' && eetStatus != 'uni') {
+      this.setState({
+        eduEmailIsValid: true,
+        isPersonalEmail: false,
+        containsDotAndAt: true,
+        hasTextBeforeAt: true,
+        hasTextAfterAt: true,
+        endsWithSymbol: false,
+        isHtmlValid: true,
+      })
     } else if (country === 'GBR') {
       if (eetStatus === 'sch') {
 
@@ -558,17 +568,20 @@ class ConfirmStudent extends React.Component {
 
   render() {
     const { onChange, onKeyDown, toggleCheckbox, handleKeyUp } = this;
-    const { tflink, step, country, currentStep, eetStatus, totalSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep } = this.props;
+    const { tflink, step, country, currentStep, eetStatus, totalSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep, userRole } = this.props;
     const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid, isSubmitting } = this.state;
+    const emailType = userRole === 'mentee' ? (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') : (eetStatus === 'uni' || eetStatus === 'job' || eetStatus === 'train' ? userEduName : 'work')
     const isEnabled = this.canBeSubmitted();
 
     return (
       <React.Fragment>
         <div>
-          <ProgressCircles
-            totalSteps={totalSteps}
-            currentStep={currentStep}
-          />
+          {step != 'updatingEmail' && (
+            <ProgressCircles
+              totalSteps={totalSteps}
+              currentStep={currentStep}
+            />
+          )}
           <div className='embedded-typeform'>
             {isGeneralError === true && (
               <div>
@@ -578,7 +591,7 @@ class ConfirmStudent extends React.Component {
             {isGeneralError != true && (
               <form autoComplete="off" id="form-ConfirmStudentSU">
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="eduEmailInput">Your <strong>{eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student'}</strong> Email Address</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="eduEmailInput">Your <strong>{emailType}</strong> Email Address</label>
                   <input
                     type="email"
                     name="eduEmail"
@@ -589,7 +602,7 @@ class ConfirmStudent extends React.Component {
                     onKeyDown={onKeyDown}
                     value={userInput}
                     className={"form-control-std verifyForm " + (eduEmailIsValid === true || eduEmailIsValid === "" ? "" : "error")}
-                    placeholder={"Your " + (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') + " email address"}
+                    placeholder={"Your " + emailType + " email address"}
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
@@ -597,7 +610,7 @@ class ConfirmStudent extends React.Component {
                     autoFocus
                     required
                   />
-                  {isSubmitting === false && (
+                  {isSubmitting === false && userRole != 'mentor' && (
                     <NoEduEmail
                       country={country}
                       eetStatus={eetStatus}
@@ -612,11 +625,11 @@ class ConfirmStudent extends React.Component {
                 {eduEmailIsValid === false && isPersonalEmail === false && (
                   <React.Fragment>
                     <div className="descriptor prompt error verifyForm otherOption alignLeft">
-                      This must be a valid {(eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student'} email
+                      This must be a valid {emailType} email
                     </div>
                     {isHtmlValid === true && containsDotAndAt != false && hasTextBeforeAt && hasTextAfterAt && endsWithSymbol != true && (
                       <Checkbox
-                        label={"This is a valid " + ((eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student') + " email. Submit for review"}
+                        label={"This is a valid " + emailType + " email. Submit for review"}
                         labelClassName="checkbox-container alignLeft textLeft reqAsterisk noPaddingT"
                         id="requestReview"
                         name="requestReview"
@@ -640,9 +653,11 @@ class ConfirmStudent extends React.Component {
                     <span>Next</span>
                   )}
                 </button>
-                <button type="button" disabled={isSubmitting === true ? true : false} onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
-                  or Change {eetStatus === 'uni' ? 'University' : eetStatus === 'sch' ? country === 'GBR' ? 'School/College' : 'High School' : 'school status'}
-                </button>
+                {userRole != 'mentor' && (
+                  <button type="button" disabled={isSubmitting === true ? true : false} onClick={this.handleUpdateEdu} className="Submit-btn BlankBtn Grey fullWidth">
+                    or Change {eetStatus === 'uni' ? 'University' : eetStatus === 'sch' ? country === 'GBR' ? 'School/College' : 'High School' : 'school status'}
+                  </button>
+                )}
               </form>
             )}
           </div>
